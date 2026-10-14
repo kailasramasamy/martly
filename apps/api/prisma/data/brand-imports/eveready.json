@@ -1,0 +1,318 @@
+{
+  "brand": "Eveready",
+  "manufacturer": "Eveready Industries India Ltd.",
+  "feed": "eveready-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/eveready/logo-bdd740ba.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Eveready ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ultima\\ Alkaline\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Ultima\\ Alkaline\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Ultima\\ Pro\\ Alkaline\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Ultima\\ Pro\\ Alkaline\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Carbon\\ Zinc\\ AA\\ Batteries\\ 1015$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Carbon\\ Zinc\\ AAA\\ Batteries\\ 1012$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Red\\ 1050\\ D\\ Size\\ Carbon\\ Zinc\\ Battery$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Ultima\\ Lithium\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Ultima\\ Lithium\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Ultima\\ Pro\\ CR2032\\ Lithium\\ Coin\\ Battery$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Ultima\\ LR44\\ Alkaline\\ Coin\\ Battery$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Rechargeable\\ AA\\ Batteries\\ 600mAh$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^Rechargeable\\ AAA\\ Batteries\\ 600mAh$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^Rechargeable\\ AA\\ Batteries\\ 1000\\ Series$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^Ultima\\ Recharge\\ AA\\ Batteries\\ 2100\\ Series$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^Battery\\ Charger\\ with\\ 4\\ AA\\ Rechargeable\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^Ultima\\ Battery\\ Charger\\ with\\ 2\\ AA\\ 2100\\ Series\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 2\\.5W\\ Cool\\ Day\\ Light$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 5W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 7W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 9W\\ Cool\\ Day\\ Light$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 9W\\ Warm\\ White$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 12W\\ Cool\\ Day\\ Light$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 14W\\ Cool\\ Day\\ Light$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 18W\\ Cool\\ Day\\ Light$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 27W\\ Cool\\ Day\\ Light$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Emergency\\ LED\\ Bulb\\ 9W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Neo\\ Emergency\\ Inverter\\ LED\\ Bulb\\ 12W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Spike\\ Guard\\ SG01$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Evershield\\ Spike\\ Guard\\ SG02$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Everprotect\\ NEO\\ X4\\ Spike\\ Guard$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Everprotect\\ Pro\\ X4\\ Spike\\ Guard$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Everprotect\\ Multiplug\\ 6A$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Everprotect\\ Multiplug\\ i4$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^3\\ Pin\\ Multiplug\\ Adaptor$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Ultima\\ Liquid\\ Vaporiser\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Ultima\\ Vaporiser\\ Machine\\ \\+\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Ultima\\ Portable\\ Vaporiser\\ Machine\\ \\+\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    }
+  ]
+}
