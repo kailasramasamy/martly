@@ -1,0 +1,1652 @@
+[
+ {
+  "title": "Vermicelli",
+  "handle": "vermicelli",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40286524_5-bambino-vermicelli-made-from-suji-no-maida-rich-in-protein.jpg"
+    }
+   },
+   {
+    "title": "160g",
+    "price": "16",
+    "compare_at_price": "16",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266423_10-bambino-vermicelli.jpg"
+    }
+   },
+   {
+    "title": "425g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266429_9-bambino-vermicelli.jpg"
+    }
+   },
+   {
+    "title": "850g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266474_8-bambino-vermicelli.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286524_5-bambino-vermicelli-made-from-suji-no-maida-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286524-2_5-bambino-vermicelli-made-from-suji-no-maida-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286524-3_5-bambino-vermicelli-made-from-suji-no-maida-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286524-4_5-bambino-vermicelli-made-from-suji-no-maida-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286524-5_5-bambino-vermicelli-made-from-suji-no-maida-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286524-6_4-bambino-vermicelli-made-from-suji-no-maida-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286524-7_2-bambino-vermicelli-made-from-suji-no-maida-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266423_10-bambino-vermicelli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a brilliant combination of taste and health with Bambino's vermicelli! A versatile product, this vermicelli can be used for preparing anything from sweet kheer, savoury upma, veg pulao and more. Enjoy it as a healthy breakfast or an evening snack with some beverages. Plus, it is rich in calcium and protein so your every bit is a step towards better health. Explore a range of amazing and delicious Bambino products available on Big Basket.",
+   "ingredients": "Hard Wheat Semolina / Rawa, Microsutrient Premix [Iron (As Ferrous Sulphate), Zinc (Zinc Sulphate), Vitamin B9 (Folic Acid), Vitamin B12]",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy": "381.86kcal",
+    "Protein": "11.74g",
+    "Total Carbohydrates": "81.25g",
+    "Of Which Sugars": "0g",
+    "Total Fat": "1.10g",
+    "Trans Fatty Acids": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "0mg",
+    "Iron": "1.78mg",
+    "Zinc": "1.09mg",
+    "Vitamin B12": "0.10Mcg",
+    "Vitamin B9 (Folic Acid)": "10.00Mcg"
+   },
+   "storageInstructions": "*Keep in a cool, dry and hygienic place",
+   "manufacturerName": "Bambino Agro Industries Ltd",
+   "fssaiLicense": "10019047001381",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Roasted Vermicelli",
+  "handle": "roasted-vermicelli",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40286526_6-bambino-roasted-vermicelli-ready-to-cook-100-suji-no-maida.jpg"
+    }
+   },
+   {
+    "title": "140g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30000646_11-bambino-vermicelli.jpg"
+    }
+   },
+   {
+    "title": "425g",
+    "price": "76",
+    "compare_at_price": "76",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40086008_13-bambino-vermicelli-roasted.jpg"
+    }
+   },
+   {
+    "title": "850g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100015894_14-bambino-vermicelli-roasted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286526_6-bambino-roasted-vermicelli-ready-to-cook-100-suji-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286526-2_6-bambino-roasted-vermicelli-ready-to-cook-100-suji-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286526-3_6-bambino-roasted-vermicelli-ready-to-cook-100-suji-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286526-4_6-bambino-roasted-vermicelli-ready-to-cook-100-suji-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286526-5_6-bambino-roasted-vermicelli-ready-to-cook-100-suji-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286526-6_4-bambino-roasted-vermicelli-ready-to-cook-100-suji-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000646_11-bambino-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40086008_13-bambino-vermicelli-roasted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your meals with the delightful Bambino Roasted Vermicelli, a versatile pantry essential that adds a unique nutty flavour to both sweet and savoury dishes. Crafted from 100% pure durum wheat semolina, this vermicelli is enriched with a host of immunity-boosting vitamins, zinc, iron and folic acid, making it a nutritious choice for a healthy lifestyle. Enjoy it as a satisfying breakfast, a flavourful snack or as the base for a variety of traditional Indian preparations like kheer, upma and pulao. With its non-sticky texture and quick cooking time, Bambino Vermicelli is a time and fuel-efficient option that requires less oil, allowing you to indulge guilt-free. Elevate your culinary experience and nourish your body with every bite of this delicious and wholesome vermicelli.",
+   "ingredients": "Hard Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy": "381 kcal",
+    "Proteins": "10.5g",
+    "Total Carbohydrates": "82.5g",
+    "Dietary Fibre": "2.5g",
+    "Total Fat": "1.0g",
+    "Saturated Fatty Acids": "0.2g",
+    "Polyunsaturated Fatty Acids": "0.6g",
+    "Monounsaturated Fatty Acids": "0.1g",
+    "Trans Fatty Acids": "0g",
+    "Sodium": "0g",
+    "Cholesterol": "0mg",
+    "calcium": "3mg",
+    "Iron": "3mg",
+    "Vitamin A": "0mg",
+    "Vitamin C": "0mg"
+   },
+   "storageInstructions": "*Keep in a cool, dry place\n*Avoid direct sunlight",
+   "manufacturerName": "Bambino Agro Industries Ltd",
+   "fssaiLicense": "10019047001381",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Roasted Wheat Vermicelli",
+  "handle": "roasted-wheat-vermicelli",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370505_1-bambino-roasted-wheat-vermicelli.jpg"
+    },
+    "barcode": "8904287001076"
+   },
+   {
+    "title": "500g",
+    "price": "72",
+    "compare_at_price": "72",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370500_1-bambino-roasted-wheat-vermicelli.jpg"
+    }
+   },
+   {
+    "title": "850g",
+    "price": "119",
+    "compare_at_price": "119",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370503_1-bambino-roasted-wheat-vermicelli.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370505_1-bambino-roasted-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370505-2_1-bambino-roasted-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370505-3_1-bambino-roasted-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370505-4_1-bambino-roasted-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370505-5_1-bambino-roasted-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370505-6_1-bambino-roasted-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370500_1-bambino-roasted-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370503_1-bambino-roasted-wheat-vermicelli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bambino Roasted Vermicelli is made from quality wheat rawa/suji and carefully roasted for convenience and consistent cooking results. Free from maida, it offers a versatile option for preparing a variety of sweet and savoury dishes. Fortified with vitamins, zinc and iron, this vermicelli is suitable for everyday cooking and can be used in traditional and contemporary recipes alike.",
+   "ingredients": "Hard Wheat Semolina/Rawa, Vitamins and Minerals Premix [Vitamin B3 (as Niacinamide), Iron (as Ferrous Sulphate), Zinc (as Zinc Sulphate), Vitamin B2 (Riboflavin), Vitamin B1 (as Thiamine Mononitrate), Vitamin B9 (Folic Acid) & Vitamin B12 (Cyanocobalamin)].\nContains Wheat Gluten.",
+   "nutritionalInfo": {
+    "Energy": "381 kcal",
+    "Protein": "10.5 g",
+    "Total Carbohydrates": "82.5 g",
+    "Of Which Sugars": "2 g",
+    "Dietary Fibre": "2.5 g",
+    "Total Fat": "1 g",
+    "Trans Fatty Acids": "0 g",
+    "Sodium": "0 mg",
+    "Cholesterol": "0 mg",
+    "Calcium": "3 mg",
+    "Iron": "2.7 mg",
+    "Zinc": "1.9 mg",
+    "Vitamin B1": "0.19 mg",
+    "Vitamin B2": "0.21 mg",
+    "Vitamin B3": "2.6 mg",
+    "Vitamin B9": "16 mcg",
+    "Vitamin B12": "0.14 mcg"
+   },
+   "manufacturerName": "Bambino Pasta Food Industries Pt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Nutraawell Premium Wheat Vermicelli",
+  "handle": "nutraawell-premium-wheat-vermicelli",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370499_1-bambino-nutraawell-premium-wheat-vermicelli.jpg"
+    },
+    "barcode": "8904287001045"
+   },
+   {
+    "title": "850g",
+    "price": "88",
+    "compare_at_price": "88",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370502_1-bambino-nutraawell-premium-wheat-vermicelli.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370499_1-bambino-nutraawell-premium-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370499-2_1-bambino-nutraawell-premium-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370499-3_1-bambino-nutraawell-premium-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370499-4_1-bambino-nutraawell-premium-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370499-5_1-bambino-nutraawell-premium-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370499-6_1-bambino-nutraawell-premium-wheat-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370502_1-bambino-nutraawell-premium-wheat-vermicelli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutraawell Premium Wheat Vermicelli is made from quality wheat and offers a versatile option for preparing a variety of sweet and savoury dishes. Its fine texture and consistent quality make it suitable for everyday cooking, whether used in traditional recipes or modern meal preparations. Easy to cook and convenient to use, it is a pantry staple for creating delicious homemade dishes.",
+   "ingredients": "Hard Wheat Semolina/Rawa, Vitamins and Minerals Premix [Vitamin B3 (as Niacinamide), Iron (as Ferrous Sulphate), Zinc (as Zinc Sulphate), Vitamin B2 (Riboflavin), Vitamin B1 (as Thiamine Mononitrate), Vitamin B9 (Folic Acid) & Vitamin B12 (Cyanocobalamin)].",
+   "nutritionalInfo": {
+    "Energy": "361 kcal",
+    "Protein": "10.5 g",
+    "Carbohydrate": "77.5 g",
+    "Of Which Total Sugars": "2 g",
+    "Added Sugar": "0 g",
+    "Total Fat": "1 g",
+    "Saturated Fatty Acids": "0.2 g",
+    "Trans Fatty Acids": "0 g",
+    "Sodium": "0 mg",
+    "Cholesterol": "0 mg",
+    "Calcium": "2 mg",
+    "Iron": "2.4 mg",
+    "Zinc": "1.65 mg",
+    "Vitamin B1": "0.16 mg",
+    "Vitamin B2": "0.19 mg",
+    "Vitamin B3": "2.21 mg",
+    "Vitamin B9": "13.6 mcg",
+    "Vitamin B12": "0.14 mcg"
+   },
+   "manufacturerName": "Bambino Pasta Food Industries Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Nutraawell Shortcut Vermicelli",
+  "handle": "nutraawell-shortcut-vermicelli",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1.4kg",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201216_4-bambino-shortcut-vermicelli-popular.jpg"
+    },
+    "barcode": "8904287001069"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201216_4-bambino-shortcut-vermicelli-popular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201216-2_4-bambino-shortcut-vermicelli-popular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201216-3_4-bambino-shortcut-vermicelli-popular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201216-4_4-bambino-shortcut-vermicelli-popular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201216-5_4-bambino-shortcut-vermicelli-popular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201216-6_1-bambino-shortcut-vermicelli-popular.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the versatility and deliciousness of Bambino Vermicelli, a nutritious and wholesome breakfast option that's perfect for all your cooking needs. Crafted from high-quality hard wheat semolina, this vermicelli is fortified with essential vitamins and minerals, making it a nourishing choice for the whole family. Enjoy its smooth texture and irresistible flavour in a variety of sweet and savoury dishes, from upma to kheer.\nLight on the stomach and high in fibre, Bambino Vermicelli is a hassle-free, effortless way to elevate your meals, whether you're cooking a quick breakfast or preparing a delectable main course. With its non-sticky, clump-free properties, this versatile ingredient is a must-have for your pantry, delivering a wholesome and satisfying culinary experience with every bite.",
+   "ingredients": "Hard Wheat Semolina / Rawa, Vitamins and Minerals Premix [Vitamin B3 (as Niacinamide), Iron (as Ferrous Sulphate), Zinc (as Zinc Sulphate), Vitamin B2 (Riboflavin), Vitamin B1 (as Thiamine Mononitrate), Vitamin B9 (Folic Acid), Vitamin B12 (Cyanocobalamin)]",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "ENERGY": "361 Kcal",
+    "PROTEIN": "10.5g",
+    "TOTAL CARBOHYDRATES": "77.5g",
+    "OF WHICH SUGARS": "2g",
+    "DIETARY FIBRE": "2g",
+    "TOTAL FAT": "1g",
+    "TRANSFATTY ACIDS": "0g",
+    "SODIUM": "0mg",
+    "CHOLESTEROL": "0mg",
+    "CALCIUM": "2mg",
+    "IRON": "2.4mg",
+    "ZINC": "1.65mg",
+    "VITAMIN B1": "0.16mg",
+    "VITAMIN B2": "0.19mg",
+    "VITAMIN B3": "2.21mg",
+    "VITAMIN B9": "13.6 mcg",
+    "VITAMIN B12": "0.14 mcg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Away from direct sunlight and moisture",
+   "manufacturerName": "Bambino Pasta food industries pvt ltd",
+   "fssaiLicense": "10014047000301",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Balian Thin & Roasted Seviyan",
+  "handle": "balian-thin-roasted-seviyan",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370510_2-bambino-balian-seviyan-thin-roasted-vermicelli.jpg"
+    },
+    "barcode": "8904287002219"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370510_2-bambino-balian-seviyan-thin-roasted-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370510-2_2-bambino-balian-seviyan-thin-roasted-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370510-3_2-bambino-balian-seviyan-thin-roasted-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370510-4_1-bambino-balian-seviyan-thin-roasted-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370510-5_1-bambino-balian-seviyan-thin-roasted-vermicelli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "With Bambino Thin Roasted Vermicelli in your culinary repertoire, your dishes will achieve a smooth and dependable base that can pair well with a multitude of delicious sauces and veggies! Get ready to enjoy your healthy and satisfying meal. Made from wheat flour, our vermicelli is thin, translucent and offers a non-sticky texture that doesn't clump up and is therefore pleasant on the tongue. In addition to its versatility in the kitchen, vermicelli is also a good source of carbohydrates and fibre, which can help to promote healthy digestion and regulate blood sugar levels. It contains essential vitamins and minerals such as vitamin B, iron and calcium, which can help to support overall health and well-being.",
+   "ingredients": "Refined Wheat Flour (Maida)",
+   "manufacturerName": "Bambino Pasta Food Industries PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Multigrain Vermicelli",
+  "handle": "multigrain-vermicelli",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40334404_2-bambino-multigrain-vermicelli.jpg"
+    },
+    "barcode": "8904287005500"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334404_2-bambino-multigrain-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334404-2_2-bambino-multigrain-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334404-3_2-bambino-multigrain-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334404-4_2-bambino-multigrain-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334404-5_2-bambino-multigrain-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334404-6_2-bambino-multigrain-vermicelli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the delightful and nutritious Bambino Multi Millet Vermicelli, a delectable alternative to traditional vermicelli. Crafted with a blend of positive millets, this versatile ingredient adds a healthy twist to your favourite dishes, making it the perfect choice for health-conscious individuals and busy families alike. Packed with essential nutrients and vitamins, this multigrain vermicelli is rich in fibre, promoting digestive health and supporting heart well-being. Low in fat and cholesterol-free, it offers a nourishing base for a wide range of recipes, from upma and pulao to stir-fried delights. Boasting a delightful taste and texture, this multigrain vermicelli is quick and easy to prepare, catering to your busy lifestyle while providing a nutritious and satisfying meal option. Embrace the goodness of positive millets and elevate your culinary experience with Bambino Multi Millet Vermicelli, the healthier choice for your daily meals.",
+   "ingredients": "Durum Wheat Semolina / Rawa, Barley, Rice Flour, Soya Flour, Corn Flour, Emulsifier (Ins 471), Stabilisers (Ins 412, Ins 415)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "100g (No. Of Servings Per Pack- 2)",
+    "Energy": "341.67 kcal",
+    "Protein": "13.22 g",
+    "Carbohydrate": "71.40 g",
+    "Total Sugars": "2.18 g",
+    "Added Sugar": "0.00 g",
+    "Dietary Fibre": "6.00 g",
+    "Total Fat": "1.10 g",
+    "Saturated Fatty Acids": "0.15 g",
+    "Trans Fatty Acids": "0.00 g",
+    "Sodium": "16.29 mg",
+    "Cholesterol": "0.00 mg",
+    "calcium": "27.14 mg",
+    "RDA": "24% Of RDA Per 100g Of Product For Protein, 14.5% Of RDA Per 100g Of Product For Dietary Fibre"
+   },
+   "storageInstructions": "*Store the Bambino Multi Grain Vermicelli in a cool, dry, and hygienic place",
+   "manufacturerName": "Bambino Pasta Food Industries Pvt. Ltd",
+   "fssaiLicense": "10014047000301",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Multi Millet Vermicelli",
+  "handle": "multi-millet-vermicelli",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40334403_2-bambino-multimillet-vermicelli.jpg"
+    },
+    "barcode": "8904287005258"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334403_2-bambino-multimillet-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334403-2_2-bambino-multimillet-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334403-3_2-bambino-multimillet-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334403-4_2-bambino-multimillet-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334403-5_2-bambino-multimillet-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334403-6_2-bambino-multimillet-vermicelli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the delightful blend of foxtail, barnyard, sorghum millets, and durum wheat semolina in Bambino Multi-Millet Vermicelli. This versatile vermicelli offers a rich, wholesome culinary experience, perfect for a variety of savoury and sweet dishes. Packed with fibre, it promotes digestive health and provides a filling, nutritious meal for all ages. Explore the diverse tastes of millets with this convenient, quick-cooking vermicelli that adds a healthy twist to your cooking. Whether you're preparing a traditional upma, a flavourful pulao, or a delectable stir-fry, Bambino Multi-Millet Vermicelli is a delicious and satisfying choice that celebrates the unique texture and nutty flavour of millets.",
+   "ingredients": "Durum Wheat Semolina / Rawa, Foxtail Millet, Sorghum, Barnyard Millet, Emulsifier (Ins 471), Stabiliser (Ins 412)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "100g (No. Of Servings Per Pack - 2)",
+    "Energy": "342.52 kcal",
+    "Protein": "11.62 g",
+    "Carbohydrate": "72.16 g",
+    "Total Sugars": "1.68 g",
+    "Added Sugar": "0g",
+    "Dietary Fibre": "7.06g",
+    "Total Fat": "1.42 g",
+    "Saturated Fatty Acids": "0.31g",
+    "Trans Fatty Acids": "0g",
+    "Sodium": "17 mg",
+    "Cholesterol": "0 mg",
+    "RDA": "* calculated Average Values (Ref. Icmr-Nin Data) guidelines Based On 2000 kcal Diet"
+   },
+   "storageInstructions": "* Store the Bambino Millet Vermicelli in a cool, dry, and hygienic place",
+   "manufacturerName": "Bambino Pasta Food Industries Pvt. Ltd",
+   "fssaiLicense": "10014047000301",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ragi Vermicelli",
+  "handle": "ragi-vermicelli",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40334405_2-bambino-ragi-vermicelli.jpg"
+    },
+    "barcode": "8904287005531"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334405_2-bambino-ragi-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334405-2_2-bambino-ragi-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334405-3_2-bambino-ragi-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334405-4_2-bambino-ragi-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334405-5_2-bambino-ragi-vermicelli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334405-6_2-bambino-ragi-vermicelli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the delightful twist Bambino Ragi Vermicelli brings to your meals. Crafted with a unique blend of nutritious ragi (finger millet) and durum semolina wheat, this versatile vermicelli is perfect for creating a variety of savoury and sweet dishes. From hearty upma to creamy kheer and flavourful stir-fries, its smooth texture and earthy taste make it a favourite choice for breakfast, lunch, or dinner. Quick to cook and easy to use, Bambino Ragi Vermicelli offers the perfect balance of taste and convenience, making it a great addition to your kitchen for experimenting with both traditional and modern recipes. Packed with essential nutrients like calcium and fibre, this gluten-free option is a healthy and satisfying choice for the whole family.",
+   "ingredients": "Ragi Flour, Durum Wheat Rawa, Emulsifier (Ins 471), Stabilisers (Ins 412, Ins 415)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "100g",
+    "Energy": "326.6kcal",
+    "Protein": "9.3g",
+    "Carbohydrate": "74.7g",
+    "Total Sugars": "0.9g",
+    "Added Sugar": "0g",
+    "Dietary Fibre": "7.45g",
+    "Total Fat": "1.44g",
+    "Saturated Fatty Acids": "0.1g",
+    "Trans Fatty Acids": "0g",
+    "Sodium": "12.4g",
+    "Cholesterol": "0g",
+    "calcium": "189.6mg",
+    "Iron": "3mg",
+    "Zinc": "1.27mg"
+   },
+   "storageInstructions": "*Store in a cool, dry, and hygienic place",
+   "manufacturerName": "Bambino Pasta Food Industries Pvt. Ltd",
+   "fssaiLicense": "10014047000301",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Macaroni Pasta",
+  "handle": "macaroni-pasta",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "425g",
+    "price": "52",
+    "compare_at_price": "52",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266428_11-bambino-macaroni-elbows.jpg"
+    }
+   },
+   {
+    "title": "850g",
+    "price": "119",
+    "compare_at_price": "119",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40178021_9-bambino-macaroni-elbow.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266428_11-bambino-macaroni-elbows.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266428-2_10-bambino-macaroni-elbows.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266428-3_10-bambino-macaroni-elbows.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266428-4_3-bambino-macaroni-elbows.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266428-5_3-bambino-macaroni-elbows.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266428-6_3-bambino-macaroni-elbows.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178021_9-bambino-macaroni-elbow.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bambino Macaroni Elbow is the delicious dry pastas made of hard wheat which is a wide dietary fibre, proteins with delectable taste. It is simple and fast to make and good to load your stomach. It is a great source of energy and high in carbohydrates. Macaronis are even rich in food aspects as they can be supportive in maintaining or lose weight. They don't guide to abdominal obesity.",
+   "ingredients": "Hard Wheat Semolina / Rawa, Micronutrient premix [Iron (as ferrous sulphate), Zinc (Zinc sulphate), Vitamin B9 (Folic acid), Vitamin B12]",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "381.00",
+    "Proteins (g)": "11.74",
+    "Total Carbohydrates (g)": "81.25",
+    "Dietary Fiber (g)": "3.00",
+    "Total Sugar(g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "1.10",
+    "Saturated Fatty Acids (g)": "0.30",
+    "PUFA (g)": "0.60",
+    "MUFA (g)": "0.10",
+    "Trans Fatty Acids (g)": "0.00",
+    "Sodium (mg)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Zinc (mg)": "1.09",
+    "Iron (mg)": "1.78",
+    "Vitamin B12 (mcg)": "0.10",
+    "Vitamin B9 (Folic Acid) (mcg)": "10.00",
+    "Serving Size": "55g"
+   },
+   "manufacturerName": "Bambino Agro Indusries Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Nutraawell Elbow Macaroni Pasta",
+  "handle": "nutraawell-elbow-macaroni-pasta",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "425g",
+    "price": "57",
+    "compare_at_price": "57",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370501_1-bambino-nutraawell-durum-wheat-elbow-pasta-macaroni.jpg"
+    },
+    "barcode": "8904287001281"
+   },
+   {
+    "title": "850g",
+    "price": "109",
+    "compare_at_price": "109",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186047_5-bambino-macaroni-elbow-pasta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370501_1-bambino-nutraawell-durum-wheat-elbow-pasta-macaroni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370501-2_1-bambino-nutraawell-durum-wheat-elbow-pasta-macaroni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370501-3_1-bambino-nutraawell-durum-wheat-elbow-pasta-macaroni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370501-4_1-bambino-nutraawell-durum-wheat-elbow-pasta-macaroni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370501-5_1-bambino-nutraawell-durum-wheat-elbow-pasta-macaroni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370501-6_1-bambino-nutraawell-durum-wheat-elbow-pasta-macaroni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186047_5-bambino-macaroni-elbow-pasta.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutraawell Durum Wheat Elbow Pasta Macaroni is made from premium durum wheat for a firm texture and authentic pasta experience. Its classic elbow shape is ideal for a variety of recipes, including pasta salads, baked dishes and creamy sauces. Easy to cook and versatile in use, it offers consistent quality and great taste for everyday meals.",
+   "ingredients": "Durum Wheat Semolina/Rawa, Vitamins and Minerals Premix [Vitamin B3 (as Niacinamide), Iron (as Ferrous Sulphate), Zinc (as Zinc Sulphate), Vitamin B2 (Riboflavin), Vitamin B1 (as Thiamine Mononitrate), Vitamin B9 (Folic Acid) & Vitamin B12 (Cyanocobalamin)].",
+   "nutritionalInfo": {
+    "Energy": "357 kcal",
+    "Protein": "12 g",
+    "Carbohydrate": "75 g",
+    "Of Which Total Sugars": "2 g",
+    "Added Sugar": "0 g",
+    "Total Fat": "1 g",
+    "Saturated Fatty Acids": "0.2 g",
+    "Trans Fatty Acids": "0 g",
+    "Sodium": "0 mg",
+    "Cholesterol": "0 mg",
+    "Iron": "2.4 mg",
+    "Zinc": "1.65 mg",
+    "Vitamin B1": "0.16 mg",
+    "Vitamin B2": "0.19 mg",
+    "Vitamin B3": "2.21 mg",
+    "Vitamin B9": "13.6 mcg",
+    "Vitamin B12": "0.14 mcg"
+   },
+   "manufacturerName": "Bambino Pasta Food Industries PVT Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Macarony Elbow Pasta",
+  "handle": "macarony-elbow-pasta",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40286525_4-bambino-macaroni-pasta-made-from-suji-no-maida-boosts-immunity.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286525_4-bambino-macaroni-pasta-made-from-suji-no-maida-boosts-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286525-2_4-bambino-macaroni-pasta-made-from-suji-no-maida-boosts-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286525-3_3-bambino-macaroni-pasta-made-from-suji-no-maida-boosts-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286525-4_3-bambino-macaroni-pasta-made-from-suji-no-maida-boosts-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286525-5_3-bambino-macaroni-pasta-made-from-suji-no-maida-boosts-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286525-6_3-bambino-macaroni-pasta-made-from-suji-no-maida-boosts-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40286525-7_3-bambino-macaroni-pasta-made-from-suji-no-maida-boosts-immunity.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste and exceptional nutritional value of Bambino's wheat pasta macaroni. Crafted from fine-quality durum wheat, this pasta is a delicious and healthy choice, free from cholesterol and fat. Packed with dietary fibre, protein, and iron, it offers a satisfying and nourishing meal that caters to health-conscious individuals. The unique hollow shape of the macaroni holds more sauce, ensuring every bite is bursting with juicy flavour.\nVersatile and quick-cooking, this premium pasta is perfect for busy weeknights or maintaining a balanced diet without sacrificing taste. Elevate your culinary experience with the perfect texture and mouthwatering taste of Bambino's wheat pasta macaroni.",
+   "ingredients": "Durum Wheat Semolina (Suji / Rawa)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "361 Kcal",
+    "Proteins": "10.5g",
+    "Total Carbohydrates": "77.5g",
+    "Dietary Fibre": "3.0g",
+    "Total Fat": "1.0g",
+    "Saturated Fatty Acids": "0.3g",
+    "Polyunsaturated Fatty Acids": "0.6g",
+    "Monounsaturated Fatty Acids": "0.1g",
+    "Trans Fatty Acids": "0g",
+    "Sodium": "0g",
+    "Cholesterol": "0mg",
+    "Calcium": "3mg",
+    "Iron": "3mg",
+    "Vitamin A": "0mg",
+    "Vitamin C": "0mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Bambino Agro Industries Ltd",
+   "fssaiLicense": "10019047001381",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Durum Wheat Spirali Pasta",
+  "handle": "durum-wheat-spirali-pasta",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "67",
+    "compare_at_price": "67",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370509_2-bambino-nutraawell-spirali-premium-durum-wheat-pasta.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370507_2-bambino-durum-wheat-spirali-pasta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370509_2-bambino-nutraawell-spirali-premium-durum-wheat-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370509-2_2-bambino-nutraawell-spirali-premium-durum-wheat-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370509-3_2-bambino-nutraawell-spirali-premium-durum-wheat-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370509-4_2-bambino-nutraawell-spirali-premium-durum-wheat-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370509-5_2-bambino-nutraawell-spirali-premium-durum-wheat-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370509-6_1-bambino-nutraawell-spirali-premium-durum-wheat-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370507_2-bambino-durum-wheat-spirali-pasta.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bambino Premium Pasta (Elbow) is a health-conscious choice, enriched with essential vitamins, zinc, and iron to boost immunity. This pasta cooks quickly in 10-11 minutes, combining convenience with rich flavour. As a globally beloved food, it brings versatility and enjoyment to any meal, aligning well with today's health-oriented consumer preferences. Enjoy the robust flavours and cultural richness of this pasta, crafted from the finest durum wheat semolina.\nKey Features:\nMade from the finest durum wheat semolina\nRich in dietary fibre and proteins\nDelicious taste without compromising on nutrition\nExcellent source of energy-boosting carbohydrates",
+   "ingredients": "Durum Wheat Semolina/Rawa, Vitamins and Minerals Premix [Vitamin B3 (as Niacinamide), Iron (as Ferrous Sulphate), Zinc (as Zinc Sulphate), Vitamin B2 (Riboflavin), Vitamin B1 (as Thiamine Mononitrate), Vitamin B9 (Folic Acid) & Vitamin B12 (Cyanocobalamin)].\nContains Wheat",
+   "nutritionalInfo": {
+    "Energy": "357 kcal",
+    "Protein": "12 g",
+    "Carbohydrate": "75 g",
+    "Of Which Total Sugars": "20 g",
+    "Added Sugar": "1 g",
+    "Total Fat": "0.2 g",
+    "Saturated Fatty Acids": "0 g",
+    "Trans Fatty Acids": "0 mg",
+    "Sodium": "0 mg",
+    "Cholesterol": "0 mg",
+    "Iron": "2.4 mg",
+    "Zinc": "1.65 mg",
+    "Vitamin B1": "0.16 mg",
+    "Vitamin B2": "0.19 mg",
+    "Vitamin B3": "2.21 mg",
+    "Vitamin B9": "13.6 mcg",
+    "Vitamin B12": "0.14 mcg"
+   },
+   "manufacturerName": "Bambino Pasta Food Industries Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Durum Wheat Penne Pasta",
+  "handle": "durum-wheat-penne-pasta",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "67",
+    "compare_at_price": "67",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370508_2-bambino-nutraawell-penne-premium-pasta-made-from-durum-wheat.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370506_2-bambino-penne-durum-wheat-pasta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370508_2-bambino-nutraawell-penne-premium-pasta-made-from-durum-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370508-2_2-bambino-nutraawell-penne-premium-pasta-made-from-durum-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370508-3_2-bambino-nutraawell-penne-premium-pasta-made-from-durum-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370508-4_2-bambino-nutraawell-penne-premium-pasta-made-from-durum-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370508-5_2-bambino-nutraawell-penne-premium-pasta-made-from-durum-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370508-6_1-bambino-nutraawell-penne-premium-pasta-made-from-durum-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370506_2-bambino-penne-durum-wheat-pasta.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bambino Premium Pasta is a health-conscious choice, enriched with essential vitamins, zinc, and iron to boost immunity. This pasta cooks quickly in 10-11 minutes, combining convenience with rich flavour. As a globally beloved food, it brings versatility and enjoyment to any meal, aligning well with today's health-oriented consumer preferences. Enjoy the robust flavours and cultural richness of this pasta, crafted from the finest durum wheat semolina.\nKey Features:\nMade from the finest durum wheat semolina\nRich in dietary fibre and proteins\nDelicious taste without compromising on nutrition\nExcellent source of energy-boosting carbohydrates",
+   "ingredients": "Durum Wheat Semolina/Rawa, Vitamins and Minerals Premix [Vitamin B3 (as Niacinamide), Iron (as Ferrous Sulphate), Zinc (as Zinc Sulphate), Vitamin B2 (Riboflavin), Vitamin B1 (as Thiamine Mononitrate), Vitamin B9 (Folic Acid) & Vitamin B12 (Cyanocobalamin)].",
+   "nutritionalInfo": {
+    "Energy": "357 kcal",
+    "Protein": "12 g",
+    "Carbohydrate": "75 g",
+    "Of Which Total Sugars": "2 g",
+    "Added Sugar": "1 g",
+    "Total Fat": "0.2 g",
+    "Saturated Fatty Acids": "0 g",
+    "Trans Fatty Acids": "0 g",
+    "Sodium": "0 mg",
+    "Cholesterol": "0 mg",
+    "Iron": "2.4 mg",
+    "Zinc": "1.65 mg",
+    "Vitamin B1": "0.16 mg",
+    "Vitamin B2": "0.19 mg",
+    "Vitamin B3": "2.21 mg",
+    "Vitamin B9": "13.6 mcg",
+    "Vitamin B12": "0.14 mcg"
+   },
+   "manufacturerName": "Bambino Pasta Food Industries PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Durum Wheat Elbow Pasta",
+  "handle": "durum-wheat-elbow-pasta",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358571_3-bambino-elbow-pasta.jpg"
+    },
+    "barcode": "8904287001205"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358571_3-bambino-elbow-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358571-2_3-bambino-elbow-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358571-3_3-bambino-elbow-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358571-4_3-bambino-elbow-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358571-5_3-bambino-elbow-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358571-6_3-bambino-elbow-pasta.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Crafted from premium durum wheat and completely free from maida, this elbow-shaped pasta offers a wholesome and nutritious twist to your favourite meals. Its firm texture and perfect bite make it ideal for creamy sauces, baked dishes, and hearty salads. Rich in natural wheat goodness, it cooks beautifully to a golden hue, delivering authentic Italian taste and satisfying flavour in every forkful. A deliciously healthy choice for everyday dining and special recipes alike.",
+   "ingredients": "Durum\nWheat Semolina / Rawa,\nVitamin\nand Minerals Premix [Vitamin B3\nNiacinamide,\nIron (as Ferrous Sulphate),\nZinc\nSulphate), Vitamin B2 (Riboflavin), Vitamin B1 (Thiamine\nMononitrate), Vitamin B9 (Folic Acid), Vitamin\nB12 (Cyanocobalamin)]",
+   "nutritionalInfo": {
+    "Energy": "357kcal",
+    "Protein": "12g",
+    "Carbohydrate": "75g",
+    "of which total sugars": "2g",
+    "Added sugar": "0g",
+    "Total Fat": "1g",
+    "Saturated Fatty acids": "0.2g",
+    "Trans Fatty acids": "0g",
+    "Sodium": "0mg",
+    "Cholesterol": "0mg",
+    "Iron": "2.4mg",
+    "Zinc": "1.65mg",
+    "Vitamin B1": "0.16mg",
+    "Vitamin B2": "0.19mg",
+    "Vitamin B3": "2.21mg",
+    "Vitamin B9": "13.6mcg",
+    "Vitamin B12": "0.14mcg"
+   },
+   "manufacturerName": "Bambino Pasta Food Industry Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Penne Pasta",
+  "handle": "premium-penne-pasta",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20002585_7-bambino-pasta-penne.jpg"
+    },
+    "barcode": "8901242108306"
+   },
+   {
+    "title": "500g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40178028_4-bambino-penne-pasta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20002585_7-bambino-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20002585-2_8-bambino-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20002585-3_6-bambino-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20002585-4_6-bambino-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20002585-5_6-bambino-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20002585-6_5-bambino-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20002585-7_5-bambino-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20002585-8_5-bambino-pasta-penne.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your culinary experience with Bambino's premium penne pasta, crafted from fine quality durum wheat. This wholesome and delicious pasta is a true delight for health-conscious food lovers. Boasting a nil cholesterol and fat content, it is a rich source of iron, protein, and dietary fibre, making it a nutritious choice for your meals. The perfect hollow centre of the penne allows the sauce to cling beautifully, enhancing the flavour in every bite.\nWhether you're preparing creamy sauces or baking delectable dishes, this versatile pasta delivers an authentic Italian taste experience. Enjoy the convenience of quick cooking in just 10-11 minutes, and add this culinary essential to your pantry today for a truly reimagined mealtime.",
+   "ingredients": "Durum Wheat Semolina / Suji",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "361.00",
+    "Proteins (g)": "10.50",
+    "Total Carbohydrates (g)": "77.50",
+    "Dietary Fiber (g)": "3.00",
+    "Total Sugar (g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "1.00",
+    "Saturated Fatty Acids (g)": "0.30",
+    "PUFA (g)": "0.60",
+    "MUFA (g)": "0.10",
+    "Trans Fatty Acids (g)": "0.00",
+    "Sodium (mg)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Calcium (mg)": "2.80",
+    "Iron (mg)": "1.90",
+    "Vitamin A (mg)": "0.00",
+    "Vitamin C (mg)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Bambino Agro Indusries Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Spirali Pasta",
+  "handle": "premium-spirali-pasta",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201218_6-bambino-premium-pasta-spirali.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201218_6-bambino-premium-pasta-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201218-2_1-bambino-premium-pasta-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201218-3_1-bambino-premium-pasta-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201218-4_1-bambino-premium-pasta-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201218-5_1-bambino-premium-pasta-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201218-6_1-bambino-premium-pasta-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201218-7_1-bambino-premium-pasta-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201218-8_1-bambino-premium-pasta-spirali.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bambino spirali pasta is complete from high-quality durum wheat which makes it exceptionally healthy and nutritious. With no trans fats and zero cholesterol, this pasta is wonderful for every time snacking. Made from superior quality durum wheat/ semolina/suji, rich in protein, less oil consumption.",
+   "ingredients": "Durum Wheat",
+   "usageInstructions": "Ready to cook.",
+   "manufacturerName": "Bambino Pasta food industries pvt ltd",
+   "fssaiLicense": "10014047000301",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Spaghetti Pasta",
+  "handle": "premium-spaghetti-pasta",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370504_2-bambino-premium-durum-wheat-pasta-spaghetti.jpg"
+    },
+    "barcode": "8904287001168"
+   },
+   {
+    "title": "500g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370511_2-bambino-premium-durum-wheat-pasta-spaghetti.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370504_2-bambino-premium-durum-wheat-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370504-2_2-bambino-premium-durum-wheat-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370504-3_2-bambino-premium-durum-wheat-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370504-4_1-bambino-premium-durum-wheat-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370504-5_1-bambino-premium-durum-wheat-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370511_2-bambino-premium-durum-wheat-pasta-spaghetti.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Premium Durum Wheat Pasta Spaghetti is crafted from durum wheat and shaped into long, slender strands suitable for a variety of pasta dishes. Its versatile form pairs well with tomato-based sauces, creamy recipes, vegetables, seafood, and meat preparations. Easy to cook and serve, it is a popular choice for everyday meals, family dinners, and a range of international-inspired recipes.",
+   "ingredients": "Durum Wheat Semolina (Sooji) Pasta / Spaghetti",
+   "nutritionalInfo": {
+    "Energy": "358 kcal",
+    "Protein (g)": "12",
+    "Total Carbohydrates (g)": "75",
+    "Of Which Sugars (g)": "2.5",
+    "Dietary Fibre (g)": "8",
+    "Total Fat (g)": "1.5",
+    "Trans Fatty Acids (g)": "0",
+    "Sodium (mg)": "25",
+    "Cholesterol (mg)": "0"
+   },
+   "manufacturerName": "Bambino Pasta Food Industries Pvt LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "All Seasons Spirali Pasta",
+  "handle": "all-seasons-spirali-pasta",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/284409_10-bambino-spirali-pasta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284409_10-bambino-spirali-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284409-2_8-bambino-spirali-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284409-3_6-bambino-spirali-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284409-4_6-bambino-spirali-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284409-5_6-bambino-spirali-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284409-6_5-bambino-spirali-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284409-7_5-bambino-spirali-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284409-8_5-bambino-spirali-pasta.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Made using superior quality durum wheat semolina, our bambino spiral pasta is crafted to satisfy your cravings for authentic Italian pasta. Inspired by authentic Italian cuisine, its perfect shape and size allow any sauce or dressing to seep in well and help you serve the most delectable pasta. Plus you can enjoy it guilt-free because a typical plate portion will provide you enough slow-release energy for a busy day at home, the office, or at the gym.\nAll our products are made using only premium quality ingredients and contain high protein content, Zero cholesterol, no trans fat, and a low glycaemic index. Making bambino spirali pasta a healthy treat for your entire family.",
+   "ingredients": "Durum Wheat Semolina / Suji",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "361.00",
+    "Proteins (g)": "10.50",
+    "Total Carbohydrates (g)": "77.50",
+    "Dietary Fiber (g)": "3.00",
+    "Total Sugar(g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "1.00",
+    "Saturated Fatty Acids (g)": "0.30",
+    "PUFA (g)": "0.60",
+    "MUFA (g)": "0.10",
+    "Trans Fatty Acids (g)": "0.00",
+    "Sodium (mg)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Calcium (mg)": "2.80",
+    "Iron (mg)": "1.90",
+    "Vitamin A (mg)": "0.00",
+    "Vitamin C (mg)": "0.00",
+    "% RDA* Per Serving": "Figures based on calculate values - (Ref.ICMR-NIN Data)"
+   },
+   "storageInstructions": "*Keep in a cool, dry place",
+   "manufacturerName": "Bambino Agro Indusries Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Daily Pasta Spirali",
+  "handle": "daily-pasta-spirali",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224915_4-bambino-daily-pasta-made-from-durum-wheat-spirali.jpg"
+    },
+    "barcode": "8901242112303"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224915_4-bambino-daily-pasta-made-from-durum-wheat-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224915-2_4-bambino-daily-pasta-made-from-durum-wheat-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224915-3_4-bambino-daily-pasta-made-from-durum-wheat-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224915-4_4-bambino-daily-pasta-made-from-durum-wheat-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224915-5_4-bambino-daily-pasta-made-from-durum-wheat-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224915-6_4-bambino-daily-pasta-made-from-durum-wheat-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224915-7_4-bambino-daily-pasta-made-from-durum-wheat-spirali.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224915-8_2-bambino-daily-pasta-made-from-durum-wheat-spirali.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bambino Pasta is made of durum wheat semolina (Suji), which is best suited to high-quality dry pasta. Bambino Penne Pasta enjoys popularity in every household. Combine it with cheese, vegetables, meat, etc. and get a perfect balance of carbs, proteins, calcium, and other essential nutrients needed by your body.",
+   "ingredients": "Durum Wheat Semolina / Suji",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "55g",
+    "Energy (Kcal)": "381.00",
+    "Proteins (g)": "10.50",
+    "Total Carbohydrates (g)": "82.50",
+    "Dietary Fiber (g)": "2.50",
+    "Total Sugar(g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "1.00",
+    "Saturated Fatty Acids (g)": "0.20",
+    "PUFA (g)": "0.60",
+    "MUFA (g)": "0.10",
+    "Trans Fatty Acids (g)": "0.00",
+    "Sodium (mg)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Calcium (mg)": "2.80",
+    "Iron (mg)": "1.90",
+    "Vitamin A (mg)": "0.00",
+    "Vitamin C (mg)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Bambino Agro Industries Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019047001381"
+  }
+ },
+ {
+  "title": "Daily Pasta Penne",
+  "handle": "daily-pasta-penne",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226119_5-bambino-daily-pasta-penne-made-from-semolina.jpg"
+    },
+    "barcode": "8901242111504"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226119_5-bambino-daily-pasta-penne-made-from-semolina.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226119-2_5-bambino-daily-pasta-penne-made-from-semolina.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226119-3_5-bambino-daily-pasta-penne-made-from-semolina.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226119-4_5-bambino-daily-pasta-penne-made-from-semolina.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226119-5_5-bambino-daily-pasta-penne-made-from-semolina.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226119-6_5-bambino-daily-pasta-penne-made-from-semolina.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bambino Pasta is made of durum wheat semolina (Suji), which is best suited to high-quality dry pasta. Bambino Elbow Pasta enjoys popularity in every household. Combine it with cheese, vegetables, meat etc. and get a perfect balance of carbs, proteins, calcium and other essential nutrients needed by your body.",
+   "ingredients": "Durum Wheat Semolina / Suji",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "361.00",
+    "Proteins (g)": "10.50",
+    "Total Carbohydrates (g)": "77.50",
+    "Dietary Fiber (g)": "3.00",
+    "Total Sugar (g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "1.00",
+    "Saturated Fatty Acids (g)": "0.30",
+    "PUFA (g)": "0.60",
+    "MUFA (g)": "0.10",
+    "Trans Fatty Acids (g)": "0.00",
+    "Sodium (mg)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Calcium(mg)": "2.80",
+    "Iron (mg)": "1.90",
+    "Vitamin A (mcg)": "0.00",
+    "Vitamin C (mcg)": "0.00"
+   },
+   "storageInstructions": "*Keep in a cool, dry and hygienic place\n*Avoid direct sunlight and moisture",
+   "manufacturerName": "Bambino Agro Industries Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019047001381"
+  }
+ },
+ {
+  "title": "Double Roasted Sooji",
+  "handle": "double-roasted-sooji",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "46",
+    "compare_at_price": "46",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216032_3-bambino-sooji-double-roasted.jpg"
+    },
+    "barcode": "8904287000765"
+   },
+   {
+    "title": "1kg",
+    "price": "92",
+    "compare_at_price": "92",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216033_1-bambino-sooji-double-roasted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216032_3-bambino-sooji-double-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216032-2_3-bambino-sooji-double-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216032-3_3-bambino-sooji-double-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216032-4_3-bambino-sooji-double-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216032-5_3-bambino-sooji-double-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216032-6_3-bambino-sooji-double-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216033_1-bambino-sooji-double-roasted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The perfect cut of each grain in Bambino Double Roasted Sooji makes sure to make the product perfectly granulated. It is made of fine quality which is reflected in the product itself. The roasted sooji has too many health benefits that you can count on your fingers. It is highly rich in protein and fibre and provides a healthy choice for a healthy diet. Even though being a part of your healthy diet, it doesn't compromise with its deliciousness. Make every day a joyful occasion by making delicious meals from Bambino. It helps you keep fuller for longer and you can stay light and active all day long with lightweight dishes made by this Sooji. It made from the best quality wheat grains. Double Roasted Sooji gives the double benefit of great taste & quality.",
+   "ingredients": "Durum Wheat\nContains Wheat Gluten",
+   "nutritionalInfo": {
+    "Energy": "357kcal",
+    "Protein": "12g",
+    "Total Carbohydrates": "74.8g",
+    "Sugars": "1.5g",
+    "Total Fat": "1g",
+    "Dietary Fibre": "3g",
+    "Sodium": "0mg",
+    "Cholesterol": "0mg"
+   },
+   "storageInstructions": "Store in a cool, dry place.",
+   "manufacturerName": "Bambino Pasta Food Industries Pvt. Ltd. 4th floor",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014047000301"
+  }
+ },
+ {
+  "title": "Soya Chunks",
+  "handle": "soya-chunks",
+  "vendor": "Bambino",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362411_3-bambino-soya-chunks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362411_3-bambino-soya-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362411-2_3-bambino-soya-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362411-3_3-bambino-soya-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362411-4_3-bambino-soya-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362411-5_3-bambino-soya-chunks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bambino Soya Chunks is a nutritious, protein-packed ingredient made from defatted soy flour. With a high protein and fibre content, it’s an ideal addition to vegetarian diets, weight-loss plans, or high-energy meals.\nThese soya nuggets absorb spices well, making them perfect for curries, biryanis, or even Indo-Chinese recipes. Easy to prepare, low in fat, and highly versatile, they offer both health and taste in every bite.",
+   "ingredients": "Defatted Soya (100%)",
+   "nutritionalInfo": {
+    "Energy": "312.00 kcal",
+    "Proteins": "53.00 g",
+    "Total Carbohydrates": "15.00 g",
+    "Dietary Fibre": "15.50 g",
+    "Total Sugar": "2.90 g",
+    "Added Sugar": "0.00 g",
+    "Total Fat": "1.00 g",
+    "Saturated Fatty Acids": "0.30 g",
+    "Trans Fatty Acids": "0.00 g",
+    "Sodium": "441.10 mg",
+    "Cholesterol": "0.00 mg",
+    "Calcium": "405.00 mg",
+    "Iron": "22.40 mg"
+   },
+   "fssaiLicense": "10019047001381",
+   "countryOfOrigin": "India"
+  }
+ }
+]
