@@ -1,0 +1,62 @@
+{
+  "brand": "Aptamil",
+  "manufacturer": "Danone India Pvt. Ltd.",
+  "feed": "aptamil-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/aptamil/logo-d9b1d625.png",
+  "themeColor": "#1D2C7A",
+  "themeColorSecondary": "#4A7BD0",
+  "namePrefix": "Aptamil ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^C\\-ProteQ\\ Stage\\ 1\\ Infant\\ Formula\\ \\(0\\-6\\ Months\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Gold\\ Stage\\ 1\\ Infant\\ Formula\\ \\(0\\-6\\ Months\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Premium\\ Stage\\ 1\\ Infant\\ Formula\\ \\(0\\-6\\ Months\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Premium\\ Stage\\ 2\\ Follow\\-Up\\ Formula\\ \\(6\\-12\\ Months\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Premium\\ Stage\\ 3\\ Follow\\-Up\\ Formula\\ \\(12\\-24\\ Months\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Preterm\\ Infant\\ Milk\\ Substitute$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    }
+  ]
+}

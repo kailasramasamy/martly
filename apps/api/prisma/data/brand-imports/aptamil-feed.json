@@ -1,0 +1,635 @@
+[
+ {
+  "title": "C-ProteQ Stage 1 Infant Formula (0-6 Months)",
+  "handle": "c-proteq-stage-1-infant-formula-0-6-months",
+  "vendor": "Aptamil",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "1150",
+    "compare_at_price": "1150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374679_2-aptamil-c-proteq-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+    },
+    "barcode": "8906048502204"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374679_2-aptamil-c-proteq-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374679-2_2-aptamil-c-proteq-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374679-3_2-aptamil-c-proteq-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374679-4_2-aptamil-c-proteq-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374679-5_2-aptamil-c-proteq-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374679-6_2-aptamil-c-proteq-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374679-7_2-aptamil-c-proteq-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374679-8_1-aptamil-c-proteq-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Aptamil C-ProteQ is an infant formula containing synbiotics, a blend of probiotics and prebiotics. It also contains DHA, ARA, lactose, vitamin C and vitamin D.",
+   "ingredients": "Partially Skimmed Milk, Demineralised Whey Solids, Edible Vegetable Oils (Canola and Corn Oil), Lactose, Galacto-Oligosaccharides**, Minerals#, Docosahexaenoic Acid Powder (Schizochytrium sp. Oil), Arachidonic Acid Powder (Mortierella alpina Oil), Fructo-Oligosaccharides**, Emulsifier (Soy Lecithin), Vitamins, Probiotic (B. breve), Nucleotides Premix, Acidity Regulator (Sodium Hydroxide), Taurine, L-Carnitine, Antioxidant (Mixed Tocopherols), Beta-Carotene.",
+   "nutritionalInfo": {
+    "Energy": "493 kcal / 2064 kJ",
+    "Total Fat": "24.3 g",
+    "Milk Fat": "13 g",
+    "Saturated Fatty Acids, Maximum": "14.9 g",
+    "Monounsaturated Fatty Acids": "5.5 g",
+    "Polyunsaturated Fatty Acids": "3 g",
+    "Trans Fatty Acids, Maximum": "0.8 g",
+    "Cholesterol": "20 mg",
+    "Alpha-Linolenic Acid (Omega-3)": "315 mg",
+    "Linoleic Acid (Omega-6)": "3150 mg",
+    "Docosahexaenoic Acid (DHA)": "95 mg",
+    "Arachidonic Acid (ARA)": "95 mg",
+    "Protein": "11.0 g",
+    "Whey-to-Casein Ratio": "60:40",
+    "Carbohydrate": "59.6 g",
+    "Total Sugars": "41.4 g",
+    "Added Sugars": "13.4 g",
+    "Sugar (sucrose)": "0.0 g",
+    "Galacto-Oligosaccharides (GOS)": "5.3 g",
+    "Fructo-Oligosaccharides (FOS)": "0.6 g",
+    "Nucleotides": "10 mg",
+    "Taurine": "10 mg",
+    "Carnitine": "7 mg",
+    "Beta-Carotene": "200 mcg",
+    "Vitamin A": "385 mcg RE",
+    "Vitamin D": "6 mcg",
+    "Vitamin E": "2.7 mg TE",
+    "Vitamin K": "8 mcg",
+    "Thiamine": "250 mcg",
+    "Riboflavin": "500 mcg",
+    "Niacin": "4.2 mg",
+    "Vitamin B6": "160 mcg",
+    "Folic Acid": "10 mcg",
+    "Pantothenic Acid": "2.2 mg",
+    "Biotin": "10 mcg",
+    "Vitamin B12": "0.7 mcg",
+    "Vitamin C": "30 mg",
+    "Choline": "100 mg",
+    "Calcium": "385 mg",
+    "Phosphorus": "209 mg",
+    "Magnesium": "35 mg",
+    "Sodium": "110 mg",
+    "Potassium": "402 mg",
+    "Chloride": "260 mg",
+    "Iron": "4.1 mg",
+    "Zinc": "3 mg",
+    "Copper": "180 mcg",
+    "Iodine": "100 mcg",
+    "Manganese": "41 mcg",
+    "Selenium": "7 mcg"
+   },
+   "manufacturerName": "Nutricia International Private Limited At Chandigarh - Ambala Highway",
+   "fssaiLicense": "10012063000210",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Stage 1 Infant Formula (0-6 Months)",
+  "handle": "gold-stage-1-infant-formula-0-6-months",
+  "vendor": "Aptamil",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "1010",
+    "compare_at_price": "1010",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374687_1-aptamil-gold-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+    },
+    "barcode": "8906048501764"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374687_1-aptamil-gold-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374687-2_1-aptamil-gold-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374687-3_1-aptamil-gold-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374687-4_1-aptamil-gold-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374687-5_1-aptamil-gold-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374687-6_1-aptamil-gold-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374687-7_1-aptamil-gold-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374687-8_1-aptamil-gold-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Aptamil Gold Stage 1 is an infant formula specially formulated for infants, with prebiotic HMOs, DHA, ARA, omega-3 and omega-6 fatty acids, vitamin C, vitamin D and iron. Backed by Nutricia’s 125 years of expertise in early-life nutrition and 50 years of pioneering human milk research, it is developed by a dedicated team of over 500 scientists and experts to help support your baby’s nutritional needs.",
+   "ingredients": "Ingredients: Partially Skimmed Milk, Demineralised Whey and Whey Solids, Edible Vegetable Oils (Canola Oil and Corn Oil), Galacto-Oligosaccharides**, Lactose, Minerals*, Human Milk Oligosaccharides* (2'-FL, LNT, 3-FL, 6'-SL, 3'-SL), Docosahexaenoic Acid Powder (Schizochytrium Sp. Oil), Arachidonic Acid Powder (Mortierella Alpina Oil), Fructo-Oligosaccharides**, Emulsifier (Soy Lecithin), Choline Chloride, Nucleotides Premix, Acidity Regulator (Sodium Hydroxide), Vitamins^, Taurine, L-Carnitine, Antioxidant (Mixed Tocopherols), Beta Carotene.\nIngredients of the Product When Prepared in Accordance With the Directions on the Label: Water, Partially Skimmed Milk, Demineralised Whey and Whey Solids, Edible Vegetable Oils (Canola Oil and Corn Oil), Galacto-Oligosaccharides**, Lactose, Minerals*, Human Milk Oligosaccharides* (2'-FL, LNT, 3-FL, 6'-SL, 3'-SL), Docosahexaenoic Acid Powder (Schizochytrium Sp. Oil), Arachidonic Acid Powder (Mortierella Alpina Oil), Fructo-Oligosaccharides**, Emulsifier (Soy Lecithin), Choline Chloride, Nucleotides Premix, Acidity Regulator (Sodium Hydroxide), Vitamins^, Taurine, L-Carnitine, Antioxidant (Mixed Tocopherols), Beta Carotene.\nAllergen Information: Contains Milk and Soy.",
+   "nutritionalInfo": {
+    "Energy": "491 kcal / 2056 kJ",
+    "Total Fat": "24.3 g",
+    "Milk Fat": "13.0 g",
+    "Saturated Fatty Acids, Max.": "14.9 g",
+    "Mono-unsaturated Fatty Acids": "5.5 g",
+    "Poly-unsaturated Fatty Acids": "3.0 g",
+    "Trans Fatty Acids, Max.": "0.8 g",
+    "Cholesterol": "20 mg",
+    "Alpha-Linolenic Acid (Omega-3)": "315 mg",
+    "Linoleic Acid (Omega-6)": "3150 mg",
+    "Docosahexaenoic Acid (DHA)": "95 mg",
+    "Arachidonic Acid (ARA)": "95 mg",
+    "Protein": "11.0 g",
+    "Whey": "Casein Ratio: 60:40",
+    "Carbohydrate": "59.6 g",
+    "Total Sugars": "41.4 g",
+    "Added Sugars": "13.4 g",
+    "Galacto-Oligosaccharides (GOS)": "5.3 g",
+    "Fructo-Oligosaccharides (FOS)": "0.6 g",
+    "6 HMOs": "0.74 g",
+    "2'-Fucosyllactose (2'-FL)": "385.2 mg",
+    "Lacto-N-Tetraose (LNT)": "192.6 mg",
+    "3-Fucosyllactose (3-FL)": "96.3 mg",
+    "6'-Sialyllactose (6'-SL)": "37 mg",
+    "3'-Sialyllactose (3'-SL)": "29.6 mg",
+    "Nucleotides": "18 mg",
+    "Taurine": "10 mg",
+    "Carnitine": "7.0 mg",
+    "Beta-Carotene": "212 mcg",
+    "Vitamin A": "425 mcg RE",
+    "Vitamin D": "7.0 mcg",
+    "Vitamin E": "2.7 mg TE",
+    "Vitamin K": "8.0 mcg",
+    "Thiamine": "250 mcg",
+    "Riboflavin": "500 mcg",
+    "Niacin": "4.5 mg",
+    "Vitamin B6": "160 mcg",
+    "Folic Acid": "10 mcg",
+    "Pantothenic Acid": "2.5 mg",
+    "Biotin": "13 mcg",
+    "Vitamin B12": "0.7 mcg",
+    "Vitamin C": "30 mg",
+    "Choline": "110 mg",
+    "Calcium": "400 mg",
+    "Phosphorus": "250 mg",
+    "Magnesium": "41 mg",
+    "Sodium": "110 mg",
+    "Potassium": "402 mg",
+    "Chloride": "260 mg",
+    "Iron": "4.1 mg",
+    "Zinc": "3.2 mg",
+    "Copper": "180 mcg",
+    "Iodine": "100 mcg",
+    "Manganese": "45 mcg",
+    "Selenium": "7.0 mcg"
+   },
+   "storageInstructions": "Store in a cool and dry place away from sunlight\nClose the tin tightly after every use\nAfter opening this pack, consume the contents within 3 weeks or the expiry date, whichever is earlier\nDo not use if inner aluminium seal is broken or missing",
+   "manufacturerName": "Nutricia International Private Limited At Chandigarh - Ambala Highway",
+   "fssaiLicense": "10012063000210",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Stage 1 Infant Formula (0-6 Months)",
+  "handle": "premium-stage-1-infant-formula-0-6-months",
+  "vendor": "Aptamil",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374684_2-aptamil-premium-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374684_2-aptamil-premium-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374684-2_2-aptamil-premium-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374684-3_2-aptamil-premium-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374684-4_2-aptamil-premium-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374684-5_2-aptamil-premium-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374684-6_2-aptamil-premium-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374684-7_2-aptamil-premium-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374684-8_1-aptamil-premium-infant-formula-powder-stage-1-from-birth-to-6-months.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Aptamil Premium Stage 1 is an infant formula with GOS and FOS prebiotics, DHA and ARA, tryptophan, phospholipids, omega-3 and omega-6 fatty acids, and vitamin B12. Nutricia has over 125 years of expertise in early-life nutrition and has been pioneering human milk research for 50 years, supported by a team of more than 500 scientists and experts.\nIMPORTANT NOTICE: MOTHER'S MILK IS BEST FOR YOUR BABY. Please consult your healthcare professional for guidance.",
+   "ingredients": "Milk Solids, Demineralised Whey and Whey Solids, Edible Vegetable Oils (Corn Oil and Canola Oil), Galacto-Oligosaccharides, Minerals#, Docosahexaenoic Acid Powder (Schizochytrium sp. Oil), Arachidonic Acid Powder (Mortierella alpina Oil), Fructo-Oligosaccharides, Emulsifier (Soy Lecithin), Choline Chloride, Acidity Regulator (Sodium Hydroxide), Vitamins^, Nucleotides Premix, Taurine, L-Carnitine, Antioxidant (Mixed Tocopherols), Beta-Carotene.",
+   "nutritionalInfo": {
+    "Energy": "497 kcal / 2081 kJ",
+    "Total Fat": "24.3 g",
+    "Milk Fat": "13.0 g",
+    "Saturated Fatty Acids, Maximum": "14.9 g",
+    "Monounsaturated Fatty Acids": "5.4 g",
+    "Polyunsaturated Fatty Acids": "2.9 g",
+    "Trans Fatty Acids, Maximum": "0.8 g",
+    "Cholesterol": "35 mg",
+    "Alpha-Linolenic Acid (Omega-3)": "310 mg",
+    "Linoleic Acid (Omega-6)": "3100 mg",
+    "Docosahexaenoic Acid (DHA)": "84.5 mg",
+    "Arachidonic Acid (ARA)": "84.5 mg",
+    "Milk Protein": "10.5 g",
+    "Whey-to-Casein Ratio": "60:40",
+    "Carbohydrate": "60.1 g",
+    "Total Sugars": "49.0 g",
+    "Added Sugars": "19.8 g",
+    "Galacto-Oligosaccharides (GOS)": "2.7 g",
+    "Fructo-Oligosaccharides (FOS)": "0.3 g",
+    "Taurine": "10 mg",
+    "Carnitine": "7 mg",
+    "Choline": "110 mg",
+    "Beta-Carotene": "210 mcg",
+    "Nucleotides": "12.5 mg",
+    "Vitamin A": "410 mcg RE",
+    "Vitamin D": "7 mcg",
+    "Vitamin E": "2.7 mg TE",
+    "Vitamin K": "8 mcg",
+    "Thiamine": "235 mcg",
+    "Riboflavin": "475 mcg",
+    "Niacin": "4.5 mg",
+    "Vitamin B6": "150 mcg",
+    "Folic Acid": "10 mcg",
+    "Pantothenic Acid": "2.5 mg",
+    "Biotin": "12.7 mcg",
+    "Vitamin B12": "0.7 mcg",
+    "Vitamin C": "30 mg",
+    "Calcium": "400 mg",
+    "Phosphorus": "200 mg",
+    "Magnesium": "40 mg",
+    "Sodium": "110 mg",
+    "Potassium": "400 mg",
+    "Chloride": "255 mg",
+    "Iron": "4.1 mg",
+    "Zinc": "3.2 mg",
+    "Copper": "180 mcg",
+    "Iodine": "100 mcg",
+    "Manganese": "40 mcg",
+    "Selenium": "6.5 mcg"
+   },
+   "manufacturerName": "Nutricia International Private Limited At Chandigarh - Ambala Highway",
+   "fssaiLicense": "10012063000210",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Stage 2 Follow-Up Formula (6-12 Months)",
+  "handle": "premium-stage-2-follow-up-formula-6-12-months",
+  "vendor": "Aptamil",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374683_2-aptamil-premium-follow-up-formula-powder-stage-2-from-6-to-12-months.jpg"
+    },
+    "barcode": "8906048501986"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374683_2-aptamil-premium-follow-up-formula-powder-stage-2-from-6-to-12-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374683-2_2-aptamil-premium-follow-up-formula-powder-stage-2-from-6-to-12-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374683-3_2-aptamil-premium-follow-up-formula-powder-stage-2-from-6-to-12-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374683-4_2-aptamil-premium-follow-up-formula-powder-stage-2-from-6-to-12-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374683-5_2-aptamil-premium-follow-up-formula-powder-stage-2-from-6-to-12-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374683-6_2-aptamil-premium-follow-up-formula-powder-stage-2-from-6-to-12-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374683-7_1-aptamil-premium-follow-up-formula-powder-stage-2-from-6-to-12-months.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374683-8_1-aptamil-premium-follow-up-formula-powder-stage-2-from-6-to-12-months.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Aptamil Premium Stage 2 is a follow-up formula containing DHA and ARA, omega-3 and omega-6 fatty acids, vitamins C, D and B12, and iron, for babies aged 6-12 months. Nutricia has over 125 years of expertise in early-life nutrition and has been pioneering human milk research for 50 years, supported by a team of more than 500 scientists and experts.\nIMPORTANT NOTICE: MOTHER'S MILK IS BEST FOR YOUR BABY. Please consult your healthcare professional for guidance.",
+   "ingredients": "Milk Solids, Demineralised Whey and Whey Solids, Edible Vegetable Oils (Corn Oil and Canola Oil), Minerals#, Docosahexaenoic Acid Powder (Schizochytrium sp. oil), Arachidonic Acid Powder (Mortierella alpina oil), Choline, Emulsifier (Soy Lecithin), Acidity Regulator (Sodium Hydroxide), Vitamins*, Antioxidant (Mixed Tocopherols), Taurine, L-Carnitine, Inositol, Beta-Carotene.",
+   "nutritionalInfo": {
+    "Energy": "498 kcal / 2085 kJ",
+    "Total Fat": "24.0 g",
+    "Milk Fat": "12.0 g",
+    "Saturated Fatty Acids, Maximum": "14.4 g",
+    "Monounsaturated Fatty Acids": "6.4 g",
+    "Polyunsaturated Fatty Acids": "4.0 g",
+    "Trans Fatty Acids, Maximum": "0.8 g",
+    "Cholesterol": "35 mg",
+    "Alpha-Linolenic Acid (Omega-3)": "320 mg",
+    "Linoleic Acid (Omega-6)": "3200 mg",
+    "Docosahexaenoic Acid (DHA)": "48 mg",
+    "Arachidonic Acid (ARA)": "48 mg",
+    "Milk Protein": "15.5 g",
+    "Whey-to-Casein Ratio": "40:60",
+    "Carbohydrate": "55.0 g",
+    "Total Sugars": "47.0 g",
+    "Added Sugars": "17.3 g",
+    "Taurine": "10 mg",
+    "Carnitine": "8 mg",
+    "Beta-Carotene": "220 mcg",
+    "Choline": "110 mg",
+    "Inositol": "Value not specified",
+    "Essential Amino Acids": "Value not specified",
+    "Vitamin A": "42 mcg RE",
+    "Vitamin D": "7 mcg",
+    "Vitamin E": "2.7 mg TE",
+    "Vitamin K": "8 mcg",
+    "Thiamine": "251 mcg",
+    "Riboflavin": "600 mcg",
+    "Niacin": "4.4 mg",
+    "Vitamin B6": "160 mcg",
+    "Folic Acid": "10 mcg",
+    "Pantothenic Acid": "3 mg",
+    "Biotin": "8.4 mcg",
+    "Vitamin B12": "0.7 mcg",
+    "Vitamin C": "35 mg",
+    "Calcium": "490 mg",
+    "Phosphorus": "270 mg",
+    "Magnesium": "45 mg",
+    "Sodium": "115 mg",
+    "Potassium": "452 mg",
+    "Chloride": "26 mg",
+    "Iron": "4.1 mg",
+    "Zinc": "3 mg",
+    "Copper": "182 mcg",
+    "Iodine": "105 mcg",
+    "Manganese": "8 mcg",
+    "Selenium": "8 mcg"
+   },
+   "manufacturerName": "Nutricia International Private Limited At Chandigarh - Ambala Highway",
+   "fssaiLicense": "10012063000210",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Stage 3 Follow-Up Formula (12-24 Months)",
+  "handle": "premium-stage-3-follow-up-formula-12-24-months",
+  "vendor": "Aptamil",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374682_2-aptamil-premium-follow-up-formula-powder-stage-3-from-12-months-onwards.jpg"
+    },
+    "barcode": "8906048501993"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374682_2-aptamil-premium-follow-up-formula-powder-stage-3-from-12-months-onwards.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374682-2_2-aptamil-premium-follow-up-formula-powder-stage-3-from-12-months-onwards.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374682-3_2-aptamil-premium-follow-up-formula-powder-stage-3-from-12-months-onwards.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374682-4_2-aptamil-premium-follow-up-formula-powder-stage-3-from-12-months-onwards.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374682-5_2-aptamil-premium-follow-up-formula-powder-stage-3-from-12-months-onwards.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374682-6_2-aptamil-premium-follow-up-formula-powder-stage-3-from-12-months-onwards.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374682-7_2-aptamil-premium-follow-up-formula-powder-stage-3-from-12-months-onwards.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374682-8_1-aptamil-premium-follow-up-formula-powder-stage-3-from-12-months-onwards.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Aptamil Premium Stage 3 is a follow-up formula containing DHA and ARA, omega-3 and omega-6 fatty acids, vitamins C, D and B12, and iron, for babies aged 12-24 months. Nutricia has over 125 years of expertise in early-life nutrition and has been pioneering human milk research for 50 years, supported by a team of more than 500 scientists and experts.\nIMPORTANT NOTICE: MOTHER'S MILK IS BEST FOR YOUR BABY. Please consult your healthcare professional for guidance.",
+   "ingredients": "Milk Solids, Demineralised Whey and Whey Solids, Edible Vegetable Oils (Corn Oil and Canola Oil), Minerals#, Docosahexaenoic Acid Powder (Schizochytrium sp. oil), Arachidonic Acid Powder (Mortierella alpina oil), Choline, Emulsifier (Soy Lecithin), Acidity Regulator (Sodium Hydroxide), Vitamins*, Antioxidant (Mixed Tocopherols), Taurine, L-Carnitine, Inositol, Beta-Carotene.",
+   "nutritionalInfo": {
+    "Energy": "498 kcal / 2085 kJ",
+    "Total Fat": "24.0 g",
+    "Milk Fat": "12.0 g",
+    "Saturated Fatty Acids, Maximum": "14.4 g",
+    "Monounsaturated Fatty Acids": "6.5 g",
+    "Polyunsaturated Fatty Acids": "4.1 g",
+    "Trans Fatty Acids, Maximum": "0.7 g",
+    "Cholesterol": "35 mg",
+    "Alpha-Linolenic Acid (Omega-3)": "325 mg",
+    "Linoleic Acid (Omega-6)": "3250 mg",
+    "Docosahexaenoic Acid (DHA)": "48 mg",
+    "Arachidonic Acid (ARA)": "48 mg",
+    "Milk Protein": "15.5 g",
+    "Whey-to-Casein Ratio": "40:60",
+    "Carbohydrate": "55.0 g",
+    "Total Sugars": "47.0 g",
+    "Added Sugars": "17.3 g",
+    "Taurine": "10 mg",
+    "Carnitine": "8 mg",
+    "Beta-Carotene": "230 mcg",
+    "Choline": "105 mg",
+    "Inositol": "Value not specified",
+    "Essential Amino Acids": "Value not specified",
+    "Vitamin A": "425 mcg RE",
+    "Vitamin D": "7.1 mcg",
+    "Vitamin E": "2.7 mg TE",
+    "Vitamin K": "8 mcg",
+    "Thiamine": "252 mcg",
+    "Riboflavin": "605 mcg",
+    "Niacin": "4.4 mg",
+    "Vitamin B6": "165 mcg",
+    "Folic Acid": "11 mcg",
+    "Pantothenic Acid": "3 mg",
+    "Biotin": "8.6 mcg",
+    "Vitamin B12": "0.7 mcg",
+    "Vitamin C": "35 mg",
+    "Calcium": "500 mg",
+    "Phosphorus": "275 mg",
+    "Magnesium": "45 mg",
+    "Sodium": "115 mg",
+    "Potassium": "455 mg",
+    "Chloride": "265 mg",
+    "Iron": "4.1 mg",
+    "Zinc": "3.1 mg",
+    "Copper": "185 mcg",
+    "Iodine": "108 mcg",
+    "Manganese": "8.4 mcg",
+    "Selenium": "9 mcg"
+   },
+   "manufacturerName": "Nutricia International Private Limited At Chandigarh - Ambala Highway",
+   "fssaiLicense": "10012063000210",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Preterm Infant Milk Substitute",
+  "handle": "preterm-infant-milk-substitute",
+  "vendor": "Aptamil",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "720",
+    "compare_at_price": "720",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374681_1-aptamil-preterm-infant-milk-substitute-for-baby-born-before-37-weeks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374681_1-aptamil-preterm-infant-milk-substitute-for-baby-born-before-37-weeks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374681-2_1-aptamil-preterm-infant-milk-substitute-for-baby-born-before-37-weeks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374681-3_1-aptamil-preterm-infant-milk-substitute-for-baby-born-before-37-weeks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374681-4_1-aptamil-preterm-infant-milk-substitute-for-baby-born-before-37-weeks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374681-5_1-aptamil-preterm-infant-milk-substitute-for-baby-born-before-37-weeks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374681-6_1-aptamil-preterm-infant-milk-substitute-for-baby-born-before-37-weeks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374681-7_1-aptamil-preterm-infant-milk-substitute-for-baby-born-before-37-weeks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Aptamil Preterm is specially formulated with balanced, age-appropriate levels of protein, energy, calcium, phosphorus and vitamin D to support physical growth. Its optimised blend of DHA, ARA, iron, iodine, folic acid, choline and taurine supports brain development. The whey-predominant formula contains lactose and maltodextrin to support digestive health, while nucleotides, zinc, selenium and vitamins A, C, D and E help support normal immune function.",
+   "ingredients": "Ingredients: Partially Skimmed Milk, Demineralized Whey and Whey Solids, Maltodextrin, Edible Vegetable Oil (Soy Oil), Galacto-Oligosaccharides**, Medium Chain Triglycerides, Minerals*, Arachidonic Acid Powder-0.9% (Mortierella Alpina Oil), Docosahexaenoic Acid Powder-0.9% (Crypthecodinium Cohnii Oil), Fructo Oligosaccharides**, Vitamins*, Amino Acids^, Emulsifier (Soy Lecithin), Choline, Acidity Regulator (Sodium Hydroxide), Nucleotides Premix (0.05%), Inositol, Antioxidant (Mixed Tocopherols), L-Carnitine, Beta Carotene.\nIngredients of the Product When Prepared in Accordance With the Directions on the Label: Water, Partially Skimmed Milk, Demineralized Whey and Whey Solids, Maltodextrin, Edible Vegetable Oil (Soy Oil), Galacto-Oligosaccharides**, Medium Chain Triglycerides, Minerals*, Arachidonic Acid Powder (Mortierella Alpina Oil), Docosahexaenoic Acid Powder (Crypthecodinium Cohnii Oil), Fructo Oligosaccharides**, Vitamins*, Amino Acids^, Emulsifier (Soy Lecithin), Choline, Acidity Regulator (Sodium Hydroxide), Nucleotides Premix, Inositol, Antioxidant (Mixed Tocopherols), L-Carnitine, Beta Carotene.\nAllergen Information: Contains Milk and Soy.",
+   "nutritionalInfo": {
+    "Energy": "487 kcal / 2039 kJ",
+    "Fat": "24.0 g",
+    "Milk Fat": "12.0 g",
+    "Medium Chain Triglycerides": "4.5 g",
+    "Saturated Fatty Acids, Max.": "20.4 g",
+    "Mono-unsaturated Fatty Acids": "4.6 g",
+    "Poly-unsaturated Fatty Acids": "3.6 g",
+    "Trans Fatty Acids, Max.": "0.7 g",
+    "Cholesterol": "35 mg",
+    "Alpha-Linolenic Acid (Omega-3)": "320 mg",
+    "Linoleic Acid (Omega-6)": "3200 mg",
+    "Docosahexaenoic Acid (DHA)": "95.0 mg",
+    "Arachidonic Acid (ARA)": "110.0 mg",
+    "Protein": "16.5 g",
+    "Whey": "Casein Ratio: 60:40",
+    "Carbohydrate": "53.8 g",
+    "Total Sugars": "32.0 g",
+    "Added Sugars": "1.0 g",
+    "Galacto-Oligosaccharides (GOS)": "4.43 g",
+    "Fructo-Oligosaccharides (FOS)": "0.48 g",
+    "Nucleotides": "22 mg",
+    "Carnitine": "11 mg",
+    "Beta-Carotene": "200 mcg",
+    "Choline": "101 mg",
+    "Inositol": "25 mg",
+    "Vitamin A": "2134 mcg RE",
+    "Vitamin D": "18 mcg",
+    "Vitamin E": "17.4 mg TE",
+    "Vitamin K": "67 mcg",
+    "Thiamine": "740 mcg",
+    "Riboflavin": "1024 mcg",
+    "Niacin": "12.5 mg",
+    "Vitamin B6": "711 mcg",
+    "Folic Acid": "233 mcg",
+    "Pantothenic Acid": "5.2 mg",
+    "Biotin": "21 mcg",
+    "Vitamin B12": "1.4 mcg",
+    "Vitamin C": "100 mg",
+    "Calcium": "630 mg",
+    "Phosphorus": "315 mg",
+    "Magnesium": "40 mg",
+    "Sodium": "360 mg",
+    "Potassium": "410 mg",
+    "Chloride": "540 mg",
+    "Iron": "10.0 mg",
+    "Zinc": "7.2 mg",
+    "Copper": "510 mcg",
+    "Iodine": "148 mcg",
+    "Manganese": "40 mcg",
+    "Selenium": "27.0 mcg",
+    "Chromium": "1.7 mcg",
+    "Molybdenum": "10.0 mcg",
+    "Cystine": "312 mg",
+    "Tyrosine": "600 mg",
+    "Histidine": "407 mg",
+    "Taurine": "43 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place away from sunlight\nClose the tin tightly after every use\nAfter opening this pack, consume the contents within 3 weeks or the expiry date, whichever is earlier\nDo not use if inner aluminium seal is broken or missing",
+   "manufacturerName": "Nutricia International Private Limited At Chandigarh - Ambala Highway",
+   "fssaiLicense": "10012063000210",
+   "countryOfOrigin": "India"
+  }
+ }
+]
