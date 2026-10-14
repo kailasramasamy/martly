@@ -1,0 +1,54 @@
+{
+  "brand": "Worldone",
+  "manufacturer": "Worldone Business Stationery",
+  "feed": "worldone-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/worldone/logo-55b5cd82.png",
+  "themeColor": "#1D4F9C",
+  "themeColorSecondary": "#F5B800",
+  "namePrefix": "Worldone ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^A4\\ 6\\ Subject\\ Notebook\\ \\-\\ Single\\ Ruled,\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Executive\\ A5\\ Diary\\ \\-\\ Single\\ Line,\\ 224\\ Pages,\\ Olive\\ Green$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Cube\\ Memo\\ Pad\\ \\-\\ Multicolour,\\ 70\\ GSM$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Invisible\\ Tape\\ \\-\\ 18mm\\ x\\ 33m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Invisible\\ Tape\\ with\\ Dispenser\\ \\-\\ 18mm\\ x\\ 33m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    }
+  ]
+}
