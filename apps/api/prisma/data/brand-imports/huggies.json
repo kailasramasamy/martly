@@ -1,0 +1,297 @@
+{
+  "brand": "Huggies (Kimberly-Clark)",
+  "manufacturer": "Kimberly-Clark India Pvt. Ltd.",
+  "feed": "huggies-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/huggies/logo-d0e34ea9.png",
+  "themeColor": "#E31837",
+  "themeColorSecondary": "#1C3F94",
+  "namePrefix": "Huggies ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Huggies Wonder Pants Diapers - Medium": "Wonder Pants Medium",
+    "Huggies Wonder Taped Diapers - New Born": "Complete Comfort Dry Tape Newborn"
+  },
+  "rules": [
+    {
+      "match": "^Wonder\\ Pants\\ Extra\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Pants\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Pants\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Pants\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Pants\\ Extra\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Wonder\\ Pants\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Wonder\\ Pants\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Wonder\\ Pants\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Wonder\\ Pants\\ Extra\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Wonder\\ Pants\\ XXL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Wonder\\ Pants\\ XXXL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Dry\\ Pants\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Dry\\ Pants\\ Extra\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Dry\\ Pants\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Dry\\ Pants\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Dry\\ Pants\\ Extra\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Premium\\ Soft\\ Pants\\ Extra\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Premium\\ Soft\\ Pants\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Premium\\ Soft\\ Pants\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Premium\\ Soft\\ Pants\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Premium\\ Soft\\ Pants\\ Extra\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Nature\\ Care\\ Pants\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Nature\\ Care\\ Pants\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Nature\\ Care\\ Pants\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Nature\\ Care\\ Pants\\ Extra\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^New\\ Dry\\ Diapers\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^New\\ Dry\\ Diapers\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^New\\ Dry\\ Diapers\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Natural\\ Soft\\ Diapers\\ Extra\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Natural\\ Soft\\ Diapers\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Natural\\ Soft\\ Diapers\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Natural\\ Soft\\ Diapers\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Natural\\ Soft\\ Diapers\\ Extra\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Natural\\ Soft\\ Diapers\\ XXL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Dry\\ Tape\\ Newborn$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    }
+  ]
+}
