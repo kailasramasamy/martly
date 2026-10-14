@@ -1,0 +1,150 @@
+{
+  "brand": "Chrome",
+  "manufacturer": "Chrome Stationery",
+  "feed": "chrome-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/chrome/logo-ade4c149.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#29ABE2",
+  "namePrefix": "Chrome ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Transparent\\ Cello\\ Tape\\ \\-\\ 12\\ mm\\ x\\ 33\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Transparent\\ Cello\\ Tape\\ \\-\\ 18\\ mm\\ x\\ 33\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Transparent\\ Cello\\ Tape\\ \\-\\ 24\\ mm\\ x\\ 33\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Double\\ Sided\\ Foam\\ Tape\\ \\-\\ 18\\ mm\\ x\\ 3\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Double\\ Sided\\ Foam\\ Tape\\ \\-\\ 24\\ mm\\ x\\ 3\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Neon\\ Gel\\ Pen\\ Set\\ \\-\\ Fluorescent,\\ Metallic,\\ Glitter\\ \\&\\ Pastel$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Calligraphy\\ Pen\\ Set\\ \\-\\ 4\\ Nibs$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Calligraphy\\ Pen\\ Set\\ \\-\\ 6\\ Nibs$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Bear\\ Shaped\\ Highlighters$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Shaped\\ Highlighters$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Shaped\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Dessert\\ Themed\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Engineering\\ Themed\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Space\\ Themed\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vehicle\\ Themed\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Table\\ Pencil\\ Sharpener\\ with\\ Hand\\ Crank$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Diary\\ with\\ Sticky\\ Notes\\ \\&\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    }
+  ]
+}
