@@ -258,44 +258,44 @@ model Organization {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
-  subscriptionEnabled Boolean @default(false) @map("subscription_enabled")
+  subscriptionEnabled Boolean  @default(false) @map("subscription_enabled")
   festivalRegions     String[] @default(["ALL"]) @map("festival_regions")
 
-  stores              Store[]
-  products            Product[]
-  collections         Collection[]
-  coupons             Coupon[]
-  deliveryZones       DeliveryZone[]
-  loyaltyConfig       LoyaltyConfig?
-  loyaltyBalances     LoyaltyBalance[]
-  loyaltyTransactions LoyaltyTransaction[]
-  deliveryTrips       DeliveryTrip[]
-  banners             Banner[]
+  stores                Store[]
+  products              Product[]
+  collections           Collection[]
+  coupons               Coupon[]
+  deliveryZones         DeliveryZone[]
+  loyaltyConfig         LoyaltyConfig?
+  loyaltyBalances       LoyaltyBalance[]
+  loyaltyTransactions   LoyaltyTransaction[]
+  deliveryTrips         DeliveryTrip[]
+  banners               Banner[]
   notificationCampaigns NotificationCampaign[]
   notificationTemplates NotificationTemplate[]
-  referralConfig      ReferralConfig?
-  referrals           Referral[]
-  supportTickets      SupportTicket[]
-  returnRequests      ReturnRequest[]
-  membershipPlans     MembershipPlan[]
-  userMemberships     UserMembership[]
-  subscriptions       Subscription[]
-  recipes             Recipe[]
+  referralConfig        ReferralConfig?
+  referrals             Referral[]
+  supportTickets        SupportTicket[]
+  returnRequests        ReturnRequest[]
+  membershipPlans       MembershipPlan[]
+  userMemberships       UserMembership[]
+  subscriptions         Subscription[]
+  recipes               Recipe[]
 
   @@map("organizations")
 }
 
 model Store {
-  id             String      @id @default(uuid())
-  organizationId String      @map("organization_id")
-  name           String
-  slug           String      @unique
-  address        String
-  phone          String?
-  imageUrl       String?     @map("image_url")
-  status         StoreStatus @default(PENDING)
-  latitude       Float?      @map("latitude")
-  longitude      Float?      @map("longitude")
+  id                    String      @id @default(uuid())
+  organizationId        String      @map("organization_id")
+  name                  String
+  slug                  String      @unique
+  address               String
+  phone                 String?
+  imageUrl              String?     @map("image_url")
+  status                StoreStatus @default(PENDING)
+  latitude              Float?      @map("latitude")
+  longitude             Float?      @map("longitude")
   deliveryRadius        Float       @default(7) @map("delivery_radius")
   minOrderAmount        Decimal?    @map("min_order_amount")
   freeDeliveryThreshold Decimal?    @map("free_delivery_threshold")
@@ -304,23 +304,23 @@ model Store {
   updatedAt             DateTime    @updatedAt @map("updated_at")
 
   subscriptionEnabled      Boolean                  @default(false) @map("subscription_enabled")
-  subscriptionDeliveryMode SubscriptionDeliveryMode  @default(DEDICATED) @map("subscription_delivery_mode")
-  subscriptionWindowStart  String?                   @map("subscription_window_start")
-  subscriptionWindowEnd    String?                   @map("subscription_window_end")
-  subscriptionCutoffTime   String                    @default("22:00") @map("subscription_cutoff_time")
+  subscriptionDeliveryMode SubscriptionDeliveryMode @default(DEDICATED) @map("subscription_delivery_mode")
+  subscriptionWindowStart  String?                  @map("subscription_window_start")
+  subscriptionWindowEnd    String?                  @map("subscription_window_end")
+  subscriptionCutoffTime   String                   @default("22:00") @map("subscription_cutoff_time")
 
-  organization       Organization        @relation(fields: [organizationId], references: [id])
-  storeProducts      StoreProduct[]
-  userStores         UserStore[]
-  orders             Order[]
-  reviews            Review[]
+  organization          Organization           @relation(fields: [organizationId], references: [id])
+  storeProducts         StoreProduct[]
+  userStores            UserStore[]
+  orders                Order[]
+  reviews               Review[]
   storeDeliveryZones    StoreDeliveryZone[]
   deliveryTiers         DeliveryTier[]
   deliverySlots         DeliverySlot[]
   expressDeliveryConfig ExpressDeliveryConfig?
   deliveryTrips         DeliveryTrip[]
   banners               Banner[]
-  storeRatings          StoreRating[] @relation("StoreRatings")
+  storeRatings          StoreRating[]          @relation("StoreRatings")
   supportTickets        SupportTicket[]
   returnRequests        ReturnRequest[]
   subscriptions         Subscription[]
@@ -340,37 +340,37 @@ model User {
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")
 
-  walletBalance          Decimal @default(0) @db.Decimal(10, 2) @map("wallet_balance")
-  referralCode           String? @unique @map("referral_code")
-  razorpayCustomerId     String? @unique @map("razorpay_customer_id")
-  preferredPaymentMethod String? @map("preferred_payment_method")
-  lastUpiVpa             String? @map("last_upi_vpa")
+  walletBalance          Decimal   @default(0) @map("wallet_balance") @db.Decimal(10, 2)
+  referralCode           String?   @unique @map("referral_code")
+  razorpayCustomerId     String?   @unique @map("razorpay_customer_id")
+  preferredPaymentMethod String?   @map("preferred_payment_method")
+  lastUpiVpa             String?   @map("last_upi_vpa")
   deletedAt              DateTime? @map("deleted_at")
 
-  userStores           UserStore[]
-  orders               Order[]
-  deviceTokens         DeviceToken[]
-  addresses            UserAddress[]
-  reviews              Review[]
-  wishlistItems        WishlistItem[]
-  couponRedemptions    CouponRedemption[]
-  walletTransactions   WalletTransaction[]
-  loyaltyBalances      LoyaltyBalance[]
-  loyaltyTransactions  LoyaltyTransaction[]
-  deliveryTrips        DeliveryTrip[]
-  notifications        Notification[]
-  campaignsSent        NotificationCampaign[] @relation("CampaignsSent")
-  templatesCreated     NotificationTemplate[] @relation("TemplatesCreated")
-  reviewReplies        ReviewReply[]          @relation("ReviewReplies")
-  storeRatings         StoreRating[]          @relation("StoreRatings")
-  referralsMade        Referral[]             @relation("ReferralsMade")
-  referralReceived     Referral[]             @relation("ReferralReceived")
-  supportTickets       SupportTicket[]
-  returnRequests       ReturnRequest[]
-  memberships          UserMembership[]
-  subscriptions        Subscription[]
-  basketAddOns         BasketAddOn[]
-  searchLogs           SearchLog[]
+  userStores          UserStore[]
+  orders              Order[]
+  deviceTokens        DeviceToken[]
+  addresses           UserAddress[]
+  reviews             Review[]
+  wishlistItems       WishlistItem[]
+  couponRedemptions   CouponRedemption[]
+  walletTransactions  WalletTransaction[]
+  loyaltyBalances     LoyaltyBalance[]
+  loyaltyTransactions LoyaltyTransaction[]
+  deliveryTrips       DeliveryTrip[]
+  notifications       Notification[]
+  campaignsSent       NotificationCampaign[] @relation("CampaignsSent")
+  templatesCreated    NotificationTemplate[] @relation("TemplatesCreated")
+  reviewReplies       ReviewReply[]          @relation("ReviewReplies")
+  storeRatings        StoreRating[]          @relation("StoreRatings")
+  referralsMade       Referral[]             @relation("ReferralsMade")
+  referralReceived    Referral[]             @relation("ReferralReceived")
+  supportTickets      SupportTicket[]
+  returnRequests      ReturnRequest[]
+  memberships         UserMembership[]
+  subscriptions       Subscription[]
+  basketAddOns        BasketAddOn[]
+  searchLogs          SearchLog[]
 
   @@map("users")
 }
@@ -451,6 +451,8 @@ model Subcategory {
   sortOrder    Int      @default(0) @map("sort_order")
   imageUrl     String?  @map("image_url")
   translations Json?    @map("translations")
+  // Words shoppers use for this aisle ("shaving" → Razor & Blades); search matches products here by intent
+  searchTerms  String[] @default([]) @map("search_terms")
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")
 
@@ -459,19 +461,22 @@ model Subcategory {
   banners  Banner[]
 
   @@index([categoryId])
+  @@index([searchTerms], type: Gin)
   @@map("subcategories")
 }
 
 model Brand {
-  id         String   @id @default(uuid())
-  name       String
-  slug       String   @unique
-  imageUrl   String?  @map("image_url")
+  id                  String   @id @default(uuid())
+  name                String
+  slug                String   @unique
+  imageUrl            String?  @map("image_url")
   // Brand's primary and accent colours (hex), used to theme its brand store
   themeColor          String?  @map("theme_color")
   themeColorSecondary String?  @map("theme_color_secondary")
-  createdAt  DateTime @default(now()) @map("created_at")
-  updatedAt  DateTime @updatedAt @map("updated_at")
+  // 0–100 shopper recognition in India; breaks search ties so market leaders rank first
+  popularity          Int      @default(0)
+  createdAt           DateTime @default(now()) @map("created_at")
+  updatedAt           DateTime @updatedAt @map("updated_at")
 
   products Product[]
 
@@ -479,26 +484,26 @@ model Brand {
 }
 
 model Product {
-  id                  String    @id @default(uuid())
+  id                  String       @id @default(uuid())
   name                String
   description         String?
-  imageUrl            String?   @map("image_url")
-  subcategoryId       String?   @map("subcategory_id")
-  brandId             String?   @map("brand_id")
-  isActive            Boolean   @default(true) @map("is_active")
-  tags                String[]  @default([])
-  hsnCode             String?   @map("hsn_code")
-  gstPercent          Decimal?  @db.Decimal(4, 2) @map("gst_percent")
-  foodType            FoodType? @map("food_type")
-  fssaiLicense        String?   @map("fssai_license")
+  imageUrl            String?      @map("image_url")
+  subcategoryId       String?      @map("subcategory_id")
+  brandId             String?      @map("brand_id")
+  isActive            Boolean      @default(true) @map("is_active")
+  tags                String[]     @default([])
+  hsnCode             String?      @map("hsn_code")
+  gstPercent          Decimal?     @map("gst_percent") @db.Decimal(4, 2)
+  foodType            FoodType?    @map("food_type")
+  fssaiLicense        String?      @map("fssai_license")
   ingredients         String?
-  nutritionalInfo     Json?     @map("nutritional_info")
-  allergens           String[]  @default([])
-  servingSize         String?   @map("serving_size")
-  shelfLifeDays       Int?      @map("shelf_life_days")
+  nutritionalInfo     Json?        @map("nutritional_info")
+  allergens           String[]     @default([])
+  servingSize         String?      @map("serving_size")
+  shelfLifeDays       Int?         @map("shelf_life_days")
   storageType         StorageType? @map("storage_type")
-  storageInstructions String?   @map("storage_instructions")
-  manufacturerName    String?   @map("manufacturer_name")
+  storageInstructions String?      @map("storage_instructions")
+  manufacturerName    String?      @map("manufacturer_name")
   countryOfOrigin     String?      @map("country_of_origin")
   images              String[]     @default([])
   productType         ProductType? @map("product_type")
@@ -508,15 +513,15 @@ model Product {
   dangerWarnings      String?      @map("danger_warnings")
   usageInstructions   String?      @map("usage_instructions")
   translations        Json?        @map("translations")
-  organizationId      String?          @map("organization_id")
+  organizationId      String?      @map("organization_id")
   createdAt           DateTime     @default(now()) @map("created_at")
   updatedAt           DateTime     @updatedAt @map("updated_at")
 
-  searchText          String    @default("") @map("search_text")
+  searchText String @default("") @map("search_text")
 
-  organization  Organization?    @relation(fields: [organizationId], references: [id])
-  subcategory   Subcategory?     @relation(fields: [subcategoryId], references: [id])
-  brand         Brand?           @relation(fields: [brandId], references: [id])
+  organization    Organization?    @relation(fields: [organizationId], references: [id])
+  subcategory     Subcategory?     @relation(fields: [subcategoryId], references: [id])
+  brand           Brand?           @relation(fields: [brandId], references: [id])
   variants        ProductVariant[]
   storeProducts   StoreProduct[]
   orderItems      OrderItem[]
@@ -524,6 +529,7 @@ model Product {
   reviews         Review[]
   wishlistItems   WishlistItem[]
   searchAliases   SearchAlias[]
+  searchEvents    SearchEvent[]
   recipeItems     RecipeItem[]
 
   @@index([productType])
@@ -539,17 +545,17 @@ model ProductVariant {
   sku       String?  @unique
   barcode   String?  @unique
   unitType  UnitType @default(PIECE) @map("unit_type")
-  unitValue Decimal  @default(1) @db.Decimal(10, 2) @map("unit_value")
+  unitValue Decimal  @default(1) @map("unit_value") @db.Decimal(10, 2)
   mrp       Decimal? @db.Decimal(10, 2)
   packType  String?  @map("pack_type")
   imageUrl  String?  @map("image_url")
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
-  discountType  DiscountType?  @map("discount_type")
-  discountValue Decimal?       @db.Decimal(10, 2) @map("discount_value")
-  discountStart DateTime?      @map("discount_start")
-  discountEnd   DateTime?      @map("discount_end")
+  discountType  DiscountType? @map("discount_type")
+  discountValue Decimal?      @map("discount_value") @db.Decimal(10, 2)
+  discountStart DateTime?     @map("discount_start")
+  discountEnd   DateTime?     @map("discount_end")
 
   product       Product        @relation(fields: [productId], references: [id], onDelete: Cascade)
   storeProducts StoreProduct[]
@@ -559,28 +565,28 @@ model ProductVariant {
 }
 
 model StoreProduct {
-  id        String   @id @default(uuid())
-  storeId   String   @map("store_id")
-  productId String   @map("product_id")
-  variantId String   @map("variant_id")
-  price         Decimal @db.Decimal(10, 2)
-  stock         Int     @default(0)
-  reservedStock Int     @default(0) @map("reserved_stock")
-  isActive      Boolean @default(true) @map("is_active")
-  isFeatured    Boolean @default(false) @map("is_featured")
-  createdAt DateTime @default(now()) @map("created_at")
-  updatedAt DateTime @updatedAt @map("updated_at")
+  id            String   @id @default(uuid())
+  storeId       String   @map("store_id")
+  productId     String   @map("product_id")
+  variantId     String   @map("variant_id")
+  price         Decimal  @db.Decimal(10, 2)
+  stock         Int      @default(0)
+  reservedStock Int      @default(0) @map("reserved_stock")
+  isActive      Boolean  @default(true) @map("is_active")
+  isFeatured    Boolean  @default(false) @map("is_featured")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
 
-  discountType  DiscountType?  @map("discount_type")
-  discountValue Decimal?       @db.Decimal(10, 2) @map("discount_value")
-  discountStart DateTime?      @map("discount_start")
-  discountEnd   DateTime?      @map("discount_end")
-  memberPrice   Decimal?       @db.Decimal(10, 2) @map("member_price")
+  discountType  DiscountType? @map("discount_type")
+  discountValue Decimal?      @map("discount_value") @db.Decimal(10, 2)
+  discountStart DateTime?     @map("discount_start")
+  discountEnd   DateTime?     @map("discount_end")
+  memberPrice   Decimal?      @map("member_price") @db.Decimal(10, 2)
 
-  store             Store              @relation(fields: [storeId], references: [id])
-  product           Product            @relation(fields: [productId], references: [id])
-  variant           ProductVariant     @relation(fields: [variantId], references: [id])
-  orderItems        OrderItem[]
+  store                 Store                      @relation(fields: [storeId], references: [id])
+  product               Product                    @relation(fields: [productId], references: [id])
+  variant               ProductVariant             @relation(fields: [variantId], references: [id])
+  orderItems            OrderItem[]
   subscriptionItems     SubscriptionItem[]
   basketAddOns          BasketAddOn[]
   subscriptionOverrides SubscriptionItemOverride[]
@@ -590,47 +596,47 @@ model StoreProduct {
 }
 
 model Order {
-  id                   String        @id @default(uuid())
-  userId               String        @map("user_id")
-  storeId              String        @map("store_id")
-  status               OrderStatus   @default(PENDING)
-  paymentStatus        PaymentStatus @default(PENDING) @map("payment_status")
-  paymentMethod        PaymentMethod  @default(ONLINE) @map("payment_method")
-  fulfillmentType      FulfillmentType @default(DELIVERY) @map("fulfillment_type")
-  totalAmount          Decimal       @db.Decimal(10, 2) @map("total_amount")
-  deliveryAddress      String?       @map("delivery_address")
-  deliveryLat          Float?        @map("delivery_lat")
-  deliveryLng          Float?        @map("delivery_lng")
-  razorpayOrderId      String?       @map("razorpay_order_id")
-  razorpayPaymentId    String?       @map("razorpay_payment_id")
-  couponId             String?       @map("coupon_id")
-  couponCode           String?       @map("coupon_code")
-  couponDiscount       Decimal?      @db.Decimal(10, 2) @map("coupon_discount")
-  deliveryFee          Decimal       @default(0) @db.Decimal(10, 2) @map("delivery_fee")
-  deliveryDistance     Float?        @map("delivery_distance")
-  deliveryPincode      String?       @map("delivery_pincode")
-  estimatedDeliveryAt  DateTime?     @map("estimated_delivery_at")
-  deliveryNotes        String?       @map("delivery_notes")
-  walletAmountUsed     Decimal?      @db.Decimal(10, 2) @map("wallet_amount_used")
-  loyaltyPointsUsed    Int?          @map("loyalty_points_used")
-  loyaltyPointsEarned  Int?          @map("loyalty_points_earned")
-  deliverySlotId       String?       @map("delivery_slot_id")
-  deliveryTripId       String?       @map("delivery_trip_id")
-  deliverySequence     Int?          @map("delivery_sequence")
-  scheduledDate        DateTime?     @map("scheduled_date")
-  slotStartTime        String?       @map("slot_start_time")
-  slotEndTime          String?       @map("slot_end_time")
-  subscriptionId       String?       @map("subscription_id")
-  isSubscriptionOrder  Boolean       @default(false) @map("is_subscription_order")
-  createdAt            DateTime      @default(now()) @map("created_at")
-  updatedAt            DateTime      @updatedAt @map("updated_at")
+  id                  String          @id @default(uuid())
+  userId              String          @map("user_id")
+  storeId             String          @map("store_id")
+  status              OrderStatus     @default(PENDING)
+  paymentStatus       PaymentStatus   @default(PENDING) @map("payment_status")
+  paymentMethod       PaymentMethod   @default(ONLINE) @map("payment_method")
+  fulfillmentType     FulfillmentType @default(DELIVERY) @map("fulfillment_type")
+  totalAmount         Decimal         @map("total_amount") @db.Decimal(10, 2)
+  deliveryAddress     String?         @map("delivery_address")
+  deliveryLat         Float?          @map("delivery_lat")
+  deliveryLng         Float?          @map("delivery_lng")
+  razorpayOrderId     String?         @map("razorpay_order_id")
+  razorpayPaymentId   String?         @map("razorpay_payment_id")
+  couponId            String?         @map("coupon_id")
+  couponCode          String?         @map("coupon_code")
+  couponDiscount      Decimal?        @map("coupon_discount") @db.Decimal(10, 2)
+  deliveryFee         Decimal         @default(0) @map("delivery_fee") @db.Decimal(10, 2)
+  deliveryDistance    Float?          @map("delivery_distance")
+  deliveryPincode     String?         @map("delivery_pincode")
+  estimatedDeliveryAt DateTime?       @map("estimated_delivery_at")
+  deliveryNotes       String?         @map("delivery_notes")
+  walletAmountUsed    Decimal?        @map("wallet_amount_used") @db.Decimal(10, 2)
+  loyaltyPointsUsed   Int?            @map("loyalty_points_used")
+  loyaltyPointsEarned Int?            @map("loyalty_points_earned")
+  deliverySlotId      String?         @map("delivery_slot_id")
+  deliveryTripId      String?         @map("delivery_trip_id")
+  deliverySequence    Int?            @map("delivery_sequence")
+  scheduledDate       DateTime?       @map("scheduled_date")
+  slotStartTime       String?         @map("slot_start_time")
+  slotEndTime         String?         @map("slot_end_time")
+  subscriptionId      String?         @map("subscription_id")
+  isSubscriptionOrder Boolean         @default(false) @map("is_subscription_order")
+  createdAt           DateTime        @default(now()) @map("created_at")
+  updatedAt           DateTime        @updatedAt @map("updated_at")
 
-  user                User                @relation(fields: [userId], references: [id])
-  store               Store               @relation(fields: [storeId], references: [id])
-  subscription        Subscription?       @relation(fields: [subscriptionId], references: [id])
-  coupon              Coupon?             @relation(fields: [couponId], references: [id])
-  deliverySlot        DeliverySlot?       @relation(fields: [deliverySlotId], references: [id])
-  deliveryTrip        DeliveryTrip?       @relation(fields: [deliveryTripId], references: [id])
+  user                User                 @relation(fields: [userId], references: [id])
+  store               Store                @relation(fields: [storeId], references: [id])
+  subscription        Subscription?        @relation(fields: [subscriptionId], references: [id])
+  coupon              Coupon?              @relation(fields: [couponId], references: [id])
+  deliverySlot        DeliverySlot?        @relation(fields: [deliverySlotId], references: [id])
+  deliveryTrip        DeliveryTrip?        @relation(fields: [deliveryTripId], references: [id])
   items               OrderItem[]
   couponRedemptions   CouponRedemption[]
   statusLogs          OrderStatusLog[]
@@ -665,45 +671,45 @@ model OrderItem {
   variantId      String  @map("variant_id")
   storeProductId String  @map("store_product_id")
   quantity       Int
-  unitPrice      Decimal @db.Decimal(10, 2) @map("unit_price")
-  totalPrice     Decimal @db.Decimal(10, 2) @map("total_price")
+  unitPrice      Decimal @map("unit_price") @db.Decimal(10, 2)
+  totalPrice     Decimal @map("total_price") @db.Decimal(10, 2)
 
-  originalPrice Decimal?      @db.Decimal(10, 2) @map("original_price")
+  originalPrice Decimal?      @map("original_price") @db.Decimal(10, 2)
   discountType  DiscountType? @map("discount_type")
-  discountValue Decimal?      @db.Decimal(10, 2) @map("discount_value")
+  discountValue Decimal?      @map("discount_value") @db.Decimal(10, 2)
 
-  order              Order              @relation(fields: [orderId], references: [id])
-  product            Product            @relation(fields: [productId], references: [id])
-  variant            ProductVariant     @relation(fields: [variantId], references: [id])
-  storeProduct       StoreProduct       @relation(fields: [storeProductId], references: [id])
+  order              Order               @relation(fields: [orderId], references: [id])
+  product            Product             @relation(fields: [productId], references: [id])
+  variant            ProductVariant      @relation(fields: [variantId], references: [id])
+  storeProduct       StoreProduct        @relation(fields: [storeProductId], references: [id])
   returnRequestItems ReturnRequestItem[]
 
   @@map("order_items")
 }
 
 model Collection {
-  id             String   @id @default(uuid())
-  organizationId String?  @map("organization_id")
-  title          String
-  subtitle       String?
-  slug           String   @unique
-  imageUrl       String?  @map("image_url")
-  sortOrder      Int      @default(0) @map("sort_order")
-  isActive       Boolean  @default(true) @map("is_active")
-  kind           CollectionKind @default(STANDARD)
-  startsAt       DateTime? @map("starts_at")
-  endsAt         DateTime? @map("ends_at")
-  translations   Json?
-  imageUrls      Json?    @map("image_urls")
-  textInImage    Boolean  @default(false) @map("text_in_image")
-  artDirection   String?  @map("art_direction")
-  source         CurationSource @default(MANUAL)
-  festivalEventId String?  @map("festival_event_id")
-  createdAt      DateTime @default(now()) @map("created_at")
-  updatedAt      DateTime @updatedAt @map("updated_at")
+  id              String         @id @default(uuid())
+  organizationId  String?        @map("organization_id")
+  title           String
+  subtitle        String?
+  slug            String         @unique
+  imageUrl        String?        @map("image_url")
+  sortOrder       Int            @default(0) @map("sort_order")
+  isActive        Boolean        @default(true) @map("is_active")
+  kind            CollectionKind @default(STANDARD)
+  startsAt        DateTime?      @map("starts_at")
+  endsAt          DateTime?      @map("ends_at")
+  translations    Json?
+  imageUrls       Json?          @map("image_urls")
+  textInImage     Boolean        @default(false) @map("text_in_image")
+  artDirection    String?        @map("art_direction")
+  source          CurationSource @default(MANUAL)
+  festivalEventId String?        @map("festival_event_id")
+  createdAt       DateTime       @default(now()) @map("created_at")
+  updatedAt       DateTime       @updatedAt @map("updated_at")
 
-  organization  Organization?  @relation(fields: [organizationId], references: [id])
-  festivalEvent FestivalEvent? @relation(fields: [festivalEventId], references: [id], onDelete: SetNull)
+  organization  Organization?    @relation(fields: [organizationId], references: [id])
+  festivalEvent FestivalEvent?   @relation(fields: [festivalEventId], references: [id], onDelete: SetNull)
   items         CollectionItem[]
 
   @@unique([organizationId, festivalEventId])
@@ -751,9 +757,9 @@ model Coupon {
   code           String       @unique
   description    String?
   discountType   DiscountType @map("discount_type")
-  discountValue  Decimal      @db.Decimal(10, 2) @map("discount_value")
-  minOrderAmount Decimal?     @db.Decimal(10, 2) @map("min_order_amount")
-  maxDiscount    Decimal?     @db.Decimal(10, 2) @map("max_discount")
+  discountValue  Decimal      @map("discount_value") @db.Decimal(10, 2)
+  minOrderAmount Decimal?     @map("min_order_amount") @db.Decimal(10, 2)
+  maxDiscount    Decimal?     @map("max_discount") @db.Decimal(10, 2)
   usageLimit     Int?         @map("usage_limit")
   perUserLimit   Int          @default(1) @map("per_user_limit")
   usedCount      Int          @default(0) @map("used_count")
@@ -764,7 +770,7 @@ model Coupon {
   createdAt      DateTime     @default(now()) @map("created_at")
   updatedAt      DateTime     @updatedAt @map("updated_at")
 
-  organization Organization?    @relation(fields: [organizationId], references: [id])
+  organization Organization?      @relation(fields: [organizationId], references: [id])
   redemptions  CouponRedemption[]
   orders       Order[]
 
@@ -803,10 +809,10 @@ model Review {
   createdAt  DateTime     @default(now()) @map("created_at")
   updatedAt  DateTime     @updatedAt @map("updated_at")
 
-  user    User         @relation(fields: [userId], references: [id])
-  product Product      @relation(fields: [productId], references: [id])
-  store   Store?       @relation(fields: [storeId], references: [id])
-  order   Order?       @relation(fields: [orderId], references: [id])
+  user    User          @relation(fields: [userId], references: [id])
+  product Product       @relation(fields: [productId], references: [id])
+  store   Store?        @relation(fields: [storeId], references: [id])
+  order   Order?        @relation(fields: [orderId], references: [id])
   images  ReviewImage[]
   reply   ReviewReply?
 
@@ -881,7 +887,7 @@ model DeliveryZone {
   id               String   @id @default(uuid())
   name             String
   pincodes         String[] @default([])
-  deliveryFee      Decimal  @db.Decimal(10, 2) @map("delivery_fee")
+  deliveryFee      Decimal  @map("delivery_fee") @db.Decimal(10, 2)
   estimatedMinutes Int      @default(60) @map("estimated_minutes")
   isActive         Boolean  @default(true) @map("is_active")
   organizationId   String   @map("organization_id")
@@ -911,9 +917,9 @@ model StoreDeliveryZone {
 model DeliveryTier {
   id               String   @id @default(uuid())
   storeId          String   @map("store_id")
-  minDistance       Float    @map("min_distance")
-  maxDistance       Float    @map("max_distance")
-  deliveryFee      Decimal  @db.Decimal(10, 2) @map("delivery_fee")
+  minDistance      Float    @map("min_distance")
+  maxDistance      Float    @map("max_distance")
+  deliveryFee      Decimal  @map("delivery_fee") @db.Decimal(10, 2)
   estimatedMinutes Int      @default(45) @map("estimated_minutes")
   isActive         Boolean  @default(true) @map("is_active")
   createdAt        DateTime @default(now()) @map("created_at")
@@ -964,7 +970,7 @@ model WalletTransaction {
   orderId      String?               @map("order_id")
   type         WalletTransactionType
   amount       Decimal               @db.Decimal(10, 2)
-  balanceAfter Decimal               @db.Decimal(10, 2) @map("balance_after")
+  balanceAfter Decimal               @map("balance_after") @db.Decimal(10, 2)
   description  String?
   createdAt    DateTime              @default(now()) @map("created_at")
 
@@ -977,15 +983,15 @@ model WalletTransaction {
 }
 
 model LoyaltyConfig {
-  id                   String   @id @default(uuid())
-  organizationId       String   @unique @map("organization_id")
-  isEnabled            Boolean  @default(true) @map("is_enabled")
-  earnRate             Int      @default(1) @map("earn_rate")
-  minRedeemPoints      Int      @default(10) @map("min_redeem_points")
-  maxRedeemPercentage  Int      @default(50) @map("max_redeem_percentage")
-  reviewRewardPoints   Int      @default(0) @map("review_reward_points")
-  createdAt            DateTime @default(now()) @map("created_at")
-  updatedAt            DateTime @updatedAt @map("updated_at")
+  id                  String   @id @default(uuid())
+  organizationId      String   @unique @map("organization_id")
+  isEnabled           Boolean  @default(true) @map("is_enabled")
+  earnRate            Int      @default(1) @map("earn_rate")
+  minRedeemPoints     Int      @default(10) @map("min_redeem_points")
+  maxRedeemPercentage Int      @default(50) @map("max_redeem_percentage")
+  reviewRewardPoints  Int      @default(0) @map("review_reward_points")
+  createdAt           DateTime @default(now()) @map("created_at")
+  updatedAt           DateTime @updatedAt @map("updated_at")
 
   organization Organization @relation(fields: [organizationId], references: [id])
 
@@ -1026,15 +1032,15 @@ model ExpressDeliveryConfig {
 }
 
 model LoyaltyTransaction {
-  id             String                @id @default(uuid())
-  userId         String                @map("user_id")
-  organizationId String                @map("organization_id")
-  orderId        String?               @map("order_id")
+  id             String                 @id @default(uuid())
+  userId         String                 @map("user_id")
+  organizationId String                 @map("organization_id")
+  orderId        String?                @map("order_id")
   type           LoyaltyTransactionType
   points         Int
-  balanceAfter   Int                   @map("balance_after")
+  balanceAfter   Int                    @map("balance_after")
   description    String?
-  createdAt      DateTime              @default(now()) @map("created_at")
+  createdAt      DateTime               @default(now()) @map("created_at")
 
   user         User         @relation(fields: [userId], references: [id])
   organization Organization @relation(fields: [organizationId], references: [id])
@@ -1101,22 +1107,22 @@ model Banner {
 }
 
 model NotificationCampaign {
-  id              String           @id @default(uuid())
-  organizationId  String           @map("organization_id")
-  title           String
-  body            String
-  type            NotificationType
-  imageUrl        String?          @map("image_url")
-  data            Json?
-  audienceType    AudienceType     @default(ALL_CUSTOMERS) @map("audience_type")
-  audienceConfig  Json?            @map("audience_config")
-  status          CampaignStatus   @default(SENT)
-  recipientCount  Int              @default(0) @map("recipient_count")
-  scheduledAt     DateTime?        @map("scheduled_at")
-  sentAt          DateTime?        @map("sent_at")
-  sentBy          String           @map("sent_by")
-  createdAt       DateTime         @default(now()) @map("created_at")
-  updatedAt       DateTime         @updatedAt @map("updated_at")
+  id             String           @id @default(uuid())
+  organizationId String           @map("organization_id")
+  title          String
+  body           String
+  type           NotificationType
+  imageUrl       String?          @map("image_url")
+  data           Json?
+  audienceType   AudienceType     @default(ALL_CUSTOMERS) @map("audience_type")
+  audienceConfig Json?            @map("audience_config")
+  status         CampaignStatus   @default(SENT)
+  recipientCount Int              @default(0) @map("recipient_count")
+  scheduledAt    DateTime?        @map("scheduled_at")
+  sentAt         DateTime?        @map("sent_at")
+  sentBy         String           @map("sent_by")
+  createdAt      DateTime         @default(now()) @map("created_at")
+  updatedAt      DateTime         @updatedAt @map("updated_at")
 
   organization  Organization   @relation(fields: [organizationId], references: [id])
   sentByUser    User           @relation("CampaignsSent", fields: [sentBy], references: [id])
@@ -1128,16 +1134,16 @@ model NotificationCampaign {
 }
 
 model NotificationTemplate {
-  id              String           @id @default(uuid())
-  organizationId  String           @map("organization_id")
-  name            String
-  title           String
-  body            String
-  type            NotificationType @default(PROMOTIONAL)
-  imageUrl        String?          @map("image_url")
-  createdBy       String           @map("created_by")
-  createdAt       DateTime         @default(now()) @map("created_at")
-  updatedAt       DateTime         @updatedAt @map("updated_at")
+  id             String           @id @default(uuid())
+  organizationId String           @map("organization_id")
+  name           String
+  title          String
+  body           String
+  type           NotificationType @default(PROMOTIONAL)
+  imageUrl       String?          @map("image_url")
+  createdBy      String           @map("created_by")
+  createdAt      DateTime         @default(now()) @map("created_at")
+  updatedAt      DateTime         @updatedAt @map("updated_at")
 
   organization Organization @relation(fields: [organizationId], references: [id])
   creator      User         @relation("TemplatesCreated", fields: [createdBy], references: [id])
@@ -1171,8 +1177,8 @@ model ReferralConfig {
   id                  String   @id @default(uuid())
   organizationId      String   @unique @map("organization_id")
   isEnabled           Boolean  @default(true) @map("is_enabled")
-  referrerReward      Decimal  @default(50) @db.Decimal(10, 2) @map("referrer_reward")
-  refereeReward       Decimal  @default(25) @db.Decimal(10, 2) @map("referee_reward")
+  referrerReward      Decimal  @default(50) @map("referrer_reward") @db.Decimal(10, 2)
+  refereeReward       Decimal  @default(25) @map("referee_reward") @db.Decimal(10, 2)
   maxReferralsPerUser Int      @default(50) @map("max_referrals_per_user")
   createdAt           DateTime @default(now()) @map("created_at")
   updatedAt           DateTime @updatedAt @map("updated_at")
@@ -1188,8 +1194,8 @@ model Referral {
   refereeId      String         @map("referee_id")
   organizationId String         @map("organization_id")
   status         ReferralStatus @default(PENDING)
-  referrerReward Decimal        @db.Decimal(10, 2) @map("referrer_reward")
-  refereeReward  Decimal        @db.Decimal(10, 2) @map("referee_reward")
+  referrerReward Decimal        @map("referrer_reward") @db.Decimal(10, 2)
+  refereeReward  Decimal        @map("referee_reward") @db.Decimal(10, 2)
   orderId        String?        @map("order_id")
   completedAt    DateTime?      @map("completed_at")
   createdAt      DateTime       @default(now()) @map("created_at")
@@ -1252,18 +1258,18 @@ model ReturnRequest {
   reason          String
   description     String?
   images          String[]            @default([])
-  requestedAmount Decimal             @db.Decimal(10, 2) @map("requested_amount")
-  approvedAmount  Decimal?            @db.Decimal(10, 2) @map("approved_amount")
+  requestedAmount Decimal             @map("requested_amount") @db.Decimal(10, 2)
+  approvedAmount  Decimal?            @map("approved_amount") @db.Decimal(10, 2)
   adminNote       String?             @map("admin_note")
   resolvedAt      DateTime?           @map("resolved_at")
   resolvedBy      String?             @map("resolved_by")
   createdAt       DateTime            @default(now()) @map("created_at")
   updatedAt       DateTime            @updatedAt @map("updated_at")
 
-  order        Order        @relation(fields: [orderId], references: [id])
-  user         User         @relation(fields: [userId], references: [id])
-  organization Organization @relation(fields: [organizationId], references: [id])
-  store        Store        @relation(fields: [storeId], references: [id])
+  order        Order               @relation(fields: [orderId], references: [id])
+  user         User                @relation(fields: [userId], references: [id])
+  organization Organization        @relation(fields: [organizationId], references: [id])
+  store        Store               @relation(fields: [storeId], references: [id])
   items        ReturnRequestItem[]
 
   @@index([userId, createdAt])
@@ -1272,18 +1278,18 @@ model ReturnRequest {
 }
 
 model MembershipPlan {
-  id               String             @id @default(uuid())
-  organizationId   String             @map("organization_id")
-  name             String
-  description      String?
-  price            Decimal            @db.Decimal(10, 2)
-  duration         MembershipDuration
-  freeDelivery     Boolean            @default(true) @map("free_delivery")
-  loyaltyMultiplier Float             @default(1) @map("loyalty_multiplier")
-  isActive         Boolean            @default(true) @map("is_active")
-  sortOrder        Int                @default(0) @map("sort_order")
-  createdAt        DateTime           @default(now()) @map("created_at")
-  updatedAt        DateTime           @updatedAt @map("updated_at")
+  id                String             @id @default(uuid())
+  organizationId    String             @map("organization_id")
+  name              String
+  description       String?
+  price             Decimal            @db.Decimal(10, 2)
+  duration          MembershipDuration
+  freeDelivery      Boolean            @default(true) @map("free_delivery")
+  loyaltyMultiplier Float              @default(1) @map("loyalty_multiplier")
+  isActive          Boolean            @default(true) @map("is_active")
+  sortOrder         Int                @default(0) @map("sort_order")
+  createdAt         DateTime           @default(now()) @map("created_at")
+  updatedAt         DateTime           @updatedAt @map("updated_at")
 
   organization    Organization     @relation(fields: [organizationId], references: [id])
   userMemberships UserMembership[]
@@ -1293,14 +1299,14 @@ model MembershipPlan {
 }
 
 model UserMembership {
-  id                 String           @id @default(uuid())
-  userId             String           @map("user_id")
-  planId             String           @map("plan_id")
-  organizationId     String           @map("organization_id")
-  status             MembershipStatus @default(ACTIVE)
-  startDate          DateTime         @map("start_date")
-  endDate            DateTime         @map("end_date")
-  pricePaid          Decimal          @db.Decimal(10, 2) @map("price_paid")
+  id                   String           @id @default(uuid())
+  userId               String           @map("user_id")
+  planId               String           @map("plan_id")
+  organizationId       String           @map("organization_id")
+  status               MembershipStatus @default(ACTIVE)
+  startDate            DateTime         @map("start_date")
+  endDate              DateTime         @map("end_date")
+  pricePaid            Decimal          @map("price_paid") @db.Decimal(10, 2)
   razorpayOrderId      String?          @map("razorpay_order_id")
   razorpayPaymentId    String?          @map("razorpay_payment_id")
   previousMembershipId String?          @unique @map("previous_membership_id")
@@ -1350,13 +1356,13 @@ model Subscription {
   createdAt         DateTime              @default(now()) @map("created_at")
   updatedAt         DateTime              @updatedAt @map("updated_at")
 
-  user         User                @relation(fields: [userId], references: [id])
-  store        Store               @relation(fields: [storeId], references: [id])
-  organization Organization        @relation(fields: [organizationId], references: [id])
-  items          SubscriptionItem[]
-  skippedDates   SubscriptionSkip[]
-  orders         Order[]
-  itemOverrides  SubscriptionItemOverride[]
+  user          User                       @relation(fields: [userId], references: [id])
+  store         Store                      @relation(fields: [storeId], references: [id])
+  organization  Organization               @relation(fields: [organizationId], references: [id])
+  items         SubscriptionItem[]
+  skippedDates  SubscriptionSkip[]
+  orders        Order[]
+  itemOverrides SubscriptionItemOverride[]
 
   @@index([userId, storeId, status])
   @@index([storeId, status, nextDeliveryDate])
@@ -1486,9 +1492,32 @@ model SearchLog {
   resultCount Int      @map("result_count")
   createdAt   DateTime @default(now()) @map("created_at")
 
-  store Store @relation(fields: [storeId], references: [id], onDelete: Cascade)
-  user  User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+  store  Store         @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  user   User?         @relation(fields: [userId], references: [id], onDelete: SetNull)
+  events SearchEvent[]
 
   @@index([storeId, createdAt])
   @@map("search_logs")
+}
+
+enum SearchEventType {
+  CLICK
+  ADD_TO_CART
+}
+
+// What a shopper did with a search's results: training data for ranking by add-to-cart rate
+model SearchEvent {
+  id          String          @id @default(uuid())
+  searchLogId String          @map("search_log_id")
+  productId   String          @map("product_id")
+  type        SearchEventType
+  position    Int
+  createdAt   DateTime        @default(now()) @map("created_at")
+
+  searchLog SearchLog @relation(fields: [searchLogId], references: [id], onDelete: Cascade)
+  product   Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([searchLogId, productId, type])
+  @@index([productId])
+  @@map("search_events")
 }

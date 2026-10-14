@@ -71,6 +71,7 @@ export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(
         compact={layout === "grid" && numColumns === 3}
         onShowVariants={() => actions.showVariants(variants)}
         onAddToCart={actions.addToCart}
+        onOpen={actions.trackOpen && (() => actions.trackOpen!(item.product.id))}
         onUpdateQuantity={actions.updateQuantity}
         isWishlisted={actions.isWishlisted(item.product.id)}
         onToggleWishlist={actions.toggleWishlist}

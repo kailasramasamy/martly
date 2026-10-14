@@ -19,6 +19,11 @@ export interface SearchResult {
 const semanticCache = new Map<string, { terms: string[]; expiry: number }>();
 
 const MAX_KEYWORD_RESULTS = 200;
+// Brand turns are weighted: a brand's n-th product scores n × (BRAND_TURN_BASE − popularity), so a 100-popularity
+// leader gets a slot every 20 points and a 50-popularity brand every 70. Intent-only products (aisle match, name
+// doesn't contain the query) carry a penalty so "razor" shows razors before the aisle's shaving brushes.
+const BRAND_TURN_BASE = 120;
+const INTENT_ONLY_PENALTY = 40;
 
 const inStore = (storeId: string) => Prisma.sql`EXISTS (
   SELECT 1 FROM store_products sp WHERE sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true
@@ -100,47 +105,84 @@ export async function searchProducts(
   };
 }
 
+// Brands with their lowercased name minus the maker ("Surf Excel (HUL)" → "surf excel"), computed once per brand
+export const brandNamesCte = Prisma.sql`brand_names AS MATERIALIZED (
+  SELECT id, name, popularity, lower(regexp_replace(name, '\\s*\\([^)]*\\)', '', 'g')) AS clean FROM brands
+)`;
+
+/**
+ * The name a query is matched against. A query naming the brand ("surf exc") sees name + brand, so every product of
+ * the brand matches; any other query sees the name minus its leading brand ("Bombay Shaving Company Beard Oil" →
+ * "Beard Oil"), so a word in a brand's name doesn't make all its products match.
+ * Needs products `p` LEFT JOIN brand_names `b` (brandNamesCte).
+ */
+export const nameForQuery = (q: string) => Prisma.sql`CASE
+  WHEN b.name IS NULL THEN p.name
+  WHEN starts_with(b.clean, ${q}) OR starts_with(${q}, b.clean) THEN p.name || ' ' || b.name
+  WHEN starts_with(lower(p.name), b.clean) THEN substr(p.name, length(b.clean) + 1)
+  ELSE p.name
+END`;
+
+// Every stocked product with its intent flag, name tier and taxonomy hit for the query
+// (needs the `term`, `sales` and brand_names CTEs)
+const matchedProducts = (q: string, storeId: string) => Prisma.sql`
+  SELECT p.id, p.name, p.brand_id, COALESCE(b.popularity, 0) AS popularity, COALESCE(sales.n, 0) AS sold,
+    COALESCE(${q} = ANY(s.search_terms), false) AS intent,
+    CASE
+      WHEN own.name ~* ('\\m' || term.rx || '\\M') THEN 0
+      WHEN own.name ~* ('\\m' || term.rx) THEN 1
+      WHEN own.name ILIKE '%' || ${q} || '%' THEN 2
+      WHEN EXISTS (
+        SELECT 1 FROM jsonb_each(COALESCE(p.translations, '{}'::jsonb)) t
+        WHERE t.value->>'name' ILIKE '%' || ${q} || '%'
+      ) THEN 3
+      WHEN p.description ILIKE '%' || ${q} || '%' THEN 4
+    END AS tier,
+    CASE
+      WHEN c.name ~* ('\\m' || term.rx) THEN 0
+      WHEN s.name ~* ('\\m' || term.rx) THEN 1
+      ELSE 2
+    END AS taxonomy
+  FROM products p
+  CROSS JOIN term
+  LEFT JOIN brand_names b ON b.id = p.brand_id
+  LEFT JOIN subcategories s ON s.id = p.subcategory_id
+  LEFT JOIN categories c ON c.id = s.category_id
+  LEFT JOIN sales ON sales.product_id = p.id
+  CROSS JOIN LATERAL (SELECT ${nameForQuery(q)} AS name) own
+  WHERE p.is_active = true AND ${inStore(storeId)}`;
+
 async function keywordSearch(prisma: PrismaClient, q: string, storeId: string): Promise<string[]> {
-  // Tiers: 0 whole word in name, 1 word-start, 2 substring, 3 translated name, 4 description only.
-  // Within a tier: category name hit ("oil" → Edible Oils), then subcategory hit (Hair Oil), then brands round-robin
-  // (each brand's best-seller before any brand's second) so one brand's A–Z run can't fill the top rows.
+  // Intent first: products in a subcategory whose search terms include the query ("shaving" → Razor & Blades),
+  // brands taking weighted turns by popularity, each brand leading with its name matches.
+  // Then name tiers: 0 whole word, 1 word-start, 2 substring, 3 translated name, 4 description only. Within a tier:
+  // category name hit ("oil" → Edible Oils), then subcategory hit (Hair Oil), then brands round-robin
+  // (best-known brands take turns more often) so one brand's A–Z run can't fill the top rows.
   const rows = await prisma.$queryRaw<{ id: string; tier: number }[]>`
     WITH term AS (SELECT regexp_replace(${q}, '([^[:alnum:] ])', '\\\\\\1', 'g') AS rx),
     sales AS (
       SELECT oi.product_id, COUNT(*) AS n FROM order_items oi JOIN orders o ON o.id = oi.order_id
       WHERE o.store_id = ${storeId} AND o.status <> 'CANCELLED'
       GROUP BY oi.product_id
+    ),
+    ${brandNamesCte},
+    matched AS MATERIALIZED (${matchedProducts(q, storeId)}),
+    banded AS (
+      SELECT *,
+        CASE WHEN intent THEN 0 ELSE 1 END AS band,
+        CASE WHEN intent THEN 0 ELSE tier END AS band_tier,
+        CASE WHEN intent THEN 0 ELSE taxonomy END AS band_taxonomy
+      FROM matched WHERE intent OR tier IS NOT NULL
     )
-    SELECT id, tier FROM (
-      SELECT *, ROW_NUMBER() OVER (PARTITION BY tier, taxonomy, brand_id ORDER BY sold DESC, name) AS brand_round
-      FROM (
-        SELECT p.id, p.name, p.brand_id,
-          CASE
-            WHEN p.name ~* ('\\m' || term.rx || '\\M') THEN 0
-            WHEN p.name ~* ('\\m' || term.rx) THEN 1
-            WHEN p.name ILIKE '%' || ${q} || '%' THEN 2
-            WHEN EXISTS (
-              SELECT 1 FROM jsonb_each(COALESCE(p.translations, '{}'::jsonb)) t
-              WHERE t.value->>'name' ILIKE '%' || ${q} || '%'
-            ) THEN 3
-            WHEN p.description ILIKE '%' || ${q} || '%' THEN 4
-          END AS tier,
-          CASE
-            WHEN c.name ~* ('\\m' || term.rx) THEN 0
-            WHEN s.name ~* ('\\m' || term.rx) THEN 1
-            ELSE 2
-          END AS taxonomy,
-          COALESCE(sales.n, 0) AS sold
-        FROM products p
-        CROSS JOIN term
-        LEFT JOIN subcategories s ON s.id = p.subcategory_id
-        LEFT JOIN categories c ON c.id = s.category_id
-        LEFT JOIN sales ON sales.product_id = p.id
-        WHERE p.is_active = true AND ${inStore(storeId)}
-      ) matched
-      WHERE tier IS NOT NULL
+    SELECT id, CASE WHEN intent THEN 0 ELSE tier END AS tier FROM (
+      SELECT *, ROW_NUMBER() OVER (
+        PARTITION BY band, band_tier, band_taxonomy, brand_id ORDER BY tier NULLS LAST, sold DESC, name
+      ) AS brand_round
+      FROM banded
     ) m
-    ORDER BY tier, taxonomy, brand_round, sold DESC, name
+    ORDER BY band, band_tier, band_taxonomy,
+      brand_round * (${BRAND_TURN_BASE} - popularity) + CASE WHEN intent AND tier IS NULL THEN ${INTENT_ONLY_PENALTY} ELSE 0 END,
+      popularity DESC, sold DESC, name
     LIMIT ${MAX_KEYWORD_RESULTS}
   `;
   return tightestTier(rows).map((r) => r.id);

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Animated, View, Text, TextInput, TouchableOpacity, Keyboard, StyleSheet } from "react-native";
 import { useLocalSearchParams, useNavigation, router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -27,6 +27,7 @@ import { useSearchSuggestions } from "../lib/use-search-suggestions";
 import { useRecentSearches } from "../lib/recent-searches";
 import { useSearchLanding } from "../lib/use-search-landing";
 import { useSearchCommit } from "../lib/use-search-commit";
+import type { SearchEventType } from "@martly/shared/constants";
 import type { DepartmentNode, SearchFacets } from "../lib/types";
 
 interface TreeNode {
@@ -305,7 +306,12 @@ export default function SearchScreen() {
   const showLanding = !isDeepLink && !search.query.trim();
   const landing = useSearchLanding(selectedStore?.id, !isDeepLink);
   const recents = useRecentSearches();
-  const commit = useSearchCommit(selectedStore?.id, search.activeQuery, results.length, loading, recents.add);
+  const { commit, track } = useSearchCommit(selectedStore?.id, search.activeQuery, results.length, loading, recents.add);
+  const productOrder = useMemo(() => [...new Set(results.map((r) => r.product.id))], [results]);
+  const trackResult = useCallback(
+    (productId: string, type: SearchEventType) => track(productId, type, productOrder.indexOf(productId)),
+    [track, productOrder],
+  );
 
   const panel = useSuggestionPanel(selectedStore?.id, search, recents.recent);
   const runChip = (query: string) => {
@@ -317,7 +323,7 @@ export default function SearchScreen() {
     commit();
   };
   return (
-    <ProductActionsProvider store={selectedStore ?? null}>
+    <ProductActionsProvider store={selectedStore ?? null} onTrack={search.textMode ? trackResult : undefined}>
       <View style={styles.container}>
         <SearchInput value={search.query} onChangeText={panel.onChangeText} onSubmit={submit} autoVoice={voice === "1"} />
         <View style={styles.body}>

@@ -61,6 +61,17 @@ export const CategoryEdit = () => {
                     <Input />
                   </Form.Item>
                 </Col>
+                {level === "subcategory" && (
+                  <Col xs={24}>
+                    <Form.Item
+                      label="Search terms"
+                      name="searchTerms"
+                      tooltip="Words shoppers type for this aisle (e.g. shaving, razor, dadhi). Search shows these products first for them"
+                    >
+                      <Select mode="tags" tokenSeparators={[","]} open={false} placeholder="Type a term and press Enter" />
+                    </Form.Item>
+                  </Col>
+                )}
               </Row>
             </Card>
           </Col>

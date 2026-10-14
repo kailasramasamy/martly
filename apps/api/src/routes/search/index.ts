@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
-import { searchLandingQuerySchema, searchLogSchema, searchSuggestQuerySchema } from "@martly/shared/schemas";
+import { searchEventSchema, searchLandingQuerySchema, searchLogSchema, searchSuggestQuerySchema } from "@martly/shared/schemas";
 import { authenticateOptional } from "../../middleware/auth.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { buildSearchLanding } from "../../services/search-landing.js";
@@ -51,9 +51,26 @@ export async function searchRoutes(app: FastifyInstance) {
     if (!allowLog(user.sub || request.ip)) return reply.tooManyRequests("Too many searches");
     const store = await findActiveStore(app, body.storeId);
     if (!store) return reply.notFound("Store not found");
-    await app.prisma.searchLog.create({
+    const log = await app.prisma.searchLog.create({
       data: { storeId: store.id, userId: user.sub || null, query: body.query.replace(/\s+/g, " "), resultCount: body.resultCount },
+      select: { id: true },
     });
+    return reply.code(201).send({ success: true, data: log } satisfies ApiResponse<typeof log>);
+  });
+
+  // A result tapped or added to cart from a logged search: the add-to-cart rate per query and product, for ranking
+  app.post("/event", { preHandler: [authenticateOptional] }, async (request, reply) => {
+    const body = searchEventSchema.parse(request.body);
+    const user = getOrgUser(request);
+    if (!allowLog(user.sub || request.ip)) return reply.tooManyRequests("Too many events");
+    const [log, product] = await Promise.all([
+      app.prisma.searchLog.findUnique({ where: { id: body.searchLogId }, select: { userId: true } }),
+      app.prisma.product.findUnique({ where: { id: body.productId }, select: { id: true } }),
+    ]);
+    if (!log || (log.userId && log.userId !== user.sub)) return reply.notFound("Search not found");
+    if (!product) return reply.notFound("Product not found");
+    // One event per search, product and type: re-tapping the same result doesn't count twice
+    await app.prisma.searchEvent.createMany({ data: [body], skipDuplicates: true });
     return reply.code(201).send({ success: true, data: null });
   });
 }

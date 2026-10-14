@@ -44,6 +44,8 @@ interface FeaturedProductCardProps {
   width?: number;
   // 3-column search layout: smaller card, "N options" instead of the sizes row
   compact?: boolean;
+  // Called as the product page opens (search result tracking)
+  onOpen?: () => void;
 }
 
 function getDiscountLabel(item: StoreProduct): string | null {
@@ -210,6 +212,7 @@ function StandardCard(props: FeaturedProductCardProps) {
     if (heartTapped.current) { heartTapped.current = false; return; }
     const params: Record<string, string> = { id: item.product.id };
     if (storeId) params.storeId = storeId;
+    props.onOpen?.();
     router.push({ pathname: "/product/[id]", params });
   };
 

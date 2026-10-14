@@ -513,6 +513,13 @@ export const SearchSortBy = {
 } as const;
 export type SearchSortBy = (typeof SearchSortBy)[keyof typeof SearchSortBy];
 
+// What a shopper did with a search result (mirrors Prisma SearchEventType)
+export const SearchEventType = {
+  CLICK: "CLICK",
+  ADD_TO_CART: "ADD_TO_CART",
+} as const;
+export type SearchEventType = (typeof SearchEventType)[keyof typeof SearchEventType];
+
 export const SearchSortLabels: Record<SearchSortBy, string> = {
   relevance: "Relevance",
   price_asc: "Price (low to high)",

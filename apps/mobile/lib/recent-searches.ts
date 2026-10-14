@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import type { SearchEventType } from "@martly/shared/constants";
 import { api } from "./api";
 
 const STORAGE_KEY = "martly_recent_searches";
@@ -33,7 +34,14 @@ export function useRecentSearches() {
   return { recent, add, remove, clear };
 }
 
-// Feeds "Trending near you"; best-effort, a failed log must never disturb searching
-export function logSearch(storeId: string, query: string, resultCount: number) {
-  api.post("/api/v1/search/log", { storeId, query, resultCount }).catch(() => {});
+// Feeds "Trending near you" and result tracking; best-effort, a failed log must never disturb searching
+export function logSearch(storeId: string, query: string, resultCount: number): Promise<string | null> {
+  return api.post<{ id: string }>("/api/v1/search/log", { storeId, query, resultCount })
+    .then((res) => res.data.id)
+    .catch(() => null);
+}
+
+// A result tapped or added from a logged search; position is its 0-based place in the results
+export function logSearchEvent(searchLogId: string, productId: string, type: SearchEventType, position: number) {
+  api.post("/api/v1/search/event", { searchLogId, productId, type, position }).catch(() => {});
 }

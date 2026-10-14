@@ -7,6 +7,7 @@ import { useWishlist } from "./wishlist-context";
 import { useToast } from "./toast-context";
 import { VariantBottomSheet } from "../components/VariantBottomSheet";
 import { ConfirmSheet } from "../components/ConfirmSheet";
+import { SearchEventType } from "@martly/shared/constants";
 import type { StoreProduct } from "./types";
 
 export interface ProductActions {
@@ -18,6 +19,8 @@ export interface ProductActions {
   isWishlisted: (productId: string) => boolean;
   toggleWishlist: (productId: string) => void;
   isMember: boolean;
+  // Set when the screen tracks what shoppers do with its products (search results)
+  trackOpen?: (productId: string) => void;
 }
 
 const ProductActionsContext = createContext<ProductActions | null>(null);
@@ -65,14 +68,24 @@ function useCartActions(store: { id: string; name: string } | null) {
  * Wrap a screen that lists products. Provides cart/wishlist actions to every <ProductList> inside it,
  * and renders the size picker and "Replace cart?" prompt once, full-screen.
  */
-export function ProductActionsProvider({ store, children }: { store: { id: string; name: string } | null; children: ReactNode }) {
+export function ProductActionsProvider({ store, onTrack, children }: {
+  store: { id: string; name: string } | null;
+  onTrack?: (productId: string, type: SearchEventType) => void;
+  children: ReactNode;
+}) {
   const { pendingReplace, setPendingReplace, ...cart } = useCartActions(store);
   const { isWishlisted, toggle } = useWishlist();
   const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
 
+  const addToCart = useCallback((sp: StoreProduct) => {
+    cart.addToCart(sp);
+    onTrack?.(sp.product.id, SearchEventType.ADD_TO_CART);
+  }, [cart.addToCart, onTrack]);
+  const trackOpen = useMemo(() => onTrack && ((productId: string) => onTrack(productId, SearchEventType.CLICK)), [onTrack]);
+
   const value = useMemo<ProductActions>(() => ({
-    ...cart, storeId: store?.id, showVariants: setSheetVariants, isWishlisted, toggleWishlist: toggle,
-  }), [cart.cartQuantityMap, cart.addToCart, cart.updateQuantity, cart.isMember, store?.id, isWishlisted, toggle]);
+    ...cart, addToCart, trackOpen, storeId: store?.id, showVariants: setSheetVariants, isWishlisted, toggleWishlist: toggle,
+  }), [cart.cartQuantityMap, addToCart, trackOpen, cart.updateQuantity, cart.isMember, store?.id, isWishlisted, toggle]);
 
   return (
     <ProductActionsContext.Provider value={value}>
@@ -82,7 +95,7 @@ export function ProductActionsProvider({ store, children }: { store: { id: strin
           visible={sheetVariants.length > 0}
           onClose={() => setSheetVariants([])}
           variants={sheetVariants}
-          onAddToCart={cart.addToCart}
+          onAddToCart={addToCart}
           onUpdateQuantity={cart.updateQuantity}
           cartQuantityMap={cart.cartQuantityMap}
           isMember={cart.isMember}

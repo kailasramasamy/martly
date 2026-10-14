@@ -4,7 +4,7 @@ import type { PrismaClient } from "../../generated/prisma/client.js";
 const MIN_SIMILARITY = 0.3;
 
 /**
- * Per-word spelling correction against the words in this store's product and brand names.
+ * Per-word spelling correction against the words in this store's product and brand names and aisle search terms.
  * Known words are kept as typed; returns undefined when nothing changed.
  */
 export async function correctQuery(prisma: PrismaClient, storeId: string, q: string): Promise<string | undefined> {
@@ -15,7 +15,10 @@ export async function correctQuery(prisma: PrismaClient, storeId: string, q: str
       SELECT DISTINCT w FROM products p
       JOIN store_products sp ON sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true
       LEFT JOIN brands b ON b.id = p.brand_id
-      CROSS JOIN LATERAL regexp_split_to_table(lower(p.name || ' ' || COALESCE(b.name, '')), '[^a-z]+') AS w
+      LEFT JOIN subcategories s ON s.id = p.subcategory_id
+      CROSS JOIN LATERAL regexp_split_to_table(
+        lower(p.name || ' ' || COALESCE(b.name, '') || ' ' || array_to_string(COALESCE(s.search_terms, '{}'), ' ')), '[^a-z]+'
+      ) AS w
       WHERE p.is_active = true AND length(w) >= 3
     )
     SELECT t.token,

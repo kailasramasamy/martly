@@ -32,6 +32,8 @@ export interface CompactProductCardProps {
   isMember?: boolean;
   variants?: StoreProduct[];
   quantityOf?: (storeProductId: string) => number;
+  // Called as the product page opens (search result tracking)
+  onOpen?: () => void;
 }
 
 function discountLine(item: StoreProduct): string | null {
@@ -158,6 +160,7 @@ export function CompactProductCard(props: CompactProductCardProps) {
     if (heartTapped.current) { heartTapped.current = false; return; }
     const params: Record<string, string> = { id: item.product.id };
     if (storeId) params.storeId = storeId;
+    props.onOpen?.();
     router.push({ pathname: "/product/[id]", params });
   };
 

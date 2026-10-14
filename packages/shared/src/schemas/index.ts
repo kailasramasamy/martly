@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, CollectionKind, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SUPPORTED_LANGUAGES } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, CollectionKind, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, SUPPORTED_LANGUAGES } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -158,6 +158,9 @@ export const updateCategorySchema = z.object({
 export type UpdateCategoryInput = z.infer<typeof updateCategorySchema>;
 
 // ── Subcategory ──────────────────────────────────────
+// Words shoppers type for a subcategory; search ranks its products first for these queries
+const searchTermsSchema = z.array(z.string().trim().toLowerCase().min(1).max(40)).max(30).optional();
+
 export const createSubcategorySchema = z.object({
   name: z.string().min(1),
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
@@ -165,6 +168,7 @@ export const createSubcategorySchema = z.object({
   sortOrder: z.number().int().min(0).optional(),
   imageUrl: z.string().url().nullish(),
   translations: translationsSchema,
+  searchTerms: searchTermsSchema,
 });
 export type CreateSubcategoryInput = z.infer<typeof createSubcategorySchema>;
 
@@ -175,6 +179,7 @@ export const updateSubcategorySchema = z.object({
   sortOrder: z.number().int().min(0).optional(),
   imageUrl: z.string().url().nullish(),
   translations: translationsSchema,
+  searchTerms: searchTermsSchema,
 });
 export type UpdateSubcategoryInput = z.infer<typeof updateSubcategorySchema>;
 
@@ -194,6 +199,7 @@ export const createBrandSchema = z.object({
   imageUrl: z.string().url().optional(),
   themeColor: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),
   themeColorSecondary: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),
+  popularity: z.number().int().min(0).max(100).optional(),
 });
 export type CreateBrandInput = z.infer<typeof createBrandSchema>;
 
@@ -203,6 +209,7 @@ export const updateBrandSchema = z.object({
   imageUrl: z.string().url().nullish(),
   themeColor: z.string().regex(/^#[0-9a-fA-F]{6}$/).nullish(),
   themeColorSecondary: z.string().regex(/^#[0-9a-fA-F]{6}$/).nullish(),
+  popularity: z.number().int().min(0).max(100).optional(),
 });
 export type UpdateBrandInput = z.infer<typeof updateBrandSchema>;
 
@@ -1171,6 +1178,13 @@ export const searchLogSchema = z.object({
   storeId: z.string().uuid(),
   query: z.string().trim().toLowerCase().min(2).max(100),
   resultCount: z.number().int().min(0),
+});
+
+export const searchEventSchema = z.object({
+  searchLogId: z.string().uuid(),
+  productId: z.string().uuid(),
+  type: z.nativeEnum(SearchEventType),
+  position: z.number().int().min(0),
 });
 
 export const searchSuggestQuerySchema = z.object({
