@@ -1,0 +1,40 @@
+{
+  "brand": "Intersand",
+  "manufacturer": "Intersand Canada Inc.",
+  "feed": "intersand-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/intersand/logo-dd06cfc4.png",
+  "themeColor": "#F28A1E",
+  "themeColorSecondary": "#6D6E71",
+  "namePrefix": "Intersand ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Intersand OdourLock Cat Litter": "OdourLock Unscented Cat Litter"
+  },
+  "rules": [
+    {
+      "match": "^OdourLock\\ Unscented\\ Cat\\ Litter$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Litter & Litter Tray"
+      ]
+    },
+    {
+      "match": "^OdourLock\\ Lavender\\ Cat\\ Litter$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Litter & Litter Tray"
+      ]
+    },
+    {
+      "match": "^OdourLock\\ Baby\\ Powder\\ Cat\\ Litter$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Litter & Litter Tray"
+      ]
+    }
+  ]
+}

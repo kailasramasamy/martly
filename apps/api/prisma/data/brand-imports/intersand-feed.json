@@ -1,0 +1,143 @@
+[
+ {
+  "title": "OdourLock Unscented Cat Litter",
+  "handle": "odourlock-unscented-cat-litter",
+  "vendor": "Intersand",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "6kg",
+    "price": "1700",
+    "compare_at_price": "1700",
+    "available": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/71EOPOG-1WL._SL1200_.jpg"
+    }
+   },
+   {
+    "title": "12kg",
+    "price": "2800",
+    "compare_at_price": "2800",
+    "available": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/61H5+a9aTsL._SL1000_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/71EOPOG-1WL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61p8PkzYUWL._SL1000_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61khpX5BuLL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/512EoU63eTL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71JHC+d7JOL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/51d0SH2m4OL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61MfIEHMXEL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61PIiGHOFHL._SL1000_.jpg"
+   }
+  ]
+ },
+ {
+  "title": "OdourLock Lavender Cat Litter",
+  "handle": "odourlock-lavender-cat-litter",
+  "vendor": "Intersand",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "6kg",
+    "price": "1700",
+    "compare_at_price": "1700",
+    "available": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/61cBkRNBbIL._SL1500_.jpg"
+    }
+   },
+   {
+    "title": "12kg",
+    "price": "2800",
+    "compare_at_price": "2800",
+    "available": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/61dLOmWuplL._SL1200_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/61cBkRNBbIL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61dLOmWuplL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61t5r9SizoL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61WQ6pjZlCL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71JHC+d7JOL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/51d0SH2m4OL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61MfIEHMXEL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61icoWPzBIL._SL1200_.jpg"
+   }
+  ]
+ },
+ {
+  "title": "OdourLock Baby Powder Cat Litter",
+  "handle": "odourlock-baby-powder-cat-litter",
+  "vendor": "Intersand",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "6kg",
+    "price": "1700",
+    "compare_at_price": "1700",
+    "available": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/61wa0uYYGAL._SL1200_.jpg"
+    }
+   },
+   {
+    "title": "12kg",
+    "price": "2800",
+    "compare_at_price": "2800",
+    "available": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/61wa0uYYGAL._SL1200_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/61wa0uYYGAL._SL1200_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61CvZir5ogL._SL1200_.jpg"
+   }
+  ]
+ }
+]
