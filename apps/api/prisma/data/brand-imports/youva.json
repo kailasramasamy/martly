@@ -1,0 +1,542 @@
+{
+  "brand": "Youva",
+  "manufacturer": "Navneet Education Ltd.",
+  "feed": "youva-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/youva/logo-333c0f3f.png",
+  "themeColor": "#F9B21B",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Youva ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cedar\\ Pencils\\ with\\ Eraser\\ Tip$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Quip\\ Pencils\\ with\\ Sharpener\\ \\&\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Naruto\\ Ultra\\ Dark\\ 3B\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Dust\\ Free\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Dust\\ Free\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Sharpeners$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Brown\\ Notebook\\ \\-\\ Red\\ \\&\\ Blue\\ with\\ Gap,\\ 15\\ x\\ 18\\ cm,\\ 76\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Brown\\ Notebook\\ \\-\\ Four\\ Line,\\ 15\\.5\\ x\\ 18\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Brown\\ Notebook\\ \\-\\ Single\\ Line,\\ 18\\ x\\ 24\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Brown\\ Notebook\\ \\-\\ Double\\ Line,\\ 18\\ x\\ 24\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Brown\\ Notebook\\ \\-\\ Unruled,\\ 18\\ x\\ 24\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Brown\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Brown\\ Long\\ Notebook\\ \\-\\ Single\\ Line,\\ 17\\ x\\ 27\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Brown\\ Jumbo\\ Notebook\\ \\-\\ Single\\ Line,\\ 18\\ x\\ 24\\ cm,\\ 92\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Full\\ Bound\\ Brown\\ Notebook\\ \\-\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Notebook\\ \\-\\ Single\\ Line,\\ 18\\ x\\ 24\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Notebook\\ \\-\\ Double\\ Line,\\ 18\\ x\\ 24\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Notebook\\ \\-\\ Red\\ \\&\\ Blue\\ with\\ Gap,\\ 18\\ x\\ 24\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Maths\\ Square\\ Ruling\\ Notebook\\ \\-\\ 18\\ x\\ 24\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 140\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 228\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 276\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Long\\ Notebook\\ \\-\\ Single\\ Line,\\ 17\\ x\\ 27\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Long\\ Notebook\\ \\-\\ Unruled,\\ 17\\ x\\ 27\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Long\\ Notebook\\ \\-\\ Single\\ Line,\\ 19\\ x\\ 31\\ cm,\\ 92\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Long\\ Notebook\\ \\-\\ Single\\ Line,\\ 19\\ x\\ 31\\ cm,\\ 180\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Long\\ Book\\ \\-\\ Single\\ Line,\\ A4,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Long\\ Book\\ \\-\\ Unruled,\\ A4,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Feminine\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 140\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Rainbow\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Trendy\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Stellar\\ Long\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 140\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Stellar\\ Long\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Case\\ Bound\\ Notebook\\ \\-\\ Single\\ Line,\\ 185\\ x\\ 247\\ mm,\\ 400\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Case\\ Bound\\ Notebook\\ \\-\\ Single\\ Line,\\ 210\\ x\\ 330\\ mm,\\ 144\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Case\\ Bound\\ Notebook\\ \\-\\ Single\\ Line,\\ 210\\ x\\ 330\\ mm,\\ 288\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Magnetic\\ Notebook\\ \\-\\ Single\\ Line,\\ A5,\\ 192\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Magnetic\\ Notebook\\ \\-\\ Single\\ Line,\\ A6,\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Zenscape\\ A5\\ Case\\ Bound\\ Notebook\\ \\-\\ Single\\ Line$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 240\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 400\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Notebook\\ \\-\\ Unruled,\\ A4,\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Long\\ Book\\ \\-\\ Single\\ Line,\\ A4,\\ 400\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Long\\ Book\\ \\-\\ Unruled,\\ A4,\\ 400\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^HQ\\ Spiral\\ Notebook\\ \\-\\ Single\\ Line,\\ A5,\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Naruto\\ Notebook\\ \\-\\ Single\\ Line,\\ 18\\ x\\ 24\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Naruto\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Naruto\\ Long\\ Notebook\\ \\-\\ Single\\ Line,\\ 17\\ x\\ 27\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Naruto\\ Long\\ Notebook\\ \\-\\ Unruled,\\ 17\\ x\\ 27\\ cm,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Naruto\\ Long\\ Notebook\\ \\-\\ Single\\ Line,\\ 19\\ x\\ 31\\ cm,\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Naruto\\ Long\\ Notebook\\ \\-\\ Unruled,\\ 19\\ x\\ 31\\ cm,\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Naruto\\ Spiral\\ Notebook\\ \\-\\ Single\\ Line,\\ A4,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Naruto\\ Spiral\\ Notebook\\ \\-\\ Unruled,\\ A4,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Naruto\\ Kakashi\\ Notebook\\ \\-\\ Single\\ Line,\\ A5,\\ 192\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Biology\\ Practical\\ Book\\ \\-\\ Hard\\ Bound,\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Combined\\ Practical\\ Book\\ \\-\\ 128\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Graph\\ Book\\ \\-\\ 1mm,\\ 28\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Pocket\\ Diary\\ \\-\\ Single\\ Line,\\ 100\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Drawing\\ Book\\ \\-\\ Spiral,\\ 275\\ x\\ 350\\ mm,\\ 60\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Sketch\\ Book\\ \\-\\ Top\\ Spiral,\\ A4,\\ 36\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^My\\ Yellow\\ Drawing\\ Book\\ \\-\\ 36\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Naruto\\ Drawing\\ Book\\ \\-\\ A4,\\ 36\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Rainbow\\ Spiral\\ Cube\\ Memo\\ Pad$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    }
+  ]
+}
