@@ -1,0 +1,72 @@
+{
+  "brand": "Mangalam",
+  "manufacturer": "Mangalam Organics Ltd.",
+  "feed": "mangalam-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mangalam/logo-c6d4cf2a.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#F7A600",
+  "namePrefix": "Mangalam ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Mangalam Camphor Tablets": "Camphor - Pouch"
+  },
+  "rules": [
+    {
+      "match": "^Camphor\\ \\-\\ Jar$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Camphor\\ \\-\\ Pouch$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^100%\\ Pure\\ Camphor\\ \\-\\ No\\ Residue$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Bhimseni\\ Camphor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Pure\\ Bhimseni\\ Camphor\\ \\-\\ Rose$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Pure\\ Bhimseni\\ Camphor\\ \\-\\ Sandalwood$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Bhimseni\\ Camphor\\ Puja\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    }
+  ]
+}

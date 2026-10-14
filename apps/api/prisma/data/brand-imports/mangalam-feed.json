@@ -1,0 +1,370 @@
+[
+ {
+  "title": "Camphor - Jar",
+  "handle": "camphor-jar",
+  "vendor": "Mangalam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185625_4-mangalam-pure-camphor.jpg"
+    }
+   },
+   {
+    "title": "50g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185626_5-mangalam-pure-camphor.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185627_8-mangalam-pure-camphor.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "520",
+    "compare_at_price": "520",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185628_4-mangalam-pure-camphor.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185625_4-mangalam-pure-camphor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185625-2_2-mangalam-pure-camphor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185625-3_2-mangalam-pure-camphor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185625-4_1-mangalam-pure-camphor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185625-5_1-mangalam-pure-camphor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185625-6_1-mangalam-pure-camphor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185626_5-mangalam-pure-camphor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185627_8-mangalam-pure-camphor.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Camphor - Pouch",
+  "handle": "camphor-pouch",
+  "vendor": "Mangalam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40251029_3-mangalam-camphor-small-round.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40251028_3-mangalam-camphor-small-round.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "420",
+    "compare_at_price": "420",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40251030_3-mangalam-camphor-small-round.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40251031_2-mangalam-camphor-small-round.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251029_3-mangalam-camphor-small-round.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251029-2_3-mangalam-camphor-small-round.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251029-3_3-mangalam-camphor-small-round.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251029-4_3-mangalam-camphor-small-round.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251029-5_3-mangalam-camphor-small-round.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251029-6_2-mangalam-camphor-small-round.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251029-7_2-mangalam-camphor-small-round.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251029-8_2-mangalam-camphor-small-round.jpg"
+   }
+  ]
+ },
+ {
+  "title": "100% Pure Camphor - No Residue",
+  "handle": "100-pure-camphor-no-residue",
+  "vendor": "Mangalam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318458_2-mangalam-100-pure-camphor-leaves-no-residue-or-ashes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318458_2-mangalam-100-pure-camphor-leaves-no-residue-or-ashes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318458-2_2-mangalam-100-pure-camphor-leaves-no-residue-or-ashes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318458-3_2-mangalam-100-pure-camphor-leaves-no-residue-or-ashes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318458-4_2-mangalam-100-pure-camphor-leaves-no-residue-or-ashes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318458-5_2-mangalam-100-pure-camphor-leaves-no-residue-or-ashes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318458-6_2-mangalam-100-pure-camphor-leaves-no-residue-or-ashes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318458-7_2-mangalam-100-pure-camphor-leaves-no-residue-or-ashes.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Bhimseni Camphor",
+  "handle": "bhimseni-camphor",
+  "vendor": "Mangalam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40242622_4-mangalam-bhimseni-camphor-tablets-100-pure-natural-air-freshener-chemical-free-for-puja-aarti.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224574_5-mangalam-bhimseni-pure-camphor-tablets-for-puja-aarti-meditation.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "625",
+    "compare_at_price": "625",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40295914_3-mangalam-pure-camphor-bhimseni.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40242622_4-mangalam-bhimseni-camphor-tablets-100-pure-natural-air-freshener-chemical-free-for-puja-aarti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40242622-2_4-mangalam-bhimseni-camphor-tablets-100-pure-natural-air-freshener-chemical-free-for-puja-aarti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40242622-3_4-mangalam-bhimseni-camphor-tablets-100-pure-natural-air-freshener-chemical-free-for-puja-aarti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40242622-4_3-mangalam-bhimseni-camphor-tablets-100-pure-natural-air-freshener-chemical-free-for-puja-aarti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40242622-5_3-mangalam-bhimseni-camphor-tablets-100-pure-natural-air-freshener-chemical-free-for-puja-aarti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40242622-6_3-mangalam-bhimseni-camphor-tablets-100-pure-natural-air-freshener-chemical-free-for-puja-aarti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224574_5-mangalam-bhimseni-pure-camphor-tablets-for-puja-aarti-meditation.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295914_3-mangalam-pure-camphor-bhimseni.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Pure Bhimseni Camphor - Rose",
+  "handle": "pure-bhimseni-camphor-rose",
+  "vendor": "Mangalam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40295916_3-mangalam-pure-bhimseni-camphor-rose.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295916_3-mangalam-pure-bhimseni-camphor-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295916-2_3-mangalam-pure-bhimseni-camphor-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295916-3_3-mangalam-pure-bhimseni-camphor-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295916-4_3-mangalam-pure-bhimseni-camphor-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295916-5_3-mangalam-pure-bhimseni-camphor-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295916-6_3-mangalam-pure-bhimseni-camphor-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295916-7_2-mangalam-pure-bhimseni-camphor-rose.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Pure Bhimseni Camphor - Sandalwood",
+  "handle": "pure-bhimseni-camphor-sandalwood",
+  "vendor": "Mangalam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40295915_3-mangalam-pure-bhimseni-camphor-sandalwood.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295915_3-mangalam-pure-bhimseni-camphor-sandalwood.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295915-2_3-mangalam-pure-bhimseni-camphor-sandalwood.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295915-3_3-mangalam-pure-bhimseni-camphor-sandalwood.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295915-4_3-mangalam-pure-bhimseni-camphor-sandalwood.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295915-5_3-mangalam-pure-bhimseni-camphor-sandalwood.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295915-6_3-mangalam-pure-bhimseni-camphor-sandalwood.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40295915-7_2-mangalam-pure-bhimseni-camphor-sandalwood.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Bhimseni Camphor Puja Oil",
+  "handle": "bhimseni-camphor-puja-oil",
+  "vendor": "Mangalam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "900ml",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363501_5-mangalam-bhimseni-camphor-puja-oil.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363501_5-mangalam-bhimseni-camphor-puja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363501-2_5-mangalam-bhimseni-camphor-puja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363501-3_5-mangalam-bhimseni-camphor-puja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363501-4_5-mangalam-bhimseni-camphor-puja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363501-5_5-mangalam-bhimseni-camphor-puja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363501-6_5-mangalam-bhimseni-camphor-puja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363501-7_5-mangalam-bhimseni-camphor-puja-oil.jpg"
+   }
+  ]
+ }
+]
