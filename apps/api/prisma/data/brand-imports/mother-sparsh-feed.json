@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40109613_8-mother-sparsh-98-water-wipes.jpg"
-    }
+    },
+    "barcode": "8906154952511"
    }
   ],
   "images": [
@@ -41,7 +42,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40109613-8_1-mother-sparsh-98-water-wipes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "With the concern of moms for their babies, we have designed our 98% mildly scented pure water based wipes. A baby is always in the need of purest form of care, moreover its our duty. These pure water 98% wipes are gentle in nature and with the thick fabric it gives proper cleaning of mouth, hands and nappy area. Formation of these wipes is done in that manner like they are allergen free on skin, doesnt cause any skin irritation & prevent diaper rashes too.",
+   "manufacturerName": "(WL) Welspun Living Limited (formerly known as Welspun India Limited)",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "99% Pure Water Unscented Baby Wipes",
@@ -57,7 +63,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40247534_4-mother-sparsh-99-pure-water-wipes-unscented-plant-fabric-extra-gentle-thick-for-sensitive-skin.jpg"
-    }
+    },
+    "barcode": "8906154952917"
    }
   ],
   "images": [
@@ -85,7 +92,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40247534-8_2-mother-sparsh-99-pure-water-wipes-unscented-plant-fabric-extra-gentle-thick-for-sensitive-skin.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mother Sparsh 99% Pure Water Baby Wipes provide a Dermatologist-recommended, gentle cleansing solution, as effective as cotton and water for newborn care. Enriched with pure water, they help maintain skin hydration, pH balance, and prevent dryness, reducing the risk of irritation. Made from thick, plant-based fabric, they are soft, hypoallergenic, and free from alcohol, parabens, and artificial fragrances, ensuring safe, chemical-free cleansing for delicate skin. The pack includes a protective plastic lid to maintain hygiene and prevent contamination, making it an ideal choice for sensitive baby skin.\nNo.1 Choice of Dermatologists: Trusted by experts for its gentle, safe, and effective cleansing, ensuring superior baby skincare. Recognised for its clinically backed formulations that prioritise infant skin health\nClinically Proven Baby Wipes: Scientifically tested to provide safe and irritation-free cleansing for delicate baby skin\nPrevents Diaper Dermatitis: Clinically proven to help reduce the risk of diaper rash and maintain healthy skin\nTrusted Choice of 5 Lakh Indian Mothers: A preferred baby care brand, ensuring purity, safety, and gentle protection for newborns",
+   "manufacturerName": "Welspun Living Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Plant Powered Natural Care Water Baby Wipes",
@@ -102,7 +114,8 @@
     "estimated": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40376042_1-mother-sparsh-plant-powered-natural-care-water-baby-wipes.jpg"
-    }
+    },
+    "barcode": "8906154952351"
    }
   ],
   "images": [
@@ -130,7 +143,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376042-8_1-mother-sparsh-plant-powered-natural-care-water-baby-wipes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Our Plant Powered Baby Wipes are thoughtfully crafted with natural care in mind. These plant based baby wipes are made with gentle, natural fibers and infused with refreshing cucumber extract, giving you the perfect cucumber baby wipes for refreshing, hydrating cleanses that are safe for sensitive skin. Unlike ordinary wipes, they are 20% larger, giving you better coverage for everyday spills and diaper changes. These organic baby wipes are free from polyester, plastic, and harsh chemicals, thus delivering pure, skin-loving protection with every wipe to keep your baby clean and comfortable.",
+   "usageInstructions": "Open the lid on top of the pack.\nPeel off the resealable sticker & pull out wipes as needed.\nReseal the sticker after each use.\nClose the lid to prevent wipes from drying out",
+   "manufacturerName": "(WL) Welspun Living Limited (Formerly Known As Welspun India Limited)"
+  }
  },
  {
   "title": "Baby Hair Oil - 21 Ayurvedic Herbs",
@@ -171,7 +189,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40247499-7_1-mother-sparsh-baby-hair-oil-with-21-ayurvedic-herbs-oils-non-sticky-nourishes-tender-scalp.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Prepared with a traditional Ayurvedic recipe, Mother Sparsh Baby Hair Oil offers nature’s best to your little one & passes on the wisdom of ancient rituals to your journey as a new mom. Enriched with the anti-fungal and anti-inflammatory properties of Coconut & Neem, the baby hair oil ensures improved hair volume and aids in preventing a flaky scalp.\nThe sulfate-free oil soothes the delicate scalp and nourishes the strands from root to tip. Along with the tangible health benefits, massaging your baby’s scalp regularly with Mother Sparsh Baby Hair Oil encourages blood circulation & invigorates the hair shaft due to the presence of groundnut and sesame. The light-weight and non-sticky formula moisturise the baby’s scalp with love & care.",
+   "usageInstructions": "Take a few drops of baby hair oil on your palm.\nGently massage the baby’s scalp using circular motions.\nInclude hair massage ritual in baby’s daily routine or as directed by the physician.",
+   "manufacturerName": "Amulya Herbs",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cold Pressed Coconut Oil For Babies",
@@ -187,7 +211,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40376043_1-mother-sparsh-cold-pressed-coconut-oil-for-babies.jpg"
-    }
+    },
+    "barcode": "8906154951521"
    }
   ],
   "images": [
@@ -212,7 +237,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376043-7_1-mother-sparsh-cold-pressed-coconut-oil-for-babies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Introducing our Pure Cold Pressed Coconut Oil, a gentle and nourishing massage oil meticulously crafted for newborns. This specially formulated oil is a natural moisturizer, keeping your baby's delicate skin soft and hydrated while preventing dryness and flakiness. Designed for infants with sensitive skin, our Cold Pressed Coconut Oil is pure, efficient, and free from irritants. Its anti-inflammatory and antibacterial properties make it an ideal solution for soothing and preventing diaper rash. Enjoy the bonding ritual of our baby massage oil with the light-textured oil, promoting relaxation, improving sleep, and aiding in overall physical and bone development. Embrace the natural remedy for dryness as this coconut oil moisturizes the skin and scalp, alleviating flakiness and itching. Choose our Cold Pressed Coconut Oil for a pure and nurturing skincare experience for your precious newborn.",
+   "usageInstructions": "Take a sufficient amount of Oil on your palm and rub until it matches body temperature.\nThen massage gently onto the baby's skin.\nApply 2 or 3 times a day. As directed by the physician",
+   "manufacturerName": "Shree Dhanwantri Herbals Pvt. Ltd"
+  }
  },
  {
   "title": "Plant Powered Diaper Rash Cream",
@@ -253,7 +283,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40247507-7_2-mother-sparsh-baby-plant-powered-diaper-rash-cream-calendula-oil-shea-butter-soothes-skin.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mother Sparsh Diaper rash cream is formulated with natural ingredients like Calendula Oil and organic Shea butter is well known for its skin healing abilities. Mother Sparsh Plant-Powered Diaper rash cream is an effective formulation that gives ultimate care to babies from diaper rashes and chafed skin inflammation. This rash cream goes on the skin smoothly and forms a protective layer on the baby’s skin. Packed with natural extracts, organic herbs and essential oils, this formation is safe to use on babies. It is perfectly mild & can be used on sensitive skin to prevent, treat & soothe diaper rash.",
+   "usageInstructions": "Remove soiled diaper from baby’s bottom.\nClean the nappy area and allow it to dry.\nApply diaper rash cream liberally on baby’s bottom, as often as necessary.",
+   "manufacturerName": "Indo Herbal Products unit",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Natural Care Diaper Rash Cream",
@@ -297,7 +333,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364593-8_1-mother-sparsh-natural-care-baby-diaper-rash-cream-suitable-for-normal-dry-sensitive-skin.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Frequent diaper changes, trapped moisture, and friction often lead to painful rashes. Mother Sparsh Natural Care diaper rash cream for baby is a protective and soothing blend designed to combat exactly that. Whether you're caring for a newborn or an active toddler, this rash cream for baby offers the comfort of a natural, breathable formula. Made with safe, plant-powered ingredients and backed by clean care science—it’s the diaper cream you’ll always want within reach.",
+   "usageInstructions": "Clean your baby’s bottom thoroughly and pat dry.\nApply a thin, even layer of the Natural Care Baby Diaper Rash Cream on the affected area.\nUse at every diaper change or as directed by your pediatrician.",
+   "manufacturerName": "J.P HealthcareMain Road",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Milky Soft Daily Moisturising Baby Lotion",
@@ -338,7 +380,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355640-7_3-mother-sparsh-milky-soft-baby-lotion.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daily Moisturising Milky Body Lotion for Baby is a nourishing blend of milk protein, coconut oil, and shea Butter. It gently nourishes the baby’s skin with a pH- neutral formula. The non-sticky texture of Milky Soft Body Lotion for Baby keeps delicate skin soft and supple. Its 24-hour hydration makes it essential in the daily routine of babies. This kid's Body Lotion is free from harmful chemicals, making it a safe choice to pamper your baby’s skin.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Natural Care Baby Body Lotion",
@@ -382,7 +428,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364589-8_1-mother-sparsh-natural-care-baby-body-lotion-with-organic-shea-butter-coconut-oil-avocado.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mother Sparsh Natural Care Baby Lotion is designed to support your child’s skin from day one. Infused with Organic Shea Butter, Coconut Oil and Avocado, this gentle baby body lotion for kids provides long-lasting hydration while maintaining the skin’s natural softness and smoothness. Whether you're looking for a safe lotion for kids or a deeply nourishing baby body lotion, this formula fits right into your baby's daily skincare routine. Suitable for newborns and growing children alike, this baby lotion for kids is free from harmful chemicals and synthetic fragrances, making it a trustworthy choice for conscious parents. Use it as your everyday baby moisturizing lotion to keep your little one’s skin healthy, happy and naturally protected.",
+   "usageInstructions": "Dispense the required amount of the lotion into your hands.\nGently apply & massage on baby's skin.",
+   "manufacturerName": "J.P HealthcareMain Road",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Plant Powered Baby Face Cream",
@@ -423,7 +475,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40247513-7_1-mother-sparsh-plant-powered-baby-face-cream-with-herbs-plants-essential-oils-moisturises-skin.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Say bye to your babies’ dry and sensitive skin, Mother Sparsh Plant-Powered brings you their Natural Baby Face Cream, designed for your baby's new, soft & delicate skin. It is infused with the goodness of jojoba oil, wheat germ oil, coconut oil, Shea butter, etc. The presence of plant-based skin moisturisers & cooling agents will help you maintain the perfect moisture level of your little munchkin’s skin. It also keeps the skin hydrated and healthy for a long time. My natural formulation does not include harsh chemicals like parabens, silicone, dyes, etc.",
+   "usageInstructions": "Apply gently on baby’s dry delicate area like-cheeks, nose, elbows & knees.\nAvoid under the eye area.",
+   "manufacturerName": "Indo Herbal Products unit",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Plant Powered Baby Mineral Sunscreen SPF 30+",
@@ -439,7 +497,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40247528_3-mother-sparsh-plant-powdered-baby-natural-mineral-sunscreen-spf-30-uvauvb-protection-prevents-sunburn.jpg"
-    }
+    },
+    "barcode": "8908009149565"
    }
   ],
   "images": [
@@ -464,7 +523,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40247528-7_1-mother-sparsh-plant-powdered-baby-natural-mineral-sunscreen-spf-30-uvauvb-protection-prevents-sunburn.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The baby has delicate skin which needs to be taken care of while stepping outside in the sun. Mother Sparsh came up with natural baby sunscreen with SPF 30+. It is a perfect blend of oils and minerals such as zinc oxide, cocoa butter, aloe vera and vitamin E that forms a thin layer. It gives complete protection to the baby’s skin from harmful UVA and UVB rays.",
+   "usageInstructions": "Apply 15 minutes before sun exposure thoroughly on all parts of your baby’s body that are exposed to the sun.\nProtection lasts for 2 hours. \nDon’t apply on wounds.",
+   "manufacturerName": "Indo Herbal Products unit",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Milky Soft Daily Moisturising Baby Shampoo",
@@ -480,7 +545,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40355642_3-mother-sparsh-milky-soft-baby-shampoo.jpg"
-    }
+    },
+    "barcode": "8906154951064"
    }
   ],
   "images": [
@@ -505,7 +571,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355642-7_3-mother-sparsh-milky-soft-baby-shampoo.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mother Sparsh Daily Moisturising Baby Shampoo offers gentle nourishment for the baby's delicate scalp and hair. Our Baby shampoo provides essential nutrients with a tear-free formula. It's a mild, coconut-based shampoo that gently cleanses hair and is mild to the eyes. This baby shampoo can be used for kids aged 1 to 10 years. This kid's shampoo is free from harmful chemicals, making it a safe choice to pamper your baby's/ kid's hair.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Natural Care Baby Shampoo",
@@ -549,7 +619,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364594-8_1-mother-sparsh-natural-care-baby-shampoo.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mother Sparsh Natural Care baby shampoo is a gentle natural formulation enriched with Organic Coconut Oil, Avocado and Calendula Extract to cleanse your baby’s scalp with care. This shampoo for baby is made with natural oils, tear-free and free from parabens, SLS/SLES, silicon and phthalates, making it safe from their newborn days to their growing years. Whether it’s a baby shampoo for kids, a kids shampoo for 2–5 years or even a kids shampoo for 5 to 10 years, this natural formula does it all, ensuring soft and healthy hair after every wash. A perfect companion to your baby’s baby wash and shampoo routine.",
+   "usageInstructions": "Take a required amount of Natural Care Baby Shampoo onto your wet palm.\nGently massage the baby's scalp to create a rich lather.\nRinse off thoroughly with water & pat dry.",
+   "manufacturerName": "J.P HealthcareMain Road",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Milky Soft Daily Moisturising Baby Wash",
@@ -590,7 +666,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355641-7_3-mother-sparsh-milky-soft-baby-wash.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daily Moisturising Milky Soft Baby Body Wash for Bath is a mild cleanser for baby-soft skin with pH balanced and tear-free formula. It gently cleanses skin softly, with baby-friendly ingredients like milk, coconut oil, and shea butter. The light, soothing texture of Milky Soft baby body wash keeps your baby's skin smooth & healthy. Enjoyable bubble bath for kids, bath time makes it more fun and safer. Milky Soft Baby Body Wash is free from Parabens, Dyes, and Phthalates and completely safe to be used on Baby’s delicate skin.",
+   "manufacturerName": "J.P. Healthcare",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Milky Soft Head To Toe Baby Wash",
@@ -606,7 +687,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40355639_4-mother-sparsh-head-to-toe-baby-wash.jpg"
-    }
+    },
+    "barcode": "8906154951279"
    }
   ],
   "images": [
@@ -631,7 +713,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355639-7_1-mother-sparsh-head-to-toe-baby-wash.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Hey there, Mom! Let’s introduce you to Milky Soft Head to Toe Baby Wash – it's a lifesaver for your little one's bath time. With a tear-free formula, it's perfect for your newborn, enriched with milk and coconut oil to cleanse their delicate skin and hair gently.\nBath time becomes a joy with this Milky top to toe baby wash that transforms into rich, creamy bubbles without causing any after-shower dryness. And don’t worry about irritation – our mild, hypoallergenic formula ensures your baby’s skin stays soft and happy.\nWhether you're shopping for the first time or upgrading your routine, this is one of the best baby body washes in India – trusted by thousands of parents.\nThis gentle head-to-toe baby wash is designed for everyday use, keeping your baby’s skin nourished and clean from scalp to tiny toes. If you're looking for a safe, natural baby body wash that works from day one, Milky Soft is the answer.",
+   "manufacturerName": "(JP) J.P Healthcare. Main Road",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Natural Care Baby Wash & Shampoo",
@@ -647,7 +734,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40364588_1-mother-sparsh-natural-care-baby-wash-shampoo-tear-free-formula.jpg"
-    }
+    },
+    "barcode": "8906154953037"
    },
    {
     "title": "400ml",
@@ -684,7 +772,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364588-8_1-mother-sparsh-natural-care-baby-wash-shampoo-tear-free-formula.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mother Sparsh Natural Care Baby Wash & Shampoo is a gentle and tear-free formula designed for newborns and kids. Enriched with coconut oil, avocado and calendula, it works as a nourishing baby shampoo and baby body wash for bath. Safe for daily use, even on sensitive skin. Free from toxins, This versatile product also functions as a kids body wash and kids shampoo as your child grows. A natural choice for every stage of baby’s bath time. Trusted care for your little one, from head to toe.",
+   "usageInstructions": "Take a small amount of Natural Care baby wash & Shampoo onto your wet palm.\nGently apply on the baby's Skin/Scalp/Hair to create a rich lather.\nRinse off with water.\nNote: If irritation occurs, discontinue its use. We recommend patch tests before.",
+   "manufacturerName": "J.P HealthcareMain Road",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Natural Care Baby Soap",
@@ -729,7 +823,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364591-8_1-mother-sparsh-natural-care-baby-soap.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mother Sparsh Natural Care Baby Soap is a natural, tear-free cleanser thoughtfully created for your baby’s delicate skin. This gentle baby soap for newborn is made with Shea Butter, Coconut Oil and Chamomile to help maintain moisture, calm irritation, and support skin health. Its mild, non-drying formula is perfect baby soap for bath routines and is suitable for all skin types, including sensitive skin. Free from toxins, parabens and sulfates, this baby soap is part of our Baby Skincare Initiative, delivering nature’s care with every gentle cleanse.",
+   "usageInstructions": "Wet your baby’s body with lukewarm water.\nGently apply the Natural Care Baby Soap to the skin, lather, and rinse off completely.\nPat dry and follow with baby lotion or cream for extra nourishment.",
+   "manufacturerName": "S D Skincare (A GMP Certified Company)",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Natural Care Baby Dusting Powder",
@@ -773,7 +873,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364592-8_1-mother-sparsh-natural-care-baby-dusting-powder-with-arrowroot-powder-zinc-oxide.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mother Sparsh Natural Care Baby Dusting Powder is a gentle baby powder talc free formula enriched with Arrowroot Powder, Zinc Oxide and Corn Starch, nature’s trio for moisture control, rash protection and skin-soothing care. This baby powder for newborn and kids is ideal for sensitive or irritation-prone skin. It helps prevent diaper rashes and redness by forming a light, breathable barrier. With no added toxins & preservatives, this talc free baby powder offers a safe and refreshing solution for daily use, supporting your baby’s comfort and skin health from day one.",
+   "usageInstructions": "Apply a small amount of powder on the baby’s delicate skin\nUsing your hand or the cloth, pat or gently apply the powder onto your baby's skin in the diaper area.\nGently rub or pat the powder into your baby's skin to ensure it's evenly distributed\nNote: Avoid sprinkling on or near the eyes. If irritation occurs, discontinue its use. We recommend patch tests before.",
+   "manufacturerName": "D R SkincareIndustrial Area",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Feedocare Baby Feeding Bottle",
@@ -826,6 +932,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355643-8_1-mother-sparsh-feedocare-baby-feeding-bottle.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Natural Flow with Floezy Teat: Our Feedocare Baby Feeding Bottle is designed to offer a smooth, natural feeding experience for every stage of your baby’s growth. Whether you're searching for a newborn feeding bottle 0-3 months, a feeding bottle for newborn, or a feeding bottle for 4 months old baby, Feedocare adapts perfectly to your baby’s feeding rhythm. Its advanced Floezy Teat ensures an effortless milk flow, making it ideal for bottle feeding bottle baby and offering seamless comfort from the early days to when you need a feeding bottle for a baby 6 to 12 months.\nSwirl Design Anti-Colic System for Gentle Feeding: Our advanced swirl-designed teat with an anti-colic valve closely mimics the natural rhythm of breastfeeding. It ensures smoother milk delivery, reduces air intake, and helps prevent colic, gas, and spit-ups, making it an ideal choice for parents seeking a reliable feeding bottle kids love.\nErgonomic Bottle Shape for Parent and Baby Comfort: Designed with real-life parenting in mind, Feedocare bottles feature an ergonomic, easy-to-hold shape. This ensures a firm grip during feeding, encourages babies to self-feed as they grow, and supports effortless handling whether you're feeding a 4-month-old or a 1-year-old baby.\nLeak-Proof - Wide Neck for Easy Cleaning: Made with a leak-proof design and a wide-neck opening, the Feedocare Baby Feeding Bottle offers convenience at every step—making it easy to clean, fill, and feed even when you’re on the move.\nSafe & Premium BPA-Free Material: Made with high-quality, BPA-free plastic, our bottles prioritise your baby's health and safety. Whether you're using a feeding bottle for 8 months plus or searching for a durable feeding bottle for kids, Feedocare promises uncompromised hygiene and long-lasting performance.",
+   "manufacturerName": "Labs for Youth Pvt. Ltd Plot No",
+   "countryOfOrigin": "India"
+  }
  }
 ]
