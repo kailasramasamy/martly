@@ -1,0 +1,126 @@
+{
+  "brand": "Philips Avent",
+  "manufacturer": "Philips India Ltd.",
+  "feed": "philips-avent-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/philips-avent/logo-835ccc64.png",
+  "themeColor": "#0B5ED7",
+  "themeColorSecondary": "#1A3A6B",
+  "namePrefix": "Philips Avent ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Anti\\-Colic\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natural\\ Response\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natural\\ Response\\ Nipple\\ \\-\\ Slow\\ \\(0m\\+\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natural\\ Response\\ Nipple\\ \\-\\ Medium\\ \\(1m\\+\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natural\\ Response\\ Nipple\\ \\-\\ Fast\\ \\(3m\\+\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natural\\ Response\\ Nipple\\ \\-\\ Extra\\ Fast\\ \\(6m\\+\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Sterilise\\ \\&\\ Store\\ Bottle\\ Steriliser$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Microwave\\ Steriliser\\ Bags$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Classic\\ Soft\\ Spout\\ Cup$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Straw\\ Cup$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Air\\ Soother\\ \\(0\\-6m\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Air\\ Soother\\ \\(6\\-18m\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Single\\ Electric\\ Breast\\ Pump$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Essential\\ Manual\\ Breast\\ Pump$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    }
+  ]
+}
