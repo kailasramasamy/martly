@@ -1,0 +1,334 @@
+{
+  "brand": "Timios",
+  "manufacturer": "Timios (Arshiya Foods Pvt. Ltd.)",
+  "feed": "timios-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/timios/logo-46618132.png",
+  "themeColor": "#7B4FA0",
+  "themeColorSecondary": "#2BB5A6",
+  "namePrefix": "Timios ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Belligo\\ Probiotic\\ \\+\\ Prebiotic\\ Bites$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Belligo\\ Probiotics\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Berry\\ Bar\\ \\-\\ Dates,\\ Oats\\ \\&\\ Berries$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Nutty\\ Bar\\ \\-\\ Dates,\\ Oats\\ \\&\\ Nuts$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Mom\\-Trient\\ Energy\\ Bar\\ for\\ Lactating\\ Mothers$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Mom\\-Trient\\ Energy\\ Bar\\ for\\ Pregnant\\ Mothers$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Crunchies\\ Breakfast\\ Cereal$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Peanut\\ Butter\\ with\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Fills\\ \\-\\ Apple$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Fills\\ \\-\\ Raspberry$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Cookies\\ Tub\\ \\-\\ Choco\\ \\&\\ Sesame$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Hearty\\ Milk\\ Mix\\ \\-\\ Berry$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Hearty\\ Milk\\ Mix\\ \\-\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Hearty\\ Milk\\ Mix\\ \\-\\ Nuts\\ \\&\\ Turmeric$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Jagga\\ Organic\\ Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Melts\\ \\-\\ Carrot\\ \\&\\ Cumin$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Melts\\ \\-\\ Banana\\ \\&\\ Strawberry$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Melts\\ \\-\\ Blueberry$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Melts\\ \\-\\ Apple$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Mini\\ Oaty\\ Bites\\ \\-\\ Apple\\ \\&\\ Kiwi$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Mini\\ Oaty\\ Bites\\ \\-\\ Nuts\\ \\&\\ Berries$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Puffs\\ \\-\\ Spinach\\ \\&\\ Lime$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Rings\\ \\-\\ Tomato\\ \\&\\ Cheese$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Stars\\ \\-\\ Banana\\ \\&\\ Honey$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Sticks\\ \\-\\ Carrot\\ \\&\\ Cumin$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Millet\\ Noodles\\ \\-\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Millet\\ Noodles\\ \\-\\ Tomato$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Pasta\\ \\-\\ Tomato\\ Red$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Pasta\\ \\-\\ White\\ Cheesy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Millet\\ Pancake\\ Mix\\ \\-\\ Apple$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Millet\\ Pancake\\ Mix\\ \\-\\ Banana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Organic\\ Beetroot\\ Millet\\ Dosa\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Multi\\ Millet\\ Dosa\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Spinach\\ Millet\\ Dosa\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Teething\\ Sticks\\ \\-\\ Cumin$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Teething Biscuits"
+      ]
+    },
+    {
+      "match": "^Zookers\\ Animal\\ Biscuits\\ \\-\\ Apple\\ \\&\\ Blueberry$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Teething Biscuits"
+      ]
+    },
+    {
+      "match": "^Zookers\\ Animal\\ Biscuits\\ \\-\\ Cherry$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Teething Biscuits"
+      ]
+    },
+    {
+      "match": "^Organic\\ Ragi\\ Porridge$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sattu\\ Maavu\\ Porridge$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Super\\ Foods\\ \\-\\ Moringa\\ Powder$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Superfoods (Chia, Flax, Hemp)"
+      ]
+    }
+  ]
+}
