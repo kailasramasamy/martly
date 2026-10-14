@@ -1,0 +1,2437 @@
+[
+ {
+  "title": "Grand Instant Coffee",
+  "handle": "grand-instant-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "8g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40054357_4-tata-coffee-coffee-grand.jpg"
+    }
+   },
+   {
+    "title": "50g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40054356_5-tata-coffee-grand-instant-coffee.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255416_2-tata-coffee-grand-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255417_2-tata-coffee-grand-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40054357_4-tata-coffee-coffee-grand.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40054356_5-tata-coffee-grand-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255416_2-tata-coffee-grand-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255417_2-tata-coffee-grand-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A smooth blend of agglomerated coffee powder and freeze dried coffee that promises a superior taste and rich aroma.",
+   "usageInstructions": "Add 1 teaspoon of Tata Coffee Grand into a cup. Add 100ml of hot milk and/or water. Add sugar to taste, stir well and enjoy.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Grand Classic Instant Coffee",
+  "handle": "grand-classic-instant-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "7g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279032_4-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+    }
+   },
+   {
+    "title": "45g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40054355_23-tata-coffee-grand-instant-coffee.jpg"
+    }
+   },
+   {
+    "title": "50g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279031_4-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+    }
+   },
+   {
+    "title": "90g",
+    "price": "235",
+    "compare_at_price": "235",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279033_9-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279034_4-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "520",
+    "compare_at_price": "520",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279035_5-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279032_4-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279032-2_3-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279032-3_3-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279032-4_3-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279032-5_2-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279032-6_2-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279032-7_2-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279032-8_2-tata-coffee-grand-classic-instant-coffee-strong-taste-rich-aroma.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The story of experience and legacy of Tata Coffee’s lush coffee estates, high up in the mountains of southern India where the biodiversity is preserved and enhanced. Where the high-quality Arabica and Robusta beans are cultivated, picked, pulped and dried with the utmost precision and care by our experts. Decades of experience in producing high-quality coffee, using technologies and techniques perfected by Tata Coffee’s in-house lab; ensure consistency of taste and aroma.\nTata Coffee Grand leverages the deep heritage of Tata in coffee and has created a product that is a first-of-its-kind innovative offering in the Indian market. The product is a blend of the finest coffee powder & “flavour-locked decoction crystals” which gives consumers a best-in-class taste experience in the instant coffee category. Tata Coffee grand is an intensely rich, fresh and aromatic coffee.",
+   "ingredients": "Coffee (71.5%), Chicory (27%), Nature Identical Flavouring Substances.",
+   "usageInstructions": "Add 1 teaspoon of Tata Coffee Grand into a cup.\nAdd 100 ml of hot milk and/or water.\nAdd sugar to taste and stir well to enjoy a great cup.",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Grand Premium Instant Coffee - Pouch",
+  "handle": "grand-premium-instant-coffee-pouch",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "6g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279021_3-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+    }
+   },
+   {
+    "title": "45g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279022_9-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+    }
+   },
+   {
+    "title": "90g",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279024_12-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "660",
+    "compare_at_price": "660",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279026_8-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279021_3-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279021-2_2-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279021-3_2-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279021-4_2-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279021-5_1-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279021-6_1-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279021-7_1-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279021-8_1-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+   }
+  ],
+  "details": {
+   "description": "Tata Coffee Grand Premium - Unlock the freshness! To offer you a memorable taste experience, Tata Coffee brings you Grand Premium instant coffee powder, which leverages the deep heritage of Tata Coffee and delivers an intensely rich aroma and great taste of coffee. So give a fresh start to your mornings with a sip of your favourite coffee, and be ready for an adventurous ride all day long. With 100% coffee blend and flavour-locked instant decoction crystals, this Tata Coffee flavoured soluble coffee powder is roasted and processed to perfection to give you the choicest coffee every day.",
+   "ingredients": "Coffee ( 98.5% ) , Natural Identical Flavouring substance",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India",
+   "usageInstructions": "Add 1 teaspoon of Tata Coffee Grand Premium into a cup.\nAdd 100 ml of hot milk and/or water.\nAdd sugar to taste, and stir well to enjoy a great cup.\nStorage Instructions: Close it tightly after every use. Always use a dry spoon."
+  }
+ },
+ {
+  "title": "Grand Premium Instant Coffee - Jar",
+  "handle": "grand-premium-instant-coffee-jar",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "24g",
+    "price": "124",
+    "compare_at_price": "124",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363390_3-tata-coffee-grand-premium-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+    },
+    "barcode": "8901090326709"
+   },
+   {
+    "title": "45g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279023_16-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+    }
+   },
+   {
+    "title": "90g",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279025_12-tata-coffee-grand-premium-coffee-powder-100-blend-instant-coffee-rich-in-aroma.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363390_3-tata-coffee-grand-premium-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363390-2_3-tata-coffee-grand-premium-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363390-3_3-tata-coffee-grand-premium-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363390-4_3-tata-coffee-grand-premium-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363390-5_3-tata-coffee-grand-premium-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363390-6_3-tata-coffee-grand-premium-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363390-7_3-tata-coffee-grand-premium-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363390-8_2-tata-coffee-grand-premium-instant-coffee-with-flavour-locked-decoction-crystals.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Grand Premium - Unlock the freshness! To offer you a memorable taste experience, Tata Coffee brings you Grand Premium instant coffee powder, which leverages the deep heritage of Tata Coffee and delivers an intensely rich aroma and great taste of coffee. So give a fresh start to your mornings with a sip of your favourite coffee, and be ready for an adventurous ride all day long. With coffee blend and flavour-locked instant decoction crystals, this Tata Coffee flavoured soluble coffee powder is roasted and processed to perfection to give you the choicest coffee every day.",
+   "ingredients": "Coffee (98.5%), Nature-Identical Flavouring Substance.",
+   "nutritionalInfo": {
+    "Energy": "322 kcal",
+    "Protein": "24 g",
+    "Carbohydrates": "56 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "28 g",
+    "Total Fat": "0 g",
+    "Sodium": "41 mg"
+   },
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Grand Choco Mocha Flavour Premium Coffee",
+  "handle": "grand-choco-mocha-flavour-premium-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "24g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367379_1-tata-coffee-grand-premium-choco-mocha-flavored-instant-coffee-premium-coffee-blend.jpg"
+    },
+    "barcode": "8901052013012"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367379_1-tata-coffee-grand-premium-choco-mocha-flavored-instant-coffee-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367379-2_1-tata-coffee-grand-premium-choco-mocha-flavored-instant-coffee-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367379-3_1-tata-coffee-grand-premium-choco-mocha-flavored-instant-coffee-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367379-4_1-tata-coffee-grand-premium-choco-mocha-flavored-instant-coffee-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367379-5_1-tata-coffee-grand-premium-choco-mocha-flavored-instant-coffee-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367379-6_1-tata-coffee-grand-premium-choco-mocha-flavored-instant-coffee-premium-coffee-blend.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Grand Premium Choco Mocha Flavoured Coffee Blend offers a delightful fusion of rich coffee and indulgent chocolate notes. Crafted from carefully selected beans, it delivers a smooth, well-rounded taste with a hint of mocha sweetness. Perfect for those who enjoy a café-style experience at home, this aromatic blend is easy to prepare and ideal for any time of day, adding a touch of indulgence to every cup.",
+   "ingredients": "Soluble Coffee Powder (96%), Nature-Identical Flavouring Substance.",
+   "nutritionalInfo": {
+    "Energy": "347 kcal",
+    "Protein": "25.8 g",
+    "Carbohydrate": "61.1 g",
+    "Total Sugars": "0.6 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "26.6 g",
+    "Total Fat": "0 g",
+    "Sodium": "4 mg"
+   },
+   "manufacturerName": "Tata Consumer Products Limited Instant Coffee Division",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Grand Hazelnut Flavour Premium Coffee",
+  "handle": "grand-hazelnut-flavour-premium-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "24g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367380_1-tata-coffee-grand-premium-hazelnut-flavored-instant-coffee-premium-coffee-blend.jpg"
+    },
+    "barcode": "8901052013029"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367380_1-tata-coffee-grand-premium-hazelnut-flavored-instant-coffee-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367380-2_1-tata-coffee-grand-premium-hazelnut-flavored-instant-coffee-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367380-3_1-tata-coffee-grand-premium-hazelnut-flavored-instant-coffee-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367380-4_1-tata-coffee-grand-premium-hazelnut-flavored-instant-coffee-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367380-5_1-tata-coffee-grand-premium-hazelnut-flavored-instant-coffee-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367380-6_1-tata-coffee-grand-premium-hazelnut-flavored-instant-coffee-premium-coffee-blend.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Grand Premium Hazelnut Flavour Coffee Blend offers a rich and aromatic experience with the warm, nutty notes of hazelnut. Crafted from carefully selected coffee beans, it delivers a smooth, well-balanced taste with a delightful lingering finish. Perfect for those who enjoy a touch of indulgence in every cup, this flavourful blend is easy to prepare and ideal for elevating your daily coffee moments at home.",
+   "ingredients": "Soluble Coffee Powder (97%), Nature-Identical Flavouring Substance.",
+   "nutritionalInfo": {
+    "Energy": "347 kcal",
+    "Protein": "25.8 g",
+    "Carbohydrate": "61.1 g",
+    "Total Sugars": "0.6 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "26.6 g",
+    "Total Fat": "0 g",
+    "Sodium": "4 mg"
+   },
+   "manufacturerName": "Tata Consumer Products Limited Instant Coffee Division",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Grand Fast Dissolving Iced Instant Coffee",
+  "handle": "grand-fast-dissolving-iced-instant-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40377005_1-tata-coffee-grand-fast-dissolving-iced-instant-cold-coffee.jpg"
+    },
+    "barcode": "8901052014446"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40377005_1-tata-coffee-grand-fast-dissolving-iced-instant-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40377005-2_1-tata-coffee-grand-fast-dissolving-iced-instant-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40377005-3_1-tata-coffee-grand-fast-dissolving-iced-instant-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40377005-4_1-tata-coffee-grand-fast-dissolving-iced-instant-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40377005-5_1-tata-coffee-grand-fast-dissolving-iced-instant-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40377005-6_1-tata-coffee-grand-fast-dissolving-iced-instant-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40377005-7_1-tata-coffee-grand-fast-dissolving-iced-instant-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40377005-8_1-tata-coffee-grand-fast-dissolving-iced-instant-cold-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Grand Fast Dissolving Iced Instant Coffee Powder is a specially crafted soluble coffee powder designed for a smooth and refreshing iced coffee experience. Its quick-dissolving formula blends effortlessly, making it easy to prepare a delicious coffee anytime. Enjoy the rich aroma and delightful taste of coffee in a chilled format, perfect for instant refreshment at home or on the go.",
+   "ingredients": "Coffee (98.5%), Nature-Identical Flavouring Substance",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Original Pure Instant Coffee",
+  "handle": "gold-original-pure-instant-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367381_2-tata-coffee-grand-original-instant-pure-coffee-jar-freeze-dried-rich-strong.jpg"
+    }
+   },
+   {
+    "title": "50g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40243330_14-tata-coffee-gold-100-pure-coffee-original-fine-arabica-robusta-beans-blend.jpg"
+    }
+   },
+   {
+    "title": "90g",
+    "price": "475",
+    "compare_at_price": "475",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40254147_10-tata-coffee-gold-100-pure-coffee-original-robusta-arabica-blend-rich-full-bodied-taste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367381_2-tata-coffee-grand-original-instant-pure-coffee-jar-freeze-dried-rich-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367381-2_2-tata-coffee-grand-original-instant-pure-coffee-jar-freeze-dried-rich-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367381-3_2-tata-coffee-grand-original-instant-pure-coffee-jar-freeze-dried-rich-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367381-4_2-tata-coffee-grand-original-instant-pure-coffee-jar-freeze-dried-rich-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367381-5_2-tata-coffee-grand-original-instant-pure-coffee-jar-freeze-dried-rich-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367381-6_1-tata-coffee-grand-original-instant-pure-coffee-jar-freeze-dried-rich-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367381-7_1-tata-coffee-grand-original-instant-pure-coffee-jar-freeze-dried-rich-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367381-8_1-tata-coffee-grand-original-instant-pure-coffee-jar-freeze-dried-rich-strong.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "An instant coffee for those who have an extraordinary love for coffee, Tata Coffee Gold is an exquisite blend crafted from specially sourced Robusta and Arabica beans. Each granule is freeze-dried to lock in the rich, full-bodied taste and delightful aroma of 100% pure coffee. It delivers a smooth, premium coffee experience in every sip. For best results, store in a cool, dry place, and always close the lid tightly after use with a dry spoon.",
+   "manufacturerName": "Tata Consumer Products Limited Instant Coffee Division",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Hazelnut Instant Coffee",
+  "handle": "gold-hazelnut-instant-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "425",
+    "compare_at_price": "425",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324407_5-tata-coffee-gold-instant-coffee-powder-hazelnut.jpg"
+    },
+    "barcode": "8901052007967"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324407_5-tata-coffee-gold-instant-coffee-powder-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324407-2_4-tata-coffee-gold-instant-coffee-powder-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324407-3_4-tata-coffee-gold-instant-coffee-powder-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324407-4_4-tata-coffee-gold-instant-coffee-powder-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324407-5_4-tata-coffee-gold-instant-coffee-powder-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324407-6_4-tata-coffee-gold-instant-coffee-powder-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324407-7_2-tata-coffee-gold-instant-coffee-powder-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324407-8_1-tata-coffee-gold-instant-coffee-powder-hazelnut.jpg"
+   }
+  ],
+  "details": {
+   "description": "Indulge in a luxurious coffee experience with the Tata Coffee Gold Hazelnut 50g. This premium instant coffee is made from 100% pure, freeze-dried coffee beans that preserve the full-bodied flavour and heavenly aroma. Infused with the delightful essence of hazelnut, this blend offers a rich, nutty taste that perfectly complements the bold coffee. Enjoy this aromatic and satisfying drink at any time of day, whether you prefer it black or with milk. The included complimentary mug makes this the perfect gift or a special treat for yourself. Crafted with the highest quality standards, Tata Coffee Gold provides a smooth, robust flavour that coffee enthusiasts will truly appreciate.",
+   "ingredients": "Soluble Coffee Powder (98%), Nature-Identical Flavouring Substance.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Vanilla Instant Coffee",
+  "handle": "gold-vanilla-instant-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "425",
+    "compare_at_price": "425",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324406_6-tata-coffee-gold-instant-coffee-powder-vanilla.jpg"
+    },
+    "barcode": "8901052007950"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324406_6-tata-coffee-gold-instant-coffee-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324406-2_5-tata-coffee-gold-instant-coffee-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324406-3_5-tata-coffee-gold-instant-coffee-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324406-4_5-tata-coffee-gold-instant-coffee-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324406-5_5-tata-coffee-gold-instant-coffee-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324406-6_5-tata-coffee-gold-instant-coffee-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324406-7_3-tata-coffee-gold-instant-coffee-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324406-8_2-tata-coffee-gold-instant-coffee-powder-vanilla.jpg"
+   }
+  ],
+  "details": {
+   "description": "Indulge in the luxurious Tata Coffee Gold Vanilla, a unique and flavourful coffee experience that blends the rich, full-bodied taste of premium coffee with the delightful essence of vanilla. Each freeze-dried instant coffee granule is carefully crafted to preserve the aroma and flavour, offering a truly indulgent treat. Whether enjoyed black or with milk, this coffee transforms routine moments into something special, with its perfect balance of robust coffee and subtle sweetness. Sustainably sourced and presented in a convenient combo with a complimentary mug, Tata Coffee Gold Vanilla is the perfect gift or a special treat for yourself, perfect for savouring during quiet mornings or as a mid-day pick-me-up.",
+   "ingredients": "Soluble Coffee Powder (97%), Natural Flavour",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Brownie Flavoured Premium Coffee",
+  "handle": "gold-brownie-flavoured-premium-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358858_4-tata-coffee-gold-brownie-flavoured-premium-coffee-blend.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358858_4-tata-coffee-gold-brownie-flavoured-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358858-2_4-tata-coffee-gold-brownie-flavoured-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358858-3_4-tata-coffee-gold-brownie-flavoured-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358858-4_4-tata-coffee-gold-brownie-flavoured-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358858-5_4-tata-coffee-gold-brownie-flavoured-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358858-6_4-tata-coffee-gold-brownie-flavoured-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358858-7_4-tata-coffee-gold-brownie-flavoured-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358858-8_3-tata-coffee-gold-brownie-flavoured-premium-coffee-blend.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Gold Brownie Flavoured Soluble Coffee Powder brings together the finest coffee craftsmanship with an indulgent twist. Crafted from premium instant coffee blend with specially refined coffee granules, offering a rich aroma, smooth taste, and a consistently satisfying cup.\nInfused with the decadent taste of brownie, it offers a unique coffee experience that’s both bold and indulgent. The strong taste and captivating aroma make it a perfect choice for true coffee lovers who enjoy depth and sophistication in every sip.\nWhether you enjoy it as a comforting hot coffee or a refreshing cold brew, this versatile blend adapts beautifully to your mood and moment. Its quick-dissolving soluble profile ensures convenience without compromising on taste, making it ideal for home, office, or travel.",
+   "ingredients": "Soluble Coffee Powder (96.5%), Nature-Identical Flavouring substance.",
+   "nutritionalInfo": {
+    "Serving Size": "1.25 g",
+    "Servings Per Pack": "20",
+    "Energy": "347 kcal",
+    "Protein": "25.8 g",
+    "Carbohydrate": "61.1 g",
+    "Total Sugars": "0.6 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "26.6 g",
+    "Total Fat": "0 g",
+    "Sodium": "4 mg"
+   },
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Tiramisu Flavoured Premium Coffee",
+  "handle": "gold-tiramisu-flavoured-premium-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359007_5-tata-coffee-tiramisu-flavoured-gold-premium-coffee-blend.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359007_5-tata-coffee-tiramisu-flavoured-gold-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359007-2_5-tata-coffee-tiramisu-flavoured-gold-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359007-3_5-tata-coffee-tiramisu-flavoured-gold-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359007-4_5-tata-coffee-tiramisu-flavoured-gold-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359007-5_5-tata-coffee-tiramisu-flavoured-gold-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359007-6_5-tata-coffee-tiramisu-flavoured-gold-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359007-7_4-tata-coffee-tiramisu-flavoured-gold-premium-coffee-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359007-8_1-tata-coffee-tiramisu-flavoured-gold-premium-coffee-blend.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Gold Tiramisu Flavoured Soluble Coffee Powder blends the finest coffee craftsmanship with a luxurious twist. Crafted from a premium instant coffee blend with carefully refined granules, this tiramisu-flavoured coffee delivers a rich aroma, smooth taste, and a consistently satisfying cup every time.\nInfused with the indulgent taste of tiramisu, it offers a unique coffee experience that is both bold and dessert-inspired. The strong taste and captivating aroma make it a perfect choice for true coffee lovers who enjoy depth, sophistication, and a hint of indulgence in every sip.\nWhether you enjoy it as a comforting hot coffee or a refreshing cold brew, this versatile blend adapts beautifully to your mood and moment. Its quick-dissolving soluble profile ensures convenience without compromising on taste, making it ideal for home, office, or travel.",
+   "ingredients": "Soluble Coffee Powder (97%), Nature-Identical Flavouring substance.",
+   "nutritionalInfo": {
+    "Serving Size": "1.25 g",
+    "Servings Per Pack": "20",
+    "Energy": "347 kcal",
+    "Protein": "25.8 g",
+    "Carbohydrate": "61.1 g",
+    "Total Sugars": "0.6 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "26.6 g",
+    "Total Fat": "0 g",
+    "Sodium": "4 mg"
+   },
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cafe Specials Cappuccino Coffee Mix",
+  "handle": "cafe-specials-cappuccino-coffee-mix",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "101.5g",
+    "price": "209",
+    "compare_at_price": "209",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279027_4-tata-coffee-cafe-specials-cappuccino-creamy-frothy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279027_4-tata-coffee-cafe-specials-cappuccino-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279027-2_3-tata-coffee-cafe-specials-cappuccino-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279027-3_3-tata-coffee-cafe-specials-cappuccino-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279027-4_3-tata-coffee-cafe-specials-cappuccino-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279027-5_3-tata-coffee-cafe-specials-cappuccino-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279027-6_3-tata-coffee-cafe-specials-cappuccino-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279027-7_3-tata-coffee-cafe-specials-cappuccino-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279027-8_2-tata-coffee-cafe-specials-cappuccino-creamy-frothy.jpg"
+   }
+  ],
+  "details": {
+   "description": "Love the frothy, creamy coffee you get at cafes, but not getting it quite right at home? Introducing Tata Coffee Cafe Specials, an all-new instant coffee mix crafted to make deliciously creamy & frothy Cafe style coffee in the comfort of your home. Its special foaming creamer instantly boosts the texture of your coffee to give you the layer of froth you love and a creaminess down to the last sip.\nMake in 3 easy steps:\nEmpty the powder from the sachet into a cup. Take 180 ml of hot milk for a perfect cup.\nAdd half the milk from a height & stir gently for a few seconds.\nPour the remaining milk from a height & stir.\nYour cup of frothy, creamy Cafe style coffee is ready to enjoy.",
+   "ingredients": "Refined Sugar, Foaming Creamer(40%), [Glucose Syrup, Milk Solids, Edible Vegetable Fat (Coconut), Stabiliser (INS 340)], Instant Coffee-Chicory Mixture (Coffee - 11.6%), Caseinates, Nature- identical flavouring substance, Anticaking Agent [INS 500(ii)].",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cafe Specials Hazelnut Coffee Mix",
+  "handle": "cafe-specials-hazelnut-coffee-mix",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "101.5g",
+    "price": "209",
+    "compare_at_price": "209",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279028_4-tata-coffee-cafe-specials-hazelnut-creamy-frothy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279028_4-tata-coffee-cafe-specials-hazelnut-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279028-2_3-tata-coffee-cafe-specials-hazelnut-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279028-3_3-tata-coffee-cafe-specials-hazelnut-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279028-4_3-tata-coffee-cafe-specials-hazelnut-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279028-5_3-tata-coffee-cafe-specials-hazelnut-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279028-6_3-tata-coffee-cafe-specials-hazelnut-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279028-7_3-tata-coffee-cafe-specials-hazelnut-creamy-frothy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279028-8_2-tata-coffee-cafe-specials-hazelnut-creamy-frothy.jpg"
+   }
+  ],
+  "details": {
+   "description": "Love the frothy, creamy coffee you get at cafes, but not getting it quite right at home? Introducing Tata Coffee Cafe Specials, an all-new instant coffee mix crafted to make deliciously creamy & frothy Cafe style coffee in the comfort of your home. Its special foaming creamer instantly boosts the texture of your coffee to give you the layer of froth you love and a creaminess down to the last sip.\nMake in 3 easy steps:\nEmpty the powder from the sachet into a cup. Take 180 ml of hot milk for a perfect cup.\nAdd half the milk from a height & stir gently for a few seconds.\nPour the remaining milk from a height & stir.\nYour cup of frothy, creamy Cafe style coffee is ready to enjoy.",
+   "ingredients": "Refined Sugar, Foaming Creamer (34%), [Glucose Syrup, Milk Solids, Edible Vegetable Fat (Coconut), Stabiliser (INS 340)], Instant Coffee Chicory Mixture (Coffee - 9.1%), Caseinates, Nature- Identical Flavouring Substance, Anticaking Agent [INS 500(ii)].",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "All-In-1 Protein Coffee Premix",
+  "handle": "all-in-1-protein-coffee-premix",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "126g",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367695_1-tata-coffee-all-in-1-protein-coffee-premix.jpg"
+    },
+    "barcode": "8901052014521"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367695_1-tata-coffee-all-in-1-protein-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367695-2_1-tata-coffee-all-in-1-protein-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367695-3_1-tata-coffee-all-in-1-protein-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367695-4_1-tata-coffee-all-in-1-protein-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367695-5_1-tata-coffee-all-in-1-protein-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367695-6_1-tata-coffee-all-in-1-protein-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367695-7_1-tata-coffee-all-in-1-protein-coffee-premix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "All-In-1 Protein Coffee Premix blends rich coffee flavour with added protein in a convenient format. Simply add hot water to prepare a smooth, satisfying drink within moments. Designed for ease, it offers a balanced taste with a creamy texture, making it suitable for busy mornings or quick breaks throughout the day.",
+   "ingredients": "Milk Solids, Instant Coffee-Chicory Mixture (13.5%) [Coffee (8.1%), Chicory], Iodized Salt, Nature-Identical Flavouring Substance, Anticaking Agent (INS 551), Non-Caloric Sweeteners (INS 951, INS 955) Allergens: Contains Milk Contain Non-Caloric Sweeteners This Instant Coffee Beverage Premix Contains An Admixture Of Aspartame And Sucralose Not Recommended For Phenylketonurics; For Children Suffering From Seizure Disorders; Pregnant And Lactating Mothers.",
+   "nutritionalInfo": {
+    "Serve Size": "18 g:",
+    "Energy": "75 kcal",
+    "Protein": "5 g",
+    "Carbohydrate": "9 g",
+    "Total Sugars": "5.6 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "0.6 g",
+    "Total Fat": "2.1 g",
+    "Saturated Fat": "1.4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "9.2 mg",
+    "Sodium": "129 mg"
+   },
+   "manufacturerName": "Vending Updates (India) Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "All-In-1 Caramel Instant Coffee-Chicory Premix",
+  "handle": "all-in-1-caramel-instant-coffee-chicory-premix",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358857_4-tata-coffee-caramel-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+    },
+    "barcode": "8901052011124"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358857_4-tata-coffee-caramel-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358857-2_4-tata-coffee-caramel-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358857-3_4-tata-coffee-caramel-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358857-4_4-tata-coffee-caramel-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358857-5_4-tata-coffee-caramel-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358857-6_4-tata-coffee-caramel-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358857-7_3-tata-coffee-caramel-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358857-8_3-tata-coffee-caramel-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Caramel Flavour All-In-1 Instant Coffee Chicory Premix brings a silky, aromatic blend that melts into a rich, comforting cup within seconds. The smooth coffee chicory base meets warm caramel notes for a luxurious cafe-style experience, perfect for moments when you crave effortless indulgence with consistent quality.",
+   "ingredients": "Refined Sugar, Dairy Whitener (Milk Solids, Refined Sugar, Maltodextrin, Stabilizers (INS 339(ii), INS 339(iii))), Instant Coffee-Chicory Mixture (Coffee 3.8%, Chicory 2.5%), Maltodextrin, Iodized Salt, Nature-Identical Flavouring Substance.\nAllergens: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy": "66 kcal",
+    "Protein": "1.1 g",
+    "Carbohydrate": "13.3 g",
+    "Total Sugars": "11 g",
+    "Added Sugars": "8.1 g",
+    "Total Fat": "0.8 g",
+    "Saturated Fat": "0.6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "2.9 mg",
+    "Sodium": "49.1 mg",
+    "Servings per pack": "10",
+    "% RDA values given": "16.1, 1.3, 2.5, 0"
+   },
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "All-In-1 Hazelnut Instant Coffee-Chicory Premix",
+  "handle": "all-in-1-hazelnut-instant-coffee-chicory-premix",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358856_4-tata-coffee-hazelnut-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+    },
+    "barcode": "8901052011117"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358856_4-tata-coffee-hazelnut-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358856-2_4-tata-coffee-hazelnut-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358856-3_4-tata-coffee-hazelnut-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358856-4_4-tata-coffee-hazelnut-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358856-5_4-tata-coffee-hazelnut-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358856-6_3-tata-coffee-hazelnut-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358856-7_3-tata-coffee-hazelnut-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358856-8_3-tata-coffee-hazelnut-flavour-all-in-1-instant-coffee-chicory-premix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Hazelnut Flavour All-In-1 Instant Coffee-Chicory Premix offers a smooth, aromatic blend that brings cafe-style richness to every cup. The warm hazelnut notes complement the balanced coffee-chicory mix, creating a creamy, comforting brew. Perfect for busy mornings or relaxing breaks, it delivers premium taste and convenience in every sachet.",
+   "ingredients": "Dairy Whitener (Milk Solids, Refined Sugar, Maltodextrin, Stabilizers INS 339(ii), INS 339(iii)), Refined Sugar, Whole Milk Powder, Instant Coffee-Chicory Mixture [Coffee 4.8%, Chicory 3.2%], Nature-Identical Flavouring Substance. Allergens: Contains Milk",
+   "nutritionalInfo": {
+    "Energy (per serve)": "67 kcal",
+    "Protein (per serve)": "1.7 g",
+    "Carbohydrate (per serve)": "12.2 g",
+    "Total Sugars (per serve)": "9.9 g",
+    "Added Sugars (per serve)": "5.9 g",
+    "Total Fat (per serve)": "1.2 g",
+    "Saturated Fat (per serve)": "0.8 g",
+    "Trans Fat (per serve)": "0 g",
+    "Cholesterol (per serve)": "3.8 mg",
+    "Sodium (per serve)": "42.1 mg",
+    "Servings per pack": "10",
+    "Serve Size": "16 g"
+   },
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Grand Filter Coffee",
+  "handle": "grand-filter-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176780_8-tata-coffee-filter-coffee-grand-rich-aromatic.jpg"
+    },
+    "barcode": "8901090111046"
+   },
+   {
+    "title": "200g",
+    "price": "108",
+    "compare_at_price": "108",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176779_8-tata-coffee-grand-filter-coffee.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176778_8-tata-coffee-grand-filter-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176780_8-tata-coffee-filter-coffee-grand-rich-aromatic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176780-2_8-tata-coffee-filter-coffee-grand-rich-aromatic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176780-3_10-tata-coffee-filter-coffee-grand-rich-aromatic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176780-4_9-tata-coffee-filter-coffee-grand-rich-aromatic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176780-5_4-tata-coffee-filter-coffee-grand-rich-aromatic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176780-6_4-tata-coffee-filter-coffee-grand-rich-aromatic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176780-7_4-tata-coffee-filter-coffee-grand-rich-aromatic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176780-8_4-tata-coffee-filter-coffee-grand-rich-aromatic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Introducing Tata Coffee Grand Filter Coffee which leverages the deep heritage of Tata in coffee and delivers an intensely rich, fresh, and aromatic coffee. Get a fresh start to your mornings with a sip of freshly brewed coffee and be ready for an adventurous ride all day long. Containing coffee, chicory and flavour locked decoction crystals, this coffee is roasted and grounded to perfection.",
+   "ingredients": "Coffee (53%) & Chicory",
+   "usageInstructions": "Add 2 tsp of coffee into the upper portion of the filter and cover with the retainer.\nAdd 50ml hot water into the upper portion of the filter and cover it.\nWait for 15mins for the decoction. Mix with hot milk and sugar as per taste.",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Quick Filter Instant Coffee",
+  "handle": "quick-filter-instant-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237231_6-tata-coffee-quick-filter-authentic-taste-easy-to-make.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "174",
+    "compare_at_price": "174",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237233_6-tata-coffee-quick-filter-authentic-taste-easy-to-make.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237231_6-tata-coffee-quick-filter-authentic-taste-easy-to-make.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237231-2_5-tata-coffee-quick-filter-authentic-taste-easy-to-make.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237231-3_5-tata-coffee-quick-filter-authentic-taste-easy-to-make.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237231-4_5-tata-coffee-quick-filter-authentic-taste-easy-to-make.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237231-5_5-tata-coffee-quick-filter-authentic-taste-easy-to-make.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237231-6_5-tata-coffee-quick-filter-authentic-taste-easy-to-make.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237231-7_5-tata-coffee-quick-filter-authentic-taste-easy-to-make.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237233_6-tata-coffee-quick-filter-authentic-taste-easy-to-make.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the authentic taste of South Indian filter coffee with Tata Coffee Quick Filter. This innovative product allows you to enjoy the rich, full-bodied flavour and fresh aroma of freshly brewed coffee in just 3 simple steps. Crafted with a perfect blend of high-quality coffee beans and chicory, each sip delivers a robust and satisfying taste that will transport you to the heart of South India. Ideal for busy lifestyles, Tata Coffee Quick Filter offers the convenience of instant brewing without compromising on the authentic flavour. Experience the convenience of a quick, flavourful cup of coffee that captures the essence of the traditional South Indian filter coffee ritual. Treat your senses to the irresistible aroma and taste of this premium coffee experience.",
+   "ingredients": "Soluble Coffee Powder (55.4%), Chicory. Nature-Identical Flavouring Substances",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Coffee Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Quick Filter Coorg Kaapi Decoction Liquid",
+  "handle": "quick-filter-coorg-kaapi-decoction-liquid",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363397_5-tata-coffee-coorg-kaapi-quick-filter-decoction-liquid.jpg"
+    },
+    "barcode": "8901052011056"
+   },
+   {
+    "title": "200ml",
+    "price": "178",
+    "compare_at_price": "178",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313025_4-tata-coffee-quick-filter-decoction-liquid-coorg-kaapi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363397_5-tata-coffee-coorg-kaapi-quick-filter-decoction-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363397-2_5-tata-coffee-coorg-kaapi-quick-filter-decoction-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363397-3_5-tata-coffee-coorg-kaapi-quick-filter-decoction-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363397-4_5-tata-coffee-coorg-kaapi-quick-filter-decoction-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363397-5_5-tata-coffee-coorg-kaapi-quick-filter-decoction-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313025_4-tata-coffee-quick-filter-decoction-liquid-coorg-kaapi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A perfect cup of filter coffee is a combination of little things like the beans, the blend, the brew, and most importantly, the technique. It takes time, precision & a lot of practice to brew it right. Tata Coffee Quick Filter Decoction Liquid brings the traditional art of brewing filter coffee in convenient packaging to you. It comes with the same rich and unique filter coffee experience but without the long & consuming process. Coorg Kaapi offers a cup of rich and aromatic coffee that tastes just like filter coffee. The perfect blend of coffee and chicory turns Tata Coffee Quick Filter Decoction Liquid into a heavenly affair of intense aromas. So, make a quick cup of filter coffee with this instant coffee decoction and experience the taste that reminds you of Coorg.",
+   "ingredients": "Coffee Chicory Decoction (99.5%) [Water, Coffee (11.1%), Chicory (2.8%)], Nature Identical Flavouring Substance.",
+   "nutritionalInfo": {
+    "Energy": "52 kcal",
+    "Protein": "1.6 g",
+    "Carbohydrate": "8.7 g",
+    "Total Sugars": "1.2 g",
+    "Added Sugars": "0.5 g",
+    "Total Fat": "1.2 g",
+    "Saturated Fat": "0.5 g",
+    "Trans Fat": "0.09 g",
+    "Sodium": "116 mg"
+   },
+   "manufacturerName": "Bean Good Private Limited (Formerly known as Markasia Beverages Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Quick Filter Degree Kaapi Decoction Liquid",
+  "handle": "quick-filter-degree-kaapi-decoction-liquid",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "178",
+    "compare_at_price": "178",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313026_4-tata-coffee-quick-filter-decoction-liquid-degree-kaapi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313026_4-tata-coffee-quick-filter-decoction-liquid-degree-kaapi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313026-2_3-tata-coffee-quick-filter-decoction-liquid-degree-kaapi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313026-3_3-tata-coffee-quick-filter-decoction-liquid-degree-kaapi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313026-4_3-tata-coffee-quick-filter-decoction-liquid-degree-kaapi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313026-5_3-tata-coffee-quick-filter-decoction-liquid-degree-kaapi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313026-6_1-tata-coffee-quick-filter-decoction-liquid-degree-kaapi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313026-7_1-tata-coffee-quick-filter-decoction-liquid-degree-kaapi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313026-8_1-tata-coffee-quick-filter-decoction-liquid-degree-kaapi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Quick Filter Decoction Liquid brings the traditional art of brewing filter coffee to your fingertips, offering a convenient and authentic South Indian coffee experience. Crafted with a perfect blend of coffee and chicory, this decoction delivers a rich, full-bodied and robust flavour that will delight coffee enthusiasts. Enjoy the intense aroma and heavenly taste that reminds you of the filter coffee experience from Tamil Nadu, with the ability to customise the strength to suit your personal preferences. Whether you prefer a strong, bold cup or a milder, more delicate brew, this instant coffee decoction allows you to create the perfect filter coffee in seconds, without the lengthy preparation process. Indulge in the rich, aromatic and satisfying taste of traditional South Indian filter coffee with Tata Coffee Quick Filter Decoction Liquid.",
+   "ingredients": "Coffee, Chicory Decoction (99.5%) [Water, Coffee (11.1%), Chicory (2.8%)], Nature-Identical Flavouring Substance",
+   "nutritionalInfo": {
+    "Serving Size": "12.5 ml",
+    "Servings Per Pack": "16",
+    "Energy": "59 kcal",
+    "Protein": "1.6 g",
+    "Carbohydrate": "6.8 g",
+    "Total Sugars": "1.1 g",
+    "Added Sugars": "0.5 g",
+    "Total Fat": "2.8 g",
+    "Saturated Fat": "1.6 g",
+    "Trans Fat": "0.09 g",
+    "Sodium": "113 mg"
+   },
+   "storageInstructions": "* Keep away from direct sunlight\n* Store in a cool and dry place before opening\n* Once opened, refrigerate and consume within 10 days\n* Keep the cap tightly closed after each use",
+   "manufacturerName": "Bean Good Pvt. Ltd. (Formerly known as Markasia Beverages Pvt. Ltd.)",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Quick Filter Chukku Kaapi Decoction Liquid",
+  "handle": "quick-filter-chukku-kaapi-decoction-liquid",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313027_5-tata-coffee-quick-filter-chukku-kaapi-decoction-premix-liquid.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313027_5-tata-coffee-quick-filter-chukku-kaapi-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313027-2_4-tata-coffee-quick-filter-chukku-kaapi-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313027-3_4-tata-coffee-quick-filter-chukku-kaapi-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313027-4_4-tata-coffee-quick-filter-chukku-kaapi-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313027-5_4-tata-coffee-quick-filter-chukku-kaapi-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313027-6_3-tata-coffee-quick-filter-chukku-kaapi-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313027-7_3-tata-coffee-quick-filter-chukku-kaapi-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313027-8_3-tata-coffee-quick-filter-chukku-kaapi-decoction-premix-liquid.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A perfect cup of black coffee combines little things like the beans, the blend, the brew, and most importantly, the technique. It takes time, precision & a lot of practice to brew it right. Tata Coffee Quick Filter Decoction Premix Liquid brings you the traditional art of brewing filter coffee in convenient packaging. It comes with the same rich and unique Chukku coffee experience but without the long & consuming process. Chukku Kaapi offers a cup of aromatic black coffee with the goodness of ginger, black pepper & cardamom with added jaggery. The perfect blend of coffee and chicory turns Tata Coffee Quick Filter Decoction Premix Liquid into a heavenly affair of intense aromas. So, make a quick cup of filter coffee with this instant coffee decoction and experience the taste that reminds you of Kerala.",
+   "ingredients": "Jaggery (57.4%), Coffee Chicory Decoction (30%) [Water, Coffee (2.2%), Chicory (0.5%)], Water, Natural Masala Flavour, Acidity Regulator (INS 330), Preservative (INS 202) Natural Masala Flavour contains extracts of Black Pepper, Ginger, and Cardamom.",
+   "nutritionalInfo": {
+    "Serving Size": "12.5 ml",
+    "Servings per pack": "16",
+    "Energy": "262 kcal",
+    "Protein": "0.8 g",
+    "Carbohydrate": "57 g",
+    "Total Sugars": "55.2 g",
+    "Added Sugars": "51.7 g",
+    "Total Fat": "3.4 g",
+    "Saturated Fat": "1.5 g",
+    "Trans Fat": "0.09 g",
+    "Sodium": "105 mg"
+   },
+   "storageInstructions": "*Keep away from direct sunlight\n*Store in a cool and dry place before opening\n*Once opened, refrigerate, and consume within 10 days\n*Keep the cap tightly closed after each use",
+   "manufacturerName": "Bean Good Pvt. Ltd. (Formerly known as Markasia Beverages Pvt. Ltd.)",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Quick Filter Araku Valley Coffee Decoction Liquid",
+  "handle": "quick-filter-araku-valley-coffee-decoction-liquid",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367386_1-tata-coffee-quick-filter-araku-valley-coffee-decoction-premix-liquid.jpg"
+    },
+    "barcode": "8901052011919"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367386_1-tata-coffee-quick-filter-araku-valley-coffee-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367386-2_1-tata-coffee-quick-filter-araku-valley-coffee-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367386-3_1-tata-coffee-quick-filter-araku-valley-coffee-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367386-4_1-tata-coffee-quick-filter-araku-valley-coffee-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367386-5_1-tata-coffee-quick-filter-araku-valley-coffee-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367386-6_1-tata-coffee-quick-filter-araku-valley-coffee-decoction-premix-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367386-7_1-tata-coffee-quick-filter-araku-valley-coffee-decoction-premix-liquid.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Quick Filter Araku Valley Coffee Premix Liquid delivers a rich, authentic South Indian filter coffee experience in seconds. Made from premium Araku Valley beans, this ready-to-use concentrate offers bold aroma and smooth flavour. Simply mix with hot milk or water for a perfectly balanced cup, ideal for busy mornings or convenient indulgence anytime.",
+   "ingredients": "Coffee–Chicory Decoction (99.5%) [Water, Coffee (11.1%), Chicory (2.8%)], Nature-Identical Flavouring Substance.",
+   "nutritionalInfo": {
+    "Energy": "45 kcal",
+    "Protein": "2.1 g",
+    "Carbohydrate": "9.2 g",
+    "Total Sugars": "0.5 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.1 g",
+    "Sodium": "53 mg"
+   },
+   "usageInstructions": "Take 15 ml of decoction and add 85 ml of hot milk.\nStir well and add sugar to taste (recommended: 5 g per serving).\nRecommendation:\nDo not reheat the decoction to avoid loss of aroma. Shake well before use.\nStorage Instructions:\nStore in a cool, dry place. Refrigerate after opening and consume within the recommended period.",
+   "manufacturerName": "Bean Good Private Limited (Formerly known as Markasia Beverages Pvt. Ltd.)",
+   "fssaiLicense": "10021043000349",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "All-In-1 Cold Coffee Premix",
+  "handle": "all-in-1-cold-coffee-premix",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367696_1-tata-coffee-all-in-1-cold-coffee-premix.jpg"
+    }
+   },
+   {
+    "title": "280g",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367699_1-tata-coffee-all-in-1-cold-coffee-premix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367696_1-tata-coffee-all-in-1-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367696-2_1-tata-coffee-all-in-1-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367696-3_1-tata-coffee-all-in-1-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367696-4_1-tata-coffee-all-in-1-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367696-5_1-tata-coffee-all-in-1-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367696-6_1-tata-coffee-all-in-1-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367696-7_1-tata-coffee-all-in-1-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367699_1-tata-coffee-all-in-1-cold-coffee-premix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Coffee Cold Coffee All In 1 Premix Just Add Cold Water. Enjoy a refreshing café-style cold coffee at home with this convenient premix, designed for effortless preparation. Simply mix with cold water to create a smooth, creamy beverage with a well-balanced coffee flavour. Ideal for quick refreshment, it delivers consistent taste and texture, making it suitable for any time of the day.",
+   "ingredients": "Milk Solids, Refined Sugar, Instant Coffee-Chicory Mixture (6.8%) [Coffee (4.1%), Chicory], Iodised Salt, Nature-Identical Flavouring Substance. Allergens: Contains Milk",
+   "nutritionalInfo": {
+    "Serve Size": "28 g:",
+    "Energy": "103 kcal",
+    "Protein": "4.6 g",
+    "Carbohydrate": "20.4 g",
+    "Total Sugars": "17.7 g",
+    "Added Sugars": "11.2 g",
+    "Dietary Fibre": "2 g",
+    "Total Fat": "0.3 g",
+    "Saturated Fat": "0.1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "1.8 mg",
+    "Sodium": "168 mg"
+   },
+   "manufacturerName": "Vending Updates (India) Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "All-In-1 Caramel Cold Coffee Premix",
+  "handle": "all-in-1-caramel-cold-coffee-premix",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367697_1-tata-coffee-all-in-1-caramel-flavour-cold-coffee-premix.jpg"
+    },
+    "barcode": "8901052014606"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367697_1-tata-coffee-all-in-1-caramel-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367697-2_1-tata-coffee-all-in-1-caramel-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367697-3_1-tata-coffee-all-in-1-caramel-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367697-4_1-tata-coffee-all-in-1-caramel-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367697-5_1-tata-coffee-all-in-1-caramel-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367697-6_1-tata-coffee-all-in-1-caramel-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367697-7_1-tata-coffee-all-in-1-caramel-flavour-cold-coffee-premix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "All-In-1 Caramel Flavour Cold Coffee Premix offers a rich combination of coffee and smooth caramel flavour in a convenient, ready-to-mix format. Simply add cold water to prepare a refreshing beverage with ease. Crafted for a balanced taste and creamy texture, it is suitable for a quick indulgent drink at home or during a break.",
+   "ingredients": "Milk Solids, Refined Sugar, Instant Coffee-Chicory Mixture (6.8%) [Coffee (4.1%), Chicory], Iodized Salt, Nature-Identical Flavouring Substance. Allergens: Contains Milk",
+   "nutritionalInfo": {
+    "Serve Size": "28 g:",
+    "Energy": "103 kcal",
+    "Protein": "4.6 g",
+    "Carbohydrate": "20.4 g",
+    "Total Sugars": "17.7 g",
+    "Added Sugars": "11.2 g",
+    "Dietary Fibre": "2 g",
+    "Total Fat": "0.3 g",
+    "Saturated Fat": "0.1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "1.8 mg",
+    "Sodium": "168 mg"
+   },
+   "manufacturerName": "Vending Updates (India) Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "All-In-1 Hazelnut Cold Coffee Premix",
+  "handle": "all-in-1-hazelnut-cold-coffee-premix",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367698_1-tata-coffee-all-in-1-hazelnut-flavour-cold-coffee-premix.jpg"
+    },
+    "barcode": "8901052014613"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367698_1-tata-coffee-all-in-1-hazelnut-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367698-2_1-tata-coffee-all-in-1-hazelnut-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367698-3_1-tata-coffee-all-in-1-hazelnut-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367698-4_1-tata-coffee-all-in-1-hazelnut-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367698-5_1-tata-coffee-all-in-1-hazelnut-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367698-6_1-tata-coffee-all-in-1-hazelnut-flavour-cold-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367698-7_1-tata-coffee-all-in-1-hazelnut-flavour-cold-coffee-premix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "All-In-1 Hazelnut Flavour Cold Coffee Premix brings together aromatic coffee and a smooth, nutty hazelnut flavour in a convenient, ready-to-mix format. Simply add cold water to prepare a creamy beverage with ease. Crafted for a well-balanced taste, it offers a café-style experience, making it suitable for a quick and flavourful refreshment anytime.",
+   "ingredients": "Milk Solids, Refined Sugar, Instant Coffee-Chicory Mixture (6.8%) [Coffee (4.1%), Chicory], Iodized Salt, Nature-Identical Flavouring Substance. Allergens: Contains Milk",
+   "nutritionalInfo": {
+    "Serve Size": "28 g",
+    "Energy": "103 kcal",
+    "Protein": "4.6 g",
+    "Carbohydrate": "20.4 g",
+    "Total Sugars": "17.7 g",
+    "Added Sugars": "11.2 g",
+    "Dietary Fibre": "2 g",
+    "Total Fat": "0.3 g",
+    "Saturated Fat": "0.1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "1.8 mg",
+    "Sodium": "168 mg"
+   },
+   "manufacturerName": "Vending Updates (India) Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cold Coffee Liquid Concentrate - Classic",
+  "handle": "cold-coffee-liquid-concentrate-classic",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40262565_4-tata-coffee-cold-coffee-classic-liquid-concentrate-rich-creamy.jpg"
+    }
+   },
+   {
+    "title": "400ml",
+    "price": "500",
+    "compare_at_price": "500",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40300028_3-tata-coffee-cold-coffee-liquid-concentrate-classic-deliciously-rich-creamy-cafe-style-easy-to-make.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262565_4-tata-coffee-cold-coffee-classic-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262565-2_3-tata-coffee-cold-coffee-classic-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262565-3_3-tata-coffee-cold-coffee-classic-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262565-4_3-tata-coffee-cold-coffee-classic-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262565-5_3-tata-coffee-cold-coffee-classic-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262565-6_3-tata-coffee-cold-coffee-classic-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262565-7_3-tata-coffee-cold-coffee-classic-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262565-8_2-tata-coffee-cold-coffee-classic-liquid-concentrate-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Classic Cold Coffee Liquid Concentrate offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Water, Sugar, Coffee (6.6%), Stabilisers (440, 415), Chicory, Nature-Identical Flavouring Substance, Natural Flavour, Preservative (202)",
+   "nutritionalInfo": {
+    "Serving Size": "20 ml",
+    "Servings per pack": "5",
+    "Energy": "31 kcal",
+    "Protein": "0.2 g",
+    "Carbohydrate": "7.3 g",
+    "Total Sugars": "6 g",
+    "Added Sugars": "6 g",
+    "Total Fat": "0.2 g",
+    "Saturated Fat": "0.2 g",
+    "Trans Fat": "0 g",
+    "Sodium": "9.5 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Markasia Beverages Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Cold Coffee Liquid Concentrate - Choco Mocha",
+  "handle": "cold-coffee-liquid-concentrate-choco-mocha",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40262566_3-tata-coffee-cold-coffee-choco-mocha-liquid-concentrate-rich-creamy.jpg"
+    }
+   },
+   {
+    "title": "400ml",
+    "price": "500",
+    "compare_at_price": "500",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40300029_3-tata-coffee-cold-coffee-liquid-concentrate-choco-mocha-deliciously-rich-creamy-cafe-style-easy-to-make.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262566_3-tata-coffee-cold-coffee-choco-mocha-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262566-2_2-tata-coffee-cold-coffee-choco-mocha-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262566-3_2-tata-coffee-cold-coffee-choco-mocha-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262566-4_2-tata-coffee-cold-coffee-choco-mocha-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262566-5_2-tata-coffee-cold-coffee-choco-mocha-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262566-6_2-tata-coffee-cold-coffee-choco-mocha-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262566-7_2-tata-coffee-cold-coffee-choco-mocha-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262566-8_1-tata-coffee-cold-coffee-choco-mocha-liquid-concentrate-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Choco Mocha Cold Coffee Liquid Concentrate offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Water, Sugar, Coffee (5.8%), Nature-Identical Flavouring Substance, Cocoa Powder (1%), Stabilisers (440,415), Chicory, Natural Flavour, Preservative (202)",
+   "nutritionalInfo": {
+    "Serving Size": "20 ml",
+    "Servings per pack": "5",
+    "Energy": "31 kcal",
+    "Protein": "0.2 g",
+    "Carbohydrate": "7 g",
+    "Total Sugars": "6 g",
+    "Added Sugars": "6 g",
+    "Total Fat": "0.2 g",
+    "Saturated Fat": "0.1 g",
+    "Trans Fat": "0 g",
+    "Sodium": "9.5 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Markasia Beverages Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Cold Coffee Liquid Concentrate - Salted Caramel",
+  "handle": "cold-coffee-liquid-concentrate-salted-caramel",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40262567_3-tata-coffee-cold-coffee-salted-caramel-liquid-concentrate-rich-creamy.jpg"
+    }
+   },
+   {
+    "title": "400ml",
+    "price": "500",
+    "compare_at_price": "500",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40300030_3-tata-coffee-cold-coffee-liquid-concentrate-salted-caramel-deliciously-rich-creamy-cafe-style-easy-to-make.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262567_3-tata-coffee-cold-coffee-salted-caramel-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262567-2_2-tata-coffee-cold-coffee-salted-caramel-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262567-3_2-tata-coffee-cold-coffee-salted-caramel-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262567-4_2-tata-coffee-cold-coffee-salted-caramel-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262567-5_2-tata-coffee-cold-coffee-salted-caramel-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262567-6_2-tata-coffee-cold-coffee-salted-caramel-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262567-7_2-tata-coffee-cold-coffee-salted-caramel-liquid-concentrate-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262567-8_1-tata-coffee-cold-coffee-salted-caramel-liquid-concentrate-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Salted Caramel Cold Coffee Liquid Concentrate offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Water, Sugar, Coffee (5.8%), Nature-Identical Flavouring Substance, Stabilisers (440, 415), Chicory, Iodised Salt (0.6%), Natural Flavour, Preservative (202)",
+   "nutritionalInfo": {
+    "Serving Size": "20 ml",
+    "Servings per pack": "5",
+    "Energy": "32 kcal",
+    "Protein": "0.2 g",
+    "Carbohydrate": "7.4 g",
+    "Total Sugars": "6 g",
+    "Added Sugars": "6 g",
+    "Total Fat": "0.2 g",
+    "Saturated Fat": "0.2 g",
+    "Trans Fat": "0 g",
+    "Sodium": "54.2 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and heat",
+   "manufacturerName": "Markasia Beverages Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Grand Cold Coffee - Belgian Chocolate",
+  "handle": "grand-cold-coffee-belgian-chocolate",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332695_4-tata-coffee-grand-cold-coffee-belgian-chocolate-flavoured-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332695_4-tata-coffee-grand-cold-coffee-belgian-chocolate-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332695-2_4-tata-coffee-grand-cold-coffee-belgian-chocolate-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332695-3_4-tata-coffee-grand-cold-coffee-belgian-chocolate-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332695-4_4-tata-coffee-grand-cold-coffee-belgian-chocolate-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332695-5_4-tata-coffee-grand-cold-coffee-belgian-chocolate-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332695-6_4-tata-coffee-grand-cold-coffee-belgian-chocolate-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332695-7_4-tata-coffee-grand-cold-coffee-belgian-chocolate-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332695-8_3-tata-coffee-grand-cold-coffee-belgian-chocolate-flavoured-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cold Coffee – Crafted with care to deliver exceptional taste and quality, this product offers a delightful balance of flavour and freshness. Perfect for everyday enjoyment, it can be enjoyed on its own or paired with your favourite meals. A reliable choice for those who value both quality and great taste.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "158 kcal",
+    "Protein": "5.9 g",
+    "Carbohydrate": "22.5 g",
+    "Total Sugars": "18.8 g",
+    "Added Sugars": "12.6 g",
+    "Total Fat": "4.8 g",
+    "Saturated Fat": "3.6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "11.9 mg",
+    "Sodium": "203 mg",
+    "Calcium": "212.7 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.\nRefrigerate before serving for best taste.\nOnce opened, keep refrigerated and consume within the recommended time frame.",
+   "manufacturerName": "Amrit Corp Limited (Unit",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Grand Cold Coffee - French Vanilla",
+  "handle": "grand-cold-coffee-french-vanilla",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332694_3-tata-coffee-grand-cold-coffee-french-vanilla-flavoured-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332694_3-tata-coffee-grand-cold-coffee-french-vanilla-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332694-2_3-tata-coffee-grand-cold-coffee-french-vanilla-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332694-3_3-tata-coffee-grand-cold-coffee-french-vanilla-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332694-4_3-tata-coffee-grand-cold-coffee-french-vanilla-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332694-5_3-tata-coffee-grand-cold-coffee-french-vanilla-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332694-6_3-tata-coffee-grand-cold-coffee-french-vanilla-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332694-7_3-tata-coffee-grand-cold-coffee-french-vanilla-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332694-8_2-tata-coffee-grand-cold-coffee-french-vanilla-flavoured-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "French Vanilla Cold Coffee – Crafted with care to deliver exceptional taste and quality, this product offers a delightful balance of flavour and freshness. Perfect for everyday enjoyment, it can be enjoyed on its own or paired with your favourite meals. A reliable choice for those who value both quality and great taste.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "180 ml",
+    "Energy": "154 kcal",
+    "Protein": "5.4 g",
+    "Carbohydrate": "22.5 g",
+    "Total Sugars": "19.6 g",
+    "Added Sugars": "12.6 g",
+    "Total Fat": "4.7 g",
+    "Saturated Fat": "3.5 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "11.7 mg",
+    "Sodium": "157 mg",
+    "Calcium": "189.8 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Amrit Corp Limited (Unit",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Grand Cold Coffee - Swiss Caramel",
+  "handle": "grand-cold-coffee-swiss-caramel",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332696_3-tata-coffee-grand-cold-coffee-swiss-caramel-flavoured-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332696_3-tata-coffee-grand-cold-coffee-swiss-caramel-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332696-2_3-tata-coffee-grand-cold-coffee-swiss-caramel-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332696-3_3-tata-coffee-grand-cold-coffee-swiss-caramel-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332696-4_3-tata-coffee-grand-cold-coffee-swiss-caramel-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332696-5_3-tata-coffee-grand-cold-coffee-swiss-caramel-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332696-6_3-tata-coffee-grand-cold-coffee-swiss-caramel-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332696-7_3-tata-coffee-grand-cold-coffee-swiss-caramel-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332696-8_2-tata-coffee-grand-cold-coffee-swiss-caramel-flavoured-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Swiss Caramel Cold Coffee – Crafted with care to deliver exceptional taste and quality, this product offers a delightful balance of flavour and freshness. Perfect for everyday enjoyment, it can be enjoyed on its own or paired with your favourite meals. A reliable choice for those who value both quality and great taste.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "180 ml",
+    "Energy": "154 kcal",
+    "Protein": "5.1 g",
+    "Carbohydrate": "22.6 g",
+    "Total Sugars": "19.4 g",
+    "Added Sugars": "12.6 g",
+    "Total Fat": "4.8 g",
+    "Saturated Fat": "3.4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "12.3 mg",
+    "Sodium": "210 mg",
+    "Calcium": "195.7 mg"
+   },
+   "storageInstructions": "*Store in a cool place\n*Tastes best when chilled",
+   "manufacturerName": "Amrit Corp Limited (Unit",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Grand Cold Coffee - Vietnamese",
+  "handle": "grand-cold-coffee-vietnamese",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363392_1-tata-coffee-grand-vietnamese-flavoured-cold-coffee.jpg"
+    },
+    "barcode": "8903754001380"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363392_1-tata-coffee-grand-vietnamese-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363392-2_1-tata-coffee-grand-vietnamese-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363392-3_1-tata-coffee-grand-vietnamese-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363392-4_1-tata-coffee-grand-vietnamese-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363392-5_1-tata-coffee-grand-vietnamese-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363392-6_1-tata-coffee-grand-vietnamese-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363392-7_1-tata-coffee-grand-vietnamese-flavoured-cold-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Grand Cold Coffee – Vietnamese is a rich and creamy ready-to-drink cold coffee inspired by the bold flavours of Vietnamese-style coffee. Smooth, indulgent, and refreshing, it offers a satisfying coffee experience anytime, anywhere. Best enjoyed chilled, it’s a convenient pick for coffee lovers on the go.",
+   "ingredients": "Double Toned Milk (80%), Water, Refined Sugar, Coffee Powder (0.85%), Stabilisers (INS 471, INS 407, INS 412), Acidity Regulator (INS 339 (ii)), Artificial (Coffee) Flavouring Substance, Nature-identical Flavouring Substances.",
+   "nutritionalInfo": {
+    "Energy": "89 kcal",
+    "Protein": "3.8 g",
+    "Carbohydrate": "12.5 g",
+    "Total Sugars": "10.5 g",
+    "Added Sugars": "7 g",
+    "Total Fat": "2.6 g",
+    "Saturated Fat": "1.8 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "5.3 mg",
+    "Sodium": "92.6 mg",
+    "Calcium": "97 mg"
+   },
+   "manufacturerName": "Amrit Corp Limited (Unit",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Grand Cold Coffee - Irish Cream",
+  "handle": "grand-cold-coffee-irish-cream",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363391_1-tata-coffee-grand-irish-cream-flavoured-cold-coffee.jpg"
+    },
+    "barcode": "8903754001403"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363391_1-tata-coffee-grand-irish-cream-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363391-2_1-tata-coffee-grand-irish-cream-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363391-3_1-tata-coffee-grand-irish-cream-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363391-4_1-tata-coffee-grand-irish-cream-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363391-5_1-tata-coffee-grand-irish-cream-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363391-6_1-tata-coffee-grand-irish-cream-flavoured-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363391-7_1-tata-coffee-grand-irish-cream-flavoured-cold-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Coffee Grand Cold Coffee – Irish Cream is a smooth and indulgent ready-to-drink cold coffee with rich, creamy notes. Crafted for a balanced and satisfying taste, it delivers a refreshing coffee experience that’s perfect for anytime enjoyment. Best served chilled, it’s a convenient choice for coffee lovers on the go.",
+   "ingredients": "Double Toned Milk (80%), Water, Refined Sugar, Coffee Powder (0.85%), Stabilisers (INS 471, INS 407, INS 412), Acidity Regulator (INS 339 (ii)), Artificial (Coffee) Flavouring Substance, Nature-identical flavouring Substance.",
+   "nutritionalInfo": {
+    "Energy": "87 kcal",
+    "Protein": "3.7 g",
+    "Carbohydrate": "12.2 g",
+    "Total Sugars": "10.6 g",
+    "Added Sugars": "7 g",
+    "Total Fat": "2.6 g",
+    "Saturated Fat": "1.9 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "5.2 mg",
+    "Sodium": "87.5 mg",
+    "Calcium": "89.9 mg"
+   },
+   "manufacturerName": "Amrit Corp Limited (Unit",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Classic Cold Brew Coffee",
+  "handle": "gold-classic-cold-brew-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314866_5-tata-coffee-gold-cold-brew-coffee-classic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314866_5-tata-coffee-gold-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314866-2_4-tata-coffee-gold-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314866-3_4-tata-coffee-gold-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314866-4_4-tata-coffee-gold-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314866-5_4-tata-coffee-gold-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314866-6_4-tata-coffee-gold-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314866-7_4-tata-coffee-gold-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314866-8_4-tata-coffee-gold-cold-brew-coffee-classic.jpg"
+   }
+  ],
+  "details": {
+   "description": "About the productIndulge in the rich and creamy taste of Cold Brew Coffee by Tata Coffee Gold, a ready-to-drink cold brew with delightful and reviving flavours. Carefully brewed with cold water to retain its smoothness and steeped for over 12 hours for a strong, rich and velvety taste. Each sip delivers a delicious mouthfeel with a burst of flavour, creating a revitalising experience. Stay refreshed and bring it home today! Tata Coffee Gold Cold Brew Coffee (Classic) is a refreshing and invigorating beverage option made from premium quality coffee beans. This classic cold brew coffee is carefully brewed to deliver a smooth and rich flavour profile with a subtle hint of sweetness. It is perfect for enjoying on a hot day or whenever you need a refreshing pick-me-up. Whether you're a coffee aficionado or simply looking for a delicious and convenient beverage option.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "200 ml",
+    "Energy": "116 kcal",
+    "Protein": "3.4g",
+    "Carbohydrate": "18.8g",
+    "Total Sugars": "16g",
+    "Added Sugars": "11.2g",
+    "Total Fat": "3g",
+    "Saturated Fat": "1.8g",
+    "Trans Fat": "0.18g",
+    "Cholesterol": "14 mg",
+    "Sodium": "108 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Hazelnut Cold Brew Coffee",
+  "handle": "gold-hazelnut-cold-brew-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "117",
+    "compare_at_price": "117",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314867_5-tata-coffee-gold-cold-brew-coffee-hazelnut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314867_5-tata-coffee-gold-cold-brew-coffee-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314867-2_4-tata-coffee-gold-cold-brew-coffee-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314867-3_4-tata-coffee-gold-cold-brew-coffee-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314867-4_4-tata-coffee-gold-cold-brew-coffee-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314867-5_4-tata-coffee-gold-cold-brew-coffee-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314867-6_4-tata-coffee-gold-cold-brew-coffee-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314867-7_4-tata-coffee-gold-cold-brew-coffee-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314867-8_4-tata-coffee-gold-cold-brew-coffee-hazelnut.jpg"
+   }
+  ],
+  "details": {
+   "description": "About the productIndulge in the rich and creamy delight of Tata Coffee Gold's Cold Brew Coffee. Crafted with premium quality coffee beans, this ready-to-drink beverage offers a delightful and reviving experience for coffee connoisseurs. Brewed with cold water to retain its smoothness and steeped for over 12 hours, each sip delivers a strong, velvety taste with a burst of flavour. Elevate your coffee routine with the Hazelnut flavoured variant, which combines the indulgent notes of hazelnuts with the refreshing chill of cold brew, creating a perfectly balanced and irresistible treat. Enjoy the convenience of this gourmet-quality cold coffee, perfect for any time of the day.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "200 ml",
+    "Energy": "116 kcal",
+    "Protein": "3.4g",
+    "Carbohydrate": "18.8g",
+    "Total Sugars": "18g",
+    "Added Sugars": "11.2g",
+    "Total Fat": "4.5g",
+    "Saturated Fat": "1.9g",
+    "trans Fat": "0.18g",
+    "Cholesterol": "14 mg",
+    "Sodium": "108 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Mocha Cold Brew Coffee",
+  "handle": "gold-mocha-cold-brew-coffee",
+  "vendor": "Tata Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314868_5-tata-coffee-gold-cold-brew-coffee-mocha.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314868_5-tata-coffee-gold-cold-brew-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314868-2_4-tata-coffee-gold-cold-brew-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314868-3_4-tata-coffee-gold-cold-brew-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314868-4_4-tata-coffee-gold-cold-brew-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314868-5_4-tata-coffee-gold-cold-brew-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314868-6_4-tata-coffee-gold-cold-brew-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314868-7_4-tata-coffee-gold-cold-brew-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314868-8_4-tata-coffee-gold-cold-brew-coffee-mocha.jpg"
+   }
+  ],
+  "details": {
+   "description": "About the productIndulge in the rich and creamy delight of Tata Coffee Gold's Cold Brew Coffee. Crafted to satisfy the cravings of the discerning coffee connoisseur, this ready-to-drink beverage offers a premium gourmet experience. Brewed with cold water to retain its smoothness and steeped for over 12 hours, each sip delivers a strong, velvety taste with a burst of flavour. Enjoy the indulgent Mocha-flavoured cold coffee, a perfect treat that'll delight all coffee lovers. Reimagine your coffee experience with this chilled, indulgent beverage that offers a delicious balance of smoothness, sweetness, and chocolatey goodness.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "200 ml",
+    "Energy": "116 kcal",
+    "Protein": "3.4g",
+    "Carbohydrate": "18.8g",
+    "Total Sugars": "18g",
+    "Added Sugars": "11.2g",
+    "Total Fat": "3g",
+    "Saturated Fat": "1.8g",
+    "Trans Fat": "0.18g",
+    "Cholesterol": "14 mg",
+    "Sodium": "108 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ }
+]

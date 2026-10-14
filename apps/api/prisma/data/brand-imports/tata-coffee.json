@@ -1,0 +1,312 @@
+{
+  "brand": "Tata Coffee",
+  "manufacturer": "Tata Consumer Products Ltd.",
+  "feed": "tata-coffee-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tata-coffee/logo-7f2f16a8.png",
+  "themeColor": "#6B1E2E",
+  "themeColorSecondary": "#C9A45C",
+  "namePrefix": "Tata Coffee ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Tata Coffee Grand": "Grand Instant Coffee"
+  },
+  "rules": [
+    {
+      "match": "^Grand\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Grand\\ Classic\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Grand\\ Premium\\ Instant\\ Coffee\\ \\-\\ Pouch$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Grand\\ Premium\\ Instant\\ Coffee\\ \\-\\ Jar$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Grand\\ Choco\\ Mocha\\ Flavour\\ Premium\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Grand\\ Hazelnut\\ Flavour\\ Premium\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Grand\\ Fast\\ Dissolving\\ Iced\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Original\\ Pure\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Hazelnut\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Vanilla\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Brownie\\ Flavoured\\ Premium\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Tiramisu\\ Flavoured\\ Premium\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Cafe\\ Specials\\ Cappuccino\\ Coffee\\ Mix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Cafe\\ Specials\\ Hazelnut\\ Coffee\\ Mix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^All\\-In\\-1\\ Protein\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^All\\-In\\-1\\ Caramel\\ Instant\\ Coffee\\-Chicory\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^All\\-In\\-1\\ Hazelnut\\ Instant\\ Coffee\\-Chicory\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Grand\\ Filter\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Quick\\ Filter\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Quick\\ Filter\\ Coorg\\ Kaapi\\ Decoction\\ Liquid$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Quick\\ Filter\\ Degree\\ Kaapi\\ Decoction\\ Liquid$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Quick\\ Filter\\ Chukku\\ Kaapi\\ Decoction\\ Liquid$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Quick\\ Filter\\ Araku\\ Valley\\ Coffee\\ Decoction\\ Liquid$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^All\\-In\\-1\\ Cold\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^All\\-In\\-1\\ Caramel\\ Cold\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^All\\-In\\-1\\ Hazelnut\\ Cold\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Cold\\ Coffee\\ Liquid\\ Concentrate\\ \\-\\ Classic$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Cold\\ Coffee\\ Liquid\\ Concentrate\\ \\-\\ Choco\\ Mocha$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Cold\\ Coffee\\ Liquid\\ Concentrate\\ \\-\\ Salted\\ Caramel$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Grand\\ Cold\\ Coffee\\ \\-\\ Belgian\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Grand\\ Cold\\ Coffee\\ \\-\\ French\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Grand\\ Cold\\ Coffee\\ \\-\\ Swiss\\ Caramel$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Grand\\ Cold\\ Coffee\\ \\-\\ Vietnamese$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Grand\\ Cold\\ Coffee\\ \\-\\ Irish\\ Cream$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Gold\\ Classic\\ Cold\\ Brew\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Gold\\ Hazelnut\\ Cold\\ Brew\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Gold\\ Mocha\\ Cold\\ Brew\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    }
+  ]
+}
