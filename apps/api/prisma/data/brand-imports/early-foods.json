@@ -1,0 +1,142 @@
+{
+  "brand": "Early Foods",
+  "manufacturer": "Early Foods Pvt. Ltd.",
+  "feed": "early-foods-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/early-foods/logo-40fb3ee4.png",
+  "themeColor": "#5B2A86",
+  "themeColorSecondary": "#F47B20",
+  "namePrefix": "Early Foods ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ajwain\\ \\&\\ Jeera\\ Teething\\ Sticks$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Teething Biscuits"
+      ]
+    },
+    {
+      "match": "^Dates\\ Powder\\ Natural\\ Sweetener$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Dry\\ Fruits\\ \\&\\ Seeds\\ Powder$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Dry\\ Fruits\\ \\&\\ Seeds\\ Millet\\ Jaggery\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Foxtail\\ Millet\\ \\&\\ Almond\\ Jaggery\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Jowar\\ Millet\\ \\&\\ Almond\\ Jaggery\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Millet\\ Jaggery\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Ragi\\ \\&\\ Amaranth\\ Millet\\ Jaggery\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Ragi\\ \\&\\ Chocolate\\ Millet\\ Jaggery\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Folic\\ Support\\ Foxtail\\ Millet\\ \\&\\ Walnut\\ Jaggery\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Calcium\\+\\ Ragi\\ \\&\\ Sesame\\ Jaggery\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Jowar\\ Millet\\ Rusk$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Organic\\ Rice\\ \\&\\ Moong\\ Khichdi\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Whole\\ Wheat,\\ Almond\\ \\&\\ Dates\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sprouted\\ Ragi,\\ Almond\\ \\&\\ Dates\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Sathu\\ Maavu\\ Almond\\ \\&\\ Dates\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    }
+  ]
+}
