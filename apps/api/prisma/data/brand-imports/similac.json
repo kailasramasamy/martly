@@ -1,0 +1,128 @@
+{
+  "brand": "Similac (Abbott)",
+  "manufacturer": "Abbott India Ltd.",
+  "feed": "similac-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/similac/logo-93ce77ec.png",
+  "themeColor": "#1D4F91",
+  "themeColorSecondary": "#6CACE4",
+  "namePrefix": "Similac ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Similac Advance Stage 1 Infant Formula": "Advance Stage 1 Infant Formula"
+  },
+  "rules": [
+    {
+      "match": "^Advance\\ Stage\\ 1\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Advance\\ Stage\\ 2\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Advance\\ Stage\\ 3\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Advance\\ Stage\\ 4\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Classic\\ Stage\\ 1\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Classic\\ Stage\\ 2\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Classic\\ Stage\\ 3\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Classic\\ Stage\\ 4\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Plus\\ Stage\\ 1\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Plus\\ Stage\\ 2\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Plus\\ Stage\\ 3\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Isomil\\ Soy\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Total\\ Comfort\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^NeoSure\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    }
+  ]
+}
