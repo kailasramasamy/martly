@@ -1,0 +1,86 @@
+{
+  "brand": "Dexolac",
+  "manufacturer": "Nutricia International Pvt. Ltd. (Danone)",
+  "feed": "dexolac-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/dexolac/logo-985ef6e2.png",
+  "themeColor": "#00A0DF",
+  "themeColorSecondary": "#1B3D8F",
+  "namePrefix": "Dexolac ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Stage\\ 1\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Stage\\ 1\\ Infant\\ Formula\\ Tin$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Stage\\ 2\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Stage\\ 3\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Stage\\ 4\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Premium\\ Stage\\ 2\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Premium\\ Stage\\ 3\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Special\\ Care\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Nusobee\\ Casein\\ Infant\\ Milk\\ Substitute$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    }
+  ]
+}
