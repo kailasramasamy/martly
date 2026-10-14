@@ -1,0 +1,70 @@
+{
+  "brand": "JK Copier",
+  "manufacturer": "JK Paper Ltd.",
+  "feed": "jk-copier-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/jk-copier/logo-b8aa0bbc.png",
+  "themeColor": "#D71920",
+  "themeColorSecondary": "#1F3A93",
+  "namePrefix": "JK Copier ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^A4\\ Copier\\ Paper\\ \\-\\ 75\\ GSM$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Easy\\ A4\\ Copier\\ Paper\\ \\-\\ 70\\ GSM$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Plus\\ A4\\ Antimicrobial\\ Paper\\ \\-\\ 75\\ GSM$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Excel\\ Bond\\ A4\\ Paper\\ \\-\\ 85\\ GSM$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Excel\\ Bond\\ A4\\ Paper\\ \\-\\ 90\\ GSM$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Foolscap\\ Copier\\ Paper\\ \\-\\ 75\\ GSM$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A3\\ Copier\\ Paper\\ \\-\\ 75\\ GSM$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    }
+  ]
+}
