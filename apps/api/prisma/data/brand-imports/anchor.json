@@ -1,0 +1,118 @@
+{
+  "brand": "Anchor (Panasonic)",
+  "manufacturer": "Panasonic Life Solutions India Pvt. Ltd.",
+  "feed": "anchor-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/anchor/logo-2e1b6e0c.png",
+  "themeColor": "#E4002B",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Anchor ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^3\\ Pin\\ Dyna\\ Flexi\\ Cord\\ 4m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Dyna\\ Flexi\\ Cord\\ 16A\\ 4m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^3\\ Socket\\ Extension\\ Board\\ 6A\\ 4m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Flexi\\ Cord\\ Reel\\ 8m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Flexi\\ Cord\\ Extension\\ Board\\ 6A\\ 4m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^4\\ Socket\\ Extension\\ Board\\ with\\ LED\\ Indicator$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Spike\\ Guard\\ Extension\\ Board\\ 6\\ Socket$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Spike\\ Protector\\ Extension\\ Board\\ 4\\ Socket$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Spike\\ Guard\\ Extension\\ Board\\ 4\\ Socket$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Power\\ Strip\\ Extension\\ Board\\ 6A$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Deluxe\\ Multiplug\\ Adaptor\\ 6A$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Multi\\ Plug\\ Adaptor\\ 6A$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Pilot\\ Multiplug\\ Adaptor\\ 16A$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    }
+  ]
+}
