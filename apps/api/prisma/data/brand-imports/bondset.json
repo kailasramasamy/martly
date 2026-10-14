@@ -1,0 +1,30 @@
+{
+  "brand": "Bondset",
+  "manufacturer": "Astral Ltd.",
+  "feed": "bondset-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bondset/logo-76b2f77a.png",
+  "themeColor": "#1F3A93",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Bondset ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Super\\ Fast\\ Epoxy\\ Putty$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Sanitary\\ Under\\ Water\\ Epoxy\\ Putty$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    }
+  ]
+}
