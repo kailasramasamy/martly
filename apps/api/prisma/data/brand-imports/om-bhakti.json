@@ -1,0 +1,302 @@
+{
+  "brand": "Om Bhakti",
+  "manufacturer": "Om Bhakti Samagri Solutions Pvt. Ltd.",
+  "feed": "om-bhakti-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/om-bhakti/logo-f18575d3.png",
+  "themeColor": "#8B1E1E",
+  "themeColorSecondary": "#F2A900",
+  "namePrefix": "Om Bhakti ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bhimseni\\ Camphor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Tablets$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Camphor\\ for\\ Puja$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Pure\\ Camphor\\ Big\\ Tablets$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Flower\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Long\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Pure\\ Cotton\\ Diya\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Ghee\\ Batti\\ Diya\\ Ready\\ to\\ Light$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Ghee\\ Batti\\ Diya\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Ghee\\ Diya\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Diya\\ \\&\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Pancha\\ Deepa\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Ghee\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Chameli\\ Scented\\ Ghee\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Rose\\ Scented\\ Ghee\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Sandal\\ Scented\\ Ghee\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Tulsi\\ Scented\\ Ghee\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ T\\ Light\\ Diya\\ Ghee\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Ladi\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Long\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Twisted\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Puja\\ Ghee$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Puja\\ Ghee\\ Jasmine$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Sambrani\\ Cup\\ Dhoop$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Sankalp\\ Sambrani\\ Cone\\ Dhoop$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Kumkum$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Haldi\\ for\\ Puja$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Naivedya\\ Yellu\\ Bella$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Offerings",
+        "Mishri & Batasha"
+      ]
+    },
+    {
+      "match": "^Naivedya\\ Til\\ Laddu$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Powder\\ White$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Kit\\ Assorted\\ Colours$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Draw\\ Rangoli\\ Kit$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Puja\\ Kit$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Diwali\\ Festival\\ Kit$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Sri\\ Kashi\\ Vishwanath\\ Prasadam\\ Kit$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    }
+  ]
+}
