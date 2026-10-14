@@ -1,0 +1,86 @@
+{
+  "brand": "Blep",
+  "manufacturer": "Victoria Cookwell Specialities Pvt Ltd",
+  "feed": "blep-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/blep/logo-6642de1f.png",
+  "themeColor": "#4FC1B4",
+  "themeColorSecondary": "#F27E8A",
+  "namePrefix": "Blep ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Natural\\ Cat\\ Food\\ \\-\\ Tun\\-Tuna,\\ Slurpy\\ Sardine\\ \\&\\ Mackerel\\ Makarena$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Natural\\ Chicken\\ Broth\\ for\\ Dogs\\ \\&\\ Cats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Natural\\ Lamb\\ Broth\\ for\\ Dogs\\ \\&\\ Cats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Natural\\ Chicken\\ Dog\\ Food\\ \\-\\ Variety\\ Pack$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Natural\\ Dog\\ Food\\ \\-\\ Assorted\\ Pack$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Natural\\ Dog\\ Food\\ \\-\\ Chicken\\ Rice\\ Pawer$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Natural\\ Dog\\ Food\\ \\-\\ Fish\\ Beans\\ Pawer$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Natural\\ Dog\\ Food\\ \\-\\ Lamb\\ Blueberry\\ Pawer$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Natural\\ Dog\\ Food\\ \\-\\ Paneer\\ Quinoa\\ Pawer$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    }
+  ]
+}
