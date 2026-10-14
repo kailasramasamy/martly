@@ -1,0 +1,47 @@
+[
+ {
+  "title": "LCP Infant Formula Powder",
+  "handle": "lcp-infant-formula-powder",
+  "vendor": "Neocate",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "3300",
+    "compare_at_price": "3300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005002_3-neocate-lcp-infant-formula-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005002_3-neocate-lcp-infant-formula-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005002-2_2-neocate-lcp-infant-formula-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005002-3_2-neocate-lcp-infant-formula-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005002-4_2-neocate-lcp-infant-formula-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005002-5_2-neocate-lcp-infant-formula-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005002-6_2-neocate-lcp-infant-formula-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005002-7_2-neocate-lcp-infant-formula-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005002-8_2-neocate-lcp-infant-formula-powder.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
