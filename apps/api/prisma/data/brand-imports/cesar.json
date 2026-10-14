@@ -1,0 +1,46 @@
+{
+  "brand": "Cesar (Mars)",
+  "manufacturer": "Mars International India Pvt. Ltd.",
+  "feed": "cesar-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cesar/logo-75c2e02e.png",
+  "themeColor": "#6E2C8F",
+  "themeColorSecondary": "#C8A24B",
+  "namePrefix": "Cesar ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Sasami\\ Adult\\ Wet\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Sasami\\ \\&\\ Vegetables\\ in\\ Jelly\\ Adult\\ Wet\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Sasami\\ with\\ Cheese\\ \\&\\ Vegetables\\ in\\ Jelly\\ Adult\\ Wet\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Sasami\\ with\\ Whitefish\\ \\&\\ Vegetables\\ in\\ Jelly\\ Adult\\ Wet\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    }
+  ]
+}
