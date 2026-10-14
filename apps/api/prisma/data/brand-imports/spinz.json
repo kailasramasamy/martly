@@ -1,0 +1,118 @@
+{
+  "brand": "Spinz",
+  "manufacturer": "CavinKare Pvt. Ltd.",
+  "feed": "spinz-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/spinz/logo-bd16b436.png",
+  "themeColor": "#D6337F",
+  "themeColorSecondary": "#6A2C91",
+  "namePrefix": "Spinz ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^BB\\ Brightening\\ \\&\\ Beauty\\ Face\\ Talc\\ \\-\\ Radiant\\ Pink$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^BB\\ Brightening\\ \\&\\ Beauty\\ Fairness\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Detan\\ Face\\ Pack\\ with\\ Besan,\\ Honey\\ \\&\\ Kojic$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Enchante\\ Perfumed\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Exotic\\ Perfumed\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Enchante\\ Perfumed\\ Deo$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Exotic\\ Perfumed\\ Deo\\ \\-\\ Bulgarian\\ Rose$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Black\\ Magic\\ Perfumed\\ Deo$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Blue\\ Bounce\\ Perfumed\\ Deo\\ \\-\\ Tuberose$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Mystic\\ White\\ Perfumed\\ Deo\\ \\-\\ Lily$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Orange\\ Zest\\ Perfumed\\ Deo$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Pristine\\ Green\\ Perfumed\\ Deo$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Yellow\\ Blossom\\ Perfumed\\ Deo\\ \\-\\ Frangipani$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    }
+  ]
+}
