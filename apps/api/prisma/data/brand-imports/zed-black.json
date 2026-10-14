@@ -1,0 +1,80 @@
+{
+  "brand": "Zed Black",
+  "manufacturer": "Mysore Deep Perfumery House",
+  "feed": "zed-black-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/zed-black/logo-d8c76515.png",
+  "themeColor": "#000000",
+  "themeColorSecondary": "#D4AF37",
+  "namePrefix": "Zed Black ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Zed Black Manthan Premium Dhoop Sticks": "Manthan Chandan Dhoop Sticks"
+  },
+  "rules": [
+    {
+      "match": "^3\\-in\\-1\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Sandal\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Zipper\\ Parfum\\ 1M\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Incense\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Chandan\\ Dhoop\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Manthan\\ Chandan\\ Dhoop\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Manthan\\ Guggal\\ Dhoop\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Parfum\\ 1M\\ Dhoop\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    }
+  ]
+}
