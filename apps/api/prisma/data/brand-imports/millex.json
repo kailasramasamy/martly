@@ -1,0 +1,78 @@
+{
+  "brand": "Millex",
+  "manufacturer": "Samanam Foods Pvt. Ltd.",
+  "feed": "millex-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/millex/logo-8ce09650.png",
+  "themeColor": "#2E2E2E",
+  "themeColorSecondary": "#C0392B",
+  "namePrefix": "Millex ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Healthy\\ Millet\\ Mix\\ Powder\\ \\-\\ Sprouted\\ Grains\\ \\&\\ Dry\\ Fruits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Porridge & Daliya"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Millet\\ Mix\\ Powder\\ with\\ Arogyamrutha\\ Churna$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Porridge & Daliya"
+      ]
+    },
+    {
+      "match": "^Millets\\ Rava\\ Idli\\ Instant\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Multi\\ Millets\\ Dosa\\ Instant\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Multi\\ Millets\\ Upma\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Mother\\ Root\\ Baby\\ Food$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Mother\\ Root\\ Baby\\ Food\\ \\-\\ Carrot\\ \\&\\ Almond$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Mother\\ Root\\ Baby\\ Food\\ \\-\\ Fruits\\ \\&\\ Nuts$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    }
+  ]
+}
