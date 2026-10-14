@@ -1,0 +1,182 @@
+{
+  "brand": "Glenand",
+  "manufacturer": "Glenand Group Of Companies",
+  "feed": "glenand-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/glenand/logo-4d232b95.png",
+  "themeColor": "#D7182A",
+  "themeColorSecondary": "#1E3C8C",
+  "namePrefix": "Glenand ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cat\\ Comfort\\ Bowl\\ \\-\\ 16\\ oz$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Bowls & Feeders"
+      ]
+    },
+    {
+      "match": "^Cat\\ Comfort\\ Bowl\\ \\-\\ 96\\ oz$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Bowls & Feeders"
+      ]
+    },
+    {
+      "match": "^Classic\\ Steel\\ Dog\\ Bowl\\ \\-\\ Small$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Bowls & Feeders"
+      ]
+    },
+    {
+      "match": "^Classic\\ Steel\\ Dog\\ Bowl\\ \\-\\ Medium$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Bowls & Feeders"
+      ]
+    },
+    {
+      "match": "^Classic\\ Steel\\ Dog\\ Bowl\\ \\-\\ Large$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Bowls & Feeders"
+      ]
+    },
+    {
+      "match": "^Cat\\ Litter$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Litter & Litter Tray"
+      ]
+    },
+    {
+      "match": "^Cat\\ Litter\\ Natural\\ Bentonite\\ \\-\\ Lemon$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Litter & Litter Tray"
+      ]
+    },
+    {
+      "match": "^Cat\\ Litter\\ Aura\\ Natural\\ Bentonite$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Litter & Litter Tray"
+      ]
+    },
+    {
+      "match": "^Dog\\ Chews$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Pet\\ Chews\\ for\\ Dogs$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Bikkis\\ Dog\\ Biscuits$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Crunchys\\ Dog\\ Biscuits$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Dog\\ Munchies\\ \\-\\ Beef$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Dog\\ Munchies\\ \\-\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Dog\\ Munchies\\ \\-\\ Lamb$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Dog\\ Munchies\\ \\-\\ Mixed$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Dog\\ Munchies\\ \\-\\ Natural$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Pet\\ Biscuits\\ \\-\\ Liver\\ \\&\\ Meat$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Knotted\\ Bone\\ Dog\\ Chew$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Premium\\ Chicken\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Skin\\ \\&\\ Coat\\ Dog\\ Biscuits$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    }
+  ]
+}
