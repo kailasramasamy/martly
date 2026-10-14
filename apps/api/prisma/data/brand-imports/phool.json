@@ -1,0 +1,262 @@
+{
+  "brand": "Phool",
+  "manufacturer": "Kanpur Flowercycling Pvt. Ltd.",
+  "feed": "phool-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/phool/logo-0cc37b9e.png",
+  "themeColor": "#D4AF37",
+  "themeColorSecondary": "#5A5A5A",
+  "namePrefix": "Phool ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ayodhya\\ Soumya\\ Chandan\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Citronella\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Indian\\ Rose\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Indian\\ Rose\\ Bambooless\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^White\\ Cedar\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Oudh\\ Bambooless\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Sandalwood\\ Bambooless\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Chandan\\ Incense\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Nagchampa\\ Incense\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Sandalwood\\ Incense\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Badrinath\\ Kesar\\ Chandan\\ Dhoop\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Kashi\\ Vishwanath\\ Sandalwood\\ Dhoop\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Kedarnath\\ Govind\\ Gulab\\ Dhoop\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Citronella\\ Dhoop\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Indian\\ Rose\\ Incense\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Incense\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Incense\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Nagchampa\\ Incense\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^White\\ Cedar\\ Incense\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Sambrani\\ Loban\\ Havan\\ Cups$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Sandalwood\\ Havan\\ Dhoop\\ Cups$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Sports\\ Car\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Basilicum\\ Car\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Modern\\ Dusk\\ Car\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Tangerine\\ Noir\\ Car\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Basilicum\\ Reed\\ Diffuser\\ Set$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Ruby\\ Reed\\ Diffuser\\ Set$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Zingy\\ Lemon\\ Reed\\ Diffuser\\ Set$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Natural\\ Mosquito\\ Repellent\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Natural\\ Mosquito\\ Repellent\\ Room\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    }
+  ]
+}
