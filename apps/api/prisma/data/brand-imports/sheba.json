@@ -1,0 +1,248 @@
+{
+  "brand": "Sheba (Mars)",
+  "manufacturer": "Mars International India Pvt. Ltd.",
+  "feed": "sheba-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sheba/logo-470dc6f3.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#C9A45C",
+  "namePrefix": "Sheba ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Sheba Premium Wet Cat Food - Chicken": "Deluxe Wet Cat Food - Succulent Chicken"
+  },
+  "rules": [
+    {
+      "match": "^Deluxe\\ Wet\\ Cat\\ Food\\ \\-\\ Succulent\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Deluxe\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ \\&\\ Prawns$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Deluxe\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ \\&\\ Snapper$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Deluxe\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ Fillet$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Fine\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ with\\ Tuna\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Fine\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ Loaf$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Fine\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna,\\ Pumpkin\\ \\&\\ Carrot\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ Loaf$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ \\&\\ Salmon\\ Loaf$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Pate\\ Wet\\ Cat\\ Food\\ \\-\\ Katsuo$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Pate\\ Wet\\ Cat\\ Food\\ \\-\\ Maguro$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Pate\\ Wet\\ Cat\\ Food\\ \\-\\ Sasami$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Soft\\ Pate\\ Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Maguro$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Rich\\ Wet\\ Cat\\ Food\\ \\-\\ Maguro\\ \\&\\ Bream$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Rich\\ Wet\\ Cat\\ Food\\ \\-\\ Maguro$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Rich\\ Wet\\ Cat\\ Food\\ \\-\\ Fish\\ with\\ Sasami$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Rich\\ Wet\\ Cat\\ Food\\ \\-\\ Fish\\ with\\ Dry\\ Skipjack$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Rich\\ Wet\\ Cat\\ Food\\ \\-\\ Sasami$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Rich\\ Wet\\ Cat\\ Food\\ \\-\\ Skipjack\\ \\&\\ Salmon$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Rich\\ Wet\\ Cat\\ Food\\ \\-\\ Whitefish\\ \\&\\ Kanikama$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Soup\\ with\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Soup\\ with\\ Tuna$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Irresistible\\ Dry\\ Cat\\ Food\\ \\-\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Irresistible\\ Dry\\ Cat\\ Food\\ \\-\\ Salmon$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Duo\\ Cat\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Melty\\ Spoons\\ Lickable\\ Cat\\ Treats\\ \\-\\ Creamy\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Melty\\ Spoons\\ Lickable\\ Cat\\ Treats\\ \\-\\ Maguro$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Melty\\ Maguro\\ Selection\\ Cat\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Melty\\ Sasami\\ Selection\\ Cat\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    }
+  ]
+}
