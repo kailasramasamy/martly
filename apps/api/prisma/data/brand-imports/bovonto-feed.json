@@ -1,0 +1,65 @@
+[
+ {
+  "title": "Bovonto",
+  "handle": "bovonto",
+  "vendor": "Kalimark",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40013024_4-bovonto-carbonated-beverage-sweetened.jpg"
+    },
+    "barcode": "8908014480073"
+   },
+   {
+    "title": "1.5L",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40034938_4-bovonto-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40013024_4-bovonto-carbonated-beverage-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40013024-2_4-bovonto-carbonated-beverage-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40013024-3_4-bovonto-carbonated-beverage-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40013024-4_4-bovonto-carbonated-beverage-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40013024-5_4-bovonto-carbonated-beverage-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40034938_4-bovonto-soft-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the unique and delightful taste of Bovonto, a carbonated soft drink that offers a perfect balance of classic sweetness and a captivating flavour profile. Crafted with the finest ingredients, Bovonto combines fruity notes with a hint of spices, creating a refreshing and fizzy drinking experience that is perfect for quenching your thirst on a hot day or enjoying as a special treat. Close your eyes and experience the happiness that comes from the perfect balance of fizziness and authentic flavour. Bovonto is a beverage that stands out from the rest, offering a delightful and memorable drinking experience that your guests will love. Whether you're looking to enjoy it on its own or as part of a gathering, one glass of Bovonto is never enough.",
+   "ingredients": "Carbonated Water, Sugar, Citric Acid E330, And Contains Permitted Natural Colour 150D And Synthetic Food Colour E133, 122, 124, 102, Contain Permitted Class Ii Preservatives E211",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100ml",
+    "Carbohydrate": "17 g",
+    "Sugar": "17 g",
+    "Protein": "0 g",
+    "Fat": "0 g",
+    "Energy": "68 Kcals"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Tastes best when chilled",
+   "countryOfOrigin": "India"
+  }
+ }
+]

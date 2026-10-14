@@ -1,0 +1,22 @@
+{
+  "brand": "Kalimark",
+  "manufacturer": "Kali Aerated Water Works",
+  "feed": "bovonto-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bovonto/logo-02b510e4.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bovonto$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Cola"
+      ]
+    }
+  ]
+}
