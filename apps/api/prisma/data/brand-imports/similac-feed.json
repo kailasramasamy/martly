@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40018759_19-similac-advance-stage-1-formula-1-up-to-six-months.jpg"
-    }
+    },
+    "barcode": "8904145912667"
    },
    {
     "title": "800g",
@@ -51,7 +52,63 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40018759-8_7-similac-advance-stage-1-formula-1-up-to-six-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Similac Advance Stage 1 is a spray-dried infant milk substitute for a newborn baby up to 6 months. Similac Advance is an iron-fortified feeding formula with a nutrient composition clinically shown to support infants’ growth and development.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "489 kcal",
+    "KJ": "2046",
+    "Protein": "11.50 g",
+    "Fat (Total fat)": "21.80 g",
+    "Milk fat": "12.0 g",
+    "Saturated fatty acids": ">15.00 g",
+    "Monounsaturated fatty acids": "4.50 g",
+    "Polyunsaturated fatty acids": "2.30 g",
+    "Trans fatty acids": ">0.63 g",
+    "Cholesterol": "52 mg",
+    "Linoleic acid (Omega 6)": "2100 mg",
+    "Alpha Linolenic acid (Omega 3)": "280 mg",
+    "Carbohydrate": "61.80 g",
+    "Total sugars": "47.00 g",
+    "Added sugars": "32.00 g",
+    "Taurine": "35.0 mg",
+    "Carnitine": "6.3 mg",
+    "Nucleotide equivalents": "55 mg",
+    "Vitamin A": "1249 IU",
+    "mcg RE": "375",
+    "Vitamin D2": "268 IU",
+    "mcg": "6.70",
+    "Vitamin E": "4.2 IU",
+    "mg ?-TE": "2.8",
+    "Vitamin K": "8.5 mcg",
+    "Vitamin C": "30.0 mg",
+    "Folic acid": "21 mcg",
+    "Dietary Folate equivalent": "35 mcg",
+    "Vitamin B1 (Thiamin)": "225 mcg",
+    "Vitamin B2 (Riboflavin)": "450 mcg",
+    "Vitamin B6 (Pyridoxine)": "120 mcg",
+    "Vitamin B12": "0.30 mcg",
+    "Niacin equivalent": "4.5 mg",
+    "Pantothenic acid": "2.30 mg",
+    "Biotin": "8.5 mcg",
+    "Choline": "85.0 mg",
+    "Sodium": "140 mg",
+    "Potassium": "500 mg",
+    "Chloride": "280 mg",
+    "Calcium": "379 mg",
+    "Phosphorus": "230 mg",
+    "Magnesium": "34.0 mg",
+    "Iron": "3.40 mg",
+    "Zinc": "3.00 mg",
+    "Manganese": "6.0 mcg",
+    "Copper": "180 mcg",
+    "Selenium": "6.0 mcg",
+    "Iodine": "100.0 mcg"
+   },
+   "manufacturerName": "Abbott Healthcare Pvt Ltd",
+   "countryOfOrigin": "Ireland"
+  }
  },
  {
   "title": "Advance Stage 2 Follow-Up Formula",
@@ -67,7 +124,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40018760_16-similac-advance-stage-2-formula-after-6-months.jpg"
-    }
+    },
+    "barcode": "8904145912674"
    },
    {
     "title": "800g",
@@ -105,7 +163,63 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40018760-8_5-similac-advance-stage-2-formula-after-6-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Similac Advance stage 2 is a spray dried infant milk substitute for newborn baby from 6 to 12 months. Similac Advance is iron-fortified feeding formula with nutrient composition clinically shown to support infants’ growth and development.",
+   "usageInstructions": "Standard reconstitution is one packed scoop (approximately 5.1 g) powder for each 30 ml (1 fl oz) of water or 149.1 g of powder mixed with sufficient water to yield 1 Litre of product.Infants above 6 months should receive supplemental food in addition to formula.\nConsult your baby's physician for advice",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "5.1g",
+    "Energy": "476 kcal",
+    "kJ": "1991",
+    "Protein": "14.70 g",
+    "Fat": "19.50 g",
+    "Saturated fatty acids": ">10.00 g",
+    "Monounsaturated fatty acids": "6.50 g",
+    "Polyunsaturated fatty acids": "2.50 g",
+    "Trans fatty acids": ">0.38 g",
+    "Cholesterol": "20 mg",
+    "Linoleic acid (Omega 6)": "2179 mg",
+    "Alpha Linolenic acid (Omega 3)": "272 mg",
+    "Carbohydrate": "60.80 g",
+    "Total sugars": "40.00 g",
+    "Added sugars": "30.60 g",
+    "Taurine": "36.0 mg",
+    "Nucleotide equivalents": "48.0 mg",
+    "Vitamin A": "1166 IU",
+    "mcg RE": "350",
+    "Vitamin D2": "280 IU",
+    "mcg": "7.00",
+    "Vitamin E": "4.5 IU",
+    "mg ?-TE": "3.0",
+    "Vitamin K": "8.0 mcg",
+    "Vitamin C": "30.0 mg",
+    "Folic acid": "16 mcg",
+    "Dietary Folate equivalent": "27 mcg",
+    "Vitamin B1 (Thiamin)": "250 mcg",
+    "Vitamin B2 (Riboflavin)": "450 mcg",
+    "Vitamin B6 (Pyridoxine)": "200 mcg",
+    "Vitamin B12": "0.50 mcg",
+    "Niacin equivalent": "4.50 mg",
+    "Pantothenic acid": "2.30 mg",
+    "Biotin": "8.0 mcg",
+    "Choline": "50.0 mg",
+    "Sodium": "150 mg",
+    "Potassium": "540 mg",
+    "Chloride": "330 mg",
+    "Calcium": "487 mg",
+    "Phosphorus": "280 mg",
+    "Magnesium": "37.0 mg",
+    "Iron": "3.80 mg",
+    "Zinc": "3.0 mg",
+    "Manganese": "9.0 mcg",
+    "Copper": "190 mcg",
+    "Selenium": "6.0 mcg",
+    "Iodine": "107.0 mcg"
+   },
+   "manufacturerName": "Abbott Healthcare Pvt Ltd",
+   "countryOfOrigin": "Ireland"
+  }
  },
  {
   "title": "Advance Stage 3 Follow-Up Formula",
@@ -121,7 +235,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40068296_10-similac-advance-stage-3-formula-from-12-to-24-months.jpg"
-    }
+    },
+    "barcode": "8904145911240"
    }
   ],
   "images": [
@@ -150,7 +265,58 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40068296-8_4-similac-advance-stage-3-formula-from-12-to-24-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Similac Advance stage 3 is a spray dried infant milk substitute for newborn baby from 12 to 18 months. Similac Advance is iron-fortified feeding formula with nutrient composition clinically shown to support infants’ growth and development.",
+   "usageInstructions": "Standard reconstitution is one packed scoop (approximately 5.1 g) powder for each 30 ml (1 fl oz) of water or 149.1 g of powder mixed with sufficient water to yield 1 Litre of product.\nInfants above 6 months should receive supplemental food in addition to formula.\nConsult your baby's physician for advice",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "476 kcal",
+    "Protein": "14.70 g",
+    "Fat": "19.50 g",
+    "Saturated fatty acids": ">10.00 g",
+    "Monounsaturated fatty acids": "6.50 g",
+    "Polyunsaturated fatty acids": "2.50 g",
+    "Trans fatty acids": ">0.38 g",
+    "Cholesterol": "20 mg",
+    "Linoleic acid (Omega 6)": "2179 mg",
+    "Alpha Linolenic acid (Omega 3)": "272 mg",
+    "Carbohydrate": "60.80 g",
+    "Total sugars": "40.00 g",
+    "Added sugars": "30.60 g",
+    "Taurine": "36.0 mg",
+    "Nucleotide equivalents": "48.0 mg",
+    "Vitamin A": "1166 IU",
+    "Vitamin D2": "280 IU",
+    "Vitamin E": "4.5 IU",
+    "Vitamin K": "8.0 mcg",
+    "Vitamin C": "30.0 mg",
+    "Folic acid": "16 mcg",
+    "Dietary Folate equivalent": "27 mcg",
+    "Vitamin B1 (Thiamin)": "250 mcg",
+    "Vitamin B2 (Riboflavin)": "450 mcg",
+    "Vitamin B6 (Pyridoxine)": "200 mcg",
+    "Vitamin B12": "0.50 mcg",
+    "Niacin equivalent": "4.50 mg",
+    "Pantothenic acid": "2.30 mg",
+    "Biotin": "8.0 mcg",
+    "Choline": "50.0 mg",
+    "Sodium": "150 mg",
+    "Potassium": "540 mg",
+    "Chloride": "330 mg",
+    "Calcium": "480 mg",
+    "Phosphorus": "310 mg",
+    "Magnesium": "40.0 mg",
+    "Iron": "4.10 mg",
+    "Zinc": "3.0 mg",
+    "Manganese": "9.0 mcg",
+    "Copper": "190 mcg",
+    "Selenium": "6.0 mcg",
+    "Iodine": "107.0 mcg"
+   },
+   "manufacturerName": "Abbott Healthcare Pvt Ltd",
+   "countryOfOrigin": "Ireland"
+  }
  },
  {
   "title": "Advance Stage 4 Follow-Up Formula",
@@ -166,7 +332,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40364654_2-similac-advance-stage-4-follow-up-formula-for-toddlers-aged-18-to-24-months.jpg"
-    }
+    },
+    "barcode": "8904145912926"
    }
   ],
   "images": [
@@ -192,7 +359,57 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364654-7_1-similac-advance-stage-4-follow-up-formula-for-toddlers-aged-18-to-24-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Similac Advance Stage 4 Follow-Up Formula is a specially formulated nutrition drink designed for toddlers aged 18 to 24 months. Enriched with essential nutrients, vitamins, and minerals, it helps support healthy growth, brain development, and immunity during this important stage. The formula provides balanced nutrition to complement a toddler’s daily diet, helping meet their evolving nutritional needs for active development and overall well-being.",
+   "ingredients": "Lactose, skimmed milk powder, edible vegetable oils (high oleic sunflower oil, coconut oil, soy oil), maltodextrin, whey protein concentrate, sodium caseinate, minerals, vitamins, nucleotides, emulsifier (soy lecithin), taurine, and antioxidant (mixed tocopherols).",
+   "nutritionalInfo": {
+    "Energy": "478 kcal",
+    "Protein": "14.70 g",
+    "Total Fat": "19.50 g",
+    "Saturated Fatty Acids": "10.00 g",
+    "Monounsaturated Fatty Acids": "6.50 g",
+    "Polyunsaturated Fatty Acids": "2.50 g",
+    "Trans Fatty Acids": "0.38 g",
+    "Cholesterol": "20 mg",
+    "Linoleic Acid (Omega-6)": "2179 mg",
+    "Alpha Linolenic Acid (Omega-3)": "272 mg",
+    "Carbohydrate": "60.80 g",
+    "Total Sugars": "40.00 g",
+    "Added Sugars": "30.60 g",
+    "Taurine": "36 mg",
+    "Nucleotide Equivalents": "48 mg",
+    "Vitamin A": "1166 mcg RE",
+    "Vitamin D2": "350 IU",
+    "Vitamin E": "7.00 mg ?-TE",
+    "Vitamin K": "4.5 mcg",
+    "Vitamin C": "30 mg",
+    "Dietary Folate Equivalent": "27 mcg",
+    "Vitamin B1 (Thiamin)": "0.50 mg",
+    "Vitamin B2 (Riboflavin)": "4.50 mg",
+    "Vitamin B6 (Pyridoxine)": "2.30 mg",
+    "Vitamin B12": "8.0 mcg",
+    "Niacin Equivalent": "8.0 mg",
+    "Pantothenic Acid": "50 mg",
+    "Biotin": "490 mcg",
+    "Choline": "220 mg",
+    "Sodium": "150 mg",
+    "Potassium": "540 mg",
+    "Chloride": "330 mg",
+    "Calcium": "480 mg",
+    "Phosphorus": "310 mg",
+    "Magnesium": "40 mg",
+    "Iron": "4.10 mg",
+    "Zinc": "3.2 mg",
+    "Manganese": "9 mcg",
+    "Copper": "210 mcg",
+    "Selenium": "6 mcg",
+    "Iodine": "121 mcg"
+   },
+   "manufacturerName": "Abbott Healthcare Pvt. Ltd",
+   "fssaiLicense": "10013021000829",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Stage 1 Infant Formula",
@@ -208,7 +425,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40281932_5-similac-infant-formula-stage-1-upto-6-months-easy-digestion-calcium-rich.jpg"
-    }
+    },
+    "barcode": "8904145913558"
    },
    {
     "title": "800g",
@@ -246,7 +464,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40281932-8_5-similac-infant-formula-stage-1-upto-6-months-easy-digestion-calcium-rich.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Whole Milk Powder, Lactose, Maltodextrin, Edible Vegetable Oil (9.70%) (Soy Oil, High Oleic Sunflower Oil, Coconut Oil), Whey Protein Concentrate, Choline Bitartrate, Minerals, Vitamins, Nucleotides, Taurine, Choline Chloride, Antioxidant (Mixed Tocopherols), L-Carnitine.\nNutritional Information (Per 100 g Powder):\nEnergy: 489 kcal\nProtein: 11.50 g\nFat: 21.80 g\nCarbohydrates: 61.80 g\nIron: 3.40 mg\nNutritional Information (Per 100 ml Standard Dilution):\nEnergy: 64 kcal\nProtein: 1.51 g\nFat: 2.87 g\nCarbohydrates: 8.13 g\nIron: 0.45 mg",
+   "usageInstructions": "Standard reconstitution is one level scoopis 131.6 g of powder with water.\nFor standard serving of 33.4mL, add one level scoop (approximately 4.4 g) of powder in approximately 30 mL of water .\nConsult your baby’s physician about how much your baby should be consuming. \nsuggested feeding intakes; every baby is different.",
+   "manufacturerName": "Abbott Healthcare Pvt. Ltd",
+   "fssaiLicense": "10013021000829",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Stage 2 Follow-Up Formula",
@@ -262,7 +487,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40156049_13-similac-stage-2-formula-after-6-months.jpg"
-    }
+    },
+    "barcode": "8904145913565"
    },
    {
     "title": "800g",
@@ -300,7 +526,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156049-8_2-similac-stage-2-formula-after-6-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Lactose, Skimmed Milk Powder, Edible Vegetable Oil (High Oleic Sunflower Oil, Coconut Oil, Soy Oil), Maltodextrin, Whey Protein Concentrate, Sodium Caseinate, Minerals, Choline Bitartrate, Vitamins, Emulsifier (Soy Lecithin), Nucleotides, Taurine, Choline Chloride, Antioxidants (Mixed Tocopherols).\nNutritional Information (Per 100 g Powder):\nEnergy: 478 kcal\nProtein: 14.50 g\nFat: 19.5 g\nCarbohydrates: 61.20 g\nIron: 3.80 mg\nNutritional Information (Per 100 ml Standard Dilution):\nEnergy: 71 kcal\nProtein: 2.16 g\nFat: 2.91 g\nCarbohydrates: 8.13 g\nIron: 0.57 mg",
+   "usageInstructions": "Standard reconstitution is one packed scoop (approximately 5.1 g) of powder for each\n30 ml (1 fl oz) of water or 149.1 g of powder mixed with sufficient water to yield 1 L of\nproduct.\nInfants above 6 months should receive supplemental food in addition to formula. Consult\nyour baby's physician for advice.",
+   "manufacturerName": "Abbott Healthcare Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013021000829"
+  }
  },
  {
   "title": "Classic Stage 3 Follow-Up Formula",
@@ -316,7 +549,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40281933_8-similac-infant-formula-stage-3-upto-12-months-easy-digestion-calcium-rich.jpg"
-    }
+    },
+    "barcode": "8904145913572"
    }
   ],
   "images": [
@@ -344,7 +578,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40281933-8_2-similac-infant-formula-stage-3-upto-12-months-easy-digestion-calcium-rich.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Lactose, Skimmed Milk Powder, Edible Vegetable Oil (High Oleic Sunflower Oil, Coconut Oil, Soy Oil), Maltodextrin, Whey Protein Concentrate, Sodium Caseinate, Minerals, Choline Bitartrate, Vitamins, Emulsifier (Soy Lecithin), Nucleotides, Taurine, Choline Chloride, Antioxidants (Mixed Tocopherols).\nNutritional Information (Per 100 g Powder):\nEnergy: 478 kcal\nProtein: 14.50 g\nFat: 19.5 g\nCarbohydrates: 61.20 g\nIron: 4.10 mg\nNutritional Information (Per 100 ml Standard Dilution):\nEnergy: 71 kcal\nProtein: 2.16 g\nFat: 2.91 g\nCarbohydrates: 9.12 g\nIron: 0.61 mg",
+   "usageInstructions": "Standard reconstitution is one packed scoop (approximately 5.1 g) of powder for each\n30 ml (1 fl oz) of water or 149.1 g of powder mixed with sufficient water to yield 1 L of\nproduct.\nInfants above 6 months should receive supplemental food in addition to formula. Consult\nyour baby's physician for advice.",
+   "manufacturerName": "Abbott Healthcare Pvt. Ltd",
+   "fssaiLicense": "10013021000829",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Stage 4 Follow-Up Formula",
@@ -360,7 +601,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40359123_3-similac-classic-stage-4-follow-up-formula-powder-for-18-24-months.jpg"
-    }
+    },
+    "barcode": "8904145913589"
    }
   ],
   "images": [
@@ -389,7 +631,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359123-8_3-similac-classic-stage-4-follow-up-formula-powder-for-18-24-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "For over 10 decades, Abbott has been a pioneer in innovation and research of infant formulas. Abbott is committed to provide optimal nutrition for infants through scientific advancements.\nSimilac Classic contains 33 Nutrients including\nTotal Potentially Available Nucleotides and Omega 3 & Omega 6 fatty acids (including Alpha Linolenic acid & Linoleic acid)",
+   "ingredients": "Lactose, Skimmed Milk Powder, Edible Vegetable Oil (High Oleic Sunflower Oil, Coconut Oil, Soy Oil), Maltodextrin, Whey Protein Concentrate, Sodium Caseinate, Minerals, Choline Bitartrate, Vitamins, Emulsifier (Soy Lecithin), Nucleotides, Taurine, Choline Chloride, Antioxidants (Mixed Tocopherols).\nNutritional Information (Per 100 g Powder):\nEnergy: 478 kcal\nProtein: 14.50 g\nFat: 19.5 g\nCarbohydrates: 61.20 g\nIron: 4.10 mg\nNutritional Information (Per 100 ml Standard Dilution):\nEnergy: 71 kcal\nProtein: 2.16 g\nFat: 2.91 g\nCarbohydrates: 9.12 g\nIron: 0.61 mg",
+   "usageInstructions": "Standard reconstitution is one packed scoop (approximately 5.1 g) of powder for each\n30 ml (1 fl oz) of water or 149.1 g of powder mixed with sufficient water to yield 1 L of\nproduct.\nInfants above 6 months should receive supplemental food in addition to formula. Consult\nyour baby's physician for advice.",
+   "manufacturerName": "Abbott Healthcare Pvt. Ltd",
+   "fssaiLicense": "10013021000829",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Plus Stage 1 Infant Formula",
@@ -405,7 +655,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40093303_20-similac-iq-iq-stage-1-formula.jpg"
-    }
+    },
+    "barcode": "8886451012999"
    }
   ],
   "images": [
@@ -434,7 +685,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40093303-8_2-similac-iq-iq-stage-1-formula.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Whole Milk Powder, Lactose, Corn Syrup Solids, Edible Vegetable Oils (Coconut Oil, High Oleic Sunflower Oil, Soy Oil, Low Erucic Rapeseed Oil), Whey Protein Concentrate, Fructo-Oligosaccharides (FOS) (1.56%), Minerals, Human Milk Oligosaccharide Blend (2’-Fucosyllactose (2’-FL), Lactose-N-Tetraose (LNT), 3’-Fucosyllactose (3-FL), 6’-Sialyllactose (6’-SL), 3’-Sialyllactose (3’-SL)), Emulsifier (Soy Lecithin), Docosahexaenoic Acid (DHA) from Schizochytrium Oil, Arachidonic Acid (AA) from M. Alpina Oil, Choline Bitartrate, Vitamins, Nucleotides, Taurine, Choline Chloride, M-Inositol, Antioxidant (Mixed Tocopherols), L-Carnitine, Lutein.\nNutritional Information (Per 100 g Powder):\nEnergy: 482 kcal\nProtein: 13.85 g\nFat: 18.00 g\nCarbohydrates: 58.55 g\nIron: 3.30 mg\nNutritional Information (Per 100 ml Standard Dilution):\nEnergy: 65 kcal\nProtein: 1.86 g\nFat: 2.81 g\nCarbohydrates: 7.85 g\nIron: 0.44 mg",
+   "usageInstructions": "Standard reconstitution is one level scoop (approximately 4.45 g) of powder for each 30 ml of water or 134 g of powder diluted to 1 L in water.\nConsult your baby’s doctor about how much your baby should be consuming.",
+   "manufacturerName": "Abbott Laboratories",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Plus Stage 2 Follow-Up Formula",
@@ -450,7 +707,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40093304_13-similac-iq-iq-stage-2-formula.jpg"
-    }
+    },
+    "barcode": "8886451013002"
    }
   ],
   "images": [
@@ -479,7 +737,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40093304-8_6-similac-iq-iq-stage-2-formula.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Lactose, Nonfat Dry Milk, Edible Vegetable Oils (17.5%) (Coconut Oil, High Oleic Sunflower Oil, Medium Chain Triglycerides Oil, Low Erucic Rapeseed Oil, Soy Oil), Corn Syrup Solids, Whey Protein Concentrate, Fructo-Oligosaccharides (FOS) (1.6%), Minerals, Emulsifier (Soy Lecithin), Choline Bitartrate (0.12%), Docosahexaenoic Acid (DHA) from Schizochytrium Oil, Vitamins, Antioxidants (Ascorbyl Palmitate, Mixed Tocopherols), Lutein.\nNutritional Information (Per 100 g Powder):\nEnergy: 461 kcal\nProtein: 14.7 g\nFat: 21.00 g\nCarbohydrates: 59.45 g\nIron: 4.10 mg\nNutritional Information (Per 100 ml Standard Dilution):\nEnergy: 70 kcal\nProtein: 2.22 g\nFat: 2.72 g\nCarbohydrates: 8.96 g\nIron: 0.62 mg",
+   "usageInstructions": "Standard reconstitution is one level scoop (approximately 5.1 g) of powder for each 30 ml of water or 151 g of powder diluted to 1 L in water.\nConsult your baby’s doctor about how much your baby should be consuming.",
+   "manufacturerName": "Abbott Laboratories 3 Corporate Park",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Plus Stage 3 Follow-Up Formula",
@@ -495,7 +759,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40156047_8-similac-iq-iq-stage-3-formula.jpg"
-    }
+    },
+    "barcode": "8886451013019"
    }
   ],
   "images": [
@@ -524,7 +789,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156047-8_5-similac-iq-iq-stage-3-formula.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Lactose, Nonfat Dry Milk, Edible Vegetable Oils (17.5%) (Coconut Oil, High Oleic Sunflower Oil, Medium Chain Triglycerides Oil, Low Erucic Rapeseed Oil, Soy Oil), Corn Syrup Solids, Whey Protein Concentrate, Fructo-Oligosaccharides (FOS) (1.6%), Minerals, Emulsifier (Soy Lecithin), Choline Bitartrate (0.12%), Docosahexaenoic Acid (DHA) from Schizochytrium Oil, Vitamins, Antioxidants (Ascorbyl Palmitate, Mixed Tocopherols), Lutein.\nNutritional Information (Per 100 g Powder):\nEnergy: 461 kcal\nProtein: 14.7 g\nFat: 18.00 g\nCarbohydrates: 59.45 g\nIron: 4.85 mg\nNutritional Information (Per 100 ml Standard Dilution):\nEnergy: 70 kcal\nProtein: 2.22 g\nFat: 2.72 g\nCarbohydrates: 8.96 g\nIron: 0.73 mg",
+   "usageInstructions": "Standard reconstitution is one level scoop (approximately 5.1 g) of powder for each 30 ml of water or 151 g of powder diluted to 1 L in water.\nConsult your baby’s doctor about how much your baby should be consuming.",
+   "manufacturerName": "and Country of Origin",
+   "fssaiLicense": "10012022000149",
+   "countryOfOrigin": "Abbott Manufacturing Singapore Private Limited, 26 Tuas South Avenue 10, Singapore 637437 (a subsidiary of Abbott Laboratories, USA)."
+  }
  },
  {
   "title": "Isomil Soy Infant Formula",
@@ -540,7 +812,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40156050_7-similac-isomil-soy-infant-milk-substitute-lactose-free-upto-24-months.jpg"
-    }
+    },
+    "barcode": "8710428023902"
    }
   ],
   "images": [
@@ -569,7 +842,58 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156050-8_1-similac-isomil-soy-infant-milk-substitute-lactose-free-upto-24-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Similac Isomil is a soy-based, milk-free, lactose-free spray-dried infant formula, to meet the special nutritional needs of infants suffering from lactose intolerance, milk allergy and diarrhoea. Important Notice: Mother’s Milk Is Best for Your Baby.",
+   "usageInstructions": "Standard reconstitution is one level scoop of 8.7 g powder for each 60 ml of water.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "496 kcal",
+    "Protein": "13.20 g",
+    "Fat": "27.00 g",
+    "Saturated Fatty Acids": "11.83 g",
+    "Monounsaturated Fatty Acids": "9g",
+    "Polyunsaturated Fatty Acids": "4.2 g",
+    "Trans Fat": "$0.5g",
+    "Cholesterol": "4.0 g",
+    "Carbohydrate": "50.00 g",
+    "Total sugars": "15 g",
+    "Added sugars": "15g",
+    "Taurine": "27 mg",
+    "Carnitine": "8.6 mg",
+    "Methionine": "38 mg",
+    "Vitamin A (from palmitate)": "480 mcg RE",
+    "B-carotene": "300 mcg",
+    "Vitamin D?": "8.6 mcg",
+    "Vitamin E": "14 mg ?-TE",
+    "Vitamin K": "40 mcg",
+    "Vitamin C": "42 mg",
+    "Folic Acid": "80 mcg",
+    "Vitamin B1": "0.40 mg",
+    "Vitamin B2": "0.36 mg",
+    "Vitamin B6": "0.24 mg",
+    "Vitamin B12": "1.8 mcg",
+    "Niacin": "4.2 mg",
+    "Pantothenic Acid": "3.0 mg",
+    "Biotin": "20 mcg",
+    "Choline": "48 mg",
+    "Sodium": "195 mg",
+    "Potassium": "400 mg",
+    "Chloride": "275 mg",
+    "Calcium": "425 mg",
+    "Phosphorus": "304 mg",
+    "Magnesium": "33 mg",
+    "Iron": "6.2 mg",
+    "Zinc": "3.5 mg",
+    "Manganese": "0.24 mg",
+    "Copper": "297 mcg",
+    "Iodine": "61 mcg",
+    "Selenium": "14 mcg",
+    "Linoleic Acid": ">1.10 mg"
+   },
+   "manufacturerName": "Abbott Laboratories USA. Marketed by",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Total Comfort Infant Formula",
@@ -585,7 +909,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40156048_12-similac-total-comfort-infant-formula-sucrose-free-up-to-24-months.jpg"
-    }
+    },
+    "barcode": "8427030008301"
    }
   ],
   "images": [
@@ -614,7 +939,62 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156048-8_5-similac-total-comfort-infant-formula-sucrose-free-up-to-24-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "For over 85 years, Similac from Abbott Nutrition has set the standards for science-based infant nutrition and has been nourishing babies worldwide. Similac Total Comfort is a spray-dried follow-up formula designed for infants after 12 months onward as part of a healthy diet during and after weaning. Proper hygiene, handling and storage are important when preparing infant formula. Failure to follow these instructions can potentially lead to adverse effects on the health of your baby. Powdered infant formulas are not sterile and should not be fed to premature infants or infants who might have immune problems unless directed and supervised by the physician.",
+   "usageInstructions": "Use as directed by the physician of your baby. Proper hygiene, handling and storage are important when preparing infant formula. Failure to follow these instructions can potentially lead to adverse effects on the health of your baby. Powdered infant formulas are not sterile and should not be fed to premature infants or infants who might have immune problems unless directed and supervised by the physician. Use water that has previously been boiled at a full rolling boil for 5 minutes. Allow the water to cool to lukewarm and follow mixing instructions carefully. Use only the scoop enclosed in this tin to measure Similac Total Comfort powder. If you prepare more than one feeding, it must be refrigerated at 35 - 40F (2 - 4C) and used within 24 hours. Once feeding begins, use within 1 hour or discard.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "516 kcal",
+    "Protein": "11.16 g",
+    "Phenylalanine": "406 mg",
+    "Fat": "26.14 g",
+    "Saturated fatty acids": ">13.77 g",
+    "Monounsaturated fatty acids": "8.28 g",
+    "Polyunsaturated fatty acids": "4.06 g",
+    "Linoleic acid": "3.43 g",
+    "a-Linolenic acid": "358 mg",
+    "Arachidonic acid": "75 mg",
+    "Docosahexaenoic acid": "53 mg",
+    "Trans fat": "$0.45 g",
+    "Carbohydrate": "58.98 g",
+    "Lactose": "$1.50 g",
+    "Total sugars": "1.28 g",
+    "Added sugars": "0g",
+    "Carnitine": "7.8 mg",
+    "Taurine": "27.1 mg",
+    "Choline": "60.2 mg",
+    "Nucleotides": "43.6 mg",
+    "Vitamin A": "352 mcgRE",
+    "Vitamin D2": "5.13 mcg",
+    "Vitamin E": "10.3 mg a-TE",
+    "Vitamin K": "39.4 mcg",
+    "Vitamin C": "81.6 mg",
+    "Thiamin (Vitamin B1)": "339 mcg",
+    "Riboflavin (Vitamin B2)": "602 mcg",
+    "Niacin": "2709 mcg",
+    "Vitamin B6": "339 mcg",
+    "Folic acid": "60 mcg",
+    "Vitamin B12": "1.81 mcg",
+    "Biotin": "15.0 mcg",
+    "Pantothenic acid": "2483 mcg",
+    "Sodium": "179 mg",
+    "Potassium": "590 mg",
+    "Chloride": "326 mg",
+    "Calcium": "427 mg",
+    "Phosphorus": "305 mg",
+    "Magnesium": "30.5 mg",
+    "Iron": "5.00 mg",
+    "Zinc": "3.30 mg",
+    "Copper": "307 mcg",
+    "Manganese": "78 mcg",
+    "Selenium": "14.3 mcg",
+    "Iodine": "79.5 mcg"
+   },
+   "manufacturerName": "Abbott Laboratories USA",
+   "fssaiLicense": "10012022000149",
+   "countryOfOrigin": "Ireland"
+  }
  },
  {
   "title": "NeoSure Infant Formula",
@@ -659,6 +1039,64 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156051-8_2-similac-neosure-premature-baby-low-birth-weight-dha-vitamin-e-upto-12-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Similac Neosure with DHA is a nutrient-enriched formula in powder form, which supports catch-up growth and optimal development in Preterm-Low Birth Weight Infants. It provides various essential nutrients to the body and supports the development of the baby's brain.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "488 kcal",
+    "Protein": "15.90 g",
+    "Fat (Total fat)": "22.80 g",
+    "Milk fat": "12.00 g",
+    "Saturated fatty acids": "13.20 g",
+    "Monounsaturated fatty acids": "4.30 g",
+    "Polyunsaturated fatty acids": "3.60g",
+    "Trans fatty acids": "0.6g",
+    "Cholesterol": "50 mg",
+    "Linoleic acid": "3000 mg",
+    "a-linolenic acid": "352 mg",
+    "AA": "107 mg",
+    "DHA": "67 mg",
+    "Carbohydrate": "54.70 g",
+    "Total Sugars": "36.0 g",
+    "Added Sugars": "26.0 g",
+    "Taurine": "27.0 mg",
+    "Carnitine": "16.0 mg",
+    "Inositol": "170.0 mg",
+    "Total nucleotides": "46.5 mg",
+    "Lutein": "71.0 mcg",
+    "Vitamin A": "6279 IU",
+    "Vitamin D2": "600 IU",
+    "Vitamin E": "18.5 IU",
+    "Vitamin K": "61.6 mcg",
+    "Vitamin C": "96.4 mg",
+    "Folic Acid": "190.0 mcg",
+    "Vitamin B1 (thiamin)": "687 mcg",
+    "Vitamin B2 (riboflavin)": "975 mcg",
+    "Vitamin B6 (pyridoxine)": "520 mcg",
+    "Vitamin B12": "0.57 mcg",
+    "Niacin": "11.5 mg",
+    "Pantothenic Acid": "3.6 mg",
+    "Biotin": "39.3 mcg",
+    "Choline": "82.0 mg",
+    "Sodium": "341 mg",
+    "Potassium": "616 mg",
+    "Chloride": "514 mg",
+    "Calcium": "667 mg",
+    "Phosphorus": "350 mg",
+    "Magnesium": "43.1 mg",
+    "Iron": "9.73 mg",
+    "Zinc": "7.04 mg",
+    "Manganese": "5.1 mcg",
+    "Copper": "493 mcg",
+    "Iodine": "77.0 mcg",
+    "Selenium": "24.3 mcg",
+    "Chromium": "1.0 mcg",
+    "Molybdenum": "2.0 mcg"
+   },
+   "usageInstructions": "1 scoop in every 30 ml of water.",
+   "manufacturerName": "Bvishal corporation",
+   "countryOfOrigin": "India"
+  }
  }
 ]
