@@ -1,0 +1,241 @@
+{
+  "brand": "Wai Wai",
+  "manufacturer": "CG Foods (India) Pvt. Ltd.",
+  "feed": "wai-wai-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/wai-wai/logo-e217e233.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Wai Wai ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Wai Wai 1-2-3 Instant Noodles - Masala": "X-Press Instant Noodles - Masala Delight",
+    "Wai Wai Xpress Cup Noodles - Veg": "Veg Masala Ready To Eat Cup Noodles"
+  },
+  "rules": [
+    {
+      "match": "^X\\-Press\\ Instant\\ Noodles\\ \\-\\ Masala\\ Delight$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^X\\-Press\\ Instant\\ Noodles\\ \\-\\ Curry\\ Delight$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^X\\-Press\\ Instant\\ Noodles\\ \\-\\ Jain\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Quick\\ Masala\\ Curry\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Quick\\ Chicken\\ Curry\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Quick\\ Chicken\\ Pizza\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Ready\\ To\\ Eat\\ Veg\\ Masala\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Ready\\ To\\ Eat\\ Chicken\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Atta\\ Noodles\\ \\-\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Atta\\ Noodles\\ \\-\\ Chicken$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Dynamite\\ Xtra\\ Spicy\\ Tama\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Dynamite\\ Himalayan\\ Hot\\ Chicken\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Dynamite\\ Korean\\ Chilli\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Dynamite\\ Kimchi\\ Korean\\ Veg\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Dynamite\\ Kimchi\\ Korean\\ Chicken\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Veg\\ Masala\\ Ready\\ To\\ Eat\\ Cup\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Ready\\ To\\ Eat\\ Cup\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Veg\\ Hakka\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Egg\\ Hakka\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^X\\-Press\\ Instant\\ Pasta\\ \\-\\ Cheese\\ Macaroni$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^X\\-Press\\ Instant\\ Pasta\\ \\-\\ Tomato\\ Fusilli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^American\\ BBQ\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Teriyaki\\ Japanese\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Chilli\\ Thai\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Chunky\\ Schezwan\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Sriracha\\ Thai\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Premium\\ Green\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    }
+  ]
+}
