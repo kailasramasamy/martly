@@ -1,0 +1,78 @@
+{
+  "brand": "PediaSure (Abbott)",
+  "manufacturer": "Abbott Healthcare Pvt. Ltd.",
+  "feed": "pediasure-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pediasure/logo-c9a103e7.png",
+  "themeColor": "#4B2A8C",
+  "themeColorSecondary": "#E6007E",
+  "namePrefix": "PediaSure ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Nutrition\\ Drink\\ Mix\\ 2\\-6\\ Years\\ \\-\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Nutrition\\ Drink\\ Mix\\ 2\\-6\\ Years\\ \\-\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Nutrition\\ Drink\\ Mix\\ \\-\\ Kesar\\ Badam$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sucrose\\ Nutrition\\ Drink\\ \\-\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Nutritional\\ Powder\\ Jar\\ \\-\\ Premium\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Nutritional\\ Powder\\ Jar\\ \\-\\ Vanilla\\ Delight$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^7\\+\\ Nutrition\\ Drink\\ with\\ Oats\\ \\&\\ Almonds\\ \\-\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^7\\+\\ Nutrition\\ Drink\\ with\\ Oats\\ \\&\\ Almonds\\ \\-\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    }
+  ]
+}
