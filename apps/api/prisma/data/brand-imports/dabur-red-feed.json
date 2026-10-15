@@ -63,7 +63,7 @@
   ],
   "details": {
    "usageInstructions": "1. Brush thoroughly, at least twice a day, or as directed by a dentist or physician.\n2. Children under 6 years of age should have adult supervision and use only a pea-sise amount.\n3. Do not swallow.",
-   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "manufacturerName": "Dabur India Ltd.",
    "countryOfOrigin": "India"
   }
  },
@@ -114,7 +114,7 @@
   "details": {
    "description": "Dabur Red Gel brings you the best of Ayurveda, an ancient science of holistic healing. With the Power Of Potent Ayurvedic Herbs which are scientifically proven & tested, Dabur Red Gel gives you effective dental care with scintillating freshness every day. Made with 7 potent herbs appraised in Ayurveda, the effectiveness of Dabur Red Gel has been scientifically tested and proven. The herbal formulation not only keeps the mouth fresh but also works against oral problems like plaque, gingivitis, toothache, cavity, and gum bleeding and ensures healthy teeth and gums without any side effects.",
    "usageInstructions": "Brush thoroughly, at least twice a day, or as directed by a dentist or physician. Children under 6 years of age should have adult supervision and use only a pea-size amount. Do not swallow.",
-   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "manufacturerName": "Dabur India Ltd.",
    "countryOfOrigin": "India"
   }
  },
@@ -176,7 +176,54 @@
   ],
   "details": {
    "usageInstructions": "Brush thoroughly twice a day or as directed by a dentist.\nChildren under 6 years of age should use a pea-sized amount under adult supervision.\nDo not swallow.\nSpit and rinse thoroughly after brushing",
-   "manufacturerName": "Dabur India Limited",
+   "manufacturerName": "Dabur India Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Red Bae Fresh Gel Toothpaste",
+  "handle": "red-bae-fresh-gel-toothpaste",
+  "vendor": "Dabur",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287938_4-dabur-red-bae-fresh-gel-12-hour-freshness-super-saver-pack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287938_4-dabur-red-bae-fresh-gel-12-hour-freshness-super-saver-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287938-2_4-dabur-red-bae-fresh-gel-12-hour-freshness-super-saver-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287938-3_4-dabur-red-bae-fresh-gel-12-hour-freshness-super-saver-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287938-4_4-dabur-red-bae-fresh-gel-12-hour-freshness-super-saver-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287938-5_4-dabur-red-bae-fresh-gel-12-hour-freshness-super-saver-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287938-6_3-dabur-red-bae-fresh-gel-12-hour-freshness-super-saver-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287938-7_3-dabur-red-bae-fresh-gel-12-hour-freshness-super-saver-pack.jpg"
+   }
+  ],
+  "details": {
+   "description": "Are you Bae Ready? Dabur Red Bae Fresh Gel contains 5 Freshness Natural Activs & is clinically proven to give you 12-hour freshness* so that you can always be BAE READY. Ayurvedic 5 Freshness Natural Activs\nWintergreen Oil: fights Bad Breath\nPeppermint Oil: Freshens Breath\nClove Oil: Fights Cavity Germs\nTakkola Oil: Fights Malodour Germs\nTumubru : Relieves Toothache",
+   "usageInstructions": "Recommended usage: Brush twice daily with 2-3g (Full length brush amount) or as directed by dentist or physician.",
+   "manufacturerName": "Dabur India Ltd.",
    "countryOfOrigin": "India"
   }
  }
