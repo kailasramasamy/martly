@@ -1,0 +1,606 @@
+{
+  "brand": "Double Horse",
+  "manufacturer": "Manjilas Food Tech Pvt. Ltd.",
+  "feed": "double-horse-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/double-horse/logo-8165fefe.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Double Horse ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Instant\\ Idiyappam$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Appam\\ Idiyappam\\ Pathiri\\ Podi$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Easy\\ Idiyappam\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^6\\ Minute\\ Magic\\ Idiyappam\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Easy\\ Palappam\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Pathiri\\ Roasted\\ Rice\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^White\\ Rice\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Kozhukkattai\\ Mavu\\ \\(Modak\\ Flour\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Avalose\\ Podi\\ Roasted\\ Rice\\ Ball\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Chemba\\ Puttu\\ Podi$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^White\\ Puttu\\ Podi$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Corn\\ Puttu\\ Podi$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Samba\\ Wheat\\ Puttu\\ Podi$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Red\\ Aval$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Poha & Puffed Rice"
+      ]
+    },
+    {
+      "match": "^Red\\ Thick\\ Aval$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Poha & Puffed Rice"
+      ]
+    },
+    {
+      "match": "^White\\ Aval$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Poha & Puffed Rice"
+      ]
+    },
+    {
+      "match": "^Matta\\ Broken\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Parboiled Rice"
+      ]
+    },
+    {
+      "match": "^Palakkadan\\ Matta\\ Rice\\ \\(Short\\ Grain\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Parboiled Rice"
+      ]
+    },
+    {
+      "match": "^Vadi\\ Matta\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Parboiled Rice"
+      ]
+    },
+    {
+      "match": "^Earthly\\ Farms\\ Vadi\\ Matta\\ IPM\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Parboiled Rice"
+      ]
+    },
+    {
+      "match": "^Cherumani\\ White\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Jaya\\ Long\\ White\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Sortex\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Tanjavur\\ Ponni\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Master\\ Cheff\\ Jeerakasala\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Broken\\ Wheat$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Porridge & Daliya"
+      ]
+    },
+    {
+      "match": "^Wheat\\ Broken\\ Fine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Porridge & Daliya"
+      ]
+    },
+    {
+      "match": "^Samba\\ Wheat\\ Broken$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Porridge & Daliya"
+      ]
+    },
+    {
+      "match": "^Samba\\ Wheat\\ Broken\\ Fine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Porridge & Daliya"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Rava$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Sooji & Rava"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Ragi\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Ragi Flour"
+      ]
+    },
+    {
+      "match": "^Corn\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Corn Flour"
+      ]
+    },
+    {
+      "match": "^Custard\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Milk$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Coconut Milk & Cream"
+      ]
+    },
+    {
+      "match": "^Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Instant\\ Ginger\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gluten\\ Free\\ 2\\ Minute\\ Instant\\ Rice\\ Upma$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Macaroni$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Rice\\ Sevai$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Vermicelli (Sevai)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Vermicelli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Vermicelli (Sevai)"
+      ]
+    },
+    {
+      "match": "^Long\\ Vermicelli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Vermicelli (Sevai)"
+      ]
+    },
+    {
+      "match": "^Rice\\ Palada\\ Payasam\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Palada\\ Payasam\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Sadya\\ Palada\\ Instant\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Parippu\\ Pradhaman\\ Instant\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Tender\\ Coconut\\ Sago\\ Payasam\\ Instant\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Vermicelli\\ Kheer\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Ribbon\\ Ada$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Egg\\ Roast\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Fish\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Meat\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Vegetable\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Pickle\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Rasam\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Sambar\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Chilly\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Compounded\\ Asafoetida\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Tamarind\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Tamarind"
+      ]
+    },
+    {
+      "match": "^Indian\\ Tamarind$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Tamarind"
+      ]
+    },
+    {
+      "match": "^Soya\\ Chunks$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Soya\\ Chunks\\ Nano$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Synthetic\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Cut\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Tender\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Kaduku\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Lime\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Lime Pickle"
+      ]
+    },
+    {
+      "match": "^Hot\\ \\&\\ Sweet\\ Lime\\ Dates\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Dates\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Fish\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Prawn\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    }
+  ]
+}
