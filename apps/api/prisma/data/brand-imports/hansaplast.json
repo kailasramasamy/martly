@@ -1,0 +1,158 @@
+{
+  "brand": "Hansaplast",
+  "manufacturer": "Beiersdorf India",
+  "feed": "hansaplast-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/hansaplast/logo-169bb442.png",
+  "themeColor": "#1C3F94",
+  "themeColorSecondary": "#E30613",
+  "namePrefix": "Hansaplast ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Regular\\ Antiseptic\\ Strips$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Washproof\\ Antiseptic\\ Strips$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Antiseptic\\ Strips$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Spot\\ Plaster$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Patch\\ Strips\\ for\\ Knee\\ \\&\\ Elbow$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Assorted\\ Medicated\\ Dressings$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Corn\\ Plaster$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Fast\\ Aid\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Crepe\\ Bandage\\ 6\\ cm\\ x\\ 4\\ m$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Crepe\\ Bandage\\ 8\\ cm\\ x\\ 4\\ m$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Crepe\\ Bandage\\ 10\\ cm\\ x\\ 4\\ m$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Crepe\\ Bandage\\ 15\\ cm\\ x\\ 4\\ m$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Soft\\ Fixation\\ Tape\\ 1\\.25\\ cm\\ x\\ 5\\ m$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Soft\\ Fixation\\ Tape\\ 2\\.5\\ cm\\ x\\ 5\\ m$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Soft\\ Fixation\\ Tape\\ 5\\ cm\\ x\\ 9\\.14\\ m$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Soft\\ Fixation\\ Tape\\ 7\\.5\\ cm\\ x\\ 9\\.14\\ m$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Lion\\ Heat\\ Plaster$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Lion\\ Pain\\ Relief\\ Plaster\\ with\\ Belladonna\\ Extract$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    }
+  ]
+}
