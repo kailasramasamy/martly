@@ -1,0 +1,110 @@
+{
+  "brand": "Country Delight",
+  "manufacturer": "SDS Dairy Pvt. Ltd. (Country Delight)",
+  "feed": "country-delight-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/country-delight/logo-0d554994.png",
+  "themeColor": "#1F5FA8",
+  "themeColorSecondary": "#6DB33F",
+  "namePrefix": "Country Delight ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^10g\\ Protein\\ Greek\\ Yoghurt\\ \\-\\ Blueberry$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^10g\\ Protein\\ Greek\\ Yoghurt\\ \\-\\ Mango$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^10g\\ Protein\\ Greek\\ Yoghurt\\ \\-\\ Vanilla$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Natural\\ Greek\\ Yoghurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^25g\\ High\\ Protein\\ Ghar\\ Jaisa\\ Dahi$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Ghar\\ Jaisa\\ Dahi$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Homestyle\\ Curd\\ \\-\\ Buffalo\\ Milk$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Low\\ Fat\\ Dahi$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^40g\\ High\\ Protein\\ Taaza\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Taaza\\ Paneer\\ \\-\\ Made\\ With\\ Lemon\\ Juice$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Taaza\\ Buffalo\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Desi\\ Danedar\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    }
+  ]
+}
