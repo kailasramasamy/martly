@@ -1,0 +1,102 @@
+{
+  "brand": "Dhara (Mother Dairy)",
+  "manufacturer": "Mother Dairy Fruit & Vegetable Pvt. Ltd.",
+  "feed": "dhara-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/dhara/logo-9683e39a.png",
+  "themeColor": "#0B5B33",
+  "themeColorSecondary": "#F5A800",
+  "namePrefix": "Dhara ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Kachi\\ Ghani\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Kachi\\ Ghani\\ Mustard\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Kachi\\ Ghani\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Mustard\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Filtered\\ Groundnut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Filtered\\ Groundnut\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Lite\\ N\\ Fine\\ Refined\\ Soyabean\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Soybean Oil"
+      ]
+    },
+    {
+      "match": "^Life\\ Refined\\ Rice\\ Bran\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Rice Bran Oil"
+      ]
+    },
+    {
+      "match": "^VitAE\\ Refined\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Assure\\ Refined\\ Vegetable\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Refined\\ Cottonseed\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    }
+  ]
+}
