@@ -1,0 +1,310 @@
+{
+  "brand": "Akshayakalpa",
+  "manufacturer": "Akshayakalpa Farms and Foods Pvt. Ltd.",
+  "feed": "akshayakalpa-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/akshayakalpa/logo-0084dabb.png",
+  "themeColor": "#1E7B3C",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Akshayakalpa ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Organic\\ Cow\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Organic Milk"
+      ]
+    },
+    {
+      "match": "^Organic\\ Cow\\ Milk\\ \\-\\ Fresh\\ Pouch$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Organic Milk"
+      ]
+    },
+    {
+      "match": "^Organic\\ Slim\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Organic Milk"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Cow\\ Milk$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Cow\\ Milk\\ \\-\\ Elaichi$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Organic\\ Artisanal\\ Set\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Amrutha\\ A2\\ Organic\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Probiotic\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Probiotic Yogurt"
+      ]
+    },
+    {
+      "match": "^Artisanal\\ Probiotic\\ A2\\ Dahi$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Probiotic Yogurt"
+      ]
+    },
+    {
+      "match": "^Organic\\ Greek\\ Yoghurt\\ \\-\\ Plain$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Organic\\ Greek\\ Yoghurt\\ \\-\\ Mango$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Organic\\ Plain\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Spiced\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Probiotic\\ Buttermilk\\ \\-\\ Plain$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Probiotic\\ Buttermilk\\ \\-\\ Jeera$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Table\\ Butter\\ \\-\\ Salted\\ \\(Tub\\)$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Table\\ Butter\\ \\-\\ Salted\\ \\(Carton\\)$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Cooking\\ Butter\\ \\-\\ Unsalted\\ \\(Tub\\)$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Cooking\\ Butter\\ \\-\\ Unsalted\\ \\(Carton\\)$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Malai\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Malai Paneer"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Organic\\ Artisanal\\ Cheddar\\ Cheese\\ \\-\\ Mild$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Organic\\ Artisanal\\ Cheddar\\ Cheese\\ \\-\\ Chilli$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Organic\\ Artisanal\\ Cheddar\\ Cheese\\ \\-\\ Pepper$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Organic\\ Artisanal\\ Cheddar\\ Cheese\\ \\-\\ Smoked$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Organic\\ Artisanal\\ Aged\\ Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Organic\\ Artisanal\\ Cheddar\\ Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Organic\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Organic Ghee"
+      ]
+    },
+    {
+      "match": "^Organic\\ Desi\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Organic Ghee"
+      ]
+    },
+    {
+      "match": "^Organic\\ Idli\\ \\&\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Ragi\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Cold\\ Pressed\\ Virgin\\ Coconut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "match": "^Multifloral\\ Raw\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Wild\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Pollen\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Jamun\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    }
+  ]
+}
