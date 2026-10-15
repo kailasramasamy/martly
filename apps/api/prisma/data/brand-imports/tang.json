@@ -1,0 +1,46 @@
+{
+  "brand": "Tang (Mondelez)",
+  "manufacturer": "Mondelez India Foods Pvt. Ltd.",
+  "feed": "tang-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tang/logo-18056aad.png",
+  "themeColor": "#1E8A3A",
+  "themeColorSecondary": "#F28C00",
+  "namePrefix": "Tang ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Instant\\ Drink\\ Mix\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Instant\\ Drink\\ Mix\\ \\-\\ Mango$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Instant\\ Drink\\ Mix\\ \\-\\ Lemon$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Instant\\ Drink\\ Mix\\ \\-\\ Mosambi$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    }
+  ]
+}
