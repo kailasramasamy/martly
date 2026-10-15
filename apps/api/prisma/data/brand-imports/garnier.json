@@ -1,0 +1,534 @@
+{
+  "brand": "Garnier",
+  "manufacturer": "L'Oréal India Pvt. Ltd.",
+  "feed": "garnier-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/garnier/logo-623f0e88.png",
+  "themeColor": "#1E3D2F",
+  "themeColorSecondary": "#8DC63F",
+  "namePrefix": "Garnier ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bright\\ Complete\\ 30X\\ Vitamin\\ C\\ Booster\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Bright\\ Complete\\ Overnight\\ Booster\\ Serum\\ \\-\\ 10%\\ Vitamin\\ C$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Bright\\ Complete\\ Vitamin\\ C\\ Serum\\ Cream\\ SPF\\ 40$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Bright\\ Complete\\ Vitamin\\ C\\ Yoghurt\\ Night\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Bright\\ Complete\\ Vitamin\\ C\\ Serum\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Bright\\ Complete\\ Vitamin\\ C\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Bright\\ Complete\\ Vitamin\\ C\\ Gel\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Bright\\ Complete\\ Duo\\ Action\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Bright\\ Complete\\ Vitamin\\ C\\ Serum\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Light\\ Complete\\ Fairness\\ Serum\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Skin\\ Naturals\\ Wrinkle\\ Lift\\ Anti\\-Ageing\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Skin\\ Naturals\\ Nourishing\\ Cold\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Skin\\ Naturals\\ Sun\\ Control\\ Daily\\ Moisturiser\\ SPF\\ 15$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Skin\\ Naturals\\ Moisturising\\ Serum\\-In\\-Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Skin\\ Naturals\\ Pure\\ Active\\ Neem\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Pure\\ Active\\ Exfoliating\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Skin\\ Naturals\\ Gentle\\ Soothing\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Skin\\ Naturals\\ White\\ Complete\\ Speed\\ White\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^All\\-in\\-1\\ Micellar\\ Cleansing\\ Water$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Oil\\ Infused\\ Micellar\\ Cleansing\\ Water$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Vitamin\\ C\\ Micellar\\ Cleansing\\ Water$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Super\\ UV\\ Cooling\\ Water\\ Gel\\ Sunscreen$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Super\\ UV\\ Invisible\\ Air\\ Mist\\ Sunscreen\\ SPF\\ 50\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Super\\ UV\\ Invisible\\ Serum\\ Sunscreen\\ SPF\\ 50\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Hyaluronic\\ Acid\\ Ampoule\\ Sheet\\ Mask\\ \\-\\ Watermelon$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Niacinamide\\ Ampoule\\ Sheet\\ Mask\\ \\-\\ Kale$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Vitamin\\ C\\ Ampoule\\ Sheet\\ Mask\\ \\-\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Hydra\\ Bomb\\ Eye\\ Serum\\ Mask\\ \\-\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Hydra\\ Bomb\\ Serum\\ Sheet\\ Mask\\ \\-\\ Green\\ Tea$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Hydra\\ Bomb\\ Serum\\ Sheet\\ Mask\\ \\-\\ Pomegranate$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Bright\\ Complete\\ Vitamin\\ C\\ Serum\\ Sheet\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Sakura\\ White\\ Serum\\ Sheet\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Serum\\ Sheet\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Ageless\\ White\\ Firming\\ Serum\\ Sheet\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Mix\\ Vitamin\\ C\\ Shot\\ Sheet\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Fructis\\ Long\\ \\&\\ Strong\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Fructis\\ Long\\ \\&\\ Strong\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Fructis\\ Hair\\ Food\\ \\-\\ Aloe\\ Vera$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Fructis\\ Hair\\ Food\\ \\-\\ Banana$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Fructis\\ Hair\\ Food\\ \\-\\ Macadamia$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Black\\ Naturals\\ Hair\\ Colour\\ \\-\\ Deep\\ Black\\ 1$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Black\\ Naturals\\ Hair\\ Colour\\ \\-\\ Brown\\ Black\\ 3$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ Naturals\\ Creme\\ Riche\\ Sachet\\ \\-\\ Natural\\ Black\\ 1$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ Naturals\\ Creme\\ Riche\\ Sachet\\ \\-\\ Darkest\\ Brown\\ 3$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ Naturals\\ Creme\\ Riche\\ Sachet\\ \\-\\ Burgundy\\ 3\\.16$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ Naturals\\ Creme\\ Riche\\ Sachet\\ \\-\\ Golden\\ Brown\\ 7\\.3$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ Naturals\\ Creme\\ Riche\\ Sachet\\ \\-\\ Raspberry\\ Red\\ 7\\.65$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ Naturals\\ Creme\\ Hair\\ Colour\\ \\-\\ Intense\\ Red\\ 6\\.6$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ Naturals\\ Creme\\ Hair\\ Colour\\ \\-\\ Wine\\ Burgundy\\ 4\\.20$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ Naturals\\ Creme\\ Riche\\ Hair\\ Colour\\ \\-\\ Plum\\ Red\\ 626$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ Naturals\\ Ultra\\ Hair\\ Colour\\ \\-\\ Cranberry\\ Red\\ 6\\.62$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ Naturals\\ Mini\\ \\-\\ Caramel\\ Brown\\ 5\\.32$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ Naturals\\ Highlighter\\ \\-\\ Medium\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men\\ Color\\ Naturals\\ Hair\\ Colour\\ \\-\\ Burgundy\\ 3\\.16$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men\\ Shampoo\\ Colour\\ \\-\\ Burgundy\\ 3\\.16$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men\\ Acno\\ Fight\\ Anti\\-Pimple\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Men\\ Acno\\ Fight\\ Gentle\\ Gel\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Men\\ Acno\\ Fight\\ Pimple\\ Clearing\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Men\\ Acno\\ Fight\\ Pimple\\ Clearing\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Men\\ Oil\\ Clear\\ Clay\\ D\\-Tox\\ Icy\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Men\\ Power\\ White\\ Double\\ Action\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Men\\ Turbo\\ Bright\\ Double\\ Action\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Men\\ Turbo\\ Bright\\ Brightening\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Men\\ Turbo\\ Bright\\ Icy\\ Super\\ Serum\\ Gel\\ \\-\\ 5X\\ Vitamin\\ C$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Men\\ Power\\ White\\ Charcoal\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    }
+  ]
+}
