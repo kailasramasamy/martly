@@ -1,0 +1,70 @@
+{
+  "brand": "Pravin",
+  "manufacturer": "Pravin Masalewale",
+  "feed": "pravin-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pravin/logo-1a17e864.png",
+  "themeColor": "#2E7D32",
+  "themeColorSecondary": "#F5B400",
+  "namePrefix": "Pravin ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Green\\ Chilli\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chilli Pickle"
+      ]
+    },
+    {
+      "match": "^Lime\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Lime Pickle"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Lime\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Lime Pickle"
+      ]
+    },
+    {
+      "match": "^Chunda$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Ambari\\ Kolhapuri\\ Thecha$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    }
+  ]
+}

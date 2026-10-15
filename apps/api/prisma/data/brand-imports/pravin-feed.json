@@ -1,0 +1,357 @@
+[
+ {
+  "title": "Mango Pickle",
+  "handle": "mango-pickle",
+  "vendor": "Pravin",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000359_2-pravin-pickle-mango.jpg"
+    }
+   },
+   {
+    "title": "350g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000358_2-pravin-pickle-mango.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000357_1-pravin-pickle-mango.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "234",
+    "compare_at_price": "234",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000356_6-pravin-pickle-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000359_2-pravin-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000359-2_3-pravin-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000359-3_3-pravin-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000359-4_3-pravin-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000359-5_3-pravin-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000358_2-pravin-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000357_1-pravin-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000356_6-pravin-pickle-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pravin Pickle is a delicious and flavourful mango pickle made with carefully selected green mangoes, common salt, cotton seed oil, ground spices, mustard, acetic acid, and compounded asafoetida. This pickle is perfect for adding a tangy and spicy twist to your meals.",
+   "ingredients": "Green mango (63%), Salt, Cottonseed Oil, Mustard, Red Chilli, Fenugreek, Turmeric, Acidity Regulator (260), Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy Value": "201 kcal",
+    "Protein": "3g",
+    "Fat": "14.8g",
+    "Saturated Fat": "4.58g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0g",
+    "Carbohydrates": "14g",
+    "Sugar": "2g",
+    "Sodium": "4770mg"
+   },
+   "storageInstructions": "* Store in a cool, dry place",
+   "manufacturerName": "CHORDIA FOOD PRODUCTS LIMITED",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mixed Pickle",
+  "handle": "mixed-pickle",
+  "vendor": "Pravin",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000364_3-pravin-pickle-mixed-vegetable.jpg"
+    },
+    "barcode": "8903241110090"
+   },
+   {
+    "title": "350g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000362_4-pravin-pickle-mixed-vegetable.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000364_3-pravin-pickle-mixed-vegetable.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000362_4-pravin-pickle-mixed-vegetable.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pravin Pickle - Mixed Vegetable. Pickles add a dash of taste to your life. Pravin Pickles add life to the taste of your meals. Preserving the taste perfected through generations, Pravin Pickles bring the reassuring feeling to millions of households that at least something never changes. The range of Pravin Pickle includes Mango, Lime, Chilli, Tomato, Mixed, in a number of variants representing the rich culinary tradition of various parts of India.",
+   "ingredients": "Green Mango, Lime, Common Salt, Green Chilli, Cotton Seed Oil, Ground Spices, Mustard, Acetic Acid, Coumpounded, Asafotida",
+   "usageInstructions": "Ready to eat. Perfect accompaniment with rice, chapati or paratha, flat Indian bread.",
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "CHORDIA FOOD PRODUCTS LIMITED",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Green Chilli Pickle",
+  "handle": "green-chilli-pickle",
+  "vendor": "Pravin",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000366_5-pravin-pickle-green-chilli.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000366_5-pravin-pickle-green-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000366-2_6-pravin-pickle-green-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000366-3_6-pravin-pickle-green-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000366-4_6-pravin-pickle-green-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000366-5_6-pravin-pickle-green-chilli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pravin Pickle - Green Chilli. Pravin Green chilli pickles will make your boring meals into something interesting. Delighting customers for several years, this pickle is a people's favourite and is loved across the country. Pickles add a dash of taste to your life. Pravin Pickles add life to the taste of your meals.\nPreserving the taste perfected through generations, Pravin Pickles bring the reassuring feeling to millions of households that at least something never changes. The range of Pravin Pickle includes Mango, Lime, Chilli, Tomato, Mixed, in a number of variants representing the rich culinary tradition of various parts of India.",
+   "ingredients": "Green Chilli (61%), Salt, Cotton Seed Oil, Mustard, Fenugreek, Turmeric, Lime Juice, Ginger, Acidity Regulator (E 260), Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy Value": "154 kcal",
+    "Protein": "3.5 g",
+    "Fat": "11.2 g",
+    "Saturated Fat": "3.8 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 g",
+    "Carbohydrates": "9.8 g",
+    "Sugar": "4.4 g",
+    "Sodium": "4570 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "CHORDIA FOOD PRODUCTS LIMITED",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Lime Pickle",
+  "handle": "lime-pickle",
+  "vendor": "Pravin",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000365_3-pravin-pickle-lime.jpg"
+    },
+    "barcode": "8903241110168"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000365_3-pravin-pickle-lime.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000365-2_2-pravin-pickle-lime.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ganesh Mango Pickle is prepared from the freshly picked and best variety of mangoes. The best part about this pickle is its enticing aroma. It can be consumed with every meal and can be stored for years. It is also very good for digestion. This pickle is made with the perfect combination of mango pieces, mustard oil, salt, spices, and acetic acid.",
+   "ingredients": "Lime (65%), Edible Common Salt, Cotton Seed Oil, Mustard, Red Chili, Fenugreek, Turmeric, Acidity Regulator - Acetic Acid (E 260)",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Energy Value": "100 Kcal",
+    "Protein": "2.30g",
+    "Fat": "0.5g",
+    "Carbohydrates": "19.5g",
+    "Sugar": "0.8g"
+   },
+   "storageInstructions": "*Store in cool, dry & hygienic place\n*Use spoon while serving",
+   "manufacturerName": "CHORDIA FOOD PRODUCTS LIMITED",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sweet Lime Pickle",
+  "handle": "sweet-lime-pickle",
+  "vendor": "Pravin",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000367_1-pravin-pickle-sweet-lime.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000367_1-pravin-pickle-sweet-lime.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sweet lime pickle is a sweet & tangy pickle where lemons are aged in sugar and spices to get a perfectly balanced taste. Pravin brings one of the most cherished pickles of all times - sweet lime pickle, loved by children and adults alike.",
+   "ingredients": "Lime (6%), Sugar, Edible Common Salt, Acidity Regulator(E26), Spices & Condiments, Preservative - Sodium Benzoate (E211)",
+   "storageInstructions": "*Store in cool, dry & hygienic place\n*Use spoon while serving",
+   "manufacturerName": "CHORDIA FOOD PRODUCTS LIMITED",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chunda",
+  "handle": "chunda",
+  "vendor": "Pravin",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000368_1-pravin-powder-chunda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000368_1-pravin-powder-chunda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mango chunda is a spicy, sour and sweet mango preserve made with raw unripe mangoes and spices. Traditionally chunda is made by keeping the mango-sugar mixture in a glass jar in sunlight.",
+   "ingredients": "Sugar, Green Mango, Salt, Chilli Powder, Cumin, Preservative (E 2110)",
+   "usageInstructions": "It can be enjoyed with curd rice, dosa, paratha and various kinds of dishes.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ambari Kolhapuri Thecha",
+  "handle": "ambari-kolhapuri-thecha",
+  "vendor": "Pravin",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000369_2-pravin-powder-kolhapuri-thecha.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000369_2-pravin-powder-kolhapuri-thecha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000369-2_2-pravin-powder-kolhapuri-thecha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000369-3_2-pravin-powder-kolhapuri-thecha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000369-4_2-pravin-powder-kolhapuri-thecha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000369-5_2-pravin-powder-kolhapuri-thecha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000369-6_1-pravin-powder-kolhapuri-thecha.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the bold and fiery flavours of authentic Kolhapuri cuisine with Pravin Kolhapuri Thecha, a traditional Maharashtrian spicy condiment. Crafted using a time-honoured recipe and premium natural ingredients, this versatile chutney offers a perfect balance of heat and flavour. Experience the rich, authentic taste of high-quality green chilies and garlic, which pair beautifully with chapatis, bhakris, dal, rice, and a variety of everyday Indian meals. Elevate your dining experience with this premium-quality, additive-free condiment that adds a delightful kick to your culinary creations.",
+   "ingredients": "Water, Garlic, Red Chilli (18%), Iodised Salt, Cotton Seed Oil, Lime Juice, Cumin, Acidity Regulator - Acetic Acid (E260), Preservative - Sodium Benzoate (E211)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "30g",
+    "Energy": "120kcal",
+    "Protein": "7.6g",
+    "Carbohydrates": "9g",
+    "Total Sugar": "4.5g",
+    "Added Sugar": "0g",
+    "Total Fat": "6g",
+    "Saturated Fat": "0.2g",
+    "Trans Fat": "<0.001g",
+    "Cholesterol": "<0.5mg",
+    "Sodium": "4517mg"
+   },
+   "storageInstructions": "* Keep in cool, dry and hygienic place for longer shelf life",
+   "manufacturerName": "CHORDIA FOOD PRODUCTS LIMITED",
+   "countryOfOrigin": "India"
+  }
+ }
+]
