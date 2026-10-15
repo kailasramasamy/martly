@@ -1,0 +1,62 @@
+{
+  "brand": "Bajaj",
+  "manufacturer": "Bajaj Consumer Care Ltd.",
+  "feed": "bajaj-almond-drops-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bajaj/logo-c5a15ca8.png",
+  "themeColor": "#7A1E2C",
+  "themeColorSecondary": "#E8B33A",
+  "namePrefix": "Bajaj ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Almond\\ Drops\\ Premium\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Cool\\ Almond\\ Drops\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Almond\\ Drops\\ Almond\\ \\&\\ Argan\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Almond\\ Drops\\ Nourishing\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Almond\\ Drops\\ Serum\\ with\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Almond\\ Drops\\ Moisturising\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    }
+  ]
+}
