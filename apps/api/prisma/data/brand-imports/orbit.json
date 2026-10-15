@@ -1,0 +1,62 @@
+{
+  "brand": "Orbit (Wrigley)",
+  "manufacturer": "Mars Wrigley India Pvt. Ltd.",
+  "feed": "orbit-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/orbit/logo-bac005e4.png",
+  "themeColor": "#1A3C8C",
+  "themeColorSecondary": "#41B6E6",
+  "namePrefix": "Orbit ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Spearmint\\ Sugar\\ Free\\ Chewing\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\ Sugar\\ Free\\ Chewing\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Sweetmint\\ Sugar\\ Free\\ Chewing\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Lemon\\ \\&\\ Lime\\ Sugar\\ Free\\ Chewing\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Winterfrost\\ Sugar\\ Free\\ Chewing\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Raw\\ Mango\\ Sugar\\ Free\\ Chewing\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    }
+  ]
+}
