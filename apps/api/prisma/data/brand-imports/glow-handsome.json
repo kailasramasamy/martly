@@ -1,0 +1,38 @@
+{
+  "brand": "Glow & Handsome",
+  "manufacturer": "Hindustan Unilever Limited",
+  "feed": "glow-handsome-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/glow-handsome/logo-8a8a9af5.png",
+  "themeColor": "#111827",
+  "themeColorSecondary": "#00A3E0",
+  "namePrefix": "Glow & Handsome ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bright\\ Maxx\\ Face\\ Cream\\ For\\ Men$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Instant\\ Brightness\\ Face\\ Wash\\ For\\ Men$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Instant\\ Brightness\\ Face\\ Cream\\ For\\ Men$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    }
+  ]
+}
