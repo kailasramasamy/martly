@@ -1,0 +1,2279 @@
+[
+ {
+  "title": "Aloo Sev",
+  "handle": "aloo-sev",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "42g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135294_3-ramdev-sev-aloo.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135325_3-ramdev-sev-aloo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135294_3-ramdev-sev-aloo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135294-2_3-ramdev-sev-aloo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135294-3_2-ramdev-sev-aloo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135294-4_2-ramdev-sev-aloo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135294-5_2-ramdev-sev-aloo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135294-6_2-ramdev-sev-aloo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135325_3-ramdev-sev-aloo.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "For those who like it different. Potatoes fine version dressed up and ready to go. It is a crispy Indian snack food consisting of crunchy noodles prepared by using Bengal Gram Flour, Tapioca Powder, Tepary Beans Flour & spices. Aloo Sev can be eaten as a standalone snack and can be made at home and stored for weeks in airtight containers.",
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Bikaneri Sev",
+  "handle": "bikaneri-sev",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135293_5-ramdev-bikaneri-sev.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135324_3-ramdev-bikaneri-sev.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135293_5-ramdev-bikaneri-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135293-2_5-ramdev-bikaneri-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135293-3_4-ramdev-bikaneri-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135293-4_4-ramdev-bikaneri-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135293-5_4-ramdev-bikaneri-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135293-6_2-ramdev-bikaneri-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135324_3-ramdev-bikaneri-sev.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This Bikaneri Sev has the perfect taste, the crunch, the flavour. A medley of home fried taste in perfect proportions make for a lovely tea-time snack. It is a popular crispy snack prepared by using taper beans flour and Bengal gram flour (besan) and spices, originating from, Bikaner, a town in the western state of Rajasthan in India. It can be enjoyed as a snack or as a crunchy addition to side dishes.",
+   "ingredients": "Tapery Beans Flour (35%), Refined Palmolein Edible Oil, Bengal Gram Flour (21%), Iodised Salt, Chilli Powder, Spices & Condiments, Raising Agent (INS 500 (ii)), Acidity Regulator (INS 330)",
+   "manufacturerName": "Ramdev",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Ratlami Sev",
+  "handle": "ratlami-sev",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "44g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135292_5-ramdev-ratlami-sev.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135323_3-ramdev-ratlami-sev.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135292_5-ramdev-ratlami-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135292-2_5-ramdev-ratlami-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135292-3_4-ramdev-ratlami-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135292-4_4-ramdev-ratlami-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135292-5_4-ramdev-ratlami-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135292-6_2-ramdev-ratlami-sev.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135323_3-ramdev-ratlami-sev.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "For those who like it hot, it's a perfect shade to spice up your gossip session. Ratlami Sev is a famous snack and is made up of gram flour. It is a favourite snacking food among vegetarians throughout India. The snack is popular in Madhya Pradesh, especially in the cities of Indore, Ujjain and Ratlam. They are commonly served as a snack, side dish, or appetiser.",
+   "ingredients": "Bengal Gram Flour (65%), Refined Palmolein Edible Oil, Iodised Salt, Black Pepper, Chilli Powder, Clove, Ajowain, Compounded Asafoetida, Spices & Condiments",
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Sadi Sev",
+  "handle": "sadi-sev",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "48g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135295_4-ramdev-sev-sadi.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "84",
+    "compare_at_price": "84",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135326_2-ramdev-sev-sadi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135295_4-ramdev-sev-sadi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135295-2_4-ramdev-sev-sadi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135295-3_3-ramdev-sev-sadi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135295-4_3-ramdev-sev-sadi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135295-5_3-ramdev-sev-sadi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135326_2-ramdev-sev-sadi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Crispy, crunchy and mild sev that serves as a perfect topping on many Indian delicacies. This is a very mild and thin sev. It is a popular crispy snack which can be consumed and served as an afternoon snack.",
+   "ingredients": "Bengal Gram Flour (70%), Refined Palmolein Edible Oil, Iodised Salt, Compouded Asafoetida, Turmeric Powder",
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Bhavnagari Gathiya",
+  "handle": "bhavnagari-gathiya",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "44g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135296_4-ramdev-gathiya-bhavnagari.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135327_2-ramdev-bhavnagari-gathiya.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135296_4-ramdev-gathiya-bhavnagari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135296-2_4-ramdev-gathiya-bhavnagari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135296-3_3-ramdev-gathiya-bhavnagari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135296-4_3-ramdev-gathiya-bhavnagari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135296-5_3-ramdev-gathiya-bhavnagari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135327_2-ramdev-bhavnagari-gathiya.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The breakfast favourite of Saurashtra is for you to savour at any time. They are soft and not crunchy like most other Indian snacks. This snack is mild and is mainly made up of Bengal Gram Flour, Black Pepper, and Ajowain. It is one of the most popular snacks and is consumed heavily everywhere.",
+   "ingredients": "Bengal Gram Flour (65%), Refined Palmolein Edible Oil, Iodised Salt, Black Pepper, Ajowain, Raising Agent (INS 500 (ii))",
+   "nutritionalInfo": {
+    "Energy": "616.74 kcal",
+    "Total Fat": "45.66 g",
+    "Saturated Fat": "15.32 g",
+    "Polyunsaturated Fat": "6.90 g",
+    "Monounsaturated Fat": "22.42 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Protein": "14.30 g",
+    "Total Carbohydrate": "37.15 g",
+    "Sugar": "0.78 g",
+    "Dietary Fibre": "5.98 g",
+    "Sodium": "790.34 mg",
+    "Vitamin A": "0.00 IU",
+    "Vitamin C": "0.00 mg",
+    "Calcium": "73.32 mg",
+    "Iron": "3.55 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Once opened, store in an airtight container",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Papdi",
+  "handle": "papdi",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "44g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40158036_3-ramdev-papdi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40158036_3-ramdev-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40158036-2_3-ramdev-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40158036-3_3-ramdev-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40158036-4_3-ramdev-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40158036-5_2-ramdev-papdi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Papdi is a mild preparation made from Bengal Gram flour that can be relished with finely cut & garnished papaya and gram curry. This is a typical Gujarati snack that is soft and crunchy. Snacks don't get any better than this. It is one of the best preparations that is consumed anytime throughout the year.",
+   "ingredients": "Bengal Gram Flour (60%), Refined Palmolein Edible Oil, Iodised Salt, Raising Agent (INS 500(ii)).",
+   "storageInstructions": "Store in a cool and dry place.",
+   "usageInstructions": "Ready to Eat.",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Bhel Mix",
+  "handle": "bhel-mix",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "84",
+    "compare_at_price": "84",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160157_2-ramdev-bhel-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160157_2-ramdev-bhel-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160157-2_2-ramdev-bhel-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160157-3_2-ramdev-bhel-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160157-4_2-ramdev-bhel-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160157-5_1-ramdev-bhel-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ramdev Bhel Mix is a favourite street-side snack famous across India. Made using puffed rice and a mix of spices and chutneys, it is a treat to the taste buds.",
+   "ingredients": "Puffed Rice (15%), Refined Palmolein Edible Oil, Bengal Gram Flour (10%), Peanuts (10%), Bengal Gram Split (8%), Sugar (7%), Refined Wheat Flour, Dry Dates Powder, Corn Flour, Iodised Salt, Tamarind Powder, Chilli Powder, Potato Starch, Black Salt Powder, Compounded Asafoetida, Spices & Condiments, Turmeric Powder",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "562.32 Kcal",
+    "Total Fat": "34.96g",
+    "Saturated Fat": "15.04g",
+    "Polyunsaturated Fat": "4.93g",
+    "Monounsaturated Fat": "14.84g",
+    "Trans Fat": "0.00g",
+    "Cholesterol": "0.00mg",
+    "Protein": "11.28g",
+    "Total Carbohydrate": "50.64g",
+    "Sugar": "7.43g",
+    "Dietary Fibre": "5.18g",
+    "Sodium": "910mg",
+    "Vitamin A": "0.00IU",
+    "Vitamin C": "5.40mg",
+    "Calcium": "80.33mg",
+    "Iron": "4.20mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Once opened, store in an airtight container",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Farali Chevda Sweet",
+  "handle": "farali-chevda-sweet",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "42g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135300_10-ramdev-farali-chevda-sweet.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135331_10-ramdev-chevda-farali-sweet.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135300_10-ramdev-farali-chevda-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135300-2_11-ramdev-farali-chevda-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135300-3_10-ramdev-farali-chevda-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135300-4_10-ramdev-farali-chevda-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135300-5_10-ramdev-farali-chevda-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135300-6_4-ramdev-farali-chevda-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135331_10-ramdev-chevda-farali-sweet.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "It's a perfect snack that fills you up and keeps you going. An irresistible combination of potatoes, nuts, and raisins, lightly seasoned with salt. It is made up of potato and peanut splits with a varied mixture that can be consumed during fasts as well. This is a top-of-the-line product. It is a crispy Indian snack food that can be served and consumed as an afternoon snack.",
+   "ingredients": "Potato (35%), Refined Palmolein Edible Oil, Peanut Split (22%), Sugar Powder (8%), Raisin, Sesame, Fennel, Iodised Salt, Spices & Condiments",
+   "nutritionalInfo": {
+    "Energy": "543.34 kcal",
+    "Total Fat": "33.34 g",
+    "Saturated Fat": "13.68 g",
+    "Polyunsaturated Fat": "3.26 g",
+    "Monounsaturated Fat": "16.10 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Protein": "8.28 g",
+    "Total Carbohydrate": "52.54 g",
+    "Sugar": "15.10 g",
+    "Dietary Fibre": "6.55 g",
+    "Sodium": "714.96 mg",
+    "Vitamin A": "0.00 IU",
+    "Vitamin C": "2.19 mg",
+    "Calcium": "87.90 mg",
+    "Iron": "4.10 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Once opened, store in an airtight container",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Farali Chevda Tikha",
+  "handle": "farali-chevda-tikha",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "44g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135299_9-ramdev-chevda-farali-tikha.jpg"
+    },
+    "barcode": "8902188721543"
+   },
+   {
+    "title": "400g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135330_10-ramdev-farali-chevda-tikha.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135299_9-ramdev-chevda-farali-tikha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135299-2_12-ramdev-chevda-farali-tikha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135299-3_10-ramdev-chevda-farali-tikha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135299-4_10-ramdev-chevda-farali-tikha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135299-5_10-ramdev-chevda-farali-tikha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135299-6_4-ramdev-chevda-farali-tikha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135330_10-ramdev-farali-chevda-tikha.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A spicy snack to cheer you up and keep you demanding when you fast. It is made of potato and peanut splits with a varied mixture that can be consumed during fasts. This is a top-of-the-line product. It is a crispy Indian snack food served and consumed as an afternoon snack.",
+   "ingredients": "Potato (45%), Refined Palmolein Edible Oil, Peanut Split (15%), Sugar Powder (10%), Raisin, Fennel, Sesame, Rock Salt, Chilli Powder, Spices & Condiments",
+   "nutritionalInfo": {
+    "Energy": "552.78Kcal",
+    "Total Fat": "34.94g",
+    "Saturated Fat": "12.88g",
+    "Polyunsaturated Fat": "5.10g",
+    "Monounsaturated Fat": "15.92g",
+    "Trans Fat": "0.00g",
+    "Cholesterol": "0.00mg",
+    "Protein": "8.12g",
+    "Total Carbohydrate": "51.46g",
+    "Sugar": "10.40g",
+    "Dietary Fibre": "4.14g",
+    "Sodium": "833.44mg",
+    "Vitamin A": "0.00IU",
+    "Vitamin C": "1.96mg",
+    "Calcium": "98.55mg",
+    "Iron": "3.95mg"
+   },
+   "storageInstructions": "*Keep in a cool, dry place\n*Away from direct sunlight",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Khatta Mitha Mix",
+  "handle": "khatta-mitha-mix",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "48g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135298_5-ramdev-mix-khatta-mitha.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135298_5-ramdev-mix-khatta-mitha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135298-2_5-ramdev-mix-khatta-mitha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135298-3_4-ramdev-mix-khatta-mitha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135298-4_4-ramdev-mix-khatta-mitha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135298-5_4-ramdev-mix-khatta-mitha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135298-6_2-ramdev-mix-khatta-mitha.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sweet and sour - with an Indian twist. It has a complex medley of flavour that makes for an extra-special snack. This is a perfect mixture for people who like it mild, tasty and tangy. It is a perfectly blended mixture of varieties full of different tastes and flavours. It is a crispy Indian snack food that can be served and consumed as an afternoon snack.",
+   "ingredients": "Bengal Gram Flour (30%), Refined Palmolein Edible Oil, Rice Flakes (15%), Bengal Gram Dal, Red Lentil, Sugar Powder, Peanut, Green Peas, Iodised Salt, Fennel, Spices & Condiments, Acidity Regulator (INS 330), Raising Agent (INS 500 (ii))",
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Makai Chevda",
+  "handle": "makai-chevda",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "48g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40151627_3-ramdev-makai-chevda.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40151628_3-ramdev-makai-chevda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151627_3-ramdev-makai-chevda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151627-2_3-ramdev-makai-chevda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151627-3_3-ramdev-makai-chevda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151627-4_3-ramdev-makai-chevda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151627-5_3-ramdev-makai-chevda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151628_3-ramdev-makai-chevda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ramdev Makai Chevda is a blended mixture of cornflakes with a divine taste of sweetness and tanginess. It is an everyday snack which can be relished daily and a favourite choice during festive season too. It is a crispy Indian snack which combines the goodness of dry fruits and cornflakes mixture. It is also known as corn poha or makai poha and tastes delicious.",
+   "ingredients": "Corn Flakes (35%), Refined Palmolein Edible Oil, Peanut (15%), Sugar Powder (12%), Raisin, Bengal Gram Dal, Dry Coconut Chips, Chilli Powder, Iodised Salt, Spices & Condiments, Fennel, Curry Leaves.",
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Nadiyadi Mix",
+  "handle": "nadiyadi-mix",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "48g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135297_3-ramdev-mix-nadiyadi.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135328_4-ramdev-mix-nadiyadi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135297_3-ramdev-mix-nadiyadi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135297-2_3-ramdev-mix-nadiyadi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135297-3_2-ramdev-mix-nadiyadi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135297-4_2-ramdev-mix-nadiyadi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135297-5_2-ramdev-mix-nadiyadi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135297-6_2-ramdev-mix-nadiyadi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135328_4-ramdev-mix-nadiyadi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Hot & Flattered mix exquisitely seasoned, will leave your craving for more. This is a perfect mixture for people who like it hot & tasty. It is a perfectly blended mixture of varieties full of different tastes and flavours. It is a crispy Indian snack food that can be served and consumed as an afternoon snack.",
+   "ingredients": "Bengal Gram Flour (32%), Refined Palmolein Edible Oil, Rice Flakes (18%), Bengal Gram Dal, Red Lentil, Peanut, Corn Flakes, Sugar Powder, Iodised Salt, Chilli Powder, Sesame, Fennel, Spices & Condiments, Raising Agent (INS 500 (ii)), Acidity Regulator (INS 330)",
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Sev Mamra",
+  "handle": "sev-mamra",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "48g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135301_7-ramdev-sev-mamra.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135332_2-ramdev-sev-mamra.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135301_7-ramdev-sev-mamra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135301-2_8-ramdev-sev-mamra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135301-3_6-ramdev-sev-mamra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135301-4_6-ramdev-sev-mamra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135301-5_5-ramdev-sev-mamra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135301-6_3-ramdev-sev-mamra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135332_2-ramdev-sev-mamra.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "It's an all-time Indian favourite food. A light snack for those times when you don't want to eat anything heavy. It is a very light snack made up of puffed rice, spices blended with a mild sev preparation. It is a crispy Indian snack food that can be served and consumed as an afternoon snack.",
+   "ingredients": "Puffed Rice, Bengal Gram Flour, Refined Palmolein Edible Oil, Iodised Salt, Compounded Asafoetida, Turmeric Powder, Spices & Condiments",
+   "nutritionalInfo": {
+    "Energy": "528.40 kcal",
+    "Total Fat": "28.48 g",
+    "Saturated Fat": "12.55 g",
+    "Polyunsaturated Fat": "4.06 g",
+    "Monounsaturated Fat": "11.48 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Protein": "8.82 g",
+    "Total Carbohydrate": "59.20 g",
+    "Sugar": "1.48 g",
+    "Dietary Fibre": "5.96 g",
+    "Sodium": "490.88 mg",
+    "Vitamin A": "0.00 IU",
+    "Vitamin C": "1.10 mg",
+    "Calcium": "68.85 mg",
+    "Iron": "2.63 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Once opened, store in an airtight container",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Masala Sev Mamra",
+  "handle": "masala-sev-mamra",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "48g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135302_6-ramdev-sev-mamra-masala.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135333_3-ramdev-sev-mamra-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135302_6-ramdev-sev-mamra-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135302-2_7-ramdev-sev-mamra-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135302-3_5-ramdev-sev-mamra-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135302-4_5-ramdev-sev-mamra-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135302-5_4-ramdev-sev-mamra-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135302-6_3-ramdev-sev-mamra-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135333_3-ramdev-sev-mamra-masala.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "It's light for your stomach but packed with slightly spicy flavour and taste. A light snack for those times when you don't want to eat anything heavy. It is a very light snack made up of puffed rice, spices blended with a mild sev preparation. It is a crispy Indian snack food that can be served and consumed as an afternoon snack.",
+   "ingredients": "Puffed Rice (40%), Bengal Gram Flour (27%), Refined Palmolein Edible Oil, Chilli Powder, Iodised Salt, Spices & Condiments, Garlic Powder, Onion Powder, Compounded Asafoetida",
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Chana Dal",
+  "handle": "chana-dal",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "84",
+    "compare_at_price": "84",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135320_2-ramdev-namkeen-chana-dal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135320_2-ramdev-namkeen-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135320-2_2-ramdev-namkeen-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135320-3_1-ramdev-namkeen-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135320-4_1-ramdev-namkeen-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135320-5_1-ramdev-namkeen-chana-dal.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This lentil-based namkeen is a hot Indian favourite. It has a spicy crunch, filled with goodness. Chana dal namkeen is an easy and simple snack that you can enjoy with your tea/coffee or juice. Pair it with finely chopped onion, tomatoes and add a squeeze of lime. They are commonly served as a snack, side dish, or appetiser.",
+   "ingredients": "Bengal Gram Split (78%), Edible Vegetable Oil (Refined Palmolein Oil), Chilli Powder, Iodised Salt, Black Salt Powder, Spices & Condiments",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "500.90 Kcal",
+    "Total Fat": "23.10g",
+    "Saturated Fat": "9.02g",
+    "Polyunsaturated Fat": "3.95g",
+    "Monounsaturated Fat": "10.05g",
+    "Trans Fat": "0.00g",
+    "Cholesterol": "0.00mg",
+    "Protein": "18.90g",
+    "Total Carbohydrate": "54.35g",
+    "Sugar": "2.40g",
+    "Dietary Fibre": "8.87g",
+    "Sodium": "870mg",
+    "Vitamin A": "0.00IU",
+    "Vitamin C": "3.45mg",
+    "Calcium": "81.35mg",
+    "Iron": "4.63mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Once opened, store in an airtight container",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Moong Dal",
+  "handle": "moong-dal",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "42g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135288_5-ramdev-namkeen-moong-dal.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135319_3-ramdev-namkeen-moong-dal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135288_5-ramdev-namkeen-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135288-2_5-ramdev-namkeen-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135288-3_4-ramdev-namkeen-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135288-4_4-ramdev-namkeen-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135288-5_4-ramdev-namkeen-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135288-6_3-ramdev-namkeen-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135319_3-ramdev-namkeen-moong-dal.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Its ready to eat moong dal namkeen. A hit of salt with a bit of crunch and oodles of health and nutrition. Snacks dont get any better than this. This namkeen preparation is mild and can be eaten at any time snack for any age group. One of the best preparations that can commonly be served as a snack, side dish, or appetizer.",
+   "ingredients": "Green Gram Split (78%), Refined Palmolein Edible Oil, Black Salt Powder, Iodised Salt, Spices & Condiments",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Chana Jor Garam",
+  "handle": "chana-jor-garam",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "45g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135291_4-ramdev-chana-jor-garam.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135322_2-ramdev-chana-jor-garam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135291_4-ramdev-chana-jor-garam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135291-2_4-ramdev-chana-jor-garam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135291-3_3-ramdev-chana-jor-garam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135291-4_3-ramdev-chana-jor-garam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135291-5_3-ramdev-chana-jor-garam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135291-6_2-ramdev-chana-jor-garam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135322_2-ramdev-chana-jor-garam.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Chana Jor Garam is a mouthwatering Indian traditional snack made out of Bengal black grams. In India, the snack is sold in conical shaped pressed. The street-side favourite in a modern avatar. Pair it with finely chopped onion, tomatoes and add a squeeze of lime. It can be enjoyed as a snack or as a crunchy addition to side dishes.",
+   "ingredients": "Parched Chick Peas (68%), Refined Palmolein Edible Oil, Iodised Salt, Chilli Powder, Black Salt Powder, Spices & Condiments, Acidity Regulator (INS330)",
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Sing Bhujiya",
+  "handle": "sing-bhujiya",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "44g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135290_4-ramdev-sing-bhujiya.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135321_3-ramdev-sing-bhujiya.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135290_4-ramdev-sing-bhujiya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135290-2_4-ramdev-sing-bhujiya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135290-3_3-ramdev-sing-bhujiya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135290-4_3-ramdev-sing-bhujiya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135290-5_3-ramdev-sing-bhujiya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135290-6_2-ramdev-sing-bhujiya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135321_3-ramdev-sing-bhujiya.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sing bhujiya is the worlds favourite nut coated namkeen which is fried with butter and seasoning. You will love the spiciness and youll just go on and on. Sing bhujia is a medium spicy snack originating in Indian cuisine. Gram flour gives sing bhuija its texture and mango powder and turmeric add a singular, spicy taste.",
+   "ingredients": "Peanut (63%), Bengal Gram Flour (15%), Refined Palmolein Edible Oil, Black Gram Flour, Corn Starch, Iodised Salt, Black Salt Powder, Ajowain, Spices & Condiments.",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Banana Wafer Black Pepper",
+  "handle": "banana-wafer-black-pepper",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "32g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135287_6-ramdev-wafer-banana-black-pepper.jpg"
+    }
+   },
+   {
+    "title": "102g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135306_3-ramdev-wafer-banana-black-pepper.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135287_6-ramdev-wafer-banana-black-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135287-2_8-ramdev-wafer-banana-black-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135287-3_6-ramdev-wafer-banana-black-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135287-4_6-ramdev-wafer-banana-black-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135287-5_6-ramdev-wafer-banana-black-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135287-6_1-ramdev-wafer-banana-black-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135306_3-ramdev-wafer-banana-black-pepper.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "All the richness of black pepper on the outside and sweet on the inside. Savour the distinct flavour freshness and crunch. Banana chips are long thin slices of banana that have been deep fried or baked until crunchy. They are commonly served as a snack, side dish, or appetizer. It can also be consumed during fasts.",
+   "ingredients": "Banana (62%), Refined Palmolein Edible Oil, Iodised Salt, Black Pepper Powder (2%), Black Salt Powder, Spices & Condiments",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Potato Wafer Salted",
+  "handle": "potato-wafer-salted",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "32g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135283_8-ramdev-wafer-potato-salted.jpg"
+    }
+   },
+   {
+    "title": "105g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135303_3-ramdev-potato-wafer-salted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135283_8-ramdev-wafer-potato-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135283-2_6-ramdev-wafer-potato-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135283-3_5-ramdev-wafer-potato-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135283-4_5-ramdev-wafer-potato-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135283-5_5-ramdev-wafer-potato-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135283-6_2-ramdev-wafer-potato-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135303_3-ramdev-potato-wafer-salted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These wafers are classic favourite, crispy, crunchy and perfectly seasoned. You will keep coming back for more. Potato chips or crisps are thin slices of potato that have been deep fried or baked until crunchy. They are commonly served as a snack, side dish, or appetizer. This preparation is also consumed during fasts.",
+   "ingredients": "Potato, Refined Palmolein Edible Oil, Iodised Salt (1.5%)",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Potato Wafer Masala",
+  "handle": "potato-wafer-masala",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "32g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135284_5-ramdev-wafer-potato-masala.jpg"
+    }
+   },
+   {
+    "title": "105g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135304_4-ramdev-potato-wafer-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135284_5-ramdev-wafer-potato-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135284-2_5-ramdev-wafer-potato-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135284-3_3-ramdev-wafer-potato-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135284-4_3-ramdev-wafer-potato-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135284-5_3-ramdev-wafer-potato-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135284-6_1-ramdev-wafer-potato-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135304_4-ramdev-potato-wafer-masala.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These classic wafers come with a tangy twist. It is indeal for people who crave a different talk. Potato chips or crisps are thin slices of potato that have been deep fried or baked until crunchy. They are commonly served as a snack, side dish, or appetizer. This preparation is also consumed during fasts.",
+   "ingredients": "Potato, Refined Palmolein Edible Oil, Sugar Powder, Chilli Powder, Spices & Condiments, Iodised Salt, Acidity Regulator (INS 330), Flavour Enhancer (INS 627,631), Anticaking Agent (INS 551)",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Potato Wafer Cream & Onion",
+  "handle": "potato-wafer-cream-onion",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135285_6-ramdev-wafer-potato-cream-onion.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135285_6-ramdev-wafer-potato-cream-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135285-2_6-ramdev-wafer-potato-cream-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135285-3_4-ramdev-wafer-potato-cream-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135285-4_4-ramdev-wafer-potato-cream-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135285-5_4-ramdev-wafer-potato-cream-onion.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These wafers are classy and subtle and it goes well with dips. It has a class of its own. Potato chips or crisps are thin slices of potato that have been deep fried or baked until crunchy. They are commonly served as a snack, side dish, or appetizer.",
+   "ingredients": "Potato, Refined Palmolein Edible Oil, Milk Solid (1.5%), Sugar Powder, Iodised Salt, Spices & Condiments, Onion Powder (1.2%), Acidity Regulator (INS 330), Flavour Enhancer (INS 627,631), Anticaking Agent (INS 551)",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Potato Wafer Tomato",
+  "handle": "potato-wafer-tomato",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135286_5-ramdev-potato-wafer-tomato.jpg"
+    },
+    "barcode": "8902188710516"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135286_5-ramdev-potato-wafer-tomato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135286-2_5-ramdev-potato-wafer-tomato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135286-3_3-ramdev-potato-wafer-tomato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135286-4_3-ramdev-potato-wafer-tomato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135286-5_3-ramdev-potato-wafer-tomato.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A medley of strong Tomato flavours served with a crunch. A coming together of the pungent taste, just the way you like it. Potato chips or crisps are thin slices of potato that have been deep-fried or baked until crunchy. They are commonly served as a snack, side dish, or appetizer.",
+   "ingredients": "Potato, Refined Palmolein Edible Oil, Sugar Powder, Chilli Powder, Iodised Salt, Spices & Condiments, Tomato Powder (1%), Acidity Regulator (Ins 296, 330, 374), Anticaking Agent (Ins 551), Antioxidant (Ins 300), Flavour Enhancer (Ins 627, 631)",
+   "storageInstructions": "Store in a cool, dry and hygienic place. Keep away from direct sunlight. Once opened, keep in airtight container.",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Masala Wheels",
+  "handle": "masala-wheels",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "43g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184494_5-ramdev-wheels-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184494_5-ramdev-wheels-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184494-2_5-ramdev-wheels-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184494-3_5-ramdev-wheels-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184494-4_5-ramdev-wheels-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184494-5_5-ramdev-wheels-masala.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pump up your taste buds with moderately spicy masala wheels. Kids love this snack Fryums due to its shape like the wheels of a toy train! A light snack for the times you wish to avoid eating anything heavy. It is a crispy Indian snack food which can be served and consumed as an accompaniment or an afternoon snack.",
+   "ingredients": "Refined Wheat Flour, Edible Starch, Refined Palmolein Edible Oil, Sugar Powder, Iodised Salt, Chilli Powder, Black Salt Powder, Black Pepper Powder, Garlic Powder, Onion Powder, Spices & Condiments, Flavour Enhancer (INS 627, 631), Anticaking Agent (INS 551), Acidity Regulator (INS 330)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "477.44 Kcal",
+    "Total Fat": "20.72g",
+    "Saturated Fat": "7.40g",
+    "Polyunsaturated Fat": "2.83g",
+    "Monounsaturated Fat": "10.23g",
+    "Trans Fat": "0.00g",
+    "Cholesterol": "0.00mg",
+    "Protein": "6.74g",
+    "Total Carbohydrate": "66.00g",
+    "Sugar": "3.12g",
+    "Dietary Fibre": "4.10g",
+    "Sodium": "965.00mg",
+    "Vitamin A": "0.00IU",
+    "Vitamin C": "2.85mg",
+    "Calcium": "140.23mg",
+    "Iron": "3.13mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Ramdev Food Products Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Peanut Chikki Box",
+  "handle": "peanut-chikki-box",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135334_3-ramdev-chikki-peanut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135334_3-ramdev-chikki-peanut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135334-2_1-ramdev-chikki-peanut.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A Desi energy bar that is tasty and nutritious. It is the perfect answer to chocolates for kids. It is mainly made up of peanuts, jaggery, and liquid glucose, which is healthy and wholesome. It can be consumed anytime throughout the year as a sweet dish or a healthy alternative to chocolates.",
+   "ingredients": "Peanut, Jaggery, Liquid Glucose, Sugar, Edible Vegetable Oil (Refined Palmolein Oil)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "503.51 Kcal",
+    "Total Fat": "22.55 g",
+    "Saturated Fat": "5.12 g",
+    "Polyunsaturated Fat": "8.11 g",
+    "Monounsaturated Fat": "9.29 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Protein": "11.73 g",
+    "Total Carbohydrate": "63.41 g",
+    "Sugar": "38.61 g",
+    "Dietary Fibre": "3.12 g",
+    "Sodium": "37.66 mg",
+    "Vitamin A": "0.001 IU",
+    "Vitamin C": "0.00 mg",
+    "Calcium": "95.40 mg",
+    "Iron": "3.98 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Once opened, store in an airtight container",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Peanut Chikki Bar Jar",
+  "handle": "peanut-chikki-bar-jar",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135335_5-ramdev-chikki-peanut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135335_5-ramdev-chikki-peanut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135335-2_5-ramdev-chikki-peanut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135335-3_5-ramdev-chikki-peanut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135335-4_5-ramdev-chikki-peanut.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A Desi energy bar that is tasty and nutritious. Its the perfect answer to chocolates for kids. It is mainly made up of Peanuts, Jaggery & Liquid Glucose which is healthy and wholesome. It can be consumed anytime throughout the year as a sweet dish or a healthy alternative to chocolates.",
+   "ingredients": "Peanut, Jaggery, Liquid Glucose, Sugar, Refined Palmolein Edible Oil",
+   "storageInstructions": "Store in a Cool and Dry Place",
+   "manufacturerName": "Ramdev",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015021001843"
+  }
+ },
+ {
+  "title": "Chilli Powder",
+  "handle": "chilli-powder",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008635_1-ramdev-chilli-powder.jpg"
+    },
+    "barcode": "8902188801061"
+   },
+   {
+    "title": "200g",
+    "price": "96",
+    "compare_at_price": "96",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008636_1-ramdev-chilli-powder.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001443_1-ramdev-chilli-powder.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "470",
+    "compare_at_price": "470",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008638_1-ramdev-chilli-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008635_1-ramdev-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008635-2_1-ramdev-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008635-3_1-ramdev-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008635-4_1-ramdev-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008635-5_1-ramdev-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008636_1-ramdev-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001443_1-ramdev-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008638_1-ramdev-chilli-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ramdev Chilli Powder-Agmark Grade: Standard",
+   "ingredients": "Ingredients: Chilli powder, Ref. Rapeseed Oil.",
+   "manufacturerName": "Ramdev Spice world",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Coriander Powder",
+  "handle": "coriander-powder",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001444_6-ramdev-coriander-powder.jpg"
+    },
+    "barcode": "8902188803065"
+   },
+   {
+    "title": "200g",
+    "price": "64",
+    "compare_at_price": "64",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001445_1-ramdev-coriander-powder.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001446_1-ramdev-coriander-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001444_6-ramdev-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001444-2_6-ramdev-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001444-3_6-ramdev-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001444-4_6-ramdev-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001444-5_6-ramdev-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001445_1-ramdev-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001446_1-ramdev-coriander-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Coriander powder is very much needed and it also acts as a thickening agent.\nIt is an essential ingredient of many curries and gravies as it has a mild aroma instigating the appetite.\nKeep in a cool and dry place.",
+   "manufacturerName": "Ramdev Spice world",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turmeric Powder",
+  "handle": "turmeric-powder",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "46",
+    "compare_at_price": "46",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008639_2-ramdev-turmeric-powder.jpg"
+    },
+    "barcode": "8902188802068"
+   },
+   {
+    "title": "200g",
+    "price": "76",
+    "compare_at_price": "76",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001451_1-ramdev-turmeric-powder.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001452_3-ramdev-turmeric-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008639_2-ramdev-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008639-2_1-ramdev-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008639-3_1-ramdev-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008639-4_1-ramdev-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001451_1-ramdev-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001452_3-ramdev-turmeric-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ramdev Turmeric Powder-Agmark Grade: Coarse Ground Standard - Ingredients: Turmeric powder.",
+   "ingredients": "Nutrition Information (approx.) per 100g, Calories 352.97 Kcal, Total Fat 3.89g, Saturated Fat 3.49g, Polyunsaturated Fat 0.24g, Monounsaturated Fat 0.15g, Trans Fat 0g, Cholesterol 0mg, Sodium 85mg, Total Carbohydrate 72.60g, Dietary Fibre 19.82g, Sugars 0g, Protein 6.89g, Vitamin A 2.70mg, Vitamin C 14.02mg, Calcium 146mg, Iron 32.57mg.",
+   "nutritionalInfo": {
+    "Ramdev Turmeric Powder-Agmark Grade": "Coarse Ground Standard - Nutrition Information (approx.) per 100g, Calories 352.97 Kcal, Total Fat 3.89g, Saturated Fat 3.49g, Polyunsaturated Fat 0.24g, Monounsaturated Fat 0.15g, Trans Fat 0g, Cholesterol 0mg, Sodium 85mg, Total Carbohydrate 72.60g, Dietary Fiber 19.82g, Sugars 0g, Protein 6.89g, Vitamin A 2.70mg, Vitamin C 14.02mg, Calcium 146mg, Iron 32.57mg."
+   },
+   "manufacturerName": "Ramdev Spice world",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cumin Powder",
+  "handle": "cumin-powder",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "88",
+    "compare_at_price": "88",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053309_4-ramdev-powder-cumin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053309_4-ramdev-powder-cumin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053309-2_6-ramdev-powder-cumin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053309-3_6-ramdev-powder-cumin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053309-4_6-ramdev-powder-cumin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053309-5_6-ramdev-powder-cumin.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Corn Oil\nPermitted Antioxidant - ( Tertiary Butyl Hydroquinone ) 150ppm\nVitamin A & D.",
+   "manufacturerName": "Ramdev Spice world",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dry Ginger Powder",
+  "handle": "dry-ginger-powder",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053311_1-ramdev-powder-dry-ginger.jpg"
+    },
+    "barcode": "8902188858065"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053311_1-ramdev-powder-dry-ginger.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "For adding flavour in tea and coffee.",
+   "ingredients": "Ginger powder.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strong Hing",
+  "handle": "strong-hing",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008655_1-ramdev-hing-premium-strong.jpg"
+    },
+    "barcode": "8902188812043"
+   },
+   {
+    "title": "100g",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008657_3-ramdev-hing-premium-strong.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008655_1-ramdev-hing-premium-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008655-2_1-ramdev-hing-premium-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008655-3_1-ramdev-hing-premium-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008655-4_1-ramdev-hing-premium-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008657_3-ramdev-hing-premium-strong.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your culinary experience with Ramdev Compounded Hing Premium Strong, a versatile and essential spice for authentic Indian cuisine. Crafted from the resin of the asafoetida plant, this premium hing powder offers a bold and distinctive flavour that adds a unique kick to your dishes. With its strong, onion-garlic aroma, a small amount of this powder can enhance the depth and complexity of your Indian recipes, whether you're simmering curries, seasoning lentils, or adding a touch of authenticity to your vegetarian dishes. Hing is a beloved ingredient in Indian cooking, often used as a substitute for onions and garlic, and this premium blend from Ramdev will elevate your culinary creations to new heights. Discover the transformative power of this versatile spice and elevate your cooking with a pinch or sprinkle of Ramdev Compounded Hing Premium Strong.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "375.18 Kcal",
+    "Total Fat": "4.46 g",
+    "Saturated Fat": "0.82 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "42 mg",
+    "Total Carbohydrate": "75.61 g",
+    "Dietary Fibre": "6.10 g",
+    "Sugars": "0 g",
+    "Protein": "8.40 g",
+    "Vitamin A": "0 ?g",
+    "Vitamin C": "0 mg",
+    "Calcium": "274 mg",
+    "Iron": "2.83 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Ramdev Spice world",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strong Brand Compounded Hing",
+  "handle": "strong-brand-compounded-hing",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001455_1-ramdev-powder-hing.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001455_1-ramdev-powder-hing.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Asafoetida Powder is used commonly in Indian cooking for flavoring. It is added in minute quantities as a powder, or when dissolved in water. It is a very strong onion-garlic aroma and is used in small quantities to Indian dishes.",
+   "manufacturerName": "SAKTI MASALA (P) LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Super Compounded Hing",
+  "handle": "super-compounded-hing",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25g",
+    "price": "73",
+    "compare_at_price": "73",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008651_1-ramdev-hing-super-compunded.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008653_1-ramdev-hing-super-compounded.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008651_1-ramdev-hing-super-compunded.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008653_1-ramdev-hing-super-compounded.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ramdev Super Compounded-Hing Asafoetida - Nutritional Information (approx.) per 100g, Calories 381.89 Kcal. Total Fat 4.65g, Saturated Fat 0.79g, Trans Fat 0g, Cholesterol 0mg, Sodium 46mg, Total Carbohydrate 76.12g, Dietary Fibre 6.44g, Sugars 0g, Protein 8.89g, Vitamin A 0ug, Vitamin C 0mg, Calcium 295mg, Iron 2.79mg.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Calories": "381.89 Kcal",
+    "Total Fat": "4.65 g",
+    "Saturated Fat": "0.79 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "46 mg",
+    "Total Carbohydrate": "76.12 g",
+    "Dietary Fibre": "6.44 g",
+    "Sugars": "0 g",
+    "Protein": "8.89 g",
+    "Vitamin A": "0 ug",
+    "Vitamin C": "0 mg",
+    "Calcium": "295 mg",
+    "Iron": "2.79 mg"
+   },
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Super Garam Masala",
+  "handle": "super-garam-masala",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "66",
+    "compare_at_price": "66",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001447_1-ramdev-powder-garam-masala.jpg"
+    },
+    "barcode": "8902188816065"
+   },
+   {
+    "title": "200g",
+    "price": "128",
+    "compare_at_price": "128",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001448_1-ramdev-garam-masala-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001447_1-ramdev-powder-garam-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001447-2_1-ramdev-powder-garam-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001447-3_1-ramdev-powder-garam-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001447-4_1-ramdev-powder-garam-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001447-5_1-ramdev-powder-garam-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001448_1-ramdev-garam-masala-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Garam Masala is a specialty of North India. Sprayed in tiny quantities at the end of cooking, it includes a highly fragrant and slightly hot fragrance to energy up the dish. It can also be utilized as a flavor enhancer to dishes that require a little taste and kick.",
+   "manufacturerName": "Ramdev Spice world",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Garam Masala",
+  "handle": "gold-garam-masala",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001458_2-ramdev-powder-garam-masala.jpg"
+    },
+    "barcode": "8902188818069"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001458_2-ramdev-powder-garam-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001458-2_1-ramdev-powder-garam-masala.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Garam masala is a captivating spice blend that hails from the vibrant culinary traditions of North India. This fragrant and slightly piquant seasoning is a true delight for the senses. Sprinkled in small quantities towards the end of cooking, garam masala infuses dishes with a warm, aromatic flavour that energises the palate. Its complex blend of spices, including cardamom, cinnamon, cloves, and cumin, adds depth and richness to curries, stews, and rice preparations. Ramdev Premium Garam Masala is a premium quality spice that can also be used as a flavour enhancer, elevating the taste and experience of your favourite Indian dishes.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Ramdev Spice world",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Garam Masala",
+  "handle": "premium-garam-masala",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "52",
+    "compare_at_price": "52",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053306_1-ramdev-powder-garam-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053306_1-ramdev-powder-garam-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053306-2_1-ramdev-powder-garam-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053306-3_1-ramdev-powder-garam-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053306-4_1-ramdev-powder-garam-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053306-5_1-ramdev-powder-garam-masala.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Garam masala is a common additive in various types of this dish. It is usually added to hot oil in which onions have been fried golden brown.",
+   "ingredients": "Black peppercorns, mace, cinnamon, cloves, brown cardamom, nutmeg, green cardamom.",
+   "manufacturerName": "Ramdev Spice world",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kitchen King Masala",
+  "handle": "kitchen-king-masala",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "47",
+    "compare_at_price": "47",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053307_1-ramdev-masala-kitchen-king.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053312_1-ramdev-masala-kitchen-king.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053307_1-ramdev-masala-kitchen-king.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053312_1-ramdev-masala-kitchen-king.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Ramdev Masala Kitchen is used widely in paneer tikka and curries and sprinkled in all the Punjabi dishes\nIn North Indian curries, after the base ingredients are sautéed in oil, red chilli powder and kitchen king masala are added to the curryThis masala imparts an appealing and unique aroma to the curryThe Kitchen king masala is used widely in paneer tikka and curries and sprinkled in all the Punjabi dishesIn North Indian curries, after the base ingredients are sautéed in oil, red chilli powder and kitchen king masala are added to the curryThis masala imparts an appealing and unique aroma to the curry.\nExplore the range of Ramdev Masala products from Chilli to turmeric powder and instant breakfast mixes like Dosa batter, Idly batter and more, on Big Basket",
+   "ingredients": "Ingredients: (In powder form) - Coriander,\nChillies,\nCumin,\nTurmeric,\nFenugreek,\nCurry Leaves,\nDry ginger,\nIodised Salt,\nBlack Pepper,\nCurry Leaves,\nGarlic, Onion,\nCloves,\nCassia,\nAnistar,\nNutmeg,\nCardamom,\nCompounded Asafoetida,\nDry fenugreek leaves,\nMace\nNutritional Facts: Calories: 50\nTotal fat-.5g\nCholesterol-0mg\nSodium-390mg\nTotal carbohydrate-8g\nProtein-2g\nSugars-0g",
+   "usageInstructions": "This spice mix can be used to season various dishes and delicacies like Butter Paneer, chicken and even various everyday vegetable and dal preparations\nA pinch of this masala can be added to the seasoning while cooking.",
+   "storageInstructions": "Keep in a cool, dry place.\nStore in an airtight container once open\nBest before 2 months from date of packing\nAllergen: The product made in a facility that processes Peanuts, Tree nuts, Soya, Milk, Mustard, Sesame, Celery and Cereals.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Panipuri Masala",
+  "handle": "panipuri-masala",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "41",
+    "compare_at_price": "41",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053308_1-ramdev-masala-panipuri.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053308_1-ramdev-masala-panipuri.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pani Puri Masala is used to make the flavourful water for the pani puris by mixing it in water.",
+   "ingredients": "Black Pepper, Tamarind, and Dry Ginger",
+   "manufacturerName": "Ramdev Spice world",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pavbhaji Masala",
+  "handle": "pavbhaji-masala",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "47",
+    "compare_at_price": "47",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053310_1-ramdev-masala-pavbhaji.jpg"
+    },
+    "barcode": "8902188821052"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053310_1-ramdev-masala-pavbhaji.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053310-2_1-ramdev-masala-pavbhaji.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053310-3_1-ramdev-masala-pavbhaji.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053310-4_1-ramdev-masala-pavbhaji.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053310-5_1-ramdev-masala-pavbhaji.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enhancing taste of mix vegetable and preparation of pavbhaji.",
+   "ingredients": "Black Pepper, Souf, Cumin, Clove, Coriander, Turmeric, Chilly Flakes, Sweet Neem Patta, Tamalpatra, Sugar & Salt.",
+   "manufacturerName": "Ramdev Spice world",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kasuri Methi",
+  "handle": "kasuri-methi",
+  "vendor": "Ramdev",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001457_3-ramdev-kasuri-methi.jpg"
+    },
+    "barcode": "8902188829041"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001457_3-ramdev-kasuri-methi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001457-2_2-ramdev-kasuri-methi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001457-3_2-ramdev-kasuri-methi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001457-4_2-ramdev-kasuri-methi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001457-5_2-ramdev-kasuri-methi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kasuri Methi arranged from fenugreek herbs which is dehydrated in hot air in controlled conditions is a great flavor enhancer. It adds taste and feels to vegetables, pulses and lentils. It can be additional to vegetables and dal to develop taste and flavor. It is a great blend of pure spices.",
+   "ingredients": "Dry fenugreek leaves",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Calories": "330 Kcal",
+    "Total Fat": "3.86 g",
+    "Saturated Fat": "0.39 g",
+    "Polyunsaturated Fat": "1.83 g",
+    "Monounsaturated Fat": "0.96 g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0 mg",
+    "Sodium": "1376 mg",
+    "Total Carbohydrate": "50.20 g",
+    "Dietary Fibre": "7 g",
+    "Sugars": "0 g",
+    "Protein": "23.16 g",
+    "Vitamin A": "585 µg",
+    "Vitamin C": "28.92 mg",
+    "Calcium": "473 mg",
+    "Iron": "8.74 mg"
+   },
+   "manufacturerName": "Ramdev Spice world",
+   "countryOfOrigin": "India"
+  }
+ }
+]

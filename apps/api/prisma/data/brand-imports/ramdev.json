@@ -1,0 +1,342 @@
+{
+  "brand": "Ramdev",
+  "manufacturer": "Ramdev Food Products Pvt. Ltd.",
+  "feed": "ramdev-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ramdev/logo-a2c16139.png",
+  "themeColor": "#D71920",
+  "themeColorSecondary": "#F7A600",
+  "namePrefix": "Ramdev ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Aloo\\ Sev$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Bikaneri\\ Sev$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Ratlami\\ Sev$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Sadi\\ Sev$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Bhavnagari\\ Gathiya$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Bhel\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Farali\\ Chevda\\ Sweet$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Farali\\ Chevda\\ Tikha$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Khatta\\ Mitha\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Makai\\ Chevda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Nadiyadi\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Sev\\ Mamra$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Masala\\ Sev\\ Mamra$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Chana\\ Dal$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Moong\\ Dal$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Chana\\ Jor\\ Garam$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Sing\\ Bhujiya$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Banana\\ Wafer\\ Black\\ Pepper$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Banana Chips"
+      ]
+    },
+    {
+      "match": "^Potato\\ Wafer\\ Salted$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Potato\\ Wafer\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Potato\\ Wafer\\ Cream\\ \\&\\ Onion$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Potato\\ Wafer\\ Tomato$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Masala\\ Wheels$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Chikki\\ Box$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Chikki\\ Bar\\ Jar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Coriander\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Cumin\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Dry\\ Ginger\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Strong\\ Hing$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Strong\\ Brand\\ Compounded\\ Hing$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Super\\ Compounded\\ Hing$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Super\\ Garam\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Gold\\ Garam\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Premium\\ Garam\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ King\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Panipuri\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Pavbhaji\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Kasuri\\ Methi$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    }
+  ]
+}
