@@ -1,0 +1,350 @@
+{
+  "brand": "Soulfull (Tata)",
+  "manufacturer": "Tata Consumer Soulfull Pvt. Ltd.",
+  "feed": "soulfull-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/soulfull/logo-fcc6f8dc.png",
+  "themeColor": "#CD2132",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Soulfull ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ragi\\ Bites\\ \\-\\ Choco\\ Fills$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Bites\\ \\-\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Bites\\ \\-\\ Strawberry\\ Fills$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Bites\\ \\-\\ Vanilla\\ Fills$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Bites\\ \\-\\ Mango\\ Fills$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Bites\\ Choco\\ Loopies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Millet\\ Muesli\\ \\-\\ Crunchy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Millet\\ Muesli\\ \\-\\ Fruit\\ \\&\\ Nut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Millet\\ Muesli\\ \\-\\ 0%\\ Added\\ Sugar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Millet\\ Muesli\\ \\-\\ Fruit,\\ Nuts\\ \\&\\ Seeds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Millet\\ Muesli\\ \\-\\ Chocolate\\ \\&\\ Cranberry$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Millet\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Hi\\-Protein\\ Millet\\ Muesli\\ \\-\\ Chocolate,\\ Almond\\ \\&\\ Cranberry$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Probiotic\\ Millet\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Ultimate\\ Slim\\ Care\\ Millet\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Masala\\ Muesli\\ \\-\\ Mast\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Masala\\ Muesli\\ \\-\\ Teekha\\ Twist$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Millet\\ Granola\\ \\-\\ Almonds\\ \\&\\ Cranberries$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Millet\\ Granola\\ \\-\\ Honey,\\ Fruits,\\ Nuts\\ \\&\\ Seeds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Flakes\\ \\-\\ Original$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\+\\ \\-\\ Desi\\ Veggie$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\+\\ \\-\\ Mast\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\+\\ \\-\\ Mast\\ Masala\\ With\\ Dal\\ Shakti$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\+\\ \\-\\ Peppy\\ Curry$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\+\\ \\-\\ Tomato\\ Twist$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Hi\\-Protein\\ No\\ Cook\\ Millet\\ Oats\\ \\-\\ Berry\\ Chia\\ Bliss$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Hi\\-Protein\\ No\\ Cook\\ Millet\\ Oats\\ \\-\\ Dark\\ Cocoa\\ \\&\\ Almond$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Hi\\-Protein\\ No\\ Cook\\ Millet\\ Oats\\ \\-\\ Mast\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Corn\\ Flakes\\+\\ \\-\\ Original$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Corn\\ Flakes\\+\\ \\-\\ Honey\\ \\&\\ Almonds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^No\\ Maida\\ Rusk\\ \\-\\ Elaichi$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Elaichi Rusk"
+      ]
+    },
+    {
+      "match": "^No\\ Maida\\ Rusk\\ \\-\\ Butter$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Bites\\ Wafers\\ \\-\\ Choco$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Bites\\ Wafers\\ \\-\\ Cheese$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Bites\\ Wafers\\ \\-\\ Orange$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Bites\\ Wafers\\ \\-\\ Strawberry$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Nutri\\ Drink\\+\\ \\-\\ Almond$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Nutri\\ Drink\\+\\ \\-\\ Almond,\\ 0%\\ Added\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Nutri\\ Drink\\+\\ \\-\\ Cocoa\\ Lite$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Nutri\\ Drink\\+\\ Kids\\ \\-\\ Chocolate\\ Brownie$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Nutri\\ Drink\\+\\ Kids\\ \\-\\ Cookie\\ \\&\\ Cream$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Smoothix\\ \\-\\ Cocoa\\ Lite$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    }
+  ]
+}
