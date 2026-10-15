@@ -1,0 +1,222 @@
+{
+  "brand": "Everyuth Naturals",
+  "manufacturer": "Zydus Wellness Products Ltd.",
+  "feed": "everyuth-naturals-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/everyuth-naturals/logo-570469f8.png",
+  "themeColor": "#00A3C8",
+  "themeColorSecondary": "#8CC63F",
+  "namePrefix": "Everyuth Naturals ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Anti\\-Pollution\\ Pink\\ Clay\\ \\&\\ Charcoal\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Anti\\ Acne\\ \\&\\ Marks\\ Tulsi\\ Turmeric\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Purifying\\ Neem\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Moisturising\\ Fruit\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Brightening\\ Lemon\\ \\&\\ Cherry\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ \\&\\ Cherry\\ Tan\\ Removal\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Exfoliating\\ Walnut\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Hydrating\\ \\&\\ Exfoliating\\ Walnut\\ Apricot\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Gentle\\ Exfoliating\\ Apricot\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Tan\\ Removal\\ Chocolate\\ \\&\\ Cherry\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Anti\\-Pollution\\ Pink\\ Clay\\ \\&\\ Charcoal\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Anti\\-Pollution\\ Pink\\ Clay\\ \\&\\ Charcoal\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Tan\\ Removal\\ Chocolate\\ \\&\\ Cherry\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Golden\\ Glow\\ Peel\\-Off\\ Face\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Natural\\ Glow\\ Orange\\ Peel\\-Off\\ Face\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Anti\\-Pollution\\ Pink\\ Clay\\ \\&\\ Charcoal\\ Sheet\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Golden\\ Glow\\ 24K\\ Gold\\ Sheet\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Rejuvenating\\ Cucumber\\ \\&\\ Aloe\\ Vera\\ Sheet\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Nourishing\\ Aloe\\ Vera\\ \\&\\ Cucumber\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Pure\\ \\&\\ Light\\ Tan\\ Removal\\ Choco\\ Cherry\\ Night\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Pure\\ \\&\\ Light\\ Tan\\ Removal\\ Choco\\ Cherry\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Pure\\ \\&\\ Light\\ SPF\\ 50\\ Sun\\ Block\\ Lotion\\ \\-\\ Cherry$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Nourishing\\ Cocoa\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Rejuvenating\\ Flora\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Soothing\\ Citrus\\ Aloe\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Sun\\ Care\\ Berries\\ Body\\ Lotion\\ SPF\\ 15$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    }
+  ]
+}
