@@ -1,0 +1,502 @@
+[
+ {
+  "title": "Aloe Vera Soap",
+  "handle": "aloe-vera-soap",
+  "vendor": "Vivel (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "26",
+    "compare_at_price": "26",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005703_2-vivel-bathing-soap-aloe-vera.jpg"
+    },
+    "barcode": "8901725937188"
+   },
+   {
+    "title": "600g",
+    "price": "248",
+    "compare_at_price": "248",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40170229_12-vivel-aloe-vera-bathing-soap-with-vitamin-e-for-soft-glowing-skin-refreshing-fragrance-combo-pack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005703_2-vivel-bathing-soap-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005703-2_1-vivel-bathing-soap-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005703-3_1-vivel-bathing-soap-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005703-4_1-vivel-bathing-soap-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005703-5_1-vivel-bathing-soap-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170229_12-vivel-aloe-vera-bathing-soap-with-vitamin-e-for-soft-glowing-skin-refreshing-fragrance-combo-pack.jpg"
+   }
+  ],
+  "details": {
+   "description": "Indulge in the luxurious experience of Vivel Aloe Vera Soap, a true skin nourishing delight. Enriched with the goodness of Aloe Vera, Vitamin E, and Milk Cream, this soap delivers a deeply invigorating fragrance and a creamy, refreshing lather that leaves your skin feeling satin-soft and glowing. Discover the rejuvenating power of Aloe Vera Cool Mint, which provides 99.9% germ protection and daily nourishment for your skin. Aloe vera is renowned for its hydrating, soothing, and healing properties, helping to moisturise and calm irritated skin while promoting a healthy, radiant complexion. Vitamin E, a powerful antioxidant, protects your skin from environmental stressors and nourishes it to maintain its youthful vitality. Indulge in this luxurious bathing experience and treat your skin to the ultimate in softness and radiance.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cool Mint Bathing Soap",
+  "handle": "cool-mint-bathing-soap",
+  "vendor": "Vivel (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "600g",
+    "price": "264",
+    "compare_at_price": "264",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40225272_2-vivel-bathing-soap-cool-mint.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225272_2-vivel-bathing-soap-cool-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225272-2_1-vivel-bathing-soap-cool-mint.jpg"
+   }
+  ],
+  "details": {
+   "description": "Vivel soap is enriched with a cool mint. It nourishes your skin from deep inside, giving you soft, fresh skin. Vivel cool mint with menthol provides soft and moisturised skin with 99.9% germ protection."
+  }
+ },
+ {
+  "title": "Lotus Oil + Aloe Vera Soap",
+  "handle": "lotus-oil-aloe-vera-soap",
+  "vendor": "Vivel (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "600g",
+    "price": "248",
+    "compare_at_price": "248",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333279_3-vivel-lotus-oil-aloe-vera-soap.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333279_3-vivel-lotus-oil-aloe-vera-soap.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333279-2_2-vivel-lotus-oil-aloe-vera-soap.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333279-3_2-vivel-lotus-oil-aloe-vera-soap.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333279-4_2-vivel-lotus-oil-aloe-vera-soap.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333279-5_2-vivel-lotus-oil-aloe-vera-soap.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333279-6_2-vivel-lotus-oil-aloe-vera-soap.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333279-7_2-vivel-lotus-oil-aloe-vera-soap.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333279-8_2-vivel-lotus-oil-aloe-vera-soap.jpg"
+   }
+  ],
+  "details": {
+   "description": "Experience the gentle care of Vivel Lotus Oil + Aloe Vera Soap, crafted for those who never compromise on quality. Enriched with the goodness of lotus oil and aloe vera, it nourishes and moisturises your Enriched with the goodness of lotus oil and aloe vera, it nourishes and moisturises your skin, leaving it soft and refreshed. Ideal for daily use, this soap combines natural ingredients with a soothing fragrance for radiant skin.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Glycerin Bathing Bar",
+  "handle": "glycerin-bathing-bar",
+  "vendor": "Vivel (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "375g",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40311255_1-vivel-glycerin-bathing-bar-soap-for-soft-moisturized-skin.jpg"
+    },
+    "barcode": "8905110007104"
+   },
+   {
+    "title": "1125g",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40311256_1-vivel-glycerin-bathing-bar-soap-for-soft-moisturised-skin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311255_1-vivel-glycerin-bathing-bar-soap-for-soft-moisturized-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311255-2_1-vivel-glycerin-bathing-bar-soap-for-soft-moisturized-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311255-3_1-vivel-glycerin-bathing-bar-soap-for-soft-moisturized-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311255-4_1-vivel-glycerin-bathing-bar-soap-for-soft-moisturized-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311255-5_1-vivel-glycerin-bathing-bar-soap-for-soft-moisturized-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311255-6_1-vivel-glycerin-bathing-bar-soap-for-soft-moisturized-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311255-7_1-vivel-glycerin-bathing-bar-soap-for-soft-moisturized-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311255-8_1-vivel-glycerin-bathing-bar-soap-for-soft-moisturized-skin.jpg"
+   }
+  ],
+  "details": {
+   "description": "Vivel Glycerin Bathing bar soap is enriched with Pure Glycerin and Almond oil & Vitamin E. It nourishes your skin from deep inside giving you soft moisturised skin. Give yourself a touch of Vivel Softness. Made for those who don't compromise.\nVivel Glycerin Bathing bar soap is enriched with the goodness of Pure Glycerin and Almond Oil\nIt gives you soft and moisturized skin, perfect for dry skin in Winters\nIt also protects your skin from 99.9% germs\nGive in to the care of Vivel Glycerin and Almond Oil and experience a soft, moisturized touch",
+   "usageInstructions": "Wet the bar \nApply gently on your body \nRinse to get a soft skin",
+   "manufacturerName": "A) Itc Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "VedVidya Luxury Skincare Bars",
+  "handle": "vedvidya-luxury-skincare-bars",
+  "vendor": "Vivel (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40266174_2-vivel-vedvidya-luxury-skincare-soaps-for-soft-even-toned-clear-radiant-glowing-skin.jpg"
+    },
+    "barcode": "8905110005636"
+   },
+   {
+    "title": "600g",
+    "price": "360",
+    "compare_at_price": "360",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40266173_2-vivel-vedvidya-luxury-skincare-soaps-for-soft-even-toned-clear-radiant-glowing-skin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40266174_2-vivel-vedvidya-luxury-skincare-soaps-for-soft-even-toned-clear-radiant-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40266174-2_2-vivel-vedvidya-luxury-skincare-soaps-for-soft-even-toned-clear-radiant-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40266174-3_2-vivel-vedvidya-luxury-skincare-soaps-for-soft-even-toned-clear-radiant-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40266174-4_2-vivel-vedvidya-luxury-skincare-soaps-for-soft-even-toned-clear-radiant-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40266174-5_2-vivel-vedvidya-luxury-skincare-soaps-for-soft-even-toned-clear-radiant-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40266174-6_2-vivel-vedvidya-luxury-skincare-soaps-for-soft-even-toned-clear-radiant-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40266174-7_2-vivel-vedvidya-luxury-skincare-soaps-for-soft-even-toned-clear-radiant-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40266174-8_2-vivel-vedvidya-luxury-skincare-soaps-for-soft-even-toned-clear-radiant-glowing-skin.jpg"
+   }
+  ],
+  "details": {
+   "description": "Experience the luxury of ancient beauty baths with Vivel VedVidya, a range of soaps that are inspired by ingredients used in Ancient Beauty Rituals. These soaps nourish your skin and soothe your senses with their enchanting and long-lasting fragrances. The VedVidya Luxury pack offers 3 different variants of soap bars. Crafted with ingredients which find their place in ancient Ayurveda literature, VedVidya beauty soaps help you rediscover the feeling of soft, even-toned and healthy-looking and radiant, glowing skin. Nargis & Kumkumadi oil bathing bar gives a skin that feels soft and even-toned, Nagarmotha & Bahumanjari oil gives a feeling of soft & clear skin, and Chandan & Badamam oil gives a skin that feels soft and radiant. Our soaps are Dermatologically tested and suitable for all skin types including sensitive skin. So go on and discover the secrets of Vivel VedVidya, packaged with love in recyclable material - preserving your beautiful skin and the planet.",
+   "usageInstructions": "Wet the bar.\nApply gently on your body to create a lather.\nRinse to get soft glowing skin.",
+   "manufacturerName": "Itc Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neem Oil + Aloe Vera Body Wash",
+  "handle": "neem-oil-aloe-vera-body-wash",
+  "vendor": "Vivel (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40225274_2-vivel-body-wash-3-in-1-beauty-protection-neem-oil-aloe-vera-moisturizing.jpg"
+    },
+    "barcode": "8905110003038"
+   },
+   {
+    "title": "200ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40225275_2-vivel-body-wash-3-in-1-beauty-protection-neem-oil-aloe-vera-moisturizing.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40225273_3-vivel-body-wash-neem-oil-aloe-vera-shower-creme.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225274_2-vivel-body-wash-3-in-1-beauty-protection-neem-oil-aloe-vera-moisturizing.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225274-2_2-vivel-body-wash-3-in-1-beauty-protection-neem-oil-aloe-vera-moisturizing.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225275_2-vivel-body-wash-3-in-1-beauty-protection-neem-oil-aloe-vera-moisturizing.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225273_3-vivel-body-wash-neem-oil-aloe-vera-shower-creme.jpg"
+   }
+  ],
+  "details": {
+   "description": "Protect your skin with the care of Vivel Neem Oil & Aloe Vera Body wash - it moisturises your skin to make it soft and smooth while protecting it from germs. It gives protection from fuel exhausts, gaseous pollutants, and traffic-related pollutants and cleanses daily toxins and environmental aggressors from urban environments. Get healthy skin with every bath. It contains essential oils of pine, basil and patchouli. It is dermatologically tested and suitable for all skin types. This shower creme gently cleans your skin and its creamy lather leaves you feeling refreshed. It washes off easily and is good to go for a morning bath or a leisurely evening one.",
+   "usageInstructions": "Pour a coin size drop of body wash on wet hands\nMassage into lather with both hands\nGently apply all over body and wash off with water"
+  }
+ },
+ {
+  "title": "Lavender & Almond Oil Body Wash",
+  "handle": "lavender-almond-oil-body-wash",
+  "vendor": "Vivel (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124764_2-vivel-body-wash-lavender-almond-oil-shower-creme.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124766_2-vivel-body-wash-lavender-almond-oil-shower-creme.jpg"
+    }
+   },
+   {
+    "title": "350ml",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124768_9-vivel-body-wash-lavender-almond-oil-nourishing-moisturising-shower-creme.jpg"
+    }
+   },
+   {
+    "title": "450ml",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124770_8-vivel-body-wash-lavender-almond-oil-nourishing-moisturising-shower-creme.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124764_2-vivel-body-wash-lavender-almond-oil-shower-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124764-2_2-vivel-body-wash-lavender-almond-oil-shower-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124764-3_1-vivel-body-wash-lavender-almond-oil-shower-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124766_2-vivel-body-wash-lavender-almond-oil-shower-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124768_9-vivel-body-wash-lavender-almond-oil-nourishing-moisturising-shower-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124770_8-vivel-body-wash-lavender-almond-oil-nourishing-moisturising-shower-creme.jpg"
+   }
+  ],
+  "details": {
+   "description": "Pamper yourself with the care of Vivel Lavender & Almond Oil Body wash, as it moisturises your skin to make it soft and smooth. Indulge yourself with its great fragrance with every bath, as the body wash contains essential oils of pine and patchouli. It nourishes your skin and improves the look and feel of your skin. It refines skin's texture and leaves behind radiant and bright skin. It is dermatologically tested and suitable for all skin types. This shower cream gently cleans your skin, and its creamy lather leaves you feeling refreshed. It washes off easily and is suitable for both morning and evening baths. Vivel Body wash has a high foaming formula and produces a good amount of lather even without a loofah, making it simple to use. It spreads easily without a loofah, making it hassle-free for luxurious body showers. The body wash provides a different bathing experience from soap, leaving behind moisturised, supple, and healthy skin.",
+   "usageInstructions": "1. Pour a coin-sized drop of body wash on wet hands.\n2. Rub hands to lather.\n3. Apply all over the body and wash off with water.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mint & Cucumber Body Wash",
+  "handle": "mint-cucumber-body-wash",
+  "vendor": "Vivel (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124765_2-vivel-body-wash-mint-cucumber-shower-creme.jpg"
+    },
+    "barcode": "8901725938253"
+   },
+   {
+    "title": "200ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124767_2-vivel-body-wash-mint-cucumber-shower-creme.jpg"
+    }
+   },
+   {
+    "title": "400ml",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124769_5-vivel-body-wash-mint-cucumber-cooling-moisturising-shower-creme.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124771_6-vivel-body-wash-mint-cucumber-cooling-moisturising-shower-creme.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124765_2-vivel-body-wash-mint-cucumber-shower-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124765-2_2-vivel-body-wash-mint-cucumber-shower-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124765-3_1-vivel-body-wash-mint-cucumber-shower-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124767_2-vivel-body-wash-mint-cucumber-shower-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124769_5-vivel-body-wash-mint-cucumber-cooling-moisturising-shower-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124771_6-vivel-body-wash-mint-cucumber-cooling-moisturising-shower-creme.jpg"
+   }
+  ],
+  "details": {
+   "description": "Refresh yourself with the cooling care of Vivel Mint & Cucumber Body wash – it moisturizes your skin to make it soft and smooth. Indulge yourself with its great fragrance with every bath. It contains essential oils of lemon and mint cleanses effectively and leaves skin feeling non-oily. It helps to rejuvenate and refreshes dull and tired-looking skin. It is dermatologically tested and suitable for all skin types. This shower creme gently cleans your skin and its creamy lather leaves you feeling refreshed. It washes off easily and is good to go for a quick morning bath or a leisurely evening one.\nVivel Body wash has a high foaming formula. It has a good amount of lather that can be made even without a loofah. So drop, rub and apply, it is that simple! The body wash is easy to use and spreads without a loofah. This liquid body wash is hassle-free “no hair wetting” bucket baths and for luxurious body showers. This body wash is suitable for women and men. A bathing experience different from soap, leaving behind moisturized hence, supple and healthy skin. This body wash washes away germs and protects from damage by pollution. Every drop is fresh and untouched.",
+   "usageInstructions": "Pour a coin size drop of body wash on wet hands\nRub hands to lather\nApply all over the body and wash off with water",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Glycerin & Honey Body Wash",
+  "handle": "glycerin-honey-body-wash",
+  "vendor": "Vivel (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40225161_6-vivel-moisturising-body-wash-with-glycerin-honey-for-soft-glowing-skin.jpg"
+    },
+    "barcode": "8905110004349"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225161_6-vivel-moisturising-body-wash-with-glycerin-honey-for-soft-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225161-2_6-vivel-moisturising-body-wash-with-glycerin-honey-for-soft-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225161-3_5-vivel-moisturising-body-wash-with-glycerin-honey-for-soft-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225161-4_5-vivel-moisturising-body-wash-with-glycerin-honey-for-soft-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225161-5_5-vivel-moisturising-body-wash-with-glycerin-honey-for-soft-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225161-6_5-vivel-moisturising-body-wash-with-glycerin-honey-for-soft-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225161-7_4-vivel-moisturising-body-wash-with-glycerin-honey-for-soft-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225161-8_4-vivel-moisturising-body-wash-with-glycerin-honey-for-soft-glowing-skin.jpg"
+   }
+  ],
+  "details": {
+   "description": "Nourish your skin with the care of Vivel Glycerin & Honey Body wash, it moisturizes your skin to make it soft and smooth. Indulge yourself with its great fragrance and get glowing skin with every bath. This shower gel gently cleans your skin and the creamy lather leaves you feeling moisturized and refreshed. This body wash is suitable for women and men - a bathing experience different from soap.",
+   "usageInstructions": "Pour a coin-sized drop of body wash on a wet loofah, massage loofah with both hands to create a rich creamy lather, gentle scrub all over your body and rinse off.\nThe product can be used without a loofah as well -pour a coin size drop of body wash on wet hands, rub hands to lather, apply all over the body and wash off with water",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
+ }
+]

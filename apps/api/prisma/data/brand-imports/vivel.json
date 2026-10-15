@@ -1,0 +1,86 @@
+{
+  "brand": "Vivel (ITC)",
+  "manufacturer": "ITC Limited",
+  "feed": "vivel-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/vivel/logo-f26af5a4.png",
+  "themeColor": "#A3238E",
+  "themeColorSecondary": "#00A651",
+  "namePrefix": "Vivel ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Aloe\\ Vera\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Cool\\ Mint\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Lotus\\ Oil\\ \\+\\ Aloe\\ Vera\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Glycerin\\ Bathing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^VedVidya\\ Luxury\\ Skincare\\ Bars$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Neem\\ Oil\\ \\+\\ Aloe\\ Vera\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Lavender\\ \\&\\ Almond\\ Oil\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Mint\\ \\&\\ Cucumber\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Glycerin\\ \\&\\ Honey\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    }
+  ]
+}
