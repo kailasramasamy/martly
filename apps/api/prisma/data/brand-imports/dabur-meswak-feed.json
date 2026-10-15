@@ -1,0 +1,71 @@
+[
+ {
+  "title": "Meswak Toothpaste",
+  "handle": "meswak-toothpaste",
+  "vendor": "Dabur",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40022608_10-dabur-meswak-toothpaste.jpg"
+    },
+    "barcode": "8901207033216"
+   },
+   {
+    "title": "200g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263862_11-dabur-meswak-toothpaste.jpg"
+    }
+   },
+   {
+    "title": "300g",
+    "price": "193",
+    "compare_at_price": "193",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/271649_8-dabur-meswak-toothpaste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022608_10-dabur-meswak-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022608-2_2-dabur-meswak-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022608-3_2-dabur-meswak-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022608-4_1-dabur-meswak-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022608-5_1-dabur-meswak-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022608-6_1-dabur-meswak-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022608-7_1-dabur-meswak-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022608-8_1-dabur-meswak-toothpaste.jpg"
+   }
+  ],
+  "details": {
+   "description": "If you want to start your day with something that is truly unique, go grab a pack of Dabur Meswak today. Dabur Meswak is made from the pure extract of the rare Miswak herb, which grows slowly, resisting the brutal forces of nature amidst the sand dunes of Africa and South Asia. Even a small portion of this herb is capable of providing complete oral care to you. The ingredients of the Miswak herb truly make Dabur Meswak unique. It has resins that form a layer over the enamel - protecting against caries; silica which removes stains; alkaloids exert a bactericidal effect and stimulatory action on gingival. Essential oils stimulate the flow of saliva, which works as an antiseptic. Vitamin C helps in healing and repair of tissues, etc. The best part of this unique toothpaste is the amazing mouthfeel it leaves behind, which lasts the whole day. What's more, Dabur Meswak is also a non-fluoride toothpaste, which makes it different from 80% of the regular toothpaste that is in the market today. Hence, it is a smarter option as excess fluoride can lead to dental fluorosis. So choose well for your family. Choose Dabur Meswak today.",
+   "usageInstructions": "Brush thoroughly at least twice a day or as directed by a dentist or physician. Children under 6 years of age should have adult supervision and only a pea-sized amount. Do not swallow. |",
+   "manufacturerName": "Dabur India Ltd.",
+   "countryOfOrigin": "India"
+  }
+ }
+]
