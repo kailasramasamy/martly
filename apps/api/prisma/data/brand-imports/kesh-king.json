@@ -1,0 +1,78 @@
+{
+  "brand": "Kesh King (Emami)",
+  "manufacturer": "Emami Ltd.",
+  "feed": "kesh-king-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kesh-king/logo-56ce574b.png",
+  "themeColor": "#1F5C35",
+  "themeColorSecondary": "#D4B05A",
+  "namePrefix": "Kesh King ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Gold\\ Anti\\-Hairfall\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Gold\\ Anti\\-Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Gold\\ Ayurvedic\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Onion\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Anti\\-Hairfall\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Organics\\ Fermented\\ Rice\\ Water\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Organics\\ Neem\\ Shampoo\\ with\\ Bhringraj$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Organic\\ Onion\\ Shampoo\\ with\\ Curry\\ Leaves$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    }
+  ]
+}
