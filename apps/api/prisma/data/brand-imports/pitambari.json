@@ -1,0 +1,86 @@
+{
+  "brand": "Pitambari",
+  "manufacturer": "Pitambari Products Pvt. Ltd.",
+  "feed": "pitambari-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pitambari/logo-8fab5565.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Pitambari ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Shining\\ Powder\\ \\-\\ Copper,\\ Brass\\ \\&\\ Steel$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Rooperi\\ Instant\\ Contact\\ Silver\\ Shine$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Deep\\ Shakti\\ Diya\\ \\&\\ Lamp\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Drain\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Antibacterial\\ Dishwash\\ Bar$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Bar"
+      ]
+    },
+    {
+      "match": "^Antibacterial\\ Dishwash\\ Gel$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Dishwash\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Ruchiyana\\ Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Sanit\\ All\\ Toilet\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    }
+  ]
+}
