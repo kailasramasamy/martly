@@ -38,6 +38,7 @@ import { FestiveHero } from "../../components/home/FestiveHero";
 import { BannerCarousel } from "../../components/home/BannerCarousel";
 import { PlusPromoStrip } from "../../components/PlusPromoStrip";
 import type { Store, StoreProduct, HomeFeed, Banner, FestiveTile } from "../../lib/types";
+import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const H_PADDING = 16;
@@ -46,6 +47,7 @@ const H_PADDING = 16;
 const CATEGORY_TILE_SIZE = Math.floor((SCREEN_WIDTH - H_PADDING * 2 - 32 - 12 * 3) / 4);
 
 export default function HomeScreen() {
+  const tabBarScroll = useTabBarAutoHide();
   const { stores, selectedStore, setSelectedStore, loading: storesLoading, userArea, refreshStores } = useStore();
   const { isMember } = useMembership();
   const { isBasketMode } = useBasketMode();
@@ -197,9 +199,9 @@ export default function HomeScreen() {
     <ProductActionsProvider store={selectedStore ?? null}>
       <View style={styles.container}>
         {/* ── Fixed Header ── */}
-        <HomeHeader store={selectedStore} userArea={userArea} onPickStore={() => setShowStorePicker(true)} tint={headerTint} />
+        <HomeHeader store={selectedStore} userArea={userArea} onPickStore={() => setShowStorePicker(true)} tint={headerTint} collapsed={tabBarScroll.headerCollapsed} />
 
-        <ScrollView
+        <ScrollView {...tabBarScroll.scrollProps}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.scrollContent}
           refreshControl={

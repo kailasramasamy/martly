@@ -29,7 +29,7 @@ export async function deliveryTierRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        orderBy: { minDistance: "asc" },
+        orderBy: [{ minDistance: "asc" }, { id: "asc" }],
         include: { store: { select: { id: true, name: true } } },
       }),
       app.prisma.deliveryTier.count({ where }),

@@ -19,18 +19,44 @@ export interface SearchResult {
 const semanticCache = new Map<string, { terms: string[]; expiry: number }>();
 
 const MAX_KEYWORD_RESULTS = 200;
+// Admins page through every match (a brand can have hundreds of products), so the ranked list runs deeper
+const MAX_ADMIN_RESULTS = 2000;
 // Brand turns are weighted: a brand's n-th product scores n × (BRAND_TURN_BASE − popularity), so a 100-popularity
 // leader gets a slot every 20 points and a 50-popularity brand every 70. Intent-only products (aisle match, name
 // doesn't contain the query) carry a penalty so "razor" shows razors before the aisle's shaving brushes.
 const BRAND_TURN_BASE = 120;
 const INTENT_ONLY_PENALTY = 40;
 
-const inStore = (storeId: string) => Prisma.sql`EXISTS (
-  SELECT 1 FROM store_products sp WHERE sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true
-)`;
+/**
+ * What a search runs over. Shoppers see a store's listed, active products; admins also see unlisted listings
+ * (store scope) or the whole catalog (no storeId), including inactive products.
+ */
+interface SearchScope {
+  storeId?: string;
+  listedOnly?: boolean;
+}
+
+const inScope = ({ storeId, listedOnly }: SearchScope) => {
+  if (!storeId) return Prisma.sql`TRUE`;
+  return listedOnly
+    ? Prisma.sql`p.is_active = true AND EXISTS (
+        SELECT 1 FROM store_products sp WHERE sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true)`
+    : Prisma.sql`EXISTS (SELECT 1 FROM store_products sp WHERE sp.product_id = p.id AND sp.store_id = ${storeId})`;
+};
+
+const salesScope = ({ storeId }: SearchScope) => (storeId ? Prisma.sql`o.store_id = ${storeId}` : Prisma.sql`TRUE`);
+
+interface SearchOptions {
+  minResults?: number;
+  exact?: boolean;
+  /** LLM query expansion as a last resort — shoppers only */
+  semantic?: boolean;
+  limit?: number;
+}
 
 export function normalizeQuery(q: string): string {
-  return q.toLowerCase().trim().replace(/\s+/g, " ");
+  // Apostrophes are dropped on both sides so "lays" and "lay's" both find "Lay's"
+  return q.toLowerCase().replace(/['\u2019`]/g, "").trim().replace(/\s+/g, " ");
 }
 
 /**
@@ -48,31 +74,41 @@ export async function searchProducts(
   query: string,
   { minResults = 3, exact = false }: { minResults?: number; exact?: boolean } = {},
 ): Promise<SearchResult> {
+  return runSearch(prisma, { storeId, listedOnly: true }, query, { minResults, exact, semantic: true, limit: MAX_KEYWORD_RESULTS });
+}
+
+/** Same ranking for the Manage persona: unlisted listings / whole catalog, no LLM expansion, deeper result list */
+export function searchProductsForAdmin(prisma: PrismaClient, scope: { storeId?: string }, query: string): Promise<SearchResult> {
+  return runSearch(prisma, { storeId: scope.storeId, listedOnly: false }, query, { semantic: false, limit: MAX_ADMIN_RESULTS });
+}
+
+async function runSearch(prisma: PrismaClient, scope: SearchScope, query: string, opts: SearchOptions): Promise<SearchResult> {
+  const { minResults = 3, exact = false, semantic = false, limit = MAX_KEYWORD_RESULTS } = opts;
   const q = normalizeQuery(query);
   if (!q) return { productIds: [], meta: { strategy: "keyword" } };
 
   // Step 1: Keyword match
-  const keywordIds = await keywordSearch(prisma, q, storeId);
+  const keywordIds = await keywordSearch(prisma, q, scope, limit);
   if (keywordIds.length >= minResults || exact) {
     return { productIds: keywordIds, meta: { strategy: "keyword" } };
   }
 
-  // Step 2: Spelling correction, then trigram fuzzy match (catches typos via search_text and aliases)
-  const corrected = await correctQuery(prisma, storeId, q);
+  // Step 2: Spelling correction (vocabulary is per store), then trigram fuzzy match (catches typos via search_text and aliases)
+  const corrected = await correctQuery(prisma, scope.storeId, q);
   if (corrected) {
-    const correctedIds = await keywordSearch(prisma, corrected, storeId);
+    const correctedIds = await keywordSearch(prisma, corrected, scope, limit);
     if (correctedIds.length > keywordIds.length) {
       return { productIds: dedup([...correctedIds, ...keywordIds]), meta: { strategy: "fuzzy", correctedQuery: corrected } };
     }
   }
-  const fuzzyIds = await trigramSearch(prisma, q, storeId);
+  const fuzzyIds = await trigramSearch(prisma, q, scope);
   const mergedAfterFuzzy = dedup([...keywordIds, ...fuzzyIds]);
   if (mergedAfterFuzzy.length >= minResults) {
     return { productIds: mergedAfterFuzzy, meta: { strategy: "fuzzy" } };
   }
 
   // Step 3: Full-text search (stemming, ranking)
-  const ftsIds = await fullTextSearch(prisma, q, storeId);
+  const ftsIds = await fullTextSearch(prisma, q, scope);
   const mergedAfterFts = dedup([...mergedAfterFuzzy, ...ftsIds]);
   if (mergedAfterFts.length >= minResults) {
     return { productIds: mergedAfterFts, meta: { strategy: "fulltext" } };
@@ -85,7 +121,7 @@ export async function searchProducts(
   }
 
   // Step 4: Semantic expansion via LLM (only when 0 results from all DB strategies)
-  const expanded = await semanticExpand(prisma, q);
+  const expanded = semantic ? await semanticExpand(prisma, q) : null;
   if (!expanded) {
     return { productIds: [], meta: { strategy: "keyword" } };
   }
@@ -93,9 +129,9 @@ export async function searchProducts(
   // Re-run search with expanded terms
   const expandedIds: string[] = [];
   for (const term of expanded) {
-    const kw = await keywordSearch(prisma, term, storeId);
-    const tg = await trigramSearch(prisma, term, storeId);
-    const ft = await fullTextSearch(prisma, term, storeId);
+    const kw = await keywordSearch(prisma, term, scope, limit);
+    const tg = await trigramSearch(prisma, term, scope);
+    const ft = await fullTextSearch(prisma, term, scope);
     expandedIds.push(...kw, ...tg, ...ft);
   }
 
@@ -107,7 +143,8 @@ export async function searchProducts(
 
 // Brands with their lowercased name minus the maker ("Surf Excel (HUL)" → "surf excel"), computed once per brand
 export const brandNamesCte = Prisma.sql`brand_names AS MATERIALIZED (
-  SELECT id, name, popularity, lower(regexp_replace(name, '\\s*\\([^)]*\\)', '', 'g')) AS clean FROM brands
+  SELECT id, name, popularity,
+    regexp_replace(lower(regexp_replace(name, '\\s*\\([^)]*\\)', '', 'g')), '[''\u2019]', '', 'g') AS clean FROM brands
 )`;
 
 /**
@@ -125,13 +162,14 @@ END`;
 
 // Every stocked product with its intent flag, name tier and taxonomy hit for the query
 // (needs the `term`, `sales` and brand_names CTEs)
-const matchedProducts = (q: string, storeId: string) => Prisma.sql`
+const matchedProducts = (q: string, scope: SearchScope) => Prisma.sql`
   SELECT p.id, p.name, p.brand_id, COALESCE(b.popularity, 0) AS popularity, COALESCE(sales.n, 0) AS sold,
     COALESCE(${q} = ANY(s.search_terms), false) AS intent,
     CASE
       WHEN own.name ~* ('\\m' || term.rx || '\\M') THEN 0
       WHEN own.name ~* ('\\m' || term.rx) THEN 1
-      WHEN own.name ILIKE '%' || ${q} || '%' THEN 2
+      WHEN own.name ILIKE '%' || ${q} || '%'
+        OR (SELECT bool_and(own.name ~* ('\\m' || w)) FROM unnest(term.words) w) THEN 2
       WHEN EXISTS (
         SELECT 1 FROM jsonb_each(COALESCE(p.translations, '{}'::jsonb)) t
         WHERE t.value->>'name' ILIKE '%' || ${q} || '%'
@@ -149,24 +187,27 @@ const matchedProducts = (q: string, storeId: string) => Prisma.sql`
   LEFT JOIN subcategories s ON s.id = p.subcategory_id
   LEFT JOIN categories c ON c.id = s.category_id
   LEFT JOIN sales ON sales.product_id = p.id
-  CROSS JOIN LATERAL (SELECT ${nameForQuery(q)} AS name) own
-  WHERE p.is_active = true AND ${inStore(storeId)}`;
+  CROSS JOIN LATERAL (SELECT regexp_replace(${nameForQuery(q)}, '[''\u2019]', '', 'g') AS name) own
+  WHERE ${inScope(scope)}`;
 
-async function keywordSearch(prisma: PrismaClient, q: string, storeId: string): Promise<string[]> {
+async function keywordSearch(prisma: PrismaClient, q: string, scope: SearchScope, limit: number): Promise<string[]> {
   // Intent first: products in a subcategory whose search terms include the query ("shaving" → Razor & Blades),
   // brands taking weighted turns by popularity, each brand leading with its name matches.
   // Then name tiers: 0 whole word, 1 word-start, 2 substring, 3 translated name, 4 description only. Within a tier:
   // category name hit ("oil" → Edible Oils), then subcategory hit (Hair Oil), then brands round-robin
   // (best-known brands take turns more often) so one brand's A–Z run can't fill the top rows.
   const rows = await prisma.$queryRaw<{ id: string; tier: number }[]>`
-    WITH term AS (SELECT regexp_replace(${q}, '([^[:alnum:] ])', '\\\\\\1', 'g') AS rx),
+    WITH term AS (
+      SELECT rx, string_to_array(rx, ' ') AS words
+      FROM (SELECT regexp_replace(${q}, '([^[:alnum:] ])', '\\\\\\1', 'g') AS rx) e
+    ),
     sales AS (
       SELECT oi.product_id, COUNT(*) AS n FROM order_items oi JOIN orders o ON o.id = oi.order_id
-      WHERE o.store_id = ${storeId} AND o.status <> 'CANCELLED'
+      WHERE ${salesScope(scope)} AND o.status <> 'CANCELLED'
       GROUP BY oi.product_id
     ),
     ${brandNamesCte},
-    matched AS MATERIALIZED (${matchedProducts(q, storeId)}),
+    matched AS MATERIALIZED (${matchedProducts(q, scope)}),
     banded AS (
       SELECT *,
         CASE WHEN intent THEN 0 ELSE 1 END AS band,
@@ -183,7 +224,7 @@ async function keywordSearch(prisma: PrismaClient, q: string, storeId: string): 
     ORDER BY band, band_tier, band_taxonomy,
       brand_round * (${BRAND_TURN_BASE} - popularity) + CASE WHEN intent AND tier IS NULL THEN ${INTENT_ONLY_PENALTY} ELSE 0 END,
       popularity DESC, sold DESC, name
-    LIMIT ${MAX_KEYWORD_RESULTS}
+    LIMIT ${limit}
   `;
   return tightestTier(rows).map((r) => r.id);
 }
@@ -197,7 +238,7 @@ function tightestTier<T extends { tier: number }>(rows: T[]): T[] {
   return rows;
 }
 
-async function trigramSearch(prisma: PrismaClient, q: string, storeId: string): Promise<string[]> {
+async function trigramSearch(prisma: PrismaClient, q: string, scope: SearchScope): Promise<string[]> {
   // Search both search_text and search_aliases
   const rows = await prisma.$queryRaw<{ id: string; score: number }[]>`
     SELECT DISTINCT p.id, GREATEST(
@@ -205,7 +246,7 @@ async function trigramSearch(prisma: PrismaClient, q: string, storeId: string): 
       COALESCE((SELECT MAX(similarity(sa.alias, ${q})) FROM search_aliases sa WHERE sa.product_id = p.id), 0)
     ) as score
     FROM products p
-    WHERE p.is_active = true AND ${inStore(storeId)}
+    WHERE ${inScope(scope)}
       AND (
         p.search_text % ${q}
         OR EXISTS (SELECT 1 FROM search_aliases sa WHERE sa.product_id = p.id AND sa.alias % ${q})
@@ -216,11 +257,11 @@ async function trigramSearch(prisma: PrismaClient, q: string, storeId: string): 
   return rows.map((r) => r.id);
 }
 
-async function fullTextSearch(prisma: PrismaClient, q: string, storeId: string): Promise<string[]> {
+async function fullTextSearch(prisma: PrismaClient, q: string, scope: SearchScope): Promise<string[]> {
   const rows = await prisma.$queryRaw<{ id: string; rank: number }[]>`
     SELECT p.id, ts_rank(to_tsvector('english', p.search_text), plainto_tsquery('english', ${q})) as rank
     FROM products p
-    WHERE p.is_active = true AND ${inStore(storeId)}
+    WHERE ${inScope(scope)}
       AND to_tsvector('english', p.search_text) @@ plainto_tsquery('english', ${q})
     ORDER BY rank DESC
     LIMIT 50

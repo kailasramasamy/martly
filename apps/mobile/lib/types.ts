@@ -221,11 +221,20 @@ export interface RecipeDetail {
   items: RecipeIngredient[];
 }
 
+export interface FestiveAisle {
+  id: string;
+  name: string;
+  imageUrl: string | null;
+  translations: Translations | null;
+}
+
 export interface FestiveTile {
   id: string;
   title: string;
   translations: CollectionTranslations | null;
   imageUrl: string;
+  /** The tile's aisles this store has in stock, in the tile's order */
+  subcategories: FestiveAisle[];
 }
 
 export interface FestiveHero {

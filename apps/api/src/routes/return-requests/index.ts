@@ -4,7 +4,7 @@ import { RETURN_WINDOW_HOURS } from "@martly/shared/constants";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgUser, getOrgStoreIds } from "../../middleware/org-scope.js";
+import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { sendWalletNotification } from "../../services/notification.js";
 
 export async function returnRequestRoutes(app: FastifyInstance) {
@@ -85,7 +85,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
     const [items, total] = await Promise.all([
       app.prisma.returnRequest.findMany({
         where,
-        orderBy: { createdAt: "desc" },
+        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
         skip: (pg - 1) * ps,
         take: ps,
         include: {
@@ -121,7 +121,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
   });
 
   // ── GET / — Admin lists return requests (org-scoped) ───────
-  app.get("/", { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] }, async (request) => {
+  app.get("/", { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] }, async (request, reply) => {
     const user = getOrgUser(request);
     const { page = "1", pageSize = "20", status, storeId, search } = request.query as {
       page?: string; pageSize?: string; status?: string; storeId?: string; search?: string;
@@ -133,7 +133,10 @@ export async function returnRequestRoutes(app: FastifyInstance) {
     const where: any = {};
     if (storeIds) where.storeId = { in: storeIds };
     if (status) where.status = status;
-    if (storeId) where.storeId = storeId;
+    if (storeId) {
+      if (!(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied to this store");
+      where.storeId = storeId;
+    }
     if (search) {
       where.OR = [
         { order: { id: { contains: search, mode: "insensitive" } } },
@@ -145,7 +148,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
     const [items, total] = await Promise.all([
       app.prisma.returnRequest.findMany({
         where,
-        orderBy: { createdAt: "desc" },
+        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
         skip: (pg - 1) * ps,
         take: ps,
         include: {

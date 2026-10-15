@@ -20,19 +20,23 @@ function liveHeroWhere(organizationId: string) {
   };
 }
 
+// The aisles this store has something in stock for, keyed by id, with what the screen's pills show
 async function stockedSubcategories(prisma: PrismaClient, storeId: string, subcategoryIds: string[]) {
-  const rows = await prisma.product.findMany({
-    where: { subcategoryId: { in: subcategoryIds }, isActive: true, storeProducts: { some: { storeId, isActive: true, stock: { gt: 0 } } } },
-    select: { subcategoryId: true },
-    distinct: ["subcategoryId"],
-  });
-  return new Set(rows.map((r) => r.subcategoryId));
+  return new Map((await prisma.subcategory.findMany({
+    where: {
+      id: { in: subcategoryIds },
+      products: { some: { isActive: true, storeProducts: { some: { storeId, isActive: true, stock: { gt: 0 } } } } },
+    },
+    select: { id: true, name: true, imageUrl: true, translations: true },
+  })).map((s) => [s.id, s]));
 }
 
 // Tiles whose aisles are empty at this store are hidden, keeping whole rows so the grid never has a gap
 async function forStore(prisma: PrismaClient, storeId: string, collection: HeroCollection) {
   const stocked = await stockedSubcategories(prisma, storeId, collection.tiles.flatMap((t) => t.subcategoryIds));
-  const tiles = collection.tiles.filter((t) => t.subcategoryIds.some((id) => stocked.has(id)));
+  const tiles = collection.tiles
+    .map((t) => ({ ...t, subcategories: t.subcategoryIds.flatMap((id) => stocked.get(id) ?? []) }))
+    .filter((t) => t.subcategories.length > 0);
   const shown = tiles.slice(0, tiles.length - (tiles.length % GRID_COLUMNS));
   if (shown.length === 0) return null;
   const ta = (collection.translations as { ta?: { heroTitle?: string } } | null)?.ta?.heroTitle;
@@ -42,7 +46,7 @@ async function forStore(prisma: PrismaClient, storeId: string, collection: HeroC
     translations: ta ? { ta: { title: ta } } : null,
     imageUrl: collection.heroImageUrl as string,
     theme: collection.heroTheme as { background: string; title: string; dark: boolean },
-    tiles: shown.map(({ id, title, translations, imageUrl }) => ({ id, title, translations, imageUrl })),
+    tiles: shown.map(({ id, title, translations, imageUrl, subcategories }) => ({ id, title, translations, imageUrl, subcategories })),
   };
 }
 

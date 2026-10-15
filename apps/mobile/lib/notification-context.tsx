@@ -46,6 +46,7 @@ const TYPE_CONFIG: Record<string, { icon: keyof typeof Ionicons.glyphMap; bg: st
   GENERAL: { icon: "information-circle", bg: "#f1f5f9", color: "#475569" },
   WELCOME: { icon: "sparkles", bg: "#e0f2fe", color: "#0284c7" },
   REVIEW_REQUEST: { icon: "chatbubble-ellipses", bg: "#fff7ed", color: "#d97706" },
+  NEW_ORDER: { icon: "storefront", bg: "#fef3c7", color: "#b45309" },
 };
 
 const DEFAULT_CONFIG = { icon: "notifications" as keyof typeof Ionicons.glyphMap, bg: "#f1f5f9", color: "#64748b" };

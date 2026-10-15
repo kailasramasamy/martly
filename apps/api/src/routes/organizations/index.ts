@@ -15,7 +15,7 @@ export async function organizationRoutes(app: FastifyInstance) {
       : {};
 
     const [organizations, total] = await Promise.all([
-      app.prisma.organization.findMany({ where, skip, take: Number(pageSize), orderBy: { createdAt: "desc" } }),
+      app.prisma.organization.findMany({ where, skip, take: Number(pageSize), orderBy: [{ createdAt: "desc" }, { id: "asc" }] }),
       app.prisma.organization.count({ where }),
     ]);
 

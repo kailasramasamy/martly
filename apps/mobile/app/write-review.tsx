@@ -14,34 +14,12 @@ import {
 import { useLocalSearchParams, useRouter } from "expo-router";
 import * as ImagePicker from "expo-image-picker";
 import { Ionicons } from "@expo/vector-icons";
-import { api, getApiUrl, getAccessToken } from "../lib/api";
+import { api } from "../lib/api";
+import { uploadImage } from "../lib/upload";
 import { useToast } from "../lib/toast-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 
 const MAX_IMAGES = 5;
-
-async function uploadImage(uri: string): Promise<string> {
-  const filename = uri.split("/").pop() || "photo.jpg";
-  const ext = filename.split(".").pop()?.toLowerCase() || "jpg";
-  const mimeType = ext === "png" ? "image/png" : "image/jpeg";
-
-  const formData = new FormData();
-  formData.append("file", {
-    uri,
-    name: filename,
-    type: mimeType,
-  } as unknown as Blob);
-
-  const res = await fetch(`${getApiUrl()}/api/v1/uploads`, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${getAccessToken()}` },
-    body: formData,
-  });
-
-  if (!res.ok) throw new Error("Failed to upload image");
-  const json = await res.json();
-  return json.data.url;
-}
 
 export default function WriteReviewScreen() {
   const { productId, productName, storeId, orderId } = useLocalSearchParams<{

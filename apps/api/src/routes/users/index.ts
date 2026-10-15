@@ -44,7 +44,7 @@ export async function userRoutes(app: FastifyInstance) {
             where,
             skip,
             take: Number(pageSize),
-            orderBy: { createdAt: "desc" },
+            orderBy: [{ createdAt: "desc" }, { id: "asc" }],
             select: userSelect,
           }),
           app.prisma.user.count({ where }),
@@ -97,7 +97,7 @@ export async function userRoutes(app: FastifyInstance) {
           where,
           skip,
           take: Number(pageSize),
-          orderBy: { createdAt: "desc" },
+          orderBy: [{ createdAt: "desc" }, { id: "asc" }],
           select: userSelect,
         }),
         app.prisma.user.count({ where }),
@@ -123,11 +123,15 @@ export async function userRoutes(app: FastifyInstance) {
           id: true, email: true, name: true, phone: true, role: true, referralCode: true, createdAt: true, updatedAt: true,
           _count: { select: { orders: true, reviews: true } },
           addresses: { select: { id: true, label: true, address: true, isDefault: true }, orderBy: [{ isDefault: "desc" }, { createdAt: "desc" }] },
+          userStores: { select: { store: { select: { id: true, name: true, organizationId: true } } } },
         },
       });
       if (!targetUser) return reply.notFound("User not found");
 
       const user = getOrgUser(request);
+      if (user.role !== "SUPER_ADMIN") {
+        targetUser.userStores = targetUser.userStores.filter((us) => us.store.organizationId === user.organizationId);
+      }
       if (user.role !== "SUPER_ADMIN") {
         // ORG_ADMIN: verify user belongs to their org via UserStore or has ordered from their stores
         const membership = await app.prisma.userStore.findFirst({
@@ -183,6 +187,21 @@ export async function userRoutes(app: FastifyInstance) {
     },
   );
 
+  /**
+   * ORG_ADMINs may only edit or delete non-admin staff who work exclusively in their org —
+   * a user shared with another org (or another admin) is out of reach. Returns the denial reason.
+   */
+  async function orgAdminDenial(target: { id: string; role: string }, organizationId: string | undefined) {
+    if (target.role === "SUPER_ADMIN" || target.role === "ORG_ADMIN") return "Cannot modify admin users";
+    const [inOrg, elsewhere] = await Promise.all([
+      app.prisma.userStore.findFirst({ where: { userId: target.id, store: { organizationId } } }),
+      app.prisma.userStore.findFirst({ where: { userId: target.id, store: { organizationId: { not: organizationId } } } }),
+    ]);
+    if (!inOrg) return "Access denied";
+    if (elsewhere) return "This user also works for another organization";
+    return null;
+  }
+
   // Update user
   app.put<{ Params: { id: string } }>(
     "/:id",
@@ -198,11 +217,8 @@ export async function userRoutes(app: FastifyInstance) {
       const user = getOrgUser(request);
 
       if (user.role === "ORG_ADMIN") {
-        // Verify user belongs to their org
-        const membership = await app.prisma.userStore.findFirst({
-          where: { userId: targetUser.id, store: { organizationId: user.organizationId } },
-        });
-        if (!membership) return reply.forbidden("Access denied");
+        const denied = await orgAdminDenial(targetUser, user.organizationId);
+        if (denied) return reply.forbidden(denied);
 
         // Can only set role to STORE_MANAGER, STAFF, or RIDER
         if (role && role !== "STORE_MANAGER" && role !== "STAFF" && role !== "RIDER") {
@@ -252,16 +268,8 @@ export async function userRoutes(app: FastifyInstance) {
       const user = getOrgUser(request);
 
       if (user.role === "ORG_ADMIN") {
-        // Verify user belongs to their org
-        const membership = await app.prisma.userStore.findFirst({
-          where: { userId: targetUser.id, store: { organizationId: user.organizationId } },
-        });
-        if (!membership) return reply.forbidden("Access denied");
-
-        // Can't delete admins
-        if (targetUser.role === "SUPER_ADMIN" || targetUser.role === "ORG_ADMIN") {
-          return reply.forbidden("Cannot delete admin users");
-        }
+        const denied = await orgAdminDenial(targetUser, user.organizationId);
+        if (denied) return reply.forbidden(denied);
       }
 
       const userId = request.params.id;

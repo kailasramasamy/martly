@@ -15,7 +15,8 @@ import {
 } from "@ant-design/icons";
 
 import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG, FULFILLMENT_TYPE_CONFIG, RETURN_REQUEST_STATUS_CONFIG } from "../../constants/tag-colors";
-import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS, NEXT_ACTION } from "../../constants/order-transitions";
+import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
+import { NEXT_ACTION } from "../../constants/order-transitions";
 import { sectionTitle } from "../../theme";
 
 interface OrderItem {

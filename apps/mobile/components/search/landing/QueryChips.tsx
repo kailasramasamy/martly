@@ -7,12 +7,11 @@ interface QueryChipsProps {
   icon: keyof typeof Ionicons.glyphMap;
   onPress: (query: string) => void;
   onRemove?: (query: string) => void;
-  horizontal?: boolean;
 }
 
 const capitalise = (q: string) => q.charAt(0).toUpperCase() + q.slice(1);
 
-function Chip({ query, icon, onPress, onRemove }: Omit<QueryChipsProps, "queries" | "horizontal"> & { query: string }) {
+function Chip({ query, icon, onPress, onRemove }: Omit<QueryChipsProps, "queries"> & { query: string }) {
   return (
     <View style={styles.chip}>
       <TouchableOpacity style={styles.chipMain} onPress={() => onPress(query)} accessibilityRole="button" accessibilityLabel={`Search ${query}`}>
@@ -28,25 +27,21 @@ function Chip({ query, icon, onPress, onRemove }: Omit<QueryChipsProps, "queries
   );
 }
 
-// Recent searches wrap so every term stays visible above the keyboard; trending scrolls in one row to leave room below
-export function QueryChips({ queries, horizontal, ...chip }: QueryChipsProps) {
-  if (horizontal) {
-    return (
-      <FlatList
-        horizontal
-        data={queries}
-        keyExtractor={(q) => q}
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.row}
-        renderItem={({ item }) => <Chip query={item} {...chip} />}
-      />
-    );
-  }
-  return <View style={styles.wrap}>{queries.map((q) => <Chip key={q} query={q} {...chip} />)}</View>;
+// One scrolling row each, so recent and trending searches leave room for the rest of the landing above the keyboard
+export function QueryChips({ queries, ...chip }: QueryChipsProps) {
+  return (
+    <FlatList
+      horizontal
+      data={queries}
+      keyExtractor={(q) => q}
+      showsHorizontalScrollIndicator={false}
+      contentContainerStyle={styles.row}
+      renderItem={({ item }) => <Chip query={item} {...chip} />}
+    />
+  );
 }
 
 const styles = StyleSheet.create({
-  wrap: { flexDirection: "row", flexWrap: "wrap", gap: spacing.sm, paddingHorizontal: spacing.md },
   row: { gap: spacing.sm, paddingHorizontal: spacing.md },
   chip: {
     flexDirection: "row", alignItems: "center", maxWidth: "100%",

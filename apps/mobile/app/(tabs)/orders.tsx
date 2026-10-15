@@ -15,6 +15,7 @@ import { useToast } from "../../lib/toast-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { OrderCardSkeleton } from "../../components/SkeletonLoader";
+import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 
 interface OrderItem {
   id: string;
@@ -41,6 +42,7 @@ const STATUS_COLORS: Record<string, string> = {
 };
 
 export default function OrdersScreen() {
+  const tabBarScroll = useTabBarAutoHide();
   const router = useRouter();
   const toast = useToast();
   const [orders, setOrders] = useState<Order[]>([]);
@@ -113,7 +115,7 @@ export default function OrdersScreen() {
 
   return (
     <View style={styles.container}>
-      <FlatList
+      <FlatList {...tabBarScroll.scrollProps}
         data={orders}
         keyExtractor={(item) => item.id}
         contentContainerStyle={orders.length === 0 ? styles.center : styles.list}

@@ -126,6 +126,7 @@ export const NOTIFICATION_TYPE_CONFIG: Record<string, { color: string; label: st
   PROMOTIONAL: { color: "magenta", label: "Promotional" },
   WELCOME: { color: "blue", label: "Welcome" },
   REVIEW_REQUEST: { color: "orange", label: "Review Request" },
+  NEW_ORDER: { color: "gold", label: "New Order" },
 };
 
 export const TRIP_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
@@ -207,6 +208,16 @@ export const PROMO_STATUS_CONFIG: Record<string, { color: string; label: string 
   READY: { color: "gold", label: "Ready" },
   LIVE: { color: "green", label: "Live" },
   ENDED: { color: "default", label: "Ended" },
+  FAILED: { color: "red", label: "Failed" },
+  DISCARDED: { color: "default", label: "Discarded" },
+};
+
+export const CATALOG_DRAFT_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
+  QUEUED: { color: "default", label: "Queued" },
+  PROCESSING: { color: "processing", label: "Processing" },
+  NEEDS_REVIEW: { color: "gold", label: "Needs review" },
+  PUBLISHED: { color: "green", label: "Live" },
+  DUPLICATE: { color: "cyan", label: "Already listed" },
   FAILED: { color: "red", label: "Failed" },
   DISCARDED: { color: "default", label: "Discarded" },
 };

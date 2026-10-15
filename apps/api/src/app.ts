@@ -24,6 +24,7 @@ import { festivalEventRoutes } from "./routes/festival-events/index.js";
 import { homeRoutes } from "./routes/home/index.js";
 import { festiveRoutes } from "./routes/festive/index.js";
 import { promoRoutes } from "./routes/promos/index.js";
+import { catalogDraftRoutes } from "./routes/catalog-drafts/index.js";
 import { wishlistRoutes } from "./routes/wishlist/index.js";
 import { reviewRoutes } from "./routes/reviews/index.js";
 import { couponRoutes } from "./routes/coupons/index.js";
@@ -58,6 +59,7 @@ import reorderNudgeSchedulerPlugin from "./plugins/reorder-nudge-scheduler.js";
 import subscriptionSchedulerPlugin from "./plugins/subscription-scheduler.js";
 import seasonalCurationSchedulerPlugin from "./plugins/seasonal-curation-scheduler.js";
 import promoSchedulerPlugin from "./plugins/promo-scheduler.js";
+import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -87,6 +89,7 @@ export async function buildApp() {
   await app.register(subscriptionSchedulerPlugin);
   await app.register(seasonalCurationSchedulerPlugin);
   await app.register(promoSchedulerPlugin);
+  await app.register(catalogAgentWorkerPlugin);
 
   // ── Error Handler ────────────────────────────────
   app.setErrorHandler((error, _request, reply) => {
@@ -135,6 +138,7 @@ export async function buildApp() {
       await api.register(homeRoutes, { prefix: "/home" });
       await api.register(festiveRoutes, { prefix: "/festive" });
       await api.register(promoRoutes, { prefix: "/promos" });
+      await api.register(catalogDraftRoutes, { prefix: "/catalog-drafts" });
       await api.register(wishlistRoutes, { prefix: "/wishlist" });
       await api.register(reviewRoutes, { prefix: "/reviews" });
       await api.register(couponRoutes, { prefix: "/coupons" });

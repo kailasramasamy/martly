@@ -100,6 +100,8 @@ export interface DirectoryBrand {
   themeColor: string | null;
   themeColorSecondary: string | null;
   productCount: number;
+  /** For brands without a logo: their best-selling pack shot in this category at the store */
+  coverImageUrl: string | null;
 }
 
 export interface DirectoryCategory {
@@ -133,6 +135,9 @@ export interface BrandSummary {
   addedLast30d: number;
 }
 
+/** A KPI card's slice of the brand list; every summary count except the total */
+export type BrandSegment = Exclude<keyof BrandSummary, "total">;
+
 // Category browse: how many products a store lists in each subcategory under a node, and its top brands there
 export interface CategoryFacets {
   subcategoryCounts: Record<string, number>;
@@ -161,6 +166,79 @@ export interface PromoSummary {
   endsAt: string | null;
   failureReason: string | null;
   createdAt: string;
+}
+
+export interface CatalogDraftSummary {
+  id: string;
+  status: "QUEUED" | "PROCESSING" | "NEEDS_REVIEW" | "PUBLISHED" | "DUPLICATE" | "FAILED" | "DISCARDED";
+  storeId: string;
+  storeName: string;
+  /** What the agent read off the pack, else the name the manager typed */
+  name: string | null;
+  variantName: string | null;
+  thumbnailUrl: string;
+  photoCount: number;
+  mrp: number;
+  sellingPrice: number;
+  stock: number;
+  reviewReasons: string[];
+  error: string | null;
+  productId: string | null;
+  matchedExisting: boolean;
+  createdByName: string;
+  /** Estimated AI spend so far */
+  costUsd: number;
+  createdAt: string;
+}
+
+export interface CatalogDraftShot {
+  index: number;
+  original: string;
+  /** The image used for the listing, once processed */
+  processed: string | null;
+  source: "openai" | "photoroom" | "plain" | null;
+  verdict: "pass" | "minor_only" | "fail" | null;
+  differences: string[];
+  role: string | null;
+}
+
+export interface CatalogDraftLabel {
+  name: string;
+  brand: string | null;
+  variantName: string;
+  unitType: string;
+  unitValue: number;
+  barcode: string | null;
+  printedMrp: number | null;
+  foodType: "VEG" | "NON_VEG" | "VEGAN" | "EGG" | null;
+  productType: string;
+  ingredients: string | null;
+  nutrition: { name: string; value: string }[];
+  allergens: string[];
+  fssaiLicense: string | null;
+  manufacturerName: string | null;
+  countryOfOrigin: string | null;
+  shelfLifeDays: number | null;
+  storageType: string | null;
+  storageInstructions: string | null;
+  usageInstructions: string | null;
+  dangerWarnings: string | null;
+  description: string;
+  tags: string[];
+  confidence: { name: string; size: string; brand: string };
+  notes: string;
+}
+
+export interface CatalogDraftDetail extends CatalogDraftSummary {
+  hintName: string | null;
+  shots: CatalogDraftShot[];
+  label: CatalogDraftLabel | null;
+  brand: { id: string; name: string } | null;
+  brandConfidence: string | null;
+  subcategory: { id: string; path: string } | null;
+  subcategoryConfidence: string | null;
+  barcodeTaken: boolean;
+  usage: { step: string; model: string; inputTokens: number; outputTokens: number; usd: number }[];
 }
 
 export interface PromoProduct {

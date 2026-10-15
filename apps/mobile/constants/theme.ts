@@ -40,3 +40,10 @@ export const fonts = {
   /** Festive headlines only */
   display: "Cinzel-Bold",
 } as const;
+
+export const radius = {
+  sm: 6,
+  md: 8,
+  lg: 12,
+  xl: 20,
+} as const;

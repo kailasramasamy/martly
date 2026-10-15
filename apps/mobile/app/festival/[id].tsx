@@ -10,6 +10,7 @@ import { useFestiveHero, useTileProducts } from "../../lib/use-festive";
 import { ProductList } from "../../components/ProductList";
 import { FloatingCart } from "../../components/FloatingCart";
 import { TileChips } from "../../components/festival/TileChips";
+import { AislePills } from "../../components/festival/AislePills";
 
 function Message({ icon, text }: { icon: keyof typeof Ionicons.glyphMap; text: string }) {
   return (
@@ -20,8 +21,15 @@ function Message({ icon, text }: { icon: keyof typeof Ionicons.glyphMap; text: s
   );
 }
 
-function TileShelf({ collectionId, tileId, storeId }: { collectionId: string; tileId: string; storeId: string }) {
-  const { products, loading, loadingMore, failed, loadMore } = useTileProducts(collectionId, tileId, storeId);
+interface ShelfProps {
+  collectionId: string;
+  tileId: string;
+  aisleId: string | null;
+  storeId: string;
+}
+
+function TileShelf({ collectionId, tileId, aisleId, storeId }: ShelfProps) {
+  const { products, loading, loadingMore, failed, loadMore } = useTileProducts(collectionId, tileId, storeId, aisleId);
   if (loading) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
   if (failed) return <Message icon="cloud-offline-outline" text="Couldn't load these products right now." />;
   if (products.length === 0) return <Message icon="basket-outline" text="Nothing in stock here right now." />;
@@ -45,6 +53,11 @@ export default function FestivalScreen() {
   const storeId = selectedStore?.id;
   const { hero, loading } = useFestiveHero(id, storeId);
   const [tileId, setTileId] = useState<string | null>(tile ?? null);
+  const [aisleId, setAisleId] = useState<string | null>(null);
+  const selectTile = (id: string) => {
+    setTileId(id);
+    setAisleId(null);
+  };
 
   const selected = hero?.tiles.find((t) => t.id === tileId) ?? hero?.tiles[0] ?? null;
 
@@ -67,9 +80,10 @@ export default function FestivalScreen() {
     <ProductActionsProvider store={selectedStore ?? null}>
       <View style={styles.container}>
         <View style={[styles.chips, { backgroundColor: hero.theme.background }]}>
-          <TileChips tiles={hero.tiles} selectedId={selected.id} ink={hero.theme.title} onSelect={setTileId} />
+          <TileChips tiles={hero.tiles} selectedId={selected.id} ink={hero.theme.title} onSelect={selectTile} />
         </View>
-        <TileShelf key={selected.id} collectionId={hero.id} tileId={selected.id} storeId={storeId} />
+        <AislePills aisles={selected.subcategories} selectedId={aisleId} ink={hero.theme.title} onSelect={setAisleId} />
+        <TileShelf key={`${selected.id}|${aisleId}`} collectionId={hero.id} tileId={selected.id} aisleId={aisleId} storeId={storeId} />
         <FloatingCart />
       </View>
     </ProductActionsProvider>

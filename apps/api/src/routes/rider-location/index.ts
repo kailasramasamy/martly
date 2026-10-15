@@ -2,7 +2,7 @@ import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgUser } from "../../middleware/org-scope.js";
+import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { broadcastRiderLocation, broadcastToTripSubscribers } from "../../services/ws-manager.js";
 import { haversine, getDirectionsRoute, type DirectionsResult } from "../../lib/geo.js";
 
@@ -126,13 +126,16 @@ export async function riderLocationRoutes(app: FastifyInstance) {
     const { tripId } = request.params;
     const user = getOrgUser(request);
 
-    // Verify the customer has an order in this trip
+    // Customers need an order in this trip; staff need access to the trip's store
     if (user.role === "CUSTOMER") {
       const orderInTrip = await app.prisma.order.findFirst({
         where: { deliveryTripId: tripId, userId: user.sub },
         select: { id: true },
       });
       if (!orderInTrip) return reply.forbidden("Access denied");
+    } else {
+      const trip = await app.prisma.deliveryTrip.findUnique({ where: { id: tripId }, select: { storeId: true } });
+      if (!trip || !(await verifyStoreOrgAccess(request, app.prisma, trip.storeId))) return reply.forbidden("Access denied");
     }
 
     const location = riderLocations.get(tripId);
@@ -160,6 +163,7 @@ export async function riderLocationRoutes(app: FastifyInstance) {
         select: {
           id: true,
           userId: true,
+          storeId: true,
           status: true,
           deliveryTripId: true,
           deliveryAddress: true,
@@ -190,9 +194,10 @@ export async function riderLocationRoutes(app: FastifyInstance) {
       if (!order) return reply.notFound("Order not found");
 
       // Customer can only see their own order
-      if (user.role === "CUSTOMER" && order.userId !== user.sub) {
-        return reply.forbidden("Access denied");
-      }
+      const allowed = user.role === "CUSTOMER"
+        ? order.userId === user.sub
+        : await verifyStoreOrgAccess(request, app.prisma, order.storeId);
+      if (!allowed) return reply.forbidden("Access denied");
 
       if (!order.deliveryTripId || !order.deliveryTrip) {
         return { success: true, data: null } satisfies ApiResponse<null>;
@@ -255,6 +260,7 @@ export async function riderLocationRoutes(app: FastifyInstance) {
         select: {
           id: true,
           userId: true,
+          storeId: true,
           deliveryTripId: true,
           deliveryLat: true,
           deliveryLng: true,
@@ -279,9 +285,10 @@ export async function riderLocationRoutes(app: FastifyInstance) {
       });
 
       if (!order) return reply.notFound("Order not found");
-      if (user.role === "CUSTOMER" && order.userId !== user.sub) {
-        return reply.forbidden("Access denied");
-      }
+      const allowed = user.role === "CUSTOMER"
+        ? order.userId === user.sub
+        : await verifyStoreOrgAccess(request, app.prisma, order.storeId);
+      if (!allowed) return reply.forbidden("Access denied");
       if (!order.deliveryTripId || !order.deliveryTrip) {
         return { success: true, data: null } satisfies ApiResponse<null>;
       }

@@ -1,30 +1,43 @@
-import type { FastifyInstance } from "fastify";
+import type { FastifyInstance, FastifyRequest } from "fastify";
 import { createCouponSchema, updateCouponSchema, applyCouponSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 
+function canAccessCoupon(request: FastifyRequest, coupon: { organizationId: string | null }) {
+  const user = getOrgUser(request);
+  return user.role === "SUPER_ADMIN" || coupon.organizationId === user.organizationId;
+}
+
 export async function couponRoutes(app: FastifyInstance) {
   // GET / - List coupons (org-scoped)
   app.get("/", {
     preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
   }, async (request) => {
-    const { page = 1, pageSize = 20 } = request.query as { page?: number; pageSize?: number };
+    const { page = 1, pageSize = 20, status, q } = request.query as {
+      page?: number; pageSize?: number; status?: "active" | "expired" | "inactive"; q?: string;
+    };
     const skip = (Number(page) - 1) * Number(pageSize);
     const user = getOrgUser(request);
 
     const where: Record<string, unknown> = {};
-    if (user.role !== "SUPER_ADMIN" && user.organizationId) {
+    if (user.role !== "SUPER_ADMIN") {
       where.organizationId = user.organizationId;
     }
+    const now = new Date();
+    const notExpired = { OR: [{ expiresAt: null }, { expiresAt: { gte: now } }] };
+    if (status === "active") Object.assign(where, { isActive: true }, notExpired);
+    if (status === "inactive") Object.assign(where, { isActive: false }, notExpired);
+    if (status === "expired") where.expiresAt = { lt: now };
+    if (q) where.code = { contains: q, mode: "insensitive" };
 
     const [coupons, total] = await Promise.all([
       app.prisma.coupon.findMany({
         where,
         skip,
         take: Number(pageSize),
-        orderBy: { createdAt: "desc" },
+        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
       }),
       app.prisma.coupon.count({ where }),
     ]);
@@ -46,6 +59,7 @@ export async function couponRoutes(app: FastifyInstance) {
       include: { _count: { select: { redemptions: true } } },
     });
     if (!coupon) return reply.notFound("Coupon not found");
+    if (!canAccessCoupon(request, coupon)) return reply.forbidden("Access denied");
 
     const response: ApiResponse<typeof coupon> = { success: true, data: coupon };
     return response;
@@ -59,7 +73,7 @@ export async function couponRoutes(app: FastifyInstance) {
     const user = getOrgUser(request);
 
     // Auto-set organizationId for ORG_ADMIN
-    const orgId = body.organizationId ?? (user.role !== "SUPER_ADMIN" ? user.organizationId : null);
+    const orgId = user.role === "SUPER_ADMIN" ? (body.organizationId ?? null) : user.organizationId;
 
     // Check for duplicate code
     const existing = await app.prisma.coupon.findUnique({ where: { code: body.code } });
@@ -94,6 +108,7 @@ export async function couponRoutes(app: FastifyInstance) {
 
     const existing = await app.prisma.coupon.findUnique({ where: { id: request.params.id } });
     if (!existing) return reply.notFound("Coupon not found");
+    if (!canAccessCoupon(request, existing)) return reply.forbidden("Access denied");
 
     // Check code uniqueness if changing
     if (body.code && body.code !== existing.code) {
@@ -116,6 +131,7 @@ export async function couponRoutes(app: FastifyInstance) {
   }, async (request, reply) => {
     const existing = await app.prisma.coupon.findUnique({ where: { id: request.params.id } });
     if (!existing) return reply.notFound("Coupon not found");
+    if (!canAccessCoupon(request, existing)) return reply.forbidden("Access denied");
 
     await app.prisma.coupon.delete({ where: { id: request.params.id } });
     const response: ApiResponse<{ deleted: boolean }> = { success: true, data: { deleted: true } };

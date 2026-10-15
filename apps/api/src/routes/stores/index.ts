@@ -36,8 +36,8 @@ export async function storeRoutes(app: FastifyInstance) {
 
     const [stores, total] = await Promise.all([
       app.prisma.store.findMany({
-        where, skip, take: Number(pageSize), orderBy: { createdAt: "desc" },
-        include: { organization: { select: { subscriptionEnabled: true } } },
+        where, skip, take: Number(pageSize), orderBy: [{ createdAt: "desc" }, { id: "asc" }],
+        include: { organization: { select: { name: true, subscriptionEnabled: true } } },
       }),
       app.prisma.store.count({ where }),
     ]);
@@ -48,6 +48,7 @@ export async function storeRoutes(app: FastifyInstance) {
     const data = stores.map(({ organization, ...store }) => ({
       ...store,
       ...discovery.get(store.id),
+      organizationName: organization.name,
       subscriptionEnabled: store.subscriptionEnabled && organization.subscriptionEnabled,
     }));
 
@@ -136,14 +137,14 @@ export async function storeRoutes(app: FastifyInstance) {
   // Create store (force orgId from JWT for non-SUPER_ADMIN)
   app.post(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request) => {
       const body = createStoreSchema.parse(request.body);
       const user = getOrgUser(request);
 
       // Non-SUPER_ADMIN: force organizationId from JWT
-      if (user.role !== "SUPER_ADMIN" && user.organizationId) {
-        body.organizationId = user.organizationId;
+      if (user.role !== "SUPER_ADMIN") {
+        body.organizationId = user.organizationId!;
       }
 
       const store = await app.prisma.store.create({ data: body });
@@ -209,7 +210,9 @@ export async function storeRoutes(app: FastifyInstance) {
 
       const { variantId, price, stock } = request.body as { variantId: string; price: number; stock: number };
 
-      const variant = await app.prisma.productVariant.findUnique({ where: { id: variantId } });
+      const variant = await app.prisma.productVariant.findFirst({
+        where: { id: variantId, product: { OR: [{ organizationId: null }, { organizationId: store.organizationId }] } },
+      });
       if (!variant) return reply.notFound("Product variant not found");
 
       const existing = await app.prisma.storeProduct.findUnique({
@@ -607,6 +610,14 @@ export async function storeRoutes(app: FastifyInstance) {
 
       const targetUser = await app.prisma.user.findUnique({ where: { id: userId } });
       if (!targetUser) return reply.notFound("User not found");
+
+      // Org admins can only assign people who aren't already staff of another organization
+      if (getOrgUser(request).role !== "SUPER_ADMIN") {
+        const foreignAssignment = await app.prisma.userStore.findFirst({
+          where: { userId, store: { organizationId: { not: store.organizationId } } },
+        });
+        if (foreignAssignment) return reply.forbidden("User belongs to another organization");
+      }
 
       // Only allow assigning STORE_MANAGER, STAFF, or RIDER
       const assignRole = role || targetUser.role;

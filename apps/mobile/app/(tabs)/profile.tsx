@@ -4,6 +4,7 @@ import { useRouter } from "expo-router";
 import Constants from "expo-constants";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../../lib/auth-context";
+import { usePersona } from "../../lib/persona-context";
 import { useStore } from "../../lib/store-context";
 import { useLanguage } from "../../lib/language-context";
 import { useToast } from "../../lib/toast-context";
@@ -17,6 +18,7 @@ import { AddressList } from "../../components/account/AddressList";
 import { AddressSheet } from "../../components/account/AddressSheet";
 import { EditProfileSheet } from "../../components/account/EditProfileSheet";
 import type { UserAddress } from "../../lib/types";
+import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 
 const BUILD_NUMBER = Constants.expoConfig?.ios?.buildNumber;
 const APP_VERSION = `Version ${Constants.expoConfig?.version}${BUILD_NUMBER ? ` (${BUILD_NUMBER})` : ""}`;
@@ -26,8 +28,12 @@ const MAX_ADDRESSES = 5;
 function useMenuGroups(subscriptionsEnabled: boolean): { title: string; items: MenuItem[] }[] {
   const router = useRouter();
   const { language, supportedLanguages } = useLanguage();
+  const { canManage, switchPersona } = usePersona();
   const go = (path: Parameters<typeof router.push>[0]) => () => router.push(path);
   return [
+    ...(canManage
+      ? [{ title: "Business", items: [{ icon: "storefront-outline" as const, label: "Manage my store", onPress: () => switchPersona("manage") }] }]
+      : []),
     {
       title: "Shopping",
       items: [
@@ -55,6 +61,7 @@ function useMenuGroups(subscriptionsEnabled: boolean): { title: string; items: M
 }
 
 export default function ProfileScreen() {
+  const tabBarScroll = useTabBarAutoHide();
   const router = useRouter();
   const { logout, user, isAuthenticated } = useAuth();
   const { selectedStore } = useStore();
@@ -86,7 +93,7 @@ export default function ProfileScreen() {
 
   return (
     <View style={styles.container}>
-      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scroll}>
+      <ScrollView {...tabBarScroll.scrollProps} showsVerticalScrollIndicator={false} contentContainerStyle={styles.scroll}>
         <ProfileHeader
           name={user?.name} phone={user?.phone} email={user?.email}
           walletBalance={summary.walletBalance} loyaltyPoints={summary.loyaltyPoints} isMember={summary.isMember}

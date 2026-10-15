@@ -10,8 +10,10 @@ import type { Banner, StoreProduct } from "../../lib/types";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ProductList } from "../../components/ProductList";
 import { ProductActionsProvider } from "../../lib/product-actions";
+import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 
 export default function CartScreen() {
+  const tabBarScroll = useTabBarAutoHide();
   const router = useRouter();
   const { storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem } = useCart();
   const { selectedStore } = useStore();
@@ -118,7 +120,7 @@ export default function CartScreen() {
           </View>
         )}
 
-        <FlatList
+        <FlatList {...tabBarScroll.scrollProps}
           data={items}
           keyExtractor={(item) => item.storeProductId}
           contentContainerStyle={styles.list}

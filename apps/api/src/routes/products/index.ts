@@ -6,6 +6,9 @@ import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser, getOrgStoreIds } from "../../middleware/org-scope.js";
 import { formatVariantUnit, formatVariantUnits } from "../../services/units.js";
+import { searchProductsForAdmin } from "../../services/search.js";
+import { fetchRankedPage } from "../../services/ranked-page.js";
+import { brandFacets, countIds, inSearchOrder, subcategoryFacets, type SubcategoryFacet } from "../../services/search-facets.js";
 
   // Shared helper: build visibility + catalogType where clause
   function buildVisibilityFilter(user: { role: string; organizationId?: string | null }, catalogType?: string) {
@@ -21,12 +24,11 @@ import { formatVariantUnit, formatVariantUnits } from "../../services/units.js";
       delete where.OR;
       where.organizationId = null;
     } else if (catalogType === "org") {
-      if (where.OR) {
-        delete where.OR;
-        where.organizationId = user.organizationId ?? { not: null };
-      } else {
-        where.organizationId = { not: null };
-      }
+      delete where.OR;
+      // Only SUPER_ADMIN may browse every org's catalog; others see their own org's products (or none)
+      if (user.role === "SUPER_ADMIN") where.organizationId = { not: null };
+      else if (user.organizationId) where.organizationId = user.organizationId;
+      else where.id = { in: [] };
     }
     return where;
   }
@@ -84,15 +86,48 @@ export async function productRoutes(app: FastifyInstance) {
     };
   });
 
+  /**
+   * Search candidates plus their subcategory and brand facets. Each facet ignores its own pick (but keeps every
+   * other filter) so the chips stay visible for switching between "Liquid", "Powder", "Bar" or between brands.
+   */
+  async function rankedCandidates(where: Record<string, unknown>) {
+    const pickedSub = typeof where.subcategoryId === "string" ? where.subcategoryId : undefined;
+    const pickedBrand = typeof where.brandId === "string" ? where.brandId : undefined;
+    const rows = await app.prisma.product.findMany({
+      where: { ...where, ...(pickedSub ? { subcategoryId: undefined } : {}), ...(pickedBrand ? { brandId: undefined } : {}) },
+      select: { id: true, subcategoryId: true, brandId: true },
+    });
+    const inSub = rows.filter((r) => !pickedSub || r.subcategoryId === pickedSub);
+    const inBrand = rows.filter((r) => !pickedBrand || r.brandId === pickedBrand);
+    const [subcategories, brands] = await Promise.all([
+      subcategoryFacets(app.prisma, countIds(inBrand.map((r) => r.subcategoryId))),
+      brandFacets(app.prisma, countIds(inSub.map((r) => r.brandId))),
+    ]);
+    const candidates = inSub.filter((r) => !pickedBrand || r.brandId === pickedBrand).map((r) => ({ id: r.id, key: r.id }));
+    const facets = {
+      subcategories: inSearchOrder(subcategories, countIds(rows.map((r) => r.subcategoryId))),
+      brands: inSearchOrder(brands, countIds(rows.map((r) => r.brandId))),
+    };
+    return { candidates, facets };
+  }
+
+  /** Facets for an unsearched list (e.g. a brand page), counted in SQL; a picked subcategory is ignored */
+  async function listFacets(where: Record<string, unknown>) {
+    const facetWhere = typeof where.subcategoryId === "string" ? { ...where, subcategoryId: undefined } : where;
+    const groups = await app.prisma.product.groupBy({ by: ["subcategoryId"], where: facetWhere, _count: { _all: true } });
+    const counts = new Map(groups.filter((g) => g.subcategoryId).map((g) => [g.subcategoryId as string, g._count._all]));
+    return subcategoryFacets(app.prisma, counts);
+  }
+
   // List products (guests see master catalog only)
   app.get("/", { preHandler: [authenticateOptional] }, async (request) => {
     const {
       page = 1, pageSize = 20, q, subcategoryId, categoryId, departmentId, brandId, foodType, productType,
-      catalogType, scope, hasStoreProducts, includeStoreProducts, organizationId: filterOrgId,
+      catalogType, scope, hasStoreProducts, includeStoreProducts, organizationId: filterOrgId, withFacets,
     } = request.query as {
       page?: number; pageSize?: number; q?: string; subcategoryId?: string; categoryId?: string;
       departmentId?: string; brandId?: string; foodType?: string; productType?: string; catalogType?: string;
-      scope?: string; hasStoreProducts?: string; includeStoreProducts?: string; organizationId?: string;
+      scope?: string; hasStoreProducts?: string; includeStoreProducts?: string; organizationId?: string; withFacets?: string;
     };
     const skip = (Number(page) - 1) * Number(pageSize);
 
@@ -145,23 +180,9 @@ export async function productRoutes(app: FastifyInstance) {
       }
     }
 
-    if (q) {
-      const textSearch = [
-        { name: { contains: q, mode: "insensitive" } },
-        { description: { contains: q, mode: "insensitive" } },
-        { brand: { name: { contains: q, mode: "insensitive" } } },
-      ];
-      if (where.OR) {
-        where.AND = [
-          ...(Array.isArray(where.AND) ? where.AND as unknown[] : []),
-          { OR: where.OR },
-          { OR: textSearch },
-        ];
-        delete where.OR;
-      } else {
-        where.OR = textSearch;
-      }
-    }
+    // Same engine as shopper search (whole-word & brand-aware ranking, fuzzy fallback), over the whole catalog
+    const ranked = q ? (await searchProductsForAdmin(app.prisma, {}, q)).productIds : undefined;
+    if (ranked) where.AND = [...(Array.isArray(where.AND) ? where.AND as unknown[] : []), { id: { in: ranked } }];
     if (subcategoryId) {
       where.subcategoryId = subcategoryId;
     } else if (categoryId) {
@@ -175,7 +196,7 @@ export async function productRoutes(app: FastifyInstance) {
     if (brandId) where.brandId = brandId;
     if (foodType) where.foodType = foodType;
     if (productType) where.productType = productType;
-    if (filterOrgId) where.organizationId = filterOrgId;
+    if (filterOrgId && user.role === "SUPER_ADMIN") where.organizationId = filterOrgId;
 
     // Build include — optionally include store-products
     const include: Prisma.ProductInclude = { subcategory: { include: { category: { include: { department: true } } } }, brand: true, variants: true, organization: { select: { id: true, name: true } } };
@@ -186,21 +207,29 @@ export async function productRoutes(app: FastifyInstance) {
       };
     }
 
-    const [products, total] = await Promise.all([
-      app.prisma.product.findMany({
-        where,
-        skip,
-        take: Number(pageSize),
-        orderBy: { createdAt: "desc" },
-        include,
-      }),
-      app.prisma.product.count({ where }),
-    ]);
+    const search = ranked ? await rankedCandidates(where) : undefined;
+    const { rows: products, total } = ranked && search
+      ? await fetchRankedPage({
+          rankedKeys: ranked,
+          candidates: search.candidates,
+          fetchRows: (ids) => app.prisma.product.findMany({ where: { id: { in: ids } }, include }),
+          skip,
+          take: Number(pageSize),
+        })
+      : await Promise.all([
+          app.prisma.product.findMany({ where, skip, take: Number(pageSize), orderBy: [{ createdAt: "desc" }, { id: "asc" }], include }),
+          app.prisma.product.count({ where }),
+        ]).then(([rows, count]) => ({ rows, total: count }));
 
-    const response: PaginatedResponse<(typeof products)[0]> = {
+    const response: PaginatedResponse<(typeof products)[0]> & { meta: { facets?: { subcategories: SubcategoryFacet[]; brands?: SubcategoryFacet[] } } } = {
       success: true,
       data: products.map(formatProductUnits),
-      meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
+      meta: {
+        total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)),
+        ...(search
+          ? { facets: search.facets }
+          : withFacets === "true" ? { facets: { subcategories: await listFacets(where) } } : {}),
+      },
     };
     return response;
   });
@@ -346,10 +375,11 @@ export async function productRoutes(app: FastifyInstance) {
         for (const v of variants) {
           const { id: variantId, ...variantData } = v;
           if (variantId) {
-            await app.prisma.productVariant.update({
-              where: { id: variantId },
+            const { count } = await app.prisma.productVariant.updateMany({
+              where: { id: variantId, productId: request.params.id },
               data: variantData as Prisma.ProductVariantUncheckedUpdateInput,
             });
+            if (count === 0) return reply.notFound(`Variant ${variantId} not found on this product`);
           } else {
             await app.prisma.productVariant.create({
               data: { ...variantData, productId: request.params.id } as Prisma.ProductVariantUncheckedCreateInput,

@@ -2,7 +2,7 @@ import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgStoreIds } from "../../middleware/org-scope.js";
+import { getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
 interface KPIs {
   totalRevenue: number;
@@ -37,8 +37,11 @@ export async function dashboardRoutes(app: FastifyInstance) {
   app.get(
     "/stats",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
-    async (request) => {
-      const { days: daysParam } = request.query as { days?: string };
+    async (request, reply) => {
+      const { days: daysParam, storeId } = request.query as { days?: string; storeId?: string };
+      if (storeId && !(await verifyStoreOrgAccess(request, app.prisma, storeId))) {
+        return reply.forbidden("Access denied to this store");
+      }
       const days = [7, 30, 90].includes(Number(daysParam)) ? Number(daysParam) : 7;
 
       const now = new Date();
@@ -51,7 +54,7 @@ export async function dashboardRoutes(app: FastifyInstance) {
 
       // Org scoping
       const orgStoreIds = await getOrgStoreIds(request, app.prisma);
-      const storeFilter = orgStoreIds !== undefined ? { storeId: { in: orgStoreIds } } : {};
+      const storeFilter = storeId ? { storeId } : orgStoreIds !== undefined ? { storeId: { in: orgStoreIds } } : {};
 
       // ── KPIs: Current Period ─────────────────────────────
       const [

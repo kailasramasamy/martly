@@ -26,6 +26,7 @@ import {
   EnvironmentOutlined,
   ThunderboltOutlined,
   RocketOutlined,
+  CameraOutlined,
   CarOutlined,
   PictureOutlined,
   NotificationOutlined,
@@ -105,6 +106,8 @@ import { LoyaltyCustomers } from "./pages/loyalty/customers";
 import { ExpressDeliveryConfig } from "./pages/express-delivery/config";
 import { DeliveryBoard } from "./pages/delivery-board";
 import { RidersList } from "./pages/riders/list";
+import { CatalogDraftList } from "./pages/catalog-drafts/list";
+import { CatalogDraftShow } from "./pages/catalog-drafts/show";
 import { PromoList } from "./pages/promos/list";
 import { PromoShow } from "./pages/promos/show";
 import { BannerList } from "./pages/banners/list";
@@ -257,6 +260,12 @@ export default function App() {
                 create: "/brands/create",
                 edit: "/brands/edit/:id",
                 meta: { label: "Brands", icon: <TrademarkOutlined />, parent: "inventory" },
+              },
+              {
+                name: "catalog-drafts",
+                list: "/catalog-drafts",
+                show: "/catalog-drafts/show/:id",
+                meta: { label: "Catalog agent", icon: <CameraOutlined />, parent: "inventory" },
               },
               {
                 name: "products",
@@ -529,6 +538,10 @@ export default function App() {
                   <Route index element={<BrandList />} />
                   <Route path="create" element={<BrandCreate />} />
                   <Route path="edit/:id" element={<BrandEdit />} />
+                </Route>
+                <Route path="/catalog-drafts">
+                  <Route index element={<CatalogDraftList />} />
+                  <Route path="show/:id" element={<CatalogDraftShow />} />
                 </Route>
                 <Route path="/products">
                   <Route index element={<ProductList />} />

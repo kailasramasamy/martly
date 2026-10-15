@@ -2,22 +2,25 @@ import { createContext, useContext, useState, useCallback, useEffect, useRef, ty
 import * as SecureStore from "expo-secure-store";
 import { setAccessToken, setTokenRefresher, api } from "./api";
 import { registerForPushNotifications, unregisterPushToken } from "./notifications";
-import type { AuthTokens } from "@martly/shared/types";
+import type { AuthTokens, OrgSummary } from "@martly/shared/types";
 import { API_URL } from "./config";
 
-interface UserInfo {
+export interface UserInfo {
   id: string;
   email: string;
   name: string;
   phone: string | null;
   role: string;
+  organizationId?: string;
+  organizations: OrgSummary[];
+  stores: { id: string; name: string }[];
 }
 
 interface AuthState {
   isAuthenticated: boolean;
   isLoading: boolean;
   user: UserInfo | null;
-  login: (tokens: AuthTokens) => void;
+  login: (tokens: AuthTokens) => Promise<void>;
   logout: () => void;
   refreshUser: () => Promise<void>;
 }

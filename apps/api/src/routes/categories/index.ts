@@ -8,6 +8,7 @@ import {
 import type { ApiResponse, PaginatedResponse, DepartmentNode, CategoryNode, SubcategoryNode } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
+import { getOrgUser } from "../../middleware/org-scope.js";
 import { formatVariantUnits } from "../../services/units.js";
 
 export async function categoryRoutes(app: FastifyInstance) {
@@ -48,7 +49,7 @@ export async function categoryRoutes(app: FastifyInstance) {
     const { page = 1, pageSize = 50 } = request.query as { page?: number; pageSize?: number };
     const skip = (Number(page) - 1) * Number(pageSize);
     const [data, total] = await Promise.all([
-      app.prisma.department.findMany({ skip, take: Number(pageSize), orderBy: { sortOrder: "asc" } }),
+      app.prisma.department.findMany({ skip, take: Number(pageSize), orderBy: [{ sortOrder: "asc" }, { id: "asc" }] }),
       app.prisma.department.count(),
     ]);
     return { success: true, data, meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) } } satisfies PaginatedResponse<(typeof data)[0]>;
@@ -94,7 +95,7 @@ export async function categoryRoutes(app: FastifyInstance) {
     const where: Record<string, unknown> = {};
     if (departmentId) where.departmentId = departmentId;
     const [data, total] = await Promise.all([
-      app.prisma.category.findMany({ where, skip, take: Number(pageSize), orderBy: { sortOrder: "asc" }, include: { department: true } }),
+      app.prisma.category.findMany({ where, skip, take: Number(pageSize), orderBy: [{ sortOrder: "asc" }, { id: "asc" }], include: { department: true } }),
       app.prisma.category.count({ where }),
     ]);
     return { success: true, data, meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) } } satisfies PaginatedResponse<(typeof data)[0]>;
@@ -140,7 +141,7 @@ export async function categoryRoutes(app: FastifyInstance) {
     const where: Record<string, unknown> = {};
     if (categoryId) where.categoryId = categoryId;
     const [data, total] = await Promise.all([
-      app.prisma.subcategory.findMany({ where, skip, take: Number(pageSize), orderBy: { sortOrder: "asc" }, include: { category: { include: { department: true } } } }),
+      app.prisma.subcategory.findMany({ where, skip, take: Number(pageSize), orderBy: [{ sortOrder: "asc" }, { id: "asc" }], include: { category: { include: { department: true } } } }),
       app.prisma.subcategory.count({ where }),
     ]);
     return { success: true, data, meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) } } satisfies PaginatedResponse<(typeof data)[0]>;
@@ -196,7 +197,7 @@ export async function categoryRoutes(app: FastifyInstance) {
 
   // ── Products by taxonomy ID ─────────────────────────
   // Detects which level the ID belongs to and expands to subcategory IDs
-  app.get<{ Params: { id: string } }>("/:id/products", async (request, reply) => {
+  app.get<{ Params: { id: string } }>("/:id/products", { preHandler: [authenticate] }, async (request, reply) => {
     const { page = 1, pageSize = 20 } = request.query as { page?: number; pageSize?: number };
     const skip = (Number(page) - 1) * Number(pageSize);
     const { id } = request.params;
@@ -231,14 +232,17 @@ export async function categoryRoutes(app: FastifyInstance) {
       return { success: true, data: [], meta: { total: 0, page: Number(page), pageSize: Number(pageSize), totalPages: 0 } } satisfies PaginatedResponse<never>;
     }
 
-    const where = { subcategoryId: { in: subcategoryIds } };
+    // Master catalog plus the caller's own org products; SUPER_ADMIN sees everything
+    const user = getOrgUser(request);
+    const visibility = user.role === "SUPER_ADMIN" ? {} : { OR: [{ organizationId: null }, ...(user.organizationId ? [{ organizationId: user.organizationId }] : [])] };
+    const where = { subcategoryId: { in: subcategoryIds }, ...visibility };
     const [products, total] = await Promise.all([
       app.prisma.product.findMany({
         where,
         skip,
         take: Number(pageSize),
         include: { subcategory: true, variants: true },
-        orderBy: { name: "asc" },
+        orderBy: [{ name: "asc" }, { id: "asc" }],
       }),
       app.prisma.product.count({ where }),
     ]);

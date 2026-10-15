@@ -4,14 +4,14 @@ import { Table, Space, Typography, App } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import type { HttpError } from "@refinedev/core";
 import { isAxiosError } from "axios";
-import type { BrandSummary } from "@martly/shared/types";
+import type { BrandSegment, BrandSummary } from "@martly/shared/types";
 import { BrandDrawer, BrandLogo, type BrandRecord } from "./brand-drawer";
 import { DebouncedSearch } from "../../components/DebouncedSearch";
 import { axiosInstance } from "../../providers/data-provider";
 import { BrandKpiCards } from "./kpi-cards";
 
 export const BrandList = () => {
-  const { tableProps, searchFormProps } = useTable<BrandRecord, HttpError, { q: string }>({
+  const { tableProps, searchFormProps, setFilters } = useTable<BrandRecord, HttpError, { q: string }>({
     resource: "brands",
     sorters: { initial: [{ field: "name", order: "asc" }] },
     pagination: { pageSize: 25 },
@@ -22,6 +22,7 @@ export const BrandList = () => {
   const [selected, setSelected] = useState<BrandRecord | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [summary, setSummary] = useState<BrandSummary | null>(null);
+  const [segment, setSegment] = useState<BrandSegment | null>(null);
   const { message } = App.useApp();
 
   const refreshSummary = useCallback(() => {
@@ -35,6 +36,11 @@ export const BrandList = () => {
 
   useEffect(refreshSummary, [refreshSummary]);
 
+  const showSegment = (next: BrandSegment | null) => {
+    setSegment(next);
+    setFilters([{ field: "segment", operator: "eq", value: next ?? undefined }]);
+  };
+
   const openBrand = (brand: BrandRecord) => {
     setSelected(brand);
     setDrawerOpen(true);
@@ -42,7 +48,7 @@ export const BrandList = () => {
 
   return (
     <List>
-      <BrandKpiCards summary={summary} />
+      <BrandKpiCards summary={summary} segment={segment} onSegment={showSegment} />
       <div style={{ marginBottom: 16 }}>
         <DebouncedSearch
           placeholder="Search brands..."

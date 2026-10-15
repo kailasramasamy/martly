@@ -1,4 +1,4 @@
-import type { FastifyInstance } from "fastify";
+import type { FastifyInstance, FastifyRequest } from "fastify";
 import { createDeliveryZoneSchema, updateDeliveryZoneSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
@@ -6,6 +6,15 @@ import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 
 export async function deliveryZoneRoutes(app: FastifyInstance) {
+  /** Zones outside the caller's org look nonexistent; SUPER_ADMIN sees everything */
+  const canAccessZone = (request: FastifyRequest, zone: { organizationId: string }) => {
+    const user = getOrgUser(request);
+    return user.role === "SUPER_ADMIN" || zone.organizationId === user.organizationId;
+  };
+
+  const storesOutsideOrg = async (organizationId: string, storeIds: string[]) =>
+    storeIds.length > 0 && (await app.prisma.store.count({ where: { id: { in: storeIds }, organizationId } })) !== storeIds.length;
+
   // GET / - List zones (org-scoped)
   app.get("/", {
     preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")],
@@ -15,8 +24,8 @@ export async function deliveryZoneRoutes(app: FastifyInstance) {
     const user = getOrgUser(request);
 
     const where: Record<string, unknown> = {};
-    if (user.role !== "SUPER_ADMIN" && user.organizationId) {
-      where.organizationId = user.organizationId;
+    if (user.role !== "SUPER_ADMIN") {
+      where.organizationId = user.organizationId ?? "";
     }
 
     const [zones, total] = await Promise.all([
@@ -24,7 +33,7 @@ export async function deliveryZoneRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        orderBy: { createdAt: "desc" },
+        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
         include: { stores: { include: { store: { select: { id: true, name: true } } } } },
       }),
       app.prisma.deliveryZone.count({ where }),
@@ -46,7 +55,7 @@ export async function deliveryZoneRoutes(app: FastifyInstance) {
       where: { id: request.params.id },
       include: { stores: { include: { store: { select: { id: true, name: true } } } } },
     });
-    if (!zone) return reply.notFound("Delivery zone not found");
+    if (!zone || !canAccessZone(request, zone)) return reply.notFound("Delivery zone not found");
 
     const response: ApiResponse<typeof zone> = { success: true, data: zone };
     return response;
@@ -55,9 +64,12 @@ export async function deliveryZoneRoutes(app: FastifyInstance) {
   // POST / - Create zone with storeIds
   app.post("/", {
     preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
-  }, async (request) => {
+  }, async (request, reply) => {
     const body = createDeliveryZoneSchema.parse(request.body);
     const { storeIds, ...zoneData } = body;
+    const user = getOrgUser(request);
+    if (user.role !== "SUPER_ADMIN") zoneData.organizationId = user.organizationId ?? "";
+    if (await storesOutsideOrg(zoneData.organizationId, storeIds ?? [])) return reply.forbidden("Access denied");
 
     const zone = await app.prisma.deliveryZone.create({
       data: {
@@ -81,7 +93,8 @@ export async function deliveryZoneRoutes(app: FastifyInstance) {
     const { storeIds, ...zoneData } = body;
 
     const existing = await app.prisma.deliveryZone.findUnique({ where: { id: request.params.id } });
-    if (!existing) return reply.notFound("Delivery zone not found");
+    if (!existing || !canAccessZone(request, existing)) return reply.notFound("Delivery zone not found");
+    if (await storesOutsideOrg(existing.organizationId, storeIds ?? [])) return reply.forbidden("Access denied");
 
     const zone = await app.prisma.$transaction(async (tx) => {
       if (storeIds !== undefined) {
@@ -109,7 +122,7 @@ export async function deliveryZoneRoutes(app: FastifyInstance) {
     preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
   }, async (request, reply) => {
     const existing = await app.prisma.deliveryZone.findUnique({ where: { id: request.params.id } });
-    if (!existing) return reply.notFound("Delivery zone not found");
+    if (!existing || !canAccessZone(request, existing)) return reply.notFound("Delivery zone not found");
 
     await app.prisma.$transaction(async (tx) => {
       await tx.storeDeliveryZone.deleteMany({ where: { deliveryZoneId: request.params.id } });

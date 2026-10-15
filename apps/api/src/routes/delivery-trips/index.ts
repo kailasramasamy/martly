@@ -19,7 +19,7 @@ export async function deliveryTripRoutes(app: FastifyInstance) {
     }
 
     const userStores = await app.prisma.userStore.findMany({
-      where: { storeId },
+      where: { storeId, user: { role: { in: ["RIDER", "STAFF"] } } },
       include: { user: { select: { id: true, name: true, phone: true, email: true } } },
     });
 
@@ -36,8 +36,8 @@ export async function deliveryTripRoutes(app: FastifyInstance) {
     }
 
     // Validate rider is assigned to this store
-    const riderAssignment = await app.prisma.userStore.findUnique({
-      where: { userId_storeId: { userId: body.riderId, storeId: body.storeId } },
+    const riderAssignment = await app.prisma.userStore.findFirst({
+      where: { userId: body.riderId, storeId: body.storeId, user: { role: { in: ["RIDER", "STAFF"] } } },
     });
     if (!riderAssignment) {
       return reply.badRequest("Rider is not assigned to this store");

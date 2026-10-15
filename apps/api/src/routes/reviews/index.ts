@@ -1,9 +1,9 @@
-import type { FastifyInstance } from "fastify";
+import type { FastifyInstance, FastifyRequest } from "fastify";
 import { createReviewSchema, updateReviewSchema, updateReviewStatusSchema, createReviewReplySchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgUser } from "../../middleware/org-scope.js";
+import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
 const reviewInclude = {
   user: { select: { id: true, name: true } },
@@ -12,6 +12,21 @@ const reviewInclude = {
 };
 
 export async function reviewRoutes(app: FastifyInstance) {
+  /** Prisma filter limiting reviews to the caller's org (and assigned stores for managers); {} for SUPER_ADMIN */
+  async function reviewScope(request: FastifyRequest): Promise<Record<string, unknown>> {
+    const storeIds = await getOrgStoreIds(request, app.prisma);
+    if (storeIds === undefined) return {};
+    const { organizationId, role } = getOrgUser(request);
+    const scope: Record<string, unknown>[] = [{ storeId: { in: storeIds } }];
+    if (role === "ORG_ADMIN" && organizationId) scope.push({ storeId: null, product: { organizationId } });
+    return { OR: scope };
+  }
+
+  async function reviewInScope(request: FastifyRequest, id: string): Promise<boolean> {
+    const found = await app.prisma.review.findFirst({ where: { id, ...(await reviewScope(request)) }, select: { id: true } });
+    return !!found;
+  }
+
   // GET /?productId=X - List approved reviews for a product
   app.get("/", { preHandler: [authenticateOptional] }, async (request) => {
     const { productId, page = 1, pageSize = 20 } = request.query as { productId?: string; page?: number; pageSize?: number };
@@ -25,7 +40,7 @@ export async function reviewRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        orderBy: { createdAt: "desc" },
+        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
         include: reviewInclude,
       }),
       app.prisma.review.count({ where }),
@@ -192,13 +207,12 @@ export async function reviewRoutes(app: FastifyInstance) {
 
   // POST /:id/reply - Admin/Manager reply to a review
   app.post<{ Params: { id: string } }>("/:id/reply", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")],
+    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
   }, async (request, reply) => {
     const body = createReviewReplySchema.parse(request.body);
     const user = request.user as { sub: string };
 
-    const review = await app.prisma.review.findUnique({ where: { id: request.params.id } });
-    if (!review) return reply.notFound("Review not found");
+    if (!(await reviewInScope(request, request.params.id))) return reply.notFound("Review not found");
 
     const replyData = await app.prisma.reviewReply.upsert({
       where: { reviewId: request.params.id },
@@ -220,8 +234,9 @@ export async function reviewRoutes(app: FastifyInstance) {
 
   // DELETE /:id/reply - Admin/Manager delete reply
   app.delete<{ Params: { id: string } }>("/:id/reply", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")],
+    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
   }, async (request, reply) => {
+    if (!(await reviewInScope(request, request.params.id))) return reply.notFound("Review not found");
     const existing = await app.prisma.reviewReply.findUnique({ where: { reviewId: request.params.id } });
     if (!existing) return reply.notFound("Reply not found");
 
@@ -233,11 +248,13 @@ export async function reviewRoutes(app: FastifyInstance) {
   // GET /moderation - Admin: list all reviews with status filter
   app.get("/moderation", {
     preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
-  }, async (request) => {
-    const { status, page = 1, pageSize = 20 } = request.query as { status?: string; page?: number; pageSize?: number };
+  }, async (request, reply) => {
+    const { status, storeId, page = 1, pageSize = 20 } = request.query as { status?: string; storeId?: string; page?: number; pageSize?: number };
+    if (storeId && !(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied to this store");
     const skip = (Number(page) - 1) * Number(pageSize);
 
-    const where: Record<string, unknown> = {};
+    const where: Record<string, unknown> = await reviewScope(request);
+    if (storeId) where.storeId = storeId;
     if (status) where.status = status;
 
     const [reviews, total] = await Promise.all([
@@ -245,7 +262,7 @@ export async function reviewRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        orderBy: { createdAt: "desc" },
+        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
         include: {
           user: { select: { id: true, name: true, email: true } },
           product: { select: { id: true, name: true, imageUrl: true } },
@@ -270,8 +287,8 @@ export async function reviewRoutes(app: FastifyInstance) {
   }, async (request, reply) => {
     const body = updateReviewStatusSchema.parse(request.body);
 
-    const review = await app.prisma.review.findUnique({
-      where: { id: request.params.id },
+    const review = await app.prisma.review.findFirst({
+      where: { id: request.params.id, ...(await reviewScope(request)) },
       include: { store: { select: { organizationId: true } } },
     });
     if (!review) return reply.notFound("Review not found");

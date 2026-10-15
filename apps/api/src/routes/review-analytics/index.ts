@@ -2,18 +2,19 @@ import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgStoreIds } from "../../middleware/org-scope.js";
+import { getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
 export async function reviewAnalyticsRoutes(app: FastifyInstance) {
   // GET /?days=30 - Review analytics dashboard data
   app.get("/", {
     preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
-  }, async (request) => {
-    const { days = 30 } = request.query as { days?: number };
+  }, async (request, reply) => {
+    const { days = 30, storeId } = request.query as { days?: number; storeId?: string };
+    if (storeId && !(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied to this store");
     const since = new Date();
     since.setDate(since.getDate() - Number(days));
 
-    const storeIds = await getOrgStoreIds(request, app.prisma);
+    const storeIds = storeId ? [storeId] : await getOrgStoreIds(request, app.prisma);
     const storeFilter: Record<string, unknown> = storeIds ? { storeId: { in: storeIds } } : {};
 
     // KPIs

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, SUPPORTED_LANGUAGES } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, SUPPORTED_LANGUAGES, CatalogDraftStatus } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -1191,6 +1191,7 @@ export const searchLandingQuerySchema = z.object({
 
 export const festiveTileProductsQuerySchema = z.object({
   storeId: z.string().uuid(),
+  subcategoryId: z.string().uuid().optional(),
   page: z.coerce.number().int().min(1).default(1),
   pageSize: z.coerce.number().int().min(1).max(50).default(20),
 });
@@ -1231,6 +1232,45 @@ export const promoListQuerySchema = z.object({
   page: z.coerce.number().int().min(1).default(1),
   pageSize: z.coerce.number().int().min(1).max(100).default(20),
 });
+
+// ── Catalog agent ────────────────────────────────────
+export const createCatalogDraftSchema = z
+  .object({
+    storeId: z.string().uuid(),
+    photos: z.array(z.string().url()).min(1).max(8),
+    hintName: z.string().trim().max(120).optional(),
+    mrp: z.number().positive(),
+    sellingPrice: z.number().positive(),
+    stock: z.number().int().min(0).default(0),
+  })
+  .refine((d) => d.sellingPrice <= d.mrp, { message: "Selling price can't be above MRP", path: ["sellingPrice"] });
+export type CreateCatalogDraftInput = z.infer<typeof createCatalogDraftSchema>;
+
+export const catalogDraftListQuerySchema = z.object({
+  page: z.coerce.number().int().min(1).default(1),
+  pageSize: z.coerce.number().int().min(1).max(100).default(20),
+  storeId: z.string().uuid().optional(),
+  status: z.nativeEnum(CatalogDraftStatus).optional(),
+});
+
+// Reviewer's corrections; anything left out keeps what the agent read
+export const approveCatalogDraftSchema = z
+  .object({
+    name: z.string().trim().min(1).max(200).optional(),
+    description: z.string().trim().max(2000).optional(),
+    brandId: z.string().uuid().optional(),
+    newBrandName: z.string().trim().min(1).max(80).optional(),
+    subcategoryId: z.string().uuid().optional(),
+    variantName: z.string().trim().min(1).max(60).optional(),
+    unitType: z.nativeEnum(UnitType).optional(),
+    unitValue: z.number().positive().optional(),
+    foodType: z.nativeEnum(FoodType).optional(),
+    mrp: z.number().positive().optional(),
+    sellingPrice: z.number().positive().optional(),
+    stock: z.number().int().min(0).optional(),
+  })
+  .refine((d) => !(d.brandId && d.newBrandName), { message: "Pick a brand or name a new one, not both", path: ["newBrandName"] });
+export type ApproveCatalogDraftInput = z.infer<typeof approveCatalogDraftSchema>;
 
 export const collectionProductsQuerySchema = z.object({
   storeId: z.string().uuid(),

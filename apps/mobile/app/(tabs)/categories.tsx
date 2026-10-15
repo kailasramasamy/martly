@@ -10,6 +10,7 @@ import { CategoryTile } from "../../components/CategoryTile";
 import { DepartmentStrip } from "../../components/DepartmentStrip";
 import { useLanguage } from "../../lib/language-context";
 import type { DepartmentNode } from "../../lib/types";
+import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const H_PADDING = 16;
@@ -21,6 +22,7 @@ const openListing = (id: string) => router.push({ pathname: "/category/[id]", pa
 const VIEWABILITY = { itemVisiblePercentThreshold: 40 };
 
 export default function CategoriesScreen() {
+  const tabBarScroll = useTabBarAutoHide();
   const [departments, setDepartments] = useState<DepartmentNode[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -66,7 +68,7 @@ export default function CategoriesScreen() {
 
       <DepartmentStrip departments={departments} activeId={activeId} onSelect={jumpTo} />
 
-      <FlatList
+      <FlatList {...tabBarScroll.scrollProps}
         ref={listRef}
         data={departments}
         keyExtractor={(d) => d.id}

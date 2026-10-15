@@ -1,8 +1,9 @@
 import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
+import { Prisma } from "../../../generated/prisma/index.js";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgStoreIds, getOrgUser } from "../../middleware/org-scope.js";
+import { getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
 const LOW_STOCK_THRESHOLD = 5;
 
@@ -31,17 +32,67 @@ interface StockSummary {
   recentChanges: RecentChange[];
 }
 
+type Db = FastifyInstance["prisma"];
+
+/** Per-store stock health counted in SQL — scanning every store product in JS took seconds */
+async function summarizeByStore(prisma: Db, scopeIds: string[] | undefined): Promise<StoreSummary[]> {
+  const scope = scopeIds ? Prisma.sql`WHERE sp.store_id = ANY(${scopeIds})` : Prisma.empty;
+  const rows = await prisma.$queryRaw<{ store_id: string; store_name: string; total: bigint; in_stock: bigint; low: bigint; out: bigint }[]>`
+    SELECT sp.store_id, s.name AS store_name,
+      COUNT(*) AS total,
+      COUNT(*) FILTER (WHERE sp.stock - sp.reserved_stock > ${LOW_STOCK_THRESHOLD}) AS in_stock,
+      COUNT(*) FILTER (WHERE sp.stock - sp.reserved_stock > 0 AND sp.stock - sp.reserved_stock <= ${LOW_STOCK_THRESHOLD}) AS low,
+      COUNT(*) FILTER (WHERE sp.stock - sp.reserved_stock <= 0) AS out
+    FROM store_products sp JOIN stores s ON s.id = sp.store_id
+    ${scope}
+    GROUP BY sp.store_id, s.name`;
+  return rows.map((r) => ({
+    storeId: r.store_id,
+    storeName: r.store_name,
+    totalSKUs: Number(r.total),
+    inStock: Number(r.in_stock),
+    lowStock: Number(r.low),
+    outOfStock: Number(r.out),
+  }));
+}
+
+async function recentStockChanges(prisma: Db, scopeIds: string[] | undefined): Promise<RecentChange[]> {
+  const rows = await prisma.storeProduct.findMany({
+    where: scopeIds ? { storeId: { in: scopeIds } } : {},
+    include: {
+      store: { select: { name: true } },
+      product: { select: { name: true } },
+      variant: { select: { name: true } },
+    },
+    orderBy: { updatedAt: "desc" },
+    take: 20,
+  });
+  return rows.map((sp) => ({
+    storeProductId: sp.id,
+    productName: sp.variant.name ? `${sp.product.name} \u2014 ${sp.variant.name}` : sp.product.name,
+    storeName: sp.store.name,
+    stock: sp.stock,
+    reservedStock: sp.reservedStock,
+    availableStock: sp.stock - sp.reservedStock,
+    updatedAt: sp.updatedAt.toISOString(),
+  }));
+}
+
 export async function stockRoutes(app: FastifyInstance) {
   app.get(
     "/summary",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
-    async (request) => {
+    async (request, reply) => {
       const { storeId, organizationId } = request.query as {
         storeId?: string;
         organizationId?: string;
       };
 
       const user = getOrgUser(request);
+
+      if (storeId && !(await verifyStoreOrgAccess(request, app.prisma, storeId))) {
+        return reply.forbidden("Access denied");
+      }
 
       // Scope to org's stores
       let orgStoreIds = await getOrgStoreIds(request, app.prisma);
@@ -55,85 +106,26 @@ export async function stockRoutes(app: FastifyInstance) {
         orgStoreIds = orgStores.map((s: { id: string }) => s.id);
       }
 
-      // Narrow to specific store if provided
-      const storeFilter: Record<string, unknown> = {};
-      if (storeId) {
-        storeFilter.storeId = storeId;
-      } else if (orgStoreIds !== undefined) {
-        storeFilter.storeId = { in: orgStoreIds };
-      }
-
-      // Fetch all store-products within scope with store and product info
-      const storeProducts = await app.prisma.storeProduct.findMany({
-        where: storeFilter,
-        include: {
-          store: { select: { id: true, name: true } },
-          product: { select: { name: true } },
-          variant: { select: { name: true } },
-        },
-        orderBy: { updatedAt: "desc" },
-      });
-
-      // Compute totals and per-store breakdown
-      let totalSKUs = 0;
-      let inStock = 0;
-      let lowStock = 0;
-      let outOfStock = 0;
-      const storeMap = new Map<string, StoreSummary>();
-
-      for (const sp of storeProducts) {
-        const available = sp.stock - sp.reservedStock;
-        totalSKUs++;
-
-        if (available <= 0) {
-          outOfStock++;
-        } else if (available <= LOW_STOCK_THRESHOLD) {
-          lowStock++;
-        } else {
-          inStock++;
-        }
-
-        // Per-store aggregation
-        let storeSummary = storeMap.get(sp.storeId);
-        if (!storeSummary) {
-          storeSummary = {
-            storeId: sp.store.id,
-            storeName: sp.store.name,
-            totalSKUs: 0,
-            inStock: 0,
-            lowStock: 0,
-            outOfStock: 0,
-          };
-          storeMap.set(sp.storeId, storeSummary);
-        }
-        storeSummary.totalSKUs++;
-        if (available <= 0) {
-          storeSummary.outOfStock++;
-        } else if (available <= LOW_STOCK_THRESHOLD) {
-          storeSummary.lowStock++;
-        } else {
-          storeSummary.inStock++;
-        }
-      }
-
-      // Recent changes: first 20 (already ordered by updatedAt desc)
-      const recentChanges: RecentChange[] = storeProducts.slice(0, 20).map((sp) => ({
-        storeProductId: sp.id,
-        productName: sp.variant.name
-          ? `${sp.product.name} — ${sp.variant.name}`
-          : sp.product.name,
-        storeName: sp.store.name,
-        stock: sp.stock,
-        reservedStock: sp.reservedStock,
-        availableStock: sp.stock - sp.reservedStock,
-        updatedAt: sp.updatedAt.toISOString(),
-      }));
+      const scopeIds = storeId ? [storeId] : orgStoreIds;
+      const [byStore, recentChanges] = await Promise.all([
+        summarizeByStore(app.prisma, scopeIds),
+        recentStockChanges(app.prisma, scopeIds),
+      ]);
+      const totals = byStore.reduce(
+        (t, s) => ({
+          totalSKUs: t.totalSKUs + s.totalSKUs,
+          inStock: t.inStock + s.inStock,
+          lowStock: t.lowStock + s.lowStock,
+          outOfStock: t.outOfStock + s.outOfStock,
+        }),
+        { totalSKUs: 0, inStock: 0, lowStock: 0, outOfStock: 0 },
+      );
 
       const response: ApiResponse<StockSummary> = {
         success: true,
         data: {
-          totals: { totalSKUs, inStock, lowStock, outOfStock },
-          byStore: Array.from(storeMap.values()),
+          totals,
+          byStore,
           recentChanges,
         },
       };

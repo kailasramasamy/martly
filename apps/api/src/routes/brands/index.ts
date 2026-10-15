@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import { createBrandSchema, updateBrandSchema } from "@martly/shared/schemas";
-import type { ApiResponse, BrandDirectory, BrandSummary, DirectoryBrand, DirectoryDepartment, PaginatedResponse } from "@martly/shared/types";
+import type { ApiResponse, BrandDirectory, BrandSegment, BrandSummary, DirectoryBrand, DirectoryDepartment, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 
@@ -32,15 +32,28 @@ function buildDirectory(rows: DirectoryRow[]): BrandDirectory {
   };
 }
 
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+
+// Each KPI card counts one slice and lists the same slice when clicked, so the number always matches the rows
+const SEGMENTS: Record<BrandSegment, () => Record<string, unknown>> = {
+  brandStores: () => ({ themeColor: { not: null } }),
+  withoutLogo: () => ({ imageUrl: null }),
+  withoutProducts: () => ({ products: { none: {} } }),
+  addedLast30d: () => ({ createdAt: { gte: new Date(Date.now() - THIRTY_DAYS_MS) } }),
+};
+
+const isSegment = (value: string): value is BrandSegment => Object.hasOwn(SEGMENTS, value);
+
 export async function brandRoutes(app: FastifyInstance) {
   // List brands
-  app.get("/", async (request) => {
-    const { page = 1, pageSize = 50, q } = request.query as {
-      page?: number; pageSize?: number; q?: string;
+  app.get("/", async (request, reply) => {
+    const { page = 1, pageSize = 50, q, segment } = request.query as {
+      page?: number; pageSize?: number; q?: string; segment?: string;
     };
     const skip = (Number(page) - 1) * Number(pageSize);
 
-    const where: Record<string, unknown> = {};
+    if (segment !== undefined && !isSegment(segment)) return reply.badRequest("Unknown brand segment");
+    const where: Record<string, unknown> = segment === undefined ? {} : SEGMENTS[segment]();
     if (q) {
       where.OR = [
         { name: { contains: q, mode: "insensitive" } },
@@ -69,13 +82,12 @@ export async function brandRoutes(app: FastifyInstance) {
 
   // KPI counts for the admin brand list
   app.get("/summary", { preHandler: [authenticate] }, async () => {
-    const since = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
     const [total, brandStores, withoutLogo, withoutProducts, addedLast30d] = await Promise.all([
       app.prisma.brand.count(),
-      app.prisma.brand.count({ where: { themeColor: { not: null } } }),
-      app.prisma.brand.count({ where: { imageUrl: null } }),
-      app.prisma.brand.count({ where: { products: { none: {} } } }),
-      app.prisma.brand.count({ where: { createdAt: { gte: since } } }),
+      app.prisma.brand.count({ where: SEGMENTS.brandStores() }),
+      app.prisma.brand.count({ where: SEGMENTS.withoutLogo() }),
+      app.prisma.brand.count({ where: SEGMENTS.withoutProducts() }),
+      app.prisma.brand.count({ where: SEGMENTS.addedLast30d() }),
     ]);
     const response: ApiResponse<BrandSummary> = {
       success: true,
@@ -113,13 +125,21 @@ export async function brandRoutes(app: FastifyInstance) {
       SELECT d.id AS "deptId", d.name AS "deptName", d.translations AS "deptTranslations",
         c.id AS "catId", c.name AS "catName", c.translations AS "catTranslations",
         b.id, b.name, b.image_url AS "imageUrl", b.theme_color AS "themeColor",
-        b.theme_color_secondary AS "themeColorSecondary", COUNT(DISTINCT p.id)::int AS "productCount"
+        b.theme_color_secondary AS "themeColorSecondary", COUNT(DISTINCT p.id)::int AS "productCount",
+        (array_agg(p.image_url ORDER BY COALESCE(sales.qty, 0) DESC, sp.stock DESC, p.id)
+          FILTER (WHERE b.image_url IS NULL AND p.image_url IS NOT NULL))[1] AS "coverImageUrl"
       FROM store_products sp
       JOIN products p ON p.id = sp.product_id
       JOIN brands b ON b.id = p.brand_id
       JOIN subcategories s ON s.id = p.subcategory_id
       JOIN categories c ON c.id = s.category_id
       JOIN departments d ON d.id = c.department_id
+      LEFT JOIN (
+        SELECT oi.product_id, SUM(oi.quantity) AS qty
+        FROM order_items oi JOIN orders o ON o.id = oi.order_id
+        WHERE o.store_id = ${store.id} AND o.status <> 'CANCELLED' AND o.created_at > now() - interval '30 days'
+        GROUP BY oi.product_id
+      ) sales ON sales.product_id = p.id
       WHERE sp.store_id = ${store.id} AND sp.is_active = true AND p.is_active = true
       GROUP BY d.id, c.id, b.id
       ORDER BY d.sort_order, d.name, c.sort_order, c.name,

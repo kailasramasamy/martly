@@ -24,8 +24,8 @@ export function useFestiveHero(collectionId: string, storeId: string | undefined
   return { hero, loading };
 }
 
-// One tile's shelf a page at a time; switching tiles drops responses for the tile the user left
-export function useTileProducts(collectionId: string, tileId: string | null, storeId: string | undefined) {
+// One tile's shelf (or one of its aisles) a page at a time; switching drops responses for the shelf the user left
+export function useTileProducts(collectionId: string, tileId: string | null, storeId: string | undefined, aisleId: string | null) {
   const [products, setProducts] = useState<StoreProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
@@ -35,8 +35,9 @@ export function useTileProducts(collectionId: string, tileId: string | null, sto
   const request = useRef(0);
 
   const path = useCallback(
-    (p: number) => `/api/v1/festive/${collectionId}/tiles/${tileId}/products?storeId=${storeId}&page=${p}&pageSize=${PAGE_SIZE}`,
-    [collectionId, tileId, storeId],
+    (p: number) =>
+      `/api/v1/festive/${collectionId}/tiles/${tileId}/products?storeId=${storeId}&page=${p}&pageSize=${PAGE_SIZE}${aisleId ? `&subcategoryId=${aisleId}` : ""}`,
+    [collectionId, tileId, storeId, aisleId],
   );
 
   useEffect(() => {

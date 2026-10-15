@@ -24,6 +24,19 @@ function Signboard({ brand }: { brand: DirectoryBrand }) {
   );
 }
 
+// No logo yet: the brand's best-selling pack shot on its signboard colour, with the name as the caption
+function PackShot({ brand }: { brand: DirectoryBrand }) {
+  const [background, ink] = wordmarkColors(brand.name);
+  return (
+    <View style={[styles.plate, styles.shotPlate, { backgroundColor: background }]}>
+      <View style={styles.shotWell}>
+        <Image source={{ uri: brand.coverImageUrl! }} style={styles.shot} resizeMode="contain" />
+      </View>
+      <Text style={[styles.caption, { color: ink }]} numberOfLines={1}>{brandDisplayName(brand.name)}</Text>
+    </View>
+  );
+}
+
 function LogoPlate({ brand }: { brand: DirectoryBrand }) {
   const { base } = brandTheme(brand);
   return (
@@ -44,7 +57,7 @@ export function BrandTile({ brand, width, onPress }: { brand: DirectoryBrand; wi
       accessibilityRole="button"
       accessibilityLabel={`${brandDisplayName(brand.name)}, ${brand.productCount} items`}
     >
-      {brand.imageUrl ? <LogoPlate brand={brand} /> : <Signboard brand={brand} />}
+      {brand.imageUrl ? <LogoPlate brand={brand} /> : brand.coverImageUrl ? <PackShot brand={brand} /> : <Signboard brand={brand} />}
     </Pressable>
   );
 }
@@ -60,6 +73,10 @@ const styles = StyleSheet.create({
   stripeTwo: { height: 8, top: 22, right: -70 },
   wordmark: { fontFamily: fonts.extrabold, letterSpacing: -0.4, textAlign: "center" },
   count: { fontFamily: fonts.bold, fontSize: 10.5, opacity: 0.65, marginTop: 4, letterSpacing: 0.2 },
+  shotPlate: { paddingHorizontal: 6, paddingTop: 6, paddingBottom: 6, justifyContent: "flex-start" },
+  shotWell: { alignSelf: "stretch", flex: 1, borderRadius: 11, backgroundColor: "#fff", alignItems: "center", justifyContent: "center" },
+  shot: { width: "86%", height: "88%" },
+  caption: { fontFamily: fonts.extrabold, fontSize: 12, letterSpacing: -0.2, marginTop: 5, textAlign: "center" },
   logoPlate: { backgroundColor: "#fff", borderWidth: 1.5, paddingHorizontal: 0, paddingBottom: 22 },
   logo: { width: "78%", height: 50 },
   storeBar: { position: "absolute", left: 0, right: 0, bottom: 0, height: 22, alignItems: "center", justifyContent: "center" },

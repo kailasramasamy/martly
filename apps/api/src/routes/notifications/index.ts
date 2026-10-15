@@ -33,7 +33,7 @@ export async function notificationRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        orderBy: { createdAt: "desc" },
+        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
       }),
       app.prisma.notification.count({ where }),
     ]);
@@ -358,7 +358,7 @@ export async function notificationRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        orderBy: { createdAt: "desc" },
+        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
         include: {
           sentByUser: { select: { name: true } },
           _count: { select: { notifications: true } },
@@ -586,7 +586,7 @@ export async function notificationRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        orderBy: { createdAt: "desc" },
+        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
         include: { creator: { select: { name: true } } },
       }),
       app.prisma.notificationTemplate.count({ where }),

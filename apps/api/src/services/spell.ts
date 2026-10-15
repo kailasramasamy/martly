@@ -1,19 +1,23 @@
 import type { PrismaClient } from "../../generated/prisma/client.js";
+import { Prisma } from "../../generated/prisma/index.js";
 
 // pg_trgm similarity a misspelt word needs to a catalogue word before we swap it ("deterget" → "detergent")
 const MIN_SIMILARITY = 0.3;
 
 /**
- * Per-word spelling correction against the words in this store's product and brand names and aisle search terms.
+ * Per-word spelling correction against the words in this store's product and brand names and aisle search terms
+ * (the whole active catalog when no store is given, e.g. admin catalog search).
  * Known words are kept as typed; returns undefined when nothing changed.
  */
-export async function correctQuery(prisma: PrismaClient, storeId: string, q: string): Promise<string | undefined> {
+export async function correctQuery(prisma: PrismaClient, storeId: string | undefined, q: string): Promise<string | undefined> {
   const tokens = q.split(" ").filter(Boolean);
   if (tokens.length === 0) return undefined;
   const rows = await prisma.$queryRaw<{ token: string; best: string | null; known: boolean }[]>`
     WITH vocab AS (
       SELECT DISTINCT w FROM products p
-      JOIN store_products sp ON sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true
+      ${storeId
+        ? Prisma.sql`JOIN store_products sp ON sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true`
+        : Prisma.empty}
       LEFT JOIN brands b ON b.id = p.brand_id
       LEFT JOIN subcategories s ON s.id = p.subcategory_id
       CROSS JOIN LATERAL regexp_split_to_table(

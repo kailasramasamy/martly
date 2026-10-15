@@ -42,7 +42,8 @@ import dayjs from "dayjs";
 import { axiosInstance } from "../../providers/data-provider";
 import { useOrderWebSocket } from "../../hooks/useOrderWebSocket";
 import { ORDER_STATUS_CONFIG, TRIP_STATUS_CONFIG } from "../../constants/tag-colors";
-import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS, NEXT_ACTION } from "../../constants/order-transitions";
+import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
+import { NEXT_ACTION } from "../../constants/order-transitions";
 import { BRAND } from "../../theme";
 
 /* ── Types ─────────────────────────────────────────────── */

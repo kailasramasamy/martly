@@ -10,6 +10,11 @@ export function resolveNotificationDeepLink(
 ): Href {
   if (!data) return "/(tabs)" as Href;
 
+  // Staff new-order alert opens the Manage order screen
+  if (data.screen === "manage-order" && data.orderId) {
+    return `/manage/orders/${data.orderId}` as Href;
+  }
+
   // 1. Order detail
   if (data.orderId) {
     return `/order/${data.orderId}` as Href;

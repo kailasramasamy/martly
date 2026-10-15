@@ -31,6 +31,9 @@ const LightTheme = {
 import * as ExpoSplashScreen from "expo-splash-screen";
 import * as SecureStore from "expo-secure-store";
 import { AuthProvider, useAuth } from "../lib/auth-context";
+import { PersonaProvider, usePersona } from "../lib/persona-context";
+import { ManageScopeProvider } from "../lib/manage-scope-context";
+import { TabBarVisibilityProvider } from "../lib/tab-bar-visibility";
 import { CartProvider } from "../lib/cart-context";
 import { StoreProvider } from "../lib/store-context";
 import { WishlistProvider } from "../lib/wishlist-context";
@@ -43,6 +46,7 @@ import { addNotificationResponseListener, getLastNotificationResponse } from "..
 import { resolveNotificationDeepLink } from "../lib/notification-helpers";
 import SplashScreen from "../components/SplashScreen";
 import { colors } from "../constants/theme";
+import { manage } from "../components/manage/ui/tokens";
 
 // Keep native splash visible until we're ready
 ExpoSplashScreen.preventAutoHideAsync();
@@ -51,6 +55,7 @@ function RootLayoutNav() {
   const router = useRouter();
   const segments = useSegments();
   const { isAuthenticated, isLoading } = useAuth();
+  const { home, canManage, isReady: personaReady } = usePersona();
   const insets = useSafeAreaInsets();
   const [appReady, setAppReady] = useState(false);
   const [splashDone, setSplashDone] = useState(false);
@@ -71,7 +76,7 @@ function RootLayoutNav() {
 
   // When auth resolves, check if animated splash should be skipped (recent reload)
   useEffect(() => {
-    if (!isLoading) {
+    if (!isLoading && personaReady) {
       SecureStore.getItemAsync("splash_ts").then((ts) => {
         if (ts && Date.now() - Number(ts) < 5 * 60 * 1000) {
           // Splash played within 5 min — skip animated splash (notification-triggered reload)
@@ -84,20 +89,22 @@ function RootLayoutNav() {
         ExpoSplashScreen.hideAsync();
       });
     }
-  }, [isLoading]);
+  }, [isLoading, personaReady]);
 
   // Auth redirect: after splash done, react to auth state changes (login/logout)
   useEffect(() => {
-    if (isLoading || !splashDone) return;
+    if (isLoading || !splashDone || !personaReady) return;
 
     const inAuth = segments[0] === "(auth)";
+    const inManage = segments[0] === "(manage)" || segments[0] === "manage";
+    const misplacedRole = home === "/unsupported-role" && segments[0] !== "unsupported-role";
 
     if (!isAuthenticated && !inAuth) {
       router.replace("/(auth)/login");
-    } else if (isAuthenticated && inAuth) {
-      router.replace("/(tabs)");
+    } else if (isAuthenticated && (inAuth || misplacedRole || (inManage && !canManage))) {
+      router.replace(home);
     }
-  }, [isAuthenticated, isLoading, segments, splashDone]);
+  }, [isAuthenticated, isLoading, segments, splashDone, personaReady, home, canManage]);
 
   // Deep link handler for push notifications while app is running
   useEffect(() => {
@@ -119,11 +126,11 @@ function RootLayoutNav() {
   // Called while splash is still fully opaque — navigate to correct screen
   const handleBeforeFadeOut = useCallback(() => {
     if (isAuthenticated) {
-      router.replace("/(tabs)");
+      router.replace(home);
     } else {
       router.replace("/(auth)/login");
     }
-  }, [isAuthenticated, router]);
+  }, [isAuthenticated, router, home]);
 
   // Called after splash fade-out completes — remove the overlay and navigate to deep link
   const handleSplashFinish = useCallback(() => {
@@ -146,9 +153,23 @@ function RootLayoutNav() {
   return (
     <>
       <StatusBar style="dark" translucent={false} backgroundColor="#ffffff" />
-      <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back", headerTitleStyle: { fontFamily: "Manrope-SemiBold" }, contentStyle: { backgroundColor: "#f8fafc" } }}>
+      <Stack
+        screenOptions={({ route }) => {
+          // Manage stack screens live in this root stack so iOS draws the native "< Back"; they set their own titles
+          const isManage = route.name.startsWith("manage/");
+          return {
+            headerShown: isManage,
+            headerBackTitle: "Back",
+            headerShadowVisible: !isManage,
+            headerTitleStyle: { fontFamily: "Manrope-SemiBold" },
+            contentStyle: { backgroundColor: isManage ? manage.canvas : "#f8fafc" },
+          };
+        }}
+      >
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="(auth)" />
+        <Stack.Screen name="(manage)" />
+        <Stack.Screen name="unsupported-role" options={{ gestureEnabled: false }} />
         <Stack.Screen name="delete-account" options={{ headerShown: true, title: "Delete Account" }} />
         <Stack.Screen name="store/[id]" options={{ headerShown: true, title: "Store" }} />
         <Stack.Screen name="product/[id]" options={{ headerShown: true, title: "Product" }} />
@@ -211,6 +232,9 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <ThemeProvider value={LightTheme}>
         <AuthProvider>
+          <PersonaProvider>
+          <ManageScopeProvider>
+          <TabBarVisibilityProvider>
           <LanguageProvider>
           <StoreProvider>
             <MembershipProvider>
@@ -228,6 +252,9 @@ export default function RootLayout() {
             </MembershipProvider>
           </StoreProvider>
           </LanguageProvider>
+          </TabBarVisibilityProvider>
+          </ManageScopeProvider>
+          </PersonaProvider>
         </AuthProvider>
       </ThemeProvider>
     </SafeAreaProvider>

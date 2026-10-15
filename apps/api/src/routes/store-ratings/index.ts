@@ -3,7 +3,7 @@ import { createStoreRatingSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgUser, getOrgStoreIds } from "../../middleware/org-scope.js";
+import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
 export async function storeRatingRoutes(app: FastifyInstance) {
   // POST / - Create store rating (customer, order must be DELIVERED)
@@ -95,8 +95,9 @@ export async function storeRatingRoutes(app: FastifyInstance) {
   // GET /admin - Admin: paginated list of store ratings
   app.get("/admin", {
     preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")],
-  }, async (request) => {
+  }, async (request, reply) => {
     const { storeId, page = 1, pageSize = 20 } = request.query as { storeId?: string; page?: number; pageSize?: number };
+    if (storeId && !(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied to this store");
     const skip = (Number(page) - 1) * Number(pageSize);
 
     const storeIds = await getOrgStoreIds(request, app.prisma);
@@ -112,7 +113,7 @@ export async function storeRatingRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        orderBy: { createdAt: "desc" },
+        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
         include: {
           user: { select: { id: true, name: true } },
           store: { select: { id: true, name: true } },

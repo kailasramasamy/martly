@@ -12,26 +12,9 @@ import { reserveStock, releaseStock, deductStock } from "../../services/stock.js
 import { formatVariantUnit } from "../../services/units.js";
 import { createRazorpayOrder, verifyRazorpaySignature, isRazorpayConfigured, getRazorpayKeyId, ensureRazorpayCustomer } from "../../services/payment.js";
 import { broadcastOrderUpdate } from "../../services/order-broadcast.js";
-
-// Valid status transitions
-const DELIVERY_TRANSITIONS: Record<string, string[]> = {
-  PENDING: ["CONFIRMED", "CANCELLED"],
-  CONFIRMED: ["PREPARING", "CANCELLED"],
-  PREPARING: ["READY", "CANCELLED"],
-  READY: ["OUT_FOR_DELIVERY", "CANCELLED"],
-  OUT_FOR_DELIVERY: ["DELIVERED", "CANCELLED"],
-  DELIVERED: [],
-  CANCELLED: [],
-};
-
-const PICKUP_TRANSITIONS: Record<string, string[]> = {
-  PENDING: ["CONFIRMED", "CANCELLED"],
-  CONFIRMED: ["PREPARING", "CANCELLED"],
-  PREPARING: ["READY", "CANCELLED"],
-  READY: ["DELIVERED", "CANCELLED"],  // Skip OUT_FOR_DELIVERY for pickup
-  DELIVERED: [],
-  CANCELLED: [],
-};
+import { notifyStaffOfNewOrder } from "../../services/staff-alerts.js";
+import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
+import { OrderStatus } from "@martly/shared/constants";
 
 function getValidTransitions(fulfillmentType: string): Record<string, string[]> {
   return fulfillmentType === "PICKUP" ? PICKUP_TRANSITIONS : DELIVERY_TRANSITIONS;
@@ -49,12 +32,12 @@ function formatOrderUnits<T extends { items?: { variant?: { unitType: string } }
 
 export async function orderRoutes(app: FastifyInstance) {
   // List orders (scoped by role + org)
-  app.get("/", { preHandler: [authenticate] }, async (request) => {
+  app.get("/", { preHandler: [authenticate] }, async (request, reply) => {
     const {
-      page = 1, pageSize = 20, userId, status, paymentStatus, paymentMethod, fulfillmentType, q,
+      page = 1, pageSize = 20, userId, storeId, status, paymentStatus, paymentMethod, fulfillmentType, q,
       dateFrom, dateTo, sortBy, sortOrder,
     } = request.query as {
-      page?: number; pageSize?: number; userId?: string; status?: string;
+      page?: number; pageSize?: number; userId?: string; storeId?: string; status?: string;
       paymentStatus?: string; paymentMethod?: string; fulfillmentType?: string; q?: string;
       dateFrom?: string; dateTo?: string; sortBy?: string; sortOrder?: string;
     };
@@ -65,16 +48,22 @@ export async function orderRoutes(app: FastifyInstance) {
 
     if (user.role === "CUSTOMER") {
       where.userId = user.sub;
-    } else if (userId) {
-      where.userId = userId;
-    } else if (user.role !== "SUPER_ADMIN") {
+    } else {
+      if (userId) where.userId = userId;
       const orgStoreIds = await getOrgStoreIds(request, app.prisma);
-      if (orgStoreIds !== undefined) {
-        where.storeId = { in: orgStoreIds };
-      }
+      if (orgStoreIds !== undefined) where.storeId = { in: orgStoreIds };
     }
 
-    if (status) where.status = status;
+    if (storeId && user.role !== "CUSTOMER") {
+      if (!(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied to this store");
+      where.storeId = storeId;
+    }
+    // Accepts one status or a comma-separated list, e.g. "PENDING,CONFIRMED" for active orders
+    if (status) {
+      const statuses = status.split(",");
+      if (!statuses.every((s) => s in OrderStatus)) return reply.badRequest("Invalid order status");
+      where.status = statuses.length > 1 ? { in: statuses } : status;
+    }
     if (paymentStatus) where.paymentStatus = paymentStatus;
     if (paymentMethod) where.paymentMethod = paymentMethod;
     if (fulfillmentType) where.fulfillmentType = fulfillmentType;
@@ -107,7 +96,7 @@ export async function orderRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        orderBy,
+        orderBy: [orderBy, { id: "asc" }],
         include: {
           items: { include: { product: true, variant: true } },
           user: { select: { id: true, name: true, email: true } },
@@ -132,6 +121,8 @@ export async function orderRoutes(app: FastifyInstance) {
         items: { include: { product: true, variant: true } },
         statusLogs: { orderBy: { createdAt: "asc" } },
         returnRequest: { select: { id: true, status: true, requestedAmount: true, approvedAmount: true } },
+        user: { select: { id: true, name: true, email: true, phone: true } },
+        deliveryTrip: { select: { id: true, status: true, rider: { select: { name: true, phone: true } } } },
       },
     });
     if (!order) return reply.notFound("Order not found");
@@ -668,6 +659,12 @@ export async function orderRoutes(app: FastifyInstance) {
 
         return { order: newOrder, walletFullyCovered, walletDeduction, loyaltyDeduction, remainingAmount };
       });
+
+      // COD and fully wallet-paid orders need the store's attention now; online orders alert once paid
+      broadcastOrderUpdate(app.prisma, result.order.id, result.order.status);
+      if (result.order.paymentMethod === "COD" || result.walletFullyCovered) {
+        notifyStaffOfNewOrder(app.fcm, app.prisma, result.order.id);
+      }
 
       const responseData = {
         ...formatOrderUnits(result.order),
@@ -1378,6 +1375,7 @@ export async function orderRoutes(app: FastifyInstance) {
           sendOrderStatusNotification(app.fcm, app.prisma, order.id, order.userId, "CONFIRMED");
         }
         broadcastOrderUpdate(app.prisma, order.id, updated.status);
+        if (order.paymentStatus !== "PAID") notifyStaffOfNewOrder(app.fcm, app.prisma, order.id);
 
         const response: ApiResponse<typeof updated> = { success: true, data: updated };
         return response;

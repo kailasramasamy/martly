@@ -3,7 +3,7 @@ import { createLoyaltyConfigSchema, updateLoyaltyConfigSchema, loyaltyAdjustment
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgUser } from "../../middleware/org-scope.js";
+import { getOrgUser, requireOrgContext } from "../../middleware/org-scope.js";
 import { sendLoyaltyNotification } from "../../services/notification.js";
 
 export async function loyaltyRoutes(app: FastifyInstance) {
@@ -73,7 +73,7 @@ export async function loyaltyRoutes(app: FastifyInstance) {
   // GET /loyalty/config — Admin: get org's loyalty config
   app.get(
     "/config",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const user = getOrgUser(request);
       if (!user.organizationId && user.role !== "SUPER_ADMIN") {
@@ -103,7 +103,7 @@ export async function loyaltyRoutes(app: FastifyInstance) {
   // PUT /loyalty/config — Admin: create/update org's loyalty config (upsert)
   app.put(
     "/config",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const user = getOrgUser(request);
       let orgId = user.organizationId;
@@ -142,7 +142,7 @@ export async function loyaltyRoutes(app: FastifyInstance) {
   // GET /loyalty/customers — Admin: paginated customer loyalty list
   app.get(
     "/customers",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request) => {
       const user = getOrgUser(request);
       const { page = 1, pageSize = 20, q } = request.query as {
@@ -173,7 +173,7 @@ export async function loyaltyRoutes(app: FastifyInstance) {
           where,
           skip,
           take: Number(pageSize),
-          orderBy: { points: "desc" },
+          orderBy: [{ points: "desc" }, { id: "asc" }],
           include: {
             user: { select: { id: true, name: true, email: true, phone: true } },
           },
@@ -198,7 +198,7 @@ export async function loyaltyRoutes(app: FastifyInstance) {
   // GET /loyalty/customers/:userId — Admin: customer detail with transactions
   app.get<{ Params: { userId: string } }>(
     "/customers/:userId",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const user = getOrgUser(request);
       let orgId = user.organizationId;
@@ -238,7 +238,7 @@ export async function loyaltyRoutes(app: FastifyInstance) {
   // POST /loyalty/adjust — Admin: manual point adjustment
   app.post(
     "/adjust",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const admin = getOrgUser(request);
       let orgId = admin.organizationId;
@@ -255,6 +255,14 @@ export async function loyaltyRoutes(app: FastifyInstance) {
         const existing = await tx.loyaltyBalance.findUnique({
           where: { userId_organizationId: { userId: body.userId, organizationId: orgId! } },
         });
+
+        if (!existing) {
+          const customer = await tx.order.findFirst({
+            where: { userId: body.userId, store: { organizationId: orgId! } },
+            select: { id: true },
+          });
+          if (!customer) throw Object.assign(new Error("Customer has no orders in this organization"), { statusCode: 404 });
+        }
 
         const currentPoints = existing?.points ?? 0;
         const newPoints = currentPoints + body.points;

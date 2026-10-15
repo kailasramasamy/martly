@@ -152,7 +152,7 @@ export async function storeIntelligenceRoutes(app: FastifyInstance) {
 
   // ── 3. Anomalies ──────────────────────────────────
   app.get("/anomalies", { preHandler }, async (request, reply) => {
-    const { storeId, days = "30" } = request.query as { storeId?: string; days?: string };
+    const { storeId, days = "30", type, limit } = request.query as { storeId?: string; days?: string; type?: string; limit?: string };
     if (!storeId) return reply.badRequest("storeId is required");
 
     const hasAccess = await verifyStoreOrgAccess(request, app.prisma, storeId);
@@ -354,11 +354,13 @@ export async function storeIntelligenceRoutes(app: FastifyInstance) {
     anomalies.sort((a, b) => severityOrder[a.severity] - severityOrder[b.severity]);
 
     const highCount = anomalies.filter((a) => a.severity === "high").length;
+    const matching = type ? anomalies.filter((a) => a.type === type) : anomalies;
+    const rowLimit = Number(limit) > 0 ? Math.min(Number(limit), 500) : undefined;
 
     return {
       success: true,
-      data: anomalies,
-      meta: { storeId, periodDays, totalAnomalies: anomalies.length, highCount },
+      data: rowLimit ? matching.slice(0, rowLimit) : matching,
+      meta: { storeId, periodDays, totalAnomalies: anomalies.length, highCount, total: matching.length },
     };
   });
 

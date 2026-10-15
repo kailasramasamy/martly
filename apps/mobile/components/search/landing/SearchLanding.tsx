@@ -60,7 +60,7 @@ export function SearchLanding({ data, loading, recent, onSearch, onRemoveRecent,
       {!data && loading && <LandingSkeleton />}
       {data && data.trending.length > 0 && (
         <LandingSection title="Trending near you" icon="trending-up">
-          <QueryChips queries={data.trending} icon="search" onPress={onSearch} horizontal />
+          <QueryChips queries={data.trending} icon="search" onPress={onSearch} />
         </LandingSection>
       )}
       {reorder && reorder.products.length > 0 && (

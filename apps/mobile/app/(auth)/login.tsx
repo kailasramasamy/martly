@@ -5,7 +5,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../../lib/auth-context";
 import { api, setAccessToken } from "../../lib/api";
 import { colors, spacing, fontSize } from "../../constants/theme";
-import type { AuthTokens } from "@martly/shared/types";
+import type { AuthTokens, LoginResponse } from "@martly/shared/types";
+import { completeLogin } from "../../lib/org-selection";
 
 type Step = "phone" | "otp" | "name";
 
@@ -56,18 +57,19 @@ export default function LoginScreen() {
     setLoading(true);
     try {
       const cleaned = phone.replace(/\D/g, "");
-      const result = await api.post<AuthTokens & { isNewUser: boolean }>("/api/v1/auth/verify-otp", {
+      const result = await api.post<LoginResponse & { isNewUser: boolean }>("/api/v1/auth/verify-otp", {
         phone: cleaned,
         otp,
       });
-      if (result.data.isNewUser) {
+      const data = result.data;
+      if (!data.requiresOrgSelection && data.isNewUser) {
         // Set token for API calls (to save name) but don't trigger auth redirect yet
-        setAccessToken(result.data.accessToken);
-        pendingTokensRef.current = result.data;
+        setAccessToken(data.accessToken);
+        pendingTokensRef.current = data;
         setStep("name");
       } else {
-        await login(result.data);
-        // Root layout auth redirect will navigate to /(tabs)
+        // Root layout auth redirect navigates once signed in
+        await completeLogin(data, login);
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Invalid OTP");
@@ -148,6 +150,11 @@ export default function LoginScreen() {
               ) : (
                 <Text style={styles.buttonText}>Continue</Text>
               )}
+            </Pressable>
+
+            <Pressable onPress={() => router.push("/(auth)/staff-login")} style={styles.staffLink} accessibilityRole="link">
+              <Ionicons name="briefcase-outline" size={15} color={colors.textSecondary} />
+              <Text style={styles.linkText}>Store owner or manager? <Text style={styles.staffLinkStrong}>Staff login</Text></Text>
             </Pressable>
           </View>
         )}
@@ -292,6 +299,9 @@ const styles = StyleSheet.create({
 
   linkContainer: { marginTop: spacing.lg, alignItems: "center" },
   linkText: { fontSize: fontSize.md, color: colors.textSecondary },
+
+  staffLink: { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, marginTop: spacing.xl, minHeight: 44 },
+  staffLinkStrong: { color: colors.primary, fontWeight: "700" },
 
   resendText: { fontSize: fontSize.md, color: colors.primary, fontWeight: "600" },
 });

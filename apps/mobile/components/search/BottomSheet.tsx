@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { Modal, View, Text, Pressable, Animated, StyleSheet, Dimensions, TouchableOpacity } from "react-native";
+import { Modal, View, Text, Pressable, Animated, StyleSheet, Dimensions, TouchableOpacity, KeyboardAvoidingView, Platform } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../../constants/theme";
@@ -33,7 +33,7 @@ export function BottomSheet({ visible, title, onClose, children, footer }: Botto
 
   return (
     <Modal visible={mounted} transparent animationType="none" onRequestClose={onClose} statusBarTranslucent>
-      <View style={styles.root}>
+      <KeyboardAvoidingView style={styles.root} behavior={Platform.OS === "ios" ? "padding" : undefined}>
         <Animated.View style={[styles.backdrop, { opacity: backdrop }]}>
           <Pressable style={StyleSheet.absoluteFill} onPress={onClose} accessibilityLabel="Close" />
         </Animated.View>
@@ -47,7 +47,7 @@ export function BottomSheet({ visible, title, onClose, children, footer }: Botto
           <View style={styles.body}>{children}</View>
           {footer}
         </Animated.View>
-      </View>
+      </KeyboardAvoidingView>
     </Modal>
   );
 }

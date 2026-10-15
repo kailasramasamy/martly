@@ -1,7 +1,7 @@
 import type { FastifyInstance } from "fastify";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgUser } from "../../middleware/org-scope.js";
+import { getOrgUser, requireOrgContext } from "../../middleware/org-scope.js";
 import { applyReferralCodeSchema, createReferralConfigSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { ensureReferralCode } from "../../services/referral-code.js";
@@ -148,7 +148,7 @@ export async function referralRoutes(app: FastifyInstance) {
   // ── Admin: get referral config ─────────────────────────
   app.get(
     "/config",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const orgUser = getOrgUser(request);
       let orgId = orgUser.organizationId;
@@ -180,7 +180,7 @@ export async function referralRoutes(app: FastifyInstance) {
   // ── Admin: upsert referral config ──────────────────────
   app.put(
     "/config",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const orgUser = getOrgUser(request);
       let orgId = orgUser.organizationId;
@@ -217,7 +217,7 @@ export async function referralRoutes(app: FastifyInstance) {
   // ── Admin: list referrals ──────────────────────────────
   app.get(
     "/list",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const orgUser = getOrgUser(request);
 
@@ -252,7 +252,7 @@ export async function referralRoutes(app: FastifyInstance) {
             referrer: { select: { id: true, name: true, email: true, referralCode: true } },
             referee: { select: { id: true, name: true, email: true } },
           },
-          orderBy: { createdAt: "desc" },
+          orderBy: [{ createdAt: "desc" }, { id: "asc" }],
           skip: (pg - 1) * ps,
           take: ps,
         }),
@@ -285,7 +285,7 @@ export async function referralRoutes(app: FastifyInstance) {
   // ── Admin: referral stats ──────────────────────────────
   app.get(
     "/stats",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const orgUser = getOrgUser(request);
       const { organizationId: qOrgId } = request.query as { organizationId?: string };

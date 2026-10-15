@@ -23,7 +23,7 @@ export async function festiveRoutes(app: FastifyInstance) {
     "/:collectionId/tiles/:tileId/products",
     { preHandler: [authenticateOptional] },
     async (request, reply) => {
-      const { storeId, page, pageSize } = festiveTileProductsQuerySchema.parse(request.query);
+      const { storeId, subcategoryId, page, pageSize } = festiveTileProductsQuerySchema.parse(request.query);
       const store = await findActiveStore(app, storeId);
       if (!store) return reply.notFound("Store not found");
       const tile = await app.prisma.collectionTile.findFirst({
@@ -34,7 +34,9 @@ export async function festiveRoutes(app: FastifyInstance) {
         select: { subcategoryIds: true },
       });
       if (!tile) return reply.notFound("Tile not found");
-      const { products, total } = await tileProducts(app.prisma, store.id, tile.subcategoryIds, page, pageSize);
+      if (subcategoryId && !tile.subcategoryIds.includes(subcategoryId)) return reply.badRequest("Subcategory is not in this tile");
+      const aisles = subcategoryId ? [subcategoryId] : tile.subcategoryIds;
+      const { products, total } = await tileProducts(app.prisma, store.id, aisles, page, pageSize);
       return {
         success: true,
         data: products,

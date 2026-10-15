@@ -1,4 +1,4 @@
-import type { FastifyInstance } from "fastify";
+import type { FastifyInstance, FastifyRequest } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
@@ -10,8 +10,19 @@ import {
   verifyRazorpaySignature,
 } from "../../services/payment.js";
 import { sendWalletNotification } from "../../services/notification.js";
+import { getOrgUser } from "../../middleware/org-scope.js";
 
 export async function walletRoutes(app: FastifyInstance) {
+  async function customerInOrg(request: FastifyRequest, userId: string): Promise<boolean> {
+    const user = getOrgUser(request);
+    if (user.role === "SUPER_ADMIN") return true;
+    const ordered = await app.prisma.order.findFirst({
+      where: { userId, store: { organizationId: user.organizationId } },
+      select: { id: true },
+    });
+    return !!ordered;
+  }
+
   // Get wallet balance + recent transactions
   app.get("/", { preHandler: [authenticate] }, async (request) => {
     const user = request.user as { sub: string };
@@ -149,6 +160,7 @@ export async function walletRoutes(app: FastifyInstance) {
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
     async (request, reply) => {
       const { userId } = request.params;
+      if (!(await customerInOrg(request, userId))) return reply.forbidden("Access denied");
 
       const [userData, transactions] = await Promise.all([
         app.prisma.user.findUnique({
@@ -189,6 +201,7 @@ export async function walletRoutes(app: FastifyInstance) {
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
     async (request, reply) => {
       const { userId } = request.params;
+      if (!(await customerInOrg(request, userId))) return reply.forbidden("Access denied");
       const { type, amount, description } = request.body as {
         type: "CREDIT" | "DEBIT";
         amount: number;

@@ -6,7 +6,9 @@
   "exports": {
     "./schemas": "./src/schemas/index.ts",
     "./types": "./src/types/index.ts",
-    "./constants": "./src/constants/index.ts"
+    "./constants": "./src/constants/index.ts",
+    "./permissions": "./src/permissions/index.ts",
+    "./order-flow": "./src/order-flow/index.ts"
   },
   "dependencies": {
     "zod": "^3.24"

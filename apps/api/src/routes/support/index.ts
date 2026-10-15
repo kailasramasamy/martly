@@ -2,7 +2,7 @@ import type { FastifyInstance } from "fastify";
 import Anthropic from "@anthropic-ai/sdk";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgStoreIds } from "../../middleware/org-scope.js";
+import { getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 
 // ── Rate Limiter ────────────────────────────────────
@@ -406,10 +406,15 @@ export async function supportRoutes(app: FastifyInstance) {
   app.get(
     "/tickets/stats",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
-    async (request) => {
+    async (request, reply) => {
+      const { storeId } = request.query as { storeId?: string };
       const orgStoreIds = await getOrgStoreIds(request, app.prisma);
       const storeFilter: Record<string, unknown> = {};
       if (orgStoreIds) storeFilter.storeId = { in: orgStoreIds };
+      if (storeId) {
+        if (!(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied to this store");
+        storeFilter.storeId = storeId;
+      }
 
       const [total, open, resolved, closed] = await Promise.all([
         app.prisma.supportTicket.count({ where: storeFilter }),
@@ -436,7 +441,7 @@ export async function supportRoutes(app: FastifyInstance) {
   }>(
     "/tickets",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
-    async (request) => {
+    async (request, reply) => {
       const { page = "1", pageSize = "20", status, storeId, search } = request.query as {
         page?: string;
         pageSize?: string;
@@ -457,7 +462,10 @@ export async function supportRoutes(app: FastifyInstance) {
       }
 
       if (status) where.status = status;
-      if (storeId) where.storeId = storeId;
+      if (storeId) {
+        if (!(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied to this store");
+        where.storeId = storeId;
+      }
       if (search) {
         where.OR = [
           { subject: { contains: search, mode: "insensitive" } },
@@ -471,7 +479,7 @@ export async function supportRoutes(app: FastifyInstance) {
           where,
           skip,
           take,
-          orderBy: { createdAt: "desc" },
+          orderBy: [{ createdAt: "desc" }, { id: "asc" }],
           include: {
             user: { select: { id: true, name: true, email: true, phone: true } },
             store: { select: { id: true, name: true } },

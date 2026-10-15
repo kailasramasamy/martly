@@ -6,6 +6,7 @@ import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
+const RIDER_ROLES = { in: ["RIDER", "STAFF"] as ("RIDER" | "STAFF")[] };
 const auth = [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")];
 
 export async function riderRoutes(app: FastifyInstance) {
@@ -19,7 +20,7 @@ export async function riderRoutes(app: FastifyInstance) {
     }
 
     const userStores = await app.prisma.userStore.findMany({
-      where: { storeId },
+      where: { storeId, user: { role: RIDER_ROLES } },
       include: {
         user: {
           select: { id: true, name: true, phone: true, email: true, createdAt: true },
@@ -118,8 +119,8 @@ export async function riderRoutes(app: FastifyInstance) {
     }
 
     // Verify rider is assigned to this store
-    const assignment = await app.prisma.userStore.findUnique({
-      where: { userId_storeId: { userId: request.params.id, storeId } },
+    const assignment = await app.prisma.userStore.findFirst({
+      where: { userId: request.params.id, storeId, user: { role: RIDER_ROLES } },
     });
     if (!assignment) return reply.notFound("Rider not found at this store");
 
@@ -161,8 +162,8 @@ export async function riderRoutes(app: FastifyInstance) {
     }
 
     // Verify assignment exists
-    const assignment = await app.prisma.userStore.findUnique({
-      where: { userId_storeId: { userId: request.params.id, storeId } },
+    const assignment = await app.prisma.userStore.findFirst({
+      where: { userId: request.params.id, storeId, user: { role: RIDER_ROLES } },
     });
     if (!assignment) return reply.notFound("Rider not found at this store");
 

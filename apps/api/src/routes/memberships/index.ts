@@ -355,8 +355,11 @@ export async function membershipRoutes(app: FastifyInstance) {
   });
 
   // ── Admin: list plans ──────────────────────────────
-  app.get("/plans", { preHandler: [authenticate] }, async (request) => {
+  app.get("/plans", { preHandler: [authenticate] }, async (request, reply) => {
     const user = getOrgUser(request);
+    if (user.role !== "SUPER_ADMIN" && user.role !== "ORG_ADMIN") {
+      return reply.forbidden("Only admins can list membership plans");
+    }
     const { page = "1", pageSize = "20" } = request.query as { page?: string; pageSize?: string };
 
     const where = user.role === "SUPER_ADMIN" ? {} : { organizationId: user.organizationId! };
@@ -364,7 +367,7 @@ export async function membershipRoutes(app: FastifyInstance) {
     const [plans, total] = await Promise.all([
       app.prisma.membershipPlan.findMany({
         where,
-        orderBy: { sortOrder: "asc" },
+        orderBy: [{ sortOrder: "asc" }, { id: "asc" }],
         skip: (Number(page) - 1) * Number(pageSize),
         take: Number(pageSize),
         include: { organization: { select: { name: true } } },
@@ -472,7 +475,7 @@ export async function membershipRoutes(app: FastifyInstance) {
     const [memberships, total] = await Promise.all([
       app.prisma.userMembership.findMany({
         where,
-        orderBy: { createdAt: "desc" },
+        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
         skip: (Number(page) - 1) * Number(pageSize),
         take: Number(pageSize),
         include: {

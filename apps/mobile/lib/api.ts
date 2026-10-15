@@ -7,7 +7,7 @@ let tokenRefresher: (() => Promise<string | null>) | null = null;
 let refreshPromise: Promise<string | null> | null = null;
 
 // Credential endpoints: a 401 here means bad input, not an expired session
-const NO_REFRESH_PATHS = ["/auth/send-otp", "/auth/verify-otp", "/auth/register", "/auth/refresh"];
+const NO_REFRESH_PATHS = ["/auth/send-otp", "/auth/verify-otp", "/auth/register", "/auth/refresh", "/auth/login", "/auth/select-org"];
 
 export function setAccessToken(token: string | null) {
   accessToken = token;
@@ -23,7 +23,8 @@ async function request<T>(path: string, options: RequestInit = {}, isRetry = fal
     ...((options.headers as Record<string, string>) ?? {}),
   };
 
-  if (options.body) {
+  // FormData sets its own multipart boundary header
+  if (options.body && !(options.body instanceof FormData)) {
     headers["Content-Type"] = "application/json";
   }
 
@@ -70,4 +71,6 @@ export const api = {
     request<ApiResponse<T>>(path, { method: "PATCH", ...(body ? { body: JSON.stringify(body) } : {}) }),
   delete: <T>(path: string, body?: unknown) =>
     request<ApiResponse<T>>(path, { method: "DELETE", ...(body ? { body: JSON.stringify(body) } : {}) }),
+  upload: <T>(path: string, form: FormData) =>
+    request<ApiResponse<T>>(path, { method: "POST", body: form }),
 };

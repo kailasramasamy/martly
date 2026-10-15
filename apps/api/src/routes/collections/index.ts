@@ -7,6 +7,7 @@ import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
+import { canSeeOrgRecord, assertProductsUsable } from "../../services/catalog-access.js";
 import { isCurationConfigured, regenerateBanner, regenerateHero } from "../../services/seasonal/index.js";
 import { saveHero, withHeroTranslation } from "../../services/seasonal/hero.js";
 import { ADMINS, ownCollection } from "./access.js";
@@ -30,10 +31,8 @@ export async function collectionRoutes(app: FastifyInstance) {
 
     // Org-scoped: non-SUPER_ADMIN sees own org + global
     if (user.role !== "SUPER_ADMIN") {
-      where.OR = [
-        { organizationId: user.organizationId },
-        { organizationId: null },
-      ];
+      // An undefined organizationId would match every org, so only add it when present
+      where.OR = [{ organizationId: null }, ...(user.organizationId ? [{ organizationId: user.organizationId }] : [])];
     }
 
     if (q) {
@@ -45,7 +44,7 @@ export async function collectionRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        orderBy: { sortOrder: "asc" },
+        orderBy: [{ sortOrder: "asc" }, { id: "asc" }],
         include: {
           _count: { select: { items: true } },
           organization: { select: { id: true, name: true } },
@@ -77,7 +76,7 @@ export async function collectionRoutes(app: FastifyInstance) {
         tiles: { orderBy: { sortOrder: "asc" } },
       },
     });
-    if (!collection) return reply.notFound("Collection not found");
+    if (!collection || !canSeeOrgRecord(getOrgUser(request), collection.organizationId)) return reply.notFound("Collection not found");
 
     const response: ApiResponse<typeof collection> = { success: true, data: collection };
     return response;
@@ -95,6 +94,7 @@ export async function collectionRoutes(app: FastifyInstance) {
       if (user.role === "ORG_ADMIN") {
         body.organizationId = user.organizationId;
       }
+      await assertProductsUsable(app.prisma, productIds ?? [], body.organizationId ?? null);
 
       // Auto sortOrder if not provided
       if (body.sortOrder === undefined) {
@@ -141,6 +141,7 @@ export async function collectionRoutes(app: FastifyInstance) {
 
       // If productIds sent, replace all items
       if (productIds) {
+        await assertProductsUsable(app.prisma, productIds, existing.organizationId);
         await app.prisma.collectionItem.deleteMany({ where: { collectionId: existing.id } });
         if (productIds.length > 0) {
           await app.prisma.collectionItem.createMany({

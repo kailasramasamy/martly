@@ -29,6 +29,8 @@ interface SendNotificationOptions {
   imageUrl?: string;
   data?: Record<string, unknown>;
   campaignId?: string;
+  /** Play the default alert sound (iOS + Android); used for staff new-order alerts */
+  sound?: boolean;
 }
 
 /**
@@ -78,6 +80,9 @@ export async function sendNotification(
         const response = await fcm.sendEachForMulticast({
           tokens,
           notification: { title: options.title, body: options.body },
+          ...(options.sound
+            ? { apns: { payload: { aps: { sound: "default" } } }, android: { notification: { sound: "default" } } }
+            : {}),
           data: options.data
             ? Object.fromEntries(Object.entries(options.data).map(([k, v]) => [k, String(v)]))
             : undefined,

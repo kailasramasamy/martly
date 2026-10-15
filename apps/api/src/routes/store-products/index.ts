@@ -6,6 +6,9 @@ import { requireRole } from "../../middleware/authorize.js";
 import { requireOrgContext, getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
+import { searchProductsForAdmin } from "../../services/search.js";
+import { fetchRankedPage } from "../../services/ranked-page.js";
+import { countIds, subcategoryFacets, type SubcategoryFacet } from "../../services/search-facets.js";
 
 function withPricing(sp: { stock: number; reservedStock: number; price: unknown; memberPrice?: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown; variant: { unitType: string; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown } }) {
   const pricing = calculateEffectivePrice(
@@ -20,8 +23,21 @@ function withPricing(sp: { stock: number; reservedStock: number; price: unknown;
 export async function storeProductRoutes(app: FastifyInstance) {
   const spInclude = { store: true, product: { include: { brand: true } }, variant: true } as const;
 
+  /** Search candidates (listing → its product for ranking) plus subcategory facets, which ignore the picked subcategory */
+  async function rankedListingCandidates(where: Record<string, unknown>, pickedSubcategory: string | undefined) {
+    const rows = await app.prisma.storeProduct.findMany({
+      where,
+      select: { id: true, productId: true, product: { select: { subcategoryId: true } } },
+    });
+    const facets = await subcategoryFacets(app.prisma, countIds(rows.map((r) => r.product.subcategoryId)));
+    const candidates = rows
+      .filter((r) => !pickedSubcategory || r.product.subcategoryId === pickedSubcategory)
+      .map((r) => ({ id: r.id, key: r.productId }));
+    return { candidates, facets };
+  }
+
   // List store-products (scoped to org's stores)
-  app.get("/", { preHandler: [authenticate, requireOrgContext] }, async (request) => {
+  app.get("/", { preHandler: [authenticate, requireOrgContext] }, async (request, reply) => {
       const { page = 1, pageSize = 20, q, storeId, productId, catalogType, stockStatus, organizationId } = request.query as {
         page?: number; pageSize?: number; q?: string; storeId?: string; productId?: string; catalogType?: string;
         stockStatus?: "in_stock" | "low_stock" | "out_of_stock"; organizationId?: string;
@@ -45,10 +61,15 @@ export async function storeProductRoutes(app: FastifyInstance) {
         where.storeId = { in: orgStores.map((s: { id: string }) => s.id) };
       }
 
-      if (storeId) where.storeId = storeId;
+      if (storeId) {
+        if (!(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied");
+        where.storeId = storeId;
+      }
       if (productId) where.productId = productId;
 
-      const { isFeatured } = request.query as { isFeatured?: string };
+      const { isFeatured, isActive, subcategoryId } = request.query as { isFeatured?: string; isActive?: string; subcategoryId?: string };
+      if (isActive === "true") where.isActive = true;
+      else if (isActive === "false") where.isActive = false;
       if (isFeatured === "true") where.isFeatured = true;
       else if (isFeatured === "false") where.isFeatured = false;
       if (catalogType === "master") {
@@ -56,10 +77,12 @@ export async function storeProductRoutes(app: FastifyInstance) {
       } else if (catalogType === "org") {
         where.product = { ...(where.product as Record<string, unknown> ?? {}), organizationId: { not: null } };
       }
-      if (q) {
+      // Ranked product search scoped to the store (unlisted included); across stores a store-name match also counts
+      const ranked = q ? (await searchProductsForAdmin(app.prisma, { storeId }, q)).productIds : undefined;
+      if (q && ranked) {
         where.OR = [
-          { store: { name: { contains: q, mode: "insensitive" } } },
-          { product: { name: { contains: q, mode: "insensitive" } } },
+          { productId: { in: ranked } },
+          ...(storeId ? [] : [{ store: { name: { contains: q, mode: "insensitive" } } }]),
         ];
       }
 
@@ -73,28 +96,37 @@ export async function storeProductRoutes(app: FastifyInstance) {
               ? "stock - reserved_stock > 0 AND stock - reserved_stock <= 5"
               : "stock - reserved_stock > 5";
 
-        const rows = await app.prisma.$queryRawUnsafe<{ id: string }[]>(
-          `SELECT id FROM store_products WHERE ${condition}`,
-        );
+        const scope = where.storeId;
+        const scopeIds = typeof scope === "string" ? [scope] : (scope as { in: string[] } | undefined)?.in;
+        const rows = scopeIds
+          ? await app.prisma.$queryRawUnsafe<{ id: string }[]>(`SELECT id FROM store_products WHERE store_id = ANY($1) AND ${condition}`, scopeIds)
+          : await app.prisma.$queryRawUnsafe<{ id: string }[]>(`SELECT id FROM store_products WHERE ${condition}`);
         stockFilteredIds = rows.map((r) => r.id);
         where.id = { in: stockFilteredIds };
       }
 
-      const [storeProducts, total] = await Promise.all([
-        app.prisma.storeProduct.findMany({
-          where,
-          skip,
-          take: Number(pageSize),
-          orderBy: { createdAt: "desc" },
-          include: spInclude,
-        }),
-        app.prisma.storeProduct.count({ where }),
-      ]);
+      const search = ranked ? await rankedListingCandidates(where, subcategoryId) : undefined;
+      if (subcategoryId && !search) where.product = { ...(where.product as Record<string, unknown> ?? {}), subcategoryId };
+      const { rows: storeProducts, total } = ranked && search
+        ? await fetchRankedPage({
+            rankedKeys: ranked,
+            candidates: search.candidates,
+            fetchRows: (ids) => app.prisma.storeProduct.findMany({ where: { id: { in: ids } }, include: spInclude }),
+            skip,
+            take: Number(pageSize),
+          })
+        : await Promise.all([
+            app.prisma.storeProduct.findMany({ where, skip, take: Number(pageSize), orderBy: [{ createdAt: "desc" }, { id: "asc" }], include: spInclude }),
+            app.prisma.storeProduct.count({ where }),
+          ]).then(([rows, count]) => ({ rows, total: count }));
 
-      const response: PaginatedResponse<ReturnType<typeof withPricing>> = {
+      const response: PaginatedResponse<ReturnType<typeof withPricing>> & { meta: { facets?: { subcategories: SubcategoryFacet[] } } } = {
         success: true,
         data: storeProducts.map(withPricing),
-        meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
+        meta: {
+          total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)),
+          ...(search ? { facets: { subcategories: search.facets } } : {}),
+        },
       };
       return response;
     },
@@ -117,6 +149,13 @@ export async function storeProductRoutes(app: FastifyInstance) {
     },
   );
 
+  /** A store may stock master catalog products and its own organization's products only */
+  async function usableByStore(storeId: string) {
+    const store = await app.prisma.store.findUnique({ where: { id: storeId }, select: { organizationId: true } });
+    if (!store) return { id: { in: [] as string[] } };
+    return { OR: [{ organizationId: null }, { organizationId: store.organizationId }] };
+  }
+
   // Create store-product (verify store belongs to org)
   app.post(
     "/",
@@ -129,7 +168,9 @@ export async function storeProductRoutes(app: FastifyInstance) {
         return reply.forbidden("Access denied to this store");
       }
 
-      const variant = await app.prisma.productVariant.findUnique({ where: { id: body.variantId } });
+      const variant = await app.prisma.productVariant.findFirst({
+        where: { id: body.variantId, product: await usableByStore(body.storeId) },
+      });
       if (!variant) return reply.notFound("Product variant not found");
 
       const existing = await app.prisma.storeProduct.findUnique({
@@ -171,7 +212,7 @@ export async function storeProductRoutes(app: FastifyInstance) {
 
       const variantIds = body.items.map((i) => i.variantId);
       const variants = await app.prisma.productVariant.findMany({
-        where: { id: { in: variantIds } },
+        where: { id: { in: variantIds }, product: await usableByStore(body.storeId) },
       });
       const variantMap = new Map(variants.map((v) => [v.id, v.productId]));
 
@@ -236,7 +277,7 @@ export async function storeProductRoutes(app: FastifyInstance) {
   // Delete store-product (verify org access)
   app.delete<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
     async (request, reply) => {
       const existing = await app.prisma.storeProduct.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Store product not found");

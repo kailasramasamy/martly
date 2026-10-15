@@ -1,6 +1,7 @@
 import type { FastifyInstance, FastifyRequest } from "fastify";
 import { createPromoSchema, promoListQuerySchema, updatePromoItemsSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse, PromoDetail, PromoSummary } from "@martly/shared/types";
+import { PromoStatus } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { isCurationConfigured } from "../../services/seasonal/index.js";
 import { discardPromo, endPromo, keepPromoItems, launchPromo, reopenPromo, startPromoDraft } from "../../services/promo/lifecycle.js";
@@ -24,10 +25,14 @@ export async function promoRoutes(app: FastifyInstance) {
 
   app.get("/", { preHandler: ADMINS }, async (request) => {
     const { page, pageSize } = promoListQuerySchema.parse(request.query);
+    const { status } = request.query as { status?: string };
     const organizationId = orgFilter(request);
-    const where = organizationId ? { organizationId } : {};
+    const where = {
+      ...(organizationId ? { organizationId } : {}),
+      ...(status && status in PromoStatus ? { status: status as PromoStatus } : {}),
+    };
     const [rows, total] = await Promise.all([
-      app.prisma.promo.findMany({ where, include: promoSummaryInclude, orderBy: { createdAt: "desc" }, skip: (page - 1) * pageSize, take: pageSize }),
+      app.prisma.promo.findMany({ where, include: promoSummaryInclude, orderBy: [{ createdAt: "desc" }, { id: "asc" }], skip: (page - 1) * pageSize, take: pageSize }),
       app.prisma.promo.count({ where }),
     ]);
     return {

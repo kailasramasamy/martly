@@ -14,14 +14,17 @@ interface Props {
   onPickStore: () => void;
   /** Festive wash colour; the header takes it on so the hero's ornament hangs straight off it */
   tint: string | null;
+  /** Scrolled: the location row folds away and only the search bar stays pinned (Zepto-style) */
+  collapsed?: boolean;
 }
 
-export function HomeHeader({ store, userArea, onPickStore, tint }: Props) {
+export function HomeHeader({ store, userArea, onPickStore, tint, collapsed }: Props) {
   const insets = useSafeAreaInsets();
   const { unreadCount } = useNotifications();
 
   return (
     <View style={[styles.header, { paddingTop: insets.top + 8 }, tint ? { backgroundColor: tint, borderBottomWidth: 0 } : null]}>
+      {!collapsed && (
       <View style={styles.headerRow}>
         <HomeHeaderLocation store={store} userArea={userArea} onPress={onPickStore} />
         <TouchableOpacity
@@ -38,6 +41,7 @@ export function HomeHeader({ store, userArea, onPickStore, tint }: Props) {
           )}
         </TouchableOpacity>
       </View>
+      )}
       <SearchBarButton onTint={Boolean(tint)} />
     </View>
   );

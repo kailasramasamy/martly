@@ -23,3 +23,8 @@ export async function putObject(name: string, body: Buffer, contentType: string)
   await s3.send(new PutObjectCommand({ Bucket: BUCKET, Key: key, Body: body, ContentType: contentType }));
   return { key, url: `${BASE_URL}/${name}` };
 }
+
+/** True for URLs of objects this API uploaded, so server-side fetches never follow a user-supplied URL elsewhere */
+export function isMediaUrl(url: string) {
+  return url.startsWith(`${BASE_URL}/`);
+}

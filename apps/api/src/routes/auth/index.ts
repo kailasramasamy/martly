@@ -215,9 +215,18 @@ export async function authRoutes(app: FastifyInstance) {
     const tokenPayload: Record<string, unknown> = { sub: user.id, email: user.email, role: user.role };
     if (user.role !== "SUPER_ADMIN" && user.role !== "CUSTOMER") {
       const orgs = await getUserOrgs(app.prisma, user.id);
-      if (orgs.length === 1) {
-        tokenPayload.organizationId = orgs[0].id;
+      if (orgs.length === 0) {
+        return reply.forbidden("User is not assigned to any organization");
       }
+      if (orgs.length > 1) {
+        const temporaryToken = app.jwt.sign({ ...tokenPayload, type: "org-select" }, { expiresIn: "5m" });
+        const response: ApiResponse<LoginResponse & { isNewUser: boolean }> = {
+          success: true,
+          data: { requiresOrgSelection: true, organizations: orgs, temporaryToken, isNewUser: false },
+        };
+        return response;
+      }
+      tokenPayload.organizationId = orgs[0].id;
     }
 
     const accessToken = app.jwt.sign(tokenPayload, { expiresIn: "15m" });
@@ -226,9 +235,10 @@ export async function authRoutes(app: FastifyInstance) {
       { expiresIn: "30d" },
     );
 
-    const response: ApiResponse<AuthTokens & { isNewUser: boolean }> = {
+    const response: ApiResponse<LoginResponse & { isNewUser: boolean }> = {
       success: true,
       data: {
+        requiresOrgSelection: false,
         accessToken,
         refreshToken,
         isNewUser: !user.name,

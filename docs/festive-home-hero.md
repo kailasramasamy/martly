@@ -29,9 +29,11 @@ chip and the tile's products below.
    hidden, still keeping whole rows. When no hero qualifies, it returns `null` and the banner carousel takes the top of the screen. While a hero is
    live, the carousel drops that festival's own banner, so the two don't repeat each other.
 3. **Festival screen**:
-   - `GET /festive/:collectionId?storeId=` returns the hero and its tiles.
+   - `GET /festive/:collectionId?storeId=` returns the hero and its tiles. Each tile lists its in-stock
+     `subcategories` (id, name, imageUrl, translations) in the tile's order.
    - `GET /festive/:collectionId/tiles/:tileId/products?storeId=&page=&pageSize=` returns in-stock products from the
-     tile's subcategories, with each aisle's best sellers (30 days, this store) interleaved.
+     tile's subcategories, with each aisle's best sellers (30 days, this store) interleaved. An optional
+     `subcategoryId` narrows it to one of the tile's aisles; any other subcategory returns 400.
 4. **Admin**: the Collection edit page has a "Home hero" card for OCCASION and SEASON collections. It offers:
    - a preview;
    - editing the headline (EN/TA);
@@ -57,8 +59,9 @@ chip and the tile's products below.
   wash, which then trails 220pt behind the next sections, fading into the page background.
 - `components/home/HomeHeader.tsx` (extracted from the home screen) takes the wash colour as its background when the
   theme is light, so the ornament hangs straight off the search bar.
-- `app/festival/[id].tsx` (params `id`, `tile`) shows a themed stack header, the `TileChips` rail and a paginated
-  `ProductList` grid.
+- `app/festival/[id].tsx` (params `id`, `tile`) shows a themed stack header, the `TileChips` rail, the `AislePills` row
+  ("All" plus each aisle with its subcategory image; hidden for single-aisle tiles; parenthetical asides in names are
+  dropped) and a paginated `ProductList` grid. Switching tiles resets the pill to "All".
 
 ## Tested
 

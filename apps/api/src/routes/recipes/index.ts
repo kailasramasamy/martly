@@ -4,6 +4,7 @@ import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
+import { canSeeOrgRecord, assertProductsUsable } from "../../services/catalog-access.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
 
@@ -31,10 +32,8 @@ export async function recipeRoutes(app: FastifyInstance) {
     const where: Record<string, unknown> = {};
 
     if (user.role !== "SUPER_ADMIN") {
-      where.OR = [
-        { organizationId: user.organizationId },
-        { organizationId: null },
-      ];
+      // An undefined organizationId would match every org, so only add it when present
+      where.OR = [{ organizationId: null }, ...(user.organizationId ? [{ organizationId: user.organizationId }] : [])];
     }
 
     if (q) {
@@ -46,7 +45,7 @@ export async function recipeRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        orderBy: { sortOrder: "asc" },
+        orderBy: [{ sortOrder: "asc" }, { id: "asc" }],
         include: {
           _count: { select: { items: true } },
           organization: { select: { id: true, name: true } },
@@ -77,7 +76,7 @@ export async function recipeRoutes(app: FastifyInstance) {
         organization: { select: { id: true, name: true } },
       },
     });
-    if (!recipe) return reply.notFound("Recipe not found");
+    if (!recipe || !canSeeOrgRecord(getOrgUser(request), recipe.organizationId)) return reply.notFound("Recipe not found");
 
     const response: ApiResponse<typeof recipe> = { success: true, data: recipe };
     return response;
@@ -94,6 +93,7 @@ export async function recipeRoutes(app: FastifyInstance) {
       if (user.role === "ORG_ADMIN") {
         body.organizationId = user.organizationId;
       }
+      await assertProductsUsable(app.prisma, items?.map((i) => i.productId) ?? [], body.organizationId ?? null);
 
       const last = await app.prisma.recipe.findFirst({
         where: { organizationId: body.organizationId ?? null },
@@ -138,6 +138,7 @@ export async function recipeRoutes(app: FastifyInstance) {
 
       // Replace items if sent
       if (items) {
+        await assertProductsUsable(app.prisma, items.map((i) => i.productId), existing.organizationId);
         await app.prisma.recipeItem.deleteMany({ where: { recipeId: existing.id } });
         if (items.length > 0) {
           await app.prisma.recipeItem.createMany({
@@ -224,7 +225,7 @@ export async function recipeRoutes(app: FastifyInstance) {
           where,
           skip,
           take: Number(pageSize),
-          orderBy: { sortOrder: "asc" },
+          orderBy: [{ sortOrder: "asc" }, { id: "asc" }],
           include: {
             items: {
               orderBy: { sortOrder: "asc" },

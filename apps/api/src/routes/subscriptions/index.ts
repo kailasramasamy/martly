@@ -11,7 +11,7 @@ import {
 } from "@martly/shared/schemas";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess, requireOrgContext } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { sendNotification } from "../../services/notification.js";
 import { calculateNextDeliveryDate, advanceNextDeliveryDate, isDeliveryDay } from "../../utils/subscription-dates.js";
@@ -803,7 +803,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
   // ── Admin: List subscriptions ────────────────────────
   app.get(
     "/admin",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request) => {
       const { page = 1, pageSize = 20, storeId, status, frequency, userId } = request.query as {
         page?: number; pageSize?: number; storeId?: string; status?: string; frequency?: string; userId?: string;
@@ -834,7 +834,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
           where,
           skip,
           take: Number(pageSize),
-          orderBy: { createdAt: "desc" },
+          orderBy: [{ createdAt: "desc" }, { id: "asc" }],
           include: {
             user: { select: { id: true, name: true, email: true, phone: true } },
             store: { select: { id: true, name: true } },
@@ -870,7 +870,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
   // ── Admin: Subscription detail ───────────────────────
   app.get<{ Params: { id: string } }>(
     "/admin/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const subscription = await app.prisma.subscription.findUnique({
         where: { id: request.params.id },
@@ -911,7 +911,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
   // ── Admin: Update subscription (pause/resume/update items) ──
   app.put<{ Params: { id: string } }>(
     "/admin/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const body = request.body as {
         status?: "ACTIVE" | "PAUSED" | "CANCELLED";
@@ -982,7 +982,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
   // ── Admin: Subscription stats ────────────────────────
   app.get(
     "/admin/stats",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request) => {
       const user = getOrgUser(request);
       const where: Record<string, unknown> = {};
@@ -1070,7 +1070,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
   // ── Config: Get subscription config ──────────────────
   app.get(
     "/config",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const user = getOrgUser(request);
       let orgId = user.organizationId;
@@ -1108,7 +1108,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
   // ── Config: Update org subscription toggle ───────────
   app.patch(
     "/config/org",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const user = getOrgUser(request);
       let orgId = user.organizationId;
@@ -1134,7 +1134,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
   // ── Config: Update store subscription config ─────────
   app.patch<{ Params: { storeId: string } }>(
     "/config/store/:storeId",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request, reply) => {
       const { storeId } = request.params;
 

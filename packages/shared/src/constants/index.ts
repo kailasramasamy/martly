@@ -233,6 +233,17 @@ export const PromoStatus = {
 } as const;
 export type PromoStatus = (typeof PromoStatus)[keyof typeof PromoStatus];
 
+export const CatalogDraftStatus = {
+  QUEUED: "QUEUED",
+  PROCESSING: "PROCESSING",
+  NEEDS_REVIEW: "NEEDS_REVIEW",
+  PUBLISHED: "PUBLISHED",
+  DUPLICATE: "DUPLICATE",
+  FAILED: "FAILED",
+  DISCARDED: "DISCARDED",
+} as const;
+export type CatalogDraftStatus = (typeof CatalogDraftStatus)[keyof typeof CatalogDraftStatus];
+
 export const CurationSource = {
   MANUAL: "MANUAL",
   AGENT: "AGENT",
@@ -311,6 +322,7 @@ export const NotificationType = {
   GENERAL: "GENERAL",
   WELCOME: "WELCOME",
   REVIEW_REQUEST: "REVIEW_REQUEST",
+  NEW_ORDER: "NEW_ORDER",
 } as const;
 export type NotificationType = (typeof NotificationType)[keyof typeof NotificationType];
 
@@ -329,6 +341,7 @@ export const NotificationTypeLabels: Record<NotificationType, string> = {
   GENERAL: "General",
   WELCOME: "Welcome",
   REVIEW_REQUEST: "Review Request",
+  NEW_ORDER: "New Order",
 };
 
 export const CampaignStatus = {
