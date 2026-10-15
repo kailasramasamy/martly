@@ -1,0 +1,198 @@
+{
+  "brand": "Air Wick",
+  "manufacturer": "Reckitt Benckiser (India)",
+  "feed": "airwick-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/airwick/logo-7135287d.png",
+  "themeColor": "#00843D",
+  "themeColorSecondary": "#8DC63F",
+  "namePrefix": "Air Wick ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Air\\ Freshener\\ Spray\\ \\-\\ Lemon\\ \\&\\ Orange\\ Blossom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Spray\\ \\-\\ Sandalwood\\ \\&\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Spray\\ \\-\\ Lavender\\ \\&\\ Lotus$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Spray\\ \\-\\ Rose\\ \\&\\ Saffron$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Freshmatic\\ Automatic\\ Spray\\ Kit\\ \\-\\ Summer\\ Delights$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Freshmatic\\ Automatic\\ Spray\\ Kit\\ \\-\\ Lavender\\ \\&\\ Lotus$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Freshmatic\\ Refill\\ \\-\\ Lemon\\ \\&\\ Orange\\ Blossom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Freshmatic\\ Refill\\ \\-\\ Rose\\ \\&\\ Saffron$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Freshmatic\\ Refill\\ \\-\\ Turquoise\\ Oasis$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Freshmatic\\ Refill\\ \\-\\ Lavender\\ \\&\\ Lotus$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Freshmatic\\ Refill\\ \\-\\ Summer\\ Delights$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Freshmatic\\ Refill\\ \\-\\ Nagpur\\ Narangi$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Essential\\ Mist\\ Diffuser\\ Kit\\ \\-\\ Relaxing\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Essential\\ Mist\\ Diffuser\\ Kit\\ \\-\\ Peony\\ \\&\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Essential\\ Mist\\ Refill\\ \\-\\ Peony\\ \\&\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Essential\\ Mist\\ Refill\\ \\-\\ Relaxing\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Essential\\ Mist\\ Refill\\ \\-\\ Sweet\\ Vanilla\\ \\&\\ Shea\\ Butter$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Essential\\ Mist\\ Refill\\ \\-\\ Calming\\ Rose$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Scented\\ Gel\\ Can\\ \\-\\ Fresh\\ Waters$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Scented\\ Gel\\ Can\\ \\-\\ Wild\\ Berries$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^EverFresh\\ Bathroom\\ Gel\\ \\-\\ Citrus\\ Splash$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^EverFresh\\ Bathroom\\ Gel\\ \\-\\ Lavender\\ Meadows$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^EverFresh\\ Bathroom\\ Gel\\ \\-\\ Morning\\ Rose\\ Dew$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    }
+  ]
+}
