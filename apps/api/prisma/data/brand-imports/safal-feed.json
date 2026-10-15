@@ -1,0 +1,851 @@
+[
+ {
+  "title": "Frozen Green Peas",
+  "handle": "frozen-green-peas",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006613_3-safal-frozen-green-peas.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/103683_15-safal-frozen-green-peas.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/103692_4-safal-frozen-green-peas.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006613_3-safal-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006613-2_4-safal-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006613-3_3-safal-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006613-4_3-safal-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006613-5_1-safal-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006613-6_1-safal-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006613-7_1-safal-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006613-8_1-safal-frozen-green-peas.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your dining experience with Safal Frozen Hara Bhara Veg Kebab, a culinary delight that brings together the vibrant flavours of fresh vegetables and aromatic spices. This product is rich in green peas, containing 50% peas, as well as spinach and a blend of delectable spices and condiments. Crafted with a traditional recipe, these flavourful kebabs are ready in just 3 minutes, allowing you to enjoy a delicious and nutritious meal with your family and friends. Instamart proudly presents this wholesome offering, meticulously crafted to satisfy your cravings for a taste of authentic Indian cuisine.",
+   "ingredients": "Green Peas",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "84 kcal",
+    "Protein": "6.5 g",
+    "Carbohydrate": "14.3 g",
+    "Added Sugar": "0.0 g",
+    "Fat": "0.1 g"
+   },
+   "storageInstructions": "* Store in a freezer at -18°C or below\n* Do not refreeze after thawing",
+   "manufacturerName": "Mother Dairy Fruit & Vegetable Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Frozen Mixed Vegetables",
+  "handle": "frozen-mixed-vegetables",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/103730_3-safal-frozen-mixed-vegetables.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40132675_5-safal-frozen-mixed-vegetables.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103730_3-safal-frozen-mixed-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103730-2_3-safal-frozen-mixed-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103730-3_3-safal-frozen-mixed-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103730-4_3-safal-frozen-mixed-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103730-5_3-safal-frozen-mixed-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103730-6_1-safal-frozen-mixed-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103730-7_1-safal-frozen-mixed-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103730-8_1-safal-frozen-mixed-vegetables.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A packet of Safal Frozen Mixed Vegetables is what you need after a hard day's work when you want to spend a minimum amount of time cooking. The vegetables are peeled and finely diced into small pieces, and they are frozen when fresh using the revolutionary individual quick freezing technique. This helps preserve the nutritional content and flavour of the vegetables.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "49 kcal",
+    "protein": "3.0 g",
+    "Carbohydrate": "9.0 g",
+    "(Added Sugar)": "0.0 g",
+    "Fat": "0.1 g"
+   },
+   "usageInstructions": "Safal Frozen Mixed Vegetables can be used for preparing curries, soups, salads, and more.\nSimply boil or fry them and use them in any dish you want.",
+   "manufacturerName": "Mother Dairy Fruit & Vegetable Pvt Ltd Fruit & Vegetable Unit Mangolpuri Industrial Area Phase - 1 Delhi -",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Frozen Sweet Corn",
+  "handle": "frozen-sweet-corn",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006616_3-safal-frozen-sweet-corn.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006608_3-safal-frozen-sweet-corn.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/185568_4-safal-frozen-sweet-corn.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006616_3-safal-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006616-2_3-safal-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006616-3_3-safal-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006616-4_3-safal-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006616-5_3-safal-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006616-6_1-safal-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006616-7_1-safal-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006616-8_1-safal-frozen-sweet-corn.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of Safal Frozen Sweet Corn, a true delight for your senses. Bursting with natural sweetness and a satisfying crunch, these tender, plump kernels capture the essence of sun-kissed fields, bringing the freshness of the countryside straight to your table. Versatile and convenient, Safal Frozen Sweet Corn is the perfect addition to soups, salads, and a wide range of culinary creations, elevating each dish with its wholesome goodness. Produced by the trusted Safal brand, known for their quality frozen foods, this product offers a nutritious and year-round alternative to fresh corn.\nThe advanced freezing process locks in the natural flavours and preserves the valuable nutrients, ensuring you can enjoy the sweet and succulent taste of corn anytime. With its easy preparation and resealable packaging, Safal Frozen Sweet Corn is a practical choice for households, minimising food waste and providing a delightful, wholesome experience in every bite.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "94 kcal",
+    "Protein": "3 g",
+    "Carbohydrate": "19 g (Added Sugar 0.0 g)",
+    "Fat": "0.7 g"
+   },
+   "storageInstructions": "*Store in freezer at -18°C or below\n*Do not refreeze once thawed",
+   "manufacturerName": "Mother Dairy Fruit & Vegetable Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Frozen Jackfruit",
+  "handle": "frozen-jackfruit",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113475_2-safal-frozen-jackfruit.jpg"
+    },
+    "barcode": "8901722061114"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113475_2-safal-frozen-jackfruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113475-2_1-safal-frozen-jackfruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113475-3_1-safal-frozen-jackfruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113475-4_1-safal-frozen-jackfruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113475-5_1-safal-frozen-jackfruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113475-6_1-safal-frozen-jackfruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113475-7_1-safal-frozen-jackfruit.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the exotic taste and unparalleled convenience of Safal Frozen Jackfruit. Harvested at the peak of ripeness and expertly frozen to preserve its freshness and flavour, this versatile fruit brings the vibrant goodness of the tropics straight to your kitchen. Hygienically pre-cut and sourced from the lush regions of Jharkhand, Safal Frozen Jackfruit is rich in dietary fibre, vitamins, and minerals, making it a nutritious addition to your meals. Whether you're craving a sweet snack, looking to add a unique twist to your recipes, or simply want to explore new culinary horizons, this frozen delight is the perfect choice.\nPacked with a range of health benefits, including supporting digestion and boosting immunity, Safal Frozen Jackfruit allows you to enjoy the exotic taste of jackfruit without the hassle of peeling and cutting. Discover the endless possibilities and elevate your culinary creations with the convenience and deliciousness of Safal Frozen Jackfruit.",
+   "ingredients": "Tender Jackfruit",
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid direct sunlight",
+   "manufacturerName": "Mother Dairy Fruit & Vegetable Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "French Fries",
+  "handle": "french-fries",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113027_2-safal-french-fries.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113028_5-safal-french-fries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113027_2-safal-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113027-2_2-safal-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113027-3_2-safal-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113027-4_2-safal-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113027-5_1-safal-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113027-6_1-safal-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113027-7_1-safal-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113027-8_1-safal-french-fries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate snacking experience with Safal Frozen French Fries. These sensational fries are crispy on the outside, fluffy on the inside, and bursting with an irresistible flavour that will leave you craving for more. Made from the choicest ingredients and hygienically packed, these frozen fries are the perfect companion for any occasion - whether you're hosting a party, relaxing at home, or simply looking for a delicious snack.\nConvenient and versatile, Safal Frozen French Fries can be enjoyed by the whole family, from children to adults. Pair them with your favourite dips and seasonings, or try them in creative dishes like honey chilli potatoes. With their less oily and healthier profile compared to other fried snacks, these fries offer a guilt-free indulgence that's sure to satisfy your cravings.",
+   "ingredients": "Potato (93%), Refined Palmolein oil",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "143.61 Kcal",
+    "Protein": "2.6 g",
+    "Carbohydrate": "21.01 g",
+    "(Sugars)": "0.31 g",
+    "Total Fat": "5.41 g",
+    "Saturated Fat": "2.49 g",
+    "Monounsaturated Fat": "1.93 g",
+    "Polyunsaturated Fat": "0.96 g",
+    "Trans Fat": "< 1 g"
+   },
+   "storageInstructions": "*Store at -18°C or below\n*Keep frozen until ready to use",
+   "manufacturerName": "Hyfun Foods Rs No",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Frozen Aloo Tikki",
+  "handle": "frozen-aloo-tikki",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40049526_4-safal-frozen-aloo-tikki.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049526_4-safal-frozen-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049526-2_1-safal-frozen-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049526-3_1-safal-frozen-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049526-4_1-safal-frozen-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049526-5_1-safal-frozen-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049526-6_1-safal-frozen-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049526-7_1-safal-frozen-aloo-tikki.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Safal's Frozen Aloo Tikki delivers crispy potato goodness straight to your plate. Perfect for quick snacks or party appetisers, each bite promises authentic flavour and convenience. Enjoy homemade taste without the fuss. Ideal for busy lifestyles, it's a delicious, hassle-free treat for any occasion.",
+   "manufacturerName": "Mother Dairy Fruit & Vegetable Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hara Bhara Veg Kebab",
+  "handle": "hara-bhara-veg-kebab",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40049527_3-safal-hara-bhara-veg-kebab.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049527_3-safal-hara-bhara-veg-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049527-2_3-safal-hara-bhara-veg-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049527-3_3-safal-hara-bhara-veg-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049527-4_3-safal-hara-bhara-veg-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049527-5_3-safal-hara-bhara-veg-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049527-6_1-safal-hara-bhara-veg-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049527-7_1-safal-hara-bhara-veg-kebab.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your dining experience with Safal Frozen Hara Bhara Veg Kebab, a culinary delight that brings together the vibrant flavours of fresh vegetables and aromatic spices. This product is rich in green peas, containing 50% peas, as well as spinach and a blend of delectable spices and condiments. Crafted with a traditional recipe, these flavourful kebabs are ready in just 3 minutes, allowing you to enjoy a delicious and nutritious meal with your family and friends. Instamart proudly presents this wholesome offering, meticulously crafted to satisfy your cravings for a taste of authentic Indian cuisine.",
+   "ingredients": "Green peas (50 %), Potato, Potato flakes (Potato), Emulsifier [471, 450], Antioxidant [304, 223], Spinach, Refined Palmolein Oil, Ginger, Roasted peanuts, Iodized salt, Garlic, Green chilly, Culinary powder (330, 551), Corn starch, Stabilizer(1442, 461, 412, 401 and wheat flour), Spices & condiments, Baking powder",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "167 Kcal",
+    "Protein": "4.0 g",
+    "Carbohydrate": "22.0 g",
+    "(Added Sugar)": "(0 g)",
+    "Total Fat": "7.0 g",
+    "Saturated Fat": "3.2 g",
+    "Monounsaturated Fat": "2.9 g",
+    "Polyunsaturated Fat": "0.8 g",
+    "Trans Fat": "< 0.1 g"
+   },
+   "storageInstructions": "* Store in a freezer at -18°C or below\n* Do not refreeze after thawing",
+   "manufacturerName": "Mother Dairy Fruit & Vegetable Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Frozen Chilli Garlic Nuggets",
+  "handle": "frozen-chilli-garlic-nuggets",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184971_3-safal-frozen-chilli-garlic-nuggets.jpg"
+    },
+    "barcode": "8901722066089"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184971_3-safal-frozen-chilli-garlic-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184971-2_3-safal-frozen-chilli-garlic-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184971-3_3-safal-frozen-chilli-garlic-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184971-4_3-safal-frozen-chilli-garlic-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184971-5_3-safal-frozen-chilli-garlic-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184971-6_1-safal-frozen-chilli-garlic-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184971-7_1-safal-frozen-chilli-garlic-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184971-8_1-safal-frozen-chilli-garlic-nuggets.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Made from choicest potatoes from the best of the farms, Safal brings you Frozen Chilli Garlic Nuggets- a flavouring delight thrilling your taste buds. Seasoned with the delectable taste of chilli flakes and garlic, you just have to open the pack, fry, and it's ready to serve in 3 minutes. You can enjoy it anytime and with everyone!",
+   "ingredients": "Potato, Palmolein Oil, Rice Flakes, Corn Flour, Stabilizer, Iodised Salt, Garlic Paste, Red Chilly Flakes, Red Chilly Powder, Baking Powder, Acidity Regulator.",
+   "usageInstructions": "Deep Fry\nPreheat the oil in Kadhai/ wok with Max Temp of 175º celsius.\nTake the product from the freezer directly and dont thaw.\nPut the desired qty gently in the hot oil and deep fry for 3 mins.\nSeal and keep the remaining product in the freezer.\nBake\nPreheat the air fryer to 200º celsius.\nBake for 12 minutes until light golden brown.\nShake couple of times in between.",
+   "manufacturerName": "Mother Dairy Fruit & Vegetable Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000097"
+  }
+ },
+ {
+  "title": "Crispy Veggie Bites",
+  "handle": "crispy-veggie-bites",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40280154_2-safal-crispy-veggie-bites-frozen-curried-vegetables-ready-to-cook.jpg"
+    },
+    "barcode": "8901722068113"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280154_2-safal-crispy-veggie-bites-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280154-2_2-safal-crispy-veggie-bites-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280154-3_2-safal-crispy-veggie-bites-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280154-4_2-safal-crispy-veggie-bites-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280154-5_2-safal-crispy-veggie-bites-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280154-6_1-safal-crispy-veggie-bites-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280154-7_1-safal-crispy-veggie-bites-frozen-curried-vegetables-ready-to-cook.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mother Dairy Safal Crispy Veggie Bites are the ideal treat to prepare when you have unexpected guests at home. The Mother Dairy Safal Crispy Veggie Bites are ready-to-cook and make for the best snack whenever you're hungry. This snack is crunchy, crispy, easy to make and super convenient. Enjoy this snack with a side of sauce, salsa or a mayo dip. Bring this snack to the table and watch it get devoured in no time. A great treat to have at family gatherings, parties or hangouts with friends. Explore a wide range of delicious, ready-to-cook snacks from Mother Dairy only on Big Basket.",
+   "ingredients": "Potatoes (53%), Vegetables (18%) [Peas, Carrot, Sweet Corn], Bread Crumbs [Refined Wheat Flour (Maida), Dextrose, Dried Yeast, Iodised Salt], Edible Vegetable Oil (Refined Palmolein Oil), Batter [Refined Wheat Flour (Maida), Corn Starch, Iodised Salt, Sugar, Thickener (412)], Rice Flakes, Corn Flour, Iodised Salt, Red Chilli Flakes, Dehydrated White Onion Powder, Dehydrated Garlic Powder, Parsley Leaves.",
+   "usageInstructions": "Simply deep fry or air fry and serve hot.",
+   "manufacturerName": "Mother Dairy Fruit and Vegetable Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014011001895"
+  }
+ },
+ {
+  "title": "Veggie Sticks",
+  "handle": "veggie-sticks",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40280155_2-safal-veggie-sticks-frozen-curried-vegetables-ready-to-cook.jpg"
+    },
+    "barcode": "8901722068069"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280155_2-safal-veggie-sticks-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280155-2_2-safal-veggie-sticks-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280155-3_2-safal-veggie-sticks-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280155-4_2-safal-veggie-sticks-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280155-5_2-safal-veggie-sticks-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280155-6_1-safal-veggie-sticks-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280155-7_1-safal-veggie-sticks-frozen-curried-vegetables-ready-to-cook.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mother Dairy Safal Veggie Sticks taste amazing as starters for your family dinners or parties. Mother Dairy Safal Veggie Sticks are ready-to-cook and the perfect snack for when you're craving something super tasty. This snack is crunchy, crispy, simple to create and extremely handy. Serve with a side of sauce, salsa or mayonnaise dip. Bring this appetiser to the table and watch it go in an instant. A delicious dessert to have at family gatherings, parties, or get-togethers with friends. Explore a wide range of delicious, ready-to-cook snacks from Mother Dairy only on Big Basket.",
+   "ingredients": "Vegetables (59%) (Green Peas, Carrot, Sweet Corn, French Bean, Onion, Red Capsicum), Bread Crumb [Refined Wheat Flour (Maida), Dextrose, lodised Salt, Yeast, Spice & Condiments (Paprika & Turmeric Extracts)), Batter (Refined Wheat flour(Maida), Corn Starch, lodised Salt, Sugar, Thickener (INS 412)). Refined Edible Vegetable Oil (Palmolein), Dehydrated Potato Flakes, Spice Mix Seasoning (lodised Salt, Mixed Spices (Chilli, Pepper), Dehydrated Vegetable Powder (Onion, Garlic), Corn Starch, Yeast Extract Powder, Acidity Regulator (INS 330), Edible Vegetable Oil (Sun Flower Oil), Dehydrated White Onion Powder, Dehydrated Garlic Powder.",
+   "usageInstructions": "Simply deep fry or air fry and serve hot.",
+   "manufacturerName": "Mother Dairy Fruit and Vegetable Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014011001895"
+  }
+ },
+ {
+  "title": "Jalapeno Cheese Pops",
+  "handle": "jalapeno-cheese-pops",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40280156_2-safal-jalapeno-cheese-pops-frozen-curried-vegetables-ready-to-cook.jpg"
+    },
+    "barcode": "8901722068168"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280156_2-safal-jalapeno-cheese-pops-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280156-2_2-safal-jalapeno-cheese-pops-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280156-3_2-safal-jalapeno-cheese-pops-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280156-4_2-safal-jalapeno-cheese-pops-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280156-5_2-safal-jalapeno-cheese-pops-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280156-6_1-safal-jalapeno-cheese-pops-frozen-curried-vegetables-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280156-7_1-safal-jalapeno-cheese-pops-frozen-curried-vegetables-ready-to-cook.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mother Dairy Safal Jalapeno Cheese Pops make for the perfect cocktail serving for your next house party. Mother Dairy Safal Jalapeno Cheese Pops are ready-to-eat and the ideal snack when you want something cheesy and spicy. This snack is crunchy and crispy, easy to make and highly convenient. Serve with a sauce, salsa or mayonnaise dip on the side. Bring this appetiser to the table and watch it go in a flash. A delectable dessert to serve at family gatherings, parties, or social events with friends. Explore a wide range of delicious, ready-to-cook snacks from Mother Dairy only on Big Basket.",
+   "ingredients": "Potatoes (37%), Processed Cheese (27%) (Cheese, Emulsifier (331), lodised Salt, Preservatives (202,234), Bread Crumb (Refined Wheat Flour(Maida, Dextrose, Dried Yeast. lodised Salt. Refined Palmolein Oil, Batter Refined Wheat Flour(Maida), lodised Salt, Corn Starch, Thickener (412), Sugar), Sweet Com (5.92%)Green Jalapeno (3.7%), Cheese Powder (2.22%)(Stabilizer & Emulsifier(331ii, 452i), Preservative (200)], Water, Dehydrated Garlic Powder, Red Chilli Flakes, lodised Salt, Parsley Leaves.",
+   "usageInstructions": "Simply deep fry or air fry and serve hot.",
+   "manufacturerName": "Mother Dairy Fruit and Vegetable Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014011001895"
+  }
+ },
+ {
+  "title": "Pizza Pockets",
+  "handle": "pizza-pockets",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "340g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40280157_1-safal-pizza-pockets-crispy-crunchy-ready-to-cook.jpg"
+    },
+    "barcode": "8901722068212"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280157_1-safal-pizza-pockets-crispy-crunchy-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280157-2_1-safal-pizza-pockets-crispy-crunchy-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280157-3_1-safal-pizza-pockets-crispy-crunchy-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280157-4_1-safal-pizza-pockets-crispy-crunchy-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40280157-5_1-safal-pizza-pockets-crispy-crunchy-ready-to-cook.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mother Dairy Safal Pizza Pockets are the easiest way to enjoy the flavours of pizza in small bites. Mother Dairy Safal Pizza Pockets are ready-to-eat snacks that provide the flavour of pizza without requiring a full meal. This crunchy and crispy snack is simple to make and extremely handy. On the side, serve with a sauce, salsa or mayonnaise dip. Bring this appetiser to the table and watch it go in an instant. A delicious dessert to serve at family reunions, parties, or social gatherings with friends. Explore a wide range of delicious, ready-to-cook snacks from Mother Dairy only on Big Basket.",
+   "ingredients": "Refined Wheat Flour (Maida), Italian Culinary Paste (19.2%) (Crushed Tomato Water. Tomato Puree, Acidity Regulator (INS 330). Water Vegetables (18.7%) (Carrots, Sweet Corn, Capsicum, Onions), Processed Cheese (8%) (Pasteurized Milk, Pasteurized Skimmed Milk, lodised Salt, Stabilizer (INS 509. Microbial Culture and Microbial Rennet), Bakery Shortening (Palm Oil), Spices and Condiments, Garlic, Sugar, lodised Salt, Refined Vegetable oil (Refined Sunflower oil), Bakery Improver (Refined Wheat Flour (Maida), Emulsifier (INS 472e), Antioxidant (INS 300), Raising Agent (INS 500 (), Flour Treatment Agent (INS 1100(), INS 110T0), Ginger Paste, Corn Starch, Preservative (INS 282), Thickening Agent (INS 415), Baking Powder, Mixed Herbs, Acidity Regulator (INS 330).",
+   "usageInstructions": "Simply deep fry or air fry and serve hot.",
+   "manufacturerName": "Mother Dairy Fruit and Vegetable Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014011001895"
+  }
+ },
+ {
+  "title": "Fresh Idli Dosa Batter",
+  "handle": "fresh-idli-dosa-batter",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358081_2-safal-fresh-idli-dosa-batter.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358080_2-safal-fresh-idli-dosa-batter.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358081_2-safal-fresh-idli-dosa-batter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358081-2_2-safal-fresh-idli-dosa-batter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358081-3_2-safal-fresh-idli-dosa-batter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358081-4_2-safal-fresh-idli-dosa-batter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358081-5_2-safal-fresh-idli-dosa-batter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358081-6_2-safal-fresh-idli-dosa-batter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358081-7_2-safal-fresh-idli-dosa-batter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358081-8_2-safal-fresh-idli-dosa-batter.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Safal Fresh Idli Dosa Batter is prepared using a traditional and authentic method, ensuring the natural taste of homemade idlis and dosas. Made from quality ingredients such as rice and urad dal, the batter is naturally fermented for the perfect texture and flavour. Convenient and ready to use, this batter helps you prepare soft idlis and crisp dosas with ease, bringing authentic South Indian taste to your kitchen.",
+   "ingredients": "Water, Rice, Urad Dal, Rock Salt and Fenugreek\nAllergen: May contain Wheat & Nut.",
+   "manufacturerName": "F. Risshta Foods Pvt. Ltd",
+   "fssaiLicense": "10014011001895",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 5
+  }
+ },
+ {
+  "title": "Coconut Water",
+  "handle": "coconut-water",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40354106_1-safal-coconut-water.jpg"
+    },
+    "barcode": "8901722401958"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354106_1-safal-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354106-2_1-safal-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354106-3_1-safal-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354106-4_1-safal-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354106-5_1-safal-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354106-6_1-safal-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354106-7_1-safal-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354106-8_1-safal-coconut-water.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Refreshing and naturally hydrating, this coconut water is\npacked with essential electrolytes, making it the perfect drink to replenish\nand revitalise your body. Sourced from fresh, tender coconuts, it offers a\ncrisp, subtly sweet taste with no added sugar or preservatives. Ideal for\npost-workout recovery or a healthy daily refreshment, it’s pure tropical\ngoodness in every sip.",
+   "manufacturerName": "Mother Dairy Fruit & Vegetable Pvt. Ltd",
+   "fssaiLicense": "10014011001895",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Deepam Lamp Oil",
+  "handle": "deepam-lamp-oil",
+  "vendor": "Safal (Mother Dairy)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "73",
+    "compare_at_price": "73",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/245525_1-safal-oil-deepa-light.jpg"
+    },
+    "barcode": "8908000121041"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/245525_1-safal-oil-deepa-light.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/245525-2_1-safal-oil-deepa-light.jpg"
+   }
+  ],
+  "details": {
+   "countryOfOrigin": "India"
+  }
+ }
+]

@@ -1,0 +1,16 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Frozen Green Peas,Safal Frozen Green Peas,update,Frozen Foods > Frozen Vegetables > Frozen Peas,200g ₹55 | 500g ₹135 | 1kg ₹240,200g ₹55 | 500g ₹135 | 1kg ₹240,8,
+Frozen Mixed Vegetables,Safal Frozen Mixed Vegetables,update,Frozen Foods > Frozen Vegetables > Frozen Mixed Vegetables,500g ₹80 | 1kg ₹160,500g ₹80 | 1kg ₹160,8,
+Frozen Sweet Corn,Safal Frozen Sweet Corn,update,Frozen Foods > Frozen Vegetables > Frozen Sweet Corn,200g ₹45 | 500g ₹100 | 1kg ₹180,200g ₹45 | 500g ₹100 | 1kg ₹180,8,
+Frozen Jackfruit,Safal Frozen Jackfruit,create,Frozen Foods > Frozen Vegetables > Frozen Mixed Vegetables,300g ₹60,300g ₹60,7,
+French Fries,Safal French Fries,create,Frozen Foods > Frozen Snacks > Frozen Fries & Wedges,400g ₹95 | 1kg ₹215,400g ₹95 | 1kg ₹215,8,
+Frozen Aloo Tikki,Safal Frozen Aloo Tikki,create,Frozen Foods > Frozen Snacks > Frozen Tikki & Kebab,400g ₹85,400g ₹85,7,
+Hara Bhara Veg Kebab,Safal Hara Bhara Veg Kebab,create,Frozen Foods > Frozen Snacks > Frozen Tikki & Kebab,200g ₹75,200g ₹75,7,
+Frozen Chilli Garlic Nuggets,Safal Frozen Chilli Garlic Nuggets,create,Frozen Foods > Frozen Snacks > Frozen Tikki & Kebab,400g ₹100,400g ₹100,8,
+Crispy Veggie Bites,Safal Crispy Veggie Bites,create,Frozen Foods > Frozen Snacks > Frozen Tikki & Kebab,400g ₹160,400g ₹160,7,400g: out of stock online
+Veggie Sticks,Safal Veggie Sticks,create,Frozen Foods > Frozen Snacks > Frozen Tikki & Kebab,400g ₹160,400g ₹160,7,
+Jalapeno Cheese Pops,Safal Jalapeno Cheese Pops,create,Frozen Foods > Frozen Snacks > Frozen Tikki & Kebab,300g ₹200,300g ₹200,7,300g: out of stock online
+Pizza Pockets,Safal Pizza Pockets,create,Frozen Foods > Frozen Snacks > Frozen Pizza & Burger Patty,340g ₹180,340g ₹180,5,
+Fresh Idli Dosa Batter,Safal Fresh Idli Dosa Batter,create,Snacks & Packaged Foods > Ready to Eat & Cook > Idli & Dosa Batter,500g ₹65 | 1kg ₹120,500g ₹65 | 1kg ₹120,8,
+Coconut Water,Safal Coconut Water,create,Beverages > Juices & Fruit Drinks > Coconut Water,200ml ₹55,200ml ₹55,8,
+Deepam Lamp Oil,Safal Deepam Lamp Oil,create,Pooja & Festivals > Pooja Essentials > Diya & Wicks,500ml ₹73,500ml ₹73,2,500ml: out of stock online

@@ -1,0 +1,134 @@
+{
+  "brand": "Safal (Mother Dairy)",
+  "manufacturer": "Mother Dairy Fruit & Vegetable Pvt. Ltd.",
+  "feed": "safal-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/safal/logo-a469143a.png",
+  "themeColor": "#00843D",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Safal ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Frozen\\ Green\\ Peas$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Peas"
+      ]
+    },
+    {
+      "match": "^Frozen\\ Mixed\\ Vegetables$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Mixed Vegetables"
+      ]
+    },
+    {
+      "match": "^Frozen\\ Sweet\\ Corn$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Sweet Corn"
+      ]
+    },
+    {
+      "match": "^Frozen\\ Jackfruit$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Mixed Vegetables"
+      ]
+    },
+    {
+      "match": "^French\\ Fries$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Frozen\\ Aloo\\ Tikki$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Hara\\ Bhara\\ Veg\\ Kebab$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Frozen\\ Chilli\\ Garlic\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Veggie\\ Bites$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veggie\\ Sticks$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Jalapeno\\ Cheese\\ Pops$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Pockets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Idli\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Water$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    },
+    {
+      "match": "^Deepam\\ Lamp\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    }
+  ]
+}
