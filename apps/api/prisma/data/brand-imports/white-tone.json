@@ -1,0 +1,38 @@
+{
+  "brand": "White Tone",
+  "manufacturer": "Vasu Healthcare Pvt. Ltd.",
+  "feed": "white-tone-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/white-tone/logo-430ef053.png",
+  "themeColor": "#7A1846",
+  "themeColorSecondary": "#E0457F",
+  "namePrefix": "White Tone ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Soft\\ \\&\\ Smooth\\ Face\\ Cream\\ with\\ Sun\\ Protection$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Face\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Pearl\\ Face\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    }
+  ]
+}
