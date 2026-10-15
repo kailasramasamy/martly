@@ -1,0 +1,358 @@
+{
+  "brand": "Rasna",
+  "manufacturer": "Rasna Pvt. Ltd.",
+  "feed": "rasna-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/rasna/logo-84c9523e.png",
+  "themeColor": "#F26B21",
+  "themeColorSecondary": "#2E8B3A",
+  "namePrefix": "Rasna ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Insta\\ Instant\\ Drink\\ Mix\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Insta\\ Instant\\ Drink\\ Mix\\ \\-\\ Mango$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Insta\\ Instant\\ Drink\\ Mix\\ \\-\\ Lemon$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Insta\\ Instant\\ Drink\\ Mix\\ \\-\\ Pineapple$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Insta\\ Instant\\ Drink\\ Mix\\ \\-\\ Guava$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Insta\\ International\\ Drink\\ Mix\\ \\-\\ Mixed\\ Fruit$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Insta\\ Ener\\-G\\ Instant\\ Drink\\ Mix\\ \\-\\ Mango$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Insta\\ Ener\\-G\\ Drink\\ Mix\\ with\\ Sipper$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Rich\\ Nagpur\\ Orange\\ Drink\\ Mix\\ \\(24\\ Sachets\\)$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Fun\\ Concentrate\\ \\-\\ Kool\\ Khus\\ \\(32\\ Glasses\\)$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Fun\\ Concentrate\\ \\-\\ American\\ Pineapple\\ \\(32\\ Glasses\\)$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Fun\\ Concentrate\\ \\-\\ Kala\\ Khatta\\ \\(32\\ Glasses\\)$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Fun\\ Concentrate\\ \\-\\ Shahi\\ Gulab\\ \\(32\\ Glasses\\)$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Fun\\ Concentrate\\ \\-\\ Shikanji\\ Nimbupani\\ \\(32\\ Glasses\\)$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Nutri\\ Concentrate\\ \\-\\ Alphonso\\ Mango\\ \\(32\\ Glasses\\)$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Nutri\\ Concentrate\\ \\-\\ Nagpur\\ Orange\\ \\(32\\ Glasses\\)$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^100%\\ Pulpy\\ Drink\\ Mix\\ \\-\\ Alphonso\\ Mango$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^100%\\ Pulpy\\ Drink\\ Mix\\ \\-\\ Mixed\\ Fruit$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^100%\\ Pulpy\\ Drink\\ Mix\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^100%\\ Natural\\ Lemonade\\ Drink\\ Mix\\ with\\ Sipper$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Plus\\ 21\\ Power\\ Squash\\ \\-\\ Lemon$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Plus\\ 21\\ Power\\ Squash\\ \\-\\ Mango$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Plus\\ 21\\ Power\\ Squash\\ \\-\\ Pineapple$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Plus\\ Super\\ Squash\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Power\\ Squash\\ \\-\\ Lemon$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Power\\ Squash\\ \\-\\ Mango$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Power\\ Squash\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Gulab\\ Sharbat$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Native\\ Haat\\ Shikanji$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Native\\ Haat\\ Aam\\ Panna$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Aam Panna"
+      ]
+    },
+    {
+      "match": "^Native\\ Haat\\ Lemon\\ Ice\\ Tea\\ Mix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Iced Tea"
+      ]
+    },
+    {
+      "match": "^Jumpin\\ Litchi\\ Nectar$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Jumpin\\ Mixed\\ Fruit\\ Nectar$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Jumpin\\ Orange\\ Juicier$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Day\\ Chyawanprash$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Day\\ Pure\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Day\\ Protein\\ Vita\\ \\-\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Day\\ Protein\\ Vita\\ \\-\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Choconut\\ Spread\\ \\-\\ Hazelnut$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^Quikie\\ Soup\\ \\-\\ Tomato\\ Veggie\\ Overload$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Quikie\\ Soup\\ \\-\\ Hot\\ n\\ Sour\\ Veggie\\ Overload$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Quikie\\ Soup\\ \\-\\ Sweet\\ n\\ Sour\\ Veggie\\ Overload$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Quikie\\ Soup\\ \\-\\ Manchow\\ Veggie\\ Overload$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    }
+  ]
+}
