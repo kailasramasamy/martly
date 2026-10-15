@@ -1,0 +1,131 @@
+[
+ {
+  "title": "Magnetism Classic Talc for Men",
+  "handle": "magnetism-classic-talc-for-men",
+  "vendor": "Z",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005963_1-z-talc-magnetism-for-men.jpg"
+    },
+    "barcode": "8906015120011"
+   },
+   {
+    "title": "100g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005918_2-z-talc-for-men.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "245",
+    "compare_at_price": "245",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346057_2-z-magnetism-classic-talc-for-men.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005963_1-z-talc-magnetism-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005918_2-z-talc-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346057_2-z-magnetism-classic-talc-for-men.jpg"
+   }
+  ],
+  "details": {
+   "description": "It absorbs Swetting well, keeping skin dry and helping to prevent rashes.",
+   "manufacturerName": "Argus cosmetics LimitedShed no.EP",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Magnetism Classic Deo for Men",
+  "handle": "magnetism-classic-deo-for-men",
+  "vendor": "Z",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346056_2-z-magnetism-classic-deo-for-men.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346056_2-z-magnetism-classic-deo-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346056-2_1-z-magnetism-classic-deo-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346056-3_1-z-magnetism-classic-deo-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346056-4_1-z-magnetism-classic-deo-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346056-5_1-z-magnetism-classic-deo-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346056-6_1-z-magnetism-classic-deo-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346056-7_1-z-magnetism-classic-deo-for-men.jpg"
+   }
+  ],
+  "details": {
+   "description": "To prevent or mask body odor",
+   "manufacturerName": "Primacy Industries LtdUnit",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Magnetism Classic Deodorant Soap for Men",
+  "handle": "magnetism-classic-deodorant-soap-for-men",
+  "vendor": "Z",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "52",
+    "compare_at_price": "52",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346059_1-z-magnetism-classic-soap-for-men.jpg"
+    },
+    "barcode": "8906015121322"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346059_1-z-magnetism-classic-soap-for-men.jpg"
+   }
+  ],
+  "details": {
+   "description": "To prevent or mask body odor",
+   "manufacturerName": "Primacy Industries Ltd10/9 nehruji street",
+   "countryOfOrigin": "India"
+  }
+ }
+]

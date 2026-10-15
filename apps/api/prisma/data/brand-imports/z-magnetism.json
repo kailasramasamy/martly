@@ -1,0 +1,38 @@
+{
+  "brand": "Z",
+  "manufacturer": "Argus Cosmetics Ltd.",
+  "feed": "z-magnetism-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/z-magnetism/logo-f7c16f1c.png",
+  "themeColor": "#8B1538",
+  "themeColorSecondary": "#C9C3B0",
+  "namePrefix": "Z ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Magnetism\\ Classic\\ Talc\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Magnetism\\ Classic\\ Deo\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Magnetism\\ Classic\\ Deodorant\\ Soap\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    }
+  ]
+}
