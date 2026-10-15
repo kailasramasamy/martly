@@ -1,0 +1,3354 @@
+[
+ {
+  "title": "Baking Powder",
+  "handle": "baking-powder",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "24",
+    "compare_at_price": "24",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005522_7-weikfield-baking-powder.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005537_6-weikfield-baking-powder.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053875_7-weikfield-baking-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005522_7-weikfield-baking-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005522-2_8-weikfield-baking-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005522-3_8-weikfield-baking-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005522-4_8-weikfield-baking-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005522-5_8-weikfield-baking-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005522-6_9-weikfield-baking-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005522-7_1-weikfield-baking-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005522-8_1-weikfield-baking-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your baking with Weikfield's Baking Powder, the ultimate secret ingredient for light and fluffy treats. This versatile powder transforms cakes, pastries, naans, and kulchas into delightful delicacies with its unique double-action formula that ensures the perfect rise. Crafted with care, the baking powder comes in an attractive, reusable poly jar, making it easy to store and use.\nWhether you're whipping up a batch of fluffed-up cupcakes or preparing a spread of light and airy Indian snacks, Weikfield's Baking Powder is the key to achieving that irresistible, melt-in-your-mouth texture. Unlock the full potential of your baking with this must-have kitchen essential.",
+   "ingredients": "Sodium Bicarbonate, Sodium Aluminium Sulphate, Cornflour",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "183.0",
+    "Carbohydrates (g)": "45.6",
+    "Total Sugar (g)": "0.0",
+    "Added Sugar (g)": "0.0",
+    "Protein (g)": "0.1",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "42"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Baking Soda",
+  "handle": "baking-soda",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "36",
+    "compare_at_price": "36",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213548_5-weikfield-baking-soda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213548_5-weikfield-baking-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213548-2_5-weikfield-baking-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213548-3_5-weikfield-baking-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213548-4_3-weikfield-baking-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213548-5_3-weikfield-baking-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213548-6_4-weikfield-baking-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213548-7_4-weikfield-baking-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213548-8_2-weikfield-baking-soda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield Baking Soda is a versatile, high-quality leavening agent essential for baking and cooking. It ensures your baked goods rise perfectly, resulting in light and fluffy textures. A staple in any kitchen, Weikfield Baking Soda guarantees reliable results for all your culinary and household needs.",
+   "ingredients": "Sodium Bicarbonate",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy ( kCal)": "38.0",
+    "Carbohydrate (g)": "9.3",
+    "of which sugar (g)": "0.0",
+    "Protein (g)": "0.0",
+    "Fat (g)": "0.0",
+    "Saturated Fat (g)": "0.0",
+    "Salt (g)": "65.0"
+   },
+   "manufacturerName": "Weikfield Foods Pvt. Ltd. Nalagarh-Bharatgarh Road",
+   "fssaiLicense": "10012062000166",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Icing Sugar",
+  "handle": "icing-sugar",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053873_2-weikfield-icing-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053873_2-weikfield-icing-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053873-2_2-weikfield-icing-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053873-3_2-weikfield-icing-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053873-4_2-weikfield-icing-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053873-5_2-weikfield-icing-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053873-6_2-weikfield-icing-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This finely granulated confectionery sugar is another veteran Weikfied product.\nIts super-fine texture makes it an excellent ingredient for delicious frosting and icing.\nSimply dust it on desserts for added sweetness and garnishing.",
+   "manufacturerName": "Weikfield Foods PVT Ltd",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Unsweetened Cocoa Powder",
+  "handle": "unsweetened-cocoa-powder",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005747_9-weikfield-cocoa.jpg"
+    }
+   },
+   {
+    "title": "150g",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005752_13-weikfield-cocoa.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005747_9-weikfield-cocoa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005747-2_7-weikfield-cocoa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005747-3_7-weikfield-cocoa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005747-4_7-weikfield-cocoa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005747-5_7-weikfield-cocoa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005747-6_5-weikfield-cocoa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005747-7_3-weikfield-cocoa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005747-8_2-weikfield-cocoa.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your baking with Weikfield's rich and decadent pure cocoa powder. Made from premium quality cocoa beans, this powder adds an intense chocolate flavour and rich colour to your cakes, cookies, and desserts. Crafted with low-fat, pure cocoa, it's perfect for creating delicious chocolate treats with an irresistible flavour. The convenient, eco-friendly packaging makes it easy to use and store, while the user-friendly poly jar ensures you can easily access the powder whenever you need it.\nWhether you're whipping up chocolate sauces, baking indulgent cakes, or adding a touch of chocolatey goodness to your favourite recipes, Weikfield's cocoa powder is a must-have ingredient for every chocolate lover's pantry.",
+   "ingredients": "Cocoa Solids (99.75%), Artificial flavour (chocolate)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "10 g",
+    "Energy (kcal)": "393.0",
+    "Carbohydrates (g)": "49.8",
+    "Total Sugar (g)": "0",
+    "Added Sugar (g)": "0",
+    "Protein (g)": "23.2",
+    "Total Fat (g)": "11.20",
+    "Saturated Fat (g)- ^NMT": "6.80",
+    "Trans Fat (g)- ^NMT": "0.0",
+    "Sodium (mg)": "30.00",
+    "RDA": "% of Recommended dietary allowance of an average adult (2000 kcal)"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Corn Starch Powder",
+  "handle": "corn-starch-powder",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005552_8-weikfield-cornflour.jpg"
+    },
+    "barcode": "8901808000044"
+   },
+   {
+    "title": "500g",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005557_8-weikfield-cornflour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005552_8-weikfield-cornflour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005552-2_10-weikfield-cornflour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005552-3_8-weikfield-cornflour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005552-4_8-weikfield-cornflour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005552-5_3-weikfield-cornflour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005552-6_3-weikfield-cornflour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005552-7_2-weikfield-cornflour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005552-8_2-weikfield-cornflour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pure vegetarian and gluten-free, Weikfield’s Corn Starch is a reliable kitchen staple that makes cooking effortless and fun. Prepare versatile dishes with zero lumps using our premium-quality, super-fine corn starch, made from whole corn kernels. Use it to create a light coating for crispy deliciousness or add it to baked delights for soft, fluffy perfection. It works best as a thickening agent and is perfect for indulgent, creamy, and smooth desserts. It also enhances the texture of thick liquids such as soups, sauces, and gravies. You can also make soft cookies, cakes, and puddings, and it’s ideal for fried snacks too. Weikfield’s Corn Starch has natural moisture-absorbing and non-stick properties, making it a fuss-free experience while creating baked treats or retaining the freshness of crispy snacks.",
+   "nutritionalInfo": {
+    "Energy": "350 kcal",
+    "Carbohydrates": "87.2 g",
+    "Total Sugar": "0.0 g",
+    "Added Sugar": "0.0 g",
+    "Protein": "0.0 g",
+    "Fat": "0.0 g",
+    "Saturated Fat": "0.0 g",
+    "Sodium": "14.7 mg"
+   },
+   "manufacturerName": "Weikfield Foods Pvt. Ltd",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cooker Cake Mix - Chocolate",
+  "handle": "cooker-cake-mix-chocolate",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40033774_7-weikfield-cooker-cake-mix-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033774_7-weikfield-cooker-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033774-2_9-weikfield-cooker-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033774-3_9-weikfield-cooker-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033774-4_9-weikfield-cooker-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033774-5_9-weikfield-cooker-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033774-6_8-weikfield-cooker-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033774-7_3-weikfield-cooker-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033774-8_2-weikfield-cooker-cake-mix-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a decadent chocolate cake experience with the Weikfield Cooker Cake Mix. This eggless, vegetarian-friendly cake mix allows you to create a rich, moist, and deeply flavourful chocolate cake in just a few minutes, all without the need for an oven. Crafted with quality ingredients, this versatile mix ensures an indulgent chocolate taste in every bite. Simply prepare the cake in your pressure cooker and enjoy a delightful treat that serves up to six. Whether you're following a vegetarian diet or simply craving a delectable chocolate dessert, this convenient cake mix offers a delightful choice for all cake lovers.",
+   "ingredients": "Sugar, Refined Wheat Flour (Maida), Cocoa Solids (5.4%), Milk Solids, Palmolein Oil, Baking Powder, Starch, Emulsifiers & Stabilizers (INS 477, INS 415, INS 471), Modified Starch (INS 1442), lodised Salt, CONTAINS ADDED NATURAL, NATURE IDENTICAL AND ARTIFICIAL FLAVOUR- ING SUBSTANCES (CHOCOLATE & VANILLA)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "25g",
+    "Energy (kcal)": "406.2 kcal",
+    "Carbohydrate (g)": "76.5 g",
+    "Total sugar (g)": "42.0 g",
+    "Added Sugar(g)": "41.4 g",
+    "Protein (g)": "9.0 g",
+    "Total Fat (g)": "7.2 g",
+    "Saturated Fat (g)": "3.8 g",
+    "Trans fat (g)": "0.0 g",
+    "Cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "760 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Weikfield Foods PVT Ltd",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cooker Cake Mix - Vanilla",
+  "handle": "cooker-cake-mix-vanilla",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40033775_7-weikfield-cooker-cake-mix-vanilla.jpg"
+    },
+    "barcode": "8901808004561"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033775_7-weikfield-cooker-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033775-2_7-weikfield-cooker-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033775-3_7-weikfield-cooker-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033775-4_7-weikfield-cooker-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033775-5_7-weikfield-cooker-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033775-6_6-weikfield-cooker-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033775-7_3-weikfield-cooker-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033775-8_2-weikfield-cooker-cake-mix-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Weikfield Cooker Cake Mix allows you to make a delicious vanilla cake in just a few minutes, without the need for an oven. Simply use your pressure cooker to prepare a scrumptious cake that serves six people, with one carton providing enough mix for the entire batch. Made with quality ingredients, it ensures a rich and tasty cake every time. The recipe is vegetarian and eggless, making it suitable for all dietary preferences. Explore a wide range of popular recipes with this versatile cake mix, which is also available in a chocolate flavour.",
+   "ingredients": "Sugar, Refined wheat flour (Maida), Milk Solids, Palmolein Oil, Starch, Emulsifiers & Stabilizers (INS477, INS415, INS471), Baking Powder, Iodised Salt, Modified Starch (INS1442), CONTAINS PERMITTED SYNTHETIC FOOD COLOURS (INS 102, INS 110) AND ADDED NATURE IDENTICAL AND ARTIFICIAL FLAVOURING SUBSTANCE (VANILLA)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "25g",
+    "Energy (kcal)": "405.2 kcal",
+    "Carbohydrate (g)": "77.0 g",
+    "Total sugar (g)": "42.5 g",
+    "Added Sugar(g)": "41.5 g",
+    "Protein (g)": "9.0 g",
+    "Total Fat (g)": "6.8 g",
+    "Saturated Fat (g)": "3.5 g",
+    "Trans fat (g)": "0.0 g",
+    "Cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "600 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Weikfield Foods PVT Ltd",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Oven Cake Mix - Chocolate",
+  "handle": "oven-cake-mix-chocolate",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "225g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40067877_7-weikfield-oven-cake-mix-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067877_7-weikfield-oven-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067877-2_6-weikfield-oven-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067877-3_6-weikfield-oven-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067877-4_6-weikfield-oven-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067877-5_6-weikfield-oven-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067877-6_6-weikfield-oven-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067877-7_3-weikfield-oven-cake-mix-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067877-8_3-weikfield-oven-cake-mix-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Decadent Chocolate Oven Cake in Just a Few Minutes: Make a decadent chocolate cake in your oven at home anytime, easily, in just a few minutes with the Weikfield Oven Cake Mix. Serves 6: One carton is enough to serve 6. Quality Ingredients: Contains quality ingredients that enhance taste, so you can enjoy a sinfully delicious chocolate cake. Wide Collection of Our Popular Recipes – Use the cake mix to prepare a wide range of our popular recipes on www.weikfield.com/recipes Also available in Vanilla flavour.",
+   "ingredients": "Refined Wheat Flour, Cocoa, Corn Starch, Dextrose",
+   "usageInstructions": "Preheat the oven to 165'C\nIn a bowl, empty contents of the pack, 3/4th cup water, 1/4th cup oil and 2 eggs and mix well so that no lumps are seen.\nGrease a round pan and pour the batter into it. Put the Pan in Oven and bake for 35-40 mins or microwave on high for 5 min.\nRemove Pan from Oven and cool it for 30 mins.",
+   "manufacturerName": "Weikfield Estate",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022001051"
+  }
+ },
+ {
+  "title": "Oven Cake Mix - Vanilla",
+  "handle": "oven-cake-mix-vanilla",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "225g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40067878_7-weikfield-oven-cake-mix-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067878_7-weikfield-oven-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067878-2_6-weikfield-oven-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067878-3_6-weikfield-oven-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067878-4_6-weikfield-oven-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067878-5_6-weikfield-oven-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067878-6_6-weikfield-oven-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067878-7_3-weikfield-oven-cake-mix-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067878-8_3-weikfield-oven-cake-mix-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Make light, moist & spongy vanilla flavored cake in minutes in your own kitchen with the Weikfield Vanilla Oven Cake Mix.\nIt is easy to make & great for making last-minute desserts.\nOne carton of the Weikfield Vanilla Oven Cake Mix is enough to serve 6.\nContains quality ingredients that enhance taste, so you can enjoy delicious vanilla cake anytime.",
+   "ingredients": "Refined Wheat Flour, Cocoa, Corn Starch, Dextrose",
+   "usageInstructions": "Preheat the oven to 165'C.\nIn a bowl, empty contents of the pack, 3/4 th cup water, 1/4 th cup oil and 2 eggs and mix well so that no lumps are seen.\nGrease a round pan and pour the batter into it. Put the Pan in Oven and bake for 35-40 mins or microwave on high for 5 min.\nRemove Pan from Oven and cool it for 30 mins.",
+   "manufacturerName": "Weikfield Estate",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022001051"
+  }
+ },
+ {
+  "title": "Whipping Cream Mix - Vanilla",
+  "handle": "whipping-cream-mix-vanilla",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213549_3-weikfield-whipping-cream-mix-vanilla-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213549_3-weikfield-whipping-cream-mix-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213549-2_3-weikfield-whipping-cream-mix-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213549-3_3-weikfield-whipping-cream-mix-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213549-4_3-weikfield-whipping-cream-mix-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213549-5_3-weikfield-whipping-cream-mix-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213549-6_3-weikfield-whipping-cream-mix-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213549-7_2-weikfield-whipping-cream-mix-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213549-8_3-weikfield-whipping-cream-mix-vanilla-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Making whipped cream is now easy with Weikfield Whipping Cream mix. Delicious vanilla flavoured whipping cream mix. Makes light & fluffy whipped cream instantly. It is a decadent addition to cakes, pastries, pies, hot chocolate, and many other sweet treats.",
+   "ingredients": "Sugar, Hydrogenated Palm Kernel Oil, Glucose Syrup Solids, Emulsifier & Stabilizers (INS 472a, INS 340 (i), INS 415), Caseinates, Modified Starch (INS 1442), Starch, Nature Identical & Artificial Flavouring Substance - Vanilla, CONTAINS ADDED FLAVOUR (NATURE IDENTICAL AND ARTIFICIAL FLAVOURING SUBSTANCE - VANILLA)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy ( kCal)": "527.9",
+    "Carbohydrate (g)": "69.6",
+    "of which sugar (g)": "53.8",
+    "Protein (g)": "2.6",
+    "Fat (g)": "26.5",
+    "Saturated Fat (g)": "26.1",
+    "Sodium (mg)": "0.0"
+   },
+   "usageInstructions": "Mix the entire packet (50gm) of Whipped Cream Powder with 100ml chilled water (5-degree Celsius).\nWhip the mixture with an electric whipper for 3-5 minutes, at maximum speed till you get the desired volume.\nDesired colour and flavour can be added at the end of the mixing.",
+   "storageInstructions": "*Store in a cool, dry place"
+  }
+ },
+ {
+  "title": "Vanilla Custard Powder",
+  "handle": "vanilla-custard-powder",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "42",
+    "compare_at_price": "42",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008378_9-weikfield-custard-powder-vanilla.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008363_8-weikfield-custard-powder-vanilla-flavour.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "154",
+    "compare_at_price": "154",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008362_8-weikfield-custard-powder-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008378_9-weikfield-custard-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008378-2_8-weikfield-custard-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008378-3_8-weikfield-custard-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008378-4_8-weikfield-custard-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008378-5_8-weikfield-custard-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008378-6_3-weikfield-custard-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008378-7_3-weikfield-custard-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008378-8_3-weikfield-custard-powder-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Creamy, rich, and velvety smooth, use Weikfield’s Vanilla-flavoured Custard Powder to treat your taste buds to a sweet and indulgent dessert. It creates no lumps and is super easy to make at home. If you love a classic treat, our custard powder with vanilla flavouring is an excellent choice. Its gentle sweetness, coupled with delicate fruity notes, makes it a delightful experience for any occasion or celebration. Pure vegetarian, this custard powder does not contain eggs. It is completely gluten-free and rich in calcium, which makes it a perfect treat for health-conscious individuals. Great for all age groups, you can enjoy the custard in its original form or use it to make puddings, cakes, ice creams, or decadent cheesecakes. Choose from five tempting flavours!",
+   "ingredients": "Cornflour, lodised Salt, Nature Identical and Artificial Flavouring Substances - Vanilla, Colours - (INS 102, INS 110, INS 122)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "358.0",
+    "Carbohydrate (g)": "88.4",
+    "of which sugar (g)": "0.0",
+    "Protein (g)": "1.0",
+    "Fat (g)": "0.0",
+    "Saturated Fat (g)": "0.0",
+    "Salt (g)": "0.7"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Custard Powder",
+  "handle": "mango-custard-powder",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008369_8-weikfield-custard-powder-mango-flavor.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008369_8-weikfield-custard-powder-mango-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008369-2_7-weikfield-custard-powder-mango-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008369-3_7-weikfield-custard-powder-mango-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008369-4_7-weikfield-custard-powder-mango-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008369-5_7-weikfield-custard-powder-mango-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008369-6_5-weikfield-custard-powder-mango-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008369-7_5-weikfield-custard-powder-mango-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008369-8_5-weikfield-custard-powder-mango-flavor.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Creamy, rich, and velvety smooth, use Weikfield’s Mango-Flavoured Custard Powder to treat your taste buds to a sweet and indulgent dessert. It creates no lumps and is super easy to make at home. If you love a classic treat, our custard powder with mango flavouring is an excellent choice. Its gentle sweetness, coupled with delicate fruity notes, makes it a delightful experience for any occasion or celebration. Purevegetarian, this custard powder does not contain eggs. It is completely gluten-free and rich in calcium, which makes it a perfect treat for health-conscious individuals. Great for all age groups, you can enjoy the custard in its original form or use it to make puddings, cakes, ice creams, or decadent cheesecakes. Choose from five tempting flavours!",
+   "ingredients": "Cornflour, Nature Identical and Artificial Flavouring Substance - Mango, Iodised Salt, Colours - (INS 102, INS 110, INS 122)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Energy (kcal)": "358.0 kcal",
+    "Carbohydrate (g)": "88.4 g",
+    "of which sugar (g)": "0.0 g",
+    "Protein (g)": "1.0 g",
+    "Fat (g)": "0.0 g",
+    "Saturated Fat (g)": "0.0 g",
+    "Salt (g)": "0.7 g"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Custard Powder",
+  "handle": "strawberry-custard-powder",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40067871_10-weikfield-custard-powder-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067871_10-weikfield-custard-powder-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067871-2_6-weikfield-custard-powder-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067871-3_6-weikfield-custard-powder-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067871-4_6-weikfield-custard-powder-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067871-5_6-weikfield-custard-powder-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067871-6_6-weikfield-custard-powder-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067871-7_5-weikfield-custard-powder-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067871-8_5-weikfield-custard-powder-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful flavour of Weikfield's Strawberry Custard Powder, a convenient and delicious way to create rich, smooth, and creamy strawberry-flavoured custard at home. This vegetarian powder transforms into a delightful, fruity treat that will satisfy your sweet tooth. Reimagine your dessert experience with this versatile custard that can be enjoyed on its own, hot or cold, or paired with fresh fruits, nuts, and other desserts for a truly indulgent ending to any meal. With its quality ingredients and quick, hassle-free preparation, Weikfield Strawberry Custard Powder is the perfect solution for creating last-minute, yet impressive, homemade desserts.",
+   "ingredients": "Cornflour, Nature Identical Flavouring Substance - Strawberry, Iodised Salt, Colour - (INS 122)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Energy (kcal)": "358.0 kcal",
+    "Carbohydrate (g)": "88.4 g",
+    "of which sugar (g)": "0.0 g",
+    "Protein (g)": "1.0 g",
+    "Fat (g)": "0.0 g",
+    "Saturated Fat (g)": "0.0 g",
+    "Salt (g)": "0.7 g"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Butterscotch Custard Powder",
+  "handle": "butterscotch-custard-powder",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008367_8-weikfield-custard-powder-butterscotch.jpg"
+    },
+    "barcode": "8901808003854"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008367_8-weikfield-custard-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008367-2_7-weikfield-custard-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008367-3_7-weikfield-custard-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008367-4_7-weikfield-custard-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008367-5_7-weikfield-custard-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008367-6_5-weikfield-custard-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008367-7_5-weikfield-custard-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008367-8_5-weikfield-custard-powder-butterscotch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Creamy, rich, and velvety smooth, use Weikfield’s Butterscotch-flavoured Custard Powder to treat your taste buds to a sweet and indulgent dessert. It creates no lumps and is super easy to make at home. If you love a classic treat, our custard powder with butterscotch flavouring is an excellent choice. Its gentle sweetness, coupled with a caramelised taste, makes it a delightful experience for any occasion or celebration. Pure vegetarian, this custard powder does not contain eggs. It is completely gluten-free and rich in calcium, which makes it a perfect treat for health-conscious individuals. Great for all age groups, you can enjoy the custard in its original form or use it to make puddings, cakes, ice creams, or decadent cheesecakes. Choose from five tempting flavours!",
+   "ingredients": "Cornflour, Nature Identical and Artificial Flavouring Substance - Butterscotch, Iodised Salt, Colours - (INS 102, INS 110, INS 122)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Energy (kcal)": "358.0 kcal",
+    "Carbohydrate (g)": "88.4 g",
+    "of which sugar (g)": "0.0 g",
+    "Protein (g)": "1.0 g",
+    "Fat (g)": "0.0 g",
+    "Saturated Fat (g)": "0.0 g",
+    "Salt (g)": "0.7 g"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kesar Pista Custard Powder",
+  "handle": "kesar-pista-custard-powder",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213547_6-weikfield-custard-powder-kesar-pista-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213547_6-weikfield-custard-powder-kesar-pista-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213547-2_6-weikfield-custard-powder-kesar-pista-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213547-3_6-weikfield-custard-powder-kesar-pista-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213547-4_6-weikfield-custard-powder-kesar-pista-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213547-5_6-weikfield-custard-powder-kesar-pista-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213547-6_6-weikfield-custard-powder-kesar-pista-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213547-7_5-weikfield-custard-powder-kesar-pista-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213547-8_5-weikfield-custard-powder-kesar-pista-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Creamy, rich, and velvety smooth, use Weikfield's Kesar Pista-flavoured Custard Powder to treat your taste buds to a sweet and indulgent dessert. It creates no lumps and is super easy to make at home. If you love a classic treat, our custard powder with a nostalgic Kesar Pista flavouring is an excellent choice. Its gentle and floral sweetness, coupled with a quintessential nutty taste, makes it a delightful experience for any occasion or celebration. Pure vegetarian, this custard powder does not contain eggs. It is completely gluten-free and rich in calcium, which makes it a perfect treat for health-conscious individuals. Great for all age groups, you can enjoy the custard in its original form or use it to make puddings, cakes, ice creams, or decadent cheesecakes. Choose from five tempting flavours",
+   "ingredients": "Maize Starch, Pista Bits (4%), Natural, Nature Identical and Artificial Flavouring Substance (Kesar Pista), Iodised Salt, Synthetic Food Colours (INS 102, INS 133), Saffron (0.01%)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "5 g",
+    "Energy (kcal)": "347.3",
+    "Carbohydrate (g)": "81.0",
+    "Total sugar (g)": "0",
+    "Added sugar (g)": "0",
+    "Protein (g)": "1.1",
+    "Total Fat (g)": "2.1",
+    "Saturated Fat (g) - ^NMT": "0.4",
+    "Trans Fat (g) - ^NMT": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "160.0",
+    "RDA": "Recommended Dietary Allowance for average adult per day (2000 kcal)"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Eggless Caramel Custard Mix",
+  "handle": "eggless-caramel-custard-mix",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40067870_6-weikfield-caramel-pudding.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067870_6-weikfield-caramel-pudding.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067870-2_5-weikfield-caramel-pudding.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067870-3_5-weikfield-caramel-pudding.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067870-4_5-weikfield-caramel-pudding.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067870-5_5-weikfield-caramel-pudding.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067870-6_5-weikfield-caramel-pudding.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067870-7_1-weikfield-caramel-pudding.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of homemade caramel pudding with the Weikfield Caramel Custard Mix. This hassle-free solution allows you to enjoy a rich, creamy caramel dessert anytime, without the need for refrigeration. Simply boil milk, add the mix, and let it set - it's that easy! The vegetarian formula contains no eggs, making it a guilt-free treat. With its caramel flavour and ability to set without chilling, this pudding mix is a convenient and versatile addition to your kitchen. Elevate your dessert game and delight your taste buds with the Weikfield Caramel Custard Mix",
+   "ingredients": "Sugar, Gelling Agent - (INS 407, INS 406), Corn Flour, Stabilizer - (INS 341 (iii)), Liquid Glucose, Caramelised Sugar, CONTAINS PERMITTED SYNTHETIC FOOD COLOURS (INS 102, INS 110) AND ADDED FLAVOUR (NATURE IDENTICAL AND ARTIFICIAL FLAVOURING SUBSTANCES - VANILLA)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "14g",
+    "Energy (kcal)": "380 kcal",
+    "Carbohydrate (g)": "95.0 g",
+    "Total sugar (g)": "71.0 g",
+    "Added sugar (g)": "71.0 g",
+    "Protein (g)": "0.04 g",
+    "Total Fat (g)": "0 g",
+    "Sodium (mg)": "0 mg"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vanilla Ready To Eat Custard",
+  "handle": "vanilla-ready-to-eat-custard",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241090_6-weikfield-custard-ready-to-eat-made-with-cow-milk-creamy-no-preservatives-vanilla.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241091_5-weikfield-custard-ready-to-eat-made-with-cow-milk-creamy-no-preservatives-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241090_6-weikfield-custard-ready-to-eat-made-with-cow-milk-creamy-no-preservatives-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241090-2_6-weikfield-custard-ready-to-eat-made-with-cow-milk-creamy-no-preservatives-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241090-3_6-weikfield-custard-ready-to-eat-made-with-cow-milk-creamy-no-preservatives-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241090-4_6-weikfield-custard-ready-to-eat-made-with-cow-milk-creamy-no-preservatives-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241090-5_6-weikfield-custard-ready-to-eat-made-with-cow-milk-creamy-no-preservatives-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241090-6_6-weikfield-custard-ready-to-eat-made-with-cow-milk-creamy-no-preservatives-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241090-7_6-weikfield-custard-ready-to-eat-made-with-cow-milk-creamy-no-preservatives-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241090-8_5-weikfield-custard-ready-to-eat-made-with-cow-milk-creamy-no-preservatives-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield Ready-to-Eat Custard offers a convenient, fuss-free dessert option requiring no preparation. Simply open the pack and pour the custard into a serving dish for an instant treat. Ideal for busy households, it helps mothers and home cooks manage unexpected guests or sudden dessert cravings with ease. Made with 84% premium-quality milk and no preservatives, this smooth and creamy vanilla custard delivers a comforting flavour that appeals to all ages.\nIts French vanilla taste brings a delightful sweetness that enhances a variety of desserts. Enjoy it on its own or pour it over fruit salads, cakes, brownies, pies, or pancakes to elevate your sweet creations. Perfect for family gatherings, birthdays, and everyday indulgence, Weikfield Ready-to-Eat Custard adds a touch of simple pleasure to life’s small celebrations.",
+   "ingredients": "Toned Milk (84 %), Sugar, Thickening Agent (INS 1442, INS 407), Milk Solids, Acidity Regulators - [INS 340, INS 452, INS 339], Artificial Flavouring Substance (Vanilla), Synthetic Food Colours (INS 102, INS 110, INS 129)",
+   "nutritionalInfo": {
+    "Energy": "104 kcal",
+    "Carbohydrates": "16.5 g",
+    "Total Sugar": "12.3 g",
+    "Added Sugar": "8.52 g",
+    "Protein": "3.1 g",
+    "Total Fat": "2.51 g",
+    "Saturated Fat": "1.65 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "6.21 mg",
+    "Sodium": "57.27 mg",
+    "Calcium": "125.82 mg"
+   },
+   "storageInstructions": "*Refrigerate and consume within 3 days of opening the pack",
+   "manufacturerName": "Parag Milk Foods Limited",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Jelly Crystals",
+  "handle": "mango-jelly-crystals",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005764_8-weikfield-jelly-mango.jpg"
+    },
+    "barcode": "8901808000495"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005764_8-weikfield-jelly-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005764-2_8-weikfield-jelly-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005764-3_8-weikfield-jelly-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005764-4_8-weikfield-jelly-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005764-5_8-weikfield-jelly-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005764-6_8-weikfield-jelly-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005764-7_6-weikfield-jelly-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005764-8_4-weikfield-jelly-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful tropical taste of Weikfield's Mango Jelly Crystals Mix, a vegetarian and gelatin-free dessert that sets without the need for refrigeration. Prepare a lip-smacking mango-flavoured jelly at home with minimal effort, perfect for all occasions from celebrations to simple family gatherings. Infused with the authentic taste of ripe mangoes, this jelly delivers a sweet and tangy dessert experience that's sure to delight.\nEnjoy the convenience of quick and easy preparation, while the product's long-lasting freshness ensures you can savour the flavour for longer. Whether you're looking for a nutritious dessert option or a fun, fruity touch to your event, Weikfield's Mango Jelly Crystals Mix is the perfect choice.",
+   "ingredients": "Jelly Mix: Sugar, Acid - (INS 297), Acidity Regulator - (INS 332), Natural and Nature Identical Flavouring Substances - Mango, Colours - (INS 102, INS 110)., Jelly Premix: Sugar, Gelling Agent - (INS 407), (INS 508), Iodised Salt, Acidity Regulator - (INS 332)., CONTAINS PERMITTED SYNTHETIC FOOD COLOURS AND ADDED FLAVOUR (NATURAL AND NATURE IDENTICAL FLAVOURING SUBSTANCES - MANGO).",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "396.0",
+    "Carbohydrate (g)": "98.5",
+    "of which sugar (g)": "91.7",
+    "Protein (g)": "0.4",
+    "Fat (g)": "0.1",
+    "Saturated Fat(g)": "0.0",
+    "Salt (g)": "0.0"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Orange Jelly Crystals",
+  "handle": "orange-jelly-crystals",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005758_9-weikfield-jelly-orange.jpg"
+    },
+    "barcode": "8901808000464"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005758_9-weikfield-jelly-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005758-2_7-weikfield-jelly-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005758-3_7-weikfield-jelly-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005758-4_7-weikfield-jelly-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005758-5_7-weikfield-jelly-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005758-6_6-weikfield-jelly-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005758-7_6-weikfield-jelly-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005758-8_6-weikfield-jelly-orange.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield Orange Flavoured Jelly Crystals Mix offers a simple way to prepare a bright, fruity jelly at home. Completely vegetarian and made without gelatine, it sets easily without refrigeration. Enjoy a smooth, refreshing orange treat that’s quick to make and ideal for everyday desserts or entertaining.",
+   "ingredients": "Jelly Mix: Sugar, Acid - (INS 297), Acidity Regulator - (INS 332), Natural & Nature Identical Flavouring Substances - Orange, Colour - (INS 110)., Jelly Premix: Sugar, Gelling Agent - (INS 407), (INS 508), Iodised Salt, Acidity Regulator - (INS 332)., CONTAINS PERMITTED SYNTHETIC FOOD COLOUR AND ADDED FLAVOUR (NATURAL AND NATURE IDENTICAL FLAVOURING SUBSTANCES - ORANGE).",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "18 g",
+    "Energy (kcal)": "396.0",
+    "Carbohydrate (g)": "98.5",
+    "of which sugar (g)": "91.7",
+    "Protein (g)": "0.4",
+    "Fat (g)": "0.1",
+    "Saturated Fat(g)": "0.0",
+    "Salt (g)": "0.0",
+    "RDA": "% of Recommended dietary allowance of an average adult (2000 kcal)."
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pineapple Jelly Crystals",
+  "handle": "pineapple-jelly-crystals",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005769_8-weikfield-jelly-crystals-pineapple-flavor.jpg"
+    },
+    "barcode": "8901808000501"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005769_8-weikfield-jelly-crystals-pineapple-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005769-2_7-weikfield-jelly-crystals-pineapple-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005769-3_7-weikfield-jelly-crystals-pineapple-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005769-4_7-weikfield-jelly-crystals-pineapple-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005769-5_7-weikfield-jelly-crystals-pineapple-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005769-6_7-weikfield-jelly-crystals-pineapple-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005769-7_7-weikfield-jelly-crystals-pineapple-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005769-8_7-weikfield-jelly-crystals-pineapple-flavor.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Now even kids can make delicious Pineapple flavoured jelly like a chef. All they need is Eagle Jelly Crystals. While most jellies contain gelatin, an animal derivative, Weikfield has pioneered a totally vegetarian formulation by using plant extracts. This is a delicious and ready in a snap dessert.",
+   "ingredients": "Jelly Mix: Sugar, Acid - (INS 297), Acidity Regulator - (INS 332), Nature Identical Flavouring Substance - Pineapple, Colour - (INS 102)., Jelly Premix: Sugar, Gelling Agent - (INS 407), (INS 508), Iodised Salt, Acidity Regulator - (INS 332)., CONTAINS PERMITTED SYNTHETIC FOOD COLOUR AND ADDED FLAVOUR (NATURE IDENTICAL FLAVOURING SUBSTANCE - PINEAPPLE)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "18 g",
+    "Energy (kcal)": "396.0",
+    "Carbohydrate (g)": "98.5",
+    "of which sugar (g)": "91.7",
+    "Protein (g)": "0.4",
+    "Fat (g)": "0.1",
+    "Saturated Fat(g)": "0.0",
+    "Salt (g)": "0.0"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt. Ltd",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Jelly Crystals",
+  "handle": "strawberry-jelly-crystals",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005756_8-weikfield-jelly-strawberry.jpg"
+    },
+    "barcode": "8901808000525"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005756_8-weikfield-jelly-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005756-2_8-weikfield-jelly-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005756-3_8-weikfield-jelly-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005756-4_8-weikfield-jelly-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005756-5_8-weikfield-jelly-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005756-6_8-weikfield-jelly-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005756-7_6-weikfield-jelly-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100005756-8_3-weikfield-jelly-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield Jelly Crystals Mix offers a hassle-free way to prepare delicious strawberry-flavoured jelly at home. Pure vegetarian, it contains no gelatin and sets without refrigeration, ensuring convenience. Enjoy its long shelf life, making it a practical choice for any pantry.",
+   "ingredients": "Jelly Mix: Sugar, Acid - (INS 297), Acidity Regulator - (INS 332), Nature Identical Flavouring Substance - Strawberry, Colour - (INS 122)., Jelly Premix: Sugar, Gelling Agent - (INS 407), (INS 508), Iodised Salt, Acidity Regulator - (INS 332)., CONTAINS PERMITTED SYNTHETIC FOOD COLOUR AND ADDED FLAVOUR (NATURE IDENTICAL FLAVOURING SUBSTANCE - STRAWBERRY).",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "396.0",
+    "Carbohydrate (g)": "98.5",
+    "of which sugar (g)": "91.7",
+    "Protein (g)": "0.4",
+    "Fat (g)": "0.1",
+    "Saturated Fat(g)": "0.0",
+    "Salt (g)": "0.0"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kaccha Mango Jelly Crystals",
+  "handle": "kaccha-mango-jelly-crystals",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339963_2-weikfield-kaccha-mango-flavoured-jelly-crystals-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339963_2-weikfield-kaccha-mango-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339963-2_2-weikfield-kaccha-mango-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339963-3_2-weikfield-kaccha-mango-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339963-4_2-weikfield-kaccha-mango-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339963-5_2-weikfield-kaccha-mango-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339963-6_2-weikfield-kaccha-mango-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339963-7_2-weikfield-kaccha-mango-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339963-8_2-weikfield-kaccha-mango-flavoured-jelly-crystals-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the tangy delight of Kaccha Mango Flavoured Jelly Crystals Mix, perfect for creating a refreshing and wobbly dessert. With its vibrant mango flavour, this easy-to-prepare mix adds a fun twist to any occasion. Simply dissolve, set, and enjoy a delicious treat that captures the essence of raw mango in every bite. It is ideal for all ages.",
+   "ingredients": "Jelly Mix: Sugar, Acid - (INS 297), Acidity Regulator - (INS 332), Natural and Nature Identical Flavouring Substances - Mango, Colours - (INS 102, INS 110), Jelly Premix: Sugar, Gelling Agent - (INS 407), (INS 508), lodised Salt, Acidity Regulator - (INS 332)",
+   "nutritionalInfo": {
+    "Serving Size": "18 g",
+    "Energy (kcal)": "3.5%",
+    "Carbohydrate (g)": "6.7%",
+    "Total sugar (g)": "33%",
+    "Added sugar (g)": "33%",
+    "Protein (g)": "0%",
+    "Total Fat (g)": "0%",
+    "Sodium (mg)": "0.3%"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Weikfield Foods Pvt. Ltd",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Guava Jelly Crystals",
+  "handle": "chilli-guava-jelly-crystals",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339964_2-weikfield-chilli-guava-flavoured-jelly-crystals-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339964_2-weikfield-chilli-guava-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339964-2_2-weikfield-chilli-guava-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339964-3_2-weikfield-chilli-guava-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339964-4_2-weikfield-chilli-guava-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339964-5_2-weikfield-chilli-guava-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339964-6_2-weikfield-chilli-guava-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339964-7_2-weikfield-chilli-guava-flavoured-jelly-crystals-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339964-8_1-weikfield-chilli-guava-flavoured-jelly-crystals-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Chilli Guava Flavoured Jelly Crystals Mix offers a unique blend of sweet guava and spicy chilli, creating a bold and tangy dessert. Easy to prepare, it sets into a smooth, flavourful jelly with a vibrant colour. Ideal for parties or special treats, this mix brings an exciting twist to classic jelly desserts.",
+   "ingredients": "Jelly Mix: Sugar, Acid - (INS 297), Acidity Regulator - (INS 332), Nature Identical Flavouring Substance - Raspberry, Colour - (INS 122), Jelly Premix: Sugar, Gelling Agent - (INS 407), (INS 508), lodised Salt, Acidity Regulator - (INS 332)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "396.0",
+    "Carbohydrate (g)": "98.5",
+    "of which sugar (g)": "91.7",
+    "Protein (g)": "0.4",
+    "Fat (g)": "0.1",
+    "Saturated Fat (g)": "0.0",
+    "Salt (g)": "0.0"
+   },
+   "manufacturerName": "Weikfield Foods Pvt. Ltd",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rose Falooda Mix",
+  "handle": "rose-falooda-mix",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40022158_12-weikfield-falooda-mix-rose.jpg"
+    },
+    "barcode": "8901808004769"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022158_12-weikfield-falooda-mix-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022158-2_9-weikfield-falooda-mix-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022158-3_9-weikfield-falooda-mix-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022158-4_9-weikfield-falooda-mix-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022158-5_8-weikfield-falooda-mix-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022158-6_8-weikfield-falooda-mix-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022158-7_7-weikfield-falooda-mix-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022158-8_7-weikfield-falooda-mix-rose.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful and refreshing taste of Weikfield's Rose Falooda Mix. Crafted with a smooth, creamy texture, this instant falooda mix allows you to prepare a delicious, traditional falooda in just minutes. Featuring a fragrant rose essence that brings a captivating aroma and flavour, the mix is vegetarian and contains no egg, making it a guilt-free treat.\nInfused with authentic ingredients like vermicelli and sabja seeds, the Weikfield Rose Falooda Mix delivers an unparalleled falooda experience, perfect for any occasion. Simply add water, boil, and chill to enjoy a lip-smacking, smooth and creamy falooda that will transport you to the heart of Indian dessert culture.",
+   "ingredients": "Sugar, Vermicelli, Starch, Dextrose, Raisins, Basil Seeds, Nature Identical Flavouring Substance (Rose), Synthetic Food Colour (INS 122)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "384.0",
+    "Carbohydrate (g)": "92.3",
+    "of which sugar (g)": "73.0",
+    "Protein (g)": "2.9",
+    "Fat (g)": "0.3",
+    "Saturated Fat (g)": "0.2",
+    "Salt (g)": "0.0"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Falooda Mix",
+  "handle": "mango-falooda-mix",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40022159_10-weikfield-falooda-mix-mango.jpg"
+    },
+    "barcode": "8901808004776"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022159_10-weikfield-falooda-mix-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022159-2_9-weikfield-falooda-mix-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022159-3_9-weikfield-falooda-mix-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022159-4_9-weikfield-falooda-mix-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022159-5_8-weikfield-falooda-mix-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022159-6_7-weikfield-falooda-mix-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022159-7_7-weikfield-falooda-mix-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022159-8_7-weikfield-falooda-mix-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful flavours of Weikfield's Mango Falooda Mix and experience the ultimate in refreshment. This vegetarian mix creates a smooth, creamy falooda with a delightful mango taste in an instant. Enjoy the beloved Indian beverage, often served with a scoop of ice cream, for a cooling treat on a warm day. With no egg and a simple preparation, this falooda mix offers a lip-smacking taste and a luxurious texture that will transport you to the vibrant streets of India.\nWhether you're craving a taste of tradition or seeking a new and exciting drink, Weikfield's Mango Falooda Mix is the perfect choice to quench your thirst and delight your senses.",
+   "ingredients": "Sugar, Vermicelli, Starch, Dextrose, Raisins, Basil Seeds, Artificial Flavouring Substance (Mango), Synthetic Food Colours (INS 102, INS 110, INS 122)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "384.0",
+    "Carbohydrate (g)": "92.3",
+    "of which sugar (g)": "73.0",
+    "Protein (g)": "2.9",
+    "Fat (g)": "0.3",
+    "Saturated Fat (g)": "0.2",
+    "Salt (g)": "0.0"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kesar Pista Falooda Mix",
+  "handle": "kesar-pista-falooda-mix",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40022161_12-weikfield-falooda-mix-kesar-pista.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022161_12-weikfield-falooda-mix-kesar-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022161-2_11-weikfield-falooda-mix-kesar-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022161-3_9-weikfield-falooda-mix-kesar-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022161-4_9-weikfield-falooda-mix-kesar-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022161-5_9-weikfield-falooda-mix-kesar-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022161-6_8-weikfield-falooda-mix-kesar-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022161-7_7-weikfield-falooda-mix-kesar-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022161-8_7-weikfield-falooda-mix-kesar-pista.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the luxurious flavours of saffron and pistachio with Weikfield's Kesar Pista Falooda Mix. This delightful dessert blend simplifies the process of creating an authentic, creamy falooda at home. Infused with the rich, aromatic essences of these premium ingredients, the mix delivers an indulgent taste experience that is perfect for family gatherings or festive celebrations. Offering a smooth, velvety texture, this falooda mix allows you to whip up a premium dessert with ease, adding a touch of sweetness and joy to every moment.\nWhether you're hosting a special occasion or craving a comforting treat, this versatile mix is the ideal solution for enjoying a delectable falooda experience in the comfort of your own home.",
+   "ingredients": "Sugar, Vermicelli, Starch, Dextrose, Raisins, Basil Seeds, Artificial Flavouring Substance (Kesar Pista), Synthetic Food Colours (INS 102, INS 133)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "384.0 kcal",
+    "Carbohydrate (g)": "92.3 g",
+    "of which sugar (g)": "73.0 g",
+    "Protein (g)": "2.9 g",
+    "Fat (g)": "0.3 g",
+    "Saturated Fat (g)": "0.2 g",
+    "Salt (g)": "0.0 g"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Falooda Mix",
+  "handle": "strawberry-falooda-mix",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40022160_11-weikfield-falooda-mix-strawberry.jpg"
+    },
+    "barcode": "8901808004783"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022160_11-weikfield-falooda-mix-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022160-2_10-weikfield-falooda-mix-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022160-3_10-weikfield-falooda-mix-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022160-4_10-weikfield-falooda-mix-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022160-5_9-weikfield-falooda-mix-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022160-6_8-weikfield-falooda-mix-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022160-7_7-weikfield-falooda-mix-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022160-8_7-weikfield-falooda-mix-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Make delicious & refreshing strawberry falooda with a smooth creamy texture instantly and easily with Weikfield Falooda Mix. The mix is vegetarian & contains no egg. One carton easily makes 6 servings. Also available in mango & kesar pista flavours.",
+   "ingredients": "Sugar, Vermicelli, Starch, Dextrose, Raisins, Basil Seeds, Nature Identical Flavouring Substance (Strawberry), Synthetic Food Colour (INS 122)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "384.0",
+    "Carbohydrate (g)": "92.3",
+    "of which sugar (g)": "73.0",
+    "Protein (g)": "2.9",
+    "Fat (g)": "0.3",
+    "Saturated Fat (g)": "0.2",
+    "Salt (g)": "0.0"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Freeze Vanilla Ice Cream Mix",
+  "handle": "freeze-vanilla-ice-cream-mix",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "54",
+    "compare_at_price": "54",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008374_7-weikfield-freeze-icecream-mix-powder-vanilla.jpg"
+    },
+    "barcode": "8901808000327"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008374_7-weikfield-freeze-icecream-mix-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008374-2_4-weikfield-freeze-icecream-mix-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008374-3_4-weikfield-freeze-icecream-mix-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008374-4_2-weikfield-freeze-icecream-mix-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008374-5_2-weikfield-freeze-icecream-mix-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008374-6_2-weikfield-freeze-icecream-mix-powder-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008374-7_2-weikfield-freeze-icecream-mix-powder-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a delicious bowl of homemade vanilla flavoured ice cream anytime with Weikfield Freeze Ice-cream Mix Powder. New & improved flavour. It is easy to make and can be had with other desserts, such as cakes, pastries, waffles, etc.",
+   "ingredients": "Sugar, Maltodextrin, Hydrogenated Palm kernel oil, Hydrogenated coconut oil, Emulsifiers and Stabilisers (INS 472, INS 471, INS 433, INS 412, INS 407, INS 415, INS 460), Caseinates, lodised Salt, Artificial Flavouring substance (Butterscotch), Synthetic Food Colour -INS (102).",
+   "nutritionalInfo": {
+    "Energy": "393.0 kcal",
+    "Carbohydrate": "97.6 g",
+    "Total Sugar": "90.0 g",
+    "Added Sugar": "66.0 g",
+    "Protein": "0.3 g",
+    "Total Fat": "0.13 g",
+    "Sodium": "10.3 mg"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Freeze Chocolate Ice Cream Mix",
+  "handle": "freeze-chocolate-ice-cream-mix",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "59",
+    "compare_at_price": "59",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006483_4-weikfield-freeze-icecream-mix-powder-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006483_4-weikfield-freeze-icecream-mix-powder-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006483-2_4-weikfield-freeze-icecream-mix-powder-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006483-3_4-weikfield-freeze-icecream-mix-powder-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006483-4_2-weikfield-freeze-icecream-mix-powder-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006483-5_2-weikfield-freeze-icecream-mix-powder-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006483-6_2-weikfield-freeze-icecream-mix-powder-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006483-7_2-weikfield-freeze-icecream-mix-powder-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a delicious bowl of homemade chocolate ice cream anytime with Weikfield Freeze Ice-cream Mix Powder.\nNew & improved flavour.\nIt is easy to make and can be had with other desserts, such as cakes, pastries, waffles, etc.",
+   "ingredients": "Sugar, Maltodextrin, Cocoa Solids (4%), Hydrogenated Palm kemnel oil, Hydrogenated coconut oil, Emulsifiers and Stabilisers (INS 472, INS 471, INS 433, INS 412, INS 407, INS 415, INS 460), Caseinates,lodised Salt, Artificial Flavouring substance (Chocolate, Vanilla ), Colours -(INS 102, INS 110, INS 124, INS 133).",
+   "nutritionalInfo": {
+    "Energy": "405.0 kcal",
+    "Carbohydrate": "92.3 g",
+    "Total Sugar": "90.0 g",
+    "Added Sugar": "66.0 g",
+    "Protein": "2.6 g",
+    "Total Fat": "2.78 g",
+    "Sodium": "9.4 mg"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Freeze Butterscotch Ice Cream Mix",
+  "handle": "freeze-butterscotch-ice-cream-mix",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "59",
+    "compare_at_price": "59",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008372_7-weikfield-freeze-icecream-mix-powder-butterscotch.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008372_7-weikfield-freeze-icecream-mix-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008372-2_4-weikfield-freeze-icecream-mix-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008372-3_4-weikfield-freeze-icecream-mix-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008372-4_2-weikfield-freeze-icecream-mix-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008372-5_2-weikfield-freeze-icecream-mix-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008372-6_2-weikfield-freeze-icecream-mix-powder-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008372-7_2-weikfield-freeze-icecream-mix-powder-butterscotch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a delicious bowl of homemade butterscotch flavoured ice cream anytime with Weikfield Freeze Ice-cream Mix Powder. New & improved flavour. It is easy to make and can be had with other desserts, such as cakes, pastries, waffles, etc.",
+   "ingredients": "Sugar, Maltodextrin, Hydrogenated Palm kernel oil, Hydrogenated coconut oil, Emulsifiers and Stabilizers (INS 472 ,INS 471, INS 433, INS 412, INS 407, INS 415, INS 460), Caseinates, Iodised Salt, Artificial Flavouring substance (Butterscotch), Synthetic Food Colour -INS (102)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "10 g Mix",
+    "Energy (kcal)": "393",
+    "Carbohydrate (g)": "97.6",
+    "Total sugar (g)": "90.0",
+    "Added sugar (g)": "66.0",
+    "Protein (g)": "0.3",
+    "Total Fat (g)": "0.13",
+    "Sodium (mg)": "10.3",
+    "RDA": "#% of Recommended dietary allowance of an average adult (2000 kcal)."
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Drinking Chocolate Powder",
+  "handle": "drinking-chocolate-powder",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008381_6-weikfield-drinking-chocolate-powder.jpg"
+    },
+    "barcode": "8901808000419"
+   },
+   {
+    "title": "500g",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40067872_6-weikfield-weikfiled-drinking-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008381_6-weikfield-drinking-chocolate-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008381-2_5-weikfield-drinking-chocolate-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008381-3_5-weikfield-drinking-chocolate-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008381-4_5-weikfield-drinking-chocolate-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008381-5_5-weikfield-drinking-chocolate-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008381-6_1-weikfield-drinking-chocolate-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008381-7_1-weikfield-drinking-chocolate-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008381-8_1-weikfield-drinking-chocolate-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Made from the finest cocoa beans, Weikfield Drinking Chocolate Powder is perfect for whipping up a sinfully delicious hot chocolate or cold chocolate drink. The mix is a perfect choice for adding a luxurious chocolate flavour to cookies & biscuits. You can also sprinkle it on your cold coffee, cappuccino, ice cream or caramel custard for additional flavouring and garnishing.",
+   "ingredients": "Sugar, Cocoa Solids (17%), Iodised Salt.",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Energy": "380 kcal",
+    "Fat": "1.8 g",
+    "Protein": "3.9 g",
+    "Carbohydrates": "87 g",
+    "Sugar": "81 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Penne Pasta",
+  "handle": "penne-pasta",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053879_12-weikfield-pasta-penne.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008385_9-weikfield-pasta-penne.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356861_2-weikfield-penne-pasta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053879_12-weikfield-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053879-2_11-weikfield-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053879-3_10-weikfield-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053879-4_13-weikfield-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053879-5_13-weikfield-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053879-6_2-weikfield-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053879-7_2-weikfield-pasta-penne.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053879-8_2-weikfield-pasta-penne.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield Penne Pasta is made with Durum Wheat Semolina and contains no maida.\nIt is a pure vegetarian product fortified with iron and micronutrients.\nIt has zero trans-fat, zero cholesterol, is rich in protein and fibre, and makes for a healthy option for meals, snacks, and lunch boxes.\nIt's shape and non-sticky texture make cooking it in any sauce an absolute delight as it holds the sauce perfectly, allowing you to savour its true flavours.\nGives a delicious bite and mouth feel.\nWeikfield Pasta is also available in elbow, fusilli, shell & spaghetti varieties.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Energy": "370.3 kcal",
+    "Carbohydrate": "76.9 g",
+    "of which Sugar": "2.7 g",
+    "Protein": "12 g",
+    "Total Fat": "1.6 g",
+    "Saturated Fat": "0.3 g",
+    "Sodium": "12 mg",
+    "Dietary Fibre": "3.7 g"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fusilli Pasta",
+  "handle": "fusilli-pasta",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053876_9-weikfield-pasta-fusilli.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200633_6-weikfield-pasta-fusilli.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356862_2-weikfield-fusili-pasta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053876_9-weikfield-pasta-fusilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053876-2_8-weikfield-pasta-fusilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053876-3_8-weikfield-pasta-fusilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053876-4_7-weikfield-pasta-fusilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053876-5_7-weikfield-pasta-fusilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053876-6_2-weikfield-pasta-fusilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053876-7_2-weikfield-pasta-fusilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053876-8_2-weikfield-pasta-fusilli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield Fusilli Pasta is made with Durum Wheat Semolina. It is a pure vegetarian product fortified with iron and micronutrients. It is a good source of protein & fibre & makes for a healthy snack when you crave some pasta. Its shape and non-sticky texture make cooking it in any sauce an absolute delight, as it holds the sauce perfectly, allowing you to savour its true flavours. Weikfield Pasta is also available in penne, elbow, shell & spaghetti varieties.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Energy": "370.3 kcal",
+    "Carbohydrate": "76.9 g",
+    "of which Sugar": "2.7 g",
+    "Protein": "12 g",
+    "Total Fat": "1.6 g",
+    "Saturated Fat": "0.3 g",
+    "Sodium": "12 mg",
+    "Dietary Fibre": "3.7 g"
+   },
+   "manufacturerName": "Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Elbow Pasta",
+  "handle": "elbow-pasta",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40033772_9-weikfield-pasta-elbow.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356863_2-weikfield-elbow-pasta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033772_9-weikfield-pasta-elbow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033772-2_8-weikfield-pasta-elbow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033772-3_8-weikfield-pasta-elbow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033772-4_7-weikfield-pasta-elbow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033772-5_7-weikfield-pasta-elbow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033772-6_6-weikfield-pasta-elbow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033772-7_4-weikfield-pasta-elbow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356863_2-weikfield-elbow-pasta.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the exceptional quality of Weikfield Elbow Pasta, made from premium durum wheat that not only makes it nutritious but also super delicious. Unlike other pastas, our durum wheat semolina pasta is fortified with micronutrients like Iron, Folic Acid, and Vitamin B12, making it the healthiest pasta in the market. Its non-sticky property doesn’t let pasta stick to the pan while cooking. You can make so many yummy dishes with our versatile pasta. It is ideal for making saucy, soupy, and baked dishes. It soaks up flavours, holds sauces, and goes well with various ingredients. This creamy, deliciously cheesy and wholesome healthy pasta treat is truly for everyone! It's time to level up your pasta game and enjoy the incredible taste, texture, and health benefits of Weikfield Elbow Pasta.",
+   "ingredients": "Durum Wheat Semolina (99.97%), Vitamin and Mineral premix (Iron, Folic acid and Vitamin B12)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100 g",
+    "Energy (Kcal)": "355.22",
+    "Carbohydrate (g)": "74.68",
+    "Total sugar (g)": "4.37",
+    "Added sugar (g)": "0",
+    "Protein (g)": "12",
+    "Total Fat (g)": "0.9",
+    "Saturated Fats (g) - ^NMT": "0.25",
+    "Trans Fat (g) - ^NMT": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "10.6",
+    "Iron (mg)": "2.5",
+    "Folic acid (mcg)": "16",
+    "Vitamin B 12 (mcg)": "0.15",
+    "Fibre (g)": "3.91"
+   },
+   "manufacturerName": "Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Shell Pasta",
+  "handle": "shell-pasta",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/71851_4-weikfield-pasta-shell.jpg"
+    },
+    "barcode": "8901808004486"
+   },
+   {
+    "title": "1kg",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356864_2-weikfield-shell-pasta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/71851_4-weikfield-pasta-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/71851-2_4-weikfield-pasta-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/71851-3_4-weikfield-pasta-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/71851-4_4-weikfield-pasta-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/71851-5_4-weikfield-pasta-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/71851-6_1-weikfield-pasta-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/71851-7_1-weikfield-pasta-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/71851-8_1-weikfield-pasta-shell.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield Shell Pasta is made with Durum Wheat Semolina.\nIt is a vegetarian product fortified with iron and micronutrients.\nIt is a good source of protein & fibre & makes for a healthy snack when you crave some pasta.\nIts shape and non-sticky texture make cooking it in any sauce an absolute delight, as it holds the sauce perfectly, allowing you to savour its true flavours.\nWeikfield Pasta is also available in elbow, fusilli, penne & spaghetti varieties.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Energy": "370.3 kcal",
+    "Carbohydrate": "76.9 g",
+    "Of which sugar": "2.7 g",
+    "Protein": "12 g",
+    "Total Fat": "1.6 g",
+    "Saturated Fat": "0.3 g",
+    "Sodium": "12 mg",
+    "Dietary Fibre": "3.7 g"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Macaroni Pasta",
+  "handle": "macaroni-pasta",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356865_2-weikfield-macaroni-pasta.jpg"
+    },
+    "barcode": "8901808008804"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356865_2-weikfield-macaroni-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356865-2_2-weikfield-macaroni-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356865-3_2-weikfield-macaroni-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356865-4_2-weikfield-macaroni-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356865-5_2-weikfield-macaroni-pasta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356865-6_2-weikfield-macaroni-pasta.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the exceptional quality of Weikfield Macaroni Pasta, crafted from premium durum wheat that makes it super delicious. Unlike other pastas, our durum wheat semolina pasta is healthy and does not feel sticky in the mouth. Each strand of our pasta is carefully made with the best durum wheat, so it keeps its shape and tastes great when you cook it just right.\nYou can make so many yummy dishes with our versatile pasta. It soaks up flavours, holds sauces, and goes well with lots of different ingredients. It is time to level up your pasta game and enjoy the incredible taste, texture, and health benefits of Weikfield Macaroni Pasta.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Energy": "355.22 kcal",
+    "Carbohydrate": "74.68 g",
+    "Total Sugar": "4.37 g",
+    "Protein": "12.1 g",
+    "Fat": "0.9 g",
+    "Saturated Fat": "0.25 g",
+    "Sodium": "10.6 g"
+   },
+   "manufacturerName": "Weikfield Foods Pvt. Ltd",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Spaghetti Pasta",
+  "handle": "spaghetti-pasta",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "178",
+    "compare_at_price": "178",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40033773_8-weikfield-pasta-spaghetti.jpg"
+    },
+    "barcode": "8901808006824"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033773_8-weikfield-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033773-2_7-weikfield-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033773-3_7-weikfield-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033773-4_7-weikfield-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033773-5_7-weikfield-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033773-6_6-weikfield-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033773-7_6-weikfield-pasta-spaghetti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40033773-8_5-weikfield-pasta-spaghetti.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Made with durum wheat semolina, Weikfield Durum Wheat Spaghetti Pasta is a pure vegetarian product. Enjoy healthy pasta that’s high in protein & fibre. The pasta is non-sticky & absolutely easy to make several pasta dishes.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "355.0",
+    "Carbohydrate (g)": "73.0",
+    "of which sugar (g)": "3.9",
+    "Protein (g)": "12.0",
+    "Total Fat (g)": "1.7",
+    "Saturated Fat (g)": "0.9",
+    "Salt (mg)": "40.0",
+    "Dietary Fibre (g)": "3.7"
+   },
+   "manufacturerName": "Weikfield Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheezy Creamy Instant Pasta",
+  "handle": "cheezy-creamy-instant-pasta",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "64g",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40067862_9-weikfield-instant-pasta-cheese-creamy.jpg"
+    },
+    "barcode": "8901808005186"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067862_9-weikfield-instant-pasta-cheese-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067862-2_8-weikfield-instant-pasta-cheese-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067862-3_8-weikfield-instant-pasta-cheese-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067862-4_8-weikfield-instant-pasta-cheese-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067862-5_8-weikfield-instant-pasta-cheese-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067862-6_7-weikfield-instant-pasta-cheese-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067862-7_2-weikfield-instant-pasta-cheese-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067862-8_2-weikfield-instant-pasta-cheese-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield’s Instant Cheezy Creamy Pasta is made with semolina Durum wheat, making it a healthy and guilt-free indulgence. It gets ready in 5 minutes and is packed with protein, fibre, iron, and the goodness of vitamin B12 and folic acid. The non-sticky texture is perfect for cooking your pasta al dente, Italian style! This product is 100% vegetarian and contains no maida, cholesterol, or trans-fat. This is the perfect way to enjoy a pasta meal, as the added nutrients maintain your energy levels and keep you active all day long.",
+   "ingredients": "Milk Solids (37%), Corn Starch, Maltodextrin, Iodised Salt, Spices and Condiments (Garlic, Red Chilli, Black Pepper, Coriander, Oregano, Onion), Cheese Powder (1.5%), Anticaking Agent (INS 551), Yeast extract",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "329.6",
+    "Carbohydrate (g)": "61.3",
+    "of which sugar (g)": "20.4",
+    "Protein (g)": "14.8",
+    "Fat (g)": "2.8",
+    "Saturated Fat (g)": "1.1",
+    "Salt (g)": "11.0"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Creamy Mushroom Instant Pasta",
+  "handle": "creamy-mushroom-instant-pasta",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "64g",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213545_8-weikfield-instant-pasta-creamy-mushroom.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213545_8-weikfield-instant-pasta-creamy-mushroom.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213545-2_8-weikfield-instant-pasta-creamy-mushroom.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213545-3_8-weikfield-instant-pasta-creamy-mushroom.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213545-4_8-weikfield-instant-pasta-creamy-mushroom.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213545-5_8-weikfield-instant-pasta-creamy-mushroom.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213545-6_8-weikfield-instant-pasta-creamy-mushroom.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213545-7_6-weikfield-instant-pasta-creamy-mushroom.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213545-8_4-weikfield-instant-pasta-creamy-mushroom.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Prepare deliciously creamy mushroom-based pasta at home in 5 minutes with Weikfield's Creamy Mushroom Instant Pasta. Made with durum wheat semolina, it is a healthy choice. Rich in protein and fibre, this vegetarian pasta is best enjoyed al dente, Italian style! Also, it contains no maida. Each piece of our pasta is carefully made with the best quality semolina Durum wheat, so it retains its shape and tastes great when you cook it. Enjoy a healthy and hearty pasta meal, as the added nutrients maintain your energy levels and keep you active all day long",
+   "ingredients": "Pasta: Durum wheat semolina (99.97%), Vitamin and Mineral premix (Iron, Folic Acid and Vitamin B12), Sauce Maker: Starch, Maltodextrin, Iodised Salt, Spices and Condiments (Onion Powder, Garlic Powder, Black Pepper Powder), Sugar, Dextrose, Cheese Powder 8% [Cheese (5.2%)], Maltodextrin, Milk Solids, Stabiliser (INS 340 (ii)), Nature Identical Flavouring Substance, Mushroom Powder (1.8%), Flavour Enhancer (INS 635), Modified Starch (INS 1442), Stabilizer (INS 415), Green Chive Flakes, Yeast Extract, Natural Colour (INS 150d), Anticaking Agent (INS 551)",
+   "nutritionalInfo": {
+    "Nutrition per": "per 50 g",
+    "Serving Size": "64 g",
+    "Energy (Kcal)": "177.61",
+    "Carbohydrates (g)": "37.34",
+    "Total Sugar (g)": "2.2",
+    "Added Sugar (g)": "0",
+    "Protein (g)": "5.7",
+    "Total fat (g)": "0.45",
+    "Saturated fat (g)- ^NMT": "0.1",
+    "Trans fat (g)- ^NMT": "0",
+    "Cholesterol(mg)": "0",
+    "Sodium (mg)": "5.3",
+    "Added Iron (mg)": "1.25",
+    "Added Folic acid (mcg)": "8",
+    "Added Vitamin B 12 (mcg)": "0.075"
+   },
+   "manufacturerName": "Weikfield Foods Pvt. Ltd",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Masala Twist Instant Pasta",
+  "handle": "masala-twist-instant-pasta",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65g",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213546_6-weikfield-instant-pasta-masala-twist.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213546_6-weikfield-instant-pasta-masala-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213546-2_6-weikfield-instant-pasta-masala-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213546-3_6-weikfield-instant-pasta-masala-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213546-4_6-weikfield-instant-pasta-masala-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213546-5_6-weikfield-instant-pasta-masala-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213546-6_6-weikfield-instant-pasta-masala-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213546-7_4-weikfield-instant-pasta-masala-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213546-8_2-weikfield-instant-pasta-masala-twist.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy scrumptious Indian flavours in your pasta with Weikfield Masala Twist Instant Pasta. It is made of Durum Wheat and is rich in Proteins. It is also fortified with Iron, Vitamin B12 and Folic Acid, and comes with micronutrients. A bowl of this pasta keeps you feeling full and helps in the slow release of energy, keeping you active for a long time. Iron from 1 bowl of Weikfield Pasta is equal to 1 bowl of spinach.",
+   "ingredients": "Pasta: Wheat Semolina (Suji) (99.97%), Vitamin and Mineral Premix (Iron, Folic Acid and Vitamin B12), Sauce Maker: Mixed Spices 20.5% (Onion Powder, Coriander Powder, Garlic Bits, Turmeric Powder, Red Chilli Powder, Cumin Powder, Fennel Powder, Garlic Powder, Fenugreek Powder, Ginger Powder, Black Pepper Powder, Clove Powder, Nutmeg Powder, Green Cardamom Powder), Milk Solids, Hydrolysed Soy Protein, Iodized Salt, Sugar, Maltodextrin, Starch, Soya Sauce Powder, Palmolein Oil, Flavour Enhancer (INS 635), Acidity Regulator (INS 330), Natural Flavouring Substance, Artificial Flavouring Substance (Ghee).",
+   "nutritionalInfo": {
+    "Nutrition per": "50 g",
+    "Energy (kcal)": "180.8 (9%)",
+    "Carbohydrates (g)": "40.4 (15.5%)",
+    "Total Sugar (g)": "1 (2%)",
+    "Added Sugar (g)": "0 (0%)",
+    "Protein (g)": "4.3 (8.6%)",
+    "Total fat (g)": "0.2 (0.3%)",
+    "Saturated fat (g)- ^NMT": "0.15 (0.7%)",
+    "Trans fat (g)- ^NMT": "0 (0%)",
+    "Sodium (mg)": "2.5 (0.1%)",
+    "Added Iron (mg)": "1.25",
+    "Added Folic acid (mcg)": "8",
+    "Added Vitamin B 12 (mcg)": "0.075",
+    "Fibre (g)": "1.5 (6%)",
+    "RDA": "Recommended Dietary Allowance for average adult per day (2000 kcal diet)",
+    "NMT": "Not More Than"
+   },
+   "usageInstructions": "Simply add the pasta to 2 cups of water and bring it to boil\nThen, simmer for 2 minutes before adding the sauce maker\nMix well to remove the lumps\nSimmer for another 5 minutes\nYou can add your favourite vegetables at this stage too and serve hot",
+   "manufacturerName": "(L) Weikfield Foods Pvt. Ltd. Weikfield",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tomato Salsa Instant Pasta",
+  "handle": "tomato-salsa-instant-pasta",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "77g",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40067863_9-weikfield-instant-pasta-tomato-salsa.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067863_9-weikfield-instant-pasta-tomato-salsa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067863-2_7-weikfield-instant-pasta-tomato-salsa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067863-3_7-weikfield-instant-pasta-tomato-salsa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067863-4_7-weikfield-instant-pasta-tomato-salsa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067863-5_7-weikfield-instant-pasta-tomato-salsa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067863-6_2-weikfield-instant-pasta-tomato-salsa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067863-7_2-weikfield-instant-pasta-tomato-salsa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067863-8_2-weikfield-instant-pasta-tomato-salsa.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Instant Pasta range from Weikfield is prepared using semolina Durum Wheat. Our Tomato Salsa flavour is a popular choice, enriched with Vitamin B12, folic acid, and iron to help maintain energy levels throughout the day. Rich in protein and fibre, this delicious and healthy pasta is pure vegetarian and contains no maida. Make it at home instantly and easily. The Tomato Salsa instant pasta contains zero trans-fat and cholesterol, making it an excellent way to enjoy your favourite pasta guilt-free.",
+   "ingredients": "Pasta: Durum Wheat Semolina, Sauce Maker: Tomato Powder (16%), Iodised Salt, Maltodextrin, Corn Starch, Sugar, Cheese Powder [Cheese, Milk Solids, Maltodextrin, Stabiliser (INS 452 (I))], Spices and Condiments (Onion, Black Pepper, Oregano), Stabilizer (INS 451), Anticaking Agent (INS 551), Flavour Enhancer (INS 635), Yeast Extract, CONTAINS PERMITTED NATURAL COLOUR (INS 160c) AND ADDED FLAVOURS (NATURE IDENTICAL FLAVOURING SUBSTANCES - TOMATO)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "344.5",
+    "Carbohydrate (g)": "76.0",
+    "of which sugar (g)": "10.0",
+    "Protein (g)": "9.0",
+    "Fat (g)": "0.5",
+    "Saturated Fat (g)": "0.2",
+    "Salt (g)": "2.8"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheesy Creamy White Pasta Sauce Mix",
+  "handle": "cheesy-creamy-white-pasta-sauce-mix",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005492_5-weikfield-pasta-sauce-cheesy-creamy-mix.jpg"
+    },
+    "barcode": "8901808004523"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005492_5-weikfield-pasta-sauce-cheesy-creamy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005492-2_5-weikfield-pasta-sauce-cheesy-creamy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005492-3_5-weikfield-pasta-sauce-cheesy-creamy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005492-4_5-weikfield-pasta-sauce-cheesy-creamy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005492-5_4-weikfield-pasta-sauce-cheesy-creamy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005492-6_1-weikfield-pasta-sauce-cheesy-creamy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005492-7_1-weikfield-pasta-sauce-cheesy-creamy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005492-8_1-weikfield-pasta-sauce-cheesy-creamy-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield Pasta Sauce - Cheesy Creamy Mix is an instant pasta sauce that allows you to create delicious, creamy, and cheesy pasta dishes at home. The mix makes 2 servings and can be easily prepared by stir-frying some diced vegetables in oil, adding the pasta sauce mix, and cooking until a smooth sauce is formed to toss with boiled pasta.",
+   "ingredients": "Milk Solids (37%), Corn Starch, Maltodextrin, lodised Salt, Spices and Condiments (Garlic, Red Chilli, Black Pepper, Coriander, Oregano, Onion), Cheese Powder (1.5%), Anticaking Agent (INS 551), Yeast extract",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "329.6 kcal",
+    "Carbohydrate (g)": "61.3 g",
+    "of which sugar (g)": "20.4 g",
+    "Protein (g)": "14.8 g",
+    "Fat (g)": "2.8 g",
+    "Saturated Fat (g)": "1.1 g",
+    "Salt (g)": "11.0 g"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Red Tangy Salsa Pasta Sauce",
+  "handle": "red-tangy-salsa-pasta-sauce",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005496_7-weikfield-red-pasta-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005496_7-weikfield-red-pasta-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005496-2_7-weikfield-red-pasta-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005496-3_7-weikfield-red-pasta-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005496-4_7-weikfield-red-pasta-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005496-5_7-weikfield-red-pasta-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005496-6_3-weikfield-red-pasta-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005496-7_2-weikfield-red-pasta-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005496-8_2-weikfield-red-pasta-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Make delicious, tangy red pasta sauce instantly at home with Weikfield Red Pasta Sauce.\nJust saute some diced vegetables in some oil, add the red pasta sauce, and saute it a little more till you get a smooth sauce to add your boiled pasta in.\nUse the sauce straight out of the pouch to make a tangy pasta sauce anytime.\nThe sauce is pure vegetarian.",
+   "ingredients": "Water, Tomato Paste (32%), Sugar, lodised Salt, Cheese Powder, Dehydrated Onion Flakes, Corn Flour, Herbs, Spices, Acidity Regulator (INS 260), Preservatives (INS 211 and INS 202).",
+   "nutritionalInfo": {
+    "Energy": "65.0 kcal",
+    "Carbohydrate": "13.3 g",
+    "Of which sugar": "12.2 g",
+    "Protein": "1.1 g",
+    "Fat": "0.7 g",
+    "Saturated Fat": "0.3 g",
+    "Salt": "3.0 g"
+   },
+   "manufacturerName": "(B) Weikfield Foods Pvt. Ltd",
+   "fssaiLicense": "10015022003534",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Red Chilli Sauce",
+  "handle": "red-chilli-sauce",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053870_5-weikfield-red-chilli-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053870_5-weikfield-red-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053870-2_5-weikfield-red-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053870-3_5-weikfield-red-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053870-4_5-weikfield-red-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053870-5_1-weikfield-red-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053870-6_1-weikfield-red-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053870-7_1-weikfield-red-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053870-8_1-weikfield-red-chilli-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy authentic Chinese red chilli flavour with the Weikfield Red Chilli Sauce made with quality ingredients. This sauce can be used in multiple ways for cooking Mexican, Thai & continental cuisine. It is also perfect as a marinade, a dip or a seasoning.",
+   "ingredients": "Water, Red Chilli (7.7%), Sugar, Potato powder, Garlic, lodised Salt, Acidity Regulator (INS 260), Stabilizer (INS 415), Preservative (INS 211), Spices and Condiments",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "15g",
+    "Energy (kcal)": "57.00 kcal",
+    "Carbohydrates (g)": "12.25 g",
+    "Total Sugar (g)": "5.84 g",
+    "Added Sugar(g)": "5.00 g",
+    "Protein (g)": "1.21 g",
+    "Total fat (g)": "0.35 g",
+    "Sodium (mg)": "1800 mg"
+   },
+   "manufacturerName": "Weikfield Foods Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Green Chilli Sauce",
+  "handle": "green-chilli-sauce",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "56",
+    "compare_at_price": "56",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053869_5-weikfield-green-chilli-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053869_5-weikfield-green-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053869-2_5-weikfield-green-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053869-3_5-weikfield-green-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053869-4_5-weikfield-green-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053869-5_5-weikfield-green-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053869-6_5-weikfield-green-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053869-7_1-weikfield-green-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053869-8_1-weikfield-green-chilli-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the taste of authentic Green Chilli Sauce with Weikfield. The sauce is pure vegetarian and made with quality ingredients. Add a delectable spicy flavour to all your Chinese and Indo-Chinese recipes in an instant. The sauce can be added to the recipe or served on the side.",
+   "ingredients": "Water, Green chilli paste (30%), Sugar, lodized Salt, Potato powder, Cornflour, Acidity Regulator (INS 260), Garlic, Stabilizer (INS 415), Preservative (INS 211), Spices and Condiments",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "15g",
+    "Energy (kcal)": "48.30 kcal",
+    "Carbohydrates (g)": "10.08 g",
+    "Total Sugar (g)": "4.68 g",
+    "Added Sugar(g)": "4.60 g",
+    "Protein (g)": "1.92 g",
+    "Total fat (g)": "0.04 g",
+    "Sodium (mg)": "1800.0 mg"
+   },
+   "manufacturerName": "(B) Weikfield Foods Pvt. Ltd",
+   "fssaiLicense": "10015022003534",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Garlic Chilli Sauce",
+  "handle": "garlic-chilli-sauce",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008361_6-weikfield-garlic-chilli-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008361_6-weikfield-garlic-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008361-2_5-weikfield-garlic-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008361-3_5-weikfield-garlic-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008361-4_5-weikfield-garlic-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008361-5_1-weikfield-garlic-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008361-6_1-weikfield-garlic-chilli-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy your snacks with the perfect chilli garlic sauce from Weikfield. It is vegetarian and is made with quality ingredients that assure a flavourful taste. It can be used to add flavour to sauted recipes or can be had as is, as a dip, straight out of the bottle.",
+   "ingredients": "Water, Potato, Sugar, Garlic (6%), Salt, Onion, Red Chili (3%), Tomato, Acidity regulator (INS 260), Stabilizer (INS 415), Preservative (INS 211), Spices and condiments",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "15g",
+    "Energy (kcal)": "85.05 kcal",
+    "Carbohydrates (g)": "18.92 g",
+    "Total Sugar (g)": "13.20 g",
+    "Added Sugar(g)": "12.80 g",
+    "Protein (g)": "2.05 g",
+    "Total fat (g)": "0.13 g",
+    "Sodium (mg)": "1800.0 mg"
+   },
+   "manufacturerName": "Weikfield Foods Pvt Ltd",
+   "fssaiLicense": "10012062000166",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sweet Chilli Sauce",
+  "handle": "sweet-chilli-sauce",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "112",
+    "compare_at_price": "112",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006486_4-weikfield-sweet-chilli-sauce.jpg"
+    },
+    "barcode": "8901808007524"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006486_4-weikfield-sweet-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006486-2_3-weikfield-sweet-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006486-3_3-weikfield-sweet-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006486-4_3-weikfield-sweet-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006486-5_3-weikfield-sweet-chilli-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30006486-6_3-weikfield-sweet-chilli-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield Sweet Chilli Sauce is a delicious sauce or dip with an authentic taste. It is vegetarian and made with quality ingredients to ensure a flavourful taste. The sauce can be used to add flavour to sautéed recipes or enjoyed as a dip straight from the bottle.",
+   "ingredients": "Sugar (45.9%), Water, Garlic, Salt, Red Chilli (1%), Acidity Regulator (INS 260), Stabilizer (INS 415), Preservative (INS 211)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "221.5 kcal",
+    "Carbohydrate": "54.11 g",
+    "of which Sugar": "45.96 g",
+    "Protein": "1.07 g",
+    "Fat": "0.1g"
+   },
+   "manufacturerName": "Weikfield Estate",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022001051"
+  }
+ },
+ {
+  "title": "Peprico Red Pepper Sauce",
+  "handle": "peprico-red-pepper-sauce",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40067873_5-weikfield-peprico-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067873_5-weikfield-peprico-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067873-2_5-weikfield-peprico-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067873-3_5-weikfield-peprico-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067873-4_5-weikfield-peprico-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067873-5_5-weikfield-peprico-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067873-6_1-weikfield-peprico-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067873-7_1-weikfield-peprico-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067873-8_1-weikfield-peprico-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield Peprico Sauce is a red pepper sauce with an authentic and spicy flavour. Made with high-quality ingredients like tomatoes, cheese, cashew nuts, and a blend of spices, this sauce is perfect for adding a delicious kick to your everyday dishes. The sauce is vegetarian.",
+   "ingredients": "Water, lodised Salt, Red Chilli (6%), Acidity Regulator (INS 260), Red Chilli Extract (0.2%), Stabilizer (INS 415)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "15g",
+    "Energy (kcal)": "10.5 kcal",
+    "Carbohydrates (g)": "2.3 g",
+    "Total Sugar (g)": "0.2 g",
+    "Added Sugar (g)": "0 g",
+    "Protein (g)": "0.1 g",
+    "Total fat (g)": "0.1 g",
+    "Sodium (mg)": "2320 mg"
+   },
+   "manufacturerName": "(B) Weikfield Foods Pvt. Ltd",
+   "fssaiLicense": "10015022003534",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Soya Sauce",
+  "handle": "soya-sauce",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40067874_4-weikfield-soya-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067874_4-weikfield-soya-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067874-2_4-weikfield-soya-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067874-3_4-weikfield-soya-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067874-4_4-weikfield-soya-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067874-5_1-weikfield-soya-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067874-6_1-weikfield-soya-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067874-7_1-weikfield-soya-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40067874-8_1-weikfield-soya-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your culinary experience with Weikfield's vegetarian soya sauce. Crafted with the finest quality ingredients, this authentic and rich-flavoured sauce is a versatile addition to your kitchen. Enjoy its robust taste that perfectly complements a variety of Asian dishes, as well as enhances the flavour of your favourite snacks. Vegetarian-friendly and made with care, this soya sauce is a must-have for any discerning foodie.",
+   "ingredients": "Water, Jaggery, lodized Salt, Soya bean (7%), Sugar, Acidity Regulator (INS 260), Cornflour, Wheat, CONTAINS PERMITTED NATURAL COLOUR (INS 150c)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "15g",
+    "Energy (kcal)": "111.0 kcal",
+    "Carbohydrates (g)": "19.80 g",
+    "Total Sugar (g)": "22.60 g",
+    "Added Sugar(g)": "22.60 g",
+    "Protein (g)": "7.50 g",
+    "Total fat (g)": "0.20 g",
+    "Sodium (mg)": "7200 mg"
+   },
+   "manufacturerName": "(L) Weikfield Foods Pvt",
+   "fssaiLicense": "10012022001051",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Vinegar",
+  "handle": "chilli-vinegar",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053874_7-weikfield-chilli-vinegar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053874_7-weikfield-chilli-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053874-2_6-weikfield-chilli-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053874-3_6-weikfield-chilli-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053874-4_6-weikfield-chilli-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053874-5_6-weikfield-chilli-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053874-6_6-weikfield-chilli-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053874-7_3-weikfield-chilli-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053874-8_2-weikfield-chilli-vinegar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the authentic taste of chilli vinegar with Weikfield's premium quality Chilli Vinegar. Add it to soups, noodles, fried rice, etc., or serve it as is on the side with other dishes. It is a vegetarian product made with high-quality ingredients. The sauce can also be used for marinades & salad dressings.",
+   "ingredients": "Water, Acidity regulator (INS 260) - 4%, Green Chilli (3%), SYNTHETIC VINEGAR - PREPARED FROM ACETIC ACID",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "15g",
+    "Energy (Kcal)": "2.10",
+    "Carbohydrates (g)": "0.20",
+    "Total Sugar (g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Protein (g)": "0.05",
+    "Total fat (g)": "0.05",
+    "Sodium (mg)": "23.00",
+    "RDA": "Guideline daily amount of an Average Adult (2000 Kcal)"
+   },
+   "manufacturerName": "(B) Weikfield Foods Pvt. Ltd",
+   "fssaiLicense": "10015022003534",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mustard Sauce",
+  "handle": "mustard-sauce",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "225g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008380_5-weikfield-mustard.jpg"
+    },
+    "barcode": "8901808000686"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008380_5-weikfield-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008380-2_4-weikfield-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008380-3_4-weikfield-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008380-4_4-weikfield-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008380-5_4-weikfield-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008380-6_1-weikfield-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008380-7_1-weikfield-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008380-8_1-weikfield-mustard.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Weikfield Mustard Sauce is your path to improved health and fitness. Made from wholegrain mustard seeds, it offers a low-calorie, low-sodium, fat-free & cholesterol-free option for sauces. It's not just a condiment; it's a choice that keeps you feeling your best. Weikfield Mustard Sauce is a testament to the rich culinary heritage of our country. We take pride in offering you an authentic, Made-in-India product. When you choose Weikfield, you choose quality that's close to home. Beyond its delightful taste, Weikfield Mustard Sauce is your fitness companion. Enjoy the goodness of mustard while maintaining your fitness journey. At Weikfield, we believe in purity. That's why our Wholegrain Mustard has no added flavours or colours. It's made with real black mustard seeds, giving you the authentic taste you crave.",
+   "ingredients": "Water, Mustard Powder (20.1%), Vinegar, Iodised Salt, Cornflour, Sugar, Acidity Regulator - (INS 330), Turmeric Powder, Preservative - (INS 211)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "45g",
+    "Energy (kcal)": "149.6",
+    "Carbohydrate (g)": "15.2",
+    "Total sugar (g)": "3.8",
+    "Added sugar (g)": "3.0",
+    "Protein (g)": "4.2",
+    "Total fat (g)": "8.0",
+    "Saturated fats (g)- ^NMT": "1.6",
+    "Trans fat (g)- ^NMT": "0.1",
+    "Sodium (mg)": "1369",
+    "RDA": "#Guideline daily amount of an Average Adult (2000kcal)",
+    "NMT": "^NMT-Not More Than"
+   },
+   "manufacturerName": "(B) Weikfield Foods Pvt. Ltd",
+   "fssaiLicense": "10015022003534",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tomato Ketchup",
+  "handle": "tomato-ketchup",
+  "vendor": "Weikfield",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053871_1-weikfield-tomato-ketchup.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053871_1-weikfield-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053871-2_1-weikfield-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053871-3_1-weikfield-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053871-4_1-weikfield-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053871-5_1-weikfield-tomato-ketchup.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Add a tangy, delicious sauce to your snacks & meals with the Weikfield Tomato Ketchup. Enjoy rich tomato flavour made from fresh and real tomatoes. The ketchup has zero artificial colour and zero MSG (monosodium glutamate). Its thick and yummy taste goes perfectly with burgers, samosas, evening snacks like fries, namkeen etc.",
+   "ingredients": "Water, Sugar, Tomato Paste (23.5%), Salt, Onion, Acidity Regulator (INS 260), Thickening Agent (INS 1422 & INS 415), Ginger, Garlic, Preservative (INS 211), Spices & Condiments",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "154 kcal",
+    "Total Fat": "< 0.5 g",
+    "Carbohydrates": "36.43 g",
+    "Sugar": "32.7 g",
+    "Protein": "1.32 g",
+    "Fibre": "1.85 g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Weikfield Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]
