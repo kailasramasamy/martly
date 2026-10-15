@@ -1,0 +1,86 @@
+{
+  "brand": "Brut",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "brut-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/brut/logo-f2560877.png",
+  "themeColor": "#0B5D3B",
+  "themeColorSecondary": "#C9A227",
+  "namePrefix": "Brut ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Attraction\\ Totale\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Musk\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Oceans\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Original\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Sport\\ Style\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Attraction\\ Totale\\ All\\-in\\-One\\ Hair\\ \\&\\ Body\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Original\\ All\\-in\\-One\\ Hair\\ \\&\\ Body\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Sport\\ Style\\ All\\-in\\-One\\ Hair\\ \\&\\ Body\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Classic\\ Eau\\ de\\ Toilette$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    }
+  ]
+}
