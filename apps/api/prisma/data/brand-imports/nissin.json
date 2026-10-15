@@ -1,0 +1,230 @@
+{
+  "brand": "Nissin",
+  "manufacturer": "Indo Nissin Foods Pvt. Ltd.",
+  "feed": "nissin-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nissin/logo-476819e3.png",
+  "themeColor": "#E60012",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Nissin ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cup\\ Noodles\\ \\-\\ Mazedaar\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Cup\\ Noodles\\ \\-\\ Spiced\\ Chicken$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Cup\\ Noodles\\ \\-\\ Veggi\\ Manchow$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Cup\\ Noodles\\ \\-\\ Chilli\\ Chilli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Cup\\ Noodles\\ \\-\\ Italiano$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Cup\\ Noodles\\ \\-\\ Paneer\\ Butter\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Cup\\ Noodles\\ \\-\\ Tangy\\ Tomato$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Cup\\ Noodles\\ \\-\\ Rich\\ Seafood\\ Curry$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Cup\\ Noodles\\ \\-\\ Rogan\\ Josh$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Cup\\ Noodles\\ World\\ Series\\ \\-\\ Korean\\ Army\\ Stew$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Cup\\ Noodles\\ World\\ Series\\ \\-\\ Singapore\\ Laksa$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Cup\\ Noodles\\ Bits\\ \\-\\ Mazedaar\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Geki\\ Hot\\ \\&\\ Spicy\\ Korean\\ Chicken\\ Ramen$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Geki\\ Hot\\ \\&\\ Spicy\\ Korean\\ Veg\\ Ramen$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Geki\\ Hot\\ \\&\\ Spicy\\ Korean\\ Kimchi\\ Ramen$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Geki\\ Hot\\ \\&\\ Spicy\\ Korean\\ Cheese\\ Ramen$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Geki\\ Carbonara\\ Creamy\\ Veg\\ Korean\\ Ramen$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Geki\\ Spicy\\ Maxx\\ Korean\\ Ramen$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Geki\\ Kimcheese\\ Korean\\ Ramen$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Geki\\ Truffcarbo\\ Korean\\ Ramen$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Geki\\ Hot\\ \\&\\ Spicy\\ Korean\\ Chicken\\ Ramen\\ Cup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Geki\\ Hot\\ \\&\\ Spicy\\ Korean\\ Veg\\ Ramen\\ Cup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Geki\\ Hot\\ \\&\\ Spicy\\ Korean\\ Kimchi\\ Ramen\\ Cup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Pokemon\\ Ramen\\ \\-\\ Fun\\ Cheese$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Pokemon\\ Ramen\\ \\-\\ Fun\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^UFO\\ Korean\\ Hot\\ Chicken\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^UFO\\ Truffle\\ Carbonara\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    }
+  ]
+}
