@@ -1,0 +1,434 @@
+[
+ {
+  "title": "Sports Drink - Blue Bolt",
+  "handle": "sports-drink-blue-bolt",
+  "vendor": "Gatorade (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265745_10-gatorade-sports-drink-blue-bolt-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265745_10-gatorade-sports-drink-blue-bolt-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265745-2_3-gatorade-sports-drink-blue-bolt-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265745-3_3-gatorade-sports-drink-blue-bolt-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265745-4_3-gatorade-sports-drink-blue-bolt-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265745-5_2-gatorade-sports-drink-blue-bolt-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Gatorade Blue Bolt Zero Sugar is the ultimate sports drink for those seeking optimal hydration without the extra calories. Scientifically formulated with fluids, electrolytes, carbohydrates, and a refreshing flavour, this beverage is designed to rehydrate, replenish, and refuel your body during exercise. Packed with an energising burst, it revitalises and recharges, making it the perfect choice for anyone on the go. The formula provides the same great taste and performance benefits you expect from Gatorade, but with none of the sugar or excess calories. Whether you're an athlete, an active individual, or simply looking to stay hydrated throughout the day, Gatorade Blue Bolt Zero Sugar is the ideal solution to rehydrate, boost energy levels, and enhance workout recovery.",
+   "ingredients": "Water, Sugar, Dextrose, Acidity Regulator (330), Mineral Salts, Flavour Emulsion (Flavouring Substances, Colour (133)), Stabilizer (444)",
+   "nutritionalInfo": {
+    "Serving Size": "100ml",
+    "Energy": "24kcal",
+    "Total Carbohydrate": "6g",
+    "Sugars": "6g",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Protein": "0g",
+    "Sodium": "48mg",
+    "Potassium": "13mg"
+   },
+   "storageInstructions": "*Keep refrigerated after opening and consume within 3 days",
+   "manufacturerName": "PepsiCo India Holdings Pvt. Ltd. Plot no. D-7",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sports Drink - Lemon",
+  "handle": "sports-drink-lemon",
+  "vendor": "Gatorade (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265739_9-gatorade-sports-drink-lemon-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265739_9-gatorade-sports-drink-lemon-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265739-2_2-gatorade-sports-drink-lemon-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265739-3_2-gatorade-sports-drink-lemon-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265739-4_2-gatorade-sports-drink-lemon-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265739-5_2-gatorade-sports-drink-lemon-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Gatorade is a scientifically formulated sports drink that helps you rehydrate, replenish, and refuel during exercise. Packed with fluids, electrolytes, carbohydrates, and delicious flavour, Gatorade is the perfect companion for your workouts. Stay hydrated and power through with the refreshing Lemon flavour, which helps restore the fluids, electrolytes, and energy you lose in sweat. Bid farewell to muscle cramps and fatigue by keeping your body optimally hydrated and fuelled. Gatorade's balanced formula of essential nutrients ensures you can perform at your best, whether you're an elite athlete or just looking to stay active. Treat your taste buds to a refreshing, thirst-quenching experience while nourishing your body with the essential elements it needs.",
+   "ingredients": "Water, Sugar, Dextrose, Acidity Regulator (330), Mineral Salts, Flavour Emulsion (Flavouring Substances, Stabilizer (445), Colour (102))",
+   "nutritionalInfo": {
+    "Serving Size": "100ml",
+    "Energy": "24kcal",
+    "Total Carbohydrate": "6g",
+    "Sugars": "6g",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Protein": "0g",
+    "Sodium": "48mg",
+    "Potassium": "13mg"
+   },
+   "storageInstructions": "*Keep refrigerated and consume within 3 days once opened",
+   "manufacturerName": "PepsiCo India Holdings Pvt. Ltd. Plot no. D-7",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sports Drink - Orange",
+  "handle": "sports-drink-orange",
+  "vendor": "Gatorade (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265743_10-gatorade-sports-drink-orange-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265743_10-gatorade-sports-drink-orange-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265743-2_3-gatorade-sports-drink-orange-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265743-3_3-gatorade-sports-drink-orange-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265743-4_3-gatorade-sports-drink-orange-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265743-5_2-gatorade-sports-drink-orange-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Gatorade Sports Drink in Orange Flavour delivers essential electrolytes and carbohydrates to keep you hydrated and energised during intense activities. Its refreshing orange taste enhances your workout experience, while the balanced formula replenishes lost fluids and minerals. Perfect for athletes seeking optimal performance and hydration, this drink supports endurance and recovery with every sip.",
+   "usageInstructions": "This is a must-have if you are part of a rigorous and extensive training session. Gatorade can be used before and after a workout to ensure that you do not lose steam when you sweat. You can take sips of this in-between an intense workout. |",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "500ml",
+    "Energy": "24kcal",
+    "Total Carbohydrate": "6g",
+    "of which Sugars": "6g",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Protein": "0g",
+    "Sodium": "48mg",
+    "Potassium": "13mg"
+   },
+   "manufacturerName": "PepsiCo India Holdings Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zero Sugar Sports Drink - Blue Bolt",
+  "handle": "zero-sugar-sports-drink-blue-bolt",
+  "vendor": "Gatorade (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40337896_1-gatorade-blue-bolt-sports-drink-zero-sugar.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314318_2-gatorade-sports-drink-blue-bolt-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337896_1-gatorade-blue-bolt-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337896-2_1-gatorade-blue-bolt-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337896-3_1-gatorade-blue-bolt-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337896-4_1-gatorade-blue-bolt-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337896-5_1-gatorade-blue-bolt-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314318_2-gatorade-sports-drink-blue-bolt-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Gatorade has 55+ years of expertise in the science of hydration, making it the perfect partner for leading athletes & teams. Gatorade is a scientifically formulated sports drink with fluids, electrolytes (mineral salts), carbohydrates, and flavour that helps to rehydrate, replenish, and refuel. It helps to restore fluids, electrolytes, and energy lost during exercise.",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zero Sugar Sports Drink - Lemon",
+  "handle": "zero-sugar-sports-drink-lemon",
+  "vendor": "Gatorade (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40337898_1-gatorade-lemon-sports-drink-zero-sugar.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314320_2-gatorade-sports-drink-lemon-bolt-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337898_1-gatorade-lemon-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337898-2_1-gatorade-lemon-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337898-3_1-gatorade-lemon-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337898-4_1-gatorade-lemon-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337898-5_1-gatorade-lemon-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314320_2-gatorade-sports-drink-lemon-bolt-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Gatorade has 55+ years of expertise in the science of hydration, making it the perfect partner for leading athletes & teams. Gatorade is a scientifically formulated sports drink with fluids, electrolytes (mineral salts), carbohydrates and flavour, that helps you to rehydrate, replenish and refuel. It helps to restore fluids, electrolytes and energy that you lose in sweat during exercise.",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zero Sugar Sports Drink - Orange",
+  "handle": "zero-sugar-sports-drink-orange",
+  "vendor": "Gatorade (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40337897_1-gatorade-orange-sports-drink-zero-sugar.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314319_2-gatorade-sports-drink-orange-bolt-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337897_1-gatorade-orange-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337897-2_1-gatorade-orange-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337897-3_1-gatorade-orange-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337897-4_1-gatorade-orange-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337897-5_1-gatorade-orange-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40337897-6_1-gatorade-orange-sports-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314319_2-gatorade-sports-drink-orange-bolt-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Gatorade has 55+ years of expertise in the science of hydration, making it the perfect partner for leading athletes & teams. Gatorade is a scientifically formulated sports drink with fluids, electrolytes (mineral salts), carbohydrates, and flavour, that helps to rehydrate, replenish, and refuel. It helps to restore fluids, electrolytes, and energy lost in sweat during exercise.",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sports Powder Mix - Lemon (Sipper Pack)",
+  "handle": "sports-powder-mix-lemon-sipper-pack",
+  "vendor": "Gatorade (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40187968_2-gatorade-sports-powder-mix-lemon-flavour-sipper-pack.jpg"
+    },
+    "barcode": "8902080517145"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187968_2-gatorade-sports-powder-mix-lemon-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187968-2_2-gatorade-sports-powder-mix-lemon-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187968-3_2-gatorade-sports-powder-mix-lemon-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187968-4_2-gatorade-sports-powder-mix-lemon-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187968-5_2-gatorade-sports-powder-mix-lemon-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187968-6_2-gatorade-sports-powder-mix-lemon-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187968-7_2-gatorade-sports-powder-mix-lemon-flavour-sipper-pack.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Gatorade brings to you an affordable Gatorade Powder multi-pack- Orange Flavor (5 sachets). These single-serve powder sachets are easy to carry and convenient to make. Each sachet weighs 25 gm and makes 350 ml of liquid drink.\nGatorade is a scientifically formulated sports drink with fluids, electrolytes (mineral salts), carbohydrates and flavour, that helps you to rehydrate, replenish and refuel.",
+   "ingredients": "Sugar, Dextrose, Acidity Regulator (330), Mineral Salts, Colour (110). Contains Permitted Synthetic Food Colour And Added Flavour (Natural Flavouring Substance).",
+   "usageInstructions": "1. Empty sachet into 350ml container\n2. Fill with cold water\n3. Shake/stir until mix dissolves",
+   "manufacturerName": "Swiss Garnier Life Sciences Plot No.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014064000435"
+  }
+ },
+ {
+  "title": "Sports Powder Mix - Orange (Sipper Pack)",
+  "handle": "sports-powder-mix-orange-sipper-pack",
+  "vendor": "Gatorade (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40187969_2-gatorade-sports-powder-mix-orange-flavour-sipper-pack.jpg"
+    },
+    "barcode": "8902080527144"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187969_2-gatorade-sports-powder-mix-orange-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187969-2_2-gatorade-sports-powder-mix-orange-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187969-3_2-gatorade-sports-powder-mix-orange-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187969-4_2-gatorade-sports-powder-mix-orange-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187969-5_2-gatorade-sports-powder-mix-orange-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187969-6_2-gatorade-sports-powder-mix-orange-flavour-sipper-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187969-7_2-gatorade-sports-powder-mix-orange-flavour-sipper-pack.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Gatorade brings to you an affordable Gatorade Powder multi-pack- Lemon Flavor (5 sachets). These single-serve powder sachets are easy to carry and convenient to make. Each sachet weighs 25 gm and makes 350ml of liquid drink. Gatorade is a scientifically formulated sports drink with fluids, electrolytes (mineral salts), carbohydrates and flavour, that helps you to rehydrate, replenish and refuel.",
+   "ingredients": "Sugar, Dextrose, Acidity Regulator (330), Mineral Salts, Clouding Agent (444), Colour (110). Contains Permitted Synthetic Food Colour And Added Flavour (Natural Flavouring Substance).",
+   "usageInstructions": "Empty sachet into 350ml container\nFill with cold water\nShake/stir until mix dissolves",
+   "manufacturerName": "Swiss Garnier Life Sciences Plot No.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014064000435"
+  }
+ }
+]

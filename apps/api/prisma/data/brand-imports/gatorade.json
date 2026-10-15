@@ -1,0 +1,78 @@
+{
+  "brand": "Gatorade (PepsiCo)",
+  "manufacturer": "PepsiCo India Holdings Pvt. Ltd.",
+  "feed": "gatorade-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/gatorade/logo-6a75ba93.png",
+  "themeColor": "#F96302",
+  "themeColorSecondary": "#000000",
+  "namePrefix": "Gatorade ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Sports\\ Drink\\ \\-\\ Blue\\ Bolt$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Sports\\ Drink\\ \\-\\ Lemon$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Sports\\ Drink\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sugar\\ Sports\\ Drink\\ \\-\\ Blue\\ Bolt$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sugar\\ Sports\\ Drink\\ \\-\\ Lemon$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sugar\\ Sports\\ Drink\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Sports\\ Powder\\ Mix\\ \\-\\ Lemon\\ \\(Sipper\\ Pack\\)$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Sports\\ Powder\\ Mix\\ \\-\\ Orange\\ \\(Sipper\\ Pack\\)$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    }
+  ]
+}
