@@ -1,0 +1,918 @@
+{
+  "brand": "Signoraware",
+  "manufacturer": "Signoraware Pvt. Ltd.",
+  "feed": "signoraware-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/signoraware/logo-a4c449d6.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#2E8B3A",
+  "namePrefix": "Signoraware ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Aqua\\ Plastic\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Fliptop\\ Aqua\\ Plastic\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Fliptop\\ Aqua\\ Drop\\ BPA\\ Free\\ Plastic\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Fliptop\\ Aqua\\ Fresh\\ BPA\\ Free\\ Plastic\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Marine\\ Borosilicate\\ Glass\\ Bottle\\ with\\ Silicon\\ Sleeve$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Prime\\ Glass\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Time\\ Borosilicate\\ Glass\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Borosilicate\\ Glass\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Borosilicate\\ Glass\\ Bottle\\ with\\ Screw\\ Cap$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Claro\\ Pro\\ Borosilicate\\ Glass\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Drikofine\\ Borosilicate\\ Glass\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Element\\ Borosilicate\\ Glass\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Sparko\\ Borosilicate\\ Glass\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Starlite\\ Borosilicate\\ Glass\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Aace\\ Hammered\\ Stainless\\ Steel\\ Fridge\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Achieve\\ Stainless\\ Steel\\ Fridge\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Blaze\\ Stainless\\ Steel\\ Fridge\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Chill\\ Stainless\\ Steel\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Cola\\ Stainless\\ Steel\\ Fridge\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Concept\\ Stainless\\ Steel\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Deva\\ Stainless\\ Steel\\ Fridge\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Egnite\\ Stainless\\ Steel\\ Fridge\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Hunt\\ Stainless\\ Steel\\ Fridge\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Invent\\ Stainless\\ Steel\\ Fridge\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Mobilio\\ Stainless\\ Steel\\ Fridge\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Rexo\\ Stainless\\ Steel\\ Fridge\\ Bottle\\ \\-\\ Mirror\\ Finish$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Hammered\\ Copper\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Stylish\\ Steel\\ Sipper$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Stainless\\ Steel\\ Tumbler\\ Sipper$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Lock\\ N\\ Store\\ Steel\\ Tumbler$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Stark\\ Plastic\\ Shaker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Gymwell\\ Plastic\\ Shaker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Mixwell\\ Flip\\-Top\\ Plastic\\ Shaker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Travis\\ Flip\\-Top\\ Plastic\\ Shaker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Shake\\ N\\ Shake\\ Plastic\\ Shaker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Shake\\ N\\ Shake\\ Stainless\\ Steel\\ Shaker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Rock\\ Steel\\ Shaker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Chipmunk\\ Stainless\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Chipmunk\\ Insulated\\ Kids\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Nugget\\ Stainless\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Nugget\\ Insulated\\ Kids\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Compact\\ Small\\ Lunch\\ Box\\ with\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Easy\\ Lunch\\ Container\\ Set$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Executive\\ Medium\\ Plastic\\ Lunch\\ Box\\ with\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Hot\\ N\\ Cute\\ Lunch\\ Box\\ with\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Mid\\-Day\\ Lunch\\ Box\\ with\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Sleek\\ Lunch\\ Box\\ with\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Monarch\\ Executive\\ Microsafe\\ Lunch\\ Box\\ with\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Monarch\\ Midday\\ Microsafe\\ Lunch\\ Box\\ with\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Monarch\\ Premium\\ Lunch\\ Box\\ with\\ Bottle\\ \\&\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Executive\\ Stainless\\ Steel\\ Lunch\\ Box\\ with\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Executive\\ Maxx\\ Fresh\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Director\\ Squarex\\ Steel\\ Lunch\\ Box\\ Set\\ with\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Midday\\ Squarex\\ Steel\\ Lunch\\ Box\\ Set\\ with\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Double\\ Decker\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Double\\ Decker\\ Twin\\ Wall\\ Steel\\ Lunch\\ Box\\ with\\ Plates\\ \\&\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Executive\\ Twin\\ Wall\\ Steel\\ Lunch\\ Box\\ Set$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Sleek\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Classic\\ Stainless\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Steel\\ Lunch\\ Box\\ Set$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Officier\\ Steel\\ Lunch\\ Box\\ Set\\ with\\ Bag$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Tote\\ Bag\\ Steel\\ Lunch\\ Box\\ Set\\ with\\ Tumbler$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Director\\ Borosilicate\\ Glass\\ Lunch\\ Box\\ Set$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Executive\\ Round\\ Borosilicate\\ Glass\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Double\\ Decker\\ Borosilicate\\ Glass\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Slim\\ Two\\ Compartment\\ Glass\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Slim\\ Big\\ Glass\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^SquareX\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Executive\\ Twin\\ Wall\\ Steel\\ Lunch\\ Box\\ with\\ Cover\\ Plate$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Modular\\ Transparent\\ Plastic\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Modular\\ Oval\\ Plastic\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Modular\\ Cereal\\ Dispenser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Modular\\ Multi\\-Purpose\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Modular\\ Round\\ Plastic\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Modular\\ Square\\ Plastic\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Modular\\ Round\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Modular\\ Rectangular\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Slim\\ Box\\ Plastic\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Freezer\\ Fresh\\ Big\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Fridger\\ Fresh\\ Jumbo\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Space\\ Saver\\ Plastic\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Store\\ Well\\ Round\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Bowl\\ Plastic\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Tiny\\ Wonder\\ Container\\ \\(Set\\ of\\ 3\\)$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Family\\ Fresh\\ Tab\\ Storage\\ Container\\ Set$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Rice\\ Keeper\\ \\&\\ Kitchen\\ Organiser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Rice\\ Dispenser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Plastic\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Lock\\ N\\ Store\\ Square\\ Glass\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Lock\\ N\\ Store\\ Rectangular\\ Glass\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Lock\\ N\\ Store\\ Glass\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Lock\\ N\\ Store\\ Rectangular\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Lock\\ N\\ Store\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Lock\\ N\\ Store\\ Microsafe\\ Square\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Monarch\\ Premium\\ Leak\\ Proof\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Small\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Ample\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Steel\\ Container\\ \\-\\ Blue\\ Lid$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Elegant\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Oval\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Nano\\ Stainless\\ Steel\\ Container\\ \\(Set\\ of\\ 2\\)$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Tiny\\ Wonder\\ Steel\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Mini\\ Mate\\ Container\\ \\(Set\\ of\\ 2\\)$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Khakhra\\ \\&\\ Papad\\ Steel\\ Container$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^7\\ Wonder\\ Steel\\ Spice\\ Box\\ Set$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Stainless\\ Steel\\ Spice\\ Shaker\\ \\(Set\\ of\\ 2\\)$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Nano\\ Spice\\ Shaker\\ \\(Set\\ of\\ 2\\)$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Trison\\ Round\\ Borosilicate\\ Glass\\ Jar$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Trison\\ Square\\ Borosilicate\\ Glass\\ Jar$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Trinkle\\ Borosilicate\\ Pickle\\ Jar\\ with\\ Spoon$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Even\\ Flow\\ Borosilicate\\ Glass\\ Oil\\ Dispenser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    }
+  ]
+}
