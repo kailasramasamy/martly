@@ -1,0 +1,62 @@
+{
+  "brand": "Fevikwik",
+  "manufacturer": "Pidilite Industries Ltd.",
+  "feed": "fevikwik-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/fevikwik/logo-3f07eb97.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Fevikwik ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Instant\\ Adhesive$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^One\\ Drop\\ Instant\\ Adhesive\\ Gel$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^EzeeGel\\ Non\\-Drip\\ Instant\\ Adhesive$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Advanced\\ Instant\\ Glue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Precision\\ Instant\\ Glue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Precision\\ Pro\\ Instant\\ Glue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    }
+  ]
+}
