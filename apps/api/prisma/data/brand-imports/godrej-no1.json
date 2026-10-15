@@ -1,0 +1,62 @@
+{
+  "brand": "Godrej No.1",
+  "manufacturer": "Godrej Consumer Products Ltd.",
+  "feed": "godrej-no1-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/godrej-no1/logo-6c4a4fd7.png",
+  "themeColor": "#2E9E48",
+  "themeColorSecondary": "#F5C400",
+  "namePrefix": "Godrej No.1 ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Lime\\ \\&\\ Aloe\\ Vera\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Sandal\\ \\&\\ Turmeric\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ \\&\\ Milk\\ Cream\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Rosewater\\ \\&\\ Almond\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Kesar\\ \\&\\ Milk\\ Cream\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Coconut\\ \\&\\ Neem\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    }
+  ]
+}
