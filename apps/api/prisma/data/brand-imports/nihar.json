@@ -1,0 +1,62 @@
+{
+  "brand": "Nihar (Marico)",
+  "manufacturer": "Marico Ltd.",
+  "feed": "nihar-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nihar/logo-2c05d725.png",
+  "themeColor": "#1E7B34",
+  "themeColorSecondary": "#F2C230",
+  "namePrefix": "Nihar ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Naturals\\ Shanti\\ Amla\\ \\&\\ Badam\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Coconut\\ Hair\\ Oil\\ with\\ Methi\\ \\-\\ Jasmine$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Coconut\\ Hair\\ Oil\\ with\\ Methi\\ \\-\\ Rose$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Amla\\ Gold\\ Hair\\ Oil\\ with\\ Amla\\ \\&\\ 7\\ Seeds$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Almond\\ Non\\ Sticky\\ Hair\\ Oil\\ with\\ Vitamin\\ E$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Uttam\\ 100%\\ Pure\\ Coconut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    }
+  ]
+}
