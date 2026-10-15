@@ -1,0 +1,46 @@
+{
+  "brand": "Genteel (Godrej)",
+  "manufacturer": "Godrej Consumer Products Ltd.",
+  "feed": "genteel-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/genteel/logo-0214c4db.png",
+  "themeColor": "#0A2D6E",
+  "themeColorSecondary": "#29B6E8",
+  "namePrefix": "Genteel ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Matic\\ Liquid\\ Detergent\\ \\-\\ Top\\ Load$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Matic\\ Liquid\\ Detergent\\ \\-\\ Front\\ Load$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Liquid\\ Detergent\\ \\-\\ Top\\ \\&\\ Front\\ Load$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Washomatic\\ Liquid\\ Detergent\\ \\-\\ Top\\ \\&\\ Front\\ Load$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    }
+  ]
+}
