@@ -1,0 +1,86 @@
+{
+  "brand": "Digene",
+  "manufacturer": "Abbott India",
+  "feed": "digene-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/digene/logo-7ba96011.png",
+  "themeColor": "#1B3F94",
+  "themeColorSecondary": "#00A3E0",
+  "namePrefix": "Digene ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Antacid\\ Antigas\\ Gel\\ \\-\\ Mint$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Antacid\\ Antigas\\ Gel\\ \\-\\ Mixed\\ Fruit$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Antacid\\ Antigas\\ Gel\\ \\-\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Antacid\\ Antigas\\ Gel\\ Orange\\ On\\ The\\ Go\\ Stick\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Antacid\\ Antigas\\ Tablets\\ \\-\\ Mint$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Antacid\\ Antigas\\ Tablets\\ \\-\\ Mixed\\ Fruit$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Antacid\\ Antigas\\ Tablets\\ \\-\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Fizz\\ \\-\\ Lemon$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Fizz\\ \\-\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    }
+  ]
+}
