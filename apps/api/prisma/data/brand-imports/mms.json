@@ -1,0 +1,30 @@
+{
+  "brand": "M&M's (Mars)",
+  "manufacturer": "Mars Wrigley India Pvt. Ltd.",
+  "feed": "mms-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mms/logo-0a5def1f.png",
+  "themeColor": "#4A2A1A",
+  "themeColorSecondary": "#F2B705",
+  "namePrefix": "M&M's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Milk\\ Chocolate\\ Candies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Chocolate\\ Candies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    }
+  ]
+}
