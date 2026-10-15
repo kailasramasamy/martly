@@ -1,0 +1,179 @@
+[
+ {
+  "title": "Soft Drink",
+  "handle": "soft-drink",
+  "vendor": "Mountain Dew (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216380_1-mountain-dew-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "600ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265874_5-mountain-dew-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "750ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195155_3-mountain-dew-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "1.25L",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185457_6-mountain-dew-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "1.5L",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40188267_3-mountain-dew-mountain-dew.jpg"
+    }
+   },
+   {
+    "title": "2.25L",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40015868_11-mountain-dew-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216380_1-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216380-2_1-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216380-3_1-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216380-4_1-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216380-5_1-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216380-6_1-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216380-7_1-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265874_5-mountain-dew-soft-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your refreshment experience with the bold and exhilarating Mountain Dew cold drink. Bursting with a captivating citrus flavour, this 750ml bottle is the perfect companion for your daring adventures. Celebrate the spirit of youth and rediscover your adventurous side with the crisp, fizzy taste that invigorates the senses. Deeply rooted in a brand DNA of daring challenges and a 'can-do' attitude, Mountain Dew embodies the rebellious and wild spirit of the young at heart. Open a bottle and let the refreshing, high-energy citrus notes transport you to a world of excitement and possibility. Whether you're seeking an extra boost for your next outdoor escapade or simply want to share the experience with friends, this Mountain Dew is the ideal choice to elevate your refreshment and unleash your inner thrill-seeker.",
+   "ingredients": "Carbonated Water, Sugar (11.7%), Acidity Regulators (330, 331), Preservative (211), Caffeine, Stabiliser (445)",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100ml",
+    "Energy": "49 kcal",
+    "Total Carbohydrate": "12.3 g",
+    "Sugars": "12.3 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "16 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000047"
+  }
+ },
+ {
+  "title": "Soft Drink Can",
+  "handle": "soft-drink-can",
+  "vendor": "Mountain Dew (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/292398_10-mountain-dew-soft-drink.jpg"
+    },
+    "barcode": "8902080385027"
+   },
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327062_3-mountain-dew-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292398_10-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292398-2_7-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292398-3_7-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292398-4_7-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292398-5_7-mountain-dew-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327062_3-mountain-dew-soft-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your refreshment experience with the bold, citrus-infused flavour of the Mountain Dew 250ml cold drink. Packed with an exhilarating fizz and a crisp, invigorating taste, this can is the perfect companion for your daring adventures. Enjoy the iconic brand appeal and the caffeinated energy boost it provides, all in a convenient, easy-to-share packaging. Should you encounter any unlikely issues, such as a damaged or defective item, you can easily request a refund or replacement within 4 days of purchase. Indulge in the edgy, refreshing delight of this Mountain Dew beverage and elevate your everyday moments.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulators (330, 331), Preservative (211), Caffeine, Stabilizer (445), Permitted Synthetic Food Colour (102), Added Flavour (Natural Flavouring Substances)",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100ml",
+    "Energy": "49kcal",
+    "Total Carbohydrate": "12.3g",
+    "Sugars": "12.3g",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Protein": "0g",
+    "Sodium": "16mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Avoid direct sunlight and moisture",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ }
+]

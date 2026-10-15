@@ -1,0 +1,30 @@
+{
+  "brand": "Mountain Dew (PepsiCo)",
+  "manufacturer": "PepsiCo India Holdings Pvt. Ltd.",
+  "feed": "mountain-dew-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mountain-dew/logo-36fc6c43.png",
+  "themeColor": "#1E5C2C",
+  "themeColorSecondary": "#D6203C",
+  "namePrefix": "Mountain Dew ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Soft\\ Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Lemon & Lime"
+      ]
+    },
+    {
+      "match": "^Soft\\ Drink\\ Can$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Lemon & Lime"
+      ]
+    }
+  ]
+}
