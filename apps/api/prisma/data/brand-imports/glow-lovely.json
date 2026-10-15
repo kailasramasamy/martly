@@ -2,30 +2,20 @@
   "brand": "Glow & Lovely (HUL)",
   "manufacturer": "Hindustan Unilever Limited",
   "feed": "glow-lovely-feed.json",
-  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/glow-lovely/logo-2a390b5d.png",
-  "themeColor": "#D6247F",
-  "themeColorSecondary": "#F4B6C2",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/glow-lovely-hul/logo-79cba048.png",
+  "themeColor": "#E4007C",
+  "themeColorSecondary": "#F59E0B",
   "namePrefix": "Glow & Lovely ",
   "foodType": "VEG",
   "exclude": [],
-  "aliases": {
-    "Glow & Lovely Advanced Multivitamin Cream": "Re-New Bright Multivitamin Serum In Cream"
-  },
+  "aliases": {},
   "rules": [
     {
-      "match": "^Re\\-New\\ Bright\\ Multivitamin\\ Serum\\ In\\ Cream$",
+      "match": "^Ayurvedic\\ Care\\ Face\\ Wash$",
       "path": [
         "Personal Care",
         "Skin Care",
-        "Face Cream (Fairness & Anti-Ageing)"
-      ]
-    },
-    {
-      "match": "^Winter\\ Glow\\ Face\\ Cream$",
-      "path": [
-        "Personal Care",
-        "Skin Care",
-        "Face Cream (Fairness & Anti-Ageing)"
+        "Face Wash & Cleanser"
       ]
     },
     {
@@ -34,14 +24,6 @@
         "Personal Care",
         "Skin Care",
         "Face Cream (Fairness & Anti-Ageing)"
-      ]
-    },
-    {
-      "match": "^Glass\\ Bright\\ Ultralight\\ Gel\\ Creme$",
-      "path": [
-        "Personal Care",
-        "Skin Care",
-        "Moisturiser & Lotion"
       ]
     },
     {
@@ -69,11 +51,27 @@
       ]
     },
     {
-      "match": "^Ayurvedic\\ Care\\ Face\\ Wash$",
+      "match": "^Glass\\ Bright\\ Ultralight\\ Gel\\ Creme$",
       "path": [
         "Personal Care",
         "Skin Care",
-        "Face Wash & Cleanser"
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Re\\-New\\ Bright\\ Multivitamin\\ Serum\\ In\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Winter\\ Glow\\ Face\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
       ]
     }
   ]
