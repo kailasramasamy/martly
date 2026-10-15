@@ -1,0 +1,182 @@
+{
+  "brand": "Vcare",
+  "manufacturer": "VCare Herbal Concepts Pvt. Ltd.",
+  "feed": "vcare-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/vcare/logo-a87b6956.png",
+  "themeColor": "#1F2C6B",
+  "themeColorSecondary": "#E87D1E",
+  "namePrefix": "Vcare ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Goat\\ Milk\\ White\\ Soap\\ \\-\\ Argan\\ Oil\\ \\&\\ Vitamin\\ C$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Goat\\ Milk\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Skin\\ Whitening\\ Soap\\ \\-\\ 12\\ Herbs$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Shikakai\\ Shampoo\\ with\\ Amla,\\ Aloe\\ Vera\\ \\&\\ Neem$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Head\\ \\&\\ Body\\ Shampoo\\ with\\ Neem$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Shikkakai\\ Paste$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Hair\\ Wash\\ \\&\\ Conditioner\\ \\-\\ 12\\ Herbs$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Shampoo\\ Hair\\ Colour\\ \\-\\ Deep\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Shampoo\\ Hair\\ Colour\\ Triple\\ Plus\\ \\-\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Super\\ Eazzy\\ Hair\\ Colour\\ Shampoo\\ \\-\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Hair\\ Dye\\ Shampoo\\ \\-\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Moustache\\ \\&\\ Beard\\ Dye\\ Shampoo\\ \\-\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Henna\\ Natural\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Hair\\ Dye$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Premium\\ Hair\\ Tonik$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Hair\\ Growth\\ Vitalizer$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Insta\\ Glow\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Facial\\ Mask\\ \\-\\ Grape\\ Seed\\ \\&\\ Sandalwood$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Facial\\ Mask\\ \\-\\ Saffron\\ \\&\\ Goat's\\ Milk$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Facial\\ Mask\\ \\-\\ Aloe\\ \\&\\ Cucumber$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    }
+  ]
+}
