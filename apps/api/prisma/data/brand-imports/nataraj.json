@@ -1,0 +1,38 @@
+{
+  "brand": "Nataraj",
+  "manufacturer": "Hindustan Pencils Pvt. Ltd.",
+  "feed": "nataraj-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nataraj/logo-8753197d.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Nataraj ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Mist\\ Use\\ \\&\\ Throw\\ Ball\\ Pen\\ \\-\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Classic\\ Use\\ \\&\\ Throw\\ Ball\\ Pen\\ \\-\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^621\\ Sharpener$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    }
+  ]
+}
