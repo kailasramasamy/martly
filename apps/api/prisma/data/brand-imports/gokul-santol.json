@@ -1,0 +1,78 @@
+{
+  "brand": "Gokul Santol",
+  "manufacturer": "Gokul International",
+  "feed": "gokul-santol-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/gokul-santol/logo-f27ca159.png",
+  "themeColor": "#D52B2B",
+  "themeColorSecondary": "#1E8A4C",
+  "namePrefix": "Gokul ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Santol\\ Pure\\ Sandalwood\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Santol\\ Cool\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Santol\\ Pure\\ Sandalwood\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Santol\\ Gram\\ Flour\\ De\\-Tan\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Germ\\ Protection\\ Soap\\ \\-\\ Red\\ Sandalwood\\ \\&\\ Turmeric$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Skin\\ Care\\ Soap\\ \\-\\ Rose\\ \\&\\ Sandalwood$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Santol\\ Real\\ Sandalwood\\ Daily\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Santol\\ Pure\\ Sandalwood\\ Perfume\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    }
+  ]
+}
