@@ -1,0 +1,190 @@
+{
+  "brand": "Bonn",
+  "manufacturer": "Bonn Nutrients Pvt. Ltd.",
+  "feed": "bonn-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bonn/logo-144aaf87.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FDB913",
+  "namePrefix": "Bonn ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bourbonn\\ Choco\\ Creme\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Butter\\ Bonn\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Butter\\ Pista\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Choco\\ Chip\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Bite\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Marie\\ Day\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Glucose & Marie"
+      ]
+    },
+    {
+      "match": "^N\\-Joy\\ Free\\ Kick\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Saltino\\ Crispy\\ Salty\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Twin\\ Bite\\ Sweet\\ \\&\\ Salty\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Royal\\ Bake\\ Atta\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Royal\\ Bake\\ Coconut\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Royal\\ Bake\\ Jeera\\ Salto\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^White\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Brown\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Digestive\\ Ajwaini\\ Jeera\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Missi\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Protein\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Lehsuni\\ Tadka\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Garlic Bread"
+      ]
+    },
+    {
+      "match": "^Premium\\ Fruity\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Premium\\ Kulcha$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Desire\\ Eggless\\ Cake\\ \\-\\ Chocolate$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Desire\\ Eggless\\ Cake\\ \\-\\ Vanilla$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    }
+  ]
+}
