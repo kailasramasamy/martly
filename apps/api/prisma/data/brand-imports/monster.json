@@ -1,0 +1,110 @@
+{
+  "brand": "Monster (Coca-Cola)",
+  "manufacturer": "Hindustan Coca-Cola Beverages Pvt. Ltd.",
+  "feed": "monster-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/monster/logo-2edc26b0.png",
+  "themeColor": "#000000",
+  "themeColorSecondary": "#7AC143",
+  "namePrefix": "Monster ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Zero\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Absolutely\\ Zero$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Ultra\\ Zero\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Ultra\\ Peachy\\ Keen$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Ultra\\ Strawberry\\ Dreams$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Ultra\\ Rosa$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Aussie\\ Lemonade\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Juiced\\ Bad\\ Apple\\ Energy\\ \\+\\ Juice$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Juiced\\ Mariposa\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Juiced\\ Pipeline\\ Punch\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Juiced\\ Mucho\\ Loco\\ Mango\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    }
+  ]
+}

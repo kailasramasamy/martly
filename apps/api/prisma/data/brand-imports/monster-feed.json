@@ -1,0 +1,691 @@
+[
+ {
+  "title": "Energy Drink",
+  "handle": "energy-drink",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130624_2-monster-energy-drink.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376007_1-monster-monster-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130624_2-monster-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130624-2_2-monster-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130624-3_1-monster-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130624-4_1-monster-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130624-5_1-monster-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130624-6_1-monster-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376007_1-monster-monster-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Unleash the beast within with the Original Green Monster Energy Drink! This powerful and invigorating beverage is the ideal combination of the right ingredients in the right proportion to deliver a big, bad buzz that only Monster can provide. Packed with a refreshing and smooth flavour profile that's sweet and salty, Monster Energy Drink is the perfect pick-me-up for tackling a busy workday, hitting the gym, or simply needing a quick energy boost. Conveniently available in a pack of 2 sleek cans, you can easily toss these into your bag or keep them in your car, ensuring you always have the energy you need at your fingertips. Recharge your senses and unleash your inner monster with the bold and revitalising taste of Monster Energy Drink.",
+   "ingredients": "Carbonated Water, Sucrose, Glucose Syrup, Acidity Regulators, Taurine, Preservatives, Caffeine, Artificial Sweetener, Vitamins, Glucuronolactone, Inositol",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100ml",
+    "Energy": "48 kcal",
+    "Protein": "0 g",
+    "Carbohydrates": "12 g",
+    "Sugars": "11 g",
+    "Fat": "0 g",
+    "Sodium": "0.08 g",
+    "Niacin (Vit B3)": "2.5 mg",
+    "Vitamin B6": "0.35 mg",
+    "Vitamin B12": "0.15 ?g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Energy Zero Sugar",
+  "handle": "energy-zero-sugar",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376006_1-monster-monster-zero-sugar-energy-drink.jpg"
+    },
+    "barcode": "5060947549517"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376006_1-monster-monster-zero-sugar-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376006-2_1-monster-monster-zero-sugar-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376006-3_1-monster-monster-zero-sugar-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376006-4_1-monster-monster-zero-sugar-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376006-5_1-monster-monster-zero-sugar-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Monster Zero Sugar Energy Drink offers the Monster experience in a convenient 500 ml zero-sugar format. The single-serve can is easy to chill, store and carry, making it suitable for travel, gaming, work breaks and everyday on-the-go occasions. Enjoy it chilled and check the product label for current ingredient, caffeine and nutritional information. Buy Monster Zero Sugar Energy Drink online when you want a convenient zero-sugar beverage option.",
+   "ingredients": "Carbonated Water, Citric Acid E330, Erythritol E968 (Non-Nutritive Sweetener), Flavourings, Taurine (0.4%), Acidity Regulator (Sodium Citrates E331), Panax Ginseng Root Extract (0.08%), L-Carnitine-L-Tartrate (0.04%), Caffeine (0.03%), Sucralose E955 (Non-Nutritive Sweetener), Preservatives (Sorbic Acid E200, Benzoic Acid E210), Colourant (Anthocyanin E163), Nicotinamide (Vitamin B3), Acesulfame K E950 (Non-Nutritive Sweetener), Guarana Seed Extract (0.002%), Inositol, Vitamin B6, Vitamin B2, Vitamin B12.",
+   "nutritionalInfo": {
+    "Energy": "15 kJ",
+    "Protein": "0.0 g",
+    "Glycaemic Carbohydrate": "2 g",
+    "Of Which Total Sugar": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Of Which Saturated Fat": "0.0 g",
+    "Dietary Fibre": "0.0 g",
+    "Total Sodium": "80 mg",
+    "Niacin (B3)": "8.5 mg",
+    "Vitamin B6": "0.8 mg",
+    "Vitamin B2": "0.7 mg",
+    "Vitamin B12": "2.5 µg"
+   },
+   "manufacturerName": "Monster Energy Beverage Company Of South Africa (Proprietary) Limited",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "South Africa"
+  }
+ },
+ {
+  "title": "Energy Absolutely Zero",
+  "handle": "energy-absolutely-zero",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376000_1-monster-energy-absolutely-zero-energy-drink.jpg"
+    },
+    "barcode": "5060166698812"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376000_1-monster-energy-absolutely-zero-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376000-2_1-monster-energy-absolutely-zero-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376000-3_1-monster-energy-absolutely-zero-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376000-4_1-monster-energy-absolutely-zero-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376000-5_1-monster-energy-absolutely-zero-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Monster Energy Absolutely Zero Energy Drink offers the Monster energy drink experience in a convenient 500 ml can with an Absolutely Zero positioning. It is an easy option for travel, gaming, work breaks and other on-the-go occasions. Serve chilled for the best experience and check the can for current product information before consumption. Buy Monster Energy Absolutely Zero online for a convenient addition to your beverage collection.",
+   "ingredients": "Carbonated Water, Citric Acid E330, Flavourings, Taurine (0.4%), Acidity Regulator (Sodium Citrates E331), Panax Ginseng Root Extract (0.08%), L-Carnitine-L-Tartrate (0.04%), Caffeine (0.03%), Preservatives (Sorbic Acid E200, Benzoic Acid E210), Sucralose E955 (Non-Nutritive Sweetener), Acesulfame K E950 (Non-Nutritive Sweetener), Nicotinamide (Vitamin B3), Colourant (Anthocyanin E163), Salt, D-Glucuronolactone, Guarana Seed Extract (0.002%), Inositol, Vitamin B6, Vitamin B2, Vitamin B12.",
+   "nutritionalInfo": {
+    "Energy": "14 kJ",
+    "Protein": "0.0 g",
+    "Glycaemic Carbohydrate": "1 g",
+    "Of Which Total Sugar": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Of Which Saturated Fat": "0.0 g",
+    "Dietary Fibre": "0.0 g",
+    "Total Sodium": "80 mg",
+    "Niacin (B3)": "8.5 mg",
+    "Vitamin B6": "0.8 mg",
+    "Vitamin B2": "0.7 mg",
+    "Vitamin B12": "2.5 µg"
+   },
+   "manufacturerName": "MONSTER ENERGY BEVERAGE COMPANY OF SOUTH AFRICA (PROPRIETARY) LIMITED",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "SOUTH AFRICA"
+  }
+ },
+ {
+  "title": "Energy Ultra Zero Sugar",
+  "handle": "energy-ultra-zero-sugar",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40182989_5-monster-ultra-energy-drink-zero-sugar.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40375996_1-monster-white-ultra-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40182989_5-monster-ultra-energy-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40182989-2_1443-monster-ultra-energy-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40182989-3_1492-monster-ultra-energy-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40182989-4_1345-monster-ultra-energy-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40182989-5_1392-monster-ultra-energy-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375996_1-monster-white-ultra-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Unleash the beast with Monster Ultra Energy, the ultimate Zero-calorie energy drink that packs a powerful punch. Crafted with the perfect blend of essential B vitamins and Taurine, this refreshing beverage delivers a smooth, easy-to-enjoy flavour that will energise and charge you up anytime. Whether you're an athlete, musician, student, or simply seeking a guilt-free energy boost, Monster Ultra has a variety of flavours to suit every taste, from the crisp, refreshing Ultra White to the bold, citrusy Ultra Sunrise. Enjoy the convenience of having this energising drink delivered straight to your doorstep with just a few clicks. Indulge in the ultimate energy experience with Monster Ultra Energy.",
+   "ingredients": "Carbonated Water, Acidity Regulators [Citric Acid, Sodium Citrate], Erythritol, Taurine [400 mg/100 ml), Preservatives [Sorbic Acid, Benzoic Acid], Sweeteners [Sucralose, Acesulfame Potassium], Caffeine [0.03%], Vitamins [B5, B3, B6, B12], D-Glucuronolactone, Inositol [2 mg/100 ml]",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100ml",
+    "Serving Size": "100ml",
+    "Energy": "3 kcal",
+    "Protein": "0 g",
+    "Carbohydrates": "1 g",
+    "Sugars": "0 g",
+    "Fat": "0 g",
+    "Sodium": "0.08 g",
+    "Niacin (Vitamin B3)": "2.5 mg",
+    "Pantothenic Acid (Vitamin B5)": "2.7 mg",
+    "Vitamin B6": "0.34 mg",
+    "Vitamin B12": "0.13 mg"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt. Ltd 1105/7/8/33 Pirangut. Tal. Mulshi",
+   "fssaiLicense": "10012022000287",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Energy Ultra Peachy Keen",
+  "handle": "energy-ultra-peachy-keen",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40375999_1-monster-energy-ultra-peachy-keen-flavoured-drink.jpg"
+    },
+    "barcode": "5056784900932"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375999_1-monster-energy-ultra-peachy-keen-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375999-2_1-monster-energy-ultra-peachy-keen-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375999-3_1-monster-energy-ultra-peachy-keen-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375999-4_1-monster-energy-ultra-peachy-keen-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375999-5_1-monster-energy-ultra-peachy-keen-flavoured-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Monster Energy Ultra Peachy Keen Flavoured Drink brings a peach-inspired flavour to the Monster Ultra range in a convenient 500 ml can. Its single-serve format makes it easy to keep chilled at home, carry while travelling or enjoy during a break. It is suited to gaming sessions, social occasions and everyday on-the-go moments. Buy Monster Energy Ultra Peachy Keen online for a refreshing addition to your energy drink selection.",
+   "ingredients": "Carbonated Water, Citric Acid E330, Taurine (0.4%), Acidity Regulator (Sodium Citrates E331), Maltodextrin, Ginseng Root Extract (0.08%), Flavouring, Preservatives (Potassium Sorbate E202, Sodium Benzoate E211), Caffeine (0.03%), Sucralose E955 (Non-Nutritive Sweetener), Vegetable Oils (Coconut, Rapeseed), L-Carnitine L-Tartrate (0.015%), Chemically Modified Starch, Nicotinamide (Vitamin B3), Acesulfame Potassium E950 (Non-Nutritive Sweetener), Salt, Pantothenic Acid (Vitamin B5), Guarana, Inositol, Vitamin B6, Colourants (Tartrazine E102, Sunset Yellow E110), Vitamin B12.",
+   "nutritionalInfo": {
+    "Energy": "11 kJ",
+    "Protein": "0.0 g",
+    "Glycaemic Carbohydrate": "0 g",
+    "Of Which Total Sugar": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Of Which Saturated Fat": "0.0 g",
+    "Dietary Fibre": "0.0 g",
+    "Total Sodium": "65 mg",
+    "Niacin (B3)": "8.5 mg",
+    "Pantothenic Acid (B5)": "4.2 mg",
+    "Vitamin B6": "0.8 mg",
+    "Vitamin B12": "2 µg"
+   },
+   "manufacturerName": "MONSTER ENERGY BEVERAGE COMPANY OF SOUTH AFRICA (PROPRIETARY) LIMITED",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "SOUTH AFRICA"
+  }
+ },
+ {
+  "title": "Energy Ultra Strawberry Dreams",
+  "handle": "energy-ultra-strawberry-dreams",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376002_1-monster-monster-energy-ultra-strawberry-dreams-flavoured-drink.jpg"
+    },
+    "barcode": "5056784913086"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376002_1-monster-monster-energy-ultra-strawberry-dreams-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376002-2_1-monster-monster-energy-ultra-strawberry-dreams-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376002-3_1-monster-monster-energy-ultra-strawberry-dreams-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376002-4_1-monster-monster-energy-ultra-strawberry-dreams-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376002-5_1-monster-monster-energy-ultra-strawberry-dreams-flavoured-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Monster Energy Ultra Strawberry Dreams Flavoured Drink brings a strawberry-inspired flavour to the Monster Ultra range in a convenient 500 ml can. It is designed for easy chilled enjoyment and fits naturally into gaming sessions, travel, work breaks and social occasions. The single-can format makes storage simple at home or on the go. Buy Monster Energy Ultra Strawberry Dreams online for a convenient fruit-flavoured energy drink option.",
+   "ingredients": "Carbonated Water, Erythritol E968 (Non-Nutritive Sweetener), Acid (Citric Acid E330), Taurine (0.4%), Acidity Regulator (Sodium Citrates E331), Strawberry Flavouring, Ginseng Root Extract (0.08%), Preservatives (Potassium Sorbate E202, Sodium Benzoate E211), Caffeine (0.03%), Sucralose E955 (Non-Nutritive Sweetener), L-Carnitine L-Tartrate (0.015%), Nicotinamide (Vitamin B3), Pantothenic Acid (Vitamin B5), Stabiliser (Glycerol Esters of Wood Rosins E455), Guarana Seed Extract, Inositol, Acesulfame Potassium E950 (Non-Nutritive Sweetener), Vitamin B6, Colourants (Allura Red E129, Sunset Yellow E110, Brilliant Blue E133), Vitamin B12.",
+   "nutritionalInfo": {
+    "Energy": "12 kJ",
+    "Protein": "0.0 g",
+    "Glycaemic Carbohydrate": "1 g",
+    "Of Which Total Sugar": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Of Which Saturated Fat": "0.0 g",
+    "Dietary Fibre": "0.0 g",
+    "Total Sodium": "64 mg",
+    "Niacin (B3)": "8.5 mg",
+    "Pantothenic Acid (B5)": "4.2 mg",
+    "Vitamin B6": "0.8 mg",
+    "Vitamin B12": "2 µg"
+   },
+   "manufacturerName": "Monster Energy Beverage Company Of South Africa (Proprietary) Limited",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "South Africa"
+  }
+ },
+ {
+  "title": "Energy Ultra Rosa",
+  "handle": "energy-ultra-rosa",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376003_1-monster-monster-ultra-rosa-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376003_1-monster-monster-ultra-rosa-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376003-2_1-monster-monster-ultra-rosa-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376003-3_1-monster-monster-ultra-rosa-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376003-4_1-monster-monster-ultra-rosa-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376003-5_1-monster-monster-ultra-rosa-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Monster Ultra Rosa Energy Drink offers a distinctive fruit-inspired taste in the Monster Ultra range and comes in a convenient 500 ml can. It is easy to chill and enjoy during travel, gaming, work breaks or casual social occasions. The single-serve format also makes it convenient to keep at home or carry on the go. Buy Monster Ultra Rosa Energy Drink online for an easy addition to your chilled beverage selection.",
+   "ingredients": "Carbonated Water, Citric Acid E330, Erythritol E968 (Non-Nutritive Sweetener), Taurine (0.4%), Acidity Regulator (Sodium Citrates E331), Flavourings, Panax Ginseng Root Extract (0.08%), Caffeine (0.03%), Sucralose E955 (Non-Nutritive Sweetener), Preservatives (Potassium Sorbate E202, Sodium Benzoate E211), L-Carnitine L-Tartrate (0.015%), Nicotinamide (Vitamin B3), Acesulfame Potassium E960 (Non-Nutritive Sweetener), Pantothenic Acid (Vitamin B5), Colourant (Anthocyanins E163), Guarana, Inositol, Vitamin B6, Vitamin B12.",
+   "nutritionalInfo": {
+    "Energy": "12 kJ",
+    "Protein": "0.0 g",
+    "Glycaemic Carbohydrate": "1 g",
+    "Of Which Total Sugar": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Of Which Saturated Fat": "0.0 g",
+    "Dietary Fibre": "0.0 g",
+    "Total Sodium": "80 mg",
+    "Niacin (B3)": "8.5 mg",
+    "Pantothenic Acid (B5)": "4.2 mg",
+    "Vitamin B6": "0.8 mg",
+    "Vitamin B12": "2 µg"
+   },
+   "manufacturerName": "monster Energy Beverage Company Of South Africa (Proprietary) Limited",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "South Africa"
+  }
+ },
+ {
+  "title": "Aussie Lemonade Energy Drink",
+  "handle": "aussie-lemonade-energy-drink",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376008_1-monster-monster-aussie-lemonade-style-lemon-energy-drink.jpg"
+    },
+    "barcode": "5060947540002"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376008_1-monster-monster-aussie-lemonade-style-lemon-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376008-2_1-monster-monster-aussie-lemonade-style-lemon-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376008-3_1-monster-monster-aussie-lemonade-style-lemon-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376008-4_1-monster-monster-aussie-lemonade-style-lemon-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376008-5_1-monster-monster-aussie-lemonade-style-lemon-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Monster Aussie Lemonade Style Lemon Energy Drink brings a lemonade-inspired lemon flavour to the Monster range in a convenient 500 ml can. It is an easy chilled option for travel, gaming, work breaks and social occasions. The single-serve format makes it convenient to store at home or carry on the go. Buy Monster Aussie Lemonade Style Lemon Energy Drink online for a refreshing citrus-led addition to your beverage collection.",
+   "ingredients": "Carbonated Water, Sugar, Glucose Syrup, Lemon Juice From Concentrate (6%), Taurine (0.4%), Acids (Citric Acid E330, Malic Acid E296), Flavouring, Acidity Regulators (Sodium Citrates E331, Potassium Citrates E332), Preservative (Potassium Sorbate E202), Caffeine (0.03%), Nicotinamide (Vitamin B3), Sucralose E955 (Non-Nutritive Sweetener), L-Carnitine L-Tartrate (0.004%), Inositol, Vitamin B6, Vitamin B2, Vitamin B12.",
+   "nutritionalInfo": {
+    "Energy": "179 kJ",
+    "Protein": "0.0 g",
+    "Glycaemic Carbohydrate": "11 g",
+    "Of Which Total Sugar": "9.7 g",
+    "Total Fat": "0.0 g",
+    "Of Which Saturated Fat": "0.0 g",
+    "Dietary Fibre": "0.0 g",
+    "Total Sodium": "33 mg",
+    "Niacin (B3)": "8.5 mg",
+    "Vitamin B6": "0.8 mg",
+    "Vitamin B2": "0.7 mg",
+    "Vitamin B12": "2 µg"
+   },
+   "manufacturerName": "Monster Energy Beverage Company Of South Africa (Proprietary) Limited",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "South Africa"
+  }
+ },
+ {
+  "title": "Juiced Bad Apple Energy + Juice",
+  "handle": "juiced-bad-apple-energy-juice",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376001_1-monster-monster-juiced-bad-apple-energy-juice-drink.jpg"
+    },
+    "barcode": "5061013944656"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376001_1-monster-monster-juiced-bad-apple-energy-juice-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376001-2_1-monster-monster-juiced-bad-apple-energy-juice-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376001-3_1-monster-monster-juiced-bad-apple-energy-juice-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376001-4_1-monster-monster-juiced-bad-apple-energy-juice-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376001-5_1-monster-monster-juiced-bad-apple-energy-juice-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Monster Bad Apple Energy+ Juice Drink brings together the Monster Energy+ range and a distinctive apple-led flavour in a convenient 500 ml can. It is suitable for chilled refreshment during travel, gaming, work breaks or social occasions. The single-serve pack is easy to store and carry. Buy Monster Bad Apple Energy+ Juice Drink online if you are looking to explore a fruit-forward option from the Monster range.",
+   "ingredients": "Carbonated Water, Sucrose, Fruit Juices From Concentrate (6%) [Apple (4.7%), Pear, Kiwi, Sour Cherry], Glucose Syrup, Acids (Citric Acid, Malic Acid), Taurine (0.4%), Acidity Regulator (Sodium Citrates), Panax Ginseng Root Extract (0.08%), Flavourings, Stabiliser (Pectins), Colour (E150d), Preservative (Potassium Sorbate), Caffeine (0.03%), Vegetable Oils (Coconut, Rapeseed), Modified Starch, Vitamins (B3, B6, B2, B12), Black Carrot Juice Concentrate, Sweetener (Sucralose), L-Carnitine L-Tartrate (0.004%), Salt, Inositol.",
+   "nutritionalInfo": {
+    "Energy": "153 kJ / 36 kcal",
+    "Carbohydrate": "9.1 g",
+    "Of Which Sugars": "8.2 g",
+    "Salt": "0.1–0.7 g"
+   },
+   "manufacturerName": "Monster Energy Beverage Company Of South Africa (Proprietary) Limited",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "South Africa"
+  }
+ },
+ {
+  "title": "Juiced Mariposa Energy Drink",
+  "handle": "juiced-mariposa-energy-drink",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376004_1-monster-monster-mariposa-energy-drink.jpg"
+    },
+    "barcode": "5060751216551"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376004_1-monster-monster-mariposa-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376004-2_1-monster-monster-mariposa-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376004-3_1-monster-monster-mariposa-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376004-4_1-monster-monster-mariposa-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376004-5_1-monster-monster-mariposa-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Monster Mariposa Energy Drink brings a vibrant fruit-inspired profile to the Monster range in a convenient 500 ml can. It is a practical choice for chilled refreshment during travel, gaming, work breaks and social occasions. The single-serve can is easy to store and carry, making it suitable for everyday convenience. Buy Monster Mariposa Energy Drink online and add this distinctive Monster variant to your beverage collection.",
+   "ingredients": "Carbonated Water, Sugar, Fruit Juice From Concentrate (Apple, Peach, Pear, Pineapple, Nectarine, Mango, Banana), Glucose Syrup, Acid (Citric Acid E330), Taurine (0.4%), Acidity Regulator (Sodium Citrates E331), Flavourings, Preservative (Potassium Sorbate E202), Caffeine (0.03%), Vegetable Oils (Coconut Fruit, Rapeseed), Chemically Modified Starch, Nicotinamide (Vitamin B3), Sucralose E955 (Non-Nutritive Sweetener), L-Carnitine L-Tartrate (0.004%), Salt, Inositol (0.002%), Vitamin B6, Vitamin B2, Colourant (Allura Red E129), Vitamin B12.",
+   "nutritionalInfo": {
+    "Energy": "185 kJ",
+    "Protein": "0.0 g",
+    "Glycaemic Carbohydrate": "11 g",
+    "Of Which Total Sugar": "10.3 g",
+    "Total Fat": "0.0 g",
+    "Of Which Saturated Fat": "0.0 g",
+    "Dietary Fibre": "0.0 g",
+    "Total Sodium": "41 mg",
+    "Niacin (B3)": "8.5 mg",
+    "Vitamin B6": "0.8 mg",
+    "Vitamin B2": "0.7 mg",
+    "Vitamin B12": "2 µg"
+   },
+   "manufacturerName": "MONSTER ENERGY BEVERAGE COMPANY OF SOUTH AFRICA (PROPRIETARY) LIMITED",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "South Africa"
+  }
+ },
+ {
+  "title": "Juiced Pipeline Punch Energy Drink",
+  "handle": "juiced-pipeline-punch-energy-drink",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376005_1-monster-monster-pipeline-punch-energy-drink.jpg"
+    },
+    "barcode": "5060517888800"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376005_1-monster-monster-pipeline-punch-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376005-2_1-monster-monster-pipeline-punch-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376005-3_1-monster-monster-pipeline-punch-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376005-4_1-monster-monster-pipeline-punch-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376005-5_1-monster-monster-pipeline-punch-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Monster Pipeline Punch Energy Drink brings a fruit-punch inspired flavour in a convenient 500 ml can. It is made for easy chilled enjoyment and works well for gaming, travel, work breaks, get-togethers and other on-the-go occasions. The single-serve format makes it simple to keep stocked in the refrigerator. Buy Monster Pipeline Punch Energy Drink online for a flavour-forward option from the Monster range.",
+   "ingredients": "Carbonated Water, Sugar, Fruit Juice From Concentrate (Orange, Apple, Guava, Pineapple, Passion Fruit), Glucose Syrup, Taurine (0.4%), Acid (Citric Acid E330), Maltodextrin, Flavourings, Acidity Regulator (Sodium Citrates E331), Preservatives (Potassium Sorbate E202, Sodium Benzoate E211), Caffeine (0.03%), Vegetable Oils (Coconut Fruit, Rapeseed), Sucralose E955 (Non-Nutritive Sweetener), Chemically Modified Starch, Nicotinamide (B3), L-Carnitine L-Tartrate (0.004%), Salt, Inositol (0.002%), Vitamin B6, Vitamin B2, Colourant (Allura Red E129), Vitamin B12.",
+   "nutritionalInfo": {
+    "Energy": "153 kJ",
+    "Protein": "0.0 g",
+    "Glycaemic Carbohydrate": "9 g",
+    "Of Which Total Sugar": "8.5 g",
+    "Total Fat": "0.0 g",
+    "Of Which Saturated Fat": "0.0 g",
+    "Dietary Fibre": "0.1 g",
+    "Total Sodium": "15 mg",
+    "Niacin (B3)": "8.5 mg",
+    "Vitamin B6": "0.8 mg",
+    "Vitamin B2": "0.7 mg",
+    "Vitamin B12": "2 µg"
+   },
+   "manufacturerName": "Monster Energy Beverage Company Of South Africa (Proprietary) Limited",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "South Africa"
+  }
+ },
+ {
+  "title": "Juiced Mucho Loco Mango Energy Drink",
+  "handle": "juiced-mucho-loco-mango-energy-drink",
+  "vendor": "Monster (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40375997_1-monster-mucho-loco-mango-flavoured-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375997_1-monster-mucho-loco-mango-flavoured-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375997-2_1-monster-mucho-loco-mango-flavoured-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375997-3_1-monster-mucho-loco-mango-flavoured-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375997-4_1-monster-mucho-loco-mango-flavoured-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375997-5_1-monster-mucho-loco-mango-flavoured-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
