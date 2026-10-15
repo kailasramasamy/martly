@@ -1,0 +1,46 @@
+{
+  "brand": "Happydent (Perfetti)",
+  "manufacturer": "Perfetti Van Melle India Pvt. Ltd.",
+  "feed": "happydent-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/happydent/logo-d238f833.png",
+  "themeColor": "#1B3A8C",
+  "themeColorSecondary": "#00A3E0",
+  "namePrefix": "Happydent ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Wave\\ Sugarfree\\ Chewing\\ Gum\\ Jar\\ \\-\\ Strawberry$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Wave\\ Sugarfree\\ Chewing\\ Gum\\ \\-\\ Fruits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Wave\\ Sugarfree\\ Chewing\\ Gum\\ \\-\\ Mint$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^White\\ Sugarfree\\ Chewing\\ Gum\\ \\-\\ Spearmint$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    }
+  ]
+}
