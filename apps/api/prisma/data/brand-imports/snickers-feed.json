@@ -1,0 +1,944 @@
+[
+ {
+  "title": "Peanut Chocolate Bar",
+  "handle": "peanut-chocolate-bar",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "12g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40175819_7-snickers-chocolate-bar.jpg"
+    }
+   },
+   {
+    "title": "22g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100130419_25-snickers-peanut-filled-chocolate-bar.jpg"
+    }
+   },
+   {
+    "title": "40g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251209_25-snickers-peanut-filled-chocolate-bar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175819_7-snickers-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175819-2_9-snickers-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175819-3_9-snickers-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175819-4_9-snickers-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175819-5_9-snickers-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175819-6_9-snickers-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175819-7_8-snickers-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175819-8_1-snickers-chocolate-bar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Need a bar that never lets hunger win? The Snickers Peanut Chocolate Bar packs crunchy peanuts, nutty nougat, rich caramel, and chocolate as if it's on a mission to crush your hunger. Snickers steps in when hunger strikes - even at 4pm, when your stomach makes more noise than your boss. Hungry? Grab a Snickers! More than chocolate, itâ€™s that â€œhow did I survive before this?â€ moment.",
+   "ingredients": "Milk chocolate coating (35%): Sugar, Milk solids, Cocoa butter, Cocoa solids, Edible vegetable fats <5% (Sal fat, Palm oil), Dextrose, Emulsifier (INS 322); Centre filling (65%), Liquid glucose, Peanuts (21%), Sugar, Hydrogenated vegetable oil (Palm oil), Milk solids, lodized salt, Cocoa butter, Cocoa solids, Edible vegetable fats <5% (Sal fat, Palm oil), Dextrose, Emulsifier (INS 322).CONTAINS VEGETABLE FAT IN ADDITION TO COCOA BUTTER. Contains Milk, Peanut, and Soy. May contain tree nuts.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "491KCAL",
+    "Protein": "8.83G",
+    "Carbohydrate": "57.43G",
+    "Total Sugars": "51.84G",
+    "Added Sugars": "46.72G",
+    "Total Fat": "25.10G",
+    "Saturated Fat": "10.18G",
+    "Trans Fat": "0.10G",
+    "Cholesterol": "5.10MG",
+    "Sodium": "222MG"
+   },
+   "manufacturerName": "Mars International India Pvt Ltd",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Almond Chocolate Bar",
+  "handle": "almond-chocolate-bar",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "14g",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20007242_2-snickers-almonds-chocolates.jpg"
+    }
+   },
+   {
+    "title": "22g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258167_8-snickers-almond-chocolate-bar-for-snack-time.jpg"
+    }
+   },
+   {
+    "title": "40g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258168_11-snickers-almond-chocolate-bar-for-snack-time.jpg"
+    }
+   },
+   {
+    "title": "45g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160642_7-snickers-almond-filled-chocolate-bar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20007242_2-snickers-almonds-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20007242-2_5-snickers-almonds-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20007242-3_1-snickers-almonds-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20007242-4_1-snickers-almonds-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20007242-5_1-snickers-almonds-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20007242-6_1-snickers-almonds-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20007242-7_1-snickers-almonds-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258167_8-snickers-almond-chocolate-bar-for-snack-time.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Do not let hunger change you! Add some peanut and almond power to your day with Snickers Chocolate Bar Variety Pack. Made with real peanuts and almonds with chocolate, this iconic candy satisfies your taste buds and helps you fuel up during a busy day. \nSnickers bar, packed with nutritious roasted peanuts and crunchy almonds, also contains nougat and caramel, creating a flavour that’s enough to rock your taste buds, while busting hunger pangs between meals. \nReach out for a Snickers hunger bar to tackle snack time at the office, in the car or at home, because you’re not you when you’re hungry. The world's best-selling candy bar, Snickers was introduced in 1930 and it quickly became one of the planet's favourite treats. Snickers also make great dessert toppers and are full size, delicious snack that your friends, family and party guests will love.",
+   "ingredients": "Sugar, Cocoa Butter, Cocoa Mass, Lactose, Full Cream Milk Powder, Whey Powder, Milk Fat, Almonds, Glucose Syrup.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Mars International India Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000434"
+  }
+ },
+ {
+  "title": "Berry Whip Chocolate Bar",
+  "handle": "berry-whip-chocolate-bar",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "22g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40291081_7-snickers-chocolate-bar-berry-whip-smooth-creamy-texture.jpg"
+    }
+   },
+   {
+    "title": "40g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40291082_7-snickers-chocolate-bar-berry-whip-smooth-creamy-texture.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291081_7-snickers-chocolate-bar-berry-whip-smooth-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291081-2_7-snickers-chocolate-bar-berry-whip-smooth-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291081-3_7-snickers-chocolate-bar-berry-whip-smooth-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291081-4_7-snickers-chocolate-bar-berry-whip-smooth-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291081-5_7-snickers-chocolate-bar-berry-whip-smooth-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291081-6_7-snickers-chocolate-bar-berry-whip-smooth-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291081-7_7-snickers-chocolate-bar-berry-whip-smooth-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291081-8_4-snickers-chocolate-bar-berry-whip-smooth-creamy-texture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Don't let hunger slow you down. Snickers Berry Whip Flavoured Bar has your back with a delicious combination of strawberry-flavoured whip, nutty nougat, rich caramel, and chocolate. When hunger strikes, grab a Snickers. More than just a chocolate bar, it helps power you through the day, beats the 4 PM slump, and keeps the hangry moments away, because you're not you when you're hungry.",
+   "ingredients": "Milk Chocolate Coating (38%) [Sugar, Milk\nSolids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats (<5%) (Sal Fat,\nPalm Oil), Dextrose, Emulsifier (INS 322)], Centre Filling (62%) [Liquid\nGlucose, Peanuts (20%), Sugar, Hydrogenated Vegetable Oil (Palm Oil), Milk\nSolids, Iodised Salt, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats\n(<5%) (Sal Fat, Palm Oil), Dextrose, Nature-Identical Flavour (Strawberry),\nEmulsifier (INS 322)].\nContains Vegetable Fat In Addition To Cocoa Butter.\nAllergen Information: Contains Peanuts, Milk, And Soy.\nMay Contain Tree Nuts.",
+   "nutritionalInfo": {
+    "Energy": "492 kcal",
+    "Protein": "8.67 g",
+    "Carbohydrate": "57.69 g",
+    "Total Sugars": "52.34 g",
+    "Added Sugars": "46.7 g",
+    "Total Fat": "25.18 g",
+    "Saturated Fat": "10.47 g",
+    "Trans Fat": "0.10 g",
+    "Cholesterol": "5.5 mg",
+    "Sodium": "214 mg",
+    "Serving Size": "20 g"
+   },
+   "manufacturerName": "Mars International India Pvt. Ltd. 4658-A",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Butterscotch Chocolate Bar",
+  "handle": "butterscotch-chocolate-bar",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "22g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40269092_7-snickers-butterscotch-chocolate-bar-premium-rich.jpg"
+    }
+   },
+   {
+    "title": "40g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198414_9-snickers-chocolate-butterscotch-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269092_7-snickers-butterscotch-chocolate-bar-premium-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269092-2_7-snickers-butterscotch-chocolate-bar-premium-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269092-3_7-snickers-butterscotch-chocolate-bar-premium-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269092-4_7-snickers-butterscotch-chocolate-bar-premium-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269092-5_7-snickers-butterscotch-chocolate-bar-premium-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269092-6_7-snickers-butterscotch-chocolate-bar-premium-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269092-7_7-snickers-butterscotch-chocolate-bar-premium-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269092-8_4-snickers-butterscotch-chocolate-bar-premium-rich.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Don't let hunger slow you down. Snickers Butterscotch Flavoured Bar has your back. With butterscotch flavour, nutty nougat, thick caramel, and chocolate, it steps in when hunger hits. Hungry? Grab a Snickers! More than chocolate, it keeps you going, powers through the 4 pm crash, and keeps 'hangry' out because you're not you when you're hungry.",
+   "ingredients": "Milk Chocolate Coating (38%): Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sal Fat, Palm Oil), Dextrose, Emulsifier (322); Centre Filling (62%): Liquid Glucose, Peanuts (20%), Sugar, Hydrogenated Vegetable Oil (Palm Oil), Milk Solids, Iodised Salt, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sal Fat, Palm Oil), Dextrose, Nature Identical Flavour (Butterscotch), Emulsifier (322)",
+   "nutritionalInfo": {
+    "Energy": "489 kcal",
+    "Protein": "8.64 g",
+    "Carbohydrate": "57.5 g",
+    "Total Sugars": "52.16 g",
+    "Added Sugars": "46.7 g",
+    "Total Fat": "25.13 g",
+    "Saturated Fat": "10.4 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "5.5 mg",
+    "Sodium": "214 mg"
+   },
+   "manufacturerName": "Mars International India Pvt. Ltd. 4658-A",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Peanut Brownie Chocolate Bar",
+  "handle": "peanut-brownie-chocolate-bar",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "22g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40353617_6-snickers-peanut-brownie-filled-chocolate.jpg"
+    },
+    "barcode": "8902433031625"
+   },
+   {
+    "title": "45g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332335_7-snickers-peanut-brownie-chocolate-bar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353617_6-snickers-peanut-brownie-filled-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353617-2_6-snickers-peanut-brownie-filled-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353617-3_6-snickers-peanut-brownie-filled-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353617-4_6-snickers-peanut-brownie-filled-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353617-5_6-snickers-peanut-brownie-filled-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353617-6_6-snickers-peanut-brownie-filled-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353617-7_6-snickers-peanut-brownie-filled-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353617-8_6-snickers-peanut-brownie-filled-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Don't let hunger slow you down - Snickers Peanut Brownie, your tastiest hunger fix. Packed with brownie, peanuts, caramel, and chocolate, it steps in when hunger hits. Hungry? Grab a Snickers! More than chocolate, it keeps you going, powers through the 4pm crash, and keeps 'hangry' out--because you're not you when you're hungry.",
+   "ingredients": "Milk Chocolate (38%): (Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Dextrose, Edible Vegetable Fat <5% (Sal Fat, Palm Oil), Emulsifier (322)); Centre Filling (62%): (Liquid Glucose, Peanuts (12%), Sugar, Cocoa Solids (9.6%), Milk Solids, Edible Vegetable Fat (Palm Oil, Sesame Oil), Invert Sugar, Lodised Salt, Nature Identical Flavour, Cocoa Butter, Emulsifier (322)). CONTAINS COCOA BUTTER EQUIVALENT IN ADDITION TO COCOA BUTTER. Contains Milk, Peanut And Soy. May Contain Treenuts",
+   "manufacturerName": "Mars International India Pvt. Ltd.  4658-A",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit & Nut Chocolate Bar",
+  "handle": "fruit-nut-chocolate-bar",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "22g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208137_2-snickers-chocolate-bar-fruit-nut-flavour.jpg"
+    }
+   },
+   {
+    "title": "45g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208136_2-snickers-chocolate-bar-fruit-nut-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208137_2-snickers-chocolate-bar-fruit-nut-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208137-2_2-snickers-chocolate-bar-fruit-nut-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208137-3_2-snickers-chocolate-bar-fruit-nut-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208137-4_2-snickers-chocolate-bar-fruit-nut-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208137-5_2-snickers-chocolate-bar-fruit-nut-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208137-6_2-snickers-chocolate-bar-fruit-nut-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208137-7_2-snickers-chocolate-bar-fruit-nut-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208137-8_2-snickers-chocolate-bar-fruit-nut-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Do not let hunger change you! Add some fruit and nut power to your day with the new Snickers Chocolate Bar. Made with delicious fruit & nut and chocolate, this iconic chocolate satisfies your taste buds and helps you fuel up during a busy day. Snickers bar, packed with the goodness of fruit & nut, creates a flavour that’s enough to rock your taste buds while busting hunger pangs between meals. Dunk into a Snickers fruit & nut bar anytime - at the office, in the car or at home, because you’re not you when you’re hungry. Turn this amazing chocolate into a decadent cake, wave goodbye to normal brownies and make delicious Snickers brownies or try quick and tasty Snickers pudding. There is so much that you can do with Snickers, the choice is yours!\nStorage: It contains tree nuts and product thereof, milk and milk products, soybeans and product thereof, may contain traces of peanut and product thereof.",
+   "ingredients": "Milk Chocolate Coating(40%): Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Dextrose, Lactose, Emulsifiers(Soy Lecithin),Ethyl Vanillin; Center Filling(60%): Glucose Syrup, Sugar, Almonds (7%), Cashew (7%), Raisins (5%), Hydrogenated Vegetable Oil(Palm Oil), Milk Solids, Iodised Salts, Lactose, Cocoa Butter, Cocoa Solids, Dextrose, Emulsifier(Soy Lecithin), Ethyl Vanillin.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Mars International India Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000434"
+  }
+ },
+ {
+  "title": "Kesar Pista Chocolate Bar",
+  "handle": "kesar-pista-chocolate-bar",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "42g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241856_5-snickers-kesar-pista-chocolate-bar-premium-quality.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241856_5-snickers-kesar-pista-chocolate-bar-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241856-2_5-snickers-kesar-pista-chocolate-bar-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241856-3_5-snickers-kesar-pista-chocolate-bar-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241856-4_5-snickers-kesar-pista-chocolate-bar-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241856-5_5-snickers-kesar-pista-chocolate-bar-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241856-6_5-snickers-kesar-pista-chocolate-bar-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241856-7_4-snickers-kesar-pista-chocolate-bar-premium-quality.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Why Snickers Kesar Pista Chocolate Bar? Hunger cannot determine the course of your life, only you can! Introducing the new Snickers Kesar Pista chocolate bar to give you a guilt-free indulgence with the goodness of nuts. Made with Pista, Kesar, almond and chocolate, this premium chocolate satisfies your taste buds and helps you fuel up during a busy day. Don't let stress get to you, brace yourself for a chocolatey nutty collision with Snickers and bid goodbye to unwanted worries.\nWhat makes it different? Snickers chocolate bar, packed with delicious and nutritious pistas & almonds, also contains nougat and kesar, creating a flavour that's enough to rock your taste buds, while busting hunger pangs between meals. Dont sacrifice taste for nutrition, use this pack to give to your loved ones and watch them enjoy and rejoice in these delicious chocolate treats. When to have this bar?\nReach out for Snickers chocolates to tackle snack time while watching TV, playing your favourite game or after a meal because you're not you when you're hungry. Turn this amazing chocolate into a decadent cake, wave goodbye to normal brownies and make delicious Snickers brownies or try quick and tasty Snickers pudding. There is so much that you can do with Snickers, the choice is yours!",
+   "manufacturerName": "Mars International India Pvt. Ltd. 4658-A",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Duos Peanut Chocolate Bar",
+  "handle": "duos-peanut-chocolate-bar",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "72g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369612_2-snickers-duo-peanut-filled-chocolate-bar.jpg"
+    }
+   },
+   {
+    "title": "80g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129826_7-snickers-peanut-filled-chocolate-duos.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369612_2-snickers-duo-peanut-filled-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369612-2_2-snickers-duo-peanut-filled-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369612-3_2-snickers-duo-peanut-filled-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369612-4_2-snickers-duo-peanut-filled-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369612-5_2-snickers-duo-peanut-filled-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369612-6_2-snickers-duo-peanut-filled-chocolate-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129826_7-snickers-peanut-filled-chocolate-duos.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Hungry? Grab and share a Snickers!\nSnickers Duo comes with two Peanut Chocolate Bars loaded with crunchy peanuts, nutty nougat, rich caramel, and all wrapped in chocolate, as if it’s on a mission to crush your hunger. Snickers steps in when hunger strikes - especially at 4pm, when your hunger pangs are louder than the chaos in the world around you.",
+   "ingredients": "Milk Chocolate Coating (35%): Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sal Fat, Palm Oil), Dextrose, Emulsifier (Ins 322); Centre Filling (65%): Liquid Glucose, Peanuts (21%), Sugar, Hydrogenated Vegetable Oil (Palm Oil), Milk Solids, Iodized Salt, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sal Fat, Palm Oil), Dextrose, Emulsifier (Ins 322). Contains Vegetable Fat In Addition To Cocoa Butter. Contains Milk, Peanut And Soy. May Contain Tree Nut.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "491",
+    "Protein (g)": "8.83",
+    "Carbohydrate (g)": "57.43",
+    "Total Sugars (g)": "51.84",
+    "Added Sugars (g)": "46.72",
+    "Total Fat (g)": "25.1",
+    "Saturated Fat (g)": "10.18",
+    "Trans Fat (g)": "0.1",
+    "Cholesterol (mg)": "5.1",
+    "Sodium (mg)": "222"
+   },
+   "storageInstructions": "Store in cool & dry place.",
+   "manufacturerName": "Mars International India Pvt. Ltd",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Minis Peanut Chocolates",
+  "handle": "minis-peanut-chocolates",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "69g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253967_9-snickers-miniature-chocolate-peanut-filled-rich-taste-creamy-texture.jpg"
+    }
+   },
+   {
+    "title": "103.5g",
+    "price": "149",
+    "compare_at_price": "149",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40291084_21-snickers-miniatures-peanut-chocolate-sweet-salty-flavour.jpg"
+    }
+   },
+   {
+    "title": "138g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258165_23-snickers-peanut-miniature-chocolate-nutritious-with-cocoa-butter.jpg"
+    }
+   },
+   {
+    "title": "216g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/235685_10-snickers-peanut-filled-chocolates-mini.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253967_9-snickers-miniature-chocolate-peanut-filled-rich-taste-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253967-2_9-snickers-miniature-chocolate-peanut-filled-rich-taste-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253967-3_9-snickers-miniature-chocolate-peanut-filled-rich-taste-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253967-4_9-snickers-miniature-chocolate-peanut-filled-rich-taste-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253967-5_9-snickers-miniature-chocolate-peanut-filled-rich-taste-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253967-6_9-snickers-miniature-chocolate-peanut-filled-rich-taste-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253967-7_9-snickers-miniature-chocolate-peanut-filled-rich-taste-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253967-8_4-snickers-miniature-chocolate-peanut-filled-rich-taste-creamy-texture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "When you want to bring everyone together, the Snickers Minis Chocolate Pack is like that one friend who always shows up - only this one brings bite-sized bars loaded with crunchy peanuts, nutty nougat, thick caramel, and a whole lot of chocolate. Perfect for movie nights, road trips, or that 4 pm hunger strike.",
+   "ingredients": "Milk Chocolate Coating (38%): Sugar, Milk Solids, Cocoa Solids, Edible Vegetable Fats (Solids) (Palm Oil), Dextrose, Emulsifier (322); Centre Filling (62%): Liquid Glucose, Sugar, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats (Solids) (Palm Oil, Palm Kernel), Milk Solids, Emulsifier (322). Contains Cocoa Butter Equivalent In Addition To Cocoa Butter.\nContains: Milk, Soy, May Contain Tree Nuts.",
+   "nutritionalInfo": {
+    "Energy": "477 kcal",
+    "Protein": "7.17 g",
+    "Carbohydrate": "61 g",
+    "Total Sugars": "55.9 g",
+    "Added Sugars": "50.3 g",
+    "Total Fat": "22.65 g",
+    "Saturated Fat": "10.2 g",
+    "Trans Fat": "0.11 g",
+    "Cholesterol": "5.8 mg",
+    "Sodium": "231 mg"
+   },
+   "manufacturerName": "Mars International India Pvt. Ltd",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Family Treats Peanut Chocolates",
+  "handle": "family-treats-peanut-chocolates",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "144g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258166_7-snickers-peanut-family-treat-chocolate-nutritious-with-noughat-caramel.jpg"
+    },
+    "barcode": "8902433005411"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258166_7-snickers-peanut-family-treat-chocolate-nutritious-with-noughat-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258166-2_7-snickers-peanut-family-treat-chocolate-nutritious-with-noughat-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258166-3_7-snickers-peanut-family-treat-chocolate-nutritious-with-noughat-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258166-4_7-snickers-peanut-family-treat-chocolate-nutritious-with-noughat-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258166-5_7-snickers-peanut-family-treat-chocolate-nutritious-with-noughat-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258166-6_1-snickers-peanut-family-treat-chocolate-nutritious-with-noughat-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258166-7_1-snickers-peanut-family-treat-chocolate-nutritious-with-noughat-caramel.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Why Snickers Peanut Chocolate? Hunger cannot determine the course of your life, only you can! Snickers Peanut Family Treat lets you enjoy guilt-free indulgence with the goodness of nuts. Add some peanut power to your day with Snickers and be hungry no more. What makes it different? Snickers chocolates, packed with delicious and nutritious roasted peanuts also contain nougat and caramel, creating a flavour that is enough to rock your taste buds, while busting hunger pangs between meals. Do not let stress get to you, brace yourself for a chocolatey nutty collision with this pack of Snickers and bid goodbye to unwanted worries.\nFeatures:\nPack Content: This 156 g pack contains a Snickers\nPeanut Chocolate Bar.\nPeanut Delight: Treat your taste buds to the\ndeliciousness of Snickers Peanut Chocolates.\nImported Chocolates: Bring home an international\nexperience with Snickers chocolates.\nNutty Fun: Turn your moments nutty-licious with this\nfamily pack.\nDrool-Worthy Fusion: Enjoy a rich combination of\ndelicious peanuts, caramel & soft nougat in every bite of this peanut\nchocolate.\nShare & Enjoy: Add this chocolate shared pack to\nyour quality time with family & friends.\nAlso Try Snickers Family Treats and Snickers\nMiniatures Pack.\nCommonly Searched Topics: snickers, snickers\nchocolates, snickers chocolate pack, peanut chocolate, chocolates, hungry,\nchocolate bars, imported chocolates, peanut, chocolates for gifting, chocolate\npack, family pack, shared bag.",
+   "manufacturerName": "Mars International India Pvt. Ltd. 4658-A",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "5-in-1 Variety Pack",
+  "handle": "5-in-1-variety-pack",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "110g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346957_5-snickers-variety-pack-assorted-bars.jpg"
+    },
+    "barcode": "8902433030154"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346957_5-snickers-variety-pack-assorted-bars.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346957-2_5-snickers-variety-pack-assorted-bars.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346957-3_5-snickers-variety-pack-assorted-bars.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346957-4_5-snickers-variety-pack-assorted-bars.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346957-5_5-snickers-variety-pack-assorted-bars.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346957-6_5-snickers-variety-pack-assorted-bars.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346957-7_5-snickers-variety-pack-assorted-bars.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346957-8_3-snickers-variety-pack-assorted-bars.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Hungry? Grab a Snickers! When you want to bring everyone together, the Snickers 5-in-1 Chocolate Pack is like that one friend who always shows up - only this one brings two Peanut Snickers and one each of Almond, Butterscotch, and Berry Whip. These mighty hunger-fighters are ready to be unwrapped and shared.",
+   "ingredients": "Snickers Stick (20g X 2): Milk Chocolate Coating (38%): Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sal Fat, Palm Oil), Dextrose, Emulsifier (322); Centre Filling (62%): Liquid Glucose, Peanuts (16%), Sugar, Fractionated Vegetable Fat, Milk Solids, Lodized Salt, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sal Fat, Palm Oil), Dextrose, Emulsifier (322). Contains Cocoa Butter Equivalent In Addition To Cocoa Butter. Contains Peanuts, Milk And Soy. May Contain Tree Nut.\nSnickers Butterscotch Stick 22 G: Milk Chocolate Coating (38%): Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fat <5% (Sal Fat, Palm Oil), Dextrose, Emulsifier (322); Centre Filling (62%): Liquid Glucose, Peanuts (20% ), Sugar, Hydrogenated Vegetable Oil (Palm Oil), Milk Solids, Lodised Salt, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sal Fat, Palm Oil), Dextrose, Nature Identical Flavour (Butterscotch), Emulsifier (322). Contains Cocoa Butter Equivalent In Addition To Cocoa Butter. Contains Milk, Peanut And Soy. May Contain Tree Nut.\nSnickers Berry Whip Stick 22 G: Milk Chocolate (38%) Filled With Caramel (26%), Nougat (16%) With Strawberry Flavour And Peanuts (20%). Ingredients: Milk Chocolate Coating (38%): Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sal Fat, Palm Oil), Dextrose, Emulsifier (322); Centre Filling (62%): Liquid Glucose, Peanuts (20%), Sugar, Hydrogenated Vegetable Oil (Palm Oil), Milk Solids, Lodised Salt, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sal Fat, Palm Oil), Dextrose, Nature Identical Flavour (Strawberry), Emulsifier (322). Contains Cocoa Butter Equivalent In Addition To Cocoa Butter. Contains Milk, Peanut And Soy. May Contain Tree Nut.\nSnickers Almond Stick 22 G: Milk Chocolate Coating (40%): Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fat <5% (Sal Fat, Palm Oil), Dextrose, Emulsifier (322); Centre Filling (60%): Liquid Glucose, Almonds (15%), Sugar, Hydrogenated Vegetable Oil (Palm Oil), Milk Solids, Lodised Salt, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sal Fat, Palm Oil), Dextrose, Emulsifier (322). Contains Cocoa Butter Equivalent In Addition To Cocoa Butter. Contains Treenut, Milk And Soy. May Contain Peanut",
+   "nutritionalInfo": {
+    "Energy": "489 Kcal",
+    "Protein": "8.64 g",
+    "Carbohydrate": "57.6 g",
+    "Total Sugars": "52.16 g",
+    "Added Sugars": "46.7 g",
+    "Total Fat": "25.13 g",
+    "Saturated Fat": "10.4 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "5.5 mg",
+    "Sodium": "214 mg"
+   },
+   "manufacturerName": "Mars International India Pvt. Ltd. 4658-A",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mixed Minis Assorted Chocolates",
+  "handle": "mixed-minis-assorted-chocolates",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "103.5g",
+    "price": "179",
+    "compare_at_price": "179",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40290327_26-snickers-best-of-minis-snickers-bounty-miniature-twix-galaxy-smooth-milk.jpg"
+    },
+    "barcode": "8902433030512"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40290327_26-snickers-best-of-minis-snickers-bounty-miniature-twix-galaxy-smooth-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40290327-2_26-snickers-best-of-minis-snickers-bounty-miniature-twix-galaxy-smooth-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40290327-3_27-snickers-best-of-minis-snickers-bounty-miniature-twix-galaxy-smooth-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40290327-4_27-snickers-best-of-minis-snickers-bounty-miniature-twix-galaxy-smooth-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40290327-5_26-snickers-best-of-minis-snickers-bounty-miniature-twix-galaxy-smooth-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40290327-6_19-snickers-best-of-minis-snickers-bounty-miniature-twix-galaxy-smooth-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40290327-7_2-snickers-best-of-minis-snickers-bounty-miniature-twix-galaxy-smooth-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Mixed Minis pack brings together Twix, Bounty, Snickers, and Galaxy -iconic chocolates made for sharing joy. Sweet, nutty, smooth, and coconutty delights for every bond. From birthdays to farewells, this premium gift pack celebrates laughter, inside jokes, and memories. Snickers powers hunger, Galaxy unwinds, Twix is a good thing, and Bounty brings paradise.",
+   "ingredients": "Snickers Miniature: Milk Chocolate Coating (38%), Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Palm Oil), Dextrose, Emulsifier (322), Centre Filling (62%): Liquid Glucose, Peanuts (14%), Sugar, Fractionated Vegetable Fat, Milk Solids, Iodized Salt, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Salt Fat, Palm Oil), Dextrose, Emulsifier (322). Contains Cocoa Butter Equivalent In Addition To Cocoa Butter. Contains Peanuts, Milk, Soy. May Contain Treenuts.\nBounty Miniature: Milk Chocolate Coating (44%): Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Palm Oil), Emulsifier (322), Centre Filling: Desiccated Coconut (18%), Sugar, Liquid Glucose, Emulsifier (471), Humectant (422), Salt. Contains Cocoa Butter Equivalent In Addition To Cocoa Butter. Contains Milk, Soy.\nTwix Miniature: Milk Chocolate Coating (35%) Filled With Caramel (32%) And Biscuits (26%) Sugar, Liquid Glucose, Refined Wheat Flour (Maida) (17%), Edible Vegetable Fat (Palm Fat), Milk Solids, Cocoa Butter, Cocoa Solids, Salt, Emulsifier (322), Raising Agent (5000), Artificial Flavour (Ethylvanillin), Contains Wheat, Milk, Soy. May Contain Treenuts, Barley, Oats.\nGalaxy Smooth Milk: Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Salt Fat, Palm Oil), Humectant (422), Emulsifiers (322,476). Contains Cocoa Butter Equivalent In Addition To Cocoa Butter. Contains Milk And Soy. May Contain Treenuts, Barley, Oats",
+   "nutritionalInfo": {
+    "Energy": "539 kcal",
+    "Protein": "6.8 g",
+    "Carbohydrate": "55.2 g",
+    "Total Sugars": "54.7 g",
+    "Added Sugars": "47.4 g",
+    "Total Fat": "32.3 g",
+    "Saturated Fat": "20.1 g",
+    "Trans Fat": "0.36 g",
+    "Cholesterol": "18.2 mg",
+    "Sodium": "75 mg"
+   },
+   "manufacturerName": "Mars International India Pvt. Ltd",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "The Netherlands"
+  }
+ },
+ {
+  "title": "Mixed Minis Gift Tin",
+  "handle": "mixed-minis-gift-tin",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "133g",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346854_20-snickers-best-of-minis-assorted-chocolates.jpg"
+    },
+    "barcode": "8902433030741"
+   },
+   {
+    "title": "195.5g",
+    "price": "599",
+    "compare_at_price": "599",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360745_10-snickers-minis-assorted-valentine-chocolate-pack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346854_20-snickers-best-of-minis-assorted-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346854-2_20-snickers-best-of-minis-assorted-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346854-3_21-snickers-best-of-minis-assorted-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346854-4_21-snickers-best-of-minis-assorted-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346854-5_20-snickers-best-of-minis-assorted-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346854-6_17-snickers-best-of-minis-assorted-chocolates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360745_10-snickers-minis-assorted-valentine-chocolate-pack.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Mixed Minis Tin brings together Twix, Bounty, Snickers, and Galaxy – 13 iconic chocolates made for sharing joy. Sweet, nutty, smooth, and coconutty delights for every bond. From birthdays to farewells, this premium pack celebrates laughter, inside jokes, and memories. Snickers powers hunger, Galaxy unwinds, Twix is a good thing, and Bounty brings paradise.",
+   "ingredients": "Ingredients:\nSnickers Miniature: Milk\nChocolate Coating (38%): Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible\nVegetable Fats <5% (Sal Fat, Palm Oil), Dextrose, Emulsifier (322); Centre\nFilling (62%): Liquid Glucose, Peanuts (14%), Sugar, Fractionated Vegetable\nFat, Milk Solids, Iodised Salt, Cocoa Butter, Cocoa Solids, Edible Vegetable\nFats <5% (Sal Fat, Palm Oil), Dextrose, Emulsifier (322). Contains Peanuts,\nMilk And Soy. May Contain Tree Nuts.\nBounty Miniature: Milk Chocolate\nCoating (44%): Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible Vegetable\nFat <5% (Palm Oil), Emulsifier (322); Centre Filling: Desiccated Coconut\n(18%), Sugar, Liquid Glucose, Emulsifier (471), Humectant (422), Salt. Contains\nMilk And Soy.\nTwix Miniature: Milk Chocolate\nCoating (35%) Filled With Caramel (32%) And Biscuits (26%): Sugar, Liquid\nGlucose, Refined Wheat Flour (Maida) (17%), Edible Vegetable Fat (Palm Fat),\nMilk Solids, Cocoa Butter, Cocoa Solids, Salt, Emulsifier (322), Raising Agent\n(500(ii)), Artificial Flavour (Ethylvanillin). Contains Wheat, Milk And Soy.\nMay Contain Tree Nuts, Barley And Oats.\nGalaxy Smooth Milk: Sugar, Milk\nSolids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sal Fat, Palm\nOil), Humectant (422), Emulsifiers (322, 476). Contains Milk And Soy. May\nContain Barley, Wheat And Tree Nuts.     \nNutritional Facts:\nSnickers Miniature:\nEnergy: 477 kcal\nProtein: 7.24 g\nCarbohydrate: 61 g\nTotal Sugars: 55.9 g\nAdded Sugars: 50.3 g\nTotal Fat: 22.65 g\nSaturated Fat: 10.2 g\nTrans Fat: 0.11 g\nCholesterol: 5.58 mg\nSodium: 231 mg\nBounty:\nEnergy: 490 kcal\nProtein: 3.9 g\nCarbohydrate: 59.4 g\nTotal Sugars: 50 g\nAdded Sugars: 43.3 g\nTotal Fat: 25.8 g\nSaturated Fat: 20.5 g\nTrans Fat: 0.11 g\nCholesterol: 5.1 mg\nSodium: 100 mg\nTwix:\nEnergy: 493 kcal\nProtein: 4.6 g\nCarbohydrate: 66.8 g\nTotal Sugars: 48 g\nAdded Sugars: 42.8 g\nTotal Fat: 23.7 g\nSaturated Fat: 13.9 g\nTrans Fat: 0.13 g\nCholesterol: 4.2 mg\nSodium: 158 mg\nGalaxy Smooth Milk:\nEnergy: 539 kcal\nProtein: 6.8 g\nCarbohydrate: 55.2 g\nTotal Sugars: 54.7 g\nAdded Sugars: 47.4 g\nTotal Fat: 32.3 g\nSaturated Fat: 20.1 g\nTrans Fat: 0.36 g\nCholesterol: 18.2 mg\nSodium: 75 mg",
+   "storageInstructions": "Store in a cool & dry place.",
+   "manufacturerName": "Mars",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Gift Pack",
+  "handle": "chocolate-gift-pack",
+  "vendor": "Snickers (Mars)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222277_6-snickers-gift-pack-premium-chocolates-snickers.jpg"
+    },
+    "barcode": "8902433004049"
+   },
+   {
+    "title": "340g",
+    "price": "479",
+    "compare_at_price": "479",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231581_1-snickers-assorted-chocolates-gift-pack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222277_6-snickers-gift-pack-premium-chocolates-snickers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222277-2_6-snickers-gift-pack-premium-chocolates-snickers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222277-3_6-snickers-gift-pack-premium-chocolates-snickers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222277-4_6-snickers-gift-pack-premium-chocolates-snickers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222277-5_6-snickers-gift-pack-premium-chocolates-snickers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222277-6_6-snickers-gift-pack-premium-chocolates-snickers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222277-7_6-snickers-gift-pack-premium-chocolates-snickers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222277-8_6-snickers-gift-pack-premium-chocolates-snickers.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "In the world of virtual wishes and blessings, make every moment extremely special and memorable for your loved ones by gifting premium treats from Mars Wrigley. Choose Snickers chocolate gift pack to add sweetness to every occasion. Share sweet moments of love and joy with bites filled with caramel delight. Gift this chocolate gift hamper to loved ones or rekindle old friendships. This chocolate gift pack filled with nutty surprise is perfect for all your gifting needs. Delight your family and friends with the Snickers premium chocolate pack of crunchy bites. Indulge in your celebrations with these scrumptious chocolate bars fused with delicious nuts, nougat, and caramel. Buy it as a chocolate gift and indulge in irresistible Snickers goodness. Fuel up during your celebrations with the nutty delight of Snickers Miniatures. Turn these chocolate bars into a decadent cake, say no to regular brownies and make delicious Snickers brownies or try quick and tasty Snickers pudding. You can pair these Snickers bars with several things, the choice is yours!",
+   "ingredients": "Snickers Miniatures - Milk Chocolate costing (40%) Sugar, Milk Solids, Cacoa butter, Cocca solids, Edible vegetable fats <5% (Sel Fat, Palm Oil), Dextrose, Emulsifier (INS 322); Centre filling (60%): Liquid glucose, Pesnuts (14%), Sagar, Hydrogenated vegetable oil (Palm oil), Milk solids, lodised salt, Cocca butter, Cocos solid, Edible vegetable fets <5% (Sel fat, Palm oil). Deatroge, Emulsifier (INS 327). Contains Vegetable Fat In Addition To Cocoa Butter Contains Peanuts, Milk, Soy. May Contain Treenuts.\nSnickers Peanut Stick Milk Chocolate Coating (30%): Sugar, Milk Solids, Cocoa Butter, Cocoa Solids, Edible Vegetable Fats <5% (Sel Fat, Palm Oil, Deatose, Emulsifier (Ins 322) Conte Filling (62%) Liquid Glucose, Peanuts (20%). Sugar, Hydrogenated Vegetable Oil (Palm Oil), Milk Solids, Lodized Salt, Cocos Buttet Cocoa Solds, Edible Vegetable Fats <5% (Sal Fet, Pam Ol). Dextiose, Emulsifier (Ins 322). Contains Vegetable Fat In Addition To Cocda Butter Contains Peanuts, Milk, Soy. May Contain Treenuts.\nSnickers Butterscotch Stick Milk Chocolate Coating (33%) Sugar, Milk Solids, Cocoa Butter, Cocca Salida, Edible Vegetable Fats «5% (Sal Fnt, Palm Oil), Dextose, Emulsifier (Ins 322): Centre Filling (62%]: Liquid Glucose, Peanuts (20%), Sagar, Hydrogenated Vegetable Oil (Pam Oi, Milk Solids, Lodired Salt, Cocca Butter, Cocos Solds, Edible Vegetable Fats <5% (Sal Fet, Palm Oil), Dertrose, Nature Identical Flevour (Butterscotch), Emulsifier (Ins 322). Contains Vegetable Fat In Addition To Cocoa Butter Contains Peanuts, Milk And Soy. May Contain Treenuts\nSnickers Almond Stick Milk Chocolate Coating (40%) Sugar, Milk Solids, Cocoa Buttet, Cocoa Solids, Dextrose, Edible Vegetable Fats <5% (Sal Tat, Palm Oil), Emulsifier (Ins 322), Artificial Flavour (Ethyl Vanillin), Centre Filing (60%): Liquid Glucose, Almonds (17), Sugar, Hydrogenated Vegetable Oil (Palm Oil), Mik Solids, Lodized Salt, Cocoa Butter, Cocoa Solids, Dextrose, Edible Vegetable Fate <5% (Sal Fat, Palm Oil). Artificial Flavour (Etyl Vanillin). Emulsifier (Ns 322). Contains Vegetable Fat In Addition To Cocoa Butter Contains Treenuts, Milk And Soy. May Contains Peanut.",
+   "manufacturerName": "Mars International India Pvt. Ltd. 4658-A",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
+ }
+]

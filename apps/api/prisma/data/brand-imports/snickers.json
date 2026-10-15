@@ -1,0 +1,126 @@
+{
+  "brand": "Snickers (Mars)",
+  "manufacturer": "Mars Wrigley India Pvt. Ltd.",
+  "feed": "snickers-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/snickers/logo-73adea36.png",
+  "themeColor": "#4A2A1A",
+  "themeColorSecondary": "#1A3C8C",
+  "namePrefix": "Snickers ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Peanut\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Almond\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Berry\\ Whip\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Butterscotch\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Brownie\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Fruit\\ \\&\\ Nut\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Pista\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Duos\\ Peanut\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Minis\\ Peanut\\ Chocolates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Family\\ Treats\\ Peanut\\ Chocolates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^5\\-in\\-1\\ Variety\\ Pack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Minis\\ Assorted\\ Chocolates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Minis\\ Gift\\ Tin$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    }
+  ]
+}
