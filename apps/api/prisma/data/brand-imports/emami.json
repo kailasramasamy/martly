@@ -1,0 +1,70 @@
+{
+  "brand": "Emami",
+  "manufacturer": "Emami Ltd.",
+  "feed": "emami-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/emami/logo-5df591e7.png",
+  "themeColor": "#1B5AA6",
+  "themeColorSecondary": "#F28C1E",
+  "namePrefix": "Emami ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^7\\ Oils\\ in\\ One\\ Non\\-Sticky\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^7\\ Oils\\ in\\ One\\ Organics\\ Aloe\\ Vera\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^7\\ Oils\\ in\\ One\\ Organics\\ Onion\\ Blackseed\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^7\\ Oils\\ in\\ One\\ Organics\\ Rice\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Naturally\\ Fair\\ Herbal\\ Fairness\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Golden\\ Beauty\\ Talc\\ \\-\\ Alpine\\ Dew$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Emasol\\ Toilet\\ Disinfectant\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    }
+  ]
+}
