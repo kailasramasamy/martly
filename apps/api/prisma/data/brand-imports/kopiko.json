@@ -1,0 +1,30 @@
+{
+  "brand": "Kopiko (Mayora)",
+  "manufacturer": "PT. Mayora Indah Tbk",
+  "feed": "kopiko-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kopiko/logo-89844f05.png",
+  "themeColor": "#E30A2B",
+  "themeColorSecondary": "#3B2314",
+  "namePrefix": "Kopiko ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cappuccino\\ Coffee\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Cafe\\ Blend\\ Cappuccino\\ All\\ in\\ 1\\ Premix\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    }
+  ]
+}
