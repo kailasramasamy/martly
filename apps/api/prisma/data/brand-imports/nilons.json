@@ -1,0 +1,478 @@
+{
+  "brand": "Nilon's",
+  "manufacturer": "Nilon's Enterprises Pvt. Ltd.",
+  "feed": "nilons-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nilons/logo-f1b86d16.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#FFD100",
+  "namePrefix": "Nilon's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Aapan\\ Bihar\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Aapan\\ Bihar\\ Mixed\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Assal\\ Marathi\\ Green\\ Chilli\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chilli Pickle"
+      ]
+    },
+    {
+      "match": "^Assal\\ Marathi\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Assal\\ Marathi\\ Mixed\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Delhi\\ Darbar\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Delhi\\ Darbar\\ Mixed\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Johar\\ Jharkhand\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Johar\\ Jharkhand\\ Mixed\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^MP\\ Special\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^MP\\ Special\\ Mixed\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Rangilo\\ Rajasthan\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Rangilo\\ Rajasthan\\ Mixed\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Sher\\-E\\-Punjab\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Sher\\-E\\-Punjab\\ Mixed\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Simply\\ South\\ Green\\ Chilli\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chilli Pickle"
+      ]
+    },
+    {
+      "match": "^Simply\\ South\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Simply\\ South\\ Mixed\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Uttam\\ Pradesh\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Uttam\\ Pradesh\\ Mixed\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Green\\ Chilli\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chilli Pickle"
+      ]
+    },
+    {
+      "match": "^Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Vegetable\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Khatta\\ Khazana\\ Mix\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Parampara\\ Mixed\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Lime Pickle"
+      ]
+    },
+    {
+      "match": "^Stuffed\\ Red\\ Chilli\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chilli Pickle"
+      ]
+    },
+    {
+      "match": "^Dhaniya\\ Pudina\\ Sandwich\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Imlee\\ Premium\\ Tamarind\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Schezwan\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Green\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Red\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Soya\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Soy Sauce"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Ketchup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Garlic\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Biryani\\ Masala\\ Geela\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Masala\\ Geela\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Garam\\ Masala\\ Geela\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Premium\\ Kitchen\\ King\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Pasta\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Magical\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Cut\\ Sewaiyan$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Vermicelli (Sevai)"
+      ]
+    },
+    {
+      "match": "^Thin\\ \\&\\ Roasted\\ Sewaiyan$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Vermicelli (Sevai)"
+      ]
+    },
+    {
+      "match": "^Delizioso\\ Elbow\\ Macaroni$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Delizioso\\ Fusilli\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Delizioso\\ Penne\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Fusilli\\ Pasta\\ with\\ Masala\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Instant\\ Gulab\\ Jamun\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Instant\\ Idli\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Instant\\ Khaman\\ Dhokla\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Tooty\\ Fruity\\ Mixed\\ Colour$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Tooty\\ Fruity\\ Red\\ Colour$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Tooty\\ Fruity\\ Tub$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Yummy\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    }
+  ]
+}
