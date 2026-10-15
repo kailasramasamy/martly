@@ -1,0 +1,46 @@
+[
+ {
+  "title": "Pain Relief Tablets",
+  "handle": "pain-relief-tablets",
+  "vendor": "Crocin",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15 pcs",
+    "price": "79",
+    "compare_at_price": "79",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200002918_2-crocin-pain-relief-tablet.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200002918_2-crocin-pain-relief-tablet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200002918-2_1-crocin-pain-relief-tablet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200002918-3_1-crocin-pain-relief-tablet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200002918-4_1-crocin-pain-relief-tablet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200002918-5_1-crocin-pain-relief-tablet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200002918-6_1-crocin-pain-relief-tablet.jpg"
+   }
+  ],
+  "details": {
+   "description": "Crocin Pain Relief Tablet is a combination of two medicines used in the treatment of headache. It helps relieve headache by blocking the release of certain chemical messengers that causes headache. Your doctor will advise how much Crocin Pain Relief Tablet you need to take. It can be taken with or without food. You should take the medicine regularly while you do need it and try not to miss doses as it will become less effective. It should be used with caution in people who have any problems with their heart, kidneys, or liver.\nUsing this medicine may cause sleep problems (insomnia), nervousness, irritation, or restlessness. If you experience any of such side effects that do not go away or worsen, you should let your doctor know. Your doctor may be able to suggest ways of preventing or reducing the symptoms. In general, you should try to use the smallest amount necessary to control your symptoms.\nBefore using the medicine, you should tell your doctor if you have any other illnesses or disorders. It may also affect, or be affected by, some other medicines you are using so let your doctor know all the other medicines you are taking. Do not consume alcohol when on treatment with this medicine as it may cause excessive sleepiness. Pregnant and breastfeeding women should consult their doctors first before using the medicine.Composition:\nCaffeine (50mg) + Paracetamol (650mg)",
+   "manufacturerName": "GlaxoSmithKline Consumer Healthcare",
+   "countryOfOrigin": "Country of Origin",
+   "usageInstructions": "Take this medicine in the dose and duration as advised by your doctor. Swallow it as a whole. Do not chew, crush or break it."
+  }
+ }
+]

@@ -1,0 +1,22 @@
+{
+  "brand": "Crocin",
+  "manufacturer": "Haleon India",
+  "feed": "crocin-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/crocin/logo-af3f30e7.png",
+  "themeColor": "#0B2265",
+  "themeColorSecondary": "#E4002B",
+  "namePrefix": "Crocin ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Pain\\ Relief\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    }
+  ]
+}
