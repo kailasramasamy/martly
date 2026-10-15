@@ -1,0 +1,46 @@
+{
+  "brand": "Hair & Care",
+  "manufacturer": "Marico Ltd.",
+  "feed": "hair-care-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/hair-care/logo-6343ccf4.png",
+  "themeColor": "#2E7D32",
+  "themeColorSecondary": "#C9A227",
+  "namePrefix": "Hair & Care ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Damage\\ Repair\\ Aloe\\ Vera\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Almond\\ Non\\-Sticky\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Dry\\ Fruit\\ Non\\-Sticky\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Silk\\-n\\-Shine\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    }
+  ]
+}
