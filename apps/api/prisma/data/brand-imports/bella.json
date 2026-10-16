@@ -1,0 +1,374 @@
+{
+  "brand": "Bella",
+  "manufacturer": "TZMO India Pvt. Ltd.",
+  "feed": "bella-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bella/logo-f3a5a152.png",
+  "themeColor": "#3A3B96",
+  "themeColorSecondary": "#8EC9EC",
+  "namePrefix": "Bella ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Panty\\ Mini\\ Classic\\ Pantyliners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Panty\\ Soft\\ Comfort\\ Pantyliners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Panty\\ Soft\\ Classic\\ Pantyliners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Panty\\ Herbs\\ Pantyliners\\ with\\ Aloe\\ Vera$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Panty\\ Herbs\\ Verbena\\ Pantyliners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Panty\\ Intima\\ Plus\\ Long\\ Pantyliners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Panty\\ Intima\\ Large\\ Pantyliners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Panty\\ Ultra\\ Pantyliners\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Panty\\ Ultra\\ Pantyliners\\ \\-\\ Large$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Panty\\ Serenity\\ Ultra\\ Thin\\ Pantyliners\\ \\-\\ Large$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Classic\\ Comfort\\ Drai\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Classic\\ Comfort\\ Softi\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Classic\\ Drai\\ Sanitary\\ Pads\\ \\-\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Classic\\ Drai\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Classic\\ Softi\\ Sanitary\\ Pads\\ \\-\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Classic\\ Softi\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ideale\\ Night\\ Staysofti\\ Sanitary\\ Napkins\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Perfecta\\ Ultra\\ Night\\ Sanitary\\ Napkins\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Perfecta\\ Ultra\\ Silky\\ Drai\\ Sanitary\\ Napkins\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Drai\\ Sanitary\\ Napkins\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Tampo\\ Tampons\\ \\-\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Tampo\\ Tampons\\ \\-\\ Mini$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Tampo\\ Tampons\\ \\-\\ Super$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Tampo\\ Tampons\\ \\-\\ Super\\ Plus$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Intimate\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Balls$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Buds\\ \\-\\ Paper\\ Stick,\\ Pouch$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Buds\\ \\-\\ Paper\\ Stick,\\ Box$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Buds\\ \\-\\ Paper\\ Stick,\\ Jar$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Buds\\ with\\ Aloe\\ Vera$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Pads\\ \\-\\ Round$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Pads\\ with\\ Aloe\\ Vera$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Double\\ Sided\\ Cotton\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Happy\\ Baby\\ Round\\ Cotton\\ Pads\\ with\\ D\\-Panthenol\\ \\&\\ Bidens$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Happy\\ Baby\\ Round\\ Cotton\\ Pads\\ with\\ D\\-Panthenol\\ \\&\\ Chamomile$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Happy\\ Baby\\ Diapers\\ \\-\\ Newborn\\ \\(Size\\ 0\\)$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Happy\\ Baby\\ Diapers\\ \\-\\ Extra\\ Small\\ \\(2\\-4\\ kg\\)$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Happy\\ Baby\\ Diapers\\ \\-\\ Small\\ \\(3\\-8\\ kg\\)$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Happy\\ Baby\\ Diapers\\ \\-\\ Mini\\ \\(3\\-6\\ kg\\)$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Happy\\ Baby\\ Diapers\\ \\-\\ Large\\ \\(9\\-14\\ kg\\)$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Happy\\ Diaper\\ Pants\\ \\-\\ Large\\ \\(8\\-14\\ kg\\)$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Happy\\ Baby\\ Wet\\ Wipes\\ \\-\\ Sensitive$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Wipes"
+      ]
+    },
+    {
+      "match": "^Happy\\ Mini\\ Pocket\\ Tissues$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Facial\\ Tissues\\ with\\ Mint\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Paper\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    }
+  ]
+}
