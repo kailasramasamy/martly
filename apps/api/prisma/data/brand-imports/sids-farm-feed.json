@@ -1,0 +1,1176 @@
+[
+ {
+  "title": "Cow Milk",
+  "handle": "cow-milk",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "46",
+    "compare_at_price": "46",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40163720_10-sids-farm-natural-cow-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40163720_10-sids-farm-natural-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40163720-2_7-sids-farm-natural-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40163720-3_6-sids-farm-natural-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40163720-4_6-sids-farm-natural-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40163720-5_6-sids-farm-natural-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40163720-6_5-sids-farm-natural-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40163720-7_5-sids-farm-natural-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40163720-8_2-sids-farm-natural-cow-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Naturally light, easy to digest, and full of goodness, our cow’s milk is the perfect everyday choice, whether in your morning chai, cereal bowl, or a tall glass on its own. What makes it even better is its purity. Every batch is tested to ensure it is free from antibiotics, hormones, preservatives, and harmful additives.",
+   "ingredients": "Pasteurized Cow Milk",
+   "nutritionalInfo": {
+    "Energy": "66.0 kcal",
+    "Protein": "3.3 g",
+    "Carbohydrate": "5.0 g",
+    "Total Sugars": "4.9 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "3.5 g",
+    "Saturated Fat": "2.5 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "11.3 mg",
+    "Sodium": "40.0 mg",
+    "Calcium": "120.0 mg",
+    "Serving Size": "100 g or 97.1 mL"
+   },
+   "manufacturerName": "Sids Farm Pvt. Ltd. Sy.No. 319 (part)",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13618010000003"
+  }
+ },
+ {
+  "title": "Curd",
+  "handle": "curd",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370905_1-sids-farm-curd.jpg"
+    }
+   },
+   {
+    "title": "450g",
+    "price": "58",
+    "compare_at_price": "58",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40163723_7-sids-farm-natural-curd.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357379_2-sids-farm-curd.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370905_1-sids-farm-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370905-2_1-sids-farm-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370905-3_1-sids-farm-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370905-4_1-sids-farm-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370905-5_1-sids-farm-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370905-6_1-sids-farm-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370905-7_1-sids-farm-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370905-8_1-sids-farm-curd.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Our curd is everything it should be - smooth, creamy, naturally delicious and tastes just like homemade. Made from pure, batch-tested milk that’s free from antibiotics, hormones, preservatives, and harmful additives. It's pure, wholesome, worry-free curd - just the way it’s meant to be.",
+   "ingredients": "Toned Milk\n(Minimum Fat 3.0% & Minimum SNF 8.5%)\nand Active Lactic Culture.\nAllergens Information:\nContains Milk.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "61.8",
+    "Protein (g)": "3.5",
+    "Carbohydrates (g)": "5.2",
+    "Total Sugars (g)": "5.2",
+    "Added Sugars (g)": "0.0",
+    "Total Fat (g)": "3.0",
+    "Saturated Fatty Acids (g)": "1.9",
+    "Trans Fatty Acids (g)": "<0.1",
+    "Cholesterol (mg)": "9.0",
+    "Sodium (mg)": "45.0",
+    "Calcium (mg)": "154.0"
+   },
+   "manufacturerName": "(Brand Owner)",
+   "fssaiLicense": "13623999000300",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 6
+  }
+ },
+ {
+  "title": "Cow Curd",
+  "handle": "cow-curd",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40288759_6-sids-farm-cow-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288759_6-sids-farm-cow-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288759-2_5-sids-farm-cow-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288759-3_5-sids-farm-cow-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288759-4_5-sids-farm-cow-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288759-5_5-sids-farm-cow-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288759-6_4-sids-farm-cow-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288759-7_2-sids-farm-cow-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288759-8_2-sids-farm-cow-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Our Cow curd is mild, smooth, and easy on the gut - perfect for daily meals. Made from pure, tested cow milk with zero antibiotics, hormones, or preservatives. Its simple wholesome curd for everyday comfort.",
+   "ingredients": "Pasteurized Cow & Active Cultures.",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Energy": "72.2 kcal",
+    "Protein": "3.6 g",
+    "Carbohydrate": "5.3 g",
+    "Total Sugars": "2.9 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "4.1 g",
+    "Saturated Fat": "2.9 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "11.1 mg",
+    "Sodium": "54.5 mg",
+    "Calcium": "158.8 mg",
+    "% RDA per Serving*": "3.6%"
+   },
+   "manufacturerName": "SIDS FARM PRIVATE LTDSy. No. 319 (part)",
+   "fssaiLicense": "13618010000003",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Buffalo Curd",
+  "handle": "buffalo-curd",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40288760_4-sids-farm-buffalo-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288760_4-sids-farm-buffalo-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288760-2_4-sids-farm-buffalo-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288760-3_4-sids-farm-buffalo-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288760-4_4-sids-farm-buffalo-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288760-5_3-sids-farm-buffalo-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288760-6_2-sids-farm-buffalo-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288760-7_2-sids-farm-buffalo-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288760-8_2-sids-farm-buffalo-curd-100-pure-no-hormones-rich-in-calcium-protein.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Our Buffalo Curd is thick, wholesome, and naturally delicious - just like the kind you'd make at home. Made from pure, tested buffalo milk with no antibiotics, hormones, or preservatives.\nIt’s clean, wholesome curd—and a rich, satisfying addition to every meal.",
+   "ingredients": "Pasteurized Buffalo Milk, Active Cultures.",
+   "nutritionalInfo": {
+    "Energy": "83.7 kcal",
+    "Protein": "3.95 g",
+    "Carbohydrate": "5.4 g",
+    "Total Sugars": "0.5 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "5.0 g",
+    "Saturated Fat": "3.5 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "11.7 mg",
+    "Sodium": "41.0 mg",
+    "Calcium": "171.5 mg",
+    "Serving Size": "100 g",
+    "RDA": "* Recommended Dietary Allowance per serving is based"
+   },
+   "manufacturerName": "SIDS FARM PRIVATE LTDSy. No. 319 (part)",
+   "fssaiLicense": "13618010000003",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Probiotic Curd",
+  "handle": "probiotic-curd",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40305910_4-sids-farm-probiotic-natural-curd.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305910_4-sids-farm-probiotic-natural-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305910-2_3-sids-farm-probiotic-natural-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305910-3_3-sids-farm-probiotic-natural-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305910-4_3-sids-farm-probiotic-natural-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305910-5_1-sids-farm-probiotic-natural-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305910-6_1-sids-farm-probiotic-natural-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305910-7_1-sids-farm-probiotic-natural-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305910-8_1-sids-farm-probiotic-natural-curd.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Thick, smooth, and absolutely heavenly, our Probiotic Curd is not just tasty, it is great for your gut too. Packed with live probiotic cultures (10+ CFU/g), it supports digestion, boosts gut health, and helps you feel your best every day. Made from pure, batch-tested milk, it is completely free from antibiotics, hormones, preservatives, and harmful additives. It is good for your gut and great on your spoon.",
+   "ingredients": "Buffalo Milk Fat",
+   "nutritionalInfo": {
+    "Energy": "61.8 kcal",
+    "Protein": "3.5 g",
+    "Carbohydrate": "5.2 g",
+    "Total Sugars": "5.2 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "3.0 g",
+    "Saturated Fat": "1.9 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "9.0 mg",
+    "Sodium": "45.0 mg",
+    "Calcium": "154.0 mg",
+    "Serving Size": "100 g"
+   },
+   "manufacturerName": "Sids Farm Private Limited Sy. No. 319/9/1/3/3",
+   "fssaiLicense": "13618010000003",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Malai Paneer",
+  "handle": "malai-paneer",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40288763_8-sids-farm-paneer-rich-in-protein-calcium-tasty.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288763_8-sids-farm-paneer-rich-in-protein-calcium-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288763-2_8-sids-farm-paneer-rich-in-protein-calcium-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288763-3_8-sids-farm-paneer-rich-in-protein-calcium-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288763-4_8-sids-farm-paneer-rich-in-protein-calcium-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288763-5_8-sids-farm-paneer-rich-in-protein-calcium-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288763-6_7-sids-farm-paneer-rich-in-protein-calcium-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288763-7_4-sids-farm-paneer-rich-in-protein-calcium-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288763-8_4-sids-farm-paneer-rich-in-protein-calcium-tasty.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Paneer - Made with just milk, curd, and lime - nothing else. It's soft, rich, and crafted from safe, batch-tested milk with no preservatives or harmful additives.\nWe do the safety checks - so you never have to doubt your bowl of protein.\n#NotAnaloguePaneer",
+   "ingredients": "Pasteurized Milk, Curd, Lime.",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Energy": "329.5 kcal",
+    "Protein": "20.0 g",
+    "Carbohydrate": "5.6 g",
+    "Total Sugars": "1.9 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "25.2 g",
+    "Saturated Fat": "19.0 g",
+    "Trans Fat": "0.6 g",
+    "Cholesterol": "67.0 mg",
+    "Sodium": "30.0 mg",
+    "Calcium": "750.0 mg"
+   },
+   "manufacturerName": "SIDS FARM PRIVATE LTDSy. No. 319 (part)",
+   "fssaiLicense": "13618010000003",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Salted Cow Butter",
+  "handle": "salted-cow-butter",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313584_2-sids-farm-cow-butter-salted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313584_2-sids-farm-cow-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313584-2_2-sids-farm-cow-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313584-3_2-sids-farm-cow-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313584-4_2-sids-farm-cow-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313584-5_2-sids-farm-cow-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313584-6_1-sids-farm-cow-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313584-7_1-sids-farm-cow-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313584-8_1-sids-farm-cow-butter-salted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Smooth, spreadable, and gently flavoured our Cow Butter is made from pure, batch-tested cow milk. It’s the perfect companion to your breakfast, baking, and light cooking. No antibiotics. No hormones. No preservatives or artificial anything. Just clean & creamy goodness",
+   "ingredients": "Milk Fat & Iodised Salt.",
+   "nutritionalInfo": {
+    "Serving Size": "14 g",
+    "Energy": "743.3 kcal",
+    "Protein": "0.7 g",
+    "Carbohydrate": "3.3 g",
+    "Total Sugar": "<0.5 g",
+    "Added Sugars": "0.0 mg",
+    "Total Fat": "80.8 g",
+    "Saturated Fat": "54.9 g",
+    "Trans Fat": "1.9 g",
+    "Cholesterol": "228.9 mg",
+    "Sodium": "467.4 mg",
+    "Vitamin A": "4.1 mg"
+   },
+   "manufacturerName": "SIDS FARM PRIVATE LIMITED Plot",
+   "fssaiLicense": "13618010000003",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Salted Buffalo Butter",
+  "handle": "salted-buffalo-butter",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313583_2-sids-farm-buffalo-butter-salted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313583_2-sids-farm-buffalo-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313583-2_2-sids-farm-buffalo-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313583-3_2-sids-farm-buffalo-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313583-4_2-sids-farm-buffalo-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313583-5_2-sids-farm-buffalo-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313583-6_1-sids-farm-buffalo-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313583-7_1-sids-farm-buffalo-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313583-8_1-sids-farm-buffalo-butter-salted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Crafted from the Pure, Safe batch tested buffalo milk. Our Buffalo Butter is the perfect companion to your breakfast, baking, and light cooking. No antibiotics. No hormones. No preservatives or artificial anything. Just clean and creamy goodness",
+   "ingredients": "Milk Fat & Iodised Salt.",
+   "nutritionalInfo": {
+    "Serving Size": "14 g",
+    "Energy": "744.3 kcal",
+    "Protein": "0.7 g",
+    "Carbohydrate": "3.4 g",
+    "Total Sugar": "<0.5 g",
+    "Added Sugars": "0.0 mg",
+    "Total Fat": "80.9 g",
+    "Saturated Fat": "56.1 g",
+    "Trans Fat": "2.0 g",
+    "Cholesterol": "228.9 mg",
+    "Sodium": "663.2 mg",
+    "Vitamin A": "3.8 mg"
+   },
+   "manufacturerName": "SIDS FARM PRIVATE LIMITED Plot",
+   "fssaiLicense": "13618010000003",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cow Ghee",
+  "handle": "cow-ghee",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344163_1-sids-farm-cow-ghee.jpg"
+    }
+   },
+   {
+    "title": "350g",
+    "price": "595",
+    "compare_at_price": "595",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40288764_3-sids-farm-cow-ghee-thick-grainy-tasty-healthy.jpg"
+    }
+   },
+   {
+    "title": "750ml",
+    "price": "1049",
+    "compare_at_price": "1049",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344164_2-sids-farm-cow-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344163_1-sids-farm-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344163-2_1-sids-farm-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344163-3_1-sids-farm-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344163-4_1-sids-farm-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344163-5_1-sids-farm-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344163-6_1-sids-farm-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344163-7_1-sids-farm-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344163-8_1-sids-farm-cow-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sids Farm Cow Ghee is high-quality cow ghee. This ghee is rich in omega-3 and other nutrients like vitamins, minerals, protein, iron, and calcium. It is considered one of the purest forms of food. Ghee is one of the special superfoods that is rejuvenating, and powerfully health-boosting. It is easy to digest and safe for everyone. It has a higher heating temperature and works as a great replacement for vegetable oils and butter.",
+   "manufacturerName": "Sids Farm Private Limited",
+   "fssaiLicense": "10017047000835",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Buffalo Ghee",
+  "handle": "buffalo-ghee",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "495",
+    "compare_at_price": "495",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40288765_4-sids-farm-buffalo-ghee-thick-grainy-tasty-healthy.jpg"
+    }
+   },
+   {
+    "title": "750ml",
+    "price": "840",
+    "compare_at_price": "840",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344165_2-sids-farm-buffalo-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288765_4-sids-farm-buffalo-ghee-thick-grainy-tasty-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288765-2_4-sids-farm-buffalo-ghee-thick-grainy-tasty-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288765-3_3-sids-farm-buffalo-ghee-thick-grainy-tasty-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288765-4_3-sids-farm-buffalo-ghee-thick-grainy-tasty-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288765-5_3-sids-farm-buffalo-ghee-thick-grainy-tasty-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288765-6_2-sids-farm-buffalo-ghee-thick-grainy-tasty-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288765-7_2-sids-farm-buffalo-ghee-thick-grainy-tasty-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288765-8_2-sids-farm-buffalo-ghee-thick-grainy-tasty-healthy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pure Buffalo Ghee - full of rich aroma and the classic grainy texture we all love.\nNo palm oil or adulteration of any kind - It's the safest ghee you’ll find - made from pure Buffalo milk fat, sourced from milk that’s batch-tested and free from antibiotics, hormones, and any additives. Perfect for your parathas, halwas, everyday tadkas and just about everything.",
+   "ingredients": "Buffalo Milk Fat",
+   "nutritionalInfo": {
+    "Serving Size": "15 g",
+    "Energy": "899.0 kcal",
+    "Total Fat": "99.9 g",
+    "Saturated Fat": "70.6 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "31.1 mg",
+    "Carbohydrate": "0.0 g",
+    "Total Sugars": "0.0 g",
+    "Added Sugars": "0.0 g",
+    "Protein": "0.0 g",
+    "Sodium": "0.0 mg",
+    "Vitamin A": "1334.1 µg"
+   },
+   "manufacturerName": "Sids Farm Private Ltd",
+   "fssaiLicense": "13618010000003",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Buttermilk",
+  "handle": "buttermilk",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40305911_3-sids-farm-buttermilk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305911_3-sids-farm-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305911-2_3-sids-farm-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305911-3_3-sids-farm-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305911-4_2-sids-farm-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305911-5_2-sids-farm-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305911-6_2-sids-farm-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305911-7_2-sids-farm-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305911-8_2-sids-farm-buttermilk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Spiced just right and naturally light, Our Buttermilk is made the traditional way with real ginger, lime, and chilli and pure dahi. It’s the perfect balance of taste and gut-friendly goodness. It’s time to chill - the natural way!",
+   "ingredients": "Buffalo Milk Fat",
+   "nutritionalInfo": {
+    "Energy": "22.0 kcal",
+    "Protein": "1.0 g",
+    "Carbohydrate": "1.5 g",
+    "Total Sugars": "1.4 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "1.2 g",
+    "Saturated Fat": "0.8 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "4.7 mg",
+    "Sodium": "60.0 mg",
+    "Calcium": "270.0 mg",
+    "Serving Size": "100 g"
+   },
+   "manufacturerName": "SIDS FARM PRIVATE LIMITED LIG",
+   "fssaiLicense": "13618010000003",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 5
+  }
+ },
+ {
+  "title": "Spiced Buttermilk",
+  "handle": "spiced-buttermilk",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370906_1-sids-farm-spiced-buttermilk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370906_1-sids-farm-spiced-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370906-2_1-sids-farm-spiced-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370906-3_1-sids-farm-spiced-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370906-4_1-sids-farm-spiced-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370906-5_1-sids-farm-spiced-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370906-6_1-sids-farm-spiced-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370906-7_1-sids-farm-spiced-buttermilk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370906-8_1-sids-farm-spiced-buttermilk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Spiced just right and naturally light, our Buttermilk is made the traditional way with real ginger, lime, and chilli and pure dahi. It’s the perfect balance of taste and gut-friendly goodness. It’s time to chill - the natural way!",
+   "ingredients": "Water, Curd (Milk, Active Lactic Cultures), Salt, Spices & Condiments.\nAllergens Information:\nContains Milk.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "21.6",
+    "Protein (g)": "1.2",
+    "Carbohydrates (g)": "1.5",
+    "Total Sugars (g)": "1.4",
+    "Added Sugars (g)": "0.0",
+    "Total Fat (g)": "1.2",
+    "Saturated Fatty Acids (g)": "0.8",
+    "Trans Fatty Acids (g)": "<0.1",
+    "Cholesterol (mg)": "4.7",
+    "Sodium (mg)": "270.0",
+    "Calcium (mg)": "60.0"
+   },
+   "manufacturerName": "(Brand Owner)",
+   "fssaiLicense": "13623999000300",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 5
+  }
+ },
+ {
+  "title": "Sweet Lassi",
+  "handle": "sweet-lassi",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40305912_3-sids-farm-sweet-lassi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305912_3-sids-farm-sweet-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305912-2_3-sids-farm-sweet-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305912-3_3-sids-farm-sweet-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305912-4_3-sids-farm-sweet-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305912-5_3-sids-farm-sweet-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305912-6_2-sids-farm-sweet-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305912-7_2-sids-farm-sweet-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40305912-8_2-sids-farm-sweet-lassi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Our Sweet Lassi is everything you love - rich, smooth, and perfectly refreshing.\nNo Artificial Colors or Flavors. No Preservatives. No Refined sugar. And made with Dahi made from safe, tested milk. Just clean, honest ingredients and that homemade taste you grew up with.",
+   "ingredients": "Buffalo Milk Fat",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Energy": "93.0 kcal",
+    "Protein": "2.1 g",
+    "Carbohydrate": "16.4 g",
+    "Total Sugars": "16.2 g",
+    "Added Sugars": "13.1 g",
+    "Total Fat": "2.1 g",
+    "Saturated Fat": "1.4 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "7.6 mg",
+    "Sodium": "40.0 mg",
+    "Calcium": "120.0 mg"
+   },
+   "manufacturerName": "SIDS FARM PRIVATE LIMITED LIG",
+   "fssaiLicense": "13618010000003",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 5
+  }
+ },
+ {
+  "title": "Mango Lassi Cup",
+  "handle": "mango-lassi-cup",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344166_1-sids-farm-mango-lassi-cup.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344166_1-sids-farm-mango-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344166-2_1-sids-farm-mango-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344166-3_1-sids-farm-mango-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344166-4_1-sids-farm-mango-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344166-5_1-sids-farm-mango-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344166-6_1-sids-farm-mango-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344166-7_1-sids-farm-mango-lassi-cup.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mango lassi Cup 200 ml",
+   "manufacturerName": "Sids Farm Private Limited Sy",
+   "fssaiLicense": "13618010000003",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 4
+  }
+ },
+ {
+  "title": "Blueberry Lassi Cup",
+  "handle": "blueberry-lassi-cup",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344167_1-sids-farm-blueberry-lassi-cup.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344167_1-sids-farm-blueberry-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344167-2_1-sids-farm-blueberry-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344167-3_1-sids-farm-blueberry-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344167-4_1-sids-farm-blueberry-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344167-5_1-sids-farm-blueberry-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344167-6_1-sids-farm-blueberry-lassi-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344167-7_1-sids-farm-blueberry-lassi-cup.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sid's Farm Blueberry Lassi Cup is a refreshing blend of\ncreamy yogurt and real blueberry puree, offering a delightful twist to the\ntraditional Indian beverage. Packaged in a convenient cup, it's perfect for\non-the-go consumption. This lassi is free from preservatives and artificial flavours,\nensuring a natural and wholesome drink. Rich in probiotics, calcium, and\nprotein, it not only satisfies your taste buds but also supports digestive\nhealth. Ideal for hot summer days or as a nutritious snack, Sid's Farm\nBlueberry Lassi combines the goodness of dairy with the antioxidant benefits of\nblueberries, delivering a delicious and healthful experience.",
+   "manufacturerName": "Sids Farm Private Limited Sy",
+   "fssaiLicense": "13618010000003",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 4
+  }
+ },
+ {
+  "title": "Choco Ragi Crunchers",
+  "handle": "choco-ragi-crunchers",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344169_1-sids-farm-choco-ragi-crunchers.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358818_1-sids-farm-choco-ragi-crackers.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344169_1-sids-farm-choco-ragi-crunchers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344169-2_1-sids-farm-choco-ragi-crunchers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344169-3_1-sids-farm-choco-ragi-crunchers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344169-4_1-sids-farm-choco-ragi-crunchers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344169-5_1-sids-farm-choco-ragi-crunchers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344169-6_1-sids-farm-choco-ragi-crunchers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344169-7_1-sids-farm-choco-ragi-crunchers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344169-8_1-sids-farm-choco-ragi-crunchers.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sids Farm Choco Ragi Crunchers are a wholesome and tasty\nsnack made with the goodness of ragi and natural ingredients. Free from refined\nsugar, maida, artificial flavours, preservatives, and added colours, these\ncrunchers are a perfect guilt-free treat for kids and adults alike. Packed with\nnutrition and a delicious chocolatey flavour, they make snacking both healthy\nand enjoyable. Ideal for school tiffins or evening bites, Sids Farm ensures\npurity and quality in every bite. Choose these Choco Ragi Crunchers for a\nclean-label snack that supports well-being without compromising on taste or\nhealth. Enjoy nature’s crunch, the Sids Farm way!",
+   "manufacturerName": "Rebala Nutri Foodee Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Millet Pops",
+  "handle": "mango-millet-pops",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344168_1-sids-farm-mango-millet-pops.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358820_1-sids-farm-mango-millet-pops.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344168_1-sids-farm-mango-millet-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344168-2_1-sids-farm-mango-millet-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344168-3_1-sids-farm-mango-millet-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344168-4_1-sids-farm-mango-millet-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344168-5_1-sids-farm-mango-millet-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344168-6_1-sids-farm-mango-millet-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344168-7_1-sids-farm-mango-millet-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344168-8_1-sids-farm-mango-millet-pops.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sids Farm Mango Millet Pops are a healthy and delicious\nsnack made with the natural goodness of millets and real mango. These pops\ncontain no added colours, no refined sugar or maida, and are completely free\nfrom artificial flavours or preservatives. Packed with nutrients and made using\nclean, wholesome ingredients, they offer a guilt-free way to enjoy snacking.\nPerfect for kids and adults alike, Mango Millet Pops are a smart alternative to\njunk food, blending taste with health. Whether for school tiffin’s or mid-day\nmunching, Sids Farm ensures purity, quality, and the authentic taste of mango\nin every bite.",
+   "manufacturerName": "Rebala Nutri Foodee Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Honey Fruit & Nut Muesli",
+  "handle": "honey-fruit-nut-muesli",
+  "vendor": "Sid's Farm",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344170_1-sids-farm-honey-fruit-nut-muesli.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358819_1-sids-farm-honey-fruit-nut-museli.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344170_1-sids-farm-honey-fruit-nut-muesli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344170-2_1-sids-farm-honey-fruit-nut-muesli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344170-3_1-sids-farm-honey-fruit-nut-muesli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344170-4_1-sids-farm-honey-fruit-nut-muesli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344170-5_1-sids-farm-honey-fruit-nut-muesli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344170-6_1-sids-farm-honey-fruit-nut-muesli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344170-7_1-sids-farm-honey-fruit-nut-muesli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344170-8_1-sids-farm-honey-fruit-nut-muesli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sids Farm Honey Fruit & Nut Muesli is a deliciously\nhealthy breakfast option crafted with care and honesty. Made with natural\ningredients and sweetened with real honey, it contains no refined sugar, maida,\nartificial flavours, preservatives, or added colours. Packed with wholesome\ngrains, crunchy nuts, and chewy dried fruits, this muesli offers a perfect\nbalance of taste and nutrition. Whether enjoyed with milk, yogurt, or as a dry\nsnack, it fuels your day the right way. Sids Farm stays true to clean eating\nwith every spoonful—nourishing, natural, and genuinely satisfying for both kids\nand adults. Taste goodness in every bite!",
+   "manufacturerName": "Rebala Nutri Foodee Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]

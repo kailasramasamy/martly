@@ -1,0 +1,19 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Cow Milk,Sid's Farm Cow Milk,create,Dairy > Milk > Toned Milk,500ml ₹46,500ml ₹46,8,
+Curd,Sid's Farm Curd,create,Dairy > Curd & Yogurt > Fresh Curd (Dahi),180g ₹20 | 450g ₹58 | 1kg ₹150,180g ₹20 | 450g ₹58 | 1kg ₹150,8,
+Cow Curd,Sid's Farm Cow Curd,create,Dairy > Curd & Yogurt > Fresh Curd (Dahi),400g ₹80,400g ₹80,8,
+Buffalo Curd,Sid's Farm Buffalo Curd,create,Dairy > Curd & Yogurt > Fresh Curd (Dahi),400g ₹90,400g ₹90,8,
+Probiotic Curd,Sid's Farm Probiotic Curd,create,Dairy > Curd & Yogurt > Probiotic Yogurt,400g ₹80,400g ₹80,8,
+Malai Paneer,Sid's Farm Malai Paneer,create,Dairy > Paneer & Tofu > Malai Paneer,200g ₹150,200g ₹150,8,
+Salted Cow Butter,Sid's Farm Salted Cow Butter,create,Dairy > Butter > Salted Butter,100g ₹90,100g ₹90,8,
+Salted Buffalo Butter,Sid's Farm Salted Buffalo Butter,create,Dairy > Butter > Salted Butter,100g ₹90,100g ₹90,8,
+Cow Ghee,Sid's Farm Cow Ghee,create,Grocery & Staples > Ghee > Cow Ghee,100ml ₹140 | 350g ₹595 | 750ml ₹1049,100ml ₹140 | 350g ₹595 | 750ml ₹1049,8,
+Buffalo Ghee,Sid's Farm Buffalo Ghee,create,Grocery & Staples > Ghee > Buffalo Ghee,350g ₹495 | 750ml ₹840,350g ₹495 | 750ml ₹840,8,
+Buttermilk,Sid's Farm Buttermilk,create,Beverages > Milk Drinks > Buttermilk (Chaas),200ml ₹20,200ml ₹20,8,
+Spiced Buttermilk,Sid's Farm Spiced Buttermilk,create,Beverages > Milk Drinks > Buttermilk (Chaas),200ml ₹15,200ml ₹15,8,
+Sweet Lassi,Sid's Farm Sweet Lassi,create,Beverages > Milk Drinks > Lassi,200ml ₹30,200ml ₹30,8,
+Mango Lassi Cup,Sid's Farm Mango Lassi Cup,create,Beverages > Milk Drinks > Lassi,200ml ₹45,200ml ₹45,7,
+Blueberry Lassi Cup,Sid's Farm Blueberry Lassi Cup,create,Beverages > Milk Drinks > Lassi,200ml ₹45,200ml ₹45,7,
+Choco Ragi Crunchers,Sid's Farm Choco Ragi Crunchers,create,Snacks & Packaged Foods > Breakfast Cereals & Muesli > Chocos & Kids Cereal,30g ₹35 | 200g ₹190,30g ₹35 | 200g ₹190,8,MRP estimated: 30g
+Mango Millet Pops,Sid's Farm Mango Millet Pops,create,Snacks & Packaged Foods > Breakfast Cereals & Muesli > Chocos & Kids Cereal,30g ₹35 | 200g ₹190,30g ₹35 | 200g ₹190,8,MRP estimated: 30g
+Honey Fruit & Nut Muesli,Sid's Farm Honey Fruit & Nut Muesli,create,Snacks & Packaged Foods > Breakfast Cereals & Muesli > Muesli & Granola,30g ₹35 | 200g ₹190,30g ₹35 | 200g ₹190,8,MRP estimated: 30g
