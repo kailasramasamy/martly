@@ -1,0 +1,774 @@
+{
+  "brand": "The Baker's Dozen",
+  "manufacturer": "",
+  "feed": "bakers-dozen-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bakers-dozen/logo-1ead0580.png",
+  "themeColor": "#1B2A4A",
+  "themeColorSecondary": "#E8B04A",
+  "namePrefix": "The Baker's Dozen ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Assorted\\ Cookies\\ \\-\\ Choco\\ Chip,\\ Dark\\ Chocolate,\\ Peanut\\ Butter$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Butter\\ Crunch\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Cashew\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Choco\\ Chip\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Christmas\\ Shortbread\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Oats\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Coconut\\ Oats\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Dark\\ Chocolate\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Gingerbread\\ Man\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Gooey\\ Chocolate\\ Chunky\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Peanut\\ Butter\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Butter\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Nankhatai\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Danish\\ Style\\ Butter\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Handcrafted\\ Cookies\\ Gift\\ Box$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Assorted\\ Muffins\\ \\-\\ Choco\\ Chip,\\ Banana,\\ Vanilla\\ \\&\\ Coffee$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Choco\\ Chip\\ Muffins$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Mango\\ Muffin$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Protein\\ Muffin\\ \\-\\ Chocolate$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Banana\\ Muffin$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Red\\ Velvet\\ Cupcakes$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Donut\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Choco\\ Lava\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Chocolate\\ Brownie$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Banana\\ Bread$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Banana\\ Walnut\\ Cake\\ \\-\\ Wholewheat$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Banana\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Banana\\ Walnut\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Carrot\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Carrot\\ Walnut\\ Cake\\ \\-\\ Wholewheat$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Carrot\\ Walnut\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Choco\\ Chip\\ Cake\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Rich\\ Chocolate\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Gluten\\-Free\\ Chocolate\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Cake\\ \\-\\ Vegan$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Orange\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Fruit\\ \\&\\ Nut\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Loaf\\ with\\ Honey\\ \\-\\ Wholewheat$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Plum\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Plum\\ Cake\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Red\\ Velvet\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Pound\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Vanilla\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Choco\\ Filled\\ Vanilla\\ Love\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Chocolate\\ Love\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Butter\\ Croissant$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Croissant\\ \\-\\ Pain\\ Au\\ Chocolat$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Cinnamon\\ Rolls$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Baguette\\ \\-\\ Wholewheat\\ Sourdough$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Ciabatta\\ \\-\\ Wholewheat$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Focaccia\\ \\-\\ Wholewheat$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Sandwich\\ Loaf\\ \\-\\ Whole\\ Wheat$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Country\\ Sourdough$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Milk\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Whole\\ Wheat\\ Bread\\ \\-\\ Sourdough$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Country\\ Sourdough$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Cheese\\ Sourdough$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Pain\\ Au\\ Levain\\ \\-\\ Blueberry\\ \\&\\ Cranberry\\ Sourdough$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Fourgrain\\ Sourdough\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Gluten\\-Free\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^High\\-Protein\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Loaf$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Loaf$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Protein\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Garlic\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Garlic Bread"
+      ]
+    },
+    {
+      "match": "^Burger\\ Buns\\ \\-\\ Whole\\ Wheat\\ with\\ Sesame$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Burger\\ Buns$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Sesame\\ Bagel\\ \\-\\ Wholewheat$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Whole\\ Wheat\\ Pav\\ \\-\\ Sourdough$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Malabar\\ Parota$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Chapati$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Protein\\ Chapati$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Pita\\ Bread\\ \\-\\ Wholewheat$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Base$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Elaichi\\ Rusk\\ \\-\\ High\\ Protein$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Elaichi Rusk"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Cake\\ Rusk\\ \\-\\ High\\ Protein$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Rusk\\ \\-\\ Whole\\ Wheat$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    },
+    {
+      "match": "^Mexican\\ Chilli\\ Toast\\ \\-\\ Whole\\ Wheat$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ Toast\\ \\-\\ Whole\\ Wheat$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Peri\\ Peri\\ Toast$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Butter\\ Garlic\\ Toast$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Beetroot\\ Crackers\\ \\-\\ Wholewheat$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ Crackers\\ \\-\\ Wholewheat$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Lavash$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Chilli\\ Garlic\\ Breadsticks$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Protein\\ Chips\\ \\-\\ Cheesy\\ Tomato$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Protein\\ Chips\\ \\-\\ Korean\\ Kimchi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Protein\\ Chips\\ \\-\\ Masala\\ Mania$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Protein\\ Chips\\ \\-\\ Sour\\ Cream\\ \\&\\ Onion$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Chips\\ \\-\\ Baked$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Belgian\\ Chocolate\\ Cake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Classic\\ Vanilla\\ Cake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Super\\ Fluffy\\ Pancake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    }
+  ]
+}
