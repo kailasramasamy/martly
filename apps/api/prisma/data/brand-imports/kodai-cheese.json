@@ -1,0 +1,198 @@
+{
+  "brand": "Kodai Cheese",
+  "manufacturer": "Kodai Dairy Products Pvt. Ltd.",
+  "feed": "kodai-cheese-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kodai-cheese/logo-3767bd94.png",
+  "themeColor": "#1B5EA6",
+  "themeColorSecondary": "#35B6E8",
+  "namePrefix": "Kodai ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Cheddar\\ Cheese\\ \\-\\ Pepper$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Cheddar\\ Cheese\\ \\-\\ Red\\ Chilli$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Colby\\ Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Diet\\ Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Extra\\ Sharp\\ Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Triple\\ Layer\\ Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Cheese\\ Block$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Edam\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Smoked\\ Edam\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Emmental\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Feta\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Goat\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Gouda\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Gouda\\ Cheese\\ \\-\\ Cumin$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Gouda\\ Cheese\\ \\-\\ Mustard$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Gouda\\ Cheese\\ \\-\\ Pepper$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Smoked\\ Gouda\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Gruyere\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Parmesan\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Mozzarella\\ Cheese\\ \\-\\ Slab$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Smoked\\ Mozzarella\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    }
+  ]
+}

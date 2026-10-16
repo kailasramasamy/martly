@@ -1,0 +1,1391 @@
+[
+ {
+  "title": "Cheddar Cheese",
+  "handle": "cheddar-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000037_4-kodai-cheese-cheddar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000037_4-kodai-cheese-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000037-2_4-kodai-cheese-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000037-3_4-kodai-cheese-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000037-4_4-kodai-cheese-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000037-5_3-kodai-cheese-cheddar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful flavours of Kodai English Cheddar, a pure vegetarian and natural cheese crafted with the utmost care. Nestléd amidst the rolling hills of Kodaikanal, this cheddar is made using age-old techniques and the freshest milk, allowing it to develop a distinct sharp flavour and crumbly texture naturally. The cool mountain air plays a vital role in the ageing process, resulting in a cheese that is a true delight for the senses. With a rich tendency to melt in the mouth and a hazelnut-like creaminess, this cheddar will elevate your sandwiches, burgers, and pizzas to new heights. Hints of nuttiness and a touch of caramel add complexity to the flavour profile, making Kodai Cheddar Cheese a true indulgence for cheese connoisseurs and casual snackers alike. Crafted from quality ingredients and boasting a rich, creamy flavour, this cheddar is perfect for cooking and ideal for snacking.",
+   "ingredients": "Pasteurised Toned Cows Milk, Iodised Salt, Dairy Culture, Microbial (Veg.) Rennet",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "404 calories",
+    "Calories from Fat": "196 calories",
+    "Total Fat": "32g",
+    "Saturated Fat": "20g",
+    "Cholesterol": "99mg",
+    "Sodium": "633mg",
+    "Total Carbohydrate": "2g",
+    "Dietary Fiber": "0g",
+    "Sugars": "1g",
+    "Protein": "23g",
+    "Vitamin A": "14%",
+    "Vitamin C": "0%",
+    "Calcium": "710mg",
+    "Potassium": "76mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheddar Cheese - Pepper",
+  "handle": "cheddar-cheese-pepper",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40027569_6-kodai-cheese-pepper-cheddar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027569_6-kodai-cheese-pepper-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027569-2_5-kodai-cheese-pepper-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027569-3_5-kodai-cheese-pepper-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027569-4_5-kodai-cheese-pepper-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027569-5_4-kodai-cheese-pepper-cheddar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "English Cheddar embedded with crushed black pepper corns specially formulated for Indians who love their Cheddar spicy. A Popular Cheese that Originated in the Village of Cheddar, a Firm, Cow Milk Cheese that Ranges in Flavour from Mild to Sharp and in Colour from a Natural White to Pumpkin Orange. Orange Cheddars are Coloured with Annatto, a Natural Dye. If you like pepper, you can't go wrong, perfect when melted. natural like all Kodai Cheese Cheeses with no artificial flavours and preservatives.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "300 calories",
+    "Calories from Fat": "196 calories",
+    "Total Fat": "22g",
+    "Saturated Fat": "20g",
+    "Cholesterol": "79mg",
+    "Sodium": "633mg",
+    "Total Carbohydrate": "0g",
+    "Dietary Fibers": "0g",
+    "Sugars": "1g",
+    "Protein": "27g",
+    "Vitamin A": "14%",
+    "Vitamin C": "0%",
+    "Calcium": "67%",
+    "Iron": "0%"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheddar Cheese - Red Chilli",
+  "handle": "cheddar-cheese-red-chilli",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000038_7-kodai-cheese-cheddar-red-chilly.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000038_7-kodai-cheese-cheddar-red-chilly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000038-2_7-kodai-cheese-cheddar-red-chilly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000038-3_7-kodai-cheese-cheddar-red-chilly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000038-4_7-kodai-cheese-cheddar-red-chilly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000038-5_2-kodai-cheese-cheddar-red-chilly.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai Cheese began its tryst with cheese-making all those years ago in 1972 in a small factory in Kodaikanal. Kodai Cheese produces value-added, quality-based natural cow milk cheese varieties that are accepted as healthy and nutritious products in its speciality range.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised salt, Red Chilly",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "411 calories",
+    "Calories from Fat": "196 calories",
+    "Total Fat": "35.2g",
+    "Saturated Fat": "20g",
+    "Cholesterol": "79mg",
+    "Sodium": "720mg",
+    "Total Carbohydrate": "2g",
+    "Dietary Fiber": "0g",
+    "Sugars": "1g",
+    "Protein": "24g",
+    "Potassium": "76mg",
+    "Vitamin A": "14%",
+    "Vitamin C": "0%"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Colby Cheddar Cheese",
+  "handle": "colby-cheddar-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40027564_9-kodai-cheese-colby-cheddar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027564_9-kodai-cheese-colby-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027564-2_8-kodai-cheese-colby-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027564-3_8-kodai-cheese-colby-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027564-4_8-kodai-cheese-colby-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027564-5_2-kodai-cheese-colby-cheddar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Blend of American style Wisconsin Colby and English Cheddar. Reddish colour, mild taste a Popular Cheese that Originated in the Village of Cheddar. A Firm, Cow Milk Cheese that Ranges in Flavour from Mild to Sharp and in Colour from a Natural White to Pumpkin Orange. Orange Cheddars are Coloured with Annatto, a Natural Dye.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "394 calories",
+    "Calories from fat": "196 calories",
+    "Total Fat": "32g",
+    "Saturated Fat": "20g",
+    "Cholesterol": "95mg",
+    "Sodium": "633mg",
+    "Total Carbohydrate": "2.6g",
+    "Dietary Fibers": "0g",
+    "Sugars": "0.5g",
+    "Protein": "24g",
+    "Vitamin A": "14%",
+    "Vitamin C": "68%",
+    "Calcium": "67%",
+    "Iron": "0.14mg",
+    "Magnesium": "6%",
+    "Vitamin D": "6%",
+    "Potassium": "127mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Diet Cheddar Cheese",
+  "handle": "diet-cheddar-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40035680_8-kodai-cheese-diet-cheddar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40035680_8-kodai-cheese-diet-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40035680-2_8-kodai-cheese-diet-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40035680-3_8-kodai-cheese-diet-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40035680-4_8-kodai-cheese-diet-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40035680-5_2-kodai-cheese-diet-cheddar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A popular cheese that originated in the village of Cheddar, a firm, cow milk cheese that ranges in flavour from mild to sharp and in colour from a natural white to pumpkin orange. Orange cheddars are coloured with annatto, a natural dye.",
+   "ingredients": "Cow Milk, Veg Rennet, Starter Culture, Vaccumised Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "173 calories",
+    "Calories from fat": "60 calories",
+    "Total Fat": "7g",
+    "Saturated Fat": "4.3g",
+    "Sodium": "873mg",
+    "Sugars": "0.5g",
+    "Total Carbohydrate": "1.9g",
+    "Dietary Fibers": "4g",
+    "Protein": "24g",
+    "Vitamin A": "8%",
+    "Vitamin C": "0%",
+    "Calcium": "415mg",
+    "Iron": "4%",
+    "Potassium": "66mg",
+    "Cholesterol": "21mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Extra Sharp Cheddar Cheese",
+  "handle": "extra-sharp-cheddar-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "370",
+    "compare_at_price": "370",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40027566_8-kodai-cheese-extra-sharp-cheddar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027566_8-kodai-cheese-extra-sharp-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027566-2_6-kodai-cheese-extra-sharp-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027566-3_6-kodai-cheese-extra-sharp-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027566-4_6-kodai-cheese-extra-sharp-cheddar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027566-5_4-kodai-cheese-extra-sharp-cheddar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai Cheese Extra Sharp Cheddar Cheese is an English Cheddar with extra sharpness. It is a popular cheese that originated in the village of Cheddar. It is a firm, cow milk cheese that ranges in flavour from mild to sharp and in colour from a natural white to pumpkin orange. The orange cheddars are coloured with annatto, a natural dye.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vacuumised Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "300 calories",
+    "Total Fat": "22g",
+    "Saturated Fat": "20g",
+    "Cholesterol": "79mg",
+    "Sodium": "633mg",
+    "Total Carbohydrate": "2g",
+    "Dietary Fibers": "0g",
+    "Sugars": "1g",
+    "Protein": "27g",
+    "Vitamin A": "14%",
+    "Vitamin C": "0%",
+    "Calcium": "68%",
+    "Iron": "0%"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tasty Cheddar Cheese",
+  "handle": "tasty-cheddar-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000051_5-kodai-cheese-cheddar-tasty.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000051_5-kodai-cheese-cheddar-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000051-2_7-kodai-cheese-cheddar-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000051-3_7-kodai-cheese-cheddar-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000051-4_7-kodai-cheese-cheddar-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000051-5_2-kodai-cheese-cheddar-tasty.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai Cheese Tasty Cheddar Cheese is a high-quality cheese product made from pure cow's milk. It has a rich, creamy texture and a delicious, savoury flavour that is perfect for a variety of culinary uses. The cheese is vacuum-packed to preserve its freshness and is a good source of protein, vitamins, and minerals.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "300 calories",
+    "Calories from Fat": "196 calories",
+    "Total Fat": "22g",
+    "Saturated Fat": "20g",
+    "Cholesterol": "79mg",
+    "Sodium": "633mg",
+    "Total Carbohydrate": "2g",
+    "Dietary Fiber": "0g",
+    "Protein": "27g",
+    "Vitamin A": "14%",
+    "Vitamin C": "0%",
+    "Calcium": "67%",
+    "Iron": "2%"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Triple Layer Cheddar Cheese",
+  "handle": "triple-layer-cheddar-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000039_5-kodai-cheese-triple-layer.jpg"
+    },
+    "barcode": "8908003637174"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000039_5-kodai-cheese-triple-layer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000039-2_4-kodai-cheese-triple-layer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000039-3_4-kodai-cheese-triple-layer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000039-4_4-kodai-cheese-triple-layer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000039-5_2-kodai-cheese-triple-layer.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai triple layer cheese is a smooth and well-known cheese from the Western Ghats. This cheese is homemade and contains 34% fats. It is ideal for pizza, pasta, and sandwiches, with a very specific flavour combination of pepper, chilli, and regular cheddar in three layers.",
+   "ingredients": "Pasteurised whole cow's milk, salt, microbial rennet, dairy cultures, contains added natural colour (E160b)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "300 calories",
+    "Calories from Fat": "196 calories",
+    "Total Fat": "22g",
+    "Saturated Fat": "20g",
+    "Cholesterol": "79mg",
+    "Sodium": "633mg",
+    "Total Carbohydrate": "2g",
+    "Dietary Fibers": "0g",
+    "Sugars": "1g",
+    "Protein": "27g",
+    "Vitamin A": "14%",
+    "Vitamin C": "0%",
+    "Calcium": "67%",
+    "Iron": "0%"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Garlic Cheese Block",
+  "handle": "garlic-cheese-block",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "235",
+    "compare_at_price": "235",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40035681_2-kodai-cheese-garlic.jpg"
+    },
+    "barcode": "8908003637235"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40035681_2-kodai-cheese-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40035681-2_1-kodai-cheese-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40035681-3_1-kodai-cheese-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40035681-4_1-kodai-cheese-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40035681-5_1-kodai-cheese-garlic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, creamy texture of premium cheese generously infused with aromatic garlic. Whether sliced for snacking, melted atop garlic bread, or incorporated into pasta and lasagne, this versatile block elevates every dish with its savoury garlic punch. Ideal for cheese boards or casual meals.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised salt, Fresh Garlic, Emulsifiers, 0.0002% on weight nice preservative",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "375 Kcal",
+    "Protein": "22.1g",
+    "Lipids": "24g",
+    "Total Carbohydrate": "1.6g",
+    "Calcium": "616mg",
+    "Sodium": "1430mg",
+    "Vitamin A": "1210 IU"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Edam Cheese",
+  "handle": "edam-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "380",
+    "compare_at_price": "380",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000040_5-kodai-cheese-edam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000040_5-kodai-cheese-edam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000040-2_6-kodai-cheese-edam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000040-3_6-kodai-cheese-edam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000040-4_6-kodai-cheese-edam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000040-5_3-kodai-cheese-edam.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai Edam is a pasteurised cow's milk cheese slice with mild flavour, slightly salty. This contains edible salt, starter culture, rennet and colouring matter and 17% fat. Weight: 200g.",
+   "ingredients": "Cheese 45%, (Edam Cheese 15%), Water, Butter, Skimmed Milk Powder, Milk Proteins, Emulsifying Salts: E331, E339, E450, E452, Whey Powder, Salt, Colour E160",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "357 calories",
+    "Calories from Fat": "60 calories",
+    "Total Fat": "28g",
+    "Saturated Fat": "18g",
+    "Cholesterol": "89mg",
+    "Sodium": "812mg",
+    "Total Carbohydrate": "1.4g",
+    "Dietary Fiber": "0g",
+    "Sugars": "1.4g",
+    "Protein": "25g",
+    "Vitamin A": "6%",
+    "Vitamin C": "0%",
+    "Calcium": "731mg",
+    "Iron": "0.4mg",
+    "Potassium": "188mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Smoked Edam Cheese",
+  "handle": "smoked-edam-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000041_8-kodai-cheese-edam-smoked.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000041_8-kodai-cheese-edam-smoked.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000041-2_7-kodai-cheese-edam-smoked.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000041-3_7-kodai-cheese-edam-smoked.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000041-4_7-kodai-cheese-edam-smoked.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000041-5_2-kodai-cheese-edam-smoked.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai Cheese Smoked Edam Cheese is a delicious and flavourful cheese made from pure cow's milk. It has a rich, creamy texture and a smoky aroma that adds depth to any dish. This cheese is perfect for snacking, cooking, and entertaining. It can be enjoyed on its own or paired with crackers, bread, or your favourite accompaniments.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "90 calories",
+    "Calories from Fat": "60 calories",
+    "Total Fat": "35g",
+    "Saturated Fat": "20.8g",
+    "Cholesterol": "10.5g",
+    "Sodium": "760mg",
+    "Total Carbohydrate": "0g",
+    "Dietary Fiber": "0g",
+    "Sugars": "0g",
+    "Protein": "21g",
+    "Vitamin A": "6%",
+    "Vitamin C": "0%",
+    "Calcium": "20%",
+    "Iron": "0%"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Emmental Cheese",
+  "handle": "emmental-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000042_5-kodai-cheese-emmenthaler.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000042_5-kodai-cheese-emmenthaler.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000042-2_4-kodai-cheese-emmenthaler.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000042-3_4-kodai-cheese-emmenthaler.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000042-4_4-kodai-cheese-emmenthaler.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000042-5_2-kodai-cheese-emmenthaler.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai Cheese Emmental Cheese is a high-quality cheese made from pure cow's milk. It has a rich, creamy texture and a delicate, nutty flavour. This cheese is perfect for snacking, cooking, and adding to various dishes. It is vacuum-packed to maintain its freshness and can be enjoyed on its own or paired with crackers, bread, or other accompaniments.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "90 calories",
+    "Calories from Fat": "30 calories",
+    "Total Fat": "3g",
+    "Saturated Fat": "8g",
+    "Sodium": "670mg",
+    "Sugars": "0g",
+    "Total Carbohydrate": "1g",
+    "Dietary Fibers": "0g",
+    "Protein": "28g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Feta Cheese",
+  "handle": "feta-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000043_4-kodai-cheese-feta.jpg"
+    },
+    "barcode": "8908003637105"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000043_4-kodai-cheese-feta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000043-2_3-kodai-cheese-feta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000043-3_3-kodai-cheese-feta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000043-4_3-kodai-cheese-feta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000043-5_2-kodai-cheese-feta.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, creamy goodness of Kodai Cheese Feta Cheese, crafted from pure cow milk. This premium-quality cheese boasts a delightful flavour and a texture that is perfect for a variety of culinary uses. Vacuum-packed to maintain its freshness, this versatile cheese is ideal for salads, stuffing, and more. Packed with essential nutrients, it supports bone health and aids muscle recovery, making it a nutritious choice for your kitchen. Sourced from local dairy farms, this cheese is a true delight for the senses, with its velvety texture and tantalising aroma. Elevate your meals with the exceptional quality and versatility of Kodai Cheese Feta Cheese.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vacuum-Packed Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "270 calories",
+    "Calories from Fat": "196 calories",
+    "Total Fat": "21.6g",
+    "Saturated Fat": "15.1g",
+    "Cholesterol": "90mg",
+    "Sodium": "936mg",
+    "Total Carbohydrate": "2g",
+    "Dietary Fiber": "0g",
+    "Sugars": "1g",
+    "Protein": "14.4g",
+    "Vitamin A": "14%",
+    "Vitamin C": "0%",
+    "Calcium": "504mg",
+    "Iron": "0.6mg"
+   },
+   "storageInstructions": "*Store in an air-tight container in the refrigerator\n*Consume promptly after opening",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Goat Cheese",
+  "handle": "goat-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "445",
+    "compare_at_price": "445",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000044_8-kodai-cheese-goat.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000044_8-kodai-cheese-goat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000044-2_7-kodai-cheese-goat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000044-3_7-kodai-cheese-goat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000044-4_6-kodai-cheese-goat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000044-5_1-kodai-cheese-goat.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai Cheese Goat Cheese is a rich and creamy goat cheese, perfect for gourmet dishes and enhancing cheese platters. It is made from high-quality ingredients, including 75% cow milk and 25% goat milk, along with vegetable rennet, starter culture, and vacuum-salted. This goat cheese offers a delightful flavour and texture, making it a versatile addition to various culinary creations.",
+   "ingredients": "Cow Milk, Goat Milk, Vegetable Rennet, Starter Culture, Vacuum-Salted",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "264 calories",
+    "Saturated Fat": "21g",
+    "Cholesterol": "46mg",
+    "Riboflavin (Vitamin B2)": "11%",
+    "Phosphorous": "10%",
+    "Protein": "19g",
+    "Sodium": "459mg",
+    "Magnesium": "2%",
+    "Potassium": "26mg",
+    "Vitamin A": "8%",
+    "Calcium": "140mg",
+    "Iron": "1.9mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Avoid direct sunlight and high temperatures",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gouda Cheese",
+  "handle": "gouda-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000045_5-kodai-cheese-gouda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000045_5-kodai-cheese-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000045-2_4-kodai-cheese-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000045-3_4-kodai-cheese-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000045-4_4-kodai-cheese-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000045-5_2-kodai-cheese-gouda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich and buttery taste of Kodai Gouda Cheese, a delectable dairy delight crafted with a wide range of fresh additives. This cheese boasts an outstanding quality and distinctive flavour, with a 31% fat content that makes it perfect for grilling and baking. Pair it with your favourite fruits for a harmonious blend of flavours, or simply enjoy its authentic and organic goodness on its own. Kodai Gouda Cheese is an ideal choice for those seeking a cheese that is both versatile and bursting with flavour.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "363.6 calories",
+    "Calories from Fat": "241 calories",
+    "Total Fat": "28.1g",
+    "Saturated Fat": "18g",
+    "Sodium": "835.2mg",
+    "Protein": "25.6g",
+    "Total Carbohydrate": "2.3g",
+    "Dietary Fibers": "0g",
+    "Sugars": "0g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Vitamin B": "11%",
+    "Calcium": "712.8mg",
+    "Iron": "1%"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gouda Cheese - Cumin",
+  "handle": "gouda-cheese-cumin",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "370",
+    "compare_at_price": "370",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40027565_7-kodai-cheese-cumin-gouda.jpg"
+    },
+    "barcode": "8908003637051"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027565_7-kodai-cheese-cumin-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027565-2_6-kodai-cheese-cumin-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027565-3_6-kodai-cheese-cumin-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027565-4_6-kodai-cheese-cumin-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027565-5_2-kodai-cheese-cumin-gouda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai Cheese Gouda Cheese - Cumin is a Dutch-style mild cheese with a nutty flavour, flavoured with whole cumin (jeera). Gouda is a popular Dutch yellow cheese made from cows' milk, named after the city of Gouda in the Netherlands. It is one of the most popular cheeses worldwide, with the name used as a general term for a variety of similar cheeses produced in the traditional Dutch manner, as well as the Dutch original.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised Salt, Cumin",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "385 calories",
+    "Calories from fat": "241 calories",
+    "Total Fat": "13.2g",
+    "Saturated Fat": "8g",
+    "Cholesterol": "114mg",
+    "Sodium": "5025.5mg",
+    "Protein": "23.5g",
+    "Total Carbohydrate": "3.4g",
+    "Dietary Fibers": "0g",
+    "Sugars": "0g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Vitamin B": "11%",
+    "Calcium": "70.5mg",
+    "Iron": "2.6mg",
+    "Potassium": "57mg"
+   },
+   "storageInstructions": "*Store wrapped in clean muslin in the fridge on the top shelf\n*The cheese will become harder and sharper in taste as it ages",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gouda Cheese - Mustard",
+  "handle": "gouda-cheese-mustard",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "235",
+    "compare_at_price": "235",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40027567_4-kodai-cheese-mustard-gouda.jpg"
+    },
+    "barcode": "8908003637129"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027567_4-kodai-cheese-mustard-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027567-2_2-kodai-cheese-mustard-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027567-3_2-kodai-cheese-mustard-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027567-4_2-kodai-cheese-mustard-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027567-5_1-kodai-cheese-mustard-gouda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, buttery taste of this authentic Dutch-style Gouda cheese, infused with the delightful crunch of whole mustard seeds. Crafted from high-quality cow's milk, this mild and nutty cheese is perfect for melting and pairs beautifully with a variety of fruits, making it a versatile addition to your culinary repertoire. The calcium-rich composition not only strengthens bones but also supports muscle function, prevents blood clots, and maintains healthy blood pressure, potentially reducing the risk of cardiovascular disease and certain cancers. Enjoy this cheese as a delectable snack or incorporate it into your cooked dishes for an extra layer of flavour and texture.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised Salt, Mustard",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "356 calories",
+    "Calories from fat": "241 calories",
+    "Total Fat": "27g",
+    "Saturated Fat": "8g",
+    "Sodium": "670mg",
+    "Protein": "28g",
+    "Total Carbohydrate": "1g",
+    "Dietary Fibers": "0g",
+    "Sugars": "0g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Calcium": "70%",
+    "Iron": "1%",
+    "Vitamin B": "11%"
+   },
+   "storageInstructions": "*Store wrapped in clean muslin in the fridge top shelf\n*The cheese will become harder and sharper in taste as it ages",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gouda Cheese - Pepper",
+  "handle": "gouda-cheese-pepper",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "370",
+    "compare_at_price": "370",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40027568_6-kodai-cheese-pepper-gouda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027568_6-kodai-cheese-pepper-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027568-2_4-kodai-cheese-pepper-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027568-3_4-kodai-cheese-pepper-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027568-4_4-kodai-cheese-pepper-gouda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027568-5_3-kodai-cheese-pepper-gouda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dutch style mild cheese with a nutty flavour flavoured with whole mustard seeds (rai). Gouda is a Dutch yellow cheese made from cows milk. It is named after the city of Gouda in the Netherlands. One of the most popular cheeses worldwide, the name is used today as a general term for a variety of similar cheese produced in the traditional Dutch manner, as well as the Dutch original.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised salt, Pepper",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "396 calories",
+    "Total Fat": "32.4g",
+    "Saturated Fat": "18g",
+    "Sodium": "819mg",
+    "Protein": "28.8g",
+    "Total Carbohydrate": "3.6g",
+    "Dietary Fibers": "0g",
+    "Sugars": "0g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Vitamin B": "11%",
+    "Calcium": "720mg",
+    "Cholesterol": "90mg",
+    "Potassium": "122.4mg",
+    "Iron": "1%"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Smoked Gouda Cheese",
+  "handle": "smoked-gouda-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "405",
+    "compare_at_price": "405",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000046_5-kodai-cheese-gouda-smoked.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000046_5-kodai-cheese-gouda-smoked.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000046-2_7-kodai-cheese-gouda-smoked.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000046-3_7-kodai-cheese-gouda-smoked.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000046-4_7-kodai-cheese-gouda-smoked.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000046-5_2-kodai-cheese-gouda-smoked.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai smoked gouda cheese is a cheese with wide range of fresh additives. The combination of the good selection of flavours gives the cheese its outstanding quality and distinctive flavour. This contains 31% fat. Ideal for grilling and baking.",
+   "ingredients": "Cheese, Gouda Cheese, Water, Butter, Skimmed Milk Powder, Milk Proteins, Emulsifying Salts",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "356 calories",
+    "Total Fat": "27g",
+    "Saturated Fat": "18g",
+    "Cholesterol": "114mg",
+    "Sodium": "819mg",
+    "Total Carbohydrate": "2.2g",
+    "Dietary Fibers": "0g",
+    "Sugars": "2.2g",
+    "Protein": "25g",
+    "Vitamin A": "6%",
+    "Vitamin C": "0%",
+    "Calcium": "700mg",
+    "Potassium": "121mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Avoid direct sunlight and moisture",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gruyere Cheese",
+  "handle": "gruyere-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "380",
+    "compare_at_price": "380",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000047_6-kodai-cheese-gruyere.jpg"
+    },
+    "barcode": "8908003637181"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000047_6-kodai-cheese-gruyere.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000047-2_8-kodai-cheese-gruyere.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000047-3_8-kodai-cheese-gruyere.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000047-4_8-kodai-cheese-gruyere.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000047-5_2-kodai-cheese-gruyere.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai Cheese Gruyere Cheese is a premium quality cheese made from pure cow milk. It has a rich, creamy texture and a delightful flavour that pairs well with a variety of dishes. This cheese is vacuum-packed to ensure freshness and has a shelf life of 100 days.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "413 calories",
+    "Calories from Fat": "241 calories",
+    "Total Fat": "32g",
+    "Saturated Fat": "19g",
+    "Cholesterol": "110mg",
+    "Sodium": "714mg",
+    "Total Carbohydrate": "0g",
+    "Dietary Fibers": "0g",
+    "Sugars": "0.4g",
+    "Protein": "30g",
+    "Vitamin A": "11%",
+    "Vitamin C": "0%",
+    "Calcium": "1011mg",
+    "Iron": "0.2mg",
+    "Potassium": "81mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Parmesan Cheese",
+  "handle": "parmesan-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "490",
+    "compare_at_price": "490",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000050_6-kodai-cheese-parmesan.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000050_6-kodai-cheese-parmesan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000050-2_8-kodai-cheese-parmesan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000050-3_8-kodai-cheese-parmesan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000050-4_8-kodai-cheese-parmesan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000050-5_2-kodai-cheese-parmesan.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your culinary creations with KODAI CHEESE Parmesan. Crafted from premium ingredients and aged to perfection, this rich, nutty cheese adds a touch of elegance to any dish. Whether grating over pasta or enhancing a salad, its deep flavour and crumbly texture promise a gourmet experience every time.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Calories": "431 kcal",
+    "Calories from fat": "196 kcal",
+    "Total Fat": "29g",
+    "Saturated Fat": "17g",
+    "Cholesterol": "88mg",
+    "Sodium": "1526mg",
+    "Total Carbohydrate": "4g",
+    "Dietary Fibers": "0g",
+    "Sugars": "1g",
+    "Protein": "39g",
+    "Vitamin A": "9%",
+    "Vitamin C": "0%",
+    "Calcium": "111%",
+    "Iron": "5%"
+   },
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD. FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mozzarella Cheese - Slab",
+  "handle": "mozzarella-cheese-slab",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000048_5-kodai-cheese-mozzarella-slab.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000048_5-kodai-cheese-mozzarella-slab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000048-2_7-kodai-cheese-mozzarella-slab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000048-3_7-kodai-cheese-mozzarella-slab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000048-4_6-kodai-cheese-mozzarella-slab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000048-5_2-kodai-cheese-mozzarella-slab.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai mozzarella cheese is a semi-soft fresh slabbed cheese, which is made from cow milk crafted by the experts.",
+   "ingredients": "Cultured pasteurised cow milk, salt, Microbial Veg Rennet, enzymes",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "300 calories",
+    "Total Fat": "22g",
+    "Saturated Fat": "13g",
+    "Cholesterol": "79mg",
+    "Sodium": "627mg",
+    "Total Carbohydrate": "2g",
+    "Dietary Fibers": "0g",
+    "Sugars": "1g",
+    "Protein": "22g",
+    "Vitamin A": "14%",
+    "Vitamin C": "0%",
+    "Calcium": "505mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Avoid direct sunlight and moisture",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Smoked Mozzarella Cheese",
+  "handle": "smoked-mozzarella-cheese",
+  "vendor": "Kodai Cheese",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/50000049_5-kodai-cheese-mozzarella-smoked.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000049_5-kodai-cheese-mozzarella-smoked.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000049-2_4-kodai-cheese-mozzarella-smoked.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000049-3_3-kodai-cheese-mozzarella-smoked.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/50000049-4_3-kodai-cheese-mozzarella-smoked.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kodai smoked mozzarella cheese is a semi-soft, fresh, slabbed cheese made from cow's milk, crafted by experts.",
+   "ingredients": "Pure Cow Milk, Veg Rennet, Starter Culture, Vaccumised Salt",
+   "nutritionalInfo": {
+    "Serving Size": "100g",
+    "Calories": "356 kcal",
+    "Total Fat": "27g",
+    "Saturated Fat": "8g",
+    "Sodium": "670mg",
+    "Total Carbohydrate": "1g",
+    "Dietary Fibres": "0g",
+    "Protein": "27g",
+    "Calcium": "70%",
+    "Vitamin B": "11%",
+    "Vitamin C": "0%",
+    "Iron": "1%"
+   },
+   "storageInstructions": "*Once open cling wrap and store in air tight box\n*Consume within 15 days",
+   "manufacturerName": "KODAI DAIRY PRODUCTS PVT LTD.FERN HILLS ROAD",
+   "countryOfOrigin": "India"
+  }
+ }
+]
