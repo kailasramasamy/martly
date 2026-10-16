@@ -1,0 +1,246 @@
+{
+  "brand": "Tify",
+  "manufacturer": "Global Green Company Ltd.",
+  "feed": "tify-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tify/logo-4f00c1ea.png",
+  "themeColor": "#F26A1B",
+  "themeColorSecondary": "#2E7D32",
+  "namePrefix": "Tify ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Caesar\\ Salad\\ Dressing$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^Chunky\\ Salsa$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Classic\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Ketchup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Gourmet\\ Sriracha\\ Chilli\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Gourmet\\ Southwest\\ Chipotle\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Garlic\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Puree$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Green\\ Olives\\ \\-\\ Pitted$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Olives\\ \\-\\ Pimento\\ Stuffed$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Gherkins\\ \\-\\ German\\ Style\\ Sweet\\ \\&\\ Sour$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Gherkins\\ \\-\\ Classic\\ American\\ Dill$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Gherkins\\ \\-\\ French\\ Cornichons$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Gherkins\\ \\-\\ Zesty\\ Slice$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Sliced\\ Jalapeno$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Red\\ Jalapeno\\ Slices$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Sliced\\ Red\\ Paprika$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Sweet\\ \\&\\ Hot\\ Candied\\ Jalapenos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Corn\\ Kernels$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Jalapeno\\ Preserve$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^New\\ York\\ Style\\ Sweet\\ Relish$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Texas\\ Style\\ Jalapeno\\ Relish$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Snacking\\ Poppers\\ Gherkin\\ \\-\\ Sweet\\ \\&\\ Sour$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Snacking\\ Poppers\\ Gherkin\\ Chips\\ \\-\\ Sweet\\ Heat$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Snacking\\ Poppers\\ Jalapeno\\ Zesty\\ Slices$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Snacking\\ Poppers\\ Olives\\ \\-\\ Pitted$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    }
+  ]
+}
