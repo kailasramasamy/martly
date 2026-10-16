@@ -1,18 +1,10 @@
-import { useState, useRef, useCallback } from "react";
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  StyleSheet,
-  ActivityIndicator,
-  Keyboard,
-  ScrollView,
-} from "react-native";
-import * as Location from "expo-location";
+import { useMemo, useState } from "react";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { api } from "../lib/api";
-import { colors, spacing } from "../constants/theme";
+import { colors } from "../constants/theme";
+import { useStore } from "../lib/store-context";
+import { LocationPickerModal } from "./location/LocationPickerModal";
+import type { PlaceResult } from "../lib/use-place-search";
 
 interface AddressResult {
   address: string;
@@ -22,202 +14,62 @@ interface AddressResult {
   placeName?: string;
 }
 
-interface PlacePrediction {
-  place_id: string;
-  description: string;
-  structured_formatting?: {
-    main_text: string;
-    secondary_text?: string;
-  };
-}
-
 interface Props {
   onSelect: (result: AddressResult) => void;
   placeholder?: string;
   initialValue?: string;
 }
 
+// Centre of India, when neither the shopper nor their store has a location yet
+const INDIA = { latitude: 20.59, longitude: 78.96 };
+
+/**
+ * The address field: shows the chosen place and opens a full-screen map to search and pin the exact spot.
+ * The pin's coordinates are what get saved, so riders navigate to the door, not just the area.
+ */
 export function AddressAutocomplete({ onSelect, placeholder, initialValue }: Props) {
-  const [query, setQuery] = useState(initialValue ?? "");
-  const [predictions, setPredictions] = useState<PlacePrediction[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [locLoading, setLocLoading] = useState(false);
-  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const { userLocation, selectedStore } = useStore();
+  const [open, setOpen] = useState(false);
+  const [chosen, setChosen] = useState<PlaceResult | null>(null);
+  const label = chosen?.address || initialValue || "";
 
-  const fetchPredictions = useCallback(async (text: string) => {
-    if (text.length < 3) {
-      setPredictions([]);
-      return;
-    }
+  // Open where it's most likely right: the last pin, the shopper's location, then their store's area
+  const start = useMemo(() => {
+    if (chosen) return { latitude: chosen.latitude, longitude: chosen.longitude };
+    if (userLocation) return userLocation;
+    if (selectedStore?.latitude != null && selectedStore.longitude != null) return { latitude: selectedStore.latitude, longitude: selectedStore.longitude };
+    return INDIA;
+  }, [chosen, userLocation, selectedStore?.latitude, selectedStore?.longitude]);
 
-    try {
-      const res = await api.get<PlacePrediction[]>(`/api/v1/places/autocomplete?input=${encodeURIComponent(text)}`);
-      const results = res.data ?? [];
-      setPredictions(results);
-      if (results.length > 0) Keyboard.dismiss();
-    } catch {
-      setPredictions([]);
-    }
-  }, []);
-
-  const handleTextChange = (text: string) => {
-    setQuery(text);
-    if (debounceRef.current) clearTimeout(debounceRef.current);
-    debounceRef.current = setTimeout(() => fetchPredictions(text), 300);
-  };
-
-  const handleSelectPlace = async (prediction: PlacePrediction) => {
-    setLoading(true);
-    setPredictions([]);
-    setQuery(prediction.description);
-
-    const placeName = prediction.structured_formatting?.main_text
-      ?? prediction.description.split(",")[0];
-
-    try {
-      const res = await api.get<AddressResult>(`/api/v1/places/details?place_id=${prediction.place_id}`);
-      onSelect({
-        ...res.data,
-        placeName,
-      });
-    } catch {
-      onSelect({ address: prediction.description, latitude: 0, longitude: 0, placeName });
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleUseCurrentLocation = async () => {
-    setLocLoading(true);
-    try {
-      const { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== "granted") {
-        setLocLoading(false);
-        return;
-      }
-
-      const loc = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Balanced });
-      const { latitude, longitude } = loc.coords;
-
-      try {
-        const res = await api.get<AddressResult>(`/api/v1/places/reverse-geocode?lat=${latitude}&lng=${longitude}`);
-        if (res.data) {
-          setQuery(res.data.address);
-          onSelect(res.data);
-          setLocLoading(false);
-          return;
-        }
-      } catch {
-        // fall through to expo-location fallback
-      }
-
-      // Fallback to expo-location reverse geocode
-      const [geo] = await Location.reverseGeocodeAsync({ latitude, longitude });
-      if (geo) {
-        const addr = [geo.name, geo.street, geo.city, geo.region, geo.postalCode].filter(Boolean).join(", ");
-        setQuery(addr);
-        onSelect({ address: addr, latitude, longitude, pincode: geo.postalCode ?? undefined });
-      }
-    } catch {
-      // silently fail
-    } finally {
-      setLocLoading(false);
-    }
+  const confirm = (place: PlaceResult) => {
+    setChosen(place);
+    setOpen(false);
+    onSelect({
+      address: place.address, latitude: place.latitude, longitude: place.longitude,
+      pincode: place.pincode ?? undefined, placeName: place.placeName ?? undefined,
+    });
   };
 
   return (
-    <View style={styles.container}>
-      <View style={styles.inputRow}>
-        <TextInput
-          style={styles.input}
-          value={query}
-          onChangeText={handleTextChange}
-          placeholder={placeholder ?? "Search for an address..."}
-          placeholderTextColor="#94a3b8"
-        />
-        {loading && <ActivityIndicator size="small" color={colors.primary} style={styles.spinner} />}
-      </View>
-
-      <TouchableOpacity
-        style={styles.locationBtn}
-        onPress={handleUseCurrentLocation}
-        disabled={locLoading}
-        activeOpacity={0.7}
-      >
-        {locLoading ? (
-          <ActivityIndicator size="small" color={colors.primary} />
-        ) : (
-          <Ionicons name="navigate" size={16} color={colors.primary} />
-        )}
-        <Text style={styles.locationText}>Use current location</Text>
+    <View>
+      <TouchableOpacity style={styles.field} onPress={() => setOpen(true)} activeOpacity={0.7} accessibilityRole="button" accessibilityLabel={label ? `Address: ${label}. Change on map` : "Pick your address on the map"}>
+        <Ionicons name={label ? "location" : "map-outline"} size={18} color={colors.primary} />
+        <Text style={[styles.text, !label && styles.placeholder]} numberOfLines={2}>
+          {label || placeholder || "Search or pick on map"}
+        </Text>
+        <Text style={styles.action}>{label ? "Change" : "Open map"}</Text>
       </TouchableOpacity>
-
-      {predictions.length > 0 && (
-        <ScrollView style={styles.dropdown} nestedScrollEnabled keyboardShouldPersistTaps="handled">
-          {predictions.map((item) => (
-            <TouchableOpacity
-              key={item.place_id}
-              style={styles.predictionRow}
-              onPress={() => handleSelectPlace(item)}
-              activeOpacity={0.6}
-            >
-              <Ionicons name="location-outline" size={16} color="#64748b" />
-              <Text style={styles.predictionText} numberOfLines={2}>{item.description}</Text>
-            </TouchableOpacity>
-          ))}
-        </ScrollView>
-      )}
+      <LocationPickerModal visible={open} start={start} onClose={() => setOpen(false)} onConfirm={confirm} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { position: "relative" },
-  inputRow: { flexDirection: "row", alignItems: "center" },
-  input: {
-    flex: 1,
-    backgroundColor: "#fff",
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: colors.border,
-    paddingHorizontal: 12,
-    paddingVertical: 10,
-    fontSize: 14,
-    color: colors.text,
+  field: {
+    flexDirection: "row", alignItems: "center", gap: 10, minHeight: 52, paddingHorizontal: 12, paddingVertical: 10,
+    backgroundColor: "#fff", borderRadius: 10, borderWidth: 1, borderColor: colors.border,
   },
-  spinner: { position: "absolute", right: 12 },
-  locationBtn: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    paddingVertical: 8,
-    paddingHorizontal: 4,
-  },
-  locationText: {
-    fontSize: 13,
-    fontWeight: "600",
-    color: colors.primary,
-  },
-  dropdown: {
-    backgroundColor: "#fff",
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: colors.border,
-    maxHeight: 280,
-    marginTop: 4,
-  },
-  predictionRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-    padding: spacing.sm,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: colors.border,
-  },
-  predictionText: {
-    flex: 1,
-    fontSize: 13,
-    color: colors.text,
-    lineHeight: 18,
-  },
+  text: { flex: 1, fontSize: 14, color: colors.text, lineHeight: 19 },
+  placeholder: { color: "#94a3b8" },
+  action: { fontSize: 13, fontWeight: "700", color: colors.primary },
 });

@@ -4,16 +4,23 @@
  *   cd apps/api && npx tsx prisma/seed-manage-users.ts
  *
  * owner@demogrocers.dev / owner123     ORG_ADMIN      all Demo Grocers stores
+ * owner@harur.dev       / owner123     ORG_ADMIN      all Demo Grocers stores (same owner role, Harur-style login)
  * manager@harur.dev     / manager123   STORE_MANAGER  Harur Fresh Mart
- * staff@harur.dev       / staff123     STAFF          Harur Fresh Mart (sees the unsupported-role screen)
+ * staff@harur.dev       / staff123     STAFF          Harur Fresh Mart + online orders add-ons
+ * catalog@harur.dev     / catalog123   STAFF          Harur Fresh Mart + catalog editor add-ons
+ * counter@harur.dev     / counter123   STAFF          Harur Fresh Mart + stock count add-on
+ * plain@harur.dev       / plain123     STAFF          Harur Fresh Mart, no add-ons
+ * rider@harur.dev       / rider123     RIDER          Harur Fresh Mart
  * multi@martly.dev      / multi123     STORE_MANAGER  Harur Fresh Mart + Martly QA store (org picker)
  */
-import { PrismaClient, type UserRole } from "../generated/prisma/index.js";
+import { PrismaClient, type Permission, type UserRole } from "../generated/prisma/index.js";
 import bcrypt from "bcryptjs";
 
 const prisma = new PrismaClient();
 
-async function upsertStaff(email: string, password: string, name: string, role: UserRole, storeIds: string[]) {
+async function upsertStaff(
+  email: string, password: string, name: string, role: UserRole, storeIds: string[], addOns: Permission[] = [],
+) {
   const passwordHash = await bcrypt.hash(password, 10);
   const user = await prisma.user.upsert({
     where: { email },
@@ -27,7 +34,15 @@ async function upsertStaff(email: string, password: string, name: string, role: 
       create: { userId: user.id, storeId },
     });
   }
-  console.log(`${role.padEnd(14)} ${email} → ${storeIds.length} store(s)`);
+  const orgs = await prisma.store.findMany({ where: { id: { in: storeIds } }, select: { organizationId: true }, distinct: ["organizationId"] });
+  for (const { organizationId } of orgs) {
+    await prisma.memberPermission.upsert({
+      where: { userId_organizationId: { userId: user.id, organizationId } },
+      update: { permissions: addOns },
+      create: { userId: user.id, organizationId, permissions: addOns },
+    });
+  }
+  console.log(`${role.padEnd(14)} ${email} → ${storeIds.length} store(s)${addOns.length ? ` + ${addOns.join(", ")}` : ""}`);
 }
 
 async function ensureQaStore() {
@@ -52,8 +67,15 @@ async function main() {
   const qaStore = await ensureQaStore();
 
   await upsertStaff("owner@demogrocers.dev", "owner123", "Demo Owner", "ORG_ADMIN", orgStores.map((s) => s.id));
+  await upsertStaff("owner@harur.dev", "owner123", "Harur Owner", "ORG_ADMIN", orgStores.map((s) => s.id));
   await upsertStaff("manager@harur.dev", "manager123", "Harur Manager", "STORE_MANAGER", [harur.id]);
-  await upsertStaff("staff@harur.dev", "staff123", "Harur Staff", "STAFF", [harur.id]);
+  await upsertStaff("staff@harur.dev", "staff123", "Harur Staff", "STAFF", [harur.id],
+    ["ORDERS_VIEW", "ORDERS_PROCESS", "ORDERS_DISPATCH", "DELIVERY_DELIVER"]);
+  await upsertStaff("catalog@harur.dev", "catalog123", "Harur Catalog Editor", "STAFF", [harur.id],
+    ["CATALOG_PRODUCTS", "CATALOG_BRANDS"]);
+  await upsertStaff("counter@harur.dev", "counter123", "Harur Stock Counter", "STAFF", [harur.id], ["STOCK_COUNT"]);
+  await upsertStaff("plain@harur.dev", "plain123", "Harur Floor Staff", "STAFF", [harur.id]);
+  await upsertStaff("rider@harur.dev", "rider123", "Harur Rider", "RIDER", [harur.id]);
   await upsertStaff("multi@martly.dev", "multi123", "Multi-org Manager", "STORE_MANAGER", [harur.id, qaStore.id]);
 }
 

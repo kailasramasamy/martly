@@ -6,12 +6,14 @@ import type { LoginResponse } from "@martly/shared/types";
 import { useAuth } from "../../lib/auth-context";
 import { api } from "../../lib/api";
 import { completeLogin } from "../../lib/org-selection";
+import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize, fonts } from "../../constants/theme";
 
 const wordmark = require("../../assets/branding/martly-wordmark-light.png");
 
 export default function StaffLoginScreen() {
   const { login } = useAuth();
+  const keyboard = useKeyboardReveal();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -36,8 +38,13 @@ export default function StaffLoginScreen() {
   }
 
   return (
-    <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === "ios" ? "padding" : "height"}>
-      <ScrollView contentContainerStyle={styles.inner} keyboardShouldPersistTaps="handled" bounces={false}>
+    <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
+      <KeyboardAvoidingView
+      style={styles.container}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      keyboardVerticalOffset={keyboard.topOffset}
+    >
+      <ScrollView keyboardDismissMode="on-drag" ref={keyboard.scrollRef} onScroll={keyboard.onScroll} scrollEventThrottle={16} contentContainerStyle={styles.inner} keyboardShouldPersistTaps="handled" bounces={false}>
         <View style={styles.logoSection}>
           <Image source={wordmark} style={styles.wordmark} resizeMode="contain" accessibilityLabel="Martly" />
           <View style={styles.badge}>
@@ -99,6 +106,7 @@ export default function StaffLoginScreen() {
         </Pressable>
       </ScrollView>
     </KeyboardAvoidingView>
+    </View>
   );
 }
 

@@ -9,8 +9,10 @@ import { ListRow } from "../../../components/manage/ui/ListRow";
 import { EmptyState } from "../../../components/manage/ui/EmptyState";
 import { StatusPill } from "../../../components/manage/ui/StatusPill";
 import { useStoreScope } from "../../../components/manage/StoreScope";
-import { useRefreshOnFocus } from "../../../lib/manage/use-refresh-on-focus";
+import { formatINR } from "../../../components/manage/ui/tokens";
 import type { Rider } from "../../../components/manage/delivery/types";
+
+const todayLine = (t: NonNullable<Rider["today"]>) => `Today: ${t.delivered} delivered · ${t.failed} failed · ${formatINR(t.cashCollected)} cash`;
 
 const BUSY = { label: "On a trip", color: "#6d28d9", bg: "#ede9fe" };
 
@@ -19,9 +21,8 @@ export default function RidersScreen() {
   const { user } = useAuth();
   const { storeId, picker } = useStoreScope({ routeParam: true, placeholder: "Choose a store", showOrg: true });
   const { data, loading, error, reload } = useResource<Rider[]>(storeId ? `/api/v1/riders?storeId=${storeId}` : null);
-  useRefreshOnFocus(reload);
 
-  if (!can(user?.role ?? "", "riders", "list")) {
+  if (!can(user, "riders", "list")) {
     return <EmptyState icon="lock-closed-outline" title="No access" message="Only store managers and admins can manage riders." />;
   }
   const add = () => router.push(`/manage/riders/new?storeId=${storeId}`);
@@ -46,7 +47,7 @@ export default function RidersScreen() {
               icon="bicycle-outline"
               title={r.name}
               subtitle={r.phone ?? r.email}
-              caption={`${r.tripStats.completed} completed · ${r.tripStats.total} total trips`}
+              caption={r.today ? todayLine(r.today) : `${r.tripStats.completed} completed · ${r.tripStats.total} total trips`}
               trailing={r.tripStats.active > 0 ? <StatusPill {...BUSY} label={`${r.tripStats.active} active`} /> : undefined}
               onPress={() => router.push(`/manage/riders/${r.id}?storeId=${storeId}`)}
               chevron

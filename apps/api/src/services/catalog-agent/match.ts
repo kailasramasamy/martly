@@ -29,11 +29,12 @@ export function findByBarcode(prisma: PrismaClient, barcode: string) {
   });
 }
 
-/** Closest existing brands by trigram similarity (brands are shared by every organisation) */
-export function brandCandidates(prisma: PrismaClient, brandText: string) {
+/** Closest brands by trigram similarity among master brands and the organisation's own local brands */
+export function brandCandidates(prisma: PrismaClient, brandText: string, organizationId: string) {
   return prisma.$queryRaw<BrandCandidate[]>`
     SELECT id, name FROM brands
-    WHERE similarity(lower(name), lower(${brandText})) >= ${MIN_BRAND_SIMILARITY}
+    WHERE (organization_id IS NULL OR organization_id = ${organizationId})
+      AND similarity(lower(name), lower(${brandText})) >= ${MIN_BRAND_SIMILARITY}
     ORDER BY similarity(lower(name), lower(${brandText})) DESC, popularity DESC
     LIMIT 5`;
 }

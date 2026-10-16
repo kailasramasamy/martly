@@ -32,7 +32,7 @@ export function StoreSwitcherSheet({ visible, onClose }: { visible: boolean; onC
   };
 
   return (
-    <BottomSheet visible={visible} title="Switch store" onClose={onClose}>
+    <BottomSheet flush visible={visible} title="Switch store" onClose={onClose}>
       <ScrollView
         keyboardDismissMode="on-drag" contentContainerStyle={styles.list}>
         {allowAllStores && (

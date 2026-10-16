@@ -30,7 +30,7 @@ export function FeaturePickerSheet({ visible, storeId, onClose }: FeaturePickerS
   };
 
   return (
-    <BottomSheet visible={visible} title="Add featured products" onClose={onClose}>
+    <BottomSheet flush visible={visible} title="Add featured products" onClose={onClose}>
       <View style={styles.search}><SearchField value={q} onChange={setQ} placeholder="Search products" /></View>
       <FlatList
         keyboardDismissMode="on-drag"

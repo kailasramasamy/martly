@@ -1,6 +1,7 @@
 import { SectionCard } from "../ui/SectionCard";
 import { TextField } from "../ui/TextField";
-import { SelectField, type SelectOption } from "../ui/SelectField";
+import { SelectField } from "../ui/SelectField";
+import type { SelectOption } from "../ui/OptionSheet";
 import { SwitchRow } from "../ui/SwitchRow";
 import { TaxonomyPicker } from "../taxonomy/TaxonomyPicker";
 import type { DepartmentNode } from "../taxonomy/types";

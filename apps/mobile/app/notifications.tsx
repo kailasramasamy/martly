@@ -175,7 +175,7 @@ export default function NotificationsScreen() {
         </View>
       )}
 
-      <FlatList
+      <FlatList keyboardDismissMode="on-drag"
         data={notifications}
         keyExtractor={(item) => item.id}
         renderItem={renderNotification}

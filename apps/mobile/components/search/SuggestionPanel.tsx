@@ -73,7 +73,7 @@ export function SuggestionPanel({ query, suggestions, recent, onSelect, onFill }
   const rows = suggestionRows(query, suggestions, recent);
   return (
     <View style={styles.panel}>
-      <FlatList
+      <FlatList keyboardDismissMode="on-drag"
         data={rows}
         keyExtractor={(r) => `${r.recent ? "r" : "s"}:${r.text}`}
         keyboardShouldPersistTaps="handled"

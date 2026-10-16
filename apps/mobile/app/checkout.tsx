@@ -19,7 +19,9 @@ import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../lib/auth-context";
 import { useCart } from "../lib/cart-context";
 import { useStore } from "../lib/store-context";
+import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { api } from "../lib/api";
+import { SlotGrid, isBookable, type AvailableSlot } from "../components/checkout/SlotGrid";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Switch } from "react-native";
@@ -33,15 +35,6 @@ type DeliveryMode = "express" | "scheduled";
 
 const toLocalDateStr = (d: Date) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-
-interface AvailableSlot {
-  id: string;
-  startTime: string;
-  endTime: string;
-  maxOrders: number;
-  available: number;
-  full: boolean;
-}
 
 interface RazorpayData {
   razorpay_order_id: string;
@@ -61,6 +54,7 @@ export default function CheckoutScreen() {
   const router = useRouter();
   const toast = useToast();
   const insets = useSafeAreaInsets();
+  const keyboard = useKeyboardReveal();
   const { storeId, storeName, items, totalAmount, itemCount } = useCart();
   const { selectedStore } = useStore();
 
@@ -209,8 +203,8 @@ export default function CheckoutScreen() {
     api.get<AvailableSlot[]>(`/api/v1/delivery-slots/available?storeId=${storeId}&date=${selectedDate}`)
       .then((res) => {
         setAvailableSlots(res.data);
-        // Auto-select the first available (non-full) slot
-        const firstAvailable = res.data.find((s) => !s.full);
+        // Auto-select the first slot that's still open and has room
+        const firstAvailable = res.data.find(isBookable);
         if (firstAvailable) setSelectedSlot(firstAvailable);
       })
       .catch(() => setAvailableSlots([]))
@@ -484,12 +478,16 @@ export default function CheckoutScreen() {
       : null;
 
   return (
-    <KeyboardAvoidingView
+    <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
+      <KeyboardAvoidingView
       style={styles.container}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
-      keyboardVerticalOffset={100}
+      keyboardVerticalOffset={keyboard.topOffset}
     >
-      <ScrollView
+      <ScrollView keyboardDismissMode="on-drag"
+        ref={keyboard.scrollRef}
+        onScroll={keyboard.onScroll}
+        scrollEventThrottle={16}
         style={styles.scroll}
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
@@ -960,55 +958,7 @@ export default function CheckoutScreen() {
                 </ScrollView>
 
                 {/* Time slots */}
-                {loadingSlots ? (
-                  <ActivityIndicator color={colors.primary} style={{ marginVertical: 16 }} />
-                ) : availableSlots.length === 0 ? (
-                  <View style={styles.noSlotsCard}>
-                    <Ionicons name="calendar-outline" size={20} color="#94a3b8" />
-                    <Text style={styles.noSlotsText}>No time slots available for this date</Text>
-                  </View>
-                ) : (
-                  <View style={styles.slotGrid}>
-                    {availableSlots.map((slot) => {
-                      const isSelected = selectedSlot?.id === slot.id;
-                      const formatTime = (t: string) => {
-                        const [h, m] = t.split(":").map(Number);
-                        const ampm = h >= 12 ? "PM" : "AM";
-                        const h12 = h % 12 || 12;
-                        return `${h12}:${m.toString().padStart(2, "0")} ${ampm}`;
-                      };
-                      return (
-                        <TouchableOpacity
-                          key={slot.id}
-                          style={[
-                            styles.slotCard,
-                            isSelected && styles.slotCardActive,
-                            slot.full && styles.slotCardFull,
-                          ]}
-                          onPress={() => !slot.full && setSelectedSlot(slot)}
-                          disabled={slot.full}
-                          activeOpacity={0.7}
-                        >
-                          <Text style={[styles.slotTime, isSelected && styles.slotTimeActive, slot.full && styles.slotTimeFull]}>
-                            {formatTime(slot.startTime)} – {formatTime(slot.endTime)}
-                          </Text>
-                          {slot.full ? (
-                            <Text style={styles.slotFullText}>Full</Text>
-                          ) : (
-                            <Text style={[styles.slotAvailable, isSelected && styles.slotAvailableActive]}>
-                              {slot.available} slot{slot.available !== 1 ? "s" : ""} left
-                            </Text>
-                          )}
-                          {isSelected && (
-                            <View style={styles.slotCheck}>
-                              <Ionicons name="checkmark-circle" size={16} color={colors.primary} />
-                            </View>
-                          )}
-                        </TouchableOpacity>
-                      );
-                    })}
-                  </View>
-                )}
+                <SlotGrid slots={availableSlots} loading={loadingSlots} selectedId={selectedSlot?.id ?? null} onSelect={setSelectedSlot} />
               </View>
             )}
           </View>
@@ -1111,8 +1061,9 @@ export default function CheckoutScreen() {
               <Switch
                 value={useWallet}
                 onValueChange={setUseWallet}
-                trackColor={{ false: "#e2e8f0", true: colors.primary + "50" }}
-                thumbColor={useWallet ? colors.primary : "#94a3b8"}
+                trackColor={{ false: "#e2e8f0", true: colors.primary }}
+                ios_backgroundColor="#e2e8f0"
+                thumbColor="#fff"
               />
             </View>
             {useWallet && walletDeduction > 0 && basketTotal > 0 && (walletBalance - walletDeduction) < basketTotal && (
@@ -1152,8 +1103,9 @@ export default function CheckoutScreen() {
               <Switch
                 value={useLoyalty}
                 onValueChange={setUseLoyalty}
-                trackColor={{ false: "#e2e8f0", true: "#d97706" + "50" }}
-                thumbColor={useLoyalty ? "#d97706" : "#94a3b8"}
+                trackColor={{ false: "#e2e8f0", true: "#d97706" }}
+                ios_backgroundColor="#e2e8f0"
+                thumbColor="#fff"
               />
             </View>
           </View>
@@ -1405,7 +1357,7 @@ export default function CheckoutScreen() {
           <View style={styles.addressPickerSheet} onStartShouldSetResponder={() => true}>
             <View style={styles.addressPickerHandle} />
             <Text style={styles.addressPickerTitle}>Select delivery address</Text>
-            <ScrollView style={{ maxHeight: 320 }} showsVerticalScrollIndicator={false}>
+            <ScrollView keyboardDismissMode="on-drag" style={{ maxHeight: 320 }} showsVerticalScrollIndicator={false}>
               {addresses.map((addr) => {
                 const lookup = addressLookups[addr.id];
                 return (
@@ -1495,6 +1447,7 @@ export default function CheckoutScreen() {
         />
       )}
     </KeyboardAvoidingView>
+    </View>
   );
 }
 
@@ -2043,76 +1996,6 @@ const styles = StyleSheet.create({
   },
   dateChipMonthActive: {
     color: colors.primary,
-  },
-  slotGrid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 8,
-    marginTop: 12,
-  },
-  slotCard: {
-    backgroundColor: "#fff",
-    borderRadius: 10,
-    borderWidth: 1.5,
-    borderColor: colors.border,
-    paddingHorizontal: 12,
-    paddingVertical: 10,
-    minWidth: "47%" as any,
-    flex: 1,
-    position: "relative",
-  },
-  slotCardActive: {
-    borderColor: colors.primary,
-    backgroundColor: colors.primary + "08",
-  },
-  slotCardFull: {
-    backgroundColor: "#f8fafc",
-    opacity: 0.6,
-  },
-  slotTime: {
-    fontSize: 13,
-    fontWeight: "700",
-    color: colors.text,
-  },
-  slotTimeActive: {
-    color: colors.primary,
-  },
-  slotTimeFull: {
-    color: "#94a3b8",
-  },
-  slotAvailable: {
-    fontSize: 11,
-    color: "#64748b",
-    marginTop: 2,
-  },
-  slotAvailableActive: {
-    color: colors.primary,
-  },
-  slotFullText: {
-    fontSize: 11,
-    fontWeight: "600",
-    color: "#dc2626",
-    marginTop: 2,
-  },
-  slotCheck: {
-    position: "absolute",
-    top: 6,
-    right: 6,
-  },
-  noSlotsCard: {
-    backgroundColor: "#f8fafc",
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: colors.border,
-    padding: 20,
-    alignItems: "center",
-    gap: 6,
-    marginTop: 12,
-  },
-  noSlotsText: {
-    fontSize: 13,
-    color: "#94a3b8",
-    textAlign: "center",
   },
   expressUnavailableBanner: {
     flexDirection: "row",

@@ -2,13 +2,14 @@ import type { FastifyInstance } from "fastify";
 import { upsertExpressDeliveryConfigSchema } from "@martly/shared/schemas";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
 export async function expressDeliveryRoutes(app: FastifyInstance) {
   // GET /config?storeId=X — Get express delivery config for a store
   app.get("/config", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG)],
   }, async (request, reply) => {
     const { storeId } = request.query as { storeId?: string };
     if (!storeId) return reply.badRequest("storeId is required");
@@ -27,7 +28,7 @@ export async function expressDeliveryRoutes(app: FastifyInstance) {
 
   // PUT /config?storeId=X — Upsert express delivery config
   app.put("/config", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG)],
   }, async (request, reply) => {
     const { storeId } = request.query as { storeId?: string };
     if (!storeId) return reply.badRequest("storeId is required");

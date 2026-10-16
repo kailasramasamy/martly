@@ -21,7 +21,7 @@ interface Props {
 
 export function StoreSubscriptionSheet({ store, onClose, onSaved }: Props) {
   return (
-    <BottomSheet visible={!!store} title={store?.name ?? ""} onClose={onClose}>
+    <BottomSheet scrollable visible={!!store} title={store?.name ?? ""} onClose={onClose}>
       {store ? <StoreFields key={store.id} store={store} onSaved={onSaved} /> : null}
     </BottomSheet>
   );
@@ -73,5 +73,5 @@ function StoreFields({ store, onSaved }: { store: StoreSubscriptionConfig; onSav
 }
 
 const styles = StyleSheet.create({
-  body: { paddingHorizontal: 16, paddingBottom: 16 },
+  body: { paddingBottom: 16 },
 });

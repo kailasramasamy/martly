@@ -16,7 +16,7 @@ export function CollectionListScreen() {
   const { user } = useAuth();
   const [q, setQ] = useState("");
   const list = usePagedList<CollectionRecord>("/api/v1/collections", { q });
-  const canCreate = can(user?.role ?? "", "collections", "create");
+  const canCreate = can(user, "collections", "create");
 
   return (
     <ManageListScreen

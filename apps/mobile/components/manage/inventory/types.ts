@@ -39,6 +39,8 @@ export interface CatalogProduct {
   images: string[];
   brand: { name: string } | null;
   subcategory: { name: string } | null;
+  /** null = master catalog product; set = the organization's own */
+  organizationId: string | null;
   variants: CatalogVariant[];
   /** Present only when the list was requested with includeStoreProducts */
   storeProducts?: { id: string; storeId: string; variantId: string }[];

@@ -93,7 +93,7 @@ export default function ProfileScreen() {
 
   return (
     <View style={styles.container}>
-      <ScrollView {...tabBarScroll.scrollProps} showsVerticalScrollIndicator={false} contentContainerStyle={styles.scroll}>
+      <ScrollView keyboardDismissMode="on-drag" {...tabBarScroll.scrollProps} showsVerticalScrollIndicator={false} contentContainerStyle={tabBarScroll.contentStyle(styles.scroll)}>
         <ProfileHeader
           name={user?.name} phone={user?.phone} email={user?.email}
           walletBalance={summary.walletBalance} loyaltyPoints={summary.loyaltyPoints} isMember={summary.isMember}

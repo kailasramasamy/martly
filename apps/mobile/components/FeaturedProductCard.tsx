@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { View, Text, TouchableOpacity, Pressable, Image, StyleSheet, Dimensions } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -22,9 +22,15 @@ export const GRID_CARD_WIDTH = (SCREEN_WIDTH - GRID_H_PADDING * 2 - GRID_GAP) / 
 // Square image tile flush with the card edges: card width minus its 1px borders
 export const imageTileSize = (cardWidth: number) => cardWidth - 2;
 const CONTROL_WIDTH = 54;
+// Once something's in the cart the stepper widens, so − and + are easy to hit with a thumb,
+// as far as the card allows while leaving room for the size label beside it
+const STEPPER_WIDTH = 84;
+const UNIT_LABEL_ROOM = 56;
+const stepperWidth = (cardWidth: number) => Math.max(CONTROL_WIDTH, Math.min(STEPPER_WIDTH, cardWidth - UNIT_LABEL_ROOM));
 const CONTROL_HEIGHT = 32;
 // Extends the 32pt controls to a 44pt touch target
 const HIT_SLOP = { top: 6, bottom: 6, left: 4, right: 4 };
+const STEP_HIT_SLOP = { top: 8, bottom: 8, left: 6, right: 6 };
 
 interface FeaturedProductCardProps {
   item: StoreProduct;
@@ -117,24 +123,25 @@ interface AddControlProps {
   onAddToCart: (sp: StoreProduct) => void;
   onUpdateQuantity: (storeProductId: string, quantity: number) => void;
   onShowVariants?: () => void;
+  cardWidth: number;
 }
 
-// Same footprint for ADD and the stepper so the card doesn't shift when an item is added.
+// ADD stays compact; the stepper is wider for thumbs, and the size label beside it gives way.
 // Multi-variant products open the size picker from every control, since the size to change is ambiguous.
-function AddControl({ item, quantity, variantCount, isOutOfStock, onAddToCart, onUpdateQuantity, onShowVariants }: AddControlProps) {
+function AddControl({ item, quantity, variantCount, isOutOfStock, onAddToCart, onUpdateQuantity, onShowVariants, cardWidth }: AddControlProps) {
   const hasOptions = variantCount > 1;
   const increment = hasOptions ? onShowVariants : () => onAddToCart(item);
   const decrement = hasOptions ? onShowVariants : () => onUpdateQuantity(item.id, quantity - 1);
 
   if (quantity > 0) {
     return (
-      <View style={styles.stepper}>
-        <TouchableOpacity style={styles.stepBtn} onPress={decrement} hitSlop={HIT_SLOP} accessibilityLabel="Remove one">
-          <Ionicons name="remove" size={15} color="#fff" />
+      <View style={[styles.stepper, { width: stepperWidth(cardWidth) }]}>
+        <TouchableOpacity style={styles.stepBtn} onPress={decrement} hitSlop={STEP_HIT_SLOP} accessibilityLabel="Remove one">
+          <Ionicons name="remove" size={17} color="#fff" />
         </TouchableOpacity>
         <Text style={styles.stepText}>{quantity}</Text>
-        <TouchableOpacity style={styles.stepBtn} onPress={increment} hitSlop={HIT_SLOP} accessibilityLabel="Add one more">
-          <Ionicons name="add" size={15} color="#fff" />
+        <TouchableOpacity style={styles.stepBtn} onPress={increment} hitSlop={STEP_HIT_SLOP} accessibilityLabel="Add one more">
+          <Ionicons name="add" size={17} color="#fff" />
         </TouchableOpacity>
       </View>
     );
@@ -192,10 +199,46 @@ function CardDetails({ item, lowStock }: { item: StoreProduct; lowStock: number 
   );
 }
 
+/** Opens the product page on a card tap, unless the tap was on the wishlist heart */
+function useOpenProduct(productId: string, storeId: string | undefined, onOpen?: () => void) {
+  const heartTapped = useRef(false);
+  const openProduct = () => {
+    if (heartTapped.current) { heartTapped.current = false; return; }
+    const params: Record<string, string> = { id: productId };
+    if (storeId) params.storeId = storeId;
+    onOpen?.();
+    router.push({ pathname: "/product/[id]", params });
+  };
+  return { openProduct, heartTapped };
+}
+
+/** What's left to sell of a size: out of stock at 0, low at 5 or fewer */
+function stockState(item: StoreProduct) {
+  const available = item.availableStock ?? (item.stock - (item.reservedStock ?? 0));
+  return { available, isOutOfStock: available <= 0, isLowStock: available > 0 && available <= 5 };
+}
+
+/**
+ * When the cart changes elsewhere (e.g. a size added on the product page) and the size on show isn't in it,
+ * switch to a size that is, so the card shows its stepper. Picking a size by hand doesn't change the cart, so it's left alone.
+ */
+function useFollowCartSize(sizes: StoreProduct[], selectedId: string, select: (id: string) => void, quantityOf?: (id: string) => number) {
+  const inCart = quantityOf ? sizes.filter((s) => quantityOf(s.id) > 0).map((s) => `${s.id}:${quantityOf(s.id)}`).join(",") : "";
+  const latest = useRef({ selectedId, sizes, quantityOf });
+  latest.current = { selectedId, sizes, quantityOf };
+  useEffect(() => {
+    const { selectedId: current, sizes: all, quantityOf: qty } = latest.current;
+    if (!qty || qty(current) > 0) return;
+    const carted = all.find((s) => qty(s.id) > 0);
+    if (carted) select(carted.id);
+  }, [inCart, select]);
+}
+
 function StandardCard(props: FeaturedProductCardProps) {
   const { onAddToCart, onUpdateQuantity, storeId, onShowVariants, isWishlisted, onToggleWishlist, isMember, width } = props;
   const sizes = bySize(props.variants ?? [props.item]);
   const [selectedId, setSelectedId] = useState(props.item.id);
+  useFollowCartSize(sizes, selectedId, setSelectedId, props.quantityOf);
   // The chosen size drives the photo, price and ADD; it starts on the cheapest (the list's primary)
   const item = sizes.find((s) => s.id === selectedId) ?? props.item;
   const quantity = props.quantityOf?.(item.id) ?? props.quantity ?? 0;
@@ -203,18 +246,8 @@ function StandardCard(props: FeaturedProductCardProps) {
   const tile = imageTileSize(cardWidth);
   // Swiping sizes only in grids: in a horizontal rail the swipe belongs to the rail
   const swipeable = width != null && sizes.length > 1;
-  const available = item.availableStock ?? (item.stock - (item.reservedStock ?? 0));
-  const isOutOfStock = available <= 0;
-  const isLowStock = !isOutOfStock && available <= 5;
-  const heartTapped = useRef(false);
-
-  const openProduct = () => {
-    if (heartTapped.current) { heartTapped.current = false; return; }
-    const params: Record<string, string> = { id: item.product.id };
-    if (storeId) params.storeId = storeId;
-    props.onOpen?.();
-    router.push({ pathname: "/product/[id]", params });
-  };
+  const { available, isOutOfStock, isLowStock } = stockState(item);
+  const { openProduct, heartTapped } = useOpenProduct(item.product.id, storeId, props.onOpen);
 
   return (
     <TouchableOpacity style={[styles.card, { width: cardWidth }, width != null && styles.gridCard]} onPress={openProduct} activeOpacity={0.8}>
@@ -240,7 +273,7 @@ function StandardCard(props: FeaturedProductCardProps) {
         <UnitBar item={item} variantCount={1}>
           <AddControl
             item={item} quantity={quantity} variantCount={1} isOutOfStock={isOutOfStock}
-            onAddToCart={onAddToCart} onUpdateQuantity={onUpdateQuantity}
+            onAddToCart={onAddToCart} onUpdateQuantity={onUpdateQuantity} cardWidth={cardWidth}
           />
         </UnitBar>
       </View>
@@ -320,8 +353,8 @@ const styles = StyleSheet.create({
   addBtnTextDisabled: { color: "#94a3b8" },
   stepper: {
     flexDirection: "row", alignItems: "center", justifyContent: "space-between",
-    width: CONTROL_WIDTH, height: CONTROL_HEIGHT, borderRadius: 9, backgroundColor: colors.primary,
+    height: CONTROL_HEIGHT, borderRadius: 9, backgroundColor: colors.primary,
   },
-  stepBtn: { width: 20, height: 32, alignItems: "center", justifyContent: "center" },
-  stepText: { fontFamily: fonts.extrabold, fontSize: 13, color: "#fff", textAlign: "center" },
+  stepBtn: { flex: 1, height: CONTROL_HEIGHT, alignItems: "center", justifyContent: "center" },
+  stepText: { minWidth: 20, fontFamily: fonts.extrabold, fontSize: 13, color: "#fff", textAlign: "center" },
 });

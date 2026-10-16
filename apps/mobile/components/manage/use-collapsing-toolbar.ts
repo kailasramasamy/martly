@@ -20,7 +20,8 @@ export function useCollapsingToolbar(enabled: boolean) {
   return {
     height,
     translateY,
-    onLayout: (e: LayoutChangeEvent) => setHeight(e.nativeEvent.layout.height),
+    // Rounded so sub-pixel relayouts don't rebuild the native animation graph
+    onLayout: (e: LayoutChangeEvent) => setHeight(Math.round(e.nativeEvent.layout.height)),
     onScroll: Animated.event([{ nativeEvent: { contentOffset: { y: scrollY } } }], { useNativeDriver: true }),
   };
 }

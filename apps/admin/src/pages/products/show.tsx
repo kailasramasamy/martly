@@ -1,3 +1,4 @@
+import { can } from "@martly/shared/permissions";
 import { Show } from "@refinedev/antd";
 import { useShow, useGetIdentity } from "@refinedev/core";
 import { Typography, Image, Table, Tag, Card, Descriptions, Row, Col, Space, Button, Alert, Badge } from "antd";
@@ -86,17 +87,16 @@ const NutritionalInfoView = ({ data }: { data: any }) => {
 export const ProductShow = () => {
   const { query } = useShow({ resource: "products" });
   const record = query?.data?.data;
-  const { data: identity } = useGetIdentity<{ role: string }>();
+  const { data: identity } = useGetIdentity<{ role: string; permissions?: string[] }>();
   const navigate = useNavigate();
 
   if (!record) return null;
 
   const isMasterProduct = record.organizationId == null;
-  const isOrgAdmin = identity?.role === "ORG_ADMIN";
   const isSuperAdmin = identity?.role === "SUPER_ADMIN";
 
-  // SUPER_ADMIN can edit master only; ORG_ADMIN can edit their org products only
-  const canEdit = isSuperAdmin ? isMasterProduct : isOrgAdmin ? !isMasterProduct : false;
+  // SUPER_ADMIN can edit master only; org members with edit permission can edit their org products only
+  const canEdit = isSuperAdmin ? isMasterProduct : can(identity, "products", "edit") && !isMasterProduct;
 
   const foodTypeConfig = record.foodType ? FOOD_TYPE_CONFIG[record.foodType as string] : null;
   const productTypeConfig = record.productType ? PRODUCT_TYPE_CONFIG[record.productType as string] : null;
@@ -242,8 +242,8 @@ export const ProductShow = () => {
           </Col>
         )}
 
-        {/* ORG_ADMIN: show Map to Store action */}
-        {isOrgAdmin && (
+        {/* Org members who can map: show Map to Store action */}
+        {can(identity, "store-products", "create") && !isSuperAdmin && (
           <Col xs={24}>
             <Alert
               type="info"

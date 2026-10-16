@@ -8,12 +8,14 @@ import {
 } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { broadcastNotification } from "../../services/ws-manager.js";
 import { resolveAudience } from "../../services/audience-resolver.js";
 import { sendCampaignNotifications } from "../../services/notification.js";
 import type { AudienceType, NotificationType } from "../../../generated/prisma/index.js";
+import { istDateKey } from "../../services/ist-day.js";
 
 export async function notificationRoutes(app: FastifyInstance) {
   // ═══════════════════════════════════════════════════════
@@ -108,7 +110,7 @@ export async function notificationRoutes(app: FastifyInstance) {
   // POST /notifications/send — Backward compat: creates campaign internally
   app.post(
     "/send",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] },
     async (request, reply) => {
       const admin = getOrgUser(request);
       const body = sendNotificationSchema.parse(request.body);
@@ -187,7 +189,7 @@ export async function notificationRoutes(app: FastifyInstance) {
   // ADMIN ENDPOINTS
   // ═══════════════════════════════════════════════════════
 
-  const adminPreHandler = [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")];
+  const adminPreHandler = [authenticate, requirePermission(Permission.MARKETING_MANAGE)];
 
   // Helper to get org ID for admin
   function getAdminOrgId(request: Parameters<typeof getOrgUser>[0]) {
@@ -242,7 +244,7 @@ export async function notificationRoutes(app: FastifyInstance) {
     const dailyMap = new Map<string, { campaigns: number; notifications: number }>();
     for (const row of dailyCampaigns) {
       if (!row.sentAt) continue;
-      const dateKey = row.sentAt.toISOString().split("T")[0];
+      const dateKey = istDateKey(row.sentAt);
       const existing = dailyMap.get(dateKey) || { campaigns: 0, notifications: 0 };
       existing.campaigns += row._count;
       existing.notifications += row._sum.recipientCount ?? 0;

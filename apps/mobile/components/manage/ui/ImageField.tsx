@@ -13,9 +13,13 @@ interface ImageFieldProps extends FieldFrameProps {
   onChange: (url: string | null) => void;
   /** Width / height, e.g. 1 for square product shots, 2.5 for banners */
   aspect?: number;
+  /** Uploads the picked image and returns its URL; defaults to the plain image upload */
+  upload?: (uri: string) => Promise<string>;
+  /** Show the whole image (logos) instead of filling the frame */
+  contain?: boolean;
 }
 
-export function ImageField({ label, required, hint, error, value, onChange, aspect = 1 }: ImageFieldProps) {
+export function ImageField({ label, required, hint, error, value, onChange, aspect = 1, upload = uploadImage, contain }: ImageFieldProps) {
   const toast = useToast();
   const [uploading, setUploading] = useState(false);
 
@@ -29,7 +33,7 @@ export function ImageField({ label, required, hint, error, value, onChange, aspe
     if (result.canceled || !result.assets[0]) return;
     setUploading(true);
     try {
-      onChange(await uploadImage(result.assets[0].uri));
+      onChange(await upload(result.assets[0].uri));
     } catch (err) {
       toast.show(err instanceof Error ? err.message : "Upload failed", "error");
     } finally {
@@ -40,7 +44,7 @@ export function ImageField({ label, required, hint, error, value, onChange, aspe
   return (
     <FieldFrame label={label} required={required} hint={hint} error={error}>
       <TouchableOpacity style={[styles.frame, { aspectRatio: aspect }]} onPress={pick} disabled={uploading} activeOpacity={0.8}>
-        {value ? <Image source={{ uri: value }} style={StyleSheet.absoluteFill} resizeMode="cover" /> : (
+        {value ? <Image source={{ uri: value }} style={StyleSheet.absoluteFill} resizeMode={contain ? "contain" : "cover"} /> : (
           <View style={styles.empty}>
             <Ionicons name="cloud-upload-outline" size={24} color={colors.primary} />
             <Text style={styles.emptyText}>Upload image</Text>

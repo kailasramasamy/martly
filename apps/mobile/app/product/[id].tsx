@@ -423,7 +423,7 @@ export default function ProductDetailScreen() {
   return (
     <ProductActionsProvider store={storeId ? { id: storeId, name: storeName } : null}>
       <View style={styles.container}>
-      <ScrollView style={styles.scrollView}>
+      <ScrollView keyboardDismissMode="on-drag" style={styles.scrollView}>
         {/* Image Gallery */}
         {images.length > 0 ? (
           <View style={styles.galleryContainer}>

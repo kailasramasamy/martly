@@ -1,3 +1,4 @@
+import { can } from "@martly/shared/permissions";
 import { useState, useEffect } from "react";
 import { List, useTable, EditButton, ShowButton, useSelect } from "@refinedev/antd";
 import { Table, Form, Input, Space, Select, Tag, Typography, Badge, Tabs, Button, Switch, App, Popconfirm, Breadcrumb, theme as antTheme } from "antd";
@@ -102,7 +103,7 @@ interface DepartmentNode { id: string; name: string; categories: CategoryNode[];
 // ============================================================================
 
 const ProductsTableTab = ({
-  role,
+  identity,
   catalogFilter,
   scope,
   hasStoreProducts,
@@ -111,7 +112,7 @@ const ProductsTableTab = ({
   showMapButton,
   showOrgColumn,
 }: {
-  role?: string;
+  identity?: { role: string; permissions?: string[] };
   catalogFilter?: string;
   scope?: string;
   hasStoreProducts?: boolean;
@@ -325,7 +326,7 @@ const ProductsTableTab = ({
     {
       title: "Listed", key: "isActive", width: 90,
       render: (_: unknown, sp: StoreProductEntry) => {
-        const canToggle = role === "STORE_MANAGER" || role === "ORG_ADMIN" || role === "SUPER_ADMIN";
+        const canToggle = can(identity, "store-products", "edit");
         if (!canToggle) {
           const config = ACTIVE_STATUS_CONFIG[String(sp.isActive)];
           return <Tag color={config?.color ?? "default"}>{config?.label ?? String(sp.isActive)}</Tag>;
@@ -353,7 +354,7 @@ const ProductsTableTab = ({
     {
       title: "Featured", key: "isFeatured", width: 100,
       render: (_: unknown, sp: StoreProductEntry) => {
-        const canToggle = role === "STORE_MANAGER" || role === "ORG_ADMIN" || role === "SUPER_ADMIN";
+        const canToggle = can(identity, "store-products", "edit");
         if (!canToggle) {
           return sp.isFeatured ? <Tag color="gold">★ Featured</Tag> : <Text type="secondary">—</Text>;
         }
@@ -380,7 +381,7 @@ const ProductsTableTab = ({
     {
       title: "", key: "actions", width: 100,
       render: (_: unknown, sp: StoreProductEntry) => {
-        const canDelete = role === "SUPER_ADMIN" || role === "ORG_ADMIN";
+        const canDelete = can(identity, "products", "delete");
         return (
           <Space size={4}>
             <EditButton hideText size="small" recordItemId={sp.id} resource="store-products" />
@@ -533,7 +534,7 @@ const ProductsTableTab = ({
             render={(_, record: ProductRecord) =>
               record.organizationId == null
                 ? <Tag color="blue">Master</Tag>
-                : <Tag color="green">Org</Tag>
+                : <Tag color="purple">Local</Tag>
             }
           />
         )}
@@ -675,16 +676,14 @@ const ProductsTableTab = ({
           width={showMapButton ? 100 : 70}
           render={(_, record: ProductRecord) => {
             const canEdit =
-              role === "SUPER_ADMIN"
+              identity?.role === "SUPER_ADMIN"
                 ? record.organizationId == null
-                : role === "ORG_ADMIN"
-                  ? record.organizationId != null
-                  : false;
+                : can(identity, "products", "edit") && record.organizationId != null;
             return (
               <Space size={4}>
                 <ShowButton hideText size="small" recordItemId={record.id} />
                 {canEdit && <EditButton hideText size="small" recordItemId={record.id} />}
-                {showMapButton && role === "ORG_ADMIN" && (
+                {showMapButton && can(identity, "store-products", "create") && (
                   <Button
                     type="primary"
                     size="small"
@@ -725,9 +724,9 @@ function TabLabel({ label, count }: { label: string; count?: number }) {
 }
 
 export const ProductList = () => {
-  const { data: identity } = useGetIdentity<{ role: string }>();
+  const { data: identity } = useGetIdentity<{ role: string; permissions?: string[] }>();
   const role = identity?.role;
-  const isOrgUser = role === "ORG_ADMIN" || role === "STORE_MANAGER" || role === "STAFF";
+  const isOrgUser = !!role && role !== "SUPER_ADMIN";
 
   const [searchParams, setSearchParams] = useSearchParams();
   const activeTab = searchParams.get("tab") || "all";
@@ -769,7 +768,7 @@ export const ProductList = () => {
       label: <TabLabel label="All Products" count={allCount?.total} />,
       children: (
         <ProductsTableTab
-          role={role}
+          identity={identity}
           scope={isOrgUser ? "org-relevant" : undefined}
           includeStoreProducts={isOrgUser}
           showCatalogBadge={isOrgUser || isSuperAdmin}
@@ -783,7 +782,7 @@ export const ProductList = () => {
           label: <TabLabel label="Mapped Products" count={mappedCount?.total} />,
           children: (
             <ProductsTableTab
-              role={role}
+              identity={identity}
               catalogFilter="master"
               hasStoreProducts
               includeStoreProducts
@@ -796,7 +795,7 @@ export const ProductList = () => {
       label: <TabLabel label="Store Products" count={storeCount?.total} />,
       children: (
         <ProductsTableTab
-          role={role}
+          identity={identity}
           catalogFilter="org"
           includeStoreProducts
           showMapButton={isOrgUser}
@@ -809,7 +808,7 @@ export const ProductList = () => {
       label: <TabLabel label="Master Catalog" count={masterCount?.total} />,
       children: (
         <ProductsTableTab
-          role={role}
+          identity={identity}
           catalogFilter="master"
           showMapButton={isOrgUser}
         />

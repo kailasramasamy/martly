@@ -1,13 +1,12 @@
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router, type Href } from "expo-router";
-import { canManage as roleCanManage } from "@martly/shared/permissions";
-import { useAuth } from "./auth-context";
+import { canManage as memberCanManage } from "@martly/shared/permissions";
+import { useAuth, type UserInfo } from "./auth-context";
 
 export type Persona = "manage" | "shop";
 
 const PERSONA_KEY = "martly_persona";
-const UNSUPPORTED_ROLES = ["STAFF", "RIDER"];
 
 interface PersonaState {
   persona: Persona;
@@ -20,14 +19,15 @@ interface PersonaState {
 
 const PersonaContext = createContext<PersonaState | null>(null);
 
-function homeFor(role: string | undefined, persona: Persona): Href {
-  if (role && UNSUPPORTED_ROLES.includes(role)) return "/unsupported-role";
+/** Staff with nothing they can manage have no app home; shoppers and guests shop */
+function homeFor(user: UserInfo | null, canManage: boolean, persona: Persona): Href {
+  if (user && user.role !== "CUSTOMER" && !canManage) return "/unsupported-role";
   return persona === "manage" ? "/(manage)" : "/(tabs)";
 }
 
 export function PersonaProvider({ children }: { children: ReactNode }) {
   const { user, isLoading } = useAuth();
-  const canManage = roleCanManage(user?.role);
+  const canManage = memberCanManage(user);
   // Persona is resolved per signed-in user; until it matches the current user it isn't ready
   const userKey = isLoading ? null : `${user?.id ?? "guest"}:${canManage}`;
   const [resolved, setResolved] = useState<{ key: string; persona: Persona } | null>(null);
@@ -50,10 +50,10 @@ export function PersonaProvider({ children }: { children: ReactNode }) {
     if (!userKey) return;
     setResolved({ key: userKey, persona: next });
     AsyncStorage.setItem(PERSONA_KEY, next);
-    router.replace(homeFor(user?.role, next));
-  }, [userKey, user?.role]);
+    router.replace(homeFor(user, canManage, next));
+  }, [userKey, user, canManage]);
 
-  const home = homeFor(user?.role, persona);
+  const home = homeFor(user, canManage, persona);
 
   return (
     <PersonaContext.Provider value={{ persona, canManage, isReady, home, switchPersona }}>

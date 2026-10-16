@@ -2,7 +2,8 @@ import type { FastifyInstance } from "fastify";
 import { createStoreSchema, updateStoreSchema, storeProductSearchQuerySchema } from "@martly/shared/schemas";
 import type { ApiResponse, CategoryFacets, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission, requireRole } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
@@ -10,6 +11,7 @@ import { haversine } from "../../lib/geo.js";
 import { searchStoreProducts } from "../../services/store-search.js";
 import { decorateStoreProducts, storeProductInclude } from "../../services/store-product-view.js";
 import { getStoreDiscoveryInfo } from "../../services/store-discovery.js";
+import { recordOpeningStock } from "../../services/stock-ledger.js";
 import { categoryFacets, subcategoryIdsUnder } from "../../services/category-browse.js";
 
 export async function storeRoutes(app: FastifyInstance) {
@@ -157,7 +159,7 @@ export async function storeRoutes(app: FastifyInstance) {
   // Update store (verify org access)
   app.put<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requirePermission(Permission.STORE_SETTINGS)] },
     async (request, reply) => {
       const body = updateStoreSchema.parse(request.body);
       const existing = await app.prisma.store.findUnique({ where: { id: request.params.id } });
@@ -199,7 +201,7 @@ export async function storeRoutes(app: FastifyInstance) {
   // Assign variant to store (verify org access)
   app.post<{ Params: { id: string } }>(
     "/:id/products",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requirePermission(Permission.LISTING_MANAGE)] },
     async (request, reply) => {
       const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
       if (!store) return reply.notFound("Store not found");
@@ -220,9 +222,13 @@ export async function storeRoutes(app: FastifyInstance) {
       });
       if (existing) return reply.conflict("Variant already assigned to this store");
 
-      const storeProduct = await app.prisma.storeProduct.create({
-        data: { storeId: request.params.id, productId: variant.productId, variantId, price, stock },
-        include: { product: true, variant: true },
+      const storeProduct = await app.prisma.$transaction(async (tx) => {
+        const created = await tx.storeProduct.create({
+          data: { storeId: request.params.id, productId: variant.productId, variantId, price, stock },
+          include: { product: true, variant: true },
+        });
+        await recordOpeningStock(tx, [created], request.user.sub);
+        return created;
       });
 
       const response: ApiResponse<typeof storeProduct> = {
@@ -563,7 +569,7 @@ export async function storeRoutes(app: FastifyInstance) {
   // List staff assigned to a store
   app.get<{ Params: { id: string } }>(
     "/:id/staff",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.TEAM_MANAGE)] },
     async (request, reply) => {
       const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
       if (!store) return reply.notFound("Store not found");
@@ -597,7 +603,7 @@ export async function storeRoutes(app: FastifyInstance) {
   // Assign user to store
   app.post<{ Params: { id: string } }>(
     "/:id/staff",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.TEAM_MANAGE)] },
     async (request, reply) => {
       const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
       if (!store) return reply.notFound("Store not found");
@@ -650,7 +656,7 @@ export async function storeRoutes(app: FastifyInstance) {
   // Remove user from store
   app.delete<{ Params: { id: string; userId: string } }>(
     "/:id/staff/:userId",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.TEAM_MANAGE)] },
     async (request, reply) => {
       const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
       if (!store) return reply.notFound("Store not found");

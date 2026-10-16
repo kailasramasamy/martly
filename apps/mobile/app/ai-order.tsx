@@ -516,7 +516,7 @@ export default function AIOrderScreen() {
         keyboardVerticalOffset={0}
       >
         {/* ── Messages ── */}
-        <FlatList
+        <FlatList keyboardDismissMode="on-drag"
           ref={listRef}
           data={invertedMessages}
           keyExtractor={(item) => item.id}

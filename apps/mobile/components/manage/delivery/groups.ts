@@ -30,11 +30,31 @@ export function readyToDispatch(board: BoardData): { express: OrderGroup[]; sche
   };
 }
 
-/** Orders still being prepared, plus pickups waiting to be collected */
-export function inKitchen(board: BoardData): BoardOrder[] {
-  return allBoardOrders(board).filter((o) => PREPARING.has(o.status) || (o.fulfillmentType === "PICKUP" && o.status === "READY"));
+/** Orders still being confirmed or packed, delivery and pickup alike */
+export function stillPreparing(board: BoardData): BoardOrder[] {
+  return allBoardOrders(board).filter((o) => PREPARING.has(o.status));
+}
+
+/** Packed pickup orders waiting at the counter; no rider needed */
+export function pickupsReady(board: BoardData): BoardOrder[] {
+  return board.pickup.filter((o) => o.status === "READY");
+}
+
+/** Sent out without a trip (moved from the Orders tab), so they're only trackable here */
+export function outWithoutTrip(board: BoardData): BoardOrder[] {
+  return allBoardOrders(board).filter((o) => o.fulfillmentType === "DELIVERY" && o.status === "OUT_FOR_DELIVERY" && !o.deliveryTripId);
 }
 
 export function readyCount(board: BoardData): number {
   return allBoardOrders(board).filter(isReadyForDispatch).length;
+}
+
+/** Header line: a rider's stops left to deliver, or the dispatcher's count of orders ready to go */
+export function boardSubtitle(board: BoardData | null, trips: { rider: { id: string }; status: string; orders: { status: string }[] }[], riderId: string | null, riderOnly: boolean): string | undefined {
+  if (riderOnly) {
+    const stops = trips.filter((t) => t.rider.id === riderId && t.status !== "COMPLETED")
+      .flatMap((t) => t.orders).filter((o) => o.status === "OUT_FOR_DELIVERY" || o.status === "READY").length;
+    return `${stops} stop${stops === 1 ? "" : "s"} to deliver`;
+  }
+  return board ? `${readyCount(board)} ready to dispatch` : undefined;
 }

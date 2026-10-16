@@ -1,66 +1,14 @@
 import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
-import { broadcastRiderLocation, broadcastToTripSubscribers } from "../../services/ws-manager.js";
-import { haversine, getDirectionsRoute, type DirectionsResult } from "../../lib/geo.js";
+import { broadcastRiderLocation } from "../../services/ws-manager.js";
+import { haversine, getDirectionsRoute } from "../../lib/geo.js";
+import { cacheRoute, cachedRoute, riderLocation, setRiderLocation } from "../../services/delivery/live-location.js";
 
-// In-memory store for rider locations (keyed by tripId)
-const riderLocations = new Map<string, {
-  riderId: string;
-  tripId: string;
-  lat: number;
-  lng: number;
-  heading: number | null;
-  speed: number | null;
-  updatedAt: string;
-}>();
-
-/** Store a rider location update (used by both REST and WebSocket paths) */
-export function storeRiderLocation(tripId: string, data: { riderId?: string; lat: number; lng: number; heading?: number | null; speed?: number | null; updatedAt: string }) {
-  riderLocations.set(tripId, {
-    riderId: data.riderId ?? "",
-    tripId,
-    lat: data.lat,
-    lng: data.lng,
-    heading: data.heading ?? null,
-    speed: data.speed ?? null,
-    updatedAt: data.updatedAt,
-  });
-}
-
-/** Clean up stale locations older than 10 minutes */
-setInterval(() => {
-  const cutoff = Date.now() - 10 * 60 * 1000;
-  for (const [tripId, loc] of riderLocations) {
-    if (new Date(loc.updatedAt).getTime() < cutoff) {
-      riderLocations.delete(tripId);
-    }
-  }
-}, 60_000);
-
-// In-memory route cache (keyed by tripId)
-interface RouteCacheEntry {
-  result: DirectionsResult;
-  originLat: number;
-  originLng: number;
-  stopCount: number;
-  cachedAt: number;
-}
-const routeCache = new Map<string, RouteCacheEntry>();
-
-// Clean stale route cache entries every 60s
-setInterval(() => {
-  const cutoff = Date.now() - 120_000; // 2 minutes
-  for (const [tripId, entry] of routeCache) {
-    if (entry.cachedAt < cutoff) {
-      routeCache.delete(tripId);
-    }
-  }
-}, 60_000);
-
-const riderAuth = [authenticate, requireRole("RIDER", "STAFF", "STORE_MANAGER", "ORG_ADMIN", "SUPER_ADMIN")];
+const riderAuth = [authenticate, requirePermission(Permission.DELIVERY_DELIVER)];
 
 export async function riderLocationRoutes(app: FastifyInstance) {
   /**
@@ -104,7 +52,7 @@ export async function riderLocationRoutes(app: FastifyInstance) {
     };
 
     // Store in memory
-    riderLocations.set(tripId, location);
+    setRiderLocation(location);
 
     // Broadcast to subscribed customers via WebSocket
     broadcastRiderLocation(tripId, {
@@ -138,7 +86,7 @@ export async function riderLocationRoutes(app: FastifyInstance) {
       if (!trip || !(await verifyStoreOrgAccess(request, app.prisma, trip.storeId))) return reply.forbidden("Access denied");
     }
 
-    const location = riderLocations.get(tripId);
+    const location = riderLocation(tripId);
     if (!location) {
       return { success: true, data: null } satisfies ApiResponse<null>;
     }
@@ -203,7 +151,7 @@ export async function riderLocationRoutes(app: FastifyInstance) {
         return { success: true, data: null } satisfies ApiResponse<null>;
       }
 
-      const location = riderLocations.get(order.deliveryTripId);
+      const location = riderLocation(order.deliveryTripId);
 
       // Build anonymized remaining stops
       const tripOrders = order.deliveryTrip.orders;
@@ -294,7 +242,7 @@ export async function riderLocationRoutes(app: FastifyInstance) {
       }
 
       const tripId = order.deliveryTrip.id;
-      const riderLoc = riderLocations.get(tripId);
+      const riderLoc = riderLocation(tripId);
       if (!riderLoc) {
         return { success: true, data: null } satisfies ApiResponse<null>;
       }
@@ -314,7 +262,7 @@ export async function riderLocationRoutes(app: FastifyInstance) {
         : undefined;
 
       // Check route cache
-      const cached = routeCache.get(tripId);
+      const cached = cachedRoute(tripId);
       if (cached) {
         const age = Date.now() - cached.cachedAt;
         const riderMoved = haversine(cached.originLat, cached.originLng, origin.lat, origin.lng);
@@ -330,7 +278,7 @@ export async function riderLocationRoutes(app: FastifyInstance) {
       }
 
       // Cache the result
-      routeCache.set(tripId, {
+      cacheRoute(tripId, {
         result,
         originLat: origin.lat,
         originLng: origin.lng,
@@ -343,128 +291,44 @@ export async function riderLocationRoutes(app: FastifyInstance) {
   );
 
   /**
-   * GET /rider-location/my-trips
-   * Rider fetches their assigned trips for today.
+   * GET /rider-location/trips/:tripId/route
+   * ETAs for a trip's remaining stops, in their planned order: from the rider's live position, or from the store
+   * until the rider shares one. For the trip's rider and for staff of its store.
    */
-  app.get("/my-trips", { preHandler: riderAuth }, async (request) => {
-    const user = getOrgUser(request);
-    const { period } = request.query as { period?: string };
-
-    const startOfDay = new Date();
-    startOfDay.setHours(0, 0, 0, 0);
-
-    const dateFilter = period === "history"
-      ? { lt: startOfDay }   // Past trips (before today)
-      : { gte: startOfDay }; // Today's trips (default)
-
-    const trips = await app.prisma.deliveryTrip.findMany({
-      where: {
-        riderId: user.sub,
-        createdAt: dateFilter,
+  app.get<{ Params: { tripId: string } }>("/trips/:tripId/route", { preHandler: [authenticate] }, async (request, reply) => {
+    const trip = await app.prisma.deliveryTrip.findUnique({
+      where: { id: request.params.tripId },
+      select: {
+        id: true, riderId: true, storeId: true, status: true,
+        store: { select: { latitude: true, longitude: true } },
+        orders: { where: { status: { in: ["READY", "OUT_FOR_DELIVERY"] } }, orderBy: { deliverySequence: "asc" }, select: { id: true, deliveryLat: true, deliveryLng: true } },
       },
-      include: {
-        store: { select: { id: true, name: true, latitude: true, longitude: true, address: true } },
-        orders: {
-          orderBy: { deliverySequence: "asc" },
-          select: {
-            id: true,
-            status: true,
-            totalAmount: true,
-            deliveryAddress: true,
-            deliveryLat: true,
-            deliveryLng: true,
-            deliveryPincode: true,
-            deliverySequence: true,
-            paymentMethod: true,
-            paymentStatus: true,
-            createdAt: true,
-            user: { select: { id: true, name: true, phone: true } },
-            items: {
-              select: {
-                quantity: true,
-                unitPrice: true,
-                product: { select: { name: true, imageUrl: true } },
-                variant: { select: { name: true, unitType: true, unitValue: true } },
-              },
-            },
-          },
-        },
-      },
-      orderBy: { createdAt: "desc" },
     });
+    if (!trip) return reply.notFound("Trip not found");
+    const own = trip.riderId === request.user.sub;
+    if (!own && !(await verifyStoreOrgAccess(request, app.prisma, trip.storeId))) return reply.forbidden("Access denied");
 
-    return { success: true, data: trips };
+    const live = trip.status === "IN_PROGRESS" ? riderLocation(trip.id) : undefined;
+    const origin = live ? { lat: live.lat, lng: live.lng } : trip.store.latitude != null && trip.store.longitude != null ? { lat: trip.store.latitude, lng: trip.store.longitude } : null;
+    const located = trip.orders.filter((o) => o.deliveryLat != null && o.deliveryLng != null);
+    if (!origin || located.length === 0) return { success: true, data: null } satisfies ApiResponse<null>;
+
+    const cached = cachedRoute(trip.id);
+    const fresh = cached && Date.now() - cached.cachedAt < 60_000 && cached.stopCount === located.length
+      && haversine(cached.originLat, cached.originLng, origin.lat, origin.lng) < 0.3;
+    const points = located.map((o) => ({ lat: o.deliveryLat as number, lng: o.deliveryLng as number }));
+    const route = fresh ? cached.result : await getDirectionsRoute(origin, points[points.length - 1], points.slice(0, -1));
+    if (!route) return { success: true, data: null } satisfies ApiResponse<null>;
+    if (!fresh) cacheRoute(trip.id, { result: route, originLat: origin.lat, originLng: origin.lng, stopCount: located.length, cachedAt: Date.now() });
+
+    let elapsed = 0;
+    let travelled = 0;
+    const stops = located.map((o, i) => {
+      elapsed += route.legs[i]?.durationSeconds ?? 0;
+      travelled += route.legs[i]?.distanceMeters ?? 0;
+      return { orderId: o.id, etaSeconds: elapsed, distanceMeters: travelled };
+    });
+    const data = { from: live ? "rider" as const : "store" as const, stops, totalSeconds: route.totalDurationSeconds, totalMeters: route.totalDistanceMeters, polyline: route.polyline };
+    return { success: true, data } satisfies ApiResponse<typeof data>;
   });
-
-  /**
-   * PATCH /rider-location/trips/:tripId/deliver/:orderId
-   * Rider marks a single order in their trip as DELIVERED.
-   * If all orders in the trip are delivered, completes the trip.
-   */
-  app.patch<{ Params: { tripId: string; orderId: string } }>(
-    "/trips/:tripId/deliver/:orderId",
-    { preHandler: riderAuth },
-    async (request, reply) => {
-      const { tripId, orderId } = request.params;
-      const user = getOrgUser(request);
-      const body = (request.body ?? {}) as { collectedAmount?: number; codNote?: string };
-
-      const trip = await app.prisma.deliveryTrip.findUnique({
-        where: { id: tripId },
-        include: { orders: { select: { id: true, status: true } } },
-      });
-      if (!trip) return reply.notFound("Trip not found");
-      if (trip.riderId !== user.sub) return reply.forbidden("Not your trip");
-      if (trip.status !== "IN_PROGRESS") return reply.badRequest("Trip is not in progress");
-
-      const order = trip.orders.find((o) => o.id === orderId);
-      if (!order) return reply.badRequest("Order not in this trip");
-      if (order.status !== "OUT_FOR_DELIVERY") {
-        return reply.badRequest(`Order is ${order.status}, expected OUT_FOR_DELIVERY`);
-      }
-
-      const result = await app.prisma.$transaction(async (tx) => {
-        await tx.order.update({
-          where: { id: orderId },
-          data: { status: "DELIVERED" },
-        });
-        // Build delivery note with COD info if applicable
-        const noteParts = ["Delivered by rider"];
-        if (body.collectedAmount != null) {
-          noteParts.push(`COD collected: \u20B9${body.collectedAmount}`);
-        }
-        if (body.codNote) {
-          noteParts.push(`Note: ${body.codNote}`);
-        }
-        await tx.orderStatusLog.create({
-          data: { orderId, status: "DELIVERED", note: noteParts.join(". ") },
-        });
-
-        // Check if all orders in trip are now delivered
-        const remaining = trip.orders.filter((o) => o.id !== orderId && o.status === "OUT_FOR_DELIVERY");
-        if (remaining.length === 0) {
-          await tx.deliveryTrip.update({
-            where: { id: tripId },
-            data: { status: "COMPLETED", completedAt: new Date() },
-          });
-          // Clean up location
-          riderLocations.delete(tripId);
-        }
-
-        return { allDelivered: remaining.length === 0 };
-      });
-
-      // Broadcast order status update
-      const { broadcastOrderUpdate } = await import("../../services/order-broadcast.js");
-      broadcastOrderUpdate(app.prisma, orderId, "DELIVERED");
-
-      // Notify trip subscribers that a stop was completed (triggers route re-fetch)
-      broadcastToTripSubscribers(tripId, { type: "trip:stop_completed", tripId });
-
-      // Invalidate route cache for this trip
-      routeCache.delete(tripId);
-
-      return { success: true, data: result };
-    },
-  );
 }

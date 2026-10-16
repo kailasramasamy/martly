@@ -29,7 +29,7 @@ export function LoyaltyCustomerSheet({ customer, organizationId, onClose, onAdju
   const [adjusting, setAdjusting] = useState(false);
   const close = () => { setAdjusting(false); onClose(); };
   return (
-    <BottomSheet visible={!!customer} title={customer?.user.name ?? "Customer"} onClose={close}>
+    <BottomSheet flush scrollable visible={!!customer} title={customer?.user.name ?? "Customer"} onClose={close}>
       {customer ? (adjusting
         ? <AdjustForm customer={customer} organizationId={organizationId} onCancel={() => setAdjusting(false)} onDone={() => { setAdjusting(false); onAdjusted(); onClose(); }} />
         : <History customer={customer} organizationId={organizationId} onAdjust={() => setAdjusting(true)} />) : null}

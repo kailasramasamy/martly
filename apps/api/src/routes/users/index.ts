@@ -3,14 +3,19 @@ import bcrypt from "bcryptjs";
 import { createUserSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
+import { pruneAddOns } from "../../services/permissions.js";
+import { memberPermissionRoutes } from "./permissions.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 
 export async function userRoutes(app: FastifyInstance) {
+  await app.register(memberPermissionRoutes);
+
   // List users (SUPER_ADMIN: all non-CUSTOMER, ORG_ADMIN: users in their org via UserStore)
   app.get(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.TEAM_MANAGE)] },
     async (request) => {
       const { page = 1, pageSize = 20, q, role: roleFilter } = request.query as {
         page?: number; pageSize?: number; q?: string; role?: string;
@@ -115,7 +120,7 @@ export async function userRoutes(app: FastifyInstance) {
   // Get user by ID
   app.get<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.TEAM_MANAGE)] },
     async (request, reply) => {
       const targetUser = await app.prisma.user.findUnique({
         where: { id: request.params.id },
@@ -154,7 +159,7 @@ export async function userRoutes(app: FastifyInstance) {
   // Create user
   app.post(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.TEAM_MANAGE)] },
     async (request, reply) => {
       const body = createUserSchema.parse(request.body);
       const user = getOrgUser(request);
@@ -205,7 +210,7 @@ export async function userRoutes(app: FastifyInstance) {
   // Update user
   app.put<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.TEAM_MANAGE)] },
     async (request, reply) => {
       const { name, phone, role, email, password } = request.body as {
         name?: string; phone?: string; role?: string; email?: string; password?: string;
@@ -251,6 +256,7 @@ export async function userRoutes(app: FastifyInstance) {
         data,
         select: { id: true, email: true, name: true, phone: true, role: true, createdAt: true, updatedAt: true },
       });
+      if (role !== undefined && role !== targetUser.role) await pruneAddOns(app.prisma, updated.id, updated.role);
 
       const response: ApiResponse<typeof updated> = { success: true, data: updated };
       return response;
@@ -260,7 +266,7 @@ export async function userRoutes(app: FastifyInstance) {
   // Delete user
   app.delete<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.TEAM_MANAGE)] },
     async (request, reply) => {
       const targetUser = await app.prisma.user.findUnique({ where: { id: request.params.id } });
       if (!targetUser) return reply.notFound("User not found");

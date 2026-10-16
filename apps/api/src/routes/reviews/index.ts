@@ -2,7 +2,8 @@ import type { FastifyInstance, FastifyRequest } from "fastify";
 import { createReviewSchema, updateReviewSchema, updateReviewStatusSchema, createReviewReplySchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
 const reviewInclude = {
@@ -18,7 +19,7 @@ export async function reviewRoutes(app: FastifyInstance) {
     if (storeIds === undefined) return {};
     const { organizationId, role } = getOrgUser(request);
     const scope: Record<string, unknown>[] = [{ storeId: { in: storeIds } }];
-    if (role === "ORG_ADMIN" && organizationId) scope.push({ storeId: null, product: { organizationId } });
+    if (role !== "SUPER_ADMIN" && organizationId) scope.push({ storeId: null, product: { organizationId } });
     return { OR: scope };
   }
 
@@ -207,7 +208,7 @@ export async function reviewRoutes(app: FastifyInstance) {
 
   // POST /:id/reply - Admin/Manager reply to a review
   app.post<{ Params: { id: string } }>("/:id/reply", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)],
   }, async (request, reply) => {
     const body = createReviewReplySchema.parse(request.body);
     const user = request.user as { sub: string };
@@ -234,7 +235,7 @@ export async function reviewRoutes(app: FastifyInstance) {
 
   // DELETE /:id/reply - Admin/Manager delete reply
   app.delete<{ Params: { id: string } }>("/:id/reply", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)],
   }, async (request, reply) => {
     if (!(await reviewInScope(request, request.params.id))) return reply.notFound("Review not found");
     const existing = await app.prisma.reviewReply.findUnique({ where: { reviewId: request.params.id } });
@@ -247,7 +248,7 @@ export async function reviewRoutes(app: FastifyInstance) {
 
   // GET /moderation - Admin: list all reviews with status filter
   app.get("/moderation", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)],
   }, async (request, reply) => {
     const { status, storeId, page = 1, pageSize = 20 } = request.query as { status?: string; storeId?: string; page?: number; pageSize?: number };
     if (storeId && !(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied to this store");
@@ -283,7 +284,7 @@ export async function reviewRoutes(app: FastifyInstance) {
 
   // PATCH /:id/status - Admin: approve/reject + award loyalty points on approve if verified
   app.patch<{ Params: { id: string } }>("/:id/status", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)],
   }, async (request, reply) => {
     const body = updateReviewStatusSchema.parse(request.body);
 

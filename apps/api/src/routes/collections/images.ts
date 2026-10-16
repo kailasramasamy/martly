@@ -3,7 +3,10 @@ import multipart from "@fastify/multipart";
 import sharp from "sharp";
 import type { ApiResponse } from "@martly/shared/types";
 import { ArtReplaceError, replaceBannerImage, replaceHeroBackground, replaceTileImage } from "../../services/seasonal/replace-art.js";
-import { ADMINS, ownCollection } from "./access.js";
+import { authenticate } from "../../middleware/auth.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
+import { ownCollection } from "./access.js";
 
 const MAX_IMAGE_BYTES = 10 * 1024 * 1024;
 
@@ -30,21 +33,21 @@ async function replacing<T>(reply: FastifyReply, work: () => Promise<T>) {
 export async function collectionImageRoutes(app: FastifyInstance) {
   await app.register(multipart, { limits: { fileSize: MAX_IMAGE_BYTES, files: 1 } });
 
-  app.put<{ Params: { id: string; lang: string } }>("/:id/banner-image/:lang", { preHandler: ADMINS }, async (request, reply) => {
+  app.put<{ Params: { id: string; lang: string } }>("/:id/banner-image/:lang", { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] }, async (request, reply) => {
     const collection = await ownCollection(app, request, reply);
     const image = collection && (await readImage(request, reply));
     if (!collection || !image) return;
     return replacing(reply, () => replaceBannerImage(app.prisma, collection, request.params.lang, image));
   });
 
-  app.put<{ Params: { id: string } }>("/:id/hero/image", { preHandler: ADMINS }, async (request, reply) => {
+  app.put<{ Params: { id: string } }>("/:id/hero/image", { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] }, async (request, reply) => {
     const collection = await ownCollection(app, request, reply);
     const image = collection && (await readImage(request, reply));
     if (!collection || !image) return;
     return replacing(reply, () => replaceHeroBackground(app.prisma, collection, image));
   });
 
-  app.put<{ Params: { id: string; tileId: string } }>("/:id/tiles/:tileId/image", { preHandler: ADMINS }, async (request, reply) => {
+  app.put<{ Params: { id: string; tileId: string } }>("/:id/tiles/:tileId/image", { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] }, async (request, reply) => {
     const collection = await ownCollection(app, request, reply);
     if (!collection) return;
     const tile = await app.prisma.collectionTile.findFirst({ where: { id: request.params.tileId, collectionId: collection.id }, select: { id: true } });

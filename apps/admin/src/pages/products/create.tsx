@@ -1,3 +1,4 @@
+import { can } from "@martly/shared/permissions";
 import { useState, useEffect } from "react";
 import { Create, useForm, useSelect } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
@@ -37,8 +38,8 @@ interface StoreRecord {
 export const ProductCreate = () => {
   const { token } = theme.useToken();
   const { formProps, saveButtonProps } = useForm({ resource: "products" });
-  const { data: identity } = useGetIdentity<{ role: string }>();
-  const isOrgAdmin = identity?.role === "ORG_ADMIN";
+  const { data: identity } = useGetIdentity<{ role: string; permissions?: string[] }>();
+  const isOrgAdmin = !!identity && identity.role !== "SUPER_ADMIN";
 
   const [cascaderOptions, setCascaderOptions] = useState<CascaderOption[]>([]);
 

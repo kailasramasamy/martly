@@ -1,9 +1,10 @@
 import { Edit, useForm } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
-import { Form, Input, Select, Card, Row, Col } from "antd";
+import { Form, Input, Select, Card, Row, Col, message } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 
 import { sectionTitle } from "../../theme";
+import { ResponsibilitiesCard, useMemberAddOns } from "./responsibilities";
 
 interface Identity {
   role: string;
@@ -11,7 +12,7 @@ interface Identity {
 
 const ALL_ROLES = [
   { label: "Super Admin", value: "SUPER_ADMIN" },
-  { label: "Org Admin", value: "ORG_ADMIN" },
+  { label: "Owner", value: "ORG_ADMIN" },
   { label: "Store Manager", value: "STORE_MANAGER" },
   { label: "Staff", value: "STAFF" },
   { label: "Rider", value: "RIDER" },
@@ -24,7 +25,14 @@ const ORG_ROLES = [
 ];
 
 export const UserEdit = () => {
-  const { formProps, saveButtonProps } = useForm({ resource: "users" });
+  const { formProps, saveButtonProps, form, id } = useForm({
+    resource: "users",
+    onMutationSuccess: (res) => {
+      member.save(res.data.role).catch((err) => message.error(err?.response?.data?.message ?? "Couldn't save responsibilities"));
+    },
+  });
+  const member = useMemberAddOns(id as string | undefined);
+  const role = Form.useWatch("role", form);
   const { data: identity } = useGetIdentity<Identity>();
 
   const isSuperAdmin = identity?.role === "SUPER_ADMIN";
@@ -54,6 +62,12 @@ export const UserEdit = () => {
               </Form.Item>
             </Card>
           </Col>
+
+          {!isSuperAdmin && (
+            <Col xs={24} lg={12}>
+              <ResponsibilitiesCard role={role} inOrg={member.inOrg} value={member.addOns} onChange={member.setAddOns} />
+            </Col>
+          )}
 
           {isSuperAdmin && (
             <Col xs={24} lg={12}>

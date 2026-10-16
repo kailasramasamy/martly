@@ -107,7 +107,7 @@ export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(
 
   if (slotElement) {
     return (
-      <FlatList
+      <FlatList keyboardDismissMode="on-drag"
         ref={ref as React.Ref<FlatList<GridRowItem>>}
         data={gridRows}
         keyExtractor={(row) => row.key}
@@ -121,7 +121,7 @@ export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(
   }
 
   return (
-    <FlatList
+    <FlatList keyboardDismissMode="on-drag"
       key={isGrid ? `grid-${numColumns}` : "rail"}
       ref={ref}
       data={primary}

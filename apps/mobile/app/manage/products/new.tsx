@@ -5,7 +5,7 @@ import { can } from "@martly/shared/permissions";
 
 export default function NewProductScreen() {
   const { user } = useAuth();
-  if (!can(user?.role ?? "", "products", "create")) {
+  if (!can(user, "products", "create")) {
     return <EmptyState icon="lock-closed-outline" title="No access" message="Your role can't create products." />;
   }
   return <ProductForm />;

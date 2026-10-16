@@ -17,10 +17,9 @@ const STATUS_TABS = [{ value: "", label: "All" }, ...Object.entries(STORE_STATUS
 export default function StoresScreen() {
   const router = useRouter();
   const { user } = useAuth();
-  const role = user?.role ?? "";
   const [q, setQ] = useState("");
   const [status, setStatus] = useState("");
-  const allowed = can(role, "stores", "list");
+  const allowed = can(user, "stores", "list");
   const list = usePagedList<StoreRow>("/api/v1/stores", { q, status }, { enabled: allowed });
 
   if (!allowed) return <ScreenNotice title="Stores" kind="denied" />;
@@ -30,7 +29,7 @@ export default function StoresScreen() {
       list={list}
       search={{ value: q, onChange: setQ, placeholder: "Search stores" }}
       filters={<SegmentedTabs options={STATUS_TABS} value={status} onChange={setStatus} />}
-      headerRight={can(role, "stores", "create") ? () => <HeaderAction accessibilityLabel="Add store" onPress={() => router.push("/manage/stores/new")} /> : undefined}
+      headerRight={can(user, "stores", "create") ? () => <HeaderAction accessibilityLabel="Add store" onPress={() => router.push("/manage/stores/new")} /> : undefined}
       empty={{ icon: "storefront-outline", title: "No stores found", message: q || status ? "Try a different search or filter." : "Create your first store to get started." }}
       renderItem={(s) => (
         <ListRow

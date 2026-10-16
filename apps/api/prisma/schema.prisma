@@ -19,6 +19,35 @@ enum UserRole {
   CUSTOMER
 }
 
+enum Permission {
+  ORDERS_VIEW
+  ORDERS_PROCESS
+  ORDERS_DISPATCH
+  ORDERS_CANCEL
+  DELIVERY_DELIVER
+  RIDERS_MANAGE
+  CATALOG_PRODUCTS
+  CATALOG_BRANDS
+  CATALOG_COLLECTIONS
+  LISTING_AVAILABILITY
+  LISTING_MANAGE
+  LISTING_PRICES
+  STOCK_VIEW
+  STOCK_RECEIVE
+  STOCK_COUNT
+  STOCK_ADJUST
+  STOCK_APPROVE
+  RETURNS_HANDLE
+  SUPPORT_HANDLE
+  REFUNDS_ISSUE
+  MARKETING_MANAGE
+  DELIVERY_CONFIG
+  STORE_SETTINGS
+  TEAM_MANAGE
+  REPORTS_VIEW
+  FINANCE_MANAGE
+}
+
 enum StoreStatus {
   PENDING
   ACTIVE
@@ -119,6 +148,8 @@ enum LoyaltyTransactionType {
 }
 
 enum TripStatus {
+  /// Built by the planner, waiting for a rider
+  PLANNED
   CREATED
   IN_PROGRESS
   COMPLETED
@@ -305,6 +336,10 @@ model Organization {
   subscriptions         Subscription[]
   recipes               Recipe[]
   catalogDrafts         CatalogDraft[]
+  memberPermissions     MemberPermission[]
+  brands                Brand[]
+  stockMovements        StockMovement[]
+  stockCounts           StockCount[]
 
   @@map("organizations")
 }
@@ -342,6 +377,7 @@ model Store {
   deliveryTiers         DeliveryTier[]
   deliverySlots         DeliverySlot[]
   expressDeliveryConfig ExpressDeliveryConfig?
+  deliverySettings      StoreDeliverySettings?
   deliveryTrips         DeliveryTrip[]
   banners               Banner[]
   storeRatings          StoreRating[]          @relation("StoreRatings")
@@ -350,6 +386,8 @@ model Store {
   subscriptions         Subscription[]
   basketAddOns          BasketAddOn[]
   searchLogs            SearchLog[]
+  stockMovements        StockMovement[]
+  stockCounts           StockCount[]
   catalogDrafts         CatalogDraft[]
 
   @@map("stores")
@@ -383,13 +421,16 @@ model User {
   loyaltyBalances     LoyaltyBalance[]
   loyaltyTransactions LoyaltyTransaction[]
   deliveryTrips       DeliveryTrip[]
+  slotRosters         SlotRider[]              @relation("SlotRosters")
+  slotRosterOverrides SlotRiderOverride[]      @relation("SlotRosterOverrides")
+  deliveryFailures    DeliveryFailure[]        @relation("DeliveryFailures")
   notifications       Notification[]
-  campaignsSent       NotificationCampaign[] @relation("CampaignsSent")
-  templatesCreated    NotificationTemplate[] @relation("TemplatesCreated")
-  reviewReplies       ReviewReply[]          @relation("ReviewReplies")
-  storeRatings        StoreRating[]          @relation("StoreRatings")
-  referralsMade       Referral[]             @relation("ReferralsMade")
-  referralReceived    Referral[]             @relation("ReferralReceived")
+  campaignsSent       NotificationCampaign[]   @relation("CampaignsSent")
+  templatesCreated    NotificationTemplate[]   @relation("TemplatesCreated")
+  reviewReplies       ReviewReply[]            @relation("ReviewReplies")
+  storeRatings        StoreRating[]            @relation("StoreRatings")
+  referralsMade       Referral[]               @relation("ReferralsMade")
+  referralReceived    Referral[]               @relation("ReferralReceived")
   supportTickets      SupportTicket[]
   returnRequests      ReturnRequest[]
   memberships         UserMembership[]
@@ -398,6 +439,11 @@ model User {
   searchLogs          SearchLog[]
   promosCreated       Promo[]
   catalogDrafts       CatalogDraft[]
+  memberPermissions   MemberPermission[]
+  stockMovements      StockMovement[]
+  stockCountsCreated  StockCount[]             @relation("StockCountsCreated")
+  stockCountsReviewed StockCount[]             @relation("StockCountsReviewed")
+  stockCountRevisions StockCountLineRevision[]
 
   @@map("users")
 }
@@ -419,6 +465,22 @@ model UserAddress {
 
   @@index([userId])
   @@map("user_addresses")
+}
+
+/// Add-on permissions an owner grants a staff member, on top of their role's preset, within one organization
+model MemberPermission {
+  id             String       @id @default(uuid())
+  userId         String       @map("user_id")
+  organizationId String       @map("organization_id")
+  permissions    Permission[]
+  createdAt      DateTime     @default(now()) @map("created_at")
+  updatedAt      DateTime     @updatedAt @map("updated_at")
+
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, organizationId])
+  @@map("member_permissions")
 }
 
 model UserStore {
@@ -483,9 +545,10 @@ model Subcategory {
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")
 
-  category Category  @relation(fields: [categoryId], references: [id])
-  products Product[]
-  banners  Banner[]
+  category    Category     @relation(fields: [categoryId], references: [id])
+  products    Product[]
+  banners     Banner[]
+  stockCounts StockCount[]
 
   @@index([categoryId])
   @@index([searchTerms], type: Gin)
@@ -502,11 +565,15 @@ model Brand {
   themeColorSecondary String?  @map("theme_color_secondary")
   // 0–100 shopper recognition in India; breaks search ties so market leaders rank first
   popularity          Int      @default(0)
+  /// null = master brand shared by every organization; set = an organization's own local brand
+  organizationId      String?  @map("organization_id")
   createdAt           DateTime @default(now()) @map("created_at")
   updatedAt           DateTime @updatedAt @map("updated_at")
 
-  products Product[]
+  organization Organization? @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  products     Product[]
 
+  @@index([organizationId])
   @@map("brands")
 }
 
@@ -619,6 +686,8 @@ model StoreProduct {
   basketAddOns          BasketAddOn[]
   subscriptionOverrides SubscriptionItemOverride[]
   promoPriceChanges     PromoPriceChange[]
+  stockMovements        StockMovement[]
+  stockCountLines       StockCountLine[]
 
   @@unique([storeId, variantId])
   @@map("store_products")
@@ -666,6 +735,9 @@ model Order {
   coupon              Coupon?              @relation(fields: [couponId], references: [id])
   deliverySlot        DeliverySlot?        @relation(fields: [deliverySlotId], references: [id])
   deliveryTrip        DeliveryTrip?        @relation(fields: [deliveryTripId], references: [id])
+  deliveryFailures    DeliveryFailure[]
+  /// Set when a COD order is delivered: cash in the rider's hand, or UPI straight to the store
+  codCollectedVia     CodCollectionMode?   @map("cod_collected_via")
   items               OrderItem[]
   couponRedemptions   CouponRedemption[]
   statusLogs          OrderStatusLog[]
@@ -994,8 +1066,11 @@ model DeliverySlot {
   createdAt     DateTime @default(now()) @map("created_at")
   updatedAt     DateTime @updatedAt @map("updated_at")
 
-  store  Store   @relation(fields: [storeId], references: [id], onDelete: Cascade)
-  orders Order[]
+  store     Store               @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  orders    Order[]
+  trips     DeliveryTrip[]
+  riders    SlotRider[]
+  overrides SlotRiderOverride[]
 
   @@unique([storeId, dayOfWeek, startTime, endTime])
   @@index([storeId])
@@ -1102,25 +1177,124 @@ model LoyaltyTransaction {
   @@map("loyalty_transactions")
 }
 
-model DeliveryTrip {
-  id             String     @id @default(uuid())
-  storeId        String     @map("store_id")
-  riderId        String     @map("rider_id")
-  organizationId String     @map("organization_id")
-  status         TripStatus @default(CREATED)
-  startedAt      DateTime?  @map("started_at")
-  completedAt    DateTime?  @map("completed_at")
-  createdAt      DateTime   @default(now()) @map("created_at")
-  updatedAt      DateTime   @updatedAt @map("updated_at")
+enum TripWave {
+  SLOT
+  EXPRESS
+}
 
-  store        Store        @relation(fields: [storeId], references: [id])
-  rider        User         @relation(fields: [riderId], references: [id])
-  organization Organization @relation(fields: [organizationId], references: [id])
+model DeliveryTrip {
+  id               String     @id @default(uuid())
+  storeId          String     @map("store_id")
+  /// Empty while PLANNED; set when a rider is assigned
+  riderId          String?    @map("rider_id")
+  organizationId   String     @map("organization_id")
+  status           TripStatus @default(CREATED)
+  wave             TripWave   @default(EXPRESS)
+  deliverySlotId   String?    @map("delivery_slot_id")
+  /// The day this trip delivers on (IST), for slot waves
+  slotDate         DateTime?  @map("slot_date") @db.Date
+  /// Planner's estimate for the whole route from the store
+  plannedDistanceM Int?       @map("planned_distance_m")
+  plannedDurationS Int?       @map("planned_duration_s")
+  /// Where the trip goes, e.g. "Temple Rd · 636903"
+  areaLabel        String?    @map("area_label")
+  startedAt        DateTime?  @map("started_at")
+  completedAt      DateTime?  @map("completed_at")
+  createdAt        DateTime   @default(now()) @map("created_at")
+  updatedAt        DateTime   @updatedAt @map("updated_at")
+
+  store        Store             @relation(fields: [storeId], references: [id])
+  rider        User?             @relation(fields: [riderId], references: [id], onDelete: Restrict)
+  organization Organization      @relation(fields: [organizationId], references: [id])
+  deliverySlot DeliverySlot?     @relation(fields: [deliverySlotId], references: [id])
   orders       Order[]
+  failures     DeliveryFailure[]
 
   @@index([storeId, status])
   @@index([riderId])
+  @@index([storeId, slotDate])
   @@map("delivery_trips")
+}
+
+/// How a cash-on-delivery order was actually paid at the door
+enum CodCollectionMode {
+  CASH
+  UPI
+}
+
+enum DeliveryFailureReason {
+  CUSTOMER_UNAVAILABLE
+  WRONG_ADDRESS
+  CUSTOMER_REFUSED
+  PAYMENT_ISSUE
+  OTHER
+}
+
+/// A delivery attempt that didn't work out; the order went back to the store as READY
+model DeliveryFailure {
+  id        String                @id @default(uuid())
+  orderId   String                @map("order_id")
+  tripId    String                @map("trip_id")
+  riderId   String                @map("rider_id")
+  reason    DeliveryFailureReason
+  note      String?
+  createdAt DateTime              @default(now()) @map("created_at")
+
+  order Order        @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  trip  DeliveryTrip @relation(fields: [tripId], references: [id], onDelete: Cascade)
+  rider User         @relation("DeliveryFailures", fields: [riderId], references: [id])
+
+  @@index([orderId])
+  @@index([riderId, createdAt])
+  @@map("delivery_failures")
+}
+
+/// How a store runs its fleet: trip sizes, rider load, express batching and auto-planning
+model StoreDeliverySettings {
+  id                    String   @id @default(uuid())
+  storeId               String   @unique @map("store_id")
+  maxOrdersPerTrip      Int      @default(8) @map("max_orders_per_trip")
+  maxTripsPerRider      Int      @default(2) @map("max_trips_per_rider")
+  expressBatchSize      Int      @default(3) @map("express_batch_size")
+  expressMaxWaitMinutes Int      @default(10) @map("express_max_wait_minutes")
+  /// Plan slots at cutoff and batch express orders automatically; opt-in once slots and rosters are set up
+  autoPlan              Boolean  @default(false) @map("auto_plan")
+  createdAt             DateTime @default(now()) @map("created_at")
+  updatedAt             DateTime @updatedAt @map("updated_at")
+
+  store Store @relation(fields: [storeId], references: [id], onDelete: Cascade)
+
+  @@map("store_delivery_settings")
+}
+
+/// Weekly roster: riders who work a slot (a slot belongs to one weekday)
+model SlotRider {
+  id        String   @id @default(uuid())
+  slotId    String   @map("slot_id")
+  riderId   String   @map("rider_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  slot  DeliverySlot @relation(fields: [slotId], references: [id], onDelete: Cascade)
+  rider User         @relation("SlotRosters", fields: [riderId], references: [id], onDelete: Cascade)
+
+  @@unique([slotId, riderId])
+  @@map("slot_riders")
+}
+
+/// A one-day change to a slot's roster: a rider off, or an extra rider on
+model SlotRiderOverride {
+  id        String   @id @default(uuid())
+  slotId    String   @map("slot_id")
+  riderId   String   @map("rider_id")
+  date      DateTime @db.Date
+  working   Boolean
+  createdAt DateTime @default(now()) @map("created_at")
+
+  slot  DeliverySlot @relation(fields: [slotId], references: [id], onDelete: Cascade)
+  rider User         @relation("SlotRosterOverrides", fields: [riderId], references: [id], onDelete: Cascade)
+
+  @@unique([slotId, riderId, date])
+  @@map("slot_rider_overrides")
 }
 
 model Banner {
@@ -1667,4 +1841,124 @@ model CatalogDraft {
   @@index([status, claimedAt])
   @@index([storeId, createdAt])
   @@map("catalog_drafts")
+}
+
+enum StockMovementType {
+  RECEIVE
+  COUNT
+  DAMAGE
+  EXPIRY
+  MANUAL
+  SALE
+  UNDO_SALE
+}
+
+/// Every change to a store product's on-hand stock, with who made it and why
+model StockMovement {
+  id             String            @id @default(uuid())
+  organizationId String            @map("organization_id")
+  storeId        String            @map("store_id")
+  storeProductId String            @map("store_product_id")
+  type           StockMovementType
+  /// Signed change applied to stock
+  quantity       Int
+  stockBefore    Int               @map("stock_before")
+  stockAfter     Int               @map("stock_after")
+  note           String?
+  userId         String?           @map("user_id")
+  stockCountId   String?           @map("stock_count_id")
+  orderId        String?           @map("order_id")
+  createdAt      DateTime          @default(now()) @map("created_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  store        Store        @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  storeProduct StoreProduct @relation(fields: [storeProductId], references: [id], onDelete: Cascade)
+  user         User?        @relation(fields: [userId], references: [id], onDelete: SetNull)
+  stockCount   StockCount?  @relation(fields: [stockCountId], references: [id], onDelete: SetNull)
+
+  @@index([storeProductId, createdAt])
+  @@index([storeId, createdAt])
+  @@map("stock_movements")
+}
+
+enum StockCountStatus {
+  DRAFT
+  SUBMITTED
+  /// Sent back to the counter to redo selected lines (still blind)
+  RECOUNT
+  APPROVED
+  REJECTED
+}
+
+enum StockCountRevisionKind {
+  COUNT
+  RECOUNT
+  CORRECTION
+}
+
+/// A blind shelf count: counters enter quantities without seeing system stock; an approver applies the differences
+model StockCount {
+  id             String           @id @default(uuid())
+  organizationId String           @map("organization_id")
+  storeId        String           @map("store_id")
+  subcategoryId  String           @map("subcategory_id")
+  status         StockCountStatus @default(DRAFT)
+  note           String?
+  createdById    String           @map("created_by_id")
+  submittedAt    DateTime?        @map("submitted_at")
+  reviewedById   String?          @map("reviewed_by_id")
+  reviewedAt     DateTime?        @map("reviewed_at")
+  reviewNote     String?          @map("review_note")
+  createdAt      DateTime         @default(now()) @map("created_at")
+  updatedAt      DateTime         @updatedAt @map("updated_at")
+
+  organization Organization     @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  store        Store            @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  subcategory  Subcategory      @relation(fields: [subcategoryId], references: [id], onDelete: Cascade)
+  createdBy    User             @relation("StockCountsCreated", fields: [createdById], references: [id])
+  reviewedBy   User?            @relation("StockCountsReviewed", fields: [reviewedById], references: [id])
+  lines        StockCountLine[]
+  movements    StockMovement[]
+
+  @@index([storeId, status])
+  @@map("stock_counts")
+}
+
+model StockCountLine {
+  id               String    @id @default(uuid())
+  stockCountId     String    @map("stock_count_id")
+  storeProductId   String    @map("store_product_id")
+  countedQty       Int       @map("counted_qty")
+  /// System stock snapshotted when the count (or its recount) is submitted
+  systemQty        Int?      @map("system_qty")
+  /// Flagged by the approver to be counted again
+  recountRequested Boolean   @default(false) @map("recount_requested")
+  /// The counter's working number during a recount, kept apart so they never see the earlier one
+  recountQty       Int?      @map("recount_qty")
+  /// Set when this line was applied to stock ahead of the rest of the count
+  appliedAt        DateTime? @map("applied_at")
+
+  stockCount   StockCount               @relation(fields: [stockCountId], references: [id], onDelete: Cascade)
+  storeProduct StoreProduct             @relation(fields: [storeProductId], references: [id], onDelete: Cascade)
+  revisions    StockCountLineRevision[]
+
+  @@unique([stockCountId, storeProductId])
+  @@map("stock_count_lines")
+}
+
+/// Append-only history of a count line: first count, recounts and approver corrections
+model StockCountLineRevision {
+  id        String                 @id @default(uuid())
+  lineId    String                 @map("line_id")
+  kind      StockCountRevisionKind
+  qty       Int
+  reason    String?
+  userId    String                 @map("user_id")
+  createdAt DateTime               @default(now()) @map("created_at")
+
+  line StockCountLine @relation(fields: [lineId], references: [id], onDelete: Cascade)
+  user User           @relation(fields: [userId], references: [id])
+
+  @@index([lineId])
+  @@map("stock_count_line_revisions")
 }

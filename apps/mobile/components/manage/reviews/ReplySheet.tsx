@@ -29,6 +29,7 @@ export function ReplySheet({ reviewId, initialBody, onClose, onSaved }: ReplyShe
 
   return (
     <BottomSheet
+      scrollable
       visible={!!reviewId}
       title={initialBody ? "Edit reply" : "Reply to review"}
       onClose={onClose}

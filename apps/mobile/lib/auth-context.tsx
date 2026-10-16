@@ -14,6 +14,8 @@ export interface UserInfo {
   organizationId?: string;
   organizations: OrgSummary[];
   stores: { id: string; name: string }[];
+  /** Effective permissions in the selected organization (role preset + owner-granted add-ons) */
+  permissions: string[];
 }
 
 interface AuthState {

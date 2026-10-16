@@ -1,5 +1,7 @@
 import type { FastifyInstance } from "fastify";
 import { authenticate } from "../../middleware/auth.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import {
   createMembershipPlanSchema,
@@ -355,11 +357,8 @@ export async function membershipRoutes(app: FastifyInstance) {
   });
 
   // ── Admin: list plans ──────────────────────────────
-  app.get("/plans", { preHandler: [authenticate] }, async (request, reply) => {
+  app.get("/plans", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request, reply) => {
     const user = getOrgUser(request);
-    if (user.role !== "SUPER_ADMIN" && user.role !== "ORG_ADMIN") {
-      return reply.forbidden("Only admins can list membership plans");
-    }
     const { page = "1", pageSize = "20" } = request.query as { page?: string; pageSize?: string };
 
     const where = user.role === "SUPER_ADMIN" ? {} : { organizationId: user.organizationId! };
@@ -388,11 +387,8 @@ export async function membershipRoutes(app: FastifyInstance) {
   });
 
   // ── Admin: create plan ─────────────────────────────
-  app.post("/plans", { preHandler: [authenticate] }, async (request, reply) => {
+  app.post("/plans", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request, reply) => {
     const user = getOrgUser(request);
-    if (user.role !== "SUPER_ADMIN" && user.role !== "ORG_ADMIN") {
-      return reply.forbidden("Only admins can create membership plans");
-    }
 
     const body = createMembershipPlanSchema.parse(request.body);
     const organizationId = user.role === "SUPER_ADMIN"
@@ -409,11 +405,8 @@ export async function membershipRoutes(app: FastifyInstance) {
   });
 
   // ── Admin: update plan ─────────────────────────────
-  app.put<{ Params: { id: string } }>("/plans/:id", { preHandler: [authenticate] }, async (request, reply) => {
+  app.put<{ Params: { id: string } }>("/plans/:id", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request, reply) => {
     const user = getOrgUser(request);
-    if (user.role !== "SUPER_ADMIN" && user.role !== "ORG_ADMIN") {
-      return reply.forbidden("Only admins can update membership plans");
-    }
 
     const body = updateMembershipPlanSchema.parse(request.body);
     const existing = await app.prisma.membershipPlan.findUnique({ where: { id: request.params.id } });
@@ -432,11 +425,8 @@ export async function membershipRoutes(app: FastifyInstance) {
   });
 
   // ── Admin: soft-delete plan ────────────────────────
-  app.delete<{ Params: { id: string } }>("/plans/:id", { preHandler: [authenticate] }, async (request, reply) => {
+  app.delete<{ Params: { id: string } }>("/plans/:id", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request, reply) => {
     const user = getOrgUser(request);
-    if (user.role !== "SUPER_ADMIN" && user.role !== "ORG_ADMIN") {
-      return reply.forbidden("Only admins can delete membership plans");
-    }
 
     const existing = await app.prisma.membershipPlan.findUnique({ where: { id: request.params.id } });
     if (!existing) return reply.notFound("Plan not found");
@@ -454,11 +444,8 @@ export async function membershipRoutes(app: FastifyInstance) {
   });
 
   // ── Admin: list subscribers ────────────────────────
-  app.get("/subscribers", { preHandler: [authenticate] }, async (request, reply) => {
+  app.get("/subscribers", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request, reply) => {
     const user = getOrgUser(request);
-    if (user.role !== "SUPER_ADMIN" && user.role !== "ORG_ADMIN") {
-      return reply.forbidden("Only admins can view subscribers");
-    }
 
     const { page = "1", pageSize = "20", search } = request.query as { page?: string; pageSize?: string; search?: string };
 

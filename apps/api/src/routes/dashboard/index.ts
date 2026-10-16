@@ -1,8 +1,10 @@
 import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { addDays, istDateKey, istDay } from "../../services/ist-day.js";
 
 interface KPIs {
   totalRevenue: number;
@@ -36,7 +38,7 @@ interface DashboardData {
 export async function dashboardRoutes(app: FastifyInstance) {
   app.get(
     "/stats",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requirePermission(Permission.REPORTS_VIEW)] },
     async (request, reply) => {
       const { days: daysParam, storeId } = request.query as { days?: string; storeId?: string };
       if (storeId && !(await verifyStoreOrgAccess(request, app.prisma, storeId))) {
@@ -44,13 +46,10 @@ export async function dashboardRoutes(app: FastifyInstance) {
       }
       const days = [7, 30, 90].includes(Number(daysParam)) ? Number(daysParam) : 7;
 
-      const now = new Date();
-      const periodStart = new Date(now);
-      periodStart.setDate(periodStart.getDate() - days);
-      periodStart.setHours(0, 0, 0, 0);
-
-      const previousStart = new Date(periodStart);
-      previousStart.setDate(previousStart.getDate() - days);
+      // Stores run on India time: the period is the last `days` IST days including today, compared with the same span before it
+      const todayKey = istDay().key;
+      const periodStart = istDay(addDays(todayKey, -(days - 1))).start;
+      const previousStart = istDay(addDays(todayKey, -(2 * days - 1))).start;
 
       // Org scoping
       const orgStoreIds = await getOrgStoreIds(request, app.prisma);
@@ -121,13 +120,9 @@ export async function dashboardRoutes(app: FastifyInstance) {
       });
 
       const dayMap = new Map<string, { count: number; revenue: number }>();
-      for (let i = days - 1; i >= 0; i--) {
-        const d = new Date(now);
-        d.setDate(d.getDate() - i);
-        dayMap.set(d.toISOString().slice(0, 10), { count: 0, revenue: 0 });
-      }
+      for (let i = days - 1; i >= 0; i--) dayMap.set(addDays(todayKey, -i), { count: 0, revenue: 0 });
       for (const order of periodOrders) {
-        const key = order.createdAt.toISOString().slice(0, 10);
+        const key = istDateKey(order.createdAt);
         const entry = dayMap.get(key);
         if (entry) {
           entry.count += 1;

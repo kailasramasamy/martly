@@ -13,6 +13,8 @@ import { EmptyState } from "../../../components/manage/ui/EmptyState";
 import { buildUpdatePayload, draftFromItem, type StoreProductDraft } from "../../../components/manage/inventory/draft";
 import { StoreProductForm } from "../../../components/manage/inventory/StoreProductForm";
 import type { StoreProductItem } from "../../../components/manage/inventory/types";
+import { StockAdjustSection } from "../../../components/manage/stock/StockAdjustSection";
+import { useListingAccess } from "../../../components/manage/inventory/use-listing-access";
 import { useToast } from "../../../lib/toast-context";
 
 export default function StoreProductDetailScreen() {
@@ -20,25 +22,25 @@ export default function StoreProductDetailScreen() {
   const router = useRouter();
   const toast = useToast();
   const { user } = useAuth();
-  const role = user?.role ?? "";
   const { data, setData, loading, error, reload } = useResource<StoreProductItem>(`/api/v1/store-products/${id}`);
   const [draft, setDraft] = useState<StoreProductDraft | null>(null);
   const [confirmRemove, setConfirmRemove] = useState(false);
   const { run, running } = useAction();
+  const access = useListingAccess();
 
   useEffect(() => {
     if (data) setDraft(draftFromItem(data));
   }, [data]);
 
-  if (!can(role, "store-products", "show")) {
+  if (!can(user, "store-products", "show")) {
     return <EmptyState icon="lock-closed-outline" title="No access" message="Your role can't view store inventory." />;
   }
-  const canEdit = can(role, "store-products", "edit");
-  const canRemove = can(role, "store-products", "delete");
+  const canEdit = Object.values(access).some(Boolean);
+  const canRemove = can(user, "store-products", "delete");
 
   const save = async () => {
     if (!draft) return;
-    const built = buildUpdatePayload(draft);
+    const built = buildUpdatePayload(draft, access);
     if ("error" in built) return toast.show(built.error, "error");
     const res = await run(() => api.put<StoreProductItem>(`/api/v1/store-products/${id}`, built.payload), "Saved");
     if (res) setData(res.data);
@@ -59,7 +61,8 @@ export default function StoreProductDetailScreen() {
       headerRight={canRemove ? () => <HeaderAction icon="trash-outline" accessibilityLabel="Remove from store" onPress={() => setConfirmRemove(true)} /> : undefined}
       actions={canEdit ? <Button label="Save changes" onPress={save} loading={running} style={{ flex: 1 }} /> : undefined}
     >
-      {data && draft && <StoreProductForm item={data} draft={draft} readOnly={!canEdit} onChange={(p) => setDraft({ ...draft, ...p })} />}
+      {data && draft && <StoreProductForm item={data} draft={draft} access={access} onChange={(p) => setDraft({ ...draft, ...p })} />}
+      {data && <StockAdjustSection storeProductId={data.id} currentStock={data.stock} onChanged={reload} />}
       <ConfirmDialog
         visible={confirmRemove}
         title="Remove from store?"

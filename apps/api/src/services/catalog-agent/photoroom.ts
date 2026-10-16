@@ -47,6 +47,13 @@ export function measureTilt(alpha: Buffer, width: number, height: number, channe
   };
 }
 
+/** Full-size cut-out of the subject on a transparent background, as PNG */
+export async function photoroomCutout(image: Buffer): Promise<Buffer> {
+  const form = new FormData();
+  form.append("image_file", new Blob([new Uint8Array(image)], { type: "image/png" }), "image.png");
+  return post(SEGMENT_URL, form);
+}
+
 /** Rotates a leaning product upright, using a low-resolution cut-out to find its axis */
 async function straighten(photo: Buffer) {
   const form = new FormData();

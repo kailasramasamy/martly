@@ -11,7 +11,7 @@ export default function ExpressDeliveryScreen() {
   const { storeId, picker, hasStores } = useStoreScope({ defaultFirst: true });
   const config = useResource<ExpressConfig | null>(storeId ? `/api/v1/express-delivery/config?storeId=${storeId}` : null);
 
-  if (!can(user?.role ?? "", "express-delivery", "edit")) return <ScreenNotice title="Express delivery" kind="denied" />;
+  if (!can(user, "express-delivery", "edit")) return <ScreenNotice title="Express delivery" kind="denied" />;
   if (!storeId || !hasStores) return <ScreenNotice title="Express delivery" kind="no-store" />;
   return (
     <ExpressForm

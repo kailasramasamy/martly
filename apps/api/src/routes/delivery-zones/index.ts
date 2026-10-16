@@ -2,7 +2,8 @@ import type { FastifyInstance, FastifyRequest } from "fastify";
 import { createDeliveryZoneSchema, updateDeliveryZoneSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 
 export async function deliveryZoneRoutes(app: FastifyInstance) {
@@ -17,7 +18,7 @@ export async function deliveryZoneRoutes(app: FastifyInstance) {
 
   // GET / - List zones (org-scoped)
   app.get("/", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG, Permission.STORE_SETTINGS)],
   }, async (request) => {
     const { page = 1, pageSize = 50 } = request.query as { page?: number; pageSize?: number };
     const skip = (Number(page) - 1) * Number(pageSize);
@@ -49,7 +50,7 @@ export async function deliveryZoneRoutes(app: FastifyInstance) {
 
   // GET /:id - Zone detail
   app.get<{ Params: { id: string } }>("/:id", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG, Permission.STORE_SETTINGS)],
   }, async (request, reply) => {
     const zone = await app.prisma.deliveryZone.findUnique({
       where: { id: request.params.id },
@@ -63,7 +64,7 @@ export async function deliveryZoneRoutes(app: FastifyInstance) {
 
   // POST / - Create zone with storeIds
   app.post("/", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG)],
   }, async (request, reply) => {
     const body = createDeliveryZoneSchema.parse(request.body);
     const { storeIds, ...zoneData } = body;
@@ -87,7 +88,7 @@ export async function deliveryZoneRoutes(app: FastifyInstance) {
 
   // PUT /:id - Update zone, sync stores
   app.put<{ Params: { id: string } }>("/:id", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG)],
   }, async (request, reply) => {
     const body = updateDeliveryZoneSchema.parse(request.body);
     const { storeIds, ...zoneData } = body;
@@ -119,7 +120,7 @@ export async function deliveryZoneRoutes(app: FastifyInstance) {
 
   // DELETE /:id - Delete zone
   app.delete<{ Params: { id: string } }>("/:id", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG)],
   }, async (request, reply) => {
     const existing = await app.prisma.deliveryZone.findUnique({ where: { id: request.params.id } });
     if (!existing || !canAccessZone(request, existing)) return reply.notFound("Delivery zone not found");

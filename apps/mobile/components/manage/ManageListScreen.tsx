@@ -6,6 +6,7 @@ import { colors } from "../../constants/theme";
 import { manage } from "./ui/tokens";
 import { SearchField } from "./ui/SearchField";
 import { ListSkeleton } from "./ui/ListSkeleton";
+import { GridSkeleton } from "./ui/GridSkeleton";
 import { EmptyState } from "./ui/EmptyState";
 import { useCollapsingToolbar } from "./use-collapsing-toolbar";
 
@@ -68,7 +69,7 @@ export function ManageListScreen<T extends { id: string }>(props: ManageListScre
           {filters}
         </Animated.View>
       )}
-      {list.loading ? <View style={inset}><ListSkeleton /></View> : (
+      {list.loading ? <View style={inset}>{columns ? <GridSkeleton columns={columns} width={cellWidth} gap={GRID_GAP} padding={GRID_PAD} /> : <ListSkeleton />}</View> : (
         <AnimatedFlatList
           keyboardDismissMode="on-drag"
           keyboardShouldPersistTaps="handled"

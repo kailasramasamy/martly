@@ -1,18 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useFocusEffect } from "expo-router";
 import { useManageScope } from "../../../lib/manage-scope-context";
 import { usePagedList } from "../../../lib/manage/use-paged-list";
 import { useOrdersFilterRequest, useOrdersTick } from "../../../lib/manage/use-live-orders";
 import { COUNTED_STATUSES } from "./OrderToolbar";
-import { forwardStatus } from "./order-flow";
 import { useOrderActions } from "./use-order-actions";
 import { useOrderSelection } from "./use-order-selection";
 import { useStatusCounts } from "./use-status-counts";
 import type { OrderListItem } from "./types";
-
-export function commonForwardStatus(orders: OrderListItem[]): string | undefined {
-  const forwards = new Set(orders.map(forwardStatus));
-  return forwards.size === 1 ? [...forwards][0] : undefined;
-}
 
 /** All state behind the Orders tab: filters, paged list, live refresh, selection and mutations */
 export function useOrdersTab() {
@@ -43,5 +38,9 @@ export function useOrdersTab() {
   useEffect(() => { if (filterRequest) setStatus(filterRequest.status); }, [filterRequest]);
   useEffect(() => { clear(); }, [status, query, storeId, clear]);
 
-  return { list, counts, selection, actions, status, setStatus, query, setQuery, scopeLoading };
+  // Pull-to-refresh and coming back to the tab reload the stage counts with the list, so the two never disagree
+  const refreshAll = useCallback(() => { refresh(); reloadCounts(); }, [refresh, reloadCounts]);
+  useFocusEffect(useCallback(() => { reloadCounts(); }, [reloadCounts]));
+
+  return { list: { ...list, refresh: refreshAll }, counts, selection, actions, status, setStatus, query, setQuery, scopeLoading };
 }

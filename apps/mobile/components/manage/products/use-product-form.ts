@@ -25,7 +25,7 @@ export function useProductForm(product?: ProductDetail) {
   const [storeIds, setStoreIds] = useState<string[] | null>(null);
   const isEdit = !!product;
   const activeStores = useMemo(() => stores.filter((s) => s.status === "ACTIVE"), [stores]);
-  const assignStores = !isEdit && user?.role === "ORG_ADMIN" && activeStores.length > 0;
+  const assignStores = !isEdit && !!user && user.role !== "SUPER_ADMIN" && activeStores.length > 0;
   const selectedStores = storeIds ?? activeStores.map((s) => s.id);
 
   useEffect(() => {

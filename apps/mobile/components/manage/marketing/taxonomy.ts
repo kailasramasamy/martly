@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import type { SelectOption } from "../ui/SelectField";
+import type { SelectOption } from "../ui/OptionSheet";
 import { useResource } from "../../../lib/manage/use-resource";
 
 interface Node {

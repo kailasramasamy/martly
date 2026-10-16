@@ -13,7 +13,7 @@ export default function CollectionScreen() {
   const { data, loading, error, reload } = useResource<CollectionDetail>(`/api/v1/collections/${id}`);
   const owned = user?.role === "SUPER_ADMIN" || (!!data && data.organizationId === user?.organizationId);
 
-  if (data && owned && can(user?.role ?? "", "collections", "edit")) return <CollectionForm collection={data} />;
+  if (data && owned && can(user, "collections", "edit")) return <CollectionForm collection={data} />;
   return (
     <ManageStackScreen title={data?.title ?? "Collection"} loading={loading} error={error} onRetry={reload}>
       {data && <CollectionView collection={data} />}

@@ -18,7 +18,7 @@ export const STORE_STATUS_RAIL: Record<string, string> = {
 
 export const ROLE_PILL: Record<string, Pill> = {
   SUPER_ADMIN: { label: "Super admin", color: "#b91c1c", bg: "#fee2e2" },
-  ORG_ADMIN: { label: "Org admin", color: "#1d4ed8", bg: "#dbeafe" },
+  ORG_ADMIN: { label: "Owner", color: "#1d4ed8", bg: "#dbeafe" },
   STORE_MANAGER: { label: "Store manager", color: "#15803d", bg: "#dcfce7" },
   STAFF: { label: "Staff", color: "#b45309", bg: "#fef3c7" },
   RIDER: { label: "Rider", color: "#0e7490", bg: "#cffafe" },

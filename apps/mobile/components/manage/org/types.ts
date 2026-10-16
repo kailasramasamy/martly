@@ -49,6 +49,7 @@ export interface UserDetail {
   email: string;
   phone: string | null;
   role: string;
+  createdAt: string;
   userStores: { store: { id: string; name: string } }[];
 }
 

@@ -240,7 +240,7 @@ export default function SubscriptionDetailScreen() {
   const isCancelled = subscription.status === "CANCELLED";
 
   return (
-    <ScrollView
+    <ScrollView keyboardDismissMode="on-drag"
       style={styles.container}
       contentContainerStyle={styles.content}
       refreshControl={<RefreshControl refreshing={refreshing} onRefresh={handleRefresh} tintColor={colors.primary} />}

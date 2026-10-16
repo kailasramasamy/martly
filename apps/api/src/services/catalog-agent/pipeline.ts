@@ -30,7 +30,7 @@ async function propose(prisma: PrismaClient, draft: Draft, photos: Buffer[]): Pr
   await appendUsage(prisma, draft.id, [usage]);
   const match = label.barcode ? await findByBarcode(prisma, label.barcode) : null;
   const barcodeTaken = !!match && match.product.organizationId !== null && match.product.organizationId !== draft.organizationId;
-  const candidates = label.brand ? await brandCandidates(prisma, label.brand) : [];
+  const candidates = label.brand ? await brandCandidates(prisma, label.brand, draft.organizationId) : [];
   const picked = await classify(prisma, label, candidates);
   await appendUsage(prisma, draft.id, [picked.usage]);
   const proposal: Proposal = { label, classification: picked.result, barcodeTaken };

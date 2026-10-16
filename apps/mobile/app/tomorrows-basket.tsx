@@ -11,6 +11,8 @@ import {
   Modal,
   Pressable,
   TextInput,
+  KeyboardAvoidingView,
+  Platform,
 } from "react-native";
 import { useRouter, useFocusEffect } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -414,7 +416,7 @@ export default function TomorrowsBasketScreen() {
         <Text style={styles.cutoffText}>{countdown}</Text>
       </View>
 
-      <ScrollView
+      <ScrollView keyboardDismissMode="on-drag"
         style={styles.scrollView}
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
@@ -549,6 +551,7 @@ export default function TomorrowsBasketScreen() {
         animationType="slide"
         onRequestClose={() => setRechargeSheetVisible(false)}
       >
+        <KeyboardAvoidingView style={styles.sheetKeyboard} behavior={Platform.OS === "ios" ? "padding" : undefined}>
         <Pressable style={styles.sheetOverlay} onPress={() => setRechargeSheetVisible(false)}>
           <Pressable style={[styles.sheetContent, { paddingBottom: Math.max(insets.bottom, 16) + 8 }]} onPress={() => {}}>
             <View style={styles.sheetHandle} />
@@ -615,6 +618,7 @@ export default function TomorrowsBasketScreen() {
             </TouchableOpacity>
           </Pressable>
         </Pressable>
+        </KeyboardAvoidingView>
       </Modal>
 
       {/* Razorpay Checkout */}
@@ -976,6 +980,7 @@ const styles = StyleSheet.create({
   },
 
   // Recharge sheet
+  sheetKeyboard: { flex: 1 },
   sheetOverlay: {
     flex: 1,
     backgroundColor: "rgba(0,0,0,0.4)",

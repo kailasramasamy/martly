@@ -35,6 +35,7 @@ import { walletRoutes } from "./routes/wallet/index.js";
 import { loyaltyRoutes } from "./routes/loyalty/index.js";
 import { expressDeliveryRoutes } from "./routes/express-delivery/index.js";
 import { deliveryTripRoutes } from "./routes/delivery-trips/index.js";
+import { deliveryPlanRoutes } from "./routes/delivery-plan/index.js";
 import { riderRoutes } from "./routes/riders/index.js";
 import { bannerRoutes } from "./routes/banners/index.js";
 import { notificationRoutes } from "./routes/notifications/index.js";
@@ -59,6 +60,7 @@ import reorderNudgeSchedulerPlugin from "./plugins/reorder-nudge-scheduler.js";
 import subscriptionSchedulerPlugin from "./plugins/subscription-scheduler.js";
 import seasonalCurationSchedulerPlugin from "./plugins/seasonal-curation-scheduler.js";
 import promoSchedulerPlugin from "./plugins/promo-scheduler.js";
+import deliveryPlanningSchedulerPlugin from "./plugins/delivery-planning-scheduler.js";
 import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
 
 export async function buildApp() {
@@ -89,6 +91,7 @@ export async function buildApp() {
   await app.register(subscriptionSchedulerPlugin);
   await app.register(seasonalCurationSchedulerPlugin);
   await app.register(promoSchedulerPlugin);
+  await app.register(deliveryPlanningSchedulerPlugin);
   await app.register(catalogAgentWorkerPlugin);
 
   // ── Error Handler ────────────────────────────────
@@ -149,6 +152,7 @@ export async function buildApp() {
       await api.register(loyaltyRoutes, { prefix: "/loyalty" });
       await api.register(expressDeliveryRoutes, { prefix: "/express-delivery" });
       await api.register(deliveryTripRoutes, { prefix: "/delivery-trips" });
+      await api.register(deliveryPlanRoutes, { prefix: "/delivery-plan" });
       await api.register(riderRoutes, { prefix: "/riders" });
       await api.register(bannerRoutes, { prefix: "/banners" });
       await api.register(notificationRoutes, { prefix: "/notifications" });

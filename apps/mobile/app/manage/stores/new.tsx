@@ -5,6 +5,6 @@ import { ScreenNotice } from "../../../components/manage/delivery-config/ScreenN
 
 export default function NewStoreScreen() {
   const { user } = useAuth();
-  if (!can(user?.role ?? "", "stores", "create")) return <ScreenNotice title="New store" kind="denied" />;
+  if (!can(user, "stores", "create")) return <ScreenNotice title="New store" kind="denied" />;
   return <StoreEditor />;
 }

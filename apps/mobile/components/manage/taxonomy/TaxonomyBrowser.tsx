@@ -33,7 +33,7 @@ export function TaxonomyBrowser({ level, id }: TaxonomyBrowserProps) {
   const router = useRouter();
   const { user } = useAuth();
   const { tree, loading, error, reload } = useTaxonomy();
-  const canWrite = can(user?.role ?? "", "categories", "create");
+  const canWrite = can(user, "categories", "create");
   const found = level && id ? findNode(tree, level, id) : null;
   const itemLevel = level ? CHILD_LEVEL[level] : "department";
   const items = level ? found?.children ?? [] : tree;

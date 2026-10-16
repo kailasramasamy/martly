@@ -1,7 +1,8 @@
 import type { ReactNode } from "react";
-import { View, Text, TouchableOpacity, Modal, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, Modal, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
 
 interface Props {
   visible: boolean;
@@ -15,16 +16,28 @@ interface Props {
 
 // Page-sheet form shell shared by the account screen's edit forms
 export function FormSheet({ visible, title, submitLabel, submitting, onSubmit, onClose, children }: Props) {
+  const keyboard = useKeyboardReveal();
   return (
     <Modal visible={visible} animationType="slide" presentationStyle="pageSheet" onRequestClose={onClose}>
-      <View style={styles.container}>
+      <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
+        <KeyboardAvoidingView
+        style={styles.container}
+        behavior={Platform.OS === "ios" ? "padding" : undefined}
+        keyboardVerticalOffset={keyboard.topOffset}
+      >
         <View style={styles.header}>
           <Text style={styles.title}>{title}</Text>
           <TouchableOpacity style={styles.close} onPress={onClose} accessibilityLabel="Close">
             <Ionicons name="close" size={20} color={colors.text} />
           </TouchableOpacity>
         </View>
-        <View style={styles.body}>
+        <ScrollView keyboardDismissMode="on-drag"
+          ref={keyboard.scrollRef}
+          onScroll={keyboard.onScroll}
+          scrollEventThrottle={16}
+          keyboardShouldPersistTaps="handled"
+          contentContainerStyle={styles.body}
+        >
           {children}
           <TouchableOpacity
             style={[styles.submit, submitting && { opacity: 0.6 }]}
@@ -34,7 +47,8 @@ export function FormSheet({ visible, title, submitLabel, submitting, onSubmit, o
           >
             {submitting ? <ActivityIndicator color="#fff" size="small" /> : <Text style={styles.submitText}>{submitLabel}</Text>}
           </TouchableOpacity>
-        </View>
+        </ScrollView>
+      </KeyboardAvoidingView>
       </View>
     </Modal>
   );

@@ -14,7 +14,8 @@
     "seed:home-test": "tsx prisma/seed-home-test.ts",
     "seed:category-tree": "tsx prisma/seed-category-tree.ts",
     "android": "expo run:android",
-    "ios": "expo run:ios"
+    "ios": "expo run:ios",
+    "test": "tsx --test 'src/**/*.test.ts'"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.133.0",

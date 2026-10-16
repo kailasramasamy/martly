@@ -253,7 +253,7 @@ export default function SubscriptionsScreen() {
 
   return (
     <View style={styles.container}>
-      <FlatList
+      <FlatList keyboardDismissMode="on-drag"
         data={subscriptions}
         keyExtractor={(item) => item.id}
         renderItem={renderItem}

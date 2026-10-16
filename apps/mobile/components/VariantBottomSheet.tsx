@@ -168,7 +168,7 @@ export function VariantBottomSheet({
         </TouchableOpacity>
         <Text style={styles.title} numberOfLines={2}>{variants[0].product.name}</Text>
         {mode === "subscribe" && <Text style={styles.subtitle}>Choose a size to subscribe</Text>}
-        <ScrollView bounces={false} contentContainerStyle={styles.list}>
+        <ScrollView keyboardDismissMode="on-drag" bounces={false} contentContainerStyle={styles.list}>
           {variants.map((sp) => (
             <VariantRow
               key={sp.id} sp={sp} qty={cartQuantityMap.get(sp.id) ?? 0} isMember={isMember} mode={mode}

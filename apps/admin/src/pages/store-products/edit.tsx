@@ -1,4 +1,6 @@
 import { Edit, useForm } from "@refinedev/antd";
+import { useGetIdentity } from "@refinedev/core";
+import { canChangeStoreProductField, type PermissionSubject } from "@martly/shared/permissions";
 import { Form, InputNumber, Switch, Card, Row, Col, Descriptions, Select, DatePicker, Tag } from "antd";
 import { InfoCircleOutlined, DollarOutlined, TagOutlined } from "@ant-design/icons";
 import dayjs from "dayjs";
@@ -20,6 +22,11 @@ export const StoreProductEdit = () => {
   } | undefined;
 
   const discountType = Form.useWatch("discountType", formProps.form);
+  // Only offer what the API accepts from this member; the rest shows disabled
+  const { data: identity } = useGetIdentity<PermissionSubject>();
+  const may = (field: string) => !!identity && canChangeStoreProductField(identity, field);
+  const canPrice = may("price");
+  const canStock = may("stock");
 
   // Convert date strings to dayjs for DatePicker
   const originalOnFinish = formProps.onFinish;
@@ -32,15 +39,17 @@ export const StoreProductEdit = () => {
     },
     onFinish: (values: Record<string, unknown>) => {
       return originalOnFinish?.({
-        price: values.price != null ? Number(values.price) : undefined,
-        stock: values.stock != null ? Number(values.stock) : undefined,
-        isActive: values.isActive,
-        isFeatured: values.isFeatured,
-        memberPrice: values.memberPrice != null ? Number(values.memberPrice) : null,
-        discountType: values.discountType || null,
-        discountValue: values.discountValue != null ? Number(values.discountValue) : null,
-        discountStart: values.discountStart ? (values.discountStart as dayjs.Dayjs).toISOString() : null,
-        discountEnd: values.discountEnd ? (values.discountEnd as dayjs.Dayjs).toISOString() : null,
+        ...(canPrice && {
+          price: values.price != null ? Number(values.price) : undefined,
+          memberPrice: values.memberPrice != null ? Number(values.memberPrice) : null,
+          discountType: values.discountType || null,
+          discountValue: values.discountValue != null ? Number(values.discountValue) : null,
+          discountStart: values.discountStart ? (values.discountStart as dayjs.Dayjs).toISOString() : null,
+          discountEnd: values.discountEnd ? (values.discountEnd as dayjs.Dayjs).toISOString() : null,
+        }),
+        ...(canStock && { stock: values.stock != null ? Number(values.stock) : undefined }),
+        ...(may("isActive") && { isActive: values.isActive }),
+        ...(may("isFeatured") && { isFeatured: values.isFeatured }),
       });
     },
   };
@@ -89,27 +98,27 @@ export const StoreProductEdit = () => {
               <Row gutter={16}>
                 <Col xs={24} sm={12}>
                   <Form.Item label="Price" name="price" rules={[{ required: true }]}>
-                    <InputNumber min={0.01} step={0.01} style={{ width: "100%" }} />
+                    <InputNumber min={0.01} step={0.01} style={{ width: "100%" }} disabled={!canPrice} />
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>
                   <Form.Item label="Member Price" name="memberPrice" extra="Special price for membership subscribers. Leave empty for no member pricing.">
-                    <InputNumber min={0.01} step={0.01} style={{ width: "100%" }} placeholder="Optional" />
+                    <InputNumber min={0.01} step={0.01} style={{ width: "100%" }} placeholder="Optional" disabled={!canPrice} />
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>
                   <Form.Item label="Total Stock (on-hand)" name="stock" rules={[{ required: true }]} extra="Physical inventory count. Available stock is computed as total minus reserved.">
-                    <InputNumber min={0} step={1} style={{ width: "100%" }} />
+                    <InputNumber min={0} step={1} style={{ width: "100%" }} disabled={!canStock} />
                   </Form.Item>
                 </Col>
                 <Col xs={12}>
                   <Form.Item label="Active" name="isActive" valuePropName="checked">
-                    <Switch />
+                    <Switch disabled={!may("isActive")} />
                   </Form.Item>
                 </Col>
                 <Col xs={12}>
                   <Form.Item label="Featured" name="isFeatured" valuePropName="checked">
-                    <Switch />
+                    <Switch disabled={!may("isFeatured")} />
                   </Form.Item>
                 </Col>
               </Row>
@@ -121,7 +130,7 @@ export const StoreProductEdit = () => {
               <Row gutter={16}>
                 <Col xs={24} sm={12}>
                   <Form.Item label="Discount Type" name="discountType">
-                    <Select options={DISCOUNT_TYPE_OPTIONS} allowClear placeholder="No discount" />
+                    <Select options={DISCOUNT_TYPE_OPTIONS} allowClear placeholder="No discount" disabled={!canPrice} />
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>
@@ -133,17 +142,18 @@ export const StoreProductEdit = () => {
                       style={{ width: "100%" }}
                       placeholder={discountType === "PERCENTAGE" ? "e.g. 10" : "e.g. 15.00"}
                       addonAfter={discountType === "PERCENTAGE" ? "%" : "₹"}
+                      disabled={!canPrice}
                     />
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>
                   <Form.Item label="Start Date" name="discountStart">
-                    <DatePicker showTime style={{ width: "100%" }} />
+                    <DatePicker showTime style={{ width: "100%" }} disabled={!canPrice} />
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>
                   <Form.Item label="End Date" name="discountEnd">
-                    <DatePicker showTime style={{ width: "100%" }} />
+                    <DatePicker showTime style={{ width: "100%" }} disabled={!canPrice} />
                   </Form.Item>
                 </Col>
               </Row>

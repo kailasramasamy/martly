@@ -22,7 +22,7 @@ export function UserPickerSheet({ visible, excludeIds, onClose, onPick }: UserPi
   const list = usePagedList<UserRow>("/api/v1/users", { q }, { pageSize: 30, enabled: visible });
   const users = list.items.filter((u) => !excludeIds.includes(u.id) && u.role !== "SUPER_ADMIN" && u.role !== "CUSTOMER");
   return (
-    <BottomSheet visible={visible} title="Assign a user" onClose={onClose}>
+    <BottomSheet flush visible={visible} title="Assign a user" onClose={onClose}>
       <View style={styles.search}><SearchField value={q} onChange={setQ} placeholder="Search by name or email" /></View>
       <FlatList
         keyboardDismissMode="on-drag"

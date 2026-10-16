@@ -1,9 +1,8 @@
 import type { ReactNode } from "react";
-import { View, Text, Animated, StyleSheet } from "react-native";
+import { View, Text, Animated, StyleSheet, type LayoutChangeEvent } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { colors, fonts } from "../constants/theme";
-import { useTabBarProgress } from "../lib/tab-bar-visibility";
+import { useTabBarHeight, useTabBarProgress } from "../lib/tab-bar-visibility";
 
 type IconName = keyof typeof Ionicons.glyphMap;
 
@@ -23,25 +22,26 @@ export function TabIcon({ focused, icon, badge }: { focused: boolean; icon: Icon
   );
 }
 
-function useTabBarHeight() {
-  const insets = useSafeAreaInsets();
-  const bottomPadding = Math.max(insets.bottom, 10);
-  return { height: 62 + bottomPadding, bottomPadding };
+/**
+ * Wraps every tab screen. The bar floats over the content and slides away on the native driver, so hiding it
+ * never resizes the screen; scroll views clear it with `useTabBarAutoHide().contentStyle`.
+ */
+export function TabSceneLayout({ children }: { children: ReactNode }) {
+  return <View style={styles.scene}>{children}</View>;
 }
 
 /**
- * Wraps every tab screen: the bar floats (so it can slide away on the native driver) and this spacer
- * reserves its height, shrinking in step as it hides — content and sticky footers follow it down.
+ * A sticky footer on a tab screen (checkout bar, floating cart, bulk actions): sits just above the tab bar and
+ * slides down with it when the bar hides. Report its height via `onLayout` to pad the list above it.
  */
-export function TabSceneLayout({ children }: { children: ReactNode }) {
+export function TabBottomDock({ children, onLayout }: { children: ReactNode; onLayout?: (e: LayoutChangeEvent) => void }) {
   const { height } = useTabBarHeight();
-  const { layoutProgress } = useTabBarProgress();
-  const spacer = layoutProgress.interpolate({ inputRange: [0, 1], outputRange: [height, 0] });
+  const { progress } = useTabBarProgress();
+  const translateY = progress.interpolate({ inputRange: [0, 1], outputRange: [0, height] });
   return (
-    <View style={styles.scene}>
+    <Animated.View style={[styles.dock, { bottom: height, transform: [{ translateY }] }]} onLayout={onLayout}>
       {children}
-      <Animated.View style={{ height: spacer }} />
-    </View>
+    </Animated.View>
   );
 }
 
@@ -61,6 +61,7 @@ export function useTabBarOptions() {
 }
 
 const styles = StyleSheet.create({
+  dock: { position: "absolute", left: 0, right: 0 },
   scene: { flex: 1 },
   tabBar: {
     position: "absolute",

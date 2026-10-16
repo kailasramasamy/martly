@@ -1,5 +1,8 @@
+import { useCallback } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { useRouter } from "expo-router";
+import { Redirect, useFocusEffect, useRouter } from "expo-router";
+import { Permission } from "@martly/shared/constants";
+import { can, hasPermission } from "@martly/shared/permissions";
 import { fonts } from "../../constants/theme";
 import { useAuth } from "../../lib/auth-context";
 import { useManageScope } from "../../lib/manage-scope-context";
@@ -13,6 +16,7 @@ import { BarChart } from "../../components/manage/today/BarChart";
 import { TodayKpis } from "../../components/manage/today/TodayKpis";
 import { LiveQueue, QUEUE_STATUSES } from "../../components/manage/today/LiveQueue";
 import { LowStockCard } from "../../components/manage/today/LowStockCard";
+import { CountsWaitingCard } from "../../components/manage/stock/CountsWaitingCard";
 import { RecentOrdersCard, TopProductsCard } from "../../components/manage/today/TodayLists";
 import { useTodayData } from "../../components/manage/today/use-today-data";
 import { useStatusCounts } from "../../components/manage/orders/use-status-counts";
@@ -31,12 +35,23 @@ function Greeting({ name }: { name?: string }) {
   );
 }
 
+/** Members without reports land on their first available tab instead */
 export default function ManageTodayScreen() {
+  const { user } = useAuth();
+  if (user?.role === "SUPER_ADMIN" || hasPermission(user?.permissions, Permission.REPORTS_VIEW)) return <TodayDashboard />;
+  if (hasPermission(user?.permissions, Permission.ORDERS_VIEW)) return <Redirect href="/(manage)/orders" />;
+  if (hasPermission(user?.permissions, Permission.DELIVERY_DELIVER)) return <Redirect href="/(manage)/delivery" />;
+  return <Redirect href={can(user, "store-products", "list") ? "/(manage)/catalog" : "/(manage)/more"} />;
+}
+
+function TodayDashboard() {
   const router = useRouter();
   const { user } = useAuth();
   const { storeId, loading: scopeLoading, stores } = useManageScope();
   const { stats, stock, lowItems, loading, refreshing, error, refresh } = useTodayData(storeId, !scopeLoading && stores.length > 0);
   const { counts, reload: reloadCounts } = useStatusCounts(QUEUE_STATUSES, storeId);
+  // Coming back to Today refreshes the live queue counts
+  useFocusEffect(useCallback(() => { reloadCounts(); }, [reloadCounts]));
 
   const openOrders = (status?: string) => {
     if (status) requestOrdersFilter(status);
@@ -61,6 +76,7 @@ export default function ManageTodayScreen() {
           <SectionCard title="Live queue" action={{ label: "All orders", onPress: () => openOrders() }}>
             <LiveQueue counts={counts} onSelect={openOrders} />
           </SectionCard>
+          <CountsWaitingCard storeId={storeId} />
           <SectionCard title="Revenue · last 7 days">
             <BarChart data={weekdays} formatValue={(v) => formatINR(v)} />
           </SectionCard>

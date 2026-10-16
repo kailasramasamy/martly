@@ -31,7 +31,7 @@ export function PhotoViewer({ photos, index, onClose }: PhotoViewerProps) {
           onMomentumScrollEnd={(e) => setCurrent(Math.round(e.nativeEvent.contentOffset.x / width))}
         >
           {photos.map((uri, i) => (
-            <ScrollView
+            <ScrollView keyboardDismissMode="on-drag"
               key={`${uri}-${i}`}
               style={{ width, height }}
               contentContainerStyle={styles.page}

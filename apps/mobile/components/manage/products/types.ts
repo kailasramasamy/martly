@@ -1,3 +1,4 @@
+import type { VariantListing } from "@martly/shared/listing";
 export interface BrandRef {
   id: string;
   name: string;
@@ -26,6 +27,8 @@ export interface ProductListItem {
   subcategory: { id: string; name: string } | null;
   organization: { id: string; name: string } | null;
   variants: ProductVariant[];
+  /** Present when requested with includeStoreProducts=true (scoped to the member's stores) */
+  storeProducts?: VariantListing[];
 }
 
 export interface ProductDetail extends ProductListItem {

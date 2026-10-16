@@ -2,7 +2,8 @@ import type { FastifyInstance, FastifyRequest } from "fastify";
 import { createFestivalEventSchema, updateFestivalEventSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission, requireRole } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { matchesRegions } from "../../services/seasonal/due-events.js";
 import { calendarSummary, calendarWhere, sortCalendar } from "../../services/seasonal/calendar-list.js";
@@ -11,12 +12,12 @@ import { curateEvent, isCurationConfigured, type CurationResult } from "../../se
 export async function festivalEventRoutes(app: FastifyInstance) {
   const adminOnly = { preHandler: [authenticate, requireRole("SUPER_ADMIN")] };
 
-  const adminRoles = { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] };
+  const adminRoles = { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] };
 
   // The calendar is small (~100 rows a year), so it's filtered in the database and ordered by phase in memory
   async function calendarRows(request: FastifyRequest, q?: string) {
     const user = getOrgUser(request);
-    const org = user.role === "ORG_ADMIN"
+    const org = user.role !== "SUPER_ADMIN"
       ? await app.prisma.organization.findUnique({ where: { id: user.organizationId! }, select: { festivalRegions: true } })
       : null;
     return app.prisma.festivalEvent.findMany({
@@ -80,7 +81,7 @@ export async function festivalEventRoutes(app: FastifyInstance) {
   // Runs the curator immediately instead of waiting for the scheduler's review window
   app.post<{ Params: { id: string } }>(
     "/:id/curate",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] },
     async (request, reply) => {
       if (!isCurationConfigured()) return reply.serviceUnavailable("Curation needs ANTHROPIC_API_KEY and OPENAI_API_KEY");
       const event = await app.prisma.festivalEvent.findUnique({ where: { id: request.params.id } });
@@ -89,7 +90,7 @@ export async function festivalEventRoutes(app: FastifyInstance) {
 
       const user = getOrgUser(request);
       const orgs = await app.prisma.organization.findMany({
-        where: user.role === "ORG_ADMIN" ? { id: user.organizationId } : {},
+        where: user.role !== "SUPER_ADMIN" ? { id: user.organizationId } : {},
         select: { id: true, name: true, slug: true, festivalRegions: true },
       });
       const targets = orgs.filter((org) => matchesRegions(event, org));

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { View, Image, Text, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
-import { can } from "@martly/shared/permissions";
+import { canEditCatalogRecord } from "@martly/shared/permissions";
 import { colors, fonts, radius } from "../../../constants/theme";
 import { useAuth } from "../../../lib/auth-context";
 import { usePagedList } from "../../../lib/manage/use-paged-list";
@@ -9,10 +9,12 @@ import { useResource } from "../../../lib/manage/use-resource";
 import { ManageListScreen } from "../ManageListScreen";
 import { ManageStackScreen } from "../ManageStackScreen";
 import { HeaderAction } from "../HeaderAction";
-import { ListRow } from "../ui/ListRow";
 import { FacetChips, type SearchFacetsMeta } from "../ui/FacetChips";
 import { manage } from "../ui/tokens";
+import { ProductTile } from "../inventory/ProductTile";
 import { CatalogPill } from "../products/CatalogPill";
+import { ListingPill } from "../products/ListingPill";
+import { useManageScope } from "../../../lib/manage-scope-context";
 import type { ProductListItem } from "../products/types";
 import type { BrandRecord } from "./brand-types";
 
@@ -25,6 +27,7 @@ function BrandHeader({ brand, productCount }: { brand: BrandRecord; productCount
     <View style={styles.header}>
       {brand.imageUrl ? <Image source={{ uri: brand.imageUrl }} style={styles.logo} resizeMode="contain" /> : <View style={[styles.logo, styles.noLogo]} />}
       <View style={styles.headerText}>
+        <CatalogPill organizationId={brand.organizationId} />
         <Text style={styles.slug}>{brand.slug}{productCount !== null ? ` \u00B7 ${productCount} product${productCount === 1 ? "" : "s"}` : ""}</Text>
         <View style={styles.swatches}>
           {brand.themeColor ? <Swatch color={brand.themeColor} /> : null}
@@ -41,8 +44,9 @@ export function BrandDetailScreen({ id }: { id: string }) {
   const brand = useResource<BrandRecord>(`/api/v1/brands/${id}`);
   const [q, setQ] = useState("");
   const [facet, setFacet] = useState<string | null>(null);
-  const list = usePagedList<ProductListItem, SearchFacetsMeta>("/api/v1/products", { brandId: id, q, subcategoryId: facet, withFacets: true });
-  const canEdit = can(user?.role ?? "", "brands", "edit");
+  const { storeId } = useManageScope();
+  const list = usePagedList<ProductListItem, SearchFacetsMeta>("/api/v1/products", { brandId: id, q, subcategoryId: facet, withFacets: true, includeStoreProducts: true });
+  const canEdit = !!brand.data && canEditCatalogRecord(user, "brands", brand.data);
 
   if (brand.loading || brand.error) {
     return <ManageStackScreen title="Brand" loading={brand.loading} error={brand.error} onRetry={brand.reload}><View /></ManageStackScreen>;
@@ -60,13 +64,13 @@ export function BrandDetailScreen({ id }: { id: string }) {
         </>
       ) : undefined}
       empty={{ icon: "cube-outline", title: "No products for this brand" }}
-      renderItem={(p) => (
-        <ListRow
-          title={p.name}
-          subtitle={[p.subcategory?.name, `${p.variants.length} variant${p.variants.length === 1 ? "" : "s"}`].filter(Boolean).join(" · ")}
-          imageUrl={p.imageUrl}
-          trailing={<CatalogPill organizationId={p.organizationId} />}
-          chevron
+      columns={3}
+      renderItem={(p, cell) => (
+        <ProductTile
+          product={p}
+          width={cell.width}
+          badge={<ListingPill listings={p.storeProducts} storeId={storeId} />}
+          dimmed={!p.isActive}
           onPress={() => router.push(`/manage/products/${p.id}`)}
         />
       )}

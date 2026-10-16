@@ -6,6 +6,7 @@ import { ConfirmDialog } from "../ui/ConfirmDialog";
 import { SectionCard } from "../ui/SectionCard";
 import { EmptyState } from "../ui/EmptyState";
 import { formatINR, manage, tabular } from "../ui/tokens";
+import { useListingAccess } from "../inventory/use-listing-access";
 import type { StoreMapping } from "./types";
 
 interface MappingListProps {
@@ -16,16 +17,17 @@ interface MappingListProps {
   onUnmap: (mapping: StoreMapping) => Promise<void>;
 }
 
-function ToggleCell({ label, value, onChange }: { label: string; value: boolean; onChange: (v: boolean) => void }) {
+function ToggleCell({ label, value, onChange, disabled }: { label: string; value: boolean; onChange: (v: boolean) => void; disabled: boolean }) {
   return (
     <View style={styles.toggle}>
       <Text style={styles.toggleLabel}>{label}</Text>
-      <Switch value={value} onValueChange={onChange} trackColor={{ true: colors.primary, false: manage.line }} accessibilityLabel={label} />
+      <Switch value={value} onValueChange={onChange} disabled={disabled} trackColor={{ true: colors.primary, false: manage.line }} accessibilityLabel={label} />
     </View>
   );
 }
 
 function MappingRow({ mapping, canUnmap, onToggle, onAskUnmap }: Pick<MappingListProps, "onToggle" | "canUnmap"> & { mapping: StoreMapping; onAskUnmap: () => void }) {
+  const access = useListingAccess();
   const available = mapping.stock - mapping.reservedStock;
   return (
     <View style={styles.row}>
@@ -43,8 +45,8 @@ function MappingRow({ mapping, canUnmap, onToggle, onAskUnmap }: Pick<MappingLis
         )}
       </View>
       <View style={styles.toggles}>
-        <ToggleCell label="Listed" value={mapping.isActive} onChange={(v) => onToggle(mapping, "isActive", v)} />
-        <ToggleCell label="Featured" value={mapping.isFeatured} onChange={(v) => onToggle(mapping, "isFeatured", v)} />
+        <ToggleCell label="Listed" value={mapping.isActive} onChange={(v) => onToggle(mapping, "isActive", v)} disabled={!access.listed} />
+        <ToggleCell label="Featured" value={mapping.isFeatured} onChange={(v) => onToggle(mapping, "isFeatured", v)} disabled={!access.featured} />
       </View>
     </View>
   );

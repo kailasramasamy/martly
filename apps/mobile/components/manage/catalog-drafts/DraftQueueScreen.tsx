@@ -4,7 +4,6 @@ import { useRouter } from "expo-router";
 import { colors, fonts } from "../../../constants/theme";
 import { useManageScope } from "../../../lib/manage-scope-context";
 import { usePagedList } from "../../../lib/manage/use-paged-list";
-import { useRefreshOnFocus } from "../../../lib/manage/use-refresh-on-focus";
 import { ManageListScreen } from "../ManageListScreen";
 import { HeaderAction } from "../HeaderAction";
 import { ListRow } from "../ui/ListRow";
@@ -56,29 +55,21 @@ export function DraftQueueScreen() {
     ...(storeId ? { storeId } : {}),
     ...(status !== "ALL" ? { status } : {}),
   });
-  const { refresh } = list;
-  const [pulling, setPulling] = useState(false);
+  const { reload } = list;
   const polling = list.items.some((d) => isInFlight(d.status));
 
-  useRefreshOnFocus(refresh);
   useEffect(() => {
     if (!polling) return;
-    const timer = setInterval(refresh, POLL_MS);
+    const timer = setInterval(reload, POLL_MS);
     return () => clearInterval(timer);
-  }, [polling, refresh]);
+  }, [polling, reload]);
 
-  // Background polls run through refresh() too, so only a pull gesture shows the spinner
-  const pull = async () => {
-    setPulling(true);
-    await refresh();
-    setPulling(false);
-  };
   const addProduct = () => router.push("/manage/add-product");
 
   return (
     <ManageListScreen
       title="Add products"
-      list={{ ...list, refreshing: pulling, refresh: pull }}
+      list={list}
       headerRight={() => <HeaderAction icon="camera-outline" label="Add" onPress={addProduct} />}
       filters={<SegmentedTabs options={FILTER_OPTIONS} value={status} onChange={setStatus} />}
       renderItem={(d) => <DraftRow draft={d} onPress={() => router.push(`/manage/catalog-drafts/${d.id}`)} />}

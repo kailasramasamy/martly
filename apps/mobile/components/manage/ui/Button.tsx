@@ -3,7 +3,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, radius } from "../../../constants/theme";
 import { manage } from "./tokens";
 
-type Variant = "primary" | "secondary" | "danger" | "ghost";
+/** danger = outlined (offers a risky action); destructive = solid red (confirms it) */
+type Variant = "primary" | "secondary" | "danger" | "destructive" | "ghost";
 
 interface ButtonProps {
   label: string;
@@ -21,6 +22,7 @@ const VARIANTS: Record<Variant, { bg: string; fg: string; border: string }> = {
   primary: { bg: colors.primary, fg: "#fff", border: colors.primary },
   secondary: { bg: "#fff", fg: colors.text, border: manage.line },
   danger: { bg: "#fff", fg: colors.error, border: "#fecaca" },
+  destructive: { bg: colors.error, fg: "#fff", border: colors.error },
   ghost: { bg: "transparent", fg: colors.primary, border: "transparent" },
 };
 

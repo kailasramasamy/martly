@@ -1,4 +1,5 @@
-import type { PrismaClient } from "../../generated/prisma/client.js";
+import type { Prisma, PrismaClient } from "../../generated/prisma/client.js";
+import { applyMovement } from "./stock-ledger.js";
 
 interface StockItem {
   storeProductId: string;
@@ -52,17 +53,16 @@ export async function releaseStock(prisma: PrismaClient, items: StockItem[]) {
 }
 
 /**
- * Deduct stock on order delivery — decrements both stock and reservedStock.
+ * Deduct stock on order delivery: records a SALE movement per item and releases the reservation.
+ * Call inside the transaction that marks the order delivered.
  */
-export async function deductStock(prisma: PrismaClient, items: StockItem[]) {
-  await prisma.$transaction(async (tx) => {
-    for (const item of items) {
-      await tx.$executeRaw`
-        UPDATE store_products
-        SET stock = GREATEST(stock - ${item.quantity}, 0),
-            reserved_stock = GREATEST(reserved_stock - ${item.quantity}, 0)
-        WHERE id = ${item.storeProductId}
-      `;
-    }
-  });
+export async function deductStock(tx: Prisma.TransactionClient, items: StockItem[], ctx: { orderId: string; userId?: string }) {
+  for (const item of items) {
+    await applyMovement(tx, { storeProductId: item.storeProductId, quantity: -item.quantity, type: "SALE", orderId: ctx.orderId, userId: ctx.userId });
+    await tx.$executeRaw`
+      UPDATE store_products
+      SET reserved_stock = GREATEST(reserved_stock - ${item.quantity}, 0)
+      WHERE id = ${item.storeProductId}
+    `;
+  }
 }

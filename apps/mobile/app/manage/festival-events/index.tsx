@@ -57,8 +57,8 @@ function SummaryTiles({ summary }: { summary: FestivalSummary | null }) {
 
 export default function FestivalEventsScreen() {
   const router = useRouter();
-  const role = useAuth().user?.role ?? "";
-  const canEdit = can(role, "festival-events", "edit");
+  const { user } = useAuth();
+  const canEdit = can(user, "festival-events", "edit");
   const [q, setQ] = useState("");
   const [selected, setSelected] = useState<FestivalEvent | null>(null);
   const list = usePagedList<FestivalEvent>("/api/v1/festival-events", { q }, { pageSize: 100 });

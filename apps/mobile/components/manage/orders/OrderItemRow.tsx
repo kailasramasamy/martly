@@ -1,0 +1,32 @@
+import { View, Text, Image, StyleSheet } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import { colors, fonts, radius } from "../../../constants/theme";
+import { formatINR, manage, tabular } from "../ui/tokens";
+import type { OrderDetailItem } from "./types";
+
+/** One order line: thumbnail, name, variant · qty × price, line total */
+export function OrderItemRow({ item }: { item: OrderDetailItem }) {
+  const image = item.variant.imageUrl ?? item.product.imageUrl ?? item.product.images[0];
+  return (
+    <View style={styles.item}>
+      {image ? <Image source={{ uri: image }} style={styles.thumb} /> : (
+        <View style={[styles.thumb, styles.thumbEmpty]}><Ionicons name="image-outline" size={18} color={manage.muted} /></View>
+      )}
+      <View style={styles.itemBody}>
+        <Text style={styles.itemName} numberOfLines={2}>{item.product.name}</Text>
+        <Text style={styles.itemMeta}>{item.variant.name} · {item.quantity} × {formatINR(Number(item.unitPrice))}</Text>
+      </View>
+      <Text style={[styles.itemTotal, tabular]}>{formatINR(Number(item.totalPrice))}</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  item: { flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 14, paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: manage.hairline },
+  thumb: { width: 48, height: 48, borderRadius: radius.md, backgroundColor: manage.canvas },
+  thumbEmpty: { alignItems: "center", justifyContent: "center" },
+  itemBody: { flex: 1, minWidth: 0 },
+  itemName: { fontFamily: fonts.semibold, fontSize: 14, color: colors.text },
+  itemMeta: { fontFamily: fonts.medium, fontSize: 12.5, color: colors.textSecondary, marginTop: 2 },
+  itemTotal: { fontFamily: fonts.bold, fontSize: 14, color: colors.text },
+});

@@ -15,7 +15,9 @@ export function ProductStoresScreen() {
   const { stores } = useManageScope();
   const product = useResource<ProductDetail>(`/api/v1/products/${id}`);
   const m = useStoreMappings(id);
-  const canMap = can(user?.role ?? "", "products", "edit");
+  // Listing a product in a store (or removing it) is a store-listing permission, not a catalog one
+  const canMap = can(user, "store-products", "create");
+  const canUnmap = can(user, "store-products", "delete");
   const activeStores = stores.filter((s) => s.status === "ACTIVE");
 
   return (
@@ -25,7 +27,7 @@ export function ProductStoresScreen() {
       error={m.error ?? product.error}
       onRetry={() => { m.load(); product.reload(); }}
     >
-      <MappingList mappings={m.mappings} canUnmap={canMap} busy={m.busy} onToggle={m.toggle} onUnmap={m.unmap} />
+      <MappingList mappings={m.mappings} canUnmap={canUnmap} busy={m.busy} onToggle={m.toggle} onUnmap={m.unmap} />
       {canMap && product.data && activeStores.length > 0 && (
         <MapProductCard variants={product.data.variants} stores={activeStores} onMapped={m.load} />
       )}

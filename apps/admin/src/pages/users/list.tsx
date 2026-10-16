@@ -1,4 +1,6 @@
-import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
+import { List, useTable, EditButton, DeleteButton, ShowButton } from "@refinedev/antd";
+import { Link } from "react-router";
+import { UserRoleLabels, type UserRole } from "@martly/shared/constants";
 import { useGetIdentity } from "@refinedev/core";
 import { Table, Tag, Form, Select, Space, Typography } from "antd";
 import type { HttpError } from "@refinedev/core";
@@ -18,7 +20,7 @@ const ROLE_COLORS: Record<string, string> = {
 const ROLE_OPTIONS = [
   { label: "All Roles", value: "" },
   { label: "Super Admin", value: "SUPER_ADMIN" },
-  { label: "Org Admin", value: "ORG_ADMIN" },
+  { label: "Owner", value: "ORG_ADMIN" },
   { label: "Store Manager", value: "STORE_MANAGER" },
   { label: "Staff", value: "STAFF" },
   { label: "Rider", value: "RIDER" },
@@ -103,7 +105,11 @@ export const UserList = () => {
         </Form.Item>
       </Form>
       <Table {...tableProps} rowKey="id" size="small">
-        <Table.Column dataIndex="name" title="Name" />
+        <Table.Column
+          dataIndex="name"
+          title="Name"
+          render={(name: string, record: UserRecord) => <Link to={`/users/show/${record.id}`}>{name}</Link>}
+        />
         <Table.Column dataIndex="email" title="Email" />
         <Table.Column
           dataIndex="role"
@@ -111,7 +117,7 @@ export const UserList = () => {
           width={140}
           render={(value: string) => (
             <Tag color={ROLE_COLORS[value] ?? "default"}>
-              {value.replace(/_/g, " ")}
+              {UserRoleLabels[value as UserRole] ?? value}
             </Tag>
           )}
         />
@@ -148,9 +154,10 @@ export const UserList = () => {
         />
         <Table.Column
           title="Actions"
-          width={80}
+          width={110}
           render={(_, record: UserRecord) => (
             <Space>
+              <ShowButton hideText size="small" recordItemId={record.id} />
               <EditButton hideText size="small" recordItemId={record.id} />
               <DeleteButton hideText size="small" recordItemId={record.id} />
             </Space>

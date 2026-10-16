@@ -2,7 +2,8 @@ import type { FastifyInstance } from "fastify";
 import { createStoreRatingSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
 export async function storeRatingRoutes(app: FastifyInstance) {
@@ -94,7 +95,7 @@ export async function storeRatingRoutes(app: FastifyInstance) {
 
   // GET /admin - Admin: paginated list of store ratings
   app.get("/admin", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")],
+    preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE, Permission.REPORTS_VIEW)],
   }, async (request, reply) => {
     const { storeId, page = 1, pageSize = 20 } = request.query as { storeId?: string; page?: number; pageSize?: number };
     if (storeId && !(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied to this store");

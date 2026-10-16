@@ -1,21 +1,24 @@
 import { useState, useCallback } from "react";
 import { Show } from "@refinedev/antd";
-import { useShow, useInvalidate } from "@refinedev/core";
+import { useShow, useInvalidate, useGetIdentity } from "@refinedev/core";
 import { useOrderWebSocket } from "../../hooks/useOrderWebSocket";
-import { Tag, Table, Card, Descriptions, Row, Col, Button, Space, Popconfirm, Select, Input, message } from "antd";
+import { Tag, Table, Card, Descriptions, Row, Col, Button, Space, Select, Input, message } from "antd";
 import { axiosInstance } from "../../providers/data-provider";
 import {
   FileTextOutlined,
   CreditCardOutlined,
   ShoppingOutlined,
-  CloseCircleOutlined,
   DollarOutlined,
   StarOutlined,
   ClockCircleOutlined,
 } from "@ant-design/icons";
 
 import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG, FULFILLMENT_TYPE_CONFIG, RETURN_REQUEST_STATUS_CONFIG } from "../../constants/tag-colors";
-import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
+import { canUndoDelivery, permittedNextStatuses } from "@martly/shared/order-flow";
+import { hasPermission } from "@martly/shared/permissions";
+import { CANCEL_ORDER, ReasonConfirmButton, UNDO_DELIVERY } from "../../components/ReasonConfirmButton";
+import { ConfirmFinalStep } from "../../components/ConfirmFinalStep";
+import { RiderAssignModal } from "../../components/RiderAssignModal";
 import { NEXT_ACTION } from "../../constants/order-transitions";
 import { sectionTitle } from "../../theme";
 
@@ -33,10 +36,12 @@ export const OrderShow = () => {
   const { query } = useShow({ resource: "orders" });
   const record = query?.data?.data;
   const invalidate = useInvalidate();
+  const { data: identity } = useGetIdentity<{ role: string; permissions?: string[] }>();
   const [updating, setUpdating] = useState(false);
   const [updatingPayment, setUpdatingPayment] = useState(false);
   const [selectedPaymentStatus, setSelectedPaymentStatus] = useState<string | null>(null);
   const [paymentNote, setPaymentNote] = useState("");
+  const [pickingRider, setPickingRider] = useState(false);
 
   // Real-time updates via WebSocket
   const recordId = record?.id as string | undefined;
@@ -57,19 +62,38 @@ export const OrderShow = () => {
   const statusConfig = ORDER_STATUS_CONFIG[record.status] ?? { color: "default", label: record.status };
   const paymentConfig = PAYMENT_STATUS_CONFIG[record.paymentStatus] ?? { color: "default", label: record.paymentStatus };
   const fulfillmentConfig = FULFILLMENT_TYPE_CONFIG[record.fulfillmentType] ?? FULFILLMENT_TYPE_CONFIG.DELIVERY;
-  const validTransitions = isPickup ? PICKUP_TRANSITIONS : DELIVERY_TRANSITIONS;
-  const transitions = validTransitions[record.status] ?? [];
+  const transitions = permittedNextStatuses(identity, record.status, record.fulfillmentType);
+  const canSetPayment = identity?.role === "SUPER_ADMIN" || hasPermission(identity?.permissions, "FINANCE_MANAGE");
   const forwardTransition = transitions.find((t) => t !== "CANCELLED");
   const canCancel = transitions.includes("CANCELLED");
+  const canDispatch = identity?.role === "SUPER_ADMIN" || hasPermission(identity?.permissions, "ORDERS_DISPATCH");
+  // Sent out before riders were required: still on the road with nobody assigned
+  const riderless = canDispatch && record.status === "OUT_FOR_DELIVERY" && !record.deliveryTripId;
+  const forwardLabel = forwardTransition === "OUT_FOR_DELIVERY"
+    ? "Send out with rider"
+    : forwardTransition && ((isPickup && NEXT_ACTION[forwardTransition]?.pickupLabel) || NEXT_ACTION[forwardTransition]?.label);
 
-  const handleStatusChange = async (newStatus: string) => {
+  const handleStatusChange = async (newStatus: string, note?: string) => {
     setUpdating(true);
     try {
-      await axiosInstance.patch(`/orders/${record.id}/status`, { status: newStatus });
+      await axiosInstance.patch(`/orders/${record.id}/status`, { status: newStatus, note });
       message.success(`Order ${ORDER_STATUS_CONFIG[newStatus]?.label ?? newStatus}`);
       invalidate({ resource: "orders", invalidates: ["detail", "list"], id: record.id });
     } catch (err: any) {
       message.error(err?.response?.data?.message ?? "Failed to update status");
+    } finally {
+      setUpdating(false);
+    }
+  };
+
+  const handleUndoDelivery = async (reason: string) => {
+    setUpdating(true);
+    try {
+      await axiosInstance.post(`/orders/${record.id}/undo-delivery`, { reason });
+      message.success("Delivery undone");
+      invalidate({ resource: "orders", invalidates: ["detail", "list"], id: record.id });
+    } catch (err: any) {
+      message.error(err?.response?.data?.message ?? "Failed to undo delivery");
     } finally {
       setUpdating(false);
     }
@@ -110,29 +134,35 @@ export const OrderShow = () => {
                 </Space>
                 <Space>
                   {forwardTransition && (
-                    <Button
-                      type="primary"
-                      icon={NEXT_ACTION[forwardTransition]?.icon}
-                      loading={updating}
-                      onClick={() => handleStatusChange(forwardTransition)}
-                      style={{ backgroundColor: NEXT_ACTION[forwardTransition]?.color, borderColor: NEXT_ACTION[forwardTransition]?.color }}
+                    <ConfirmFinalStep
+                      status={forwardTransition}
+                      label={forwardLabel || ""}
+                      order={{
+                        id: String(record.id),
+                        totalAmount: record.totalAmount,
+                        paymentMethod: record.paymentMethod,
+                        paymentStatus: record.paymentStatus,
+                        walletAmountUsed: record.walletAmountUsed,
+                        loyaltyPointsUsed: record.loyaltyPointsUsed,
+                      }}
+                      onConfirm={() => (forwardTransition === "OUT_FOR_DELIVERY" ? setPickingRider(true) : handleStatusChange(forwardTransition))}
                     >
-                      {(isPickup && NEXT_ACTION[forwardTransition]?.pickupLabel) || NEXT_ACTION[forwardTransition]?.label}
-                    </Button>
+                      {(onClick) => (
+                        <Button
+                          type="primary"
+                          icon={NEXT_ACTION[forwardTransition]?.icon}
+                          loading={updating}
+                          onClick={onClick}
+                          style={{ backgroundColor: NEXT_ACTION[forwardTransition]?.color, borderColor: NEXT_ACTION[forwardTransition]?.color }}
+                        >
+                          {forwardLabel}
+                        </Button>
+                      )}
+                    </ConfirmFinalStep>
                   )}
+                  {riderless && <Button icon={NEXT_ACTION.OUT_FOR_DELIVERY?.icon} onClick={() => setPickingRider(true)}>Assign rider</Button>}
                   {canCancel && (
-                    <Popconfirm
-                      title="Cancel this order?"
-                      description="This will release reserved stock and cannot be undone."
-                      onConfirm={() => handleStatusChange("CANCELLED")}
-                      okText="Yes, cancel"
-                      cancelText="No"
-                      okButtonProps={{ danger: true }}
-                    >
-                      <Button danger icon={<CloseCircleOutlined />} loading={updating}>
-                        Cancel Order
-                      </Button>
-                    </Popconfirm>
+                    <ReasonConfirmButton preset={CANCEL_ORDER} loading={updating} onConfirm={(reason) => handleStatusChange("CANCELLED", reason)} />
                   )}
                 </Space>
               </div>
@@ -140,8 +170,23 @@ export const OrderShow = () => {
           </Col>
         )}
 
+        {/* Undo a delivery marked by mistake (within 2 hours) */}
+        {canUndoDelivery(identity, { status: record.status, statusLogs: record.statusLogs ?? [] }) && (
+          <Col xs={24}>
+            <Card size="small">
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <Space>
+                  <Tag color={statusConfig.color} style={{ fontSize: 14, padding: "2px 12px" }}>{statusConfig.label}</Tag>
+                  <span style={{ color: "#64748b", fontSize: 13 }}>Marked by mistake? You can undo it for 2 hours.</span>
+                </Space>
+                <ReasonConfirmButton preset={UNDO_DELIVERY} loading={updating} onConfirm={handleUndoDelivery} />
+              </div>
+            </Card>
+          </Col>
+        )}
+
         {/* Payment Status Actions */}
-        {record.paymentStatus !== "REFUNDED" && (
+        {canSetPayment && record.paymentStatus !== "REFUNDED" && (
           <Col xs={24}>
             <Card size="small">
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
@@ -433,6 +478,17 @@ export const OrderShow = () => {
           </Col>
         )}
       </Row>
+      <RiderAssignModal
+        open={pickingRider}
+        storeId={record.storeId}
+        orderIds={[String(record.id)]}
+        start
+        onClose={() => setPickingRider(false)}
+        onDone={() => {
+          setPickingRider(false);
+          invalidate({ resource: "orders", invalidates: ["detail", "list"], id: record.id });
+        }}
+      />
     </Show>
   );
 };

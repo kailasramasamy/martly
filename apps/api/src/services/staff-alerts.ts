@@ -1,10 +1,11 @@
 import type { Messaging } from "firebase-admin/messaging";
 import type { PrismaClient } from "../../generated/prisma/client.js";
 import { sendNotification } from "./notification.js";
+import { storeMembersWith } from "./permissions.js";
 
 /**
  * Alert the people who run a store that a new order needs attention:
- * ORG_ADMINs of the store's organization and STORE_MANAGERs assigned to the store.
+ * the organization's owners and every member assigned to the store who can process orders.
  * Fire-and-forget — sendNotification never throws.
  */
 export async function notifyStaffOfNewOrder(fcm: Messaging | null, prisma: PrismaClient, orderId: string) {
@@ -22,15 +23,14 @@ export async function notifyStaffOfNewOrder(fcm: Messaging | null, prisma: Prism
   });
   if (!order) return;
 
-  const recipients = await prisma.user.findMany({
-    where: {
-      OR: [
-        { role: "ORG_ADMIN", userStores: { some: { store: { organizationId: order.store.organizationId } } } },
-        { role: "STORE_MANAGER", userStores: { some: { storeId: order.storeId } } },
-      ],
-    },
-    select: { id: true },
-  });
+  const [owners, processors] = await Promise.all([
+    prisma.user.findMany({
+      where: { role: "ORG_ADMIN", userStores: { some: { store: { organizationId: order.store.organizationId } } } },
+      select: { id: true },
+    }),
+    storeMembersWith(prisma, order.storeId, "ORDERS_PROCESS"),
+  ]);
+  const recipients = [...new Map([...owners, ...processors].map((u) => [u.id, u])).values()];
 
   const amount = `₹${order.totalAmount.toNumber().toLocaleString("en-IN", { maximumFractionDigits: 0 })}`;
   const items = `${order._count.items} item${order._count.items === 1 ? "" : "s"}`;

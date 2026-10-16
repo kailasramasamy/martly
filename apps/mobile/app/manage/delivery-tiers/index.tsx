@@ -19,8 +19,7 @@ export default function DeliveryTiersScreen() {
   const { user } = useAuth();
   const { run } = useAction();
   const { storeId, picker, hasStores } = useStoreScope({ defaultFirst: true });
-  const role = user?.role ?? "";
-  const allowed = can(role, "delivery-tiers", "list");
+  const allowed = can(user, "delivery-tiers", "list");
   const list = usePagedList<DeliveryTier>("/api/v1/delivery-tiers", { storeId }, { pageSize: 50, enabled: !!storeId && allowed });
 
   const toggle = async (tier: DeliveryTier, isActive: boolean) => {
@@ -36,14 +35,14 @@ export default function DeliveryTiersScreen() {
       title="Delivery tiers"
       list={list}
       filters={picker}
-      headerRight={can(role, "delivery-tiers", "create") && storeId ? () => <HeaderAction accessibilityLabel="Add tier" onPress={addTier} /> : undefined}
+      headerRight={can(user, "delivery-tiers", "create") && storeId ? () => <HeaderAction accessibilityLabel="Add tier" onPress={addTier} /> : undefined}
       empty={{ icon: "navigate-outline", title: "No delivery tiers", message: "Add distance bands so customers can be charged for delivery." }}
       renderItem={(tier) => (
         <ListRow
           title={`${tier.minDistance} – ${tier.maxDistance} km`}
           subtitle={`${Number(tier.deliveryFee) === 0 ? "Free" : formatINR(tier.deliveryFee)} · ${tier.estimatedMinutes} min`}
           railColor={tier.isActive ? colors.primary : manage.muted}
-          trailing={<Switch value={tier.isActive} disabled={!can(role, "delivery-tiers", "edit")} onValueChange={(v) => toggle(tier, v)} trackColor={{ true: colors.primary, false: manage.line }} />}
+          trailing={<Switch value={tier.isActive} disabled={!can(user, "delivery-tiers", "edit")} onValueChange={(v) => toggle(tier, v)} trackColor={{ true: colors.primary, false: manage.line }} />}
           onPress={() => router.push(`/manage/delivery-tiers/${tier.id}`)}
         />
       )}

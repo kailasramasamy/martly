@@ -1,5 +1,6 @@
 import { View, StyleSheet } from "react-native";
-import { SelectField, type SelectOption } from "../ui/SelectField";
+import { SelectField } from "../ui/SelectField";
+import type { SelectOption } from "../ui/OptionSheet";
 import { FieldFrame, type FieldFrameProps } from "../ui/FieldFrame";
 
 const pad = (n: number) => String(n).padStart(2, "0");

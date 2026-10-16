@@ -2,7 +2,8 @@ import type { FastifyInstance } from "fastify";
 import { createBannerSchema, updateBannerSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
 export async function bannerRoutes(app: FastifyInstance) {
@@ -76,7 +77,7 @@ export async function bannerRoutes(app: FastifyInstance) {
   );
 
   // List banners
-  app.get("/", { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] }, async (request) => {
+  app.get("/", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request) => {
     const { page = 1, pageSize = 50, q, placement } = request.query as {
       page?: number; pageSize?: number; q?: string; placement?: string;
     };
@@ -123,7 +124,7 @@ export async function bannerRoutes(app: FastifyInstance) {
   });
 
   // Get banner by ID
-  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] }, async (request, reply) => {
+  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request, reply) => {
     const banner = await app.prisma.banner.findUnique({
       where: { id: request.params.id },
       include: {
@@ -144,7 +145,7 @@ export async function bannerRoutes(app: FastifyInstance) {
   // Create banner
   app.post(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] },
     async (request, reply) => {
       const body = createBannerSchema.parse(request.body);
       const user = getOrgUser(request);
@@ -154,7 +155,7 @@ export async function bannerRoutes(app: FastifyInstance) {
       }
 
       // ORG_ADMIN: force their org
-      if (user.role === "ORG_ADMIN") {
+      if (user.role !== "SUPER_ADMIN") {
         body.organizationId = user.organizationId;
       }
 
@@ -174,14 +175,14 @@ export async function bannerRoutes(app: FastifyInstance) {
   // Update banner
   app.put<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] },
     async (request, reply) => {
       const body = updateBannerSchema.parse(request.body);
       const existing = await app.prisma.banner.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Banner not found");
 
       const user = getOrgUser(request);
-      if (user.role === "ORG_ADMIN" && existing.organizationId !== user.organizationId) {
+      if (user.role !== "SUPER_ADMIN" && existing.organizationId !== user.organizationId) {
         return reply.forbidden("Access denied");
       }
       if (body.storeId && !(await verifyStoreOrgAccess(request, app.prisma, body.storeId))) {
@@ -205,13 +206,13 @@ export async function bannerRoutes(app: FastifyInstance) {
   // Delete banner
   app.delete<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] },
     async (request, reply) => {
       const existing = await app.prisma.banner.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Banner not found");
 
       const user = getOrgUser(request);
-      if (user.role === "ORG_ADMIN" && existing.organizationId !== user.organizationId) {
+      if (user.role !== "SUPER_ADMIN" && existing.organizationId !== user.organizationId) {
         return reply.forbidden("Access denied");
       }
 

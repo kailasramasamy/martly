@@ -19,7 +19,7 @@ export function RecipeListScreen() {
   const { user } = useAuth();
   const [q, setQ] = useState("");
   const list = usePagedList<RecipeRecord>("/api/v1/recipes", { q });
-  const canCreate = can(user?.role ?? "", "recipes", "create");
+  const canCreate = can(user, "recipes", "create");
 
   return (
     <ManageListScreen

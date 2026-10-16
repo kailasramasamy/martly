@@ -5,7 +5,7 @@ import { RecipeForm } from "../../../components/manage/recipes/RecipeForm";
 
 export default function NewRecipeScreen() {
   const { user } = useAuth();
-  if (!can(user?.role ?? "", "recipes", "create")) {
+  if (!can(user, "recipes", "create")) {
     return <EmptyState icon="lock-closed-outline" title="No access" message="Only admins can create recipes." />;
   }
   return <RecipeForm />;

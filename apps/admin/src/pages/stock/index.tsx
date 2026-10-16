@@ -13,6 +13,8 @@ import {
   Table,
   Tag,
   Segmented,
+  Space,
+  Tooltip as AntTooltip,
 } from "antd";
 import {
   InboxOutlined,
@@ -21,6 +23,8 @@ import {
   CloseCircleOutlined,
   EditOutlined,
   BarChartOutlined,
+  HistoryOutlined,
+  ToolOutlined,
 } from "@ant-design/icons";
 import {
   BarChart,
@@ -33,8 +37,12 @@ import {
   Legend,
 } from "recharts";
 import axios from "axios";
+import { Permission } from "@martly/shared/constants";
+import { hasPermission } from "@martly/shared/permissions";
 
 import { BRAND, CHART_COLORS, sectionTitle } from "../../theme";
+import { StockAdjustModal } from "../../components/StockAdjustModal";
+import { StockHistoryDrawer } from "../../components/StockHistoryDrawer";
 
 const { Title } = Typography;
 
@@ -68,9 +76,16 @@ interface StockSummaryData {
 
 type StockFilter = "all" | "in_stock" | "low_stock" | "out_of_stock";
 
+const storeProductLabel = (sp: Record<string, any> | null): string | undefined =>
+  sp ? [sp.product?.name, sp.variant?.name].filter(Boolean).join(" — ") : undefined;
+
 export const StockPage = () => {
-  const { data: identity } = useGetIdentity<{ role: string }>();
+  const { data: identity } = useGetIdentity<{ role: string; permissions?: string[] }>();
   const isSuperAdmin = identity?.role === "SUPER_ADMIN";
+  const canAdjust = isSuperAdmin || hasPermission(identity?.permissions, Permission.STOCK_ADJUST);
+  const canViewHistory = isSuperAdmin || hasPermission(identity?.permissions, Permission.STOCK_VIEW);
+  const [adjustTarget, setAdjustTarget] = useState<Record<string, any> | null>(null);
+  const [historyTarget, setHistoryTarget] = useState<Record<string, any> | null>(null);
 
   const [summary, setSummary] = useState<StockSummaryData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -115,7 +130,7 @@ export const StockPage = () => {
   }, [selectedStoreId, selectedOrgId]);
 
   // Store-products table — respects org/store/stockStatus filters
-  const { tableProps } = useTable({
+  const { tableProps, tableQuery } = useTable({
     resource: "store-products",
     syncWithLocation: false,
     pagination: { pageSize: 10 },
@@ -342,16 +357,44 @@ export const StockPage = () => {
             {
               title: "",
               key: "actions",
-              width: 50,
+              width: 110,
               render: (_: unknown, record: Record<string, unknown>) => (
-                <Link to={`/store-products/edit/${record.id}`}>
-                  <EditOutlined />
-                </Link>
+                <Space size="middle">
+                  <Link to={`/store-products/edit/${record.id}`}>
+                    <EditOutlined />
+                  </Link>
+                  {canAdjust && (
+                    <AntTooltip title="Adjust stock">
+                      <ToolOutlined style={{ cursor: "pointer" }} onClick={() => setAdjustTarget(record)} />
+                    </AntTooltip>
+                  )}
+                  {canViewHistory && (
+                    <AntTooltip title="Stock history">
+                      <HistoryOutlined style={{ cursor: "pointer" }} onClick={() => setHistoryTarget(record)} />
+                    </AntTooltip>
+                  )}
+                </Space>
               ),
             },
           ]}
         />
       </Card>
+
+      <StockAdjustModal
+        storeProductId={(adjustTarget?.id as string) ?? null}
+        productLabel={storeProductLabel(adjustTarget)}
+        currentStock={adjustTarget?.stock as number | undefined}
+        onClose={() => setAdjustTarget(null)}
+        onDone={() => {
+          setAdjustTarget(null);
+          tableQuery.refetch();
+        }}
+      />
+      <StockHistoryDrawer
+        storeProductId={(historyTarget?.id as string) ?? null}
+        title={storeProductLabel(historyTarget)}
+        onClose={() => setHistoryTarget(null)}
+      />
     </div>
   );
 };

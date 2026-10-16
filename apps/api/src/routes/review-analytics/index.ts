@@ -1,13 +1,15 @@
 import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { istDateKey } from "../../services/ist-day.js";
 
 export async function reviewAnalyticsRoutes(app: FastifyInstance) {
   // GET /?days=30 - Review analytics dashboard data
   app.get("/", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)],
   }, async (request, reply) => {
     const { days = 30, storeId } = request.query as { days?: number; storeId?: string };
     if (storeId && !(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied to this store");
@@ -48,7 +50,7 @@ export async function reviewAnalyticsRoutes(app: FastifyInstance) {
     // Review volume over time (group by date)
     const volumeMap: Record<string, number> = {};
     for (const r of recentReviews) {
-      const dateKey = r.createdAt.toISOString().split("T")[0];
+      const dateKey = istDateKey(r.createdAt);
       volumeMap[dateKey] = (volumeMap[dateKey] || 0) + 1;
     }
     const volume = Object.entries(volumeMap)

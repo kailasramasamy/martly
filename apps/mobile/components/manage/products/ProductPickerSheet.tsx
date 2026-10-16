@@ -22,7 +22,7 @@ export function ProductPickerSheet({ visible, title, onClose, onPick, pickedIds 
   const list = usePagedList<ProductListItem>("/api/v1/products", { q }, { enabled: visible && q.trim().length > 0 });
 
   return (
-    <BottomSheet visible={visible} title={title} onClose={onClose}>
+    <BottomSheet flush visible={visible} title={title} onClose={onClose}>
       <View style={styles.search}><SearchField value={q} onChange={setQ} placeholder="Search products" /></View>
       <FlatList
         keyboardDismissMode="on-drag"

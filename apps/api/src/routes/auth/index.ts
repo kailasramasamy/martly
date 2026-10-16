@@ -2,12 +2,23 @@ import type { FastifyInstance } from "fastify";
 import bcrypt from "bcryptjs";
 import { loginSchema, registerSchema, selectOrgSchema, updateProfileSchema, sendOtpSchema, verifyOtpSchema, deleteAccountSchema } from "@martly/shared/schemas";
 import type { ApiResponse, AuthTokens, LoginResponse, OrgSummary } from "@martly/shared/types";
+import type { Permission } from "@martly/shared/constants";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { sendNotification } from "../../services/notification.js";
 import { ensureReferralCode } from "../../services/referral-code.js";
 import { issueOtp, verifyOtp } from "../../services/otp.js";
 import { assertNoOrdersInProgress, deleteCustomerAccount } from "../../services/account-deletion.js";
+import { issueSession, signAccessToken, signOrgSelectToken } from "../../services/auth-tokens.js";
+import { resolvePermissions } from "../../services/permissions.js";
+import { phoneChangeRoutes } from "./phone.js";
+
+interface MeExtras {
+  organizationId?: string;
+  organizations: OrgSummary[];
+  stores: { id: string; name: string }[];
+  permissions: Permission[];
+}
 
 /** Look up distinct organizations a user belongs to via UserStore → Store → Organization */
 async function getUserOrgs(prisma: FastifyInstance["prisma"], userId: string): Promise<OrgSummary[]> {
@@ -27,6 +38,8 @@ async function getUserOrgs(prisma: FastifyInstance["prisma"], userId: string): P
 }
 
 export async function authRoutes(app: FastifyInstance) {
+  await app.register(phoneChangeRoutes);
+
   app.post<{ Body: { email: string; password: string } }>("/login", async (request, reply) => {
     const body = loginSchema.parse(request.body);
     const user = await app.prisma.user.findUnique({ where: { email: body.email } });
@@ -37,18 +50,9 @@ export async function authRoutes(app: FastifyInstance) {
 
     // SUPER_ADMIN and CUSTOMER don't need org context
     if (user.role === "SUPER_ADMIN" || user.role === "CUSTOMER") {
-      const accessToken = app.jwt.sign(
-        { sub: user.id, email: user.email, role: user.role },
-        { expiresIn: "15m" },
-      );
-      const refreshToken = app.jwt.sign(
-        { sub: user.id, email: user.email, role: user.role, type: "refresh" },
-        { expiresIn: "30d" },
-      );
-
       const response: ApiResponse<LoginResponse> = {
         success: true,
-        data: { requiresOrgSelection: false, accessToken, refreshToken },
+        data: { requiresOrgSelection: false, ...(await issueSession(app, user)) },
       };
       return response;
     }
@@ -62,27 +66,15 @@ export async function authRoutes(app: FastifyInstance) {
 
     if (orgs.length === 1) {
       // Auto-select the single org
-      const accessToken = app.jwt.sign(
-        { sub: user.id, email: user.email, role: user.role, organizationId: orgs[0].id },
-        { expiresIn: "15m" },
-      );
-      const refreshToken = app.jwt.sign(
-        { sub: user.id, email: user.email, role: user.role, organizationId: orgs[0].id, type: "refresh" },
-        { expiresIn: "30d" },
-      );
-
       const response: ApiResponse<LoginResponse> = {
         success: true,
-        data: { requiresOrgSelection: false, accessToken, refreshToken },
+        data: { requiresOrgSelection: false, ...(await issueSession(app, user, orgs[0].id)) },
       };
       return response;
     }
 
     // Multiple orgs → require selection
-    const temporaryToken = app.jwt.sign(
-      { sub: user.id, email: user.email, role: user.role, type: "org-select" },
-      { expiresIn: "5m" },
-    );
+    const temporaryToken = signOrgSelectToken(app, user);
 
     const response: ApiResponse<LoginResponse> = {
       success: true,
@@ -94,7 +86,7 @@ export async function authRoutes(app: FastifyInstance) {
   // Select organization (initial selection or org switching)
   app.post("/select-org", { preHandler: [authenticate] }, async (request, reply) => {
     const { organizationId } = selectOrgSchema.parse(request.body);
-    const user = request.user as { sub: string; email: string; role: string };
+    const user = request.user;
 
     // SUPER_ADMIN can switch to any org (or set org context)
     if (user.role !== "SUPER_ADMIN") {
@@ -107,18 +99,9 @@ export async function authRoutes(app: FastifyInstance) {
       }
     }
 
-    const accessToken = app.jwt.sign(
-      { sub: user.sub, email: user.email, role: user.role, organizationId },
-      { expiresIn: "15m" },
-    );
-    const refreshToken = app.jwt.sign(
-      { sub: user.sub, email: user.email, role: user.role, organizationId, type: "refresh" },
-      { expiresIn: "30d" },
-    );
-
     const response: ApiResponse<AuthTokens> = {
       success: true,
-      data: { accessToken, refreshToken },
+      data: await issueSession(app, { id: user.sub, email: user.email, role: user.role }, organizationId),
     };
     return response;
   });
@@ -147,18 +130,9 @@ export async function authRoutes(app: FastifyInstance) {
     });
     ensureReferralCode(app.prisma, user.id).catch(() => {});
 
-    const accessToken = app.jwt.sign(
-      { sub: user.id, email: user.email, role: user.role },
-      { expiresIn: "15m" },
-    );
-    const refreshToken = app.jwt.sign(
-      { sub: user.id, email: user.email, role: user.role, type: "refresh" },
-      { expiresIn: "30d" },
-    );
-
     const response: ApiResponse<AuthTokens> = {
       success: true,
-      data: { accessToken, refreshToken },
+      data: await issueSession(app, user),
     };
     return response;
   });
@@ -212,35 +186,28 @@ export async function authRoutes(app: FastifyInstance) {
     }
 
     // For org-scoped roles (STAFF, STORE_MANAGER, ORG_ADMIN), include organizationId in token
-    const tokenPayload: Record<string, unknown> = { sub: user.id, email: user.email, role: user.role };
+    let organizationId: string | undefined;
     if (user.role !== "SUPER_ADMIN" && user.role !== "CUSTOMER") {
       const orgs = await getUserOrgs(app.prisma, user.id);
       if (orgs.length === 0) {
         return reply.forbidden("User is not assigned to any organization");
       }
       if (orgs.length > 1) {
-        const temporaryToken = app.jwt.sign({ ...tokenPayload, type: "org-select" }, { expiresIn: "5m" });
+        const temporaryToken = signOrgSelectToken(app, user);
         const response: ApiResponse<LoginResponse & { isNewUser: boolean }> = {
           success: true,
           data: { requiresOrgSelection: true, organizations: orgs, temporaryToken, isNewUser: false },
         };
         return response;
       }
-      tokenPayload.organizationId = orgs[0].id;
+      organizationId = orgs[0].id;
     }
-
-    const accessToken = app.jwt.sign(tokenPayload, { expiresIn: "15m" });
-    const refreshToken = app.jwt.sign(
-      { ...tokenPayload, type: "refresh" },
-      { expiresIn: "30d" },
-    );
 
     const response: ApiResponse<LoginResponse & { isNewUser: boolean }> = {
       success: true,
       data: {
         requiresOrgSelection: false,
-        accessToken,
-        refreshToken,
+        ...(await issueSession(app, user, organizationId)),
         isNewUser: !user.name,
       },
     };
@@ -253,41 +220,50 @@ export async function authRoutes(app: FastifyInstance) {
       return reply.badRequest("Refresh token is required");
     }
 
+    let payload: { sub: string; organizationId?: string; type?: string };
     try {
-      const payload = app.jwt.verify<{
-        sub: string; email: string; role: string; organizationId?: string; type?: string;
-      }>(refreshToken);
-      if (payload.type !== "refresh") {
-        return reply.unauthorized("Invalid token type");
-      }
-      const account = await app.prisma.user.findUnique({ where: { id: payload.sub }, select: { deletedAt: true } });
-      if (!account || account.deletedAt) {
-        return reply.unauthorized("Account no longer exists");
-      }
-
-      const tokenPayload: Record<string, unknown> = {
-        sub: payload.sub, email: payload.email, role: payload.role,
-      };
-      if (payload.organizationId) {
-        tokenPayload.organizationId = payload.organizationId;
-      }
-
-      const accessToken = app.jwt.sign(tokenPayload, { expiresIn: "15m" });
-
-      const response: ApiResponse<{ accessToken: string }> = {
-        success: true,
-        data: { accessToken },
-      };
-      return response;
+      payload = app.jwt.verify(refreshToken);
     } catch {
       return reply.unauthorized("Invalid or expired refresh token");
     }
+    if (payload.type !== "refresh") {
+      return reply.unauthorized("Invalid token type");
+    }
+
+    // Re-read role and membership so role changes and removals apply at the next refresh
+    const account = await app.prisma.user.findUnique({
+      where: { id: payload.sub },
+      select: { id: true, email: true, role: true, deletedAt: true },
+    });
+    if (!account || account.deletedAt) {
+      return reply.unauthorized("Account no longer exists");
+    }
+    const { organizationId } = payload;
+    if (organizationId && account.role !== "SUPER_ADMIN") {
+      const membership = await app.prisma.userStore.findFirst({
+        where: { userId: account.id, store: { organizationId } },
+        select: { id: true },
+      });
+      if (!membership) return reply.unauthorized("You no longer belong to this organization");
+    }
+
+    const response: ApiResponse<{ accessToken: string }> = {
+      success: true,
+      data: { accessToken: await signAccessToken(app, account, organizationId) },
+    };
+    return response;
   });
 
   // Update profile (name, phone)
   app.put("/profile", { preHandler: [authenticate] }, async (request, reply) => {
     const { sub } = request.user as { sub: string };
     const body = updateProfileSchema.parse(request.body);
+    // A new phone must be verified through /phone/otp + /phone/verify; resending the current one is fine
+    if (body.phone !== undefined) {
+      const current = await app.prisma.user.findUnique({ where: { id: sub }, select: { phone: true } });
+      if ((body.phone || null) !== current?.phone) return reply.badRequest("Verify your new number with an OTP to change it");
+      delete body.phone;
+    }
 
     const user = await app.prisma.user.update({
       where: { id: sub },
@@ -322,10 +298,11 @@ export async function authRoutes(app: FastifyInstance) {
       stores = userStores.map((us) => ({ id: us.store.id, name: us.store.name }));
     }
 
+    const permissions = await resolvePermissions(app.prisma, user, organizationId);
     const { passwordHash: _hash, ...safeUser } = user;
-    const response: ApiResponse<typeof safeUser & { organizationId?: string; organizations: OrgSummary[]; stores: { id: string; name: string }[] }> = {
+    const response: ApiResponse<typeof safeUser & MeExtras> = {
       success: true,
-      data: { ...safeUser, organizationId, organizations, stores },
+      data: { ...safeUser, organizationId, organizations, stores, permissions },
     };
     return response;
   });

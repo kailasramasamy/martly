@@ -1,7 +1,8 @@
 import type { FastifyInstance } from "fastify";
 import Anthropic from "@anthropic-ai/sdk";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 
@@ -405,7 +406,7 @@ export async function supportRoutes(app: FastifyInstance) {
   // ── GET /tickets/stats — Admin ticket stats (org-scoped) ──
   app.get(
     "/tickets/stats",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requirePermission(Permission.ORDERS_VIEW, Permission.SUPPORT_HANDLE)] },
     async (request, reply) => {
       const { storeId } = request.query as { storeId?: string };
       const orgStoreIds = await getOrgStoreIds(request, app.prisma);
@@ -440,7 +441,7 @@ export async function supportRoutes(app: FastifyInstance) {
     };
   }>(
     "/tickets",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requirePermission(Permission.ORDERS_VIEW, Permission.SUPPORT_HANDLE)] },
     async (request, reply) => {
       const { page = "1", pageSize = "20", status, storeId, search } = request.query as {
         page?: string;
@@ -505,7 +506,7 @@ export async function supportRoutes(app: FastifyInstance) {
   // ── GET /tickets/:id — Admin detail ──
   app.get<{ Params: { id: string } }>(
     "/tickets/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requirePermission(Permission.ORDERS_VIEW, Permission.SUPPORT_HANDLE)] },
     async (request, reply) => {
       const { id } = request.params;
 
@@ -544,7 +545,7 @@ export async function supportRoutes(app: FastifyInstance) {
     Body: { status?: string; reply?: string };
   }>(
     "/tickets/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.SUPPORT_HANDLE)] },
     async (request, reply) => {
       const { id } = request.params;
       const { status, reply: adminReply } = request.body;

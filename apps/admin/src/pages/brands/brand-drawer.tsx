@@ -1,10 +1,11 @@
 import { useMemo, useState } from "react";
-import { useList } from "@refinedev/core";
+import { useList, useGetIdentity } from "@refinedev/core";
+import { canEditCatalogRecord, type PermissionSubject } from "@martly/shared/permissions";
+import { listingLabel, listingState, type ListingState, type VariantListing } from "@martly/shared/listing";
 import { EditButton } from "@refinedev/antd";
-import { Drawer, Input, List, Tag, Space, Avatar, Typography, Flex, Empty } from "antd";
+import { Drawer, Input, List, Tag, Space, Avatar, Typography, Flex, Empty, Tooltip } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { Link } from "react-router";
-import { ACTIVE_STATUS_CONFIG } from "../../constants/tag-colors";
 
 const { Text, Title } = Typography;
 
@@ -15,6 +16,8 @@ export interface BrandRecord {
   imageUrl: string | null;
   themeColor: string | null;
   themeColorSecondary: string | null;
+  /** null = master brand; set = the organization's own local brand */
+  organizationId: string | null;
   _count: { products: number };
 }
 
@@ -23,8 +26,20 @@ interface BrandProduct {
   name: string;
   imageUrl?: string;
   isActive: boolean;
+  organizationId: string | null;
   subcategory?: { id: string; name: string; category: { id: string; name: string } };
   variants?: { id: string; name: string; mrp?: number }[];
+  storeProducts?: (VariantListing & { store: { id: string; name: string } })[];
+}
+
+const LISTING_COLORS: Record<ListingState["kind"], string> = {
+  listed: "green", outOfStock: "gold", hidden: "default", notListed: "default", stores: "cyan",
+};
+
+/** Store-by-store listing state, shown on hover of the summary tag */
+function storeBreakdown(listings: NonNullable<BrandProduct["storeProducts"]>) {
+  const stores = new Map(listings.map((l) => [l.store.id, l.store.name]));
+  return [...stores].map(([id, name]) => `${name}: ${listingLabel(listingState(listings, id))}`).join("\n");
 }
 
 interface Pill { id: string; name: string; count: number }
@@ -53,10 +68,21 @@ const PillRow = ({ pills, total, selected, onSelect }: {
   </Flex>
 );
 
-const ProductItem = ({ product }: { product: BrandProduct }) => {
-  const status = ACTIVE_STATUS_CONFIG[String(product.isActive)];
+/** Origin (master catalog or the organization's own) and listing status (for the member's only store, or how many of their stores list it) */
+const ProductItem = ({ product, storeId }: { product: BrandProduct; storeId: string | null }) => {
+  const listings = product.storeProducts ?? [];
+  const state = listingState(listings, storeId);
   return (
-    <List.Item extra={<Tag color={status.color}>{status.label}</Tag>}>
+    <List.Item
+      extra={
+        <Space size={4}>
+          {product.organizationId ? <Tag color="purple">Local</Tag> : <Tag color="blue">Master</Tag>}
+          <Tooltip title={listings.length > 0 ? <span style={{ whiteSpace: "pre-line" }}>{storeBreakdown(listings)}</span> : undefined}>
+            <Tag color={LISTING_COLORS[state.kind]}>{listingLabel(state)}</Tag>
+          </Tooltip>
+        </Space>
+      }
+    >
       <List.Item.Meta
         avatar={<Avatar shape="square" size={40} src={product.imageUrl}>{product.name[0]}</Avatar>}
         title={<Link to={`/products/show/${product.id}`}>{product.name}</Link>}
@@ -88,11 +114,22 @@ export const BrandLogo = ({ brand, height }: { brand: Pick<BrandRecord, "name" |
     <Avatar shape="square" size={height} style={{ width: height * 2, flexShrink: 0 }}>{brand.name[0]}</Avatar>
   );
 
-const BrandHeader = ({ brand }: { brand: BrandRecord }) => (
+export const BrandScopeTag = ({ brand }: { brand: BrandRecord }) =>
+  brand.organizationId ? <Tag color="purple">Local</Tag> : <Tag color="blue">Master</Tag>;
+
+/** Master brands belong to the platform admin; local brands to members of their organization with the brands permission */
+export function useCanEditBrand() {
+  const { data: identity } = useGetIdentity<PermissionSubject & { organizationId?: string }>();
+  return (brand: BrandRecord) => canEditCatalogRecord(identity, "brands", brand);
+}
+
+const BrandHeader = ({ brand }: { brand: BrandRecord }) => {
+  const canEdit = useCanEditBrand();
+  return (
   <Flex gap={16} align="center">
     <BrandLogo brand={brand} height={64} />
     <div style={{ flex: 1 }}>
-      <Title level={4} style={{ margin: 0 }}>{brand.name}</Title>
+      <Title level={4} style={{ margin: 0 }}>{brand.name} <BrandScopeTag brand={brand} /></Title>
       <Text type="secondary">{brand.slug} · {brand._count.products} products</Text>
       {brand.themeColor && (
         <Flex gap={4} style={{ marginTop: 4 }}>
@@ -102,11 +139,15 @@ const BrandHeader = ({ brand }: { brand: BrandRecord }) => (
         </Flex>
       )}
     </div>
-    <EditButton size="small" recordItemId={brand.id} resource="brands" />
+    {canEdit(brand) && <EditButton size="small" recordItemId={brand.id} resource="brands" />}
   </Flex>
-);
+  );
+};
 
 export const BrandDrawer = ({ brand, open, onClose }: { brand: BrandRecord | null; open: boolean; onClose: () => void }) => {
+  const { data: identity } = useGetIdentity<{ stores?: { id: string }[] }>();
+  // Members of one store see that store's state; owners see how many of their stores list each product
+  const singleStoreId = identity?.stores?.length === 1 ? identity.stores[0].id : null;
   const [q, setQ] = useState("");
   const [categoryId, setCategoryId] = useState<string | null>(null);
   const [subcategoryId, setSubcategoryId] = useState<string | null>(null);
@@ -114,7 +155,10 @@ export const BrandDrawer = ({ brand, open, onClose }: { brand: BrandRecord | nul
   const { data, isLoading } = useList<BrandProduct>({
     resource: "products",
     pagination: { current: 1, pageSize: brand?._count.products || 1 },
-    filters: [{ field: "brandId", operator: "eq", value: brand?.id }],
+    filters: [
+      { field: "brandId", operator: "eq", value: brand?.id },
+      { field: "includeStoreProducts", operator: "eq", value: "true" },
+    ],
     queryOptions: { enabled: !!brand },
   });
 
@@ -149,7 +193,7 @@ export const BrandDrawer = ({ brand, open, onClose }: { brand: BrandRecord | nul
           dataSource={visible}
           rowKey="id"
           locale={{ emptyText: <Empty description="No products" /> }}
-          renderItem={(p) => <ProductItem product={p} />}
+          renderItem={(p) => <ProductItem product={p} storeId={singleStoreId} />}
         />
       </Flex>
     </Drawer>

@@ -39,6 +39,17 @@ interface TripStats {
   completed: number;
 }
 
+interface TodaySummary {
+  trips: number;
+  tripsDone: number;
+  delivered: number;
+  failed: number;
+  cashCollected: number;
+  cashToCollect: number;
+}
+
+const rupees = (v: number) => `\u20B9${Math.round(v).toLocaleString("en-IN")}`;
+
 interface Rider {
   id: string;
   name: string;
@@ -46,6 +57,7 @@ interface Rider {
   email: string;
   createdAt: string;
   tripStats: TripStats;
+  today: TodaySummary | null;
 }
 
 export const RidersList = () => {
@@ -184,6 +196,31 @@ export const RidersList = () => {
           )}
         </Space>
       ),
+    },
+    {
+      title: "Delivered today",
+      key: "delivered",
+      align: "right" as const,
+      render: (_: unknown, rec: Rider) => rec.today?.delivered ?? 0,
+    },
+    {
+      title: "Failed",
+      key: "failed",
+      align: "right" as const,
+      render: (_: unknown, rec: Rider) =>
+        rec.today?.failed ? <Tag color="red">{rec.today.failed}</Tag> : 0,
+    },
+    {
+      title: "Cash collected",
+      key: "cashCollected",
+      align: "right" as const,
+      render: (_: unknown, rec: Rider) => rupees(rec.today?.cashCollected ?? 0),
+    },
+    {
+      title: "Cash to collect",
+      key: "cashToCollect",
+      align: "right" as const,
+      render: (_: unknown, rec: Rider) => rupees(rec.today?.cashToCollect ?? 0),
     },
     {
       title: "Added On",

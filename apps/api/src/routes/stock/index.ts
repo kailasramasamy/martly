@@ -2,8 +2,11 @@ import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { Prisma } from "../../../generated/prisma/index.js";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { stockMovementRoutes } from "./movements.js";
+import { stockCountRoutes } from "./counts.js";
 
 const LOW_STOCK_THRESHOLD = 5;
 
@@ -79,9 +82,12 @@ async function recentStockChanges(prisma: Db, scopeIds: string[] | undefined): P
 }
 
 export async function stockRoutes(app: FastifyInstance) {
+  await app.register(stockMovementRoutes);
+  await app.register(stockCountRoutes);
+
   app.get(
     "/summary",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requirePermission(Permission.STOCK_VIEW)] },
     async (request, reply) => {
       const { storeId, organizationId } = request.query as {
         storeId?: string;

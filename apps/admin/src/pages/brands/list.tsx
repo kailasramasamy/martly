@@ -5,7 +5,7 @@ import { SearchOutlined } from "@ant-design/icons";
 import type { HttpError } from "@refinedev/core";
 import { isAxiosError } from "axios";
 import type { BrandSegment, BrandSummary } from "@martly/shared/types";
-import { BrandDrawer, BrandLogo, type BrandRecord } from "./brand-drawer";
+import { BrandDrawer, BrandLogo, BrandScopeTag, useCanEditBrand, type BrandRecord } from "./brand-drawer";
 import { DebouncedSearch } from "../../components/DebouncedSearch";
 import { axiosInstance } from "../../providers/data-provider";
 import { BrandKpiCards } from "./kpi-cards";
@@ -24,6 +24,7 @@ export const BrandList = () => {
   const [summary, setSummary] = useState<BrandSummary | null>(null);
   const [segment, setSegment] = useState<BrandSegment | null>(null);
   const { message } = App.useApp();
+  const canEdit = useCanEditBrand();
 
   const refreshSummary = useCallback(() => {
     axiosInstance.get("/brands/summary")
@@ -65,6 +66,7 @@ export const BrandList = () => {
             <Space style={{ cursor: "pointer" }} onClick={() => openBrand(record)}>
               <BrandLogo brand={record} height={32} />
               <Typography.Link>{name}</Typography.Link>
+              <BrandScopeTag brand={record} />
             </Space>
           )}
         />
@@ -72,7 +74,7 @@ export const BrandList = () => {
         <Table.Column title="Products" render={(_, record: BrandRecord) => record._count.products} />
         <Table.Column
           title="Actions"
-          render={(_, record: BrandRecord) => (
+          render={(_, record: BrandRecord) => canEdit(record) && (
             <Space>
               <EditButton hideText size="small" recordItemId={record.id} />
               <DeleteButton hideText size="small" recordItemId={record.id} onSuccess={refreshSummary} />

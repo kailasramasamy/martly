@@ -2,15 +2,24 @@ import type { FastifyInstance } from "fastify";
 import { createDeliverySlotSchema, updateDeliverySlotSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { addDays, istDay, istNow, istWeekday } from "../../services/ist-day.js";
+import { slotCapacity } from "../../services/delivery/settings.js";
 
 const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+/** Minutes past midnight as "HH:MM", wrapping a cutoff that falls the evening before */
+function clockTime(minutes: number): string {
+  const m = ((minutes % 1440) + 1440) % 1440;
+  return `${String(Math.floor(m / 60)).padStart(2, "0")}:${String(m % 60).padStart(2, "0")}`;
+}
 
 export async function deliverySlotRoutes(app: FastifyInstance) {
   // GET / — List slots for a store (admin)
   app.get("/", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG, Permission.STORE_SETTINGS)],
   }, async (request, reply) => {
     const { storeId, page = 1, pageSize = 100 } = request.query as {
       storeId?: string; page?: number; pageSize?: number;
@@ -52,7 +61,7 @@ export async function deliverySlotRoutes(app: FastifyInstance) {
 
   // POST / — Create a slot
   app.post("/", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG)],
   }, async (request, reply) => {
     const body = createDeliverySlotSchema.parse(request.body);
 
@@ -87,7 +96,7 @@ export async function deliverySlotRoutes(app: FastifyInstance) {
 
   // PATCH /:id — Update a slot
   app.patch<{ Params: { id: string } }>("/:id", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG)],
   }, async (request, reply) => {
     const body = updateDeliverySlotSchema.parse(request.body);
 
@@ -115,7 +124,7 @@ export async function deliverySlotRoutes(app: FastifyInstance) {
 
   // DELETE /:id — Delete a slot
   app.delete<{ Params: { id: string } }>("/:id", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG)],
   }, async (request, reply) => {
     const existing = await app.prisma.deliverySlot.findUnique({ where: { id: request.params.id } });
     if (!existing) return reply.notFound("Delivery slot not found");
@@ -139,23 +148,18 @@ export async function deliverySlotRoutes(app: FastifyInstance) {
     if (!storeId) return reply.badRequest("storeId is required");
     if (!date) return reply.badRequest("date is required (YYYY-MM-DD)");
 
-    const parsedDate = new Date(date + "T00:00:00");
-    if (isNaN(parsedDate.getTime())) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
       return reply.badRequest("Invalid date format. Use YYYY-MM-DD");
     }
 
-    // Check date is within 7 days
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const maxDate = new Date(today);
-    maxDate.setDate(maxDate.getDate() + 7);
-
-    if (parsedDate < today || parsedDate > maxDate) {
+    // Stores run on India time, whatever zone the server is in
+    const now = istNow();
+    if (date < now.key || date > addDays(now.key, 7)) {
       return reply.badRequest("Date must be between today and 7 days from now");
     }
 
-    const dayOfWeek = parsedDate.getDay();
-    const isToday = parsedDate.toDateString() === new Date().toDateString();
+    const dayOfWeek = istWeekday(date);
+    const isToday = date === now.key;
 
     // Find active slots for this day
     const slots = await app.prisma.deliverySlot.findMany({
@@ -168,8 +172,7 @@ export async function deliverySlotRoutes(app: FastifyInstance) {
     });
 
     // Count booked orders per slot for this date
-    const startOfDay = new Date(date + "T00:00:00");
-    const endOfDay = new Date(date + "T23:59:59.999");
+    const { start: startOfDay, end: endOfDay } = istDay(date);
 
     const slotIds = slots.map((s) => s.id);
     const bookingCounts = slotIds.length > 0
@@ -185,34 +188,31 @@ export async function deliverySlotRoutes(app: FastifyInstance) {
       : [];
 
     const countMap = new Map(bookingCounts.map((b) => [b.deliverySlotId, b._count]));
-
-    const now = new Date();
-    const currentMinutes = now.getHours() * 60 + now.getMinutes();
+    const capacities = new Map(await Promise.all(slots.map(async (s) => [s.id, await slotCapacity(app.prisma, s, date)] as const)));
+    const currentMinutes = now.minutes;
 
     const availableSlots = slots
       .map((slot) => {
         const booked = countMap.get(slot.id) ?? 0;
-        const available = slot.maxOrders - booked;
+        // A slot only sells what its riders can carry
+        const capacity = capacities.get(slot.id) ?? slot.maxOrders;
+        const available = capacity - booked;
 
-        // Check cutoff: if today, slot start time minus cutoff must be in the future
-        if (isToday) {
-          const [h, m] = slot.startTime.split(":").map(Number);
-          const slotStartMinutes = h * 60 + m;
-          if (currentMinutes >= slotStartMinutes - slot.cutoffMinutes) {
-            return null; // past cutoff
-          }
-        }
+        // Bookings close `cutoffMinutes` before the slot starts; closed slots are still listed so customers see why
+        const [h, m] = slot.startTime.split(":").map(Number);
+        const cutoff = h * 60 + m - slot.cutoffMinutes;
 
         return {
           id: slot.id,
           startTime: slot.startTime,
           endTime: slot.endTime,
-          maxOrders: slot.maxOrders,
+          maxOrders: capacity,
           available,
           full: available <= 0,
+          closed: isToday && currentMinutes >= cutoff,
+          orderBy: clockTime(cutoff),
         };
-      })
-      .filter(Boolean);
+      });
 
     const response: ApiResponse<typeof availableSlots> = {
       success: true,
@@ -250,8 +250,8 @@ export async function deliverySlotRoutes(app: FastifyInstance) {
       if (!expressConfig.isEnabled) {
         expressAvailable = false;
       } else if (expressConfig.operatingStart && expressConfig.operatingEnd) {
-        const now = new Date();
-        const currentMinutes = now.getHours() * 60 + now.getMinutes();
+        // Operating hours are India time, whatever zone the server runs in
+        const currentMinutes = istNow().minutes;
         const [startH, startM] = expressConfig.operatingStart.split(":").map(Number);
         const [endH, endM] = expressConfig.operatingEnd.split(":").map(Number);
         const startMinutes = startH * 60 + startM;

@@ -3,7 +3,8 @@ import { createReturnRequestSchema, resolveReturnRequestSchema } from "@martly/s
 import { RETURN_WINDOW_HOURS } from "@martly/shared/constants";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { sendWalletNotification } from "../../services/notification.js";
 
@@ -121,7 +122,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
   });
 
   // ── GET / — Admin lists return requests (org-scoped) ───────
-  app.get("/", { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] }, async (request, reply) => {
+  app.get("/", { preHandler: [authenticate, requirePermission(Permission.ORDERS_VIEW, Permission.RETURNS_HANDLE)] }, async (request, reply) => {
     const user = getOrgUser(request);
     const { page = "1", pageSize = "20", status, storeId, search } = request.query as {
       page?: string; pageSize?: string; status?: string; storeId?: string; search?: string;
@@ -168,7 +169,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
   });
 
   // ── GET /:id — Admin views return request detail ───────────
-  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] }, async (request, reply) => {
+  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requirePermission(Permission.ORDERS_VIEW, Permission.RETURNS_HANDLE)] }, async (request, reply) => {
     const storeIds = await getOrgStoreIds(request, app.prisma);
 
     const returnRequest = await app.prisma.returnRequest.findUnique({
@@ -188,7 +189,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
   });
 
   // ── PATCH /:id/resolve — Admin approves or rejects ─────────
-  app.patch<{ Params: { id: string } }>("/:id/resolve", { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] }, async (request, reply) => {
+  app.patch<{ Params: { id: string } }>("/:id/resolve", { preHandler: [authenticate, requirePermission(Permission.RETURNS_HANDLE)] }, async (request, reply) => {
     const user = getOrgUser(request);
     const body = resolveReturnRequestSchema.parse(request.body);
 

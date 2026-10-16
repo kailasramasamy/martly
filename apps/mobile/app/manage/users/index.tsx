@@ -26,7 +26,7 @@ export default function UsersScreen() {
   const role = user?.role ?? "";
   const [q, setQ] = useState("");
   const [roleFilter, setRoleFilter] = useState("");
-  const allowed = can(role, "users", "list");
+  const allowed = can(user, "users", "list");
   const list = usePagedList<UserRow>("/api/v1/users", { q, role: roleFilter }, { enabled: allowed });
   const tabs = role === "SUPER_ADMIN" ? ROLE_TABS : ROLE_TABS.filter((t) => t.value !== "SUPER_ADMIN");
 
@@ -37,7 +37,7 @@ export default function UsersScreen() {
       list={list}
       search={{ value: q, onChange: setQ, placeholder: "Search by name or email" }}
       filters={<SegmentedTabs options={tabs} value={roleFilter} onChange={setRoleFilter} />}
-      headerRight={can(role, "users", "create") ? () => <HeaderAction accessibilityLabel="Add user" onPress={() => router.push("/manage/users/new")} /> : undefined}
+      headerRight={can(user, "users", "create") ? () => <HeaderAction accessibilityLabel="Add user" onPress={() => router.push("/manage/users/new")} /> : undefined}
       empty={{ icon: "people-outline", title: "No team members", message: q || roleFilter ? "Try a different search or filter." : "Add your first team member." }}
       renderItem={(u) => (
         <ListRow

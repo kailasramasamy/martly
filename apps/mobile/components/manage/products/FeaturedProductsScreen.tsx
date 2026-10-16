@@ -23,7 +23,7 @@ export function FeaturedProductsScreen() {
   const [picking, setPicking] = useState(false);
   const params = useMemo(() => ({ isFeatured: "true", storeId, q }), [storeId, q]);
   const list = usePagedList<FeaturedStoreProduct>("/api/v1/store-products", params);
-  const canEdit = can(user?.role ?? "", "featured-products", "edit");
+  const canEdit = can(user, "featured-products", "edit");
 
   const unfeature = async (sp: FeaturedStoreProduct) => {
     const ok = await run(() => api.put(`/api/v1/store-products/${sp.id}`, { isFeatured: false }), "Removed from featured");

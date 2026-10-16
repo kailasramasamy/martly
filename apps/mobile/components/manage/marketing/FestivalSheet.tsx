@@ -71,7 +71,7 @@ export function FestivalSheet({ event, canEdit, curating, onCurate, onEdit, onCl
 }
 
 const styles = StyleSheet.create({
-  body: { paddingHorizontal: 16, paddingBottom: 8 },
-  footer: { flexDirection: "row", gap: 10, paddingHorizontal: 16, paddingTop: 8 },
+  body: { paddingBottom: 8 },
+  footer: { flexDirection: "row", gap: 10 },
   btn: { flex: 1 },
 });

@@ -1,11 +1,15 @@
 import { Edit, useForm } from "@refinedev/antd";
+import { useGetIdentity } from "@refinedev/core";
 import { Form, Input, InputNumber, Card, Row, Col, ColorPicker } from "antd";
 import { TrademarkOutlined } from "@ant-design/icons";
-import { ImageUpload } from "../../components/ImageUpload";
+import { BrandLogoField } from "./logo-field";
 import { sectionTitle } from "../../theme";
 
 export const BrandEdit = () => {
   const { formProps, saveButtonProps } = useForm({ resource: "brands" });
+  const { data: identity } = useGetIdentity<{ role: string }>();
+  // Popularity ranks brands in every store's search, so only the platform admin sets it
+  const isPlatform = identity?.role === "SUPER_ADMIN";
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
@@ -44,15 +48,17 @@ export const BrandEdit = () => {
                     <ColorPicker showText allowClear disabledAlpha format="hex" />
                   </Form.Item>
                 </Col>
-                <Col xs={24} sm={12}>
-                  <Form.Item
-                    label="Popularity"
-                    name="popularity"
-                    tooltip="0–100: how well shoppers know this brand. Search shows better-known brands first"
-                  >
-                    <InputNumber min={0} max={100} precision={0} style={{ width: "100%" }} />
-                  </Form.Item>
-                </Col>
+                {isPlatform && (
+                  <Col xs={24} sm={12}>
+                    <Form.Item
+                      label="Popularity"
+                      name="popularity"
+                      tooltip="0–100: how well shoppers know this brand. Search shows better-known brands first"
+                    >
+                      <InputNumber min={0} max={100} precision={0} style={{ width: "100%" }} />
+                    </Form.Item>
+                  </Col>
+                )}
               </Row>
             </Card>
           </Col>
@@ -63,7 +69,7 @@ export const BrandEdit = () => {
                 getValueFromEvent={(url: string) => url}
                 style={{ marginBottom: 0 }}
               >
-                <ImageUpload />
+                <BrandLogoField form={formProps.form} />
               </Form.Item>
             </Card>
           </Col>

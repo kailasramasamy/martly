@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "expo-router";
 import { useManageScope } from "../../../lib/manage-scope-context";
-import { api } from "../../../lib/api";
 import { toQuery } from "../../../lib/manage/query";
 import { usePagedList } from "../../../lib/manage/use-paged-list";
 import { ManageListScreen } from "../../../components/manage/ManageListScreen";
@@ -11,17 +10,10 @@ import { StatusPill } from "../../../components/manage/ui/StatusPill";
 import { timeAgo } from "../../../components/manage/ui/dates";
 import { AccessGate } from "../../../components/manage/support/AccessGate";
 import { TICKET_PRIORITY, TICKET_STATUS, type TicketRow, type TicketStats } from "../../../components/manage/support/types";
+import { useResource } from "../../../lib/manage/use-resource";
 
 function useTicketStats(storeId: string | null): TicketStats | null {
-  const [stats, setStats] = useState<TicketStats | null>(null);
-  useEffect(() => {
-    let live = true;
-    api.get<TicketStats>(`/api/v1/support/tickets/stats${toQuery({ storeId })}`)
-      .then((res) => live && setStats(res.data))
-      .catch(() => live && setStats(null));
-    return () => { live = false; };
-  }, [storeId]);
-  return stats;
+  return useResource<TicketStats>(`/api/v1/support/tickets/stats${toQuery({ storeId })}`).data;
 }
 
 function TicketList() {

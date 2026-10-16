@@ -3,9 +3,16 @@ import { Prisma } from "../../../generated/prisma/index.js";
 import { createOrderSchema, updateOrderStatusSchema, updatePaymentStatusSchema, verifyPaymentSchema, bulkUpdateOrderStatusSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { transitionDenial } from "../../services/order-access.js";
+import { releaseFromUnstartedTrip, stopFinished } from "../../services/delivery/trip-ops.js";
+import { reoptimizeTrips } from "../../services/delivery/plan-wave.js";
+import { undoDeliveryRoutes } from "./undo-delivery.js";
+import { OPEN_ORDER_STATUSES, addDays, istDay, istNow, istWeekday } from "../../services/ist-day.js";
+import { slotCapacity } from "../../services/delivery/settings.js";
+import { hasPermission } from "@martly/shared/permissions";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
-import { haversine } from "../../lib/geo.js";
+import { haversine, locateAddress } from "../../lib/geo.js";
 import { sendOrderStatusNotification, sendWalletNotification, sendLoyaltyNotification, sendNotification } from "../../services/notification.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { reserveStock, releaseStock, deductStock } from "../../services/stock.js";
@@ -14,7 +21,7 @@ import { createRazorpayOrder, verifyRazorpaySignature, isRazorpayConfigured, get
 import { broadcastOrderUpdate } from "../../services/order-broadcast.js";
 import { notifyStaffOfNewOrder } from "../../services/staff-alerts.js";
 import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
-import { OrderStatus } from "@martly/shared/constants";
+import { OrderStatus, Permission } from "@martly/shared/constants";
 
 function getValidTransitions(fulfillmentType: string): Record<string, string[]> {
   return fulfillmentType === "PICKUP" ? PICKUP_TRANSITIONS : DELIVERY_TRANSITIONS;
@@ -30,7 +37,20 @@ function formatOrderUnits<T extends { items?: { variant?: { unitType: string } }
   };
 }
 
+/** Shoppers see their own orders; staff need the orders permission */
+function canViewOrders(user: { role: string; permissions?: readonly string[] }): boolean {
+  return user.role === "CUSTOMER" || user.role === "SUPER_ADMIN" || hasPermission(user.permissions, Permission.ORDERS_VIEW);
+}
+
 export async function orderRoutes(app: FastifyInstance) {
+  /** A cancelled stop left a gap in its trip: put the rest back in road order (in the background, best effort) */
+  const reorderTripAfterCancel = (tripId: string | null) => {
+    if (!tripId) return;
+    reoptimizeTrips(app.prisma, [tripId]).catch((err: unknown) => app.log.error(err, `Re-ordering trip ${tripId} failed`));
+  };
+
+  await app.register(undoDeliveryRoutes);
+
   // List orders (scoped by role + org)
   app.get("/", { preHandler: [authenticate] }, async (request, reply) => {
     const {
@@ -43,6 +63,7 @@ export async function orderRoutes(app: FastifyInstance) {
     };
     const skip = (Number(page) - 1) * Number(pageSize);
     const user = getOrgUser(request);
+    if (!canViewOrders(user)) return reply.forbidden("You don't have permission to view orders");
 
     const where: Record<string, unknown> = {};
 
@@ -128,6 +149,7 @@ export async function orderRoutes(app: FastifyInstance) {
     if (!order) return reply.notFound("Order not found");
 
     const user = getOrgUser(request);
+    if (!canViewOrders(user)) return reply.forbidden("You don't have permission to view orders");
     if (user.role === "CUSTOMER") {
       if (order.userId !== user.sub) return reply.forbidden("Access denied");
     } else if (user.role !== "SUPER_ADMIN") {
@@ -172,6 +194,19 @@ export async function orderRoutes(app: FastifyInstance) {
         deliveryPincode = addr.pincode ?? null;
         deliveryLat = addr.latitude ?? null;
         deliveryLng = addr.longitude ?? null;
+      }
+      if (deliveryLat === null && body.deliveryAddressLat != null && body.deliveryAddressLng != null) {
+        deliveryLat = body.deliveryAddressLat;
+        deliveryLng = body.deliveryAddressLng;
+      }
+      // Trips are planned by location, so an address without coordinates is looked up once, here
+      if (deliveryLat === null && deliveryAddress) {
+        const found = await locateAddress(deliveryAddress, deliveryPincode);
+        if (found) {
+          deliveryLat = found.lat;
+          deliveryLng = found.lng;
+          deliveryPincode = deliveryPincode ?? found.pincode ?? null;
+        }
       }
     }
 
@@ -368,8 +403,8 @@ export async function orderRoutes(app: FastifyInstance) {
         }
 
         if (expressConfig.operatingStart && expressConfig.operatingEnd) {
-          const now = new Date();
-          const currentMinutes = now.getHours() * 60 + now.getMinutes();
+          // Operating hours are India time, whatever zone the server runs in
+          const currentMinutes = istNow().minutes;
           const [startH, startM] = expressConfig.operatingStart.split(":").map(Number);
           const [endH, endM] = expressConfig.operatingEnd.split(":").map(Number);
           const startMinutes = startH * 60 + startM;
@@ -407,35 +442,22 @@ export async function orderRoutes(app: FastifyInstance) {
       if (!slot.isActive) return reply.badRequest("Delivery slot is not active");
       if (slot.storeId !== body.storeId) return reply.badRequest("Delivery slot does not belong to this store");
 
-      const parsedDate = new Date(body.scheduledDate + "T00:00:00");
-      if (isNaN(parsedDate.getTime())) return reply.badRequest("Invalid scheduledDate format");
-
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
-      const maxDate = new Date(today);
-      maxDate.setDate(maxDate.getDate() + 7);
-      if (parsedDate < today || parsedDate > maxDate) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(body.scheduledDate)) return reply.badRequest("Invalid scheduledDate format");
+      // Slot days and cutoffs are India time, whatever zone the server runs in
+      const now = istNow();
+      if (body.scheduledDate < now.key || body.scheduledDate > addDays(now.key, 7)) {
         return reply.badRequest("Scheduled date must be within 7 days");
       }
-
-      if (parsedDate.getDay() !== slot.dayOfWeek) {
+      if (istWeekday(body.scheduledDate) !== slot.dayOfWeek) {
         return reply.badRequest("Scheduled date does not match slot day of week");
       }
-
-      // Check cutoff for today
-      const isToday = parsedDate.toDateString() === new Date().toDateString();
-      if (isToday) {
-        const now = new Date();
-        const currentMinutes = now.getHours() * 60 + now.getMinutes();
-        const [h, m] = slot.startTime.split(":").map(Number);
-        if (currentMinutes >= h * 60 + m - slot.cutoffMinutes) {
-          return reply.badRequest("This slot is past its booking cutoff time");
-        }
+      const [h, m] = slot.startTime.split(":").map(Number);
+      if (body.scheduledDate === now.key && now.minutes >= h * 60 + m - slot.cutoffMinutes) {
+        return reply.badRequest("This slot is past its booking cutoff time");
       }
 
-      // Check capacity
-      const startOfDay = new Date(body.scheduledDate + "T00:00:00");
-      const endOfDay = new Date(body.scheduledDate + "T23:59:59.999");
+      // A slot only takes what its riders can carry
+      const { start: startOfDay, end: endOfDay } = istDay(body.scheduledDate);
       const bookedCount = await app.prisma.order.count({
         where: {
           deliverySlotId: body.deliverySlotId,
@@ -443,18 +465,18 @@ export async function orderRoutes(app: FastifyInstance) {
           status: { not: "CANCELLED" },
         },
       });
-      if (bookedCount >= slot.maxOrders) {
+      if (bookedCount >= await slotCapacity(app.prisma, slot, body.scheduledDate)) {
         return reply.badRequest("This delivery slot is full");
       }
+      const parsedDate = new Date(`${body.scheduledDate}T00:00:00+05:30`);
 
       deliverySlotId = slot.id;
       scheduledDate = parsedDate;
       slotStartTime = slot.startTime;
       slotEndTime = slot.endTime;
 
-      // Override estimatedDeliveryAt with scheduled time
-      const [sh, sm] = slot.startTime.split(":").map(Number);
-      estimatedMinutes = undefined; // will set estimatedDeliveryAt directly
+      // estimatedDeliveryAt comes from the slot start instead
+      estimatedMinutes = undefined;
     }
 
     const totalAmount = itemsTotal - couponDiscount + deliveryFee;
@@ -570,13 +592,9 @@ export async function orderRoutes(app: FastifyInstance) {
             deliveryNotes: body.deliveryNotes,
             walletAmountUsed: walletDeduction > 0 ? walletDeduction : undefined,
             loyaltyPointsUsed: loyaltyDeduction > 0 ? loyaltyDeduction : undefined,
-            estimatedDeliveryAt: scheduledDate && slotStartTime
-              ? (() => {
-                  const [sh, sm] = slotStartTime.split(":").map(Number);
-                  const dt = new Date(scheduledDate);
-                  dt.setHours(sh, sm, 0, 0);
-                  return dt;
-                })()
+            // Slot start on the booked day, in India time
+            estimatedDeliveryAt: body.scheduledDate && slotStartTime
+              ? new Date(`${body.scheduledDate}T${slotStartTime}:00+05:30`)
               : estimatedMinutes ? new Date(Date.now() + estimatedMinutes * 60000) : undefined,
             deliverySlotId: deliverySlotId ?? undefined,
             scheduledDate: scheduledDate ?? undefined,
@@ -692,7 +710,7 @@ export async function orderRoutes(app: FastifyInstance) {
   // Update order status (verify org access)
   app.patch<{ Params: { id: string } }>(
     "/:id/status",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF", "RIDER")] },
+    { preHandler: [authenticate] },
     async (request, reply) => {
       const body = updateOrderStatusSchema.parse(request.body);
       const existing = await app.prisma.order.findUnique({
@@ -727,25 +745,32 @@ export async function orderRoutes(app: FastifyInstance) {
           statusCode: 400,
         });
       }
+      // Orders go out on a trip, so every one on the road has a rider
+      if (body.status === "OUT_FOR_DELIVERY") {
+        return reply.badRequest("Assign a rider to send this order out");
+      }
+      const denied = await transitionDenial(app.prisma, request.user, existing, body.status);
+      if (denied) return reply.forbidden(denied);
 
       const stockItems = existing.items.map((i) => ({
         storeProductId: i.storeProductId,
         quantity: i.quantity,
       }));
 
-      // Perform stock operation + status update together
-      if (body.status === "DELIVERED") {
-        await deductStock(app.prisma, stockItems);
-      } else if (body.status === "CANCELLED") {
+      if (body.status === "CANCELLED") {
         await releaseStock(app.prisma, stockItems);
       }
 
       const txResult = await app.prisma.$transaction(async (tx) => {
+        if (body.status === "DELIVERED") {
+          await deductStock(tx, stockItems, { orderId: existing.id, userId: request.user.sub });
+        }
         const updateData: Record<string, unknown> = { status: body.status };
 
-        // Auto-mark COD as PAID on delivery
+        // Delivering a COD order means the money was collected: cash in hand unless the rider says UPI
         if (body.status === "DELIVERED" && existing.paymentMethod === "COD" && existing.paymentStatus === "PENDING") {
           updateData.paymentStatus = "PAID";
+          updateData.codCollectedVia = body.collectedVia ?? "CASH";
         }
 
         // Loyalty points earning on DELIVERED
@@ -980,9 +1005,10 @@ export async function orderRoutes(app: FastifyInstance) {
           data: updateData,
           include: { items: true },
         });
+        if (body.status === "CANCELLED") await releaseFromUnstartedTrip(tx, request.params.id);
         const logNote = (body.status === "DELIVERED" && existing.paymentMethod === "COD" && existing.paymentStatus === "PENDING")
-          ? "COD payment collected on delivery"
-          : undefined;
+          ? (body.collectedVia === "UPI" ? "COD paid by UPI on delivery" : "COD collected in cash on delivery")
+          : body.note;
         await tx.orderStatusLog.create({
           data: { orderId: request.params.id, status: body.status, note: logNote },
         });
@@ -1012,6 +1038,7 @@ export async function orderRoutes(app: FastifyInstance) {
       const { referralCompleted, referralReferrerId, referralReferrerReward, referralRefereeReward } = txResult;
 
       sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, body.status);
+      if (body.status === "CANCELLED") reorderTripAfterCancel(existing.deliveryTripId);
       broadcastOrderUpdate(app.prisma, order.id, body.status);
 
       // Fire-and-forget: wallet refund notification on cancel
@@ -1050,20 +1077,7 @@ export async function orderRoutes(app: FastifyInstance) {
       }
 
       // Auto-complete delivery trip when last order is delivered
-      if (body.status === "DELIVERED" && existing.deliveryTripId) {
-        const remaining = await app.prisma.order.count({
-          where: {
-            deliveryTripId: existing.deliveryTripId,
-            status: { notIn: ["DELIVERED", "CANCELLED"] },
-          },
-        });
-        if (remaining === 0) {
-          await app.prisma.deliveryTrip.update({
-            where: { id: existing.deliveryTripId },
-            data: { status: "COMPLETED", completedAt: new Date() },
-          });
-        }
-      }
+      if (body.status === "DELIVERED" && existing.deliveryTripId) await stopFinished(app.prisma, existing.deliveryTripId);
 
       const response: ApiResponse<typeof order> = { success: true, data: order };
       return response;
@@ -1073,7 +1087,7 @@ export async function orderRoutes(app: FastifyInstance) {
   // Update payment status (admin override)
   app.patch<{ Params: { id: string } }>(
     "/:id/payment-status",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requirePermission(Permission.FINANCE_MANAGE)] },
     async (request, reply) => {
       const body = updatePaymentStatusSchema.parse(request.body);
       const existing = await app.prisma.order.findUnique({
@@ -1183,6 +1197,7 @@ export async function orderRoutes(app: FastifyInstance) {
         await tx.orderStatusLog.create({
           data: { orderId: request.params.id, status: "CANCELLED", note: "Cancelled by customer" },
         });
+        await releaseFromUnstartedTrip(tx, request.params.id);
 
         // Refund to wallet
         if (refundAmount > 0) {
@@ -1247,6 +1262,7 @@ export async function orderRoutes(app: FastifyInstance) {
 
       sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, "CANCELLED");
       broadcastOrderUpdate(app.prisma, order.id, "CANCELLED");
+      reorderTripAfterCancel(existing.deliveryTripId);
 
       // Fire-and-forget: wallet refund notification
       const walletUsed = Number(existing.walletAmountUsed ?? 0);
@@ -1393,7 +1409,7 @@ export async function orderRoutes(app: FastifyInstance) {
   // Delivery Board — grouped orders for operational management
   app.get(
     "/delivery-board",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF", "RIDER")] },
+    { preHandler: [authenticate, requirePermission(Permission.ORDERS_VIEW)] },
     async (request, reply) => {
       const { storeId, date } = request.query as { storeId?: string; date?: string };
       if (!storeId) return reply.badRequest("storeId is required");
@@ -1402,16 +1418,24 @@ export async function orderRoutes(app: FastifyInstance) {
         return reply.forbidden("Access denied");
       }
 
-      const targetDate = date ? new Date(date + "T00:00:00") : new Date();
-      targetDate.setHours(0, 0, 0, 0);
-      const startOfDay = new Date(targetDate);
-      const endOfDay = new Date(targetDate);
-      endOfDay.setHours(23, 59, 59, 999);
-      const dateStr = targetDate.toISOString().split("T")[0];
+      const day = istDay(date);
+      const dateStr = day.key;
+      // Today's board also carries orders from earlier days that are still open, so nothing drops off overnight
+      const createdOnDay = (field: "createdAt" | "scheduledDate") => ({
+        OR: [
+          { [field]: { gte: day.start, lte: day.end } },
+          ...(day.isToday ? [{ [field]: { lt: day.start }, status: { in: [...OPEN_ORDER_STATUSES] } }] : []),
+        ],
+      });
 
       const orderInclude = {
-        user: { select: { id: true, name: true, email: true } },
-        items: { include: { product: { select: { name: true } } } },
+        user: { select: { id: true, name: true, email: true, phone: true } },
+        items: {
+          include: {
+            product: { select: { name: true, imageUrl: true, images: true } },
+            variant: { select: { name: true, imageUrl: true } },
+          },
+        },
         deliveryTrip: {
           select: {
             id: true,
@@ -1429,7 +1453,7 @@ export async function orderRoutes(app: FastifyInstance) {
             storeId,
             fulfillmentType: "DELIVERY",
             deliverySlotId: null,
-            createdAt: { gte: startOfDay, lte: endOfDay },
+            ...createdOnDay("createdAt"),
           },
           include: orderInclude,
           orderBy: { createdAt: "desc" },
@@ -1439,7 +1463,7 @@ export async function orderRoutes(app: FastifyInstance) {
           where: {
             storeId,
             deliverySlotId: { not: null },
-            scheduledDate: { gte: startOfDay, lte: endOfDay },
+            ...createdOnDay("scheduledDate"),
           },
           include: orderInclude,
           orderBy: { slotStartTime: "asc" },
@@ -1449,7 +1473,7 @@ export async function orderRoutes(app: FastifyInstance) {
           where: {
             storeId,
             fulfillmentType: "PICKUP",
-            createdAt: { gte: startOfDay, lte: endOfDay },
+            ...createdOnDay("createdAt"),
           },
           include: orderInclude,
           orderBy: { createdAt: "desc" },
@@ -1548,13 +1572,14 @@ export async function orderRoutes(app: FastifyInstance) {
   // Bulk status update
   app.post(
     "/bulk-status",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF", "RIDER")] },
+    { preHandler: [authenticate] },
     async (request, reply) => {
       const body = bulkUpdateOrderStatusSchema.parse(request.body);
+      const denied = await transitionDenial(app.prisma, request.user, { deliveryTripId: null }, body.status);
+      if (denied) return reply.forbidden(denied);
 
       const orders = await app.prisma.order.findMany({
         where: { id: { in: body.orderIds } },
-        include: { items: true },
       });
 
       // Verify org access for all orders
@@ -1598,42 +1623,9 @@ export async function orderRoutes(app: FastifyInstance) {
       // Process valid orders in a transaction
       await app.prisma.$transaction(async (tx) => {
         for (const order of validOrders) {
-          // Stock operations
-          const stockItems = order.items.map((i) => ({
-            storeProductId: i.storeProductId,
-            quantity: i.quantity,
-          }));
-
-          if (body.status === "DELIVERED") {
-            for (const item of stockItems) {
-              await tx.$executeRaw`
-                UPDATE store_products
-                SET stock = stock - ${item.quantity},
-                    reserved_stock = reserved_stock - ${item.quantity}
-                WHERE id = ${item.storeProductId}
-              `;
-            }
-          } else if (body.status === "CANCELLED") {
-            for (const item of stockItems) {
-              await tx.$executeRaw`
-                UPDATE store_products
-                SET reserved_stock = reserved_stock - ${item.quantity}
-                WHERE id = ${item.storeProductId}
-                  AND reserved_stock >= ${item.quantity}
-              `;
-            }
-          }
-
-          const updateData: Record<string, unknown> = { status: body.status };
-
-          // Auto-mark COD as PAID on delivery
-          if (body.status === "DELIVERED" && order.paymentMethod === "COD" && order.paymentStatus === "PENDING") {
-            updateData.paymentStatus = "PAID";
-          }
-
           await tx.order.update({
             where: { id: order.id },
-            data: updateData,
+            data: { status: body.status },
           });
 
           await tx.orderStatusLog.create({

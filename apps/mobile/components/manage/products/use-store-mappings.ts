@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { api } from "../../../lib/api";
 import { useAction } from "../../../lib/manage/use-action";
 import type { StoreMapping } from "./types";
+import { useRefreshOnFocus } from "../../../lib/manage/use-refresh-on-focus";
 
 /** Store listings of one product, scoped by the API to the caller's stores, with in-place toggle and unmap */
 export function useStoreMappings(productId: string) {
@@ -25,6 +26,8 @@ export function useStoreMappings(productId: string) {
   useEffect(() => {
     load();
   }, [load]);
+  // Back from editing a listing: show its new price, stock or visibility
+  useRefreshOnFocus(load);
 
   const toggle = async (m: StoreMapping, field: "isActive" | "isFeatured", value: boolean) => {
     const ok = await run(() => api.put(`/api/v1/store-products/${m.id}`, { [field]: value }));

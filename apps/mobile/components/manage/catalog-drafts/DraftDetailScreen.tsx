@@ -5,7 +5,6 @@ import { Ionicons } from "@expo/vector-icons";
 import type { CatalogDraftDetail } from "@martly/shared/types";
 import { colors, fonts, radius } from "../../../constants/theme";
 import { useResource } from "../../../lib/manage/use-resource";
-import { useRefreshOnFocus } from "../../../lib/manage/use-refresh-on-focus";
 import { ManageStackScreen } from "../ManageStackScreen";
 import { Button } from "../ui/Button";
 import { ConfirmDialog } from "../ui/ConfirmDialog";
@@ -134,7 +133,6 @@ function ReadOnlyScreen({ draft, onDone, onRefresh }: DraftProps & { onRefresh: 
 
 export function DraftDetailScreen({ id }: { id: string }) {
   const { data, setData, loading, error, reload } = useResource<CatalogDraftDetail>(`/api/v1/catalog-drafts/${id}`);
-  useRefreshOnFocus(reload);
   if (!data) return <ManageStackScreen title="Product" loading={loading} error={error} onRetry={reload}>{null}</ManageStackScreen>;
   if (data.status === "NEEDS_REVIEW") return <ReviewScreen draft={data} onDone={setData} />;
   return <ReadOnlyScreen draft={data} onDone={setData} onRefresh={reload} />;

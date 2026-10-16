@@ -6,6 +6,9 @@ import { SegmentedTabs } from "../ui/SegmentedTabs";
 import { FacetChips, type Facet } from "../ui/FacetChips";
 import { StockTiles } from "./StockTiles";
 import { CatalogShortcuts } from "./CatalogShortcuts";
+import { CountsWaitingCard } from "../stock/CountsWaitingCard";
+import { useWaitingCountStatus } from "../../../lib/manage/use-counts-waiting";
+import { useManageScope } from "../../../lib/manage-scope-context";
 import type { CatalogFilter, StockSummary } from "./types";
 
 interface CatalogHeaderProps {
@@ -17,16 +20,22 @@ interface CatalogHeaderProps {
   facets: Facet[] | undefined;
   facet: string | null;
   onFacet: (id: string | null) => void;
+  /** Search took focus and the overview above it collapsed; the list should return to its top */
+  onSearchFocus: () => void;
 }
 
-export function CatalogHeader({ summary, search, onSearch, filter, onFilter, facets, facet, onFacet }: CatalogHeaderProps) {
+export function CatalogHeader({ summary, search, onSearch, filter, onFilter, facets, facet, onFacet, onSearchFocus }: CatalogHeaderProps) {
   const low = summary?.totals.lowStock;
   const out = summary?.totals.outOfStock;
   const [searching, setSearching] = useState(false);
+  const { storeId } = useManageScope();
+  // Counters land here, so recounts sent back to them show first; approvers see theirs on Today
+  const recountWaiting = useWaitingCountStatus() === "RECOUNT";
   // While searching, the overview gets out of the way so results sit right under the field, above the keyboard
   const compact = searching || !!search;
   return (
     <View style={styles.root}>
+      {!compact && recountWaiting && <CountsWaitingCard storeId={storeId} />}
       {!compact && <StockTiles summary={summary} />}
       {!compact && <CatalogShortcuts />}
       {!compact && (
@@ -37,7 +46,10 @@ export function CatalogHeader({ summary, search, onSearch, filter, onFilter, fac
           <Text style={styles.sectionHint}>Tap a product to update its stock, price or visibility here</Text>
         </View>
       )}
-      <SearchField value={search} onChange={onSearch} placeholder="Search this store's products" onFocusChange={setSearching} />
+      <SearchField value={search} onChange={onSearch} placeholder="Search this store's products" onFocusChange={(focused) => {
+        setSearching(focused);
+        if (focused) onSearchFocus();
+      }} />
       <SegmentedTabs
         value={filter}
         onChange={onFilter}

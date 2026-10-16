@@ -115,10 +115,10 @@ export default function OrdersScreen() {
 
   return (
     <View style={styles.container}>
-      <FlatList {...tabBarScroll.scrollProps}
+      <FlatList keyboardDismissMode="on-drag" {...tabBarScroll.scrollProps}
         data={orders}
         keyExtractor={(item) => item.id}
-        contentContainerStyle={orders.length === 0 ? styles.center : styles.list}
+        contentContainerStyle={tabBarScroll.contentStyle(orders.length === 0 ? styles.center : styles.list)}
         refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primary} />}
         ListEmptyComponent={
           <View style={styles.emptyContainer}>

@@ -23,7 +23,7 @@ function TicketScreen({ id }: { id: string }) {
   const { user } = useAuth();
   const { data, setData, loading, error, reload } = useResource<TicketDetail>(`/api/v1/support/tickets/${id}`);
   const { run, running } = useAction();
-  const canReply = !!user && can(user.role, "support-tickets", "edit") && data?.status !== "CLOSED";
+  const canReply = !!user && can(user, "support-tickets", "edit") && data?.status !== "CLOSED";
 
   const patch = async (body: { reply?: string; status?: string }, success: string) => {
     const res = await run(() => api.patch<TicketDetail>(`/api/v1/support/tickets/${id}`, body), success);

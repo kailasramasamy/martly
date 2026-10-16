@@ -1,7 +1,8 @@
 import type { FastifyInstance } from "fastify";
 import Anthropic from "@anthropic-ai/sdk";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
 // ── Shared demand calculation ───────────────────────
@@ -85,7 +86,7 @@ async function computeDemand(
 
 // ── Route registration ──────────────────────────────
 export async function storeIntelligenceRoutes(app: FastifyInstance) {
-  const preHandler = [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")];
+  const preHandler = [authenticate, requirePermission(Permission.REPORTS_VIEW)];
 
   // ── 1. Demand Forecast ────────────────────────────
   app.get("/demand-forecast", { preHandler }, async (request, reply) => {

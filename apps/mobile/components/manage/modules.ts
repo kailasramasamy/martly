@@ -41,6 +41,13 @@ const MODULE_GROUPS: ModuleGroup[] = [
     ],
   },
   {
+    title: "Stock",
+    modules: [
+      { resource: "stock-counts", label: "Stock counts", icon: "clipboard-outline", href: "/manage/stock-counts" },
+      { resource: "stock-receive", label: "Receive stock", icon: "download-outline", href: "/manage/stock/receive" },
+    ],
+  },
+  {
     title: "Product catalog",
     modules: [
       { resource: "catalog-drafts", label: "Add product", icon: "add-circle-outline", href: "/manage/add-product" },
@@ -73,6 +80,7 @@ const MODULE_GROUPS: ModuleGroup[] = [
       { resource: "delivery-zones", label: "Delivery zones", icon: "map-outline", href: "/manage/delivery-zones" },
       { resource: "delivery-slots", label: "Time slots", icon: "time-outline", href: "/manage/delivery-slots" },
       { resource: "delivery-tiers", label: "Delivery fees", icon: "cash-outline", href: "/manage/delivery-tiers" },
+      { resource: "delivery-fleet", label: "Riders & trips", icon: "people-outline", href: "/manage/delivery-fleet" },
       { resource: "express-delivery", label: "Express delivery", icon: "flash-outline", href: "/manage/express-delivery" },
     ],
   },
@@ -85,9 +93,9 @@ const MODULE_GROUPS: ModuleGroup[] = [
   },
 ];
 
-/** Module groups visible to a role; empty groups are dropped */
-export function modulesFor(role: string): ModuleGroup[] {
+/** Module groups visible to a user; empty groups are dropped */
+export function modulesFor(user: { role: string; permissions?: readonly string[] } | null): ModuleGroup[] {
   return MODULE_GROUPS
-    .map((g) => ({ ...g, modules: g.modules.filter((m) => can(role, m.resource)) }))
+    .map((g) => ({ ...g, modules: g.modules.filter((m) => can(user, m.resource)) }))
     .filter((g) => g.modules.length > 0);
 }

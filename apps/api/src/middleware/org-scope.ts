@@ -1,17 +1,11 @@
 import type { FastifyRequest, FastifyReply } from "fastify";
 import type { PrismaClient } from "../../generated/prisma/client.js";
-
-interface OrgUser {
-  sub: string;
-  email: string;
-  role: string;
-  organizationId?: string;
-}
+import type { JwtUser } from "../types/jwt.js";
 
 /** Extract typed user payload from JWT, or a GUEST stub when unauthenticated */
-export function getOrgUser(request: FastifyRequest): OrgUser {
+export function getOrgUser(request: FastifyRequest): JwtUser {
   if (!request.user) return { sub: "", email: "", role: "GUEST" };
-  return request.user as OrgUser;
+  return request.user;
 }
 
 /** Middleware: rejects if a non-SUPER_ADMIN user lacks organizationId in JWT */

@@ -2,26 +2,29 @@ import { useState } from "react";
 import { View, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
 import { ManageHeader } from "../../components/manage/ManageHeader";
-import { ConfirmDialog } from "../../components/manage/ui/ConfirmDialog";
 import { manage } from "../../components/manage/ui/tokens";
 import { BulkBar } from "../../components/manage/orders/BulkBar";
 import { OrderToolbar } from "../../components/manage/orders/OrderToolbar";
 import { OrdersList } from "../../components/manage/orders/OrdersList";
-import { commonForwardStatus, useOrdersTab } from "../../components/manage/orders/use-orders-tab";
+import { bulkStep } from "@martly/shared/order-flow";
+import { useOrdersTab } from "../../components/manage/orders/use-orders-tab";
+import { useAdvanceStep } from "../../components/manage/orders/use-advance-step";
+import type { OrderListItem } from "../../components/manage/orders/types";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { TabBottomDock } from "../../components/TabIcon";
+import { useAuth } from "../../lib/auth-context";
 
 export default function ManageOrdersScreen() {
   const router = useRouter();
   const tab = useOrdersTab();
   const tabBarScroll = useTabBarAutoHide();
+  // Height of the bulk bar docked above the tab bar, so the list scrolls clear of it
+  const [dockHeight, setDockHeight] = useState(0);
+  const { user } = useAuth();
   const { selection, actions } = tab;
-  const [confirmCancel, setConfirmCancel] = useState(false);
   const selectedIds = selection.items.map((o) => o.id);
-
-  const cancelSelected = async () => {
-    await actions.bulkSetStatus(selectedIds, "CANCELLED");
-    setConfirmCancel(false);
-  };
+  const bulk = bulkStep(user, selection.items);
+  const step = useAdvanceStep((o: OrderListItem, status: string) => actions.setStatus(o.id, status), tab.list.refresh, actions.running);
 
   return (
     <View style={styles.root}>
@@ -33,29 +36,23 @@ export default function ManageOrdersScreen() {
         searching={!!tab.query}
         onOpen={(o) => router.push(`/manage/orders/${o.id}`)}
         onSelect={selection.toggle}
-        onAdvance={(o, next) => actions.setStatus(o.id, next)}
+        onAdvance={step.advance}
         scrollProps={tabBarScroll.scrollProps}
+        contentContainerStyle={tabBarScroll.contentStyle(undefined, selection.active ? dockHeight : 0)}
       />
       {selection.active && (
+        <TabBottomDock onLayout={(e) => setDockHeight(e.nativeEvent.layout.height)}>
         <BulkBar
           selected={selection.items}
-          nextStatus={commonForwardStatus(selection.items)}
+          nextStatus={bulk.next}
+          hint={bulk.hint}
           running={actions.running}
           onAdvance={(next) => actions.bulkSetStatus(selectedIds, next)}
-          onCancel={() => setConfirmCancel(true)}
           onClear={selection.clear}
         />
+        </TabBottomDock>
       )}
-      <ConfirmDialog
-        visible={confirmCancel}
-        title={`Cancel ${selection.items.length} orders?`}
-        message="Reserved stock is released and customers are notified. This cannot be undone."
-        confirmLabel="Yes, cancel orders"
-        cancelLabel="Keep orders"
-        running={actions.running}
-        onConfirm={cancelSelected}
-        onClose={() => setConfirmCancel(false)}
-      />
+      {step.overlays}
     </View>
   );
 }

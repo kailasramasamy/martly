@@ -17,6 +17,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { uploadImage } from "../lib/upload";
 import { useToast } from "../lib/toast-context";
+import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../constants/theme";
 
 const MAX_IMAGES = 5;
@@ -28,6 +29,7 @@ export default function WriteReviewScreen() {
     storeId?: string;
     orderId?: string;
   }>();
+  const keyboard = useKeyboardReveal();
   const router = useRouter();
   const toast = useToast();
 
@@ -114,12 +116,13 @@ export default function WriteReviewScreen() {
       : "Submit Review";
 
   return (
-    <KeyboardAvoidingView
+    <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
+      <KeyboardAvoidingView
       style={styles.container}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
-      keyboardVerticalOffset={100}
+      keyboardVerticalOffset={keyboard.topOffset}
     >
-      <ScrollView contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
+      <ScrollView keyboardDismissMode="on-drag" ref={keyboard.scrollRef} onScroll={keyboard.onScroll} scrollEventThrottle={16} contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
         {productName && <Text style={styles.productName}>{productName}</Text>}
 
         <Text style={styles.label}>Your Rating</Text>
@@ -192,6 +195,7 @@ export default function WriteReviewScreen() {
         </TouchableOpacity>
       </ScrollView>
     </KeyboardAvoidingView>
+    </View>
   );
 }
 

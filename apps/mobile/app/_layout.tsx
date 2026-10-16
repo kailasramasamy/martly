@@ -98,10 +98,12 @@ function RootLayoutNav() {
     const inAuth = segments[0] === "(auth)";
     const inManage = segments[0] === "(manage)" || segments[0] === "manage";
     const misplacedRole = home === "/unsupported-role" && segments[0] !== "unsupported-role";
+    // A reload can land on the shop tabs while the member's persona is Manage
+    const misplacedPersona = home === "/(manage)" && segments[0] === "(tabs)";
 
     if (!isAuthenticated && !inAuth) {
       router.replace("/(auth)/login");
-    } else if (isAuthenticated && (inAuth || misplacedRole || (inManage && !canManage))) {
+    } else if (isAuthenticated && (inAuth || misplacedRole || misplacedPersona || (inManage && !canManage))) {
       router.replace(home);
     }
   }, [isAuthenticated, isLoading, segments, splashDone, personaReady, home, canManage]);

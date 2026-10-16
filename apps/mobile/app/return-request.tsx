@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback } from "react";
 import {
   View,
   Text,
@@ -18,6 +18,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { uploadImage } from "../lib/upload";
 import { useToast } from "../lib/toast-context";
+import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../constants/theme";
 
 const MAX_IMAGES = 5;
@@ -66,8 +67,7 @@ export default function ReturnRequestScreen() {
   const [images, setImages] = useState<string[]>([]);
   const [submitting, setSubmitting] = useState(false);
   const [uploadingImages, setUploadingImages] = useState(false);
-  const scrollRef = useRef<ScrollView>(null);
-  const descriptionY = useRef(0);
+  const keyboard = useKeyboardReveal();
 
   const fetchOrder = useCallback(async () => {
     if (!orderId) {
@@ -230,13 +230,16 @@ export default function ReturnRequestScreen() {
   }
 
   return (
-    <KeyboardAvoidingView
+    <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
+      <KeyboardAvoidingView
       style={styles.container}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
-      keyboardVerticalOffset={100}
+      keyboardVerticalOffset={keyboard.topOffset}
     >
       <ScrollView
-        ref={scrollRef}
+        ref={keyboard.scrollRef}
+        onScroll={keyboard.onScroll}
+        scrollEventThrottle={16}
         contentContainerStyle={styles.content}
         keyboardShouldPersistTaps="handled"
         keyboardDismissMode="interactive"
@@ -313,7 +316,7 @@ export default function ReturnRequestScreen() {
 
         {/* Description */}
         <Text style={styles.sectionTitle}>Description <Text style={styles.optionalLabel}>(optional)</Text></Text>
-        <View onLayout={(e) => { descriptionY.current = e.nativeEvent.layout.y; }}>
+        <View>
           <TextInput
             style={styles.textArea}
             value={description}
@@ -324,11 +327,6 @@ export default function ReturnRequestScreen() {
             numberOfLines={4}
             textAlignVertical="top"
             maxLength={1000}
-            onFocus={() => {
-              setTimeout(() => {
-                scrollRef.current?.scrollTo({ y: descriptionY.current, animated: true });
-              }, 300);
-            }}
           />
         </View>
 
@@ -390,6 +388,7 @@ export default function ReturnRequestScreen() {
         </TouchableOpacity>
       </ScrollView>
     </KeyboardAvoidingView>
+    </View>
   );
 }
 

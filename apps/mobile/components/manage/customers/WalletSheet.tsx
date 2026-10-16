@@ -45,6 +45,7 @@ export function WalletSheet({ visible, customerId, balance, onClose, onDone }: W
 
   return (
     <BottomSheet
+      scrollable
       visible={visible}
       title="Adjust wallet"
       onClose={onClose}

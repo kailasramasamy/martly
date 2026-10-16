@@ -2,15 +2,20 @@ import type { FastifyInstance } from "fastify";
 import { authenticate } from "../../middleware/auth.js";
 
 const GOOGLE_API_KEY = process.env.GOOGLE_MAPS_API_KEY ?? "";
+const NEARBY_RADIUS_M = 30_000;
+// A leading Open Location Code such as "67Q7+5P, "
+const PLUS_CODE = /^[23456789CFGHJMPQRVWX]{2,8}\+[23456789CFGHJMPQRVWX]{0,3},?\s*/;
 
 export async function placesRoutes(app: FastifyInstance) {
   // ── Autocomplete ─────────────────────────────────
   app.get("/autocomplete", { preHandler: [authenticate] }, async (request, reply) => {
-    const { input } = request.query as { input?: string };
+    const { input, lat, lng } = request.query as { input?: string; lat?: string; lng?: string };
     if (!input || input.length < 3) return { success: true, data: [] };
     if (!GOOGLE_API_KEY) return reply.badRequest("Google Maps API key not configured");
 
-    const url = `https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${encodeURIComponent(input)}&components=country:in&key=${GOOGLE_API_KEY}`;
+    // Prefer places around where the shopper is (or the store they shop at), so a local street beats a namesake across the country
+    const near = lat && lng && !Number.isNaN(Number(lat)) && !Number.isNaN(Number(lng)) ? `&location=${Number(lat)},${Number(lng)}&radius=${NEARBY_RADIUS_M}` : "";
+    const url = `https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${encodeURIComponent(input)}&components=country:in${near}&key=${GOOGLE_API_KEY}`;
     const res = await fetch(url);
     const data = (await res.json()) as {
       predictions: Array<{
@@ -65,6 +70,7 @@ export async function placesRoutes(app: FastifyInstance) {
       status: string;
       results: Array<{
         formatted_address: string;
+        types: string[];
         address_components: Array<{ types: string[]; long_name: string }>;
       }>;
     };
@@ -73,7 +79,8 @@ export async function placesRoutes(app: FastifyInstance) {
       return { success: true, data: null };
     }
 
-    const result = data.results[0];
+    // Google often puts a plus code ("67Q7+5P") first; shoppers and riders need a street or area name
+    const result = data.results.find((r) => !r.types.includes("plus_code") && !PLUS_CODE.test(r.formatted_address)) ?? data.results[0];
     const pinComp = result.address_components.find((c) => c.types.includes("postal_code"));
     const neighborhood = result.address_components.find((c) =>
       c.types.includes("sublocality_level_1") || c.types.includes("neighborhood"),
@@ -83,7 +90,7 @@ export async function placesRoutes(app: FastifyInstance) {
     return {
       success: true,
       data: {
-        address: result.formatted_address,
+        address: result.formatted_address.replace(PLUS_CODE, ""),
         latitude: Number(lat),
         longitude: Number(lng),
         pincode: pinComp?.long_name ?? null,

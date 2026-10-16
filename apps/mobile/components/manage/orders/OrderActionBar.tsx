@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { Button } from "../ui/Button";
+import { useAuth } from "../../../lib/auth-context";
 import { actionColor, actionLabel, canCancel, forwardStatus } from "./order-flow";
 import type { OrderDetail } from "./types";
 
@@ -11,10 +12,11 @@ interface OrderActionBarProps {
 }
 
 export function OrderActionBar({ order, running, onAdvance, onCancel }: OrderActionBarProps) {
-  const next = forwardStatus(order);
+  const { user } = useAuth();
+  const next = forwardStatus(order, user);
   return (
     <>
-      {canCancel(order) && <Button label="Cancel" variant="danger" icon="close-circle-outline" onPress={onCancel} disabled={running} style={styles.cancel} />}
+      {canCancel(order, user) && <Button label="Cancel" variant="danger" icon="close-circle-outline" onPress={onCancel} disabled={running} style={styles.cancel} />}
       {next && (
         <Button
           label={actionLabel(next, order.fulfillmentType)}

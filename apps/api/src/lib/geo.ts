@@ -128,6 +128,8 @@ export interface DirectionsLeg {
 export interface DirectionsResult {
   polyline: Array<{ lat: number; lng: number }>;
   legs: DirectionsLeg[];
+  /** With `optimize`, the visiting order Google chose, as indexes into the waypoints passed in */
+  waypointOrder?: number[];
   totalDurationSeconds: number;
   totalDistanceMeters: number;
 }
@@ -137,6 +139,7 @@ export async function getDirectionsRoute(
   origin: { lat: number; lng: number },
   destination: { lat: number; lng: number },
   waypoints?: Array<{ lat: number; lng: number }>,
+  optimize = false,
 ): Promise<DirectionsResult | null> {
   const key = getGoogleMapsKey();
   if (!key) return null;
@@ -153,9 +156,11 @@ export async function getDirectionsRoute(
     body.intermediates = waypoints.map((w) => ({
       location: { latLng: { latitude: w.lat, longitude: w.lng } },
     }));
+    if (optimize) body.optimizeWaypointOrder = true;
   }
 
-  const fieldMask = "routes.polyline.encodedPolyline,routes.legs.duration,routes.legs.distanceMeters";
+  const fieldMask = "routes.polyline.encodedPolyline,routes.legs.duration,routes.legs.distanceMeters"
+    + (optimize ? ",routes.optimizedIntermediateWaypointIndex" : "");
 
   const res = await fetch("https://routes.googleapis.com/directions/v2:computeRoutes", {
     method: "POST",
@@ -169,6 +174,7 @@ export async function getDirectionsRoute(
 
   const data = (await res.json()) as {
     routes?: Array<{
+      optimizedIntermediateWaypointIndex?: number[];
       polyline: { encodedPolyline: string };
       legs: Array<{
         duration: string; // e.g. "300s"
@@ -190,7 +196,19 @@ export async function getDirectionsRoute(
   return {
     polyline,
     legs,
+    waypointOrder: route.optimizedIntermediateWaypointIndex,
     totalDurationSeconds: legs.reduce((sum, l) => sum + l.durationSeconds, 0),
     totalDistanceMeters: legs.reduce((sum, l) => sum + l.distanceMeters, 0),
   };
+}
+
+/** Coordinates (and pincode) for a typed delivery address; null when Google can't place it or can't be reached */
+export async function locateAddress(address: string, pincode: string | null) {
+  try {
+    return await geocodeAddress([address, pincode, "India"].filter(Boolean).join(", "));
+  } catch (err) {
+    // fetch rejects with a TypeError when the network is down; an order must still go through
+    if (err instanceof TypeError) return null;
+    throw err;
+  }
 }

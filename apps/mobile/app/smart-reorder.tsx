@@ -357,7 +357,7 @@ export default function SmartReorderScreen() {
 
   return (
     <View style={styles.container}>
-      <FlatList
+      <FlatList keyboardDismissMode="on-drag"
         data={data.items}
         keyExtractor={(item) => item.id}
         renderItem={renderItem}

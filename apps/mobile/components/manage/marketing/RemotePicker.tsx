@@ -61,7 +61,7 @@ function PickerSheet({ path, title, onClose, onPick }: SheetProps) {
   const [q, setQ] = useState("");
   const list = usePagedList<Named>(path, { q });
   return (
-    <BottomSheet visible title={title} onClose={onClose}>
+    <BottomSheet flush visible title={title} onClose={onClose}>
       <View style={styles.search}><SearchField value={q} onChange={setQ} /></View>
       <FlatList
         keyboardDismissMode="on-drag"

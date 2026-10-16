@@ -8,6 +8,46 @@ export const UserRole = {
 } as const;
 export type UserRole = (typeof UserRole)[keyof typeof UserRole];
 
+export const UserRoleLabels: Record<UserRole, string> = {
+  SUPER_ADMIN: "Super Admin",
+  ORG_ADMIN: "Owner",
+  STORE_MANAGER: "Store Manager",
+  STAFF: "Staff",
+  RIDER: "Rider",
+  CUSTOMER: "Customer",
+};
+
+// Staff capabilities (mirrors Prisma Permission). Roles grant a preset; owners grant add-ons per member.
+export const Permission = {
+  ORDERS_VIEW: "ORDERS_VIEW",
+  ORDERS_PROCESS: "ORDERS_PROCESS",
+  ORDERS_DISPATCH: "ORDERS_DISPATCH",
+  ORDERS_CANCEL: "ORDERS_CANCEL",
+  DELIVERY_DELIVER: "DELIVERY_DELIVER",
+  RIDERS_MANAGE: "RIDERS_MANAGE",
+  CATALOG_PRODUCTS: "CATALOG_PRODUCTS",
+  CATALOG_BRANDS: "CATALOG_BRANDS",
+  CATALOG_COLLECTIONS: "CATALOG_COLLECTIONS",
+  LISTING_AVAILABILITY: "LISTING_AVAILABILITY",
+  LISTING_MANAGE: "LISTING_MANAGE",
+  LISTING_PRICES: "LISTING_PRICES",
+  STOCK_VIEW: "STOCK_VIEW",
+  STOCK_RECEIVE: "STOCK_RECEIVE",
+  STOCK_COUNT: "STOCK_COUNT",
+  STOCK_ADJUST: "STOCK_ADJUST",
+  STOCK_APPROVE: "STOCK_APPROVE",
+  RETURNS_HANDLE: "RETURNS_HANDLE",
+  SUPPORT_HANDLE: "SUPPORT_HANDLE",
+  REFUNDS_ISSUE: "REFUNDS_ISSUE",
+  MARKETING_MANAGE: "MARKETING_MANAGE",
+  DELIVERY_CONFIG: "DELIVERY_CONFIG",
+  STORE_SETTINGS: "STORE_SETTINGS",
+  TEAM_MANAGE: "TEAM_MANAGE",
+  REPORTS_VIEW: "REPORTS_VIEW",
+  FINANCE_MANAGE: "FINANCE_MANAGE",
+} as const;
+export type Permission = (typeof Permission)[keyof typeof Permission];
+
 export const StoreStatus = {
   PENDING: "PENDING",
   ACTIVE: "ACTIVE",
@@ -181,6 +221,7 @@ export const LoyaltyTransactionTypeLabels: Record<LoyaltyTransactionType, string
 };
 
 export const TripStatus = {
+  PLANNED: "PLANNED",
   CREATED: "CREATED",
   IN_PROGRESS: "IN_PROGRESS",
   COMPLETED: "COMPLETED",
@@ -188,7 +229,34 @@ export const TripStatus = {
 } as const;
 export type TripStatus = (typeof TripStatus)[keyof typeof TripStatus];
 
+/** How a cash-on-delivery order was paid at the door (mirrors Prisma CodCollectionMode) */
+export const CodCollectionMode = { CASH: "CASH", UPI: "UPI" } as const;
+export type CodCollectionMode = (typeof CodCollectionMode)[keyof typeof CodCollectionMode];
+
+/** Why a rider couldn't hand an order over (mirrors Prisma DeliveryFailureReason) */
+export const DeliveryFailureReason = {
+  CUSTOMER_UNAVAILABLE: "CUSTOMER_UNAVAILABLE",
+  WRONG_ADDRESS: "WRONG_ADDRESS",
+  CUSTOMER_REFUSED: "CUSTOMER_REFUSED",
+  PAYMENT_ISSUE: "PAYMENT_ISSUE",
+  OTHER: "OTHER",
+} as const;
+export type DeliveryFailureReason = (typeof DeliveryFailureReason)[keyof typeof DeliveryFailureReason];
+
+export const DELIVERY_FAILURE_LABELS: Record<DeliveryFailureReason, string> = {
+  CUSTOMER_UNAVAILABLE: "Customer not available",
+  WRONG_ADDRESS: "Wrong or incomplete address",
+  CUSTOMER_REFUSED: "Customer refused the order",
+  PAYMENT_ISSUE: "Couldn't collect payment",
+  OTHER: "Other",
+};
+
+/** Which batch a trip belongs to: a delivery slot, or express orders sent as they're packed */
+export const TripWave = { SLOT: "SLOT", EXPRESS: "EXPRESS" } as const;
+export type TripWave = (typeof TripWave)[keyof typeof TripWave];
+
 export const TripStatusLabels: Record<TripStatus, string> = {
+  PLANNED: "Planned",
   CREATED: "Created",
   IN_PROGRESS: "In Progress",
   COMPLETED: "Completed",
@@ -554,3 +622,35 @@ export const SearchSortLabels: Record<SearchSortBy, string> = {
   price_desc: "Price (high to low)",
   discount: "Discount (high to low)",
 };
+
+// Why a store product's stock changed (mirrors Prisma StockMovementType)
+export const StockMovementType = {
+  RECEIVE: "RECEIVE",
+  COUNT: "COUNT",
+  DAMAGE: "DAMAGE",
+  EXPIRY: "EXPIRY",
+  MANUAL: "MANUAL",
+  SALE: "SALE",
+  UNDO_SALE: "UNDO_SALE",
+} as const;
+export type StockMovementType = (typeof StockMovementType)[keyof typeof StockMovementType];
+
+export const StockMovementTypeLabels: Record<StockMovementType, string> = {
+  RECEIVE: "Received",
+  COUNT: "Stock count",
+  DAMAGE: "Damaged",
+  EXPIRY: "Expired",
+  MANUAL: "Correction",
+  SALE: "Sold",
+  UNDO_SALE: "Delivery undone",
+};
+
+// Blind stock count lifecycle (mirrors Prisma StockCountStatus)
+export const StockCountStatus = {
+  DRAFT: "DRAFT",
+  SUBMITTED: "SUBMITTED",
+  RECOUNT: "RECOUNT",
+  APPROVED: "APPROVED",
+  REJECTED: "REJECTED",
+} as const;
+export type StockCountStatus = (typeof StockCountStatus)[keyof typeof StockCountStatus];

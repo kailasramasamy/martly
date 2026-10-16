@@ -54,7 +54,7 @@ export default function MembershipScreen() {
 
   return (
     <View style={styles.container}>
-      <ScrollView
+      <ScrollView keyboardDismissMode="on-drag"
         contentContainerStyle={styles.scroll}
         refreshControl={<RefreshControl refreshing={plus.refreshing} onRefresh={plus.refresh} tintColor={colors.primary} />}
       >

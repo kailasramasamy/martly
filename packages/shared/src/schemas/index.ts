@@ -1,5 +1,6 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, SUPPORTED_LANGUAGES, CatalogDraftStatus } from "../constants/index.js";
+import { BULK_STATUSES } from "../order-flow/index.js";
+import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, SUPPORTED_LANGUAGES, CatalogDraftStatus, Permission, StockCountStatus } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -61,6 +62,12 @@ export const createUserSchema = registerSchema.extend({
   role: z.nativeEnum(UserRole).default(UserRole.CUSTOMER),
 });
 export type CreateUserInput = z.infer<typeof createUserSchema>;
+
+/** Owner-granted add-ons for a member in the caller's organization (replaces the full set) */
+export const updateMemberPermissionsSchema = z.object({
+  permissions: z.array(z.nativeEnum(Permission)).max(50),
+});
+export type UpdateMemberPermissionsInput = z.infer<typeof updateMemberPermissionsSchema>;
 
 // ── Organization ─────────────────────────────────────
 export const organizationSchema = z.object({
@@ -196,7 +203,8 @@ export type ReorderItemsInput = z.infer<typeof reorderItemsSchema>;
 // ── Brand ────────────────────────────────────────────
 export const createBrandSchema = z.object({
   name: z.string().min(1),
-  slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
+  /** Generated from the name when omitted */
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
   imageUrl: z.string().url().optional(),
   themeColor: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),
   themeColorSecondary: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),
@@ -532,6 +540,12 @@ export type UpdateProductInput = z.infer<typeof updateProductSchema>;
 
 export const updateOrderStatusSchema = z.object({
   status: z.nativeEnum(OrderStatus),
+  note: z.string().trim().max(500).optional(),
+  /** Delivering a COD order: how the customer paid (cash by default) */
+  collectedVia: z.nativeEnum(CodCollectionMode).optional(),
+}).refine((d) => d.status !== OrderStatus.CANCELLED || !!d.note, {
+  message: "A reason is required to cancel an order",
+  path: ["note"],
 });
 export type UpdateOrderStatusInput = z.infer<typeof updateOrderStatusSchema>;
 
@@ -543,8 +557,13 @@ export type UpdatePaymentStatusInput = z.infer<typeof updatePaymentStatusSchema>
 
 export const bulkUpdateOrderStatusSchema = z.object({
   orderIds: z.array(z.string().uuid()).min(1).max(50),
-  status: z.enum(["CONFIRMED", "PREPARING", "READY", "OUT_FOR_DELIVERY", "DELIVERED", "CANCELLED"]),
+  status: z.enum(BULK_STATUSES),
 });
+export const undoDeliverySchema = z.object({
+  reason: z.string().trim().min(1, "A reason is required").max(500),
+});
+export type UndoDeliveryInput = z.infer<typeof undoDeliverySchema>;
+
 export type BulkUpdateOrderStatusInput = z.infer<typeof bulkUpdateOrderStatusSchema>;
 
 // ── Collection ──────────────────────────────────────
@@ -814,8 +833,54 @@ export const createDeliveryTripSchema = z.object({
   storeId: z.string().uuid(),
   riderId: z.string().uuid(),
   orderIds: z.array(z.string().uuid()).min(1).max(30),
+  /** Start the trip straight away: its orders go out for delivery with this rider */
+  start: z.boolean().optional(),
 });
 export type CreateDeliveryTripInput = z.infer<typeof createDeliveryTripSchema>;
+
+// ── Delivery planning ─────────────────────────────
+const dateKey = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Use YYYY-MM-DD");
+
+/** How a store runs its fleet */
+export const deliverySettingsSchema = z.object({
+  storeId: z.string().uuid(),
+  maxOrdersPerTrip: z.number().int().min(1).max(30),
+  maxTripsPerRider: z.number().int().min(1).max(10),
+  expressBatchSize: z.number().int().min(1).max(10),
+  expressMaxWaitMinutes: z.number().int().min(0).max(120),
+  autoPlan: z.boolean(),
+});
+export type DeliverySettingsInput = z.infer<typeof deliverySettingsSchema>;
+
+/** The riders who work a slot every week */
+export const slotRosterSchema = z.object({ riderIds: z.array(z.string().uuid()).max(50) });
+
+/** The same weekly riders on several slots at once, e.g. every evening slot of the week */
+export const bulkSlotRosterSchema = z.object({
+  storeId: z.string().uuid(),
+  slotIds: z.array(z.string().uuid()).min(1).max(50),
+  riderIds: z.array(z.string().uuid()).max(50),
+});
+
+/** One day's change to a slot's roster */
+export const slotRosterOverrideSchema = z.object({ riderId: z.string().uuid(), date: dateKey, working: z.boolean() });
+
+/** Plan (or re-plan) a wave: a slot on a day, or express when slotId is left out */
+export const planWaveSchema = z.object({ storeId: z.string().uuid(), date: dateKey.optional(), slotId: z.string().uuid().optional() });
+
+export const assignTripsSchema = z.object({
+  assignments: z.array(z.object({ tripId: z.string().uuid(), riderId: z.string().uuid() })).min(1).max(50),
+});
+
+/** A rider couldn't deliver: the order goes back to the store as Ready, with the reason on record */
+export const failDeliverySchema = z.object({
+  reason: z.nativeEnum(DeliveryFailureReason),
+  note: z.string().trim().max(300).optional(),
+}).refine((b) => b.reason !== "OTHER" || !!b.note, { message: "Say what happened", path: ["note"] });
+export type FailDeliveryInput = z.infer<typeof failDeliverySchema>;
+
+/** Move a stop to another unstarted trip, or back to the unplanned pool (toTripId null) */
+export const moveTripOrderSchema = z.object({ orderId: z.string().uuid(), toTripId: z.string().uuid().nullable() });
 
 // ── Rider ─────────────────────────────────────────
 export const createRiderSchema = z.object({
@@ -1276,4 +1341,61 @@ export const collectionProductsQuerySchema = z.object({
   storeId: z.string().uuid(),
   page: z.coerce.number().int().min(1).default(1),
   pageSize: z.coerce.number().int().min(1).max(50).default(20),
+});
+
+// ── Stock ledger & counts ───────────────────────────
+export const receiveStockSchema = z.object({
+  storeId: z.string().uuid(),
+  lines: z.array(z.object({ storeProductId: z.string().uuid(), quantity: z.number().int().positive() })).min(1).max(200),
+  note: z.string().trim().max(500).optional(),
+});
+export type ReceiveStockInput = z.infer<typeof receiveStockSchema>;
+
+export const adjustStockSchema = z.object({
+  storeProductId: z.string().uuid(),
+  /** Signed change: negative for write-offs */
+  quantity: z.number().int().refine((n) => n !== 0, "Quantity can't be zero"),
+  type: z.enum(["DAMAGE", "EXPIRY", "MANUAL"]),
+  note: z.string().trim().min(1, "Add a note explaining the change").max(500),
+});
+export type AdjustStockInput = z.infer<typeof adjustStockSchema>;
+
+export const createStockCountSchema = z.object({
+  storeId: z.string().uuid(),
+  subcategoryId: z.string().uuid(),
+  note: z.string().trim().max(500).optional(),
+});
+export type CreateStockCountInput = z.infer<typeof createStockCountSchema>;
+
+export const saveStockCountLinesSchema = z.object({
+  lines: z.array(z.object({ storeProductId: z.string().uuid(), countedQty: z.number().int().min(0) })).min(1).max(500),
+});
+export type SaveStockCountLinesInput = z.infer<typeof saveStockCountLinesSchema>;
+
+export const reviewStockCountSchema = z.object({
+  note: z.string().trim().max(500).optional(),
+});
+export type ReviewStockCountInput = z.infer<typeof reviewStockCountSchema>;
+
+/** Approver sends selected lines back to be counted again (blind) */
+export const requestRecountSchema = z.object({
+  storeProductIds: z.array(z.string().uuid()).min(1).max(500),
+  note: z.string().trim().max(500).optional(),
+  /** Apply every line not sent for recount to stock now */
+  approveRest: z.boolean().default(true),
+});
+export type RequestRecountInput = z.infer<typeof requestRecountSchema>;
+
+/** Approver overrides a counted quantity; the reason is kept in the line's history */
+export const correctCountLineSchema = z.object({
+  countedQty: z.number().int().min(0),
+  reason: z.string().trim().min(3, "Say why the count is being corrected").max(300),
+});
+export type CorrectCountLineInput = z.infer<typeof correctCountLineSchema>;
+
+export const stockCountListQuerySchema = z.object({
+  storeId: z.string().uuid().optional(),
+  status: z.nativeEnum(StockCountStatus).optional(),
+  page: z.coerce.number().int().min(1).default(1),
+  pageSize: z.coerce.number().int().min(1).max(100).default(20),
 });

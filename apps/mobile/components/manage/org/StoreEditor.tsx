@@ -41,22 +41,22 @@ function StoreSummary({ store }: { store: StoreDetail }) {
 
 interface StoreExtrasProps {
   storeId: string;
-  role: string;
   loading: boolean;
   onDelete: () => void;
 }
 
-function StoreExtras({ storeId, role, loading, onDelete }: StoreExtrasProps) {
+function StoreExtras({ storeId, loading, onDelete }: StoreExtrasProps) {
   const router = useRouter();
+  const { user } = useAuth();
   return (
     <>
-      {can(role, "stores", "edit") && (
+      {can(user, "stores", "edit") && (
         <SectionCard title="Catalog">
           <Button label="Set up catalog" variant="secondary" icon="cube-outline" onPress={() => router.push(`/manage/onboard/${storeId}`)} />
         </SectionCard>
       )}
-      {(role === "SUPER_ADMIN" || role === "ORG_ADMIN") && <StoreStaffSection storeId={storeId} />}
-      {can(role, "stores", "delete") && (
+      {can(user, "users", "edit") && <StoreStaffSection storeId={storeId} />}
+      {can(user, "stores", "delete") && (
         <SectionCard title="Danger zone">
           <DeleteAction
             title="Delete this store?"
@@ -112,7 +112,7 @@ export function StoreEditor({ store, onReload }: StoreEditorProps) {
     >
       {store && <StoreSummary store={store} />}
       <StoreFormFields draft={draft} set={set} creating={creating} orgOptions={orgOptions} />
-      {store && <StoreExtras storeId={store.id} role={role} loading={running} onDelete={remove} />}
+      {store && <StoreExtras storeId={store.id} loading={running} onDelete={remove} />}
     </ManageStackScreen>
   );
 }

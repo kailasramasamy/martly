@@ -24,7 +24,7 @@ export function DateField({ label, required, hint, error, value, onChange, place
         <Text style={[fs.text, !value && fs.placeholder]}>{value ? formatDate(fromDateKey(value)) : placeholder}</Text>
         <Ionicons name="calendar-outline" size={18} color={manage.muted} />
       </TouchableOpacity>
-      <BottomSheet visible={open} title={label ?? "Pick a date"} onClose={() => setOpen(false)}>
+      <BottomSheet flush visible={open} title={label ?? "Pick a date"} onClose={() => setOpen(false)}>
         <CalendarGrid value={value} minDate={minDate} onSelect={(d) => { onChange(d); setOpen(false); }} />
       </BottomSheet>
     </FieldFrame>

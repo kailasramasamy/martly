@@ -7,6 +7,7 @@ import { api, setAccessToken } from "../../lib/api";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import type { AuthTokens, LoginResponse } from "@martly/shared/types";
 import { completeLogin } from "../../lib/org-selection";
+import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
 
 type Step = "phone" | "otp" | "name";
 
@@ -22,6 +23,7 @@ export default function LoginScreen() {
   const [loading, setLoading] = useState(false);
 
   const otpRef = useRef<TextInput>(null);
+  const keyboard = useKeyboardReveal();
   const pendingTokensRef = useRef<AuthTokens | null>(null);
 
   useEffect(() => {
@@ -101,11 +103,16 @@ export default function LoginScreen() {
   }
 
   return (
-    <KeyboardAvoidingView
+    <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
+      <KeyboardAvoidingView
       style={styles.container}
       behavior={Platform.OS === "ios" ? "padding" : "height"}
+      keyboardVerticalOffset={keyboard.topOffset}
     >
-      <ScrollView
+      <ScrollView keyboardDismissMode="on-drag"
+        ref={keyboard.scrollRef}
+        onScroll={keyboard.onScroll}
+        scrollEventThrottle={16}
         contentContainerStyle={styles.inner}
         keyboardShouldPersistTaps="handled"
         bounces={false}
@@ -240,6 +247,7 @@ export default function LoginScreen() {
 
       </ScrollView>
     </KeyboardAvoidingView>
+    </View>
   );
 }
 

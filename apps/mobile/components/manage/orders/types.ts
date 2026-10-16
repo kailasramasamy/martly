@@ -1,5 +1,6 @@
 export interface OrderListItem {
   id: string;
+  storeId: string;
   status: string;
   paymentStatus: string;
   paymentMethod: string;
@@ -21,6 +22,7 @@ export interface OrderDetailItem {
 
 export interface OrderDetail {
   id: string;
+  storeId: string;
   status: string;
   paymentStatus: string;
   paymentMethod: string;

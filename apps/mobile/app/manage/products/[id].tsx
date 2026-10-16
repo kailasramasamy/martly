@@ -2,7 +2,6 @@ import { View, StyleSheet } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useAuth } from "../../../lib/auth-context";
 import { useResource } from "../../../lib/manage/use-resource";
-import { useRefreshOnFocus } from "../../../lib/manage/use-refresh-on-focus";
 import { ManageStackScreen } from "../../../components/manage/ManageStackScreen";
 import { HeaderAction } from "../../../components/manage/HeaderAction";
 import { ProductDetailView } from "../../../components/manage/products/ProductDetailView";
@@ -15,7 +14,6 @@ export default function ProductScreen() {
   const router = useRouter();
   const { user } = useAuth();
   const { data, loading, error, reload } = useResource<ProductDetail>(`/api/v1/products/${id}`);
-  useRefreshOnFocus(reload);
   const editable = !!data && canEditProduct(user, data);
 
   const headerRight = () => (

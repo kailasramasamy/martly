@@ -19,8 +19,7 @@ export default function DeliverySlotsScreen() {
   const { user } = useAuth();
   const { run } = useAction();
   const { storeId, picker, hasStores } = useStoreScope({ defaultFirst: true });
-  const role = user?.role ?? "";
-  const allowed = can(role, "delivery-slots", "list");
+  const allowed = can(user, "delivery-slots", "list");
   const list = usePagedList<DeliverySlot>("/api/v1/delivery-slots", { storeId }, { pageSize: 100, enabled: !!storeId && allowed });
 
   const toggle = async (slot: DeliverySlot, isActive: boolean) => {
@@ -36,14 +35,14 @@ export default function DeliverySlotsScreen() {
       title="Delivery slots"
       list={list}
       filters={picker}
-      headerRight={can(role, "delivery-slots", "create") && storeId ? () => <HeaderAction accessibilityLabel="Add time slot" onPress={addSlot} /> : undefined}
+      headerRight={can(user, "delivery-slots", "create") && storeId ? () => <HeaderAction accessibilityLabel="Add time slot" onPress={addSlot} /> : undefined}
       empty={{ icon: "time-outline", title: "No time slots", message: "Add delivery windows customers can book." }}
       renderItem={(slot) => (
         <ListRow
           title={`${DAY_NAMES[slot.dayOfWeek]}  ${slot.startTime} – ${slot.endTime}`}
           subtitle={`Up to ${slot.maxOrders} orders · cutoff ${slot.cutoffMinutes} min before`}
           railColor={slot.isActive ? colors.primary : manage.muted}
-          trailing={<Switch value={slot.isActive} disabled={!can(role, "delivery-slots", "edit")} onValueChange={(v) => toggle(slot, v)} trackColor={{ true: colors.primary, false: manage.line }} />}
+          trailing={<Switch value={slot.isActive} disabled={!can(user, "delivery-slots", "edit")} onValueChange={(v) => toggle(slot, v)} trackColor={{ true: colors.primary, false: manage.line }} />}
           onPress={() => router.push(`/manage/delivery-slots/${slot.id}?storeId=${slot.storeId}`)}
         />
       )}

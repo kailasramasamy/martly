@@ -11,7 +11,7 @@ interface Identity {
 
 const ALL_ROLES = [
   { label: "Super Admin", value: "SUPER_ADMIN" },
-  { label: "Org Admin", value: "ORG_ADMIN" },
+  { label: "Owner", value: "ORG_ADMIN" },
   { label: "Store Manager", value: "STORE_MANAGER" },
   { label: "Staff", value: "STAFF" },
   { label: "Rider", value: "RIDER" },

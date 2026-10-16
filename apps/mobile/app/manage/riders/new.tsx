@@ -14,7 +14,7 @@ export default function NewRiderScreen() {
   const { storeId, picker } = useStoreScope({ routeParam: true, required: true, placeholder: "Choose a store" });
   const { run, running } = useAction();
 
-  if (!can(user?.role ?? "", "riders", "create")) {
+  if (!can(user, "riders", "create")) {
     return <EmptyState icon="lock-closed-outline" title="No access" message="Only store managers and admins can add riders." />;
   }
 

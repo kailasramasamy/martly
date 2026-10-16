@@ -148,14 +148,16 @@ export const brandNamesCte = Prisma.sql`brand_names AS MATERIALIZED (
 )`;
 
 /**
- * The name a query is matched against. A query naming the brand ("surf exc") sees name + brand, so every product of
- * the brand matches; any other query sees the name minus its leading brand ("Bombay Shaving Company Beard Oil" →
- * "Beard Oil"), so a word in a brand's name doesn't make all its products match.
+ * The name a query is matched against. A query naming the brand sees name + brand, so every product of the brand
+ * matches — from any word, so a sub-brand finds its house-branded range ("fab" → Godrej Fab, "surf exc" → Surf Excel);
+ * any other query sees the name minus its leading brand ("Godrej Fab Front Load" → "Front Load"), so the brand's
+ * products only match on their own words.
  * Needs products `p` LEFT JOIN brand_names `b` (brandNamesCte).
  */
 export const nameForQuery = (q: string) => Prisma.sql`CASE
   WHEN b.name IS NULL THEN p.name
-  WHEN starts_with(b.clean, ${q}) OR starts_with(${q}, b.clean) THEN p.name || ' ' || b.name
+  WHEN b.clean ~ ('\\m' || regexp_replace(${q}, '([^[:alnum:] ])', '\\\\\\1', 'g')) OR starts_with(${q}, b.clean)
+    THEN p.name || ' ' || b.name
   WHEN starts_with(lower(p.name), b.clean) THEN substr(p.name, length(b.clean) + 1)
   ELSE p.name
 END`;

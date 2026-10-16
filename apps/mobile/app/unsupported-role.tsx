@@ -7,17 +7,16 @@ import { colors, fonts, radius } from "../constants/theme";
 export default function UnsupportedRoleScreen() {
   const insets = useSafeAreaInsets();
   const { user, logout } = useAuth();
-  const roleLabel = user?.role === "RIDER" ? "Rider" : "Staff";
 
   return (
     <View style={[styles.root, { paddingTop: insets.top + 48, paddingBottom: insets.bottom + 24 }]}>
       <View style={styles.icon}>
         <Ionicons name="desktop-outline" size={30} color={colors.primary} />
       </View>
-      <Text style={styles.title}>{roleLabel} accounts use the web dashboard</Text>
+      <Text style={styles.title}>No responsibilities assigned yet</Text>
       <Text style={styles.message}>
-        You're signed in as {user?.email}. The Martly app currently supports store owners and managers.
-        Please continue on the Martly admin dashboard, or ask your store owner for manager access.
+        You're signed in as {user?.email}, but you don't have any responsibilities in the app yet.
+        Ask your store owner to assign some, such as orders, catalog or stock count.
       </Text>
       <TouchableOpacity style={styles.button} onPress={logout} activeOpacity={0.85}>
         <Text style={styles.buttonText}>Sign out</Text>

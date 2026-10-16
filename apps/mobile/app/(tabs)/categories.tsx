@@ -68,12 +68,12 @@ export default function CategoriesScreen() {
 
       <DepartmentStrip departments={departments} activeId={activeId} onSelect={jumpTo} />
 
-      <FlatList {...tabBarScroll.scrollProps}
+      <FlatList keyboardDismissMode="on-drag" {...tabBarScroll.scrollProps}
         ref={listRef}
         data={departments}
         keyExtractor={(d) => d.id}
         renderItem={({ item }) => <DepartmentSection department={item} />}
-        contentContainerStyle={styles.list}
+        contentContainerStyle={tabBarScroll.contentStyle(styles.list)}
         showsVerticalScrollIndicator={false}
         refreshControl={
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primary} colors={[colors.primary]} />

@@ -21,13 +21,16 @@ interface OrdersListProps {
   onSelect: (order: OrderListItem) => void;
   onAdvance: (order: OrderListItem, status: string) => void;
   /** Tab-screen scroll handling (tab bar auto-hide, header collapse), owned by the screen */
-  scrollProps: Pick<FlatListProps<OrderListItem>, "onScroll" | "scrollEventThrottle">;
+  scrollProps: Pick<FlatListProps<OrderListItem>, "onScroll" | "scrollEventThrottle" | "onContentSizeChange" | "onLayout">;
+  /** Bottom padding so the last rows clear the tab bar and any docked footer */
+  contentContainerStyle?: FlatListProps<OrderListItem>["contentContainerStyle"];
 }
 
-export function OrdersList({ list, selected, searching, onOpen, onSelect, onAdvance, scrollProps }: OrdersListProps) {
+export function OrdersList({ list, selected, searching, onOpen, onSelect, onAdvance, scrollProps, contentContainerStyle }: OrdersListProps) {
   if (list.loading) return <ListSkeleton />;
   return (
     <FlatList {...scrollProps}
+      contentContainerStyle={contentContainerStyle}
         keyboardDismissMode="on-drag"
         keyboardShouldPersistTaps="handled"
       data={list.items}

@@ -2,7 +2,8 @@ import type { FastifyInstance, FastifyRequest } from "fastify";
 import { createCouponSchema, updateCouponSchema, applyCouponSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 
 function canAccessCoupon(request: FastifyRequest, coupon: { organizationId: string | null }) {
@@ -13,7 +14,7 @@ function canAccessCoupon(request: FastifyRequest, coupon: { organizationId: stri
 export async function couponRoutes(app: FastifyInstance) {
   // GET / - List coupons (org-scoped)
   app.get("/", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)],
   }, async (request) => {
     const { page = 1, pageSize = 20, status, q } = request.query as {
       page?: number; pageSize?: number; status?: "active" | "expired" | "inactive"; q?: string;
@@ -52,7 +53,7 @@ export async function couponRoutes(app: FastifyInstance) {
 
   // GET /:id - Coupon detail
   app.get<{ Params: { id: string } }>("/:id", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)],
   }, async (request, reply) => {
     const coupon = await app.prisma.coupon.findUnique({
       where: { id: request.params.id },
@@ -67,7 +68,7 @@ export async function couponRoutes(app: FastifyInstance) {
 
   // POST / - Create coupon
   app.post("/", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)],
   }, async (request, reply) => {
     const body = createCouponSchema.parse(request.body);
     const user = getOrgUser(request);
@@ -102,7 +103,7 @@ export async function couponRoutes(app: FastifyInstance) {
 
   // PUT /:id - Update coupon
   app.put<{ Params: { id: string } }>("/:id", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)],
   }, async (request, reply) => {
     const body = updateCouponSchema.parse(request.body);
 
@@ -127,7 +128,7 @@ export async function couponRoutes(app: FastifyInstance) {
 
   // DELETE /:id - Delete coupon
   app.delete<{ Params: { id: string } }>("/:id", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)],
   }, async (request, reply) => {
     const existing = await app.prisma.coupon.findUnique({ where: { id: request.params.id } });
     if (!existing) return reply.notFound("Coupon not found");

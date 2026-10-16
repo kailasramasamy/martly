@@ -13,10 +13,12 @@ interface ManageScreenProps {
   headerRight?: ReactNode;
   refreshing?: boolean;
   onRefresh?: () => void;
+  /** Height of a footer docked above the tab bar, so the content scrolls clear of it */
+  dockHeight?: number;
 }
 
 /** Tab-level screen: ink header band over a scrolling canvas */
-export function ManageScreen({ title, children, headerSubtitle, headerContent, headerRight, refreshing = false, onRefresh }: ManageScreenProps) {
+export function ManageScreen({ title, children, headerSubtitle, headerContent, headerRight, refreshing = false, onRefresh, dockHeight = 0 }: ManageScreenProps) {
   const tabBarScroll = useTabBarAutoHide();
   return (
     <View style={styles.root}>
@@ -24,7 +26,7 @@ export function ManageScreen({ title, children, headerSubtitle, headerContent, h
       <ScrollView {...tabBarScroll.scrollProps}
         keyboardDismissMode="on-drag"
         keyboardShouldPersistTaps="handled"
-        contentContainerStyle={styles.content}
+        contentContainerStyle={tabBarScroll.contentStyle(styles.content, dockHeight)}
         showsVerticalScrollIndicator={false}
         refreshControl={onRefresh ? <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primary} /> : undefined}
       >

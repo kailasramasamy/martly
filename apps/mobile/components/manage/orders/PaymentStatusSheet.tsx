@@ -28,12 +28,14 @@ export function PaymentStatusSheet({ visible, current, saving, onClose, onSave }
 
   return (
     <BottomSheet
+      scrollable
       visible={visible}
       title="Update payment status"
       onClose={onClose}
       footer={<Button label="Update payment" disabled={!picked} loading={saving} onPress={() => picked && onSave(picked, note.trim())} />}
     >
       <View style={styles.body}>
+        <Text style={styles.current}>Currently <Text style={styles.currentValue}>{PAYMENT_STATUS[current]?.label ?? current}</Text>. Change it to:</Text>
         <View style={styles.options}>
           {OPTIONS.filter((o) => o !== current).map((o) => {
             const active = picked === o;
@@ -52,6 +54,8 @@ export function PaymentStatusSheet({ visible, current, saving, onClose, onSave }
 
 const styles = StyleSheet.create({
   body: { gap: 14, paddingVertical: 8 },
+  current: { fontFamily: fonts.medium, fontSize: 14, color: colors.textSecondary },
+  currentValue: { fontFamily: fonts.bold, color: colors.text },
   options: { flexDirection: "row", gap: 10 },
   option: { flex: 1, height: 44, borderRadius: 12, borderWidth: 1, borderColor: manage.line, alignItems: "center", justifyContent: "center", backgroundColor: manage.card },
   optionActive: { backgroundColor: colors.text, borderColor: colors.text },

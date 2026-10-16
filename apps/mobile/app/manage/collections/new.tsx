@@ -5,7 +5,7 @@ import { CollectionForm } from "../../../components/manage/collections/Collectio
 
 export default function NewCollectionScreen() {
   const { user } = useAuth();
-  if (!can(user?.role ?? "", "collections", "create")) {
+  if (!can(user, "collections", "create")) {
     return <EmptyState icon="lock-closed-outline" title="No access" message="Only admins can create collections." />;
   }
   return <CollectionForm />;

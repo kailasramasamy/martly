@@ -4,6 +4,7 @@ import { StatusPill } from "../ui/StatusPill";
 import { ORDER_STATUS, PAYMENT_STATUS, formatINR } from "../ui/tokens";
 import { timeAgo } from "../ui/dates";
 import { SwipeToAdvance } from "./SwipeToAdvance";
+import { useAuth } from "../../../lib/auth-context";
 import { actionColor, actionLabel, forwardStatus } from "./order-flow";
 import type { OrderListItem } from "./types";
 
@@ -17,7 +18,8 @@ interface OrderRowProps {
 }
 
 function OrderRowBase({ order, selected, onOpen, onSelect, onAdvance }: OrderRowProps) {
-  const next = forwardStatus(order);
+  const { user } = useAuth();
+  const next = forwardStatus(order, user);
   const selecting = selected !== undefined;
   const payment = order.paymentMethod === "COD" && order.paymentStatus === "PENDING"
     ? { label: "COD", color: "#b45309", bg: "#fef3c7" }

@@ -38,7 +38,7 @@ function SidebarItem({ label, active, onPress, children }: { label: string; acti
 export function CategorySidebar({ subcategories, activeId, onSelect }: Props) {
   const { getLocalizedName } = useLanguage();
   return (
-    <ScrollView style={styles.sidebar} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+    <ScrollView keyboardDismissMode="on-drag" style={styles.sidebar} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
       <SidebarItem label="All" active={!activeId} onPress={() => onSelect(null)}>
         <Ionicons name="grid-outline" size={26} color={!activeId ? colors.primary : "#94a3b8"} />
       </SidebarItem>

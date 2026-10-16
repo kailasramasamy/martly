@@ -1,12 +1,10 @@
-import { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { colors, fonts, radius } from "../../../constants/theme";
+import { colors, fonts } from "../../../constants/theme";
 import { SectionCard } from "../ui/SectionCard";
 import { KeyValue } from "../ui/KeyValue";
 import { StatusPill } from "../ui/StatusPill";
 import { formatINR, manage, tabular } from "../ui/tokens";
-import { PhotoSwiper } from "../inventory/PhotoSwiper";
-import { PhotoViewer } from "../inventory/PhotoViewer";
+import { PhotoGallery } from "../inventory/PhotoGallery";
 import { photosOf } from "../inventory/ProductTile";
 import { CatalogPill } from "./CatalogPill";
 import { ReadMoreText } from "./ReadMoreText";
@@ -23,24 +21,11 @@ const FOOD_DOT: Record<string, string> = { VEG: "#16a34a", VEGAN: "#16a34a", NON
 const ACTIVE = { label: "Active", color: "#15803d", bg: "#dcfce7" };
 const INACTIVE = { label: "Inactive", color: "#475569", bg: "#f1f5f9" };
 
-/** Large swipeable photos; tapping one opens it full screen */
-function Gallery({ product }: { product: ProductDetail }) {
-  const [width, setWidth] = useState(0);
-  const [open, setOpen] = useState<number | null>(null);
-  const photos = photosOf(product);
-  return (
-    <View style={styles.gallery} onLayout={(e) => setWidth(e.nativeEvent.layout.width)}>
-      {width > 0 && <PhotoSwiper photos={photos} size={width} onPress={setOpen} accessibilityLabel={`${product.name} photo, opens full screen`} />}
-      <PhotoViewer photos={photos} index={open} onClose={() => setOpen(null)} />
-    </View>
-  );
-}
-
 function Header({ product }: { product: ProductDetail }) {
   const food = product.foodType ? { label: label(FoodTypeLabels, product.foodType) ?? "", color: FOOD_DOT[product.foodType] ?? colors.textSecondary, bg: manage.canvas } : null;
   return (
     <View style={styles.header}>
-      <Gallery product={product} />
+      <PhotoGallery photos={photosOf(product)} name={product.name} />
       <View style={styles.headerText}>
         {product.brand ? <Text style={styles.brand} numberOfLines={1}>{product.brand.name}</Text> : null}
         <Text style={styles.name}>{product.name}</Text>
@@ -122,7 +107,6 @@ export function ProductDetailView({ product }: { product: ProductDetail }) {
 
 const styles = StyleSheet.create({
   header: { gap: 12 },
-  gallery: { borderRadius: radius.lg, overflow: "hidden", backgroundColor: "#fff" },
   headerText: { flex: 1, gap: 3 },
   brand: { fontFamily: fonts.bold, fontSize: 11, color: colors.textSecondary, letterSpacing: 0.8, textTransform: "uppercase" },
   name: { fontFamily: fonts.extrabold, fontSize: 18, lineHeight: 23, color: colors.text },

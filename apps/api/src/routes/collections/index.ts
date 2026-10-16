@@ -5,12 +5,13 @@ import {
 } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { canSeeOrgRecord, assertProductsUsable } from "../../services/catalog-access.js";
 import { isCurationConfigured, regenerateBanner, regenerateHero } from "../../services/seasonal/index.js";
 import { saveHero, withHeroTranslation } from "../../services/seasonal/hero.js";
-import { ADMINS, ownCollection } from "./access.js";
+import { ownCollection } from "./access.js";
 import { collectionImageRoutes } from "./images.js";
 import { collectionStorefrontRoutes } from "./storefront.js";
 
@@ -85,13 +86,13 @@ export async function collectionRoutes(app: FastifyInstance) {
   // Create collection
   app.post(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] },
     async (request) => {
       const { productIds, ...body } = createCollectionSchema.parse(request.body);
       const user = getOrgUser(request);
 
       // ORG_ADMIN: force their org
-      if (user.role === "ORG_ADMIN") {
+      if (user.role !== "SUPER_ADMIN") {
         body.organizationId = user.organizationId;
       }
       await assertProductsUsable(app.prisma, productIds ?? [], body.organizationId ?? null);
@@ -127,7 +128,7 @@ export async function collectionRoutes(app: FastifyInstance) {
   // Update collection
   app.put<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] },
     async (request, reply) => {
       const { productIds, ...body } = updateCollectionSchema.parse(request.body);
       const existing = await app.prisma.collection.findUnique({ where: { id: request.params.id } });
@@ -135,7 +136,7 @@ export async function collectionRoutes(app: FastifyInstance) {
 
       // ORG_ADMIN can only edit own org's collections
       const user = getOrgUser(request);
-      if (user.role === "ORG_ADMIN" && existing.organizationId !== user.organizationId) {
+      if (user.role !== "SUPER_ADMIN" && existing.organizationId !== user.organizationId) {
         return reply.forbidden("Access denied");
       }
 
@@ -180,13 +181,13 @@ export async function collectionRoutes(app: FastifyInstance) {
   // Redraw the AI banner from the collection's current title and subtitle
   app.post<{ Params: { id: string } }>(
     "/:id/regenerate-banner",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] },
     async (request, reply) => {
       if (!isCurationConfigured()) return reply.serviceUnavailable("Banner generation needs ANTHROPIC_API_KEY and OPENAI_API_KEY");
       const existing = await app.prisma.collection.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Collection not found");
       const user = getOrgUser(request);
-      if (user.role === "ORG_ADMIN" && existing.organizationId !== user.organizationId) {
+      if (user.role !== "SUPER_ADMIN" && existing.organizationId !== user.organizationId) {
         return reply.forbidden("Access denied");
       }
       if (!existing.artDirection) return reply.badRequest("Only AI-curated collections can regenerate their banner");
@@ -198,7 +199,7 @@ export async function collectionRoutes(app: FastifyInstance) {
   );
 
   // Design and paint the festive home hero (background and tiles) from scratch
-  app.post<{ Params: { id: string } }>("/:id/regenerate-hero", { preHandler: ADMINS }, async (request, reply) => {
+  app.post<{ Params: { id: string } }>("/:id/regenerate-hero", { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] }, async (request, reply) => {
     if (!isCurationConfigured()) return reply.serviceUnavailable("Hero generation needs ANTHROPIC_API_KEY and OPENAI_API_KEY");
     const collection = await ownCollection(app, request, reply);
     if (!collection) return;
@@ -208,7 +209,7 @@ export async function collectionRoutes(app: FastifyInstance) {
     return { success: true, data: hero } satisfies ApiResponse<typeof hero>;
   });
 
-  app.put<{ Params: { id: string } }>("/:id/hero", { preHandler: ADMINS }, async (request, reply) => {
+  app.put<{ Params: { id: string } }>("/:id/hero", { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] }, async (request, reply) => {
     const { heroTitle, heroTitleTa } = updateCollectionHeroSchema.parse(request.body);
     const collection = await ownCollection(app, request, reply);
     if (!collection) return;
@@ -222,14 +223,14 @@ export async function collectionRoutes(app: FastifyInstance) {
   });
 
   // Removes the hero so the home screen falls back to its banner carousel
-  app.delete<{ Params: { id: string } }>("/:id/hero", { preHandler: ADMINS }, async (request, reply) => {
+  app.delete<{ Params: { id: string } }>("/:id/hero", { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] }, async (request, reply) => {
     const collection = await ownCollection(app, request, reply);
     if (!collection) return;
     await saveHero(app.prisma, collection, null);
     return { success: true, data: null } satisfies ApiResponse<null>;
   });
 
-  app.put<{ Params: { id: string; tileId: string } }>("/:id/tiles/:tileId", { preHandler: ADMINS }, async (request, reply) => {
+  app.put<{ Params: { id: string; tileId: string } }>("/:id/tiles/:tileId", { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] }, async (request, reply) => {
     const { title, titleTa, subcategoryIds } = updateCollectionTileSchema.parse(request.body);
     const collection = await ownCollection(app, request, reply);
     if (!collection) return;
@@ -246,13 +247,13 @@ export async function collectionRoutes(app: FastifyInstance) {
   // Delete collection
   app.delete<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] },
     async (request, reply) => {
       const existing = await app.prisma.collection.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Collection not found");
 
       const user = getOrgUser(request);
-      if (user.role === "ORG_ADMIN" && existing.organizationId !== user.organizationId) {
+      if (user.role !== "SUPER_ADMIN" && existing.organizationId !== user.organizationId) {
         return reply.forbidden("Access denied");
       }
 

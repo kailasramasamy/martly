@@ -1,3 +1,4 @@
+import { can } from "@martly/shared/permissions";
 import { useState, useEffect, useCallback } from "react";
 import { Show } from "@refinedev/antd";
 import { useShow, useOne, useGetIdentity } from "@refinedev/core";
@@ -11,6 +12,7 @@ import { axiosInstance } from "../../providers/data-provider";
 
 interface Identity {
   role: string;
+  permissions?: string[];
 }
 
 interface StaffAssignment {
@@ -44,7 +46,7 @@ export const StoreShow = () => {
   const { message } = App.useApp();
   const { data: identity } = useGetIdentity<Identity>();
 
-  const canManageStaff = identity?.role === "SUPER_ADMIN" || identity?.role === "ORG_ADMIN";
+  const canManageStaff = can(identity, "users", "edit");
 
   const { data: orgData } = useOne({
     resource: "organizations",

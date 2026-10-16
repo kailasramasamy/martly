@@ -14,6 +14,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { AddressAutocomplete } from "./AddressAutocomplete";
+import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 
 interface ProfileGateProps {
   visible: boolean;
@@ -29,6 +30,7 @@ const LABEL_ICONS: Record<string, string> = {
 };
 
 export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps) {
+  const keyboard = useKeyboardReveal();
   const [label, setLabel] = useState<string>("Home");
   const [placeName, setPlaceName] = useState<string | null>(null);
   const [address, setAddress] = useState("");
@@ -98,7 +100,10 @@ export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps
             <Ionicons name="close" size={22} color={colors.textSecondary} />
           </TouchableOpacity>
 
-          <ScrollView
+          <ScrollView keyboardDismissMode="on-drag"
+            ref={keyboard.scrollRef}
+            onScroll={keyboard.onScroll}
+            scrollEventThrottle={16}
             showsVerticalScrollIndicator={false}
             keyboardShouldPersistTaps="handled"
           >
@@ -191,6 +196,7 @@ const styles = StyleSheet.create({
     paddingBottom: Platform.OS === "ios" ? 40 : 24,
     paddingTop: 12,
     maxHeight: "85%",
+    flexShrink: 1,
   },
   handle: {
     width: 36,

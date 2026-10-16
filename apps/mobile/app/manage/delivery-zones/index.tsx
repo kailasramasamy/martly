@@ -24,8 +24,7 @@ export default function DeliveryZonesScreen() {
   const { user } = useAuth();
   const { storeId } = useManageScope();
   const { run } = useAction();
-  const role = user?.role ?? "";
-  const allowed = can(role, "delivery-zones", "list");
+  const allowed = can(user, "delivery-zones", "list");
   const list = usePagedList<DeliveryZone>("/api/v1/delivery-zones", {}, { pageSize: 50, enabled: allowed });
   const zones = { ...list, items: storeId ? list.items.filter((z) => z.stores.some((s) => s.store.id === storeId)) : list.items };
 
@@ -39,7 +38,7 @@ export default function DeliveryZonesScreen() {
     <ManageListScreen
       title="Delivery zones"
       list={zones}
-      headerRight={can(role, "delivery-zones", "create") ? () => <HeaderAction accessibilityLabel="Add zone" onPress={() => router.push("/manage/delivery-zones/new")} /> : undefined}
+      headerRight={can(user, "delivery-zones", "create") ? () => <HeaderAction accessibilityLabel="Add zone" onPress={() => router.push("/manage/delivery-zones/new")} /> : undefined}
       empty={{ icon: "map-outline", title: "No delivery zones", message: storeId ? "No zone covers the selected store." : "Add pincode-based zones with their own fee." }}
       renderItem={(zone) => (
         <ListRow
@@ -47,7 +46,7 @@ export default function DeliveryZonesScreen() {
           subtitle={describe(zone)}
           caption={zone.stores.map((s) => s.store.name).join(", ") || "No stores linked"}
           railColor={zone.isActive ? colors.primary : manage.muted}
-          trailing={<Switch value={zone.isActive} disabled={!can(role, "delivery-zones", "edit")} onValueChange={(v) => toggle(zone, v)} trackColor={{ true: colors.primary, false: manage.line }} />}
+          trailing={<Switch value={zone.isActive} disabled={!can(user, "delivery-zones", "edit")} onValueChange={(v) => toggle(zone, v)} trackColor={{ true: colors.primary, false: manage.line }} />}
           onPress={() => router.push(`/manage/delivery-zones/${zone.id}`)}
         />
       )}

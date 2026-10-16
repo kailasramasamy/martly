@@ -35,6 +35,19 @@ const HARUR: Spec[] = [
   { status: "DELIVERED", fulfillment: "PICKUP", method: "ONLINE", paid: true, minutesAgo: 60 * 24 * 3, lines: 2 },
   { status: "DELIVERED", fulfillment: "DELIVERY", method: "COD", paid: true, minutesAgo: 60 * 24 * 5, lines: 6 },
   { status: "CANCELLED", fulfillment: "DELIVERY", method: "ONLINE", paid: false, minutesAgo: 60 * 24 * 2, lines: 2 },
+  // A longer live queue: several per stage, delivery and pickup mixed, for bulk actions and scrolling
+  { status: "PENDING", fulfillment: "DELIVERY", method: "ONLINE", paid: true, minutesAgo: 5, lines: 2 },
+  { status: "PENDING", fulfillment: "DELIVERY", method: "COD", paid: false, minutesAgo: 22, lines: 3 },
+  { status: "PENDING", fulfillment: "PICKUP", method: "COD", paid: false, minutesAgo: 33, lines: 1 },
+  { status: "CONFIRMED", fulfillment: "DELIVERY", method: "COD", paid: false, minutesAgo: 50, lines: 4 },
+  { status: "CONFIRMED", fulfillment: "PICKUP", method: "ONLINE", paid: true, minutesAgo: 65, lines: 2 },
+  { status: "PREPARING", fulfillment: "DELIVERY", method: "ONLINE", paid: true, minutesAgo: 95, lines: 3 },
+  { status: "PREPARING", fulfillment: "DELIVERY", method: "COD", paid: false, minutesAgo: 110, lines: 2 },
+  { status: "READY", fulfillment: "DELIVERY", method: "COD", paid: false, minutesAgo: 140, lines: 3 },
+  { status: "READY", fulfillment: "DELIVERY", method: "ONLINE", paid: true, minutesAgo: 155, lines: 4 },
+  { status: "READY", fulfillment: "PICKUP", method: "COD", paid: false, minutesAgo: 170, lines: 2 },
+  { status: "OUT_FOR_DELIVERY", fulfillment: "DELIVERY", method: "ONLINE", paid: true, minutesAgo: 200, lines: 2 },
+  { status: "DELIVERED", fulfillment: "DELIVERY", method: "COD", paid: true, minutesAgo: 45, lines: 3 },
 ];
 
 const OTHER: Spec[] = [
@@ -55,6 +68,8 @@ async function removePreviousSeed() {
   }
   const ids = old.map((o) => o.id);
   const byOrder = { orderId: { in: ids } };
+  const tripIds = (await prisma.order.findMany({ where: { id: { in: ids }, deliveryTripId: { not: null } }, select: { deliveryTripId: true } }))
+    .map((o) => o.deliveryTripId as string);
   // Other seeds (service) and manual testing attach records to these orders: required links go, optional ones are unlinked
   await prisma.$transaction([
     prisma.returnRequestItem.deleteMany({ where: { returnRequest: byOrder } }),
@@ -68,6 +83,7 @@ async function removePreviousSeed() {
     prisma.orderStatusLog.deleteMany({ where: byOrder }),
     prisma.orderItem.deleteMany({ where: byOrder }),
     prisma.order.deleteMany({ where: { id: { in: ids } } }),
+    prisma.deliveryTrip.deleteMany({ where: { id: { in: tripIds }, orders: { none: {} } } }),
   ]);
   console.log(`Removed ${ids.length} previously seeded orders`);
 }
@@ -121,6 +137,21 @@ async function seedStore(storeId: string, specs: Spec[], customers: { id: string
   for (const [i, spec] of specs.entries()) await createOrder(spec, i, storeId, customers, stock);
 }
 
+/** Orders out for delivery always ride on a started trip with a rider; seeded ones go out together with the first rider */
+async function putOnTheRoad(storeId: string, organizationId: string) {
+  const out = await prisma.order.findMany({ where: { storeId, status: "OUT_FOR_DELIVERY", fulfillmentType: "DELIVERY", deliveryNotes: { startsWith: TAG } }, select: { id: true } });
+  const rider = await prisma.user.findFirst({ where: { role: "RIDER", userStores: { some: { storeId } } }, orderBy: { name: "asc" } });
+  if (out.length === 0 || !rider) return;
+  await prisma.deliveryTrip.create({
+    data: {
+      storeId, organizationId, riderId: rider.id, status: "IN_PROGRESS", wave: "EXPRESS", startedAt: new Date(),
+      orders: { connect: out.map((o) => ({ id: o.id })) },
+    },
+  });
+  for (const [i, o] of out.entries()) await prisma.order.update({ where: { id: o.id }, data: { deliverySequence: i + 1 } });
+  console.log(`${out.length} orders out for delivery with ${rider.name}`);
+}
+
 async function main() {
   const harur = await prisma.store.findFirst({ where: { name: "Harur Fresh Mart" } });
   if (!harur) throw new Error("Harur Fresh Mart not found");
@@ -130,6 +161,7 @@ async function main() {
 
   await removePreviousSeed();
   await seedStore(harur.id, HARUR, customers);
+  await putOnTheRoad(harur.id, harur.organizationId);
   if (other) await seedStore(other.id, OTHER, customers);
   console.log(`Seeded ${HARUR.length} orders at ${harur.name}${other ? ` and ${OTHER.length} at ${other.name}` : ""}`);
 }

@@ -2,14 +2,16 @@ import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import { approveCatalogDraftSchema, catalogDraftListQuerySchema, createCatalogDraftSchema } from "@martly/shared/schemas";
 import type { ApiResponse, CatalogDraftDetail, CatalogDraftSummary, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { isMediaUrl } from "../../services/media.js";
 import type { ProcessedShot } from "../../services/catalog-agent/images.js";
 import { DraftStateError, publishNew, type Proposal } from "../../services/catalog-agent/publish.js";
+import { assertBrandUsable } from "../../services/brands.js";
 import { draftInclude, toDetail, toSummary } from "../../services/catalog-agent/view.js";
 
-const MANAGERS = [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")];
+const MANAGERS = [authenticate, requirePermission(Permission.CATALOG_PRODUCTS)];
 
 type IdRequest = FastifyRequest<{ Params: { id: string } }>;
 
@@ -73,7 +75,7 @@ export async function catalogDraftRoutes(app: FastifyInstance) {
     if ((edits.sellingPrice ?? Number(draft.sellingPrice)) > mrp) return reply.badRequest("Selling price can't be above MRP");
     if (!(edits.subcategoryId ?? proposal.classification.subcategoryId)) return reply.badRequest("Choose an aisle for this product");
     if (edits.subcategoryId && !(await app.prisma.subcategory.findUnique({ where: { id: edits.subcategoryId } }))) return reply.badRequest("Unknown aisle");
-    if (edits.brandId && !(await app.prisma.brand.findUnique({ where: { id: edits.brandId } }))) return reply.badRequest("Unknown brand");
+    await assertBrandUsable(app.prisma, edits.brandId, draft.organizationId);
     try {
       await publishNew(app.prisma, draft, proposal, draft.processedImages as unknown as ProcessedShot[], edits);
     } catch (err) {

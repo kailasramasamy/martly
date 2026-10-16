@@ -1,9 +1,11 @@
-import type { FastifyInstance } from "fastify";
+import type { FastifyInstance, FastifyRequest } from "fastify";
 import { Prisma } from "../../../generated/prisma/index.js";
 import { createProductSchema, updateProductSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { assertBrandUsable } from "../../services/brands.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser, getOrgStoreIds } from "../../middleware/org-scope.js";
 import { formatVariantUnit, formatVariantUnits } from "../../services/units.js";
 import { searchProductsForAdmin } from "../../services/search.js";
@@ -111,12 +113,16 @@ export async function productRoutes(app: FastifyInstance) {
     return { candidates, facets };
   }
 
-  /** Facets for an unsearched list (e.g. a brand page), counted in SQL; a picked subcategory is ignored */
+  /** Facets for an unsearched list (e.g. a brand or subcategory page), counted in SQL; each ignores its own pick */
   async function listFacets(where: Record<string, unknown>) {
-    const facetWhere = typeof where.subcategoryId === "string" ? { ...where, subcategoryId: undefined } : where;
-    const groups = await app.prisma.product.groupBy({ by: ["subcategoryId"], where: facetWhere, _count: { _all: true } });
-    const counts = new Map(groups.filter((g) => g.subcategoryId).map((g) => [g.subcategoryId as string, g._count._all]));
-    return subcategoryFacets(app.prisma, counts);
+    const without = (key: string) => (typeof where[key] === "string" ? { ...where, [key]: undefined } : where);
+    const countBy = async (by: "subcategoryId" | "brandId") => {
+      const groups = await app.prisma.product.groupBy({ by: [by], where: without(by), _count: { _all: true } });
+      return new Map(groups.filter((g) => g[by]).map((g) => [g[by] as string, g._count._all]));
+    };
+    const [subCounts, brandCounts] = await Promise.all([countBy("subcategoryId"), countBy("brandId")]);
+    const [subcategories, brands] = await Promise.all([subcategoryFacets(app.prisma, subCounts), brandFacets(app.prisma, brandCounts)]);
+    return { subcategories, brands };
   }
 
   // List products (guests see master catalog only)
@@ -228,7 +234,7 @@ export async function productRoutes(app: FastifyInstance) {
         total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)),
         ...(search
           ? { facets: search.facets }
-          : withFacets === "true" ? { facets: { subcategories: await listFacets(where) } } : {}),
+          : withFacets === "true" ? { facets: await listFacets(where) } : {}),
       },
     };
     return response;
@@ -259,18 +265,47 @@ export async function productRoutes(app: FastifyInstance) {
     return response;
   });
 
-  // Create product with variants (SUPER_ADMIN → master catalog, ORG_ADMIN → org catalog)
+  /** List a new org product in the stores the creator works in (optionally narrowed to the requested ones) */
+  async function listInStores(
+    request: FastifyRequest,
+    product: { id: string; variants: { id: string; mrp: Prisma.Decimal | null }[] },
+    organizationId: string,
+    requestedStoreIds?: string[],
+  ) {
+    const accessible = await getOrgStoreIds(request, app.prisma);
+    const stores = await app.prisma.store.findMany({
+      where: {
+        organizationId,
+        status: "ACTIVE",
+        id: { in: (requestedStoreIds?.length ? requestedStoreIds : accessible ?? []).filter((id) => !accessible || accessible.includes(id)) },
+      },
+      select: { id: true },
+    });
+    const data = stores.flatMap((store) =>
+      product.variants.map((v) => ({
+        storeId: store.id,
+        productId: product.id,
+        variantId: v.id,
+        price: v.mrp != null ? Number(v.mrp) : 0,
+        stock: 0,
+      })),
+    );
+    if (data.length > 0) await app.prisma.storeProduct.createMany({ data });
+  }
+
+  // Create product with variants (SUPER_ADMIN → master catalog, org members → their org's catalog)
   app.post(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_PRODUCTS)] },
     async (request) => {
       const body = createProductSchema.parse(request.body);
       const { variants: variantsInput, nutritionalInfo, organizationId: _bodyOrgId, storeIds: requestedStoreIds, translations, ...productData } = body;
       const user = getOrgUser(request);
 
       // SUPER_ADMIN: always master catalog (organizationId = null)
-      // ORG_ADMIN: force organizationId from JWT
+      // Org members: force organizationId from JWT
       const organizationId = user.role === "SUPER_ADMIN" ? null : (user.organizationId ?? null);
+      await assertBrandUsable(app.prisma, productData.brandId, organizationId);
 
       const variantsToCreate = variantsInput && variantsInput.length > 0
         ? variantsInput
@@ -289,38 +324,7 @@ export async function productRoutes(app: FastifyInstance) {
         include: { subcategory: true, brand: true, variants: true },
       });
 
-      // ORG_ADMIN: auto-assign to stores (all active org stores or specific ones)
-      if (user.role === "ORG_ADMIN" && organizationId) {
-        let targetStoreIds: string[];
-        if (requestedStoreIds && requestedStoreIds.length > 0) {
-          // Verify requested stores belong to the org
-          const orgStores = await app.prisma.store.findMany({
-            where: { id: { in: requestedStoreIds }, organizationId, status: "ACTIVE" },
-            select: { id: true },
-          });
-          targetStoreIds = orgStores.map((s) => s.id);
-        } else {
-          // Default: all active stores in the org
-          const orgStores = await app.prisma.store.findMany({
-            where: { organizationId, status: "ACTIVE" },
-            select: { id: true },
-          });
-          targetStoreIds = orgStores.map((s) => s.id);
-        }
-
-        if (targetStoreIds.length > 0) {
-          const storeProductData = targetStoreIds.flatMap((storeId) =>
-            product.variants.map((v) => ({
-              storeId,
-              productId: product.id,
-              variantId: v.id,
-              price: v.mrp != null ? Number(v.mrp) : 0,
-              stock: 0,
-            })),
-          );
-          await app.prisma.storeProduct.createMany({ data: storeProductData });
-        }
-      }
+      if (organizationId) await listInStores(request, product, organizationId, requestedStoreIds);
 
       const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
       return response;
@@ -330,7 +334,7 @@ export async function productRoutes(app: FastifyInstance) {
   // Update product (ownership-based auth)
   app.put<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_PRODUCTS)] },
     async (request, reply) => {
       const { nutritionalInfo, variants, translations, ...rest } = updateProductSchema.parse(request.body);
       const existing = await app.prisma.product.findUnique({ where: { id: request.params.id } });
@@ -345,7 +349,7 @@ export async function productRoutes(app: FastifyInstance) {
           return reply.forbidden("Only Super Admin can edit master catalog products");
         }
       } else {
-        // Org product: only ORG_ADMIN of that org can edit
+        // Org product: only members of that org can edit
         if (user.role === "SUPER_ADMIN") {
           return reply.forbidden("Super Admin cannot edit org-specific products");
         }
@@ -353,6 +357,7 @@ export async function productRoutes(app: FastifyInstance) {
           return reply.forbidden("Access denied");
         }
       }
+      await assertBrandUsable(app.prisma, rest.brandId, existing.organizationId);
 
       const data: Prisma.ProductUncheckedUpdateInput = {
         ...rest,
@@ -403,7 +408,7 @@ export async function productRoutes(app: FastifyInstance) {
   // Delete product (ownership-based auth)
   app.delete<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_PRODUCTS)] },
     async (request, reply) => {
       const existing = await app.prisma.product.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Product not found");
@@ -417,7 +422,7 @@ export async function productRoutes(app: FastifyInstance) {
           return reply.forbidden("Only Super Admin can delete master catalog products");
         }
       } else {
-        // Org product: only ORG_ADMIN of that org can delete
+        // Org product: only members of that org can delete
         if (user.role === "SUPER_ADMIN") {
           return reply.forbidden("Super Admin cannot delete org-specific products");
         }

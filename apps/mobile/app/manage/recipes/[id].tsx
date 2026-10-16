@@ -13,7 +13,7 @@ export default function RecipeScreen() {
   const { data, loading, error, reload } = useResource<RecipeDetail>(`/api/v1/recipes/${id}`);
   const owned = user?.role === "SUPER_ADMIN" || (!!data && data.organizationId === user?.organizationId);
 
-  if (data && owned && can(user?.role ?? "", "recipes", "edit")) return <RecipeForm recipe={data} />;
+  if (data && owned && can(user, "recipes", "edit")) return <RecipeForm recipe={data} />;
   return (
     <ManageStackScreen title={data?.title ?? "Recipe"} loading={loading} error={error} onRetry={reload}>
       {data && <RecipeView recipe={data} />}

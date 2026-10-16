@@ -3,6 +3,8 @@ import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import type { Label } from "./extract.js";
 import type { ProcessedShot } from "./images.js";
 import type { Classification } from "./match.js";
+import { uniqueBrandSlug } from "../brands.js";
+import { recordOpeningStock } from "../stock-ledger.js";
 
 /** Everything the agent decided, kept on the draft so a reviewer can see and correct it */
 export interface Proposal {
@@ -19,6 +21,7 @@ export interface DraftForPublish {
   mrp: Prisma.Decimal | number;
   sellingPrice: Prisma.Decimal | number;
   stock: number;
+  createdById: string;
 }
 
 type Tx = Prisma.TransactionClient;
@@ -58,26 +61,21 @@ function productData(draft: DraftForPublish, p: Proposal, shots: ProcessedShot[]
   };
 }
 
-function slugify(name: string) {
-  return name.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+/** A brand named while approving a draft becomes the organisation's own local brand */
+async function createBrand(tx: Tx, name: string, organizationId: string) {
+  return tx.brand.create({ data: { name, slug: await uniqueBrandSlug(tx, name), organizationId } });
 }
 
-async function createBrand(tx: Tx, name: string) {
-  const base = slugify(name) || "brand";
-  const taken = await tx.brand.count({ where: { slug: { startsWith: base } } });
-  return tx.brand.create({ data: { name, slug: taken ? `${base}-${taken + 1}` : base } });
-}
-
-async function resolveBrandId(tx: Tx, p: Proposal, edits: ApproveCatalogDraftInput) {
+async function resolveBrandId(tx: Tx, p: Proposal, edits: ApproveCatalogDraftInput, organizationId: string) {
   if (edits.brandId) return edits.brandId;
-  if (edits.newBrandName) return (await createBrand(tx, edits.newBrandName)).id;
+  if (edits.newBrandName) return (await createBrand(tx, edits.newBrandName, organizationId)).id;
   return p.classification.brand?.id ?? null;
 }
 
 /** Creates the org's product, its one variant and this store's listing in one transaction, and closes the draft */
 export async function publishNew(prisma: PrismaClient, draft: DraftForPublish, p: Proposal, shots: ProcessedShot[], edits: ApproveCatalogDraftInput = {}) {
   return prisma.$transaction(async (tx) => {
-    const brandId = await resolveBrandId(tx, p, edits);
+    const brandId = await resolveBrandId(tx, p, edits, draft.organizationId);
     const mrp = edits.mrp ?? Number(draft.mrp);
     const product = await tx.product.create({
       data: {
@@ -96,12 +94,13 @@ export async function publishNew(prisma: PrismaClient, draft: DraftForPublish, p
       },
       select: { id: true, variants: { select: { id: true } } },
     });
-    await tx.storeProduct.create({
+    const listing = await tx.storeProduct.create({
       data: {
         storeId: draft.storeId, productId: product.id, variantId: product.variants[0].id,
         price: edits.sellingPrice ?? Number(draft.sellingPrice), stock: edits.stock ?? draft.stock,
       },
     });
+    await recordOpeningStock(tx, [listing], draft.createdById);
     const closed = await tx.catalogDraft.updateMany({
       where: { id: draft.id, status: { in: ["PROCESSING", "NEEDS_REVIEW"] } },
       data: { status: "PUBLISHED", productId: product.id, error: null },
@@ -117,9 +116,10 @@ export async function listExisting(prisma: PrismaClient, draft: DraftForPublish,
   return prisma.$transaction(async (tx) => {
     const listed = await tx.storeProduct.findUnique({ where: { storeId_variantId: { storeId: draft.storeId, variantId: match.id } } });
     if (!listed) {
-      await tx.storeProduct.create({
+      const listing = await tx.storeProduct.create({
         data: { storeId: draft.storeId, productId: match.productId, variantId: match.id, price: Number(draft.sellingPrice), stock: draft.stock },
       });
+      await recordOpeningStock(tx, [listing], draft.createdById);
     }
     const status = listed ? "DUPLICATE" : "PUBLISHED";
     await tx.catalogDraft.update({ where: { id: draft.id }, data: { status, productId: match.productId, matchedExisting: true, error: null } });

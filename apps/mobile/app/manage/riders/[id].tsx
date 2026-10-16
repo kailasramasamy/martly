@@ -16,13 +16,12 @@ export default function EditRiderScreen() {
   const { id, storeId } = useLocalSearchParams<{ id: string; storeId: string }>();
   const router = useRouter();
   const { user } = useAuth();
-  const role = user?.role ?? "";
   const { data, loading, error, reload, setData } = useResource<Rider[]>(`/api/v1/riders?storeId=${storeId}`);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const { run, running } = useAction();
   const rider = data?.find((r) => r.id === id);
 
-  if (!can(role, "riders", "edit")) {
+  if (!can(user, "riders", "edit")) {
     return <EmptyState icon="lock-closed-outline" title="No access" message="Only store managers and admins can edit riders." />;
   }
 
@@ -49,7 +48,7 @@ export default function EditRiderScreen() {
       loading={loading}
       error={error ?? (data && !rider ? "This rider no longer exists at this store" : null)}
       onRetry={reload}
-      headerRight={can(role, "riders", "delete") ? () => <HeaderAction icon="trash-outline" accessibilityLabel="Remove rider" onPress={() => setConfirmDelete(true)} /> : undefined}
+      headerRight={can(user, "riders", "delete") ? () => <HeaderAction icon="trash-outline" accessibilityLabel="Remove rider" onPress={() => setConfirmDelete(true)} /> : undefined}
     >
       {rider && <RiderForm key={rider.id} rider={rider} saving={running} onSubmit={save} />}
       <ConfirmDialog

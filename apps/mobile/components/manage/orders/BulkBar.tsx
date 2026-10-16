@@ -10,13 +10,14 @@ interface BulkBarProps {
   selected: OrderListItem[];
   /** Forward status shared by every selected order, if there is one */
   nextStatus: string | undefined;
+  /** Why there's no bulk step for this selection */
+  hint?: string;
   running: boolean;
   onAdvance: (status: string) => void;
-  onCancel: () => void;
   onClear: () => void;
 }
 
-export function BulkBar({ selected, nextStatus, running, onAdvance, onCancel, onClear }: BulkBarProps) {
+export function BulkBar({ selected, nextStatus, hint, running, onAdvance, onClear }: BulkBarProps) {
   const fulfillment = selected[0]?.fulfillmentType ?? "DELIVERY";
 
   return (
@@ -28,11 +29,10 @@ export function BulkBar({ selected, nextStatus, running, onAdvance, onCancel, on
         <Text style={styles.count}>{selected.length} selected</Text>
       </View>
       <View style={styles.actions}>
-        <Button label="Cancel orders" variant="danger" compact onPress={onCancel} disabled={running} style={styles.action} />
         {nextStatus ? (
-          <Button label={actionLabel(nextStatus, fulfillment)} compact onPress={() => onAdvance(nextStatus)} loading={running} style={styles.action} />
+          <Button label={actionLabel(nextStatus, fulfillment)} onPress={() => onAdvance(nextStatus)} loading={running} style={styles.action} />
         ) : (
-          <Text style={styles.hint}>Pick orders in the same stage to move them together</Text>
+          <Text style={styles.hint}>{hint}</Text>
         )}
       </View>
     </View>

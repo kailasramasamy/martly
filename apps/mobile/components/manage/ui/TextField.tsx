@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { View, Text, TextInput, StyleSheet, type KeyboardTypeOptions } from "react-native";
 import { fonts } from "../../../constants/theme";
 import { manage } from "./tokens";
@@ -12,6 +13,8 @@ interface TextFieldProps extends FieldFrameProps {
   prefix?: string;
   /** Trailing unit, e.g. "%" or "km" */
   suffix?: string;
+  /** Element before the input, e.g. a colour swatch */
+  leading?: ReactNode;
   keyboardType?: KeyboardTypeOptions;
   multiline?: boolean;
   editable?: boolean;
@@ -20,10 +23,11 @@ interface TextFieldProps extends FieldFrameProps {
   maxLength?: number;
 }
 
-export function TextField({ label, required, hint, error, prefix, suffix, multiline, editable = true, ...input }: TextFieldProps) {
+export function TextField({ label, required, hint, error, prefix, suffix, leading, multiline, editable = true, ...input }: TextFieldProps) {
   return (
     <FieldFrame label={label} required={required} hint={hint} error={error}>
       <View style={[fs.box, multiline && styles.multiBox, !!error && fs.boxError, !editable && fs.boxDisabled]}>
+        {leading}
         {prefix ? <Text style={styles.affix}>{prefix}</Text> : null}
         <TextInput
           {...input}

@@ -22,7 +22,11 @@ export function useCatalog(storeId: string | null) {
     list.refresh();
     summary.reload();
   };
-  useRefreshOnFocus(refreshAll);
+  // Returning to the tab reloads quietly; the spinner is only for an actual pull
+  useRefreshOnFocus(() => {
+    list.reload();
+    summary.reload();
+  });
 
   return { summary: summary.data, list, search, setSearch, filter, setFilter, facet, setFacet, refreshAll };
 }

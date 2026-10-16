@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useResource } from "../../../lib/manage/use-resource";
-import type { SelectOption } from "../ui/SelectField";
+import type { SelectOption } from "../ui/OptionSheet";
 
 interface BrandRow {
   id: string;

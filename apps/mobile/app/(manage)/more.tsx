@@ -19,22 +19,29 @@ const ROLE_LABELS: Record<string, string> = {
 
 const APP_VERSION = `Version ${Constants.expoConfig?.version}`;
 
+/** Who's signed in; tapping opens My profile */
 function IdentityCard() {
+  const router = useRouter();
   const { user } = useAuth();
   const { store, stores } = useManageScope();
   const org = user?.organizations.find((o) => o.id === user.organizationId)?.name ?? store?.organizationName;
+  // Phone sign-ups get a placeholder email, so only real addresses are shown
+  const email = user?.email && !user.email.endsWith("@phone.martly.app") ? user.email : null;
+  const contact = [email, user?.phone].filter(Boolean).join(" · ");
   return (
-    <View style={styles.identity}>
+    <TouchableOpacity style={styles.identity} onPress={() => router.push("/manage/profile")} activeOpacity={0.85} accessibilityRole="button" accessibilityLabel="My profile">
       <View style={styles.avatar}>
         <Text style={styles.avatarText}>{(user?.name || user?.email || "?").slice(0, 1).toUpperCase()}</Text>
       </View>
       <View style={styles.identityText}>
         <Text style={styles.name} numberOfLines={1}>{user?.name || user?.email}</Text>
+        {contact ? <Text style={styles.contact} numberOfLines={1} selectable>{contact}</Text> : null}
         <Text style={styles.meta} numberOfLines={1}>
           {ROLE_LABELS[user?.role ?? ""] ?? user?.role}{org ? ` · ${org}` : ""} · {stores.length} {stores.length === 1 ? "store" : "stores"}
         </Text>
       </View>
-    </View>
+      <Ionicons name="chevron-forward" size={18} color={manage.muted} />
+    </TouchableOpacity>
   );
 }
 
@@ -42,7 +49,7 @@ export default function ManageMoreScreen() {
   const router = useRouter();
   const { user, logout } = useAuth();
   const { switchPersona } = usePersona();
-  const groups = modulesFor(user?.role ?? "");
+  const groups = modulesFor(user);
 
   const toItems = (modules: ReturnType<typeof modulesFor>[number]["modules"]): MenuItem[] =>
     modules.map((m) => ({ icon: m.icon, label: m.label, onPress: () => router.push(m.href) }));
@@ -79,6 +86,7 @@ const styles = StyleSheet.create({
   avatarText: { fontFamily: fonts.extrabold, fontSize: 18, color: "#fff" },
   identityText: { flex: 1 },
   name: { fontFamily: fonts.bold, fontSize: 16, color: colors.text },
+  contact: { fontFamily: fonts.medium, fontSize: 13, color: colors.text, marginTop: 2 },
   meta: { fontFamily: fonts.medium, fontSize: 12.5, color: colors.textSecondary, marginTop: 2 },
   switch: {
     flexDirection: "row", alignItems: "center", gap: 12, padding: 14, minHeight: 64,

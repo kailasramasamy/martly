@@ -2,7 +2,10 @@ import type { FastifyInstance, FastifyRequest, FastifyReply } from "fastify";
 import { createStoreProductSchema, updateStoreProductSchema, bulkCreateStoreProductSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
+import { INVENTORY_DUTIES, forbiddenStoreProductFields } from "@martly/shared/permissions";
+import { applyMovement, recordOpeningStock } from "../../services/stock-ledger.js";
 import { requireOrgContext, getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
@@ -21,6 +24,7 @@ function withPricing(sp: { stock: number; reservedStock: number; price: unknown;
 }
 
 export async function storeProductRoutes(app: FastifyInstance) {
+  const inventoryReaders = requirePermission(...INVENTORY_DUTIES);
   const spInclude = { store: true, product: { include: { brand: true } }, variant: true } as const;
 
   /** Search candidates (listing → its product for ranking) plus subcategory facets, which ignore the picked subcategory */
@@ -37,7 +41,7 @@ export async function storeProductRoutes(app: FastifyInstance) {
   }
 
   // List store-products (scoped to org's stores)
-  app.get("/", { preHandler: [authenticate, requireOrgContext] }, async (request, reply) => {
+  app.get("/", { preHandler: [authenticate, requireOrgContext, inventoryReaders] }, async (request, reply) => {
       const { page = 1, pageSize = 20, q, storeId, productId, catalogType, stockStatus, organizationId } = request.query as {
         page?: number; pageSize?: number; q?: string; storeId?: string; productId?: string; catalogType?: string;
         stockStatus?: "in_stock" | "low_stock" | "out_of_stock"; organizationId?: string;
@@ -133,7 +137,7 @@ export async function storeProductRoutes(app: FastifyInstance) {
   );
 
   // Get single store-product (verify org access)
-  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requireOrgContext] }, async (request, reply) => {
+  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requireOrgContext, inventoryReaders] }, async (request, reply) => {
       const storeProduct = await app.prisma.storeProduct.findUnique({
         where: { id: request.params.id },
         include: spInclude,
@@ -159,7 +163,7 @@ export async function storeProductRoutes(app: FastifyInstance) {
   // Create store-product (verify store belongs to org)
   app.post(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requirePermission(Permission.LISTING_MANAGE)] },
     async (request, reply) => {
       const body = createStoreProductSchema.parse(request.body);
 
@@ -178,7 +182,8 @@ export async function storeProductRoutes(app: FastifyInstance) {
       });
       if (existing) return reply.conflict("Variant already assigned to this store");
 
-      const storeProduct = await app.prisma.storeProduct.create({
+      const storeProduct = await app.prisma.$transaction(async (tx) => {
+        const created = await tx.storeProduct.create({
         data: {
           storeId: body.storeId,
           productId: variant.productId,
@@ -191,6 +196,9 @@ export async function storeProductRoutes(app: FastifyInstance) {
           discountEnd: body.discountEnd ?? undefined,
         },
         include: spInclude,
+        });
+        await recordOpeningStock(tx, [created], request.user.sub);
+        return created;
       });
 
       const response: ApiResponse<ReturnType<typeof withPricing>> = { success: true, data: withPricing(storeProduct) };
@@ -201,7 +209,7 @@ export async function storeProductRoutes(app: FastifyInstance) {
   // Bulk create store-products (verify store belongs to org)
   app.post(
     "/bulk",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requirePermission(Permission.LISTING_MANAGE)] },
     async (request, reply) => {
       const body = bulkCreateStoreProductSchema.parse(request.body);
 
@@ -238,8 +246,11 @@ export async function storeProductRoutes(app: FastifyInstance) {
 
       let created = 0;
       if (toCreate.length > 0) {
-        const result = await app.prisma.storeProduct.createMany({ data: toCreate });
-        created = result.count;
+        created = await app.prisma.$transaction(async (tx) => {
+          const rows = await tx.storeProduct.createManyAndReturn({ data: toCreate, select: { id: true, storeId: true, stock: true } });
+          await recordOpeningStock(tx, rows, request.user.sub);
+          return rows.length;
+        });
       }
 
       const response: ApiResponse<{ created: number; skipped: number }> = {
@@ -255,29 +266,37 @@ export async function storeProductRoutes(app: FastifyInstance) {
     const body = updateStoreProductSchema.parse(request.body);
     const existing = await app.prisma.storeProduct.findUnique({ where: { id: request.params.id } });
     if (!existing) return reply.notFound("Store product not found");
+    // Forms resend unchanged fields; only fields whose value actually changes need permission
+    const changed = Object.fromEntries(Object.entries(body).filter(([field, value]) =>
+      String(value ?? null) !== String((existing as Record<string, unknown>)[field] ?? null)));
+    const denied = forbiddenStoreProductFields(request.user, changed);
+    if (denied.length > 0) return reply.forbidden(`You can't change: ${denied.join(", ")}`);
 
     if (!(await verifyStoreOrgAccess(request, app.prisma, existing.storeId))) {
       return reply.forbidden("Access denied");
     }
 
-    const storeProduct = await app.prisma.storeProduct.update({
-      where: { id: request.params.id },
-      data: body,
-      include: spInclude,
+    const { stock, ...fields } = body;
+    const storeProduct = await app.prisma.$transaction(async (tx) => {
+      if (stock !== undefined && stock !== existing.stock) {
+        await applyMovement(tx, { storeProductId: existing.id, quantity: stock - existing.stock, type: "MANUAL", note: "Stock edited", userId: request.user.sub });
+      }
+      return tx.storeProduct.update({ where: { id: request.params.id }, data: fields, include: spInclude });
     });
 
     const response: ApiResponse<ReturnType<typeof withPricing>> = { success: true, data: withPricing(storeProduct) };
     return response;
   };
 
-  const updateOpts = { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] };
+  // Each changed field is checked against its own permission in the handler
+  const updateOpts = { preHandler: [authenticate] };
   app.put<{ Params: { id: string } }>("/:id", updateOpts, updateHandler);
   app.patch<{ Params: { id: string } }>("/:id", updateOpts, updateHandler);
 
   // Delete store-product (verify org access)
   app.delete<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requirePermission(Permission.LISTING_MANAGE)] },
     async (request, reply) => {
       const existing = await app.prisma.storeProduct.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Store product not found");

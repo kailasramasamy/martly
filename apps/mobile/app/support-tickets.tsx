@@ -70,7 +70,7 @@ export default function SupportTicketsScreen() {
 
   return (
     <View style={styles.container}>
-      <FlatList
+      <FlatList keyboardDismissMode="on-drag"
         data={tickets}
         keyExtractor={(item) => item.id}
         contentContainerStyle={tickets.length === 0 ? styles.center : styles.list}

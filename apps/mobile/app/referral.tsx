@@ -9,12 +9,15 @@ import {
   TextInput,
   Share,
   ScrollView,
+  KeyboardAvoidingView,
+  Platform,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import * as Clipboard from "expo-clipboard";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
 import { useToast } from "../lib/toast-context";
+import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../constants/theme";
 import type { ReferralInfo, ReferralItem } from "../lib/types";
 
@@ -28,6 +31,7 @@ export default function ReferralScreen() {
   const { selectedStore } = useStore();
   const storeId = selectedStore?.id;
   const { show: showToast } = useToast();
+  const keyboard = useKeyboardReveal();
 
   const [data, setData] = useState<ReferralInfo | null>(null);
   const [loading, setLoading] = useState(true);
@@ -105,7 +109,16 @@ export default function ReferralScreen() {
   const referrals = data?.referrals ?? [];
 
   return (
-    <ScrollView
+    <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
+      <KeyboardAvoidingView
+      style={{ flex: 1 }}
+      behavior={Platform.OS === "ios" ? "padding" : undefined}
+      keyboardVerticalOffset={keyboard.topOffset}
+    >
+    <ScrollView keyboardDismissMode="on-drag"
+      ref={keyboard.scrollRef}
+      onScroll={keyboard.onScroll}
+      scrollEventThrottle={16}
       contentContainerStyle={styles.container}
       keyboardShouldPersistTaps="handled"
       refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primary} />}
@@ -237,6 +250,8 @@ export default function ReferralScreen() {
         </View>
       )}
     </ScrollView>
+    </KeyboardAvoidingView>
+    </View>
   );
 }
 

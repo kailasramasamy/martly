@@ -19,8 +19,8 @@ interface RadioOptionSheetProps<T extends string | null> {
 
 export function RadioOptionSheet<T extends string | null>({ visible, title, options, selected, onSelect, onClose }: RadioOptionSheetProps<T>) {
   return (
-    <BottomSheet visible={visible} title={title} onClose={onClose}>
-      <FlatList
+    <BottomSheet flush visible={visible} title={title} onClose={onClose}>
+      <FlatList keyboardDismissMode="on-drag"
         data={options}
         keyExtractor={(o) => String(o.value)}
         renderItem={({ item }) => {

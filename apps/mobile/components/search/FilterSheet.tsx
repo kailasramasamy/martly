@@ -69,8 +69,8 @@ export function FilterSheet({ visible, brandsOnly = false, brands, value, onAppl
   );
 
   return (
-    <BottomSheet visible={visible} title={brandsOnly ? "Brand" : "Filters"} onClose={onClose} footer={footer}>
-      <FlatList
+    <BottomSheet flush visible={visible} title={brandsOnly ? "Brand" : "Filters"} onClose={onClose} footer={footer}>
+      <FlatList keyboardDismissMode="on-drag"
         data={brands}
         keyExtractor={(b) => b.id}
         ListHeaderComponent={brands.length > 0 && !brandsOnly ? <Text style={styles.section}>Brands</Text> : null}

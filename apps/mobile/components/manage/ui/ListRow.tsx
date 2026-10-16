@@ -15,6 +15,8 @@ interface ListRowProps {
   trailing?: ReactNode;
   icon?: keyof typeof Ionicons.glyphMap;
   imageUrl?: string | null;
+  /** Logos: a wider tile that fits the whole image, instead of a square filled by a photo */
+  imageContain?: boolean;
   /** Coloured left rail that encodes status at a glance */
   railColor?: string;
   /** Status shown in its own colours: tints the icon tile and leads the caption line */
@@ -25,10 +27,10 @@ interface ListRowProps {
   chevron?: boolean;
 }
 
-function Leading({ icon, imageUrl, status }: Pick<ListRowProps, "icon" | "imageUrl" | "status">) {
+function Leading({ icon, imageUrl, imageContain, status }: Pick<ListRowProps, "icon" | "imageUrl" | "imageContain" | "status">) {
   if (imageUrl !== undefined) {
     return imageUrl
-      ? <Image source={{ uri: imageUrl }} style={styles.thumb} />
+      ? <Image source={{ uri: imageUrl }} style={[styles.thumb, imageContain && styles.thumbContain]} resizeMode={imageContain ? "contain" : "cover"} />
       : <View style={[styles.thumb, styles.thumbEmpty]}><Ionicons name="image-outline" size={18} color={manage.muted} /></View>;
   }
   if (!icon) return null;
@@ -53,7 +55,7 @@ export function ListRow(props: ListRowProps) {
       {selected !== undefined && (
         <Ionicons name={selected ? "checkbox" : "square-outline"} size={22} color={selected ? colors.primary : manage.muted} />
       )}
-      <Leading icon={props.icon} imageUrl={props.imageUrl} status={status} />
+      <Leading icon={props.icon} imageUrl={props.imageUrl} imageContain={props.imageContain} status={status} />
       <View style={styles.body}>
         <Text style={styles.title} numberOfLines={2}>{title}</Text>
         {subtitle ? <Text style={styles.subtitle} numberOfLines={1}>{subtitle}</Text> : null}
@@ -87,6 +89,7 @@ const styles = StyleSheet.create({
   railed: { paddingLeft: 19 },
   thumb: { width: 44, height: 44, borderRadius: radius.md, backgroundColor: manage.canvas },
   thumbEmpty: { alignItems: "center", justifyContent: "center" },
+  thumbContain: { width: 72, backgroundColor: "#fff", borderWidth: 1, borderColor: manage.hairline },
   iconWrap: { width: 36, height: 36, borderRadius: 10, backgroundColor: manage.tint, alignItems: "center", justifyContent: "center" },
   body: { flex: 1, minWidth: 0 },
   title: { fontFamily: fonts.bold, fontSize: 15, lineHeight: 20, color: colors.text },

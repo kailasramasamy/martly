@@ -1,7 +1,8 @@
 import type { FastifyInstance } from "fastify";
 import Anthropic from "@anthropic-ai/sdk";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
 // ── Rate Limiter ────────────────────────────────────
@@ -30,7 +31,7 @@ setInterval(() => {
 
 // ── Route registration ──────────────────────────────
 export async function customerInsightsRoutes(app: FastifyInstance) {
-  const preHandler = [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")];
+  const preHandler = [authenticate, requirePermission(Permission.REPORTS_VIEW)];
   const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
   // ── 1. Ask Your Store (AI Analytics Q&A) ──────────

@@ -295,7 +295,7 @@ export default function SupportChatScreen() {
         keyboardVerticalOffset={0}
       >
         {/* ── Messages ── */}
-        <FlatList
+        <FlatList keyboardDismissMode="on-drag"
           ref={listRef}
           data={invertedMessages}
           keyExtractor={(item) => item.id}

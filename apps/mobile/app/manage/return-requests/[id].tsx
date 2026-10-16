@@ -20,7 +20,7 @@ function ReturnDetail({ id }: { id: string }) {
   const { user } = useAuth();
   const { data, loading, error, reload } = useResource<ReturnRequestDetail>(`/api/v1/return-requests/${id}`);
   const [mode, setMode] = useState<Resolution | null>(null);
-  const canResolve = !!user && can(user.role, "return-requests", "edit") && data?.status === "PENDING";
+  const canResolve = !!user && can(user, "return-requests", "edit") && data?.status === "PENDING";
 
   const actions = canResolve ? (
     <>

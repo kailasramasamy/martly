@@ -38,7 +38,7 @@ export default function SelectOrgScreen() {
       <Text style={styles.title}>Choose organization</Text>
       <Text style={styles.subtitle}>You have access to {organizations.length} organizations. You can switch later by signing in again.</Text>
       {error ? <Text style={styles.error}>{error}</Text> : null}
-      <FlatList
+      <FlatList keyboardDismissMode="on-drag"
         data={organizations}
         keyExtractor={(o) => o.id}
         contentContainerStyle={styles.list}

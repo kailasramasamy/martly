@@ -7,16 +7,15 @@ export const accessControlProvider: AccessControlProvider = {
     const token = localStorage.getItem("martly_admin_token");
     if (!token) return { can: false };
 
-    let role = "";
+    let payload: { role: string; permissions?: string[] };
     try {
-      const payload = JSON.parse(atob(token.split(".")[1]));
-      role = payload.role;
+      payload = JSON.parse(atob(token.split(".")[1]));
     } catch {
       return { can: false };
     }
 
-    if (!resource || !isResource(resource)) return { can: role === "SUPER_ADMIN" };
-    if (can(role, resource, action as ResourceAction)) return { can: true };
+    if (!resource || !isResource(resource)) return { can: payload.role === "SUPER_ADMIN" };
+    if (can(payload, resource, action as ResourceAction)) return { can: true };
     return { can: false, reason: "You don't have access to this section" };
   },
 

@@ -28,7 +28,7 @@ export function BrandListScreen() {
   const { data: summary } = useResource<BrandSummary>("/api/v1/brands/summary");
   const params = useMemo(() => ({ q, segment: segment === "all" ? "" : segment }), [q, segment]);
   const list = usePagedList<BrandListItem>("/api/v1/brands", params);
-  const canCreate = can(user?.role ?? "", "brands", "create");
+  const canCreate = can(user, "brands", "create");
 
   return (
     <ManageListScreen
@@ -43,6 +43,7 @@ export function BrandListScreen() {
           title={b.name}
           subtitle={`${b._count.products} product${b._count.products === 1 ? "" : "s"}`}
           imageUrl={b.imageUrl}
+          imageContain
           railColor={b.themeColor ?? undefined}
           chevron
           onPress={() => router.push(`/manage/brands/${b.id}`)}

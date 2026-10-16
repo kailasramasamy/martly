@@ -3,6 +3,7 @@ import { api } from "../../../lib/api";
 import { toQuery } from "../../../lib/manage/query";
 import { useOrdersTick } from "../../../lib/manage/use-live-orders";
 import type { DashboardStats, LowStockItem, StockSummary } from "./types";
+import { useRefreshOnFocus } from "../../../lib/manage/use-refresh-on-focus";
 
 /** Dashboard stats + stock summary for a store scope; reloads on live order changes */
 export function useTodayData(storeId: string | null, enabled: boolean) {
@@ -34,6 +35,8 @@ export function useTodayData(storeId: string | null, enabled: boolean) {
     if (!enabled) return;
     load().finally(() => setLoading(false));
   }, [enabled, load, tick]);
+
+  useRefreshOnFocus(load);
 
   const refresh = useCallback(async () => {
     setRefreshing(true);

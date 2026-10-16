@@ -155,7 +155,7 @@ export default function RecipeDetailScreen() {
 
   return (
     <View style={styles.container}>
-      <ScrollView contentContainerStyle={{ paddingBottom: 100 }}>
+      <ScrollView keyboardDismissMode="on-drag" contentContainerStyle={{ paddingBottom: 100 }}>
         {/* Hero Image */}
         {recipe.imageUrl ? (
           <Image source={{ uri: recipe.imageUrl }} style={styles.heroImage} resizeMode="cover" />

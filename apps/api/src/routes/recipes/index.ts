@@ -2,7 +2,8 @@ import type { FastifyInstance } from "fastify";
 import { createRecipeSchema, updateRecipeSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { canSeeOrgRecord, assertProductsUsable } from "../../services/catalog-access.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
@@ -85,12 +86,12 @@ export async function recipeRoutes(app: FastifyInstance) {
   // Create recipe
   app.post(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] },
     async (request) => {
       const { items, ...body } = createRecipeSchema.parse(request.body);
       const user = getOrgUser(request);
 
-      if (user.role === "ORG_ADMIN") {
+      if (user.role !== "SUPER_ADMIN") {
         body.organizationId = user.organizationId;
       }
       await assertProductsUsable(app.prisma, items?.map((i) => i.productId) ?? [], body.organizationId ?? null);
@@ -125,14 +126,14 @@ export async function recipeRoutes(app: FastifyInstance) {
   // Update recipe
   app.put<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] },
     async (request, reply) => {
       const { items, ...body } = updateRecipeSchema.parse(request.body);
       const existing = await app.prisma.recipe.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Recipe not found");
 
       const user = getOrgUser(request);
-      if (user.role === "ORG_ADMIN" && existing.organizationId !== user.organizationId) {
+      if (user.role !== "SUPER_ADMIN" && existing.organizationId !== user.organizationId) {
         return reply.forbidden("Access denied");
       }
 
@@ -171,13 +172,13 @@ export async function recipeRoutes(app: FastifyInstance) {
   // Delete recipe
   app.delete<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] },
     async (request, reply) => {
       const existing = await app.prisma.recipe.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Recipe not found");
 
       const user = getOrgUser(request);
-      if (user.role === "ORG_ADMIN" && existing.organizationId !== user.organizationId) {
+      if (user.role !== "SUPER_ADMIN" && existing.organizationId !== user.organizationId) {
         return reply.forbidden("Access denied");
       }
 

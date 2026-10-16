@@ -1,7 +1,7 @@
 import { Create, useForm } from "@refinedev/antd";
 import { Form, Input, Card, Row, Col, ColorPicker } from "antd";
 import { TrademarkOutlined } from "@ant-design/icons";
-import { ImageUpload } from "../../components/ImageUpload";
+import { BrandLogoField } from "./logo-field";
 import { sectionTitle } from "../../theme";
 
 export const BrandCreate = () => {
@@ -62,7 +62,7 @@ export const BrandCreate = () => {
                 getValueFromEvent={(url: string) => url}
                 style={{ marginBottom: 0 }}
               >
-                <ImageUpload />
+                <BrandLogoField form={formProps.form} />
               </Form.Item>
             </Card>
           </Col>

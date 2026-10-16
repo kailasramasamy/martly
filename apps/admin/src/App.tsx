@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useCallback } from "react";
 import { Refine, Authenticated, useGetIdentity, useLogout } from "@refinedev/core";
 import { ThemedLayoutV2, useNotificationProvider } from "@refinedev/antd";
 import routerProvider from "@refinedev/react-router";
-import { BrowserRouter, Routes, Route, Outlet } from "react-router";
+import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router";
 import { App as AntdApp, ConfigProvider, Typography, Space, Button } from "antd";
 import {
   DashboardOutlined,
@@ -19,6 +19,8 @@ import {
   MoonOutlined,
   InboxOutlined,
   ContainerOutlined,
+  AuditOutlined,
+  DownloadOutlined,
   StarOutlined,
   AppstoreAddOutlined,
   GiftOutlined,
@@ -71,6 +73,9 @@ import { StoreProductCreate } from "./pages/store-products/create";
 import { StoreProductEdit } from "./pages/store-products/edit";
 import { DashboardPage } from "./pages/dashboard";
 import { StockPage } from "./pages/stock";
+import { StockCountList } from "./pages/stock-counts/list";
+import { StockCountShow } from "./pages/stock-counts/show";
+import { StockReceivePage } from "./pages/stock-receive";
 import { FeaturedProductsPage } from "./pages/featured-products";
 import { CategoryList } from "./pages/categories/list";
 import { CategoryCreate } from "./pages/categories/create";
@@ -82,6 +87,8 @@ import { BrandEdit } from "./pages/brands/edit";
 import { UserList } from "./pages/users/list";
 import { UserCreate } from "./pages/users/create";
 import { UserEdit } from "./pages/users/edit";
+import { UserShow } from "./pages/users/show";
+import { ProfilePage } from "./pages/profile";
 import { CustomerList } from "./pages/customers/list";
 import { CustomerShow } from "./pages/customers/show";
 import { CollectionList } from "./pages/collections/list";
@@ -105,6 +112,7 @@ import { LoyaltySettings } from "./pages/loyalty/settings";
 import { LoyaltyCustomers } from "./pages/loyalty/customers";
 import { ExpressDeliveryConfig } from "./pages/express-delivery/config";
 import { DeliveryBoard } from "./pages/delivery-board";
+import { DeliveryFleet } from "./pages/delivery-fleet";
 import { RidersList } from "./pages/riders/list";
 import { CatalogDraftList } from "./pages/catalog-drafts/list";
 import { CatalogDraftShow } from "./pages/catalog-drafts/show";
@@ -137,17 +145,10 @@ import { RecipeList } from "./pages/recipes/list";
 import { RecipeCreate } from "./pages/recipes/create";
 import { RecipeEdit } from "./pages/recipes/edit";
 import { OrgSwitcher } from "./components/OrgSwitcher";
+import { UserRoleLabels, type UserRole } from "@martly/shared/constants";
 
 const { Text } = Typography;
 
-const ROLE_LABELS: Record<string, string> = {
-  SUPER_ADMIN: "Super Admin",
-  ORG_ADMIN: "Org Admin",
-  STORE_MANAGER: "Store Manager",
-  STAFF: "Staff",
-  RIDER: "Rider",
-  CUSTOMER: "Customer",
-};
 
 function HeaderBar() {
   const { data: identity } = useGetIdentity<{ name: string; role: string }>();
@@ -158,13 +159,15 @@ function HeaderBar() {
       <OrgSwitcher />
       <Space size={12}>
         {identity && (
-          <Space size={6}>
-            <UserOutlined style={{ color: "rgba(255,255,255,0.85)" }} />
-            <Text style={{ color: "#fff", fontSize: 13 }}>{identity.name}</Text>
-            <Text style={{ color: "rgba(255,255,255,0.55)", fontSize: 12 }}>
-              {ROLE_LABELS[identity.role] ?? identity.role}
-            </Text>
-          </Space>
+          <Link to="/profile" title="My profile">
+            <Space size={6}>
+              <UserOutlined style={{ color: "rgba(255,255,255,0.85)" }} />
+              <Text style={{ color: "#fff", fontSize: 13 }}>{identity.name}</Text>
+              <Text style={{ color: "rgba(255,255,255,0.55)", fontSize: 12 }}>
+                {UserRoleLabels[identity.role as UserRole] ?? identity.role}
+              </Text>
+            </Space>
+          </Link>
         )}
         <Button
           type="text"
@@ -227,6 +230,7 @@ export default function App() {
                 list: "/users",
                 create: "/users/create",
                 edit: "/users/edit/:id",
+                show: "/users/show/:id",
                 meta: { label: "Users", icon: <TeamOutlined /> },
               },
               {
@@ -440,6 +444,11 @@ export default function App() {
                 meta: { label: "Time Slots", parent: "delivery" },
               },
               {
+                name: "delivery-fleet",
+                list: "/delivery-fleet",
+                meta: { label: "Riders & Trips", icon: <CarOutlined />, parent: "delivery" },
+              },
+              {
                 name: "express-delivery",
                 list: "/express-delivery",
                 meta: { label: "Express Config", icon: <ThunderboltOutlined />, parent: "delivery" },
@@ -453,6 +462,17 @@ export default function App() {
                 name: "stock",
                 list: "/stock",
                 meta: { label: "Stock Management", icon: <ContainerOutlined />, parent: "inventory" },
+              },
+              {
+                name: "stock-counts",
+                list: "/stock-counts",
+                show: "/stock-counts/:id",
+                meta: { label: "Stock Counts", icon: <AuditOutlined />, parent: "inventory" },
+              },
+              {
+                name: "stock-receive",
+                list: "/stock-receive",
+                meta: { label: "Receive Stock", icon: <DownloadOutlined />, parent: "inventory" },
               },
               {
                 name: "orders",
@@ -512,10 +532,12 @@ export default function App() {
                   <Route path="create" element={<OrganizationCreate />} />
                   <Route path="edit/:id" element={<OrganizationEdit />} />
                 </Route>
+                <Route path="/profile" element={<ProfilePage />} />
                 <Route path="/users">
                   <Route index element={<UserList />} />
                   <Route path="create" element={<UserCreate />} />
                   <Route path="edit/:id" element={<UserEdit />} />
+                  <Route path="show/:id" element={<UserShow />} />
                 </Route>
                 <Route path="/customers">
                   <Route index element={<CustomerList />} />
@@ -613,10 +635,16 @@ export default function App() {
                 </Route>
                 <Route path="/delivery-tiers" element={<DeliveryTierList />} />
                 <Route path="/delivery-slots" element={<DeliverySlotList />} />
+                <Route path="/delivery-fleet" element={<DeliveryFleet />} />
                 <Route path="/express-delivery" element={<ExpressDeliveryConfig />} />
                 <Route path="/delivery-board" element={<DeliveryBoard />} />
                 <Route path="/riders" element={<RidersList />} />
                 <Route path="/stock" element={<StockPage />} />
+                <Route path="/stock-counts">
+                  <Route index element={<StockCountList />} />
+                  <Route path=":id" element={<StockCountShow />} />
+                </Route>
+                <Route path="/stock-receive" element={<StockReceivePage />} />
                 <Route path="/featured-products" element={<FeaturedProductsPage />} />
                 <Route path="/store-intelligence" element={<StoreIntelligencePage />} />
                 <Route path="/customer-insights" element={<CustomerInsightsPage />} />

@@ -1,7 +1,7 @@
 import {
   FoodTypeLabels, ProductTypeLabels, StorageTypeLabels, UnitTypeLabels, UnitType,
 } from "@martly/shared/constants";
-import type { SelectOption } from "../ui/SelectField";
+import type { SelectOption } from "../ui/OptionSheet";
 
 function fromLabels(labels: Record<string, string>): SelectOption[] {
   return Object.entries(labels).map(([value, label]) => ({ value, label }));

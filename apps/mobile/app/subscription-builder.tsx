@@ -16,6 +16,7 @@ import {
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
 import { useToast } from "../lib/toast-context";
@@ -92,6 +93,7 @@ export default function SubscriptionBuilderScreen() {
   const { storeProductId, productId: paramProductId } = useLocalSearchParams<{ storeProductId?: string; productId?: string }>();
   const toast = useToast();
   const insets = useSafeAreaInsets();
+  const keyboard = useKeyboardReveal();
   const { selectedStore } = useStore();
   const storeId = selectedStore?.id;
 
@@ -447,7 +449,7 @@ export default function SubscriptionBuilderScreen() {
       )}
 
       {!searching && searchResults.length > 0 && (
-        <FlatList
+        <FlatList keyboardDismissMode="on-drag"
           data={searchResults}
           keyExtractor={(item) => item.id}
           renderItem={renderSearchResult}
@@ -464,7 +466,7 @@ export default function SubscriptionBuilderScreen() {
       )}
 
       {items.length > 0 && !searchQuery.trim() && (
-        <ScrollView style={styles.selectedItemsList}>
+        <ScrollView keyboardDismissMode="on-drag" style={styles.selectedItemsList}>
           <Text style={styles.sectionTitle}>
             Subscription Items ({items.length})
           </Text>
@@ -563,7 +565,7 @@ export default function SubscriptionBuilderScreen() {
     };
 
     return (
-      <ScrollView style={styles.stepContent} contentContainerStyle={styles.stepContentPadding}>
+      <ScrollView keyboardDismissMode="on-drag" style={styles.stepContent} contentContainerStyle={styles.stepContentPadding}>
         <Text style={styles.sectionTitle}>How often do you want delivery?</Text>
         <View style={styles.freqList}>
           {frequencyOptions.map((opt) => {
@@ -625,7 +627,7 @@ export default function SubscriptionBuilderScreen() {
     }
 
     return (
-      <ScrollView style={styles.stepContent} contentContainerStyle={styles.stepContentPadding}>
+      <ScrollView keyboardDismissMode="on-drag" style={styles.stepContent} contentContainerStyle={styles.stepContentPadding}>
         <Text style={styles.sectionTitle}>Select delivery address</Text>
         {addresses.map((addr) => (
           <TouchableOpacity
@@ -716,7 +718,7 @@ export default function SubscriptionBuilderScreen() {
     const nextDelivery = getNextDeliveryDate(frequency, selectedDays);
 
     return (
-      <ScrollView style={styles.stepContent} contentContainerStyle={styles.stepContentPadding}>
+      <ScrollView keyboardDismissMode="on-drag" style={styles.stepContent} contentContainerStyle={styles.stepContentPadding}>
         <Text style={styles.sectionTitle}>Review your subscription</Text>
 
         {/* Items */}
@@ -794,8 +796,9 @@ export default function SubscriptionBuilderScreen() {
             <Switch
               value={autoPayWithWallet}
               onValueChange={setAutoPayWithWallet}
-              trackColor={{ false: colors.border, true: colors.primaryLight }}
-              thumbColor={autoPayWithWallet ? colors.primary : "#f4f3f4"}
+              trackColor={{ false: colors.border, true: colors.primary }}
+              ios_backgroundColor={colors.border}
+              thumbColor="#fff"
             />
           </View>
         </View>
@@ -827,10 +830,11 @@ export default function SubscriptionBuilderScreen() {
   };
 
   return (
-    <KeyboardAvoidingView
+    <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
+      <KeyboardAvoidingView
       style={styles.container}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
-      keyboardVerticalOffset={Platform.OS === "ios" ? 88 : 0}
+      keyboardVerticalOffset={keyboard.topOffset}
     >
       {renderStepIndicator()}
       {renderCurrentStep()}
@@ -863,6 +867,7 @@ export default function SubscriptionBuilderScreen() {
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
+    </View>
   );
 }
 

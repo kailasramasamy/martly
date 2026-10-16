@@ -1,26 +1,14 @@
-import { useEffect, useState } from "react";
 import { useManageScope } from "../../../lib/manage-scope-context";
-import { api } from "../../../lib/api";
 import { usePagedList } from "../../../lib/manage/use-paged-list";
 import { ManageListScreen } from "../../../components/manage/ManageListScreen";
 import { AccessGate } from "../../../components/manage/support/AccessGate";
 import { StoreRatingRow } from "../../../components/manage/reviews/StoreRatingRow";
 import { StoreRatingSummaryTiles } from "../../../components/manage/reviews/StoreRatingSummaryTiles";
 import type { StoreRatingRecord, StoreRatingSummary } from "../../../components/manage/reviews/types";
+import { useResource } from "../../../lib/manage/use-resource";
 
 function useSummary(storeId: string | null): StoreRatingSummary | null {
-  const [summary, setSummary] = useState<StoreRatingSummary | null>(null);
-  useEffect(() => {
-    let live = true;
-    setSummary(null);
-    if (storeId) {
-      api.get<StoreRatingSummary>(`/api/v1/store-ratings/store/${storeId}/summary`)
-        .then((res) => live && setSummary(res.data))
-        .catch(() => live && setSummary(null));
-    }
-    return () => { live = false; };
-  }, [storeId]);
-  return summary;
+  return useResource<StoreRatingSummary>(storeId ? `/api/v1/store-ratings/store/${storeId}/summary` : null).data;
 }
 
 function StoreRatingList() {

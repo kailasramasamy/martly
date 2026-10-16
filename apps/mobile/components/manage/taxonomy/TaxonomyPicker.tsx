@@ -1,5 +1,6 @@
 import { useMemo } from "react";
-import { SelectField, type SelectOption } from "../ui/SelectField";
+import { SelectField } from "../ui/SelectField";
+import type { SelectOption } from "../ui/OptionSheet";
 import type { DepartmentNode, TaxonomySelection } from "./types";
 
 const ANY = "__any__";

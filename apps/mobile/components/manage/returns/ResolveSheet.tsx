@@ -39,6 +39,7 @@ export function ResolveSheet({ requestId, requestedAmount, mode, onClose, onReso
 
   return (
     <BottomSheet
+      scrollable
       visible={!!mode}
       title={approving ? "Approve return" : "Reject return"}
       onClose={onClose}

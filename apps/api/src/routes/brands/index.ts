@@ -1,8 +1,15 @@
 import type { FastifyInstance } from "fastify";
+import multipart from "@fastify/multipart";
+import { randomUUID } from "crypto";
 import { createBrandSchema, updateBrandSchema } from "@martly/shared/schemas";
 import type { ApiResponse, BrandDirectory, BrandSegment, BrandSummary, DirectoryBrand, DirectoryDepartment, PaginatedResponse } from "@martly/shared/types";
-import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { authenticate, authenticateOptional } from "../../middleware/auth.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
+import type { JwtUser } from "../../types/jwt.js";
+import { brandVisibility, uniqueBrandSlug } from "../../services/brands.js";
+import { cleanLogo } from "../../services/brand-logo.js";
+import { putObject } from "../../services/media.js";
 
 type Translations = DirectoryDepartment["translations"];
 type DirectoryRow = DirectoryBrand & {
@@ -45,15 +52,18 @@ const SEGMENTS: Record<BrandSegment, () => Record<string, unknown>> = {
 const isSegment = (value: string): value is BrandSegment => Object.hasOwn(SEGMENTS, value);
 
 export async function brandRoutes(app: FastifyInstance) {
-  // List brands
-  app.get("/", async (request, reply) => {
+  await app.register(multipart, { limits: { fileSize: 5 * 1024 * 1024 } });
+  // List brands (master brands plus the caller's organization's own)
+  app.get("/", { preHandler: [authenticateOptional] }, async (request, reply) => {
     const { page = 1, pageSize = 50, q, segment } = request.query as {
       page?: number; pageSize?: number; q?: string; segment?: string;
     };
     const skip = (Number(page) - 1) * Number(pageSize);
 
     if (segment !== undefined && !isSegment(segment)) return reply.badRequest("Unknown brand segment");
-    const where: Record<string, unknown> = segment === undefined ? {} : SEGMENTS[segment]();
+    const where: Record<string, unknown> = {
+      AND: [brandVisibility(request.user), segment === undefined ? {} : SEGMENTS[segment]()],
+    };
     if (q) {
       where.OR = [
         { name: { contains: q, mode: "insensitive" } },
@@ -81,13 +91,12 @@ export async function brandRoutes(app: FastifyInstance) {
   });
 
   // KPI counts for the admin brand list
-  app.get("/summary", { preHandler: [authenticate] }, async () => {
+  app.get("/summary", { preHandler: [authenticate] }, async (request) => {
+    const visible = brandVisibility(request.user);
+    const count = (segment?: BrandSegment) =>
+      app.prisma.brand.count({ where: { AND: [visible, segment ? SEGMENTS[segment]() : {}] } });
     const [total, brandStores, withoutLogo, withoutProducts, addedLast30d] = await Promise.all([
-      app.prisma.brand.count(),
-      app.prisma.brand.count({ where: SEGMENTS.brandStores() }),
-      app.prisma.brand.count({ where: SEGMENTS.withoutLogo() }),
-      app.prisma.brand.count({ where: SEGMENTS.withoutProducts() }),
-      app.prisma.brand.count({ where: SEGMENTS.addedLast30d() }),
+      count(), count("brandStores"), count("withoutLogo"), count("withoutProducts"), count("addedLast30d"),
     ]);
     const response: ApiResponse<BrandSummary> = {
       success: true,
@@ -160,14 +169,47 @@ export async function brandRoutes(app: FastifyInstance) {
     return response;
   });
 
-  // Create brand
+  /** Why the caller can't change this brand: master brands belong to the platform, local brands to their organization */
+  function ownershipDenial(user: JwtUser, brand: { organizationId: string | null }): string | null {
+    if (brand.organizationId === null) return user.role === "SUPER_ADMIN" ? null : "Only the platform admin can change master brands";
+    return brand.organizationId === user.organizationId ? null : "Access denied";
+  }
+
+  // Create brand (platform admin → master brand, catalog editors → their organization's local brand)
+  // Clean up an uploaded logo (background removed unless already clean, trimmed) and suggest brand colours from it
+  app.post(
+    "/logo",
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_BRANDS)] },
+    async (request, reply) => {
+      const file = await request.file();
+      if (!file) return reply.badRequest("No file uploaded");
+      // ?removeBackground=false keeps a logo that's already clean as it is
+      const { removeBackground } = request.query as { removeBackground?: string };
+      const logo = await cleanLogo(await file.toBuffer(), removeBackground !== "false");
+      const { url } = await putObject(`brands/${randomUUID()}.png`, logo.image, "image/png");
+      const data = { imageUrl: url, themeColor: logo.themeColor, themeColorSecondary: logo.themeColorSecondary, background: logo.background };
+      return { success: true, data } satisfies ApiResponse<typeof data>;
+    },
+  );
+
   app.post(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN")] },
-    async (request) => {
-      const body = createBrandSchema.parse(request.body);
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_BRANDS)] },
+    async (request, reply) => {
+      const { slug, popularity, ...body } = createBrandSchema.parse(request.body);
+      const isPlatform = request.user.role === "SUPER_ADMIN";
+      if (!isPlatform && !request.user.organizationId) return reply.badRequest("Select an organization first");
+      if (slug && (await app.prisma.brand.findUnique({ where: { slug } }))) return reply.conflict("That slug is already taken");
 
-      const brand = await app.prisma.brand.create({ data: body });
+      const brand = await app.prisma.brand.create({
+        data: {
+          ...body,
+          slug: slug ?? (await uniqueBrandSlug(app.prisma, body.name)),
+          // Popularity drives search ranking across every store, so only the platform sets it
+          popularity: isPlatform ? popularity : undefined,
+          organizationId: isPlatform ? null : request.user.organizationId,
+        },
+      });
 
       const response: ApiResponse<typeof brand> = { success: true, data: brand };
       return response;
@@ -177,15 +219,17 @@ export async function brandRoutes(app: FastifyInstance) {
   // Update brand
   app.put<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_BRANDS)] },
     async (request, reply) => {
-      const body = updateBrandSchema.parse(request.body);
+      const { popularity, ...body } = updateBrandSchema.parse(request.body);
       const existing = await app.prisma.brand.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Brand not found");
+      const denied = ownershipDenial(request.user, existing);
+      if (denied) return reply.forbidden(denied);
 
       const brand = await app.prisma.brand.update({
         where: { id: request.params.id },
-        data: body,
+        data: { ...body, popularity: request.user.role === "SUPER_ADMIN" ? popularity : undefined },
       });
 
       const response: ApiResponse<typeof brand> = { success: true, data: brand };
@@ -196,13 +240,15 @@ export async function brandRoutes(app: FastifyInstance) {
   // Delete brand (only if no products reference it)
   app.delete<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_BRANDS)] },
     async (request, reply) => {
       const existing = await app.prisma.brand.findUnique({
         where: { id: request.params.id },
         include: { _count: { select: { products: true } } },
       });
       if (!existing) return reply.notFound("Brand not found");
+      const denied = ownershipDenial(request.user, existing);
+      if (denied) return reply.forbidden(denied);
       if (existing._count.products > 0) return reply.conflict("Brand has products — remove them first");
 
       await app.prisma.brand.delete({ where: { id: request.params.id } });

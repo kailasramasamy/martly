@@ -2,14 +2,15 @@ import type { FastifyInstance } from "fastify";
 import { createDeliveryTierSchema, updateDeliveryTierSchema, deliveryLookupSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { haversine } from "../../lib/geo.js";
 
 export async function deliveryTierRoutes(app: FastifyInstance) {
   // GET / — List tiers for a store
   app.get("/", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG, Permission.STORE_SETTINGS)],
   }, async (request, reply) => {
     const { storeId, page = 1, pageSize = 50 } = request.query as {
       storeId?: string; page?: number; pageSize?: number;
@@ -45,7 +46,7 @@ export async function deliveryTierRoutes(app: FastifyInstance) {
 
   // GET /:id — Single tier
   app.get<{ Params: { id: string } }>("/:id", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG, Permission.STORE_SETTINGS)],
   }, async (request, reply) => {
     const tier = await app.prisma.deliveryTier.findUnique({
       where: { id: request.params.id },
@@ -63,7 +64,7 @@ export async function deliveryTierRoutes(app: FastifyInstance) {
 
   // POST / — Create tier
   app.post("/", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG)],
   }, async (request, reply) => {
     const body = createDeliveryTierSchema.parse(request.body);
 
@@ -97,7 +98,7 @@ export async function deliveryTierRoutes(app: FastifyInstance) {
 
   // PUT /:id — Update tier
   app.put<{ Params: { id: string } }>("/:id", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG)],
   }, async (request, reply) => {
     const body = updateDeliveryTierSchema.parse(request.body);
 
@@ -137,7 +138,7 @@ export async function deliveryTierRoutes(app: FastifyInstance) {
 
   // DELETE /:id — Delete tier
   app.delete<{ Params: { id: string } }>("/:id", {
-    preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")],
+    preHandler: [authenticate, requirePermission(Permission.DELIVERY_CONFIG)],
   }, async (request, reply) => {
     const existing = await app.prisma.deliveryTier.findUnique({ where: { id: request.params.id } });
     if (!existing) return reply.notFound("Delivery tier not found");

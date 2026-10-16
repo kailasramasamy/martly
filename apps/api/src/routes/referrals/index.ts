@@ -1,6 +1,7 @@
 import type { FastifyInstance } from "fastify";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser, requireOrgContext } from "../../middleware/org-scope.js";
 import { applyReferralCodeSchema, createReferralConfigSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
@@ -148,7 +149,7 @@ export async function referralRoutes(app: FastifyInstance) {
   // ── Admin: get referral config ─────────────────────────
   app.get(
     "/config",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
+    { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE), requireOrgContext] },
     async (request, reply) => {
       const orgUser = getOrgUser(request);
       let orgId = orgUser.organizationId;
@@ -180,7 +181,7 @@ export async function referralRoutes(app: FastifyInstance) {
   // ── Admin: upsert referral config ──────────────────────
   app.put(
     "/config",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
+    { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE), requireOrgContext] },
     async (request, reply) => {
       const orgUser = getOrgUser(request);
       let orgId = orgUser.organizationId;
@@ -217,7 +218,7 @@ export async function referralRoutes(app: FastifyInstance) {
   // ── Admin: list referrals ──────────────────────────────
   app.get(
     "/list",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
+    { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE), requireOrgContext] },
     async (request, reply) => {
       const orgUser = getOrgUser(request);
 
@@ -285,7 +286,7 @@ export async function referralRoutes(app: FastifyInstance) {
   // ── Admin: referral stats ──────────────────────────────
   app.get(
     "/stats",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
+    { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE), requireOrgContext] },
     async (request, reply) => {
       const orgUser = getOrgUser(request);
       const { organizationId: qOrgId } = request.query as { organizationId?: string };

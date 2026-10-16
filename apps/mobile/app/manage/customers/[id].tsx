@@ -4,6 +4,7 @@ import { can } from "@martly/shared/permissions";
 import { api } from "../../../lib/api";
 import { useAuth } from "../../../lib/auth-context";
 import { useResource } from "../../../lib/manage/use-resource";
+import { useRefreshOnFocus } from "../../../lib/manage/use-refresh-on-focus";
 import { useAction } from "../../../lib/manage/use-action";
 import { ManageStackScreen } from "../../../components/manage/ManageStackScreen";
 import { Button } from "../../../components/manage/ui/Button";
@@ -46,6 +47,7 @@ function useCustomerExtras(id: string) {
     }
   }, [id]);
 
+  useRefreshOnFocus(reload);
   useEffect(() => {
     reload();
   }, [reload]);
@@ -61,7 +63,7 @@ function CustomerDetailScreen({ id }: { id: string }) {
   const { run, running } = useAction();
   const [walletOpen, setWalletOpen] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
-  const canDelete = !!user && can(user.role, "customers", "delete");
+  const canDelete = !!user && can(user, "customers", "delete");
 
   const remove = async () => {
     const done = await run(() => api.delete(`/api/v1/users/${id}`), "Customer deleted");

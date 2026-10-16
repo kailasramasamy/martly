@@ -175,7 +175,7 @@ export default function WalletScreen() {
   );
 
   return (
-    <FlatList
+    <FlatList keyboardDismissMode="on-drag"
       style={styles.container}
       contentContainerStyle={styles.content}
       data={transactions}

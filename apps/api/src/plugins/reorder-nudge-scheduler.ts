@@ -1,6 +1,7 @@
 import type { FastifyInstance } from "fastify";
 import fp from "fastify-plugin";
 import { sendNotification } from "../services/notification.js";
+import { istDay } from "../services/ist-day.js";
 
 const INTERVAL_MS = 24 * 60 * 60 * 1000; // 24 hours
 const STARTUP_DELAY_MS = 5 * 60 * 1000; // 5 minutes after startup
@@ -16,10 +17,8 @@ async function reorderNudgeSchedulerPlugin(app: FastifyInstance) {
 
       if (usersWithTokens.length === 0) return;
 
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
-      const tomorrow = new Date(today);
-      tomorrow.setDate(tomorrow.getDate() + 1);
+      // "Today" is the IST day, whatever zone the server runs in
+      const { start: today, end: endOfToday } = istDay();
 
       for (const { userId } of usersWithTokens) {
         try {
@@ -28,7 +27,7 @@ async function reorderNudgeSchedulerPlugin(app: FastifyInstance) {
             where: {
               userId,
               type: "PROMOTIONAL",
-              createdAt: { gte: today, lt: tomorrow },
+              createdAt: { gte: today, lte: endOfToday },
               data: { path: ["screen"], equals: "smart-reorder" },
             },
           });

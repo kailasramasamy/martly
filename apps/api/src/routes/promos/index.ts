@@ -1,12 +1,13 @@
 import type { FastifyInstance, FastifyRequest } from "fastify";
 import { createPromoSchema, promoListQuerySchema, updatePromoItemsSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse, PromoDetail, PromoSummary } from "@martly/shared/types";
-import { PromoStatus } from "@martly/shared/constants";
+import { Permission, PromoStatus } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { isCurationConfigured } from "../../services/seasonal/index.js";
 import { discardPromo, endPromo, keepPromoItems, launchPromo, reopenPromo, startPromoDraft } from "../../services/promo/lifecycle.js";
 import { promoSummaryInclude, toDetail, toSummary } from "../../services/promo/view.js";
-import { ADMINS } from "../collections/access.js";
+import { authenticate } from "../../middleware/auth.js";
+import { requirePermission } from "../../middleware/authorize.js";
 
 // SUPER_ADMIN sees every organisation's promos; ORG_ADMIN only their own
 const orgFilter = (request: FastifyRequest) => {
@@ -23,7 +24,7 @@ export async function promoRoutes(app: FastifyInstance) {
     return detail;
   }
 
-  app.get("/", { preHandler: ADMINS }, async (request) => {
+  app.get("/", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request) => {
     const { page, pageSize } = promoListQuerySchema.parse(request.query);
     const { status } = request.query as { status?: string };
     const organizationId = orgFilter(request);
@@ -40,7 +41,7 @@ export async function promoRoutes(app: FastifyInstance) {
     } satisfies PaginatedResponse<PromoSummary>;
   });
 
-  app.post("/", { preHandler: ADMINS }, async (request, reply) => {
+  app.post("/", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request, reply) => {
     if (!isCurationConfigured()) return reply.serviceUnavailable("AI promos need ANTHROPIC_API_KEY and OPENAI_API_KEY");
     const { organizationId: requested, ...body } = createPromoSchema.parse(request.body);
     const user = getOrgUser(request);
@@ -50,36 +51,36 @@ export async function promoRoutes(app: FastifyInstance) {
     return reply.code(201).send({ success: true, data: { id: promo.id, status: promo.status } });
   });
 
-  app.get<{ Params: { id: string } }>("/:id", { preHandler: ADMINS }, async (request) => {
+  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request) => {
     return { success: true, data: await detailOr404(request) } satisfies ApiResponse<PromoDetail>;
   });
 
-  app.patch<{ Params: { id: string } }>("/:id/items", { preHandler: ADMINS }, async (request) => {
+  app.patch<{ Params: { id: string } }>("/:id/items", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request) => {
     const { productIds } = updatePromoItemsSchema.parse(request.body);
     await detailOr404(request);
     await keepPromoItems(app.prisma, request.params.id, productIds);
     return { success: true, data: await detailOr404(request) } satisfies ApiResponse<PromoDetail>;
   });
 
-  app.post<{ Params: { id: string } }>("/:id/launch", { preHandler: ADMINS }, async (request) => {
+  app.post<{ Params: { id: string } }>("/:id/launch", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request) => {
     await detailOr404(request);
     await launchPromo(deps(), request.params.id);
     return { success: true, data: await detailOr404(request) } satisfies ApiResponse<PromoDetail>;
   });
 
-  app.post<{ Params: { id: string } }>("/:id/end", { preHandler: ADMINS }, async (request) => {
+  app.post<{ Params: { id: string } }>("/:id/end", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request) => {
     await detailOr404(request);
     await endPromo(app.prisma, request.params.id, true);
     return { success: true, data: await detailOr404(request) } satisfies ApiResponse<PromoDetail>;
   });
 
-  app.post<{ Params: { id: string } }>("/:id/reopen", { preHandler: ADMINS }, async (request) => {
+  app.post<{ Params: { id: string } }>("/:id/reopen", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request) => {
     await detailOr404(request);
     await reopenPromo(app.prisma, request.params.id);
     return { success: true, data: await detailOr404(request) } satisfies ApiResponse<PromoDetail>;
   });
 
-  app.delete<{ Params: { id: string } }>("/:id", { preHandler: ADMINS }, async (request) => {
+  app.delete<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request) => {
     await detailOr404(request);
     await discardPromo(app.prisma, request.params.id);
     return { success: true, data: null } satisfies ApiResponse<null>;

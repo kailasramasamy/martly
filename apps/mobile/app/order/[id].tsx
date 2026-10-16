@@ -8,6 +8,8 @@ import {
   ActivityIndicator,
   TextInput,
   Image,
+  KeyboardAvoidingView,
+  Platform,
 } from "react-native";
 import { useLocalSearchParams, useRouter, useFocusEffect } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -15,6 +17,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useOrderWebSocket } from "../../lib/useOrderWebSocket";
 import { useToast } from "../../lib/toast-context";
+import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { OrderDetailSkeleton } from "../../components/SkeletonLoader";
@@ -137,6 +140,7 @@ export default function OrderDetailScreen() {
   const router = useRouter();
   const toast = useToast();
   const insets = useSafeAreaInsets();
+  const keyboard = useKeyboardReveal();
   const [order, setOrder] = useState<OrderData | null>(null);
   const [loading, setLoading] = useState(true);
   const [cancelling, setCancelling] = useState(false);
@@ -293,8 +297,20 @@ export default function OrderDetailScreen() {
   const currentIdx = STATUSES.indexOf(order.status as (typeof STATUSES)[number]);
 
   return (
-    <View style={{ flex: 1 }}>
-    <ScrollView style={styles.container} contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, spacing.lg) }}>
+    <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
+      <KeyboardAvoidingView
+      style={{ flex: 1 }}
+      behavior={Platform.OS === "ios" ? "padding" : undefined}
+      keyboardVerticalOffset={keyboard.topOffset}
+    >
+    <ScrollView keyboardDismissMode="on-drag"
+      ref={keyboard.scrollRef}
+      onScroll={keyboard.onScroll}
+      scrollEventThrottle={16}
+      keyboardShouldPersistTaps="handled"
+      style={styles.container}
+      contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, spacing.lg) }}
+    >
       {/* Order ID + Status */}
       <View style={styles.header}>
         <Text style={styles.orderId}>Order #{order.id.slice(0, 8)}</Text>
@@ -774,6 +790,7 @@ export default function OrderDetailScreen() {
       onConfirm={handleCancelConfirm}
       onCancel={() => { if (!cancelling) setShowCancelConfirm(false); }}
     />
+    </KeyboardAvoidingView>
     </View>
   );
 }

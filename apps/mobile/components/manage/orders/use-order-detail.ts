@@ -26,8 +26,8 @@ export function useOrderDetail(orderId: string | undefined) {
     setRefreshing(false);
   }, [reload]);
 
-  const setStatus = async (status: string) => {
-    const ok = await run(() => api.patch(`/api/v1/orders/${orderId}/status`, { status }), `Order marked ${ORDER_STATUS[status]?.label ?? status}`);
+  const setStatus = async (status: string, note?: string) => {
+    const ok = await run(() => api.patch(`/api/v1/orders/${orderId}/status`, { status, note }), `Order marked ${ORDER_STATUS[status]?.label ?? status}`);
     if (ok) await reload();
   };
 
@@ -40,5 +40,12 @@ export function useOrderDetail(orderId: string | undefined) {
     return !!ok;
   };
 
-  return { ...resource, refreshing, refresh, running, setStatus, setPaymentStatus };
+  /** Reverses a delivery marked by mistake; the API puts stock, COD payment and loyalty back */
+  const undoDelivery = async (reason: string) => {
+    const ok = await run(() => api.post(`/api/v1/orders/${orderId}/undo-delivery`, { reason }), "Delivery undone");
+    if (ok) await reload();
+    return !!ok;
+  };
+
+  return { ...resource, refreshing, refresh, running, setStatus, setPaymentStatus, undoDelivery };
 }

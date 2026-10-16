@@ -1,5 +1,6 @@
 import { fromDateKey, toDateKey } from "../ui/dates";
 import type { DiscountType, StoreProductItem } from "./types";
+import type { ListingAccess } from "./use-listing-access";
 
 export type DiscountMode = "NONE" | DiscountType;
 
@@ -47,23 +48,23 @@ function discountPayload(d: StoreProductDraft, price: number): Record<string, un
   };
 }
 
-/** Validate the draft and build the PUT /store-products/:id body */
-export function buildUpdatePayload(d: StoreProductDraft): DraftResult {
-  const price = Number(d.price);
-  const stock = Number(d.stock);
-  if (!(price > 0)) return { error: "Enter a price above zero" };
-  if (!Number.isInteger(stock) || stock < 0) return { error: "Stock must be a whole number" };
-  if (d.memberPrice && !(Number(d.memberPrice) > 0)) return { error: "Member price must be above zero" };
-  const discount = discountPayload(d, price);
-  if (typeof discount === "string") return { error: discount };
-  return {
-    payload: {
-      price,
-      stock,
-      isActive: d.isActive,
-      isFeatured: d.isFeatured,
-      memberPrice: d.memberPrice ? Number(d.memberPrice) : null,
-      ...discount,
-    },
-  };
+/** Validate the draft and build the PUT /store-products/:id body, with only the fields the member may change */
+export function buildUpdatePayload(d: StoreProductDraft, access: ListingAccess): DraftResult {
+  const payload: Record<string, unknown> = {};
+  if (access.stock) {
+    const stock = Number(d.stock);
+    if (!Number.isInteger(stock) || stock < 0) return { error: "Stock must be a whole number" };
+    payload.stock = stock;
+  }
+  if (access.prices) {
+    const price = Number(d.price);
+    if (!(price > 0)) return { error: "Enter a price above zero" };
+    if (d.memberPrice && !(Number(d.memberPrice) > 0)) return { error: "Member price must be above zero" };
+    const discount = discountPayload(d, price);
+    if (typeof discount === "string") return { error: discount };
+    Object.assign(payload, { price, memberPrice: d.memberPrice ? Number(d.memberPrice) : null, ...discount });
+  }
+  if (access.listed) payload.isActive = d.isActive;
+  if (access.featured) payload.isFeatured = d.isFeatured;
+  return { payload };
 }

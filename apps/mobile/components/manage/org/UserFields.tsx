@@ -4,6 +4,7 @@ import { SelectField } from "../ui/SelectField";
 import { SwitchRow } from "../ui/SwitchRow";
 import { useManageScope } from "../../../lib/manage-scope-context";
 import { roleOptions } from "./constants";
+import { ResponsibilitiesSection } from "./ResponsibilitiesSection";
 
 export interface UserDraft {
   name: string;
@@ -12,6 +13,8 @@ export interface UserDraft {
   password: string;
   role: string;
   storeIds: string[];
+  /** Owner-granted add-on permissions in the current organization */
+  addOns: string[];
 }
 
 interface UserFieldsProps {
@@ -49,6 +52,7 @@ export function UserFields({ draft, set, roles, creating, isSuper }: UserFieldsP
         </SectionCard>
       )}
       {draft.role !== "SUPER_ADMIN" && <StoreToggles value={draft.storeIds} onChange={(storeIds) => set({ storeIds })} />}
+      {!isSuper && <ResponsibilitiesSection role={draft.role} value={draft.addOns} onChange={(addOns) => set({ addOns })} />}
     </>
   );
 }

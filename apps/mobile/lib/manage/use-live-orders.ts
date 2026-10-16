@@ -46,27 +46,29 @@ export function useOrdersFilterRequest() {
 }
 
 /**
- * Mount once in the Manage tab layout. Owns the order WebSocket, keeps the PENDING count
+ * Mount once in the Manage tab layout (`enabled` when the member can view orders). Owns the order WebSocket, keeps the PENDING count
  * for the current store scope, and toasts when a new order lands while the app is open.
  */
-export function useLiveOrders() {
+export function useLiveOrders(enabled: boolean) {
   const { storeId } = useManageScope();
   const toast = useToast();
 
   const refreshPending = useCallback(() => {
+    if (!enabled) return;
     api.getList(`/api/v1/orders${toQuery({ status: "PENDING", pageSize: 1, storeId })}`)
       .then((res) => setState({ pending: res.meta.total }))
       .catch(() => undefined);
-  }, [storeId]);
+  }, [storeId, enabled]);
 
   const announceNewOrder = useCallback((orderId: string) => {
+    if (!enabled) return;
     api.get<{ totalAmount: string; storeId: string }>(`/api/v1/orders/${orderId}`)
       .then((res) => {
         if (storeId && res.data.storeId !== storeId) return;
         toast.show(`New order ${formatINR(Number(res.data.totalAmount))}`, "success");
       })
       .catch(() => undefined);
-  }, [storeId, toast]);
+  }, [storeId, toast, enabled]);
 
   useOrderWebSocket({
     onOrdersChanged: (orderId, status) => {

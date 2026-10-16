@@ -42,8 +42,8 @@ export function ConfirmDialog({ visible, title, message, confirmLabel, cancelLab
 }
 
 const styles = StyleSheet.create({
-  footer: { flexDirection: "row", gap: 10, paddingHorizontal: 16, paddingBottom: 8 },
+  footer: { flexDirection: "row", gap: 10, paddingBottom: 8 },
   btn: { flex: 1 },
-  body: { paddingHorizontal: 16, paddingBottom: 12, gap: 12 },
+  body: { paddingBottom: 12, gap: 12 },
   message: { fontFamily: fonts.medium, fontSize: 14.5, lineHeight: 21, color: colors.textSecondary },
 });

@@ -10,6 +10,7 @@ import { useAuth } from "../lib/auth-context";
 import { useStore } from "../lib/store-context";
 import { useToast } from "../lib/toast-context";
 import { useAccountSummary } from "../lib/use-account-summary";
+import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { DeletionSummary } from "../components/account/DeletionSummary";
 import { colors, fonts } from "../constants/theme";
 
@@ -98,10 +99,12 @@ export default function DeleteAccountScreen() {
   const summary = useAccountSummary(isAuthenticated, selectedStore?.id);
   const { step, phone, otp, loading, error, changeOtp, submit } = useAccountDeletion();
   const reviewing = step === "review";
+  const keyboard = useKeyboardReveal();
 
   return (
-    <KeyboardAvoidingView style={styles.flex} behavior={Platform.OS === "ios" ? "padding" : undefined}>
-      <ScrollView style={styles.container} contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
+    <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
+      <KeyboardAvoidingView style={styles.flex} behavior={Platform.OS === "ios" ? "padding" : undefined} keyboardVerticalOffset={keyboard.topOffset}>
+      <ScrollView keyboardDismissMode="on-drag" ref={keyboard.scrollRef} onScroll={keyboard.onScroll} scrollEventThrottle={16} style={styles.container} contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
         <View style={styles.hero}>
           <View style={styles.heroIcon}>
             <Ionicons name="person-remove-outline" size={26} color={colors.error} />
@@ -133,6 +136,7 @@ export default function DeleteAccountScreen() {
         </TouchableOpacity>
       </ScrollView>
     </KeyboardAvoidingView>
+    </View>
   );
 }
 

@@ -6,6 +6,8 @@ export interface BrandRecord {
   themeColor: string | null;
   themeColorSecondary: string | null;
   popularity: number;
+  /** null = master brand; set = the organization's own local brand */
+  organizationId: string | null;
 }
 
 /** GET /brands (list) adds product counts; GET /brands/:id does not */

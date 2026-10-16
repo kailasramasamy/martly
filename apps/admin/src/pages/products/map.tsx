@@ -1,3 +1,4 @@
+import { can } from "@martly/shared/permissions";
 import { useState, useEffect, useCallback } from "react";
 import { useParams, useNavigate } from "react-router";
 import { useApiUrl, useGetIdentity } from "@refinedev/core";
@@ -71,9 +72,8 @@ export const ProductMap = () => {
   const navigate = useNavigate();
   const apiUrl = useApiUrl();
   const { message } = App.useApp();
-  const { data: identity } = useGetIdentity<{ role: string }>();
-  const role = identity?.role;
-  const canMapUnmap = role === "SUPER_ADMIN" || role === "ORG_ADMIN";
+  const { data: identity } = useGetIdentity<{ role: string; permissions?: string[] }>();
+  const canMapUnmap = can(identity, "store-products", "create");
 
   const [product, setProduct] = useState<Product | null>(null);
   const [stores, setStores] = useState<StoreRecord[]>([]);

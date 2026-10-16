@@ -26,7 +26,7 @@ function problem(d: UserDraft, creating: boolean, isSuper: boolean): string | nu
   return null;
 }
 
-export function UserForm({ user }: { user?: UserDetail }) {
+export function UserForm({ user, addOns = [] }: { user?: UserDetail; addOns?: string[] }) {
   const router = useRouter();
   const toast = useToast();
   const { user: me } = useAuth();
@@ -35,7 +35,7 @@ export function UserForm({ user }: { user?: UserDetail }) {
   const creating = !user;
   const [draft, setDraft] = useState<UserDraft>({
     name: user?.name ?? "", email: user?.email ?? "", phone: user?.phone ?? "", password: "",
-    role: user?.role ?? "", storeIds: user?.userStores.map((us) => us.store.id) ?? [],
+    role: user?.role ?? "", storeIds: user?.userStores.map((us) => us.store.id) ?? [], addOns,
   });
   const roles = [...new Set([...(user ? [user.role] : []), ...(isSuper ? ALL_ROLES : ORG_ADMIN_ASSIGNABLE_ROLES)])];
 
@@ -44,7 +44,7 @@ export function UserForm({ user }: { user?: UserDetail }) {
     if (invalid) return toast.show(invalid, "error");
     const result = await run(() => saveUser(user, { ...draft, isSuper }), creating ? "User created" : "User updated");
     if (!result) return;
-    if (result.failed > 0) toast.show(`${result.failed} store change(s) failed. Check the assignments and retry.`, "error");
+    if (result.failed > 0) toast.show(`${result.failed} change(s) failed. Check store access and responsibilities, then retry.`, "error");
     if (creating && result.failed > 0) router.replace(`/manage/users/${result.id}`);
     else router.back();
   };
@@ -61,7 +61,7 @@ export function UserForm({ user }: { user?: UserDetail }) {
       actions={<Button label={creating ? "Create user" : "Save changes"} onPress={save} loading={running} style={styles.flex} />}
     >
       <UserFields draft={draft} set={(patch) => setDraft((d) => ({ ...d, ...patch }))} roles={roles} creating={creating} isSuper={isSuper} />
-      {user && can(me?.role ?? "", "users", "delete") && user.id !== me?.id && (
+      {user && can(me, "users", "delete") && user.id !== me?.id && (
         <SectionCard title="Danger zone">
           <DeleteAction title="Delete this user?" message="This permanently removes the user along with their orders, reviews and store assignments." loading={running} onConfirm={remove} />
         </SectionCard>

@@ -1,3 +1,6 @@
+import type { OrderDetailItem } from "../orders/types";
+import type { DaySummary } from "../rider/types";
+
 export interface TripStats {
   total: number;
   active: number;
@@ -11,6 +14,7 @@ export interface Rider {
   email: string;
   createdAt: string;
   tripStats: TripStats;
+  today: DaySummary | null;
 }
 
 export interface RiderOption {
@@ -20,20 +24,29 @@ export interface RiderOption {
   email: string;
 }
 
-export interface BoardOrder {
+/** What the order menu needs: board rows and trip stops both carry it */
+export interface MenuOrder {
   id: string;
+  storeId: string;
   status: string;
   totalAmount: string;
+  paymentMethod?: string;
+  paymentStatus?: string;
+  walletAmountUsed?: string | null;
+  loyaltyPointsUsed?: number | null;
   fulfillmentType: "DELIVERY" | "PICKUP";
   deliveryAddress: string | null;
   deliveryPincode: string | null;
-  deliverySlotId: string | null;
   deliveryTripId: string | null;
+  user: { id: string; name: string; phone: string | null };
+  items: OrderDetailItem[];
+}
+
+export interface BoardOrder extends MenuOrder {
+  deliverySlotId: string | null;
   slotStartTime: string | null;
   slotEndTime: string | null;
   createdAt: string;
-  user: { id: string; name: string };
-  items: { quantity: number; product: { name: string } }[];
   deliveryTrip: { id: string; status: string; rider: { id: string; name: string; phone: string | null } } | null;
 }
 
@@ -52,20 +65,11 @@ export interface BoardData {
   pickup: BoardOrder[];
 }
 
-export interface TripOrder {
-  id: string;
-  status: string;
-  totalAmount: string;
-  deliveryAddress: string | null;
-  deliveryPincode: string | null;
-  user: { id: string; name: string };
-}
-
 export interface Trip {
   id: string;
   status: "CREATED" | "IN_PROGRESS" | "COMPLETED" | "CANCELLED";
   startedAt: string | null;
   createdAt: string;
   rider: { id: string; name: string; phone: string | null };
-  orders: TripOrder[];
+  orders: MenuOrder[];
 }

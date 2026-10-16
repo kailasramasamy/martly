@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { api } from "../api";
 import { toQuery, type QueryValue } from "./query";
+import { useRefreshOnFocus } from "./use-refresh-on-focus";
 
 interface PagedListState<T, M> {
   items: T[];
@@ -12,6 +13,8 @@ interface PagedListState<T, M> {
   loadingMore: boolean;
   error: string | null;
   refresh: () => Promise<void>;
+  /** Reload page 1 without the pull-to-refresh spinner */
+  reload: () => void;
   loadMore: () => void;
   /** Replace one item in place after a mutation, without refetching */
   updateItem: (id: string, patch: Partial<T>) => void;
@@ -49,8 +52,10 @@ export function usePagedList<T extends { id: string }, M = Record<string, never>
     setPage(nextPage);
   }, [path, paramsKey, pageSize]);
 
-  const run = useCallback(async (nextPage: number, mode: "initial" | "refresh" | "more") => {
-    const setFlag = mode === "initial" ? setLoading : mode === "refresh" ? setRefreshing : setLoadingMore;
+  /** "silent" reloads without the pull-to-refresh spinner (e.g. on returning to a screen) */
+  const run = useCallback(async (nextPage: number, mode: "initial" | "refresh" | "more" | "silent") => {
+    const flags = { initial: setLoading, refresh: setRefreshing, more: setLoadingMore, silent: () => undefined };
+    const setFlag = flags[mode];
     setFlag(true);
     setError(null);
     try {
@@ -71,6 +76,10 @@ export function usePagedList<T extends { id: string }, M = Record<string, never>
   }, [enabled, run]);
 
   const refresh = useCallback(() => run(1, "refresh"), [run]);
+  // Background reload: a programmatic RefreshControl spinner on iOS can leave a gap above the list when it ends
+  const reload = useCallback(() => run(1, "silent"), [run]);
+  // Coming back to the screen (e.g. after adding or editing a record) shows the latest list
+  useRefreshOnFocus(useCallback(() => { if (enabled) reload(); }, [enabled, reload]));
   const loadMore = useCallback(() => {
     if (!loading && !refreshing && !loadingMore && page < totalPages) run(page + 1, "more");
   }, [loading, refreshing, loadingMore, page, totalPages, run]);
@@ -78,5 +87,5 @@ export function usePagedList<T extends { id: string }, M = Record<string, never>
     setItems((prev) => prev.map((it) => (it.id === id ? { ...it, ...patch } : it)));
   }, []);
 
-  return { items, total, meta, loading, refreshing, loadingMore, error, refresh, loadMore, updateItem };
+  return { items, total, meta, loading, refreshing, loadingMore, error, refresh, reload, loadMore, updateItem };
 }

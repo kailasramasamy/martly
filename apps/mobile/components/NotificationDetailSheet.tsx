@@ -171,7 +171,7 @@ export function NotificationDetailSheet({
         )}
 
         {/* Body (markdown) */}
-        <ScrollView
+        <ScrollView keyboardDismissMode="on-drag"
           style={styles.bodyScroll}
           contentContainerStyle={styles.bodyContent}
           bounces={false}

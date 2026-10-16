@@ -38,6 +38,7 @@ import { FestiveHero } from "../../components/home/FestiveHero";
 import { BannerCarousel } from "../../components/home/BannerCarousel";
 import { PlusPromoStrip } from "../../components/PlusPromoStrip";
 import type { Store, StoreProduct, HomeFeed, Banner, FestiveTile } from "../../lib/types";
+import { TabBottomDock } from "../../components/TabIcon";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
@@ -48,6 +49,8 @@ const CATEGORY_TILE_SIZE = Math.floor((SCREEN_WIDTH - H_PADDING * 2 - 32 - 12 * 
 
 export default function HomeScreen() {
   const tabBarScroll = useTabBarAutoHide();
+  // Height of the footer docked above the tab bar, so the list scrolls clear of it
+  const [dockHeight, setDockHeight] = useState(0);
   const { stores, selectedStore, setSelectedStore, loading: storesLoading, userArea, refreshStores } = useStore();
   const { isMember } = useMembership();
   const { isBasketMode } = useBasketMode();
@@ -201,9 +204,9 @@ export default function HomeScreen() {
         {/* ── Fixed Header ── */}
         <HomeHeader store={selectedStore} userArea={userArea} onPickStore={() => setShowStorePicker(true)} tint={headerTint} collapsed={tabBarScroll.headerCollapsed} />
 
-        <ScrollView {...tabBarScroll.scrollProps}
+        <ScrollView keyboardDismissMode="on-drag" {...tabBarScroll.scrollProps}
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={styles.scrollContent}
+          contentContainerStyle={tabBarScroll.contentStyle(styles.scrollContent, dockHeight)}
           refreshControl={
             <RefreshControl
               refreshing={refreshing}
@@ -445,7 +448,9 @@ export default function HomeScreen() {
         </ScrollView>
 
         {/* ── Cart / Basket Floating Bar ── */}
-        <FloatingCart aboveTabBar />
+        <TabBottomDock onLayout={(e) => setDockHeight(e.nativeEvent.layout.height)}>
+          <FloatingCart aboveTabBar />
+        </TabBottomDock>
 
 
         {/* ── Popup Banner Modal ── */}
@@ -514,7 +519,7 @@ export default function HomeScreen() {
               )}
             </View>
 
-            <FlatList
+            <FlatList keyboardDismissMode="on-drag"
               data={filteredStores}
               keyExtractor={(item) => item.id}
               contentContainerStyle={styles.modalList}

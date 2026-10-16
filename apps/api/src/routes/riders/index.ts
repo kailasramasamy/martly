@@ -3,11 +3,13 @@ import type { ApiResponse } from "@martly/shared/types";
 import { createRiderSchema, updateRiderSchema } from "@martly/shared/schemas";
 import bcrypt from "bcryptjs";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { storeRiderSummary } from "../../services/delivery/rider.js";
 
 const RIDER_ROLES = { in: ["RIDER", "STAFF"] as ("RIDER" | "STAFF")[] };
-const auth = [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")];
+const auth = [authenticate, requirePermission(Permission.RIDERS_MANAGE)];
 
 export async function riderRoutes(app: FastifyInstance) {
   // List riders for a store (with trip stats)
@@ -40,6 +42,7 @@ export async function riderRoutes(app: FastifyInstance) {
     // Build stats map
     const statsMap: Record<string, { total: number; active: number; completed: number }> = {};
     for (const row of tripCounts) {
+      if (!row.riderId) continue;
       if (!statsMap[row.riderId]) {
         statsMap[row.riderId] = { total: 0, active: 0, completed: 0 };
       }
@@ -52,6 +55,8 @@ export async function riderRoutes(app: FastifyInstance) {
       }
     }
 
+    // Today's deliveries and cash, so the manager can check what each rider hands over
+    const today = await storeRiderSummary(app.prisma, storeId);
     const riders = userStores.map((us) => ({
       id: us.user.id,
       name: us.user.name,
@@ -59,6 +64,7 @@ export async function riderRoutes(app: FastifyInstance) {
       email: us.user.email,
       createdAt: us.user.createdAt,
       tripStats: statsMap[us.user.id] ?? { total: 0, active: 0, completed: 0 },
+      today: today[us.user.id] ?? null,
     }));
 
     return { success: true, data: riders } satisfies ApiResponse<typeof riders>;

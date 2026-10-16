@@ -130,6 +130,7 @@ export const NOTIFICATION_TYPE_CONFIG: Record<string, { color: string; label: st
 };
 
 export const TRIP_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
+  PLANNED: { color: "default", label: "Planned" },
   CREATED: { color: "blue", label: "Created" },
   IN_PROGRESS: { color: "orange", label: "In Progress" },
   COMPLETED: { color: "green", label: "Completed" },
@@ -220,4 +221,12 @@ export const CATALOG_DRAFT_STATUS_CONFIG: Record<string, { color: string; label:
   DUPLICATE: { color: "cyan", label: "Already listed" },
   FAILED: { color: "red", label: "Failed" },
   DISCARDED: { color: "default", label: "Discarded" },
+};
+
+export const COUNT_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
+  DRAFT: { color: "default", label: "Draft" },
+  SUBMITTED: { color: "orange", label: "Awaiting approval" },
+  RECOUNT: { color: "volcano", label: "Recount" },
+  APPROVED: { color: "green", label: "Approved" },
+  REJECTED: { color: "red", label: "Rejected" },
 };

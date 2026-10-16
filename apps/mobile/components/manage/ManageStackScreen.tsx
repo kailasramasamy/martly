@@ -2,7 +2,7 @@ import { useEffect, type ReactNode } from "react";
 import { View, ScrollView, KeyboardAvoidingView, Platform, RefreshControl, ActivityIndicator, StyleSheet } from "react-native";
 import { Stack } from "expo-router";
 import { colors } from "../../constants/theme";
-import { useKeyboardReveal } from "../../lib/manage/use-keyboard-reveal";
+import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
 import { manage } from "./ui/tokens";
 import { EmptyState } from "./ui/EmptyState";
 import { StickyActionBar } from "./ui/StickyActionBar";

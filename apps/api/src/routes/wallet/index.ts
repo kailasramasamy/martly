@@ -1,7 +1,8 @@
 import type { FastifyInstance, FastifyRequest } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { requireRole } from "../../middleware/authorize.js";
+import { requirePermission } from "../../middleware/authorize.js";
+import { Permission } from "@martly/shared/constants";
 import {
   createRazorpayOrder,
   ensureRazorpayCustomer,
@@ -157,7 +158,7 @@ export async function walletRoutes(app: FastifyInstance) {
   // Admin: Get wallet balance + transactions for a specific user
   app.get<{ Params: { userId: string } }>(
     "/admin/:userId",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.REFUNDS_ISSUE)] },
     async (request, reply) => {
       const { userId } = request.params;
       if (!(await customerInOrg(request, userId))) return reply.forbidden("Access denied");
@@ -198,7 +199,7 @@ export async function walletRoutes(app: FastifyInstance) {
   // Admin: Credit or debit a user's wallet
   app.post<{ Params: { userId: string } }>(
     "/admin/:userId/adjust",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requirePermission(Permission.REFUNDS_ISSUE)] },
     async (request, reply) => {
       const { userId } = request.params;
       if (!(await customerInOrg(request, userId))) return reply.forbidden("Access denied");
