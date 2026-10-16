@@ -1,0 +1,3315 @@
+[
+ {
+  "title": "Chia Seeds",
+  "handle": "chia-seeds",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145259_2-nutriwish-raw-chia-seeds-premium.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095587_3-nutriwish-chia-seeds.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145281_2-nutriwish-chia-seeds-premium.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40101309_1-nutriwish-chia-seeds-premium.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "850",
+    "compare_at_price": "850",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145282_2-nutriwish-chia-seeds-premium.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145259_2-nutriwish-raw-chia-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145259-2_2-nutriwish-raw-chia-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145259-3_2-nutriwish-raw-chia-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145259-4_2-nutriwish-raw-chia-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095587_3-nutriwish-chia-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145281_2-nutriwish-chia-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40101309_1-nutriwish-chia-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145282_2-nutriwish-chia-seeds-premium.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Raw Chia Seeds that are loaded with health benefits and nutrients. It is 100% natural, free from any chemicals or preservatives and best selected. They are slightly subtle and nutty flavoured seeds. It can be eaten raw, soaked in juice, added to porridge, pudding, smoothies or added to baked goods. It can also sprinkle them on top of cereal, yogurt, vegetables or rice dishes.",
+   "ingredients": "Premium Chia Seeds",
+   "usageInstructions": "It is a great mid-meal snack.\nSprinkle over breakfast cereals, salads, raitas, curds, soups or even smoothies.\nSoaked in juice, added to porridge, pudding, smoothies or added to baked goods.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Raw Flax Seeds",
+  "handle": "raw-flax-seeds",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145250_2-nutriwish-raw-flax-seeds.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145251_2-nutriwish-raw-flax-seeds.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145252_1-nutriwish-raw-flax-seeds.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145250_2-nutriwish-raw-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145250-2_2-nutriwish-raw-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145250-3_2-nutriwish-raw-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145250-4_1-nutriwish-raw-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145250-5_1-nutriwish-raw-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145250-6_1-nutriwish-raw-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145250-7_1-nutriwish-raw-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145251_2-nutriwish-raw-flax-seeds.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Raw Flax Seeds that are loaded with health benefits and nutrients. It is perfectly crunchy and is 100% natural and high-quality. These seeds are raw to get maximum health benefits. It is very high in fiber and provides good amounts of protein. It is also rich in fat and Omega 3. It is a great mid-meal snack, sprinkled over breakfast, soups or can be ground into a powder and added to food.",
+   "ingredients": "Raw Flax Seeds",
+   "usageInstructions": "It is a great mid meal snack.\nSprinkle over breakfast cereals, salads, raitas, curds, soups or even smoothies.\nGround into powder and add to food.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Roasted & Salted Flax Seeds",
+  "handle": "roasted-salted-flax-seeds",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145253_4-nutriwish-roasted-salted-flax-seeds.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145254_2-nutriwish-roasted-salted-flax-seeds.jpg"
+    }
+   },
+   {
+    "title": "1.5kg",
+    "price": "600",
+    "compare_at_price": "600",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40112629_1-nutriwish-flax-seeds-premium-roasted-salted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145253_4-nutriwish-roasted-salted-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145253-2_4-nutriwish-roasted-salted-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145253-3_4-nutriwish-roasted-salted-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145253-4_4-nutriwish-roasted-salted-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145253-5_3-nutriwish-roasted-salted-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145253-6_3-nutriwish-roasted-salted-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145253-7_3-nutriwish-roasted-salted-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145254_2-nutriwish-roasted-salted-flax-seeds.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Roasted and Salted Flax Seeds that are loaded with health benefits and nutrients. It is perfectly crunchy and is 100% natural and high-quality. These seeds are slightly roasted and salted to get maximum health benefits and the right crunch. It is very high in fiber and provides good amounts of protein. It is also rich in fat and Omega 3. It is a great mid-meal snack, sprinkled over breakfast cereals, salads, raitas, curds or even smoothies.",
+   "ingredients": "Roasted & Salted Flax Seeds",
+   "usageInstructions": "It is a great mid-meal snack.\nSprinkle over breakfast cereals, salads, raitas, curds or even smoothies.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Roasted Flax Seeds",
+  "handle": "roasted-flax-seeds",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40091985_2-nutriwish-flax-seeds-roasted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091985_2-nutriwish-flax-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091985-2_2-nutriwish-flax-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091985-3_1-nutriwish-flax-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091985-4_1-nutriwish-flax-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091985-5_1-nutriwish-flax-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091985-6_1-nutriwish-flax-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091985-7_1-nutriwish-flax-seeds-roasted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Roasted Flax Seeds that are loaded with health benefits and nutrients. It is perfectly crunchy and is 100% natural and high-quality. These seeds are slightly roasted to get maximum health benefits and the right crunch. It is very high in fibre and provides good amounts of protein. It is also rich in fat and Omega 3. It is a great mid-meal snack, sprinkled over breakfast cereals, salads, raitas, curds or even smoothies.",
+   "ingredients": "Flax Seeds, Antioxidant (E319), Nature Identical Nut Flavour, Extra Virgin Olive Oil",
+   "usageInstructions": "It is a great mid-meal snack.\nSprinkle over breakfast cereals, salads, raitas, curds or even smoothies.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Basil Seeds",
+  "handle": "basil-seeds",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145275_2-nutriwish-basil-seeds-premium.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "600",
+    "compare_at_price": "600",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145276_2-nutriwish-basil-seeds-premium.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145275_2-nutriwish-basil-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145275-2_2-nutriwish-basil-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145275-3_2-nutriwish-basil-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145275-4_2-nutriwish-basil-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145275-5_1-nutriwish-basil-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145275-6_1-nutriwish-basil-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145275-7_1-nutriwish-basil-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145276_2-nutriwish-basil-seeds-premium.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Basil Raw Seeds that are loaded with health benefits and nutrients. The basil seeds are a little larger than chia seeds but have a similar nutritional profile. Chia seeds contain more than twice the omega-3 fat but a little less fiber compared to basil seeds. They swell and form a gel when soaked. Basil seeds have a mild flavour of basil. They can be used in smoothies and baked goods. It also can be sprinkled on a salad, porridges, ice cream, oatmeal, yogurt, etc.",
+   "ingredients": "Basil Seeds",
+   "usageInstructions": "First, soak Raw Basil Seeds in water for 2-3 minutes.\nThen use them the way you want (as porridge, yogurt, salad etc.).\nThey can also be added to your bakery goods",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Alfalfa Seeds",
+  "handle": "alfalfa-seeds",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186791_1-nutriwish-alfalfa-seeds.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "700",
+    "compare_at_price": "700",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186789_1-nutriwish-alfalfa-seeds.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186791_1-nutriwish-alfalfa-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186791-2_1-nutriwish-alfalfa-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186791-3_1-nutriwish-alfalfa-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186791-4_1-nutriwish-alfalfa-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186791-5_1-nutriwish-alfalfa-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186791-6_1-nutriwish-alfalfa-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186789_1-nutriwish-alfalfa-seeds.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Alfalfa is a herb that is very healthy and beneficial that can be used in powdered form. Nutriwish brings to you Alfalfa Seeds that is rich in vitamins C, and K. This powder is low in cholesterol and rich in vitamins. It has a mild, nutty, and subtly sweet flavour which is beneficial for kidney conditions, bladder and prostate conditions, and to increase urine flow and other disorders. You can add it to everyday smoothie or muesli.",
+   "ingredients": "Alfalfa Seeds",
+   "usageInstructions": "The seeds are used in the form of sprouts.\nThey can be added to salads, coleslaw and soups.\nThey are a nice garnish for cream soups.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Halim Seeds",
+  "handle": "halim-seeds",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240132_1-nutriwish-halim-seeds-rich-source-of-iron.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240133_1-nutriwish-halim-seeds-rich-source-of-iron.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240132_1-nutriwish-halim-seeds-rich-source-of-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240132-2_1-nutriwish-halim-seeds-rich-source-of-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240132-3_1-nutriwish-halim-seeds-rich-source-of-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240132-4_1-nutriwish-halim-seeds-rich-source-of-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240132-5_1-nutriwish-halim-seeds-rich-source-of-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240132-6_1-nutriwish-halim-seeds-rich-source-of-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240132-7_1-nutriwish-halim-seeds-rich-source-of-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240133_1-nutriwish-halim-seeds-rich-source-of-iron.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish Halim seeds, also known as Garden Cress seeds are a great healthy addition to salads and soups. Halim seeds have many health benefits such as aiding better digestion, increased haemoglobin and better memory. Being an excellent source of iron, Nutriwish Halim seeds are recommended to those looking to gain muscle mass. At Nutriwish, we offer completely organic Halim seeds with no additives or preservatives. These produce great results if consumed early in the day after soaking them in water.",
+   "ingredients": "Halim Seeds",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kalonji Seeds",
+  "handle": "kalonji-seeds",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240130_1-nutriwish-kalonji-seeds-rich-in-health-benefits.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "500",
+    "compare_at_price": "500",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240129_1-nutriwish-kalonji-seeds-rich-in-health-benefits.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "850",
+    "compare_at_price": "850",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240128_1-nutriwish-kalonji-seeds-rich-in-health-benefits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240130_1-nutriwish-kalonji-seeds-rich-in-health-benefits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240130-2_1-nutriwish-kalonji-seeds-rich-in-health-benefits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240130-3_1-nutriwish-kalonji-seeds-rich-in-health-benefits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240130-4_1-nutriwish-kalonji-seeds-rich-in-health-benefits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240130-5_1-nutriwish-kalonji-seeds-rich-in-health-benefits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240130-6_1-nutriwish-kalonji-seeds-rich-in-health-benefits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240130-7_1-nutriwish-kalonji-seeds-rich-in-health-benefits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240130-8_1-nutriwish-kalonji-seeds-rich-in-health-benefits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish Kalonji seeds are a must-have if you wish to add a tempting aroma to your food. These are available in two variants i.e, raw kalonji seeds and roasted kalonji seeds. Kalonji seeds provide numerous health benefits like improved cardiovascular health, improved skin condition, strengthened immunity, better memory and much more. Nutriwish kalonji seeds are loaded with various vitamins along with protein, iron, sodium, potassium and calcium. Packaged with all safety measures in place, Nutriwish Kalonji seeds are one of a kind in the market as these are 100% natural with no pesticides or artificial ingredients.",
+   "ingredients": "Kalonji Seeds",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Raw Pumpkin Seeds",
+  "handle": "raw-pumpkin-seeds",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1.25kg",
+    "price": "1500",
+    "compare_at_price": "1500",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40112628_2-nutriwish-raw-pumpkin-seeds-premium.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40112628_2-nutriwish-raw-pumpkin-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40112628-2_2-nutriwish-raw-pumpkin-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40112628-3_1-nutriwish-raw-pumpkin-seeds-premium.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Raw Pumpkin Seeds that are loaded with health benefits and nutrients. It can be eaten either raw, roasted or salted which provides your taste buds a tasty treat. These seeds are soft and have a chewy texture with a subtle nutty flavour. It is a rich source of fiber, magnesium, manganese, iron, zinc, and copper. It is a great mid-meal snack, sprinkled over breakfast or soups. It is 100% natural, free from any chemicals or preservatives and best selected.",
+   "ingredients": "Raw Pumpkin Seeds",
+   "usageInstructions": "It is a great mid-meal snack.\nSprinkle over breakfast cereals, salads, raitas, curds, soups or even smoothies.\nGround into powder and add to food.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Raw Sunflower Seeds",
+  "handle": "raw-sunflower-seeds",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40115720_2-nutriwish-raw-sunflower-seeds-premium.jpg"
+    }
+   },
+   {
+    "title": "600g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40115721_2-nutriwish-raw-sunflower-seeds-premium.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40115720_2-nutriwish-raw-sunflower-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40115720-2_2-nutriwish-raw-sunflower-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40115720-3_2-nutriwish-raw-sunflower-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40115720-4_1-nutriwish-raw-sunflower-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40115720-5_1-nutriwish-raw-sunflower-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40115720-6_1-nutriwish-raw-sunflower-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40115720-7_1-nutriwish-raw-sunflower-seeds-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40115721_2-nutriwish-raw-sunflower-seeds-premium.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Raw Sunflower Seeds that are loaded with health benefits and nutrients. It is 100% natural, free from any chemicals or preservatives and best selected. It has a distinct nutty flavour and high nutritional value. Sunflower seeds are rich in vitamin E, which functions as an antioxidant and is critical to eye health. It is a great mid-meal snack, sprinkled over breakfast, soups or can be ground into a powder and added to food.",
+   "ingredients": "Raw Sunflower Seeds",
+   "usageInstructions": "It is a great mid-meal snack.\nSprinkle over breakfast cereals, salads, raitas, curds, soups or even smoothies.\nGround into powder and add to food.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Roasted Watermelon Seeds",
+  "handle": "roasted-watermelon-seeds",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40091984_2-nutriwish-watermelon-seeds-roasted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091984_2-nutriwish-watermelon-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091984-2_2-nutriwish-watermelon-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091984-3_1-nutriwish-watermelon-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091984-4_1-nutriwish-watermelon-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091984-5_1-nutriwish-watermelon-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091984-6_1-nutriwish-watermelon-seeds-roasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091984-7_1-nutriwish-watermelon-seeds-roasted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Roasted Watermelon Seeds that are loaded with health benefits and nutrients. These seeds are slightly roasted to get maximum health benefits and the right crunch. It has a high content of vitamins and nutrients. It nourishes your hair and skin because of their copper content. It is a great mid-meal snack, sprinkled over breakfast or soups. It is 100% natural, free from any chemicals or preservatives and best selected.",
+   "ingredients": "Watermelon Seeds, Antioxidant (E319), Nature Identical Nut Flavour, Extra Virgin Olive Oil",
+   "usageInstructions": "It is a great mid-meal snack.\nSprinkle over breakfast cereals, salads, raitas, curds or even smoothies.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Blanched Almond Flakes",
+  "handle": "blanched-almond-flakes",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205967_1-nutriwish-blanched-almond-flakes.jpg"
+    },
+    "barcode": "8906085171722"
+   },
+   {
+    "title": "200g",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205968_1-nutriwish-blanched-almond-flakes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205967_1-nutriwish-blanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205967-2_1-nutriwish-blanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205967-3_1-nutriwish-blanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205967-4_1-nutriwish-blanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205967-5_1-nutriwish-blanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205967-6_1-nutriwish-blanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205967-7_1-nutriwish-blanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205968_1-nutriwish-blanched-almond-flakes.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Appease your appetite with Nutriwish’s Blanched Almond Flakes. Boiled to the right temperature, shaved to flakes, and roasted and tossed to perfection, Nutriwish Blanched Almond Flakes pacify great appeal and taste. An impressive ingredient for appetizers, side dishes, and fancy desserts, these almond flakes are loaded with vitamins, minerals, and dietary fiber. Ideal for garnishing cakes and cookies; roast and toss in couscous; sprinkle on apple pie before baking; roast and mix into salads.",
+   "ingredients": "Blanched Almond Flakes",
+   "usageInstructions": "Sprinkle on the top of salads, mix them with cereals and add them to both savory and sweet dishes",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Unblanched Almond Flakes",
+  "handle": "unblanched-almond-flakes",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205969_1-nutriwish-unblanched-almond-flakes.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205970_1-nutriwish-unblanched-almond-flakes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205969_1-nutriwish-unblanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205969-2_1-nutriwish-unblanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205969-3_1-nutriwish-unblanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205969-4_1-nutriwish-unblanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205969-5_1-nutriwish-unblanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205969-6_1-nutriwish-unblanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205969-7_1-nutriwish-unblanched-almond-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205970_1-nutriwish-unblanched-almond-flakes.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish Unblanched Almond Flakes have a deliciously creamy nut flavour, pale cream colour and firm, fresh texture. These Californian nitty gritties are energising and tasty, while providing a peculiar taste that would make you fall in love with it with the very first bite. These almonds are a great snack for kids and are vegan and keto-friendly. Indulge in the nutty delicacies straight from the package or toss them with your meats and veggies or garnish them over your smoothies and salads—these flakes add more nutrition and value to your diet.",
+   "ingredients": "California Almonds",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Energy": "655 Kcal",
+    "Protein": "20.8g",
+    "Carbohydrates": "10.5g",
+    "Sugar": "4.8g",
+    "Dietary Fiber": "11.8g",
+    "Fat": "58.9g",
+    "Saturated Fat": "3.88g",
+    "Cholesterol": "0 mg",
+    "Sodium": "1 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rolled Oats",
+  "handle": "rolled-oats",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186777_1-nutriwish-rolled-oats.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145269_4-nutriwish-gluten-free-rolled-oats-premium.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145270_3-nutriwish-premium-rolled-oats-gluten-free.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186777_1-nutriwish-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186777-2_1-nutriwish-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186777-3_1-nutriwish-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186777-4_1-nutriwish-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186777-5_1-nutriwish-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186777-6_1-nutriwish-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145269_4-nutriwish-gluten-free-rolled-oats-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145270_3-nutriwish-premium-rolled-oats-gluten-free.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Rolled Oats that are loaded with health benefits and nutrients. These are lightly processed whole-grain food. Before being rolled into flat flakes under heavy rollers and then stabilized by being lightly toasted. It is rich in protein, fiber and is an excellent source of Vitamin B Complex and iron. It is the healthiest grain. Cook it with milk or water and add fruits or veggies for your choice. This makes a perfect healthy breakfast.",
+   "ingredients": "Rolled Oats",
+   "usageInstructions": "Cook water and milk in a saucepan.\nAdd oats and stir occasionally, until the oats are soft and have absorbed most of the liquid, about 5 minutes.\nAdd your favourite nuts and fruits to a piping hot bowl of oatmeal and enjoy it to your taste.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Steel Cut Oats",
+  "handle": "steel-cut-oats",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186778_1-nutriwish-steel-cut-oats.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145271_2-nutriwish-gluten-free-steel-cut-oats-premium.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145272_1-nutriwish-gluten-free-steel-cut-oats-premium.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "650",
+    "compare_at_price": "650",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192027_1-nutriwish-steel-cut-oats.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186778_1-nutriwish-steel-cut-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186778-2_2-nutriwish-steel-cut-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186778-3_2-nutriwish-steel-cut-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186778-4_2-nutriwish-steel-cut-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186778-5_2-nutriwish-steel-cut-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186778-6_2-nutriwish-steel-cut-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145271_2-nutriwish-gluten-free-steel-cut-oats-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145272_1-nutriwish-gluten-free-steel-cut-oats-premium.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Steel Cut Oats that are loaded with health benefits and nutrients. These are oat groats that have been sliced into smaller pieces. It is rich in protein, fiber and is an excellent source of Vitamin B Complex and iron. It takes more time to cook than other oats. Cook it with milk and add fruits for your choice. This makes a perfect healthy breakfast.",
+   "ingredients": "Steel Cut Oats",
+   "usageInstructions": "Cook water and milk in a saucepan.\nAdd oats and stir occasionally, until the oats are soft and have absorbed most of the liquid, about 20-30 minutes.\nAdd your favourite nuts and fruits to a piping hot bowl of oatmeal and enjoy it to your taste.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Gluten-Free Oat Bran",
+  "handle": "gluten-free-oat-bran",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145248_2-nutriwish-gluten-free-oat-bran.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145249_2-nutriwish-gluten-free-oat-bran.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145248_2-nutriwish-gluten-free-oat-bran.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145248-2_2-nutriwish-gluten-free-oat-bran.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145248-3_2-nutriwish-gluten-free-oat-bran.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145248-4_2-nutriwish-gluten-free-oat-bran.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145248-5_1-nutriwish-gluten-free-oat-bran.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145248-6_1-nutriwish-gluten-free-oat-bran.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145248-7_1-nutriwish-gluten-free-oat-bran.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145249_2-nutriwish-gluten-free-oat-bran.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "NutriwishÂ Oat Bran is a better source of protein, B vitamins, iron and soluble fibre. It is high in soluble fibre, promoting healthy digestion and reducing the risk of certain diseases. It is creamy with an almost sweet oaty richness.",
+   "ingredients": "Oat Bran",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "40 g",
+    "Calories": "155 kcal",
+    "Calories from Fat": "30 kcal",
+    "Total Fat": "4 g",
+    "Saturated Fat": "0.6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg",
+    "Total Carbohydrate": "20 g",
+    "Dietary Fiber": "7.5 g",
+    "Soluble Fiber": "3 g",
+    "Insoluble Fiber": "4 g",
+    "Sugars": "0 g",
+    "Protein": "10 g",
+    "Vitamin A": "0 %",
+    "Vitamin C": "0 %",
+    "Calcium": "7 %",
+    "Iron": "3 %",
+    "Vitamin E": "0 %"
+   },
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Oat Flakes",
+  "handle": "oat-flakes",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192023_1-nutriwish-oat-flakes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192023_1-nutriwish-oat-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192023-2_1-nutriwish-oat-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192023-3_1-nutriwish-oat-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192023-4_1-nutriwish-oat-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192023-5_1-nutriwish-oat-flakes.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Oats Flakes that are loaded with health benefits and nutrients. These are lightly processed whole-grain food. Before being rolled into flat flakes under heavy rollers and then stabilized by being lightly toasted. It is rich in protein, fiber and is an excellent source of Vitamin B Complex and iron. It is the healthiest grain. Cook it with milk or water and add fruits or veggies for your choice. This makes a perfect healthy breakfast.",
+   "ingredients": "Oat Flakes",
+   "usageInstructions": "Keep it aside in boiling water overnight and let it be covered. In the morning, heat it up quickly and consume it raw.\nYou can even cook in the morning by boiling it in water for about 25-30 minutes. Add milk, honey or sorghum or any other sweetener of your choice and garnish it with dried fruits and nuts.\nYou can also cook delicious upma or poha with oats.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Barley Flakes",
+  "handle": "barley-flakes",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205974_1-nutriwish-barley-flakes.jpg"
+    },
+    "barcode": "8906085171944"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205974_1-nutriwish-barley-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205974-2_1-nutriwish-barley-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205974-3_1-nutriwish-barley-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205974-4_1-nutriwish-barley-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205974-5_1-nutriwish-barley-flakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205974-6_1-nutriwish-barley-flakes.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "All-natural hulled barley flakes from Nutriwish are the barley version of rolled oats and can be cooked up like oatmeal to make a simple, healthy, and delicious hot cereal. The oldest nutrient powerhouse, yet an unappreciated cereal, Barley Flakes from Nutriwish are cleaned, rolled, and slightly toasted, to add a shade of sweetness to any recipe. Prepare barley flakes with boiling water or milk for a hot and savoury barley porridge. Makes a naturally low-fat, high iron meal.",
+   "ingredients": "Barley Flakes",
+   "usageInstructions": "Boil one part Barley flakes with three parts waters to prepare the Barley meal. Add Barley flakes to any recipe for your dose of quality protein without compromising on taste.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "White Quinoa",
+  "handle": "white-quinoa",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095582_1-nutriwish-quinoa-gluten-free.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145273_2-nutriwish-gluten-free-white-quinoa-premium.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145274_2-nutriwish-gluten-free-white-quinoa-premium.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "650",
+    "compare_at_price": "650",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192025_1-nutriwish-white-quinoa.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095582_1-nutriwish-quinoa-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095582-2_1-nutriwish-quinoa-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095582-3_1-nutriwish-quinoa-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145273_2-nutriwish-gluten-free-white-quinoa-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145274_2-nutriwish-gluten-free-white-quinoa-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192025_1-nutriwish-white-quinoa.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Quinoa that is loaded with health benefits and nutrients. This quinoa is naturally gluten-free. It is a good mixture of vitamins, minerals and nutrients. The gluten-free property of quinoa makes it more healthy and beneficial. This quinoa provides you with all the necessary amount of nutrients. Cook it with water and add veggies or seeds of your choice. This makes a perfectly healthy meal. It is 100 % natural and unprocessed.",
+   "ingredients": "White Quinoa",
+   "usageInstructions": "It can be replaced as a healthy snack. You can make upma, poha, porridge with quinoa.\nIt can also be consumed in place of rice during meals.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "5-in-1 Gluten Free Flour",
+  "handle": "5-in-1-gluten-free-flour",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205977_1-nutriwish-5-in-1-gluten-free-flour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205977_1-nutriwish-5-in-1-gluten-free-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205977-2_1-nutriwish-5-in-1-gluten-free-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205977-3_1-nutriwish-5-in-1-gluten-free-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205977-4_1-nutriwish-5-in-1-gluten-free-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205977-5_1-nutriwish-5-in-1-gluten-free-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205977-6_1-nutriwish-5-in-1-gluten-free-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205977-7_1-nutriwish-5-in-1-gluten-free-flour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish has curated a special 5-in-1 blend of gluten-free flour with a nutritious mix of coconut flour, almond flour, oat flour, flax seed powder and quinoa flour, making it easy to transform traditional cookies, cakes, brownies, muffins and pancakes into gluten-free treats. With no hidden gluten, Nutriwish 5-in-1 Gluten-free flour is the only organic, vegan, gluten-free flour mix in the market. Embrace this cup-for-cup alternative for your regular wheat-flour based recipes.\nfeatures:\nKnown to boost heart health\nExcellent source of dietary fibre\nHelps in weight management by suppressing hunger prangs\nRich source of omega-3 fatty acids\nContains high level of magnesium, B vitamins and calcium",
+   "ingredients": "20% Coconut Flour, 8% Almond Flour, 22% Oat Flour, 20% Flax Seed Powder, 30% Quinoa Flour",
+   "usageInstructions": "Use as a gluten-free alternative to regular wheat flour",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Quinoa Flour",
+  "handle": "quinoa-flour",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095583_2-nutriwish-quinoa-flour-gluten-free.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192026_1-nutriwish-quinoa-flour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095583_2-nutriwish-quinoa-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095583-2_2-nutriwish-quinoa-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095583-3_2-nutriwish-quinoa-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095583-4_1-nutriwish-quinoa-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095583-5_1-nutriwish-quinoa-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095583-6_1-nutriwish-quinoa-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095583-7_1-nutriwish-quinoa-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192026_1-nutriwish-quinoa-flour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish Quinoa Flour is made from natural and healthy ingredients. It is made from high-quality and well-selected quinoa. This quinoa is naturally gluten-free. It is a good mixture of vitamins, minerals and nutrients. It is healthy and has several health benefits. It provides you with all the necessary amount of nutrients. This flour has a slightly nutty and earthy flavour which makes it a nutritious alternative to whole wheat flour. The gluten-free property of quinoa makes it more healthy and beneficial.",
+   "ingredients": "Quinoa Flour",
+   "usageInstructions": "It can be used for all baking and bread making.\nYou can make pancakes, muffins, pizza base, pie crusts, etc.\nIt can also be combined with other flours and used to thicken sauces, soups, etc.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Chia Seeds Flour",
+  "handle": "chia-seeds-flour",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192020_1-nutriwish-chia-seeds-flour.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "500",
+    "compare_at_price": "500",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192021_1-nutriwish-chia-seeds-flour.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "850",
+    "compare_at_price": "850",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192022_1-nutriwish-chia-seeds-flour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192020_1-nutriwish-chia-seeds-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192020-2_1-nutriwish-chia-seeds-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192020-3_1-nutriwish-chia-seeds-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192020-4_1-nutriwish-chia-seeds-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192020-5_1-nutriwish-chia-seeds-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192021_1-nutriwish-chia-seeds-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192022_1-nutriwish-chia-seeds-flour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish seeks to help you achieve a healthy and active life that you wish to lead, by delivering nutrition suited to your needs. we deliver an eclectic range of nutritious superfoods from across the world to bring out the super you in you. \nNutriwish 100% Chia Seeds Flour is a rich source of omega-3 fatty acids and package of minerals and vitamins. It is a tremendous plant-based source of protein and is a rich source of omega-3 essential fatty acids or good fats. Excellent source of both soluble and insoluble fibre, chia seeds exhibit a high antioxidant activity, which is associated with the polyphenolic compounds. It helps in weight management by suppressing hunger pangs.",
+   "ingredients": "Chia Seeds Flour",
+   "usageInstructions": "Sprinkle on top of salads, mix with cereals, blend with wheat flour for making healthier bread, incorporate into juices or add to both savoury and sweet dishes.\n Preferably store in a cool and dry place away from moisture.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13618012000351"
+  }
+ },
+ {
+  "title": "Coconut Flour",
+  "handle": "coconut-flour",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186788_1-nutriwish-coconut-flour.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186787_1-nutriwish-coconut-flour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186788_1-nutriwish-coconut-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186788-2_1-nutriwish-coconut-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186788-3_1-nutriwish-coconut-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186788-4_1-nutriwish-coconut-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186788-5_1-nutriwish-coconut-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186788-6_1-nutriwish-coconut-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186787_1-nutriwish-coconut-flour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish Coconut Flour is made from the dried meat of the coconut. It is nutritious and has all the goodness of the coconut. It is low in carb and is gluten-free which makes it a great alternative to wheat flour. It has several benefits like blood sugar stability, better digestion, heart health and eventually weight loss. This flour has a mild, sweet taste that is fairly distinct. It is well paired along with other strong flavours like cacao, coffee, bananas, etc.",
+   "ingredients": "Coconut Flour",
+   "usageInstructions": "It can be used in baking, particularly paleo, grain- and gluten-free baking.\nIt can also be used to make cakes, cookies, bread, and muffins.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Oat Flour",
+  "handle": "oat-flour",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145279_1-nutriwish-oat-flour-premium.jpg"
+    },
+    "barcode": "8906085170848"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145279_1-nutriwish-oat-flour-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145279-2_1-nutriwish-oat-flour-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145279-3_1-nutriwish-oat-flour-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145279-4_1-nutriwish-oat-flour-premium.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish Oat Flour is made from natural and healthy ingredients. It is made from high-quality and well-selected oats. This quinoa is naturally gluten-free. It is a good mixture of vitamins, minerals and nutrients. The gluten-free property makes it more healthy and beneficial. It is healthy and has several health benefits. It provides you with all the necessary amount of nutrients.",
+   "ingredients": "Oat Flour",
+   "storageInstructions": "*Store in a cool, dry place\n*Keep away from direct sunlight and moisture",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Tapioca Flour",
+  "handle": "tapioca-flour",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145280_2-nutriwish-premium-tapioca-flour-gluten-free.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145280_2-nutriwish-premium-tapioca-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145280-2_2-nutriwish-premium-tapioca-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145280-3_2-nutriwish-premium-tapioca-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145280-4_2-nutriwish-premium-tapioca-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145280-5_1-nutriwish-premium-tapioca-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145280-6_1-nutriwish-premium-tapioca-flour-gluten-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145280-7_1-nutriwish-premium-tapioca-flour-gluten-free.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This Nutriwish Tapioca Flour is a healthy gluten-free alternative to regular wheat flour. The Tapioca flour is loaded with important vitamins, minerals and antioxidant plant compounds. Also, the flour is high in antioxidants and beneficial plant compounds called polyphenols. Nutriwish Premium Tapioca Flour is one of the most versatile gluten-free flours that can put a spring in the step of wheat-free cakes, cookies, and bread, making it an indispensable part of gluten-free baking. It’s starchy texture and sweet aftertaste makes it a staple in gluten-free baking and a fantastic thickening agent in soups, sauces and pie fillings. Munch in the thick, chewy delicacies made from Tapioca flour as you watch your sweet intake at the same time.",
+   "usageInstructions": "Use tapioca flour in place of regular wheat flour for a more satiating meal.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13618012000351"
+  }
+ },
+ {
+  "title": "Almond Flour",
+  "handle": "almond-flour",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145244_2-nutriwish-almond-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145244_2-nutriwish-almond-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145244-2_2-nutriwish-almond-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145244-3_2-nutriwish-almond-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145244-4_2-nutriwish-almond-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145244-5_2-nutriwish-almond-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145244-6_1-nutriwish-almond-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy low carb, healthy treats with the Nutriwish Almond Flour. Ideal for baking, this flour is milled from premium, high-quality skinless almonds. The fine texture makes it the perfect low-carb substitute for maida when baking breads, cakes, cookies, or making pancakes. Rich in protein, fibre, and healthy fats, this flour is suitable for those on a carb-restricted diet. It is even safe for diabetics. Give your low-carb lifestyle a richer flavour!",
+   "ingredients": "Almond Powder",
+   "usageInstructions": "Use as gluten-free alternative to regular wheat flour. It can also be blended into smoothies/ juices as a flavoring agent",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Flax Seed Powder",
+  "handle": "flax-seed-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145277_2-nutriwish-flax-seed-powder.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145278_1-nutriwish-flax-seed-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145277_2-nutriwish-flax-seed-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145277-2_2-nutriwish-flax-seed-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145277-3_2-nutriwish-flax-seed-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145277-4_2-nutriwish-flax-seed-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145277-5_1-nutriwish-flax-seed-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145277-6_1-nutriwish-flax-seed-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145277-7_1-nutriwish-flax-seed-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145278_1-nutriwish-flax-seed-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Flax Seeds Powder that is loaded with health benefits and nutrients. It is perfectly crunchy and is natural and high-quality. These seeds are raw to get maximum health benefits. It is very high in fibre and provides good amounts of protein. It is also rich in fat and Omega 3. It can be sprinkled over breakfast, soups or can be added to food.",
+   "ingredients": "Cold Milled Flax Seed Powder",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "10 g",
+    "Calories": "55 kcal",
+    "Calories from Fat": "36 kcal",
+    "Total Fat": "4 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "3 mg",
+    "Total Carbohydrate": "3 g",
+    "Dietary Fiber": "3 g",
+    "Sugars": "0 g",
+    "Protein": "2 g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Calcium": "3%",
+    "Iron": "3%"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Flax-Chia Seed Powder",
+  "handle": "flax-chia-seed-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226664_1-nutriwish-flax-chia-seed-powder-rich-source-of-energy-fibre-protein.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "600",
+    "compare_at_price": "600",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226662_1-nutriwish-flax-chia-seed-powder-rich-source-of-energy-fibre-protein.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226664_1-nutriwish-flax-chia-seed-powder-rich-source-of-energy-fibre-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226664-2_1-nutriwish-flax-chia-seed-powder-rich-source-of-energy-fibre-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226664-3_1-nutriwish-flax-chia-seed-powder-rich-source-of-energy-fibre-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226664-4_1-nutriwish-flax-chia-seed-powder-rich-source-of-energy-fibre-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226664-5_1-nutriwish-flax-chia-seed-powder-rich-source-of-energy-fibre-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226664-6_1-nutriwish-flax-chia-seed-powder-rich-source-of-energy-fibre-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226662_1-nutriwish-flax-chia-seed-powder-rich-source-of-energy-fibre-protein.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Make your boring meals exciting while staying conscious of your health. Nutriwish Flax-Chia seed powder is one of the richest nutrient sources and energy boosters available, especially for vegetarians. It also helps in weight management while being rich in protein and minerals. Flax-Chia seed powder is extremely rich in fibre and provides a good amount of protein to the body. It also contains high levels of Omega-3 fats, which help in the effective building of your inner strength. Sprinkle this powder over breakfast cereals, salads, raitas, curds, or soups and experience the best taste.",
+   "ingredients": "Flax-Chia Seed Powder",
+   "storageInstructions": "Sprinkle on top of salads, mix with cereals, blend with wheat flour for making healthier bread, incorporate into juices or add to both savoury and sweet dishes.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pumpkin Seed Powder",
+  "handle": "pumpkin-seed-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237720_2-nutriwish-pumpkin-seed-powder-rich-in-protein-vitamins-fibre.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237720_2-nutriwish-pumpkin-seed-powder-rich-in-protein-vitamins-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237720-2_2-nutriwish-pumpkin-seed-powder-rich-in-protein-vitamins-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237720-3_2-nutriwish-pumpkin-seed-powder-rich-in-protein-vitamins-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237720-4_2-nutriwish-pumpkin-seed-powder-rich-in-protein-vitamins-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237720-5_2-nutriwish-pumpkin-seed-powder-rich-in-protein-vitamins-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237720-6_2-nutriwish-pumpkin-seed-powder-rich-in-protein-vitamins-fibre.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy your snacking time with the tasty yet healthy Nutriwish pumpkin seed powder. Filled with protein, vitamins and fiber, pumpkin seed powder can be consumed by adding to smoothies, salads or snacks. Nutriwish pumpkin seed powder has various health benefits such as improved sleep, better immunity, fastened weight loss and many more. Pumpkin seeds are known to aid improve gut health as well. Pumpkin seed powder is also known to aid with weight management. Being rich in zinc, it is also helpful in improving skin health.",
+   "ingredients": "Pumpkin Seed Powder",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Moringa Powder",
+  "handle": "moringa-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145266_2-nutriwish-moringa-powder.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186782_1-nutriwish-moringa-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145266_2-nutriwish-moringa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145266-2_2-nutriwish-moringa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145266-3_2-nutriwish-moringa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145266-4_2-nutriwish-moringa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145266-5_2-nutriwish-moringa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145266-6_1-nutriwish-moringa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145266-7_1-nutriwish-moringa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186782_1-nutriwish-moringa-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This Nutriwish Moringa powder is a powerful organic super food is the richest nutrient source, energy booster, and one of the best nutrient supplement for vegetarians. It helps in weight reduction and is rich in protein, minerals and phyto-nutrients that keep your body healthy.  Moringa powder provides a concentrated amount of nutrients, including iron, calcium, magnesium, amino acids, chlorophyll, and vitamins A, C and E. Its rich nutrient content boosts immunity, kills harmful bacteria in the digestive system, and rids the body of wastes. Nutriwish seeks to help you achieve the healthy and active life that you wish to lead, by delivering nutrition suited to your needs.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13618012000351"
+  }
+ },
+ {
+  "title": "Alfalfa Powder",
+  "handle": "alfalfa-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186792_1-nutriwish-alfalfa-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186792_1-nutriwish-alfalfa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186792-2_2-nutriwish-alfalfa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186792-3_2-nutriwish-alfalfa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186792-4_2-nutriwish-alfalfa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186792-5_2-nutriwish-alfalfa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186792-6_2-nutriwish-alfalfa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186792-7_1-nutriwish-alfalfa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186792-8_1-nutriwish-alfalfa-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Alfalfa is a herb that is very healthy and beneficial that can be used in powdered form. Nutty Yogi brings to you Organic Alfalfa Powder that is rich in vitamins A, C, E, and K. This powder is low in calories and rich in vitamins. It has a sweet, bitter, grassy flavour which is beneficial in treating diabetes, high cholesterol, arthritis, urinary tract infections, menstrual problems, and an array of other disorders. You can add it to everyday smoothie or muesli.",
+   "ingredients": "Alfalfa Powder",
+   "usageInstructions": "It can be used as a supplement to your daily diet.\nAdd it to your everyday smoothie, muesli, or have a teaspoon a day with water.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Barley Grass Powder",
+  "handle": "barley-grass-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095581_2-nutriwish-barley-grass-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095581_2-nutriwish-barley-grass-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095581-2_2-nutriwish-barley-grass-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095581-3_2-nutriwish-barley-grass-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095581-5_1-nutriwish-barley-grass-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095581-6_1-nutriwish-barley-grass-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095581-7_1-nutriwish-barley-grass-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A concentrated source of nearly three dozen vitamins and minerals, Nutriwish Barley Grass Powder is rich in vitamins A, C, B1, B2, folic acid, and B12; calcium; iron; potassium; and chlorophyll. Put 1 or 2 heaped teaspoonfuls in an empty glass, add a little of water, stir well to make a paste. Add the rest of the water, stir well and enjoy.",
+   "ingredients": "Barley Grass Powder",
+   "storageInstructions": "Storage as per packaging",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Wheat Grass Powder",
+  "handle": "wheat-grass-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095580_2-nutriwish-wheat-grass-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095580_2-nutriwish-wheat-grass-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095580-2_2-nutriwish-wheat-grass-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095580-3_2-nutriwish-wheat-grass-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095580-4_1-nutriwish-wheat-grass-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095580-5_1-nutriwish-wheat-grass-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095580-6_1-nutriwish-wheat-grass-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095580-7_1-nutriwish-wheat-grass-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Wheat Grass Powder which is rich in anti-oxidants and a great source of immunity booster. It is made from pure wheat grass that is healthy and beneficial. It may promote weight loss, enhance heart health, and support better blood sugar control. It has a bitter, earthy flavour and is green in colour. It is mostly used in juices, supplements, and greens powders.",
+   "ingredients": "Wheat Grass Powder",
+   "usageInstructions": "It can be added to smoothies to give them a drink a green colour.\nYou can also mix it into fruit or vegetable juices.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Spirulina Powder",
+  "handle": "spirulina-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095579_2-nutriwish-spirulina-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095579_2-nutriwish-spirulina-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095579-2_2-nutriwish-spirulina-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095579-3_2-nutriwish-spirulina-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095579-4_1-nutriwish-spirulina-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095579-5_1-nutriwish-spirulina-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095579-6_1-nutriwish-spirulina-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095579-7_1-nutriwish-spirulina-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Spirulina Powder which contains several nutrients, including B vitamins, beta-carotene, and vitamin E. Spirulina is a type of blue-green algae that has antioxidants, minerals, chlorophyll, and phycocyanobilin. It tastes like the sea, or like a mouthful of lake water. This powder is green and earthy with a slightly sulphuric edge. It has a pleasant taste and is healthy. You can add it to smoothies, salads or soups.",
+   "ingredients": "Spirulina Powder",
+   "usageInstructions": "It can be added to smoothies to give them a drink a green colour.\nSprinkle it on salads or in soups.\nYou can also mix it into energy balls and fruit or vegetable juices.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Super Greens Powder",
+  "handle": "super-greens-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145268_2-nutriwish-super-greens-powder.jpg"
+    },
+    "barcode": "8906085170732"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145268_2-nutriwish-super-greens-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145268-2_2-nutriwish-super-greens-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145268-3_2-nutriwish-super-greens-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145268-4_2-nutriwish-super-greens-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145268-5_2-nutriwish-super-greens-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145268-6_1-nutriwish-super-greens-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145268-7_1-nutriwish-super-greens-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This Nutriwish Super Greens Powder is a powerful organic superfood is the richest nutrient source, energy booster, and one of the best nutrient supplement for vegetarians. It helps in weight reduction and is rich in protein, minerals and phytonutrients that keep your body healthy.  Super Greens Powder provides a concentrated amount of nutrients, including iron, calcium, magnesium, amino acids, chlorophyll, and vitamins A, C and E. Its rich nutrient content boosts immunity, kills harmful bacteria in the digestive system, and rids the body of wastes. Nutriwish seeks to help you achieve the healthy and active life that you wish to lead, by delivering nutrition suited to your needs.",
+   "ingredients": "Moringa Leaf Powder, Barley Grass Powder, Wheat Grass Powder, Alfalfa Powder, Amla Powder, Stevia Powder, Spirulina Powder, Maca, Spinach Powder",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13618012000351"
+  }
+ },
+ {
+  "title": "Ashwagandha Powder",
+  "handle": "ashwagandha-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226654_1-nutriwish-ashwagandha-powder-superfood-for-weight-management-rich-in-vitamin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226654_1-nutriwish-ashwagandha-powder-superfood-for-weight-management-rich-in-vitamin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226654-2_1-nutriwish-ashwagandha-powder-superfood-for-weight-management-rich-in-vitamin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226654-3_1-nutriwish-ashwagandha-powder-superfood-for-weight-management-rich-in-vitamin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226654-4_1-nutriwish-ashwagandha-powder-superfood-for-weight-management-rich-in-vitamin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226654-5_1-nutriwish-ashwagandha-powder-superfood-for-weight-management-rich-in-vitamin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226654-6_1-nutriwish-ashwagandha-powder-superfood-for-weight-management-rich-in-vitamin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226654-7_1-nutriwish-ashwagandha-powder-superfood-for-weight-management-rich-in-vitamin.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Reap the benefits of a sedative, a rejuvenating tonic, and an anti-inflammatory agent in Nutriwish Ashwagandha Powder. Known as one of the most powerful herbs in Ayurvedic healing, Nutriwish Ashwagandha Powder helps to assist the body to adapt to the negative effects of chronic stress by increasing energy, strength, and stamina. Make the most of this Indian ginseng, by having a beverage that contains a teaspoon of powdered ashwagandha before bedtime.",
+   "ingredients": "Ashwagandha Powder",
+   "storageInstructions": "3-6 grams twice daily with milk/ warm water or as directed by the Physician.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Jamun Seed Powder",
+  "handle": "jamun-seed-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237726_2-nutriwish-jamun-seed-powder-manages-diabetes-obesity.jpg"
+    },
+    "barcode": "8906085173252"
+   },
+   {
+    "title": "1kg",
+    "price": "700",
+    "compare_at_price": "700",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237725_2-nutriwish-jamun-seed-powder-manages-diabetes-obesity.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237726_2-nutriwish-jamun-seed-powder-manages-diabetes-obesity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237726-2_2-nutriwish-jamun-seed-powder-manages-diabetes-obesity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237726-3_2-nutriwish-jamun-seed-powder-manages-diabetes-obesity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237726-4_2-nutriwish-jamun-seed-powder-manages-diabetes-obesity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237726-5_2-nutriwish-jamun-seed-powder-manages-diabetes-obesity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237726-6_2-nutriwish-jamun-seed-powder-manages-diabetes-obesity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237726-7_1-nutriwish-jamun-seed-powder-manages-diabetes-obesity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237725_2-nutriwish-jamun-seed-powder-manages-diabetes-obesity.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "We proudly bring our premium quality Jamun seed powder with loaded health benefits. Jamun seed powder is known to help in managing various health issues including diabetes and obesity. Nutriwish Jamun seed powder should be consumed twice daily for maximum benefits. Being rich in antioxidants like flavonoids, the jamun seed powder boosts immunity by flushing out harmful free radicals and microorganisms out of the body. The nutrients present in Nutriwish Jamun Seed Powder also aid in maintaining the levels of fatty acids in the body.",
+   "ingredients": "Jamun Seed Powder",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kalonji Seed Powder",
+  "handle": "kalonji-seed-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237721_2-nutriwish-kalonji-seed-powder-supports-immunity.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "500",
+    "compare_at_price": "500",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237723_2-nutriwish-kalonji-seed-powder-supports-immunity.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "850",
+    "compare_at_price": "850",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237724_2-nutriwish-kalonji-seed-powder-supports-immunity.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237721_2-nutriwish-kalonji-seed-powder-supports-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237721-2_2-nutriwish-kalonji-seed-powder-supports-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237721-3_2-nutriwish-kalonji-seed-powder-supports-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237721-4_2-nutriwish-kalonji-seed-powder-supports-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237721-5_2-nutriwish-kalonji-seed-powder-supports-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237721-6_2-nutriwish-kalonji-seed-powder-supports-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237721-7_2-nutriwish-kalonji-seed-powder-supports-immunity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237721-8_1-nutriwish-kalonji-seed-powder-supports-immunity.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish Kalonji seeds are a must-have if you wish to add a tempting aroma to your food. These are available in two variants i.e, raw kalonji seeds and roasted kalonji seeds. Kalonji seeds provide numerous health benefits like improved cardiovascular health, improved skin condition, strengthened immunity, better memory and much more. Nutriwish kalonji seeds are loaded with various vitamins along with protein, iron, sodium, potassium and calcium. Packaged with all safety measures in place, Nutriwish Kalonji seeds are one of a kind in the market as these are 100% natural with no pesticides or artificial ingredients.",
+   "ingredients": "Kalonji Seed Powder",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Green Coffee Beans",
+  "handle": "green-coffee-beans",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095586_2-nutriwish-coffee-beans-green-organically-grown-in-araku-valley.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095586_2-nutriwish-coffee-beans-green-organically-grown-in-araku-valley.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095586-2_2-nutriwish-coffee-beans-green-organically-grown-in-araku-valley.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095586-3_2-nutriwish-coffee-beans-green-organically-grown-in-araku-valley.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095586-5_1-nutriwish-coffee-beans-green-organically-grown-in-araku-valley.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095586-6_1-nutriwish-coffee-beans-green-organically-grown-in-araku-valley.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095586-7_1-nutriwish-coffee-beans-green-organically-grown-in-araku-valley.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish Green Coffee Beans are organically grown in Araku Valley. They are a good source of chlorogenic acid and antioxidants. It helps in reducing the absorption of carbohydrates, lower blood sugar levels, etc. These coffee beans are unroasted and are naturally green. They are untreated coffee grains and do not contain any added chemicals. It has a mild flavour that tastes more like herbal tea than coffee.",
+   "ingredients": "Green Coffee Beans",
+   "nutritionalInfo": {
+    "Calories": "420",
+    "Carbs": "62g",
+    "Fat": "16g",
+    "Protein": "7g"
+   },
+   "usageInstructions": "Soak the beans overnight in a bowl of water.\nThe next day, boil them along with the same water on high flame.\nKeep the mixture to cool completely and then filter out the flavoured water in a cup and enjoy.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Green Coffee Powder",
+  "handle": "green-coffee-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145291_4-nutriwish-green-coffee-powder.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145292_1-nutriwish-green-coffee-powder.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145293_1-nutriwish-green-coffee-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145291_4-nutriwish-green-coffee-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145291-2_4-nutriwish-green-coffee-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145291-3_3-nutriwish-green-coffee-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145291-4_3-nutriwish-green-coffee-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145291-5_1-nutriwish-green-coffee-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145291-6_1-nutriwish-green-coffee-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145292_1-nutriwish-green-coffee-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145293_1-nutriwish-green-coffee-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish Green Coffee Powder is organically grown in Araku Valley. They are a good source of chlorogenic acid and antioxidants. It helps in reducing the absorption of carbohydrates, lower blood sugar levels, etc. This coffee powder is unroasted and is naturally green. They are untreated coffee grains and do not contain any added chemicals. It has a mild flavour that tastes more like herbal tea than coffee.",
+   "ingredients": "Green Coffee Powder",
+   "nutritionalInfo": {
+    "Calories": "20",
+    "Carbs": "4g",
+    "Fat": "0g",
+    "Protein": "0g"
+   },
+   "usageInstructions": "Take 1/2-1 teaspoon of Green coffee powder in a cup.\nAdd 1 cup of hot water to it.\nLet it stand for 5-6 minutes.\nStrain and add a pinch of Cinnamon powder for better taste.\nDrink it before taking meals for at least 1-2 months for better results.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Pea Protein Powder",
+  "handle": "pea-protein-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "1200",
+    "compare_at_price": "1200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205980_1-nutriwish-pea-protein-powder.jpg"
+    },
+    "barcode": "8906085171982"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205980_1-nutriwish-pea-protein-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205980-2_1-nutriwish-pea-protein-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205980-3_1-nutriwish-pea-protein-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205980-4_1-nutriwish-pea-protein-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205980-5_1-nutriwish-pea-protein-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205980-6_1-nutriwish-pea-protein-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Get high quality, vegan source of protein extracted from green peas. Gluten-free, dairy-free, and soy-free; Nutriwish Pea’s superior amino acid profile results from processing via mechanical water-extraction without the use of chemicals. This pure and unflavoured pea protein concentrate can be easily added to everyday dishes without changing their taste or texture. It contains an exorbitant amount of iron, arginine, and branched-chain amino acids and offers benefits like improved muscle growth, feelings of fullness, and heart health.\nfeatures:\nUseful as part of weight loss regimen\nRich in iron and magnesium\nGreat vegetarian source of quality protein\nHelps in building muscle mass\nMay help to reduce blood pressure",
+   "ingredients": "Pea Protein Concentrate",
+   "usageInstructions": "Add 1 scoop of pea protein powder to 250-300ml cold water or mix into your favorite smoothies and juices to give yourself a protein boost",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Whey Protein Powder",
+  "handle": "whey-protein-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145267_2-nutriwish-unflavoured-whey-protein.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145267_2-nutriwish-unflavoured-whey-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145267-2_2-nutriwish-unflavoured-whey-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145267-3_2-nutriwish-unflavoured-whey-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145267-4_2-nutriwish-unflavoured-whey-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145267-5_2-nutriwish-unflavoured-whey-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145267-6_1-nutriwish-unflavoured-whey-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145267-7_1-nutriwish-unflavoured-whey-protein.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This Premium whey protein concentrate for the healthy power-packed breakfast to bring out the super-you in you. Also, this Whey protein supplementation along with resistance exercise can help improve muscle protein synthesis and promote the growth of lean tissue mass. It is a prebiotic that helps good bacteria in the gut and can improve intestinal disorders. Whey protein may treat inflammation.",
+   "ingredients": "Unflavoured Whey Protein Concentrate ( Wpc 80 )",
+   "usageInstructions": "Mix Nutriwish whey protein powder with flavouring like cocoa powder to create your own customized protein drinks.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13618012000351"
+  }
+ },
+ {
+  "title": "Erythritol Sweetener",
+  "handle": "erythritol-sweetener",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237719_2-nutriwish-erythritol-healthy-sweetener.jpg"
+    },
+    "barcode": "8906085173153"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237719_2-nutriwish-erythritol-healthy-sweetener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237719-2_2-nutriwish-erythritol-healthy-sweetener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237719-3_2-nutriwish-erythritol-healthy-sweetener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237719-4_2-nutriwish-erythritol-healthy-sweetener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237719-5_2-nutriwish-erythritol-healthy-sweetener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237719-6_2-nutriwish-erythritol-healthy-sweetener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237719-7_2-nutriwish-erythritol-healthy-sweetener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237719-8_1-nutriwish-erythritol-healthy-sweetener.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Add this natural sweetener to your food if you're looking for a healthy sugar substitute! Amongst all the sugar substitutes available in the market, Erythritol has the least calorie content making it the healthiest option. Erythritol from Nutriwish has a similar taste to sugar and is proven to have zero side effects. Erythritol being a natural sweetener can easily be used for baking and cooking purposes in place of sugar.",
+   "ingredients": "Erythritol",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Xylitol Sweetener",
+  "handle": "xylitol-sweetener",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226657_1-nutriwish-xylitol-super-food-rich-source-of-vitamin-helps-manage-weight.jpg"
+    },
+    "barcode": "8906085172361"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226657_1-nutriwish-xylitol-super-food-rich-source-of-vitamin-helps-manage-weight.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226657-2_1-nutriwish-xylitol-super-food-rich-source-of-vitamin-helps-manage-weight.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226657-3_1-nutriwish-xylitol-super-food-rich-source-of-vitamin-helps-manage-weight.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226657-4_1-nutriwish-xylitol-super-food-rich-source-of-vitamin-helps-manage-weight.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226657-5_1-nutriwish-xylitol-super-food-rich-source-of-vitamin-helps-manage-weight.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226657-6_1-nutriwish-xylitol-super-food-rich-source-of-vitamin-helps-manage-weight.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226657-7_1-nutriwish-xylitol-super-food-rich-source-of-vitamin-helps-manage-weight.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Add some sweetness to your bland food while keeping your calorie count low with Xylitol by Nutriwish. A wise replacement for your table sugar, Xylitol presents you with a salivating sweet taste and caters to your sweet cravings. Unlike other sweeteners, Nutriwish's Xylitol is entirely natural without any artificial extracts in it. It contains 40% lesser calories than the regular sugar while serving you with a similar taste. It is also very helpful in maintaining good dental health. Another impeccable benefit of Xylitol is its anti-aging benefits along with the strengthening of your immunity.",
+   "ingredients": "Xylitol",
+   "storageInstructions": "Xylitol can be used as flavour enhancer, stabilizer and also as a sugar substitute in baking and confectionaries.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cocoa Powder",
+  "handle": "cocoa-powder",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205982_1-nutriwish-cocoa-powder.jpg"
+    },
+    "barcode": "8906085172002"
+   },
+   {
+    "title": "1kg",
+    "price": "650",
+    "compare_at_price": "650",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205983_1-nutriwish-cocoa-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205982_1-nutriwish-cocoa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205982-2_1-nutriwish-cocoa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205982-3_1-nutriwish-cocoa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205982-4_1-nutriwish-cocoa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205982-5_1-nutriwish-cocoa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205982-6_1-nutriwish-cocoa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205982-7_1-nutriwish-cocoa-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205983_1-nutriwish-cocoa-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mildly sweet, perfectly balanced, and overly delicious, Nutriwish Cocoa Powder is a versatile pantry staple and super-secret ingredient of master bakers everywhere. Sourced from the finest quality cocoa beans of Great Indian western ghats, it is raw and unsweetened with a rich black colour and delicious taste. Add some color and flavor to your baking batter and make your confectionaries smooth and decadent. Use Nutriwish Cocoa Powder for rolling chocolate truffles, Cocoa drinks, cakes, baking, Chocolate ganache, desserts and hot chocolate drinks.",
+   "ingredients": "Cocoa Powder",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India",
+   "usageInstructions": "Add cocoa powder as per recipe in cakes, cookies, muffins and chocolates. Cocoa powder can also be blended into juices and shakes as flavoring agent"
+  }
+ },
+ {
+  "title": "Acacia Gum",
+  "handle": "acacia-gum",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186781_1-nutriwish-acacia-gum-dinkgound.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186780_1-nutriwish-acacia-gum-dinkgound.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "500",
+    "compare_at_price": "500",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186779_1-nutriwish-acacia-gum-dinkgound.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186781_1-nutriwish-acacia-gum-dinkgound.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186781-2_1-nutriwish-acacia-gum-dinkgound.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186781-3_1-nutriwish-acacia-gum-dinkgound.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186781-4_1-nutriwish-acacia-gum-dinkgound.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186781-5_1-nutriwish-acacia-gum-dinkgound.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186781-6_1-nutriwish-acacia-gum-dinkgound.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186780_1-nutriwish-acacia-gum-dinkgound.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186779_1-nutriwish-acacia-gum-dinkgound.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish Acacia Gum is healthy and nutritious. Acacia Gum is also known as gum Arabic, gum Sudani, Arabic gum, gum acacia, acacia, Senegal gum and Indian gum. It is a natural gum that consists of the hardened sap of two species of the acacia tree. It contains water-soluble dietary fibres that improved digestive health. It is used in small doses in a large number of everyday products.",
+   "ingredients": "Acacia Gum",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100 g",
+    "Calories": "120 kcal",
+    "Total Fat": "1.9 g",
+    "Saturated Fat": "0.2 g",
+    "Sodium": "7 mg",
+    "Total Carbohydrate": "21 g",
+    "Dietary Fiber": "2.8 g",
+    "Sugars": "0.9 g",
+    "Protein": "4.4 g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Calcium": "2%",
+    "Iron": "8%"
+   },
+   "storageInstructions": "*Store in a cool and dry place away from moisture",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Himalayan Pink Salt",
+  "handle": "himalayan-pink-salt",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145296_2-nutriwish-himalayan-pink-salt.jpg"
+    },
+    "barcode": "8906085170657"
+   },
+   {
+    "title": "800g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145295_2-nutriwish-himalayan-pink-salt.jpg"
+    }
+   },
+   {
+    "title": "1.25kg",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145294_2-nutriwish-himalayan-pink-salt.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "600",
+    "compare_at_price": "600",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192029_1-nutriwish-himalayan-pink-salt.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145296_2-nutriwish-himalayan-pink-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145296-2_2-nutriwish-himalayan-pink-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145296-3_2-nutriwish-himalayan-pink-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145296-4_2-nutriwish-himalayan-pink-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145296-5_1-nutriwish-himalayan-pink-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145296-6_1-nutriwish-himalayan-pink-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145296-7_1-nutriwish-himalayan-pink-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145295_2-nutriwish-himalayan-pink-salt.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This Himalayan pink salt comes from salt mines 5, 000 feet deep below the Himalayan mountain range. The Himalayan pink salt is a much more balanced and healthy choice in comparison to common table salt. The Pink Himalayan salt has the rich mineral content can help balance the pH levels of your body. Our high quality pink Himalayan salt is one of the purest salts you can find. The nutrients in Himalayan Pink Salt can actually increase the ability of our gastrointestinal tract to absorb other nutrients.",
+   "ingredients": "Himalayan Pink Salt Granules",
+   "storageInstructions": "Use in place of regular table salt for a healthier meal.\nStore in a cool and dry place.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13618012000351"
+  }
+ },
+ {
+  "title": "Himalayan Pink Salt Granules",
+  "handle": "himalayan-pink-salt-granules",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145246_2-nutriwish-himalayan-pink-salt-granules.jpg"
+    },
+    "barcode": "8906085171036"
+   },
+   {
+    "title": "1kg",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145247_2-nutriwish-himalayan-pink-salt-granules.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145246_2-nutriwish-himalayan-pink-salt-granules.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145246-2_2-nutriwish-himalayan-pink-salt-granules.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145246-3_2-nutriwish-himalayan-pink-salt-granules.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145246-4_2-nutriwish-himalayan-pink-salt-granules.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145246-5_1-nutriwish-himalayan-pink-salt-granules.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145246-6_1-nutriwish-himalayan-pink-salt-granules.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145246-7_1-nutriwish-himalayan-pink-salt-granules.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145247_2-nutriwish-himalayan-pink-salt-granules.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This Himalayan pink salt comes from salt mines 5, 000 feet deep below the Himalayan mountain range. Himalayan pink salt is a much more balanced and healthy choice in comparison to common table salt. This Pink Himalayan salt is rich mineral content can help balance the pH level of your body. Our high quality pink Himalayan salt is one of the purest salts you can find. The nutrients in Himalayan Pink Salt can actually increase the ability of our gastrointestinal tract to absorb other nutrients.",
+   "ingredients": "Himalayan Pink Salt Granules",
+   "storageInstructions": "Use in place of regular table salt for a healthier meal.\nStore in a cool and dry place.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13618012000351"
+  }
+ },
+ {
+  "title": "Peanut Butter",
+  "handle": "peanut-butter",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192016_1-nutriwish-peanut-butter.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192016_1-nutriwish-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192016-2_1-nutriwish-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192016-3_1-nutriwish-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192016-4_1-nutriwish-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192016-5_1-nutriwish-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192016-6_1-nutriwish-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192016-7_1-nutriwish-peanut-butter.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish Peanut Butter is healthy and nutritious. This peanut butter is a high source of Vitamin E and proteins. It is made with natural peanuts, sugar and salt. This peanut butter is flavourful. It is a good source of Vitamin E, magnesium, antioxidant and fibre. It is rich smooth and creamy and is perfect to start your morning.",
+   "ingredients": "100% Peanut",
+   "usageInstructions": "Use it to make decadent French toast and almond butter and jam sandwiches.\nYou can also use it as a spread, dip, dressings, desserts, etc.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Peanut Butter With Dark Chocolate",
+  "handle": "peanut-butter-with-dark-chocolate",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205962_1-nutriwish-peanut-butter-with-dark-chocolate.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205965_1-nutriwish-peanut-butter-with-dark-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205962_1-nutriwish-peanut-butter-with-dark-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205962-2_1-nutriwish-peanut-butter-with-dark-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205962-3_1-nutriwish-peanut-butter-with-dark-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205962-4_1-nutriwish-peanut-butter-with-dark-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205962-5_1-nutriwish-peanut-butter-with-dark-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205962-6_1-nutriwish-peanut-butter-with-dark-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205962-7_1-nutriwish-peanut-butter-with-dark-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205965_1-nutriwish-peanut-butter-with-dark-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nut Butter from Nutriwish has no added oil, no added sugar, no added salt and no added preservatives. They are made with whole nuts.",
+   "ingredients": "95% Peanut, 5% Dark Chocolate",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "551.75 kcal",
+    "Protein": "25.874g",
+    "Carbohydrates": "28.26g",
+    "Sugar": "4.55g",
+    "Dietary Fiber": "9.73g",
+    "Fat": "47.34g",
+    "Saturated Fat": "6.37g",
+    "Cholesterol": "0mg",
+    "Sodium": "18.15mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Preferably refrigerate once opened",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Almond Butter",
+  "handle": "almond-butter",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "500",
+    "compare_at_price": "500",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205952_1-nutriwish-almond-butter.jpg"
+    },
+    "barcode": "8906085171814"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205952_1-nutriwish-almond-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205952-2_1-nutriwish-almond-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205952-3_1-nutriwish-almond-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205952-4_1-nutriwish-almond-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205952-5_1-nutriwish-almond-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205952-6_1-nutriwish-almond-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205952-7_1-nutriwish-almond-butter.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enrich your taste buds with the yummy goodness of natural almond butter from Nutriwish. Boost your heart and bone health with a spoonful of almond butter spread over some crispy toast. A daily dose of this can also control blood sugar levels and even prevent some cancers. It’s never too late to hop on this health trend!",
+   "ingredients": "100% California Almonds",
+   "usageInstructions": "Use as healthy spread on toast, pancakes or waffles. It can also be incorporated into smoothies and dipping sauces.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Almond Butter With Moringa",
+  "handle": "almond-butter-with-moringa",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "520",
+    "compare_at_price": "520",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205958_1-nutriwish-almond-butter-with-moringa.jpg"
+    },
+    "barcode": "8906085171869"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205958_1-nutriwish-almond-butter-with-moringa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205958-2_1-nutriwish-almond-butter-with-moringa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205958-3_1-nutriwish-almond-butter-with-moringa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205958-4_1-nutriwish-almond-butter-with-moringa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205958-5_1-nutriwish-almond-butter-with-moringa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205958-6_1-nutriwish-almond-butter-with-moringa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205958-7_1-nutriwish-almond-butter-with-moringa.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the magnificent concoction of soft, smooth almond butter with some powdered moringa from Nutriwish. A perfect combination of fibre-filled almonds and vitamin-enriched moringa, the health benefits of this delicious butter flavour include heart disease prevention, reduced blood sugar levels and enhanced immunity. Slather this delicious butter on your morning toast and start your day on a healthy note!",
+   "ingredients": "90% California Almonds, 10% Moringa",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "fssaiLicense": "13618012000351",
+   "countryOfOrigin": "India",
+   "usageInstructions": "Use as healthy spread on toast, pancakes or waffles. It can also be incorporated into smoothies and dipping sauces."
+  }
+ },
+ {
+  "title": "Acacia Honey",
+  "handle": "acacia-honey",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40085774_2-nutriwish-100-pure-organic-honey-acacia.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085774_2-nutriwish-100-pure-organic-honey-acacia.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085774-2_2-nutriwish-100-pure-organic-honey-acacia.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085774-3_1-nutriwish-100-pure-organic-honey-acacia.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085774-4_1-nutriwish-100-pure-organic-honey-acacia.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085774-5_1-nutriwish-100-pure-organic-honey-acacia.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Acacia Honey which good for your health. It is made from black locust or false acacia tree. This honey has a flower-like aroma and sweet, delicate flavour. It remains liquid longer and crystallizes much slower than any other honey. It has antioxidant and antibacterial properties, it may help speed wound healing and prevent bacterial contamination and infection. It can be stirred into beverages or used in baking.",
+   "ingredients": "100% Pure Organic Acacia Honey",
+   "usageInstructions": "It can be used as a replacement for sugar for creams with cocoa, almonds, hazelnuts and pistachios.\nUse it as a garnish on ice cream.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Ginger Honey",
+  "handle": "ginger-honey",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40085775_2-nutriwish-100-pure-organic-honey-ginger.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085775_2-nutriwish-100-pure-organic-honey-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085775-2_2-nutriwish-100-pure-organic-honey-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085775-3_1-nutriwish-100-pure-organic-honey-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085775-4_1-nutriwish-100-pure-organic-honey-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085775-5_1-nutriwish-100-pure-organic-honey-ginger.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Ginger Honey which good for your health. It is a sweet, thick liquid with a light colour, that gives a mixed flavour. It is a mix of peppery, lemony and sweet taste. This honey is infused with the finest ginger to get the perfect taste. It can be used as a digestive aid, as well as for its antibacterial and anti-inflammatory properties. It is natural and organic. It is free from any added substances.",
+   "ingredients": "Honey, Ginger",
+   "usageInstructions": "Add half a teaspoon to warm water and sip. Don't add to boiling water.\nIt can be used with bread or toast, wafers, nuts, or cereals.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Cinnamon Honey",
+  "handle": "cinnamon-honey",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40085776_2-nutriwish-100-pure-organic-honey-infused-with-cinnamon.jpg"
+    },
+    "barcode": "8906085170015"
+   },
+   {
+    "title": "1kg",
+    "price": "800",
+    "compare_at_price": "800",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145286_2-nutriwish-100-pure-honey-cinnamon.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085776_2-nutriwish-100-pure-organic-honey-infused-with-cinnamon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085776-2_2-nutriwish-100-pure-organic-honey-infused-with-cinnamon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085776-3_1-nutriwish-100-pure-organic-honey-infused-with-cinnamon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085776-4_1-nutriwish-100-pure-organic-honey-infused-with-cinnamon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085776-5_1-nutriwish-100-pure-organic-honey-infused-with-cinnamon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145286_2-nutriwish-100-pure-honey-cinnamon.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Natures delicious secret to good health, Nutriwish Honey is 100% pure and natural. Easily digestible and rich in nutrition, honey is an ideal food for growing children and adults, with great curative properties. Our exquisite Wild honey has a tangy, aromatic and full-bodied taste. It is the strong character of this sumptuous natural product with its dark colour and viscosity that makes our Wild honey so popular. It contains no preservatives, no added sugars, syrups or extenders, no artificial flavourings or colourings.",
+   "ingredients": "100 % Pure Organic Honey - Infused With Cinnamon",
+   "usageInstructions": "Spread honey over a slice of bread or use it in your favourite dishes as an organic sweetener.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Wild Forest Honey",
+  "handle": "wild-forest-honey",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40085773_3-nutriwish-100-pure-organic-honey-wild-forest.jpg"
+    },
+    "barcode": "6280057170022"
+   },
+   {
+    "title": "1kg",
+    "price": "850",
+    "compare_at_price": "850",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145284_5-nutriwish-wild-forest-honey-100-pure-wild-forest-honey.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085773_3-nutriwish-100-pure-organic-honey-wild-forest.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085773-2_3-nutriwish-100-pure-organic-honey-wild-forest.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085773-3_2-nutriwish-100-pure-organic-honey-wild-forest.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085773-4_2-nutriwish-100-pure-organic-honey-wild-forest.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40085773-5_1-nutriwish-100-pure-organic-honey-wild-forest.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40145284_5-nutriwish-wild-forest-honey-100-pure-wild-forest-honey.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Wild Forest Raw Honey which is good for your health. It is smooth, fragrant, perfectly and irresistibly delicious. It can be used as a digestive aid, as well as for its antibacterial and anti-inflammatory properties. This honey contains vitamins, calcium, iron, potassium, magnesium and zinc. It is natural and organic. It is free from any added substances.",
+   "ingredients": "Wild Honey",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "358 Kcals",
+    "Total Fat": "0g",
+    "Cholesterol": "0g",
+    "Protein": "0g",
+    "Total Carbohydrate": "90g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ },
+ {
+  "title": "Premium Quinoa",
+  "handle": "premium-quinoa",
+  "vendor": "Nutriwish",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "800g",
+    "price": "600",
+    "compare_at_price": "600",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40112630_1-nutriwish-quinoa-premium-protein-rich-superfood.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40112630_1-nutriwish-quinoa-premium-protein-rich-superfood.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40112630-2_1-nutriwish-quinoa-premium-protein-rich-superfood.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40112630-3_1-nutriwish-quinoa-premium-protein-rich-superfood.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutriwish brings to you Quinoa that is loaded with health benefits and nutrients. This quinoa is naturally gluten-free. It is a good mixture of vitamins, minerals and nutrients. The gluten-free property of quinoa makes it more healthy and beneficial. This quinoa provides you with all the necessary amount of nutrients. Cook it with water and add veggies or seeds of your choice. This makes a perfectly healthy meal. It is 100 % natural and unprocessed.",
+   "ingredients": "White Quinoa",
+   "usageInstructions": "It can be replaced as a healthy snack. You can make upma, poha, porridge with quinoa.\nIt can also be consumed in place of rice during meals.",
+   "manufacturerName": "Feyn Foods (OPC) Pvt. Ltd."
+  }
+ }
+]
