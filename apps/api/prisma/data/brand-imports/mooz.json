@@ -1,0 +1,326 @@
+{
+  "brand": "Mooz",
+  "manufacturer": "Wellness Food",
+  "feed": "mooz-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mooz/logo-48cf74e5.png",
+  "themeColor": "#B8902E",
+  "themeColorSecondary": "#4A1E2A",
+  "namePrefix": "Mooz ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Premium\\ Mozzarella\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Mozzarella\\ Premium\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Smoked\\ Mozzarella\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Plain\\ Shredded\\ Mozzarella\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Mozzarella\\ Chilly\\ Cheese\\ \\-\\ Premium$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Garlic\\ \\&\\ Chilly\\ Pizza\\ Mozzarella\\ Cheese\\ \\-\\ Premium$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Plain\\ Toasty\\ Mozzarella\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Garlic\\ \\&\\ Chilly\\ Toasty\\ Mozzarella\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Mozzarella\\ \\&\\ Cheddar\\ Pizza\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Shredded\\ Pizza\\ Cheese\\ \\-\\ Mozzarella\\ \\&\\ Cheddar$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Burrata\\ \\-\\ Cream\\ Filled\\ Mozzarella\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Bocconcini\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Premium\\ Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Shredded\\ Black\\ Pepper\\ Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Cream\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Garlic\\ \\&\\ Herbs\\ Cream\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Premium\\ Quark\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Mascarpone$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Ricotta\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Greek\\ Feta\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Parmesan\\ Parmigiano\\ Reggiano\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Smoked\\ Scamorza\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Sour\\ Cream$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Fresh Cream"
+      ]
+    },
+    {
+      "match": "^Sour\\ Cream\\ Jalapeno$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Fresh Cream"
+      ]
+    },
+    {
+      "match": "^Sour\\ Cream\\ Peri\\ Peri$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Fresh Cream"
+      ]
+    },
+    {
+      "match": "^Salted\\ White\\ Butter\\ \\-\\ Premium$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^White\\ Butter\\ \\-\\ Unsalted,\\ Premium$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Unsalted Butter"
+      ]
+    },
+    {
+      "match": "^Garlic\\ \\&\\ Herbs\\ Butter\\ \\-\\ Premium$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^Fresh\\ \\&\\ Firm\\ Organic\\ Tofu$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Tofu"
+      ]
+    },
+    {
+      "match": "^Organic\\ Vegetable\\ Tofu$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Tofu"
+      ]
+    },
+    {
+      "match": "^Organic\\ Peanut\\ Chilli\\ Tofu$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Tofu"
+      ]
+    },
+    {
+      "match": "^Masala\\ Tofu$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Tofu"
+      ]
+    },
+    {
+      "match": "^Biryani\\ Tofu$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Tofu"
+      ]
+    },
+    {
+      "match": "^Chatpata\\ Tofu$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Tofu"
+      ]
+    },
+    {
+      "match": "^Smoked\\ Tofu$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Tofu"
+      ]
+    },
+    {
+      "match": "^Manchurian\\ Tofu$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Tofu"
+      ]
+    },
+    {
+      "match": "^Tofu\\ With\\ Black\\ Bean\\ Sauce$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Tofu"
+      ]
+    },
+    {
+      "match": "^Tofu\\ With\\ Chilli\\ Garlic\\ Sauce$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Tofu"
+      ]
+    }
+  ]
+}
