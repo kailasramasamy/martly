@@ -1,0 +1,390 @@
+{
+  "brand": "Tong Garden",
+  "manufacturer": "Tong Garden Co., Ltd.",
+  "feed": "tong-garden-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tong-garden/logo-f56e37d0.png",
+  "themeColor": "#1E1A8C",
+  "themeColorSecondary": "#FFE600",
+  "namePrefix": "Tong Garden ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Salted\\ Cashew\\ Nuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Salted\\ Cashew\\ Nuts\\ \\-\\ Tin$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ Cashew\\ Nuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Salted\\ Almonds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Salted\\ Almonds\\ \\-\\ Can$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Salted\\ Pistachios$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Pistachios (Pista)"
+      ]
+    },
+    {
+      "match": "^Salted\\ Pistachios\\ \\-\\ Tin$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Pistachios (Pista)"
+      ]
+    },
+    {
+      "match": "^Salted\\ Peanuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Peanuts"
+      ]
+    },
+    {
+      "match": "^Salted\\ Peanuts\\ \\-\\ Tin$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Peanuts"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Peanuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Peanuts"
+      ]
+    },
+    {
+      "match": "^Mexican\\ Style\\ Peanuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Peanuts"
+      ]
+    },
+    {
+      "match": "^Thai\\ Chilli\\ Coated\\ Peanuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Peanuts"
+      ]
+    },
+    {
+      "match": "^Salted\\ Cocktail\\ Nuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^Salted\\ Cocktail\\ Nuts\\ \\-\\ Tin$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^NutriOne\\ Hearty\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^Tropical\\ Nuts\\ \\&\\ Fruits\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^NutriOne\\ Baked\\ Almonds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^NutriOne\\ Baked\\ Cashew\\ Nuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^NutriOne\\ Baked\\ Cocktail\\ Nuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^NutriOne\\ Baked\\ Nuts\\ \\&\\ Dried\\ Fruits\\ \\-\\ Apple\\ Pie$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^Salted\\ Sunflower\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Sunflower\\ Seeds\\ \\-\\ BBQ$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Sunflower\\ Seeds\\ \\-\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Sunflower\\ Kernels$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Salted\\ Pumpkin\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Hot\\ Pumpkin\\ Seeds\\ \\-\\ Paprika$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Pumpkin\\ Kernels$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Dried\\ Pitted\\ Prunes$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Sun\\ Gift\\ Dried\\ Cranberries$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Sun\\ Gift\\ Dried\\ Guava$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Sun\\ Gift\\ Dried\\ Mango$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Sun\\ Gift\\ Dried\\ Pitted\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Wasabi\\ Coated\\ Green\\ Peas$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Wasabi\\ Coated\\ Green\\ Peas\\ \\-\\ Can$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Wasabi\\ Coated\\ Green\\ Peas\\ \\-\\ Hot\\ \\&\\ Spicy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Broad\\ Beans\\ \\-\\ Salted$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Broad\\ Beans\\ \\-\\ BBQ$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Broad\\ Beans\\ \\-\\ Pad\\ Khi\\ Mao$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Broad\\ Beans\\ With\\ Skin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Onion\\ \\&\\ Garlic\\ Broad\\ Beans\\ With\\ Skin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Party\\ Snack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Party\\ Snack\\ \\-\\ Jar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Party\\ Snack\\ \\-\\ Tin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Con\\ Con\\ Original\\ Corn\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Con\\ Con\\ Corn\\ Chips\\ \\-\\ Barbeque$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Toasted\\ Crispy\\ Coconut\\ Chips\\ \\-\\ Original$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Noi\\ Crispy\\ Seaweed\\ With\\ Almond\\ Slices\\ \\-\\ Baked$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    }
+  ]
+}
