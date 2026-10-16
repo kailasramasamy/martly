@@ -1,0 +1,302 @@
+{
+  "brand": "Tata Simply Better",
+  "manufacturer": "Tata Consumer Products Ltd.",
+  "feed": "tata-simply-better-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tata-simply-better/logo-fa39c463.png",
+  "themeColor": "#C8D400",
+  "themeColorSecondary": "#1E5631",
+  "namePrefix": "Tata Simply Better ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cold\\ Pressed\\ Groundnut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Sesame\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Virgin\\ Coconut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Avocado\\+\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Olive\\+\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olive Oil (Extra Virgin)"
+      ]
+    },
+    {
+      "match": "^Extra\\ Virgin\\ Olive\\ Oil\\ Cooking\\ Spray$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olive Oil (Extra Virgin)"
+      ]
+    },
+    {
+      "match": "^Extra\\ Virgin\\ Avocado\\ Oil\\ Cooking\\ Spray$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olive Oil (Extra Virgin)"
+      ]
+    },
+    {
+      "match": "^Sprouted\\ Ragi\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Ragi Flour"
+      ]
+    },
+    {
+      "match": "^Sprouted\\ Jowar\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Jowar Flour"
+      ]
+    },
+    {
+      "match": "^Sprouted\\ Bajra\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Bajra Flour"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Sprouted\\ Moong\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Besan (Gram Flour)"
+      ]
+    },
+    {
+      "match": "^Protein\\ Crunchh\\ Cheeky\\ Cheese\\ Burst\\ Roasted\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Protein\\ Crunchh\\ Fiery\\ Peri\\ Peri\\ Roasted\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Protein\\ Crunchh\\ Himalayan\\ Salt\\ \\&\\ Pepper\\ Roasted\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Protein\\ Crunchh\\ Punchy\\ Pudina\\ Roasted\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Classic\\ Salted\\ Roasted\\ Almonds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Classic\\ Salted\\ Roasted\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^O\\.G\\.\\ Black\\ Pepper\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Peppy\\ Pudina\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Thai\\ Style\\ Sweet\\ Chilli\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Guava\\ Chilli\\ Cranberries$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Chatpata\\ Cranberries$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Fiery\\ Korean\\ Dry\\ Fruit\\ \\&\\ Nuts\\ Snack\\ Mix$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    },
+    {
+      "match": "^Mango\\ Achari\\ Snack\\ Mix$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    },
+    {
+      "match": "^Thai\\ Style\\ Sweet\\ Chilli\\ Snack\\ Mix$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    },
+    {
+      "match": "^Korean\\ Kimchi\\ Style\\ Edamame\\ Mix\\ Hi\\-Protein\\ Snack$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    },
+    {
+      "match": "^Mango\\ Achari\\ Style\\ Edamame\\ Mix\\ Hi\\-Protein\\ Snack$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    },
+    {
+      "match": "^Perky\\ Pudina\\ Edamame\\ Beans\\ Hi\\-Protein\\ Snack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Punchy\\ Pepper\\ Edamame\\ Beans\\ Hi\\-Protein\\ Snack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Plant\\-Based\\ Chicken\\ Awadhi\\ Seekh\\ Kebab$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Plant\\-Based\\ Chicken\\ Burger\\ Patty$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Plant\\-Based\\ Chicken\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Plant\\-Based\\ Chicken\\ Spicy\\ Fingers$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    }
+  ]
+}
