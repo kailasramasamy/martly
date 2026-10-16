@@ -1,0 +1,278 @@
+{
+  "brand": "Palmolive",
+  "manufacturer": "Colgate-Palmolive (India) Limited",
+  "feed": "palmolive-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/palmolive/logo-476f2530.png",
+  "themeColor": "#006A4E",
+  "themeColorSecondary": "#F2C230",
+  "namePrefix": "Palmolive ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Anti\\ Acne\\ Purifying\\ Face\\ Masque\\ \\-\\ Tulsi\\ \\&\\ Lemongrass$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Hydrating\\ Face\\ Masque\\ \\-\\ Multani\\ Mitti\\ \\&\\ Lavender$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Brightening\\ Souffle\\ Face\\ Scrub\\ \\-\\ Kesar\\ \\&\\ Roman\\ Chamomile$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Anti\\ Acne\\ Purifying\\ Foam\\ Face\\ Wash\\ \\-\\ Tulsi\\ \\&\\ Lemongrass$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Anti\\ Acne\\ Purifying\\ Gel\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Brightening\\ Foam\\ Face\\ Wash\\ \\-\\ Kesar\\ \\&\\ Roman\\ Chamomile$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Brightening\\ Gel\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Hydrating\\ Foam\\ Face\\ Wash\\ \\-\\ Multani\\ Mitti\\ \\&\\ Lavender$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Hydrating\\ Gel\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Antibacterial\\ Hand\\ Sanitiser$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    },
+    {
+      "match": "^Aroma\\ Absolute\\ Relax\\ Shower\\ Gel\\ \\-\\ Iris\\ \\&\\ Ylang\\ Ylang$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Aroma\\ Morning\\ Boost\\ Shower\\ Gel\\ \\-\\ Orange\\ \\&\\ Lemongrass$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Aroma\\ Alluring\\ Love\\ Shower\\ Gel\\ \\-\\ Soft\\ Rose\\ \\&\\ Peony$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Aroma\\ Forever\\ Happy\\ Shower\\ Gel\\ \\-\\ Frangipani\\ \\&\\ Neroli$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Aroma\\ Sweet\\ Delight\\ Shower\\ Gel\\ \\-\\ Berries\\ \\&\\ Figs$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Aroma\\ Moments\\ Feel\\ The\\ Massage\\ Exfoliating\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Aroma\\ Sensual\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Body\\ Spa\\ Joy\\ Exfoliating\\ Body\\ Wash\\ \\-\\ Coconut\\ \\&\\ Jojoba$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Body\\ Butter\\ Body\\ Wash\\ \\-\\ Manuka\\ Honey$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Thermal\\ Spa\\ Mineral\\ Massage\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Thermal\\ Spa\\ Skin\\ Renewal\\ Body\\ Wash\\ \\-\\ Crushed\\ Coconut$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Luminous\\ Oils\\ Enriching\\ Shower\\ Gel\\ \\-\\ Coconut\\ \\&\\ Jojoba\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Luminous\\ Oils\\ Invigorating\\ Shower\\ Gel\\ \\-\\ Macadamia\\ Oil\\ \\&\\ Peony$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Luminous\\ Oils\\ Rejuvenating\\ Shower\\ Gel\\ \\-\\ Fig\\ \\&\\ White\\ Orchid$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Moments\\ Mindful\\ Awake\\ Shower\\ Gel\\ \\-\\ Orange\\ \\&\\ Hibiscus$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Moments\\ Restful\\ Sleep\\ Shower\\ Gel\\ \\-\\ Lavender\\ \\&\\ Jasmine$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Moments\\ Workout\\ Fresh\\ Shower\\ Gel\\ \\-\\ Spearmint\\ \\&\\ Eucalyptus$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Hydrating\\ Raspberry\\ Foaming\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Hydrating\\ Lime\\ \\&\\ Mint\\ Foaming\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Hydrating\\ Lime\\ \\&\\ Mint\\ Foaming\\ Hand\\ Wash\\ Refill$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Luminous\\ Oils\\ Invigorating\\ Liquid\\ Hand\\ Wash\\ \\-\\ Macadamia\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Sea\\ Minerals\\ Liquid\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Orchid\\ \\&\\ Milk\\ Liquid\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    }
+  ]
+}
