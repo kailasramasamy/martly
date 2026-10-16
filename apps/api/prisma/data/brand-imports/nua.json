@@ -1,0 +1,302 @@
+{
+  "brand": "Nua",
+  "manufacturer": "Lagom Labs Pvt. Ltd.",
+  "feed": "nua-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nua/logo-228d5772.png",
+  "themeColor": "#EF5A50",
+  "themeColorSecondary": "#8FD3C8",
+  "namePrefix": "Nua ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Complete\\ Comfort\\ Sanitary\\ Pads\\ \\-\\ Light\\ Flow,\\ L$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Sanitary\\ Pads\\ \\-\\ Medium\\ Flow,\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Sanitary\\ Pads\\ Pouch\\ \\-\\ Medium\\ Flow,\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Complete\\ Comfort\\ Sanitary\\ Pads\\ \\-\\ Heavy\\ Flow,\\ XL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Zero\\ Irritation\\ Comfort\\ Pads\\ With\\ Disposal\\ Covers\\ \\-\\ Assorted\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Zero\\ Irritation\\ Complete\\ Comfort\\ Pads\\ With\\ Disposal\\ Covers\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Zero\\ Irritation\\ Comfort\\ Medium\\ Flow\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Zero\\ Irritation\\ Overnight\\ Comfort\\ Sanitary\\ Pads\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Zero\\ Irritation\\ Sanitary\\ Pads\\ For\\ Heavy\\ Flow\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Leak\\ Proof\\ Pads\\ \\-\\ L,\\ Medium\\ Flow$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Leak\\ Proof\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^All\\ Night\\ Comfort\\ Pads\\ Trial\\ Pack\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^All\\ Night\\ Comfort\\ Pads\\ With\\ Disposal\\ Covers\\ \\-\\ XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^All\\ Night\\ Comfort\\ Sanitary\\ Pads\\ \\-\\ XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Day\\ \\&\\ Night\\ Sanitary\\ Pads\\ \\-\\ 8\\ XL\\ \\+\\ 4\\ XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^MyWave\\ Sanitary\\ Pads\\ \\-\\ Heavy\\ Flow,\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^MyWave\\ Night\\ Sanitary\\ Pads\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Zero\\ Irritation\\ Comfort\\ Disposable\\ Period\\ Panties\\ \\-\\ S\\-M$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Zero\\ Irritation\\ Comfort\\ Disposable\\ Period\\ Panties\\ \\-\\ M\\-L$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Zero\\ Irritation\\ Comfort\\ Disposable\\ Period\\ Panties\\ \\-\\ L\\-XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Comfort\\ Disposable\\ Period\\ Panties\\ \\-\\ XL\\-XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Zero\\ Irritation\\ Comfort\\ Disposable\\ Period\\ Panties\\ \\-\\ XXL\\-XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Teen\\ Comfort\\ Period\\ Panties\\ \\-\\ S\\-M$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Maternity\\ Postpartum\\ Disposable\\ Period\\ Panties\\ \\-\\ XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Comfort\\ Everyday\\ Panty\\ Liners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Super\\ Thin\\ Panty\\ Liners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^EaseFit\\ Tampons\\ \\-\\ Heavy\\ Flow$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^EaseFit\\ Zero\\ Irritation\\ Tampons\\ \\-\\ Heavy\\ Flow$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Intimate\\ Wash\\ With\\ Prebiotics$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Period\\ Pain\\ Relief\\ Heat\\ Patch$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Nursing\\ Pads$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Hydrocolloid\\ \\&\\ Salicylic\\ Acid\\ Pimple\\ Patches$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Acne\\ Control\\ Nose\\ Strips$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Silk\\ Sheet\\ Mask\\ With\\ Hyaluronic\\ Acid\\ \\&\\ Ceramides$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Deodorant\\ Roll\\ On\\ With\\ Ceramides\\ \\&\\ AHA\\ \\-\\ Rose\\ \\&\\ Raspberry$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Deodorant\\ Roll\\ On\\ With\\ Ceramides\\ \\&\\ AHA\\ \\-\\ Sage\\ \\&\\ Bergamot$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    }
+  ]
+}
