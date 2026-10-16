@@ -1,4 +1,4 @@
-import type { ApproveCatalogDraftInput } from "@martly/shared/schemas";
+import type { ApproveCatalogDraftInput, CatalogDraftSizeInput } from "@martly/shared/schemas";
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import type { Label } from "./extract.js";
 import type { ProcessedShot } from "./images.js";
@@ -27,6 +27,34 @@ export interface DraftForPublish {
 type Tx = Prisma.TransactionClient;
 
 export class DraftStateError extends Error {}
+export class DraftSizeError extends Error {}
+
+const skuBase = (draftId: string) => `CD-${draftId.slice(0, 8).toUpperCase()}`;
+
+/** Extra pack sizes on a drafted product, each listed in the draft's store with its own price and stock */
+export async function addSizes(tx: Tx, draft: Pick<DraftForPublish, "id" | "storeId" | "createdById">, productId: string, sizes: CatalogDraftSizeInput[]) {
+  if (!sizes.length) return;
+  const existing = await tx.productVariant.findMany({ where: { productId }, select: { name: true } });
+  const seen = new Set(existing.map((v) => v.name.toLowerCase()));
+  for (const size of sizes) {
+    const key = size.name.toLowerCase();
+    if (seen.has(key)) throw new DraftSizeError(`This product already has a size called "${size.name}"`);
+    seen.add(key);
+  }
+  const listings = [];
+  for (const [i, size] of sizes.entries()) {
+    const variant = await tx.productVariant.create({
+      data: {
+        productId, name: size.name, unitType: size.unitType, unitValue: size.unitValue, mrp: size.mrp,
+        sku: `${skuBase(draft.id)}-${existing.length + i + 1}`,
+      },
+    });
+    listings.push(await tx.storeProduct.create({
+      data: { storeId: draft.storeId, productId, variantId: variant.id, price: size.sellingPrice, stock: size.stock },
+    }));
+  }
+  await recordOpeningStock(tx, listings, draft.createdById);
+}
 
 function nutritionMap(label: Label) {
   if (!label.nutrition.length) return undefined;
@@ -72,7 +100,7 @@ async function resolveBrandId(tx: Tx, p: Proposal, edits: ApproveCatalogDraftInp
   return p.classification.brand?.id ?? null;
 }
 
-/** Creates the org's product, its one variant and this store's listing in one transaction, and closes the draft */
+/** Creates the org's product, its variants and this store's listings in one transaction, and closes the draft */
 export async function publishNew(prisma: PrismaClient, draft: DraftForPublish, p: Proposal, shots: ProcessedShot[], edits: ApproveCatalogDraftInput = {}) {
   return prisma.$transaction(async (tx) => {
     const brandId = await resolveBrandId(tx, p, edits, draft.organizationId);
@@ -86,7 +114,7 @@ export async function publishNew(prisma: PrismaClient, draft: DraftForPublish, p
             unitType: edits.unitType ?? p.label.unitType,
             unitValue: edits.unitValue ?? p.label.unitValue,
             mrp,
-            sku: `CD-${draft.id.slice(0, 8).toUpperCase()}`,
+            sku: skuBase(draft.id),
             barcode: p.barcodeTaken ? null : p.label.barcode,
             imageUrl: shots[0]?.url ?? null,
           },
@@ -101,6 +129,7 @@ export async function publishNew(prisma: PrismaClient, draft: DraftForPublish, p
       },
     });
     await recordOpeningStock(tx, [listing], draft.createdById);
+    await addSizes(tx, draft, product.id, edits.extraSizes ?? []);
     const closed = await tx.catalogDraft.updateMany({
       where: { id: draft.id, status: { in: ["PROCESSING", "NEEDS_REVIEW"] } },
       data: { status: "PUBLISHED", productId: product.id, error: null },

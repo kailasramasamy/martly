@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import { useSelect } from "@refinedev/antd";
 import { Button, Card, Cascader, Col, Form, Input, InputNumber, Row, Select, Space } from "antd";
-import type { ApproveCatalogDraftInput } from "@martly/shared/schemas";
+import type { ApproveCatalogDraftInput, CatalogDraftSizeInput } from "@martly/shared/schemas";
 import type { CatalogDraftDetail } from "@martly/shared/types";
 import { axiosInstance } from "../../providers/data-provider";
 import { buildCascaderOptions, findCategoryPath, FOOD_TYPES, UNIT_TYPES } from "../products/product-form-options";
 import type { CascaderOption, DepartmentNode } from "../products/product-form-options";
+import { SizeFields } from "./size-fields";
 
 const NEW_BRAND = "__new__";
 
@@ -21,6 +22,7 @@ interface FormValues {
   stock: number;
   brand?: string;
   aisle?: string[];
+  extraSizes?: CatalogDraftSizeInput[];
 }
 
 function initialValues(draft: CatalogDraftDetail): FormValues {
@@ -92,7 +94,7 @@ export function ApproveForm({ draft, busy, onApprove, discard }: {
       <Form<FormValues> form={form} layout="vertical" initialValues={initialValues(draft)} onFinish={(v) => onApprove(toPayload(v, draft))}>
         <Row gutter={16}>
           <Col xs={24} md={12}><Form.Item label="Name" name="name" rules={[{ required: true }]}><Input /></Form.Item></Col>
-          <Col xs={24} md={12}><Form.Item label="Variant name" name="variantName" rules={[{ required: true }]}><Input /></Form.Item></Col>
+          <Col xs={24} md={12}><Form.Item label="Size name" name="variantName" rules={[{ required: true }]}><Input /></Form.Item></Col>
           <Col xs={24}><Form.Item label="Description" name="description"><Input.TextArea rows={3} /></Form.Item></Col>
           <Col xs={24} md={12}>
             <Form.Item label="Brand" name="brand"><Select {...brandProps} allowClear showSearch filterOption={false} placeholder="Search brands" /></Form.Item>
@@ -122,6 +124,11 @@ export function ApproveForm({ draft, busy, onApprove, discard }: {
             </Form.Item>
           </Col>
           <Col xs={8}><Form.Item label="Stock" name="stock" rules={[{ required: true }]}><InputNumber min={0} precision={0} style={{ width: "100%" }} /></Form.Item></Col>
+          <Col xs={24}>
+            <Form.Item label="Other sizes" extra="Each size gets its own price and stock in this store." style={{ marginBottom: 16 }}>
+              <SizeFields name="extraSizes" unitType={draft.label?.unitType} />
+            </Form.Item>
+          </Col>
         </Row>
         <Space>
           <Button type="primary" htmlType="submit" loading={busy === "approve"}>Approve and publish</Button>

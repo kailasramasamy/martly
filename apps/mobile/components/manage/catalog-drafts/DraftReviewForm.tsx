@@ -9,12 +9,14 @@ import { TaxonomyPicker } from "../taxonomy/TaxonomyPicker";
 import { FOOD_TYPE_OPTIONS, UNIT_TYPE_OPTIONS } from "../products/options";
 import { useBrandOptions } from "../products/use-brand-options";
 import { NEW_BRAND, type ReviewValues } from "./use-review-form";
+import { SizeList } from "./SizeList";
 import type { DepartmentNode } from "../taxonomy/types";
 
 interface DraftReviewFormProps {
   draft: CatalogDraftDetail;
   values: ReviewValues;
   tree: DepartmentNode[];
+  showSizeErrors: boolean;
   onChange: (next: Partial<ReviewValues>) => void;
 }
 
@@ -39,7 +41,7 @@ function BrandFields({ draft, values, onChange }: Pick<DraftReviewFormProps, "dr
   );
 }
 
-export function DraftReviewForm({ draft, values, tree, onChange }: DraftReviewFormProps) {
+export function DraftReviewForm({ draft, values, tree, showSizeErrors, onChange }: DraftReviewFormProps) {
   return (
     <>
       <SectionCard title="Review & correct">
@@ -51,12 +53,16 @@ export function DraftReviewForm({ draft, values, tree, onChange }: DraftReviewFo
         <TextField label="Description" multiline value={values.description} onChangeText={(description) => onChange({ description })} />
       </SectionCard>
       <SectionCard title="Size & price">
-        <TextField label="Variant name" required value={values.variantName} onChangeText={(variantName) => onChange({ variantName })} hint="e.g. 500g pack" />
+        <TextField label="Size name" required value={values.variantName} onChangeText={(variantName) => onChange({ variantName })} hint="e.g. 500g pack" />
         <SelectField label="Unit" value={values.unitType} options={UNIT_TYPE_OPTIONS} onChange={(unitType) => onChange({ unitType })} placeholder="Select unit" />
         <TextField label="Unit value" keyboardType="decimal-pad" value={values.unitValue} onChangeText={(unitValue) => onChange({ unitValue })} />
         <TextField label="MRP" required prefix={"₹"} keyboardType="decimal-pad" value={values.mrp} onChangeText={(mrp) => onChange({ mrp })} />
         <TextField label="Selling price" required prefix={"₹"} keyboardType="decimal-pad" value={values.sellingPrice} onChangeText={(sellingPrice) => onChange({ sellingPrice })} />
         <TextField label="Stock" keyboardType="number-pad" value={values.stock} onChangeText={(stock) => onChange({ stock })} />
+      </SectionCard>
+      <SectionCard title="Other sizes">
+        <Text style={styles.note}>Sell this product in more pack sizes. Each one gets its own price and stock in this store.</Text>
+        <SizeList sizes={values.extraSizes} unitType={values.unitType} showErrors={showSizeErrors} onChange={(extraSizes) => onChange({ extraSizes })} />
       </SectionCard>
     </>
   );

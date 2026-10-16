@@ -1,5 +1,5 @@
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { approveCatalogDraftSchema, catalogDraftListQuerySchema, createCatalogDraftSchema } from "@martly/shared/schemas";
+import { addCatalogDraftSizesSchema, approveCatalogDraftSchema, catalogDraftListQuerySchema, createCatalogDraftSchema } from "@martly/shared/schemas";
 import type { ApiResponse, CatalogDraftDetail, CatalogDraftSummary, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
@@ -7,7 +7,7 @@ import { Permission } from "@martly/shared/constants";
 import { getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { isMediaUrl } from "../../services/media.js";
 import type { ProcessedShot } from "../../services/catalog-agent/images.js";
-import { DraftStateError, publishNew, type Proposal } from "../../services/catalog-agent/publish.js";
+import { addSizes, DraftSizeError, DraftStateError, publishNew, type Proposal } from "../../services/catalog-agent/publish.js";
 import { assertBrandUsable } from "../../services/brands.js";
 import { draftInclude, toDetail, toSummary } from "../../services/catalog-agent/view.js";
 
@@ -80,6 +80,23 @@ export async function catalogDraftRoutes(app: FastifyInstance) {
       await publishNew(app.prisma, draft, proposal, draft.processedImages as unknown as ProcessedShot[], edits);
     } catch (err) {
       if (err instanceof DraftStateError) return reply.conflict(err.message);
+      if (err instanceof DraftSizeError) return reply.badRequest(err.message);
+      throw err;
+    }
+    return detail(draft.id);
+  });
+
+  // More pack sizes for a product the agent created, after it went live
+  app.post<{ Params: { id: string } }>("/:id/sizes", { preHandler: MANAGERS }, async (request, reply) => {
+    const { sizes } = addCatalogDraftSizesSchema.parse(request.body);
+    const draft = await ownDraft(request, reply);
+    if (!draft) return;
+    const { productId } = draft;
+    if (draft.status !== "PUBLISHED" || draft.matchedExisting || !productId) return reply.conflict("Sizes can only be added to a product this draft created");
+    try {
+      await app.prisma.$transaction((tx) => addSizes(tx, draft, productId, sizes));
+    } catch (err) {
+      if (err instanceof DraftSizeError) return reply.badRequest(err.message);
       throw err;
     }
     return detail(draft.id);

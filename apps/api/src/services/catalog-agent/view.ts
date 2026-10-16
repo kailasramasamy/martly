@@ -1,4 +1,4 @@
-import type { CatalogDraftDetail, CatalogDraftShot, CatalogDraftSummary } from "@martly/shared/types";
+import type { CatalogDraftDetail, CatalogDraftShot, CatalogDraftSize, CatalogDraftSummary } from "@martly/shared/types";
 import type { Prisma } from "../../../generated/prisma/client.js";
 import type { ProcessedShot } from "./images.js";
 import type { Proposal } from "./publish.js";
@@ -7,6 +7,14 @@ import type { UsageEntry } from "./usage.js";
 export const draftInclude = {
   store: { select: { name: true } },
   createdBy: { select: { name: true } },
+  product: {
+    select: {
+      variants: {
+        orderBy: { createdAt: "asc" },
+        select: { id: true, name: true, mrp: true, storeProducts: { select: { storeId: true, price: true, stock: true } } },
+      },
+    },
+  },
 } satisfies Prisma.CatalogDraftInclude;
 
 type DraftRow = Prisma.CatalogDraftGetPayload<{ include: typeof draftInclude }>;
@@ -40,6 +48,13 @@ export function toSummary(row: DraftRow): CatalogDraftSummary {
   };
 }
 
+function sizesOf(row: DraftRow): CatalogDraftSize[] {
+  return (row.product?.variants ?? []).map((v) => {
+    const listing = v.storeProducts.find((sp) => sp.storeId === row.storeId);
+    return { id: v.id, name: v.name, mrp: v.mrp === null ? null : Number(v.mrp), price: listing ? Number(listing.price) : null, stock: listing?.stock ?? null };
+  });
+}
+
 export function toDetail(row: DraftRow): CatalogDraftDetail {
   const proposal = proposalOf(row);
   const processed = shotsOf(row);
@@ -66,6 +81,7 @@ export function toDetail(row: DraftRow): CatalogDraftDetail {
     subcategory: c?.subcategoryId && c.subcategoryPath ? { id: c.subcategoryId, path: c.subcategoryPath } : null,
     subcategoryConfidence: c?.subcategoryConfidence ?? null,
     barcodeTaken: proposal?.barcodeTaken ?? false,
+    sizes: sizesOf(row),
     usage: usageOf(row),
   };
 }

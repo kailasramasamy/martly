@@ -14,6 +14,7 @@ import { formatINR, manage } from "../ui/tokens";
 import { DraftShots } from "./DraftShots";
 import { CostLine, DraftFacts, DraftPicks } from "./DraftFacts";
 import { DraftReviewForm } from "./DraftReviewForm";
+import { PublishedSizes } from "./PublishedSizes";
 import { useReviewForm } from "./use-review-form";
 import { useDraftActions } from "./use-draft-actions";
 import { DRAFT_STATUS } from "./status";
@@ -90,7 +91,7 @@ function ReviewScreen({ draft, onDone }: DraftProps) {
       }
     >
       <Details draft={draft}>
-        <DraftReviewForm draft={draft} values={form.values} tree={form.tree} onChange={form.patch} />
+        <DraftReviewForm draft={draft} values={form.values} tree={form.tree} showSizeErrors={form.showSizeErrors} onChange={form.patch} />
       </Details>
       <DiscardDialog visible={confirming} running={running} onConfirm={discard} onClose={() => setConfirming(false)} />
     </ManageStackScreen>
@@ -125,6 +126,7 @@ function ReadOnlyScreen({ draft, onDone, onRefresh }: DraftProps & { onRefresh: 
   return (
     <ManageStackScreen title={draft.name ?? "Product"} actions={actions} refreshing={false} onRefresh={onRefresh}>
       <Details draft={draft}>
+        {draft.status === "PUBLISHED" && !draft.matchedExisting && draft.productId ? <PublishedSizes draft={draft} onDone={onDone} /> : null}
         {draft.productId && (draft.status === "PUBLISHED" || draft.status === "DUPLICATE") ? <ProductLink productId={draft.productId} /> : null}
       </Details>
     </ManageStackScreen>

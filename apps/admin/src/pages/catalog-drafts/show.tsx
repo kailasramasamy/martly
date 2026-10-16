@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Show } from "@refinedev/antd";
 import { useNavigation, useParsed } from "@refinedev/core";
 import { Alert, Button, Popconfirm, Space, Spin, Tag } from "antd";
-import type { ApproveCatalogDraftInput } from "@martly/shared/schemas";
+import type { AddCatalogDraftSizesInput, ApproveCatalogDraftInput } from "@martly/shared/schemas";
 import type { CatalogDraftDetail } from "@martly/shared/types";
 import { CATALOG_DRAFT_STATUS_CONFIG } from "../../constants/tag-colors";
 import { axiosInstance } from "../../providers/data-provider";
@@ -10,6 +10,7 @@ import { useAction } from "../promos/promo-actions";
 import { ApproveForm } from "./approve-form";
 import { DraftFacts } from "./draft-facts";
 import { ShotsGrid } from "./shots-grid";
+import { SizesCard } from "./sizes-card";
 
 const POLL_MS = 3000;
 const IN_FLIGHT = ["QUEUED", "PROCESSING"];
@@ -59,7 +60,7 @@ export const CatalogDraftShow = () => {
 
   if (!draft) return <Spin style={{ display: "block", margin: "64px auto" }} />;
 
-  const act = (key: string, path: string, success: string, body?: ApproveCatalogDraftInput) =>
+  const act = (key: string, path: string, success: string, body?: ApproveCatalogDraftInput | AddCatalogDraftSizesInput) =>
     run(key, () => axiosInstance.post(`/catalog-drafts/${draft.id}/${path}`, body), success, `Could not ${key}`);
 
   const discard = (
@@ -82,6 +83,9 @@ export const CatalogDraftShow = () => {
           </Space>
         )}
         {draft.status === "QUEUED" && discard}
+        {draft.status === "PUBLISHED" && !draft.matchedExisting && productId && (
+          <SizesCard draft={draft} busy={busy === "sizes"} onAdd={(sizes) => act("sizes", "sizes", "Sizes added to the store", { sizes })} />
+        )}
         {productId && <Button type="link" onClick={() => show("products", productId)}>View product</Button>}
         <ShotsGrid shots={draft.shots} />
         <DraftFacts draft={draft} />

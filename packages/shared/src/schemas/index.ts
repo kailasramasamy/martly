@@ -1318,6 +1318,22 @@ export const catalogDraftListQuerySchema = z.object({
   status: z.nativeEnum(CatalogDraftStatus).optional(),
 });
 
+// Another pack size of a drafted product, listed in the draft's store
+export const catalogDraftSizeSchema = z
+  .object({
+    name: z.string().trim().min(1).max(60),
+    unitType: z.nativeEnum(UnitType),
+    unitValue: z.number().positive(),
+    mrp: z.number().positive(),
+    sellingPrice: z.number().positive(),
+    stock: z.number().int().min(0).default(0),
+  })
+  .refine((d) => d.sellingPrice <= d.mrp, { message: "Selling price can't be above MRP", path: ["sellingPrice"] });
+export type CatalogDraftSizeInput = z.infer<typeof catalogDraftSizeSchema>;
+
+export const addCatalogDraftSizesSchema = z.object({ sizes: z.array(catalogDraftSizeSchema).min(1).max(10) });
+export type AddCatalogDraftSizesInput = z.infer<typeof addCatalogDraftSizesSchema>;
+
 // Reviewer's corrections; anything left out keeps what the agent read
 export const approveCatalogDraftSchema = z
   .object({
@@ -1333,6 +1349,7 @@ export const approveCatalogDraftSchema = z
     mrp: z.number().positive().optional(),
     sellingPrice: z.number().positive().optional(),
     stock: z.number().int().min(0).optional(),
+    extraSizes: z.array(catalogDraftSizeSchema).max(10).optional(),
   })
   .refine((d) => !(d.brandId && d.newBrandName), { message: "Pick a brand or name a new one, not both", path: ["newBrandName"] });
 export type ApproveCatalogDraftInput = z.infer<typeof approveCatalogDraftSchema>;

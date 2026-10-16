@@ -229,6 +229,15 @@ export interface CatalogDraftLabel {
   notes: string;
 }
 
+export interface CatalogDraftSize {
+  id: string;
+  name: string;
+  mrp: number | null;
+  /** Null when this store doesn't list the size */
+  price: number | null;
+  stock: number | null;
+}
+
 export interface CatalogDraftDetail extends CatalogDraftSummary {
   hintName: string | null;
   shots: CatalogDraftShot[];
@@ -238,6 +247,8 @@ export interface CatalogDraftDetail extends CatalogDraftSummary {
   subcategory: { id: string; path: string } | null;
   subcategoryConfidence: string | null;
   barcodeTaken: boolean;
+  /** The published product's sizes and their listing in the draft's store */
+  sizes: CatalogDraftSize[];
   usage: { step: string; model: string; inputTokens: number; outputTokens: number; usd: number }[];
 }
 
