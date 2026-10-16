@@ -1,0 +1,118 @@
+{
+  "brand": "Cadbury (Mondelez)",
+  "manufacturer": "Mondelez India Foods Pvt. Ltd.",
+  "feed": "cadbury-oreo-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cadbury-mondelez/logo-268905c0.png",
+  "themeColor": "#4B0082",
+  "themeColorSecondary": "#C9A063",
+  "namePrefix": "Cadbury Oreo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Original\\ Vanilla\\ Cream$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Creme\\ Sandwich\\ Biscuit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Double\\ Stuf\\ Vanilla\\ Creme\\ Sandwich\\ Biscuit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Golden\\ Vanilla\\ Creme\\ Sandwich\\ Biscuit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Creme\\ Sandwich\\ Biscuit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Red\\ Velvet\\ Sandwich\\ Biscuit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Toffee\\ Crunch\\ Creme\\ Sandwich\\ Biscuit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Pikachu\\ Choco\\ Creme\\ Sandwich\\ Biscuit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Choco\\ Dipped\\ Cookie$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Dipped\\ Moments\\ Gift\\ Pack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Dipped\\ Moments\\ Gift\\ Pack\\ \\-\\ Choco$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Moments\\ Assorted\\ Biscuits\\ Gift\\ Pack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Moments\\ Gift\\ Pack\\ \\-\\ Double\\ Stuf\\ \\&\\ Choco\\ Dipped$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    }
+  ]
+}
