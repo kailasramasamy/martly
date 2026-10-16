@@ -1,0 +1,382 @@
+{
+  "brand": "Vahdam",
+  "manufacturer": "VAHDAM Teas (P) Ltd.",
+  "feed": "vahdam-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/vahdam/logo-12feb4c8.png",
+  "themeColor": "#0F4D32",
+  "themeColorSecondary": "#C9A55A",
+  "namePrefix": "Vahdam ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Himalayan\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Himalayan\\ Long\\ Leaf\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sweet\\ Himalayan\\ Long\\ Leaf\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Mint\\ Melody\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Chamomile\\ Mint\\ Citrus\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Chamomile\\ Lavender\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Ginger\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Ginger\\ Mint\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Amla\\ Ginger\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Honey\\ Lemon\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Ginger\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Giloy\\ Neem\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Tulsi\\ \\&\\ Turmeric\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Kashmiri\\ Kahwa\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Detox\\ Kahwa\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Pure\\ Japanese\\ Matcha\\ Green\\ Tea\\ Powder$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Pure\\ Mint\\ Matcha\\ Green\\ Tea\\ Powder$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Matcha\\ Green\\ Tea\\ Powder$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Matcha\\ Green\\ Tea\\ Powder$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Moringa\\ Matcha\\ Green\\ Tea\\ Powder$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Ashwagandha\\ Matcha\\ Green\\ Tea\\ Powder$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Matcha\\ Green\\ Tea\\ Powder$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Darjeeling\\ Premium\\ Summer\\ Black\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Darjeeling\\ Spring\\ First\\ Flush\\ Black\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Darjeeling\\ Summer\\ Second\\ Flush\\ Black\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Organic\\ Earl\\ Grey\\ Long\\ Leaf\\ Black\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^High\\ Mountain\\ Long\\ Leaf\\ Oolong\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Imperial\\ Himalayan\\ Long\\ Leaf\\ White\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^India's\\ Original\\ Masala\\ Long\\ Leaf\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Masala\\ Chai\\ \\-\\ Cardamom\\ Spiced$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Earl\\ Grey\\ Spiced\\ Masala\\ Long\\ Leaf\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Spiced\\ Long\\ Leaf\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Original\\ Masala\\ Spiced\\ Black\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Turmeric\\ Spiced\\ Herbal\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Turmeric\\ Ashwagandha\\ Herbal\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Turmeric\\ Chamomile\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Turmeric\\ Ginger\\ Herbal\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Turmeric\\ Moringa\\ Herbal\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Hibiscus\\ Rose\\ Herbal\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Pure\\ Mint\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Kadha\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Vedic\\ Kadha\\ Herbal\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Iced\\ Tea\\ \\-\\ Mint\\ Passion\\ Fruit$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Iced Tea"
+      ]
+    },
+    {
+      "match": "^Iced\\ Tea\\ \\-\\ Tangy\\ Tamarind$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Iced Tea"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Ashwagandha\\ Instant\\ Mix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Mushroom\\ Instant\\ Mix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    }
+  ]
+}
