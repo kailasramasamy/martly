@@ -1,0 +1,614 @@
+{
+  "brand": "Khetika",
+  "manufacturer": "Retranz Infolabs Pvt. Ltd.",
+  "feed": "khetika-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/khetika/logo-9ad32cba.png",
+  "themeColor": "#0B7A3B",
+  "themeColorSecondary": "#E6197E",
+  "namePrefix": "Khetika ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^7\\-in\\-1\\ Trail\\ Mix$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    },
+    {
+      "match": "^Abu\\ Saunf\\ \\(Fennel\\)\\ Whole\\ \\-\\ Big$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Banaskantha\\ Methi\\ Dana\\ \\(Fenugreek\\)\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Byadagi\\ Chilli\\ Whole\\ \\-\\ Stemless$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Ramanathapuram\\ Gundu\\ Chilli\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Whole\\ Kashmiri\\ Red\\ Chilli$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Cloves\\ \\(Laung\\)\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Garam\\ Masala\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Idukki\\ Cardamom\\ \\(Elaichi\\)\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Jodhpur\\ Yellow\\ Mustard$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Newai\\ Mustard\\ \\(Rai\\)\\ \\-\\ Small$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Khas\\-Khas\\ \\(Poppy\\ Seeds\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Malabar\\ Black\\ Pepper\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Merta\\ Jeera\\ \\(Cumin\\ Seeds\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Panch\\ Phoran\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Ramgang\\ Dhaniya\\ \\(Coriander\\)\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Siliguri\\ Bay\\ Leaves\\ \\(Tej\\ Patta\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Unjha\\ White\\ Sesame\\ \\(Til\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Whole\\ Ajwain\\ \\(Carom\\ Seeds\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Tamarind\\ \\(Imli\\)\\ Seedless$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Tamarind"
+      ]
+    },
+    {
+      "match": "^Stone\\ Ground\\ Coriander\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Stone\\ Ground\\ Red\\ Chilli\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Stone\\ Ground\\ Turmeric\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Chatpata\\ Chat\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Chhole\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Meat\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Classic\\ Garam\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Rajwadi\\ Garam\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Pav\\ Bhaji\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Rasam\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Sabji\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Sambhar\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Shahi\\ Biryani\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Shahi\\ Paneer\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Idli\\ Podi\\ Masala\\ \\-\\ Gunpowder$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Chutney\\ for\\ Idli\\ \\&\\ Dosa$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Chutney\\ for\\ Idli\\ \\&\\ Dosa$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Idli\\ \\&\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Jowar\\ Millet\\ Idli\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Idli\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Sprouted\\ Moong\\ Chilla\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Soft\\ \\&\\ Malaidar\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Malai Paneer"
+      ]
+    },
+    {
+      "match": "^Soft\\ \\&\\ Malaidar\\ Paneer\\ Slices$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Malai Paneer"
+      ]
+    },
+    {
+      "match": "^Classic\\ Salt\\ \\&\\ Pepper\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Pink\\ Salt\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Korean\\ Kimchi\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Lime\\ \\&\\ Chilli\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Premium\\ Mithila\\ Makhana\\ \\(Phool\\ Makhana\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Chia\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Flax\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Natural\\ Pumpkin\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Natural\\ Sunflower\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Watermelon\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Basil\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Seeds\\ Super\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Quinoa\\ Seeds$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Quinoa & Couscous"
+      ]
+    },
+    {
+      "match": "^Premium\\ Thick\\ Poha$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Poha & Puffed Rice"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ \\&\\ Cranberry\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Premium\\ Blueberries$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Premium\\ Cranberries$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Long\\ Raisins$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Raisins (Kishmish)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Afghani\\ Black\\ Raisins\\ \\-\\ Seedless$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Raisins (Kishmish)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Afghani\\ Figs\\ \\(Anjeer\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Figs (Anjeer)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Arabian\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Fard\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Broken\\ Walnut\\ Kernels$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Walnuts (Akhrot)"
+      ]
+    },
+    {
+      "match": "^Premium\\ California\\ Almonds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ \\&\\ Salted\\ Pistachios$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Pistachios (Pista)"
+      ]
+    },
+    {
+      "match": "^Saurashtra\\ Peanuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Peanuts"
+      ]
+    },
+    {
+      "match": "^Super\\ Mix\\ Panchmewa$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    }
+  ]
+}
