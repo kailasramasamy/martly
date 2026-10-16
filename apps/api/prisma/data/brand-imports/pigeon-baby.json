@@ -1,0 +1,22 @@
+{
+  "brand": "Pigeon",
+  "manufacturer": "Pigeon India Pvt. Ltd.",
+  "feed": "pigeon-baby-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pigeon/logo-5af03dce.png",
+  "themeColor": "#E8473F",
+  "themeColorSecondary": "#333333",
+  "namePrefix": "Pigeon ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Baby\\ Multipurpose\\ Feeding\\ Set$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    }
+  ]
+}
