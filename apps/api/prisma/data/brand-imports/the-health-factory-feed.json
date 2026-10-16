@@ -1,0 +1,1957 @@
+[
+ {
+  "title": "Zero Maida Whole Wheat Bread",
+  "handle": "zero-maida-whole-wheat-bread",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40259822_16-the-health-factory-zero-maida-bread-simply-whole-wheat-rich-in-protein-fibre-no-chemicals.jpg"
+    }
+   },
+   {
+    "title": "350g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40304484_14-the-health-factory-whole-wheat-bread-zero-maida-low-sugar-fat.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40259822_16-the-health-factory-zero-maida-bread-simply-whole-wheat-rich-in-protein-fibre-no-chemicals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40259822-2_15-the-health-factory-zero-maida-bread-simply-whole-wheat-rich-in-protein-fibre-no-chemicals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40259822-3_13-the-health-factory-zero-maida-bread-simply-whole-wheat-rich-in-protein-fibre-no-chemicals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40259822-4_13-the-health-factory-zero-maida-bread-simply-whole-wheat-rich-in-protein-fibre-no-chemicals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40259822-5_12-the-health-factory-zero-maida-bread-simply-whole-wheat-rich-in-protein-fibre-no-chemicals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40259822-6_11-the-health-factory-zero-maida-bread-simply-whole-wheat-rich-in-protein-fibre-no-chemicals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40259822-7_5-the-health-factory-zero-maida-bread-simply-whole-wheat-rich-in-protein-fibre-no-chemicals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40259822-8_4-the-health-factory-zero-maida-bread-simply-whole-wheat-rich-in-protein-fibre-no-chemicals.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This is simply whole wheat with no preservatives or chemicals added. This bread is low in sugar and fat. It contains protein and fibre, is low in sodium, dairy-free, and soy-free, and has no cholesterol. It is freshly baked and tastes best when lightly toasted, deliciously soft, and healthy.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Yeast, Wheat Gluten, Rice Bran Oil (Edible Vegetable Oil), Cane Sugar, Iodised Salt, Cultured Wheat Flour, Cultured Glucose.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Protein Bread - Whole Wheat",
+  "handle": "protein-bread-whole-wheat",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211783_1-the-health-factory-protein-bread-whole-wheat-no-maida.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211783_1-the-health-factory-protein-bread-whole-wheat-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211783-2_1-the-health-factory-protein-bread-whole-wheat-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211783-3_1-the-health-factory-protein-bread-whole-wheat-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211783-4_1-the-health-factory-protein-bread-whole-wheat-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211783-5_1-the-health-factory-protein-bread-whole-wheat-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211783-6_1-the-health-factory-protein-bread-whole-wheat-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211783-7_1-the-health-factory-protein-bread-whole-wheat-no-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211783-8_1-the-health-factory-protein-bread-whole-wheat-no-maida.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Whole wheat Protein Bread: No Maida 150% more protein, 20% lower carbs, low sugar and fat, no trans fat and cholesterol. Made with the finest quality ingredients. Tastes best when lightly toasted and accompanied with butter, jam and honey. Delicious, soft and healthy high protein bread!",
+   "ingredients": "Whole Wheat Grain Flour (No Maida), Gluten, Protein Blend (Soy Protein Isolate, Milk Solids, Pea Protein Isolate), Vegetable Fat (Palm and Palm Kernel, Sesame), Yeast, Cane Sugar, Salt, (E282 Preservative), (INS1100 Enzyme), (E481, E471 Emulsifier), (INS300 Antioxidant), Lactic Acid.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "countryOfOrigin": "India <br FSSAI Number: 11518007000569",
+   "fssaiLicense": "11518007000569",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Vegan Protein Bread",
+  "handle": "vegan-protein-bread",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184923_12-the-health-factory-protein-bread-multi-protein-lite-vegan-friendly.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184923_12-the-health-factory-protein-bread-multi-protein-lite-vegan-friendly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184923-2_11-the-health-factory-protein-bread-multi-protein-lite-vegan-friendly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184923-3_11-the-health-factory-protein-bread-multi-protein-lite-vegan-friendly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184923-4_11-the-health-factory-protein-bread-multi-protein-lite-vegan-friendly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184923-5_11-the-health-factory-protein-bread-multi-protein-lite-vegan-friendly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184923-6_7-the-health-factory-protein-bread-multi-protein-lite-vegan-friendly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184923-7_5-the-health-factory-protein-bread-multi-protein-lite-vegan-friendly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184923-8_2-the-health-factory-protein-bread-multi-protein-lite-vegan-friendly.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Introducing The Health Factory Protein Bread Multi Protein Lite, a delectable and nutritious vegan-friendly bread that combines the best of taste and health. Crafted with a dynamic blend of Whole Wheat Flour, Pea, Soy, and Lentil proteins, this bread is a true delight for the health-conscious individual. Elevate your taste experience with this protein-packed indulgence, free from preservatives and artificial colours. Whether you're an athlete, fitness enthusiast, or simply seeking a delicious and nourishing snack, this bread is your go-to option. Enjoy the clean, plant-based goodness in every bite, while staying true to your vegan values. Discover the perfect balance of flavour and nutrition with The Health Factory Protein Bread Multi Protein Lite.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "25g",
+    "Energy (kcal)": "244.05",
+    "Protein (g)": "15.86",
+    "Carbohydrate (g)": "42.43",
+    "Sugar (g)": "4.54",
+    "Added Sugar (g)": "1.99",
+    "Dietary Fibre (g)": "4.95",
+    "Fat (g)": "1.21",
+    "Trans Fat (g)": "0.00",
+    "Saturated Fat (g)": "0.30",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "371.87"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from sunlight",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 6
+  }
+ },
+ {
+  "title": "Multi-Protein Protein Bread",
+  "handle": "multi-protein-protein-bread",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184922_13-the-health-factory-protein-bread-multi-protein-low-carb-low-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184922_13-the-health-factory-protein-bread-multi-protein-low-carb-low-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184922-2_12-the-health-factory-protein-bread-multi-protein-low-carb-low-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184922-3_12-the-health-factory-protein-bread-multi-protein-low-carb-low-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184922-4_12-the-health-factory-protein-bread-multi-protein-low-carb-low-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184922-5_12-the-health-factory-protein-bread-multi-protein-low-carb-low-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184922-6_8-the-health-factory-protein-bread-multi-protein-low-carb-low-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184922-7_5-the-health-factory-protein-bread-multi-protein-low-carb-low-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184922-8_2-the-health-factory-protein-bread-multi-protein-low-carb-low-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delectable Protein Bread, a nutritious and delightful addition to your healthy lifestyle. Packed with up to 10g of protein per two slices, this bread is a dynamic blend of pure and flavourful ingredients, free from preservatives or artificial colours. Enriched with the goodness of Whey, Wheat, Soy, Rice, Peas, and Milk, it offers an impressive 250% more protein than regular breads, making it the perfect choice for those seeking to incorporate more protein into their meals and snacks. Boasting a 20% reduction in carbs, this bread aligns seamlessly with your nutritional goals, providing a satisfying and guilt-free experience. Enjoy the convenience of this versatile bread, whether as part of a balanced breakfast, a nourishing lunch, or a delightful snack, and embark on a journey towards a healthier, more fulfilling lifestyle.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "2 Slices, average 25g each",
+    "Energy (kcal)": "266.00",
+    "Protein (g)": "19.26",
+    "Carbohydrate (g)": "43.31",
+    "Sugar (g)": "4.09",
+    "Added Sugar (g)": "1.79",
+    "Dietary Fibre (g)": "2.00",
+    "Fat (g)": "1.75",
+    "Trans Fat (g)": "0.00",
+    "Saturated Fat (g)": "0.73",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "498.30"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from sunlight",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 6
+  }
+ },
+ {
+  "title": "Zero Maida Super Multigrain Bread",
+  "handle": "zero-maida-super-multigrain-bread",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40291988_16-the-health-factory-zero-maida-bread-simply-multi-grain-no-chemical-preservatives-low-sugar-fat.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291988_16-the-health-factory-zero-maida-bread-simply-multi-grain-no-chemical-preservatives-low-sugar-fat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291988-2_16-the-health-factory-zero-maida-bread-simply-multi-grain-no-chemical-preservatives-low-sugar-fat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291988-3_12-the-health-factory-zero-maida-bread-simply-multi-grain-no-chemical-preservatives-low-sugar-fat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291988-4_12-the-health-factory-zero-maida-bread-simply-multi-grain-no-chemical-preservatives-low-sugar-fat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291988-5_11-the-health-factory-zero-maida-bread-simply-multi-grain-no-chemical-preservatives-low-sugar-fat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291988-6_10-the-health-factory-zero-maida-bread-simply-multi-grain-no-chemical-preservatives-low-sugar-fat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291988-7_10-the-health-factory-zero-maida-bread-simply-multi-grain-no-chemical-preservatives-low-sugar-fat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40291988-8_2-the-health-factory-zero-maida-bread-simply-multi-grain-no-chemical-preservatives-low-sugar-fat.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Health Factory Zero Maida Bread - Simply Multi Grain - offers a wholesome option with a blend of various grains, providing a balanced and satisfying choice for consumers. It aims to cater to those looking for a bread option without refined flour, focusing on natural ingredients and nutritional value. The product is designed to appeal to individuals seeking a healthier alternative to their diet, promoting a balanced approach to nutrition without specific health claims.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Multigrain Mix (20%) (Rolled Oats, Barley Flakes, Flax Seeds, Sunflower Seeds, White Sesame Seeds, Soya Bean Seed Grits, Watermelon Seeds), Yeast, Wheat Gluten, Rice Bran Oil (Edible Vegetable Oil), Cane Sugar, Iodised Salt, Cultured Wheat Flour, Cultured Glucose.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 6
+  }
+ },
+ {
+  "title": "Zero Maida Milk Bread",
+  "handle": "zero-maida-milk-bread",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328749_9-the-health-factory-zero-maida-milk-bread.jpg"
+    }
+   },
+   {
+    "title": "350g",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344812_3-the-health-factory-zero-maida-milk-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328749_9-the-health-factory-zero-maida-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328749-2_9-the-health-factory-zero-maida-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328749-3_8-the-health-factory-zero-maida-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328749-4_8-the-health-factory-zero-maida-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328749-5_8-the-health-factory-zero-maida-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328749-6_8-the-health-factory-zero-maida-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328749-7_3-the-health-factory-zero-maida-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328749-8_2-the-health-factory-zero-maida-milk-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Introducing the all-new The Health Factory Zero Maida Milk Bread, a truly wholesome breakfast choice that will delight your senses. Crafted with whole wheat flour, this bread is enriched with essential fibres and calcium, providing a nutritious start to your day. Freed from the constraints of refined flour (Maida), it ensures you get the full goodness of whole grains, fuelling you for all your adventures ahead. With a soft, fluffy crumb and a light, toasty crust, this bread is perfect for sandwiches, toast, or simply enjoyed with your favourite spread. Boasting a mild, slightly sweet flavour, it's a kid-friendly option that the whole family will love. Fortified with milk proteins, it supports bone health and offers balanced nutrition for daily consumption. Embrace the delicious and healthy alternative to traditional bread, and embark on a journey towards a more balanced and energetic lifestyle with The Health Factory Zero Maida Milk Bread.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Milk Solids (6%), Cane Sugar, Yeast, Wheat Gluten, Rice Bran Oil (Edible Vegetable Oil), Iodised Salt, Cultured Wheat Flour, Cultured Glucose.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Zero Maida Classic Sourdough Bread",
+  "handle": "zero-maida-classic-sourdough-bread",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341124_5-the-health-factory-zero-maida-sourdough-classic-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341124_5-the-health-factory-zero-maida-sourdough-classic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341124-2_5-the-health-factory-zero-maida-sourdough-classic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341124-3_4-the-health-factory-zero-maida-sourdough-classic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341124-4_4-the-health-factory-zero-maida-sourdough-classic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341124-5_4-the-health-factory-zero-maida-sourdough-classic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341124-6_4-the-health-factory-zero-maida-sourdough-classic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341124-7_1-the-health-factory-zero-maida-sourdough-classic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341124-8_1-the-health-factory-zero-maida-sourdough-classic-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful flavour and texture of The Health Factory's Classic Sourdough, crafted with whole wheat and zero maida. This artisan loaf is naturally fermented without any added sugar or yeast, resulting in a perfectly crisp crust and soft, airy interior that elevates every bite. Whether you're enjoying it for sandwiches or toast, this clean label bread is rich in flavour, packed with fibre, and offers improved digestibility thanks to the natural fermentation process. Completely free from maida, preservatives, emulsifiers, and palm oil, it's a wholesome and satisfying choice for your meals.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Wheat Gluten, Olive Oil (Edible Vegetable Oil), Iodised Salt",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "60g",
+    "Energy (kcal)": "153.11 kcal",
+    "Protein (g)": "6.56 g",
+    "Carbohydrate (g)": "28.98 g",
+    "Total Sugar (g)": "2.06 g",
+    "Added Sugar (g)": "0.00 g",
+    "Dietary Fibre (g)": "6.04 g",
+    "Total Fat (g)": "1.22 g",
+    "Trans Fat (g)": "0.00 g",
+    "Saturated Fat (g)": "0.17 g",
+    "Cholesterol (mg)": "0.00 mg",
+    "Sodium (mg)": "204.70 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place away from direct sunlight",
+   "manufacturerName": "Nishman Food Factory Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Zero Maida Rye Sourdough Bread",
+  "handle": "zero-maida-rye-sourdough-bread",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341125_3-the-health-factory-zero-maida-sourdough-rye-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341125_3-the-health-factory-zero-maida-sourdough-rye-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341125-2_3-the-health-factory-zero-maida-sourdough-rye-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341125-3_2-the-health-factory-zero-maida-sourdough-rye-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341125-4_2-the-health-factory-zero-maida-sourdough-rye-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341125-5_2-the-health-factory-zero-maida-sourdough-rye-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341125-6_2-the-health-factory-zero-maida-sourdough-rye-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341125-7_1-the-health-factory-zero-maida-sourdough-rye-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Zero Maida Rye Sourdough is crafted with the wholesome goodness of whole wheat and rye. Naturally fermented with no added sugar or yeast, it develops a rich flavour and perfect texture. With its crisp crust and soft, airy crumb, this artisan loaf enhances sandwiches and toast, turning simple meals into something truly delicious.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Rye Flour, Wheat Gluten, Olive Oil (Edible Vegetable Oil), Iodised Salt",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "60g",
+    "Energy (kcal)": "155.21 kcal",
+    "Protein (g)": "4.72 g",
+    "Carbohydrate (g)": "30.40 g",
+    "Total Sugar (g)": "1.56 g",
+    "Added Sugar (g)": "0.00 g",
+    "Dietary Fibre (g)": "6.71 g",
+    "Total Fat (g)": "1.64 g",
+    "Trans Fat (g)": "0.00 g",
+    "Saturated Fat (g)": "0.20 g",
+    "Cholesterol (mg)": "0.00 mg",
+    "Sodium (mg)": "194.96 mg",
+    "Energy (kcal) Per Serve": "258.69 kcal",
+    "Protein (g) Per Serve": "7.86 g",
+    "Carbohydrate (g) Per Serve": "50.67 g",
+    "Total Sugar (g) Per Serve": "2.60 g",
+    "Added Sugar (g) Per Serve": "0.00 g",
+    "Dietary Fibre (g) Per Serve": "11.19 g",
+    "Total Fat (g) Per Serve": "2.73 g",
+    "Trans Fat (g) Per Serve": "0.00 g",
+    "Saturated Fat (g) Per Serve": "0.33 g",
+    "Cholesterol (mg) Per Serve": "0.00 mg",
+    "Sodium (mg) Per Serve": "324.94 mg",
+    "% RDA* Per Serve": "7.76%",
+    "% RDA* For Sodium": "9.75%"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Nishman Food Factory Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Zero Maida Focaccia Sourdough Bread",
+  "handle": "zero-maida-focaccia-sourdough-bread",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333710_7-the-health-factory-zero-maida-focaccia-sourdough-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333710_7-the-health-factory-zero-maida-focaccia-sourdough-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333710-2_7-the-health-factory-zero-maida-focaccia-sourdough-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333710-3_5-the-health-factory-zero-maida-focaccia-sourdough-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333710-4_5-the-health-factory-zero-maida-focaccia-sourdough-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333710-5_5-the-health-factory-zero-maida-focaccia-sourdough-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333710-6_5-the-health-factory-zero-maida-focaccia-sourdough-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333710-7_1-the-health-factory-zero-maida-focaccia-sourdough-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333710-8_1-the-health-factory-zero-maida-focaccia-sourdough-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the wholesome delight of The Health Factory's Zero Maida Focaccia Sourdough Bread, crafted with whole wheat and a long fermentation process for a rich, robust flavour. Infused with a savoury blend of aromatic herbs like thyme, oregano, rosemary, and sage, this soft and fluffy bread is high in fibre, palm oil-free, and contains no chemical preservatives. Perfectly light and airy, it's a healthy and delicious addition to any meal. Slow fermented over time to enhance flavour complexity and create a light, airy crumb that satisfies with every bite, this bread offers a generous 6g of fibre per portion, making it a wholesome choice for balanced, filling meals. Enjoy it as is or toast it lightly for a crispy texture, and experience the naturally fragrant and flavourful goodness of this nutritious sourdough delight.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Yeast, Wheat Gluten, Olive Oil (Edible Vegetable Oil), Lodised Salt, Cane Sugar, Cultured Wheat Flour, Cultured Sweet Potato, Oregano, Rosemary, Sage, Thyme, Natural Olive Oil Flavour",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "80g",
+    "Energy (kcal)": "209.48 kcal",
+    "Protein (g)": "10.94 g",
+    "Carbohydrate (g)": "36.23 g",
+    "Total Sugar (g)": "3.14 g",
+    "Added Sugar (g)": "1.50 g",
+    "Dietary Fibre (g)": "5.44 g",
+    "Total Fat (g)": "2.31 g",
+    "Trans Fat (g)": "0.00 g",
+    "Saturated Fat (g)": "0.26 g",
+    "Cholesterol (mg)": "0.00 mg",
+    "Sodium (mg)": "285.86 mg"
+   },
+   "storageInstructions": "* Store in a cool and dry place away from direct sunlight",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Zero Maida Garlic Bread",
+  "handle": "zero-maida-garlic-bread",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "156g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332064_7-the-health-factory-zero-maida-garlic-bread.jpg"
+    },
+    "barcode": "8908009059376"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332064_7-the-health-factory-zero-maida-garlic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332064-2_7-the-health-factory-zero-maida-garlic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332064-3_5-the-health-factory-zero-maida-garlic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332064-4_5-the-health-factory-zero-maida-garlic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332064-5_5-the-health-factory-zero-maida-garlic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332064-6_5-the-health-factory-zero-maida-garlic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332064-7_5-the-health-factory-zero-maida-garlic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332064-8_2-the-health-factory-zero-maida-garlic-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Introducing the all-new Zero Maida Garlic Bread! This whole wheat bread is sprinkled with dried garlic bits. Enjoy it as a satisfying side dish or a flavourful on-the-go snack. It's the perfect way to add a delicious and nutritious twist to your meals.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Yeast, Rice Bran Oil (Edible Vegetable Oil), Wheat Gluten, Garlic Bread Seasoning (Garlic Powder, Dried Garlic, Onion Powder, Chilli Flakes, Basil, Parsley, Oregano), Iodised Salt, Cane Sugar, Cultured Sweet Potato, Cultured Wheat Flour",
+   "nutritionalInfo": {
+    "Basis": "100g",
+    "Serving Size": "26g",
+    "Energy (Kcal)": "244.08",
+    "Protein (g)": "12.05",
+    "Carbohydrate (g)": "43.39",
+    "Total Sugar (g)": "4.34",
+    "Added Sugar (g)": "2.17",
+    "Dietary Fibre (g)": "6.90",
+    "Total Fat (g)": "2.48",
+    "Trans Fat (g)": "0.00",
+    "Saturated Fat (g)": "0.50",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "404.57"
+   },
+   "storageInstructions": "*Store in a cool and dry place away from direct sunlight",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Zero Maida Kulcha Bread",
+  "handle": "zero-maida-kulcha-bread",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "210g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332065_7-the-health-factory-zero-maida-kulcha-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332065_7-the-health-factory-zero-maida-kulcha-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332065-2_7-the-health-factory-zero-maida-kulcha-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332065-3_5-the-health-factory-zero-maida-kulcha-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332065-4_5-the-health-factory-zero-maida-kulcha-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332065-5_5-the-health-factory-zero-maida-kulcha-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332065-6_4-the-health-factory-zero-maida-kulcha-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332065-7_1-the-health-factory-zero-maida-kulcha-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332065-8_1-the-health-factory-zero-maida-kulcha-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Introducing the all-new Zero Maida Kulcha Bread! Made with whole wheat and a blend of aromatic spices, this soft and flavourful bread is perfect for pairing with your favourite gravy. Enhance your traditional meals with a delicious and nutritious twist.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Kulcha Seasoning (Oregano Flakes, Chilli Flakes, Black Pepper, Onion Powder, Ginger Powder, Kasuri Methi, Garlic Powder), Yeast, Wheat Gluten, Iodised Salt, Rice Bran Oil (Edible Vegetable Oil), Cane Sugar, Cultured Wheat Flour, Cultured Sweet Potato, Cultured Glucose",
+   "nutritionalInfo": {
+    "Serving Size": "70 g",
+    "Energy (Kcal)": "244.32",
+    "Protein (g)": "12.74",
+    "Carbohydrate (g)": "42.78",
+    "Total Sugar (g)": "3.96",
+    "Added Sugar (g)": "2.12",
+    "Dietary Fibre (g)": "6.34",
+    "Total Fat (g)": "2.74",
+    "Trans Fat (g)": "0.00",
+    "Saturated Fat (g)": "0.56",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "376.80"
+   },
+   "storageInstructions": "*Store in a cool and dry place away from direct sunlight",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Zero Maida Pizza Base",
+  "handle": "zero-maida-pizza-base",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328750_9-the-health-factory-zero-maida-pizza-base.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328750_9-the-health-factory-zero-maida-pizza-base.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328750-2_9-the-health-factory-zero-maida-pizza-base.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328750-3_7-the-health-factory-zero-maida-pizza-base.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328750-4_7-the-health-factory-zero-maida-pizza-base.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328750-5_7-the-health-factory-zero-maida-pizza-base.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328750-6_7-the-health-factory-zero-maida-pizza-base.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328750-7_7-the-health-factory-zero-maida-pizza-base.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328750-8_1-the-health-factory-zero-maida-pizza-base.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Zero Maida Pizza Base Crafted with care to deliver exceptional taste and quality, this product offers a delightful balance of flavour and freshness. Perfect for everyday enjoyment, it can be enjoyed on its own or paired with your favourite meals. A reliable choice for those who value both quality and great taste.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Yeast, Wheat Gluten, Rice Bran Oil (Edible Vegetable Oil), Cane Sugar, Iodised Salt, Cultured Wheat Flour, Cultured Glucose.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Zero Maida Bombay Pav",
+  "handle": "zero-maida-bombay-pav",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "156g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40310758_14-the-health-factory-zero-maida-bombay-pav-simply-whole-wheat.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344811_3-the-health-factory-zero-maida-bombay-pav.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40310758_14-the-health-factory-zero-maida-bombay-pav-simply-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40310758-2_13-the-health-factory-zero-maida-bombay-pav-simply-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40310758-3_11-the-health-factory-zero-maida-bombay-pav-simply-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40310758-4_11-the-health-factory-zero-maida-bombay-pav-simply-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40310758-5_10-the-health-factory-zero-maida-bombay-pav-simply-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40310758-6_10-the-health-factory-zero-maida-bombay-pav-simply-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40310758-7_10-the-health-factory-zero-maida-bombay-pav-simply-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40310758-8_2-the-health-factory-zero-maida-bombay-pav-simply-whole-wheat.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Our bread rolls are crafted with your health in mind, containing no chemical preservatives or emulsifiers. They are a good source of protein and fibre, making them a nutritious choice for any meal. With low sugar and fat content, these bread rolls cater to those seeking a balanced diet. Additionally, they are dairy-free, perfect for those with dietary restrictions or lactose intolerance. Each pack contains four delicious bread rolls, ideal for sharing or enjoying on your own. Savour the wholesome taste and texture, knowing you are making a health-conscious choice.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Yeast, Wheat Gluten, Rice Bran Oil (Edible Vegetable Oil), Cane Sugar, Iodised Salt, Cultured Wheat Flour, Cultured Glucose.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Zero Maida Burger Bun",
+  "handle": "zero-maida-burger-bun",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328751_11-the-health-factory-zero-maida-burger-bun.jpg"
+    }
+   },
+   {
+    "title": "225g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344810_3-the-health-factory-zero-maida-burger-bun.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328751_11-the-health-factory-zero-maida-burger-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328751-2_11-the-health-factory-zero-maida-burger-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328751-3_9-the-health-factory-zero-maida-burger-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328751-4_9-the-health-factory-zero-maida-burger-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328751-5_9-the-health-factory-zero-maida-burger-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328751-6_9-the-health-factory-zero-maida-burger-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328751-7_9-the-health-factory-zero-maida-burger-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328751-8_3-the-health-factory-zero-maida-burger-bun.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Zero Maida Burger Bun – Crafted with care to deliver exceptional taste and quality, this product offers a delightful balance of flavour and freshness. Perfect for everyday enjoyment, it can be enjoyed on its own or paired with your favourite meals. A reliable choice for those who value both quality and great taste.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Yeast, Wheat Gluten, Soya Protein Isolate, Rice Bran Oil (Edible Vegetable Oil), Cane Sugar, Iodised Salt, Sesame Seeds, Cultured Wheat Flour, Cultured Glucose.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Zero Maida Classic Milk Rusk",
+  "handle": "zero-maida-classic-milk-rusk",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342760_9-the-health-factory-classic-milk-zero-maida-rusk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342760_9-the-health-factory-classic-milk-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342760-2_11-the-health-factory-classic-milk-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342760-3_9-the-health-factory-classic-milk-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342760-4_9-the-health-factory-classic-milk-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342760-5_9-the-health-factory-classic-milk-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342760-6_8-the-health-factory-classic-milk-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342760-7_2-the-health-factory-classic-milk-zero-maida-rusk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Crisp, golden, and just like the good old days! Zero Maida Rusk Classic Milk brings back the nostalgic joy of dipping a crunchy rusk into a steaming cup of chai. Made with whole wheat and absolutely no maida, it's rich in protein and fibre, delivering a wholesome crunch in every bite. With no added colours or flavours, it's the perfect tea-time companion because some traditions are too close to the heart to change.",
+   "ingredients": "Whole Wheat Flour (Atta), Sooji, Cane Sugar, Rice Bran Oil (Edible Vegetable Oil), Milk Solids (6%), Yeast, Wheat Gluten, lodised Salt, Rosemary Extract, Cultured Glucose.\nAllergen Declaration: Contains Wheat & Milk. Processed in a facility that also processes nuts & soy",
+   "nutritionalInfo": {
+    "Serving Size": "14 g",
+    "Energy": "57.23 kcal",
+    "Protein": "1.99 g",
+    "Carbohydrate": "10.48 g",
+    "Total Sugar": "1.76 g",
+    "Added Sugar": "0.92 g",
+    "Dietary Fibre": "1.40 g",
+    "Total Fat": "0.82 g",
+    "Trans Fat": "0.00 g",
+    "Saturated Fat": "0.19 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "76.16 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zero Maida Cinnamon Bliss Rusk",
+  "handle": "zero-maida-cinnamon-bliss-rusk",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342761_9-the-health-factory-cinnamon-bliss-zero-maida-rusk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342761_9-the-health-factory-cinnamon-bliss-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342761-2_11-the-health-factory-cinnamon-bliss-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342761-3_9-the-health-factory-cinnamon-bliss-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342761-4_9-the-health-factory-cinnamon-bliss-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342761-5_8-the-health-factory-cinnamon-bliss-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342761-6_7-the-health-factory-cinnamon-bliss-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342761-7_2-the-health-factory-cinnamon-bliss-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342761-8_2-the-health-factory-cinnamon-bliss-zero-maida-rusk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A punch of cinnamon in every crunchy bite! Zero Maida Rusk - Cinnamon Bliss is the perfect tea-time snack with the natural aroma of real cinnamon. Whole wheat goodness, full of fibre and protein, and absolutely zero maida, it delivers a wholesome crunch with no added colours or flavours. Elevate your chai moments with a rusk that's warm, cosy, and full of flavour.",
+   "ingredients": "Whole Wheat Flour (Atta), Sooji, Cane Sugar, Rice Bran Oil (Edible Vegetable Oil), Yeast, Wheat Gluten, Cinnamon, lodised Salt, Rosemary Extract, Cultured Glucose.\nAllergen Declaration: Contains Wheat. Processed in a facility that also processes nuts, soy and milk.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "411.13",
+    "Protein (g)": "13.00",
+    "Carbohydrate (g)": "77.16",
+    "Total Sugar (g)": "11.74",
+    "Added Sugar (g)": "6.36",
+    "Dietary Fibre (g)": "10.96",
+    "Total Fat (g)": "5.61",
+    "Trans Fat (g)": "0.00",
+    "Saturated Fat (g)": "1.33",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "499.00"
+   },
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11522998000168"
+  }
+ },
+ {
+  "title": "Zero Maida Royal Elaichi Rusk",
+  "handle": "zero-maida-royal-elaichi-rusk",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342759_9-the-health-factory-royal-elaichi-zero-maida-rusk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342759_9-the-health-factory-royal-elaichi-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342759-2_11-the-health-factory-royal-elaichi-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342759-3_9-the-health-factory-royal-elaichi-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342759-4_9-the-health-factory-royal-elaichi-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342759-5_9-the-health-factory-royal-elaichi-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342759-6_8-the-health-factory-royal-elaichi-zero-maida-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342759-7_2-the-health-factory-royal-elaichi-zero-maida-rusk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the perfect chai-time companion with our Zero Maida Rusk - Royal Elaichi, crafted with whole wheat and devoid of maida, offering a wholesome crunch rich in protein and fibre. This delightful rusk is twice-baked to achieve extra crispiness and infused with the pure, natural aroma of elaichi, making your tea-time even more enjoyable. With no added colours or flavours, you can relish the authentic taste. Our product is not only a source of protein and high in fibre but also free from preservatives, emulsifiers, colours, and palm oil, ensuring a guilt-free snacking experience.",
+   "ingredients": "Whole Wheat Flour (Atta), Sooji, Cane Sugar, Rice Bran Oil (Edible Vegetable Oil), Yeast, Wheat Gluten, lodised Salt, Elaichi, Edible Elaichi Oil, Rosemary Extract, Cultured Glucose.\nAllergen Declaration: Contains Wheat. Processed in a facility that also processes nuts, soy & milk",
+   "nutritionalInfo": {
+    "Serving Size": "14 g",
+    "Energy": "57.64 kcal",
+    "Protein": "1.88 g",
+    "Carbohydrate": "10.53 g",
+    "Total Sugar": "1.71 g",
+    "Added Sugar": "0.74 g",
+    "Dietary Fibre": "1.43 g",
+    "Total Fat": "0.89 g",
+    "Trans Fat": "0.00 g",
+    "Saturated Fat": "0.24 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "74.48 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Berry Blast Zero Maida Mini Cakes",
+  "handle": "berry-blast-zero-maida-mini-cakes",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361443_3-the-health-factory-berry-blast-zero-maida-mini-cakes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361443_3-the-health-factory-berry-blast-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361443-2_3-the-health-factory-berry-blast-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361443-3_3-the-health-factory-berry-blast-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361443-4_3-the-health-factory-berry-blast-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361443-5_3-the-health-factory-berry-blast-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361443-6_3-the-health-factory-berry-blast-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361443-7_1-the-health-factory-berry-blast-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361443-8_1-the-health-factory-berry-blast-zero-maida-mini-cakes.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the deliciously fruity goodness of Berry Blast Zero Maida Mini Cakes! These soft, moist cakes are packed with vibrant berry flavours and made with Zero Maida, offering a healthier, guilt-free treat. Perfect for snacking, they deliver a delightful burst of taste with every bite. Enjoy the perfect combination of sweetness, nutrition, and indulgence in these irresistible mini cakes!",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Rice Bran Oil (Edible Vegetable Oil), Jaggery, Cranberries, Fructo-Oligosaccharides, Milk Solids, Whey Protein Concentrate, Corn Starch, Sodium Caseiante, Honey, Gluten, Cranberry Flavour, Leaving Agent [Sodium Bicarbonate (INS 500ii), Sodium Acid Pyrophosphate (INS450i)], Cultured Wheat Flour, Cultured Glucose, Rosemary Extract.",
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rich Vanilla Zero Maida Mini Cakes",
+  "handle": "rich-vanilla-zero-maida-mini-cakes",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361444_3-the-health-factory-rich-vanilla-zero-maida-mini-cakes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361444_3-the-health-factory-rich-vanilla-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361444-2_3-the-health-factory-rich-vanilla-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361444-3_3-the-health-factory-rich-vanilla-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361444-4_3-the-health-factory-rich-vanilla-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361444-5_3-the-health-factory-rich-vanilla-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361444-6_3-the-health-factory-rich-vanilla-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361444-7_1-the-health-factory-rich-vanilla-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361444-8_1-the-health-factory-rich-vanilla-zero-maida-mini-cakes.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, smooth flavour of Rich Vanilla Zero Maida Mini Cakes. Soft, fluffy, and bursting with vanilla goodness, these bite-sized treats offer the perfect balance of sweetness and lightness. Made with Zero Maida, they’re a guilt-free snack that doesn’t compromise on taste. Perfect for satisfying your cravings anytime, without the added worry of preservatives or unhealthy ingredients. Enjoy a wholesome indulgence!",
+   "ingredients": "Chakki Fresh Aata (100% Whole Wheat Flour), Rice Bran Oil (Edible Vegetable Oil), Jaggery, Maltitol, Almonds, Fructooligosaccharide, Milk Solids, Whey Protein Concentrate, Corn Starch, Native Potato Starch, Leavening Agent (Sodium Bicarbonate (INS 500ii), Sodium Acid Pyrophosphate (450i)), Almond Flavour - Nature Identical, Rosemary Extract, Cultured Wheat Flour, Fermented Glucose, Cinnamon Powder.",
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Roasted Almonds Zero Maida Mini Cakes",
+  "handle": "roasted-almonds-zero-maida-mini-cakes",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361445_3-the-health-factory-roasted-almonds-zero-maida-mini-cakes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361445_3-the-health-factory-roasted-almonds-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361445-2_3-the-health-factory-roasted-almonds-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361445-3_3-the-health-factory-roasted-almonds-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361445-4_3-the-health-factory-roasted-almonds-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361445-5_3-the-health-factory-roasted-almonds-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361445-6_3-the-health-factory-roasted-almonds-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361445-7_1-the-health-factory-roasted-almonds-zero-maida-mini-cakes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361445-8_1-the-health-factory-roasted-almonds-zero-maida-mini-cakes.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A soft, fluffy bite with the perfect crunch of almond, this melt-in-the-mouth mini cake offers pure indulgence in every bite. Made with Zero Maida, it’s the ultimate guilt-free snack, combining the rich flavour of almonds with a light, airy texture. Each bite delivers a delightful balance of taste and nutrition, making it the perfect treat for those craving something delicious yet wholesome. Enjoy the indulgence, minus the guilt!",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Rice Bran Oil (Edible Vegetable Oil), Jaggery, Almond, Fructo-Oligosaccharides, Milk Solids, Whey Protein Concentrate, Corn Starch, Sodium Caseiante, Honey, Gluten, Almond Flavour, Leaving Agent [Sodium Bicarbonate (INS 500ii), Sodium Acid Pyrophosphate (INS450i)], Cultured Wheat Flour, Cultured Glucose, Rosemary Extract.",
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chatpata Masala Toasted Pops",
+  "handle": "chatpata-masala-toasted-pops",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361446_3-the-health-factory-chatpata-masala-zero-maida-rusk-pops.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361446_3-the-health-factory-chatpata-masala-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361446-2_3-the-health-factory-chatpata-masala-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361446-3_3-the-health-factory-chatpata-masala-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361446-4_3-the-health-factory-chatpata-masala-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361446-5_3-the-health-factory-chatpata-masala-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361446-6_3-the-health-factory-chatpata-masala-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361446-7_3-the-health-factory-chatpata-masala-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361446-8_2-the-health-factory-chatpata-masala-zero-maida-rusk-pops.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the crispy goodness of The Health Factory Zero Maida Pops! Made with whole wheat and no maida, these crunchy pops are the perfect guilt-free snack. With zero preservatives, additives, or palm oil, they offer a healthy, fibre-rich option for any time of the day. Enjoy a tasty treat that’s both nutritious and delicious!",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Sooji, Spices & Flavours (Coriander, Onion, Cumin, Garlic, Turmeric, Black Cumin Seeds, Starch, Black Salt, Mango Powder, Soya Protein, Tamarind Powder, Vinegar Powder, Natural & Nature Identical Flavours), Rice Bran Oil (Edible Vegetable Oil), Cane Sugar, Iodised Salt, Yeast, Wheat Gluten, Cultured Glucose, Rosemary Extract.",
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 5
+  }
+ },
+ {
+  "title": "Cinnamon Rush Toasted Pops",
+  "handle": "cinnamon-rush-toasted-pops",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361447_3-the-health-factory-cinnamon-rush-zero-maida-rusk-pops.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361447_3-the-health-factory-cinnamon-rush-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361447-2_3-the-health-factory-cinnamon-rush-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361447-3_3-the-health-factory-cinnamon-rush-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361447-4_3-the-health-factory-cinnamon-rush-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361447-5_3-the-health-factory-cinnamon-rush-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361447-6_3-the-health-factory-cinnamon-rush-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361447-7_3-the-health-factory-cinnamon-rush-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361447-8_2-the-health-factory-cinnamon-rush-zero-maida-rusk-pops.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Light, crispy munchies with a hint of cinnamon & gentle sweetness. Made with zero maida and powered by protein and fibre, they deliver the perfect crunch. A healthier alternative to chips for lighter, guilt-free snacking.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Sooji, Cane Sugar, Rice Bran Oil (Edible Vegetable Oil), Yeast, Wheat Gluten, Cinnamon, Iodised Salt, Rosemary Extract, Cultured Glucose",
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 5
+  }
+ },
+ {
+  "title": "Cream & Onion Toasted Pops",
+  "handle": "cream-onion-toasted-pops",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361448_3-the-health-factory-cream-onion-zero-maida-rusk-pops.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361448_3-the-health-factory-cream-onion-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361448-2_3-the-health-factory-cream-onion-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361448-3_3-the-health-factory-cream-onion-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361448-4_3-the-health-factory-cream-onion-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361448-5_3-the-health-factory-cream-onion-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361448-6_3-the-health-factory-cream-onion-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361448-7_3-the-health-factory-cream-onion-zero-maida-rusk-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361448-8_2-the-health-factory-cream-onion-zero-maida-rusk-pops.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Crispy, baked, and packed with the classic tang of sour cream and the bold kick of onion. Zero Maida goodness meets the perfect crunch, with protein and fibre for a healthier snack that doesn’t compromise on taste. The flavour you love, now with a wholesome twist.",
+   "ingredients": "Chakki Fresh Atta (Whole Wheat Flour), Sooji, Spices & Flavours [Starch, Dehydrated Onion Powder, Whey Powder, Milk Flavour (Natural & Nature Identical), Cheese Powder, Parsley, Anticaking Agent (INS 551)] Cane Sugar, Rice Bran Oil (Edible Vegetable Oil), Iodised Salt, Yeast, Wheat Gluten, Cultured Glucose, Rosemary Extract",
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 5
+  }
+ },
+ {
+  "title": "Zero Maida Classic Digestive Biscuits",
+  "handle": "zero-maida-classic-digestive-biscuits",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374664_1-the-health-factory-zero-maida-classic-digestive-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374664_1-the-health-factory-zero-maida-classic-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374664-2_1-the-health-factory-zero-maida-classic-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374664-3_1-the-health-factory-zero-maida-classic-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374664-4_1-the-health-factory-zero-maida-classic-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374664-5_1-the-health-factory-zero-maida-classic-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374664-6_1-the-health-factory-zero-maida-classic-digestive-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Wholesome and perfect for your chai break! Our Zero Maida Classic Digestive Biscuits are made with Chakki Atta and deliver a hearty crunch packed with fibre power. Crafted using better ingredients and absolutely no maida, it’s everyday snacking done right because if you dip daily, it should be right.",
+   "ingredients": "Whole Wheat Flour (Chakki Atta), Rice Bran Oil (Edible\nVegetable Oil), Cane Sugar, Baking Powder [INS 500(ii), INS 450(i), INS\n503(ii)], Wheat Fibre, lodised Salt, Rosemary Extract.",
+   "nutritionalInfo": {
+    "Serving Size": "18 g",
+    "Energy": "84.91 kcal",
+    "Protein": "1.58 g",
+    "Carbohydrate": "12.26 g",
+    "Total Sugar": "2.47 g",
+    "Added Jaggery": "1.75 g",
+    "Added Sugar": "0.59 g",
+    "Dietary Fibre": "1.30 g",
+    "Total Fat": "3.28 g",
+    "Saturated Fats": "0.77 g",
+    "Polyunsaturated Fats": "1.11 g",
+    "Monounsaturated Fats": "1.40 g",
+    "Trans Fats": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "12.92 mg"
+   },
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zero Maida Cinnamon & Jaggery Digestive Biscuits",
+  "handle": "zero-maida-cinnamon-jaggery-digestive-biscuits",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374662_1-the-health-factory-zero-maida-cinnamon-jaggery-digestive-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374662_1-the-health-factory-zero-maida-cinnamon-jaggery-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374662-2_1-the-health-factory-zero-maida-cinnamon-jaggery-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374662-3_1-the-health-factory-zero-maida-cinnamon-jaggery-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374662-4_1-the-health-factory-zero-maida-cinnamon-jaggery-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374662-5_1-the-health-factory-zero-maida-cinnamon-jaggery-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374662-6_1-the-health-factory-zero-maida-cinnamon-jaggery-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374662-7_1-the-health-factory-zero-maida-cinnamon-jaggery-digestive-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Warm and comforting, and perfect for your chai break! Our Zero Maida Cinnamon & Jaggery Digestive brings together the gentle sweetness of jaggery and the aromatic warmth of cinnamon in every bite. Made with absolutely no maida and better ingredients, it delivers a rich, balanced flavour with a satisfying crunch so your everyday dip feels indulgent, yet right.",
+   "ingredients": "Whole Wheat Flour (Atta), Rice Bran Oil (Edible Vegetable Oil), Jaggery, Cane Sugar, Baking Powder [INS 500(ii), INS 450(i), INS 503(ii)], Cinnamon Powder, lodised Salt, Wheat Fibre, Wheat Bran, Rosemary Extract.",
+   "nutritionalInfo": {
+    "Serving Size": "18 g",
+    "Energy": "84.91 kcal",
+    "Protein": "1.58 g",
+    "Carbohydrate": "12.26 g",
+    "Total Sugar": "2.47 g",
+    "Added Jaggery": "1.75 g",
+    "Added Sugar": "0.59 g",
+    "Dietary Fibre": "1.30 g",
+    "Total Fat": "3.28 g",
+    "Saturated Fats": "0.77 g",
+    "Polyunsaturated Fats": "1.11 g",
+    "Monounsaturated Fats": "1.40 g",
+    "Trans Fats": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "12.92 mg"
+   },
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zero Maida Honey & Oats Digestive Biscuits",
+  "handle": "zero-maida-honey-oats-digestive-biscuits",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374663_1-the-health-factory-zero-maida-honey-oats-digestive-biscuits.jpg"
+    },
+    "barcode": "8908009059055"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374663_1-the-health-factory-zero-maida-honey-oats-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374663-2_1-the-health-factory-zero-maida-honey-oats-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374663-3_1-the-health-factory-zero-maida-honey-oats-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374663-4_1-the-health-factory-zero-maida-honey-oats-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374663-5_1-the-health-factory-zero-maida-honey-oats-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374663-6_1-the-health-factory-zero-maida-honey-oats-digestive-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Wholesome and perfect for your chai break! Our Zero Maida Honey & Oats Digestive biscuits is made with Chakki Atta, Oats & Honey, delivering a hearty crunch packed with fibre power. Crafted using better ingredients and absolutely no maida, it’s everyday snacking done right because if you dip daily, it should be right.",
+   "ingredients": "Whole Wheat Flour (Atta), Oat Flour, Rice Bran Oil (Edible Vegetable Oil), Oat Flakes, Honey, Jaggery, Cane Sugar, Baking Powder [INS 500(ii), INS 450(i), INS 503(ii)], Wheat Gluten, lodised Salt, Wheat Fibre, Rosemary Extract.",
+   "nutritionalInfo": {
+    "Serving Size": "18 g",
+    "Energy": "84.91 kcal",
+    "Protein": "1.58 g",
+    "Carbohydrate": "12.26 g",
+    "Total Sugar": "2.47 g",
+    "Added Jaggery": "1.75 g",
+    "Added Sugar": "0.59 g",
+    "Dietary Fibre": "1.30 g",
+    "Total Fat": "3.28 g",
+    "Saturated Fats": "0.77 g",
+    "Polyunsaturated Fats": "1.11 g",
+    "Monounsaturated Fats": "1.40 g",
+    "Trans Fats": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "12.92 mg"
+   },
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zero Maida Multigrain & Seeds Digestive Biscuits",
+  "handle": "zero-maida-multigrain-seeds-digestive-biscuits",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374661_1-the-health-factory-zero-maida-multigrain-seeds-digestive-biscuits.jpg"
+    },
+    "barcode": "8908009059871"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374661_1-the-health-factory-zero-maida-multigrain-seeds-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374661-2_1-the-health-factory-zero-maida-multigrain-seeds-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374661-3_1-the-health-factory-zero-maida-multigrain-seeds-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374661-4_1-the-health-factory-zero-maida-multigrain-seeds-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374661-5_1-the-health-factory-zero-maida-multigrain-seeds-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374661-6_1-the-health-factory-zero-maida-multigrain-seeds-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374661-7_1-the-health-factory-zero-maida-multigrain-seeds-digestive-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Wholesome and perfect for your chai break! Our Zero Maida Multigrain & Seeds Digestive is made with Chakki Fresh Atta, sunflower seeds, flax seeds, oats and peanuts, delivering a hearty crunch packed with fibre power. Crafted using better ingredients and absolutely no maida, it’s everyday snacking done right because if you dip daily, it should be right.",
+   "ingredients": "Whole Wheat Flour (Atta), Rice Bran Oil (Edible Vegetable Oil), Seed Mix (Flax Seeds, Oat Flakes, Sunflower Seeds, Sesame Seeds), Cane Sugar, Baking Powder [INS 500(ii), INS 450(i), INS 503(ii)], Cinnamon Powder, lodised Salt, Wheat Fibre, Wheat Bran, Milk Solids, Rosemary Extract.",
+   "nutritionalInfo": {
+    "Serving Size": "18 g",
+    "Energy": "89.05 kcal",
+    "Protein": "2.07 g",
+    "Carbohydrate": "11.42 g",
+    "Total Sugar": "2.57 g",
+    "Added Sugar": "2.45 g",
+    "Dietary Fibre": "1.41 g",
+    "Total Fat": "3.90 g",
+    "Saturated Fats": "0.82 g",
+    "Polyunsaturated Fats": "1.25 g",
+    "Monounsaturated Fats": "1.82 g",
+    "Trans Fats": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "15.08 mg"
+   },
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Classic Creamy Peanut Butter - Unsweetened",
+  "handle": "classic-creamy-peanut-butter-unsweetened",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370073_1-the-health-factory-classic-peanut-butter-creamy.jpg"
+    },
+    "barcode": "8908009059697"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370073_1-the-health-factory-classic-peanut-butter-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370073-2_1-the-health-factory-classic-peanut-butter-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370073-3_1-the-health-factory-classic-peanut-butter-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370073-4_1-the-health-factory-classic-peanut-butter-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370073-5_1-the-health-factory-classic-peanut-butter-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370073-6_1-the-health-factory-classic-peanut-butter-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370073-7_1-the-health-factory-classic-peanut-butter-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370073-8_1-the-health-factory-classic-peanut-butter-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Classic Creamy Peanut Butter - Unsweetened, with a rich, nutty flavour from roasted premium peanuts. Packed with 65g protein per pack and clean nutrition, it’s backed by our Clean Label Promise and made for modern, mindful eating.",
+   "ingredients": "Roasted Peanuts\nAllergen Declaration: Contains nuts.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "614.09",
+    "Protein (g)": "32.65",
+    "Carbohydrate (g)": "22.12",
+    "Total Sugar (g)": "3.65",
+    "Added Sugar (g)": "0.00",
+    "Dietary Fibre (g)": "5.39",
+    "Total Fat (g)": "43.89",
+    "Saturated Fat (g)": "7.41",
+    "Polyunsaturated Fat (g)": "8.70",
+    "Monounsaturated Fat (g)": "27.76",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "19.13"
+   },
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Classic Crunchy Peanut Butter - Sweetened",
+  "handle": "classic-crunchy-peanut-butter-sweetened",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370076_1-the-health-factory-classic-crunchy-peanut-butter-sweetened.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370076_1-the-health-factory-classic-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370076-2_1-the-health-factory-classic-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370076-3_1-the-health-factory-classic-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370076-4_1-the-health-factory-classic-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370076-5_1-the-health-factory-classic-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370076-6_1-the-health-factory-classic-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370076-7_1-the-health-factory-classic-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370076-8_1-the-health-factory-classic-crunchy-peanut-butter-sweetened.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Peanut Butter Classic Crunchy is crafted from roasted peanuts to deliver a rich, nutty flavour and satisfying crunchy texture. Packed with 49 g of protein per pack and made with clean, wholesome ingredients, it is backed by our Clean Label Promise. Perfect for modern, mindful eating, this delicious spread makes a nutritious addition to breakfasts, snacks, and everyday recipes.",
+   "ingredients": "Roasted Peanuts, Date Powder.\nAllergen Declaration: Contains nuts.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "587.39",
+    "Protein (g)": "24.90",
+    "Carbohydrate (g)": "27.93",
+    "Total Sugar (g)": "16.90",
+    "Added Sugar (Date Powder) (g)": "11.19",
+    "Dietary Fibre (g)": "9.11",
+    "Total Fat (g)": "41.79",
+    "Saturated Fat (g)": "7.40",
+    "Polyunsaturated Fat (g)": "8.05",
+    "Monounsaturated Fat (g)": "26.30",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "122.00"
+   },
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Crunchy Peanut Butter - Sweetened",
+  "handle": "chocolate-crunchy-peanut-butter-sweetened",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370075_3-the-health-factory-chocolate-crunchy-peanut-butter-sweetened.jpg"
+    },
+    "barcode": "8908009059857"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370075_3-the-health-factory-chocolate-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370075-2_3-the-health-factory-chocolate-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370075-3_3-the-health-factory-chocolate-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370075-4_3-the-health-factory-chocolate-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370075-5_3-the-health-factory-chocolate-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370075-6_3-the-health-factory-chocolate-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370075-7_3-the-health-factory-chocolate-crunchy-peanut-butter-sweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370075-8_3-the-health-factory-chocolate-crunchy-peanut-butter-sweetened.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Peanut Butter Chocolate Crunchy is a delicious blend of roasted peanuts, jaggery, and rich cocoa with a satisfying crunch in every bite. With 49g protein per pack, it delivers indulgent chocolatey sweetness with cleaner ingredients, backed by our Clean Label Promise and made for modern, mindful eating.",
+   "ingredients": "Roasted Peanuts, Jaggery, Cocoa.\nAllergen Declaration: Contains nuts.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "552.76",
+    "Protein (g)": "24.70",
+    "Carbohydrate (g)": "34.61",
+    "Total Sugar (g)": "17.29",
+    "Added Sugar (Jaggery) (g)": "15.83",
+    "Dietary Fibre (g)": "11.15",
+    "Total Fat (g)": "35.08",
+    "Saturated Fat (g)": "5.53",
+    "Polyunsaturated Fat (g)": "7.03",
+    "Monounsaturated Fat (g)": "22.50",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "46.00"
+   },
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Berry Jam Crunchy Peanut Butter - Sweetened",
+  "handle": "berry-jam-crunchy-peanut-butter-sweetened",
+  "vendor": "The Health Factory",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370074_1-the-health-factory-berry-jam-crunchy-peanut-butter.jpg"
+    },
+    "barcode": "8908009059703"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370074_1-the-health-factory-berry-jam-crunchy-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370074-2_1-the-health-factory-berry-jam-crunchy-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370074-3_1-the-health-factory-berry-jam-crunchy-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370074-4_1-the-health-factory-berry-jam-crunchy-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370074-5_1-the-health-factory-berry-jam-crunchy-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370074-6_1-the-health-factory-berry-jam-crunchy-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370074-7_1-the-health-factory-berry-jam-crunchy-peanut-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370074-8_1-the-health-factory-berry-jam-crunchy-peanut-butter.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Berry Jam Crunchy Peanut Butter - Sweetened is a delicious mix of crunchy peanut butter and real fruit jam, made with roasted premium peanuts and berries. With 62g protein per pack, good fats and fibre, it delivers natural sweetness from real fruits.",
+   "ingredients": "Roasted Peanuts, Fruit Berries (Mulberry, Strawberry), Multi-Floral Honey, Thickener (Fruit Pectin), and Concentrated Lemon Juice.\nAllergen Declaration: Contains nuts.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "575.32",
+    "Protein (g)": "26.60",
+    "Carbohydrate (g)": "20.21",
+    "Total Sugar (g)": "13.03",
+    "Added Sugar (from Honey) (g)": "5.86",
+    "Natural Sugar (g)": "5.25",
+    "Dietary Fibre (g)": "5.25",
+    "Total Fat (g)": "43.12",
+    "Saturated Fat (g)": "7.57",
+    "Polyunsaturated Fat (g)": "8.25",
+    "Monounsaturated Fat (g)": "27.30",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "21.60"
+   },
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight.",
+   "manufacturerName": "Nutri Being Pvt. Ltd",
+   "fssaiLicense": "11522998000168",
+   "countryOfOrigin": "India"
+  }
+ }
+]

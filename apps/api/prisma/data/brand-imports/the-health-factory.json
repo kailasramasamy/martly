@@ -1,0 +1,262 @@
+{
+  "brand": "The Health Factory",
+  "manufacturer": "Nutri Being Pvt. Ltd",
+  "feed": "the-health-factory-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/the-health-factory/logo-f3a74062.png",
+  "themeColor": "#6B1E1E",
+  "themeColorSecondary": "#F28C28",
+  "namePrefix": "The Health Factory ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Zero\\ Maida\\ Whole\\ Wheat\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Protein\\ Bread\\ \\-\\ Whole\\ Wheat$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Vegan\\ Protein\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Multi\\-Protein\\ Protein\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Super\\ Multigrain\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Milk\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Classic\\ Sourdough\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Rye\\ Sourdough\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Focaccia\\ Sourdough\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Garlic\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Garlic Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Kulcha\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Pizza\\ Base$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Bombay\\ Pav$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Burger\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Classic\\ Milk\\ Rusk$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Cinnamon\\ Bliss\\ Rusk$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Royal\\ Elaichi\\ Rusk$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Elaichi Rusk"
+      ]
+    },
+    {
+      "match": "^Berry\\ Blast\\ Zero\\ Maida\\ Mini\\ Cakes$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Rich\\ Vanilla\\ Zero\\ Maida\\ Mini\\ Cakes$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Almonds\\ Zero\\ Maida\\ Mini\\ Cakes$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Chatpata\\ Masala\\ Toasted\\ Pops$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Cinnamon\\ Rush\\ Toasted\\ Pops$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Cream\\ \\&\\ Onion\\ Toasted\\ Pops$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Classic\\ Digestive\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Cinnamon\\ \\&\\ Jaggery\\ Digestive\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Honey\\ \\&\\ Oats\\ Digestive\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Multigrain\\ \\&\\ Seeds\\ Digestive\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Classic\\ Creamy\\ Peanut\\ Butter\\ \\-\\ Unsweetened$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Classic\\ Crunchy\\ Peanut\\ Butter\\ \\-\\ Sweetened$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Crunchy\\ Peanut\\ Butter\\ \\-\\ Sweetened$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Berry\\ Jam\\ Crunchy\\ Peanut\\ Butter\\ \\-\\ Sweetened$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    }
+  ]
+}
