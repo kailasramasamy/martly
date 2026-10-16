@@ -1,0 +1,62 @@
+{
+  "brand": "Malkist (Mayora)",
+  "manufacturer": "Mayora India Pvt. Ltd.",
+  "feed": "malkist-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/malkist/logo-5d9260da.png",
+  "themeColor": "#1E2A78",
+  "themeColorSecondary": "#E2231A",
+  "namePrefix": "Malkist ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cheese\\ Crunchy\\ Layered\\ Crackers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Double\\ Chocolatey\\ Crunchy\\ Layered\\ Crackers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Cracker\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Cracker\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Cappuccino\\ Cracker\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Glazed\\ Cracker\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    }
+  ]
+}
