@@ -1,0 +1,934 @@
+{
+  "brand": "mCaffeine",
+  "manufacturer": "Pep Technologies Pvt. Ltd.",
+  "feed": "mcaffeine-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mcaffeine/logo-28406ab4.png",
+  "themeColor": "#00A99D",
+  "themeColorSecondary": "#8C8C8C",
+  "namePrefix": "mCaffeine ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Deep\\ Cleansing\\ Coffee\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Cappuccino\\ Coffee\\ Foaming\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Espresso\\ Coffee\\ Face\\ Wash\\ \\-\\ With\\ Hyaluronic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Latte\\ Coffee\\ Face\\ Wash\\ \\-\\ With\\ Almond\\ Milk$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Naked\\ Detox\\ Green\\ Tea\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Face\\ Wash\\ With\\ Vitamin\\ C$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Kombucha\\ Hydrating\\ Face\\ Cleanser\\ \\-\\ Hyaluronic\\ Acid\\ \\&\\ Panthenol$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Face\\ Cleansing\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Toner\\-Serum\\ Niacinamide\\ 5%$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Face\\ Scrub\\ \\-\\ With\\ Vitamin\\ E$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Tan\\ Removal\\ Coffee\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Berries\\ Brightening\\ Coffee\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Exfoliating\\ Green\\ Tea\\ Face\\ Scrub\\ \\-\\ With\\ Vitamin\\ C\\ \\&\\ Walnut$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Milky\\ Brew\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Anti\\ Acne\\ Cappuccino\\ Coffee\\ Face\\ Mask\\ \\-\\ Clay\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Exfoliating\\ Espresso\\ Coffee\\ Face\\ Mask\\ \\-\\ With\\ Natural\\ AHA$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Super\\ Glow\\ Flash\\ Facial\\ Mask\\ \\-\\ 25%\\ AHA\\ \\+\\ BHA\\ \\+\\ PHA$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^4%\\ Niacinamide\\ Hydrogel\\ Under\\ Eye\\ Patches\\ \\-\\ With\\ Kombucha\\ Tea$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Hydrogel\\ Under\\ Eye\\ Patches\\ \\-\\ With\\ 1%\\ Caffeine$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Face\\ Serum\\ \\-\\ With\\ Vitamin\\ C\\ 15%$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ \\&\\ 15%\\ Vitamin\\ C\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Naked\\ Detox\\ Hydrating\\ Green\\ Tea\\ Face\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Sun\\ Protection\\ Coffee\\ Face\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Kombucha\\ Hydra\\ Repair\\ Serum\\ \\-\\ Hyaluronic\\ \\&\\ Polyglutamic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Cherry\\ Affair\\ Coffee\\ Face\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Plum\\ Passion\\ Coffee\\ Face\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Under\\ Eye\\ Cream\\ \\-\\ With\\ Vitamin\\ E\\ \\&\\ Hyaluronic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Under\\ Eye\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Under\\ Eye\\ Cream\\ \\-\\ With\\ Vitamin\\ C\\ \\&\\ 3%\\ Caffeine$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Vitamin\\ C\\ Green\\ Tea\\ Night\\ Gel\\ \\-\\ With\\ Hyaluronic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Day\\ Cream\\ SPF\\ 30\\ \\-\\ With\\ Hyaluronic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Lightweight\\ Cappuccino\\ Coffee\\ Face\\ Moisturizer$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Non\\-Sticky\\ Latte\\ Coffee\\ Face\\ Moisturizer\\ \\-\\ With\\ Ceramide$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Oil\\-Free\\ Coffee\\ Face\\ Moisturizer\\ Gel\\ \\-\\ With\\ Hyaluronic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Oil\\-Free\\ Moisturizer\\ \\-\\ With\\ 5%\\ Niacinamide$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Mattifying\\ Coffee\\ Hand\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Lotion\\ Sunscreen\\ \\-\\ SPF\\ 50\\ PA\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Kombucha\\ Hydra\\ Repair\\ Sunscreen\\ \\-\\ SPF\\ 50\\ PA\\+\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sun\\ Bath\\ Body\\ Sunscreen\\ Spray\\ \\-\\ SPF\\ 80\\+\\ PA\\+\\+\\+\\+,\\ Blueberry$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sun\\ Glaze\\ Mist\\ Sunscreen\\ Spray\\ \\-\\ SPF\\ 50\\ PA\\+\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Lip\\ Balm\\ \\-\\ Shea\\ Butter\\ \\&\\ Vitamin\\ E$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Deep\\ Moisturising\\ Choco\\ Lip\\ Balm\\ \\-\\ With\\ Cocoa\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Lip\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Gently\\ Exfoliating\\ Choco\\ Lip\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Choco\\ Lip\\ Sleeping\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Lip\\ Polishing\\ Oil\\ \\-\\ With\\ Rosehip\\ \\&\\ Shea\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Espresso\\ Coffee\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Latte\\ Coffee\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Mocha\\ Coffee\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Body\\ Wash\\ \\-\\ With\\ Almonds$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Body\\ Wash\\ \\-\\ With\\ Berries$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Body\\ Wash\\ \\-\\ With\\ Cocoa$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Exfoliating\\ Coffee\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Body\\ Wash\\ \\-\\ With\\ AHA\\ 10%$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Body\\ Wash\\ \\-\\ With\\ BHA\\ Salicylic\\ Acid\\ 1%$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Blast\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Brightening\\ Raspberry\\ Rush\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Cream\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Pumpkin\\ Spice\\ Latte\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Caramel\\ Crunch\\ Exfoliating\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Guava\\ Tini\\ De\\-Tan\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Island\\ Fresh\\ Triple\\ Action\\ Deo\\ Body\\ Wash\\ \\-\\ 5%\\ Niacinamide$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Take\\ A\\ Dip\\ Triple\\ Action\\ Deo\\ Body\\ Wash\\ \\-\\ 2%\\ Salicylic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Tan\\ Removal\\ Coffee\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Body\\ Scrub\\ \\-\\ With\\ Almonds$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Body\\ Scrub\\ \\-\\ With\\ Berries$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Sugar\\ Body\\ Scrub\\ \\-\\ With\\ Pomegranate$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Breeze\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Brightening\\ Raspberry\\ Rush\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Cookie\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Smoky\\ Pumpkin\\ Spice\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Glow\\ Boost\\ Grapefruit\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Caramel\\ Eclairs\\ Coffee\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Guava\\ Tini\\ De\\-Tan\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^All\\ In\\ One\\ Coffee\\ Body\\ Mask\\ \\-\\ With\\ Niacinamide$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Espresso\\ Coffee\\ Bathing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Cream\\ Coffee\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Moisturising\\ Coffee\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Rich\\ Choco\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Body\\ Lotion\\ \\-\\ Shea\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Choco\\ Body\\ Lotion\\ \\-\\ Cocoa\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Vitamin\\ C\\ Green\\ Tea\\ Body\\ Lotion\\ \\-\\ With\\ Shea\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Swirl\\ Serum\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Brightening\\ Raspberry\\ Rush\\ Serum\\ Body\\ Lotion\\ \\-\\ SPF\\ 50\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Dream\\ Serum\\ Body\\ Lotion\\ \\-\\ SPF\\ 30\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^By\\ The\\ Blues\\ Perfume\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Summer\\ Breeze\\ Perfume\\ Body\\ Lotion\\ \\-\\ Aqua\\ Fresh$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Escape\\ Perfume\\ Body\\ Lotion\\ \\-\\ Fruity\\ Floral$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Hydrating\\ Coffee\\ Body\\ Serum\\ \\-\\ With\\ Hyaluronic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Rich\\ Choco\\ Body\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Choco\\ Body\\ Butter\\ \\-\\ 72\\ Hrs\\ Intense\\ Moisture$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Swirl\\ Deep\\ Moisturizing\\ Body\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Dream\\ Deep\\ Moisturizing\\ Body\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^On\\ The\\ Go\\ Coffee\\ Body\\ Stick$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Body\\ Polishing\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Cherry\\ Affair\\ Coffee\\ Body\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Plum\\ Passion\\ Coffee\\ Body\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Shampoo\\ \\-\\ Hair\\ Fall\\ Control$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Cappuccino\\ Coffee\\ Shampoo\\ \\-\\ Anti\\ Dandruff$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Latte\\ Coffee\\ Shampoo\\ With\\ Coconut\\ Milk$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Hair\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Cappuccino\\ Coffee\\ Conditioner\\ With\\ Almond\\ Milk$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Latte\\ Coffee\\ Conditioner\\ With\\ Coconut\\ Milk$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Hair\\ Mask\\ \\-\\ With\\ Protein\\ Trio$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Cappuccino\\ Coffee\\ Hair\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Latte\\ Coffee\\ Hair\\ Mask\\ With\\ Coconut\\ Milk\\ \\&\\ Shea$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Hair\\ Serum\\ \\-\\ With\\ Argan\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Cappuccino\\ Coffee\\ Hair\\ Serum\\ With\\ Macadamia\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Scalp\\ Tonic$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Scalp\\ \\&\\ Hair\\ Oil\\ \\-\\ With\\ Redensyl$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Latte\\ Coffee\\ Scalp\\ \\&\\ Hair\\ Cream\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Cappuccino\\ Coffee\\ Scalp\\ Lotion\\ \\-\\ Anti\\ Dandruff$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    },
+    {
+      "match": "^Naked\\ \\&\\ Raw\\ Coffee\\ Scalp\\ Scrub\\ \\-\\ With\\ Natural\\ AHA$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    }
+  ]
+}
