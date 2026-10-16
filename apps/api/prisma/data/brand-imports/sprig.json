@@ -1,0 +1,270 @@
+{
+  "brand": "Sprig",
+  "manufacturer": "Intergrow Brands Pvt. Ltd.",
+  "feed": "sprig-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sprig/logo-95fd2f1f.png",
+  "themeColor": "#6B5E57",
+  "themeColorSecondary": "#1E9A3A",
+  "namePrefix": "Sprig ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Basil\\ Herb$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Oregano\\ Herb$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Rosemary\\ Herb$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Thyme\\ Herb$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Celery\\ Sea\\ Salt\\ Grinder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Chipotle\\ Smoked\\ Sea\\ Salt\\ Grinder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Sichuan\\ Pepper\\ \\&\\ Sea\\ Salt\\ Grinder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Gourmet\\ Black\\ Pepper\\ Grinder\\ \\-\\ Tellicherry$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Six\\ Pepper\\ Medley\\ Grinder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Smoked\\ Paprika\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Paprika\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Bhut\\ Jolokia\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Chipotle\\ Adobado\\ Hot\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Mango\\ Jalapeno\\ Hot\\ \\&\\ Sweet\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Wood\\-Aged\\ Habanero\\ Hot\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Chilli\\ Oil$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Teriyaki\\ Sauce\\ with\\ Ginger$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Wasabi\\ Paste$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Toasted\\ Sesame\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    },
+    {
+      "match": "^Cinnamon\\ Imbued\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Imbued\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Montane\\ Ginger\\ Marmalade\\ with\\ Lime$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Classic\\ Salted\\ Caramel\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Dessert Syrups"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Palm\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    },
+    {
+      "match": "^Demerara\\ Cinnamon\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    },
+    {
+      "match": "^Natural\\ Bourbon\\ Vanilla\\ Extract$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Beans$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Gourmet\\ Yuzu\\ Extract$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Natural\\ Food\\ Colouring\\ \\-\\ Marigold\\ Yellow$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Natural\\ Food\\ Colouring\\ \\-\\ Paprika\\ Orange$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Natural\\ Food\\ Colouring\\ \\-\\ Spinach\\ Green$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    }
+  ]
+}
