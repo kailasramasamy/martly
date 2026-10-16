@@ -1,0 +1,326 @@
+{
+  "brand": "Pee Safe",
+  "manufacturer": "Redcliffe Hygiene Pvt. Ltd.",
+  "feed": "pee-safe-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pee-safe/logo-ad55c46a.png",
+  "themeColor": "#111111",
+  "themeColorSecondary": "#C5D82E",
+  "namePrefix": "Pee Safe ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Biodegradable\\ Sanitary\\ Pads\\ \\-\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Sanitary\\ Pads\\ \\-\\ Overnight$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Sanitary\\ Pads\\ \\-\\ XL,\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Sanitary\\ Pads\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Rash\\ Free\\ Sanitary\\ Pads\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Comfort\\ Night\\ Pads\\ \\-\\ XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Comfort\\ Night\\ Pads\\ \\-\\ XXXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Comfort\\ Maternity\\ Pad$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Disposable\\ Period\\ Panty\\ \\-\\ S\\-M$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Full\\ Coverage\\ Leak\\-Proof\\ Period\\ Panty\\ \\-\\ M\\-L$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Full\\ Coverage\\ Leak\\-Proof\\ Period\\ Panty\\ \\-\\ XL\\-XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Comfort\\ Period\\ Panties\\ \\-\\ L\\-XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Comfort\\ Period\\ Panties\\ \\-\\ XL\\-XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Comfort\\ Period\\ Panties\\ \\-\\ XXL\\-XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Comfort\\ Maternity\\ Panties\\ \\-\\ XXL\\-XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Panty\\ Liners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Panty\\ Liners\\ Infused\\ With\\ Aloe\\ Vera\\ \\-\\ 185\\ mm$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Panty\\ Liner\\ \\-\\ Large$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Panty\\ Liners\\ \\-\\ 155\\ mm$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Tampons\\ \\-\\ Light\\ Flow,\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Super\\ Biodegradable\\ Tampons\\ \\-\\ Medium\\ Flow$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Tampons\\ \\-\\ Super\\ Plus$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^100%\\ Organic\\ Biodegradable\\ Cotton\\ Tampons\\ \\-\\ Trial\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Menstrual\\ Cup\\ \\-\\ Small$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Menstrual\\ Cup\\ \\-\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Menstrual\\ Cup\\ \\-\\ Large$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Natural\\ Intimate\\ Wash\\ For\\ Women$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Natural\\ Intimate\\ Wipes\\ For\\ Women$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Intimate\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Natural\\ Intimate\\ Wash\\ For\\ Men$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Natural\\ Ayurvedic\\ Intimate\\ Foam\\ Wash\\ For\\ Men$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Period\\ Pain\\ Relief\\ Roll\\ On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Domina\\ Female\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Seat\\ Sanitizer\\ Spray\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Seat\\ Sanitizer\\ Spray\\ \\-\\ Mint$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Seat\\ Sanitizer\\ Spray\\ \\-\\ Floral$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Seat\\ Sanitizer\\ Spray\\ \\-\\ Citrus$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Disposable\\ Toilet\\ Seat\\ Cover$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    }
+  ]
+}
