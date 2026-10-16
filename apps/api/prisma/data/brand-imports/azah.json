@@ -1,0 +1,206 @@
+{
+  "brand": "Azah",
+  "manufacturer": "Azah Personal Care Pvt. Ltd.",
+  "feed": "azah-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/azah/logo-23b77c0c.png",
+  "themeColor": "#A88B5B",
+  "themeColorSecondary": "#5B2A86",
+  "namePrefix": "Azah ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Rash\\-Free\\ Organic\\ Sanitary\\ Pads\\ \\-\\ All\\ Regular,\\ With\\ Disposable\\ Bags$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Rash\\-Free\\ Organic\\ Sanitary\\ Pads\\ \\-\\ All\\ Regular,\\ Without\\ Disposable\\ Bags$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Rash\\-Free\\ Organic\\ Sanitary\\ Pads\\ \\-\\ All\\ XL,\\ With\\ Disposable\\ Bags$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Rash\\-Free\\ Organic\\ Sanitary\\ Pads\\ \\-\\ All\\ XL,\\ Without\\ Disposable\\ Bags$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Rash\\-Free\\ Organic\\ Sanitary\\ Pads\\ \\-\\ Regular\\ \\+\\ XL,\\ With\\ Disposable\\ Bags$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Rash\\-Free\\ Organic\\ Sanitary\\ Pads\\ \\-\\ Regular\\ \\+\\ XL,\\ Without\\ Disposable\\ Bags$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Rash\\-Free\\ Ultra\\ Soft\\ Sanitary\\ Pads\\ For\\ Heavy\\ Flow\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^SleepEzzz\\ Night\\ Sanitary\\ Pads\\ \\-\\ XXL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\-Absorbent\\ Night\\ Sanitary\\ Pads\\ \\-\\ XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\-Absorbent\\ Organic\\ Cotton\\ Maternity\\ Pads\\ \\-\\ XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Disposable\\ Period\\ Panty\\ \\-\\ L\\-XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Leak\\ Proof\\ Period\\ Panty\\ \\-\\ XL\\-XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Leak\\ Proof\\ Disposable\\ Period\\ Panty\\ \\-\\ XXL\\-XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Reusable\\ \\&\\ Odour\\-Free\\ Period\\ Panties\\ \\-\\ Small$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Reusable\\ \\&\\ Odour\\-Free\\ Period\\ Panties\\ \\-\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Reusable\\ \\&\\ Odour\\-Free\\ Period\\ Panties\\ \\-\\ Large$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Reusable\\ \\&\\ Odour\\-Free\\ Period\\ Panties\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Reusable\\ \\&\\ Odour\\-Free\\ Period\\ Panties\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Panty\\ Liners\\ For\\ Light\\ Flow$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Ultra\\-Soft\\ Organic\\ Cotton\\ Panty\\ Liners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Odour\\ \\&\\ Rash\\-Free\\ Menstrual\\ Cup\\ \\-\\ Small$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Odour\\ \\&\\ Rash\\-Free\\ Menstrual\\ Cup\\ \\-\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Odour\\ \\&\\ Rash\\-Free\\ Menstrual\\ Cup\\ \\-\\ Large$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Water\\ Based\\ Personal\\ Lubricant\\ With\\ Vitamin\\ E$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    }
+  ]
+}
