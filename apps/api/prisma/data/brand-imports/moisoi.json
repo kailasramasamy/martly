@@ -1,0 +1,342 @@
+{
+  "brand": "Moi Soi",
+  "manufacturer": "Ceres Foods Pvt. Ltd.",
+  "feed": "moisoi-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/moisoi/logo-940b788d.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#D7262E",
+  "namePrefix": "Moi Soi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Black\\ Bean\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Hot\\ Garlic\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Korean\\ Hot\\ Pot\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Korean\\ Soy\\ Ginger\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Kung\\ Pao\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Sichuan\\ Pepper\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Chowmein\\ Noodle\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Korean\\ Noodle\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Korean\\ Chilli\\ Oil$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Sichuan\\ Chilli\\ Oil$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Gochujang\\ Korean\\ Hot\\ \\&\\ Sweet\\ Chilli\\ Paste$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Schezwan\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Dark\\ Soy\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Soy Sauce"
+      ]
+    },
+    {
+      "match": "^Red\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Green\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Thai\\ Green\\ Curry\\ With\\ Coconut\\ Milk$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Thai\\ Red\\ Curry\\ With\\ Coconut\\ Milk$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Chowmein\\ Instant\\ Hakka\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Veg\\ Hakka\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Veg\\ Long\\ Hakka\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Egg\\ Hakka\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Soba\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Udon\\ Flat\\ Japanese\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Shirataki\\ Udon\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Thai\\ Glass\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Thai\\ Rice\\ Stick\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^White\\ Rice\\ Paper\\ \\-\\ 22\\ cm$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Brown\\ Rice\\ Paper\\ \\-\\ 22\\ cm$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Manchow\\ Cup\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Mushroom\\ Cup\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Cup\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Matcha\\ Powder$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Grape\\ Popping\\ Boba\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Lychee\\ Popping\\ Boba\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Mango\\ Popping\\ Boba\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Passion\\ Fruit\\ Popping\\ Boba\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Peach\\ Popping\\ Boba\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Popping\\ Boba\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    }
+  ]
+}
