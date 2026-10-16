@@ -1,0 +1,206 @@
+{
+  "brand": "Revlon",
+  "manufacturer": "Revlon",
+  "feed": "revlon-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/revlon/logo-1e2affe1.png",
+  "themeColor": "#E31837",
+  "themeColorSecondary": "#000000",
+  "namePrefix": "Revlon ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Charlie\\ Blue\\ Eau\\ De\\ Toilette$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Charlie\\ Gold\\ Eau\\ De\\ Toilette$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Charlie\\ Red\\ Eau\\ De\\ Toilette$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Charlie\\ Blue\\ Perfumed\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Love\\ Her\\ Madly\\ Perfumed\\ Body\\ Spray\\ \\-\\ Rendezvous$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Color\\ 'n\\ Care\\ Permanent\\ Hair\\ Color\\ \\-\\ Natural\\ Black\\ 1$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ 'n\\ Care\\ Permanent\\ Hair\\ Color\\ Cream\\ \\-\\ Natural\\ Black\\ 1N$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ 'n\\ Care\\ Permanent\\ Hair\\ Color\\ \\-\\ Darkest\\ Brown\\ 3$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ 'n\\ Care\\ Permanent\\ Hair\\ Color\\ \\-\\ Brown\\ 4$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ 'n\\ Care\\ Permanent\\ Hair\\ Color\\ \\-\\ Light\\ Brown\\ 5$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Color\\ 'n\\ Care\\ Permanent\\ Hair\\ Color\\ \\-\\ Burgundy\\ 3\\.16$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Colorsilk\\ Hair\\ Colour\\ with\\ Keratin\\ \\-\\ Medium\\ Brown\\ 4N$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Colorsilk\\ Hair\\ Colour\\ with\\ Keratin\\ \\-\\ Deep\\ Burgundy\\ 3DB$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Top\\ Speed\\ Hair\\ Colour\\ for\\ Men\\ \\-\\ Natural\\ Black\\ 70M$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Top\\ Speed\\ Hair\\ Colour\\ for\\ Women\\ \\-\\ Dark\\ Brown\\ 65$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Top\\ Speed\\ Hair\\ Colour\\ for\\ Women\\ \\-\\ Natural\\ Black\\ 70$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Outrageous\\ Color\\ Protection\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Outrageous\\ Color\\ Protection\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Flex\\ Body\\ Building\\ Protein\\ Shampoo\\ \\-\\ Dry/Damaged\\ Hair$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Flex\\ Body\\ Building\\ Protein\\ Shampoo\\ \\-\\ Normal\\ to\\ Dry\\ Hair$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Flex\\ Body\\ Building\\ Protein\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Touch\\ \\&\\ Glow\\ Advanced\\ Fairness\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Touch\\ \\&\\ Glow\\ Advanced\\ Radiance\\ Gel\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Touch\\ \\&\\ Glow\\ Advanced\\ Fairness\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    }
+  ]
+}
