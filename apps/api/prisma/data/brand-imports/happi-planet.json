@@ -1,0 +1,126 @@
+{
+  "brand": "Happi Planet",
+  "manufacturer": "Happi Planet Eco Products Pvt. Ltd",
+  "feed": "happi-planet-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/happi-planet/logo-b4bb510a.png",
+  "themeColor": "#0B5F5A",
+  "themeColorSecondary": "#E53935",
+  "namePrefix": "Happi Planet ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Non\\-Toxic\\ Copper,\\ Bronze\\ \\&\\ Brass\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Non\\-Toxic\\ Copper,\\ Bronze\\ \\&\\ Brass\\ Cleaner\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Non\\-Toxic\\ Copper,\\ Bronze\\ \\&\\ Brass\\ Cleaner\\ Gel$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Non\\-Toxic\\ Kitchen\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Non\\-Toxic\\ Dishwash\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Non\\-Toxic\\ Fabric\\ Conditioner$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Non\\-Toxic\\ Floor\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Non\\-Toxic\\ Liquid\\ Laundry\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Non\\-Toxic\\ Liquid\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Non\\-Toxic\\ Toilet\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Tap\\ Cleaner\\ \\&\\ Limescale\\ Remover$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Magic\\ Eraser\\ Multi\\-Surface\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Kitchen\\ Towels$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Washing\\ Machine\\ Cleaner\\ \\&\\ Descaler\\ Tablets$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    }
+  ]
+}
