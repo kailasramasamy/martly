@@ -253,7 +253,7 @@ export default function LoginScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.background },
-  inner: { flexGrow: 1, justifyContent: "center", padding: spacing.lg },
+  inner: { flexGrow: 1, justifyContent: "flex-end", padding: spacing.lg },
 
   // Logo
   logoSection: { alignItems: "center", marginBottom: 40 },
@@ -308,7 +308,7 @@ const styles = StyleSheet.create({
   linkContainer: { marginTop: spacing.lg, alignItems: "center" },
   linkText: { fontSize: fontSize.md, color: colors.textSecondary },
 
-  staffLink: { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, marginTop: spacing.xl, minHeight: 44 },
+  staffLink: { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, marginTop: spacing.md, minHeight: 44 },
   staffLinkStrong: { color: colors.primary, fontWeight: "700" },
 
   resendText: { fontSize: fontSize.md, color: colors.primary, fontWeight: "600" },

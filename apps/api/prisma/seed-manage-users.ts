@@ -2,6 +2,7 @@
  * Seeds staff accounts for testing the mobile Manage persona against the Demo Grocers org.
  *
  *   cd apps/api && npx tsx prisma/seed-manage-users.ts
+ *   --no-qa skips the Martly QA org/store and multi@martly.dev (for production demos)
  *
  * owner@demogrocers.dev / owner123     ORG_ADMIN      all Demo Grocers stores
  * owner@harur.dev       / owner123     ORG_ADMIN      all Demo Grocers stores (same owner role, Harur-style login)
@@ -64,7 +65,7 @@ async function main() {
   if (!harur) throw new Error("Harur Fresh Mart not found — sync or seed the base catalog first");
 
   const orgStores = await prisma.store.findMany({ where: { organizationId: harur.organizationId }, select: { id: true } });
-  const qaStore = await ensureQaStore();
+  const withQa = !process.argv.includes("--no-qa");
 
   await upsertStaff("owner@demogrocers.dev", "owner123", "Demo Owner", "ORG_ADMIN", orgStores.map((s) => s.id));
   await upsertStaff("owner@harur.dev", "owner123", "Harur Owner", "ORG_ADMIN", orgStores.map((s) => s.id));
@@ -76,7 +77,10 @@ async function main() {
   await upsertStaff("counter@harur.dev", "counter123", "Harur Stock Counter", "STAFF", [harur.id], ["STOCK_COUNT"]);
   await upsertStaff("plain@harur.dev", "plain123", "Harur Floor Staff", "STAFF", [harur.id]);
   await upsertStaff("rider@harur.dev", "rider123", "Harur Rider", "RIDER", [harur.id]);
-  await upsertStaff("multi@martly.dev", "multi123", "Multi-org Manager", "STORE_MANAGER", [harur.id, qaStore.id]);
+  if (withQa) {
+    const qaStore = await ensureQaStore();
+    await upsertStaff("multi@martly.dev", "multi123", "Multi-org Manager", "STORE_MANAGER", [harur.id, qaStore.id]);
+  }
 }
 
 main()
