@@ -1,0 +1,2410 @@
+[
+ {
+  "title": "Bourbon Sandwich Biscuits",
+  "handle": "bourbon-sandwich-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120g",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135735_4-cremica-bourbon-biscuit.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222518_1-cremica-bourbon-more-crunchy-more-chocolaty-sandwich-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135735_4-cremica-bourbon-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135735-2_4-cremica-bourbon-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135735-3_3-cremica-bourbon-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135735-4_2-cremica-bourbon-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135735-5_2-cremica-bourbon-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222518_1-cremica-bourbon-more-crunchy-more-chocolaty-sandwich-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This luscious chocolate cream biscuit has crunchy sugar sprinkled all over it to satisfy your taste buds. Enticing Cremica Bourbon Biscuits come with a rich flavour and heavenly aroma, promising a lingering satisfaction in every piece. Crunchier and chocolatier, it's what every Bourbon wants to be.",
+   "ingredients": "Wheat Flour, Sugar (32%) Edible Vegetable Oils (Palm), Cocoa Powder (2. 0%), Milk Solids, Starch, Raising Agents (Ins -503{Ii}, Ins-500{Ii}), Permitted Emulsifier (Ins -322), Edible Common Salt, Contains Permitted Natural Food Colour (Ins -150A, Ins-150D), Flavours (Artificial Flavouring Substances - Chocolate & Vanilla).",
+   "storageInstructions": "Store in a cool and dry place.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10816018000006"
+  }
+ },
+ {
+  "title": "Premium Chocolate Cream Biscuits",
+  "handle": "premium-chocolate-cream-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135739_1-cremica-cream-biscuit-premium-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135739_1-cremica-cream-biscuit-premium-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135739-2_1-cremica-cream-biscuit-premium-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the smooth, creamy and delicious taste of chocolate creme sandwiched between crispy shells. Presenting an irresistible range of Cremica Premium Creme available in 3 variants: Chocolate, Strawberry and Vanilla. This delicious sweet bite is best to tame all the little sweet craving.",
+   "ingredients": "Wheat Flour, Sugar, Edible Vegetable Oil(Palm), Invert Syrup, Glucose Syrup, Milk Solids, Dextrose, Malt Extract, Cocoa Solids (2. 68%), Raising Agents [Ins -503(Ii) Ins-500(Ii)], Edible Common Salt, Permitted Emulsifiers (Ins-322, Ins-471, Ins-481(I)), Dough Conditioner (Ins-223), Acidity Regulator [Ins-450(I)].",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10816018000006"
+  }
+ },
+ {
+  "title": "Vanilla Cremes Sandwich Biscuits",
+  "handle": "vanilla-cremes-sandwich-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222530_1-cremica-cremes-vanilla-flavoured-sandwich-biscuit.jpg"
+    },
+    "barcode": "8906078261256"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222530_1-cremica-cremes-vanilla-flavoured-sandwich-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222530-2_1-cremica-cremes-vanilla-flavoured-sandwich-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222530-3_1-cremica-cremes-vanilla-flavoured-sandwich-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222530-4_1-cremica-cremes-vanilla-flavoured-sandwich-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222530-5_1-cremica-cremes-vanilla-flavoured-sandwich-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222530-6_1-cremica-cremes-vanilla-flavoured-sandwich-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222530-7_1-cremica-cremes-vanilla-flavoured-sandwich-biscuit.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Vanilla Cream Biscuit is a vanilla sandwich biscuit. We bring to you luscious vanilla cream between crunchy sugar sprinkled biscuits. These delicious biscuits satisfy your taste buds. They are crunchy and sweet. It is a delightful combination of sandwich biscuits that are loved by all. Every bite makes a great delicious treat for your taste buds. It is a perfect snack on its own or can be enjoyed with your evening tea.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oils (Palm), Invert Syrup, Glucose Syrup, Milk Solids, Dextrose, Malt Extract, Raising Agents [ammonium Bi Carbonate E503(Ii), Sodium Bi Carbonate E500(Ii)], Edible Common Salt, Permitted Emulsifiers (Lecithin E322, Glycerol Monostearate E471, Sodium Stearoyl Lactylate E481(I)), Dough Conditioner (Sodium Meta Bi Sulphite E223), Acidity Regulators [sodium Acid Pyrophosphate E450(I)]. Contains Added Flavours (Artificial Flavouring Substances- Vanilla And Milk).",
+   "usageInstructions": "1. It is a perfect snack on its own.\n2. Enjoy your evening tea or carry it while travelling.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Vanilla Creme Biscuits",
+  "handle": "vanilla-creme-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "138g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135741_3-cremica-cream-biscuit-vanilla-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135741_3-cremica-cream-biscuit-vanilla-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135741-2_3-cremica-cream-biscuit-vanilla-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of Cremica Vanilla Creme Biscuits, a delectable treat that combines smooth vanilla crème with crisp biscuit shells. These sweet treats are free from trans fat and artificial colours, making them the perfect snack to satisfy your cravings. Enjoy them on their own as a quick indulgence or pair them with a comforting cup of tea for a moment of pure bliss. With their classic flavour and irresistible texture, Cremica Vanilla Creme Biscuits are sure to become a staple in your pantry, available in Chocolate and Strawberry flavours as well.",
+   "storageInstructions": "*Store in a cool and dry place, but not in refrigerated condition",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Creme Biscuits",
+  "handle": "strawberry-creme-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "138g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135740_2-cremica-cream-biscuit-premium-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135740_2-cremica-cream-biscuit-premium-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135740-2_2-cremica-cream-biscuit-premium-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of Cremica Strawberry Creme Biscuits, where a luscious strawberry-flavoured cream is perfectly layered between two crisp, golden biscuit shells. These sweet treats are free from trans fat and artificial colours, making them a delectable and guilt-free snack option for any time of the day. Enjoy the perfect balance of a rich, creamy filling and a satisfying crunch with every bite. Whether you're looking for a mid-afternoon pick-me-up or a delightful accompaniment to your tea, these Cremica biscuits are sure to delight your senses with their irresistible strawberry flavour and irresistible texture.",
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Melto Vanilla Creme Sandwich Biscuits",
+  "handle": "melto-vanilla-creme-sandwich-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245744_2-cremica-cremica-melto-60g.jpg"
+    }
+   },
+   {
+    "title": "300g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40282763_1-cremica-melto-vanilla-creme-premium-sandwich-biscuit-rich-creamy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245744_2-cremica-cremica-melto-60g.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245744-2_2-cremica-cremica-melto-60g.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245744-3_2-cremica-cremica-melto-60g.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245744-4_2-cremica-cremica-melto-60g.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245744-5_2-cremica-cremica-melto-60g.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245744-6_2-cremica-cremica-melto-60g.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245744-7_1-cremica-cremica-melto-60g.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40282763_1-cremica-melto-vanilla-creme-premium-sandwich-biscuit-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate melt-in-your-mouth experience with Cremica's Melto Classic butter cookies. Crafted with premium ingredients, these delicate rounds dissolve luxuriously on your tongue, releasing a rich, buttery flavour. Crunchy, light, and with a neutral taste, these lite crackers are the perfect accompaniment for any time of the day. Enjoy them straight out of the box or get creative with your favourite spreads and toppings. Baked to a light and crispy perfection, these crackers are a timeless treat for discerning cookie lovers who appreciate traditional baking craftsmanship and pure, simple flavours done to perfection. With no trans-fat, no cholesterol, no artificial preservatives, and no added colours or flavours, these health-conscious crackers are the ideal snack to indulge in guilt-free.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Palm), Invert Syrup, Cocoa Solids (2.7%), Maize Starch, Liquid Glucose, Raising Agents [Ins 503(Ii), Ins 500(Ii)], Iodised Salt, Milk Solids, Emulsifier (Ins 322), Natural Colour (Ins 150A, Ins 150D), Nature Identical And Artificial Flavouring Substances (Vanilla, Milk, Chocolate)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "20g",
+    "Energy": "480 kcal",
+    "Dietary Fibre": "1g",
+    "Total Fat": "19g",
+    "Protein": "5g",
+    "Saturated Fat": "9g",
+    "Carbohydrate": "74.5g",
+    "Trans Fat": "0.09g",
+    "Total Sugars": "38g",
+    "Cholesterol": "0mg",
+    "Added Sugars": "36g",
+    "Sodium": "310mg"
+   },
+   "storageInstructions": "*Store in a cool & dry place but not in refrigerated condition",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10018063001211"
+  }
+ },
+ {
+  "title": "Happiness Inside Choco Filled Cookies",
+  "handle": "happiness-inside-choco-filled-cookies",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40271593_1-cremica-happiness-inside-choco-filled-gourmet-cookies-crispy-crunchy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271593_1-cremica-happiness-inside-choco-filled-gourmet-cookies-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271593-2_1-cremica-happiness-inside-choco-filled-gourmet-cookies-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271593-3_1-cremica-happiness-inside-choco-filled-gourmet-cookies-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271593-4_1-cremica-happiness-inside-choco-filled-gourmet-cookies-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271593-5_1-cremica-happiness-inside-choco-filled-gourmet-cookies-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271593-6_1-cremica-happiness-inside-choco-filled-gourmet-cookies-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271593-7_1-cremica-happiness-inside-choco-filled-gourmet-cookies-crispy-crunchy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A burst of chocolatey goodness, Cremica Happiness Inside Choco-Filled Gourmet Cookies are a treat for your taste buds!\nThese crunchy and crisp cookies house inside them a core of gooey chocolate that flows straight into your mouth after the first bite. Made with the finest ingredients, these cookies are a two-layered treat that is sure to be a favourite of kids and generally everyone with a sweet tooth.",
+   "usageInstructions": "Enjoy with coffee, tea or milk.",
+   "ingredients": "Choco Crème (36%) - [Sugar, Edible Vegetable Oil [Palm And Palmolein), Cocoa Solids, Emulsifier (INS 322), Nature Identical Flavouring Substance (Vanilla)]; Refined Wheat Flour (Maida), Edible Vegetable Oil (Palm), Sugar, Cocoa Solids, Milk Solids, Liquid Glucose, Nature Identical & Artificial Flavouring Substance (Chocolate), Raising Agents [(INS 500(ii), INS 503(ii)], Acidity Regulator [(450(i)], Emulsifier (INS 322), Iodised Salt. Contains Wheat, Milk, And Soy. May Contain Sulphite & Nuts.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Trufills Coco Filled Cookies",
+  "handle": "trufills-coco-filled-cookies",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222805_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222805_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222805-2_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222805-3_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222805-4_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222805-5_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222805-6_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222805-7_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222805-8_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Trufills are made with high-quality ingredients. Trufills are choco filled biscuits, it contains soft melted chocolate in the centre. These chocolate swirl cookies are delicious and luxurious. The outer cookie is nice and crispy and filled with creamy luxurious chocolate. It is a delightful combination biscuit that is loved by all. Every bite makes a great delicious treat for your taste buds. It is a perfect snack on its own or can be enjoyed with your evening tea.",
+   "ingredients": "Choco Cream (38%)- (Sugar, Edible Vegetable Oils (Palmolein And Palm Oil), Cocoa Solids, Emulsifiers (Soya Lecithin E322), Refined Wheat Flour (Maida), Bakery Shortening (Palm Oil), Sugar, Milk Solids, Cocoa Solids, Liquid Glucose, Edible Common Salt, Raising Agents [Sodium Bicarbonate E500(Ii), Ammonium Bicarbonate E503(Ii), Emulsifier (Soya Lecithin E322). Contains Added Flavours (Nature Identical And Artificial Flavouring Substances- Vanilla, Chocolate And Milk, Butter)",
+   "usageInstructions": "1. It is a perfect snack on its own.\n2. Enjoy your evening tea or carry it while traveling.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Trufills Creamy Chocolate Filled Cookies",
+  "handle": "trufills-creamy-chocolate-filled-cookies",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222809_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+    },
+    "barcode": "8906078263502"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222809_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222809-2_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222809-3_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222809-4_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222809-5_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222809-6_2-cremica-trufills-biscuit-with-creamy-rich-chocolate-delicious-crispy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Trufills are made with high-quality ingredients. Trufills are choco filled biscuits, it contains soft melted chocolate in the centre. These chocolate swirl cookies are delicious and luxurious. The outer cookie is nice and crispy and filled with creamy luxurious chocolate. It is a delightful combination biscuit that is loved by all. Every bite makes a great delicious treat for your taste buds. It is a perfect snack on its own or can be enjoyed with your evening tea.",
+   "ingredients": "Choco Cream (38%) - (Sugar, Edible Vegetable Oils (Palmolein And Palm Oil), Cocoa Solids, Emulsifiers (Soya Lecithin E322), Refined Wheat Flour (Maida), Bakery Shortening (Palm Oil), Sugar, Milk Solids, Cocoa Solids, Liquid Glucose, Edible Common Salt, Raising Agents [Sodium Bicarbonate E500 (Ii), Ammonium Bicarbonate E503 (Ii), Emulsifier (Soya Lecithin E322). Contains Added Flavours (Nature Identical And Artificial Flavouring Substances- Vanilla, Chocolate And Milk, Butter)",
+   "usageInstructions": "1. It is a perfect snack on its own.\n2. Enjoy your evening tea or carry it while traveling.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Classic Cracker",
+  "handle": "classic-cracker",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222528_1-cremica-classic-cracker-tasty-crunchy-light-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222528_1-cremica-classic-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222528-2_1-cremica-classic-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222528-3_1-cremica-classic-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222528-4_1-cremica-classic-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222528-5_1-cremica-classic-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222528-6_1-cremica-classic-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222528-7_1-cremica-classic-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222528-8_1-cremica-classic-cracker-tasty-crunchy-light-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Classic Crackers are bite-size light biscuits. They are made with high-quality ingredients. It is enriched with great taste. These crackers make a perfect snack whenever you feel hungry. It is tasty and crispy and healthy cookies. It is a perfect healthy treat for your body. Now savour the taste of these whole wheat cookies with your morning or evening tea or coffee. It does not contain any added flavouring or preservatives.",
+   "ingredients": "Wheat Flour, Edible Vegetable Oil (Palm), Corn Starch, Raising Agents [(Ammonium Bicarbonate E503(Ii), Sodium Bicarbonate E500(Ii)], Milk Solids, Malt Extract, Sugar, Edible Common Salt, Yeast, Invert Sugar Syrup, Butter (0.25%), Permitted Emulsifier (Soy Lecithin E322), Acidity Regulator [(Sodium Acid Pyrophosphate E450(I)], Enzymes [protease E1101(I), Alpha-Amylase E1100], Dough Conditioner (Sodium Meta Bi Sulphite E223).",
+   "usageInstructions": "1. Enjoy these Classic Cracker - Tasty, Crunchy & Light biscuits with tea or coffee.\n2. They make a great snack option too.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Sugar Cracker",
+  "handle": "sugar-cracker",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222527_1-cremica-sugar-cracker-tasty-crunchy-light-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222527_1-cremica-sugar-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222527-2_1-cremica-sugar-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222527-3_1-cremica-sugar-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222527-4_1-cremica-sugar-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222527-5_1-cremica-sugar-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222527-6_1-cremica-sugar-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222527-7_1-cremica-sugar-cracker-tasty-crunchy-light-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222527-8_1-cremica-sugar-cracker-tasty-crunchy-light-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Sugar Crackers are bite-size light biscuits. They are made with high-quality ingredients. It is enriched with great taste. These crackers make a perfect snack whenever you feel hungry. It is sweet and crispy and healthy cookies. It is a perfect healthy treat for your body. Now savour the taste of these whole wheat cookies with your morning or evening tea or coffee. It does not contain any added flavouring or preservatives.",
+   "ingredients": "Refined Wheat Flour(Maida), Edible Vegetable Oil (Palm), Corn Starch, Sugar (7.0%), Raising Agents [(Ammonium Bicarbonate E503(Ii), Sodium Bicarbonate E500(Ii)], Milk Solids, Malt Extract, Edible Common Salt, Yeast, Invert Syrup, Permitted Emulsifier (Soy Lecithin E322), Acidity Regulator [(Sodium Acid Pyrophosphate E450(I)], Enzymes [protease E1101(I), Alpha-Amylase E1100], Dough Conditioner (Sodium Meta Bi Sulphite E223).",
+   "usageInstructions": "1. Enjoy these Sugar Cracker - Tasty, Crunchy & Light Biscuits with tea or coffee.\n2. They make a great snack option too.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Party Cracker - Plain Salty",
+  "handle": "party-cracker-plain-salty",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222529_1-cremica-party-cracker-plain-salty-biscuit.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245746_1-cremica-party-cracker-plain-salty-biscuit-crispy-light-crunchy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222529_1-cremica-party-cracker-plain-salty-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222529-2_1-cremica-party-cracker-plain-salty-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222529-3_1-cremica-party-cracker-plain-salty-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222529-4_1-cremica-party-cracker-plain-salty-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222529-5_1-cremica-party-cracker-plain-salty-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222529-6_1-cremica-party-cracker-plain-salty-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245746_1-cremica-party-cracker-plain-salty-biscuit-crispy-light-crunchy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Party Crackers are bite-size light biscuits. They are made with high-quality ingredients. It is enriched with great taste. These crackers make a perfect snack whenever you feel hungry. It is tasty, salty and crispy and healthy cookies. It is a perfect healthy treat for your body. Now savour the taste of these whole wheat cookies with your morning or evening tea or coffee. It does not contain any added flavouring or preservatives.",
+   "ingredients": "Refined Wheat Flour (Maida), Edible Vegetable Oils (Palm), Sugar, Raising Agents [ammonium Bi Carbonate E503(Ii), Sodium Bi Carbonate E500(Ii)], Invert Syrup, Edible Common Salt(1.%), Yeast, Acidity Regulator [lactic Acid E270, Citric Acid E330, Mono Acid Calcium Phosphate E341(I)], Dough Conditioner (Sodium Meta Bi Sulphite E223), Enzymes [alpha Amylase E1100(I), Protease E1101(Ii)]. Contains Added Flavours (Artificial Flavouring Substance- Butter).",
+   "usageInstructions": "1. Enjoy these Party Cracker - Plain Salty biscuits with tea or coffee.\n2. They make a great snack option too.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Non Stop Jeera Lite Biscuits",
+  "handle": "non-stop-jeera-lite-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "18",
+    "compare_at_price": "18",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135738_9-cremica-jeera-biscuit-lite.jpg"
+    }
+   },
+   {
+    "title": "486g",
+    "price": "126",
+    "compare_at_price": "126",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222524_2-cremica-jeera-lite-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135738_9-cremica-jeera-biscuit-lite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135738-2_10-cremica-jeera-biscuit-lite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222524_2-cremica-jeera-lite-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful flavour of cumin with Cremica's Non Stop Jeera Lite Cookies. These light and savoury crackers are specially crafted to suit the Indian palate, offering a scrumptious crunch that pairs perfectly with your tea or coffee. Infused with the earthy aroma of jeera, these wholesome treats are trans fat and cholesterol-free, making them a guilt-free snacking option. Embrace the desi in you and add these delectable munchies to your pantry today for a truly satisfying tea-time experience.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Palm), Invert Syrup, Maize Starch, Iodised Salt, Raising Agents [INS 53(ii), INS 5(ii)], Jeera (1%), Liquid Glucose, Emulsifiers (INS 322, INS 471), Acidity Regulator [INS 45(i)], Artificial Flavouring Substances (Butter, Jeera, Vanilla), Dough Conditioner (INS 223)",
+   "storageInstructions": "* Store in a cool & dry place but not in refrigerated condition",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Non Stop Sour Cream & Onion Mini Cracker",
+  "handle": "non-stop-sour-cream-onion-mini-cracker",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344173_1-cremica-non-stop-sour-cream-onion-mini-cracker.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344173_1-cremica-non-stop-sour-cream-onion-mini-cracker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344173-2_1-cremica-non-stop-sour-cream-onion-mini-cracker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344173-3_1-cremica-non-stop-sour-cream-onion-mini-cracker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344173-4_1-cremica-non-stop-sour-cream-onion-mini-cracker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344173-5_1-cremica-non-stop-sour-cream-onion-mini-cracker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344173-6_1-cremica-non-stop-sour-cream-onion-mini-cracker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344173-7_1-cremica-non-stop-sour-cream-onion-mini-cracker.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sour Cream and Onion Crackers are crisp, savoury snacks with a balanced flavour of tangy sour cream and mild onion. Their light texture makes them ideal for enjoying on their own or paired with dips. Conveniently packaged, they’re suitable for lunchboxes, gatherings, or everyday snacking, offering a tasty and versatile option for any time of the day.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Non Stop Thin Potato Crackers - Masala",
+  "handle": "non-stop-thin-potato-crackers-masala",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245738_1-cremica-non-stop-thin-potato-crackers-baked-crunchy-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245738_1-cremica-non-stop-thin-potato-crackers-baked-crunchy-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245738-2_1-cremica-non-stop-thin-potato-crackers-baked-crunchy-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245738-3_1-cremica-non-stop-thin-potato-crackers-baked-crunchy-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245738-4_1-cremica-non-stop-thin-potato-crackers-baked-crunchy-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245738-5_1-cremica-non-stop-thin-potato-crackers-baked-crunchy-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245738-6_1-cremica-non-stop-thin-potato-crackers-baked-crunchy-masala.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cracker is among the most preferred biscuits among biscuit lovers. This healthy snack has no trans-fat, no cholesterol, no artificial preservatives and no colours and flavours. Crunchy, light and neutral to taste, these lite crackers are ideal accompaniments for any time of the day. Enjoy thin crackers that are baked to a light and crispy perfection. Start enjoying them right out of the box or get creative with your favorite spreads and toppings",
+   "ingredients": "Refined Wheat Flour( Maida), Edible Vegetable Oil(Palm),Sugar, Starch, Potato Flakes(5.8%), Wheat Gluten, Masala Seasoning, Raising Agens [Ins-503(Ii)],Edible Common Salt, Liquid Glucose, Permitted Emulsifier (Ins-322, Ins-471,Ins-472e), Acidity Regulator[Ins-450(I)],Dough Conditioner (Ins-233),Enzyme [Ins-1101(I)],Nature Identical Flavour Substance (Potato).",
+   "usageInstructions": "1. Non-Stop Potato crackers are your perfect, anytime snack.\n2. Start enjoying them right out of the box or get creative with your favorite spreads and toppings.",
+   "nutritionalInfo": {
+    "Energy": "490kcal"
+   },
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10018063001211"
+  }
+ },
+ {
+  "title": "Krack Bite Sweet & Salty Biscuits",
+  "handle": "krack-bite-sweet-salty-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40260988_1-cremica-krack-bite-biscuits-sweet-salty-crunch-teatime-snack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40260988_1-cremica-krack-bite-biscuits-sweet-salty-crunch-teatime-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40260988-2_1-cremica-krack-bite-biscuits-sweet-salty-crunch-teatime-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40260988-3_1-cremica-krack-bite-biscuits-sweet-salty-crunch-teatime-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40260988-4_1-cremica-krack-bite-biscuits-sweet-salty-crunch-teatime-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40260988-5_1-cremica-krack-bite-biscuits-sweet-salty-crunch-teatime-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40260988-6_1-cremica-krack-bite-biscuits-sweet-salty-crunch-teatime-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40260988-7_1-cremica-krack-bite-biscuits-sweet-salty-crunch-teatime-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40260988-8_1-cremica-krack-bite-biscuits-sweet-salty-crunch-teatime-snack.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Krack Bite is a blend of sweet and salty flavours to tickle your taste buds with waves of delight! These Krack Biscuits are a light yet crispy delicacy for your teatime snacking. Made from refined flour and balanced notes of salt and sugar, these bites are filling, tasty and an easy snack for any time of the day. You can have it on the go as it is ready to eat. They are the perfect saviour when you are in no mood to cook. It is a must-carry item for travels and picnics. You can serve it to your guests as snacks with some tea or coffee. It is perfectly made for the ones who like snacking between meals or while working. It is best accompanied by tea as you can dip it in chai and enjoy the truly desi experience. These bites have zero trans-fat and no cholesterol. Explore the entire range of Cremica Krack bite Biscuits including Sweet and salty, Coo Coo Cookie, The fit biscuit and more on Big Basket!",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar (17.5%), Edible Vegetable Oils (Palm), Leavening Agents [Ammonium Bicarbonate E503(Ii), Sodium Bicarbonate E500(Ii)], Invert Syrup, Maize Starch, Edible Common Salt (1.09%), Compressed Yeast, Acidity Regulator [Mono Acid Calcium Phosphate E341(I), Lactic Acid E270, Citric Acid E330, Dough Conditioner (Sodium Metabisulphite E223), Emulsifier (Soy Lecithin E322), Enzymes [Protease E1101(I), Alpha Amylase E1100(I)]. Contains Added Flavours (Artificial Flavouring Substances- Butter And Vanilla).",
+   "usageInstructions": "Ready to eat\nOpen the packet and enjoy the delightful crackers!\nServe with coffee or your favourite beverage.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Cheese Cream & Chives Sandwich Crackers",
+  "handle": "cheese-cream-chives-sandwich-crackers",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "156g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344177_1-cremica-cheese-cream-chives-sandwich-crackers.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344177_1-cremica-cheese-cream-chives-sandwich-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344177-2_1-cremica-cheese-cream-chives-sandwich-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344177-3_1-cremica-cheese-cream-chives-sandwich-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344177-4_1-cremica-cheese-cream-chives-sandwich-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344177-5_1-cremica-cheese-cream-chives-sandwich-crackers.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sandwich Crackers Cheese Cream & Chives are crisp, golden crackers filled with a smooth cheese cream and chives flavoured filling. Perfect for enjoying as a light snack at any time of the day, they offer a satisfying crunch with a savoury taste. Conveniently packed, they’re ideal for lunchboxes, picnics, or on-the-go moments.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Peanut Butter Sandwich Crackers",
+  "handle": "peanut-butter-sandwich-crackers",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "156g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344176_1-cremica-peanut-butter-sandwich-cracker.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344176_1-cremica-peanut-butter-sandwich-cracker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344176-2_1-cremica-peanut-butter-sandwich-cracker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344176-3_1-cremica-peanut-butter-sandwich-cracker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344176-4_1-cremica-peanut-butter-sandwich-cracker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344176-5_1-cremica-peanut-butter-sandwich-cracker.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sandwich Cracker Peanut Butter features crisp, golden crackers with a smooth and creamy peanut butter filling. Perfectly balanced in taste and texture, they make a delicious snack for any time of the day. Conveniently packaged for on-the-go enjoyment, they’re ideal for lunchboxes, travel, or a quick treat whenever you need a satisfying bite.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Teddies Animal Shaped Crackers",
+  "handle": "teddies-animal-shaped-crackers",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "283g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344172_1-cremica-teddies-animal-shaped-crackers.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344172_1-cremica-teddies-animal-shaped-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344172-2_1-cremica-teddies-animal-shaped-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344172-3_1-cremica-teddies-animal-shaped-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344172-4_1-cremica-teddies-animal-shaped-crackers.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Animal-shaped crackers, specially created for kids, make snack time fun and enjoyable. These crisp and lightly salted biscuits come in a variety of playful animal shapes that children will love. Ideal for lunchboxes, parties, or an anytime treat, they offer a tasty and entertaining snacking option that’s both delightful and easy to enjoy on the go.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Choco Bico Choco Chip Biscuits",
+  "handle": "choco-bico-choco-chip-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222519_1-cremica-choco-bico-choco-chips-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222519_1-cremica-choco-bico-choco-chips-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222519-2_1-cremica-choco-bico-choco-chips-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222519-3_1-cremica-choco-bico-choco-chips-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222519-4_1-cremica-choco-bico-choco-chips-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222519-5_1-cremica-choco-bico-choco-chips-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222519-6_1-cremica-choco-bico-choco-chips-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222519-7_1-cremica-choco-bico-choco-chips-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222519-8_1-cremica-choco-bico-choco-chips-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Choco Bico Biscuit are made with the finest ingredients. They are a perfect blend of dark chocolate chips. Indulge in the flavour of these beautiful cookies in every bite. These cookies make a great snacking option. They are soft, chewy and have a crunch from the choco chip. Enjoy it with your loved once. It is sweet and super satisfying. It contains healthy fats, fibre, protein, magnesium and vitamin E.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oils (Palm), Choco Chips (8.2%), (Sugar, Edible Vegetable Fat, Cocoa Solids, Dextrose, Emulsifier (Soya Lecithin E322) & Natural Flavour- Vanilla), Liquid Glucose, Cocoa Solids, Raising Agents [ammonium Bi Carbonate E503(Ii), Sodium Bi Carbonate E500(Ii)], Edible Common Slat, Milk Products, Permitted Emulsifiers [lecithin E322, Glycerol Monostearate E471, Sodium Stearoyl Lactylate E481(I)], Dough Conditioner (Sodium Meta Bi Sulphite E223). Contains Permitted Natural Colours [(Ammonia Sulphite Double Strength Caramel E(150d)] And Added Flavours (Artificial Flavouring Substances- Chocolate And Vanilla).",
+   "usageInstructions": "1. Perfect taste in every bite, anytime, anywhere.\n2. Perfect tea-time partner.\n3. Ideal Christmas gifts for men and women.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Choco Chip Cookies",
+  "handle": "choco-chip-cookies",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222803_2-cremica-choco-chip-cookies-soft-chewy-healthy.jpg"
+    },
+    "barcode": "8906078262963"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222803_2-cremica-choco-chip-cookies-soft-chewy-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222803-2_2-cremica-choco-chip-cookies-soft-chewy-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222803-3_2-cremica-choco-chip-cookies-soft-chewy-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222803-4_2-cremica-choco-chip-cookies-soft-chewy-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222803-5_2-cremica-choco-chip-cookies-soft-chewy-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222803-6_2-cremica-choco-chip-cookies-soft-chewy-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222803-7_2-cremica-choco-chip-cookies-soft-chewy-healthy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Choco chip Cookies are made with the finest ingredients. They are a perfect blend of dark chocolate chips. Indulge in the flavour of these beautiful cookies in every bite. These cookies make a great snacking option. They are soft, chewy and have a crunch from the almond flakes. Enjoy it with your loved ones. It is sweet and super satisfying. It contains healthy fats, fibre, protein, magnesium and vitamin E.",
+   "ingredients": "Refined Wheat Flour (Maida), Chocolate Chips (21.0%), Edible Vegetable Oil (Palm), Sugar, Liquid Glucose, Milk Solids, Raising Agents [Sodium Bicarbonate E500 (Ii), Ammonium Bicarbonate E503(Ii)], Acidity Regulator [Disodium Di Phosphate E450(Ii)], Emulsifier (Soy Lecithin E322), Edible Common Salt, Cocoa Solids. Contains Added Flavour (Artificial Flavouring Substances- Chocolate And Vanilla)",
+   "usageInstructions": "1. Perfect taste in every bite, anytime, anywhere.\n2. Perfect tea-time partner.\n3. Ideal Christmas gifts for men and women.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Coconut Cookies",
+  "handle": "coconut-cookies",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "86g",
+    "price": "18",
+    "compare_at_price": "18",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222521_3-cremica-coconut-cookies-made-with-real-coconut.jpg"
+    },
+    "barcode": "8906078264899"
+   },
+   {
+    "title": "185g",
+    "price": "27",
+    "compare_at_price": "27",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135737_4-cremica-cookies-coconut.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344175_1-cremica-coconut-cookies.jpg"
+    }
+   },
+   {
+    "title": "900g",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222520_1-cremica-coconut-cookies-made-with-real-coconut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222521_3-cremica-coconut-cookies-made-with-real-coconut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222521-2_3-cremica-coconut-cookies-made-with-real-coconut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222521-3_3-cremica-coconut-cookies-made-with-real-coconut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135737_4-cremica-cookies-coconut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344175_1-cremica-coconut-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222520_1-cremica-coconut-cookies-made-with-real-coconut.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the tropical flavours of CREMICA Coconut Cookies, a delightful snacking experience. These perfectly baked treats are infused with the sweet, nutty taste of real coconut, creating a crisp and exotic texture that makes them an ideal companion for your morning or evening tea or coffee. Crafted with high-quality ingredients and whole wheat, these bite-Sized delights are free from added flavourings or preservatives, ensuring you enjoy the pure goodness of coconut in every bite. Bring this delectable product home today and savour the natural, satisfying flavour that will transport you to a tropical paradise.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Golden Bytes Rich Butter Cookies",
+  "handle": "golden-bytes-rich-butter-cookies",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135742_3-cremica-cookies-golden-bytes-rich-butter.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245740_1-cremica-golden-bites-rich-butter-cookies-baked-crispy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135742_3-cremica-cookies-golden-bytes-rich-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135742-2_3-cremica-cookies-golden-bytes-rich-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135742-3_2-cremica-cookies-golden-bytes-rich-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135742-4_2-cremica-cookies-golden-bytes-rich-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135742-5_2-cremica-cookies-golden-bytes-rich-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135742-6_1-cremica-cookies-golden-bytes-rich-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245740_1-cremica-golden-bites-rich-butter-cookies-baked-crispy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Golden bytes comes in two variants that give you a golden moment with every bite that you take. Loaded with nuts and butter, it offers the perfect balance of crunch and softness. With its delightful aroma and crunchy cookie bite, Cremica Golden Byte can make your day with just a pack!",
+   "ingredients": "Wheat Flour, Vegetable Oils, Sugar, Edible Vegetable Oil (Palm), Invert Syrup, Butter (2. 0%), Milk Solids, Raising Agents (503(Ii) Ins -500(Ii)), Edible Common Salt, Emulsifiers (Ins-471, Ins-472(E), Ins-322), Flavour(S) (Artificial Flavouring Substance(S) - Butter, Vanilla & Milk).",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10816018000006"
+  }
+ },
+ {
+  "title": "Golden Bytes Mixed Nuts Cookies",
+  "handle": "golden-bytes-mixed-nuts-cookies",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135743_1-cremica-cookies-mixed-nuts-golden-bytes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135743_1-cremica-cookies-mixed-nuts-golden-bytes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135743-2_1-cremica-cookies-mixed-nuts-golden-bytes.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Golden bytes comes in two variants that give you a golden moment with every bite that you take. Loaded with nuts and butter, it offers the perfect balance of crunch and softness. With its delightful aroma and crunchy cookie bite, Cremica Golden Byte can make your day with just a pack!",
+   "ingredients": "Wheat Flour, Sugar, Edible Vegetable Oil (Palm), Cashew Nuts (2. 54%), Butter (2. 0%), Invert Syrup, Milk Solids, Almonds (1. 3%), Raising Agents (Ins -503(Ii), Ins-500(Ii)). Edible Common Salt, Emulsifiers (Ins-471, Ins-472(E), Ins-322), Flavours (S) (Artificial Flavouring Substance(S) - Butter, Almonds, Milk & Vanilla).",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10816018000006"
+  }
+ },
+ {
+  "title": "Golden Bites Cashew Cookies",
+  "handle": "golden-bites-cashew-cookies",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "53g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222808_3-cremica-golden-bites-cookies-with-mixed-nut-healthy-tasty.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222808_3-cremica-golden-bites-cookies-with-mixed-nut-healthy-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222808-2_3-cremica-golden-bites-cookies-with-mixed-nut-healthy-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222808-3_3-cremica-golden-bites-cookies-with-mixed-nut-healthy-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222808-4_3-cremica-golden-bites-cookies-with-mixed-nut-healthy-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222808-5_3-cremica-golden-bites-cookies-with-mixed-nut-healthy-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222808-6_3-cremica-golden-bites-cookies-with-mixed-nut-healthy-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222808-7_1-cremica-golden-bites-cookies-with-mixed-nut-healthy-tasty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222808-8_1-cremica-golden-bites-cookies-with-mixed-nut-healthy-tasty.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Golden Bites Cashew cookies are made with the finest ingredients. These cookies are healthy and tasty filled with the goodness of Cashew Nuts. Indulge in the extreme flavour of these cookies. These cookies make a great snacking option. They are soft, and chewy and have a crunch from the nuts. Enjoy it with your loved ones. It is sweet and super satisfying. It is tasty and filled with the flavour and aroma of cashews.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Palm), Invert Syrup, Maize Starch, Cashew Nuts (1%), Raising Agents [INS 503(ii), INS 500(II)], Iodised Salt, Butter (0.4%), Milk Solids, Emulsifiers [INS 322, INS 471], Acidity Regulator [INS450(i)], Dough Conditioner [INS 223], Nature Identical and Artificial Flavouring Substances (Butter, Milk, Vanilla), Nature Colour (INS 160b), Contain Wheat, Nuts, Milk, Soy & Sulphite.",
+   "usageInstructions": "Perfect tea-time partner.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Pista Almond Cookies",
+  "handle": "pista-almond-cookies",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222526_1-cremica-pista-almond-cookies.jpg"
+    },
+    "barcode": "8906078262987"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222526_1-cremica-pista-almond-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222526-2_1-cremica-pista-almond-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222526-3_1-cremica-pista-almond-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222526-4_1-cremica-pista-almond-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222526-5_1-cremica-pista-almond-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222526-6_1-cremica-pista-almond-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222526-7_1-cremica-pista-almond-cookies.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Pista Almond Cookies are bite-size cookies. They are made with high-quality ingredients. It is enriched with a great taste of fresh and delicious pista and almonds. These cookies make a perfect snack whenever you feel hungry. It is sweet and crispy and healthy cookies. It is a perfect healthy treat for your body. Now savour the taste of these whole wheat cookies with your morning or evening tea or coffee. It does not contain any added flavouring or preservatives.",
+   "ingredients": "Refined Wheat Flour (Maida), Edible Vegetable Oil (Palm), Sugar, Dry Fruit Nuts- 8% (Almond & Pista), Milk Solids, Glucose Syrup, Raising Agents [(Ammonium Bicarbonate E503(Ii), Sodium Bicarbonate E500(Ii)], Edible Common Salt, Permitted Emulsifier (Soy Lecithin E322). Contains Added Flavour (Artificial Flavouring Substances)- Almond And Pista.",
+   "usageInstructions": "1. Enjoy these Pista Almond Cookies with tea or coffee.\n2. They make a great snack option too.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Danish Butter Cookies",
+  "handle": "danish-butter-cookies",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40271594_1-cremica-danish-butter-cookies-premium-light-crispy-crunchy.jpg"
+    },
+    "barcode": "8906078262697"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271594_1-cremica-danish-butter-cookies-premium-light-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271594-2_1-cremica-danish-butter-cookies-premium-light-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271594-3_1-cremica-danish-butter-cookies-premium-light-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271594-4_1-cremica-danish-butter-cookies-premium-light-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271594-5_1-cremica-danish-butter-cookies-premium-light-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271594-6_1-cremica-danish-butter-cookies-premium-light-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271594-7_1-cremica-danish-butter-cookies-premium-light-crispy-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40271594-8_1-cremica-danish-butter-cookies-premium-light-crispy-crunchy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Crunchy, light, and with a delicious buttery taste, Cremica Danish Butter Cookies are great for every occasion!\nOriginating in Denmark, these cookies are characterised by their buttery and sugary taste, crisp texture, and unique shapes. Made with premium ingredients, Cremica Danish Butter Cookies stick to the original recipe and are remarkable in every aspect. This box makes for a great festive gift, or you can get it for yourself and enjoy the cookies within as a tea-time snack.",
+   "usageInstructions": "Open the box and enjoy.\nA great accompaniment for your morning tea.\nMake for a great gift during festive times.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Palm Oil), Butter(6%), Milk Solids, Iodised Salt, Raising Agents (INS 503(ii), INS 500(ii), Nature Identical Flavouring Substances, Emulsifier (INS 322), Liquid Glucose.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Shortbread With 26% Butter",
+  "handle": "shortbread-with-26-butter",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "102g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344174_1-cremica-shortbread-with-26-butter.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344174_1-cremica-shortbread-with-26-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344174-2_1-cremica-shortbread-with-26-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344174-3_1-cremica-shortbread-with-26-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344174-4_1-cremica-shortbread-with-26-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344174-5_1-cremica-shortbread-with-26-butter.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Shortbread with 26% butter offers a rich, buttery taste and a perfectly crumbly texture that melts in the mouth. Made with quality ingredients, these classic biscuits are ideal for pairing with tea or coffee. The generous butter content enhances their flavour, making them a delightful treat for any occasion. Enjoy their traditional charm and satisfying bite, whether as a snack or a sweet indulgence to share with others.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Digestive Biscuits",
+  "handle": "digestive-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135736_4-cremica-cookies-digestive.jpg"
+    }
+   },
+   {
+    "title": "852.5g",
+    "price": "230",
+    "compare_at_price": "230",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222523_4-cremica-digestive-high-bran-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135736_4-cremica-cookies-digestive.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135736-2_4-cremica-cookies-digestive.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135736-3_3-cremica-cookies-digestive.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135736-4_3-cremica-cookies-digestive.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135736-5_2-cremica-cookies-digestive.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222523_4-cremica-digestive-high-bran-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Digestive Biscuit is packed with the goodness of whole wheat and fibre. This pack of goodness proves that healthy is the new tasty. This high fibre biscuit is packed with the goodness of wholesome wheat and natural fibre. These crunchy delights are the perfect go-to option for people leading an active lifestyle across the world. And for others - well, it tastes delicious. Each bite of these biscuits gives you instant goodness.",
+   "ingredients": "Heat Flour (43%), Edible Vegetable Oil, Whole Wheat Flour (15. 2%), Sugar, Wheat Bran (3. 0%), Invert Syrup, Raising Agents [Ins 503 (Ii), Ins 500(Ii)], Edible Common Salt, Malt Extract, Acidity Regulators [Ins-296, Ins-334, Ins-450(I)], Dough Conditioner (Ins-223).",
+   "usageInstructions": "It goes well with beverages like tea or coffee. Conveniently packed easy to carry for quick bite. Store in a cool and dry place.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10816018000006"
+  }
+ },
+ {
+  "title": "Oatmeal Digestive Biscuits",
+  "handle": "oatmeal-digestive-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "149",
+    "compare_at_price": "149",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245743_1-cremica-oatmeal-digestive-biscuits-trans-fat-cholesterol-free-fibre-rich.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245743_1-cremica-oatmeal-digestive-biscuits-trans-fat-cholesterol-free-fibre-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245743-2_1-cremica-oatmeal-digestive-biscuits-trans-fat-cholesterol-free-fibre-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245743-3_1-cremica-oatmeal-digestive-biscuits-trans-fat-cholesterol-free-fibre-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245743-4_1-cremica-oatmeal-digestive-biscuits-trans-fat-cholesterol-free-fibre-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245743-5_1-cremica-oatmeal-digestive-biscuits-trans-fat-cholesterol-free-fibre-rich.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a healthier snacking experience with Cremica Oatmeal Digestive Biscuits. Crafted with wholesome oats and crunchy cornflakes, these delightful biscuits offer a satisfying crunch and mild sweetness. Packed with fibre-rich nourishment and on-the-go energy, they are the perfect choice for a quick and nutritious snack. Enjoy them straight from the pack or pair them with your favourite spreads for added flavour. With no trans fats or cholesterol, these biscuits provide a guilt-free indulgence that will leave you feeling energised and satisfied.",
+   "ingredients": "Refined Wheat Flour (Maida), Edible Vegetable Oil (Palm), Sugar, Oat Flakes (20%), Wheat Flour [Atta (13%)], Invert Syrup, Honey (1%), Gluten, Edible Common Salt, Raising Agents [Ins 503(Ii), Ins 500(Ii)], Acidity Regulator (Ins 296), Emulsifiers [Ins 471, Ins 322], Dough Conditioner (Ins 223)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g, Per Serving",
+    "Serving Size": "15 g (2 Biscuits)",
+    "Servings Per Pack": "About 33",
+    "Energy": "499 kcal",
+    "Total Fat": "23.5g",
+    "Saturated Fat": "11g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "64g",
+    "Total Sugars": "22.3g",
+    "Added Sugars": "20.8g",
+    "Dietary Fibre": "3.6g",
+    "Protein": "6g",
+    "Sodium": "191mg",
+    "Per Serve % Contribution To RDA": "calculated On Basis Of 2000kcal Energy, 67g Total Fat, 22g Saturated Fat, 2g Trans Fat, 50g Added Sugar And 2000mg Of Sodium (5g Salt) Requirement For Average Adult Per Day"
+   },
+   "storageInstructions": "* Store in a cool and dry place",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "fssaiLicense": "10016063000826",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Corn Flakes Digestive Biscuits",
+  "handle": "corn-flakes-digestive-biscuits",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222522_2-cremica-corn-flakes-digestive-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222522_2-cremica-corn-flakes-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222522-2_2-cremica-corn-flakes-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222522-3_2-cremica-corn-flakes-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222522-4_2-cremica-corn-flakes-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222522-5_2-cremica-corn-flakes-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222522-6_2-cremica-corn-flakes-digestive-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222522-7_2-cremica-corn-flakes-digestive-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Cornflakes Digestive Biscuits are made with the finest ingredients. They are enriched with great taste. It is a sweet and crispy and healthy biscuit. It is a perfect healthy treat for your body. They are said to improve your digestion and does not cause any harm to your health. Now savour the taste of these whole wheat biscuits with your morning or evening tea or coffee. It does not contain any added flavouring or preservatives.",
+   "ingredients": "Refined Wheat Flour (Maida 43%), Edible Vegetable Oil (Palm), Sugar, Whole Wheat Flour[atta (10.4%)], Oats (8.8%), Corn Flakes (6.6%), Wheat Bran, Leavening Agents [Ammonium Bi Carbonate E503(Ii), Sodium Bi Carbonate E500(Ii)], Invert Syrup, Edible Common Salt, Malt Extract, Honey, Acidity Regulators [Malic Acid E296, Sodium Acid Pyrophosphate E450(I), Tartaric Acid E334], Dough Conditioner (Sodium Meta Bi Sulphite E223).",
+   "usageInstructions": "1. Enjoy these digestive biscuits with tea or coffee.\n2. They make a great snack option too.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Honey Oatmeal Cookies",
+  "handle": "honey-oatmeal-cookies",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "37g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222804_2-cremica-honey-oatmeal-cookies-high-in-protein-dietary-fibre.jpg"
+    }
+   },
+   {
+    "title": "75g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222807_2-cremica-honey-oatmeal-cookies-high-in-protein-dietary-fibre.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222804_2-cremica-honey-oatmeal-cookies-high-in-protein-dietary-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222804-2_2-cremica-honey-oatmeal-cookies-high-in-protein-dietary-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222804-3_2-cremica-honey-oatmeal-cookies-high-in-protein-dietary-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222804-4_2-cremica-honey-oatmeal-cookies-high-in-protein-dietary-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222804-5_2-cremica-honey-oatmeal-cookies-high-in-protein-dietary-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222804-6_2-cremica-honey-oatmeal-cookies-high-in-protein-dietary-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222804-7_2-cremica-honey-oatmeal-cookies-high-in-protein-dietary-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222804-8_2-cremica-honey-oatmeal-cookies-high-in-protein-dietary-fibre.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Honey Oatmeal Cookies are healthy breakfast cookies. Awaken your taste buds with these superfoods loaded cookies. These cookies contain honey and rolled oats with other ingredients. These cookies have a low glycemic index than normal cookies. It is a perfect healthy snack option or for breakfast or while traveling. It is high in protein and dietary fibre and is made with all-natural ingredients, it does not contain any preservatives. Have it with a glass of milk or enjoy it as it is.",
+   "ingredients": "Refined Wheat Flour (Maida), Edible Vegetable Oil (Palm), Sugar, Oatmeal (10%), Wheat Flour (Atta), Milk Solids, Wheat Bran, Honey (1.5%), Liquid Glucose, Raising Agents [(Ammonium Bicarbonate E503(Ii), Sodium Bicarbonate E500(Ii)], Edible Common Salt, Acidity Regulator [(Sodium Acid Pyrophosphate E450(I), Malic Acid E296], Emulsifier (Soy Lecithin E322, Glycerol Mono Stearate E471), Contains Added Flavours (Artificial Flavouring Substances- Vanilla And Milk)",
+   "usageInstructions": "1. It is a perfect snack on its own.\n2. Enjoy your evening tea or carry it while traveling.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Marie Classic",
+  "handle": "marie-classic",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "9.5g",
+    "price": "3",
+    "compare_at_price": "3",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222806_2-cremica-marie-classic-tea-time-delight-biscuits-lite-crispy-no-preservatives.jpg"
+    }
+   },
+   {
+    "title": "58.5g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222525_2-cremica-marie-classic-lite-crisp-biscuit.jpg"
+    }
+   },
+   {
+    "title": "300g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135744_4-cremica-biscuit-marie-classic.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245742_1-cremica-marie-classic-lite-crispy-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222806_2-cremica-marie-classic-tea-time-delight-biscuits-lite-crispy-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222806-2_2-cremica-marie-classic-tea-time-delight-biscuits-lite-crispy-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222806-3_2-cremica-marie-classic-tea-time-delight-biscuits-lite-crispy-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222806-4_2-cremica-marie-classic-tea-time-delight-biscuits-lite-crispy-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222806-5_2-cremica-marie-classic-tea-time-delight-biscuits-lite-crispy-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222806-6_2-cremica-marie-classic-tea-time-delight-biscuits-lite-crispy-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222525_2-cremica-marie-classic-lite-crisp-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135744_4-cremica-biscuit-marie-classic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Marie Classic are made with the finest ingredients. They are enriched with great taste. It is a sweet and crispy and healthy biscuit. It is a perfect healthy treat for your body. They are said to improve your health and do not cause any harm to your health. Now savour the taste of these whole wheat biscuits with your morning or evening tea or coffee. It does not contain any added flavouring or preservatives.",
+   "ingredients": "Refined Wheat Flour [Maida (65%)], Sugar, Edible Vegetable Oils (Palm), Invert Syrup, Raising Agents [Ammonium Bi Carbonate E503 (Ii), Sodium Bi Carbonate E500(Ii)], Milk Solids, Edible Common Salt, Permitted Emulsifiers (Glycerol Monostearate E471, Lecithin E322), Milk Solids, Dough Conditioner (Sodium Meta Bi Sulphite E223). Contains Permitted Natural Food [(Black Jack (Sugar)] And Added Flavours (Artificial Flavouring Substances- Milk, Vanilla, Butter)",
+   "usageInstructions": "1. Enjoy these digestive biscuits with tea or coffee.\n2. They make a great snack option too.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016063000826"
+  }
+ },
+ {
+  "title": "Mix Fruit Jam",
+  "handle": "mix-fruit-jam",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "480g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121207_2-cremica-mix-fruit-jam.jpg"
+    },
+    "barcode": "8904234100616"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121207_2-cremica-mix-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121207-2_2-cremica-mix-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121207-3_2-cremica-mix-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121207-4_2-cremica-mix-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121207-5_2-cremica-mix-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121207-6_2-cremica-mix-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121207-7_1-cremica-mix-fruit-jam.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Jam is packed with mouthwatering fruity flavours, which taste great when spread on bread by itself or along with peanut butter. This sweet sandwich spread can also be used as a spread on chapattis or to enhance the flavour of desserts in whichever way desired. Make this sweet pleasure appetisingly better by pairing it up with the universally loved peanut butter sandwiches. Combine some ripe bananas, condensed milk, and Mixed Fruit Jam and taste a smooth concoction of delight. Or better yet, come up with your own muddle of pleasure with Cremica's Mixed Fruit Jam.",
+   "ingredients": "Sugar, Water, Mix Fruit Pulp (45%), Thickener (Ins440), Acidity Regulator (Ins330), Orange Juice, Contains Permitted Synthetic Food Colour (Ins120), Contains Added Flavors (Artificial And Nature- Identical), Contains Permitted Class Ii Preservatives (Ins202, Ins211) (Cremica)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "15g",
+    "Energy": "29 kcal",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "1 mg",
+    "Total Carbohydrate": "7.2 g",
+    "Sugars": "7 g",
+    "Protein": "0 g"
+   },
+   "storageInstructions": "*Keep in cool & dry place away from direct Sunlight\n*Keep refrigerated after opening & consume within Two Months",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Cremica Food Industries Ltd."
+  }
+ },
+ {
+  "title": "Pineapple Jam",
+  "handle": "pineapple-jam",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "480g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121208_1-cremica-jam-pineapple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121208_1-cremica-jam-pineapple.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Jam is packed with mouthwatering fruity flavours, which taste great when spread on bread by itself or along with peanut butter. This sweet sandwich spread can also be used as a spread on chapattis or to enhance the flavour of desserts in whichever way desired.",
+   "ingredients": "High Concerntrate Fruit Pulp",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Cremica Food Industries Ltd."
+  }
+ },
+ {
+  "title": "Tomato Ketchup - Squeasy",
+  "handle": "tomato-ketchup-squeasy",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "900g",
+    "price": "121",
+    "compare_at_price": "121",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016238_4-cremica-tomato-ketchup-squeasy.jpg"
+    },
+    "barcode": "8904234100289"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016238_4-cremica-tomato-ketchup-squeasy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016238-2_4-cremica-tomato-ketchup-squeasy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016238-3_3-cremica-tomato-ketchup-squeasy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016238-4_3-cremica-tomato-ketchup-squeasy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016238-5_3-cremica-tomato-ketchup-squeasy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016238-6_1-cremica-tomato-ketchup-squeasy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the vibrant, thick, and glossy delight of Cremica Tomato Ketchup. Crafted with the finest, hand-picked tomatoes, this ketchup boasts a perfect blend of sweet, tangy, and salty flavours that will elevate any dish. The easy-to-use Squeasy packaging offers convenient storage and a fun, kid-friendly appeal. Versatile and multi-purpose, this ketchup pairs beautifully with sandwiches, burgers, pizzas, samosas, and more, adding a delightful twist to your favourite snacks and meals. Suitable for vegetarians, Cremica Ketchup is a trusted brand loved by millions, offering a scrumptious and satisfying culinary experience.",
+   "ingredients": "Water, Tomato Paste (31%), Liquid Glucose, Sugar, Iodised Salt, Acidity Regulator (Ins260), Stabilizer (Ins415), Onion Powder, Garlic Powder, Spices & Condiments, Preservative (Ins211)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (kcal)": "63",
+    "%RDA": "0%",
+    "Total Fat (g)": "0",
+    "Saturated Fat (g)": "0",
+    "Sodium (mg)": "135",
+    "Total Carbohydrates (g)": "20.4",
+    "Sugars (g)": "3.4",
+    "Protein (g)": "0",
+    "RDA": "Per The Bry Kg"
+   },
+   "storageInstructions": "* Store in a cool, dry and hygienic place\n* Keep refrigerated after opening",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Garlic Sauce",
+  "handle": "chilli-garlic-sauce",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356828_1-cremica-chilli-garlic-sauce.jpg"
+    },
+    "barcode": "8904234102849"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356828_1-cremica-chilli-garlic-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356828-2_1-cremica-chilli-garlic-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356828-3_1-cremica-chilli-garlic-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356828-4_1-cremica-chilli-garlic-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356828-5_1-cremica-chilli-garlic-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica's Chiili Garlic Sauce is your go-to peppery hot condiment. The heat level of this sauce is no joke, so eat at your own risk! Bring out the Sauce at a party and watch the atmosphere heat up in no time! The all-purpose Chili Garlic Sauce tastes best with grilled salmon and all the versions of noodles you can ever create.",
+   "ingredients": "Water, Tomato Paste, Sugar, Red Chilli Puree (10%),\nRefined Soyabean Oil, Lodized Salt, Red Chilli Flakes (3.4%), Garlic Granules\n(3%), Acidity Regulator (Ins260), Soya Sauce (Soyabean, Wheat, Molasses),\nThickener (Ins1422), Stabilizer (Ins415), Ginger Powder, Garlic Powder (0.1%),\nPreservative (Ins211).\nContains Wheat & Soyabean",
+   "nutritionalInfo": {
+    "Energy": "104 kcal",
+    "Total Fat": "6 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "1400 mg",
+    "Total Carbohydrate": "12 g",
+    "Sugars": "3.3 g",
+    "Protein": "3.3 g"
+   },
+   "manufacturerName": "Cremica Food Industries Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Schezwan Sauce",
+  "handle": "schezwan-sauce",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356830_1-cremica-schezwan-sauce.jpg"
+    },
+    "barcode": "8904234105246"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356830_1-cremica-schezwan-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356830-2_1-cremica-schezwan-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356830-3_1-cremica-schezwan-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356830-4_1-cremica-schezwan-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356830-5_1-cremica-schezwan-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Schezwan Sauce is your all-in-one kitchen\ncompanion – a multi-purpose cook, dip, and spread that adds a bold twist to\nevery meal. Packed with fiery, spicy, tangy, and garlicky flavours, it\ninstantly elevates your favourite dishes with a punch of taste. Use it in\nstir-fries for that perfect restaurant-style zing, as a dip for momos, spring\nrolls, and French fries, or spread it on sandwiches, wraps, and rolls to give\nthem an irresistible kick. Versatile and flavourful, Cremica Schezwan Sauce is\nthe ultimate way to spice up your everyday cooking. Cook, dip, and spread the\nflavour of fire!",
+   "ingredients": "Water, Sugar, Liquid Glucose, Red Chilli, Garlic, Refined\nSoyabean Oil, Tomato Paste, Corn Starch, Spices And Condiments, Lodized Salt,\nAcidity Regulator (Ins 260), Thickener (Ins 1422), Stabilizer (Ins 415), Sesame\nSeeds, Ginger, Preservative (Ins 211).\nContains Added Flavour (Natural Flavouring Substances).\nContains Sesame And Celery",
+   "nutritionalInfo": {
+    "Energy": "142 kcal",
+    "Total Fat": "15 g",
+    "Saturated Fat": "20 g",
+    "Trans Fat": "16 g",
+    "Sodium": "0.4 mg",
+    "Total Carbohydrate": "0 g",
+    "Sugars": "0 g",
+    "Protein": "3 g"
+   },
+   "manufacturerName": "Cremica Food Industries Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Classic Sandwich Spread",
+  "handle": "classic-sandwich-spread",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "275g",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121199_3-cremica-sandwich-spread-classic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121199_3-cremica-sandwich-spread-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121199-2_3-cremica-sandwich-spread-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121199-3_3-cremica-sandwich-spread-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121199-4_3-cremica-sandwich-spread-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121199-5_3-cremica-sandwich-spread-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121199-6_1-cremica-sandwich-spread-classic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Sandwich Spread is made specifically to enhance the taste of sandwiches and to give it an irresistible flavour, which is guaranteed to become your new favourite way to prepare sandwiches. The spread has a thick, glossy texture that is easy to spread and is available in a variety of flavours to suit everybody's taste.",
+   "ingredients": "Refined Soyabean Oil, Water, Preserved Cucumber, Liquid Glucose, Milk Solids, Sugar, Lodized Salt, Mustard Powder, Acidity Regulators (Ins 260, Ins 270, Ins 330), Stabilizer (Ins 415), Edible Herb (Basil), Thickener (Ins 1422), Dehydrated Onion, Spices & Condiments, Sequestrant (Ins 385), Preservatives (Ins 202, Ins 211)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "15g",
+    "Energy": "494 kcal",
+    "Total Fat": "50 g",
+    "Saturated Fat": "7 g",
+    "Trans Fat": "0 g",
+    "Sodium": "400 mg",
+    "Total Carbohydrate": "10 g",
+    "Sugars": "3 g",
+    "Protein": "1 g"
+   },
+   "storageInstructions": "*Keep in cool and dry place, away from direct sunlight",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Cremica Food Industries Ltd."
+  }
+ },
+ {
+  "title": "Mint Sandwich Spread",
+  "handle": "mint-sandwich-spread",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "275g",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121198_2-cremica-sandwich-spread-mint.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121198_2-cremica-sandwich-spread-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121198-2_1-cremica-sandwich-spread-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121198-3_1-cremica-sandwich-spread-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121198-4_1-cremica-sandwich-spread-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121198-5_1-cremica-sandwich-spread-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121198-6_1-cremica-sandwich-spread-mint.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Sandwich Spread is made specifically to enhance the taste of sandwiches and to give it an irresistible flavour, which is guaranteed to become your new favourite way to prepare sandwiches. The spread has a thick, glossy texture that is easy to spread and is available in a variety of flavours to suit everybody's taste.",
+   "ingredients": "Refined Soyabean Oil, Water, Yoghurt, Preserved Cucumber, Fresh Coriander, Liquid Glucose, Fresh Mint (5.8%), Milk Solids, Sugar, Lodized Salt, Spices & Condiments, Acidity Regulators (Ins 260, Ins 330), Green Chilli Puree, Thickener (Ins 1422), Stabilizers (Ins 415, Ins 412), Antioxidant (Ins 222), Garlic Powder, Sequestrant (Ins 385), Preservatives (Ins 202, Ins 211)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "15g",
+    "Energy (kcal)": "316 kcal",
+    "Total Fat (g)": "28 g",
+    "Saturated Fat (g)": "5 g",
+    "Trans Fat (g)": "0 g",
+    "Sodium (mg)": "620 mg",
+    "Total Carbohydrate (g)": "14 g",
+    "Sugars (g)": "9 g",
+    "Protein (g)": "2 g"
+   },
+   "storageInstructions": "*Store in a cool & dry place away from sunlight",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Cremica Food Industries Ltd."
+  }
+ },
+ {
+  "title": "Piri Piri Sandwich Spread",
+  "handle": "piri-piri-sandwich-spread",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "275g",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121197_2-cremica-sandwich-spread-piri-piri.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121197_2-cremica-sandwich-spread-piri-piri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121197-2_2-cremica-sandwich-spread-piri-piri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121197-3_2-cremica-sandwich-spread-piri-piri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121197-4_2-cremica-sandwich-spread-piri-piri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121197-5_1-cremica-sandwich-spread-piri-piri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121197-6_1-cremica-sandwich-spread-piri-piri.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Sandwich Spread is made specifically to enhance the taste of sandwiches and to give it an irresistible flavour, which is guaranteed to become your new favourite way to prepare sandwiches. The spread has a thick, glossy texture that is easy to spread and is available in a variety of flavours to suit everybody's taste.",
+   "ingredients": "Refined Soyabean Oil, Water, Milk Solids, Liquid Glucose, Sugar, Iodised Salt, Acidity Regulators (Ins 260, Ins 338), Piri Piri Spice Blend (2%), Garlic Powder, Onion Powder, Flavour Enhancer (Ins 631, Ins 627), Stabilizers (Ins 415, Ins 412, Ins 471), Sequestrant (Ins 385), Preservatives (Ins 202, Ins 211), Contains Permitted Synthetic Food Colour (Ins 160A(I)), Added Flavour (Natural Flavouring Substances), Contains Milk & Milk Product",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "15g",
+    "Energy": "553 kcal",
+    "Total Fat": "57 g",
+    "Saturated Fat": "8 g",
+    "Trans Fat": "0 g",
+    "Sodium": "1200 mg",
+    "Total Carbohydrate": "8 g",
+    "Sugars": "3 g",
+    "Protein": "4 g"
+   },
+   "storageInstructions": "*Keep in cool and dry place, away from direct sunlight",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Cremica Food Industries Ltd."
+  }
+ },
+ {
+  "title": "Imli Chataka - Spicy Tamarind Sauce",
+  "handle": "imli-chataka-spicy-tamarind-sauce",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "480g",
+    "price": "98",
+    "compare_at_price": "98",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/284191_3-cremica-imli-chataka-spicy-tamarind-sauce.jpg"
+    },
+    "barcode": "8904234102979"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284191_3-cremica-imli-chataka-spicy-tamarind-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284191-2_2-cremica-imli-chataka-spicy-tamarind-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284191-3_2-cremica-imli-chataka-spicy-tamarind-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284191-4_2-cremica-imli-chataka-spicy-tamarind-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284191-5_2-cremica-imli-chataka-spicy-tamarind-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284191-6_1-cremica-imli-chataka-spicy-tamarind-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica imli chataka spicy tamarind sauce adds a dash of tongue-tickling Indian flavours to your snacks with our hot and tasty ethnic sauce. Full of rich and composite aromas, these sauces are your homemade chutneys. It helps add that Indian touch to any dish that is served.",
+   "ingredients": "Tamarind Puree (44%), Sugar, Water, Tomato Paste, Liquid Glucose, Lodized Salt, Acidity Regulators (Ins334, Ins330), Thickener (Ins1422), Stabilizer (Ins415), Spices & Condiments, Black Salt, Preservative (Ins211), Contains Permitted Natural Food Colour (Ins150D)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "15g",
+    "Energy": "29kcal",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Sodium": "83mg",
+    "Total Carbohydrate": "6.7g",
+    "Sugars": "5.2g",
+    "Protein": "0.5g"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Cremica Food Industries Ltd."
+  }
+ },
+ {
+  "title": "Pudina Chataka - Spicy Mint Sauce",
+  "handle": "pudina-chataka-spicy-mint-sauce",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016223_5-cremica-pudina-chataka-spicy-mint-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016223_5-cremica-pudina-chataka-spicy-mint-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016223-2_4-cremica-pudina-chataka-spicy-mint-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016223-3_2-cremica-pudina-chataka-spicy-mint-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016223-4_2-cremica-pudina-chataka-spicy-mint-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016223-5_2-cremica-pudina-chataka-spicy-mint-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016223-6_1-cremica-pudina-chataka-spicy-mint-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016223-7_1-cremica-pudina-chataka-spicy-mint-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Add a dash of tongue-tickling Indian flavours to your snacks with our spicy and tangy ethnic sauces. Full of rich and complex aromas, these sauces are as authentic as your homemade chutneys.",
+   "ingredients": "Water, Jaggery, Tamarind Paste, Molasses, Sugar, Dates, Soya Sauce, Stabiliser (1422, 415), Vinegar, Salt, Onion, Garlic, Black Pepper, Acidity Regulator (260, 330), Mixed Spices Extract.",
+   "storageInstructions": "Store in a cool, dry and hygienic place.",
+   "usageInstructions": "It can be used as dip or accompaniment with Indian snacks like samosa kachori etc.",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Piri Piri Sauce",
+  "handle": "piri-piri-sauce",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121205_2-cremica-piri-piri-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121205_2-cremica-piri-piri-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121205-2_1-cremica-piri-piri-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121205-3_1-cremica-piri-piri-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121205-4_1-cremica-piri-piri-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121205-5_1-cremica-piri-piri-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cremica Sauces are available in a variety of flavours, which are ideal to be used for preparing salads, sandwiches or pastas. These sauces can also be used as a marinade or a dip along with your favourite snacks for added flavour.",
+   "ingredients": "Water, Onion Paste, Refined Soyabean Oil, Iodised Salt, Green Chilli Puree, Acidity Regulator (Ins 260), Garlic Paste, Lemon Juice, Thickener (Ins 1422), Stabilizer (Ins 415), Edible Herbs (Oregano), Garlic Powder, Onion Powder, Ginger Powder, Piri Piri Seasoning (0.15%), Lemon Powder, Flavour Enhancer (Ins 627, Ins 631), Preservative (Ins 211)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "15g",
+    "Energy": "66 kcal",
+    "Total Fat": "6g",
+    "Saturated Fat": "2g",
+    "Trans Fat": "0g",
+    "Sodium": "800mg",
+    "Total Carbohydrate": "2g",
+    "Sugars": "1g",
+    "Protein": "1g"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place\n*Refrigerate after opening",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Cremica Food Industries Ltd."
+  }
+ },
+ {
+  "title": "Salsa Mexicana Sauce",
+  "handle": "salsa-mexicana-sauce",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356829_1-cremica-salsa-mexicana-sauce.jpg"
+    },
+    "barcode": "8904234102856"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356829_1-cremica-salsa-mexicana-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356829-2_1-cremica-salsa-mexicana-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356829-3_1-cremica-salsa-mexicana-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356829-4_1-cremica-salsa-mexicana-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356829-5_1-cremica-salsa-mexicana-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Salsa is a common ingredient in Mexican cuisine, served as a condiment with tacos, stirred into soups and stews, or incorporated into tamale fillings. Salsa fresca is a fresh salsa made with tomatoes and hot peppers.",
+   "ingredients": "Water, Tomato Paste, Sugar, Red Chilli Puree (10%), Refined Soyabean oil,Iodized Salt, Red Chilli Flakes (3.4%), Garlic Granules (3%), Acidity Regulator (INS 260), Soya Sauce, Thickener (INS 1422), Stabilizer (INS 415), Ginger Powder, Garlic Powder (0.1%), Preservative (INS 211).",
+   "nutritionalInfo": {
+    "Energy": "149.3 kcal",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "1066.6 mg",
+    "Total Carbohydrate": "34.6 g",
+    "Sugars": "17.3 g",
+    "Protein": "2.6 g"
+   },
+   "manufacturerName": "Cremica Food Industries Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Caesar Salad Dressing",
+  "handle": "caesar-salad-dressing",
+  "vendor": "Cremica",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016221_3-cremica-salad-dressing-caesar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016221_3-cremica-salad-dressing-caesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016221-2_3-cremica-salad-dressing-caesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016221-3_3-cremica-salad-dressing-caesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016221-4_3-cremica-salad-dressing-caesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016221-5_3-cremica-salad-dressing-caesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016221-6_1-cremica-salad-dressing-caesar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Make every dish more appetising with Cremica Caesar Dressing. With mayonnaise and vinegar as its components, it adds a rich texture with a slightly pungent taste. Best for preparing sandwiches, salads or to serve as a dip with barbequed meats, Cremica Caesar Salad Dressing is your ideal companion to those mouth-watering chicken wraps, burgers, and tame salads.",
+   "ingredients": "Water, Refined Rice Bran Oil, Refined Canola Oil, Sugar, Milk Solids, Iodised Salt, Acidity Regulators (Ins260, Ins330, Ins338), Cheese Powder, Cream Buds, Lemon Powder, Spices & Condiments, Mustard Powder, Stabilizers (Ins415, Ins412), Garlic Powder, Edible Herb, Sequestrant (Ins385), Preservatives (Ins202, Ins211)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "23g",
+    "Energy": "81.2 kcal",
+    "Total Fat": "8 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "0.06 g",
+    "Sodium": "120 mg",
+    "Total Carbohydrate": "2 g",
+    "Sugars": "1.3 g",
+    "Protein": "0.3 g"
+   },
+   "storageInstructions": "* Keep in cool & dry place, away from direct sunlight",
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd.",
+   "countryOfOrigin": "India"
+  }
+ }
+]
