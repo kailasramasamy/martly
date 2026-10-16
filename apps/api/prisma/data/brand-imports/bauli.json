@@ -1,0 +1,206 @@
+{
+  "brand": "Bauli",
+  "manufacturer": "Bauli India Pvt. Ltd.",
+  "feed": "bauli-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bauli/logo-d769e625.png",
+  "themeColor": "#4B1E8C",
+  "themeColorSecondary": "#E8B54A",
+  "namePrefix": "Bauli ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Moonfils\\ Croissant\\ \\-\\ Choco\\ Creme$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Croissant\\ \\-\\ Choco\\ Creme,\\ Veg$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Croissant\\ \\-\\ Vanilla\\ Creme$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Croissant\\ \\-\\ Vanilla\\ Creme,\\ Veg$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Croissant\\ \\-\\ Orange\\ Creme$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Croissant\\ \\-\\ Strawberry\\ Creme$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Croissant\\ \\-\\ Strawberry\\ Creme,\\ Veg$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Croissant\\ \\-\\ Sweet\\ Cheese\\ Creme$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Croissant\\ \\-\\ Sweet\\ Cheese\\ Creme,\\ Veg$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Croissant\\ \\-\\ Combipack$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Puff\\ Roll\\ \\-\\ Apple\\ Pie\\ Creme$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Puff\\ Roll\\ \\-\\ Caramel\\ Creme$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Moonfils\\ Puff\\ Rolls\\ \\-\\ Choco\\ \\&\\ Vanilla$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Savoriz\\ Puffed\\ Roll\\ \\-\\ Cheese\\ Oregano$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Savoriz\\ Puffed\\ Roll\\ \\-\\ Cheese\\ Jalapeno$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Savoriz\\ Puffed\\ Roll\\ \\-\\ Cheese\\ Tandoori$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Savoriz\\ Puffed\\ Roll\\ \\-\\ Tomato\\ Chilli$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Spyroll$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Choco\\ Chip\\ Tea\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Mava\\ Tea\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Goodness\\ Bar\\ \\-\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Goodness\\ Bar\\ \\-\\ Peanut\\ Choco$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Goodness\\ Bar\\ \\-\\ Roasted\\ Almond\\ Choco\\ Nut$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Goodness\\ Bar\\ \\-\\ Strawberry$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    }
+  ]
+}
