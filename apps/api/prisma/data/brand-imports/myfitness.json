@@ -1,0 +1,134 @@
+{
+  "brand": "Myfitness",
+  "manufacturer": "SuperNutri Foods",
+  "feed": "myfitness-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/myfitness/logo-80a418e5.png",
+  "themeColor": "#1E6FC8",
+  "themeColorSecondary": "#6D3A1F",
+  "namePrefix": "Myfitness ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Chocolate\\ Peanut\\ Butter\\ \\-\\ Crispy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Peanut\\ Butter\\ \\-\\ Smooth$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Peanut\\ Butter\\ with\\ Almond\\ Crunch$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Peanut\\ Butter\\ \\-\\ Smooth$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Dark\\ Chocolate\\ Peanut\\ Butter\\ with\\ Added\\ Whey\\ \\-\\ Crispy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Dark\\ Chocolate\\ Peanut\\ Butter\\ with\\ Added\\ Whey\\ \\-\\ Smooth$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Junior\\ Chocolate\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Junior\\ Chocolate\\ Peanut\\ Butter\\ \\-\\ Smooth$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Natural\\ Unsweetened\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Natural\\ Unsweetened\\ Peanut\\ Butter\\ \\-\\ Smooth$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Original\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Original\\ Peanut\\ Butter\\ \\-\\ Smooth$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Zero\\ Chocolate\\ Peanut\\ Butter\\ \\-\\ Extra\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Rolled\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    }
+  ]
+}

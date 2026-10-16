@@ -1,0 +1,1078 @@
+[
+ {
+  "title": "Chocolate Peanut Butter - Crispy",
+  "handle": "chocolate-peanut-butter-crispy",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "227g",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40264684_2-myfitness-peanut-butter-chocolate-crispy-rich-in-taste-flavour-creamy-texture.jpg"
+    },
+    "barcode": "8904327600955"
+   },
+   {
+    "title": "510g",
+    "price": "319",
+    "compare_at_price": "319",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216422_5-myfitness-chocolate-peanut-butter-crispy.jpg"
+    }
+   },
+   {
+    "title": "1.25kg",
+    "price": "619",
+    "compare_at_price": "619",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216427_4-myfitness-chocolate-peanut-butter-crispy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264684_2-myfitness-peanut-butter-chocolate-crispy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264684-2_2-myfitness-peanut-butter-chocolate-crispy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264684-3_2-myfitness-peanut-butter-chocolate-crispy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264684-4_2-myfitness-peanut-butter-chocolate-crispy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264684-5_2-myfitness-peanut-butter-chocolate-crispy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264684-6_2-myfitness-peanut-butter-chocolate-crispy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264684-7_2-myfitness-peanut-butter-chocolate-crispy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264684-8_2-myfitness-peanut-butter-chocolate-crispy-rich-in-taste-flavour-creamy-texture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate chocolate peanut butter experience with our delectable Myfitness Chocolate Crispy Peanut Butter. Crafted with premium roasted peanuts and unsweetened Belgian dark chocolate, this spread offers a rich, indulgent flavour that satisfies both your sweet tooth and your health-conscious goals. The crispy texture provides a delightful crunch, elevating your snacking experience. Packed with protein and low in added sugar, this versatile spread is perfect for fitness enthusiasts and chocolate lovers alike. Spread it on bread, blend it into smoothies, or use it as a dipping sauce - the possibilities are endless. Discover the perfect balance of taste and nutrition with every spoonful of our Myfitness Chocolate Crispy Peanut Butter.",
+   "ingredients": "Roasted Peanuts, Dark Chocolate, Sugar, Rice Crisps, Salt, Stabilizer (INS 471)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "32g",
+    "Energy": "632kcal",
+    "Protein": "21g",
+    "Carbohydrates": "27g",
+    "Sugar": "11g",
+    "Added Sugar": "10g",
+    "Dietary Fiber": "8g",
+    "Total Fats": "49g",
+    "Saturated Fats": "12g",
+    "Poly Unsaturated Fats": "14g",
+    "Mono Unsaturated Fats": "23g",
+    "Trans Fats": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "176mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place, away from direct sunlight",
+   "manufacturerName": "SuperNutri Foods",
+   "fssaiLicense": "10019023000027",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Peanut Butter - Crunchy",
+  "handle": "chocolate-peanut-butter-crunchy",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "227g",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40264683_2-myfitness-peanut-butter-chocolate-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+    }
+   },
+   {
+    "title": "510g",
+    "price": "319",
+    "compare_at_price": "319",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216421_5-myfitness-chocolate-peanut-butter-crunchy.jpg"
+    }
+   },
+   {
+    "title": "1.25kg",
+    "price": "619",
+    "compare_at_price": "619",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216426_5-myfitness-chocolate-peanut-butter-crunchy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264683_2-myfitness-peanut-butter-chocolate-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264683-2_2-myfitness-peanut-butter-chocolate-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264683-3_2-myfitness-peanut-butter-chocolate-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264683-4_2-myfitness-peanut-butter-chocolate-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264683-5_2-myfitness-peanut-butter-chocolate-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264683-6_2-myfitness-peanut-butter-chocolate-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264683-7_2-myfitness-peanut-butter-chocolate-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264683-8_2-myfitness-peanut-butter-chocolate-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible combination of rich, unsweetened Belgian dark chocolate and creamy, premium roasted peanuts with the myfitness Chocolate Peanut Butter. This guilt-free treat is vegan, cholesterol-free, and gluten-free, making it the perfect choice for health-conscious snackers. Packed with a good kind of brown Sugar and pink Himalayan salt, this peanut butter spread is not only delectable but also a high source of Vitamin E and proteins. Elevate your snacking experience with the flavourful and satisfying myfitness Chocolate Peanut Butter.",
+   "ingredients": "Premium Roasted Peanuts, Dark Chocolate, Sugar, Salt, Stabilizer (INS 471)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "32g",
+    "Energy": "637 kcal",
+    "Protein": "23g",
+    "Carbohydrates": "24g",
+    "Sugar": "12g",
+    "Added Sugar": "11g",
+    "Dietary Fiber": "9g",
+    "Total Fats": "50g",
+    "Saturated Fats": "12g",
+    "Poly Unsaturated Fats": "14g",
+    "Mono Unsaturated Fats": "23g",
+    "Trans Fats": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "136mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place, away from direct sunlight\n*Do not accept if the seal is tampered with\n*Oil separation is natural, stir well before use",
+   "manufacturerName": "SuperNutri Foods",
+   "fssaiLicense": "10019023000027",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Peanut Butter - Smooth",
+  "handle": "chocolate-peanut-butter-smooth",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "227g",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40264682_2-myfitness-peanut-butter-chocolate-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+    }
+   },
+   {
+    "title": "510g",
+    "price": "319",
+    "compare_at_price": "319",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216420_4-myfitness-chocolate-peanut-butter-smooth.jpg"
+    }
+   },
+   {
+    "title": "1.25kg",
+    "price": "619",
+    "compare_at_price": "619",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216425_4-myfitness-chocolate-peanut-butter-smooth.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264682_2-myfitness-peanut-butter-chocolate-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264682-2_2-myfitness-peanut-butter-chocolate-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264682-3_2-myfitness-peanut-butter-chocolate-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264682-4_2-myfitness-peanut-butter-chocolate-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264682-5_2-myfitness-peanut-butter-chocolate-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264682-6_2-myfitness-peanut-butter-chocolate-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264682-7_2-myfitness-peanut-butter-chocolate-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264682-8_2-myfitness-peanut-butter-chocolate-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the perfect combination of creamy peanut butter and rich, decadent dark chocolate with our MyFitness spread. This irresistible treat is the ultimate guilt-free indulgence, providing energy and protein to fuel your fitness journey. Crafted with roasted peanuts and unsweetened Belgian dark chocolate, this smooth and creamy spread boasts a delectable flavour that will delight your taste buds. Enjoy this delicious blend as a satisfying snack or incorporate it into your healthy recipes for a touch of chocolatey goodness. Embrace the perfect balance of indulgence and nourishment with our MyFitness chocolate peanut butter spread.",
+   "ingredients": "Premium Roasted Peanuts, Sugar, Salt, Permitted Stabilizing Agent, Dark Chocolate",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "32g",
+    "Energy": "640 kcal",
+    "Protein": "22g",
+    "Carbohydrates": "22g",
+    "Sugar": "7g",
+    "Added Sugar": "6g",
+    "Dietary Fiber": "6g",
+    "Total Fats": "52g",
+    "Saturated Fats": "13g",
+    "Poly Unsaturated Fats": "11g",
+    "Mono Unsaturated Fats": "28g",
+    "Trans Fats": "0g",
+    "Cholestrol": "0mg",
+    "Sodium": "139mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place, away from direct sunlight\n*Do not accept if seal is tampered\n*Oil separation is natural, stir well before use",
+   "manufacturerName": "SuperNutri Foods",
+   "fssaiLicense": "10019023000027",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Peanut Butter with Almond Crunch",
+  "handle": "chocolate-peanut-butter-with-almond-crunch",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "510g",
+    "price": "379",
+    "compare_at_price": "379",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324690_3-myfitness-chocolate-peanut-butter-with-almond-crunch.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324690_3-myfitness-chocolate-peanut-butter-with-almond-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324690-2_3-myfitness-chocolate-peanut-butter-with-almond-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324690-3_3-myfitness-chocolate-peanut-butter-with-almond-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324690-4_3-myfitness-chocolate-peanut-butter-with-almond-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324690-5_3-myfitness-chocolate-peanut-butter-with-almond-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324690-6_3-myfitness-chocolate-peanut-butter-with-almond-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324690-7_1-myfitness-chocolate-peanut-butter-with-almond-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324690-8_1-myfitness-chocolate-peanut-butter-with-almond-crunch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delectable taste and optimal nutrition of MyFitness, India's first nut butter brand registered with the U.S. FDA. Crafted from roasted peanuts, this versatile spread delivers a fabulous fusion of chocolate and nuts, providing a protein-packed snack with 23g of protein and a delightful almond crunch. Enjoy the irresistible texture and creamy chocolate experience, whether you're looking for a quick energy boost, a delicious addition to your smoothies, or a satisfying snack. MyFitness is an excellent source of protein, healthy fats, and dietary fibre, making it a perfect companion for your wellness regimen.",
+   "ingredients": "Roasted Peanuts (67%), Roasted Almond Powder (10%), Dark Chocolate (10%), Roasted Almond Granules (7%), Sugar, Stabilizer (INS 471)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "32g",
+    "Energy": "634 Kcal",
+    "Protein": "23g",
+    "Carbohydrates": "25g",
+    "Sugar": "14g",
+    "Added Sugar": "12g",
+    "Dietary Fiber": "9g",
+    "Total Fats": "49g",
+    "Saturated Fats": "11g",
+    "Poly Unsaturated Fats": "11g",
+    "Mono Unsaturated Fats": "28g",
+    "Trans Fats": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "98mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place, away from direct sunlight\n*Oil separation is natural, stir well before use",
+   "manufacturerName": "Super Nutri Foods",
+   "fssaiLicense": "10019023000027",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Coffee Peanut Butter - Smooth",
+  "handle": "coffee-peanut-butter-smooth",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "510g",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324691_2-myfitness-coffee-peanut-butter-smooth.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324691_2-myfitness-coffee-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324691-2_2-myfitness-coffee-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324691-3_2-myfitness-coffee-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324691-4_2-myfitness-coffee-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324691-5_2-myfitness-coffee-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324691-6_2-myfitness-coffee-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324691-7_2-myfitness-coffee-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324691-8_1-myfitness-coffee-peanut-butter-smooth.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "MyFitness is India's first nut butter brand registered with the U.S. FDA. Crafted from roasted peanuts, it delivers a delectable taste and optimal nutrition.",
+   "ingredients": "Roasted Peanuts (90%), Sugar, Stabilizer (INS 471), Added Natural Flavour & Natural Flavouring Substance- Coffee",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "32g",
+    "Energy": "641 kcal",
+    "Protein": "26 g",
+    "Carbohydrates": "19 g",
+    "Sugar": "8 g",
+    "Added Sugar": "8 g",
+    "Dietary Fiber": "5 g",
+    "Total Fats": "51 g",
+    "Saturated Fats": "11 g",
+    "Poly Unsaturated Fats": "14 g",
+    "Mono Unsaturated Fats": "26 g",
+    "Trans Fats": "0 g",
+    "Cholestrol": "0 mg",
+    "Sodium": "27 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place, away from direct sunlight\n*Do not accept if seal is tampered",
+   "manufacturerName": "Super Nutri Foods",
+   "fssaiLicense": "10019023000027",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dark Chocolate Peanut Butter with Added Whey - Crispy",
+  "handle": "dark-chocolate-peanut-butter-with-added-whey-crispy",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "510g",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40315920_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-crispy.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "689",
+    "compare_at_price": "689",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40315921_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-crispy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315920_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315920-2_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315920-3_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315920-4_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315920-5_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315920-6_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315920-7_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315920-8_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-crispy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mr. Olympia is an annual International bodybuilding contest held by the International Federation of Bodybuilding and Fitness (IFBB). Joe Weider and Ben Weider created IFBB way back in 1946. The very first Mr. Olympia event was held in 1965 and since then it has become a symbol of excellence and achievement. Moreover, My Fitness became the first Indian brand to become the presenting sponsor of Mr. Olympia in 2021. An addition to our range of products is the all-new 'Olympia Limited Edition' Dark Chocolate Peanut Butter with added Everyday Whey protein. Available in delectable dark chocolate flavours in 3 textures - crunchy, smooth and crispy. High Protein Dark Chocolate Peanut Butter has been carefully crafted for fitness enthusiasts and gym aficionados (gym-goers). We bet no one can ever get enough of this flawless invention. The deliciousness of dark chocolate combined with the goodness of all-natural roasted peanuts and whey protein makes this product the ideal addition to any diet. Rich in fibre and protein, with NO trans fat, what more can one ask for?",
+   "ingredients": "Roasted Peanuts, Dark Chocolate Paste, Whey Protein Concentrate, Rice Crisps, Stabiliser (INS 471)",
+   "nutritionalInfo": {
+    "Serving Size": "32 g",
+    "Energy": "202 kcal",
+    "Protein": "7 g",
+    "Carbohydrates": "8 g",
+    "Dietary Fibre": "3 g",
+    "Sugar": "5 g",
+    "Added Sugar": "5 g",
+    "Total Fats": "16 g",
+    "Saturated Fats": "4 g",
+    "Poly Unsaturated Fats": "4 g",
+    "Mono Unsaturated Fats": "8 g",
+    "Trans Fats": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "31 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry, and hygienic place",
+   "manufacturerName": "Super Nutri Foods",
+   "fssaiLicense": "10019023000027",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dark Chocolate Peanut Butter with Added Whey - Smooth",
+  "handle": "dark-chocolate-peanut-butter-with-added-whey-smooth",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "510g",
+    "price": "356",
+    "compare_at_price": "356",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40315917_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-smooth.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315917_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315917-2_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315917-3_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315917-4_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315917-5_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315917-6_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315917-7_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315917-8_1-myfitness-dark-chocolate-peanut-butter-with-added-whey-smooth.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mr. Olympia is an annual International bodybuilding contest held by the International Federation of Bodybuilding and Fitness (IFBB). Joe Weider and Ben Weider created IFBB way back in 1946. The very first Mr. Olympia event was held in 1965 and since then it has become a symbol of excellence and achievement. Moreover, My Fitness became the first Indian brand to become the presenting sponsor of Mr. Olympia in 2021. An addition to our range of products is the all-new 'Olympia Limited Edition' Dark Chocolate Peanut Butter with added Everyday Whey protein. Available in delectable dark chocolate flavours in 3 textures - crunchy, smooth and crispy. High Protein Dark Chocolate Peanut Butter has been carefully crafted for fitness enthusiasts and gym aficionados (gym-goers). We bet no one can ever get enough of this flawless invention. The deliciousness of dark chocolate combined with the goodness of all-natural roasted peanuts and whey protein makes this product the ideal addition to any diet. Rich in fibre and protein, with NO trans fat, what more can one ask for?",
+   "ingredients": "Roasted Peanuts, Dark Chocolate Paste, Whey Protein Concentrate, Stabiliser (INS 471)",
+   "nutritionalInfo": {
+    "Serving Size": "32 g",
+    "Energy": "204 kcal",
+    "Protein": "8 g",
+    "Carbohydrates": "9 g",
+    "Dietary Fibre": "2 g",
+    "Sugar": "2 g",
+    "Added Sugar": "2 g",
+    "Total Fats": "16 g",
+    "Saturated Fats": "4 g",
+    "Polyunsaturated Fats": "3 g",
+    "Monounsaturated Fats": "9 g",
+    "Trans Fats": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "22 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Super Nutri Foods",
+   "fssaiLicense": "10019023000027",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Junior Chocolate Peanut Butter - Crunchy",
+  "handle": "junior-chocolate-peanut-butter-crunchy",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "510g",
+    "price": "339",
+    "compare_at_price": "339",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345999_1-myfitness-junior-chocolate-peanut-butter-crunchy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345999_1-myfitness-junior-chocolate-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345999-2_1-myfitness-junior-chocolate-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345999-3_1-myfitness-junior-chocolate-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345999-4_1-myfitness-junior-chocolate-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345999-5_1-myfitness-junior-chocolate-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345999-6_1-myfitness-junior-chocolate-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345999-7_1-myfitness-junior-chocolate-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345999-8_1-myfitness-junior-chocolate-peanut-butter-crunchy.jpg"
+   }
+  ],
+  "details": {
+   "description": "Upgrade to the Healthier Chocolate Spread – MyFitness Junior is made with 83% premium roasted peanuts and enriched with calcium, vitamins, and essential minerals, offering a perfect blend of taste and nutrition. Unlike regular chocolate spreads, it provides key nutrients for growing kids while satisfying their sweet cravings.\nRich in Nutrients – Full of protein, calcium, and vital minerals, this spread supports bone strength, energy levels, and healthy growth. Each spoonful contributes to your child’s daily nutrition while making mealtimes more enjoyable.\nParent-Approved Goodness – Free from artificial preservatives, this spread is a safe and delicious choice. It’s a smart way to keep kids happy and parents reassured about their snack choices.\nHealthy and Tasty – With the indulgent taste of chocolate and the benefits of nutritious peanuts, this spread is a family favourite. Kids love the creamy texture, and parents appreciate the support for healthy eating habits.",
+   "manufacturerName": "Super Nutri Foods",
+   "fssaiLicense": "10824999000152",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Junior Chocolate Peanut Butter - Smooth",
+  "handle": "junior-chocolate-peanut-butter-smooth",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "510g",
+    "price": "339",
+    "compare_at_price": "339",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345998_2-myfitness-junior-chocolate-peanut-butter-smooth.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345998_2-myfitness-junior-chocolate-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345998-2_2-myfitness-junior-chocolate-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345998-3_2-myfitness-junior-chocolate-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345998-4_2-myfitness-junior-chocolate-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345998-5_2-myfitness-junior-chocolate-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345998-6_2-myfitness-junior-chocolate-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345998-7_2-myfitness-junior-chocolate-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345998-8_2-myfitness-junior-chocolate-peanut-butter-smooth.jpg"
+   }
+  ],
+  "details": {
+   "description": "Upgrade to the Healthier Chocolate Spread – MyFitness Junior is expertly crafted with 83% premium roasted peanuts and enriched with calcium, vitamins, and essential minerals, offering a delicious yet nourishing alternative to regular chocolate spreads. It delivers the nutrients kids need while satisfying their sweet cravings.\nRich in Nutrients – Packed with protein, calcium, and vital minerals, this spread supports your child’s bone strength, energy levels, and overall development. Every spoonful adds nutrition and enjoyment to their meals.\nParent-Approved Goodness – Made with zero artificial preservatives, this spread is as safe as it is tasty. It’s a wholesome choice parents can trust and kids will love.\nHealthy and Tasty – Blending the indulgent taste of chocolate with the nutritional value of peanuts, this spread is a win for the whole family. Its creamy texture and flavour encourage better snacking habits, without compromising on taste.",
+   "manufacturerName": "Super Nutri Foods",
+   "fssaiLicense": "10824999000152",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Natural Unsweetened Peanut Butter - Crunchy",
+  "handle": "natural-unsweetened-peanut-butter-crunchy",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "510g",
+    "price": "319",
+    "compare_at_price": "319",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345996_1-myfitness-natural-unsweetened-peanut-butter-crunchy.jpg"
+    }
+   },
+   {
+    "title": "1.25kg",
+    "price": "669",
+    "compare_at_price": "669",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216429_4-myfitness-natural-peanut-butter-crunchy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345996_1-myfitness-natural-unsweetened-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345996-2_1-myfitness-natural-unsweetened-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345996-3_1-myfitness-natural-unsweetened-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345996-4_1-myfitness-natural-unsweetened-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345996-5_1-myfitness-natural-unsweetened-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345996-6_1-myfitness-natural-unsweetened-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345996-7_1-myfitness-natural-unsweetened-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345996-8_1-myfitness-natural-unsweetened-peanut-butter-crunchy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Natural Nut Spread – MyFitness Natural Peanut Butter has a rich, nutty taste that is both satiating and delicious. Made with 100% Roasted Peanuts, its flavour is pure and authentic, allowing you to taste the true essence of roasted peanuts. What’s more, it is India’s first natural peanut butter with 95% less oil separation, making it an essential add-on to your wellness regimen.\nEssential Fatty Acids – The mono and polyunsaturated fats found in our Natural Peanut Butter can provide dual benefits for your body. They have been known to reduce LDL (bad) cholesterol levels, lowering the risk of heart disease, while also improving brain function and reducing the risk of cognitive decline.\nPlant-Based Protein – When it comes to plant-based protein, nothing beats the goodness of our peanut butter. With its delicious nutty flavour and high protein content, it is a must-have for anyone who wants to fuel their body with a wholesome, guilt-free snack.\nWhy Should You Choose MyFitness? – As India’s first U.S. FDA-registered nut butter brand, we are committed to bringing you only the best quality products. Our Natural Peanut Butter is carefully crafted with the finest ingredients, ensuring that every jar is packed with immense nutrition. So whether you’re looking for a quick, satisfying snack or a healthy addition to your diet, our spreads have got you covered.",
+   "manufacturerName": "Super Nutri Foods",
+   "fssaiLicense": "10824999000152",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Natural Unsweetened Peanut Butter - Smooth",
+  "handle": "natural-unsweetened-peanut-butter-smooth",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "510g",
+    "price": "319",
+    "compare_at_price": "319",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345997_1-myfitness-natural-unsweetened-peanut-butter-smooth.jpg"
+    }
+   },
+   {
+    "title": "1.25kg",
+    "price": "669",
+    "compare_at_price": "669",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216428_4-myfitness-natural-peanut-butter-smooth.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345997_1-myfitness-natural-unsweetened-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345997-2_1-myfitness-natural-unsweetened-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345997-3_1-myfitness-natural-unsweetened-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345997-4_1-myfitness-natural-unsweetened-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345997-5_1-myfitness-natural-unsweetened-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345997-6_1-myfitness-natural-unsweetened-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345997-7_1-myfitness-natural-unsweetened-peanut-butter-smooth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345997-8_1-myfitness-natural-unsweetened-peanut-butter-smooth.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Natural Nut Spread – MyFitness Natural Peanut Butter has a rich, nutty taste that is both satisfying and delicious. Made with 100% roasted peanuts, its flavour is pure and authentic, capturing the true essence of roasted peanuts. What’s more, it is India’s first natural peanut butter with 95% less oil separation, making it a great addition to your wellness routine.\nEssential Fatty Acids – The mono- and polyunsaturated fats in our natural peanut butter offer dual benefits for your body. They may help reduce LDL (bad) cholesterol levels, lowering the risk of heart disease, while also supporting brain health and helping to reduce the risk of cognitive decline.\nPlant-Based Protein – Our peanut butter is a fantastic source of plant-based protein. With its rich nutty flavour and high protein content, it’s an ideal choice for those seeking a wholesome, guilt-free snack to fuel their body.\nWhy Choose MyFitness? – As India’s first U.S. FDA-registered nut butter brand, MyFitness is committed to delivering high-quality products. Our Natural Peanut Butter is made with carefully selected ingredients to ensure each jar is packed with nutrition. Whether you need a quick, nourishing snack or a healthy dietary addition, our spreads are here for you.",
+   "manufacturerName": "Super Nutri Foods",
+   "fssaiLicense": "10824999000152",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Original Peanut Butter - Crunchy",
+  "handle": "original-peanut-butter-crunchy",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "227g",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40264681_2-myfitness-peanut-butter-original-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+    }
+   },
+   {
+    "title": "510g",
+    "price": "319",
+    "compare_at_price": "319",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216419_5-myfitness-original-peanut-butter-crunchy.jpg"
+    }
+   },
+   {
+    "title": "1.25kg",
+    "price": "609",
+    "compare_at_price": "609",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216424_4-myfitness-original-peanut-butter-crunchy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264681_2-myfitness-peanut-butter-original-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264681-2_2-myfitness-peanut-butter-original-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264681-3_2-myfitness-peanut-butter-original-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264681-4_2-myfitness-peanut-butter-original-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264681-5_2-myfitness-peanut-butter-original-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264681-6_2-myfitness-peanut-butter-original-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264681-7_2-myfitness-peanut-butter-original-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264681-8_2-myfitness-peanut-butter-original-crunchy-rich-in-taste-flavour-creamy-texture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Myfitness Original Peanut Butter brings back the good ol' American peanut butter recipe. Original and delicious! The recipe has been made even more yummy by adding healthy brown sugar and pink Himalayan salt. The extra-silky consistency of the Smooth variant makes it hard to believe that such a flavourful treat is helping people stay fit.",
+   "ingredients": "Roasted peanuts, Sugar, Salt, Stabilizer (INS 471)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "32g",
+    "Energy": "631 kcal",
+    "Protein": "25 g",
+    "Carbohydrates": "23 g",
+    "Sugar": "11 g",
+    "Added Sugar": "10 g",
+    "Dietary Fiber": "9 g",
+    "Total Fats": "49 g",
+    "Saturated Fats": "12 g",
+    "Poly Unsaturated Fats": "14 g",
+    "Mono Unsaturated Fats": "220 g",
+    "Trans Fats": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "141 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place, away from direct sunlight\n*Do not accept if seal is tampered",
+   "manufacturerName": "SuperNutri Foods",
+   "fssaiLicense": "10019023000027",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Original Peanut Butter - Smooth",
+  "handle": "original-peanut-butter-smooth",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "227g",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40264680_2-myfitness-peanut-butter-original-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+    }
+   },
+   {
+    "title": "510g",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216418_4-myfitness-original-peanut-butter-smooth.jpg"
+    }
+   },
+   {
+    "title": "1.25kg",
+    "price": "669",
+    "compare_at_price": "669",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216423_5-myfitness-original-peanut-butter-smooth.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264680_2-myfitness-peanut-butter-original-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264680-2_2-myfitness-peanut-butter-original-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264680-3_2-myfitness-peanut-butter-original-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264680-4_2-myfitness-peanut-butter-original-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264680-5_2-myfitness-peanut-butter-original-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264680-6_2-myfitness-peanut-butter-original-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264680-7_2-myfitness-peanut-butter-original-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264680-8_2-myfitness-peanut-butter-original-smooth-rich-in-taste-flavour-creamy-texture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Who doesn't like an original, right? Myfitness Original Peanut Butter brings back the good ol' American peanut butter recipe. Original and delicious! Why? Because you love it! We've made the recipe still more yummy by adding some healthy brown sugar and pink Himalayan salt to the mix! And remember... the recipe gets even better with the extra-silky consistency of this Smooth variant. It's hard to believe that such a flavourful treat is helping people stay fit, isn't it?",
+   "ingredients": "Roasted Peanuts, Sugar, Salt, Stabilizer (INS 471)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "32g",
+    "Energy": "640kcal",
+    "Protein": "25g",
+    "Carbohydrates": "22g",
+    "Sugar": "7g",
+    "Added Sugar": "6g",
+    "Dietary Fiber": "6g",
+    "Total Fats": "50g",
+    "Saturated Fats": "12g",
+    "Poly Unsaturated Fats": "11g",
+    "Mono Unsaturated Fats": "30g",
+    "Trans Fats": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "224mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place, away from direct sunlight",
+   "manufacturerName": "SuperNutri Foods",
+   "fssaiLicense": "10019023000027",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zero Chocolate Peanut Butter - Extra Crunchy",
+  "handle": "zero-chocolate-peanut-butter-extra-crunchy",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "510g",
+    "price": "369",
+    "compare_at_price": "369",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40375471_1-myfitness-zero-chocolate-peanut-butter-extra-crunchy.jpg"
+    },
+    "barcode": "8904327602935"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375471_1-myfitness-zero-chocolate-peanut-butter-extra-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375471-2_1-myfitness-zero-chocolate-peanut-butter-extra-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375471-3_1-myfitness-zero-chocolate-peanut-butter-extra-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375471-4_1-myfitness-zero-chocolate-peanut-butter-extra-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375471-5_1-myfitness-zero-chocolate-peanut-butter-extra-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375471-6_1-myfitness-zero-chocolate-peanut-butter-extra-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375471-7_1-myfitness-zero-chocolate-peanut-butter-extra-crunchy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "PURE & PREMIUM QUALITY\nAt MyFitness, quality comes first. MyFitness Peanut Butter Classic Zero is crafted using 98% high-quality roasted peanuts, delivering a rich, nutty flavour that stands out. Carefully sourced and roasted to perfection, this peanut butter brings out the natural taste of peanuts, making it one of the best peanut butter choices for everyday consumption.\nZERO ADDED SUGAR\nLooking for a clean and healthy spread? The MyFitness Peanut Butter Classic Zero contains zero added sugar, making it a perfect option for those eating clean or following a keto lifestyle. Enjoy the authentic taste of natural peanut butter without compromising on flavour or texture.\n99% LESS OIL SEPARATION\nDesigned with an advanced formulation, this peanut butter reduces oil separation by up to 99%, ensuring a smooth, ready-to-eat experience. No more stirring—just open the jar and enjoy a consistent, easy-to-spread high protein peanut butter every time.\nEXTRA CRUNCHY TEXTURE\nFor those who love texture, MyFitness Peanut Butter Classic Zero delivers an extra crunchy experience with more peanut bits in every scoop. This nut butter offers the perfect balance of creaminess and crunch, making it more satisfying than regular spreads.\nHIGH PROTEIN FOR DAILY NUTRITION\nPacked with 28g of peanut protein per 100g, this high protein peanut butter supports muscle recovery and daily energy needs. Whether it’s post-workout or part of your routine, this peanut butter protein source helps you stay active and energized.\nZERO TRANS FAT & ZERO CHOLESTEROL\nMade for mindful eating, MyFitness Peanut Butter Classic Zero contains zero trans fats and zero cholesterol, making it a heart-friendly choice. It’s a smart addition to your diet if you’re looking for a balance of taste and nutrition.\nVERSATILE & DELICIOUS\nMore than just a spread, the MyFitness Peanut Butter Classic Zero fits into your lifestyle effortlessly. Spread it on toast, blend it into smoothies, mix it into oats, or enjoy it straight from the jar—just like homemade peanut butter, but more convenient and consistent.\nPERFECT BALANCE OF HEALTH & TASTE\nWith the right mix of protein, fiber, and healthy fats, MyFitness Peanut Butter Classic Zero delivers both nutrition and indulgence. It’s a peanut protein source that lets you enjoy your favourite spread without guilt.\nWHY SHOULD YOU CHOOSE MYFITNESS?\nMyFitness is India’s first U.S. FDA-registered peanut butter brand, and is committed to delivering high-quality MyFitness Peanut Butter. Whether you’re comparing peanut butter price, quality, or nutrition, this is a choice you can trust",
+   "ingredients": "Roasted Peanuts 88%, Dark Chocolate 10%, Maltitol, Salt, Satbilizer INS471",
+   "nutritionalInfo": {
+    "Energy": "665 kcal",
+    "Protein": "27.34 g",
+    "Carbohydrates": "15.65 g",
+    "Dietary Fibre": "13.42 g",
+    "Total Sugar": "2.23 g",
+    "Added Sugar": "<0.50 g",
+    "Total Fat": "55.13 g",
+    "Saturated Fat": "12.19 g",
+    "Poly Unsaturated Fat": "11.26 g",
+    "Mono Unsaturated Fat": "31.68 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "12.60 mg"
+   },
+   "manufacturerName": "\"S.NO 27/3",
+   "fssaiLicense": "10824999000152",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rolled Oats",
+  "handle": "rolled-oats",
+  "vendor": "Myfitness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324689_2-myfitness-rolled-oats.jpg"
+    },
+    "barcode": "8904327600689"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324689_2-myfitness-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324689-2_2-myfitness-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324689-3_2-myfitness-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324689-4_2-myfitness-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324689-5_2-myfitness-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324689-6_2-myfitness-rolled-oats.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "We take great pride in being India's 1st U.S. FDA-registered nut butter brand. Our Rolled Oats are crafted using only the finest ingredients, and are 100% Natural, ensuring a taste that transcends expectations. So if you’re looking for a health-conscious breakfast, our oats should be the ideal pick.\nElevate your mornings with MYFITNESS Rolled Oats. These oats are packed with essential nutrients like protein and fibre. Start your day right with a wholesome breakfast that boosts energy and supports overall well-being. Discover the natural goodness of MYFITNESS Rolled Oats today!",
+   "ingredients": "100% Rolled Oats",
+   "nutritionalInfo": {
+    "Carbohydrates": "66.07 g",
+    "Energy": "427.06 Kcal",
+    "Protein": "10.23 g",
+    "Sodium (as Na)": "65.79 mg",
+    "Total Dietary Fiber": "6.65 g",
+    "Total Fat": "13.54 g",
+    "Total Sugar": "Less than 1.0 g",
+    "Cholesterol": "Not detected",
+    "Added Sugar": "Less than 1.0 g",
+    "Trans Fatty Acid": "Not detected",
+    "Monounsaturated Fatty Acid (MUFA)": "6.46 g",
+    "Polyunsaturated Fatty Acid (PUFA)": "4.69 g",
+    "Saturated Fatty Acid": "2.39 g"
+   },
+   "usageInstructions": "Cooking Instructions:\nStep 1: Add 1/2 cup of MyFitness Rolled Oats to 2 cups of boiling milk.\nStep 2: Boil for about 3-5 minutes on medium flame, while stirring occasionally. \nStep 3: Garnish with your favourite fruits and nuts!",
+   "manufacturerName": "Aussee Oats Pvt Ltd",
+   "fssaiLicense": "10016022004606",
+   "countryOfOrigin": "India"
+  }
+ }
+]
