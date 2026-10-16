@@ -1,0 +1,1312 @@
+[
+ {
+  "title": "Energy Drink - Blue Raspberry",
+  "handle": "energy-drink-blue-raspberry",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333217_2-prime-blue-raspberry-flavour-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333217_2-prime-blue-raspberry-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333217-2_2-prime-blue-raspberry-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333217-3_2-prime-blue-raspberry-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333217-4_2-prime-blue-raspberry-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333217-5_2-prime-blue-raspberry-flavour-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Unleash your potential with Prime Energy Blue Raspberry! Each 330 ml can deliver a powerful 140 mg of caffeine, giving you the energy boost needed to conquer your day. Bursting with the bold, tangy sweetness of blue raspberry, it's the ultimate pick-me-up for athletes, gamers, or anyone with a hectic lifestyle. Designed to energise and refresh, Prime Energy Drink keeps you going strong, no matter the challenge. Elevate your game with Prime Blue Raspberry!",
+   "ingredients": "Carbonated Water, Coconut Water Concentrate, Acid (Citric Acid), Flavouring, Calcium, Potassium, Sodium Citrate, Caffeine, Sweeteners (Sucralose, Acesulfame K), Theanine (Camellia Sinensis), Preservatives (Potassium Sorbate, Sodium Benzoate), Inositol, Taurine, Glücuronolactone, Stabilisers (Gum Arabic (Acacia Gum), Glycerol Esters Of Wood Rosins), Vitamin B6, Vitamin B12",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "330ml",
+    "Energy": "13Kj/3kcal",
+    "Fat": "0g",
+    "Of Which Saturates": "0g",
+    "Carbohydrate": "0.9g",
+    "Of Which Sugars": "0g",
+    "Protein": "0g",
+    "Salt": "0.05g",
+    "Vitamin B6": "0.77mg (55%)",
+    "Vitamin B12": "1.1Ug (43%)",
+    "Caffeine": "42.42mg",
+    "L-Theanine": "22.7mg",
+    "Inositol": "11.36mg",
+    "glucuronolactone": "11.36mg",
+    "Taurine": "11.36mg",
+    "Ri": "Reference Intake Of An Average Adult (8,400 Kj / 2,000 kcal)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Prime Energy UK Ltd",
+   "fssaiLicense": "13314002000649",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Energy Drink - Ice Pop",
+  "handle": "energy-drink-ice-pop",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333212_2-prime-ice-pop-flavour-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333212_2-prime-ice-pop-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333212-2_2-prime-ice-pop-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333212-3_2-prime-ice-pop-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333212-4_2-prime-ice-pop-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333212-5_2-prime-ice-pop-flavour-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a burst of nostalgic flavour with the Prime Ice Pop Energy Drink! This refreshing blend captures the delightful taste of a classic ice pop, delivering a powerful energy boost with 140 mg of caffeine, essential vitamins, and electrolytes. Designed to keep you energised and focused, this guilt-free treat is gluten-free, vegan-friendly, and contains zero sugar, making it the perfect companion for workouts, busy days, or a mid-afternoon pick-me-up. Enjoy the sweet, fruity taste and revitalising effects that will fuel your performance and support your hydration throughout the day.",
+   "ingredients": "Carbonated Water, Coconut Water Concentrate, Acid (Citric Acid), Flavouring, Calcium, Potassium, Sodium Citrate, Caffeine, Sweeteners (Sucralose, Acesulfame K), Theanine (Camellia Sinensis), Preservatives (Potassium Sorbate, Sodium Benzoate), Inositol, Taurine, Glucuronolactone, Stabilisers (Gum Arabic/Acacia Gum, Glycerol Esters Of Wood Rosins), Vitamin B6, Vitamin B12",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml, 330ml",
+    "Serving Size": "330ml",
+    "Energy": "13Kj/3kcal, 42Kj/10kcal",
+    "Fat": "0g",
+    "Of Which Saturates": "0g",
+    "Carbohydrate": "2g, 0.6g",
+    "Of Which Sugars": "0.6g, 0g",
+    "Protein": "0g",
+    "Salt": "0.17g, 0.05g",
+    "Vitamin B6": "0.77mg (55%), 2.6mg (182%)",
+    "Vitamin B12": "1.1Ug (43%), 3.6Ug (144%)",
+    "Caffeine": "140mg, 42.42mg",
+    "L-Theanine": "75mg, 37.5mg",
+    "Inositol": "22.7mg, 11.36mg",
+    "glucuronolactone": "37.5mg, 11.36mg",
+    "Taurine": "37.5mg, 11.36mg",
+    "Ri": "Reference Intake Of An Average Adult (8,400 Kj / 2,000 kcal)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Prime Energy UK Ltd",
+   "fssaiLicense": "13314002000649",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Energy Drink - Lemon Lime",
+  "handle": "energy-drink-lemon-lime",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333215_2-prime-lemon-lime-flavour-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333215_2-prime-lemon-lime-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333215-2_2-prime-lemon-lime-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333215-3_2-prime-lemon-lime-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333215-4_2-prime-lemon-lime-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333215-5_2-prime-lemon-lime-flavour-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rejuvenate with Prime Lemon Lime Energy Drink, a vibrant blend of zesty lemon and lime that delivers a refreshing burst of flavour. Packed with 140 mg of caffeine, this sugar-free, gluten-free, and vegan-friendly beverage provides an energising lift to power your day, whether you're hitting the gym, staying focused at work, or simply in need of a pick-me-up. Infused with essential vitamins, Prime Lemon Lime is the perfect choice for replenishing electrolytes and revitalising your body and mind with its great taste and revitalising properties.",
+   "ingredients": "Carbonated Water, Coconut Water Concentrate, Acid (Citric Acid), Flavouring, Calcium, Potassium, Sodium Citrate, Caffeine, Sweeteners (Sucralose, Acesulfame K), Theanine (Camellia Sinensis), Preservatives (Potassium Sorbate, Sodium Benzoate), Inositol, Taurine, Glucuronolactone, Stabilizers (Gum Arabic (Acacia Gum), Glycerol Esters Of Wood Rosins), Vitamin B6, Vitamin B12.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "330ml",
+    "Energy": "13Kj/3kcal",
+    "Fat": "0g",
+    "Of Which Saturates": "0g",
+    "Carbohydrate": "0.9g",
+    "Of Which Sugars": "0g",
+    "Protein": "0g",
+    "Salt": "0.05g",
+    "Vitamin B6": "0.77mg",
+    "Vitamin B12": "1.1Ug",
+    "Caffeine": "42.42mg",
+    "L-Theanine": "75mg",
+    "Inositol": "11.36mg",
+    "glucuronolactone": "11.36mg",
+    "Taurine": "37.5mg",
+    "Ri": "Reference Intake Of An Average Adult (8,400 Kj/2,000 kcal)"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Prime Energy UK Ltd",
+   "fssaiLicense": "13314002000649",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Energy Drink - Orange Mango",
+  "handle": "energy-drink-orange-mango",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333218_2-prime-orange-mango-flavour-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333218_2-prime-orange-mango-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333218-2_2-prime-orange-mango-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333218-3_2-prime-orange-mango-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333218-4_2-prime-orange-mango-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333218-5_2-prime-orange-mango-flavour-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Fuel your day with the vibrant taste of Prime Orange Mango Flavour Energy Drink! This refreshing blend of zesty orange and luscious mango is crafted to keep you moving, packed with essential electrolytes and a boost of energy. Perfect for workouts, busy days, or whenever you need to recharge, this energising drink offers bold flavour and lasting vitality in every sip. Stay refreshed and stay active - Prime your energy today with this delightful electrolyte-infused beverage.",
+   "ingredients": "Carbonated Water, Coconut Water Concentrate, Acid (Citric Acid), Flavouring, Calcium, Potassium, Sodium Citrate, Caffeine, Sweeteners (Camellia Sinensis, Sucralose, Acesulfame Potassium), Preservatives (Potassium Sorbate, Sodium Benzoate), Theanine, Inositol, Taurine, Glucuronolactone, Stabilisers (Gum Arabic, Glycerol Esters Of Wood Rosins), Vitamin B6, Vitamin B12",
+   "nutritionalInfo": {
+    "Serving Size": "330 ml",
+    "Energy": "42 Kj/10 kcal",
+    "Fat": "0 g",
+    "Of Which Saturates": "0 g",
+    "Carbohydrate": "3 g",
+    "Of Which Sugars": "0 g",
+    "Protein": "0 g",
+    "Salt": "0.17 g",
+    "Vitamin B6": "2.6 mg (182%)",
+    "Vitamin B12": "3.6 ?g (144%)",
+    "Caffeine": "140 mg",
+    "L-Theanine": "75 mg",
+    "Inositol": "37.5 mg",
+    "glucuronolactone": "37.5 mg",
+    "Taurine": "37.5 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Prime Energy UK Ltd",
+   "fssaiLicense": "13314002000649",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Energy Drink - Original",
+  "handle": "energy-drink-original",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333213_1-prime-original-flavour-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333213_1-prime-original-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333213-2_1-prime-original-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333213-3_1-prime-original-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333213-4_1-prime-original-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333213-5_1-prime-original-flavour-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Stay energised and focused with Prime Original Flavour Energy Drink! This crisp and refreshing beverage is packed with 140 mg of caffeine, essential electrolytes, and vital vitamins to fuel your body and mind. Designed to be the perfect companion for workouts, busy schedules, or whenever you need an extra boost, this zero-sugar, gluten-free, and vegan-friendly drink offers a clean, invigorating taste that will leave you feeling revitalised and ready to take on the day. With its blend of energising ingredients and appealing flavour profile, Prime Original Electrolyte Energy Drink is the ideal choice for those seeking a healthy, natural way to stay energised and perform at their best.",
+   "ingredients": "Carbonated Water, Coconut Water From Concentrate, Acid (Citric Acid), Erythritol, Calcium, Potassium, Sodium Citrate, Caffeine, Flavouring, Sweeteners (Sucralose, Acesulfame K), Preservatives (Potassium Sorbate, Sodium Benzoate), Theanine (Camellia Sinensis), Inositol, Glucoronolactone, Taurine, Stabilisers (Gum Acacia, Glycerol Ester Of Wood Rosins), Vitamin B6, Vitamin B12.",
+   "nutritionalInfo": {
+    "Serving Size": "330 ml",
+    "Energy": "32 Kj/8 kcal",
+    "Fat": "0 g",
+    "Of Which Saturates": "0 g",
+    "Carbohydrate": "3.3 g",
+    "Of Which Sugars": "0 g",
+    "Protein": "0 g",
+    "Salt": "0.15 g",
+    "Vitamin B6": "2.6 mg (186%)",
+    "Vitamin B12": "3.6 ?g (144%)",
+    "Caffeine": "140 mg",
+    "L-Theanine": "75 mg",
+    "Inositol": "37.5 mg",
+    "glucuronolactone": "37.5 mg",
+    "Taurine": "37.5 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Prime Energy UK Ltd",
+   "fssaiLicense": "13314002000649",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Energy Drink - Strawberry Watermelon",
+  "handle": "energy-drink-strawberry-watermelon",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333216_2-prime-strawberry-watermelon-flavour-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333216_2-prime-strawberry-watermelon-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333216-2_2-prime-strawberry-watermelon-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333216-3_2-prime-strawberry-watermelon-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333216-4_2-prime-strawberry-watermelon-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333216-5_2-prime-strawberry-watermelon-flavour-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the perfect balance of sweet and refreshing with Prime Strawberry Watermelon Energy Drink! This vibrant blend is packed with 140 mg of caffeine and enriched with essential vitamins to energise your day. Crafted with a delightful combination of strawberry and watermelon flavours, this guilt-free boost is gluten-free and vegan-friendly, ensuring everyone can enjoy its lasting energy and focus. Whether you're pushing through a workout, tackling a busy schedule, or simply recharging, this convenient on-the-go drink is the perfect companion, delivering a refreshing and revitalising experience.",
+   "ingredients": "Carbonated Water, Coconut Water Concentrate, Acid (Citric Acid?), Flavouring, Calcium, Potassium, Sodium Citrate, Caffeine, Sweeteners (Sucralose, Acesulfame K), Theanine (Camellia Sinensis?), Preservatives (Potassium Sorbate, Sodium Benzoate), Inositol, Taurine, Glucuronolactone, Stabilizers (Gum Arabic (Acacia Gum?), Glycerol Esters Of Wood Rosins), Vitamin B6, Vitamin B12.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "330ml",
+    "Energy": "13Kj/3kcal",
+    "Fat": "0g",
+    "Of Which Saturates": "0g",
+    "Carbohydrate": "0.9g",
+    "Of Which Sugars": "0g",
+    "Protein": "0g",
+    "Salt": "0.05g",
+    "Vitamin B6": "0.77mg",
+    "Vitamin B12": "1.1Ug",
+    "Caffeine": "42.42mg",
+    "L-Theanine": "22.7mg",
+    "Inositol": "11.36mg",
+    "glucuronolactone": "11.36mg",
+    "Taurine": "11.36mg",
+    "Ri": "Reference Intake Of An Average Adult (8,400 Kj / 2,000 kcal)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Prime Energy UK Ltd",
+   "fssaiLicense": "13314002000649",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Energy Drink - Tropical Punch",
+  "handle": "energy-drink-tropical-punch",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333214_2-prime-tropical-punch-flavour-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333214_2-prime-tropical-punch-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333214-2_2-prime-tropical-punch-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333214-3_2-prime-tropical-punch-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333214-4_2-prime-tropical-punch-flavour-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333214-5_2-prime-tropical-punch-flavour-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ignite your senses with Prime Tropical Punch Energy Drink! Bursting with exotic fruit flavours, this refreshing beverage is packed with essential vitamins to keep you energised and focused. Delivering a powerful 140 mg of caffeine per 330 ml can, it provides a hydration and energy boost to support your athletic performance. The bold fruit blend offers a delightful taste experience, while the zero-sugar formula allows for guilt-free enjoyment. Gluten-free and suitable for vegans, this is the ultimate tropical escape in a can, perfect for busy days, workouts, or simply recharging your batteries.",
+   "ingredients": "Carbonated Water, Coconut Water Concentrate, Acid (Citric Acid), Flavouring, Calcium, Potassium, Sodium Citrate, Caffeine, Sweeteners (Sucralose, Acesulfame K), Theanine (Camellia Sinensis), Preservatives (Potassium Sorbate, Sodium Benzoate), Inositol, Taurine, Glucuronolactone, Stabilisers (Gum Arabic/Acacia Gum, Glycerol Esters Of Wood Rosins), Vitamin B6, Vitamin B12",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "330ml",
+    "Energy": "13Kj/3kcal",
+    "Fat": "0g",
+    "Of Which Saturates": "0g",
+    "Carbohydrate": "0.9g",
+    "Of Which Sugars": "0g",
+    "Protein": "0g",
+    "Salt": "0.05g",
+    "Vitamin B6": "0.77mg",
+    "Vitamin B12": "1.1Pg",
+    "Caffeine": "42.42mg",
+    "L-Theanine": "22.7mg",
+    "Inositol": "11.36mg",
+    "glucuronolactone": "11.36mg",
+    "Taurine": "37.5mg",
+    "Ri": "Reference Intake Of An Average Adult (8,400 Kj/2,000 kcal)"
+   },
+   "storageInstructions": "* Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Prime Energy UK Ltd",
+   "fssaiLicense": "13314002000649",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Hydration Drink - Blue Raspberry",
+  "handle": "hydration-drink-blue-raspberry",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329410_2-prime-blue-raspberry-hydration.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329410_2-prime-blue-raspberry-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329410-2_2-prime-blue-raspberry-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329410-3_2-prime-blue-raspberry-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329410-4_2-prime-blue-raspberry-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329410-5_2-prime-blue-raspberry-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329410-6_2-prime-blue-raspberry-hydration.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the burst of delectable blue raspberry flavour with Prime Blue Raspberry Hydration. Expertly crafted to keep you refreshed and energised, this drink is infused with 10% coconut water, providing a potent 834mg of electrolytes for optimal hydration. Enriched with B vitamins and antioxidants, it delivers essential nutrients to help you refresh, replenish, and refuel. Caffeine-free and bursting with bold, thirst-quenching taste, it's the perfect boost for any endeavour, ensuring you reach your full potential all day long. Whether you're an athlete or an active individual, Prime Blue Raspberry Hydration is scientifically formulated to quench your thirst and fuel your performance.",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100mL",
+    "Serving Size": "500mL",
+    "Energy": "84 kJ/20 kcal",
+    "Fat": "0g",
+    "Of which saturates": "0g",
+    "Carbohydrate": "5.0g",
+    "Of which sugars": "2.0g",
+    "Protein": "0g",
+    "Salt": "0.02g",
+    "Vitamin A": "900?g (113%)",
+    "Vitamin E": "15mg (125%)",
+    "Vitamin B6": "3.4mg (243%)",
+    "Vitamin B12": "4.8?g (192%)",
+    "Potassium": "700mg (35%)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Prime Hydration UK Ltd",
+   "fssaiLicense": "11312223000158",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Hydration Drink - Ice Pop",
+  "handle": "hydration-drink-ice-pop",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329405_2-prime-ice-pop-hydration.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329405_2-prime-ice-pop-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329405-2_2-prime-ice-pop-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329405-3_2-prime-ice-pop-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329405-4_2-prime-ice-pop-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329405-5_2-prime-ice-pop-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329405-6_2-prime-ice-pop-hydration.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Prime Sport Drink Ice Pop, crafted by Logan Paul, is a 500ml powerhouse designed to keep you at your peak. Loaded with 834 mg of electrolytes and infused with 10% coconut water, this drink ensures optimal hydration without compromising on taste. With zero added sugar and no caffeine, Prime offers a clean, revitalising option for those who demand both flavour and function. Enhanced with B vitamins and antioxidants, it's the perfect companion to refresh, replenish, and refuel your body during any endeavour. Prime fills the gap where great taste meets exceptional performance, making it your go-to choice for an active lifestyle.",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100mL",
+    "Serving Size": "500mL",
+    "Energy": "84kJ/20kcal",
+    "Fat": "0g",
+    "Of which saturates": "0g",
+    "Carbohydrate": "5.0g",
+    "Of which sugars": "2.0g",
+    "Protein": "0g",
+    "Salt": "0.02g",
+    "Vitamin A": "900ug (113%)",
+    "Vitamin E": "15mg (125%)",
+    "Vitamin B6": "15mg (125%)",
+    "Vitamin B12": "4.8ug (192%)",
+    "Potassium": "700mg (35%)"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Prime Hydration UK Ltd",
+   "fssaiLicense": "11312223000158",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Hydration Drink - Lemonade",
+  "handle": "hydration-drink-lemonade",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329408_1-prime-lemonade-hydration.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329408_1-prime-lemonade-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329408-2_1-prime-lemonade-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329408-3_1-prime-lemonade-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329408-4_1-prime-lemonade-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329408-5_1-prime-lemonade-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329408-6_1-prime-lemonade-hydration.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate refreshment with Prime Lemonade Hydration, a nutrient-packed beverage that delivers a burst of bold, thirst-quenching flavour. Infused with 10% coconut water, this lemonade keeps your hydration levels in check while providing a guilt-free energy boost. Loaded with 250 mg of BCAAs, 834 mg of electrolytes, B vitamins, and antioxidants, it's designed to refresh, replenish, and refuel your body, whether you're working out or tackling daily challenges. With zero added sugar and only 20 calories per bottle, it's the perfect balance of taste and function for any endeavour. Enjoy the convenience of the portable PET bottle and stay energised and hydrated throughout the day.",
+   "ingredients": "Water, Citric Acid, Natural Flavours, Preservatives, Sweeteners",
+   "nutritionalInfo": {
+    "Serving Size": "500mL",
+    "Energy": "110 kJ/26 kcal",
+    "Fat": "0g",
+    "Of which saturates": "0g",
+    "Carbohydrate": "5.0g",
+    "Of which sugars": "5.0g",
+    "Protein": "0g",
+    "Salt": "0.02g",
+    "Vitamin A": "900pg (113%RI)",
+    "Vitamin E": "15mg (125%RI)",
+    "Vitamin B6": "3.4mg (243%RI)",
+    "Vitamin B12": "4.8ug (192%RI)",
+    "Potassium": "700mg (35%RI)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Prime Hydration UK Ltd",
+   "fssaiLicense": "11312223000158",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Hydration Drink - Strawberry Watermelon",
+  "handle": "hydration-drink-strawberry-watermelon",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329409_2-prime-strawberry-watermelon-hydration.jpg"
+    },
+    "barcode": "8885021430300"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329409_2-prime-strawberry-watermelon-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329409-2_2-prime-strawberry-watermelon-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329409-3_2-prime-strawberry-watermelon-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329409-4_2-prime-strawberry-watermelon-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329409-5_1-prime-strawberry-watermelon-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329409-6_1-prime-strawberry-watermelon-hydration.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Refresh and recharge with the vibrant blend of strawberry and watermelon in Prime Hydration. This guilt-free hydration drink is packed with essential electrolytes, BCAAs, B vitamins, and antioxidants to keep you energised and hydrated throughout your day. Infused with 10% coconut water, the Strawberry Watermelon flavour delivers a bold, thirst-quenching taste that satisfies without added sugar. Portable and easy to carry, the PET bottle makes Prime the perfect companion for a busy lifestyle, whether you're at the gym, on the go, or simply enjoying a refreshing beverage. With only 20-25 calories per bottle, this caffeine-free drink supports your body's needs, helping you refresh, replenish, and refuel.",
+   "ingredients": "Purified Water, Coconut Water Concentrate, Natural Flavours, Citric Acid, Malic Acid, Sucralose, Acesulfame Potassium, Calcium Lactate, Magnesium Lactate, Potassium Lactate, Sodium Lactate",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100mL",
+    "Serving Size": "500mL",
+    "Energy": "105kJ/25kcal",
+    "Fat": "0g",
+    "Of which saturates": "0g",
+    "Carbohydrate": "6.0g",
+    "Of which sugars": "2.0g",
+    "Protein": "0g",
+    "Salt": "0.02g",
+    "Vitamin A": "900ug",
+    "Vitamin E": "15mg",
+    "Vitamin B6": "3.4mg",
+    "Vitamin B12": "4.8ug"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Prime Hydration UK Ltd",
+   "fssaiLicense": "11312223000158",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Hydration Drink - Tropical Punch",
+  "handle": "hydration-drink-tropical-punch",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329407_2-prime-tropical-punch-hydration.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329407_2-prime-tropical-punch-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329407-2_2-prime-tropical-punch-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329407-3_2-prime-tropical-punch-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329407-4_2-prime-tropical-punch-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329407-5_2-prime-tropical-punch-hydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329407-6_2-prime-tropical-punch-hydration.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a refreshing taste of the tropics with Prime Tropical Punch Hydration. This revitalising beverage is bursting with exotic fruit flavours, crafted to quench your thirst and replenish your body. Infused with 10% coconut water and loaded with 834 mg of electrolytes, it provides optimal hydration without any caffeine. Satisfy your sweet tooth with a smarter sweetener blend that delivers a delightful taste without the sugar crash. Whether you're craving a taste of sunshine or seeking a refreshing pick-me-up, Prime Tropical Punch is the perfect companion for staying hydrated on the go. Enjoy the delicious fusion of juicy mangoes, sweet pineapples, and a hint of tangy citrus for a truly refreshing experience.",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100mL",
+    "Serving Size": "500mL bottle",
+    "Energy": "84 kJ/20 kcal",
+    "Fat": "0g",
+    "Of which saturates": "0g",
+    "Carbohydrate": "5.0g",
+    "Of which sugars": "2.0g",
+    "Protein": "0g",
+    "Salt": "0.02g",
+    "Vitamin A": "900?g (113%)",
+    "Vitamin E": "15mg (125%)",
+    "Vitamin B6": "3.4mg (243%)",
+    "Vitamin B12": "4.8?g (192%)",
+    "Potassium": "700mg (35%)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Prime Hydration UK Ltd",
+   "fssaiLicense": "11312223000158",
+   "countryOfOrigin": "United Kingdom"
+  }
+ },
+ {
+  "title": "Hydration Drink - Goalberry (FC Barcelona)",
+  "handle": "hydration-drink-goalberry-fc-barcelona",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350374_1-prime-fcb-hydration-goalberry-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350374_1-prime-fcb-hydration-goalberry-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350374-2_1-prime-fcb-hydration-goalberry-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350374-3_1-prime-fcb-hydration-goalberry-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350374-4_1-prime-fcb-hydration-goalberry-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350374-5_1-prime-fcb-hydration-goalberry-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Prime Energy Drink offers a refreshing and energising experience without the guilt, thanks to its zero added sugar formula. Designed to deliver a clean energy boost, it’s ideal for powering through your day. Packaged in a convenient 500ml can, it’s perfect for on-the-go lifestyles. The unique Barcelona flavour brings a bold and distinctive taste, making each sip both revitalising and enjoyable. Whether you're working, training, or simply need a pick-me-up, this thirst-quenching beverage is a satisfying choice.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Hydration Drink - Glowberry",
+  "handle": "hydration-drink-glowberry",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350376_1-prime-glowberry-hydration-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350376_1-prime-glowberry-hydration-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350376-2_1-prime-glowberry-hydration-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350376-3_1-prime-glowberry-hydration-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350376-4_1-prime-glowberry-hydration-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350376-5_1-prime-glowberry-hydration-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Glowberry Hydration Drink combines bold flavour with balanced hydration to keep you feeling refreshed. With zero added sugar and only 20 calories, it includes 10% coconut water, BCAAs, B vitamins, antioxidants, and electrolytes. Caffeine-free and full of fruity taste, it's ideal for daily hydration—whether you're active, on the move, or simply looking for a revitalising drink.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Hydration Drink - Berry Freeze",
+  "handle": "hydration-drink-berry-freeze",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350381_1-prime-hydration-berry-freeze-flavour-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350381_1-prime-hydration-berry-freeze-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350381-2_1-prime-hydration-berry-freeze-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350381-3_1-prime-hydration-berry-freeze-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350381-4_1-prime-hydration-berry-freeze-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350381-5_1-prime-hydration-berry-freeze-flavour-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Berry Freeze Flavour Drink offers a refreshing hydration experience with zero added sugar and just 20 calories. Enriched with 10% coconut water, it contains essential BCAAs, B vitamins, antioxidants, and electrolytes to support your body's daily needs. Caffeine-free and flavourful, it's a great choice for staying energised and hydrated throughout the day without any added stimulants.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Hydration Drink - Citrus Kiwiberry",
+  "handle": "hydration-drink-citrus-kiwiberry",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350377_1-prime-hydration-citrus-kiwiberry-flavoured-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350377_1-prime-hydration-citrus-kiwiberry-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350377-2_1-prime-hydration-citrus-kiwiberry-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350377-3_1-prime-hydration-citrus-kiwiberry-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350377-4_1-prime-hydration-citrus-kiwiberry-flavoured-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350377-5_1-prime-hydration-citrus-kiwiberry-flavoured-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Hydration Citrus Kiwiberry Flavoured Drink offers a vibrant blend of citrus and berry notes for a refreshing boost. With zero added sugar and just 20 calories, it features 10% coconut water, BCAAs, B vitamins, antioxidants, and electrolytes. Caffeine-free and packed with flavour, it's perfect for staying hydrated during workouts, busy routines, or any time you need a revitalising drink.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Hydration Drink - Erling Haaland Pink",
+  "handle": "hydration-drink-erling-haaland-pink",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350380_1-prime-hydration-erling-haaland-pink-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350380_1-prime-hydration-erling-haaland-pink-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350380-2_1-prime-hydration-erling-haaland-pink-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350380-3_1-prime-hydration-erling-haaland-pink-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350380-4_1-prime-hydration-erling-haaland-pink-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350380-5_1-prime-hydration-erling-haaland-pink-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Hydration Erling Haaland Pink Drink is crafted to keep you refreshed and energised. With zero added sugar and only 20 calories, it features 10% coconut water blended with BCAAs, B vitamins, antioxidants, and electrolytes. Completely caffeine-free, it's ideal for daily hydration—whether you're training, recovering, or simply on the go. A vibrant and revitalising choice for any active lifestyle.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Hydration Drink - Erling Haaland Yellow",
+  "handle": "hydration-drink-erling-haaland-yellow",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350379_1-prime-hydration-erling-haaland-yello-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350379_1-prime-hydration-erling-haaland-yello-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350379-2_1-prime-hydration-erling-haaland-yello-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350379-3_1-prime-hydration-erling-haaland-yello-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350379-4_1-prime-hydration-erling-haaland-yello-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350379-5_1-prime-hydration-erling-haaland-yello-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Hydration Erling Haaland Yellow Drink is a revitalising beverage designed for everyday performance and recovery. With zero added sugar and just 20 calories, it contains 10% coconut water, BCAAs, B vitamins, antioxidants, and electrolytes to support balanced hydration. Free from caffeine, it’s a refreshing and nourishing choice to keep you going—perfect for active days and workout routines.",
+   "ingredients": "Ingredients: Water, reconstituted powdered coconut water (10%), acid (citric acid), dipotassium phosphate, magnesium citrate, flavour, sweeteners (sucralose, acesulfame K), vitamin E, vitamin B6, vitamin B12.",
+   "nutritionalInfo": {
+    "Energy": "93 kJ / 22 kcal",
+    "Fat": "<0.5 g",
+    "of which saturates": "0 g",
+    "Carbohydrate": "2.0 g",
+    "of which sugars": "2.0 g",
+    "Protein": "0 g",
+    "Salt": "<0.01 g",
+    "Vitamin E": "15 mg (125% NRV)",
+    "Vitamin B6": "3.4 mg (243% NRV)",
+    "Vitamin B12": "4.8 µg (192% NRV)",
+    "Potassium": "700 mg (35% NRV)",
+    "Magnesium": "124 mg (35% NRV)",
+    "Best before end": "See neck of bottle"
+   },
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Hydration Drink - Future Freeze",
+  "handle": "hydration-drink-future-freeze",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350383_1-prime-hydration-future-freeze-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350383_1-prime-hydration-future-freeze-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350383-2_1-prime-hydration-future-freeze-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350383-3_1-prime-hydration-future-freeze-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350383-4_1-prime-hydration-future-freeze-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350383-5_1-prime-hydration-future-freeze-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Prime Hydration Future Freeze offers an invigorating blend designed for optimal hydration and refreshment. With zero added sugar and only 25 calories per serving, it combines 10% coconut water with essential BCAAs, B vitamins, antioxidants, and electrolytes. Caffeine-free, it's ideal for a revitalizing boost anytime. Whether post-workout or during daily activities, it provides a balanced hydration solution that supports your active lifestyle without the crash of caffeine.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Hydration Drink - Strawberry Banana",
+  "handle": "hydration-drink-strawberry-banana",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350378_1-prime-hydration-strawberry-banana-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350378_1-prime-hydration-strawberry-banana-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350378-2_1-prime-hydration-strawberry-banana-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350378-3_1-prime-hydration-strawberry-banana-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350378-4_1-prime-hydration-strawberry-banana-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350378-5_1-prime-hydration-strawberry-banana-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Hydration Strawberry Banana Drink delivers a delicious fusion of fruity flavours with a focus on clean, effective hydration. Made with zero added sugar and just 20 calories, it contains 10% coconut water along with BCAAs, B vitamins, antioxidants, and electrolytes. Caffeine-free, it’s an ideal choice for rehydrating after exercise or staying refreshed throughout the day.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Hydration Drink - X Blue Strawberry Lemonade",
+  "handle": "hydration-drink-x-blue-strawberry-lemonade",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350370_1-prime-x-hydration-blue-strawberry-lemonade-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350370_1-prime-x-hydration-blue-strawberry-lemonade-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350370-2_1-prime-x-hydration-blue-strawberry-lemonade-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350370-3_1-prime-x-hydration-blue-strawberry-lemonade-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350370-4_1-prime-x-hydration-blue-strawberry-lemonade-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350370-5_1-prime-x-hydration-blue-strawberry-lemonade-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "X Hydration Blue Strawberry Lemonade Drink delivers a cool twist on a classic favourite, combining sweet strawberry, tangy lemonade, and a vibrant blue hue for a refreshing sensory experience. With zero added sugar and less calories, it blends coconut water with B complex vitamins, BCAAs, antioxidants, and electrolytes—perfect for nourishing hydration. Caffeine free and bursting with flavour, it’s an ideal pick-me-up for workouts, active days, or anytime you crave a revitalising sip.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Hydration Drink - X Strawberry Lemonade",
+  "handle": "hydration-drink-x-strawberry-lemonade",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350371_1-prime-x-hydration-strawberry-lemonade-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350371_1-prime-x-hydration-strawberry-lemonade-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350371-2_1-prime-x-hydration-strawberry-lemonade-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350371-3_1-prime-x-hydration-strawberry-lemonade-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350371-4_1-prime-x-hydration-strawberry-lemonade-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350371-5_1-prime-x-hydration-strawberry-lemonade-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "X Hydration’s Strawberry Lemonade Drink delivers a crisp, vibrant fusion of sweet strawberries and zesty lemon crafted to refresh and hydrate naturally. With zero added sugar and less calories per serving, it incorporates 10% coconut water alongside essential B complex vitamins, BCAAs, antioxidants, and electrolytes. Caffeine free and flavour-packed, it’s ideal for recharging post workout, tackling busy days, or simply savouring a rejuvenating sip.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Ice Hydration Drink - Blue Chill",
+  "handle": "ice-hydration-drink-blue-chill",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350372_1-prime-ice-hydration-blue-chill-flavour-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350372_1-prime-ice-hydration-blue-chill-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350372-2_1-prime-ice-hydration-blue-chill-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350372-3_1-prime-ice-hydration-blue-chill-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350372-4_1-prime-ice-hydration-blue-chill-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350372-5_1-prime-ice-hydration-blue-chill-flavour-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ice Hydration Blue Chill Flavour Drink offers a revitalising splash of crisp, icy blue flavour in every sip. Crafted with zero added sugar and just 20 calories, it combines coconut water with BCAAs, B vitamins, antioxidants, and electrolytes to support balanced hydration. Free from caffeine, it's an invigorating companion for workouts, daily refreshment, or a cool break in your routine—bringing both sleek taste and nourishing benefits to your hydration ritual.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Ice Hydration Drink - Orange",
+  "handle": "ice-hydration-drink-orange",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350375_1-prime-ice-hydration-orange-flavour-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350375_1-prime-ice-hydration-orange-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350375-2_1-prime-ice-hydration-orange-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350375-3_1-prime-ice-hydration-orange-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350375-4_1-prime-ice-hydration-orange-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350375-5_1-prime-ice-hydration-orange-flavour-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ice Hydration Orange Flavour Drink delivers a crisp, citrusy burst of refreshment with every sip. With zero added sugar and just 20 calories, it contains 10% coconut water, along with BCAAs, B vitamins, antioxidants, and electrolytes. Caffeine-free and packed with essential nutrients, it's the perfect companion for hydration—whether during workouts or throughout your day.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ },
+ {
+  "title": "Ice Hydration Drink - Red Chill",
+  "handle": "ice-hydration-drink-red-chill",
+  "vendor": "PRIME",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350369_1-prime-ice-hydration-red-chill-flavour-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350369_1-prime-ice-hydration-red-chill-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350369-2_1-prime-ice-hydration-red-chill-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350369-3_1-prime-ice-hydration-red-chill-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350369-4_1-prime-ice-hydration-red-chill-flavour-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350369-5_1-prime-ice-hydration-red-chill-flavour-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ice Hydration Red Chill Flavour Drink brings a bold, icy edge to your refreshment routine. With zero added sugar and only 20 calories, it features coconut water complemented by BCAAs, B vitamins, antioxidants, and electrolytes to support optimal hydration and recovery. This caffeine-free beverage delivers a crisp, cooling red chill flavour—perfect for cooling down after workouts, powering through your day, or simply enjoying a revitalising treat.",
+   "fssaiLicense": "11523998000624",
+   "countryOfOrigin": "United Kingdom",
+   "manufacturerName": "Prime Hydration UK Ltd"
+  }
+ }
+]

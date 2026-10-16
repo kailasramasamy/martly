@@ -1,0 +1,214 @@
+{
+  "brand": "PRIME",
+  "manufacturer": "Prime Hydration LLC",
+  "feed": "prime-hydration-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/prime-hydration/logo-72a34caf.png",
+  "themeColor": "#000000",
+  "themeColorSecondary": "#3FA9F5",
+  "namePrefix": "PRIME ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Energy\\ Drink\\ \\-\\ Blue\\ Raspberry$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Drink\\ \\-\\ Ice\\ Pop$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Drink\\ \\-\\ Lemon\\ Lime$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Drink\\ \\-\\ Orange\\ Mango$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Drink\\ \\-\\ Original$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Drink\\ \\-\\ Strawberry\\ Watermelon$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Drink\\ \\-\\ Tropical\\ Punch$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Blue\\ Raspberry$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Ice\\ Pop$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Lemonade$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Strawberry\\ Watermelon$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Tropical\\ Punch$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Goalberry\\ \\(FC\\ Barcelona\\)$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Glowberry$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Berry\\ Freeze$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Citrus\\ Kiwiberry$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Erling\\ Haaland\\ Pink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Erling\\ Haaland\\ Yellow$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Future\\ Freeze$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ Strawberry\\ Banana$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ X\\ Blue\\ Strawberry\\ Lemonade$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Hydration\\ Drink\\ \\-\\ X\\ Strawberry\\ Lemonade$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Ice\\ Hydration\\ Drink\\ \\-\\ Blue\\ Chill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Ice\\ Hydration\\ Drink\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Ice\\ Hydration\\ Drink\\ \\-\\ Red\\ Chill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    }
+  ]
+}
