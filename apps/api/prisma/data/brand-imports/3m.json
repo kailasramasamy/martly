@@ -1,0 +1,46 @@
+{
+  "brand": "3M",
+  "manufacturer": "3M India Limited",
+  "feed": "3m-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/3m/logo-fdfc1aec.png",
+  "themeColor": "#FF0000",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "3M ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Auto\\ Care\\ Microfibre\\ Cloth\\ \\-\\ Yellow$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Car\\ Care\\ Glass\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Glass Cleaner"
+      ]
+    },
+    {
+      "match": "^Double\\ Sided\\ Attachment\\ Tape\\ \\-\\ 4m\\ x\\ 1\\.2cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Double\\ Sided\\ Attachment\\ Tape\\ \\-\\ 4m\\ x\\ 2\\.4cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    }
+  ]
+}
