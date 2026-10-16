@@ -1,0 +1,478 @@
+{
+  "brand": "Wonderland Foods",
+  "manufacturer": "Sun Organic Industries Pvt. Ltd.",
+  "feed": "wonderland-foods-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/wonderland-foods/logo-caf2578c.png",
+  "themeColor": "#4A4A4A",
+  "themeColorSecondary": "#2E7D4F",
+  "namePrefix": "Wonderland ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ajwa\\ Dates\\ \\-\\ Holy\\ Dates\\ From\\ Medina$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Arabian\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Kimia\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Mabroom\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Mazafati\\ Black\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Medjool\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Platinum\\ Brown\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Royal\\ Kalmi\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Zahidi\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Yellow\\ Dry\\ Dates\\ \\(Kharek\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Dates\\ \\&\\ Dry\\ Fruits\\ Delight$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Australian\\ Almonds\\ \\-\\ Naturally\\ Brown\\ Unpolished$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^California\\ Almonds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Raw\\ California\\ Almonds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Mamra\\ Almonds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Raw\\ Cashew\\ Nuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Cashews\\ \\-\\ Roasted\\ \\&\\ Salted$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Lightly\\ Salted\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Garlic\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ \\&\\ Salted\\ Pistachios$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Pistachios (Pista)"
+      ]
+    },
+    {
+      "match": "^Lightly\\ Salted\\ Pistachios$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Pistachios (Pista)"
+      ]
+    },
+    {
+      "match": "^California\\ In\\-Shell\\ Walnuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Walnuts (Akhrot)"
+      ]
+    },
+    {
+      "match": "^Chile\\ Walnut\\ Kernels$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Walnuts (Akhrot)"
+      ]
+    },
+    {
+      "match": "^Walnut\\ Kernels$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Walnuts (Akhrot)"
+      ]
+    },
+    {
+      "match": "^Raisins$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Raisins (Kishmish)"
+      ]
+    },
+    {
+      "match": "^Black\\ Raisins$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Raisins (Kishmish)"
+      ]
+    },
+    {
+      "match": "^Dried\\ Anjeer\\ \\(Figs\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Figs (Anjeer)"
+      ]
+    },
+    {
+      "match": "^Dried\\ Cranberries$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Premium\\ Dried\\ Blueberries$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Berries\\ Mix\\ \\-\\ Cranberries,\\ Strawberries,\\ Black\\ Currant,\\ Blueberries\\ \\&\\ Blackberries$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Pitted\\ Dried\\ Plums\\ \\(Prunes\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Cocktail\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^Nuts\\ Exotica\\ Mix\\ \\-\\ Almonds,\\ Pistachio,\\ Pecan,\\ Hazel,\\ Macadamia\\ \\&\\ Brazil\\ Nuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^Panchmeva\\ Mixed\\ Dry\\ Fruits$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^Platinum\\ Mixed\\ Dry\\ Fruits$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^Chia\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Flax\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Omega\\-3\\ Flax\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Pumpkin\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Pumpkin\\ Seeds\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Sunflower\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Watermelon\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Seeds\\ \\-\\ Pumpkin,\\ Chia,\\ Sunflower,\\ Flax\\ \\&\\ Watermelon$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Phool\\ Makhana$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Seeds\\ \\&\\ Berries\\ Mix$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Trail\\ Mix$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    },
+    {
+      "match": "^Super\\ Food\\ Healthy\\ Mix$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    },
+    {
+      "match": "^Chaat\\ Masala\\ Roasted\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Cheese\\ \\&\\ Chilli\\ Roasted\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Tomato\\ Roasted\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Mint\\ Chatpata\\ Roasted\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ Makhana\\ Roasted\\ In\\ Olive\\ Oil$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Tangy\\ Masala\\ Makhana\\ Roasted\\ In\\ Olive\\ Oil$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Poppy\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Festivities\\ Dry\\ Fruits\\ Gift\\ Box$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Festivities\\ Premium\\ Dry\\ Fruits\\ Collection\\ Gift\\ Box$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    }
+  ]
+}
