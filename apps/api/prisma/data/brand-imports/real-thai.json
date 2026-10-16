@@ -1,0 +1,334 @@
+{
+  "brand": "Real Thai",
+  "manufacturer": "Thaitan Foods International Co., Ltd.",
+  "feed": "real-thai-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/real-thai/logo-a2dd7905.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#F7B500",
+  "namePrefix": "Real Thai ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Green\\ Curry\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Red\\ Curry\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Yellow\\ Curry\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Massaman\\ Curry\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Tom\\ Kha\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Tom\\ Yum\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Paste\\ With\\ Soybean\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Green\\ Curry\\ With\\ Vegetables$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Red\\ Curry\\ With\\ Vegetables$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Milk\\ 17\\-19%\\ Fat$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Coconut Milk & Cream"
+      ]
+    },
+    {
+      "match": "^UHT\\ Coconut\\ Milk$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Coconut Milk & Cream"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Cream$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Coconut Milk & Cream"
+      ]
+    },
+    {
+      "match": "^Glass\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Pad\\ Thai\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Purple\\ Sweet\\ Potato\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Rice\\ Stick\\ \\-\\ 3\\ mm$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Rice\\ Stick\\ \\-\\ 5\\ mm$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Rice\\ Vermicelli$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Rice\\ Paper\\ \\-\\ Round,\\ 16\\ cm$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Rice\\ Paper\\ \\-\\ Round,\\ 22\\ cm$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Rice$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Fish\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Black\\ Bean\\ Wok\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ Wok\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Sweet\\ \\&\\ Sour\\ Tamarind\\ Wok\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Pad\\ Thai\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Satay\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Rice\\ Paper\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Rice\\ Paper\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Spring\\ Roll\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Plum\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Sesame\\ Hot\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Chilli\\ Sauce\\ \\-\\ Glass\\ Bottle$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Sriracha\\ Hot\\ Chilli\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Sriracha\\ Hot\\ Chilli\\ Sauce\\ \\-\\ Glass\\ Bottle$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Sriracha\\ Extra\\ Hot\\ Chilli\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Sriracha\\ Super\\ Extra\\ Hot\\ Chilli\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Sriracha\\ Hot\\ Chilli\\ Garlic\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Sriracha\\ Mayo\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    }
+  ]
+}
