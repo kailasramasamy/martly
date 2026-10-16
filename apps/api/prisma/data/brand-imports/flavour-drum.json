@@ -1,0 +1,430 @@
+{
+  "brand": "Flavour Drum",
+  "manufacturer": "Feyn Foods (OPC) Pvt. Ltd.",
+  "feed": "flavour-drum-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/flavour-drum/logo-eef08d70.png",
+  "themeColor": "#6B3E1F",
+  "themeColorSecondary": "#C9A24A",
+  "namePrefix": "Flavour Drum ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Amchur\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Red\\ Onion\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^White\\ Onion\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Green\\ Chilli\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Cinnamon\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Clove\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Nutmeg\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Pomegranate\\ Seed\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Tamarind\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Tamarind"
+      ]
+    },
+    {
+      "match": "^Bay\\ Leaf\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Coriander\\ Leaf\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Curry\\ Leaf\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Kasuri\\ Methi\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Mint\\ Leaf\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Beetroot\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Carrot\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Spinach\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Oregano\\ Flakes$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Red\\ Chilli\\ Flakes$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Basil\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Celery\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Dill\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Parsley\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Rosemary\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Thyme\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Cajun\\ Spice\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Sumac\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Za'atar\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Chia\\ Seeds\\ Chutney\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Chutney\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Moringa\\ Chutney\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Chutney\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Black\\ Salt\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Black Salt (Kala Namak)"
+      ]
+    },
+    {
+      "match": "^Dry\\ Dates\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    },
+    {
+      "match": "^Icing\\ Sugar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Dark\\ Choco\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Milk\\ Choco\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^White\\ Choco\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Arrowroot\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Corn Flour"
+      ]
+    },
+    {
+      "match": "^Potato\\ Starch$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Corn Flour"
+      ]
+    },
+    {
+      "match": "^Guar\\ Gum\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Soya\\ Lecithin\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Dried\\ Chamomile\\ Flower$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Hibiscus\\ Petals$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Flower\\ Buds$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Rose\\ Petals$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Blue\\ Corn\\ Petals$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Veg\\ Broth\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Soya\\ Chaap\\ in\\ Brine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    }
+  ]
+}
