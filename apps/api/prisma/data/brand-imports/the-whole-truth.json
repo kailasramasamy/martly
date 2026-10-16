@@ -1,0 +1,406 @@
+{
+  "brand": "The Whole Truth",
+  "manufacturer": "Fitshit Health Solutions Pvt. Ltd.",
+  "feed": "the-whole-truth-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/the-whole-truth/logo-55ab94a3.png",
+  "themeColor": "#7A2E4F",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "The Whole Truth ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Coconut\\ Cocoa\\ Protein\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Cocoa\\ Protein\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Double\\ Cocoa\\ Protein\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Cocoa\\ Protein\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Butter\\ Protein\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Cranberry\\ Protein\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Cranberry\\ Raisin\\ Protein\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^All\\ In\\ One\\ Protein\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Mini\\ Protein\\ Bar\\ \\-\\ Coconut\\ Cocoa$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Mini\\ Protein\\ Bar\\ \\-\\ Coffee\\ Cocoa$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Mini\\ Protein\\ Bar\\ \\-\\ Cranberry$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Mini\\ Protein\\ Bar\\ \\-\\ Double\\ Cocoa$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Mini\\ Peanut\\ Butter\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Almond\\ Choco\\ Fudge\\ Energy\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Cranberry\\ Fudge\\ Energy\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Mocha\\ Almond\\ Fudge\\ Energy\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Choco\\ Fudge\\ Energy\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Fig\\ Apricot\\ \\&\\ Orange\\ Vegan\\ Energy\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^5\\ Grain\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Choco\\ Fruit\\ Crunch\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Nuts,\\ Fruits\\ \\&\\ Seeds\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Breakfast\\ Muesli\\ \\-\\ Quinoa\\ Choco\\ Crunch$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^55%\\ Dark\\ Cocoa\\ Bar\\ \\-\\ Sweetened\\ With\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^71%\\ Dark\\ Cocoa\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Almond\\ Raisin\\ Dark\\ Cocoa\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Dark\\ Cocoa\\ Bar\\ \\-\\ Sweetened\\ With\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Orange\\ Dark\\ Cocoa\\ Bar\\ \\-\\ Sweetened\\ With\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Sea\\ Salt\\ Dark\\ Cocoa\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Creamy\\ \\&\\ Milky\\ Smooth\\ Chocolate\\ \\-\\ Sweetened\\ With\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Creamy\\ \\&\\ Crunchy\\ Quinoa\\ Chocolate\\ \\-\\ Sweetened\\ With\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Creamy\\ \\&\\ Crunchy\\ Ragi\\ Chocolate\\ \\-\\ Sweetened\\ With\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Creamy\\ \\&\\ Nutty\\ Hazelnut\\ Chocolate\\ \\-\\ Sweetened\\ With\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Nutty\\ Fruit\\ \\&\\ Nut\\ Chocolate\\ \\-\\ Sweetened\\ With\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Badaam\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Dark\\ Chocolate\\ Creamy\\ Peanut\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Dark\\ Chocolate\\ Crunchy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Date\\ Sweetened\\ Crunchy\\ Peanut\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Sweetened\\ Creamy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Sweetened\\ Crunchy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Unsweetened\\ Creamy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Unsweetened\\ Crunchy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Spread\\ With\\ Real\\ Chocolate$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^Cold\\ Coffee\\ Whey\\ Protein\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Cocoa\\ Protein\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Light\\ Cocoa\\ Pro\\ Whey\\ Protein\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Mango\\ Milkshake\\ Whey\\ Protein\\ Isolate\\ \\+\\ Concentrate\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Shake\\ Whey\\ Protein\\ Isolate\\ \\+\\ Concentrate\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Unflavoured\\ Raw\\ Whey\\ Protein\\ Concentrate\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Unflavoured\\ Raw\\ Whey\\ Protein\\ Isolate\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    }
+  ]
+}
