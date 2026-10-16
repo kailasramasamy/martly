@@ -1,0 +1,1086 @@
+{
+  "brand": "Plum",
+  "manufacturer": "Pureplay Skin Sciences (India) Pvt. Ltd.",
+  "feed": "plum-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/plum/logo-7f1016c1.png",
+  "themeColor": "#6B2A8C",
+  "themeColorSecondary": "#C9A8E0",
+  "namePrefix": "Plum ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^1%\\ Retinol\\ Face\\ Serum\\ With\\ Bakuchiol$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^15%\\ Vitamin\\ C\\ Face\\ Serum\\ With\\ Mandarin$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^10%\\ Niacinamide\\ \\&\\ Rice\\ Water\\ Face\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^5%\\ Niacinamide\\ Face\\ Serum\\ With\\ Rice\\ Water\\ \\&\\ Amino\\ Acid\\ Complex$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^2%\\ Alpha\\ Arbutin\\ \\&\\ Hyaluronic\\ Acid\\ Face\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^2%\\ Hyaluronic\\ Acid\\ Serum\\ With\\ Bulgarian\\ Rose$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ \\&\\ Zinc\\ Complex\\ 3%\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Encapsulated\\ 2%\\ Salicylic\\ Acid\\ Face\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Bright\\ Years\\ Cell\\ Renewal\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Grapeseed\\ \\&\\ Sea\\ Buckthorn\\ Glow\\-Restore\\ Face\\ Oil\\ Blend$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Revitalising\\ Face\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^1\\.5%\\ Vitamin\\ C\\ Toner\\ With\\ Mandarin$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^3%\\ Niacinamide\\ \\&\\ Rice\\ Water\\ Face\\ Toner$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Rice\\ Water\\ \\&\\ 3%\\ Niacinamide\\ Toner\\ With\\ Oat\\ Extract$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Bulgarian\\ Valley\\ Rose\\ Water\\ Toner\\ With\\ Hyaluronic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Chamomile\\ \\&\\ White\\ Tea\\ Calming\\ Antioxidant\\ Toner$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Alcohol\\-Free\\ Toner$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^1%\\ Oat\\ \\&\\ Allantoin\\ Deep\\ Nourish\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^2%\\ Niacinamide\\ \\&\\ Rice\\ Water\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^2%\\ Niacinamide\\ Face\\ Wash\\ For\\ Bright\\ Skin$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Pore\\ Cleansing\\ Face\\ Wash\\ With\\ Glycolic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Pore\\ Cleansing\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Chamomile\\ \\&\\ White\\ Tea\\ Skin\\ Revival\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Hello\\ Aloe\\ Skin\\ Loving\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Hello\\ Aloe\\ Gentle\\ Cleansing\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Saffron\\ \\&\\ Papaya\\ Glow\\ Bright\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Vitamin\\ C\\ \\&\\ Mandarin\\ Foaming\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Salicylic\\ Acid\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^E\\-Luminence\\ Simply\\ Supple\\ Cleansing\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Chamomile\\ \\&\\ White\\ Tea\\ Brighten\\ Up\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Gentle\\ Revival\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Chamomile\\ \\&\\ White\\ Tea\\ Glow\\ Getter\\ Face\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Clear\\ Face\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^1%\\ Oat\\ \\&\\ Allantoin\\ All\\-Day\\ Nourishing\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^1%\\ Resveratrol\\ \\&\\ Vitamin\\ C\\ Youthful\\ Glow\\ Moisturizer$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^2%\\ Niacinamide\\ \\&\\ Rice\\ Water\\ Brightening\\ Gel\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Rice\\ Water\\ \\&\\ 2%\\ Niacinamide\\ Clear\\ Moisture\\ Gel\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^3%\\ Vitamin\\ C\\ Moisturizer\\ With\\ Mandarin$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Mattifying\\ Moisturizer$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^E\\-Luminence\\ Deep\\ Moisturising\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Saffron\\ \\&\\ Kumkumadi\\ Oil\\ Glow\\ Bright\\ Moisturizer$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Salicylic\\ \\&\\ Lactic\\ Acid\\ Skin\\-Smoothing\\ Gel\\ Moisturizer$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Chamomile\\ \\&\\ White\\ Tea\\ SPF\\ 50\\ Sheer\\ Matte\\ Day\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Hello\\ Aloe\\ Just\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Renewed\\ Clarity\\ Night\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^3%\\ Vitamin\\ C,\\ Peptide\\ \\&\\ Caffeine\\ Eye\\ Cream\\ With\\ Mandarin$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Bright\\ Years\\ All\\-Day\\ Defence\\ Cream\\ SPF\\ 45$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Bright\\ Years\\ Under\\-Eye\\ Recovery\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^2%\\ Niacinamide\\ Sunscreen\\ \\&\\ Rice\\ Water\\ SPF\\ 50\\ PA\\+\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Rice\\ Water\\ \\&\\ 2%\\ Niacinamide\\ Hybrid\\ Sunscreen\\ SPF\\ 50\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Cica\\ \\&\\ Hyaluronic\\ Acid\\ Aqua\\-Light\\ Sunscreen\\ SPF\\ 50\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Squalane\\ \\&\\ Vitamin\\ E\\ Dewy\\-Bright\\ Sunscreen\\ SPF\\ 50\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ \\&\\ Peptide\\ Daily\\ Sunscreen\\ Serum\\ \\-\\ Untinted$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ \\&\\ Peptide\\ Sheer\\-Tinted\\ Sunscreen\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Day\\-Light\\ Sunscreen\\ Gel\\ SPF\\ 35\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Candy\\ Melts\\ Vegan\\ Lip\\ Balm\\ \\-\\ Red\\ Velvet\\ Love$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Candy\\ Melts\\ Vegan\\ Lip\\ Balm\\ \\-\\ Strawberry\\ Sorbet$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Hawaiian\\ Rumba\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Vanilla\\ Vibes\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Drivin'\\ Me\\ Cherry\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Oopsie\\ Daisy\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Orchid\\ You\\ Not\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Trippin'\\ Mimosas\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Everythin'\\ Plum\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Boardroom\\ In\\ Bora\\ Bora\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Petals\\ On\\ The\\ Rocks\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Caramel\\ Popcorn\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Feelin'\\ So\\ Rose\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Red\\ Velvet\\ Love\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Creme\\ Caramel\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Shower\\ Cream\\ \\-\\ Coffee\\ Wake\\-A\\-Ccino$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Shower\\ Cream\\ \\-\\ Vanilla\\ Vibes$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Coffee\\ Wake\\-A\\-Ccino\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Vanilla\\ Vibes\\ Sugar\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Drivin'\\ Me\\ Cherry\\ Gel\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Caramel\\ Popcorn\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Coffee\\ Wake\\-A\\-Ccino\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Lemme\\ Lemon\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Trippin'\\ Mimosas\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Vanilla\\ Vibes\\ Body\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Drivin'\\ Me\\ Cherry\\ Body\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Feelin'\\ So\\ Rose\\ Body\\ Yogurt$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Drivin'\\ Me\\ Cherry\\ Smoothie\\ Creme\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Hawaiian\\ Rumba\\ Colada\\ Gel\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Hawaiian\\ Rumba\\ Body\\ Lotion\\ SPF\\ 44\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Caramello\\ Body\\ Lotion\\ With\\ Cocoa\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Vanilla\\ Vibes\\ Body\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Hawaiian\\ Rumba\\ Body\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Coffee\\ Wake\\-A\\-Ccino\\ Hand\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Coffee\\ Wake\\-A\\-Ccino\\ Foot\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Hawaiian\\ Rumba\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Vanilla\\ Vibes\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Hawaiian\\ Rumba\\ De\\-odorizing\\ Pit\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Hawaiian\\ Rumba\\ Perfumed\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Vanilla\\ Vibes\\ Perfumed\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Hawaiian\\ Rumba\\ Body\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Vanilla\\ Vibes\\ Body\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Trippin'\\ Mimosas\\ Body\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Feelin'\\ So\\ Rose\\ Body\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Orchid\\ You\\ Not\\ Body\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Everythin'\\ Plum\\ Body\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Smokin'\\ Vanilla\\ Body\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Boardroom\\ In\\ Bora\\ Bora\\ Body\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Petals\\ On\\ The\\ Rocks\\ Body\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Hawaiian\\ Rumba\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Vanilla\\ Vibes\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Orchid\\ You\\ Not\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Trippin'\\ Mimosas\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^BodyLovin'\\ Everythin'\\ Plum\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Avocado\\ \\&\\ Argan\\ Frizz\\ Control\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Avocado\\ \\&\\ Argan\\ Frizz\\ Control\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Avocado\\ Frizz\\-Control\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Avocado\\ Nourish\\-Up\\ Hair\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Avocado\\ \\&\\ Argan\\ Curl\\ Boosting\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Avocado\\ \\&\\ Argan\\ High\\-Definition\\ Curl\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Milk\\ \\&\\ Peptides\\ Strength\\ \\&\\ Shine\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Milk\\ \\&\\ Peptides\\ Strength\\ \\&\\ Shine\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Milk\\ \\&\\ Peptides\\ Strength\\ \\&\\ Shine\\ Hair\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Coconut\\ \\&\\ Squalane\\ Nutri\\-Shine\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Hibiscus\\ \\&\\ Ceramides\\ Long\\ \\&\\ Healthy\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hibiscus\\ \\&\\ Ceramides\\ Long\\ \\&\\ Healthy\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Hibiscus\\ \\&\\ Ceramides\\ Smoothing\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Olive\\ \\&\\ Plant\\ Keratin\\ Damage\\ Repair\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Olive\\ \\&\\ Plant\\ Keratin\\ Damage\\ Repair\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Olive\\ \\&\\ Macadamia\\ Mega\\ Moisturizing\\ Hair\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Onion\\ \\&\\ Biotin\\ Hair\\ Fall\\ Control\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Onion\\ Bhringraj\\ Hair\\ Growth\\ Oil\\ With\\ Curry\\ Leaf$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Nutri\\-Shield\\ Pre\\-Shampoo\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Moroccan\\ Argan\\ Oil\\ Miracle\\ Oil\\-Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Ginseng\\ Fall\\ Rescue\\ Scalp\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Tea\\ Tree\\ Dandruff\\ Control\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Volcanic\\ Minerals\\ \\&\\ 0\\.5%\\ Salicylic\\ Acid\\ Anti\\-Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Tea\\ Tree\\ Dandruff\\ Fighting\\ Scalp\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    },
+    {
+      "match": "^Tea\\ Tree\\ Buildup\\ Control\\ Scalp\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    }
+  ]
+}
