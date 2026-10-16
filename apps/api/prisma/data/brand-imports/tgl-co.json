@@ -1,0 +1,342 @@
+{
+  "brand": "TGL Co.",
+  "manufacturer": "Panella Foods and Beverages Private Limited",
+  "feed": "tgl-co-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tgl-co/logo-0019c867.png",
+  "themeColor": "#D9A23A",
+  "themeColorSecondary": "#1F5C55",
+  "namePrefix": "TGL Co. ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Darjeeling\\ Black\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Darjeeling\\ Black\\ Tea\\ \\-\\ Loose\\ Leaf$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Imperial\\ Earl\\ Grey\\ Black\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Imperial\\ Earl\\ Grey\\ Black\\ Tea\\ \\-\\ Loose\\ Leaf$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Earl\\ Grey\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^English\\ Breakfast\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^English\\ Breakfast\\ Black\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Cardamom\\ Black\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Bombay\\ Cutting\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Kadak\\ Masala\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Kadak\\ Masala\\ Chai\\ \\-\\ Loose\\ Leaf$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Kadak\\ Masala\\ Chai\\ \\(Luxury\\)$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Masala\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Kadak\\ Masala\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Kashmiri\\ Saffron\\ Kahwa\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Kashmiri\\ Saffron\\ Kahwa\\ Tea\\ \\-\\ Loose\\ Leaf$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Kashmiri\\ Saffron\\ Kahwa\\ Luxury\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Slim\\ Line\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Slim\\ Line\\ Green\\ Tea\\ \\-\\ Loose\\ Leaf$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Slim\\ Line\\ Luxury\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Detox\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Little\\ Buddha\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Mogo\\ Mogo\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Japanese\\ Luxury\\ Matcha$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Chamomile\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Chamomile\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Dreams\\ Chamomile\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Dreams\\ Chamomile\\ Tea\\ \\-\\ Loose\\ Leaf$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Dreams\\ Luxury\\ Tisane\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Immune\\ Warrior\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Immune\\ Warrior\\ Tea\\ \\-\\ Loose\\ Leaf$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Miracle\\ Mint\\ Herbal\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Blue\\ Butterfly\\ Pea\\ Flower\\ Infusion$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Breakfast\\ Fusion\\ Ground\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Ground Coffee Beans"
+      ]
+    },
+    {
+      "match": "^Signature\\ Filter\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Euphoria\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Morning\\ Motivation\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Decaf\\ Instant\\ Coffee\\ \\-\\ Robusta$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Instant\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    }
+  ]
+}
