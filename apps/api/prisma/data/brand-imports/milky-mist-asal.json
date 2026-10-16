@@ -1,0 +1,54 @@
+{
+  "brand": "Milky Mist",
+  "manufacturer": "Asal Food Products Private Limited",
+  "feed": "milky-mist-asal-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/milky-mist/logo-5a4d675a.png",
+  "themeColor": "#09234D",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Milky Mist ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Asal\\ Idly\\ \\&\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Asal\\ Half\\ Cooked\\ Wheat\\ Chapathi$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Asal\\ Half\\ Cooked\\ Malabar\\ Parota$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Asal\\ Whole\\ Wheat\\ Parota$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Asal\\ Half\\ Cooked\\ Coin\\ Parota$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    }
+  ]
+}
