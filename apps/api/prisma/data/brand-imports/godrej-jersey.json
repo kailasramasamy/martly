@@ -1,0 +1,238 @@
+{
+  "brand": "Godrej Jersey",
+  "manufacturer": "Creamline Dairy Products Limited",
+  "feed": "godrej-jersey-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/godrej-jersey/logo-3c24a0dc.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#0072BC",
+  "namePrefix": "Godrej Jersey ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cow\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Toned\\ Milk\\ \\-\\ 14g\\ Protein$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Rich\\ Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Enrich\\-D\\ Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Full\\ Cream\\ Milk\\ \\-\\ 14g\\ Protein$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Curd\\ Pouch$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Thick\\ Curd\\ Pouch$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Rich\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Fruit\\ Yoghurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Fruit\\ Yoghurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Mango\\ Fruit\\ Yoghurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Super\\ Soft\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Cooking\\ Butter$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Cow\\ Ghee\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Buffalo\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Buffalo Ghee"
+      ]
+    },
+    {
+      "match": "^Buffalo\\ Ghee\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Buffalo Ghee"
+      ]
+    },
+    {
+      "match": "^Badam\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Badam\\ Milk\\ \\-\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Pista\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Rose\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Thick\\ Shake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Doodh\\ Peda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    }
+  ]
+}

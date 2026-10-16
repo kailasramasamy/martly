@@ -1,0 +1,1714 @@
+[
+ {
+  "title": "Cow Milk",
+  "handle": "cow-milk",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005824_6-godrej-jersey-cow-milk.jpg"
+    },
+    "barcode": "8906016410166"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005824_6-godrej-jersey-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005824-2_5-godrej-jersey-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005824-3_5-godrej-jersey-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005824-4_5-godrej-jersey-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005824-5_5-godrej-jersey-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005824-6_2-godrej-jersey-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005824-7_2-godrej-jersey-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005824-8_2-godrej-jersey-cow-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milk is considered as one of the most nutritious drink. Rich with health benefits, it is a powerhouse of nutrition and has all the vitamins, minerals, calcium to keep you healthy. One cup of milk a day keeps you healthy and protects your body from many ailments.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Creamline Dairy Products Ltd"
+  }
+ },
+ {
+  "title": "Toned Milk - 14g Protein",
+  "handle": "toned-milk-14g-protein",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185392_7-godrej-jersey-homogenised-fresh-toned-milk.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "64",
+    "compare_at_price": "64",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40233228_2-godrej-jersey-toned-milk-rich-in-nutrition-homogenised-fresh-pasteurised.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185392_7-godrej-jersey-homogenised-fresh-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185392-2_7-godrej-jersey-homogenised-fresh-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185392-3_7-godrej-jersey-homogenised-fresh-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185392-4_7-godrej-jersey-homogenised-fresh-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185392-5_7-godrej-jersey-homogenised-fresh-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185392-6_3-godrej-jersey-homogenised-fresh-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185392-7_3-godrej-jersey-homogenised-fresh-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233228_2-godrej-jersey-toned-milk-rich-in-nutrition-homogenised-fresh-pasteurised.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Jersey Homogenised Fresh Toned Milk is fresh and pure toned milk, carefully processed to deliver a smooth and consistent texture. Made from quality milk, it is a convenient everyday choice for tea, coffee, breakfast cereals, desserts and cooking. With 3.0 g of protein per 100 ml, it provides a source of protein as part of a balanced diet. The milk contains no added sugar and is fortified with Vitamins A and D2. It has 3.0% fat and 8.5% SNF, offering a balanced combination of taste and nutrition for everyday consumption. The product contains milk and is suitable for a variety of daily uses.",
+   "ingredients": "Milk Solids, Vitamin A (Retinyl Palmitate), Vitamin D2 (Ergocalciferol)\nContains: 3.0% Fat Minimum, 8.5% SNF Minimum",
+   "nutritionalInfo": {
+    "Energy": "58.6 kcal",
+    "Protein": "3.0 g",
+    "Carbohydrate": "4.9 g",
+    "Total Sugars": "4.9 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "3.0 g",
+    "Saturated Fat": "2.3 g",
+    "Trans Fat": "Below 0.05 g",
+    "Cholesterol": "7.7 mg",
+    "Sodium": "49.5 mg",
+    "Added Vitamin A": "36 µg RE",
+    "Added Vitamin D2": "0.65 µg",
+    "Food Allergen": "Contains Milk."
+   },
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "fssaiLicense": "10014047000274",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rich Toned Milk",
+  "handle": "rich-toned-milk",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40147594_6-godrej-jersey-rich-toned-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147594_6-godrej-jersey-rich-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147594-2_5-godrej-jersey-rich-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147594-3_5-godrej-jersey-rich-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147594-4_5-godrej-jersey-rich-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147594-5_5-godrej-jersey-rich-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147594-6_2-godrej-jersey-rich-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147594-7_2-godrej-jersey-rich-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147594-8_1-godrej-jersey-rich-toned-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "About the Product\nFresh, safe, tasty and hygienic product that has all nutritious goodness of Milk. Since time immemorial, Milk is known as a power-packed drink that has all the nutrients for a healthy living. Today, Milk is the most important item of the human diet and is regarded as the elixir of life. It is a powerhouse of nutrition and has all the vitamins, minerals, calcium to keep you healthy.",
+   "ingredients": "Milk & Milk Solids, Fat 3.0%, SNF: 8.5%",
+   "usageInstructions": "Drink the milk, prepare Dahi. Use it to make beverages like tea and coffee.",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Enrich-D Toned Milk",
+  "handle": "enrich-d-toned-milk",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003893_7-godrej-jersey-enrich-d-toned-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003893_7-godrej-jersey-enrich-d-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003893-2_6-godrej-jersey-enrich-d-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003893-3_6-godrej-jersey-enrich-d-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003893-4_6-godrej-jersey-enrich-d-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003893-5_6-godrej-jersey-enrich-d-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003893-6_2-godrej-jersey-enrich-d-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003893-7_2-godrej-jersey-enrich-d-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003893-8_2-godrej-jersey-enrich-d-toned-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jersey enriched toned milk contains rich proteins compared with usual toned milk. It has vitamin A and D. It is nutritious and delicious, with a low-fat content. It generally delivers pre-formed vitamin A and riboflavin and other members of the B2 complex.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "61.2kcal",
+    "Protein": "3.0g",
+    "Carbohydrate": "5.1g",
+    "Fat": "3.2g",
+    "Added Vitamin A": "27?g RE",
+    "Added Vitamin D2": "0.5?g"
+   },
+   "storageInstructions": "*Store under refrigeration at less than 5°C",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Creamline Dairy Products Ltd"
+  }
+ },
+ {
+  "title": "Full Cream Milk - 14g Protein",
+  "handle": "full-cream-milk-14g-protein",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40147595_7-godrej-jersey-rich-full-cream-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147595_7-godrej-jersey-rich-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147595-2_6-godrej-jersey-rich-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147595-3_6-godrej-jersey-rich-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147595-4_6-godrej-jersey-rich-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147595-5_6-godrej-jersey-rich-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147595-6_3-godrej-jersey-rich-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147595-7_3-godrej-jersey-rich-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147595-8_3-godrej-jersey-rich-full-cream-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Fresh, safe, tasty and hygienic product that has all the nutritious goodness of milk. Since time immemorial, milk has been known as a power-packed drink that has all the nutrients for healthy living. Today, milk is the most important item of the human diet and is regarded as the elixir of life. It is a powerhouse of nutrition and has all the vitamins, minerals and calcium to keep you healthy.",
+   "ingredients": "Milk Solids, Vitamin A (Retinyl Palmitate), Vitamin\nD2 (Ergocalciferol) Contains: 6.0% Fat Minimum, 9.0% SNF Minimum",
+   "usageInstructions": "Drink the milk, prepare Dahi.\nUse it to make beverages like tea and coffee.",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Curd",
+  "handle": "curd",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003873_5-godrej-jersey-toned-milk-curd.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003874_5-godrej-jersey-toned-milk-curd.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053502_6-godrej-jersey-curd.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003873_5-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003873-2_6-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003873-3_6-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003873-4_6-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003873-5_6-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003873-6_3-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003873-7_2-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003873-8_1-godrej-jersey-toned-milk-curd.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste and nutritious goodness of Jersey Toned Milk Curd. Crafted with care from pure cow's milk, this hygienic and safe product is free from any preservatives, making it a rich source of protein and calcium. With its live cultures, Jersey Toned Milk Curd offers the natural benefits of toned milk, helping to soothe indigestion and providing a fresh, tasty experience. Enjoy the creamy texture and all the wholesome nourishment of milk in every spoonful of this versatile curd.",
+   "ingredients": "Toned Milk.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "59.4kcal",
+    "Protein": "3.0g",
+    "Carbohydrate": "5.1g",
+    "Fat": "3.0g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Creamline Dairy Products Ltd"
+  }
+ },
+ {
+  "title": "Curd Pouch",
+  "handle": "curd-pouch",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160g",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128012_9-godrej-jersey-curd.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128012_9-godrej-jersey-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128012-2_7-godrej-jersey-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128012-3_7-godrej-jersey-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128012-4_7-godrej-jersey-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128012-5_4-godrej-jersey-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128012-6_1-godrej-jersey-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128012-7_1-godrej-jersey-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128012-8_1-godrej-jersey-curd.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delectable goodness of Godrej Jersey Curd, a rich and thick delight that's brimming with the wholesome flavour of home-made curd. This fresh, safe, and hygienic product is a true treasure trove of nutrition, boasting a high concentration of protein and calcium to nourish your body. Crafted with care, the Jersey Curd offers a unique and satisfying texture that sets it apart, while its higher fat content provides an added boost of energy and variety to your daily diet. Whether you enjoy it on its own or incorporate it into your favourite dishes, this curd is sure to become a staple in your kitchen, delivering a taste of authentic Indian culinary tradition with every spoonful.",
+   "ingredients": "Pasteurized Homogensied Toned milk, milk solids & Active ingredients Fat-3.0",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "59.4kcal",
+    "Protein": "3.0g",
+    "Carbohydrate": "5.1g",
+    "Fat": "3.0g"
+   },
+   "storageInstructions": "*Store under refrigeration at less than 5°C",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 4
+  }
+ },
+ {
+  "title": "Thick Curd Pouch",
+  "handle": "thick-curd-pouch",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "480g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003875_6-godrej-jersey-toned-milk-curd.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003875_6-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003875-2_6-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003875-3_6-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003875-4_6-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003875-5_6-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003875-6_3-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003875-7_3-godrej-jersey-toned-milk-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003875-8_3-godrej-jersey-toned-milk-curd.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jersey Curd is delicious and thick, providing all the goodness of home-made curd. It is a rich source of protein and calcium. This fresh, safe, tasty, and hygienic product contains all the nutritious goodness of milk. It is super tasty and healthy, but it is higher in fat.",
+   "ingredients": "Homogenized Pasteurized Toned Milk, Milk solids & Active Culture",
+   "nutritionalInfo": {
+    "Energy": "60.6 kcal",
+    "Protein": "3.2 g",
+    "Carbohydrate": "5.2 g",
+    "Total Sugars": "5.2 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "3.0 g",
+    "Saturated Fat": "2.4 g",
+    "Trans Fat": "Below 0.05 g",
+    "Cholesterol": "6.4 mg",
+    "Sodium": "32.5 mg",
+    "Food Allergen": "Contains Milk."
+   },
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "fssaiLicense": "10014047000274",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 4
+  }
+ },
+ {
+  "title": "Rich Curd",
+  "handle": "rich-curd",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003872_4-godrej-jersey-standard-curd.jpg"
+    },
+    "barcode": "8906016411200"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003872_4-godrej-jersey-standard-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003872-2_4-godrej-jersey-standard-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003872-3_4-godrej-jersey-standard-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003872-4_4-godrej-jersey-standard-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003872-5_2-godrej-jersey-standard-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003872-6_1-godrej-jersey-standard-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003872-7_1-godrej-jersey-standard-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003872-8_1-godrej-jersey-standard-curd.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jersey Standard Curd is prepared with best quality milk under the influence of lactic acid bacteria at around 40 degrees Celsius. It is delicious and thick and gives you all the goodness of household curd.",
+   "ingredients": "Standardized Milk.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "72.9kcal",
+    "Protein": "3.0g",
+    "Carbohydrate": "5.1g",
+    "Fat": "4.5g"
+   },
+   "storageInstructions": "*Store under refrigeration less than 5°C",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Creamline Dairy Products Ltd"
+  }
+ },
+ {
+  "title": "Blueberry Fruit Yoghurt",
+  "handle": "blueberry-fruit-yoghurt",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128016_4-godrej-jersey-yoghurt-blueberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128016_4-godrej-jersey-yoghurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128016-2_2-godrej-jersey-yoghurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128016-3_2-godrej-jersey-yoghurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128016-4_2-godrej-jersey-yoghurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128016-5_2-godrej-jersey-yoghurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128016-6_2-godrej-jersey-yoghurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128016-7_2-godrej-jersey-yoghurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128016-8_2-godrej-jersey-yoghurt-blueberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of Godrej Jersey Blueberry Flavour Yogurt, a thick and creamy treat that will transport you to a moment of pure bliss. This velvety yogurt boasts a fresh, tangy flavour that perfectly balances sweetness and tanginess, thanks to the addition of real blueberry goodness. Whether you enjoy it as a refreshing snack or incorporate it into your favourite recipes for added creaminess, this guilt-free delight is a rich source of antioxidants, making it a nutritious choice for any time of the day. With its convenient and easy-to-use format, Godrej Jersey Blueberry Flavour Yogurt is the perfect companion for your on-the-go lifestyle, offering a delicious and satisfying snacking experience.",
+   "ingredients": "Milk Solids, Sugar, Blueberry Fruit Compound- 4.23%(Sugar, Water, Blueberry Fruit Concentrate, Apple Juice Concentrate, Citric Acid(INS 330), Potassium Sorbate(INS 202), Carmoisine(INS 122)), Active Culture And Stabilizer (INS 440). Contains Permitted Synthetic Food Colour (INS 133) And Added Flavour (Blueberry).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "113.4kcal",
+    "Protein": "3.5g",
+    "Carbohydrate": "19.0g",
+    "Added Sugar": "12.0g",
+    "Fat": "2.6g"
+   },
+   "storageInstructions": "*Refrigerate after opening",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Strawberry Fruit Yoghurt",
+  "handle": "strawberry-fruit-yoghurt",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241814_1-godrej-jersey-fruit-yoghurt-strawberry-flavour-rich-in-protein-antioxidants.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241814_1-godrej-jersey-fruit-yoghurt-strawberry-flavour-rich-in-protein-antioxidants.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241814-2_1-godrej-jersey-fruit-yoghurt-strawberry-flavour-rich-in-protein-antioxidants.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241814-3_1-godrej-jersey-fruit-yoghurt-strawberry-flavour-rich-in-protein-antioxidants.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241814-4_1-godrej-jersey-fruit-yoghurt-strawberry-flavour-rich-in-protein-antioxidants.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241814-5_1-godrej-jersey-fruit-yoghurt-strawberry-flavour-rich-in-protein-antioxidants.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241814-6_1-godrej-jersey-fruit-yoghurt-strawberry-flavour-rich-in-protein-antioxidants.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241814-7_1-godrej-jersey-fruit-yoghurt-strawberry-flavour-rich-in-protein-antioxidants.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241814-8_1-godrej-jersey-fruit-yoghurt-strawberry-flavour-rich-in-protein-antioxidants.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Jersey Strawberry Flavour Yogurt tastes delicious and makes sure you enjoy every moment of it. A thick, creamy yoghurt with a delectable taste. The fruit yoghurt is perfect for a break from anything. A rich source of antioxidants that is perfect for breakfast, lunch, late noon and snack. It is guilt-free and is available in different exotic flavours.",
+   "ingredients": "Milk Solids, Sugar, Strawberry Fruit Compound- 4.23%(Sugar, Water, Strawberry Fruit Concentrate, Citric Acid(INS 330), Potassium Sorbate(INS 202), Pectin (INS 440), Carmoisine(INS 122)), Active Culture And Stabilizer (INS 440). Contains Added Flavour- Nature Identical Flavouring Substance (Strawberry).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "113.4kcal",
+    "Protein": "3.5g",
+    "Carbohydrate": "19.0g",
+    "Added Sugar": "12.0g",
+    "Fat": "2.6g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Mango Fruit Yoghurt",
+  "handle": "mango-fruit-yoghurt",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128014_3-godrej-jersey-yoghurt-mango.jpg"
+    },
+    "barcode": "8906016413778"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128014_3-godrej-jersey-yoghurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128014-2_1-godrej-jersey-yoghurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128014-3_1-godrej-jersey-yoghurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128014-4_1-godrej-jersey-yoghurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128014-5_1-godrej-jersey-yoghurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128014-6_1-godrej-jersey-yoghurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128014-7_1-godrej-jersey-yoghurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128014-8_1-godrej-jersey-yoghurt-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Jersey Mango Flavour Yogurt tastes delicious and makes sure you enjoy every moment of it. A thick and creamy yoghurt with a delectable taste. The fruit yoghurt is perfect for a break from anything. A rich source of antioxidants that is perfect for breakfast, lunch, late noon and snack. It is guilt-free and is available in different exotic flavours.",
+   "ingredients": "Milk Solids, Sugar, Mango Pulp (4.15%), Active Culture, Stabilizer (INS 440). Contains Permitted Synthetic Food Colour(INS 102, INS 110) And Added Flavour (Mango).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "112.1kcal",
+    "Protein": "3.4g",
+    "Carbohydrate": "19.0g",
+    "Added Sugar": "12.5g",
+    "Fat": "2.5g"
+   },
+   "storageInstructions": "*Refrigerate after opening",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Paneer",
+  "handle": "paneer",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241613_1-godrej-jersey-paneer-tasty-healthy-rich-in-protein.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241613_1-godrej-jersey-paneer-tasty-healthy-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241613-2_1-godrej-jersey-paneer-tasty-healthy-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241613-3_1-godrej-jersey-paneer-tasty-healthy-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241613-4_1-godrej-jersey-paneer-tasty-healthy-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241613-5_1-godrej-jersey-paneer-tasty-healthy-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241613-6_1-godrej-jersey-paneer-tasty-healthy-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241613-7_1-godrej-jersey-paneer-tasty-healthy-rich-in-protein.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Fresh paneer (cottage cheese) from Godrej Jersey, made from milk. A versatile ingredient for curries, tikkas, bhurji and snacks. Keep refrigerated.",
+   "manufacturerName": "Creamline Dairy Products Ltd"
+  }
+ },
+ {
+  "title": "Super Soft Paneer",
+  "handle": "super-soft-paneer",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "114",
+    "compare_at_price": "114",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003878_10-godrej-jersey-paneer.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003879_8-godrej-jersey-paneer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003878_10-godrej-jersey-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003878-2_2-godrej-jersey-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003878-3_2-godrej-jersey-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003878-4_2-godrej-jersey-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003878-5_2-godrej-jersey-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003879_8-godrej-jersey-paneer.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Jersey Paneer is super soft, creamy and made to retain its texture without crumbling easily. Crafted using fresh and high-quality milk, it delivers a rich, smooth texture that makes it ideal for a variety of everyday dishes. Naturally rich in protein and calcium, this paneer is a nutritious addition to meals and can be used in curries, gravies, snacks, salads or enjoyed on its own. Made without preservatives and free from added chemicals, it offers a wholesome choice for your family. Its soft, creamy texture and quality ingredients make Godrej Jersey Paneer a versatile and delicious addition to everyday cooking and special meals alike.",
+   "nutritionalInfo": {
+    "Energy": "294.0 kcal",
+    "Protein": "18.0 g",
+    "Carbohydrate": "4.2 g",
+    "Total Sugar": "4.2 g",
+    "Added Sugar": "0.0 g",
+    "Total Fat": "22.8 g",
+    "Saturated Fat": "14.6 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "14.0 mg",
+    "Sodium": "24.3 mg",
+    "Calcium": "440 mg"
+   },
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cooking Butter",
+  "handle": "cooking-butter",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003876_3-godrej-jersey-cooking-butter.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "255",
+    "compare_at_price": "255",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003877_3-godrej-jersey-cooking-butter.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003876_3-godrej-jersey-cooking-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003876-2_3-godrej-jersey-cooking-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003876-3_3-godrej-jersey-cooking-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003876-4_3-godrej-jersey-cooking-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003876-5_1-godrej-jersey-cooking-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003876-6_1-godrej-jersey-cooking-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003876-7_1-godrej-jersey-cooking-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003876-8_1-godrej-jersey-cooking-butter.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jersey cooking butter is acquired from curds or milk with no preservatives like salt, colouring, or flavouring agents. It is a concentrated form of milk fat, containing 1% curd, 80% milk fat, and 19% moisture. It is especially rich in fat and fat-soluble vitamins K, E, A, and D.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "724.8kcal",
+    "Protein": "0.5g",
+    "Carbohydrate": "0.7g",
+    "Fat": "80.0g"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Creamline Dairy Products Ltd"
+  }
+ },
+ {
+  "title": "Cow Ghee",
+  "handle": "cow-ghee",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "383",
+    "compare_at_price": "383",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003883_4-godrej-jersey-cow-ghee.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128024_2-godrej-jersey-cow-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003883_4-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003883-2_7-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003883-3_7-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003883-4_7-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003883-5_7-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003883-6_1-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003883-7_1-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003883-8_1-godrej-jersey-cow-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, time-honoured tradition of Jersey Ghee, a culinary delight crafted with the utmost care and precision. Sourced from the finest Jersey cows, renowned for their superior milk quality, this golden elixir captures the essence of centuries-old practices, delivering unparalleled flavour and nourishment to your table. Meticulously processed under hygienic conditions, our Jersey Ghee boasts a captivating aroma and a smooth, creamy texture that elevates every dish. Whether you're stir-frying, cooking, or performing sacred rituals, this versatile ghee is a cherished staple in Indian cuisine, imbuing your creations with a depth of flavour that delights the senses. Committed to ethical farming and animal welfare, we uphold the highest standards to ensure that every dollop of our Jersey Cow Ghee reflects our unwavering dedication to quality and excellence.",
+   "ingredients": "Milk fat",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "897.3kcal",
+    "Protein": "Nil",
+    "Carbohydrate": "Nil",
+    "Fat": "99.7g",
+    "Total Trans fat content": "not more than 4% by weight",
+    "Total Saturated fat content": "not more than 65% by weight"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cow Ghee Jar",
+  "handle": "cow-ghee-jar",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "761",
+    "compare_at_price": "761",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128022_2-godrej-jersey-cow-ghee.jpg"
+    },
+    "barcode": "8906016414041"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128022_2-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128022-2_2-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128022-3_2-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128022-4_2-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128022-5_2-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128022-6_1-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128022-7_1-godrej-jersey-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128022-8_1-godrej-jersey-cow-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jersey Ghee is made from the purest and richest cow's milk and provides a good supply of energy and vitamin A, while containing no impurities. The ghee has a rich fragrance and can be used for cooking your daily meals and for performing havens.",
+   "ingredients": "Milk Fat",
+   "nutritionalInfo": {
+    "Serving Size": "100g",
+    "Energy": "897.3kcal",
+    "Protein": "0g",
+    "Carbohydrates": "0g",
+    "Fat": "99.7g",
+    "Total Trans Fat": "Not More Than 4% By Weight",
+    "Total Saturated Fat": "Not More Than 65% By Weight"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Buffalo Ghee",
+  "handle": "buffalo-ghee",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003882_3-godrej-jersey-ghee.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "779",
+    "compare_at_price": "779",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128025_4-godrej-jersey-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003882_3-godrej-jersey-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003882-2_3-godrej-jersey-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003882-3_3-godrej-jersey-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003882-4_3-godrej-jersey-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003882-5_3-godrej-jersey-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003882-6_1-godrej-jersey-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003882-7_1-godrej-jersey-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003882-8_1-godrej-jersey-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jersey Ghee is processed under hygienic conditions using fresh milk. It has better taste and smell. It is a special part in Indian cooking. It is an excellent for stir-frying and cooking.",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Buffalo Ghee Jar",
+  "handle": "buffalo-ghee-jar",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "767",
+    "compare_at_price": "767",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128023_2-godrej-jersey-buffalo-ghee.jpg"
+    },
+    "barcode": "8906016410647"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128023_2-godrej-jersey-buffalo-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128023-2_2-godrej-jersey-buffalo-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128023-3_2-godrej-jersey-buffalo-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128023-4_2-godrej-jersey-buffalo-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128023-5_2-godrej-jersey-buffalo-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128023-6_2-godrej-jersey-buffalo-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128023-7_2-godrej-jersey-buffalo-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128023-8_1-godrej-jersey-buffalo-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jersey Ghee is made from the purest and richest buffalo milk and provides a good supply of energy and vitamin A, while containing no impurities. The ghee has a rich fragrance and can be used for cooking your daily meals and for performing havens.",
+   "ingredients": "Milk Fat",
+   "nutritionalInfo": {
+    "Energy": "897.3 kcal",
+    "Protein": "0 g",
+    "Carbohydrates": "0 g",
+    "Fat": "99.7 g",
+    "Total Trans Fat": "Not More Than 4% By Weight",
+    "Total Saturated Fat": "Not More Than 65% By Weight"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid direct sunlight",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Badam Flavoured Milk",
+  "handle": "badam-flavoured-milk",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170ml",
+    "price": "24",
+    "compare_at_price": "24",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40183136_8-godrej-jersey-badam-flavoured-milk.jpg"
+    }
+   },
+   {
+    "title": "190ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003886_4-godrej-jersey-flavoured-milk-badam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183136_8-godrej-jersey-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183136-2_14-godrej-jersey-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183136-3_13-godrej-jersey-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183136-4_11-godrej-jersey-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183136-5_11-godrej-jersey-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183136-6_11-godrej-jersey-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183136-7_4-godrej-jersey-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183136-8_4-godrej-jersey-badam-flavoured-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible taste of Jersey Badam Flavoured Milk, a delightful beverage that blends the goodness of milk with the rich, creamy flavour of almonds. Refreshing and yummy, this drink offers a burst of cool, refreshing flavour in every sip. Crafted with over 25 years of commitment to providing healthy, wholesome dairy products, this convenient, on-the-go beverage boasts a smooth, creamy texture and a rich almond taste that will delight your senses. Whether you're looking for a tasty treat or a quick pick-me-up, Jersey Badam Flavoured Milk is the perfect choice to satisfy your cravings.",
+   "ingredients": "Double Toned Milk, Sugar, Natural and Synthetic Food Colours (INS 150a, INS 102), Artificial (Badam) Flavouring Substances, Vitamin A (Retinyl Palmitate), Vitamin D2 (Ergocalciferol).",
+   "nutritionalInfo": {
+    "Energy": "82.7 kcal",
+    "Protein": "3.4 g",
+    "Carbohydrate": "13.9 g",
+    "Total Sugars": "13.9 g",
+    "Added Sugars": "9.0 g",
+    "Total Fat": "1.5 g",
+    "Saturated Fat": "1.1 g",
+    "Trans Fat": "Below 0.05 g",
+    "Cholesterol": "5.4 mg",
+    "Sodium": "48.3 mg",
+    "Calcium": "101.5 mg",
+    "Added Vitamin A": "38.50 µg RE",
+    "Added Vitamin D2": "0.690 µg"
+   },
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "fssaiLicense": "10017047000757",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Badam Milk - No Added Sugar",
+  "handle": "badam-milk-no-added-sugar",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372244_1-godrej-jersey-badam-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372244_1-godrej-jersey-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372244-2_1-godrej-jersey-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372244-3_1-godrej-jersey-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372244-4_1-godrej-jersey-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372244-5_1-godrej-jersey-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372244-6_1-godrej-jersey-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372244-7_1-godrej-jersey-badam-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Badam Milk is a smooth and flavourful beverage made with milk and the rich taste of almonds. It offers a creamy texture with a mildly sweet, nutty flavour, making it suitable for enjoying chilled or warm. Ideal for breakfast, snack time or as a refreshing drink, it is conveniently packaged for easy serving at home, work or while travelling.",
+   "ingredients": "Double Toned Milk, Fructooligosaccharide, Natural and Synthetic Food Colours (INS 150a, INS 102), Artificial Flavouring Substances (Badam), Artificial Sweetener (INS 955), Vitamin A (Retinyl Palmitate), Vitamin D2 (Ergocalciferol). Food Allergen: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy": "72.7 kcal",
+    "Protein": "3.3 g",
+    "Carbohydrate": "11.5 g",
+    "Total Sugars": "7.4 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "1.5 g",
+    "Saturated Fat": "1.0 g",
+    "Trans Fat": "Below 0.05 g",
+    "Cholesterol": "5.1 mg",
+    "Sodium": "48.1 mg",
+    "Calcium": "101.5 mg",
+    "Added Vitamin A": "38.50 µg RE",
+    "Added Vitamin D2": "0.690 µg"
+   },
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "fssaiLicense": "10014047000274",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kesar Flavoured Milk",
+  "handle": "kesar-flavoured-milk",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "28",
+    "compare_at_price": "28",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40183137_6-godrej-jersey-kesar-flavoured-milk.jpg"
+    },
+    "barcode": "8906016413808"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183137_6-godrej-jersey-kesar-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183137-2_8-godrej-jersey-kesar-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183137-3_7-godrej-jersey-kesar-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183137-4_7-godrej-jersey-kesar-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183137-5_7-godrej-jersey-kesar-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183137-6_7-godrej-jersey-kesar-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183137-7_2-godrej-jersey-kesar-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183137-8_1-godrej-jersey-kesar-flavoured-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "When the goodness of milk blends with the aroma of Kesar, what you get is a beverage that gives you a burst of cool, yummy refreshment with every sip. That’s the magic of Jersey Kesar Flavoured Milk. Brought to you by Creamline Dairy Products Limited, with over 25 years of commitment to bringing you healthy, wholesome dairy products, it’s a beverage you’ll just love! Also, try the other delicious flavours from Jersey.",
+   "ingredients": "Milk Solids, Sugar, Added Flavour.",
+   "usageInstructions": "1. Open the cap.\n2. Remove the silver lid from top.\n3. Sip and enjoy Jersey Flavoured Milk.",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10017047000757"
+  }
+ },
+ {
+  "title": "Pista Flavoured Milk",
+  "handle": "pista-flavoured-milk",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "190ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003889_3-godrej-jersey-flavoured-milk-pista.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003889_3-godrej-jersey-flavoured-milk-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003889-2_2-godrej-jersey-flavoured-milk-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003889-3_2-godrej-jersey-flavoured-milk-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003889-4_2-godrej-jersey-flavoured-milk-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003889-5_2-godrej-jersey-flavoured-milk-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003889-6_2-godrej-jersey-flavoured-milk-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003889-7_2-godrej-jersey-flavoured-milk-pista.jpg"
+   }
+  ],
+  "details": {
+   "description": "Jersey Flavoured Milk pista is an emerging health drink that will strengthen your senses. It has an enormous test, usefulness and purity. It is made from the best quality ingredients. The sugar is also extra to develop the flavour.",
+   "ingredients": "Milk solids, Sugar",
+   "nutritionalInfo": {
+    "Energy": "82.7 kcal",
+    "Protein": "3.4 g",
+    "Carbohydrate": "13.9 g",
+    "Added Sugar": "9.0 g",
+    "Fat": "1.5 g"
+   },
+   "countryOfOrigin": "India",
+   "manufacturerName": "Creamline Dairy Products Ltd"
+  }
+ },
+ {
+  "title": "Rose Flavoured Milk",
+  "handle": "rose-flavoured-milk",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40183140_7-godrej-jersey-rose-flavoured-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183140_7-godrej-jersey-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183140-2_9-godrej-jersey-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183140-3_8-godrej-jersey-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183140-4_8-godrej-jersey-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183140-5_8-godrej-jersey-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183140-6_8-godrej-jersey-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183140-7_8-godrej-jersey-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183140-8_1-godrej-jersey-rose-flavoured-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Why choose carbonated beverages when you can have something equally tasty and way healthier? On-the-go tasty beverage, available in evergreen Rose flavour. This wholesome, fun and healthy flavoured milk is must-have in your meals. It is a perfect quick fix snacking option.",
+   "ingredients": "Milk Solids, Sugar, Added Flavour.",
+   "usageInstructions": "1. Open the cap.\n2. Remove the silver lid from top.\n3. Sip and enjoy Jersey Flavoured Milk.",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10017047000757"
+  }
+ },
+ {
+  "title": "Vanilla Thick Shake",
+  "handle": "vanilla-thick-shake",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40183138_4-godrej-jersey-vanilla-thick-shake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183138_4-godrej-jersey-vanilla-thick-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183138-2_6-godrej-jersey-vanilla-thick-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183138-3_6-godrej-jersey-vanilla-thick-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183138-4_6-godrej-jersey-vanilla-thick-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183138-5_6-godrej-jersey-vanilla-thick-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183138-6_6-godrej-jersey-vanilla-thick-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183138-7_6-godrej-jersey-vanilla-thick-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183138-8_1-godrej-jersey-vanilla-thick-shake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the creamy, vanilla-flavoured goodness of the Jersey Vanilla Thick Shake, made with real milk. This healthy and delicious snack from Creamline Dairy is perfect for any time of day, offering a rich, smooth texture and a satisfying vanilla taste. Conveniently packaged in a portable tetra pack, the Jersey Vanilla Thick Shake is the ideal on-the-go refreshment, providing a nutritious boost of real milk and natural flavours. Shake it, straw it, sip it - you'll simply love this creamy, wholesome treat from the trusted dairy experts at Creamline.",
+   "ingredients": "Milk Solids, Sugar, Sequestrant\nIns 331(Iii) & Ins 339(Ii)], Stabilizers & Emulsifier (Ins 407, Ins 412, Ins 415 & Ins 471)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy": "106.9kcal",
+    "Protein": "2.8g",
+    "Carbohydrate": "13.8g",
+    "Added Sugar": "9.0g",
+    "Fat": "4.5g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10017047000757"
+  }
+ },
+ {
+  "title": "Spicy Buttermilk",
+  "handle": "spicy-buttermilk",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128021_2-godrej-jersey-butter-milk-uht-spicy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128021_2-godrej-jersey-butter-milk-uht-spicy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128021-2_2-godrej-jersey-butter-milk-uht-spicy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128021-3_2-godrej-jersey-butter-milk-uht-spicy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128021-4_2-godrej-jersey-butter-milk-uht-spicy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128021-5_2-godrej-jersey-butter-milk-uht-spicy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128021-6_1-godrej-jersey-butter-milk-uht-spicy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128021-7_1-godrej-jersey-butter-milk-uht-spicy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128021-8_1-godrej-jersey-butter-milk-uht-spicy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jersey UHT buttermilk is a new, safe, hygienic and delicious drink which contains all the wholesome goodness of milk. It is made using fresh, pasteurised and standardised milk curd that contains diluted lactic acid bacteria along with the necessary amount of spice extracts and salt for additional flavour.",
+   "ingredients": "Milk solids, Water, Common salt, Stabilizer, Spices and condiments / Fat 1.8 %",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "29.0kcal",
+    "Protein": "1.2g",
+    "Carbohydrate": "2.0g",
+    "Fat": "1.8g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sweet Lassi",
+  "handle": "sweet-lassi",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128020_2-godrej-jersey-lassi-uht.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128020_2-godrej-jersey-lassi-uht.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128020-2_2-godrej-jersey-lassi-uht.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128020-3_2-godrej-jersey-lassi-uht.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128020-4_2-godrej-jersey-lassi-uht.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128020-5_2-godrej-jersey-lassi-uht.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128020-6_1-godrej-jersey-lassi-uht.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128020-7_1-godrej-jersey-lassi-uht.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128020-8_1-godrej-jersey-lassi-uht.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jersey UHT Sweet Lassi is a tasty and energising drink, made using pure and healthy milk. This refreshing drink can be relished as an anytime snack or as a delicious addition to your food.",
+   "ingredients": "Milk solids, Water, Sugar and Stabilizers / Fat - 2.6 %",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "90.60kcal",
+    "Protein": "1.8g",
+    "Carbohydrate": "15.0g",
+    "Added Sugar": "12.0g",
+    "Fat": "2.6g",
+    "Calcium": "70mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid direct sunlight",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Doodh Peda",
+  "handle": "doodh-peda",
+  "vendor": "Godrej Jersey",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40183139_5-godrej-jersey-doodhpeda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183139_5-godrej-jersey-doodhpeda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183139-2_5-godrej-jersey-doodhpeda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183139-3_5-godrej-jersey-doodhpeda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183139-4_5-godrej-jersey-doodhpeda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183139-5_5-godrej-jersey-doodhpeda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183139-6_1-godrej-jersey-doodhpeda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183139-7_1-godrej-jersey-doodhpeda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183139-8_1-godrej-jersey-doodhpeda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Satisfy your sweet cravings with this pure dairy sweet, Jersey Doodh Peda. It's perfect for dessert, celebrating special occasions or even for gifting to friends and loved ones. This delicious preparation is brought to you by Creamline Dairy Products Limited, the company with over 25 years of commitment to bringing you healthy, wholesome dairy products.",
+   "ingredients": "Milk solids, Sugar",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "420.5kcal",
+    "Protein": "11.4g",
+    "Carbohydrate": "47.6g",
+    "Added Sugar": "32.6g",
+    "Fat": "20.5g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Creamline Dairy Products Ltd",
+   "fssaiLicense": "10014047000038",
+   "countryOfOrigin": "India"
+  }
+ }
+]
