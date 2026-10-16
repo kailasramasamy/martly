@@ -1,0 +1,78 @@
+{
+  "brand": "Nycil (Zydus)",
+  "manufacturer": "Zydus Wellness Products Ltd.",
+  "feed": "nycil-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nycil/logo-8b9432f7.png",
+  "themeColor": "#0072BC",
+  "themeColorSecondary": "#00A651",
+  "namePrefix": "Nycil ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Germ\\ Expert\\ Prickly\\ Heat\\ Powder\\ \\-\\ Cool\\ Classic$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Germ\\ Expert\\ Prickly\\ Heat\\ Powder\\ \\-\\ Classic$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Germ\\ Expert\\ Prickly\\ Heat\\ Powder\\ \\-\\ Cool\\ Gulabjal$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Germ\\ Expert\\ Prickly\\ Heat\\ Powder\\ \\-\\ Cool\\ Herbal$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Germ\\ Expert\\ Prickly\\ Heat\\ Powder\\ \\-\\ Cool\\ Aloe$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Germ\\ Expert\\ Prickly\\ Heat\\ Powder\\ \\-\\ Cool\\ Sandal$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Germ\\ Expert\\ Prickly\\ Heat\\ Powder\\ \\-\\ Cool\\ Lime$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Body\\ Mist\\ \\-\\ Aqua$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    }
+  ]
+}
