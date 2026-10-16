@@ -1,0 +1,334 @@
+{
+  "brand": "Buffet",
+  "manufacturer": "Buffet Fusion Foods Pvt. Ltd.",
+  "feed": "buffet-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/buffet/logo-f32a6d2a.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#FFC20E",
+  "namePrefix": "Buffet ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Beechwood\\ Smoked\\ Chicken\\ Cocktail\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Cocktail\\ Sausage\\ \\-\\ Garlic\\ \\&\\ Herbs$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Sausage\\ \\-\\ Heat\\ \\&\\ Serve$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Bockwurst\\ With\\ Granulated\\ Pepper\\ \\-\\ Heat\\ \\&\\ Serve$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Beechwood\\ Smoked\\ Pork\\ Cocktail\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Pork Sausage"
+      ]
+    },
+    {
+      "match": "^Beechwood\\ Smoked\\ Pork\\ Sausage$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Pork Sausage"
+      ]
+    },
+    {
+      "match": "^Pork\\ Frankfurter\\ \\-\\ Heat\\ \\&\\ Serve$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Pork Sausage"
+      ]
+    },
+    {
+      "match": "^Beechwood\\ Smoked\\ Pork\\ Ham\\ Slices$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Ham & Cold Cuts"
+      ]
+    },
+    {
+      "match": "^Beechwood\\ Smoked\\ Pork\\ Streaky\\ Bacon$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Ham & Cold Cuts"
+      ]
+    },
+    {
+      "match": "^Pork\\ Back\\ Bacon\\ \\-\\ Heat\\ \\&\\ Serve$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Ham & Cold Cuts"
+      ]
+    },
+    {
+      "match": "^Smoked\\ Chicken\\ Ham\\ \\-\\ Ready\\ To\\ Serve$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Ham & Cold Cuts"
+      ]
+    },
+    {
+      "match": "^Pork\\ Salami\\ \\-\\ Ready\\ To\\ Serve$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Salami"
+      ]
+    },
+    {
+      "match": "^Breaded\\ Fish\\ Fillets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Fish & Prawns"
+      ]
+    },
+    {
+      "match": "^Breaded\\ Fish\\ Fingers$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Fish & Prawns"
+      ]
+    },
+    {
+      "match": "^Raw\\ Fish\\ Fillets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Fish & Prawns"
+      ]
+    },
+    {
+      "match": "^Classic\\ Popcorn\\ Shrimp$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Fish & Prawns"
+      ]
+    },
+    {
+      "match": "^Peeled\\ \\&\\ Deveined\\ Large\\ Prawns$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Fish & Prawns"
+      ]
+    },
+    {
+      "match": "^Peeled\\ \\&\\ Deveined\\ Medium\\ Prawns$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Fish & Prawns"
+      ]
+    },
+    {
+      "match": "^Ready\\ To\\ Cook\\ Jumbo\\ Prawns\\ \\-\\ Peeled\\ \\&\\ Deveined$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Fish & Prawns"
+      ]
+    },
+    {
+      "match": "^Ready\\ To\\ Cook\\ Small\\ Prawns\\ \\-\\ Peeled\\ \\&\\ Deveined$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Fish & Prawns"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Chicken\\ Pops$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Chicken\\ Sheek\\ Kebab$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Cocktail\\ Samosa$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Samosa & Spring Roll"
+      ]
+    },
+    {
+      "match": "^Chinese\\ Chicken\\ Spring\\ Roll$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Samosa & Spring Roll"
+      ]
+    },
+    {
+      "match": "^Vegetable\\ Cocktail\\ Mini\\ Samosa$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Samosa & Spring Roll"
+      ]
+    },
+    {
+      "match": "^Vegetable\\ Spring\\ Rolls$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Samosa & Spring Roll"
+      ]
+    },
+    {
+      "match": "^Shake\\ 'n'\\ Crisp\\ Peri\\ Peri\\ French\\ Fries$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Keema\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Naan$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Malabar\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Butter\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Paratha\\ \\-\\ Heat\\ \\&\\ Serve$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Paratha\\ \\-\\ Heat\\ \\&\\ Serve$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Methi\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Ajwain\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Flaky\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Aloo\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Green\\ Peas$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Peas"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Corn$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Sweet Corn"
+      ]
+    },
+    {
+      "match": "^Grated\\ Coconut$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Mixed Vegetables"
+      ]
+    }
+  ]
+}
