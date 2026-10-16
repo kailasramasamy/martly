@@ -1,0 +1,3044 @@
+[
+ {
+  "title": "Arogya Brown Bread",
+  "handle": "arogya-brown-bread",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169117_2-elite-arogya-brown-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169117_2-elite-arogya-brown-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169117-2_1-elite-arogya-brown-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169117-3_1-elite-arogya-brown-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169117-4_1-elite-arogya-brown-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169117-5_1-elite-arogya-brown-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Whole wheat flour bread provides fibre, protein, vitamin E and B, magnesium, manganese, iron, phosphorous, potassium and zinc. Enjoy this delicious dessert with the beverage of your choice.",
+   "ingredients": "Refined Wheat Flour (miada), Water, Sugar, Yeast, Edible Vegetable Oil, Iodized Salt, Preservative (ins282), Emulsifiers (ins481), (i) & 471), Bread Improver (starch, Soya Flour, Flour Treatment Agent (ins1100), Antioxidant (ins300) & Anti-caking Agent (ins170), Acidity Regulator (ins260).",
+   "manufacturerName": "Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000092",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Family Wonder Bread",
+  "handle": "family-wonder-bread",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "600g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169137_2-elite-family-wonder-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169137_2-elite-family-wonder-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169137-2_1-elite-family-wonder-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169137-3_1-elite-family-wonder-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169137-4_1-elite-family-wonder-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169137-5_1-elite-family-wonder-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "One of the common food is sweet bread. Elite provides good quality, nutrient-loaded sweet bread. Enjoy these delicious sweet bread anywhere, anytime.",
+   "ingredients": "Refined Wheat Flour (aida), Water, Sugar, Yeast, Edible Vegetable Oil, Iodized Salt, Preservative (ins282), Emulsifiers (ins481), (i) & 471), Bread Improver (starch, Soya Flour, Flour Treatment Agent (ins1100), Antioxidant (ins300) & Anti-caking Agent (ins170), Acidity Regulator (ins260).",
+   "manufacturerName": "Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000092",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Milk Bread",
+  "handle": "milk-bread",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169150_2-elite-milk-bread.jpg"
+    },
+    "barcode": "8906009993997"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169150_2-elite-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169150-2_1-elite-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169150-3_1-elite-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169150-4_1-elite-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169150-5_1-elite-milk-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milk bread was developed in Japan in the 20th century, using tangzhong, a warm flour-and-water paste traditionally used in China to make buns with a soft, springy texture and tiny air bubbles. Surprisingly, milk bread with an incomparable crumb and buttery taste is a snap to make at home, using supermarket ingredients.",
+   "ingredients": "Refined Wheat Flour (maida), Water, Sugar, Yeast, Edible Vegetable Oil, Wheat Gluten, Iodized Salt, Preservative (ins282), Emulsifiers (ins481), (i) & 471), Bread Improver (starch, Soya Flour, Milk Solids, Flour Treatment Agent (ins1100), Antioxidant (ins300) & Anti-caking Agent (ins170), Acidity Regulator (ins260), Permitted Class Ii Preservatives (ins282).",
+   "manufacturerName": "Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000092",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Sandwich Delight White Bread",
+  "handle": "sandwich-delight-white-bread",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169165_2-elite-sandwich-delight-white-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169165_2-elite-sandwich-delight-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169165-2_1-elite-sandwich-delight-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169165-3_1-elite-sandwich-delight-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169165-4_1-elite-sandwich-delight-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169165-5_1-elite-sandwich-delight-white-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This whole-meal bread contains the whole grain and provides fibre, vitamin B, and minerals. This gluten-free bread and non-wheat bread are suitable for people with an allergy.",
+   "ingredients": "Refined Wheat Flour (Maida), Water, Sugar, Yeast, Edible Vegetable Oil, Iodized Salt, Preservative (INS282), Emulsifiers (INS481), (I) & 471), Bread Improver (Starch, Soya Flour, Flour Treatment Agent (INS1100), Antioxidant (INS300) & Anti-Caking Agent (Ins170), Acidity Regulator (INS260)",
+   "manufacturerName": "Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000092",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Fruity Sweet Fruit Bread",
+  "handle": "fruity-sweet-fruit-bread",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169139_2-elite-fruity-sweet-fruit-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169139_2-elite-fruity-sweet-fruit-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169139-2_1-elite-fruity-sweet-fruit-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169139-3_1-elite-fruity-sweet-fruit-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169139-4_1-elite-fruity-sweet-fruit-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169139-5_1-elite-fruity-sweet-fruit-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This easy and delicious Fruit Loaf is perfect at breakfast, whether served warm or toasted. A great base recipe and you can different types of dried fruits and spices. A perfect option to kill your hunger.",
+   "ingredients": "Refined Wheat Flour (Maida), Water, Cadied Papaya, Sugar, Yeast, Edible Vegetable Oil, Iodized Salt, Emulsifiers (ins481), (i) & 471), (ins300) , Acidity Regulator (ins260).",
+   "manufacturerName": "Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000092",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Milk N Sugar Magic Bun",
+  "handle": "milk-n-sugar-magic-bun",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169151_1-elite-milk-bun.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169151_1-elite-milk-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169151-2_1-elite-milk-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169151-3_1-elite-milk-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169151-4_1-elite-milk-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169151-5_1-elite-milk-bun.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milk Buns are known for their distinct, milky taste and they're soft, melt in your mouth texture. These soft dinner rolls are perfect with any kind of jam or spread but are delicious on their own.",
+   "ingredients": "Refined Wheat Flour (maida), Water, Sugar, Yeast, Edible Vegetable Oil, Iodized Salt, Preservative (ins282), Emulsifiers (ins481), (i) & 471), Bread Improver (starch, Soya Flour, Flour Treatment Agent (ins1100), Antioxidant (ins300) & Anti-caking Agent (ins170), Acidity Regulator (ins260).",
+   "manufacturerName": "Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000092",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Half Cooked Chapati",
+  "handle": "half-cooked-chapati",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169142_1-elite-half-cooked-chapati.jpg"
+    },
+    "barcode": "8906009994062"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169142_1-elite-half-cooked-chapati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169142-2_1-elite-half-cooked-chapati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169142-3_1-elite-half-cooked-chapati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169142-4_1-elite-half-cooked-chapati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169142-5_1-elite-half-cooked-chapati.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Chapati is the inevitable flatbread of Indians. This instant chapati gives the real flavourful taste and it quickly reaches your dining table as soon as you get these. \nElite runs one of the largest food companies in South India that retails to more than 60,000 outlets in India through a network of 1,100 distributors. It is a brand you can trust and a brand you can reckon with.",
+   "ingredients": "Whole Wheat Flour, Water, Edible Vegetable Oil (Sunflower Oil), Curd, Iodized Salt, Preservatives (Ins282 202) And Acidity Regulator (Ins260).",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Butter Cookies",
+  "handle": "butter-cookies",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "22",
+    "compare_at_price": "22",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169123_1-elite-butter-cookies.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169123_1-elite-butter-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169123-2_1-elite-butter-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169123-3_1-elite-butter-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169123-4_1-elite-butter-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169123-5_1-elite-butter-cookies.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Butter cookies, known as Brysselkex, Sablés, and Danish biscuits, are unleavened cookies consisting of butter, flour, and sugar. Enjoy these delicious butter cookies with the beverage of your choice.",
+   "ingredients": "Wheat Flour, Vegetable Oil, (Palmolein Oil), Sugar, Butter (10%), Invert Syrup, Glucose Syrup, Milk Solids, Edible Common Salt, Soy Lecithin.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "3 pieces (about 30g)",
+    "Calories": "170 kcal",
+    "Total Fat": "10g",
+    "Saturated Fat": "5g",
+    "Trans Fat": "0g",
+    "Cholesterol": "8mg",
+    "Sodium": "50mg",
+    "Total Carbohydrate": "18g",
+    "Dietary Fibre": "0g",
+    "Total Sugars": "7g",
+    "Includes 6g Added sugars": "6g",
+    "Protein": "2g",
+    "Vitamin D": "0 mcg",
+    "Calcium": "6 mg",
+    "Iron": "0 mg",
+    "Potassium": "21 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Elite Natural Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000648"
+  }
+ },
+ {
+  "title": "Classic Rusk",
+  "handle": "classic-rusk",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "59g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052070_3-elite-rusk-original.jpg"
+    },
+    "barcode": "8906016491875"
+   },
+   {
+    "title": "135g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007661_15-elite-rusk-original.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052070_3-elite-rusk-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052070-2_1-elite-rusk-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052070-3_1-elite-rusk-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052070-4_1-elite-rusk-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052070-5_1-elite-rusk-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007661_15-elite-rusk-original.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elite Rusk is the crispiest crunchiest rusk filled with wholesome goodness and fresh aroma with each bite you take. Dunk it in your tea or roast it and pair it with your favourite flavour of jam or spread o eat it as such to enhance your tea time experience. A tea-time delight for all age groups. Tastes the best when you Khataak Se Khao.",
+   "ingredients": "Refined Wheat Flour, Sugar, Edible Vegetable Oil, Yeast, Salt, Soya Flour, Emulsifiers (INS481 (i), 471, 322), Antioxidant (INS300)",
+   "manufacturerName": "Elite Tasty Toast Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Milk Rusk",
+  "handle": "milk-rusk",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "54g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007659_6-elite-rusk-milk.jpg"
+    },
+    "barcode": "8906016492261"
+   },
+   {
+    "title": "116g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052068_6-elite-rusk-milk.jpg"
+    }
+   },
+   {
+    "title": "182g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007660_4-elite-rusk-milk.jpg"
+    }
+   },
+   {
+    "title": "274g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052069_11-elite-rusk-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007659_6-elite-rusk-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007659-2_3-elite-rusk-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007659-3_3-elite-rusk-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007659-4_4-elite-rusk-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007659-5_3-elite-rusk-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052068_6-elite-rusk-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007660_4-elite-rusk-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052069_11-elite-rusk-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elite Milk Rusk makes your evenings, more delectable with the delightfully crunchy, incredibly juicy Elite Milk Rusk made from the goodness of milk. Now enjoy Chai time with your loved ones with a melt-in-your-mouth snacking experience that comes with each dip you take.",
+   "ingredients": "Refined Wheat Flour, Sugar, Edible Vegetable Oil (Palmolein), Yeast, Salt, Milk Solid, Soya Flour, Emulsifier (INS471, INS481), Antioxidant (INS300)",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Elaichi Rusk",
+  "handle": "elaichi-rusk",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "182g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007662_11-elite-rusk-sooji-elaichi.jpg"
+    },
+    "barcode": "8906016492032"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007662_11-elite-rusk-sooji-elaichi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007662-2_9-elite-rusk-sooji-elaichi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007662-3_9-elite-rusk-sooji-elaichi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007662-4_9-elite-rusk-sooji-elaichi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007662-5_9-elite-rusk-sooji-elaichi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elaichi Rusk is a delicious, crispy biscuit infused with the aromatic flavour of cardamom (elaichi). Made from high-quality ingredients, these rusks offer a perfect blend of sweetness and spice, making them an ideal snack. They are perfect for enjoying tea or coffee, adding a delightful crunch and an enticing fragrance to your beverage experience. Conveniently packaged, Elaichi Rusk is great for sharing or as a personal treat, providing a unique taste that appeals to those who enjoy a hint of spice in their snacks.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "16g",
+    "Energy (kcal)": "250.38",
+    "Protein (g)": "5.33",
+    "Carbohydrate (g)": "51.56",
+    "of which Sugar (g)": "0.89",
+    "Dietary Fibre (g)": "1.55",
+    "Total Fat (g)": "2.19",
+    "Saturated Fat (g)": "1.18",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "251.61",
+    "Iron (mg)": "1.96",
+    "Calcium (mg)": "11.39"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place away from direct sunlight",
+   "manufacturerName": "Elite Natural Pvt. Ltd",
+   "fssaiLicense": "10012042000648",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pizza Rusk",
+  "handle": "pizza-rusk",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169154_1-elite-pizza-rusk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169154_1-elite-pizza-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169154-2_1-elite-pizza-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169154-3_1-elite-pizza-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169154-4_1-elite-pizza-rusk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169154-5_1-elite-pizza-rusk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elite pizza rusk is a unique snack that can be served with tea to enjoy your tea time. Enjoy this delicious snack with the tea of your choice.",
+   "ingredients": "Wheat Flour, Water, Sugar, Yeast, Edible Vegetable Oil, Iodized Salt, Pizza Seasoning [(milk Solids, Dehydrated (tomato, Onion & Garlic Powder), Spices & Condiments (pepper, Chilli & Oregano), Acidifying Agent (ins 330) And Anticaking Agent (ins551)], Yeast, Soya Flour, Red Chilli Flakes Salt, Emulsifiers (ins 481 (i), 481, 471, 461,& 322)gluten Improver (ins100) And Antioxidant (ins300).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Carbohydrates": "66g",
+    "Protein": "10g",
+    "Total Fat": "4.52g",
+    "Saturated Fat": "4.52g",
+    "Cholesterol": "0mg",
+    "Sodium": "542mg",
+    "Calcium": "11mg",
+    "Zinc": "0.1mg",
+    "Thiamine": "0.1mg",
+    "Riboflavin": "0.1mg",
+    "Vitamin B6": "0.04mg",
+    "Dietary Fibre": "2g",
+    "Calories": "403 kcal",
+    "Calories from Fat": "200.175 kcal"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place away from direct sunlight",
+   "manufacturerName": "Elite Natural Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000648"
+  }
+ },
+ {
+  "title": "Banana Pudding Sliced Cake",
+  "handle": "banana-pudding-sliced-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204880_5-elite-banana-pudding-cake-sliced.jpg"
+    },
+    "barcode": "8906009994765"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204880_5-elite-banana-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204880-2_5-elite-banana-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204880-3_5-elite-banana-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204880-4_5-elite-banana-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204880-5_5-elite-banana-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204880-6_2-elite-banana-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204880-7_2-elite-banana-pudding-cake-sliced.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Elite products delight millions of households with a wide range of natural ingredients developed by leveraging our in-house R&D capabilities. We are continuously reinventing our product to meet the consumer expectations on both Taste & Health in conformance to our brand promise of 'Elite- Good for you'. The product range thus offers great quality and delivers taste, healthy and convenience to our consumers.",
+   "ingredients": "Fruits, Vegetable Products, and Nuts - 20.4% {Banana Pulp [Robusta Banana Pulp, Sugar, Acidity Regulator (INS 330), and Preservative (INS 211)], Banana Cuts [Robusta Banana Cuttings, Sugar, Acidity Regulator (INS 330), and Preservative (INS 211)], Banana Cubes [Robusta Banana Cuttings, Sugar, Acidity Regulator (INS 330), and Preservative (INS 211)], Candied Fruits and Vegetables [Sugar, Carrot, Papaya, Banana, Acidity Regulator (INS 330), and Preservative (INS 224)], and Cashew Nuts - 0.8%}, Refined Wheat Flour (Maida), Liquid Egg, Edible Vegetable Oil (Rice Bran Oil), Sugar, Invert Syrup, Clarified Butter, Liquid Glucose, Leavening Agent [INS 500(ii)], Natural, Nature Identical and Artificial Flavouring Substances (Vanilla), Preservatives (INS 282 and INS 202), Acidity Regulator (INS 260), and Thickeners (INS 464 and INS 415).\nAllergen Information: Contains wheat, egg, tree nuts, and milk. Manufactured in the same facility that processes soy.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "328.22",
+    "Protein (g)": "3.40",
+    "Carbohydrate (g)": "39.90",
+    "Total Sugars (g)": "28.88",
+    "Added Sugars (g)": "27.62",
+    "Total Fat (g)": "17.09",
+    "Saturated Fat (g)": "4.67",
+    "Trans Fat (g)": "0.01",
+    "Cholesterol (mg)": "56.15",
+    "Sodium (mg)": "29.96",
+    "Dietary Fibre (g)": "0.60",
+    "Iron (mg)": "0.84",
+    "Calcium (mg)": "11.32"
+   },
+   "storageInstructions": "Store under cool, dry and hygienic conditions, away from sunlight.",
+   "manufacturerName": "(A) Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000049"
+  }
+ },
+ {
+  "title": "Dates Pudding Sliced Cake",
+  "handle": "dates-pudding-sliced-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204881_5-elite-dates-pudding-cake-sliced.jpg"
+    },
+    "barcode": "8906009994772"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204881_5-elite-dates-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204881-2_5-elite-dates-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204881-3_5-elite-dates-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204881-4_5-elite-dates-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204881-5_5-elite-dates-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204881-6_2-elite-dates-pudding-cake-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204881-7_2-elite-dates-pudding-cake-sliced.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Dates Pudding Cake Sliced is a soft, moist dessert made with finely blended dates for a naturally rich flavour. Each slice offers a balanced sweetness with a dense, comforting texture. Ideal for serving with tea or coffee, it can be enjoyed as a quick treat or plated with custard or sauce for a classic dessert experience.\nElite products delight millions of households with a wide range of natural ingredients developed by leveraging our in-house R&D capabilities. We are continuously reinventing our product to meet consumer expectations on both taste and health in conformance to our brand promise of 'Elite - Good for you'. The product range thus offers great quality and delivers taste, health and convenience to our consumers.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Dates Product - 16.4% {Date Paste and Date Syrup [Sugar, Dates, and Acidity Regulators (INS 330 and INS 296)]}, Edible Vegetable Oil (Rice Bran Oil), Liquid Egg, Invert Syrup, Clarified Butter, Cashew Nuts - 2.5%, Liquid Glucose, Edible Vegetable Fat {Interesterified Edible Oils, Emulsifiers (INS 471, INS 435, and INS 322), Preservative (INS 202), Antioxidants (INS 320 and INS 330), Sesame Oil, and Vitamin A}, Leavening Agent [INS 500(ii)], Preservatives (INS 282 and INS 202), Natural, Nature Identical and Artificial Flavouring Substances (Vanilla and Milk), Acidity Regulators (INS 260 and INS 330), Thickeners (INS 464 and INS 415), and Iodized Salt.\nAllergen Information: Contains wheat, egg, tree nuts, milk, and soy.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "349.83",
+    "Protein (g)": "3.79",
+    "Carbohydrate (g)": "40.44",
+    "Total Sugars (g)": "27.44",
+    "Added Sugars (g)": "20.49",
+    "Total Fat (g)": "18.88",
+    "Saturated Fat (g)": "5.64",
+    "Trans Fat (g)": "0.03",
+    "Cholesterol (mg)": "54.21",
+    "Sodium (mg)": "60.04",
+    "Dietary Fibre (g)": "1.50",
+    "Iron (mg)": "1.01",
+    "Calcium (mg)": "16.44"
+   },
+   "storageInstructions": "Store under cool, dry and hygienic conditions away from sunlight.",
+   "manufacturerName": "(A) Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000049"
+  }
+ },
+ {
+  "title": "Dates Pudding Cake",
+  "handle": "dates-pudding-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169133_3-elite-dates-pudding-cake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169133_3-elite-dates-pudding-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169133-2_4-elite-dates-pudding-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169133-3_4-elite-dates-pudding-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169133-4_4-elite-dates-pudding-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169133-5_2-elite-dates-pudding-cake.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Indulge in the rich and delectable Elite Dates Pudding Cake, a moist and flavourful treat that will delight your senses. Made with a generous blend of succulent dates and a harmonious mix of aromatic spices, this cake offers a perfect balance of sweetness and complexity. Whether served as a decadent dessert at special occasions or enjoyed as an everyday snack, this scrumptious cake is sure to captivate your taste buds. Savour the goodness of this date-infused delight and experience the perfect harmony of flavours in every bite. Bring this irresistible cake home today and elevate your culinary experience.",
+   "ingredients": "Egg, Wheat Flour, Sugar, Edible Veg Oil, Humectants (ins422 & 420), Emulsifiers (ins491, 477, 471 & 464), Milk Solids, Dextrose, Iodized Salt, Permitted Class Ii Preservatives (ins202 & 200), Leavening Agent (ins500), Acidity Regulator (ins260), Stabilizing Agent (ins415) And Antioxidant (ins320), Thickener, Pulp, Nuts. Soaked Dates, Dates Syrup.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "Approx. 30g",
+    "Energy (kcal)": "373.39",
+    "Protein (g)": "4.11",
+    "Carbohydrate (g)": "41.73",
+    "Of which Sugar (g)": "6.70",
+    "Added Sugar (g)": "23.46",
+    "Total Fat (g)": "20.81",
+    "Saturated Fat (g)": "6.21",
+    "Trans Fat (g)": "0.01",
+    "Cholesterol (mg)": "59.66",
+    "Sodium (mg)": "65.89",
+    "Dietary Fibre (g)": "1.38",
+    "Iron (mg)": "1.39",
+    "Calcium (mg)": "18.21"
+   },
+   "storageInstructions": "*Store under cool, dry and hygienic conditions\n*Keep away from sunlight",
+   "manufacturerName": "Elite Natural Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000648"
+  }
+ },
+ {
+  "title": "Carrot Pudding Cake",
+  "handle": "carrot-pudding-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169124_5-elite-carrot-pudding-cake-non-veg.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169124_5-elite-carrot-pudding-cake-non-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169124-2_5-elite-carrot-pudding-cake-non-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169124-3_5-elite-carrot-pudding-cake-non-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169124-4_2-elite-carrot-pudding-cake-non-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169124-5_2-elite-carrot-pudding-cake-non-veg.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Carrot Pudding Cake comes out wonderfully moist and flavourful. A moist, tender British style steamed pudding rich with warm spices and served with a buttery spiced. Enjoy these delicious pudding cakes anywhere, anytime.",
+   "ingredients": "Candied Carrot 21.3% (Carrot Shreds, Sugar, Inverted Sugar, Acidity Regulator (Ins 330) & Preservative (Ins 211)), Refined Wheat Flour (Maida), Sugar, Liquid Egg, Dry Fruits & Nuts (Soaked Dates 8.2% [Dates, Sugar & Acidity Regulator (Ins 330)] And Cashew Nuts 4.1%), Edible Vegetable Oil (Rice Bran Oil), Clarified Butter, Liquid Glucose, Natural, Nature Identical And Artificial Flavouring Substances (Vanilla & Milk), Natural Food Colour (Ins 150A), Leavening Agent [Ins 500(Ii)], Preservatives (Ins 282 & Ins 202), Acidity Regulators (Ins 260 & Ins 330), Baking Powder, Thickeners (Ins 464 & Ins 415), Cinnamon Powder",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "30g",
+    "Energy (kcal)": "360.60 kcal",
+    "Protein (g)": "3.84 g",
+    "Carbohydrate (g)": "41.38 g",
+    "Of Which Sugar (g)": "4.26 g",
+    "Added Sugar (g)": "25.79 g",
+    "Total Fat (g)": "19.68 g",
+    "Saturated Fat (g)": "6.61 g",
+    "Trans Fat (g)": "0.03 g",
+    "Cholesterol (mg)": "61.26 mg",
+    "Sodium (mg)": "20.55 mg",
+    "Dietary Fibre (g)": "1.30 g",
+    "Iron (mg)": "1.32 mg",
+    "calcium (mg)": "30.80 mg"
+   },
+   "storageInstructions": "*Refrigerate the cake before cutting for better result\n*Store under cool, dry and hygienic conditions away from sunlight",
+   "manufacturerName": "Elite Natural Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000648"
+  }
+ },
+ {
+  "title": "Jackfruit Pudding Cake",
+  "handle": "jackfruit-pudding-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169146_3-elite-jackfruit-pudding-cake-non-veg.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "230",
+    "compare_at_price": "230",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169145_4-elite-jackfruit-pudding-cake-non-veg.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169146_3-elite-jackfruit-pudding-cake-non-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169146-2_4-elite-jackfruit-pudding-cake-non-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169146-3_4-elite-jackfruit-pudding-cake-non-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169146-4_4-elite-jackfruit-pudding-cake-non-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169146-5_2-elite-jackfruit-pudding-cake-non-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169145_4-elite-jackfruit-pudding-cake-non-veg.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Indulge in the delectable flavours of the Ripe Jackfruit Cake, a unique Goan delicacy that offers a truly exceptional culinary experience. This cake is made with fresh, sweet ripe jackfruit, which is first steamed and then shallow fried to create a crunchy, irresistible texture. Rich in flavour and perfectly balanced, it presents a unique and delightful way to enjoy a wholesome dessert that everyone will love. Whether you're looking to satisfy your hunger or simply treat yourself to a special treat, this Ripe Jackfruit Cake is a perfect choice that is sure to delight your senses and leave you craving more.",
+   "ingredients": "Egg, Wheat Flour, Sugar, Edible Veg Oil, Candied Papaya, Glucose Syrup, Invert Syrup, Humectants (ins422 & 420), Emulsifiers (ins491, 477, 471 & 464), Milk Solids, Dextrose, Iodized Salt, Permitted Class Ii Preservatives (ins202 & 200), Leavening Agent (ins500), Acidity Regulator (ins260), Stabilizing Agent (ins415) And Antioxidant (ins320), Fruit Jam, Thickner, Pulpe, Nuts.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "Approx. 30g",
+    "Energy (kcal)": "346.53",
+    "Protein (g)": "3.86",
+    "Carbohydrate (g)": "39.96",
+    "Of which Sugar (g)": "0.38",
+    "Added Sugar (g)": "25.39",
+    "Total Fat (g)": "18.88",
+    "Saturated Fat (g)": "5.13",
+    "Trans Fat (g)": "0.01",
+    "Cholesterol (mg)": "62.11",
+    "Sodium (mg)": "24.19",
+    "Dietary Fibre (g)": "0.70",
+    "Iron (mg)": "0.92",
+    "Calcium (mg)": "13.24"
+   },
+   "storageInstructions": "*Store under cool, dry and hygienic conditions\n*Keep away from direct sunlight and moisture",
+   "manufacturerName": "Elite Natural Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000648"
+  }
+ },
+ {
+  "title": "Rich Plum Cake",
+  "handle": "rich-plum-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004525_4-elite-plum-cake-rich.jpg"
+    }
+   },
+   {
+    "title": "600g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321712_2-elite-rich-plum-cake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004525_4-elite-plum-cake-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004525-2_2-elite-plum-cake-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004525-3_2-elite-plum-cake-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004525-4_2-elite-plum-cake-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004525-5_2-elite-plum-cake-rich.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321712_2-elite-rich-plum-cake.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Cantains Added Synthetic Flavours( Vanilla, Lemon) And Natural Colour(Caramel)",
+   "ingredients": "Soaked Flavours, Wheat Flour, Egg, Sugar, Ghee, Edible Vegtable Fat",
+   "manufacturerName": "Elite Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Delight Plum Cake",
+  "handle": "delight-plum-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007649_7-elite-delight-cake-plum.jpg"
+    },
+    "barcode": "8906009990057"
+   },
+   {
+    "title": "650g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007650_7-elite-delight-cake-plum.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007649_7-elite-delight-cake-plum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007649-2_1-elite-delight-cake-plum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007649-3_1-elite-delight-cake-plum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007649-4_1-elite-delight-cake-plum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007649-5_1-elite-delight-cake-plum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007649-6_1-elite-delight-cake-plum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007650_7-elite-delight-cake-plum.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Soaked Fruits, Wheat Flour, Eggs, Sugar, Edible Vegetable Fat, Edible Vegetable Oil, Butter, Liquid Glucose, Humectant (E 420), Caramel, Cocoa Powder, Almond, Permitted Flavours, Leavening Agents (E 341, E 500, E 334), Emulsifiers (E 466), Salt, Preservative (E 202, E 260)",
+   "manufacturerName": "Elite Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Plum Surprise Cake",
+  "handle": "plum-surprise-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052066_3-elite-plum-cake-surprise.jpg"
+    }
+   },
+   {
+    "title": "680g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/292457_7-elite-plum-surprise-cake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052066_3-elite-plum-cake-surprise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052066-2_1-elite-plum-cake-surprise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052066-3_1-elite-plum-cake-surprise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052066-4_1-elite-plum-cake-surprise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052066-5_1-elite-plum-cake-surprise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292457_7-elite-plum-surprise-cake.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "The term \"plum\" originally referred to prunes, raisins or grapes. Prune in modern French means plum, so plum tarts have names such as tarte aux prunes. In English, prunes are dried plums, and when modern cakes use them as a primary ingredient, they may be referred to as a plum cake or type of plum cake.",
+   "ingredients": "Egg, Wheat flour, Sugar, Edible Veg Oil, Candied papaya, Glucose syrup, Invert Syrup, Humectants (INS422 & 420), Emulsifiers (INS491, 477, 471 & 464), Milk Solids, Dextrose, Iodized Salt, Permitted Class II preservatives (INS202 & 200), Leavening agent (INS500), Acidity regulator (INS260), Stabilising Agent (INS415) and Antioxidant (INS320), Fruit Jam, Thickener, Pulpe, Nuts.",
+   "manufacturerName": "Elite Natural Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000648"
+  }
+ },
+ {
+  "title": "Classic Plum Cake",
+  "handle": "classic-plum-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "680g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169155_4-elite-plum-cake-classic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169155_4-elite-plum-cake-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169155-2_4-elite-plum-cake-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169155-3_4-elite-plum-cake-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169155-4_4-elite-plum-cake-classic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The term \"plum\" originally referred to prunes, raisins or grapes, Prune in modern French means plum, so plum tarts have names such as Tarte aux prunes. In English, prunes are dried plums, and when modern cakes use them as a primary ingredient, they may be referred to as a plum cake or type of plum cake.\nEnjoy these delicious cakes with the beverage of your choice.",
+   "ingredients": "Egg, Wheat Flour, Sugar, Edible Veg Oil, Candied Papaya, Glucose Syrup, Invert Syrup, Humectants (ins422 & 420), Emulsifiers (ins491, 477, 471 & 464), Milk Solids, Dextrose, Iodized Salt, Permitted Class Ii Preservatives (ins202 & 200), Leavening Agent (ins500), Acidity Regulator (ins260), Stabilizing Agent (ins415) And Antioxidant (ins320), Fruit Jam, Thickener, Pulpe, Nuts. Mixed Spices.",
+   "manufacturerName": "Elite Natural Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000648"
+  }
+ },
+ {
+  "title": "Veg Plum Cake",
+  "handle": "veg-plum-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332766_1-elite-veg-plum-cake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332766_1-elite-veg-plum-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332766-2_1-elite-veg-plum-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332766-3_1-elite-veg-plum-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332766-4_1-elite-veg-plum-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332766-5_1-elite-veg-plum-cake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Elite Veg Plum Cake is a festive delight crafted with a wholesome blend of fruits, dry fruits, and vegetable-based ingredients. This all-vegetarian plum cake offers a unique taste and texture, combining the sweetness of fruits with the nutty richness of dry fruits for an irresistible flavor. Infused with carefully selected vegetable products, it’s a healthier twist on the traditional plum cake, yet still boasts a moist and soft crumb. Perfect for Christmas or any special occasion, the Elite Veg Plum Cake can be savored on its own or paired with a creamy scoop of ice cream.",
+   "manufacturerName": "Elite Foods Pvt. Ltd",
+   "fssaiLicense": "10012041000049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Choco & Plum Cake",
+  "handle": "premium-choco-plum-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "680g",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007652_6-elite-cake-choco-plum.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007652_6-elite-cake-choco-plum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007652-2_2-elite-cake-choco-plum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007652-3_2-elite-cake-choco-plum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007652-4_2-elite-cake-choco-plum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007652-5_2-elite-cake-choco-plum.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Elite Cake - Choco Plum 680 g. This indulgent cake combines rich chocolate with plump plums, creating a decadent, moist treat that's perfect for any occasion. Serve it as a sweet end to your meal or as a festive dessert.",
+   "ingredients": "Fruits & Nuts, Dry Fruits & Vegetable Products – 21.6% (Raisins – 4.5%, Candied Papaya (Papaya, Sugar, Acidity Regulator (Ins 330) And Preservative (Ins 211)), Sugar, Cashew Nuts – 3.3%, Mixed Fruits & Vegetables (Pineapple, Papaya, Pear, Carrot), Mixed Fruit Pulp (Papaya, Mango, Banana & Papaya), Sugar, Acidity Regulator (Ins 330) & Preservative (Ins 211)), Flavours (Orange And Cardamom) – 0.6%, Dates – 0.5%, Candied Ginger (Ginger Pieces, Sugar, Acidity Regulator (Ins 330) And Preservative (Ins 211)) And Acidity Regulator (Ins 330)), Candied Ginger (Ginger Pieces, Sugar, Acidity Regulator (Ins 330) And Preservative (Ins 211)), Refined Wheat Flour (Maida), Sugar, Milk Compound (Sugar, Refined Vegetable Oil, Milk Solids, Cocoa Solids, Emulsifiers (Ins 492 & Ins 322)), Water, Egg, Refined Palmolein Oil, Mixed Spices, Edible Vegetable Oil (Refined Soybean Oil), Cocoa Solids, Invert Syrup (Sugar Syrup), Milk Solids, Cocoa Butter, Wheat Flour, Edible Common Salt, Raising Agent (Ins 500(Ii)), Stabilizer (Ins 401), Leavening Agent (Ins 500(Ii)), Artificial Flavouring Substances (Vanilla), Acidity Regulator (Ins 296), Preservatives (Ins 202 & Ins 223), Iodized Salt, Artificial Flavouring Substances (Vanilla), Acidity Regulator (Ins 296), Leavening Agent (Ins 500(Ii)) And Thickener (Ins 466)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "68g",
+    "Energy (kcal)": "366.68 kcal",
+    "Protein (g)": "5.22 g",
+    "Carbohydrate (g)": "43.15 g",
+    "Of Which Sugar (g)": "4.16 g",
+    "Added Sugar (g)": "25.90 g",
+    "Total Fat (g)": "19.02 g",
+    "Saturated Fat (g)": "9.87 g",
+    "Trans Fat (g)": "0.10 g",
+    "Cholesterol (mg)": "54.29 mg",
+    "Sodium (mg)": "93.41 mg",
+    "Dietary Fibre (g)": "1.00 g",
+    "Iron (mg)": "1.10 mg",
+    "calcium (mg)": "17.60 mg"
+   },
+   "storageInstructions": "*Refrigerate the cake before cutting for better result\n*Store under cool, dry and hygienic conditions away from sunlight",
+   "manufacturerName": "Elite Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Marble Cake",
+  "handle": "marble-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007656_3-elite-cake-marble.jpg"
+    },
+    "barcode": "8906009991436"
+   },
+   {
+    "title": "700g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052064_2-elite-cake-marble.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007656_3-elite-cake-marble.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052064_2-elite-cake-marble.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Elite Cake - Marble 350 g",
+   "ingredients": "Wheat Flour, Sugar, Egg, Vegetable Fat, Butter, Liquid Glucose, Cocoa Powder, Milk Solids, Salt, Humectant (E 420), Preservatives (E 202, E 260), Leavening Agent (E 341, E 500, E 334), Permitted Flavours (Chocolate & Vanilla).",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tea Cake",
+  "handle": "tea-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007657_3-elite-tea-cake.jpg"
+    },
+    "barcode": "8906009990187"
+   },
+   {
+    "title": "500g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007658_3-elite-cake-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007657_3-elite-tea-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007657-2_1-elite-tea-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007657-3_1-elite-tea-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007657-4_1-elite-tea-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007657-5_1-elite-tea-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007658_3-elite-cake-tea.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "A tea cake is generally a light yeast-based sweet bun containing dried fruit, typically served toasted and buttered. Enjoy it with your cup of evening tea. It acts as a filler and keeps your stomach full enough for the time before lunch.",
+   "ingredients": "Wheat Flour, Sugar, Egg, Edible Vegetable Fat (Interesterified Fat), Humectant (Ins420), Corn Flour, Glucose Syrup, Leavening Agent [Ins500(Iii), (Ins260) And Thickener (Ins466), Permitted Class Ii Preservatives (Ins202 & 200), Iodised Salt, Acidity Regulator",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Calories": "431 kcal",
+    "Calories From Fat": "207 kcal",
+    "Sodium": "319 mg",
+    "Total Carbohydrate": "44g",
+    "Total Fat": "23g",
+    "Dietary Fibre": "1g",
+    "Saturated Fat": "5.47g",
+    "Sugars": "23g",
+    "Mono Unsaturated Fat": "9.86g",
+    "Protein": "12g",
+    "Poly Unsaturated Fat": "5.79g",
+    "Vitamin A": "1079 Iu",
+    "Vitamin C": "0mg",
+    "Trans Fat": "0g",
+    "calcium": "46 mg",
+    "Iron": "2mg",
+    "Cholesterol": "277 mg"
+   },
+   "manufacturerName": "Elite Natural Pvt. Ltd",
+   "fssaiLicense": "10012042000648"
+  }
+ },
+ {
+  "title": "Choco Brownie Cake",
+  "handle": "choco-brownie-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "45g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321713_3-elite-choco-brownie-cake.jpg"
+    },
+    "barcode": "8906009994109"
+   },
+   {
+    "title": "170g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40377402_1-elite-choco-brownie-cake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321713_3-elite-choco-brownie-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321713-2_3-elite-choco-brownie-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321713-3_3-elite-choco-brownie-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321713-4_3-elite-choco-brownie-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321713-5_3-elite-choco-brownie-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40377402_1-elite-choco-brownie-cake.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Indulge in the rich, decadent taste of Elite Brownie, a delectable chocolate baked confectionery that takes dessert to a whole new level. With its soft, moist texture and deep chocolate flavour, each bite is a delicious journey of taste. This versatile treat can be enjoyed on its own or as part of a gathering, providing a crowd-pleasing experience for all ages. Crafted with care, the Elite Brownie offers an excellent mouthfeel, blending the indulgent flavours of chocolate and cake in a handy, small-sized pack. Whether you're serving it at a special occasion or savouring it as a personal indulgence, this brownie promises to elevate your dessert experience. Bring home the sweet, irresistible goodness of Elite Brownie today and savour the ultimate chocolate indulgence.",
+   "ingredients": "Chocolate Paste – 21% [Sugar, Cocoa Solids, Cocoa Butter,\nEdible Vegetable Oil (Palm Oil), Milk Solids, Emulsifier (INS 322) & Nature\nIdentical Flavouring Substance], Sugar, Refined Wheat Flour (Maida), Liquid\nEgg, Liquid Glucose, Edible Vegetable Fat (Interesterified Edible Oils – Palm\nOil & Palm Kernel Oil), Water, Emulsifiers (INS 471, INS 435 & INS\n322), Preservative (INS 202), Antioxidants (INS 320 & INS 319), Sesame Oil\n& Vitamin A), Butter, Milk Solids, Cocoa Solids (1.6%), Humectant (INS\n422), Natural, Nature Identical & Artificial Flavouring Substances\n(Vanilla), Preservatives (INS 282 & INS 202), Iodized Salt, Leavening Agent\n[INS 500 (ii)], Acidity Regulator (INS 260), Flour Treatment Agent (INS\n1100(i)) and Thickener (INS 415).\nAllergen Declaration: Contains Wheat, Egg, Soy and Milk.\nManufactured in the same facility that processes Tree Nuts.",
+   "nutritionalInfo": {
+    "Energy": "379.81 kcal",
+    "Protein": "7.28 g",
+    "Carbohydrate": "40.90 g",
+    "Total Sugars": "28.70 g",
+    "Added Sugars": "24.20 g",
+    "Total Fat": "20.52 g",
+    "Saturated Fat": "5.03 g",
+    "Trans Fat": "0.07 g",
+    "Cholesterol": "41.70 mg",
+    "Sodium": "93.66 mg",
+    "Dietary Fibre": "1.21 g",
+    "Iron": "0.71 mg",
+    "Calcium": "29.98 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture.",
+   "manufacturerName": "A) Elite Foods Pvt. Ltd",
+   "fssaiLicense": "10012041000049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dreams Choco Cake",
+  "handle": "dreams-choco-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007643_6-elite-bar-cake-chocolate.jpg"
+    },
+    "barcode": "8906009994703"
+   },
+   {
+    "title": "130g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007637_7-elite-bar-cake-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007643_6-elite-bar-cake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007643-2_4-elite-bar-cake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007643-3_4-elite-bar-cake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007643-4_4-elite-bar-cake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007643-5_4-elite-bar-cake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007643-6_1-elite-bar-cake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007637_7-elite-bar-cake-chocolate.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Elite Dreams Choco Cake is a delightful chocolate cake made with high-quality ingredients. It features a rich, chocolatey flavour and a soft, moist texture. The cake is perfect for indulging in a sweet treat or enjoying with family and friends. With its premium quality and delectable taste, Elite Dreams Choco Cake is sure to satisfy your chocolate cravings.",
+   "ingredients": "Refined Wheat Flour (Maida), Liquid Egg, Sugar, Edible Vegetable Oil (Rice Bran Oil), Invert Syrup, Edible Vegetable Fat (Interesterified Edible Oils [Palm Oil And Palm Kernel Oil], Water, Emulsifiers [INS 471, INS 435 And INS 322], Preservative [INS 202], Antioxidants [INS 320 And INS 330], Sesame Oil And Vitamin A), Liquid Glucose, Improver (Dextrose, Corn Flour, Leavening Agents [INS 500(ii), INS 450(i) & INS 341(i)], Iodized Salt, Cocoa Solids, Emulsifier [INS 481(i)], Thickeners [INS 466 & INS 415] And Acidity Regulator [INS 330]), Cake Improver (Water, Sugar And Emulsifiers [INS 471, INS 470(i), INS 475 And INS 433]), Cocoa Solids (1%), Humectant (INS 422), Chocolate Paste (0.8%) [Sugar, Cocoa Solids, Cocoa Butter, Edible Vegetable Oil (Palm Oil), Milk Solids, Emulsifier (INS 322) And Nature Identical Flavouring Substance], Natural Food Colours (INS 150a), Preservatives (INS 282 & INS 202), Acidity Regulators (INS 260 & INS 330), Iodized Salt, Leavening Agent (INS 500(ii)), Natural And Nature Identical And Artificial Flavouring Substances (Chocolate), Emulsifier (INS 477), Thickener (INS 415) and Improver (INS 1100(i)).\nAllergen Declaration: Contains Wheat, Egg, Milk And Soy. Manufactured In The Same Facility That Processes Tree Nuts.",
+   "nutritionalInfo": {
+    "Energy": "311.75 kcal",
+    "Protein": "4.73 g",
+    "Carbohydrate": "39.31 g",
+    "Total Sugars": "7.12 g",
+    "Added Sugars": "18.84 g",
+    "Total Fat": "14.88 g",
+    "Saturated Fat": "4.53 g",
+    "Trans Fat": "0.03 g",
+    "Cholesterol": "70.28 mg",
+    "Sodium": "120.21 mg",
+    "Dietary Fibre": "0.85 g",
+    "Iron": "1.00 mg",
+    "Calcium": "15.07 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight\nOnce opened, keep the cake in an airtight container or wrap it well to retain moisture and freshness\nConsume within a few days for the best taste and texture",
+   "manufacturerName": "A) Elite Foods Pvt. Ltd",
+   "fssaiLicense": "10012041000049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dreams Vanilla Cake",
+  "handle": "dreams-vanilla-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007644_7-elite-bar-cake-vanilla.jpg"
+    },
+    "barcode": "8906009994710"
+   },
+   {
+    "title": "130g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007638_9-elite-bar-cake-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007644_7-elite-bar-cake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007644-2_5-elite-bar-cake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007644-3_5-elite-bar-cake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007644-4_5-elite-bar-cake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007644-5_5-elite-bar-cake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007644-6_2-elite-bar-cake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007644-7_2-elite-bar-cake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007638_9-elite-bar-cake-vanilla.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Elite Dreams Vanilla Cake is a delicious vanilla-flavoured treat crafted with quality ingredients for a soft, moist and delightful experience. Perfect for enjoying as a snack, dessert or a quick indulgence, this cake offers a rich vanilla taste and a light texture that melts in your mouth. Conveniently packed and easy to enjoy anytime, Elite Dreams Vanilla Cake is a tasty choice for cake lovers. It is also trans fat free, making it a delightful option for everyday enjoyment.",
+   "ingredients": "Sugar, Refined Wheat Flour (Maida), Liquid Egg, Edible Vegetable Oil (Rice Bran Oil), Edible Vegetable Fat (Interesterified Edible Oils [Palm Oil And Palm Kernel Oil], Water, Emulsifiers [INS 471, INS 435 And INS 322], Preservative [INS 202], Antioxidants [INS 320 And INS 330], Sesame Oil And Vitamin A), Humectants (INS 420 & INS 422), Liquid Glucose, Improver (Dextrose, Corn Flour, Leavening Agents [INS 500(ii), INS 450(i) & INS 341(i)], Iodized Salt, Cocoa Solids, Emulsifier [INS 481(i)], Thickeners [INS 466 & INS 415] And Acidity Regulator [INS 330]), Cake Improver (Water, Sugar And Emulsifiers [INS 471, INS 470(i), INS 475 & INS 433]), Baking Powder, Preservatives (INS 282 & INS 202), Iodized Salt, Nature Identical And Artificial Flavouring Substances (Vanilla), Acidity Regulators (INS 260 & INS 330), Emulsifier (INS 477) and Thickener (INS 415).\nAllergen Declaration: Contains Wheat, Egg And Soy. Manufactured In The Same Facility That Processes Milk And Tree Nuts.",
+   "nutritionalInfo": {
+    "Energy": "311.39 kcal",
+    "Protein": "4.49 g",
+    "Carbohydrate": "41.84 g",
+    "Total Sugars": "4.06 g",
+    "Added Sugars": "24.22 g",
+    "Total Fat": "13.87 g",
+    "Saturated Fat": "4.85 g",
+    "Trans Fat": "0.04 g",
+    "Cholesterol": "62.98 mg",
+    "Sodium": "151.12 mg",
+    "Dietary Fibre": "0.61 g",
+    "Iron": "0.73 mg",
+    "Calcium": "13.65 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight\nOnce opened, keep the cake in an airtight container or wrap it well to retain moisture and freshness\nConsume within a few days for the best taste and texture",
+   "manufacturerName": "A) Elite Foods Pvt. Ltd",
+   "fssaiLicense": "10012041000049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dreams Choco Orange Cake",
+  "handle": "dreams-choco-orange-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "130g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077976_8-elite-bar-cake-choco-orange.jpg"
+    },
+    "barcode": "8906009990699"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077976_8-elite-bar-cake-choco-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077976-2_7-elite-bar-cake-choco-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077976-3_7-elite-bar-cake-choco-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077976-4_7-elite-bar-cake-choco-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077976-5_7-elite-bar-cake-choco-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077976-6_2-elite-bar-cake-choco-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077976-7_2-elite-bar-cake-choco-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077976-8_1-elite-bar-cake-choco-orange.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Elite Dreams Choco Orange Cake is a delicious treat that brings together the rich taste of chocolate and the refreshing zest of orange. Soft, moist, and flavourful, this delightful cake offers a perfect balance of indulgent cocoa notes and citrusy sweetness, making it an ideal snack for tea-time, dessert moments, or on-the-go enjoyment.",
+   "ingredients": "Liquid Egg, Sugar, Refined Wheat Flour (Maida), Edible Vegetable Fat {Interesterified Edible Oils (Palm Oil and Palm Kernel Oil), Water, Emulsifiers (INS 471, INS 435, and INS 322), Preservative (INS 202), Antioxidants (INS 320 and INS 330), Sesame Oil, and Vitamin A}, Edible Vegetable Oil (Rice Bran Oil), Liquid Glucose, Invert Syrup, Cocoa Solids (1.5%), Humectant (INS 420), Cake Improver {Emulsifiers [INS 471, INS 470(i), INS 475, and INS 433]}, Natural Colouring Substance (INS 150a), Synthetic Food Colours (INS 110 and INS 122), Natural, Nature Identical and Artificial Flavouring Substances (Chocolate and Vanilla), Preservatives (INS 282 and INS 202), Iodized Salt, Baking Powder, Leavening Agents [INS 500(ii) and INS 450(i)], Emulsifier (INS 477), Acidity Regulator (INS 260), and Thickener (INS 415).\nAllergen Information: Contains wheat, egg, and soy. Manufactured in the same facility that processes milk and tree nuts.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "311.03",
+    "Protein (g)": "5.47",
+    "Carbohydrate (g)": "42.74",
+    "Total Sugars (g)": "27.65",
+    "Added Sugars (g)": "23.59",
+    "Total Fat (g)": "12.92",
+    "Saturated Fat (g)": "6.65",
+    "Trans Fat (g)": "0.09",
+    "Cholesterol (mg)": "92.49",
+    "Sodium (mg)": "145.47",
+    "Dietary Fibre (g)": "0.97",
+    "Iron (mg)": "1.08",
+    "Calcium (mg)": "18.23"
+   },
+   "storageInstructions": "Store in a cool, dry place.",
+   "manufacturerName": "(A) Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000049"
+  }
+ },
+ {
+  "title": "Dreams Choco Pineapple Cake",
+  "handle": "dreams-choco-pineapple-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "130g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007640_9-elite-bar-cake-pineapple.jpg"
+    },
+    "barcode": "8906009990668"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007640_9-elite-bar-cake-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007640-2_10-elite-bar-cake-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007640-3_10-elite-bar-cake-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007640-4_10-elite-bar-cake-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007640-5_10-elite-bar-cake-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007640-6_2-elite-bar-cake-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007640-7_2-elite-bar-cake-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007640-8_1-elite-bar-cake-pineapple.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Elite Bar Cake - Pineapple is a delightful pineapple-flavoured cake made with high-quality ingredients. It features a soft, moist texture and a delicious pineapple taste that is sure to delight your taste buds. This cake is perfect for any occasion, whether you're enjoying it as a snack or serving it as a dessert. With its convenient bar shape, it's easy to share and enjoy with family and friends.",
+   "ingredients": "Liquid Egg, Sugar, Refined Wheat Flour (Maida), Edible Vegetable Fat {Interesterified Edible Oils (Palm Oil and Palm Kernel Oil), Water, Emulsifiers (INS 471, INS 435, and INS 322), Preservative (INS 202), Antioxidants (INS 320 and INS 330), Sesame Oil, and Vitamin A}, Edible Vegetable Oil (Rice Bran Oil), Liquid Glucose, Invert Syrup, Cocoa Solids (1.5%), Humectant (INS 420), Cake Improver {Emulsifiers [INS 471, INS 470(i), INS 475, and INS 433]}, Natural Colour (INS 150a), Synthetic Food Colour (INS 102), Natural, Nature Identical and Artificial Flavouring Substances (Chocolate, Milk, Vanilla, and Pineapple), Preservatives (INS 282 and INS 202), Iodized Salt, Baking Powder, Leavening Agents [INS 500(ii) and INS 450(i)], Emulsifier (INS 477), Acidity Regulator (INS 260), and Thickener (INS 415).\nAllergen Information: Contains wheat, milk, egg, and soy. Manufactured in the same facility that processes tree nuts.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "311.03",
+    "Protein (g)": "5.47",
+    "Carbohydrate (g)": "42.74",
+    "Total Sugars (g)": "27.65",
+    "Added Sugars (g)": "27.26",
+    "Total Fat (g)": "12.92",
+    "Saturated Fat (g)": "6.65",
+    "Trans Fat (g)": "0.09",
+    "Cholesterol (mg)": "92.49",
+    "Sodium (mg)": "145.47",
+    "Dietary Fibre (g)": "0.97",
+    "Iron (mg)": "1.08",
+    "Calcium (mg)": "18.23"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight. Once opened, keep the cake in an airtight container or wrap it well to retain moisture and freshness. Consume within a few days for the best taste and texture.",
+   "manufacturerName": "(A) Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000049"
+  }
+ },
+ {
+  "title": "Dreams Orange Fruity Cake",
+  "handle": "dreams-orange-fruity-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "110g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007641_3-elite-orange-flavoured-tooti-frooti.jpg"
+    },
+    "barcode": "8906009994734"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007641_3-elite-orange-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007641-2_3-elite-orange-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007641-3_3-elite-orange-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007641-4_3-elite-orange-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007641-5_2-elite-orange-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007641-6_1-elite-orange-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007641-7_1-elite-orange-flavoured-tooti-frooti.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Dreams Orange Fruity Cake is a soft and aromatic cake infused with the bright, citrusy flavour of orange. Its moist sponge and gentle sweetness create a refreshing taste in every bite. Ideal for tea-time, gatherings, or simple indulgence, this fruity cake can be enjoyed on its own or served lightly warmed.",
+   "ingredients": "Liquid Egg, Refined Wheat Flour (Maida), Sugar, Fruit Products - 10.8% {candied Papaya [papaya, Sugar, Acidity Regulators (Ins 330 & Ins 331(I)), Preservative (Ins 211), Synthetic Food Colour (Ins 124)] And Orange Fruit Powder [orange Fruit Solids, Maltodextrin, Acidity Regulator (Ins 330) And Anti-caking Agent (Ins 551)]), Edible Vegetable Oil (Rice Bran Oil), Liquid Glucose, Humectant (Ins 420), Cake Improver - {emulsifiers [ins 471, Ins 470(I), Ins 475 & Ins 433]}, Preservatives (Ins 282 & Ins 202), Dextrose, Natural And Nature Identical Flavouring Substances, Iodised Salt, Thickeners (Ins 464 & Ins 415), Acidity Regulator (Ins 260), Baking Powder And Synthetic Food Colours (Ins 110 & In5 122). Allergen Declaration: Contains Wheat & Egg. Manufactured In The Same Facility That Processes Milk, Soy & Tree Nuts",
+   "nutritionalInfo": {
+    "Energy (kcal)": "297.92",
+    "Protein (g)": "5.14",
+    "Carbohydrate (g)": "42.67",
+    "Total Sugars (g)": "34.10",
+    "Added Sugars (g)": "25.85",
+    "Total Fat (g)": "11.73",
+    "Saturated Fat (g)": "2.55",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "82.15",
+    "Sodium (mg)": "120.61",
+    "Dietary Fibre (g)": "0.57",
+    "Iron (mg)": "0.79",
+    "Calcium (mg)": "15.95"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight. Once opened, keep the cake in an airtight container or wrap it well to retain moisture and freshness. Consume within a few days for the best taste and texture.",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dreams Pineapple Fruity Cake",
+  "handle": "dreams-pineapple-fruity-cake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "110g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007642_3-elite-pineapple-flavoured-tooti-frooti.jpg"
+    },
+    "barcode": "8906009994741"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007642_3-elite-pineapple-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007642-2_3-elite-pineapple-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007642-3_1-elite-pineapple-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007642-4_3-elite-pineapple-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007642-5_3-elite-pineapple-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007642-6_2-elite-pineapple-flavoured-tooti-frooti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007642-7_1-elite-pineapple-flavoured-tooti-frooti.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Dreams Pineapple Fruity Cake is a light and flavourful bake infused with the sweet and tangy taste of pineapple. Soft sponge layers are complemented by fruity notes, creating a pleasing balance of sweetness and freshness. Perfect for celebrations, tea-time moments, or casual desserts, this cake is best enjoyed sliced and shared with family and friends.",
+   "ingredients": "Liquid Egg, Refined Wheat Flour (Maida), Sugar, Fruit Products - 10.8% {candied Papaya [papaya, Sugar, Acidity Regulators (Ins 330 & Ins 331(I)), Preservative (Ins 211), Synthetic Food Colour (Ins 124)] And Pineapple Fruit Powder [pineapple Fruit Solids, Maltodextrin, Acidity Regulator (Ins 330) And Anti-caking Agent (Ins 551)]}, Edible Vegetable Oil (Rice Bran Oil), Liquid Glucose, Humectant (Ins 420), Cake Improver - {emulsifiers [ins 471, Ins 470(I), Ins 475 & Ins 433]}, Preservatives (Ins 282 & Ins 202), Dextrose, Natural, Nature Identical And Artificial Flavouring Substances (Pineapple), Iodised Salt, Thickeners (Ins 464 & Ins 415), Acidity Regulator (Ins 260), Baking Powder And Synthetic Food Colour (Ins 102). Allergen Declaration: Contains Wheat & Egg. Manufactured In The Same Facility That Processes Milk, Soy & Tree Nuts.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "297.92",
+    "Protein (g)": "5.14",
+    "Carbohydrate (g)": "42.67",
+    "Total Sugars (g)": "34.10",
+    "Added Sugars (g)": "25.85",
+    "Total Fat (g)": "11.72",
+    "Saturated Fat (g)": "2.55",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "82.15",
+    "Sodium (mg)": "120.61",
+    "Dietary Fibre (g)": "0.57",
+    "Iron (mg)": "0.81",
+    "Calcium (mg)": "15.96"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight. Once opened, keep the cake in an airtight container or wrap it well to retain moisture and freshness. Consume within a few days for the best taste and texture.",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dreams Choco Cupcake",
+  "handle": "dreams-choco-cupcake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "17g",
+    "price": "4",
+    "compare_at_price": "4",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052061_4-elite-dreams-cup-cake-choco.jpg"
+    },
+    "barcode": "8906009994505"
+   },
+   {
+    "title": "170g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007645_6-elite-dreams-cup-cake-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052061_4-elite-dreams-cup-cake-choco.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052061-2_2-elite-dreams-cup-cake-choco.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052061-3_2-elite-dreams-cup-cake-choco.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052061-4_2-elite-dreams-cup-cake-choco.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052061-5_2-elite-dreams-cup-cake-choco.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007645_6-elite-dreams-cup-cake-chocolate.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Elite Choco Cup Cake is a fine blend of sweetness, softness and just the right amount of chocolate flavour. Baked to perfection, it's a soft and tasty delight. Perfect for tea-time treats, quick desserts or indulgent snacking, this cupcake offers a moist crumb and rich cocoa notes in every bite. Ideal for sharing with family or enjoying on your own, it brings bakery-style goodness to everyday moments. Serve fresh to experience its comforting aroma, balanced sweetness and irresistible chocolatey charm.",
+   "ingredients": "Sugar, Refined Wheat Flour (Maida), Liquid Egg, Edible\nVegetable Oil (Rice Bran Oil), Invert Syrup, Cake Improver {Dextrose, Leavening\nAgents (INS 500(II), Ins 341(I), Ins 450(I)), Corn Flour, Iodised Salt,\nThickeners (INS 466 & INS 415), Cocoa Solids, Emulsifier (Ins 481(I)) And Acidity\nRegulator (Ins 330)}, Humectant (Ins 422), Chocolate Paste - 1% {Sugar, Cocoa\nSolids, Cocoa Butter, Edible Vegetable Oil (Palm Oil), Milk Solids, Emulsifier\n(INS 322) & Nature Identical Flavouring Substance}, Cocoa Solids - 1%,\nNatural Food Colour (Ins 150a), Preservatives (Ins 282 & Ins 202), Natural,\nNature Identical And Artificial Flavouring Substances (Chocolate, Vanilla &\nMilk), Acidity Regulator (Ins 260) And Leavening Agent (INS 500(II)).",
+   "nutritionalInfo": {
+    "Energy": "345.18 kcal",
+    "Protein": "4.82 g",
+    "Carbohydrate": "45.45 g",
+    "Total Sugars": "29.59 g",
+    "Added Sugars": "29.16 g",
+    "Total Fat": "15.80 g",
+    "Saturated Fat": "3.28 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "61.23 mg",
+    "Sodium": "50.69 mg",
+    "Dietary Fibre": "0.93 g",
+    "Iron": "1.01 mg",
+    "Calcium": "14.58 mg"
+   },
+   "storageInstructions": "Store under cool, dry and hygienic conditions. Away from direct sunlight",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "fssaiLicense": "10012041000049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dreams Butter Cupcake",
+  "handle": "dreams-butter-cupcake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052062_5-elite-dreams-cup-cake-butter.jpg"
+    },
+    "barcode": "8906009993614"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052062_5-elite-dreams-cup-cake-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052062-2_6-elite-dreams-cup-cake-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052062-3_6-elite-dreams-cup-cake-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052062-4_6-elite-dreams-cup-cake-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052062-5_4-elite-dreams-cup-cake-butter.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Elite Butter Cup Cake is a fine blend of sweetness, softness, and just the right amount of butter flavour. It is a mini version of the soft-base vanilla cake and perfect to be an anytime treat.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1 CUP CAKE [APPROX. 28.3g]",
+    "Energy (kcal)": "361.35",
+    "Protein (g)": "4.66",
+    "Carbohydrate (g)": "43.01",
+    "Total Sugars (g)": "26.40",
+    "Added Sugars (g)": "25.99",
+    "Total Fat (g)": "18.82",
+    "Saturated Fat (g)": "5.94",
+    "Trans Fat (g)": "0.02",
+    "Cholesterol (mg)": "66.70",
+    "Sodium (mg)": "60.20",
+    "Dietary Fibre (g)": "0.66",
+    "Iron (mg)": "0.75",
+    "Calcium (mg)": "14.29"
+   },
+   "storageInstructions": "*Store under cool, dry and hygienic conditions\n*Away from sunlight",
+   "manufacturerName": "A) Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dreams Strawberry Cupcake",
+  "handle": "dreams-strawberry-cupcake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052063_4-elite-dreams-cup-cake-strawberry.jpg"
+    },
+    "barcode": "8906009994246"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052063_4-elite-dreams-cup-cake-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052063-2_2-elite-dreams-cup-cake-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052063-3_2-elite-dreams-cup-cake-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052063-4_2-elite-dreams-cup-cake-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052063-5_2-elite-dreams-cup-cake-strawberry.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Elite Strawberry Cup Cake is a fine blend of sweetness, softness and just the right amount of strawberry flavour. Whether it is for a party or simply to satisfy your sweet tooth, Elite Cup Cakes are the perfect choice.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1 CUP CAKE [APPROX. 28.3g]",
+    "Energy (kcal)": "361.35",
+    "Protein (g)": "4.66",
+    "Carbohydrate (g)": "43.01",
+    "Total Sugars (g)": "26.41",
+    "Added Sugars (g)": "25.99",
+    "Total Fat (g)": "18.82",
+    "Saturated Fat (g)": "5.94",
+    "Trans Fat (g)": "0.02",
+    "Cholesterol (mg)": "66.70",
+    "Sodium (mg)": "60.23",
+    "Dietary Fibre (g)": "0.66",
+    "Iron (mg)": "0.75",
+    "Calcium (mg)": "14.29"
+   },
+   "storageInstructions": "* Store under cool, dry and hygienic conditions, away from sunlight",
+   "manufacturerName": "A) Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dreams Carrot Pudding Cupcake",
+  "handle": "dreams-carrot-pudding-cupcake",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204882_3-elite-dreams-carrot-pudding-cup-cake-6-in-1.jpg"
+    },
+    "barcode": "8906009994253"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204882_3-elite-dreams-carrot-pudding-cup-cake-6-in-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204882-2_3-elite-dreams-carrot-pudding-cup-cake-6-in-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204882-3_3-elite-dreams-carrot-pudding-cup-cake-6-in-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204882-4_3-elite-dreams-carrot-pudding-cup-cake-6-in-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204882-5_3-elite-dreams-carrot-pudding-cup-cake-6-in-1.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Ready-to-eat Carrot Pudding Cupcakes from Elite bring a unique twist to traditional treats, combining rich flavour with soft, moist texture. Crafted using a range of natural ingredients, these cupcakes reflect Elite's commitment to quality and innovation. Backed by in-house R&D, we continually evolve our offerings to meet consumer expectations in taste and satisfaction, staying true to our promise 'Elite Good for You.'",
+   "ingredients": "Vegetable Products, Dry Fruits & Nuts - 28.1%, Candied Carrot - 17.7%, Carrot Shreds, Sugar, Inverted Sugar, Acidity Regulator (Ins 330), Preservative (Ins 211), Soaked Dates, Dates, Sugar, Acidity Regulator (Ins 330), Cashew Nuts - 1.4%, Refined Wheat Flour (Maida), Liquid Egg, Edible Vegetable Oil (Rice Bran Oil), Sugar, Clarified Butter, Invert Syrup, Liquid Glucose, Natural, Nature Identical And Artificial Flavouring Substances (Vanilla And Milk), Natural Food Colour (Ins 150A), Leavening Agent (Ins 500(Ii)), Preservatives (Ins 282 & Ins 202), Cinnamon Powder, Acidity Regulators (Ins 260 & Ins 330), Baking Powder",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "25g",
+    "Energy (kcal)": "346.44 kcal",
+    "Protein (g)": "3.60 g",
+    "Carbohydrate (g)": "41.30 g",
+    "Total Sugars (g)": "29.90 g",
+    "Added Sugars (g)": "25.43 g",
+    "Total Fat (g)": "18.26 g",
+    "Saturated Fat (g)": "5.84 g",
+    "Trans Fat (g)": "0.02 g",
+    "Cholesterol (mg)": "59.88 mg",
+    "Sodium (mg)": "23.33 mg",
+    "Dietary Fibre (g)": "1.23 g",
+    "Iron (mg)": "1.34 mg",
+    "calcium (mg)": "28.62 mg"
+   },
+   "storageInstructions": "*Store under cool, dry, and hygienic conditions\n*Keep away from sunlight",
+   "manufacturerName": "A) Elite Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000049"
+  }
+ },
+ {
+  "title": "Chakki Atta",
+  "handle": "chakki-atta",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "66",
+    "compare_at_price": "66",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169127_10-elite-chakki-atta.jpg"
+    },
+    "barcode": "8906007240031"
+   },
+   {
+    "title": "5kg",
+    "price": "328",
+    "compare_at_price": "328",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189372_2-elite-whole-wheat-atta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169127_10-elite-chakki-atta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169127-2_12-elite-chakki-atta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169127-3_12-elite-chakki-atta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169127-4_12-elite-chakki-atta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169127-5_10-elite-chakki-atta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189372_2-elite-whole-wheat-atta.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Chakki Atta is wholemeal wheat flour, used to make flatbreads such as chapati, roti, naan, paratha and puri. Make delicious bread with Elite Chakki Atta.",
+   "ingredients": "Whole Wheat",
+   "storageInstructions": "Ready to cook\nStore under cool,dry and hygenic conditions,away from sunlight.",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702"
+  }
+ },
+ {
+  "title": "Whole Wheat Atta",
+  "handle": "whole-wheat-atta",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10kg",
+    "price": "550",
+    "compare_at_price": "550",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189371_2-elite-chakki-atta-pouch.jpg"
+    },
+    "barcode": "8906007240451"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189371_2-elite-chakki-atta-pouch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189371-2_2-elite-chakki-atta-pouch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189371-3_2-elite-chakki-atta-pouch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189371-4_2-elite-chakki-atta-pouch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189371-5_2-elite-chakki-atta-pouch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Atta is made from hard wheat, which has a high gluten content. This means that your flour is probably better for bread than typical all-purpose whole wheat flour from the baking aisle. Made from 100% whole wheat, Elite chakki atta is a rich source of dietary fibre.",
+   "storageInstructions": "Ready to cook\nStore under cool,dry and hygenic conditions,away from sunlight.",
+   "manufacturerName": "Yamuna Roller Flour Mills Pvt. Ltd. Kalamasseri",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702",
+   "ingredients": "Whole Wheat"
+  }
+ },
+ {
+  "title": "Wheat Puttupodi",
+  "handle": "wheat-puttupodi",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169180_4-elite-wheat-puttupodi.jpg"
+    },
+    "barcode": "8906007250016"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169180_4-elite-wheat-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169180-2_4-elite-wheat-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169180-3_4-elite-wheat-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169180-4_4-elite-wheat-puttupodi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Puttu is a Kerala food at its best. White puttu podi will ensure that you relish the traditional breakfast of steamed puttu served with assorted dishes.",
+   "ingredients": "Wheat",
+   "storageInstructions": "Store under cool,dry and hygenic condition,away from sunlight,\nOnce opened transfer the products into the air tight container.",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702"
+  }
+ },
+ {
+  "title": "Maida",
+  "handle": "maida",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169148_9-elite-maida.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169147_10-elite-maida.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169148_9-elite-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169148-2_11-elite-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169148-3_11-elite-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169148-4_11-elite-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169148-5_6-elite-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169147_10-elite-maida.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your culinary experience with Elite Maida, a finely milled, refined, and bleached wheat flour from the Indian subcontinent. Closely resembling cake flour, this versatile ingredient is perfect for creating delicious breads of your choice. Carefully selected grains and the stonechakki grinding process ensure top-quality purity and the preservation of essential nutrients. Transform your cooking with Elite Maida, packed with flavour and goodness for a truly wholesome meal.",
+   "ingredients": "Wheat",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "349kcal",
+    "Calories from Fat": "9 kcal",
+    "Total Fat": "1g",
+    "Saturated Fat": "0.2g",
+    "Mono unsaturated fat": "0.4g",
+    "Poly unsaturated fat": "0.3g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "9 mg",
+    "Total Carbohydrate": "74g",
+    "Sugars": "0g",
+    "Dietary Fibre": "3g",
+    "Protein": "11g",
+    "Vitamin A": "42 IU",
+    "Vitamin C": "0 mg",
+    "Calcium": "23 mg",
+    "Iron": "3 mg"
+   },
+   "storageInstructions": "Store in an airtight container after opening",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702"
+  }
+ },
+ {
+  "title": "Besan (Gram Flour)",
+  "handle": "besan-gram-flour",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "29",
+    "compare_at_price": "29",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169141_4-elite-gram-flour-besan.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "67",
+    "compare_at_price": "67",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169140_10-elite-gram-flour-besan.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169141_4-elite-gram-flour-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169141-2_4-elite-gram-flour-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169141-3_4-elite-gram-flour-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169141-4_4-elite-gram-flour-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169140_10-elite-gram-flour-besan.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elite Besan also known as Gram flour is a powder milled made from Besan gram that is grown using the best organic farming practises. Its pure and delicious organic gram flour without any synthetic pesticides. Our flour is stone ground so that the nutritional value are kept intact and has coarse texture instead of a very fine texture. It improves the digestibility and has many health benefits. It can be used as a face mask that is known to give you shining and smooth looking skin. This flour is a great source of fibre and protein with no gluten. It is used in many dishes.",
+   "ingredients": "Bengal gram flour (Besan).",
+   "storageInstructions": "It can be mixed with wheat flour to make roti or puri to make it protein rich.\nThis flour used to prepare pan cakes, soup, ladu etc. \nIt can be used as a thickener in soups and stews, as a batter for frying, for pancakes or waffles.\nStore in a cool and dry place .",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702"
+  }
+ },
+ {
+  "title": "Double Roasted Rava",
+  "handle": "double-roasted-rava",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "52",
+    "compare_at_price": "52",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169135_11-elite-double-roasted-rava.jpg"
+    },
+    "barcode": "8906007240611"
+   },
+   {
+    "title": "1kg",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169134_8-elite-double-roasted-rava.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169135_11-elite-double-roasted-rava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169135-2_12-elite-double-roasted-rava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169135-3_12-elite-double-roasted-rava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169135-4_12-elite-double-roasted-rava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169135-5_9-elite-double-roasted-rava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169134_8-elite-double-roasted-rava.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elite Double Roasted Rava is made from high quality durum wheat. Rava is also known as semolina or sooji. It is one of the staple ingredient in the Indian diet. It has a sweet, nutty flavour and earthy aroma. This nutritious sooji has a rich flavour and aroma. We bring to you roasted rava that helps make your cooking process easy. It is rich in iron, minerals and antioxidant. This can be used to make both, sweet and savoury dishes. It is mainly used in making couscous, pasta, upma, and sweet puddings. It does not contain any added preservatives or added flavour.",
+   "ingredients": "Wheat (Semolina)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "156 kcal",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "9mg",
+    "Total Carbohydrate": "34g",
+    "Dietary Fibre": "2g",
+    "Total Sugars": "0g",
+    "Includes 0g Added sugars": "0g",
+    "Protein": "5g",
+    "Vitamin D": "0 mcg",
+    "Calcium": "7mg",
+    "Iron": "1mg",
+    "Potassium": "37mg",
+    "Serving Size": "½ cup (about 45g)"
+   },
+   "storageInstructions": "Store in a cool and dry place",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Roasted Rava",
+  "handle": "roasted-rava",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "86",
+    "compare_at_price": "86",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169163_5-elite-roasted-rava.jpg"
+    },
+    "barcode": "8906007240925"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169163_5-elite-roasted-rava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169163-2_4-elite-roasted-rava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169163-3_4-elite-roasted-rava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169163-4_4-elite-roasted-rava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169163-5_4-elite-roasted-rava.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rava is used primarily for making upma, pancakes, baby cereals, Rava dosa and sweet dishes like Kesari/Ksheera. Double horse Rava/Sooji is renowned across the country for the preparation of Halwas, upma, other breakfast and sweet dishes.",
+   "ingredients": "Roasted rava(roasted sooji)-1 cup,\nGinger-1 inch piece chopped finely,\nchillies red or green-2 nos,\nonion medium size-1 no chopped lengthwise,\nsalt-to-taste,\noil-2tbsp\nwater-2 cup",
+   "usageInstructions": "Heat oil in a pan and do the seasoning.\nAdd chillies,ginger and onion and fry it till translucent.\nTo that add salt and water and when it boils add the rava gradually.\nKeep stirring and take care as not to form lumps.\nSimmer the stove cover and let it cook for 5 minutes.serve hot.",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702"
+  }
+ },
+ {
+  "title": "Roasted Rice Powder",
+  "handle": "roasted-rice-powder",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169158_5-elite-rice-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169158_5-elite-rice-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169158-2_5-elite-rice-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169158-3_5-elite-rice-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169158-4_5-elite-rice-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169158-5_1-elite-rice-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169158-6_1-elite-rice-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the delightful versatility of our finely milled rice flour. Distinct from rice starch, this premium ingredient is perfect for those with gluten sensitivities or celiac disease. Boasting a light and fluffy texture, it creates airy baked goods and crispy coatings for frying. Ideal for a wide range of culinary applications, from baking and thickening sauces to preparing traditional Asian dishes, this multi-purpose flour maintains its freshness for up to a year from the date of packaging. Elevate your cooking and baking with the exceptional quality of our rice flour.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "353 kcal",
+    "Calories from Fat": "9 kcal",
+    "Total Fat": "1g",
+    "Saturated fat": "0.39g",
+    "Mono unsaturated fat": "0.44g",
+    "Poly unsaturated fat": "0.38g",
+    "Trans fat": "0g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg",
+    "Total Carbohydrate": "80g",
+    "Sugars": "0g",
+    "Dietary Fibre": "2g",
+    "Protein": "6 g",
+    "Vitamin A": "0 IU",
+    "Vitamin C": "0 mg",
+    "Calcium": "10 mg",
+    "Iron": "0 mg"
+   },
+   "storageInstructions": "Store in cool, dry & hygienic conditions, away from sunlight\nOnce opened, transfer to an airtight container",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702"
+  }
+ },
+ {
+  "title": "Rice Powder",
+  "handle": "rice-powder",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169157_1-elite-rice-powder.jpg"
+    },
+    "barcode": "8906007250658"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169157_1-elite-rice-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169157-2_2-elite-rice-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169157-3_2-elite-rice-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169157-4_2-elite-rice-powder.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This is made from finely milled rice. It is distinct from rice starch, which is usually produced by steeping rice in lye. Rice flour is a common substitute for wheat flour.",
+   "ingredients": "Rice flour",
+   "storageInstructions": "Store under cool,dry and hygenic condition,away from sunlight,\nOnce opened transfer the products into the air tight container.",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702"
+  }
+ },
+ {
+  "title": "Rice Puttupodi",
+  "handle": "rice-puttupodi",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169160_9-elite-rice-puttupodi.jpg"
+    },
+    "barcode": "8906007252522"
+   },
+   {
+    "title": "1kg",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169159_6-elite-rice-puttupodi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169160_9-elite-rice-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169160-2_10-elite-rice-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169160-3_10-elite-rice-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169160-4_10-elite-rice-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169160-5_8-elite-rice-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169159_6-elite-rice-puttupodi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the authentic taste of traditional Kerala cuisine with our Elite Rice Puttupodi. This finely ground rice flour is the key ingredient for making the beloved South Indian breakfast dish, puttu. Relish the soft, fluffy texture and pure flavour of homemade puttu, perfectly complemented by aromatic coconut or delectable curries. Packaged in airtight bags to preserve freshness, our Puttupodi offers a maximum shelf life of 12 months, ensuring you can enjoy the authentic taste of South India any time. Versatile and easy to use, this rice flour is the ideal choice for creating the perfect puttu experience in your own kitchen. Indulge in the rich culinary heritage of Kerala with every bite of our premium Puttupodi.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "353 kcal",
+    "Calories from Fat": "9 kcal",
+    "Total Fat": "1g",
+    "Saturated fat": "0.39g",
+    "Mono unsaturated fat": "0.44g",
+    "Poly unsaturated fat": "0.38g",
+    "Trans fat": "0g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg",
+    "Total Carbohydrate": "80g",
+    "Sugars": "0g",
+    "Dietary Fibre": "2g",
+    "Protein": "6 g",
+    "Vitamin A": "0 IU",
+    "Vitamin C": "0 mg",
+    "Calcium": "10 mg",
+    "Iron": "0 mg"
+   },
+   "storageInstructions": "Store under cool, dry and hygienic conditions, away from sunlight\nOnce opened, transfer the product into an airtight container",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702"
+  }
+ },
+ {
+  "title": "Ragi Puttupodi",
+  "handle": "ragi-puttupodi",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "69",
+    "compare_at_price": "69",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169156_5-elite-ragi-puttupodi.jpg"
+    },
+    "barcode": "8906007250030"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169156_5-elite-ragi-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169156-2_7-elite-ragi-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169156-3_7-elite-ragi-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169156-4_7-elite-ragi-puttupodi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169156-5_9-elite-ragi-puttupodi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Puttu is a Kerala food at its best. The white puttupodi will ensure that you relish the traditional breakfast of steamed puttu served with assorted dishes. This is a highly popular dish from Kerala and Sri Lanka.",
+   "ingredients": "Ragi (Finger Millet)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "334 kcal",
+    "Calories from Fat": "18 kcal",
+    "Total Fat": "2g",
+    "Saturated fat": "0.32g",
+    "Mono unsaturated fat": "0.7g",
+    "Poly unsaturated fat": "0.35g",
+    "Trans fat": "0g",
+    "Cholesterol": "0 mg",
+    "Sodium": "11 mg",
+    "Total Carbohydrate": "72g",
+    "Sugars": "0g",
+    "Dietary Fibre": "12g",
+    "Protein": "7 g",
+    "Vitamin A": "70 IU",
+    "Vitamin C": "0 mg",
+    "Calcium": "344 mg",
+    "Iron": "4 mg"
+   },
+   "storageInstructions": "Store in an air-tight container after opening",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702"
+  }
+ },
+ {
+  "title": "Broken Wheat Daliya",
+  "handle": "broken-wheat-daliya",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "68",
+    "compare_at_price": "68",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169119_5-elite-broken-wheat-daliya.jpg"
+    },
+    "barcode": "8906007252485"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169119_5-elite-broken-wheat-daliya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169119-2_6-elite-broken-wheat-daliya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169119-3_4-elite-broken-wheat-daliya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169119-4_1-elite-broken-wheat-daliya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169119-5_1-elite-broken-wheat-daliya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169119-6_1-elite-broken-wheat-daliya.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elite Broken Wheat Dalia is a cereal food made from the cracked parboiled groats of wheat. It contains natural proteins, vitamins and minerals. It makes a perfect food for breakfast and provides a wholesome meal to your entire family. It is slightly nutty and chewy, has a hearty, warm aroma and a delightful, grainy taste when cooked. This is often used to make soups and to stuff vegetables. It does not contain any added preservatives or added flavour.",
+   "ingredients": "Wheat Broken",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "30g",
+    "Calories": "109 kcal",
+    "Total Fat": "1g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "5mg",
+    "Total Carbohydrate": "21g",
+    "Dietary Fibre": "4g",
+    "Total Sugars": "0g",
+    "Includes 0g Added sugars": "0g",
+    "Protein": "4g",
+    "Vitamin D": "0 mcg",
+    "Calcium": "14mg",
+    "Iron": "1mg",
+    "Potassium": "85mg"
+   },
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "Bangalore Papa's Trading No 39/40",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11214334000011"
+  }
+ },
+ {
+  "title": "Broken Wheat Fine",
+  "handle": "broken-wheat-fine",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "68",
+    "compare_at_price": "68",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169120_3-elite-broken-wheat-fine.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169120_3-elite-broken-wheat-fine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169120-2_2-elite-broken-wheat-fine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169120-3_2-elite-broken-wheat-fine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169120-5_2-elite-broken-wheat-fine.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elite Broken Wheat Fine is a cereal food made from the cracked parboiled groats of wheat. It contains natural proteins, vitamins and minerals. It makes a perfect food for breakfast. This provides a wholesome meal to your entire family. It is slightly nutty and chewy, has a hearty, warm aroma and a delightful, grainy taste when cooked. This is often used to make soups and to stuff vegetables. It does not contain any added preservatives or added flavour.",
+   "ingredients": "Wheat Broken",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "350 kcal",
+    "Calories from Fat": "18 kcal",
+    "Total Fat": "2g",
+    "Saturated fat": "0.34g",
+    "Mono unsaturated fat": "0.21g",
+    "Poly unsaturated fat": "0.88g",
+    "Trans fat": "0g",
+    "Cholesterol": "0 mg",
+    "Sodium": "17 mg",
+    "Total Carbohydrate": "71g",
+    "Sugars": "0g",
+    "Dietary Fibre": "13g",
+    "Protein": "12g",
+    "Vitamin A": "107 IU",
+    "Vitamin C": "0mg",
+    "Calcium": "41 mg",
+    "Iron": "5 mg"
+   },
+   "storageInstructions": "Store under cool, dry and hygienic conditions, away from sunlight\nOnce opened, transfer the product into an airtight container",
+   "manufacturerName": "EAN Code",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Samba Broken Wheat",
+  "handle": "samba-broken-wheat",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169164_8-elite-samba-broken-wheat.jpg"
+    },
+    "barcode": "8906007252591"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169164_8-elite-samba-broken-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169164-2_8-elite-samba-broken-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169164-3_8-elite-samba-broken-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169164-4_8-elite-samba-broken-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169164-5_10-elite-samba-broken-wheat.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elite Samba Broken Wheat is a cereal food made from the cracked parboiled groats of wheat. It contains natural proteins, vitamins and minerals. It makes a perfect food for breakfast and provides a wholesome meal to your entire family. It is slightly nutty and chewy, has a hearty, warm aroma and a delightful, grainy taste when cooked. This is often used to make soups and to stuff vegetables. It does not contain any added preservatives or added flavour.",
+   "ingredients": "Wheat Broken",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1/4 cup (about 30g)",
+    "Calories": "109 kcal",
+    "Total Fat": "1g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "5mg",
+    "Total Carbohydrate": "21g",
+    "Dietary Fibre": "4g",
+    "Total Sugars": "0g",
+    "Includes 0g Added Sugars": "0g",
+    "Protein": "4g",
+    "Vitamin D": "0 mcg",
+    "Calcium": "14mg",
+    "Iron": "1mg",
+    "Potassium": "85mg"
+   },
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "ASG VISION",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10416000000798"
+  }
+ },
+ {
+  "title": "Matta Broken Rice",
+  "handle": "matta-broken-rice",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "54",
+    "compare_at_price": "54",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169149_3-elite-matta-broken-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169149_3-elite-matta-broken-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169149-2_3-elite-matta-broken-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169149-3_3-elite-matta-broken-rice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elite Matta Broken Rice is a high quality premium cultivated rice.\nThis short grain rice is perfect for everyday use.\nThis rice is nutritious and rich in fibre, that has a unique and rich taste.\nIt is a staple food grain that is very rich in the content of nutrients.\nIt has many health benefits that is non stick.\nYou can make delicious and different types of rice dishes.\nWe bring to a the best selected rice that is hygienically packed with care.\nBenefits\nBest quality selected rice. \nIt is hygienically packed with care. \nIt is healthy and has many health benefits. \nPerfect for everyday use.",
+   "ingredients": "Broken Rice.",
+   "nutritionalInfo": {
+    "Per 100 g": "- Calories 345 kcal, Total fat 0.4 g, Saturated Fat 0.15, Poly unsaturated Fat 0.15g, Mono unsaturated Fat 0.12 g, Trans Fat 0 g, Cholesterol 0 mg, Sodium 6 mg, Total Carbohydrates 79 g, Sugar 0 g, Dietary Fibre 4 g, Protein 6.4 g, Vitamin A 0IU, Calcium 9 mg, Zinc 1.3 mg, Riboflavin 0.05 mg, Vitamin B6 0.24 mg, Vitamin B12 0ug, Magnesium 61 mg, Vitamin C 0 mg, Iron 1.0 mg, THiamin 0.21 mg, Niacin 3.8 mg, Folate 11 ug, Phosphorus 143 mg, Vitamin D 0 IU ."
+   },
+   "storageInstructions": "Store in cool and dry hygienic place.\nUse this rice to make plain rice, pulav, jeera rice or any other rice recipes.\nThis rice is perfect for everyday use.",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702"
+  }
+ },
+ {
+  "title": "Soya Chunks",
+  "handle": "soya-chunks",
+  "vendor": "Elite",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "42",
+    "compare_at_price": "42",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169166_4-elite-soya-chunks.jpg"
+    },
+    "barcode": "8906007251457"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169166_4-elite-soya-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169166-2_4-elite-soya-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169166-3_4-elite-soya-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169166-4_4-elite-soya-chunks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elite Soya Chunks are made from soy flour. Soya Chunks contain immunity building nutrients, protein, iron and zinc. It is rich in dietary fibre and strengthens your immunity. It is very easy to prepare and makes tasty dishes. They are a blank canvas that you can paint on, they are odourless and tasteless by themselves. It can be used in many dishes and it is healthy and a good source of calcium. It is also a great replacement for chicken or any other meat.",
+   "ingredients": "Soybeans.",
+   "storageInstructions": "Soak these soya chunks for around 10 minutes before use.\nTo soak, place in a small dish and add seasonings such as garam masala, soy sauce or balsamic vinegar, before covering with boiling water.\nThe soya chunks will expand and will then be ready to cook as if they were normal meat.\nStore in a clean, cool and dry place.\nKeep away from direct sunlight.",
+   "manufacturerName": "Elite Natural Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11312008000702"
+  }
+ }
+]
