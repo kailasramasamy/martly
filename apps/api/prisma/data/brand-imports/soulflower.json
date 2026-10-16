@@ -1,0 +1,734 @@
+{
+  "brand": "Soulflower",
+  "manufacturer": "PT Invent India Pvt. Ltd.",
+  "feed": "soulflower-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/soulflower/logo-f8f83c75.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#7A8B5C",
+  "namePrefix": "Soulflower ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Lavender\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Lemongrass\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Rosemary\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Tea\\ Tree\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Organic\\ Tea\\ Tree\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Peppermint\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Organic\\ Peppermint\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Cinnamon\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Citronella\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Dreamcatcher\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Frankincense\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Geranium\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Meditation\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Neroli\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Orange\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Eucalyptus\\ \\(Nilgiri\\)\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Stress\\ Relief\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Ylang\\ Ylang\\ Essential\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Jojoba\\ Carrier\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Rosehip\\ Carrier\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Grapeseed\\ Carrier\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Aroma\\ Massage\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Aroma\\ Massage\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Lemongrass\\ Peppermint\\ Aroma\\ Massage\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Romance\\ Aroma\\ Massage\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Rose\\ Geranium\\ Aroma\\ Massage\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Sandalwood\\ Aroma\\ Massage\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Tea\\ Tree\\ Foot\\ Reflexology\\ Aroma\\ Massage\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Baby\\ Massage\\ Oil\\ with\\ Organic\\ Almond$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Oil"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Aroma\\ Bath\\ Salt$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Bath\\ Salt$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Himalayan\\ Pink\\ Rock\\ Aroma\\ Bath\\ Salt$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Ocean\\ Blue\\ Bath\\ Salt$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Rose\\ Geranium\\ Aroma\\ Bath\\ Salt$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Essential\\ Oil\\ Epsom\\ Bath\\ Salt$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Castor\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Bhringraj\\ Cooling\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Olive\\ Oil\\ for\\ Skin\\ \\&\\ Hair$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Sesame\\ Carrier\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Virgin\\ Coconut\\ Oil\\ for\\ Hair\\ \\&\\ Skin$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Pure\\ Coconut\\ Extra\\ Virgin\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Black\\ Seed\\ Kalonji\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Onion\\ Herbal\\ Hair\\ Growth\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Rosemary\\ Lavender\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Rosemary\\ Mint\\ Light\\ Hair\\ Strengthening\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Tea\\ Tree\\ Anti\\ Dandruff\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Apple\\ Cider\\ Vinegar\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Onion\\ Biotin\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Rosemary\\ Tea\\ Tree\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Anti\\ Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Neem\\ Henna\\ Shampoo\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Apple\\ Cider\\ Vinegar\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Rosemary\\ Deep\\ Strengthening\\ Hair\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Rosemary\\ Redensyl\\ Hair\\ Growth\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Rosemary\\ Smooth\\ Frizz\\-Free\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Salicylic\\ Acid\\ \\&\\ Tea\\ Tree\\ Anti\\-Dandruff\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Rosemary\\ Water\\ Hair\\ Spray\\ with\\ Mint$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Acne\\ Control\\ Foaming\\ Face\\ Wash\\ \\-\\ Tea\\ Tree\\ \\&\\ Salicylic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Vitamin\\ C\\ Foaming\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Vegan\\ PDRN\\ Spotless\\ Gel\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Brightening\\ Oil\\ Free\\ Gel\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Charcoal\\ Peel\\ Off\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Kumkumadi\\ Ayurvedic\\ Facial\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Beard\\ \\&\\ Moustache\\ Grooming\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Acid\\ Acne\\ \\&\\ Zits\\ Tea\\ Tree\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Brightening\\ Orange\\ Carrot\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Detan\\ Bright\\ Tomato\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Kojic\\ Acid\\ Kumkumadi\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Niacinamide\\ Glass\\ Skin\\ Rice\\ Water\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Shining\\ Sandalwood\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Pure\\ Strawberry\\ Glycerine\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Sea\\ Cool\\ Glycerine\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Pure\\ Tea\\ Tree\\ Oil\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Apple\\ Mangosteen\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Orange\\ Carrot\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Cool\\ Aloe\\ Vera\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Anti\\ Tan\\ Tomato\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Ginger\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Orange\\ Peppermint\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Peppermint\\ Energising\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ \\&\\ Tea\\ Tree\\ Deo\\ Soap\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Hot\\ Chocolate\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Night\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Milk\\ \\&\\ Chocolate\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Rose\\ Handmade\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Sandalwood\\ Puja\\ Diya\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    }
+  ]
+}
