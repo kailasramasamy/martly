@@ -1,0 +1,366 @@
+{
+  "brand": "Polka",
+  "manufacturer": "Polka Foods",
+  "feed": "polka-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/polka/logo-e3f932d6.png",
+  "themeColor": "#E8324A",
+  "themeColorSecondary": "#8B1A2B",
+  "namePrefix": "Polka ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Fan\\ Khari\\ Puff$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Ajwain\\ Khari\\ Puff$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Ajwain\\ Fan\\ Khari\\ Puff$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Khari\\ Puff$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Marori\\ Khari\\ Puff$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Masala\\ Marori\\ Khari$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Khari\\ Puff$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Sesame\\ Khari\\ Puff$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^French\\ Heart\\ Puff\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^French\\ Palmier\\ Heart\\ Puff\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Handmade\\ Atta\\ Patti$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Desi\\ Ghee\\ Atta\\ Patti\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Custard\\ Cream\\ Roll$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Cream\\ Roll$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Cinnamon\\ French\\ Heart\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Handmade\\ Coconut\\ Heart\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Cashew\\ \\&\\ Almond\\ Butter\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Choco\\ Vanilla\\ Cookies\\ \\-\\ Eggless$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Drop\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Kaju\\ Khatai$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Kaju\\ Pista\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Salted\\ Jeera\\ Butter\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Namkeen\\ Jeera\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Nawabi\\ Fruit\\ Biscuit\\ \\-\\ Eggless$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Amaranth\\ Cookies\\ \\-\\ Gluten\\ Free$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Gluten\\ Free\\ Ragi\\ \\&\\ Oats\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^High\\ Fibre\\ Atta\\ Digestive\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^High\\ Fibre\\ Atta\\ Millet\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Multiseed\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Millet\\ Coconut\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Millet\\ Kaju\\ Pista\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Millet\\ Oat\\ \\&\\ Cranberry\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Sugarless\\ Atta\\ Butter\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Sugarless\\ Coconut\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Sugarless\\ Khasta\\ Jeera\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Atta\\ Rusk$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Desi\\ Ghee\\ Rusk$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Classic\\ Suji\\ Rusk\\ \\-\\ Elaichi,\\ Saunf\\ \\&\\ Khus\\ Khus$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Round\\ Sooji\\ Rusk\\ \\-\\ Elaichi\\ \\&\\ Saunf$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Sugarless\\ Diet\\ Rusk\\ \\-\\ Sooji\\ \\&\\ Elaichi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Butter\\ Garlic\\ Toast$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Toast\\ Bread$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Tea\\ Toast\\ Bread$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Garlic\\ \\&\\ Oregano\\ Soup\\ Sticks$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    }
+  ]
+}
