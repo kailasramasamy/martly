@@ -1,0 +1,454 @@
+{
+  "brand": "4700BC",
+  "manufacturer": "Zea Maize Pvt. Ltd.",
+  "feed": "4700bc-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/4700bc/logo-be0346a2.png",
+  "themeColor": "#111111",
+  "themeColorSecondary": "#D4A537",
+  "namePrefix": "4700BC ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Instant\\ Popcorn\\ \\-\\ Barbeque$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Instant\\ Popcorn\\ \\-\\ Cheese$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Instant\\ Popcorn\\ \\-\\ Butter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Instant\\ Popcorn\\ \\-\\ Natural\\ Healthy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Instant\\ Popcorn\\ \\-\\ Seven\\ Spices$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Microwave\\ Popcorn\\ \\-\\ Butter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Microwave\\ Popcorn\\ \\-\\ Cheese$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Microwave\\ Popcorn\\ \\-\\ Barbeque$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Microwave\\ Popcorn\\ \\-\\ Caramel$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Microwave\\ Popcorn\\ \\-\\ Natural\\ Healthy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Butter\\ Microwave\\ PopBox$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Butter\\ Jumbo\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^White\\ Cheddar\\ Cheese\\ Jumbo\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Korean\\ Kimchi\\ Jumbo\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ Jumbo\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Devil\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Salted\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Salt\\ Caramel\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Salt\\ Caramel\\ Popcorn\\ Tin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Orange\\ Chilli\\ Caramel\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Belgian\\ Choco\\ Caramel\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^French\\ Butter\\ \\&\\ Pink\\ Salt\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Sour\\ Cream\\ \\&\\ Wasabi\\ Cheese\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Sriracha\\ Lime\\ Cheese\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Hawaiian\\ Barbeque\\ Cheese\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Netflix\\ Gourmet\\ Mix\\ Cheese\\ \\&\\ Caramel\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Netflix\\ Cheese\\ \\&\\ Caramel\\ Popcorn\\ Tin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Netflix\\ Sweet\\ \\&\\ Salty\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Nutty\\ Tuxedo\\ Chocolate\\ Popcorn\\ Tin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Makka\\ Popcorn\\ Corn\\ Kernels$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Makka\\ Classic\\ Butterfly\\ Popcorn\\ Kernels$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Makka\\ Classic\\ Butterfly\\ Popcorn\\ Kernels\\ Bottle$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Hawaiian\\ Barbeque\\ Crunchy\\ Corn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Salt\\ Crunchy\\ Corn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Korean\\ Kimchi\\ Crunchy\\ Corn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Salt\\ Pretzel\\ Knots$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Sour\\ Cream\\ \\&\\ Chives\\ Pretzel\\ Knots$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Barbeque\\ Pretzel\\ Knots$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Cheese\\ \\&\\ Herbs\\ Corn\\ Chips\\+$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Hawaiian\\ Barbeque\\ Corn\\ Chips\\+$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Korean\\ Kimchi\\ Corn\\ Chips\\+$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Salt\\ \\&\\ Truffle\\ Corn\\ Chips\\+$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Sun\\ Dried\\ Tomato\\ Corn\\ Chips\\+$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Jalapeno\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Korean\\ Kimchi\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Salsa\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Tangy\\ Guacamole\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Butter\\ Sweet\\ Corn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Natural\\ Sweet\\ Corn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Pepper\\ Sweet\\ Corn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Barbeque\\ Sweet\\ Corn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Protein\\ Pops\\ Makhana\\ \\-\\ Hawaiian\\ Barbeque$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Protein\\ Pops\\ Makhana\\ \\-\\ Himalayan\\ Salt\\ Caramel$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Protein\\ Pops\\ Makhana\\ \\-\\ Salt\\ \\&\\ Herbs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Protein\\ Pops\\ Makhana\\ \\-\\ Simply\\ Roasted$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    }
+  ]
+}
