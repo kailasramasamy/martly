@@ -1,0 +1,310 @@
+{
+  "brand": "Nourish You",
+  "manufacturer": "Nutrivative Foods Pvt. Ltd.",
+  "feed": "nourish-you-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nourish-you/logo-de2977a2.png",
+  "themeColor": "#4DB6AC",
+  "themeColorSecondary": "#2B2B2B",
+  "namePrefix": "Nourish You ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Raw\\ \\&\\ Whole\\ Black\\ Chia\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Raw\\ \\&\\ Whole\\ White\\ Chia\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Raw\\ \\&\\ Whole\\ Flax\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Raw\\ \\&\\ Whole\\ Pumpkin\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Raw\\ \\&\\ Whole\\ Sunflower\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Certified\\ Organic\\ Pumpkin\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Certified\\ Organic\\ Sunflower\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Certified\\ Organic\\ Watermelon\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Black\\ Chia\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Flax\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Pumpkin\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Sunflower\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Watermelon\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^5\\ In\\ 1\\ Super\\ Seed\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Antioxidant\\ Boost\\ Super\\ Seed\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Linseed\\ Meal\\ Mix\\ \\-\\ Flaxseed\\ Powder$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Superfoods (Chia, Flax, Hemp)"
+      ]
+    },
+    {
+      "match": "^Omega\\ Meal\\ Mix\\ \\-\\ Almond,\\ Flaxseed\\ \\&\\ Sunflower$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Superfoods (Chia, Flax, Hemp)"
+      ]
+    },
+    {
+      "match": "^Premium\\ White\\ Quinoa\\ Grain$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Quinoa & Couscous"
+      ]
+    },
+    {
+      "match": "^White\\ Quinoa\\ \\-\\ Saponin\\-Free$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Quinoa & Couscous"
+      ]
+    },
+    {
+      "match": "^Certified\\ Organic\\ Black\\ Quinoa$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Quinoa & Couscous"
+      ]
+    },
+    {
+      "match": "^Tricolour\\ Quinoa\\ Grain$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Quinoa & Couscous"
+      ]
+    },
+    {
+      "match": "^Quinoa\\ \\+\\ Brown\\ Rice\\ Mix$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Quinoa & Couscous"
+      ]
+    },
+    {
+      "match": "^Gluten\\ Free\\ Teff\\ Flour$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Gluten-Free Products"
+      ]
+    },
+    {
+      "match": "^Gluten\\ Free\\ Quinoa\\ Flour$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Gluten-Free Products"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Rolled\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Steel\\ Cut\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Chocolate\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Super\\ Muesli\\ \\-\\ Belgian\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Super\\ Muesli\\ \\-\\ Fruit\\ \\&\\ Nut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Super\\ Muesli\\ \\-\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Millet\\ Mlk\\ Original\\ \\-\\ Ragi,\\ Jowar\\ \\&\\ Bajra$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Onion\\ Masala\\ Jowar\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Tangy\\ Mint\\ Ragi\\ Sticks$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Sour\\ Cream\\ \\&\\ Onion\\ Multigrain\\ Wave\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Garlic\\ Quinoa\\ Puffs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Cashew\\ Clusters$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    },
+    {
+      "match": "^Raw\\ Goji\\ Berry\\ Nut\\ Mix$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    }
+  ]
+}
