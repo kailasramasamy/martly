@@ -1,0 +1,190 @@
+{
+  "brand": "Jimmy's Cocktails",
+  "manufacturer": "Radiohead Brands Pvt. Ltd.",
+  "feed": "jimmys-cocktails-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/jimmys-cocktails/logo-04c8ed93.png",
+  "themeColor": "#1F2A5C",
+  "themeColorSecondary": "#E5007D",
+  "namePrefix": "Jimmy's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bloody\\ Mary\\ Cocktail\\ \\&\\ Mocktail\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Cosmopolitan\\ Cocktail\\ \\&\\ Mocktail\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Mango\\ Chilli\\ Mojito\\ Cocktail\\ \\&\\ Mocktail\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Margarita\\ Cocktail\\ \\&\\ Mocktail\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Sex\\ On\\ The\\ Beach\\ Cocktail\\ \\&\\ Mocktail\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Whiskey\\ Sour\\ Cocktail\\ \\&\\ Mocktail\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Gin\\ Cherry\\ Sour\\ Cocktail\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^The\\ New\\ Old\\ Fashioned\\ Cocktail\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Green\\ Apple\\ Martini\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Popstar\\ Martini\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Mint\\ Mojito\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Ale$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Soda\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Tonic\\ Water\\ Original$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Tonic\\ Water\\ Elderflower$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Premium\\ Tonic\\ Water\\ Can$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Original\\ Indian\\ Tonic\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sugar\\ Indian\\ Tonic\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Premium\\ Sparkling\\ Classic\\ Lemonade$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sugar\\ Green\\ Apple\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Flavoured Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sugar\\ Lime\\ \\&\\ Lemon\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Flavoured Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sugar\\ Peach\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Flavoured Water"
+      ]
+    }
+  ]
+}
