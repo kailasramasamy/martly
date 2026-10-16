@@ -1,0 +1,430 @@
+{
+  "brand": "Praakritik",
+  "manufacturer": "Shashi Natural & Organics Pvt. Ltd.",
+  "feed": "praakritik-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/praakritik/logo-d1598901.png",
+  "themeColor": "#8DB24A",
+  "themeColorSecondary": "#5A3A2E",
+  "namePrefix": "Praakritik ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Desi\\ A2\\ Gir\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Desi\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Organic\\ Cold\\ Pressed\\ Sesame\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Extra\\ Virgin\\ Coconut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "match": "^Organic\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Organic\\ Cold\\ Pressed\\ Peanut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Organic\\ Cold\\ Pressed\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Natural\\ Acacia\\ Honey\\ \\-\\ Pure\\ \\&\\ Raw$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Natural\\ Raw\\ Adivasi\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Natural\\ Wild\\ Forest\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Organic\\ Coconut\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    },
+    {
+      "match": "^Organic\\ Raw\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    },
+    {
+      "match": "^Organic\\ Jaggery$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery (Gur)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Natural\\ Himalayan\\ Pink\\ Salt$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Rock Salt (Sendha Namak)"
+      ]
+    },
+    {
+      "match": "^Natural\\ Rock\\ Salt\\ \\(Sendha\\ Namak\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Rock Salt (Sendha Namak)"
+      ]
+    },
+    {
+      "match": "^Natural\\ Garam\\ Masala\\ \\-\\ Hand\\ Pounded$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Natural\\ Hing\\ \\(Asafoetida\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Haldi\\ \\-\\ High\\ Curcumin$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Red\\ Chilli\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Jeera\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Garlic\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Ginger\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Onion\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Ajwain\\ \\(Carom\\ Seeds\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Black\\ Pepper\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Saunf\\ \\(Fennel\\ Seeds\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Beetroot\\ Powder$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Superfoods (Chia, Flax, Hemp)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Moringa\\ Leaf\\ Powder$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Superfoods (Chia, Flax, Hemp)"
+      ]
+    },
+    {
+      "match": "^Raw\\ Jackfruit\\ Powder$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Superfoods (Chia, Flax, Hemp)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Raw\\ Pumpkin\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Raw\\ Sunflower\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Desiccated\\ Coconut\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Organic\\ Peanut\\ Butter\\ \\-\\ Jaggery\\ Sweetened$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Raw\\ Coconut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Gulkand\\ \\-\\ Natural\\ Artisan\\ Paan$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Natural\\ Pan\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Natural\\ Khapli\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Organic\\ Besan$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Besan (Gram Flour)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Jowar\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Jowar Flour"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sattu\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Sattu"
+      ]
+    },
+    {
+      "match": "^Sprouted\\ Ragi\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Ragi Flour"
+      ]
+    },
+    {
+      "match": "^Singhara\\ Atta$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Gluten-Free Products"
+      ]
+    },
+    {
+      "match": "^Organic\\ Tuvar\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Toor Dal (Arhar)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Split\\ Masoor\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Masoor Dal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Chilka\\ Hara\\ Moong\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Moong Dal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Yellow\\ Moong\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Moong Dal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Indrayani\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Organic\\ Kolam\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Organic\\ Traditional\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Organic\\ Rolled\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Organic\\ Jumbo\\ Rolled\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    }
+  ]
+}
