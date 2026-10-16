@@ -1,0 +1,230 @@
+{
+  "brand": "Anveshan",
+  "manufacturer": "Anveshan Farm Technologies Pvt. Ltd.",
+  "feed": "anveshan-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/anveshan/logo-eb285329.png",
+  "themeColor": "#1F5E3B",
+  "themeColorSecondary": "#E3A72F",
+  "namePrefix": "Anveshan ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^A2\\ Desi\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Bilona\\-Churned\\ Desi\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Bilona\\-Churned\\ Desi\\ Cow\\ Ghee\\ \\-\\ Stainless\\ Steel\\ Dolchi$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Bilona\\-Churned\\ Gir\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Desi\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Cold\\-Pressed\\ High\\ Protein\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Cold\\-Pressed\\ Khapli\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Cold\\-Pressed\\ Khapli\\ Multigrain\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Multigrain Atta"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Flax\\ Laddoo\\ \\-\\ Sweetened\\ With\\ Jaggery$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Dry\\ Fruit\\ Paak\\ \\-\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Dry\\ Fruit\\ Paak\\ \\-\\ Sweetened\\ With\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Raw\\ Wild\\ Forest\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Minimally\\ Processed\\ Wild\\ Forest\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Moringa\\ Sattu\\ Drink\\ Mix\\ \\-\\ Jaljeera$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Jaljeera"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Black\\ Sesame\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Black\\ Sesame\\ Oil\\ \\-\\ Glass\\ Bottle$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Coconut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Coconut\\ Oil\\ \\-\\ Glass\\ Bottle$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Groundnut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Groundnut\\ Oil\\ \\-\\ Glass\\ Bottle$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Kachi\\ Ghani\\ Black\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Kachi\\ Ghani\\ Black\\ Mustard\\ Oil\\ \\-\\ Glass\\ Bottle$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Kachi\\ Ghani\\ Yellow\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Kachi\\ Ghani\\ Yellow\\ Mustard\\ Oil\\ \\-\\ Glass\\ Bottle$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Wood\\ Cold\\ Pressed\\ Sunflower\\ Oil\\ \\-\\ Glass\\ Bottle$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    }
+  ]
+}
