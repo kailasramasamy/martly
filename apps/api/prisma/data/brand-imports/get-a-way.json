@@ -1,0 +1,198 @@
+{
+  "brand": "Get-A-Way",
+  "manufacturer": "PeanutButter & Jelly Pvt. Ltd.",
+  "feed": "get-a-way-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/get-a-way/logo-0fd377dd.png",
+  "themeColor": "#1E2A5E",
+  "themeColorSecondary": "#F5B700",
+  "namePrefix": "Get-A-Way ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Belgian\\ Chocolate\\ Ice\\ Cream\\ \\-\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Brownie\\ Fudge\\ Ice\\ Cream\\ \\-\\ Zero\\ Added\\ Sugar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Cheesecake\\ Ice\\ Cream\\ \\-\\ Zero\\ Added\\ Sugar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Mango\\ Ice\\ Cream\\ \\-\\ Zero\\ Added\\ Sugar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Cheesecake\\ Ice\\ Cream\\ Cone\\ \\-\\ Zero\\ Added\\ Sugar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Brownie\\ Ice\\ Cream\\ Cone\\ \\-\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Dark\\ Chocolate\\ Ice\\ Cream\\ Cone\\ \\-\\ Zero\\ Added\\ Sugar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Almond\\ Crunch\\ Ice\\ Cream\\ Stick$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Chocobar\\ Ice\\ Cream\\ Stick$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Brownie\\ Crunch\\ Ice\\ Cream\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Choco\\ Hazelnut\\ Crunch\\ Ice\\ Cream\\ Bar\\ \\-\\ Zero\\ Added\\ Sugar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Mango\\ Duet\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Raspberry\\ Duet\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Malai\\ Kulfi$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Kulfi"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Cassata\\ Ice\\ Cream\\ \\-\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Biscrunch\\ Ice\\ Cream\\ Pastry$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Black\\ Forest\\ Ice\\ Cream\\ Pastry$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Red\\ Velvet\\ Ice\\ Cream\\ Pastry$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Cheesecake\\ Jar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Choco\\ Cheesecake\\ Jar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Cheesecake\\ Jar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Death\\ By\\ Chocolate\\ Cake\\ Jar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Tiramisu\\ Cake\\ Jar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    }
+  ]
+}
