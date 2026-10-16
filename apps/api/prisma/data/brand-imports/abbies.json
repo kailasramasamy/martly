@@ -1,0 +1,238 @@
+{
+  "brand": "Abbie's",
+  "manufacturer": "Abbie's Food International Inc.",
+  "feed": "abbies-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/abbies/logo-31a18f5c.png",
+  "themeColor": "#1F5C73",
+  "themeColorSecondary": "#F2C230",
+  "namePrefix": "Abbie's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^White\\ Distilled\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Apple\\ Cider\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Arborio\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Baked\\ Beans\\ in\\ Tomato\\ Sauce$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Beans & Legumes"
+      ]
+    },
+    {
+      "match": "^Chick\\ Peas\\ in\\ Brine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Beans & Legumes"
+      ]
+    },
+    {
+      "match": "^Red\\ Kidney\\ Beans\\ in\\ Brine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Beans & Legumes"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Corn\\ Kernels\\ in\\ Brine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Gherkins\\ in\\ Brine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Cornichons\\ in\\ Brine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Jalapenos\\ Sliced\\ in\\ Brine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Sundried\\ Tomatoes\\ in\\ Sunflower\\ Oil$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Black\\ Sliced\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Black\\ Pitted\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Green\\ Pitted\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olive Oil (Extra Virgin)"
+      ]
+    },
+    {
+      "match": "^Olive\\ Pomace\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Green\\ Pesto\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Red\\ Pesto\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Classic\\ Barbecue\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^American\\ Yellow\\ Mustard$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mustard Sauce"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Pure\\ Maple\\ Syrup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Dessert Syrups"
+      ]
+    },
+    {
+      "match": "^Pancake\\ Syrup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Dessert Syrups"
+      ]
+    },
+    {
+      "match": "^Japanese\\ Style\\ Panko\\ Bread\\ Crumbs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Tuna\\ Chunks\\ in\\ Brine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Fish & Meat"
+      ]
+    },
+    {
+      "match": "^Tuna\\ Chunks\\ in\\ Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Fish & Meat"
+      ]
+    },
+    {
+      "match": "^Tuna\\ Flakes\\ in\\ Brine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Fish & Meat"
+      ]
+    },
+    {
+      "match": "^Tuna\\ Flakes\\ in\\ Sunflower\\ Oil$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Fish & Meat"
+      ]
+    }
+  ]
+}
