@@ -14,6 +14,24 @@
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40237188_1-cadbury-oreo-vanilla-creme-original-chocolatey-sandwich-biscuit.jpg"
     }
+   },
+   {
+    "title": "125.25g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/277584_55-cadbury-oreo-creme-biscuit-vanilla-original.jpg"
+    }
+   },
+   {
+    "title": "275.55g",
+    "price": "78",
+    "compare_at_price": "78",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40122466_30-cadbury-oreo-vanilla-creme-biscuit-family-pack.jpg"
+    }
    }
   ],
   "images": [
