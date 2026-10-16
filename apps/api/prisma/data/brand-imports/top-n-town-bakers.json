@@ -1,0 +1,334 @@
+{
+  "brand": "Top 'N Town Bakers",
+  "manufacturer": "Aaditya Food Products",
+  "feed": "top-n-town-bakers-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/top-n-town-bakers/logo-7cbaca4e.png",
+  "themeColor": "#6B3F2A",
+  "themeColorSecondary": "#D62828",
+  "namePrefix": "Top 'N Town ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^White\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Premium\\ White\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Milk\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Sandwich\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Brown\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Premium\\ Brown\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Atta\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Multi\\ Grain\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Millet\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Protein\\ Bread\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Garlic Bread"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Base\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Bombay\\ Pao$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Pao\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Burger\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Hot\\ Dog\\ Buns$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Butterscotch\\ Cream\\ Roll\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Cream\\ Roll\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Mango\\ Cream\\ Roll\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Plain\\ Khari$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Masala\\ Khari$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Classic\\ Khari\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Masala\\ Khari\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Kaju\\ Toast$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    },
+    {
+      "match": "^Milk\\ Toast$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    },
+    {
+      "match": "^Almond\\ Butter\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Cashew\\ Butter\\ Bite\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Choco\\ Chip\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Fruit\\ \\&\\ Nut\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Nan\\ Khatai$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Salted\\ Jeera\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Pista\\ Cookies$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Ajwain\\ Butter\\ Cookies\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Salted\\ Jeera\\ Butter\\ Cookies\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Banana\\ Cake\\ With\\ Choco\\ Chips\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Marble\\ Cake\\ \\-\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    }
+  ]
+}

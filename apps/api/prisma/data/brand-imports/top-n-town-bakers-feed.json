@@ -1,0 +1,2202 @@
+[
+ {
+  "title": "White Bread",
+  "handle": "white-bread",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160667_3-top-n-town-bakers-white-bread.jpg"
+    }
+   },
+   {
+    "title": "300g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160669_3-top-n-town-bakers-white-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160667_3-top-n-town-bakers-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160667-2_3-top-n-town-bakers-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160667-3_3-top-n-town-bakers-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160667-4_3-top-n-town-bakers-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160667-5_3-top-n-town-bakers-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160667-6_2-top-n-town-bakers-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160667-7_2-top-n-town-bakers-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160667-8_1-top-n-town-bakers-white-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy very tasty and delicious white bread. The bread is enriched with vitamins required for healthy living. This makes your preparation tasty as well as healthy. Our white bread is made from refined wheat flour, RO water, sugar, yeast, iodised salt, edible vegetable oil, gluten, and milk powder.",
+   "ingredients": "Refined Wheat Flour, RO Water, Sugar, Yeast, Iodised Salt, Edible Vegetable Oil, Gluten, Milk Powder, Improver-(E 300)(E 304)(E 306)(E 471)(E110), Permitted Class II Preservatives(E 282) (E 260)",
+   "nutritionalInfo": {
+    "Serving Size": "150 g",
+    "Energy": "214 kcal",
+    "Protein": "7 g",
+    "Total Carbohydrate": "44 g",
+    "Sugars": "6 g",
+    "Total Fat": "1.5 g",
+    "Saturated Fat": "0 g"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Premium White Bread",
+  "handle": "premium-white-bread",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160672_1-top-n-town-bakers-premium-white-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160672_1-top-n-town-bakers-premium-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160672-2_1-top-n-town-bakers-premium-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160672-3_1-top-n-town-bakers-premium-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160672-4_1-top-n-town-bakers-premium-white-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160672-5_1-top-n-town-bakers-premium-white-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste and texture of our premium white bread, crafted with the finest ingredients for a truly satisfying experience. Soft and spongy with a crisp crust, this bread is made using handpicked quality ingredients, making it the perfect choice for breakfast or snacks. Enriched with essential vitamins, it supports your overall health and wellbeing, while its delicious flavour ensures your preparations are both tasty and nutritious. Enjoy the creamy goodness of the milk powder-infused bread, made from high-quality refined wheat flour for a soft and fluffy texture. Whether you're looking for a comforting slice or a versatile base for your culinary creations, our white bread is the ideal choice to elevate your dining experience.",
+   "ingredients": "Refined Wheat Flour (Maida), Ro Water, Refined Soya Bean Oil, Sugar, Salt, Yeast, Gluten, Bread Improver (Ins 300, 304, 306, 471, 1100), Permitted Class Ii Preservative (Ins 282, 260)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy": "214.00 kcal",
+    "Protein": "7.00 g",
+    "Carbohydrate -Total": "44.00 g",
+    "Of Which Sugars": "6.00 g",
+    "Fat -Total": "1.50 g",
+    "Of Which Saturated": "0.00 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Sweet Milk Bread",
+  "handle": "sweet-milk-bread",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160673_3-top-n-town-bakers-sweet-milk-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160673_3-top-n-town-bakers-sweet-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160673-2_3-top-n-town-bakers-sweet-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160673-3_3-top-n-town-bakers-sweet-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160673-4_3-top-n-town-bakers-sweet-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160673-5_3-top-n-town-bakers-sweet-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160673-6_1-top-n-town-bakers-sweet-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160673-7_1-top-n-town-bakers-sweet-milk-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160673-8_1-top-n-town-bakers-sweet-milk-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful sweetness of TOP 'N TOWN Sweet Milk Bread, a soft and fluffy loaf infused with a delicate milk flavour. Crafted with care, this bread is the perfect addition to your breakfast, snacks or desserts, adding a touch of delight to any meal. Enriched with essential vitamins, the bread is not only delicious but also supports your healthy living. Enjoy the yummy and delicious taste of this bread, perfectly paired with your favourite tea or coffee for a truly satisfying experience.",
+   "ingredients": "Refined Wheat Flour (Maida), Ro Water, Sugar, Refined Soya Bean Oil, Milk Solids, Salt, Yeast, Gluten, Bread Improver (Ins 300, 304, 306, 471, 1100), Permitted Class Ii Preservative (Ins 282, 260)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy": "221.00 kcal",
+    "Protein": "7.00 g",
+    "Carbohydrate -Total": "46.00 g",
+    "Of Which Sugars": "8.00 g",
+    "Fat -Total": "1.00 g",
+    "Of Which Saturated": "0.00 g"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Sandwich Bread",
+  "handle": "sandwich-bread",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "800g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160670_4-top-n-town-bakers-sandwich-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160670_4-top-n-town-bakers-sandwich-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160670-2_4-top-n-town-bakers-sandwich-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160670-3_4-top-n-town-bakers-sandwich-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160670-4_4-top-n-town-bakers-sandwich-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160670-5_4-top-n-town-bakers-sandwich-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160670-6_2-top-n-town-bakers-sandwich-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160670-7_1-top-n-town-bakers-sandwich-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sandwich bread is one of the popular foods around the world and is one of the oldest artificial foods. Our sandwich bread is made from refined wheat flour, RO water, sugar, yeast, iodised salt, edible vegetable oil, gluten, and milk powder. Sandwich bread is excellent for making sandwiches at breakfast.",
+   "ingredients": "Refined Wheat Flour, RO Water, Sugar, Yeast, Iodised Salt, Edible Vegetable Oil, Gluten, Milk Powder, Improver-(E 300)(E 304)(E 306)(E 471)(E110), Permitted Class II Preservatives(E 282) (E 260)",
+   "nutritionalInfo": {
+    "Energy": "214 kcal",
+    "Protein": "7 g",
+    "Total Carbohydrate": "44 g",
+    "Sugars": "6 g",
+    "Total Fat": "1.5 g",
+    "Saturated Fat": "0 g"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Brown Bread",
+  "handle": "brown-bread",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160668_1-top-n-town-bakers-brown-bread.jpg"
+    }
+   },
+   {
+    "title": "300g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160675_3-top-n-town-bakers-brown-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160668_1-top-n-town-bakers-brown-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160668-2_1-top-n-town-bakers-brown-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160668-3_1-top-n-town-bakers-brown-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160668-4_1-top-n-town-bakers-brown-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160668-5_1-top-n-town-bakers-brown-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160675_3-top-n-town-bakers-brown-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy very tasty and delicious brown bread. The bread is enriched with vitamins required for healthy living. This makes your preparation tasty as well as healthy. Our brown bread is made from Refined Wheat Flour, RO Water, Sugar, Yeast, Iodised salt, Edible vegetable oil, Gluten, and Milk Powder.",
+   "ingredients": "Refined Wheat Flour, Whole Wheat Flour, Water, Sugar, Yeast, Iodised Salt, Edible Vegetable Oil, Gluten, Milk Powder, Rye Malt, Malt Extract, Improver-(E-170)(i), (E-300), (E-306), (E-471), (E-1100), Permitted Class II Preservatives (E-282)&(E-260)",
+   "nutritionalInfo": {
+    "Energy": "214 kcal",
+    "Protein": "7 g",
+    "Total Carbohydrate": "44 g",
+    "Sugars": "6 g",
+    "Total Fat": "1.5 g",
+    "Saturated Fat": "0 g"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Premium Brown Bread",
+  "handle": "premium-brown-bread",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160683_1-top-n-town-bakers-premium-bread-brown.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160683_1-top-n-town-bakers-premium-bread-brown.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160683-2_1-top-n-town-bakers-premium-bread-brown.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160683-3_1-top-n-town-bakers-premium-bread-brown.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160683-4_1-top-n-town-bakers-premium-bread-brown.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160683-5_1-top-n-town-bakers-premium-bread-brown.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Product is enriched with vitamins required for healthy living, making preparations both tasty and healthy. It is made from refined wheat flour, whole wheat flour, water, sugar, yeast, iodised salt, edible vegetable oil, gluten, milk powder, rye malt, and malt extract.",
+   "ingredients": "Refined Wheat Flour, Whole Wheat Flour, Water, Sugar, Yeast, Iodised Salt, Edible Vegetable Oil, Gluten, Milk Powder, Rye Malt, Malt Extract, Improver-(E-170)(i), (E-300), (E-306), (E-471), (E-1100), Permitted Class II Preservatives (E-282)&(E-260)",
+   "nutritionalInfo": {
+    "Serving Size": "Appx per 100g",
+    "Energy Value": "210.7 Kcal",
+    "Carbohydrate(s)": "43.6 g",
+    "Fat (o)": "1.10 g",
+    "Protein (ii)": "6.60 g"
+   },
+   "storageInstructions": "*Protect from direct sunlight",
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Zero Maida Atta Bread",
+  "handle": "zero-maida-atta-bread",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365773_1-top-n-town-bakers-zero-maida-atta-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365773_1-top-n-town-bakers-zero-maida-atta-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365773-2_1-top-n-town-bakers-zero-maida-atta-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365773-3_1-top-n-town-bakers-zero-maida-atta-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365773-4_1-top-n-town-bakers-zero-maida-atta-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365773-5_1-top-n-town-bakers-zero-maida-atta-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365773-6_1-top-n-town-bakers-zero-maida-atta-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365773-7_1-top-n-town-bakers-zero-maida-atta-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365773-8_1-top-n-town-bakers-zero-maida-atta-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Made with 100% whole wheat flour (atta), zero maida, and no artificial additives, this bread is thoughtfully crafted for wholesome taste and everyday nourishment. Soft in texture and rich in natural goodness, it’s baked fresh to support clean, mindful eating — every single day.",
+   "ingredients": "Whole Wheat Flour Atta, RO Water, Sugar, Yeast, Gluten, Salt, Edible Vegetable Oil Refined Soyabean Oil, SMP Milk Powder Maltodextrin, Improver Corn Starch Soy Flour INS 170 i INS 300, Enzymes INS 1100 i INS 1102 INS 1104 Xylanase, Preservatives INS 282 INS 260, Emulsifier INS 476, Food Allergen Contains Milk Wheat Soy",
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Multi Grain Bread",
+  "handle": "multi-grain-bread",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160674_3-top-n-town-bakers-multigrain-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160674_3-top-n-town-bakers-multigrain-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160674-2_3-top-n-town-bakers-multigrain-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160674-3_3-top-n-town-bakers-multigrain-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160674-4_3-top-n-town-bakers-multigrain-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160674-5_3-top-n-town-bakers-multigrain-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160674-6_1-top-n-town-bakers-multigrain-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy very tasty and delicious Multigrain bread. The bread is enriched with vitamins required for healthy living. This makes your preparation tasty as well as healthy.\nOur Multigrain bread made from Refined Whole Wheat Flour, RO Water, Soya Flour, ragi flour, Multi-Grain Seed Mix, Yeast, Sugar, Iodized Salt, Edible Vegetable Oil",
+   "ingredients": "Whole Wheat Flour, RO Water, Soya Flour, Ragi Flour, Multi-Grain Seed Mix, Yeast, Sugar, Iodized Salt, Edible Vegetable Oil, Improver-(E-300)(E-304)(E-306)(E-471)(E-1100), Permitted Class II Preservatives (E-282)&(E-260)",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Zero Maida Millet Bread",
+  "handle": "zero-maida-millet-bread",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365774_1-top-n-town-bakers-zero-maida-millet-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365774_1-top-n-town-bakers-zero-maida-millet-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365774-2_1-top-n-town-bakers-zero-maida-millet-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365774-3_1-top-n-town-bakers-zero-maida-millet-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365774-4_1-top-n-town-bakers-zero-maida-millet-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365774-5_1-top-n-town-bakers-zero-maida-millet-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365774-6_1-top-n-town-bakers-zero-maida-millet-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365774-7_1-top-n-town-bakers-zero-maida-millet-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365774-8_1-top-n-town-bakers-zero-maida-millet-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Zero Maida Millet Bread, a blend of millets and whole grains, made without maida for everyday consumption. Crafted for those seeking an alternative to regular bread, it offers a wholesome base for a variety of meals, from breakfast to light snacks, with a simple and balanced composition suited to daily use.",
+   "ingredients": "Refined Wheat Flour Atta, RO Water, Multigrain Flour Mix Bajra Jau Ragi, Sugar, Yeast, Iodised Salt, Edible Vegetable Oil Refined Soyabean Oil, Improver INS 170 i INS 300 INS 1100, Gluten, Preservatives INS 282 INS 260, Emulsifier INS 472e INS 322, Food Allergen Contains Milk Wheat",
+   "nutritionalInfo": {
+    "Energy": "269.54 kcal",
+    "Protein": "10.98 g",
+    "Carbohydrate": "47.80 g",
+    "Total Sugar": "7.25 g",
+    "Added Sugar": "3.61 g",
+    "Total Fat": "3.82 g",
+    "Saturated Fat": "0.67 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "394.00 mg"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Zero Maida Protein Bread - Eggless",
+  "handle": "zero-maida-protein-bread-eggless",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372160_2-top-n-town-bakers-zero-maida-protein-bread-eggless.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372160_2-top-n-town-bakers-zero-maida-protein-bread-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372160-2_2-top-n-town-bakers-zero-maida-protein-bread-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372160-3_2-top-n-town-bakers-zero-maida-protein-bread-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372160-4_2-top-n-town-bakers-zero-maida-protein-bread-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372160-5_2-top-n-town-bakers-zero-maida-protein-bread-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372160-6_2-top-n-town-bakers-zero-maida-protein-bread-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372160-7_2-top-n-town-bakers-zero-maida-protein-bread-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372160-8_2-top-n-town-bakers-zero-maida-protein-bread-eggless.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutritious high-protein bread made with whole wheat flour and a blend of dairy and plant proteins. Crafted without maida, it is ideal for everyday healthy eating, sandwiches, toast and breakfast meals.",
+   "ingredients": "Whole Wheat Flour (Atta), RO Water, Protein Blend Powder [Whey Protein Concentrate, Rice Protein Concentrate, Pea Protein Isolate, Soy Protein Isolate, Skimmed Milk Powder, Gluten, Wheat Starch, Enzymes/Improvers (INS 1100, INS 1102, INS 1104, INS 1101)], Sugar, Yeast, Salt, Edible Vegetable Oil (Refined Soybean Oil), Naturally Fermented Organic Acids.\nFood Allergen: Contains Cereal (Wheat), Milk and Soy.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "268.00",
+    "Protein (g)": "13.87",
+    "Carbohydrate (g)": "44.49",
+    "Total Sugar (g)": "5.35",
+    "Added Sugar (g)": "1.86",
+    "Total Fat (g)": "3.84",
+    "Saturated Fat (g)": "0.68",
+    "Trans Fat (g)": "0.00",
+    "Sodium (mg)": "419.74",
+    "Cholesterol (mg)": "0.00"
+   },
+   "storageInstructions": "Store in a cool and dry place.\nKeep away from direct sunlight.",
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Garlic Bread",
+  "handle": "garlic-bread",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160681_1-top-n-town-bakers-garlic-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160681_1-top-n-town-bakers-garlic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160681-2_1-top-n-town-bakers-garlic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160681-3_1-top-n-town-bakers-garlic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160681-4_1-top-n-town-bakers-garlic-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160681-5_1-top-n-town-bakers-garlic-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a very tasty and delicious bread loaf flavoured with lightly roasted garlic to excite the taste buds. Add cheese and toast slices to create garlic cheese toast or enjoy it plain. The bread is enriched with vitamins required for healthy living, making your preparation both tasty and healthy.",
+   "ingredients": "Refined Wheat Flour, RO Water, Sugar, Yeast, Iodised Salt, Edible Vegetable Oil, Gluten, Milk Powder, Improver-(E 300)(E 304)(E 306)(E 471)(E110), Permitted Class II Preservatives (E 282) (E 260)",
+   "nutritionalInfo": {
+    "Energy Value": "268.21 kcal",
+    "Carbohydrate(s)": "51.34 g",
+    "Fat (g)": "3.72 g",
+    "Protein (g)": "7.30 g"
+   },
+   "storageInstructions": "*Protect from direct sunlight",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Pizza Base Bread",
+  "handle": "pizza-base-bread",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160676_1-top-n-town-bakers-pizza-base-bread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160676_1-top-n-town-bakers-pizza-base-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160676-2_1-top-n-town-bakers-pizza-base-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160676-3_1-top-n-town-bakers-pizza-base-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160676-4_1-top-n-town-bakers-pizza-base-bread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160676-5_1-top-n-town-bakers-pizza-base-bread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate pizza experience with TOP 'N TOWN's delectable Pizza Base. Crafted with the finest ingredients, including enriched wheat flour, RO water, sugar, yeast, and a blend of vitamins, this pizza base promises a truly tasty and healthy preparation. Soft yet firm, it provides the perfect foundation for your culinary creations, allowing you to unleash your inner pizza-making genius. Bring the authentic flavours of a pizzeria right to your home and enjoy a delightful pizza night with family and friends. Elevate your homemade pizzas with the TOP 'N TOWN Pizza Base, designed to deliver an unparalleled taste and texture that will leave you craving more.",
+   "ingredients": "Refined Wheat Flour (Maida), Ro Water, Refined Soya Bean Oil, Sugar, Salt, Yeast, Gluten, Bread Improver (Ins 300, 304, 306, 471, 1100), Permitted Class Ii Preservative (Ins 282, 260)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy": "214.00 kcal",
+    "Protein": "7.00 g",
+    "Carbohydrate": "40.00 g",
+    "Of Which Sugars": "6.00 g",
+    "Of Which Saturated": "0.00 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Bombay Pao",
+  "handle": "bombay-pao",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365772_1-top-n-town-bakers-bombay-pao.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365772_1-top-n-town-bakers-bombay-pao.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365772-2_1-top-n-town-bakers-bombay-pao.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365772-3_1-top-n-town-bakers-bombay-pao.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365772-4_1-top-n-town-bakers-bombay-pao.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365772-5_1-top-n-town-bakers-bombay-pao.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bombay Pao – Authentically styled with a soft, delicate crumb and an even, consistent bake. Light in texture and versatile, it pairs perfectly with pav bhaji and other classic accompaniments, making it an ideal choice for everyday meals or traditional favourites.",
+   "ingredients": "Refined Wheat Flour(Maida), Ro Water, Refined Soyabean Oil, Sugar, Iodised Salt,yeast, Gluten, Bread Improver (Ins 300, 304, 306, 471, 1100), Permitted Class Ii Preservatives (Ins 282, 260).",
+   "nutritionalInfo": {
+    "Energy Value": "228.0 Kcal",
+    "Carbohydrate": "46.2g",
+    "Fat": "1.7g",
+    "Protein": "6.9g"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Pao Bun",
+  "handle": "pao-bun",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160679_1-top-n-town-bakers-bun-pao.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160679_1-top-n-town-bakers-bun-pao.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160679-2_1-top-n-town-bakers-bun-pao.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160679-3_1-top-n-town-bakers-bun-pao.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160679-4_1-top-n-town-bakers-bun-pao.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160679-5_1-top-n-town-bakers-bun-pao.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This hygienic pao bun is sweeter and denser, made with RO water. It is great and delicious when enjoyed as spicy Pav Bhaji or Wada Pav. The buns are lightly browned, smaller, fluffier, and softer. When compressed, they easily bounce back without breaking. This pack contains 8 pieces.",
+   "ingredients": "Refined Wheat Flour, RO Water, Sugar, Yeast, Iodised Salt, Edible Vegetable Oil, Gluten, Milk Powder, Improver-(E 300)(E 304)(E 306)(E 471)(E110), Permitted Class II Preservatives (E 282) (E 260)",
+   "nutritionalInfo": {
+    "Energy": "214 kcal",
+    "Protein": "7 g",
+    "Total Carbohydrate": "44 g",
+    "Sugars": "6 g",
+    "Total Fat": "1.5 g",
+    "Saturated Fat": "0 g"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Burger Bun",
+  "handle": "burger-bun",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160677_2-top-n-town-bakers-burger-bun.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160677_2-top-n-town-bakers-burger-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160677-2_2-top-n-town-bakers-burger-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160677-3_2-top-n-town-bakers-burger-bun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160677-4_2-top-n-town-bakers-burger-bun.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The finely baked buns sprinkled with sesame seeds are made to deliver burgers that are synonymous with being fabulous. The subtle flavour and golden crust are sure to be quite a treat to your appetite. Our bun burger is made from refined wheat flour, RO water, sugar, yeast, iodised salt, edible vegetable oil, gluten, and milk powder.",
+   "ingredients": "Refined Wheat Flour, RO Water, Sugar, Yeast, Iodised Salt, Edible Vegetable Oil, Gluten, Milk Powder, Improver-(E 300)(E, E 304)(E 306)(E 471)(E110), Permitted Class II Preservatives(E 282) (E 260)",
+   "nutritionalInfo": {
+    "Energy": "214 kcal",
+    "Protein": "7 g",
+    "Carbohydrate": "44 g",
+    "of which Sugars": "6 g",
+    "Fat - Total": "1.5 g",
+    "of which Saturated": "0 g"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Hot Dog Buns",
+  "handle": "hot-dog-buns",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160678_1-top-n-town-bakers-hot-dog-buns.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160678_1-top-n-town-bakers-hot-dog-buns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160678-2_1-top-n-town-bakers-hot-dog-buns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160678-3_1-top-n-town-bakers-hot-dog-buns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160678-4_1-top-n-town-bakers-hot-dog-buns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160678-5_1-top-n-town-bakers-hot-dog-buns.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy hygienic, soft, and delicious hot dog buns. The bread is enriched with vitamins required for healthy living, making your preparation both tasty and healthy. Our hot dog buns are made from refined wheat flour, RO water, sugar, yeast, iodised salt, edible vegetable oil, gluten, and milk powder.",
+   "ingredients": "Refined Wheat Flour, RO Water, Sugar, Yeast, Iodised Salt, Edible Vegetable Oil, Gluten, Milk Powder, Improver-(E 300)(E 304)(E 306)(E 471)(E110), Permitted Class II Preservatives(E 282) (E 260)",
+   "nutritionalInfo": {
+    "Energy Value": "216.6 kcal",
+    "Carbohydrate(s)": "43.9 g",
+    "Fat (g)": "1.60 g",
+    "Protein (g)": "6.5 g"
+   },
+   "storageInstructions": "* Protect from direct sunlight",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Butterscotch Cream Roll - Eggless",
+  "handle": "butterscotch-cream-roll-eggless",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184356_4-top-n-town-bakers-cream-roll-butter-scotch.jpg"
+    },
+    "barcode": "8906018763093"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184356_4-top-n-town-bakers-cream-roll-butter-scotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184356-2_5-top-n-town-bakers-cream-roll-butter-scotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184356-3_5-top-n-town-bakers-cream-roll-butter-scotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184356-4_5-top-n-town-bakers-cream-roll-butter-scotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184356-5_5-top-n-town-bakers-cream-roll-butter-scotch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This premium cream roll with butterscotch crunch inside can be enjoyed at any moment of the day. The taste will surely tame your sweet cravings. \nMade with premium ingredients, each bite will melt in your mouth and will give extreme happiness to all your taste buds.",
+   "ingredients": "Refined Wheat Flour (Maida), Hydrogenated Vegetable Fat (Palmolein), Sugar, RO Water, Cashew Nuts, Iodised Common Salt, Contains Nature Identical Flavouring Substances (Butter Scotch), Contains Permitted Synthetic Food Colour (INS 102, 110)",
+   "usageInstructions": "Ready to eat",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Chocolate Cream Roll - Eggless",
+  "handle": "chocolate-cream-roll-eggless",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184358_5-top-n-town-bakers-cream-roll-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184358_5-top-n-town-bakers-cream-roll-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184358-2_5-top-n-town-bakers-cream-roll-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184358-3_5-top-n-town-bakers-cream-roll-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184358-4_5-top-n-town-bakers-cream-roll-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184358-5_5-top-n-town-bakers-cream-roll-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This premium cream roll with choco chips inside can be enjoyed at any moment of the day. The taste will surely tame your sweet cravings. Made with premium ingredients, each bite will melt in your mouth and will give extreme happiness to all your taste buds.",
+   "ingredients": "Refined Wheat Flour, Hydrogenated Vegetable Fat, Sugar, RO Water, Chocolate, Iodised Common Salt, Contains Nature Identical Flavouring Substances (Chocolate), Contains Permitted Synthetic Food Colour (INS 102, 110)",
+   "nutritionalInfo": {
+    "Energy": "523.94 kcal",
+    "Carbohydrates": "48.80 g",
+    "Sugar": "19.69 g",
+    "Total Fat": "23.50 g",
+    "Saturated Fat": "12.50 g",
+    "Mono unsaturated fat": "6.80 g",
+    "Poly unsaturated fat": "3.20 g",
+    "Trans fat": "1.03 g",
+    "Protein": "6.88 g"
+   },
+   "storageInstructions": "*Store in a cool dry place (do not refrigerate)\n*Keep away from direct sunlight & strong odour\n*Once open store in airtight container for best result",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Mango Cream Roll - Eggless",
+  "handle": "mango-cream-roll-eggless",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184354_3-top-n-town-bakers-cream-roll-mango.jpg"
+    },
+    "barcode": "8906018763116"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184354_3-top-n-town-bakers-cream-roll-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184354-2_5-top-n-town-bakers-cream-roll-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184354-3_5-top-n-town-bakers-cream-roll-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184354-4_5-top-n-town-bakers-cream-roll-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184354-5_5-top-n-town-bakers-cream-roll-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This premium cream roll with mango inside can be enjoyed at any moment of the day. The taste will surely tame your sweet cravings. \nMade with premium ingredients, each bite will melt in your mouth and will give extreme happiness to all your taste buds.",
+   "ingredients": "Refined Wheat Flour (Maida), Hydrogenated Vegetable Fat (Palmolein), Sugar, RO Water, Mango Crush, Iodized Common Salt, Contains Nature Identical Flavouring Substances (Mango), Contains Permitted Synthetic Food Colour (INS 102, 110)",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Plain Khari",
+  "handle": "plain-khari",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184360_3-top-n-town-bakers-plain-khari.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184360_3-top-n-town-bakers-plain-khari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184360-2_5-top-n-town-bakers-plain-khari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184360-3_5-top-n-town-bakers-plain-khari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184360-4_5-top-n-town-bakers-plain-khari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184360-5_5-top-n-town-bakers-plain-khari.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kharis are puffed crispy snacks that are an all-time favourite accompaniment to tea. Our range of kharis are carefully baked with premium ingredients to develop a wonderful crispy and flaky texture, making them a favourite among all age groups. They can be enjoyed as an all-time snack, and you can't stop munching on these wonderful crispy puffed kharis.",
+   "ingredients": "Refined Wheat Flour (Maida), RO Water, Hydrogenated Vegetable Palmolein, Salt",
+   "nutritionalInfo": {
+    "Energy": "380 kcal",
+    "Protein": "5 g",
+    "Carbohydrate": "61 g",
+    "Of Which Sugars": "2 g",
+    "Fat": "30 g",
+    "Of Which Saturated": "21 g"
+   },
+   "storageInstructions": "*Store in cool & dry place\n*Away from direct sunlight",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Masala Khari",
+  "handle": "masala-khari",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184361_5-top-n-town-bakers-masala-khari.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184361_5-top-n-town-bakers-masala-khari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184361-2_5-top-n-town-bakers-masala-khari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184361-3_5-top-n-town-bakers-masala-khari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184361-4_5-top-n-town-bakers-masala-khari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184361-5_5-top-n-town-bakers-masala-khari.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kharis are puffed crispy snack. It is an all-time favourite accompaniment with tea. Our range of Kharis are carefully baked with premium ingredients to develop that wonderful crispy and flaky texture. It is an all-time favourite amidst all age groups. \nCan be enjoyed as an all-time snack. You can't stop munching these wonderful crispy puffed kharis with a punch of spices.",
+   "ingredients": "Refined Wheat Flour (Maida), RO Water, Hydrogenated Vegetable Palmolein, Salt, Spices and Condiments",
+   "usageInstructions": "Ready to eat",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Classic Khari - Eggless",
+  "handle": "classic-khari-eggless",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372155_1-top-n-town-bakers-classic-khari-eggless.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372155_1-top-n-town-bakers-classic-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372155-2_1-top-n-town-bakers-classic-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372155-3_1-top-n-town-bakers-classic-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372155-4_1-top-n-town-bakers-classic-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372155-5_1-top-n-town-bakers-classic-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372155-6_1-top-n-town-bakers-classic-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372155-7_1-top-n-town-bakers-classic-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372155-8_1-top-n-town-bakers-classic-khari-eggless.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Classic Khari is made with light, flaky and crispy puff pastry layers, baked to perfection for a delightful crunch in every bite. Ideal as a classic tea-time snack, it pairs perfectly with tea or coffee and also makes a delicious anytime snack to enjoy on its own.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Hydrogenated Oil [(Palm Oil, Palm Kernel Oil), Til Oil, Antioxidant (INS 319), Vitamin A, Vitamin D, Nitrogen], Iodized Salt, Turmeric Powder.\nFood Allergen: Contains Cereal (Wheat).",
+   "nutritionalInfo": {
+    "Energy (kcal)": "507.32",
+    "Protein (g)": "6.97",
+    "Carbohydrate (g)": "49.28",
+    "Total Sugar (g)": "0.52",
+    "Total Fat (g)": "30.87",
+    "Saturated Fat (g)": "15.20",
+    "Sodium (mg)": "53.65",
+    "Dietary Fiber (g)": "2.74"
+   },
+   "storageInstructions": "Store at room temperature. Do not refrigerate.\nKeep away from direct sunlight and strong odours.\nOnce opened, store in an airtight container under hygienic conditions for best results.",
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Masala Khari - Eggless",
+  "handle": "masala-khari-eggless",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372156_1-top-n-town-bakers-masala-khari-eggless.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372156_1-top-n-town-bakers-masala-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372156-2_1-top-n-town-bakers-masala-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372156-3_1-top-n-town-bakers-masala-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372156-4_1-top-n-town-bakers-masala-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372156-5_1-top-n-town-bakers-masala-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372156-6_1-top-n-town-bakers-masala-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372156-7_1-top-n-town-bakers-masala-khari-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372156-8_1-top-n-town-bakers-masala-khari-eggless.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Masala Khari is made with light, flaky and crispy puff pastry infused with a blend of aromatic Indian spices for a rich, savoury flavour. Baked to perfection, it delivers a crisp, airy texture in every bite. Ideal for tea-time, it pairs wonderfully with tea or coffee and also makes a delicious, flavourful snack to enjoy anytime.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Hydrogenated Oil [(Palm Oil, Palm Kernel Oil), Til Oil, Antioxidant (INS 319), Vitamin A, Vitamin D, Nitrogen], Iodized Salt, Red Chilli Powder, Lemon Chilli Sprinkles, Turmeric Powder, Garam Masala, Chaat Masala, Dried Green Chilli, Dried Coriander Leaves.\nFood Allergen: Contains Cereal (Wheat).",
+   "nutritionalInfo": {
+    "Energy (kcal)": "507.32",
+    "Protein (g)": "6.97",
+    "Carbohydrate (g)": "49.28",
+    "Total Sugar (g)": "0.52",
+    "Total Fat (g)": "30.87",
+    "Saturated Fat (g)": "15.20",
+    "Sodium (mg)": "53.65",
+    "Dietary Fiber (g)": "2.74"
+   },
+   "storageInstructions": "Store at room temperature. Do not refrigerate.\nKeep away from direct sunlight and strong odours.\nOnce opened, store in an airtight container under hygienic conditions for best results.\nStore in a cool, dry place.",
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kaju Toast",
+  "handle": "kaju-toast",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184362_4-top-n-town-bakers-kaju-toast.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184362_4-top-n-town-bakers-kaju-toast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184362-2_5-top-n-town-bakers-kaju-toast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184362-3_5-top-n-town-bakers-kaju-toast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184362-4_5-top-n-town-bakers-kaju-toast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184362-5_5-top-n-town-bakers-kaju-toast.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Try the premium traditional toast with a hot cup of tea at any time of the day. It is freshly baked with love and is healthy. This roasted sweet cashew bread will surely become your favourite.",
+   "ingredients": "Refined Wheat Flour (Maida), RO Water, Refined Soya Bean Oil, Refined Palmolein, Sugar, Milk Solids, Salt, Yeast, Gluten, Bread Improver (INS 300, 304, 306, 471, 1100) & Permitted Class II Preservative (INS 282, 260)",
+   "nutritionalInfo": {
+    "Energy": "442 kcal",
+    "Protein": "8 g",
+    "Total Carbohydrate": "80 g",
+    "Sugars": "24 g",
+    "Total Fat": "10 g",
+    "Saturated Fat": "7 g"
+   },
+   "storageInstructions": "*Store in cool & dry place, away from direct sunlight",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Milk Toast",
+  "handle": "milk-toast",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184363_5-top-n-town-bakers-milk-toast.jpg"
+    },
+    "barcode": "8906018763437"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184363_5-top-n-town-bakers-milk-toast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184363-2_5-top-n-town-bakers-milk-toast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184363-3_5-top-n-town-bakers-milk-toast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184363-4_5-top-n-town-bakers-milk-toast.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Try the premium traditional toast with a hot cup of tea at any time of the day. It is freshly baked with love. It's healthy! This roasted sweet milk bread will surely become your favourite.",
+   "ingredients": "Refined Wheat Flour (Maida), RO Water, Refined Soya Bean Oil, Refined Palmolein, Sugar, Milk Solids, Salt, Yeast, Gluten, Bread Improver (INS 300, 304, 306, 471, 1100) & Permitted Class II Preservative (INS 282, 260)",
+   "nutritionalInfo": {
+    "Energy": "442 kcal",
+    "Protein": "8 g",
+    "Carbohydrate": "80 g",
+    "of which Sugars": "24 g",
+    "Fat - Total": "10 g",
+    "of which Saturated": "7 g"
+   },
+   "storageInstructions": "*Store in cool & dry place\n*Away from direct sunlight",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Almond Butter Cookies",
+  "handle": "almond-butter-cookies",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210712_1-top-n-town-bakers-cookies-almond-butter.jpg"
+    }
+   },
+   {
+    "title": "300g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184366_4-top-n-town-bakers-cookies-butter-almond.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210712_1-top-n-town-bakers-cookies-almond-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210712-2_1-top-n-town-bakers-cookies-almond-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210712-3_1-top-n-town-bakers-cookies-almond-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210712-4_1-top-n-town-bakers-cookies-almond-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184366_4-top-n-town-bakers-cookies-butter-almond.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These premium handmade cookies are rich in real butter and almonds. Each bite will give a pleasing taste to your taste buds. Enjoy this delicious treat with your favourite hot beverage. It is a perfect snack for your guests.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Butter, Hydrogenated Vegetable Fat (Palm kernal oil, olive oil, sesame oil), RO Water, Almonds, Iodized Common Salt, Raising Agent (INS 500 (ii), 503 (ii), Contains Nature Identical Flavouring Substances (Roasted Almonds)",
+   "usageInstructions": "Ready to Eat",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Cashew Butter Bite Cookies",
+  "handle": "cashew-butter-bite-cookies",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210710_1-top-n-town-bakers-cookies-cashew-butter-bite.jpg"
+    },
+    "barcode": "8906018764205"
+   },
+   {
+    "title": "300g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184364_3-top-n-town-bakers-cookies-cashew-butter-bite.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210710_1-top-n-town-bakers-cookies-cashew-butter-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210710-2_1-top-n-town-bakers-cookies-cashew-butter-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210710-3_1-top-n-town-bakers-cookies-cashew-butter-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210710-4_1-top-n-town-bakers-cookies-cashew-butter-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184364_3-top-n-town-bakers-cookies-cashew-butter-bite.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These premium handmade cookies are rich in real butter and cashew nuts. Each bite will give a pleasing taste to your taste buds. Enjoy this delicious treat with your favourite hot beverage. It is a perfect snack for your guests.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Butter, Hydrogenated Vegetable Fat (Palm kernal oil, olive oil, sesame oil), RO Water, Cashew Kernal, Iodized Common Salt, Raising Agent (INS 500 (ii), 503 (ii), Contains Nature Identical Flavouring Substances (Cashew)",
+   "usageInstructions": "Ready to Eat",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Choco Chip Cookies",
+  "handle": "choco-chip-cookies",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210713_1-top-n-town-bakers-cookies-choco-chips.jpg"
+    },
+    "barcode": "8906018764212"
+   },
+   {
+    "title": "300g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184367_3-top-n-town-bakers-cookies-choco-chips.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210713_1-top-n-town-bakers-cookies-choco-chips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210713-2_1-top-n-town-bakers-cookies-choco-chips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210713-3_1-top-n-town-bakers-cookies-choco-chips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210713-4_1-top-n-town-bakers-cookies-choco-chips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184367_3-top-n-town-bakers-cookies-choco-chips.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These premium handmade cookies are rich in real butter and goodness of chocolate. Each bite will give a pleasing taste to your taste buds. Enjoy this delicious treat with your favourite hot beverage. It is a perfect snack for your guests.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Butter, Hydrogenated Vegetable Fat (Palm kernal oil, olive oil, sesame oil), RO Water, Cocoa Powder, Chocolate Chips, Iodized Common Salt, Raising Agent (INS 500 (ii), 503 (ii), Contains Nature Identical Flavouring Substances (Chocolate)",
+   "usageInstructions": "Ready to Eat",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Coconut Cookies",
+  "handle": "coconut-cookies",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210711_1-top-n-town-bakers-cookies-coconut.jpg"
+    }
+   },
+   {
+    "title": "300g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184365_5-top-n-town-bakers-cookies-coconut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210711_1-top-n-town-bakers-cookies-coconut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210711-2_1-top-n-town-bakers-cookies-coconut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210711-3_1-top-n-town-bakers-cookies-coconut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210711-4_1-top-n-town-bakers-cookies-coconut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184365_5-top-n-town-bakers-cookies-coconut.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These premium handmade cookies are rich in real butter and punch of coconut. Each bite will give a pleasing taste to your taste buds. Enjoy this delicious treat with your favourite hot beverage. It is a perfect snack for your guests.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Butter, Hydrogenated Vegetable Fat (Palm kernal oil, olive oil, sesame oil), RO Water, Coconut, Iodized Common Salt, Raising Agent (INS 500 (ii), 503 (ii), Contains Nature Identical Flavouring Substances (Coconut)",
+   "usageInstructions": "Ready to Eat",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Fruit & Nut Cookies",
+  "handle": "fruit-nut-cookies",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210717_1-top-n-town-bakers-cookies-fruit-n-nut.jpg"
+    },
+    "barcode": "8906018764274"
+   },
+   {
+    "title": "300g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184371_3-top-n-town-bakers-cookies-fruit-n-nut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210717_1-top-n-town-bakers-cookies-fruit-n-nut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210717-2_1-top-n-town-bakers-cookies-fruit-n-nut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210717-3_1-top-n-town-bakers-cookies-fruit-n-nut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210717-4_1-top-n-town-bakers-cookies-fruit-n-nut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184371_3-top-n-town-bakers-cookies-fruit-n-nut.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These premium handmade cookies are rich in real butter, fruits and cashew nuts. Each bite will give a pleasing taste to your taste buds. Enjoy this delicious treat with your favourite hot beverage. It is a perfect snack for your guests.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Butter, Hydrogenated Vegetable Fat (Palm kernal oil, olive oil, sesame oil), RO Water, Pan Fruit (Papaya Cubes, sugar, acidity regulator INS 330, preservative INS 202, ), Iodized Common Salt, Raising Agent (INS 500 (ii), 503 (ii), Contains Nature Identical Flavouring Substances (Mix Fruit Flavour), Contains Added Synthetic Food Colours (INS 122, 124)",
+   "usageInstructions": "Ready to Eat",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Nan Khatai",
+  "handle": "nan-khatai",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210715_1-top-n-town-bakers-cookies-nan-khatai.jpg"
+    },
+    "barcode": "8906018764243"
+   },
+   {
+    "title": "300g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184369_4-top-n-town-bakers-cookies-nan-khatai.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210715_1-top-n-town-bakers-cookies-nan-khatai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210715-2_1-top-n-town-bakers-cookies-nan-khatai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210715-3_1-top-n-town-bakers-cookies-nan-khatai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210715-4_1-top-n-town-bakers-cookies-nan-khatai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184369_4-top-n-town-bakers-cookies-nan-khatai.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These premium handmade cookies are rich in real butter and cardamom. Each bite will give a pleasing taste to your taste buds. Enjoy this delicious treat with your favourite hot beverage.  It is a perfect snack for your guests.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Butter, Hydrogenated Vegetable Fat (Palm kernal oil, olive oil, sesame oil), RO Water, Pistachios, Iodized Common Salt, Raising Agent (INS 500 (ii), 503 (ii), Contains Nature Identical Flavouring Substances (Cardamom)",
+   "usageInstructions": "Ready to Eat",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Salted Jeera Cookies",
+  "handle": "salted-jeera-cookies",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210716_1-top-n-town-bakers-cookies-salted-zeera.jpg"
+    },
+    "barcode": "8906018764229"
+   },
+   {
+    "title": "300g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184370_4-top-n-town-bakers-cookies-salted-zeera.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210716_1-top-n-town-bakers-cookies-salted-zeera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210716-2_1-top-n-town-bakers-cookies-salted-zeera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210716-3_1-top-n-town-bakers-cookies-salted-zeera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210716-4_1-top-n-town-bakers-cookies-salted-zeera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184370_4-top-n-town-bakers-cookies-salted-zeera.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These premium handmade cookies are rich in real butter and cumin seeds. Each bite will give a pleasing taste to your taste buds. Enjoy this delicious treat with your favourite hot beverage.  It is a perfect snack for your guests.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Butter, Hydrogenated Vegetable Fat (Palm kernal oil, olive oil, sesame oil), RO Water, Cumin Seeds, Iodized Common Salt, Raising Agent (INS 500 (ii), 503 (ii), Contains Nature Identical Flavouring Substances (Cumin)",
+   "usageInstructions": "Ready to Eat",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Pista Cookies",
+  "handle": "pista-cookies",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210714_1-top-n-town-bakers-cookies-pista.jpg"
+    },
+    "barcode": "8906018764267"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210714_1-top-n-town-bakers-cookies-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210714-2_1-top-n-town-bakers-cookies-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210714-3_1-top-n-town-bakers-cookies-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210714-4_1-top-n-town-bakers-cookies-pista.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These premium handmade cookies are rich in real butter and pistachio nuts. Each bite will give a pleasing taste to your taste buds. Enjoy this delicious treat with your favourite hot beverage. It is a perfect snack for your guests.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Butter, Hydrogenated Vegetable Fat (Palm kernal oil, olive oil, sesame oil), RO Water, Pistachios, Iodized Common Salt, Raising Agent (INS 500 (ii), 503 (ii), Contains Nature Identical Flavouring Substances (Pista)",
+   "usageInstructions": "Ready to Eat",
+   "manufacturerName": "Aaditya Food Products",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11414010000096"
+  }
+ },
+ {
+  "title": "Ajwain Butter Cookies - Eggless",
+  "handle": "ajwain-butter-cookies-eggless",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372158_1-top-n-town-bakers-ajwain-butter-cookies-eggless.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372158_1-top-n-town-bakers-ajwain-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372158-2_1-top-n-town-bakers-ajwain-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372158-3_1-top-n-town-bakers-ajwain-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372158-4_1-top-n-town-bakers-ajwain-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372158-5_1-top-n-town-bakers-ajwain-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372158-6_1-top-n-town-bakers-ajwain-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372158-7_1-top-n-town-bakers-ajwain-butter-cookies-eggless.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ajwain Cookies are crisp, buttery biscuits flavoured with aromatic ajwain (carom) seeds for a distinctive savoury taste and satisfying crunch. Carefully baked to deliver a light, flaky texture, they are ideal for tea-time or coffee breaks. Enjoy them as a convenient everyday snack or serve them to family and guests for a flavourful accompaniment to hot beverages.",
+   "ingredients": "Refined Wheat Flour (Maida), Butter, Sugar, RO Water, Whole Spice Ajwain Seed, Iodized Salt, Corn Flour, Milk Solids, Custard Powder, Milk, Glucose Powder, Food Additives (INS 503(i)), Baking Powder, Artificial Flavouring Substance (Ajwain Flavour).\nFood Allergen: Contains Cereal (Wheat). May Contain Traces of Milk.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "512.68",
+    "Protein (g)": "6.90",
+    "Carbohydrate (g)": "62.55",
+    "Total Sugar (g)": "21.36",
+    "Added Sugar (g)": "20.00",
+    "Total Fat (g)": "27.51",
+    "Saturated Fat (g)": "15.70",
+    "Sodium (mg)": "892.18",
+    "Dietary Fiber (g)": "4.11"
+   },
+   "storageInstructions": "Store at room temperature. Do not refrigerate.\nKeep away from direct sunlight and strong odours.\nOnce opened, store in an airtight container under hygienic conditions for best results.",
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Salted Jeera Butter Cookies - Eggless",
+  "handle": "salted-jeera-butter-cookies-eggless",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372157_1-top-n-town-bakers-salted-jeera-butter-cookies-eggless.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372157_1-top-n-town-bakers-salted-jeera-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372157-2_1-top-n-town-bakers-salted-jeera-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372157-3_1-top-n-town-bakers-salted-jeera-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372157-4_1-top-n-town-bakers-salted-jeera-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372157-5_1-top-n-town-bakers-salted-jeera-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372157-6_1-top-n-town-bakers-salted-jeera-butter-cookies-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372157-7_1-top-n-town-bakers-salted-jeera-butter-cookies-eggless.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Deliciously crisp butter cookies blended with aromatic cumin (jeera) seeds and a touch of salt for a perfect balance of savory and sweet flavors. An ideal accompaniment to tea or coffee.",
+   "ingredients": "Refined Wheat Flour (Maida), Butter, Sugar, RO Water, Whole Spice Cumin Seed, Iodized Salt, Corn Flour, Milk Solids, Custard Powder, Milk, Glucose Powder, Food Additives (INS 503(ii)), Baking Powder, Artificial Flavouring Substance (Jeera Flavour).\nFood Allergen: Contains Cereal (Wheat). May Contain Traces of Milk.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "518.31",
+    "Protein (g)": "6.80",
+    "Carbohydrate (g)": "62.55",
+    "Total Sugar (g)": "21.46",
+    "Added Sugar (g)": "20.00",
+    "Total Fat (g)": "27.61",
+    "Saturated Fat (g)": "15.70",
+    "Trans Fat (g)": "0.00",
+    "Sodium (mg)": "899.74",
+    "Cholesterol (mg)": "0.00",
+    "Dietary Fiber (g)": "2.54"
+   },
+   "storageInstructions": "Store at room temperature. Do not refrigerate.\nKeep away from direct sunlight and strong odours.\nOnce open store in airtight container for best result under hygiene conditions.",
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Banana Cake With Choco Chips - Eggless",
+  "handle": "banana-cake-with-choco-chips-eggless",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372159_1-top-n-town-bakers-banana-cake-with-choco-chips-eggless.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372159_1-top-n-town-bakers-banana-cake-with-choco-chips-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372159-2_1-top-n-town-bakers-banana-cake-with-choco-chips-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372159-3_1-top-n-town-bakers-banana-cake-with-choco-chips-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372159-4_1-top-n-town-bakers-banana-cake-with-choco-chips-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372159-5_1-top-n-town-bakers-banana-cake-with-choco-chips-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372159-6_1-top-n-town-bakers-banana-cake-with-choco-chips-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372159-7_1-top-n-town-bakers-banana-cake-with-choco-chips-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372159-8_1-top-n-town-bakers-banana-cake-with-choco-chips-eggless.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Soft and moist banana cake studded with delicious choco chips for a rich, indulgent taste in every bite. Carefully baked for a tender texture, it makes a delightful snack for breakfast, tea-time or dessert. Convenient and ready to enjoy, it is perfect for lunch boxes, travel, or whenever you crave a sweet treat during the day.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Vegetable Oil (Refined Soyabean Oil), Papaya Fruit [Sugar, Papaya Cubes, Acidity Regulator (INS 330), Preservatives, Colours, Added Flavour], Eggless Vanilla Concentrate [Milk Solids, Corn Starch, Baking Powder, Emulsifying and Stabilising Agents (INS 475, INS 471, INS 433, INS 415), Sugar, Iodized Salt, Artificial Flavouring Substance (Vanilla)], Raising Agent, Glycerine, Milk Solids, Salt, Artificial Flavouring Substance (Mixed Fruit Flavour), Preservatives (INS 202, INS 330).\nFood Allergen: Contains Cereal (Wheat). May Contain Traces of Milk.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "450.98",
+    "Protein (g)": "5.88",
+    "Carbohydrate (g)": "56.44",
+    "Total Sugar (g)": "32.44",
+    "Added Sugar (g)": "32.11",
+    "Total Fat (g)": "22.59",
+    "Saturated Fat (g)": "3.51",
+    "Sodium (mg)": "223.73",
+    "Cholesterol (mg)": "0.11",
+    "Dietary Fibre (g)": "1.12"
+   },
+   "storageInstructions": "Store at room temperature. Do not refrigerate.\nKeep away from direct sunlight and strong odours.\nOnce opened, store in an airtight container under hygienic conditions for best results.",
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Cake",
+  "handle": "chocolate-cake",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365775_1-top-n-town-bakers-chocolate-cake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365775_1-top-n-town-bakers-chocolate-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365775-2_1-top-n-town-bakers-chocolate-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365775-3_1-top-n-town-bakers-chocolate-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365775-4_1-top-n-town-bakers-chocolate-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365775-5_1-top-n-town-bakers-chocolate-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365775-6_1-top-n-town-bakers-chocolate-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365775-7_1-top-n-town-bakers-chocolate-cake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a rich and moist chocolate slice cake made with fine cocoa and baked to perfection. Each slice offers a soft texture and a well-balanced chocolate flavour, making it suitable for tea-time or casual snacking. This chocolate cake delivers a satisfying taste and smooth crumb, ideal for everyday enjoyment without being overly heavy.",
+   "ingredients": "Refined Wheat Flour (Maida), Ro Water, Sugar, Vegetable Oil (Refined Soyabean Oil), Eggless Chocolate Cake Concentrate (Milk Solids, Cocoa Solids, Baking Powder, Salt), Glycerine, Choco Chips, Cake Gel, Artificial Flavour, Preservatives (Ins 202, Ins 200, Ins 330). Food Allergen: Contains Cereal (Wheat)",
+   "nutritionalInfo": {
+    "Energy": "426.41 kcal",
+    "Protein": "5.87 g",
+    "Carbohydrate": "47.79 g",
+    "Total Sugar": "28.26 g",
+    "Added Sugar": "27.94 g",
+    "Total Fat": "23.37 g",
+    "Saturated Fat": "4.88 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "23.11 mg",
+    "Dietary Fibre": "0.72 g"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Cake",
+  "handle": "fruit-cake",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365776_1-top-n-town-bakers-fruit-cake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365776_1-top-n-town-bakers-fruit-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365776-2_1-top-n-town-bakers-fruit-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365776-3_1-top-n-town-bakers-fruit-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365776-4_1-top-n-town-bakers-fruit-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365776-5_1-top-n-town-bakers-fruit-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365776-6_1-top-n-town-bakers-fruit-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365776-7_1-top-n-town-bakers-fruit-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365776-8_1-top-n-town-bakers-fruit-cake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Soft and moist fruit cake slices studded with colourful candied fruit bits, offering a pleasant burst of flavour in every bite. With a light sweetness and tender crumb, this fruit cake is ideal for tea-time or casual snacking, delivering a balanced taste and enjoyable texture suitable for everyday indulgence.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Vegetable Oil (Refined Soyabean Oil), Papaya Fruit (Sugar, Papaya Cubes, Acidity Regulator Ins 330, Preservatives, Colours And Added Flavour), Eggless Vanilla Concentrate (Milk Solids, Corn Starch, Baking Powder, Emulsifying And Stabilising Agents Ins 475, Ins 471, Ins 433, Ins 415, Sugar, Iodised Salt, Added Artificial Flavouring Substance – Vanilla), Raising Agent, Glycerine, Milk Solids, Salt, Artificial Flavour (Mixed Fruit Flavour), Preservatives (Ins 202, Ins 330). Food Allergen: Contains Cereal (Wheat), Traces Of Milk.",
+   "nutritionalInfo": {
+    "Energy": "450.98 kcal",
+    "Protein": "5.85 g",
+    "Carbohydrate": "56.44 g",
+    "Total Sugar": "32.44 g",
+    "Added Sugar": "32.11 g",
+    "Total Fat": "22.59 g",
+    "Saturated Fat": "3.51 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.11 mg",
+    "Sodium": "223.73 mg",
+    "Dietary Fibre": "1.12 g"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Lemon Cake",
+  "handle": "lemon-cake",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365777_2-top-n-town-bakers-lemon-cake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365777_2-top-n-town-bakers-lemon-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365777-2_2-top-n-town-bakers-lemon-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365777-3_2-top-n-town-bakers-lemon-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365777-4_2-top-n-town-bakers-lemon-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365777-5_2-top-n-town-bakers-lemon-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365777-6_2-top-n-town-bakers-lemon-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365777-7_2-top-n-town-bakers-lemon-cake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a soft and moist lemon slice cake infused with a refreshing citrus flavour. Each slice offers a light, balanced sweetness with a tender crumb and subtle zest notes. Ideal for tea-time or as a simple dessert, this lemon cake delivers a pleasant, well-rounded taste that suits everyday indulgence without being overly rich or heavy.",
+   "ingredients": "Sugar, Ro Water, Refined Wheat Flour (Maida), Vegetable Oil (Refined Soyabean Oil), Papaya Fruit (Sugar, Papaya Cubes, Acidity Regulator Ins 330), Eggless Vanilla Concentrate (Milk Solids, Corn Starch, Baking Powder, Emulsifying And Stabilising Agents Ins 475, Ins 471, Ins 433, Ins 415), Lemon Powder (Dextrose, Acidity Regulator Ins 330), Sugar, Starch, Natural And Nature Identical Flavouring Substances, Anticaking Agents Ins 551, Ins 341(Iii), Lime Juice Powder (0.2%), Iodised Salt, Added Artificial Flavouring Substance (Lemon Flavour), Raising Agent, Glycerine, Preservatives Ins 202, Ins 330. Food Allergen: Cereal (Wheat), Traces Of Milk.",
+   "nutritionalInfo": {
+    "Energy": "450.98 kcal",
+    "Protein": "5.88 g",
+    "Carbohydrate": "56.44 g",
+    "Total Sugar": "32.44 g",
+    "Added Sugar": "32.11 g",
+    "Total Fat": "22.59 g",
+    "Saturated Fat": "3.51 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.11 mg",
+    "Sodium": "223.73 mg",
+    "Dietary Fibre": "1.12 g"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11414010000096",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Marble Cake - Eggless",
+  "handle": "marble-cake-eggless",
+  "vendor": "Top 'N Town Bakers",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365778_1-top-n-town-bakers-marble-cake-eggless.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365778_1-top-n-town-bakers-marble-cake-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365778-2_1-top-n-town-bakers-marble-cake-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365778-3_1-top-n-town-bakers-marble-cake-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365778-4_1-top-n-town-bakers-marble-cake-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365778-5_1-top-n-town-bakers-marble-cake-eggless.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365778-6_1-top-n-town-bakers-marble-cake-eggless.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Eggless Marble Cake – A delightfully soft and moist cake featuring elegant swirls of rich chocolate and smooth vanilla. Each slice offers a harmonious balance of flavours, creating a visually appealing and satisfying treat. Crafted for those who enjoy a classic combination without eggs, this marble cake is perfect for everyday indulgence or special moments, delivering a gentle sweetness and light texture in every bite.",
+   "ingredients": "Refined Wheat Fiour (Maida), Sugar, Soyabean Oil, Ro Water, Pasta Concentrate (Milk Solids, Starch, Cocoa Solids, Baking Powder, Sugar, Emulsifying & Stabilising Agent (Ins 415) And Salt, Class Ii Preservatives (Ins 330, Ins 202, Ins 282), Nature Identical Flavouring Substance (Chocolate & Vanilla Flavour).",
+   "nutritionalInfo": {
+    "Energy": "453.83 kcal",
+    "Protein": "8.9 g",
+    "Carbohydrate": "47.6 g",
+    "Total Fat": "22.04 g"
+   },
+   "manufacturerName": "Aaditya Food Products",
+   "fssaiLicense": "11419010000137",
+   "countryOfOrigin": "India"
+  }
+ }
+]
