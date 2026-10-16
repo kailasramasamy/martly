@@ -1,0 +1,38 @@
+{
+  "brand": "Shower To Shower (ITC)",
+  "manufacturer": "ITC Limited",
+  "feed": "shower-to-shower-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/shower-to-shower/logo-903d7302.png",
+  "themeColor": "#1F2A6B",
+  "themeColorSecondary": "#7FB3E6",
+  "namePrefix": "Shower To Shower ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Prickly\\ Heat\\ Powder\\ \\-\\ Cologne\\ Cool$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Prickly\\ Heat\\ Powder\\ \\-\\ Sandal$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Prickly\\ Heat\\ Powder\\ \\-\\ Super\\ Cool\\ with\\ Mint$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    }
+  ]
+}
