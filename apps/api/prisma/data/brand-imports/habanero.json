@@ -1,0 +1,230 @@
+{
+  "brand": "Habanero",
+  "manufacturer": "Habanero Foods International Pvt. Ltd.",
+  "feed": "habanero-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/habanero/logo-ec125ccd.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#111111",
+  "namePrefix": "Habanero ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Baked\\ Beans\\ in\\ Tomato\\ Sauce$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Beans & Legumes"
+      ]
+    },
+    {
+      "match": "^Barbeque\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Basil\\ Pesto\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Jalapeno\\ Cheese\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Cheddar\\ Cheese\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Chunky\\ \\&\\ Spicy\\ Salsa$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Salsa\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Bhoot\\ Jolokia\\ Hot\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Hot\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Sriracha\\ Chilli\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Garlic\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Pasta\\ Sauce\\ \\-\\ Spicy$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Jalapeno\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Mushroom\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Olive\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Tortilla\\ Wraps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Tortilla\\ Wraps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Tortilla\\ Wraps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Beetroot\\ \\&\\ Carrot\\ Tortilla\\ Wraps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Spinach\\ Tortilla\\ Wraps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Tomato\\ \\&\\ Herbs\\ Tortilla\\ Wraps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Mango\\ Chilli\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Mexican\\ Cheese\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Zingy\\ Jalapeno\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    }
+  ]
+}
