@@ -174,6 +174,7 @@ function RootLayoutNav() {
         <Stack.Screen name="unsupported-role" options={{ gestureEnabled: false }} />
         <Stack.Screen name="delete-account" options={{ headerShown: true, title: "Delete Account" }} />
         <Stack.Screen name="store/[id]" options={{ headerShown: true, title: "Store" }} />
+        <Stack.Screen name="choose-store" options={{ headerShown: true, title: "Choose a store" }} />
         <Stack.Screen name="product/[id]" options={{ headerShown: true, title: "Product" }} />
         <Stack.Screen name="category/[id]" options={{ headerShown: true, title: "Category" }} />
         <Stack.Screen name="brand/[id]" options={{ headerShown: false }} />

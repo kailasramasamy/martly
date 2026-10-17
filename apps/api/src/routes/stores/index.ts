@@ -1,4 +1,5 @@
 import type { FastifyInstance } from "fastify";
+import { Prisma } from "../../../generated/prisma/client.js";
 import { createStoreSchema, updateStoreSchema, storeProductSearchQuerySchema } from "@martly/shared/schemas";
 import type { ApiResponse, CategoryFacets, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
@@ -8,9 +9,11 @@ import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, ve
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
 import { haversine } from "../../lib/geo.js";
+import { drivingDistances } from "../../services/driving-distance.js";
 import { searchStoreProducts } from "../../services/store-search.js";
 import { decorateStoreProducts, storeProductInclude } from "../../services/store-product-view.js";
 import { getStoreDiscoveryInfo } from "../../services/store-discovery.js";
+import { catalogCoverage, type CatalogCoverage } from "../../services/catalog-coverage.js";
 import { recordOpeningStock } from "../../services/stock-ledger.js";
 import { categoryFacets, subcategoryIdsUnder } from "../../services/category-browse.js";
 
@@ -84,6 +87,18 @@ export async function storeRoutes(app: FastifyInstance) {
     return response;
   });
 
+  // How much of the catalog this store lists, for staff adding products
+  app.get<{ Params: { id: string } }>(
+    "/:id/catalog-coverage",
+    { preHandler: [authenticate, requirePermission(Permission.LISTING_MANAGE)] },
+    async (request, reply) => {
+      const store = await app.prisma.store.findUnique({ where: { id: request.params.id }, select: { id: true, organizationId: true } });
+      if (!store) return reply.notFound("Store not found");
+      if (!(await verifyStoreOrgAccess(request, app.prisma, store.id))) return reply.forbidden("Access denied");
+      return { success: true, data: await catalogCoverage(app.prisma, store.id, store.organizationId) } satisfies ApiResponse<CatalogCoverage>;
+    },
+  );
+
   // Get nearby stores (public, sorted by distance)
   app.get("/nearby", { preHandler: [authenticateOptional] }, async (request) => {
     const { lat, lng, radius = 10 } = request.query as { lat?: string; lng?: string; radius?: number };
@@ -112,12 +127,13 @@ export async function storeRoutes(app: FastifyInstance) {
     const inRange = stores
       .map((store) => ({ store, distance: haversine(userLat, userLng, store.latitude!, store.longitude!) }))
       .filter((s) => s.distance <= maxRadius);
-    const [discovery, tiers] = await Promise.all([
+    const [discovery, tiers, drives] = await Promise.all([
       getStoreDiscoveryInfo(app.prisma, inRange.map((s) => s.store.id)),
       app.prisma.deliveryTier.findMany({
         where: { storeId: { in: inRange.map((s) => s.store.id) }, isActive: true },
         select: { storeId: true, minDistance: true, maxDistance: true },
       }),
+      drivingDistances({ lat: userLat, lng: userLng }, inRange.map(({ store }) => ({ id: store.id, lat: store.latitude!, lng: store.longitude! }))),
     ]);
     // Same rule as checkout's delivery lookup: within radius AND an active tier covers the distance
     const hasTier = (storeId: string, distance: number) =>
@@ -129,6 +145,8 @@ export async function storeRoutes(app: FastifyInstance) {
         ...discovery.get(store.id),
         subscriptionEnabled: store.subscriptionEnabled && organization.subscriptionEnabled,
         distance,
+        // Road distance for display; delivery eligibility and fees stay on straight-line distance, as at checkout
+        drive: drives.get(store.id) ?? null,
         deliversToYou: distance <= store.deliveryRadius && hasTier(store.id, distance),
       }))
       .sort((a, b) => a.distance - b.distance);
@@ -169,9 +187,10 @@ export async function storeRoutes(app: FastifyInstance) {
         return reply.forbidden("Access denied");
       }
 
+      const { translations, ...rest } = body;
       const store = await app.prisma.store.update({
         where: { id: request.params.id },
-        data: body,
+        data: { ...rest, ...(translations !== undefined ? { translations: translations ?? Prisma.DbNull } : {}) },
       });
 
       const response: ApiResponse<typeof store> = { success: true, data: store };

@@ -3,6 +3,7 @@ import { Form, Input, InputNumber, Select, Card, Row, Col, Slider, Switch, Radio
 import { ShopOutlined, EnvironmentOutlined, ShoppingCartOutlined, CalendarOutlined } from "@ant-design/icons";
 
 import { sectionTitle } from "../../theme";
+import { BrandingCard } from "./branding-card";
 
 export const StoreEdit = () => {
   const { formProps, saveButtonProps } = useForm({ resource: "stores" });
@@ -52,6 +53,8 @@ export const StoreEdit = () => {
                 </Col>
               </Row>
             </Card>
+
+            <BrandingCard />
           </Col>
 
           {/* Right column: Operational settings */}

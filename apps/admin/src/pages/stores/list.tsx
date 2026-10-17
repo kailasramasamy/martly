@@ -1,5 +1,5 @@
 import { List, useTable, EditButton, ShowButton } from "@refinedev/antd";
-import { Table, Tag, Form, Select, Space } from "antd";
+import { Avatar, Table, Tag, Form, Select, Space } from "antd";
 import type { HttpError } from "@refinedev/core";
 
 import { STORE_STATUS_CONFIG } from "../../constants/tag-colors";
@@ -15,7 +15,7 @@ const STATUS_OPTIONS = [
 
 export const StoreList = () => {
   const { tableProps, searchFormProps } = useTable<
-    { id: string; name: string; slug: string; address: string; status: string },
+    { id: string; name: string; slug: string; address: string; status: string; logoUrl: string | null; brandColor: string | null },
     HttpError,
     { q: string; status: string }
   >({
@@ -43,7 +43,20 @@ export const StoreList = () => {
         </Form.Item>
       </Form>
       <Table {...tableProps} rowKey="id" size="small">
-        <Table.Column dataIndex="name" title="Name" />
+        <Table.Column
+          dataIndex="name"
+          title="Name"
+          render={(name: string, store: { logoUrl: string | null; brandColor: string | null }) => (
+            <Space>
+              {store.logoUrl ? (
+                <img src={store.logoUrl} alt="" style={{ width: 64, height: 36, objectFit: "contain", borderRadius: 6, border: "1px solid #e2e8f0", background: "#fff", padding: 2 }} />
+              ) : (
+                <Avatar shape="square" style={{ width: 64, height: 36, backgroundColor: store.brandColor ?? "#0d9488" }}>{name.slice(0, 1)}</Avatar>
+              )}
+              {name}
+            </Space>
+          )}
+        />
         <Table.Column dataIndex="slug" title="Slug" />
         <Table.Column dataIndex="address" title="Address" />
         <Table.Column

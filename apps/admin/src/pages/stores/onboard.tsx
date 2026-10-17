@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router";
 import { useCustom, useOne, useApiUrl } from "@refinedev/core";
-import { Tree, Table, InputNumber, Button, Steps, Card, message, Space, Checkbox, Typography, Row, Col } from "antd";
+import { Tree, Table, InputNumber, Button, Steps, Card, message, Space, Checkbox, Typography, Row, Col, Switch, Tag } from "antd";
 import type { DataNode } from "antd/es/tree";
 import {
   AppstoreOutlined,
@@ -11,8 +11,9 @@ import {
 } from "@ant-design/icons";
 
 import { sectionTitle } from "../../theme";
+import { axiosInstance } from "../../providers/data-provider";
 
-const { Title, Text } = Typography;
+const { Text } = Typography;
 
 interface SubcategoryNode { id: string; name: string; slug: string; }
 interface CategoryNode { id: string; name: string; slug: string; subcategories: SubcategoryNode[]; }
@@ -24,6 +25,8 @@ interface Variant {
   sku: string | null;
   unitType: string;
   unitValue: string;
+  /** Already sold in this store */
+  listed: boolean;
 }
 
 interface ProductWithVariants {
@@ -44,19 +47,30 @@ interface SelectedVariant {
   stock: number;
 }
 
-function toTreeData(departments: DepartmentNode[]): DataNode[] {
-  return departments.map((d) => ({
-    key: d.id,
-    title: d.name,
-    children: d.categories.map((c) => ({
-      key: c.id,
-      title: c.name,
-      children: c.subcategories.map((s) => ({
-        key: s.id,
-        title: s.name,
-      })),
-    })),
-  }));
+interface Coverage {
+  available: number;
+  listed: number;
+  unlisted: number;
+  unlistedBySubcategory: Record<string, number>;
+}
+
+const withCount = (name: string, n: number) => (n > 0 ? `${name} (${n})` : name);
+
+/** Catalog tree labelled with unlisted sizes per node; with gapsOnly, branches with nothing to add are dropped */
+function toTreeData(departments: DepartmentNode[], gaps: Record<string, number>, gapsOnly: boolean): DataNode[] {
+  const keep = (n: number) => !gapsOnly || n > 0;
+  return departments.map((d) => {
+    const categories = d.categories.map((c) => {
+      const subs = c.subcategories.map((s) => ({ key: s.id, name: s.name, n: gaps[s.id] ?? 0 })).filter((s) => keep(s.n));
+      return { key: c.id, name: c.name, n: subs.reduce((t, s) => t + s.n, 0), subs };
+    }).filter((c) => keep(c.n));
+    const n = categories.reduce((t, c) => t + c.n, 0);
+    const node: DataNode = {
+      key: d.id, title: withCount(d.name, n),
+      children: categories.map((c) => ({ key: c.key, title: withCount(c.name, c.n), children: c.subs.map((s) => ({ key: s.key, title: withCount(s.name, s.n) })) })),
+    };
+    return { node, n };
+  }).filter((d) => keep(d.n)).map((d) => d.node);
 }
 
 export const StoreOnboard = () => {
@@ -68,6 +82,7 @@ export const StoreOnboard = () => {
   const [selectedCategoryId, setSelectedCategoryId] = useState<string | null>(null);
   const [selected, setSelected] = useState<Map<string, SelectedVariant>>(new Map());
   const [submitting, setSubmitting] = useState(false);
+  const [unlistedOnly, setUnlistedOnly] = useState(true);
 
   const { data: storeData } = useOne({ resource: "stores", id: storeId! });
   const storeName = storeData?.data?.name ?? "Store";
@@ -77,14 +92,20 @@ export const StoreOnboard = () => {
     method: "get",
   });
 
+  const { data: coverageData } = useCustom<{ data: Coverage }>({
+    url: `${apiUrl}/stores/${storeId}/catalog-coverage`,
+    method: "get",
+  });
+  const coverage = coverageData?.data?.data;
+
   const { data: productsData } = useCustom<{ data: ProductWithVariants[] }>({
     url: `${apiUrl}/categories/${selectedCategoryId}/products`,
     method: "get",
     queryOptions: { enabled: !!selectedCategoryId },
-    config: { query: { pageSize: 200 } },
+    config: { query: { pageSize: 200, storeId, unlistedOnly } },
   });
 
-  const treeNodes = treeData?.data?.data ? toTreeData(treeData.data.data) : [];
+  const treeNodes = treeData?.data?.data ? toTreeData(treeData.data.data, coverage?.unlistedBySubcategory ?? {}, unlistedOnly) : [];
   const products = productsData?.data?.data ?? [];
 
   const toggleVariant = (variant: Variant, product: ProductWithVariants) => {
@@ -134,21 +155,15 @@ export const StoreOnboard = () => {
 
     setSubmitting(true);
     try {
-      const token = localStorage.getItem("token");
-      const res = await fetch(`${apiUrl}/store-products/bulk`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
-        body: JSON.stringify({
-          storeId,
-          items: items.map((i) => ({ variantId: i.variantId, price: i.price, stock: i.stock })),
-        }),
+      const { data: json } = await axiosInstance.post("/store-products/bulk", {
+        storeId,
+        items: items.map((i) => ({ variantId: i.variantId, price: i.price, stock: i.stock })),
       });
-      const json = await res.json();
-      if (!res.ok) throw new Error(json.message || "Failed");
       message.success(`${json.data.created} variants added, ${json.data.skipped} skipped`);
       navigate(`/stores/show/${storeId}`);
     } catch (err: unknown) {
-      message.error(err instanceof Error ? err.message : "Failed to onboard products");
+      const msg = (err as { response?: { data?: { message?: string } } }).response?.data?.message;
+      message.error(msg ?? "Failed to onboard products");
     } finally {
       setSubmitting(false);
     }
@@ -167,16 +182,27 @@ export const StoreOnboard = () => {
       {step === 0 && (
         <Row gutter={16}>
           <Col xs={24} md={8} lg={6}>
-            <Card title={sectionTitle(<AppstoreOutlined />, "Categories")} size="small" style={{ height: "100%" }}>
+            <Card
+              title={sectionTitle(<AppstoreOutlined />, "Categories")}
+              size="small"
+              style={{ height: "100%" }}
+              extra={<Space size={6}><Switch size="small" checked={unlistedOnly} onChange={setUnlistedOnly} /><Text>Only unlisted</Text></Space>}
+            >
+              {coverage && (
+                <Text type="secondary" style={{ display: "block", marginBottom: 8 }}>
+                  {coverage.listed.toLocaleString("en-IN")} of {coverage.available.toLocaleString("en-IN")} sizes listed · {coverage.unlisted.toLocaleString("en-IN")} to add
+                </Text>
+              )}
               {treeNodes.length > 0 ? (
                 <Tree
+                  key={String(unlistedOnly)}
                   treeData={treeNodes}
-                  defaultExpandAll
+                  defaultExpandAll={unlistedOnly}
                   onSelect={(keys) => setSelectedCategoryId(keys[0] as string ?? null)}
                   selectedKeys={selectedCategoryId ? [selectedCategoryId] : []}
                 />
               ) : (
-                <Text type="secondary">No categories</Text>
+                <Text type="secondary">{unlistedOnly ? "Every catalog product is already listed" : "No categories"}</Text>
               )}
             </Card>
           </Col>
@@ -191,10 +217,12 @@ export const StoreOnboard = () => {
                   {product.variants.map((variant) => (
                     <div key={variant.id} style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
                       <Checkbox
-                        checked={selected.has(variant.id)}
+                        checked={variant.listed || selected.has(variant.id)}
+                        disabled={variant.listed}
                         onChange={() => toggleVariant(variant, product)}
                       />
                       <span>{variant.name}</span>
+                      {variant.listed && <Tag color="green">Listed</Tag>}
                       <Text type="secondary">({variant.unitType} {variant.unitValue})</Text>
                       {variant.sku && <Text type="secondary">SKU: {variant.sku}</Text>}
                     </div>
@@ -236,7 +264,7 @@ export const StoreOnboard = () => {
             <Table.Column title="Product" dataIndex="productName" />
             <Table.Column title="Variant" dataIndex="variantName" />
             <Table.Column title="Unit" render={(_, r: SelectedVariant) => `${r.unitType} ${r.unitValue}`} />
-            <Table.Column title="Price" dataIndex="price" render={(v: number) => `$${v.toFixed(2)}`} />
+            <Table.Column title="Price" dataIndex="price" render={(v: number) => `\u20B9${v.toFixed(2)}`} />
             <Table.Column title="Stock" dataIndex="stock" />
           </Table>
           <Text style={{ marginTop: 16, display: "block" }}>Total: {selectedItems.length} variants to assign</Text>

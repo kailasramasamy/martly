@@ -1,11 +1,14 @@
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { View, Text, Pressable, Animated, Image, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useStore } from "../../lib/store-context";
 import { useAuth } from "../../lib/auth-context";
 import type { Store } from "../../lib/types";
-import { FeaturedStoreCard, StoreRow } from "./StoreCards";
+import { StoreBrowser } from "./StoreBrowser";
+import { ChooseStoreButton } from "./ChooseStoreButton";
+import type { StoreBanner } from "./StoreDetailPanel";
+import { hasBannerTarget, openBannerTarget } from "../../lib/banner-action";
 import { getGreeting } from "./store-info";
 
 const smile = require("../../assets/branding/smile.png");
@@ -68,16 +71,30 @@ function headlineFor(locationDenied: boolean, deliverable: Store[]): string {
   return fastest ? `${count} to you, the fastest in ${fastest} minutes.` : `${count} to you.`;
 }
 
+/** Stores in the order shoppers should see them: those that deliver (fastest first), else every store, then the rest */
+function browseOrder(stores: Store[], nearbyStores: Store[]) {
+  const deliverable = fastestFirst(nearbyStores.filter((s) => s.deliversToYou));
+  const outside = nearbyStores.filter((s) => !s.deliversToYou);
+  const browseAll = deliverable.length === 0 ? stores.filter((s) => s.status === "ACTIVE") : [];
+  const seen = new Set<string>();
+  const ordered = [...deliverable, ...browseAll, ...outside].filter((s) => !seen.has(s.id) && seen.add(s.id));
+  // When something delivers, stores outside the area can be previewed but not chosen
+  const blocked = new Set(deliverable.length > 0 ? outside.map((s) => s.id) : []);
+  return { deliverable, ordered, blocked };
+}
+
 export default function StoreDiscovery() {
   const { stores, nearbyStores, locationStatus, requestLocation, setSelectedStore } = useStore();
   const { user } = useAuth();
-
-  const locationDenied = locationStatus === "denied";
-  const deliverable = nearbyStores.filter((s) => s.deliversToYou);
-  const outside = nearbyStores.filter((s) => !s.deliversToYou);
-  const [featured, ...others] = fastestFirst(deliverable);
-  const browseAll = deliverable.length === 0 ? stores.filter((s) => s.status === "ACTIVE") : [];
-  let order = 1;
+  const [previewId, setPreviewId] = useState<string | null>(null);
+  const { deliverable, ordered, blocked } = browseOrder(stores, nearbyStores);
+  const preview = ordered.find((s) => s.id === previewId) ?? ordered[0];
+  // Nothing chosen yet, so an offer simply picks its store; out-of-area stores can't be picked
+  const tapOffer = (store: Store, banner: StoreBanner) => {
+    if (blocked.has(store.id) || !hasBannerTarget(banner)) return;
+    setSelectedStore(store);
+    openBannerTarget(banner);
+  };
 
   if (stores.length === 0) {
     return (
@@ -94,36 +111,19 @@ export default function StoreDiscovery() {
       <FadeIn index={0}>
         <Hero
           firstName={user?.name?.split(" ")[0]}
-          headline={headlineFor(locationDenied, deliverable)}
-          onEnableLocation={locationDenied ? requestLocation : undefined}
+          headline={headlineFor(locationStatus === "denied", deliverable)}
+          onEnableLocation={locationStatus === "denied" ? requestLocation : undefined}
         />
       </FadeIn>
-
-      {featured && (
-        <FadeIn index={order++}>
-          <SectionTitle title="Fastest to you" />
-          <FeaturedStoreCard store={featured} onPress={setSelectedStore} />
+      <FadeIn index={1}>
+        <SectionTitle title="Choose your store" caption="Tap a store to see its offers and delivery slots" />
+        <StoreBrowser stores={ordered} activeId={preview?.id ?? null} onPreview={(st) => setPreviewId(st.id)} isMuted={(st) => blocked.has(st.id)} inset={16} onBannerPress={tapOffer} />
+      </FadeIn>
+      {preview && (
+        <FadeIn index={2}>
+          <ChooseStoreButton store={preview} blockedReason={blocked.has(preview.id) ? "Doesn't deliver to your location yet" : null} onChoose={setSelectedStore} />
         </FadeIn>
       )}
-
-      {others.length > 0 && <FadeIn index={order++}><SectionTitle title="More stores near you" /></FadeIn>}
-      {others.map((store) => (
-        <FadeIn key={store.id} index={order++}><StoreRow store={store} onPress={setSelectedStore} /></FadeIn>
-      ))}
-
-      {browseAll.length > 0 && <FadeIn index={order++}><SectionTitle title="Martly stores" /></FadeIn>}
-      {browseAll.map((store) => (
-        <FadeIn key={store.id} index={order++}><StoreRow store={store} onPress={setSelectedStore} /></FadeIn>
-      ))}
-
-      {outside.length > 0 && (
-        <FadeIn index={order++}>
-          <SectionTitle title="Outside your delivery area" caption="These stores can't deliver to your location yet" />
-        </FadeIn>
-      )}
-      {outside.map((store) => (
-        <FadeIn key={store.id} index={order++}><StoreRow store={store} onPress={setSelectedStore} disabled /></FadeIn>
-      ))}
     </View>
   );
 }

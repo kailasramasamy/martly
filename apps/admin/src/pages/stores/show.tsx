@@ -9,6 +9,8 @@ import { ShopOutlined, EnvironmentOutlined, TeamOutlined, UserAddOutlined, Delet
 import { STORE_STATUS_CONFIG } from "../../constants/tag-colors";
 import { sectionTitle } from "../../theme";
 import { axiosInstance } from "../../providers/data-provider";
+import { BrandingView, type StoreBrandingRecord } from "./branding-view";
+import { CatalogCoverageBar } from "./catalog-coverage-bar";
 
 interface Identity {
   role: string;
@@ -158,9 +160,11 @@ export const StoreShow = () => {
         </Col>
 
         <Col xs={24}>
-          <Button type="primary" onClick={() => navigate(`/stores/show/${record.id}/onboard`)}>
-            Onboard Products
-          </Button>
+          <BrandingView record={record as StoreBrandingRecord} />
+        </Col>
+
+        <Col xs={24}>
+          <CatalogCoverageBar storeId={record.id as string} onAdd={() => navigate(`/stores/show/${record.id}/onboard`)} />
         </Col>
 
         {canManageStaff && (

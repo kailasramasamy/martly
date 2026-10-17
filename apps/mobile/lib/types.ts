@@ -21,6 +21,21 @@ export interface Store {
   expressEtaMinutes?: number | null;
   operatingStart?: string | null;
   operatingEnd?: string | null;
+  logoUrl?: string | null;
+  promoImages?: string[];
+  tagline?: string | null;
+  offerText?: string | null;
+  brandColor?: string | null;
+  highlights?: string[];
+  translations?: Record<string, { tagline?: string; offerText?: string }> | null;
+  /** Items on offer right now and the biggest saving among them */
+  deals?: { count: number; maxPercent: number } | null;
+  /** Scheduled delivery slots still open for booking, soonest first (IST date, HH:MM times) */
+  slots?: { date: string; startTime: string; endTime: string; orderBy: string; fewLeft: boolean }[];
+  /** Road distance and time from the shopper, when known */
+  drive?: { km: number; minutes: number } | null;
+  /** Live home hero banners for this store (3:2), its own first */
+  banners?: ({ id: string; imageUrl: string } & Pick<Banner, "actionType" | "actionTarget">)[];
 }
 
 export interface Variant {

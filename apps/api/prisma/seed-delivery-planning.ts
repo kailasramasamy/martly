@@ -4,6 +4,7 @@
  * and tomorrow's morning slot.
  *
  *   cd apps/api && npx tsx prisma/seed-delivery-planning.ts
+ *   --slots-only sets up slots, roster and fleet settings without test orders (for production)
  *
  * Idempotent: seeded orders are tagged in deliveryNotes and replaced on every run, along with any trips holding them.
  * The old all-day slots are switched off, not deleted. Needs seed-manage-users.ts (riders) first.
@@ -124,10 +125,12 @@ async function seedOrders(storeId: string, origin: { lat: number; lng: number })
 }
 
 async function main() {
-  const harur = await prisma.store.findFirstOrThrow({ where: { name: "Harur Fresh Mart" } });
-  await removePreviousSeed();
+  const harur = await prisma.store.findFirstOrThrow({ where: { name: "Harur Fresh Mart" }, select: { id: true, latitude: true, longitude: true } });
+  const slotsOnly = process.argv.includes("--slots-only");
+  if (!slotsOnly) await removePreviousSeed();
   await seedSlots(harur.id);
   await seedRoster(harur.id);
+  if (slotsOnly) return;
   await seedOrders(harur.id, { lat: harur.latitude ?? 12.244, lng: harur.longitude ?? 78.269 });
 }
 

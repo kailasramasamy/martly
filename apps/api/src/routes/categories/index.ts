@@ -8,7 +8,7 @@ import {
 import type { ApiResponse, PaginatedResponse, DepartmentNode, CategoryNode, SubcategoryNode } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { getOrgUser } from "../../middleware/org-scope.js";
+import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { formatVariantUnits } from "../../services/units.js";
 
 export async function categoryRoutes(app: FastifyInstance) {
@@ -198,7 +198,8 @@ export async function categoryRoutes(app: FastifyInstance) {
   // ── Products by taxonomy ID ─────────────────────────
   // Detects which level the ID belongs to and expands to subcategory IDs
   app.get<{ Params: { id: string } }>("/:id/products", { preHandler: [authenticate] }, async (request, reply) => {
-    const { page = 1, pageSize = 20 } = request.query as { page?: number; pageSize?: number };
+    const { page = 1, pageSize = 20, storeId, unlistedOnly } = request.query as { page?: number; pageSize?: number; storeId?: string; unlistedOnly?: string };
+    if (storeId && !(await verifyStoreOrgAccess(request, app.prisma, storeId))) return reply.forbidden("Access denied");
     const skip = (Number(page) - 1) * Number(pageSize);
     const { id } = request.params;
 
@@ -235,22 +236,31 @@ export async function categoryRoutes(app: FastifyInstance) {
     // Master catalog plus the caller's own org products; SUPER_ADMIN sees everything
     const user = getOrgUser(request);
     const visibility = user.role === "SUPER_ADMIN" ? {} : { OR: [{ organizationId: null }, ...(user.organizationId ? [{ organizationId: user.organizationId }] : [])] };
-    const where = { subcategoryId: { in: subcategoryIds }, ...visibility };
+    // With a store: flag sizes it already lists, and optionally keep only products with a size still to add
+    const gapsOnly = storeId && unlistedOnly === "true" ? { isActive: true, variants: { some: { storeProducts: { none: { storeId } } } } } : {};
+    const where = { subcategoryId: { in: subcategoryIds }, ...visibility, ...gapsOnly };
     const [products, total] = await Promise.all([
       app.prisma.product.findMany({
         where,
         skip,
         take: Number(pageSize),
-        include: { subcategory: true, variants: true },
+        include: {
+          subcategory: true,
+          variants: { include: { storeProducts: { where: { storeId: storeId ?? "" }, select: { id: true } } } },
+        },
         orderBy: [{ name: "asc" }, { id: "asc" }],
       }),
       app.prisma.product.count({ where }),
     ]);
 
+    const data = products.map((p) => ({
+      ...p,
+      variants: formatVariantUnits(p.variants.map(({ storeProducts, ...v }) => ({ ...v, listed: storeProducts.length > 0 }))),
+    }));
     return {
       success: true,
-      data: products.map((p) => ({ ...p, variants: formatVariantUnits(p.variants) })),
+      data,
       meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
-    } satisfies PaginatedResponse<(typeof products)[0]>;
+    } satisfies PaginatedResponse<(typeof data)[0]>;
   });
 }

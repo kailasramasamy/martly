@@ -465,8 +465,25 @@ export const createOrderSchema = z.object({
 );
 export type CreateOrderInput = z.infer<typeof createOrderSchema>;
 
+// ── Store branding ───────────────────────────────────
+export const storeTranslationsSchema = z.record(
+  z.enum(languageCodes),
+  z.object({ tagline: z.string().trim().max(80).optional(), offerText: z.string().trim().max(80).optional() }),
+);
+export type StoreTranslations = z.infer<typeof storeTranslationsSchema>;
+
+export const storeBrandingSchema = z.object({
+  logoUrl: z.string().url().nullish(),
+  promoImages: z.array(z.string().url()).max(3).optional(),
+  tagline: z.string().trim().max(80).nullish(),
+  offerText: z.string().trim().max(80).nullish(),
+  brandColor: z.string().regex(/^#[0-9a-fA-F]{6}$/, "Use a colour like #f97316").nullish(),
+  highlights: z.array(z.string().trim().min(1).max(24)).max(4).optional(),
+  translations: storeTranslationsSchema.nullish(),
+});
+
 // ── Update Schemas ───────────────────────────────────
-export const updateStoreSchema = z.object({
+export const updateStoreSchema = storeBrandingSchema.extend({
   name: z.string().min(1).optional(),
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
   address: z.string().min(1).optional(),
@@ -476,9 +493,10 @@ export const updateStoreSchema = z.object({
   latitude: z.number().min(-90).max(90).nullish(),
   longitude: z.number().min(-180).max(180).nullish(),
   deliveryRadius: z.number().positive().optional(),
-  minOrderAmount: z.number().min(0).nullish(),
-  freeDeliveryThreshold: z.number().min(0).nullish(),
-  baseDeliveryFee: z.number().min(0).nullish(),
+  // Money comes back from the API as Decimal strings; forms send them back as-is
+  minOrderAmount: z.coerce.number().min(0).nullish(),
+  freeDeliveryThreshold: z.coerce.number().min(0).nullish(),
+  baseDeliveryFee: z.coerce.number().min(0).nullish(),
   subscriptionEnabled: z.boolean().optional(),
   subscriptionDeliveryMode: z.nativeEnum(SubscriptionDeliveryMode).optional(),
   subscriptionWindowStart: z.string().regex(/^\d{2}:\d{2}$/).nullish(),

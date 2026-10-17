@@ -5,16 +5,10 @@ import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { verifyStoreOrgAccess } from "../../middleware/org-scope.js";
-import { addDays, istDay, istNow, istWeekday } from "../../services/ist-day.js";
-import { slotCapacity } from "../../services/delivery/settings.js";
+import { addDays, istNow } from "../../services/ist-day.js";
+import { BOOKING_DAYS, slotsForDate } from "../../services/delivery/slot-availability.js";
 
 const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-/** Minutes past midnight as "HH:MM", wrapping a cutoff that falls the evening before */
-function clockTime(minutes: number): string {
-  const m = ((minutes % 1440) + 1440) % 1440;
-  return `${String(Math.floor(m / 60)).padStart(2, "0")}:${String(m % 60).padStart(2, "0")}`;
-}
 
 export async function deliverySlotRoutes(app: FastifyInstance) {
   // GET / — List slots for a store (admin)
@@ -154,65 +148,11 @@ export async function deliverySlotRoutes(app: FastifyInstance) {
 
     // Stores run on India time, whatever zone the server is in
     const now = istNow();
-    if (date < now.key || date > addDays(now.key, 7)) {
+    if (date < now.key || date > addDays(now.key, BOOKING_DAYS)) {
       return reply.badRequest("Date must be between today and 7 days from now");
     }
 
-    const dayOfWeek = istWeekday(date);
-    const isToday = date === now.key;
-
-    // Find active slots for this day
-    const slots = await app.prisma.deliverySlot.findMany({
-      where: {
-        storeId,
-        dayOfWeek,
-        isActive: true,
-      },
-      orderBy: { startTime: "asc" },
-    });
-
-    // Count booked orders per slot for this date
-    const { start: startOfDay, end: endOfDay } = istDay(date);
-
-    const slotIds = slots.map((s) => s.id);
-    const bookingCounts = slotIds.length > 0
-      ? await app.prisma.order.groupBy({
-          by: ["deliverySlotId"],
-          where: {
-            deliverySlotId: { in: slotIds },
-            scheduledDate: { gte: startOfDay, lte: endOfDay },
-            status: { not: "CANCELLED" },
-          },
-          _count: true,
-        })
-      : [];
-
-    const countMap = new Map(bookingCounts.map((b) => [b.deliverySlotId, b._count]));
-    const capacities = new Map(await Promise.all(slots.map(async (s) => [s.id, await slotCapacity(app.prisma, s, date)] as const)));
-    const currentMinutes = now.minutes;
-
-    const availableSlots = slots
-      .map((slot) => {
-        const booked = countMap.get(slot.id) ?? 0;
-        // A slot only sells what its riders can carry
-        const capacity = capacities.get(slot.id) ?? slot.maxOrders;
-        const available = capacity - booked;
-
-        // Bookings close `cutoffMinutes` before the slot starts; closed slots are still listed so customers see why
-        const [h, m] = slot.startTime.split(":").map(Number);
-        const cutoff = h * 60 + m - slot.cutoffMinutes;
-
-        return {
-          id: slot.id,
-          startTime: slot.startTime,
-          endTime: slot.endTime,
-          maxOrders: capacity,
-          available,
-          full: available <= 0,
-          closed: isToday && currentMinutes >= cutoff,
-          orderBy: clockTime(cutoff),
-        };
-      });
+    const availableSlots = await slotsForDate(app.prisma, storeId, date);
 
     const response: ApiResponse<typeof availableSlots> = {
       success: true,

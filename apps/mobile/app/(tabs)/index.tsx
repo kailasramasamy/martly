@@ -2,8 +2,6 @@ import { useEffect, useState, useMemo, useCallback, useRef } from "react";
 import {
   View,
   Text,
-  TextInput,
-  FlatList,
   ScrollView,
   TouchableOpacity,
   StyleSheet,
@@ -31,6 +29,7 @@ import { ProductActionsProvider } from "../../lib/product-actions";
 import { FloatingCart } from "../../components/FloatingCart";
 import { HomeScreenSkeleton } from "../../components/SkeletonLoader";
 import StoreDiscovery from "../../components/store-discovery/StoreDiscovery";
+import { openBannerTarget } from "../../lib/banner-action";
 import { HeroBannerSlide } from "../../components/HeroBannerSlide";
 import { CategoryTile } from "../../components/CategoryTile";
 import { TimeSpotlight } from "../../components/TimeSpotlight";
@@ -38,7 +37,7 @@ import { HomeHeader } from "../../components/home/HomeHeader";
 import { FestiveHero } from "../../components/home/FestiveHero";
 import { BannerCarousel } from "../../components/home/BannerCarousel";
 import { PlusPromoStrip } from "../../components/PlusPromoStrip";
-import type { Store, StoreProduct, HomeFeed, Banner, FestiveTile } from "../../lib/types";
+import type { StoreProduct, HomeFeed, Banner, FestiveTile } from "../../lib/types";
 import { TabBottomDock } from "../../components/TabIcon";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 
@@ -52,15 +51,13 @@ export default function HomeScreen() {
   const tabBarScroll = useTabBarAutoHide();
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
   const [dockHeight, setDockHeight] = useState(0);
-  const { stores, selectedStore, setSelectedStore, loading: storesLoading, userArea, refreshStores } = useStore();
+  const { selectedStore, loading: storesLoading, userArea, refreshStores } = useStore();
   const { isMember } = useMembership();
   const { isBasketMode } = useBasketMode();
   const { getLocalizedName } = useLanguage();
 
   const [homeFeed, setHomeFeed] = useState<HomeFeed | null>(null);
   const [loadingFeed, setLoadingFeed] = useState(false);
-  const [showStorePicker, setShowStorePicker] = useState(false);
-  const [storeSearch, setStoreSearch] = useState("");
   const [refreshing, setRefreshing] = useState(false);
   const [memberStatus, setMemberStatus] = useState<{ isMember: boolean; membership: { planName: string; endDate: string; daysLeft: number } | null } | null>(null);
   const [hasSubscriptions, setHasSubscriptions] = useState(false);
@@ -110,13 +107,6 @@ export default function HomeScreen() {
 
 
 
-  const filteredStores = useMemo(() => {
-    if (!storeSearch) return stores;
-    const q = storeSearch.toLowerCase();
-    return stores.filter(
-      (s) => s.name.toLowerCase().includes(q) || s.address.toLowerCase().includes(q),
-    );
-  }, [stores, storeSearch]);
 
   // ── Banner data by placement ──
   // A live festival's hero takes the top of the screen; the banner carousel moves below the categories
@@ -151,28 +141,7 @@ export default function HomeScreen() {
     if (festiveHero) router.push({ pathname: "/festival/[id]", params: { id: festiveHero.id, tile: tile.id } });
   }, [festiveHero]);
 
-  const handleBannerPress = useCallback((banner: Banner) => {
-    switch (banner.actionType) {
-      case "CATEGORY":
-        if (banner.actionTarget) router.push({ pathname: "/category/[id]", params: { id: banner.actionTarget } });
-        break;
-      case "PRODUCT":
-        if (banner.actionTarget) router.push({ pathname: "/product/[id]", params: { id: banner.actionTarget } });
-        break;
-      case "COLLECTION":
-        if (banner.actionTarget) router.push({ pathname: "/collection/[id]", params: { id: banner.actionTarget } });
-        break;
-      case "SEARCH":
-        if (banner.actionTarget) router.push({ pathname: "/search", params: { q: banner.actionTarget } } as any);
-        break;
-      case "URL":
-        // External URLs — no-op on mobile for now
-        break;
-      case "NONE":
-      default:
-        break;
-    }
-  }, []);
+  const handleBannerPress = useCallback((banner: Banner) => openBannerTarget(banner), []);
 
 
   const handleCategoryPress = useCallback(
@@ -182,14 +151,6 @@ export default function HomeScreen() {
     [],
   );
 
-  const selectStore = useCallback(
-    (store: Store) => {
-      setSelectedStore(store);
-      setShowStorePicker(false);
-      setStoreSearch("");
-    },
-    [setSelectedStore],
-  );
 
 
   const renderProductList = useCallback(
@@ -203,7 +164,7 @@ export default function HomeScreen() {
     <ProductActionsProvider store={selectedStore ?? null}>
       <View style={styles.container}>
         {/* ── Fixed Header ── */}
-        <HomeHeader store={selectedStore} userArea={userArea} onPickStore={() => setShowStorePicker(true)} tint={headerTint} collapsed={tabBarScroll.headerCollapsed} />
+        <HomeHeader store={selectedStore} userArea={userArea} onPickStore={() => router.push("/choose-store")} tint={headerTint} collapsed={tabBarScroll.headerCollapsed} />
 
         <ScrollView keyboardDismissMode="on-drag" {...tabBarScroll.scrollProps}
           showsVerticalScrollIndicator={false}
@@ -488,85 +449,6 @@ export default function HomeScreen() {
           </Modal>
         )}
 
-        {/* ── Store Picker Modal ── */}
-        <Modal visible={showStorePicker} animationType="slide" presentationStyle="pageSheet">
-          <View style={styles.modalContainer}>
-            <View style={styles.modalHeader}>
-              <View>
-                <Text style={styles.modalTitle}>Select Store</Text>
-                <Text style={styles.modalSubtitle}>{stores.length} stores available</Text>
-              </View>
-              <TouchableOpacity
-                style={styles.modalCloseBtn}
-                onPress={() => { setShowStorePicker(false); setStoreSearch(""); }}
-              >
-                <Ionicons name="close" size={22} color={colors.text} />
-              </TouchableOpacity>
-            </View>
-
-            <View style={styles.modalSearchWrap}>
-              <Ionicons name="search-outline" size={18} color="#94a3b8" />
-              <TextInput
-                style={styles.modalSearchInput}
-                placeholder="Search by name or address..."
-                value={storeSearch}
-                onChangeText={setStoreSearch}
-                autoCapitalize="none"
-                autoCorrect={false}
-                placeholderTextColor="#94a3b8"
-              />
-              {storeSearch.length > 0 && (
-                <TouchableOpacity onPress={() => setStoreSearch("")}>
-                  <Ionicons name="close-circle" size={18} color="#cbd5e1" />
-                </TouchableOpacity>
-              )}
-            </View>
-
-            <FlatList keyboardDismissMode="on-drag"
-              data={filteredStores}
-              keyExtractor={(item) => item.id}
-              contentContainerStyle={styles.modalList}
-              renderItem={({ item }) => {
-                const isSelected = selectedStore?.id === item.id;
-                return (
-                  <TouchableOpacity
-                    style={[styles.storeCard, isSelected && styles.storeCardActive]}
-                    onPress={() => selectStore(item)}
-                    activeOpacity={0.7}
-                  >
-                    <View style={[styles.storeCardIcon, isSelected && styles.storeCardIconActive]}>
-                      <Ionicons
-                        name="storefront"
-                        size={18}
-                        color={isSelected ? "#fff" : "#94a3b8"}
-                      />
-                    </View>
-                    <View style={styles.storeCardInfo}>
-                      <Text style={[styles.storeCardName, isSelected && styles.storeCardNameActive]}>
-                        {item.name}
-                      </Text>
-                      <Text style={styles.storeCardAddress} numberOfLines={1}>
-                        {item.address}
-                      </Text>
-                    </View>
-                    {isSelected && (
-                      <View style={styles.storeCardCheck}>
-                        <Ionicons name="checkmark-circle" size={22} color={colors.primary} />
-                      </View>
-                    )}
-                  </TouchableOpacity>
-                );
-              }}
-              ListEmptyComponent={
-                <View style={styles.emptyProducts}>
-                  <Ionicons name="search" size={28} color="#94a3b8" />
-                  <Text style={styles.emptyTitle}>No stores found</Text>
-                  <Text style={styles.emptySubtitle}>Try a different search term</Text>
-                </View>
-              }
-            />
-          </View>
-        </Modal>
       </View>
     </ProductActionsProvider>
   );
@@ -766,30 +648,6 @@ const styles = StyleSheet.create({
     width: "50%",
   },
 
-  // ── Empty Products ──
-  emptyProducts: {
-    alignItems: "center",
-    paddingVertical: 32,
-    paddingHorizontal: 24,
-    marginHorizontal: H_PADDING,
-    backgroundColor: "#fff",
-    borderRadius: 12,
-    borderWidth: 1,
-    borderColor: "#f1f5f9",
-  },
-  emptyTitle: {
-    fontSize: 15,
-    fontWeight: "600",
-    color: colors.text,
-    marginTop: 4,
-  },
-  emptySubtitle: {
-    fontSize: 13,
-    color: "#94a3b8",
-    marginTop: 4,
-    textAlign: "center",
-  },
-
   // ── Deals of the Day ──
   dealsSection: {
     marginTop: 24,
@@ -883,96 +741,4 @@ const styles = StyleSheet.create({
     lineHeight: 18,
   },
 
-  // ── Store Picker Modal ──
-  modalContainer: { flex: 1, backgroundColor: "#f8faf9" },
-  modalHeader: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    paddingHorizontal: H_PADDING,
-    paddingTop: 20,
-    paddingBottom: 16,
-    backgroundColor: "#fff",
-    borderBottomWidth: 1,
-    borderBottomColor: "#f1f5f9",
-  },
-  modalTitle: {
-    fontSize: 20,
-    fontWeight: "700",
-    color: colors.text,
-  },
-  modalSubtitle: {
-    fontSize: 13,
-    color: "#94a3b8",
-    marginTop: 2,
-  },
-  modalCloseBtn: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: "#f1f5f9",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  modalSearchWrap: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#fff",
-    borderWidth: 1,
-    borderColor: "#e2e8f0",
-    borderRadius: 10,
-    paddingHorizontal: 12,
-    margin: H_PADDING,
-    gap: 8,
-  },
-  modalSearchInput: {
-    flex: 1,
-    paddingVertical: 11,
-    fontSize: 14,
-    color: colors.text,
-  },
-  modalList: { paddingHorizontal: H_PADDING, paddingBottom: 24 },
-  storeCard: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#fff",
-    borderRadius: 12,
-    padding: 14,
-    marginBottom: 8,
-    borderWidth: 1,
-    borderColor: "#f1f5f9",
-  },
-  storeCardActive: {
-    borderColor: colors.primary,
-    backgroundColor: colors.primary + "06",
-  },
-  storeCardIcon: {
-    width: 40,
-    height: 40,
-    borderRadius: 10,
-    backgroundColor: "#f1f5f9",
-    justifyContent: "center",
-    alignItems: "center",
-    marginRight: 12,
-  },
-  storeCardIconActive: {
-    backgroundColor: colors.primary,
-  },
-  storeCardInfo: { flex: 1 },
-  storeCardName: {
-    fontSize: 15,
-    fontWeight: "600",
-    color: colors.text,
-  },
-  storeCardNameActive: {
-    color: colors.primary,
-  },
-  storeCardAddress: {
-    fontSize: 12,
-    color: "#64748b",
-    marginTop: 2,
-  },
-  storeCardCheck: {
-    marginLeft: 8,
-  },
 });

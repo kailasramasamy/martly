@@ -362,6 +362,16 @@ model Store {
   createdAt             DateTime    @default(now()) @map("created_at")
   updatedAt             DateTime    @updatedAt @map("updated_at")
 
+  // Branding shown to shoppers choosing a store
+  logoUrl      String?  @map("logo_url")
+  promoImages  String[] @default([]) @map("promo_images")
+  tagline      String?
+  offerText    String?  @map("offer_text")
+  brandColor   String?  @map("brand_color")
+  highlights   String[] @default([])
+  // Per language: { tagline, offerText }
+  translations Json?
+
   subscriptionEnabled      Boolean                  @default(false) @map("subscription_enabled")
   subscriptionDeliveryMode SubscriptionDeliveryMode @default(DEDICATED) @map("subscription_delivery_mode")
   subscriptionWindowStart  String?                  @map("subscription_window_start")
