@@ -28,7 +28,7 @@ interface BillingTabProps {
 function BillingView({ profile }: { profile: BillingProfile | null }) {
   if (!hasBilling(profile)) return <Typography.Text type="secondary">No billing details yet. They're needed before buying a plan.</Typography.Text>;
   return (
-    <Descriptions column={1} size="small">
+    <Descriptions column={1} size="small" styles={{ label: { width: 110 } }}>
       <Descriptions.Item label="Legal name">{profile!.billingName}</Descriptions.Item>
       <Descriptions.Item label="GSTIN">{profile!.gstin || "—"}</Descriptions.Item>
       <Descriptions.Item label="Address">{profile!.billingAddress}</Descriptions.Item>
