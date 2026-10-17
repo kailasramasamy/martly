@@ -57,7 +57,7 @@ export function ManageHeader({ title, subtitle, children, right, collapsed }: Ma
 }
 
 const styles = StyleSheet.create({
-  band: { backgroundColor: manage.ink, paddingHorizontal: 16, paddingBottom: 16 },
+  band: { backgroundColor: manage.ink, paddingHorizontal: 16, paddingBottom: 12 },
   bandCollapsed: { paddingBottom: 8 },
   row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 10, minHeight: 44 },
   titleCompact: { flex: 1, fontFamily: fonts.extrabold, fontSize: 18, color: "#fff", letterSpacing: -0.3 },
@@ -68,6 +68,6 @@ const styles = StyleSheet.create({
   },
   liveDot: { width: 7, height: 7, borderRadius: 4, backgroundColor: manage.live },
   scopeText: { fontFamily: fonts.bold, fontSize: 13, color: manage.inkText, flexShrink: 1 },
-  title: { fontFamily: fonts.extrabold, fontSize: 26, color: "#fff", letterSpacing: -0.6, marginTop: 10 },
+  title: { fontFamily: fonts.extrabold, fontSize: 26, color: "#fff", letterSpacing: -0.6, marginTop: 6 },
   subtitle: { fontFamily: fonts.semibold, fontSize: 13.5, color: manage.inkMuted, marginTop: 4 },
 });

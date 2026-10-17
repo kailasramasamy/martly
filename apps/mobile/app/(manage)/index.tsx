@@ -19,6 +19,7 @@ import { LowStockCard } from "../../components/manage/today/LowStockCard";
 import { CountsWaitingCard } from "../../components/manage/stock/CountsWaitingCard";
 import { RecentOrdersCard, TopProductsCard } from "../../components/manage/today/TodayLists";
 import { useTodayData } from "../../components/manage/today/use-today-data";
+import { MarketingPlanStrip } from "../../components/manage/today/MarketingPlanStrip";
 import { useStatusCounts } from "../../components/manage/orders/use-status-counts";
 
 function Greeting({ name }: { name?: string }) {
@@ -26,12 +27,13 @@ function Greeting({ name }: { name?: string }) {
   const hour = now.getHours();
   const part = hour < 12 ? "morning" : hour < 17 ? "afternoon" : "evening";
   const first = name?.split(" ")[0];
-  const date = now.toLocaleDateString("en-IN", { weekday: "long", day: "numeric", month: "long" });
+  const date = now.toLocaleDateString("en-IN", { weekday: "short", day: "numeric", month: "short" });
+  // One line keeps the header short: "Good evening, Harur · Sat, 18 Oct"
   return (
-    <View style={styles.greeting}>
-      <Text style={styles.greetingTitle}>{first ? `Good ${part}, ${first}` : `Good ${part}`}</Text>
-      <Text style={styles.greetingDate}>{date}</Text>
-    </View>
+    <Text style={styles.greeting} numberOfLines={1}>
+      {first ? `Good ${part}, ${first}` : `Good ${part}`}
+      <Text style={styles.greetingDate}>{` · ${date}`}</Text>
+    </Text>
   );
 }
 
@@ -52,6 +54,8 @@ function TodayDashboard() {
   const { counts, reload: reloadCounts } = useStatusCounts(QUEUE_STATUSES, storeId);
   // Coming back to Today refreshes the live queue counts
   useFocusEffect(useCallback(() => { reloadCounts(); }, [reloadCounts]));
+  // The marketing plan belongs to an organisation, so the platform admin doesn't get the strip
+  const showMarketing = user?.role !== "SUPER_ADMIN" && can(user, "marketing-plan");
 
   const openOrders = (status?: string) => {
     if (status) requestOrdersFilter(status);
@@ -73,6 +77,7 @@ function TodayDashboard() {
       ) : (
         <>
           <TodayKpis stats={stats} />
+          {showMarketing && <MarketingPlanStrip />}
           <SectionCard title="Live queue" action={{ label: "All orders", onPress: () => openOrders() }}>
             <LiveQueue counts={counts} onSelect={openOrders} />
           </SectionCard>
@@ -90,7 +95,6 @@ function TodayDashboard() {
 }
 
 const styles = StyleSheet.create({
-  greeting: { marginTop: 4 },
-  greetingTitle: { fontFamily: fonts.semibold, fontSize: 14, color: manage.inkText },
-  greetingDate: { fontFamily: fonts.medium, fontSize: 12.5, color: manage.inkMuted, marginTop: 2 },
+  greeting: { fontFamily: fonts.semibold, fontSize: 14, color: manage.inkText, marginTop: 2 },
+  greetingDate: { fontFamily: fonts.medium, color: manage.inkMuted },
 });
