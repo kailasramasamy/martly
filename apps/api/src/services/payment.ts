@@ -36,6 +36,57 @@ export async function createRazorpayOrder(amountInPaise: number, orderId: string
   });
 }
 
+/** Razorpay rejected a subscription call; its status must not leak through as our own (a 401 would log users out) */
+class PaymentProviderError extends Error {
+  name = "PaymentProviderError";
+  statusCode = 502;
+}
+
+interface RazorpayFailure {
+  statusCode?: number;
+  error?: { description?: string } | string;
+}
+
+async function subscriptionsCall<T>(work: () => Promise<T>): Promise<T> {
+  try {
+    return await work();
+  } catch (err) {
+    const failure = err as RazorpayFailure;
+    if (typeof failure?.statusCode !== "number") throw err;
+    const reason = typeof failure.error === "object" ? failure.error?.description : failure.error;
+    throw new PaymentProviderError(
+      failure.statusCode === 401
+        ? "Auto-renewing plans need Razorpay Subscriptions switched on for this account"
+        : `The payment provider refused the request${reason ? `: ${reason}` : ""}`,
+    );
+  }
+}
+
+/** A monthly Razorpay plan for an amount in paise (GST included) */
+export async function createRazorpayPlan(name: string, amountInPaise: number) {
+  const plan = await subscriptionsCall(() => getRazorpay().plans.create({
+    period: "monthly", interval: 1, item: { name, amount: amountInPaise, currency: "INR" },
+  }));
+  return plan.id;
+}
+
+/** A subscription billing the plan monthly; with startAt the mandate is set up now and the first charge waits */
+export async function createRazorpaySubscription(planId: string, notes: Record<string, string>, startAt?: Date) {
+  return subscriptionsCall(() => getRazorpay().subscriptions.create({
+    plan_id: planId, total_count: 120, customer_notify: 1, notes,
+    ...(startAt ? { start_at: Math.floor(startAt.getTime() / 1000) } : {}),
+  }));
+}
+
+export async function cancelRazorpaySubscription(subscriptionId: string, atCycleEnd: boolean) {
+  return subscriptionsCall(() => getRazorpay().subscriptions.cancel(subscriptionId, atCycleEnd));
+}
+
+/** The checkout handler's signature for a subscription's first payment */
+export function verifySubscriptionSignature(paymentId: string, subscriptionId: string, signature: string): boolean {
+  return hmacMatches(keySecret, `${paymentId}|${subscriptionId}`, signature);
+}
+
 /** Refunds a captured payment in full */
 export async function refundRazorpayPayment(paymentId: string) {
   return getRazorpay().payments.refund(paymentId, {});

@@ -55,6 +55,30 @@ export async function getEntitlements(db: Db, organizationId: string) {
     promotions: { planUsed, planTotal, planLeft: Math.max(0, planTotal - planUsed), topUpBalance: topUp._sum.delta ?? 0, resetsAt: window.end },
     pushIncluded: plan?.pushIncluded ?? false,
     aiImages: { used: aiImagesUsed, total: plan?.aiImagesPerMonth ?? 0 },
+    /** Paid plans only: extra promotions aren't sold on Free or during the trial */
+    onPaidPlan: !!period && !period.isTrial,
+    ...(await trialAndRenewal(db, organizationId, period)),
+  };
+}
+
+/** Whether the free trial can still be started (or when the running one ends), and how the plan renews */
+async function trialAndRenewal(db: Db, organizationId: string, period: { isTrial: boolean; endsAt: Date } | null) {
+  const [org, paidPeriods, subscription, lastPeriod] = await Promise.all([
+    db.organization.findUniqueOrThrow({ where: { id: organizationId }, select: { trialUsedAt: true } }),
+    db.orgPlanPeriod.count({ where: { organizationId, isTrial: false } }),
+    db.marketingSubscription.findFirst({
+      where: { organizationId, status: { in: ["ACTIVE", "PENDING", "HALTED", "CREATED"] }, OR: [{ status: { not: "CREATED" } }, { startAt: { not: null } }] },
+      orderBy: { createdAt: "desc" }, include: { product: { select: { name: true } } },
+    }),
+    db.orgPlanPeriod.findFirst({ where: { organizationId, endsAt: { gt: new Date() } }, orderBy: { endsAt: "desc" }, select: { endsAt: true } }),
+  ]);
+  return {
+    trial: { available: !org.trialUsedAt && paidPeriods === 0, endsAt: period?.isTrial ? period.endsAt : null },
+    subscription: subscription && {
+      status: subscription.status, productName: subscription.product.name, cancelAtPeriodEnd: subscription.cancelAtPeriodEnd,
+      /** Next charge (or, once cancelled, when the paid time runs out) */
+      renewsAt: subscription.startAt && subscription.status === "CREATED" ? subscription.startAt : lastPeriod?.endsAt ?? null,
+    },
   };
 }
 

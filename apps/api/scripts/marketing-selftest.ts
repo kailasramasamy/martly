@@ -8,6 +8,7 @@ import { PrismaClient } from "../generated/prisma/client.js";
 import { chargePromotion, getEntitlements, refundPromotion } from "../src/services/marketing/entitlements.js";
 import { fulfilAdOrder } from "../src/services/marketing/billing.js";
 import { closeEndedPeriods } from "../src/services/marketing/renewals.js";
+import { recordSubscriptionCharge, startTrial } from "../src/services/marketing/subscriptions.js";
 
 const prisma = new PrismaClient();
 const ok = (cond: boolean, msg: string) => console.log(`${cond ? "PASS" : "FAIL"}  ${msg}`);
@@ -22,6 +23,35 @@ async function newPromo(orgId: string, userId: string) {
   const promo = await prisma.promo.create({ data: { organizationId: orgId, createdById: userId, brief: "selftest", status: "READY" } });
   try { return { promo, charge: await prisma.$transaction((tx) => chargePromotion(tx, promo)) }; }
   catch (e) { return { promo, charge: (e as Error & { statusCode?: number }).statusCode }; }
+}
+
+/** The one-time trial, upgrading out of it, and a renewing subscription's charge reported twice */
+async function trialAndSubscription(userId: string) {
+  const org = await prisma.organization.create({ data: { name: "Selftest Trial", slug: `selftest-trial-${Date.now()}` } });
+  try {
+    ok((await getEntitlements(prisma, org.id)).trial.available, "Trial offered to a new organisation");
+    await startTrial(prisma, org.id);
+    const onTrial = await getEntitlements(prisma, org.id);
+    ok(onTrial.plan?.code === "GROWTH" && onTrial.promotions.planTotal === 2 && !onTrial.onPaidPlan && !!onTrial.trial.endsAt,
+      "Trial: Growth with 2 promotions for 14 days, not a paid plan (no extras)");
+    ok(await startTrial(prisma, org.id).then(() => false, () => true), "Trial can't be started twice");
+    await buy(org.id, userId, "PRO");
+    const pro = await prisma.orgPlanPeriod.findFirstOrThrow({ where: { organizationId: org.id, product: { code: "PRO" } } });
+    ok(Math.round((pro.endsAt.getTime() - pro.startsAt.getTime()) / DAY) === 30, "Upgrading out of the trial starts now and carries no days");
+    const growth = await prisma.adProduct.findUniqueOrThrow({ where: { code: "GROWTH" } });
+    await prisma.marketingSubscription.create({ data: { organizationId: org.id, productId: growth.id, razorpaySubscriptionId: `sub_selftest_${Date.now()}`, createdById: userId, status: "ACTIVE" } });
+    const sub = await prisma.marketingSubscription.findFirstOrThrow({ where: { organizationId: org.id } });
+    const payment = { id: `pay_selftest_${Date.now()}`, amount: 117882 };
+    const first = await recordSubscriptionCharge(prisma, sub.razorpaySubscriptionId, payment);
+    const again = await recordSubscriptionCharge(prisma, sub.razorpaySubscriptionId, payment);
+    const periods = await prisma.orgPlanPeriod.count({ where: { organizationId: org.id, product: { code: "GROWTH" }, isTrial: false } });
+    ok(!!first?.number && Number(first.total) === 1178.82 && again === null && periods === 1, "A subscription charge grants one month and one invoice, even if reported twice");
+  } finally {
+    await prisma.marketingSubscription.deleteMany({ where: { organizationId: org.id } });
+    await prisma.orgPlanPeriod.deleteMany({ where: { organizationId: org.id } });
+    await prisma.adOrder.deleteMany({ where: { organizationId: org.id } });
+    await prisma.organization.delete({ where: { id: org.id } });
+  }
 }
 
 async function main() {
@@ -66,4 +96,6 @@ async function main() {
     await prisma.organization.delete({ where: { id: org.id } });
   }
 }
-main().finally(() => prisma.$disconnect());
+main()
+  .then(async () => trialAndSubscription((await prisma.user.findFirstOrThrow({ where: { email: "owner@demogrocers.dev" } })).id))
+  .finally(() => prisma.$disconnect());

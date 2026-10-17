@@ -11,6 +11,7 @@ import { createAdOrder, fulfilAdOrder } from "../../services/marketing/billing.j
 import { invoiceLink, invoiceLinkValid, renderInvoice } from "../../services/marketing/invoice.js";
 import { bannerResults, promoSales } from "../../services/marketing/stats.js";
 import { brandAdRoutes } from "./brand-ads.js";
+import { subscriptionRoutes } from "./subscriptions.js";
 
 const STORE_KINDS = ["STORE_PLAN", "PROMOTION_TOPUP"] as const;
 const staff = { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] };
@@ -27,6 +28,7 @@ export function orgOf(request: FastifyRequest, reply: FastifyReply): string | un
 /** Store owners' paid marketing: plan, usage, purchases, invoices and results */
 export async function marketingRoutes(app: FastifyInstance) {
   await app.register(brandAdRoutes);
+  await app.register(subscriptionRoutes);
 
   app.get("/entitlements", staff, async (request, reply) => {
     const organizationId = orgOf(request, reply);
@@ -68,7 +70,9 @@ export async function marketingRoutes(app: FastifyInstance) {
       app.prisma.adProduct.findUnique({ where: { id: productId } }),
       app.prisma.organization.findUniqueOrThrow({ where: { id: user.organizationId! } }),
     ]);
-    if (!product || !(STORE_KINDS as readonly string[]).includes(product.kind)) return reply.notFound("Package not found");
+    // Plans renew through a subscription (POST /subscription); one-off orders are for extra promotions
+    if (product?.kind !== "PROMOTION_TOPUP") return reply.notFound("Package not found");
+    if (!(await getEntitlements(app.prisma, org.id)).onPaidPlan) return reply.conflict("Extra promotions are for Growth and Pro plans");
     if (!org.billingName || !org.billingAddress || !org.billingState) return reply.badRequest("Add your billing details before paying");
     const billing = { name: org.billingName, gstin: org.gstin, address: org.billingAddress, state: org.billingState };
     const { order, checkout } = await createAdOrder(app.prisma, product, quantity, { organizationId: org.id, billing, createdById: user.sub });

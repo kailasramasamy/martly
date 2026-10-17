@@ -216,6 +216,15 @@ enum AdProductKind {
   BRAND_CPM
 }
 
+enum MarketingSubscriptionStatus {
+  CREATED
+  ACTIVE
+  PENDING
+  HALTED
+  CANCELLED
+  COMPLETED
+}
+
 enum AdOrderStatus {
   PENDING
   PAID
@@ -372,14 +381,16 @@ model Organization {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
-  subscriptionEnabled Boolean  @default(false) @map("subscription_enabled")
-  festivalRegions     String[] @default(["ALL"]) @map("festival_regions")
-  promoDiscountCap    Int      @default(20) @map("promo_discount_cap")
-  billingName         String?  @map("billing_name")
+  subscriptionEnabled Boolean   @default(false) @map("subscription_enabled")
+  festivalRegions     String[]  @default(["ALL"]) @map("festival_regions")
+  promoDiscountCap    Int       @default(20) @map("promo_discount_cap")
+  billingName         String?   @map("billing_name")
   gstin               String?
-  billingAddress      String?  @map("billing_address")
-  billingState        String?  @map("billing_state")
-  allowBrandAds       Boolean  @default(true) @map("allow_brand_ads")
+  billingAddress      String?   @map("billing_address")
+  billingState        String?   @map("billing_state")
+  allowBrandAds       Boolean   @default(true) @map("allow_brand_ads")
+  /// When the organisation started its one free Growth trial
+  trialUsedAt         DateTime? @map("trial_used_at")
 
   stores                Store[]
   products              Product[]
@@ -414,6 +425,8 @@ model Organization {
   campaignOptOuts       BrandCampaignOptOut[]
 
   bannerArtRuns BannerArtRun[]
+
+  marketingSubscriptions MarketingSubscription[]
 
   @@map("organizations")
 }
@@ -2092,29 +2105,34 @@ model StockCountLineRevision {
 
 /// Price list for everything Martly sells to store owners and brands; orders snapshot the price
 model AdProduct {
-  id               String           @id @default(uuid())
-  kind             AdProductKind
-  code             String           @unique
-  name             String
-  description      String?
-  price            Decimal          @db.Decimal(10, 2)
-  durationDays     Int              @default(30) @map("duration_days")
-  promotionCredits Int              @default(0) @map("promotion_credits")
+  id                 String           @id @default(uuid())
+  kind               AdProductKind
+  code               String           @unique
+  name               String
+  description        String?
+  price              Decimal          @db.Decimal(10, 2)
+  durationDays       Int              @default(30) @map("duration_days")
+  promotionCredits   Int              @default(0) @map("promotion_credits")
   /// AI-made banner images per month (plain banners; promotions include their own art)
-  aiImagesPerMonth Int              @default(0) @map("ai_images_per_month")
-  pushIncluded     Boolean          @default(false) @map("push_included")
+  aiImagesPerMonth   Int              @default(0) @map("ai_images_per_month")
+  pushIncluded       Boolean          @default(false) @map("push_included")
   /// Brand packages: where the banner runs
-  placement        BannerPlacement?
+  placement          BannerPlacement?
   /// CPM packages: views bought per unit
-  viewsPerUnit     Int?             @map("views_per_unit")
-  isActive         Boolean          @default(true) @map("is_active")
-  sortOrder        Int              @default(0) @map("sort_order")
-  createdAt        DateTime         @default(now()) @map("created_at")
-  updatedAt        DateTime         @updatedAt @map("updated_at")
+  viewsPerUnit       Int?             @map("views_per_unit")
+  /// Store plans: the Razorpay plan that bills this price monthly (made when first needed)
+  razorpayPlanId     String?          @map("razorpay_plan_id")
+  razorpayPlanAmount Int?             @map("razorpay_plan_amount")
+  isActive           Boolean          @default(true) @map("is_active")
+  sortOrder          Int              @default(0) @map("sort_order")
+  createdAt          DateTime         @default(now()) @map("created_at")
+  updatedAt          DateTime         @updatedAt @map("updated_at")
 
   orders      AdOrder[]
   planPeriods OrgPlanPeriod[]
   campaigns   BrandCampaign[]
+
+  subscriptions MarketingSubscription[]
 
   @@index([kind, isActive])
   @@map("ad_products")
@@ -2197,6 +2215,8 @@ model OrgPlanPeriod {
   reminderSentAt DateTime? @map("reminder_sent_at")
   /// Set once the scheduler has applied the downgrade after this period
   closedAt       DateTime? @map("closed_at")
+  /// A free trial month: no order behind it, and nothing to carry into an upgrade
+  isTrial        Boolean   @default(false) @map("is_trial")
   createdAt      DateTime  @default(now()) @map("created_at")
 
   organization Organization @relation(fields: [organizationId], references: [id])
@@ -2327,4 +2347,26 @@ model BannerArtRun {
   @@index([organizationId, createdAt])
   @@index([brandId, createdAt])
   @@map("banner_art_runs")
+}
+
+/// A store plan that renews itself monthly through a Razorpay subscription (UPI AutoPay or card mandate)
+model MarketingSubscription {
+  id                     String                      @id @default(uuid())
+  organizationId         String                      @map("organization_id")
+  productId              String                      @map("product_id")
+  razorpaySubscriptionId String                      @unique @map("razorpay_subscription_id")
+  status                 MarketingSubscriptionStatus @default(CREATED)
+  /// The owner turned auto-renew off; the plan runs to the end of the paid month
+  cancelAtPeriodEnd      Boolean                     @default(false) @map("cancel_at_period_end")
+  /// A plan change that waits for the current month to end starts billing here
+  startAt                DateTime?                   @map("start_at")
+  createdById            String                      @map("created_by_id")
+  createdAt              DateTime                    @default(now()) @map("created_at")
+  updatedAt              DateTime                    @updatedAt @map("updated_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id])
+  product      AdProduct    @relation(fields: [productId], references: [id])
+
+  @@index([organizationId, status])
+  @@map("marketing_subscriptions")
 }

@@ -83,9 +83,10 @@ async function deliver(tx: Prisma.TransactionClient, order: AdOrder, product: Ad
 
 /**
  * A plan bought while one is running queues after it, except an upgrade: that starts now, and what was left of
- * the cheaper plan carries over as extra days at the new price. Months already queued move back accordingly.
+ * the cheaper plan carries over as extra days at the new price (a free trial carries nothing). Months already
+ * queued move back accordingly.
  */
-async function grantPlan(tx: Prisma.TransactionClient, order: AdOrder, product: AdProduct, organizationId: string) {
+export async function grantPlan(tx: Prisma.TransactionClient, order: AdOrder, product: AdProduct, organizationId: string) {
   const now = new Date();
   const length = product.durationDays * order.quantity * DAY_MS;
   const current = await tx.orgPlanPeriod.findFirst({
@@ -94,7 +95,7 @@ async function grantPlan(tx: Prisma.TransactionClient, order: AdOrder, product: 
     include: { product: true },
   });
   if (current && Number(product.price) > Number(current.product.price)) {
-    const carry = ((current.endsAt.getTime() - now.getTime()) * Number(current.product.price)) / Number(product.price);
+    const carry = current.isTrial ? 0 : ((current.endsAt.getTime() - now.getTime()) * Number(current.product.price)) / Number(product.price);
     const endsAt = new Date(now.getTime() + length + carry);
     await tx.orgPlanPeriod.update({ where: { id: current.id }, data: { endsAt: now, closedAt: now } });
     // Months already queued started when the old plan would have ended; they now follow the upgrade
