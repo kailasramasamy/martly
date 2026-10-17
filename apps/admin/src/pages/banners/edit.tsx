@@ -5,6 +5,7 @@ import { BannerImageCard, BannerSlotsNote, useBannerEntitlements, useBannerSaveE
 import { useList } from "@refinedev/core";
 import { Navigate } from "react-router";
 import { useEffect } from "react";
+import dayjs from "dayjs";
 import { CategoryTargetField, pathTo, useCategoryTree, withCategoryTarget } from "./category-target";
 
 const placementOptions = Object.entries(BannerPlacementLabels).map(([value, label]) => ({ value, label }));
@@ -37,7 +38,16 @@ export const BannerEdit = () => {
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
-      <Form {...formProps} onFinish={(values) => formProps.onFinish?.(withCategoryTarget(values as Record<string, unknown>))} layout="vertical">
+      <Form
+        {...formProps}
+        onFinish={(values) => formProps.onFinish?.(withCategoryTarget(values as Record<string, unknown>))}
+        layout="vertical"
+        initialValues={{
+          ...record,
+          startsAt: record?.startsAt ? dayjs(record.startsAt) : null,
+          endsAt: record?.endsAt ? dayjs(record.endsAt) : null,
+        }}
+      >
         <Row gutter={24}>
           <Col xs={24} lg={14}>
             <Card title="Banner Details" size="small">
