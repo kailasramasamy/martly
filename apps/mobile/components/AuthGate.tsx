@@ -11,6 +11,7 @@ import {
   Platform,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 import { useAuth } from "../lib/auth-context";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
@@ -181,6 +182,11 @@ export function AuthGate({
                   <Text style={styles.buttonText}>Send OTP</Text>
                 )}
               </TouchableOpacity>
+
+              <TouchableOpacity style={styles.staffLink} onPress={() => { onDismiss(); router.push("/(auth)/staff-login"); }} accessibilityRole="link">
+                <Ionicons name="briefcase-outline" size={15} color={colors.textSecondary} />
+                <Text style={styles.staffText}>Store owner or manager? <Text style={styles.staffStrong}>Staff login</Text></Text>
+              </TouchableOpacity>
             </>
           )}
 
@@ -312,6 +318,9 @@ const styles = StyleSheet.create({
   sheetSubtitle: { fontSize: fontSize.md, color: colors.textSecondary, textAlign: "center", marginTop: 4, marginBottom: 20 },
 
   phoneRow: { flexDirection: "row", gap: 8, marginBottom: 16 },
+  staffLink: { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, marginTop: 12, minHeight: 44 },
+  staffText: { fontSize: fontSize.md, color: colors.textSecondary },
+  staffStrong: { color: colors.primary, fontWeight: "700" },
   countryCode: {
     borderWidth: 1, borderColor: colors.border, borderRadius: 12,
     paddingHorizontal: 16, justifyContent: "center",
