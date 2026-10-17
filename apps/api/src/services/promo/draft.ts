@@ -1,11 +1,12 @@
 import type { FastifyBaseLogger } from "fastify";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
-import { buildBannerSet } from "../seasonal/banner-set.js";
+import { buildDesignedBannerSet } from "../seasonal/banner-set.js";
 import { bannerFields } from "../seasonal/index.js";
 import { runPromoAgent } from "./agent.js";
 import { describeProducts, referenceStoreId } from "./catalog.js";
 import { judgeProducts } from "./judge.js";
 import { MIN_PRODUCTS, type PromoSubmission } from "./tools.js";
+import { refundPromotion } from "../marketing/entitlements.js";
 
 // A draft that hasn't finished in this long was cut off by a restart
 const STALE_DRAFT_MS = 10 * 60 * 1000;
@@ -27,7 +28,9 @@ export async function logStep(prisma: PrismaClient, promoId: string, message: st
 export async function failPromo(prisma: PrismaClient, promoId: string, reason: string) {
   await logStep(prisma, promoId, `Failed: ${reason}`);
   // A promo that already went live stays live; only drafting or ready ones fail
-  await prisma.promo.updateMany({ where: { id: promoId, status: { in: ["DRAFTING", "READY"] } }, data: { status: "FAILED", failureReason: reason } });
+  const { count } = await prisma.promo.updateMany({ where: { id: promoId, status: { in: ["DRAFTING", "READY"] } }, data: { status: "FAILED", failureReason: reason } });
+  // The failure is ours, so the owner gets the promotion credit back
+  if (count) await refundPromotion(prisma, promoId);
 }
 
 /** Runs the agent, then the relevance check; returns the submission with only the products that passed. */
@@ -50,11 +53,25 @@ async function curate(prisma: PrismaClient, promo: { id: string; organizationId:
   return { ...outcome.promo, productIds: kept.map((p) => p.id) };
 }
 
-/** Paints the banner and stores the draft as an inactive PROMO collection, ready for launch. */
-async function saveDraft(prisma: PrismaClient, log: FastifyBaseLogger, promo: { id: string; organizationId: string }, draft: PromoSubmission) {
+interface DraftablePromo {
+  id: string;
+  organizationId: string;
+  brief: string;
+  uploadedImageUrl?: string | null;
+}
+
+async function paintBanner(prisma: PrismaClient, log: FastifyBaseLogger, promo: DraftablePromo, slug: string, draft: PromoSubmission) {
   await logStep(prisma, promo.id, "Painting the banner (English and Tamil)");
+  return buildDesignedBannerSet(prisma, { organizationId: promo.organizationId, purpose: "PROMO" }, draft.bannerScene,
+    { en: draft.copy.en, ta: draft.copy.ta }, slug, (m) => log.warn(`${slug}: ${m}`));
+}
+
+/** Paints the banner (unless the owner uploaded one) and stores the draft as an inactive PROMO collection, ready for launch. */
+async function saveDraft(prisma: PrismaClient, log: FastifyBaseLogger, promo: DraftablePromo, draft: PromoSubmission) {
   const slug = `promo-${promo.id}`;
-  const art = await buildBannerSet(draft.bannerScene, { en: draft.copy.en, ta: draft.copy.ta }, slug, (m) => log.warn(`${slug}: ${m}`));
+  const art = promo.uploadedImageUrl
+    ? { imageUrl: promo.uploadedImageUrl, imageUrls: null, textInImage: true }
+    : await paintBanner(prisma, log, promo, slug, draft);
   await prisma.$transaction(async (tx) => {
     const collection = await tx.collection.create({
       data: {
@@ -76,7 +93,7 @@ async function saveDraft(prisma: PrismaClient, log: FastifyBaseLogger, promo: { 
 }
 
 /** The whole background draft: any failure lands on the promo as FAILED with a reason the admin can read. */
-export async function runDraft(deps: PromoDeps, promo: { id: string; organizationId: string; brief: string }) {
+export async function runDraft(deps: PromoDeps, promo: DraftablePromo) {
   const draft = await curate(deps.prisma, promo);
   await saveDraft(deps.prisma, deps.log, promo, draft);
 }

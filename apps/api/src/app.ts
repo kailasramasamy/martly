@@ -51,6 +51,11 @@ import { customerInsightsRoutes } from "./routes/customer-insights/index.js";
 import { returnRequestRoutes } from "./routes/return-requests/index.js";
 import { riderLocationRoutes } from "./routes/rider-location/index.js";
 import { membershipRoutes } from "./routes/memberships/index.js";
+import { marketingRoutes } from "./routes/marketing/index.js";
+import { marketingAdminRoutes } from "./routes/marketing-admin/index.js";
+import { paymentWebhookRoutes } from "./routes/payment-webhooks/index.js";
+import { brandCampaignAdminRoutes } from "./routes/brand-campaigns/index.js";
+import { brandPortalRoutes } from "./routes/brand-portal/index.js";
 import { subscriptionRoutes } from "./routes/subscriptions/index.js";
 import { recipeRoutes } from "./routes/recipes/index.js";
 import { searchRoutes } from "./routes/search/index.js";
@@ -60,6 +65,7 @@ import reorderNudgeSchedulerPlugin from "./plugins/reorder-nudge-scheduler.js";
 import subscriptionSchedulerPlugin from "./plugins/subscription-scheduler.js";
 import seasonalCurationSchedulerPlugin from "./plugins/seasonal-curation-scheduler.js";
 import promoSchedulerPlugin from "./plugins/promo-scheduler.js";
+import marketingSchedulerPlugin from "./plugins/marketing-scheduler.js";
 import deliveryPlanningSchedulerPlugin from "./plugins/delivery-planning-scheduler.js";
 import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
 
@@ -91,6 +97,7 @@ export async function buildApp() {
   await app.register(subscriptionSchedulerPlugin);
   await app.register(seasonalCurationSchedulerPlugin);
   await app.register(promoSchedulerPlugin);
+  await app.register(marketingSchedulerPlugin);
   await app.register(deliveryPlanningSchedulerPlugin);
   await app.register(catalogAgentWorkerPlugin);
 
@@ -168,6 +175,11 @@ export async function buildApp() {
       await api.register(returnRequestRoutes, { prefix: "/return-requests" });
       await api.register(riderLocationRoutes, { prefix: "/rider-location" });
       await api.register(membershipRoutes, { prefix: "/memberships" });
+      await api.register(marketingRoutes, { prefix: "/marketing" });
+      await api.register(marketingAdminRoutes, { prefix: "/marketing-admin" });
+      await api.register(paymentWebhookRoutes, { prefix: "/payments/webhooks" });
+      await api.register(brandCampaignAdminRoutes, { prefix: "/brand-campaigns" });
+      await api.register(brandPortalRoutes, { prefix: "/brand-portal" });
       await api.register(subscriptionRoutes, { prefix: "/subscriptions" });
       await api.register(recipeRoutes, { prefix: "/recipes" });
       await api.register(searchRoutes, { prefix: "/search" });

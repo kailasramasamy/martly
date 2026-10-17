@@ -1,7 +1,7 @@
 import { Prisma, type FestivalEvent, type PrismaClient } from "../../../generated/prisma/client.js";
 import { orgSubcategoryCandidates, pickProducts } from "./candidates.js";
 import { curateWithClaude, describeEvent } from "./curator.js";
-import { buildBannerSet, type BannerLog, type BannerSet } from "./banner-set.js";
+import { buildDesignedBannerSet, type BannerLog, type BannerSet } from "./banner-set.js";
 import { liveFrom, type CurationOrg } from "./due-events.js";
 import { buildHero, heroFields, withHeroTranslation } from "./hero.js";
 
@@ -38,7 +38,7 @@ export async function curateEvent(prisma: PrismaClient, org: CurationOrg, event:
 
   const slug = `${event.slug}-${org.slug}`;
   const [banner, hero] = await Promise.all([
-    buildBannerSet(curation.imagePrompt, {
+    buildDesignedBannerSet(prisma, { organizationId: org.id, purpose: "SEASONAL" }, curation.imagePrompt, {
       en: { title: curation.title, subtitle: curation.subtitle },
       ta: { title: curation.titleTa, subtitle: curation.subtitleTa },
     }, slug, log),
@@ -65,14 +65,14 @@ export async function curateEvent(prisma: PrismaClient, org: CurationOrg, event:
   }
 }
 
-type BannerSource = { id: string; slug: string; title: string; subtitle: string | null; translations: unknown; artDirection: string };
+type BannerSource = { id: string; organizationId: string | null; slug: string; title: string; subtitle: string | null; translations: unknown; artDirection: string };
 
 /** Redraws a collection's banner from its current copy, e.g. after an admin edits the title. */
 export async function regenerateBanner(prisma: PrismaClient, collection: BannerSource, log: BannerLog) {
   const ta = (collection.translations as { ta?: { title?: string; subtitle?: string } } | null)?.ta;
   const copies: Record<string, { title: string; subtitle: string }> = { en: { title: collection.title, subtitle: collection.subtitle ?? "" } };
   if (ta?.title) copies.ta = { title: ta.title, subtitle: ta.subtitle ?? "" };
-  const art = bannerFields(await buildBannerSet(collection.artDirection, copies, collection.slug, log));
+  const art = bannerFields(await buildDesignedBannerSet(prisma, { organizationId: collection.organizationId, purpose: "SEASONAL" }, collection.artDirection, copies, collection.slug, log));
   await prisma.$transaction([
     prisma.collection.update({ where: { id: collection.id }, data: art }),
     prisma.banner.updateMany({

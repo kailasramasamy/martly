@@ -18,6 +18,7 @@ interface MeExtras {
   organizations: OrgSummary[];
   stores: { id: string; name: string }[];
   permissions: Permission[];
+  brand: { id: string; name: string; imageUrl: string | null } | null;
 }
 
 /** Look up distinct organizations a user belongs to via UserStore → Store → Organization */
@@ -37,6 +38,8 @@ async function getUserOrgs(prisma: FastifyInstance["prisma"], userId: string): P
   return Array.from(orgMap.values());
 }
 
+const NO_ORG_ROLES: string[] = ["SUPER_ADMIN", "CUSTOMER", "BRAND_PARTNER"];
+
 export async function authRoutes(app: FastifyInstance) {
   await app.register(phoneChangeRoutes);
 
@@ -44,12 +47,12 @@ export async function authRoutes(app: FastifyInstance) {
     const body = loginSchema.parse(request.body);
     const user = await app.prisma.user.findUnique({ where: { email: body.email } });
 
-    if (!user || !(await bcrypt.compare(body.password, user.passwordHash))) {
+    if (!user || user.deletedAt || !(await bcrypt.compare(body.password, user.passwordHash))) {
       return reply.unauthorized("Invalid credentials");
     }
 
-    // SUPER_ADMIN and CUSTOMER don't need org context
-    if (user.role === "SUPER_ADMIN" || user.role === "CUSTOMER") {
+    // Platform admins, shoppers and brand partners don't need org context
+    if (NO_ORG_ROLES.includes(user.role)) {
       const response: ApiResponse<LoginResponse> = {
         success: true,
         data: { requiresOrgSelection: false, ...(await issueSession(app, user)) },
@@ -187,7 +190,7 @@ export async function authRoutes(app: FastifyInstance) {
 
     // For org-scoped roles (STAFF, STORE_MANAGER, ORG_ADMIN), include organizationId in token
     let organizationId: string | undefined;
-    if (user.role !== "SUPER_ADMIN" && user.role !== "CUSTOMER") {
+    if (!NO_ORG_ROLES.includes(user.role)) {
       const orgs = await getUserOrgs(app.prisma, user.id);
       if (orgs.length === 0) {
         return reply.forbidden("User is not assigned to any organization");
@@ -284,9 +287,13 @@ export async function authRoutes(app: FastifyInstance) {
     }
 
     // Look up user's organizations
-    const organizations = user.role === "SUPER_ADMIN" || user.role === "CUSTOMER"
+    const organizations = NO_ORG_ROLES.includes(user.role)
       ? []
       : await getUserOrgs(app.prisma, user.id);
+    // Brand partners see their brand's name and logo in the portal
+    const brand = user.brandId && user.role === "BRAND_PARTNER"
+      ? await app.prisma.brand.findUnique({ where: { id: user.brandId }, select: { id: true, name: true, imageUrl: true } })
+      : null;
 
     // Look up assigned stores for STORE_MANAGER / STAFF / RIDER
     let stores: { id: string; name: string }[] = [];
@@ -302,7 +309,7 @@ export async function authRoutes(app: FastifyInstance) {
     const { passwordHash: _hash, ...safeUser } = user;
     const response: ApiResponse<typeof safeUser & MeExtras> = {
       success: true,
-      data: { ...safeUser, organizationId, organizations, stores, permissions },
+      data: { ...safeUser, organizationId, organizations, stores, permissions, brand },
     };
     return response;
   });

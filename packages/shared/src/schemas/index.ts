@@ -1304,6 +1304,8 @@ export const createPromoSchema = z.object({
   autoLaunch: z.boolean().default(false),
   notify: z.boolean().default(true),
   organizationId: z.string().uuid().optional(),
+  /** The owner's own banner (uploaded); without it the AI paints one */
+  imageUrl: z.string().url().optional(),
 });
 export type CreatePromoInput = z.infer<typeof createPromoSchema>;
 
@@ -1434,3 +1436,4 @@ export const stockCountListQuerySchema = z.object({
   page: z.coerce.number().int().min(1).default(1),
   pageSize: z.coerce.number().int().min(1).max(100).default(20),
 });
+export * from "./marketing.js";

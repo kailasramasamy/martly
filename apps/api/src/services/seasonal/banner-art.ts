@@ -2,6 +2,7 @@ import OpenAI from "openai";
 import sharp from "sharp";
 import { randomUUID } from "crypto";
 import { putObject } from "../media.js";
+import { designBrief, type BannerDesign } from "./banner-design.js";
 
 const IMAGE_MODEL = process.env.OPENAI_IMAGE_MODEL ?? "gpt-image-2.5-flare";
 // Banners keep the model's full 3:2 canvas for the home carousel; the search spotlight shows the centre 2:1 band
@@ -16,29 +17,43 @@ export interface BannerCopy {
 
 export class BannerArtError extends Error {}
 
-function typography(copy: BannerCopy) {
-  return `Left third: a clean, premium typographic layout on the scene's calmer area, perfectly legible, with text colours chosen for strong contrast:
-- Headline, large bold modern sans-serif: "${copy.title}"
-- Below it, smaller regular weight: "${copy.subtitle}"
-- A small rounded pill button with dark text on a warm accent colour: "${copy.cta}"
+function typography(copy: BannerCopy, textPlacement: string) {
+  return `Typography is the hero of this banner and must read instantly on a phone:
+- Headline "${copy.title}": extra-bold, heavy display sans-serif at poster weight, very large (cap height about 15-20% of the banner height), at most two lines, tight letter spacing
+- Subtitle "${copy.subtitle}": medium weight, about a third of the headline size, close beneath it
+- Button "${copy.cta}": bold text in a rounded pill with strong contrast
+Text placement: ${textPlacement}
+Set the text on a clean area or a solid shape with strong contrast; no busy detail behind the letters.
 Spell every word exactly as given, character for character. No other text anywhere.`;
 }
 
-function prompt(scene: string, copy?: BannerCopy) {
+function prompt(scene: string, copy?: BannerCopy, design?: BannerDesign) {
+  // Text-free art is overlaid with the copy by the app, which draws it on the left
+  if (!copy || !design) {
+    return [
+      "A premium promotional banner for an Indian grocery delivery app, wide landscape format.",
+      `Scene: ${scene}`,
+      "Keep the left third calm and uncluttered. No text anywhere.",
+      "No logos, no brand packaging, no people's faces.",
+    ].join("\n\n");
+  }
+  const d = designBrief(design);
   return [
-    "A premium promotional banner for an Indian grocery delivery app, wide landscape format.",
-    `Scene: ${scene}`,
-    copy ? typography(copy) : "Keep the left third calm and uncluttered. No text anywhere.",
-    "The top and bottom eighths may be cropped on some screens: keep every word and key subject inside the middle three quarters of the height.",
-    "No logos, no brand packaging, no people's faces.",
+    "A striking, premium promotional banner for an Indian grocery delivery app, wide 3:2 landscape.",
+    `Visual style: ${d.style}. Choose a fresh colour palette that suits the subject rather than a default dark green.`,
+    `Subject: ${scene}`,
+    `Composition: ${d.composition}`,
+    typography(copy, d.textPlacement),
+    "Keep every word and key subject inside the middle 80% of the width and the middle three quarters of the height; the edges may be cropped on some screens.",
+    "No logos, brand packaging, prices, borders, phone frames or people's faces.",
   ].join("\n\n");
 }
 
 /** Renders a banner (with the copy set into it when given), as a 3:2 WebP small enough for phones. */
-export async function renderBanner(scene: string, copy?: BannerCopy): Promise<Buffer> {
+export async function renderBanner(scene: string, copy?: BannerCopy, design?: BannerDesign): Promise<Buffer> {
   const response = await new OpenAI().images.generate({
     model: IMAGE_MODEL,
-    prompt: prompt(scene, copy),
+    prompt: prompt(scene, copy, design),
     n: 1,
     size: "1536x1024",
     quality: "medium",

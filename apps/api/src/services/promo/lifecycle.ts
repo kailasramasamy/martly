@@ -1,6 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import type { Messaging } from "firebase-admin/messaging";
-import type { DiscountType, Prisma, PrismaClient } from "../../../generated/prisma/client.js";
+import { Prisma, type DiscountType, type Promo, type PromoCharge, type PrismaClient } from "../../../generated/prisma/client.js";
 import { BannerArtError } from "../seasonal/banner-art.js";
 import { failPromo, logStep, PromoFailure, runDraft, type PromoDeps } from "./draft.js";
 import { JudgeRefusedError } from "./judge.js";
@@ -23,12 +23,30 @@ function failureReason(err: unknown) {
   return null;
 }
 
-/** Creates the promo and drafts it in the background; the admin polls GET /promos/:id for progress. */
+type Charge = (tx: Prisma.TransactionClient, promo: { id: string; organizationId: string }) => Promise<unknown>;
+
+/**
+ * Creates the promo and drafts it in the background; the admin polls GET /promos/:id for progress. `charge` takes
+ * payment (a promotion credit) in the same transaction, so a promo is never created without being paid for.
+ */
 export async function startPromoDraft(
   deps: PromoDeps & { fcm: Messaging | null },
-  input: { organizationId: string; createdById: string; brief: string; autoLaunch: boolean; notify: boolean },
+  input: {
+    organizationId: string; createdById: string; brief: string; autoLaunch: boolean; notify: boolean;
+    uploadedImageUrl?: string | null; chargedFrom?: PromoCharge;
+  },
+  charge?: Charge,
 ) {
-  const promo = await deps.prisma.promo.create({ data: input });
+  const promo = await deps.prisma.$transaction(async (tx) => {
+    const created = await tx.promo.create({ data: input });
+    if (charge) await charge(tx, created);
+    return created;
+  });
+  draftInBackground(deps, promo);
+  return promo;
+}
+
+function draftInBackground(deps: PromoDeps & { fcm: Messaging | null }, promo: Promo) {
   runDraft(deps, promo)
     .then(() => (promo.autoLaunch ? launchPromo(deps, promo.id) : undefined))
     .catch(async (err: unknown) => {
@@ -37,7 +55,27 @@ export async function startPromoDraft(
       if (!reason) deps.log.error(err, `Promo ${promo.id} draft failed`);
       await failPromo(deps.prisma, promo.id, reason ?? "Something went wrong while drafting; try again");
     });
-  return promo;
+}
+
+/**
+ * Drafts a ready promo again from the same brief when the owner doesn't like the result. A few redraws are
+ * included with each promotion; the previous draft's collection is thrown away.
+ */
+export async function regeneratePromo(deps: PromoDeps & { fcm: Messaging | null }, promoId: string, freeRegenerations: number) {
+  const promo = await deps.prisma.$transaction(async (tx) => {
+    const current = await tx.promo.findUniqueOrThrow({ where: { id: promoId } });
+    if (current.status !== "READY") throw new PromoStateError("Only a ready promo can be redrafted");
+    if (current.regenerations >= freeRegenerations) throw new PromoStateError(`This promo has used its ${freeRegenerations} redrafts; start a new one instead`);
+    const claimed = await tx.promo.updateMany({
+      where: { id: promoId, status: "READY", regenerations: current.regenerations },
+      data: { status: "DRAFTING", regenerations: { increment: 1 }, collectionId: null, copy: Prisma.DbNull, push: Prisma.DbNull, failureReason: null },
+    });
+    if (claimed.count === 0) throw new PromoStateError("This promo changed meanwhile; refresh and try again");
+    if (current.collectionId) await tx.collection.delete({ where: { id: current.collectionId } });
+    return current;
+  });
+  await logStep(deps.prisma, promoId, "Redrafting from the same brief");
+  draftInBackground(deps, { ...promo, autoLaunch: false });
 }
 
 const offerOf = (promo: { discountType: DiscountType | null; discountValue: Prisma.Decimal | null }) =>
@@ -101,14 +139,16 @@ export async function discardPromo(prisma: PrismaClient, promoId: string) {
 }
 
 /** Puts an ended promo back to READY with the same art and products, so it can be launched for a fresh window. */
-export async function reopenPromo(prisma: PrismaClient, promoId: string) {
+export async function reopenPromo(prisma: PrismaClient, promoId: string, charge?: Charge) {
   await prisma.$transaction(async (tx) => {
-    const promo = await tx.promo.findUniqueOrThrow({ where: { id: promoId }, select: { bannerId: true } });
+    const promo = await tx.promo.findUniqueOrThrow({ where: { id: promoId }, select: { bannerId: true, organizationId: true } });
     const claimed = await tx.promo.updateMany({
       where: { id: promoId, status: "ENDED" },
       data: { status: "READY", startsAt: null, endsAt: null, bannerId: null },
     });
     if (claimed.count === 0) throw new PromoStateError("Only an ended promo can be used again");
+    // Another run is another promotion
+    if (charge) await charge(tx, { id: promoId, organizationId: promo.organizationId });
     // The last run's prices are already restored and its banner is off; the next launch makes fresh ones
     await tx.promoPriceChange.deleteMany({ where: { promoId } });
     if (promo.bannerId) await tx.banner.delete({ where: { id: promo.bannerId } });

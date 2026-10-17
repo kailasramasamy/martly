@@ -20,9 +20,10 @@ Work like a careful category manager:
 - Copy: an English and a natural Tamil title and subtitle. Include the offer in the title when there is one.
   Write Tamil in everyday native words rather than English words in Tamil script: the banner art renders familiar
   Tamil spellings far more reliably.
-- bannerScene: the photographic scene of a wide app banner whose text sits on its left third. Describe an
-  appetising, naturally lit still life of the promoted kind of products filling the right two thirds, with a calmer
-  left third. Scene only: no text, letters, logos, brand packaging or people's faces.
+- bannerScene: the subject of the banner art: which kinds of products, ingredients and props appear, in what
+  quantities and mood (fresh, abundant, festive, cosy...). Make it specific to this promotion rather than generic
+  groceries. Don't describe layout, framing, camera, art style or where text goes; the designer chooses those so
+  each banner looks different. No text, letters, logos, brand packaging or people's faces.
 - push: a short, friendly notification that makes the offer clear. No ALL CAPS, at most one emoji.
 - assumptions: note anything you decided that the admin may want to know (duration, brands left out, why).
 

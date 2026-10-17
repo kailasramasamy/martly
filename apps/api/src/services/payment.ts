@@ -25,14 +25,20 @@ export function getRazorpayKeyId(): string {
   return keyId;
 }
 
-export async function createRazorpayOrder(amountInPaise: number, orderId: string, customerId?: string) {
+export async function createRazorpayOrder(amountInPaise: number, orderId: string, customerId?: string, notes?: Record<string, string>) {
   const rp = getRazorpay();
   return rp.orders.create({
     amount: amountInPaise,
     currency: "INR",
     receipt: orderId,
     ...(customerId ? { customer_id: customerId } : {}),
+    ...(notes ? { notes } : {}),
   });
+}
+
+/** Refunds a captured payment in full */
+export async function refundRazorpayPayment(paymentId: string) {
+  return getRazorpay().payments.refund(paymentId, {});
 }
 
 export async function ensureRazorpayCustomer(
@@ -64,9 +70,17 @@ export function verifyRazorpaySignature(
   signature: string,
 ): boolean {
   const body = `${razorpayOrderId}|${razorpayPaymentId}`;
-  const expected = crypto
-    .createHmac("sha256", keySecret)
-    .update(body)
-    .digest("hex");
-  return expected === signature;
+  return hmacMatches(keySecret, body, signature);
+}
+
+/** Checks the X-Razorpay-Signature of a webhook against the raw request body */
+export function verifyRazorpayWebhook(rawBody: string, signature: string): boolean {
+  const secret = process.env.RAZORPAY_WEBHOOK_SECRET ?? "";
+  return Boolean(secret) && hmacMatches(secret, rawBody, signature);
+}
+
+function hmacMatches(secret: string, body: string, signature: string) {
+  const expected = Buffer.from(crypto.createHmac("sha256", secret).update(body).digest("hex"));
+  const given = Buffer.from(signature);
+  return expected.length === given.length && crypto.timingSafeEqual(expected, given);
 }

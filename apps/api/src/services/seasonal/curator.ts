@@ -16,7 +16,7 @@ const CurationSchema = z.object({
   subtitle: z.string().describe("one line naming what's inside, under 45 characters"),
   titleTa: z.string().describe("natural Tamil title as a Tamil shopper would say it, not a literal translation"),
   subtitleTa: z.string().describe("natural Tamil subtitle"),
-  imagePrompt: z.string().describe("the banner's photographic scene, without any text"),
+  imagePrompt: z.string().describe("the subject of the banner art (foods, props, mood), without layout, style or text"),
 });
 export type Curation = z.infer<typeof CurationSchema>;
 
@@ -27,10 +27,10 @@ everyday items demand spikes on. Respect the event's guidance strictly; when a f
 leave out meat, fish and eggs. Never pick alcohol, tobacco, or items that would feel out of place for the occasion.
 If fewer than ${MIN_SUBCATEGORIES} subcategories truly fit, set skip to true rather than padding the list.
 
-The imagePrompt describes the photographic scene of a wide app banner whose title, subtitle and button are set
-on its left third. Describe a warm, appetising still life of the festival's own foods, props and colours filling
-the right two thirds, lit naturally, with the left third falling into a calmer, darker area. Describe the scene
-only: no text, letters, logos, brand packaging, or people's faces.
+The imagePrompt describes the subject of the banner art: the festival's own foods, props, flowers and colours
+and the mood they create, specific to this occasion. Don't describe layout, framing, camera, art style or where
+text goes; the designer chooses those so each banner looks different. No text, letters, logos, brand packaging,
+or people's faces.
 
 Keep the title to 2-4 words and the subtitle under 45 characters so both read clearly on the banner.
 Write the Tamil copy in everyday native Tamil words rather than English words spelled in Tamil script

@@ -7,6 +7,7 @@ import {
   buildProductData, enrichStoreProduct, liveWindow, reviewSummaries, STORE_PRODUCT_INCLUDE, withAllSizes, withReviews,
 } from "../../services/store-feed.js";
 import { liveFestiveHero } from "../../services/festive-hero.js";
+import { storeBanners } from "../../services/marketing/banner-feed.js";
 
 export async function homeRoutes(app: FastifyInstance) {
   app.get<{ Params: { storeId: string } }>(
@@ -135,35 +136,8 @@ export async function homeRoutes(app: FastifyInstance) {
             })
           : Promise.resolve([]),
 
-        // 6. Banners — active banners for mobile placements
-        app.prisma.banner.findMany({
-          where: {
-            isActive: true,
-            placement: { in: ["HERO_CAROUSEL", "CATEGORY_STRIP", "MID_PAGE", "POPUP"] },
-            OR: [
-              { storeId },
-              { storeId: null, organizationId: store.organizationId },
-              { storeId: null, organizationId: null },
-            ],
-            AND: [
-              { OR: [{ startsAt: null }, { startsAt: { lte: now } }] },
-              { OR: [{ endsAt: null }, { endsAt: { gte: now } }] },
-            ],
-          },
-          // Newest first among equals, so a just-launched promo leads the carousel
-          orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
-          select: {
-            id: true,
-            title: true,
-            subtitle: true,
-            imageUrl: true,
-            imageUrls: true,
-            textInImage: true,
-            placement: true,
-            actionType: true,
-            actionTarget: true,
-          },
-        }),
+        // 6. Banners — active banners for mobile placements (brand campaigns and slot caps applied)
+        storeBanners(app.prisma, store, ["HERO_CAROUSEL", "CATEGORY_STRIP", "MID_PAGE", "POPUP"]),
 
         // 7. Recipes — active recipes with availability summary
         app.prisma.recipe.findMany({

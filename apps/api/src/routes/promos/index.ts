@@ -4,7 +4,10 @@ import type { ApiResponse, PaginatedResponse, PromoDetail, PromoSummary } from "
 import { Permission, PromoStatus } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { isCurationConfigured } from "../../services/seasonal/index.js";
-import { discardPromo, endPromo, keepPromoItems, launchPromo, reopenPromo, startPromoDraft } from "../../services/promo/lifecycle.js";
+import { discardPromo, endPromo, keepPromoItems, launchPromo, regeneratePromo, reopenPromo, startPromoDraft } from "../../services/promo/lifecycle.js";
+import { chargePromotion, getEntitlements } from "../../services/marketing/entitlements.js";
+import { getMarketingConfig } from "../../services/marketing/config.js";
+import { isMediaUrl } from "../../services/media.js";
 import { promoSummaryInclude, toDetail, toSummary } from "../../services/promo/view.js";
 import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
@@ -43,11 +46,19 @@ export async function promoRoutes(app: FastifyInstance) {
 
   app.post("/", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request, reply) => {
     if (!isCurationConfigured()) return reply.serviceUnavailable("AI promos need ANTHROPIC_API_KEY and OPENAI_API_KEY");
-    const { organizationId: requested, ...body } = createPromoSchema.parse(request.body);
+    const { organizationId: requested, imageUrl, ...body } = createPromoSchema.parse(request.body);
     const user = getOrgUser(request);
-    const organizationId = user.role === "SUPER_ADMIN" ? requested : user.organizationId;
+    const platform = user.role === "SUPER_ADMIN";
+    const organizationId = platform ? requested : user.organizationId;
     if (!organizationId) return reply.badRequest("Choose an organisation for this promo");
-    const promo = await startPromoDraft(deps(), { ...body, organizationId, createdById: user.sub });
+    if (imageUrl && !isMediaUrl(imageUrl)) return reply.badRequest("Upload the banner image through Martly");
+    // Push notifications to shoppers are part of the higher plans; Martly's own promos always may
+    const notify = body.notify && (platform || (await getEntitlements(app.prisma, organizationId)).pushIncluded);
+    const promo = await startPromoDraft(
+      deps(),
+      { ...body, notify, organizationId, createdById: user.sub, uploadedImageUrl: imageUrl ?? null, chargedFrom: platform ? "PLATFORM" : undefined },
+      platform ? undefined : chargePromotion,
+    );
     return reply.code(201).send({ success: true, data: { id: promo.id, status: promo.status } });
   });
 
@@ -76,7 +87,14 @@ export async function promoRoutes(app: FastifyInstance) {
 
   app.post<{ Params: { id: string } }>("/:id/reopen", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request) => {
     await detailOr404(request);
-    await reopenPromo(app.prisma, request.params.id);
+    await reopenPromo(app.prisma, request.params.id, getOrgUser(request).role === "SUPER_ADMIN" ? undefined : chargePromotion);
+    return { success: true, data: await detailOr404(request) } satisfies ApiResponse<PromoDetail>;
+  });
+
+  app.post<{ Params: { id: string } }>("/:id/regenerate", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request) => {
+    await detailOr404(request);
+    const { freeRegenerations } = await getMarketingConfig(app.prisma);
+    await regeneratePromo(deps(), request.params.id, freeRegenerations);
     return { success: true, data: await detailOr404(request) } satisfies ApiResponse<PromoDetail>;
   });
 

@@ -5,6 +5,7 @@ export const UserRole = {
   STAFF: "STAFF",
   RIDER: "RIDER",
   CUSTOMER: "CUSTOMER",
+  BRAND_PARTNER: "BRAND_PARTNER",
 } as const;
 export type UserRole = (typeof UserRole)[keyof typeof UserRole];
 
@@ -15,6 +16,7 @@ export const UserRoleLabels: Record<UserRole, string> = {
   STAFF: "Staff",
   RIDER: "Rider",
   CUSTOMER: "Customer",
+  BRAND_PARTNER: "Brand partner",
 };
 
 // Staff capabilities (mirrors Prisma Permission). Roles grant a preset; owners grant add-ons per member.
@@ -345,6 +347,7 @@ export const BannerPlacementLabels: Record<BannerPlacement, string> = {
 };
 
 export const BannerActionType = {
+  BRAND: "BRAND",
   CATEGORY: "CATEGORY",
   PRODUCT: "PRODUCT",
   COLLECTION: "COLLECTION",
@@ -355,6 +358,7 @@ export const BannerActionType = {
 export type BannerActionType = (typeof BannerActionType)[keyof typeof BannerActionType];
 
 export const BannerActionTypeLabels: Record<BannerActionType, string> = {
+  BRAND: "Brand page",
   CATEGORY: "Category",
   PRODUCT: "Product",
   COLLECTION: "Collection",
@@ -654,3 +658,5 @@ export const StockCountStatus = {
   REJECTED: "REJECTED",
 } as const;
 export type StockCountStatus = (typeof StockCountStatus)[keyof typeof StockCountStatus];
+
+export * from "./marketing";

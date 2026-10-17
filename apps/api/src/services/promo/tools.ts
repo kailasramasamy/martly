@@ -25,7 +25,7 @@ const SubmitSchema = z.object({
     title: z.string().describe("push notification title, under 40 characters"),
     body: z.string().describe("push notification body, under 90 characters"),
   }),
-  bannerScene: z.string().describe("the banner's photographic scene, without any text"),
+  bannerScene: z.string().describe("the subject of the banner art (products, props, mood), without layout, style or text"),
   assumptions: z.array(z.string()).describe("short notes on what you assumed, e.g. 'Included paneer from all 3 brands'"),
 });
 export type PromoSubmission = z.infer<typeof SubmitSchema>;

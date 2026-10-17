@@ -5,8 +5,8 @@ export * from "./roles";
 
 export type ResourceAction = "list" | "show" | "create" | "edit" | "delete";
 
-/** Who can act: a permission (any of a list), any staff member, the org owner, or the platform admin */
-type Requirement = Permission | readonly Permission[] | "STAFF" | "OWNER" | "PLATFORM";
+/** Who can act: a permission (any of a list), any staff member, the org owner, a brand partner, or the platform admin */
+type Requirement = Permission | readonly Permission[] | "STAFF" | "OWNER" | "BRAND" | "PLATFORM";
 type Rule = Requirement | Partial<Record<ResourceAction, Requirement>>;
 
 /** The identity a check runs against — the JWT payload or the /auth/me user both fit */
@@ -87,6 +87,18 @@ export const RESOURCE_PERMISSIONS = {
   "membership-subscribers": P.MARKETING_MANAGE,
   "subscription-config": P.MARKETING_MANAGE,
   subscriptions: P.MARKETING_MANAGE,
+  // Paid marketing: members with marketing duty see the plan; only the owner buys
+  "marketing-plan": { list: P.MARKETING_MANAGE, show: P.MARKETING_MANAGE, create: "OWNER", edit: "OWNER" },
+  "brand-ads": { list: P.MARKETING_MANAGE, show: P.MARKETING_MANAGE, edit: "OWNER" },
+  "marketing-pricing": "PLATFORM",
+  "marketing-orders": "PLATFORM",
+  "brand-campaigns": "PLATFORM",
+  "brand-partners": "PLATFORM",
+
+  // Brand portal (brand partners advertising across the network)
+  "brand-portal": "BRAND",
+  "brand-portal-campaigns": "BRAND",
+  "brand-portal-invoices": "BRAND",
 
   // Delivery configuration
   "delivery-zones": P.DELIVERY_CONFIG,
@@ -102,6 +114,7 @@ export type Resource = keyof typeof RESOURCE_PERMISSIONS;
 function meets(subject: PermissionSubject, req: Requirement): boolean {
   if (req === "PLATFORM") return false;
   if (req === "OWNER") return subject.role === "ORG_ADMIN";
+  if (req === "BRAND") return subject.role === "BRAND_PARTNER";
   if (req === "STAFF") return (STAFF_ROLES as readonly string[]).includes(subject.role);
   const wanted: readonly string[] = typeof req === "string" ? [req] : req;
   return wanted.some((p) => subject.permissions?.includes(p));
