@@ -7,7 +7,7 @@ import { HeaderAction } from "../../../components/manage/HeaderAction";
 import { ListRow } from "../../../components/manage/ui/ListRow";
 import { StatusPill } from "../../../components/manage/ui/StatusPill";
 import { SegmentedTabs } from "../../../components/manage/ui/SegmentedTabs";
-import { OptionSheet } from "../../../components/manage/ui/OptionSheet";
+import { NewPromoSheet } from "../../../components/manage/marketing/NewPromoSheet";
 import { formatDate, timeAgo } from "../../../components/manage/ui/dates";
 import { PROMO_KIND, PROMO_STATUS, discountLabel } from "../../../components/manage/marketing/promo-utils";
 import { usePagedList } from "../../../lib/manage/use-paged-list";
@@ -23,10 +23,6 @@ const TABS: { value: Filter; label: string }[] = [
   { value: "FAILED", label: "Failed" },
 ];
 
-const NEW_OPTIONS = [
-  { value: "/manage/promos/new", label: "AI promotion", description: "Describe it; the AI drafts the banner, copy and discount" },
-  { value: "/manage/promos/manual", label: "Manual promotion", description: "You pick the target, discount, wording and banners" },
-];
 
 function windowText(p: PromoSummary): string {
   if (!p.startsAt && !p.endsAt) return `Created ${timeAgo(p.createdAt)}`;
@@ -70,11 +66,8 @@ export default function PromosScreen() {
         empty={{ icon: "megaphone-outline", title: "No promotions", message: "Describe what to promote and the AI drafts a banner, copy and discount." }}
         renderItem={(p) => <PromoRow promo={p} onPress={() => router.push(`/manage/promos/${p.id}`)} />}
       />
-      <OptionSheet
+      <NewPromoSheet
         visible={choosing}
-        title="New promotion"
-        options={NEW_OPTIONS}
-        value={null}
         onPick={(href) => {
           setChoosing(false);
           router.push(href as never);
