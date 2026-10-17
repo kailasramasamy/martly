@@ -72,6 +72,8 @@ const MODULE_GROUPS: ModuleGroup[] = [
       { resource: "referral-settings", label: "Referrals", icon: "gift-outline", href: "/manage/referral-settings" },
       { resource: "membership-plans", label: "Memberships", icon: "diamond-outline", href: "/manage/membership-plans" },
       { resource: "subscriptions", label: "Subscriptions", icon: "repeat-outline", href: "/manage/subscriptions" },
+      { resource: "marketing-plan", label: "Marketing plan", icon: "rocket-outline", href: "/manage/marketing-plan" },
+      { resource: "brand-ads", label: "Brand ads", icon: "pricetags-outline", href: "/manage/brand-ads" },
     ],
   },
   {

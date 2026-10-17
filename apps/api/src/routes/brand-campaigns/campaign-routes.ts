@@ -9,6 +9,7 @@ import { availability, cancelCampaign, checkoutCampaign, createCampaign, updateC
 import { generateCampaignArt } from "../../services/brand-campaigns/art.js";
 import { campaignResults, claimsCsv } from "../../services/brand-campaigns/reports.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
+import { getMarketingConfig } from "../../services/marketing/config.js";
 
 const BRAND_KINDS = ["BRAND_BANNER", "BRAND_TAKEOVER", "BRAND_PROMOTION", "BRAND_CPM"] as const;
 const DETAIL_INCLUDE = {
@@ -51,8 +52,11 @@ const listRow = (c: Row) => ({
 
 function readRoutes(app: FastifyInstance, scope: CampaignScope, { load, detail, opts }: ReturnType<typeof campaignContext>) {
   app.get("/packages", opts, async () => {
-    const products = await app.prisma.adProduct.findMany({ where: { kind: { in: [...BRAND_KINDS] }, isActive: true }, orderBy: { sortOrder: "asc" } });
-    return { success: true, data: products.map((p) => ({ ...p, price: Number(p.price) })) };
+    const [products, { gstPercent }] = await Promise.all([
+      app.prisma.adProduct.findMany({ where: { kind: { in: [...BRAND_KINDS] }, isActive: true }, orderBy: { sortOrder: "asc" } }),
+      getMarketingConfig(app.prisma),
+    ]);
+    return { success: true, data: products.map((p) => ({ ...p, price: Number(p.price), gstPercent })) };
   });
 
   app.get<{ Querystring: { productId?: string; quantity?: string; startsAt?: string; categoryId?: string; excludeId?: string } }>("/availability", opts, async (request, reply) => {

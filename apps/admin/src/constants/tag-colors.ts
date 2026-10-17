@@ -230,3 +230,14 @@ export const COUNT_STATUS_CONFIG: Record<string, { color: string; label: string 
   APPROVED: { color: "green", label: "Approved" },
   REJECTED: { color: "red", label: "Rejected" },
 };
+
+export const BRAND_CAMPAIGN_STATUS_COLORS: Record<string, string> = {
+  DRAFT: "default",
+  PENDING_PAYMENT: "gold",
+  IN_REVIEW: "processing",
+  SCHEDULED: "blue",
+  LIVE: "green",
+  ENDED: "default",
+  REJECTED: "red",
+  CANCELLED: "default",
+};

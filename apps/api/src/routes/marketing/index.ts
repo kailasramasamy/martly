@@ -6,6 +6,7 @@ import { requirePermission, requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { verifyRazorpaySignature } from "../../services/payment.js";
 import { getEntitlements } from "../../services/marketing/entitlements.js";
+import { getMarketingConfig } from "../../services/marketing/config.js";
 import { createAdOrder, fulfilAdOrder } from "../../services/marketing/billing.js";
 import { invoiceLink, invoiceLinkValid, renderInvoice } from "../../services/marketing/invoice.js";
 import { bannerResults, promoSales } from "../../services/marketing/stats.js";
@@ -34,10 +35,11 @@ export async function marketingRoutes(app: FastifyInstance) {
   });
 
   app.get("/products", staff, async () => {
-    const products = await app.prisma.adProduct.findMany({
-      where: { kind: { in: [...STORE_KINDS] }, isActive: true }, orderBy: [{ kind: "asc" }, { sortOrder: "asc" }],
-    });
-    return { success: true, data: products.map((p) => ({ ...p, price: Number(p.price) })) };
+    const [products, { gstPercent }] = await Promise.all([
+      app.prisma.adProduct.findMany({ where: { kind: { in: [...STORE_KINDS] }, isActive: true }, orderBy: [{ kind: "asc" }, { sortOrder: "asc" }] }),
+      getMarketingConfig(app.prisma),
+    ]);
+    return { success: true, data: products.map((p) => ({ ...p, price: Number(p.price), gstPercent })) };
   });
 
   app.get("/billing-profile", staff, async (request, reply) => {

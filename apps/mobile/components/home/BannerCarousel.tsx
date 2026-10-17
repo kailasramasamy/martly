@@ -48,7 +48,7 @@ export function BannerCarousel({ banners, onPress }: Props) {
         onMomentumScrollEnd={(e) => setIndex(Math.round(e.nativeEvent.contentOffset.x / INTERVAL))}
         renderItem={({ item }) => (
           <View style={styles.slide}>
-            <HeroBannerSlide banner={item} width={CARD_WIDTH} onPress={onPress} />
+            <HeroBannerSlide banner={item} width={CARD_WIDTH} onPress={onPress} visible={banners[index]?.id === item.id} />
           </View>
         )}
       />

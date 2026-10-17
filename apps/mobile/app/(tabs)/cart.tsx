@@ -4,6 +4,7 @@ import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useCart } from "../../lib/cart-context";
 import { useStore } from "../../lib/store-context";
+import { recordBannerTap, recordBannerView } from "../../lib/banner-events";
 import { useMembership } from "../../lib/membership-context";
 import { api } from "../../lib/api";
 import type { Banner, StoreProduct } from "../../lib/types";
@@ -42,7 +43,10 @@ export default function CartScreen() {
     }
     api
       .get<Banner[]>(`/api/v1/banners/by-placement/${storeId}?placement=CART_UPSELL`)
-      .then((res) => setUpsellBanners(res.data))
+      .then((res) => {
+        setUpsellBanners(res.data);
+        res.data.forEach((b) => recordBannerView(storeId, b.id));
+      })
       .catch(() => {});
   }, [storeId]);
 
@@ -60,6 +64,7 @@ export default function CartScreen() {
   }, [storeId, items]);
 
   const handleBannerPress = useCallback((banner: Banner) => {
+    recordBannerTap(selectedStore?.id, banner.id);
     switch (banner.actionType) {
       case "CATEGORY":
         if (banner.actionTarget) router.push({ pathname: "/category/[id]", params: { id: banner.actionTarget } } as any);
@@ -73,8 +78,11 @@ export default function CartScreen() {
       case "SEARCH":
         if (banner.actionTarget) router.push({ pathname: "/search", params: { q: banner.actionTarget } } as any);
         break;
+      case "BRAND":
+        if (banner.actionTarget) router.push({ pathname: "/brand/[id]", params: { id: banner.actionTarget } });
+        break;
     }
-  }, [router]);
+  }, [router, selectedStore?.id]);
 
   if (items.length === 0) {
     return (

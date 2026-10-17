@@ -7,7 +7,6 @@ import { SectionCard } from "../ui/SectionCard";
 import { TextField } from "../ui/TextField";
 import { SelectField } from "../ui/SelectField";
 import { SwitchRow } from "../ui/SwitchRow";
-import { ImageField } from "../ui/ImageField";
 import { Button } from "../ui/Button";
 import { api } from "../../../lib/api";
 import { useAction } from "../../../lib/manage/use-action";
@@ -15,13 +14,16 @@ import { useResource } from "../../../lib/manage/use-resource";
 import { useManageScope } from "../../../lib/manage-scope-context";
 import { DeleteButton, OptionalDate, endOfDayIso, isoToDateKey, startOfDayIso } from "./common";
 import { RemotePicker } from "./RemotePicker";
+import { ImageSource } from "./ImageSource";
+import { PlanLimitNotice, usePlanLimit } from "./PlanLimit";
+import { useEntitlements } from "./use-entitlements";
 import { useTaxonomyOptions, type TaxonomyLevel } from "./taxonomy";
+import type { Entitlements } from "./plan-types";
 import type { Banner } from "./types";
 
 const toOptions = (labels: Record<string, string>) => Object.entries(labels).map(([value, label]) => ({ value, label }));
 const PLACEMENT_OPTIONS = toOptions(BannerPlacementLabels);
 const ACTION_OPTIONS = toOptions(BannerActionTypeLabels);
-const BANNER_ASPECT = 1.5;
 
 interface FormState {
   title: string;
@@ -87,6 +89,12 @@ function toPayload(f: FormState) {
   };
 }
 
+function slotsText(e: Entitlements | null): string | undefined {
+  if (!e) return undefined;
+  const { used, total } = e.bannerSlots;
+  return total === null ? `Banner slots: ${used} used, unlimited` : `Banner slots: ${used} of ${total} used`;
+}
+
 type Setter = <K extends keyof FormState>(k: K) => (v: FormState[K]) => void;
 
 export function BannerForm({ id }: { id?: string }) {
@@ -133,6 +141,8 @@ function BannerFields({ initial, id }: { initial: FormState; id?: string }) {
   const router = useRouter();
   const { organizationId } = useManageScope();
   const { run, running } = useAction();
+  const limit = usePlanLimit();
+  const { data: entitlements } = useEntitlements();
   const [f, setF] = useState(initial);
   const [errors, setErrors] = useState<ReturnType<typeof validate>>({});
   const set = <K extends keyof FormState>(key: K) => (value: FormState[K]) => setF((prev) => ({ ...prev, [key]: value }));
@@ -142,7 +152,7 @@ function BannerFields({ initial, id }: { initial: FormState; id?: string }) {
     setErrors(found);
     if (Object.keys(found).length > 0) return;
     const body = { ...toPayload(f), ...(id ? {} : { organizationId }) };
-    const result = await run(() => (id ? api.put(`/api/v1/banners/${id}`, body) : api.post("/api/v1/banners", body)), id ? "Banner updated" : "Banner created");
+    const result = await run(() => limit.capture(() => (id ? api.put(`/api/v1/banners/${id}`, body) : api.post("/api/v1/banners", body))), id ? "Banner updated" : "Banner created");
     if (result) router.back();
   };
   const remove = async () => {
@@ -159,7 +169,10 @@ function BannerFields({ initial, id }: { initial: FormState; id?: string }) {
   return (
     <ManageStackScreen title={id ? "Edit banner" : "New banner"} actions={actions}>
       <SectionCard title="Image">
-        <ImageField value={f.imageUrl} onChange={set("imageUrl")} aspect={BANNER_ASPECT} error={errors.imageUrl} hint="Recommended 3:2" />
+        <ImageSource
+          imageUrl={f.imageUrl} onImage={set("imageUrl")} title={f.title} subtitle={f.subtitle} error={errors.imageUrl} entitlements={entitlements}
+          onGenerated={(art) => setF((prev) => ({ ...prev, imageUrl: art.imageUrl, textInImage: art.textInImage }))}
+        />
         <SwitchRow label="Title is part of the image" description="When on, the app adds no text over the artwork" value={f.textInImage} onValueChange={set("textInImage")} />
       </SectionCard>
       <SectionCard title="Details">
@@ -169,7 +182,8 @@ function BannerFields({ initial, id }: { initial: FormState; id?: string }) {
         <SelectField label="Action" value={f.actionType} options={ACTION_OPTIONS} onChange={(v) => setF((p) => ({ ...p, actionType: v, actionTarget: "" }))} />
         <TargetField f={f} set={set} error={errors.actionTarget} />
         <TextField label="Sort order" value={f.sortOrder} onChangeText={set("sortOrder")} keyboardType="number-pad" error={errors.sortOrder} />
-        <SwitchRow label="Active" value={f.isActive} onValueChange={set("isActive")} />
+        <SwitchRow label="Active" description={slotsText(entitlements)} value={f.isActive} onValueChange={set("isActive")} />
+        <PlanLimitNotice message={limit.message} />
       </SectionCard>
       <TargetingSection f={f} set={set} errors={errors} />
     </ManageStackScreen>

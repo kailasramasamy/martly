@@ -5,6 +5,7 @@ import { isAxiosError } from "axios";
 import { BANNER_PLACEMENT_CONFIG, BANNER_ACTION_TYPE_CONFIG } from "../../constants/tag-colors";
 import { axiosInstance } from "../../providers/data-provider";
 import dayjs from "dayjs";
+import { SponsorTypeLabels, type SponsorType } from "@martly/shared/constants";
 import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 
@@ -89,6 +90,11 @@ export const BannerList = () => {
           }}
         />
         <Table.Column
+          dataIndex="sponsorType"
+          title="Sponsor"
+          render={(v: SponsorType) => <Tag color={v === "BRAND" ? "purple" : v === "PLATFORM" ? "geekblue" : "default"}>{SponsorTypeLabels[v] ?? v}</Tag>}
+        />
+        <Table.Column
           title="Schedule"
           render={(_, rec: any) => {
             if (!rec.startsAt && !rec.endsAt) return <Tag>Always</Tag>;
@@ -102,14 +108,17 @@ export const BannerList = () => {
           title="Active"
           width={70}
           render={(v: boolean, rec: any) => (
-            <Switch size="small" checked={v} disabled={!!rec.promo} loading={togglingId === rec.id} onChange={(c) => handleToggleActive(rec.id, c)} />
+            <Switch size="small" checked={v} disabled={!!rec.promo || rec.sponsorType === "BRAND"} loading={togglingId === rec.id} onChange={(c) => handleToggleActive(rec.id, c)} />
           )}
         />
         <Table.Column
           title="Actions"
           width={100}
           render={(_, rec: any) =>
-            rec.promo ? (
+            rec.sponsorType === "BRAND" ? (
+              // Brand banners belong to their brand campaign
+              <Tag color="purple">Brand</Tag>
+            ) : rec.promo ? (
               // Promotions own their banner; manage it from there
               <ShowButton hideText size="small" resource="promos" recordItemId={rec.promo.id} title="Open promotion" />
             ) : (

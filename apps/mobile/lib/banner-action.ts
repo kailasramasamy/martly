@@ -5,7 +5,7 @@ export type BannerTarget = Pick<Banner, "actionType" | "actionTarget">;
 
 /** Whether tapping the banner leads anywhere in the app (external links aren't opened yet) */
 export function hasBannerTarget(banner: BannerTarget): boolean {
-  return !!banner.actionTarget && ["CATEGORY", "PRODUCT", "COLLECTION", "SEARCH"].includes(banner.actionType);
+  return !!banner.actionTarget && ["CATEGORY", "PRODUCT", "COLLECTION", "SEARCH", "BRAND"].includes(banner.actionType);
 }
 
 /** Opens what a banner points at, for the store currently selected; "replace" swaps out the current screen */
@@ -25,6 +25,9 @@ export function openBannerTarget(banner: BannerTarget, how: "push" | "replace" =
       break;
     case "SEARCH":
       go({ pathname: "/search", params: { q: id } });
+      break;
+    case "BRAND":
+      go({ pathname: "/brand/[id]", params: { id } });
       break;
   }
 }

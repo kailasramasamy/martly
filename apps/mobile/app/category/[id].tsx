@@ -17,6 +17,7 @@ import { colors, spacing } from "../../constants/theme";
 import { GRID_GAP, GRID_H_PADDING, GRID_CARD_WIDTH } from "../../components/FeaturedProductCard";
 import { ProductList } from "../../components/ProductList";
 import { FloatingCart } from "../../components/FloatingCart";
+import { openBannerTarget } from "../../lib/banner-action";
 import { HeroBannerSlide } from "../../components/HeroBannerSlide";
 import { ShopByBrands } from "../../components/ShopByBrands";
 import { CategorySidebar } from "../../components/CategorySidebar";
@@ -173,22 +174,7 @@ export default function CategoryScreen() {
 
   useEffect(() => setBrandId(null), [activeGrandchild]);
 
-  const handleBannerPress = useCallback((banner: Banner) => {
-    switch (banner.actionType) {
-      case "CATEGORY":
-        if (banner.actionTarget) router.push({ pathname: "/category/[id]", params: { id: banner.actionTarget } });
-        break;
-      case "PRODUCT":
-        if (banner.actionTarget) router.push({ pathname: "/product/[id]", params: { id: banner.actionTarget } });
-        break;
-      case "COLLECTION":
-        if (banner.actionTarget) router.push({ pathname: "/collection/[id]", params: { id: banner.actionTarget } });
-        break;
-      case "SEARCH":
-        if (banner.actionTarget) router.push({ pathname: "/search", params: { q: banner.actionTarget } } as any);
-        break;
-    }
-  }, []);
+  const handleBannerPress = useCallback((banner: Banner) => openBannerTarget(banner), []);
 
   const hasActiveFilters = filterOnSale || sortBy !== null || activeGrandchild !== null || brandId !== null || searchQuery.trim().length > 0;
   const hasSidebar = subcategories.length > 0;

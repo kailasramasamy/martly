@@ -53,6 +53,11 @@ export function PromoActions({ promo, busy, run, onDiscarded, onRetried }: {
         <Popconfirm title="Launch this promo?" description={launchSummary(promo)} okText="Launch" onConfirm={() => run("launch", () => axiosInstance.post(`/promos/${promo.id}/launch`, null, { timeout: LAUNCH_TIMEOUT_MS }), "Promo is live", "Could not launch")}>
           <Button type="primary" loading={busy === "launch"}>Launch</Button>
         </Popconfirm>
+        {promo.redraftsLeft > 0 && (
+          <Button loading={busy === "redraft"} onClick={() => run("redraft", () => axiosInstance.post(`/promos/${promo.id}/regenerate`), "Drafting again", "Could not redraft")}>
+            Redraft ({promo.redraftsLeft} free {promo.redraftsLeft === 1 ? "redraft" : "redrafts"} left)
+          </Button>
+        )}
         {discard}
       </Space>
     );

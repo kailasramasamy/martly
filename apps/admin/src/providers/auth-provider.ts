@@ -187,6 +187,7 @@ export const authProvider: AuthProvider = {
         organizationId: data.organizationId,
         organizations: data.organizations || [],
         stores: data.stores || [],
+        brand: (data.brand ?? null) as { id: string; name: string; imageUrl: string | null } | null,
       };
     } catch {
       return null;

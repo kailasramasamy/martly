@@ -15,6 +15,8 @@ export const accessControlProvider: AccessControlProvider = {
     }
 
     if (!resource || !isResource(resource)) return { can: payload.role === "SUPER_ADMIN" };
+    // The brand portal is for brand partners only; the platform admin uses the brand campaign screens instead
+    if (resource.startsWith("brand-portal") && payload.role !== "BRAND_PARTNER") return { can: false };
     if (can(payload, resource, action as ResourceAction)) return { can: true };
     return { can: false, reason: "You don't have access to this section" };
   },

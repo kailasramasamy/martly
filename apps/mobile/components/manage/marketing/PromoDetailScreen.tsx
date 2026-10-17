@@ -12,6 +12,7 @@ import { useResource } from "../../../lib/manage/use-resource";
 import { colors, fonts } from "../../../constants/theme";
 import { ConfirmDialog } from "../ui/ConfirmDialog";
 import { PROMO_STATUS, discountLabel } from "./promo-utils";
+import { PromoResultsCard, RedraftCard } from "./PromoExtras";
 import { BannerAndMessage, DraftingProgress, Performance, PromoProducts } from "./PromoSections";
 
 const POLL_MS = 2000;
@@ -58,16 +59,28 @@ function usePromoActions(id: string, promo: PromoDetail | null, setData: (p: Pro
     if (res) setData(res.data);
   };
 
+  const redraft = async () => {
+    const res = await run(() => api.post<PromoDetail>(`/api/v1/promos/${id}/regenerate`, undefined), "Drafting again");
+    if (res) setData(res.data);
+  };
+
   const retry = async () => {
     if (!promo) return;
     const res = await run(() => api.post<{ id: string }>("/api/v1/promos", { brief: promo.brief, autoLaunch: promo.autoLaunch, notify: promo.notify }), "Drafting again");
     if (res) router.replace(`/manage/promos/${res.data.id}`);
   };
 
-  return { pending, setPending, perform, removeProduct, retry, running };
+  return { pending, setPending, perform, removeProduct, redraft, retry, running };
 }
 
-function PromoBody({ promo, busy, onRemove }: { promo: PromoDetail; busy: boolean; onRemove: (productId: string) => void }) {
+interface BodyProps {
+  promo: PromoDetail;
+  busy: boolean;
+  onRemove: (productId: string) => void;
+  onRedraft: () => void;
+}
+
+function PromoBody({ promo, busy, onRemove, onRedraft }: BodyProps) {
   return (
     <>
       <View style={styles.head}>
@@ -79,6 +92,8 @@ function PromoBody({ promo, busy, onRemove }: { promo: PromoDetail; busy: boolea
       {PREVIEW_STATUSES.includes(promo.status) ? (
         <>
           <BannerAndMessage promo={promo} />
+          {promo.status === "READY" && promo.redraftsLeft > 0 ? <RedraftCard left={promo.redraftsLeft} busy={busy} onRedraft={onRedraft} /> : null}
+          {promo.status === "LIVE" || promo.status === "ENDED" ? <PromoResultsCard promo={promo} /> : null}
           <Performance promo={promo} />
           {promo.assumptions.length > 0 ? <SectionCard title="Assumptions">{promo.assumptions.map((a) => <Text key={a} style={styles.assumption}>{`\u2022 ${a}`}</Text>)}</SectionCard> : null}
           <PromoProducts promo={promo} busy={busy} onRemove={onRemove} />
@@ -103,7 +118,7 @@ export function PromoDetailScreen({ id }: { id: string }) {
   const actions = promo && ACTIONABLE.includes(promo.status) ? <PromoActions promo={promo} running={a.running} onPending={a.setPending} onRetry={a.retry} /> : undefined;
   return (
     <ManageStackScreen title={promo?.title ?? promo?.brief ?? "Promotion"} loading={loading} error={error} onRetry={reload} onRefresh={reload} actions={actions}>
-      {promo ? <PromoBody promo={promo} busy={a.running} onRemove={a.removeProduct} /> : null}
+      {promo ? <PromoBody promo={promo} busy={a.running} onRemove={a.removeProduct} onRedraft={a.redraft} /> : null}
       {promo && pending ? (
         <ConfirmDialog visible title={CONFIRM[pending].title} message={confirmMessage(pending, promo)} confirmLabel={CONFIRM[pending].label} confirmVariant={CONFIRM[pending].primary ? "primary" : "danger"} running={a.running} onConfirm={() => a.perform(pending)} onClose={() => a.setPending(null)} />
       ) : null}

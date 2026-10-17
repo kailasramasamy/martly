@@ -5,6 +5,7 @@ export interface CreatePromoBody {
   autoLaunch: boolean;
   notify: boolean;
   organizationId?: string;
+  imageUrl?: string;
 }
 
 export const formatRupees = (n: number) => `₹${n.toLocaleString("en-IN", { maximumFractionDigits: 2 })}`;

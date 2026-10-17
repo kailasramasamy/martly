@@ -2,8 +2,8 @@ import { createContext, useContext, useState, useCallback } from "react";
 import { Refine, Authenticated, useGetIdentity, useLogout } from "@refinedev/core";
 import { ThemedLayoutV2, useNotificationProvider } from "@refinedev/antd";
 import routerProvider from "@refinedev/react-router";
-import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router";
-import { App as AntdApp, ConfigProvider, Typography, Space, Button } from "antd";
+import { BrowserRouter, Routes, Route, Outlet, Link, Navigate } from "react-router";
+import { App as AntdApp, Avatar, ConfigProvider, Typography, Space, Button, Spin } from "antd";
 import {
   DashboardOutlined,
   BankOutlined,
@@ -40,6 +40,10 @@ import {
   CrownOutlined,
   CalendarOutlined,
   BookOutlined,
+  DollarOutlined,
+  SafetyCertificateOutlined,
+  FileTextOutlined,
+  SolutionOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -123,8 +127,8 @@ import { BannerCreate } from "./pages/banners/create";
 import { BannerEdit } from "./pages/banners/edit";
 import { NotificationSend } from "./pages/notifications/send";
 import { NotificationDashboard } from "./pages/notifications/dashboard";
-import { CampaignList } from "./pages/notifications/campaigns/list";
-import { CampaignShow } from "./pages/notifications/campaigns/show";
+import { CampaignList as NotificationCampaignList } from "./pages/notifications/campaigns/list";
+import { CampaignShow as NotificationCampaignShow } from "./pages/notifications/campaigns/show";
 import { TemplateList } from "./pages/notifications/templates/list";
 import { TemplateCreate } from "./pages/notifications/templates/create";
 import { TemplateEdit } from "./pages/notifications/templates/edit";
@@ -144,6 +148,15 @@ import { SubscriptionShow } from "./pages/subscriptions/show";
 import { RecipeList } from "./pages/recipes/list";
 import { RecipeCreate } from "./pages/recipes/create";
 import { RecipeEdit } from "./pages/recipes/edit";
+import { MarketingPlan } from "./pages/marketing/plan";
+import { MarketingPricing } from "./pages/marketing/pricing";
+import { MarketingRevenue } from "./pages/marketing/revenue";
+import { CampaignList } from "./pages/brand-campaigns/list";
+import { CampaignForm } from "./pages/brand-campaigns/form";
+import { CampaignShow } from "./pages/brand-campaigns/show";
+import { BrandPartners } from "./pages/brand-campaigns/partners";
+import { BrandInvoices } from "./pages/brand-portal/invoices";
+import { BRAND_SCOPE, PLATFORM_SCOPE } from "./pages/brand-campaigns/types";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 import { UserRoleLabels, type UserRole } from "@martly/shared/constants";
 
@@ -151,12 +164,19 @@ const { Text } = Typography;
 
 
 function HeaderBar() {
-  const { data: identity } = useGetIdentity<{ name: string; role: string }>();
+  const { data: identity } = useGetIdentity<{ name: string; role: string; brand?: { name: string; imageUrl: string | null } | null }>();
   const { mutate: logout } = useLogout();
   const { mode, toggle } = useContext(ThemeModeContext);
   return (
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0 24px", height: 48, background: "#0d9488" }}>
-      <OrgSwitcher />
+      {identity?.brand ? (
+        <Space size={8}>
+          <Avatar size={28} src={identity.brand.imageUrl}>{identity.brand.name[0]}</Avatar>
+          <Text style={{ color: "#fff", fontWeight: 600 }}>{identity.brand.name}</Text>
+        </Space>
+      ) : (
+        <OrgSwitcher />
+      )}
       <Space size={12}>
         {identity && (
           <Link to="/profile" title="My profile">
@@ -187,6 +207,13 @@ function HeaderBar() {
       </Space>
     </div>
   );
+}
+
+function HomeRoute() {
+  const { data: identity, isLoading } = useGetIdentity<{ role: string }>();
+  if (isLoading) return <Spin style={{ display: "block", margin: "64px auto" }} />;
+  if (identity?.role === "BRAND_PARTNER") return <Navigate to="/brand-portal/campaigns" replace />;
+  return <DashboardPage />;
 }
 
 export default function App() {
@@ -413,6 +440,51 @@ export default function App() {
                 meta: { label: "Recipes", icon: <BookOutlined />, parent: "marketing" },
               },
               {
+                name: "marketing-plan",
+                list: "/marketing-plan",
+                meta: { label: "Marketing plan", icon: <DollarOutlined />, parent: "marketing" },
+              },
+              {
+                name: "marketing-pricing",
+                list: "/marketing-pricing",
+                meta: { label: "Ad pricing", icon: <TagsOutlined />, parent: "marketing" },
+              },
+              {
+                name: "marketing-orders",
+                list: "/marketing-orders",
+                meta: { label: "Marketing revenue", icon: <FundOutlined />, parent: "marketing" },
+              },
+              {
+                name: "brand-campaigns",
+                list: "/brand-campaigns",
+                create: "/brand-campaigns/create",
+                edit: "/brand-campaigns/edit/:id",
+                show: "/brand-campaigns/show/:id",
+                meta: { label: "Brand campaigns", icon: <TrademarkOutlined />, parent: "marketing" },
+              },
+              {
+                name: "brand-partners",
+                list: "/brand-partners",
+                meta: { label: "Brand partners", icon: <SolutionOutlined />, parent: "marketing" },
+              },
+              {
+                name: "brand-portal",
+                meta: { label: "Brand portal", icon: <SafetyCertificateOutlined /> },
+              },
+              {
+                name: "brand-portal-campaigns",
+                list: "/brand-portal/campaigns",
+                create: "/brand-portal/campaigns/create",
+                edit: "/brand-portal/campaigns/edit/:id",
+                show: "/brand-portal/campaigns/show/:id",
+                meta: { label: "Campaigns", icon: <PictureOutlined />, parent: "brand-portal" },
+              },
+              {
+                name: "brand-portal-invoices",
+                list: "/brand-portal/invoices",
+                meta: { label: "Invoices", icon: <FileTextOutlined />, parent: "brand-portal" },
+              },
+              {
                 name: "delivery",
                 meta: { label: "Delivery", icon: <EnvironmentOutlined /> },
               },
@@ -597,6 +669,23 @@ export default function App() {
                   <Route index element={<PromoList />} />
                   <Route path="show/:id" element={<PromoShow />} />
                 </Route>
+                <Route path="/marketing-plan" element={<MarketingPlan />} />
+                <Route path="/marketing-pricing" element={<MarketingPricing />} />
+                <Route path="/marketing-orders" element={<MarketingRevenue />} />
+                <Route path="/brand-campaigns">
+                  <Route index element={<CampaignList scope={PLATFORM_SCOPE} />} />
+                  <Route path="create" element={<CampaignForm scope={PLATFORM_SCOPE} />} />
+                  <Route path="edit/:id" element={<CampaignForm scope={PLATFORM_SCOPE} />} />
+                  <Route path="show/:id" element={<CampaignShow scope={PLATFORM_SCOPE} />} />
+                </Route>
+                <Route path="/brand-partners" element={<BrandPartners />} />
+                <Route path="/brand-portal">
+                  <Route path="campaigns" element={<CampaignList scope={BRAND_SCOPE} />} />
+                  <Route path="campaigns/create" element={<CampaignForm scope={BRAND_SCOPE} />} />
+                  <Route path="campaigns/edit/:id" element={<CampaignForm scope={BRAND_SCOPE} />} />
+                  <Route path="campaigns/show/:id" element={<CampaignShow scope={BRAND_SCOPE} />} />
+                  <Route path="invoices" element={<BrandInvoices />} />
+                </Route>
                 <Route path="/collections">
                   <Route index element={<CollectionList />} />
                   <Route path="create" element={<CollectionCreate />} />
@@ -617,8 +706,8 @@ export default function App() {
                 <Route path="/store-ratings" element={<StoreRatingList />} />
                 <Route path="/notifications">
                   <Route path="dashboard" element={<NotificationDashboard />} />
-                  <Route path="campaigns" element={<CampaignList />} />
-                  <Route path="campaigns/show/:id" element={<CampaignShow />} />
+                  <Route path="campaigns" element={<NotificationCampaignList />} />
+                  <Route path="campaigns/show/:id" element={<NotificationCampaignShow />} />
                   <Route path="send" element={<NotificationSend />} />
                   <Route path="templates" element={<TemplateList />} />
                   <Route path="templates/create" element={<TemplateCreate />} />
@@ -660,7 +749,7 @@ export default function App() {
                   <Route index element={<SubscriptionList />} />
                   <Route path="show/:id" element={<SubscriptionShow />} />
                 </Route>
-                <Route path="/" element={<DashboardPage />} />
+                <Route path="/" element={<HomeRoute />} />
               </Route>
               <Route path="/login" element={<LoginPage />} />
               <Route path="/select-org" element={<SelectOrgPage />} />

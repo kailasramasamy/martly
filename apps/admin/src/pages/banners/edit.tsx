@@ -1,7 +1,7 @@
 import { Edit, useForm } from "@refinedev/antd";
 import { Form, Input, Select, InputNumber, Switch, DatePicker, Card, Row, Col } from "antd";
 import { BannerPlacementLabels, BannerActionTypeLabels } from "@martly/shared/constants";
-import { ImageUpload } from "../../components/ImageUpload";
+import { BannerImageCard, BannerSlotsNote, useBannerEntitlements, useBannerSaveErrors } from "./banner-shared";
 import { useList } from "@refinedev/core";
 import { Navigate } from "react-router";
 
@@ -9,9 +9,10 @@ const placementOptions = Object.entries(BannerPlacementLabels).map(([value, labe
 const actionTypeOptions = Object.entries(BannerActionTypeLabels).map(([value, label]) => ({ value, label }));
 
 export const BannerEdit = () => {
-  const { formProps, saveButtonProps, form, queryResult } = useForm({ resource: "banners" });
+  const { formProps, saveButtonProps, form, queryResult } = useForm({ resource: "banners", ...useBannerSaveErrors() });
   const actionType = Form.useWatch("actionType", form);
   const placement = Form.useWatch("placement", form);
+  const { isOrgUser, entitlements } = useBannerEntitlements();
 
   const { data: categoriesData } = useList({ resource: "categories", pagination: { pageSize: 200 } });
   const { data: collectionsData } = useList({ resource: "collections", pagination: { pageSize: 200 } });
@@ -92,7 +93,7 @@ export const BannerEdit = () => {
                   </Form.Item>
                 </Col>
                 <Col span={12}>
-                  <Form.Item name="isActive" label="Active" valuePropName="checked">
+                  <Form.Item name="isActive" label="Active" valuePropName="checked" extra={isOrgUser && <BannerSlotsNote slots={entitlements?.bannerSlots} />}>
                     <Switch />
                   </Form.Item>
                 </Col>
@@ -101,23 +102,7 @@ export const BannerEdit = () => {
           </Col>
 
           <Col xs={24} lg={10}>
-            <Card title="Image" size="small" style={{ marginBottom: 16 }}>
-              <Form.Item
-                name="imageUrl"
-                rules={[{ required: true, message: "Banner image is required" }]}
-                getValueFromEvent={(url: string) => url}
-              >
-                <ImageUpload />
-              </Form.Item>
-              <Form.Item
-                name="textInImage"
-                label="Title is in the image"
-                valuePropName="checked"
-                extra="Upload a 3:2 image. When the title is part of the artwork the app adds no text; otherwise it shows the title below the image."
-              >
-                <Switch />
-              </Form.Item>
-            </Card>
+            <BannerImageCard form={form} aiImages={isOrgUser ? entitlements?.aiImages : undefined} />
 
             <Card title="Targeting" size="small" style={{ marginBottom: 16 }}>
               <Form.Item name="storeId" label="Store (optional)">

@@ -30,6 +30,7 @@ import { FloatingCart } from "../../components/FloatingCart";
 import { HomeScreenSkeleton } from "../../components/SkeletonLoader";
 import StoreDiscovery from "../../components/store-discovery/StoreDiscovery";
 import { openBannerTarget } from "../../lib/banner-action";
+import { recordBannerTap, recordBannerView } from "../../lib/banner-events";
 import { useAuth } from "../../lib/auth-context";
 import { HeroBannerSlide } from "../../components/HeroBannerSlide";
 import { CategoryTile } from "../../components/CategoryTile";
@@ -142,8 +143,9 @@ export default function HomeScreen() {
     if (homeFeed && popupBanners.length > 0 && !popupShownRef.current) {
       popupShownRef.current = true;
       setShowPopup(true);
+      recordBannerView(selectedStore?.id, popupBanners[0].id);
     }
-  }, [homeFeed, popupBanners.length]);
+  }, [homeFeed, popupBanners, selectedStore?.id]);
 
   const handleFestiveTile = useCallback((tile: FestiveTile) => {
     if (festiveHero) router.push({ pathname: "/festival/[id]", params: { id: festiveHero.id, tile: tile.id } });
@@ -440,6 +442,7 @@ export default function HomeScreen() {
                 <TouchableOpacity
                   activeOpacity={popupBanners[0].actionType === "NONE" ? 1 : 0.9}
                   onPress={() => {
+                    recordBannerTap(selectedStore?.id, popupBanners[0].id);
                     handleBannerPress(popupBanners[0]);
                     setShowPopup(false);
                   }}

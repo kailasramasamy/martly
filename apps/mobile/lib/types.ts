@@ -184,8 +184,10 @@ export interface Banner {
   imageUrls: Record<string, string> | null;
   textInImage: boolean;
   placement: "HERO_CAROUSEL" | "CATEGORY_STRIP" | "MID_PAGE" | "CATEGORY_TOP" | "CART_UPSELL" | "POPUP";
-  actionType: "CATEGORY" | "PRODUCT" | "COLLECTION" | "SEARCH" | "URL" | "NONE";
+  actionType: "CATEGORY" | "PRODUCT" | "COLLECTION" | "SEARCH" | "URL" | "BRAND" | "NONE";
   actionTarget: string | null;
+  sponsorType?: "STORE" | "BRAND" | "PLATFORM";
+  brandId?: string | null;
 }
 
 export interface RecipeSummary {

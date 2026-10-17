@@ -1,7 +1,8 @@
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { View, Text, Image, FlatList, Pressable, StyleSheet, type LayoutChangeEvent, type NativeScrollEvent, type NativeSyntheticEvent } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { colors, fonts } from "../../constants/theme";
+import { recordBannerTap, recordBannerView } from "../../lib/banner-events";
 import type { Store } from "../../lib/types";
 import type { StoreBranding } from "./branding";
 
@@ -33,6 +34,10 @@ export function CoverCarousel({ store, brand, height, overlay, onBannerPress, on
   const pages = pagesOf(store);
   const onLayout = (e: LayoutChangeEvent) => setWidth(e.nativeEvent.layout.width);
   const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => width && setIndex(Math.round(e.nativeEvent.contentOffset.x / width));
+  const shown = pages[index]?.banner;
+  useEffect(() => {
+    if (shown) recordBannerView(store.id, shown.id);
+  }, [shown, store.id]);
   const offers = pages.filter((p) => p.key !== "cover").length;
 
   return (
@@ -48,7 +53,7 @@ export function CoverCarousel({ store, brand, height, overlay, onBannerPress, on
           scrollEnabled={pages.length > 1}
           renderItem={({ item }) => {
             const { banner } = item;
-            const onPress = banner && onBannerPress ? () => onBannerPress(banner) : item.poster && onPosterPress ? () => onPosterPress(item.uri) : undefined;
+            const onPress = banner && onBannerPress ? () => { recordBannerTap(store.id, banner.id); onBannerPress(banner); } : item.poster && onPosterPress ? () => onPosterPress(item.uri) : undefined;
             return (
               <Pressable onPress={onPress} disabled={!onPress} style={{ width, height, backgroundColor: item.poster ? brand.color : undefined }}
                 accessibilityRole={onPress ? "imagebutton" : "image"} accessibilityLabel={banner ? "Offer banner" : item.poster ? "Store poster" : "Store photo"}>
