@@ -1,8 +1,8 @@
-import { createContext, useContext, useState, useCallback } from "react";
+import { createContext, useContext, useState, useCallback, useEffect } from "react";
 import { Refine, Authenticated, useGetIdentity, useLogout } from "@refinedev/core";
 import { ThemedLayoutV2, useNotificationProvider } from "@refinedev/antd";
 import routerProvider from "@refinedev/react-router";
-import { BrowserRouter, Routes, Route, Outlet, Link, Navigate } from "react-router";
+import { BrowserRouter, Routes, Route, Outlet, Link, Navigate, useLocation } from "react-router";
 import { App as AntdApp, Avatar, ConfigProvider, Typography, Space, Button, Spin } from "antd";
 import {
   DashboardOutlined,
@@ -214,6 +214,15 @@ function HomeRoute() {
   if (isLoading) return <Spin style={{ display: "block", margin: "64px auto" }} />;
   if (identity?.role === "BRAND_PARTNER") return <Navigate to="/brand-portal/campaigns" replace />;
   return <DashboardPage />;
+}
+
+/** Each page opens at the top; the browser would otherwise keep the previous page's scroll position */
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
 }
 
 export default function App() {
@@ -594,6 +603,7 @@ export default function App() {
                       }
                       Header={HeaderBar}
                     >
+                      <ScrollToTop />
                       <Outlet />
                     </ThemedLayoutV2>
                   </Authenticated>
