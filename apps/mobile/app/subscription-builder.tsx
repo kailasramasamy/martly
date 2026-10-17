@@ -22,6 +22,7 @@ import { useStore } from "../lib/store-context";
 import { useToast } from "../lib/toast-context";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import type { StoreProduct, UserAddress } from "../lib/types";
+import { withSignIn } from "../components/SignInPrompt";
 
 type Frequency = "DAILY" | "ALTERNATE_DAYS" | "SPECIFIC_DAYS" | "WEEKLY" | "BIWEEKLY" | "MONTHLY";
 
@@ -88,7 +89,7 @@ function formatDate(d: Date): string {
   return `${days[d.getDay()]}, ${d.getDate()} ${months[d.getMonth()]}`;
 }
 
-export default function SubscriptionBuilderScreen() {
+function SubscriptionBuilderScreen() {
   const router = useRouter();
   const { storeProductId, productId: paramProductId } = useLocalSearchParams<{ storeProductId?: string; productId?: string }>();
   const toast = useToast();
@@ -1512,3 +1513,5 @@ const styles = StyleSheet.create({
     color: "#fff",
   },
 });
+
+export default withSignIn(SubscriptionBuilderScreen, { icon: "repeat-outline", title: "Subscribe & save", message: "Sign in to set up a subscription." });

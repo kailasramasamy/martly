@@ -19,6 +19,8 @@ import { AddressSheet } from "../../components/account/AddressSheet";
 import { EditProfileSheet } from "../../components/account/EditProfileSheet";
 import type { UserAddress } from "../../lib/types";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { useRequireSignIn } from "../../lib/sign-in-context";
+import { GuestAccountCard, StaffSignInLink } from "../../components/account/GuestAccount";
 
 const BUILD_NUMBER = Constants.expoConfig?.ios?.buildNumber;
 const APP_VERSION = `Version ${Constants.expoConfig?.version}${BUILD_NUMBER ? ` (${BUILD_NUMBER})` : ""}`;
@@ -29,7 +31,9 @@ function useMenuGroups(subscriptionsEnabled: boolean): { title: string; items: M
   const router = useRouter();
   const { language, supportedLanguages } = useLanguage();
   const { canManage, switchPersona } = usePersona();
-  const go = (path: Parameters<typeof router.push>[0]) => () => router.push(path);
+  const requireSignIn = useRequireSignIn();
+  // Everything here but Language belongs to an account, so guests sign in on the way
+  const go = (path: Parameters<typeof router.push>[0]) => () => requireSignIn(() => router.push(path));
   return [
     ...(canManage
       ? [{ title: "Business", items: [{ icon: "storefront-outline" as const, label: "Manage my store", onPress: () => switchPersona("manage") }] }]
@@ -54,10 +58,25 @@ function useMenuGroups(subscriptionsEnabled: boolean): { title: string; items: M
       items: [
         { icon: "chatbubbles-outline", label: "Chat with Support", onPress: go("/support-chat") },
         { icon: "headset-outline", label: "My Tickets", onPress: go("/support-tickets") },
-        { icon: "language-outline", label: "Language", value: language ? supportedLanguages[language] : "English", onPress: go("/language-settings") },
+        { icon: "language-outline", label: "Language", value: language ? supportedLanguages[language] : "English", onPress: () => router.push("/language-settings") },
       ],
     },
   ];
+}
+
+/** Account tab for guests: why to sign in, the menu (which asks to sign in), Language, and the staff sign-in link */
+function GuestAccountScreen({ menuGroups }: { menuGroups: { title: string; items: MenuItem[] }[] }) {
+  const tabBarScroll = useTabBarAutoHide();
+  return (
+    <View style={styles.container}>
+      <ScrollView {...tabBarScroll.scrollProps} showsVerticalScrollIndicator={false} contentContainerStyle={tabBarScroll.contentStyle(styles.scroll)}>
+        <GuestAccountCard />
+        {menuGroups.map((group) => <MenuGroup key={group.title} title={group.title} items={group.items} />)}
+        <StaffSignInLink />
+        <Text style={styles.version}>{APP_VERSION}</Text>
+      </ScrollView>
+    </View>
+  );
 }
 
 export default function ProfileScreen() {
@@ -90,6 +109,8 @@ export default function ProfileScreen() {
       toast.show("Failed to delete address", "error");
     }
   };
+
+  if (!isAuthenticated) return <GuestAccountScreen menuGroups={menuGroups} />;
 
   return (
     <View style={styles.container}>

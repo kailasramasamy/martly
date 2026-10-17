@@ -14,8 +14,9 @@ import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 import type { LoyaltyData, LoyaltyTransaction } from "../lib/types";
+import { withSignIn } from "../components/SignInPrompt";
 
-export default function LoyaltyScreen() {
+function LoyaltyScreen() {
   const router = useRouter();
   const { selectedStore } = useStore();
   const storeId = selectedStore?.id;
@@ -396,3 +397,5 @@ const styles = StyleSheet.create({
     lineHeight: 19,
   },
 });
+
+export default withSignIn(LoyaltyScreen, { icon: "gift-outline", title: "Loyalty points", message: "Sign in to earn and use points on every order." });

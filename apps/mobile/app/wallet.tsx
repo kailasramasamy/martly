@@ -12,6 +12,7 @@ import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
+import { withSignIn } from "../components/SignInPrompt";
 
 interface WalletTransaction {
   id: string;
@@ -28,7 +29,7 @@ interface WalletData {
   transactions: WalletTransaction[];
 }
 
-export default function WalletScreen() {
+function WalletScreen() {
   const router = useRouter();
   const [data, setData] = useState<WalletData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -409,3 +410,5 @@ const styles = StyleSheet.create({
     lineHeight: 19,
   },
 });
+
+export default withSignIn(WalletScreen, { icon: "wallet-outline", title: "Your wallet", message: "Sign in to see your wallet balance and refunds." });

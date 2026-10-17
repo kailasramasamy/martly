@@ -37,8 +37,8 @@ async function request<T>(path: string, options: RequestInit = {}, isRetry = fal
     headers,
   });
 
-  // On 401, try refreshing the token once (skip for credential endpoints)
-  if (response.status === 401 && !isRetry && tokenRefresher && !NO_REFRESH_PATHS.some((p) => path.includes(p))) {
+  // On 401, try refreshing the token once (skip for credential endpoints, and for guests who never sent one)
+  if (response.status === 401 && !isRetry && headers.Authorization && tokenRefresher && !NO_REFRESH_PATHS.some((p) => path.includes(p))) {
     // Deduplicate concurrent refresh calls
     if (!refreshPromise) {
       refreshPromise = tokenRefresher().finally(() => { refreshPromise = null; });

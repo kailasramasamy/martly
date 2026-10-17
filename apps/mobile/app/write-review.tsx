@@ -19,10 +19,11 @@ import { uploadImage } from "../lib/upload";
 import { useToast } from "../lib/toast-context";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../constants/theme";
+import { withSignIn } from "../components/SignInPrompt";
 
 const MAX_IMAGES = 5;
 
-export default function WriteReviewScreen() {
+function WriteReviewScreen() {
   const { productId, productName, storeId, orderId } = useLocalSearchParams<{
     productId: string;
     productName?: string;
@@ -249,3 +250,5 @@ const styles = StyleSheet.create({
   submitBtnText: { fontSize: fontSize.md, fontWeight: "700", color: "#fff" },
   submitLoading: { flexDirection: "row", alignItems: "center", gap: 8 },
 });
+
+export default withSignIn(WriteReviewScreen, { icon: "star-outline", title: "Write a review", message: "Sign in to review products you've bought." });

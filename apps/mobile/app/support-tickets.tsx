@@ -12,6 +12,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import { OrderCardSkeleton } from "../components/SkeletonLoader";
+import { withSignIn } from "../components/SignInPrompt";
 
 interface SupportTicket {
   id: string;
@@ -29,7 +30,7 @@ const TICKET_STATUS_CONFIG: Record<string, { color: string; bg: string; label: s
   CLOSED: { color: "#475569", bg: "#f1f5f9", label: "Closed" },
 };
 
-export default function SupportTicketsScreen() {
+function SupportTicketsScreen() {
   const router = useRouter();
   const [tickets, setTickets] = useState<SupportTicket[]>([]);
   const [loading, setLoading] = useState(true);
@@ -239,3 +240,5 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
   },
 });
+
+export default withSignIn(SupportTicketsScreen, { icon: "chatbubbles-outline", title: "Your support tickets", message: "Sign in to see your support requests." });

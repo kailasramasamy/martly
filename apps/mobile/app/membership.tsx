@@ -10,6 +10,7 @@ import { PlanCard, perMonth } from "../components/membership/PlanCard";
 import { MemberCard } from "../components/membership/MemberCard";
 import { UpgradeCard } from "../components/membership/UpgradeCard";
 import type { MembershipPlan } from "../lib/types";
+import { withSignIn } from "../components/SignInPrompt";
 
 function PlanChooser({ plans, busyPlanId, onSubscribe }: {
   plans: MembershipPlan[]; busyPlanId: string | null; onSubscribe: (plan: MembershipPlan) => void;
@@ -43,7 +44,7 @@ function PlanChooser({ plans, busyPlanId, onSubscribe }: {
   );
 }
 
-export default function MembershipScreen() {
+function MembershipScreen() {
   const { selectedStore } = useStore();
   const { user } = useAuth();
   const plus = useMartPlus(selectedStore?.id);
@@ -104,3 +105,5 @@ const styles = StyleSheet.create({
   empty: { alignItems: "center", paddingVertical: 48, gap: 12 },
   emptyText: { fontFamily: fonts.medium, fontSize: 14.5, color: colors.textSecondary, textAlign: "center" },
 });
+
+export default withSignIn(MembershipScreen, { icon: "star-outline", title: "Mart Plus", message: "Sign in to join Mart Plus for free delivery and member prices." });

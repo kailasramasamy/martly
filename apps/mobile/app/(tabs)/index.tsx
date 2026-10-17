@@ -30,6 +30,7 @@ import { FloatingCart } from "../../components/FloatingCart";
 import { HomeScreenSkeleton } from "../../components/SkeletonLoader";
 import StoreDiscovery from "../../components/store-discovery/StoreDiscovery";
 import { openBannerTarget } from "../../lib/banner-action";
+import { useAuth } from "../../lib/auth-context";
 import { HeroBannerSlide } from "../../components/HeroBannerSlide";
 import { CategoryTile } from "../../components/CategoryTile";
 import { TimeSpotlight } from "../../components/TimeSpotlight";
@@ -52,6 +53,7 @@ export default function HomeScreen() {
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
   const [dockHeight, setDockHeight] = useState(0);
   const { selectedStore, loading: storesLoading, userArea, refreshStores } = useStore();
+  const { isAuthenticated } = useAuth();
   const { isMember } = useMembership();
   const { isBasketMode } = useBasketMode();
   const { getLocalizedName } = useLanguage();
@@ -74,6 +76,12 @@ export default function HomeScreen() {
       .then((res) => setHomeFeed(res.data))
       .catch(() => {})
       .finally(() => setLoadingFeed(false));
+    // Membership and subscriptions belong to an account; guests have neither
+    if (!isAuthenticated) {
+      setMemberStatus(null);
+      setHasSubscriptions(false);
+      return;
+    }
     // Fetch membership status in parallel
     api
       .get<{ isMember: boolean; membership: { planName: string; endDate: string } | null }>(`/api/v1/memberships/status?storeId=${selectedStore.id}`)
@@ -92,7 +100,7 @@ export default function HomeScreen() {
     } else {
       setHasSubscriptions(false);
     }
-  }, [selectedStore]);
+  }, [selectedStore, isAuthenticated]);
 
   useEffect(() => {
     fetchHomeFeed();

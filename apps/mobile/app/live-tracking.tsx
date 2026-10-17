@@ -16,6 +16,7 @@ import * as SecureStore from "expo-secure-store";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { API_URL } from "../lib/config";
+import { withSignIn } from "../components/SignInPrompt";
 
 const WS_URL = API_URL.replace(/^http/, "ws");
 
@@ -57,7 +58,7 @@ interface RouteData {
   totalDistanceMeters: number;
 }
 
-export default function LiveTrackingScreen() {
+function LiveTrackingScreen() {
   const { orderId } = useLocalSearchParams<{ orderId: string }>();
   const router = useRouter();
 
@@ -691,3 +692,5 @@ const styles = StyleSheet.create({
     color: "#fff",
   },
 });
+
+export default withSignIn(LiveTrackingScreen, { icon: "bicycle-outline", title: "Track your delivery", message: "Sign in to follow your rider live." });

@@ -47,6 +47,7 @@ import { resolveNotificationDeepLink } from "../lib/notification-helpers";
 import SplashScreen from "../components/SplashScreen";
 import { colors } from "../constants/theme";
 import { manage } from "../components/manage/ui/tokens";
+import { SignInProvider } from "../lib/sign-in-context";
 
 // Keep native splash visible until we're ready
 ExpoSplashScreen.preventAutoHideAsync();
@@ -101,7 +102,8 @@ function RootLayoutNav() {
     // A reload can land on the shop tabs while the member's persona is Manage
     const misplacedPersona = home === "/(manage)" && segments[0] === "(tabs)";
 
-    if (!isAuthenticated && !inAuth) {
+    // Guests shop freely; only the staff side needs an account
+    if (!isAuthenticated && inManage) {
       router.replace("/(auth)/login");
     } else if (isAuthenticated && (inAuth || misplacedRole || misplacedPersona || (inManage && !canManage))) {
       router.replace(home);
@@ -127,11 +129,7 @@ function RootLayoutNav() {
 
   // Called while splash is still fully opaque — navigate to correct screen
   const handleBeforeFadeOut = useCallback(() => {
-    if (isAuthenticated) {
-      router.replace(home);
-    } else {
-      router.replace("/(auth)/login");
-    }
+    router.replace(isAuthenticated ? home : "/(tabs)");
   }, [isAuthenticated, router, home]);
 
   // Called after splash fade-out completes — remove the overlay and navigate to deep link
@@ -246,7 +244,9 @@ export default function RootLayout() {
               <ToastProvider>
               <WishlistProvider>
                 <NotificationProvider>
-                  <RootLayoutNav />
+                  <SignInProvider>
+                    <RootLayoutNav />
+                  </SignInProvider>
                 </NotificationProvider>
               </WishlistProvider>
               </ToastProvider>

@@ -12,6 +12,7 @@ import { useFocusEffect } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { colors, spacing, fontSize, fonts } from "../../constants/theme";
+import { withSignIn } from "../../components/SignInPrompt";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
@@ -43,7 +44,7 @@ const ROLE_CONFIG: Record<string, { label: string; bubbleBg: string; textColor: 
   admin: { label: "Admin", bubbleBg: "#fff", textColor: colors.text, align: "left", badgeBg: "#f59e0b", badgeColor: "#fff" },
 };
 
-export default function SupportTicketDetailScreen() {
+function SupportTicketDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const [ticket, setTicket] = useState<SupportTicket | null>(null);
   const [loading, setLoading] = useState(true);
@@ -360,3 +361,5 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
   },
 });
+
+export default withSignIn(SupportTicketDetailScreen, { icon: "chatbubbles-outline", title: "Support ticket", message: "Sign in to see this request." });

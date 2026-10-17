@@ -17,6 +17,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
 import { colors, fonts } from "../constants/theme";
+import { withSignIn } from "../components/SignInPrompt";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
@@ -62,7 +63,7 @@ function TypingDots() {
 }
 
 // ── Main Screen ─────────────────────────────────────
-export default function SupportChatScreen() {
+function SupportChatScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { selectedStore } = useStore();
@@ -735,3 +736,5 @@ const s = StyleSheet.create({
     color: "#fff",
   },
 });
+
+export default withSignIn(SupportChatScreen, { icon: "chatbubbles-outline", title: "Help & support", message: "Sign in to chat with us about your orders." });

@@ -21,6 +21,7 @@ import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { OrderDetailSkeleton } from "../../components/SkeletonLoader";
+import { withSignIn } from "../../components/SignInPrompt";
 
 interface OrderItemData {
   id: string;
@@ -135,7 +136,7 @@ const RETURN_STATUS_LABELS: Record<string, string> = {
   REJECTED: "Rejected",
 };
 
-export default function OrderDetailScreen() {
+function OrderDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const toast = useToast();
@@ -1226,3 +1227,5 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
 });
+
+export default withSignIn(OrderDetailScreen, { icon: "receipt-outline", title: "Your order", message: "Sign in to see this order." });

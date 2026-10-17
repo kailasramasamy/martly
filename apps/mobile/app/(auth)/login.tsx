@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { View, Text, TextInput, Pressable, StyleSheet, ActivityIndicator, KeyboardAvoidingView, ScrollView, Platform, Image } from "react-native";
 import { router } from "expo-router";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../../lib/auth-context";
 import { api, setAccessToken } from "../../lib/api";
@@ -15,6 +16,7 @@ const wordmark = require("../../assets/branding/martly-wordmark-light.png");
 
 export default function LoginScreen() {
   const { login, refreshUser } = useAuth();
+  const insets = useSafeAreaInsets();
   const [step, setStep] = useState<Step>("phone");
   const [phone, setPhone] = useState("");
   const [otp, setOtp] = useState("");
@@ -247,12 +249,20 @@ export default function LoginScreen() {
 
       </ScrollView>
     </KeyboardAvoidingView>
+      {step === "phone" && (
+        // Shoppers can browse first and sign in at checkout
+        <Pressable onPress={() => router.replace("/(tabs)")} style={[styles.skip, { top: insets.top + 8 }]} hitSlop={8} accessibilityRole="button" accessibilityLabel="Skip and browse">
+          <Text style={styles.skipText}>Skip</Text>
+        </Pressable>
+      )}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.background },
+  skip: { position: "absolute", right: 16, minHeight: 44, minWidth: 64, paddingHorizontal: 14, borderRadius: 22, alignItems: "center", justifyContent: "center", backgroundColor: "#f1f5f9" },
+  skipText: { fontSize: fontSize.md, fontWeight: "700", color: colors.text },
   inner: { flexGrow: 1, justifyContent: "flex-end", padding: spacing.lg },
 
   // Logo

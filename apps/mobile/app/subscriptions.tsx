@@ -16,6 +16,7 @@ import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import type { Subscription } from "../lib/types";
+import { withSignIn } from "../components/SignInPrompt";
 
 const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -76,7 +77,7 @@ function formatNextDelivery(dateStr: string): string {
   return `${dayName}, ${month} ${day}`;
 }
 
-export default function SubscriptionsScreen() {
+function SubscriptionsScreen() {
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const { selectedStore } = useStore();
@@ -603,3 +604,5 @@ const styles = StyleSheet.create({
     elevation: 6,
   },
 });
+
+export default withSignIn(SubscriptionsScreen, { icon: "repeat-outline", title: "Subscriptions", message: "Sign in to set up daily or weekly deliveries." });

@@ -1,13 +1,17 @@
 import { Tabs } from "expo-router";
 import { useCart } from "../../lib/cart-context";
+import { useStore } from "../../lib/store-context";
 import { TabIcon, TabSceneLayout, useTabBarOptions } from "../../components/TabIcon";
 
 export default function TabsLayout() {
   const { itemCount } = useCart();
   const screenOptions = useTabBarOptions();
+  const { selectedStore, loading } = useStore();
+  // Every tab depends on a store, so the bar waits until one is chosen
+  const choosing = !loading && !selectedStore;
 
   return (
-    <Tabs screenOptions={screenOptions} screenLayout={TabSceneLayout}>
+    <Tabs screenOptions={choosing ? { ...screenOptions, tabBarStyle: { display: "none" } } : screenOptions} screenLayout={TabSceneLayout}>
       <Tabs.Screen
         name="index"
         options={{ title: "Home", headerShown: false, tabBarIcon: ({ focused }) => <TabIcon focused={focused} icon="home" /> }}

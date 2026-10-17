@@ -25,6 +25,7 @@ import { useBasketMode } from "../lib/basket-mode-context";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import { RazorpayCheckout } from "../components/RazorpayCheckout";
 import type { TomorrowsBasket, BasketItem } from "../lib/types";
+import { withSignIn } from "../components/SignInPrompt";
 
 interface RazorpayData {
   razorpay_order_id: string;
@@ -34,7 +35,7 @@ interface RazorpayData {
   customer_id?: string;
 }
 
-export default function TomorrowsBasketScreen() {
+function TomorrowsBasketScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { selectedStore } = useStore();
@@ -1113,3 +1114,5 @@ const styles = StyleSheet.create({
     lineHeight: 20,
   },
 });
+
+export default withSignIn(TomorrowsBasketScreen, { icon: "basket-outline", title: "Tomorrow's basket", message: "Sign in to see and edit tomorrow's delivery." });

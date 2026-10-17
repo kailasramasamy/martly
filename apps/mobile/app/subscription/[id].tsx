@@ -16,6 +16,7 @@ import { api } from "../../lib/api";
 import { useToast } from "../../lib/toast-context";
 import { colors, spacing, fontSize, fonts } from "../../constants/theme";
 import type { Subscription, Pricing } from "../../lib/types";
+import { withSignIn } from "../../components/SignInPrompt";
 
 const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -45,7 +46,7 @@ interface SubscriptionDetail extends Subscription {
   recentOrders?: { id: string; status: string; totalAmount: string; createdAt: string }[];
 }
 
-export default function SubscriptionDetailScreen() {
+function SubscriptionDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const { show } = useToast();
@@ -883,3 +884,5 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255,255,255,0.4)",
   },
 });
+
+export default withSignIn(SubscriptionDetailScreen, { icon: "repeat-outline", title: "Your subscription", message: "Sign in to manage this subscription." });

@@ -20,6 +20,7 @@ import { useToast } from "../lib/toast-context";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../constants/theme";
 import type { ReferralInfo, ReferralItem } from "../lib/types";
+import { withSignIn } from "../components/SignInPrompt";
 
 const STATUS_COLORS: Record<string, { bg: string; text: string; label: string }> = {
   PENDING: { bg: "#fef3c7", text: "#92400e", label: "Pending" },
@@ -27,7 +28,7 @@ const STATUS_COLORS: Record<string, { bg: string; text: string; label: string }>
   EXPIRED: { bg: "#fee2e2", text: "#991b1b", label: "Expired" },
 };
 
-export default function ReferralScreen() {
+function ReferralScreen() {
   const { selectedStore } = useStore();
   const storeId = selectedStore?.id;
   const { show: showToast } = useToast();
@@ -486,3 +487,5 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
 });
+
+export default withSignIn(ReferralScreen, { icon: "people-outline", title: "Refer & earn", message: "Sign in to invite friends and earn rewards." });

@@ -13,8 +13,10 @@ import { ProductActionsProvider } from "../../lib/product-actions";
 import { TabBottomDock } from "../../components/TabIcon";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 import { RewardsReminder } from "../../components/cart/RewardsReminder";
+import { useRequireSignIn } from "../../lib/sign-in-context";
 
 export default function CartScreen() {
+  const requireSignIn = useRequireSignIn();
   const tabBarScroll = useTabBarAutoHide();
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
   const [dockHeight, setDockHeight] = useState(0);
@@ -248,7 +250,7 @@ export default function CartScreen() {
           <TouchableOpacity
             style={[styles.checkoutBar, belowMinimum && styles.checkoutBarDisabled]}
             activeOpacity={belowMinimum ? 1 : 0.9}
-            onPress={() => !belowMinimum && router.push("/checkout")}
+            onPress={() => !belowMinimum && requireSignIn(() => router.push("/checkout"), { title: "Sign in to place your order", subtitle: "Your cart is saved. Enter your phone number to check out." })}
           >
             <View style={styles.checkoutLeft}>
               <Text style={styles.checkoutTotal}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>

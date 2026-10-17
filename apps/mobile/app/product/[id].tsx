@@ -14,6 +14,7 @@ import {
 } from "react-native";
 import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
 import { recordProductView } from "../../lib/recently-viewed";
+import { useRequireSignIn } from "../../lib/sign-in-context";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
@@ -159,6 +160,7 @@ export default function ProductDetailScreen() {
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
   const { isWishlisted, toggle: toggleWishlist } = useWishlist();
   const { isAuthenticated } = useAuth();
+  const requireSignIn = useRequireSignIn();
   const { isMember } = useMembership();
   const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
   const toast = useToast();
@@ -447,19 +449,17 @@ export default function ProductDetailScreen() {
               ))}
             </ScrollView>
             {/* Wishlist Heart — top-right overlay */}
-            {isAuthenticated && (
-              <TouchableOpacity
-                style={styles.wishlistOverlay}
-                onPress={() => toggleWishlist(product.id)}
-                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-              >
-                <Ionicons
-                  name={isWishlisted(product.id) ? "heart" : "heart-outline"}
-                  size={24}
-                  color={isWishlisted(product.id) ? "#ef4444" : "#fff"}
-                />
-              </TouchableOpacity>
-            )}
+            <TouchableOpacity
+              style={styles.wishlistOverlay}
+              onPress={() => requireSignIn(() => toggleWishlist(product.id), { title: "Sign in to save to your wishlist" })}
+              hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+            >
+              <Ionicons
+                name={isWishlisted(product.id) ? "heart" : "heart-outline"}
+                size={24}
+                color={isWishlisted(product.id) ? "#ef4444" : "#fff"}
+              />
+            </TouchableOpacity>
             {images.length > 1 && (
               <View style={styles.dotRow}>
                 {images.map((_, idx) => (
@@ -765,25 +765,23 @@ export default function ProductDetailScreen() {
                 </View>
               ))}
 
-              {isAuthenticated && (
-                <TouchableOpacity
-                  style={styles.writeReviewBtn}
-                  onPress={() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } })}
-                >
-                  <Ionicons name="create-outline" size={16} color={colors.primary} />
-                  <Text style={styles.writeReviewText}>Write a Review</Text>
-                </TouchableOpacity>
-              )}
+              <TouchableOpacity
+                style={styles.writeReviewBtn}
+                onPress={() => requireSignIn(() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } }), { title: "Sign in to write a review" })}
+              >
+                <Ionicons name="create-outline" size={16} color={colors.primary} />
+                <Text style={styles.writeReviewText}>Write a Review</Text>
+              </TouchableOpacity>
             </View>
           )}
 
-          {(reviewSummary?.count ?? 0) === 0 && isAuthenticated && (
+          {(reviewSummary?.count ?? 0) === 0 && (
             <View style={styles.section}>
               <Text style={styles.sectionTitle}>Reviews</Text>
               <Text style={styles.descText}>No reviews yet. Be the first!</Text>
               <TouchableOpacity
                 style={styles.writeReviewBtn}
-                onPress={() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } })}
+                onPress={() => requireSignIn(() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } }), { title: "Sign in to write a review" })}
               >
                 <Ionicons name="create-outline" size={16} color={colors.primary} />
                 <Text style={styles.writeReviewText}>Write a Review</Text>

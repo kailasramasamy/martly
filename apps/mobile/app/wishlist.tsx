@@ -10,6 +10,7 @@ import { colors, spacing, fontSize } from "../constants/theme";
 import { ProductList } from "../components/ProductList";
 import { FloatingCart } from "../components/FloatingCart";
 import type { StoreProduct } from "../lib/types";
+import { withSignIn } from "../components/SignInPrompt";
 
 function EmptyState({ title, text }: { title?: string; text: string }) {
   return (
@@ -21,7 +22,7 @@ function EmptyState({ title, text }: { title?: string; text: string }) {
   );
 }
 
-export default function WishlistScreen() {
+function WishlistScreen() {
   const { isAuthenticated } = useAuth();
   const { selectedStore } = useStore();
   const { wishlistedIds } = useWishlist();
@@ -43,7 +44,6 @@ export default function WishlistScreen() {
       .finally(() => setLoading(false));
   }, [isAuthenticated, storeId, wishlistedIds]);
 
-  if (!isAuthenticated) return <EmptyState text="Sign in to see your wishlist" />;
   if (loading) {
     return <View style={styles.center}><ActivityIndicator size="large" color={colors.primary} /></View>;
   }
@@ -68,3 +68,5 @@ const styles = StyleSheet.create({
   emptyText: { fontSize: fontSize.md, color: colors.textSecondary, marginTop: spacing.xs },
   list: { paddingTop: spacing.md, paddingBottom: 80 },
 });
+
+export default withSignIn(WishlistScreen, { icon: "heart-outline", title: "Your wishlist", message: "Sign in to save products you love and find them later." });

@@ -16,6 +16,7 @@ import { resolveNotificationDeepLink } from "../lib/notification-helpers";
 import { useNotifications } from "../lib/notification-context";
 import { NotificationDetailSheet } from "../components/NotificationDetailSheet";
 import type { AppNotification } from "../lib/types";
+import { withSignIn } from "../components/SignInPrompt";
 
 const TYPE_CONFIG: Record<string, { icon: keyof typeof Ionicons.glyphMap; bg: string; color: string }> = {
   ORDER_CONFIRMED: { icon: "checkmark-circle", bg: "#dbeafe", color: "#2563eb" },
@@ -51,7 +52,7 @@ function relativeTime(dateStr: string): string {
   return new Date(dateStr).toLocaleDateString("en-IN", { day: "numeric", month: "short" });
 }
 
-export default function NotificationsScreen() {
+function NotificationsScreen() {
   const router = useRouter();
   const { decrementUnread, resetUnreadCount } = useNotifications();
   const [notifications, setNotifications] = useState<AppNotification[]>([]);
@@ -342,3 +343,5 @@ const styles = StyleSheet.create({
     lineHeight: 20,
   },
 });
+
+export default withSignIn(NotificationsScreen, { icon: "notifications-outline", title: "Notifications", message: "Sign in to get order updates and offers." });

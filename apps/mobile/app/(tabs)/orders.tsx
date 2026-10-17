@@ -16,6 +16,7 @@ import { colors, spacing, fontSize } from "../../constants/theme";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { OrderCardSkeleton } from "../../components/SkeletonLoader";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { withSignIn } from "../../components/SignInPrompt";
 
 interface OrderItem {
   id: string;
@@ -41,7 +42,7 @@ const STATUS_COLORS: Record<string, string> = {
   CANCELLED: "#ef4444",
 };
 
-export default function OrdersScreen() {
+function OrdersScreen() {
   const tabBarScroll = useTabBarAutoHide();
   const router = useRouter();
   const toast = useToast();
@@ -238,3 +239,5 @@ const styles = StyleSheet.create({
   },
   pickupBadgeText: { fontSize: 10, fontWeight: "600", color: colors.primary },
 });
+
+export default withSignIn(OrdersScreen, { icon: "receipt-outline", title: "Your orders", message: "Sign in to see your orders and track deliveries." });

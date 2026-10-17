@@ -19,6 +19,7 @@ import { useToast } from "../lib/toast-context";
 import { useMembership, getBestPrice } from "../lib/membership-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { ConfirmSheet } from "../components/ConfirmSheet";
+import { withSignIn } from "../components/SignInPrompt";
 
 interface Prediction {
   orderCount: number;
@@ -77,7 +78,7 @@ interface ReorderData {
   summary: ReorderSummary;
 }
 
-export default function SmartReorderScreen() {
+function SmartReorderScreen() {
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const { selectedStore } = useStore();
@@ -824,3 +825,5 @@ const styles = StyleSheet.create({
     color: "#fff",
   },
 });
+
+export default withSignIn(SmartReorderScreen, { icon: "refresh-outline", title: "Smart reorder", message: "Sign in to restock what you usually buy." });

@@ -13,6 +13,7 @@ import { useAccountSummary } from "../lib/use-account-summary";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { DeletionSummary } from "../components/account/DeletionSummary";
 import { colors, fonts } from "../constants/theme";
+import { withSignIn } from "../components/SignInPrompt";
 
 type Step = "review" | "confirm";
 
@@ -93,7 +94,7 @@ function ErrorBox({ message }: { message: string }) {
   );
 }
 
-export default function DeleteAccountScreen() {
+function DeleteAccountScreen() {
   const { isAuthenticated } = useAuth();
   const { selectedStore } = useStore();
   const summary = useAccountSummary(isAuthenticated, selectedStore?.id);
@@ -176,3 +177,5 @@ const styles = StyleSheet.create({
   keep: { height: 48, alignItems: "center", justifyContent: "center", marginTop: 8 },
   keepText: { fontFamily: fonts.bold, fontSize: 15, color: colors.primary, letterSpacing: 0 },
 });
+
+export default withSignIn(DeleteAccountScreen, { icon: "person-outline", title: "Delete account", message: "Sign in to the account you want to delete." });

@@ -29,6 +29,7 @@ import { RazorpayCheckout } from "../components/RazorpayCheckout";
 import { ProfileGate } from "../components/ProfileGate";
 import { ConfirmSheet } from "../components/ConfirmSheet";
 import type { FulfillmentType, UserAddress, CouponValidation, DeliveryZoneInfo, DeliveryLookupResult, LoyaltyData, MembershipStatus } from "../lib/types";
+import { withSignIn } from "../components/SignInPrompt";
 
 type PaymentMethod = "ONLINE" | "COD";
 type DeliveryMode = "express" | "scheduled";
@@ -49,7 +50,7 @@ interface WalletData {
   transactions: unknown[];
 }
 
-export default function CheckoutScreen() {
+function CheckoutScreen() {
   const { user } = useAuth();
   const router = useRouter();
   const toast = useToast();
@@ -2137,3 +2138,5 @@ const styles = StyleSheet.create({
     color: colors.primary,
   },
 });
+
+export default withSignIn(CheckoutScreen, { icon: "bag-check-outline", title: "Sign in to place your order", message: "Your cart is saved. Sign in with your phone to choose a delivery address and pay." });

@@ -26,6 +26,8 @@ interface AuthState {
   login: (tokens: AuthTokens) => Promise<void>;
   logout: () => void;
   refreshUser: () => Promise<void>;
+  /** Counts sign-outs this session, including a saved session the server refuses at launch */
+  signOuts: number;
 }
 
 const AuthContext = createContext<AuthState | null>(null);
@@ -35,6 +37,7 @@ const REFRESH_TOKEN_KEY = "martly_refresh_token";
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [signOuts, setSignOuts] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState<UserInfo | null>(null);
   const pushTokenRef = useRef<string | null>(null);
@@ -126,6 +129,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setAccessToken(null);
     setUser(null);
     setIsAuthenticated(false);
+    setSignOuts((n) => n + 1);
     clearRecentlyViewed();
     await SecureStore.deleteItemAsync(ACCESS_TOKEN_KEY);
     await SecureStore.deleteItemAsync(REFRESH_TOKEN_KEY);
@@ -144,7 +148,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, isLoading, user, login, logout, refreshUser }}>
+    <AuthContext.Provider value={{ isAuthenticated, isLoading, user, login, logout, refreshUser, signOuts }}>
       {children}
     </AuthContext.Provider>
   );

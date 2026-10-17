@@ -1,8 +1,9 @@
-import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from "react";
+import { createContext, useContext, useState, useCallback, useEffect, useRef, type ReactNode } from "react";
 import * as SecureStore from "expo-secure-store";
 import * as Location from "expo-location";
 import { Linking } from "react-native";
 import { api } from "./api";
+import { useAuth } from "./auth-context";
 import type { Store } from "./types";
 
 const SELECTED_STORE_KEY = "martly_selected_store";
@@ -79,12 +80,18 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     SecureStore.setItemAsync(SELECTED_STORE_KEY, store.id).catch(() => {});
   }, []);
 
+  const { signOuts } = useAuth();
+  const signOutsRef = useRef(signOuts);
+  signOutsRef.current = signOuts;
+
   // Load stores, restore persisted selection, then look up stores near the user
   useEffect(() => {
     (async () => {
+      const signOutsBefore = signOutsRef.current;
       const storeList = await fetchStores();
       const savedId = await SecureStore.getItemAsync(SELECTED_STORE_KEY).catch(() => null);
-      const saved = savedId ? storeList.find((s) => s.id === savedId) : undefined;
+      // A sign-out while this was loading (a refused saved session) means the saved store belonged to someone else
+      const saved = savedId && signOutsRef.current === signOutsBefore ? storeList.find((s) => s.id === savedId) : undefined;
       if (saved) setSelectedStoreState(saved);
 
       const nearby = await loadNearbyStores();
@@ -100,6 +107,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     setSelectedStoreState(null);
     SecureStore.deleteItemAsync(SELECTED_STORE_KEY).catch(() => {});
   }, []);
+
+  // Signing out (or a deleted account) hands the phone to the next shopper, who should choose their own store
+  useEffect(() => {
+    if (signOuts > 0) clearSelectedStore();
+  }, [signOuts, clearSelectedStore]);
 
   const refreshStores = useCallback(async () => {
     await Promise.all([fetchStores(), locationStatus === "granted" ? loadNearbyStores() : null]);

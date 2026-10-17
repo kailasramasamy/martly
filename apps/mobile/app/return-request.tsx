@@ -20,6 +20,7 @@ import { uploadImage } from "../lib/upload";
 import { useToast } from "../lib/toast-context";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../constants/theme";
+import { withSignIn } from "../components/SignInPrompt";
 
 const MAX_IMAGES = 5;
 
@@ -54,7 +55,7 @@ interface SelectedItem {
   unitPrice: number;
 }
 
-export default function ReturnRequestScreen() {
+function ReturnRequestScreen() {
   const { orderId } = useLocalSearchParams<{ orderId: string }>();
   const router = useRouter();
   const toast = useToast();
@@ -558,3 +559,5 @@ const styles = StyleSheet.create({
   submitBtnText: { fontSize: fontSize.md, fontWeight: "700", color: "#fff" },
   submitLoading: { flexDirection: "row", alignItems: "center", gap: 8 },
 });
+
+export default withSignIn(ReturnRequestScreen, { icon: "return-down-back-outline", title: "Return an item", message: "Sign in to request a return." });

@@ -4,6 +4,7 @@ import { useCart } from "./cart-context";
 import { useBasketMode } from "./basket-mode-context";
 import { useMembership, getBestPrice } from "./membership-context";
 import { useWishlist } from "./wishlist-context";
+import { useRequireSignIn } from "./sign-in-context";
 import { useToast } from "./toast-context";
 import { VariantBottomSheet } from "../components/VariantBottomSheet";
 import { ConfirmSheet } from "../components/ConfirmSheet";
@@ -75,6 +76,11 @@ export function ProductActionsProvider({ store, onTrack, children }: {
 }) {
   const { pendingReplace, setPendingReplace, ...cart } = useCartActions(store);
   const { isWishlisted, toggle } = useWishlist();
+  const requireSignIn = useRequireSignIn();
+  const toggleWishlist = useCallback(
+    (productId: string) => requireSignIn(() => toggle(productId), { title: "Sign in to save to your wishlist" }),
+    [requireSignIn, toggle],
+  );
   const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
 
   const addToCart = useCallback((sp: StoreProduct) => {
@@ -84,8 +90,8 @@ export function ProductActionsProvider({ store, onTrack, children }: {
   const trackOpen = useMemo(() => onTrack && ((productId: string) => onTrack(productId, SearchEventType.CLICK)), [onTrack]);
 
   const value = useMemo<ProductActions>(() => ({
-    ...cart, addToCart, trackOpen, storeId: store?.id, showVariants: setSheetVariants, isWishlisted, toggleWishlist: toggle,
-  }), [cart.cartQuantityMap, addToCart, trackOpen, cart.updateQuantity, cart.isMember, store?.id, isWishlisted, toggle]);
+    ...cart, addToCart, trackOpen, storeId: store?.id, showVariants: setSheetVariants, isWishlisted, toggleWishlist,
+  }), [cart.cartQuantityMap, addToCart, trackOpen, cart.updateQuantity, cart.isMember, store?.id, isWishlisted, toggleWishlist]);
 
   return (
     <ProductActionsContext.Provider value={value}>

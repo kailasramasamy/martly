@@ -21,6 +21,7 @@ import { useCart } from "../lib/cart-context";
 import { useToast } from "../lib/toast-context";
 import { ConfirmSheet } from "../components/ConfirmSheet";
 import { colors, fonts } from "../constants/theme";
+import { withSignIn } from "../components/SignInPrompt";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
@@ -158,7 +159,7 @@ function ProductCard({
 }
 
 // ── Main Screen ─────────────────────────────────────
-export default function AIOrderScreen() {
+function AIOrderScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { selectedStore } = useStore();
@@ -1103,3 +1104,5 @@ const s = StyleSheet.create({
     color: "#fff",
   },
 });
+
+export default withSignIn(AIOrderScreen, { icon: "sparkles-outline", title: "Order with AI", message: "Sign in to build your basket by chatting." });

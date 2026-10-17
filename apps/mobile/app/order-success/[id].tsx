@@ -13,6 +13,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useCart } from "../../lib/cart-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
+import { withSignIn } from "../../components/SignInPrompt";
 
 interface OrderData {
   id: string;
@@ -32,7 +33,7 @@ const PAYMENT_METHOD_LABELS: Record<string, string> = {
   COD: "Cash on Delivery",
 };
 
-export default function OrderSuccessScreen() {
+function OrderSuccessScreen() {
   const { id, walletPaid, paymentMethod: paramPaymentMethod, fulfillmentType: paramFulfillmentType } =
     useLocalSearchParams<{
       id: string;
@@ -396,3 +397,5 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
   },
 });
+
+export default withSignIn(OrderSuccessScreen, { icon: "receipt-outline", title: "Your order", message: "Sign in to see this order." });
