@@ -12,6 +12,7 @@ import { promoSummaryInclude, toDetail, toSummary } from "../../services/promo/v
 import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { manualPromoRoutes } from "./manual.js";
+import { productsForTarget } from "../../services/promo/targets.js";
 
 // SUPER_ADMIN sees every organisation's promos; ORG_ADMIN only their own
 const orgFilter = (request: FastifyRequest) => {
@@ -41,8 +42,14 @@ export async function promoRoutes(app: FastifyInstance) {
       app.prisma.promo.findMany({ where, include: promoSummaryInclude, orderBy: [{ createdAt: "desc" }, { id: "asc" }], skip: (page - 1) * pageSize, take: pageSize }),
       app.prisma.promo.count({ where }),
     ]);
+    // A manual promotion has no product list of its own; it covers whatever its target holds
+    const data = await Promise.all(rows.map(async (row) => {
+      const summary = toSummary(row);
+      if (row.kind !== "MANUAL") return summary;
+      return { ...summary, productCount: (await productsForTarget(app.prisma, row.organizationId, row.actionType, row.actionTarget)).length };
+    }));
     return {
-      success: true, data: rows.map(toSummary), meta: { total, page, pageSize, totalPages: Math.ceil(total / pageSize) },
+      success: true, data, meta: { total, page, pageSize, totalPages: Math.ceil(total / pageSize) },
     } satisfies PaginatedResponse<PromoSummary>;
   });
 

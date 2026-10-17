@@ -122,6 +122,7 @@ import { CatalogDraftList } from "./pages/catalog-drafts/list";
 import { CatalogDraftShow } from "./pages/catalog-drafts/show";
 import { PromoList } from "./pages/promos/list";
 import { PromoShow } from "./pages/promos/show";
+import { PromoCreate } from "./pages/promos/create";
 import { BannerList } from "./pages/banners/list";
 import { BannerCreate } from "./pages/banners/create";
 import { BannerEdit } from "./pages/banners/edit";
@@ -326,14 +327,6 @@ export default function App() {
                 meta: { label: "Marketing", icon: <AppstoreAddOutlined /> },
               },
               {
-                name: "banners",
-                list: "/banners",
-                create: "/banners/create",
-                edit: "/banners/edit/:id",
-                show: "/banners/show/:id",
-                meta: { label: "Banners", icon: <PictureOutlined />, parent: "marketing" },
-              },
-              {
                 name: "collections",
                 list: "/collections",
                 create: "/collections/create",
@@ -343,8 +336,17 @@ export default function App() {
               {
                 name: "promos",
                 list: "/promos",
+                create: "/promos/create",
                 show: "/promos/show/:id",
-                meta: { label: "Promos", icon: <RocketOutlined />, parent: "marketing" },
+                meta: { label: "Promotions", icon: <RocketOutlined />, parent: "marketing" },
+              },
+              {
+                name: "banners",
+                list: "/banners",
+                create: "/banners/create",
+                edit: "/banners/edit/:id",
+                show: "/banners/show/:id",
+                meta: { label: "All banners", icon: <PictureOutlined />, parent: "marketing" },
               },
               {
                 name: "festival-events",
@@ -680,6 +682,7 @@ export default function App() {
                 </Route>
                 <Route path="/promos">
                   <Route index element={<PromoList />} />
+                  <Route path="create" element={<PromoCreate />} />
                   <Route path="show/:id" element={<PromoShow />} />
                 </Route>
                 <Route path="/marketing-plan" element={<MarketingPlan />} />

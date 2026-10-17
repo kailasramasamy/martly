@@ -2,10 +2,10 @@ import { useMemo, useState } from "react";
 import { useRouter } from "expo-router";
 import { BannerPlacement, BannerPlacementLabels, BannerActionTypeLabels } from "@martly/shared/constants";
 import { ManageListScreen } from "../../../components/manage/ManageListScreen";
-import { HeaderAction } from "../../../components/manage/HeaderAction";
 import { ListRow } from "../../../components/manage/ui/ListRow";
 import { StatusPill } from "../../../components/manage/ui/StatusPill";
 import { formatDate } from "../../../components/manage/ui/dates";
+import { PROMO_KIND } from "../../../components/manage/marketing/promo-utils";
 import { GroupHeader, TONES } from "../../../components/manage/marketing/common";
 import type { Banner } from "../../../components/manage/marketing/types";
 import { usePagedList } from "../../../lib/manage/use-paged-list";
@@ -49,24 +49,23 @@ export default function BannersScreen() {
 
   return (
     <ManageListScreen<Row>
-      title="Banners"
+      title="All banners"
       list={{ ...list, items: rows }}
       search={{ value: q, onChange: setQ, placeholder: "Search banners" }}
-      headerRight={() => <HeaderAction onPress={() => router.push("/manage/banners/new")} accessibilityLabel="New banner" />}
-      empty={{ icon: "image-outline", title: "No banners yet", message: "Add a banner to promote offers on the home screen." }}
+      empty={{ icon: "image-outline", title: "No banners yet", message: "Banners appear here once a promotion adds them." }}
       renderItem={(row) => {
         if ("header" in row) return <GroupHeader label={row.header} />;
         const tone = row.promo ? TONES.violet : row.isActive ? TONES.green : TONES.slate;
         return (
           <ListRow
             title={row.title}
-            subtitle={row.promo ? `From promotion · ${scopeText(row)}` : `${BannerActionTypeLabels[row.actionType as keyof typeof BannerActionTypeLabels] ?? row.actionType} · ${scopeText(row)}`}
+            subtitle={`${row.promo ? "Promotion" : "Martly"} · ${BannerActionTypeLabels[row.actionType as keyof typeof BannerActionTypeLabels] ?? row.actionType} · ${scopeText(row)}`}
             caption={`Order ${row.sortOrder} · ${scheduleText(row)}`}
             imageUrl={row.imageUrl}
             railColor={tone.color}
-            trailing={<StatusPill label={row.promo ? "Promotion" : row.isActive ? "Active" : "Off"} {...tone} />}
-            onPress={() => router.push(row.promo ? `/manage/promos/${row.promo.id}` : `/manage/banners/${row.id}`)}
-            chevron
+            trailing={<StatusPill label={row.promo ? PROMO_KIND[row.promo.kind].label : row.isActive ? "Active" : "Off"} {...tone} />}
+            onPress={row.promo ? () => router.push(`/manage/promos/${row.promo?.id}`) : undefined}
+            chevron={!!row.promo}
           />
         );
       }}

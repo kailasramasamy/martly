@@ -35,7 +35,7 @@ export interface Banner {
   organization: { id: string; name: string } | null;
   store: { id: string; name: string } | null;
   /** Set when a promotion owns this banner; it is managed from the promotion */
-  promo: { id: string; status: string } | null;
+  promo: { id: string; kind: "AI" | "MANUAL"; status: string } | null;
 }
 
 export interface FestivalCollection {

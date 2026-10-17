@@ -1,3 +1,4 @@
+import { Tag } from "antd";
 import { axiosInstance } from "../../providers/data-provider";
 
 export interface CreatePromoBody {
@@ -21,4 +22,8 @@ export function discountLabel(type: "FLAT" | "PERCENTAGE" | null, value: number 
 export async function createPromo(body: CreatePromoBody): Promise<string> {
   const res = await axiosInstance.post("/promos", body);
   return res.data.data.id;
+}
+
+export function PromoKindTag({ kind }: { kind: "AI" | "MANUAL" }) {
+  return <Tag color={kind === "AI" ? "purple" : "blue"}>{kind === "AI" ? "AI" : "Manual"}</Tag>;
 }

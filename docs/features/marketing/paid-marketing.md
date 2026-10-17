@@ -15,6 +15,16 @@ Banners and AI promotions are paid. Store owners buy a monthly plan (plus top-up
 
 All prices are seed values plus 18% GST, editable in **Admin → Marketing → Ad pricing** (super admin). Edits apply to new purchases only: orders snapshot the price.
 
+## Promotions own banners
+
+A **promotion is the only way for a store to put up banners**; a banner on its own never changes prices, which confused owners ("Ghee on sale" with no discount).
+
+- **AI promotion**: write a brief ("paneer 5%"); the agent picks products, discount, English/Tamil copy and paints the banner. Uses a promotion credit, which also covers that launch banner (`slotFree`).
+- **Manual promotion**: pick what it opens/covers (department/category/subcategory, product, collection, brand, search or link), an optional discount (only for aisles, products, collections and brands; capped by the org's discount cap), duration, and one or more banners (upload or AI image). Uses no promotion credit; each live banner uses a plan banner slot. Launch now, save as Ready, or schedule (`launchAt`; the promo scheduler launches it).
+- **Banners under a promotion**: add more placements (home carousel, category top, mid page…), switch them on/off while live, edit or remove. Launching switches them on (and applies the discount); ending switches them off and restores prices.
+- **All banners** (admin/manage): read-only list with results; promotion banners open their promotion. Only the super admin still creates Martly's own global banners there.
+- Existing standalone store banners were folded into Manual promotions by migration `20261017150000_promotions_own_banners`.
+
 ## Store owner flow
 
 1. **Marketing plan** (admin web or the Manage app) shows the plan in force, usage (banner slots, promotions left, AI images) and plan cards.
@@ -22,7 +32,7 @@ All prices are seed values plus 18% GST, editable in **Admin → Marketing → A
    - Same or cheaper plan bought while one is running → queues after it.
    - Upgrade → starts now; the unused value of the old plan is carried over as extra days at the new price; queued months move back.
 3. **Promotions**: creating one takes a credit *before* the AI runs (plan allowance first, then extra promotions). If drafting fails on our side the credit is refunded automatically. A ready promotion can be redrafted twice for free. Reopening a finished promotion is a new run and takes a credit. Push notifications are only sent on plans that include push.
-4. **Banners**: each active, unexpired store banner (not owned by a promotion) uses a slot. Creating or re-enabling a banner beyond the plan's slots returns 402.
+4. **Banners**: each active, unexpired store banner uses a slot, except an AI promotion's own launch banner. Going live with more banners than the plan's slots returns 402.
 5. **Images**: every banner/promotion image can be **uploaded** or **generated with AI**. Uploads are re-encoded to WebP ≤1600px and cached forever.
    - Upload requirements (shown in the UI, `BANNER_IMAGE_REQUIREMENTS`): landscape 3:2, at least 1200×800 (1800×1200 sharpest), JPG/PNG/WebP up to 5 MB, text and logos in the middle 80%, large bold high-contrast text of about 8 words at most, no borders/phone frames/QR codes/changeable prices.
    - AI banners pick a layout (headline-top, centre-stage, colour panels, poster, flat-lay frame, diagonal band, bottom band) and a visual style (studio colour, overhead natural, 3D render, flat vector, paper collage, festive Indian, pastel minimal, moody dark) that the owner hasn't used in their last few banners, with extra-bold headlines spanning most of the banner. Plain-banner AI images count against the plan's monthly allowance.

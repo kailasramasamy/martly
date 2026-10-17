@@ -1,6 +1,7 @@
 import { List, useTable, EditButton, DeleteButton, ShowButton } from "@refinedev/antd";
 import { useState } from "react";
 import { Link } from "react-router";
+import { useGetIdentity } from "@refinedev/core";
 import { App, Table, Tag, Space, Image, Switch } from "antd";
 import { isAxiosError } from "axios";
 import { BANNER_PLACEMENT_CONFIG, BANNER_ACTION_TYPE_CONFIG } from "../../constants/tag-colors";
@@ -17,6 +18,7 @@ export const BannerList = () => {
     pagination: { pageSize: 25 },
   });
   const { message } = App.useApp();
+  const { data: identity } = useGetIdentity<{ role: string }>();
   const [togglingId, setTogglingId] = useState<string | null>(null);
 
   const handleToggleActive = async (id: string, checked: boolean) => {
@@ -35,7 +37,7 @@ export const BannerList = () => {
   const currentSearch = (filters as any[])?.find((f: any) => f.field === "q")?.value || "";
 
   return (
-    <List>
+    <List canCreate={identity?.role === "SUPER_ADMIN"}>
       <Space style={{ marginBottom: 16 }}>
         <DebouncedSearch
           placeholder="Search banners..."

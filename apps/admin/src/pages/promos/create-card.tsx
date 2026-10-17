@@ -16,7 +16,7 @@ interface Identity {
 
 const PLACEHOLDER = 'e.g. "paneer 5% off", "ghee products", "fresh fruits", "daily deals", "natural soaps"';
 
-function OrganizationField() {
+export function OrganizationField() {
   const { data, isLoading } = useList<{ id: string; name: string }>({ resource: "organizations", pagination: { pageSize: 100 } });
   return (
     <Form.Item label="Organization" name="organizationId" rules={[{ required: true, message: "Pick an organization" }]}>

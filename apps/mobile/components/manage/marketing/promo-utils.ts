@@ -11,6 +11,11 @@ export const PROMO_STATUS: Record<PromoSummary["status"], Tone> = {
   DISCARDED: { label: "Discarded", ...TONES.slate },
 };
 
+export const PROMO_KIND: Record<PromoSummary["kind"], Tone> = {
+  AI: { label: "AI", ...TONES.violet },
+  MANUAL: { label: "Manual", ...TONES.slate },
+};
+
 export function discountLabel(type: PromoSummary["discountType"], value: number | null): string {
   if (!type || value == null) return "No discount";
   return type === "PERCENTAGE" ? `${value}% off` : `${formatINR(value)} off`;

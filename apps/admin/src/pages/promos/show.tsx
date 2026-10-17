@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useState } from "react";
 import { Show } from "@refinedev/antd";
 import { useNavigation, useParsed } from "@refinedev/core";
-import { Spin, Tag, Typography } from "antd";
+import { Spin } from "antd";
 import type { PromoDetail } from "@martly/shared/types";
-import { PROMO_STATUS_CONFIG } from "../../constants/tag-colors";
 import { axiosInstance } from "../../providers/data-provider";
+import { ManualSetup, PromoHeader } from "./promo-details";
 import { PromoActions, useAction } from "./promo-actions";
 import { DraftingProgress, PromoPreview } from "./promo-preview";
+import { PromoBanners } from "./promo-banners";
 import { PromoProducts } from "./promo-products";
 
 const POLL_MS = 2000;
@@ -61,12 +62,13 @@ export const PromoShow = () => {
         <PromoActions promo={promo} busy={busy} run={run} onDiscarded={() => list("promos")} onRetried={(newId) => show("promos", newId)} />
       )}
     >
-      <Tag color={PROMO_STATUS_CONFIG[promo.status]?.color} style={{ marginBottom: 8 }}>{PROMO_STATUS_CONFIG[promo.status]?.label}</Tag>
-      <Typography.Paragraph type="secondary">{promo.brief}</Typography.Paragraph>
+      <PromoHeader promo={promo} />
+      {promo.kind === "MANUAL" && <ManualSetup promo={promo} />}
       {promo.status === "DRAFTING" && <DraftingProgress log={promo.log} />}
       {PREVIEW_STATUSES.includes(promo.status) && (
         <>
-          <PromoPreview promo={promo} />
+          {promo.kind === "AI" && <PromoPreview promo={promo} />}
+          <PromoBanners promo={promo} onChanged={() => void reload()} />
           <PromoProducts promo={promo} busy={busy !== null} onRemove={removeProduct} />
         </>
       )}

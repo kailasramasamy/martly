@@ -65,7 +65,7 @@ const MODULE_GROUPS: ModuleGroup[] = [
     modules: [
       { resource: "coupons", label: "Coupons", icon: "ticket-outline", href: "/manage/coupons" },
       { resource: "promos", label: "Promotions", icon: "megaphone-outline", href: "/manage/promos" },
-      { resource: "banners", label: "Banners", icon: "image-outline", href: "/manage/banners" },
+      { resource: "banners", label: "All banners", icon: "image-outline", href: "/manage/banners" },
       { resource: "festival-events", label: "Festival calendar", icon: "calendar-outline", href: "/manage/festival-events" },
       { resource: "notification-send", label: "Push notifications", icon: "notifications-outline", href: "/manage/notification-send" },
       { resource: "loyalty-settings", label: "Loyalty", icon: "medal-outline", href: "/manage/loyalty-settings" },

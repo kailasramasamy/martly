@@ -1,7 +1,8 @@
 import { Create, useForm } from "@refinedev/antd";
 import { Form, Input, Select, InputNumber, Switch, DatePicker, Card, Row, Col, Cascader } from "antd";
 import { BannerPlacementLabels, BannerActionTypeLabels } from "@martly/shared/constants";
-import { BannerImageCard, BannerSlotsNote, useBannerEntitlements, useBannerSaveErrors } from "./banner-shared";
+import { Navigate } from "react-router";
+import { BannerImageCard, useBannerEntitlements, useBannerSaveErrors } from "./banner-shared";
 import { useList } from "@refinedev/core";
 import { CategoryTargetField, useCategoryTree, withCategoryTarget } from "./category-target";
 
@@ -12,7 +13,7 @@ export const BannerCreate = () => {
   const { formProps, saveButtonProps, form } = useForm({ resource: "banners", ...useBannerSaveErrors() });
   const actionType = Form.useWatch("actionType", form);
   const placement = Form.useWatch("placement", form);
-  const { isOrgUser, entitlements } = useBannerEntitlements();
+  const { isOrgUser } = useBannerEntitlements();
 
   const cascaderOptions = useCategoryTree();
 
@@ -34,6 +35,9 @@ export const BannerCreate = () => {
     delete values.categoryPath;
     originalOnFinish?.(withCategoryTarget(values));
   };
+
+  // Stores start from a promotion; only the platform admin creates standalone banners
+  if (isOrgUser) return <Navigate to="/promos/create" replace />;
 
   return (
     <Create saveButtonProps={saveButtonProps}>
@@ -94,7 +98,7 @@ export const BannerCreate = () => {
                   </Form.Item>
                 </Col>
                 <Col span={12}>
-                  <Form.Item name="isActive" label="Active" valuePropName="checked" extra={isOrgUser && <BannerSlotsNote slots={entitlements?.bannerSlots} />}>
+                  <Form.Item name="isActive" label="Active" valuePropName="checked">
                     <Switch />
                   </Form.Item>
                 </Col>
@@ -103,7 +107,7 @@ export const BannerCreate = () => {
           </Col>
 
           <Col xs={24} lg={10}>
-            <BannerImageCard form={form} aiImages={isOrgUser ? entitlements?.aiImages : undefined} />
+            <BannerImageCard form={form} />
 
             <Card title="Targeting" size="small" style={{ marginBottom: 16 }}>
               <Form.Item name="storeId" label="Store (optional)">

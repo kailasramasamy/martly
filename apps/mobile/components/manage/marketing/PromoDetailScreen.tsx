@@ -11,8 +11,9 @@ import { useAction } from "../../../lib/manage/use-action";
 import { useResource } from "../../../lib/manage/use-resource";
 import { colors, fonts } from "../../../constants/theme";
 import { ConfirmDialog } from "../ui/ConfirmDialog";
-import { PROMO_STATUS, discountLabel } from "./promo-utils";
-import { PromoResultsCard, RedraftCard } from "./PromoExtras";
+import { PROMO_KIND, PROMO_STATUS, discountLabel } from "./promo-utils";
+import { ManualSummary, PromoResultsCard, RedraftCard } from "./PromoExtras";
+import { PromoBannersSection } from "./PromoBannersSection";
 import { BannerAndMessage, DraftingProgress, Performance, PromoProducts } from "./PromoSections";
 
 const POLL_MS = 2000;
@@ -78,21 +79,27 @@ interface BodyProps {
   busy: boolean;
   onRemove: (productId: string) => void;
   onRedraft: () => void;
+  onChange: (promo: PromoDetail) => void;
 }
 
-function PromoBody({ promo, busy, onRemove, onRedraft }: BodyProps) {
+function PromoBody({ promo, busy, onRemove, onRedraft, onChange }: BodyProps) {
+  const isAi = promo.kind === "AI";
   return (
     <>
       <View style={styles.head}>
-        <StatusPill {...PROMO_STATUS[promo.status]} dot={promo.status === "LIVE"} />
+        <View style={styles.pills}>
+          <StatusPill {...PROMO_STATUS[promo.status]} dot={promo.status === "LIVE"} />
+          <StatusPill {...PROMO_KIND[promo.kind]} />
+        </View>
         <Text style={styles.brief}>{promo.brief}</Text>
       </View>
       {promo.status === "FAILED" ? <SectionCard title="Drafting failed"><Text style={styles.error}>{promo.failureReason ?? "Unknown error"}</Text></SectionCard> : null}
       {promo.status === "DRAFTING" ? <DraftingProgress log={promo.log} /> : null}
       {PREVIEW_STATUSES.includes(promo.status) ? (
         <>
-          <BannerAndMessage promo={promo} />
-          {promo.status === "READY" && promo.redraftsLeft > 0 ? <RedraftCard left={promo.redraftsLeft} busy={busy} onRedraft={onRedraft} /> : null}
+          {isAi ? <BannerAndMessage promo={promo} /> : <ManualSummary promo={promo} />}
+          <PromoBannersSection promo={promo} onChange={onChange} />
+          {isAi && promo.status === "READY" && promo.redraftsLeft > 0 ? <RedraftCard left={promo.redraftsLeft} busy={busy} onRedraft={onRedraft} /> : null}
           {promo.status === "LIVE" || promo.status === "ENDED" ? <PromoResultsCard promo={promo} /> : null}
           <Performance promo={promo} />
           {promo.assumptions.length > 0 ? <SectionCard title="Assumptions">{promo.assumptions.map((a) => <Text key={a} style={styles.assumption}>{`\u2022 ${a}`}</Text>)}</SectionCard> : null}
@@ -118,7 +125,7 @@ export function PromoDetailScreen({ id }: { id: string }) {
   const actions = promo && ACTIONABLE.includes(promo.status) ? <PromoActions promo={promo} running={a.running} onPending={a.setPending} onRetry={a.retry} /> : undefined;
   return (
     <ManageStackScreen title={promo?.title ?? promo?.brief ?? "Promotion"} loading={loading} error={error} onRetry={reload} onRefresh={reload} actions={actions}>
-      {promo ? <PromoBody promo={promo} busy={a.running} onRemove={a.removeProduct} onRedraft={a.redraft} /> : null}
+      {promo ? <PromoBody promo={promo} busy={a.running} onRemove={a.removeProduct} onRedraft={a.redraft} onChange={setData} /> : null}
       {promo && pending ? (
         <ConfirmDialog visible title={CONFIRM[pending].title} message={confirmMessage(pending, promo)} confirmLabel={CONFIRM[pending].label} confirmVariant={CONFIRM[pending].primary ? "primary" : "danger"} running={a.running} onConfirm={() => a.perform(pending)} onClose={() => a.setPending(null)} />
       ) : null}
@@ -145,7 +152,7 @@ function PromoActions({ promo, running, onPending, onRetry }: ActionsProps) {
   }
   if (promo.status === "LIVE") return <Button label="End now" variant="danger" onPress={() => onPending("end")} style={flex} />;
   if (promo.status === "ENDED") return <Button label="Use again" onPress={() => onPending("reopen")} style={flex} />;
-  if (promo.status === "FAILED") {
+  if (promo.status === "FAILED" && promo.kind === "AI") {
     return (
       <>
         <Button label="Discard" variant="danger" onPress={() => onPending("discard")} style={flex} />
@@ -158,6 +165,7 @@ function PromoActions({ promo, running, onPending, onRetry }: ActionsProps) {
 
 const styles = StyleSheet.create({
   head: { gap: 8 },
+  pills: { flexDirection: "row", gap: 6 },
   brief: { fontFamily: fonts.medium, fontSize: 14.5, color: colors.textSecondary, lineHeight: 20 },
   error: { fontFamily: fonts.medium, fontSize: 14, color: colors.error },
   assumption: { fontFamily: fonts.medium, fontSize: 13.5, color: colors.text, marginBottom: 4 },

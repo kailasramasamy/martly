@@ -4,8 +4,7 @@ import { Image, Space, Table, Tag, Typography } from "antd";
 import dayjs from "dayjs";
 import type { PromoSummary } from "@martly/shared/types";
 import { PROMO_STATUS_CONFIG } from "../../constants/tag-colors";
-import { PromoCreateCard } from "./create-card";
-import { discountLabel } from "./promo-utils";
+import { discountLabel, PromoKindTag } from "./promo-utils";
 
 const { Text } = Typography;
 const THUMB_WIDTH = 96;
@@ -22,8 +21,7 @@ export const PromoList = () => {
   const { show } = useNavigation();
 
   return (
-    <List title="Promos" breadcrumb={false}>
-      <PromoCreateCard />
+    <List title="Promotions" breadcrumb={false}>
       <Table<PromoSummary>
         {...tableProps}
         rowKey="id"
@@ -31,7 +29,7 @@ export const PromoList = () => {
       >
         <Table.Column<PromoSummary> title="Banner" dataIndex="imageUrl" width={THUMB_WIDTH + 32} render={(url) => <PromoThumb url={url} />} />
         <Table.Column<PromoSummary>
-          title="Promo"
+          title="Promotion"
           render={(_, r) =>
             r.title ? (
               <Space direction="vertical" size={0}>
@@ -43,6 +41,7 @@ export const PromoList = () => {
             )
           }
         />
+        <Table.Column<PromoSummary> title="Kind" dataIndex="kind" render={(kind: PromoSummary["kind"]) => <PromoKindTag kind={kind} />} />
         <Table.Column<PromoSummary>
           title="Status"
           dataIndex="status"

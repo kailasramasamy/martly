@@ -22,9 +22,9 @@ function priceChangeSummary(changes: NonNullable<PromoDetail["priceChanges"]>): 
 }
 
 export function PromoProducts({ promo, busy, onRemove }: { promo: PromoDetail; busy: boolean; onRemove: (productId: string) => void }) {
-  const removable = promo.status === "READY";
+  const removable = promo.status === "READY" && promo.kind === "AI";
   return (
-    <Card title={sectionTitle(<ShoppingOutlined />, `Products (${promo.products.length})`)} size="small">
+    <Card title={sectionTitle(<ShoppingOutlined />, promo.productCount > promo.products.length ? `Products (first ${promo.products.length} of ${promo.productCount})` : `Products (${promo.productCount})`)} size="small">
       {promo.priceChanges && <Text type="secondary" style={{ display: "block", marginBottom: 12 }}>{priceChangeSummary(promo.priceChanges)}</Text>}
       <Table<PromoProduct> dataSource={promo.products} rowKey="productId" pagination={false} size="small">
         <Table.Column<PromoProduct> title="" dataIndex="imageUrl" width={56} render={(url) => (url ? <Image src={url} width={40} preview={false} /> : null)} />
