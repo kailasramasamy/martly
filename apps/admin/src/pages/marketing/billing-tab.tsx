@@ -78,7 +78,7 @@ function BillingCard({ profile, canEdit, onSaved }: BillingTabProps) {
   );
 }
 
-function InvoicesCard() {
+function InvoicesCard({ purchases }: { purchases: number }) {
   const { notification } = App.useApp();
   const [rows, setRows] = useState<Invoice[]>([]);
   const [loading, setLoading] = useState(true);
@@ -88,7 +88,7 @@ function InvoicesCard() {
       .then((res) => setRows(res.data.data))
       .catch((err) => notification.error({ message: errorMessage(err, "Could not load invoices") }))
       .finally(() => setLoading(false));
-  }, [notification]);
+  }, [notification, purchases]);
 
   const columns = [
     { title: "Invoice", dataIndex: "number", render: (v: string | null) => v ?? "—" },
@@ -105,11 +105,11 @@ function InvoicesCard() {
   );
 }
 
-export function BillingTab(props: BillingTabProps) {
+export function BillingTab({ purchases, ...props }: BillingTabProps & { purchases: number }) {
   return (
     <>
       <BillingCard {...props} />
-      <InvoicesCard />
+      <InvoicesCard purchases={purchases} />
     </>
   );
 }

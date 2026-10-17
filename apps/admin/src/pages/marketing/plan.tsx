@@ -38,6 +38,12 @@ export const MarketingPlan = () => {
   const error = entitlementsError ?? catalogueError;
   const { data: buyAccess } = useCan({ resource: "marketing-plan", action: "create" });
   const { data: brandAdsAccess } = useCan({ resource: "brand-ads", action: "edit" });
+  // Bumped after each purchase so the invoices list fetches the new invoice
+  const [purchases, setPurchases] = useState(0);
+  const onPaid = async () => {
+    setPurchases((n) => n + 1);
+    await reload();
+  };
 
   if (error) return <Alert type="warning" showIcon message={error} />;
   if (!entitlements) return <Spin style={{ display: "block", margin: "64px auto" }} />;
@@ -50,9 +56,9 @@ export const MarketingPlan = () => {
           {
             key: "plan",
             label: "Plan",
-            children: <PlanTab entitlements={entitlements} products={products} profile={profile} canBuy={!!buyAccess?.can} onProfileSaved={setProfile} onPaid={reload} />,
+            children: <PlanTab entitlements={entitlements} products={products} profile={profile} canBuy={!!buyAccess?.can} onProfileSaved={setProfile} onPaid={onPaid} />,
           },
-          { key: "billing", label: "Billing & invoices", children: <BillingTab profile={profile} canEdit={!!buyAccess?.can} onSaved={setProfile} /> },
+          { key: "billing", label: "Billing & invoices", children: <BillingTab profile={profile} canEdit={!!buyAccess?.can} onSaved={setProfile} purchases={purchases} /> },
           { key: "results", label: "Results", children: <ResultsTab /> },
           { key: "brand-ads", label: "Brand ads", children: <BrandAdsTab canEdit={!!brandAdsAccess?.can} /> },
         ]}
