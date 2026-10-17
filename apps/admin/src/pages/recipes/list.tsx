@@ -35,6 +35,7 @@ interface RecipeRecord {
 export const RecipeList = () => {
   const { tableProps, searchFormProps } = useTable<RecipeRecord, HttpError, { q: string }>({
     resource: "recipes",
+    pagination: { pageSize: 25 },
     sorters: { initial: [{ field: "sortOrder", order: "asc" }] },
     onSearch: (values) => [
       { field: "q", operator: "eq", value: values.q },

@@ -21,6 +21,7 @@ export const OrderList = () => {
 
   const { tableProps, setFilters, filters } = useTable({
     resource: "orders",
+    pagination: { pageSize: 25 },
     syncWithLocation: true,
   });
 

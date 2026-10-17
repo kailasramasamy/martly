@@ -75,7 +75,7 @@ export const FeaturedProductsPage = () => {
   const { tableProps, tableQuery } = useTable<StoreProductRecord>({
     resource: "store-products",
     syncWithLocation: false,
-    pagination: { pageSize: 20 },
+    pagination: { pageSize: 25 },
     filters: { permanent: permanentFilters },
   });
 

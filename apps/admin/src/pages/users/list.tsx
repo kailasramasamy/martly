@@ -82,6 +82,7 @@ export const UserList = () => {
     { q: string; role: string }
   >({
     resource: "users",
+    pagination: { pageSize: 25 },
     onSearch: (values) => [
       { field: "q", operator: "contains", value: values.q },
       { field: "role", operator: "eq", value: values.role },

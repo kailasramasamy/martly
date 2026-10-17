@@ -55,7 +55,7 @@ export function CampaignList({ scope }: { scope: CampaignScope }) {
         <Select allowClear placeholder="Status" options={statusOptions} value={status} onChange={setStatus} style={{ width: 180 }} />
         {scope.mode === "platform" && <BrandSelect allowClear value={brandId} onChange={setBrandId} placeholder="Brand" />}
       </Space>
-      <Table size="small" rowKey="id" loading={loading} dataSource={rows} columns={columns} pagination={{ pageSize: 20 }} />
+      <Table size="small" rowKey="id" loading={loading} dataSource={rows} columns={columns} pagination={{ pageSize: 25 }} />
     </List>
   );
 }

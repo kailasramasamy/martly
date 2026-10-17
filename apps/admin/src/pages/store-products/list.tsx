@@ -46,6 +46,7 @@ export const StoreProductList = () => {
     { q: string; storeId: string }
   >({
     resource: "store-products",
+    pagination: { pageSize: 25 },
     onSearch: (values) => [
       { field: "q", operator: "contains", value: values.q },
       { field: "storeId", operator: "eq", value: values.storeId },

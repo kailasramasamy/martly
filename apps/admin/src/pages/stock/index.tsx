@@ -133,7 +133,7 @@ export const StockPage = () => {
   const { tableProps, tableQuery } = useTable({
     resource: "store-products",
     syncWithLocation: false,
-    pagination: { pageSize: 10 },
+    pagination: { pageSize: 25 },
     filters: {
       permanent: [
         ...(stockFilter !== "all"

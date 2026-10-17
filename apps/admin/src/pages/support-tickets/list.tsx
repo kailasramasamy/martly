@@ -32,7 +32,7 @@ export const SupportTicketList = () => {
   const [loading, setLoading] = useState(true);
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
-  const [pageSize] = useState(20);
+  const [pageSize] = useState(25);
   const [status, setStatus] = useState<string | undefined>();
   const [search, setSearch] = useState("");
   const [stats, setStats] = useState<TicketStats>({ total: 0, open: 0, resolved: 0, closed: 0 });

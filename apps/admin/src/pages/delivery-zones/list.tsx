@@ -3,7 +3,7 @@ import { Table, Tag, Space, Switch } from "antd";
 import { useUpdate } from "@refinedev/core";
 
 export const DeliveryZoneList = () => {
-  const { tableProps } = useTable({ resource: "delivery-zones", syncWithLocation: true });
+  const { tableProps } = useTable({ resource: "delivery-zones", syncWithLocation: true, pagination: { pageSize: 25 } });
   const { mutate: update } = useUpdate();
 
   return (

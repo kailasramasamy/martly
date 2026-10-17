@@ -18,6 +18,7 @@ export const SubscriptionList = () => {
 
   const { tableProps, setFilters, filters } = useTable({
     resource: "subscriptions/admin",
+    pagination: { pageSize: 25 },
     syncWithLocation: true,
   });
 

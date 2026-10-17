@@ -99,7 +99,7 @@ export const BrandPartners = () => {
 
   return (
     <List title="Brand partners" headerButtons={<Button type="primary" icon={<UserAddOutlined />} onClick={() => setCreating(true)}>New brand login</Button>}>
-      <Table size="small" rowKey="id" loading={loading} dataSource={rows} columns={columns} pagination={{ pageSize: 20 }} />
+      <Table size="small" rowKey="id" loading={loading} dataSource={rows} columns={columns} pagination={{ pageSize: 25 }} />
       <NewPartnerModal open={creating} onClose={() => setCreating(false)} onCreated={load} />
     </List>
   );

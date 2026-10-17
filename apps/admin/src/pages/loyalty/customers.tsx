@@ -42,7 +42,7 @@ export const LoyaltyCustomers = () => {
   const fetchData = useCallback(async () => {
     setLoading(true);
     try {
-      const params = new URLSearchParams({ page: String(page), pageSize: "20" });
+      const params = new URLSearchParams({ page: String(page), pageSize: "25" });
       if (search.trim()) params.set("q", search.trim());
       const res = await axiosInstance.get(`/loyalty/customers?${params}`);
       setBalances(res.data.data);
@@ -121,7 +121,7 @@ export const LoyaltyCustomers = () => {
           pagination={{
             current: page,
             total,
-            pageSize: 20,
+            pageSize: 25,
             onChange: setPage,
             showTotal: (t) => `${t} customers`,
           }}

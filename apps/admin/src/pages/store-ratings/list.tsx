@@ -27,7 +27,7 @@ export const StoreRatingList = () => {
 
   useEffect(() => {
     setLoading(true);
-    const params = new URLSearchParams({ page: String(page), pageSize: "20" });
+    const params = new URLSearchParams({ page: String(page), pageSize: "25" });
     if (storeId) params.set("storeId", storeId);
 
     axiosInstance.get(`/store-ratings/admin?${params}`)
@@ -125,7 +125,7 @@ export const StoreRatingList = () => {
           pagination={{
             total,
             current: page,
-            pageSize: 20,
+            pageSize: 25,
             onChange: setPage,
             showTotal: (t) => `${t} ratings`,
           }}

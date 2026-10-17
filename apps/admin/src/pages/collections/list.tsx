@@ -35,6 +35,7 @@ const getStatus = (r: CollectionRecord) => {
 export const CollectionList = () => {
   const { tableProps, searchFormProps } = useTable<CollectionRecord, HttpError, { q: string }>({
     resource: "collections",
+    pagination: { pageSize: 25 },
     sorters: { initial: [{ field: "sortOrder", order: "asc" }] },
     onSearch: (values) => [
       { field: "q", operator: "eq", value: values.q },

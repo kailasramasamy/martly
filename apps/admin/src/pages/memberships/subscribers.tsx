@@ -29,7 +29,7 @@ export const MembershipSubscribers = () => {
   const fetchSubscribers = useCallback(async () => {
     try {
       setLoading(true);
-      const params = new URLSearchParams({ page: String(page), pageSize: "20" });
+      const params = new URLSearchParams({ page: String(page), pageSize: "25" });
       if (search) params.set("search", search);
       const res = await axiosInstance.get(`/memberships/subscribers?${params}`);
       setSubscribers(res?.data?.data ?? []);
@@ -57,7 +57,7 @@ export const MembershipSubscribers = () => {
         rowKey="id"
         size="small"
         loading={loading}
-        pagination={{ current: page, total, pageSize: 20, onChange: setPage, showTotal: (t) => `${t} subscribers` }}
+        pagination={{ current: page, total, pageSize: 25, onChange: setPage, showTotal: (t) => `${t} subscribers` }}
       >
         <Table.Column title="Customer" render={(_, rec: Subscriber) => (
           <div>

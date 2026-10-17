@@ -24,6 +24,7 @@ export const CustomerList = () => {
     { q: string }
   >({
     resource: "users",
+    pagination: { pageSize: 25 },
     filters: {
       permanent: [{ field: "role", operator: "eq", value: "CUSTOMER" }],
     },

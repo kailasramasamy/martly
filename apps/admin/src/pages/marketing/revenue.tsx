@@ -8,7 +8,7 @@ import { sectionTitle } from "../../theme";
 import { formatRupees } from "../promos/promo-utils";
 import { errorMessage, invoiceHref } from "./utils";
 
-const PAGE_SIZE = 20;
+const PAGE_SIZE = 25;
 const STATUS_COLORS: Record<string, string> = { PAID: "green", PENDING: "gold", FAILED: "red", CANCELLED: "default", REFUNDED: "orange" };
 const statusOptions = Object.keys(STATUS_COLORS).map((s) => ({ value: s, label: s.charAt(0) + s.slice(1).toLowerCase() }));
 const kindOptions = Object.entries(AdProductKindLabels).map(([value, label]) => ({ value, label }));

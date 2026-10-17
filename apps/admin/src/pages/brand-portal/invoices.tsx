@@ -42,7 +42,7 @@ export const BrandInvoices = () => {
 
   return (
     <List title="Invoices">
-      <Table size="small" rowKey="id" loading={loading} dataSource={rows} columns={columns} pagination={{ pageSize: 20 }} />
+      <Table size="small" rowKey="id" loading={loading} dataSource={rows} columns={columns} pagination={{ pageSize: 25 }} />
     </List>
   );
 };

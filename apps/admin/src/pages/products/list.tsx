@@ -144,6 +144,7 @@ const ProductsTableTab = ({
     { q: string; categoryPath: string[]; organizationId: string }
   >({
     resource: "products",
+    pagination: { pageSize: 25 },
     syncWithLocation: false,
     filters: { permanent: permanentFilters },
     onSearch: (values) => {

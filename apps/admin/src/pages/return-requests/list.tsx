@@ -11,6 +11,7 @@ export const ReturnRequestList = () => {
 
   const { tableProps, setFilters, filters } = useTable({
     resource: "return-requests",
+    pagination: { pageSize: 25 },
     syncWithLocation: true,
   });
 

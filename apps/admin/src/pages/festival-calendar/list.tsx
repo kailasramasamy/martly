@@ -86,6 +86,7 @@ const CuratedStatus = ({ collections }: { collections: FestivalCollection[] }) =
 export const FestivalList = () => {
   const { tableProps, tableQueryResult, setFilters } = useTable<FestivalRecord, HttpError>({
     resource: "festival-events",
+    pagination: { pageSize: 25 },
   });
   const { message } = App.useApp();
   const navigate = useNavigate();

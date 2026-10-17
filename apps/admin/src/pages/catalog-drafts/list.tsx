@@ -109,7 +109,7 @@ function DraftTable({ rows, loading, pagination }: { rows: CatalogDraftSummary[]
 export const CatalogDraftList = () => {
   const { token } = theme.useToken();
   const [page, setPage] = useState(1);
-  const [pageSize, setPageSize] = useState(20);
+  const [pageSize, setPageSize] = useState(25);
   const [status, setStatus] = useState<string>();
   const [storeId, setStoreId] = useState<string>();
   const storeOptions = useStoreOptions();

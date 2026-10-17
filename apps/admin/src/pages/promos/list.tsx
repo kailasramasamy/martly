@@ -18,7 +18,7 @@ function PromoThumb({ url }: { url: string | null }) {
 }
 
 export const PromoList = () => {
-  const { tableProps } = useTable<PromoSummary>({ resource: "promos" });
+  const { tableProps } = useTable<PromoSummary>({ resource: "promos", pagination: { pageSize: 25 } });
   const { show } = useNavigation();
 
   return (

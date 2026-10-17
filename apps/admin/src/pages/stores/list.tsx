@@ -20,6 +20,7 @@ export const StoreList = () => {
     { q: string; status: string }
   >({
     resource: "stores",
+    pagination: { pageSize: 25 },
     onSearch: (values) => [
       { field: "q", operator: "contains", value: values.q },
       { field: "status", operator: "eq", value: values.status },

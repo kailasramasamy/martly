@@ -18,6 +18,7 @@ export const StockCountList = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const { tableProps, setFilters, filters } = useTable({
     resource: "stock/counts",
+    pagination: { pageSize: 25 },
     syncWithLocation: true,
   });
 

@@ -10,6 +10,7 @@ export const OrganizationList = () => {
     { q: string }
   >({
     resource: "organizations",
+    pagination: { pageSize: 25 },
     onSearch: (values) => [{ field: "q", operator: "contains", value: values.q }],
   });
 

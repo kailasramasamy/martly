@@ -27,7 +27,7 @@ export const TemplateList = () => {
   const [loading, setLoading] = useState(true);
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
-  const [pageSize, setPageSize] = useState(20);
+  const [pageSize, setPageSize] = useState(25);
   const [search, setSearch] = useState("");
 
   const fetchTemplates = useCallback(async () => {

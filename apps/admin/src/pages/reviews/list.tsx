@@ -9,6 +9,7 @@ const STATUS_COLORS: Record<string, string> = { PENDING: "orange", APPROVED: "gr
 export const ReviewList = () => {
   const { tableProps } = useTable({
     resource: "reviews/moderation",
+    pagination: { pageSize: 25 },
     syncWithLocation: true,
   });
   const { mutate } = useCustomMutation();
