@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
     color: "rgba(255, 255, 255, 0.85)",
     position: "absolute",
-    top: 79,
+    top: 97,
     width: 300,
     textAlign: "center",
     fontWeight: "500",
