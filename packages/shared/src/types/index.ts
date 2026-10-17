@@ -278,4 +278,10 @@ export interface PromoDetail extends PromoSummary {
   /** What launch changes (READY) or changed (LIVE/ENDED) */
   priceChanges: { listings: number; stores: number; keptExisting: number } | null;
   pushSent: { recipients: number; at: string } | null;
+  /** How the promotion was paid for: the plan's allowance, a bought top-up, a brand, or Martly itself */
+  chargedFrom: "PLAN" | "TOPUP" | "BRAND" | "PLATFORM" | null;
+  /** The owner uploaded the banner instead of having the AI paint it */
+  uploadedImage: boolean;
+  /** Free redrafts still available while the promo is READY */
+  redraftsLeft: number;
 }

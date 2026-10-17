@@ -2,6 +2,7 @@ import type { PromoDetail, PromoProduct, PromoSummary } from "@martly/shared/typ
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { describeProducts, type ProductFacts } from "./catalog.js";
 import { planChanges } from "./pricing.js";
+import { getMarketingConfig } from "../marketing/config.js";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -78,5 +79,7 @@ export async function toDetail(prisma: PrismaClient, promoId: string, organizati
     products: facts.map((f) => toProduct(f, p.discountType, value)),
     priceChanges: await priceChanges(prisma, p, productIds),
     pushSent: p.campaign?.sentAt ? { recipients: p.campaign.recipientCount, at: p.campaign.sentAt.toISOString() } : null,
+    chargedFrom: p.chargedFrom, uploadedImage: Boolean(p.uploadedImageUrl),
+    redraftsLeft: Math.max(0, (await getMarketingConfig(prisma)).freeRegenerations - p.regenerations),
   };
 }
