@@ -19,14 +19,14 @@ interface PlanTabProps {
   onPaid: () => Promise<void>;
 }
 
-function Meter({ label, used, total, detail }: { label: string; used: number; total: number | null; detail?: string }) {
+function Meter({ label, used, total, detail }: { label: string; used: number; total: number; detail?: string }) {
   return (
     <div style={{ marginBottom: 12 }}>
       <Space style={{ justifyContent: "space-between", width: "100%" }}>
         <Text>{label}</Text>
-        <Text type="secondary">{total === null ? `${used} used · Unlimited` : `${used} / ${total}`}{detail}</Text>
+        <Text type="secondary">{`${used} / ${total}`}{detail}</Text>
       </Space>
-      {total !== null && <Progress percent={total ? Math.min(100, Math.round((used / total) * 100)) : 100} showInfo={false} size="small" />}
+      <Progress percent={total ? Math.min(100, Math.round((used / total) * 100)) : 100} showInfo={false} size="small" />
     </div>
   );
 }
@@ -39,7 +39,6 @@ function UsageCard({ e }: { e: Entitlements }) {
         <Title level={4} style={{ margin: 0 }}>{e.plan?.name ?? "Free plan"}</Title>
         {e.paidThrough ? <Tag color="teal">Paid through {dayjs(e.paidThrough).format("D MMM YYYY")}</Tag> : <Tag>Free plan</Tag>}
       </Space>
-      <Meter label="Banner slots" used={e.bannerSlots.used} total={e.bannerSlots.total} />
       <Meter
         label="Promotions left this month"
         used={promotions.planTotal - promotions.planLeft}
@@ -54,7 +53,6 @@ function UsageCard({ e }: { e: Entitlements }) {
 
 function planFeatures(p: AdProduct): string[] {
   return [
-    p.bannerSlots === null ? "Unlimited banner slots" : `${p.bannerSlots} banner slots`,
     `${p.promotionCredits} promotions a month`,
     `${p.aiImagesPerMonth} AI images a month`,
     p.pushIncluded ? "Push notifications included" : "No push notifications",

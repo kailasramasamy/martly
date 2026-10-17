@@ -94,15 +94,6 @@ export const LOYALTY_TRANSACTION_TYPE_CONFIG: Record<string, { color: string; la
   ADJUSTMENT: { color: "blue", label: "Adjustment" },
 };
 
-export const BANNER_PLACEMENT_CONFIG: Record<string, { color: string; label: string }> = {
-  HERO_CAROUSEL: { color: "blue", label: "Hero Carousel" },
-  CATEGORY_STRIP: { color: "cyan", label: "Category Strip" },
-  MID_PAGE: { color: "purple", label: "Mid Page" },
-  CATEGORY_TOP: { color: "geekblue", label: "Category Top" },
-  CART_UPSELL: { color: "orange", label: "Cart Upsell" },
-  POPUP: { color: "magenta", label: "Popup" },
-};
-
 export const BANNER_ACTION_TYPE_CONFIG: Record<string, { color: string; label: string }> = {
   CATEGORY: { color: "green", label: "Category" },
   PRODUCT: { color: "blue", label: "Product" },

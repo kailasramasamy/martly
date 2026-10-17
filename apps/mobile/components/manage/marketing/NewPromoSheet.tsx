@@ -36,16 +36,17 @@ function ChoiceCard({ choice, onPick }: { choice: Choice; onPick: (href: string)
 export function NewPromoSheet({ visible, onPick, onClose }: { visible: boolean; onPick: (href: string) => void; onClose: () => void }) {
   const { data: entitlements } = useEntitlements();
   const left = entitlements ? promotionsLeft(entitlements) : null;
+  const chip = left === null ? "Uses 1 promotion" : `Uses 1 promotion · ${left} left`;
   const choices: Choice[] = [
     {
       href: "/manage/promos/new", icon: "sparkles", tint: { color: colors.primary, bg: manage.tint },
       title: "AI promotion", body: "Describe the offer. AI picks the products, writes the copy and designs the banner.",
-      chip: left === null ? "Uses 1 promotion credit" : `Uses 1 credit · ${left} left`,
+      chip,
     },
     {
       href: "/manage/promos/manual", icon: "options-outline", tint: { color: "#6d28d9", bg: "#ede9fe" },
-      title: "Manual promotion", body: "Choose what it covers, the discount and the banners yourself.",
-      chip: "No credit · uses banner slots",
+      title: "Manual promotion", body: "Choose what it covers, the discount and the banner image yourself.",
+      chip,
     },
   ];
   return (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import type { PromoDetail, PromoProduct } from "@martly/shared/types";
 import { SectionCard } from "../ui/SectionCard";
 import { ListRow } from "../ui/ListRow";
@@ -22,15 +22,9 @@ export function DraftingProgress({ log }: { log: PromoDetail["log"] }) {
   );
 }
 
-export function BannerAndMessage({ promo }: { promo: PromoDetail }) {
+export function WordingAndPush({ promo }: { promo: PromoDetail }) {
   return (
-    <SectionCard title="Banner and message">
-      {Object.entries(promo.images ?? {}).map(([lang, url]) => (
-        <View key={lang} style={styles.banner}>
-          <Text style={styles.lang}>{LANGUAGE[lang] ?? lang}</Text>
-          <Image source={{ uri: url }} style={styles.image} resizeMode="cover" />
-        </View>
-      ))}
+    <SectionCard title="Wording and push message">
       {Object.entries(promo.copy ?? {}).map(([lang, c]) => (
         <View key={lang} style={styles.copy}>
           <Text style={styles.lang}>{LANGUAGE[lang] ?? lang}</Text>
@@ -105,8 +99,6 @@ export function PromoProducts({ promo, busy, onRemove }: ProductsProps) {
 }
 
 const styles = StyleSheet.create({
-  banner: { marginBottom: 12 },
-  image: { width: "100%", aspectRatio: 1.5, borderRadius: radius.md, backgroundColor: manage.canvas },
   lang: { fontFamily: fonts.bold, fontSize: 11, color: colors.textSecondary, letterSpacing: 0.6, textTransform: "uppercase", marginBottom: 6 },
   copy: { marginTop: 8 },
   copyTitle: { fontFamily: fonts.bold, fontSize: 15, color: colors.text },

@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import type { PromoDetail } from "@martly/shared/types";
 import { BannerActionTypeLabels, type BannerActionType } from "@martly/shared/constants";
 import { PROMO_STATUS_CONFIG } from "../../constants/tag-colors";
-import { TargetLabel } from "../banners/show";
+import { TargetLabel } from "./target-label";
 import { discountLabel, PromoKindTag } from "./promo-utils";
 
 export function PromoHeader({ promo }: { promo: PromoDetail }) {

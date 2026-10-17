@@ -3,12 +3,10 @@ import { SectionCard } from "../ui/SectionCard";
 import { SegmentedTabs } from "../ui/SegmentedTabs";
 import { TextField } from "../ui/TextField";
 import { SwitchRow } from "../ui/SwitchRow";
-import { Button } from "../ui/Button";
 import { DateField } from "../ui/DateField";
 import { toDateKey } from "../ui/dates";
 import { colors, fonts } from "../../../constants/theme";
-import { BannerDraftFields, type PromoContext } from "./BannerDraftFields";
-import { MAX_BANNERS, emptyDraft } from "./banner-draft";
+import { ImageSource } from "./ImageSource";
 import { isDiscountable, type ManualPromoErrors, type ManualPromoState, type StartMode } from "./manual-promo";
 import type { Entitlements } from "./plan-types";
 
@@ -66,39 +64,26 @@ export function ScheduleSection({ state, errors, onChange, pushAllowed }: Schedu
   );
 }
 
-function slotsNote(e: Entitlements | null, adding: number): string | undefined {
-  if (!e) return undefined;
-  const { used, total } = e.bannerSlots;
-  const plan = total === null ? `${used} used, unlimited` : `${used} of ${total} used`;
-  return `Banner slots: ${plan}. A live banner uses one slot (${adding} here).`;
-}
-
-interface BannersProps {
+interface BannerProps {
   state: ManualPromoState;
   errors: ManualPromoErrors;
   onChange: Patch;
   entitlements: Entitlements | null;
 }
 
-export function BannersSection({ state, errors, onChange, entitlements }: BannersProps) {
-  const promo: PromoContext = { title: state.title, subtitle: state.subtitle, actionType: state.actionType, actionTarget: state.actionTarget };
-  const update = (key: string, patch: object) => onChange({ banners: state.banners.map((b) => (b.key === key ? { ...b, ...patch } : b)) });
+export function BannerImageSection({ state, errors, onChange, entitlements }: BannerProps) {
   return (
-    <>
-      {state.banners.map((b, i) => (
-        <SectionCard key={b.key} title={`Banner ${i + 1}`} action={state.banners.length > 1 ? { label: "Remove", onPress: () => onChange({ banners: state.banners.filter((x) => x.key !== b.key) }) } : undefined}>
-          <BannerDraftFields draft={b} promo={promo} errors={errors.banners[b.key]} entitlements={entitlements} onChange={(patch) => update(b.key, patch)} />
-        </SectionCard>
-      ))}
-      <Text style={styles.slots}>{slotsNote(entitlements, state.banners.length)}</Text>
-      {state.banners.length < MAX_BANNERS ? (
-        <Button label="Add another placement" icon="add-outline" variant="secondary" onPress={() => onChange({ banners: [...state.banners, emptyDraft()] })} />
-      ) : null}
-    </>
+    <SectionCard title="Banner image">
+      <ImageSource
+        imageUrl={state.imageUrl} onImage={(imageUrl) => onChange({ imageUrl })} entitlements={entitlements} error={errors.imageUrl}
+        title={state.title} subtitle={state.subtitle} actionType={state.actionType} actionTarget={state.actionTarget}
+        onGenerated={(art) => onChange({ imageUrl: art.imageUrl, textInImage: art.textInImage })}
+      />
+      <SwitchRow label="Title is part of the image" description="When on, the app adds no text over the artwork" value={state.textInImage} onValueChange={(textInImage) => onChange({ textInImage })} />
+    </SectionCard>
   );
 }
 
 const styles = StyleSheet.create({
   note: { fontFamily: fonts.medium, fontSize: 12.5, color: colors.textSecondary, marginTop: 8 },
-  slots: { fontFamily: fonts.medium, fontSize: 12.5, color: colors.textSecondary, paddingHorizontal: 4 },
 });

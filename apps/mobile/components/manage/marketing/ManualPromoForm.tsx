@@ -11,18 +11,18 @@ import { useAction } from "../../../lib/manage/use-action";
 import { useManageScope } from "../../../lib/manage-scope-context";
 import { useAuth } from "../../../lib/auth-context";
 import { ACTION_OPTIONS, BannerTargetField } from "./BannerTargetField";
-import { BannersSection, DiscountSection, ScheduleSection } from "./ManualPromoParts";
+import { BannerImageSection, DiscountSection, ScheduleSection } from "./ManualPromoParts";
+import { NoPromotionsLeft } from "./PromoCreateParts";
 import { PlanLimitNotice, usePlanLimit } from "./PlanLimit";
-import { useEntitlements } from "./use-entitlements";
-import { emptyDraft } from "./banner-draft";
+import { promotionsLeft, useEntitlements } from "./use-entitlements";
 import { isDiscountable, manualPayload, validateManual, type ManualPromoErrors, type ManualPromoState } from "./manual-promo";
 
 const initialState = (): ManualPromoState => ({
   title: "", subtitle: "", actionType: "CATEGORY", actionTarget: "", discountType: null, discountValue: "", durationDays: "7",
-  start: "now", launchDate: null, notify: false, banners: [emptyDraft()],
+  start: "now", launchDate: null, notify: false, imageUrl: null, textInImage: true,
 });
 
-/** Owner-built promotion: pick the target and optional discount, add copy and banners */
+/** Owner-built promotion: pick the target and optional discount, add copy and the banner image */
 export function ManualPromoForm() {
   const router = useRouter();
   const isSuper = useAuth().user?.role === "SUPER_ADMIN";
@@ -31,7 +31,9 @@ export function ManualPromoForm() {
   const { run, running } = useAction();
   const limit = usePlanLimit();
   const [state, setState] = useState(initialState);
-  const [errors, setErrors] = useState<ManualPromoErrors>({ banners: {} });
+  const [errors, setErrors] = useState<ManualPromoErrors>({});
+  const left = entitlements ? promotionsLeft(entitlements) : null;
+  const outOfPromos = !isSuper && left === 0;
   const pushAllowed = isSuper || !!entitlements?.pushIncluded;
   const patch = (p: Partial<ManualPromoState>) => setState((prev) => ({ ...prev, ...p }));
 
@@ -47,8 +49,9 @@ export function ManualPromoForm() {
   };
 
   return (
-    <ManageStackScreen title="Manual promotion" actions={<Button label="Create promotion" icon="rocket-outline" onPress={submit} loading={running} style={styles.btn} />}>
-      <SectionCard title="Promotion">
+    <ManageStackScreen title="Manual promotion" actions={<Button label="Create promotion" icon="rocket-outline" onPress={submit} loading={running} disabled={outOfPromos} style={styles.btn} />}>
+      {outOfPromos ? <NoPromotionsLeft /> : null}
+      <SectionCard title={left === null ? "Promotion" : `Promotion · ${left} promotion${left === 1 ? "" : "s"} left`}>
         <TextField label="Title" required value={state.title} onChangeText={(title) => patch({ title })} maxLength={60} error={errors.title} />
         <TextField label="Subtitle" value={state.subtitle} onChangeText={(subtitle) => patch({ subtitle })} maxLength={90} />
         <SelectField label="Opens / covers" value={state.actionType} options={ACTION_OPTIONS} onChange={changeAction} />
@@ -56,7 +59,7 @@ export function ManualPromoForm() {
       </SectionCard>
       <DiscountSection state={state} errors={errors} onChange={patch} />
       <ScheduleSection state={state} errors={errors} onChange={patch} pushAllowed={pushAllowed} />
-      <BannersSection state={state} errors={errors} onChange={patch} entitlements={entitlements} />
+      <BannerImageSection state={state} errors={errors} onChange={patch} entitlements={entitlements} />
       <PlanLimitNotice message={limit.message} />
     </ManageStackScreen>
   );

@@ -13,8 +13,8 @@ import { colors, fonts } from "../../../constants/theme";
 import { ConfirmDialog } from "../ui/ConfirmDialog";
 import { PROMO_KIND, PROMO_STATUS, discountLabel } from "./promo-utils";
 import { ManualSummary, PromoResultsCard, RedraftCard } from "./PromoExtras";
-import { PromoBannersSection } from "./PromoBannersSection";
-import { BannerAndMessage, DraftingProgress, Performance, PromoProducts } from "./PromoSections";
+import { PromoBannerCard } from "./PromoBannerCard";
+import { WordingAndPush, DraftingProgress, Performance, PromoProducts } from "./PromoSections";
 
 const POLL_MS = 2000;
 const PREVIEW_STATUSES = ["READY", "LIVE", "ENDED"];
@@ -97,8 +97,8 @@ function PromoBody({ promo, busy, onRemove, onRedraft, onChange }: BodyProps) {
       {promo.status === "DRAFTING" ? <DraftingProgress log={promo.log} /> : null}
       {PREVIEW_STATUSES.includes(promo.status) ? (
         <>
-          {isAi ? <BannerAndMessage promo={promo} /> : <ManualSummary promo={promo} />}
-          <PromoBannersSection promo={promo} onChange={onChange} />
+          {isAi ? <WordingAndPush promo={promo} /> : <ManualSummary promo={promo} />}
+          <PromoBannerCard promo={promo} onChange={onChange} />
           {isAi && promo.status === "READY" && promo.redraftsLeft > 0 ? <RedraftCard left={promo.redraftsLeft} busy={busy} onRedraft={onRedraft} /> : null}
           {promo.status === "LIVE" || promo.status === "ENDED" ? <PromoResultsCard promo={promo} /> : null}
           <Performance promo={promo} />

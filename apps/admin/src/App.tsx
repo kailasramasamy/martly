@@ -123,10 +123,6 @@ import { CatalogDraftShow } from "./pages/catalog-drafts/show";
 import { PromoList } from "./pages/promos/list";
 import { PromoShow } from "./pages/promos/show";
 import { PromoCreate } from "./pages/promos/create";
-import { BannerList } from "./pages/banners/list";
-import { BannerCreate } from "./pages/banners/create";
-import { BannerEdit } from "./pages/banners/edit";
-import { BannerShow } from "./pages/banners/show";
 import { NotificationSend } from "./pages/notifications/send";
 import { NotificationDashboard } from "./pages/notifications/dashboard";
 import { CampaignList as NotificationCampaignList } from "./pages/notifications/campaigns/list";
@@ -339,14 +335,6 @@ export default function App() {
                 create: "/promos/create",
                 show: "/promos/show/:id",
                 meta: { label: "Promotions", icon: <RocketOutlined />, parent: "marketing" },
-              },
-              {
-                name: "banners",
-                list: "/banners",
-                create: "/banners/create",
-                edit: "/banners/edit/:id",
-                show: "/banners/show/:id",
-                meta: { label: "All banners", icon: <PictureOutlined />, parent: "marketing" },
               },
               {
                 name: "festival-events",
@@ -673,12 +661,6 @@ export default function App() {
                 <Route path="/support-tickets">
                   <Route index element={<SupportTicketList />} />
                   <Route path="show/:id" element={<SupportTicketShow />} />
-                </Route>
-                <Route path="/banners">
-                  <Route index element={<BannerList />} />
-                  <Route path="create" element={<BannerCreate />} />
-                  <Route path="edit/:id" element={<BannerEdit />} />
-                  <Route path="show/:id" element={<BannerShow />} />
                 </Route>
                 <Route path="/promos">
                   <Route index element={<PromoList />} />

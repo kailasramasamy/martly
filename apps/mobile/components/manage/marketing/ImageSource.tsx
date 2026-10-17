@@ -51,10 +51,10 @@ export function ImageSource({ imageUrl, onImage, onGenerated, title, subtitle, a
 
   const generate = async () => {
     const name = title.trim();
-    if (name.length < 2 || name.length > 40) return setTitleError("Add a title of 2 to 40 characters in Details first");
+    if (name.length < 2 || name.length > 40) return setTitleError("Add a title of 2 to 40 characters in Promotion first");
     setTitleError(null);
     const body = { title: name, subtitle: subtitle.trim() || undefined, brief: brief.trim() || undefined, actionType, actionTarget: actionTarget.trim() || undefined };
-    const res = await run(() => limit.capture(() => api.post<GeneratedArt>("/api/v1/banners/generate-image", body)));
+    const res = await run(() => limit.capture(() => api.post<GeneratedArt>("/api/v1/promos/generate-image", body)));
     if (res) onGenerated({ imageUrl: res.data.imageUrl, textInImage: res.data.textInImage });
   };
 

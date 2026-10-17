@@ -24,13 +24,12 @@ export function CurrentPlanCard({ e }: { e: Entitlements }) {
 }
 
 export function UsageCard({ e }: { e: Entitlements }) {
-  const { bannerSlots, promotions, aiImages } = e;
+  const { promotions, aiImages } = e;
   return (
     <SectionCard title="This month">
-      <KeyValue label="Banner slots" value={bannerSlots.total === null ? `${bannerSlots.used} used, unlimited` : `${bannerSlots.used} of ${bannerSlots.total} used`} />
       <KeyValue label="Promotions left" value={`${promotions.planLeft} of ${promotions.planTotal}`} />
       <KeyValue label="Extra promotions" value={promotions.topUpBalance} />
-      <KeyValue label="AI banner images" value={`${aiImages.used} of ${aiImages.total} used`} />
+      <KeyValue label="AI images" value={`${aiImages.used} of ${aiImages.total} used`} />
       <KeyValue label="Push notifications" value={e.pushIncluded ? "Included" : "Not included"} />
       {promotions.resetsAt ? <Text style={styles.muted}>{`Promotions reset on ${formatDate(promotions.resetsAt)}`}</Text> : null}
     </SectionCard>
@@ -39,9 +38,8 @@ export function UsageCard({ e }: { e: Entitlements }) {
 
 function features(p: AdProduct): string[] {
   return [
-    p.bannerSlots === null ? "Unlimited banners" : `${p.bannerSlots} banner slots`,
-    `${p.promotionCredits} AI promotions a month`,
-    `${p.aiImagesPerMonth} AI banner images a month`,
+    `${p.promotionCredits} promotions a month`,
+    `${p.aiImagesPerMonth} AI images a month`,
     ...(p.pushIncluded ? ["Push notifications to customers"] : []),
   ];
 }

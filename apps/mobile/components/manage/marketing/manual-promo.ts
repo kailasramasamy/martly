@@ -1,7 +1,6 @@
 import { DISCOUNTABLE_TARGETS } from "@martly/shared/constants";
 import { startOfDayIso, parseNumber } from "./common";
 import { validateTarget } from "./BannerTargetField";
-import { draftPayload, hasErrors, validateDraft, type BannerDraft, type DraftErrors } from "./banner-draft";
 
 export type StartMode = "now" | "ready" | "schedule";
 
@@ -16,7 +15,8 @@ export interface ManualPromoState {
   start: StartMode;
   launchDate: string | null;
   notify: boolean;
-  banners: BannerDraft[];
+  imageUrl: string | null;
+  textInImage: boolean;
 }
 
 export interface ManualPromoErrors {
@@ -25,7 +25,7 @@ export interface ManualPromoErrors {
   discountValue?: string;
   durationDays?: string;
   launchDate?: string;
-  banners: Record<string, DraftErrors>;
+  imageUrl?: string;
 }
 
 export const isDiscountable = (actionType: string) => (DISCOUNTABLE_TARGETS as readonly string[]).includes(actionType);
@@ -40,17 +40,15 @@ function validateDiscount(s: ManualPromoState): string | undefined {
 
 export function validateManual(s: ManualPromoState): { errors: ManualPromoErrors; ok: boolean } {
   const days = Number(s.durationDays);
-  const banners = Object.fromEntries(s.banners.map((b) => [b.key, validateDraft(b)]));
   const errors: ManualPromoErrors = {
     title: s.title.trim().length >= 2 ? undefined : "Enter a title of at least 2 characters",
     actionTarget: validateTarget(s.actionType, s.actionTarget),
     discountValue: validateDiscount(s),
     durationDays: Number.isInteger(days) && days >= 1 && days <= 90 ? undefined : "Whole days, 1 to 90",
     launchDate: s.start === "schedule" && !s.launchDate ? "Pick a start date" : undefined,
-    banners,
+    imageUrl: s.imageUrl ? undefined : "Banner image is required",
   };
-  const { banners: bannerErrors, ...own } = errors;
-  return { errors, ok: !hasErrors(own) && !Object.values(bannerErrors).some(hasErrors) };
+  return { errors, ok: !Object.values(errors).some(Boolean) };
 }
 
 export function manualPayload(s: ManualPromoState, pushAllowed: boolean, organizationId?: string) {
@@ -66,6 +64,7 @@ export function manualPayload(s: ManualPromoState, pushAllowed: boolean, organiz
     launchAt: s.start === "schedule" && s.launchDate ? startOfDayIso(s.launchDate) : undefined,
     notify: pushAllowed && s.notify,
     organizationId,
-    banners: s.banners.map((b, i) => ({ ...draftPayload(b, false), sortOrder: i })),
+    imageUrl: s.imageUrl,
+    textInImage: s.textInImage,
   };
 }

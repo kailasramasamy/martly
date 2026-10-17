@@ -32,13 +32,10 @@ export function PromoResultsCard({ promo }: { promo: PromoDetail }) {
   const { data } = useResource<MarketingResults>(`/api/v1/marketing/results?days=${RESULT_DAYS}`);
   const sales = data?.promotions.find((p) => p.id === promo.id);
   if (!data || !sales) return null;
-  const banners = data.banners.filter((b) => b.promoId === promo.id);
-  const views = banners.reduce((sum, b) => sum + b.views, 0);
-  const taps = banners.reduce((sum, b) => sum + b.taps, 0);
   return (
     <SectionCard title="Results">
-      <KeyValue label="Banner views" value={views.toLocaleString("en-IN")} />
-      <KeyValue label="Banner taps" value={taps.toLocaleString("en-IN")} />
+      <KeyValue label="Banner views" value={sales.views.toLocaleString("en-IN")} />
+      <KeyValue label="Banner taps" value={sales.taps.toLocaleString("en-IN")} />
       <KeyValue label="Orders" value={sales.orders} />
       <KeyValue label="Units sold" value={sales.units} />
       <KeyValue label="Revenue" value={formatINR(sales.revenue)} emphasis />

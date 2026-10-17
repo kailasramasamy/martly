@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Form, Input, InputNumber, Radio, Select, Typography } from "antd";
 import { useList } from "@refinedev/core";
 import { BannerActionTypeLabels, DISCOUNTABLE_TARGETS } from "@martly/shared/constants";
-import { CategoryTargetField, type CascaderOption } from "../../banners/category-target";
+import { CategoryTargetField, type CascaderOption } from "../category-target";
 import { RemoteSelect } from "./remote-select";
 
 const actionTypeOptions = Object.entries(BannerActionTypeLabels).map(([value, label]) => ({ value, label }));

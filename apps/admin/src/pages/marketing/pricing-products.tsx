@@ -1,8 +1,6 @@
-import { Card, Input, InputNumber, Switch, Table, Tag, Typography } from "antd";
+import { Card, Input, InputNumber, Switch, Table, Tag } from "antd";
 import { BannerPlacementLabels, type BannerPlacement } from "@martly/shared/constants";
 import type { AdProduct } from "./types";
-
-const { Text } = Typography;
 
 type Patch = (id: string, change: Partial<AdProduct>) => void;
 
@@ -35,21 +33,13 @@ export function StorePlansCard({ products, patch }: TableProps) {
   const columns = [
     ...textColumns(patch),
     { title: "Price / month", dataIndex: "price", width: 130, render: (v: number, r: AdProduct) => rupeeInput(v, (price) => patch(r.id, { price })) },
-    {
-      title: "Banner slots",
-      dataIndex: "bannerSlots",
-      width: 120,
-      render: (v: number | null, r: AdProduct) => (
-        <InputNumber min={0} precision={0} placeholder="Unlimited" value={v} onChange={(n) => patch(r.id, { bannerSlots: n })} style={{ width: 100 }} />
-      ),
-    },
     { title: "Promotions / month", dataIndex: "promotionCredits", width: 130, render: (v: number, r: AdProduct) => countInput(v, (n) => patch(r.id, { promotionCredits: n })) },
     { title: "AI images / month", dataIndex: "aiImagesPerMonth", width: 130, render: (v: number, r: AdProduct) => countInput(v, (n) => patch(r.id, { aiImagesPerMonth: n })) },
     { title: "Push included", dataIndex: "pushIncluded", width: 100, render: (v: boolean, r: AdProduct) => <Switch checked={v} onChange={(c) => patch(r.id, { pushIncluded: c })} /> },
     onSaleColumn(patch),
   ];
   return (
-    <Card title="Store plans" size="small" style={{ marginBottom: 16 }} extra={<Text type="secondary">Empty banner slots means unlimited</Text>}>
+    <Card title="Store plans" size="small" style={{ marginBottom: 16 }}>
       <Table size="small" rowKey="id" pagination={false} dataSource={products} columns={columns} scroll={{ x: 1100 }} />
     </Card>
   );

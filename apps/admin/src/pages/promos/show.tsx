@@ -7,7 +7,7 @@ import { axiosInstance } from "../../providers/data-provider";
 import { ManualSetup, PromoHeader } from "./promo-details";
 import { PromoActions, useAction } from "./promo-actions";
 import { DraftingProgress, PromoPreview } from "./promo-preview";
-import { PromoBanners } from "./promo-banners";
+import { PromoBanner } from "./promo-banner";
 import { PromoProducts } from "./promo-products";
 
 const POLL_MS = 2000;
@@ -68,7 +68,7 @@ export const PromoShow = () => {
       {PREVIEW_STATUSES.includes(promo.status) && (
         <>
           {promo.kind === "AI" && <PromoPreview promo={promo} />}
-          <PromoBanners promo={promo} onChanged={() => void reload()} />
+          <PromoBanner promo={promo} onChanged={() => void reload()} />
           <PromoProducts promo={promo} busy={busy !== null} onRemove={removeProduct} />
         </>
       )}

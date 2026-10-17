@@ -1,18 +1,13 @@
 import { useEffect, useState } from "react";
-import { App, Alert, type FormInstance, Button, Card, Form, Input, Radio, Select, Switch } from "antd";
+import { App, type FormInstance, Button, Card, Form, Input, Radio, Select, Switch } from "antd";
 import { RocketOutlined } from "@ant-design/icons";
-import { useGetIdentity, useList, useNavigation } from "@refinedev/core";
-import { Link } from "react-router";
+import { useList, useNavigation } from "@refinedev/core";
 import { isAxiosError } from "axios";
 import { sectionTitle } from "../../theme";
 import { ImageUpload } from "../../components/ImageUpload";
-import { useEntitlements } from "../../hooks/use-entitlements";
+import type { Entitlements } from "../marketing/types";
 import { ImageGuidance } from "../brand-campaigns/creative-section";
 import { createPromo } from "./promo-utils";
-
-interface Identity {
-  role: string;
-}
 
 const PLACEHOLDER = 'e.g. "paneer 5% off", "ghee products", "fresh fruits", "daily deals", "natural soaps"';
 
@@ -52,40 +47,28 @@ function PromoImageChoice({ choice, onChange }: { choice: ImageChoice; onChange:
   );
 }
 
-function PromoAllowance({ left, topUp }: { left: number; topUp: number }) {
-  if (left + topUp > 0) return <Alert type="info" showIcon style={{ marginBottom: 16 }} message={`Promotions left: ${left} this month + ${topUp} extra`} />;
-  return (
-    <Alert
-      type="warning"
-      showIcon
-      style={{ marginBottom: 16 }}
-      message="No promotions left"
-      description={<Link to="/marketing-plan">Buy an extra promotion or upgrade</Link>}
-    />
-  );
+interface Props {
+  entitlements: Entitlements | null;
+  isPlatform: boolean;
+  noAllowance: boolean;
 }
 
-/** What the organisation's plan still allows; the platform admin is unlimited */
-function usePromoAllowance(role: string | undefined, form: FormInstance) {
-  const isPlatform = role === "SUPER_ADMIN";
-  const { entitlements } = useEntitlements(!!role && !isPlatform);
-  const noAllowance = !!entitlements && entitlements.promotions.planLeft + entitlements.promotions.topUpBalance === 0;
+/** Push needs the Pro plan; the platform admin is unlimited */
+function usePushAllowed(isPlatform: boolean, entitlements: Entitlements | null, form: FormInstance) {
   const pushAllowed = isPlatform || !!entitlements?.pushIncluded;
-
   useEffect(() => {
-    if (role && !pushAllowed) form.setFieldValue("notify", false);
-  }, [role, pushAllowed, form]);
-  return { entitlements, isPlatform, noAllowance, pushAllowed };
+    if (entitlements && !pushAllowed) form.setFieldValue("notify", false);
+  }, [entitlements, pushAllowed, form]);
+  return pushAllowed;
 }
 
-export function PromoCreateCard() {
+export function PromoCreateCard({ entitlements, isPlatform, noAllowance }: Props) {
   const { message } = App.useApp();
-  const { data: identity } = useGetIdentity<Identity>();
   const { show } = useNavigation();
   const [form] = Form.useForm();
   const [creating, setCreating] = useState(false);
   const [imageChoice, setImageChoice] = useState<ImageChoice>("ai");
-  const { entitlements, isPlatform, noAllowance, pushAllowed } = usePromoAllowance(identity?.role, form);
+  const pushAllowed = usePushAllowed(isPlatform, entitlements, form);
 
   const submit = async (values: { brief: string; autoLaunch: boolean; notify: boolean; organizationId?: string; imageUrl?: string }) => {
     setCreating(true);
@@ -104,7 +87,6 @@ export function PromoCreateCard() {
   return (
     <Card title={sectionTitle(<RocketOutlined />, "New promo")} size="small" style={{ marginBottom: 16 }}>
       <Form form={form} layout="vertical" initialValues={{ autoLaunch: false, notify: true }} onFinish={submit}>
-        {entitlements && !isPlatform && <PromoAllowance left={entitlements.promotions.planLeft} topUp={entitlements.promotions.topUpBalance} />}
         {isPlatform && <OrganizationField />}
         <Form.Item
           label="What do you want to promote?"

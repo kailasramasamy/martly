@@ -10,13 +10,7 @@ import { errorMessage } from "./utils";
 
 const { Text } = Typography;
 
-const SLOT_COLUMNS = [
-  { key: "STORE", label: "Store" },
-  { key: "BRAND", label: "Brand" },
-  { key: "PLATFORM", label: "Martly" },
-] as const;
-
-type SlotLimits = Record<string, Partial<Record<(typeof SLOT_COLUMNS)[number]["key"], number | null>>>;
+type SlotLimits = Record<string, { BRAND?: number | null }>;
 
 interface PricingConfig {
   gstPercent: number;
@@ -33,31 +27,22 @@ interface PricingConfig {
 function cleanSlotLimits(limits: SlotLimits | undefined): SlotLimits {
   const cleaned: SlotLimits = {};
   for (const [placement, caps] of Object.entries(limits ?? {})) {
-    const kept = Object.fromEntries(Object.entries(caps ?? {}).filter(([, n]) => typeof n === "number"));
-    if (Object.keys(kept).length) cleaned[placement] = kept;
+    if (typeof caps?.BRAND === "number") cleaned[placement] = { BRAND: caps.BRAND };
   }
   return cleaned;
 }
 
 function SlotLimitsCard() {
   return (
-    <Card title="Slot limits" size="small" style={{ marginBottom: 16 }} extra={<Text type="secondary">Banners that can run at once per placement; empty means no cap</Text>}>
-      <Row gutter={8} style={{ marginBottom: 8 }}>
-        <Col span={9} />
-        {SLOT_COLUMNS.map((c) => (
-          <Col span={5} key={c.key}><Text strong>{c.label}</Text></Col>
-        ))}
-      </Row>
+    <Card title="Home carousel limits (brand campaigns)" size="small" style={{ marginBottom: 16 }} extra={<Text type="secondary">Brand banners that can run at once per placement; empty means no cap</Text>}>
       {Object.entries(BannerPlacementLabels).map(([placement, label]) => (
         <Row gutter={8} key={placement} align="middle">
-          <Col span={9}><Text>{label}</Text></Col>
-          {SLOT_COLUMNS.map((c) => (
-            <Col span={5} key={c.key}>
-              <Form.Item name={["slotLimits", placement, c.key]} style={{ marginBottom: 8 }}>
-                <InputNumber min={0} precision={0} style={{ width: "100%" }} />
-              </Form.Item>
-            </Col>
-          ))}
+          <Col span={14}><Text>{label}</Text></Col>
+          <Col span={10}>
+            <Form.Item name={["slotLimits", placement, "BRAND"]} style={{ marginBottom: 8 }}>
+              <InputNumber min={0} precision={0} style={{ width: "100%" }} />
+            </Form.Item>
+          </Col>
         </Row>
       ))}
     </Card>
