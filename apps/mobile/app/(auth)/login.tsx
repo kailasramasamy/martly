@@ -120,7 +120,7 @@ export default function LoginScreen() {
         {/* Logo */}
         <View style={styles.logoSection}>
           <Image source={wordmark} style={styles.wordmark} resizeMode="contain" accessibilityLabel="Martly" />
-          <Text style={styles.subtitle}>Fresh groceries, delivered</Text>
+          <Text style={styles.subtitle}>Your local stores, delivered</Text>
         </View>
 
         {/* Phone Step */}

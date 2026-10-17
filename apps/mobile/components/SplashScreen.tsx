@@ -66,7 +66,7 @@ export default function SplashScreen({ onFinish, onBeforeFadeOut }: SplashScreen
         />
 
         <Animated.Text style={[styles.subtitle, { opacity: subtitleOpacity }]}>
-          Fresh groceries, delivered
+          Your local stores, delivered
         </Animated.Text>
       </View>
     </Animated.View>
