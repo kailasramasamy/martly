@@ -81,21 +81,46 @@ async function deliver(tx: Prisma.TransactionClient, order: AdOrder, product: Ad
   await tx.brandCampaign.updateMany({ where: { adOrderId: order.id, status: "PENDING_PAYMENT" }, data: { status: "IN_REVIEW" } });
 }
 
+const YEAR_DAYS = 365;
+type Interval = AdOrder["billingInterval"];
+
+/** Days a plan order covers: a year for annual billing, else the plan's month(s) */
+export function planDays(order: { billingInterval: Interval; quantity: number }, product: Pick<AdProduct, "durationDays">) {
+  return (order.billingInterval === "YEARLY" ? YEAR_DAYS : product.durationDays) * order.quantity;
+}
+
+/** A plan's list price per day for a billing interval; it decides whether a change is an upgrade */
+export function listDailyRate(product: Pick<AdProduct, "price" | "yearlyPrice" | "durationDays">, interval: Interval) {
+  return interval === "YEARLY" && product.yearlyPrice ? Number(product.yearlyPrice) / YEAR_DAYS : Number(product.price) / product.durationDays;
+}
+
+type RunningPeriod = { isTrial: boolean; product: AdProduct; adOrder: AdOrder | null };
+
+/** What is left of a running period is worth what was paid for it per day; a free trial is worth nothing */
+function paidDailyRate(period: RunningPeriod) {
+  if (period.isTrial) return 0;
+  if (!period.adOrder) return Number(period.product.price) / period.product.durationDays;
+  return Number(period.adOrder.subtotal) / planDays(period.adOrder, period.product);
+}
+
+export const intervalOf = (period: Pick<RunningPeriod, "adOrder">): Interval => period.adOrder?.billingInterval ?? "MONTHLY";
+
 /**
- * A plan bought while one is running queues after it, except an upgrade: that starts now, and what was left of
- * the cheaper plan carries over as extra days at the new price (a free trial carries nothing). Months already
- * queued move back accordingly.
+ * A plan bought while one is running queues after it, except an upgrade (a higher price per day): that starts now,
+ * and the unused value of the running plan carries over as extra days at the new rate (a free trial carries
+ * nothing). Months already queued move back accordingly.
  */
 export async function grantPlan(tx: Prisma.TransactionClient, order: AdOrder, product: AdProduct, organizationId: string) {
   const now = new Date();
-  const length = product.durationDays * order.quantity * DAY_MS;
+  const days = planDays(order, product);
+  const length = days * DAY_MS;
   const current = await tx.orgPlanPeriod.findFirst({
     where: { organizationId, startsAt: { lte: now }, endsAt: { gt: now } },
     orderBy: { startsAt: "desc" },
-    include: { product: true },
+    include: { product: true, adOrder: true },
   });
-  if (current && Number(product.price) > Number(current.product.price)) {
-    const carry = current.isTrial ? 0 : ((current.endsAt.getTime() - now.getTime()) * Number(current.product.price)) / Number(product.price);
+  if (current && listDailyRate(product, order.billingInterval) > listDailyRate(current.product, intervalOf(current))) {
+    const carry = ((current.endsAt.getTime() - now.getTime()) * paidDailyRate(current)) / (Number(order.subtotal) / days);
     const endsAt = new Date(now.getTime() + length + carry);
     await tx.orgPlanPeriod.update({ where: { id: current.id }, data: { endsAt: now, closedAt: now } });
     // Months already queued started when the old plan would have ended; they now follow the upgrade

@@ -13,7 +13,7 @@ async function pricing(app: FastifyInstance) {
     app.prisma.adProduct.findMany({ orderBy: [{ kind: "asc" }, { sortOrder: "asc" }] }),
     getMarketingConfig(app.prisma),
   ]);
-  return { products: products.map((p) => ({ ...p, price: Number(p.price) })), config };
+  return { products: products.map((p) => ({ ...p, price: Number(p.price), yearlyPrice: p.yearlyPrice && Number(p.yearlyPrice) })), config };
 }
 
 /** Martly's side of paid marketing: the price list, settings, every order and who is on which plan */

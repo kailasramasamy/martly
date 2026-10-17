@@ -18,8 +18,17 @@ function activePeriod(db: Db, organizationId: string, at: Date) {
   return db.orgPlanPeriod.findFirst({
     where: { organizationId, startsAt: { lte: at }, endsAt: { gt: at } },
     orderBy: { startsAt: "desc" },
-    include: { product: true },
+    include: { product: true, adOrder: { select: { billingInterval: true } } },
   });
+}
+
+const MONTH_MS = 30 * 24 * 60 * 60 * 1000;
+
+/** Allowances reset every 30 days of a plan, so an annual plan gives a month's promotions each month, not all at once */
+function periodMonth(period: { startsAt: Date; endsAt: Date }, at: Date) {
+  const index = Math.floor((at.getTime() - period.startsAt.getTime()) / MONTH_MS);
+  const start = new Date(period.startsAt.getTime() + index * MONTH_MS);
+  return { start, end: new Date(Math.min(start.getTime() + MONTH_MS, period.endsAt.getTime())) };
 }
 
 /** Free orgs get their allowance per IST calendar month */
@@ -35,7 +44,7 @@ export async function getEntitlements(db: Db, organizationId: string) {
   const now = new Date();
   const period = await activePeriod(db, organizationId, now);
   const plan = period?.product ?? (await db.adProduct.findUnique({ where: { code: FREE_PLAN_CODE } }));
-  const window = period ? { start: period.startsAt, end: period.endsAt } : monthWindow(now);
+  const window = period ? periodMonth(period, now) : monthWindow(now);
   const [planMoves, topUp, lastPeriod, aiImagesUsed] = await Promise.all([
     db.promotionCreditEntry.aggregate({ where: { organizationId, fromPlan: true, createdAt: { gte: window.start, lt: window.end } }, _sum: { delta: true } }),
     db.promotionCreditEntry.aggregate({ where: { organizationId, fromPlan: false }, _sum: { delta: true } }),
@@ -48,6 +57,7 @@ export async function getEntitlements(db: Db, organizationId: string) {
     plan: plan && {
       id: plan.id, code: plan.code, name: plan.name, price: Number(plan.price),
       promotionCredits: plan.promotionCredits, pushIncluded: plan.pushIncluded, aiImagesPerMonth: plan.aiImagesPerMonth,
+      billingInterval: period?.adOrder?.billingInterval ?? "MONTHLY",
     },
     period: period && { startsAt: period.startsAt, endsAt: period.endsAt },
     /** Last day covered by periods already bought, including ones that start later */
@@ -75,7 +85,7 @@ async function trialAndRenewal(db: Db, organizationId: string, period: { isTrial
   return {
     trial: { available: !org.trialUsedAt && paidPeriods === 0, endsAt: period?.isTrial ? period.endsAt : null },
     subscription: subscription && {
-      status: subscription.status, productName: subscription.product.name, productCode: subscription.product.code, cancelAtPeriodEnd: subscription.cancelAtPeriodEnd,
+      status: subscription.status, productName: subscription.product.name, productCode: subscription.product.code, interval: subscription.interval, cancelAtPeriodEnd: subscription.cancelAtPeriodEnd,
       /** Next charge (or, once cancelled, when the paid time runs out) */
       renewsAt: subscription.startAt && subscription.status === "CREATED" ? subscription.startAt : lastPeriod?.endsAt ?? null,
     },

@@ -62,18 +62,18 @@ async function subscriptionsCall<T>(work: () => Promise<T>): Promise<T> {
   }
 }
 
-/** A monthly Razorpay plan for an amount in paise (GST included) */
-export async function createRazorpayPlan(name: string, amountInPaise: number) {
+/** A Razorpay plan billing an amount in paise (GST included) every month or every year */
+export async function createRazorpayPlan(name: string, amountInPaise: number, period: "monthly" | "yearly") {
   const plan = await subscriptionsCall(() => getRazorpay().plans.create({
-    period: "monthly", interval: 1, item: { name, amount: amountInPaise, currency: "INR" },
+    period, interval: 1, item: { name, amount: amountInPaise, currency: "INR" },
   }));
   return plan.id;
 }
 
-/** A subscription billing the plan monthly; with startAt the mandate is set up now and the first charge waits */
+/** A subscription billing the plan every period; with startAt the mandate is set up now and the first charge waits */
 export async function createRazorpaySubscription(planId: string, notes: Record<string, string>, startAt?: Date) {
   return subscriptionsCall(() => getRazorpay().subscriptions.create({
-    plan_id: planId, total_count: 120, customer_notify: 1, notes,
+    plan_id: planId, total_count: notes.interval === "YEARLY" ? 10 : 120, customer_notify: 1, notes,
     ...(startAt ? { start_at: Math.floor(startAt.getTime() / 1000) } : {}),
   }));
 }

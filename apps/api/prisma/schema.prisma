@@ -216,6 +216,11 @@ enum AdProductKind {
   BRAND_CPM
 }
 
+enum BillingInterval {
+  MONTHLY
+  YEARLY
+}
+
 enum MarketingSubscriptionStatus {
   CREATED
   ACTIVE
@@ -2105,28 +2110,32 @@ model StockCountLineRevision {
 
 /// Price list for everything Martly sells to store owners and brands; orders snapshot the price
 model AdProduct {
-  id                 String           @id @default(uuid())
-  kind               AdProductKind
-  code               String           @unique
-  name               String
-  description        String?
-  price              Decimal          @db.Decimal(10, 2)
-  durationDays       Int              @default(30) @map("duration_days")
-  promotionCredits   Int              @default(0) @map("promotion_credits")
+  id                       String           @id @default(uuid())
+  kind                     AdProductKind
+  code                     String           @unique
+  name                     String
+  description              String?
+  price                    Decimal          @db.Decimal(10, 2)
+  durationDays             Int              @default(30) @map("duration_days")
+  promotionCredits         Int              @default(0) @map("promotion_credits")
   /// AI-made banner images per month (plain banners; promotions include their own art)
-  aiImagesPerMonth   Int              @default(0) @map("ai_images_per_month")
-  pushIncluded       Boolean          @default(false) @map("push_included")
+  aiImagesPerMonth         Int              @default(0) @map("ai_images_per_month")
+  pushIncluded             Boolean          @default(false) @map("push_included")
   /// Brand packages: where the banner runs
-  placement          BannerPlacement?
+  placement                BannerPlacement?
   /// CPM packages: views bought per unit
-  viewsPerUnit       Int?             @map("views_per_unit")
+  viewsPerUnit             Int?             @map("views_per_unit")
   /// Store plans: the Razorpay plan that bills this price monthly (made when first needed)
-  razorpayPlanId     String?          @map("razorpay_plan_id")
-  razorpayPlanAmount Int?             @map("razorpay_plan_amount")
-  isActive           Boolean          @default(true) @map("is_active")
-  sortOrder          Int              @default(0) @map("sort_order")
-  createdAt          DateTime         @default(now()) @map("created_at")
-  updatedAt          DateTime         @updatedAt @map("updated_at")
+  /// Store plans: the price when paid for a year up front; null means no annual option
+  yearlyPrice              Decimal?         @map("yearly_price") @db.Decimal(10, 2)
+  razorpayPlanId           String?          @map("razorpay_plan_id")
+  razorpayPlanAmount       Int?             @map("razorpay_plan_amount")
+  razorpayYearlyPlanId     String?          @map("razorpay_yearly_plan_id")
+  razorpayYearlyPlanAmount Int?             @map("razorpay_yearly_plan_amount")
+  isActive                 Boolean          @default(true) @map("is_active")
+  sortOrder                Int              @default(0) @map("sort_order")
+  createdAt                DateTime         @default(now()) @map("created_at")
+  updatedAt                DateTime         @updatedAt @map("updated_at")
 
   orders      AdOrder[]
   planPeriods OrgPlanPeriod[]
@@ -2156,31 +2165,33 @@ model MarketingConfig {
 }
 
 model AdOrder {
-  id                String        @id @default(uuid())
+  id                String          @id @default(uuid())
   /// Invoice number, assigned when paid
-  number            String?       @unique
-  organizationId    String?       @map("organization_id")
-  brandId           String?       @map("brand_id")
-  productId         String        @map("product_id")
-  quantity          Int           @default(1)
-  unitPrice         Decimal       @map("unit_price") @db.Decimal(10, 2)
-  subtotal          Decimal       @db.Decimal(10, 2)
-  gstPercent        Decimal       @map("gst_percent") @db.Decimal(4, 2)
-  cgst              Decimal       @default(0) @db.Decimal(10, 2)
-  sgst              Decimal       @default(0) @db.Decimal(10, 2)
-  igst              Decimal       @default(0) @db.Decimal(10, 2)
-  total             Decimal       @db.Decimal(10, 2)
-  status            AdOrderStatus @default(PENDING)
-  razorpayOrderId   String?       @unique @map("razorpay_order_id")
-  razorpayPaymentId String?       @unique @map("razorpay_payment_id")
+  number            String?         @unique
+  organizationId    String?         @map("organization_id")
+  brandId           String?         @map("brand_id")
+  productId         String          @map("product_id")
+  quantity          Int             @default(1)
+  unitPrice         Decimal         @map("unit_price") @db.Decimal(10, 2)
+  subtotal          Decimal         @db.Decimal(10, 2)
+  gstPercent        Decimal         @map("gst_percent") @db.Decimal(4, 2)
+  cgst              Decimal         @default(0) @db.Decimal(10, 2)
+  sgst              Decimal         @default(0) @db.Decimal(10, 2)
+  igst              Decimal         @default(0) @db.Decimal(10, 2)
+  total             Decimal         @db.Decimal(10, 2)
+  /// Store plans: a month or a year of the plan
+  billingInterval   BillingInterval @default(MONTHLY) @map("billing_interval")
+  status            AdOrderStatus   @default(PENDING)
+  razorpayOrderId   String?         @unique @map("razorpay_order_id")
+  razorpayPaymentId String?         @unique @map("razorpay_payment_id")
   /// Billing name, GSTIN, address and state at purchase time
-  billing           Json          @default("{}")
+  billing           Json            @default("{}")
   /// Paid outside Razorpay (bank transfer), recorded by the Martly team
-  offlineReference  String?       @map("offline_reference")
-  createdById       String        @map("created_by_id")
-  paidAt            DateTime?     @map("paid_at")
-  createdAt         DateTime      @default(now()) @map("created_at")
-  updatedAt         DateTime      @updatedAt @map("updated_at")
+  offlineReference  String?         @map("offline_reference")
+  createdById       String          @map("created_by_id")
+  paidAt            DateTime?       @map("paid_at")
+  createdAt         DateTime        @default(now()) @map("created_at")
+  updatedAt         DateTime        @updatedAt @map("updated_at")
 
   organization Organization?          @relation(fields: [organizationId], references: [id])
   brand        Brand?                 @relation(fields: [brandId], references: [id])
@@ -2355,6 +2366,7 @@ model MarketingSubscription {
   organizationId         String                      @map("organization_id")
   productId              String                      @map("product_id")
   razorpaySubscriptionId String                      @unique @map("razorpay_subscription_id")
+  interval               BillingInterval             @default(MONTHLY)
   status                 MarketingSubscriptionStatus @default(CREATED)
   /// The owner turned auto-renew off; the plan runs to the end of the paid month
   cancelAtPeriodEnd      Boolean                     @default(false) @map("cancel_at_period_end")

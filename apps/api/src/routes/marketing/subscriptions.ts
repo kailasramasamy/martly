@@ -19,7 +19,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
   const entitlements = (organizationId: string) => getEntitlements(app.prisma, organizationId);
 
   app.post("/subscription", owner, async (request, reply) => {
-    const { productId } = z.object({ productId: z.string().uuid() }).parse(request.body);
+    const { productId, interval } = z.object({ productId: z.string().uuid(), interval: z.enum(["MONTHLY", "YEARLY"]).default("MONTHLY") }).parse(request.body);
     const user = getOrgUser(request);
     const [product, org] = await Promise.all([
       app.prisma.adProduct.findUnique({ where: { id: productId } }),
@@ -27,7 +27,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
     ]);
     if (!product) return reply.notFound("Plan not found");
     if (!org.billingName || !org.billingAddress || !org.billingState) return reply.badRequest("Add your billing details before paying");
-    const checkout = await startSubscription(app.prisma, org.id, product, user.sub);
+    const checkout = await startSubscription(app.prisma, org.id, product, interval, user.sub);
     return reply.code(201).send({ success: true, data: checkout });
   });
 
@@ -43,7 +43,8 @@ export async function subscriptionRoutes(app: FastifyInstance) {
     }
     // A plan that starts later was only authorised now; its first charge arrives by webhook when it starts
     if (!sub.startAt) {
-      await recordSubscriptionCharge(app.prisma, sub.razorpaySubscriptionId, { id: body.razorpay_payment_id, amount: sub.product.razorpayPlanAmount ?? 0 });
+      const amount = (sub.interval === "YEARLY" ? sub.product.razorpayYearlyPlanAmount : sub.product.razorpayPlanAmount) ?? 0;
+      await recordSubscriptionCharge(app.prisma, sub.razorpaySubscriptionId, { id: body.razorpay_payment_id, amount });
     }
     return { success: true, data: await entitlements(organizationId) };
   });

@@ -41,7 +41,7 @@ export async function marketingRoutes(app: FastifyInstance) {
       app.prisma.adProduct.findMany({ where: { kind: { in: [...STORE_KINDS] }, isActive: true }, orderBy: [{ kind: "asc" }, { sortOrder: "asc" }] }),
       getMarketingConfig(app.prisma),
     ]);
-    return { success: true, data: products.map((p) => ({ ...p, price: Number(p.price), gstPercent })) };
+    return { success: true, data: products.map((p) => ({ ...p, price: Number(p.price), yearlyPrice: p.yearlyPrice && Number(p.yearlyPrice), gstPercent })) };
   });
 
   app.get("/billing-profile", staff, async (request, reply) => {

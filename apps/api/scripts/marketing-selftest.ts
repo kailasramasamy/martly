@@ -54,6 +54,41 @@ async function trialAndSubscription(userId: string) {
   }
 }
 
+/** Annual billing: a year per charge, a month's allowance at a time, and upgrades judged by price per day */
+async function annualPlans(userId: string) {
+  const org = await prisma.organization.create({ data: { name: "Selftest Annual", slug: `selftest-annual-${Date.now()}` } });
+  const subscribe = async (code: string, interval: "MONTHLY" | "YEARLY", amount: number) => {
+    const product = await prisma.adProduct.findUniqueOrThrow({ where: { code } });
+    const sub = await prisma.marketingSubscription.create({
+      data: { organizationId: org.id, productId: product.id, interval, razorpaySubscriptionId: `sub_annual_${code}_${interval}_${Date.now()}`, createdById: userId, status: "ACTIVE" },
+    });
+    await recordSubscriptionCharge(prisma, sub.razorpaySubscriptionId, { id: `pay_annual_${code}_${interval}_${Date.now()}`, amount });
+  };
+  try {
+    await subscribe("GROWTH", "MONTHLY", 117882);
+    await subscribe("GROWTH", "YEARLY", 1178820);
+    const periods = await prisma.orgPlanPeriod.findMany({ where: { organizationId: org.id }, orderBy: { startsAt: "asc" } });
+    const days = (p: { startsAt: Date; endsAt: Date }) => Math.round((p.endsAt.getTime() - p.startsAt.getTime()) / DAY);
+    ok(periods.length === 2 && days(periods[1]) === 365 && periods[1].startsAt.getTime() === periods[0].endsAt.getTime(),
+      "Growth monthly → annual: the year (365 days) starts when the paid month ends");
+    await subscribe("PRO", "YEARLY", 2948820);
+    const pro = await prisma.orgPlanPeriod.findFirstOrThrow({ where: { organizationId: org.id, product: { code: "PRO" } } });
+    ok(pro.startsAt.getTime() <= Date.now() && days(pro) > 365, "Annual Pro over monthly Growth is an upgrade: starts now with the unused month carried over");
+    const a = await newPromo(org.id, userId);
+    await prisma.promotionCreditEntry.updateMany({ where: { promoId: a.promo.id }, data: { createdAt: new Date(Date.now() - 40 * DAY) } });
+    const ent = await getEntitlements(prisma, org.id);
+    ok(ent.plan?.billingInterval === "YEARLY" && ent.promotions.planTotal === 6 && ent.promotions.planLeft === 6,
+      "Annual Pro: 6 promotions each month; last month's use doesn't count this month");
+  } finally {
+    await prisma.promotionCreditEntry.deleteMany({ where: { organizationId: org.id } });
+    await prisma.promo.deleteMany({ where: { organizationId: org.id } });
+    await prisma.marketingSubscription.deleteMany({ where: { organizationId: org.id } });
+    await prisma.orgPlanPeriod.deleteMany({ where: { organizationId: org.id } });
+    await prisma.adOrder.deleteMany({ where: { organizationId: org.id } });
+    await prisma.organization.delete({ where: { id: org.id } });
+  }
+}
+
 async function main() {
   const user = await prisma.user.findFirstOrThrow({ where: { email: "owner@demogrocers.dev" } });
   const org = await prisma.organization.create({ data: { name: "Selftest Org", slug: `selftest-${Date.now()}` } });
@@ -97,5 +132,9 @@ async function main() {
   }
 }
 main()
-  .then(async () => trialAndSubscription((await prisma.user.findFirstOrThrow({ where: { email: "owner@demogrocers.dev" } })).id))
+  .then(async () => {
+    const { id } = await prisma.user.findFirstOrThrow({ where: { email: "owner@demogrocers.dev" } });
+    await trialAndSubscription(id);
+    await annualPlans(id);
+  })
   .finally(() => prisma.$disconnect());

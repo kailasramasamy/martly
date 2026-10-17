@@ -12,6 +12,8 @@ export const adProductSchema = z.object({
   name: z.string().trim().min(2).max(60),
   description: z.string().trim().max(240).nullish(),
   price: money,
+  /** Store plans: the price for a year paid up front; empty means no annual option */
+  yearlyPrice: money.nullish(),
   durationDays: z.coerce.number().int().min(1).max(365),
   bannerSlots: z.coerce.number().int().min(0).max(100).nullable(),
   promotionCredits: z.coerce.number().int().min(0).max(100),
