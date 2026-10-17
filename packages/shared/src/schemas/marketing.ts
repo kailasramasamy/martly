@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { AdProductKind, BannerActionType, BannerPlacement, DiscountType, INDIAN_STATES } from "../constants/index.js";
+import { AdProductKind, BannerActionType, BannerPlacement, DISCOUNTABLE_TARGETS, DiscountType, INDIAN_STATES } from "../constants/index.js";
 
 const GSTIN = /^\d{2}[A-Z]{5}\d{4}[A-Z][1-9A-Z]Z[0-9A-Z]$/;
 const money = z.coerce.number().min(0).max(10_000_000);
@@ -126,3 +126,45 @@ export const generateBannerImageSchema = z.object({
   actionType: z.nativeEnum(BannerActionType).nullish(),
   actionTarget: z.string().trim().max(200).nullish(),
 });
+
+// ── Manual promotions and their banners ──────────────
+export const promoBannerSchema = z.object({
+  placement: z.nativeEnum(BannerPlacement),
+  imageUrl: z.string().url(),
+  textInImage: z.boolean().default(true),
+  /** Defaults to the promotion's title and subtitle */
+  title: z.string().trim().max(60).nullish(),
+  subtitle: z.string().trim().max(90).nullish(),
+  storeId: z.string().uuid().nullish(),
+  /** Category-page placements: which aisle (any level) the banner sits on */
+  departmentId: z.string().uuid().nullish(),
+  categoryId: z.string().uuid().nullish(),
+  subcategoryId: z.string().uuid().nullish(),
+  sortOrder: z.coerce.number().int().min(0).max(999).default(0),
+});
+export type PromoBannerInput = z.infer<typeof promoBannerSchema>;
+
+export const updatePromoBannerSchema = promoBannerSchema.partial().extend({ isActive: z.boolean().optional() });
+
+export const createManualPromoSchema = z.object({
+  title: z.string().trim().min(2).max(60),
+  subtitle: z.string().trim().max(90).nullish(),
+  actionType: z.nativeEnum(BannerActionType),
+  actionTarget: z.string().trim().max(500).nullish(),
+  discountType: z.nativeEnum(DiscountType).nullish(),
+  discountValue: z.coerce.number().positive().nullish(),
+  durationDays: z.coerce.number().int().min(1).max(90).default(7),
+  /** Launch later at this time; otherwise it waits as Ready (or goes live now with launchNow) */
+  launchAt: z.coerce.date().nullish(),
+  launchNow: z.boolean().default(false),
+  notify: z.boolean().default(false),
+  organizationId: z.string().uuid().optional(),
+  banners: z.array(promoBannerSchema).min(1).max(6),
+})
+  .refine((p) => !p.discountType === !p.discountValue, { message: "Give both a discount type and value, or neither", path: ["discountValue"] })
+  .refine((p) => !p.discountType || (DISCOUNTABLE_TARGETS as readonly string[]).includes(p.actionType), {
+    message: "A discount needs a category, product, collection or brand target", path: ["actionType"],
+  })
+  .refine((p) => p.actionType === "NONE" || !!p.actionTarget, { message: "Choose where the promotion leads", path: ["actionTarget"] })
+  .refine((p) => p.discountType !== "PERCENTAGE" || (p.discountValue ?? 0) <= 90, { message: "A percentage discount can be at most 90%", path: ["discountValue"] });
+export type CreateManualPromoInput = z.infer<typeof createManualPromoSchema>;

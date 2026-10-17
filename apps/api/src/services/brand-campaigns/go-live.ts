@@ -66,10 +66,7 @@ async function startPromotion(deps: Deps, campaign: BrandCampaign, organizationI
     });
   });
   await launchPromo(deps, promo.id);
-  const launched = await prisma.promo.findUniqueOrThrow({ where: { id: promo.id }, select: { bannerId: true } });
-  if (launched.bannerId) {
-    await prisma.banner.update({ where: { id: launched.bannerId }, data: { sponsorType: "BRAND", brandId: campaign.brandId, sortOrder: 1 } });
-  }
+  await prisma.banner.updateMany({ where: { promoId: promo.id }, data: { sponsorType: "BRAND", brandId: campaign.brandId, sortOrder: 1 } });
 }
 
 /** Takes a scheduled campaign live; the SCHEDULED → LIVE claim keeps two instances from starting it twice */

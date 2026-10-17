@@ -98,3 +98,13 @@ export const BANNER_IMAGE_REQUIREMENTS = {
     "No borders, phone frames, QR codes or prices that may change",
   ],
 } as const;
+
+/** AI promotions are drafted by the agent from a brief; manual ones are set up by hand */
+export const PromoKind = {
+  AI: "AI",
+  MANUAL: "MANUAL",
+} as const;
+export type PromoKind = (typeof PromoKind)[keyof typeof PromoKind];
+
+/** What a manual promotion's discount can cover; search and links don't map to a set of products */
+export const DISCOUNTABLE_TARGETS = ["CATEGORY", "PRODUCT", "COLLECTION", "BRAND"] as const;

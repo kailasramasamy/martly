@@ -152,6 +152,7 @@ export interface PromoCopy {
 
 export interface PromoSummary {
   id: string;
+  kind: "AI" | "MANUAL";
   brief: string;
   status: "DRAFTING" | "READY" | "LIVE" | "ENDED" | "FAILED" | "DISCARDED";
   autoLaunch: boolean;
@@ -284,4 +285,30 @@ export interface PromoDetail extends PromoSummary {
   uploadedImage: boolean;
   /** Free redrafts still available while the promo is READY */
   redraftsLeft: number;
+  /** Manual promotions: where their banners lead and what the discount covers */
+  actionType: string | null;
+  actionTarget: string | null;
+  launchAt: string | null;
+  banners: PromoBanner[];
+}
+
+/** A banner a promotion runs, with its last 30 days of results */
+export interface PromoBanner {
+  id: string;
+  placement: string;
+  title: string;
+  subtitle: string | null;
+  imageUrl: string;
+  textInImage: boolean;
+  isActive: boolean;
+  /** An AI promotion's own launch banner, covered by its credit */
+  slotFree: boolean;
+  storeId: string | null;
+  departmentId: string | null;
+  categoryId: string | null;
+  subcategoryId: string | null;
+  sortOrder: number;
+  views: number;
+  taps: number;
+  ctr: number;
 }

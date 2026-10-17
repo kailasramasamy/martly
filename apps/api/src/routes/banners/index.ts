@@ -5,7 +5,6 @@ import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { BannerPlacement, Permission } from "@martly/shared/constants";
 import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
-import { assertBannerSlot, takesSlot } from "../../services/marketing/entitlements.js";
 import { bannerResults, recordBannerEvents } from "../../services/marketing/stats.js";
 import { generateBannerImage } from "../../services/marketing/banner-image.js";
 import { isCurationConfigured } from "../../services/seasonal/index.js";
@@ -13,6 +12,7 @@ import { storeBanners } from "../../services/marketing/banner-feed.js";
 
 // A promotion launches, ends and reverts its own banner; edits made here would drift from it
 const PROMO_OWNED = "This banner belongs to a promotion. Change it from the promotion instead.";
+const CREATE_A_PROMOTION = "Banners now belong to promotions. Create a promotion and add banners to it.";
 
 export async function bannerRoutes(app: FastifyInstance) {
   // Public: fetch active banners by placement for a store
@@ -77,7 +77,7 @@ export async function bannerRoutes(app: FastifyInstance) {
         include: {
           organization: { select: { id: true, name: true } },
           store: { select: { id: true, name: true } },
-          promo: { select: { id: true, status: true } },
+          promo: { select: { id: true, kind: true, status: true } },
         },
       }),
       app.prisma.banner.count({ where }),
@@ -98,7 +98,7 @@ export async function bannerRoutes(app: FastifyInstance) {
       include: {
         organization: { select: { id: true, name: true } },
         store: { select: { id: true, name: true } },
-        promo: { select: { id: true, status: true } },
+        promo: { select: { id: true, kind: true, status: true } },
       },
     });
     if (!banner) return reply.notFound("Banner not found");
@@ -141,24 +141,15 @@ export async function bannerRoutes(app: FastifyInstance) {
         return reply.forbidden("Access denied");
       }
 
-      // ORG_ADMIN: force their org
-      if (user.role !== "SUPER_ADMIN") {
-        body.organizationId = user.organizationId;
-      }
-      // Banners without an organisation are Martly's own; an organisation's banners use its plan's slots
-      const sponsorType = body.organizationId ? "STORE" : "PLATFORM";
+      // A store's banners belong to its promotions; only Martly's own (global) banners are made here
+      if (user.role !== "SUPER_ADMIN" || body.organizationId) return reply.conflict(CREATE_A_PROMOTION);
 
-      const banner = await app.prisma.$transaction(async (tx) => {
-        if (body.organizationId && user.role !== "SUPER_ADMIN" && takesSlot({ sponsorType, isActive: body.isActive ?? true, endsAt: body.endsAt ?? null })) {
-          await assertBannerSlot(tx, body.organizationId);
-        }
-        return tx.banner.create({
-          data: { ...body, sponsorType },
-          include: {
-            organization: { select: { id: true, name: true } },
-            store: { select: { id: true, name: true } },
-          },
-        });
+      const banner = await app.prisma.banner.create({
+        data: { ...body, sponsorType: "PLATFORM" },
+        include: {
+          organization: { select: { id: true, name: true } },
+          store: { select: { id: true, name: true } },
+        },
       });
 
       const response: ApiResponse<typeof banner> = { success: true, data: banner };
@@ -184,20 +175,13 @@ export async function bannerRoutes(app: FastifyInstance) {
         return reply.forbidden("Access denied");
       }
 
-      const after = { ...existing, ...body };
-      const banner = await app.prisma.$transaction(async (tx) => {
-        // Switching a banner back on (or extending an ended one) needs a free slot again
-        if (existing.organizationId && user.role !== "SUPER_ADMIN" && !takesSlot(existing) && takesSlot(after)) {
-          await assertBannerSlot(tx, existing.organizationId);
-        }
-        return tx.banner.update({
-          where: { id: request.params.id },
-          data: body,
-          include: {
-            organization: { select: { id: true, name: true } },
-            store: { select: { id: true, name: true } },
-          },
-        });
+      const banner = await app.prisma.banner.update({
+        where: { id: request.params.id },
+        data: body,
+        include: {
+          organization: { select: { id: true, name: true } },
+          store: { select: { id: true, name: true } },
+        },
       });
 
       const response: ApiResponse<typeof banner> = { success: true, data: banner };

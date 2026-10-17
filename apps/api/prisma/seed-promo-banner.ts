@@ -18,6 +18,13 @@ async function main() {
 
   const startsAt = new Date();
   const endsAt = new Date(Date.now() + 3 * DAY);
+  const promo = await prisma.promo.create({
+    data: {
+      organizationId: org.id, createdById: owner.id, brief: BRIEF, status: "LIVE",
+      discountType: "PERCENTAGE", discountValue: 15, durationDays: 3, startsAt, endsAt,
+    },
+  });
+  // An AI promotion's own launch banner: covered by its credit, so it takes no plan slot
   const banner = await prisma.banner.create({
     data: {
       title: "15% off cooking oils",
@@ -25,14 +32,10 @@ async function main() {
       imageUrl: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=900&h=600&fit=crop",
       placement: "HERO_CAROUSEL",
       organizationId: org.id,
+      promoId: promo.id,
+      slotFree: true,
       startsAt,
       endsAt,
-    },
-  });
-  const promo = await prisma.promo.create({
-    data: {
-      organizationId: org.id, createdById: owner.id, brief: BRIEF, status: "LIVE",
-      discountType: "PERCENTAGE", discountValue: 15, durationDays: 3, startsAt, endsAt, bannerId: banner.id,
     },
   });
   console.log(`Seeded promo ${promo.id} owning banner ${banner.id}`);

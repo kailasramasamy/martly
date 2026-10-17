@@ -7,6 +7,8 @@ import { JudgeRefusedError } from "./judge.js";
 import { applyChanges, restoreChanges } from "./pricing.js";
 import { sendPromoPush } from "./push.js";
 import { MIN_PRODUCTS } from "./tools.js";
+import { assertBannerSlot } from "../marketing/entitlements.js";
+import { productsForTarget } from "./targets.js";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -81,29 +83,48 @@ export async function regeneratePromo(deps: PromoDeps & { fcm: Messaging | null 
 const offerOf = (promo: { discountType: DiscountType | null; discountValue: Prisma.Decimal | null }) =>
   promo.discountType && promo.discountValue ? { type: promo.discountType, value: Number(promo.discountValue) } : null;
 
-/** Goes live in one transaction: discounts, home banner and collection, so a failure leaves nothing half-launched. */
+type LaunchingPromo = Prisma.PromoGetPayload<{ include: { collection: { include: { items: true } }; banners: true } }>;
+
+/** An AI promotion's own home banner, painted with its draft; its credit covers it, so it takes no plan slot */
+async function aiHomeBanner(tx: Prisma.TransactionClient, current: LaunchingPromo, startsAt: Date, endsAt: Date) {
+  const c = current.collection;
+  if (!c) throw new PromoStateError("Only a ready promo can be launched");
+  await tx.banner.create({
+    data: {
+      organizationId: current.organizationId, promoId: current.id, slotFree: true, title: c.title, subtitle: c.subtitle,
+      placement: "HERO_CAROUSEL", imageUrl: c.imageUrl ?? "", imageUrls: c.imageUrls ?? undefined, textInImage: c.textInImage,
+      actionType: "COLLECTION", actionTarget: c.id, sortOrder: 0, startsAt, endsAt,
+    },
+  });
+  await tx.collection.update({ where: { id: c.id }, data: { isActive: true, startsAt, endsAt } });
+  return c.items.map((i) => i.productId);
+}
+
+/** Switches on a manual promotion's banners (each one needing a plan slot) and returns the products its discount covers */
+async function manualBanners(tx: Prisma.TransactionClient, current: LaunchingPromo, startsAt: Date, endsAt: Date) {
+  for (const banner of current.banners) {
+    if (!banner.slotFree) await assertBannerSlot(tx, current.organizationId);
+    await tx.banner.update({ where: { id: banner.id }, data: { isActive: true, startsAt, endsAt } });
+  }
+  return offerOf(current) ? productsForTarget(tx, current.organizationId, current.actionType, current.actionTarget) : [];
+}
+
+/** Goes live in one transaction: discounts, banners and collection, so a failure leaves nothing half-launched. */
 export async function launchPromo(deps: PromoDeps & { fcm: Messaging | null }, promoId: string) {
   const startsAt = new Date();
   const promo = await deps.prisma.$transaction(async (tx) => {
-    const current = await tx.promo.findUniqueOrThrow({ where: { id: promoId }, include: { collection: { include: { items: true } } } });
-    if (current.status !== "READY" || !current.collection) throw new PromoStateError("Only a ready promo can be launched");
+    const current = await tx.promo.findUniqueOrThrow({ where: { id: promoId }, include: { collection: { include: { items: true } }, banners: true } });
+    if (current.status !== "READY") throw new PromoStateError("Only a ready promo can be launched");
     const endsAt = new Date(startsAt.getTime() + current.durationDays * DAY_MS);
-    const c = current.collection;
-    const banner = await tx.banner.create({
-      data: {
-        organizationId: current.organizationId, title: c.title, subtitle: c.subtitle, placement: "HERO_CAROUSEL",
-        imageUrl: c.imageUrl ?? "", imageUrls: c.imageUrls ?? undefined, textInImage: c.textInImage,
-        actionType: "COLLECTION", actionTarget: c.id, sortOrder: 0, startsAt, endsAt,
-      },
-    });
-    await tx.collection.update({ where: { id: c.id }, data: { isActive: true, startsAt, endsAt } });
+    const productIds = current.kind === "AI" ? await aiHomeBanner(tx, current, startsAt, endsAt) : await manualBanners(tx, current, startsAt, endsAt);
     const offer = offerOf(current);
-    const stats = offer
-      ? await applyChanges(tx, promoId, { ...offer, organizationId: current.organizationId, productIds: c.items.map((i) => i.productId), startsAt, endsAt })
+    const stats = offer && productIds.length
+      ? await applyChanges(tx, promoId, { ...offer, organizationId: current.organizationId, productIds, startsAt, endsAt })
       : null;
-    const claimed = await tx.promo.updateMany({ where: { id: promoId, status: "READY" }, data: { status: "LIVE", startsAt, endsAt, bannerId: banner.id } });
+    const claimed = await tx.promo.updateMany({ where: { id: promoId, status: "READY" }, data: { status: "LIVE", startsAt, endsAt, launchAt: null } });
     if (claimed.count === 0) throw new PromoStateError("This promo was launched or discarded meanwhile");
-    return { ...current, imageUrl: c.imageUrl, stats };
+    const image = current.collection?.imageUrl ?? current.banners[0]?.imageUrl ?? null;
+    return { ...current, imageUrl: image, stats };
   });
   const s = promo.stats;
   await logStep(deps.prisma, promoId, s ? `Live: discount on ${s.listings} listings across ${s.stores} stores (${s.keptExisting} kept a bigger discount)` : "Live");
@@ -115,7 +136,7 @@ export async function launchPromo(deps: PromoDeps & { fcm: Messaging | null }, p
   });
 }
 
-/** Takes a live promo down: restores the discounts it overwrote and hides its banner and collection. */
+/** Takes a live promo down: restores the discounts it overwrote and hides its banners and collection. */
 export async function endPromo(prisma: PrismaClient, promoId: string, early: boolean) {
   const endedAt = new Date();
   await prisma.$transaction(async (tx) => {
@@ -127,7 +148,7 @@ export async function endPromo(prisma: PrismaClient, promoId: string, early: boo
     if (claimed.count === 0) throw new PromoStateError("Only a live promo can be ended");
     const offer = offerOf(promo);
     if (offer && promo.startsAt && promo.endsAt) await restoreChanges(tx, promoId, { ...offer, startsAt: promo.startsAt, endsAt: promo.endsAt });
-    if (promo.bannerId) await tx.banner.update({ where: { id: promo.bannerId }, data: { isActive: false } });
+    await tx.banner.updateMany({ where: { promoId }, data: { isActive: false } });
     if (promo.collectionId) await tx.collection.update({ where: { id: promo.collectionId }, data: { isActive: false } });
   });
   await logStep(prisma, promoId, early ? "Ended early; prices restored" : "Ended; prices restored");
@@ -136,22 +157,23 @@ export async function endPromo(prisma: PrismaClient, promoId: string, early: boo
 export async function discardPromo(prisma: PrismaClient, promoId: string) {
   const claimed = await prisma.promo.updateMany({ where: { id: promoId, status: { in: ["READY", "FAILED"] } }, data: { status: "DISCARDED" } });
   if (claimed.count === 0) throw new PromoStateError("Only a ready or failed promo can be discarded");
+  await prisma.banner.updateMany({ where: { promoId }, data: { isActive: false } });
 }
 
-/** Puts an ended promo back to READY with the same art and products, so it can be launched for a fresh window. */
+/** Puts an ended promo back to READY with the same art, products and banners, so it can be launched for a fresh window. */
 export async function reopenPromo(prisma: PrismaClient, promoId: string, charge?: Charge) {
   await prisma.$transaction(async (tx) => {
-    const promo = await tx.promo.findUniqueOrThrow({ where: { id: promoId }, select: { bannerId: true, organizationId: true } });
+    const promo = await tx.promo.findUniqueOrThrow({ where: { id: promoId }, select: { organizationId: true, kind: true } });
     const claimed = await tx.promo.updateMany({
       where: { id: promoId, status: "ENDED" },
-      data: { status: "READY", startsAt: null, endsAt: null, bannerId: null },
+      data: { status: "READY", startsAt: null, endsAt: null },
     });
     if (claimed.count === 0) throw new PromoStateError("Only an ended promo can be used again");
-    // Another run is another promotion
-    if (charge) await charge(tx, { id: promoId, organizationId: promo.organizationId });
-    // The last run's prices are already restored and its banner is off; the next launch makes fresh ones
+    // Another run of an AI promotion is another promotion credit
+    if (charge && promo.kind === "AI") await charge(tx, { id: promoId, organizationId: promo.organizationId });
+    // The last run's prices are already restored; the AI home banner is made afresh at the next launch
     await tx.promoPriceChange.deleteMany({ where: { promoId } });
-    if (promo.bannerId) await tx.banner.delete({ where: { id: promo.bannerId } });
+    await tx.banner.deleteMany({ where: { promoId, slotFree: true } });
   });
   await logStep(prisma, promoId, "Reopened for another run");
 }

@@ -231,6 +231,11 @@ enum PromotionCreditReason {
   ADJUST
 }
 
+enum PromoKind {
+  AI
+  MANUAL
+}
+
 enum PromoCharge {
   PLAN
   TOPUP
@@ -1417,9 +1422,14 @@ model Banner {
   /// Prepaid views for CPM campaigns; the feed stops serving the banner once viewsServed reaches it
   viewCap         Int?             @map("view_cap")
   viewsServed     Int              @default(0) @map("views_served")
+  /// The promotion this banner belongs to
+  promoId         String?          @map("promo_id")
+  /// Covered by an AI promotion's credit rather than a plan slot
+  slotFree        Boolean          @default(false) @map("slot_free")
   brandCampaignId String?          @unique @map("brand_campaign_id")
   createdAt       DateTime         @default(now()) @map("created_at")
   updatedAt       DateTime         @updatedAt @map("updated_at")
+  promo           Promo?           @relation(fields: [promoId], references: [id], onDelete: SetNull)
 
   brand         Brand?            @relation(fields: [brandId], references: [id])
   brandCampaign BrandCampaign?    @relation(fields: [brandCampaignId], references: [id], onDelete: SetNull)
@@ -1429,12 +1439,12 @@ model Banner {
   department    Department?       @relation(fields: [departmentId], references: [id])
   category      Category?         @relation(fields: [categoryId], references: [id])
   subcategory   Subcategory?      @relation(fields: [subcategoryId], references: [id])
-  promo         Promo?
 
   @@index([placement, isActive])
   @@index([organizationId])
   @@index([storeId])
   @@index([brandId])
+  @@index([promoId])
   @@map("banners")
 }
 
@@ -1857,40 +1867,45 @@ model SearchEvent {
 
 // A promo drafted by the promo agent from an admin's one-line brief: banner + collection + optional discount
 model Promo {
-  id               String        @id @default(uuid())
-  organizationId   String        @map("organization_id")
-  createdById      String        @map("created_by_id")
+  id               String            @id @default(uuid())
+  organizationId   String            @map("organization_id")
+  createdById      String            @map("created_by_id")
   brief            String
-  status           PromoStatus   @default(DRAFTING)
-  autoLaunch       Boolean       @default(false) @map("auto_launch")
-  notify           Boolean       @default(true)
-  failureReason    String?       @map("failure_reason")
-  assumptions      String[]      @default([])
-  agentLog         Json          @default("[]") @map("agent_log")
+  kind             PromoKind         @default(AI)
+  status           PromoStatus       @default(DRAFTING)
+  autoLaunch       Boolean           @default(false) @map("auto_launch")
+  notify           Boolean           @default(true)
+  failureReason    String?           @map("failure_reason")
+  assumptions      String[]          @default([])
+  agentLog         Json              @default("[]") @map("agent_log")
   copy             Json?
   push             Json?
-  discountType     DiscountType? @map("discount_type")
-  discountValue    Decimal?      @map("discount_value") @db.Decimal(10, 2)
-  durationDays     Int           @default(7) @map("duration_days")
-  startsAt         DateTime?     @map("starts_at")
-  endsAt           DateTime?     @map("ends_at")
-  collectionId     String?       @unique @map("collection_id")
-  bannerId         String?       @unique @map("banner_id")
-  campaignId       String?       @unique @map("campaign_id")
-  chargedFrom      PromoCharge?  @map("charged_from")
-  regenerations    Int           @default(0)
+  discountType     DiscountType?     @map("discount_type")
+  discountValue    Decimal?          @map("discount_value") @db.Decimal(10, 2)
+  durationDays     Int               @default(7) @map("duration_days")
+  startsAt         DateTime?         @map("starts_at")
+  endsAt           DateTime?         @map("ends_at")
+  /// Manual promotions: what their banners open, and what their discount covers
+  actionType       BannerActionType? @map("action_type")
+  actionTarget     String?           @map("action_target")
+  /// A ready promotion launches itself at this time
+  launchAt         DateTime?         @map("launch_at")
+  collectionId     String?           @unique @map("collection_id")
+  campaignId       String?           @unique @map("campaign_id")
+  chargedFrom      PromoCharge?      @map("charged_from")
+  regenerations    Int               @default(0)
   /// The owner's own banner image; when set, no AI art is generated
-  uploadedImageUrl String?       @map("uploaded_image_url")
-  brandCampaignId  String?       @map("brand_campaign_id")
-  createdAt        DateTime      @default(now()) @map("created_at")
-  updatedAt        DateTime      @updatedAt @map("updated_at")
+  uploadedImageUrl String?           @map("uploaded_image_url")
+  brandCampaignId  String?           @map("brand_campaign_id")
+  createdAt        DateTime          @default(now()) @map("created_at")
+  updatedAt        DateTime          @updatedAt @map("updated_at")
 
   organization  Organization           @relation(fields: [organizationId], references: [id])
   createdBy     User                   @relation(fields: [createdById], references: [id])
   collection    Collection?            @relation(fields: [collectionId], references: [id], onDelete: SetNull)
-  banner        Banner?                @relation(fields: [bannerId], references: [id], onDelete: SetNull)
   campaign      NotificationCampaign?  @relation(fields: [campaignId], references: [id], onDelete: SetNull)
   brandCampaign BrandCampaign?         @relation(fields: [brandCampaignId], references: [id], onDelete: SetNull)
+  banners       Banner[]
   priceChanges  PromoPriceChange[]
   creditEntries PromotionCreditEntry[]
 

@@ -1,21 +1,26 @@
-import type { PromoDetail, PromoProduct, PromoSummary } from "@martly/shared/types";
+import type { PromoBanner, PromoDetail, PromoProduct, PromoSummary } from "@martly/shared/types";
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { describeProducts, type ProductFacts } from "./catalog.js";
 import { planChanges } from "./pricing.js";
 import { getMarketingConfig } from "../marketing/config.js";
+import { bannerResults } from "../marketing/stats.js";
+import { productsForTarget } from "./targets.js";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
+const MAX_LISTED_PRODUCTS = 60;
 
 export const promoSummaryInclude = {
   collection: { select: { title: true, imageUrl: true, _count: { select: { items: true } } } },
+  banners: { orderBy: { createdAt: "asc" }, take: 1, select: { imageUrl: true } },
 } satisfies Prisma.PromoInclude;
 
 type SummaryRow = Prisma.PromoGetPayload<{ include: typeof promoSummaryInclude }>;
 
 export function toSummary(p: SummaryRow): PromoSummary {
   return {
-    id: p.id, brief: p.brief, status: p.status, autoLaunch: p.autoLaunch, notify: p.notify,
-    title: p.collection?.title ?? null, imageUrl: p.collection?.imageUrl ?? null,
+    id: p.id, kind: p.kind, brief: p.brief, status: p.status, autoLaunch: p.autoLaunch, notify: p.notify,
+    title: p.collection?.title ?? (p.copy as { en?: { title?: string } } | null)?.en?.title ?? null,
+    imageUrl: p.collection?.imageUrl ?? p.banners[0]?.imageUrl ?? null,
     discountType: p.discountType, discountValue: p.discountValue == null ? null : Number(p.discountValue),
     productCount: p.collection?._count.items ?? 0,
     startsAt: p.startsAt?.toISOString() ?? null, endsAt: p.endsAt?.toISOString() ?? null,
@@ -35,6 +40,20 @@ function toProduct(f: ProductFacts, type: string | null, value: number | null): 
     priceMin: f.price_min, priceMax: f.price_max,
     promoPriceMin: discounted(f.price_min, type, value), promoPriceMax: discounted(f.price_max, type, value),
   };
+}
+
+async function promoBanners(prisma: PrismaClient, promoId: string): Promise<PromoBanner[]> {
+  const [banners, results] = await Promise.all([
+    prisma.banner.findMany({ where: { promoId }, orderBy: [{ slotFree: "desc" }, { createdAt: "asc" }] }),
+    bannerResults(prisma, { promoId }, 30),
+  ]);
+  const stats = new Map(results.map((r) => [r.id, r]));
+  return banners.map((b) => ({
+    id: b.id, placement: b.placement, title: b.title, subtitle: b.subtitle, imageUrl: b.imageUrl, textInImage: b.textInImage,
+    isActive: b.isActive, slotFree: b.slotFree, storeId: b.storeId, departmentId: b.departmentId, categoryId: b.categoryId,
+    subcategoryId: b.subcategoryId, sortOrder: b.sortOrder,
+    views: stats.get(b.id)?.views ?? 0, taps: stats.get(b.id)?.taps ?? 0, ctr: stats.get(b.id)?.ctr ?? 0,
+  }));
 }
 
 /** Before launch: what launching now would change. After: what it did change. */
@@ -68,11 +87,12 @@ export async function toDetail(prisma: PrismaClient, promoId: string, organizati
   });
   if (!p) return null;
   const c = p.collection;
-  const productIds = c?.items.map((i) => i.productId) ?? [];
+  // A manual promotion covers whatever its target holds; show the first few, count them all
+  const productIds = c ? c.items.map((i) => i.productId) : await productsForTarget(prisma, p.organizationId, p.actionType, p.actionTarget);
   const value = p.discountValue == null ? null : Number(p.discountValue);
-  const facts = await describeProducts(prisma, p.organizationId, productIds);
+  const facts = await describeProducts(prisma, p.organizationId, productIds.slice(0, MAX_LISTED_PRODUCTS));
   return {
-    ...toSummary(p), collectionId: p.collectionId, assumptions: p.assumptions,
+    ...toSummary(p), productCount: productIds.length, collectionId: p.collectionId, assumptions: p.assumptions,
     log: p.agentLog as PromoDetail["log"], copy: p.copy as PromoDetail["copy"], push: p.push as PromoDetail["push"],
     images: c ? ((c.imageUrls as Record<string, string> | null) ?? (c.imageUrl ? { art: c.imageUrl } : null)) : null,
     textInImage: c?.textInImage ?? false,
@@ -81,5 +101,7 @@ export async function toDetail(prisma: PrismaClient, promoId: string, organizati
     pushSent: p.campaign?.sentAt ? { recipients: p.campaign.recipientCount, at: p.campaign.sentAt.toISOString() } : null,
     chargedFrom: p.chargedFrom, uploadedImage: Boolean(p.uploadedImageUrl),
     redraftsLeft: Math.max(0, (await getMarketingConfig(prisma)).freeRegenerations - p.regenerations),
+    actionType: p.actionType, actionTarget: p.actionTarget, launchAt: p.launchAt?.toISOString() ?? null,
+    banners: await promoBanners(prisma, p.id),
   };
 }

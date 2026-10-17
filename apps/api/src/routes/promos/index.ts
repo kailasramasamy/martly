@@ -11,6 +11,7 @@ import { isMediaUrl } from "../../services/media.js";
 import { promoSummaryInclude, toDetail, toSummary } from "../../services/promo/view.js";
 import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
+import { manualPromoRoutes } from "./manual.js";
 
 // SUPER_ADMIN sees every organisation's promos; ORG_ADMIN only their own
 const orgFilter = (request: FastifyRequest) => {
@@ -19,6 +20,7 @@ const orgFilter = (request: FastifyRequest) => {
 };
 
 export async function promoRoutes(app: FastifyInstance) {
+  await app.register(manualPromoRoutes);
   const deps = () => ({ prisma: app.prisma, fcm: app.fcm, log: app.log });
 
   async function detailOr404(request: FastifyRequest<{ Params: { id: string } }>) {

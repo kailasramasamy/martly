@@ -30,10 +30,10 @@ function monthWindow(at: Date) {
   return { start, end: new Date(`${next}-01T00:00:00+05:30`) };
 }
 
-/** Banners that occupy a slot: the org's own, switched on, not owned by a promotion and not yet over */
+/** Banners that occupy a slot: the org's own, switched on and not yet over, except an AI promotion's launch banner */
 export function slotBannerWhere(organizationId: string, now = new Date()): Prisma.BannerWhereInput {
   return {
-    organizationId, sponsorType: "STORE", isActive: true, promo: { is: null },
+    organizationId, sponsorType: "STORE", isActive: true, slotFree: false,
     OR: [{ endsAt: null }, { endsAt: { gt: now } }],
   };
 }
@@ -102,11 +102,6 @@ export async function refundPromotion(prisma: PrismaClient, promoId: string) {
       });
     }
   });
-}
-
-/** Whether a banner in this state occupies one of the plan's slots */
-export function takesSlot(b: { sponsorType: string; isActive: boolean; endsAt: Date | null }, now = new Date()) {
-  return b.sponsorType === "STORE" && b.isActive && (!b.endsAt || b.endsAt > now);
 }
 
 /** Refuses a new or re-enabled banner when every slot of the plan is taken; locks so two saves can't share a slot */
