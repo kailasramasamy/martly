@@ -4,6 +4,8 @@ import { BannerPlacementLabels, BannerActionTypeLabels } from "@martly/shared/co
 import { BannerImageCard, BannerSlotsNote, useBannerEntitlements, useBannerSaveErrors } from "./banner-shared";
 import { useList } from "@refinedev/core";
 import { Navigate } from "react-router";
+import { useEffect } from "react";
+import { CategoryTargetField, pathTo, useCategoryTree, withCategoryTarget } from "./category-target";
 
 const placementOptions = Object.entries(BannerPlacementLabels).map(([value, label]) => ({ value, label }));
 const actionTypeOptions = Object.entries(BannerActionTypeLabels).map(([value, label]) => ({ value, label }));
@@ -22,12 +24,20 @@ export const BannerEdit = () => {
   const collections = collectionsData?.data ?? [];
   const stores = storesData?.data ?? [];
 
-  const promo = queryResult?.data?.data?.promo as { id: string } | null | undefined;
+  const categoryTree = useCategoryTree();
+  const record = queryResult?.data?.data;
+  // Show the saved category target as its full path, once both the banner and the tree have loaded
+  useEffect(() => {
+    if (record?.actionType !== "CATEGORY" || !record.actionTarget || !categoryTree.length) return;
+    form.setFieldValue("actionTargetPath", pathTo(categoryTree, record.actionTarget as string) ?? undefined);
+  }, [record, categoryTree, form]);
+
+  const promo = record?.promo as { id: string } | null | undefined;
   if (promo) return <Navigate to={`/promos/show/${promo.id}`} replace />;
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
-      <Form {...formProps} layout="vertical">
+      <Form {...formProps} onFinish={(values) => formProps.onFinish?.(withCategoryTarget(values as Record<string, unknown>))} layout="vertical">
         <Row gutter={24}>
           <Col xs={24} lg={14}>
             <Card title="Banner Details" size="small">
@@ -50,16 +60,7 @@ export const BannerEdit = () => {
                 </Col>
               </Row>
 
-              {actionType === "CATEGORY" && (
-                <Form.Item name="actionTarget" label="Target Category" rules={[{ required: true }]}>
-                  <Select
-                    showSearch
-                    optionFilterProp="label"
-                    options={categories.map((c: any) => ({ value: c.id, label: c.name }))}
-                    placeholder="Select a category"
-                  />
-                </Form.Item>
-              )}
+              {actionType === "CATEGORY" && <CategoryTargetField options={categoryTree} />}
               {actionType === "PRODUCT" && (
                 <Form.Item name="actionTarget" label="Target Product ID" rules={[{ required: true }]}>
                   <Input placeholder="Product UUID" />

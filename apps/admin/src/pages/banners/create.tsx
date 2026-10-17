@@ -1,31 +1,12 @@
-import { useState, useEffect } from "react";
 import { Create, useForm } from "@refinedev/antd";
 import { Form, Input, Select, InputNumber, Switch, DatePicker, Card, Row, Col, Cascader } from "antd";
 import { BannerPlacementLabels, BannerActionTypeLabels } from "@martly/shared/constants";
 import { BannerImageCard, BannerSlotsNote, useBannerEntitlements, useBannerSaveErrors } from "./banner-shared";
 import { useList } from "@refinedev/core";
-import { axiosInstance } from "../../providers/data-provider";
+import { CategoryTargetField, useCategoryTree, withCategoryTarget } from "./category-target";
 
 const placementOptions = Object.entries(BannerPlacementLabels).map(([value, label]) => ({ value, label }));
 const actionTypeOptions = Object.entries(BannerActionTypeLabels).map(([value, label]) => ({ value, label }));
-
-interface SubcategoryNode { id: string; name: string; }
-interface CategoryNode { id: string; name: string; subcategories: SubcategoryNode[]; }
-interface DepartmentNode { id: string; name: string; categories: CategoryNode[]; }
-
-interface CascaderOption { value: string; label: string; children?: CascaderOption[]; }
-
-function buildCascaderOptions(departments: DepartmentNode[]): CascaderOption[] {
-  return departments.map((d) => ({
-    value: d.id,
-    label: d.name,
-    children: d.categories.map((c) => ({
-      value: c.id,
-      label: c.name,
-      children: c.subcategories.map((s) => ({ value: s.id, label: s.name })),
-    })),
-  }));
-}
 
 export const BannerCreate = () => {
   const { formProps, saveButtonProps, form } = useForm({ resource: "banners", ...useBannerSaveErrors() });
@@ -33,12 +14,7 @@ export const BannerCreate = () => {
   const placement = Form.useWatch("placement", form);
   const { isOrgUser, entitlements } = useBannerEntitlements();
 
-  const [cascaderOptions, setCascaderOptions] = useState<CascaderOption[]>([]);
-  useEffect(() => {
-    axiosInstance.get("/categories/tree").then((res) => {
-      setCascaderOptions(buildCascaderOptions(res.data.data));
-    }).catch(() => {});
-  }, []);
+  const cascaderOptions = useCategoryTree();
 
   const { data: collectionsData } = useList({ resource: "collections", pagination: { pageSize: 200 } });
   const { data: storesData } = useList({ resource: "stores", pagination: { pageSize: 200 } });
@@ -56,7 +32,7 @@ export const BannerCreate = () => {
       else if (path.length === 3) values.subcategoryId = path[2];
     }
     delete values.categoryPath;
-    originalOnFinish?.(values);
+    originalOnFinish?.(withCategoryTarget(values));
   };
 
   return (
@@ -84,22 +60,7 @@ export const BannerCreate = () => {
                 </Col>
               </Row>
 
-              {actionType === "CATEGORY" && (
-                <Form.Item name="actionTarget" label="Target Category" rules={[{ required: true }]}>
-                  <Cascader
-                    options={cascaderOptions}
-                    changeOnSelect
-                    placeholder="Select a department, category, or subcategory"
-                    showSearch={{
-                      filter: (input, path) =>
-                        path.some((opt) => String(opt.label).toLowerCase().includes(input.toLowerCase())),
-                    }}
-                    onChange={(path) => {
-                      if (path?.length) form.setFieldValue("actionTarget", path[path.length - 1]);
-                    }}
-                  />
-                </Form.Item>
-              )}
+              {actionType === "CATEGORY" && <CategoryTargetField options={cascaderOptions} />}
               {actionType === "PRODUCT" && (
                 <Form.Item name="actionTarget" label="Target Product ID" rules={[{ required: true }]}>
                   <Input placeholder="Product UUID" />
