@@ -13,6 +13,7 @@ import {
   NativeScrollEvent,
 } from "react-native";
 import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
+import { recordProductView } from "../../lib/recently-viewed";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
@@ -285,6 +286,10 @@ export default function ProductDetailScreen() {
       navigation.setOptions({ title: getLocalizedName(product) });
     }
   }, [product?.name, product?.translations, navigation, getLocalizedName]);
+
+  useEffect(() => {
+    if (product?.id) recordProductView(product.id);
+  }, [product?.id]);
 
   useEffect(() => {
     if (!id) return;

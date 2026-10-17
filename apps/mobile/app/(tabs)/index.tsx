@@ -26,6 +26,7 @@ import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
 import { FEATURED_CARD_WIDTH } from "../../components/FeaturedProductCard";
 import { ProductList } from "../../components/ProductList";
+import { RecentlyViewedRail } from "../../components/home/RecentlyViewedRail";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { FloatingCart } from "../../components/FloatingCart";
 import { HomeScreenSkeleton } from "../../components/SkeletonLoader";
@@ -300,6 +301,8 @@ export default function HomeScreen() {
               {renderProductList(homeFeed.buyAgain)}
             </View>
           )}
+
+          {selectedStore && <RecentlyViewedRail storeId={selectedStore.id} />}
 
           {/* ── Shop by Category ── */}
           {homeFeed && homeFeed.departments.length > 0 && (

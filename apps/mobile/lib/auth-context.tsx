@@ -4,6 +4,7 @@ import { setAccessToken, setTokenRefresher, api } from "./api";
 import { registerForPushNotifications, unregisterPushToken } from "./notifications";
 import type { AuthTokens, OrgSummary } from "@martly/shared/types";
 import { API_URL } from "./config";
+import { clearRecentlyViewed } from "./recently-viewed";
 
 export interface UserInfo {
   id: string;
@@ -125,6 +126,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setAccessToken(null);
     setUser(null);
     setIsAuthenticated(false);
+    clearRecentlyViewed();
     await SecureStore.deleteItemAsync(ACCESS_TOKEN_KEY);
     await SecureStore.deleteItemAsync(REFRESH_TOKEN_KEY);
   }, []);
