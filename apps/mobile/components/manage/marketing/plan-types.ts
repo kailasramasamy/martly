@@ -5,6 +5,17 @@ export interface Entitlements {
   promotions: { planUsed: number; planTotal: number; planLeft: number; topUpBalance: number; resetsAt: string | null };
   pushIncluded: boolean;
   aiImages: { used: number; total: number };
+  onPaidPlan: boolean;
+  trial: { available: boolean; endsAt: string | null };
+  subscription: PlanSubscription | null;
+}
+
+export interface PlanSubscription {
+  status: "CREATED" | "ACTIVE" | "PENDING" | "HALTED";
+  productName: string;
+  productCode: string;
+  cancelAtPeriodEnd: boolean;
+  renewsAt: string | null;
 }
 
 export interface AdProduct {
@@ -34,6 +45,13 @@ export interface AdOrderCheckout {
   orderId: string;
   total: number;
   checkout: { orderId: string; amount: number; currency: string; keyId: string };
+}
+
+export interface SubscriptionCheckout {
+  subscriptionId: string;
+  keyId: string;
+  amount: number;
+  startsAt: string | null;
 }
 
 export interface AdOrder {

@@ -68,14 +68,14 @@ async function trialAndRenewal(db: Db, organizationId: string, period: { isTrial
     db.orgPlanPeriod.count({ where: { organizationId, isTrial: false } }),
     db.marketingSubscription.findFirst({
       where: { organizationId, status: { in: ["ACTIVE", "PENDING", "HALTED", "CREATED"] }, OR: [{ status: { not: "CREATED" } }, { startAt: { not: null } }] },
-      orderBy: { createdAt: "desc" }, include: { product: { select: { name: true } } },
+      orderBy: { createdAt: "desc" }, include: { product: { select: { name: true, code: true } } },
     }),
     db.orgPlanPeriod.findFirst({ where: { organizationId, endsAt: { gt: new Date() } }, orderBy: { endsAt: "desc" }, select: { endsAt: true } }),
   ]);
   return {
     trial: { available: !org.trialUsedAt && paidPeriods === 0, endsAt: period?.isTrial ? period.endsAt : null },
     subscription: subscription && {
-      status: subscription.status, productName: subscription.product.name, cancelAtPeriodEnd: subscription.cancelAtPeriodEnd,
+      status: subscription.status, productName: subscription.product.name, productCode: subscription.product.code, cancelAtPeriodEnd: subscription.cancelAtPeriodEnd,
       /** Next charge (or, once cancelled, when the paid time runs out) */
       renewsAt: subscription.startAt && subscription.status === "CREATED" ? subscription.startAt : lastPeriod?.endsAt ?? null,
     },

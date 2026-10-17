@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { App } from "antd";
+import dayjs from "dayjs";
 import { axiosInstance } from "../../providers/data-provider";
 import { payWithRazorpay } from "../../components/RazorpayPay";
 import { BillingModal, hasBilling } from "./billing-form";
@@ -14,15 +15,27 @@ export function usePurchase(profile: BillingProfile | null, onProfileSaved: (p: 
   const [buying, setBuying] = useState<string | null>(null);
   const [needsBilling, setNeedsBilling] = useState<Pending | null>(null);
 
-  const pay = async ({ product, quantity }: Pending) => {
-    setBuying(product.id);
+  const payOrder = async ({ product, quantity }: Pending) => {
+    const order = (await axiosInstance.post("/marketing/orders", { productId: product.id, quantity })).data.data;
+    const payment = await payWithRazorpay(order.checkout, product.name);
+    await axiosInstance.post(`/marketing/orders/${order.orderId}/verify`, payment);
+    return `${product.name} is active.`;
+  };
+
+  const paySubscription = async ({ product }: Pending) => {
+    const sub = (await axiosInstance.post("/marketing/subscription", { productId: product.id })).data.data;
+    const payment = await payWithRazorpay({ subscriptionId: sub.subscriptionId, keyId: sub.keyId }, product.name);
+    await axiosInstance.post("/marketing/subscription/verify", payment);
+    if (!sub.startsAt) return `${product.name} is active and renews automatically.`;
+    return `Your ${product.name} plan starts on ${dayjs(sub.startsAt).format("D MMM YYYY")}; you won't be charged until then.`;
+  };
+
+  const pay = async (pending: Pending) => {
+    setBuying(pending.product.id);
     try {
-      const res = await axiosInstance.post("/marketing/orders", { productId: product.id, quantity });
-      const order = res.data.data;
-      const payment = await payWithRazorpay(order.checkout, product.name);
-      await axiosInstance.post(`/marketing/orders/${order.orderId}/verify`, payment);
+      const description = await (pending.product.kind === "STORE_PLAN" ? paySubscription(pending) : payOrder(pending));
       await onPaid();
-      notification.success({ message: "Payment received", description: `${product.name} is active.` });
+      notification.success({ message: "Payment received", description });
     } catch (err) {
       notification.error({ message: errorMessage(err, "Could not complete the purchase") });
     } finally {

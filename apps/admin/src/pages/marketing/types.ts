@@ -40,4 +40,13 @@ export interface Entitlements {
   promotions: { planUsed: number; planTotal: number; planLeft: number; topUpBalance: number; resetsAt: string | null };
   pushIncluded: boolean;
   aiImages: { used: number; total: number };
+  onPaidPlan: boolean;
+  trial: { available: boolean; endsAt: string | null };
+  subscription: {
+    status: "CREATED" | "ACTIVE" | "PENDING" | "HALTED";
+    productName: string;
+    productCode: string;
+    cancelAtPeriodEnd: boolean;
+    renewsAt: string | null;
+  } | null;
 }

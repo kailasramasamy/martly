@@ -5,24 +5,34 @@ import { WebView } from "react-native-webview";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../constants/theme";
 
-export interface RazorpayCheckoutProps {
+interface CheckoutBase {
   visible: boolean;
   keyId: string;
-  orderId: string;
-  amount: number;
-  currency: string;
   name?: string;
   description?: string;
   customerId?: string;
   prefill?: { email?: string; contact?: string; name?: string };
-  onSuccess: (data: { razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string }) => void;
   onCancel: () => void;
 }
+
+export interface OrderPayment { razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string }
+export interface SubscriptionPayment { razorpay_payment_id: string; razorpay_subscription_id: string; razorpay_signature: string }
+
+/** Pay either a one-off order (orderId + amount + currency) or a recurring subscription (subscriptionId) */
+export type RazorpayCheckoutProps = CheckoutBase & (
+  | { orderId: string; amount: number; currency: string; subscriptionId?: undefined; onSuccess: (data: OrderPayment) => void }
+  | { subscriptionId: string; orderId?: undefined; amount?: undefined; currency?: undefined; onSuccess: (data: SubscriptionPayment) => void }
+);
+
+type PaymentSource = { order_id: string; amount: number; currency: string } | { subscription_id: string };
+
+const paymentSource = (p: RazorpayCheckoutProps): PaymentSource =>
+  p.subscriptionId === undefined ? { order_id: p.orderId, amount: p.amount, currency: p.currency } : { subscription_id: p.subscriptionId };
 
 const isExpoGo = Constants.executionEnvironment === ExecutionEnvironment.StoreClient;
 
 // Resolve native SDK at module load — returns null in Expo Go (native module missing)
-let RazorpayNative: { open: (options: Record<string, unknown>) => Promise<{ razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string }> } | null = null;
+let RazorpayNative: { open: (options: Record<string, unknown>) => Promise<OrderPayment & SubscriptionPayment> } | null = null;
 if (!isExpoGo) {
   try {
     RazorpayNative = require("react-native-razorpay").default;
@@ -32,7 +42,8 @@ if (!isExpoGo) {
 }
 
 // ── Native SDK (production / dev client) ──────────────────
-function NativeCheckout({ visible, keyId, orderId, amount, currency, name = "Martly", description = "Order Payment", customerId, prefill, onSuccess, onCancel }: RazorpayCheckoutProps) {
+function NativeCheckout(props: RazorpayCheckoutProps) {
+  const { visible, keyId, name = "Martly", description = "Order Payment", customerId, prefill, onSuccess, onCancel } = props;
   const openedRef = useRef(false);
 
   useEffect(() => {
@@ -41,11 +52,9 @@ function NativeCheckout({ visible, keyId, orderId, amount, currency, name = "Mar
 
     RazorpayNative.open({
       key: keyId,
-      amount,
-      currency,
+      ...paymentSource(props),
       name,
       description,
-      order_id: orderId,
       ...(customerId ? { customer_id: customerId } : {}),
       remember_customer: true,
       prefill: {
@@ -57,7 +66,7 @@ function NativeCheckout({ visible, keyId, orderId, amount, currency, name = "Mar
     })
       .then((data) => {
         openedRef.current = false;
-        onSuccess(data);
+        (onSuccess as (d: typeof data) => void)(data);
       })
       .catch(() => {
         openedRef.current = false;
@@ -74,7 +83,8 @@ function NativeCheckout({ visible, keyId, orderId, amount, currency, name = "Mar
 }
 
 // ── WebView fallback (Expo Go / native SDK unavailable) ───
-function WebViewCheckout({ visible, keyId, orderId, amount, currency, name = "Martly", description = "Order Payment", customerId, prefill, onSuccess, onCancel }: RazorpayCheckoutProps) {
+function WebViewCheckout(props: RazorpayCheckoutProps) {
+  const { visible, keyId, name = "Martly", description = "Order Payment", customerId, prefill, onSuccess, onCancel } = props;
   const html = `
 <!DOCTYPE html>
 <html>
@@ -94,15 +104,13 @@ function WebViewCheckout({ visible, keyId, orderId, amount, currency, name = "Ma
   <script>
     var options = {
       key: ${JSON.stringify(keyId)},
-      amount: ${amount},
-      currency: ${JSON.stringify(currency)},
+      ...${JSON.stringify(paymentSource(props))},
       name: ${JSON.stringify(name)},
       description: ${JSON.stringify(description)},
-      order_id: ${JSON.stringify(orderId)},
       ${customerId ? `customer_id: ${JSON.stringify(customerId)},` : ""}
       remember_customer: true,
       prefill: ${JSON.stringify(prefill ?? {})},
-      theme: { color: colors.primary },
+      theme: { color: ${JSON.stringify(colors.primary)} },
       modal: { ondismiss: function() { window.ReactNativeWebView.postMessage(JSON.stringify({ event: "cancelled" })); } },
       handler: function(response) {
         window.ReactNativeWebView.postMessage(JSON.stringify({ event: "success", data: response }));
@@ -145,7 +153,7 @@ function WebViewCheckout({ visible, keyId, orderId, amount, currency, name = "Ma
               try {
                 const msg = JSON.parse(event.nativeEvent.data);
                 if (msg.event === "success") {
-                  onSuccess(msg.data);
+                  (onSuccess as (d: unknown) => void)(msg.data);
                 } else if (msg.event === "cancelled" || msg.event === "failed") {
                   onCancel();
                 }

@@ -7,7 +7,8 @@ Banners and AI promotions are paid. Store owners buy a monthly plan (plus top-up
 | Buyer | Package | Shown where |
 |---|---|---|
 | Store owner | **Plan**: Free ₹0 (0 promotions, 0 AI images), Growth ₹999/mo (2 promotions, 2 AI images), Pro ₹2,499/mo (6 promotions, 6 AI images, push) | Only that owner's stores |
-| Store owner | **Extra promotion** ₹399 (never expires) | Only that owner's stores |
+| Store owner | **Extra promotion** ₹599 (never expires; sold only on Growth/Pro) | Only that owner's stores |
+| Store owner | **14-day Growth trial**, once per organisation, free | Only that owner's stores |
 | Brand | **Brand banner** ₹7,500/week (home carousel) | Every store that stocks the brand |
 | Brand | **Category takeover** ₹4,500/week (top of one category) | Every store that stocks the brand |
 | Brand | **Brand promotion** ₹15,000/week (discount on the brand's products + home banner) | Every organisation that takes part |
@@ -29,11 +30,13 @@ A store's only marketing object is the **promotion**: one banner in the home car
 ## Store owner flow
 
 1. **Marketing plan** (admin web or the Manage app): plan in force, promotions left this month (+ extras), AI images left, push, plan cards.
-2. Billing details once (name, optional GSTIN, address, state), then Razorpay checkout. Same or cheaper plan bought while one runs → queues after it; upgrade → starts now with the unused value carried over as extra days.
-3. **Promotions → New**: AI or Manual (both show "Uses 1 promotion · N left").
-4. **Expiry**: with no paid period covering today the organisation is on Free; promotions already running finish their run. Owners get a reminder 3 days before a plan ends unless the next month is paid.
-5. **Results**: per promotion — views, taps and tap rate of its banner, and orders/units/revenue on its products while it ran.
-6. **Brand ads**: owners can switch brand ads off, block brands (default: nothing blocked) and opt out of a scheduled brand promotion. Blocking hides every banner of that brand immediately.
+2. **Trial**: an organisation that never had a plan can start a free 14-day Growth trial (2 promotions, 2 AI images) from the Marketing plan page. Upgrading out of it starts the paid plan now (the trial carries nothing).
+3. **Auto-renew**: plans are Razorpay subscriptions (UPI AutoPay or card mandate) billed monthly at price + GST. Billing details first (name, optional GSTIN, address, state). An upgrade replaces the running subscription now and carries the unused value of the old plan as extra days; the same or a cheaper plan authorises its mandate now and is first charged when the current month (or trial) ends. Every charge (checkout handler or `subscription.charged` webhook, whichever arrives first) creates one GST invoice and one month. **Cancel auto-renew** keeps the plan until the end of the paid month; buying it again turns renewal back on from then. A failing renewal (`subscription.halted`) notifies the owners. No "plan ends in 3 days" reminder is sent while a plan renews itself.
+4. **Extra promotions** (₹599) can be bought only while a paid plan (not the trial) is in force, so a plan is always the cheaper way to get promotions.
+5. **Promotions → New**: AI or Manual (both show "Uses 1 promotion · N left").
+6. **Expiry**: with no paid period covering today the organisation is on Free; promotions already running finish their run. Owners get a reminder 3 days before a plan ends unless the next month is paid.
+7. **Results**: per promotion — views, taps and tap rate of its banner, and orders/units/revenue on its products while it ran.
+8. **Brand ads**: owners can switch brand ads off, block brands (default: nothing blocked) and opt out of a scheduled brand promotion. Blocking hides every banner of that brand immediately.
 
 ## Brand flow
 
@@ -64,7 +67,7 @@ A store's only marketing object is the **promotion**: one banner in the home car
 
 1. Migrations `20261017115900_paid_marketing_enum_values` … `20261017140000_banner_art_runs` (deployed by `migrate deploy` on API start).
 2. `cd apps/api && npx tsx prisma/seed-ad-pricing.ts` (only creates missing packages; never overwrites edited prices).
-3. Razorpay dashboard → Webhooks → `https://<api>/api/v1/payments/webhooks/razorpay`, event `order.paid`; put the secret in `RAZORPAY_WEBHOOK_SECRET`.
+3. Razorpay dashboard: switch on **Subscriptions** (test and live), then Webhooks → `https://<api>/api/v1/payments/webhooks/razorpay` with events `order.paid`, `subscription.charged`, `subscription.activated`, `subscription.pending`, `subscription.halted`, `subscription.cancelled`, `subscription.completed`; put the secret in `RAZORPAY_WEBHOOK_SECRET`.
 4. Ad pricing page: fill in seller GSTIN and address for invoices.
 
 ## What was tested
@@ -76,7 +79,7 @@ A store's only marketing object is the **promotion**: one banner in the home car
 
 ## Needs manual verification
 
-- Razorpay checkout end to end with real test cards/UPI in the admin web app and the mobile app (only the signature path was simulated).
+- Razorpay checkout end to end with real test cards/UPI (orders and subscription mandates) in the admin web app and the mobile app; only signatures and webhooks were simulated, because Subscriptions is not yet enabled on the Razorpay account (its plans API returns 401).
 - The webhook from the real Razorpay dashboard on the deployed API.
 - Invoice look in print/PDF.
 - Mobile: banner view/tap counts appearing after browsing; "Sponsored" label; plan purchase flow in the Manage app.
