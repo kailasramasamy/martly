@@ -36,6 +36,7 @@ export async function generateBannerImage(prisma: PrismaClient, organizationId: 
   } catch (err) {
     await prisma.bannerArtRun.delete({ where: { id: run.id } });
     if (err instanceof OpenAI.APIError || err instanceof BannerArtError) {
+      log(`AI banner image failed: ${err.message}`);
       throw Object.assign(new Error("The AI image service is unavailable right now. Try again later or upload your own image."), { statusCode: 503 });
     }
     throw err;
