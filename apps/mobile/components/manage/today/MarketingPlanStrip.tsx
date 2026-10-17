@@ -63,6 +63,8 @@ function PlanStatusStrip({ e, onPress }: { e: Entitlements; onPress: () => void 
   const outOnGrowth = e.plan?.code === "GROWTH" && promosLeft === 0;
   return (
     <TouchableOpacity style={styles.status} onPress={onPress} activeOpacity={0.9} accessibilityRole="button" accessibilityLabel="Marketing plan">
+      <View style={[styles.ring, styles.statusRingOuter]} />
+      <View style={[styles.ring, styles.statusRingInner]} />
       <View style={styles.statusHead}>
         <View style={styles.planPill}><Text style={styles.planPillText}>{e.plan?.name.toUpperCase()}</Text></View>
         <Text style={[styles.statusText, status.warn && styles.warnText]} numberOfLines={1}>{status.text}</Text>
@@ -106,10 +108,13 @@ const styles = StyleSheet.create({
     backgroundColor: colors.accent, borderRadius: 999, paddingHorizontal: 16, minHeight: 40,
   },
   ctaText: { fontFamily: fonts.bold, fontSize: 14, color: colors.accentText },
-  status: { backgroundColor: manage.card, borderRadius: radius.xl, borderWidth: 1, borderColor: manage.line, padding: 14, gap: 12 },
+  // Same ring motif as the promo card, in the brand teal on a pale wash
+  status: { backgroundColor: "#ecfdf8", borderRadius: radius.xl, borderWidth: 1, borderColor: "#c7f0e6", padding: 14, gap: 12, overflow: "hidden" },
+  statusRingOuter: { width: 180, height: 180, right: -60, top: -95, borderColor: "rgba(15,118,110,0.12)" },
+  statusRingInner: { width: 110, height: 110, right: -25, top: -60, borderColor: "rgba(15,118,110,0.2)" },
   statusHead: { flexDirection: "row", alignItems: "center", gap: 10, minHeight: 28 },
-  planPill: { backgroundColor: manage.tint, borderRadius: 8, paddingHorizontal: 8, paddingVertical: 3 },
-  planPillText: { fontFamily: fonts.extrabold, fontSize: 11.5, letterSpacing: 1, color: colors.primary },
+  planPill: { backgroundColor: colors.primary, borderRadius: 8, paddingHorizontal: 8, paddingVertical: 3 },
+  planPillText: { fontFamily: fonts.extrabold, fontSize: 11.5, letterSpacing: 1, color: "#fff" },
   statusText: { flex: 1, fontFamily: fonts.semibold, fontSize: 13, color: colors.textSecondary },
   warnText: { color: colors.error },
   meters: { flexDirection: "row", gap: 14 },
@@ -117,7 +122,7 @@ const styles = StyleSheet.create({
   meterLabel: { fontFamily: fonts.semibold, fontSize: 12, color: colors.textSecondary },
   meterValue: { fontFamily: fonts.extrabold, fontSize: 20, color: colors.text, marginTop: 2 },
   meterEmpty: { color: manage.attentionText },
-  track: { height: 6, borderRadius: 3, backgroundColor: manage.hairline, marginTop: 6, overflow: "hidden" },
+  track: { height: 6, borderRadius: 3, backgroundColor: "rgba(15,118,110,0.12)", marginTop: 6, overflow: "hidden" },
   fill: { height: 6, borderRadius: 3, backgroundColor: colors.primary },
   fillEmpty: { backgroundColor: colors.accent },
   meterSub: { fontFamily: fonts.medium, fontSize: 11.5, color: colors.textSecondary, marginTop: 5 },
