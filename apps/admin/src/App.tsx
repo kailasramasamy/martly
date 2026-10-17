@@ -125,6 +125,7 @@ import { PromoShow } from "./pages/promos/show";
 import { BannerList } from "./pages/banners/list";
 import { BannerCreate } from "./pages/banners/create";
 import { BannerEdit } from "./pages/banners/edit";
+import { BannerShow } from "./pages/banners/show";
 import { NotificationSend } from "./pages/notifications/send";
 import { NotificationDashboard } from "./pages/notifications/dashboard";
 import { CampaignList as NotificationCampaignList } from "./pages/notifications/campaigns/list";
@@ -329,6 +330,7 @@ export default function App() {
                 list: "/banners",
                 create: "/banners/create",
                 edit: "/banners/edit/:id",
+                show: "/banners/show/:id",
                 meta: { label: "Banners", icon: <PictureOutlined />, parent: "marketing" },
               },
               {
@@ -674,6 +676,7 @@ export default function App() {
                   <Route index element={<BannerList />} />
                   <Route path="create" element={<BannerCreate />} />
                   <Route path="edit/:id" element={<BannerEdit />} />
+                  <Route path="show/:id" element={<BannerShow />} />
                 </Route>
                 <Route path="/promos">
                   <Route index element={<PromoList />} />

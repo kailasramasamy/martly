@@ -6,7 +6,7 @@ import { requirePermission } from "../../middleware/authorize.js";
 import { BannerPlacement, Permission } from "@martly/shared/constants";
 import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { assertBannerSlot, takesSlot } from "../../services/marketing/entitlements.js";
-import { recordBannerEvents } from "../../services/marketing/stats.js";
+import { bannerResults, recordBannerEvents } from "../../services/marketing/stats.js";
 import { generateBannerImage } from "../../services/marketing/banner-image.js";
 import { isCurationConfigured } from "../../services/seasonal/index.js";
 import { storeBanners } from "../../services/marketing/banner-feed.js";
@@ -107,8 +107,9 @@ export async function bannerRoutes(app: FastifyInstance) {
       return reply.forbidden("Access denied");
     }
 
-    const response: ApiResponse<typeof banner> = { success: true, data: banner };
-    return response;
+    // Last 30 days of views and taps, for the banner's own page
+    const [stats] = await bannerResults(app.prisma, { id: banner.id }, 30);
+    return { success: true, data: { ...banner, stats: { days: 30, views: stats?.views ?? 0, taps: stats?.taps ?? 0, ctr: stats?.ctr ?? 0 } } };
   });
 
   // AI-painted banner image with the copy set in; counts against the plan's monthly AI images

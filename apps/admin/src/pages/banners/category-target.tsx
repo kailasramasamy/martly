@@ -62,3 +62,15 @@ export function withCategoryTarget(values: Record<string, unknown>) {
   delete values.actionTargetPath;
   return values.actionType === "CATEGORY" && path?.length ? { ...values, actionTarget: path[path.length - 1] } : values;
 }
+
+/** "Department / Category / Subcategory" for a saved target id, or null when it isn't in the tree */
+export function pathLabel(options: CascaderOption[], id: string): string | null {
+  const path = pathTo(options, id);
+  if (!path) return null;
+  let level: CascaderOption[] | undefined = options;
+  return path.map((value) => {
+    const option: CascaderOption | undefined = level?.find((o) => o.value === value);
+    level = option?.children;
+    return option?.label ?? value;
+  }).join(" / ");
+}
