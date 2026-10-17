@@ -170,7 +170,7 @@ function BannerFields({ initial, id }: { initial: FormState; id?: string }) {
     <ManageStackScreen title={id ? "Edit banner" : "New banner"} actions={actions}>
       <SectionCard title="Image">
         <ImageSource
-          imageUrl={f.imageUrl} onImage={set("imageUrl")} title={f.title} subtitle={f.subtitle} error={errors.imageUrl} entitlements={entitlements}
+          imageUrl={f.imageUrl} onImage={set("imageUrl")} title={f.title} subtitle={f.subtitle} actionType={f.actionType} actionTarget={f.actionTarget} error={errors.imageUrl} entitlements={entitlements}
           onGenerated={(art) => setF((prev) => ({ ...prev, imageUrl: art.imageUrl, textInImage: art.textInImage }))}
         />
         <SwitchRow label="Title is part of the image" description="When on, the app adds no text over the artwork" value={f.textInImage} onValueChange={set("textInImage")} />

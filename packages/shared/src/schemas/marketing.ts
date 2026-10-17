@@ -121,6 +121,8 @@ export const brandPartnerSchema = z.object({
 export const generateBannerImageSchema = z.object({
   title: z.string().trim().min(2).max(40),
   subtitle: z.string().trim().max(60).nullish(),
-  /** What the picture should show; the title is used when left empty */
+  /** What the picture should show; when empty, the banner's tap target (or else its title) decides */
   brief: z.string().trim().max(400).nullish(),
+  actionType: z.nativeEnum(BannerActionType).nullish(),
+  actionTarget: z.string().trim().max(200).nullish(),
 });

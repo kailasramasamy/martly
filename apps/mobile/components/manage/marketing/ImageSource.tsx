@@ -33,12 +33,15 @@ interface Props {
   onGenerated: (art: GeneratedArt) => void;
   title: string;
   subtitle: string;
+  /** Where the banner leads; pictured when the description is left empty */
+  actionType: string;
+  actionTarget: string;
   error?: string;
   entitlements: Entitlements | null;
 }
 
 /** Banner artwork: upload your own, or have the AI design it from the title (and an optional brief) */
-export function ImageSource({ imageUrl, onImage, onGenerated, title, subtitle, error, entitlements }: Props) {
+export function ImageSource({ imageUrl, onImage, onGenerated, title, subtitle, actionType, actionTarget, error, entitlements }: Props) {
   const [mode, setMode] = useState<"upload" | "ai">("upload");
   const [brief, setBrief] = useState("");
   const [titleError, setTitleError] = useState<string | null>(null);
@@ -50,7 +53,7 @@ export function ImageSource({ imageUrl, onImage, onGenerated, title, subtitle, e
     const name = title.trim();
     if (name.length < 2 || name.length > 40) return setTitleError("Add a title of 2 to 40 characters in Details first");
     setTitleError(null);
-    const body = { title: name, subtitle: subtitle.trim() || undefined, brief: brief.trim() || undefined };
+    const body = { title: name, subtitle: subtitle.trim() || undefined, brief: brief.trim() || undefined, actionType, actionTarget: actionTarget.trim() || undefined };
     const res = await run(() => limit.capture(() => api.post<GeneratedArt>("/api/v1/banners/generate-image", body)));
     if (res) onGenerated({ imageUrl: res.data.imageUrl, textInImage: res.data.textInImage });
   };
@@ -60,7 +63,7 @@ export function ImageSource({ imageUrl, onImage, onGenerated, title, subtitle, e
       <SegmentedTabs options={[...TABS]} value={mode} onChange={setMode} />
       {mode === "upload" ? <UploadGuidance /> : (
         <>
-          <TextField label="What should the picture show?" value={brief} onChangeText={setBrief} multiline maxLength={400} placeholder="e.g. fresh mangoes in a wooden crate" hint={ai ? `AI images: ${ai.used} of ${ai.total} used this month` : undefined} error={titleError ?? undefined} />
+          <TextField label="What should the picture show?" value={brief} onChangeText={setBrief} multiline maxLength={400} placeholder="Optional; leave empty to picture the banner's target" hint={ai ? `AI images: ${ai.used} of ${ai.total} used this month` : undefined} error={titleError ?? undefined} />
           <Button label="Generate" icon="sparkles-outline" onPress={generate} loading={running} />
           {running ? <View style={styles.progress}><ActivityIndicator color={colors.primary} /><Text style={styles.bullet}>Designing your banner… up to a minute</Text></View> : null}
           <PlanLimitNotice message={limit.message} />

@@ -5,11 +5,14 @@ import { buildBannerSet, type BannerLog } from "../seasonal/banner-set.js";
 import { chooseDesign } from "../seasonal/banner-design.js";
 import { BannerArtError } from "../seasonal/banner-art.js";
 import { getEntitlements, PaymentRequiredError } from "./entitlements.js";
+import { targetScene } from "./target-scene.js";
 
 export interface BannerImageRequest {
   title: string;
   subtitle?: string | null;
   brief?: string | null;
+  actionType?: string | null;
+  actionTarget?: string | null;
 }
 
 /**
@@ -29,7 +32,9 @@ export async function generateBannerImage(prisma: PrismaClient, organizationId: 
     return tx.bannerArtRun.create({ data: { ...design, organizationId, purpose: "BANNER" } });
   });
   try {
-    const scene = input.brief?.trim() || `Products and props that fit "${input.title}"${input.subtitle ? `, ${input.subtitle}` : ""}`;
+    const scene = input.brief?.trim()
+      || (await targetScene(prisma, organizationId, input.actionType, input.actionTarget))
+      || `Products and props that fit "${input.title}"${input.subtitle ? `, ${input.subtitle}` : ""}`;
     const art = await buildBannerSet(scene, { en: { title: input.title, subtitle: input.subtitle ?? "" } }, `banner-${randomUUID().slice(0, 8)}`, log, run);
     await prisma.bannerArtRun.update({ where: { id: run.id }, data: { imageUrl: art.imageUrl } });
     return art;

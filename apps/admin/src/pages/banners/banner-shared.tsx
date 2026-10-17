@@ -45,14 +45,16 @@ function AiImagePanel({ form }: { form: FormInstance }) {
   const [generating, setGenerating] = useState(false);
 
   const generate = async () => {
-    const { title, subtitle } = form.getFieldsValue(["title", "subtitle"]);
+    const { title, subtitle, actionType, actionTarget, actionTargetPath } = form.getFieldsValue(["title", "subtitle", "actionType", "actionTarget", "actionTargetPath"]);
+    // Category targets live in the picker as a path until save; the deepest id is the target
+    const target = actionType === "CATEGORY" ? (actionTargetPath as string[] | undefined)?.at(-1) : actionTarget;
     if (!title) {
       notification.warning({ message: "Enter the banner title first" });
       return;
     }
     setGenerating(true);
     try {
-      const res = await axiosInstance.post("/banners/generate-image", { title, subtitle, brief: brief || undefined }, { timeout: GENERATE_TIMEOUT_MS });
+      const res = await axiosInstance.post("/banners/generate-image", { title, subtitle, brief: brief || undefined, actionType, actionTarget: target }, { timeout: GENERATE_TIMEOUT_MS });
       form.setFieldsValue({ imageUrl: res.data.data.imageUrl, textInImage: res.data.data.textInImage });
     } catch (err) {
       notification.error({ message: errorMessage(err, "Could not generate the banner") });
@@ -63,7 +65,7 @@ function AiImagePanel({ form }: { form: FormInstance }) {
 
   return (
     <>
-      <Typography.Paragraph type="secondary">What should the picture show? (optional)</Typography.Paragraph>
+      <Typography.Paragraph type="secondary">What should the picture show? (optional; leave empty to picture the banner's target category, product or collection)</Typography.Paragraph>
       <Input.TextArea rows={3} maxLength={400} value={brief} onChange={(e) => setBrief(e.target.value)} style={{ marginBottom: 12 }} />
       <Button type="primary" loading={generating} onClick={generate}>Generate</Button>
       {generating && <Typography.Text type="secondary" style={{ marginLeft: 12 }}>Designing your banner… up to a minute</Typography.Text>}
