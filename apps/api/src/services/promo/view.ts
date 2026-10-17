@@ -18,7 +18,7 @@ type SummaryRow = Prisma.PromoGetPayload<{ include: typeof promoSummaryInclude }
 
 export function toSummary(p: SummaryRow): PromoSummary {
   return {
-    id: p.id, kind: p.kind, brief: p.brief, status: p.status, autoLaunch: p.autoLaunch, notify: p.notify,
+    id: p.id, kind: p.kind, fromBrand: !!p.brandCampaignId, brief: p.brief, status: p.status, autoLaunch: p.autoLaunch, notify: p.notify,
     title: p.collection?.title ?? (p.copy as { en?: { title?: string } } | null)?.en?.title ?? null,
     imageUrl: p.collection?.imageUrl ?? p.banners[0]?.imageUrl ?? null,
     discountType: p.discountType, discountValue: p.discountValue == null ? null : Number(p.discountValue),

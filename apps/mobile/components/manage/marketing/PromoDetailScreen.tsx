@@ -20,11 +20,11 @@ const POLL_MS = 2000;
 const PREVIEW_STATUSES = ["READY", "LIVE", "ENDED"];
 const ACTIONABLE = ["READY", "LIVE", "ENDED", "FAILED"];
 
-type Pending = "launch" | "discard" | "end" | "reopen" | null;
+type Pending = "launch" | "delete" | "end" | "reopen" | null;
 
 const CONFIRM: Record<Exclude<Pending, null>, { title: string; label: string; primary: boolean; done: string }> = {
   launch: { title: "Launch this promo?", label: "Launch", primary: true, done: "Promo is live" },
-  discard: { title: "Discard this promo?", label: "Discard", primary: false, done: "Promo discarded" },
+  delete: { title: "Delete this promotion?", label: "Delete", primary: false, done: "Promotion deleted" },
   end: { title: "End this promo now?", label: "End now", primary: false, done: "Promo ended" },
   reopen: { title: "Use this promo again?", label: "Use again", primary: true, done: "Ready to launch again" },
 };
@@ -36,7 +36,7 @@ function confirmMessage(kind: Exclude<Pending, null>, promo: PromoDetail): strin
   }
   if (kind === "end") return "Removes the banner and restores prices.";
   if (kind === "reopen") return "It goes back to Ready with the same banner and products; launch it for a fresh window.";
-  return "The draft is removed.";
+  return promo.status === "LIVE" ? "It ends now (prices go back), then it is removed." : "Its banner and results are removed.";
 }
 
 function usePromoActions(id: string, promo: PromoDetail | null, setData: (p: PromoDetail) => void) {
@@ -45,11 +45,11 @@ function usePromoActions(id: string, promo: PromoDetail | null, setData: (p: Pro
   const [pending, setPending] = useState<Pending>(null);
 
   const perform = async (kind: Exclude<Pending, null>) => {
-    const call = () => (kind === "discard" ? api.delete(`/api/v1/promos/${id}`) : api.post<PromoDetail>(`/api/v1/promos/${id}/${kind}`, undefined));
+    const call = () => (kind === "delete" ? api.delete(`/api/v1/promos/${id}`) : api.post<PromoDetail>(`/api/v1/promos/${id}/${kind}`, undefined));
     const res = await run(call, CONFIRM[kind].done);
     setPending(null);
     if (!res) return;
-    if (kind === "discard") router.back();
+    if (kind === "delete") router.back();
     else setData(res.data as PromoDetail);
   };
 
@@ -142,21 +142,37 @@ interface ActionsProps {
 
 function PromoActions({ promo, running, onPending, onRetry }: ActionsProps) {
   const flex = styles.flex;
+  // Brand promotions end with their campaign; everything else can be deleted (a live one is ended first)
+  const remove = promo.chargedFrom === "BRAND" ? null : <Button label="Delete" variant="danger" onPress={() => onPending("delete")} style={flex} />;
   if (promo.status === "READY") {
     return (
       <>
-        <Button label="Discard" variant="danger" onPress={() => onPending("discard")} style={flex} />
+        {remove}
         <Button label="Launch" icon="rocket-outline" onPress={() => onPending("launch")} style={flex} />
       </>
     );
   }
-  if (promo.status === "LIVE") return <Button label="End now" variant="danger" onPress={() => onPending("end")} style={flex} />;
-  if (promo.status === "ENDED") return <Button label="Use again" onPress={() => onPending("reopen")} style={flex} />;
-  if (promo.status === "FAILED" && promo.kind === "AI") {
+  if (promo.status === "LIVE") {
     return (
       <>
-        <Button label="Discard" variant="danger" onPress={() => onPending("discard")} style={flex} />
-        <Button label="Try again" onPress={onRetry} loading={running} style={flex} />
+        {remove}
+        <Button label="End now" variant="danger" onPress={() => onPending("end")} style={flex} />
+      </>
+    );
+  }
+  if (promo.status === "ENDED") {
+    return (
+      <>
+        {remove}
+        <Button label="Use again" onPress={() => onPending("reopen")} style={flex} />
+      </>
+    );
+  }
+  if (promo.status === "FAILED") {
+    return (
+      <>
+        {remove}
+        {promo.kind === "AI" ? <Button label="Try again" onPress={onRetry} loading={running} style={flex} /> : null}
       </>
     );
   }

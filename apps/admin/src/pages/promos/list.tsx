@@ -1,6 +1,10 @@
 import { List, useTable } from "@refinedev/antd";
 import { useNavigation } from "@refinedev/core";
-import { Image, Space, Table, Tag, Typography } from "antd";
+import { useState } from "react";
+import { App, Button, Image, Popconfirm, Space, Table, Tag, Typography } from "antd";
+import { DeleteOutlined } from "@ant-design/icons";
+import { isAxiosError } from "axios";
+import { axiosInstance } from "../../providers/data-provider";
 import dayjs from "dayjs";
 import type { PromoSummary } from "@martly/shared/types";
 import { PROMO_STATUS_CONFIG } from "../../constants/tag-colors";
@@ -16,8 +20,44 @@ function PromoThumb({ url }: { url: string | null }) {
   return <Image src={url} width={THUMB_WIDTH} preview={false} style={{ aspectRatio: "3 / 2", objectFit: "cover", borderRadius: 6 }} />;
 }
 
+/** End a live promotion or delete one, without opening it; clicks stay off the row's open-on-click */
+function RowActions({ promo, onDone }: { promo: PromoSummary; onDone: () => void }) {
+  const { message } = App.useApp();
+  const [busy, setBusy] = useState<"end" | "delete" | null>(null);
+  const act = async (kind: "end" | "delete") => {
+    setBusy(kind);
+    try {
+      if (kind === "end") await axiosInstance.post(`/promos/${promo.id}/end`);
+      else await axiosInstance.delete(`/promos/${promo.id}`);
+      message.success(kind === "end" ? "Promotion ended; prices restored" : "Promotion deleted");
+      onDone();
+    } catch (err) {
+      message.error(isAxiosError(err) ? (err.response?.data?.message ?? "Something went wrong") : "Something went wrong");
+    } finally {
+      setBusy(null);
+    }
+  };
+  if (promo.status === "DRAFTING" || promo.fromBrand) return null;
+  return (
+    <Space onClick={(e) => e.stopPropagation()}>
+      {promo.status === "LIVE" && (
+        <Popconfirm title="End this promotion now?" description="Removes the banner and restores prices" okText="End now" okButtonProps={{ danger: true }} onConfirm={() => act("end")}>
+          <Button size="small" loading={busy === "end"}>End</Button>
+        </Popconfirm>
+      )}
+      <Popconfirm
+        title="Delete this promotion?"
+        description={promo.status === "LIVE" ? "It ends now (prices go back), then it is removed." : "Its banner and results are removed."}
+        okText="Delete" okButtonProps={{ danger: true }} onConfirm={() => act("delete")}
+      >
+        <Button size="small" danger icon={<DeleteOutlined />} loading={busy === "delete"} aria-label="Delete" />
+      </Popconfirm>
+    </Space>
+  );
+}
+
 export const PromoList = () => {
-  const { tableProps } = useTable<PromoSummary>({ resource: "promos", pagination: { pageSize: 25 } });
+  const { tableProps, tableQuery } = useTable<PromoSummary>({ resource: "promos", pagination: { pageSize: 25 } });
   const { show } = useNavigation();
 
   return (
@@ -51,6 +91,7 @@ export const PromoList = () => {
         <Table.Column<PromoSummary> title="Products" dataIndex="productCount" />
         <Table.Column<PromoSummary> title="Window" render={(_, r) => `${formatDay(r.startsAt)} – ${formatDay(r.endsAt)}`} />
         <Table.Column<PromoSummary> title="Created" dataIndex="createdAt" render={(v: string) => dayjs(v).format("D MMM, h:mm A")} />
+        <Table.Column<PromoSummary> title="Actions" width={110} render={(_, r) => <RowActions promo={r} onDone={() => tableQuery.refetch()} />} />
       </Table>
     </List>
   );

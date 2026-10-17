@@ -153,6 +153,8 @@ export interface PromoCopy {
 export interface PromoSummary {
   id: string;
   kind: "AI" | "MANUAL";
+  /** Run by a brand campaign: it starts and ends with the campaign */
+  fromBrand: boolean;
   brief: string;
   status: "DRAFTING" | "READY" | "LIVE" | "ENDED" | "FAILED" | "DISCARDED";
   autoLaunch: boolean;

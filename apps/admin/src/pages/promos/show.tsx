@@ -59,7 +59,7 @@ export const PromoShow = () => {
       canEdit={false}
       canDelete={false}
       headerButtons={() => (
-        <PromoActions promo={promo} busy={busy} run={run} onDiscarded={() => list("promos")} onRetried={(newId) => show("promos", newId)} />
+        <PromoActions promo={promo} busy={busy} run={run} onDeleted={() => list("promos")} onRetried={(newId) => show("promos", newId)} />
       )}
     >
       <PromoHeader promo={promo} />

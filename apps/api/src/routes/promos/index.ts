@@ -4,7 +4,7 @@ import type { ApiResponse, PaginatedResponse, PromoDetail, PromoSummary } from "
 import { Permission, PromoStatus } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { isCurationConfigured } from "../../services/seasonal/index.js";
-import { discardPromo, endPromo, keepPromoItems, launchPromo, regeneratePromo, reopenPromo, startPromoDraft } from "../../services/promo/lifecycle.js";
+import { deletePromo, endPromo, keepPromoItems, launchPromo, regeneratePromo, reopenPromo, startPromoDraft } from "../../services/promo/lifecycle.js";
 import { chargePromotion, getEntitlements } from "../../services/marketing/entitlements.js";
 import { getMarketingConfig } from "../../services/marketing/config.js";
 import { isMediaUrl } from "../../services/media.js";
@@ -109,7 +109,7 @@ export async function promoRoutes(app: FastifyInstance) {
 
   app.delete<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] }, async (request) => {
     await detailOr404(request);
-    await discardPromo(app.prisma, request.params.id);
+    await deletePromo(app.prisma, request.params.id);
     return { success: true, data: null } satisfies ApiResponse<null>;
   });
 }

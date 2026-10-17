@@ -12,6 +12,7 @@ import { productsForTarget } from "./targets.js";
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 export class PromoStateError extends Error {
+  name = "PromoStateError";
   statusCode = 409;
 }
 
@@ -150,10 +151,20 @@ export async function endPromo(prisma: PrismaClient, promoId: string, early: boo
   await logStep(prisma, promoId, early ? "Ended early; prices restored" : "Ended; prices restored");
 }
 
-export async function discardPromo(prisma: PrismaClient, promoId: string) {
-  const claimed = await prisma.promo.updateMany({ where: { id: promoId, status: { in: ["READY", "FAILED"] } }, data: { status: "DISCARDED" } });
-  if (claimed.count === 0) throw new PromoStateError("Only a ready or failed promo can be discarded");
-  await prisma.banner.updateMany({ where: { promoId }, data: { isActive: false } });
+/**
+ * Removes a promotion for good. A live one is ended first so its prices go back; its banner and product
+ * collection go with it, while billing entries and any push already sent stay on record.
+ */
+export async function deletePromo(prisma: PrismaClient, promoId: string) {
+  const promo = await prisma.promo.findUniqueOrThrow({ where: { id: promoId }, select: { status: true, collectionId: true, brandCampaignId: true } });
+  if (promo.brandCampaignId) throw new PromoStateError("This promotion belongs to a brand campaign; it ends with the campaign");
+  if (promo.status === "DRAFTING") throw new PromoStateError("Wait for the AI to finish drafting, then delete it");
+  if (promo.status === "LIVE") await endPromo(prisma, promoId, true);
+  await prisma.$transaction(async (tx) => {
+    await tx.banner.deleteMany({ where: { promoId } });
+    await tx.promo.delete({ where: { id: promoId } });
+    if (promo.collectionId) await tx.collection.deleteMany({ where: { id: promo.collectionId, kind: "PROMO" } });
+  });
 }
 
 /** Puts an ended promo back to READY with the same art, products and banners, so it can be launched for a fresh window. */

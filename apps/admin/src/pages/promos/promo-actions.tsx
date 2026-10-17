@@ -34,22 +34,22 @@ function launchSummary(promo: PromoDetail): string {
   return `${discount}. ${promo.notify ? "A push goes to customers." : "No push."}`;
 }
 
-export function PromoActions({ promo, busy, run, onDiscarded, onRetried }: {
-  promo: PromoDetail;
-  busy: string | null;
-  run: Run;
-  onDiscarded: () => void;
-  onRetried: (id: string) => void;
-}) {
-  const discard = (
-    <Popconfirm title="Discard this promo?" okText="Discard" okButtonProps={{ danger: true }} onConfirm={() => run("discard", async () => { await axiosInstance.delete(`/promos/${promo.id}`); onDiscarded(); }, "Promo discarded", "Could not discard")}>
-      <Button danger loading={busy === "discard"}>Discard</Button>
+/** Delete is offered in every state but drafting; a live promotion is ended first so prices go back */
+function DeleteButton({ promo, busy, run, onDeleted }: { promo: PromoDetail; busy: string | null; run: Run; onDeleted: () => void }) {
+  if (promo.status === "DRAFTING" || promo.chargedFrom === "BRAND") return null;
+  const description = promo.status === "LIVE" ? "It ends now (prices go back), then its banner and results are removed." : "Its banner and results are removed.";
+  return (
+    <Popconfirm title="Delete this promotion?" description={description} okText="Delete" okButtonProps={{ danger: true }}
+      onConfirm={() => run("delete", async () => { await axiosInstance.delete(`/promos/${promo.id}`); onDeleted(); }, "Promotion deleted", "Could not delete")}>
+      <Button danger loading={busy === "delete"}>Delete</Button>
     </Popconfirm>
   );
+}
 
+function StatusAction({ promo, busy, run, onRetried }: { promo: PromoDetail; busy: string | null; run: Run; onRetried: (id: string) => void }) {
   if (promo.status === "READY") {
     return (
-      <Space>
+      <>
         <Popconfirm title="Launch this promo?" description={launchSummary(promo)} okText="Launch" onConfirm={() => run("launch", () => axiosInstance.post(`/promos/${promo.id}/launch`, null, { timeout: LAUNCH_TIMEOUT_MS }), "Promo is live", "Could not launch")}>
           <Button type="primary" loading={busy === "launch"}>Launch</Button>
         </Popconfirm>
@@ -58,8 +58,7 @@ export function PromoActions({ promo, busy, run, onDiscarded, onRetried }: {
             Redraft ({promo.redraftsLeft} free {promo.redraftsLeft === 1 ? "redraft" : "redrafts"} left)
           </Button>
         )}
-        {discard}
-      </Space>
+      </>
     );
   }
   if (promo.status === "LIVE") {
@@ -78,15 +77,25 @@ export function PromoActions({ promo, busy, run, onDiscarded, onRetried }: {
   }
   if (promo.status === "FAILED") {
     const retry = () => run("retry", async () => onRetried(await createPromo({ brief: promo.brief, autoLaunch: promo.autoLaunch, notify: promo.notify })), "Drafting again", "Could not retry");
-    return (
-      <Space direction="vertical" style={{ width: "100%" }}>
-        <Alert type="error" showIcon message="Drafting failed" description={promo.failureReason ?? "Unknown error"} />
-        <Space>
-          <Button type="primary" loading={busy === "retry"} onClick={retry}>Try again</Button>
-          {discard}
-        </Space>
-      </Space>
-    );
+    return <Button type="primary" loading={busy === "retry"} onClick={retry}>Try again</Button>;
   }
   return null;
+}
+
+export function PromoActions({ promo, busy, run, onDeleted, onRetried }: {
+  promo: PromoDetail;
+  busy: string | null;
+  run: Run;
+  onDeleted: () => void;
+  onRetried: (id: string) => void;
+}) {
+  return (
+    <Space direction="vertical" style={{ width: "100%" }}>
+      {promo.status === "FAILED" && <Alert type="error" showIcon message="Drafting failed" description={promo.failureReason ?? "Unknown error"} />}
+      <Space>
+        <StatusAction promo={promo} busy={busy} run={run} onRetried={onRetried} />
+        <DeleteButton promo={promo} busy={busy} run={run} onDeleted={onDeleted} />
+      </Space>
+    </Space>
+  );
 }
