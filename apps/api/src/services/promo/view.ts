@@ -42,18 +42,16 @@ function toProduct(f: ProductFacts, type: string | null, value: number | null): 
   };
 }
 
-async function promoBanners(prisma: PrismaClient, promoId: string): Promise<PromoBanner[]> {
-  const [banners, results] = await Promise.all([
-    prisma.banner.findMany({ where: { promoId }, orderBy: [{ slotFree: "desc" }, { createdAt: "asc" }] }),
+async function promoBanner(prisma: PrismaClient, promoId: string): Promise<PromoBanner | null> {
+  const [banner, [stats]] = await Promise.all([
+    prisma.banner.findFirst({ where: { promoId }, orderBy: { createdAt: "asc" } }),
     bannerResults(prisma, { promoId }, 30),
   ]);
-  const stats = new Map(results.map((r) => [r.id, r]));
-  return banners.map((b) => ({
-    id: b.id, placement: b.placement, title: b.title, subtitle: b.subtitle, imageUrl: b.imageUrl, textInImage: b.textInImage,
-    isActive: b.isActive, slotFree: b.slotFree, storeId: b.storeId, departmentId: b.departmentId, categoryId: b.categoryId,
-    subcategoryId: b.subcategoryId, sortOrder: b.sortOrder,
-    views: stats.get(b.id)?.views ?? 0, taps: stats.get(b.id)?.taps ?? 0, ctr: stats.get(b.id)?.ctr ?? 0,
-  }));
+  if (!banner) return null;
+  return {
+    id: banner.id, title: banner.title, subtitle: banner.subtitle, imageUrl: banner.imageUrl, textInImage: banner.textInImage,
+    isActive: banner.isActive, views: stats?.views ?? 0, taps: stats?.taps ?? 0, ctr: stats?.ctr ?? 0,
+  };
 }
 
 /** Before launch: what launching now would change. After: what it did change. */
@@ -102,6 +100,6 @@ export async function toDetail(prisma: PrismaClient, promoId: string, organizati
     chargedFrom: p.chargedFrom, uploadedImage: Boolean(p.uploadedImageUrl),
     redraftsLeft: Math.max(0, (await getMarketingConfig(prisma)).freeRegenerations - p.regenerations),
     actionType: p.actionType, actionTarget: p.actionTarget, launchAt: p.launchAt?.toISOString() ?? null,
-    banners: await promoBanners(prisma, p.id),
+    banner: await promoBanner(prisma, p.id),
   };
 }

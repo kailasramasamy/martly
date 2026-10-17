@@ -289,25 +289,18 @@ export interface PromoDetail extends PromoSummary {
   actionType: string | null;
   actionTarget: string | null;
   launchAt: string | null;
-  banners: PromoBanner[];
+  /** Its banner in the home carousel, once there is one (AI promotions get theirs at launch) */
+  banner: PromoBanner | null;
 }
 
-/** A banner a promotion runs, with its last 30 days of results */
+/** A promotion's banner, with its last 30 days of results */
 export interface PromoBanner {
   id: string;
-  placement: string;
   title: string;
   subtitle: string | null;
   imageUrl: string;
   textInImage: boolean;
   isActive: boolean;
-  /** An AI promotion's own launch banner, covered by its credit */
-  slotFree: boolean;
-  storeId: string | null;
-  departmentId: string | null;
-  categoryId: string | null;
-  subcategoryId: string | null;
-  sortOrder: number;
   views: number;
   taps: number;
   ctr: number;

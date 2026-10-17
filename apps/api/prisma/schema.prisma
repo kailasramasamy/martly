@@ -1424,8 +1424,6 @@ model Banner {
   viewsServed     Int              @default(0) @map("views_served")
   /// The promotion this banner belongs to
   promoId         String?          @map("promo_id")
-  /// Covered by an AI promotion's credit rather than a plan slot
-  slotFree        Boolean          @default(false) @map("slot_free")
   brandCampaignId String?          @unique @map("brand_campaign_id")
   createdAt       DateTime         @default(now()) @map("created_at")
   updatedAt       DateTime         @updatedAt @map("updated_at")
@@ -2101,8 +2099,6 @@ model AdProduct {
   description      String?
   price            Decimal          @db.Decimal(10, 2)
   durationDays     Int              @default(30) @map("duration_days")
-  /// Store plans: active banner slots; null means unlimited
-  bannerSlots      Int?             @map("banner_slots")
   promotionCredits Int              @default(0) @map("promotion_credits")
   /// AI-made banner images per month (plain banners; promotions include their own art)
   aiImagesPerMonth Int              @default(0) @map("ai_images_per_month")

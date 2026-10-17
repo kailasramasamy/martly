@@ -127,24 +127,14 @@ export const generateBannerImageSchema = z.object({
   actionTarget: z.string().trim().max(200).nullish(),
 });
 
-// ── Manual promotions and their banners ──────────────
-export const promoBannerSchema = z.object({
-  placement: z.nativeEnum(BannerPlacement),
-  imageUrl: z.string().url(),
-  textInImage: z.boolean().default(true),
-  /** Defaults to the promotion's title and subtitle */
-  title: z.string().trim().max(60).nullish(),
+// ── Manual promotions ────────────────────────────────
+/** A promotion's one banner: replace its image or edit its wording */
+export const promoBannerUpdateSchema = z.object({
+  imageUrl: z.string().url().optional(),
+  textInImage: z.boolean().optional(),
+  title: z.string().trim().min(2).max(60).optional(),
   subtitle: z.string().trim().max(90).nullish(),
-  storeId: z.string().uuid().nullish(),
-  /** Category-page placements: which aisle (any level) the banner sits on */
-  departmentId: z.string().uuid().nullish(),
-  categoryId: z.string().uuid().nullish(),
-  subcategoryId: z.string().uuid().nullish(),
-  sortOrder: z.coerce.number().int().min(0).max(999).default(0),
 });
-export type PromoBannerInput = z.infer<typeof promoBannerSchema>;
-
-export const updatePromoBannerSchema = promoBannerSchema.partial().extend({ isActive: z.boolean().optional() });
 
 export const createManualPromoSchema = z.object({
   title: z.string().trim().min(2).max(60),
@@ -159,7 +149,9 @@ export const createManualPromoSchema = z.object({
   launchNow: z.boolean().default(false),
   notify: z.boolean().default(false),
   organizationId: z.string().uuid().optional(),
-  banners: z.array(promoBannerSchema).min(1).max(6),
+  /** The promotion's banner in the home carousel: uploaded, or made with "Generate with AI" */
+  imageUrl: z.string().url(),
+  textInImage: z.boolean().default(true),
 })
   .refine((p) => !p.discountType === !p.discountValue, { message: "Give both a discount type and value, or neither", path: ["discountValue"] })
   .refine((p) => !p.discountType || (DISCOUNTABLE_TARGETS as readonly string[]).includes(p.actionType), {

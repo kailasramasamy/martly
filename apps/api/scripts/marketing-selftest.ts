@@ -31,7 +31,7 @@ async function main() {
     ok((await newPromo(org.id, user.id)).charge === 402, "Free plan: promo refused with 402");
     await buy(org.id, user.id, "GROWTH");
     const a = await newPromo(org.id, user.id), b = await newPromo(org.id, user.id), c = await newPromo(org.id, user.id);
-    ok(a.charge === "PLAN" && b.charge === "PLAN" && c.charge === 402, "Growth: 2 promos from plan, 3rd refused");
+    ok(a.charge === "PLAN" && b.charge === "PLAN" && c.charge === 402, "Growth: 2 promotions (AI or manual) from plan, 3rd refused");
     await buy(org.id, user.id, "PROMO_TOPUP");
     const d = await newPromo(org.id, user.id);
     ok(d.charge === "TOPUP", "Top-up credit used after plan allowance");
@@ -43,17 +43,19 @@ async function main() {
     const periods = await prisma.orgPlanPeriod.findMany({ where: { organizationId: org.id }, orderBy: { startsAt: "asc" } });
     ok(periods.length === 2 && periods[1].startsAt.getTime() === periods[0].endsAt.getTime(), "Second Growth month queues after the first");
     await buy(org.id, user.id, "PRO");
-    const ent = await getEntitlements(prisma, org.id);
+    const upgraded = await getEntitlements(prisma, org.id);
     const pro = await prisma.orgPlanPeriod.findFirstOrThrow({ where: { organizationId: org.id, product: { code: "PRO" } } });
     const extraDays = (pro.endsAt.getTime() - pro.startsAt.getTime()) / DAY - 30;
-    ok(ent.plan?.code === "PRO" && extraDays > 11 && extraDays < 12.1, `Upgrade to Pro starts now with ~12 carried-over days (${extraDays.toFixed(1)})`);
+    ok(upgraded.plan?.code === "PRO" && extraDays > 11 && extraDays < 12.1, `Upgrade to Pro starts now with ~12 carried-over days (${extraDays.toFixed(1)})`);
     const queued = await prisma.orgPlanPeriod.findFirstOrThrow({ where: { organizationId: org.id, startsAt: { gt: new Date() } } });
     ok(queued.startsAt.getTime() === pro.endsAt.getTime(), "Queued Growth month moved behind the Pro period");
-    for (let i = 0; i < 3; i++) await prisma.banner.create({ data: { organizationId: org.id, title: `B${i}`, imageUrl: "x", placement: "HERO_CAROUSEL" } });
+    const running = await prisma.promo.create({ data: { organizationId: org.id, createdById: user.id, brief: "selftest live", status: "LIVE", kind: "MANUAL" } });
+    await prisma.banner.create({ data: { organizationId: org.id, promoId: running.id, title: "Live", imageUrl: "x", placement: "HERO_CAROUSEL" } });
     await prisma.orgPlanPeriod.updateMany({ where: { organizationId: org.id }, data: { endsAt: new Date(Date.now() - 1000), startsAt: new Date(Date.now() - 2 * DAY) } });
     await closeEndedPeriods(null, prisma);
-    const on = await prisma.banner.count({ where: { organizationId: org.id, isActive: true } });
-    ok(on === 1, `Plan expiry: back on Free, banners beyond 1 slot switched off (${on} on)`);
+    const live = await prisma.banner.count({ where: { promoId: running.id, isActive: true } });
+    const ent = await getEntitlements(prisma, org.id);
+    ok(live === 1 && ent.plan?.code === "FREE", "Plan expiry: back on Free, the running promotion keeps its banner");
   } finally {
     await prisma.promotionCreditEntry.deleteMany({ where: { organizationId: org.id } });
     await prisma.promo.deleteMany({ where: { organizationId: org.id } });

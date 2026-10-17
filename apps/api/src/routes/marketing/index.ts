@@ -114,19 +114,26 @@ export async function marketingRoutes(app: FastifyInstance) {
     const organizationId = orgOf(request, reply);
     if (!organizationId) return;
     const days = Math.min(Math.max(Number(request.query.days) || 30, 1), 180);
-    const [banners, promos] = await Promise.all([
-      bannerResults(app.prisma, { organizationId, sponsorType: "STORE" }, days),
-      app.prisma.promo.findMany({
-        where: { organizationId, status: { in: ["LIVE", "ENDED"] } }, orderBy: { startsAt: "desc" }, take: 20,
-        select: { id: true, brief: true, status: true, organizationId: true, collectionId: true, startsAt: true, endsAt: true, copy: true },
-      }),
+    const promos = await app.prisma.promo.findMany({
+      where: { organizationId, status: { in: ["LIVE", "ENDED"] } }, orderBy: { startsAt: "desc" }, take: 20,
+      select: { id: true, kind: true, brief: true, status: true, organizationId: true, collectionId: true, startsAt: true, endsAt: true, copy: true },
+    });
+    const [banners, sales] = await Promise.all([
+      bannerResults(app.prisma, { promoId: { in: promos.map((p) => p.id) } }, days),
+      Promise.all(promos.map((p) => promoSales(app.prisma, p))),
     ]);
-    const sales = await Promise.all(promos.map((p) => promoSales(app.prisma, p)));
+    const bannerOf = new Map(banners.map((b) => [b.promoId, b]));
     return {
       success: true,
       data: {
-        days, banners,
-        promotions: promos.map((p, i) => ({ id: p.id, brief: p.brief, status: p.status, startsAt: p.startsAt, endsAt: p.endsAt, copy: p.copy, ...sales[i] })),
+        days,
+        promotions: promos.map((p, i) => {
+          const b = bannerOf.get(p.id);
+          return {
+            id: p.id, kind: p.kind, title: (p.copy as { en?: { title?: string } } | null)?.en?.title ?? p.brief, status: p.status,
+            startsAt: p.startsAt, endsAt: p.endsAt, imageUrl: b?.imageUrl ?? null, views: b?.views ?? 0, taps: b?.taps ?? 0, ctr: b?.ctr ?? 0, ...sales[i],
+          };
+        }),
       },
     };
   });

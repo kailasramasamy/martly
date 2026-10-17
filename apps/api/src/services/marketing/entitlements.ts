@@ -30,24 +30,15 @@ function monthWindow(at: Date) {
   return { start, end: new Date(`${next}-01T00:00:00+05:30`) };
 }
 
-/** Banners that occupy a slot: the org's own, switched on and not yet over, except an AI promotion's launch banner */
-export function slotBannerWhere(organizationId: string, now = new Date()): Prisma.BannerWhereInput {
-  return {
-    organizationId, sponsorType: "STORE", isActive: true, slotFree: false,
-    OR: [{ endsAt: null }, { endsAt: { gt: now } }],
-  };
-}
-
 /** The plan in force, what it includes and how much of it is used */
 export async function getEntitlements(db: Db, organizationId: string) {
   const now = new Date();
   const period = await activePeriod(db, organizationId, now);
   const plan = period?.product ?? (await db.adProduct.findUnique({ where: { code: FREE_PLAN_CODE } }));
   const window = period ? { start: period.startsAt, end: period.endsAt } : monthWindow(now);
-  const [planMoves, topUp, slotsUsed, lastPeriod, aiImagesUsed] = await Promise.all([
+  const [planMoves, topUp, lastPeriod, aiImagesUsed] = await Promise.all([
     db.promotionCreditEntry.aggregate({ where: { organizationId, fromPlan: true, createdAt: { gte: window.start, lt: window.end } }, _sum: { delta: true } }),
     db.promotionCreditEntry.aggregate({ where: { organizationId, fromPlan: false }, _sum: { delta: true } }),
-    db.banner.count({ where: slotBannerWhere(organizationId, now) }),
     db.orgPlanPeriod.findFirst({ where: { organizationId, endsAt: { gt: now } }, orderBy: { endsAt: "desc" }, select: { endsAt: true } }),
     db.bannerArtRun.count({ where: { organizationId, purpose: "BANNER", createdAt: { gte: window.start, lt: window.end } } }),
   ]);
@@ -56,12 +47,11 @@ export async function getEntitlements(db: Db, organizationId: string) {
   return {
     plan: plan && {
       id: plan.id, code: plan.code, name: plan.name, price: Number(plan.price),
-      bannerSlots: plan.bannerSlots, promotionCredits: plan.promotionCredits, pushIncluded: plan.pushIncluded, aiImagesPerMonth: plan.aiImagesPerMonth,
+      promotionCredits: plan.promotionCredits, pushIncluded: plan.pushIncluded, aiImagesPerMonth: plan.aiImagesPerMonth,
     },
     period: period && { startsAt: period.startsAt, endsAt: period.endsAt },
     /** Last day covered by periods already bought, including ones that start later */
     paidThrough: lastPeriod?.endsAt ?? null,
-    bannerSlots: { used: slotsUsed, total: plan ? plan.bannerSlots : 0 },
     promotions: { planUsed, planTotal, planLeft: Math.max(0, planTotal - planUsed), topUpBalance: topUp._sum.delta ?? 0, resetsAt: window.end },
     pushIncluded: plan?.pushIncluded ?? false,
     aiImages: { used: aiImagesUsed, total: plan?.aiImagesPerMonth ?? 0 },
@@ -102,17 +92,4 @@ export async function refundPromotion(prisma: PrismaClient, promoId: string) {
       });
     }
   });
-}
-
-/** Refuses a new or re-enabled banner when every slot of the plan is taken; locks so two saves can't share a slot */
-export async function assertBannerSlot(tx: Prisma.TransactionClient, organizationId: string) {
-  await tx.$executeRaw`SELECT pg_advisory_xact_lock(hashtext(${`banner-slots:${organizationId}`}))`;
-  const { bannerSlots } = await getEntitlements(tx, organizationId);
-  if (bannerSlots.total !== null && bannerSlots.used >= bannerSlots.total) {
-    throw new PaymentRequiredError(
-      bannerSlots.total === 0
-        ? "Banners need a plan with banner slots. Upgrade your plan."
-        : `All ${bannerSlots.total} banner slots are in use. Switch one off or upgrade your plan.`,
-    );
-  }
 }

@@ -7,7 +7,6 @@ import { JudgeRefusedError } from "./judge.js";
 import { applyChanges, restoreChanges } from "./pricing.js";
 import { sendPromoPush } from "./push.js";
 import { MIN_PRODUCTS } from "./tools.js";
-import { assertBannerSlot } from "../marketing/entitlements.js";
 import { productsForTarget } from "./targets.js";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -85,13 +84,13 @@ const offerOf = (promo: { discountType: DiscountType | null; discountValue: Pris
 
 type LaunchingPromo = Prisma.PromoGetPayload<{ include: { collection: { include: { items: true } }; banners: true } }>;
 
-/** An AI promotion's own home banner, painted with its draft; its credit covers it, so it takes no plan slot */
+/** An AI promotion's home banner, made from its drafted art when it launches */
 async function aiHomeBanner(tx: Prisma.TransactionClient, current: LaunchingPromo, startsAt: Date, endsAt: Date) {
   const c = current.collection;
   if (!c) throw new PromoStateError("Only a ready promo can be launched");
   await tx.banner.create({
     data: {
-      organizationId: current.organizationId, promoId: current.id, slotFree: true, title: c.title, subtitle: c.subtitle,
+      organizationId: current.organizationId, promoId: current.id, title: c.title, subtitle: c.subtitle,
       placement: "HERO_CAROUSEL", imageUrl: c.imageUrl ?? "", imageUrls: c.imageUrls ?? undefined, textInImage: c.textInImage,
       actionType: "COLLECTION", actionTarget: c.id, sortOrder: 0, startsAt, endsAt,
     },
@@ -100,12 +99,9 @@ async function aiHomeBanner(tx: Prisma.TransactionClient, current: LaunchingProm
   return c.items.map((i) => i.productId);
 }
 
-/** Switches on a manual promotion's banners (each one needing a plan slot) and returns the products its discount covers */
+/** Switches on a manual promotion's banner and returns the products its discount covers */
 async function manualBanners(tx: Prisma.TransactionClient, current: LaunchingPromo, startsAt: Date, endsAt: Date) {
-  for (const banner of current.banners) {
-    if (!banner.slotFree) await assertBannerSlot(tx, current.organizationId);
-    await tx.banner.update({ where: { id: banner.id }, data: { isActive: true, startsAt, endsAt } });
-  }
+  await tx.banner.updateMany({ where: { promoId: current.id }, data: { isActive: true, startsAt, endsAt } });
   return offerOf(current) ? productsForTarget(tx, current.organizationId, current.actionType, current.actionTarget) : [];
 }
 
@@ -169,11 +165,11 @@ export async function reopenPromo(prisma: PrismaClient, promoId: string, charge?
       data: { status: "READY", startsAt: null, endsAt: null },
     });
     if (claimed.count === 0) throw new PromoStateError("Only an ended promo can be used again");
-    // Another run of an AI promotion is another promotion credit
-    if (charge && promo.kind === "AI") await charge(tx, { id: promoId, organizationId: promo.organizationId });
-    // The last run's prices are already restored; the AI home banner is made afresh at the next launch
+    // Another run is another promotion
+    if (charge) await charge(tx, { id: promoId, organizationId: promo.organizationId });
+    // The last run's prices are already restored; an AI promotion's banner is made afresh at the next launch
     await tx.promoPriceChange.deleteMany({ where: { promoId } });
-    await tx.banner.deleteMany({ where: { promoId, slotFree: true } });
+    if (promo.kind === "AI") await tx.banner.deleteMany({ where: { promoId } });
   });
   await logStep(prisma, promoId, "Reopened for another run");
 }
