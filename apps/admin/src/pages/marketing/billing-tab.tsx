@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { App, Button, Card, Form, Table, Tag, Tooltip } from "antd";
+import { App, Button, Card, Descriptions, Form, Space, Table, Tag, Typography } from "antd";
+import { EditOutlined } from "@ant-design/icons";
 import dayjs from "dayjs";
 import { axiosInstance } from "../../providers/data-provider";
 import { formatRupees } from "../promos/promo-utils";
-import { BillingFields, billingInitialValues } from "./billing-form";
+import { BillingFields, billingInitialValues, hasBilling } from "./billing-form";
 import type { BillingProfile, BillingValues } from "./types";
 import { errorMessage, invoiceHref } from "./utils";
 
@@ -24,18 +25,33 @@ interface BillingTabProps {
   onSaved: (p: BillingProfile) => void;
 }
 
+function BillingView({ profile }: { profile: BillingProfile | null }) {
+  if (!hasBilling(profile)) return <Typography.Text type="secondary">No billing details yet. They're needed before buying a plan.</Typography.Text>;
+  return (
+    <Descriptions column={1} size="small">
+      <Descriptions.Item label="Legal name">{profile!.billingName}</Descriptions.Item>
+      <Descriptions.Item label="GSTIN">{profile!.gstin || "—"}</Descriptions.Item>
+      <Descriptions.Item label="Address">{profile!.billingAddress}</Descriptions.Item>
+      <Descriptions.Item label="State">{profile!.billingState}</Descriptions.Item>
+    </Descriptions>
+  );
+}
+
 function BillingCard({ profile, canEdit, onSaved }: BillingTabProps) {
   const { notification } = App.useApp();
   const [form] = Form.useForm<BillingValues>();
   const [saving, setSaving] = useState(false);
+  // Owners without details go straight to the form; otherwise the details show read-only until Edit
+  const [editing, setEditing] = useState(canEdit && !hasBilling(profile));
 
-  useEffect(() => { form.setFieldsValue(billingInitialValues(profile)); }, [form, profile]);
+  useEffect(() => { form.setFieldsValue(billingInitialValues(profile)); }, [form, profile, editing]);
 
   const save = async (values: BillingValues) => {
     setSaving(true);
     try {
       await axiosInstance.put("/marketing/billing-profile", values);
       onSaved({ ...values, gstin: values.gstin ?? null });
+      setEditing(false);
       notification.success({ message: "Billing details saved" });
     } catch (err) {
       notification.error({ message: errorMessage(err, "Could not save billing details") });
@@ -44,14 +60,20 @@ function BillingCard({ profile, canEdit, onSaved }: BillingTabProps) {
     }
   };
 
+  const editButton = canEdit && !editing ? <Button size="small" icon={<EditOutlined />} onClick={() => setEditing(true)}>Edit</Button> : null;
   return (
-    <Card title="Billing details" size="small" style={{ marginBottom: 16, maxWidth: 560 }}>
-      <Form form={form} layout="vertical" disabled={!canEdit} onFinish={save}>
-        <BillingFields />
-        <Tooltip title={canEdit ? undefined : "Only the owner can buy"}>
-          <Button type="primary" htmlType="submit" loading={saving} disabled={!canEdit}>Save</Button>
-        </Tooltip>
-      </Form>
+    <Card title="Billing details" size="small" extra={editButton} style={{ marginBottom: 16, maxWidth: 560 }}>
+      {editing ? (
+        <Form form={form} layout="vertical" onFinish={save}>
+          <BillingFields />
+          <Space>
+            <Button type="primary" htmlType="submit" loading={saving}>Save</Button>
+            {hasBilling(profile) && <Button onClick={() => setEditing(false)}>Cancel</Button>}
+          </Space>
+        </Form>
+      ) : (
+        <BillingView profile={profile} />
+      )}
     </Card>
   );
 }
