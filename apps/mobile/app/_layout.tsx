@@ -29,7 +29,6 @@ const LightTheme = {
   },
 };
 import * as ExpoSplashScreen from "expo-splash-screen";
-import * as SecureStore from "expo-secure-store";
 import { AuthProvider, useAuth } from "../lib/auth-context";
 import { PersonaProvider, usePersona } from "../lib/persona-context";
 import { ManageScopeProvider } from "../lib/manage-scope-context";
@@ -75,20 +74,11 @@ function RootLayoutNav() {
     });
   }, []);
 
-  // When auth resolves, check if animated splash should be skipped (recent reload)
+  // The animated splash plays on every launch; hide the native one once auth resolves
   useEffect(() => {
     if (!isLoading && personaReady) {
-      SecureStore.getItemAsync("splash_ts").then((ts) => {
-        if (ts && Date.now() - Number(ts) < 5 * 60 * 1000) {
-          // Splash played within 5 min — skip animated splash (notification-triggered reload)
-          setSplashDone(true);
-        }
-        setAppReady(true);
-        ExpoSplashScreen.hideAsync();
-      }).catch(() => {
-        setAppReady(true);
-        ExpoSplashScreen.hideAsync();
-      });
+      setAppReady(true);
+      ExpoSplashScreen.hideAsync();
     }
   }, [isLoading, personaReady]);
 
@@ -135,7 +125,6 @@ function RootLayoutNav() {
   // Called after splash fade-out completes — remove the overlay and navigate to deep link
   const handleSplashFinish = useCallback(() => {
     setSplashDone(true);
-    SecureStore.setItemAsync("splash_ts", String(Date.now())).catch(() => {});
     // If a notification tap was queued during splash, navigate now
     if (pendingDeepLink.current && isAuthenticated) {
       const target = pendingDeepLink.current;
