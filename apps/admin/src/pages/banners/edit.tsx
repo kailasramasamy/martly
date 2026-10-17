@@ -3,12 +3,13 @@ import { Form, Input, Select, InputNumber, Switch, DatePicker, Card, Row, Col } 
 import { BannerPlacementLabels, BannerActionTypeLabels } from "@martly/shared/constants";
 import { ImageUpload } from "../../components/ImageUpload";
 import { useList } from "@refinedev/core";
+import { Navigate } from "react-router";
 
 const placementOptions = Object.entries(BannerPlacementLabels).map(([value, label]) => ({ value, label }));
 const actionTypeOptions = Object.entries(BannerActionTypeLabels).map(([value, label]) => ({ value, label }));
 
 export const BannerEdit = () => {
-  const { formProps, saveButtonProps, form } = useForm({ resource: "banners" });
+  const { formProps, saveButtonProps, form, queryResult } = useForm({ resource: "banners" });
   const actionType = Form.useWatch("actionType", form);
   const placement = Form.useWatch("placement", form);
 
@@ -19,6 +20,9 @@ export const BannerEdit = () => {
   const categories = categoriesData?.data ?? [];
   const collections = collectionsData?.data ?? [];
   const stores = storesData?.data ?? [];
+
+  const promo = queryResult?.data?.data?.promo as { id: string } | null | undefined;
+  if (promo) return <Navigate to={`/promos/show/${promo.id}`} replace />;
 
   return (
     <Edit saveButtonProps={saveButtonProps}>

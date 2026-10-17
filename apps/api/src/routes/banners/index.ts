@@ -6,6 +6,9 @@ import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 
+// A promotion launches, ends and reverts its own banner; edits made here would drift from it
+const PROMO_OWNED = "This banner belongs to a promotion. Change it from the promotion instead.";
+
 export async function bannerRoutes(app: FastifyInstance) {
   // Public: fetch active banners by placement for a store
   app.get<{ Params: { storeId: string } }>(
@@ -110,6 +113,7 @@ export async function bannerRoutes(app: FastifyInstance) {
         include: {
           organization: { select: { id: true, name: true } },
           store: { select: { id: true, name: true } },
+          promo: { select: { id: true, status: true } },
         },
       }),
       app.prisma.banner.count({ where }),
@@ -130,6 +134,7 @@ export async function bannerRoutes(app: FastifyInstance) {
       include: {
         organization: { select: { id: true, name: true } },
         store: { select: { id: true, name: true } },
+        promo: { select: { id: true, status: true } },
       },
     });
     if (!banner) return reply.notFound("Banner not found");
@@ -178,8 +183,9 @@ export async function bannerRoutes(app: FastifyInstance) {
     { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] },
     async (request, reply) => {
       const body = updateBannerSchema.parse(request.body);
-      const existing = await app.prisma.banner.findUnique({ where: { id: request.params.id } });
+      const existing = await app.prisma.banner.findUnique({ where: { id: request.params.id }, include: { promo: { select: { id: true } } } });
       if (!existing) return reply.notFound("Banner not found");
+      if (existing.promo) return reply.conflict(PROMO_OWNED);
 
       const user = getOrgUser(request);
       if (user.role !== "SUPER_ADMIN" && existing.organizationId !== user.organizationId) {
@@ -208,8 +214,9 @@ export async function bannerRoutes(app: FastifyInstance) {
     "/:id",
     { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] },
     async (request, reply) => {
-      const existing = await app.prisma.banner.findUnique({ where: { id: request.params.id } });
+      const existing = await app.prisma.banner.findUnique({ where: { id: request.params.id }, include: { promo: { select: { id: true } } } });
       if (!existing) return reply.notFound("Banner not found");
+      if (existing.promo) return reply.conflict(PROMO_OWNED);
 
       const user = getOrgUser(request);
       if (user.role !== "SUPER_ADMIN" && existing.organizationId !== user.organizationId) {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { View, StyleSheet } from "react-native";
-import { useRouter } from "expo-router";
+import { Redirect, useRouter } from "expo-router";
 import { BannerActionTypeLabels, BannerPlacementLabels } from "@martly/shared/constants";
 import { ManageStackScreen } from "../ManageStackScreen";
 import { SectionCard } from "../ui/SectionCard";
@@ -94,6 +94,7 @@ export function BannerForm({ id }: { id?: string }) {
   if (id && !data) {
     return <ManageStackScreen title="Edit banner" loading={loading} error={error} onRetry={reload}>{null}</ManageStackScreen>;
   }
+  if (data?.promo) return <Redirect href={`/manage/promos/${data.promo.id}`} />;
   return <BannerFields key={data?.id} initial={data ? fromBanner(data) : EMPTY} id={id} />;
 }
 

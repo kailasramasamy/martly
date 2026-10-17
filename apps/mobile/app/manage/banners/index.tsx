@@ -56,16 +56,16 @@ export default function BannersScreen() {
       empty={{ icon: "image-outline", title: "No banners yet", message: "Add a banner to promote offers on the home screen." }}
       renderItem={(row) => {
         if ("header" in row) return <GroupHeader label={row.header} />;
-        const tone = row.isActive ? TONES.green : TONES.slate;
+        const tone = row.promo ? TONES.violet : row.isActive ? TONES.green : TONES.slate;
         return (
           <ListRow
             title={row.title}
-            subtitle={`${BannerActionTypeLabels[row.actionType as keyof typeof BannerActionTypeLabels] ?? row.actionType} · ${scopeText(row)}`}
+            subtitle={row.promo ? `From promotion · ${scopeText(row)}` : `${BannerActionTypeLabels[row.actionType as keyof typeof BannerActionTypeLabels] ?? row.actionType} · ${scopeText(row)}`}
             caption={`Order ${row.sortOrder} · ${scheduleText(row)}`}
             imageUrl={row.imageUrl}
             railColor={tone.color}
-            trailing={<StatusPill label={row.isActive ? "Active" : "Off"} {...tone} />}
-            onPress={() => router.push(`/manage/banners/${row.id}`)}
+            trailing={<StatusPill label={row.promo ? "Promotion" : row.isActive ? "Active" : "Off"} {...tone} />}
+            onPress={() => router.push(row.promo ? `/manage/promos/${row.promo.id}` : `/manage/banners/${row.id}`)}
             chevron
           />
         );

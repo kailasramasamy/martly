@@ -34,6 +34,8 @@ export interface Banner {
   subcategoryId: string | null;
   organization: { id: string; name: string } | null;
   store: { id: string; name: string } | null;
+  /** Set when a promotion owns this banner; it is managed from the promotion */
+  promo: { id: string; status: string } | null;
 }
 
 export interface FestivalCollection {

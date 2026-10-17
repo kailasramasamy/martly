@@ -1,4 +1,4 @@
-import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
+import { List, useTable, EditButton, DeleteButton, ShowButton } from "@refinedev/antd";
 import { useState } from "react";
 import { App, Table, Tag, Space, Image, Switch } from "antd";
 import { isAxiosError } from "axios";
@@ -53,7 +53,16 @@ export const BannerList = () => {
             url ? <Image src={url} width={60} height={40} style={{ objectFit: "cover", borderRadius: 4 }} preview /> : "—"
           }
         />
-        <Table.Column dataIndex="title" title="Title" />
+        <Table.Column
+          dataIndex="title"
+          title="Title"
+          render={(v: string, rec: any) => (
+            <Space size={6}>
+              {v}
+              {rec.promo && <Tag color="purple">Promotion</Tag>}
+            </Space>
+          )}
+        />
         <Table.Column
           dataIndex="placement"
           title="Placement"
@@ -93,18 +102,23 @@ export const BannerList = () => {
           title="Active"
           width={70}
           render={(v: boolean, rec: any) => (
-            <Switch size="small" checked={v} loading={togglingId === rec.id} onChange={(c) => handleToggleActive(rec.id, c)} />
+            <Switch size="small" checked={v} disabled={!!rec.promo} loading={togglingId === rec.id} onChange={(c) => handleToggleActive(rec.id, c)} />
           )}
         />
         <Table.Column
           title="Actions"
           width={100}
-          render={(_, rec: any) => (
-            <Space>
-              <EditButton hideText size="small" recordItemId={rec.id} />
-              <DeleteButton hideText size="small" recordItemId={rec.id} />
-            </Space>
-          )}
+          render={(_, rec: any) =>
+            rec.promo ? (
+              // Promotions own their banner; manage it from there
+              <ShowButton hideText size="small" resource="promos" recordItemId={rec.promo.id} title="Open promotion" />
+            ) : (
+              <Space>
+                <EditButton hideText size="small" recordItemId={rec.id} />
+                <DeleteButton hideText size="small" recordItemId={rec.id} />
+              </Space>
+            )
+          }
         />
       </Table>
     </List>
