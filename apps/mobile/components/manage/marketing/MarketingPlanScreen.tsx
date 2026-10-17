@@ -11,13 +11,19 @@ import { useAuth } from "../../../lib/auth-context";
 import { RazorpayCheckout } from "../../RazorpayCheckout";
 import { colors, fonts } from "../../../constants/theme";
 import { CurrentPlanCard, TrialCard } from "./CurrentPlanCard";
+import { SegmentedTabs } from "../ui/SegmentedTabs";
 import { PlanCard, TopUpCard, UsageCard } from "./PlanSections";
 import { useAdCheckout } from "./use-ad-checkout";
 import { usePlanActions } from "./use-plan-actions";
 import { useEntitlements } from "./use-entitlements";
-import type { AdProduct } from "./plan-types";
+import type { AdProduct, BillingInterval } from "./plan-types";
 
 const UPGRADE_NOTE = "Upgrading starts now; unused days of your current plan carry over as extra days. Same or cheaper plans start after your current one.";
+
+const INTERVAL_OPTIONS = [
+  { value: "MONTHLY" as const, label: "Monthly" },
+  { value: "YEARLY" as const, label: "Annual \u00B7 2 months free" },
+];
 
 const LINKS = [
   { title: "Results", subtitle: "Views, taps and orders from the last 30 days", icon: "stats-chart-outline", href: "/manage/marketing-plan/results" },
@@ -50,8 +56,10 @@ export function MarketingPlanScreen() {
   const checkout = useAdCheckout(entitlements.reload);
   const actions = usePlanActions(entitlements.reload);
   const [quantity, setQuantity] = useState(1);
+  const [pickedInterval, setPickedInterval] = useState<BillingInterval | null>(null);
   const canBuy = can(user, "marketing-plan", "create");
   const e = entitlements.data;
+  const interval = pickedInterval ?? e?.plan?.billingInterval ?? "MONTHLY";
   const plans = (products.data ?? []).filter((p) => p.kind === "STORE_PLAN");
   const topUp = (products.data ?? []).find((p) => p.kind === "PROMOTION_TOPUP");
   // Turning auto-renew back on buys the plan that was renewing again, from the end of the paid time
@@ -64,12 +72,13 @@ export function MarketingPlanScreen() {
       {e ? (
         <>
           {e.trial.available ? <TrialCard canBuy={canBuy} busy={busy} onStart={actions.startTrial} /> : null}
-          <CurrentPlanCard e={e} canBuy={canBuy} busy={busy} onCancelRenewal={actions.cancelRenewal} onResume={() => renewingPlan && checkout.subscribe(renewingPlan)} />
+          <CurrentPlanCard e={e} canBuy={canBuy} busy={busy} onCancelRenewal={actions.cancelRenewal} onResume={() => renewingPlan && e.subscription && checkout.subscribe(renewingPlan, e.subscription.interval)} />
           <UsageCard e={e} />
           {canBuy ? null : <Text style={styles.note}>Only the owner can buy</Text>}
           <Text style={styles.note}>{UPGRADE_NOTE}</Text>
+          <SegmentedTabs options={INTERVAL_OPTIONS} value={interval} onChange={setPickedInterval} />
           {plans.map((p) => (
-            <PlanCard key={p.id} product={p} e={e} canBuy={canBuy} busy={busy} onBuy={() => checkout.subscribe(p)} />
+            <PlanCard key={p.id} product={p} currentProduct={plans.find((c) => c.id === e.plan?.id)} interval={interval} e={e} canBuy={canBuy} busy={busy} onBuy={() => checkout.subscribe(p, interval)} />
           ))}
           {topUp ? <TopUpCard onPaidPlan={e.onPaidPlan} product={topUp} quantity={quantity} onQuantity={setQuantity} canBuy={canBuy} busy={busy} onBuy={() => checkout.buy(topUp.id, quantity)} /> : null}
           <SectionCard flush>

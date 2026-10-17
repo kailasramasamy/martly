@@ -5,7 +5,7 @@ import { useAction } from "../../../lib/manage/use-action";
 import { useToast } from "../../../lib/toast-context";
 import { formatDate } from "../ui/dates";
 import type { SubscriptionPayment } from "../../RazorpayCheckout";
-import type { AdOrderCheckout, AdProduct, BillingProfile, SubscriptionCheckout } from "./plan-types";
+import type { AdOrderCheckout, AdProduct, BillingInterval, BillingProfile, SubscriptionCheckout } from "./plan-types";
 
 export interface PaymentResult {
   razorpay_payment_id: string;
@@ -38,9 +38,9 @@ export function useAdCheckout(onPaid: () => void) {
     if (created) setOrder(created.data);
   };
 
-  const subscribe = async (plan: AdProduct) => {
+  const subscribe = async (plan: AdProduct, interval: BillingInterval) => {
     if (!(await billingReady())) return;
-    const created = await run(() => api.post<SubscriptionCheckout>("/api/v1/marketing/subscription", { productId: plan.id }));
+    const created = await run(() => api.post<SubscriptionCheckout>("/api/v1/marketing/subscription", { productId: plan.id, interval }));
     if (created) setSubscription({ ...created.data, planName: plan.name });
   };
 

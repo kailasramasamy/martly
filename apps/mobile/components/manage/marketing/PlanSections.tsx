@@ -8,7 +8,7 @@ import { formatDate } from "../ui/dates";
 import { formatINR, manage } from "../ui/tokens";
 import { colors, fonts } from "../../../constants/theme";
 import { TONES } from "./common";
-import type { AdProduct, Entitlements } from "./plan-types";
+import type { AdProduct, BillingInterval, Entitlements } from "./plan-types";
 
 const MIN_QTY = 1;
 const MAX_QTY = 12;
@@ -34,34 +34,62 @@ function features(p: AdProduct): string[] {
   ];
 }
 
-/** This plan is the one renewing itself (auto-renew on) */
-const isAutoRenewing = (e: Entitlements, product: AdProduct) =>
-  e.subscription?.productCode === product.code && e.subscription.status === "ACTIVE" && !e.subscription.cancelAtPeriodEnd;
+/** This plan is the one renewing itself (auto-renew on) at this billing interval */
+const isAutoRenewing = (e: Entitlements, product: AdProduct, interval: BillingInterval) =>
+  e.subscription?.productCode === product.code && e.subscription.interval === interval && e.subscription.status === "ACTIVE" && !e.subscription.cancelAtPeriodEnd;
 
-function actionLabel(product: AdProduct, e: Entitlements): string {
-  if (!e.plan) return "Get plan";
-  if (e.plan.id === product.id) return isAutoRenewing(e, product) ? "Current plan" : "Renew automatically";
-  return product.price > e.plan.price ? "Upgrade" : "Switch at end of month";
+/** What a plan costs per month at an interval; annual plans without a yearly price fall back to monthly */
+const monthlyEquivalent = (product: AdProduct, interval: BillingInterval) =>
+  interval === "YEARLY" && product.yearlyPrice !== null ? product.yearlyPrice / 12 : product.price;
+
+function actionLabel(product: AdProduct, currentProduct: AdProduct | undefined, interval: BillingInterval, e: Entitlements): string {
+  if (!e.plan || !currentProduct) return "Get plan";
+  if (e.plan.id === product.id && e.subscription?.interval === interval) return isAutoRenewing(e, product, interval) ? "Current plan" : "Renew automatically";
+  const current = monthlyEquivalent(currentProduct, e.plan.billingInterval);
+  return monthlyEquivalent(product, interval) > current ? "Upgrade" : "Switch at end of current plan";
+}
+
+function PriceBlock({ product, interval }: { product: AdProduct; interval: BillingInterval }) {
+  const gst = `+ ${product.gstPercent}% GST`;
+  if (interval === "MONTHLY") {
+    return (
+      <>
+        <Text style={styles.price}>{formatINR(product.price)}<Text style={styles.muted}>{` / month ${gst}`}</Text></Text>
+        {product.price > 0 ? <Text style={styles.muted}>Renews monthly · cancel anytime</Text> : null}
+      </>
+    );
+  }
+  if (product.price === 0) return <Text style={styles.price}>{formatINR(0)}</Text>;
+  if (product.yearlyPrice === null) return <Text style={styles.muted}>Monthly only</Text>;
+  return (
+    <>
+      <Text style={styles.price}>{formatINR(Math.round(product.yearlyPrice / 12))}<Text style={styles.muted}> / month</Text></Text>
+      <Text style={styles.muted}>{`Billed ${formatINR(product.yearlyPrice)} a year ${gst} · save ${formatINR(product.price * 12 - product.yearlyPrice)}`}</Text>
+      <Text style={styles.muted}>Renews yearly · cancel anytime</Text>
+    </>
+  );
 }
 
 interface PlanCardProps {
   product: AdProduct;
+  currentProduct: AdProduct | undefined;
+  interval: BillingInterval;
   e: Entitlements;
   canBuy: boolean;
   busy: boolean;
   onBuy: () => void;
 }
 
-export function PlanCard({ product, e, canBuy, busy, onBuy }: PlanCardProps) {
-  const current = e.plan?.id === product.id;
+export function PlanCard({ product, currentProduct, interval, e, canBuy, busy, onBuy }: PlanCardProps) {
+  const current = e.plan?.id === product.id && (product.price === 0 || e.subscription?.interval === interval);
+  const unavailable = interval === "YEARLY" && product.yearlyPrice === null;
   return (
     <SectionCard>
       <View style={styles.planHead}>
         <Text style={styles.planName}>{product.name}</Text>
         {current ? <StatusPill label="Current" {...TONES.green} /> : null}
       </View>
-      <Text style={styles.price}>{formatINR(product.price)}<Text style={styles.muted}>{` / month + ${product.gstPercent}% GST`}</Text></Text>
-      {product.price > 0 ? <Text style={styles.muted}>Renews monthly · cancel anytime</Text> : null}
+      <PriceBlock product={product} interval={interval} />
       {features(product).map((f) => (
         <View key={f} style={styles.feature}>
           <Ionicons name="checkmark-circle" size={16} color={colors.primary} />
@@ -69,7 +97,7 @@ export function PlanCard({ product, e, canBuy, busy, onBuy }: PlanCardProps) {
         </View>
       ))}
       {product.price > 0 ? (
-        <Button label={actionLabel(product, e)} onPress={onBuy} disabled={!canBuy || isAutoRenewing(e, product)} loading={busy} variant={current ? "secondary" : "primary"} style={styles.buy} />
+        <Button label={actionLabel(product, currentProduct, interval, e)} onPress={onBuy} disabled={!canBuy || unavailable || isAutoRenewing(e, product, interval)} loading={busy} variant={current ? "secondary" : "primary"} style={styles.buy} />
       ) : (
         <Text style={[styles.muted, styles.buy]}>You're on this plan whenever no paid plan is running.</Text>
       )}

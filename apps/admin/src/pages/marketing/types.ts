@@ -1,5 +1,7 @@
 import type { AdProductKind } from "@martly/shared/constants";
 
+export type BillingInterval = "MONTHLY" | "YEARLY";
+
 export interface AdProduct {
   id: string;
   kind: AdProductKind;
@@ -7,6 +9,8 @@ export interface AdProduct {
   name: string;
   description: string | null;
   price: number;
+  /** Store plans: price for a year paid up front; null means no annual option */
+  yearlyPrice: number | null;
   durationDays: number;
   promotionCredits: number;
   aiImagesPerMonth: number;
@@ -34,7 +38,7 @@ export type BillingValues = {
 };
 
 export interface Entitlements {
-  plan: { id: string; code: string; name: string; price: number; promotionCredits: number; pushIncluded: boolean; aiImagesPerMonth: number } | null;
+  plan: { id: string; code: string; name: string; price: number; promotionCredits: number; pushIncluded: boolean; aiImagesPerMonth: number; billingInterval: BillingInterval } | null;
   period: { startsAt: string; endsAt: string } | null;
   paidThrough: string | null;
   promotions: { planUsed: number; planTotal: number; planLeft: number; topUpBalance: number; resetsAt: string | null };
@@ -46,6 +50,7 @@ export interface Entitlements {
     status: "CREATED" | "ACTIVE" | "PENDING" | "HALTED";
     productName: string;
     productCode: string;
+    interval: BillingInterval;
     cancelAtPeriodEnd: boolean;
     renewsAt: string | null;
   } | null;

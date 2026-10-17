@@ -13,6 +13,10 @@ const rupeeInput = (value: number, onChange: (v: number) => void) => (
   <InputNumber prefix={"₹"} min={0} value={value} onChange={(v) => onChange(v ?? 0)} style={{ width: 110 }} />
 );
 
+const yearlyPriceInput = (value: number | null, onChange: (v: number | null) => void) => (
+  <InputNumber prefix={"₹"} min={0} value={value} placeholder="None" onChange={onChange} style={{ width: 110 }} />
+);
+
 const countInput = (value: number, onChange: (v: number) => void, min = 0) => (
   <InputNumber min={min} precision={0} value={value} onChange={(v) => onChange(v ?? min)} style={{ width: 80 }} />
 );
@@ -33,6 +37,7 @@ export function StorePlansCard({ products, patch }: TableProps) {
   const columns = [
     ...textColumns(patch),
     { title: "Price / month", dataIndex: "price", width: 130, render: (v: number, r: AdProduct) => rupeeInput(v, (price) => patch(r.id, { price })) },
+    { title: "Price / year", dataIndex: "yearlyPrice", width: 130, render: (v: number | null, r: AdProduct) => yearlyPriceInput(v, (yearlyPrice) => patch(r.id, { yearlyPrice })) },
     { title: "Promotions / month", dataIndex: "promotionCredits", width: 130, render: (v: number, r: AdProduct) => countInput(v, (n) => patch(r.id, { promotionCredits: n })) },
     { title: "AI images / month", dataIndex: "aiImagesPerMonth", width: 130, render: (v: number, r: AdProduct) => countInput(v, (n) => patch(r.id, { aiImagesPerMonth: n })) },
     { title: "Push included", dataIndex: "pushIncluded", width: 100, render: (v: boolean, r: AdProduct) => <Switch checked={v} onChange={(c) => patch(r.id, { pushIncluded: c })} /> },
@@ -40,7 +45,7 @@ export function StorePlansCard({ products, patch }: TableProps) {
   ];
   return (
     <Card title="Store plans" size="small" style={{ marginBottom: 16 }}>
-      <Table size="small" rowKey="id" pagination={false} dataSource={products} columns={columns} scroll={{ x: 1100 }} />
+      <Table size="small" rowKey="id" pagination={false} dataSource={products} columns={columns} scroll={{ x: 1230 }} />
     </Card>
   );
 }

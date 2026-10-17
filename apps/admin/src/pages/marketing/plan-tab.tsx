@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Alert, Button, Card, Col, InputNumber, Popconfirm, Progress, Row, Space, Tag, Tooltip, Typography } from "antd";
+import { Alert, Button, Card, Col, InputNumber, Popconfirm, Progress, Row, Segmented, Space, Tag, Tooltip, Typography } from "antd";
 import { CheckOutlined } from "@ant-design/icons";
 import dayjs from "dayjs";
 import { formatRupees } from "../promos/promo-utils";
 import { usePlanActions } from "./use-plan-actions";
 import { usePurchase } from "./use-purchase";
-import type { AdProduct, BillingProfile, Entitlements } from "./types";
+import type { AdProduct, BillingInterval, BillingProfile, Entitlements } from "./types";
 
 const { Text, Title } = Typography;
 const MAX_TOPUP = 12;
@@ -77,7 +77,7 @@ function UsageCard(props: RenewalProps) {
   return (
     <Card size="small" style={{ marginBottom: 16 }}>
       <Space align="baseline" style={{ marginBottom: 12 }} wrap>
-        <Title level={4} style={{ margin: 0 }}>{e.plan?.name ?? "Free plan"}</Title>
+        <Title level={4} style={{ margin: 0 }}>{e.plan?.name ?? "Free plan"}{e.plan?.billingInterval === "YEARLY" && " (billed yearly)"}</Title>
         <RenewalInfo {...props} />
       </Space>
       {e.trial.endsAt && <div style={{ marginBottom: 12 }}><Text type="secondary">Choose a plan to keep going after the trial</Text></div>}
@@ -124,31 +124,71 @@ function planFeatures(p: AdProduct): string[] {
 
 const FREE_NOTE = "You're on this plan whenever no paid plan is running.";
 
-function buttonLabel(plan: AdProduct, current: Entitlements["plan"], autoRenewing: boolean): string {
-  if (!current) return "Upgrade";
-  if (plan.code === current.code) return autoRenewing ? "Current plan" : "Renew automatically";
-  return plan.price > current.price ? "Upgrade" : "Switch at end of month";
+const perMonth = (p: AdProduct, interval: BillingInterval) => (interval === "YEARLY" && p.yearlyPrice != null ? Math.round(p.yearlyPrice / 12) : p.price);
+
+interface ButtonState { label: string; disabled: boolean }
+
+function buttonState(plan: AdProduct, interval: BillingInterval, plans: AdProduct[], e: Entitlements): ButtonState {
+  const sub = e.subscription;
+  const autoRenewing = sub?.productCode === plan.code && sub.interval === interval && sub.status === "ACTIVE" && !sub.cancelAtPeriodEnd;
+  if (autoRenewing) return { label: "Current plan", disabled: true };
+  const current = e.plan;
+  if (!current) return { label: "Upgrade", disabled: false };
+  if (plan.code === current.code && interval === current.billingInterval) return { label: "Renew automatically", disabled: false };
+  const currentProduct = plans.find((p) => p.code === current.code);
+  const currentPerMonth = currentProduct ? perMonth(currentProduct, current.billingInterval) : current.price;
+  return { label: perMonth(plan, interval) > currentPerMonth ? "Upgrade" : "Switch at end of current plan", disabled: false };
 }
 
-function PlanCards({ plans, e, canBuy, buying, buy }: { plans: AdProduct[]; e: Entitlements; canBuy: boolean; buying: string | null; buy: (p: AdProduct) => void }) {
+function PlanPrice({ plan, interval }: { plan: AdProduct; interval: BillingInterval }) {
+  const yearly = interval === "YEARLY" && plan.price > 0;
+  const gst = `+${plan.gstPercent}% GST`;
+  if (yearly && plan.yearlyPrice == null) return <Text type="secondary">Monthly only</Text>;
+  if (yearly && plan.yearlyPrice != null) {
+    return (
+      <>
+        <Title level={3} style={{ margin: 0 }}>{formatRupees(perMonth(plan, interval))}<Text type="secondary" style={{ fontSize: 14 }}> / month</Text></Title>
+        <div><Text type="secondary" style={{ fontSize: 12 }}>Billed {formatRupees(plan.yearlyPrice)} a year {gst} · save {formatRupees(plan.price * 12 - plan.yearlyPrice)}</Text></div>
+        <div><Text type="secondary" style={{ fontSize: 12 }}>Renews yearly · cancel anytime</Text></div>
+      </>
+    );
+  }
+  return (
+    <>
+      <Title level={3} style={{ margin: 0 }}>{formatRupees(plan.price)}<Text type="secondary" style={{ fontSize: 14 }}> / month {gst}</Text></Title>
+      {plan.price > 0 && <div><Text type="secondary" style={{ fontSize: 12 }}>Renews monthly · cancel anytime</Text></div>}
+    </>
+  );
+}
+
+interface PlanCardsProps {
+  plans: AdProduct[];
+  interval: BillingInterval;
+  e: Entitlements;
+  canBuy: boolean;
+  buying: string | null;
+  buy: (p: AdProduct, quantity: number, interval: BillingInterval) => void;
+}
+
+function PlanCards({ plans, interval, e, canBuy, buying, buy }: PlanCardsProps) {
   return (
     <Row gutter={[16, 16]}>
       {plans.map((p) => {
-        const isCurrent = e.plan?.code === p.code;
-        const autoRenewing = e.subscription?.productCode === p.code && e.subscription.status === "ACTIVE" && !e.subscription.cancelAtPeriodEnd;
+        const isCurrent = e.plan?.code === p.code && (p.price === 0 || e.plan.billingInterval === interval);
+        const noAnnual = interval === "YEARLY" && p.yearlyPrice == null;
+        const state = buttonState(p, interval, plans, e);
         return (
           <Col xs={24} md={8} key={p.id}>
             <Card size="small" title={<Space>{p.name}{isCurrent && <Tag color="teal">Current</Tag>}</Space>} style={isCurrent ? { borderColor: "#0d9488" } : undefined}>
-              <Title level={3} style={{ margin: 0 }}>{formatRupees(p.price)}<Text type="secondary" style={{ fontSize: 14 }}> / month +{p.gstPercent}% GST</Text></Title>
-              {p.price > 0 && <div><Text type="secondary" style={{ fontSize: 12 }}>Renews monthly · cancel anytime</Text></div>}
+              <PlanPrice plan={p} interval={interval} />
               {p.description && <div><Text type="secondary">{p.description}</Text></div>}
               <ul style={{ paddingLeft: 0, listStyle: "none", margin: "12px 0" }}>
                 {planFeatures(p).map((f) => <li key={f}><CheckOutlined style={{ color: "#0d9488", marginRight: 8 }} />{f}</li>)}
               </ul>
               {p.price > 0 ? (
                 <Tooltip title={canBuy ? undefined : OWNER_ONLY}>
-                  <Button type={isCurrent ? "default" : "primary"} block disabled={!canBuy || autoRenewing} loading={buying === p.id} onClick={() => buy(p)}>
-                    {buttonLabel(p, e.plan, autoRenewing)}
+                  <Button type={isCurrent ? "default" : "primary"} block disabled={!canBuy || state.disabled || noAnnual} loading={buying === p.id} onClick={() => buy(p, 1, interval)}>
+                    {state.label}
                   </Button>
                 </Tooltip>
               ) : (
@@ -182,16 +222,23 @@ function TopupCard({ product, canBuy, onPaidPlan, buying, buy }: { product: AdPr
 export function PlanTab({ entitlements, products, profile, canBuy, onProfileSaved, onPaid }: PlanTabProps) {
   const { buying, buy, modal } = usePurchase(profile, onProfileSaved, onPaid);
   const { acting, startTrial, cancelRenewal } = usePlanActions(onPaid);
+  const [interval, setPlanInterval] = useState<BillingInterval>(entitlements.plan?.billingInterval ?? "MONTHLY");
   const plans = products.filter((p) => p.kind === "STORE_PLAN");
   const topup = products.find((p) => p.kind === "PROMOTION_TOPUP");
   // Turning auto-renew back on buys the plan that was renewing again, from the end of the paid time
   const renewingProduct = plans.find((p) => p.code === entitlements.subscription?.productCode);
   return (
     <>
-      <UsageCard e={entitlements} canBuy={canBuy} acting={acting === "cancel"} onCancel={cancelRenewal} onTurnOn={() => renewingProduct && buy(renewingProduct)} />
+      <UsageCard e={entitlements} canBuy={canBuy} acting={acting === "cancel"} onCancel={cancelRenewal} onTurnOn={() => renewingProduct && buy(renewingProduct, 1, entitlements.subscription?.interval)} />
       {entitlements.trial.available && <TrialCard canBuy={canBuy} acting={acting === "trial"} onStart={startTrial} />}
       <Alert type="info" showIcon style={{ marginBottom: 16 }} message="Upgrading starts now; unused days of your current plan carry over as extra days (a free trial carries none). Switching to a cheaper plan starts after your current month." />
-      <PlanCards plans={plans} e={entitlements} canBuy={canBuy} buying={buying} buy={buy} />
+      <Segmented
+        style={{ marginBottom: 16 }}
+        value={interval}
+        onChange={(v) => setPlanInterval(v as BillingInterval)}
+        options={[{ value: "MONTHLY", label: "Monthly" }, { value: "YEARLY", label: "Annual · 2 months free" }]}
+      />
+      <PlanCards plans={plans} interval={interval} e={entitlements} canBuy={canBuy} buying={buying} buy={buy} />
       {topup && <TopupCard product={topup} canBuy={canBuy} onPaidPlan={entitlements.onPaidPlan} buying={buying} buy={buy} />}
       {modal}
     </>

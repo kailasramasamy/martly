@@ -53,7 +53,7 @@ export function CurrentPlanCard({ e, canBuy, busy, onCancelRenewal, onResume }: 
 
   return (
     <SectionCard title="Your plan">
-      <Text style={styles.name}>{e.plan?.name ?? "Free"}</Text>
+      <Text style={styles.name}>{e.plan ? `${e.plan.name}${e.plan.billingInterval === "YEARLY" ? " · billed yearly" : ""}` : "Free"}</Text>
       {e.trial.endsAt ? (
         <>
           <Text style={styles.muted}>{`Free trial · ends ${formatDate(e.trial.endsAt)}`}</Text>

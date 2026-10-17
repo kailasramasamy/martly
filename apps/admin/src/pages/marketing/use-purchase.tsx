@@ -4,10 +4,10 @@ import dayjs from "dayjs";
 import { axiosInstance } from "../../providers/data-provider";
 import { payWithRazorpay } from "../../components/RazorpayPay";
 import { BillingModal, hasBilling } from "./billing-form";
-import type { AdProduct, BillingProfile, BillingValues } from "./types";
+import type { AdProduct, BillingInterval, BillingProfile, BillingValues } from "./types";
 import { errorMessage } from "./utils";
 
-interface Pending { product: AdProduct; quantity: number }
+interface Pending { product: AdProduct; quantity: number; interval: BillingInterval }
 
 /** Buys a marketing product through Razorpay, asking for billing details first when the organisation has none */
 export function usePurchase(profile: BillingProfile | null, onProfileSaved: (p: BillingProfile) => void, onPaid: () => Promise<void>) {
@@ -22,8 +22,8 @@ export function usePurchase(profile: BillingProfile | null, onProfileSaved: (p: 
     return `${product.name} is active.`;
   };
 
-  const paySubscription = async ({ product }: Pending) => {
-    const sub = (await axiosInstance.post("/marketing/subscription", { productId: product.id })).data.data;
+  const paySubscription = async ({ product, interval }: Pending) => {
+    const sub = (await axiosInstance.post("/marketing/subscription", { productId: product.id, interval })).data.data;
     const payment = await payWithRazorpay({ subscriptionId: sub.subscriptionId, keyId: sub.keyId }, product.name);
     await axiosInstance.post("/marketing/subscription/verify", payment);
     if (!sub.startsAt) return `${product.name} is active and renews automatically.`;
@@ -43,9 +43,9 @@ export function usePurchase(profile: BillingProfile | null, onProfileSaved: (p: 
     }
   };
 
-  const buy = (product: AdProduct, quantity = 1) => {
-    if (hasBilling(profile)) void pay({ product, quantity });
-    else setNeedsBilling({ product, quantity });
+  const buy = (product: AdProduct, quantity = 1, interval: BillingInterval = "MONTHLY") => {
+    if (hasBilling(profile)) void pay({ product, quantity, interval });
+    else setNeedsBilling({ product, quantity, interval });
   };
 
   const saveBilling = async (values: BillingValues) => {
