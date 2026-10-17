@@ -257,7 +257,7 @@ const styles = StyleSheet.create({
 
   // Logo
   logoSection: { alignItems: "center", marginBottom: 40 },
-  wordmark: { width: 180, height: 64 },
+  wordmark: { width: 180, height: 70 },
   subtitle: { fontSize: fontSize.lg, color: colors.textSecondary, marginTop: 4 },
 
   // Steps

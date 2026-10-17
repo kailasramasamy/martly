@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.background },
   inner: { flexGrow: 1, justifyContent: "center", padding: spacing.lg },
   logoSection: { alignItems: "center", marginBottom: 32 },
-  wordmark: { width: 160, height: 56 },
+  wordmark: { width: 160, height: 62 },
   badge: {
     flexDirection: "row", alignItems: "center", gap: 6, marginTop: 6,
     paddingHorizontal: 10, height: 26, borderRadius: 13, backgroundColor: "#f0fdfa",

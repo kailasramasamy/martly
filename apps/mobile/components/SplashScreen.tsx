@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
   },
   wordmark: {
     width: 200,
-    height: 71,
+    height: 77,
   },
   subtitle: {
     fontSize: 17,
