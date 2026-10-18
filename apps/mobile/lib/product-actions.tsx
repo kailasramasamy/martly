@@ -93,29 +93,37 @@ export function ProductActionsProvider({ store, onTrack, children }: {
     ...cart, addToCart, trackOpen, storeId: store?.id, showVariants: setSheetVariants, isWishlisted, toggleWishlist,
   }), [cart.cartQuantityMap, addToCart, trackOpen, cart.updateQuantity, cart.isMember, store?.id, isWishlisted, toggleWishlist]);
 
+  // The sheet is a modal, so a replace-cart prompt raised from it has to show inside it
+  const sheetOpen = sheetVariants.length > 0;
+  const replacePrompt = (
+    <ConfirmSheet
+      visible={pendingReplace !== null}
+      title="Replace Cart?"
+      message="Your cart has items from another store. Adding this item will replace your current cart."
+      icon="cart-outline"
+      iconColor="#f59e0b"
+      confirmLabel="Replace"
+      onConfirm={() => { pendingReplace?.(); setPendingReplace(null); }}
+      onCancel={() => setPendingReplace(null)}
+    />
+  );
+
   return (
     <ProductActionsContext.Provider value={value}>
       <View style={styles.fill}>
         {children}
         <VariantBottomSheet
-          visible={sheetVariants.length > 0}
+          visible={sheetOpen}
           onClose={() => setSheetVariants([])}
           variants={sheetVariants}
           onAddToCart={addToCart}
           onUpdateQuantity={cart.updateQuantity}
           cartQuantityMap={cart.cartQuantityMap}
           isMember={cart.isMember}
-        />
-        <ConfirmSheet
-          visible={pendingReplace !== null}
-          title="Replace Cart?"
-          message="Your cart has items from another store. Adding this item will replace your current cart."
-          icon="cart-outline"
-          iconColor="#f59e0b"
-          confirmLabel="Replace"
-          onConfirm={() => { pendingReplace?.(); setPendingReplace(null); }}
-          onCancel={() => setPendingReplace(null)}
-        />
+        >
+          {sheetOpen && replacePrompt}
+        </VariantBottomSheet>
+        {!sheetOpen && replacePrompt}
       </View>
     </ProductActionsContext.Provider>
   );

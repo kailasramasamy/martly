@@ -86,11 +86,11 @@ export function SizeChips({ sizes, selectedId, maxChips, onSelect, onMore, style
 const styles = StyleSheet.create({
   image: { width: "100%", height: "100%", mixBlendMode: "multiply" },
   chips: {
-    position: "absolute", right: 5, bottom: 5, flexDirection: "row", gap: 3, padding: 2,
+    position: "absolute", right: 5, bottom: 5, maxWidth: "100%", flexDirection: "row", gap: 3, padding: 2,
     borderRadius: 9, backgroundColor: "rgba(255,255,255,0.94)",
     shadowColor: "#0f172a", shadowOpacity: 0.12, shadowRadius: 3, shadowOffset: { width: 0, height: 1 }, elevation: 2,
   },
-  chip: { minWidth: 26, height: 22, paddingHorizontal: 6, borderRadius: 7, alignItems: "center", justifyContent: "center" },
+  chip: { flexShrink: 1, minWidth: 26, height: 22, paddingHorizontal: 6, borderRadius: 7, alignItems: "center", justifyContent: "center" },
   chipActive: { backgroundColor: colors.primary },
   chipText: { fontFamily: fonts.bold, fontSize: 10.5, color: colors.text },
   chipTextActive: { color: "#fff" },

@@ -1,4 +1,5 @@
-import { View, Text, Image, TouchableOpacity, TouchableWithoutFeedback, ScrollView, StyleSheet, Dimensions } from "react-native";
+import { View, Text, Image, TouchableOpacity, TouchableWithoutFeedback, ScrollView, Modal, StyleSheet, Dimensions } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../constants/theme";
@@ -21,6 +22,8 @@ interface VariantBottomSheetProps {
   isMember?: boolean;
   mode?: "cart" | "subscribe";
   onSelect?: (sp: StoreProduct) => void;
+  // Shown over the sheet, e.g. the replace-cart prompt an add from the sheet can raise
+  children?: React.ReactNode;
 }
 
 function getPrices(sp: StoreProduct, isMember?: boolean) {
@@ -149,36 +152,41 @@ function SheetFooter({ count, total, onDone }: { count: number; total: number; o
 }
 
 export function VariantBottomSheet({
-  visible, onClose, variants, onAddToCart, onUpdateQuantity, cartQuantityMap, isMember, mode = "cart", onSelect,
+  visible, onClose, variants, onAddToCart, onUpdateQuantity, cartQuantityMap, isMember, mode = "cart", onSelect, children,
 }: VariantBottomSheetProps) {
+  const insets = useSafeAreaInsets();
   if (!visible || variants.length === 0) return null;
 
   const inCart = variants.map((sp) => ({ qty: cartQuantityMap.get(sp.id) ?? 0, price: getPrices(sp, isMember).shown }));
   const count = inCart.reduce((n, v) => n + v.qty, 0);
   const total = inCart.reduce((sum, v) => sum + v.qty * v.price, 0);
 
+  // A modal, so the sheet sits over the tab bar and clears the home indicator
   return (
-    <View style={styles.overlay}>
-      <TouchableWithoutFeedback onPress={onClose}>
-        <View style={styles.backdrop} />
-      </TouchableWithoutFeedback>
-      <View style={styles.sheet}>
-        <TouchableOpacity style={styles.closeBtn} onPress={onClose} hitSlop={8} accessibilityLabel="Close">
-          <Ionicons name="close" size={22} color="#fff" />
-        </TouchableOpacity>
-        <Text style={styles.title} numberOfLines={2}>{variants[0].product.name}</Text>
-        {mode === "subscribe" && <Text style={styles.subtitle}>Choose a size to subscribe</Text>}
-        <ScrollView keyboardDismissMode="on-drag" bounces={false} contentContainerStyle={styles.list}>
-          {variants.map((sp) => (
-            <VariantRow
-              key={sp.id} sp={sp} qty={cartQuantityMap.get(sp.id) ?? 0} isMember={isMember} mode={mode}
-              onAddToCart={onAddToCart} onUpdateQuantity={onUpdateQuantity} onSelect={onSelect}
-            />
-          ))}
-        </ScrollView>
-        {mode === "cart" && count > 0 && <SheetFooter count={count} total={total} onDone={onClose} />}
+    <Modal visible transparent animationType="fade" statusBarTranslucent onRequestClose={onClose}>
+      <View style={styles.overlay}>
+        <TouchableWithoutFeedback onPress={onClose}>
+          <View style={styles.backdrop} />
+        </TouchableWithoutFeedback>
+        <View style={[styles.sheet, { paddingBottom: spacing.md + Math.max(insets.bottom, spacing.md) }]}>
+          <TouchableOpacity style={styles.closeBtn} onPress={onClose} hitSlop={8} accessibilityLabel="Close">
+            <Ionicons name="close" size={22} color="#fff" />
+          </TouchableOpacity>
+          <Text style={styles.title} numberOfLines={2}>{variants[0].product.name}</Text>
+          {mode === "subscribe" && <Text style={styles.subtitle}>Choose a size to subscribe</Text>}
+          <ScrollView keyboardDismissMode="on-drag" bounces={false} style={styles.scroll} contentContainerStyle={styles.list}>
+            {variants.map((sp) => (
+              <VariantRow
+                key={sp.id} sp={sp} qty={cartQuantityMap.get(sp.id) ?? 0} isMember={isMember} mode={mode}
+                onAddToCart={onAddToCart} onUpdateQuantity={onUpdateQuantity} onSelect={onSelect}
+              />
+            ))}
+          </ScrollView>
+          {mode === "cart" && count > 0 && <SheetFooter count={count} total={total} onDone={onClose} />}
+        </View>
+        {children}
       </View>
-    </View>
+    </Modal>
   );
 }
 
@@ -187,7 +195,7 @@ const styles = StyleSheet.create({
   backdrop: { ...StyleSheet.absoluteFillObject, backgroundColor: "rgba(15,23,42,0.45)" },
   sheet: {
     backgroundColor: "#fff", borderTopLeftRadius: 22, borderTopRightRadius: 22,
-    paddingHorizontal: spacing.md, paddingTop: 18, paddingBottom: spacing.xl, maxHeight: SHEET_MAX,
+    paddingHorizontal: spacing.md, paddingTop: 18, maxHeight: SHEET_MAX,
   },
   // Floats above the sheet, Blinkit-style
   closeBtn: {
@@ -197,6 +205,8 @@ const styles = StyleSheet.create({
   },
   title: { fontFamily: fonts.extrabold, fontSize: 18, lineHeight: 23, color: colors.text, marginBottom: 14 },
   subtitle: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, marginTop: -10, marginBottom: 14 },
+  // Shrinks within the sheet's max height so a long list scrolls
+  scroll: { flexShrink: 1 },
   list: { gap: 10, paddingBottom: 4 },
   row: {
     flexDirection: "row", alignItems: "center", gap: 12,
