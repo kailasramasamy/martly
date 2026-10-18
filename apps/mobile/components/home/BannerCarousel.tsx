@@ -17,42 +17,70 @@ interface Props {
   onPress: (banner: Banner) => void;
 }
 
-/** A centred, snapping banner carousel with a "3/8" pager that advances on its own. */
+interface Slide {
+  key: string;
+  banner: Banner;
+}
+
+/** Three copies of the banners, so there is always one peeking on either side; a single banner just sits there */
+function slidesOf(banners: Banner[]): Slide[] {
+  const copies = banners.length > 1 ? [0, 1, 2] : [0];
+  return copies.flatMap((copy) => banners.map((banner) => ({ key: `${copy}-${banner.id}`, banner })));
+}
+
+/**
+ * A centred, snapping banner carousel that loops: it starts in the middle copy and, whenever it drifts into an
+ * outer copy, jumps without animation to the same banner in the middle. The "3/8" pager advances on its own.
+ */
 export function BannerCarousel({ banners, onPress }: Props) {
-  const [index, setIndex] = useState(0);
-  const listRef = useRef<FlatList<Banner>>(null);
   const count = banners.length;
+  const loop = count > 1;
+  const slides = slidesOf(banners);
+  const [position, setPosition] = useState(loop ? count : 0);
+  const listRef = useRef<FlatList<Slide>>(null);
+  const jump = (to: number, animated: boolean) => listRef.current?.scrollToOffset({ offset: to * INTERVAL, animated });
 
   // Restarts on every change, so a manual swipe gets a full interval before the next auto-advance
   useEffect(() => {
-    if (count <= 1) return;
+    if (!loop) return;
     const timer = setTimeout(() => {
-      const next = (index + 1) % count;
-      listRef.current?.scrollToOffset({ offset: next * INTERVAL, animated: true });
-      setIndex(next);
+      // Near the end of the middle copy, step back a copy first so the animation never runs off the list
+      const from = position + 1 >= 2 * count ? position - count : position;
+      if (from !== position) jump(from, false);
+      jump(from + 1, true);
+      setPosition(from + 1);
     }, ROTATE_MS);
     return () => clearTimeout(timer);
-  }, [index, count]);
+  }, [position, count, loop]);
+
+  const settle = (x: number) => {
+    const at = Math.round(x / INTERVAL);
+    const centred = loop && (at < count || at >= 2 * count) ? (at % count) + count : at;
+    if (centred !== at) jump(centred, false);
+    setPosition(centred);
+  };
 
   return (
     <View style={styles.section}>
       <FlatList
         ref={listRef}
         horizontal
-        data={banners}
-        keyExtractor={(item) => item.id}
+        data={slides}
+        keyExtractor={(item) => item.key}
         showsHorizontalScrollIndicator={false}
         snapToInterval={INTERVAL}
         decelerationRate="fast"
         contentContainerStyle={{ paddingHorizontal: EDGE }}
-        onMomentumScrollEnd={(e) => setIndex(Math.round(e.nativeEvent.contentOffset.x / INTERVAL))}
-        renderItem={({ item }) => (
+        contentOffset={{ x: (loop ? count : 0) * INTERVAL, y: 0 }}
+        onLayout={() => loop && jump(position, false)}
+        onMomentumScrollEnd={(e) => settle(e.nativeEvent.contentOffset.x)}
+        renderItem={({ item, index }) => (
           <View style={styles.slide}>
-            <HeroBannerSlide banner={item} width={CARD_WIDTH} onPress={onPress} visible={banners[index]?.id === item.id} />
+            <HeroBannerSlide banner={item.banner} width={CARD_WIDTH} onPress={onPress} visible={index === position} />
           </View>
         )}
       />
-      {count > 1 && <Pager index={index} count={count} />}
+      {loop && <Pager index={position % count} count={count} />}
     </View>
   );
 }
