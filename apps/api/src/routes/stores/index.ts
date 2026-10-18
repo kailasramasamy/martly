@@ -8,6 +8,7 @@ import { Permission } from "@martly/shared/constants";
 import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
+import { reviewSummaries, withAllSizes, withReviews } from "../../services/store-feed.js";
 import { haversine } from "../../lib/geo.js";
 import { drivingDistances } from "../../services/driving-distance.js";
 import { searchStoreProducts } from "../../services/store-search.js";
@@ -527,57 +528,11 @@ export async function storeRoutes(app: FastifyInstance) {
         return { success: true, data: [] } satisfies ApiResponse<never[]>;
       }
 
-      // Fetch full StoreProduct records via Prisma
-      const storeProducts = await app.prisma.storeProduct.findMany({
-        where: {
-          storeId,
-          productId: { in: resultProductIds },
-          isActive: true,
-          stock: { gt: 0 },
-          ...(excludeIds.length > 0 ? { id: { notIn: excludeIds } } : {}),
-        },
-        include: {
-          product: { include: { subcategory: true, variants: true } },
-          variant: true,
-        },
-      });
-
-      // Deduplicate by productId — keep the one with highest co-occurrence
-      const coCountMap = new Map(coProductIds.map((r) => [r.product_id, r.co_count]));
-      const seenProducts = new Set<string>();
-      const uniqueProducts = storeProducts
-        .sort((a, b) => (coCountMap.get(b.productId) ?? 0) - (coCountMap.get(a.productId) ?? 0))
-        .filter((sp) => {
-          if (seenProducts.has(sp.productId)) return false;
-          seenProducts.add(sp.productId);
-          return true;
-        })
-        .slice(0, limit);
-
-      // Batch-fetch review aggregates
-      const reviewProductIds = [...new Set(uniqueProducts.map((sp) => sp.productId))];
-      const reviewAggs = reviewProductIds.length > 0
-        ? await app.prisma.review.groupBy({
-            by: ["productId"],
-            where: { productId: { in: reviewProductIds }, status: "APPROVED" },
-            _avg: { rating: true },
-            _count: { rating: true },
-          })
-        : [];
-      const reviewMap = new Map(reviewAggs.map((r) => [r.productId, { averageRating: Math.round((r._avg.rating ?? 0) * 10) / 10, reviewCount: r._count.rating }]));
-
-      const data = uniqueProducts.map((sp) => {
-        const pricing = calculateEffectivePrice(
-          sp.price as unknown as number,
-          sp.variant as Parameters<typeof calculateEffectivePrice>[1],
-          sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
-          (sp as unknown as { memberPrice: number | null }).memberPrice,
-        );
-        const variant = formatVariantUnit(sp.variant);
-        const reviews = reviewMap.get(sp.productId);
-        const product = reviews ? { ...sp.product, averageRating: reviews.averageRating, reviewCount: reviews.reviewCount } : sp.product;
-        return { ...sp, product, variant, pricing, availableStock: sp.stock - sp.reservedStock };
-      });
+      // Same shape as the home feed: every listed size of each product (the card groups them into a size
+      // picker), minus the sizes already in the cart, with review summaries
+      const products = [...new Set(resultProductIds)].slice(0, limit).map((productId) => ({ productId }));
+      const sizes = (await withAllSizes(app.prisma, storeId, products)).filter((sp) => !excludeIds.includes(sp.id));
+      const data = withReviews(sizes, await reviewSummaries(app.prisma, sizes.map((sp) => sp.productId)));
 
       return { success: true, data } satisfies ApiResponse<typeof data>;
     },
