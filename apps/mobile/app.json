@@ -2,7 +2,7 @@
   "expo": {
     "name": "Martly",
     "slug": "martly",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "scheme": "martly",
     "platforms": [
       "ios",
@@ -56,7 +56,8 @@
             ]
           }
         }
-      ]
+      ],
+      "./plugins/with-upi-queries"
     ],
     "android": {
       "package": "com.quartex.martly",
@@ -68,11 +69,38 @@
     },
     "ios": {
       "bundleIdentifier": "com.quartex.martly",
-      "buildNumber": "5",
+      "buildNumber": "6",
       "appleTeamId": "QBLZB22TU6",
       "googleServicesFile": "./GoogleService-Info.plist",
       "config": {
         "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "tez",
+          "phonepe",
+          "paytmmp",
+          "credpay",
+          "mobikwik",
+          "in.fampay.app",
+          "bhim",
+          "amazonpay",
+          "navi",
+          "kiwi",
+          "payzapp",
+          "jupiter",
+          "omnicard",
+          "icici",
+          "popclubapp",
+          "sbiyono",
+          "myjio",
+          "slice-upi",
+          "bobupi",
+          "shriramone",
+          "indusmobile",
+          "whatsapp",
+          "kotakbank"
+        ]
       }
     }
   }

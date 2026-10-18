@@ -26,6 +26,9 @@ import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Switch } from "react-native";
 import { RazorpayCheckout } from "../components/RazorpayCheckout";
+import { PaymentOptions, PaymentConfirming } from "../components/checkout/PaymentOptions";
+import { UPI_APPS, useInstalledUpiApps, loadPaymentChoice, savePaymentChoice, type PaymentChoice } from "../lib/upi-apps";
+import { useUpiIntentPayment } from "../lib/use-upi-payment";
 import { ProfileGate } from "../components/ProfileGate";
 import { ConfirmSheet } from "../components/ConfirmSheet";
 import type { FulfillmentType, UserAddress, CouponValidation, DeliveryZoneInfo, DeliveryLookupResult, LoyaltyData, MembershipStatus } from "../lib/types";
@@ -43,6 +46,7 @@ interface RazorpayData {
   currency: string;
   key_id: string;
   customer_id?: string;
+  upi_s2s: boolean;
 }
 
 interface WalletData {
@@ -69,7 +73,10 @@ function CheckoutScreen() {
   const [loadingAddresses, setLoadingAddresses] = useState(true);
   const [selectedAddressId, setSelectedAddressId] = useState<string | null>(null);
   const [fulfillmentType, setFulfillmentType] = useState<FulfillmentType>("DELIVERY");
-  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("ONLINE");
+  const installedUpiApps = useInstalledUpiApps();
+  const [paymentChoice, setPaymentChoice] = useState<PaymentChoice>({ kind: "razorpay" });
+  const paymentMethod: PaymentMethod = paymentChoice.kind === "cod" ? "COD" : "ONLINE";
+  const chosenUpiApp = paymentChoice.kind === "upi" ? UPI_APPS.find((a) => a.id === paymentChoice.app) : undefined;
   const [submitting, setSubmitting] = useState(false);
   const [couponCode, setCouponCode] = useState("");
   const [couponResult, setCouponResult] = useState<CouponValidation | null>(null);
@@ -172,15 +179,21 @@ function CheckoutScreen() {
       .catch(() => {});
   }, [storeId]);
 
-  // Fetch payment preferences (pre-select last used method)
+  // Pre-select the last method used on this phone (if its UPI app is still installed), else the account's preference
   useEffect(() => {
-    api.get<{ preferredPaymentMethod: string | null }>("/api/v1/orders/payment-preferences")
-      .then((res) => {
-        const pref = res.data.preferredPaymentMethod;
-        if (pref === "ONLINE" || pref === "COD") setPaymentMethod(pref);
-      })
-      .catch(() => {});
-  }, []);
+    if (!installedUpiApps) return;
+    const stillAvailable = (c: PaymentChoice | null) =>
+      c && (c.kind !== "upi" || installedUpiApps.some((a) => a.id === c.app)) ? c : null;
+    const accountPref = api.get<{ preferredPaymentMethod: string | null }>("/api/v1/orders/payment-preferences")
+      .then((res) => res.data.preferredPaymentMethod)
+      .catch(() => null);
+    Promise.all([loadPaymentChoice(), accountPref]).then(([local, pref]) => {
+      const fallback: PaymentChoice = pref === "COD"
+        ? { kind: "cod" }
+        : installedUpiApps[0] ? { kind: "upi", app: installedUpiApps[0].id } : { kind: "razorpay" };
+      setPaymentChoice(stillAvailable(local) ?? fallback);
+    });
+  }, [installedUpiApps]);
 
   // Check if store has delivery slots + express config
   useEffect(() => {
@@ -352,6 +365,8 @@ function CheckoutScreen() {
     });
   };
 
+  const upiIntent = useUpiIntentPayment((orderId) => navigateToSuccess(orderId));
+
   const handlePaymentSuccess = async (data: { razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string }) => {
     setRazorpayVisible(false);
     try {
@@ -413,6 +428,7 @@ function CheckoutScreen() {
         return;
       }
 
+      savePaymentChoice(paymentChoice);
       if (paymentMethod === "COD") {
         // Save COD preference (fire-and-forget)
         api.patch("/api/v1/orders/payment-preferences", { preferredPaymentMethod: "COD" }).catch(() => {});
@@ -424,6 +440,8 @@ function CheckoutScreen() {
       try {
         const payRes = await api.post<RazorpayData>(`/api/v1/orders/${orderId}/payment`, {});
         setPendingOrderId(orderId);
+        // With S2S enabled the UPI app opens directly; otherwise Razorpay's sheet, narrowed to that app
+        if (chosenUpiApp && payRes.data.upi_s2s && (await upiIntent.start(orderId, chosenUpiApp))) return;
         setRazorpayData(payRes.data);
         setRazorpayVisible(true);
       } catch (payErr: unknown) {
@@ -1052,7 +1070,7 @@ function CheckoutScreen() {
                           -{"\u20B9"}{walletDeduction.toFixed(0)} from wallet
                         </Text>
                         <Text style={styles.walletRemainderText}>
-                          {"\u20B9"}{amountToPay.toFixed(0)} via {paymentMethod === "COD" ? (isPickup ? "Pay at Store" : "Cash on Delivery") : "Online Payment"}
+                          {"\u20B9"}{amountToPay.toFixed(0)} via {paymentMethod === "COD" ? (isPickup ? "Pay at Store" : "Cash on Delivery") : chosenUpiApp?.label ?? "Online Payment"}
                         </Text>
                       </View>
                     )
@@ -1114,57 +1132,12 @@ function CheckoutScreen() {
 
         {/* Payment Method — hidden when wallet covers full amount */}
         {!walletCoversAll && (
-        <View style={styles.section}>
-          <View style={styles.sectionHeader}>
-            <Ionicons name="card-outline" size={16} color={colors.primary} />
-            <Text style={styles.sectionTitle}>Payment Method</Text>
-          </View>
-          <View style={styles.paymentOptions}>
-            <TouchableOpacity
-              style={[styles.paymentCard, paymentMethod === "ONLINE" && styles.paymentCardActive]}
-              onPress={() => setPaymentMethod("ONLINE")}
-              activeOpacity={0.7}
-            >
-              <Ionicons
-                name={paymentMethod === "ONLINE" ? "radio-button-on" : "radio-button-off"}
-                size={20}
-                color={paymentMethod === "ONLINE" ? colors.primary : "#94a3b8"}
-              />
-              <View style={styles.paymentCardInfo}>
-                <Ionicons name="card-outline" size={20} color={paymentMethod === "ONLINE" ? colors.primary : "#64748b"} />
-                <View>
-                  <Text style={[styles.paymentCardTitle, paymentMethod === "ONLINE" && { color: colors.primary }]}>
-                    Pay Online
-                  </Text>
-                  <Text style={styles.paymentCardSub}>UPI, Cards, Net Banking</Text>
-                </View>
-              </View>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={[styles.paymentCard, paymentMethod === "COD" && styles.paymentCardActive]}
-              onPress={() => setPaymentMethod("COD")}
-              activeOpacity={0.7}
-            >
-              <Ionicons
-                name={paymentMethod === "COD" ? "radio-button-on" : "radio-button-off"}
-                size={20}
-                color={paymentMethod === "COD" ? colors.primary : "#94a3b8"}
-              />
-              <View style={styles.paymentCardInfo}>
-                <Ionicons name="cash-outline" size={20} color={paymentMethod === "COD" ? colors.primary : "#64748b"} />
-                <View>
-                  <Text style={[styles.paymentCardTitle, paymentMethod === "COD" && { color: colors.primary }]}>
-                    {isPickup ? "Pay at Store" : "Cash on Delivery"}
-                  </Text>
-                  <Text style={styles.paymentCardSub}>
-                    {isPickup ? "Pay when you pick up" : "Pay when you receive"}
-                  </Text>
-                </View>
-              </View>
-            </TouchableOpacity>
-          </View>
-        </View>
+          <PaymentOptions
+            choice={paymentChoice}
+            onChange={setPaymentChoice}
+            installedApps={installedUpiApps ?? []}
+            isPickup={isPickup}
+          />
         )}
 
         {/* Bill Details */}
@@ -1319,7 +1292,7 @@ function CheckoutScreen() {
                     ? "Place Order"
                     : paymentMethod === "COD"
                       ? (isPickup ? "Place Pickup Order" : "Place Order")
-                      : "Pay & Order"}
+                      : chosenUpiApp ? `Pay with ${chosenUpiApp.label}` : "Pay & Order"}
                 </Text>
                 <Ionicons
                   name={walletCoversAll ? "wallet" : isPickup ? "storefront" : paymentMethod === "COD" ? "checkmark-circle" : "card"}
@@ -1442,11 +1415,20 @@ function CheckoutScreen() {
           amount={razorpayData.amount}
           currency={razorpayData.currency}
           customerId={razorpayData.customer_id}
+          upiAppPackage={chosenUpiApp?.packageName}
           prefill={{ email: user?.email, name: user?.name, contact: user?.phone ?? undefined }}
           onSuccess={handlePaymentSuccess}
           onCancel={handlePaymentCancel}
         />
       )}
+      <PaymentConfirming
+        visible={upiIntent.confirming}
+        appLabel={chosenUpiApp?.label}
+        onCancel={() => {
+          upiIntent.cancel();
+          navigateToSuccess(pendingOrderId!);
+        }}
+      />
     </KeyboardAvoidingView>
     </View>
   );
@@ -1833,21 +1815,6 @@ const styles = StyleSheet.create({
   },
 
   // Payment method
-  paymentOptions: { gap: 8 },
-  paymentCard: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#fff",
-    borderRadius: 12,
-    padding: 14,
-    borderWidth: 1,
-    borderColor: colors.border,
-    gap: 10,
-  },
-  paymentCardActive: { borderColor: colors.primary, backgroundColor: colors.primary + "06" },
-  paymentCardInfo: { flexDirection: "row", alignItems: "center", gap: 10, flex: 1 },
-  paymentCardTitle: { fontSize: 14, fontWeight: "700", color: colors.text },
-  paymentCardSub: { fontSize: 12, color: "#94a3b8", marginTop: 1 },
 
   // Bill
   billCard: {

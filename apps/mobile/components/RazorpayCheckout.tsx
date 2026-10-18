@@ -12,6 +12,8 @@ interface CheckoutBase {
   description?: string;
   customerId?: string;
   prefill?: { email?: string; contact?: string; name?: string };
+  /** Android package of the UPI app the customer picked on our screen; narrows the sheet to UPI apps */
+  upiAppPackage?: string;
   onCancel: () => void;
 }
 
@@ -29,6 +31,20 @@ type PaymentSource = { order_id: string; amount: number; currency: string } | { 
 const paymentSource = (p: RazorpayCheckoutProps): PaymentSource =>
   p.subscriptionId === undefined ? { order_id: p.orderId, amount: p.amount, currency: p.currency } : { subscription_id: p.subscriptionId };
 
+// UPI apps lead the sheet so customers tap Google Pay/PhonePe instead of typing a UPI ID
+const checkoutConfig = (upiAppPackage?: string) => ({
+  display: {
+    blocks: {
+      upi: {
+        name: "Pay with a UPI app",
+        instruments: [{ method: "upi", flows: ["intent"], ...(upiAppPackage ? { apps: [upiAppPackage] } : {}) }],
+      },
+    },
+    sequence: ["block.upi"],
+    preferences: { show_default_blocks: !upiAppPackage },
+  },
+});
+
 const isExpoGo = Constants.executionEnvironment === ExecutionEnvironment.StoreClient;
 
 // Resolve native SDK at module load — returns null in Expo Go (native module missing)
@@ -43,7 +59,7 @@ if (!isExpoGo) {
 
 // ── Native SDK (production / dev client) ──────────────────
 function NativeCheckout(props: RazorpayCheckoutProps) {
-  const { visible, keyId, name = "Martly", description = "Order Payment", customerId, prefill, onSuccess, onCancel } = props;
+  const { visible, keyId, name = "Martly", description = "Order Payment", customerId, prefill, upiAppPackage, onSuccess, onCancel } = props;
   const openedRef = useRef(false);
 
   useEffect(() => {
@@ -63,6 +79,7 @@ function NativeCheckout(props: RazorpayCheckoutProps) {
         name: prefill?.name ?? "",
       },
       theme: { color: colors.primary },
+      config: checkoutConfig(upiAppPackage),
     })
       .then((data) => {
         openedRef.current = false;
@@ -84,7 +101,7 @@ function NativeCheckout(props: RazorpayCheckoutProps) {
 
 // ── WebView fallback (Expo Go / native SDK unavailable) ───
 function WebViewCheckout(props: RazorpayCheckoutProps) {
-  const { visible, keyId, name = "Martly", description = "Order Payment", customerId, prefill, onSuccess, onCancel } = props;
+  const { visible, keyId, name = "Martly", description = "Order Payment", customerId, prefill, upiAppPackage, onSuccess, onCancel } = props;
   const html = `
 <!DOCTYPE html>
 <html>
@@ -111,6 +128,7 @@ function WebViewCheckout(props: RazorpayCheckoutProps) {
       remember_customer: true,
       prefill: ${JSON.stringify(prefill ?? {})},
       theme: { color: ${JSON.stringify(colors.primary)} },
+      config: ${JSON.stringify(checkoutConfig(upiAppPackage))},
       modal: { ondismiss: function() { window.ReactNativeWebView.postMessage(JSON.stringify({ event: "cancelled" })); } },
       handler: function(response) {
         window.ReactNativeWebView.postMessage(JSON.stringify({ event: "success", data: response }));

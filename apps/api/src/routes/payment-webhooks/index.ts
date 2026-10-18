@@ -1,5 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import { verifyRazorpayWebhook } from "../../services/payment.js";
+import { settleOrderPayment } from "../../services/order-payment.js";
 import { fulfilAdOrder } from "../../services/marketing/billing.js";
 import { recordSubscriptionCharge, updateSubscriptionStatus } from "../../services/marketing/subscriptions.js";
 import { notifyOwners } from "../../services/marketing/renewals.js";
@@ -29,9 +30,13 @@ const SUBSCRIPTION_STATUS = {
 async function onOrderPaid(app: FastifyInstance, event: RazorpayEvent) {
   const razorpayOrderId = event.payload?.order?.entity?.id;
   if (event.event !== "order.paid" || !razorpayOrderId) return;
-  // Customer orders and wallet top-ups also raise order.paid; only marketing orders are settled here
-  const order = await app.prisma.adOrder.findUnique({ where: { razorpayOrderId }, select: { id: true } });
-  if (order) await fulfilAdOrder(app.prisma, order.id, { paymentId: event.payload?.payment?.entity?.id });
+  const paymentId = event.payload?.payment?.entity?.id;
+  // Marketing orders and customer orders are settled here; wallet top-ups also raise order.paid but aren't
+  const adOrder = await app.prisma.adOrder.findUnique({ where: { razorpayOrderId }, select: { id: true } });
+  if (adOrder) await fulfilAdOrder(app.prisma, adOrder.id, { paymentId });
+  if (!paymentId) return;
+  const order = await app.prisma.order.findFirst({ where: { razorpayOrderId }, select: { id: true } });
+  if (order) await settleOrderPayment(app, order.id, paymentId);
 }
 
 /** Monthly plan charges and subscription state changes; a halted one (payments failing) is told to the owners */

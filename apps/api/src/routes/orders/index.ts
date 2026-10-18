@@ -17,7 +17,9 @@ import { sendOrderStatusNotification, sendWalletNotification, sendLoyaltyNotific
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { reserveStock, releaseStock, deductStock } from "../../services/stock.js";
 import { formatVariantUnit } from "../../services/units.js";
-import { createRazorpayOrder, verifyRazorpaySignature, isRazorpayConfigured, getRazorpayKeyId, ensureRazorpayCustomer } from "../../services/payment.js";
+import { verifyRazorpaySignature, isRazorpayConfigured, getRazorpayKeyId, isUpiS2SEnabled } from "../../services/payment.js";
+import { prepareOrderPayment, settleOrderPayment } from "../../services/order-payment.js";
+import { upiPaymentRoutes } from "./upi-payment.js";
 import { broadcastOrderUpdate } from "../../services/order-broadcast.js";
 import { notifyStaffOfNewOrder } from "../../services/staff-alerts.js";
 import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
@@ -50,6 +52,7 @@ export async function orderRoutes(app: FastifyInstance) {
   };
 
   await app.register(undoDeliveryRoutes);
+  await app.register(upiPaymentRoutes);
 
   // List orders (scoped by role + org)
   app.get("/", { preHandler: [authenticate] }, async (request, reply) => {
@@ -1291,37 +1294,8 @@ export async function orderRoutes(app: FastifyInstance) {
         });
       }
 
-      const order = await app.prisma.order.findUnique({ where: { id: request.params.id } });
-      if (!order) return reply.notFound("Order not found");
-
       const user = request.user as { sub: string };
-      if (order.userId !== user.sub) return reply.forbidden("Access denied");
-
-      if (order.paymentStatus === "PAID") {
-        return reply.badRequest("Order is already paid");
-      }
-
-      const walletUsed = Number(order.walletAmountUsed ?? 0);
-      const chargeAmount = Number(order.totalAmount) - walletUsed;
-      if (chargeAmount <= 0) {
-        return reply.badRequest("Order is fully covered by wallet");
-      }
-      const amountInPaise = Math.round(chargeAmount * 100);
-
-      // Create/retrieve Razorpay customer for saved payment instruments
-      let customerId: string | undefined;
-      try {
-        customerId = await ensureRazorpayCustomer(app.prisma, user.sub);
-      } catch {
-        // Non-fatal — proceed without customer_id (no saved cards)
-      }
-
-      const rpOrder = await createRazorpayOrder(amountInPaise, order.id, customerId);
-
-      await app.prisma.order.update({
-        where: { id: order.id },
-        data: { razorpayOrderId: rpOrder.id },
-      });
+      const { rpOrderId, amountInPaise, customerId } = await prepareOrderPayment(app, request.params.id, user.sub);
 
       const response: ApiResponse<{
         razorpay_order_id: string;
@@ -1329,14 +1303,16 @@ export async function orderRoutes(app: FastifyInstance) {
         currency: string;
         key_id: string;
         customer_id?: string;
+        upi_s2s: boolean;
       }> = {
         success: true,
         data: {
-          razorpay_order_id: rpOrder.id,
+          razorpay_order_id: rpOrderId,
           amount: amountInPaise,
           currency: "INR",
           key_id: getRazorpayKeyId(),
           ...(customerId ? { customer_id: customerId } : {}),
+          upi_s2s: isUpiS2SEnabled(),
         },
       };
       return response;
@@ -1363,35 +1339,7 @@ export async function orderRoutes(app: FastifyInstance) {
       );
 
       if (isValid) {
-        const updated = await app.prisma.$transaction(async (tx) => {
-          const ord = await tx.order.update({
-            where: { id: order.id },
-            data: {
-              paymentStatus: "PAID",
-              razorpayPaymentId: body.razorpay_payment_id,
-              // Auto-confirm on successful payment
-              ...(order.status === "PENDING" ? { status: "CONFIRMED" } : {}),
-            },
-          });
-          // Log the status transition
-          if (order.status === "PENDING") {
-            await tx.orderStatusLog.create({
-              data: { orderId: order.id, status: "CONFIRMED", note: "Payment verified" },
-            });
-          }
-          // Save preferred payment method
-          await tx.user.update({
-            where: { id: user.sub },
-            data: { preferredPaymentMethod: "ONLINE" },
-          });
-          return ord;
-        });
-
-        if (order.status === "PENDING") {
-          sendOrderStatusNotification(app.fcm, app.prisma, order.id, order.userId, "CONFIRMED");
-        }
-        broadcastOrderUpdate(app.prisma, order.id, updated.status);
-        if (order.paymentStatus !== "PAID") notifyStaffOfNewOrder(app.fcm, app.prisma, order.id);
+        const updated = await settleOrderPayment(app, order.id, body.razorpay_payment_id);
 
         const response: ApiResponse<typeof updated> = { success: true, data: updated };
         return response;

@@ -36,18 +36,21 @@ export async function createRazorpayOrder(amountInPaise: number, orderId: string
   });
 }
 
-/** Razorpay rejected a subscription call; its status must not leak through as our own (a 401 would log users out) */
+/** Razorpay rejected a call; its status must not leak through as our own (a 401 would log users out) */
 class PaymentProviderError extends Error {
   name = "PaymentProviderError";
   statusCode = 502;
 }
+
+const SUBSCRIPTIONS_OFF = "Auto-renewing plans need Razorpay Subscriptions switched on for this account";
 
 interface RazorpayFailure {
   statusCode?: number;
   error?: { description?: string } | string;
 }
 
-async function subscriptionsCall<T>(work: () => Promise<T>): Promise<T> {
+/** Runs a Razorpay call; `notEnabled` is the message when the account lacks the feature (Razorpay answers 401, or 400 for UPI) */
+async function providerCall<T>(work: () => Promise<T>, notEnabled: string, notEnabledStatuses: number[] = [401]): Promise<T> {
   try {
     return await work();
   } catch (err) {
@@ -55,31 +58,71 @@ async function subscriptionsCall<T>(work: () => Promise<T>): Promise<T> {
     if (typeof failure?.statusCode !== "number") throw err;
     const reason = typeof failure.error === "object" ? failure.error?.description : failure.error;
     throw new PaymentProviderError(
-      failure.statusCode === 401
-        ? "Auto-renewing plans need Razorpay Subscriptions switched on for this account"
+      notEnabledStatuses.includes(failure.statusCode)
+        ? notEnabled
         : `The payment provider refused the request${reason ? `: ${reason}` : ""}`,
     );
   }
 }
 
+export function isUpiS2SEnabled(): boolean {
+  return process.env.RAZORPAY_UPI_S2S === "true";
+}
+
+interface UpiIntentInput {
+  razorpayOrderId: string;
+  amountInPaise: number;
+  contact: string;
+  email: string | null;
+  customerId?: string;
+  ip: string;
+  userAgent: string;
+}
+
+/** Starts a server-to-server UPI intent payment; the link opens the customer's UPI app */
+export async function createUpiIntentPayment(input: UpiIntentInput) {
+  const res = await providerCall(() => getRazorpay().payments.createUpi({
+    amount: input.amountInPaise,
+    currency: "INR",
+    order_id: input.razorpayOrderId,
+    email: input.email || "void@razorpay.com",
+    contact: input.contact,
+    ...(input.customerId ? { customer_id: input.customerId } : {}),
+    method: "upi",
+    ip: input.ip,
+    referer: "https://martly.app",
+    user_agent: input.userAgent,
+    upi: { flow: "intent", expiry_time: 5 },
+    notes: {},
+  }), "UPI intent payments are not enabled for this account", [400, 401]);
+  if (!res.link) throw new PaymentProviderError("The payment provider returned no UPI link");
+  return { paymentId: res.razorpay_payment_id, link: res.link };
+}
+
+/** The id of a captured payment against a Razorpay order, or null while none has succeeded */
+export async function findCapturedPayment(razorpayOrderId: string): Promise<string | null> {
+  const { items } = await getRazorpay().orders.fetchPayments(razorpayOrderId);
+  return items.find((payment) => payment.status === "captured")?.id ?? null;
+}
+
 /** A Razorpay plan billing an amount in paise (GST included) every month or every year */
 export async function createRazorpayPlan(name: string, amountInPaise: number, period: "monthly" | "yearly") {
-  const plan = await subscriptionsCall(() => getRazorpay().plans.create({
+  const plan = await providerCall(() => getRazorpay().plans.create({
     period, interval: 1, item: { name, amount: amountInPaise, currency: "INR" },
-  }));
+  }), SUBSCRIPTIONS_OFF);
   return plan.id;
 }
 
 /** A subscription billing the plan every period; with startAt the mandate is set up now and the first charge waits */
 export async function createRazorpaySubscription(planId: string, notes: Record<string, string>, startAt?: Date) {
-  return subscriptionsCall(() => getRazorpay().subscriptions.create({
+  return providerCall(() => getRazorpay().subscriptions.create({
     plan_id: planId, total_count: notes.interval === "YEARLY" ? 10 : 120, customer_notify: 1, notes,
     ...(startAt ? { start_at: Math.floor(startAt.getTime() / 1000) } : {}),
-  }));
+  }), SUBSCRIPTIONS_OFF);
 }
 
 export async function cancelRazorpaySubscription(subscriptionId: string, atCycleEnd: boolean) {
-  return subscriptionsCall(() => getRazorpay().subscriptions.cancel(subscriptionId, atCycleEnd));
+  return providerCall(() => getRazorpay().subscriptions.cancel(subscriptionId, atCycleEnd), SUBSCRIPTIONS_OFF);
 }
 
 /** The checkout handler's signature for a subscription's first payment */
