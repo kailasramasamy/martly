@@ -10,15 +10,21 @@ function httpError(message: string, statusCode: number) {
   return Object.assign(new Error(message), { statusCode });
 }
 
-/** Creates the Razorpay order for what the customer still owes (total less wallet) and remembers it on the order */
+type Payable = { totalAmount: { toNumber(): number }; walletAmountUsed: { toNumber(): number } | null; loyaltyPointsUsed: number | null };
+
+/** What the customer pays online: the total less wallet and loyalty points already applied */
+const onlineCharge = (order: Payable) =>
+  order.totalAmount.toNumber() - (order.walletAmountUsed?.toNumber() ?? 0) - (order.loyaltyPointsUsed ?? 0);
+
+/** Creates the Razorpay order for what the customer still owes (total less wallet and points) and remembers it on the order */
 export async function prepareOrderPayment(app: FastifyInstance, orderId: string, userId: string) {
   const order = await app.prisma.order.findUnique({ where: { id: orderId } });
   if (!order) throw httpError("Order not found", 404);
   if (order.userId !== userId) throw httpError("Access denied", 403);
   if (order.paymentStatus === "PAID") throw httpError("Order is already paid", 400);
 
-  const chargeAmount = Number(order.totalAmount) - Number(order.walletAmountUsed ?? 0);
-  if (chargeAmount <= 0) throw httpError("Order is fully covered by wallet", 400);
+  const chargeAmount = onlineCharge(order);
+  if (chargeAmount <= 0) throw httpError("Order is fully covered by wallet and points", 400);
   const amountInPaise = Math.round(chargeAmount * 100);
 
   // Razorpay customer enables saved payment instruments; only a Razorpay refusal is tolerated
@@ -70,7 +76,7 @@ export async function settleOrderPayment(app: FastifyInstance, orderId: string, 
   return updated;
 }
 
-type PaidOrder = { id: string; userId: string; storeId: string; totalAmount: { toNumber(): number }; walletAmountUsed: { toNumber(): number } | null };
+type PaidOrder = Payable & { id: string; userId: string; storeId: string };
 
 /**
  * Money arrived for an order that was already cancelled (customer paid in a stale checkout, or the
@@ -84,7 +90,7 @@ async function refundLatePayment(app: FastifyInstance, order: PaidOrder, payment
   if (count === 0) return app.prisma.order.findUniqueOrThrow({ where: { id: order.id } });
 
   const ref = formatOrderRef(order.id);
-  const amount = formatINR(order.totalAmount.toNumber() - (order.walletAmountUsed?.toNumber() ?? 0));
+  const amount = formatINR(onlineCharge(order));
   const refunded = await refundRazorpayPayment(paymentId).then(() => true, (err: unknown) => {
     app.log.error(err, `Refund of late payment ${paymentId} for cancelled order ${order.id} failed`);
     return false;

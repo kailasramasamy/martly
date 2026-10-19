@@ -52,7 +52,8 @@ async function moveLoyalty(tx: Tx, order: CancellableOrder, organizationId: stri
 export async function applyCancelRefunds(tx: Tx, order: CancellableOrder, opts: { reverseEarned: boolean }): Promise<CancelRefunds> {
   const ref = formatOrderRef(order.id);
   const paymentRefunded = order.paymentMethod === "ONLINE" && order.paymentStatus === "PAID";
-  const refundAmount = paymentRefunded ? Number(order.totalAmount) : Number(order.walletAmountUsed ?? 0);
+  // Points come back as points below, so the wallet gets back only what was paid in money
+  const refundAmount = paymentRefunded ? Number(order.totalAmount) - (order.loyaltyPointsUsed ?? 0) : Number(order.walletAmountUsed ?? 0);
   if (refundAmount > 0) {
     const user = await tx.user.update({ where: { id: order.userId }, data: { walletBalance: { increment: refundAmount } } });
     await tx.walletTransaction.create({
