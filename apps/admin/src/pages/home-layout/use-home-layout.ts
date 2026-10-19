@@ -1,6 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 import { axiosInstance } from "../../providers/data-provider";
 
+export interface HomeLayoutItem {
+  label: string;
+  imageUrl: string | null;
+  collectionId: string | null;
+}
+
 export interface HomeLayoutSection {
   id: string;
   type: string;
@@ -11,6 +17,7 @@ export interface HomeLayoutSection {
   config: Record<string, any>;
   sortOrder: number;
   isActive: boolean;
+  items?: HomeLayoutItem[];
 }
 
 export interface SectionPayload {
@@ -20,6 +27,14 @@ export interface SectionPayload {
   collectionId?: string | null;
   config: Record<string, unknown>;
   isActive: boolean;
+  /** Tabs of a tabbed row, saved through the items endpoint after the section itself */
+  tabs?: TabInput[];
+}
+
+export interface TabInput {
+  label: string;
+  imageUrl?: string;
+  collectionId: string;
 }
 
 interface LayoutResponse {

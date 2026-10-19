@@ -1,4 +1,4 @@
-# Home sections (Zepto-style Home, Phase 1)
+# Home sections (Zepto-style Home, Phases 1–2)
 
 The customer Home is a server-driven list of sections. Each organisation arranges its own layout; every store in the
 org shows the same layout, and a section with nothing in stock at a store hides itself there.
@@ -59,9 +59,44 @@ org shows the same layout, and a section with nothing in stock at a store hides 
   - `GET /collections/:id/products` returns `collection.campaign` (art, theme and offer, from `services/home/campaign-look.ts`) and, on page 1, `collection.aisles`.
   - The screen has a themed navigation bar with only a back arrow, a deeper header that fades into the page, the cut-out and stamp, aisle filter chips, and elevated white product cards.
 
+## Phase 2 section types
+
+Every type below hides itself at a store with nothing to show. `SECTION_COLLECTION` (shared constants) says whether a
+type must, may, or must not name a collection on the section; the layout API enforces it.
+
+- **Tabbed row (`TABBED_ROW`):**
+  - Each tab is a section item with its own collection.
+  - Tabs whose collection has ended or has no stock at the store are dropped.
+  - A tab without an image uses its collection's image, or else the first in-stock product's image.
+  - The first tab's products come with the section. The app loads the others from `GET /collections/:id/products` when they're picked.
+  - Rail styles: `ICON_CARD`, `ICON_UNDERLINE` and `PILL`.
+- **Price-band deals (`PRICE_BAND_DEALS`):**
+  - 2 to 5 bands ("Under ₹19", …) with a `maxPrice` each; `null` means any price.
+  - Products come from the whole store's in-stock catalog, or from the section's collection if one is set.
+  - The price is the one the shopper pays, worked out the same way as `calculateEffectivePrice`: the store row's live discount, else the size's live discount, else the price.
+  - Each product carries only its sizes within the band, ordered by biggest saving.
+  - Category chips are the categories with the most products in the band.
+  - Other bands and chips: `GET /home/:storeId/deals?sectionId=&band=&categoryId=&page=` returns `{ chips, products, total }`, 20 products per page.
+  - The headline ("Add any 10 items") is a label only, since there is no mix-and-match pricing.
+- **Brand card (`BRAND_CARD`):**
+  - `config.brandId` sets the brand, which must be master or the organisation's own. The card shows that brand's 3 in-stock products the store sold most in the last 90 days.
+  - Products nobody has bought yet rotate daily.
+  - An optional collection narrows the products.
+  - The tint defaults to the brand's theme colour.
+  - "See all" opens the brand screen, or the collection when one is set.
+  - The card hides when fewer than 3 products are in stock.
+- **Category directory (`CATEGORY_DIRECTORY`):**
+  - Shows the departments in `config.departmentIds`, in the admin's order, or all departments when the list is empty.
+  - Only categories with stock at the store are listed.
+  - The first `DIRECTORY_WIDE_TILES` (2) tiles in each department are wide; the rest fill a 4-column grid.
+- **Mobile Manage → Marketing → Home layout:**
+  - Reorder with up/down, switch sections on and off, delete, and see the "hidden at store" hint.
+  - Per-type forms for the product row and all Phase 2 types.
+
 ## Seed
 
 `cd apps/api && npx tsx prisma/seed-home-layout.ts [--regen-art] [--hero]` builds the showcase for Demo Grocers / Harur Fresh Mart:
+- Phase 2 sections from `prisma/seed-home-phase2.ts`: an "Everyday picks" tabbed row, "Pocket-friendly deals" (Under ₹19/29/49/99), Cadbury and Amul brand cards, and a "Shop by aisle" directory
 - three campaign cards: Personal Care Weekend, Snack Fest and Breakfast Combo
 - product rows in all three header styles
 - a repaint of the Navratri hero, with `--hero`
@@ -81,4 +116,4 @@ Art already in place is reused unless `--regen-art` is passed.
 
 - **Admin Home layout page:** drag and save, and the "hidden at store" hint (built and type-checked, not yet run in a browser).
 - **Old-style heroes:** regenerate them after deploying, including prod's festival heroes.
-- **Phases 2–5** (tabbed rows, price-band deals, category directory, explore/store grids, ads, personalisation) aren't built yet.
+- **Phases 3–5** (explore/store grids, ads, personalisation) aren't built yet.

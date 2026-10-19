@@ -33,6 +33,14 @@ export const COLLECTION_SECTION_TYPES: readonly HomeSectionType[] = [
   "PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "EXPLORE_GRID", "STORE_GRID",
 ];
 
+/** Whether a type must, or may, name a collection on the section itself (a tabbed row names one per tab instead) */
+export const SECTION_COLLECTION: Partial<Record<HomeSectionType, "REQUIRED" | "OPTIONAL">> = {
+  PRODUCT_ROW: "REQUIRED",
+  CAMPAIGN_CARD: "REQUIRED",
+  PRICE_BAND_DEALS: "OPTIONAL",
+  BRAND_CARD: "OPTIONAL",
+};
+
 /** Types the layout API can expand into several sections; the app never receives these */
 export const EXPANDING_SECTION_TYPES: readonly HomeSectionType[] = ["LIVE_CAMPAIGNS", "OTHER_COLLECTIONS"];
 
@@ -72,6 +80,11 @@ export type TabRailStyle = (typeof TabRailStyle)[keyof typeof TabRailStyle];
 
 export const HOME_ROW_MAX_PRODUCTS = 12;
 export const HOME_SECTIONS_PAGE_SIZE = 8;
+/** A price-band grid holds 2 rows of 10 */
+export const HOME_DEALS_PAGE_SIZE = 20;
+export const HOME_BRAND_CARD_PRODUCTS = 3;
+/** Each directory department opens with this many wide tiles before its 4-column grid */
+export const DIRECTORY_WIDE_TILES = 2;
 
 /** Headline typefaces a festival hero can use; the designer picks one per festival, the app bundles them all */
 export const FestiveFont = {

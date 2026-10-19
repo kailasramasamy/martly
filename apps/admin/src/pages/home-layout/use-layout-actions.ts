@@ -42,15 +42,21 @@ export function useLayoutActions(layout: Layout, editing: HomeLayoutSection | un
     });
   };
 
-  const onSave = async (payload: SectionPayload) => {
-    const existing = editing;
-    if (existing) {
-      const { type: _type, ...rest } = payload;
-      await axiosInstance.patch(`/home-layout/${await resolveId(existing)}`, rest, { params });
-    } else {
-      await layout.ensureCustom();
-      await axiosInstance.post("/home-layout", payload, { params });
+  /** Creates or updates the section and returns its persisted id */
+  const saveSection = async (body: Omit<SectionPayload, "tabs">): Promise<string> => {
+    if (editing) {
+      const { type: _type, ...rest } = body;
+      const id = await resolveId(editing);
+      await axiosInstance.patch(`/home-layout/${id}`, rest, { params });
+      return id;
     }
+    await layout.ensureCustom();
+    return (await axiosInstance.post("/home-layout", body, { params })).data.data.id;
+  };
+
+  const onSave = async ({ tabs, ...body }: SectionPayload) => {
+    const id = await saveSection(body);
+    if (tabs) await axiosInstance.put(`/home-layout/${id}/items`, { items: tabs }, { params });
     await layout.load();
     onSaved();
     message.success("Section saved");

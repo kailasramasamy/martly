@@ -15,7 +15,7 @@ import { useLayoutActions } from "./use-layout-actions";
 
 const { Text } = Typography;
 
-interface PreviewHint { id: string; visible: boolean; reason?: string }
+interface PreviewHint { id: string; resolves: boolean }
 
 const isAutomatic = (type: string) => (EXPANDING_SECTION_TYPES as readonly string[]).includes(type);
 const sectionName = (s: HomeLayoutSection) =>
@@ -33,7 +33,7 @@ interface RowProps {
 const SectionRow = ({ section, hint, storeName, onToggle, onEdit, onDelete }: RowProps) => {
   const { token } = antTheme.useToken();
   const { attributes, listeners, setNodeRef, setActivatorNodeRef, transform, transition, isDragging } = useSortable({ id: section.id });
-  const hidden = hint && !hint.visible;
+  const hidden = hint && !hint.resolves;
   return (
     <div
       ref={setNodeRef}
@@ -61,7 +61,7 @@ const SectionRow = ({ section, hint, storeName, onToggle, onEdit, onDelete }: Ro
       <div style={{ flex: 1, minWidth: 0 }}>
         <Text strong ellipsis>{sectionName(section)}</Text>
         {hidden && (
-          <div><Text type="warning" style={{ fontSize: 12 }}>Hidden at {storeName}{hint?.reason ? `: ${hint.reason}` : ""}</Text></div>
+          <div><Text type="warning" style={{ fontSize: 12 }}>Hidden at {storeName}: nothing to show there</Text></div>
         )}
       </div>
       <Switch checked={section.isActive} onChange={(v) => onToggle(section, v)} />

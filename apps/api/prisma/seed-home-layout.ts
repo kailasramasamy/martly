@@ -10,10 +10,10 @@ import { DEFAULT_LAYOUT } from "../src/services/home/default-layout.js";
 import { regenerateHero } from "../src/services/seasonal/hero.js";
 import { paintArt, reusableArt } from "./seed-home-art.js";
 import { discount, ensurePromo, ORG_NAME, pickProducts, upsertCollection } from "./seed-home-collections.js";
+import { phase2Sections, type PlannedSection as Planned } from "./seed-home-phase2.js";
 
 const prisma = new PrismaClient();
 type Config = Record<string, unknown>;
-type Planned = { type: string; title?: string; subtitle?: string; collectionId?: string; config?: Config };
 
 const PERSONAL_CARE_ID = "6ab1eb86-eafb-4b7b-9a79-6a1003126a73";
 const BEST_SELLERS_ID = "ddfbfb6c-70ca-4f1c-bf64-33f6a3a4b06d";
@@ -114,23 +114,30 @@ async function main() {
   const org = await prisma.organization.findFirstOrThrow({ where: { name: ORG_NAME }, select: { id: true } });
   const previous = await previousConfigs(org.id) as Map<string | null, Config>;
   const [pcw, snack, combo, r] = [await personalCare(previous), await snackFest(org.id, previous), await breakfastCombo(org.id, previous), await rows(org.id, previous)];
+  const p2 = await phase2Sections(prisma, org.id);
 
   // Default order with the showcase sections slotted in
   const plan: Planned[] = DEFAULT_LAYOUT.flatMap((e) => {
     const base: Planned = { type: e.type };
     if (e.type === "MEMBER_CHIPS") return [base, pcw, snack, combo];
-    if (e.type === "BUY_AGAIN") return [base, r.best, r.value, r.fruit];
+    if (e.type === "BUY_AGAIN") return [base, r.best, p2.tabs, r.value, r.fruit];
+    if (e.type === "HERO_BANNERS") return [base, p2.deals];
+    if (e.type === "OTHER_COLLECTIONS") return [base, ...p2.brands];
+    if (e.type === "RECIPES") return [base, p2.directory];
     return [base];
   });
-  await prisma.$transaction([
-    prisma.homeSection.deleteMany({ where: { organizationId: org.id } }),
-    prisma.homeSection.createMany({
-      data: plan.map((p, sortOrder) => ({
-        organizationId: org.id, type: p.type as never, title: p.title, subtitle: p.subtitle, collectionId: p.collectionId,
-        config: (p.config ?? {}) as Prisma.InputJsonValue, sortOrder,
-      })),
-    }),
-  ]);
+  await prisma.$transaction(async (tx) => {
+    await tx.homeSection.deleteMany({ where: { organizationId: org.id } });
+    for (const [sortOrder, p] of plan.entries()) {
+      await tx.homeSection.create({
+        data: {
+          organizationId: org.id, type: p.type as never, title: p.title, subtitle: p.subtitle, collectionId: p.collectionId,
+          config: (p.config ?? {}) as Prisma.InputJsonValue, sortOrder,
+          items: { create: (p.items ?? []).map((item, i) => ({ ...item, sortOrder: i })) },
+        },
+      });
+    }
+  });
   const saved = await prisma.homeSection.findMany({ where: { organizationId: org.id }, orderBy: { sortOrder: "asc" }, select: { id: true, type: true, title: true, config: true } });
   console.log(`Layout: ${saved.length} sections`);
   for (const s of saved.filter((x) => x.title)) console.log(`  ${s.type} "${s.title}" ${s.id} ${JSON.stringify(s.config)}`);

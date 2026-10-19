@@ -24,7 +24,7 @@ const encodeCursor = (i: number) => Buffer.from(JSON.stringify({ i })).toString(
 // Every product list a section carries, so reviews are looked up once for the whole page
 function mapProductLists(section: ResolvedSection, fn: (items: any[]) => any[]): ResolvedSection {
   const data = (section as { data?: Record<string, any> }).data;
-  if (section.type === "PRODUCT_ROW") return { ...section, products: fn(section.products) };
+  if ("products" in section) return { ...section, products: fn(section.products) } as ResolvedSection;
   if (section.type === "CAMPAIGN_CARD") return { ...section, highlights: fn(section.highlights) };
   if (data?.products) return { ...section, data: { ...data, products: fn(data.products) } } as ResolvedSection;
   if (data?.categories) {

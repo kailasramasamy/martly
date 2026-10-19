@@ -1,10 +1,17 @@
 import { memo, type ComponentType } from "react";
 import type { HomeSectionType } from "@martly/shared/constants";
-import type { CampaignCardSection as CampaignCard, ProductRowSection as ProductRow, SystemSection } from "@martly/shared/types";
+import type {
+  BrandCardSection as BrandCard, CampaignCardSection as CampaignCard, CategoryDirectorySection as CategoryDirectory,
+  PriceBandDealsSection as PriceBandDeals, ProductRowSection as ProductRow, SystemSection, TabbedRowSection as TabbedRow,
+} from "@martly/shared/types";
 import type { MobileHomeSection } from "../../../lib/use-home-sections";
 import type { StoreProduct } from "../../../lib/types";
+import { BrandCardSection } from "./BrandCardSection";
 import { CampaignCardSection } from "./campaign/CampaignCardSection";
+import { CategoryDirectorySection } from "./CategoryDirectorySection";
+import { PriceBandDealsSection } from "./PriceBandDealsSection";
 import { ProductRowSection } from "./ProductRowSection";
+import { TabbedRowSection } from "./TabbedRowSection";
 import { HeroBannersSection, MidBannersSection } from "./system/BannerSections";
 import { BuyAgainSection } from "./system/BuyAgainSection";
 import { BrandRailSection, PlusPromoSection, RecentlyViewedSection, TimePicksSection } from "./system/ClientSections";
@@ -17,6 +24,10 @@ import { RecipesSection } from "./system/RecipesSection";
 type SectionOf<K extends HomeSectionType> =
   K extends "PRODUCT_ROW" ? ProductRow<StoreProduct>
   : K extends "CAMPAIGN_CARD" ? CampaignCard<StoreProduct>
+  : K extends "TABBED_ROW" ? TabbedRow<StoreProduct>
+  : K extends "PRICE_BAND_DEALS" ? PriceBandDeals<StoreProduct>
+  : K extends "BRAND_CARD" ? BrandCard<StoreProduct>
+  : K extends "CATEGORY_DIRECTORY" ? CategoryDirectory
   : SystemSection;
 
 type Registry = { [K in HomeSectionType]?: ComponentType<{ section: SectionOf<K> }> };
@@ -37,6 +48,10 @@ const SECTIONS: Registry = {
   RECIPES: RecipesSection,
   PRODUCT_ROW: ProductRowSection,
   CAMPAIGN_CARD: CampaignCardSection,
+  TABBED_ROW: TabbedRowSection,
+  PRICE_BAND_DEALS: PriceBandDealsSection,
+  BRAND_CARD: BrandCardSection,
+  CATEGORY_DIRECTORY: CategoryDirectorySection,
 };
 
 export const HomeSectionView = memo(function HomeSectionView({ section }: { section: MobileHomeSection }) {

@@ -18,7 +18,7 @@ export const homeSectionConfigSchemas = {
     theme: theme.optional(),
     tileSource: z.enum(["AUTO", "ITEMS"]).default("AUTO"),
   }),
-  TABBED_ROW: z.object({ tabStyle: z.nativeEnum(TabRailStyle).default("ICON_CARD") }),
+  TABBED_ROW: z.object({ tabStyle: z.nativeEnum(TabRailStyle).default("ICON_CARD"), tint: hex.optional() }),
   PRICE_BAND_DEALS: z.object({
     headline: z.string().trim().max(40).optional(),
     bands: z.array(z.object({ label: z.string().trim().min(1).max(16), maxPrice: z.number().positive().nullable() })).min(2).max(5),
@@ -37,8 +37,9 @@ const translations = z.record(z.string(), z.object({ title: z.string().optional(
 
 export const createHomeSectionSchema = z.object({
   type: z.nativeEnum(HomeSectionType),
-  title: z.string().trim().max(80).optional(),
-  subtitle: z.string().trim().max(120).optional(),
+  // Null leaves the collection's own title or subtitle showing
+  title: z.string().trim().max(80).nullish(),
+  subtitle: z.string().trim().max(120).nullish(),
   translations,
   collectionId: z.string().uuid().nullish(),
   config: z.record(z.string(), z.unknown()).default({}),
@@ -64,3 +65,10 @@ export const homeSectionItemsSchema = z.object({
 export type HomeSectionItemsInput = z.infer<typeof homeSectionItemsSchema>;
 
 export const homeSectionsQuerySchema = z.object({ cursor: z.string().max(200).optional() });
+
+export const homeDealsQuerySchema = z.object({
+  sectionId: z.string().uuid(),
+  band: z.coerce.number().int().min(0).max(4).default(0),
+  categoryId: z.string().uuid().optional(),
+  page: z.coerce.number().int().min(1).max(50).default(1),
+});

@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { useSelect } from "@refinedev/antd";
 import { Alert, Button, Drawer, Form, Input, Select, Space, Switch, message } from "antd";
-import { HomeSectionType, HomeSectionTypeLabels, COLLECTION_SECTION_TYPES } from "@martly/shared/constants";
+import { HomeSectionType, HomeSectionTypeLabels, SECTION_COLLECTION } from "@martly/shared/constants";
 import { homeSectionConfigSchemas } from "@martly/shared/schemas";
 import { CampaignCardFields, ProductRowFields } from "./config-forms";
+import { BrandCardFields, CategoryDirectoryFields, PriceBandFields, TabbedRowFields, parseTabs, tabsOf } from "./config-forms-phase2";
 import type { HomeLayoutSection, SectionPayload } from "./use-home-layout";
 
-const EDITABLE: HomeSectionType[] = ["PRODUCT_ROW", "CAMPAIGN_CARD"];
+const EDITABLE: HomeSectionType[] = ["PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY"];
 const COMING_SOON: HomeSectionType[] = [
-  "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID", "OFFERS", "BRAND_POSTERS", "PERSONALISED",
+  "EXPLORE_GRID", "STORE_GRID", "OFFERS", "BRAND_POSTERS", "PERSONALISED",
 ];
 const SYSTEM = (Object.keys(HomeSectionType) as HomeSectionType[]).filter((t) => !EDITABLE.includes(t) && !COMING_SOON.includes(t));
 
@@ -44,7 +45,7 @@ export const SectionDrawer = ({ open, section, onClose, onSave }: Props) => {
     form.resetFields();
     form.setFieldsValue(
       section
-        ? { type: section.type, title: section.title, subtitle: section.subtitle, collectionId: section.collectionId, isActive: section.isActive, config: section.config }
+        ? { type: section.type, title: section.title, subtitle: section.subtitle, collectionId: section.collectionId, isActive: section.isActive, config: section.config, tabs: tabsOf(section) }
         : { isActive: true, config: {} },
     );
     setThemed(!!section?.config?.theme);
@@ -60,17 +61,23 @@ export const SectionDrawer = ({ open, section, onClose, onSave }: Props) => {
       message.error(parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; "));
       return;
     }
+    const tabs = values.type === "TABBED_ROW" ? parseTabs(values.tabs) : undefined;
+    if (tabs && "error" in tabs) {
+      message.error(tabs.error);
+      return;
+    }
     await onSave({
       type: values.type,
-      title: values.title || undefined,
-      subtitle: values.subtitle || undefined,
+      title: values.title || null,
+      subtitle: values.subtitle || null,
       collectionId: values.collectionId ?? null,
       config: parsed?.success ? parsed.data : {},
       isActive: values.isActive,
+      tabs: tabs?.tabs,
     });
   };
 
-  const needsCollection = !!type && (COLLECTION_SECTION_TYPES as readonly string[]).includes(type);
+  const collectionMode = type ? SECTION_COLLECTION[type] : undefined;
 
   return (
     <Drawer
@@ -85,17 +92,26 @@ export const SectionDrawer = ({ open, section, onClose, onSave }: Props) => {
         <Form.Item label="Type" name="type" rules={[{ required: true }]}>
           <Select options={typeOptions} disabled={!!section} placeholder="Choose a section type" />
         </Form.Item>
-        {type && !needsCollection && !EDITABLE.includes(type) && (
+        {type && !collectionMode && !EDITABLE.includes(type) && (
           <Alert type="info" showIcon style={{ marginBottom: 16 }} message="Built-in block: fills itself from store data, nothing to configure" />
         )}
         <Form.Item label="Title" name="title"><Input maxLength={80} /></Form.Item>
         <Form.Item label="Subtitle" name="subtitle"><Input maxLength={120} /></Form.Item>
-        {needsCollection && (
-          <Form.Item label="Collection" name="collectionId" rules={[{ required: true, message: "Pick a collection" }]}>
-            <Select {...selectProps} showSearch optionFilterProp="label" placeholder="Select collection" />
+        {collectionMode && (
+          <Form.Item
+            label="Collection"
+            name="collectionId"
+            rules={[{ required: collectionMode === "REQUIRED", message: "Pick a collection" }]}
+            extra={collectionMode === "OPTIONAL" ? "Leave empty to use the whole store, or narrow to a collection" : undefined}
+          >
+            <Select {...selectProps} allowClear={collectionMode === "OPTIONAL"} showSearch optionFilterProp="label" placeholder="Select collection" />
           </Form.Item>
         )}
         {type === "PRODUCT_ROW" && <ProductRowFields />}
+        {type === "TABBED_ROW" && <TabbedRowFields collectionProps={selectProps} />}
+        {type === "PRICE_BAND_DEALS" && <PriceBandFields />}
+        {type === "BRAND_CARD" && <BrandCardFields brandId={section?.config?.brandId} />}
+        {type === "CATEGORY_DIRECTORY" && <CategoryDirectoryFields />}
         {type === "CAMPAIGN_CARD" && <CampaignCardFields themed={themed} onThemedChange={setThemed} />}
         <Form.Item label="Active" name="isActive" valuePropName="checked"><Switch /></Form.Item>
       </Form>

@@ -1,6 +1,7 @@
 import type { FestiveFont, HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
 
 type Translations = Record<string, { title?: string; subtitle?: string }> | null;
+type NameTranslations = Record<string, { name?: string }> | null;
 
 /** Where a section's "See all" leads: a collection (optionally narrowed to aisles) or an app path */
 export type HomeSeeAll = { collectionId: string; subcategoryIds?: string[] } | { href: string };
@@ -53,25 +54,65 @@ export interface CampaignCardSection<P> extends HomeSectionBase {
   endsAt: string | null;
 }
 
+export interface HomeTab {
+  id: string;
+  label: string;
+  translations: Record<string, { label: string }> | null;
+  imageUrl: string | null;
+  collectionId: string;
+}
+
+/** A product row switched between collections by a tab rail */
 export interface TabbedRowSection<P> extends HomeSectionBase {
   type: "TABBED_ROW";
   tabStyle: TabRailStyle;
-  tabs: { id: string; label: string; imageUrl: string | null; collectionId: string }[];
-  /** Products of the first tab; the others load when picked */
+  /** The panel colour the tabs open onto; null uses the app's default */
+  tint: string | null;
+  tabs: HomeTab[];
+  /** Products of the first tab; the others load from the collection when picked */
   products: P[];
+  total: number;
 }
 
+export interface PriceBandChip {
+  categoryId: string;
+  label: string;
+  translations: NameTranslations;
+  imageUrl: string | null;
+}
+
+/** Products under a price ("Under \u20B919"), narrowed by category chips; other bands load from `/home/:storeId/deals` */
 export interface PriceBandDealsSection<P> extends HomeSectionBase {
   type: "PRICE_BAND_DEALS";
   headline: string | null;
-  bands: { id: string; label: string; maxPrice: number | null }[];
-  chips: { categoryId: string; label: string; imageUrl: string | null }[];
+  bands: PriceBand[];
+  /** Categories with products in the first band */
+  chips: PriceBandChip[];
   products: P[];
+  total: number;
+}
+
+export interface PriceBand {
+  id: string;
+  label: string;
+  maxPrice: number | null;
+}
+
+/** One band and chip's products, from `GET /home/:storeId/deals` */
+export interface PriceBandPage<P = unknown> {
+  chips: PriceBandChip[];
+  products: P[];
+  total: number;
+}
+
+/** A deals page with the section it belongs to, so the full Deals screen can open on its own */
+export interface PriceBandDealsPage<P = unknown> extends PriceBandPage<P> {
+  section: { title: string | null; headline: string | null; bands: PriceBand[] };
 }
 
 export interface BrandCardSection<P> extends HomeSectionBase {
   type: "BRAND_CARD";
-  brand: { id: string; name: string; logoUrl: string | null };
+  brand: { id: string; name: string; logoUrl: string | null; themeColor: string | null };
   imageUrl: string | null;
   tint: string | null;
   products: P[];
@@ -79,7 +120,12 @@ export interface BrandCardSection<P> extends HomeSectionBase {
 
 export interface CategoryDirectorySection extends HomeSectionBase {
   type: "CATEGORY_DIRECTORY";
-  groups: { departmentId: string; name: string; tiles: { categoryId: string; name: string; imageUrl: string | null; wide: boolean }[] }[];
+  groups: {
+    departmentId: string;
+    name: string;
+    translations: NameTranslations;
+    tiles: { categoryId: string; name: string; translations: NameTranslations; imageUrl: string | null; wide: boolean }[];
+  }[];
 }
 
 export interface TileGridSection extends HomeSectionBase {

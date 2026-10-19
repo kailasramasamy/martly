@@ -1,0 +1,36 @@
+import { DIRECTORY_WIDE_TILES } from "@martly/shared/constants";
+import { parseHomeSectionConfig } from "@martly/shared/schemas";
+import type { CategoryDirectorySection } from "@martly/shared/types";
+import { sectionBase, type SectionResolver } from "../types.js";
+
+type Names = CategoryDirectorySection["groups"][number]["translations"];
+
+export const categoryDirectory: SectionResolver = async (ctx, entry) => {
+  const { departmentIds } = parseHomeSectionConfig("CATEGORY_DIRECTORY", entry.config) as { departmentIds: string[] };
+  const stocked = await ctx.prisma.$queryRaw<{ category_id: string }[]>`
+    SELECT DISTINCT s.category_id FROM store_products sp
+    JOIN products p ON p.id = sp.product_id AND p.is_active
+    JOIN subcategories s ON s.id = p.subcategory_id
+    WHERE sp.store_id = ${ctx.store.id} AND sp.is_active AND sp.stock > 0`;
+  const departments = await ctx.prisma.department.findMany({
+    where: departmentIds.length > 0 ? { id: { in: departmentIds } } : {},
+    orderBy: [{ sortOrder: "asc" }, { name: "asc" }],
+    select: {
+      id: true, name: true, translations: true,
+      categories: {
+        where: { id: { in: stocked.map((r) => r.category_id) } },
+        orderBy: [{ sortOrder: "asc" }, { name: "asc" }],
+        select: { id: true, name: true, translations: true, imageUrl: true },
+      },
+    },
+  });
+  // A picked list keeps the admin's order
+  if (departmentIds.length > 0) departments.sort((a, b) => departmentIds.indexOf(a.id) - departmentIds.indexOf(b.id));
+  const groups = departments.filter((d) => d.categories.length > 0).map((d) => ({
+    departmentId: d.id, name: d.name, translations: d.translations as Names,
+    tiles: d.categories.map((c, i) => ({
+      categoryId: c.id, name: c.name, translations: c.translations as Names, imageUrl: c.imageUrl, wide: i < DIRECTORY_WIDE_TILES,
+    })),
+  }));
+  return groups.length > 0 ? { ...sectionBase(entry), type: "CATEGORY_DIRECTORY", groups } : null;
+};

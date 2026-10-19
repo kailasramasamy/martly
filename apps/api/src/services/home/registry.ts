@@ -1,7 +1,11 @@
 import type { HomeSectionType } from "@martly/shared/constants";
 import type { SectionResolver } from "./types.js";
+import { brandCard } from "./resolvers/brand-card.js";
 import { campaignCard } from "./resolvers/campaign-card.js";
+import { categoryDirectory } from "./resolvers/category-directory.js";
+import { priceBandDeals } from "./resolvers/price-band-deals.js";
 import { productRow } from "./resolvers/product-row.js";
+import { tabbedRow } from "./resolvers/tabbed-row.js";
 import {
   buyAgain, clientFetched, deals, departmentGrid, festiveHero, heroBanners, midBanners, recipes, timePicks,
 } from "./resolvers/system.js";
@@ -24,15 +28,15 @@ export const RESOLVERS: Record<HomeSectionType, SectionResolver> = {
   RECIPES: recipes,
   LIVE_CAMPAIGNS: notBuilt,
   OTHER_COLLECTIONS: notBuilt,
-  CATEGORY_DIRECTORY: notBuilt,
+  CATEGORY_DIRECTORY: categoryDirectory,
   OFFERS: notBuilt,
   BRAND_POSTERS: notBuilt,
   PERSONALISED: notBuilt,
   PRODUCT_ROW: productRow,
   CAMPAIGN_CARD: campaignCard,
-  TABBED_ROW: notBuilt,
-  PRICE_BAND_DEALS: notBuilt,
-  BRAND_CARD: notBuilt,
+  TABBED_ROW: tabbedRow,
+  PRICE_BAND_DEALS: priceBandDeals,
+  BRAND_CARD: brandCard,
   EXPLORE_GRID: notBuilt,
   STORE_GRID: notBuilt,
 };

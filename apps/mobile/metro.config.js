@@ -13,4 +13,11 @@ config.resolver.nodeModulesPaths = [
   path.resolve(monorepoRoot, "node_modules"),
 ];
 
+// The shared package imports its own files as "./x.js" (NodeNext style for the API); Metro needs the .ts source
+const sharedRoot = path.resolve(monorepoRoot, "packages/shared");
+config.resolver.resolveRequest = (context, moduleName, platform) => {
+  const sharedSibling = moduleName.startsWith(".") && moduleName.endsWith(".js") && context.originModulePath.startsWith(sharedRoot);
+  return context.resolveRequest(context, sharedSibling ? moduleName.slice(0, -3) : moduleName, platform);
+};
+
 module.exports = config;

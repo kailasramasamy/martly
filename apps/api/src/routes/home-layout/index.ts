@@ -1,5 +1,5 @@
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { Permission, COLLECTION_SECTION_TYPES } from "@martly/shared/constants";
+import { Permission, SECTION_COLLECTION } from "@martly/shared/constants";
 import {
   createHomeSectionSchema, homeSectionItemsSchema, parseHomeSectionConfig, reorderHomeSectionsSchema, updateHomeSectionSchema,
 } from "@martly/shared/schemas";
@@ -70,7 +70,8 @@ export async function homeLayoutRoutes(app: FastifyInstance) {
     if (!organizationId) return;
     const input = createHomeSectionSchema.parse(request.body);
     const config = parseHomeSectionConfig(input.type, input.config);
-    if (COLLECTION_SECTION_TYPES.includes(input.type) && !input.collectionId) throw badRequest("This section needs a collection");
+    if (SECTION_COLLECTION[input.type] === "REQUIRED" && !input.collectionId) throw badRequest("This section needs a collection");
+    if (!SECTION_COLLECTION[input.type] && input.collectionId) throw badRequest("This section doesn't take a collection");
     await assertCollections(organizationId, [input.collectionId]);
     const last = await app.prisma.homeSection.aggregate({ where: { organizationId }, _max: { sortOrder: true } });
     const section = await app.prisma.homeSection.create({
@@ -89,7 +90,8 @@ export async function homeLayoutRoutes(app: FastifyInstance) {
     if (!section) return;
     const input = updateHomeSectionSchema.parse(request.body);
     if (input.collectionId) await assertCollections(section.organizationId, [input.collectionId]);
-    if (input.collectionId === null && COLLECTION_SECTION_TYPES.includes(section.type)) throw badRequest("This section needs a collection");
+    if (input.collectionId === null && SECTION_COLLECTION[section.type] === "REQUIRED") throw badRequest("This section needs a collection");
+    if (input.collectionId && !SECTION_COLLECTION[section.type]) throw badRequest("This section doesn't take a collection");
     const updated = await app.prisma.homeSection.update({
       where: { id: section.id },
       data: {
