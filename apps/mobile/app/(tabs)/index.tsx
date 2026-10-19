@@ -120,12 +120,14 @@ interface ListProps {
   /** Festive title colour for the pull-to-refresh spinner, and the header it has to clear */
   festiveInk: string | null;
   headerOffset: number;
+  /** False while there is no store to render against, e.g. the render where it clears before the stale sections do */
+  ready: boolean;
   onHeroInView: (inView: boolean) => void;
 }
 
 const HERO_VIEWABILITY = { itemVisiblePercentThreshold: 30 };
 
-function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, onHeroInView }: ListProps) {
+function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, ready, onHeroInView }: ListProps) {
   const { home, refreshing, onRefresh } = data;
   const { tabBarScroll } = scroll;
   const onViewableItemsChanged = useCallback(({ viewableItems }: { viewableItems: ViewToken<MobileHomeSection>[] }) => {
@@ -134,7 +136,7 @@ function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, onHer
   return (
     <FlatList
       ref={scroll.listRef}
-      data={home.sections}
+      data={ready ? home.sections : []}
       keyExtractor={keyOf}
       renderItem={renderSection}
       keyboardDismissMode="on-drag"
@@ -192,7 +194,7 @@ export default function HomeScreen() {
           onLayout={header.onLayout}
         />
         <HomeSectionProvider value={env}>
-          <SectionList data={data} scroll={scroll} dockHeight={dockHeight} festiveInk={festive?.title ?? null} headerOffset={header.expanded} onHeroInView={setHeroInView} />
+          <SectionList data={data} scroll={scroll} dockHeight={dockHeight} festiveInk={festive?.title ?? null} headerOffset={header.expanded} ready={env !== null} onHeroInView={setHeroInView} />
         </HomeSectionProvider>
         <BackToTopPill visible={scroll.showBackToTop} top={header.height + 8} onPress={scroll.scrollToTop} />
         <TabBottomDock onLayout={(e) => setDockHeight(e.nativeEvent.layout.height)}>

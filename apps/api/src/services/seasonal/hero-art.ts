@@ -3,6 +3,7 @@ import sharp from "sharp";
 import { randomUUID } from "crypto";
 import { putObject } from "../media.js";
 import { BannerArtError } from "./banner-art.js";
+import { contrast, fromHsl, hex, rgb, toHsl, WHITE } from "../color.js";
 
 const IMAGE_MODEL = process.env.OPENAI_IMAGE_MODEL ?? "gpt-image-2.5-flare";
 const STRIP_WIDTH = 1200;
@@ -52,48 +53,6 @@ export async function generate(prompt: string, size: "1024x1024" | "1024x1536" |
   const b64 = response.data?.[0]?.b64_json;
   if (!b64) throw new BannerArtError(`Image model ${IMAGE_MODEL} returned no image`);
   return Buffer.from(b64, "base64");
-}
-
-function luminance([r, g, b]: number[]) {
-  const linear = (c: number) => ((c /= 255) <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
-  return 0.2126 * linear(r) + 0.7152 * linear(g) + 0.0722 * linear(b);
-}
-
-function contrast(a: number[], b: number[]) {
-  const [hi, lo] = [luminance(a), luminance(b)].sort((x, y) => y - x);
-  return (hi + 0.05) / (lo + 0.05);
-}
-
-function rgb(hexColor: string) {
-  const m = /^#?([0-9a-f]{6})$/i.exec(hexColor.trim());
-  return m ? [0, 2, 4].map((i) => parseInt(m[1].slice(i, i + 2), 16)) : null;
-}
-
-function hex(channels: number[]) {
-  return `#${channels.map((c) => Math.round(c).toString(16).padStart(2, "0")).join("")}`;
-}
-
-const WHITE = [255, 255, 255];
-
-function toHsl([r, g, b]: number[]): [number, number, number] {
-  const [rn, gn, bn] = [r / 255, g / 255, b / 255];
-  const max = Math.max(rn, gn, bn), min = Math.min(rn, gn, bn), l = (max + min) / 2;
-  if (max === min) return [0, 0, l];
-  const d = max - min;
-  const sat = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-  const hue = max === rn ? (gn - bn) / d + (gn < bn ? 6 : 0) : max === gn ? (bn - rn) / d + 2 : (rn - gn) / d + 4;
-  return [hue / 6, sat, l];
-}
-
-function fromHsl([h, sat, l]: [number, number, number]): number[] {
-  if (sat === 0) return [l * 255, l * 255, l * 255];
-  const q = l < 0.5 ? l * (1 + sat) : l + sat - l * sat, p = 2 * l - q;
-  const channel = (t: number) => {
-    t = (t + 1) % 1;
-    const v = t < 1 / 6 ? p + (q - p) * 6 * t : t < 1 / 2 ? q : t < 2 / 3 ? p + (q - p) * (2 / 3 - t) * 6 : p;
-    return v * 255;
-  };
-  return [channel(h + 1 / 3), channel(h), channel(h - 1 / 3)];
 }
 
 /** White text on the theme colour: the colour's lightness (hue and saturation kept) moved until white reads

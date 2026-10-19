@@ -12,6 +12,8 @@ const ART_WIDTH = Math.round(SCREEN_WIDTH * 0.44);
 // Campaign cut-outs are about 1.6:1; a box of that shape keeps the art pinned level with the headline
 const ART_HEIGHT = Math.round(ART_WIDTH / 1.6);
 const HEIGHT = 150;
+// Without a countdown above the headline or an offer stamp hanging below the art, the header ends just under the art
+const COMPACT_HEIGHT = ART_HEIGHT + 12;
 // The grid's side padding, which the header bleeds through so its deeper band runs edge to edge
 const BLEED = 16;
 // The headline column stops short of the art, or of the offer stamp hanging off the art's left edge
@@ -39,9 +41,15 @@ export function CampaignHeader({ collection, campaign }: { collection: Collectio
   const { title: ink, dark } = campaign.theme;
 
   const deep = campaignHeaderColor(campaign.theme);
+  const compact = !campaign.offerLabel && !collection.endsAt;
 
   return (
-    <LinearGradient colors={[deep, deep, campaign.theme.background]} locations={FADE_STOPS} style={styles.wrap} accessibilityRole="header">
+    <LinearGradient
+      colors={[deep, deep, campaign.theme.background]}
+      locations={FADE_STOPS}
+      style={[styles.wrap, compact && styles.compactWrap]}
+      accessibilityRole="header"
+    >
       {campaign.imageUrl ? <Image source={{ uri: campaign.imageUrl }} style={styles.art} resizeMode="contain" /> : null}
       <View style={[styles.text, { width: campaign.offerLabel ? TEXT_WIDTH - STAMP_SIZE / 2 : TEXT_WIDTH }]}>
         <CountdownChip endsAt={collection.endsAt} ink={ink} fill={dark ? "#ffffff26" : "#ffffffb8"} />
@@ -55,6 +63,7 @@ export function CampaignHeader({ collection, campaign }: { collection: Collectio
 
 const styles = StyleSheet.create({
   wrap: { height: HEIGHT, marginHorizontal: -BLEED, paddingHorizontal: BLEED, marginBottom: 14 },
+  compactWrap: { height: COMPACT_HEIGHT },
   // The art lines up with the grid's right edge, and the text is centred on it (a countdown can grow it downwards)
   art: { position: "absolute", right: BLEED, top: 4, width: ART_WIDTH, height: ART_HEIGHT },
   text: { position: "absolute", left: BLEED, top: 4, minHeight: ART_HEIGHT, justifyContent: "center", gap: 4 },

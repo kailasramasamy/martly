@@ -6,7 +6,7 @@ import { colors, fonts } from "../../../constants/theme";
 
 const H_PADDING = 16;
 const BANNER_TINT = "#ccfbf1";
-const BANNER_ART = 76;
+const BANNER_ART = 96;
 const ARTWORK_ASPECT = 3;
 
 interface Props {
@@ -35,7 +35,7 @@ function PlainHeader({ title, subtitle }: Props) {
 function BannerHeader({ title, subtitle, imageUrl, tint }: Props) {
   const base = tint ?? BANNER_TINT;
   return (
-    <LinearGradient colors={[base, `${base}55`]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.banner}>
+    <LinearGradient colors={[base, `${base}55`]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={[styles.banner, imageUrl ? styles.bannerWithArt : null]}>
       <View style={styles.bannerText} accessibilityRole="header">
         <Text style={styles.bannerTitle} numberOfLines={2}>{title}</Text>
         {subtitle ? <Text style={styles.subtitle} numberOfLines={2}>{subtitle}</Text> : null}
@@ -72,10 +72,11 @@ const styles = StyleSheet.create({
   subtitle: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, marginTop: 2 },
   banner: {
     flexDirection: "row", alignItems: "center", marginHorizontal: H_PADDING, marginBottom: 12,
-    borderRadius: 12, paddingLeft: 16, minHeight: BANNER_ART + 8, overflow: "hidden",
+    borderRadius: 12, paddingLeft: 16, overflow: "hidden",
   },
+  bannerWithArt: { minHeight: BANNER_ART + 8 },
   bannerText: { flex: 1, paddingVertical: 12 },
-  bannerTitle: { fontFamily: fonts.extrabold, fontSize: 17, color: colors.text, letterSpacing: -0.2 },
+  bannerTitle: { fontFamily: fonts.extrabold, fontSize: 20, color: colors.text, letterSpacing: -0.2 },
   bannerArt: { width: BANNER_ART, height: BANNER_ART, marginRight: 8 },
   artwork: { marginHorizontal: H_PADDING, marginBottom: 14, padding: 8, paddingBottom: 14, borderRadius: 16, alignItems: "center" },
   artworkImage: { width: "100%", aspectRatio: ARTWORK_ASPECT, borderRadius: 12, marginBottom: 12 },

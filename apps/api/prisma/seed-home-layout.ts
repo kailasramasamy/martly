@@ -95,7 +95,7 @@ async function rows(organizationId: string, previous: Map<string | null, Config>
     "Isolated on a fully transparent background, soft studio light. No text, letters, logos or people.",
   ].join("\n"), "1024x1024", true);
   return {
-    best: { type: "PRODUCT_ROW", title: "Best Sellers", collectionId: BEST_SELLERS_ID, config: { headerStyle: "ARTWORK", headerImageUrl: bestArt, tint: "#fef3c7", maxProducts: 12 } } as Planned,
+    best: { type: "PRODUCT_ROW", title: "Best Sellers", collectionId: BEST_SELLERS_ID, config: { headerStyle: "BANNER", headerImageUrl: bestArt, tint: "#fef3c7", maxProducts: 12 } } as Planned,
     value: { type: "PRODUCT_ROW", title: "Value Picks", collectionId: valuePicks.collection.id, config: { headerStyle: "PLAIN", maxProducts: 12 } } as Planned,
     fruit: { type: "PRODUCT_ROW", title: "Fresh Fruit Basket", collectionId: fruit.collection.id, config: { headerStyle: "BANNER", headerImageUrl: fruitArt, tint: "#dcfce7", maxProducts: 12 } } as Planned,
   };
