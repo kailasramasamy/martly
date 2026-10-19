@@ -593,3 +593,34 @@ export interface CollectionHeader {
 export interface CollectionProductsResponse extends PaginatedResponse<StoreProduct> {
   collection: CollectionHeader;
 }
+
+export interface ReturnRequestData {
+  id: string;
+  status: "PENDING" | "IN_PROGRESS" | "APPROVED" | "REJECTED" | "EXPIRED";
+  remedy: "REFUND" | "REPLACE" | null;
+  method: "KEEP" | "NEXT_ORDER" | "AT_STORE" | null;
+  reason: string;
+  requestedAmount: string;
+  approvedAmount: string | null;
+  adminNote: string | null;
+  receivedAt: string | null;
+  refundedAt: string | null;
+  store?: { name: string; address: string | null; phone: string | null };
+  items?: { orderItemId: string; quantity: number }[];
+}
+
+export interface ReturnLineSummary {
+  quantity: number;
+  orderItem: {
+    unitPrice?: string;
+    product: { name: string; imageUrl?: string | null; images?: string[] };
+    variant?: { name: string; imageUrl?: string | null } | null;
+  };
+}
+
+export interface ReturnLinesGroup {
+  id: string;
+  orderId: string;
+  reason?: string;
+  items: ReturnLineSummary[];
+}

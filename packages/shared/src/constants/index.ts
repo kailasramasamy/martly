@@ -458,15 +458,61 @@ export const TicketPriorityLabels: Record<TicketPriority, string> = {
 
 export const ReturnRequestStatus = {
   PENDING: "PENDING",
+  IN_PROGRESS: "IN_PROGRESS",
   APPROVED: "APPROVED",
   REJECTED: "REJECTED",
+  EXPIRED: "EXPIRED",
 } as const;
 export type ReturnRequestStatus = (typeof ReturnRequestStatus)[keyof typeof ReturnRequestStatus];
 
 export const ReturnRequestStatusLabels: Record<ReturnRequestStatus, string> = {
   PENDING: "Pending",
-  APPROVED: "Approved",
+  IN_PROGRESS: "In progress",
+  APPROVED: "Completed",
   REJECTED: "Rejected",
+  EXPIRED: "Expired",
+};
+
+// What the customer gets for an approved return (mirrors Prisma ReturnRemedy)
+export const ReturnRemedy = {
+  REFUND: "REFUND",
+  REPLACE: "REPLACE",
+} as const;
+export type ReturnRemedy = (typeof ReturnRemedy)[keyof typeof ReturnRemedy];
+
+export const ReturnRemedyLabels: Record<ReturnRemedy, string> = {
+  REFUND: "Refund to wallet",
+  REPLACE: "Replace with next order",
+};
+
+// How a returned item gets back to the store (mirrors Prisma ReturnMethod)
+export const ReturnMethod = {
+  KEEP: "KEEP",
+  NEXT_ORDER: "NEXT_ORDER",
+  AT_STORE: "AT_STORE",
+} as const;
+export type ReturnMethod = (typeof ReturnMethod)[keyof typeof ReturnMethod];
+
+export const ReturnMethodLabels: Record<ReturnMethod, string> = {
+  KEEP: "Customer keeps it",
+  NEXT_ORDER: "Collect with next order",
+  AT_STORE: "Drop at store",
+};
+
+// Why an item was handed back at the door (mirrors Prisma RefuseReason)
+export const RefuseReason = {
+  DAMAGED: "DAMAGED",
+  EXPIRED: "EXPIRED",
+  WRONG_ITEM: "WRONG_ITEM",
+  NOT_WANTED: "NOT_WANTED",
+} as const;
+export type RefuseReason = (typeof RefuseReason)[keyof typeof RefuseReason];
+
+export const RefuseReasonLabels: Record<RefuseReason, string> = {
+  DAMAGED: "Damaged",
+  EXPIRED: "Expired or stale",
+  WRONG_ITEM: "Wrong item",
+  NOT_WANTED: "Didn't want it",
 };
 
 export const MembershipDuration = {
@@ -505,6 +551,28 @@ export const RETURN_REASONS = [
 ] as const;
 
 export const RETURN_WINDOW_HOURS = 48;
+
+/** Days the rider has to collect a returned item with the customer's next order before it switches to a store drop */
+export const RETURN_COLLECT_DAYS = 7;
+
+/** Days after approval before an item that never came back expires the return, and an unsent replacement becomes a refund */
+export const RETURN_EXPIRY_DAYS = 14;
+
+/** How long each kind of pending work may wait before Today flags it and owners get an escalation; null never escalates */
+export const ATTENTION_STALE_MINUTES = {
+  returns_review: 4 * 60,
+  returns_drop: null,
+  ready_unassigned: 15,
+  counts_approve: 24 * 60,
+  recounts: 24 * 60,
+  reviews: 48 * 60,
+  tickets: 4 * 60,
+  catalog_drafts: 48 * 60,
+} as const;
+export type AttentionKey = keyof typeof ATTENTION_STALE_MINUTES;
+
+/** Reasons where the item is worthless to the store, so the customer keeps it by default */
+export const RETURN_KEEP_REASONS: readonly string[] = ["Damaged/broken item", "Item expired/stale", "Missing items", "Quality not as expected"];
 
 export const SubscriptionStatus = {
   ACTIVE: "ACTIVE",
@@ -603,6 +671,7 @@ export const StockMovementType = {
   MANUAL: "MANUAL",
   SALE: "SALE",
   UNDO_SALE: "UNDO_SALE",
+  RETURN: "RETURN",
 } as const;
 export type StockMovementType = (typeof StockMovementType)[keyof typeof StockMovementType];
 
@@ -614,6 +683,7 @@ export const StockMovementTypeLabels: Record<StockMovementType, string> = {
   MANUAL: "Correction",
   SALE: "Sold",
   UNDO_SALE: "Delivery undone",
+  RETURN: "Customer return",
 };
 
 // Blind stock count lifecycle (mirrors Prisma StockCountStatus)

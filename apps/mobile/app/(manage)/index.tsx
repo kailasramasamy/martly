@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { Redirect, useFocusEffect, useRouter } from "expo-router";
 import { Permission } from "@martly/shared/constants";
@@ -16,7 +16,7 @@ import { BarChart } from "../../components/manage/today/BarChart";
 import { TodayKpis } from "../../components/manage/today/TodayKpis";
 import { LiveQueue, QUEUE_STATUSES } from "../../components/manage/today/LiveQueue";
 import { LowStockCard } from "../../components/manage/today/LowStockCard";
-import { CountsWaitingCard } from "../../components/manage/stock/CountsWaitingCard";
+import { AttentionCard } from "../../components/manage/today/AttentionCard";
 import { RecentOrdersCard, TopProductsCard } from "../../components/manage/today/TodayLists";
 import { useTodayData } from "../../components/manage/today/use-today-data";
 import { MarketingPlanStrip } from "../../components/manage/today/MarketingPlanStrip";
@@ -52,6 +52,7 @@ function TodayDashboard() {
   const { storeId, loading: scopeLoading, stores } = useManageScope();
   const { stats, stock, lowItems, loading, refreshing, error, refresh } = useTodayData(storeId, !scopeLoading && stores.length > 0);
   const { counts, reload: reloadCounts } = useStatusCounts(QUEUE_STATUSES, storeId);
+  const [pulls, setPulls] = useState(0);
   // Coming back to Today refreshes the live queue counts
   useFocusEffect(useCallback(() => { reloadCounts(); }, [reloadCounts]));
   // The marketing plan belongs to an organisation, so the platform admin doesn't get the strip
@@ -67,7 +68,7 @@ function TodayDashboard() {
   }));
 
   return (
-    <ManageScreen title="Today" headerContent={<Greeting name={user?.name} />} refreshing={refreshing} onRefresh={() => { refresh(); reloadCounts(); }}>
+    <ManageScreen title="Today" headerContent={<Greeting name={user?.name} />} refreshing={refreshing} onRefresh={() => { refresh(); reloadCounts(); setPulls((n) => n + 1); }}>
       {!scopeLoading && stores.length === 0 ? (
         <EmptyState icon="storefront-outline" title="No stores yet" message="Ask an admin to assign you to a store." />
       ) : scopeLoading || loading ? (
@@ -76,12 +77,12 @@ function TodayDashboard() {
         <EmptyState icon="cloud-offline-outline" title="Couldn't load today" message={error ?? undefined} action={{ label: "Try again", onPress: refresh }} />
       ) : (
         <>
+          <AttentionCard key={pulls} storeId={storeId} />
           <TodayKpis stats={stats} />
           {showMarketing && <MarketingPlanStrip />}
           <SectionCard title="Live queue" action={{ label: "All orders", onPress: () => openOrders() }}>
             <LiveQueue counts={counts} onSelect={openOrders} />
           </SectionCard>
-          <CountsWaitingCard storeId={storeId} />
           <SectionCard title="Revenue · last 7 days">
             <BarChart data={weekdays} formatValue={(v) => formatINR(v)} />
           </SectionCard>

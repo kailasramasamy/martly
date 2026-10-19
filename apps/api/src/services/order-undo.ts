@@ -4,8 +4,6 @@ import { applyMovement } from "./stock-ledger.js";
 
 type Tx = Prisma.TransactionClient;
 
-const COD_AUTO_PAID_NOTE = "COD payment collected on delivery";
-
 export interface UndoableOrder {
   id: string;
   userId: string;
@@ -14,6 +12,8 @@ export interface UndoableOrder {
   fulfillmentType: string;
   paymentMethod: string;
   paymentStatus: string;
+  /** Set only when delivering a COD order collected the money */
+  codCollectedVia: string | null;
   loyaltyPointsEarned: number | null;
   deliveryTripId: string | null;
   statusLogs: { status: string; note: string | null; createdAt: Date }[];
@@ -24,12 +24,14 @@ export async function undoDenial(prisma: PrismaClient, order: UndoableOrder, now
   if (order.status !== "DELIVERED") return "Only delivered orders can be undone";
   const at = deliveredAt(order.statusLogs);
   if (!at || now - at.getTime() > UNDO_DELIVERY_WINDOW_MS) return "Deliveries can only be undone within 2 hours. Raise a return instead.";
-  const [returned, reviewed, referral] = await Promise.all([
+  const [returned, refused, reviewed, referral] = await Promise.all([
     prisma.returnRequest.findFirst({ where: { orderId: order.id }, select: { id: true } }),
+    prisma.orderItem.findFirst({ where: { orderId: order.id, refusedQuantity: { gt: 0 } }, select: { id: true } }),
     prisma.review.findFirst({ where: { orderId: order.id }, select: { id: true } }),
     prisma.referral.findFirst({ where: { orderId: order.id }, select: { id: true } }),
   ]);
   if (returned) return "The customer has raised a return for this order. Handle it through returns instead.";
+  if (refused) return "Items were handed back at the door and refunded, so the delivery can't be undone.";
   if (reviewed) return "The customer has already reviewed this order, so the delivery can't be undone.";
   if (referral) return "This delivery paid out a referral reward, so it can't be undone. Raise a return instead.";
   return null;
@@ -72,8 +74,7 @@ async function reverseLoyalty(tx: Tx, order: UndoableOrder) {
 /** Reverses everything marking the order delivered did, and moves it back a step. Run in one transaction. */
 export async function undoDelivery(tx: Tx, order: UndoableOrder, ctx: { userId: string; reason: string }) {
   const target = undoDeliveryTarget(order.fulfillmentType);
-  const lastDelivered = [...order.statusLogs].reverse().find((l) => l.status === "DELIVERED");
-  const codAutoPaid = order.paymentMethod === "COD" && order.paymentStatus === "PAID" && lastDelivered?.note === COD_AUTO_PAID_NOTE;
+  const codAutoPaid = order.paymentMethod === "COD" && order.paymentStatus === "PAID" && order.codCollectedVia !== null;
 
   await restoreStock(tx, order.id, ctx.userId);
   await reverseLoyalty(tx, order);
@@ -85,7 +86,7 @@ export async function undoDelivery(tx: Tx, order: UndoableOrder, ctx: { userId: 
   }
   await tx.order.update({
     where: { id: order.id },
-    data: { status: target, loyaltyPointsEarned: 0, ...(codAutoPaid ? { paymentStatus: "PENDING" as const } : {}) },
+    data: { status: target, loyaltyPointsEarned: 0, ...(codAutoPaid ? { paymentStatus: "PENDING" as const, codCollectedVia: null } : {}) },
   });
   await tx.orderStatusLog.create({ data: { orderId: order.id, status: target, note: `Delivery undone: ${ctx.reason}` } });
   return target;

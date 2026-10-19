@@ -1,12 +1,17 @@
-import type { FastifyInstance } from "fastify";
-import { createReturnRequestSchema, resolveReturnRequestSchema } from "@martly/shared/schemas";
+import type { FastifyInstance, FastifyRequest } from "fastify";
+import { chooseReturnMethodSchema, collectReturnSchema, createReturnRequestSchema, resolveReturnRequestSchema } from "@martly/shared/schemas";
+import { deliveredAt } from "@martly/shared/order-flow";
 import { RETURN_WINDOW_HOURS } from "@martly/shared/constants";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
-import { notifyReturnRequested, notifyReturnResolved } from "../../services/notify/service-alerts.js";
+import { notifyReturnRequested } from "../../services/notify/service-alerts.js";
+import { notifyReturnUpdate } from "../../services/notify/return-alerts.js";
+import { resolveReturn } from "../../services/returns/resolve.js";
+import { loadReturn, receiveReturn } from "../../services/returns/settle.js";
+import { collectDenial } from "../../services/returns/pickups.js";
 
 export async function returnRequestRoutes(app: FastifyInstance) {
   // ── POST / — Customer creates a return request ─────────────
@@ -19,7 +24,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
     // Fetch order with items
     const order = await app.prisma.order.findUnique({
       where: { id: body.orderId },
-      include: { items: true, store: true, returnRequest: true },
+      include: { items: true, store: true, returnRequest: true, statusLogs: { select: { status: true, createdAt: true } } },
     });
 
     if (!order) return reply.notFound("Order not found");
@@ -31,9 +36,8 @@ export async function returnRequestRoutes(app: FastifyInstance) {
       return reply.badRequest("A return request already exists for this order");
     }
 
-    // Check 48h window
-    const deliveredAt = order.updatedAt;
-    const hoursSinceDelivery = (Date.now() - deliveredAt.getTime()) / (1000 * 60 * 60);
+    const delivered = deliveredAt(order.statusLogs) ?? order.updatedAt;
+    const hoursSinceDelivery = (Date.now() - delivered.getTime()) / (1000 * 60 * 60);
     if (hoursSinceDelivery > RETURN_WINDOW_HOURS) {
       return reply.badRequest(`Return window of ${RETURN_WINDOW_HOURS} hours has expired`);
     }
@@ -44,8 +48,9 @@ export async function returnRequestRoutes(app: FastifyInstance) {
     for (const item of body.items) {
       const orderItem = orderItemMap.get(item.orderItemId);
       if (!orderItem) return reply.badRequest(`Order item ${item.orderItemId} not found in this order`);
-      if (item.quantity > orderItem.quantity) {
-        return reply.badRequest(`Quantity ${item.quantity} exceeds order quantity ${orderItem.quantity}`);
+      const kept = orderItem.quantity - orderItem.refusedQuantity;
+      if (item.quantity > kept) {
+        return reply.badRequest(`Quantity ${item.quantity} exceeds the ${kept} delivered`);
       }
       requestedAmount += (Number(orderItem.unitPrice) * item.quantity);
     }
@@ -113,6 +118,34 @@ export async function returnRequestRoutes(app: FastifyInstance) {
     } satisfies PaginatedResponse<(typeof items)[0]>;
   });
 
+  // ── GET /my-replacements — Customer's replacements that will ride on their next order at a store ──
+  app.get<{ Querystring: { storeId?: string } }>("/my-replacements", { preHandler: [authenticate] }, async (request, reply) => {
+    const user = getOrgUser(request);
+    if (!request.query.storeId) return reply.badRequest("storeId is required");
+    const pending = await app.prisma.returnRequest.findMany({
+      where: {
+        userId: user.sub, storeId: request.query.storeId, status: "IN_PROGRESS", remedy: "REPLACE",
+        replacementItems: { none: { order: { status: { not: "CANCELLED" } } } },
+      },
+      select: {
+        id: true, orderId: true, reason: true,
+        items: {
+          select: {
+            quantity: true,
+            orderItem: {
+              select: {
+                unitPrice: true,
+                product: { select: { name: true, imageUrl: true, images: true } },
+                variant: { select: { name: true, imageUrl: true } },
+              },
+            },
+          },
+        },
+      },
+    });
+    return { success: true, data: pending } satisfies ApiResponse<typeof pending>;
+  });
+
   // ── GET /my-requests/:orderId — Customer checks request for specific order ──
   app.get<{ Params: { orderId: string } }>("/my-requests/:orderId", { preHandler: [authenticate] }, async (request, reply) => {
     const user = getOrgUser(request);
@@ -121,6 +154,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
       where: { orderId: request.params.orderId },
       include: {
         items: { include: { orderItem: { include: { product: true, variant: true } } } },
+        store: { select: { name: true, address: true, phone: true } },
       },
     });
 
@@ -158,7 +192,8 @@ export async function returnRequestRoutes(app: FastifyInstance) {
     const [items, total] = await Promise.all([
       app.prisma.returnRequest.findMany({
         where,
-        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
+        // Latest activity first: a return that was just approved, collected or received rises to the top
+        orderBy: [{ updatedAt: "desc" }, { id: "asc" }],
         skip: (pg - 1) * ps,
         take: ps,
         include: {
@@ -186,92 +221,85 @@ export async function returnRequestRoutes(app: FastifyInstance) {
       include: {
         order: { select: { id: true, totalAmount: true, createdAt: true, status: true } },
         user: { select: { id: true, name: true, email: true, phone: true } },
-        store: { select: { id: true, name: true } },
+        store: { select: { id: true, name: true, returnKeepThreshold: true } },
         items: { include: { orderItem: { include: { product: true, variant: true } } } },
+        replacementItems: { select: { orderId: true, order: { select: { status: true } } } },
       },
     });
 
     if (!returnRequest) return reply.notFound("Return request not found");
     if (storeIds && !storeIds.includes(returnRequest.storeId)) return reply.forbidden("Access denied");
 
-    return { success: true, data: returnRequest } satisfies ApiResponse<typeof returnRequest>;
+    // Who took the item back: the rider who collected it, or the staff member at the counter
+    const receiver = returnRequest.receivedBy
+      ? await app.prisma.user.findUnique({ where: { id: returnRequest.receivedBy }, select: { id: true, name: true, phone: true, role: true } })
+      : null;
+    const data = { ...returnRequest, receiver };
+    return { success: true, data } satisfies ApiResponse<typeof data>;
   });
 
-  // ── PATCH /:id/resolve — Admin approves or rejects ─────────
+  // ── PATCH /:id/resolve — Staff approve (remedy + return method) or reject ─────────
   app.patch<{ Params: { id: string } }>("/:id/resolve", { preHandler: [authenticate, requirePermission(Permission.RETURNS_HANDLE)] }, async (request, reply) => {
     const user = getOrgUser(request);
     const body = resolveReturnRequestSchema.parse(request.body);
+    if (!(await canHandle(request, request.params.id))) return reply.forbidden("Access denied");
 
-    const returnRequest = await app.prisma.returnRequest.findUnique({
-      where: { id: request.params.id },
-      include: { order: true },
-    });
-
-    if (!returnRequest) return reply.notFound("Return request not found");
-    if (returnRequest.status !== "PENDING") {
-      return reply.badRequest("Return request has already been resolved");
-    }
-
-    // Org-scope check
-    if (user.role !== "SUPER_ADMIN" && user.organizationId !== returnRequest.organizationId) {
-      return reply.forbidden("Access denied");
-    }
-
-    if (body.status === "APPROVED") {
-      const approvedAmount = body.approvedAmount ?? Number(returnRequest.requestedAmount);
-
-      const result = await app.prisma.$transaction(async (tx) => {
-        const updated = await tx.returnRequest.update({
-          where: { id: request.params.id },
-          data: {
-            status: "APPROVED",
-            approvedAmount,
-            adminNote: body.adminNote,
-            resolvedAt: new Date(),
-            resolvedBy: user.sub,
-          },
-        });
-
-        // Wallet refund
-        const updatedUser = await tx.user.update({
-          where: { id: returnRequest.userId },
-          data: { walletBalance: { increment: approvedAmount } },
-        });
-        await tx.walletTransaction.create({
-          data: {
-            userId: returnRequest.userId,
-            orderId: returnRequest.orderId,
-            type: "CREDIT",
-            amount: approvedAmount,
-            balanceAfter: Number(updatedUser.walletBalance),
-            description: `Refund for return request on order #${returnRequest.orderId.slice(0, 8)}`,
-          },
-        });
-
-        return updated;
-      });
-
-      // Fire-and-forget notification
-      notifyReturnResolved(app.fcm, app.prisma, returnRequest, { status: "APPROVED", amount: approvedAmount, adminNote: body.adminNote });
-
-      return { success: true, data: result } satisfies ApiResponse<typeof result>;
-    } else {
-      // REJECTED
-      if (!body.adminNote) return reply.badRequest("Admin note is required when rejecting");
-
-      const updated = await app.prisma.returnRequest.update({
-        where: { id: request.params.id },
-        data: {
-          status: "REJECTED",
-          adminNote: body.adminNote,
-          resolvedAt: new Date(),
-          resolvedBy: user.sub,
-        },
-      });
-
-      notifyReturnResolved(app.fcm, app.prisma, returnRequest, { status: "REJECTED", adminNote: body.adminNote });
-
-      return { success: true, data: updated } satisfies ApiResponse<typeof updated>;
-    }
+    const { rr, outcome } = await app.prisma.$transaction((tx) => resolveReturn(tx, request.params.id, body, user.sub));
+    notifyReturnUpdate(app.fcm, app.prisma, rr, rr.status === "REJECTED" ? { kind: "REJECTED" } : { kind: "APPROVED", refunded: outcome.refunded });
+    return { success: true, data: rr } satisfies ApiResponse<typeof rr>;
   });
+
+  // ── PATCH /:id/receive — Staff record an item dropped at the store ─────────
+  app.patch<{ Params: { id: string } }>("/:id/receive", { preHandler: [authenticate, requirePermission(Permission.RETURNS_HANDLE)] }, async (request, reply) => {
+    const user = getOrgUser(request);
+    if (!(await canHandle(request, request.params.id))) return reply.forbidden("Access denied");
+
+    const result = await app.prisma.$transaction(async (tx) => {
+      const rr = await loadReturn(tx, request.params.id);
+      if (!rr) throw Object.assign(new Error("Return request not found"), { statusCode: 404 });
+      const outcome = await receiveReturn(tx, rr, { userId: user.sub });
+      return { rr: (await loadReturn(tx, rr.id))!, outcome };
+    });
+    notifyReturnUpdate(app.fcm, app.prisma, result.rr, { kind: "RECEIVED", refunded: result.outcome.refunded });
+    return { success: true, data: result.rr } satisfies ApiResponse<typeof result.rr>;
+  });
+
+  // ── POST /:id/collect — Rider collects the item while delivering the customer's next order ─────────
+  app.post<{ Params: { id: string } }>("/:id/collect", { preHandler: [authenticate, requirePermission(Permission.DELIVERY_DELIVER, Permission.RETURNS_HANDLE)] }, async (request, reply) => {
+    const user = getOrgUser(request);
+    const { orderId } = collectReturnSchema.parse(request.body);
+    const pending = await app.prisma.returnRequest.findUnique({ where: { id: request.params.id }, select: { userId: true, storeId: true } });
+    if (!pending) return reply.notFound("Return request not found");
+    const denial = await collectDenial(app.prisma, user, pending, orderId);
+    if (denial) return reply.forbidden(denial);
+
+    const result = await app.prisma.$transaction(async (tx) => {
+      const rr = (await loadReturn(tx, request.params.id))!;
+      const outcome = await receiveReturn(tx, rr, { userId: user.sub, orderId });
+      return { rr: (await loadReturn(tx, rr.id))!, outcome };
+    });
+    notifyReturnUpdate(app.fcm, app.prisma, result.rr, { kind: "RECEIVED", refunded: result.outcome.refunded });
+    return { success: true, data: result.rr } satisfies ApiResponse<typeof result.rr>;
+  });
+
+  // ── PATCH /my-requests/:id/method — Customer switches between rider collection and store drop ──
+  app.patch<{ Params: { id: string } }>("/my-requests/:id/method", { preHandler: [authenticate] }, async (request, reply) => {
+    const user = getOrgUser(request);
+    const { method } = chooseReturnMethodSchema.parse(request.body);
+    const updated = await app.prisma.returnRequest.updateMany({
+      where: { id: request.params.id, userId: user.sub, status: "IN_PROGRESS", receivedAt: null, method: { in: ["NEXT_ORDER", "AT_STORE"] } },
+      data: { method },
+    });
+    if (updated.count === 0) return reply.badRequest("This return isn't waiting for an item");
+    const rr = await app.prisma.returnRequest.findUniqueOrThrow({ where: { id: request.params.id } });
+    return { success: true, data: rr } satisfies ApiResponse<typeof rr>;
+  });
+
+  /** Staff may act on a return only within their own stores */
+  async function canHandle(request: FastifyRequest, id: string): Promise<boolean> {
+    const rr = await app.prisma.returnRequest.findUnique({ where: { id }, select: { storeId: true } });
+    if (!rr) throw Object.assign(new Error("Return request not found"), { statusCode: 404 });
+    const storeIds = await getOrgStoreIds(request, app.prisma);
+    return !storeIds || storeIds.includes(rr.storeId);
+  }
 }

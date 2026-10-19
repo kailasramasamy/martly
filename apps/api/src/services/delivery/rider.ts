@@ -2,6 +2,7 @@ import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { amountDue } from "@martly/shared/order-flow";
 import { istDay } from "../ist-day.js";
 import { dateColumn } from "./settings.js";
+import { PICKUP_SELECT, pendingPickups } from "../returns/pickups.js";
 
 const ACTIVE = ["CREATED", "IN_PROGRESS"] as ("CREATED" | "IN_PROGRESS")[];
 
@@ -24,14 +25,15 @@ const RIDER_TRIP_INCLUDE = {
   orders: {
     orderBy: { deliverySequence: "asc" },
     select: {
-      id: true, status: true, deliverySequence: true, totalAmount: true, paymentMethod: true, paymentStatus: true,
-      walletAmountUsed: true, loyaltyPointsUsed: true, codCollectedVia: true, deliveryAddress: true, deliveryPincode: true, deliveryLat: true, deliveryLng: true,
+      id: true, userId: true, status: true, deliverySequence: true, totalAmount: true, paymentMethod: true, paymentStatus: true,
+      walletAmountUsed: true, refusedAmount: true, couponDiscount: true, loyaltyPointsUsed: true, codCollectedVia: true, deliveryAddress: true, deliveryPincode: true, deliveryLat: true, deliveryLng: true,
       deliveryNotes: true, slotStartTime: true, slotEndTime: true, estimatedDeliveryAt: true,
       user: { select: { name: true, phone: true } },
       statusLogs: { where: { status: "DELIVERED" }, orderBy: { createdAt: "desc" }, take: 1, select: { createdAt: true } },
+      collectedReturns: { select: PICKUP_SELECT },
       items: {
         select: {
-          id: true, quantity: true, unitPrice: true, totalPrice: true,
+          id: true, quantity: true, unitPrice: true, totalPrice: true, refusedQuantity: true, refusedReason: true, replacesReturnId: true,
           product: { select: { name: true, imageUrl: true, images: true } },
           variant: { select: { name: true, imageUrl: true } },
         },
@@ -44,11 +46,13 @@ const RIDER_TRIP_INCLUDE = {
   },
 } satisfies Prisma.DeliveryTripInclude;
 
-export type CodOrder = { paymentMethod: string; totalAmount: unknown; walletAmountUsed: unknown; loyaltyPointsUsed: number | null; codCollectedVia: string | null };
+export type CodOrder = { paymentMethod: string; totalAmount: unknown; walletAmountUsed: unknown; refusedAmount: unknown; loyaltyPointsUsed: number | null; codCollectedVia: string | null };
 
-/** What a COD order cost the customer at the door */
+/** What a COD order cost the customer at the door, after anything they handed back */
 export const codDue = (o: CodOrder) =>
-  o.paymentMethod === "COD" ? Math.max(0, Number(o.totalAmount) - Number(o.walletAmountUsed ?? 0) - Number(o.loyaltyPointsUsed ?? 0)) : 0;
+  o.paymentMethod === "COD"
+    ? Math.max(0, Number(o.totalAmount) - Number(o.walletAmountUsed ?? 0) - Number(o.loyaltyPointsUsed ?? 0) - Number(o.refusedAmount ?? 0))
+    : 0;
 
 interface TripForSummary {
   status: string;
@@ -68,7 +72,7 @@ export function summarise(trips: TripForSummary[]) {
     // Cash is what the rider hands over; UPI went straight to the store
     cashCollected: delivered.filter((o) => o.codCollectedVia !== "UPI").reduce((sum, o) => sum + codDue(o), 0),
     upiCollected: delivered.filter((o) => o.codCollectedVia === "UPI").reduce((sum, o) => sum + codDue(o), 0),
-    cashToCollect: orders.filter((o) => o.status !== "DELIVERED").reduce((sum, o) => sum + amountDue({ ...o, totalAmount: Number(o.totalAmount), walletAmountUsed: Number(o.walletAmountUsed ?? 0) }), 0),
+    cashToCollect: orders.filter((o) => o.status !== "DELIVERED").reduce((sum, o) => sum + amountDue({ ...o, totalAmount: Number(o.totalAmount), walletAmountUsed: Number(o.walletAmountUsed ?? 0), refusedAmount: Number(o.refusedAmount) }), 0),
   };
 }
 
@@ -79,16 +83,28 @@ export async function riderDay(prisma: PrismaClient, riderId: string, dateKey?: 
     include: RIDER_TRIP_INCLUDE,
     orderBy: [{ startedAt: "asc" }, { createdAt: "asc" }],
   });
+  const pickups = await pendingPickups(prisma, trips.flatMap((t) => t.orders.map((o) => ({ userId: o.userId, storeId: t.storeId }))));
   const withDue = trips.map((t) => ({
     ...t,
-    orders: t.orders.map(({ statusLogs, ...o }) => ({
-      ...o,
-      deliveredAt: statusLogs[0]?.createdAt ?? null,
-      amountDue: amountDue({ ...o, totalAmount: Number(o.totalAmount), walletAmountUsed: Number(o.walletAmountUsed ?? 0) }),
-      amountCollected: o.status === "DELIVERED" ? codDue(o) : 0,
-    })),
+    orders: t.orders.map(({ statusLogs, ...o }) => {
+      const deliveredAt = statusLogs[0]?.createdAt ?? null;
+      const waiting = pickups.get(`${o.userId}:${t.storeId}`) ?? [];
+      return {
+        ...o,
+        // Once delivered, only returns that were already waiting then count as missed
+        pickups: deliveredAt ? waiting.filter((p) => p.resolvedAt && p.resolvedAt <= deliveredAt) : waiting,
+        deliveredAt,
+        amountDue: amountDue({ ...o, totalAmount: Number(o.totalAmount), walletAmountUsed: Number(o.walletAmountUsed ?? 0), refusedAmount: Number(o.refusedAmount) }),
+        amountCollected: o.status === "DELIVERED" ? codDue(o) : 0,
+      };
+    }),
   }));
-  return { date: istDay(dateKey).key, summary: summarise(trips), trips: withDue };
+  // Everything coming back to the store in the rider's bag: collected returns and units handed back at the door
+  const orders = trips.flatMap((t) => t.orders);
+  const collected = orders.flatMap((o) => o.collectedReturns.flatMap((r) => r.items)).reduce((n, i) => n + i.quantity, 0);
+  const handedBack = orders.flatMap((o) => o.items).reduce((n, i) => n + i.refusedQuantity, 0);
+  const returnUnits = collected + handedBack;
+  return { date: istDay(dateKey).key, summary: { ...summarise(trips), returnsToHandOver: returnUnits }, trips: withDue };
 }
 
 /** Per-rider summary for a store's day, for the manager to check cash handed over */
@@ -97,7 +113,7 @@ export async function storeRiderSummary(prisma: PrismaClient, storeId: string, d
     where: { storeId, riderId: { not: null }, ...tripsOnDay(dateKey) },
     select: {
       riderId: true, status: true,
-      orders: { select: { status: true, paymentMethod: true, paymentStatus: true, totalAmount: true, walletAmountUsed: true, loyaltyPointsUsed: true, codCollectedVia: true } },
+      orders: { select: { status: true, paymentMethod: true, paymentStatus: true, totalAmount: true, walletAmountUsed: true, refusedAmount: true, loyaltyPointsUsed: true, codCollectedVia: true } },
       failures: { select: { id: true } },
     },
   });

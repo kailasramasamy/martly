@@ -113,6 +113,7 @@ async function seedReturns(organizationId: string, storeId: string, orders: Seed
       approvedAmount: plan.approved ? requested : null,
       adminNote: plan.adminNote,
       resolvedAt: resolved ? new Date() : null,
+      ...(plan.approved ? { remedy: "REFUND" as const, method: "KEEP" as const, refundedAt: new Date() } : {}),
     };
     const request = await prisma.returnRequest.upsert({
       where: { orderId: order.id },

@@ -2,9 +2,10 @@ import type { ReactNode } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../../constants/theme";
-import { manage, tabular } from "../ui/tokens";
+import { formatINR, manage, tabular } from "../ui/tokens";
 import { AmountTag } from "./AmountTag";
-import { deliveredText, failureText, minutesText } from "./format";
+import { PickupThumbs } from "./PickupItems";
+import { deliveredText, failureText, minutesText, orderRef } from "./format";
 import type { RiderFailure, RiderStop } from "./types";
 
 function Badge({ children, tone }: { children: ReactNode; tone: "todo" | "done" | "failed" }) {
@@ -12,16 +13,15 @@ function Badge({ children, tone }: { children: ReactNode; tone: "todo" | "done" 
 }
 
 /** A stop still to do: number, who and where, ETA, and what to collect */
-export function PendingStopLine({ stop, number, current, etaSeconds, onPress }: { stop: RiderStop; number: number; current?: boolean; etaSeconds: number | null; onPress: () => void }) {
+export function PendingStopLine({ stop, number, etaSeconds, onPress }: { stop: RiderStop; number: number; etaSeconds: number | null; onPress: () => void }) {
   return (
-    <TouchableOpacity style={[styles.row, current && styles.current]} onPress={onPress} activeOpacity={0.7} accessibilityRole="button" accessibilityLabel={`Stop ${number}, ${stop.user.name}`}>
+    <TouchableOpacity style={styles.row} onPress={onPress} activeOpacity={0.7} accessibilityRole="button" accessibilityLabel={`Stop ${number}, ${stop.user.name}`}>
       <Badge tone="todo"><Text style={[styles.number, tabular]}>{number}</Text></Badge>
       <View style={styles.body}>
         <Text style={styles.name} numberOfLines={1}>{stop.user.name}</Text>
-        <Text style={styles.sub} numberOfLines={1}>{stop.deliveryAddress ?? "No address"}</Text>
+        <Text style={styles.sub} numberOfLines={1}>{orderRef(stop.id)} · {stop.deliveryAddress ?? "No address"}</Text>
       </View>
       <View style={styles.right}>
-        {current && <Text style={styles.now}>NOW</Text>}
         {etaSeconds !== null && <Text style={[styles.eta, tabular]}>{minutesText(etaSeconds)}</Text>}
         {isPacked(stop) ? <AmountTag due={stop.amountDue} /> : <PackingTag />}
       </View>
@@ -41,14 +41,33 @@ function PackingTag() {
   );
 }
 
+/** What happened to returns at a delivered stop: collected (with photos) or still waiting */
+function ReturnsOutcome({ stop }: { stop: RiderStop }) {
+  const collected = stop.collectedReturns.flatMap((r) => r.items);
+  const units = collected.reduce((n, i) => n + i.quantity, 0);
+  return (
+    <>
+      {units > 0 && (
+        <View style={styles.returns}>
+          <Text style={styles.collected}>↩ {units} returned item{units === 1 ? "" : "s"} collected</Text>
+          <PickupThumbs lines={collected} size={36} />
+        </View>
+      )}
+      {stop.pickups.length > 0 && <Text style={styles.missed}>↩ Return not collected</Text>}
+    </>
+  );
+}
+
 export function DeliveredStopLine({ stop, onPress }: { stop: RiderStop; onPress: () => void }) {
   return (
     <TouchableOpacity style={styles.row} onPress={onPress} activeOpacity={0.7} accessibilityRole="button" accessibilityLabel={`${stop.user.name}, delivered`}>
       <Badge tone="done"><Ionicons name="checkmark" size={16} color="#15803d" /></Badge>
       <View style={styles.body}>
         <Text style={styles.name} numberOfLines={1}>{stop.user.name}</Text>
-        <Text style={styles.sub} numberOfLines={1}>{stop.deliveryAddress ?? "No address"}</Text>
+        <Text style={styles.sub} numberOfLines={1}>{orderRef(stop.id)} · {stop.deliveryAddress ?? "No address"}</Text>
         <Text style={styles.done} numberOfLines={1}>{deliveredText(stop)}</Text>
+        {Number(stop.refusedAmount ?? 0) > 0 && <Text style={styles.handedBack}>{formatINR(Number(stop.refusedAmount))} handed back</Text>}
+        <ReturnsOutcome stop={stop} />
       </View>
     </TouchableOpacity>
   );
@@ -60,6 +79,7 @@ export function FailedStopLine({ failure }: { failure: RiderFailure }) {
       <Badge tone="failed"><Ionicons name="close" size={16} color={colors.error} /></Badge>
       <View style={styles.body}>
         <Text style={styles.name} numberOfLines={1}>{failure.order.user.name}</Text>
+        <Text style={styles.sub} numberOfLines={1}>{orderRef(failure.orderId)}</Text>
         <Text style={styles.failed} numberOfLines={2}>Not delivered: {failureText(failure)}</Text>
       </View>
     </View>
@@ -76,8 +96,10 @@ const styles = StyleSheet.create({
   name: { fontFamily: fonts.bold, fontSize: 15, color: colors.text },
   sub: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, marginTop: 2 },
   done: { fontFamily: fonts.bold, fontSize: 13, color: "#15803d", marginTop: 2 },
-  current: { backgroundColor: "#f0fdfa" },
-  now: { fontFamily: fonts.extrabold, fontSize: 11.5, letterSpacing: 0.8, color: colors.primary },
+  returns: { gap: 6, marginTop: 4 },
+  collected: { fontFamily: fonts.semibold, fontSize: 13, color: colors.primary },
+  missed: { fontFamily: fonts.semibold, fontSize: 13, color: manage.attentionText, marginTop: 2 },
+  handedBack: { fontFamily: fonts.semibold, fontSize: 13, color: manage.attentionText, marginTop: 2 },
   failed: { fontFamily: fonts.semibold, fontSize: 13, color: colors.error, marginTop: 2 },
   right: { alignItems: "flex-end", gap: 4 },
   eta: { fontFamily: fonts.bold, fontSize: 13, color: colors.primary },

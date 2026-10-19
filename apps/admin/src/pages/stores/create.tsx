@@ -94,6 +94,9 @@ export const StoreCreate = () => {
                 <Form.Item label="Minimum Order Amount" name="minOrderAmount" tooltip="Customers must meet this minimum to place an order. Leave empty for no minimum.">
                   <InputNumber style={{ width: "100%" }} min={0} addonBefore={"\u20B9"} placeholder="No minimum" />
                 </Form.Item>
+                <Form.Item label={"Return keep-it limit (\u20B9)"} name="returnKeepThreshold" help="Returns worth up to this amount default to refund without collecting the item.">
+                  <InputNumber style={{ width: "100%" }} min={0} addonBefore={"\u20B9"} placeholder="No limit" />
+                </Form.Item>
               </Card>
 
               <Card title={sectionTitle(<CalendarOutlined />, "Subscriptions")} size="small" style={{ marginTop: 16 }}>

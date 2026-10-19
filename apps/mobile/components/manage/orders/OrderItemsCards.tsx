@@ -17,12 +17,13 @@ export function ItemsCard({ order }: { order: OrderDetail }) {
 }
 
 function amountDue(order: OrderDetail, deductions: number): number {
-  return order.paymentStatus === "PAID" ? 0 : Math.max(0, Number(order.totalAmount) - deductions);
+  return order.paymentStatus === "PAID" ? 0 : Math.max(0, Number(order.totalAmount) - deductions - Number(order.refusedAmount ?? 0));
 }
 
 export function PaymentBreakdown({ order }: { order: OrderDetail }) {
   const subtotal = order.items.reduce((sum, i) => sum + Number(i.totalPrice), 0);
   const coupon = Number(order.couponDiscount ?? 0);
+  const refused = Number(order.refusedAmount ?? 0);
   const fee = Number(order.deliveryFee ?? 0);
   const wallet = Number(order.walletAmountUsed ?? 0);
   const loyalty = order.loyaltyPointsUsed ?? 0;
@@ -40,6 +41,7 @@ export function PaymentBreakdown({ order }: { order: OrderDetail }) {
       <KeyValue label="Order total" value={formatINR(Number(order.totalAmount))} emphasis />
       {wallet > 0 ? <KeyValue label="Wallet" value={`−${formatINR(wallet)}`} valueColor="#15803d" /> : null}
       {loyalty > 0 ? <KeyValue label={`Loyalty (${loyalty} pts)`} value={`−${formatINR(loyalty)}`} valueColor="#b45309" /> : null}
+      {refused > 0 ? <KeyValue label="Handed back at door" value={`−${formatINR(refused)}`} valueColor="#b45309" /> : null}
       <KeyValue label="Amount due" value={formatINR(amountDue(order, wallet + loyalty))} emphasis />
       {order.razorpayPaymentId ? <KeyValue label="Razorpay ID" value={order.razorpayPaymentId} /> : null}
       {order.loyaltyPointsEarned ? <KeyValue label="Loyalty earned" value={`+${order.loyaltyPointsEarned} pts`} /> : null}

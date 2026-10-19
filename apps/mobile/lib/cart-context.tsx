@@ -19,6 +19,8 @@ interface CartState {
   storeName: string | null;
   items: CartItem[];
   addItem: (storeId: string, storeName: string, item: Omit<CartItem, "quantity">) => void;
+  /** Adds several lines at once, e.g. a reorder; a cart from another store is replaced */
+  addItems: (storeId: string, storeName: string, lines: CartItem[]) => void;
   removeItem: (storeProductId: string) => void;
   updateQuantity: (storeProductId: string, quantity: number) => void;
   clearCart: () => void;
@@ -75,6 +77,24 @@ export function CartProvider({ children }: { children: ReactNode }) {
     [storeId],
   );
 
+  const addItems = useCallback(
+    (newStoreId: string, newStoreName: string, lines: CartItem[]) => {
+      const replace = storeId !== newStoreId;
+      setStoreId(newStoreId);
+      setStoreName(newStoreName);
+      setItems((prev) => {
+        const next = replace ? [] : [...prev];
+        for (const line of lines) {
+          const at = next.findIndex((i) => i.storeProductId === line.storeProductId);
+          if (at >= 0) next[at] = { ...next[at], quantity: next[at].quantity + line.quantity };
+          else next.push(line);
+        }
+        return next;
+      });
+    },
+    [storeId],
+  );
+
   const removeItem = useCallback((storeProductId: string) => {
     setItems((prev) => {
       const next = prev.filter((i) => i.storeProductId !== storeProductId);
@@ -121,7 +141,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   return (
     <CartContext.Provider
-      value={{ storeId, storeName, items, addItem, removeItem, updateQuantity, clearCart, totalAmount, itemCount, productQuantityMap, pendingCoupon, setPendingCoupon }}
+      value={{ storeId, storeName, items, addItem, addItems, removeItem, updateQuantity, clearCart, totalAmount, itemCount, productQuantityMap, pendingCoupon, setPendingCoupon }}
     >
       {children}
     </CartContext.Provider>

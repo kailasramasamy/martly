@@ -7,6 +7,7 @@ import { ListRow } from "../ui/ListRow";
 import { formatINR } from "../ui/tokens";
 import { CustomerCard, FulfilmentCard, StatusHeader } from "./OrderSummaryCards";
 import { ItemsCard, PaymentBreakdown, TimelineCard } from "./OrderItemsCards";
+import { PickupCallout } from "./PickupCallout";
 import { RETURN_STATUS } from "./return-status";
 import type { OrderDetail } from "./types";
 
@@ -25,6 +26,7 @@ export function OrderDetailBody({ order, canEdit, running, onMarkPaid, onChangeP
   return (
     <>
       <StatusHeader order={order} />
+      <PickupCallout pickups={order.pickups} />
       <CustomerCard order={order} />
       <ItemsCard order={order} />
       <PaymentBreakdown order={order} />

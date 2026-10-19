@@ -57,6 +57,7 @@ function DeliveryCard({ draft, set }: CardProps) {
       <TextField label="Delivery radius" suffix="km" keyboardType="decimal-pad" value={draft.deliveryRadius} onChangeText={(deliveryRadius) => set({ deliveryRadius })} />
       <TextField label="Base delivery fee" prefix={"₹"} keyboardType="decimal-pad" placeholder="No base fee" hint="Used when no distance tier or zone matches" value={draft.baseDeliveryFee} onChangeText={(baseDeliveryFee) => set({ baseDeliveryFee })} />
       <TextField label="Free delivery above" prefix={"₹"} keyboardType="decimal-pad" placeholder="No threshold" value={draft.freeDeliveryThreshold} onChangeText={(freeDeliveryThreshold) => set({ freeDeliveryThreshold })} />
+      <TextField label="Return keep-it limit" prefix={"₹"} keyboardType="decimal-pad" placeholder="No limit" hint="Returns worth up to this amount are refunded without collecting the item." value={draft.returnKeepThreshold} onChangeText={(returnKeepThreshold) => set({ returnKeepThreshold })} />
       <TextField label="Minimum order amount" prefix={"₹"} keyboardType="decimal-pad" placeholder="No minimum" value={draft.minOrderAmount} onChangeText={(minOrderAmount) => set({ minOrderAmount })} />
     </SectionCard>
   );

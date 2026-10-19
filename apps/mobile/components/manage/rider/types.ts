@@ -1,5 +1,5 @@
 import type { DeliveryFailureReason } from "@martly/shared/constants";
-import type { OrderDetailItem } from "../orders/types";
+import type { OrderDetailItem, OrderPickup } from "../orders/types";
 
 export interface DaySummary {
   trips: number;
@@ -10,6 +10,8 @@ export interface DaySummary {
   /** COD paid by UPI straight to the store: not part of the rider's cash */
   upiCollected: number;
   cashToCollect: number;
+  /** Units coming back in the rider's bag today (collected returns and items handed back at the door) */
+  returnsToHandOver: number;
 }
 
 export interface RiderStop {
@@ -34,7 +36,12 @@ export interface RiderStop {
   slotEndTime: string | null;
   estimatedDeliveryAt: string | null;
   user: { name: string; phone: string | null };
+  couponDiscount: string | null;
+  refusedAmount: string | null;
   items: OrderDetailItem[];
+  /** Open stop: returns to collect. Delivered stop: returns that were waiting but weren't collected */
+  pickups: OrderPickup[];
+  collectedReturns: OrderPickup[];
   amountDue: number;
 }
 
@@ -78,5 +85,4 @@ export interface TripRoute {
 /** The one sheet or dialog open at a time (iOS can't stack them) */
 export type RiderOverlay =
   | { kind: "stop"; tripId: string; stop: RiderStop }
-  | { kind: "deliver"; tripId: string; stop: RiderStop }
   | { kind: "fail"; tripId: string; stop: RiderStop };

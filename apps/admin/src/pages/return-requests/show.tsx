@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import { Show } from "@refinedev/antd";
 import { useShow, useInvalidate } from "@refinedev/core";
 import {
@@ -11,9 +12,9 @@ import {
   Button,
   Space,
   Modal,
-  InputNumber,
   Input,
   Image,
+  Popconfirm,
   message,
 } from "antd";
 import {
@@ -27,14 +28,25 @@ import {
 } from "@ant-design/icons";
 import { axiosInstance } from "../../providers/data-provider";
 import { RETURN_REQUEST_STATUS_CONFIG } from "../../constants/tag-colors";
+import {
+  ReturnMethod,
+  ReturnMethodLabels,
+  ReturnRemedy,
+  ReturnRemedyLabels,
+} from "@martly/shared/constants";
+import { ApproveModal, type ApproveBody } from "./ApproveModal";
 import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../../components/ReadableSection";
 
 const { TextArea } = Input;
 
+const shortId = (id: string) => id.slice(0, 8).toUpperCase();
+const fmtDate = (v: string) => new Date(v).toLocaleString();
+
 interface ReturnRequestItem {
   id: string;
   quantity: number;
+  restock: boolean;
   orderItem: {
     id: string;
     quantity: number;
@@ -52,46 +64,48 @@ export const ReturnRequestShow = () => {
 
   const [approveOpen, setApproveOpen] = useState(false);
   const [rejectOpen, setRejectOpen] = useState(false);
-  const [approvedAmount, setApprovedAmount] = useState<number>(0);
   const [adminNote, setAdminNote] = useState("");
   const [resolving, setResolving] = useState(false);
 
   if (!record) return null;
 
-  const statusCfg = RETURN_REQUEST_STATUS_CONFIG[record.status] ?? { color: "default", label: record.status };
+  const refresh = () => invalidate({ resource: "return-requests", invalidates: ["detail", "list"], id: record.id });
 
-  const openApproveModal = () => {
-    setApprovedAmount(Number(record.requestedAmount));
-    setAdminNote("");
-    setApproveOpen(true);
-  };
+  const statusCfg = RETURN_REQUEST_STATUS_CONFIG[record.status] ?? { color: "default", label: record.status };
 
   const openRejectModal = () => {
     setAdminNote("");
     setRejectOpen(true);
   };
 
-  const handleResolve = async (status: "APPROVED" | "REJECTED") => {
+  const handleResolve = async (status: "APPROVED" | "REJECTED", approval?: ApproveBody) => {
     setResolving(true);
     try {
-      const body: any = { status };
-      if (status === "APPROVED") {
-        body.approvedAmount = approvedAmount;
-        if (adminNote.trim()) body.adminNote = adminNote.trim();
-      } else {
-        body.adminNote = adminNote.trim();
-      }
+      const body = status === "APPROVED" ? { status, ...approval } : { status, adminNote: adminNote.trim() };
       await axiosInstance.patch(`/return-requests/${record.id}/resolve`, body);
       message.success(status === "APPROVED" ? "Return request approved" : "Return request rejected");
       setApproveOpen(false);
       setRejectOpen(false);
-      invalidate({ resource: "return-requests", invalidates: ["detail", "list"], id: record.id });
+      refresh();
     } catch (err: any) {
       message.error(err?.response?.data?.message ?? "Failed to resolve return request");
     } finally {
       setResolving(false);
     }
   };
+
+  const handleReceive = async () => {
+    try {
+      await axiosInstance.patch(`/return-requests/${record.id}/receive`);
+      message.success("Marked as received");
+      refresh();
+    } catch (err: any) {
+      message.error(err?.response?.data?.message ?? "Failed to mark as received");
+    }
+  };
+
+  const replacement = (record.replacementItems ?? []).find((r: any) => r.order?.status !== "CANCELLED");
+  const canReceive = record.status === "IN_PROGRESS" && record.method !== ReturnMethod.KEEP && !record.receivedAt;
 
   return (
     <Show>
@@ -111,7 +125,7 @@ export const ReturnRequestShow = () => {
                     <Button
                       type="primary"
                       icon={<CheckCircleOutlined />}
-                      onClick={openApproveModal}
+                      onClick={() => setApproveOpen(true)}
                       style={{ backgroundColor: "#16a34a", borderColor: "#16a34a" }}
                     >
                       Approve
@@ -124,6 +138,19 @@ export const ReturnRequestShow = () => {
                       Reject
                     </Button>
                   </Space>
+                </div>
+              </Card>
+            </Col>
+          )}
+
+          {canReceive && (
+            <Col xs={24}>
+              <Card size="small">
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ color: "#64748b" }}>Waiting for the item to come back.</span>
+                  <Popconfirm title="Mark this item as received?" onConfirm={handleReceive}>
+                    <Button type="primary" icon={<CheckCircleOutlined />}>Mark received</Button>
+                  </Popconfirm>
                 </div>
               </Card>
             </Col>
@@ -152,6 +179,31 @@ export const ReturnRequestShow = () => {
                 )}
                 {record.adminNote && (
                   <Descriptions.Item label="Admin Note">{record.adminNote}</Descriptions.Item>
+                )}
+                {record.remedy && (
+                  <Descriptions.Item label="Outcome">{ReturnRemedyLabels[record.remedy as ReturnRemedy]}</Descriptions.Item>
+                )}
+                {record.method && (
+                  <Descriptions.Item label="Return method">{ReturnMethodLabels[record.method as ReturnMethod]}</Descriptions.Item>
+                )}
+                {record.receivedAt && (
+                  <Descriptions.Item label="Received">
+                    {fmtDate(record.receivedAt)}
+                    {" \u00B7 "}
+                    {record.collectedOnOrderId ? `Rider collected it with order #${shortId(record.collectedOnOrderId)}` : "Dropped at store"}
+                  </Descriptions.Item>
+                )}
+                {record.receiver && (
+                  <Descriptions.Item label={record.collectedOnOrderId ? "Collected by" : "Received by"}>
+                    {record.receiver.name || "Staff"}
+                    {record.receiver.phone ? ` \u00B7 ${record.receiver.phone}` : ""}
+                  </Descriptions.Item>
+                )}
+                {record.refundedAt && <Descriptions.Item label="Refunded">{fmtDate(record.refundedAt)}</Descriptions.Item>}
+                {record.remedy === ReturnRemedy.REPLACE && replacement && (
+                  <Descriptions.Item label="Replacement">
+                    Replacement sent on order <Link to={`/orders/show/${replacement.orderId}`}>#{shortId(replacement.orderId)}</Link>
+                  </Descriptions.Item>
                 )}
                 <Descriptions.Item label="Created">
                   {record.createdAt ? new Date(record.createdAt).toLocaleString() : "\u2014"}
@@ -252,49 +304,26 @@ export const ReturnRequestShow = () => {
                     width: 120,
                     render: (_, item) => `\u20B9${(item.quantity * Number(item.orderItem?.unitPrice ?? 0)).toFixed(0)}`,
                   },
+                  {
+                    title: "Restock",
+                    key: "restock",
+                    width: 90,
+                    render: (_, item) => (item.restock ? "Yes" : "\u2014"),
+                  },
                 ]}
               />
             </Card>
           </Col>
         </Row>
 
-        <Modal
-          title="Approve Return Request"
-          open={approveOpen}
-          onCancel={() => setApproveOpen(false)}
-          onOk={() => handleResolve("APPROVED")}
-          confirmLoading={resolving}
-          okText="Approve & Refund"
-          okButtonProps={{ style: { backgroundColor: "#16a34a", borderColor: "#16a34a" } }}
-        >
-          <div style={{ marginBottom: 16 }}>
-            <label style={{ display: "block", marginBottom: 4, fontWeight: 500 }}>
-              Refund Amount ({"\u20B9"})
-            </label>
-            <InputNumber
-              value={approvedAmount}
-              onChange={(v) => setApprovedAmount(v ?? 0)}
-              min={0}
-              max={Number(record.requestedAmount)}
-              style={{ width: "100%" }}
-              prefix={"\u20B9"}
-            />
-            <div style={{ fontSize: 12, color: "#64748b", marginTop: 4 }}>
-              Requested: {"\u20B9"}{Number(record.requestedAmount).toLocaleString("en-IN", { maximumFractionDigits: 0 })}. Adjust for partial refunds.
-            </div>
-          </div>
-          <div>
-            <label style={{ display: "block", marginBottom: 4, fontWeight: 500 }}>
-              Admin Note (optional)
-            </label>
-            <TextArea
-              rows={3}
-              placeholder="Reason for approval or partial refund..."
-              value={adminNote}
-              onChange={(e) => setAdminNote(e.target.value)}
-            />
-          </div>
-        </Modal>
+        {approveOpen && (
+          <ApproveModal
+            record={record}
+            loading={resolving}
+            onCancel={() => setApproveOpen(false)}
+            onSubmit={(body) => handleResolve("APPROVED", body)}
+          />
+        )}
 
         <Modal
           title="Reject Return Request"

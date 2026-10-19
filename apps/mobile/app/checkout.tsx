@@ -21,6 +21,7 @@ import { useCart } from "../lib/cart-context";
 import { useStore } from "../lib/store-context";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { api } from "../lib/api";
+import { ReplacementRows } from "../components/order/ReplacementRows";
 import { AvailableOffers } from "../components/checkout/AvailableOffers";
 import { SlotGrid, isBookable, type AvailableSlot } from "../components/checkout/SlotGrid";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
@@ -583,9 +584,9 @@ function CheckoutScreen() {
                 </Text>
               </View>
             ))}
+            <ReplacementRows />
           </View>
         </View>
-
 
         {/* Fulfillment Type Selector */}
         <View style={styles.section}>

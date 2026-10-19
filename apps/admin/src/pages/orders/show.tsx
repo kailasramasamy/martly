@@ -20,10 +20,11 @@ import { CANCEL_ORDER, ReasonConfirmButton, UNDO_DELIVERY } from "../../componen
 import { ConfirmFinalStep } from "../../components/ConfirmFinalStep";
 import { RiderAssignModal } from "../../components/RiderAssignModal";
 import { NEXT_ACTION } from "../../constants/order-transitions";
+import { ItemFlags, RefusedSummaryRow, ReturnOutcome, type FlaggedItem } from "./item-flags";
 import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../../components/ReadableSection";
 
-interface OrderItem {
+interface OrderItem extends FlaggedItem {
   id: string;
   productId: string;
   product?: { name?: string };
@@ -294,6 +295,7 @@ export const OrderShow = () => {
                       <Tag color={RETURN_REQUEST_STATUS_CONFIG[record.returnRequest.status]?.color ?? "default"}>
                         {RETURN_REQUEST_STATUS_CONFIG[record.returnRequest.status]?.label ?? record.returnRequest.status}
                       </Tag>
+                      <ReturnOutcome request={record.returnRequest} />
                       <Button type="link" size="small" onClick={() => window.location.href = `/return-requests/show/${record.returnRequest.id}`}>
                         View Details
                       </Button>
@@ -343,7 +345,7 @@ export const OrderShow = () => {
                   {
                     title: "Product",
                     key: "product",
-                    render: (_, item) => item.product?.name ?? item.productId,
+                    render: (_, item) => <>{item.product?.name ?? item.productId}<ItemFlags item={item} /></>,
                   },
                   {
                     title: "Variant",
@@ -418,6 +420,7 @@ export const OrderShow = () => {
                           </Table.Summary.Cell>
                         </Table.Summary.Row>
                       )}
+                      <RefusedSummaryRow amount={Number(record.refusedAmount)} />
                       {record.loyaltyPointsUsed != null && record.loyaltyPointsUsed > 0 && (
                         <Table.Summary.Row>
                           <Table.Summary.Cell index={0} colSpan={3} />

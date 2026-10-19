@@ -1,0 +1,22 @@
+{
+  "name": "martly-promo-video",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render MartlyPromoEN out/martly-promo-en.mp4 && remotion render MartlyPromoTA out/martly-promo-ta.mp4",
+    "still": "remotion still MartlyPromoEN"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.536",
+    "@remotion/google-fonts": "4.0.536",
+    "@remotion/transitions": "4.0.536",
+    "lucide-react": "^1.59.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.536"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}

@@ -3,7 +3,8 @@ import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
-import { getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { attentionFor } from "../../services/attention.js";
 import { addDays, istDateKey, istDay } from "../../services/ist-day.js";
 
 interface KPIs {
@@ -36,6 +37,18 @@ interface DashboardData {
 }
 
 export async function dashboardRoutes(app: FastifyInstance) {
+  // Work waiting on the signed-in member, for the Today screen's "Needs your attention" card
+  app.get("/attention", { preHandler: [authenticate] }, async (request, reply) => {
+    const { storeId } = request.query as { storeId?: string };
+    if (storeId && !(await verifyStoreOrgAccess(request, app.prisma, storeId))) {
+      return reply.forbidden("Access denied to this store");
+    }
+    const orgStoreIds = await getOrgStoreIds(request, app.prisma);
+    const store = storeId ? { storeId } : orgStoreIds !== undefined ? { storeId: { in: orgStoreIds } } : {};
+    const items = await attentionFor(app.prisma, getOrgUser(request), store);
+    return { success: true, data: items } satisfies ApiResponse<typeof items>;
+  });
+
   app.get(
     "/stats",
     { preHandler: [authenticate, requirePermission(Permission.REPORTS_VIEW)] },

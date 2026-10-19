@@ -1,79 +1,87 @@
-import { View, Text, StyleSheet } from "react-native";
+import { useState } from "react";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { fonts } from "../../../constants/theme";
+import { colors, fonts } from "../../../constants/theme";
 import { SectionCard } from "../ui/SectionCard";
-import { Button } from "../ui/Button";
 import { NextStopCard } from "./NextStopCard";
-import { DeliveredStopLine, FailedStopLine, PendingStopLine, isPacked } from "./StopLine";
+import { DeliveredStopLine, FailedStopLine, PendingStopLine } from "./StopLine";
 import { TripHeader } from "./TripHeader";
 import { etaFor, isDelivered } from "./format";
 import type { RiderStop, RiderTrip, TripRoute } from "./types";
 
 export interface StopHandlers {
   onOpen: (stop: RiderStop) => void;
-  onDeliver: (stop: RiderStop) => void;
   onFail: (stop: RiderStop) => void;
 }
 
 interface RiderTripCardProps {
   trip: RiderTrip;
   route: TripRoute | null;
-  starting: boolean;
-  onStart: () => void;
   handlers: StopHandlers;
 }
 
-/** Start is held until the store has packed every order; the trip refreshes live when they do */
-function StartTrip({ unpacked, starting, onStart }: { unpacked: number; starting: boolean; onStart: () => void }) {
+const UP_NEXT = 2;
+
+function Toggle({ label, open, onPress }: { label: string; open: boolean; onPress: () => void }) {
   return (
-    <View style={styles.startWrap}>
-      {unpacked > 0 && (
-        <View style={styles.waiting}>
-          <Ionicons name="time-outline" size={18} color="#1d4ed8" />
-          <Text style={styles.waitingText}>Waiting for {unpacked} order{unpacked === 1 ? "" : "s"} to be packed</Text>
-        </View>
-      )}
-      <Button label="Start trip" icon="play" loading={starting} onPress={onStart} disabled={unpacked > 0} style={styles.start} />
-    </View>
+    <TouchableOpacity style={styles.toggle} onPress={onPress} accessibilityRole="button" accessibilityState={{ expanded: open }}>
+      <Text style={styles.toggleText}>{label}</Text>
+      <Ionicons name={open ? "chevron-up" : "chevron-down"} size={18} color={colors.textSecondary} />
+    </TouchableOpacity>
   );
 }
 
-/** An assigned or on-the-road trip: header, start button or next stop, then every stop in order */
-export function RiderTripCard({ trip, route, starting, onStart, handlers }: RiderTripCardProps) {
+/** The stops after this one (the next two, or all on request) and the ones already done, collapsed */
+function StopLists({ trip, route, next, handlers }: { trip: RiderTrip; route: TripRoute | null; next: RiderStop | undefined; handlers: StopHandlers }) {
+  const [allNext, setAllNext] = useState(false);
+  const [showDone, setShowDone] = useState(false);
+  const numbered = trip.orders.map((s, i) => ({ stop: s, number: i + 1 }));
+  const pending = numbered.filter(({ stop }) => !isDelivered(stop) && stop !== next);
+  const done = numbered.filter(({ stop }) => isDelivered(stop));
+  const shown = allNext ? pending : pending.slice(0, UP_NEXT);
+  const doneCount = done.length + trip.failures.length;
+  return (
+    <>
+      {pending.length > 0 && (
+        <SectionCard title={`${next ? "Up next" : "Stops"} · ${pending.length}`} flush>
+          {shown.map(({ stop, number }) => <PendingStopLine key={stop.id} stop={stop} number={number} etaSeconds={etaFor(route, stop.id)} onPress={() => handlers.onOpen(stop)} />)}
+          {pending.length > UP_NEXT && <Toggle label={allNext ? "Show fewer" : `Show all ${pending.length}`} open={allNext} onPress={() => setAllNext(!allNext)} />}
+        </SectionCard>
+      )}
+      {doneCount > 0 && (
+        <SectionCard flush>
+          <Toggle label={`Done · ${doneCount}`} open={showDone} onPress={() => setShowDone(!showDone)} />
+          {showDone && done.map(({ stop }) => <DeliveredStopLine key={stop.id} stop={stop} onPress={() => handlers.onOpen(stop)} />)}
+          {showDone && trip.failures.map((f) => <FailedStopLine key={f.orderId} failure={f} />)}
+        </SectionCard>
+      )}
+    </>
+  );
+}
+
+/** An assigned or on-the-road trip: header, the stop to ride to now, then what's next and what's done */
+export function RiderTripCard({ trip, route, handlers }: RiderTripCardProps) {
   const next = trip.status === "IN_PROGRESS" ? trip.orders.find((s) => s.status === "OUT_FOR_DELIVERY") : undefined;
-  const delivered = trip.orders.filter(isDelivered);
   return (
     <View style={styles.wrap}>
       <TripHeader trip={trip} route={route} />
-      {trip.status === "CREATED" && <StartTrip unpacked={trip.orders.filter((s) => !isPacked(s)).length} starting={starting} onStart={onStart} />}
       {next && (
         <NextStopCard
           stop={next}
-          position={delivered.length + 1}
+          position={trip.orders.filter(isDelivered).length + 1}
           total={trip.orders.length}
           etaSeconds={etaFor(route, next.id)}
           onOpen={() => handlers.onOpen(next)}
-          onDeliver={() => handlers.onDeliver(next)}
           onFail={() => handlers.onFail(next)}
         />
       )}
-      {/* Every stop in route order, delivered ones included, so the rider sees the whole run */}
-      <SectionCard title="All stops" flush>
-        {trip.orders.map((s, i) =>
-          isDelivered(s)
-            ? <DeliveredStopLine key={s.id} stop={s} onPress={() => handlers.onOpen(s)} />
-            : <PendingStopLine key={s.id} stop={s} number={i + 1} current={s === next} etaSeconds={etaFor(route, s.id)} onPress={() => handlers.onOpen(s)} />,
-        )}
-        {trip.failures.map((f) => <FailedStopLine key={f.orderId} failure={f} />)}
-      </SectionCard>
+      <StopLists trip={trip} route={route} next={next} handlers={handlers} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   wrap: { gap: 12 },
-  start: { height: 60 },
-  startWrap: { gap: 8 },
-  waiting: { flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: 14, paddingVertical: 10, borderRadius: 12, backgroundColor: "#eff6ff" },
-  waitingText: { flex: 1, fontFamily: fonts.semibold, fontSize: 14, color: "#1e40af" },
+  toggle: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", minHeight: 48, paddingHorizontal: 14 },
+  toggleText: { fontFamily: fonts.bold, fontSize: 14, color: colors.textSecondary },
 });

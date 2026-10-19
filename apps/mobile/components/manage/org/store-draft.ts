@@ -13,6 +13,7 @@ export interface StoreDraft {
   deliveryRadius: string;
   baseDeliveryFee: string;
   freeDeliveryThreshold: string;
+  returnKeepThreshold: string;
   minOrderAmount: string;
   subscriptionEnabled: boolean;
   subscriptionDeliveryMode: string;
@@ -26,7 +27,7 @@ const money = (v: string | null | undefined) => numberText(v === null || v === u
 export function emptyDraft(organizationId: string): StoreDraft {
   return {
     organizationId, name: "", slug: "", status: "PENDING", address: "", phone: "", latitude: "", longitude: "",
-    deliveryRadius: "7", baseDeliveryFee: "", freeDeliveryThreshold: "", minOrderAmount: "",
+    deliveryRadius: "7", baseDeliveryFee: "", freeDeliveryThreshold: "", returnKeepThreshold: "", minOrderAmount: "",
     subscriptionEnabled: false, subscriptionDeliveryMode: "DEDICATED", subscriptionWindowStart: null,
     subscriptionWindowEnd: null, subscriptionCutoffTime: "22:00",
   };
@@ -37,7 +38,7 @@ export function draftFromStore(s: StoreDetail): StoreDraft {
     organizationId: s.organizationId, name: s.name, slug: s.slug, status: s.status, address: s.address,
     phone: s.phone ?? "", latitude: numberText(s.latitude), longitude: numberText(s.longitude),
     deliveryRadius: numberText(s.deliveryRadius), baseDeliveryFee: money(s.baseDeliveryFee),
-    freeDeliveryThreshold: money(s.freeDeliveryThreshold), minOrderAmount: money(s.minOrderAmount),
+    freeDeliveryThreshold: money(s.freeDeliveryThreshold), returnKeepThreshold: money(s.returnKeepThreshold), minOrderAmount: money(s.minOrderAmount),
     subscriptionEnabled: s.subscriptionEnabled, subscriptionDeliveryMode: s.subscriptionDeliveryMode,
     subscriptionWindowStart: s.subscriptionWindowStart, subscriptionWindowEnd: s.subscriptionWindowEnd,
     subscriptionCutoffTime: s.subscriptionCutoffTime,
@@ -57,7 +58,7 @@ function checkRequired(d: StoreDraft, creating: boolean): string | null {
 }
 
 function checkNumbers(d: StoreDraft): string | null {
-  const [lat, lng, radius, ...amounts] = [d.latitude, d.longitude, d.deliveryRadius, d.baseDeliveryFee, d.freeDeliveryThreshold, d.minOrderAmount].map(parseNumber);
+  const [lat, lng, radius, ...amounts] = [d.latitude, d.longitude, d.deliveryRadius, d.baseDeliveryFee, d.freeDeliveryThreshold, d.returnKeepThreshold, d.minOrderAmount].map(parseNumber);
   if (lat !== null && !(lat >= -90 && lat <= 90)) return "Latitude must be between -90 and 90";
   if (lng !== null && !(lng >= -180 && lng <= 180)) return "Longitude must be between -180 and 180";
   if ((lat === null) !== (lng === null)) return "Set both latitude and longitude, or neither";
@@ -75,7 +76,8 @@ export function buildStorePayload(d: StoreDraft, creating: boolean, initial: Sto
   const core = {
     name: d.name.trim(), slug: d.slug, address: d.address.trim(), phone: d.phone.trim() || clear,
     latitude: num(d.latitude), longitude: num(d.longitude), deliveryRadius: parseNumber(d.deliveryRadius) ?? undefined,
-    baseDeliveryFee: num(d.baseDeliveryFee), freeDeliveryThreshold: num(d.freeDeliveryThreshold), minOrderAmount: num(d.minOrderAmount),
+    baseDeliveryFee: num(d.baseDeliveryFee), freeDeliveryThreshold: num(d.freeDeliveryThreshold),
+    returnKeepThreshold: num(d.returnKeepThreshold), minOrderAmount: num(d.minOrderAmount),
   };
   if (creating) return { payload: { ...core, organizationId: d.organizationId } };
   const changed = d.subscriptionEnabled !== initial?.subscriptionEnabled;

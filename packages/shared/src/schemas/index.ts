@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { BULK_STATUSES } from "../order-flow/index.js";
-import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, SUPPORTED_LANGUAGES, CatalogDraftStatus, Permission, StockCountStatus } from "../constants/index.js";
+import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, SUPPORTED_LANGUAGES, CatalogDraftStatus, Permission, StockCountStatus, ReturnRemedy, ReturnMethod, RefuseReason } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -497,6 +497,7 @@ export const updateStoreSchema = storeBrandingSchema.extend({
   minOrderAmount: z.coerce.number().min(0).nullish(),
   freeDeliveryThreshold: z.coerce.number().min(0).nullish(),
   baseDeliveryFee: z.coerce.number().min(0).nullish(),
+  returnKeepThreshold: z.coerce.number().min(0).nullish(),
   subscriptionEnabled: z.boolean().optional(),
   subscriptionDeliveryMode: z.nativeEnum(SubscriptionDeliveryMode).optional(),
   subscriptionWindowStart: z.string().regex(/^\d{2}:\d{2}$/).nullish(),
@@ -561,9 +562,18 @@ export const updateOrderStatusSchema = z.object({
   note: z.string().trim().max(500).optional(),
   /** Delivering a COD order: how the customer paid (cash by default) */
   collectedVia: z.nativeEnum(CodCollectionMode).optional(),
+  /** Delivering: items the customer handed back to the rider at the door */
+  refused: z.array(z.object({
+    orderItemId: z.string().uuid(),
+    quantity: z.number().int().positive(),
+    reason: z.nativeEnum(RefuseReason),
+  })).max(100).optional(),
 }).refine((d) => d.status !== OrderStatus.CANCELLED || !!d.note, {
   message: "A reason is required to cancel an order",
   path: ["note"],
+}).refine((d) => !d.refused?.length || d.status === OrderStatus.DELIVERED, {
+  message: "Items can only be handed back when delivering",
+  path: ["refused"],
 });
 export type UpdateOrderStatusInput = z.infer<typeof updateOrderStatusSchema>;
 
@@ -1083,10 +1093,31 @@ export type CreateReturnRequestInput = z.infer<typeof createReturnRequestSchema>
 
 export const resolveReturnRequestSchema = z.object({
   status: z.enum(["APPROVED", "REJECTED"]),
+  remedy: z.nativeEnum(ReturnRemedy).optional(),
+  method: z.nativeEnum(ReturnMethod).optional(),
   approvedAmount: z.number().min(0).optional(),
   adminNote: z.string().max(500).optional(),
+  /** Return items to put back in stock once received */
+  restockItemIds: z.array(z.string().uuid()).optional(),
+}).refine((d) => d.status !== "APPROVED" || (!!d.remedy && !!d.method), {
+  message: "Choose what the customer gets and how the item comes back",
+  path: ["remedy"],
+}).refine((d) => d.status !== "REJECTED" || !!d.adminNote, {
+  message: "A note is required when rejecting",
+  path: ["adminNote"],
 });
 export type ResolveReturnRequestInput = z.infer<typeof resolveReturnRequestSchema>;
+
+/** The customer switches how a returned item gets back to the store */
+export const chooseReturnMethodSchema = z.object({
+  method: z.enum([ReturnMethod.NEXT_ORDER, ReturnMethod.AT_STORE]),
+});
+export type ChooseReturnMethodInput = z.infer<typeof chooseReturnMethodSchema>;
+
+/** A rider collects a returned item while delivering this order */
+export const collectReturnSchema = z.object({
+  orderId: z.string().uuid(),
+});
 
 // ── Membership ──────────────────────────────────────
 export const createMembershipPlanSchema = z.object({

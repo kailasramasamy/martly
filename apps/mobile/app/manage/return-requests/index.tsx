@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useRouter } from "expo-router";
+import { useLocalSearchParams, useRouter } from "expo-router";
 import { useManageScope } from "../../../lib/manage-scope-context";
 import { usePagedList } from "../../../lib/manage/use-paged-list";
 import { ManageListScreen } from "../../../components/manage/ManageListScreen";
@@ -10,18 +10,27 @@ import { timeAgo } from "../../../components/manage/ui/dates";
 import { formatINR } from "../../../components/manage/ui/tokens";
 import { AccessGate } from "../../../components/manage/support/AccessGate";
 import { RETURN_STATUS, reasonLabel, type ReturnRequestRow } from "../../../components/manage/returns/types";
+import { orderRef } from "../../../components/manage/rider/format";
 
 const TABS = [
-  { value: "PENDING", label: "Pending" },
-  { value: "APPROVED", label: "Approved" },
-  { value: "REJECTED", label: "Rejected" },
   { value: "", label: "All" },
+  { value: "PENDING", label: "Pending" },
+  { value: "IN_PROGRESS", label: "In progress" },
+  { value: "APPROVED", label: "Completed" },
+  { value: "REJECTED", label: "Rejected" },
 ];
+
+/** How a returned item came back, once it has */
+function handover(r: ReturnRequestRow): string | null {
+  if (r.collectedOnOrderId) return `Collected with ${orderRef(r.collectedOnOrderId)}`;
+  return r.receivedAt ? "Dropped at store" : null;
+}
 
 function ReturnRequestList() {
   const router = useRouter();
   const { storeId } = useManageScope();
-  const [status, setStatus] = useState("PENDING");
+  const params = useLocalSearchParams<{ status?: string }>();
+  const [status, setStatus] = useState(params.status ?? "");
   const [search, setSearch] = useState("");
   const list = usePagedList<ReturnRequestRow>("/api/v1/return-requests", { status, storeId, search });
 
@@ -36,8 +45,8 @@ function ReturnRequestList() {
         <ListRow
           railColor={RETURN_STATUS[r.status].color}
           title={r.user.name}
-          subtitle={`${reasonLabel(r.reason)} · #${r.order.id.slice(0, 8)}`}
-          caption={`${r.store.name} · ${timeAgo(r.createdAt)}`}
+          subtitle={`${reasonLabel(r.reason)} · ${orderRef(r.order.id)}`}
+          caption={[r.store.name, handover(r), timeAgo(r.updatedAt)].filter(Boolean).join(" · ")}
           value={formatINR(r.requestedAmount)}
           trailing={<StatusPill {...RETURN_STATUS[r.status]} />}
           chevron

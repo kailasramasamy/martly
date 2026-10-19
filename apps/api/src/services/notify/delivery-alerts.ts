@@ -116,7 +116,7 @@ export async function notifyTripCompleted(fcm: Messaging | null, prisma: PrismaC
     where: { id: tripId },
     select: {
       storeId: true, status: true, rider: { select: { name: true } }, failures: { select: { id: true } },
-      orders: { select: { status: true, paymentMethod: true, paymentStatus: true, totalAmount: true, walletAmountUsed: true, loyaltyPointsUsed: true, codCollectedVia: true } },
+      orders: { select: { status: true, paymentMethod: true, paymentStatus: true, totalAmount: true, walletAmountUsed: true, refusedAmount: true, loyaltyPointsUsed: true, codCollectedVia: true } },
     },
   });
   if (!trip) return;

@@ -1,4 +1,5 @@
 import { DELIVERY_FAILURE_LABELS } from "@martly/shared/constants";
+import type { OrderPickup } from "../orders/types";
 import type { RiderFailure, RiderStop, RiderTrip, TripRoute } from "./types";
 import { formatINR } from "../ui/tokens";
 
@@ -58,3 +59,11 @@ export function deliveredText(stop: { deliveredAt: string | null; codCollectedVi
   const at = stop.deliveredAt ? `Delivered ${clockTime(stop.deliveredAt)}` : "Delivered";
   return stop.codCollectedVia ? `${at} · ${formatINR(stop.amountCollected)} by ${stop.codCollectedVia === "UPI" ? "UPI" : "cash"}` : at;
 }
+
+/** "1 × Fortune Oil 1 L, 2 × Parle-G 800 g" for the items a rider collects back */
+export function pickupText(pickups: OrderPickup[]): string {
+  return pickups.flatMap((p) => p.items.map((i) => `${i.quantity} × ${i.orderItem.product.name} ${i.orderItem.variant.name}`)).join(", ");
+}
+
+/** The short order number customers and staff quote, e.g. #310E2D69 */
+export const orderRef = (orderId: string) => `#${orderId.slice(0, 8).toUpperCase()}`;

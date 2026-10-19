@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face { font-family: "Manrope"; font-weight: 200 800; src: url("fonts/Manrope-Variable.ttf"); }
+@page { size: 3.5in 2in; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { --teal: #0f766e; --ink: #0f3d3a; --cream: #f6f1e7; --sand: #e9dfcd; --amber: #fbbf24; --amber-ink: #b7791f; }
+body { font-family: "Manrope", sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.card { width: 3.5in; height: 2in; position: relative; overflow: hidden; page-break-after: always; }
+.logo { display: block; width: 120px; height: 48.4px; }
+.tag { font-size: 5.7px; letter-spacing: 0.16em; text-transform: uppercase; margin: 4px 0 0 1.5px; font-weight: 500; }
+.ic { width: 15px; height: 15px; border-radius: 50%; flex: none; display: grid; place-items: center; }
+.ic svg { width: 8px; height: 8px; }
+
+.front { background: var(--cream); color: var(--ink); }
+.front .tab { position: absolute; left: 0; top: 34px; width: 12px; height: 88px; background: var(--teal); border-radius: 0 14px 14px 0; }
+.front .brand { position: absolute; left: 12px; width: calc(60% - 12px); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; }
+.front .brand > div { align-self: stretch; padding-left: calc((100% - 120px) / 2); }
+.front .tag { color: var(--amber-ink); }
+.pills { position: absolute; right: 0; top: 0; bottom: 0; width: 40%; display: flex; flex-direction: column; justify-content: center; gap: 4px; }
+.pill { display: flex; align-items: center; gap: 7px; background: var(--sand); border-radius: 14px 0 0 14px; margin-left: 10px; padding: 4px 8px 4px 6px; font-size: 5.875pt; line-height: 1.45; }
+.pill .ic { background: var(--teal); color: #fff; }
+.pill.name { background: var(--teal); color: #fff; margin-left: -12px; padding: 6px 6px 6px 8px; border-radius: 18px 0 0 18px; }
+.pill.name .ic { background: #fff; color: var(--teal); }
+.pill.name b { display: block; font-size: 9px; font-weight: 700; letter-spacing: 0.02em; white-space: nowrap; text-transform: uppercase; }
+.pill.name span span { font-size: 5.6px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--amber); }
+.pill.addr { font-size: 5.425pt; line-height: 1.35; }
+
+.back { background: var(--teal); color: #fff; }
+.back .pattern { position: absolute; inset: 0; transform: rotate(-12deg) scale(1.3); }
+.back .tab { position: absolute; left: 0; top: 126px; width: 10px; height: 40px; background: var(--amber); border-radius: 0 10px 10px 0; }
+.back .brand { position: absolute; left: 30px; top: 76px; }
+.back .tag { color: #fff; }
+.back .web { position: absolute; left: 30px; bottom: 24px; font-size: 6.6px; letter-spacing: 0.12em; color: var(--amber); font-weight: 500; }
+.panel { position: absolute; right: 0; top: 22px; width: 118px; height: 86px; background: var(--cream); border-radius: 22px 0 0 22px; }
+.qr { position: absolute; left: 20px; top: 13px; width: 60px; height: 60px; }
+.panel .line { position: absolute; left: 94px; top: 14px; width: 2px; height: 58px; background: var(--amber); }
+</style></head><body>
+
+<div class="card front">
+  <div class="tab"></div>
+  <div class="brand">{{LOGO_TEAL}}<div class="tag">Your local stores, delivered</div></div>
+  <div class="pills">
+    <div class="pill">{{IC_PHONE}}<span>{{PHONE}}</span></div>
+    <div class="pill name">{{IC_USER}}<span><b>{{NAME}}</b><span>{{ROLE}}</span></span></div>
+    <div class="pill">{{IC_GLOBE}}<span>{{EMAIL}}<br>www.quartex.in</span></div>
+    <div class="pill addr">{{IC_PIN}}<span>Quartex Technologies<br>26 Janthgondanahalli,<br>Muthsandra Post, Varthur,<br>Sarjapur Hobli,<br>Bangalore 560087</span></div>
+  </div>
+</div>
+
+<div class="card back">
+  <div class="pattern">{{PATTERN}}</div>
+  <div class="tab"></div>
+  <div class="brand">{{LOGO_WHITE}}<div class="tag">Your local stores, delivered</div></div>
+  <div class="web">www.quartex.in</div>
+  <div class="panel">{{QR}}<div class="line"></div></div>
+</div>
+</body></html>

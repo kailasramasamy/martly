@@ -7,6 +7,7 @@ import { broadcastOrderUpdate } from "./order-broadcast.js";
 import { sendLoyaltyNotification, sendOrderStatusNotification } from "./notification.js";
 import { formatINR, formatOrderRef, plural, type CancelledBy } from "./notify/copy.js";
 import { notifyStaff } from "./notify/staff.js";
+import { reopenReplacements } from "./returns/replacement.js";
 
 type Tx = Prisma.TransactionClient;
 
@@ -115,6 +116,7 @@ export async function cancelOrder(app: FastifyInstance, orderId: string, ctx: { 
 
   const { order, refunds } = await app.prisma.$transaction(async (tx) => {
     const refunds = await applyCancelRefunds(tx, existing, { reverseEarned: false });
+    await reopenReplacements(tx, orderId);
     const order = await tx.order.update({
       where: { id: orderId },
       data: { status: "CANCELLED", ...(refunds.paymentRefunded ? { paymentStatus: "REFUNDED" } : {}) },

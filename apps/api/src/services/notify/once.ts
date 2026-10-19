@@ -9,6 +9,14 @@ export async function alertOnce(prisma: PrismaClient, key: string): Promise<bool
   return count === 1;
 }
 
+/** Claims many one-time alert keys in a single statement and returns the ones this caller won */
+export async function claimOnce(prisma: PrismaClient, keys: string[]): Promise<Set<string>> {
+  if (keys.length === 0) return new Set();
+  const rows = await prisma.$queryRaw<{ key: string }[]>`
+    INSERT INTO alert_once (key) SELECT unnest(${keys}::text[]) ON CONFLICT DO NOTHING RETURNING key`;
+  return new Set(rows.map((r) => r.key));
+}
+
 const PROMO_WINDOW_MS = 24 * 60 * 60 * 1000;
 
 /** Customers get at most one automatic promotional push a day; manual campaigns bypass this */

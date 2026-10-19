@@ -73,6 +73,8 @@ import deliveryPlanningSchedulerPlugin from "./plugins/delivery-planning-schedul
 import deliveryAlertsSchedulerPlugin from "./plugins/delivery-alerts-scheduler.js";
 import membershipSchedulerPlugin from "./plugins/membership-scheduler.js";
 import orderSlaSchedulerPlugin from "./plugins/order-sla-scheduler.js";
+import returnsSchedulerPlugin from "./plugins/returns-scheduler.js";
+import attentionSchedulerPlugin from "./plugins/attention-scheduler.js";
 import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
 
 export async function buildApp() {
@@ -110,6 +112,8 @@ export async function buildApp() {
   await app.register(wishlistAlertSchedulerPlugin);
   await app.register(membershipSchedulerPlugin);
   await app.register(orderSlaSchedulerPlugin);
+  await app.register(returnsSchedulerPlugin);
+  await app.register(attentionSchedulerPlugin);
   await app.register(catalogAgentWorkerPlugin);
 
   // ── Error Handler ────────────────────────────────

@@ -1,3 +1,5 @@
+import type { RefuseReason } from "@martly/shared/constants";
+
 export interface OrderListItem {
   id: string;
   storeId: string;
@@ -18,6 +20,23 @@ export interface OrderDetailItem {
   totalPrice: string;
   product: { name: string; imageUrl: string | null; images: string[] };
   variant: { name: string; imageUrl: string | null };
+  refusedQuantity: number;
+  refusedReason: RefuseReason | null;
+  replacesReturnId: string | null;
+}
+
+/** A returned item the rider collects at the door of an open order */
+export interface OrderPickup {
+  id: string;
+  orderId: string;
+  reason: string;
+  items: {
+    quantity: number;
+    orderItem: {
+      product: { name: string; imageUrl?: string | null; images?: string[] };
+      variant: { name: string; imageUrl?: string | null };
+    };
+  }[];
 }
 
 export interface OrderDetail {
@@ -33,6 +52,7 @@ export interface OrderDetail {
   deliveryNotes: string | null;
   couponCode: string | null;
   couponDiscount: string | null;
+  refusedAmount: string | null;
   walletAmountUsed: string | null;
   loyaltyPointsUsed: number | null;
   loyaltyPointsEarned: number | null;
@@ -47,6 +67,7 @@ export interface OrderDetail {
   user: { id: string; name: string; email: string; phone: string | null };
   items: OrderDetailItem[];
   statusLogs: { id: string; status: string; note: string | null; createdAt: string }[];
-  returnRequest: { id: string; status: string; requestedAmount: string | null; approvedAmount: string | null } | null;
+  pickups: OrderPickup[];
+  returnRequest: { id: string; status: string; requestedAmount: string | null; approvedAmount: string | null; remedy: string | null; method: string | null } | null;
   deliveryTrip: { id: string; status: string; rider: { name: string; phone: string | null } } | null;
 }

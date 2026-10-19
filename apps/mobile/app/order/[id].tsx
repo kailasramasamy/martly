@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import {
   View,
   Text,
@@ -22,15 +22,14 @@ import { colors, spacing, fontSize } from "../../constants/theme";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { OrderDetailSkeleton } from "../../components/SkeletonLoader";
 import { withSignIn } from "../../components/SignInPrompt";
+import { OrderItemRow, type OrderLine } from "../../components/order/OrderItemRow";
+import { ReturnStateLine, returnTags } from "../../components/order/ReturnStateLine";
+import { PickupNotice } from "../../components/order/PickupNotice";
+import { ReturnStatusCard } from "../../components/order/ReturnStatusCard";
+import type { ReturnLinesGroup, ReturnRequestData } from "../../lib/types";
 
-interface OrderItemData {
-  id: string;
+interface OrderItemData extends OrderLine {
   productId: string;
-  quantity: number;
-  unitPrice: string;
-  totalPrice: string;
-  product: { name: string; imageUrl?: string | null };
-  variant?: { name: string; unitType: string; unitValue: string; imageUrl?: string | null } | null;
 }
 
 interface StatusLogData {
@@ -76,6 +75,8 @@ interface OrderData {
   walletAmountUsed?: string | null;
   loyaltyPointsUsed?: number | null;
   loyaltyPointsEarned?: number | null;
+  refusedAmount?: string | null;
+  pickups?: ReturnLinesGroup[];
   scheduledDate?: string | null;
   slotStartTime?: string | null;
   slotEndTime?: string | null;
@@ -124,18 +125,6 @@ const PAYMENT_STATUS_COLORS: Record<string, string> = {
   REFUNDED: "#3b82f6",
 };
 
-const RETURN_STATUS_COLORS: Record<string, string> = {
-  PENDING: "#f59e0b",
-  APPROVED: "#22c55e",
-  REJECTED: "#ef4444",
-};
-
-const RETURN_STATUS_LABELS: Record<string, string> = {
-  PENDING: "Pending Review",
-  APPROVED: "Approved",
-  REJECTED: "Rejected",
-};
-
 function OrderDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
@@ -155,7 +144,14 @@ function OrderDetailScreen() {
   const [storePackaging, setStorePackaging] = useState(0);
   const [storeComment, setStoreComment] = useState("");
   const [submittingRating, setSubmittingRating] = useState(false);
-  const [returnRequest, setReturnRequest] = useState<any>(null);
+  const [returnRequest, setReturnRequest] = useState<ReturnRequestData | null>(null);
+  const returnCardY = useRef(0);
+
+  const fetchReturn = useCallback(() => {
+    api.get<ReturnRequestData | null>(`/api/v1/return-requests/my-requests/${id}`).then((res) => {
+      if (res.data) setReturnRequest(res.data);
+    }).catch(() => {});
+  }, [id]);
 
   const fetchOrder = useCallback(async () => {
     try {
@@ -195,20 +191,15 @@ function OrderDetailScreen() {
       }).catch(() => {});
     }
 
-    // Fetch existing return request
-    api.get<any>(`/api/v1/return-requests/my-requests/${id}`).then((res) => {
-      if (res.data) setReturnRequest(res.data);
-    }).catch(() => {});
-  }, [order?.status, order?.items, id]);
+    fetchReturn();
+  }, [order?.status, order?.items, id, fetchReturn]);
 
   // Re-fetch return request on screen focus (e.g. after submitting one)
   useFocusEffect(
     useCallback(() => {
       if (!order || order.status !== "DELIVERED") return;
-      api.get<any>(`/api/v1/return-requests/my-requests/${id}`).then((res) => {
-        if (res.data) setReturnRequest(res.data);
-      }).catch(() => {});
-    }, [order?.status, id])
+      fetchReturn();
+    }, [order?.status, fetchReturn])
   );
 
   const isActive = !!order && order.status !== "DELIVERED" && order.status !== "CANCELLED";
@@ -292,6 +283,10 @@ function OrderDetailScreen() {
   }
 
   const isCancelled = order.status === "CANCELLED";
+  const refused = Number(order.refusedAmount ?? 0);
+  // Cash on delivery is collected net of handed-back items; online payments were refunded to the wallet
+  const cashRefused = order.paymentMethod === "COD" ? refused : 0;
+  const itemReturnTags = returnTags(returnRequest);
   const isPickup = order.fulfillmentType === "PICKUP";
   const STATUSES = isPickup ? PICKUP_STATUSES : DELIVERY_STATUSES;
   const labels = isPickup ? PICKUP_STATUS_LABELS : STATUS_LABELS;
@@ -314,11 +309,16 @@ function OrderDetailScreen() {
     >
       {/* Order ID + Status */}
       <View style={styles.header}>
-        <Text style={styles.orderId}>Order #{order.id.slice(0, 8)}</Text>
+        <Text style={styles.orderId}>Order #{order.id.slice(0, 8).toUpperCase()}</Text>
         <View style={[styles.badge, { backgroundColor: STATUS_COLORS[order.status] ?? colors.textSecondary }]}>
           <Text style={styles.badgeText}>{labels[order.status] ?? order.status}</Text>
         </View>
       </View>
+      {returnRequest && (
+        <View style={styles.returnLine}>
+          <ReturnStateLine request={returnRequest} onPress={() => keyboard.scrollRef.current?.scrollTo({ y: returnCardY.current, animated: true })} />
+        </View>
+      )}
 
       {/* Status Progress / Timeline */}
       {isCancelled ? (
@@ -428,34 +428,12 @@ function OrderDetailScreen() {
         </View>
       )}
 
+      {isActive && order.pickups && order.pickups.length > 0 && <PickupNotice pickups={order.pickups} />}
+
       {/* Items */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Items</Text>
-        {order.items.map((item) => (
-          <View key={item.id} style={styles.itemRow}>
-            <View style={styles.itemThumb}>
-              {item.variant?.imageUrl || item.product.imageUrl ? (
-                <Image
-                  source={{ uri: (item.variant?.imageUrl || item.product.imageUrl)! }}
-                  style={styles.itemThumbImage}
-                  resizeMode="contain"
-                />
-              ) : (
-                <Ionicons name="cube-outline" size={18} color="#94a3b8" />
-              )}
-            </View>
-            <View style={styles.itemInfo}>
-              <Text style={styles.itemName} numberOfLines={2}>{item.product.name}</Text>
-              {item.variant && (
-                <Text style={styles.itemVariant}>
-                  {item.variant.name}
-                </Text>
-              )}
-              <Text style={styles.itemQty}>{item.quantity} {"\u00D7"} {"\u20B9"}{Number(item.unitPrice).toFixed(0)}</Text>
-            </View>
-            <Text style={styles.itemPrice}>{"\u20B9"}{Number(item.totalPrice).toFixed(0)}</Text>
-          </View>
-        ))}
+        {order.items.map((item) => <OrderItemRow key={item.id} item={item} returnTag={itemReturnTags.get(item.id)} />)}
       </View>
 
       {/* Bill Summary */}
@@ -532,6 +510,17 @@ function OrderDetailScreen() {
               <Text style={styles.paymentBreakdownAmount}>{"\u20B9"}{order.loyaltyPointsUsed}</Text>
             </View>
           )}
+          {refused > 0 && (
+            <View style={styles.paymentBreakdownRow}>
+              <View style={styles.paymentBreakdownLeft}>
+                <View style={[styles.paymentBreakdownIcon, { backgroundColor: "#fffbeb" }]}>
+                  <Ionicons name="return-down-back" size={14} color="#d97706" />
+                </View>
+                <Text style={styles.paymentBreakdownLabel}>{order.paymentMethod === "COD" ? "Handed back at door" : "Handed back · refunded to wallet"}</Text>
+              </View>
+              <Text style={styles.paymentBreakdownAmount}>{"\u2212\u20B9"}{refused.toFixed(0)}</Text>
+            </View>
+          )}
           {order.walletAmountUsed && Number(order.walletAmountUsed) > 0 && (
             <View style={styles.paymentBreakdownRow}>
               <View style={styles.paymentBreakdownLeft}>
@@ -547,7 +536,7 @@ function OrderDetailScreen() {
             const walletUsed = Number(order.walletAmountUsed ?? 0);
             const loyaltyUsed = Number(order.loyaltyPointsUsed ?? 0);
             const total = Number(order.totalAmount);
-            const paidViaMethod = total - walletUsed - loyaltyUsed;
+            const paidViaMethod = total - walletUsed - loyaltyUsed - cashRefused;
             if (paidViaMethod > 0) {
               return (
                 <View style={styles.paymentBreakdownRow}>
@@ -574,7 +563,7 @@ function OrderDetailScreen() {
             const walletUsed = Number(order.walletAmountUsed ?? 0);
             const loyaltyUsed = Number(order.loyaltyPointsUsed ?? 0);
             const total = Number(order.totalAmount);
-            if ((walletUsed + loyaltyUsed) >= total) {
+            if ((walletUsed + loyaltyUsed + cashRefused) >= total) {
               return (
                 <View style={[styles.paymentBadge, { backgroundColor: PAYMENT_STATUS_COLORS[order.paymentStatus] ?? "#94a3b8", alignSelf: "flex-start", marginTop: 4 }]}>
                   <Text style={styles.paymentBadgeText}>{PAYMENT_STATUS_LABELS[order.paymentStatus] ?? order.paymentStatus}</Text>
@@ -710,47 +699,15 @@ function OrderDetailScreen() {
               })}
             </View>
           </View>
-          {/* Return Request Section */}
-          {returnRequest ? (
-            <View style={styles.returnCard}>
-              <View style={styles.returnCardHeader}>
-                <Text style={styles.returnCardTitle}>Return Request</Text>
-                <View style={[styles.returnBadge, { backgroundColor: RETURN_STATUS_COLORS[returnRequest.status] ?? colors.textSecondary }]}>
-                  <Text style={styles.returnBadgeText}>{RETURN_STATUS_LABELS[returnRequest.status] ?? returnRequest.status}</Text>
-                </View>
-              </View>
-              <Text style={styles.returnReason}>{returnRequest.reason}</Text>
-              <View style={styles.returnAmountRow}>
-                <Text style={styles.returnAmountLabel}>Requested Amount</Text>
-                <Text style={styles.returnAmountValue}>{"\u20B9"}{Number(returnRequest.requestedAmount).toFixed(0)}</Text>
-              </View>
-              {returnRequest.status === "APPROVED" && (
-                <>
-                  <View style={styles.returnAmountRow}>
-                    <Text style={styles.returnAmountLabel}>Approved Amount</Text>
-                    <Text style={[styles.returnAmountValue, { color: "#22c55e" }]}>{"\u20B9"}{Number(returnRequest.approvedAmount).toFixed(0)}</Text>
-                  </View>
-                  {returnRequest.adminNote && (
-                    <Text style={styles.returnAdminNote}>{returnRequest.adminNote}</Text>
-                  )}
-                </>
-              )}
-              {returnRequest.status === "REJECTED" && returnRequest.adminNote && (
-                <Text style={styles.returnAdminNote}>{returnRequest.adminNote}</Text>
-              )}
-            </View>
-          ) : (
-            new Date().getTime() - new Date(order.updatedAt).getTime() < 48 * 60 * 60 * 1000 && (
-              <TouchableOpacity
-                style={styles.returnBtn}
-                onPress={() => router.push({ pathname: "/return-request", params: { orderId: order.id } })}
-                activeOpacity={0.7}
-              >
-                <Ionicons name="return-down-back-outline" size={18} color={colors.primary} />
-                <Text style={styles.returnBtnText}>Request Return/Refund</Text>
-              </TouchableOpacity>
-            )
-          )}
+          <View onLayout={(e) => { returnCardY.current = e.nativeEvent.layout.y; }}>
+            <ReturnStatusCard
+              orderId={order.id}
+              status={order.status}
+              statusLogs={order.statusLogs}
+              request={returnRequest}
+              onChanged={fetchReturn}
+            />
+          </View>
         </>
       )}
 
@@ -807,6 +764,7 @@ const styles = StyleSheet.create({
     marginBottom: spacing.lg,
   },
   orderId: { fontSize: fontSize.xl, fontWeight: "bold", color: colors.text },
+  returnLine: { alignItems: "flex-end", marginTop: -spacing.sm, marginBottom: spacing.sm, paddingHorizontal: spacing.md },
   badge: {
     paddingHorizontal: spacing.sm,
     paddingVertical: 4,
@@ -881,25 +839,6 @@ const styles = StyleSheet.create({
     marginBottom: spacing.sm,
   },
   address: { fontSize: fontSize.md, color: colors.textSecondary },
-  itemRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 12,
-    paddingVertical: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.border,
-  },
-  itemThumb: {
-    width: 52, height: 52, borderRadius: 10, backgroundColor: "#f8fafc",
-    padding: 3, alignItems: "center", justifyContent: "center", overflow: "hidden",
-  },
-  // Blends white product-photo backgrounds into the tile, as on the product cards
-  itemThumbImage: { width: "100%", height: "100%", mixBlendMode: "multiply" },
-  itemInfo: { flex: 1 },
-  itemName: { fontSize: fontSize.md, fontWeight: "600", color: colors.text },
-  itemVariant: { fontSize: fontSize.sm, color: colors.textSecondary, marginTop: 1 },
-  itemQty: { fontSize: fontSize.sm, color: colors.textSecondary, marginTop: 2 },
-  itemPrice: { fontSize: fontSize.md, fontWeight: "600", color: colors.text },
   totalRow: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -1121,65 +1060,6 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: colors.primary,
   },
-  returnCard: {
-    backgroundColor: colors.surface,
-    borderRadius: 12,
-    borderWidth: 1,
-    borderColor: colors.border,
-    padding: spacing.md,
-    marginTop: spacing.lg,
-    marginBottom: spacing.md,
-  },
-  returnCardHeader: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: spacing.sm,
-  },
-  returnCardTitle: {
-    fontSize: fontSize.lg,
-    fontWeight: "700",
-    color: colors.text,
-  },
-  returnBadge: {
-    paddingHorizontal: 10,
-    paddingVertical: 3,
-    borderRadius: 10,
-  },
-  returnBadgeText: {
-    fontSize: fontSize.sm,
-    fontWeight: "600",
-    color: "#fff",
-  },
-  returnReason: {
-    fontSize: fontSize.md,
-    color: colors.textSecondary,
-    marginBottom: spacing.sm,
-  },
-  returnAmountRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    paddingVertical: 4,
-  },
-  returnAmountLabel: {
-    fontSize: fontSize.md,
-    color: colors.text,
-  },
-  returnAmountValue: {
-    fontSize: fontSize.md,
-    fontWeight: "700",
-    color: colors.text,
-  },
-  returnAdminNote: {
-    fontSize: fontSize.sm,
-    color: colors.textSecondary,
-    fontStyle: "italic",
-    marginTop: spacing.sm,
-    paddingTop: spacing.sm,
-    borderTopWidth: 1,
-    borderTopColor: colors.border,
-  },
   trackBtn: {
     flexDirection: "row",
     alignItems: "center",
@@ -1207,24 +1087,6 @@ const styles = StyleSheet.create({
     fontSize: fontSize.md,
     fontWeight: "700",
     color: "#fff",
-  },
-  returnBtn: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: 8,
-    borderRadius: 10,
-    paddingVertical: 14,
-    marginTop: spacing.md,
-    marginBottom: spacing.md,
-    borderWidth: 1.5,
-    borderColor: colors.primary,
-    backgroundColor: colors.primary + "08",
-  },
-  returnBtnText: {
-    color: colors.primary,
-    fontSize: fontSize.md,
-    fontWeight: "600",
   },
 });
 

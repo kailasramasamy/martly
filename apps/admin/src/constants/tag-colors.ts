@@ -152,8 +152,10 @@ export const REFERRAL_STATUS_CONFIG: Record<string, { color: string; label: stri
 
 export const RETURN_REQUEST_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
   PENDING: { color: "orange", label: "Pending" },
-  APPROVED: { color: "green", label: "Approved" },
+  IN_PROGRESS: { color: "blue", label: "In progress" },
+  APPROVED: { color: "green", label: "Completed" },
   REJECTED: { color: "red", label: "Rejected" },
+  EXPIRED: { color: "default", label: "Expired" },
 };
 
 export const TICKET_STATUS_CONFIG: Record<string, { color: string; label: string }> = {

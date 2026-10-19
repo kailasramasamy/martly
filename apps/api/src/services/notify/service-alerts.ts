@@ -45,22 +45,6 @@ export async function notifyReturnRequested(
   });
 }
 
-export async function notifyReturnResolved(
-  fcm: Fcm,
-  prisma: PrismaClient,
-  rr: { userId: string; orderId: string },
-  outcome: { status: "APPROVED"; amount: number; adminNote?: string | null } | { status: "REJECTED"; adminNote: string },
-) {
-  const ref = formatOrderRef(rr.orderId);
-  const note = outcome.adminNote ? ` ${outcome.adminNote}` : "";
-  const copy = outcome.status === "APPROVED"
-    ? { title: "Return approved", body: `${formatINR(outcome.amount)} for order ${ref} has been refunded to your Martly wallet.${note}` }
-    : { title: "Return request declined", body: `Your return for order ${ref} was declined: ${outcome.adminNote}` };
-  await sendNotification(fcm, prisma, {
-    userId: rr.userId, type: "RETURN_UPDATE", ...copy, data: { screen: "order", orderId: rr.orderId },
-  });
-}
-
 export async function notifyTicketCreated(fcm: Fcm, prisma: PrismaClient, ticketId: string, summary: string) {
   const ticket = await prisma.supportTicket.findUnique({
     where: { id: ticketId },

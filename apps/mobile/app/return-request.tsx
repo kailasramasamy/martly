@@ -15,6 +15,7 @@ import {
 import { useLocalSearchParams, useRouter } from "expo-router";
 import * as ImagePicker from "expo-image-picker";
 import { Ionicons } from "@expo/vector-icons";
+import { RETURN_REASONS } from "@martly/shared/constants";
 import { api } from "../lib/api";
 import { uploadImage } from "../lib/upload";
 import { useToast } from "../lib/toast-context";
@@ -24,19 +25,11 @@ import { withSignIn } from "../components/SignInPrompt";
 
 const MAX_IMAGES = 5;
 
-const RETURN_REASONS = [
-  "Damaged/broken item",
-  "Wrong item received",
-  "Item expired/stale",
-  "Quality not as expected",
-  "Missing items",
-  "Other",
-];
-
 interface OrderItemData {
   id: string;
   productId: string;
   quantity: number;
+  refusedQuantity?: number;
   unitPrice: string;
   totalPrice: string;
   product: { name: string };
@@ -47,6 +40,8 @@ interface OrderData {
   id: string;
   items: OrderItemData[];
 }
+
+const returnable = (item: OrderItemData) => item.quantity - (item.refusedQuantity ?? 0);
 
 interface SelectedItem {
   orderItemId: string;
@@ -79,11 +74,11 @@ function ReturnRequestScreen() {
       const res = await api.get<OrderData>(`/api/v1/orders/${orderId}`);
       setOrder(res.data);
       const initial = new Map<string, SelectedItem>();
-      res.data.items.forEach((item) => {
+      res.data.items.filter((item) => returnable(item) > 0).forEach((item) => {
         initial.set(item.id, {
           orderItemId: item.id,
-          quantity: item.quantity,
-          maxQuantity: item.quantity,
+          quantity: returnable(item),
+          maxQuantity: returnable(item),
           unitPrice: Number(item.unitPrice),
         });
       });
@@ -107,8 +102,8 @@ function ReturnRequestScreen() {
       } else {
         next.set(itemId, {
           orderItemId: itemId,
-          quantity: item.quantity,
-          maxQuantity: item.quantity,
+          quantity: returnable(item),
+          maxQuantity: returnable(item),
           unitPrice: Number(item.unitPrice),
         });
       }
@@ -248,7 +243,7 @@ function ReturnRequestScreen() {
         {/* Select Items */}
         <Text style={styles.sectionTitle}>Select Items</Text>
         <View style={styles.card}>
-          {order.items.map((item) => {
+          {order.items.filter((item) => returnable(item) > 0).map((item) => {
             const selected = selectedItems.has(item.id);
             const sel = selectedItems.get(item.id);
             return (
@@ -371,6 +366,10 @@ function ReturnRequestScreen() {
               : `${selectedItems.size} item${selectedItems.size > 1 ? "s" : ""} selected`}
           </Text>
         </View>
+
+        <Text style={styles.helper}>
+          If we need the item back, a rider collects it with your next order or you can drop it at the store.
+        </Text>
 
         {/* Submit */}
         <TouchableOpacity
@@ -548,6 +547,7 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     marginTop: 4,
   },
+  helper: { fontSize: fontSize.sm, color: colors.textSecondary, marginTop: spacing.md },
   submitBtn: {
     backgroundColor: colors.primary,
     borderRadius: 12,

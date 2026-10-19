@@ -16,6 +16,7 @@ export interface StoreDetail extends Omit<StoreRow, "organizationName"> {
   deliveryRadius: number;
   minOrderAmount: string | null;
   freeDeliveryThreshold: string | null;
+  returnKeepThreshold: string | null;
   baseDeliveryFee: string | null;
   subscriptionEnabled: boolean;
   subscriptionDeliveryMode: "DEDICATED" | "SLOT_BASED";

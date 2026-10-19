@@ -16,11 +16,16 @@ import { haversine, locateAddress } from "../../lib/geo.js";
 import { sendOrderStatusNotification, sendWalletNotification, sendLoyaltyNotification, sendNotification } from "../../services/notification.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { checkCoupon } from "../../services/coupons.js";
-import { reserveStock, releaseStock, deductStock } from "../../services/stock.js";
+import { reserveStock, releaseStock } from "../../services/stock.js";
+import { deliverWithRefusals } from "../../services/returns/door-refusal.js";
+import { attachReplacements, reopenReplacements } from "../../services/returns/replacement.js";
+import { pendingPickups } from "../../services/returns/pickups.js";
+import { notifyReplacementRefunds } from "../../services/notify/return-alerts.js";
 import { formatVariantUnit } from "../../services/units.js";
 import { verifyRazorpaySignature, isRazorpayConfigured, getRazorpayKeyId, isUpiS2SEnabled } from "../../services/payment.js";
 import { prepareOrderPayment, settleOrderPayment } from "../../services/order-payment.js";
 import { upiPaymentRoutes } from "./upi-payment.js";
+import { reorderRoutes } from "./reorder.js";
 import { broadcastOrderUpdate } from "../../services/order-broadcast.js";
 import { notifyStaffOfNewOrder } from "../../services/staff-alerts.js";
 import { formatOrderRef } from "../../services/notify/copy.js";
@@ -57,6 +62,7 @@ export async function orderRoutes(app: FastifyInstance) {
 
   await app.register(undoDeliveryRoutes);
   await app.register(upiPaymentRoutes);
+  await app.register(reorderRoutes);
 
   // List orders (scoped by role + org)
   app.get("/", { preHandler: [authenticate] }, async (request, reply) => {
@@ -128,6 +134,10 @@ export async function orderRoutes(app: FastifyInstance) {
         include: {
           items: { include: { product: true, variant: true } },
           user: { select: { id: true, name: true, email: true } },
+          returnRequest: { select: { status: true, remedy: true, method: true, approvedAmount: true } },
+          store: { select: { id: true, name: true } },
+          deliveryTrip: { select: { rider: { select: { name: true, phone: true } } } },
+          storeRatings: { select: { id: true } },
         },
       }),
       app.prisma.order.count({ where }),
@@ -146,9 +156,9 @@ export async function orderRoutes(app: FastifyInstance) {
     const order = await app.prisma.order.findUnique({
       where: { id: request.params.id },
       include: {
-        items: { include: { product: true, variant: true } },
+        items: { include: { product: true, variant: true, replacesReturn: { select: { orderId: true, reason: true } } } },
         statusLogs: { orderBy: { createdAt: "asc" } },
-        returnRequest: { select: { id: true, status: true, requestedAmount: true, approvedAmount: true } },
+        returnRequest: { select: { id: true, status: true, requestedAmount: true, approvedAmount: true, remedy: true, method: true } },
         user: { select: { id: true, name: true, email: true, phone: true } },
         deliveryTrip: { select: { id: true, status: true, rider: { select: { name: true, phone: true } } } },
       },
@@ -165,7 +175,11 @@ export async function orderRoutes(app: FastifyInstance) {
       }
     }
 
-    const response: ApiResponse<typeof order> = { success: true, data: formatOrderUnits(order) };
+    // Returned items the rider should collect when this order goes out
+    const open = order.status !== "DELIVERED" && order.status !== "CANCELLED";
+    const pickups = open ? ((await pendingPickups(app.prisma, [{ userId: order.userId, storeId: order.storeId }])).get(`${order.userId}:${order.storeId}`) ?? []) : [];
+    const data = { ...formatOrderUnits(order), pickups };
+    const response: ApiResponse<typeof data> = { success: true, data };
     return response;
   });
 
@@ -664,8 +678,10 @@ export async function orderRoutes(app: FastifyInstance) {
           });
         }
 
-        return { order: newOrder, walletFullyCovered, walletDeduction, loyaltyDeduction, remainingAmount };
+        const replacements = await attachReplacements(tx, { id: newOrder.id, userId: user.sub, storeId: body.storeId });
+        return { order: newOrder, walletFullyCovered, walletDeduction, loyaltyDeduction, remainingAmount, replacements };
       });
+      notifyReplacementRefunds(app, result.replacements);
 
       // COD and fully wallet-paid orders need the store's attention now; online orders alert once paid
       broadcastOrderUpdate(app.prisma, result.order.id, result.order.status);
@@ -753,10 +769,9 @@ export async function orderRoutes(app: FastifyInstance) {
       }
 
       const txResult = await app.prisma.$transaction(async (tx) => {
-        if (body.status === "DELIVERED") {
-          await deductStock(tx, stockItems, { orderId: existing.id, userId: request.user.sub });
-        }
+        const refusal = body.status === "DELIVERED" ? await deliverWithRefusals(tx, existing, body.refused ?? [], request.user.sub) : null;
         const updateData: Record<string, unknown> = { status: body.status };
+        if (refusal?.refusedAmount) updateData.refusedAmount = refusal.refusedAmount;
 
         // Delivering a COD order means the money was collected: cash in hand unless the rider says UPI
         if (body.status === "DELIVERED" && existing.paymentMethod === "COD" && existing.paymentStatus === "PENDING") {
@@ -781,7 +796,8 @@ export async function orderRoutes(app: FastifyInstance) {
                 include: { plan: true },
               });
               const loyaltyMultiplier = memberMembership?.plan?.loyaltyMultiplier ?? 1;
-              const pointsEarned = Math.floor(Number(existing.totalAmount) / 100 * loyaltyConfig.earnRate * loyaltyMultiplier);
+              const kept = Number(existing.totalAmount) - (refusal?.refusedAmount ?? 0);
+              const pointsEarned = Math.floor(kept / 100 * loyaltyConfig.earnRate * loyaltyMultiplier);
               if (pointsEarned > 0) {
                 updateData.loyaltyPointsEarned = pointsEarned;
                 const balance = await tx.loyaltyBalance.upsert({
@@ -907,6 +923,7 @@ export async function orderRoutes(app: FastifyInstance) {
         }
 
         const refunds = body.status === "CANCELLED" ? await applyCancelRefunds(tx, existing, { reverseEarned: true }) : null;
+        if (body.status === "CANCELLED") await reopenReplacements(tx, existing.id);
         if (refunds?.paymentRefunded) updateData.paymentStatus = "REFUNDED";
 
         const updated = await tx.order.update({
@@ -915,14 +932,15 @@ export async function orderRoutes(app: FastifyInstance) {
           include: { items: true },
         });
         if (body.status === "CANCELLED") await releaseFromUnstartedTrip(tx, request.params.id);
-        const logNote = (body.status === "DELIVERED" && existing.paymentMethod === "COD" && existing.paymentStatus === "PENDING")
+        const paidNote = (body.status === "DELIVERED" && existing.paymentMethod === "COD" && existing.paymentStatus === "PENDING")
           ? (body.collectedVia === "UPI" ? "COD paid by UPI on delivery" : "COD collected in cash on delivery")
           : body.note;
+        const logNote = [paidNote, refusal?.note].filter(Boolean).join(" · ") || undefined;
         await tx.orderStatusLog.create({
           data: { orderId: request.params.id, status: body.status, note: logNote },
         });
 
-        return { updated, refunds, referralCompleted, referralReferrerId, referralReferrerReward, referralRefereeReward };
+        return { updated, refunds, refusal, referralCompleted, referralReferrerId, referralReferrerReward, referralRefereeReward };
       });
 
       const order = txResult.updated;
@@ -949,6 +967,10 @@ export async function orderRoutes(app: FastifyInstance) {
           body: `Rate order ${formatOrderRef(existing.id)} and help others shop better.`,
           data: { screen: "order", orderId: existing.id },
         });
+
+        if (txResult.refusal?.walletCredit) {
+          sendWalletNotification(app.fcm, app.prisma, existing.userId, "CREDIT", txResult.refusal.walletCredit, "Refund for items handed back");
+        }
 
         // Fire-and-forget: referral wallet notifications
         if (referralCompleted) {

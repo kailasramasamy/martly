@@ -3,6 +3,7 @@ import { Table, Tag, Select, Card, Row, Col, Space } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 
 import { RETURN_REQUEST_STATUS_CONFIG } from "../../constants/tag-colors";
+import { ReturnMethodLabels, ReturnRemedyLabels, type ReturnMethod, type ReturnRemedy } from "@martly/shared/constants";
 import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const statusOptions = Object.entries(RETURN_REQUEST_STATUS_CONFIG).map(([value, { label }]) => ({ label, value }));
@@ -100,6 +101,11 @@ export const ReturnRequestList = () => {
             const cfg = RETURN_REQUEST_STATUS_CONFIG[value] ?? { color: "default", label: value };
             return <Tag color={cfg.color}>{cfg.label}</Tag>;
           }}
+        />
+        <Table.Column
+          title="Outcome"
+          render={(_: unknown, r: { remedy?: ReturnRemedy; method?: ReturnMethod }) =>
+            r.remedy && r.method ? `${ReturnRemedyLabels[r.remedy]} \u00B7 ${ReturnMethodLabels[r.method]}` : "\u2014"}
         />
         <Table.Column
           dataIndex="createdAt"

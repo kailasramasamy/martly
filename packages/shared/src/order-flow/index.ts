@@ -104,12 +104,17 @@ interface PayableOrder {
   paymentStatus?: string;
   walletAmountUsed?: string | number | null;
   loyaltyPointsUsed?: number | null;
+  /** Value of items handed back to the rider at the door */
+  refusedAmount?: string | number | null;
 }
 
-/** Cash a rider collects at the door: the total less wallet and loyalty already applied; nothing once paid or online */
+/** Cash a rider collects at the door: the total less wallet, loyalty and anything handed back; nothing once paid or online */
 export function amountDue(order: PayableOrder): number {
   if (order.paymentMethod !== "COD" || order.paymentStatus === "PAID") return 0;
-  return Math.max(0, Number(order.totalAmount) - Number(order.walletAmountUsed ?? 0) - Number(order.loyaltyPointsUsed ?? 0));
+  return Math.max(
+    0,
+    Number(order.totalAmount) - Number(order.walletAmountUsed ?? 0) - Number(order.loyaltyPointsUsed ?? 0) - Number(order.refusedAmount ?? 0),
+  );
 }
 
 /** The reminder shown before completing an order: collect cash on unpaid COD orders */
@@ -118,4 +123,44 @@ export function handoverNote(order: PayableOrder): string {
   if (due > 0) return `Collect ₹${Math.round(due).toLocaleString("en-IN")} in cash before handing it over.`;
   if (order.paymentStatus === "PAID") return "Already paid. Hand over the order.";
   return "This completes the order and notifies the customer.";
+}
+
+/** What units handed back at the door are worth: their price, less their share of the order's coupon */
+export function refusedValue(
+  order: { couponDiscount?: string | number | null; items: readonly { id: string; quantity: number; unitPrice: string | number }[] },
+  refused: readonly { orderItemId: string; quantity: number }[],
+): number {
+  const itemsTotal = order.items.reduce((sum, i) => sum + Number(i.unitPrice) * i.quantity, 0);
+  if (itemsTotal === 0) return 0;
+  const price = new Map(order.items.map((i) => [i.id, Number(i.unitPrice)]));
+  const value = refused.reduce((sum, r) => sum + (price.get(r.orderItemId) ?? 0) * r.quantity, 0);
+  const share = Math.max(0, itemsTotal - Number(order.couponDiscount ?? 0)) / itemsTotal;
+  return Math.round(value * share * 100) / 100;
+}
+
+export type ReturnTone = "pending" | "active" | "done" | "declined" | "closed";
+
+/** One line saying where an order's return stands, shown next to the Delivered status */
+export function returnState(rr: {
+  status: string;
+  remedy?: string | null;
+  method?: string | null;
+  approvedAmount?: string | number | null;
+}): { label: string; tone: ReturnTone } {
+  switch (rr.status) {
+    case "PENDING":
+      return { label: "Return requested", tone: "pending" };
+    case "IN_PROGRESS":
+      return rr.remedy === "REPLACE" && rr.method === "KEEP"
+        ? { label: "Replacement on its way", tone: "active" }
+        : { label: "Return in progress", tone: "active" };
+    case "APPROVED":
+      return rr.remedy === "REPLACE"
+        ? { label: "Replaced", tone: "done" }
+        : { label: `\u20B9${Math.round(Number(rr.approvedAmount ?? 0)).toLocaleString("en-IN")} refunded`, tone: "done" };
+    case "REJECTED":
+      return { label: "Return declined", tone: "declined" };
+    default:
+      return { label: "Return closed", tone: "closed" };
+  }
 }

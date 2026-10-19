@@ -23,6 +23,7 @@ const STATIC_SCREENS: Record<string, string> = {
   profile: "/(tabs)/profile",
   categories: "/(tabs)/categories",
   "manage-orders": "/(manage)/orders",
+  "manage-today": "/(manage)",
   trip: "/(manage)/delivery",
   "manage-reviews": "/manage/reviews",
   "store-ratings": "/manage/store-ratings",

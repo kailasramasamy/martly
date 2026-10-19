@@ -9,7 +9,7 @@ import { riderLocation } from "./live-location.js";
 
 const STOP_SELECT = {
   id: true, status: true, deliverySequence: true, totalAmount: true, paymentMethod: true, paymentStatus: true,
-  walletAmountUsed: true, loyaltyPointsUsed: true, codCollectedVia: true,
+  walletAmountUsed: true, refusedAmount: true, loyaltyPointsUsed: true, codCollectedVia: true,
   deliveryAddress: true, deliveryPincode: true, deliveryLat: true, deliveryLng: true, createdAt: true,
   user: { select: { name: true, phone: true } },
   _count: { select: { items: true } },

@@ -364,8 +364,37 @@ enum TicketPriority {
 
 enum ReturnRequestStatus {
   PENDING
+  /// Approved; waiting for the item to come back and/or the replacement to go out
+  IN_PROGRESS
+  /// Resolved: refunded or replaced, with the item back when one was needed
   APPROVED
   REJECTED
+  /// The item never came back in time
+  EXPIRED
+}
+
+/// What the customer gets for an approved return
+enum ReturnRemedy {
+  REFUND
+  REPLACE
+}
+
+/// How the returned item gets back to the store
+enum ReturnMethod {
+  /// Not worth collecting; the customer keeps it
+  KEEP
+  /// The rider collects it with the customer's next order
+  NEXT_ORDER
+  /// The customer drops it at the store
+  AT_STORE
+}
+
+/// Why a customer handed an item back to the rider at the door
+enum RefuseReason {
+  DAMAGED
+  EXPIRED
+  WRONG_ITEM
+  NOT_WANTED
 }
 
 enum MembershipDuration {
@@ -481,6 +510,8 @@ model Store {
   deliveryRadius        Float       @default(7) @map("delivery_radius")
   minOrderAmount        Decimal?    @map("min_order_amount")
   freeDeliveryThreshold Decimal?    @map("free_delivery_threshold")
+  /// Returns worth up to this much default to "refund, keep it"
+  returnKeepThreshold   Decimal?    @map("return_keep_threshold") @db.Decimal(10, 2)
   baseDeliveryFee       Decimal?    @map("base_delivery_fee")
   createdAt             DateTime    @default(now()) @map("created_at")
   updatedAt             DateTime    @updatedAt @map("updated_at")
@@ -867,6 +898,8 @@ model Order {
   estimatedDeliveryAt DateTime?       @map("estimated_delivery_at")
   deliveryNotes       String?         @map("delivery_notes")
   walletAmountUsed    Decimal?        @map("wallet_amount_used") @db.Decimal(10, 2)
+  /// Value of items the customer handed back to the rider at the door
+  refusedAmount       Decimal         @default(0) @map("refused_amount") @db.Decimal(10, 2)
   loyaltyPointsUsed   Int?            @map("loyalty_points_used")
   loyaltyPointsEarned Int?            @map("loyalty_points_earned")
   deliverySlotId      String?         @map("delivery_slot_id")
@@ -897,8 +930,10 @@ model Order {
   storeRatings        StoreRating[]
   reviews             Review[]
   supportTickets      SupportTicket[]
-  returnRequest       ReturnRequest?
+  returnRequest       ReturnRequest?       @relation("ReturnRequestOrder")
+  collectedReturns    ReturnRequest[]      @relation("ReturnCollectedOn")
 
+  @@index([storeId, status])
   @@map("orders")
 }
 
@@ -930,11 +965,18 @@ model OrderItem {
   discountType  DiscountType? @map("discount_type")
   discountValue Decimal?      @map("discount_value") @db.Decimal(10, 2)
 
+  /// Units the customer handed back to the rider at the door
+  refusedQuantity  Int           @default(0) @map("refused_quantity")
+  refusedReason    RefuseReason? @map("refused_reason")
+  /// Set on a free item sent to replace a returned one
+  replacesReturnId String?       @map("replaces_return_id")
+
   order              Order               @relation(fields: [orderId], references: [id])
   product            Product             @relation(fields: [productId], references: [id])
   variant            ProductVariant      @relation(fields: [variantId], references: [id])
   storeProduct       StoreProduct        @relation(fields: [storeProductId], references: [id])
   returnRequestItems ReturnRequestItem[]
+  replacesReturn     ReturnRequest?      @relation(fields: [replacesReturnId], references: [id])
 
   @@map("order_items")
 }
@@ -1656,31 +1698,41 @@ model SearchAlias {
 }
 
 model ReturnRequest {
-  id              String              @id @default(uuid())
-  orderId         String              @unique @map("order_id")
-  userId          String              @map("user_id")
-  organizationId  String              @map("organization_id")
-  storeId         String              @map("store_id")
-  status          ReturnRequestStatus @default(PENDING)
-  reason          String
-  description     String?
-  images          String[]            @default([])
-  requestedAmount Decimal             @map("requested_amount") @db.Decimal(10, 2)
-  approvedAmount  Decimal?            @map("approved_amount") @db.Decimal(10, 2)
-  adminNote       String?             @map("admin_note")
-  resolvedAt      DateTime?           @map("resolved_at")
-  resolvedBy      String?             @map("resolved_by")
-  createdAt       DateTime            @default(now()) @map("created_at")
-  updatedAt       DateTime            @updatedAt @map("updated_at")
+  id                 String              @id @default(uuid())
+  orderId            String              @unique @map("order_id")
+  userId             String              @map("user_id")
+  organizationId     String              @map("organization_id")
+  storeId            String              @map("store_id")
+  status             ReturnRequestStatus @default(PENDING)
+  reason             String
+  description        String?
+  images             String[]            @default([])
+  requestedAmount    Decimal             @map("requested_amount") @db.Decimal(10, 2)
+  approvedAmount     Decimal?            @map("approved_amount") @db.Decimal(10, 2)
+  adminNote          String?             @map("admin_note")
+  resolvedAt         DateTime?           @map("resolved_at")
+  resolvedBy         String?             @map("resolved_by")
+  remedy             ReturnRemedy?
+  method             ReturnMethod?
+  /// The rider collected the item while delivering this order
+  collectedOnOrderId String?             @map("collected_on_order_id")
+  receivedAt         DateTime?           @map("received_at")
+  receivedBy         String?             @map("received_by")
+  refundedAt         DateTime?           @map("refunded_at")
+  createdAt          DateTime            @default(now()) @map("created_at")
+  updatedAt          DateTime            @updatedAt @map("updated_at")
 
-  order        Order               @relation(fields: [orderId], references: [id])
-  user         User                @relation(fields: [userId], references: [id])
-  organization Organization        @relation(fields: [organizationId], references: [id])
-  store        Store               @relation(fields: [storeId], references: [id])
-  items        ReturnRequestItem[]
+  order            Order               @relation("ReturnRequestOrder", fields: [orderId], references: [id])
+  collectedOnOrder Order?              @relation("ReturnCollectedOn", fields: [collectedOnOrderId], references: [id])
+  replacementItems OrderItem[]
+  user             User                @relation(fields: [userId], references: [id])
+  organization     Organization        @relation(fields: [organizationId], references: [id])
+  store            Store               @relation(fields: [storeId], references: [id])
+  items            ReturnRequestItem[]
 
   @@index([userId, createdAt])
   @@index([organizationId, status])
+  @@index([userId, storeId, status])
   @@map("return_requests")
 }
 
@@ -1732,10 +1784,12 @@ model UserMembership {
 }
 
 model ReturnRequestItem {
-  id              String @id @default(uuid())
-  returnRequestId String @map("return_request_id")
-  orderItemId     String @map("order_item_id")
+  id              String  @id @default(uuid())
+  returnRequestId String  @map("return_request_id")
+  orderItemId     String  @map("order_item_id")
   quantity        Int
+  /// Put back on the shelf once the item is received
+  restock         Boolean @default(false)
 
   returnRequest ReturnRequest @relation(fields: [returnRequestId], references: [id], onDelete: Cascade)
   orderItem     OrderItem     @relation(fields: [orderItemId], references: [id])
@@ -2044,6 +2098,7 @@ enum StockMovementType {
   MANUAL
   SALE
   UNDO_SALE
+  RETURN
 }
 
 /// Every change to a store product's on-hand stock, with who made it and why

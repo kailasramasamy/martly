@@ -280,6 +280,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 14,
     paddingVertical: 4,
     backgroundColor: "#fff",
+    borderRightWidth: 3,
+    borderBottomWidth: 3,
   },
   addBtnDisabled: { borderColor: colors.border, backgroundColor: colors.surface },
   addBtnText: { fontSize: 12, fontWeight: "700", color: colors.primary },
