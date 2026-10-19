@@ -12,7 +12,6 @@ import {
   Manrope_700Bold,
   Manrope_800ExtraBold,
 } from "@expo-google-fonts/manrope";
-import { Cinzel_700Bold } from "@expo-google-fonts/cinzel";
 import { PlayfairDisplay_700Bold } from "@expo-google-fonts/playfair-display";
 import { YatraOne_400Regular } from "@expo-google-fonts/yatra-one";
 import { Kalam_700Bold } from "@expo-google-fonts/kalam";
@@ -206,7 +205,6 @@ export default function RootLayout() {
     "Manrope-SemiBold": Manrope_600SemiBold,
     "Manrope-Bold": Manrope_700Bold,
     "Manrope-ExtraBold": Manrope_800ExtraBold,
-    "Cinzel-Bold": Cinzel_700Bold,
     "PlayfairDisplay-Bold": PlayfairDisplay_700Bold,
     "YatraOne-Regular": YatraOne_400Regular,
     "Kalam-Bold": Kalam_700Bold,

@@ -14,6 +14,9 @@ const ART_HEIGHT = Math.round(ART_WIDTH / 1.6);
 const HEIGHT = 150;
 // The grid's side padding, which the header bleeds through so its deeper band runs edge to edge
 const BLEED = 16;
+// The headline column stops short of the art, or of the offer stamp hanging off the art's left edge
+const TEXT_GAP = 8;
+const TEXT_WIDTH = SCREEN_WIDTH - BLEED * 2 - ART_WIDTH - TEXT_GAP;
 // The header (and the navigation bar above it) sit a shade deeper than the page, deepened towards the campaign's own
 // ink rather than black so it stays the same hue instead of turning grey
 const HEADER_DEEPEN = 0.14;
@@ -40,9 +43,9 @@ export function CampaignHeader({ collection, campaign }: { collection: Collectio
   return (
     <LinearGradient colors={[deep, deep, campaign.theme.background]} locations={FADE_STOPS} style={styles.wrap} accessibilityRole="header">
       {campaign.imageUrl ? <Image source={{ uri: campaign.imageUrl }} style={styles.art} resizeMode="contain" /> : null}
-      <View style={styles.text}>
+      <View style={[styles.text, { width: campaign.offerLabel ? TEXT_WIDTH - STAMP_SIZE / 2 : TEXT_WIDTH }]}>
         <CountdownChip endsAt={collection.endsAt} ink={ink} fill={dark ? "#ffffff26" : "#ffffffb8"} />
-        <Text style={[styles.title, { color: ink }]} numberOfLines={3} adjustsFontSizeToFit minimumFontScale={0.8}>{title}</Text>
+        <Text style={[styles.title, { color: ink }]} numberOfLines={3}>{title}</Text>
         {subtitle ? <Text style={[styles.subtitle, { color: ink }]} numberOfLines={2}>{subtitle}</Text> : null}
       </View>
       {campaign.offerLabel ? <View style={styles.stamp}><OfferStamp label={campaign.offerLabel} /></View> : null}
@@ -52,10 +55,11 @@ export function CampaignHeader({ collection, campaign }: { collection: Collectio
 
 const styles = StyleSheet.create({
   wrap: { height: HEIGHT, marginHorizontal: -BLEED, paddingHorizontal: BLEED, marginBottom: 14 },
-  art: { position: "absolute", right: 0, top: 4, width: ART_WIDTH, height: ART_HEIGHT },
-  text: { position: "absolute", left: BLEED, top: 2, width: "52%", gap: 4 },
+  // The art lines up with the grid's right edge, and the text is centred on it (a countdown can grow it downwards)
+  art: { position: "absolute", right: BLEED, top: 4, width: ART_WIDTH, height: ART_HEIGHT },
+  text: { position: "absolute", left: BLEED, top: 4, minHeight: ART_HEIGHT, justifyContent: "center", gap: 4 },
   title: { fontFamily: fonts.extrabold, fontSize: 26, lineHeight: 30, letterSpacing: -0.4 },
   subtitle: { fontFamily: fonts.semibold, fontSize: 13.5, lineHeight: 18, opacity: 0.85 },
   // Pressed against the cut-out's lower left, as on the Home card
-  stamp: { position: "absolute", right: ART_WIDTH - STAMP_SIZE / 2, top: ART_HEIGHT - STAMP_SIZE / 2 },
+  stamp: { position: "absolute", right: BLEED + ART_WIDTH - STAMP_SIZE / 2, top: ART_HEIGHT - STAMP_SIZE / 2 },
 });

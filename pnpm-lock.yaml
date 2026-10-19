@@ -199,9 +199,6 @@ importers:
 
   apps/mobile:
     dependencies:
-      '@expo-google-fonts/cinzel':
-        specifier: ^0.4.2
-        version: 0.4.2
       '@expo-google-fonts/kalam':
         specifier: ^0.4.1
         version: 0.4.1
@@ -1720,9 +1717,6 @@ packages:
   '@eslint/plugin-kit@0.4.1':
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@expo-google-fonts/cinzel@0.4.2':
-    resolution: {integrity: sha512-UAlyuHCGjmKpMt2MoCKYueHz8ZEzjHO1VEol2G7NcPW54UH+85SWIGzpor05YNqUvr/aoqS8Qrfnswxg1RsNMw==}
 
   '@expo-google-fonts/inter@0.4.2':
     resolution: {integrity: sha512-syfiImMaDmq7cFi0of+waE2M4uSCyd16zgyWxdPOY7fN2VBmSLKEzkfbZgeOjJq61kSqPBNNtXjggiQiSD6gMQ==}
@@ -10113,8 +10107,6 @@ snapshots:
     dependencies:
       '@eslint/core': 0.17.0
       levn: 0.4.1
-
-  '@expo-google-fonts/cinzel@0.4.2': {}
 
   '@expo-google-fonts/inter@0.4.2': {}
 

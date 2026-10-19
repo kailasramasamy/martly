@@ -40,8 +40,6 @@ export const fonts = {
   semibold: "Manrope-SemiBold",
   bold: "Manrope-Bold",
   extrabold: "Manrope-ExtraBold",
-  /** Collection and campaign titles */
-  display: "Cinzel-Bold",
 } as const;
 
 /** Festival hero headline faces, keyed by the FestiveFont the hero designer picks; Playfair Display is the default */

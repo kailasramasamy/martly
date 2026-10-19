@@ -11,7 +11,6 @@
     "ios": "expo run:ios"
   },
   "dependencies": {
-    "@expo-google-fonts/cinzel": "^0.4.2",
     "@expo-google-fonts/kalam": "^0.4.1",
     "@expo-google-fonts/lobster": "^0.4.1",
     "@expo-google-fonts/manrope": "^0.4.2",

@@ -1383,6 +1383,8 @@ export const collectionProductsQuerySchema = z.object({
   storeId: z.string().uuid(),
   /** Comma-separated aisles to narrow the collection to */
   subcategoryIds: z.string().optional().transform((v) => (v ? v.split(",").filter(Boolean) : [])).pipe(z.array(z.string().uuid()).max(50)),
+  /** Searches within the collection */
+  q: z.string().trim().max(100).optional().transform((v) => v || undefined),
   page: z.coerce.number().int().min(1).default(1),
   pageSize: z.coerce.number().int().min(1).max(50).default(20),
 });

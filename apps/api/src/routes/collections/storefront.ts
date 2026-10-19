@@ -10,7 +10,7 @@ import { autoTiles, stockedCollectionItems } from "../../services/home/resolvers
 export async function collectionStorefrontRoutes(app: FastifyInstance) {
   // The screen a COLLECTION banner or promo push opens
   app.get<{ Params: { id: string } }>("/:id/products", { preHandler: [authenticateOptional] }, async (request, reply) => {
-    const { storeId, subcategoryIds, page, pageSize } = collectionProductsQuerySchema.parse(request.query);
+    const { storeId, subcategoryIds, q, page, pageSize } = collectionProductsQuerySchema.parse(request.query);
     const store = await app.prisma.store.findFirst({ where: { id: storeId, status: "ACTIVE" }, select: { organizationId: true } });
     if (!store) return reply.notFound("Store not found");
     const collection = await app.prisma.collection.findFirst({
@@ -25,7 +25,7 @@ export async function collectionStorefrontRoutes(app: FastifyInstance) {
     });
     if (!collection) return reply.notFound("This offer has ended");
     const [{ products, total }, campaign, aisles] = await Promise.all([
-      collectionProducts(app.prisma, collection.id, storeId, page, pageSize, subcategoryIds),
+      collectionProducts(app.prisma, collection.id, storeId, page, pageSize, subcategoryIds, q),
       campaignLook(app.prisma, store.organizationId, collection),
       // The aisle chips only change with stock, so they come with the first page
       page === 1 ? stockedCollectionItems(app.prisma, collection.id, storeId).then((items) => autoTiles(app.prisma, items, true)) : null,

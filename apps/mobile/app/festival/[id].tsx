@@ -68,7 +68,7 @@ export default function FestivalScreen() {
       title: (language && hero.translations?.[language]?.title) || hero.title,
       headerStyle: { backgroundColor: background },
       headerTintColor: title,
-      headerTitleStyle: { fontFamily: fonts.display, fontSize: 20, color: title },
+      headerTitleStyle: { fontFamily: fonts.bold, fontSize: 17, color: title },
       headerShadowVisible: false,
     });
   }, [hero, language, navigation]);

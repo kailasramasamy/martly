@@ -4,8 +4,8 @@ import type { CollectionHeader, CollectionProductsResponse, StoreProduct } from 
 
 const PAGE_SIZE = 20;
 
-/** `subcategoryIds` (comma-separated) narrows the collection to those aisles, as a campaign tile does */
-export function useCollectionProducts(collectionId: string, storeId: string | undefined, subcategoryIds?: string) {
+/** `subcategoryIds` (comma-separated) narrows the collection to those aisles, as a campaign tile does; `q` searches it */
+export function useCollectionProducts(collectionId: string, storeId: string | undefined, subcategoryIds?: string, q?: string) {
   const [collection, setCollection] = useState<CollectionHeader | null>(null);
   const [products, setProducts] = useState<StoreProduct[]>([]);
   const [loading, setLoading] = useState(true);
@@ -19,9 +19,10 @@ export function useCollectionProducts(collectionId: string, storeId: string | un
     (p: number) =>
       api.getList<StoreProduct>(
         `/api/v1/collections/${collectionId}/products?storeId=${storeId}&page=${p}&pageSize=${PAGE_SIZE}`
-          + (subcategoryIds ? `&subcategoryIds=${encodeURIComponent(subcategoryIds)}` : ""),
+          + (subcategoryIds ? `&subcategoryIds=${encodeURIComponent(subcategoryIds)}` : "")
+          + (q ? `&q=${encodeURIComponent(q)}` : ""),
       ) as Promise<CollectionProductsResponse>,
-    [collectionId, storeId, subcategoryIds],
+    [collectionId, storeId, subcategoryIds, q],
   );
 
   useEffect(() => {

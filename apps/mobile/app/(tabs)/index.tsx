@@ -9,6 +9,7 @@ import {
   type ListRenderItem,
   type NativeScrollEvent,
   type NativeSyntheticEvent,
+  type ViewToken,
 } from "react-native";
 import { router } from "expo-router";
 import { useStore } from "../../lib/store-context";
@@ -87,7 +88,7 @@ function useHomeData() {
 }
 
 /** What every section can read: the store, the shopper's membership and how the festive top is laid out */
-function useSectionEnv(data: ReturnType<typeof useHomeData>, expandedHeader: number) {
+function useSectionEnv(data: ReturnType<typeof useHomeData>, expandedHeader: number, heroInView: boolean) {
   const { selectedStore } = useStore();
   const { sections, chrome } = data.home;
   // A festival hero leading the page runs its art up behind the header, which floats over it see-through and
@@ -106,8 +107,9 @@ function useSectionEnv(data: ReturnType<typeof useHomeData>, expandedHeader: num
     hasSubscriptions,
     festiveHeroIds,
     onFestiveTheme: setSlideTheme,
+    heroInView,
     backdrop: festive && expandedHeader ? { top: expandedHeader } : null,
-  }), [selectedStore, memberStatus, hasSubscriptions, festiveHeroIds, festive, expandedHeader]);
+  }), [selectedStore, memberStatus, hasSubscriptions, festiveHeroIds, festive, expandedHeader, heroInView]);
   return { env, festive };
 }
 
@@ -118,11 +120,17 @@ interface ListProps {
   /** Festive title colour for the pull-to-refresh spinner, and the header it has to clear */
   festiveInk: string | null;
   headerOffset: number;
+  onHeroInView: (inView: boolean) => void;
 }
 
-function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset }: ListProps) {
+const HERO_VIEWABILITY = { itemVisiblePercentThreshold: 30 };
+
+function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, onHeroInView }: ListProps) {
   const { home, refreshing, onRefresh } = data;
   const { tabBarScroll } = scroll;
+  const onViewableItemsChanged = useCallback(({ viewableItems }: { viewableItems: ViewToken<MobileHomeSection>[] }) => {
+    onHeroInView(viewableItems.some((v) => v.item.type === "FESTIVE_HERO"));
+  }, [onHeroInView]);
   return (
     <FlatList
       ref={scroll.listRef}
@@ -133,6 +141,8 @@ function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset }: Lis
       showsVerticalScrollIndicator={false}
       {...tabBarScroll.scrollProps}
       onScroll={scroll.onScroll}
+      viewabilityConfig={HERO_VIEWABILITY}
+      onViewableItemsChanged={onViewableItemsChanged}
       contentContainerStyle={tabBarScroll.contentStyle(styles.scrollContent, dockHeight)}
       onEndReached={home.loadMore}
       onEndReachedThreshold={1.5}
@@ -161,7 +171,8 @@ export default function HomeScreen() {
   const data = useHomeData();
   const scroll = useHomeScroll();
   const header = useHeaderHeights(scroll.tabBarScroll.headerCollapsed);
-  const { env, festive } = useSectionEnv(data, header.expanded);
+  const [heroInView, setHeroInView] = useState(true);
+  const { env, festive } = useSectionEnv(data, header.expanded, heroInView);
   useLightStatusBar(Boolean(festive?.dark));
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
   const [dockHeight, setDockHeight] = useState(0);
@@ -181,7 +192,7 @@ export default function HomeScreen() {
           onLayout={header.onLayout}
         />
         <HomeSectionProvider value={env}>
-          <SectionList data={data} scroll={scroll} dockHeight={dockHeight} festiveInk={festive?.title ?? null} headerOffset={header.expanded} />
+          <SectionList data={data} scroll={scroll} dockHeight={dockHeight} festiveInk={festive?.title ?? null} headerOffset={header.expanded} onHeroInView={setHeroInView} />
         </HomeSectionProvider>
         <BackToTopPill visible={scroll.showBackToTop} top={header.height + 8} onPress={scroll.scrollToTop} />
         <TabBottomDock onLayout={(e) => setDockHeight(e.nativeEvent.layout.height)}>

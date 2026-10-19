@@ -29,14 +29,22 @@ const INTENT_ONLY_PENALTY = 40;
 
 /**
  * What a search runs over. Shoppers see a store's listed, active products; admins also see unlisted listings
- * (store scope) or the whole catalog (no storeId), including inactive products.
+ * (store scope) or the whole catalog (no storeId), including inactive products. A collection narrows it to its items.
  */
 interface SearchScope {
   storeId?: string;
   listedOnly?: boolean;
+  collectionId?: string;
 }
 
-const inScope = ({ storeId, listedOnly }: SearchScope) => {
+const inScope = ({ storeId, listedOnly, collectionId }: SearchScope) => {
+  const store = inStoreScope({ storeId, listedOnly });
+  return collectionId
+    ? Prisma.sql`${store} AND EXISTS (SELECT 1 FROM collection_items ci WHERE ci.collection_id = ${collectionId} AND ci.product_id = p.id)`
+    : store;
+};
+
+const inStoreScope = ({ storeId, listedOnly }: SearchScope) => {
   if (!storeId) return Prisma.sql`TRUE`;
   return listedOnly
     ? Prisma.sql`p.is_active = true AND EXISTS (
@@ -75,6 +83,11 @@ export async function searchProducts(
   { minResults = 3, exact = false }: { minResults?: number; exact?: boolean } = {},
 ): Promise<SearchResult> {
   return runSearch(prisma, { storeId, listedOnly: true }, query, { minResults, exact, semantic: true, limit: MAX_KEYWORD_RESULTS });
+}
+
+/** Same ranking within one collection's products, for a campaign screen's search; no LLM expansion as it runs per keystroke */
+export function searchCollectionProducts(prisma: PrismaClient, storeId: string, collectionId: string, query: string): Promise<SearchResult> {
+  return runSearch(prisma, { storeId, listedOnly: true, collectionId }, query, { semantic: false, limit: MAX_KEYWORD_RESULTS });
 }
 
 /** Same ranking for the Manage persona: unlisted listings / whole catalog, no LLM expansion, deeper result list */
