@@ -1,3 +1,4 @@
+import type { HeroTileLayout } from "@martly/shared/constants";
 import type { CampaignTile, HomeTheme } from "@martly/shared/types";
 import type { PaginatedResponse } from "@martly/shared/types";
 
@@ -267,6 +268,8 @@ export interface FestiveHero {
   /** background is the solid festival colour behind the whole block; title is its text colour; dark means light text */
   theme: HomeTheme;
   tiles: FestiveTile[];
+  /** FEATURE: five tiles, the first tall beside a 2x2 block; absent on older API responses, which mean GRID */
+  tileLayout?: HeroTileLayout;
 }
 
 export interface HomeFeed {

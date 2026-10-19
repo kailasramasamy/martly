@@ -1,7 +1,10 @@
 export interface HomeSectionItem {
   label: string;
+  translations: Record<string, { label: string }> | null;
   imageUrl: string | null;
   collectionId: string | null;
+  subcategoryIds: string[];
+  wide: boolean;
 }
 
 export interface HomeSectionRecord {

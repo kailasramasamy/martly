@@ -1,6 +1,6 @@
 /**
- * Seeds Demo Grocers' Home layout and the showcase collections behind it (idempotent; image generation reuses
- * stored art unless --regen-art is passed, and the Navratri hero is repainted only with --hero).
+ * Seeds Demo Grocers' Home layout and the showcase collections behind it (idempotent; campaign and tile art already
+ * stored is reused unless --regen-art is passed, and the Navratri hero is repainted only with --hero).
  *
  *   cd apps/api && npx tsx prisma/seed-home-layout.ts [--regen-art] [--hero]
  */
@@ -11,6 +11,7 @@ import { regenerateHero } from "../src/services/seasonal/hero.js";
 import { paintArt, reusableArt } from "./seed-home-art.js";
 import { discount, ensurePromo, ORG_NAME, pickProducts, upsertCollection } from "./seed-home-collections.js";
 import { phase2Sections, type PlannedSection as Planned } from "./seed-home-phase2.js";
+import { fillTileArt, phase3Sections, previousTileArt } from "./seed-home-phase3.js";
 
 const prisma = new PrismaClient();
 type Config = Record<string, unknown>;
@@ -115,10 +116,14 @@ async function main() {
   const previous = await previousConfigs(org.id) as Map<string | null, Config>;
   const [pcw, snack, combo, r] = [await personalCare(previous), await snackFest(org.id, previous), await breakfastCombo(org.id, previous), await rows(org.id, previous)];
   const p2 = await phase2Sections(prisma, org.id);
+  const p3 = await phase3Sections(prisma, org.id);
+  const keptArt = await previousTileArt(prisma, org.id);
 
   // Default order with the showcase sections slotted in
   const plan: Planned[] = DEFAULT_LAYOUT.flatMap((e) => {
     const base: Planned = { type: e.type };
+    if (e.type === "DEPARTMENT_GRID") return [base, p3.stores];
+    if (e.type === "TIME_PICKS") return [base, p3.explore];
     if (e.type === "MEMBER_CHIPS") return [base, pcw, snack, combo];
     if (e.type === "BUY_AGAIN") return [base, r.best, p2.tabs, r.value, r.fruit];
     if (e.type === "HERO_BANNERS") return [base, p2.deals];
@@ -141,6 +146,7 @@ async function main() {
   const saved = await prisma.homeSection.findMany({ where: { organizationId: org.id }, orderBy: { sortOrder: "asc" }, select: { id: true, type: true, title: true, config: true } });
   console.log(`Layout: ${saved.length} sections`);
   for (const s of saved.filter((x) => x.title)) console.log(`  ${s.type} "${s.title}" ${s.id} ${JSON.stringify(s.config)}`);
+  await fillTileArt(prisma, org.id, keptArt, process.argv.includes("--regen-art"));
   if (process.argv.includes("--hero")) await repaintNavratri(org.id);
 }
 

@@ -192,6 +192,7 @@ export default function HomeScreen() {
           festive={festive}
           collapsed={scroll.tabBarScroll.headerCollapsed}
           onLayout={header.onLayout}
+          searchHints={chrome?.searchHints}
         />
         <HomeSectionProvider value={env}>
           <SectionList data={data} scroll={scroll} dockHeight={dockHeight} festiveInk={festive?.title ?? null} headerOffset={header.expanded} ready={env !== null} onHeroInView={setHeroInView} />

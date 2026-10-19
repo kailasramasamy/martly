@@ -1,25 +1,41 @@
 import {
-  HOME_ROW_MAX_PRODUCTS, SECTION_COLLECTION, SectionHeaderStyle, TabRailStyle, type HomeSectionType,
+  HOME_ROW_MAX_PRODUCTS, HeroTileLayout, SECTION_COLLECTION, SectionHeaderStyle, TabRailStyle, type HomeSectionType,
 } from "@martly/shared/constants";
-import { homeSectionConfigSchemas, homeSectionItemsSchema } from "@martly/shared/schemas";
+import { homeSectionConfigSchemas, homeSectionItemsSchema, type HomeSectionItemsInput } from "@martly/shared/schemas";
 import type { HomeSectionRecord } from "./types";
 
-export const MIN_TABS = 2;
-export const MAX_TABS = 8;
+export interface ItemLimits {
+  min: number;
+  max: number;
+  noun: string;
+}
+
+/** Item-backed types: tabs of a tabbed row and tiles of the grids */
+export const ITEM_LIMITS: Partial<Record<HomeSectionType, ItemLimits>> = {
+  TABBED_ROW: { min: 2, max: 8, noun: "tab" },
+  EXPLORE_GRID: { min: 2, max: 12, noun: "tile" },
+  STORE_GRID: { min: 2, max: 12, noun: "tile" },
+};
+
 export const MIN_BANDS = 2;
 export const MAX_BANDS = 5;
 
 /** Types whose settings this screen edits; the rest keep their stored config untouched */
-export const CONFIG_TYPES: readonly HomeSectionType[] = ["PRODUCT_ROW", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY"];
+export const CONFIG_TYPES: readonly HomeSectionType[] = ["FESTIVE_HERO", "PRODUCT_ROW", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID"];
 
 /** Types offered when adding a section from the phone */
-export const CREATABLE_TYPES: readonly HomeSectionType[] = ["PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY"];
+export const CREATABLE_TYPES: readonly HomeSectionType[] = ["PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID"];
 
-export interface TabDraft {
+/** A tab or grid tile; the image and aisles are edited in the admin panel but must survive a save here */
+export interface ItemDraft {
   key: string;
   label: string;
+  /** Not edited on the phone, but carried so a save doesn't drop the translated labels */
+  translations?: Record<string, { label: string }>;
   collectionId: string | null;
   imageUrl: string | null;
+  subcategoryIds: string[];
+  wide: boolean;
 }
 
 export interface BandDraft {
@@ -39,7 +55,8 @@ export interface FormValues {
   tint: string;
   maxProducts: string;
   tabStyle: TabRailStyle;
-  tabs: TabDraft[];
+  items: ItemDraft[];
+  tileLayout: HeroTileLayout;
   headline: string;
   bands: BandDraft[];
   brandId: string | null;
@@ -57,7 +74,7 @@ export function emptyForm(): FormValues {
   return {
     type: null, title: "", subtitle: "", collectionId: null, isActive: true,
     headerStyle: SectionHeaderStyle.PLAIN, tint: "", maxProducts: String(HOME_ROW_MAX_PRODUCTS),
-    tabStyle: TabRailStyle.ICON_CARD, tabs: [], headline: "", bands: DEFAULT_BANDS.map((b) => ({ ...b, key: newKey() })),
+    tabStyle: TabRailStyle.ICON_CARD, items: [], tileLayout: HeroTileLayout.GRID, headline: "", bands: DEFAULT_BANDS.map((b) => ({ ...b, key: newKey() })),
     brandId: null, departmentIds: [],
   };
 }
@@ -76,7 +93,8 @@ export function sectionToForm(section: HomeSectionRecord): FormValues {
     tint: str(c.tint),
     maxProducts: c.maxProducts ? String(c.maxProducts) : base.maxProducts,
     tabStyle: (c.tabStyle as TabRailStyle) ?? base.tabStyle,
-    tabs: (section.items ?? []).map((i) => ({ key: newKey(), label: i.label, collectionId: i.collectionId, imageUrl: i.imageUrl })),
+    items: (section.items ?? []).map((i) => ({ key: newKey(), label: i.label, translations: i.translations ?? undefined, collectionId: i.collectionId, imageUrl: i.imageUrl, subcategoryIds: i.subcategoryIds, wide: i.wide })),
+    tileLayout: (c.tileLayout as HeroTileLayout) ?? base.tileLayout,
     headline: str(c.headline),
     bands: Array.isArray(c.bands) ? c.bands.map((b: { label: string; maxPrice: number | null }) => ({ key: newKey(), label: b.label, maxPrice: b.maxPrice === null ? "" : String(b.maxPrice) })) : base.bands,
     brandId: str(c.brandId) || null,
@@ -91,7 +109,9 @@ function configDraft(type: HomeSectionType, v: FormValues, stored: Record<string
     case "PRODUCT_ROW":
       return { ...stored, headerStyle: v.headerStyle, tint, maxProducts: Number(v.maxProducts) };
     case "TABBED_ROW":
-      return { ...stored, tabStyle: v.tabStyle };
+      return { ...stored, tabStyle: v.tabStyle, tint };
+    case "FESTIVE_HERO":
+      return { ...stored, tileLayout: v.tileLayout };
     case "PRICE_BAND_DEALS":
       return { ...stored, headline: v.headline.trim() || undefined, bands: v.bands.map((b) => ({ label: b.label, maxPrice: b.maxPrice.trim() === "" ? null : Number(b.maxPrice) })) };
     case "BRAND_CARD":
@@ -114,7 +134,7 @@ export interface SectionBody {
 
 export interface BuiltSection {
   body: SectionBody;
-  items?: { label: string; collectionId: string; imageUrl?: string }[];
+  items?: HomeSectionItemsInput["items"];
 }
 
 /** Validates against the shared schemas and builds the request bodies, or returns the problem for a toast */
@@ -136,12 +156,17 @@ export function buildSection(v: FormValues, section: HomeSectionRecord | undefin
     if (!parsed.success) return { error: issueText(parsed.error.issues) };
     body.config = parsed.data;
   }
-  if (type !== "TABBED_ROW") return { body };
+  const limits = ITEM_LIMITS[type];
+  return limits ? buildItems(v.items, limits, body) : { body };
+}
 
-  const items = v.tabs.map((t) => ({ label: t.label.trim(), collectionId: t.collectionId ?? "", imageUrl: t.imageUrl ?? undefined }));
-  if (items.length < MIN_TABS || items.length > MAX_TABS) return { error: `Add ${MIN_TABS} to ${MAX_TABS} tabs` };
-  if (items.some((t) => !t.collectionId)) return { error: "Every tab needs a collection" };
+function buildItems(drafts: ItemDraft[], { min, max, noun }: ItemLimits, body: SectionBody): BuiltSection | { error: string } {
+  const items = drafts.map((t) => ({
+    label: t.label.trim(), translations: t.translations, collectionId: t.collectionId ?? "", imageUrl: t.imageUrl ?? undefined, subcategoryIds: t.subcategoryIds, wide: t.wide,
+  }));
+  if (items.length < min || items.length > max) return { error: `Add ${min} to ${max} ${noun}s` };
+  if (items.some((t) => !t.collectionId)) return { error: `Every ${noun} needs a collection` };
   const parsedItems = homeSectionItemsSchema.safeParse({ items });
   if (!parsedItems.success) return { error: issueText(parsedItems.error.issues) };
-  return { body, items };
+  return { body, items: parsedItems.data.items };
 }

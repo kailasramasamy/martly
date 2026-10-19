@@ -1,4 +1,4 @@
-import type { FestiveFont, HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
+import type { FestiveFont, HeroTileLayout, HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
 
 type Translations = Record<string, { title?: string; subtitle?: string }> | null;
 type NameTranslations = Record<string, { name?: string }> | null;
@@ -128,9 +128,24 @@ export interface CategoryDirectorySection extends HomeSectionBase {
   }[];
 }
 
+export interface GridTile {
+  id: string;
+  label: string;
+  translations: Record<string, { label: string }> | null;
+  /** The tile's art, else its collection's image; null falls back to `packImages` */
+  imageUrl: string | null;
+  /** Up to 3 of the collection's in-stock product images, for a pack cluster */
+  packImages: string[];
+  wide: boolean;
+  collectionId: string;
+  /** Aisles the tile narrows its collection to; empty opens the whole collection */
+  subcategoryIds: string[];
+}
+
+/** Tiles that each open a collection: "Explore" themes, or "Shop by store" mini-stores with a storefront look */
 export interface TileGridSection extends HomeSectionBase {
   type: "EXPLORE_GRID" | "STORE_GRID";
-  tiles: { id: string; label: string; imageUrl: string | null; wide: boolean; collectionId: string | null }[];
+  tiles: GridTile[];
 }
 
 /** Built-in blocks; `data` carries the same shape the legacy feed used for that block */
@@ -154,6 +169,7 @@ export type HomeSection<P = unknown> =
 export interface HomeChrome {
   /** Festive theme for the header while a festival hero leads the page */
   headerTheme: HomeTheme | null;
+  /** What the search bar cycles through: festival aisles, the store's popular searches, then everyday ones */
   searchHints: string[];
   /** Cart total that unlocks free delivery; null when delivery is already free for this shopper */
   freeDeliveryThreshold: number | null;

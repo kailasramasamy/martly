@@ -4,6 +4,8 @@ import { arrayMove } from "@dnd-kit/sortable";
 import { axiosInstance } from "../../providers/data-provider";
 import type { HomeLayoutSection, SectionPayload, useHomeLayout } from "./use-home-layout";
 
+const ART_TIMEOUT_MS = 5 * 60 * 1000;
+
 type Layout = ReturnType<typeof useHomeLayout>;
 
 /** Edit calls for the layout list; each customizes the default layout first so ids stay valid */
@@ -43,7 +45,7 @@ export function useLayoutActions(layout: Layout, editing: HomeLayoutSection | un
   };
 
   /** Creates or updates the section and returns its persisted id */
-  const saveSection = async (body: Omit<SectionPayload, "tabs">): Promise<string> => {
+  const saveSection = async (body: Omit<SectionPayload, "items">): Promise<string> => {
     if (editing) {
       const { type: _type, ...rest } = body;
       const id = await resolveId(editing);
@@ -54,13 +56,26 @@ export function useLayoutActions(layout: Layout, editing: HomeLayoutSection | un
     return (await axiosInstance.post("/home-layout", body, { params })).data.data.id;
   };
 
-  const onSave = async ({ tabs, ...body }: SectionPayload) => {
+  const onSave = async ({ items, ...body }: SectionPayload) => {
     const id = await saveSection(body);
-    if (tabs) await axiosInstance.put(`/home-layout/${id}/items`, { items: tabs }, { params });
+    if (items) await axiosInstance.put(`/home-layout/${id}/items`, { items }, { params });
     await layout.load();
     onSaved();
     message.success("Section saved");
   };
 
-  return { onToggle, onDelete, onDragEnd, onSave, onCustomize: () => run(layout.customize, "Layout customized") };
+  /** Paints tile art for a saved grid section; image generation can run for minutes */
+  const onPaint = async (s: HomeLayoutSection, repaint: boolean) => {
+    try {
+      const id = await resolveId(s);
+      const res = await axiosInstance.post(`/home-layout/${id}/art`, repaint ? { repaint } : {}, { params, timeout: ART_TIMEOUT_MS });
+      await layout.load();
+      const painted = res.data.data.painted as number;
+      message.success(`Painted ${painted} ${painted === 1 ? "tile" : "tiles"}`);
+    } catch (e: any) {
+      message.error(e?.code === "ECONNABORTED" ? "Painting is taking too long; refresh in a minute to see the tiles" : (e?.response?.data?.error ?? e?.response?.data?.message ?? "Could not paint tiles"));
+    }
+  };
+
+  return { onPaint, onToggle, onDelete, onDragEnd, onSave, onCustomize: () => run(layout.customize, "Layout customized") };
 }

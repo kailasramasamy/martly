@@ -17,10 +17,12 @@ const STRIP_OVERLAP_TOP = 16;
 const STRIP_OVERLAP_BOTTOM = 12;
 const TILE_WIDTH = Math.floor((SCREEN_WIDTH - H_PADDING * 2 - GAP * 2) / 3);
 const TILE_HEIGHT = Math.round(TILE_WIDTH * 1.18);
+const TALL_TILE_HEIGHT = TILE_HEIGHT * 2 + GAP;
 // The silhouette strip is wide and low; until its real size loads, assume the server's usual crop
 const DEFAULT_STRIP_ASPECT = 2.6;
 // Older heroes stored a tall painted background; it isn't a strip, so it's left out rather than squashed
 const MIN_STRIP_ASPECT = 1.2;
+const FEATURE_TILES = 5;
 const STAGGER_MS = 70;
 // Cards are warm cream on the solid festival colour, edged with a hint of that colour so they sit in it
 const CARD_STOPS = [0, 0.55, 1] as const;
@@ -45,9 +47,11 @@ interface TileProps {
   edge: string;
   index: number;
   onPress: () => void;
+  /** Spans two rows: the FEATURE layout's lead tile */
+  tall?: boolean;
 }
 
-function Tile({ tile, edge, index, onPress }: TileProps) {
+function Tile({ tile, edge, index, onPress, tall = false }: TileProps) {
   const title = useLocalizedTitle()(tile);
   const rise = useRef(new Animated.Value(0)).current;
   useEffect(() => {
@@ -61,7 +65,7 @@ function Tile({ tile, edge, index, onPress }: TileProps) {
         onPress={onPress}
         accessibilityRole="button"
         accessibilityLabel={title}
-        style={({ pressed }) => [styles.tile, { borderColor: edge }, pressed && styles.tilePressed]}
+        style={({ pressed }) => [styles.tile, tall && styles.tileTall, { borderColor: edge }, pressed && styles.tilePressed]}
       >
         <LinearGradient colors={CARD_FILL} locations={CARD_STOPS} style={styles.tileFill}>
           <Text style={styles.tileTitle} numberOfLines={2}>{title}</Text>
@@ -69,6 +73,34 @@ function Tile({ tile, edge, index, onPress }: TileProps) {
         </LinearGradient>
       </Pressable>
     </Animated.View>
+  );
+}
+
+interface TilesProps {
+  hero: FestiveHeroData;
+  edge: string;
+  onTile: (tile: FestiveTile) => void;
+}
+
+/** Tiles in rows of three; a FEATURE hero's five instead put the first tall on the left beside a 2x2 block */
+function TileGrid({ hero, edge, onTile }: TilesProps) {
+  const { tiles } = hero;
+  const featured = hero.tileLayout === "FEATURE" && tiles.length === FEATURE_TILES;
+  if (!featured) {
+    return (
+      <View style={styles.grid}>
+        {tiles.map((tile, i) => <Tile key={tile.id} tile={tile} edge={edge} index={i} onPress={() => onTile(tile)} />)}
+      </View>
+    );
+  }
+  const [lead, ...rest] = tiles;
+  return (
+    <View style={styles.feature}>
+      <Tile tile={lead} edge={edge} index={0} tall onPress={() => onTile(lead)} />
+      <View style={styles.featureBlock}>
+        {rest.map((tile, i) => <Tile key={tile.id} tile={tile} edge={edge} index={i + 1} onPress={() => onTile(tile)} />)}
+      </View>
+    </View>
   );
 }
 
@@ -130,11 +162,7 @@ export function FestiveHero({ hero, onTile, backdrop }: Props) {
     <View>
       <View style={[styles.hero, { backgroundColor: background, paddingTop: top }]}>
         <GreetingStrip hero={hero} />
-        <View style={styles.grid}>
-          {hero.tiles.map((tile, i) => (
-            <Tile key={tile.id} tile={tile} edge={edge} index={i} onPress={() => onTile(tile)} />
-          ))}
-        </View>
+        <TileGrid hero={hero} edge={edge} onTile={onTile} />
       </View>
     </View>
   );
@@ -149,7 +177,10 @@ const styles = StyleSheet.create({
   title: { fontSize: 30, lineHeight: 40, letterSpacing: 0.2, textAlign: "center" },
   subtitle: { fontFamily: fonts.medium, fontSize: 13, lineHeight: 18, textAlign: "center", opacity: 0.92 },
   grid: { flexDirection: "row", flexWrap: "wrap", gap: GAP, paddingHorizontal: H_PADDING },
+  feature: { flexDirection: "row", gap: GAP, paddingHorizontal: H_PADDING },
+  featureBlock: { flex: 1, flexDirection: "row", flexWrap: "wrap", gap: GAP },
   tile: { width: TILE_WIDTH, height: TILE_HEIGHT, borderRadius: 16, borderWidth: 1, overflow: "hidden" },
+  tileTall: { height: TALL_TILE_HEIGHT },
   tilePressed: { transform: [{ scale: 0.96 }], opacity: 0.9 },
   tileFill: { flex: 1, paddingTop: 10, alignItems: "center" },
   tileTitle: {

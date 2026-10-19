@@ -1,6 +1,6 @@
 import type { PrismaClient } from "../generated/prisma/index.js";
 
-type Item = { label: string; collectionId: string };
+type Item = { label: string; collectionId: string; wide?: boolean };
 export type PlannedSection = {
   type: string; title?: string; subtitle?: string; collectionId?: string; config?: Record<string, unknown>; items?: Item[];
 };

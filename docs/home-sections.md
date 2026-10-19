@@ -1,4 +1,4 @@
-# Home sections (Zepto-style Home, Phases 1–2)
+# Home sections (Zepto-style Home, Phases 1–3)
 
 The customer Home is a server-driven list of sections. Each organisation arranges its own layout; every store in the
 org shows the same layout, and a section with nothing in stock at a store hides itself there.
@@ -93,10 +93,30 @@ type must, may, or must not name a collection on the section; the layout API enf
   - Reorder with up/down, switch sections on and off, delete, and see the "hidden at store" hint.
   - Per-type forms for the product row and all Phase 2 types.
 
+## Phase 3: tiles, art and the themed top
+
+- **Explore tiles (`EXPLORE_GRID`) and Shop by store (`STORE_GRID`):**
+  - Each tile is a section item that opens its collection, optionally narrowed to aisles (`subcategoryIds`). A wide tile spans 2 columns on Explore, and sits in the 2-up row on Shop by store.
+  - The layout API rejects a tile without a collection.
+  - Tiles whose collection has ended or has no stock at the store are dropped, and the section hides below 2 tiles.
+  - Tile image fallback: the tile's art, then the collection's image, then a pack cluster of up to 3 in-stock product images (`packImages`).
+- **Tile art:**
+  - `POST /home-layout/:id/art` (`{ itemIds?, repaint? }`) paints a transparent cut-out for each tile without an image, 3 at a time.
+  - It uses `paintTile` from `services/seasonal/hero-art.ts`, prompted with the tile label and its collection's aisles, and stores the images under `home/tiles/` on S3.
+  - It's in the admin only, because it costs image credits.
+- **Search hints:**
+  - `chrome.searchHints` holds the live festival's first 2 aisles, then the store's most-searched terms from the last 14 days, topped up from `DEFAULT_SEARCH_HINTS`. There are at most 8.
+  - A term only counts once 3 different signed-in shoppers have searched it, it returned results, and it has no long digit runs. This keeps any one shopper's searches (names, phone numbers) out of everyone else's search bar.
+- **Festival hero tile layout:**
+  - The `FESTIVE_HERO` section config `tileLayout` is `GRID` (rows of three) or `FEATURE` (one tall tile plus a 2×2 block).
+  - FEATURE is used only when a hero has exactly 5 stocked tiles, so it never hides one. Otherwise it falls back to GRID, per hero. Each hero carries the `tileLayout` it got.
+  - The legacy endpoint and the festival screen always use GRID.
+
 ## Seed
 
 `cd apps/api && npx tsx prisma/seed-home-layout.ts [--regen-art] [--hero]` builds the showcase for Demo Grocers / Harur Fresh Mart:
 - Phase 2 sections from `prisma/seed-home-phase2.ts`: an "Everyday picks" tabbed row, "Pocket-friendly deals" (Under ₹19/29/49/99), Cadbury and Amul brand cards, and a "Shop by aisle" directory
+- Phase 3 from `prisma/seed-home-phase3.ts`: "Explore by mood" (8 tiles) and "Shop by store" (5 mini-stores), each tile backed by its own collection, with painted tile art.
 - three campaign cards: Personal Care Weekend, Snack Fest and Breakfast Combo
 - product rows in all three header styles
 - a repaint of the Navratri hero, with `--hero`
@@ -116,4 +136,4 @@ Art already in place is reused unless `--regen-art` is passed.
 
 - **Admin Home layout page:** drag and save, and the "hidden at store" hint (built and type-checked, not yet run in a browser).
 - **Old-style heroes:** regenerate them after deploying, including prod's festival heroes.
-- **Phases 3–5** (explore/store grids, ads, personalisation) aren't built yet.
+- **Phases 4–5** (ads and offers, personalisation and caching) aren't built yet.

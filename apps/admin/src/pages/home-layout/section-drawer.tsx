@@ -4,12 +4,15 @@ import { Alert, Button, Drawer, Form, Input, Select, Space, Switch, message } fr
 import { HomeSectionType, HomeSectionTypeLabels, SECTION_COLLECTION } from "@martly/shared/constants";
 import { homeSectionConfigSchemas } from "@martly/shared/schemas";
 import { CampaignCardFields, ProductRowFields } from "./config-forms";
-import { BrandCardFields, CategoryDirectoryFields, PriceBandFields, TabbedRowFields, parseTabs, tabsOf } from "./config-forms-phase2";
+import { BrandCardFields, CategoryDirectoryFields, PriceBandFields, TabbedRowFields, MAX_TABS, MIN_TABS, itemsOf, parseItems } from "./config-forms-phase2";
+import { FestiveHeroFields, MAX_TILES, MIN_TILES, TileGridFields } from "./config-forms-phase3";
 import type { HomeLayoutSection, SectionPayload } from "./use-home-layout";
 
-const EDITABLE: HomeSectionType[] = ["PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY"];
+const EDITABLE: HomeSectionType[] = [
+  "FESTIVE_HERO", "PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID",
+];
 const COMING_SOON: HomeSectionType[] = [
-  "EXPLORE_GRID", "STORE_GRID", "OFFERS", "BRAND_POSTERS", "PERSONALISED",
+  "OFFERS", "BRAND_POSTERS", "PERSONALISED",
 ];
 const SYSTEM = (Object.keys(HomeSectionType) as HomeSectionType[]).filter((t) => !EDITABLE.includes(t) && !COMING_SOON.includes(t));
 
@@ -18,6 +21,12 @@ const typeOptions = [
   { label: "Built-in blocks", options: SYSTEM.map((t) => ({ value: t, label: HomeSectionTypeLabels[t] })) },
   { label: "Coming soon", options: COMING_SOON.map((t) => ({ value: t, label: HomeSectionTypeLabels[t], disabled: true })) },
 ];
+
+const ITEM_LIMITS: Record<string, { min: number; max: number; noun: string }> = {
+  TABBED_ROW: { min: MIN_TABS, max: MAX_TABS, noun: "tab" },
+  EXPLORE_GRID: { min: MIN_TILES, max: MAX_TILES, noun: "tile" },
+  STORE_GRID: { min: MIN_TILES, max: MAX_TILES, noun: "tile" },
+};
 
 /** Drops empty values so optional config fields validate as absent */
 const clean = (obj: Record<string, any>): Record<string, any> =>
@@ -45,7 +54,7 @@ export const SectionDrawer = ({ open, section, onClose, onSave }: Props) => {
     form.resetFields();
     form.setFieldsValue(
       section
-        ? { type: section.type, title: section.title, subtitle: section.subtitle, collectionId: section.collectionId, isActive: section.isActive, config: section.config, tabs: tabsOf(section) }
+        ? { type: section.type, title: section.title, subtitle: section.subtitle, collectionId: section.collectionId, isActive: section.isActive, config: section.config, items: itemsOf(section) }
         : { isActive: true, config: {} },
     );
     setThemed(!!section?.config?.theme);
@@ -61,9 +70,10 @@ export const SectionDrawer = ({ open, section, onClose, onSave }: Props) => {
       message.error(parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; "));
       return;
     }
-    const tabs = values.type === "TABBED_ROW" ? parseTabs(values.tabs) : undefined;
-    if (tabs && "error" in tabs) {
-      message.error(tabs.error);
+    const limits = ITEM_LIMITS[values.type as string];
+    const items = limits ? parseItems(form.getFieldValue("items"), limits) : undefined;
+    if (items && "error" in items) {
+      message.error(items.error);
       return;
     }
     await onSave({
@@ -73,7 +83,7 @@ export const SectionDrawer = ({ open, section, onClose, onSave }: Props) => {
       collectionId: values.collectionId ?? null,
       config: parsed?.success ? parsed.data : {},
       isActive: values.isActive,
-      tabs: tabs?.tabs,
+      items: items?.items,
     });
   };
 
@@ -107,6 +117,9 @@ export const SectionDrawer = ({ open, section, onClose, onSave }: Props) => {
             <Select {...selectProps} allowClear={collectionMode === "OPTIONAL"} showSearch optionFilterProp="label" placeholder="Select collection" />
           </Form.Item>
         )}
+        {type === "FESTIVE_HERO" && <FestiveHeroFields />}
+        {type === "EXPLORE_GRID" && <TileGridFields collectionProps={selectProps} wideHint="spans two columns" />}
+        {type === "STORE_GRID" && <TileGridFields collectionProps={selectProps} wideHint="fills the wide row" />}
         {type === "PRODUCT_ROW" && <ProductRowFields />}
         {type === "TABBED_ROW" && <TabbedRowFields collectionProps={selectProps} />}
         {type === "PRICE_BAND_DEALS" && <PriceBandFields />}

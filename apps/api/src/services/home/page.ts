@@ -4,7 +4,10 @@ import { reviewSummaries, withReviews } from "../store-feed.js";
 import { storeBanners } from "../marketing/banner-feed.js";
 import { expandLayout, loadLayout } from "./layout.js";
 import { RESOLVERS } from "./registry.js";
+import { searchHints } from "./search-hints.js";
 import type { LayoutEntry, ResolveContext, ResolvedSection } from "./types.js";
+
+const FESTIVAL_HINTS = 2;
 
 export type PageStore = { id: string; organizationId: string; freeDeliveryThreshold: unknown };
 
@@ -41,8 +44,9 @@ async function withPageReviews(ctx: ResolveContext, sections: ResolvedSection[])
 }
 
 async function pageChrome(ctx: ResolveContext, store: PageStore, sections: ResolvedSection[]): Promise<HomeChrome> {
-  const lead = sections[0] as { type: string; data?: { hero?: { theme: HomeChrome["headerTheme"] } } } | undefined;
-  const [membership, popups] = await Promise.all([
+  const lead = sections[0] as { type: string; data?: { hero?: { theme: HomeChrome["headerTheme"]; tiles: { title: string }[] } } } | undefined;
+  const hero = lead?.type === "FESTIVE_HERO" ? lead.data?.hero : undefined;
+  const [membership, popups, hints] = await Promise.all([
     ctx.userId
       ? ctx.prisma.userMembership.findFirst({
           where: { userId: ctx.userId, organizationId: store.organizationId, status: "ACTIVE", endDate: { gte: ctx.now }, plan: { freeDelivery: true } },
@@ -50,10 +54,12 @@ async function pageChrome(ctx: ResolveContext, store: PageStore, sections: Resol
         })
       : null,
     storeBanners(ctx.prisma, store, ["POPUP"]),
+    // The live festival's first aisles lead the rotation
+    searchHints(ctx.prisma, store.id, (hero?.tiles ?? []).slice(0, FESTIVAL_HINTS).map((t) => t.title), ctx.now),
   ]);
   return {
-    headerTheme: lead?.type === "FESTIVE_HERO" ? lead.data?.hero?.theme ?? null : null,
-    searchHints: [],
+    headerTheme: hero?.theme ?? null,
+    searchHints: hints,
     freeDeliveryThreshold: store.freeDeliveryThreshold === null || membership ? null : Number(store.freeDeliveryThreshold),
     popup: (popups[0] as Record<string, unknown> | undefined) ?? null,
   };

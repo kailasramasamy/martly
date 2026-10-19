@@ -1,7 +1,7 @@
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import { Permission, SECTION_COLLECTION } from "@martly/shared/constants";
 import {
-  createHomeSectionSchema, homeSectionItemsSchema, parseHomeSectionConfig, reorderHomeSectionsSchema, updateHomeSectionSchema,
+  createHomeSectionSchema, homeSectionArtSchema, homeSectionItemsSchema, parseHomeSectionConfig, reorderHomeSectionsSchema, updateHomeSectionSchema,
 } from "@martly/shared/schemas";
 import type { Prisma } from "../../../generated/prisma/client.js";
 import { authenticate } from "../../middleware/auth.js";
@@ -10,7 +10,10 @@ import { getOrgUser } from "../../middleware/org-scope.js";
 import { DEFAULT_LAYOUT } from "../../services/home/default-layout.js";
 import { expandLayout, SECTION_INCLUDE, toEntry } from "../../services/home/layout.js";
 import { RESOLVERS } from "../../services/home/registry.js";
+import { paintTiles } from "../../services/home/tile-art.js";
 import type { LayoutEntry, ResolveContext } from "../../services/home/types.js";
+
+const GRID_TYPES: string[] = ["EXPLORE_GRID", "STORE_GRID"];
 
 const badRequest = (message: string) => Object.assign(new Error(message), { statusCode: 400 });
 const json = (value: unknown) => value as Prisma.InputJsonValue;
@@ -124,6 +127,9 @@ export async function homeLayoutRoutes(app: FastifyInstance) {
     const section = await ownSection(request, reply);
     if (!section) return;
     const { items } = homeSectionItemsSchema.parse(request.body);
+    if ([...GRID_TYPES, "TABBED_ROW"].includes(section.type) && items.some((i) => !i.collectionId)) {
+      throw badRequest("Every tile needs a collection to open");
+    }
     await assertCollections(section.organizationId, items.map((i) => i.collectionId));
     await app.prisma.$transaction([
       app.prisma.homeSectionItem.deleteMany({ where: { sectionId: section.id } }),
@@ -136,6 +142,17 @@ export async function homeLayoutRoutes(app: FastifyInstance) {
     ]);
     const fresh = await app.prisma.homeSection.findUniqueOrThrow({ where: { id: section.id }, include: SECTION_INCLUDE });
     return { success: true, data: fresh };
+  });
+
+  // Paints art for a grid's tiles: the named ones, or every tile still without an image
+  app.post<{ Params: { id: string } }>("/:id/art", guard, async (request, reply) => {
+    const section = await ownSection(request, reply);
+    if (!section) return;
+    if (!GRID_TYPES.includes(section.type)) throw badRequest("Only Explore and Shop by store tiles take painted art");
+    const { itemIds, repaint } = homeSectionArtSchema.parse(request.body ?? {});
+    const items = section.items.filter((i) => (itemIds ? itemIds.includes(i.id) : true) && (repaint || !i.imageUrl));
+    const painted = await paintTiles(app.prisma, items);
+    return { success: true, data: { painted } };
   });
 
   // Which of the organisation's sections show at a given store, for the admin's "hidden at this store" hint

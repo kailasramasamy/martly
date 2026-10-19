@@ -6,6 +6,7 @@ import { categoryDirectory } from "./resolvers/category-directory.js";
 import { priceBandDeals } from "./resolvers/price-band-deals.js";
 import { productRow } from "./resolvers/product-row.js";
 import { tabbedRow } from "./resolvers/tabbed-row.js";
+import { tileGrid } from "./resolvers/tile-grid.js";
 import {
   buyAgain, clientFetched, deals, departmentGrid, festiveHero, heroBanners, midBanners, recipes, timePicks,
 } from "./resolvers/system.js";
@@ -37,6 +38,6 @@ export const RESOLVERS: Record<HomeSectionType, SectionResolver> = {
   TABBED_ROW: tabbedRow,
   PRICE_BAND_DEALS: priceBandDeals,
   BRAND_CARD: brandCard,
-  EXPLORE_GRID: notBuilt,
-  STORE_GRID: notBuilt,
+  EXPLORE_GRID: tileGrid,
+  STORE_GRID: tileGrid,
 };

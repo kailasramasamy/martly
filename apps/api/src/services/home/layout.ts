@@ -70,7 +70,8 @@ async function otherCollections(ctx: ResolveContext, placed: Set<string>): Promi
 /** The layout as the app sees it: automatic sections replaced by the cards and rows they stand for. */
 export async function expandLayout(ctx: ResolveContext, layout: LayoutEntry[]): Promise<LayoutEntry[]> {
   // Festivals in the hero carousel are placed; ones it has no room for fall through to plain rows
-  const heroes = layout.some((e) => e.type === "FESTIVE_HERO") ? await festiveHeroesFor(ctx) : [];
+  const heroEntry = layout.find((e) => e.type === "FESTIVE_HERO");
+  const heroes = heroEntry ? await festiveHeroesFor(ctx, heroEntry) : [];
   const placed = new Set([
     ...heroes.map((h) => h.id),
     ...layout.flatMap((e) => [e.collectionId, ...e.items.map((i) => i.collectionId)]).filter((id): id is string => !!id),

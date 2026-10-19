@@ -21,6 +21,8 @@ interface Props {
   /** Scrolled: the location row folds away and only the search bar stays pinned (Zepto-style) */
   collapsed?: boolean;
   onLayout?: (e: LayoutChangeEvent) => void;
+  /** The search bar's rotating suggestions, from the server's home chrome */
+  searchHints?: string[];
 }
 
 /** Over festive art the header is clear at the top of the page; once scrolled a solid festive band fades in behind it */
@@ -32,7 +34,7 @@ function useFestiveBand(collapsed: boolean) {
   return band;
 }
 
-export function HomeHeader({ store, userArea, onPickStore, festive, collapsed = false, onLayout }: Props) {
+export function HomeHeader({ store, userArea, onPickStore, festive, collapsed = false, onLayout, searchHints }: Props) {
   const requireSignIn = useRequireSignIn();
   const insets = useSafeAreaInsets();
   const { unreadCount } = useNotifications();
@@ -68,7 +70,7 @@ export function HomeHeader({ store, userArea, onPickStore, festive, collapsed = 
         )}
       </View>
       )}
-      {store && <SearchBarButton onTint={tint} />}
+      {store && <SearchBarButton onTint={tint} hints={searchHints} />}
     </View>
   );
 }

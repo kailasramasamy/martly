@@ -1,10 +1,15 @@
 import { useCallback, useEffect, useState } from "react";
+import type { HomeSectionItemsInput } from "@martly/shared/schemas";
 import { axiosInstance } from "../../providers/data-provider";
 
 export interface HomeLayoutItem {
+  id: string;
   label: string;
+  translations: Record<string, { label: string }> | null;
   imageUrl: string | null;
   collectionId: string | null;
+  subcategoryIds: string[];
+  wide: boolean;
 }
 
 export interface HomeLayoutSection {
@@ -27,15 +32,11 @@ export interface SectionPayload {
   collectionId?: string | null;
   config: Record<string, unknown>;
   isActive: boolean;
-  /** Tabs of a tabbed row, saved through the items endpoint after the section itself */
-  tabs?: TabInput[];
+  /** Tabs or grid tiles, saved through the items endpoint after the section itself */
+  items?: ItemInput[];
 }
 
-export interface TabInput {
-  label: string;
-  imageUrl?: string;
-  collectionId: string;
-}
+export type ItemInput = HomeSectionItemsInput["items"][number];
 
 interface LayoutResponse {
   sections: HomeLayoutSection[];

@@ -75,6 +75,10 @@ export const HomeSectionTypeLabels: Record<HomeSectionType, string> = {
 export const SectionHeaderStyle = { PLAIN: "PLAIN", BANNER: "BANNER", ARTWORK: "ARTWORK" } as const;
 export type SectionHeaderStyle = (typeof SectionHeaderStyle)[keyof typeof SectionHeaderStyle];
 
+/** How a festival hero lays out its tiles: rows of three, or one tall tile beside a 2×2 block (exactly 5 tiles) */
+export const HeroTileLayout = { GRID: "GRID", FEATURE: "FEATURE" } as const;
+export type HeroTileLayout = (typeof HeroTileLayout)[keyof typeof HeroTileLayout];
+
 export const TabRailStyle = { ICON_CARD: "ICON_CARD", ICON_UNDERLINE: "ICON_UNDERLINE", PILL: "PILL" } as const;
 export type TabRailStyle = (typeof TabRailStyle)[keyof typeof TabRailStyle];
 
@@ -83,6 +87,11 @@ export const HOME_SECTIONS_PAGE_SIZE = 8;
 /** A price-band grid holds 2 rows of 10 */
 export const HOME_DEALS_PAGE_SIZE = 20;
 export const HOME_BRAND_CARD_PRODUCTS = 3;
+/** Product images a tile without art shows as a pack cluster */
+export const TILE_PACK_IMAGES = 3;
+export const MAX_SEARCH_HINTS = 8;
+/** Everyday searches that fill the search bar's rotation where a store's own searches run short */
+export const DEFAULT_SEARCH_HINTS = ["milk", "atta", "onion", "eggs", "bread", "paneer", "chips", "detergent"];
 /** Each directory department opens with this many wide tiles before its 4-column grid */
 export const DIRECTORY_WIDE_TILES = 2;
 

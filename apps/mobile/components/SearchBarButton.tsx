@@ -2,25 +2,35 @@ import { useEffect, useRef, useState } from "react";
 import { View, Text, Pressable, Animated, StyleSheet } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { DEFAULT_SEARCH_HINTS } from "@martly/shared/constants";
 import { colors, fonts } from "../constants/theme";
 
-const SUGGESTIONS = ["milk", "atta", "onion", "eggs", "bread", "paneer", "chips", "detergent"];
 const ROTATE_MS = 2600;
 
-/** onTint: the bar sits on a coloured festive header, so it turns white to stay distinct */
-export function SearchBarButton({ onTint = false }: { onTint?: boolean }) {
+interface Props {
+  /** onTint: the bar sits on a coloured festive header, so it turns white to stay distinct */
+  onTint?: boolean;
+  /** What the placeholder cycles through; the everyday defaults when the server sends none */
+  hints?: string[];
+}
+
+export function SearchBarButton({ onTint = false, hints }: Props) {
+  const suggestions = hints?.length ? hints : DEFAULT_SEARCH_HINTS;
   const [index, setIndex] = useState(0);
   const fade = useRef(new Animated.Value(1)).current;
+
+  // A new list can be shorter than where the rotation had got to
+  useEffect(() => setIndex(0), [suggestions]);
 
   useEffect(() => {
     const timer = setInterval(() => {
       Animated.timing(fade, { toValue: 0, duration: 180, useNativeDriver: true }).start(() => {
-        setIndex((i) => (i + 1) % SUGGESTIONS.length);
+        setIndex((i) => (i + 1) % suggestions.length);
         Animated.timing(fade, { toValue: 1, duration: 220, useNativeDriver: true }).start();
       });
     }, ROTATE_MS);
     return () => clearInterval(timer);
-  }, [fade]);
+  }, [fade, suggestions]);
 
   return (
     <View style={[styles.bar, onTint && styles.barOnTint]}>
@@ -33,7 +43,7 @@ export function SearchBarButton({ onTint = false }: { onTint?: boolean }) {
         <Ionicons name="search-outline" size={18} color={colors.textSecondary} />
         <Text style={styles.placeholder} numberOfLines={1}>
           Search for{" "}
-          <Animated.Text style={[styles.suggestion, { opacity: fade }]}>{`"${SUGGESTIONS[index]}"`}</Animated.Text>
+          <Animated.Text style={[styles.suggestion, { opacity: fade }]}>{`"${suggestions[index] ?? suggestions[0]}"`}</Animated.Text>
         </Text>
       </Pressable>
       <View style={styles.divider} />

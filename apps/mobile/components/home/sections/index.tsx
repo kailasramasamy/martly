@@ -2,15 +2,17 @@ import { memo, type ComponentType } from "react";
 import type { HomeSectionType } from "@martly/shared/constants";
 import type {
   BrandCardSection as BrandCard, CampaignCardSection as CampaignCard, CategoryDirectorySection as CategoryDirectory,
-  PriceBandDealsSection as PriceBandDeals, ProductRowSection as ProductRow, SystemSection, TabbedRowSection as TabbedRow,
+  PriceBandDealsSection as PriceBandDeals, ProductRowSection as ProductRow, SystemSection, TabbedRowSection as TabbedRow, TileGridSection as TileGrid,
 } from "@martly/shared/types";
 import type { MobileHomeSection } from "../../../lib/use-home-sections";
 import type { StoreProduct } from "../../../lib/types";
 import { BrandCardSection } from "./BrandCardSection";
 import { CampaignCardSection } from "./campaign/CampaignCardSection";
 import { CategoryDirectorySection } from "./CategoryDirectorySection";
+import { ExploreGridSection } from "./ExploreGridSection";
 import { PriceBandDealsSection } from "./PriceBandDealsSection";
 import { ProductRowSection } from "./ProductRowSection";
+import { StoreGridSection } from "./StoreGridSection";
 import { TabbedRowSection } from "./TabbedRowSection";
 import { HeroBannersSection, MidBannersSection } from "./system/BannerSections";
 import { BuyAgainSection } from "./system/BuyAgainSection";
@@ -28,6 +30,7 @@ type SectionOf<K extends HomeSectionType> =
   : K extends "PRICE_BAND_DEALS" ? PriceBandDeals<StoreProduct>
   : K extends "BRAND_CARD" ? BrandCard<StoreProduct>
   : K extends "CATEGORY_DIRECTORY" ? CategoryDirectory
+  : K extends "EXPLORE_GRID" | "STORE_GRID" ? TileGrid
   : SystemSection;
 
 type Registry = { [K in HomeSectionType]?: ComponentType<{ section: SectionOf<K> }> };
@@ -52,6 +55,8 @@ const SECTIONS: Registry = {
   PRICE_BAND_DEALS: PriceBandDealsSection,
   BRAND_CARD: BrandCardSection,
   CATEGORY_DIRECTORY: CategoryDirectorySection,
+  EXPLORE_GRID: ExploreGridSection,
+  STORE_GRID: StoreGridSection,
 };
 
 export const HomeSectionView = memo(function HomeSectionView({ section }: { section: MobileHomeSection }) {

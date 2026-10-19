@@ -1,8 +1,11 @@
+import type { HeroTileLayout } from "@martly/shared/constants";
 import type { PrismaClient } from "../../generated/prisma/client.js";
 import { FESTIVAL_DAYS_SELECT, rankFestivals } from "./festival-rank.js";
 import { liveWindow, reviewSummaries, withAllSizes, withReviews } from "./store-feed.js";
 
 const GRID_COLUMNS = 3;
+// One tall tile and a 2×2 block
+const FEATURE_TILES = 5;
 // Festivals live at once share the hero as a carousel, at most this many
 const MAX_HEROES = 3;
 
@@ -33,13 +36,19 @@ async function stockedSubcategories(prisma: PrismaClient, storeId: string, subca
   })).map((s) => [s.id, s]));
 }
 
+// A feature layout is used only when the store stocks exactly its five tiles, so it never hides one; else rows of three
+function layTiles<T>(tiles: T[], wanted: HeroTileLayout) {
+  if (wanted === "FEATURE" && tiles.length === FEATURE_TILES) return { tileLayout: wanted, shown: tiles };
+  return { tileLayout: "GRID" as const, shown: tiles.slice(0, tiles.length - (tiles.length % GRID_COLUMNS)) };
+}
+
 // Tiles whose aisles are empty at this store are hidden, keeping whole rows so the grid never has a gap
-async function forStore(prisma: PrismaClient, storeId: string, collection: HeroCollection) {
+async function forStore(prisma: PrismaClient, storeId: string, collection: HeroCollection, wanted: HeroTileLayout = "GRID") {
   const stocked = await stockedSubcategories(prisma, storeId, collection.tiles.flatMap((t) => t.subcategoryIds));
   const tiles = collection.tiles
     .map((t) => ({ ...t, subcategories: t.subcategoryIds.flatMap((id) => stocked.get(id) ?? []) }))
     .filter((t) => t.subcategories.length > 0);
-  const shown = tiles.slice(0, tiles.length - (tiles.length % GRID_COLUMNS));
+  const { tileLayout, shown } = layTiles(tiles, wanted);
   if (shown.length === 0) return null;
   const ta = (collection.translations as { ta?: { heroTitle?: string; heroKicker?: string; heroSubtitle?: string } } | null)?.ta;
   return {
@@ -51,6 +60,7 @@ async function forStore(prisma: PrismaClient, storeId: string, collection: HeroC
     imageUrl: collection.heroImageUrl as string,
     theme: collection.heroTheme as { background: string; title: string; dark: boolean },
     tiles: shown.map(({ id, title, translations, imageUrl, subcategories }) => ({ id, title, translations, imageUrl, subcategories })),
+    tileLayout,
   };
 }
 
@@ -60,9 +70,11 @@ const HERO_SELECT = {
 };
 
 /** The home screen's festive heroes: up to three live festivals this store can stock, in rankFestivals order. */
-export async function liveFestiveHeroes(prisma: PrismaClient, store: { id: string; organizationId: string }, now = new Date()) {
+export async function liveFestiveHeroes(
+  prisma: PrismaClient, store: { id: string; organizationId: string }, now = new Date(), tileLayout: HeroTileLayout = "GRID",
+) {
   const collections = await prisma.collection.findMany({ where: liveHeroWhere(store.organizationId, now), select: HERO_SELECT });
-  const heroes = await Promise.all(rankFestivals(collections, now).map((c) => forStore(prisma, store.id, c)));
+  const heroes = await Promise.all(rankFestivals(collections, now).map((c) => forStore(prisma, store.id, c, tileLayout)));
   return heroes.filter((h) => h !== null).slice(0, MAX_HEROES);
 }
 

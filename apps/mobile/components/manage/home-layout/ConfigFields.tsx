@@ -1,7 +1,7 @@
-import { View, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { SectionHeaderStyle, TabRailStyle } from "@martly/shared/constants";
-import { colors } from "../../../constants/theme";
+import { HeroTileLayout, SectionHeaderStyle, TabRailStyle } from "@martly/shared/constants";
+import { colors, fonts } from "../../../constants/theme";
 import { useResource } from "../../../lib/manage/use-resource";
 import { RemotePicker } from "../marketing/RemotePicker";
 import { ChipSelect } from "../marketing/ChipSelect";
@@ -10,8 +10,8 @@ import { SelectField } from "../ui/SelectField";
 import { TextField } from "../ui/TextField";
 import { FieldFrame } from "../ui/FieldFrame";
 import { manage } from "../ui/tokens";
-import { MAX_BANDS, MIN_BANDS, newKey, type FormValues } from "./form";
-import { TabsEditor } from "./TabsEditor";
+import { ITEM_LIMITS, MAX_BANDS, MIN_BANDS, newKey, type FormValues } from "./form";
+import { ItemsEditor } from "./ItemsEditor";
 
 interface FieldsProps {
   values: FormValues;
@@ -29,6 +29,13 @@ const TAB_STYLE_OPTIONS = [
   { value: TabRailStyle.ICON_UNDERLINE, label: "Icons with underline" },
   { value: TabRailStyle.PILL, label: "Pills" },
 ];
+
+const HERO_LAYOUT_OPTIONS = [
+  { value: HeroTileLayout.GRID, label: "Rows of three" },
+  { value: HeroTileLayout.FEATURE, label: "One tall + four", description: "Needs 5 tiles in stock, else rows of three" },
+];
+
+const WIDE_LABELS: Record<string, string> = { EXPLORE_GRID: "Wide tile (spans two columns)", STORE_GRID: "Wide tile (fills the wide row)" };
 
 const TINT_HINT = "Hex colour such as #0f766e";
 
@@ -95,17 +102,34 @@ function CategoryDirectoryFields({ values, patch }: FieldsProps) {
   );
 }
 
+function ItemFields({ values, patch }: FieldsProps) {
+  const limits = ITEM_LIMITS[values.type!]!;
+  const tabbed = values.type === "TABBED_ROW";
+  return (
+    <>
+      {tabbed ? (
+        <>
+          <SelectField label="Tab style" value={values.tabStyle} options={TAB_STYLE_OPTIONS} onChange={(tabStyle) => patch({ tabStyle: tabStyle as FormValues["tabStyle"] })} />
+          <TextField label="Tint colour" value={values.tint} onChangeText={(tint) => patch({ tint })} placeholder="#0f766e" hint={TINT_HINT} autoCapitalize="none" maxLength={7} />
+        </>
+      ) : null}
+      <FieldFrame label={tabbed ? "Tabs" : "Tiles"} hint={`${limits.min} to ${limits.max} ${limits.noun}s, each opening one collection`}>
+        <ItemsEditor items={values.items} onChange={(items) => patch({ items })} wideLabel={WIDE_LABELS[values.type!]} {...limits} />
+      </FieldFrame>
+      {tabbed ? null : <Text style={styles.note}>Tile images are generated in the admin panel</Text>}
+    </>
+  );
+}
+
 /** Settings specific to the section type; types without phone settings render nothing */
 export function ConfigFields({ values, patch }: FieldsProps) {
   switch (values.type) {
+    case "FESTIVE_HERO":
+      return <SelectField label="Tile layout" value={values.tileLayout} options={HERO_LAYOUT_OPTIONS} onChange={(tileLayout) => patch({ tileLayout: tileLayout as FormValues["tileLayout"] })} />;
     case "PRODUCT_ROW": return <ProductRowFields values={values} patch={patch} />;
     case "TABBED_ROW":
-      return (
-        <>
-          <SelectField label="Tab style" value={values.tabStyle} options={TAB_STYLE_OPTIONS} onChange={(tabStyle) => patch({ tabStyle: tabStyle as FormValues["tabStyle"] })} />
-          <FieldFrame label="Tabs" hint="2 to 8 tabs, each showing one collection"><TabsEditor tabs={values.tabs} onChange={(tabs) => patch({ tabs })} /></FieldFrame>
-        </>
-      );
+    case "EXPLORE_GRID":
+    case "STORE_GRID": return <ItemFields values={values} patch={patch} />;
     case "PRICE_BAND_DEALS": return <PriceBandFields values={values} patch={patch} />;
     case "BRAND_CARD": return <BrandCardFields values={values} patch={patch} />;
     case "CATEGORY_DIRECTORY": return <CategoryDirectoryFields values={values} patch={patch} />;
@@ -114,6 +138,7 @@ export function ConfigFields({ values, patch }: FieldsProps) {
 }
 
 const styles = StyleSheet.create({
+  note: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary },
   bands: { gap: 0 },
   bandRow: { flexDirection: "row", alignItems: "flex-start", gap: 8 },
   bandLabel: { flex: 1 },

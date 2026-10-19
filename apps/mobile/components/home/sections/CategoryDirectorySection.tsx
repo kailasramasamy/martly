@@ -8,6 +8,7 @@ import { getCategoryIcon } from "../../../constants/category-icons";
 import { useLanguage } from "../../../lib/language-context";
 import { useSectionText } from "./context";
 import { SectionHeader } from "./SectionHeader";
+import { chunk } from "./TileGridParts";
 
 type Group = CategoryDirectory["groups"][number];
 type Tile = Group["tiles"][number];
@@ -25,12 +26,6 @@ const WIDE_HEIGHT = 96;
 const TINTS = ["#fef3c7", "#e0f2fe", "#fce7f3", "#dcfce7", "#ede9fe", "#ffedd5"];
 
 const openNode = (id: string) => router.push({ pathname: "/category/[id]", params: { id } });
-
-function chunk<T>(items: T[], size: number) {
-  const rows: T[][] = [];
-  for (let i = 0; i < items.length; i += size) rows.push(items.slice(i, i + size));
-  return rows;
-}
 
 // Whole rows only, so no tile is left stranded on a short last row (a department with fewer than a row shows them all)
 function squareRows(tiles: Tile[]) {

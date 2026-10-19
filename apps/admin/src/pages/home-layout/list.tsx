@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { List, useSelect } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
 import { Alert, Button, Card, Select, type SelectProps, Space, Spin, Switch, Tag, Typography, message, Popconfirm, theme as antTheme } from "antd";
-import { DeleteOutlined, EditOutlined, HolderOutlined, PlusOutlined } from "@ant-design/icons";
+import { BgColorsOutlined, DeleteOutlined, EditOutlined, HolderOutlined, PlusOutlined } from "@ant-design/icons";
 import { DndContext, closestCenter, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
 import { SortableContext, useSortable, verticalListSortingStrategy } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
@@ -17,6 +17,34 @@ const { Text } = Typography;
 
 interface PreviewHint { id: string; resolves: boolean }
 
+const GRID_TYPES = ["EXPLORE_GRID", "STORE_GRID"];
+
+interface ArtProps {
+  section: HomeLayoutSection;
+  onPaint: (s: HomeLayoutSection, repaint: boolean) => Promise<void>;
+}
+
+/** Image generation costs credits and takes a while, so both buttons lock until it finishes */
+const ArtButtons = ({ section, onPaint }: ArtProps) => {
+  const [running, setRunning] = useState<"missing" | "all">();
+  const paint = async (repaint: boolean) => {
+    setRunning(repaint ? "all" : "missing");
+    await onPaint(section, repaint);
+    setRunning(undefined);
+  };
+  const noTiles = (section.items ?? []).length === 0;
+  return (
+    <Space.Compact>
+      <Button size="small" icon={<BgColorsOutlined />} loading={running === "missing"} disabled={!!running || noTiles} onClick={() => paint(false)}>
+        Generate art
+      </Button>
+      <Popconfirm title="Repaint every tile?" description="Replaces all tile images and uses image credits." onConfirm={() => paint(true)} disabled={!!running || noTiles}>
+        <Button size="small" loading={running === "all"} disabled={!!running || noTiles}>Repaint all</Button>
+      </Popconfirm>
+    </Space.Compact>
+  );
+};
+
 const isAutomatic = (type: string) => (EXPANDING_SECTION_TYPES as readonly string[]).includes(type);
 const sectionName = (s: HomeLayoutSection) =>
   s.title || s.collection?.title || HomeSectionTypeLabels[s.type as HomeSectionType] || s.type;
@@ -28,9 +56,10 @@ interface RowProps {
   onToggle: (s: HomeLayoutSection, active: boolean) => void;
   onEdit: (s: HomeLayoutSection) => void;
   onDelete: (s: HomeLayoutSection) => void;
+  onPaint: (s: HomeLayoutSection, repaint: boolean) => Promise<void>;
 }
 
-const SectionRow = ({ section, hint, storeName, onToggle, onEdit, onDelete }: RowProps) => {
+const SectionRow = ({ section, hint, storeName, onToggle, onEdit, onDelete, onPaint }: RowProps) => {
   const { token } = antTheme.useToken();
   const { attributes, listeners, setNodeRef, setActivatorNodeRef, transform, transition, isDragging } = useSortable({ id: section.id });
   const hidden = hint && !hint.resolves;
@@ -64,6 +93,7 @@ const SectionRow = ({ section, hint, storeName, onToggle, onEdit, onDelete }: Ro
           <div><Text type="warning" style={{ fontSize: 12 }}>Hidden at {storeName}: nothing to show there</Text></div>
         )}
       </div>
+      {GRID_TYPES.includes(section.type) && <ArtButtons section={section} onPaint={onPaint} />}
       <Switch checked={section.isActive} onChange={(v) => onToggle(section, v)} />
       <Button icon={<EditOutlined />} size="small" onClick={() => onEdit(section)}>Edit</Button>
       <Popconfirm title="Remove this section?" onConfirm={() => onDelete(section)}>
@@ -102,7 +132,7 @@ export const HomeLayoutList = () => {
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 5 } }));
   const { sections } = layout;
 
-  const { onToggle, onDelete, onDragEnd, onSave, onCustomize } = useLayoutActions(layout, drawer.section, () => setDrawer({ open: false }));
+  const { onToggle, onDelete, onDragEnd, onSave, onCustomize, onPaint } = useLayoutActions(layout, drawer.section, () => setDrawer({ open: false }));
 
   return (
     <List
@@ -147,6 +177,7 @@ export const HomeLayoutList = () => {
                     onToggle={onToggle}
                     onEdit={(sec) => setDrawer({ open: true, section: sec })}
                     onDelete={onDelete}
+                    onPaint={onPaint}
                   />
                 ))}
               </SortableContext>

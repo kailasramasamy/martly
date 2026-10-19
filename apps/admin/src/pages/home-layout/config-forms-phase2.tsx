@@ -7,12 +7,12 @@ import { TabRailStyle } from "@martly/shared/constants";
 import { homeSectionItemsSchema } from "@martly/shared/schemas";
 import { axiosInstance } from "../../providers/data-provider";
 import { ImageUpload } from "../../components/ImageUpload";
-import type { HomeLayoutSection, TabInput } from "./use-home-layout";
+import type { HomeLayoutSection, ItemInput } from "./use-home-layout";
 
 const { Text } = Typography;
 
-const MIN_TABS = 2;
-const MAX_TABS = 8;
+export const MIN_TABS = 2;
+export const MAX_TABS = 8;
 const MIN_BANDS = 2;
 const MAX_BANDS = 5;
 
@@ -27,18 +27,32 @@ const TAB_STYLES = [
 
 const DEFAULT_BANDS = [19, 29, 49, 99].map((price) => ({ label: `Under ₹${price}`, maxPrice: price }));
 
-/** Tabs the form starts with when editing a tabbed row */
-export const tabsOf = (section?: HomeLayoutSection) =>
-  (section?.items ?? []).map((i) => ({ label: i.label, imageUrl: i.imageUrl ?? undefined, collectionId: i.collectionId ?? undefined }));
+/** Tiles the form starts with when editing a section whose content is items (tabs or grid tiles) */
+export const itemsOf = (section?: HomeLayoutSection) =>
+  (section?.items ?? []).map((i) => ({
+    label: i.label,
+    // Not edited here, but carried so a save doesn't drop the Tamil labels
+    translations: i.translations ?? undefined,
+    imageUrl: i.imageUrl ?? undefined,
+    collectionId: i.collectionId ?? undefined,
+    subcategoryIds: i.subcategoryIds ?? [],
+    wide: i.wide ?? false,
+  }));
 
-/** Validates the tab list the way the items endpoint will, or returns the problem */
-export function parseTabs(tabs: unknown): { tabs: TabInput[] } | { error: string } {
-  const list = (Array.isArray(tabs) ? tabs : []).map((t) => ({ ...t, imageUrl: t.imageUrl || undefined }));
-  if (list.length < MIN_TABS || list.length > MAX_TABS) return { error: `Add ${MIN_TABS} to ${MAX_TABS} tabs` };
+interface ItemLimits {
+  min: number;
+  max: number;
+  noun: string;
+}
+
+/** Validates the item list the way the items endpoint will, or returns the problem */
+export function parseItems(items: unknown, { min, max, noun }: ItemLimits): { items: ItemInput[] } | { error: string } {
+  const list = (Array.isArray(items) ? items : []).map((t) => ({ ...t, imageUrl: t.imageUrl || undefined }));
+  if (list.length < min || list.length > max) return { error: `Add ${min} to ${max} ${noun}s` };
   const parsed = homeSectionItemsSchema.safeParse({ items: list });
-  if (!parsed.success) return { error: parsed.error.issues.map((i) => `tab ${Number(i.path[1]) + 1}: ${i.message}`).join("; ") };
-  if (list.some((t) => !t.collectionId)) return { error: "Every tab needs a collection" };
-  return { tabs: list };
+  if (!parsed.success) return { error: parsed.error.issues.map((i) => `${noun} ${Number(i.path[1]) + 1}: ${i.message}`).join("; ") };
+  if (list.some((t) => !t.collectionId)) return { error: `Every ${noun} needs a collection` };
+  return { items: parsed.data.items };
 }
 
 interface TabbedRowProps {
@@ -50,7 +64,10 @@ export const TabbedRowFields = ({ collectionProps }: TabbedRowProps) => (
     <Form.Item label="Tab style" name={["config", "tabStyle"]} initialValue={TabRailStyle.ICON_CARD}>
       <Radio.Group options={TAB_STYLES} optionType="button" />
     </Form.Item>
-    <Form.List name="tabs">
+    <Form.Item label="Tint colour" name={["config", "tint"]} extra="Colours the rail and the collection screen" {...colorField}>
+      <ColorPicker showText disabledAlpha />
+    </Form.Item>
+    <Form.List name="items">
       {(fields, { add, remove }) => (
         <Form.Item label="Tabs" extra={`${MIN_TABS} to ${MAX_TABS} tabs, each showing one collection`}>
           {fields.map(({ key, name }) => (
