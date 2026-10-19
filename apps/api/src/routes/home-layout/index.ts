@@ -1,5 +1,5 @@
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { Permission, SECTION_COLLECTION } from "@martly/shared/constants";
+import { AI_IMAGE_COST, Permission, SECTION_COLLECTION } from "@martly/shared/constants";
 import {
   createHomeSectionSchema, homeSectionArtSchema, homeSectionItemsSchema, parseHomeSectionConfig, reorderHomeSectionsSchema, updateHomeSectionSchema,
 } from "@martly/shared/schemas";
@@ -11,6 +11,8 @@ import { DEFAULT_LAYOUT } from "../../services/home/default-layout.js";
 import { expandLayout, SECTION_INCLUDE, toEntry } from "../../services/home/layout.js";
 import { RESOLVERS } from "../../services/home/registry.js";
 import { paintTiles } from "../../services/home/tile-art.js";
+import { refundAiImages, withAiImages } from "../../services/marketing/ai-images.js";
+import { meteredOrg } from "../../services/marketing/metered-org.js";
 import type { LayoutEntry, ResolveContext } from "../../services/home/types.js";
 
 const GRID_TYPES: string[] = ["EXPLORE_GRID", "STORE_GRID"];
@@ -151,8 +153,15 @@ export async function homeLayoutRoutes(app: FastifyInstance) {
     if (!GRID_TYPES.includes(section.type)) throw badRequest("Only Explore and Shop by store tiles take painted art");
     const { itemIds, repaint } = homeSectionArtSchema.parse(request.body ?? {});
     const items = section.items.filter((i) => (itemIds ? itemIds.includes(i.id) : true) && (repaint || !i.imageUrl));
-    const painted = await paintTiles(app.prisma, items);
-    return { success: true, data: { painted } };
+    const { painted, failed } = await withAiImages(
+      app, meteredOrg(getOrgUser(request), section.organizationId), items.length * AI_IMAGE_COST.HOME_TILE, "HOME_TILES", section.id,
+      async (charge) => {
+        const result = await paintTiles(app.prisma, items);
+        await refundAiImages(app.prisma, charge, result.failed * AI_IMAGE_COST.HOME_TILE);
+        return result;
+      },
+    );
+    return { success: true, data: { painted, failed } };
   });
 
   // Which of the organisation's sections show at a given store, for the admin's "hidden at this store" hint

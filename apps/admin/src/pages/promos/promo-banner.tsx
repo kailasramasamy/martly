@@ -5,7 +5,10 @@ import type { PromoDetail } from "@martly/shared/types";
 import { sectionTitle } from "../../theme";
 import { axiosInstance } from "../../providers/data-provider";
 import { ImageUpload } from "../../components/ImageUpload";
-import { usePromoEntitlements, useNotifyPromoError } from "./promo-access";
+import { AI_IMAGE_COST } from "@martly/shared/constants";
+import { AiImageUsage } from "../../components/ai-images/ai-image-usage";
+import { canAfford, useAiImages } from "../../hooks/use-ai-images";
+import { useNotifyPromoError } from "./promo-access";
 
 const GENERATE_TIMEOUT_MS = 120000;
 const PREVIEW_WIDTH = 320;
@@ -41,11 +44,10 @@ export function PromoBanner({ promo, onChanged }: { promo: PromoDetail; onChange
   const [busy, setBusy] = useState<"upload" | "generate" | "wording" | null>(null);
   const [editing, setEditing] = useState(false);
   const [textInImage, setTextInImage] = useState(promo.banner?.textInImage ?? promo.textInImage);
-  const { isOrgUser, entitlements, reload } = usePromoEntitlements();
+  const ai = useAiImages();
   const notifyError = useNotifyPromoError("Could not update the banner");
   const banner = currentBanner(promo);
   const editable = promo.status === "READY" || promo.status === "LIVE";
-  const aiLeft = entitlements ? entitlements.aiImages.total - entitlements.aiImages.used : null;
 
   const change = async (kind: NonNullable<typeof busy>, call: () => Promise<unknown>) => {
     setBusy(kind);
@@ -53,9 +55,9 @@ export function PromoBanner({ promo, onChanged }: { promo: PromoDetail; onChange
       await call();
       setEditing(false);
       onChanged();
-      if (isOrgUser) void reload();
+      void ai.refresh();
     } catch (err) {
-      notifyError(err);
+      if (!ai.handleExhausted(err)) notifyError(err);
     } finally {
       setBusy(null);
     }
@@ -85,9 +87,10 @@ export function PromoBanner({ promo, onChanged }: { promo: PromoDetail; onChange
           {editable && (
             <Space direction="vertical" size={12}>
               <Space wrap>
-                <Button icon={<ThunderboltOutlined />} loading={busy === "generate"} disabled={aiLeft === 0 || busy !== null} onClick={generate}>
-                  Generate new with AI{aiLeft !== null && ` (${aiLeft} left)`}
+                <Button icon={<ThunderboltOutlined />} loading={busy === "generate"} disabled={!canAfford(ai.usage, AI_IMAGE_COST.PROMO_BANNER) || busy !== null} onClick={generate}>
+                  Generate new with AI
                 </Button>
+                <AiImageUsage usage={ai.usage} cost={AI_IMAGE_COST.PROMO_BANNER} onBuy={ai.openBuy} />
                 <Button icon={<EditOutlined />} disabled={busy !== null} onClick={() => setEditing(true)}>Edit wording</Button>
                 {busy === "generate" && <Typography.Text type="secondary">Designing your banner… up to a minute</Typography.Text>}
               </Space>
@@ -105,6 +108,7 @@ export function PromoBanner({ promo, onChanged }: { promo: PromoDetail; onChange
           )}
         </Col>
       </Row>
+      {ai.buyModal}
       {editing && <WordingModal initial={{ title: banner.title, subtitle: banner.subtitle ?? undefined }} saving={busy === "wording"} onSave={saveWording} onClose={() => setEditing(false)} />}
     </Card>
   );

@@ -46,6 +46,7 @@ import dayjs from "dayjs";
 import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG, SUBSCRIPTION_STATUS_CONFIG, SUBSCRIPTION_FREQUENCY_CONFIG } from "../../constants/tag-colors";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle, BRAND } from "../../theme";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const { Text } = Typography;
 
@@ -184,453 +185,455 @@ export const CustomerShow = () => {
         </Button>
       }
     >
-      <Row gutter={[16, 16]}>
-        {/* Left sidebar: Profile + Addresses */}
-        <Col xs={24} lg={7}>
-          <Row gutter={[16, 16]}>
-            <Col span={24}>
-              <Card size="small">
-                <div style={{ textAlign: "center", padding: "12px 0 4px" }}>
-                  <Avatar
-                    size={64}
-                    icon={<UserOutlined />}
-                    style={{ backgroundColor: BRAND.primary, marginBottom: 10 }}
-                  />
-                  <Typography.Title level={5} style={{ marginBottom: 2 }}>
-                    {record?.name}
-                  </Typography.Title>
-                  <Text type="secondary" style={{ fontSize: 12 }}>Customer</Text>
-                </div>
-                <Descriptions column={1} size="small" style={{ marginTop: 12 }}>
-                  <Descriptions.Item label={<><MailOutlined /> Email</>}>
-                    {record?.email}
-                  </Descriptions.Item>
-                  <Descriptions.Item label={<><PhoneOutlined /> Phone</>}>
-                    {record?.phone || "—"}
-                  </Descriptions.Item>
-                  <Descriptions.Item label={<><CalendarOutlined /> Joined</>}>
-                    {record?.createdAt ? dayjs(record.createdAt).format("DD MMM YYYY") : "—"}
-                  </Descriptions.Item>
-                  {record?.referralCode && (
-                    <Descriptions.Item label="Referral Code">
-                      <Tag color="cyan" style={{ fontFamily: "monospace", fontWeight: 600, letterSpacing: 1 }}>
-                        {record.referralCode}
-                      </Tag>
+      <ReadableSection>
+        <Row gutter={[16, 16]}>
+          {/* Left sidebar: Profile + Addresses */}
+          <Col xs={24} lg={7}>
+            <Row gutter={[16, 16]}>
+              <Col span={24}>
+                <Card size="small">
+                  <div style={{ textAlign: "center", padding: "12px 0 4px" }}>
+                    <Avatar
+                      size={64}
+                      icon={<UserOutlined />}
+                      style={{ backgroundColor: BRAND.primary, marginBottom: 10 }}
+                    />
+                    <Typography.Title level={5} style={{ marginBottom: 2 }}>
+                      {record?.name}
+                    </Typography.Title>
+                    <Text type="secondary" style={{ fontSize: 12 }}>Customer</Text>
+                  </div>
+                  <Descriptions column={1} size="small" style={{ marginTop: 12 }}>
+                    <Descriptions.Item label={<><MailOutlined /> Email</>}>
+                      {record?.email}
                     </Descriptions.Item>
-                  )}
-                </Descriptions>
-              </Card>
-            </Col>
-            <Col span={24}>
-              <Card
-                title={sectionTitle(<EnvironmentOutlined />, "Addresses")}
-                size="small"
-              >
-                {addresses.length ? (
-                  <Space direction="vertical" size={8} style={{ width: "100%" }}>
-                    {addresses.map((addr) => (
-                      <div
-                        key={addr.id}
-                        style={{
-                          padding: "8px 10px",
-                          borderRadius: 6,
-                          border: "1px solid",
-                          borderColor: addr.isDefault ? BRAND.primary : "var(--ant-color-border)",
-                          background: addr.isDefault ? "var(--ant-color-primary-bg)" : undefined,
-                        }}
-                      >
-                        <Space size={4} style={{ marginBottom: 2 }}>
-                          <Text strong style={{ fontSize: 13 }}>{addr.label}</Text>
-                          {addr.isDefault && (
-                            <Tag
-                              color="green"
-                              icon={<CheckCircleFilled />}
-                              style={{ marginInlineEnd: 0, fontSize: 11, lineHeight: "18px", padding: "0 4px" }}
-                            >
-                              Default
-                            </Tag>
-                          )}
-                        </Space>
-                        <div>
-                          <Text type="secondary" style={{ fontSize: 12 }}>
-                            {addr.address}
-                          </Text>
+                    <Descriptions.Item label={<><PhoneOutlined /> Phone</>}>
+                      {record?.phone || "—"}
+                    </Descriptions.Item>
+                    <Descriptions.Item label={<><CalendarOutlined /> Joined</>}>
+                      {record?.createdAt ? dayjs(record.createdAt).format("DD MMM YYYY") : "—"}
+                    </Descriptions.Item>
+                    {record?.referralCode && (
+                      <Descriptions.Item label="Referral Code">
+                        <Tag color="cyan" style={{ fontFamily: "monospace", fontWeight: 600, letterSpacing: 1 }}>
+                          {record.referralCode}
+                        </Tag>
+                      </Descriptions.Item>
+                    )}
+                  </Descriptions>
+                </Card>
+              </Col>
+              <Col span={24}>
+                <Card
+                  title={sectionTitle(<EnvironmentOutlined />, "Addresses")}
+                  size="small"
+                >
+                  {addresses.length ? (
+                    <Space direction="vertical" size={8} style={{ width: "100%" }}>
+                      {addresses.map((addr) => (
+                        <div
+                          key={addr.id}
+                          style={{
+                            padding: "8px 10px",
+                            borderRadius: 6,
+                            border: "1px solid",
+                            borderColor: addr.isDefault ? BRAND.primary : "var(--ant-color-border)",
+                            background: addr.isDefault ? "var(--ant-color-primary-bg)" : undefined,
+                          }}
+                        >
+                          <Space size={4} style={{ marginBottom: 2 }}>
+                            <Text strong style={{ fontSize: 13 }}>{addr.label}</Text>
+                            {addr.isDefault && (
+                              <Tag
+                                color="green"
+                                icon={<CheckCircleFilled />}
+                                style={{ marginInlineEnd: 0, fontSize: 11, lineHeight: "18px", padding: "0 4px" }}
+                              >
+                                Default
+                              </Tag>
+                            )}
+                          </Space>
+                          <div>
+                            <Text type="secondary" style={{ fontSize: 12 }}>
+                              {addr.address}
+                            </Text>
+                          </div>
                         </div>
-                      </div>
-                    ))}
-                  </Space>
-                ) : (
-                  <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="No addresses saved" />
-                )}
-              </Card>
-            </Col>
-          </Row>
-        </Col>
+                      ))}
+                    </Space>
+                  ) : (
+                    <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="No addresses saved" />
+                  )}
+                </Card>
+              </Col>
+            </Row>
+          </Col>
 
-        {/* Right main area: Stats + Orders */}
-        <Col xs={24} lg={17}>
-          <Row gutter={[12, 16]}>
-            <Col xs={12} md={6}>
-              <Card size="small">
-                <Statistic
-                  title="Total Orders"
-                  value={record?._count?.orders ?? 0}
-                  prefix={<ShoppingCartOutlined style={{ color: BRAND.primary }} />}
-                />
-              </Card>
-            </Col>
-            <Col xs={12} md={6}>
-              <Card size="small">
-                <Statistic
-                  title="Total Spent"
-                  value={totalSpent}
-                  precision={0}
-                  prefix={<><CreditCardOutlined style={{ color: BRAND.success }} /> ₹</>}
-                />
-              </Card>
-            </Col>
-            <Col xs={12} md={6}>
-              <Card size="small">
-                <Statistic
-                  title="Avg. Order"
-                  value={nonCancelledOrders.length > 0 ? totalSpent / nonCancelledOrders.length : 0}
-                  precision={0}
-                  prefix={<><DollarOutlined style={{ color: BRAND.info }} /> ₹</>}
-                />
-              </Card>
-            </Col>
-            <Col xs={12} md={6}>
-              <Card size="small">
-                <Statistic
-                  title="Wallet Balance"
-                  value={walletBalance ?? 0}
-                  precision={0}
-                  loading={walletLoading}
-                  prefix={<><WalletOutlined style={{ color: "#8b5cf6" }} /> ₹</>}
-                />
-                <Button
+          {/* Right main area: Stats + Orders */}
+          <Col xs={24} lg={17}>
+            <Row gutter={[12, 16]}>
+              <Col xs={12} md={6}>
+                <Card size="small">
+                  <Statistic
+                    title="Total Orders"
+                    value={record?._count?.orders ?? 0}
+                    prefix={<ShoppingCartOutlined style={{ color: BRAND.primary }} />}
+                  />
+                </Card>
+              </Col>
+              <Col xs={12} md={6}>
+                <Card size="small">
+                  <Statistic
+                    title="Total Spent"
+                    value={totalSpent}
+                    precision={0}
+                    prefix={<><CreditCardOutlined style={{ color: BRAND.success }} /> ₹</>}
+                  />
+                </Card>
+              </Col>
+              <Col xs={12} md={6}>
+                <Card size="small">
+                  <Statistic
+                    title="Avg. Order"
+                    value={nonCancelledOrders.length > 0 ? totalSpent / nonCancelledOrders.length : 0}
+                    precision={0}
+                    prefix={<><DollarOutlined style={{ color: BRAND.info }} /> ₹</>}
+                  />
+                </Card>
+              </Col>
+              <Col xs={12} md={6}>
+                <Card size="small">
+                  <Statistic
+                    title="Wallet Balance"
+                    value={walletBalance ?? 0}
+                    precision={0}
+                    loading={walletLoading}
+                    prefix={<><WalletOutlined style={{ color: "#8b5cf6" }} /> ₹</>}
+                  />
+                  <Button
+                    size="small"
+                    type="link"
+                    style={{ padding: 0, marginTop: 4 }}
+                    onClick={() => setWalletModalOpen(true)}
+                  >
+                    Adjust Balance
+                  </Button>
+                </Card>
+              </Col>
+              <Col span={24}>
+                <Card
+                  title={sectionTitle(<ShoppingCartOutlined />, "Order History")}
                   size="small"
-                  type="link"
-                  style={{ padding: 0, marginTop: 4 }}
-                  onClick={() => setWalletModalOpen(true)}
                 >
-                  Adjust Balance
-                </Button>
-              </Card>
-            </Col>
-            <Col span={24}>
-              <Card
-                title={sectionTitle(<ShoppingCartOutlined />, "Order History")}
-                size="small"
-              >
-                <Table<OrderRecord>
-                  dataSource={orders}
-                  rowKey="id"
-                  loading={ordersLoading}
+                  <Table<OrderRecord>
+                    dataSource={orders}
+                    rowKey="id"
+                    loading={ordersLoading}
+                    size="small"
+                    pagination={orders.length > 10 ? { pageSize: 10 } : false}
+                    locale={{
+                      emptyText: (
+                        <Empty
+                          image={Empty.PRESENTED_IMAGE_SIMPLE}
+                          description="No orders yet"
+                        />
+                      ),
+                    }}
+                  >
+                    <Table.Column
+                      dataIndex="id"
+                      title="Order ID"
+                      width={100}
+                      render={(v: string) => (
+                        <span style={{ fontFamily: "monospace", fontSize: 12 }}>
+                          {v.slice(0, 8)}
+                        </span>
+                      )}
+                    />
+                    <Table.Column
+                      dataIndex="totalAmount"
+                      title="Amount"
+                      width={100}
+                      render={(v: number) => <strong>₹{Number(v).toFixed(0)}</strong>}
+                    />
+                    <Table.Column
+                      dataIndex="status"
+                      title="Status"
+                      width={140}
+                      render={(value: string) => {
+                        const config = ORDER_STATUS_CONFIG[value];
+                        return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
+                      }}
+                    />
+                    <Table.Column
+                      dataIndex="paymentMethod"
+                      title="Method"
+                      width={100}
+                      render={(value: string) =>
+                        value === "COD" ? <Tag color="orange">COD</Tag> : <Tag color="blue">Online</Tag>
+                      }
+                    />
+                    <Table.Column
+                      dataIndex="paymentStatus"
+                      title="Payment"
+                      width={100}
+                      render={(value: string) => {
+                        const config = PAYMENT_STATUS_CONFIG[value];
+                        return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
+                      }}
+                    />
+                    <Table.Column
+                      dataIndex="createdAt"
+                      title="Date"
+                      width={160}
+                      render={(v: string) => v ? new Date(v).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "—"}
+                    />
+                    <Table.Column
+                      title=""
+                      width={50}
+                      render={(_, rec: OrderRecord) => (
+                        <ShowButton hideText size="small" recordItemId={rec.id} resource="orders" />
+                      )}
+                    />
+                  </Table>
+                </Card>
+              </Col>
+              <Col span={24}>
+                <Card
+                  title={sectionTitle(<SyncOutlined />, "Subscriptions")}
                   size="small"
-                  pagination={orders.length > 10 ? { pageSize: 10 } : false}
-                  locale={{
-                    emptyText: (
-                      <Empty
-                        image={Empty.PRESENTED_IMAGE_SIMPLE}
-                        description="No orders yet"
-                      />
-                    ),
-                  }}
                 >
-                  <Table.Column
-                    dataIndex="id"
-                    title="Order ID"
-                    width={100}
-                    render={(v: string) => (
-                      <span style={{ fontFamily: "monospace", fontSize: 12 }}>
-                        {v.slice(0, 8)}
-                      </span>
-                    )}
-                  />
-                  <Table.Column
-                    dataIndex="totalAmount"
-                    title="Amount"
-                    width={100}
-                    render={(v: number) => <strong>₹{Number(v).toFixed(0)}</strong>}
-                  />
-                  <Table.Column
-                    dataIndex="status"
-                    title="Status"
-                    width={140}
-                    render={(value: string) => {
-                      const config = ORDER_STATUS_CONFIG[value];
-                      return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
+                  <Table<SubscriptionRecord>
+                    dataSource={subscriptions}
+                    rowKey="id"
+                    loading={subsLoading}
+                    size="small"
+                    pagination={subscriptions.length > 10 ? { pageSize: 10 } : false}
+                    locale={{
+                      emptyText: (
+                        <Empty
+                          image={Empty.PRESENTED_IMAGE_SIMPLE}
+                          description="No subscriptions"
+                        />
+                      ),
                     }}
-                  />
-                  <Table.Column
-                    dataIndex="paymentMethod"
-                    title="Method"
-                    width={100}
-                    render={(value: string) =>
-                      value === "COD" ? <Tag color="orange">COD</Tag> : <Tag color="blue">Online</Tag>
-                    }
-                  />
-                  <Table.Column
-                    dataIndex="paymentStatus"
-                    title="Payment"
-                    width={100}
-                    render={(value: string) => {
-                      const config = PAYMENT_STATUS_CONFIG[value];
-                      return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
-                    }}
-                  />
-                  <Table.Column
-                    dataIndex="createdAt"
-                    title="Date"
-                    width={160}
-                    render={(v: string) => v ? new Date(v).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "—"}
-                  />
-                  <Table.Column
-                    title=""
-                    width={50}
-                    render={(_, rec: OrderRecord) => (
-                      <ShowButton hideText size="small" recordItemId={rec.id} resource="orders" />
-                    )}
-                  />
-                </Table>
-              </Card>
-            </Col>
-            <Col span={24}>
-              <Card
-                title={sectionTitle(<SyncOutlined />, "Subscriptions")}
-                size="small"
-              >
-                <Table<SubscriptionRecord>
-                  dataSource={subscriptions}
-                  rowKey="id"
-                  loading={subsLoading}
+                  >
+                    <Table.Column
+                      dataIndex="id"
+                      title="ID"
+                      width={100}
+                      render={(v: string) => (
+                        <a href={`/subscriptions/show/${v}`} style={{ fontFamily: "monospace", fontSize: 12 }}>
+                          {v.slice(0, 8)}
+                        </a>
+                      )}
+                    />
+                    <Table.Column
+                      title="Store"
+                      width={140}
+                      render={(_, rec: SubscriptionRecord) => rec.store?.name ?? "—"}
+                    />
+                    <Table.Column
+                      dataIndex="frequency"
+                      title="Frequency"
+                      width={130}
+                      render={(value: string) => {
+                        const config = SUBSCRIPTION_FREQUENCY_CONFIG[value];
+                        return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
+                      }}
+                    />
+                    <Table.Column
+                      title="Items"
+                      render={(_, rec: SubscriptionRecord) => (
+                        <span style={{ fontSize: 12 }}>
+                          {rec.items?.map((i) => `${i.storeProduct?.product?.name} x${i.quantity}`).join(", ") || "—"}
+                        </span>
+                      )}
+                    />
+                    <Table.Column
+                      dataIndex="status"
+                      title="Status"
+                      width={100}
+                      render={(value: string) => {
+                        const config = SUBSCRIPTION_STATUS_CONFIG[value];
+                        return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
+                      }}
+                    />
+                    <Table.Column
+                      dataIndex="nextDeliveryDate"
+                      title="Next Delivery"
+                      width={120}
+                      render={(v: string | null) => v ? dayjs(v).format("DD MMM YYYY") : "—"}
+                    />
+                    <Table.Column
+                      dataIndex="createdAt"
+                      title="Created"
+                      width={120}
+                      render={(v: string) => v ? dayjs(v).format("DD MMM YYYY") : "—"}
+                    />
+                  </Table>
+                </Card>
+              </Col>
+              <Col span={24}>
+                <Card
+                  title={sectionTitle(<WalletOutlined />, "Wallet Transactions")}
                   size="small"
-                  pagination={subscriptions.length > 10 ? { pageSize: 10 } : false}
-                  locale={{
-                    emptyText: (
-                      <Empty
-                        image={Empty.PRESENTED_IMAGE_SIMPLE}
-                        description="No subscriptions"
-                      />
-                    ),
-                  }}
                 >
-                  <Table.Column
-                    dataIndex="id"
-                    title="ID"
-                    width={100}
-                    render={(v: string) => (
-                      <a href={`/subscriptions/show/${v}`} style={{ fontFamily: "monospace", fontSize: 12 }}>
-                        {v.slice(0, 8)}
-                      </a>
-                    )}
-                  />
-                  <Table.Column
-                    title="Store"
-                    width={140}
-                    render={(_, rec: SubscriptionRecord) => rec.store?.name ?? "—"}
-                  />
-                  <Table.Column
-                    dataIndex="frequency"
-                    title="Frequency"
-                    width={130}
-                    render={(value: string) => {
-                      const config = SUBSCRIPTION_FREQUENCY_CONFIG[value];
-                      return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
+                  <Table
+                    dataSource={walletTransactions}
+                    rowKey="id"
+                    loading={walletLoading}
+                    size="small"
+                    pagination={walletTransactions.length > 10 ? { pageSize: 10 } : false}
+                    locale={{
+                      emptyText: (
+                        <Empty
+                          image={Empty.PRESENTED_IMAGE_SIMPLE}
+                          description="No wallet transactions"
+                        />
+                      ),
                     }}
-                  />
-                  <Table.Column
-                    title="Items"
-                    render={(_, rec: SubscriptionRecord) => (
-                      <span style={{ fontSize: 12 }}>
-                        {rec.items?.map((i) => `${i.storeProduct?.product?.name} x${i.quantity}`).join(", ") || "—"}
-                      </span>
-                    )}
-                  />
-                  <Table.Column
-                    dataIndex="status"
-                    title="Status"
-                    width={100}
-                    render={(value: string) => {
-                      const config = SUBSCRIPTION_STATUS_CONFIG[value];
-                      return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
-                    }}
-                  />
-                  <Table.Column
-                    dataIndex="nextDeliveryDate"
-                    title="Next Delivery"
-                    width={120}
-                    render={(v: string | null) => v ? dayjs(v).format("DD MMM YYYY") : "—"}
-                  />
-                  <Table.Column
-                    dataIndex="createdAt"
-                    title="Created"
-                    width={120}
-                    render={(v: string) => v ? dayjs(v).format("DD MMM YYYY") : "—"}
-                  />
-                </Table>
-              </Card>
-            </Col>
-            <Col span={24}>
-              <Card
-                title={sectionTitle(<WalletOutlined />, "Wallet Transactions")}
-                size="small"
-              >
-                <Table
-                  dataSource={walletTransactions}
-                  rowKey="id"
-                  loading={walletLoading}
-                  size="small"
-                  pagination={walletTransactions.length > 10 ? { pageSize: 10 } : false}
-                  locale={{
-                    emptyText: (
-                      <Empty
-                        image={Empty.PRESENTED_IMAGE_SIMPLE}
-                        description="No wallet transactions"
-                      />
-                    ),
-                  }}
-                >
-                  <Table.Column
-                    dataIndex="type"
-                    title="Type"
-                    width={90}
-                    render={(v: string) => (
-                      <Tag color={v === "CREDIT" ? "green" : "red"} icon={v === "CREDIT" ? <PlusOutlined /> : <MinusOutlined />}>
-                        {v}
-                      </Tag>
-                    )}
-                  />
-                  <Table.Column
-                    dataIndex="amount"
-                    title="Amount"
-                    width={100}
-                    render={(v: number) => <strong>₹{Number(v).toFixed(0)}</strong>}
-                  />
-                  <Table.Column
-                    dataIndex="balanceAfter"
-                    title="Balance After"
-                    width={110}
-                    render={(v: number) => `₹${Number(v).toFixed(0)}`}
-                  />
-                  <Table.Column dataIndex="description" title="Description" ellipsis />
-                  <Table.Column
-                    dataIndex="createdAt"
-                    title="Date"
-                    width={160}
-                    render={(v: string) => v ? new Date(v).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "—"}
-                  />
-                </Table>
-              </Card>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+                  >
+                    <Table.Column
+                      dataIndex="type"
+                      title="Type"
+                      width={90}
+                      render={(v: string) => (
+                        <Tag color={v === "CREDIT" ? "green" : "red"} icon={v === "CREDIT" ? <PlusOutlined /> : <MinusOutlined />}>
+                          {v}
+                        </Tag>
+                      )}
+                    />
+                    <Table.Column
+                      dataIndex="amount"
+                      title="Amount"
+                      width={100}
+                      render={(v: number) => <strong>₹{Number(v).toFixed(0)}</strong>}
+                    />
+                    <Table.Column
+                      dataIndex="balanceAfter"
+                      title="Balance After"
+                      width={110}
+                      render={(v: number) => `₹${Number(v).toFixed(0)}`}
+                    />
+                    <Table.Column dataIndex="description" title="Description" ellipsis />
+                    <Table.Column
+                      dataIndex="createdAt"
+                      title="Date"
+                      width={160}
+                      render={(v: string) => v ? new Date(v).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "—"}
+                    />
+                  </Table>
+                </Card>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
 
-      {/* Wallet Adjust Modal */}
-      <Modal
-        title={<Space><WalletOutlined /> Adjust Wallet Balance</Space>}
-        open={walletModalOpen}
-        onCancel={() => { setWalletModalOpen(false); walletForm.resetFields(); }}
-        onOk={handleWalletAdjust}
-        confirmLoading={adjusting}
-        okText="Submit"
-      >
-        <Alert
-          type="info"
-          showIcon
-          style={{ marginBottom: 16 }}
-          message={`Current balance: \u20B9${walletBalance?.toFixed(0) ?? 0}`}
-        />
-        <Form form={walletForm} layout="vertical" initialValues={{ type: "CREDIT" }}>
-          <Form.Item name="type" label="Type" rules={[{ required: true }]}>
-            <Radio.Group>
-              <Radio.Button value="CREDIT"><PlusOutlined /> Credit</Radio.Button>
-              <Radio.Button value="DEBIT"><MinusOutlined /> Debit</Radio.Button>
-            </Radio.Group>
-          </Form.Item>
-          <Form.Item name="amount" label="Amount (₹)" rules={[{ required: true, message: "Enter amount" }]}>
-            <InputNumber min={1} max={100000} style={{ width: "100%" }} placeholder="Enter amount" />
-          </Form.Item>
-          <Form.Item name="description" label="Reason / Note">
-            <Input.TextArea rows={2} placeholder="e.g. Compensation for delayed delivery" />
-          </Form.Item>
-        </Form>
-      </Modal>
+        {/* Wallet Adjust Modal */}
+        <Modal
+          title={<Space><WalletOutlined /> Adjust Wallet Balance</Space>}
+          open={walletModalOpen}
+          onCancel={() => { setWalletModalOpen(false); walletForm.resetFields(); }}
+          onOk={handleWalletAdjust}
+          confirmLoading={adjusting}
+          okText="Submit"
+        >
+          <Alert
+            type="info"
+            showIcon
+            style={{ marginBottom: 16 }}
+            message={`Current balance: \u20B9${walletBalance?.toFixed(0) ?? 0}`}
+          />
+          <Form form={walletForm} layout="vertical" initialValues={{ type: "CREDIT" }}>
+            <Form.Item name="type" label="Type" rules={[{ required: true }]}>
+              <Radio.Group>
+                <Radio.Button value="CREDIT"><PlusOutlined /> Credit</Radio.Button>
+                <Radio.Button value="DEBIT"><MinusOutlined /> Debit</Radio.Button>
+              </Radio.Group>
+            </Form.Item>
+            <Form.Item name="amount" label="Amount (₹)" rules={[{ required: true, message: "Enter amount" }]}>
+              <InputNumber min={1} max={100000} style={{ width: "100%" }} placeholder="Enter amount" />
+            </Form.Item>
+            <Form.Item name="description" label="Reason / Note">
+              <Input.TextArea rows={2} placeholder="e.g. Compensation for delayed delivery" />
+            </Form.Item>
+          </Form>
+        </Modal>
 
-      {/* Delete Customer Modal */}
-      <Modal
-        title={
-          <Space>
-            <ExclamationCircleFilled style={{ color: "#ff4d4f" }} />
-            <span>Delete Customer</span>
-          </Space>
-        }
-        open={deleteModalOpen}
-        onCancel={isDeleting ? undefined : () => setDeleteModalOpen(false)}
-        closable={!isDeleting}
-        maskClosable={!isDeleting}
-        keyboard={!isDeleting}
-        footer={isDeleting ? null : [
-          <Button key="cancel" onClick={() => setDeleteModalOpen(false)}>
-            Cancel
-          </Button>,
-          <Button
-            key="delete"
-            danger
-            type="primary"
-            onClick={handleDelete}
-          >
-            Delete Permanently
-          </Button>,
-        ]}
-      >
-        {isDeleting ? (
-          <div style={{ textAlign: "center", padding: "24px 0" }}>
-            <Spin size="large" />
-            <div style={{ marginTop: 20 }}>
-              <Typography.Title level={5} style={{ marginBottom: 4 }}>
-                Deleting customer data...
-              </Typography.Title>
-              <Text type="secondary">
-                Removing orders, reviews, addresses, and all associated records
-              </Text>
+        {/* Delete Customer Modal */}
+        <Modal
+          title={
+            <Space>
+              <ExclamationCircleFilled style={{ color: "#ff4d4f" }} />
+              <span>Delete Customer</span>
+            </Space>
+          }
+          open={deleteModalOpen}
+          onCancel={isDeleting ? undefined : () => setDeleteModalOpen(false)}
+          closable={!isDeleting}
+          maskClosable={!isDeleting}
+          keyboard={!isDeleting}
+          footer={isDeleting ? null : [
+            <Button key="cancel" onClick={() => setDeleteModalOpen(false)}>
+              Cancel
+            </Button>,
+            <Button
+              key="delete"
+              danger
+              type="primary"
+              onClick={handleDelete}
+            >
+              Delete Permanently
+            </Button>,
+          ]}
+        >
+          {isDeleting ? (
+            <div style={{ textAlign: "center", padding: "24px 0" }}>
+              <Spin size="large" />
+              <div style={{ marginTop: 20 }}>
+                <Typography.Title level={5} style={{ marginBottom: 4 }}>
+                  Deleting customer data...
+                </Typography.Title>
+                <Text type="secondary">
+                  Removing orders, reviews, addresses, and all associated records
+                </Text>
+              </div>
+              <Steps
+                direction="vertical"
+                size="small"
+                current={-1}
+                status="process"
+                style={{ marginTop: 24, textAlign: "left", maxWidth: 300, margin: "24px auto 0" }}
+                items={[
+                  { title: "Removing orders & items", status: "process" },
+                  { title: "Removing reviews", status: "wait" },
+                  { title: "Removing addresses & tokens", status: "wait" },
+                  { title: "Deleting account", status: "wait" },
+                ]}
+              />
             </div>
-            <Steps
-              direction="vertical"
-              size="small"
-              current={-1}
-              status="process"
-              style={{ marginTop: 24, textAlign: "left", maxWidth: 300, margin: "24px auto 0" }}
-              items={[
-                { title: "Removing orders & items", status: "process" },
-                { title: "Removing reviews", status: "wait" },
-                { title: "Removing addresses & tokens", status: "wait" },
-                { title: "Deleting account", status: "wait" },
-              ]}
-            />
-          </div>
-        ) : (
-          <>
-            <Alert
-              type="error"
-              showIcon
-              style={{ marginBottom: 16 }}
-              message="This action is irreversible"
-              description="All data associated with this customer will be permanently deleted."
-            />
-            <Descriptions column={1} size="small" bordered>
-              <Descriptions.Item label="Customer">{record?.name || "—"}</Descriptions.Item>
-              <Descriptions.Item label="Phone">{record?.phone || record?.email || "—"}</Descriptions.Item>
-              <Descriptions.Item label="Orders">{orders.length} order(s) + all items & status logs</Descriptions.Item>
-              <Descriptions.Item label="Addresses">{addresses.length} saved address(es)</Descriptions.Item>
-              <Descriptions.Item label="Reviews">{reviewCount} review(s)</Descriptions.Item>
-              <Descriptions.Item label="Also removed">Wishlist, device tokens, coupon usage</Descriptions.Item>
-            </Descriptions>
-          </>
-        )}
-      </Modal>
+          ) : (
+            <>
+              <Alert
+                type="error"
+                showIcon
+                style={{ marginBottom: 16 }}
+                message="This action is irreversible"
+                description="All data associated with this customer will be permanently deleted."
+              />
+              <Descriptions column={1} size="small" bordered>
+                <Descriptions.Item label="Customer">{record?.name || "—"}</Descriptions.Item>
+                <Descriptions.Item label="Phone">{record?.phone || record?.email || "—"}</Descriptions.Item>
+                <Descriptions.Item label="Orders">{orders.length} order(s) + all items & status logs</Descriptions.Item>
+                <Descriptions.Item label="Addresses">{addresses.length} saved address(es)</Descriptions.Item>
+                <Descriptions.Item label="Reviews">{reviewCount} review(s)</Descriptions.Item>
+                <Descriptions.Item label="Also removed">Wishlist, device tokens, coupon usage</Descriptions.Item>
+              </Descriptions>
+            </>
+          )}
+        </Modal>
+      </ReadableSection>
     </Show>
   );
 };

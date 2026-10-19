@@ -1,5 +1,9 @@
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { istDateKey } from "../ist-day.js";
+import { aiImageBalance } from "./ai-image-balance.js";
+
+/** The plan the free trial grants */
+export const TRIAL_PLAN_CODE = "GROWTH";
 
 type Db = PrismaClient | Prisma.TransactionClient;
 
@@ -45,11 +49,11 @@ export async function getEntitlements(db: Db, organizationId: string) {
   const period = await activePeriod(db, organizationId, now);
   const plan = period?.product ?? (await db.adProduct.findUnique({ where: { code: FREE_PLAN_CODE } }));
   const window = period ? periodMonth(period, now) : monthWindow(now);
-  const [planMoves, topUp, lastPeriod, aiImagesUsed] = await Promise.all([
+  const [planMoves, topUp, lastPeriod, aiImages] = await Promise.all([
     db.promotionCreditEntry.aggregate({ where: { organizationId, fromPlan: true, createdAt: { gte: window.start, lt: window.end } }, _sum: { delta: true } }),
     db.promotionCreditEntry.aggregate({ where: { organizationId, fromPlan: false }, _sum: { delta: true } }),
     db.orgPlanPeriod.findFirst({ where: { organizationId, endsAt: { gt: now } }, orderBy: { endsAt: "desc" }, select: { endsAt: true } }),
-    db.bannerArtRun.count({ where: { organizationId, purpose: "BANNER", createdAt: { gte: window.start, lt: window.end } } }),
+    aiImageBalance(db, organizationId, window, plan?.aiImagesPerMonth ?? 0),
   ]);
   const planTotal = plan?.promotionCredits ?? 0;
   const planUsed = Math.max(0, -(planMoves._sum.delta ?? 0));
@@ -64,7 +68,7 @@ export async function getEntitlements(db: Db, organizationId: string) {
     paidThrough: lastPeriod?.endsAt ?? null,
     promotions: { planUsed, planTotal, planLeft: Math.max(0, planTotal - planUsed), topUpBalance: topUp._sum.delta ?? 0, resetsAt: window.end },
     pushIncluded: plan?.pushIncluded ?? false,
-    aiImages: { used: aiImagesUsed, total: plan?.aiImagesPerMonth ?? 0 },
+    aiImages,
     /** Paid plans only: extra promotions aren't sold on Free or during the trial */
     onPaidPlan: !!period && !period.isTrial,
     ...(await trialAndRenewal(db, organizationId, period)),
@@ -73,7 +77,7 @@ export async function getEntitlements(db: Db, organizationId: string) {
 
 /** Whether the free trial can still be started (or when the running one ends), and how the plan renews */
 async function trialAndRenewal(db: Db, organizationId: string, period: { isTrial: boolean; endsAt: Date } | null) {
-  const [org, paidPeriods, subscription, lastPeriod] = await Promise.all([
+  const [org, paidPeriods, subscription, lastPeriod, trialPlan] = await Promise.all([
     db.organization.findUniqueOrThrow({ where: { id: organizationId }, select: { trialUsedAt: true } }),
     db.orgPlanPeriod.count({ where: { organizationId, isTrial: false } }),
     db.marketingSubscription.findFirst({
@@ -81,9 +85,14 @@ async function trialAndRenewal(db: Db, organizationId: string, period: { isTrial
       orderBy: { createdAt: "desc" }, include: { product: { select: { name: true, code: true } } },
     }),
     db.orgPlanPeriod.findFirst({ where: { organizationId, endsAt: { gt: new Date() } }, orderBy: { endsAt: "desc" }, select: { endsAt: true } }),
+    db.adProduct.findUnique({ where: { code: TRIAL_PLAN_CODE }, select: { promotionCredits: true, aiImagesPerMonth: true } }),
   ]);
   return {
-    trial: { available: !org.trialUsedAt && paidPeriods === 0, endsAt: period?.isTrial ? period.endsAt : null },
+    trial: {
+      available: !org.trialUsedAt && paidPeriods === 0, endsAt: period?.isTrial ? period.endsAt : null,
+      /** What the trial includes a month, for the offer's wording */
+      promotionCredits: trialPlan?.promotionCredits ?? 0, aiImagesPerMonth: trialPlan?.aiImagesPerMonth ?? 0,
+    },
     subscription: subscription && {
       status: subscription.status, productName: subscription.product.name, productCode: subscription.product.code, interval: subscription.interval, cancelAtPeriodEnd: subscription.cancelAtPeriodEnd,
       /** Next charge (or, once cancelled, when the paid time runs out) */

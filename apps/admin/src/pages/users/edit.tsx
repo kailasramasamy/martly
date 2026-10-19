@@ -5,6 +5,7 @@ import { UserOutlined, LockOutlined } from "@ant-design/icons";
 
 import { sectionTitle } from "../../theme";
 import { ResponsibilitiesCard, useMemberAddOns } from "./responsibilities";
+import { ReadableSection } from "../../components/ReadableSection";
 
 interface Identity {
   role: string;
@@ -40,51 +41,53 @@ export const UserEdit = () => {
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
-      <Form {...formProps} layout="vertical">
-        <Row gutter={[16, 16]}>
-          <Col xs={24} lg={12}>
-            <Card title={sectionTitle(<UserOutlined />, "User Details")} size="small">
-              <Form.Item label="Name" name="name" rules={[{ required: true }]}>
-                <Input />
-              </Form.Item>
-              <Form.Item
-                label="Email"
-                name="email"
-                rules={[{ required: true, type: "email" }]}
-              >
-                <Input disabled={!isSuperAdmin} />
-              </Form.Item>
-              <Form.Item label="Phone" name="phone">
-                <Input />
-              </Form.Item>
-              <Form.Item label="Role" name="role" rules={[{ required: true }]}>
-                <Select options={roleOptions} placeholder="Select role" />
-              </Form.Item>
-            </Card>
-          </Col>
-
-          {!isSuperAdmin && (
+      <ReadableSection>
+        <Form {...formProps} layout="vertical">
+          <Row gutter={[16, 16]}>
             <Col xs={24} lg={12}>
-              <ResponsibilitiesCard role={role} inOrg={member.inOrg} value={member.addOns} onChange={member.setAddOns} />
-            </Col>
-          )}
-
-          {isSuperAdmin && (
-            <Col xs={24} lg={12}>
-              <Card title={sectionTitle(<LockOutlined />, "Change Password")} size="small">
+              <Card title={sectionTitle(<UserOutlined />, "User Details")} size="small">
+                <Form.Item label="Name" name="name" rules={[{ required: true }]}>
+                  <Input />
+                </Form.Item>
                 <Form.Item
-                  label="New Password"
-                  name="password"
-                  rules={[{ min: 8, message: "Password must be at least 8 characters" }]}
-                  extra="Leave blank to keep the current password"
+                  label="Email"
+                  name="email"
+                  rules={[{ required: true, type: "email" }]}
                 >
-                  <Input.Password placeholder="Enter new password" />
+                  <Input disabled={!isSuperAdmin} />
+                </Form.Item>
+                <Form.Item label="Phone" name="phone">
+                  <Input />
+                </Form.Item>
+                <Form.Item label="Role" name="role" rules={[{ required: true }]}>
+                  <Select options={roleOptions} placeholder="Select role" />
                 </Form.Item>
               </Card>
             </Col>
-          )}
-        </Row>
-      </Form>
+
+            {!isSuperAdmin && (
+              <Col xs={24} lg={12}>
+                <ResponsibilitiesCard role={role} inOrg={member.inOrg} value={member.addOns} onChange={member.setAddOns} />
+              </Col>
+            )}
+
+            {isSuperAdmin && (
+              <Col xs={24} lg={12}>
+                <Card title={sectionTitle(<LockOutlined />, "Change Password")} size="small">
+                  <Form.Item
+                    label="New Password"
+                    name="password"
+                    rules={[{ min: 8, message: "Password must be at least 8 characters" }]}
+                    extra="Leave blank to keep the current password"
+                  >
+                    <Input.Password placeholder="Enter new password" />
+                  </Form.Item>
+                </Card>
+              </Col>
+            )}
+          </Row>
+        </Form>
+      </ReadableSection>
     </Edit>
   );
 };

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Alert, Button, Card, Col, InputNumber, Popconfirm, Progress, Row, Segmented, Space, Tag, Tooltip, Typography } from "antd";
 import { CheckOutlined } from "@ant-design/icons";
 import dayjs from "dayjs";
+import { PackList } from "../../components/ai-images/pack-list";
 import { formatRupees } from "../promos/promo-utils";
 import { usePlanActions } from "./use-plan-actions";
 import { usePurchase } from "./use-purchase";
@@ -70,6 +71,11 @@ function RenewalInfo({ e, canBuy, acting, onCancel, onTurnOn }: RenewalProps) {
   return <Tag>Free plan</Tag>;
 }
 
+function aiImagesDetail({ packBalance, resetsAt }: Entitlements["aiImages"]) {
+  const reset = resetsAt ? ` · resets ${fmtDate(resetsAt)}` : "";
+  return ` · ${packBalance} pack ${packBalance === 1 ? "image" : "images"}${reset}`;
+}
+
 function UsageCard(props: RenewalProps) {
   const { e } = props;
   const { promotions } = e;
@@ -95,17 +101,19 @@ function UsageCard(props: RenewalProps) {
         total={promotions.planTotal}
         detail={` · ${promotions.planLeft} left + ${promotions.topUpBalance} extra`}
       />
-      <Meter label="AI images this month" used={e.aiImages.used} total={e.aiImages.total} />
+      <Meter label="AI images this month" used={e.aiImages.used} total={e.aiImages.total} detail={aiImagesDetail(e.aiImages)} />
       <Text>Push notifications: {e.pushIncluded ? <Tag color="green">Included</Tag> : <Tag>Not included</Tag>}</Text>
     </Card>
   );
 }
 
-function TrialCard({ canBuy, acting, onStart }: { canBuy: boolean; acting: boolean; onStart: () => void }) {
+function TrialCard({ trial, canBuy, acting, onStart }: {
+  trial: { promotionCredits: number; aiImagesPerMonth: number }; canBuy: boolean; acting: boolean; onStart: () => void;
+}) {
   return (
     <Card size="small" style={{ marginBottom: 16, borderColor: "#0d9488", background: "rgba(13, 148, 136, 0.06)" }}>
       <Space style={{ justifyContent: "space-between", width: "100%" }} wrap>
-        <Title level={5} style={{ margin: 0 }}>Try Growth free for 14 days — 2 promotions and 2 AI images, no payment needed</Title>
+        <Title level={5} style={{ margin: 0 }}>Try Growth free for 14 days — {trial.promotionCredits} promotions and {trial.aiImagesPerMonth} AI images, no payment needed</Title>
         <Tooltip title={canBuy ? undefined : OWNER_ONLY}>
           <Button type="primary" disabled={!canBuy} loading={acting} onClick={onStart}>Start free trial</Button>
         </Tooltip>
@@ -205,7 +213,7 @@ function PlanCards({ plans, interval, e, canBuy, buying, buy }: PlanCardsProps) 
 function TopupCard({ product, canBuy, onPaidPlan, buying, buy }: { product: AdProduct; canBuy: boolean; onPaidPlan: boolean; buying: string | null; buy: (p: AdProduct, quantity: number) => void }) {
   const [quantity, setQuantity] = useState(1);
   return (
-    <Card size="small" title="Extra promotion" style={{ marginTop: 16 }}>
+    <Card size="small" title="Extra promotion" style={{ height: "100%" }}>
       <Space wrap>
         <Text>{formatRupees(product.price)} each +{product.gstPercent}% GST</Text>
         <InputNumber min={1} max={MAX_TOPUP} precision={0} value={quantity} onChange={(v) => setQuantity(v ?? 1)} />
@@ -219,18 +227,28 @@ function TopupCard({ product, canBuy, onPaidPlan, buying, buy }: { product: AdPr
   );
 }
 
+function ImagePacksCard({ packs, canBuy, buying, buy }: { packs: AdProduct[]; canBuy: boolean; buying: string | null; buy: (p: AdProduct) => void }) {
+  return (
+    <Card size="small" title="AI image packs" style={{ height: "100%" }}>
+      <Text type="secondary">Used after your monthly AI images run out; they never expire.</Text>
+      <PackList packs={packs} canBuy={canBuy} buying={buying} buy={buy} />
+    </Card>
+  );
+}
+
 export function PlanTab({ entitlements, products, profile, canBuy, onProfileSaved, onPaid }: PlanTabProps) {
   const { buying, buy, modal } = usePurchase(profile, onProfileSaved, onPaid);
   const { acting, startTrial, cancelRenewal } = usePlanActions(onPaid);
   const [interval, setPlanInterval] = useState<BillingInterval>(entitlements.plan?.billingInterval ?? "MONTHLY");
   const plans = products.filter((p) => p.kind === "STORE_PLAN");
   const topup = products.find((p) => p.kind === "PROMOTION_TOPUP");
+  const imagePacks = products.filter((p) => p.kind === "AI_IMAGE_PACK");
   // Turning auto-renew back on buys the plan that was renewing again, from the end of the paid time
   const renewingProduct = plans.find((p) => p.code === entitlements.subscription?.productCode);
   return (
     <>
       <UsageCard e={entitlements} canBuy={canBuy} acting={acting === "cancel"} onCancel={cancelRenewal} onTurnOn={() => renewingProduct && buy(renewingProduct, 1, entitlements.subscription?.interval)} />
-      {entitlements.trial.available && <TrialCard canBuy={canBuy} acting={acting === "trial"} onStart={startTrial} />}
+      {entitlements.trial.available && <TrialCard trial={entitlements.trial} canBuy={canBuy} acting={acting === "trial"} onStart={startTrial} />}
       <Alert type="info" showIcon style={{ marginBottom: 16 }} message="Upgrading starts now; unused days of your current plan carry over as extra days (a free trial carries none). Switching to a cheaper plan starts after your current month." />
       <Segmented
         style={{ marginBottom: 16 }}
@@ -239,7 +257,11 @@ export function PlanTab({ entitlements, products, profile, canBuy, onProfileSave
         options={[{ value: "MONTHLY", label: "Monthly" }, { value: "YEARLY", label: "Annual · 2 months free" }]}
       />
       <PlanCards plans={plans} interval={interval} e={entitlements} canBuy={canBuy} buying={buying} buy={buy} />
-      {topup && <TopupCard product={topup} canBuy={canBuy} onPaidPlan={entitlements.onPaidPlan} buying={buying} buy={buy} />}
+      {/* Side by side on wide screens, stacked on narrow ones */}
+      <Row gutter={[16, 16]} style={{ marginTop: 16 }}>
+        {topup && <Col xs={24} lg={12}><TopupCard product={topup} canBuy={canBuy} onPaidPlan={entitlements.onPaidPlan} buying={buying} buy={buy} /></Col>}
+        {imagePacks.length > 0 && <Col xs={24} lg={12}><ImagePacksCard packs={imagePacks} canBuy={canBuy} buying={buying} buy={(p) => buy(p)} /></Col>}
+      </Row>
       {modal}
     </>
   );

@@ -34,6 +34,7 @@ import {
 } from "@ant-design/icons";
 import { useNavigate } from "react-router";
 import { axiosInstance } from "../../providers/data-provider";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -536,7 +537,7 @@ function AIDescriptionTab() {
   };
 
   return (
-    <Space direction="vertical" size={24} style={{ width: "100%", maxWidth: 700 }}>
+    <Space direction="vertical" size={24} style={{ width: "100%" }}>
       <Card title="Generate from Image URL" size="small">
         <Space.Compact style={{ width: "100%" }}>
           <Input
@@ -686,7 +687,7 @@ export const StoreIntelligencePage = () => {
           {
             key: "ai-description",
             label: "AI Product Description",
-            children: <AIDescriptionTab />,
+            children: <ReadableSection><AIDescriptionTab /></ReadableSection>,
           },
         ]}
       />

@@ -12,6 +12,7 @@ import { BookingSummary } from "./booking-summary";
 import { BrandSelect } from "./brand-select";
 import { CreativeSection, type CreativeMode } from "./creative-section";
 import { EDITABLE_STATUSES, type Campaign, type CampaignScope } from "./types";
+import { ReadableSection } from "../../components/ReadableSection";
 
 interface FormValues {
   brandId?: string;
@@ -185,32 +186,34 @@ export function CampaignForm({ scope }: { scope: CampaignScope }) {
   const locked = campaign?.status === "IN_REVIEW";
   return (
     <Wrapper title={id ? "Edit campaign" : "New campaign"} saveButtonProps={{ onClick: () => form.submit(), loading: saving }} isLoading={false}>
-      <Form form={form} layout="vertical" onFinish={save} initialValues={campaign ? toFormValues(campaign) : { quantity: 1, startsAt: dayjs().add(DEFAULT_START_DAYS, "day") }}>
-        <Row gutter={24}>
-          <Col xs={24} lg={12}>
-            <Card title="Booking" size="small" style={{ marginBottom: 16 }}>
-              <BookingFields scope={scope} campaign={campaign} locked={locked} packages={packages} product={product} categories={categories} />
-              <BookingSummary scope={scope} product={product} quantity={quantity ?? 1} startsAt={startsAt} categoryId={categoryId} excludeId={id} />
-            </Card>
-            {scope.mode === "platform" && (
-              <Card title="Target stores (optional)" size="small">
-                <Form.Item name="targetStoreIds" extra="Leave empty to run in every store that stocks the brand" style={{ marginBottom: 0 }}>
-                  <Select mode="multiple" optionFilterProp="label" options={stores.map((s) => ({ value: s.id, label: s.name }))} disabled={locked} />
-                </Form.Item>
+      <ReadableSection>
+        <Form form={form} layout="vertical" onFinish={save} initialValues={campaign ? toFormValues(campaign) : { quantity: 1, startsAt: dayjs().add(DEFAULT_START_DAYS, "day") }}>
+          <Row gutter={24}>
+            <Col xs={24} lg={12}>
+              <Card title="Booking" size="small" style={{ marginBottom: 16 }}>
+                <BookingFields scope={scope} campaign={campaign} locked={locked} packages={packages} product={product} categories={categories} />
+                <BookingSummary scope={scope} product={product} quantity={quantity ?? 1} startsAt={startsAt} categoryId={categoryId} excludeId={id} />
               </Card>
-            )}
-          </Col>
-          <Col xs={24} lg={12}>
-            <Card title="Banner text" size="small" style={{ marginBottom: 16 }}>
-              <Form.Item name="title" label="Title" rules={[{ required: true, min: 2, max: 60 }]}><Input maxLength={60} /></Form.Item>
-              <Form.Item name="subtitle" label="Subtitle" rules={[{ max: 90 }]}><Input maxLength={90} /></Form.Item>
-            </Card>
-            <Card title="Creative" size="small">
-              <CreativeSection mode={mode} onModeChange={setMode} />
-            </Card>
-          </Col>
-        </Row>
-      </Form>
+              {scope.mode === "platform" && (
+                <Card title="Target stores (optional)" size="small">
+                  <Form.Item name="targetStoreIds" extra="Leave empty to run in every store that stocks the brand" style={{ marginBottom: 0 }}>
+                    <Select mode="multiple" optionFilterProp="label" options={stores.map((s) => ({ value: s.id, label: s.name }))} disabled={locked} />
+                  </Form.Item>
+                </Card>
+              )}
+            </Col>
+            <Col xs={24} lg={12}>
+              <Card title="Banner text" size="small" style={{ marginBottom: 16 }}>
+                <Form.Item name="title" label="Title" rules={[{ required: true, min: 2, max: 60 }]}><Input maxLength={60} /></Form.Item>
+                <Form.Item name="subtitle" label="Subtitle" rules={[{ max: 90 }]}><Input maxLength={90} /></Form.Item>
+              </Card>
+              <Card title="Creative" size="small">
+                <CreativeSection mode={mode} onModeChange={setMode} />
+              </Card>
+            </Col>
+          </Row>
+        </Form>
+      </ReadableSection>
     </Wrapper>
   );
 }

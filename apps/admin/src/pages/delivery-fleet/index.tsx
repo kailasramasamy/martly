@@ -6,6 +6,7 @@ import { RosterGrid } from "./roster-grid";
 import { SettingsForm } from "./settings-form";
 import { SlotRosterModal } from "./slot-roster-modal";
 import type { RosterData, SlotWindow } from "./types";
+import { ReadableSection } from "../../components/ReadableSection";
 
 export const DeliveryFleet = () => {
   const [storeId, setStoreId] = useState<string | null>(null);
@@ -34,7 +35,7 @@ export const DeliveryFleet = () => {
       </div>
       {storeId && (
         <Space direction="vertical" size={16} style={{ width: "100%" }}>
-          <SettingsForm storeId={storeId} />
+          <ReadableSection><SettingsForm storeId={storeId} /></ReadableSection>
           <RosterGrid slots={roster.slots} riders={roster.riders} onEdit={(window, day) => setEditing({ window, day })} />
           <SlotRosterModal
             storeId={storeId}

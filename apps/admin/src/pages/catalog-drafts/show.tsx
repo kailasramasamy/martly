@@ -11,6 +11,7 @@ import { ApproveForm } from "./approve-form";
 import { DraftFacts } from "./draft-facts";
 import { ShotsGrid } from "./shots-grid";
 import { SizesCard } from "./sizes-card";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const POLL_MS = 3000;
 const IN_FLIGHT = ["QUEUED", "PROCESSING"];
@@ -73,23 +74,25 @@ export const CatalogDraftShow = () => {
 
   return (
     <Show title={draft.name ?? "Reading label…"} canEdit={false} canDelete={false} headerButtons={() => <Tag color={status?.color}>{status?.label ?? draft.status}</Tag>}>
-      <Space direction="vertical" size="middle" style={{ width: "100%" }}>
-        <Banner draft={draft} />
-        {draft.status === "NEEDS_REVIEW" && <ApproveForm draft={draft} busy={busy} discard={discard} onApprove={(body) => act("approve", "approve", "Product published", body)} />}
-        {draft.status === "FAILED" && (
-          <Space>
-            <Button type="primary" loading={busy === "retry"} onClick={() => act("retry", "retry", "Retry queued")}>Retry</Button>
-            {discard}
-          </Space>
-        )}
-        {draft.status === "QUEUED" && discard}
-        {draft.status === "PUBLISHED" && !draft.matchedExisting && productId && (
-          <SizesCard draft={draft} busy={busy === "sizes"} onAdd={(sizes) => act("sizes", "sizes", "Sizes added to the store", { sizes })} />
-        )}
-        {productId && <Button type="link" onClick={() => show("products", productId)}>View product</Button>}
-        <ShotsGrid shots={draft.shots} />
-        <DraftFacts draft={draft} />
-      </Space>
+      <ReadableSection>
+        <Space direction="vertical" size="middle" style={{ width: "100%" }}>
+          <Banner draft={draft} />
+          {draft.status === "NEEDS_REVIEW" && <ApproveForm draft={draft} busy={busy} discard={discard} onApprove={(body) => act("approve", "approve", "Product published", body)} />}
+          {draft.status === "FAILED" && (
+            <Space>
+              <Button type="primary" loading={busy === "retry"} onClick={() => act("retry", "retry", "Retry queued")}>Retry</Button>
+              {discard}
+            </Space>
+          )}
+          {draft.status === "QUEUED" && discard}
+          {draft.status === "PUBLISHED" && !draft.matchedExisting && productId && (
+            <SizesCard draft={draft} busy={busy === "sizes"} onAdd={(sizes) => act("sizes", "sizes", "Sizes added to the store", { sizes })} />
+          )}
+          {productId && <Button type="link" onClick={() => show("products", productId)}>View product</Button>}
+          <ShotsGrid shots={draft.shots} />
+          <DraftFacts draft={draft} />
+        </Space>
+      </ReadableSection>
     </Show>
   );
 };

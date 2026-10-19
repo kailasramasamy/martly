@@ -87,13 +87,14 @@ export async function updatePromoBanner(
 }
 
 /** Paints a new image for a promotion's banner from its wording and target; uses one of the month's AI images */
-export async function regeneratePromoImage(prisma: PrismaClient, promo: BannerOwner, log: FastifyBaseLogger) {
+export async function regeneratePromoImage(ctx: { prisma: PrismaClient; fcm: Messaging | null }, promo: BannerOwner, log: FastifyBaseLogger) {
+  const { prisma } = ctx;
   if (!["READY", "LIVE"].includes(promo.status)) throw new PromoStateError("The banner can be changed while the promotion is ready or live");
   const banner = await prisma.banner.findFirst({ where: { promoId: promo.id }, select: { title: true, subtitle: true } });
   const en = copyOf(promo);
-  const art = await generateBannerImage(prisma, promo.organizationId, {
+  const art = await generateBannerImage(ctx, promo.organizationId, {
     title: (banner?.title ?? en?.title ?? "Offer").slice(0, 40), subtitle: banner?.subtitle ?? en?.subtitle,
     actionType: promo.kind === "AI" ? "COLLECTION" : promo.actionType, actionTarget: promo.kind === "AI" ? promo.collectionId : promo.actionTarget,
-  }, (m) => log.warn(`promo ${promo.id} image: ${m}`));
+  }, (m) => log.warn(`promo ${promo.id} image: ${m}`), promo.id);
   await updatePromoBanner(prisma, promo, { imageUrl: art.imageUrl, textInImage: art.textInImage });
 }

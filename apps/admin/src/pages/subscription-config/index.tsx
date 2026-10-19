@@ -3,6 +3,7 @@ import { App, Card, Form, Input, Switch, Radio, Button, Select, Space, Spin, Typ
 import { CalendarOutlined, ShopOutlined, SaveOutlined } from "@ant-design/icons";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const { Text } = Typography;
 
@@ -165,7 +166,7 @@ export const SubscriptionConfig = () => {
   }
 
   return (
-    <div style={{ maxWidth: 800, margin: "0 auto" }}>
+    <ReadableSection>
       <div style={{ marginBottom: 24 }}>
         <h2 style={{ margin: 0 }}>
           <Space>
@@ -274,6 +275,6 @@ export const SubscriptionConfig = () => {
           </Form>
         )}
       </Card>
-    </div>
+    </ReadableSection>
   );
 };

@@ -8,8 +8,10 @@ import { ListRow } from "../ui/ListRow";
 import { api } from "../../../lib/api";
 import { useResource } from "../../../lib/manage/use-resource";
 import { useAuth } from "../../../lib/auth-context";
-import { RazorpayCheckout } from "../../RazorpayCheckout";
 import { colors, fonts } from "../../../constants/theme";
+import { PlanPayment } from "./PlanPayment";
+import { ImagePackList } from "./ImagePackList";
+import { imagePacks } from "./ai-images";
 import { CurrentPlanCard, TrialCard } from "./CurrentPlanCard";
 import { SegmentedTabs } from "../ui/SegmentedTabs";
 import { PlanCard, TopUpCard, UsageCard } from "./PlanSections";
@@ -31,21 +33,23 @@ const LINKS = [
   { title: "Billing details", subtitle: "Name, GSTIN and address on invoices", icon: "business-outline", href: "/manage/marketing-plan/billing" },
 ] as const;
 
-function PlanPayment({ checkout }: { checkout: ReturnType<typeof useAdCheckout> }) {
-  const { user } = useAuth();
-  const prefill = { email: user?.email, name: user?.name, contact: user?.phone ?? undefined };
-  const { order, subscription } = checkout;
-  if (order) {
-    return (
-      <RazorpayCheckout visible keyId={order.checkout.keyId} orderId={order.checkout.orderId} amount={order.checkout.amount} currency={order.checkout.currency}
-        name="Martly Marketing" description="Marketing plan" prefill={prefill} onSuccess={checkout.onSuccess} onCancel={checkout.onCancel} />
-    );
-  }
-  if (!subscription) return null;
+type PacksProps = { packs: AdProduct[]; canBuy: boolean; pendingId: string | null; locked: boolean; onBuy: (pack: AdProduct) => void };
+
+function ImagePacksCard({ packs, ...list }: PacksProps) {
   return (
-    <RazorpayCheckout visible keyId={subscription.keyId} subscriptionId={subscription.subscriptionId}
-      name="Martly Marketing" description={`${subscription.planName} plan`} prefill={prefill} onSuccess={checkout.onSubscribed} onCancel={checkout.onCancel} />
+    <SectionCard title="AI image packs">
+      <Text style={[styles.note, styles.packNote]}>Used after your monthly AI images run out; they never expire. Available on every plan, including Free.</Text>
+      <ImagePackList packs={packs} {...list} />
+    </SectionCard>
   );
+}
+
+/** Only the button that was tapped spins; the rest wait, disabled, until it finishes */
+function useTapped(locked: boolean) {
+  const [tapped, setTapped] = useState<string | null>(null);
+  const busy = (key: string) => locked && tapped === key;
+  const tap = (key: string, run: () => void) => () => { setTapped(key); run(); };
+  return { tapped, setTapped, locked, busy, tap };
 }
 
 export function MarketingPlanScreen() {
@@ -61,36 +65,45 @@ export function MarketingPlanScreen() {
   const e = entitlements.data;
   const interval = pickedInterval ?? e?.plan?.billingInterval ?? "MONTHLY";
   const plans = (products.data ?? []).filter((p) => p.kind === "STORE_PLAN");
+  const packs = imagePacks(products.data);
   const topUp = (products.data ?? []).find((p) => p.kind === "PROMOTION_TOPUP");
   // Turning auto-renew back on buys the plan that was renewing again, from the end of the paid time
   const renewingPlan = plans.find((p) => p.code === e?.subscription?.productCode);
-  const busy = checkout.running || actions.running;
+  const { tapped, setTapped, locked, busy, tap } = useTapped(checkout.running || actions.running);
   const reload = () => { entitlements.reload(); products.reload(); };
 
   return (
     <ManageStackScreen title="Marketing plan" loading={entitlements.loading || products.loading} error={entitlements.error ?? products.error} onRetry={reload} onRefresh={reload}>
       {e ? (
         <>
-          {e.trial.available ? <TrialCard canBuy={canBuy} busy={busy} onStart={actions.startTrial} /> : null}
-          <CurrentPlanCard e={e} canBuy={canBuy} busy={busy} onCancelRenewal={actions.cancelRenewal} onResume={() => renewingPlan && e.subscription && checkout.subscribe(renewingPlan, e.subscription.interval)} />
+          {e.trial.available ? <TrialCard trial={e.trial} canBuy={canBuy} busy={busy("trial")} locked={locked} onStart={tap("trial", actions.startTrial)} /> : null}
+          <CurrentPlanCard
+            e={e} canBuy={canBuy} busy={busy("renewal")} locked={locked}
+            onCancelRenewal={() => { setTapped("renewal"); return actions.cancelRenewal(); }}
+            onResume={tap("renewal", () => renewingPlan && e.subscription && checkout.subscribe(renewingPlan, e.subscription.interval))}
+          />
           <UsageCard e={e} />
           {canBuy ? null : <Text style={styles.note}>Only the owner can buy</Text>}
           <Text style={styles.note}>{UPGRADE_NOTE}</Text>
           <SegmentedTabs options={INTERVAL_OPTIONS} value={interval} onChange={setPickedInterval} />
           {plans.map((p) => (
-            <PlanCard key={p.id} product={p} currentProduct={plans.find((c) => c.id === e.plan?.id)} interval={interval} e={e} canBuy={canBuy} busy={busy} onBuy={() => checkout.subscribe(p, interval)} />
+            <PlanCard key={p.id} product={p} currentProduct={plans.find((c) => c.id === e.plan?.id)} interval={interval} e={e} canBuy={canBuy} busy={busy(p.id)} locked={locked} onBuy={tap(p.id, () => checkout.subscribe(p, interval))} />
           ))}
-          {topUp ? <TopUpCard onPaidPlan={e.onPaidPlan} product={topUp} quantity={quantity} onQuantity={setQuantity} canBuy={canBuy} busy={busy} onBuy={() => checkout.buy(topUp.id, quantity)} /> : null}
+          {topUp ? <TopUpCard onPaidPlan={e.onPaidPlan} product={topUp} quantity={quantity} onQuantity={setQuantity} canBuy={canBuy} busy={busy(topUp.id)} locked={locked} onBuy={tap(topUp.id, () => checkout.buy(topUp.id, quantity))} /> : null}
+          {packs.length > 0 ? (
+            <ImagePacksCard packs={packs} canBuy={canBuy} pendingId={locked ? tapped : null} locked={locked} onBuy={(p) => tap(p.id, () => checkout.buy(p.id, 1))()} />
+          ) : null}
           <SectionCard flush>
             {LINKS.map((l) => <ListRow key={l.title} title={l.title} subtitle={l.subtitle} icon={l.icon} chevron onPress={() => router.push(l.href)} />)}
           </SectionCard>
         </>
       ) : null}
-      <PlanPayment checkout={checkout} />
+      <PlanPayment checkout={checkout} description="Marketing" />
     </ManageStackScreen>
   );
 }
 
 const styles = StyleSheet.create({
+  packNote: { paddingHorizontal: 0, marginBottom: 12 },
   note: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, lineHeight: 18, paddingHorizontal: 4 },
 });

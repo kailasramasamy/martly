@@ -20,8 +20,10 @@ export function UsageCard({ e }: { e: Entitlements }) {
       <KeyValue label="Promotions left" value={`${promotions.planLeft} of ${promotions.planTotal}`} />
       <KeyValue label="Extra promotions" value={promotions.topUpBalance} />
       <KeyValue label="AI images" value={`${aiImages.used} of ${aiImages.total} used`} />
+      {aiImages.packBalance > 0 ? <KeyValue label="AI images from packs" value={`+${aiImages.packBalance}`} /> : null}
       <KeyValue label="Push notifications" value={e.pushIncluded ? "Included" : "Not included"} />
       {promotions.resetsAt ? <Text style={styles.muted}>{`Promotions reset on ${formatDate(promotions.resetsAt)}`}</Text> : null}
+      {aiImages.resetsAt ? <Text style={styles.muted}>{`Plan AI images reset on ${formatDate(aiImages.resetsAt)}`}</Text> : null}
     </SectionCard>
   );
 }
@@ -77,10 +79,12 @@ interface PlanCardProps {
   e: Entitlements;
   canBuy: boolean;
   busy: boolean;
+  /** Another purchase is running: this one waits, without spinning */
+  locked: boolean;
   onBuy: () => void;
 }
 
-export function PlanCard({ product, currentProduct, interval, e, canBuy, busy, onBuy }: PlanCardProps) {
+export function PlanCard({ product, currentProduct, interval, e, canBuy, busy, locked, onBuy }: PlanCardProps) {
   const current = e.plan?.id === product.id && (product.price === 0 || e.subscription?.interval === interval);
   const unavailable = interval === "YEARLY" && product.yearlyPrice === null;
   return (
@@ -97,7 +101,7 @@ export function PlanCard({ product, currentProduct, interval, e, canBuy, busy, o
         </View>
       ))}
       {product.price > 0 ? (
-        <Button label={actionLabel(product, currentProduct, interval, e)} onPress={onBuy} disabled={!canBuy || unavailable || isAutoRenewing(e, product, interval)} loading={busy} variant={current ? "secondary" : "primary"} style={styles.buy} />
+        <Button label={actionLabel(product, currentProduct, interval, e)} onPress={onBuy} disabled={!canBuy || locked || unavailable || isAutoRenewing(e, product, interval)} loading={busy} variant={current ? "secondary" : "primary"} style={styles.buy} />
       ) : (
         <Text style={[styles.muted, styles.buy]}>You're on this plan whenever no paid plan is running.</Text>
       )}
@@ -112,10 +116,12 @@ interface TopUpProps {
   onQuantity: (n: number) => void;
   canBuy: boolean;
   busy: boolean;
+  /** Another purchase is running: this one waits, without spinning */
+  locked: boolean;
   onBuy: () => void;
 }
 
-export function TopUpCard({ onPaidPlan, product, quantity, onQuantity, canBuy, busy, onBuy }: TopUpProps) {
+export function TopUpCard({ onPaidPlan, product, quantity, onQuantity, canBuy, busy, locked, onBuy }: TopUpProps) {
   return (
     <SectionCard title="Extra promotions">
       <Text style={styles.muted}>{`${formatINR(product.price)} each + ${product.gstPercent}% GST. Used after your monthly promotions run out; they never expire.`}</Text>
@@ -124,7 +130,7 @@ export function TopUpCard({ onPaidPlan, product, quantity, onQuantity, canBuy, b
         <Text style={styles.qty}>{quantity}</Text>
         <StepButton icon="add" label="More" disabled={quantity >= MAX_QTY} onPress={() => onQuantity(quantity + 1)} />
       </View>
-      <Button label={`Buy ${quantity} for ${formatINR(product.price * quantity)}`} onPress={onBuy} disabled={!canBuy || !onPaidPlan} loading={busy} style={styles.buy} />
+      <Button label={`Buy ${quantity} for ${formatINR(product.price * quantity)}`} onPress={onBuy} disabled={!canBuy || locked || !onPaidPlan} loading={busy} style={styles.buy} />
       {onPaidPlan ? null : <Text style={styles.muted}>Extra promotions are available on Growth and Pro</Text>}
     </SectionCard>
   );

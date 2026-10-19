@@ -36,6 +36,7 @@ import {
   SUBSCRIPTION_FREQUENCY_CONFIG,
   ORDER_STATUS_CONFIG,
 } from "../../constants/tag-colors";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const { Text } = Typography;
 
@@ -166,7 +167,7 @@ export const SubscriptionShow = () => {
   }));
 
   return (
-    <div style={{ maxWidth: 1000, margin: "0 auto" }}>
+    <ReadableSection>
       <div
         style={{
           marginBottom: 24,
@@ -486,6 +487,6 @@ export const SubscriptionShow = () => {
           </div>
         </div>
       </Modal>
-    </div>
+    </ReadableSection>
   );
 };

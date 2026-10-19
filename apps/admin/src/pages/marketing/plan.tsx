@@ -11,6 +11,7 @@ import { BrandAdsTab } from "./brand-ads-tab";
 import { PlanTab } from "./plan-tab";
 import { ResultsTab } from "./results-tab";
 import type { AdProduct, BillingProfile } from "./types";
+import { ReadableSection } from "../../components/ReadableSection";
 
 function useCatalogue() {
   const [products, setProducts] = useState<AdProduct[]>([]);
@@ -56,7 +57,7 @@ export const MarketingPlan = () => {
           {
             key: "plan",
             label: "Plan",
-            children: <PlanTab entitlements={entitlements} products={products} profile={profile} canBuy={!!buyAccess?.can} onProfileSaved={setProfile} onPaid={onPaid} />,
+            children: <ReadableSection><PlanTab entitlements={entitlements} products={products} profile={profile} canBuy={!!buyAccess?.can} onProfileSaved={setProfile} onPaid={onPaid} /></ReadableSection>,
           },
           { key: "billing", label: "Billing & invoices", children: <BillingTab profile={profile} canEdit={!!buyAccess?.can} onSaved={setProfile} purchases={purchases} /> },
           { key: "results", label: "Results", children: <ResultsTab /> },

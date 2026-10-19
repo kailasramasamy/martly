@@ -6,10 +6,20 @@ export interface Entitlements {
   paidThrough: string | null;
   promotions: { planUsed: number; planTotal: number; planLeft: number; topUpBalance: number; resetsAt: string | null };
   pushIncluded: boolean;
-  aiImages: { used: number; total: number };
+  aiImages: AiImages;
   onPaidPlan: boolean;
-  trial: { available: boolean; endsAt: string | null };
+  trial: { available: boolean; endsAt: string | null; promotionCredits: number; aiImagesPerMonth: number };
   subscription: PlanSubscription | null;
+}
+
+/** The AI-image meter: this month's plan allowance is spent first, then bought packs (which never expire) */
+export interface AiImages {
+  used: number;
+  total: number;
+  planLeft: number;
+  packBalance: number;
+  left: number;
+  resetsAt: string | null;
 }
 
 export interface PlanSubscription {
@@ -23,7 +33,7 @@ export interface PlanSubscription {
 
 export interface AdProduct {
   id: string;
-  kind: "STORE_PLAN" | "PROMOTION_TOPUP";
+  kind: "STORE_PLAN" | "PROMOTION_TOPUP" | "AI_IMAGE_PACK";
   code: string;
   name: string;
   description: string | null;
@@ -32,6 +42,7 @@ export interface AdProduct {
   durationDays: number;
   promotionCredits: number;
   aiImagesPerMonth: number;
+  aiImageCredits: number;
   pushIncluded: boolean;
   sortOrder: number;
   gstPercent: number;

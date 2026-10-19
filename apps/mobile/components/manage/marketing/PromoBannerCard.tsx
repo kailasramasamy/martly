@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { View, Text, Image, ActivityIndicator, StyleSheet } from "react-native";
+import { AI_IMAGE_COST } from "@martly/shared/constants";
 import type { PromoDetail } from "@martly/shared/types";
 import { SectionCard } from "../ui/SectionCard";
 import { ImageField } from "../ui/ImageField";
@@ -10,9 +11,13 @@ import { colors, fonts, radius } from "../../../constants/theme";
 import { api } from "../../../lib/api";
 import { useAction } from "../../../lib/manage/use-action";
 import { PlanLimitNotice, usePlanLimit } from "./PlanLimit";
+import { AiImageUsage } from "./AiImageUsage";
+import { BuyImagesSheet } from "./BuyImagesSheet";
+import { aiImageLevel, useAiImageGate } from "./ai-images";
 import { useEntitlements } from "./use-entitlements";
 
 const BANNER_ASPECT = 1.5;
+const COST = AI_IMAGE_COST.PROMO_BANNER;
 const EDITABLE = ["READY", "LIVE"];
 
 interface Props {
@@ -27,6 +32,7 @@ export function PromoBannerCard({ promo, onChange }: Props) {
   const { data: entitlements, reload } = useEntitlements();
   const { run, running } = useAction();
   const limit = usePlanLimit();
+  const gate = useAiImageGate();
   const [editing, setEditing] = useState(false);
   const [title, setTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
@@ -36,7 +42,7 @@ export function PromoBannerCard({ promo, onChange }: Props) {
   const imageUrl = previewUrl(promo);
   const shownTitle = promo.banner?.title ?? promo.title ?? "";
   const shownSubtitle = promo.banner?.subtitle ?? "";
-  const aiLeft = entitlements ? Math.max(entitlements.aiImages.total - entitlements.aiImages.used, 0) : null;
+  const out = !!entitlements && aiImageLevel(entitlements.aiImages, COST) === "out";
 
   const save = async (body: object, done: string) => {
     const res = await run(() => limit.capture(() => api.put<PromoDetail>(base, body)), done);
@@ -45,7 +51,7 @@ export function PromoBannerCard({ promo, onChange }: Props) {
   };
   const generate = async () => {
     setGenerating(true);
-    const res = await run(() => limit.capture(() => api.post<PromoDetail>(`${base}/generate`, undefined)), "New banner ready");
+    const res = await run(() => limit.capture(() => gate.guard(() => api.post<PromoDetail>(`${base}/generate`, undefined))), "New banner ready");
     setGenerating(false);
     if (!res) return;
     onChange(res.data);
@@ -81,11 +87,13 @@ export function PromoBannerCard({ promo, onChange }: Props) {
       {editable && !editing ? (
         <View style={styles.row}>
           <Button label="Edit wording" icon="create-outline" variant="secondary" compact onPress={startEdit} style={styles.flex} />
-          <Button label={aiLeft === null ? "Generate new with AI" : `Generate new with AI (${aiLeft} left)`} icon="sparkles-outline" variant="secondary" compact onPress={generate} disabled={running} style={styles.flex} />
+          <Button label={out ? "Buy AI images" : "Generate new with AI"} icon={out ? "cart-outline" : "sparkles-outline"} variant="secondary" compact onPress={out ? gate.openBuy : generate} disabled={running} style={styles.flex} />
         </View>
       ) : null}
+      {editable && !editing ? <View style={styles.usage}><AiImageUsage aiImages={entitlements?.aiImages} cost={COST} onBuy={gate.openBuy} /></View> : null}
       {generating ? <View style={styles.progress}><ActivityIndicator color={colors.primary} /><Text style={styles.stats}>Designing your banner… up to a minute</Text></View> : null}
       <PlanLimitNotice message={limit.message} />
+      <BuyImagesSheet visible={gate.buying} onClose={gate.closeBuy} onBought={reload} />
     </SectionCard>
   );
 }
@@ -97,5 +105,6 @@ const styles = StyleSheet.create({
   form: { marginTop: 8 },
   row: { flexDirection: "row", gap: 10, marginTop: 10 },
   flex: { flex: 1 },
+  usage: { marginTop: 8 },
   progress: { flexDirection: "row", alignItems: "center", gap: 10, marginTop: 10 },
 });

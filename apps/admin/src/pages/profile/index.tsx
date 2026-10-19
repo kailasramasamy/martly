@@ -5,6 +5,7 @@ import { PhoneOutlined, UserOutlined } from "@ant-design/icons";
 import { isAxiosError } from "axios";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
+import { ReadableSection } from "../../components/ReadableSection";
 
 interface Me {
   name: string;
@@ -92,29 +93,31 @@ export const ProfilePage = () => {
   };
 
   return (
-    <Row gutter={[16, 16]} style={{ maxWidth: 960 }}>
-      <Col xs={24}><Typography.Title level={4} style={{ margin: 0 }}>My profile</Typography.Title></Col>
-      <Col xs={24} lg={12}>
-        <Card size="small" title={sectionTitle(<UserOutlined />, "Details")}>
-          <Form layout="vertical" onFinish={saveName}>
-            <Form.Item label="Name" required>
-              <Input value={name} onChange={(e) => setName(e.target.value)} />
-            </Form.Item>
-            <Descriptions column={1} size="small">
-              <Descriptions.Item label="Login email">{email ?? "—"}</Descriptions.Item>
-            </Descriptions>
-            <Typography.Paragraph type="secondary" style={{ fontSize: 12 }}>
-              Ask your owner or the platform admin to change your login email.
-            </Typography.Paragraph>
-            <Button type="primary" htmlType="submit" loading={saving} disabled={!name.trim() || name.trim() === me?.name}>
-              Save changes
-            </Button>
-          </Form>
-        </Card>
-      </Col>
-      <Col xs={24} lg={12}>
-        <PhoneCard current={me?.phone ?? null} onChanged={invalidateIdentity} />
-      </Col>
-    </Row>
+    <ReadableSection>
+      <Row gutter={[16, 16]}>
+        <Col xs={24}><Typography.Title level={4} style={{ margin: 0 }}>My profile</Typography.Title></Col>
+        <Col xs={24} lg={12}>
+          <Card size="small" title={sectionTitle(<UserOutlined />, "Details")}>
+            <Form layout="vertical" onFinish={saveName}>
+              <Form.Item label="Name" required>
+                <Input value={name} onChange={(e) => setName(e.target.value)} />
+              </Form.Item>
+              <Descriptions column={1} size="small">
+                <Descriptions.Item label="Login email">{email ?? "—"}</Descriptions.Item>
+              </Descriptions>
+              <Typography.Paragraph type="secondary" style={{ fontSize: 12 }}>
+                Ask your owner or the platform admin to change your login email.
+              </Typography.Paragraph>
+              <Button type="primary" htmlType="submit" loading={saving} disabled={!name.trim() || name.trim() === me?.name}>
+                Save changes
+              </Button>
+            </Form>
+          </Card>
+        </Col>
+        <Col xs={24} lg={12}>
+          <PhoneCard current={me?.phone ?? null} onChanged={invalidateIdentity} />
+        </Col>
+      </Row>
+    </ReadableSection>
   );
 };

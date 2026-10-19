@@ -18,3 +18,8 @@ globs: apps/admin/**
 - Theme: teal brand (`#0d9488`), dark mode via `localStorage` key `martly_theme`
 - Sidebar groups: Inventory, Marketing, Delivery
 - Reference existing pages in `src/pages/*/` for patterns
+
+## Section Width
+
+- Pages are full width. Tables, lists, boards and charts use it, along with the filter bars above them.
+- Forms, settings blocks, detail panels and cards with action buttons go in `<ReadableSection>` from `components/ReadableSection.tsx`. It caps them at 1040px beside the sidebar, so a button never sits a monitor's width away from what it acts on.

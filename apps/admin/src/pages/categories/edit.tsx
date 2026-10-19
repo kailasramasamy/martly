@@ -6,6 +6,7 @@ import { ImageUpload } from "../../components/ImageUpload";
 import { sectionTitle } from "../../theme";
 import { axiosInstance } from "../../providers/data-provider";
 import { useParams } from "react-router";
+import { ReadableSection } from "../../components/ReadableSection";
 
 type Level = "department" | "category" | "subcategory";
 
@@ -39,66 +40,68 @@ export const CategoryEdit = () => {
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
-      <Form {...formProps} layout="vertical">
-        <Row gutter={[16, 16]}>
-          <Col xs={24} lg={12}>
-            <Card title={sectionTitle(<AppstoreOutlined />, "Details")} size="small">
-              <Row gutter={16}>
-                <Col xs={24}>
-                  <Form.Item label="Level">
-                    <Tag color={level === "department" ? "blue" : level === "category" ? "green" : "default"}>
-                      {level}
-                    </Tag>
-                  </Form.Item>
-                </Col>
-                <Col xs={24} sm={12}>
-                  <Form.Item label="Name" name="name" rules={[{ required: true }]}>
-                    <Input />
-                  </Form.Item>
-                </Col>
-                <Col xs={24} sm={12}>
-                  <Form.Item label="Slug" name="slug" rules={[{ required: true }]}>
-                    <Input />
-                  </Form.Item>
-                </Col>
-                {level === "subcategory" && (
+      <ReadableSection>
+        <Form {...formProps} layout="vertical">
+          <Row gutter={[16, 16]}>
+            <Col xs={24} lg={12}>
+              <Card title={sectionTitle(<AppstoreOutlined />, "Details")} size="small">
+                <Row gutter={16}>
                   <Col xs={24}>
-                    <Form.Item
-                      label="Search terms"
-                      name="searchTerms"
-                      tooltip="Words shoppers type for this aisle (e.g. shaving, razor, dadhi). Search shows these products first for them"
-                    >
-                      <Select mode="tags" tokenSeparators={[","]} open={false} placeholder="Type a term and press Enter" />
+                    <Form.Item label="Level">
+                      <Tag color={level === "department" ? "blue" : level === "category" ? "green" : "default"}>
+                        {level}
+                      </Tag>
                     </Form.Item>
                   </Col>
-                )}
-              </Row>
-            </Card>
-          </Col>
-          <Col xs={24} lg={12}>
-            <Card title={sectionTitle(<PictureOutlined />, "Image")} size="small">
-              <Form.Item name="imageUrl" getValueFromEvent={(url: string) => url} style={{ marginBottom: 0 }}>
-                <ImageUpload />
-              </Form.Item>
-            </Card>
-          </Col>
-          <Col xs={24}>
-            <Card title={sectionTitle(<TranslationOutlined />, "Translations")} size="small">
-              <Tabs
-                items={[{
-                  key: "ta",
-                  label: "Tamil (\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD)",
-                  children: (
-                    <Form.Item label="Name (Tamil)" name={["translations", "ta", "name"]}>
-                      <Input placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAA\u0BC6\u0BAF\u0BB0\u0BCD" />
+                  <Col xs={24} sm={12}>
+                    <Form.Item label="Name" name="name" rules={[{ required: true }]}>
+                      <Input />
                     </Form.Item>
-                  ),
-                }]}
-              />
-            </Card>
-          </Col>
-        </Row>
-      </Form>
+                  </Col>
+                  <Col xs={24} sm={12}>
+                    <Form.Item label="Slug" name="slug" rules={[{ required: true }]}>
+                      <Input />
+                    </Form.Item>
+                  </Col>
+                  {level === "subcategory" && (
+                    <Col xs={24}>
+                      <Form.Item
+                        label="Search terms"
+                        name="searchTerms"
+                        tooltip="Words shoppers type for this aisle (e.g. shaving, razor, dadhi). Search shows these products first for them"
+                      >
+                        <Select mode="tags" tokenSeparators={[","]} open={false} placeholder="Type a term and press Enter" />
+                      </Form.Item>
+                    </Col>
+                  )}
+                </Row>
+              </Card>
+            </Col>
+            <Col xs={24} lg={12}>
+              <Card title={sectionTitle(<PictureOutlined />, "Image")} size="small">
+                <Form.Item name="imageUrl" getValueFromEvent={(url: string) => url} style={{ marginBottom: 0 }}>
+                  <ImageUpload />
+                </Form.Item>
+              </Card>
+            </Col>
+            <Col xs={24}>
+              <Card title={sectionTitle(<TranslationOutlined />, "Translations")} size="small">
+                <Tabs
+                  items={[{
+                    key: "ta",
+                    label: "Tamil (\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD)",
+                    children: (
+                      <Form.Item label="Name (Tamil)" name={["translations", "ta", "name"]}>
+                        <Input placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAA\u0BC6\u0BAF\u0BB0\u0BCD" />
+                      </Form.Item>
+                    ),
+                  }]}
+                />
+              </Card>
+            </Col>
+          </Row>
+        </Form>
+      </ReadableSection>
     </Edit>
   );
 };

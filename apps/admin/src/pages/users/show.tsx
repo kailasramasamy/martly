@@ -8,6 +8,7 @@ import { UserRoleLabels, type Permission, type UserRole } from "@martly/shared/c
 import { PERMISSION_GROUPS, PERMISSION_META, ROLE_ADDONS, ROLE_PERMISSIONS, can, type PermissionSubject } from "@martly/shared/permissions";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
+import { ReadableSection } from "../../components/ReadableSection";
 
 interface MemberRecord {
   id: string;
@@ -103,34 +104,36 @@ export const UserShow = () => {
 
   return (
     <Show isLoading={query.isLoading} title={member?.name} headerButtons={canEdit && member ? <EditButton recordItemId={member.id} /> : null}>
-      {member && (
-        <Row gutter={[16, 16]}>
-          <Col xs={24} lg={10}>
-            <Card size="small" title={sectionTitle(<UserOutlined />, "Profile")}>
-              <Space align="center" size={14} style={{ marginBottom: 12 }}>
-                <Avatar size={52} style={{ background: "#0d9488" }}>{member.name.slice(0, 1).toUpperCase()}</Avatar>
-                <div>
-                  <Typography.Title level={5} style={{ margin: 0 }}>{member.name}</Typography.Title>
-                  <Tag color={ROLE_COLORS[member.role]}>{UserRoleLabels[member.role]}</Tag>
-                </div>
-              </Space>
-              <Descriptions column={1} size="small">
-                <Descriptions.Item label="Email">{member.email}</Descriptions.Item>
-                <Descriptions.Item label="Phone">{member.phone ?? "—"}</Descriptions.Item>
-                <Descriptions.Item label="Joined">{dayjs(member.createdAt).format("D MMM YYYY")}</Descriptions.Item>
-              </Descriptions>
-            </Card>
-            <Card size="small" title={sectionTitle(<ShopOutlined />, "Stores")} style={{ marginTop: 16 }}>
-              {member.userStores.length === 0
-                ? <Empty description="No stores assigned" image={Empty.PRESENTED_IMAGE_SIMPLE} />
-                : <List size="small" dataSource={member.userStores} renderItem={({ store }) => <List.Item>{store.name}</List.Item>} />}
-            </Card>
-          </Col>
-          <Col xs={24} lg={14}>
-            <Responsibilities role={member.role} addOns={addOns} />
-          </Col>
-        </Row>
-      )}
+      <ReadableSection>
+        {member && (
+          <Row gutter={[16, 16]}>
+            <Col xs={24} lg={10}>
+              <Card size="small" title={sectionTitle(<UserOutlined />, "Profile")}>
+                <Space align="center" size={14} style={{ marginBottom: 12 }}>
+                  <Avatar size={52} style={{ background: "#0d9488" }}>{member.name.slice(0, 1).toUpperCase()}</Avatar>
+                  <div>
+                    <Typography.Title level={5} style={{ margin: 0 }}>{member.name}</Typography.Title>
+                    <Tag color={ROLE_COLORS[member.role]}>{UserRoleLabels[member.role]}</Tag>
+                  </div>
+                </Space>
+                <Descriptions column={1} size="small">
+                  <Descriptions.Item label="Email">{member.email}</Descriptions.Item>
+                  <Descriptions.Item label="Phone">{member.phone ?? "—"}</Descriptions.Item>
+                  <Descriptions.Item label="Joined">{dayjs(member.createdAt).format("D MMM YYYY")}</Descriptions.Item>
+                </Descriptions>
+              </Card>
+              <Card size="small" title={sectionTitle(<ShopOutlined />, "Stores")} style={{ marginTop: 16 }}>
+                {member.userStores.length === 0
+                  ? <Empty description="No stores assigned" image={Empty.PRESENTED_IMAGE_SIMPLE} />
+                  : <List size="small" dataSource={member.userStores} renderItem={({ store }) => <List.Item>{store.name}</List.Item>} />}
+              </Card>
+            </Col>
+            <Col xs={24} lg={14}>
+              <Responsibilities role={member.role} addOns={addOns} />
+            </Col>
+          </Row>
+        )}
+      </ReadableSection>
     </Show>
   );
 };

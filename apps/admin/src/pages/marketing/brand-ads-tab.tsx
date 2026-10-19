@@ -3,6 +3,7 @@ import { App, Alert, Avatar, Button, Card, Select, Space, Switch, Table, Tag, To
 import dayjs from "dayjs";
 import { axiosInstance } from "../../providers/data-provider";
 import { errorMessage } from "./utils";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const { Paragraph, Text } = Typography;
 const SEARCH_PAGE_SIZE = 20;
@@ -122,22 +123,24 @@ export function BrandAdsTab({ canEdit }: { canEdit: boolean }) {
   ];
   return (
     <>
-      <Alert
-        type="info"
-        showIcon
-        style={{ marginBottom: 16 }}
-        message="Brand ads appear in your stores only for brands you stock. Block any brand you don't want. A brand promotion lowers prices on that brand in your stores and the brand reimburses the discount (claims report). You can opt out of a campaign before it starts."
-      />
-      <Card size="small" title="Brand ads in my stores" style={{ marginBottom: 16 }}>
-        <Space direction="vertical" style={{ width: "100%" }}>
-          <Space>
-            <Switch checked={allow} disabled={!canEdit} loading={saving} onChange={(v) => void save(v, blocked)} />
-            <Text>Show brand ads in my stores</Text>
+      <ReadableSection>
+        <Alert
+          type="info"
+          showIcon
+          style={{ marginBottom: 16 }}
+          message="Brand ads appear in your stores only for brands you stock. Block any brand you don't want. A brand promotion lowers prices on that brand in your stores and the brand reimburses the discount (claims report). You can opt out of a campaign before it starts."
+        />
+        <Card size="small" title="Brand ads in my stores" style={{ marginBottom: 16 }}>
+          <Space direction="vertical" style={{ width: "100%" }}>
+            <Space>
+              <Switch checked={allow} disabled={!canEdit} loading={saving} onChange={(v) => void save(v, blocked)} />
+              <Text>Show brand ads in my stores</Text>
+            </Space>
+            <Paragraph type="secondary" style={{ margin: 0 }}>Blocked brands</Paragraph>
+            <BrandSearch blocked={blocked} disabled={!canEdit || saving} onChange={(next) => void save(allow, next)} />
           </Space>
-          <Paragraph type="secondary" style={{ margin: 0 }}>Blocked brands</Paragraph>
-          <BrandSearch blocked={blocked} disabled={!canEdit || saving} onChange={(next) => void save(allow, next)} />
-        </Space>
-      </Card>
+        </Card>
+      </ReadableSection>
       <Card size="small" title="Upcoming and running brand campaigns">
         <Table size="small" rowKey="id" dataSource={campaigns} columns={columns} pagination={{ pageSize: 10 }} />
       </Card>

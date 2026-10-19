@@ -4,6 +4,9 @@ import { PictureOutlined, ReloadOutlined } from "@ant-design/icons";
 import { isAxiosError } from "axios";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
+import { AI_IMAGE_COST } from "@martly/shared/constants";
+import { AiImageUsage } from "../../components/ai-images/ai-image-usage";
+import { canAfford, useAiImages } from "../../hooks/use-ai-images";
 import { ReplaceImageButton } from "./replace-image-button";
 
 interface AiBannerRecord {
@@ -27,6 +30,7 @@ function copyFor(record: AiBannerRecord, lang: string) {
 export const AiBannerCard = ({ record, onRegenerated }: { record: AiBannerRecord; onRegenerated: () => void }) => {
   const { message } = App.useApp();
   const [busy, setBusy] = useState(false);
+  const ai = useAiImages();
   const images = record.imageUrls ?? (record.imageUrl ? { art: record.imageUrl } : {});
 
   const regenerate = async () => {
@@ -35,7 +39,9 @@ export const AiBannerCard = ({ record, onRegenerated }: { record: AiBannerRecord
       await axiosInstance.post(`/collections/${record.id}/regenerate-banner`, undefined, { timeout: 240000 });
       message.success("Banner regenerated");
       onRegenerated();
+      void ai.refresh();
     } catch (err) {
+      if (ai.handleExhausted(err)) return;
       if (!isAxiosError(err)) throw err;
       message.error(err.response?.data?.message ?? "Banner regeneration failed");
     } finally {
@@ -44,9 +50,12 @@ export const AiBannerCard = ({ record, onRegenerated }: { record: AiBannerRecord
   };
 
   const regenerateButton = (
-    <Tooltip title="Redraws the banners from the saved title and subtitle; save edits first. Takes 1–3 minutes.">
-      <Button size="small" icon={<ReloadOutlined />} loading={busy} onClick={regenerate}>Regenerate</Button>
-    </Tooltip>
+    <Space>
+      <AiImageUsage usage={ai.usage} cost={AI_IMAGE_COST.COLLECTION_BANNER} onBuy={ai.openBuy} />
+      <Tooltip title="Redraws the banners from the saved title and subtitle; save edits first. Takes 1–3 minutes.">
+        <Button size="small" icon={<ReloadOutlined />} loading={busy} disabled={!canAfford(ai.usage, AI_IMAGE_COST.COLLECTION_BANNER)} onClick={regenerate}>Regenerate</Button>
+      </Tooltip>
+    </Space>
   );
 
   return (
@@ -78,6 +87,7 @@ export const AiBannerCard = ({ record, onRegenerated }: { record: AiBannerRecord
           Text couldn't be proofread into the artwork, so the app draws it.
         </Typography.Paragraph>
       )}
+      {ai.buyModal}
     </Card>
   );
 };

@@ -63,6 +63,21 @@ export function TopupCard({ products, patch }: TableProps) {
   );
 }
 
+export function ImagePacksCard({ products, patch }: TableProps) {
+  const columns = [
+    ...textColumns(patch),
+    { title: "Price", dataIndex: "price", width: 130, render: (v: number, r: AdProduct) => rupeeInput(v, (price) => patch(r.id, { price })) },
+    { title: "Images per pack", dataIndex: "aiImageCredits", width: 140, render: (v: number, r: AdProduct) => countInput(v, (n) => patch(r.id, { aiImageCredits: n }), 1) },
+    { title: "Sort order", dataIndex: "sortOrder", width: 100, render: (v: number, r: AdProduct) => countInput(v, (n) => patch(r.id, { sortOrder: n })) },
+    onSaleColumn(patch),
+  ];
+  return (
+    <Card title="AI image packs" size="small" style={{ marginBottom: 16 }}>
+      <Table size="small" rowKey="id" pagination={false} dataSource={products} columns={columns} scroll={{ x: 900 }} />
+    </Card>
+  );
+}
+
 export function BrandPackagesCard({ products, patch }: TableProps) {
   const columns = [
     ...textColumns(patch),

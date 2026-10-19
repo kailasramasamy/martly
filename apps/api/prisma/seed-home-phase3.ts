@@ -67,6 +67,6 @@ export async function fillTileArt(prisma: PrismaClient, organizationId: string, 
     if (art) await prisma.homeSectionItem.update({ where: { id: item.id }, data: { imageUrl: art } });
     else missing.push(item);
   }
-  const painted = await paintTiles(prisma, missing);
-  console.log(`Tile art: ${items.length - missing.length} kept, ${painted.length} painted`);
+  const { painted, failed } = await paintTiles(prisma, missing);
+  console.log(`Tile art: ${items.length - missing.length} kept, ${painted.length} painted, ${failed} failed`);
 }

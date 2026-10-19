@@ -20,6 +20,7 @@ import { useCustom, useApiUrl } from "@refinedev/core";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
 import dayjs from "dayjs";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const { Text } = Typography;
 
@@ -116,7 +117,7 @@ export const ExpressDeliveryConfig = () => {
   };
 
   return (
-    <div style={{ maxWidth: 800, margin: "0 auto" }}>
+    <ReadableSection>
       <div style={{ marginBottom: 24 }}>
         <h2 style={{ margin: 0 }}>
           <Space>
@@ -224,6 +225,6 @@ export const ExpressDeliveryConfig = () => {
           </Button>
         </Form>
       ) : null}
-    </div>
+    </ReadableSection>
   );
 };

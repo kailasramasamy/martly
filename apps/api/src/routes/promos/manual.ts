@@ -50,7 +50,7 @@ export async function manualPromoRoutes(app: FastifyInstance) {
     const body = generateBannerImageSchema.parse(request.body);
     const user = getOrgUser(request);
     const organizationId = user.role === "SUPER_ADMIN" ? null : (user.organizationId ?? null);
-    const art = await generateBannerImage(app.prisma, organizationId, body, (m) => request.log.warn(`banner image: ${m}`));
+    const art = await generateBannerImage(app, organizationId, body, (m) => request.log.warn(`banner image: ${m}`));
     return { success: true, data: art };
   });
 
@@ -67,7 +67,7 @@ export async function manualPromoRoutes(app: FastifyInstance) {
     if (!isCurationConfigured()) return reply.serviceUnavailable("AI images need ANTHROPIC_API_KEY and OPENAI_API_KEY");
     const promo = await load(request, reply);
     if (!promo) return;
-    await regeneratePromoImage(app.prisma, promo, request.log);
+    await regeneratePromoImage(app, promo, request.log);
     return detail(request, promo.id);
   });
 }

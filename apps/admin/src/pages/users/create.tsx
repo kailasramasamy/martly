@@ -4,6 +4,7 @@ import { Form, Input, Select, Card, Row, Col } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 
 import { sectionTitle } from "../../theme";
+import { ReadableSection } from "../../components/ReadableSection";
 
 interface Identity {
   role: string;
@@ -32,29 +33,31 @@ export const UserCreate = () => {
 
   return (
     <Create saveButtonProps={saveButtonProps}>
-      <Form {...formProps} layout="vertical">
-        <Row gutter={[16, 16]}>
-          <Col xs={24} lg={12}>
-            <Card title={sectionTitle(<UserOutlined />, "User Details")} size="small">
-              <Form.Item label="Name" name="name" rules={[{ required: true }]}>
-                <Input />
-              </Form.Item>
-              <Form.Item label="Email" name="email" rules={[{ required: true, type: "email" }]}>
-                <Input />
-              </Form.Item>
-              <Form.Item label="Password" name="password" rules={[{ required: true, min: 8 }]}>
-                <Input.Password />
-              </Form.Item>
-              <Form.Item label="Phone" name="phone">
-                <Input />
-              </Form.Item>
-              <Form.Item label="Role" name="role" rules={[{ required: true }]}>
-                <Select options={roleOptions} placeholder="Select role" />
-              </Form.Item>
-            </Card>
-          </Col>
-        </Row>
-      </Form>
+      <ReadableSection>
+        <Form {...formProps} layout="vertical">
+          <Row gutter={[16, 16]}>
+            <Col xs={24} lg={12}>
+              <Card title={sectionTitle(<UserOutlined />, "User Details")} size="small">
+                <Form.Item label="Name" name="name" rules={[{ required: true }]}>
+                  <Input />
+                </Form.Item>
+                <Form.Item label="Email" name="email" rules={[{ required: true, type: "email" }]}>
+                  <Input />
+                </Form.Item>
+                <Form.Item label="Password" name="password" rules={[{ required: true, min: 8 }]}>
+                  <Input.Password />
+                </Form.Item>
+                <Form.Item label="Phone" name="phone">
+                  <Input />
+                </Form.Item>
+                <Form.Item label="Role" name="role" rules={[{ required: true }]}>
+                  <Select options={roleOptions} placeholder="Select role" />
+                </Form.Item>
+              </Card>
+            </Col>
+          </Row>
+        </Form>
+      </ReadableSection>
     </Create>
   );
 };

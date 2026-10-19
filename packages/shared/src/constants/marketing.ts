@@ -2,6 +2,7 @@
 export const AdProductKind = {
   STORE_PLAN: "STORE_PLAN",
   PROMOTION_TOPUP: "PROMOTION_TOPUP",
+  AI_IMAGE_PACK: "AI_IMAGE_PACK",
   BRAND_BANNER: "BRAND_BANNER",
   BRAND_TAKEOVER: "BRAND_TAKEOVER",
   BRAND_PROMOTION: "BRAND_PROMOTION",
@@ -12,11 +13,36 @@ export type AdProductKind = (typeof AdProductKind)[keyof typeof AdProductKind];
 export const AdProductKindLabels: Record<AdProductKind, string> = {
   STORE_PLAN: "Store plan",
   PROMOTION_TOPUP: "Extra promotion",
+  AI_IMAGE_PACK: "AI image pack",
   BRAND_BANNER: "Brand banner",
   BRAND_TAKEOVER: "Category takeover",
   BRAND_PROMOTION: "Brand promotion",
   BRAND_CPM: "Brand views (per 1,000)",
 };
+
+/** What an organisation's AI images were spent on (mirrors Prisma enum AiImagePurpose) */
+export const AiImagePurpose = {
+  PROMO_BANNER: "PROMO_BANNER",
+  COLLECTION_BANNER: "COLLECTION_BANNER",
+  FESTIVE_HERO: "FESTIVE_HERO",
+  HOME_TILES: "HOME_TILES",
+} as const;
+export type AiImagePurpose = (typeof AiImagePurpose)[keyof typeof AiImagePurpose];
+
+/**
+ * AI images an action takes from the allowance, counted as finished images the owner gets (repaints on our side are
+ * free). A festival hero reserves its strip and up to 6 tiles and gives back what it doesn't paint; Home tile art
+ * takes one per tile.
+ */
+export const AI_IMAGE_COST = {
+  PROMO_BANNER: 1,
+  COLLECTION_BANNER: 1,
+  FESTIVE_HERO: 7,
+  HOME_TILE: 1,
+} as const;
+
+/** Below this share of the month's allowance left, the app nudges the owner to buy more */
+export const AI_IMAGES_LOW_SHARE = 0.2;
 
 /** Packages sold to brands, as opposed to store owners */
 export const BRAND_PRODUCT_KINDS: readonly AdProductKind[] = ["BRAND_BANNER", "BRAND_TAKEOVER", "BRAND_PROMOTION", "BRAND_CPM"];

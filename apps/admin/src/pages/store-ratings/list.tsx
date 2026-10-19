@@ -82,7 +82,7 @@ export const StoreRatingList = () => {
   ];
 
   return (
-    <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+    <div>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
         <h2 style={{ margin: 0 }}>
           <Space><StarOutlined /> Store Ratings</Space>

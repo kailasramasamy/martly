@@ -7,6 +7,7 @@ import { formatRupees } from "../promos/promo-utils";
 import { BillingFields, billingInitialValues, hasBilling } from "./billing-form";
 import type { BillingProfile, BillingValues } from "./types";
 import { errorMessage, invoiceHref } from "./utils";
+import { ReadableSection } from "../../components/ReadableSection";
 
 interface Invoice {
   id: string;
@@ -108,7 +109,7 @@ function InvoicesCard({ purchases }: { purchases: number }) {
 export function BillingTab({ purchases, ...props }: BillingTabProps & { purchases: number }) {
   return (
     <>
-      <BillingCard {...props} />
+      <ReadableSection><BillingCard {...props} /></ReadableSection>
       <InvoicesCard purchases={purchases} />
     </>
   );

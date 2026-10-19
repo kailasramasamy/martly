@@ -96,7 +96,7 @@ export function ManualPromoForm({ entitlements, isOrgUser, noAllowance }: Props)
         <ScheduleFields />
         <NotifyField pushAllowed={pushAllowed} />
       </Card>
-      <BannerImageCard form={form} aiImages={isOrgUser ? entitlements?.aiImages : undefined} />
+      <BannerImageCard form={form} />
       <Button type="primary" htmlType="submit" icon={<RocketOutlined />} loading={saving} disabled={noAllowance}>Create promotion</Button>
     </Form>
   );

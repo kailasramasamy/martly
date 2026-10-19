@@ -8,17 +8,20 @@ import { colors, fonts } from "../../../constants/theme";
 import type { Entitlements } from "./plan-types";
 
 interface TrialCardProps {
+  trial: Entitlements["trial"];
   canBuy: boolean;
   busy: boolean;
+  /** Another purchase is running: this one waits, without spinning */
+  locked: boolean;
   onStart: () => void;
 }
 
-export function TrialCard({ canBuy, busy, onStart }: TrialCardProps) {
+export function TrialCard({ trial, canBuy, busy, locked, onStart }: TrialCardProps) {
   return (
     <SectionCard style={styles.trial}>
       <Text style={styles.name}>Try Growth free for 14 days</Text>
-      <Text style={styles.muted}>2 promotions and 2 AI images, no payment needed</Text>
-      {canBuy ? <Button label="Start free trial" onPress={onStart} loading={busy} style={styles.btn} /> : null}
+      <Text style={styles.muted}>{trial.promotionCredits} promotions and {trial.aiImagesPerMonth} AI images a month, no payment needed</Text>
+      {canBuy ? <Button label="Start free trial" onPress={onStart} disabled={locked} loading={busy} style={styles.btn} /> : null}
     </SectionCard>
   );
 }
@@ -37,11 +40,13 @@ interface CurrentPlanProps {
   e: Entitlements;
   canBuy: boolean;
   busy: boolean;
+  /** Another purchase is running: this one waits, without spinning */
+  locked: boolean;
   onCancelRenewal: () => Promise<boolean>;
   onResume: () => void;
 }
 
-export function CurrentPlanCard({ e, canBuy, busy, onCancelRenewal, onResume }: CurrentPlanProps) {
+export function CurrentPlanCard({ e, canBuy, busy, locked, onCancelRenewal, onResume }: CurrentPlanProps) {
   const [confirming, setConfirming] = useState(false);
   const sub = e.subscription;
   const line = renewalLine(e);
@@ -62,8 +67,8 @@ export function CurrentPlanCard({ e, canBuy, busy, onCancelRenewal, onResume }: 
       ) : (
         <Text style={[styles.muted, line.warn && styles.warn]}>{line.text}</Text>
       )}
-      {canBuy && renewing ? <Button label="Cancel auto-renew" variant="secondary" onPress={() => setConfirming(true)} style={styles.btn} /> : null}
-      {canBuy && sub?.cancelAtPeriodEnd ? <Button label="Turn auto-renew back on" onPress={onResume} loading={busy} style={styles.btn} /> : null}
+      {canBuy && renewing ? <Button label="Cancel auto-renew" variant="secondary" onPress={() => setConfirming(true)} disabled={locked} style={styles.btn} /> : null}
+      {canBuy && sub?.cancelAtPeriodEnd ? <Button label="Turn auto-renew back on" onPress={onResume} disabled={locked} loading={busy} style={styles.btn} /> : null}
       <ConfirmDialog
         visible={confirming}
         title="Cancel auto-renew?"

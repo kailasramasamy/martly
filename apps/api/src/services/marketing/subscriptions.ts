@@ -1,11 +1,11 @@
 import { Prisma, type AdProduct, type Organization, type PrismaClient } from "../../../generated/prisma/client.js";
+import { TRIAL_PLAN_CODE } from "./entitlements.js";
 import { cancelRazorpaySubscription, createRazorpayPlan, createRazorpaySubscription, getRazorpayKeyId } from "../payment.js";
 import { BillingError, grantPlan, intervalOf, listDailyRate } from "./billing.js";
 import { getMarketingConfig, nextInvoiceNumber, quote } from "./config.js";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const TRIAL_DAYS = 14;
-const TRIAL_PLAN_CODE = "GROWTH";
 /** Subscriptions that still bill (or will): the one an organisation has at most */
 const OPEN = ["CREATED", "ACTIVE", "PENDING", "HALTED"] as const;
 

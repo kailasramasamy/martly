@@ -8,7 +8,6 @@ import { toDateKey } from "../ui/dates";
 import { colors, fonts } from "../../../constants/theme";
 import { ImageSource } from "./ImageSource";
 import { isDiscountable, type ManualPromoErrors, type ManualPromoState, type StartMode } from "./manual-promo";
-import type { Entitlements } from "./plan-types";
 
 type Patch = (patch: Partial<ManualPromoState>) => void;
 
@@ -68,14 +67,13 @@ interface BannerProps {
   state: ManualPromoState;
   errors: ManualPromoErrors;
   onChange: Patch;
-  entitlements: Entitlements | null;
 }
 
-export function BannerImageSection({ state, errors, onChange, entitlements }: BannerProps) {
+export function BannerImageSection({ state, errors, onChange }: BannerProps) {
   return (
     <SectionCard title="Banner image">
       <ImageSource
-        imageUrl={state.imageUrl} onImage={(imageUrl) => onChange({ imageUrl })} entitlements={entitlements} error={errors.imageUrl}
+        imageUrl={state.imageUrl} onImage={(imageUrl) => onChange({ imageUrl })} error={errors.imageUrl}
         title={state.title} subtitle={state.subtitle} actionType={state.actionType} actionTarget={state.actionTarget}
         onGenerated={(art) => onChange({ imageUrl: art.imageUrl, textInImage: art.textInImage })}
       />

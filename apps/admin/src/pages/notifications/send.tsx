@@ -30,6 +30,7 @@ import { theme as antTheme } from "antd";
 import { useList } from "@refinedev/core";
 import { axiosInstance } from "../../providers/data-provider";
 import { BRAND } from "../../theme";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const { Title, Text } = Typography;
 const { TextArea } = Input;
@@ -302,7 +303,7 @@ export const NotificationSend = () => {
   };
 
   return (
-    <div style={{ padding: "16px 24px 32px" }}>
+    <ReadableSection style={{ padding: "16px 24px 32px" }}>
       <Title level={4} style={{ marginBottom: 4 }}>Send Notification</Title>
       <Text type="secondary" style={{ display: "block", marginBottom: 24 }}>
         Compose and send or schedule a notification campaign to your customers.
@@ -550,6 +551,6 @@ export const NotificationSend = () => {
           </Card>
         </Col>
       </Row>
-    </div>
+    </ReadableSection>
   );
 };

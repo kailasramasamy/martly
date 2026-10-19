@@ -2,6 +2,7 @@ import { Edit, useForm } from "@refinedev/antd";
 import { Form, Row, Col } from "antd";
 import { FestivalFields } from "./fields";
 import { toFestivalDates, toFestivalPayload } from "./dates";
+import { ReadableSection } from "../../components/ReadableSection";
 
 export const FestivalEdit = () => {
   const { formProps, saveButtonProps, queryResult } = useForm({ resource: "festival-events" });
@@ -9,18 +10,20 @@ export const FestivalEdit = () => {
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
-      <Form
-        {...formProps}
-        layout="vertical"
-        initialValues={{ ...formProps.initialValues, dates: toFestivalDates(record) }}
-        onFinish={(values) => formProps.onFinish?.(toFestivalPayload(values))}
-      >
-        <Row gutter={[16, 16]}>
-          <Col xs={24} lg={12}>
-            <FestivalFields />
-          </Col>
-        </Row>
-      </Form>
+      <ReadableSection>
+        <Form
+          {...formProps}
+          layout="vertical"
+          initialValues={{ ...formProps.initialValues, dates: toFestivalDates(record) }}
+          onFinish={(values) => formProps.onFinish?.(toFestivalPayload(values))}
+        >
+          <Row gutter={[16, 16]}>
+            <Col xs={24} lg={12}>
+              <FestivalFields />
+            </Col>
+          </Row>
+        </Form>
+      </ReadableSection>
     </Edit>
   );
 };

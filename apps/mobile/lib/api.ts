@@ -18,9 +18,9 @@ export function setTokenRefresher(fn: (() => Promise<string | null>) | null) {
   tokenRefresher = fn;
 }
 
-/** A failed request; `status` lets callers tell e.g. a plan limit (402) from other errors */
+/** A failed request; `status` tells e.g. a plan limit (402) from other errors, `code` is the API's error name (e.g. AI_IMAGES_EXHAUSTED) */
 export class ApiError extends Error {
-  constructor(message: string, readonly status: number) {
+  constructor(message: string, readonly status: number, readonly code?: string) {
     super(message);
   }
 }
@@ -58,7 +58,7 @@ async function request<T>(path: string, options: RequestInit = {}, isRetry = fal
 
   if (!response.ok) {
     const error = await response.json().catch(() => ({ message: "Request failed" }));
-    throw new ApiError(error.message ?? `HTTP ${response.status}`, response.status);
+    throw new ApiError(error.message ?? `HTTP ${response.status}`, response.status, error.error);
   }
 
   return response.json() as Promise<T>;

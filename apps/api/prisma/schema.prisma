@@ -210,6 +210,7 @@ enum BannerActionType {
 enum AdProductKind {
   STORE_PLAN
   PROMOTION_TOPUP
+  AI_IMAGE_PACK
   BRAND_BANNER
   BRAND_TAKEOVER
   BRAND_PROMOTION
@@ -243,6 +244,14 @@ enum PromotionCreditReason {
   USED
   REFUND
   ADJUST
+}
+
+/// What an organisation's AI images were spent on
+enum AiImagePurpose {
+  PROMO_BANNER
+  COLLECTION_BANNER
+  FESTIVE_HERO
+  HOME_TILES
 }
 
 enum PromoKind {
@@ -441,6 +450,7 @@ model Organization {
   adOrders              AdOrder[]
   planPeriods           OrgPlanPeriod[]
   promotionCredits      PromotionCreditEntry[]
+  aiImageCredits        AiImageCreditEntry[]
   brandBlocks           OrgBrandBlock[]
   campaignOptOuts       BrandCampaignOptOut[]
 
@@ -2147,8 +2157,10 @@ model AdProduct {
   price                    Decimal          @db.Decimal(10, 2)
   durationDays             Int              @default(30) @map("duration_days")
   promotionCredits         Int              @default(0) @map("promotion_credits")
-  /// AI-made banner images per month (plain banners; promotions include their own art)
+  /// AI images an organisation may ask for each month (promotions include their own art)
   aiImagesPerMonth         Int              @default(0) @map("ai_images_per_month")
+  /// AI image packs: images per pack
+  aiImageCredits           Int              @default(0) @map("ai_image_credits")
   pushIncluded             Boolean          @default(false) @map("push_included")
   /// Brand packages: where the banner runs
   placement                BannerPlacement?
@@ -2222,13 +2234,14 @@ model AdOrder {
   createdAt         DateTime        @default(now()) @map("created_at")
   updatedAt         DateTime        @updatedAt @map("updated_at")
 
-  organization Organization?          @relation(fields: [organizationId], references: [id])
-  brand        Brand?                 @relation(fields: [brandId], references: [id])
-  product      AdProduct              @relation(fields: [productId], references: [id])
-  createdBy    User                   @relation(fields: [createdById], references: [id])
-  planPeriod   OrgPlanPeriod?
-  credits      PromotionCreditEntry[]
-  campaign     BrandCampaign?
+  organization   Organization?          @relation(fields: [organizationId], references: [id])
+  brand          Brand?                 @relation(fields: [brandId], references: [id])
+  product        AdProduct              @relation(fields: [productId], references: [id])
+  createdBy      User                   @relation(fields: [createdById], references: [id])
+  planPeriod     OrgPlanPeriod?
+  credits        PromotionCreditEntry[]
+  aiImageCredits AiImageCreditEntry[]
+  campaign       BrandCampaign?
 
   @@index([organizationId, createdAt])
   @@index([brandId, createdAt])
@@ -2268,6 +2281,28 @@ model OrgPlanPeriod {
 }
 
 /// Every promotion credit movement: plan allowance used/refunded (fromPlan) and bought top-ups (balance = sum of delta)
+/// Append-only ledger of an organisation's AI images: the plan's monthly allowance moves and bought packs
+model AiImageCreditEntry {
+  id             String                @id @default(uuid())
+  organizationId String                @map("organization_id")
+  delta          Int
+  /// Plan allowance moves (not counted in the bought balance) vs. bought packs
+  fromPlan       Boolean               @default(false) @map("from_plan")
+  reason         PromotionCreditReason
+  purpose        AiImagePurpose?
+  /// What was painted: the promo, collection or Home section
+  refId          String?               @map("ref_id")
+  adOrderId      String?               @map("ad_order_id")
+  note           String?
+  createdAt      DateTime              @default(now()) @map("created_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id])
+  adOrder      AdOrder?     @relation(fields: [adOrderId], references: [id])
+
+  @@index([organizationId, createdAt])
+  @@map("ai_image_credit_entries")
+}
+
 model PromotionCreditEntry {
   id             String                @id @default(uuid())
   organizationId String                @map("organization_id")

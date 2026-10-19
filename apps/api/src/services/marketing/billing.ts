@@ -88,6 +88,12 @@ async function deliver(tx: Prisma.TransactionClient, order: AdOrder, product: Ad
     });
     return;
   }
+  if (product.kind === "AI_IMAGE_PACK" && order.organizationId) {
+    await tx.aiImageCreditEntry.create({
+      data: { organizationId: order.organizationId, delta: product.aiImageCredits * order.quantity, reason: "TOPUP", adOrderId: order.id },
+    });
+    return;
+  }
   // Brand packages: a paid campaign waits for Martly's review before it can go live
   await tx.brandCampaign.updateMany({ where: { adOrderId: order.id, status: "PENDING_PAYMENT" }, data: { status: "IN_REVIEW" } });
 }

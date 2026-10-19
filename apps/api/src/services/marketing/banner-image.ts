@@ -1,10 +1,12 @@
 import { randomUUID } from "crypto";
 import OpenAI from "openai";
+import type { Messaging } from "firebase-admin/messaging";
+import { AI_IMAGE_COST } from "@martly/shared/constants";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { buildBannerSet, type BannerLog } from "../seasonal/banner-set.js";
 import { chooseDesign } from "../seasonal/banner-design.js";
 import { BannerArtError } from "../seasonal/banner-art.js";
-import { getEntitlements, PaymentRequiredError } from "./entitlements.js";
+import { withAiImages } from "./ai-images.js";
 import { targetScene } from "./target-scene.js";
 
 export interface BannerImageRequest {
@@ -16,18 +18,17 @@ export interface BannerImageRequest {
 }
 
 /**
- * Paints a banner image with the copy set into it, in a layout and style the owner hasn't used lately. An
- * organisation's run is reserved against its monthly AI-image allowance first and released if painting fails.
+ * Paints a banner image with the copy set into it, in a layout and style the owner hasn't used lately. It takes one of
+ * the organisation's AI images, given back if painting fails.
  */
-export async function generateBannerImage(prisma: PrismaClient, organizationId: string | null, input: BannerImageRequest, log: BannerLog) {
+export function generateBannerImage(
+  ctx: { prisma: PrismaClient; fcm: Messaging | null }, organizationId: string | null, input: BannerImageRequest, log: BannerLog, refId: string | null = null,
+) {
+  return withAiImages(ctx, organizationId, AI_IMAGE_COST.PROMO_BANNER, "PROMO_BANNER", refId, () => paintBannerImage(ctx.prisma, organizationId, input, log));
+}
+
+async function paintBannerImage(prisma: PrismaClient, organizationId: string | null, input: BannerImageRequest, log: BannerLog) {
   const run = await prisma.$transaction(async (tx) => {
-    if (organizationId) {
-      await tx.$executeRaw`SELECT pg_advisory_xact_lock(hashtext(${`ai-images:${organizationId}`}))`;
-      const { aiImages } = await getEntitlements(tx, organizationId);
-      if (aiImages.used >= aiImages.total) {
-        throw new PaymentRequiredError(`You've used this month's ${aiImages.total} AI images. Upload your own image or upgrade your plan.`);
-      }
-    }
     const design = await chooseDesign(tx, { organizationId });
     return tx.bannerArtRun.create({ data: { ...design, organizationId, purpose: "BANNER" } });
   });

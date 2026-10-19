@@ -16,6 +16,7 @@ import {
 
 import { FOOD_TYPE_CONFIG, PRODUCT_TYPE_CONFIG, STORAGE_TYPE_CONFIG } from "../../constants/tag-colors";
 import { sectionTitle } from "../../theme";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const { Text } = Typography;
 
@@ -104,205 +105,207 @@ export const ProductShow = () => {
 
   return (
     <Show canEdit={canEdit} canDelete={canEdit}>
-      <Row gutter={[16, 16]}>
-        {/* Left column: details */}
-        <Col xs={24} lg={record.imageUrl || record.images?.length > 0 ? 16 : 24}>
-          <Card title={sectionTitle(<InfoCircleOutlined />, "Basic Information")} size="small" style={{ marginBottom: 16 }}>
-            <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
-              <Descriptions.Item label="Name">{record.name}</Descriptions.Item>
-              <Descriptions.Item label="Brand">{record.brand?.name ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Category">
-                {record.subcategory
-                  ? getCategoryBreadcrumb(record.subcategory).join(" → ")
-                  : "—"}
-              </Descriptions.Item>
-              <Descriptions.Item label="Product Type">
-                {productTypeConfig ? <Tag color={productTypeConfig.color}>{productTypeConfig.label}</Tag> : <Text>{record.productType ?? "—"}</Text>}
-              </Descriptions.Item>
-              <Descriptions.Item label="Food Type">
-                {foodTypeConfig ? <Tag color={foodTypeConfig.color}>{foodTypeConfig.label}</Tag> : <Text>—</Text>}
-              </Descriptions.Item>
-              <Descriptions.Item label="Shelf Life">
-                {record.shelfLifeDays != null ? `${record.shelfLifeDays} days` : "—"}
-              </Descriptions.Item>
-              <Descriptions.Item label="Description" span={2}>
-                {record.description ?? "—"}
-              </Descriptions.Item>
-            </Descriptions>
-          </Card>
-
-          <Card title={sectionTitle(<SafetyCertificateOutlined />, "Compliance & Regulatory")} size="small" style={{ marginBottom: 16 }}>
-            <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
-              <Descriptions.Item label="HSN Code">{record.hsnCode ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="GST %">{record.gstPercent != null ? `${record.gstPercent}%` : "—"}</Descriptions.Item>
-              <Descriptions.Item label="FSSAI License">{record.fssaiLicense ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Mfg License No">{record.mfgLicenseNo ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Manufacturer">{record.manufacturerName ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Country of Origin">{record.countryOfOrigin ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Regulatory Marks" span={2}>
-                {record.regulatoryMarks?.length > 0
-                  ? record.regulatoryMarks.map((m: string) => <Tag key={m} color="blue">{m}</Tag>)
-                  : "—"}
-              </Descriptions.Item>
-              <Descriptions.Item label="Certifications" span={2}>
-                {record.certifications?.length > 0
-                  ? record.certifications.map((c: string) => <Tag key={c} color="green">{c}</Tag>)
-                  : "—"}
-              </Descriptions.Item>
-            </Descriptions>
-          </Card>
-
-          <Card title={sectionTitle(<TagsOutlined />, "Tags & Labels")} size="small" style={{ marginBottom: 16 }}>
-            <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
-              <Descriptions.Item label="Tags">
-                {record.tags?.length > 0
-                  ? record.tags.map((t: string) => <Tag key={t}>{t}</Tag>)
-                  : "—"}
-              </Descriptions.Item>
-              <Descriptions.Item label="Allergens">
-                {record.allergens?.length > 0
-                  ? record.allergens.map((a: string) => <Tag key={a} color="warning">{a}</Tag>)
-                  : "—"}
-              </Descriptions.Item>
-            </Descriptions>
-          </Card>
-        </Col>
-
-        {/* Right column: images */}
-        {(record.imageUrl || record.images?.length > 0) && (
-          <Col xs={24} lg={8}>
-            <Card
-              title={sectionTitle(<PictureOutlined />, "Images")}
-              size="small"
-              style={{ marginBottom: 16 }}
-              extra={
-                <Badge
-                  count={
-                    (record.imageUrl ? 1 : 0) + (record.images?.length ?? 0)
-                  }
-                  style={{ backgroundColor: "#0d9488" }}
-                  overflowCount={99}
-                />
-              }
-            >
-              <Image.PreviewGroup>
-                {record.imageUrl && (
-                  <div style={{ marginBottom: 12 }}>
-                    <Image width="100%" style={{ maxWidth: 300, borderRadius: 6 }} src={record.imageUrl} />
-                  </div>
-                )}
-                {record.images?.length > 0 && (
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                    {record.images.map((url: string, i: number) => (
-                      <Image key={i} width={100} height={100} style={{ borderRadius: 6, objectFit: "cover" }} src={url} />
-                    ))}
-                  </div>
-                )}
-              </Image.PreviewGroup>
-            </Card>
-          </Col>
-        )}
-
-        {/* Product details: ingredients, nutrition, storage */}
-        <Col xs={24}>
-          <Card title={sectionTitle(<ExperimentOutlined />, "Product Details")} size="small" style={{ marginBottom: 16 }}>
-            <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
-              <Descriptions.Item label="Ingredients" span={2}>{record.ingredients ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Serving Size">{record.servingSize ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Storage Type">
-                {storageTypeConfig ? <Tag color={storageTypeConfig.color}>{storageTypeConfig.label}</Tag> : <Text>{record.storageType ?? "—"}</Text>}
-              </Descriptions.Item>
-              <Descriptions.Item label="Storage Instructions">{record.storageInstructions ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Usage Instructions" span={2}>{record.usageInstructions ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Danger Warnings" span={2}>{record.dangerWarnings ?? "—"}</Descriptions.Item>
-            </Descriptions>
-            {record.nutritionalInfo && (
-              <div style={{ marginTop: 16 }}>
-                <Text strong style={{ display: "block", marginBottom: 8 }}>Nutritional Info</Text>
-                <NutritionalInfoView data={record.nutritionalInfo} />
-              </div>
-            )}
-          </Card>
-        </Col>
-
-        {/* Translations */}
-        {record.translations && Object.keys(record.translations).length > 0 && (
-          <Col xs={24}>
-            <Card title={sectionTitle(<TranslationOutlined />, "Translations")} size="small" style={{ marginBottom: 16 }}>
+      <ReadableSection>
+        <Row gutter={[16, 16]}>
+          {/* Left column: details */}
+          <Col xs={24} lg={record.imageUrl || record.images?.length > 0 ? 16 : 24}>
+            <Card title={sectionTitle(<InfoCircleOutlined />, "Basic Information")} size="small" style={{ marginBottom: 16 }}>
               <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
-                {Object.entries(record.translations as Record<string, { name?: string; description?: string }>).map(([lang, fields]) => (
-                  <Descriptions.Item key={lang} label={lang === "ta" ? "Tamil" : lang === "kn" ? "Kannada" : lang === "te" ? "Telugu" : lang === "hi" ? "Hindi" : lang} span={2}>
-                    {fields.name && <><Text strong>Name:</Text> {fields.name}</>}
-                    {fields.name && fields.description && <br />}
-                    {fields.description && <><Text strong>Description:</Text> {fields.description}</>}
-                  </Descriptions.Item>
-                ))}
+                <Descriptions.Item label="Name">{record.name}</Descriptions.Item>
+                <Descriptions.Item label="Brand">{record.brand?.name ?? "—"}</Descriptions.Item>
+                <Descriptions.Item label="Category">
+                  {record.subcategory
+                    ? getCategoryBreadcrumb(record.subcategory).join(" → ")
+                    : "—"}
+                </Descriptions.Item>
+                <Descriptions.Item label="Product Type">
+                  {productTypeConfig ? <Tag color={productTypeConfig.color}>{productTypeConfig.label}</Tag> : <Text>{record.productType ?? "—"}</Text>}
+                </Descriptions.Item>
+                <Descriptions.Item label="Food Type">
+                  {foodTypeConfig ? <Tag color={foodTypeConfig.color}>{foodTypeConfig.label}</Tag> : <Text>—</Text>}
+                </Descriptions.Item>
+                <Descriptions.Item label="Shelf Life">
+                  {record.shelfLifeDays != null ? `${record.shelfLifeDays} days` : "—"}
+                </Descriptions.Item>
+                <Descriptions.Item label="Description" span={2}>
+                  {record.description ?? "—"}
+                </Descriptions.Item>
+              </Descriptions>
+            </Card>
+
+            <Card title={sectionTitle(<SafetyCertificateOutlined />, "Compliance & Regulatory")} size="small" style={{ marginBottom: 16 }}>
+              <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
+                <Descriptions.Item label="HSN Code">{record.hsnCode ?? "—"}</Descriptions.Item>
+                <Descriptions.Item label="GST %">{record.gstPercent != null ? `${record.gstPercent}%` : "—"}</Descriptions.Item>
+                <Descriptions.Item label="FSSAI License">{record.fssaiLicense ?? "—"}</Descriptions.Item>
+                <Descriptions.Item label="Mfg License No">{record.mfgLicenseNo ?? "—"}</Descriptions.Item>
+                <Descriptions.Item label="Manufacturer">{record.manufacturerName ?? "—"}</Descriptions.Item>
+                <Descriptions.Item label="Country of Origin">{record.countryOfOrigin ?? "—"}</Descriptions.Item>
+                <Descriptions.Item label="Regulatory Marks" span={2}>
+                  {record.regulatoryMarks?.length > 0
+                    ? record.regulatoryMarks.map((m: string) => <Tag key={m} color="blue">{m}</Tag>)
+                    : "—"}
+                </Descriptions.Item>
+                <Descriptions.Item label="Certifications" span={2}>
+                  {record.certifications?.length > 0
+                    ? record.certifications.map((c: string) => <Tag key={c} color="green">{c}</Tag>)
+                    : "—"}
+                </Descriptions.Item>
+              </Descriptions>
+            </Card>
+
+            <Card title={sectionTitle(<TagsOutlined />, "Tags & Labels")} size="small" style={{ marginBottom: 16 }}>
+              <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
+                <Descriptions.Item label="Tags">
+                  {record.tags?.length > 0
+                    ? record.tags.map((t: string) => <Tag key={t}>{t}</Tag>)
+                    : "—"}
+                </Descriptions.Item>
+                <Descriptions.Item label="Allergens">
+                  {record.allergens?.length > 0
+                    ? record.allergens.map((a: string) => <Tag key={a} color="warning">{a}</Tag>)
+                    : "—"}
+                </Descriptions.Item>
               </Descriptions>
             </Card>
           </Col>
-        )}
 
-        {/* Org members who can map: show Map to Store action */}
-        {can(identity, "store-products", "create") && !isSuperAdmin && (
+          {/* Right column: images */}
+          {(record.imageUrl || record.images?.length > 0) && (
+            <Col xs={24} lg={8}>
+              <Card
+                title={sectionTitle(<PictureOutlined />, "Images")}
+                size="small"
+                style={{ marginBottom: 16 }}
+                extra={
+                  <Badge
+                    count={
+                      (record.imageUrl ? 1 : 0) + (record.images?.length ?? 0)
+                    }
+                    style={{ backgroundColor: "#0d9488" }}
+                    overflowCount={99}
+                  />
+                }
+              >
+                <Image.PreviewGroup>
+                  {record.imageUrl && (
+                    <div style={{ marginBottom: 12 }}>
+                      <Image width="100%" style={{ maxWidth: 300, borderRadius: 6 }} src={record.imageUrl} />
+                    </div>
+                  )}
+                  {record.images?.length > 0 && (
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                      {record.images.map((url: string, i: number) => (
+                        <Image key={i} width={100} height={100} style={{ borderRadius: 6, objectFit: "cover" }} src={url} />
+                      ))}
+                    </div>
+                  )}
+                </Image.PreviewGroup>
+              </Card>
+            </Col>
+          )}
+
+          {/* Product details: ingredients, nutrition, storage */}
           <Col xs={24}>
-            <Alert
-              type="info"
-              showIcon
-              message={isMasterProduct ? "Master Catalog Product" : "Map to Store"}
-              description={isMasterProduct
-                ? "This product is from the master catalog. You can map its variants to your stores by assigning them with pricing and stock."
-                : "Map this product's variants to your stores with pricing and stock."}
-              action={
-                <Button
-                  type="primary"
-                  icon={<ShopOutlined />}
-                  onClick={() => navigate(`/products/${record.id}/map`)}
-                >
-                  Map to Store
-                </Button>
-              }
-            />
+            <Card title={sectionTitle(<ExperimentOutlined />, "Product Details")} size="small" style={{ marginBottom: 16 }}>
+              <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
+                <Descriptions.Item label="Ingredients" span={2}>{record.ingredients ?? "—"}</Descriptions.Item>
+                <Descriptions.Item label="Serving Size">{record.servingSize ?? "—"}</Descriptions.Item>
+                <Descriptions.Item label="Storage Type">
+                  {storageTypeConfig ? <Tag color={storageTypeConfig.color}>{storageTypeConfig.label}</Tag> : <Text>{record.storageType ?? "—"}</Text>}
+                </Descriptions.Item>
+                <Descriptions.Item label="Storage Instructions">{record.storageInstructions ?? "—"}</Descriptions.Item>
+                <Descriptions.Item label="Usage Instructions" span={2}>{record.usageInstructions ?? "—"}</Descriptions.Item>
+                <Descriptions.Item label="Danger Warnings" span={2}>{record.dangerWarnings ?? "—"}</Descriptions.Item>
+              </Descriptions>
+              {record.nutritionalInfo && (
+                <div style={{ marginTop: 16 }}>
+                  <Text strong style={{ display: "block", marginBottom: 8 }}>Nutritional Info</Text>
+                  <NutritionalInfoView data={record.nutritionalInfo} />
+                </div>
+              )}
+            </Card>
           </Col>
-        )}
 
-        {/* Variants table */}
-        <Col xs={24}>
-          <Card title={sectionTitle(<AppstoreOutlined />, "Variants")} size="small">
-            <Table
-              dataSource={record.variants ?? []}
-              rowKey="id"
-              pagination={false}
-              size="small"
-            >
-              <Table.Column dataIndex="name" title="Name" />
-              <Table.Column dataIndex="sku" title="SKU" render={(v: string) => v ?? "—"} />
-              <Table.Column dataIndex="barcode" title="Barcode" render={(v: string) => v ?? "—"} />
-              <Table.Column dataIndex="unitType" title="Unit Type" />
-              <Table.Column dataIndex="unitValue" title="Unit Value" />
-              <Table.Column dataIndex="mrp" title="MRP" render={(v: number) => v != null ? `₹${Number(v).toFixed(2)}` : "—"} />
-              <Table.Column dataIndex="packType" title="Pack Type" render={(v: string) => v ?? "—"} />
-              <Table.Column
-                title="Discount"
-                render={(_: unknown, r: { discountType?: string; discountValue?: number }) =>
-                  r.discountType && r.discountValue != null
-                    ? <Tag color="red">{r.discountType === "PERCENTAGE" ? `${r.discountValue}% OFF` : `₹${Number(r.discountValue).toFixed(2)} OFF`}</Tag>
-                    : "—"
+          {/* Translations */}
+          {record.translations && Object.keys(record.translations).length > 0 && (
+            <Col xs={24}>
+              <Card title={sectionTitle(<TranslationOutlined />, "Translations")} size="small" style={{ marginBottom: 16 }}>
+                <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
+                  {Object.entries(record.translations as Record<string, { name?: string; description?: string }>).map(([lang, fields]) => (
+                    <Descriptions.Item key={lang} label={lang === "ta" ? "Tamil" : lang === "kn" ? "Kannada" : lang === "te" ? "Telugu" : lang === "hi" ? "Hindi" : lang} span={2}>
+                      {fields.name && <><Text strong>Name:</Text> {fields.name}</>}
+                      {fields.name && fields.description && <br />}
+                      {fields.description && <><Text strong>Description:</Text> {fields.description}</>}
+                    </Descriptions.Item>
+                  ))}
+                </Descriptions>
+              </Card>
+            </Col>
+          )}
+
+          {/* Org members who can map: show Map to Store action */}
+          {can(identity, "store-products", "create") && !isSuperAdmin && (
+            <Col xs={24}>
+              <Alert
+                type="info"
+                showIcon
+                message={isMasterProduct ? "Master Catalog Product" : "Map to Store"}
+                description={isMasterProduct
+                  ? "This product is from the master catalog. You can map its variants to your stores by assigning them with pricing and stock."
+                  : "Map this product's variants to your stores with pricing and stock."}
+                action={
+                  <Button
+                    type="primary"
+                    icon={<ShopOutlined />}
+                    onClick={() => navigate(`/products/${record.id}/map`)}
+                  >
+                    Map to Store
+                  </Button>
                 }
               />
-              <Table.Column
-                title="Discount Period"
-                render={(_: unknown, r: { discountStart?: string; discountEnd?: string }) => {
-                  if (!r.discountStart && !r.discountEnd) return "—";
-                  const fmt = (d: string) => new Date(d).toLocaleDateString();
-                  const start = r.discountStart ? fmt(r.discountStart) : "—";
-                  const end = r.discountEnd ? fmt(r.discountEnd) : "—";
-                  return `${start} → ${end}`;
-                }}
-              />
-            </Table>
-          </Card>
-        </Col>
-      </Row>
+            </Col>
+          )}
+
+          {/* Variants table */}
+          <Col xs={24}>
+            <Card title={sectionTitle(<AppstoreOutlined />, "Variants")} size="small">
+              <Table
+                dataSource={record.variants ?? []}
+                rowKey="id"
+                pagination={false}
+                size="small"
+              >
+                <Table.Column dataIndex="name" title="Name" />
+                <Table.Column dataIndex="sku" title="SKU" render={(v: string) => v ?? "—"} />
+                <Table.Column dataIndex="barcode" title="Barcode" render={(v: string) => v ?? "—"} />
+                <Table.Column dataIndex="unitType" title="Unit Type" />
+                <Table.Column dataIndex="unitValue" title="Unit Value" />
+                <Table.Column dataIndex="mrp" title="MRP" render={(v: number) => v != null ? `₹${Number(v).toFixed(2)}` : "—"} />
+                <Table.Column dataIndex="packType" title="Pack Type" render={(v: string) => v ?? "—"} />
+                <Table.Column
+                  title="Discount"
+                  render={(_: unknown, r: { discountType?: string; discountValue?: number }) =>
+                    r.discountType && r.discountValue != null
+                      ? <Tag color="red">{r.discountType === "PERCENTAGE" ? `${r.discountValue}% OFF` : `₹${Number(r.discountValue).toFixed(2)} OFF`}</Tag>
+                      : "—"
+                  }
+                />
+                <Table.Column
+                  title="Discount Period"
+                  render={(_: unknown, r: { discountStart?: string; discountEnd?: string }) => {
+                    if (!r.discountStart && !r.discountEnd) return "—";
+                    const fmt = (d: string) => new Date(d).toLocaleDateString();
+                    const start = r.discountStart ? fmt(r.discountStart) : "—";
+                    const end = r.discountEnd ? fmt(r.discountEnd) : "—";
+                    return `${start} → ${end}`;
+                  }}
+                />
+              </Table>
+            </Card>
+          </Col>
+        </Row>
+      </ReadableSection>
     </Show>
   );
 };

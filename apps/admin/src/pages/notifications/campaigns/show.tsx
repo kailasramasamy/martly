@@ -16,6 +16,7 @@ import {
   CAMPAIGN_STATUS_CONFIG,
   AUDIENCE_TYPE_CONFIG,
 } from "../../../constants/tag-colors";
+import { ReadableSection } from "../../../components/ReadableSection";
 
 const { Title, Paragraph } = Typography;
 
@@ -84,7 +85,7 @@ export const CampaignShow = () => {
     : [];
 
   return (
-    <div style={{ padding: "16px 24px 32px", maxWidth: 1200, margin: "0 auto" }}>
+    <ReadableSection style={{ padding: "16px 24px 32px" }}>
       {/* Header */}
       <Space align="center" style={{ marginBottom: 20 }}>
         <Button type="text" icon={<ArrowLeftOutlined />} onClick={() => navigate(-1)} />
@@ -188,6 +189,6 @@ export const CampaignShow = () => {
           </Card>
         </Col>
       </Row>
-    </div>
+    </ReadableSection>
   );
 };

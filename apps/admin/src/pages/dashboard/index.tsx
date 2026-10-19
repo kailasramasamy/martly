@@ -359,7 +359,7 @@ export const DashboardPage = () => {
   const periodLabel = days === 7 ? "7 days" : days === 30 ? "30 days" : "90 days";
 
   return (
-    <div style={{ padding: "16px 24px 32px", maxWidth: 1400, margin: "0 auto" }}>
+    <div style={{ padding: "16px 24px 32px" }}>
       {/* Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
         <div>

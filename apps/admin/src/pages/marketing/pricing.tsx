@@ -4,9 +4,10 @@ import { SaveOutlined, TagsOutlined } from "@ant-design/icons";
 import { BannerPlacementLabels, INDIAN_STATES, BRAND_PRODUCT_KINDS } from "@martly/shared/constants";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
-import { BrandPackagesCard, StorePlansCard, TopupCard } from "./pricing-products";
+import { BrandPackagesCard, ImagePacksCard, StorePlansCard, TopupCard } from "./pricing-products";
 import type { AdProduct } from "./types";
 import { errorMessage } from "./utils";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const { Text } = Typography;
 
@@ -132,10 +133,11 @@ export const MarketingPricing = () => {
 
   const ofKind = (match: (p: AdProduct) => boolean) => products.filter(match);
   return (
-    <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+    <ReadableSection>
       <h2 style={{ marginTop: 0 }}>{sectionTitle(<TagsOutlined />, "Ad pricing")}</h2>
       <StorePlansCard products={ofKind((p) => p.kind === "STORE_PLAN")} patch={patch} />
       <TopupCard products={ofKind((p) => p.kind === "PROMOTION_TOPUP")} patch={patch} />
+      <ImagePacksCard products={ofKind((p) => p.kind === "AI_IMAGE_PACK")} patch={patch} />
       <BrandPackagesCard products={ofKind((p) => BRAND_PRODUCT_KINDS.includes(p.kind))} patch={patch} />
       <Form form={form} layout="vertical">
         <SlotLimitsCard />
@@ -143,6 +145,6 @@ export const MarketingPricing = () => {
       </Form>
       <Button type="primary" icon={<SaveOutlined />} loading={saving} onClick={save}>Save</Button>
       <Text type="secondary" style={{ marginLeft: 12 }}>Price changes apply to new purchases only.</Text>
-    </div>
+    </ReadableSection>
   );
 };

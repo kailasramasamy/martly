@@ -9,6 +9,7 @@ import { AiBannerCard } from "./ai-banner-card";
 import { HomeHeroCard } from "./home-hero-card";
 import { CuratedItemsCard } from "./curated-items-card";
 import { ShowOnHomeCard } from "./show-on-home-card";
+import { ReadableSection } from "../../components/ReadableSection";
 
 export const CollectionEdit = () => {
   const { formProps, saveButtonProps, queryResult } = useForm({
@@ -29,83 +30,85 @@ export const CollectionEdit = () => {
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
-      <Form
-        {...formProps}
-        layout="vertical"
-        initialValues={{
-          ...formProps.initialValues,
-          productIds: initialProductIds,
-          schedule: toScheduleValue(record),
-        }}
-        onFinish={(values) => formProps.onFinish?.(toSchedulePayload(values))}
-      >
-        {isCurated && record && <AiBannerCard record={record} onRegenerated={() => queryResult?.refetch()} />}
-        {(record?.kind === "OCCASION" || record?.kind === "SEASON") && (
-          <HomeHeroCard record={record} onChanged={() => queryResult?.refetch()} />
-        )}
-        <Row gutter={[16, 16]} style={{ marginTop: 16 }}>
-          <Col xs={24} lg={12}>
-            <Card title={sectionTitle(<AppstoreOutlined />, "Collection Details")} size="small">
-              <Form.Item label="Title" name="title" rules={[{ required: true }]}>
-                <Input />
-              </Form.Item>
-              <Form.Item label="Slug" name="slug" rules={[{ required: true }]}>
-                <Input />
-              </Form.Item>
-              <Form.Item label="Subtitle" name="subtitle">
-                <Input />
-              </Form.Item>
-              <Form.Item label="Kind" name="kind">
-                <Select
-                  options={EDITABLE_COLLECTION_KINDS.map((value) => ({ value, label: CollectionKindLabels[value] }))}
-                />
-              </Form.Item>
-              <Form.Item label="Schedule" name="schedule">
-                <DatePicker.RangePicker showTime allowEmpty={[true, true]} style={{ width: "100%" }} />
-              </Form.Item>
-              <Row gutter={16}>
-                <Col span={12}>
-                  <Form.Item label="Sort Order" name="sortOrder">
-                    <InputNumber min={0} style={{ width: "100%" }} />
-                  </Form.Item>
-                </Col>
-                <Col span={12}>
-                  <Form.Item label="Active" name="isActive" valuePropName="checked">
-                    <Switch />
-                  </Form.Item>
-                </Col>
-              </Row>
-            </Card>
-          </Col>
-          <Col xs={24} lg={12}>
-            <Card title={sectionTitle(<AppstoreOutlined />, "Products & Image")} size="small">
-              {!isCurated && (
-                <Form.Item label="Products" name="productIds">
+      <ReadableSection>
+        <Form
+          {...formProps}
+          layout="vertical"
+          initialValues={{
+            ...formProps.initialValues,
+            productIds: initialProductIds,
+            schedule: toScheduleValue(record),
+          }}
+          onFinish={(values) => formProps.onFinish?.(toSchedulePayload(values))}
+        >
+          {isCurated && record && <AiBannerCard record={record} onRegenerated={() => queryResult?.refetch()} />}
+          {(record?.kind === "OCCASION" || record?.kind === "SEASON") && (
+            <HomeHeroCard record={record} onChanged={() => queryResult?.refetch()} />
+          )}
+          <Row gutter={[16, 16]} style={{ marginTop: 16 }}>
+            <Col xs={24} lg={12}>
+              <Card title={sectionTitle(<AppstoreOutlined />, "Collection Details")} size="small">
+                <Form.Item label="Title" name="title" rules={[{ required: true }]}>
+                  <Input />
+                </Form.Item>
+                <Form.Item label="Slug" name="slug" rules={[{ required: true }]}>
+                  <Input />
+                </Form.Item>
+                <Form.Item label="Subtitle" name="subtitle">
+                  <Input />
+                </Form.Item>
+                <Form.Item label="Kind" name="kind">
                   <Select
-                    {...productSelectProps}
-                    mode="multiple"
-                    placeholder="Select products for this collection"
-                    allowClear
+                    options={EDITABLE_COLLECTION_KINDS.map((value) => ({ value, label: CollectionKindLabels[value] }))}
                   />
                 </Form.Item>
+                <Form.Item label="Schedule" name="schedule">
+                  <DatePicker.RangePicker showTime allowEmpty={[true, true]} style={{ width: "100%" }} />
+                </Form.Item>
+                <Row gutter={16}>
+                  <Col span={12}>
+                    <Form.Item label="Sort Order" name="sortOrder">
+                      <InputNumber min={0} style={{ width: "100%" }} />
+                    </Form.Item>
+                  </Col>
+                  <Col span={12}>
+                    <Form.Item label="Active" name="isActive" valuePropName="checked">
+                      <Switch />
+                    </Form.Item>
+                  </Col>
+                </Row>
+              </Card>
+            </Col>
+            <Col xs={24} lg={12}>
+              <Card title={sectionTitle(<AppstoreOutlined />, "Products & Image")} size="small">
+                {!isCurated && (
+                  <Form.Item label="Products" name="productIds">
+                    <Select
+                      {...productSelectProps}
+                      mode="multiple"
+                      placeholder="Select products for this collection"
+                      allowClear
+                    />
+                  </Form.Item>
+                )}
+                <Form.Item
+                  label="Cover Image"
+                  name="imageUrl"
+                  getValueFromEvent={(url: string) => url}
+                >
+                  <ImageUpload />
+                </Form.Item>
+              </Card>
+              {isCurated && (
+                <Form.Item name="productIds" noStyle>
+                  <CuratedItemsCard items={record?.items ?? []} />
+                </Form.Item>
               )}
-              <Form.Item
-                label="Cover Image"
-                name="imageUrl"
-                getValueFromEvent={(url: string) => url}
-              >
-                <ImageUpload />
-              </Form.Item>
-            </Card>
-            {isCurated && (
-              <Form.Item name="productIds" noStyle>
-                <CuratedItemsCard items={record?.items ?? []} />
-              </Form.Item>
-            )}
-            {record && <ShowOnHomeCard collection={record} />}
-          </Col>
-        </Row>
-      </Form>
+              {record && <ShowOnHomeCard collection={record} />}
+            </Col>
+          </Row>
+        </Form>
+      </ReadableSection>
     </Edit>
   );
 };

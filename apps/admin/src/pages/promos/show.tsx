@@ -9,6 +9,7 @@ import { PromoActions, useAction } from "./promo-actions";
 import { DraftingProgress, PromoPreview } from "./promo-preview";
 import { PromoBanner } from "./promo-banner";
 import { PromoProducts } from "./promo-products";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const POLL_MS = 2000;
 const PREVIEW_STATUSES = ["READY", "LIVE", "ENDED"];
@@ -62,16 +63,18 @@ export const PromoShow = () => {
         <PromoActions promo={promo} busy={busy} run={run} onDeleted={() => list("promos")} onRetried={(newId) => show("promos", newId)} />
       )}
     >
-      <PromoHeader promo={promo} />
-      {promo.kind === "MANUAL" && <ManualSetup promo={promo} />}
-      {promo.status === "DRAFTING" && <DraftingProgress log={promo.log} />}
-      {PREVIEW_STATUSES.includes(promo.status) && (
-        <>
-          {promo.kind === "AI" && <PromoPreview promo={promo} />}
-          <PromoBanner promo={promo} onChanged={() => void reload()} />
-          <PromoProducts promo={promo} busy={busy !== null} onRemove={removeProduct} />
-        </>
-      )}
+      <ReadableSection>
+        <PromoHeader promo={promo} />
+        {promo.kind === "MANUAL" && <ManualSetup promo={promo} />}
+        {promo.status === "DRAFTING" && <DraftingProgress log={promo.log} />}
+        {PREVIEW_STATUSES.includes(promo.status) && (
+          <>
+            {promo.kind === "AI" && <PromoPreview promo={promo} />}
+            <PromoBanner promo={promo} onChanged={() => void reload()} />
+            <PromoProducts promo={promo} busy={busy !== null} onRemove={removeProduct} />
+          </>
+        )}
+      </ReadableSection>
     </Show>
   );
 };

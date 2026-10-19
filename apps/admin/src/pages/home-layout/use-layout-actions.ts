@@ -2,6 +2,7 @@ import { message } from "antd";
 import type { DragEndEvent } from "@dnd-kit/core";
 import { arrayMove } from "@dnd-kit/sortable";
 import { axiosInstance } from "../../providers/data-provider";
+import type { useAiImages } from "../../hooks/use-ai-images";
 import type { HomeLayoutSection, SectionPayload, useHomeLayout } from "./use-home-layout";
 
 const ART_TIMEOUT_MS = 5 * 60 * 1000;
@@ -9,7 +10,7 @@ const ART_TIMEOUT_MS = 5 * 60 * 1000;
 type Layout = ReturnType<typeof useHomeLayout>;
 
 /** Edit calls for the layout list; each customizes the default layout first so ids stay valid */
-export function useLayoutActions(layout: Layout, editing: HomeLayoutSection | undefined, onSaved: () => void) {
+export function useLayoutActions(layout: Layout, editing: HomeLayoutSection | undefined, onSaved: () => void, ai: ReturnType<typeof useAiImages>) {
   const { sections, params } = layout;
 
   /** Resolves a row to its persisted id, customizing the default layout first when needed */
@@ -70,9 +71,11 @@ export function useLayoutActions(layout: Layout, editing: HomeLayoutSection | un
       const id = await resolveId(s);
       const res = await axiosInstance.post(`/home-layout/${id}/art`, repaint ? { repaint } : {}, { params, timeout: ART_TIMEOUT_MS });
       await layout.load();
+      void ai.refresh();
       const painted = res.data.data.painted as number;
       message.success(`Painted ${painted} ${painted === 1 ? "tile" : "tiles"}`);
     } catch (e: any) {
+      if (ai.handleExhausted(e)) return;
       message.error(e?.code === "ECONNABORTED" ? "Painting is taking too long; refresh in a minute to see the tiles" : (e?.response?.data?.error ?? e?.response?.data?.message ?? "Could not paint tiles"));
     }
   };

@@ -13,6 +13,7 @@ import { CountInfoCard } from "./count-info-card";
 import { CountHeaderButtons } from "./count-header-buttons";
 import { RejectModal } from "./reject-modal";
 import { useCountActions, useCountData } from "./use-count-actions";
+import { ReadableSection } from "../../components/ReadableSection";
 
 export const StockCountShow = () => {
   const { id } = useParams();
@@ -48,17 +49,19 @@ export const StockCountShow = () => {
         />
       }
     >
-      <CountInfoCard count={count} counterView={entry} />
-      <Card title={entry ? `Count each item on the shelf (${counted}/${count.items.length})` : "Items"}>
-        <CountItemsTable count={count} draft={draft} entry={entry}
-          selectedIds={reviewing ? selectedIds : undefined} onSelect={reviewing ? data.setSelectedIds : undefined}
-          onCorrect={reviewing ? setCorrecting : undefined} onChange={(spId, qty) => data.setDraft((d) => ({ ...d, [spId]: qty }))} />
-      </Card>
-      <RecountModal countId={count.id} open={recountOpen} selectedIds={selectedIds} restCount={restCount}
-        onClose={() => setRecountOpen(false)} onDone={(detail) => { setRecountOpen(false); data.applyDetail(detail); }} />
-      <CorrectLineModal countId={count.id} item={correcting}
-        onClose={() => setCorrecting(null)} onDone={(detail) => { setCorrecting(null); data.applyDetail(detail); }} />
-      <RejectModal open={rejectOpen} busy={actions.busy} onClose={() => setRejectOpen(false)} onReject={(note) => actions.review("reject", note)} />
+      <ReadableSection>
+        <CountInfoCard count={count} counterView={entry} />
+        <Card title={entry ? `Count each item on the shelf (${counted}/${count.items.length})` : "Items"}>
+          <CountItemsTable count={count} draft={draft} entry={entry}
+            selectedIds={reviewing ? selectedIds : undefined} onSelect={reviewing ? data.setSelectedIds : undefined}
+            onCorrect={reviewing ? setCorrecting : undefined} onChange={(spId, qty) => data.setDraft((d) => ({ ...d, [spId]: qty }))} />
+        </Card>
+        <RecountModal countId={count.id} open={recountOpen} selectedIds={selectedIds} restCount={restCount}
+          onClose={() => setRecountOpen(false)} onDone={(detail) => { setRecountOpen(false); data.applyDetail(detail); }} />
+        <CorrectLineModal countId={count.id} item={correcting}
+          onClose={() => setCorrecting(null)} onDone={(detail) => { setCorrecting(null); data.applyDetail(detail); }} />
+        <RejectModal open={rejectOpen} busy={actions.busy} onClose={() => setRejectOpen(false)} onReject={(note) => actions.review("reject", note)} />
+      </ReadableSection>
     </Show>
   );
 };

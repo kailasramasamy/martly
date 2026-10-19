@@ -11,6 +11,7 @@ import { sectionTitle } from "../../theme";
 import { axiosInstance } from "../../providers/data-provider";
 import { BrandingView, type StoreBrandingRecord } from "./branding-view";
 import { CatalogCoverageBar } from "./catalog-coverage-bar";
+import { ReadableSection } from "../../components/ReadableSection";
 
 interface Identity {
   role: string;
@@ -128,128 +129,130 @@ export const StoreShow = () => {
 
   return (
     <Show>
-      <Row gutter={[16, 16]}>
-        <Col xs={24} lg={12}>
-          <Card title={sectionTitle(<ShopOutlined />, "Store Details")} size="small">
-            <Descriptions column={1} size="small" bordered>
-              <Descriptions.Item label="Name">{record.name}</Descriptions.Item>
-              <Descriptions.Item label="Slug">{record.slug}</Descriptions.Item>
-              <Descriptions.Item label="Organization">
-                {orgData?.data?.name ?? record.organizationId}
-              </Descriptions.Item>
-              <Descriptions.Item label="Status">
-                <Tag color={statusConfig.color}>{statusConfig.label}</Tag>
-              </Descriptions.Item>
-            </Descriptions>
-          </Card>
-        </Col>
-
-        <Col xs={24} lg={12}>
-          <Card title={sectionTitle(<EnvironmentOutlined />, "Contact & Location")} size="small">
-            <Descriptions column={1} size="small" bordered>
-              <Descriptions.Item label="Address">{record.address}</Descriptions.Item>
-              <Descriptions.Item label="Phone">{record.phone ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Created">
-                {record.createdAt ? new Date(record.createdAt).toLocaleString() : "—"}
-              </Descriptions.Item>
-              <Descriptions.Item label="Last Updated">
-                {record.updatedAt ? new Date(record.updatedAt).toLocaleString() : "—"}
-              </Descriptions.Item>
-            </Descriptions>
-          </Card>
-        </Col>
-
-        <Col xs={24}>
-          <BrandingView record={record as StoreBrandingRecord} />
-        </Col>
-
-        <Col xs={24}>
-          <CatalogCoverageBar storeId={record.id as string} onAdd={() => navigate(`/stores/show/${record.id}/onboard`)} />
-        </Col>
-
-        {canManageStaff && (
-          <Col xs={24}>
-            <Card
-              title={sectionTitle(<TeamOutlined />, "Store Staff")}
-              size="small"
-              extra={
-                <Space>
-                  <Select
-                    showSearch
-                    allowClear
-                    placeholder="Select user to assign"
-                    value={selectedUserId}
-                    onChange={setSelectedUserId}
-                    style={{ width: 280 }}
-                    optionFilterProp="label"
-                    options={availableUsers.map((u) => ({
-                      label: `${u.name} (${u.email})`,
-                      value: u.id,
-                    }))}
-                  />
-                  <Button
-                    type="primary"
-                    icon={<UserAddOutlined />}
-                    onClick={handleAssign}
-                    loading={assigning}
-                    disabled={!selectedUserId}
-                  >
-                    Assign
-                  </Button>
-                </Space>
-              }
-            >
-              <Table
-                dataSource={staff}
-                rowKey="id"
-                loading={staffLoading}
-                pagination={false}
-                size="small"
-              >
-                <Table.Column
-                  title="Name"
-                  render={(_, row: StaffAssignment) => row.user.name}
-                />
-                <Table.Column
-                  title="Email"
-                  render={(_, row: StaffAssignment) => row.user.email}
-                />
-                <Table.Column
-                  title="Role"
-                  render={(_, row: StaffAssignment) => (
-                    <Tag color={ROLE_COLORS[row.user.role] ?? "default"}>
-                      {row.user.role.replace(/_/g, " ")}
-                    </Tag>
-                  )}
-                />
-                <Table.Column
-                  title="Assigned"
-                  render={(_, row: StaffAssignment) =>
-                    new Date(row.createdAt).toLocaleDateString()
-                  }
-                />
-                <Table.Column
-                  title=""
-                  width={60}
-                  render={(_, row: StaffAssignment) => (
-                    <Popconfirm
-                      title="Remove this user from the store?"
-                      onConfirm={() => handleRemove(row.userId)}
-                    >
-                      <Button
-                        danger
-                        type="text"
-                        size="small"
-                        icon={<DeleteOutlined />}
-                      />
-                    </Popconfirm>
-                  )}
-                />
-              </Table>
+      <ReadableSection>
+        <Row gutter={[16, 16]}>
+          <Col xs={24} lg={12}>
+            <Card title={sectionTitle(<ShopOutlined />, "Store Details")} size="small">
+              <Descriptions column={1} size="small" bordered>
+                <Descriptions.Item label="Name">{record.name}</Descriptions.Item>
+                <Descriptions.Item label="Slug">{record.slug}</Descriptions.Item>
+                <Descriptions.Item label="Organization">
+                  {orgData?.data?.name ?? record.organizationId}
+                </Descriptions.Item>
+                <Descriptions.Item label="Status">
+                  <Tag color={statusConfig.color}>{statusConfig.label}</Tag>
+                </Descriptions.Item>
+              </Descriptions>
             </Card>
           </Col>
-        )}
-      </Row>
+
+          <Col xs={24} lg={12}>
+            <Card title={sectionTitle(<EnvironmentOutlined />, "Contact & Location")} size="small">
+              <Descriptions column={1} size="small" bordered>
+                <Descriptions.Item label="Address">{record.address}</Descriptions.Item>
+                <Descriptions.Item label="Phone">{record.phone ?? "—"}</Descriptions.Item>
+                <Descriptions.Item label="Created">
+                  {record.createdAt ? new Date(record.createdAt).toLocaleString() : "—"}
+                </Descriptions.Item>
+                <Descriptions.Item label="Last Updated">
+                  {record.updatedAt ? new Date(record.updatedAt).toLocaleString() : "—"}
+                </Descriptions.Item>
+              </Descriptions>
+            </Card>
+          </Col>
+
+          <Col xs={24}>
+            <BrandingView record={record as StoreBrandingRecord} />
+          </Col>
+
+          <Col xs={24}>
+            <CatalogCoverageBar storeId={record.id as string} onAdd={() => navigate(`/stores/show/${record.id}/onboard`)} />
+          </Col>
+
+          {canManageStaff && (
+            <Col xs={24}>
+              <Card
+                title={sectionTitle(<TeamOutlined />, "Store Staff")}
+                size="small"
+                extra={
+                  <Space>
+                    <Select
+                      showSearch
+                      allowClear
+                      placeholder="Select user to assign"
+                      value={selectedUserId}
+                      onChange={setSelectedUserId}
+                      style={{ width: 280 }}
+                      optionFilterProp="label"
+                      options={availableUsers.map((u) => ({
+                        label: `${u.name} (${u.email})`,
+                        value: u.id,
+                      }))}
+                    />
+                    <Button
+                      type="primary"
+                      icon={<UserAddOutlined />}
+                      onClick={handleAssign}
+                      loading={assigning}
+                      disabled={!selectedUserId}
+                    >
+                      Assign
+                    </Button>
+                  </Space>
+                }
+              >
+                <Table
+                  dataSource={staff}
+                  rowKey="id"
+                  loading={staffLoading}
+                  pagination={false}
+                  size="small"
+                >
+                  <Table.Column
+                    title="Name"
+                    render={(_, row: StaffAssignment) => row.user.name}
+                  />
+                  <Table.Column
+                    title="Email"
+                    render={(_, row: StaffAssignment) => row.user.email}
+                  />
+                  <Table.Column
+                    title="Role"
+                    render={(_, row: StaffAssignment) => (
+                      <Tag color={ROLE_COLORS[row.user.role] ?? "default"}>
+                        {row.user.role.replace(/_/g, " ")}
+                      </Tag>
+                    )}
+                  />
+                  <Table.Column
+                    title="Assigned"
+                    render={(_, row: StaffAssignment) =>
+                      new Date(row.createdAt).toLocaleDateString()
+                    }
+                  />
+                  <Table.Column
+                    title=""
+                    width={60}
+                    render={(_, row: StaffAssignment) => (
+                      <Popconfirm
+                        title="Remove this user from the store?"
+                        onConfirm={() => handleRemove(row.userId)}
+                      >
+                        <Button
+                          danger
+                          type="text"
+                          size="small"
+                          icon={<DeleteOutlined />}
+                        />
+                      </Popconfirm>
+                    )}
+                  />
+                </Table>
+              </Card>
+            </Col>
+          )}
+        </Row>
+      </ReadableSection>
     </Show>
   );
 };

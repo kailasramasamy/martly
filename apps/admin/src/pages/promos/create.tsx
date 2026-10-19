@@ -5,6 +5,7 @@ import { Link } from "react-router";
 import { PromoCreateCard } from "./create-card";
 import { ManualPromoForm } from "./manual/form";
 import { usePromoEntitlements } from "./promo-access";
+import { ReadableSection } from "../../components/ReadableSection";
 
 type Kind = "AI" | "MANUAL";
 
@@ -21,18 +22,20 @@ export const PromoCreate = () => {
   const noAllowance = !!entitlements && entitlements.promotions.planLeft + entitlements.promotions.topUpBalance === 0;
   return (
     <Create title="New promotion" footerButtons={[]}>
-      {isOrgUser && entitlements && <PromoAllowance left={entitlements.promotions.planLeft} topUp={entitlements.promotions.topUpBalance} />}
-      <Segmented<Kind>
-        value={kind}
-        onChange={setKind}
-        options={[{ value: "AI", label: "AI promotion" }, { value: "MANUAL", label: "Manual promotion" }]}
-        style={{ marginBottom: 16 }}
-      />
-      {kind === "AI" ? (
-        <PromoCreateCard entitlements={entitlements} isPlatform={isPlatform} noAllowance={noAllowance} />
-      ) : (
-        <ManualPromoForm entitlements={entitlements} isOrgUser={isOrgUser} noAllowance={noAllowance} />
-      )}
+      <ReadableSection>
+        {isOrgUser && entitlements && <PromoAllowance left={entitlements.promotions.planLeft} topUp={entitlements.promotions.topUpBalance} />}
+        <Segmented<Kind>
+          value={kind}
+          onChange={setKind}
+          options={[{ value: "AI", label: "AI promotion" }, { value: "MANUAL", label: "Manual promotion" }]}
+          style={{ marginBottom: 16 }}
+        />
+        {kind === "AI" ? (
+          <PromoCreateCard entitlements={entitlements} isPlatform={isPlatform} noAllowance={noAllowance} />
+        ) : (
+          <ManualPromoForm entitlements={entitlements} isOrgUser={isOrgUser} noAllowance={noAllowance} />
+        )}
+      </ReadableSection>
     </Create>
   );
 };

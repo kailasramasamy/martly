@@ -22,6 +22,7 @@ import {
 } from "@ant-design/icons";
 import { axiosInstance } from "../../providers/data-provider";
 import { TICKET_STATUS_CONFIG, TICKET_PRIORITY_CONFIG } from "../../constants/tag-colors";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const { TextArea } = Input;
 const { Text, Title } = Typography;
@@ -136,7 +137,7 @@ export const SupportTicketShow = () => {
   const priorityCfg = TICKET_PRIORITY_CONFIG[ticket.priority] || { color: "default", label: ticket.priority };
 
   return (
-    <div>
+    <ReadableSection>
       <Space style={{ marginBottom: 16 }}>
         <Button
           icon={<ArrowLeftOutlined />}
@@ -260,6 +261,6 @@ export const SupportTicketShow = () => {
           </Space>
         </Card>
       )}
-    </div>
+    </ReadableSection>
   );
 };

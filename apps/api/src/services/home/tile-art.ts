@@ -34,13 +34,21 @@ async function paintItem(prisma: PrismaClient, item: ArtItem) {
   return url;
 }
 
-/** Paints a transparent cut-out for each of these tiles and saves it as the tile's image, a few at a time. */
+/**
+ * Paints a transparent cut-out for each of these tiles and saves it as the tile's image, a few at a time. A tile that
+ * fails doesn't stop the rest; it throws only when none could be painted.
+ */
 export async function paintTiles(prisma: PrismaClient, items: ArtItem[]) {
   const painted: { id: string; imageUrl: string }[] = [];
+  let firstError: unknown = null;
   for (let i = 0; i < items.length; i += CONCURRENCY) {
     const batch = items.slice(i, i + CONCURRENCY);
-    const urls = await Promise.all(batch.map((item) => paintItem(prisma, item)));
-    batch.forEach((item, j) => painted.push({ id: item.id, imageUrl: urls[j] }));
+    const results = await Promise.allSettled(batch.map((item) => paintItem(prisma, item)));
+    results.forEach((result, j) => {
+      if (result.status === "fulfilled") painted.push({ id: batch[j].id, imageUrl: result.value });
+      else firstError ??= result.reason;
+    });
   }
-  return painted;
+  if (painted.length === 0 && firstError) throw firstError;
+  return { painted, failed: items.length - painted.length };
 }

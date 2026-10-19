@@ -24,6 +24,7 @@ import {
   buildCascaderOptions, findCategoryPath,
 } from "./product-form-options";
 import type { CascaderOption, DepartmentNode } from "./product-form-options";
+import { ReadableSection } from "../../components/ReadableSection";
 
 // Reverse map: API returns formatted unitType (e.g. "kg"), form needs enum values (e.g. "KG")
 const UNIT_LABEL_TO_ENUM: Record<string, string> = {
@@ -97,335 +98,337 @@ export const ProductEdit = () => {
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
-      <Form
-        {...enhancedFormProps}
-        layout="vertical"
-        onFinishFailed={({ errorFields }) => setActiveTab(errorFields[0]?.name[0] === "variants" ? "variants" : "general")}
-      >
-        <Tabs
-          activeKey={activeTab}
-          onChange={setActiveTab}
-          items={[
-            {
-              key: "general",
-              label: "General",
-              icon: <InfoCircleOutlined />,
-              forceRender: true,
-              children: (
-                <Row gutter={16}>
-                  <Col xs={24} lg={16}>
-                    <Card title={sectionTitle(<InfoCircleOutlined />, "Basic Information")} size="small" style={{ marginBottom: 16 }}>
-                    <Row gutter={16}>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="Name" name="name" rules={[{ required: true }]}>
-                          <Input />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="Brand" name="brandId">
-                          <Select {...brandSelectProps} allowClear placeholder="Select brand" />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24}>
-                        <Form.Item label="Description" name="description">
-                          <Input.TextArea rows={3} />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="Category" name="categoryPath">
-                          <Cascader
-                            options={cascaderOptions}
-                            changeOnSelect
-                            allowClear
-                            placeholder="Select category"
-                            showSearch={{
-                              filter: (input, path) =>
-                                path.some((opt) => String(opt.label).toLowerCase().includes(input.toLowerCase())),
-                            }}
-                          />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="Product Type" name="productType">
-                          <Select options={PRODUCT_TYPES} allowClear placeholder="Select product type" />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="Food Type" name="foodType">
-                          <Select options={FOOD_TYPES} allowClear placeholder="Veg / Non-Veg / Vegan / Egg" />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="Active" name="isActive" valuePropName="checked">
-                          <Select options={[{ label: "Yes", value: true }, { label: "No", value: false }]} />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24}>
-                        <Form.Item label="Tags" name="tags">
-                          <Select mode="tags" placeholder="Add tags (e.g. organic, vegan)" />
-                        </Form.Item>
-                      </Col>
-                    </Row>
+      <ReadableSection>
+        <Form
+          {...enhancedFormProps}
+          layout="vertical"
+          onFinishFailed={({ errorFields }) => setActiveTab(errorFields[0]?.name[0] === "variants" ? "variants" : "general")}
+        >
+          <Tabs
+            activeKey={activeTab}
+            onChange={setActiveTab}
+            items={[
+              {
+                key: "general",
+                label: "General",
+                icon: <InfoCircleOutlined />,
+                forceRender: true,
+                children: (
+                  <Row gutter={16}>
+                    <Col xs={24} lg={16}>
+                      <Card title={sectionTitle(<InfoCircleOutlined />, "Basic Information")} size="small" style={{ marginBottom: 16 }}>
+                      <Row gutter={16}>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Name" name="name" rules={[{ required: true }]}>
+                            <Input />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Brand" name="brandId">
+                            <Select {...brandSelectProps} allowClear placeholder="Select brand" />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24}>
+                          <Form.Item label="Description" name="description">
+                            <Input.TextArea rows={3} />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Category" name="categoryPath">
+                            <Cascader
+                              options={cascaderOptions}
+                              changeOnSelect
+                              allowClear
+                              placeholder="Select category"
+                              showSearch={{
+                                filter: (input, path) =>
+                                  path.some((opt) => String(opt.label).toLowerCase().includes(input.toLowerCase())),
+                              }}
+                            />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Product Type" name="productType">
+                            <Select options={PRODUCT_TYPES} allowClear placeholder="Select product type" />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Food Type" name="foodType">
+                            <Select options={FOOD_TYPES} allowClear placeholder="Veg / Non-Veg / Vegan / Egg" />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Active" name="isActive" valuePropName="checked">
+                            <Select options={[{ label: "Yes", value: true }, { label: "No", value: false }]} />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24}>
+                          <Form.Item label="Tags" name="tags">
+                            <Select mode="tags" placeholder="Add tags (e.g. organic, vegan)" />
+                          </Form.Item>
+                        </Col>
+                      </Row>
+                      </Card>
+                    </Col>
+                    <Col xs={24} lg={8}>
+                    <Card title={sectionTitle(<PictureOutlined />, "Image")} size="small" style={{ marginBottom: 16 }}>
+                      <Form.Item
+                        name="imageUrl"
+                        getValueFromEvent={(url: string) => url}
+                        style={{ marginBottom: 0 }}
+                      >
+                        <ImageUpload />
+                      </Form.Item>
                     </Card>
-                  </Col>
-                  <Col xs={24} lg={8}>
-                  <Card title={sectionTitle(<PictureOutlined />, "Image")} size="small" style={{ marginBottom: 16 }}>
-                    <Form.Item
-                      name="imageUrl"
-                      getValueFromEvent={(url: string) => url}
-                      style={{ marginBottom: 0 }}
-                    >
-                      <ImageUpload />
-                    </Form.Item>
-                  </Card>
 
-                  <Card title={sectionTitle(<PictureOutlined />, "Additional Images")} size="small" style={{ marginBottom: 16 }}>
-                    <Form.Item name="images" style={{ marginBottom: 0 }}>
-                      <MultiImageUpload />
-                    </Form.Item>
-                  </Card>
-                  </Col>
-                </Row>
-              ),
-            },
-            {
-              key: "variants",
-              label: "Variants & Pricing",
-              icon: <AppstoreOutlined />,
-              forceRender: true,
-              children: (
-                <Form.List name="variants">
-                  {(fields, { add, remove }) => (
-                    <>
-                      {fields.map(({ key, name, ...restField }) => (
-                        <Card
-                          key={key}
-                          size="small"
-                          style={{ marginBottom: 12, background: token.colorFillAlter }}
-                          extra={fields.length > 1 ? <MinusCircleOutlined onClick={() => remove(name)} style={{ color: "#ff4d4f" }} /> : null}
-                        >
+                    <Card title={sectionTitle(<PictureOutlined />, "Additional Images")} size="small" style={{ marginBottom: 16 }}>
+                      <Form.Item name="images" style={{ marginBottom: 0 }}>
+                        <MultiImageUpload />
+                      </Form.Item>
+                    </Card>
+                    </Col>
+                  </Row>
+                ),
+              },
+              {
+                key: "variants",
+                label: "Variants & Pricing",
+                icon: <AppstoreOutlined />,
+                forceRender: true,
+                children: (
+                  <Form.List name="variants">
+                    {(fields, { add, remove }) => (
+                      <>
+                        {fields.map(({ key, name, ...restField }) => (
+                          <Card
+                            key={key}
+                            size="small"
+                            style={{ marginBottom: 12, background: token.colorFillAlter }}
+                            extra={fields.length > 1 ? <MinusCircleOutlined onClick={() => remove(name)} style={{ color: "#ff4d4f" }} /> : null}
+                          >
+                            <Row gutter={16}>
+                              <Col xs={24} sm={8}>
+                                <Form.Item {...restField} label="Variant Name" name={[name, "name"]} rules={[{ required: true, message: "Variant name required" }]}>
+                                  <Input placeholder="e.g. 500ml" />
+                                </Form.Item>
+                              </Col>
+                              <Col xs={12} sm={8}>
+                                <Form.Item {...restField} label="SKU" name={[name, "sku"]}>
+                                  <Input placeholder="Optional" />
+                                </Form.Item>
+                              </Col>
+                              <Col xs={12} sm={8}>
+                                <Form.Item {...restField} label="Barcode" name={[name, "barcode"]}>
+                                  <Input placeholder="EAN-13" />
+                                </Form.Item>
+                              </Col>
+                              <Col xs={12} sm={6}>
+                                <Form.Item {...restField} label="Unit Type" name={[name, "unitType"]} initialValue="PIECE">
+                                  <Select options={UNIT_TYPES.map((u) => ({ label: u, value: u }))} />
+                                </Form.Item>
+                              </Col>
+                              <Col xs={12} sm={6}>
+                                <Form.Item {...restField} label="Unit Value" name={[name, "unitValue"]} initialValue={1}>
+                                  <InputNumber min={0.01} step={0.01} style={{ width: "100%" }} />
+                                </Form.Item>
+                              </Col>
+                              <Col xs={12} sm={6}>
+                                <Form.Item {...restField} label="MRP" name={[name, "mrp"]}>
+                                  <InputNumber min={0} step={0.01} style={{ width: "100%" }} placeholder="MRP" />
+                                </Form.Item>
+                              </Col>
+                              <Col xs={12} sm={6}>
+                                <Form.Item {...restField} label="Pack Type" name={[name, "packType"]}>
+                                  <AutoComplete
+                                    placeholder="Select or type"
+                                    options={PACK_TYPES.map((p) => ({ label: p, value: p }))}
+                                    filterOption={(input, option) =>
+                                      (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
+                                    }
+                                  />
+                                </Form.Item>
+                              </Col>
+                              <Col xs={12} sm={6}>
+                                <Form.Item {...restField} label="Discount Type" name={[name, "discountType"]}>
+                                  <Select options={DISCOUNT_TYPE_OPTIONS} allowClear placeholder="None" />
+                                </Form.Item>
+                              </Col>
+                              <Col xs={12} sm={6}>
+                                <Form.Item {...restField} label="Discount Value" name={[name, "discountValue"]}>
+                                  <InputNumber min={0} step={0.01} style={{ width: "100%" }} placeholder="Value" />
+                                </Form.Item>
+                              </Col>
+                              <Col xs={12} sm={6}>
+                                <Form.Item {...restField} label="Discount Start" name={[name, "discountStart"]}>
+                                  <DatePicker showTime style={{ width: "100%" }} />
+                                </Form.Item>
+                              </Col>
+                              <Col xs={12} sm={6}>
+                                <Form.Item {...restField} label="Discount End" name={[name, "discountEnd"]}>
+                                  <DatePicker showTime style={{ width: "100%" }} />
+                                </Form.Item>
+                              </Col>
+                            </Row>
+                          </Card>
+                        ))}
+                        <Form.Item>
+                          <Button type="dashed" onClick={() => add({ name: "", unitType: "PIECE", unitValue: 1 })} block icon={<PlusOutlined />}>
+                            Add Variant
+                          </Button>
+                        </Form.Item>
+                      </>
+                    )}
+                  </Form.List>
+                ),
+              },
+              {
+                key: "details",
+                label: "Product Details",
+                icon: <ExperimentOutlined />,
+                forceRender: true,
+                children: (
+                  <Row gutter={16}>
+                    <Col xs={24} lg={12}>
+                      <Form.Item label="Ingredients" name="ingredients">
+                        <Input.TextArea rows={3} placeholder="Ingredient list from pack label" />
+                      </Form.Item>
+                    </Col>
+                    <Col xs={24} lg={12}>
+                      <Form.Item label="Nutritional Info (JSON)" name="nutritionalInfo">
+                        <Input.TextArea rows={3} placeholder='{"energy":"250kcal","protein":"8g","fat":"12g","carbs":"30g"}' />
+                      </Form.Item>
+                    </Col>
+                    <Col xs={24} sm={8}>
+                      <Form.Item label="Allergens" name="allergens">
+                        <Select mode="tags" placeholder="Select or type allergens" options={COMMON_ALLERGENS.map((a) => ({ label: a, value: a }))} />
+                      </Form.Item>
+                    </Col>
+                    <Col xs={24} sm={8}>
+                      <Form.Item label="Serving Size" name="servingSize">
+                        <Input placeholder='e.g. "30g", "1 cup (250ml)"' />
+                      </Form.Item>
+                    </Col>
+                    <Col xs={24} sm={8}>
+                      <Form.Item label="Shelf Life (days)" name="shelfLifeDays">
+                        <InputNumber min={1} style={{ width: "100%" }} placeholder="Shelf life in days" />
+                      </Form.Item>
+                    </Col>
+                    <Col xs={24} sm={12}>
+                      <Form.Item label="Storage Type" name="storageType">
+                        <Select options={STORAGE_TYPES} allowClear placeholder="Select storage type" />
+                      </Form.Item>
+                    </Col>
+                    <Col xs={24} sm={12}>
+                      <Form.Item label="Storage Instructions" name="storageInstructions">
+                        <AutoComplete
+                          allowClear
+                          placeholder="Select or type custom instructions"
+                          options={STORAGE_INSTRUCTIONS.map((s) => ({ label: s, value: s }))}
+                          filterOption={(input, option) =>
+                            (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
+                          }
+                        />
+                      </Form.Item>
+                    </Col>
+                  </Row>
+                ),
+              },
+              {
+                key: "compliance",
+                label: "Compliance",
+                icon: <SafetyCertificateOutlined />,
+                forceRender: true,
+                children: (
+                  <Row gutter={16}>
+                    <Col xs={24} lg={12}>
+                    <Card title={sectionTitle(<SafetyCertificateOutlined />, "Compliance & Tax")} size="small" style={{ marginBottom: 16 }}>
+                      <Row gutter={16}>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="HSN Code" name="hsnCode">
+                            <Input placeholder="HSN/SAC code for GST" />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="GST %" name="gstPercent">
+                            <Select options={GST_OPTIONS} allowClear placeholder="Select GST rate" />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="FSSAI License" name="fssaiLicense">
+                            <Input placeholder="14-digit FSSAI license number" maxLength={14} />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Mfg License No" name="mfgLicenseNo">
+                            <Input placeholder="Manufacturing license number" />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Manufacturer Name" name="manufacturerName">
+                            <Input placeholder="Manufacturer / brand owner name" />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Country of Origin" name="countryOfOrigin">
+                            <Input placeholder="e.g. India" />
+                          </Form.Item>
+                        </Col>
+                      </Row>
+                    </Card>
+                    </Col>
+                    <Col xs={24} lg={12}>
+                    <Card title={sectionTitle(<AuditOutlined />, "FMCG & Regulatory")} size="small" style={{ marginBottom: 16 }}>
+                      <Form.Item label="Regulatory Marks" name="regulatoryMarks">
+                        <Select mode="tags" placeholder="Select or type regulatory marks" options={REGULATORY_MARKS} />
+                      </Form.Item>
+                      <Form.Item label="Certifications" name="certifications">
+                        <Select mode="tags" placeholder="Select or type certifications" options={COMMON_CERTIFICATIONS} />
+                      </Form.Item>
+                      <Form.Item label="Danger Warnings" name="dangerWarnings">
+                        <Input.TextArea rows={2} placeholder='e.g. "Keep away from children"' />
+                      </Form.Item>
+                      <Form.Item label="Usage Instructions" name="usageInstructions">
+                        <Input.TextArea rows={2} placeholder="How to use this product" />
+                      </Form.Item>
+                    </Card>
+                    </Col>
+                  </Row>
+                ),
+              },
+              {
+                key: "translations",
+                label: "Translations",
+                icon: <TranslationOutlined />,
+                forceRender: true,
+                children: (
+                  <Tabs
+                    items={[
+                      {
+                        key: "ta",
+                        label: "Tamil (\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD)",
+                        children: (
                           <Row gutter={16}>
-                            <Col xs={24} sm={8}>
-                              <Form.Item {...restField} label="Variant Name" name={[name, "name"]} rules={[{ required: true, message: "Variant name required" }]}>
-                                <Input placeholder="e.g. 500ml" />
+                            <Col xs={24} sm={12}>
+                              <Form.Item label="Name (Tamil)" name={["translations", "ta", "name"]}>
+                                <Input placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAA\u0BC6\u0BAF\u0BB0\u0BCD" />
                               </Form.Item>
                             </Col>
-                            <Col xs={12} sm={8}>
-                              <Form.Item {...restField} label="SKU" name={[name, "sku"]}>
-                                <Input placeholder="Optional" />
-                              </Form.Item>
-                            </Col>
-                            <Col xs={12} sm={8}>
-                              <Form.Item {...restField} label="Barcode" name={[name, "barcode"]}>
-                                <Input placeholder="EAN-13" />
-                              </Form.Item>
-                            </Col>
-                            <Col xs={12} sm={6}>
-                              <Form.Item {...restField} label="Unit Type" name={[name, "unitType"]} initialValue="PIECE">
-                                <Select options={UNIT_TYPES.map((u) => ({ label: u, value: u }))} />
-                              </Form.Item>
-                            </Col>
-                            <Col xs={12} sm={6}>
-                              <Form.Item {...restField} label="Unit Value" name={[name, "unitValue"]} initialValue={1}>
-                                <InputNumber min={0.01} step={0.01} style={{ width: "100%" }} />
-                              </Form.Item>
-                            </Col>
-                            <Col xs={12} sm={6}>
-                              <Form.Item {...restField} label="MRP" name={[name, "mrp"]}>
-                                <InputNumber min={0} step={0.01} style={{ width: "100%" }} placeholder="MRP" />
-                              </Form.Item>
-                            </Col>
-                            <Col xs={12} sm={6}>
-                              <Form.Item {...restField} label="Pack Type" name={[name, "packType"]}>
-                                <AutoComplete
-                                  placeholder="Select or type"
-                                  options={PACK_TYPES.map((p) => ({ label: p, value: p }))}
-                                  filterOption={(input, option) =>
-                                    (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
-                                  }
-                                />
-                              </Form.Item>
-                            </Col>
-                            <Col xs={12} sm={6}>
-                              <Form.Item {...restField} label="Discount Type" name={[name, "discountType"]}>
-                                <Select options={DISCOUNT_TYPE_OPTIONS} allowClear placeholder="None" />
-                              </Form.Item>
-                            </Col>
-                            <Col xs={12} sm={6}>
-                              <Form.Item {...restField} label="Discount Value" name={[name, "discountValue"]}>
-                                <InputNumber min={0} step={0.01} style={{ width: "100%" }} placeholder="Value" />
-                              </Form.Item>
-                            </Col>
-                            <Col xs={12} sm={6}>
-                              <Form.Item {...restField} label="Discount Start" name={[name, "discountStart"]}>
-                                <DatePicker showTime style={{ width: "100%" }} />
-                              </Form.Item>
-                            </Col>
-                            <Col xs={12} sm={6}>
-                              <Form.Item {...restField} label="Discount End" name={[name, "discountEnd"]}>
-                                <DatePicker showTime style={{ width: "100%" }} />
+                            <Col xs={24} sm={12}>
+                              <Form.Item label="Description (Tamil)" name={["translations", "ta", "description"]}>
+                                <Input.TextArea rows={2} placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BB5\u0BBF\u0BB5\u0BB0\u0BAE\u0BCD" />
                               </Form.Item>
                             </Col>
                           </Row>
-                        </Card>
-                      ))}
-                      <Form.Item>
-                        <Button type="dashed" onClick={() => add({ name: "", unitType: "PIECE", unitValue: 1 })} block icon={<PlusOutlined />}>
-                          Add Variant
-                        </Button>
-                      </Form.Item>
-                    </>
-                  )}
-                </Form.List>
-              ),
-            },
-            {
-              key: "details",
-              label: "Product Details",
-              icon: <ExperimentOutlined />,
-              forceRender: true,
-              children: (
-                <Row gutter={16}>
-                  <Col xs={24} lg={12}>
-                    <Form.Item label="Ingredients" name="ingredients">
-                      <Input.TextArea rows={3} placeholder="Ingredient list from pack label" />
-                    </Form.Item>
-                  </Col>
-                  <Col xs={24} lg={12}>
-                    <Form.Item label="Nutritional Info (JSON)" name="nutritionalInfo">
-                      <Input.TextArea rows={3} placeholder='{"energy":"250kcal","protein":"8g","fat":"12g","carbs":"30g"}' />
-                    </Form.Item>
-                  </Col>
-                  <Col xs={24} sm={8}>
-                    <Form.Item label="Allergens" name="allergens">
-                      <Select mode="tags" placeholder="Select or type allergens" options={COMMON_ALLERGENS.map((a) => ({ label: a, value: a }))} />
-                    </Form.Item>
-                  </Col>
-                  <Col xs={24} sm={8}>
-                    <Form.Item label="Serving Size" name="servingSize">
-                      <Input placeholder='e.g. "30g", "1 cup (250ml)"' />
-                    </Form.Item>
-                  </Col>
-                  <Col xs={24} sm={8}>
-                    <Form.Item label="Shelf Life (days)" name="shelfLifeDays">
-                      <InputNumber min={1} style={{ width: "100%" }} placeholder="Shelf life in days" />
-                    </Form.Item>
-                  </Col>
-                  <Col xs={24} sm={12}>
-                    <Form.Item label="Storage Type" name="storageType">
-                      <Select options={STORAGE_TYPES} allowClear placeholder="Select storage type" />
-                    </Form.Item>
-                  </Col>
-                  <Col xs={24} sm={12}>
-                    <Form.Item label="Storage Instructions" name="storageInstructions">
-                      <AutoComplete
-                        allowClear
-                        placeholder="Select or type custom instructions"
-                        options={STORAGE_INSTRUCTIONS.map((s) => ({ label: s, value: s }))}
-                        filterOption={(input, option) =>
-                          (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
-                        }
-                      />
-                    </Form.Item>
-                  </Col>
-                </Row>
-              ),
-            },
-            {
-              key: "compliance",
-              label: "Compliance",
-              icon: <SafetyCertificateOutlined />,
-              forceRender: true,
-              children: (
-                <Row gutter={16}>
-                  <Col xs={24} lg={12}>
-                  <Card title={sectionTitle(<SafetyCertificateOutlined />, "Compliance & Tax")} size="small" style={{ marginBottom: 16 }}>
-                    <Row gutter={16}>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="HSN Code" name="hsnCode">
-                          <Input placeholder="HSN/SAC code for GST" />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="GST %" name="gstPercent">
-                          <Select options={GST_OPTIONS} allowClear placeholder="Select GST rate" />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="FSSAI License" name="fssaiLicense">
-                          <Input placeholder="14-digit FSSAI license number" maxLength={14} />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="Mfg License No" name="mfgLicenseNo">
-                          <Input placeholder="Manufacturing license number" />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="Manufacturer Name" name="manufacturerName">
-                          <Input placeholder="Manufacturer / brand owner name" />
-                        </Form.Item>
-                      </Col>
-                      <Col xs={24} sm={12}>
-                        <Form.Item label="Country of Origin" name="countryOfOrigin">
-                          <Input placeholder="e.g. India" />
-                        </Form.Item>
-                      </Col>
-                    </Row>
-                  </Card>
-                  </Col>
-                  <Col xs={24} lg={12}>
-                  <Card title={sectionTitle(<AuditOutlined />, "FMCG & Regulatory")} size="small" style={{ marginBottom: 16 }}>
-                    <Form.Item label="Regulatory Marks" name="regulatoryMarks">
-                      <Select mode="tags" placeholder="Select or type regulatory marks" options={REGULATORY_MARKS} />
-                    </Form.Item>
-                    <Form.Item label="Certifications" name="certifications">
-                      <Select mode="tags" placeholder="Select or type certifications" options={COMMON_CERTIFICATIONS} />
-                    </Form.Item>
-                    <Form.Item label="Danger Warnings" name="dangerWarnings">
-                      <Input.TextArea rows={2} placeholder='e.g. "Keep away from children"' />
-                    </Form.Item>
-                    <Form.Item label="Usage Instructions" name="usageInstructions">
-                      <Input.TextArea rows={2} placeholder="How to use this product" />
-                    </Form.Item>
-                  </Card>
-                  </Col>
-                </Row>
-              ),
-            },
-            {
-              key: "translations",
-              label: "Translations",
-              icon: <TranslationOutlined />,
-              forceRender: true,
-              children: (
-                <Tabs
-                  items={[
-                    {
-                      key: "ta",
-                      label: "Tamil (\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD)",
-                      children: (
-                        <Row gutter={16}>
-                          <Col xs={24} sm={12}>
-                            <Form.Item label="Name (Tamil)" name={["translations", "ta", "name"]}>
-                              <Input placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAA\u0BC6\u0BAF\u0BB0\u0BCD" />
-                            </Form.Item>
-                          </Col>
-                          <Col xs={24} sm={12}>
-                            <Form.Item label="Description (Tamil)" name={["translations", "ta", "description"]}>
-                              <Input.TextArea rows={2} placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BB5\u0BBF\u0BB5\u0BB0\u0BAE\u0BCD" />
-                            </Form.Item>
-                          </Col>
-                        </Row>
-                      ),
-                    },
-                  ]}
-                />
-              ),
-            },
-          ]}
-        />
-      </Form>
+                        ),
+                      },
+                    ]}
+                  />
+                ),
+              },
+            ]}
+          />
+        </Form>
+      </ReadableSection>
     </Edit>
   );
 };

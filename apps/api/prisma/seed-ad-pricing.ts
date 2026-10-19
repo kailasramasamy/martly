@@ -14,10 +14,12 @@ if (databaseUrl) process.env.DATABASE_URL = databaseUrl;
 const prisma = new PrismaClient();
 
 const PRODUCTS = [
-  { kind: "STORE_PLAN", code: "FREE", name: "Free", description: "No promotions", price: 0, durationDays: 30, promotionCredits: 0, pushIncluded: false, aiImagesPerMonth: 0, sortOrder: 0 },
-  { kind: "STORE_PLAN", code: "GROWTH", name: "Growth", description: "2 promotions and 2 AI images a month", price: 999, yearlyPrice: 9990, durationDays: 30, promotionCredits: 2, pushIncluded: false, aiImagesPerMonth: 2, sortOrder: 1 },
-  { kind: "STORE_PLAN", code: "PRO", name: "Pro", description: "6 promotions and 6 AI images a month, push notifications", price: 2499, yearlyPrice: 24990, durationDays: 30, promotionCredits: 6, pushIncluded: true, aiImagesPerMonth: 6, sortOrder: 2 },
+  { kind: "STORE_PLAN", code: "FREE", name: "Free", description: "No promotions, 5 AI images a month", price: 0, durationDays: 30, promotionCredits: 0, pushIncluded: false, aiImagesPerMonth: 5, sortOrder: 0 },
+  { kind: "STORE_PLAN", code: "GROWTH", name: "Growth", description: "2 promotions and 30 AI images a month", price: 999, yearlyPrice: 9990, durationDays: 30, promotionCredits: 2, pushIncluded: false, aiImagesPerMonth: 30, sortOrder: 1 },
+  { kind: "STORE_PLAN", code: "PRO", name: "Pro", description: "6 promotions and 100 AI images a month, push notifications", price: 2499, yearlyPrice: 24990, durationDays: 30, promotionCredits: 6, pushIncluded: true, aiImagesPerMonth: 100, sortOrder: 2 },
   { kind: "PROMOTION_TOPUP", code: "PROMO_TOPUP", name: "Extra promotion", description: "One more promotion, valid until used", price: 599, durationDays: 30, promotionCredits: 1, pushIncluded: false, sortOrder: 0 },
+  { kind: "AI_IMAGE_PACK", code: "AI_IMAGES_25", name: "25 AI images", description: "25 more AI images, valid until used", price: 299, durationDays: 30, aiImageCredits: 25, sortOrder: 0 },
+  { kind: "AI_IMAGE_PACK", code: "AI_IMAGES_100", name: "100 AI images", description: "100 more AI images, valid until used", price: 999, durationDays: 30, aiImageCredits: 100, sortOrder: 1 },
   { kind: "BRAND_BANNER", code: "BRAND_BANNER_WEEK", name: "Brand banner", description: "Home carousel in every store that stocks the brand, per week", price: 7500, durationDays: 7, placement: "HERO_CAROUSEL", sortOrder: 0 },
   { kind: "BRAND_TAKEOVER", code: "CATEGORY_TAKEOVER_WEEK", name: "Category takeover", description: "Top of one category in every store that stocks the brand, per week", price: 4500, durationDays: 7, placement: "CATEGORY_TOP", sortOrder: 1 },
   { kind: "BRAND_PROMOTION", code: "BRAND_PROMOTION_WEEK", name: "Brand promotion", description: "Discount on the brand's products with a home banner, per week", price: 15000, durationDays: 7, placement: "HERO_CAROUSEL", sortOrder: 2 },

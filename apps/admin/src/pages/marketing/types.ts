@@ -14,6 +14,8 @@ export interface AdProduct {
   durationDays: number;
   promotionCredits: number;
   aiImagesPerMonth: number;
+  /** AI image packs: images in one pack */
+  aiImageCredits: number;
   pushIncluded: boolean;
   placement: string | null;
   viewsPerUnit: number | null;
@@ -43,9 +45,9 @@ export interface Entitlements {
   paidThrough: string | null;
   promotions: { planUsed: number; planTotal: number; planLeft: number; topUpBalance: number; resetsAt: string | null };
   pushIncluded: boolean;
-  aiImages: { used: number; total: number };
+  aiImages: { used: number; total: number; planLeft: number; packBalance: number; left: number; resetsAt: string | null };
   onPaidPlan: boolean;
-  trial: { available: boolean; endsAt: string | null };
+  trial: { available: boolean; endsAt: string | null; promotionCredits: number; aiImagesPerMonth: number };
   subscription: {
     status: "CREATED" | "ACTIVE" | "PENDING" | "HALTED";
     productName: string;

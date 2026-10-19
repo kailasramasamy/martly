@@ -1,4 +1,6 @@
 import type { FastifyInstance } from "fastify";
+import { meteredOrg } from "../../services/marketing/metered-org.js";
+import { refundAiImages, withAiImages } from "../../services/marketing/ai-images.js";
 import { Prisma } from "../../../generated/prisma/client.js";
 import {
   createCollectionSchema, updateCollectionHeroSchema, updateCollectionSchema, updateCollectionTileSchema,
@@ -6,7 +8,7 @@ import {
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
-import { Permission } from "@martly/shared/constants";
+import { AI_IMAGE_COST, Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { canSeeOrgRecord, assertProductsUsable } from "../../services/catalog-access.js";
 import { isCurationConfigured, regenerateBanner, regenerateHero } from "../../services/seasonal/index.js";
@@ -190,9 +192,11 @@ export async function collectionRoutes(app: FastifyInstance) {
       if (user.role !== "SUPER_ADMIN" && existing.organizationId !== user.organizationId) {
         return reply.forbidden("Access denied");
       }
-      if (!existing.artDirection) return reply.badRequest("Only AI-curated collections can regenerate their banner");
+      const { artDirection } = existing;
+      if (!artDirection) return reply.badRequest("Only AI-curated collections can regenerate their banner");
 
-      const art = await regenerateBanner(app.prisma, { ...existing, artDirection: existing.artDirection }, (msg) => request.log.warn(`${existing.slug}: ${msg}`));
+      const art = await withAiImages(app, meteredOrg(user, existing.organizationId), AI_IMAGE_COST.COLLECTION_BANNER, "COLLECTION_BANNER", existing.id,
+        () => regenerateBanner(app.prisma, { ...existing, artDirection }, (msg) => request.log.warn(`${existing.slug}: ${msg}`)));
       const response: ApiResponse<typeof art> = { success: true, data: art };
       return response;
     },
@@ -204,7 +208,13 @@ export async function collectionRoutes(app: FastifyInstance) {
     const collection = await ownCollection(app, request, reply);
     if (!collection) return;
     if (!collection.organizationId) return reply.badRequest("Only organization collections can have a festive hero");
-    const hero = await regenerateHero(app.prisma, { ...collection, organizationId: collection.organizationId });
+    const organizationId = collection.organizationId;
+    // Reserves the most a hero can paint (a strip and six tiles) and gives back what it didn't use
+    const hero = await withAiImages(app, meteredOrg(getOrgUser(request), organizationId), AI_IMAGE_COST.FESTIVE_HERO, "FESTIVE_HERO", collection.id, async (charge) => {
+      const built = await regenerateHero(app.prisma, { ...collection, organizationId });
+      await refundAiImages(app.prisma, charge, AI_IMAGE_COST.FESTIVE_HERO - (built ? 1 + built.tiles.length : 0));
+      return built;
+    });
     if (!hero) return reply.unprocessableEntity("The catalog can't fill a row of festive tiles for this collection");
     return { success: true, data: hero } satisfies ApiResponse<typeof hero>;
   });

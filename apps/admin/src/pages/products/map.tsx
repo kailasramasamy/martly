@@ -16,6 +16,7 @@ import {
 
 import { sectionTitle } from "../../theme";
 import { axiosInstance } from "../../providers/data-provider";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const { Title, Text } = Typography;
 
@@ -270,7 +271,7 @@ export const ProductMap = () => {
   if (!product) return null;
 
   return (
-    <div>
+    <ReadableSection>
       <Space style={{ marginBottom: 16 }}>
         <Button icon={<ArrowLeftOutlined />} onClick={() => navigate(`/products/show/${productId}`)}>
           Back to Product
@@ -516,6 +517,6 @@ export const ProductMap = () => {
           </Col>
         )}
       </Row>
-    </div>
+    </ReadableSection>
   );
 };

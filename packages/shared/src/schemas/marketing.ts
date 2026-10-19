@@ -17,6 +17,10 @@ export const adProductSchema = z.object({
   durationDays: z.coerce.number().int().min(1).max(365),
   bannerSlots: z.coerce.number().int().min(0).max(100).nullable(),
   promotionCredits: z.coerce.number().int().min(0).max(100),
+  /** Store plans: AI images a month; left out, a save keeps the current number */
+  aiImagesPerMonth: z.coerce.number().int().min(0).max(10_000).optional(),
+  /** AI image packs: images per pack */
+  aiImageCredits: z.coerce.number().int().min(0).max(10_000).optional(),
   pushIncluded: z.boolean(),
   placement: z.nativeEnum(BannerPlacement).nullish(),
   viewsPerUnit: z.coerce.number().int().min(100).max(1_000_000).nullish(),

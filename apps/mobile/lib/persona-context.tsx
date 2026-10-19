@@ -6,7 +6,8 @@ import { useAuth, type UserInfo } from "./auth-context";
 
 export type Persona = "manage" | "shop";
 
-const PERSONA_KEY = "martly_persona";
+// Saved per account, so one member's switch to shopping doesn't carry over to the next person who signs in
+const personaKey = (userId: string) => `martly_persona:${userId}`;
 
 interface PersonaState {
   persona: Persona;
@@ -38,10 +39,10 @@ export function PersonaProvider({ children }: { children: ReactNode }) {
       setResolved({ key: userKey, persona: "shop" });
       return;
     }
-    AsyncStorage.getItem(PERSONA_KEY).then((saved) => {
+    AsyncStorage.getItem(personaKey(user!.id)).then((saved) => {
       setResolved({ key: userKey, persona: saved === "shop" ? "shop" : "manage" });
     });
-  }, [userKey, canManage]);
+  }, [userKey, canManage, user]);
 
   const isReady = !!userKey && resolved?.key === userKey;
   const persona: Persona = isReady && resolved ? resolved.persona : "shop";
@@ -49,7 +50,7 @@ export function PersonaProvider({ children }: { children: ReactNode }) {
   const switchPersona = useCallback((next: Persona) => {
     if (!userKey) return;
     setResolved({ key: userKey, persona: next });
-    AsyncStorage.setItem(PERSONA_KEY, next);
+    if (user) AsyncStorage.setItem(personaKey(user.id), next);
     router.replace(homeFor(user, canManage, next));
   }, [userKey, user, canManage]);
 

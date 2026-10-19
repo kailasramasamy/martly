@@ -10,6 +10,7 @@ import { CampaignActions } from "./campaign-actions";
 import { CampaignResults } from "./campaign-results";
 import { CampaignStatusTag } from "./list";
 import { EDITABLE_STATUSES, type Campaign, type CampaignScope } from "./types";
+import { ReadableSection } from "../../components/ReadableSection";
 
 const ART_TIMEOUT_MS = 120000;
 const date = (v: string) => dayjs(v).format("D MMM YYYY");
@@ -93,13 +94,15 @@ export function CampaignShow({ scope }: { scope: CampaignScope }) {
         </Space>
       )}
     >
-      <Space style={{ marginBottom: 16 }}><CampaignStatusTag status={campaign.status} /></Space>
-      {campaign.reviewNote && <Alert type={campaign.status === "REJECTED" ? "error" : "info"} showIcon message={campaign.reviewNote} style={{ marginBottom: 16 }} />}
-      <CreativeCard campaign={campaign} scope={scope} onChange={setCampaign} />
-      <DetailsCard campaign={campaign} platform={scope.mode === "platform"} />
-      {campaign.results && (
-        <Card title="Results" size="small"><CampaignResults results={campaign.results} /></Card>
-      )}
+      <ReadableSection>
+        <Space style={{ marginBottom: 16 }}><CampaignStatusTag status={campaign.status} /></Space>
+        {campaign.reviewNote && <Alert type={campaign.status === "REJECTED" ? "error" : "info"} showIcon message={campaign.reviewNote} style={{ marginBottom: 16 }} />}
+        <CreativeCard campaign={campaign} scope={scope} onChange={setCampaign} />
+        <DetailsCard campaign={campaign} platform={scope.mode === "platform"} />
+        {campaign.results && (
+          <Card title="Results" size="small"><CampaignResults results={campaign.results} /></Card>
+        )}
+      </ReadableSection>
     </Show>
   );
 }

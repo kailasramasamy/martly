@@ -59,7 +59,7 @@ export function ManualPromoForm() {
       </SectionCard>
       <DiscountSection state={state} errors={errors} onChange={patch} />
       <ScheduleSection state={state} errors={errors} onChange={patch} pushAllowed={pushAllowed} />
-      <BannerImageSection state={state} errors={errors} onChange={patch} entitlements={entitlements} />
+      <BannerImageSection state={state} errors={errors} onChange={patch} />
       <PlanLimitNotice message={limit.message} />
     </ManageStackScreen>
   );

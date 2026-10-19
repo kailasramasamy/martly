@@ -4,6 +4,7 @@ import { ArrowLeftOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router";
 
 import { axiosInstance } from "../../../providers/data-provider";
+import { ReadableSection } from "../../../components/ReadableSection";
 
 const { Title } = Typography;
 const { TextArea } = Input;
@@ -39,7 +40,7 @@ export const TemplateCreate = () => {
   };
 
   return (
-    <div style={{ padding: "16px 24px 32px", maxWidth: 720, margin: "0 auto" }}>
+    <ReadableSection style={{ padding: "16px 24px 32px" }}>
       <Space style={{ marginBottom: 20 }}>
         <Button
           type="text"
@@ -111,6 +112,6 @@ export const TemplateCreate = () => {
           </Form.Item>
         </Form>
       </Card>
-    </div>
+    </ReadableSection>
   );
 };
