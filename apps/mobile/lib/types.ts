@@ -1,3 +1,4 @@
+import type { CampaignTile } from "@martly/shared/types";
 import type { PaginatedResponse } from "@martly/shared/types";
 
 export interface Store {
@@ -257,11 +258,14 @@ export interface FestiveTile {
 export interface FestiveHero {
   id: string;
   title: string;
-  translations: CollectionTranslations | null;
+  translations: { [lang: string]: { title?: string; kicker?: string; subtitle?: string } } | null;
+  /** Small line above the headline and the line under it, set over the silhouette strip */
+  kicker: string | null;
+  subtitle: string | null;
+  /** The tone-on-tone silhouette strip drawn under the search bar */
   imageUrl: string;
-  /** background is the artwork's bottom-edge colour; dark means the wash needs light text;
-   *  ornamentDepth is the fraction of the artwork's height the ornament hangs over the headline */
-  theme: { background: string; title: string; dark: boolean; ornamentDepth: number };
+  /** background is the solid festival colour behind the whole block; title is its text colour; dark means light text */
+  theme: { background: string; title: string; dark: boolean; font?: string };
   tiles: FestiveTile[];
 }
 
@@ -574,6 +578,11 @@ export interface CollectionHeader {
   imageUrls: Record<string, string> | null;
   textInImage: boolean;
   translations: CollectionTranslations | null;
+  endsAt: string | null;
+  /** Present when the collection is a campaign on Home: the card's cut-out art, colours and offer, so its screen matches */
+  campaign: { imageUrl: string | null; theme: { background: string; title: string; dark: boolean }; offerLabel: string | null } | null;
+  /** The collection's aisles in stock at the store (first page only), for filter chips; null on later pages */
+  aisles: CampaignTile[] | null;
 }
 
 export interface CollectionProductsResponse extends PaginatedResponse<StoreProduct> {

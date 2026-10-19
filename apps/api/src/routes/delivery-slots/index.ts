@@ -6,6 +6,7 @@ import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { addDays, istNow } from "../../services/ist-day.js";
+import { notifySlotChanged, openSlotOrders } from "../../services/notify/delivery-alerts.js";
 import { BOOKING_DAYS, slotsForDate } from "../../services/delivery/slot-availability.js";
 
 const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -112,6 +113,9 @@ export async function deliverySlotRoutes(app: FastifyInstance) {
       data: body,
     });
 
+    const moved = slot.dayOfWeek !== existing.dayOfWeek || slot.startTime !== existing.startTime || slot.endTime !== existing.endTime;
+    if (moved) openSlotOrders(app.prisma, slot.id).then((orders) => notifySlotChanged(app.fcm, app.prisma, orders, slot)).catch((err: unknown) => app.log.error(err, "Slot change notifications failed"));
+
     const response: ApiResponse<typeof slot> = { success: true, data: slot };
     return response;
   });
@@ -127,7 +131,9 @@ export async function deliverySlotRoutes(app: FastifyInstance) {
       return reply.forbidden("Access denied");
     }
 
+    const affected = await openSlotOrders(app.prisma, existing.id);
     await app.prisma.deliverySlot.delete({ where: { id: request.params.id } });
+    notifySlotChanged(app.fcm, app.prisma, affected, null).catch((err: unknown) => app.log.error(err, "Slot removal notifications failed"));
 
     const response: ApiResponse<null> = { success: true, data: null };
     return response;

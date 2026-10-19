@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback, useRef } from "react";
-import { Stack, useRouter, useSegments } from "expo-router";
+import { Stack, useRouter, useSegments, type Href } from "expo-router";
 import { ThemeProvider, DefaultTheme } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import { View, Text, TextInput, StyleSheet, Appearance } from "react-native";
@@ -13,6 +13,10 @@ import {
   Manrope_800ExtraBold,
 } from "@expo-google-fonts/manrope";
 import { Cinzel_700Bold } from "@expo-google-fonts/cinzel";
+import { PlayfairDisplay_700Bold } from "@expo-google-fonts/playfair-display";
+import { YatraOne_400Regular } from "@expo-google-fonts/yatra-one";
+import { Kalam_700Bold } from "@expo-google-fonts/kalam";
+import { Lobster_400Regular } from "@expo-google-fonts/lobster";
 
 // Force light mode globally regardless of system setting
 try { Appearance.setColorScheme("light"); } catch {}
@@ -41,7 +45,7 @@ import { NotificationProvider } from "../lib/notification-context";
 import { MembershipProvider } from "../lib/membership-context";
 import { BasketModeProvider } from "../lib/basket-mode-context";
 import { LanguageProvider } from "../lib/language-context";
-import { addNotificationResponseListener, getLastNotificationResponse } from "../lib/notifications";
+import { addNotificationResponseListener, getLastNotificationResponse, notificationResponseData } from "../lib/notifications";
 import { resolveNotificationDeepLink } from "../lib/notification-helpers";
 import SplashScreen from "../components/SplashScreen";
 import { colors } from "../constants/theme";
@@ -60,17 +64,13 @@ function RootLayoutNav() {
   const [appReady, setAppReady] = useState(false);
   const [splashDone, setSplashDone] = useState(false);
   // Stores a pending deep link from a notification tap that arrived before splash finished
-  const pendingDeepLink = useRef<string | null>(null);
+  const pendingDeepLink = useRef<Href | null>(null);
 
   // On cold start, check if app was launched by tapping a notification
   useEffect(() => {
     getLastNotificationResponse().then((response) => {
-      if (response) {
-        const data = response.notification.request.content.data;
-        if (data) {
-          pendingDeepLink.current = resolveNotificationDeepLink(data as Record<string, unknown>);
-        }
-      }
+      const data = notificationResponseData(response);
+      if (data) pendingDeepLink.current = resolveNotificationDeepLink(data);
     });
   }, []);
 
@@ -103,9 +103,9 @@ function RootLayoutNav() {
   // Deep link handler for push notifications while app is running
   useEffect(() => {
     const subscription = addNotificationResponseListener((response) => {
-      const data = response.notification.request.content.data;
+      const data = notificationResponseData(response);
       if (data) {
-        const target = resolveNotificationDeepLink(data as Record<string, unknown>);
+        const target = resolveNotificationDeepLink(data);
         if (splashDone) {
           router.push(target);
         } else {
@@ -207,6 +207,10 @@ export default function RootLayout() {
     "Manrope-Bold": Manrope_700Bold,
     "Manrope-ExtraBold": Manrope_800ExtraBold,
     "Cinzel-Bold": Cinzel_700Bold,
+    "PlayfairDisplay-Bold": PlayfairDisplay_700Bold,
+    "YatraOne-Regular": YatraOne_400Regular,
+    "Kalam-Bold": Kalam_700Bold,
+    "Lobster-Regular": Lobster_400Regular,
   });
 
   if (!fontsLoaded) return null;

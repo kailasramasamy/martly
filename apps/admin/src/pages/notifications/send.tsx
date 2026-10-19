@@ -38,6 +38,7 @@ const DEEP_LINK_OPTIONS = [
   { label: "None", value: "" },
   { label: "Product", value: "product" },
   { label: "Category", value: "category" },
+  { label: "Collection (offer)", value: "collection" },
   { label: "Store", value: "store" },
   { label: "Screen", value: "screen" },
 ];
@@ -90,6 +91,7 @@ export const NotificationSend = () => {
   const { data: categoriesData } = useList({ resource: "categories", pagination: { pageSize: 200 } });
   const categories = categoriesData?.data ?? [];
 
+  const { data: collectionsData } = useList({ resource: "collections", pagination: { pageSize: 200 } });
   const { data: productsData } = useList({ resource: "products", pagination: { pageSize: 200 } });
   const products = productsData?.data ?? [];
 
@@ -243,6 +245,12 @@ export const NotificationSend = () => {
         return (
           <Form.Item name="deepLinkId" label="Target Category" rules={[{ required: true, message: "Select a category" }]}>
             <Select showSearch placeholder="Select a category" optionFilterProp="label" options={categories.map((c: any) => ({ label: c.name, value: c.id }))} />
+          </Form.Item>
+        );
+      case "collection":
+        return (
+          <Form.Item name="deepLinkId" label="Target Collection" rules={[{ required: true, message: "Select a collection" }]}>
+            <Select showSearch placeholder="Select a collection" optionFilterProp="label" options={(collectionsData?.data ?? []).map((c: any) => ({ label: c.title, value: c.id }))} />
           </Form.Item>
         );
       case "store":

@@ -16,6 +16,7 @@ import { decorateStoreProducts, storeProductInclude } from "../../services/store
 import { getStoreDiscoveryInfo } from "../../services/store-discovery.js";
 import { catalogCoverage, type CatalogCoverage } from "../../services/catalog-coverage.js";
 import { recordOpeningStock } from "../../services/stock-ledger.js";
+import { notifyStoreStatusChange, notifyTeamMember } from "../../services/notify/team-alerts.js";
 import { categoryFacets, subcategoryIdsUnder } from "../../services/category-browse.js";
 
 export async function storeRoutes(app: FastifyInstance) {
@@ -193,6 +194,10 @@ export async function storeRoutes(app: FastifyInstance) {
         where: { id: request.params.id },
         data: { ...rest, ...(translations !== undefined ? { translations: translations ?? Prisma.DbNull } : {}) },
       });
+
+      if (body.status && body.status !== existing.status) {
+        void notifyStoreStatusChange(app.fcm, app.prisma, store, existing.status, store.status);
+      }
 
       const response: ApiResponse<typeof store> = { success: true, data: store };
       return response;
@@ -622,6 +627,8 @@ export async function storeRoutes(app: FastifyInstance) {
         },
       });
 
+      void notifyTeamMember(app.fcm, app.prisma, userId, getOrgUser(request).sub, { kind: "added", storeId: request.params.id });
+
       const response: ApiResponse<typeof assignment> = { success: true, data: assignment };
       return response;
     },
@@ -647,6 +654,8 @@ export async function storeRoutes(app: FastifyInstance) {
       await app.prisma.userStore.delete({
         where: { userId_storeId: { userId: request.params.userId, storeId: request.params.id } },
       });
+
+      void notifyTeamMember(app.fcm, app.prisma, request.params.userId, getOrgUser(request).sub, { kind: "removed", storeId: request.params.id });
 
       const response: ApiResponse<null> = { success: true, data: null };
       return response;

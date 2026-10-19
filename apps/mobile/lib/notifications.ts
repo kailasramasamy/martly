@@ -22,8 +22,8 @@ if (Notifications && Platform.OS === "android") {
 if (Notifications) {
   Notifications.setNotificationHandler({
     handleNotification: async () => ({
-      shouldShowBanner: true,
-      shouldShowList: true,
+      shouldShowBanner: false,
+      shouldShowList: false,
       shouldPlaySound: true,
       shouldSetBadge: false,
     }),
@@ -48,8 +48,9 @@ export async function registerForPushNotifications(): Promise<string | null> {
   }
 
   try {
-    const pushToken = await Notifications.getDevicePushTokenAsync();
-    const token = pushToken.data as string;
+    // The API sends through FCM, which needs an FCM token; on iOS the device token is a raw APNs token FCM rejects
+    const { getMessaging, getToken } = require("@react-native-firebase/messaging") as typeof import("@react-native-firebase/messaging");
+    const token = await getToken(getMessaging());
 
     await api.post("/api/v1/device-tokens", {
       token,
@@ -75,6 +76,20 @@ export function addNotificationResponseListener(
     return { remove: () => {} };
   }
   return Notifications.addNotificationResponseReceivedListener(handler);
+}
+
+/**
+ * The app's data from a tapped push. Android puts FCM data in `content.data`; on iOS expo-notifications only
+ * reads Expo-format pushes there, so an FCM push's fields are in the raw APNs payload (`trigger.payload`).
+ */
+export function notificationResponseData(response: any): Record<string, unknown> | null {
+  const request = response?.notification?.request;
+  const data = request?.content?.data;
+  if (data && Object.keys(data).length > 0) return data;
+  const payload = request?.trigger?.payload as Record<string, unknown> | undefined;
+  if (!payload) return null;
+  const { aps: _aps, ...fields } = payload;
+  return Object.keys(fields).length > 0 ? fields : null;
 }
 
 export async function getLastNotificationResponse(): Promise<any | null> {

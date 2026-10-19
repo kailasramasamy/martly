@@ -17,6 +17,7 @@ import {
   ensureRazorpayCustomer,
 } from "../../services/payment.js";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
+import { notifyMembershipWelcome } from "../../services/notify/service-alerts.js";
 
 const DURATION_DAYS: Record<string, number> = {
   MONTHLY: 30,
@@ -235,6 +236,8 @@ export async function membershipRoutes(app: FastifyInstance) {
         });
       });
 
+      notifyMembershipWelcome(app.fcm, app.prisma, user.sub, membership.plan.name, membership.endDate);
+
       return {
         success: true,
         data: {
@@ -320,6 +323,8 @@ export async function membershipRoutes(app: FastifyInstance) {
         });
       });
 
+      notifyMembershipWelcome(app.fcm, app.prisma, user.sub, membership.plan.name, membership.endDate);
+
       return {
         success: true,
         data: {
@@ -345,6 +350,8 @@ export async function membershipRoutes(app: FastifyInstance) {
       },
       include: { plan: true },
     });
+
+    notifyMembershipWelcome(app.fcm, app.prisma, user.sub, membership.plan.name, membership.endDate);
 
     return {
       success: true,

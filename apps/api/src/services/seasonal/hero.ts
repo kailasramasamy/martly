@@ -1,13 +1,17 @@
 import { Prisma, type PrismaClient } from "../../../generated/prisma/client.js";
 import { orgSubcategoryCandidates } from "./candidates.js";
 import { designHero } from "./hero-designer.js";
-import { paintBackground, paintTile, uploadHeroArt, type HeroTheme } from "./hero-art.js";
+import { paintStrip, paintTile, stripTheme, uploadHeroArt, type HeroTheme } from "./hero-art.js";
 
 type Translations = Record<string, Record<string, string> | undefined>;
 
 export interface HeroDraft {
   heroTitle: string;
   heroTitleTa: string;
+  heroKicker: string;
+  heroKickerTa: string;
+  heroSubtitle: string;
+  heroSubtitleTa: string;
   heroImageUrl: string;
   heroTheme: HeroTheme;
   tiles: { title: string; translations: { ta: { title: string } }; imageUrl: string; subcategoryIds: string[]; sortOrder: number }[];
@@ -19,35 +23,45 @@ export async function buildHero(prisma: PrismaClient, organizationId: string, de
   const design = await designHero({ description }, candidates);
   if (design.tiles.length === 0) return null;
 
-  const [background, tileArt] = await Promise.all([
-    paintBackground(design.backgroundPrompt, design.washColor, design.titleColor),
+  const heroTheme = { ...stripTheme(design.themeColor), font: design.font };
+  const [strip, tileArt] = await Promise.all([
+    paintStrip(design.silhouetteScene, heroTheme.background),
     Promise.all(design.tiles.map((t) => paintTile(t.artPrompt))),
   ]);
   const [heroImageUrl, tileUrls] = await Promise.all([
-    uploadHeroArt(background.image, slug, "bg"),
+    uploadHeroArt(strip, slug, "strip"),
     Promise.all(tileArt.map((art, i) => uploadHeroArt(art, slug, `tile${i}`))),
   ]);
   return {
     heroTitle: design.heroTitle,
     heroTitleTa: design.heroTitleTa,
+    heroKicker: design.heroKicker,
+    heroKickerTa: design.heroKickerTa,
+    heroSubtitle: design.heroSubtitle,
+    heroSubtitleTa: design.heroSubtitleTa,
     heroImageUrl,
-    heroTheme: background.theme,
+    heroTheme,
     tiles: design.tiles.map((t, sortOrder) => ({
       title: t.title, translations: { ta: { title: t.titleTa } }, imageUrl: tileUrls[sortOrder], subcategoryIds: t.subcategoryIds, sortOrder,
     })),
   };
 }
 
-// The Tamil hero title lives beside the collection's other Tamil copy
-export function withHeroTranslation(translations: unknown, heroTitleTa: string | null) {
+type HeroCopyTa = { heroTitle: string | null; heroKicker: string | null; heroSubtitle: string | null };
+
+// The Tamil hero lines live beside the collection's other Tamil copy
+export function withHeroTranslation(translations: unknown, copy: HeroCopyTa | null) {
   const current = (translations as Translations | null) ?? {};
-  const { heroTitle: _drop, ...ta } = current.ta ?? {};
-  return { ...current, ta: heroTitleTa ? { ...ta, heroTitle: heroTitleTa } : ta };
+  const { heroTitle: _t, heroKicker: _k, heroSubtitle: _s, ...ta } = current.ta ?? {};
+  const lines = Object.fromEntries(Object.entries(copy ?? {}).filter(([, v]) => v)) as Record<string, string>;
+  return { ...current, ta: { ...ta, ...lines } };
 }
 
 export function heroFields(hero: HeroDraft | null) {
   return {
     heroTitle: hero?.heroTitle ?? null,
+    heroKicker: hero?.heroKicker ?? null,
+    heroSubtitle: hero?.heroSubtitle ?? null,
     heroImageUrl: hero?.heroImageUrl ?? null,
     heroTheme: hero ? { ...hero.heroTheme } : Prisma.DbNull,
   };
@@ -75,7 +89,9 @@ export async function saveHero(prisma: PrismaClient, collection: { id: string; t
       where: { id: collection.id },
       data: {
         ...heroFields(hero),
-        translations: withHeroTranslation(collection.translations, hero?.heroTitleTa ?? null),
+        translations: withHeroTranslation(collection.translations, hero && {
+          heroTitle: hero.heroTitleTa, heroKicker: hero.heroKickerTa, heroSubtitle: hero.heroSubtitleTa,
+        }),
         tiles: { create: hero?.tiles ?? [] },
       },
     }),

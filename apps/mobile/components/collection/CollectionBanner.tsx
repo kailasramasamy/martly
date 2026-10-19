@@ -33,7 +33,7 @@ export function CollectionBanner({ collection }: { collection: CollectionHeader 
 }
 
 const styles = StyleSheet.create({
-  wrap: { paddingHorizontal: 16, paddingTop: 8, paddingBottom: 12 },
+  wrap: { paddingTop: 8, paddingBottom: 12 },
   image: { width: "100%", aspectRatio: 3 / 2, borderRadius: 20, backgroundColor: colors.border },
   text: { paddingTop: 12, gap: 4 },
   title: { fontFamily: fonts.display, fontSize: 24, color: colors.text },

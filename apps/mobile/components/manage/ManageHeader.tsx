@@ -3,8 +3,10 @@ import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useIsFocused } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
+import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { fonts } from "../../constants/theme";
+import { colors, fonts } from "../../constants/theme";
+import { useNotifications } from "../../lib/notification-context";
 import { useManageScope } from "../../lib/manage-scope-context";
 import { manage } from "./ui/tokens";
 import { StoreSwitcherSheet } from "./StoreSwitcherSheet";
@@ -25,6 +27,7 @@ export function ManageHeader({ title, subtitle, children, right, collapsed }: Ma
   const insets = useSafeAreaInsets();
   const { store, storeId, stores, allowAllStores } = useManageScope();
   const [switcherOpen, setSwitcherOpen] = useState(false);
+  const { staffUnreadCount } = useNotifications();
   const isFocused = useIsFocused();
   const canSwitch = stores.length > 1 || (allowAllStores && stores.length > 0);
   const scopeLabel = storeId === null ? "All stores" : store?.name ?? "Select store";
@@ -46,7 +49,22 @@ export function ManageHeader({ title, subtitle, children, right, collapsed }: Ma
           <Text style={styles.scopeText} numberOfLines={1}>{scopeLabel}</Text>
           {canSwitch && <Ionicons name="chevron-down" size={14} color={manage.inkMuted} />}
         </TouchableOpacity>
-        {right}
+        <View style={styles.actions}>
+          {right}
+          <TouchableOpacity
+            style={styles.bell}
+            onPress={() => router.push({ pathname: "/notifications", params: { audience: "staff" } })}
+            accessibilityRole="button"
+            accessibilityLabel={staffUnreadCount > 0 ? `Alerts, ${staffUnreadCount} unread` : "Alerts"}
+          >
+            <Ionicons name="notifications-outline" size={22} color={manage.inkText} />
+            {staffUnreadCount > 0 && (
+              <View style={styles.bellBadge}>
+                <Text style={styles.bellBadgeText}>{staffUnreadCount > 99 ? "99+" : staffUnreadCount}</Text>
+              </View>
+            )}
+          </TouchableOpacity>
+        </View>
       </View>
       {!collapsed && <Text style={styles.title} accessibilityRole="header">{title}</Text>}
       {!collapsed && subtitle ? <Text style={styles.subtitle} numberOfLines={1}>{subtitle}</Text> : null}
@@ -60,6 +78,13 @@ const styles = StyleSheet.create({
   band: { backgroundColor: manage.ink, paddingHorizontal: 16, paddingBottom: 12 },
   bandCollapsed: { paddingBottom: 8 },
   row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 10, minHeight: 44 },
+  actions: { flexDirection: "row", alignItems: "center", gap: 4 },
+  bell: { width: 44, height: 44, alignItems: "center", justifyContent: "center" },
+  bellBadge: {
+    position: "absolute", top: 4, right: 2, minWidth: 16, height: 16, borderRadius: 8,
+    backgroundColor: colors.error, alignItems: "center", justifyContent: "center", paddingHorizontal: 3,
+  },
+  bellBadgeText: { fontFamily: fonts.bold, fontSize: 9, color: "#fff" },
   titleCompact: { flex: 1, fontFamily: fonts.extrabold, fontSize: 18, color: "#fff", letterSpacing: -0.3 },
   scopeCompact: { maxWidth: "55%" },
   scope: {

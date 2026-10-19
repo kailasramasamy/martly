@@ -52,7 +52,9 @@ export async function curateEvent(prisma: PrismaClient, org: CurationOrg, event:
         organizationId: org.id, festivalEventId: event.id, source: "AGENT", kind: event.kind, slug, ...bannerFields(banner),
         artDirection: curation.imagePrompt, title: curation.title, subtitle: curation.subtitle,
         startsAt: liveFrom(event), endsAt: event.endsAt, ...heroFields(hero),
-        translations: withHeroTranslation(translations, hero?.heroTitleTa ?? null),
+        translations: withHeroTranslation(translations, hero && {
+          heroTitle: hero.heroTitleTa, heroKicker: hero.heroKickerTa, heroSubtitle: hero.heroSubtitleTa,
+        }),
         items: { create: productIds.map((productId, sortOrder) => ({ productId, sortOrder })) },
         tiles: { create: hero?.tiles ?? [] },
       },

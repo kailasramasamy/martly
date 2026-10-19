@@ -4,13 +4,12 @@ import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import {
-  createRazorpayOrder,
-  ensureRazorpayCustomer,
   getRazorpayKeyId,
   isRazorpayConfigured,
   verifyRazorpaySignature,
 } from "../../services/payment.js";
 import { sendWalletNotification } from "../../services/notification.js";
+import { createRecharge, settleRecharge } from "../../services/wallet-recharge.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 
 export async function walletRoutes(app: FastifyInstance) {
@@ -78,15 +77,12 @@ export async function walletRoutes(app: FastifyInstance) {
         throw Object.assign(new Error("Payment gateway not configured"), { statusCode: 503 });
       }
 
-      const customerId = await ensureRazorpayCustomer(app.prisma, user.sub);
-      const amountInPaise = Math.round(amount * 100);
-      const receipt = `w_${user.sub.slice(0, 8)}_${Date.now()}`;
-      const rpOrder = await createRazorpayOrder(amountInPaise, receipt, customerId);
+      const { razorpayOrderId, amountInPaise, customerId } = await createRecharge(app, user.sub, amount);
 
       return {
         success: true,
         data: {
-          razorpay_order_id: rpOrder.id,
+          razorpay_order_id: razorpayOrderId,
           amount: amountInPaise,
           currency: "INR",
           key_id: getRazorpayKeyId(),
@@ -108,50 +104,26 @@ export async function walletRoutes(app: FastifyInstance) {
       razorpay_payment_id: string;
       razorpay_order_id: string;
       razorpay_signature: string;
-      amount: number;
     };
   }>(
     "/recharge/verify",
     { preHandler: [authenticate] },
-    async (request, reply) => {
+    async (request) => {
       const user = request.user as { sub: string };
-      const { razorpay_payment_id, razorpay_order_id, razorpay_signature, amount } = request.body;
+      const { razorpay_payment_id, razorpay_order_id, razorpay_signature } = request.body;
 
-      if (!razorpay_payment_id || !razorpay_order_id || !razorpay_signature || !amount) {
+      if (!razorpay_payment_id || !razorpay_order_id || !razorpay_signature) {
         throw Object.assign(new Error("Missing payment verification fields"), { statusCode: 400 });
       }
-
-      const valid = verifyRazorpaySignature(razorpay_order_id, razorpay_payment_id, razorpay_signature);
-      if (!valid) {
+      if (!verifyRazorpaySignature(razorpay_order_id, razorpay_payment_id, razorpay_signature)) {
         throw Object.assign(new Error("Invalid payment signature"), { statusCode: 400 });
       }
 
-      const creditAmount = amount / 100; // paise → rupees
+      // The credited amount is the one recorded when the top-up was created, never the client's
+      const settled = await settleRecharge(app, razorpay_order_id, razorpay_payment_id, user.sub);
+      if (!settled) throw Object.assign(new Error("Recharge not found"), { statusCode: 404 });
 
-      const updated = await app.prisma.$transaction(async (tx) => {
-        const updatedUser = await tx.user.update({
-          where: { id: user.sub },
-          data: { walletBalance: { increment: creditAmount } },
-          select: { walletBalance: true },
-        });
-
-        await tx.walletTransaction.create({
-          data: {
-            userId: user.sub,
-            type: "CREDIT",
-            amount: creditAmount,
-            balanceAfter: updatedUser.walletBalance,
-            description: `Wallet recharge via Razorpay`,
-          },
-        });
-
-        return updatedUser;
-      });
-
-      return {
-        success: true,
-        data: { balance: Number(updated.walletBalance) },
-      } satisfies ApiResponse<{ balance: number }>;
+      return { success: true, data: settled } satisfies ApiResponse<{ balance: number }>;
     },
   );
 
@@ -243,14 +215,14 @@ export async function walletRoutes(app: FastifyInstance) {
             type,
             amount,
             balanceAfter: updatedUser.walletBalance,
-            description: description || `Admin ${type.toLowerCase()} adjustment`,
+            description: description || "Balance adjusted by support",
           },
         });
 
         return updatedUser;
       });
 
-      sendWalletNotification(app.fcm, app.prisma, userId, type, amount, description || `Admin ${type.toLowerCase()} adjustment`);
+      sendWalletNotification(app.fcm, app.prisma, userId, type, amount, description || "Balance adjusted by support");
 
       return {
         success: true,

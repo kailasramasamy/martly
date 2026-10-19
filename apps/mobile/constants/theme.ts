@@ -4,6 +4,9 @@ export const colors = {
   primaryDark: "#115e59",
   accent: "#fbbf24",
   accentText: "#451a03",
+  // "% OFF" sale pills: a softer amber than `accent`, with near-black text so the small label stays legible
+  salePill: "#fcd34d",
+  salePillText: "#1c0a00",
   secondary: "#0ea5e9",
   background: "#ffffff",
   surface: "#f8fafc",
@@ -37,9 +40,17 @@ export const fonts = {
   semibold: "Manrope-SemiBold",
   bold: "Manrope-Bold",
   extrabold: "Manrope-ExtraBold",
-  /** Festive headlines only */
+  /** Collection and campaign titles */
   display: "Cinzel-Bold",
 } as const;
+
+/** Festival hero headline faces, keyed by the FestiveFont the hero designer picks; Playfair Display is the default */
+export const festiveFonts: Record<string, string> = {
+  PLAYFAIR: "PlayfairDisplay-Bold",
+  YATRA: "YatraOne-Regular",
+  KALAM: "Kalam-Bold",
+  LOBSTER: "Lobster-Regular",
+};
 
 export const radius = {
   sm: 6,

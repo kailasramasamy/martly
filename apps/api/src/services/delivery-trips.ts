@@ -46,6 +46,6 @@ export async function broadcastOutForDelivery(fcm: Messaging | null, prisma: Pri
   const orders = await prisma.order.findMany({ where: { id: { in: orderIds } }, select: { id: true, userId: true } });
   for (const o of orders) {
     broadcastOrderUpdate(prisma, o.id, "OUT_FOR_DELIVERY");
-    sendOrderStatusNotification(fcm, prisma, o.id, o.userId, "OUT_FOR_DELIVERY");
+    sendOrderStatusNotification(fcm, prisma, o.id, "OUT_FOR_DELIVERY");
   }
 }

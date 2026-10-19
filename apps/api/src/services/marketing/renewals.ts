@@ -1,17 +1,11 @@
 import type { Messaging } from "firebase-admin/messaging";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
-import { sendNotification } from "../notification.js";
+import { notifyOrgStaff } from "../notify/staff.js";
 
 const REMINDER_LEAD_MS = 3 * 24 * 60 * 60 * 1000;
 
 export async function notifyOwners(fcm: Messaging | null, prisma: PrismaClient, organizationId: string, title: string, body: string) {
-  const owners = await prisma.user.findMany({
-    where: { role: "ORG_ADMIN", userStores: { some: { store: { organizationId } } } },
-    select: { id: true },
-  });
-  for (const { id } of owners) {
-    await sendNotification(fcm, prisma, { userId: id, type: "GENERAL", title, body, data: { screen: "marketing-plan" } });
-  }
+  await notifyOrgStaff(fcm, prisma, organizationId, { escalation: true }, { type: "STAFF_MARKETING", title, body, data: { screen: "marketing-plan" } });
 }
 
 /** Periods that just ended: when nothing follows, the org is back on Free (running promotions finish their run) */

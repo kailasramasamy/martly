@@ -2,6 +2,7 @@ import { createContext, useContext, useState, useCallback, useEffect, useRef } f
 import { api } from "./api";
 import { useAuth } from "./auth-context";
 import { useToast } from "./toast-context";
+import { useStore } from "./store-context";
 
 interface WishlistContextType {
   wishlistedIds: Set<string>;
@@ -20,6 +21,8 @@ const WishlistContext = createContext<WishlistContextType>({
 export function WishlistProvider({ children }: { children: React.ReactNode }) {
   const { isAuthenticated } = useAuth();
   const toast = useToast();
+  const { selectedStore } = useStore();
+  const storeId = selectedStore?.id;
   const [wishlistedIds, setWishlistedIds] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(false);
   const fetched = useRef(false);
@@ -68,7 +71,7 @@ export function WishlistProvider({ children }: { children: React.ReactNode }) {
     });
     toast.show(wasWishlisted ? "Removed from wishlist" : "Added to wishlist", "success");
     try {
-      const res = await api.post<{ wishlisted: boolean }>("/api/v1/wishlist/toggle", { productId });
+      const res = await api.post<{ wishlisted: boolean }>("/api/v1/wishlist/toggle", { productId, storeId });
       // Reconcile with server response (silent — no toast)
       setWishlistedIds((prev) => {
         const next = new Set(prev);
@@ -89,7 +92,7 @@ export function WishlistProvider({ children }: { children: React.ReactNode }) {
     } finally {
       togglingRef.current.delete(productId);
     }
-  }, [toast]);
+  }, [toast, storeId]);
 
   const isWishlisted = useCallback((productId: string) => wishlistedRef.current.has(productId), []);
 

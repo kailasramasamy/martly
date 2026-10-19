@@ -1,9 +1,11 @@
+import type { Messaging } from "firebase-admin/messaging";
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { istDateKey } from "../ist-day.js";
 import { DELIVERY_FAILURE_LABELS, type DeliveryFailureReason } from "@martly/shared/constants";
 import { startTripInTx } from "../delivery-trips.js";
 import { broadcastToTripSubscribers } from "../ws-manager.js";
 import { forgetTrip, invalidateRoute } from "./live-location.js";
+import { notifyTripCompleted, type TripAssignment } from "../notify/delivery-alerts.js";
 import { reoptimizeTrips, waveTripWhere, type Wave } from "./plan-wave.js";
 
 type Tx = Prisma.TransactionClient;
@@ -49,7 +51,7 @@ export async function attachToRiderTrip(tx: Tx, args: { storeId: string; organiz
     await tx.order.update({ where: { id }, data: { deliveryTripId: trip.id, deliverySequence: (last._max.deliverySequence ?? 0) + i + 1 } });
   }
   await dropEmptyPlanned(tx, previous.map((o) => o.deliveryTripId).filter((t): t is string => !!t && t !== trip.id));
-  return trip.id;
+  return { tripId: trip.id, created: !open };
 }
 
 interface SendArgs {
@@ -65,10 +67,10 @@ interface SendArgs {
 /** Gives orders to a rider (joining their unstarted trip) and optionally starts it; a blocked start rolls everything back */
 export async function sendToRider(prisma: PrismaClient, { storeId, organizationId, rider, orderIds, wave, start }: SendArgs) {
   const sent = await prisma.$transaction(async (tx) => {
-    const tripId = await attachToRiderTrip(tx, { storeId, organizationId, riderId: rider.id, orderIds, wave });
+    const { tripId, created } = await attachToRiderTrip(tx, { storeId, organizationId, riderId: rider.id, orderIds, wave });
     const blocked = start ? await startProblem(tx, { id: tripId, riderId: rider.id, status: "CREATED" }) : null;
     if (blocked) throw new TripOpError(blocked);
-    return { tripId, sentOut: start ? await startTripInTx(tx, tripId, rider.name) : [] };
+    return { tripId, addedToExisting: !created, sentOut: start ? await startTripInTx(tx, tripId, rider.name) : [] };
   });
   // New stops join at the end; put the whole trip back in road order
   await reoptimizeTrips(prisma, [sent.tripId]);
@@ -86,8 +88,8 @@ export async function startProblem(tx: Tx | PrismaClient, trip: { id: string; ri
 }
 
 /** Gives trips to riders: planned trips become assigned; an assigned trip that hasn't started can change hands */
-export async function assignTrips(prisma: PrismaClient, storeId: string, riders: Set<string>, assignments: { tripId: string; riderId: string }[]) {
-  const trips = await prisma.deliveryTrip.findMany({ where: { id: { in: assignments.map((a) => a.tripId) } }, select: { id: true, storeId: true, status: true } });
+export async function assignTrips(prisma: PrismaClient, storeId: string, riders: Set<string>, assignments: { tripId: string; riderId: string }[]): Promise<TripAssignment[]> {
+  const trips = await prisma.deliveryTrip.findMany({ where: { id: { in: assignments.map((a) => a.tripId) } }, select: { id: true, storeId: true, status: true, riderId: true } });
   for (const a of assignments) {
     const trip = trips.find((t) => t.id === a.tripId);
     if (!trip || trip.storeId !== storeId) throw new TripOpError("Trip not found in this store");
@@ -95,12 +97,13 @@ export async function assignTrips(prisma: PrismaClient, storeId: string, riders:
     if (!riders.has(a.riderId)) throw new TripOpError("Rider is not assigned to this store");
   }
   await prisma.$transaction(assignments.map((a) => prisma.deliveryTrip.update({ where: { id: a.tripId }, data: { riderId: a.riderId, status: "CREATED" } })));
+  return assignments.map((a) => ({ ...a, previousRiderId: trips.find((t) => t.id === a.tripId)?.riderId ?? null }));
 }
 
 /** Moves a stop between unstarted trips of the same store, or back to the unplanned pool */
 export async function moveOrder(prisma: PrismaClient, fromTripId: string, orderId: string, toTripId: string | null) {
   const ids = [fromTripId, ...(toTripId ? [toTripId] : [])];
-  const trips = await prisma.deliveryTrip.findMany({ where: { id: { in: ids } }, select: { id: true, storeId: true, status: true } });
+  const trips = await prisma.deliveryTrip.findMany({ where: { id: { in: ids } }, select: { id: true, storeId: true, status: true, riderId: true } });
   const from = trips.find((t) => t.id === fromTripId);
   const to = toTripId ? trips.find((t) => t.id === toTripId) : null;
   if (!from || (toTripId && !to)) throw new TripOpError("Trip not found");
@@ -115,15 +118,16 @@ export async function moveOrder(prisma: PrismaClient, fromTripId: string, orderI
     await dropEmptyPlanned(tx, [from.id]);
   });
   await reoptimizeTrips(prisma, [from.id, ...(to ? [to.id] : [])]);
-  return from.storeId;
+  return { storeId: from.storeId, from: { tripId: from.id, riderId: from.riderId }, to: to ? { tripId: to.id, riderId: to.riderId } : null };
 }
 
 /** After a stop is delivered or given up on: the trip completes once nothing is left on the road, and live tracking refreshes */
-export async function stopFinished(prisma: PrismaClient, tripId: string) {
+export async function stopFinished(prisma: PrismaClient, fcm: Messaging | null, tripId: string) {
   const onTheRoad = await prisma.order.count({ where: { deliveryTripId: tripId, status: "OUT_FOR_DELIVERY" } });
   if (onTheRoad === 0) {
-    await prisma.deliveryTrip.updateMany({ where: { id: tripId, status: "IN_PROGRESS" }, data: { status: "COMPLETED", completedAt: new Date() } });
+    const { count } = await prisma.deliveryTrip.updateMany({ where: { id: tripId, status: "IN_PROGRESS" }, data: { status: "COMPLETED", completedAt: new Date() } });
     forgetTrip(tripId);
+    if (count > 0) await notifyTripCompleted(fcm, prisma, tripId);
   } else {
     invalidateRoute(tripId);
   }
@@ -133,7 +137,7 @@ export async function stopFinished(prisma: PrismaClient, tripId: string) {
 interface FailArgs { tripId: string; orderId: string; riderId: string; reason: DeliveryFailureReason; note?: string }
 
 /** The rider couldn't hand it over: the order goes back to the store as READY, off the trip, with the reason on record */
-export async function failDelivery(prisma: PrismaClient, { tripId, orderId, riderId, reason, note }: FailArgs) {
+export async function failDelivery(prisma: PrismaClient, fcm: Messaging | null, { tripId, orderId, riderId, reason, note }: FailArgs) {
   const order = await prisma.order.findFirst({ where: { id: orderId, deliveryTripId: tripId }, select: { status: true } });
   if (!order) throw new TripOpError("This order isn't on that trip");
   if (order.status !== "OUT_FOR_DELIVERY") throw new TripOpError(`Order is ${order.status}, expected OUT_FOR_DELIVERY`);
@@ -143,5 +147,5 @@ export async function failDelivery(prisma: PrismaClient, { tripId, orderId, ride
     prisma.orderStatusLog.create({ data: { orderId, status: "READY", note: `Delivery attempt failed: ${label}${note ? `. ${note}` : ""}` } }),
     prisma.deliveryFailure.create({ data: { orderId, tripId, riderId, reason, note } }),
   ]);
-  await stopFinished(prisma, tripId);
+  await stopFinished(prisma, fcm, tripId);
 }

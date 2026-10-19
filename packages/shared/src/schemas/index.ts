@@ -618,8 +618,12 @@ export const updateCollectionSchema = z.object({
 export type UpdateCollectionInput = z.infer<typeof updateCollectionSchema>;
 
 export const updateCollectionHeroSchema = z.object({
-  heroTitle: z.string().min(1).max(40),
+  heroTitle: z.string().trim().min(1).max(40),
   heroTitleTa: z.string().max(60).nullish(),
+  heroKicker: z.string().trim().max(60).nullish(),
+  heroKickerTa: z.string().max(60).nullish(),
+  heroSubtitle: z.string().trim().max(90).nullish(),
+  heroSubtitleTa: z.string().max(90).nullish(),
 });
 export type UpdateCollectionHeroInput = z.infer<typeof updateCollectionHeroSchema>;
 
@@ -740,6 +744,7 @@ export type UpdateReviewStatusInput = z.infer<typeof updateReviewStatusSchema>;
 // ── Wishlist ────────────────────────────────────────
 export const toggleWishlistSchema = z.object({
   productId: z.string().uuid(),
+  storeId: z.string().uuid().optional(),
 });
 export type ToggleWishlistInput = z.infer<typeof toggleWishlistSchema>;
 
@@ -965,7 +970,7 @@ export const sendNotificationSchema = z.object({
   type: z.enum(["PROMOTIONAL", "GENERAL"]).default("PROMOTIONAL"),
   imageUrl: z.string().url().optional(),
   storeId: z.string().uuid().optional(),
-  deepLinkType: z.enum(["product", "category", "store", "screen"]).optional(),
+  deepLinkType: z.enum(["product", "category", "collection", "store", "screen"]).optional(),
   deepLinkId: z.string().max(500).optional(),
 });
 export type SendNotificationInput = z.infer<typeof sendNotificationSchema>;
@@ -999,7 +1004,7 @@ export const sendCampaignSchema = z.object({
   imageUrl: z.string().url().optional(),
   audienceType: z.enum(["ALL_CUSTOMERS", "STORE_CUSTOMERS", "ORDERED_LAST_N_DAYS", "NOT_ORDERED_N_DAYS", "HIGH_VALUE_CUSTOMERS"]).default("ALL_CUSTOMERS"),
   audienceConfig: audienceConfigSchema.optional(),
-  deepLinkType: z.enum(["product", "category", "store", "screen"]).optional(),
+  deepLinkType: z.enum(["product", "category", "collection", "store", "screen"]).optional(),
   deepLinkId: z.string().max(500).optional(),
   scheduledAt: z.coerce.date().optional(),
 });
@@ -1376,6 +1381,8 @@ export type ApproveCatalogDraftInput = z.infer<typeof approveCatalogDraftSchema>
 
 export const collectionProductsQuerySchema = z.object({
   storeId: z.string().uuid(),
+  /** Comma-separated aisles to narrow the collection to */
+  subcategoryIds: z.string().optional().transform((v) => (v ? v.split(",").filter(Boolean) : [])).pipe(z.array(z.string().uuid()).max(50)),
   page: z.coerce.number().int().min(1).default(1),
   pageSize: z.coerce.number().int().min(1).max(50).default(20),
 });
@@ -1437,3 +1444,4 @@ export const stockCountListQuerySchema = z.object({
   pageSize: z.coerce.number().int().min(1).max(100).default(20),
 });
 export * from "./marketing.js";
+export * from "./home.js";

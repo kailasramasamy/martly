@@ -3,9 +3,10 @@ import bcrypt from "bcryptjs";
 import { billingProfileSchema, brandPartnerSchema, offlinePaymentSchema, reviewBrandCampaignSchema } from "@martly/shared/schemas";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
+import { notifyCampaignScheduled } from "../../services/notify/marketing-alerts.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { markPaidOffline, reviewCampaign } from "../../services/brand-campaigns/booking.js";
-import { endCampaign } from "../../services/brand-campaigns/go-live.js";
+import { endCampaign, participatingOrgs } from "../../services/brand-campaigns/go-live.js";
 import { campaignContext, campaignRoutes, type CampaignScope } from "./campaign-routes.js";
 
 const scope: CampaignScope = { guard: [authenticate, requireRole("SUPER_ADMIN")], brandOf: async () => null };
@@ -20,7 +21,7 @@ export async function brandCampaignAdminRoutes(app: FastifyInstance) {
     if (!campaign) return;
     const { reference } = offlinePaymentSchema.parse(request.body);
     const b = billingProfileSchema.parse(request.body);
-    await markPaidOffline(app.prisma, campaign, { name: b.billingName, gstin: b.gstin || null, address: b.billingAddress, state: b.billingState }, reference, getOrgUser(request).sub);
+    await markPaidOffline(app.prisma, campaign, { name: b.billingName, gstin: b.gstin || null, address: b.billingAddress, state: b.billingState }, reference, getOrgUser(request).sub, app.fcm);
     return { success: true, data: await detail(campaign.id) };
   });
 
@@ -29,6 +30,10 @@ export async function brandCampaignAdminRoutes(app: FastifyInstance) {
     if (!campaign) return;
     const { approve, note } = reviewBrandCampaignSchema.parse(request.body);
     await reviewCampaign(app.prisma, campaign, approve, note);
+    if (approve) {
+      const orgs = await participatingOrgs(app.prisma, campaign);
+      void notifyCampaignScheduled(app.fcm, app.prisma, campaign, orgs.map((o) => o.id)).catch((err: unknown) => app.log.error(err, `Brand campaign ${campaign.id}: schedule alert failed`));
+    }
     return { success: true, data: await detail(campaign.id) };
   });
 

@@ -303,8 +303,9 @@ export async function loyaltyRoutes(app: FastifyInstance) {
       // Fire-and-forget: loyalty notification
       sendLoyaltyNotification(
         app.fcm, app.prisma, body.userId,
-        body.points > 0 ? "EARN" : "REDEEM",
-        Math.abs(body.points),
+        "ADJUST",
+        body.points,
+        body.description,
       );
 
       const response: ApiResponse<typeof result> = { success: true, data: result };

@@ -7,15 +7,20 @@ interface Props {
   store: Store | null;
   userArea: string | null;
   onPress: () => void;
+  /** Text colour when the header sits over festive art */
+  ink?: string | null;
 }
 
 // Home header: leads with the delivery promise once a store is chosen, otherwise with the user's area
-export function HomeHeaderLocation({ store, userArea, onPress }: Props) {
+export function HomeHeaderLocation({ store, userArea, onPress, ink }: Props) {
   const eta = store?.expressEtaMinutes;
   const headline = store
     ? eta ? `Delivery in ${eta} minutes` : store.name
     : userArea ?? "Choose a store";
   const caption = store ? (eta ? store.name : "Delivering from") : "Delivering to";
+  const strong = ink ? { color: ink } : null;
+  const soft = ink ? { color: ink, opacity: 0.8 } : null;
+  const chevron = ink ?? colors.textSecondary;
 
   return (
     <Pressable
@@ -30,18 +35,18 @@ export function HomeHeaderLocation({ store, userArea, onPress }: Props) {
       <View style={styles.text}>
         {eta ? (
           <>
-            <Text style={styles.headline} numberOfLines={1}>{headline}</Text>
+            <Text style={[styles.headline, strong]} numberOfLines={1}>{headline}</Text>
             <View style={styles.captionRow}>
-              <Text style={styles.caption} numberOfLines={1}>{caption}</Text>
-              <Ionicons name="chevron-down" size={13} color={colors.textSecondary} />
+              <Text style={[styles.caption, soft]} numberOfLines={1}>{caption}</Text>
+              <Ionicons name="chevron-down" size={13} color={chevron} />
             </View>
           </>
         ) : (
           <>
-            <Text style={styles.label}>{caption.toUpperCase()}</Text>
+            <Text style={[styles.label, soft]}>{caption.toUpperCase()}</Text>
             <View style={styles.captionRow}>
-              <Text style={styles.headlineSmall} numberOfLines={1}>{headline}</Text>
-              <Ionicons name="chevron-down" size={14} color={colors.textSecondary} />
+              <Text style={[styles.headlineSmall, strong]} numberOfLines={1}>{headline}</Text>
+              <Ionicons name="chevron-down" size={14} color={chevron} />
             </View>
           </>
         )}

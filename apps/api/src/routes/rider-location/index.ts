@@ -6,6 +6,7 @@ import { Permission } from "@martly/shared/constants";
 import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { broadcastRiderLocation } from "../../services/ws-manager.js";
 import { haversine, getDirectionsRoute } from "../../lib/geo.js";
+import { notifyIfRiderNearby } from "../../services/notify/delivery-alerts.js";
 import { cacheRoute, cachedRoute, riderLocation, setRiderLocation } from "../../services/delivery/live-location.js";
 
 const riderAuth = [authenticate, requirePermission(Permission.DELIVERY_DELIVER)];
@@ -62,6 +63,8 @@ export async function riderLocationRoutes(app: FastifyInstance) {
       speed,
       updatedAt: location.updatedAt,
     });
+
+    notifyIfRiderNearby(app.fcm, app.prisma, tripId, lat, lng).catch((err: unknown) => app.log.error(err, "Rider nearby notification failed"));
 
     return { success: true, data: { received: true } } satisfies ApiResponse<{ received: true }>;
   });

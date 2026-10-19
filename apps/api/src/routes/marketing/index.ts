@@ -86,7 +86,7 @@ export async function marketingRoutes(app: FastifyInstance) {
     if (order.razorpayOrderId !== body.razorpay_order_id || !verifyRazorpaySignature(body.razorpay_order_id, body.razorpay_payment_id, body.razorpay_signature)) {
       return reply.badRequest("Payment could not be verified");
     }
-    const paid = await fulfilAdOrder(app.prisma, order.id, { paymentId: body.razorpay_payment_id });
+    const paid = await fulfilAdOrder(app.prisma, order.id, { paymentId: body.razorpay_payment_id }, app.fcm);
     return { success: true, data: { status: paid.status, number: paid.number } };
   });
 

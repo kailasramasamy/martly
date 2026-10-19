@@ -379,43 +379,6 @@ export const RegulatoryMarkLabels: Record<RegulatoryMark, string> = {
   FPO: "FPO Mark",
 };
 
-export const NotificationType = {
-  ORDER_CONFIRMED: "ORDER_CONFIRMED",
-  ORDER_PREPARING: "ORDER_PREPARING",
-  ORDER_READY: "ORDER_READY",
-  ORDER_OUT_FOR_DELIVERY: "ORDER_OUT_FOR_DELIVERY",
-  ORDER_DELIVERED: "ORDER_DELIVERED",
-  ORDER_CANCELLED: "ORDER_CANCELLED",
-  WALLET_CREDITED: "WALLET_CREDITED",
-  WALLET_DEBITED: "WALLET_DEBITED",
-  LOYALTY_POINTS_EARNED: "LOYALTY_POINTS_EARNED",
-  LOYALTY_POINTS_REDEEMED: "LOYALTY_POINTS_REDEEMED",
-  PROMOTIONAL: "PROMOTIONAL",
-  GENERAL: "GENERAL",
-  WELCOME: "WELCOME",
-  REVIEW_REQUEST: "REVIEW_REQUEST",
-  NEW_ORDER: "NEW_ORDER",
-} as const;
-export type NotificationType = (typeof NotificationType)[keyof typeof NotificationType];
-
-export const NotificationTypeLabels: Record<NotificationType, string> = {
-  ORDER_CONFIRMED: "Order Confirmed",
-  ORDER_PREPARING: "Preparing Order",
-  ORDER_READY: "Order Ready",
-  ORDER_OUT_FOR_DELIVERY: "Out for Delivery",
-  ORDER_DELIVERED: "Order Delivered",
-  ORDER_CANCELLED: "Order Cancelled",
-  WALLET_CREDITED: "Wallet Credited",
-  WALLET_DEBITED: "Wallet Debited",
-  LOYALTY_POINTS_EARNED: "Points Earned",
-  LOYALTY_POINTS_REDEEMED: "Points Redeemed",
-  PROMOTIONAL: "Promotional",
-  GENERAL: "General",
-  WELCOME: "Welcome",
-  REVIEW_REQUEST: "Review Request",
-  NEW_ORDER: "New Order",
-};
-
 export const CampaignStatus = {
   DRAFT: "DRAFT",
   SCHEDULED: "SCHEDULED",
@@ -660,3 +623,5 @@ export const StockCountStatus = {
 export type StockCountStatus = (typeof StockCountStatus)[keyof typeof StockCountStatus];
 
 export * from "./marketing";
+export * from "./notifications";
+export * from "./home";

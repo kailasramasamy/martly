@@ -202,9 +202,21 @@ importers:
       '@expo-google-fonts/cinzel':
         specifier: ^0.4.2
         version: 0.4.2
+      '@expo-google-fonts/kalam':
+        specifier: ^0.4.1
+        version: 0.4.1
+      '@expo-google-fonts/lobster':
+        specifier: ^0.4.1
+        version: 0.4.1
       '@expo-google-fonts/manrope':
         specifier: ^0.4.2
         version: 0.4.2
+      '@expo-google-fonts/playfair-display':
+        specifier: ^0.4.2
+        version: 0.4.2
+      '@expo-google-fonts/yatra-one':
+        specifier: ^0.4.1
+        version: 0.4.1
       '@expo/metro-runtime':
         specifier: ~6.1.2
         version: 6.1.2(expo@54.0.33)(react-dom@19.1.0(react@19.1.0))(react-native@0.81.5(@babel/core@7.29.0)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
@@ -1715,8 +1727,20 @@ packages:
   '@expo-google-fonts/inter@0.4.2':
     resolution: {integrity: sha512-syfiImMaDmq7cFi0of+waE2M4uSCyd16zgyWxdPOY7fN2VBmSLKEzkfbZgeOjJq61kSqPBNNtXjggiQiSD6gMQ==}
 
+  '@expo-google-fonts/kalam@0.4.1':
+    resolution: {integrity: sha512-A5LZoojqb9OCzOI/2WDRofaIQGGzC5zzmKxqxCFIx1jSYOO8g7q+5fZdd+QfJ6pY6VLzO4j5xoJq0ptcHFpQSg==}
+
+  '@expo-google-fonts/lobster@0.4.1':
+    resolution: {integrity: sha512-oQGNAlr9/9XlWQk270QUmvqbgGRZjXbEW6FwGxn5ZK6RHyVRAL1MtCbunjjyV3O5aLoZ4Cmh1CuYCHyIMqLe0w==}
+
   '@expo-google-fonts/manrope@0.4.2':
     resolution: {integrity: sha512-BZsKe8d9BJrVnIQIZcTS7/Kac0TbXnqs/+8EBSiQxrmK6GoCO6eTkmr50D1weIk/EoF20pTmAkpWICnovATr/g==}
+
+  '@expo-google-fonts/playfair-display@0.4.2':
+    resolution: {integrity: sha512-mWhBV59RUjSS3aYpytUb7UyHHTnXcHh7epAn7gq+M4XAEh5PuMKUrP8eiUfkJLb6UwHZCi7EhQpUzxHu5OL96w==}
+
+  '@expo-google-fonts/yatra-one@0.4.1':
+    resolution: {integrity: sha512-ZVgTPAdVqaWQMM19Ch5B5q2YG0zAh9N8sJ7k1b/8Npgk0FOC4QqXq3dh7m0SkqcSpvsMzH4t0FWUd4tjdQKFPA==}
 
   '@expo/cli@54.0.23':
     resolution: {integrity: sha512-km0h72SFfQCmVycH/JtPFTVy69w6Lx1cHNDmfLfQqgKFYeeHTjx7LVDP4POHCtNxFP2UeRazrygJhlh4zz498g==}
@@ -10094,7 +10118,15 @@ snapshots:
 
   '@expo-google-fonts/inter@0.4.2': {}
 
+  '@expo-google-fonts/kalam@0.4.1': {}
+
+  '@expo-google-fonts/lobster@0.4.1': {}
+
   '@expo-google-fonts/manrope@0.4.2': {}
+
+  '@expo-google-fonts/playfair-display@0.4.2': {}
+
+  '@expo-google-fonts/yatra-one@0.4.1': {}
 
   '@expo/cli@54.0.23(expo-router@6.0.23)(expo@54.0.33)(react-native@0.81.5(@babel/core@7.29.0)(@types/react@19.1.17)(react@19.1.0))':
     dependencies:

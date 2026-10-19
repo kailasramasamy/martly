@@ -4,12 +4,16 @@ import { authenticateOptional } from "../../middleware/auth.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { getTimePeriod, TIME_CATEGORY_MAP, type TimePeriod } from "../../services/time-picks.js";
 import {
-  buildProductData, enrichStoreProduct, liveWindow, reviewSummaries, STORE_PRODUCT_INCLUDE, withAllSizes, withReviews,
+  buildProductData, enrichStoreProduct, liveWindow, reviewSummaries, withAllSizes, withReviews,
 } from "../../services/store-feed.js";
+import { activeDealRows, buyAgainProducts, pastOrderLines } from "../../services/home/feed-queries.js";
 import { liveFestiveHero } from "../../services/festive-hero.js";
+import { homeSectionsRoutes } from "./sections.js";
 import { storeBanners } from "../../services/marketing/banner-feed.js";
 
 export async function homeRoutes(app: FastifyInstance) {
+  await app.register(homeSectionsRoutes);
+
   app.get<{ Params: { storeId: string } }>(
     "/:storeId",
     { preHandler: [authenticateOptional] },
@@ -96,45 +100,10 @@ export async function homeRoutes(app: FastifyInstance) {
         }),
 
         // 4. Deals — active discounts
-        (() => {
-          return app.prisma.storeProduct.findMany({
-            where: {
-              storeId,
-              isActive: true,
-              discountType: { not: null },
-              discountValue: { gt: 0 },
-              OR: [
-                { discountStart: null, discountEnd: null },
-                { discountStart: { lte: now }, discountEnd: null },
-                { discountStart: null, discountEnd: { gte: now } },
-                { discountStart: { lte: now }, discountEnd: { gte: now } },
-              ],
-            },
-            take: 10,
-            include: STORE_PRODUCT_INCLUDE,
-          });
-        })(),
+        activeDealRows(app.prisma, storeId, now),
 
         // 5. Buy Again — from order history
-        user.sub
-          ? app.prisma.orderItem.findMany({
-              where: {
-                order: {
-                  userId: user.sub,
-                  storeId,
-                  status: { in: ["DELIVERED", "CONFIRMED"] },
-                },
-              },
-              distinct: ["productId"],
-              orderBy: { order: { createdAt: "desc" } },
-              take: 10,
-              include: {
-                storeProduct: {
-                  include: STORE_PRODUCT_INCLUDE,
-                },
-              },
-            })
-          : Promise.resolve([]),
+        user.sub ? pastOrderLines(app.prisma, storeId, user.sub) : Promise.resolve([]),
 
         // 6. Banners — active banners for mobile placements (brand campaigns and slot caps applied)
         storeBanners(app.prisma, store, ["HERO_CAROUSEL", "CATEGORY_STRIP", "MID_PAGE", "POPUP"]),
@@ -201,64 +170,7 @@ export async function homeRoutes(app: FastifyInstance) {
 
       const deals = await withAllSizes(app.prisma, storeId, dealsRaw);
 
-      // Buy again: previously ordered rows, topped up with related products below
-      const buyAgainRows: any[] = buyAgainRaw
-        .filter((item: any) => item.storeProduct?.product)
-        .map((item: any) => item.storeProduct);
-
-      // Supplement buy again with related products if < 6 items
-      const BUY_AGAIN_MIN = 6;
-      if (buyAgainRows.length > 0 && buyAgainRows.length < BUY_AGAIN_MIN) {
-        const existingProductIds = buyAgainRows.map((b: any) => b.productId as string);
-        const subcategoryIds = [...new Set(buyAgainRows.map((b: any) => b.product?.subcategory?.id).filter(Boolean))] as string[];
-
-        // First try same subcategories
-        let supplementRaw: any[] = [];
-        if (subcategoryIds.length > 0) {
-          supplementRaw = await app.prisma.storeProduct.findMany({
-            where: {
-              storeId,
-              isActive: true,
-              product: {
-                subcategoryId: { in: subcategoryIds },
-                id: { notIn: existingProductIds },
-                isActive: true,
-              },
-            },
-            take: BUY_AGAIN_MIN - buyAgainRows.length,
-            orderBy: { stock: "desc" },
-            include: STORE_PRODUCT_INCLUDE,
-          });
-        }
-
-        // If still not enough, fill with popular/featured products from any category
-        const stillNeeded = BUY_AGAIN_MIN - buyAgainRows.length - supplementRaw.length;
-        if (stillNeeded > 0) {
-          const excludeProductIds = [
-            ...existingProductIds,
-            ...supplementRaw.map((sp: any) => sp.productId as string),
-          ];
-          const popularRaw = await app.prisma.storeProduct.findMany({
-            where: {
-              storeId,
-              isActive: true,
-              stock: { gt: 0 },
-              product: {
-                id: { notIn: excludeProductIds },
-                isActive: true,
-              },
-            },
-            take: stillNeeded,
-            orderBy: [{ isFeatured: "desc" }, { stock: "desc" }],
-            include: STORE_PRODUCT_INCLUDE,
-          });
-          supplementRaw = [...supplementRaw, ...popularRaw];
-        }
-        buyAgainRows.push(...supplementRaw);
-
-      }
-
-      const buyAgain = await withAllSizes(app.prisma, storeId, buyAgainRows);
+      const buyAgain = await buyAgainProducts(app.prisma, storeId, buyAgainRaw);
 
       // Batch-fetch review aggregates for all products in the feed
       const allProductIds = [

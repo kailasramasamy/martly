@@ -6,6 +6,7 @@ import { getOrgUser, requireOrgContext } from "../../middleware/org-scope.js";
 import { applyReferralCodeSchema, createReferralConfigSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { ensureReferralCode } from "../../services/referral-code.js";
+import { notifyReferralApplied } from "../../services/notify/service-alerts.js";
 
 export async function referralRoutes(app: FastifyInstance) {
   // ── Customer: get referral info ────────────────────────
@@ -134,6 +135,13 @@ export async function referralRoutes(app: FastifyInstance) {
         refereeReward: config.refereeReward,
         status: "PENDING",
       },
+    });
+
+    notifyReferralApplied(app.fcm, app.prisma, {
+      referrerId: referrer.id,
+      refereeId: sub,
+      referrerReward: Number(referral.referrerReward),
+      refereeReward: Number(referral.refereeReward),
     });
 
     return {

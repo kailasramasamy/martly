@@ -6,7 +6,7 @@ import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
-import { sendWalletNotification } from "../../services/notification.js";
+import { notifyReturnRequested, notifyReturnResolved } from "../../services/notify/service-alerts.js";
 
 export async function returnRequestRoutes(app: FastifyInstance) {
   // ── POST / — Customer creates a return request ─────────────
@@ -70,6 +70,15 @@ export async function returnRequestRoutes(app: FastifyInstance) {
       include: {
         items: { include: { orderItem: { include: { product: true, variant: true } } } },
       },
+    });
+
+    notifyReturnRequested(app.fcm, app.prisma, {
+      id: returnRequest.id,
+      orderId: returnRequest.orderId,
+      userId: user.sub,
+      storeId: order.storeId,
+      requestedAmount,
+      itemCount: body.items.length,
     });
 
     return { success: true, data: returnRequest } satisfies ApiResponse<typeof returnRequest>;
@@ -243,14 +252,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
       });
 
       // Fire-and-forget notification
-      sendWalletNotification(
-        app.fcm,
-        app.prisma,
-        returnRequest.userId,
-        "CREDIT",
-        approvedAmount,
-        `Refund approved for order #${returnRequest.orderId.slice(0, 8)}`,
-      );
+      notifyReturnResolved(app.fcm, app.prisma, returnRequest, { status: "APPROVED", amount: approvedAmount, adminNote: body.adminNote });
 
       return { success: true, data: result } satisfies ApiResponse<typeof result>;
     } else {
@@ -266,6 +268,8 @@ export async function returnRequestRoutes(app: FastifyInstance) {
           resolvedBy: user.sub,
         },
       });
+
+      notifyReturnResolved(app.fcm, app.prisma, returnRequest, { status: "REJECTED", adminNote: body.adminNote });
 
       return { success: true, data: updated } satisfies ApiResponse<typeof updated>;
     }

@@ -5,6 +5,7 @@ import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { notifyReviewCreated, notifyReviewReplied, notifyReviewModerated } from "../../services/notify/service-alerts.js";
 
 const reviewInclude = {
   user: { select: { id: true, name: true } },
@@ -150,6 +151,8 @@ export async function reviewRoutes(app: FastifyInstance) {
       });
     });
 
+    notifyReviewCreated(app.fcm, app.prisma, review);
+
     const response: ApiResponse<typeof review> = { success: true, data: review };
     return response;
   });
@@ -213,7 +216,11 @@ export async function reviewRoutes(app: FastifyInstance) {
     const body = createReviewReplySchema.parse(request.body);
     const user = request.user as { sub: string };
 
-    if (!(await reviewInScope(request, request.params.id))) return reply.notFound("Review not found");
+    const target = await app.prisma.review.findFirst({
+      where: { id: request.params.id, ...(await reviewScope(request)) },
+      select: { userId: true, productId: true },
+    });
+    if (!target) return reply.notFound("Review not found");
 
     const replyData = await app.prisma.reviewReply.upsert({
       where: { reviewId: request.params.id },
@@ -228,6 +235,8 @@ export async function reviewRoutes(app: FastifyInstance) {
       },
       include: { user: { select: { id: true, name: true } } },
     });
+
+    notifyReviewReplied(app.fcm, app.prisma, target, body.body);
 
     const response: ApiResponse<typeof replyData> = { success: true, data: replyData };
     return response;
@@ -294,6 +303,7 @@ export async function reviewRoutes(app: FastifyInstance) {
     });
     if (!review) return reply.notFound("Review not found");
 
+    let rewardPoints = 0;
     const updated = await app.prisma.$transaction(async (tx) => {
       const result = await tx.review.update({
         where: { id: request.params.id },
@@ -321,6 +331,7 @@ export async function reviewRoutes(app: FastifyInstance) {
             },
           });
 
+          rewardPoints = loyaltyConfig.reviewRewardPoints;
           await tx.loyaltyTransaction.create({
             data: {
               userId: review.userId,
@@ -336,6 +347,8 @@ export async function reviewRoutes(app: FastifyInstance) {
 
       return result;
     });
+
+    notifyReviewModerated(app.fcm, app.prisma, review, { status: body.status, rewardPoints });
 
     const response: ApiResponse<typeof updated> = { success: true, data: updated };
     return response;

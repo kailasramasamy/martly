@@ -5,6 +5,7 @@ import { ROLE_ADDONS, effectivePermissions } from "@martly/shared/permissions";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
+import { notifyTeamMember } from "../../services/notify/team-alerts.js";
 
 interface MemberAccess {
   role: string;
@@ -61,6 +62,8 @@ export async function memberPermissionRoutes(app: FastifyInstance) {
       create: { userId: request.params.id, organizationId, permissions: addOns },
       update: { permissions: addOns },
     });
+
+    void notifyTeamMember(app.fcm, app.prisma, request.params.id, request.user.sub, { kind: "access" });
 
     const response: ApiResponse<MemberAccess> = { success: true, data: access(member.role, addOns) };
     return response;

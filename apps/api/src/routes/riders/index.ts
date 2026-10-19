@@ -6,6 +6,7 @@ import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { notifyTeamMember } from "../../services/notify/team-alerts.js";
 import { storeRiderSummary } from "../../services/delivery/rider.js";
 
 const RIDER_ROLES = { in: ["RIDER", "STAFF"] as ("RIDER" | "STAFF")[] };
@@ -109,6 +110,8 @@ export async function riderRoutes(app: FastifyInstance) {
       return user;
     });
 
+    void notifyTeamMember(app.fcm, app.prisma, rider.id, getOrgUser(request).sub, { kind: "added", storeId: body.storeId });
+
     return {
       success: true,
       data: { ...rider, tripStats: { total: 0, active: 0, completed: 0 } },
@@ -192,6 +195,8 @@ export async function riderRoutes(app: FastifyInstance) {
     await app.prisma.userStore.delete({
       where: { userId_storeId: { userId: request.params.id, storeId } },
     });
+
+    void notifyTeamMember(app.fcm, app.prisma, request.params.id, getOrgUser(request).sub, { kind: "removed", storeId });
 
     return { success: true, data: { removed: true } } satisfies ApiResponse<{ removed: boolean }>;
   });

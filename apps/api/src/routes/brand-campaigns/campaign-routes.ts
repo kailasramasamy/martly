@@ -139,7 +139,7 @@ function paymentRoutes(app: FastifyInstance, { load, detail, opts }: ReturnType<
     if (order.razorpayOrderId !== body.razorpay_order_id || !verifyRazorpaySignature(body.razorpay_order_id, body.razorpay_payment_id, body.razorpay_signature)) {
       return reply.badRequest("Payment could not be verified");
     }
-    await fulfilAdOrder(app.prisma, order.id, { paymentId: body.razorpay_payment_id });
+    await fulfilAdOrder(app.prisma, order.id, { paymentId: body.razorpay_payment_id }, app.fcm);
     return { success: true, data: await detail(campaign.id) };
   });
 }

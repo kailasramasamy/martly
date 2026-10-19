@@ -10,6 +10,7 @@ import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { CountReviewError, approveCount, correctLine, requestRecount, submitCount } from "../../services/stock-count-review.js";
+import { notifyCountReviewed, notifyCountSubmitted } from "../../services/notify/stock-alerts.js";
 import { countDetail } from "./count-view.js";
 
 const counters = [authenticate, requirePermission(Permission.STOCK_COUNT, Permission.STOCK_APPROVE)];
@@ -132,6 +133,7 @@ export async function stockCountRoutes(app: FastifyInstance) {
     if (!(await guarded(reply, () => submitCount(app.prisma, count.id, recount, request.user.sub)))) return;
     // A counter who may approve doesn't need a second person
     if (canApprove(request)) await approveCount(app.prisma, count.id, request.user.sub, undefined);
+    else void notifyCountSubmitted(app.fcm, app.prisma, count.id, request.user.sub);
     return respond(count.id, request);
   });
 
@@ -141,6 +143,7 @@ export async function stockCountRoutes(app: FastifyInstance) {
     if (!count) return;
     if (count.status !== "SUBMITTED") return reply.conflict("Only submitted counts can be approved");
     await approveCount(app.prisma, count.id, request.user.sub, note);
+    void notifyCountReviewed(app.fcm, app.prisma, count.id, "approved", request.user.sub);
     return respond(count.id, request);
   });
 
@@ -153,6 +156,7 @@ export async function stockCountRoutes(app: FastifyInstance) {
       where: { id: count.id },
       data: { status: "REJECTED", reviewedById: request.user.sub, reviewedAt: new Date(), reviewNote: note },
     });
+    void notifyCountReviewed(app.fcm, app.prisma, count.id, "rejected", request.user.sub);
     return respond(count.id, request);
   });
 
@@ -163,6 +167,7 @@ export async function stockCountRoutes(app: FastifyInstance) {
     if (!count) return;
     if (count.status !== "SUBMITTED") return reply.conflict("Only submitted counts can be sent for recount");
     if (!(await guarded(reply, () => requestRecount(app.prisma, count.id, body, request.user.sub)))) return;
+    void notifyCountReviewed(app.fcm, app.prisma, count.id, "recount", request.user.sub);
     return respond(count.id, request);
   });
 

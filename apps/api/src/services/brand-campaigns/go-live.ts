@@ -1,6 +1,7 @@
 import type { Messaging } from "firebase-admin/messaging";
 import type { FastifyBaseLogger } from "fastify";
 import type { BrandCampaign, PrismaClient } from "../../../generated/prisma/client.js";
+import { pushBrandCampaignLive } from "../notify/marketing-alerts.js";
 import { endPromo, launchPromo, PromoStateError } from "../promo/lifecycle.js";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -28,7 +29,7 @@ async function startBanner(prisma: PrismaClient, campaign: BrandCampaign) {
 }
 
 /** Organisations that take part in a brand promotion: they allow brand ads, haven't blocked or opted out, and stock the brand */
-function participatingOrgs(prisma: PrismaClient, campaign: BrandCampaign) {
+export function participatingOrgs(prisma: PrismaClient, campaign: BrandCampaign) {
   return prisma.organization.findMany({
     where: {
       allowBrandAds: true,
@@ -73,10 +74,14 @@ async function startPromotion(deps: Deps, campaign: BrandCampaign, organizationI
 export async function startCampaign(deps: Deps, campaign: BrandCampaign) {
   const { count } = await deps.prisma.brandCampaign.updateMany({ where: { id: campaign.id, status: "SCHEDULED" }, data: { status: "LIVE" } });
   if (!count) return;
-  if (!campaign.discountType) return startBanner(deps.prisma, campaign);
-  for (const { id } of await participatingOrgs(deps.prisma, campaign)) {
+  const orgs = await participatingOrgs(deps.prisma, campaign);
+  if (!campaign.discountType) await startBanner(deps.prisma, campaign);
+  for (const { id } of orgs) {
     // One organisation's failure shouldn't keep the brand's offer out of every other store
-    await startPromotion(deps, campaign, id).catch((err: unknown) => deps.log.error(err, `Brand campaign ${campaign.id}: promo for org ${id} failed`));
+    if (campaign.discountType) {
+      await startPromotion(deps, campaign, id).catch((err: unknown) => deps.log.error(err, `Brand campaign ${campaign.id}: promo for org ${id} failed`));
+    }
+    await pushBrandCampaignLive(deps.fcm, deps.prisma, campaign, id).catch((err: unknown) => deps.log.error(err, `Brand campaign ${campaign.id}: push for org ${id} failed`));
   }
 }
 

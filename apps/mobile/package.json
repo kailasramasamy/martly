@@ -12,7 +12,11 @@
   },
   "dependencies": {
     "@expo-google-fonts/cinzel": "^0.4.2",
+    "@expo-google-fonts/kalam": "^0.4.1",
+    "@expo-google-fonts/lobster": "^0.4.1",
     "@expo-google-fonts/manrope": "^0.4.2",
+    "@expo-google-fonts/playfair-display": "^0.4.2",
+    "@expo-google-fonts/yatra-one": "^0.4.1",
     "@expo/metro-runtime": "~6.1.2",
     "@martly/shared": "workspace:*",
     "@react-native-async-storage/async-storage": "2.2.0",

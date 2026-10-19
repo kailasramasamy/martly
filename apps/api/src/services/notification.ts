@@ -1,16 +1,8 @@
-import type { Messaging } from "firebase-admin/messaging";
+import type { Messaging, SendResponse } from "firebase-admin/messaging";
 import type { PrismaClient } from "../../generated/prisma/client.js";
 import type { NotificationType } from "../../generated/prisma/index.js";
 import { broadcastNotification } from "./ws-manager.js";
-
-const ORDER_STATUS_TITLES: Record<string, string> = {
-  CONFIRMED: "Order Confirmed",
-  PREPARING: "Preparing Your Order",
-  READY: "Order Ready",
-  OUT_FOR_DELIVERY: "Out for Delivery",
-  DELIVERED: "Order Delivered",
-  CANCELLED: "Order Cancelled",
-};
+import { formatINR, orderStatusCopy, type CancelledBy } from "./notify/copy.js";
 
 const ORDER_STATUS_TO_TYPE: Record<string, NotificationType> = {
   CONFIRMED: "ORDER_CONFIRMED",
@@ -20,6 +12,25 @@ const ORDER_STATUS_TO_TYPE: Record<string, NotificationType> = {
   DELIVERED: "ORDER_DELIVERED",
   CANCELLED: "ORDER_CANCELLED",
 };
+
+// Local testing on a prod-synced database: push only to these accounts (comma-separated user ids); in-app rows are unaffected
+const PUSH_ONLY = process.env.PUSH_ONLY_USER_IDS?.split(",").map((id) => id.trim()).filter(Boolean);
+const pushAllowed = (userId: string) => !PUSH_ONLY || PUSH_ONLY.includes(userId);
+
+/** iOS shows `imageUrl` only through the app's notification service extension, which needs mutable-content */
+function withImage(imageUrl: string | null | undefined) {
+  if (!imageUrl) return { apns: { aps: {} }, notification: {} };
+  return { apns: { aps: { "mutable-content": 1 }, fcmOptions: { imageUrl } }, notification: { imageUrl } };
+}
+
+const DEAD_TOKEN_CODES = ["messaging/invalid-registration-token", "messaging/registration-token-not-registered"];
+
+function isDeadToken(resp: SendResponse): boolean {
+  if (resp.success || !resp.error) return false;
+  // Older iOS builds registered raw APNs tokens, which FCM rejects as an invalid argument
+  const notFcmToken = resp.error.code === "messaging/invalid-argument" && resp.error.message.includes("not a valid FCM registration token");
+  return DEAD_TOKEN_CODES.includes(resp.error.code) || notFcmToken;
+}
 
 interface SendNotificationOptions {
   userId: string;
@@ -69,7 +80,7 @@ export async function sendNotification(
     });
 
     // 3. Send FCM push
-    if (fcm) {
+    if (fcm && pushAllowed(options.userId)) {
       const deviceTokens = await prisma.deviceToken.findMany({
         where: { userId: options.userId },
         select: { id: true, token: true },
@@ -77,29 +88,27 @@ export async function sendNotification(
 
       if (deviceTokens.length > 0) {
         const tokens = deviceTokens.map((dt) => dt.token);
+        // Updates about one order replace each other in the tray instead of stacking
+        const image = withImage(options.imageUrl);
+        const collapseId = options.data?.orderId ? `order-${options.data.orderId}-${options.type}` : undefined;
         const response = await fcm.sendEachForMulticast({
           tokens,
-          notification: { title: options.title, body: options.body },
-          ...(options.sound
-            ? { apns: { payload: { aps: { sound: "default" } } }, android: { notification: { sound: "default" } } }
-            : {}),
+          notification: { title: options.title, body: options.body, ...image.notification },
+          apns: {
+            ...(collapseId ? { headers: { "apns-collapse-id": collapseId } } : {}),
+            payload: { aps: { ...image.apns.aps, ...(options.sound ? { sound: "default" } : {}) } },
+            ...(image.apns.fcmOptions ? { fcmOptions: image.apns.fcmOptions } : {}),
+          },
+          android: {
+            ...(collapseId ? { collapseKey: collapseId } : {}),
+            notification: { ...(options.sound ? { sound: "default" } : {}), ...(collapseId ? { tag: collapseId } : {}) },
+          },
           data: options.data
             ? Object.fromEntries(Object.entries(options.data).map(([k, v]) => [k, String(v)]))
             : undefined,
         });
 
-        // Clean up invalid tokens
-        const invalidTokenIds: string[] = [];
-        response.responses.forEach((resp, idx) => {
-          if (
-            !resp.success &&
-            resp.error &&
-            (resp.error.code === "messaging/invalid-registration-token" ||
-              resp.error.code === "messaging/registration-token-not-registered")
-          ) {
-            invalidTokenIds.push(deviceTokens[idx].id);
-          }
-        });
+        const invalidTokenIds = deviceTokens.filter((_, idx) => isDeadToken(response.responses[idx])).map((dt) => dt.id);
 
         if (invalidTokenIds.length > 0) {
           await prisma.deviceToken.deleteMany({
@@ -108,39 +117,49 @@ export async function sendNotification(
         }
       }
     }
-  } catch {
-    // Never block API response on notification failure
+  } catch (err) {
+    // Never block the calling flow on a notification failure, but leave a trace
+    console.error(`sendNotification failed (${options.type} → ${options.userId})`, err);
   }
 }
 
-/**
- * Send order status notification — same signature as before for backward compatibility.
- */
+export interface OrderStatusExtra {
+  cancelledBy?: CancelledBy;
+  reason?: string | null;
+  refund?: { amount: number; to: "wallet" | "source" } | null;
+}
+
+/** Tells the customer their order moved to `newStatus`, worded for delivery vs pickup */
 export async function sendOrderStatusNotification(
   fcm: Messaging | null,
   prisma: PrismaClient,
   orderId: string,
-  userId: string,
   newStatus: string,
+  extra: OrderStatusExtra = {},
 ) {
   const type = ORDER_STATUS_TO_TYPE[newStatus];
   if (!type) return;
-
-  const title = ORDER_STATUS_TITLES[newStatus] ?? "Order Update";
-  const body = `Your order #${orderId.slice(0, 8)} has been updated to ${newStatus.replace(/_/g, " ").toLowerCase()}.`;
-
+  const order = await prisma.order.findUnique({
+    where: { id: orderId },
+    select: {
+      userId: true, fulfillmentType: true,
+      store: { select: { name: true } },
+      deliveryTrip: { select: { rider: { select: { name: true } } } },
+    },
+  });
+  if (!order) return;
+  const copy = orderStatusCopy(newStatus, {
+    orderId, fulfillmentType: order.fulfillmentType, storeName: order.store.name,
+    riderName: order.deliveryTrip?.rider?.name, ...extra,
+  });
+  if (!copy) return;
   await sendNotification(fcm, prisma, {
-    userId,
-    type,
-    title,
-    body,
-    data: { orderId, status: newStatus },
+    userId: order.userId, type, ...copy,
+    data: { screen: "order", orderId, status: newStatus },
   });
 }
 
-/**
- * Send wallet credit/debit notification.
- */
+/** Wallet credit/debit; pass `orderId` when it's an order refund so the tap opens the order */
 export async function sendWalletNotification(
   fcm: Messaging | null,
   prisma: PrismaClient,
@@ -148,45 +167,39 @@ export async function sendWalletNotification(
   walletType: "CREDIT" | "DEBIT",
   amount: number,
   description?: string,
+  orderId?: string,
 ) {
   const type: NotificationType = walletType === "CREDIT" ? "WALLET_CREDITED" : "WALLET_DEBITED";
-  const title = walletType === "CREDIT" ? "Wallet Credited" : "Wallet Debited";
-  const body = walletType === "CREDIT"
-    ? `\u20B9${amount} has been added to your wallet. ${description ?? ""}`
-    : `\u20B9${amount} has been debited from your wallet. ${description ?? ""}`;
+  const title = walletType === "CREDIT" ? "Wallet credited" : "Wallet debited";
+  const verb = walletType === "CREDIT" ? "added to" : "debited from";
+  const body = `${formatINR(amount)} has been ${verb} your wallet${description ? ` · ${description}` : "."}`;
 
   await sendNotification(fcm, prisma, {
-    userId,
-    type,
-    title,
-    body: body.trim(),
-    data: { screen: "wallet" },
+    userId, type, title, body,
+    data: orderId ? { screen: "order", orderId } : { screen: "wallet" },
   });
 }
 
-/**
- * Send loyalty points notification.
- */
+type LoyaltyEvent = "EARN" | "REDEEM" | "REVERSAL" | "ADJUST";
+
+const LOYALTY_COPY: Record<LoyaltyEvent, (points: number, reason?: string) => { title: string; body: string }> = {
+  EARN: (p, reason) => ({ title: "Points earned!", body: `You earned ${p} loyalty points${reason ? ` ${reason}` : ""}. Keep shopping to earn more!` }),
+  REDEEM: (p) => ({ title: "Points redeemed", body: `${p} loyalty points were used on your order.` }),
+  REVERSAL: (p, reason) => ({ title: "Points returned", body: `${p} loyalty points are back in your account${reason ? ` · ${reason}` : "."}` }),
+  ADJUST: (p, reason) => ({ title: "Points adjusted", body: `Your loyalty balance changed by ${p} points${reason ? ` · ${reason}` : "."}` }),
+};
+
+/** Loyalty balance change; EARN/REDEEM for shopping, REVERSAL on cancel, ADJUST for staff corrections */
 export async function sendLoyaltyNotification(
   fcm: Messaging | null,
   prisma: PrismaClient,
   userId: string,
-  loyaltyType: "EARN" | "REDEEM",
+  event: LoyaltyEvent,
   points: number,
+  reason?: string,
 ) {
-  const type: NotificationType = loyaltyType === "EARN" ? "LOYALTY_POINTS_EARNED" : "LOYALTY_POINTS_REDEEMED";
-  const title = loyaltyType === "EARN" ? "Points Earned!" : "Points Redeemed";
-  const body = loyaltyType === "EARN"
-    ? `You earned ${points} loyalty points. Keep shopping to earn more!`
-    : `${points} loyalty points have been redeemed.`;
-
-  await sendNotification(fcm, prisma, {
-    userId,
-    type,
-    title,
-    body,
-    data: { screen: "loyalty" },
-  });
+  const type: NotificationType = event === "REDEEM" || (event === "ADJUST" && points < 0) ? "LOYALTY_POINTS_REDEEMED" : "LOYALTY_POINTS_EARNED";
+  await sendNotification(fcm, prisma, { userId, type, ...LOYALTY_COPY[event](points, reason), data: { screen: "loyalty" } });
 }
 
 const DB_BATCH_SIZE = 100;
@@ -250,8 +263,8 @@ export async function sendCampaignNotifications(
   // 3. Send FCM push in batches of 500 (FCM multicast limit)
   if (fcm) {
     const allTokens = await prisma.deviceToken.findMany({
-      where: { userId: { in: userIds } },
-      select: { token: true },
+      where: { userId: { in: userIds.filter(pushAllowed) } },
+      select: { id: true, token: true },
     });
 
     if (allTokens.length > 0) {
@@ -259,13 +272,22 @@ export async function sendCampaignNotifications(
         ? Object.fromEntries(Object.entries(options.data).map(([k, v]) => [k, String(v)]))
         : undefined;
 
+      const image = withImage(options.imageUrl);
       for (let i = 0; i < allTokens.length; i += FCM_BATCH_SIZE) {
         const tokenBatch = allTokens.slice(i, i + FCM_BATCH_SIZE);
-        fcm.sendEachForMulticast({
+        // The in-app rows are already saved; a failed push batch is logged, not fatal to the campaign
+        const response = await fcm.sendEachForMulticast({
           tokens: tokenBatch.map((t) => t.token),
-          notification: { title: options.title, body: options.body },
+          notification: { title: options.title, body: options.body, ...image.notification },
+          apns: { payload: { aps: image.apns.aps }, ...(image.apns.fcmOptions ? { fcmOptions: image.apns.fcmOptions } : {}) },
           data: fcmData,
-        }).catch(() => {});
+        }).catch((err: unknown) => {
+          console.error(`Campaign ${campaignId} push batch failed`, err);
+          return null;
+        });
+        if (!response) continue;
+        const dead = tokenBatch.filter((_, idx) => isDeadToken(response.responses[idx])).map((t) => t.id);
+        if (dead.length > 0) await prisma.deviceToken.deleteMany({ where: { id: { in: dead } } });
       }
     }
   }

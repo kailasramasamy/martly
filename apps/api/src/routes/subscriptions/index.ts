@@ -14,7 +14,7 @@ import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess, requireOrgContext } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
-import { sendNotification } from "../../services/notification.js";
+import { notifySubscriptionCancelled, notifySubscriptionCreated } from "../../services/notify/subscription-alerts.js";
 import { calculateNextDeliveryDate, advanceNextDeliveryDate, isDeliveryDay } from "../../utils/subscription-dates.js";
 import { todayIST, tomorrowIST, endOfDayUTC, parseDate, formatDate } from "../../utils/timezone.js";
 
@@ -101,13 +101,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
       return sub;
     });
 
-    sendNotification(app.fcm, app.prisma, {
-      userId: user.sub,
-      type: "GENERAL",
-      title: "Subscription Created",
-      body: `Your ${body.frequency.replace(/_/g, " ").toLowerCase()} subscription has been set up. First delivery on ${nextDeliveryDate.toLocaleDateString()}.`,
-      data: { screen: "subscriptions", subscriptionId: subscription.id },
-    });
+    void notifySubscriptionCreated({ fcm: app.fcm, prisma: app.prisma }, user.sub, subscription.id, body.frequency, nextDeliveryDate);
 
     const response: ApiResponse<typeof subscription> = { success: true, data: subscription };
     return response;
@@ -315,13 +309,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
       data: { status: "CANCELLED" },
     });
 
-    sendNotification(app.fcm, app.prisma, {
-      userId: user.sub,
-      type: "GENERAL",
-      title: "Subscription Cancelled",
-      body: "Your subscription has been cancelled. You can create a new one anytime.",
-      data: { screen: "subscriptions" },
-    });
+    void notifySubscriptionCancelled({ fcm: app.fcm, prisma: app.prisma }, user.sub, subscription.id);
 
     const response: ApiResponse<typeof subscription> = { success: true, data: subscription };
     return response;

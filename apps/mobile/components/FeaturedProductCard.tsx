@@ -49,6 +49,8 @@ interface FeaturedProductCardProps {
   isMember?: boolean;
   // Grid usage: explicit card width (rails default to FEATURED_CARD_WIDTH with a right margin)
   width?: number;
+  // White card with a soft shadow and a white photo tile, so products stand out on a coloured screen
+  elevated?: boolean;
   // 3-column search layout: smaller card, "N options" instead of the sizes row
   compact?: boolean;
   // Called as the product page opens (search result tracking)
@@ -56,13 +58,13 @@ interface FeaturedProductCardProps {
 }
 
 // A square photo tile with ADD in its bottom-right corner, Zepto-style
-function CardImage({ item, primaryId, size, isOutOfStock, isWishlisted, onHeart, pager, control }: {
+function CardImage({ item, primaryId, size, isOutOfStock, isWishlisted, onHeart, pager, control, elevated }: {
   item: StoreProduct; primaryId: string; size: number; isOutOfStock: boolean; isWishlisted?: boolean; onHeart?: () => void;
-  pager?: React.ReactNode; control: React.ReactNode;
+  pager?: React.ReactNode; control: React.ReactNode; elevated?: boolean;
 }) {
   const productImage = sizeImage(item, primaryId);
   return (
-    <View style={[styles.imageContainer, { width: size, height: size }]}>
+    <View style={[styles.imageContainer, { width: size, height: size }, elevated && styles.imageElevated]}>
       {pager ?? (productImage ? (
         <Image source={{ uri: productImage }} style={styles.image} resizeMode="contain" />
       ) : (
@@ -211,7 +213,7 @@ function useFollowCartSize(sizes: StoreProduct[], selectedId: string, select: (i
 }
 
 function StandardCard(props: FeaturedProductCardProps) {
-  const { onAddToCart, onUpdateQuantity, storeId, onShowVariants, isWishlisted, onToggleWishlist, isMember, width } = props;
+  const { onAddToCart, onUpdateQuantity, storeId, onShowVariants, isWishlisted, onToggleWishlist, isMember, width, elevated } = props;
   const sizes = bySize(props.variants ?? [props.item]);
   const [selectedId, setSelectedId] = useState(props.item.id);
   useFollowCartSize(sizes, selectedId, setSelectedId, props.quantityOf);
@@ -226,8 +228,13 @@ function StandardCard(props: FeaturedProductCardProps) {
   const { openProduct, heartTapped } = useOpenProduct(item.product.id, storeId, props.onOpen);
 
   return (
-    <TouchableOpacity style={[styles.card, { width: cardWidth }, width != null && styles.gridCard]} onPress={openProduct} activeOpacity={0.8}>
+    <TouchableOpacity
+      style={[styles.card, { width: cardWidth }, width != null && styles.gridCard, elevated && styles.elevated]}
+      onPress={openProduct}
+      activeOpacity={0.8}
+    >
       <CardImage
+        elevated={elevated}
         item={item}
         size={tile}
         isOutOfStock={isOutOfStock}
@@ -247,7 +254,7 @@ function StandardCard(props: FeaturedProductCardProps) {
           />
         }
       />
-      <View style={styles.content}>
+      <View style={[styles.content, elevated && styles.contentElevated]}>
         <Text style={styles.unit} numberOfLines={2}>{item.variant.name}</Text>
         <PriceBlock item={item} isMember={isMember} saving={packSaving(item, sizes)} />
         <CardDetails item={item} lowStock={isLowStock ? available : null} />
@@ -263,6 +270,12 @@ export function FeaturedProductCard(props: FeaturedProductCardProps) {
 const styles = StyleSheet.create({
   card: { marginRight: CARD_GAP },
   gridCard: { marginRight: 0, marginBottom: GRID_GAP + 4 },
+  elevated: {
+    backgroundColor: "#ffffff", borderRadius: 16,
+    shadowColor: "#0f172a", shadowOpacity: 0.08, shadowRadius: 10, shadowOffset: { width: 0, height: 4 }, elevation: 3,
+  },
+  imageElevated: { backgroundColor: "#ffffff" },
+  contentElevated: { paddingHorizontal: 10, paddingBottom: 10 },
   imageContainer: {
     backgroundColor: "#f3f5f8",
     borderRadius: 12,
@@ -298,8 +311,8 @@ const styles = StyleSheet.create({
   price: { fontFamily: fonts.extrabold, fontSize: 17, color: colors.text },
   mrp: { fontFamily: fonts.medium, fontSize: 11, color: "#94a3b8", textDecorationLine: "line-through" },
   // Sale info in the offers amber, apart from the price
-  offTag: { alignSelf: "flex-start", backgroundColor: colors.accent, borderRadius: 4, paddingHorizontal: 5, paddingVertical: 1, marginTop: 3 },
-  off: { fontFamily: fonts.extrabold, fontSize: 10.5, color: colors.accentText },
+  offTag: { alignSelf: "flex-start", backgroundColor: colors.salePill, borderRadius: 4, paddingHorizontal: 5, paddingVertical: 1, marginTop: 3 },
+  off: { fontFamily: fonts.extrabold, fontSize: 11, letterSpacing: 0.2, color: colors.salePillText },
   memberHint: { fontFamily: fonts.bold, fontSize: 9.5, color: "#b45309", marginTop: 1 },
   saving: { fontFamily: fonts.bold, fontSize: 10, color: "#15803d", marginTop: 1 },
   addBtn: {

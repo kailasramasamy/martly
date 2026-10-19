@@ -8,6 +8,7 @@ import { sectionTitle } from "../../theme";
 import { AiBannerCard } from "./ai-banner-card";
 import { HomeHeroCard } from "./home-hero-card";
 import { CuratedItemsCard } from "./curated-items-card";
+import { ShowOnHomeCard } from "./show-on-home-card";
 
 export const CollectionEdit = () => {
   const { formProps, saveButtonProps, queryResult } = useForm({
@@ -101,6 +102,7 @@ export const CollectionEdit = () => {
                 <CuratedItemsCard items={record?.items ?? []} />
               </Form.Item>
             )}
+            {record && <ShowOnHomeCard collection={record} />}
           </Col>
         </Row>
       </Form>

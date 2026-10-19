@@ -16,17 +16,22 @@ const TileSchema = z.object({
 });
 
 const HeroSchema = z.object({
-  heroTitle: z.string().describe("2-3 word celebratory invitation, e.g. 'Celebrate Navratri', 'Diwali Ready', 'Monsoon Ready'; not a collection name"),
+  heroTitle: z.string().describe("2-3 word celebratory invitation in Title Case (never all capitals), e.g. 'Celebrate Navratri', 'Diwali Ready', 'Monsoon Ready'; not a collection name"),
   heroTitleTa: z.string().describe("natural Tamil headline"),
-  backgroundPrompt: z.string().describe("the decorative artwork for the top of the background, without any text"),
-  washColor: z.string().describe("hex colour of the pale wash filling the lower background, e.g. '#fff3d6'"),
-  titleColor: z.string().describe("hex colour for the headline, strongly contrasting with the wash, e.g. '#9f1239'"),
+  heroKicker: z.string().describe("short line above the headline, 2-5 words, Sentence case, e.g. 'Nine nights of devotion'"),
+  heroKickerTa: z.string().describe("natural Tamil kicker"),
+  heroSubtitle: z.string().describe("one line under the headline, 4-9 words, Sentence case, what shoppers get, e.g. 'Fasting staples, pooja needs and sweets'"),
+  heroSubtitleTa: z.string().describe("natural Tamil subtitle"),
+  silhouetteScene: z.string().describe("the festive silhouette strip's motifs, e.g. 'garba dancers twirling dandiya sticks, hanging diyas, string lights and marigold torans'"),
+  font: z.enum(["PLAYFAIR", "YATRA", "KALAM", "LOBSTER"]).describe("headline typeface that suits the festival"),
+  themeColor: z.string().describe("hex of the deep, rich festive colour filling the whole block, white text must read on it, e.g. '#1f7a4d'"),
   tiles: z.array(TileSchema).describe(`exactly ${MAX_TILES} tiles, or ${GRID_COLUMNS} if the catalog only supports a few themes`),
 });
 export type HeroDesign = z.infer<typeof HeroSchema>;
 
 const SYSTEM = `You design the festive top section of the home screen of Martly, a grocery delivery app for neighbourhood
-stores in India. The section is a decorated background with a headline and a 3-column grid of shopping tiles.
+stores in India. The section is a solid festive colour with a silhouette strip carrying a three-line greeting (kicker, headline,
+subtitle), then a 3-column grid of shopping tiles.
 
 Group the in-stock subcategories shoppers will buy for the occasion into ${MAX_TILES} themed tiles (${GRID_COLUMNS} if only a few
 themes are credible), most important first: rituals and pooja, festive cooking, sweets and snacks, gifting, decor,
@@ -36,10 +41,15 @@ guidance strictly; never pick alcohol, tobacco, or anything out of place for the
 Each tile's artPrompt names 2-4 physical items that read instantly at thumbnail size: generic products and
 festival props only, never brand packaging, logos, text, or people.
 
-backgroundPrompt describes flat, premium vector-style festive ornamentation for the top quarter of a tall phone
-background (torans, hanging lamps, rangoli motifs, flowers, the season's weather), in the festival's own colours,
-fading into a calm pale wash that fills the rest. washColor is that wash; keep it light so dark text and white
-tiles sit on it cleanly. titleColor is a deep festive colour that reads strongly on the wash.
+The whole block (greeting, search bar, a thin silhouette strip, headline and tiles) sits on one solid themeColor:
+a deep, saturated colour that suits the festival (e.g. Navratri green or magenta, Diwali maroon, Christmas pine)
+and that white text reads clearly on. silhouetteScene lists the motifs for a wide, low strip of tone-on-tone
+silhouettes between the search bar and the tiles: people celebrating, lamps, string lights, torans, the season's
+weather. It is drawn in lighter and darker shades of the theme colour, so describe shapes, not colours.
+
+font sets the headline's character: PLAYFAIR (elegant serif; the safe default, good for most festivals and seasons),
+YATRA (Indian, Devanagari-inspired display; Navratri, Diwali, Dussehra, Ganesh Chaturthi), KALAM (warm handwriting;
+Raksha Bandhan, Pongal, Onam, Mother's Day), LOBSTER (playful script; Christmas, New Year, Holi, summer fun).
 
 Write the Tamil copy in everyday native Tamil words rather than English words spelled in Tamil script.`;
 

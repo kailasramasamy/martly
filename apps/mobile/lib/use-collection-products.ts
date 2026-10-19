@@ -4,7 +4,8 @@ import type { CollectionHeader, CollectionProductsResponse, StoreProduct } from 
 
 const PAGE_SIZE = 20;
 
-export function useCollectionProducts(collectionId: string, storeId: string | undefined) {
+/** `subcategoryIds` (comma-separated) narrows the collection to those aisles, as a campaign tile does */
+export function useCollectionProducts(collectionId: string, storeId: string | undefined, subcategoryIds?: string) {
   const [collection, setCollection] = useState<CollectionHeader | null>(null);
   const [products, setProducts] = useState<StoreProduct[]>([]);
   const [loading, setLoading] = useState(true);
@@ -17,9 +18,10 @@ export function useCollectionProducts(collectionId: string, storeId: string | un
   const fetchPage = useCallback(
     (p: number) =>
       api.getList<StoreProduct>(
-        `/api/v1/collections/${collectionId}/products?storeId=${storeId}&page=${p}&pageSize=${PAGE_SIZE}`,
+        `/api/v1/collections/${collectionId}/products?storeId=${storeId}&page=${p}&pageSize=${PAGE_SIZE}`
+          + (subcategoryIds ? `&subcategoryIds=${encodeURIComponent(subcategoryIds)}` : ""),
       ) as Promise<CollectionProductsResponse>,
-    [collectionId, storeId],
+    [collectionId, storeId, subcategoryIds],
   );
 
   useEffect(() => {

@@ -8,34 +8,18 @@ import {
   TouchableOpacity,
   RefreshControl,
 } from "react-native";
-import { useRouter } from "expo-router";
+import { useRouter, useLocalSearchParams, Stack } from "expo-router";
+import { notificationAudience, type NotificationAudience } from "@martly/shared/constants";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { colors, spacing } from "../constants/theme";
 import { resolveNotificationDeepLink } from "../lib/notification-helpers";
+import { usePersona } from "../lib/persona-context";
+import { notificationTypeStyle } from "../lib/notification-types";
 import { useNotifications } from "../lib/notification-context";
 import { NotificationDetailSheet } from "../components/NotificationDetailSheet";
 import type { AppNotification } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
-
-const TYPE_CONFIG: Record<string, { icon: keyof typeof Ionicons.glyphMap; bg: string; color: string }> = {
-  ORDER_CONFIRMED: { icon: "checkmark-circle", bg: "#dbeafe", color: "#2563eb" },
-  ORDER_PREPARING: { icon: "restaurant", bg: "#ffedd5", color: "#ea580c" },
-  ORDER_READY: { icon: "bag-check", bg: "#e0e7ff", color: "#4f46e5" },
-  ORDER_OUT_FOR_DELIVERY: { icon: "bicycle", bg: "#f3e8ff", color: "#7c3aed" },
-  ORDER_DELIVERED: { icon: "checkmark-done-circle", bg: "#dcfce7", color: "#16a34a" },
-  ORDER_CANCELLED: { icon: "close-circle", bg: "#fee2e2", color: "#dc2626" },
-  WALLET_CREDITED: { icon: "wallet", bg: "#ccfbf1", color: colors.primary },
-  WALLET_DEBITED: { icon: "wallet-outline", bg: "#ccfbf1", color: colors.primary },
-  LOYALTY_POINTS_EARNED: { icon: "star", bg: "#fef3c7", color: "#d97706" },
-  LOYALTY_POINTS_REDEEMED: { icon: "star-outline", bg: "#fef3c7", color: "#d97706" },
-  PROMOTIONAL: { icon: "megaphone", bg: "#fce7f3", color: "#db2777" },
-  GENERAL: { icon: "information-circle", bg: "#f1f5f9", color: "#475569" },
-  WELCOME: { icon: "sparkles", bg: "#e0f2fe", color: "#0284c7" },
-  REVIEW_REQUEST: { icon: "chatbubble-ellipses", bg: "#fff7ed", color: "#d97706" },
-};
-
-const DEFAULT_CONFIG = { icon: "notifications" as keyof typeof Ionicons.glyphMap, bg: "#f1f5f9", color: "#64748b" };
 
 function relativeTime(dateStr: string): string {
   const now = Date.now();
@@ -54,7 +38,14 @@ function relativeTime(dateStr: string): string {
 
 function NotificationsScreen() {
   const router = useRouter();
-  const { decrementUnread, resetUnreadCount } = useNotifications();
+  const params = useLocalSearchParams<{ audience?: string }>();
+  const { persona } = usePersona();
+  const audience: NotificationAudience =
+    params.audience === "staff" || params.audience === "customer"
+      ? params.audience
+      : persona === "manage" ? "staff" : "customer";
+  const { unreadCount: customerUnread, staffUnreadCount, decrementUnread, resetUnread, onNew } = useNotifications();
+  const unreadCount = audience === "staff" ? staffUnreadCount : customerUnread;
   const [notifications, setNotifications] = useState<AppNotification[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -65,7 +56,7 @@ function NotificationsScreen() {
 
   const fetchNotifications = useCallback(async (pageNum: number, replace: boolean) => {
     try {
-      const res = await api.getList<AppNotification>(`/api/v1/notifications?page=${pageNum}&pageSize=20`);
+      const res = await api.getList<AppNotification>(`/api/v1/notifications?page=${pageNum}&pageSize=20&audience=${audience}`);
       const items = res.data;
       if (replace) {
         setNotifications(items);
@@ -80,11 +71,16 @@ function NotificationsScreen() {
       setRefreshing(false);
       setLoadingMore(false);
     }
-  }, []);
+  }, [audience]);
 
   useEffect(() => {
     fetchNotifications(1, true);
   }, [fetchNotifications]);
+
+  useEffect(() => onNew((incoming) => {
+    if (notificationAudience(incoming.type) !== audience) return;
+    setNotifications((prev) => (prev.some((n) => n.id === incoming.id) ? prev : [incoming, ...prev]));
+  }), [onNew, audience]);
 
   const handleRefresh = useCallback(() => {
     setRefreshing(true);
@@ -102,13 +98,13 @@ function NotificationsScreen() {
 
   const handleMarkAllRead = useCallback(async () => {
     try {
-      await api.patch("/api/v1/notifications/read-all");
+      await api.patch(`/api/v1/notifications/read-all?audience=${audience}`);
       setNotifications((prev) => prev.map((n) => ({ ...n, isRead: true })));
-      resetUnreadCount(0);
+      resetUnread(audience);
     } catch {
       // silently fail
     }
-  }, [resetUnreadCount]);
+  }, [audience, resetUnread]);
 
   const handleTap = useCallback((notification: AppNotification) => {
     // Mark as read optimistically
@@ -117,20 +113,18 @@ function NotificationsScreen() {
         prev.map((n) => (n.id === notification.id ? { ...n, isRead: true } : n)),
       );
       api.patch(`/api/v1/notifications/${notification.id}/read`).catch(() => {});
-      decrementUnread();
+      decrementUnread(audience);
     }
 
     setSelected(notification);
-  }, [decrementUnread]);
+  }, [audience, decrementUnread]);
 
   const handleSheetAction = useCallback(() => {
     if (!selected) return;
-    const target = resolveNotificationDeepLink(selected.data as Record<string, unknown> | null);
+    const target = resolveNotificationDeepLink(selected.data, selected.type);
     setSelected(null);
     router.push(target);
   }, [selected, router]);
-
-  const unreadCount = notifications.filter((n) => !n.isRead).length;
 
   if (loading) {
     return (
@@ -141,7 +135,7 @@ function NotificationsScreen() {
   }
 
   const renderNotification = ({ item }: { item: AppNotification }) => {
-    const config = TYPE_CONFIG[item.type] ?? DEFAULT_CONFIG;
+    const config = notificationTypeStyle(item.type);
 
     return (
       <TouchableOpacity
@@ -164,9 +158,11 @@ function NotificationsScreen() {
     );
   };
 
+  const isStaff = audience === "staff";
+
   return (
     <View style={styles.container}>
-      {/* Mark All Read bar */}
+      <Stack.Screen options={{ title: isStaff ? "Alerts" : "Notifications" }} />
       {unreadCount > 0 && (
         <View style={styles.topBar}>
           <Text style={styles.topBarText}>{unreadCount} unread</Text>
@@ -203,9 +199,9 @@ function NotificationsScreen() {
             <View style={styles.emptyIconCircle}>
               <Ionicons name="notifications-off-outline" size={40} color="#94a3b8" />
             </View>
-            <Text style={styles.emptyTitle}>No notifications yet</Text>
+            <Text style={styles.emptyTitle}>{isStaff ? "No alerts yet" : "No notifications yet"}</Text>
             <Text style={styles.emptySubtitle}>
-              We'll notify you about orders, offers, and more
+              {isStaff ? "New orders, stock and team alerts show up here" : "We'll notify you about orders, offers, and more"}
             </Text>
           </View>
         }

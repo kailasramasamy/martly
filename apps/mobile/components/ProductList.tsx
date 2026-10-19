@@ -21,6 +21,8 @@ interface ProductListProps extends PassThroughProps {
   numColumns?: 2 | 3;
   /** Full-width element rendered between grid rows; `bleed` is the list's horizontal padding it cancels */
   midSlot?: { afterRows: number; element: ReactElement | null; bleed?: number };
+  /** White, shadowed cards that stand out on a coloured screen */
+  elevated?: boolean;
 }
 
 type GridRowItem = { key: string; products?: StoreProduct[] };
@@ -42,7 +44,7 @@ function buildGridRows(products: StoreProduct[], columns: number, afterRows: num
  * which supplies cart/wishlist actions and the size picker.
  */
 export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(function ProductList(
-  { products, layout, cardWidth, sortBy, numColumns = 2, midSlot, contentContainerStyle, ...listProps },
+  { products, layout, cardWidth, sortBy, numColumns = 2, midSlot, elevated, contentContainerStyle, ...listProps },
   ref,
 ) {
   const actions = useProductActions();
@@ -76,9 +78,10 @@ export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(
         isWishlisted={actions.isWishlisted(item.product.id)}
         onToggleWishlist={actions.toggleWishlist}
         isMember={actions.isMember}
+        elevated={elevated}
       />
     );
-  }, [variantsByProductId, actions, layout, cardWidth, numColumns]);
+  }, [variantsByProductId, actions, layout, cardWidth, numColumns, elevated]);
 
   const renderItem = useCallback(({ item }: { item: StoreProduct }) => renderCard(item), [renderCard]);
 

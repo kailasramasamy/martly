@@ -1,10 +1,10 @@
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { prepareBanner, uploadBanner } from "./banner-art.js";
-import { heroTheme, MAX_ORNAMENT_DEPTH, prepareHeroBackground, prepareTileArt, uploadHeroArt, type HeroTheme } from "./hero-art.js";
+import { prepareStrip, prepareTileArt, uploadHeroArt, type HeroTheme } from "./hero-art.js";
 import { bannerFields } from "./index.js";
 
 // Admin uploads replace generated art through the same preparation as the generator, so a hand-picked image
-// lays out exactly like a generated one: cropped, trimmed and (for the hero) re-measured
+// lays out exactly like a generated one: cropped, trimmed and (for the hero strip) recoloured to the theme
 
 export class ArtReplaceError extends Error {}
 
@@ -31,15 +31,12 @@ export async function replaceBannerImage(prisma: PrismaClient, collection: Banne
   return art;
 }
 
-/** Swaps the hero background and re-measures it, so the headline and fade fit the new art. */
+/** Swaps the hero's silhouette strip, recolouring the upload into tones of the hero's theme colour. */
 export async function replaceHeroBackground(prisma: PrismaClient, collection: { id: string; slug: string; heroTheme: unknown }, image: Buffer) {
-  const current = collection.heroTheme as HeroTheme | null;
-  if (!current) throw new ArtReplaceError("This collection has no festive hero");
-  const background = await prepareHeroBackground(image);
-  const [heroImageUrl, measured] = await Promise.all([uploadHeroArt(background, collection.slug, "bg"), heroTheme(background, current.title)]);
-  // A busy upload can't push the tiles below the fold any more than generated art can
-  const theme = { ...measured, ornamentDepth: Math.min(measured.ornamentDepth, MAX_ORNAMENT_DEPTH) };
-  await prisma.collection.update({ where: { id: collection.id }, data: { heroImageUrl, heroTheme: theme } });
+  const theme = collection.heroTheme as HeroTheme | null;
+  if (!theme) throw new ArtReplaceError("This collection has no festive hero");
+  const heroImageUrl = await uploadHeroArt(await prepareStrip(image, theme.background), collection.slug, "strip");
+  await prisma.collection.update({ where: { id: collection.id }, data: { heroImageUrl } });
   return { heroImageUrl, heroTheme: theme };
 }
 

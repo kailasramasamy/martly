@@ -5,6 +5,7 @@ import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { notifyStoreRating } from "../../services/notify/service-alerts.js";
 
 export async function storeRatingRoutes(app: FastifyInstance) {
   // POST / - Create store rating (customer, order must be DELIVERED)
@@ -42,6 +43,8 @@ export async function storeRatingRoutes(app: FastifyInstance) {
         comment: body.comment,
       },
     });
+
+    notifyStoreRating(app.fcm, app.prisma, rating);
 
     const response: ApiResponse<typeof rating> = { success: true, data: rating };
     return response;

@@ -2,6 +2,7 @@ import type { FastifyInstance } from "fastify";
 import fp from "fastify-plugin";
 import { resolveAudience } from "../services/audience-resolver.js";
 import { sendCampaignNotifications } from "../services/notification.js";
+import { notifyCampaignOutcome } from "../services/notify/marketing-alerts.js";
 
 async function notificationSchedulerPlugin(app: FastifyInstance) {
   const INTERVAL_MS = 60_000; // 60 seconds
@@ -54,12 +55,14 @@ async function notificationSchedulerPlugin(app: FastifyInstance) {
           });
 
           app.log.info(`Scheduled campaign ${campaign.id} sent to ${userIds.length} users`);
+          await notifyCampaignOutcome(app.fcm, app.prisma, campaign, userIds.length);
         } catch (err) {
           app.log.error(err, `Failed to process scheduled campaign ${campaign.id}`);
           await app.prisma.notificationCampaign.update({
             where: { id: campaign.id },
             data: { status: "FAILED" },
           });
+          await notifyCampaignOutcome(app.fcm, app.prisma, campaign, null);
         }
       }
     } catch (err) {

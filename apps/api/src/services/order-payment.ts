@@ -1,6 +1,8 @@
 import type { FastifyInstance } from "fastify";
-import { createRazorpayOrder, ensureRazorpayCustomer } from "./payment.js";
-import { sendOrderStatusNotification } from "./notification.js";
+import { createRazorpayOrder, ensureRazorpayCustomer, refundRazorpayPayment } from "./payment.js";
+import { sendNotification, sendOrderStatusNotification } from "./notification.js";
+import { formatINR, formatOrderRef } from "./notify/copy.js";
+import { notifyStaff } from "./notify/staff.js";
 import { broadcastOrderUpdate } from "./order-broadcast.js";
 import { notifyStaffOfNewOrder } from "./staff-alerts.js";
 
@@ -35,7 +37,8 @@ export async function prepareOrderPayment(app: FastifyInstance, orderId: string,
 /** Marks an order paid and auto-confirms it; safe to call repeatedly (checkout verify, status poll and webhook race) */
 export async function settleOrderPayment(app: FastifyInstance, orderId: string, paymentId: string) {
   const order = await app.prisma.order.findUniqueOrThrow({ where: { id: orderId } });
-  if (order.paymentStatus === "PAID") return order;
+  if (order.paymentStatus === "PAID" || order.paymentStatus === "REFUNDED") return order;
+  if (order.status === "CANCELLED") return refundLatePayment(app, order, paymentId);
 
   const updated = await app.prisma.$transaction(async (tx) => {
     // Conditional update so a concurrent verify/poll/webhook settles the order only once
@@ -60,9 +63,47 @@ export async function settleOrderPayment(app: FastifyInstance, orderId: string, 
   if (!updated) return app.prisma.order.findUniqueOrThrow({ where: { id: order.id } });
 
   if (order.status === "PENDING") {
-    sendOrderStatusNotification(app.fcm, app.prisma, order.id, order.userId, "CONFIRMED");
+    sendOrderStatusNotification(app.fcm, app.prisma, order.id, "CONFIRMED");
   }
   broadcastOrderUpdate(app.prisma, order.id, updated.status);
   notifyStaffOfNewOrder(app.fcm, app.prisma, order.id);
   return updated;
+}
+
+type PaidOrder = { id: string; userId: string; storeId: string; totalAmount: { toNumber(): number }; walletAmountUsed: { toNumber(): number } | null };
+
+/**
+ * Money arrived for an order that was already cancelled (customer paid in a stale checkout, or the
+ * payment-expiry job won the race): record it, refund it to the source and tell the customer and owners.
+ */
+async function refundLatePayment(app: FastifyInstance, order: PaidOrder, paymentId: string) {
+  const { count } = await app.prisma.order.updateMany({
+    where: { id: order.id, paymentStatus: { notIn: ["PAID", "REFUNDED"] } },
+    data: { paymentStatus: "PAID", razorpayPaymentId: paymentId },
+  });
+  if (count === 0) return app.prisma.order.findUniqueOrThrow({ where: { id: order.id } });
+
+  const ref = formatOrderRef(order.id);
+  const amount = formatINR(order.totalAmount.toNumber() - (order.walletAmountUsed?.toNumber() ?? 0));
+  const refunded = await refundRazorpayPayment(paymentId).then(() => true, (err: unknown) => {
+    app.log.error(err, `Refund of late payment ${paymentId} for cancelled order ${order.id} failed`);
+    return false;
+  });
+  if (refunded) {
+    await app.prisma.order.update({ where: { id: order.id }, data: { paymentStatus: "REFUNDED" } });
+    sendNotification(app.fcm, app.prisma, {
+      userId: order.userId, type: "PAYMENT", title: "Payment refunded",
+      body: `Order ${ref} was already cancelled, so your payment of ${amount} is being refunded to your original payment method.`,
+      data: { screen: "order", orderId: order.id },
+    });
+  }
+  notifyStaff(app.fcm, app.prisma, order.storeId, { permissions: ["FINANCE_MANAGE"], escalation: true }, {
+    type: "STAFF_ORDER",
+    title: refunded ? "Payment refunded on cancelled order" : "Refund needed on cancelled order",
+    body: refunded
+      ? `${amount} arrived for cancelled order ${ref} and was refunded automatically.`
+      : `${amount} arrived for cancelled order ${ref}. The automatic refund failed — refund payment ${paymentId} in Razorpay.`,
+    data: { screen: "manage-order", orderId: order.id },
+  });
+  return app.prisma.order.findUniqueOrThrow({ where: { id: order.id } });
 }

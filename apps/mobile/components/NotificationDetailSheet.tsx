@@ -15,35 +15,11 @@ import { Ionicons } from "@expo/vector-icons";
 import Markdown from "react-native-markdown-display";
 import type { AppNotification } from "../lib/types";
 import { colors } from "../constants/theme";
+import { notificationDeepLink } from "../lib/notification-helpers";
+import { notificationTypeStyle } from "../lib/notification-types";
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("window");
 const SHEET_MAX = SCREEN_HEIGHT * 0.78;
-
-const TYPE_CONFIG: Record<
-  string,
-  { icon: keyof typeof Ionicons.glyphMap; bg: string; color: string }
-> = {
-  ORDER_CONFIRMED: { icon: "checkmark-circle", bg: "#dbeafe", color: "#2563eb" },
-  ORDER_PREPARING: { icon: "restaurant", bg: "#ffedd5", color: "#ea580c" },
-  ORDER_READY: { icon: "bag-check", bg: "#e0e7ff", color: "#4f46e5" },
-  ORDER_OUT_FOR_DELIVERY: { icon: "bicycle", bg: "#f3e8ff", color: "#7c3aed" },
-  ORDER_DELIVERED: { icon: "checkmark-done-circle", bg: "#dcfce7", color: "#16a34a" },
-  ORDER_CANCELLED: { icon: "close-circle", bg: "#fee2e2", color: "#dc2626" },
-  WALLET_CREDITED: { icon: "wallet", bg: "#ccfbf1", color: colors.primary },
-  WALLET_DEBITED: { icon: "wallet-outline", bg: "#ccfbf1", color: colors.primary },
-  LOYALTY_POINTS_EARNED: { icon: "star", bg: "#fef3c7", color: "#d97706" },
-  LOYALTY_POINTS_REDEEMED: { icon: "star-outline", bg: "#fef3c7", color: "#d97706" },
-  PROMOTIONAL: { icon: "megaphone", bg: "#fce7f3", color: "#db2777" },
-  GENERAL: { icon: "information-circle", bg: "#f1f5f9", color: "#475569" },
-  WELCOME: { icon: "sparkles", bg: "#e0f2fe", color: "#0284c7" },
-  REVIEW_REQUEST: { icon: "chatbubble-ellipses", bg: "#fff7ed", color: "#d97706" },
-};
-
-const DEFAULT_CONFIG = {
-  icon: "notifications" as keyof typeof Ionicons.glyphMap,
-  bg: "#f1f5f9",
-  color: "#64748b",
-};
 
 function relativeTime(dateStr: string): string {
   const now = Date.now();
@@ -61,17 +37,6 @@ function relativeTime(dateStr: string): string {
     day: "numeric",
     month: "short",
   });
-}
-
-function hasDeepLink(data: Record<string, unknown> | null | undefined): boolean {
-  if (!data) return false;
-  return !!(
-    data.orderId ||
-    data.productId ||
-    data.categoryId ||
-    data.storeId ||
-    data.screen
-  );
 }
 
 interface Props {
@@ -124,8 +89,8 @@ export function NotificationDetailSheet({
 
   if (!notification) return null;
 
-  const config = TYPE_CONFIG[notification.type] ?? DEFAULT_CONFIG;
-  const showAction = hasDeepLink(notification.data);
+  const config = notificationTypeStyle(notification.type);
+  const showAction = notificationDeepLink(notification.data) !== null;
 
   return (
     <View style={styles.overlay} pointerEvents={visible ? "auto" : "none"}>

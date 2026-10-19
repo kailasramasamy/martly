@@ -1,0 +1,84 @@
+# Home sections (Zepto-style Home, Phase 1)
+
+The customer Home is a server-driven list of sections. Each organisation arranges its own layout; every store in the
+org shows the same layout, and a section with nothing in stock at a store hides itself there.
+
+## How it works
+
+- **API:** `GET /api/v1/home/:storeId/sections?cursor=` returns `{ sections, nextCursor, chrome }`, 8 layout
+  entries per page.
+  - `chrome` comes on the first page only: the festive header theme, the free-delivery threshold and the popup banner.
+  - The legacy `GET /home/:storeId` is unchanged for old app builds.
+- **Layout:**
+  - `HomeSection` and `HomeSectionItem` rows hold each org's layout.
+  - An org with no rows gets `DEFAULT_LAYOUT` (`services/home/default-layout.ts`).
+  - Two automatic entries expand on the server:
+    - `LIVE_CAMPAIGNS`: one campaign card per live PROMO collection that no section already places.
+    - `OTHER_COLLECTIONS`: a product row per live collection that isn't placed anywhere else.
+- **Resolvers:** `services/home/resolvers/*`. Each section type resolves to its payload, or to null to hide it.
+- **Shared contract:** types, configs and labels live in `packages/shared/src/{constants,schemas,types}/home.ts`.
+- **Admin:**
+  - The Marketing → Home layout page lets you drag to reorder sections, toggle and edit them, and see which sections are hidden at a store.
+  - The collection edit page has a "Show on Home as…" shortcut.
+  - The API is at `/api/v1/home-layout` and needs the `CATALOG_COLLECTIONS` permission.
+- **Mobile:**
+  - `app/(tabs)/index.tsx` renders the sections in a virtualised `FlatList`, through the registry at `components/home/sections/index.tsx`. Unknown section types render nothing.
+  - Also on Home: a back-to-top pill and a free-delivery progress bar in the bottom dock.
+
+## Festive hero
+
+- **Layout:**
+  - One solid theme colour runs from the status bar down to the tiles, with white text.
+  - A wide strip of tone-on-tone silhouettes sits under the search bar, carrying a three-line greeting: kicker, title (in the font chosen for the festival) and subtitle.
+  - The festival's tiles come below on cream cards.
+- **The hero designer (Claude)** chooses:
+  - the theme colour, kept within a contrast band against white
+  - the silhouette scene
+  - the font: PLAYFAIR, YATRA, KALAM or LOBSTER
+  - the three greeting lines, in English and Tamil
+  - the tiles
+- **Strip art:** `services/seasonal/hero-art.ts` handles it.
+  - It paints grey silhouettes on flat grey with gpt-image-2.5-flare at medium quality.
+  - It recolours them into tones of the theme colour and crops to the art.
+  - The top and bottom fade relative to the art itself.
+  - A self-check repaints the strip once if the backdrop isn't flat.
+- **Heroes made before this change** still use tall painted art (their `heroTheme` has `ornamentDepth`). The app hides that art, so regenerate them with `POST /collections/:id/regenerate-hero`.
+
+## Campaign card and campaign screen
+
+- **Card:**
+  - One compact card on its theme colour.
+  - The headline, countdown and "Shop all" pill sit on the left; a transparent cut-out of the products sits on the right, with the offer stamp on its corner.
+  - Below that, fixed-size aisle chips: packs on the left, name and count on the right.
+- **Aisles:** grouped from the collection's in-stock items, by category, or by subcategory when there are too few categories.
+- **Card art:** a transparent cut-out (seed `paintArt(..., true)` trims it), so it sits on any theme colour.
+- **Tapping:**
+  - The card opens `/collection/[id]`.
+  - An aisle opens the same screen with that aisle's subcategories pre-selected.
+- **Campaign screen:**
+  - `GET /collections/:id/products` returns `collection.campaign` (art, theme and offer, from `services/home/campaign-look.ts`) and, on page 1, `collection.aisles`.
+  - The screen has a themed navigation bar with only a back arrow, a deeper header that fades into the page, the cut-out and stamp, aisle filter chips, and elevated white product cards.
+
+## Seed
+
+`cd apps/api && npx tsx prisma/seed-home-layout.ts [--regen-art] [--hero]` builds the showcase for Demo Grocers / Harur Fresh Mart:
+- three campaign cards: Personal Care Weekend, Snack Fest and Breakfast Combo
+- product rows in all three header styles
+- a repaint of the Navratri hero, with `--hero`
+
+Art already in place is reused unless `--regen-art` is passed.
+
+## Tested (local, iPhone screenshots)
+
+- **Sections endpoint:** paging, the `chrome` block, the legacy endpoint returning unchanged keys, and no duplicate promo cards.
+- **Festive top:**
+  - Navratri and Diwali heroes are seamless, with no edge at the strip.
+  - Tap targets go to the right places.
+- **Campaign cards:** cut-out art, theme colours, the countdown, and taps on the card and on aisles.
+- **Campaign screen:** theme, header fade, stamp, aisle chips (filtering in place) and elevated cards.
+
+## Needs manual verification
+
+- **Admin Home layout page:** drag and save, and the "hidden at store" hint (built and type-checked, not yet run in a browser).
+- **Old-style heroes:** regenerate them after deploying, including prod's festival heroes.
+- **Phases 2–5** (tabbed rows, price-band deals, category directory, explore/store grids, ads, personalisation) aren't built yet.

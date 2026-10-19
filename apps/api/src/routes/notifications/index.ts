@@ -16,96 +16,14 @@ import { resolveAudience } from "../../services/audience-resolver.js";
 import { sendCampaignNotifications } from "../../services/notification.js";
 import type { AudienceType, NotificationType } from "../../../generated/prisma/index.js";
 import { istDateKey } from "../../services/ist-day.js";
+import { notificationInboxRoutes } from "./inbox.js";
+import { notifyCampaignOutcome } from "../../services/notify/marketing-alerts.js";
+
+/** Where a campaign's tap lands: the deep-link choice becomes the data key the apps route on */
+const DEEP_LINK_KEYS = { product: "productId", category: "categoryId", collection: "collectionId", store: "storeId", screen: "screen" } as const;
 
 export async function notificationRoutes(app: FastifyInstance) {
-  // ═══════════════════════════════════════════════════════
-  // CUSTOMER ENDPOINTS (unchanged)
-  // ═══════════════════════════════════════════════════════
-
-  // GET /notifications — Customer: paginated list
-  app.get("/", { preHandler: [authenticate] }, async (request) => {
-    const user = getOrgUser(request);
-    const { page = 1, pageSize = 20 } = request.query as { page?: number; pageSize?: number };
-    const skip = (Number(page) - 1) * Number(pageSize);
-
-    const where = { userId: user.sub };
-
-    const [notifications, total] = await Promise.all([
-      app.prisma.notification.findMany({
-        where,
-        skip,
-        take: Number(pageSize),
-        orderBy: [{ createdAt: "desc" }, { id: "asc" }],
-      }),
-      app.prisma.notification.count({ where }),
-    ]);
-
-    const response: PaginatedResponse<(typeof notifications)[0]> = {
-      success: true,
-      data: notifications,
-      meta: {
-        total,
-        page: Number(page),
-        pageSize: Number(pageSize),
-        totalPages: Math.ceil(total / Number(pageSize)),
-      },
-    };
-    return response;
-  });
-
-  // GET /notifications/unread-count — Customer: badge count
-  app.get("/unread-count", { preHandler: [authenticate] }, async (request) => {
-    const user = getOrgUser(request);
-
-    const count = await app.prisma.notification.count({
-      where: { userId: user.sub, isRead: false },
-    });
-
-    const response: ApiResponse<{ count: number }> = {
-      success: true,
-      data: { count },
-    };
-    return response;
-  });
-
-  // PATCH /notifications/:id/read — Mark single as read
-  app.patch<{ Params: { id: string } }>(
-    "/:id/read",
-    { preHandler: [authenticate] },
-    async (request, reply) => {
-      const user = getOrgUser(request);
-
-      const notification = await app.prisma.notification.findUnique({
-        where: { id: request.params.id },
-      });
-      if (!notification) return reply.notFound("Notification not found");
-      if (notification.userId !== user.sub) return reply.forbidden("Access denied");
-
-      const updated = await app.prisma.notification.update({
-        where: { id: request.params.id },
-        data: { isRead: true },
-      });
-
-      const response: ApiResponse<typeof updated> = { success: true, data: updated };
-      return response;
-    },
-  );
-
-  // PATCH /notifications/read-all — Mark all as read
-  app.patch("/read-all", { preHandler: [authenticate] }, async (request) => {
-    const user = getOrgUser(request);
-
-    const result = await app.prisma.notification.updateMany({
-      where: { userId: user.sub, isRead: false },
-      data: { isRead: true },
-    });
-
-    const response: ApiResponse<{ updated: number }> = {
-      success: true,
-      data: { updated: result.count },
-    };
-    return response;
-  });
+  await app.register(notificationInboxRoutes);
 
   // POST /notifications/send — Backward compat: creates campaign internally
   app.post(
@@ -146,8 +64,7 @@ export async function notificationRoutes(app: FastifyInstance) {
       const notifData: Record<string, unknown> = {};
       if (body.storeId) notifData.storeId = body.storeId;
       if (body.deepLinkType && body.deepLinkId) {
-        const keyMap = { product: "productId", category: "categoryId", store: "storeId", screen: "screen" } as const;
-        notifData[keyMap[body.deepLinkType]] = body.deepLinkId;
+        notifData[DEEP_LINK_KEYS[body.deepLinkType]] = body.deepLinkId;
       }
 
       // Create campaign record
@@ -444,8 +361,7 @@ export async function notificationRoutes(app: FastifyInstance) {
     // Build deep link data
     const notifData: Record<string, unknown> = {};
     if (body.deepLinkType && body.deepLinkId) {
-      const keyMap = { product: "productId", category: "categoryId", store: "storeId", screen: "screen" } as const;
-      notifData[keyMap[body.deepLinkType]] = body.deepLinkId;
+      notifData[DEEP_LINK_KEYS[body.deepLinkType]] = body.deepLinkId;
     }
 
     // Check if scheduling
@@ -520,6 +436,7 @@ export async function notificationRoutes(app: FastifyInstance) {
           where: { id: campaign.id },
           data: { status: "FAILED" },
         });
+        await notifyCampaignOutcome(app.fcm, app.prisma, campaign, null);
       });
 
     const response: ApiResponse<{ campaignId: string; recipientCount: number; status: string }> = {

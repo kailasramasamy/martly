@@ -66,6 +66,7 @@ export const RESOURCE_PERMISSIONS = {
   "catalog-drafts": P.CATALOG_PRODUCTS,
   collections: read("STAFF", P.CATALOG_COLLECTIONS),
   recipes: read("STAFF", P.CATALOG_COLLECTIONS),
+  "home-layout": read("STAFF", P.CATALOG_COLLECTIONS),
 
   // Marketing
   banners: P.MARKETING_MANAGE,

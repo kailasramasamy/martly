@@ -1,7 +1,10 @@
 import type { FastifyInstance } from "fastify";
 import fp from "fastify-plugin";
 import { Prisma } from "../../generated/prisma/index.js";
-import { sendNotification } from "../services/notification.js";
+import {
+  notifyOrderFailed, notifyOrderPlaced, notifyPartialOrderPlaced, notifySkippedForStock, notifySkippedForWallet,
+  notifyStoreBasketSummary, type StoreBatch,
+} from "../services/notify/subscription-alerts.js";
 import { calculateEffectivePrice } from "../services/pricing.js";
 import { advanceNextDeliveryDate, isDeliveryDay } from "../utils/subscription-dates.js";
 import { tomorrowIST, endOfDayUTC, currentISTTime } from "../utils/timezone.js";
@@ -59,6 +62,10 @@ async function subscriptionSchedulerPlugin(app: FastifyInstance) {
           app.log.info(
             `Store ${store.name}: processing ${subscriptions.length} subscription(s)`,
           );
+
+          const batch: StoreBatch = { placed: 0, skippedForStock: 0, outOfStockNames: new Set() };
+          const ctx = { fcm: app.fcm, prisma: app.prisma };
+          const dateKey = tomorrowStart.toISOString().slice(0, 10);
 
           for (const sub of subscriptions) {
             try {
@@ -230,34 +237,26 @@ async function subscriptionSchedulerPlugin(app: FastifyInstance) {
               }
 
               // Validate stock availability
-              let stockSufficient = true;
+              const shortNames: string[] = [];
               for (const item of orderItems) {
                 const sp = await app.prisma.storeProduct.findUnique({
                   where: { id: item.storeProductId },
-                  select: { stock: true, reservedStock: true },
+                  select: { stock: true, reservedStock: true, product: { select: { name: true } } },
                 });
-                if (
-                  !sp ||
-                  sp.stock - sp.reservedStock < item.quantity
-                ) {
-                  stockSufficient = false;
-                  break;
+                if (!sp || sp.stock - sp.reservedStock < item.quantity) {
+                  shortNames.push(sp?.product.name ?? "item");
                 }
               }
 
-              if (!stockSufficient) {
-                await sendNotification(app.fcm, app.prisma, {
-                  userId: sub.userId,
-                  type: "GENERAL",
-                  title: "Subscription Skipped",
-                  body: "Your subscription order was skipped because some items are out of stock. We'll try again on your next delivery day.",
-                  data: { screen: "subscriptions" },
-                });
+              if (shortNames.length > 0) {
                 const nextDate = advanceNextDeliveryDate(
                   sub.nextDeliveryDate,
                   sub.frequency,
                   sub.selectedDays,
                 );
+                await notifySkippedForStock(ctx, sub.userId, sub.id, nextDate);
+                batch.skippedForStock++;
+                shortNames.forEach((n) => batch.outOfStockNames.add(n));
                 await app.prisma.subscription.update({
                   where: { id: sub.id },
                   data: { nextDeliveryDate: nextDate },
@@ -315,18 +314,12 @@ async function subscriptionSchedulerPlugin(app: FastifyInstance) {
 
                 if (partialItems.length === 0) {
                   // Can't afford delivery + any item — skip entirely
-                  await sendNotification(app.fcm, app.prisma, {
-                    userId: sub.userId,
-                    type: "GENERAL",
-                    title: "Subscription Skipped",
-                    body: "Your subscription order was skipped due to insufficient wallet balance. Please top up your wallet.",
-                    data: { screen: "wallet" },
-                  });
                   const nextDate = advanceNextDeliveryDate(
                     sub.nextDeliveryDate,
                     sub.frequency,
                     sub.selectedDays,
                   );
+                  await notifySkippedForWallet(ctx, sub.userId, sub.id, nextDate);
                   await app.prisma.subscription.update({
                     where: { id: sub.id },
                     data: { nextDeliveryDate: nextDate },
@@ -440,26 +433,11 @@ async function subscriptionSchedulerPlugin(app: FastifyInstance) {
                 return newOrder;
               });
 
-              // Send notification
+              batch.placed++;
               if (isPartial) {
-                const skippedList = skippedNames.length > 0
-                  ? ` Skipped: ${skippedNames.join(", ")}.`
-                  : "";
-                await sendNotification(app.fcm, app.prisma, {
-                  userId: sub.userId,
-                  type: "GENERAL",
-                  title: "Partial Subscription Order",
-                  body: `We placed a partial order of \u20B9${finalTotal} due to low wallet balance.${skippedList} Please top up your wallet.`,
-                  data: { orderId: order.id, screen: "orders" },
-                });
+                await notifyPartialOrderPlaced(ctx, sub.userId, sub.id, order.id, finalTotal, skippedNames);
               } else {
-                await sendNotification(app.fcm, app.prisma, {
-                  userId: sub.userId,
-                  type: "GENERAL",
-                  title: "Subscription Order Placed",
-                  body: `Your daily basket order of \u20B9${finalTotal} has been placed!`,
-                  data: { orderId: order.id, screen: "orders" },
-                });
+                await notifyOrderPlaced(ctx, sub.userId, sub.id, order.id, sub.frequency, finalTotal);
               }
 
               // Advance next delivery date
@@ -502,8 +480,10 @@ async function subscriptionSchedulerPlugin(app: FastifyInstance) {
                 err,
                 `Failed to process subscription ${sub.id}`,
               );
+              await notifyOrderFailed(ctx, sub.userId, sub.id, dateKey);
             }
           }
+          await notifyStoreBasketSummary(ctx, store.id, dateKey, batch);
         } catch (err) {
           app.log.error(
             err,

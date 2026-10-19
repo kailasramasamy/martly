@@ -19,6 +19,12 @@ export const firebasePlugin = fp(async (app: FastifyInstance) => {
     app.decorate("fcm", null);
     return;
   }
+  // A local API on a prod-synced database would otherwise push to real customers' phones
+  if (process.env.DISABLE_PUSH === "true") {
+    app.log.warn("DISABLE_PUSH=true — push notifications disabled (in-app notifications still saved)");
+    app.decorate("fcm", null);
+    return;
+  }
 
   let firebaseApp: App;
   if (getApps().length === 0) {

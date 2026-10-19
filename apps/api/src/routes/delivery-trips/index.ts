@@ -11,6 +11,7 @@ import { verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { broadcastOutForDelivery, startTripInTx, tripOrderProblem } from "../../services/delivery-trips.js";
 import { broadcastOrderUpdate } from "../../services/order-broadcast.js";
 import { TripOpError, assignTrips, failDelivery, moveOrder, orderWave, sendToRider, startProblem } from "../../services/delivery/trip-ops.js";
+import { notifyDeliveryFailed, notifyRiderSent, notifyStopMoved, notifyTripCancelled, notifyTripsAssigned } from "../../services/notify/delivery-alerts.js";
 import { riderDay, storeRiderSummary } from "../../services/delivery/rider.js";
 
 const dispatchAuth = [authenticate, requirePermission(Permission.ORDERS_DISPATCH)];
@@ -78,6 +79,8 @@ export async function deliveryTripRoutes(app: FastifyInstance) {
       throw err;
     }
     const sentOut = sent.sentOut;
+    notifyRiderSent(app.fcm, app.prisma, { tripId: sent.tripId, rider, orderIds: body.orderIds, sentOut, addedToExisting: sent.addedToExisting, actorId: request.user.sub })
+      .catch((err: unknown) => app.log.error(err, "Rider assignment notifications failed"));
     const trip = await app.prisma.deliveryTrip.findUnique({ where: { id: sent.tripId }, include: tripInclude });
 
     broadcastOutForDelivery(app.fcm, app.prisma, sentOut).catch((err: unknown) => app.log.error(err, "Out-for-delivery notifications failed"));
@@ -180,12 +183,14 @@ export async function deliveryTripRoutes(app: FastifyInstance) {
     if (!isDispatcher(request.user) && trip.riderId !== request.user.sub) return reply.forbidden("Not your trip");
     if (trip.status !== "IN_PROGRESS" || !trip.riderId) return reply.badRequest("Trip is not on the road");
     try {
-      await failDelivery(app.prisma, { tripId: request.params.id, orderId: request.params.orderId, riderId: trip.riderId, ...body });
+      await failDelivery(app.prisma, app.fcm, { tripId: request.params.id, orderId: request.params.orderId, riderId: trip.riderId, ...body });
     } catch (err) {
       if (err instanceof TripOpError) return reply.badRequest(err.message);
       throw err;
     }
     broadcastOrderUpdate(app.prisma, request.params.orderId, "READY");
+    notifyDeliveryFailed(app.fcm, app.prisma, request.params.orderId, body.reason, request.user.sub)
+      .catch((err: unknown) => app.log.error(err, "Delivery failure notifications failed"));
     return { success: true, data: { orderId: request.params.orderId, status: "READY" } } satisfies ApiResponse<{ orderId: string; status: string }>;
   });
 
@@ -197,7 +202,8 @@ export async function deliveryTripRoutes(app: FastifyInstance) {
     if (!(await verifyStoreOrgAccess(request, app.prisma, first.storeId))) return reply.forbidden("Access denied");
     const riders = new Set((await storeRiders(app.prisma, first.storeId)).map((r) => r.id));
     try {
-      await assignTrips(app.prisma, first.storeId, riders, assignments);
+      const changes = await assignTrips(app.prisma, first.storeId, riders, assignments);
+      notifyTripsAssigned(app.fcm, app.prisma, changes, request.user.sub).catch((err: unknown) => app.log.error(err, "Trip assignment notifications failed"));
     } catch (err) {
       if (err instanceof TripOpError) return reply.badRequest(err.message);
       throw err;
@@ -212,7 +218,8 @@ export async function deliveryTripRoutes(app: FastifyInstance) {
     if (!trip) return reply.notFound("Trip not found");
     if (!(await verifyStoreOrgAccess(request, app.prisma, trip.storeId))) return reply.forbidden("Access denied");
     try {
-      await moveOrder(app.prisma, request.params.id, orderId, toTripId);
+      const moved = await moveOrder(app.prisma, request.params.id, orderId, toTripId);
+      notifyStopMoved(app.fcm, app.prisma, { ...moved, orderId, actorId: request.user.sub }).catch((err: unknown) => app.log.error(err, "Stop move notifications failed"));
     } catch (err) {
       if (err instanceof TripOpError) return reply.badRequest(err.message);
       throw err;
@@ -251,6 +258,10 @@ export async function deliveryTripRoutes(app: FastifyInstance) {
       return updatedTrip;
     });
 
+    if (trip.status === "CREATED") {
+      notifyTripCancelled(app.fcm, app.prisma, { id: trip.id, storeId: trip.storeId, riderId: trip.riderId, stops: trip.orders.length }, request.user.sub)
+        .catch((err: unknown) => app.log.error(err, "Trip cancellation notifications failed"));
+    }
     return { success: true, data: updated } satisfies ApiResponse<typeof updated>;
   });
 }

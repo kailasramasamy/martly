@@ -210,14 +210,21 @@ export async function collectionRoutes(app: FastifyInstance) {
   });
 
   app.put<{ Params: { id: string } }>("/:id/hero", { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] }, async (request, reply) => {
-    const { heroTitle, heroTitleTa } = updateCollectionHeroSchema.parse(request.body);
+    const body = updateCollectionHeroSchema.parse(request.body);
     const collection = await ownCollection(app, request, reply);
     if (!collection) return;
     if (!collection.heroImageUrl) return reply.badRequest("This collection has no festive hero");
     const updated = await app.prisma.collection.update({
       where: { id: collection.id },
-      data: { heroTitle, translations: withHeroTranslation(collection.translations, heroTitleTa ?? null) },
-      select: { id: true, heroTitle: true, translations: true },
+      data: {
+        heroTitle: body.heroTitle,
+        heroKicker: body.heroKicker || null,
+        heroSubtitle: body.heroSubtitle || null,
+        translations: withHeroTranslation(collection.translations, {
+          heroTitle: body.heroTitleTa ?? null, heroKicker: body.heroKickerTa ?? null, heroSubtitle: body.heroSubtitleTa ?? null,
+        }),
+      },
+      select: { id: true, heroTitle: true, heroKicker: true, heroSubtitle: true, translations: true },
     });
     return { success: true, data: updated } satisfies ApiResponse<typeof updated>;
   });

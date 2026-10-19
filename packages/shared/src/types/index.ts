@@ -307,3 +307,4 @@ export interface PromoBanner {
   taps: number;
   ctr: number;
 }
+export * from "./home.js";

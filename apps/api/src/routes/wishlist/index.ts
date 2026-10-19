@@ -2,6 +2,7 @@ import type { FastifyInstance } from "fastify";
 import { toggleWishlistSchema } from "@martly/shared/schemas";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
+import { wishlistSnapshot } from "../../services/notify/wishlist-alerts.js";
 
 export async function wishlistRoutes(app: FastifyInstance) {
   // GET / - List user's wishlist items
@@ -35,8 +36,13 @@ export async function wishlistRoutes(app: FastifyInstance) {
       return response;
     }
 
+    const snapshot = body.storeId ? await wishlistSnapshot(app.prisma, body.productId, body.storeId) : null;
     await app.prisma.wishlistItem.create({
-      data: { userId: user.sub, productId: body.productId },
+      data: {
+        userId: user.sub,
+        productId: body.productId,
+        ...(snapshot ? { storeId: body.storeId, lastPrice: snapshot.price, wasInStock: snapshot.inStock } : {}),
+      },
     });
     const response: ApiResponse<{ wishlisted: boolean }> = { success: true, data: { wishlisted: true } };
     return response;

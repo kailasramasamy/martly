@@ -55,7 +55,7 @@ function draftInBackground(deps: PromoDeps & { fcm: Messaging | null }, promo: P
       const reason = failureReason(err);
       // Unexpected errors still end the job: a background draft has no caller to rethrow to
       if (!reason) deps.log.error(err, `Promo ${promo.id} draft failed`);
-      await failPromo(deps.prisma, promo.id, reason ?? "Something went wrong while drafting; try again");
+      await failPromo(deps.prisma, deps.fcm, promo.id, reason ?? "Something went wrong while drafting; try again");
     });
 }
 

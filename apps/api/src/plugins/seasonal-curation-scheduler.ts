@@ -2,14 +2,32 @@ import fp from "fastify-plugin";
 import type { FastifyInstance } from "fastify";
 import { findDueCurations } from "../services/seasonal/due-events.js";
 import { curateEvent, isCurationConfigured } from "../services/seasonal/index.js";
+import { announceLiveCollections } from "../services/notify/marketing-alerts.js";
 import { msUntilISTHour } from "../utils/timezone.js";
+import { istNow } from "../services/ist-day.js";
 
 // Daily at a fixed IST time so deploys never shift or skip it; festivals are curated a week ahead
 const RUN_HOUR_IST = 6;
 // Production also catches up shortly after a restart; dev stays manual so restarts never call the AI APIs
 const STARTUP_DELAY_MS = 5 * 60_000;
 
+const ANNOUNCE_INTERVAL_MS = 60 * 60_000;
+// Customers hear about a newly live collection during the day, never overnight
+const ANNOUNCE_WINDOW_IST = { from: 9 * 60, to: 21 * 60 };
+
+/** Pushes collections that just went live; needs no AI keys, so it runs even when curation is disabled */
+function scheduleLiveAnnouncements(app: FastifyInstance) {
+  const announce = () => {
+    const { minutes } = istNow();
+    if (minutes < ANNOUNCE_WINDOW_IST.from || minutes >= ANNOUNCE_WINDOW_IST.to) return;
+    announceLiveCollections(app.fcm, app.prisma).catch((err: unknown) => app.log.error(err, "Announcing live collections failed"));
+  };
+  const interval = setInterval(announce, ANNOUNCE_INTERVAL_MS);
+  app.addHook("onClose", () => clearInterval(interval));
+}
+
 async function seasonalCurationSchedulerPlugin(app: FastifyInstance) {
+  scheduleLiveAnnouncements(app);
   if (!isCurationConfigured()) {
     app.log.warn("Seasonal curation disabled: ANTHROPIC_API_KEY and OPENAI_API_KEY are both required");
     return;

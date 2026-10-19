@@ -2,6 +2,7 @@ import type { FastifyInstance } from "fastify";
 import fp from "fastify-plugin";
 import { sendNotification } from "../services/notification.js";
 import { istDay } from "../services/ist-day.js";
+import { promotionalAllowed } from "../services/notify/once.js";
 
 const INTERVAL_MS = 24 * 60 * 60 * 1000; // 24 hours
 const STARTUP_DELAY_MS = 5 * 60 * 1000; // 5 minutes after startup
@@ -106,6 +107,7 @@ async function reorderNudgeSchedulerPlugin(app: FastifyInstance) {
           }
 
           if (overdueProductIds.length === 0) continue;
+          if ((await promotionalAllowed(app.prisma, [userId])).length === 0) continue;
 
           // Fetch product names for the notification body
           const products = await app.prisma.product.findMany({

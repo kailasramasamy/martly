@@ -1,3 +1,4 @@
+import type { Messaging } from "firebase-admin/messaging";
 import type { BrandCampaignInput } from "@martly/shared/schemas";
 import type { AdProduct, BannerPlacement, BrandCampaign, Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { getMarketingConfig } from "../marketing/config.js";
@@ -104,9 +105,9 @@ export async function checkoutCampaign(prisma: PrismaClient, campaign: BrandCamp
 }
 
 /** Records a bank transfer received by Martly; the campaign moves on to review */
-export async function markPaidOffline(prisma: PrismaClient, campaign: BrandCampaign, billing: BillingSnapshot, reference: string, createdById: string) {
+export async function markPaidOffline(prisma: PrismaClient, campaign: BrandCampaign, billing: BillingSnapshot, reference: string, createdById: string, fcm: Messaging | null = null) {
   const { order } = await checkoutCampaign(prisma, campaign, billing, createdById, false);
-  return fulfilAdOrder(prisma, order.id, { offlineReference: reference });
+  return fulfilAdOrder(prisma, order.id, { offlineReference: reference }, fcm);
 }
 
 /** Martly approves the creative (the campaign then starts on its date) or rejects it with a full refund */

@@ -297,6 +297,21 @@ enum NotificationType {
   WELCOME
   REVIEW_REQUEST
   NEW_ORDER
+  PAYMENT
+  DELIVERY_UPDATE
+  RETURN_UPDATE
+  SUPPORT_UPDATE
+  MEMBERSHIP
+  SUBSCRIPTION
+  REFERRAL
+  WISHLIST_ALERT
+  STORE_NOTICE
+  STAFF_ORDER
+  STAFF_STOCK
+  STAFF_DELIVERY
+  STAFF_SERVICE
+  STAFF_MARKETING
+  STAFF_TEAM
 }
 
 enum CampaignStatus {
@@ -432,6 +447,7 @@ model Organization {
   bannerArtRuns BannerArtRun[]
 
   marketingSubscriptions MarketingSubscription[]
+  homeSections           HomeSection[]
 
   @@map("organizations")
 }
@@ -492,7 +508,8 @@ model Store {
   stockCounts           StockCount[]
   catalogDrafts         CatalogDraft[]
 
-  bannerStats BannerStatDaily[]
+  bannerStats   BannerStatDaily[]
+  wishlistItems WishlistItem[]
 
   @@map("stores")
 }
@@ -523,6 +540,7 @@ model User {
   addresses           UserAddress[]
   reviews             Review[]
   wishlistItems       WishlistItem[]
+  walletRecharges     WalletRecharge[]
   couponRedemptions   CouponRedemption[]
   walletTransactions  WalletTransaction[]
   loyaltyBalances     LoyaltyBalance[]
@@ -777,17 +795,18 @@ model ProductVariant {
 }
 
 model StoreProduct {
-  id            String   @id @default(uuid())
-  storeId       String   @map("store_id")
-  productId     String   @map("product_id")
-  variantId     String   @map("variant_id")
-  price         Decimal  @db.Decimal(10, 2)
-  stock         Int      @default(0)
-  reservedStock Int      @default(0) @map("reserved_stock")
-  isActive      Boolean  @default(true) @map("is_active")
-  isFeatured    Boolean  @default(false) @map("is_featured")
-  createdAt     DateTime @default(now()) @map("created_at")
-  updatedAt     DateTime @updatedAt @map("updated_at")
+  id                String   @id @default(uuid())
+  storeId           String   @map("store_id")
+  productId         String   @map("product_id")
+  variantId         String   @map("variant_id")
+  price             Decimal  @db.Decimal(10, 2)
+  stock             Int      @default(0)
+  reservedStock     Int      @default(0) @map("reserved_stock")
+  isActive          Boolean  @default(true) @map("is_active")
+  isFeatured        Boolean  @default(false) @map("is_featured")
+  lowStockThreshold Int?     @map("low_stock_threshold")
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
 
   discountType  DiscountType? @map("discount_type")
   discountValue Decimal?      @map("discount_value") @db.Decimal(10, 2)
@@ -924,16 +943,22 @@ model Collection {
   source          CurationSource @default(MANUAL)
   festivalEventId String?        @map("festival_event_id")
   heroTitle       String?        @map("hero_title")
+  /// Small line above the hero headline, e.g. "Nine nights of devotion"
+  heroKicker      String?        @map("hero_kicker")
+  /// Line under the hero headline, e.g. "Fasting staples, pooja needs and sweets in minutes"
+  heroSubtitle    String?        @map("hero_subtitle")
   heroImageUrl    String?        @map("hero_image_url")
   heroTheme       Json?          @map("hero_theme")
   createdAt       DateTime       @default(now()) @map("created_at")
   updatedAt       DateTime       @updatedAt @map("updated_at")
 
-  organization  Organization?    @relation(fields: [organizationId], references: [id])
-  festivalEvent FestivalEvent?   @relation(fields: [festivalEventId], references: [id], onDelete: SetNull)
-  items         CollectionItem[]
-  tiles         CollectionTile[]
-  promo         Promo?
+  organization     Organization?     @relation(fields: [organizationId], references: [id])
+  festivalEvent    FestivalEvent?    @relation(fields: [festivalEventId], references: [id], onDelete: SetNull)
+  items            CollectionItem[]
+  tiles            CollectionTile[]
+  promo            Promo?
+  homeSections     HomeSection[]
+  homeSectionItems HomeSectionItem[]
 
   @@unique([organizationId, festivalEventId])
   @@index([organizationId])
@@ -1110,13 +1135,17 @@ model StoreRating {
 }
 
 model WishlistItem {
-  id        String   @id @default(uuid())
-  userId    String   @map("user_id")
-  productId String   @map("product_id")
-  createdAt DateTime @default(now()) @map("created_at")
+  id         String   @id @default(uuid())
+  userId     String   @map("user_id")
+  productId  String   @map("product_id")
+  storeId    String?  @map("store_id")
+  lastPrice  Decimal? @map("last_price") @db.Decimal(10, 2)
+  wasInStock Boolean? @map("was_in_stock")
+  createdAt  DateTime @default(now()) @map("created_at")
 
   user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
   product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  store   Store?  @relation(fields: [storeId], references: [id], onDelete: SetNull)
 
   @@unique([userId, productId])
   @@index([userId])
@@ -2381,4 +2410,103 @@ model MarketingSubscription {
 
   @@index([organizationId, status])
   @@map("marketing_subscriptions")
+}
+
+model AlertOnce {
+  key       String   @id
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([createdAt])
+  @@map("alert_once")
+}
+
+enum WalletRechargeStatus {
+  PENDING
+  PAID
+}
+
+model WalletRecharge {
+  id                String               @id @default(uuid())
+  userId            String               @map("user_id")
+  razorpayOrderId   String               @unique @map("razorpay_order_id")
+  razorpayPaymentId String?              @unique @map("razorpay_payment_id")
+  amount            Decimal              @db.Decimal(10, 2)
+  status            WalletRechargeStatus @default(PENDING)
+  createdAt         DateTime             @default(now()) @map("created_at")
+  updatedAt         DateTime             @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("wallet_recharges")
+}
+
+enum HomeSectionType {
+  FESTIVE_HERO
+  MEMBER_CHIPS
+  HERO_BANNERS
+  BUY_AGAIN
+  RECENTLY_VIEWED
+  DEPARTMENT_GRID
+  BRAND_RAIL
+  PLUS_PROMO
+  MID_BANNERS
+  TIME_PICKS
+  DEALS
+  RECIPES
+  LIVE_CAMPAIGNS
+  OTHER_COLLECTIONS
+  CATEGORY_DIRECTORY
+  OFFERS
+  BRAND_POSTERS
+  PERSONALISED
+  PRODUCT_ROW
+  CAMPAIGN_CARD
+  TABBED_ROW
+  PRICE_BAND_DEALS
+  BRAND_CARD
+  EXPLORE_GRID
+  STORE_GRID
+}
+
+/// One block on an organisation's Home, in display order; config holds per-type display settings
+model HomeSection {
+  id             String          @id @default(uuid())
+  organizationId String          @map("organization_id")
+  type           HomeSectionType
+  title          String?
+  subtitle       String?
+  translations   Json?
+  collectionId   String?         @map("collection_id")
+  config         Json            @default("{}")
+  sortOrder      Int             @default(0) @map("sort_order")
+  isActive       Boolean         @default(true) @map("is_active")
+  createdAt      DateTime        @default(now()) @map("created_at")
+  updatedAt      DateTime        @updatedAt @map("updated_at")
+
+  organization Organization      @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  collection   Collection?       @relation(fields: [collectionId], references: [id], onDelete: SetNull)
+  items        HomeSectionItem[]
+
+  @@index([organizationId, isActive, sortOrder])
+  @@map("home_sections")
+}
+
+/// A tab, tile or aisle override inside a Home section
+model HomeSectionItem {
+  id             String   @id @default(uuid())
+  sectionId      String   @map("section_id")
+  label          String
+  translations   Json?
+  imageUrl       String?  @map("image_url")
+  collectionId   String?  @map("collection_id")
+  subcategoryIds String[] @default([]) @map("subcategory_ids")
+  wide           Boolean  @default(false)
+  sortOrder      Int      @default(0) @map("sort_order")
+
+  section    HomeSection @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  collection Collection? @relation(fields: [collectionId], references: [id], onDelete: SetNull)
+
+  @@index([sectionId])
+  @@map("home_section_items")
 }

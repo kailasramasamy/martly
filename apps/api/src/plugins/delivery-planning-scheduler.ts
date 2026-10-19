@@ -2,6 +2,7 @@ import fp from "fastify-plugin";
 import type { FastifyInstance } from "fastify";
 import { istNow, istWeekday } from "../services/ist-day.js";
 import { DEFAULT_DELIVERY_SETTINGS, deliverySettings } from "../services/delivery/settings.js";
+import { notifyWavePlanned } from "../services/notify/delivery-alerts.js";
 import { planWave, waveTripWhere, wavePoolWhere, type Wave } from "../services/delivery/plan-wave.js";
 
 const INTERVAL_MS = 60_000;
@@ -26,6 +27,7 @@ async function deliveryPlanningSchedulerPlugin(app: FastifyInstance) {
       ]);
       if (trips === 0 && waiting > 0) {
         const result = await planWave(app.prisma, storeId, wave);
+        await notifyWavePlanned(app.fcm, app.prisma, { storeId, slot, dateKey: now.key, tripIds: result.tripIds, overflow: result.overflow });
         app.log.info(`Auto-planned slot ${slot.startTime}–${slot.endTime} at store ${storeId}: ${result.tripIds.length} trips, ${result.overflow} over capacity`);
       }
     }

@@ -22,6 +22,9 @@ import { prepareOrderPayment, settleOrderPayment } from "../../services/order-pa
 import { upiPaymentRoutes } from "./upi-payment.js";
 import { broadcastOrderUpdate } from "../../services/order-broadcast.js";
 import { notifyStaffOfNewOrder } from "../../services/staff-alerts.js";
+import { formatOrderRef } from "../../services/notify/copy.js";
+import { notifyOrderPlaced, notifyPaymentFailed, notifySlotFullIfNeeded } from "../../services/notify/order-alerts.js";
+import { applyCancelRefunds, cancelOrder, notifyOrderCancelled } from "../../services/order-cancel.js";
 import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
 import { OrderStatus, Permission } from "@martly/shared/constants";
 
@@ -685,7 +688,9 @@ export async function orderRoutes(app: FastifyInstance) {
       broadcastOrderUpdate(app.prisma, result.order.id, result.order.status);
       if (result.order.paymentMethod === "COD" || result.walletFullyCovered) {
         notifyStaffOfNewOrder(app.fcm, app.prisma, result.order.id);
+        notifyOrderPlaced(app, result.order.id);
       }
+      if (result.order.deliverySlotId && body.scheduledDate) notifySlotFullIfNeeded(app, result.order.deliverySlotId, body.scheduledDate);
 
       const responseData = {
         ...formatOrderUnits(result.order),
@@ -718,7 +723,7 @@ export async function orderRoutes(app: FastifyInstance) {
       const body = updateOrderStatusSchema.parse(request.body);
       const existing = await app.prisma.order.findUnique({
         where: { id: request.params.id },
-        include: { items: true },
+        include: { items: true, deliveryTrip: { select: { riderId: true } } },
       });
       if (!existing) return reply.notFound("Order not found");
 
@@ -918,90 +923,8 @@ export async function orderRoutes(app: FastifyInstance) {
           }
         }
 
-        // Wallet refund on admin cancel
-        let refundAmount = 0;
-        if (body.status === "CANCELLED") {
-          const walletUsed = Number(existing.walletAmountUsed ?? 0);
-          const isOnlinePaid = existing.paymentMethod === "ONLINE" && existing.paymentStatus === "PAID";
-
-          if (isOnlinePaid) {
-            refundAmount = Number(existing.totalAmount);
-            updateData.paymentStatus = "REFUNDED";
-          } else if (walletUsed > 0) {
-            refundAmount = walletUsed;
-          }
-        }
-
-        // Loyalty reversal on CANCELLED
-        if (body.status === "CANCELLED") {
-          const orderStore = await tx.store.findUnique({
-            where: { id: existing.storeId },
-            select: { organizationId: true },
-          });
-          if (orderStore) {
-            // Reverse redeemed points (credit back)
-            const loyaltyUsed = existing.loyaltyPointsUsed ?? 0;
-            if (loyaltyUsed > 0) {
-              const balance = await tx.loyaltyBalance.upsert({
-                where: {
-                  userId_organizationId: {
-                    userId: existing.userId,
-                    organizationId: orderStore.organizationId,
-                  },
-                },
-                create: {
-                  userId: existing.userId,
-                  organizationId: orderStore.organizationId,
-                  points: loyaltyUsed,
-                  totalEarned: 0,
-                },
-                update: {
-                  points: { increment: loyaltyUsed },
-                  totalRedeemed: { decrement: loyaltyUsed },
-                },
-              });
-              await tx.loyaltyTransaction.create({
-                data: {
-                  userId: existing.userId,
-                  organizationId: orderStore.organizationId,
-                  orderId: existing.id,
-                  type: "REVERSAL",
-                  points: loyaltyUsed,
-                  balanceAfter: balance.points,
-                  description: `Reversal for cancelled order #${existing.id.slice(0, 8)}`,
-                },
-              });
-            }
-
-            // Reverse earned points (deduct)
-            const loyaltyEarned = existing.loyaltyPointsEarned ?? 0;
-            if (loyaltyEarned > 0) {
-              const balance = await tx.loyaltyBalance.update({
-                where: {
-                  userId_organizationId: {
-                    userId: existing.userId,
-                    organizationId: orderStore.organizationId,
-                  },
-                },
-                data: {
-                  points: { decrement: loyaltyEarned },
-                  totalEarned: { decrement: loyaltyEarned },
-                },
-              });
-              await tx.loyaltyTransaction.create({
-                data: {
-                  userId: existing.userId,
-                  organizationId: orderStore.organizationId,
-                  orderId: existing.id,
-                  type: "REVERSAL",
-                  points: -loyaltyEarned,
-                  balanceAfter: balance.points,
-                  description: `Earned points reversed for cancelled order #${existing.id.slice(0, 8)}`,
-                },
-              });
-            }
-          }
-        }
+        const refunds = body.status === "CANCELLED" ? await applyCancelRefunds(tx, existing, { reverseEarned: true }) : null;
+        if (refunds?.paymentRefunded) updateData.paymentStatus = "REFUNDED";
 
         const updated = await tx.order.update({
           where: { id: request.params.id },
@@ -1016,43 +939,19 @@ export async function orderRoutes(app: FastifyInstance) {
           data: { orderId: request.params.id, status: body.status, note: logNote },
         });
 
-        // Refund to wallet
-        if (refundAmount > 0) {
-          const updatedUser = await tx.user.update({
-            where: { id: existing.userId },
-            data: { walletBalance: { increment: refundAmount } },
-          });
-          await tx.walletTransaction.create({
-            data: {
-              userId: existing.userId,
-              orderId: existing.id,
-              type: "CREDIT",
-              amount: refundAmount,
-              balanceAfter: Number(updatedUser.walletBalance),
-              description: `Refund for cancelled order #${existing.id.slice(0, 8)}`,
-            },
-          });
-        }
-
-        return { updated, referralCompleted, referralReferrerId, referralReferrerReward, referralRefereeReward };
+        return { updated, refunds, referralCompleted, referralReferrerId, referralReferrerReward, referralRefereeReward };
       });
 
       const order = txResult.updated;
       const { referralCompleted, referralReferrerId, referralReferrerReward, referralRefereeReward } = txResult;
 
-      sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, body.status);
-      if (body.status === "CANCELLED") reorderTripAfterCancel(existing.deliveryTripId);
-      broadcastOrderUpdate(app.prisma, order.id, body.status);
-
-      // Fire-and-forget: wallet refund notification on cancel
-      if (body.status === "CANCELLED") {
-        const walletUsed = Number(existing.walletAmountUsed ?? 0);
-        const isOnlinePaid = existing.paymentMethod === "ONLINE" && existing.paymentStatus === "PAID";
-        const refundAmt = isOnlinePaid ? Number(existing.totalAmount) : walletUsed;
-        if (refundAmt > 0) {
-          sendWalletNotification(app.fcm, app.prisma, existing.userId, "CREDIT", refundAmt, `Refund for order #${existing.id.slice(0, 8)}`);
-        }
+      if (txResult.refunds) {
+        notifyOrderCancelled(app, existing, { by: "store", reason: body.note, refunds: txResult.refunds, actorId: request.user.sub });
+        reorderTripAfterCancel(existing.deliveryTripId);
+      } else {
+        sendOrderStatusNotification(app.fcm, app.prisma, order.id, body.status);
       }
+      broadcastOrderUpdate(app.prisma, order.id, body.status);
 
       // Fire-and-forget: loyalty earned + review request on delivery
       if (body.status === "DELIVERED") {
@@ -1064,8 +963,8 @@ export async function orderRoutes(app: FastifyInstance) {
           userId: existing.userId,
           type: "REVIEW_REQUEST",
           title: "How was your order?",
-          body: `Rate your order #${existing.id.slice(0, 8)} and help others shop better.`,
-          data: { orderId: existing.id, screen: "write-review" },
+          body: `Rate order ${formatOrderRef(existing.id)} and help others shop better.`,
+          data: { screen: "order", orderId: existing.id },
         });
 
         // Fire-and-forget: referral wallet notifications
@@ -1080,7 +979,7 @@ export async function orderRoutes(app: FastifyInstance) {
       }
 
       // Auto-complete delivery trip when last order is delivered
-      if (body.status === "DELIVERED" && existing.deliveryTripId) await stopFinished(app.prisma, existing.deliveryTripId);
+      if (body.status === "DELIVERED" && existing.deliveryTripId) await stopFinished(app.prisma, app.fcm, existing.deliveryTripId);
 
       const response: ApiResponse<typeof order> = { success: true, data: order };
       return response;
@@ -1146,10 +1045,7 @@ export async function orderRoutes(app: FastifyInstance) {
     { preHandler: [authenticate] },
     async (request, reply) => {
       const user = getOrgUser(request);
-      const existing = await app.prisma.order.findUnique({
-        where: { id: request.params.id },
-        include: { items: true },
-      });
+      const existing = await app.prisma.order.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Order not found");
 
       // Only the order owner can cancel via this endpoint
@@ -1167,113 +1063,7 @@ export async function orderRoutes(app: FastifyInstance) {
         });
       }
 
-      const stockItems = existing.items.map((i) => ({
-        storeProductId: i.storeProductId,
-        quantity: i.quantity,
-      }));
-
-      await releaseStock(app.prisma, stockItems);
-
-      const order = await app.prisma.$transaction(async (tx) => {
-        // Determine refund amount
-        let refundAmount = 0;
-        const walletUsed = Number(existing.walletAmountUsed ?? 0);
-        const isOnlinePaid = existing.paymentMethod === "ONLINE" && existing.paymentStatus === "PAID";
-
-        if (isOnlinePaid) {
-          refundAmount = Number(existing.totalAmount);
-        } else if (walletUsed > 0) {
-          refundAmount = walletUsed;
-        }
-
-        const updateData: Record<string, unknown> = { status: "CANCELLED" };
-        if (isOnlinePaid) {
-          updateData.paymentStatus = "REFUNDED";
-        }
-
-        const updated = await tx.order.update({
-          where: { id: request.params.id },
-          data: updateData,
-          include: { items: true },
-        });
-
-        await tx.orderStatusLog.create({
-          data: { orderId: request.params.id, status: "CANCELLED", note: "Cancelled by customer" },
-        });
-        await releaseFromUnstartedTrip(tx, request.params.id);
-
-        // Refund to wallet
-        if (refundAmount > 0) {
-          const updatedUser = await tx.user.update({
-            where: { id: existing.userId },
-            data: { walletBalance: { increment: refundAmount } },
-          });
-          await tx.walletTransaction.create({
-            data: {
-              userId: existing.userId,
-              orderId: existing.id,
-              type: "CREDIT",
-              amount: refundAmount,
-              balanceAfter: Number(updatedUser.walletBalance),
-              description: `Refund for cancelled order #${existing.id.slice(0, 8)}`,
-            },
-          });
-        }
-
-        // Loyalty reversal on customer cancel
-        const loyaltyUsed = existing.loyaltyPointsUsed ?? 0;
-        if (loyaltyUsed > 0) {
-          const orderStore = await tx.store.findUnique({
-            where: { id: existing.storeId },
-            select: { organizationId: true },
-          });
-          if (orderStore) {
-            const balance = await tx.loyaltyBalance.upsert({
-              where: {
-                userId_organizationId: {
-                  userId: existing.userId,
-                  organizationId: orderStore.organizationId,
-                },
-              },
-              create: {
-                userId: existing.userId,
-                organizationId: orderStore.organizationId,
-                points: loyaltyUsed,
-                totalEarned: 0,
-              },
-              update: {
-                points: { increment: loyaltyUsed },
-                totalRedeemed: { decrement: loyaltyUsed },
-              },
-            });
-            await tx.loyaltyTransaction.create({
-              data: {
-                userId: existing.userId,
-                organizationId: orderStore.organizationId,
-                orderId: existing.id,
-                type: "REVERSAL",
-                points: loyaltyUsed,
-                balanceAfter: balance.points,
-                description: `Reversal for cancelled order #${existing.id.slice(0, 8)}`,
-              },
-            });
-          }
-        }
-
-        return updated;
-      });
-
-      sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, "CANCELLED");
-      broadcastOrderUpdate(app.prisma, order.id, "CANCELLED");
-      reorderTripAfterCancel(existing.deliveryTripId);
-
-      // Fire-and-forget: wallet refund notification
-      const walletUsed = Number(existing.walletAmountUsed ?? 0);
-      const isOnlinePaid = existing.paymentMethod === "ONLINE" && existing.paymentStatus === "PAID";
-      const custRefundAmt = isOnlinePaid ? Number(existing.totalAmount) : walletUsed;
-      if (custRefundAmt > 0) {
-        sendWalletNotification(app.fcm, app.prisma, existing.userId, "CREDIT", custRefundAmt, `Refund for order #${existing.id.slice(0, 8)}`);
-      }
+      const order = await cancelOrder(app, existing.id, { by: "customer", note: "Cancelled by customer" });
 
       const response: ApiResponse<typeof order> = { success: true, data: order };
       return response;
@@ -1348,6 +1138,7 @@ export async function orderRoutes(app: FastifyInstance) {
           where: { id: order.id },
           data: { paymentStatus: "FAILED" },
         });
+        notifyPaymentFailed(app, order.id, body.razorpay_payment_id);
 
         return reply.badRequest("Payment verification failed");
       }
@@ -1582,9 +1373,10 @@ export async function orderRoutes(app: FastifyInstance) {
         }
       });
 
-      // Broadcast updates outside transaction
+      // Broadcast and tell each customer, outside the transaction
       for (const order of validOrders) {
         broadcastOrderUpdate(app.prisma, order.id, body.status);
+        sendOrderStatusNotification(app.fcm, app.prisma, order.id, body.status);
       }
 
       const response: ApiResponse<{ updated: number; skipped: number; errors: typeof errors }> = {

@@ -1,15 +1,17 @@
 import type { FastifyInstance } from "fastify";
 import { verifyRazorpayWebhook } from "../../services/payment.js";
 import { settleOrderPayment } from "../../services/order-payment.js";
+import { settleRecharge } from "../../services/wallet-recharge.js";
 import { fulfilAdOrder } from "../../services/marketing/billing.js";
 import { recordSubscriptionCharge, updateSubscriptionStatus } from "../../services/marketing/subscriptions.js";
+import { markPaymentFailed } from "../../services/notify/order-alerts.js";
 import { notifyOwners } from "../../services/marketing/renewals.js";
 
 interface RazorpayEvent {
   event: string;
   payload?: {
     order?: { entity?: { id?: string } };
-    payment?: { entity?: { id?: string; amount?: number } };
+    payment?: { entity?: { id?: string; amount?: number; order_id?: string } };
     subscription?: { entity?: { id?: string; notes?: { organizationId?: string } } };
   };
 }
@@ -31,12 +33,21 @@ async function onOrderPaid(app: FastifyInstance, event: RazorpayEvent) {
   const razorpayOrderId = event.payload?.order?.entity?.id;
   if (event.event !== "order.paid" || !razorpayOrderId) return;
   const paymentId = event.payload?.payment?.entity?.id;
-  // Marketing orders and customer orders are settled here; wallet top-ups also raise order.paid but aren't
+  // Marketing orders, customer orders and wallet top-ups are all settled here
   const adOrder = await app.prisma.adOrder.findUnique({ where: { razorpayOrderId }, select: { id: true } });
-  if (adOrder) await fulfilAdOrder(app.prisma, adOrder.id, { paymentId });
+  if (adOrder) await fulfilAdOrder(app.prisma, adOrder.id, { paymentId }, app.fcm);
   if (!paymentId) return;
   const order = await app.prisma.order.findFirst({ where: { razorpayOrderId }, select: { id: true } });
   if (order) await settleOrderPayment(app, order.id, paymentId);
+  else await settleRecharge(app, razorpayOrderId, paymentId);
+}
+
+/** A failed payment attempt on a customer order: flag it and tell the customer (they can retry the same order) */
+async function onPaymentFailed(app: FastifyInstance, event: RazorpayEvent) {
+  const payment = event.payload?.payment?.entity;
+  const razorpayOrderId = payment?.order_id ?? event.payload?.order?.entity?.id;
+  if (!payment?.id || !razorpayOrderId) return;
+  await markPaymentFailed(app, razorpayOrderId, payment.id);
 }
 
 /** Monthly plan charges and subscription state changes; a halted one (payments failing) is told to the owners */
@@ -66,6 +77,7 @@ export async function paymentWebhookRoutes(app: FastifyInstance) {
     if (typeof signature !== "string" || !verifyRazorpayWebhook(raw, signature)) return reply.unauthorized("Bad signature");
     const event = JSON.parse(raw) as RazorpayEvent;
     if (event.event.startsWith("subscription.")) await onSubscriptionEvent(app, event);
+    else if (event.event === "payment.failed") await onPaymentFailed(app, event);
     else await onOrderPaid(app, event);
     return { received: true };
   });

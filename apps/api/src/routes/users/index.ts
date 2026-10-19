@@ -8,6 +8,7 @@ import { Permission } from "@martly/shared/constants";
 import { pruneAddOns } from "../../services/permissions.js";
 import { memberPermissionRoutes } from "./permissions.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
+import { notifyTeamMember } from "../../services/notify/team-alerts.js";
 
 export async function userRoutes(app: FastifyInstance) {
   await app.register(memberPermissionRoutes);
@@ -256,7 +257,10 @@ export async function userRoutes(app: FastifyInstance) {
         data,
         select: { id: true, email: true, name: true, phone: true, role: true, createdAt: true, updatedAt: true },
       });
-      if (role !== undefined && role !== targetUser.role) await pruneAddOns(app.prisma, updated.id, updated.role);
+      if (role !== undefined && role !== targetUser.role) {
+        await pruneAddOns(app.prisma, updated.id, updated.role);
+        void notifyTeamMember(app.fcm, app.prisma, updated.id, user.sub, { kind: "role", role: updated.role });
+      }
 
       const response: ApiResponse<typeof updated> = { success: true, data: updated };
       return response;

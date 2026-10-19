@@ -1,6 +1,7 @@
 import fp from "fastify-plugin";
 import type { FastifyInstance } from "fastify";
 import { runDraft } from "../services/catalog-agent/pipeline.js";
+import { notifyDraftsFinished } from "../services/notify/catalog-alerts.js";
 
 const POLL_MS = 5_000;
 const CONCURRENCY = 2;
@@ -11,6 +12,7 @@ const MAX_ATTEMPTS = 2;
 
 async function catalogAgentWorkerPlugin(app: FastifyInstance) {
   let running = 0;
+  let finished: string[] = [];
   let polling = false;
   let interval: ReturnType<typeof setInterval> | undefined;
 
@@ -49,12 +51,22 @@ async function catalogAgentWorkerPlugin(app: FastifyInstance) {
     }
   }
 
+  // Once the queue drains, tells each creator about everything that finished since the last drain
+  async function flushFinished() {
+    const ids = finished;
+    finished = [];
+    await notifyDraftsFinished(app.fcm, app.prisma, ids);
+  }
+
   async function tick() {
     while (running < CONCURRENCY) {
       const id = await claim();
-      if (!id) return;
+      if (!id) {
+        if (running === 0 && finished.length > 0) await flushFinished();
+        return;
+      }
       running++;
-      void work(id).finally(() => running--);
+      void work(id).finally(() => { running--; finished.push(id); });
     }
   }
 

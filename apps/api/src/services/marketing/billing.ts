@@ -1,5 +1,7 @@
+import type { Messaging } from "firebase-admin/messaging";
 import type { AdOrder, AdProduct, Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { createRazorpayOrder, getRazorpayKeyId, refundRazorpayPayment } from "../payment.js";
+import { notifyCampaignInReview } from "../notify/marketing-alerts.js";
 import { getMarketingConfig, nextInvoiceNumber, quote } from "./config.js";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -53,20 +55,29 @@ export async function createAdOrder(prisma: PrismaClient, product: AdProduct, qu
  * Marks the order paid and hands over what was bought. Both the app's verify call and the Razorpay webhook land
  * here, so the PENDING → PAID claim makes the second arrival a no-op.
  */
-export async function fulfilAdOrder(prisma: PrismaClient, adOrderId: string, payment: { paymentId?: string; offlineReference?: string }) {
-  return prisma.$transaction(async (tx) => {
+export async function fulfilAdOrder(prisma: PrismaClient, adOrderId: string, payment: { paymentId?: string; offlineReference?: string }, fcm: Messaging | null = null) {
+  const { order: paid, claimed } = await prisma.$transaction(async (tx) => {
     const config = await getMarketingConfig(tx);
     const claimed = await tx.adOrder.updateMany({
       where: { id: adOrderId, status: "PENDING" },
       data: { status: "PAID", paidAt: new Date(), razorpayPaymentId: payment.paymentId, offlineReference: payment.offlineReference },
     });
     const order = await tx.adOrder.findUniqueOrThrow({ where: { id: adOrderId }, include: { product: true } });
-    if (!claimed.count) return order;
+    if (!claimed.count) return { order, claimed: false };
     const number = await nextInvoiceNumber(tx, config.invoicePrefix);
     await tx.adOrder.update({ where: { id: adOrderId }, data: { number } });
     await deliver(tx, order, order.product);
-    return { ...order, status: "PAID" as const, number };
+    return { order: { ...order, status: "PAID" as const, number }, claimed: true };
   });
+  // The payment is already recorded; a failed alert must not fail it
+  if (claimed) void announceCampaignInReview(prisma, fcm, adOrderId).catch((err: unknown) => console.error("Brand campaign review alert failed", err));
+  return paid;
+}
+
+/** A paid brand package waits for Martly's review, so Martly's team is told */
+async function announceCampaignInReview(prisma: PrismaClient, fcm: Messaging | null, adOrderId: string) {
+  const campaign = await prisma.brandCampaign.findFirst({ where: { adOrderId, status: "IN_REVIEW" }, select: { brandId: true, title: true } });
+  if (campaign) await notifyCampaignInReview(fcm, prisma, campaign);
 }
 
 async function deliver(tx: Prisma.TransactionClient, order: AdOrder, product: AdProduct) {

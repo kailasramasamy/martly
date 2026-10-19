@@ -5,6 +5,7 @@ import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
+import { notifyTicketCreated, notifyTicketUpdated } from "../../services/notify/service-alerts.js";
 
 // ── Rate Limiter ────────────────────────────────────
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
@@ -342,6 +343,7 @@ export async function supportRoutes(app: FastifyInstance) {
                 conversationMessages,
                 toolUse.input as { subject: string; summary: string },
               );
+              notifyTicketCreated(app.fcm, app.prisma, ticketResult.ticketId, (toolUse.input as { summary: string }).summary);
               ticketCreated = true;
               ticketId = ticketResult.ticketId;
               result = ticketResult;
@@ -595,6 +597,8 @@ export async function supportRoutes(app: FastifyInstance) {
           },
         },
       });
+
+      notifyTicketUpdated(app.fcm, app.prisma, updated, { status, reply: adminReply });
 
       return { success: true, data: updated } satisfies ApiResponse<typeof updated>;
     },

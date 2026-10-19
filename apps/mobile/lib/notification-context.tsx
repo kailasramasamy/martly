@@ -21,8 +21,11 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import * as SecureStore from "expo-secure-store";
 import { api } from "./api";
+import { notificationAudience, type NotificationAudience } from "@martly/shared/constants";
 import { useAuth } from "./auth-context";
+import { usePersona } from "./persona-context";
 import { resolveNotificationDeepLink } from "./notification-helpers";
+import { notificationTypeStyle } from "./notification-types";
 import type { AppNotification } from "./types";
 import { colors } from "../constants/theme";
 import { API_URL } from "./config";
@@ -31,43 +34,38 @@ const WS_URL = API_URL.replace(/^http/, "ws");
 const MAX_BACKOFF = 30000;
 const BANNER_DURATION = 4000;
 
-const TYPE_CONFIG: Record<string, { icon: keyof typeof Ionicons.glyphMap; bg: string; color: string }> = {
-  ORDER_CONFIRMED: { icon: "checkmark-circle", bg: "#dbeafe", color: "#2563eb" },
-  ORDER_PREPARING: { icon: "restaurant", bg: "#ffedd5", color: "#ea580c" },
-  ORDER_READY: { icon: "bag-check", bg: "#e0e7ff", color: "#4f46e5" },
-  ORDER_OUT_FOR_DELIVERY: { icon: "bicycle", bg: "#f3e8ff", color: "#7c3aed" },
-  ORDER_DELIVERED: { icon: "checkmark-done-circle", bg: "#dcfce7", color: "#16a34a" },
-  ORDER_CANCELLED: { icon: "close-circle", bg: "#fee2e2", color: "#dc2626" },
-  WALLET_CREDITED: { icon: "wallet", bg: "#ccfbf1", color: colors.primary },
-  WALLET_DEBITED: { icon: "wallet-outline", bg: "#ccfbf1", color: colors.primary },
-  LOYALTY_POINTS_EARNED: { icon: "star", bg: "#fef3c7", color: "#d97706" },
-  LOYALTY_POINTS_REDEEMED: { icon: "star-outline", bg: "#fef3c7", color: "#d97706" },
-  PROMOTIONAL: { icon: "megaphone", bg: "#fce7f3", color: "#db2777" },
-  GENERAL: { icon: "information-circle", bg: "#f1f5f9", color: "#475569" },
-  WELCOME: { icon: "sparkles", bg: "#e0f2fe", color: "#0284c7" },
-  REVIEW_REQUEST: { icon: "chatbubble-ellipses", bg: "#fff7ed", color: "#d97706" },
-  NEW_ORDER: { icon: "storefront", bg: "#fef3c7", color: "#b45309" },
-};
+type Audience = NotificationAudience;
+type NewListener = (notification: AppNotification) => void;
 
-const DEFAULT_CONFIG = { icon: "notifications" as keyof typeof Ionicons.glyphMap, bg: "#f1f5f9", color: "#64748b" };
+interface UnreadCounts {
+  staff: number;
+  customer: number;
+}
 
 interface NotificationContextType {
+  /** Shopper unread count (kept for the customer bell) */
   unreadCount: number;
-  decrementUnread: () => void;
-  resetUnreadCount: (n: number) => void;
+  staffUnreadCount: number;
+  decrementUnread: (audience: Audience) => void;
+  resetUnread: (audience: Audience) => void;
+  /** Subscribe to live notifications; returns the unsubscribe function */
+  onNew: (listener: NewListener) => () => void;
 }
 
 const NotificationContext = createContext<NotificationContextType>({
   unreadCount: 0,
+  staffUnreadCount: 0,
   decrementUnread: () => {},
-  resetUnreadCount: () => {},
+  resetUnread: () => {},
+  onNew: () => () => {},
 });
 
 export function NotificationProvider({ children }: { children: ReactNode }) {
   const { isAuthenticated } = useAuth();
+  const { persona } = usePersona();
   const insets = useSafeAreaInsets();
 
-  const [unreadCount, setUnreadCount] = useState(0);
+  const [counts, setCounts] = useState<UnreadCounts>({ staff: 0, customer: 0 });
   const [bannerNotification, setBannerNotification] = useState<AppNotification | null>(null);
 
   const wsRef = useRef<WebSocket | null>(null);
@@ -77,17 +75,32 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
   const bannerTimerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const bannerTranslateY = useRef(new Animated.Value(-100)).current;
   const bannerOpacity = useRef(new Animated.Value(0)).current;
+  const listenersRef = useRef(new Set<NewListener>());
+  const personaRef = useRef(persona);
+  personaRef.current = persona;
 
-  // Fetch initial unread count
+  const fetchCounts = useCallback(() => {
+    api.get<UnreadCounts>("/api/v1/notifications/unread-count")
+      .then((res) => setCounts({ staff: res.data.staff, customer: res.data.customer }))
+      .catch(() => {});
+  }, []);
+
   useEffect(() => {
     if (!isAuthenticated) {
-      setUnreadCount(0);
+      setCounts({ staff: 0, customer: 0 });
       return;
     }
-    api.get<{ count: number }>("/api/v1/notifications/unread-count")
-      .then((res) => setUnreadCount(res.data.count))
-      .catch(() => {});
-  }, [isAuthenticated]);
+    fetchCounts();
+    const sub = AppState.addEventListener("change", (state) => {
+      if (state === "active") fetchCounts();
+    });
+    return () => sub.remove();
+  }, [isAuthenticated, fetchCounts]);
+
+  const onNew = useCallback((listener: NewListener) => {
+    listenersRef.current.add(listener);
+    return () => { listenersRef.current.delete(listener); };
+  }, []);
 
   // Show in-app banner
   const showBanner = useCallback((notification: AppNotification) => {
@@ -117,7 +130,7 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
 
   const handleBannerTap = useCallback(() => {
     if (!bannerNotification) return;
-    const target = resolveNotificationDeepLink(bannerNotification.data);
+    const target = resolveNotificationDeepLink(bannerNotification.data, bannerNotification.type);
     dismissBanner();
     router.push(target);
   }, [bannerNotification, dismissBanner]);
@@ -146,8 +159,11 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
         const msg = JSON.parse(typeof event.data === "string" ? event.data : "");
         if (msg.type === "notification:new" && msg.data) {
           const notification = msg.data as AppNotification;
-          setUnreadCount((prev) => prev + 1);
-          showBanner(notification);
+          const audience = notificationAudience(notification.type);
+          setCounts((prev) => ({ ...prev, [audience]: prev[audience] + 1 }));
+          listenersRef.current.forEach((listener) => listener(notification));
+          // Staff alerts need action wherever the user is; shopper updates only show while shopping
+          if (audience === "staff" || personaRef.current === "shop") showBanner(notification);
         }
       } catch {
         // Ignore malformed messages
@@ -203,20 +219,20 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
     };
   }, [connect, isAuthenticated]);
 
-  const decrementUnread = useCallback(() => {
-    setUnreadCount((prev) => Math.max(0, prev - 1));
+  const decrementUnread = useCallback((audience: Audience) => {
+    setCounts((prev) => ({ ...prev, [audience]: Math.max(0, prev[audience] - 1) }));
   }, []);
 
-  const resetUnreadCount = useCallback((n: number) => {
-    setUnreadCount(n);
+  const resetUnread = useCallback((audience: Audience) => {
+    setCounts((prev) => ({ ...prev, [audience]: 0 }));
   }, []);
 
-  const config = bannerNotification
-    ? (TYPE_CONFIG[bannerNotification.type] ?? DEFAULT_CONFIG)
-    : DEFAULT_CONFIG;
+  const config = notificationTypeStyle(bannerNotification?.type ?? "");
 
   return (
-    <NotificationContext.Provider value={{ unreadCount, decrementUnread, resetUnreadCount }}>
+    <NotificationContext.Provider
+      value={{ unreadCount: counts.customer, staffUnreadCount: counts.staff, decrementUnread, resetUnread, onNew }}
+    >
       {children}
       {bannerNotification && (
         <Animated.View

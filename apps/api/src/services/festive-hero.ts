@@ -6,7 +6,8 @@ const GRID_COLUMNS = 3;
 const CANDIDATES = 3;
 
 type HeroCollection = {
-  id: string; heroTitle: string | null; heroImageUrl: string | null; heroTheme: unknown; translations: unknown;
+  id: string; heroTitle: string | null; heroKicker: string | null; heroSubtitle: string | null;
+  heroImageUrl: string | null; heroTheme: unknown; translations: unknown;
   tiles: { id: string; title: string; translations: unknown; imageUrl: string; subcategoryIds: string[] }[];
 };
 
@@ -39,11 +40,13 @@ async function forStore(prisma: PrismaClient, storeId: string, collection: HeroC
     .filter((t) => t.subcategories.length > 0);
   const shown = tiles.slice(0, tiles.length - (tiles.length % GRID_COLUMNS));
   if (shown.length === 0) return null;
-  const ta = (collection.translations as { ta?: { heroTitle?: string } } | null)?.ta?.heroTitle;
+  const ta = (collection.translations as { ta?: { heroTitle?: string; heroKicker?: string; heroSubtitle?: string } } | null)?.ta;
   return {
     id: collection.id,
     title: collection.heroTitle ?? "",
-    translations: ta ? { ta: { title: ta } } : null,
+    kicker: collection.heroKicker,
+    subtitle: collection.heroSubtitle,
+    translations: ta?.heroTitle ? { ta: { title: ta.heroTitle, kicker: ta.heroKicker, subtitle: ta.heroSubtitle } } : null,
     imageUrl: collection.heroImageUrl as string,
     theme: collection.heroTheme as { background: string; title: string; dark: boolean },
     tiles: shown.map(({ id, title, translations, imageUrl, subcategories }) => ({ id, title, translations, imageUrl, subcategories })),
@@ -51,7 +54,7 @@ async function forStore(prisma: PrismaClient, storeId: string, collection: HeroC
 }
 
 const HERO_SELECT = {
-  id: true, heroTitle: true, heroImageUrl: true, heroTheme: true, translations: true,
+  id: true, heroTitle: true, heroKicker: true, heroSubtitle: true, heroImageUrl: true, heroTheme: true, translations: true,
   tiles: { orderBy: { sortOrder: "asc" as const }, select: { id: true, title: true, translations: true, imageUrl: true, subcategoryIds: true } },
 };
 

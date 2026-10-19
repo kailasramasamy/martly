@@ -23,6 +23,7 @@ import {
   DownloadOutlined,
   StarOutlined,
   AppstoreAddOutlined,
+  LayoutOutlined,
   GiftOutlined,
   CommentOutlined,
   EnvironmentOutlined,
@@ -98,6 +99,7 @@ import { CustomerShow } from "./pages/customers/show";
 import { CollectionList } from "./pages/collections/list";
 import { CollectionCreate } from "./pages/collections/create";
 import { CollectionEdit } from "./pages/collections/edit";
+import { HomeLayoutList } from "./pages/home-layout/list";
 import { FestivalList } from "./pages/festival-calendar/list";
 import { FestivalCreate } from "./pages/festival-calendar/create";
 import { FestivalEdit } from "./pages/festival-calendar/edit";
@@ -156,6 +158,7 @@ import { BrandPartners } from "./pages/brand-campaigns/partners";
 import { BrandInvoices } from "./pages/brand-portal/invoices";
 import { BRAND_SCOPE, PLATFORM_SCOPE } from "./pages/brand-campaigns/types";
 import { OrgSwitcher } from "./components/OrgSwitcher";
+import { NotificationBell } from "./components/notifications/NotificationBell";
 import { UserRoleLabels, type UserRole } from "@martly/shared/constants";
 
 const { Text } = Typography;
@@ -187,6 +190,7 @@ function HeaderBar() {
             </Space>
           </Link>
         )}
+        {identity && <NotificationBell />}
         <Button
           type="text"
           size="small"
@@ -328,6 +332,11 @@ export default function App() {
                 create: "/collections/create",
                 edit: "/collections/edit/:id",
                 meta: { label: "Collections", icon: <AppstoreOutlined />, parent: "marketing" },
+              },
+              {
+                name: "home-layout",
+                list: "/home-layout",
+                meta: { label: "Home layout", icon: <LayoutOutlined />, parent: "marketing" },
               },
               {
                 name: "promos",
@@ -689,6 +698,7 @@ export default function App() {
                   <Route path="create" element={<CollectionCreate />} />
                   <Route path="edit/:id" element={<CollectionEdit />} />
                 </Route>
+                <Route path="/home-layout" element={<HomeLayoutList />} />
                 <Route path="/festival-calendar">
                   <Route index element={<FestivalList />} />
                   <Route path="create" element={<FestivalCreate />} />

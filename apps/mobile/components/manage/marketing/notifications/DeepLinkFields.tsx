@@ -8,6 +8,7 @@ const TYPE_OPTIONS = [
   { value: "", label: "None" },
   { value: "product", label: "Product" },
   { value: "category", label: "Category" },
+  { value: "collection", label: "Collection (offer)" },
   { value: "store", label: "Store" },
   { value: "screen", label: "Screen" },
 ];
@@ -41,7 +42,8 @@ export function DeepLinkFields({ value, onChange, error }: Props) {
     <>
       <SelectField label="Opens when tapped" value={type} options={TYPE_OPTIONS} onChange={(deepLinkType) => onChange({ deepLinkType, deepLinkId: null })} />
       {type === "product" ? <RemotePicker label="Target product" required path="/api/v1/products" value={value.deepLinkId} onChange={pick} error={error} /> : null}
-      {type && type !== "product" ? <SelectField label={`Target ${type}`} required value={value.deepLinkId} options={options} onChange={pick} error={error} /> : null}
+      {type === "collection" ? <RemotePicker label="Target collection" required path="/api/v1/collections" value={value.deepLinkId} onChange={pick} error={error} /> : null}
+      {type && type !== "product" && type !== "collection" ? <SelectField label={`Target ${type}`} required value={value.deepLinkId} options={options} onChange={pick} error={error} /> : null}
     </>
   );
 }

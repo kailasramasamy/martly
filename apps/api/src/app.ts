@@ -22,6 +22,7 @@ import { addressRoutes } from "./routes/addresses/index.js";
 import { collectionRoutes } from "./routes/collections/index.js";
 import { festivalEventRoutes } from "./routes/festival-events/index.js";
 import { homeRoutes } from "./routes/home/index.js";
+import { homeLayoutRoutes } from "./routes/home-layout/index.js";
 import { festiveRoutes } from "./routes/festive/index.js";
 import { promoRoutes } from "./routes/promos/index.js";
 import { catalogDraftRoutes } from "./routes/catalog-drafts/index.js";
@@ -66,7 +67,12 @@ import subscriptionSchedulerPlugin from "./plugins/subscription-scheduler.js";
 import seasonalCurationSchedulerPlugin from "./plugins/seasonal-curation-scheduler.js";
 import promoSchedulerPlugin from "./plugins/promo-scheduler.js";
 import marketingSchedulerPlugin from "./plugins/marketing-scheduler.js";
+import stockAlertsSchedulerPlugin from "./plugins/stock-alerts-scheduler.js";
+import wishlistAlertSchedulerPlugin from "./plugins/wishlist-alert-scheduler.js";
 import deliveryPlanningSchedulerPlugin from "./plugins/delivery-planning-scheduler.js";
+import deliveryAlertsSchedulerPlugin from "./plugins/delivery-alerts-scheduler.js";
+import membershipSchedulerPlugin from "./plugins/membership-scheduler.js";
+import orderSlaSchedulerPlugin from "./plugins/order-sla-scheduler.js";
 import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
 
 export async function buildApp() {
@@ -99,6 +105,11 @@ export async function buildApp() {
   await app.register(promoSchedulerPlugin);
   await app.register(marketingSchedulerPlugin);
   await app.register(deliveryPlanningSchedulerPlugin);
+  await app.register(deliveryAlertsSchedulerPlugin);
+  await app.register(stockAlertsSchedulerPlugin);
+  await app.register(wishlistAlertSchedulerPlugin);
+  await app.register(membershipSchedulerPlugin);
+  await app.register(orderSlaSchedulerPlugin);
   await app.register(catalogAgentWorkerPlugin);
 
   // ── Error Handler ────────────────────────────────
@@ -146,6 +157,7 @@ export async function buildApp() {
       await api.register(collectionRoutes, { prefix: "/collections" });
       await api.register(festivalEventRoutes, { prefix: "/festival-events" });
       await api.register(homeRoutes, { prefix: "/home" });
+      await api.register(homeLayoutRoutes, { prefix: "/home-layout" });
       await api.register(festiveRoutes, { prefix: "/festive" });
       await api.register(promoRoutes, { prefix: "/promos" });
       await api.register(catalogDraftRoutes, { prefix: "/catalog-drafts" });
