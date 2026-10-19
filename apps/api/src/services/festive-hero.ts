@@ -1,9 +1,10 @@
 import type { PrismaClient } from "../../generated/prisma/client.js";
+import { FESTIVAL_DAYS_SELECT, rankFestivals } from "./festival-rank.js";
 import { liveWindow, reviewSummaries, withAllSizes, withReviews } from "./store-feed.js";
 
 const GRID_COLUMNS = 3;
-// A couple of fallbacks in case the soonest festival's tiles are all out of stock at this store
-const CANDIDATES = 3;
+// Festivals live at once share the hero as a carousel, at most this many
+const MAX_HEROES = 3;
 
 type HeroCollection = {
   id: string; heroTitle: string | null; heroKicker: string | null; heroSubtitle: string | null;
@@ -11,13 +12,13 @@ type HeroCollection = {
   tiles: { id: string; title: string; translations: unknown; imageUrl: string; subcategoryIds: string[] }[];
 };
 
-function liveHeroWhere(organizationId: string) {
+function liveHeroWhere(organizationId: string, now = new Date()) {
   return {
     isActive: true,
     kind: { in: ["OCCASION" as const, "SEASON" as const] },
     heroImageUrl: { not: null },
     OR: [{ organizationId }, { organizationId: null }],
-    AND: liveWindow(new Date()),
+    AND: liveWindow(now),
   };
 }
 
@@ -54,23 +55,15 @@ async function forStore(prisma: PrismaClient, storeId: string, collection: HeroC
 }
 
 const HERO_SELECT = {
-  id: true, heroTitle: true, heroKicker: true, heroSubtitle: true, heroImageUrl: true, heroTheme: true, translations: true,
+  id: true, kind: true, startsAt: true, endsAt: true, ...FESTIVAL_DAYS_SELECT, heroTitle: true, heroKicker: true, heroSubtitle: true, heroImageUrl: true, heroTheme: true, translations: true,
   tiles: { orderBy: { sortOrder: "asc" as const }, select: { id: true, title: true, translations: true, imageUrl: true, subcategoryIds: true } },
 };
 
-/** The home screen's festive hero: the soonest-ending live festival (festivals before seasons) this store can stock. */
-export async function liveFestiveHero(prisma: PrismaClient, store: { id: string; organizationId: string }) {
-  const collections = await prisma.collection.findMany({
-    where: liveHeroWhere(store.organizationId),
-    orderBy: [{ kind: "asc" }, { endsAt: { sort: "asc", nulls: "last" } }, { sortOrder: "asc" }],
-    take: CANDIDATES,
-    select: HERO_SELECT,
-  });
-  for (const collection of collections) {
-    const hero = await forStore(prisma, store.id, collection);
-    if (hero) return hero;
-  }
-  return null;
+/** The home screen's festive heroes: up to three live festivals this store can stock, in rankFestivals order. */
+export async function liveFestiveHeroes(prisma: PrismaClient, store: { id: string; organizationId: string }, now = new Date()) {
+  const collections = await prisma.collection.findMany({ where: liveHeroWhere(store.organizationId, now), select: HERO_SELECT });
+  const heroes = await Promise.all(rankFestivals(collections, now).map((c) => forStore(prisma, store.id, c)));
+  return heroes.filter((h) => h !== null).slice(0, MAX_HEROES);
 }
 
 export async function festiveHeroById(prisma: PrismaClient, store: { id: string; organizationId: string }, collectionId: string) {

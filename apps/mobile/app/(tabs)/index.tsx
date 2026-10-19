@@ -27,6 +27,7 @@ import { HomeSectionView } from "../../components/home/sections";
 import { HomeSectionProvider, type HomeSectionEnv } from "../../components/home/sections/context";
 import { useLightStatusBar } from "../../lib/use-light-status-bar";
 import { useHomeSections, type MobileHomeSection } from "../../lib/use-home-sections";
+import type { HomeTheme } from "@martly/shared/types";
 import type { Banner } from "../../lib/types";
 import { TabBottomDock } from "../../components/TabIcon";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
@@ -89,11 +90,13 @@ function useHomeData() {
 function useSectionEnv(data: ReturnType<typeof useHomeData>, expandedHeader: number) {
   const { selectedStore } = useStore();
   const { sections, chrome } = data.home;
-  // A festival hero leading the page runs its art up behind the header, which floats over it see-through
-  const festive = sections[0]?.type === "FESTIVE_HERO" ? chrome?.headerTheme ?? null : null;
-  const festiveHeroId = useMemo(() => {
+  // A festival hero leading the page runs its art up behind the header, which floats over it see-through and
+  // takes the colours of the slide in view
+  const [slideTheme, setSlideTheme] = useState<HomeTheme | null>(null);
+  const festive = sections[0]?.type === "FESTIVE_HERO" ? slideTheme ?? chrome?.headerTheme ?? null : null;
+  const festiveHeroIds = useMemo(() => {
     const hero = sections.find((s) => s.type === "FESTIVE_HERO");
-    return hero && "data" in hero ? (hero.data.hero as { id: string }).id : null;
+    return hero && "data" in hero ? (hero.data.heroes as { id: string }[]).map((h) => h.id) : [];
   }, [sections]);
   const { memberStatus, hasSubscriptions } = data.member;
 
@@ -101,9 +104,10 @@ function useSectionEnv(data: ReturnType<typeof useHomeData>, expandedHeader: num
     store: selectedStore,
     memberStatus,
     hasSubscriptions,
-    festiveHeroId,
+    festiveHeroIds,
+    onFestiveTheme: setSlideTheme,
     backdrop: festive && expandedHeader ? { top: expandedHeader } : null,
-  }), [selectedStore, memberStatus, hasSubscriptions, festiveHeroId, festive, expandedHeader]);
+  }), [selectedStore, memberStatus, hasSubscriptions, festiveHeroIds, festive, expandedHeader]);
   return { env, festive };
 }
 

@@ -1,9 +1,9 @@
 import { getTimePeriod, TIME_CATEGORY_MAP } from "../../time-picks.js";
 import { buildProductData, enrichStoreProduct, withAllSizes } from "../../store-feed.js";
-import { liveFestiveHero } from "../../festive-hero.js";
+import { liveFestiveHeroes } from "../../festive-hero.js";
 import { storeBanners } from "../../marketing/banner-feed.js";
 import { buyAgainProducts, activeDealRows, pastOrderLines } from "../feed-queries.js";
-import { sectionBase, type ResolvedSection, type SectionResolver } from "../types.js";
+import { sectionBase, type ResolveContext, type ResolvedSection, type SectionResolver } from "../types.js";
 import { recipeSummaries } from "./recipes.js";
 
 function system(entry: Parameters<SectionResolver>[1], data: Record<string, unknown>): ResolvedSection {
@@ -13,9 +13,18 @@ function system(entry: Parameters<SectionResolver>[1], data: Record<string, unkn
 // Blocks whose content the app loads itself, shown whenever the layout places them
 export const clientFetched: SectionResolver = async (_ctx, entry) => system(entry, {});
 
+// Looked up once per request: the layout expansion needs the heroes' collections too, to keep them out of other rows
+const heroesByRequest = new WeakMap<ResolveContext, ReturnType<typeof liveFestiveHeroes>>();
+export function festiveHeroesFor(ctx: ResolveContext) {
+  let heroes = heroesByRequest.get(ctx);
+  if (!heroes) heroesByRequest.set(ctx, heroes = liveFestiveHeroes(ctx.prisma, ctx.store, ctx.now));
+  return heroes;
+}
+
+// `hero` is the lead slide, for released app builds that show a single hero
 export const festiveHero: SectionResolver = async (ctx, entry) => {
-  const hero = await liveFestiveHero(ctx.prisma, ctx.store);
-  return hero ? system(entry, { hero }) : null;
+  const heroes = await festiveHeroesFor(ctx);
+  return heroes.length > 0 ? system(entry, { hero: heroes[0], heroes }) : null;
 };
 
 const bannersFor = (placement: "HERO_CAROUSEL" | "MID_PAGE"): SectionResolver => async (ctx, entry) => {

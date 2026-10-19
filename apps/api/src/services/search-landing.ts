@@ -1,5 +1,6 @@
 import type { PrismaClient } from "../../generated/prisma/client.js";
 import { getTimePeriod, TIME_CATEGORY_MAP, TIME_PERIOD_TITLES } from "./time-picks.js";
+import { FESTIVAL_DAYS_SELECT, rankFestivals } from "./festival-rank.js";
 import { liveWindow, reviewSummaries, withAllSizes, withReviews } from "./store-feed.js";
 import { predictReorders } from "./reorder.js";
 
@@ -63,17 +64,16 @@ function occasionSubcategories<T extends { id: string }>(subs: (T | null)[]) {
 }
 
 async function occasionCollections(prisma: PrismaClient, storeId: string, organizationId: string) {
+  const now = new Date();
   const collections = await prisma.collection.findMany({
     where: {
       isActive: true,
       kind: { in: ["OCCASION", "SEASON"] },
       OR: [{ organizationId }, { organizationId: null }],
-      AND: liveWindow(new Date()),
+      AND: liveWindow(now),
     },
-    // OCCASION sorts before SEASON in the enum, so festivals lead; among overlapping festivals the one
-    // ending soonest is the most urgent (Navratri before the Diwali run-up)
-    orderBy: [{ kind: "asc" }, { endsAt: { sort: "asc", nulls: "last" } }, { sortOrder: "asc" }],
     include: {
+      ...FESTIVAL_DAYS_SELECT,
       items: {
         where: { product: inStore(storeId) },
         orderBy: { sortOrder: "asc" },
@@ -82,7 +82,7 @@ async function occasionCollections(prisma: PrismaClient, storeId: string, organi
       },
     },
   });
-  const live = collections.filter((c) => c.items.length > 0).slice(0, OCCASION_LIMIT);
+  const live = rankFestivals(collections, now).filter((c) => c.items.length > 0).slice(0, OCCASION_LIMIT);
   return Promise.all(live.map(async (c) => ({
     id: c.id, title: c.title, subtitle: c.subtitle, slug: c.slug, kind: c.kind, translations: c.translations,
     imageUrl: c.imageUrl, imageUrls: c.imageUrls as Record<string, string> | null, textInImage: c.textInImage,

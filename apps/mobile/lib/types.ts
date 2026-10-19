@@ -1,4 +1,4 @@
-import type { CampaignTile } from "@martly/shared/types";
+import type { CampaignTile, HomeTheme } from "@martly/shared/types";
 import type { PaginatedResponse } from "@martly/shared/types";
 
 export interface Store {
@@ -265,7 +265,7 @@ export interface FestiveHero {
   /** The tone-on-tone silhouette strip drawn under the search bar */
   imageUrl: string;
   /** background is the solid festival colour behind the whole block; title is its text colour; dark means light text */
-  theme: { background: string; title: string; dark: boolean; font?: string };
+  theme: HomeTheme;
   tiles: FestiveTile[];
 }
 

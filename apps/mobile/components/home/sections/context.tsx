@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
 import { router } from "expo-router";
-import type { HomeSeeAll } from "@martly/shared/types";
+import type { HomeSeeAll, HomeTheme } from "@martly/shared/types";
 import { useLanguage } from "../../../lib/language-context";
 import type { MobileHomeSection } from "../../../lib/use-home-sections";
 import type { Store } from "../../../lib/types";
@@ -10,8 +10,10 @@ export interface HomeSectionEnv {
   store: Store;
   memberStatus: MemberStatus | null;
   hasSubscriptions: boolean;
-  /** The live festival's collection; hero carousel banners that just point at it are left out */
-  festiveHeroId: string | null;
+  /** The live festivals' collections; hero carousel banners that just point at one are left out */
+  festiveHeroIds: string[];
+  /** The festive hero in view, whose colours the header takes */
+  onFestiveTheme: (theme: HomeTheme) => void;
   /** When the festive block runs up behind the overlaid header: the header's height to clear; null when the
    *  header sits above the list */
   backdrop: { top: number } | null;

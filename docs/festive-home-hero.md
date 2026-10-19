@@ -24,10 +24,23 @@ chip and the tile's products below.
      - A headline colour below 4.5:1 contrast on the measured wash falls back to a safe dark (or white) ink.
    - The result is stored on `Collection` (`heroTitle`, `heroImageUrl`, `heroTheme`, `translations.ta.heroTitle`) and
      in `CollectionTile` rows. The cost is about 7 images (up to ~14 if self-checks repaint) and 1 Claude call per org per festival, taking ~45s.
-2. **Home feed**: `GET /home/:storeId` returns `festiveHero`. It picks the live OCCASION/SEASON collection that has a
-   hero, festivals before seasons and soonest-ending first. Tiles whose aisles have nothing in stock at that store are
-   hidden, still keeping whole rows. When no hero qualifies, it returns `null` and the banner carousel takes the top of the screen. While a hero is
-   live, the carousel drops that festival's own banner, so the two don't repeat each other.
+2. **Home feed**: the `FESTIVE_HERO` section carries `heroes`, up to 3 live OCCASION/SEASON collections that have a
+   hero, ranked by `rankFestivals` (`services/festival-rank.ts`):
+   - festivals before seasons;
+   - then the nearest festival day from the calendar event (`FestivalEvent.startsAt`), where a festival already under
+     way counts as today;
+   - then the shorter festival, so a one-day festival on its day leads a long one it falls in (on 19 Oct 2026:
+     Ayudha Pooja, Navratri, Dussehra).
+
+   A collection is live from its lead date (`startsAt - leadDays`), so festivals in their run-up are in the carousel
+   too. With 2 or more heroes the app shows a swipeable carousel with dots; the header and status bar take the
+   colours of the slide in view. `hero` (the lead slide) is still sent for released builds, as is `festiveHero` on
+   the legacy `GET /home/:storeId`. Search landing ranks its 2 festival rails the same way.
+
+   Tiles whose aisles have nothing in stock at that store are hidden, still keeping whole rows. When no hero
+   qualifies, the section is dropped and the banner carousel takes the top of the screen. The banner carousel drops
+   any banner that only points at a festival in the hero. Live festivals the hero has no room for appear lower down as
+   plain product rows (`OTHER_COLLECTIONS`).
 3. **Festival screen**:
    - `GET /festive/:collectionId?storeId=` returns the hero and its tiles. Each tile lists its in-stock
      `subcategories` (id, name, imageUrl, translations) in the tile's order.

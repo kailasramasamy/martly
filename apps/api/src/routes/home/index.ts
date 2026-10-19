@@ -7,7 +7,7 @@ import {
   buildProductData, enrichStoreProduct, liveWindow, reviewSummaries, withAllSizes, withReviews,
 } from "../../services/store-feed.js";
 import { activeDealRows, buyAgainProducts, pastOrderLines } from "../../services/home/feed-queries.js";
-import { liveFestiveHero } from "../../services/festive-hero.js";
+import { liveFestiveHeroes } from "../../services/festive-hero.js";
 import { homeSectionsRoutes } from "./sections.js";
 import { storeBanners } from "../../services/marketing/banner-feed.js";
 
@@ -138,7 +138,7 @@ export async function homeRoutes(app: FastifyInstance) {
         }),
 
         // 8. Festive hero — replaces the hero carousel while a festival is live
-        liveFestiveHero(app.prisma, store),
+        liveFestiveHeroes(app.prisma, store).then((heroes) => heroes[0] ?? null),
       ]);
 
       // Transform collections: flatten to products with store data, filter empty

@@ -3,6 +3,7 @@ import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import * as z from "zod/v4";
 import { CurationRefusedError } from "./curator.js";
 import type { SubcategoryCandidate } from "./candidates.js";
+import type { HeroTheme } from "./hero-art.js";
 
 const MODEL = "claude-sonnet-5-5";
 const GRID_COLUMNS = 3;
@@ -55,6 +56,16 @@ Write the Tamil copy in everyday native Tamil words rather than English words sp
 
 export interface HeroBrief {
   description: string;
+  /** Heroes that can share the home carousel with this one */
+  neighbours: { title: string; theme: HeroTheme }[];
+}
+
+// Slides side by side must not look like one festival, so the designer steers clear of the others' looks
+function neighbourNote(neighbours: HeroBrief["neighbours"]) {
+  if (neighbours.length === 0) return "";
+  const looks = neighbours.map((n) => `- ${n.title}: ${n.theme.background}, ${n.theme.font ?? "PLAYFAIR"}`).join("\n");
+  return `\n\nThese heroes can share the home carousel with this one. Pick a themeColor from a clearly different hue `
+    + `family than every one of them, and a font none of them uses (if all four are taken, the one used least):\n${looks}`;
 }
 
 export async function designHero(brief: HeroBrief, candidates: SubcategoryCandidate[]): Promise<HeroDesign> {
@@ -69,7 +80,7 @@ export async function designHero(brief: HeroBrief, candidates: SubcategoryCandid
     output_config: { effort: "medium", format: betaZodOutputFormat(HeroSchema) },
     messages: [{
       role: "user",
-      content: `${brief.description}\n\nIn-stock subcategories (id | department > category > subcategory (product count)):\n${catalog}`,
+      content: `${brief.description}${neighbourNote(brief.neighbours)}\n\nIn-stock subcategories (id | department > category > subcategory (product count)):\n${catalog}`,
     }],
   });
   if (response.stop_reason === "refusal" || !response.parsed_output) {

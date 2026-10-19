@@ -42,7 +42,7 @@ export async function curateEvent(prisma: PrismaClient, org: CurationOrg, event:
       en: { title: curation.title, subtitle: curation.subtitle },
       ta: { title: curation.titleTa, subtitle: curation.subtitleTa },
     }, slug, log),
-    buildHero(prisma, org.id, describeEvent(event), slug),
+    buildHero(prisma, org.id, describeEvent(event), slug, { startsAt: liveFrom(event), endsAt: event.endsAt }),
   ]);
   if (!hero) log("Hero designer found no tile themes; the home screen keeps its banners");
   const translations = { ta: { title: curation.titleTa, subtitle: curation.subtitleTa } };

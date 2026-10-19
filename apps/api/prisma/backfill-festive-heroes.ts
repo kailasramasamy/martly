@@ -1,5 +1,6 @@
 /**
- * Paints festive home heroes for live and upcoming festival collections curated before heroes existed.
+ * Paints festive home heroes for live and upcoming festival collections that have none, or only the older style
+ * (a painted background with no kicker line). Earliest first, so each one is designed against those before it.
  * Run: npx tsx prisma/backfill-festive-heroes.ts   (point DATABASE_URL at the target DB)
  */
 import dotenv from "dotenv";
@@ -18,12 +19,12 @@ async function main() {
     where: {
       isActive: true,
       kind: { in: ["OCCASION", "SEASON"] },
-      heroImageUrl: null,
+      OR: [{ heroImageUrl: null }, { heroKicker: null }],
       organizationId: { not: null },
-      OR: [{ endsAt: null }, { endsAt: { gte: new Date() } }],
+      AND: { OR: [{ endsAt: null }, { endsAt: { gte: new Date() } }] },
     },
     include: { festivalEvent: { select: { name: true, guidance: true } } },
-    orderBy: { endsAt: "asc" },
+    orderBy: { startsAt: { sort: "asc", nulls: "first" } },
   });
   console.log(`${collections.length} collections need a hero`);
   for (const collection of collections) {

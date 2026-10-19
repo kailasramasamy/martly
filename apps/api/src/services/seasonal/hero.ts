@@ -17,10 +17,32 @@ export interface HeroDraft {
   tiles: { title: string; translations: { ta: { title: string } }; imageUrl: string; subcategoryIds: string[]; sortOrder: number }[];
 }
 
+export type HeroWindow = { id?: string; startsAt: Date | null; endsAt: Date | null };
+
+// The org's other heroes live at some point of this window, which can share the home carousel with it
+async function neighbourLooks(prisma: PrismaClient, organizationId: string, window: HeroWindow) {
+  const rows = await prisma.collection.findMany({
+    where: {
+      organizationId, isActive: true, heroImageUrl: { not: null }, id: window.id ? { not: window.id } : undefined,
+      AND: [
+        window.endsAt ? { OR: [{ startsAt: null }, { startsAt: { lte: window.endsAt } }] } : {},
+        window.startsAt ? { OR: [{ endsAt: null }, { endsAt: { gte: window.startsAt } }] } : {},
+      ],
+    },
+    select: { heroTitle: true, heroTheme: true },
+  });
+  return rows.map((r) => ({ title: r.heroTitle ?? "", theme: r.heroTheme as unknown as HeroTheme }));
+}
+
 /** Designs and paints the festive home hero. Null when the catalog can't fill a single row of tiles. */
-export async function buildHero(prisma: PrismaClient, organizationId: string, description: string, slug: string): Promise<HeroDraft | null> {
-  const candidates = await orgSubcategoryCandidates(prisma, organizationId);
-  const design = await designHero({ description }, candidates);
+export async function buildHero(
+  prisma: PrismaClient, organizationId: string, description: string, slug: string, window: HeroWindow,
+): Promise<HeroDraft | null> {
+  const [candidates, neighbours] = await Promise.all([
+    orgSubcategoryCandidates(prisma, organizationId),
+    neighbourLooks(prisma, organizationId, window),
+  ]);
+  const design = await designHero({ description, neighbours }, candidates);
   if (design.tiles.length === 0) return null;
 
   const heroTheme = { ...stripTheme(design.themeColor), font: design.font };
@@ -67,7 +89,10 @@ export function heroFields(hero: HeroDraft | null) {
   };
 }
 
-type HeroSource = { id: string; slug: string; title: string; subtitle: string | null; organizationId: string; translations: unknown; festivalEvent: { name: string; guidance: string | null } | null };
+type HeroSource = {
+  id: string; slug: string; title: string; subtitle: string | null; organizationId: string; translations: unknown;
+  startsAt: Date | null; endsAt: Date | null; festivalEvent: { name: string; guidance: string | null } | null;
+};
 
 /** Repaints a collection's hero from scratch, e.g. for collections curated before heroes existed. */
 export async function regenerateHero(prisma: PrismaClient, collection: HeroSource) {
@@ -77,7 +102,7 @@ export async function regenerateHero(prisma: PrismaClient, collection: HeroSourc
     `Collection: ${collection.title}${collection.subtitle ? ` (${collection.subtitle})` : ""}`,
     event?.guidance ? `Guidance: ${event.guidance}` : null,
   ].filter(Boolean).join("\n");
-  const hero = await buildHero(prisma, collection.organizationId, description, collection.slug);
+  const hero = await buildHero(prisma, collection.organizationId, description, collection.slug, collection);
   await saveHero(prisma, collection, hero);
   return hero;
 }

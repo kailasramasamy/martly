@@ -2,6 +2,7 @@ import type { Prisma } from "../../../generated/prisma/client.js";
 import { promoOfferLabel } from "./campaign-look.js";
 import { liveWindow } from "../store-feed.js";
 import { DEFAULT_LAYOUT } from "./default-layout.js";
+import { festiveHeroesFor } from "./resolvers/system.js";
 import type { LayoutEntry, ResolveContext } from "./types.js";
 
 export const SECTION_INCLUDE = { items: { orderBy: { sortOrder: "asc" } } } satisfies Prisma.HomeSectionInclude;
@@ -54,7 +55,7 @@ async function liveCampaigns(ctx: ResolveContext, placed: Set<string>): Promise<
 async function otherCollections(ctx: ResolveContext, placed: Set<string>): Promise<LayoutEntry[]> {
   const collections = await ctx.prisma.collection.findMany({
     where: {
-      isActive: true, kind: { not: "PROMO" }, heroImageUrl: null, id: { notIn: [...placed] },
+      isActive: true, kind: { not: "PROMO" }, id: { notIn: [...placed] },
       OR: orgOrGlobal(ctx.store.organizationId), AND: liveWindow(ctx.now),
     },
     orderBy: [{ sortOrder: "asc" }, { id: "asc" }],
@@ -68,7 +69,12 @@ async function otherCollections(ctx: ResolveContext, placed: Set<string>): Promi
 
 /** The layout as the app sees it: automatic sections replaced by the cards and rows they stand for. */
 export async function expandLayout(ctx: ResolveContext, layout: LayoutEntry[]): Promise<LayoutEntry[]> {
-  const placed = new Set(layout.flatMap((e) => [e.collectionId, ...e.items.map((i) => i.collectionId)]).filter((id): id is string => !!id));
+  // Festivals in the hero carousel are placed; ones it has no room for fall through to plain rows
+  const heroes = layout.some((e) => e.type === "FESTIVE_HERO") ? await festiveHeroesFor(ctx) : [];
+  const placed = new Set([
+    ...heroes.map((h) => h.id),
+    ...layout.flatMap((e) => [e.collectionId, ...e.items.map((i) => i.collectionId)]).filter((id): id is string => !!id),
+  ]);
   const expanded = await Promise.all(layout.map((entry) => {
     if (entry.type === "LIVE_CAMPAIGNS") return liveCampaigns(ctx, placed);
     if (entry.type === "OTHER_COLLECTIONS") return otherCollections(ctx, placed);
