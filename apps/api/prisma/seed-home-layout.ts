@@ -87,6 +87,11 @@ async function rows(organizationId: string, previous: Map<string | null, Config>
     slug: "fresh-fruit-basket-demo-grocers", title: "Fresh Fruit Basket", subtitle: "Picked for freshness", kind: "STANDARD",
     groups: await pickProducts(prisma, ["Banana", "Apple", "Grapes"], 4),
   });
+  // A row of chips, which carries the seeded Lay's sponsored product
+  const crunch = await upsertCollection(prisma, organizationId, {
+    slug: "crunch-time-demo-grocers", title: "Crunch time", subtitle: "Chips, nachos and puffs", kind: "STANDARD",
+    groups: await pickProducts(prisma, ["Potato Chips", "Tortilla & Nachos", "Puffs & Rings", "Kurkure & Extruded Snacks"], 3),
+  });
   const fruitArt = reusableArt(previous.get("Fresh Fruit Basket"), "headerImageUrl") ?? await paintArt("fruit-basket", [
     "A glossy cut-out illustration of a wicker basket overflowing with fresh apples, bananas, grapes and oranges.",
     "Soft studio light, gentle contact shadow, isolated on a fully transparent background. No text, logos or people.",
@@ -98,6 +103,7 @@ async function rows(organizationId: string, previous: Map<string | null, Config>
   return {
     best: { type: "PRODUCT_ROW", title: "Best Sellers", collectionId: BEST_SELLERS_ID, config: { headerStyle: "BANNER", headerImageUrl: bestArt, tint: "#fef3c7", maxProducts: 12 } } as Planned,
     value: { type: "PRODUCT_ROW", title: "Value Picks", collectionId: valuePicks.collection.id, config: { headerStyle: "PLAIN", maxProducts: 12 } } as Planned,
+    crunch: { type: "PRODUCT_ROW", title: "Crunch time", collectionId: crunch.collection.id, config: { headerStyle: "PLAIN", maxProducts: 12 } } as Planned,
     fruit: { type: "PRODUCT_ROW", title: "Fresh Fruit Basket", collectionId: fruit.collection.id, config: { headerStyle: "BANNER", headerImageUrl: fruitArt, tint: "#dcfce7", maxProducts: 12 } } as Planned,
   };
 }
@@ -125,7 +131,7 @@ async function main() {
     if (e.type === "DEPARTMENT_GRID") return [base, p3.stores];
     if (e.type === "TIME_PICKS") return [base, p3.explore];
     if (e.type === "MEMBER_CHIPS") return [base, pcw, snack, combo];
-    if (e.type === "BUY_AGAIN") return [base, r.best, p2.tabs, r.value, r.fruit];
+    if (e.type === "BUY_AGAIN") return [base, r.best, p2.tabs, r.value, r.crunch, r.fruit];
     if (e.type === "HERO_BANNERS") return [base, p2.deals];
     if (e.type === "OTHER_COLLECTIONS") return [base, ...p2.brands];
     if (e.type === "RECIPES") return [base, p2.directory];

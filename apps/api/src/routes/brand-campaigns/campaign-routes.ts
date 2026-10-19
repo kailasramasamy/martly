@@ -1,4 +1,5 @@
 import type { FastifyInstance, FastifyReply, FastifyRequest, preHandlerHookHandler } from "fastify";
+import { BRAND_PRODUCT_KINDS } from "@martly/shared/constants";
 import { billingProfileSchema, brandCampaignSchema, verifyAdPaymentSchema } from "@martly/shared/schemas";
 import type { BrandCampaignStatus } from "@martly/shared/constants";
 import type { Prisma } from "../../../generated/prisma/client.js";
@@ -11,7 +12,6 @@ import { campaignResults, claimsCsv } from "../../services/brand-campaigns/repor
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { getMarketingConfig } from "../../services/marketing/config.js";
 
-const BRAND_KINDS = ["BRAND_BANNER", "BRAND_TAKEOVER", "BRAND_PROMOTION", "BRAND_CPM"] as const;
 const DETAIL_INCLUDE = {
   brand: { select: { id: true, name: true, imageUrl: true } },
   product: { select: { id: true, code: true, name: true, kind: true, price: true, durationDays: true, viewsPerUnit: true } },
@@ -53,7 +53,7 @@ const listRow = (c: Row) => ({
 function readRoutes(app: FastifyInstance, scope: CampaignScope, { load, detail, opts }: ReturnType<typeof campaignContext>) {
   app.get("/packages", opts, async () => {
     const [products, { gstPercent }] = await Promise.all([
-      app.prisma.adProduct.findMany({ where: { kind: { in: [...BRAND_KINDS] }, isActive: true }, orderBy: { sortOrder: "asc" } }),
+      app.prisma.adProduct.findMany({ where: { kind: { in: [...BRAND_PRODUCT_KINDS] }, isActive: true }, orderBy: { sortOrder: "asc" } }),
       getMarketingConfig(app.prisma),
     ]);
     return { success: true, data: products.map((p) => ({ ...p, price: Number(p.price), gstPercent })) };

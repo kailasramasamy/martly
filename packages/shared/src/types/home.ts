@@ -165,6 +165,25 @@ export type HomeSection<P = unknown> =
   | TileGridSection
   | SystemSection;
 
+/** An advertised coupon as the shopper sees it: on Home's offer cards and in checkout's offer list */
+export interface CouponOffer {
+  code: string;
+  /** Headline, e.g. "Flat \u20B950 off"; made from the discount when the coupon has none */
+  title: string;
+  description: string | null;
+  discountType: "FLAT" | "PERCENTAGE";
+  discountValue: number;
+  minOrderAmount: number | null;
+  maxDiscount: number | null;
+  expiresAt: string | null;
+  /** With a cart amount: whether it applies now, else what's missing */
+  eligible: boolean;
+  /** Cart amount still needed to unlock it */
+  shortBy: number | null;
+  /** What the coupon takes off the given cart amount, when it applies */
+  discount: number | null;
+}
+
 /** Page-level settings sent with the first page of sections */
 export interface HomeChrome {
   /** Festive theme for the header while a festival hero leads the page */

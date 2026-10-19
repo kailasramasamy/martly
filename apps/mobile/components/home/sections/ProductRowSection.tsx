@@ -26,8 +26,8 @@ export const ProductRowSection = memo(function ProductRowSection({ section }: { 
 });
 
 const styles = StyleSheet.create({
-  section: { marginTop: 24 },
-  band: { paddingTop: 12, paddingBottom: 16 },
+  section: { marginTop: 16 },
+  band: { paddingTop: 10, paddingBottom: 12 },
   // Room under the raised cards so their shadow isn't clipped by the rail
-  bandRail: { paddingBottom: 12 },
+  bandRail: { paddingBottom: 8 },
 });

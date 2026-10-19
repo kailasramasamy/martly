@@ -21,6 +21,7 @@ export const CouponList = () => {
         <Table.Column dataIndex="expiresAt" title="Expires" render={(v: string | null) =>
           v ? <DateField value={v} format="DD MMM YYYY" /> : "No expiry"
         } />
+        <Table.Column dataIndex="showOnHome" title="On Home" render={(v: boolean) => (v ? <Tag color="green">On Home</Tag> : "—")} />
         <Table.Column dataIndex="isActive" title="Active" render={(v: boolean, r: any) =>
           <Switch size="small" checked={v} onChange={(checked) =>
             update({ resource: "coupons", id: r.id, values: { isActive: checked } })

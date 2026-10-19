@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useFocusEffect } from "expo-router";
 import {
   View,
@@ -21,6 +21,7 @@ import { useCart } from "../lib/cart-context";
 import { useStore } from "../lib/store-context";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { api } from "../lib/api";
+import { AvailableOffers } from "../components/checkout/AvailableOffers";
 import { SlotGrid, isBookable, type AvailableSlot } from "../components/checkout/SlotGrid";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -60,7 +61,7 @@ function CheckoutScreen() {
   const toast = useToast();
   const insets = useSafeAreaInsets();
   const keyboard = useKeyboardReveal();
-  const { storeId, storeName, items, totalAmount, itemCount } = useCart();
+  const { storeId, storeName, items, totalAmount, itemCount, pendingCoupon, setPendingCoupon } = useCart();
   const { selectedStore } = useStore();
 
   const minOrderAmount = selectedStore?.minOrderAmount ? Number(selectedStore.minOrderAmount) : null;
@@ -292,18 +293,22 @@ function CheckoutScreen() {
     }
   }, [isNotServiceable, fulfillmentType, addresses, addressLookups, hasAnyServiceableAddress]);
 
-  const handleApplyCoupon = async () => {
-    if (!couponCode.trim()) return;
+  const applyCoupon = async (rawCode: string) => {
+    const code = rawCode.trim();
+    if (!code) return;
+    setCouponCode(code);
     setApplyingCoupon(true);
     setCouponError("");
     setCouponResult(null);
     try {
       const res = await api.post<CouponValidation>("/api/v1/coupons/validate", {
-        code: couponCode.trim(),
+        code,
         storeId,
         orderAmount: totalAmount,
       });
       setCouponResult(res.data);
+      // Whatever is applied becomes the saved coupon, so Home's offer cards show the right one as saved
+      setPendingCoupon(res.data.code);
     } catch (e: unknown) {
       setCouponError(e instanceof Error ? e.message : "Invalid coupon");
     } finally {
@@ -311,7 +316,18 @@ function CheckoutScreen() {
     }
   };
 
+  const handleApplyCoupon = () => applyCoupon(couponCode);
+
+  // A coupon saved from Home is tried once on arrival; if it fails the reason shows and it stays selectable
+  const triedPending = useRef(false);
+  useEffect(() => {
+    if (!pendingCoupon || !storeId || triedPending.current) return;
+    triedPending.current = true;
+    void applyCoupon(pendingCoupon);
+  }, [pendingCoupon, storeId]);
+
   const handleRemoveCoupon = () => {
+    setPendingCoupon(null);
     setCouponResult(null);
     setCouponCode("");
     setCouponError("");
@@ -569,6 +585,7 @@ function CheckoutScreen() {
             ))}
           </View>
         </View>
+
 
         {/* Fulfillment Type Selector */}
         <View style={styles.section}>
@@ -1000,6 +1017,8 @@ function CheckoutScreen() {
               </TouchableOpacity>
             </View>
           ) : (
+            <>
+            <AvailableOffers storeId={storeId} orderAmount={totalAmount} disabled={applyingCoupon} onApply={applyCoupon} />
             <View style={styles.couponRow}>
               <TextInput
                 style={styles.couponInput}
@@ -1021,6 +1040,7 @@ function CheckoutScreen() {
                 )}
               </TouchableOpacity>
             </View>
+            </>
           )}
           {couponError ? <Text style={styles.couponError}>{couponError}</Text> : null}
         </View>

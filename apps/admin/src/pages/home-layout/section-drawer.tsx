@@ -12,7 +12,7 @@ const EDITABLE: HomeSectionType[] = [
   "FESTIVE_HERO", "PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID",
 ];
 const COMING_SOON: HomeSectionType[] = [
-  "OFFERS", "BRAND_POSTERS", "PERSONALISED",
+  "PERSONALISED",
 ];
 const SYSTEM = (Object.keys(HomeSectionType) as HomeSectionType[]).filter((t) => !EDITABLE.includes(t) && !COMING_SOON.includes(t));
 

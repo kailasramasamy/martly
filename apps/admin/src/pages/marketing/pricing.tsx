@@ -35,7 +35,7 @@ function cleanSlotLimits(limits: SlotLimits | undefined): SlotLimits {
 
 function SlotLimitsCard() {
   return (
-    <Card title="Home carousel limits (brand campaigns)" size="small" style={{ marginBottom: 16 }} extra={<Text type="secondary">Brand banners that can run at once per placement; empty means no cap</Text>}>
+    <Card title="Home carousel limits (brand campaigns)" size="small" style={{ marginBottom: 16 }} extra={<Text type="secondary">Brand banners that can run at once per placement (per category for Sponsored product and Category top); empty means no cap</Text>}>
       {Object.entries(BannerPlacementLabels).map(([placement, label]) => (
         <Row gutter={8} key={placement} align="middle">
           <Col span={14}><Text>{label}</Text></Col>

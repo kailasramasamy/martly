@@ -8,7 +8,7 @@ import { productRow } from "./resolvers/product-row.js";
 import { tabbedRow } from "./resolvers/tabbed-row.js";
 import { tileGrid } from "./resolvers/tile-grid.js";
 import {
-  buyAgain, clientFetched, deals, departmentGrid, festiveHero, heroBanners, midBanners, recipes, timePicks,
+  brandPosters, buyAgain, clientFetched, deals, departmentGrid, festiveHero, heroBanners, midBanners, offers, recipes, timePicks,
 } from "./resolvers/system.js";
 
 // Types later phases build resolve to nothing, so a layout that already lists them simply skips them
@@ -30,8 +30,8 @@ export const RESOLVERS: Record<HomeSectionType, SectionResolver> = {
   LIVE_CAMPAIGNS: notBuilt,
   OTHER_COLLECTIONS: notBuilt,
   CATEGORY_DIRECTORY: categoryDirectory,
-  OFFERS: notBuilt,
-  BRAND_POSTERS: notBuilt,
+  OFFERS: offers,
+  BRAND_POSTERS: brandPosters,
   PERSONALISED: notBuilt,
   PRODUCT_ROW: productRow,
   CAMPAIGN_CARD: campaignCard,

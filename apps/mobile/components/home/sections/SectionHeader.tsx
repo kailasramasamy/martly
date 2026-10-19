@@ -6,7 +6,7 @@ import { colors, fonts } from "../../../constants/theme";
 
 const H_PADDING = 16;
 const BANNER_TINT = "#ccfbf1";
-const BANNER_ART = 96;
+const BANNER_ART = 76;
 const ARTWORK_ASPECT = 3;
 
 interface Props {
@@ -64,18 +64,18 @@ export const SectionHeader = memo(function SectionHeader(props: Props) {
 });
 
 const styles = StyleSheet.create({
-  plain: { paddingHorizontal: H_PADDING, marginBottom: 12 },
+  plain: { paddingHorizontal: H_PADDING, marginBottom: 10 },
   plainRow: { flexDirection: "row", alignItems: "center", gap: 12 },
   plainTitle: { fontFamily: fonts.extrabold, fontSize: 18, color: colors.text, letterSpacing: -0.3, flexShrink: 1 },
   ruleClip: { flex: 1, height: 1, overflow: "hidden", marginTop: 2 },
   rule: { height: 2, borderWidth: 1, borderColor: colors.border, borderStyle: "dashed", borderRadius: 1 },
   subtitle: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, marginTop: 2 },
   banner: {
-    flexDirection: "row", alignItems: "center", marginHorizontal: H_PADDING, marginBottom: 12,
+    flexDirection: "row", alignItems: "center", marginHorizontal: H_PADDING, marginBottom: 8,
     borderRadius: 12, paddingLeft: 16, overflow: "hidden",
   },
-  bannerWithArt: { minHeight: BANNER_ART + 8 },
-  bannerText: { flex: 1, paddingVertical: 12 },
+  bannerWithArt: { minHeight: BANNER_ART + 4 },
+  bannerText: { flex: 1, paddingVertical: 8 },
   bannerTitle: { fontFamily: fonts.extrabold, fontSize: 20, color: colors.text, letterSpacing: -0.2 },
   bannerArt: { width: BANNER_ART, height: BANNER_ART, marginRight: 8 },
   artwork: { marginHorizontal: H_PADDING, marginBottom: 14, padding: 8, paddingBottom: 14, borderRadius: 16, alignItems: "center" },

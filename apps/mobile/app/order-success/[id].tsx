@@ -42,7 +42,7 @@ function OrderSuccessScreen() {
       fulfillmentType?: string;
     }>();
   const router = useRouter();
-  const { clearCart } = useCart();
+  const { clearCart, setPendingCoupon } = useCart();
 
   const [order, setOrder] = useState<OrderData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -59,9 +59,10 @@ function OrderSuccessScreen() {
     useCallback(() => {
       if (!cartCleared.current) {
         clearCart();
+        setPendingCoupon(null);
         cartCleared.current = true;
       }
-    }, [clearCart]),
+    }, [clearCart, setPendingCoupon]),
   );
 
   // Fetch order details

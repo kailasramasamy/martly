@@ -14,6 +14,10 @@ export interface HomeSectionEnv {
   festiveHeroIds: string[];
   /** The festive hero in view, whose colours the header takes */
   onFestiveTheme: (theme: HomeTheme) => void;
+  /** The festive hero slide's colours while a festival leads the page */
+  festiveTheme: HomeTheme | null;
+  /** The section right under a leading festive hero, which continues its colour so the top reads as one block */
+  afterHeroId: string | null;
   /** Whether the festive hero is on screen; its carousel only advances by itself while it is */
   heroInView: boolean;
   /** When the festive block runs up behind the overlaid header: the header's height to clear; null when the

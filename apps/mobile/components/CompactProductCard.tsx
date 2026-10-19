@@ -5,9 +5,10 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../constants/theme";
 import { useLanguage } from "../lib/language-context";
 import { FoodTypeMark } from "./FoodTypeMark";
-import { BestsellerBadge, UnitPrice } from "./ProductBadges";
+import { AdBadge, BestsellerBadge, UnitPrice } from "./ProductBadges";
 import { SizeChips, SizePager, maxChips, sizeImage } from "./PackSizes";
 import { bySize, packSaving } from "../lib/pack-sizes";
+import { useSponsoredTracking } from "../lib/use-sponsored";
 import type { StoreProduct } from "../lib/types";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
@@ -109,8 +110,8 @@ function CompactImage({ item, primaryId, outOfStock, wished, onHeart, pager }: {
 }
 
 // Sizes sit as chips where a single-size card shows its pack size; picking one switches the card to that pack
-function CompactDetails({ item, sizes, onSelectSize, onMoreSizes, isMember }: {
-  item: StoreProduct; sizes: StoreProduct[]; onSelectSize: (id: string) => void; onMoreSizes?: () => void; isMember?: boolean;
+function CompactDetails({ item, sizes, onSelectSize, onMoreSizes, isMember, sponsored }: {
+  item: StoreProduct; sizes: StoreProduct[]; onSelectSize: (id: string) => void; onMoreSizes?: () => void; isMember?: boolean; sponsored: boolean;
 }) {
   const { getLocalizedName } = useLanguage();
   const { shown, struck } = resolvePrices(item, isMember);
@@ -119,6 +120,7 @@ function CompactDetails({ item, sizes, onSelectSize, onMoreSizes, isMember }: {
   const rated = (item.product.reviewCount ?? 0) > 0 && (item.product.averageRating ?? 0) > 0;
   return (
     <>
+      {sponsored && <AdBadge />}
       {sizes.length > 1 ? (
         <SizeChips
           sizes={sizes} selectedId={item.id} maxChips={maxChips(COMPACT_CARD_WIDTH)}
@@ -155,11 +157,13 @@ export function CompactProductCard(props: CompactProductCardProps) {
   const quantity = props.quantityOf?.(item.id) ?? props.quantity ?? 0;
   const available = item.availableStock ?? (item.stock - (item.reservedStock ?? 0));
   const heartTapped = useRef(false);
+  const tapSponsored = useSponsoredTracking(props.item.sponsored, storeId);
 
   const openProduct = () => {
     if (heartTapped.current) { heartTapped.current = false; return; }
     const params: Record<string, string> = { id: item.product.id };
     if (storeId) params.storeId = storeId;
+    tapSponsored();
     props.onOpen?.();
     router.push({ pathname: "/product/[id]", params });
   };
@@ -188,6 +192,7 @@ export function CompactProductCard(props: CompactProductCardProps) {
       <View style={styles.content}>
         <CompactDetails
           item={item} sizes={sizes} onSelectSize={setSelectedId} onMoreSizes={props.onShowVariants} isMember={props.isMember}
+          sponsored={!!props.item.sponsored}
         />
       </View>
     </TouchableOpacity>
@@ -231,7 +236,7 @@ const styles = StyleSheet.create({
   addBtn: {
     width: CONTROL_WIDTH, height: CONTROL_HEIGHT, borderRadius: 8, borderWidth: 1.5, borderColor: colors.primary,
     backgroundColor: "#fff", alignItems: "center", justifyContent: "center",
-    shadowColor: "#0f172a", shadowOpacity: 0.08, shadowRadius: 4, shadowOffset: { width: 0, height: 2 }, elevation: 2,
+    borderRightWidth: 3, borderBottomWidth: 3,
   },
   addBtnDisabled: { borderColor: colors.border, backgroundColor: colors.surface },
   addText: { fontFamily: fonts.extrabold, fontSize: 12, color: colors.primary, letterSpacing: 0.3 },

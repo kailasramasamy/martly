@@ -7,6 +7,7 @@ import { storeBanners } from "../../marketing/banner-feed.js";
 import { buyAgainProducts, activeDealRows, pastOrderLines } from "../feed-queries.js";
 import { sectionBase, type ResolveContext, type ResolvedSection, type SectionResolver } from "../types.js";
 import { recipeSummaries } from "./recipes.js";
+import { couponOffers, HOME_OFFER_LIMIT } from "../../coupon-offers.js";
 
 function system(entry: Parameters<SectionResolver>[1], data: Record<string, unknown>): ResolvedSection {
   return { ...sectionBase(entry), type: entry.type, data } as ResolvedSection;
@@ -30,12 +31,20 @@ export const festiveHero: SectionResolver = async (ctx, entry) => {
   return heroes.length > 0 ? system(entry, { hero: heroes[0], heroes }) : null;
 };
 
-const bannersFor = (placement: "HERO_CAROUSEL" | "MID_PAGE"): SectionResolver => async (ctx, entry) => {
+const bannersFor = (placement: "HERO_CAROUSEL" | "MID_PAGE" | "HOME_POSTER"): SectionResolver => async (ctx, entry) => {
   const banners = await storeBanners(ctx.prisma, ctx.store, [placement]);
   return banners.length > 0 ? system(entry, { banners }) : null;
 };
 export const heroBanners = bannersFor("HERO_CAROUSEL");
 export const midBanners = bannersFor("MID_PAGE");
+// Brand posters run through the same feed, so the org's brand-ads switch, blocked brands and slot limits apply
+export const brandPosters = bannersFor("HOME_POSTER");
+
+// Advertised coupons the shopper can still use; tapping one saves it for checkout
+export const offers: SectionResolver = async (ctx, entry) => {
+  const list = await couponOffers(ctx.prisma, { organizationId: ctx.store.organizationId, userId: ctx.userId, limit: HOME_OFFER_LIMIT });
+  return list.length > 0 ? system(entry, { offers: list }) : null;
+};
 
 export const buyAgain: SectionResolver = async (ctx, entry) => {
   if (!ctx.userId) return null;

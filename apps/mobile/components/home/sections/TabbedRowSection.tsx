@@ -60,11 +60,11 @@ export const TabbedRowSection = memo(function TabbedRowSection({ section }: { se
 });
 
 const styles = StyleSheet.create({
-  section: { marginTop: 24 },
-  panel: { paddingTop: 14, paddingBottom: 16 },
+  section: { marginTop: 16 },
+  panel: { paddingTop: 10, paddingBottom: 12 },
   panelOpen: { paddingTop: 12 },
   // Room under the raised cards so their shadow isn't clipped by the rail
-  rail: { paddingBottom: 12 },
+  rail: { paddingBottom: 8 },
   // The previous tab's products stay put, faded, until the new tab's arrive
   loading: { opacity: 0.4 },
 });

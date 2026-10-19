@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { View, Text, FlatList, Dimensions, StyleSheet } from "react-native";
 import { HeroBannerSlide } from "../HeroBannerSlide";
 import { colors, fonts } from "../../constants/theme";
@@ -28,6 +28,34 @@ function slidesOf(banners: Banner[]): Slide[] {
   return copies.flatMap((copy) => banners.map((banner) => ({ key: `${copy}-${banner.id}`, banner })));
 }
 
+// Memoised so a rotation re-renders only the two slides whose "visible" flag changes, not every copy
+const SlideCell = memo(function SlideCell({ banner, visible, onPress }: { banner: Banner; visible: boolean; onPress: (banner: Banner) => void }) {
+  return (
+    <View style={styles.slide}>
+      <HeroBannerSlide banner={banner} width={CARD_WIDTH} onPress={onPress} visible={visible} />
+    </View>
+  );
+});
+
+/** Advances the carousel every few seconds while it loops */
+function useAutoAdvance(position: number, count: number, jump: (to: number, animated: boolean) => void, setPosition: (p: number) => void) {
+  const loop = count > 1;
+  // Restarts on every change, so a manual swipe gets a full interval before the next auto-advance. It always animates
+  // forward and lets settle() re-centre on the middle copy when the scroll ends: jumping back first would fire that
+  // same scroll-end on iOS, which snapped the carousel straight back onto the last banner
+  useEffect(() => {
+    if (!loop) return;
+    const timer = setTimeout(() => {
+      // Only if settle() never re-centred (no scroll-end event) does it step back a copy, so it never runs off the list
+      const from = position + 1 >= 3 * count ? position - count : position;
+      if (from !== position) jump(from, false);
+      jump(from + 1, true);
+      setPosition(from + 1);
+    }, ROTATE_MS);
+    return () => clearTimeout(timer);
+  }, [position, count, loop]);
+}
+
 /**
  * A centred, snapping banner carousel that loops: it starts in the middle copy and, whenever it drifts into an
  * outer copy, jumps without animation to the same banner in the middle. The "3/8" pager advances on its own.
@@ -40,18 +68,12 @@ export function BannerCarousel({ banners, onPress }: Props) {
   const listRef = useRef<FlatList<Slide>>(null);
   const jump = (to: number, animated: boolean) => listRef.current?.scrollToOffset({ offset: to * INTERVAL, animated });
 
-  // Restarts on every change, so a manual swipe gets a full interval before the next auto-advance
-  useEffect(() => {
-    if (!loop) return;
-    const timer = setTimeout(() => {
-      // Near the end of the middle copy, step back a copy first so the animation never runs off the list
-      const from = position + 1 >= 2 * count ? position - count : position;
-      if (from !== position) jump(from, false);
-      jump(from + 1, true);
-      setPosition(from + 1);
-    }, ROTATE_MS);
-    return () => clearTimeout(timer);
-  }, [position, count, loop]);
+  useAutoAdvance(position, count, jump, setPosition);
+
+  const renderSlide = useCallback(
+    ({ item, index }: { item: Slide; index: number }) => <SlideCell banner={item.banner} visible={index === position} onPress={onPress} />,
+    [position, onPress],
+  );
 
   const settle = (x: number) => {
     const at = Math.round(x / INTERVAL);
@@ -74,11 +96,8 @@ export function BannerCarousel({ banners, onPress }: Props) {
         contentOffset={{ x: (loop ? count : 0) * INTERVAL, y: 0 }}
         onLayout={() => loop && jump(position, false)}
         onMomentumScrollEnd={(e) => settle(e.nativeEvent.contentOffset.x)}
-        renderItem={({ item, index }) => (
-          <View style={styles.slide}>
-            <HeroBannerSlide banner={item.banner} width={CARD_WIDTH} onPress={onPress} visible={index === position} />
-          </View>
-        )}
+        extraData={position}
+        renderItem={renderSlide}
       />
       {loop && <Pager index={position % count} count={count} />}
     </View>

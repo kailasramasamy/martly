@@ -4,7 +4,7 @@ import { getMarketingConfig } from "./config.js";
 const FEED_SELECT = {
   id: true, title: true, subtitle: true, imageUrl: true, imageUrls: true, textInImage: true, placement: true,
   actionType: true, actionTarget: true, sponsorType: true, brandId: true, organizationId: true, viewCap: true, viewsServed: true,
-  sortOrder: true, createdAt: true,
+  sortOrder: true, createdAt: true, categoryId: true,
 } satisfies Prisma.BannerSelect;
 
 type FeedRow = Prisma.BannerGetPayload<{ select: typeof FEED_SELECT }>;
@@ -19,13 +19,16 @@ async function stockedBrands(prisma: PrismaClient, storeId: string, brandIds: st
   return new Set(rows.map((r) => r.product.brandId).filter((id): id is string => !!id));
 }
 
+// Placements sold per category, whose caps count per category as booking does
+const PER_CATEGORY = new Set<string>(["CATEGORY_TOP", "SPONSORED_PRODUCT"]);
+
 /** Applies the per-placement, per-sponsor caps from the pricing settings, keeping the feed's order */
 function capSlots(rows: FeedRow[], limits: Partial<Record<string, Partial<Record<string, number>>>>) {
   const seen = new Map<string, number>();
   return rows.filter((b) => {
     const cap = limits[b.placement]?.[b.sponsorType];
     if (cap === undefined) return true;
-    const key = `${b.placement}:${b.sponsorType}`;
+    const key = `${b.placement}:${b.sponsorType}${PER_CATEGORY.has(b.placement) ? `:${b.categoryId}` : ""}`;
     const n = (seen.get(key) ?? 0) + 1;
     seen.set(key, n);
     return n <= cap;
@@ -78,5 +81,6 @@ export async function storeBanners(
   return capSlots(eligible, config.slotLimits).map((b) => ({
     id: b.id, title: b.title, subtitle: b.subtitle, imageUrl: b.imageUrl, imageUrls: b.imageUrls, textInImage: b.textInImage,
     placement: b.placement, actionType: b.actionType, actionTarget: b.actionTarget, sponsorType: b.sponsorType, brandId: b.brandId,
+    categoryId: b.categoryId,
   }));
 }

@@ -195,6 +195,10 @@ enum BannerPlacement {
   CATEGORY_TOP
   CART_UPSELL
   POPUP
+  /// Tall brand posters in a rail on Home
+  HOME_POSTER
+  /// A brand's product placed second in Home rows and category listings of its category, marked "Ad"
+  SPONSORED_PRODUCT
 }
 
 enum BannerActionType {
@@ -215,6 +219,7 @@ enum AdProductKind {
   BRAND_TAKEOVER
   BRAND_PROMOTION
   BRAND_CPM
+  BRAND_SPONSORED_PRODUCT
 }
 
 enum BillingInterval {
@@ -1030,7 +1035,11 @@ model CollectionItem {
 model Coupon {
   id             String       @id @default(uuid())
   code           String       @unique
+  /// Short headline for the offer card, e.g. "Flat ₹50 off"; falls back to one made from the discount
+  title          String?
   description    String?
+  /// Advertised to shoppers in Home's offers and checkout's offer list; otherwise used by typing its code
+  showOnHome     Boolean      @default(false) @map("show_on_home")
   discountType   DiscountType @map("discount_type")
   discountValue  Decimal      @map("discount_value") @db.Decimal(10, 2)
   minOrderAmount Decimal?     @map("min_order_amount") @db.Decimal(10, 2)

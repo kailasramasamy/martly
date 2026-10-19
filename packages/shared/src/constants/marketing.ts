@@ -7,6 +7,7 @@ export const AdProductKind = {
   BRAND_TAKEOVER: "BRAND_TAKEOVER",
   BRAND_PROMOTION: "BRAND_PROMOTION",
   BRAND_CPM: "BRAND_CPM",
+  BRAND_SPONSORED_PRODUCT: "BRAND_SPONSORED_PRODUCT",
 } as const;
 export type AdProductKind = (typeof AdProductKind)[keyof typeof AdProductKind];
 
@@ -18,6 +19,7 @@ export const AdProductKindLabels: Record<AdProductKind, string> = {
   BRAND_TAKEOVER: "Category takeover",
   BRAND_PROMOTION: "Brand promotion",
   BRAND_CPM: "Brand views (per 1,000)",
+  BRAND_SPONSORED_PRODUCT: "Sponsored product",
 };
 
 /** What an organisation's AI images were spent on (mirrors Prisma enum AiImagePurpose) */
@@ -45,7 +47,7 @@ export const AI_IMAGE_COST = {
 export const AI_IMAGES_LOW_SHARE = 0.2;
 
 /** Packages sold to brands, as opposed to store owners */
-export const BRAND_PRODUCT_KINDS: readonly AdProductKind[] = ["BRAND_BANNER", "BRAND_TAKEOVER", "BRAND_PROMOTION", "BRAND_CPM"];
+export const BRAND_PRODUCT_KINDS: readonly AdProductKind[] = ["BRAND_BANNER", "BRAND_TAKEOVER", "BRAND_PROMOTION", "BRAND_CPM", "BRAND_SPONSORED_PRODUCT"];
 
 export const AdOrderStatus = {
   PENDING: "PENDING",

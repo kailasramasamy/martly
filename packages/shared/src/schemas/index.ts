@@ -665,7 +665,11 @@ export type UpdateFestivalEventInput = z.infer<typeof updateFestivalEventSchema>
 // ── Coupon ──────────────────────────────────────────
 export const createCouponSchema = z.object({
   code: z.string().min(1).transform((v) => v.toUpperCase()),
+  /** Offer card headline, e.g. "Flat \u20B950 off" */
+  title: z.string().trim().max(40).nullish(),
   description: z.string().optional(),
+  /** Advertise it in Home's offers and checkout's offer list */
+  showOnHome: z.boolean().default(false),
   discountType: z.nativeEnum(DiscountType),
   discountValue: z.number().positive(),
   minOrderAmount: z.number().min(0).nullish(),
@@ -679,9 +683,16 @@ export const createCouponSchema = z.object({
 });
 export type CreateCouponInput = z.infer<typeof createCouponSchema>;
 
+export const availableCouponsQuerySchema = z.object({
+  storeId: z.string().uuid(),
+  orderAmount: z.coerce.number().min(0).optional(),
+});
+
 export const updateCouponSchema = z.object({
   code: z.string().min(1).transform((v) => v.toUpperCase()).optional(),
+  title: z.string().trim().max(40).nullish(),
   description: z.string().nullish(),
+  showOnHome: z.boolean().optional(),
   discountType: z.nativeEnum(DiscountType).optional(),
   discountValue: z.number().positive().optional(),
   minOrderAmount: z.number().min(0).nullish(),

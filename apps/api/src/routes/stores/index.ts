@@ -13,11 +13,19 @@ import { haversine } from "../../lib/geo.js";
 import { drivingDistances } from "../../services/driving-distance.js";
 import { searchStoreProducts } from "../../services/store-search.js";
 import { decorateStoreProducts, storeProductInclude } from "../../services/store-product-view.js";
+import { injectAd, listingAd, type SponsoredAd } from "../../services/sponsored.js";
+import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { getStoreDiscoveryInfo } from "../../services/store-discovery.js";
 import { catalogCoverage, type CatalogCoverage } from "../../services/catalog-coverage.js";
 import { recordOpeningStock } from "../../services/stock-ledger.js";
 import { notifyStoreStatusChange, notifyTeamMember } from "../../services/notify/team-alerts.js";
 import { categoryFacets, subcategoryIdsUnder } from "../../services/category-browse.js";
+
+/** A sponsored product's listings at the store, in the same shape as the rest of a category page */
+async function sponsoredRows(prisma: PrismaClient, storeId: string, productId: string) {
+  const rows = await prisma.storeProduct.findMany({ where: { storeId, productId, isActive: true }, include: storeProductInclude, orderBy: { price: "asc" } });
+  return decorateStoreProducts(prisma, rows);
+}
 
 export async function storeRoutes(app: FastifyInstance) {
   // List stores (scoped to user's org; guests see all active stores)
@@ -313,9 +321,15 @@ export async function storeRoutes(app: FastifyInstance) {
         { discountStart: { lte: now }, discountEnd: { gte: now } },
       ];
     }
+    // A plain category listing (no filters or sort the ad would break) carries one sponsored product, second
+    let ad: SponsoredAd | null = null;
     if (categoryId) {
       const subcategoryIds = await subcategoryIdsUnder(app.prisma, categoryId);
       where.product = { ...(where.product as Record<string, unknown> ?? {}), subcategoryId: { in: subcategoryIds } };
+      const plain = !hasDiscount && !sortBy && !brandId && !foodType && !productId && !productIds && !isFeatured;
+      ad = plain ? await listingAd(app.prisma, store, subcategoryIds) : null;
+      // Kept out of the regular results on every page, so it never shows twice
+      if (ad) where.productId = { notIn: [ad.productId] };
     }
     if (foodType) {
       where.product = { ...(where.product as Record<string, unknown> ?? {}), foodType };
@@ -334,7 +348,8 @@ export async function storeRoutes(app: FastifyInstance) {
       app.prisma.storeProduct.findMany({ where, skip, take: Number(pageSize), include: storeProductInclude, orderBy: [orderBy, { id: "asc" }] }),
       app.prisma.storeProduct.count({ where }),
     ]);
-    const data = await decorateStoreProducts(app.prisma, storeProducts);
+    const listed = await decorateStoreProducts(app.prisma, storeProducts);
+    const data = ad && Number(page) === 1 ? injectAd(listed, await sponsoredRows(app.prisma, store.id, ad.productId), ad) : listed;
 
     const response: PaginatedResponse<(typeof data)[0]> = {
       success: true,

@@ -107,9 +107,11 @@ function useSectionEnv(data: ReturnType<typeof useHomeData>, expandedHeader: num
     hasSubscriptions,
     festiveHeroIds,
     onFestiveTheme: setSlideTheme,
+    festiveTheme: festive,
+    afterHeroId: festive ? sections[1]?.id ?? null : null,
     heroInView,
     backdrop: festive && expandedHeader ? { top: expandedHeader } : null,
-  }), [selectedStore, memberStatus, hasSubscriptions, festiveHeroIds, festive, expandedHeader, heroInView]);
+  }), [selectedStore, memberStatus, hasSubscriptions, festiveHeroIds, festive, sections, expandedHeader, heroInView]);
   return { env, festive };
 }
 

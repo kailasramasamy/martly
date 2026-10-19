@@ -103,7 +103,8 @@ export const brandCampaignSchema = z.object({
   discountValue: z.coerce.number().positive().max(90).nullish(),
   quantity: z.coerce.number().int().min(1).max(52).default(1),
   startsAt: z.coerce.date(),
-}).refine((c) => c.imageUrl || c.brief, { message: "Upload an image or describe what the AI should make", path: ["imageUrl"] });
+  // A sponsored product's photo is its creative
+}).refine((c) => c.imageUrl || c.brief || c.actionType === "PRODUCT", { message: "Upload an image or describe what the AI should make", path: ["imageUrl"] });
 export type BrandCampaignInput = z.infer<typeof brandCampaignSchema>;
 
 export const reviewBrandCampaignSchema = z.object({

@@ -71,6 +71,8 @@ export interface StoreProduct {
   variant: Variant;
   pricing?: Pricing;
   product: Product;
+  /** Set on a paid placement; its banner counts the views and taps */
+  sponsored?: { bannerId: string };
 }
 
 export interface Translations {
@@ -185,7 +187,7 @@ export interface Banner {
   imageUrl: string;
   imageUrls: Record<string, string> | null;
   textInImage: boolean;
-  placement: "HERO_CAROUSEL" | "CATEGORY_STRIP" | "MID_PAGE" | "CATEGORY_TOP" | "CART_UPSELL" | "POPUP";
+  placement: "HERO_CAROUSEL" | "CATEGORY_STRIP" | "MID_PAGE" | "CATEGORY_TOP" | "CART_UPSELL" | "POPUP" | "HOME_POSTER" | "SPONSORED_PRODUCT";
   actionType: "CATEGORY" | "PRODUCT" | "COLLECTION" | "SEARCH" | "URL" | "BRAND" | "NONE";
   actionTarget: string | null;
   sponsorType?: "STORE" | "BRAND" | "PLATFORM";

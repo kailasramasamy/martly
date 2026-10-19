@@ -1,10 +1,12 @@
 import type { FastifyInstance, FastifyRequest } from "fastify";
-import { createCouponSchema, updateCouponSchema, applyCouponSchema } from "@martly/shared/schemas";
-import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
-import { authenticate } from "../../middleware/auth.js";
+import { createCouponSchema, updateCouponSchema, applyCouponSchema, availableCouponsQuerySchema } from "@martly/shared/schemas";
+import type { ApiResponse, CouponOffer, PaginatedResponse } from "@martly/shared/types";
+import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
+import { checkCoupon } from "../../services/coupons.js";
+import { couponOffers } from "../../services/coupon-offers.js";
 
 function canAccessCoupon(request: FastifyRequest, coupon: { organizationId: string | null }) {
   const user = getOrgUser(request);
@@ -89,6 +91,8 @@ export async function couponRoutes(app: FastifyInstance) {
         isActive: body.isActive,
         organizationId: orgId ?? undefined,
         description: body.description ?? undefined,
+        title: body.title ?? undefined,
+        showOnHome: body.showOnHome,
         minOrderAmount: body.minOrderAmount ?? undefined,
         maxDiscount: body.maxDiscount ?? undefined,
         usageLimit: body.usageLimit ?? undefined,
@@ -139,75 +143,35 @@ export async function couponRoutes(app: FastifyInstance) {
     return response;
   });
 
+  // Advertised coupons a shopper can use at a store; with the cart's amount, which apply now and what's missing
+  app.get<{ Querystring: { storeId?: string; orderAmount?: string } }>("/available", { preHandler: [authenticateOptional] }, async (request, reply) => {
+    const { storeId, orderAmount } = availableCouponsQuerySchema.parse(request.query);
+    const store = await app.prisma.store.findFirst({ where: { id: storeId, status: "ACTIVE" }, select: { organizationId: true } });
+    if (!store) return reply.notFound("Store not found");
+    const offers = await couponOffers(app.prisma, { organizationId: store.organizationId, userId: getOrgUser(request).sub, orderAmount });
+    return { success: true, data: offers } satisfies ApiResponse<CouponOffer[]>;
+  });
+
   // POST /validate - Validate coupon for checkout
   app.post("/validate", { preHandler: [authenticate] }, async (request, reply) => {
     const body = applyCouponSchema.parse(request.body);
     const user = request.user as { sub: string };
     const code = body.code.toUpperCase();
 
-    const coupon = await app.prisma.coupon.findUnique({ where: { code } });
-
-    if (!coupon) {
+    const [coupon, store] = await Promise.all([
+      app.prisma.coupon.findUnique({ where: { code } }),
+      app.prisma.store.findUnique({ where: { id: body.storeId }, select: { organizationId: true } }),
+    ]);
+    if (!coupon || !store) {
       return reply.status(400).send({ success: false, error: "Invalid Coupon", message: "Coupon not found", statusCode: 400 });
     }
-
-    if (!coupon.isActive) {
-      return reply.status(400).send({ success: false, error: "Invalid Coupon", message: "This coupon is no longer active", statusCode: 400 });
-    }
-
-    const now = new Date();
-    if (coupon.startsAt && now < coupon.startsAt) {
-      return reply.status(400).send({ success: false, error: "Invalid Coupon", message: "This coupon is not yet active", statusCode: 400 });
-    }
-    if (coupon.expiresAt && now > coupon.expiresAt) {
-      return reply.status(400).send({ success: false, error: "Invalid Coupon", message: "This coupon has expired", statusCode: 400 });
-    }
-
-    if (coupon.usageLimit && coupon.usedCount >= coupon.usageLimit) {
-      return reply.status(400).send({ success: false, error: "Invalid Coupon", message: "This coupon has reached its usage limit", statusCode: 400 });
-    }
-
-    // Check per-user limit
-    const userRedemptions = await app.prisma.couponRedemption.count({
-      where: { couponId: coupon.id, userId: user.sub },
-    });
-    if (userRedemptions >= coupon.perUserLimit) {
-      return reply.status(400).send({ success: false, error: "Invalid Coupon", message: "You have already used this coupon", statusCode: 400 });
-    }
-
-    // Check min order amount
-    if (coupon.minOrderAmount && body.orderAmount < Number(coupon.minOrderAmount)) {
-      return reply.status(400).send({
-        success: false,
-        error: "Invalid Coupon",
-        message: `Minimum order amount is ₹${Number(coupon.minOrderAmount)}`,
-        statusCode: 400,
-      });
-    }
-
-    // Check org scope
-    if (coupon.organizationId) {
-      const store = await app.prisma.store.findUnique({ where: { id: body.storeId } });
-      if (store && store.organizationId !== coupon.organizationId) {
-        return reply.status(400).send({ success: false, error: "Invalid Coupon", message: "This coupon is not valid for this store", statusCode: 400 });
-      }
-    }
-
-    // Calculate discount
-    let discount = 0;
-    if (coupon.discountType === "FLAT") {
-      discount = Number(coupon.discountValue);
-    } else {
-      discount = (body.orderAmount * Number(coupon.discountValue)) / 100;
-    }
-    if (coupon.maxDiscount && discount > Number(coupon.maxDiscount)) {
-      discount = Number(coupon.maxDiscount);
-    }
-    discount = Math.min(discount, body.orderAmount);
+    const check = await checkCoupon(app.prisma, coupon, { userId: user.sub, organizationId: store.organizationId, orderAmount: body.orderAmount });
+    if (!check.ok) return reply.status(400).send({ success: false, error: "Invalid Coupon", message: check.reason, statusCode: 400 });
+    const discount = check.discount;
 
     const response: ApiResponse<{ valid: boolean; discount: number; code: string; description: string | null }> = {
       success: true,
-      data: { valid: true, discount: Math.round(discount * 100) / 100, code: coupon.code, description: coupon.description },
+      data: { valid: true, discount, code: coupon.code, description: coupon.description },
     };
     return response;
   });

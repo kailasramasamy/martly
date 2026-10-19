@@ -1,4 +1,4 @@
-import { renderBanner, uploadBanner, type BannerCopy } from "./banner-art.js";
+import { renderBanner, uploadBanner, type BannerCopy, type BannerFormat } from "./banner-art.js";
 import { bannerTextMatches } from "./verify-text.js";
 import type { BannerArtPurpose, PrismaClient } from "../../../generated/prisma/client.js";
 import { chooseDesign, recordDesign, type BannerDesign } from "./banner-design.js";
@@ -14,9 +14,9 @@ export interface BannerSet {
 
 export type BannerLog = (message: string) => void;
 
-async function proofedBanner(scene: string, copy: BannerCopy, design: BannerDesign, lang: string, log: BannerLog) {
+async function proofedBanner(scene: string, copy: BannerCopy, design: BannerDesign, lang: string, log: BannerLog, format: BannerFormat) {
   for (let attempt = 1; attempt <= ATTEMPTS; attempt++) {
-    const image = await renderBanner(scene, copy, design);
+    const image = await renderBanner(scene, copy, design, format);
     const check = await bannerTextMatches(image, copy);
     if (check.ok) return image;
     log(`${lang} banner attempt ${attempt} failed proofreading: ${check.issues}`);
@@ -35,14 +35,15 @@ export async function buildBannerSet(
   slug: string,
   log: BannerLog,
   design: BannerDesign,
+  format: BannerFormat = "landscape",
 ): Promise<BannerSet> {
   const langs = Object.keys(copies);
   // Every language shares one design so the English and Tamil banners look alike
-  const images = await Promise.all(langs.map((lang) => proofedBanner(scene, { ...copies[lang], cta: CTA[lang] ?? CTA.en }, design, lang, log)));
+  const images = await Promise.all(langs.map((lang) => proofedBanner(scene, { ...copies[lang], cta: CTA[lang] ?? CTA.en }, design, lang, log, format)));
   const passed = langs.flatMap((lang, i) => (images[i] ? [[lang, images[i]] as const] : []));
   if (!passed.some(([lang]) => lang === "en")) {
     log("English banner failed proofreading; using text-free art");
-    return { imageUrl: await uploadBanner(await renderBanner(scene), slug, "art"), imageUrls: null, textInImage: false };
+    return { imageUrl: await uploadBanner(await renderBanner(scene, undefined, undefined, format), slug, "art"), imageUrls: null, textInImage: false };
   }
   const urls = Object.fromEntries(await Promise.all(passed.map(async ([lang, image]) => [lang, await uploadBanner(image, slug, lang)])));
   return { imageUrl: urls.en, imageUrls: urls, textInImage: true };
@@ -56,9 +57,10 @@ export async function buildDesignedBannerSet(
   copies: Record<string, Omit<BannerCopy, "cta">>,
   slug: string,
   log: BannerLog,
+  format: BannerFormat = "landscape",
 ): Promise<BannerSet> {
   const design = await chooseDesign(prisma, owner);
-  const art = await buildBannerSet(scene, copies, slug, log, design);
+  const art = await buildBannerSet(scene, copies, slug, log, design, format);
   await recordDesign(prisma, { ...design, ...owner, imageUrl: art.imageUrl });
   return art;
 }

@@ -1,6 +1,7 @@
 import { HOME_SECTIONS_PAGE_SIZE } from "@martly/shared/constants";
 import type { HomeChrome, HomeSectionsPage } from "@martly/shared/types";
-import { reviewSummaries, withReviews } from "../store-feed.js";
+import { reviewSummaries, withAllSizes, withReviews } from "../store-feed.js";
+import { dominantCategory, injectAd, liveSponsored, pickAd } from "../sponsored.js";
 import { storeBanners } from "../marketing/banner-feed.js";
 import { expandLayout, loadLayout } from "./layout.js";
 import { RESOLVERS } from "./registry.js";
@@ -11,18 +12,41 @@ const FESTIVAL_HINTS = 2;
 
 export type PageStore = { id: string; organizationId: string; freeDeliveryThreshold: unknown };
 
-function decodeCursor(cursor: string | undefined) {
-  if (!cursor) return 0;
+// Where the next page starts, and the sponsored products earlier pages already showed (each appears once per scroll)
+type Cursor = { i: number; ads: string[] };
+
+function decodeCursor(cursor: string | undefined): Cursor {
+  if (!cursor) return { i: 0, ads: [] };
   try {
-    const { i } = JSON.parse(Buffer.from(cursor, "base64url").toString("utf8"));
-    if (Number.isInteger(i) && i >= 0) return i as number;
+    const { i, ads } = JSON.parse(Buffer.from(cursor, "base64url").toString("utf8"));
+    if (Number.isInteger(i) && i >= 0) return { i, ads: Array.isArray(ads) ? ads.filter((a): a is string => typeof a === "string") : [] };
   } catch (err) {
     if (!(err instanceof SyntaxError)) throw err;
   }
   throw Object.assign(new Error("Invalid cursor"), { statusCode: 400 });
 }
 
-const encodeCursor = (i: number) => Buffer.from(JSON.stringify({ i })).toString("base64url");
+const encodeCursor = (cursor: Cursor) => Buffer.from(JSON.stringify(cursor)).toString("base64url");
+
+/** A product row or tabbed row takes the ad for the category most of its products are in, second in line */
+async function withSponsored(ctx: ResolveContext, sections: ResolvedSection[], shown: Set<string>) {
+  const ads = await liveSponsored(ctx.prisma, ctx.store);
+  if (ads.length === 0) return sections;
+  const out: ResolvedSection[] = [];
+  for (const section of sections) {
+    const products = section.type === "PRODUCT_ROW" || section.type === "TABBED_ROW" ? section.products : [];
+    const category = products.length > 0 ? dominantCategory(products) : null;
+    const ad = category ? pickAd(ads, new Set([category]), shown) : null;
+    if (!ad) {
+      out.push(section);
+      continue;
+    }
+    shown.add(ad.bannerId);
+    const adRows = await withAllSizes(ctx.prisma, ctx.store.id, [{ productId: ad.productId }]);
+    out.push({ ...section, products: injectAd(products, adRows, ad) } as ResolvedSection);
+  }
+  return out;
+}
 
 // Every product list a section carries, so reviews are looked up once for the whole page
 function mapProductLists(section: ResolvedSection, fn: (items: any[]) => any[]): ResolvedSection {
@@ -77,7 +101,8 @@ export async function homeSectionsPage(
 ): Promise<HomeSectionsPage> {
   const ctx: ResolveContext = { prisma, store, userId, now: new Date() };
   const entries = await expandLayout(ctx, await loadLayout(ctx));
-  let start = decodeCursor(cursor);
+  const position = decodeCursor(cursor);
+  let start = position.i;
   let sections: ResolvedSection[] = [];
   let end = start;
   while (end < entries.length && sections.length === 0) {
@@ -85,10 +110,11 @@ export async function homeSectionsPage(
     sections = await resolveSlice(ctx, entries.slice(start, end));
     start = end;
   }
-  const reviewed = await withPageReviews(ctx, sections);
+  const shown = new Set(position.ads);
+  const reviewed = await withPageReviews(ctx, await withSponsored(ctx, sections, shown));
   return {
     sections: reviewed,
-    nextCursor: end < entries.length ? encodeCursor(end) : null,
+    nextCursor: end < entries.length ? encodeCursor({ i: end, ads: [...shown] }) : null,
     ...(cursor ? {} : { chrome: await pageChrome(ctx, store, reviewed) }),
   };
 }

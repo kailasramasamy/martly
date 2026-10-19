@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { App, Card, Col, DatePicker, Form, Input, InputNumber, Row, Select, Spin, Tag } from "antd";
 import { Create, Edit } from "@refinedev/antd";
-import { useList } from "@refinedev/core";
+import { useGetIdentity, useList } from "@refinedev/core";
 import { useNavigate, useParams } from "react-router";
+import type { FormInstance } from "antd";
 import dayjs, { type Dayjs } from "dayjs";
 import { axiosInstance } from "../../providers/data-provider";
 import { formatRupees } from "../promos/promo-utils";
@@ -11,6 +12,7 @@ import type { AdProduct } from "../marketing/types";
 import { BookingSummary } from "./booking-summary";
 import { BrandSelect } from "./brand-select";
 import { CreativeSection, type CreativeMode } from "./creative-section";
+import { ProductPicker, type SponsorableProduct } from "./product-picker";
 import { EDITABLE_STATUSES, type Campaign, type CampaignScope } from "./types";
 import { ReadableSection } from "../../components/ReadableSection";
 
@@ -24,6 +26,7 @@ interface FormValues {
   subtitle?: string;
   imageUrl?: string;
   brief?: string;
+  actionTarget?: string;
   targetStoreIds?: string[];
   discountType?: "PERCENTAGE" | "FLAT";
   discountValue?: number;
@@ -54,12 +57,15 @@ function useFormOptions(scope: CampaignScope) {
 function toFormValues(c: Campaign): FormValues {
   return {
     brandId: c.brandId, productId: c.productId, quantity: c.quantity, startsAt: dayjs(c.startsAt), categoryId: c.categoryId ?? undefined,
-    title: c.title, subtitle: c.subtitle ?? undefined, imageUrl: c.imageUrl ?? undefined, brief: c.brief ?? undefined,
+    title: c.title, subtitle: c.subtitle ?? undefined, imageUrl: c.imageUrl ?? undefined, brief: c.brief ?? undefined, actionTarget: c.actionTarget ?? undefined,
     targetStoreIds: c.targetStoreIds, discountType: c.discountType ?? undefined, discountValue: c.discountValue ?? undefined,
   };
 }
 
-function buildBody(values: FormValues, mode: CreativeMode, scope: CampaignScope) {
+const isSponsored = (p?: AdProduct) => p?.kind === "BRAND_SPONSORED_PRODUCT";
+const isPoster = (p?: AdProduct) => p?.placement === "HOME_POSTER";
+
+function buildBody(values: FormValues, mode: CreativeMode, scope: CampaignScope, sponsored: boolean) {
   return {
     ...(scope.mode === "platform" ? { brandId: values.brandId } : {}),
     productId: values.productId,
@@ -68,12 +74,41 @@ function buildBody(values: FormValues, mode: CreativeMode, scope: CampaignScope)
     categoryId: values.categoryId ?? null,
     title: values.title,
     subtitle: values.subtitle || null,
-    imageUrl: values.imageUrl ?? null,
-    brief: mode === "ai" ? values.brief : null,
+    imageUrl: sponsored ? null : values.imageUrl ?? null,
+    brief: mode === "ai" && !sponsored ? values.brief : null,
+    ...(sponsored ? { actionType: "PRODUCT", actionTarget: values.actionTarget } : {}),
     targetStoreIds: values.targetStoreIds ?? [],
     discountType: values.discountType ?? null,
     discountValue: values.discountValue ?? null,
   };
+}
+
+function CreativeCards({ mode, onModeChange, portrait }: { mode: CreativeMode; onModeChange: (m: CreativeMode) => void; portrait: boolean }) {
+  return (
+    <>
+      <Card title={portrait ? "Poster text" : "Banner text"} size="small" style={{ marginBottom: 16 }}>
+        <Form.Item name="title" label="Title" rules={[{ required: true, min: 2, max: 60 }]}><Input maxLength={60} /></Form.Item>
+        <Form.Item name="subtitle" label="Subtitle" rules={[{ max: 90 }]}><Input maxLength={90} /></Form.Item>
+      </Card>
+      <Card title="Creative" size="small">
+        <CreativeSection mode={mode} onModeChange={onModeChange} portrait={portrait} />
+      </Card>
+    </>
+  );
+}
+
+/** A sponsored product is one of the brand's own products; its photo and category are the creative */
+function SponsoredCard({ form, brandId, locked }: { form: FormInstance<FormValues>; brandId?: string; locked: boolean }) {
+  const onPick = (p: SponsorableProduct) => form.setFieldsValue({ categoryId: p.subcategory?.category.id, title: p.name.slice(0, 60) });
+  return (
+    <Card title="Product to sponsor" size="small">
+      <Form.Item name="title" hidden><Input /></Form.Item>
+      <Form.Item name="categoryId" hidden><Input /></Form.Item>
+      <Form.Item name="actionTarget" rules={[{ required: true, message: "Pick one of the brand's products" }]} extra="Placed second in Home rows and category listings, marked Ad. It can't change after payment.">
+        <ProductPicker brandId={brandId} onPick={onPick} disabled={locked} />
+      </Form.Item>
+    </Card>
+  );
 }
 
 interface FieldsProps {
@@ -145,7 +180,7 @@ function useCampaignLoader(scope: CampaignScope, id: string | undefined, setMode
   return campaign;
 }
 
-function useSave(scope: CampaignScope, id: string | undefined, mode: CreativeMode) {
+function useSave(scope: CampaignScope, id: string | undefined, mode: CreativeMode, sponsored: boolean) {
   const { notification } = App.useApp();
   const navigate = useNavigate();
   const [saving, setSaving] = useState(false);
@@ -153,7 +188,7 @@ function useSave(scope: CampaignScope, id: string | undefined, mode: CreativeMod
   const save = async (values: FormValues) => {
     setSaving(true);
     try {
-      const body = buildBody(values, mode, scope);
+      const body = buildBody(values, mode, scope, sponsored);
       const res = id ? await axiosInstance.put(`${scope.apiBase}/${id}`, body) : await axiosInstance.post(scope.apiBase, body);
       navigate(`${scope.path}/show/${res.data.data.id}`);
     } catch (err) {
@@ -171,13 +206,16 @@ export function CampaignForm({ scope }: { scope: CampaignScope }) {
   const [mode, setMode] = useState<CreativeMode>("upload");
   const { packages, categories, stores } = useFormOptions(scope);
   const campaign = useCampaignLoader(scope, id, setMode);
-  const { save, saving } = useSave(scope, id, mode);
+  const { data: identity } = useGetIdentity<{ brand?: { id: string } | null }>();
 
   const productId = Form.useWatch("productId", form);
   const quantity = Form.useWatch("quantity", form);
   const startsAt = Form.useWatch("startsAt", form);
   const categoryId = Form.useWatch("categoryId", form);
+  const brandId = Form.useWatch("brandId", form);
   const product = packages.find((p) => p.id === productId);
+  const sponsored = isSponsored(product);
+  const { save, saving } = useSave(scope, id, mode, sponsored);
 
   if (id && !campaign) return <Spin style={{ display: "block", margin: "64px auto" }} />;
   if (campaign && !EDITABLE_STATUSES.includes(campaign.status)) return <Tag color="red">This campaign can no longer be edited</Tag>;
@@ -187,7 +225,7 @@ export function CampaignForm({ scope }: { scope: CampaignScope }) {
   return (
     <Wrapper title={id ? "Edit campaign" : "New campaign"} saveButtonProps={{ onClick: () => form.submit(), loading: saving }} isLoading={false}>
       <ReadableSection>
-        <Form form={form} layout="vertical" onFinish={save} initialValues={campaign ? toFormValues(campaign) : { quantity: 1, startsAt: dayjs().add(DEFAULT_START_DAYS, "day") }}>
+        <Form form={form} layout="vertical" onFinish={save} onValuesChange={(changed) => { if ("brandId" in changed) form.setFieldsValue({ actionTarget: undefined, categoryId: undefined }); }} initialValues={campaign ? toFormValues(campaign) : { quantity: 1, startsAt: dayjs().add(DEFAULT_START_DAYS, "day") }}>
           <Row gutter={24}>
             <Col xs={24} lg={12}>
               <Card title="Booking" size="small" style={{ marginBottom: 16 }}>
@@ -203,13 +241,11 @@ export function CampaignForm({ scope }: { scope: CampaignScope }) {
               )}
             </Col>
             <Col xs={24} lg={12}>
-              <Card title="Banner text" size="small" style={{ marginBottom: 16 }}>
-                <Form.Item name="title" label="Title" rules={[{ required: true, min: 2, max: 60 }]}><Input maxLength={60} /></Form.Item>
-                <Form.Item name="subtitle" label="Subtitle" rules={[{ max: 90 }]}><Input maxLength={90} /></Form.Item>
-              </Card>
-              <Card title="Creative" size="small">
-                <CreativeSection mode={mode} onModeChange={setMode} />
-              </Card>
+              {sponsored ? (
+                <SponsoredCard form={form} brandId={scope.mode === "platform" ? brandId : identity?.brand?.id} locked={locked} />
+              ) : (
+                <CreativeCards mode={mode} onModeChange={setMode} portrait={isPoster(product)} />
+              )}
             </Col>
           </Row>
         </Form>

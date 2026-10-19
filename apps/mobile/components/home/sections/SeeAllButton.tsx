@@ -27,7 +27,7 @@ export const SeeAllButton = memo(function SeeAllButton({ onPress, label = "See a
 const styles = StyleSheet.create({
   pill: {
     flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6,
-    marginHorizontal: 16, marginTop: 12, minHeight: 44, borderRadius: 22,
+    marginHorizontal: 16, marginTop: 6, minHeight: 44, borderRadius: 22,
     backgroundColor: colors.background, borderWidth: 1, borderColor: colors.border,
   },
   pressed: { backgroundColor: colors.surface },

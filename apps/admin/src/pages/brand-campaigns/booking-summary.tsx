@@ -25,6 +25,7 @@ function useAvailability({ scope, product, quantity, startsAt, categoryId, exclu
   useEffect(() => {
     setSlot(null);
     if (!product || !startKey || !quantity) return;
+    if (product.kind === "BRAND_SPONSORED_PRODUCT" && !categoryId) return;
     axiosInstance
       .get(`${scope.apiBase}/availability`, { params: { productId: product.id, quantity, startsAt: startKey, categoryId, excludeId } })
       .then((res) => setSlot(res.data.data))

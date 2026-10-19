@@ -68,7 +68,8 @@ export type HomeSectionItemsInput = z.infer<typeof homeSectionItemsSchema>;
 /** Which tiles of a grid section to paint art for; none named paints every tile without an image */
 export const homeSectionArtSchema = z.object({ itemIds: z.array(z.string().uuid()).max(24).optional(), repaint: z.boolean().default(false) });
 
-export const homeSectionsQuerySchema = z.object({ cursor: z.string().max(200).optional() });
+// The cursor carries the sponsored products already shown, so it grows a little with each page
+export const homeSectionsQuerySchema = z.object({ cursor: z.string().max(2000).optional() });
 
 export const homeDealsQuerySchema = z.object({
   sectionId: z.string().uuid(),

@@ -21,6 +21,8 @@ const TYPE_OPTIONS = [
 
 interface FormState {
   code: string;
+  title: string;
+  showOnHome: boolean;
   description: string;
   discountType: string;
   discountValue: string;
@@ -34,12 +36,14 @@ interface FormState {
 }
 
 const EMPTY: FormState = {
-  code: "", description: "", discountType: "PERCENTAGE", discountValue: "", maxDiscount: "", minOrderAmount: "",
+  code: "", title: "", showOnHome: false, description: "", discountType: "PERCENTAGE", discountValue: "", maxDiscount: "", minOrderAmount: "",
   usageLimit: "", perUserLimit: "1", startsAt: null, expiresAt: null, isActive: true,
 };
 
 const fromCoupon = (c: Coupon): FormState => ({
   code: c.code,
+  title: c.title ?? "",
+  showOnHome: c.showOnHome,
   description: c.description ?? "",
   discountType: c.discountType,
   discountValue: numberText(c.discountValue),
@@ -69,6 +73,8 @@ function validate(f: FormState): Partial<Record<keyof FormState, string>> {
 function toPayload(f: FormState) {
   return {
     code: f.code.trim().toUpperCase(),
+    title: f.title.trim() || null,
+    showOnHome: f.showOnHome,
     description: f.description.trim() || null,
     discountType: f.discountType,
     discountValue: parseNumber(f.discountValue),
@@ -131,6 +137,10 @@ function CouponFields({ initial, id, orgId, onDone, run, running }: FieldsProps)
         <TextField label="Code" required value={f.code} onChangeText={(t) => set("code")(t.toUpperCase())} autoCapitalize="characters" placeholder="WELCOME10" error={errors.code} />
         <TextField label="Description" value={f.description} onChangeText={set("description")} placeholder="Optional" />
         <SwitchRow label="Active" value={f.isActive} onValueChange={set("isActive")} />
+      </SectionCard>
+      <SectionCard title="Home offers">
+        <SwitchRow label="Show in Home offers" description="Advertise in Home offers and checkout" value={f.showOnHome} onValueChange={set("showOnHome")} />
+        <TextField label="Offer headline" value={f.title} onChangeText={set("title")} maxLength={40} placeholder="Flat ₹50 off" hint="Shown on the offer card; made from the discount if empty" />
       </SectionCard>
       <SectionCard title="Discount">
         <SelectField label="Type" required value={f.discountType} options={TYPE_OPTIONS} onChange={set("discountType")} />

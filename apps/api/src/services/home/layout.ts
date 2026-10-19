@@ -67,11 +67,22 @@ async function otherCollections(ctx: ResolveContext, placed: Set<string>): Promi
   }));
 }
 
+/** With no festival to show, the hero banner carousel takes the empty top slot instead of waiting further down */
+function bannersIntoHeroSlot(layout: LayoutEntry[]) {
+  const hero = layout.findIndex((e) => e.type === "FESTIVE_HERO");
+  const banners = layout.findIndex((e) => e.type === "HERO_BANNERS");
+  if (hero === -1 || banners === -1) return layout;
+  const rest = layout.filter((_, i) => i !== hero && i !== banners);
+  const at = banners < hero ? hero - 1 : hero;
+  return [...rest.slice(0, at), layout[banners], ...rest.slice(at)];
+}
+
 /** The layout as the app sees it: automatic sections replaced by the cards and rows they stand for. */
-export async function expandLayout(ctx: ResolveContext, layout: LayoutEntry[]): Promise<LayoutEntry[]> {
+export async function expandLayout(ctx: ResolveContext, saved: LayoutEntry[]): Promise<LayoutEntry[]> {
   // Festivals in the hero carousel are placed; ones it has no room for fall through to plain rows
-  const heroEntry = layout.find((e) => e.type === "FESTIVE_HERO");
+  const heroEntry = saved.find((e) => e.type === "FESTIVE_HERO");
   const heroes = heroEntry ? await festiveHeroesFor(ctx, heroEntry) : [];
+  const layout = heroEntry && heroes.length === 0 ? bannersIntoHeroSlot(saved) : saved;
   const placed = new Set([
     ...heroes.map((h) => h.id),
     ...layout.flatMap((e) => [e.collectionId, ...e.items.map((i) => i.collectionId)]).filter((id): id is string => !!id),

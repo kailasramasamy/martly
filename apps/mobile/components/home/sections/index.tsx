@@ -15,12 +15,14 @@ import { ProductRowSection } from "./ProductRowSection";
 import { StoreGridSection } from "./StoreGridSection";
 import { TabbedRowSection } from "./TabbedRowSection";
 import { HeroBannersSection, MidBannersSection } from "./system/BannerSections";
+import { BrandPostersSection } from "./system/BrandPostersSection";
 import { BuyAgainSection } from "./system/BuyAgainSection";
 import { BrandRailSection, PlusPromoSection, RecentlyViewedSection, TimePicksSection } from "./system/ClientSections";
 import { DealsSection } from "./system/DealsSection";
 import { DepartmentGridSection } from "./system/DepartmentGridSection";
 import { FestiveHeroSection } from "./system/FestiveHeroSection";
 import { MemberChipsSection } from "./system/MemberChipsSection";
+import { OffersSection } from "./system/OffersSection";
 import { RecipesSection } from "./system/RecipesSection";
 
 type SectionOf<K extends HomeSectionType> =
@@ -57,6 +59,8 @@ const SECTIONS: Registry = {
   CATEGORY_DIRECTORY: CategoryDirectorySection,
   EXPLORE_GRID: ExploreGridSection,
   STORE_GRID: StoreGridSection,
+  OFFERS: OffersSection,
+  BRAND_POSTERS: BrandPostersSection,
 };
 
 export const HomeSectionView = memo(function HomeSectionView({ section }: { section: MobileHomeSection }) {

@@ -15,6 +15,7 @@ import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middlewa
 import { haversine, locateAddress } from "../../lib/geo.js";
 import { sendOrderStatusNotification, sendWalletNotification, sendLoyaltyNotification, sendNotification } from "../../services/notification.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
+import { checkCoupon } from "../../services/coupons.js";
 import { reserveStock, releaseStock, deductStock } from "../../services/stock.js";
 import { formatVariantUnit } from "../../services/units.js";
 import { verifyRazorpaySignature, isRazorpayConfigured, getRazorpayKeyId, isUpiS2SEnabled } from "../../services/payment.js";
@@ -178,7 +179,7 @@ export async function orderRoutes(app: FastifyInstance) {
     // Fetch store for both pickup and delivery
     const store = await app.prisma.store.findUnique({
       where: { id: body.storeId },
-      select: { name: true, address: true, latitude: true, longitude: true, deliveryRadius: true, minOrderAmount: true, freeDeliveryThreshold: true, baseDeliveryFee: true },
+      select: { organizationId: true, name: true, address: true, latitude: true, longitude: true, deliveryRadius: true, minOrderAmount: true, freeDeliveryThreshold: true, baseDeliveryFee: true },
     });
 
     // Resolve delivery address from addressId or direct input
@@ -277,35 +278,17 @@ export async function orderRoutes(app: FastifyInstance) {
     let couponId: string | undefined;
     let couponCode: string | undefined;
     let couponDiscount = 0;
-    let couponRecord: { id: string; code: string; discountType: string; discountValue: any; maxDiscount: any; usageLimit: number | null; usedCount: number; perUserLimit: number; minOrderAmount: any; startsAt: Date | null; expiresAt: Date | null; isActive: boolean; organizationId: string | null } | null = null;
+    let couponRecord: Prisma.CouponGetPayload<object> | null = null;
 
+    // An invalid coupon is dropped rather than failing the order; the app checked it a moment ago
     if (body.couponCode) {
       couponRecord = await app.prisma.coupon.findUnique({ where: { code: body.couponCode.toUpperCase() } });
-      if (couponRecord && couponRecord.isActive) {
-        const now = new Date();
-        const valid = (!couponRecord.startsAt || now >= couponRecord.startsAt)
-          && (!couponRecord.expiresAt || now <= couponRecord.expiresAt)
-          && (!couponRecord.usageLimit || couponRecord.usedCount < couponRecord.usageLimit)
-          && (!couponRecord.minOrderAmount || itemsTotal >= Number(couponRecord.minOrderAmount));
-
-        if (valid) {
-          const userRedemptions = await app.prisma.couponRedemption.count({
-            where: { couponId: couponRecord.id, userId: user.sub },
-          });
-          if (userRedemptions < couponRecord.perUserLimit) {
-            couponId = couponRecord.id;
-            couponCode = couponRecord.code;
-            if (couponRecord.discountType === "FLAT") {
-              couponDiscount = Number(couponRecord.discountValue);
-            } else {
-              couponDiscount = (itemsTotal * Number(couponRecord.discountValue)) / 100;
-            }
-            if (couponRecord.maxDiscount && couponDiscount > Number(couponRecord.maxDiscount)) {
-              couponDiscount = Number(couponRecord.maxDiscount);
-            }
-            couponDiscount = Math.min(couponDiscount, itemsTotal);
-          }
-        }
+      const check = couponRecord && store
+        && await checkCoupon(app.prisma, couponRecord, { userId: user.sub, organizationId: store.organizationId, orderAmount: itemsTotal });
+      if (couponRecord && check && check.ok) {
+        couponId = couponRecord.id;
+        couponCode = couponRecord.code;
+        couponDiscount = check.discount;
       }
     }
 

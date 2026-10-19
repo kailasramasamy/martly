@@ -6,10 +6,11 @@ import { colors, fonts, spacing } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
 import { useLanguage } from "../lib/language-context";
 import { FoodTypeMark } from "./FoodTypeMark";
-import { BestsellerBadge, UnitPrice } from "./ProductBadges";
+import { AdBadge, BestsellerBadge, UnitPrice } from "./ProductBadges";
 import { CompactProductCard } from "./CompactProductCard";
 import { bySize, packSaving } from "../lib/pack-sizes";
 import { SizePager, sizeImage } from "./PackSizes";
+import { useSponsoredTracking } from "../lib/use-sponsored";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const CARD_GAP = 10;
@@ -158,11 +159,12 @@ function AddControl({ item, quantity, variantCount, isOutOfStock, onAddToCart, o
   );
 }
 
-function CardDetails({ item, lowStock }: { item: StoreProduct; lowStock: number | null }) {
+function CardDetails({ item, lowStock, sponsored }: { item: StoreProduct; lowStock: number | null; sponsored: boolean }) {
   const { getLocalizedName, getLocalizedSubtitle } = useLanguage();
   const subtitle = getLocalizedSubtitle(item.product);
   return (
     <>
+      {sponsored && <AdBadge />}
       <Text style={styles.name} numberOfLines={3}>{getLocalizedName(item.product)}</Text>
       {subtitle && <Text style={styles.nameSubtitle} numberOfLines={1}>{subtitle}</Text>}
       {(item.product.averageRating ?? 0) > 0 && (
@@ -225,7 +227,8 @@ function StandardCard(props: FeaturedProductCardProps) {
   // Swiping sizes only in grids: in a horizontal rail the swipe belongs to the rail
   const swipeable = width != null && sizes.length > 1;
   const { available, isOutOfStock, isLowStock } = stockState(item);
-  const { openProduct, heartTapped } = useOpenProduct(item.product.id, storeId, props.onOpen);
+  const tapSponsored = useSponsoredTracking(props.item.sponsored, storeId);
+  const { openProduct, heartTapped } = useOpenProduct(item.product.id, storeId, () => { tapSponsored(); props.onOpen?.(); });
 
   return (
     <TouchableOpacity
@@ -257,7 +260,7 @@ function StandardCard(props: FeaturedProductCardProps) {
       <View style={[styles.content, elevated && styles.contentElevated]}>
         <Text style={styles.unit} numberOfLines={2}>{item.variant.name}</Text>
         <PriceBlock item={item} isMember={isMember} saving={packSaving(item, sizes)} />
-        <CardDetails item={item} lowStock={isLowStock ? available : null} />
+        <CardDetails item={item} lowStock={isLowStock ? available : null} sponsored={!!props.item.sponsored} />
       </View>
     </TouchableOpacity>
   );
@@ -318,7 +321,7 @@ const styles = StyleSheet.create({
   addBtn: {
     width: ADD_WIDTH, height: CONTROL_HEIGHT, borderRadius: 9,
     borderWidth: 1.5, borderColor: colors.primary, backgroundColor: "#fff",
-    shadowColor: "#0f172a", shadowOpacity: 0.08, shadowRadius: 4, shadowOffset: { width: 0, height: 2 }, elevation: 2,
+    borderRightWidth: 3, borderBottomWidth: 3,
     alignItems: "center", justifyContent: "center",
   },
   addBtnDisabled: { borderColor: colors.border, backgroundColor: colors.surface },

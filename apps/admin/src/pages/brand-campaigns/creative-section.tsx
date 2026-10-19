@@ -13,13 +13,17 @@ export function ImageGuidance() {
   );
 }
 
+const PosterHint = () => <Typography.Paragraph type="secondary" style={{ fontSize: 12 }}>Tall 2:3 poster, text in the image</Typography.Paragraph>;
+
 interface CreativeSectionProps {
   mode: CreativeMode;
   onModeChange: (mode: CreativeMode) => void;
   disabled?: boolean;
+  /** Tall 2:3 poster instead of the landscape banner */
+  portrait?: boolean;
 }
 
-export function CreativeSection({ mode, onModeChange, disabled }: CreativeSectionProps) {
+export function CreativeSection({ mode, onModeChange, disabled, portrait }: CreativeSectionProps) {
   return (
     <>
       <Radio.Group
@@ -30,17 +34,17 @@ export function CreativeSection({ mode, onModeChange, disabled }: CreativeSectio
       />
       {mode === "upload" ? (
         <>
-          <ImageGuidance />
-          <Form.Item name="imageUrl" getValueFromEvent={(url: string) => url} rules={[{ required: true, message: "Upload a banner image" }]}>
+          {portrait ? <PosterHint /> : <ImageGuidance />}
+          <Form.Item name="imageUrl" getValueFromEvent={(url: string) => url} rules={[{ required: true, message: portrait ? "Upload a poster image" : "Upload a banner image" }]}>
             <ImageUpload />
           </Form.Item>
         </>
       ) : (
-        <Form.Item name="brief" label="What should the picture show?" rules={[{ required: true, whitespace: true, message: "Describe the banner" }]}>
+        <Form.Item name="brief" label="What should the picture show?" rules={[{ required: true, whitespace: true, message: `Describe the ${portrait ? "poster" : "banner"}` }]}>
           <Input.TextArea rows={3} maxLength={600} showCount disabled={disabled} />
         </Form.Item>
       )}
-      {mode === "ai" && <Typography.Text type="secondary">Save first, then press Generate banner on the campaign page.</Typography.Text>}
+      {mode === "ai" && <Typography.Text type="secondary">Save first, then press Generate {portrait ? "poster" : "banner"} on the campaign page.</Typography.Text>}
     </>
   );
 }

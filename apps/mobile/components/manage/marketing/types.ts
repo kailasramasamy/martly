@@ -1,6 +1,8 @@
 export interface Coupon {
   id: string;
   code: string;
+  title: string | null;
+  showOnHome: boolean;
   description: string | null;
   discountType: "FLAT" | "PERCENTAGE";
   discountValue: string | number;

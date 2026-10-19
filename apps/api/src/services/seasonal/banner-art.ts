@@ -5,9 +5,15 @@ import { putObject } from "../media.js";
 import { designBrief, type BannerDesign } from "./banner-design.js";
 
 const IMAGE_MODEL = process.env.OPENAI_IMAGE_MODEL ?? "gpt-image-2.5-flare";
-// Banners keep the model's full 3:2 canvas for the home carousel; the search spotlight shows the centre 2:1 band
-const OUT_WIDTH = 1536;
-const OUT_HEIGHT = 1024;
+/**
+ * Landscape banners keep the model's full 3:2 canvas for the home carousel (the search spotlight shows the centre 2:1
+ * band); portrait is the 2:3 brand poster
+ */
+export type BannerFormat = "landscape" | "portrait";
+const FORMATS = {
+  landscape: { size: "1536x1024", width: 1536, height: 1024, words: "wide 3:2 landscape" },
+  portrait: { size: "1024x1536", width: 1024, height: 1536, words: "tall 2:3 portrait poster" },
+} as const;
 
 export interface BannerCopy {
   title: string;
@@ -27,11 +33,11 @@ Set the text on a clean area or a solid shape with strong contrast; no busy deta
 Spell every word exactly as given, character for character. No other text anywhere.`;
 }
 
-function prompt(scene: string, copy?: BannerCopy, design?: BannerDesign) {
+function prompt(scene: string, format: BannerFormat, copy?: BannerCopy, design?: BannerDesign) {
   // Text-free art is overlaid with the copy by the app, which draws it on the left
   if (!copy || !design) {
     return [
-      "A premium promotional banner for an Indian grocery delivery app, wide landscape format.",
+      `A premium promotional banner for an Indian grocery delivery app, ${FORMATS[format].words} format.`,
       `Scene: ${scene}`,
       "Keep the left third calm and uncluttered. No text anywhere.",
       "No logos, no brand packaging, no people's faces.",
@@ -39,7 +45,7 @@ function prompt(scene: string, copy?: BannerCopy, design?: BannerDesign) {
   }
   const d = designBrief(design);
   return [
-    "A striking, premium promotional banner for an Indian grocery delivery app, wide 3:2 landscape.",
+    `A striking, premium promotional banner for an Indian grocery delivery app, ${FORMATS[format].words}.`,
     `Visual style: ${d.style}. Choose a fresh colour palette that suits the subject rather than a default dark green.`,
     `Subject: ${scene}`,
     `Composition: ${d.composition}`,
@@ -49,23 +55,24 @@ function prompt(scene: string, copy?: BannerCopy, design?: BannerDesign) {
   ].join("\n\n");
 }
 
-/** Renders a banner (with the copy set into it when given), as a 3:2 WebP small enough for phones. */
-export async function renderBanner(scene: string, copy?: BannerCopy, design?: BannerDesign): Promise<Buffer> {
+/** Renders a banner (with the copy set into it when given), as a WebP small enough for phones. */
+export async function renderBanner(scene: string, copy?: BannerCopy, design?: BannerDesign, format: BannerFormat = "landscape"): Promise<Buffer> {
   const response = await new OpenAI().images.generate({
     model: IMAGE_MODEL,
-    prompt: prompt(scene, copy, design),
+    prompt: prompt(scene, format, copy, design),
     n: 1,
-    size: "1536x1024",
+    size: FORMATS[format].size,
     quality: "medium",
   });
   const b64 = response.data?.[0]?.b64_json;
   if (!b64) throw new BannerArtError(`Image model ${IMAGE_MODEL} returned no image`);
-  return prepareBanner(Buffer.from(b64, "base64"));
+  return prepareBanner(Buffer.from(b64, "base64"), format);
 }
 
-/** Any banner image, generated or uploaded, cropped to the 3:2 WebP the app expects. */
-export function prepareBanner(image: Buffer) {
-  return sharp(image).resize(OUT_WIDTH, OUT_HEIGHT, { fit: "cover", position: "centre" }).webp({ quality: 80 }).toBuffer();
+/** Any banner image, generated or uploaded, cropped to the WebP the app expects. */
+export function prepareBanner(image: Buffer, format: BannerFormat = "landscape") {
+  const { width, height } = FORMATS[format];
+  return sharp(image).resize(width, height, { fit: "cover", position: "centre" }).webp({ quality: 80 }).toBuffer();
 }
 
 export async function uploadBanner(image: Buffer, slug: string, lang: string) {

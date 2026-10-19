@@ -1,4 +1,4 @@
-# Home sections (Zepto-style Home, Phases 1–3)
+# Home sections (Zepto-style Home, Phases 1–4)
 
 The customer Home is a server-driven list of sections. Each organisation arranges its own layout; every store in the
 org shows the same layout, and a section with nothing in stock at a store hides itself there.
@@ -112,11 +112,37 @@ type must, may, or must not name a collection on the section; the layout API enf
   - FEATURE is used only when a hero has exactly 5 stocked tiles, so it never hides one. Otherwise it falls back to GRID, per hero. Each hero carries the `tileLayout` it got.
   - The legacy endpoint and the festival screen always use GRID.
 
+## Phase 4: offers and ads
+
+- **Offers for you (`OFFERS`):**
+  - Coupons marked `showOnHome` (with an optional `title` headline) that the shopper can still use at the store.
+  - "Can still use" means: live, within their limits, for this organisation or platform-wide, and not used up by this shopper.
+  - Built by `services/coupon-offers.ts`. Home shows up to 6.
+  - Tapping Apply saves the coupon for the cart, and checkout applies it.
+  - Checkout lists the same offers from `GET /coupons/available?storeId&orderAmount`, with the ones that apply first and "add ₹X more" on the rest.
+- **Coupon check:** `services/coupons.ts` `checkCoupon` is the only place a coupon is judged. The code box (`/coupons/validate`), checkout (order create) and the offers list all use it.
+  - It fixed a bug: checkout didn't check the coupon's organisation, so a code from one organisation applied at another's store.
+- **Brand posters (`BRAND_POSTERS`):**
+  - Tall 2:3 brand posters in a Home rail, in the new `HOME_POSTER` banner placement.
+  - Brands book the `BRAND_POSTER_WEEK` package (₹6,000 a week). Up to 4 run at once.
+  - "Generate with AI" paints portrait art for posters (`format: "portrait"` in the banner pipeline).
+- **Sponsored products:**
+  - Brands book `SPONSORED_PRODUCT_WEEK` (₹3,000 a week, 2 per category) for one of their own products.
+  - The campaign runs in that product's category, and its photo is the creative.
+  - While live it is a `SPONSORED_PRODUCT` banner. It is served only where the store stocks the product.
+  - It goes into position 2 (after the first product's sizes) of:
+    - Home product rows and tabbed rows whose products are mostly in its category. A product already in the row moves rather than appearing twice. Each ad shows at most once per Home scroll: the cursor carries the ads already shown.
+    - Page 1 of plain category listings whose aisles include its category. It's kept out of the regular results on every page. It is not added when the shopper filters or sorts.
+  - Rows are marked `sponsored: { bannerId }`. The app shows an "Ad" badge and counts views and taps as banner events, so campaign Results and caps work unchanged.
+- **Ad rules:** every ad comes from `storeBanners()`, so the org's brand-ads switch, blocked brands, slot limits and view caps apply.
+  - Slot limits for `CATEGORY_TOP` and `SPONSORED_PRODUCT` count per category, both when booking and in the feed.
+
 ## Seed
 
 `cd apps/api && npx tsx prisma/seed-home-layout.ts [--regen-art] [--hero]` builds the showcase for Demo Grocers / Harur Fresh Mart:
 - Phase 2 sections from `prisma/seed-home-phase2.ts`: an "Everyday picks" tabbed row, "Pocket-friendly deals" (Under ₹19/29/49/99), Cadbury and Amul brand cards, and a "Shop by aisle" directory
 - Phase 3 from `prisma/seed-home-phase3.ts`: "Explore by mood" (8 tiles) and "Shop by store" (5 mini-stores), each tile backed by its own collection, with painted tile art.
+- Phase 4 from `prisma/seed-home-phase4.ts`: three advertised coupons (WELCOME50, SAVE20, SNACK30), live Cadbury and Amul posters with painted portrait art, and a live Lay's sponsored product (shown in the "Crunch time" row and on the Chips & Crisps listing)
 - three campaign cards: Personal Care Weekend, Snack Fest and Breakfast Combo
 - product rows in all three header styles
 - a repaint of the Navratri hero, with `--hero`
@@ -136,4 +162,4 @@ Art already in place is reused unless `--regen-art` is passed.
 
 - **Admin Home layout page:** drag and save, and the "hidden at store" hint (built and type-checked, not yet run in a browser).
 - **Old-style heroes:** regenerate them after deploying, including prod's festival heroes.
-- **Phases 4–5** (ads and offers, personalisation and caching) aren't built yet.
+- **Phase 5** (personalisation and caching) isn't built yet.

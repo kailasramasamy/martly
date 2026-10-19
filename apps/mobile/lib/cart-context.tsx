@@ -1,4 +1,7 @@
-import { createContext, useContext, useState, useCallback, useMemo, type ReactNode } from "react";
+import { createContext, useContext, useState, useCallback, useEffect, useMemo, type ReactNode } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+
+const PENDING_COUPON_KEY = "martly_pending_coupon";
 
 interface CartItem {
   storeProductId: string;
@@ -22,6 +25,9 @@ interface CartState {
   totalAmount: number;
   itemCount: number;
   productQuantityMap: Map<string, number>;
+  /** A coupon saved from Home, applied when checkout opens; survives app restarts */
+  pendingCoupon: string | null;
+  setPendingCoupon: (code: string | null) => void;
 }
 
 const CartContext = createContext<CartState | null>(null);
@@ -30,6 +36,19 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [storeId, setStoreId] = useState<string | null>(null);
   const [storeName, setStoreName] = useState<string | null>(null);
   const [items, setItems] = useState<CartItem[]>([]);
+  const [pendingCoupon, setPendingCouponState] = useState<string | null>(null);
+
+  useEffect(() => {
+    AsyncStorage.getItem(PENDING_COUPON_KEY).then((saved) => {
+      if (saved) setPendingCouponState((current) => current ?? saved);
+    });
+  }, []);
+
+  const setPendingCoupon = useCallback((code: string | null) => {
+    setPendingCouponState(code);
+    if (code) void AsyncStorage.setItem(PENDING_COUPON_KEY, code);
+    else void AsyncStorage.removeItem(PENDING_COUPON_KEY);
+  }, []);
 
   const addItem = useCallback(
     (newStoreId: string, newStoreName: string, item: Omit<CartItem, "quantity">) => {
@@ -102,7 +121,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   return (
     <CartContext.Provider
-      value={{ storeId, storeName, items, addItem, removeItem, updateQuantity, clearCart, totalAmount, itemCount, productQuantityMap }}
+      value={{ storeId, storeName, items, addItem, removeItem, updateQuantity, clearCart, totalAmount, itemCount, productQuantityMap, pendingCoupon, setPendingCoupon }}
     >
       {children}
     </CartContext.Provider>
