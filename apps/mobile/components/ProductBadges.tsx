@@ -1,22 +1,25 @@
 import { Text, View, StyleSheet, type TextStyle } from "react-native";
 import { colors, fonts } from "../constants/theme";
 import { unitPriceLabel } from "../lib/unit-price";
+import { useStrings } from "../lib/i18n/use-strings";
 import type { Variant } from "../lib/types";
 
 // Top-left of the product photo; the heart owns top-right and the veg mark bottom-left
 export function BestsellerBadge() {
+  const t = useStrings("catalog");
   return (
-    <View style={styles.badge} accessibilityLabel="Bestseller">
-      <Text style={styles.badgeText}>BESTSELLER</Text>
+    <View style={styles.badge} accessibilityLabel={t.bestseller}>
+      <Text style={styles.badgeText}>{t.bestsellerBadge}</Text>
     </View>
   );
 }
 
 // Paid placements are marked plainly but quietly; sits in the card's text block
 export function AdBadge() {
+  const t = useStrings("catalog");
   return (
-    <View style={styles.ad} accessibilityLabel="Advertisement">
-      <Text style={styles.adText}>Ad</Text>
+    <View style={styles.ad} accessibilityLabel={t.advertisement}>
+      <Text style={styles.adText}>{t.ad}</Text>
     </View>
   );
 }

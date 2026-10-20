@@ -1,6 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity, ScrollView, Keyboard, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { PlacePrediction } from "../../lib/use-place-search";
 
 interface PickerSearchProps {
@@ -14,23 +15,25 @@ interface PickerSearchProps {
 
 /** Back, search and suggestions floating over the top of the map */
 export function PickerSearch({ query, onQuery, onClear, predictions, onPick, onBack }: PickerSearchProps) {
+  const t = useStrings("search");
+  const common = useStrings("common");
   return (
     <View style={styles.wrap}>
       <View style={styles.bar}>
-        <TouchableOpacity style={styles.iconBtn} onPress={onBack} accessibilityRole="button" accessibilityLabel="Back">
+        <TouchableOpacity style={styles.iconBtn} onPress={onBack} accessibilityRole="button" accessibilityLabel={common.back}>
           <Ionicons name="arrow-back" size={22} color={colors.text} />
         </TouchableOpacity>
         <TextInput
           style={styles.input}
           value={query}
           onChangeText={onQuery}
-          placeholder="Search area, street or landmark"
+          placeholder={t.searchAreaPlaceholder}
           placeholderTextColor="#94a3b8"
           returnKeyType="search"
           autoCorrect={false}
         />
         {query ? (
-          <TouchableOpacity style={styles.iconBtn} onPress={onClear} accessibilityRole="button" accessibilityLabel="Clear search">
+          <TouchableOpacity style={styles.iconBtn} onPress={onClear} accessibilityRole="button" accessibilityLabel={t.clearSearch}>
             <Ionicons name="close-circle" size={20} color="#94a3b8" />
           </TouchableOpacity>
         ) : null}

@@ -121,7 +121,7 @@ export async function riderLocationRoutes(app: FastifyInstance) {
           deliveryLat: true,
           deliveryLng: true,
           deliverySequence: true,
-          store: { select: { name: true, latitude: true, longitude: true } },
+          store: { select: { name: true, translations: true, latitude: true, longitude: true } },
           deliveryTrip: {
             select: {
               id: true,

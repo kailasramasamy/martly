@@ -19,8 +19,12 @@ import { RETURN_REASONS, type RefundDestination } from "@martly/shared/constants
 import { api } from "../lib/api";
 import { uploadImage } from "../lib/upload";
 import { useToast } from "../lib/toast-context";
+import { useLanguage } from "../lib/language-context";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../constants/theme";
+import type { Translations } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
 import { RefundDestinationPicker } from "../components/order/RefundDestinationPicker";
 
@@ -33,7 +37,7 @@ interface OrderItemData {
   refusedQuantity?: number;
   unitPrice: string;
   totalPrice: string;
-  product: { name: string };
+  product: { name: string; translations?: Translations | null };
   variant?: { name: string; unitType: string; unitValue: string } | null;
 }
 
@@ -58,6 +62,9 @@ function ReturnRequestScreen() {
   const { orderId } = useLocalSearchParams<{ orderId: string }>();
   const router = useRouter();
   const toast = useToast();
+  const t = useStrings("orders");
+  const r = t.returns;
+  const { getLocalizedName } = useLanguage();
 
   const [order, setOrder] = useState<OrderData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -89,7 +96,7 @@ function ReturnRequestScreen() {
       });
       setSelectedItems(initial);
     } catch {
-      toast.show("Failed to load order", "error");
+      toast.show(r.loadFailed, "error");
     } finally {
       setLoading(false);
     }
@@ -136,13 +143,13 @@ function ReturnRequestScreen() {
   const pickImages = async () => {
     const remaining = MAX_IMAGES - images.length;
     if (remaining <= 0) {
-      toast.show(`Maximum ${MAX_IMAGES} photos allowed`, "error");
+      toast.show(t.photos.max(MAX_IMAGES), "error");
       return;
     }
 
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (status !== "granted") {
-      toast.show("Photo library permission is required", "error");
+      toast.show(t.photos.permission, "error");
       return;
     }
 
@@ -165,11 +172,11 @@ function ReturnRequestScreen() {
 
   const handleSubmit = async () => {
     if (selectedItems.size === 0) {
-      toast.show("Please select at least one item", "error");
+      toast.show(r.selectOne, "error");
       return;
     }
     if (!reason) {
-      toast.show("Please select a reason", "error");
+      toast.show(r.selectReason, "error");
       return;
     }
 
@@ -197,10 +204,10 @@ function ReturnRequestScreen() {
         })),
       });
 
-      toast.show("Return request submitted", "success");
+      toast.show(r.submitted, "success");
       router.back();
     } catch (e: unknown) {
-      const msg = e instanceof Error ? e.message : "Failed to submit return request";
+      const msg = e instanceof Error ? e.message : r.submitFailed;
       toast.show(msg, "error");
     } finally {
       setSubmitting(false);
@@ -209,10 +216,10 @@ function ReturnRequestScreen() {
 
   const isUploading = submitting && uploadingImages;
   const submitLabel = isUploading
-    ? "Uploading photos..."
+    ? t.photos.uploading
     : submitting
-      ? "Submitting..."
-      : "Submit Return Request";
+      ? t.photos.submitting
+      : r.submit;
   const canSubmit = selectedItems.size > 0 && reason !== "" && !submitting;
 
   if (loading) {
@@ -226,7 +233,7 @@ function ReturnRequestScreen() {
   if (!order) {
     return (
       <View style={styles.center}>
-        <Text style={styles.emptyText}>Order not found</Text>
+        <Text style={styles.emptyText}>{t.detail.notFound}</Text>
       </View>
     );
   }
@@ -247,7 +254,7 @@ function ReturnRequestScreen() {
         keyboardDismissMode="interactive"
       >
         {/* Select Items */}
-        <Text style={styles.sectionTitle}>Select Items</Text>
+        <Text style={styles.sectionTitle}>{r.selectItems}</Text>
         <View style={styles.card}>
           {order.items.filter((item) => returnable(item) > 0).map((item) => {
             const selected = selectedItems.has(item.id);
@@ -266,11 +273,11 @@ function ReturnRequestScreen() {
                   />
                 </TouchableOpacity>
                 <View style={styles.itemInfo}>
-                  <Text style={styles.itemName} numberOfLines={1}>{item.product.name}</Text>
+                  <Text style={styles.itemName} numberOfLines={1}>{getLocalizedName(item.product)}</Text>
                   {item.variant && (
                     <Text style={styles.itemVariant}>{item.variant.name}</Text>
                   )}
-                  <Text style={styles.itemPrice}>{"\u20B9"}{Number(item.unitPrice).toFixed(0)} each</Text>
+                  <Text style={styles.itemPrice}>{r.each(`\u20B9${Number(item.unitPrice).toFixed(0)}`)}</Text>
                 </View>
                 {selected && sel && (
                   <View style={styles.qtyControl}>
@@ -297,33 +304,33 @@ function ReturnRequestScreen() {
         </View>
 
         {/* Reason */}
-        <Text style={styles.sectionTitle}>Reason</Text>
+        <Text style={styles.sectionTitle}>{r.reason}</Text>
         <View style={styles.card}>
-          {RETURN_REASONS.map((r) => (
+          {RETURN_REASONS.map((reasonOption) => (
             <TouchableOpacity
-              key={r}
+              key={reasonOption}
               style={styles.reasonRow}
-              onPress={() => setReason(r)}
+              onPress={() => setReason(reasonOption)}
               activeOpacity={0.7}
             >
               <Ionicons
-                name={reason === r ? "radio-button-on" : "radio-button-off"}
+                name={reason === reasonOption ? "radio-button-on" : "radio-button-off"}
                 size={22}
-                color={reason === r ? colors.primary : colors.textSecondary}
+                color={reason === reasonOption ? colors.primary : colors.textSecondary}
               />
-              <Text style={[styles.reasonText, reason === r && styles.reasonTextSelected]}>{r}</Text>
+              <Text style={[styles.reasonText, reason === reasonOption && styles.reasonTextSelected]}>{(r.reasons as Record<string, string>)[reasonOption] ?? reasonOption}</Text>
             </TouchableOpacity>
           ))}
         </View>
 
         {/* Description */}
-        <Text style={styles.sectionTitle}>Description <Text style={styles.optionalLabel}>(optional)</Text></Text>
+        <Text style={styles.sectionTitle}>{r.description} <Text style={styles.optionalLabel}>{r.optional}</Text></Text>
         <View>
           <TextInput
             style={styles.textArea}
             value={description}
             onChangeText={setDescription}
-            placeholder="Describe the issue in detail..."
+            placeholder={r.describePlaceholder}
             placeholderTextColor="#94a3b8"
             multiline
             numberOfLines={4}
@@ -333,7 +340,7 @@ function ReturnRequestScreen() {
         </View>
 
         {/* Photos */}
-        <Text style={styles.sectionTitle}>Photos <Text style={styles.optionalLabel}>(optional)</Text></Text>
+        <Text style={styles.sectionTitle}>{r.photos} <Text style={styles.optionalLabel}>{r.optional}</Text></Text>
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
@@ -352,7 +359,7 @@ function ReturnRequestScreen() {
             <TouchableOpacity style={styles.addPhotoBtn} onPress={pickImages}>
               <Ionicons name="camera-outline" size={28} color={colors.textSecondary} />
               <Text style={styles.addPhotoText}>
-                {images.length === 0 ? "Add" : `${images.length}/${MAX_IMAGES}`}
+                {images.length === 0 ? t.photos.add : `${images.length}/${MAX_IMAGES}`}
               </Text>
             </TouchableOpacity>
           )}
@@ -365,20 +372,20 @@ function ReturnRequestScreen() {
         {/* Refund Summary */}
         <View style={styles.refundCard}>
           <View style={styles.refundRow}>
-            <Text style={styles.refundLabel}>Estimated Refund</Text>
+            <Text style={styles.refundLabel}>{r.estimatedRefund}</Text>
             <Text style={styles.refundAmount}>
               {"\u20B9"}{refundAmount.toFixed(0)}
             </Text>
           </View>
           <Text style={styles.refundNote}>
             {selectedItems.size === 0
-              ? "Select items to see refund amount"
-              : `${selectedItems.size} item${selectedItems.size > 1 ? "s" : ""} selected`}
+              ? r.selectToSee
+              : r.itemsSelected(selectedItems.size)}
           </Text>
         </View>
 
         <Text style={styles.helper}>
-          If we need the item back, a rider collects it with your next order or you can drop it at the store.
+          {r.helper}
         </Text>
 
         {/* Submit */}
@@ -570,4 +577,7 @@ const styles = StyleSheet.create({
   submitLoading: { flexDirection: "row", alignItems: "center", gap: 8 },
 });
 
-export default withSignIn(ReturnRequestScreen, { icon: "return-down-back-outline", title: "Return an item", message: "Sign in to request a return." });
+export default withSignIn(ReturnRequestScreen, "return-down-back-outline", () => ({
+  title: strings("orders").returns.signInTitle,
+  message: strings("orders").returns.signInMessage,
+}));

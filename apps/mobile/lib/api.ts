@@ -1,5 +1,6 @@
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { API_URL } from "./config";
+import { strings } from "./i18n";
 
 
 let accessToken: string | null = null;
@@ -57,7 +58,7 @@ async function request<T>(path: string, options: RequestInit = {}, isRetry = fal
   }
 
   if (!response.ok) {
-    const error = await response.json().catch(() => ({ message: "Request failed" }));
+    const error = await response.json().catch(() => ({ message: strings("auth").errors.requestFailed }));
     throw new ApiError(error.message ?? `HTTP ${response.status}`, response.status, error.error);
   }
 

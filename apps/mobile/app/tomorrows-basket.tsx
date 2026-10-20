@@ -26,6 +26,10 @@ import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import { RazorpayCheckout } from "../components/RazorpayCheckout";
 import type { TomorrowsBasket, BasketItem } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
+import { formatDate, formatTime } from "../lib/i18n/format";
+import { useLanguage } from "../lib/language-context";
 
 interface RazorpayData {
   razorpay_order_id: string;
@@ -36,6 +40,8 @@ interface RazorpayData {
 }
 
 function TomorrowsBasketScreen() {
+  const t = useStrings("subscriptions");
+  const { getLocalizedName } = useLanguage();
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { selectedStore } = useStore();
@@ -102,22 +108,18 @@ function TomorrowsBasketScreen() {
     // If cutoff is for tomorrow's delivery, it's today's cutoff
     const diff = cutoff.getTime() - now.getTime();
 
-    const cutoffFormatted = cutoff.toLocaleTimeString(undefined, {
-      hour: "numeric",
-      minute: "2-digit",
-      hour12: true,
-    });
+    const cutoffFormatted = formatTime(cutoff, { hour: "numeric", minute: "2-digit", hour12: true });
 
     if (diff <= 0) {
       setCutoffPassed(true);
-      setCountdown(`Cutoff passed (${cutoffFormatted})`);
+      setCountdown(t.basket.cutoffPassed(cutoffFormatted));
     } else {
       setCutoffPassed(false);
       const h = Math.floor(diff / (1000 * 60 * 60));
       const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      setCountdown(`${h}h ${m}m left \u00B7 Cutoff at ${cutoffFormatted}`);
+      setCountdown(t.basket.timeLeft(h, m, cutoffFormatted));
     }
-  }, [basket?.cutoffTime]);
+  }, [basket?.cutoffTime, t]);
 
   useEffect(() => {
     updateCountdown();
@@ -209,7 +211,7 @@ function TomorrowsBasketScreen() {
   const handleProceedRecharge = async () => {
     const amount = customAmount ? Number(customAmount) : selectedRechargeAmount;
     if (!amount || amount < 1) {
-      toast.show("Enter a valid amount", "error");
+      toast.show(t.basket.invalidAmount, "error");
       return;
     }
     setRecharging(true);
@@ -219,7 +221,7 @@ function TomorrowsBasketScreen() {
       setRechargeSheetVisible(false);
       setRazorpayVisible(true);
     } catch {
-      toast.show("Could not initiate recharge", "error");
+      toast.show(t.basket.rechargeFailed, "error");
     } finally {
       setRecharging(false);
     }
@@ -232,10 +234,10 @@ function TomorrowsBasketScreen() {
         ...data,
         amount: razorpayData?.amount ?? 0,
       });
-      toast.show("Wallet recharged successfully!", "success");
+      toast.show(t.basket.rechargeSuccess, "success");
       fetchBasket();
     } catch {
-      toast.show("Payment verification pending", "info");
+      toast.show(t.basket.verificationPending, "info");
     }
   };
 
@@ -255,9 +257,9 @@ function TomorrowsBasketScreen() {
     return (
       <View style={styles.center}>
         <Ionicons name="storefront-outline" size={48} color="#94a3b8" />
-        <Text style={styles.emptyTitle}>Select a store</Text>
+        <Text style={styles.emptyTitle}>{t.basket.selectStore}</Text>
         <Text style={styles.emptySubtitle}>
-          Choose a store to view tomorrow's basket
+          {t.basket.selectStoreHint}
         </Text>
       </View>
     );
@@ -267,9 +269,9 @@ function TomorrowsBasketScreen() {
     return (
       <View style={styles.center}>
         <Ionicons name="basket-outline" size={48} color="#94a3b8" />
-        <Text style={styles.emptyTitle}>No active subscriptions</Text>
+        <Text style={styles.emptyTitle}>{t.basket.noActive}</Text>
         <Text style={styles.emptySubtitle}>
-          Subscribe to products to see your daily basket
+          {t.basket.noActiveHint}
         </Text>
       </View>
     );
@@ -279,7 +281,7 @@ function TomorrowsBasketScreen() {
   const addonItems = basket.items.filter((i) => i.source === "addon");
 
   const deliveryDate = new Date(basket.deliveryDate);
-  const formattedDate = deliveryDate.toLocaleDateString(undefined, {
+  const formattedDate = formatDate(deliveryDate, {
     weekday: "short",
     month: "short",
     day: "numeric",
@@ -290,21 +292,17 @@ function TomorrowsBasketScreen() {
         const [h, m] = basket.cutoffTime.split(":").map(Number);
         const d = new Date();
         d.setHours(h, m, 0, 0);
-        return d.toLocaleTimeString(undefined, {
-          hour: "numeric",
-          minute: "2-digit",
-          hour12: true,
-        });
+        return formatTime(d, { hour: "numeric", minute: "2-digit", hour12: true });
       })()
     : "";
 
   const deliveryWindow = (() => {
     if (!basket.deliveryWindowStart || !basket.deliveryWindowEnd) return null;
-    const fmt = (t: string) => {
-      const [h, m] = t.split(":").map(Number);
+    const fmt = (time: string) => {
+      const [h, m] = time.split(":").map(Number);
       const d = new Date();
       d.setHours(h, m, 0, 0);
-      return d.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit", hour12: true });
+      return formatTime(d, { hour: "numeric", minute: "2-digit", hour12: true });
     };
     return `${fmt(basket.deliveryWindowStart)} - ${fmt(basket.deliveryWindowEnd)}`;
   })();
@@ -326,7 +324,7 @@ function TomorrowsBasketScreen() {
 
       <View style={styles.itemContent}>
         <Text style={styles.itemName} numberOfLines={2}>
-          {item.product.name}
+          {getLocalizedName(item.product)}
         </Text>
         <Text style={styles.itemVariant}>
           {item.variant.name ?? `${item.variant.unitValue} ${item.variant.unitType}`}
@@ -394,10 +392,10 @@ function TomorrowsBasketScreen() {
         {!isAddon && item.isOverridden && (
           <View style={styles.overrideHint}>
             <Text style={styles.overrideHintText}>
-              Default: {item.defaultQuantity}
+              {t.basket.defaultQty(item.defaultQuantity)}
             </Text>
             <TouchableOpacity onPress={() => handleResetOverride(item)} activeOpacity={0.7}>
-              <Text style={styles.overrideResetText}>Reset</Text>
+              <Text style={styles.overrideResetText}>{t.basket.reset}</Text>
             </TouchableOpacity>
           </View>
         )}
@@ -433,10 +431,10 @@ function TomorrowsBasketScreen() {
         <View style={styles.dateHeader}>
           <View style={styles.dateRow}>
             <Ionicons name="calendar-outline" size={20} color={colors.primary} />
-            <Text style={styles.dateText}>Delivery on {formattedDate}{deliveryWindow ? ` \u00B7 ${deliveryWindow}` : ""}</Text>
+            <Text style={styles.dateText}>{t.basket.deliveryOn(formattedDate, deliveryWindow)}</Text>
           </View>
           <Text style={styles.dateSubtext}>
-            Items will be ordered automatically at {cutoffHour}
+            {t.basket.autoOrderAt(cutoffHour)}
           </Text>
         </View>
 
@@ -445,7 +443,7 @@ function TomorrowsBasketScreen() {
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
               <Ionicons name="repeat-outline" size={18} color={colors.primary} />
-              <Text style={styles.sectionTitle}>From Your Subscriptions</Text>
+              <Text style={styles.sectionTitle}>{t.basket.fromSubscriptions}</Text>
               <View style={styles.countBadge}>
                 <Text style={styles.countBadgeText}>{subscriptionItems.length}</Text>
               </View>
@@ -459,7 +457,7 @@ function TomorrowsBasketScreen() {
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
               <Ionicons name="add-circle-outline" size={18} color={colors.secondary} />
-              <Text style={styles.sectionTitle}>Add-ons</Text>
+              <Text style={styles.sectionTitle}>{t.basket.addons}</Text>
               <View style={[styles.countBadge, styles.countBadgeAddon]}>
                 <Text style={[styles.countBadgeText, styles.countBadgeTextAddon]}>
                   {addonItems.length}
@@ -482,10 +480,10 @@ function TomorrowsBasketScreen() {
           <Ionicons name="add-circle-outline" size={22} color={colors.primary} />
           <View style={styles.addItemsTextWrap}>
             <Text style={styles.addItemsTitle}>
-              {addonItems.length > 0 ? "Add more items" : "Add extra items for tomorrow"}
+              {addonItems.length > 0 ? t.basket.addMore : t.basket.addExtra}
             </Text>
             <Text style={styles.addItemsSubtitle}>
-              Browse and add items to your basket
+              {t.basket.browseHint}
             </Text>
           </View>
           <Ionicons name="chevron-forward" size={18} color="#94a3b8" />
@@ -498,18 +496,18 @@ function TomorrowsBasketScreen() {
       {/* Bottom Summary (sticky) */}
       <View style={[styles.bottomSummary, { paddingBottom: Math.max(insets.bottom, 16) + 14 }]}>
         <View style={styles.summaryRow}>
-          <Text style={styles.summaryLabel}>Subtotal</Text>
+          <Text style={styles.summaryLabel}>{t.basket.subtotal}</Text>
           <Text style={styles.summaryValue}>{"\u20B9"}{basket.subtotal}</Text>
         </View>
         <View style={styles.summaryRow}>
-          <Text style={styles.summaryLabel}>Delivery Fee</Text>
+          <Text style={styles.summaryLabel}>{t.basket.deliveryFee}</Text>
           <Text style={styles.summaryValue}>
-            {basket.deliveryFee === 0 ? "Free" : `\u20B9${basket.deliveryFee}`}
+            {basket.deliveryFee === 0 ? t.basket.free : `\u20B9${basket.deliveryFee}`}
           </Text>
         </View>
         <View style={styles.summaryDivider} />
         <View style={styles.summaryRow}>
-          <Text style={styles.totalLabel}>Total</Text>
+          <Text style={styles.totalLabel}>{t.basket.total}</Text>
           <Text style={styles.totalValue}>{"\u20B9"}{basket.total}</Text>
         </View>
 
@@ -517,7 +515,7 @@ function TomorrowsBasketScreen() {
           <View style={[styles.walletRow, styles.walletRowSuccess]}>
             <Ionicons name="wallet-outline" size={16} color={colors.success} />
             <Text style={[styles.walletText, styles.walletTextSuccess]}>
-              Will be paid from wallet
+              {t.basket.paidFromWallet}
             </Text>
             <Text style={[styles.walletBalance, styles.walletTextSuccess]}>
               {"\u20B9"}{basket.walletBalance}
@@ -528,7 +526,7 @@ function TomorrowsBasketScreen() {
             <View style={[styles.walletRow, styles.walletRowError]}>
               <Ionicons name="wallet-outline" size={16} color={colors.error} />
               <Text style={[styles.walletText, styles.walletTextError]}>
-                Insufficient balance ({"\u20B9"}{basket.walletBalance}) — order will be skipped
+                {t.basket.insufficient(basket.walletBalance)}
               </Text>
             </View>
             <TouchableOpacity
@@ -538,7 +536,7 @@ function TomorrowsBasketScreen() {
             >
               <Ionicons name="add-circle" size={18} color="#fff" />
               <Text style={styles.rechargeButtonText}>
-                Recharge Wallet
+                {t.basket.rechargeWallet}
               </Text>
             </TouchableOpacity>
           </View>
@@ -556,9 +554,9 @@ function TomorrowsBasketScreen() {
         <Pressable style={styles.sheetOverlay} onPress={() => setRechargeSheetVisible(false)}>
           <Pressable style={[styles.sheetContent, { paddingBottom: Math.max(insets.bottom, 16) + 8 }]} onPress={() => {}}>
             <View style={styles.sheetHandle} />
-            <Text style={styles.sheetTitle}>Recharge Wallet</Text>
+            <Text style={styles.sheetTitle}>{t.basket.rechargeWallet}</Text>
             <Text style={styles.sheetSubtitle}>
-              You need {"\u20B9"}{Math.ceil(basket!.total - basket!.walletBalance)} to place tomorrow's order
+              {t.basket.youNeed(Math.ceil(basket!.total - basket!.walletBalance))}
             </Text>
 
             {/* Amount chips */}
@@ -576,7 +574,7 @@ function TomorrowsBasketScreen() {
                       {"\u20B9"}{amt}
                     </Text>
                     {amt === getRechargeChips()[0] && (
-                      <Text style={[styles.chipHint, isActive && styles.chipHintActive]}>min</Text>
+                      <Text style={[styles.chipHint, isActive && styles.chipHintActive]}>{t.basket.min}</Text>
                     )}
                   </TouchableOpacity>
                 );
@@ -585,7 +583,7 @@ function TomorrowsBasketScreen() {
 
             {/* Custom amount */}
             <View style={styles.customAmountRow}>
-              <Text style={styles.customAmountLabel}>Or enter amount</Text>
+              <Text style={styles.customAmountLabel}>{t.basket.orEnter}</Text>
               <View style={styles.customInputWrap}>
                 <Text style={styles.customInputPrefix}>{"\u20B9"}</Text>
                 <TextInput
@@ -594,8 +592,8 @@ function TomorrowsBasketScreen() {
                   placeholderTextColor="#94a3b8"
                   keyboardType="number-pad"
                   value={customAmount}
-                  onChangeText={(t) => {
-                    setCustomAmount(t.replace(/[^0-9]/g, ""));
+                  onChangeText={(text) => {
+                    setCustomAmount(text.replace(/[^0-9]/g, ""));
                   }}
                   onFocus={() => setCustomAmount("")}
                 />
@@ -613,7 +611,7 @@ function TomorrowsBasketScreen() {
                 <ActivityIndicator size="small" color="#fff" />
               ) : (
                 <Text style={styles.proceedButtonText}>
-                  Add {"\u20B9"}{customAmount || selectedRechargeAmount} to Wallet
+                  {t.basket.addToWallet(customAmount || selectedRechargeAmount)}
                 </Text>
               )}
             </TouchableOpacity>
@@ -1115,4 +1113,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(TomorrowsBasketScreen, { icon: "basket-outline", title: "Tomorrow's basket", message: "Sign in to see and edit tomorrow's delivery." });
+export default withSignIn(TomorrowsBasketScreen, "basket-outline", () => ({
+  title: strings("subscriptions").basket.signInTitle,
+  message: strings("subscriptions").basket.signInMessage,
+}));

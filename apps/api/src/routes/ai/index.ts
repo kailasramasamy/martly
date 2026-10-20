@@ -97,7 +97,11 @@ async function executeSearchProducts(
     stock: { gt: 0 },
     product: {
       isActive: true,
-      name: { contains: input.query, mode: "insensitive" },
+      // Tamil shoppers speak or type Tamil, so match the Tamil name as well as the English one
+      OR: [
+        { name: { contains: input.query, mode: "insensitive" } },
+        { translations: { path: ["ta", "name"], string_contains: input.query } },
+      ],
     },
   };
 
@@ -126,6 +130,7 @@ async function executeSearchProducts(
       storeProductId: sp.id,
       productId: sp.productId,
       name: sp.product.name,
+      translations: sp.product.translations,
       brand: sp.product.brand?.name ?? null,
       category: sp.product.subcategory?.name ?? null,
       variant: variant.name,
@@ -233,6 +238,7 @@ async function executeGetDeals(
       storeProductId: sp.id,
       productId: sp.productId,
       name: sp.product.name,
+      translations: sp.product.translations,
       brand: sp.product.brand?.name ?? null,
       category: sp.product.subcategory?.name ?? null,
       variant: variant.name,
@@ -268,6 +274,7 @@ RULES:
 7. Use get_categories when customer wants to browse categories.
 8. Use get_product_details for variant options of a specific product.
 9. Use get_deals when customer asks for deals, offers, discounts, or today's specials.
+10. The customer may write in Tamil. Reply in the language they use. Search with short item words in English or Tamil (e.g. "rice" or "அரிசி"), not whole sentences.
 ${cartSummary}
 
 CRITICAL: Your entire response must be a single valid JSON object. No text before or after. No markdown code fences. Just raw JSON:

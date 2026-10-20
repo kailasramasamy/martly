@@ -3,22 +3,23 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useRequireSignIn } from "../../lib/sign-in-context";
-
-const PERKS: { icon: keyof typeof Ionicons.glyphMap; text: string }[] = [
-  { icon: "receipt-outline", text: "Track orders and reorder in a tap" },
-  { icon: "wallet-outline", text: "Wallet, refunds and loyalty points" },
-  { icon: "heart-outline", text: "Save favourites to your wishlist" },
-];
+import { useStrings } from "../../lib/i18n/use-strings";
 
 /** Top of the Account tab for guests: why to sign in, and the button to do it */
 export function GuestAccountCard() {
   const requireSignIn = useRequireSignIn();
+  const t = useStrings("account").guest;
+  const perks: { icon: keyof typeof Ionicons.glyphMap; text: string }[] = [
+    { icon: "receipt-outline", text: t.perkOrders },
+    { icon: "wallet-outline", text: t.perkWallet },
+    { icon: "heart-outline", text: t.perkWishlist },
+  ];
   return (
     <View style={styles.card}>
       <View style={styles.avatar}><Ionicons name="person-outline" size={26} color={colors.primary} /></View>
-      <Text style={styles.title}>You're browsing as a guest</Text>
+      <Text style={styles.title}>{t.title}</Text>
       <View style={styles.perks}>
-        {PERKS.map((p) => (
+        {perks.map((p) => (
           <View key={p.text} style={styles.perk}>
             <Ionicons name={p.icon} size={16} color={colors.primary} />
             <Text style={styles.perkText}>{p.text}</Text>
@@ -26,8 +27,8 @@ export function GuestAccountCard() {
         ))}
       </View>
       <Pressable style={({ pressed }) => [styles.button, pressed && styles.pressed]} accessibilityRole="button"
-        onPress={() => requireSignIn(() => {}, { title: "Sign in to Martly", subtitle: "Enter your phone number to continue" })}>
-        <Text style={styles.buttonText}>Sign in with phone</Text>
+        onPress={() => requireSignIn(() => {}, { title: t.signInTitle, subtitle: t.signInSubtitle })}>
+        <Text style={styles.buttonText}>{t.signInButton}</Text>
       </Pressable>
     </View>
   );
@@ -35,10 +36,11 @@ export function GuestAccountCard() {
 
 /** For store owners and staff, who sign in with email on a separate screen */
 export function StaffSignInLink() {
+  const t = useStrings("account").guest;
   return (
     <Pressable onPress={() => router.push("/(auth)/staff-login")} style={styles.staff} accessibilityRole="link">
       <Ionicons name="storefront-outline" size={16} color={colors.textSecondary} />
-      <Text style={styles.staffText}>Store owner or staff? <Text style={styles.staffStrong}>Sign in here</Text></Text>
+      <Text style={styles.staffText}>{t.staffQuestion} <Text style={styles.staffStrong}>{t.staffAction}</Text></Text>
     </Pressable>
   );
 }

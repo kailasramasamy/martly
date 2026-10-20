@@ -9,6 +9,7 @@ import { isMediaUrl } from "../../services/media.js";
 import type { ProcessedShot } from "../../services/catalog-agent/images.js";
 import { addSizes, DraftSizeError, DraftStateError, publishNew, type Proposal } from "../../services/catalog-agent/publish.js";
 import { assertBrandUsable } from "../../services/brands.js";
+import { translateNewProduct } from "../../services/translate/product.js";
 import { draftInclude, toDetail, toSummary } from "../../services/catalog-agent/view.js";
 
 const MANAGERS = [authenticate, requirePermission(Permission.CATALOG_PRODUCTS)];
@@ -77,7 +78,8 @@ export async function catalogDraftRoutes(app: FastifyInstance) {
     if (edits.subcategoryId && !(await app.prisma.subcategory.findUnique({ where: { id: edits.subcategoryId } }))) return reply.badRequest("Unknown aisle");
     await assertBrandUsable(app.prisma, edits.brandId, draft.organizationId);
     try {
-      await publishNew(app.prisma, draft, proposal, draft.processedImages as unknown as ProcessedShot[], edits);
+      const productId = await publishNew(app.prisma, draft, proposal, draft.processedImages as unknown as ProcessedShot[], edits);
+      void translateNewProduct(app.prisma, productId, app.log);
     } catch (err) {
       if (err instanceof DraftStateError) return reply.conflict(err.message);
       if (err instanceof DraftSizeError) return reply.badRequest(err.message);

@@ -3,6 +3,7 @@ import { router, type Href } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 // Phone sign-ups get a generated placeholder email; it is not something to show the customer
 const PLACEHOLDER_EMAIL_DOMAIN = "@phone.martly.app";
@@ -33,6 +34,7 @@ function Stat({ icon, value, label, href, highlight }: {
 }
 
 export function ProfileHeader({ name, phone, email, walletBalance, loyaltyPoints, isMember, onEdit }: Props) {
+  const { header: t, martPlus } = useStrings("account");
   const initials = (name || "U").split(" ").map((w) => w[0]).join("").toUpperCase().slice(0, 2);
   const contact = [phone && formatPhone(phone), email && !email.endsWith(PLACEHOLDER_EMAIL_DOMAIN) && email]
     .filter(Boolean).join("  ·  ");
@@ -42,17 +44,17 @@ export function ProfileHeader({ name, phone, email, walletBalance, loyaltyPoints
         <View style={styles.orb} />
         <View style={styles.avatar}><Text style={styles.avatarText}>{initials}</Text></View>
         <View style={styles.identity}>
-          <Text style={styles.name} numberOfLines={1}>{name || "Martly customer"}</Text>
+          <Text style={styles.name} numberOfLines={1}>{name || t.customer}</Text>
           {contact ? <Text style={styles.contact} numberOfLines={1}>{contact}</Text> : null}
         </View>
-        <TouchableOpacity style={styles.edit} onPress={onEdit} accessibilityLabel="Edit profile" hitSlop={6}>
+        <TouchableOpacity style={styles.edit} onPress={onEdit} accessibilityLabel={t.editProfile} hitSlop={6}>
           <Ionicons name="create-outline" size={18} color="#fff" />
         </TouchableOpacity>
       </LinearGradient>
       <View style={styles.stats}>
-        <Stat icon="wallet-outline" value={`\u20B9${walletBalance.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`} label="Wallet" href="/wallet" />
-        <Stat icon="star-outline" value={loyaltyPoints.toLocaleString("en-IN")} label="Points" href="/loyalty" />
-        <Stat icon="diamond" value={isMember ? "Active" : "Join"} label="Mart Plus" href="/membership" highlight />
+        <Stat icon="wallet-outline" value={`\u20B9${walletBalance.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`} label={t.wallet} href="/wallet" />
+        <Stat icon="star-outline" value={loyaltyPoints.toLocaleString("en-IN")} label={t.points} href="/loyalty" />
+        <Stat icon="diamond" value={isMember ? t.plusActive : t.plusJoin} label={martPlus} href="/membership" highlight />
       </View>
     </View>
   );

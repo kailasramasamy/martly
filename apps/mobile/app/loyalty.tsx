@@ -15,9 +15,13 @@ import { useStore } from "../lib/store-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 import type { LoyaltyData, LoyaltyTransaction } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
+import { formatDate, formatTime } from "../lib/i18n/format";
 
 function LoyaltyScreen() {
   const router = useRouter();
+  const t = useStrings("account").loyalty;
   const { selectedStore } = useStore();
   const storeId = selectedStore?.id;
   const [data, setData] = useState<LoyaltyData | null>(null);
@@ -85,17 +89,17 @@ function LoyaltyScreen() {
         </View>
         <View style={styles.txInfo}>
           <Text style={styles.txDescription} numberOfLines={1}>
-            {item.description ?? item.type}
+            {item.description ?? t.types[item.type] ?? item.type}
           </Text>
           <Text style={styles.txDate}>
-            {date.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })}
+            {formatDate(date, { day: "numeric", month: "short", year: "numeric" })}
             {" \u00B7 "}
-            {date.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}
+            {formatTime(date, { hour: "2-digit", minute: "2-digit" })}
           </Text>
         </View>
         <View style={styles.txAmountWrap}>
           <Text style={[styles.txAmount, isPositive ? styles.txAmountEarn : styles.txAmountRedeem]}>
-            {isPositive ? "+" : ""}{item.points} pts
+            {t.points(item.points)}
           </Text>
           {item.orderId && (
             <Ionicons name="chevron-forward" size={14} color="#94a3b8" style={{ marginTop: 2 }} />
@@ -111,12 +115,12 @@ function LoyaltyScreen() {
         <View style={styles.balanceIconWrap}>
           <Ionicons name="star" size={28} color="#fff" />
         </View>
-        <Text style={styles.balanceLabel}>Loyalty Points</Text>
+        <Text style={styles.balanceLabel}>{t.label}</Text>
         <Text style={styles.balanceAmount}>{balance.points}</Text>
         <Text style={styles.balanceHint}>
           {config?.isEnabled
-            ? `Earn ${config.earnRate} point${config.earnRate !== 1 ? "s" : ""} per \u20B9100 spent`
-            : "Loyalty program is currently inactive"}
+            ? t.earnRate(config.earnRate)
+            : t.inactive}
         </Text>
       </View>
 
@@ -125,17 +129,17 @@ function LoyaltyScreen() {
         <View style={styles.statCard}>
           <Ionicons name="trending-up" size={18} color="#d97706" />
           <Text style={styles.statValue}>{balance.totalEarned}</Text>
-          <Text style={styles.statLabel}>Total Earned</Text>
+          <Text style={styles.statLabel}>{t.totalEarned}</Text>
         </View>
         <View style={styles.statCard}>
           <Ionicons name="gift-outline" size={18} color="#6366f1" />
           <Text style={styles.statValue}>{balance.totalRedeemed}</Text>
-          <Text style={styles.statLabel}>Redeemed</Text>
+          <Text style={styles.statLabel}>{t.redeemed}</Text>
         </View>
         <View style={styles.statCard}>
           <Ionicons name="wallet-outline" size={18} color={colors.primary} />
           <Text style={styles.statValue}>{"\u20B9"}{balance.points}</Text>
-          <Text style={styles.statLabel}>Value</Text>
+          <Text style={styles.statLabel}>{t.value}</Text>
         </View>
       </View>
 
@@ -143,15 +147,13 @@ function LoyaltyScreen() {
       {config?.isEnabled && (
         <View style={styles.infoBanner}>
           <Ionicons name="information-circle-outline" size={16} color="#d97706" />
-          <Text style={styles.infoBannerText}>
-            1 point = {"\u20B9"}1 at checkout. Min {config.minRedeemPoints} pts to redeem. Max {config.maxRedeemPercentage}% of order value.
-          </Text>
+          <Text style={styles.infoBannerText}>{t.info(config.minRedeemPoints, config.maxRedeemPercentage)}</Text>
         </View>
       )}
 
       {transactions.length > 0 && (
         <View style={styles.txHeader}>
-          <Text style={styles.txHeaderText}>Activity</Text>
+          <Text style={styles.txHeaderText}>{t.activity}</Text>
         </View>
       )}
     </>
@@ -162,10 +164,8 @@ function LoyaltyScreen() {
       <View style={styles.emptyIconWrap}>
         <Ionicons name="star-outline" size={36} color="#94a3b8" />
       </View>
-      <Text style={styles.emptyTitle}>No activity yet</Text>
-      <Text style={styles.emptySubtitle}>
-        Place orders to start earning loyalty points
-      </Text>
+      <Text style={styles.emptyTitle}>{t.emptyTitle}</Text>
+      <Text style={styles.emptySubtitle}>{t.emptySubtitle}</Text>
     </View>
   );
 
@@ -398,4 +398,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(LoyaltyScreen, { icon: "gift-outline", title: "Loyalty points", message: "Sign in to earn and use points on every order." });
+export default withSignIn(LoyaltyScreen, "gift-outline", () => strings("account").signIn.loyalty);

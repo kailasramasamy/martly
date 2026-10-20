@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, Image, Modal, ActivityIndicator, StyleShe
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../../constants/theme";
 import type { PaymentChoice, UpiApp } from "../../lib/upi-apps";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 interface Props {
   choice: PaymentChoice;
@@ -37,6 +38,7 @@ function OptionRow({ active, onPress, icon, title, sub }: {
 
 /** UPI apps installed on the phone come first, so paying is "tap Google Pay, enter PIN" */
 export function PaymentOptions({ choice, onChange, installedApps, isPickup }: Props) {
+  const t = useStrings("checkout").payment;
   const row = (option: PaymentChoice, icon: ReactNode, title: string, sub: string) => (
     <OptionRow
       key={option.kind === "upi" ? option.app : option.kind}
@@ -57,23 +59,23 @@ export function PaymentOptions({ choice, onChange, installedApps, isPickup }: Pr
     <View style={styles.section}>
       <View style={styles.header}>
         <Ionicons name="card-outline" size={16} color={colors.primary} />
-        <Text style={styles.sectionTitle}>Payment Method</Text>
+        <Text style={styles.sectionTitle}>{t.title}</Text>
       </View>
       <View style={styles.options}>
         {installedApps.map((app) =>
-          row({ kind: "upi", app: app.id }, <Image source={app.logo} style={styles.logo} />, app.label, `Pay using ${app.label} UPI`),
+          row({ kind: "upi", app: app.id }, <Image source={app.logo} style={styles.logo} />, app.label, t.payUsing(app.label)),
         )}
         {row(
           { kind: "razorpay" },
           glyph("card-outline", { kind: "razorpay" }),
-          installedApps.length ? "Other UPI apps, cards & more" : "Pay Online",
-          "UPI, cards, net banking",
+          installedApps.length ? t.otherUpi : t.payOnline,
+          t.onlineSub,
         )}
         {row(
           { kind: "cod" },
           glyph("cash-outline", { kind: "cod" }),
-          isPickup ? "Pay at Store" : "Cash on Delivery",
-          isPickup ? "Pay when you pick up" : "Pay when you receive",
+          isPickup ? t.payAtStore : t.cod,
+          isPickup ? t.pickupSub : t.codSub,
         )}
       </View>
     </View>
@@ -82,17 +84,18 @@ export function PaymentOptions({ choice, onChange, installedApps, isPickup }: Pr
 
 /** Shown after returning from the UPI app while the server confirms the payment */
 export function PaymentConfirming({ visible, appLabel, onCancel }: { visible: boolean; appLabel?: string; onCancel: () => void }) {
+  const t = useStrings("checkout").payment;
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onCancel}>
       <View style={styles.backdrop}>
         <View style={styles.confirmCard}>
           <ActivityIndicator size="large" color={colors.primary} />
-          <Text style={styles.confirmTitle}>Confirming your payment</Text>
+          <Text style={styles.confirmTitle}>{t.confirmingTitle}</Text>
           <Text style={styles.confirmSub}>
-            {appLabel ? `Checking with ${appLabel}. ` : ""}This takes a few seconds — please don't close the app.
+            {t.confirmingSub(appLabel)}
           </Text>
           <TouchableOpacity onPress={onCancel} style={styles.confirmCancel} hitSlop={8}>
-            <Text style={styles.confirmCancelText}>Check later in My Orders</Text>
+            <Text style={styles.confirmCancelText}>{t.checkLater}</Text>
           </TouchableOpacity>
         </View>
       </View>

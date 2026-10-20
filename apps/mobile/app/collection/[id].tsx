@@ -4,6 +4,7 @@ import { useLocalSearchParams, useNavigation } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useLanguage } from "../../lib/language-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { useStore } from "../../lib/store-context";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { useCollectionProducts } from "../../lib/use-collection-products";
@@ -40,8 +41,9 @@ function BarTitle({ title, subtitle }: { title: string; subtitle: string | null 
 // The bar wraps it in its own glass button and starts a small view at that button's leading edge, so the icon is
 // centred in a box as wide as the button's content (as tall would stretch the button into an oval)
 function SearchButton({ ink, onPress }: { ink: string; onPress: () => void }) {
+  const t = useStrings("home");
   return (
-    <Pressable onPress={onPress} hitSlop={8} style={styles.searchButton} accessibilityRole="button" accessibilityLabel="Search in this collection">
+    <Pressable onPress={onPress} hitSlop={8} style={styles.searchButton} accessibilityRole="button" accessibilityLabel={t.searchInCollection}>
       <Ionicons name="search" size={22} color={ink} style={styles.searchIcon} />
     </Pressable>
   );
@@ -129,6 +131,7 @@ function useCollectionSearch() {
 export default function CollectionScreen() {
   const { id, subcategoryIds } = useLocalSearchParams<{ id: string; subcategoryIds?: string }>();
   const { selectedStore } = useStore();
+  const t = useStrings("home");
   // An aisle tile on the Home card opens the screen with that aisle already picked
   const [aisle, setAisle] = useState(subcategoryIds);
   const search = useCollectionSearch();
@@ -136,7 +139,7 @@ export default function CollectionScreen() {
   const theme = useCollectionBar(collection, search.onOpen);
 
   if (loading && !collection) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
-  if (failed || !collection) return <Message icon="cloud-offline-outline" text="This offer isn't available right now." />;
+  if (failed || !collection) return <Message icon="cloud-offline-outline" text={t.offerUnavailable} />;
 
   return (
     <ProductActionsProvider store={selectedStore ?? null}>
@@ -161,8 +164,8 @@ export default function CollectionScreen() {
           ListEmptyComponent={loading
             ? <ActivityIndicator style={styles.more} color={colors.primary} />
             : search.q
-              ? <Message icon="search-outline" text={`No matches for \u201C${search.q}\u201D here`} />
-              : <Message icon="basket-outline" text="Nothing from this offer is in stock at your store right now" />}
+              ? <Message icon="search-outline" text={t.noMatches(search.q)} />
+              : <Message icon="basket-outline" text={t.offerOutOfStock} />}
           ListFooterComponent={loadingMore ? <ActivityIndicator style={styles.more} color={colors.primary} /> : null}
         />
         <FloatingCart />

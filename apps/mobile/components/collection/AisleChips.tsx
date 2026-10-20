@@ -1,7 +1,9 @@
-import { memo } from "react";
-import { Image, Pressable, ScrollView, StyleSheet, Text } from "react-native";
+import { memo, useCallback, useEffect, useRef } from "react";
+import { Image, Pressable, ScrollView, StyleSheet, Text, type LayoutRectangle } from "react-native";
 import type { CampaignTile } from "@martly/shared/types";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
+import { useTileLabel } from "../home/sections/TileGridParts";
 
 interface Props {
   aisles: CampaignTile[];
@@ -14,11 +16,31 @@ interface Props {
 
 /** "All" plus each aisle of the collection, with a pack and its item count; picking one narrows the products to it */
 export const AisleChips = memo(function AisleChips({ aisles, selected, onSelect, accent }: Props) {
+  const t = useStrings("home");
+  const labelOf = useTileLabel();
+  // Where each chip sits in the row, so the selected one can be scrolled to the middle of what's visible
+  const scrollRef = useRef<ScrollView>(null);
+  const viewWidth = useRef(0);
+  const chips = useRef(new Map<string | undefined, LayoutRectangle>());
+
+  const reveal = useCallback((value: string | undefined) => {
+    const box = chips.current.get(value);
+    if (!box || !viewWidth.current) return;
+    scrollRef.current?.scrollTo({ x: Math.max(0, box.x - (viewWidth.current - box.width) / 2), animated: true });
+  }, []);
+
+  useEffect(() => reveal(selected), [selected, reveal]);
+
   const chip = (key: string, label: string, value: string | undefined, image?: string, count?: number) => {
     const active = selected === value;
     return (
       <Pressable
         key={key}
+        onLayout={(e) => {
+          chips.current.set(value, e.nativeEvent.layout);
+          // A selection made before the row laid out (opened from a Home aisle tile) is revealed once its chip lands
+          if (active) reveal(value);
+        }}
         onPress={() => onSelect(value)}
         accessibilityRole="button"
         accessibilityState={{ selected: active }}
@@ -32,9 +54,16 @@ export const AisleChips = memo(function AisleChips({ aisles, selected, onSelect,
   };
 
   return (
-    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row} style={styles.scroll}>
-      {chip("all", "All", undefined)}
-      {aisles.map((a) => chip(a.id, a.label, a.subcategoryIds.join(","), a.images[0], a.productCount))}
+    <ScrollView
+      ref={scrollRef}
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      contentContainerStyle={styles.row}
+      style={styles.scroll}
+      onLayout={(e) => { viewWidth.current = e.nativeEvent.layout.width; reveal(selected); }}
+    >
+      {chip("all", t.all, undefined)}
+      {aisles.map((a) => chip(a.id, labelOf(a), a.subcategoryIds.join(","), a.images[0], a.productCount))}
     </ScrollView>
   );
 });

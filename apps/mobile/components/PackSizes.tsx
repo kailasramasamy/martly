@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { View, Text, Pressable, Image, ScrollView, StyleSheet, type StyleProp, type ViewStyle } from "react-native";
 import { colors, fonts } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
 import type { StoreProduct } from "../lib/types";
 
 // Narrow rail cards fit two size chips on the photo, grid cards three
@@ -14,6 +15,7 @@ export const sizeImage = (sp: StoreProduct, primaryId: string) =>
 export function SizePager({ sizes, primaryId, index, width, onIndex, onPress }: {
   sizes: StoreProduct[]; primaryId: string; index: number; width: number; onIndex: (i: number) => void; onPress: () => void;
 }) {
+  const t = useStrings("catalog");
   const ref = useRef<ScrollView>(null);
   const shown = useRef(index);
   useEffect(() => {
@@ -37,7 +39,7 @@ export function SizePager({ sizes, primaryId, index, width, onIndex, onPress }: 
       {sizes.map((s) => {
         const uri = sizeImage(s, primaryId);
         return (
-          <Pressable key={s.id} style={{ width, height: "100%" }} onPress={onPress} accessibilityLabel={`${s.variant.name} pack, swipe for other sizes`}>
+          <Pressable key={s.id} style={{ width, height: "100%" }} onPress={onPress} accessibilityLabel={t.packSwipe(s.variant.name)}>
             {uri && <Image source={{ uri }} style={styles.image} resizeMode="contain" />}
           </Pressable>
         );
@@ -52,6 +54,7 @@ export function SizeChips({ sizes, selectedId, maxChips, onSelect, onMore, style
   sizes: StoreProduct[]; selectedId: string; maxChips: number; onSelect: (id: string) => void; onMore?: () => void;
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useStrings("catalog");
   const overflow = sizes.length > maxChips;
   const room = overflow ? maxChips - 1 : maxChips;
   let shown = sizes.slice(0, room);
@@ -68,14 +71,14 @@ export function SizeChips({ sizes, selectedId, maxChips, onSelect, onMore, style
             hitSlop={{ top: 10, bottom: 8, left: 2, right: 2 }}
             accessibilityRole="button"
             accessibilityState={{ selected: active }}
-            accessibilityLabel={`${s.variant.name} pack`}
+            accessibilityLabel={t.pack(s.variant.name)}
           >
             <Text style={[styles.chipText, active && styles.chipTextActive]} numberOfLines={1}>{s.variant.name}</Text>
           </Pressable>
         );
       })}
       {overflow && (
-        <Pressable style={styles.chip} onPress={onMore} hitSlop={{ top: 10, bottom: 8, left: 2, right: 2 }} accessibilityLabel={`${sizes.length - room} more sizes`}>
+        <Pressable style={styles.chip} onPress={onMore} hitSlop={{ top: 10, bottom: 8, left: 2, right: 2 }} accessibilityLabel={t.moreSizes(sizes.length - room)}>
           <Text style={styles.chipText}>+{sizes.length - shown.length}</Text>
         </Pressable>
       )}

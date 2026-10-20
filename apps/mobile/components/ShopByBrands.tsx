@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
 import { MIN_BRANDS_FOR_STRIP, brandDisplayName, wordmarkColors, type BrandTile } from "../lib/brand-strip";
 
 interface ShopByBrandsProps {
@@ -58,15 +59,17 @@ export function BrandPill({ brand, selected, onPress, outlined = false }: { bran
 }
 
 export function ShopByBrands({ brands, selectedId, onSelect, onVisit, onSeeAll }: ShopByBrandsProps) {
+  const t = useStrings("home");
+  const c = useStrings("common");
   if (brands.length < MIN_BRANDS_FOR_STRIP) return null;
   const selected = brands.find((b) => b.id === selectedId);
   return (
     <View style={styles.band}>
       <View style={styles.titleRow}>
-        <Text style={styles.title}>Shop by brands</Text>
+        <Text style={styles.title}>{t.shopByBrands}</Text>
         {onSeeAll && (
           <TouchableOpacity style={styles.seeAll} onPress={onSeeAll} activeOpacity={0.7} accessibilityRole="button">
-            <Text style={styles.visitText}>See all</Text>
+            <Text style={styles.visitText}>{c.seeAll}</Text>
             <Ionicons name="chevron-forward" size={14} color={colors.primary} />
           </TouchableOpacity>
         )}
@@ -84,7 +87,7 @@ export function ShopByBrands({ brands, selectedId, onSelect, onVisit, onSeeAll }
       />
       {selected && onVisit && (
         <TouchableOpacity style={styles.visit} onPress={() => onVisit(selected)} activeOpacity={0.7}>
-          <Text style={styles.visitText}>Visit {brandDisplayName(selected.name)} store</Text>
+          <Text style={styles.visitText}>{t.visitBrandStore(brandDisplayName(selected.name))}</Text>
           <Ionicons name="arrow-forward" size={14} color={colors.primary} />
         </TouchableOpacity>
       )}

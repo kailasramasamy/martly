@@ -1,0 +1,26 @@
+import type { Strings } from "../index";
+
+export const common: Strings<"common"> = {
+  add: "சேர்",
+  remove: "நீக்கு",
+  cancel: "ரத்து",
+  retry: "மீண்டும் முயல்க",
+  tryAgain: "மீண்டும் முயலுங்கள்",
+  save: "சேமி",
+  done: "முடிந்தது",
+  ok: "சரி",
+  close: "மூடு",
+  back: "பின்செல்",
+  continue: "தொடர்க",
+  confirm: "உறுதிசெய்",
+  seeAll: "அனைத்தும்",
+  viewAll: "அனைத்தையும் பார்",
+  free: "இலவசம்",
+  outOfStock: "ஸ்டாக் இல்லை",
+  loading: "ஏற்றுகிறது…",
+  somethingWrong: "ஏதோ தவறு நடந்தது",
+  today: "இன்று",
+  tomorrow: "நாளை",
+  items: (n: number) => `${n} பொருட்கள்`,
+  percentOff: (n: number) => `${n}% தள்ளுபடி`,
+};

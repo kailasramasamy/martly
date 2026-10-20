@@ -39,7 +39,7 @@ async function catalogAgentWorkerPlugin(app: FastifyInstance) {
 
   async function work(id: string) {
     try {
-      await runDraft(app.prisma, id);
+      await runDraft(app.prisma, id, app.log);
     } catch (err) {
       app.log.error(err, `Catalog draft ${id} failed`);
       const draft = await app.prisma.catalogDraft.findUnique({ where: { id }, select: { attempts: true } });

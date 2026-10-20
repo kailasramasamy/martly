@@ -4,6 +4,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../../constants/theme";
 import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 const SCREEN_HEIGHT = Dimensions.get("window").height;
 // Room kept between the sheet and the status bar
@@ -34,6 +35,7 @@ interface BottomSheetProps {
 }
 
 export function BottomSheet({ visible, title, onClose, children, footer, flush, scrollable }: BottomSheetProps) {
+  const common = useStrings("common");
   const insets = useSafeAreaInsets();
   const { height: windowHeight } = useWindowDimensions();
   const keyboard = useKeyboardHeight();
@@ -59,12 +61,12 @@ export function BottomSheet({ visible, title, onClose, children, footer, flush, 
     <Modal visible={mounted} transparent animationType="none" onRequestClose={onClose} statusBarTranslucent>
       <KeyboardAvoidingView style={styles.root} behavior={Platform.OS === "ios" ? "padding" : undefined}>
         <Animated.View style={[styles.backdrop, { opacity: backdrop }]}>
-          <Pressable style={StyleSheet.absoluteFill} onPress={onClose} accessibilityLabel="Close" />
+          <Pressable style={StyleSheet.absoluteFill} onPress={onClose} accessibilityLabel={common.close} />
         </Animated.View>
         <Animated.View style={[styles.sheet, { maxHeight, paddingBottom: Math.max(insets.bottom, spacing.md), transform: [{ translateY }] }]}>
           <View style={styles.header}>
             <Text style={styles.title}>{title}</Text>
-            <TouchableOpacity style={styles.closeBtn} onPress={onClose} accessibilityLabel="Close">
+            <TouchableOpacity style={styles.closeBtn} onPress={onClose} accessibilityLabel={common.close}>
               <Ionicons name="close" size={22} color={colors.text} />
             </TouchableOpacity>
           </View>

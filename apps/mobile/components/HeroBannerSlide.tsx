@@ -3,6 +3,7 @@ import { View, Text, Image, Pressable, StyleSheet } from "react-native";
 import { colors, fonts } from "../constants/theme";
 import { useLanguage } from "../lib/language-context";
 import { useStore } from "../lib/store-context";
+import { useStrings } from "../lib/i18n/use-strings";
 import { recordBannerTap, recordBannerView } from "../lib/banner-events";
 import type { Banner } from "../lib/types";
 
@@ -20,6 +21,7 @@ export const BANNER_ASPECT = 3 / 2;
 
 export function HeroBannerSlide({ banner, width, height = width / BANNER_ASPECT, onPress, visible = true }: Props) {
   const { language } = useLanguage();
+  const t = useStrings("home");
   const storeId = useStore().selectedStore?.id;
   useEffect(() => {
     if (visible) recordBannerView(storeId, banner.id);
@@ -38,7 +40,7 @@ export function HeroBannerSlide({ banner, width, height = width / BANNER_ASPECT,
       accessibilityLabel={[banner.title, banner.subtitle].filter(Boolean).join(". ")}
     >
       <Image source={{ uri: imageUrl }} style={[styles.image, { height }]} resizeMode="cover" />
-      {banner.sponsorType === "BRAND" && <Text style={styles.sponsored}>Sponsored</Text>}
+      {banner.sponsorType === "BRAND" && <Text style={styles.sponsored}>{t.sponsored}</Text>}
       {!banner.textInImage && (
         <View style={styles.caption}>
           <Text style={styles.title} numberOfLines={1}>{banner.title}</Text>

@@ -1,13 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
-
-const ERASED = [
-  "Your name, phone number and email",
-  "Saved addresses",
-  "Wishlist and notifications",
-  "Active subscriptions",
-];
+import { useStrings } from "../../lib/i18n/use-strings";
 
 function Row({ icon, color, text }: { icon: keyof typeof Ionicons.glyphMap; color: string; text: string }) {
   return (
@@ -23,32 +17,32 @@ export function DeletionSummary({ walletBalance, loyaltyPoints, isMember }: {
   loyaltyPoints: number;
   isMember: boolean;
 }) {
+  const t = useStrings("account").deletion;
+  const erased = [t.erasedPersonal, t.erasedAddresses, t.erasedWishlist, t.erasedSubscriptions];
   const losses = [
-    walletBalance > 0 && `₹${walletBalance.toLocaleString("en-IN")} wallet balance`,
-    loyaltyPoints > 0 && `${loyaltyPoints.toLocaleString("en-IN")} loyalty points`,
-    isMember && "Your Mart Plus membership",
+    walletBalance > 0 && t.loseWallet(walletBalance.toLocaleString("en-IN")),
+    loyaltyPoints > 0 && t.losePoints(loyaltyPoints.toLocaleString("en-IN")),
+    isMember && t.loseMembership,
   ].filter((item): item is string => Boolean(item));
 
   return (
     <>
       <View style={styles.card}>
-        <Text style={styles.cardTitle}>What will be erased</Text>
-        {ERASED.map((text) => <Row key={text} icon="close-circle" color="#94a3b8" text={text} />)}
+        <Text style={styles.cardTitle}>{t.erasedTitle}</Text>
+        {erased.map((text) => <Row key={text} icon="close-circle" color="#94a3b8" text={text} />)}
       </View>
 
       {losses.length > 0 && (
         <View style={[styles.card, styles.lossCard]}>
-          <Text style={[styles.cardTitle, styles.lossTitle]}>You will lose</Text>
+          <Text style={[styles.cardTitle, styles.lossTitle]}>{t.loseTitle}</Text>
           {losses.map((text) => <Row key={text} icon="alert-circle" color="#b45309" text={text} />)}
-          <Text style={styles.lossNote}>These can't be refunded or transferred.</Text>
+          <Text style={styles.lossNote}>{t.loseNote}</Text>
         </View>
       )}
 
       <View style={styles.keptCard}>
         <Ionicons name="document-text-outline" size={20} color={colors.primary} />
-        <Text style={styles.keptText}>
-          Invoices and order records are kept without your personal details, as required by Indian tax law.
-        </Text>
+        <Text style={styles.keptText}>{t.kept}</Text>
       </View>
     </>
   );

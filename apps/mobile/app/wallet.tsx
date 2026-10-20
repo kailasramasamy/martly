@@ -13,6 +13,9 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { withSignIn } from "../components/SignInPrompt";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
+import { formatDate, formatTime } from "../lib/i18n/format";
 
 interface WalletTransaction {
   id: string;
@@ -20,6 +23,7 @@ interface WalletTransaction {
   amount: string;
   balanceAfter: string;
   description: string | null;
+  reason: string;
   orderId: string | null;
   createdAt: string;
 }
@@ -31,6 +35,7 @@ interface WalletData {
 
 function WalletScreen() {
   const router = useRouter();
+  const t = useStrings("account").wallet;
   const [data, setData] = useState<WalletData | null>(null);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -74,7 +79,9 @@ function WalletScreen() {
     const balanceAfter = Number(item.balanceAfter);
     const date = new Date(item.createdAt);
     const isExpanded = expandedId === item.id;
-    const description = item.description ?? (isCredit ? "Wallet credit" : "Wallet debit");
+    const fromReason = t.reasons[item.reason as keyof typeof t.reasons];
+    const description = (fromReason && fromReason(item.orderId ? `#${item.orderId.slice(0, 8)}` : ""))
+      ?? item.description ?? (isCredit ? t.creditDescription : t.debitDescription);
 
     return (
       <TouchableOpacity
@@ -96,9 +103,9 @@ function WalletScreen() {
                 {description}
               </Text>
               <Text style={styles.txDate}>
-                {date.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })}
+                {formatDate(date, { day: "numeric", month: "short", year: "numeric" })}
                 {" \u00B7 "}
-                {date.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}
+                {formatTime(date, { hour: "2-digit", minute: "2-digit" })}
               </Text>
             </View>
             <View style={styles.txAmountWrap}>
@@ -117,19 +124,19 @@ function WalletScreen() {
           {isExpanded && (
             <View style={styles.txDetails}>
               <View style={styles.txDetailRow}>
-                <Text style={styles.txDetailLabel}>Type</Text>
+                <Text style={styles.txDetailLabel}>{t.type}</Text>
                 <View style={[styles.txTypeBadge, isCredit ? styles.txTypeBadgeCredit : styles.txTypeBadgeDebit]}>
                   <Text style={[styles.txTypeBadgeText, isCredit ? styles.txTypeBadgeTextCredit : styles.txTypeBadgeTextDebit]}>
-                    {isCredit ? "Credit" : "Debit"}
+                    {isCredit ? t.credit : t.debit}
                   </Text>
                 </View>
               </View>
               <View style={styles.txDetailRow}>
-                <Text style={styles.txDetailLabel}>Amount</Text>
+                <Text style={styles.txDetailLabel}>{t.amount}</Text>
                 <Text style={styles.txDetailValue}>{"\u20B9"}{amount.toFixed(2)}</Text>
               </View>
               <View style={styles.txDetailRow}>
-                <Text style={styles.txDetailLabel}>Balance after</Text>
+                <Text style={styles.txDetailLabel}>{t.balanceAfter}</Text>
                 <Text style={styles.txDetailValue}>{"\u20B9"}{balanceAfter.toFixed(2)}</Text>
               </View>
               {item.orderId && (
@@ -139,7 +146,7 @@ function WalletScreen() {
                   activeOpacity={0.7}
                 >
                   <Ionicons name="receipt-outline" size={14} color={colors.primary} />
-                  <Text style={styles.viewOrderText}>View Order</Text>
+                  <Text style={styles.viewOrderText}>{t.viewOrder}</Text>
                   <Ionicons name="chevron-forward" size={14} color={colors.primary} />
                 </TouchableOpacity>
               )}
@@ -155,11 +162,9 @@ function WalletScreen() {
       <View style={styles.balanceIconWrap}>
         <Ionicons name="wallet" size={28} color="#fff" />
       </View>
-      <Text style={styles.balanceLabel}>Wallet Balance</Text>
+      <Text style={styles.balanceLabel}>{t.balanceLabel}</Text>
       <Text style={styles.balanceAmount}>{"\u20B9"}{balance.toFixed(2)}</Text>
-      <Text style={styles.balanceHint}>
-        Use your wallet balance at checkout for instant payments
-      </Text>
+      <Text style={styles.balanceHint}>{t.balanceHint}</Text>
     </View>
   );
 
@@ -168,10 +173,8 @@ function WalletScreen() {
       <View style={styles.emptyIconWrap}>
         <Ionicons name="receipt-outline" size={36} color="#94a3b8" />
       </View>
-      <Text style={styles.emptyTitle}>No transactions yet</Text>
-      <Text style={styles.emptySubtitle}>
-        Cancelled order refunds and wallet payments will appear here
-      </Text>
+      <Text style={styles.emptyTitle}>{t.emptyTitle}</Text>
+      <Text style={styles.emptySubtitle}>{t.emptySubtitle}</Text>
     </View>
   );
 
@@ -411,4 +414,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(WalletScreen, { icon: "wallet-outline", title: "Your wallet", message: "Sign in to see your wallet balance and refunds." });
+export default withSignIn(WalletScreen, "wallet-outline", () => strings("account").signIn.wallet);

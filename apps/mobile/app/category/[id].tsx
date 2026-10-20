@@ -12,6 +12,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
 import { useLanguage } from "../../lib/language-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing } from "../../constants/theme";
 import { GRID_GAP, GRID_H_PADDING, GRID_CARD_WIDTH } from "../../components/FeaturedProductCard";
@@ -73,6 +74,7 @@ export default function CategoryScreen() {
   const navigation = useNavigation();
   const { selectedStore } = useStore();
   const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
 
   const [category, setCategory] = useState<TreeNode | null>(null);
   const [activeSub, setActiveSub] = useState<string | null>(null);
@@ -224,13 +226,13 @@ export default function CategoryScreen() {
           <View style={styles.emptyIcon}>
             <Ionicons name="search-outline" size={32} color="#94a3b8" />
           </View>
-          <Text style={styles.emptyTitle}>No products found</Text>
+          <Text style={styles.emptyTitle}>{t.category.noProducts}</Text>
           <Text style={styles.emptySubtitle}>
             {hasActiveFilters
-              ? "Try adjusting your filters"
+              ? t.category.adjustFilters
               : activeSub
-                ? "Try selecting a different subcategory"
-                : "No products available in this category yet"}
+                ? t.category.differentSubcategory
+                : t.category.noneYet}
           </Text>
         </View>
       );

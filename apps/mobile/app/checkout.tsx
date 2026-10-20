@@ -23,7 +23,7 @@ import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { api } from "../lib/api";
 import { ReplacementRows } from "../components/order/ReplacementRows";
 import { AvailableOffers } from "../components/checkout/AvailableOffers";
-import { SlotGrid, isBookable, type AvailableSlot } from "../components/checkout/SlotGrid";
+import { SlotGrid, isBookable, clock, type AvailableSlot } from "../components/checkout/SlotGrid";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Switch } from "react-native";
@@ -35,6 +35,10 @@ import { ProfileGate } from "../components/ProfileGate";
 import { ConfirmSheet } from "../components/ConfirmSheet";
 import type { FulfillmentType, UserAddress, CouponValidation, DeliveryZoneInfo, DeliveryLookupResult, LoyaltyData, MembershipStatus } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
+import { formatDate } from "../lib/i18n/format";
+import { useLanguage } from "../lib/language-context";
 
 type PaymentMethod = "ONLINE" | "COD";
 type DeliveryMode = "express" | "scheduled";
@@ -60,6 +64,9 @@ function CheckoutScreen() {
   const { user } = useAuth();
   const router = useRouter();
   const toast = useToast();
+  const t = useStrings("checkout");
+  const common = useStrings("common");
+  const { getLocalizedName } = useLanguage();
   const insets = useSafeAreaInsets();
   const keyboard = useKeyboardReveal();
   const { storeId, storeName, items, totalAmount, itemCount, pendingCoupon, setPendingCoupon } = useCart();
@@ -311,7 +318,7 @@ function CheckoutScreen() {
       // Whatever is applied becomes the saved coupon, so Home's offer cards show the right one as saved
       setPendingCoupon(res.data.code);
     } catch (e: unknown) {
-      setCouponError(e instanceof Error ? e.message : "Invalid coupon");
+      setCouponError(e instanceof Error ? e.message : t.promo.invalid);
     } finally {
       setApplyingCoupon(false);
     }
@@ -466,7 +473,7 @@ function CheckoutScreen() {
         navigateToSuccess(orderId);
       }
     } catch (error: unknown) {
-      const message = error instanceof Error ? error.message : "Failed to place order";
+      const message = error instanceof Error ? error.message : t.payment.placeFailed;
       toast.show(message, "error");
     } finally {
       setSubmitting(false);
@@ -494,23 +501,23 @@ function CheckoutScreen() {
 
   // Delivery fee preview text for fulfillment cards
   const deliveryFeePreview = lookingUpDelivery
-    ? "Calculating..."
+    ? t.fulfillment.calculating
     : freeDeliveryApplied
-      ? "FREE"
+      ? common.free
       : deliveryLookup?.serviceable
         ? deliveryLookup.deliveryFee
           ? `\u20B9${deliveryLookup.deliveryFee.toFixed(0)}`
-          : "FREE"
+          : common.free
         : deliveryZone?.deliveryFee
           ? `\u20B9${deliveryZone.deliveryFee.toFixed(0)}`
-          : "FREE";
+          : common.free;
 
   const deliveryEtaPreview = deliveryLookup?.serviceable
     ? deliveryLookup.estimatedMinutes
-      ? `${deliveryLookup.estimatedMinutes} min`
+      ? t.min(deliveryLookup.estimatedMinutes)
       : null
     : deliveryZone?.estimatedMinutes
-      ? `${deliveryZone.estimatedMinutes} min`
+      ? t.min(deliveryZone.estimatedMinutes)
       : null;
 
   return (
@@ -536,12 +543,12 @@ function CheckoutScreen() {
           </View>
           <View style={styles.storeInfo}>
             <Text style={styles.storeName} numberOfLines={1}>{storeName}</Text>
-            <Text style={styles.storeItemCount}>{itemCount} item{itemCount !== 1 ? "s" : ""}</Text>
+            <Text style={styles.storeItemCount}>{common.items(itemCount)}</Text>
           </View>
           {effectiveEstMinutes != null && (
             <View style={styles.storeEtaChip}>
               <Ionicons name={isPickup ? "time" : "flash"} size={13} color={colors.accentText} />
-              <Text style={styles.storeEtaText}>{isPickup ? "Ready in" : "In"} {effectiveEstMinutes} min</Text>
+              <Text style={styles.storeEtaText}>{isPickup ? t.summary.readyIn(effectiveEstMinutes) : t.summary.inMin(effectiveEstMinutes)}</Text>
             </View>
           )}
         </View>
@@ -551,7 +558,7 @@ function CheckoutScreen() {
           <View style={styles.minOrderWarning}>
             <Ionicons name="alert-circle" size={18} color="#c2410c" />
             <Text style={styles.minOrderWarningText}>
-              Add {"\u20B9"}{(minOrderAmount! - totalAmount).toFixed(0)} more to place your order (min {"\u20B9"}{minOrderAmount!.toFixed(0)})
+              {t.summary.belowMinimum((minOrderAmount! - totalAmount).toFixed(0), minOrderAmount!.toFixed(0))}
             </Text>
           </View>
         )}
@@ -560,7 +567,7 @@ function CheckoutScreen() {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Ionicons name="receipt-outline" size={16} color={colors.primary} />
-            <Text style={styles.sectionTitle}>Order Summary</Text>
+            <Text style={styles.sectionTitle}>{t.summary.title}</Text>
           </View>
           <View style={styles.itemsCard}>
             {items.map((item, index) => (
@@ -576,8 +583,8 @@ function CheckoutScreen() {
                   )}
                 </View>
                 <View style={styles.itemInfo}>
-                  <Text style={styles.itemName} numberOfLines={2}>{item.productName}</Text>
-                  <Text style={styles.itemVariant}>{item.variantName} {"\u00B7"} Qty {item.quantity}</Text>
+                  <Text style={styles.itemName} numberOfLines={2}>{getLocalizedName({ name: item.productName, translations: item.translations })}</Text>
+                  <Text style={styles.itemVariant}>{t.summary.variantQty(item.variantName, item.quantity)}</Text>
                 </View>
                 <Text style={styles.itemTotal}>
                   {"\u20B9"}{(item.price * item.quantity).toFixed(0)}
@@ -592,7 +599,7 @@ function CheckoutScreen() {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Ionicons name="swap-horizontal-outline" size={16} color={colors.primary} />
-            <Text style={styles.sectionTitle}>How do you want your order?</Text>
+            <Text style={styles.sectionTitle}>{t.fulfillment.title}</Text>
           </View>
           <View style={styles.fulfillmentRow}>
             {/* Home Delivery Card */}
@@ -621,10 +628,10 @@ function CheckoutScreen() {
                 fulfillmentType === "DELIVERY" && styles.fulfillmentTitleActive,
                 deliveryDisabled && styles.fulfillmentTitleDisabled,
               ]}>
-                Home Delivery
+                {t.fulfillment.homeDelivery}
               </Text>
               {deliveryDisabled ? (
-                <Text style={styles.fulfillmentUnavailable}>Not available</Text>
+                <Text style={styles.fulfillmentUnavailable}>{t.fulfillment.notAvailable}</Text>
               ) : (
                 <View style={styles.fulfillmentMeta}>
                   {deliveryEtaPreview && (
@@ -632,7 +639,7 @@ function CheckoutScreen() {
                   )}
                   <Text style={[
                     styles.fulfillmentMetaText,
-                    deliveryFeePreview === "FREE" && { color: colors.primary, fontWeight: "700" },
+                    deliveryFeePreview === common.free && { color: colors.primary, fontWeight: "700" },
                   ]}>
                     {deliveryFeePreview}
                   </Text>
@@ -668,12 +675,12 @@ function CheckoutScreen() {
                 styles.fulfillmentTitle,
                 fulfillmentType === "PICKUP" && styles.fulfillmentTitleActive,
               ]}>
-                Store Pickup
+                {t.fulfillment.storePickup}
               </Text>
               <View style={styles.fulfillmentMeta}>
-                <Text style={styles.fulfillmentMetaText}>~30 min</Text>
+                <Text style={styles.fulfillmentMetaText}>{t.fulfillment.pickupEta}</Text>
                 <Text style={[styles.fulfillmentMetaText, { color: colors.primary, fontWeight: "700" }]}>
-                  FREE
+                  {common.free}
                 </Text>
               </View>
               {fulfillmentType === "PICKUP" && (
@@ -690,9 +697,7 @@ function CheckoutScreen() {
               <Ionicons name="information-circle" size={16} color="#b45309" />
               <View style={{ flex: 1 }}>
                 <Text style={styles.notServiceableBannerText}>
-                  Delivery isn't available for your location
-                  {deliveryLookup?.distance ? ` (${deliveryLookup.distance.toFixed(1)} km away)` : ""}
-                  . You can pick up from the store or try a different address.
+                  {t.fulfillment.notServiceable(deliveryLookup?.distance ? deliveryLookup.distance.toFixed(1) : null)}
                 </Text>
                 <View style={styles.notServiceableActions}>
                   {addresses.length > 1 && (
@@ -702,7 +707,7 @@ function CheckoutScreen() {
                       activeOpacity={0.7}
                     >
                       <Ionicons name="swap-horizontal-outline" size={14} color="#92400e" />
-                      <Text style={styles.notServiceableBtnText}>Switch address</Text>
+                      <Text style={styles.notServiceableBtnText}>{t.fulfillment.switchAddress}</Text>
                     </TouchableOpacity>
                   )}
                   <TouchableOpacity
@@ -711,7 +716,7 @@ function CheckoutScreen() {
                     activeOpacity={0.7}
                   >
                     <Ionicons name="add-circle-outline" size={14} color="#92400e" />
-                    <Text style={styles.notServiceableBtnText}>Add new address</Text>
+                    <Text style={styles.notServiceableBtnText}>{t.fulfillment.addNewAddress}</Text>
                   </TouchableOpacity>
                 </View>
               </View>
@@ -724,7 +729,7 @@ function CheckoutScreen() {
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
               <Ionicons name="location-outline" size={16} color={colors.primary} />
-              <Text style={styles.sectionTitle}>Delivery Address</Text>
+              <Text style={styles.sectionTitle}>{t.address.title}</Text>
             </View>
 
             {loadingAddresses ? (
@@ -739,8 +744,8 @@ function CheckoutScreen() {
                   <Ionicons name="location-outline" size={22} color={colors.primary} />
                 </View>
                 <View style={{ flex: 1 }}>
-                  <Text style={styles.addAddressTitle}>No saved addresses</Text>
-                  <Text style={styles.addAddressSubtitle}>Tap to add your delivery address</Text>
+                  <Text style={styles.addAddressTitle}>{t.address.noneTitle}</Text>
+                  <Text style={styles.addAddressSubtitle}>{t.address.noneSubtitle}</Text>
                 </View>
                 <Ionicons name="add-circle" size={24} color={colors.primary} />
               </TouchableOpacity>
@@ -778,7 +783,7 @@ function CheckoutScreen() {
                           <Text style={styles.addressOptionLabel}>{addr.placeName || addr.label}</Text>
                           {addr.isDefault && (
                             <View style={styles.defaultBadge}>
-                              <Text style={styles.defaultBadgeText}>Default</Text>
+                              <Text style={styles.defaultBadgeText}>{t.address.default}</Text>
                             </View>
                           )}
                         </View>
@@ -791,7 +796,7 @@ function CheckoutScreen() {
                               <View style={styles.addressDeliveryTag}>
                                 <Ionicons name="navigate-outline" size={11} color="#64748b" />
                                 <Text style={styles.addressDeliveryTagText}>
-                                  {lookup.distance.toFixed(1)} km
+                                  {t.address.km(lookup.distance.toFixed(1))}
                                 </Text>
                               </View>
                             )}
@@ -799,14 +804,14 @@ function CheckoutScreen() {
                               <View style={[styles.addressDeliveryTag, styles.addressDeliveryTagGreen]}>
                                 <Ionicons name="bicycle-outline" size={11} color="#16a34a" />
                                 <Text style={[styles.addressDeliveryTagText, { color: "#16a34a" }]}>
-                                  {lookup.deliveryFee ? `₹${lookup.deliveryFee.toFixed(0)}` : "FREE"}
+                                  {lookup.deliveryFee ? `₹${lookup.deliveryFee.toFixed(0)}` : common.free}
                                 </Text>
                               </View>
                             ) : (
                               <View style={[styles.addressDeliveryTag, styles.addressDeliveryTagRed]}>
                                 <Ionicons name="close-circle-outline" size={11} color="#dc2626" />
                                 <Text style={[styles.addressDeliveryTagText, { color: "#dc2626" }]}>
-                                  Not serviceable
+                                  {t.address.notServiceable}
                                 </Text>
                               </View>
                             )}
@@ -827,7 +832,7 @@ function CheckoutScreen() {
                   activeOpacity={0.7}
                 >
                   <Ionicons name="add-circle-outline" size={20} color={colors.primary} />
-                  <Text style={styles.addNewAddressText}>Deliver to a different address</Text>
+                  <Text style={styles.addNewAddressText}>{t.address.differentAddress}</Text>
                 </TouchableOpacity>
               </View>
             )}
@@ -839,7 +844,7 @@ function CheckoutScreen() {
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
               <Ionicons name="location-outline" size={16} color={colors.primary} />
-              <Text style={styles.sectionTitle}>Pickup Location</Text>
+              <Text style={styles.sectionTitle}>{t.address.pickupTitle}</Text>
             </View>
             <View style={styles.pickupLocationCard}>
               <View style={styles.pickupLocationIcon}>
@@ -847,14 +852,14 @@ function CheckoutScreen() {
               </View>
               <View style={{ flex: 1 }}>
                 <Text style={styles.pickupStoreName}>
-                  {deliveryLookup?.storeName ?? storeName}
+                  {storeName}
                 </Text>
                 {deliveryLookup?.storeAddress && (
                   <Text style={styles.pickupStoreAddress}>{deliveryLookup.storeAddress}</Text>
                 )}
                 <View style={styles.pickupReadyRow}>
                   <Ionicons name="time-outline" size={13} color={colors.primary} />
-                  <Text style={styles.pickupReadyText}>Ready in ~30 min after confirmation</Text>
+                  <Text style={styles.pickupReadyText}>{t.address.pickupReady}</Text>
                 </View>
               </View>
             </View>
@@ -866,7 +871,7 @@ function CheckoutScreen() {
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
               <Ionicons name="time-outline" size={16} color={colors.primary} />
-              <Text style={styles.sectionTitle}>Delivery Schedule</Text>
+              <Text style={styles.sectionTitle}>{t.schedule.title}</Text>
             </View>
 
             {/* Express disabled + no slots: show unavailable banner */}
@@ -874,14 +879,14 @@ function CheckoutScreen() {
               <View style={styles.expressUnavailableBanner}>
                 <Ionicons name="flash-off-outline" size={18} color="#b45309" />
                 <Text style={styles.expressUnavailableText}>
-                  Express delivery is currently unavailable for this store
+                  {t.schedule.expressOff}
                 </Text>
               </View>
             ) : expressConfig && expressConfig.enabled && !expressConfig.available && !hasSlots ? (
               <View style={styles.expressUnavailableBanner}>
                 <Ionicons name="time-outline" size={18} color="#b45309" />
                 <Text style={styles.expressUnavailableText}>
-                  Express delivery available from {expressConfig.reason?.replace("Outside operating hours ", "") ?? "later"}
+                  {t.schedule.expressFrom(expressConfig.reason?.replace("Outside operating hours ", "") ?? t.schedule.later)}
                 </Text>
               </View>
             ) : (
@@ -916,13 +921,13 @@ function CheckoutScreen() {
                   deliveryMode === "express" && styles.scheduleToggleTextActive,
                   expressConfig && !expressConfig.available && { color: "#94a3b8" },
                 ]}>
-                  Express
+                  {t.schedule.express}
                 </Text>
                 {expressConfig && !expressConfig.available ? (
-                  <Text style={styles.scheduleToggleSub}>Unavailable</Text>
+                  <Text style={styles.scheduleToggleSub}>{t.schedule.unavailable}</Text>
                 ) : (
                   <Text style={styles.scheduleToggleSub}>
-                    {expressConfig?.etaMinutes ? `~${expressConfig.etaMinutes} min` : "ASAP"}
+                    {expressConfig?.etaMinutes ? t.approxMin(expressConfig.etaMinutes) : t.schedule.asap}
                   </Text>
                 )}
               </TouchableOpacity>
@@ -940,9 +945,9 @@ function CheckoutScreen() {
                   color={deliveryMode === "scheduled" ? colors.primary : "#94a3b8"}
                 />
                 <Text style={[styles.scheduleToggleText, deliveryMode === "scheduled" && styles.scheduleToggleTextActive]}>
-                  Scheduled
+                  {t.schedule.scheduled}
                 </Text>
-                <Text style={styles.scheduleToggleSub}>Pick a time</Text>
+                <Text style={styles.scheduleToggleSub}>{t.schedule.pickTime}</Text>
               </TouchableOpacity>
               )}
             </View>
@@ -970,9 +975,9 @@ function CheckoutScreen() {
                     d.setDate(d.getDate() + i);
                     const dateStr = toLocalDateStr(d);
                     const isSelected = selectedDate === dateStr;
-                    const dayName = i === 0 ? "Today" : i === 1 ? "Tomorrow" : d.toLocaleDateString(undefined, { weekday: "short" });
+                    const dayName = i === 0 ? common.today : i === 1 ? common.tomorrow : formatDate(d, { weekday: "short" });
                     const dayNum = d.getDate();
-                    const monthName = d.toLocaleDateString(undefined, { month: "short" });
+                    const monthName = formatDate(d, { month: "short" });
                     return (
                       <TouchableOpacity
                         key={dateStr}
@@ -1005,13 +1010,13 @@ function CheckoutScreen() {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Ionicons name="pricetag-outline" size={16} color={colors.primary} />
-            <Text style={styles.sectionTitle}>Promo Code</Text>
+            <Text style={styles.sectionTitle}>{t.promo.title}</Text>
           </View>
           {couponResult ? (
             <View style={styles.couponApplied}>
               <View style={{ flex: 1 }}>
                 <Text style={styles.couponAppliedCode}>{couponResult.code}</Text>
-                <Text style={styles.couponAppliedSaving}>You save {"\u20B9"}{couponDiscount.toFixed(0)}</Text>
+                <Text style={styles.couponAppliedSaving}>{t.promo.youSave(couponDiscount.toFixed(0))}</Text>
               </View>
               <TouchableOpacity onPress={handleRemoveCoupon}>
                 <Ionicons name="close-circle" size={22} color="#ef4444" />
@@ -1024,8 +1029,8 @@ function CheckoutScreen() {
               <TextInput
                 style={styles.couponInput}
                 value={couponCode}
-                onChangeText={(t) => { setCouponCode(t); setCouponError(""); }}
-                placeholder="Enter promo code"
+                onChangeText={(text) => { setCouponCode(text); setCouponError(""); }}
+                placeholder={t.promo.placeholder}
                 placeholderTextColor="#94a3b8"
                 autoCapitalize="characters"
               />
@@ -1037,7 +1042,7 @@ function CheckoutScreen() {
                 {applyingCoupon ? (
                   <ActivityIndicator color="#fff" size="small" />
                 ) : (
-                  <Text style={styles.couponApplyText}>Apply</Text>
+                  <Text style={styles.couponApplyText}>{t.promo.apply}</Text>
                 )}
               </TouchableOpacity>
             </View>
@@ -1050,13 +1055,13 @@ function CheckoutScreen() {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Ionicons name="chatbox-ellipses-outline" size={16} color={colors.primary} />
-            <Text style={styles.sectionTitle}>{isPickup ? "Pickup Notes" : "Delivery Notes"}</Text>
+            <Text style={styles.sectionTitle}>{isPickup ? t.notes.pickup : t.notes.delivery}</Text>
           </View>
           <TextInput
             style={styles.deliveryNotesInput}
             value={deliveryNotes}
             onChangeText={setDeliveryNotes}
-            placeholder="Any special instructions? (optional)"
+            placeholder={t.notes.placeholder}
             placeholderTextColor="#94a3b8"
             multiline
             numberOfLines={2}
@@ -1069,7 +1074,7 @@ function CheckoutScreen() {
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
               <Ionicons name="wallet-outline" size={16} color={colors.primary} />
-              <Text style={styles.sectionTitle}>Martly Wallet</Text>
+              <Text style={styles.sectionTitle}>{t.wallet.title}</Text>
             </View>
             <View style={styles.walletCard}>
               <View style={styles.walletLeft}>
@@ -1078,20 +1083,20 @@ function CheckoutScreen() {
                 </View>
                 <View style={{ flex: 1 }}>
                   <Text style={styles.walletBalanceLabel}>
-                    Available: <Text style={styles.walletBalanceAmount}>{"\u20B9"}{walletBalance.toFixed(0)}</Text>
+                    {t.wallet.available} <Text style={styles.walletBalanceAmount}>{"\u20B9"}{walletBalance.toFixed(0)}</Text>
                   </Text>
                   {useWallet && walletDeduction > 0 && (
                     walletCoversAll ? (
                       <Text style={styles.walletApplyText}>
-                        Wallet covers the full amount
+                        {t.wallet.coversAll}
                       </Text>
                     ) : (
                       <View style={styles.walletSplitInfo}>
                         <Text style={styles.walletApplyText}>
-                          -{"\u20B9"}{walletDeduction.toFixed(0)} from wallet
+                          {t.wallet.fromWallet(walletDeduction.toFixed(0))}
                         </Text>
                         <Text style={styles.walletRemainderText}>
-                          {"\u20B9"}{amountToPay.toFixed(0)} via {paymentMethod === "COD" ? (isPickup ? "Pay at Store" : "Cash on Delivery") : chosenUpiApp?.label ?? "Online Payment"}
+                          {t.wallet.via(amountToPay.toFixed(0), paymentMethod === "COD" ? (isPickup ? t.payment.payAtStore : t.payment.cod) : chosenUpiApp?.label ?? t.payment.online)}
                         </Text>
                       </View>
                     )
@@ -1110,7 +1115,7 @@ function CheckoutScreen() {
               <View style={styles.basketWarningBanner}>
                 <Ionicons name="warning-outline" size={16} color="#b45309" />
                 <Text style={styles.basketWarningText}>
-                  This will leave {"\u20B9"}{(walletBalance - walletDeduction).toFixed(0)} in your wallet — not enough for tomorrow's basket ({"\u20B9"}{basketTotal.toFixed(0)}). Your subscription order may be skipped.
+                  {t.wallet.lowWarning((walletBalance - walletDeduction).toFixed(0), basketTotal.toFixed(0))}
                 </Text>
               </View>
             )}
@@ -1122,7 +1127,7 @@ function CheckoutScreen() {
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
               <Ionicons name="star-outline" size={16} color={colors.primary} />
-              <Text style={styles.sectionTitle}>Loyalty Points</Text>
+              <Text style={styles.sectionTitle}>{t.loyalty.title}</Text>
             </View>
             <View style={styles.walletCard}>
               <View style={styles.walletLeft}>
@@ -1131,11 +1136,11 @@ function CheckoutScreen() {
                 </View>
                 <View style={{ flex: 1 }}>
                   <Text style={styles.walletBalanceLabel}>
-                    Available: <Text style={[styles.walletBalanceAmount, { color: "#d97706" }]}>{loyaltyBalance} pts</Text>
+                    {t.wallet.available} <Text style={[styles.walletBalanceAmount, { color: "#d97706" }]}>{t.loyalty.pts(loyaltyBalance)}</Text>
                   </Text>
                   {useLoyalty && loyaltyDeduction > 0 && (
                     <Text style={styles.walletApplyText}>
-                      -{"\u20B9"}{loyaltyDeduction.toFixed(0)} ({loyaltyDeduction} pts)
+                      {t.loyalty.deduction(loyaltyDeduction.toFixed(0), loyaltyDeduction)}
                     </Text>
                   )}
                 </View>
@@ -1165,33 +1170,33 @@ function CheckoutScreen() {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Ionicons name="document-text-outline" size={16} color={colors.primary} />
-            <Text style={styles.sectionTitle}>Bill Details</Text>
+            <Text style={styles.sectionTitle}>{t.bill.title}</Text>
           </View>
           <View style={styles.billCard}>
             {totalSavings > 0 && (
               <View style={styles.savingsStrip}>
                 <Ionicons name="pricetag" size={14} color={colors.accentText} />
                 <Text style={styles.savingsText}>
-                  You're saving {"\u20B9"}{totalSavings.toLocaleString("en-IN", { maximumFractionDigits: 0 })} on this order
+                  {t.bill.saving(totalSavings.toLocaleString("en-IN", { maximumFractionDigits: 0 }))}
                 </Text>
               </View>
             )}
             <View style={styles.billRow}>
-              <Text style={styles.billLabel}>Item total</Text>
+              <Text style={styles.billLabel}>{t.bill.itemTotal}</Text>
               <Text style={styles.billValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
             </View>
             {couponDiscount > 0 && (
               <View style={styles.billRow}>
-                <Text style={styles.billLabel}>Coupon discount</Text>
+                <Text style={styles.billLabel}>{t.bill.couponDiscount}</Text>
                 <Text style={styles.billSaving}>-{"\u20B9"}{couponDiscount.toFixed(0)}</Text>
               </View>
             )}
             <View style={styles.billRow}>
               <Text style={styles.billLabel}>
-                {isPickup ? "Store pickup" : "Delivery fee"}
+                {isPickup ? t.bill.storePickup : t.bill.deliveryFee}
               </Text>
               {isPickup ? (
-                <Text style={styles.billFree}>FREE</Text>
+                <Text style={styles.billFree}>{common.free}</Text>
               ) : lookingUpDelivery ? (
                 <ActivityIndicator size="small" color={colors.primary} />
               ) : freeDeliveryApplied ? (
@@ -1200,10 +1205,10 @@ function CheckoutScreen() {
                     <Text style={styles.billStrikethrough}>{"\u20B9"}{rawDeliveryFee.toFixed(0)}</Text>
                   )}
                   <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
-                    <Text style={styles.billFree}>FREE</Text>
+                    <Text style={styles.billFree}>{common.free}</Text>
                     {memberFreeDelivery && (
                       <View style={styles.plusBadge}>
-                        <Text style={styles.plusBadgeText}>PLUS</Text>
+                        <Text style={styles.plusBadgeText}>{t.bill.plus}</Text>
                       </View>
                     )}
                   </View>
@@ -1216,50 +1221,44 @@ function CheckoutScreen() {
             </View>
             {walletDeduction > 0 && (
               <View style={styles.billRow}>
-                <Text style={styles.billLabel}>Wallet</Text>
+                <Text style={styles.billLabel}>{t.bill.wallet}</Text>
                 <Text style={styles.billSaving}>-{"\u20B9"}{walletDeduction.toFixed(0)}</Text>
               </View>
             )}
             {loyaltyDeduction > 0 && (
               <View style={styles.billRow}>
-                <Text style={styles.billLabel}>Loyalty points ({loyaltyDeduction} pts)</Text>
+                <Text style={styles.billLabel}>{t.bill.loyalty(loyaltyDeduction)}</Text>
                 <Text style={styles.billSaving}>-{"\u20B9"}{loyaltyDeduction.toFixed(0)}</Text>
               </View>
             )}
             {!isPickup && deliveryLookup?.serviceable && deliveryLookup.distance != null && (
               <View style={styles.billRow}>
-                <Text style={styles.billLabel}>Distance</Text>
-                <Text style={styles.billValue}>{deliveryLookup.distance.toFixed(1)} km</Text>
+                <Text style={styles.billLabel}>{t.bill.distance}</Text>
+                <Text style={styles.billValue}>{t.address.km(deliveryLookup.distance.toFixed(1))}</Text>
               </View>
             )}
             {deliveryMode === "scheduled" && selectedSlot && selectedDate ? (
               <View style={styles.billRow}>
-                <Text style={styles.billLabel}>Scheduled</Text>
+                <Text style={styles.billLabel}>{t.bill.scheduled}</Text>
                 <Text style={styles.billValue}>
-                  {(() => {
-                    const d = new Date(selectedDate + "T00:00:00");
-                    const dateStr = d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
-                    const formatTime = (t: string) => {
-                      const [h, m] = t.split(":").map(Number);
-                      const ampm = h >= 12 ? "PM" : "AM";
-                      const h12 = h % 12 || 12;
-                      return `${h12}:${m.toString().padStart(2, "0")} ${ampm}`;
-                    };
-                    return `${dateStr}, ${formatTime(selectedSlot.startTime)} – ${formatTime(selectedSlot.endTime)}`;
-                  })()}
+                  {t.bill.scheduledAt(
+                    formatDate(selectedDate + "T00:00:00", { month: "short", day: "numeric" }),
+                    clock(selectedSlot.startTime),
+                    clock(selectedSlot.endTime),
+                  )}
                 </Text>
               </View>
             ) : effectiveEstMinutes != null ? (
               <View style={styles.billRow}>
                 <Text style={styles.billLabel}>
-                  {isPickup ? "Est. ready in" : "Est. delivery"}
+                  {isPickup ? t.bill.estReady : t.bill.estDelivery}
                 </Text>
-                <Text style={styles.billValue}>{effectiveEstMinutes} min</Text>
+                <Text style={styles.billValue}>{t.min(effectiveEstMinutes)}</Text>
               </View>
             ) : null}
             <View style={styles.billDivider} />
             <View style={styles.billRow}>
-              <Text style={styles.billGrandLabel}>To Pay</Text>
+              <Text style={styles.billGrandLabel}>{t.bill.toPay}</Text>
               <Text style={styles.billGrandValue}>{"\u20B9"}{amountToPay.toFixed(0)}</Text>
             </View>
             {loyaltyEarnPreview > 0 && (
@@ -1269,7 +1268,7 @@ function CheckoutScreen() {
                   <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
                     <Ionicons name="star" size={14} color="#d97706" />
                     <Text style={[styles.billLabel, { color: "#d97706" }]}>
-                      You'll earn {loyaltyEarnPreview} points{loyaltyMultiplier > 1 ? ` (${loyaltyMultiplier}x)` : ""}
+                      {t.bill.earn(loyaltyEarnPreview, loyaltyMultiplier)}
                     </Text>
                   </View>
                 </View>
@@ -1296,24 +1295,24 @@ function CheckoutScreen() {
                 {walletCoversAll ? (
                   <View style={styles.placeOrderWalletHint}>
                     <Ionicons name="wallet" size={11} color="rgba(255,255,255,0.85)" />
-                    <Text style={styles.placeOrderWalletHintText}>via wallet</Text>
+                    <Text style={styles.placeOrderWalletHintText}>{t.footer.viaWallet}</Text>
                   </View>
                 ) : walletDeduction > 0 ? (
                   <View style={styles.placeOrderWalletHint}>
                     <Ionicons name="wallet" size={11} color="rgba(255,255,255,0.85)" />
-                    <Text style={styles.placeOrderWalletHintText}>+{"\u20B9"}{walletDeduction.toFixed(0)} wallet</Text>
+                    <Text style={styles.placeOrderWalletHintText}>{t.footer.plusWallet(walletDeduction.toFixed(0))}</Text>
                   </View>
                 ) : (
-                  <Text style={styles.placeOrderSubtext}>TOTAL</Text>
+                  <Text style={styles.placeOrderSubtext}>{t.footer.total}</Text>
                 )}
               </View>
               <View style={styles.placeOrderRight}>
-                <Text style={styles.placeOrderBtnText}>
+                <Text style={styles.placeOrderBtnText} numberOfLines={2}>
                   {walletCoversAll
-                    ? "Place Order"
+                    ? t.footer.placeOrder
                     : paymentMethod === "COD"
-                      ? (isPickup ? "Place Pickup Order" : "Place Order")
-                      : chosenUpiApp ? `Pay with ${chosenUpiApp.label}` : "Pay & Order"}
+                      ? (isPickup ? t.footer.placePickup : t.footer.placeOrder)
+                      : chosenUpiApp ? t.footer.payWith(chosenUpiApp.label) : t.footer.payAndOrder}
                 </Text>
                 <Ionicons
                   name={walletCoversAll ? "wallet" : isPickup ? "storefront" : paymentMethod === "COD" ? "checkmark-circle" : "card"}
@@ -1337,11 +1336,11 @@ function CheckoutScreen() {
       />
       <ConfirmSheet
         visible={basketWarningVisible}
-        title="Low Wallet Balance"
-        message={`This will leave \u20B9${(walletBalance - walletDeduction).toFixed(0)} in your wallet \u2014 not enough for tomorrow's basket (\u20B9${basketTotal.toFixed(0)}). Your subscription order may be skipped.`}
+        title={t.wallet.lowTitle}
+        message={t.wallet.lowWarning((walletBalance - walletDeduction).toFixed(0), basketTotal.toFixed(0))}
         icon="wallet-outline"
         iconColor="#f59e0b"
-        confirmLabel="Place Order Anyway"
+        confirmLabel={t.wallet.placeAnyway}
         onConfirm={() => { setBasketWarningVisible(false); proceedWithOrder(); }}
         onCancel={() => setBasketWarningVisible(false)}
       />
@@ -1351,7 +1350,7 @@ function CheckoutScreen() {
         <TouchableOpacity style={styles.addressPickerOverlay} activeOpacity={1} onPress={() => setShowAddressPicker(false)}>
           <View style={styles.addressPickerSheet} onStartShouldSetResponder={() => true}>
             <View style={styles.addressPickerHandle} />
-            <Text style={styles.addressPickerTitle}>Select delivery address</Text>
+            <Text style={styles.addressPickerTitle}>{t.address.pickerTitle}</Text>
             <ScrollView keyboardDismissMode="on-drag" style={{ maxHeight: 320 }} showsVerticalScrollIndicator={false}>
               {addresses.map((addr) => {
                 const lookup = addressLookups[addr.id];
@@ -1379,7 +1378,7 @@ function CheckoutScreen() {
                         <Text style={styles.addressPickerLabel}>{addr.placeName || addr.label}</Text>
                         {addr.isDefault && (
                           <View style={styles.defaultBadge}>
-                            <Text style={styles.defaultBadgeText}>Default</Text>
+                            <Text style={styles.defaultBadgeText}>{t.address.default}</Text>
                           </View>
                         )}
                       </View>
@@ -1389,7 +1388,7 @@ function CheckoutScreen() {
                           {lookup.distance != null && (
                             <View style={styles.addressDeliveryTag}>
                               <Ionicons name="navigate-outline" size={11} color="#64748b" />
-                              <Text style={styles.addressDeliveryTagText}>{lookup.distance.toFixed(1)} km</Text>
+                              <Text style={styles.addressDeliveryTagText}>{t.address.km(lookup.distance.toFixed(1))}</Text>
                             </View>
                           )}
                           <View style={[
@@ -1406,8 +1405,8 @@ function CheckoutScreen() {
                               { color: lookup.serviceable ? "#16a34a" : "#dc2626" },
                             ]}>
                               {lookup.serviceable
-                                ? (lookup.deliveryFee ? `₹${lookup.deliveryFee.toFixed(0)}` : "FREE")
-                                : "Not serviceable"}
+                                ? (lookup.deliveryFee ? `₹${lookup.deliveryFee.toFixed(0)}` : common.free)
+                                : t.address.notServiceable}
                             </Text>
                           </View>
                         </View>
@@ -1423,7 +1422,7 @@ function CheckoutScreen() {
               activeOpacity={0.7}
             >
               <Ionicons name="add-circle-outline" size={18} color={colors.primary} />
-              <Text style={styles.addressPickerAddText}>Add new address</Text>
+              <Text style={styles.addressPickerAddText}>{t.fulfillment.addNewAddress}</Text>
             </TouchableOpacity>
           </View>
         </TouchableOpacity>
@@ -1885,12 +1884,14 @@ const styles = StyleSheet.create({
     elevation: 8,
   },
   placeOrderBarDisabled: { opacity: 0.7 },
-  placeOrderLeft: { flexDirection: "row", alignItems: "baseline", gap: 6 },
+  // Both sides may give way, so a longer label (Tamil runs longer) wraps instead of pushing the button off-screen
+  placeOrderLeft: { flexShrink: 1, flexDirection: "row", flexWrap: "wrap", alignItems: "baseline", columnGap: 6, marginRight: 10 },
   placeOrderWalletHint: { flexDirection: "row", alignItems: "center", gap: 3 },
   placeOrderWalletHintText: { fontSize: 11, fontWeight: "600", color: "rgba(255,255,255,0.7)" },
   placeOrderTotal: { fontFamily: fonts.extrabold, fontSize: 21, color: "#fff" },
   placeOrderSubtext: { fontSize: 11, fontWeight: "600", color: "rgba(255,255,255,0.7)" },
   placeOrderRight: {
+    flexShrink: 1,
     flexDirection: "row",
     alignItems: "center",
     gap: 6,
@@ -1899,7 +1900,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 10,
   },
-  placeOrderBtnText: { fontFamily: fonts.extrabold, fontSize: 15, color: colors.primary },
+  placeOrderBtnText: { flexShrink: 1, fontFamily: fonts.extrabold, fontSize: 15, color: colors.primary },
 
   // Delivery schedule
   scheduleToggleRow: {
@@ -2127,4 +2128,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(CheckoutScreen, { icon: "bag-check-outline", title: "Sign in to place your order", message: "Your cart is saved. Sign in with your phone to choose a delivery address and pay." });
+export default withSignIn(CheckoutScreen, "bag-check-outline", () => ({
+  title: strings("checkout").signInTitle,
+  message: strings("checkout").signInMessage,
+}));

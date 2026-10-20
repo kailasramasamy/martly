@@ -13,6 +13,7 @@ import { useRouter } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
+import type { Translations } from "../lib/types";
 import { useStore } from "../lib/store-context";
 import { useCart } from "../lib/cart-context";
 import { useToast } from "../lib/toast-context";
@@ -20,6 +21,9 @@ import { useMembership, getBestPrice } from "../lib/membership-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { ConfirmSheet } from "../components/ConfirmSheet";
 import { withSignIn } from "../components/SignInPrompt";
+import { useStrings } from "../lib/i18n/use-strings";
+import { strings } from "../lib/i18n";
+import { useLanguage } from "../lib/language-context";
 
 interface Prediction {
   orderCount: number;
@@ -49,6 +53,7 @@ interface ReorderItem {
   product: {
     id: string;
     name: string;
+    translations?: Translations | null;
     description: string | null;
     imageUrl: string | null;
     brand: { id: string; name: string } | null;
@@ -79,6 +84,9 @@ interface ReorderData {
 }
 
 function SmartReorderScreen() {
+  const t = useStrings("subscriptions");
+  const common = useStrings("common");
+  const { getLocalizedName } = useLanguage();
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const { selectedStore } = useStore();
@@ -174,10 +182,11 @@ function SmartReorderScreen() {
       for (const item of selectedItems) {
         const qty = quantities.get(item.id) ?? item.suggestedQuantity;
         for (let i = 0; i < qty; i++) {
-          addItem(selectedStore.id, selectedStore.name, {
+          addItem(selectedStore, {
             storeProductId: item.id,
             productId: item.product.id,
             productName: item.product.name,
+            translations: item.product.translations,
             variantId: item.variant.id,
             variantName: item.variant.name,
             price: getBestPrice(item, isMember),
@@ -185,7 +194,7 @@ function SmartReorderScreen() {
           });
         }
       }
-      toast.show(`${selectedItems.length} items added to cart`, "success");
+      toast.show(t.reorder.addedToCart(selectedItems.length), "success");
       router.push("/(tabs)/cart" as any);
     };
 
@@ -195,7 +204,7 @@ function SmartReorderScreen() {
     }
 
     doAdd();
-  }, [selectedStore, selectedItems, quantities, cartStoreId, addItem, toast, router, isMember]);
+  }, [selectedStore, selectedItems, quantities, cartStoreId, addItem, toast, router, isMember, t]);
 
   const selectAll = useCallback(() => {
     if (!data) return;
@@ -213,7 +222,7 @@ function SmartReorderScreen() {
     return (
       <View style={styles.center}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={styles.loadingText}>Analyzing your purchase patterns...</Text>
+        <Text style={styles.loadingText}>{t.reorder.analyzing}</Text>
       </View>
     );
   }
@@ -225,8 +234,8 @@ function SmartReorderScreen() {
         <View style={styles.emptyIconCircle}>
           <Ionicons name="storefront-outline" size={32} color="#94a3b8" />
         </View>
-        <Text style={styles.emptyTitle}>No store selected</Text>
-        <Text style={styles.emptySubtitle}>Select a store first to see reorder predictions</Text>
+        <Text style={styles.emptyTitle}>{t.reorder.noStore}</Text>
+        <Text style={styles.emptySubtitle}>{t.reorder.noStoreHint}</Text>
       </View>
     );
   }
@@ -238,16 +247,16 @@ function SmartReorderScreen() {
         <View style={styles.emptyIconCircle}>
           <Ionicons name="analytics-outline" size={32} color="#94a3b8" />
         </View>
-        <Text style={styles.emptyTitle}>No purchase history yet</Text>
+        <Text style={styles.emptyTitle}>{t.reorder.noHistory}</Text>
         <Text style={styles.emptySubtitle}>
-          Start shopping and we'll predict when you need to restock
+          {t.reorder.noHistoryHint}
         </Text>
         <TouchableOpacity
           style={styles.shopBtn}
           onPress={() => router.push("/(tabs)")}
           activeOpacity={0.8}
         >
-          <Text style={styles.shopBtnText}>Start Shopping</Text>
+          <Text style={styles.shopBtnText}>{t.reorder.startShopping}</Text>
         </TouchableOpacity>
       </View>
     );
@@ -294,7 +303,7 @@ function SmartReorderScreen() {
           {/* Top row: name + badge */}
           <View style={styles.nameRow}>
             <Text style={styles.productName} numberOfLines={2}>
-              {item.product.name}
+              {getLocalizedName(item.product)}
             </Text>
           </View>
 
@@ -327,8 +336,7 @@ function SmartReorderScreen() {
 
           {/* Timing info */}
           <Text style={styles.timingText}>
-            Last ordered {pred.daysSinceLast}d ago
-            {pred.avgIntervalDays != null ? ` \u00b7 Every ~${pred.avgIntervalDays}d` : ""}
+            {t.reorder.timing(pred.daysSinceLast, pred.avgIntervalDays)}
           </Text>
 
           {/* Quantity stepper */}
@@ -383,9 +391,9 @@ function SmartReorderScreen() {
                   <Ionicons name="analytics" size={18} color="#fff" />
                 </View>
                 <View style={{ flex: 1 }}>
-                  <Text style={styles.summaryTitle}>Smart Predictions</Text>
+                  <Text style={styles.summaryTitle}>{t.reorder.title}</Text>
                   <Text style={styles.summarySubtitle}>
-                    Based on your purchase history
+                    {t.reorder.basedOn}
                   </Text>
                 </View>
               </View>
@@ -393,28 +401,28 @@ function SmartReorderScreen() {
               <View style={styles.statsRow}>
                 <View style={styles.statItem}>
                   <Text style={styles.statValue}>{data.summary.totalProducts}</Text>
-                  <Text style={styles.statLabel}>Products</Text>
+                  <Text style={styles.statLabel} numberOfLines={1}>{t.reorder.products}</Text>
                 </View>
                 <View style={styles.statDivider} />
                 <View style={styles.statItem}>
                   <Text style={[styles.statValue, { color: "#dc2626" }]}>
                     {data.summary.overdueCount}
                   </Text>
-                  <Text style={styles.statLabel}>Overdue</Text>
+                  <Text style={styles.statLabel} numberOfLines={1}>{t.reorder.overdue}</Text>
                 </View>
                 <View style={styles.statDivider} />
                 <View style={styles.statItem}>
                   <Text style={[styles.statValue, { color: "#d97706" }]}>
                     {data.summary.dueSoonCount}
                   </Text>
-                  <Text style={styles.statLabel}>Due Soon</Text>
+                  <Text style={styles.statLabel} numberOfLines={1}>{t.reorder.dueSoon}</Text>
                 </View>
                 <View style={styles.statDivider} />
                 <View style={styles.statItem}>
                   <Text style={[styles.statValue, { color: colors.primary }]}>
                     {"\u20B9"}{data.summary.estimatedTotal}
                   </Text>
-                  <Text style={styles.statLabel}>Est. Total</Text>
+                  <Text style={styles.statLabel} numberOfLines={1}>{t.reorder.estTotal}</Text>
                 </View>
               </View>
             </View>
@@ -422,14 +430,14 @@ function SmartReorderScreen() {
             {/* Select All / Deselect */}
             <View style={styles.selectRow}>
               <Text style={styles.selectLabel}>
-                {selectedIds.size} of {data.items.length} selected
+                {t.reorder.selected(selectedIds.size, data.items.length)}
               </Text>
               <TouchableOpacity
                 onPress={allSelected ? deselectAll : selectAll}
                 activeOpacity={0.7}
               >
                 <Text style={styles.selectAction}>
-                  {allSelected ? "Deselect All" : "Select All"}
+                  {allSelected ? t.reorder.deselectAll : t.reorder.selectAll}
                 </Text>
               </TouchableOpacity>
             </View>
@@ -442,7 +450,7 @@ function SmartReorderScreen() {
         <View style={[styles.bottomBar, { paddingBottom: insets.bottom + 12 }]}>
           <View style={styles.bottomInfo}>
             <Text style={styles.bottomCount}>
-              {selectedItems.length} item{selectedItems.length > 1 ? "s" : ""}
+              {common.items(selectedItems.length)}
             </Text>
             <Text style={styles.bottomTotal}>{"\u20B9"}{selectedTotal}</Text>
           </View>
@@ -452,18 +460,18 @@ function SmartReorderScreen() {
             activeOpacity={0.8}
           >
             <Ionicons name="cart" size={18} color="#fff" />
-            <Text style={styles.addToCartText}>Add to Cart</Text>
+            <Text style={styles.addToCartText}>{t.reorder.addToCart}</Text>
           </TouchableOpacity>
         </View>
       )}
 
       <ConfirmSheet
         visible={replaceCartConfirm !== null}
-        title="Replace Cart?"
-        message="Your cart has items from another store. Adding these items will replace your current cart."
+        title={t.reorder.replaceTitle}
+        message={t.reorder.replaceMessage}
         icon="cart-outline"
         iconColor="#f59e0b"
-        confirmLabel="Replace"
+        confirmLabel={t.reorder.replace}
         onConfirm={() => {
           replaceCartConfirm?.pending();
           setReplaceCartConfirm(null);
@@ -482,19 +490,19 @@ const STATUS_BADGE: Record<
     bg: "#fef2f2",
     color: "#dc2626",
     icon: "alert-circle",
-    label: () => "Overdue",
+    label: () => strings("subscriptions").reorder.overdue,
   },
   due_soon: {
     bg: "#fffbeb",
     color: "#d97706",
     icon: "time",
-    label: () => "Due Soon",
+    label: () => strings("subscriptions").reorder.dueSoon,
   },
   not_yet: {
     bg: "#f1f5f9",
     color: "#64748b",
     icon: "repeat",
-    label: (p) => `Bought ${p.orderCount}x`,
+    label: (p) => strings("subscriptions").reorder.bought(p.orderCount),
   },
 };
 
@@ -826,4 +834,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(SmartReorderScreen, { icon: "refresh-outline", title: "Smart reorder", message: "Sign in to restock what you usually buy." });
+export default withSignIn(SmartReorderScreen, "refresh-outline", () => ({
+  title: strings("subscriptions").reorder.signInTitle,
+  message: strings("subscriptions").reorder.signInMessage,
+}));

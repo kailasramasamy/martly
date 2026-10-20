@@ -136,7 +136,7 @@ export async function orderRoutes(app: FastifyInstance) {
           items: { include: { product: true, variant: true } },
           user: { select: { id: true, name: true, email: true } },
           returnRequest: { select: { status: true, remedy: true, method: true, approvedAmount: true } },
-          store: { select: { id: true, name: true } },
+          store: { select: { id: true, name: true, translations: true } },
           deliveryTrip: { select: { rider: { select: { name: true, phone: true } } } },
           storeRatings: { select: { id: true } },
         },

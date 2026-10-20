@@ -1,9 +1,24 @@
 import type { Href } from "expo-router";
 import { notificationAudience } from "@martly/shared/constants";
+import { strings } from "./i18n";
+import { formatDate } from "./i18n/format";
 
 type Data = Record<string, unknown>;
 
 const str = (v: unknown) => String(v);
+
+export function relativeTime(dateStr: string): string {
+  const t = strings("account").notifications;
+  const mins = Math.floor((Date.now() - new Date(dateStr).getTime()) / 60000);
+  if (mins < 1) return t.justNow;
+  if (mins < 60) return t.minsAgo(mins);
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return t.hrsAgo(hrs);
+  const days = Math.floor(hrs / 24);
+  if (days === 1) return t.yesterday;
+  if (days < 7) return t.daysAgo(days);
+  return formatDate(dateStr, { day: "numeric", month: "short" });
+}
 
 function withId(path: string, id: unknown, fallback: string): Href {
   return (id ? `${path}/${str(id)}` : fallback) as Href;

@@ -6,6 +6,7 @@ import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
 import { useLightStatusBar } from "../../lib/use-light-status-bar";
 import { useLanguage } from "../../lib/language-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { brandHomeBlocks, groupBrandProducts, searchBrandListings, type BrandCategory } from "../../lib/brand-store";
 import { brandDisplayName, brandTheme } from "../../lib/brand-strip";
@@ -87,9 +88,10 @@ function useCollapsingScroll(resetKey: string, chipKey: string) {
 }
 
 function SeeAll({ label, color, onPress }: { label: string; color: string; onPress: () => void }) {
+  const t = useStrings("catalog");
   return (
-    <Pressable style={styles.seeAll} onPress={onPress} hitSlop={8} accessibilityLabel={`See all ${label}`}>
-      <Text style={[styles.seeAllText, { color }]}>See all</Text>
+    <Pressable style={styles.seeAll} onPress={onPress} hitSlop={8} accessibilityLabel={t.seeAllLabel(label)}>
+      <Text style={[styles.seeAllText, { color }]}>{t.seeAll}</Text>
       <Ionicons name="chevron-forward" size={14} color={color} />
     </Pressable>
   );
@@ -111,6 +113,7 @@ function AllView({ categories, brandName, color, onOpen, scroll }: {
   categories: BrandCategory[]; brandName: string; color: string; onOpen: (catId: string, subId: string | null) => void; scroll: ScrollBinding;
 }) {
   const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
   const blocks = useMemo(() => brandHomeBlocks(categories), [categories]);
   return (
     <ScrollView
@@ -122,7 +125,7 @@ function AllView({ categories, brandName, color, onOpen, scroll }: {
       keyboardDismissMode="on-drag"
     >
       {blocks.map(({ key, category, rails }) => {
-        const title = category ? getLocalizedName(category) : `More from ${brandName}`;
+        const title = category ? getLocalizedName(category) : t.brand.moreFrom(brandName);
         // A category shown as one pooled rail needs no rail header: its title row carries "See all"
         const single = rails.length === 1 && !rails[0].section;
         return (
@@ -136,7 +139,7 @@ function AllView({ categories, brandName, color, onOpen, scroll }: {
               <View key={rail.key} style={styles.section}>
                 {!single && category && (
                   <RailHeader
-                    title={rail.section ? getLocalizedName(rail.section) : `More in ${title}`}
+                    title={rail.section ? getLocalizedName(rail.section) : t.brand.moreIn(title)}
                     count={rail.productCount}
                     color={color}
                     onSeeAll={() => onOpen(category.id, rail.section?.id ?? null)}
@@ -154,6 +157,7 @@ function AllView({ categories, brandName, color, onOpen, scroll }: {
 
 function SubChips({ category, active, color, onChange }: { category: BrandCategory; active: string | null; color: string; onChange: (id: string | null) => void }) {
   const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
   const scrollRef = useRef<ScrollView>(null);
   const chipX = useRef<Record<string, number>>({});
   const activeKey = active ?? "all";
@@ -166,7 +170,7 @@ function SubChips({ category, active, color, onChange }: { category: BrandCatego
 
   if (category.sections.length < 2) return null;
   const chips = [
-    { id: null, label: "All", count: category.productCount, imageUrl: null },
+    { id: null, label: t.all, count: category.productCount, imageUrl: null },
     ...category.sections.map((s) => ({ id: s.id, label: getLocalizedName(s), count: s.productCount, imageUrl: s.imageUrl })),
   ];
   return (
@@ -225,16 +229,17 @@ function BrandBody({ brand, listings, categories, loading, storeName, query, tab
   brand: BrandInfo | null; listings: StoreProduct[]; categories: BrandCategory[]; loading: boolean; storeName?: string;
   query: string; tab: string | null; sub: string | null; onTab: (cat: string | null, sub?: string | null) => void; scroll: ScrollBinding;
 }) {
+  const t = useStrings("catalog");
   const results = useMemo(() => searchBrandListings(listings, query), [listings, query]);
   const below = (node: React.ReactNode) => <View style={{ paddingTop: scroll.inset }}>{node}</View>;
   if (loading || !brand) return below(<ActivityIndicator style={styles.loader} color={colors.primary} />);
   const name = brandDisplayName(brand.name);
   const { base } = brandTheme(brand);
-  if (!categories.length) return below(<Message icon="storefront-outline" title={`${name} isn't stocked here yet`} text={`${storeName ?? "This store"} doesn't list any ${name} products right now.`} />);
+  if (!categories.length) return below(<Message icon="storefront-outline" title={t.brand.notStockedTitle(name)} text={t.brand.notStockedText(name, storeName)} />);
 
   if (query.trim()) {
-    if (!results.length) return below(<Message icon="search-outline" title="No matches" text={`Nothing in ${name} matches "${query.trim()}".`} />);
-    const header = <Text style={styles.resultsLabel}>{new Set(results.map((r) => r.product.id)).size} results for "{query.trim()}"</Text>;
+    if (!results.length) return below(<Message icon="search-outline" title={t.brand.noMatches} text={t.brand.noMatchesText(name, query.trim())} />);
+    const header = <Text style={styles.resultsLabel}>{t.brand.resultsFor(new Set(results.map((r) => r.product.id)).size, query.trim())}</Text>;
     return <GridView products={results} header={header} listKey={`search:${query}`} scroll={scroll} />;
   }
   const category = categories.find((c) => c.id === tab);
@@ -250,6 +255,7 @@ function BrandBody({ brand, listings, categories, loading, storeName, query, tab
 export default function BrandStoreScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { selectedStore } = useStore();
+  const { getLocalizedName } = useLanguage();
   const { brand, listings, categories, loading } = useBrandStore(id, selectedStore?.id);
   useLightStatusBar();
   const [chosenTab, setTab] = useState<string | null>(null);
@@ -272,7 +278,7 @@ export default function BrandStoreScreen() {
     <ProductActionsProvider store={selectedStore ?? null}>
       <View style={styles.container}>
         <BrandBody
-          brand={brand} listings={listings} categories={categories} loading={loading} storeName={selectedStore?.name}
+          brand={brand} listings={listings} categories={categories} loading={loading} storeName={selectedStore ? getLocalizedName(selectedStore) : undefined}
           query={query} tab={tab} sub={sub} onTab={selectTab} scroll={binding}
         />
         {brand && (

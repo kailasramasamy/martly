@@ -4,6 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useToast } from "../../lib/toast-context";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { AddressAutocomplete } from "../AddressAutocomplete";
 import { FormSheet, formStyles } from "./FormSheet";
 import type { UserAddress } from "../../lib/types";
@@ -52,6 +53,7 @@ function useAddressDraft(visible: boolean, address: UserAddress | null) {
 }
 
 function LabelPicker({ value, onChange }: { value: string; onChange: (label: string) => void }) {
+  const t = useStrings("account").addresses;
   return (
     <View style={styles.labels}>
       {ADDRESS_LABELS.map((opt) => {
@@ -59,7 +61,7 @@ function LabelPicker({ value, onChange }: { value: string; onChange: (label: str
         return (
           <TouchableOpacity key={opt} style={[styles.chip, active && styles.chipActive]} onPress={() => onChange(opt)}>
             <Ionicons name={ADDRESS_ICONS[opt]} size={15} color={active ? "#fff" : colors.text} />
-            <Text style={[styles.chipText, active && styles.chipTextActive]}>{opt}</Text>
+            <Text style={[styles.chipText, active && styles.chipTextActive]}>{t.labels[opt]}</Text>
           </TouchableOpacity>
         );
       })}
@@ -71,12 +73,13 @@ interface Props { visible: boolean; address: UserAddress | null; onClose: () => 
 
 export function AddressSheet({ visible, address, onClose, onSaved }: Props) {
   const toast = useToast();
+  const t = useStrings("account").addresses;
   const [draft, set] = useAddressDraft(visible, address);
   const [saving, setSaving] = useState(false);
 
   const save = async () => {
     if (draft.address.trim().length < 5) {
-      toast.show("Address must be at least 5 characters", "error");
+      toast.show(t.tooShort, "error");
       return;
     }
     setSaving(true);
@@ -85,7 +88,7 @@ export function AddressSheet({ visible, address, onClose, onSaved }: Props) {
       onClose();
       onSaved();
     } catch (e: unknown) {
-      toast.show(e instanceof Error ? e.message : "Failed to save address", "error");
+      toast.show(e instanceof Error ? e.message : t.saveFailed, "error");
     } finally {
       setSaving(false);
     }
@@ -94,17 +97,17 @@ export function AddressSheet({ visible, address, onClose, onSaved }: Props) {
   return (
     <FormSheet
       visible={visible}
-      title={address ? "Edit address" : "Add address"}
-      submitLabel={address ? "Update address" : "Save address"}
+      title={address ? t.edit : t.addTitle}
+      submitLabel={address ? t.updateAddress : t.saveAddress}
       submitting={saving}
       onSubmit={save}
       onClose={onClose}
     >
-      <Text style={formStyles.label}>Save as</Text>
+      <Text style={formStyles.label}>{t.saveAs}</Text>
       <LabelPicker value={draft.label} onChange={(label) => set({ label })} />
-      <Text style={formStyles.label}>Address</Text>
+      <Text style={formStyles.label}>{t.address}</Text>
       <AddressAutocomplete
-        placeholder="Search for your address..."
+        placeholder={t.searchPlaceholder}
         initialValue={draft.address}
         onSelect={(r) => set({
           address: r.address, latitude: r.latitude || null, longitude: r.longitude || null,
@@ -113,7 +116,7 @@ export function AddressSheet({ visible, address, onClose, onSaved }: Props) {
       />
       <TouchableOpacity style={styles.toggle} onPress={() => set({ isDefault: !draft.isDefault })}>
         <Ionicons name={draft.isDefault ? "checkbox" : "square-outline"} size={22} color={draft.isDefault ? colors.primary : "#94a3b8"} />
-        <Text style={styles.toggleText}>Set as default address</Text>
+        <Text style={styles.toggleText}>{t.setDefault}</Text>
       </TouchableOpacity>
     </FormSheet>
   );

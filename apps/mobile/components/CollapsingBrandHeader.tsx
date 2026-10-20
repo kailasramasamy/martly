@@ -6,6 +6,7 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { fonts } from "../constants/theme";
 import { brandDisplayName, brandTheme } from "../lib/brand-strip";
+import { useStrings } from "../lib/i18n/use-strings";
 import type { BrandInfo } from "./BrandStoreHeader";
 
 const COMPACT_ROW = 52;
@@ -57,6 +58,8 @@ export function CollapsingBrandHeader({ brand, scrollY, expanded, pinned, onHeig
 }
 
 function CompactBar({ brand, top, onSearchPress }: { brand: BrandInfo; top: number; onSearchPress: () => void }) {
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   const { base, dark, accent } = brandTheme(brand);
   const name = brandDisplayName(brand.name);
   return (
@@ -64,14 +67,14 @@ function CompactBar({ brand, top, onSearchPress }: { brand: BrandInfo; top: numb
       colors={[base, dark]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}
       style={[styles.compactInner, { paddingTop: top }, brand.themeColorSecondary && { borderBottomWidth: 3, borderBottomColor: accent }]}
     >
-      <Pressable style={styles.iconBtn} onPress={() => router.back()} hitSlop={8} accessibilityLabel="Back">
+      <Pressable style={styles.iconBtn} onPress={() => router.back()} hitSlop={8} accessibilityLabel={tc.back}>
         <Ionicons name="chevron-back" size={22} color="#fff" />
       </Pressable>
       <View style={styles.miniLogo}>
         {brand.imageUrl ? <Image source={{ uri: brand.imageUrl }} style={styles.miniLogoImg} resizeMode="contain" /> : null}
       </View>
       <Text style={styles.compactName} numberOfLines={1}>{name}</Text>
-      <Pressable style={styles.iconBtn} onPress={onSearchPress} hitSlop={8} accessibilityLabel={`Search in ${name}`}>
+      <Pressable style={styles.iconBtn} onPress={onSearchPress} hitSlop={8} accessibilityLabel={t.searchIn(name)}>
         <Ionicons name="search" size={20} color="#fff" />
       </Pressable>
     </LinearGradient>

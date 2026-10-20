@@ -17,17 +17,12 @@ import { useToast } from "../../lib/toast-context";
 import { colors, spacing, fontSize, fonts } from "../../constants/theme";
 import type { Subscription, Pricing } from "../../lib/types";
 import { withSignIn } from "../../components/SignInPrompt";
+import { strings } from "../../lib/i18n";
+import { useStrings } from "../../lib/i18n/use-strings";
+import { formatDate as formatLocalized } from "../../lib/i18n/format";
+import { useLanguage } from "../../lib/language-context";
 
-const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-const FREQUENCY_OPTIONS: { value: Subscription["frequency"]; label: string }[] = [
-  { value: "DAILY", label: "Daily" },
-  { value: "ALTERNATE_DAYS", label: "Alternate Days" },
-  { value: "SPECIFIC_DAYS", label: "Specific Days" },
-  { value: "WEEKLY", label: "Weekly" },
-  { value: "BIWEEKLY", label: "Every 2 Wks" },
-  { value: "MONTHLY", label: "Monthly" },
-];
+const FREQUENCY_OPTIONS: Subscription["frequency"][] = ["DAILY", "ALTERNATE_DAYS", "SPECIFIC_DAYS", "WEEKLY", "BIWEEKLY", "MONTHLY"];
 
 const STATUS_COLORS: Record<Subscription["status"], string> = {
   ACTIVE: colors.success,
@@ -47,6 +42,8 @@ interface SubscriptionDetail extends Subscription {
 }
 
 function SubscriptionDetailScreen() {
+  const t = useStrings("subscriptions");
+  const { getLocalizedName } = useLanguage();
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const { show } = useToast();
@@ -65,7 +62,7 @@ function SubscriptionDetailScreen() {
       const res = await api.get<SubscriptionDetail>(`/api/v1/subscriptions/${id}`);
       setSubscription(res.data);
     } catch {
-      show("Failed to load subscription", "error");
+      show(t.detail.loadFailed, "error");
     } finally {
       setLoading(false);
       setRefreshing(false);
@@ -89,9 +86,9 @@ function SubscriptionDetailScreen() {
     try {
       await api.patch(`/api/v1/subscriptions/${id}`, body);
       await fetchSubscription();
-      show("Subscription updated", "success");
+      show(t.detail.updated, "success");
     } catch (e: any) {
-      show(e.message || "Failed to update", "error");
+      show(e.message || t.detail.updateFailed, "error");
     } finally {
       setUpdating(false);
     }
@@ -137,7 +134,7 @@ function SubscriptionDetailScreen() {
       current.add(dayIndex);
     }
     if (current.size === 0) {
-      show("Select at least one day", "error");
+      show(t.detail.selectDay, "error");
       return;
     }
     patchSubscription({ selectedDays: Array.from(current) });
@@ -160,9 +157,9 @@ function SubscriptionDetailScreen() {
         await api.post(`/api/v1/subscriptions/${id}/skip`, { date: day.date });
       }
       await fetchSubscription();
-      show(day.skipped ? "Delivery restored" : "Delivery skipped", "success");
+      show(day.skipped ? t.detail.restored : t.detail.skipped, "success");
     } catch (e: any) {
-      show(e.message || "Failed to update", "error");
+      show(e.message || t.detail.updateFailed, "error");
     } finally {
       setUpdating(false);
     }
@@ -178,22 +175,22 @@ function SubscriptionDetailScreen() {
   // ── Cancel ─────────────────────────────────────────────
   const handleCancel = () => {
     Alert.alert(
-      "Cancel Subscription",
-      "Are you sure you want to cancel this subscription? This cannot be undone.",
+      t.detail.cancelTitle,
+      t.detail.cancelConfirm,
       [
-        { text: "No, Keep It", style: "cancel" },
+        { text: t.detail.keepIt, style: "cancel" },
         {
-          text: "Yes, Cancel",
+          text: t.detail.yesCancel,
           style: "destructive",
           onPress: async () => {
             if (!id) return;
             setUpdating(true);
             try {
               await api.delete(`/api/v1/subscriptions/${id}`);
-              show("Subscription cancelled", "success");
+              show(t.detail.cancelled, "success");
               router.back();
             } catch (e: any) {
-              show(e.message || "Failed to cancel", "error");
+              show(e.message || t.detail.cancelFailed, "error");
             } finally {
               setUpdating(false);
             }
@@ -208,14 +205,13 @@ function SubscriptionDetailScreen() {
     `\u20B9${Math.round(amount).toLocaleString("en-IN")}`;
 
   const formatDate = (dateStr: string) => {
-    const d = new Date(dateStr);
-    return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
+    return formatLocalized(dateStr, { day: "numeric", month: "short", year: "numeric" });
   };
 
   const getCalendarDayLabel = (dateStr: string) => {
     const d = new Date(dateStr + "T00:00:00");
     return {
-      day: DAY_LABELS[d.getDay()],
+      day: t.list.daysShort[d.getDay()],
       date: d.getDate(),
     };
   };
@@ -233,7 +229,7 @@ function SubscriptionDetailScreen() {
     return (
       <View style={styles.center}>
         <Ionicons name="alert-circle-outline" size={48} color={colors.textSecondary} />
-        <Text style={styles.emptyText}>Subscription not found</Text>
+        <Text style={styles.emptyText}>{t.detail.notFound}</Text>
       </View>
     );
   }
@@ -250,28 +246,28 @@ function SubscriptionDetailScreen() {
       <View style={styles.headerCard}>
         <View style={styles.headerRow}>
           <View style={{ flex: 1 }}>
-            <Text style={styles.storeName}>{subscription.store?.name || "Store"}</Text>
+            <Text style={styles.storeName}>{subscription.store ? getLocalizedName(subscription.store) : t.list.store}</Text>
             <Text style={styles.createdDate}>
-              Created {formatDate(subscription.createdAt)}
+              {t.detail.created(formatDate(subscription.createdAt))}
             </Text>
           </View>
           <View style={[styles.statusBadge, { backgroundColor: STATUS_COLORS[subscription.status] + "18" }]}>
             <View style={[styles.statusDot, { backgroundColor: STATUS_COLORS[subscription.status] }]} />
             <Text style={[styles.statusText, { color: STATUS_COLORS[subscription.status] }]}>
-              {subscription.status}
+              {t.detail.status[subscription.status]}
             </Text>
           </View>
         </View>
         {subscription.pausedUntil && subscription.status === "PAUSED" && (
           <Text style={styles.pausedUntil}>
-            Paused until {formatDate(subscription.pausedUntil)}
+            {t.detail.pausedUntil(formatDate(subscription.pausedUntil))}
           </Text>
         )}
       </View>
 
       {/* ── Items List ────────────────────────────────── */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Items</Text>
+        <Text style={styles.sectionTitle}>{t.detail.items}</Text>
         {subscription.items.map((item, index) => {
           const pricing: Pricing | undefined = item.pricing;
           const lineTotal = pricing ? pricing.effectivePrice * item.quantity : 0;
@@ -286,7 +282,7 @@ function SubscriptionDetailScreen() {
               )}
               <View style={styles.itemInfo}>
                 <Text style={styles.itemName} numberOfLines={2}>
-                  {item.storeProduct.product.name}
+                  {getLocalizedName(item.storeProduct.product)}
                 </Text>
                 <Text style={styles.itemVariant}>
                   {item.storeProduct.variant.unitValue} {item.storeProduct.variant.unitType}
@@ -330,18 +326,18 @@ function SubscriptionDetailScreen() {
       {/* ── Frequency Selector ────────────────────────── */}
       {!isCancelled && (
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Delivery Frequency</Text>
+          <Text style={styles.sectionTitle}>{t.detail.frequency}</Text>
           <View style={styles.chipRow}>
             {FREQUENCY_OPTIONS.map((opt) => {
-              const isActive = subscription.frequency === opt.value;
+              const isActive = subscription.frequency === opt;
               return (
                 <TouchableOpacity
-                  key={opt.value}
+                  key={opt}
                   style={[styles.chip, isActive && styles.chipActive]}
-                  onPress={() => handleFrequencyChange(opt.value)}
+                  onPress={() => handleFrequencyChange(opt)}
                   disabled={updating}
                 >
-                  <Text style={[styles.chipText, isActive && styles.chipTextActive]}>{opt.label}</Text>
+                  <Text style={[styles.chipText, isActive && styles.chipTextActive]}>{t.detail.freq[opt]}</Text>
                 </TouchableOpacity>
               );
             })}
@@ -351,7 +347,7 @@ function SubscriptionDetailScreen() {
             subscription.frequency === "WEEKLY" ||
             subscription.frequency === "BIWEEKLY") && (
             <View style={styles.dayRow}>
-              {DAY_LABELS.map((label, i) => {
+              {t.list.daysShort.map((label, i) => {
                 const isSelected = subscription.selectedDays.includes(i);
                 return (
                   <TouchableOpacity
@@ -393,7 +389,7 @@ function SubscriptionDetailScreen() {
 
       {/* ── Calendar Strip ────────────────────────────── */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Upcoming Deliveries</Text>
+        <Text style={styles.sectionTitle}>{t.detail.upcoming}</Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.calendarScroll}>
           {(subscription.calendar ?? []).map((day) => {
             const { day: dayLabel, date } = getCalendarDayLabel(day.date);
@@ -441,19 +437,19 @@ function SubscriptionDetailScreen() {
         <View style={styles.calendarLegend}>
           <View style={styles.legendItem}>
             <View style={[styles.legendDot, { backgroundColor: colors.primary }]} />
-            <Text style={styles.legendText}>Scheduled</Text>
+            <Text style={styles.legendText}>{t.detail.scheduled}</Text>
           </View>
           <View style={styles.legendItem}>
             <View style={[styles.legendDot, { backgroundColor: colors.textSecondary }]} />
-            <Text style={styles.legendText}>Skipped</Text>
+            <Text style={styles.legendText}>{t.detail.skippedLegend}</Text>
           </View>
-          <Text style={styles.legendHint}>Tap to skip/restore</Text>
+          <Text style={styles.legendHint}>{t.detail.tapHint}</Text>
         </View>
       </View>
 
       {/* ── Delivery Address ──────────────────────────── */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Delivery Address</Text>
+        <Text style={styles.sectionTitle}>{t.detail.address}</Text>
         <View style={styles.addressCard}>
           <Ionicons name="location-outline" size={20} color={colors.primary} />
           <Text style={styles.addressText}>{subscription.deliveryAddress}</Text>
@@ -482,7 +478,7 @@ function SubscriptionDetailScreen() {
                 { color: subscription.status === "ACTIVE" ? colors.warning : colors.primary },
               ]}
             >
-              {subscription.status === "ACTIVE" ? "Pause Subscription" : "Resume Subscription"}
+              {subscription.status === "ACTIVE" ? t.detail.pause : t.detail.resume}
             </Text>
           </TouchableOpacity>
 
@@ -492,7 +488,7 @@ function SubscriptionDetailScreen() {
             disabled={updating}
           >
             <Ionicons name="close-circle-outline" size={22} color={colors.error} />
-            <Text style={[styles.actionBtnText, { color: colors.error }]}>Cancel Subscription</Text>
+            <Text style={[styles.actionBtnText, { color: colors.error }]}>{t.detail.cancel}</Text>
           </TouchableOpacity>
         </View>
       )}
@@ -885,4 +881,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(SubscriptionDetailScreen, { icon: "repeat-outline", title: "Your subscription", message: "Sign in to manage this subscription." });
+export default withSignIn(SubscriptionDetailScreen, "repeat-outline", () => ({
+  title: strings("subscriptions").detail.signInTitle,
+  message: strings("subscriptions").detail.signInMessage,
+}));

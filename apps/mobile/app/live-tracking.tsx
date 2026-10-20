@@ -16,6 +16,11 @@ import * as SecureStore from "expo-secure-store";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { API_URL } from "../lib/config";
+import { strings } from "../lib/i18n";
+import { formatTime } from "../lib/i18n/format";
+import { useStrings } from "../lib/i18n/use-strings";
+import { useLanguage } from "../lib/language-context";
+import type { Store } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
 
 const WS_URL = API_URL.replace(/^http/, "ws");
@@ -42,7 +47,7 @@ interface TrackingData {
     speed: number | null;
     updatedAt: string;
   } | null;
-  store: { name: string; latitude: number | null; longitude: number | null } | null;
+  store: (Pick<Store, "name" | "translations"> & { latitude: number | null; longitude: number | null }) | null;
   deliveryAddress: string | null;
   deliveryLat: number | null;
   deliveryLng: number | null;
@@ -61,6 +66,8 @@ interface RouteData {
 function LiveTrackingScreen() {
   const { orderId } = useLocalSearchParams<{ orderId: string }>();
   const router = useRouter();
+  const t = useStrings("orders").tracking;
+  const { getLocalizedName } = useLanguage();
 
   const [tracking, setTracking] = useState<TrackingData | null>(null);
   const [routeData, setRouteData] = useState<RouteData | null>(null);
@@ -248,7 +255,7 @@ function LiveTrackingScreen() {
     return (
       <View style={styles.center}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={styles.loadingText}>Finding your rider...</Text>
+        <Text style={styles.loadingText}>{t.finding}</Text>
       </View>
     );
   }
@@ -257,12 +264,12 @@ function LiveTrackingScreen() {
     return (
       <View style={styles.center}>
         <Ionicons name="navigate-outline" size={48} color={colors.textSecondary} />
-        <Text style={styles.emptyTitle}>Tracking Not Available</Text>
+        <Text style={styles.emptyTitle}>{t.unavailableTitle}</Text>
         <Text style={styles.emptySubtitle}>
-          Your order hasn't been assigned to a rider yet.
+          {t.unavailableBody}
         </Text>
         <TouchableOpacity style={styles.backBtn} onPress={() => router.back()}>
-          <Text style={styles.backBtnText}>Go Back</Text>
+          <Text style={styles.backBtnText}>{t.goBack}</Text>
         </TouchableOpacity>
       </View>
     );
@@ -295,7 +302,7 @@ function LiveTrackingScreen() {
         };
 
   const lastUpdated = tracking.location?.updatedAt
-    ? new Date(tracking.location.updatedAt).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit", second: "2-digit" })
+    ? formatTime(tracking.location.updatedAt, { hour: "2-digit", minute: "2-digit", second: "2-digit" })
     : null;
 
   const etaMinutes = routeData?.totalDurationSeconds
@@ -339,7 +346,7 @@ function LiveTrackingScreen() {
               longitude: tracking.location!.lng,
             }}
             title={tracking.rider.name}
-            description="Your delivery rider"
+            description={t.riderMarker}
             tracksViewChanges={false}
           >
             <View style={styles.riderMarker}>
@@ -352,8 +359,8 @@ function LiveTrackingScreen() {
         {hasStoreCoords && (
           <Marker
             coordinate={{ latitude: storeLat!, longitude: storeLng! }}
-            title={tracking.store?.name ?? "Store"}
-            description="Pickup location"
+            title={tracking.store ? getLocalizedName(tracking.store) : t.store}
+            description={t.pickupLocation}
             tracksViewChanges={false}
           >
             <View style={styles.storeMarker}>
@@ -367,7 +374,7 @@ function LiveTrackingScreen() {
           <Marker
             key={`stop-${stop.sequence}`}
             coordinate={{ latitude: stop.lat, longitude: stop.lng }}
-            title={stop.isYourStop ? "Your delivery" : `Stop ${idx + 1}`}
+            title={stop.isYourStop ? t.yourDelivery : t.stop(idx + 1)}
             anchor={{ x: 0.5, y: 0.5 }}
             tracksViewChanges={false}
           >
@@ -385,7 +392,7 @@ function LiveTrackingScreen() {
       <View style={styles.liveOverlay}>
         <Animated.View style={[styles.liveDot, { opacity: pulseAnim }]} />
         <Text style={styles.liveText}>
-          {wsConnected ? "LIVE" : "CONNECTING..."}
+          {wsConnected ? t.live : t.connecting}
         </Text>
       </View>
 
@@ -397,7 +404,7 @@ function LiveTrackingScreen() {
             <View style={styles.stopPill}>
               <Ionicons name="pin-outline" size={12} color={colors.textSecondary} />
               <Text style={styles.stopPillText}>
-                You're stop {tracking.customerStopNumber} of {tracking.totalStops}
+                {t.yourStop(tracking.customerStopNumber, tracking.totalStops)}
               </Text>
             </View>
           </View>
@@ -410,7 +417,7 @@ function LiveTrackingScreen() {
           </View>
           <View style={styles.riderInfo}>
             <Text style={styles.riderName}>{tracking.rider.name}</Text>
-            <Text style={styles.riderLabel}>Your delivery partner</Text>
+            <Text style={styles.riderLabel}>{t.deliveryPartner}</Text>
           </View>
           <TouchableOpacity style={styles.callBtn} onPress={callRider} activeOpacity={0.7}>
             <Ionicons name="call" size={20} color="#fff" />
@@ -423,12 +430,12 @@ function LiveTrackingScreen() {
             <>
               <View style={styles.statusItem}>
                 <Ionicons name="location" size={16} color={colors.primary} />
-                <Text style={styles.statusText}>On the way</Text>
+                <Text style={styles.statusText}>{t.onTheWay}</Text>
               </View>
               {etaMinutes != null && (
                 <View style={styles.statusItem}>
                   <Ionicons name="time" size={16} color={ROUTE_TEAL} />
-                  <Text style={styles.etaText}>~{etaMinutes} min</Text>
+                  <Text style={styles.etaText}>{t.eta(etaMinutes)}</Text>
                 </View>
               )}
               {tracking.location?.speed != null && tracking.location.speed > 0 && (
@@ -449,7 +456,7 @@ function LiveTrackingScreen() {
           ) : (
             <View style={styles.statusItem}>
               <Ionicons name="navigate-outline" size={16} color="#f59e0b" />
-              <Text style={styles.statusText}>Waiting for rider location...</Text>
+              <Text style={styles.statusText}>{t.waitingLocation}</Text>
             </View>
           )}
         </View>
@@ -693,4 +700,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(LiveTrackingScreen, { icon: "bicycle-outline", title: "Track your delivery", message: "Sign in to follow your rider live." });
+export default withSignIn(LiveTrackingScreen, "bicycle-outline", () => ({
+  title: strings("orders").tracking.signInTitle,
+  message: strings("orders").tracking.signInMessage,
+}));

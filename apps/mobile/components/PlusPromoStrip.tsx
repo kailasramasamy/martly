@@ -3,26 +3,28 @@ import { router } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
 
 // Compact membership upsell for non-members (members see their status chip at the top instead)
 export function PlusPromoStrip() {
+  const t = useStrings("home");
   return (
     <Pressable
       style={({ pressed }) => [styles.wrap, pressed && { opacity: 0.9 }]}
       onPress={() => router.push("/membership")}
       accessibilityRole="button"
-      accessibilityLabel="Join Mart Plus for free delivery and bonus loyalty points"
+      accessibilityLabel={t.plusA11y}
     >
       <LinearGradient colors={["#fef3c7", "#fde68a"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.strip}>
         <View style={styles.badge}>
           <Ionicons name="diamond" size={16} color={colors.accentText} />
         </View>
         <View style={styles.text}>
-          <Text style={styles.title}>Mart Plus</Text>
-          <Text style={styles.subtitle} numberOfLines={1}>Free delivery + bonus loyalty on every order</Text>
+          <Text style={styles.title}>{t.plusTitle}</Text>
+          <Text style={styles.subtitle} numberOfLines={1}>{t.plusSubtitle}</Text>
         </View>
         <View style={styles.cta}>
-          <Text style={styles.ctaText}>Join</Text>
+          <Text style={styles.ctaText}>{t.join}</Text>
           <Ionicons name="chevron-forward" size={14} color="#fff" />
         </View>
       </LinearGradient>

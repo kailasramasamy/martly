@@ -1,11 +1,12 @@
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
 import { View, StyleSheet } from "react-native";
-import { useCart } from "./cart-context";
+import { useCart, type CartStore } from "./cart-context";
 import { useBasketMode } from "./basket-mode-context";
 import { useMembership, getBestPrice } from "./membership-context";
 import { useWishlist } from "./wishlist-context";
 import { useRequireSignIn } from "./sign-in-context";
 import { useToast } from "./toast-context";
+import { useStrings } from "./i18n/use-strings";
 import { VariantBottomSheet } from "../components/VariantBottomSheet";
 import { ConfirmSheet } from "../components/ConfirmSheet";
 import { SearchEventType } from "@martly/shared/constants";
@@ -27,11 +28,12 @@ export interface ProductActions {
 const ProductActionsContext = createContext<ProductActions | null>(null);
 
 // Cart / tomorrow's-basket logic shared by every screen that lists products
-function useCartActions(store: { id: string; name: string } | null) {
+function useCartActions(store: CartStore | null) {
   const { storeId: cartStoreId, items, addItem, updateQuantity: updateCartQty } = useCart();
   const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
   const { isMember } = useMembership();
   const toast = useToast();
+  const t = useStrings("catalog");
   const [pendingReplace, setPendingReplace] = useState<(() => void) | null>(null);
 
   const cartQtyMap = useMemo(() => new Map(items.map((i) => [i.storeProductId, i.quantity])), [items]);
@@ -40,19 +42,19 @@ function useCartActions(store: { id: string; name: string } | null) {
     if (!store) return;
     if (isBasketMode) {
       addBasketItem(sp.id);
-      toast.show("Added to tomorrow's basket", "success");
+      toast.show(t.addedToBasket, "success");
       return;
     }
     const item = {
-      storeProductId: sp.id, productId: sp.product.id, productName: sp.product.name,
+      storeProductId: sp.id, productId: sp.product.id, productName: sp.product.name, translations: sp.product.translations,
       variantId: sp.variant.id, variantName: sp.variant.name,
       price: getBestPrice(sp, isMember), imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
     };
-    const add = () => addItem(store.id, store.name, item);
+    const add = () => addItem(store, item);
     // The cart holds one store at a time: confirm before discarding another store's cart
     if (cartStoreId && cartStoreId !== store.id) setPendingReplace(() => add);
     else add();
-  }, [store, cartStoreId, addItem, isMember, isBasketMode, addBasketItem, toast]);
+  }, [store, cartStoreId, addItem, isMember, isBasketMode, addBasketItem, toast, t]);
 
   const updateQuantity = useCallback((spId: string, qty: number) => {
     if (isBasketMode) updateBasketQuantity(spId, qty);
@@ -70,16 +72,17 @@ function useCartActions(store: { id: string; name: string } | null) {
  * and renders the size picker and "Replace cart?" prompt once, full-screen.
  */
 export function ProductActionsProvider({ store, onTrack, children }: {
-  store: { id: string; name: string } | null;
+  store: CartStore | null;
   onTrack?: (productId: string, type: SearchEventType) => void;
   children: ReactNode;
 }) {
   const { pendingReplace, setPendingReplace, ...cart } = useCartActions(store);
+  const t = useStrings("catalog");
   const { isWishlisted, toggle } = useWishlist();
   const requireSignIn = useRequireSignIn();
   const toggleWishlist = useCallback(
-    (productId: string) => requireSignIn(() => toggle(productId), { title: "Sign in to save to your wishlist" }),
-    [requireSignIn, toggle],
+    (productId: string) => requireSignIn(() => toggle(productId), { title: t.signInWishlist }),
+    [requireSignIn, toggle, t],
   );
   const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
 
@@ -98,11 +101,11 @@ export function ProductActionsProvider({ store, onTrack, children }: {
   const replacePrompt = (
     <ConfirmSheet
       visible={pendingReplace !== null}
-      title="Replace Cart?"
-      message="Your cart has items from another store. Adding this item will replace your current cart."
+      title={t.replaceCartTitle}
+      message={t.replaceCartMessage}
       icon="cart-outline"
       iconColor="#f59e0b"
-      confirmLabel="Replace"
+      confirmLabel={t.replaceCartConfirm}
       onConfirm={() => { pendingReplace?.(); setPendingReplace(null); }}
       onCancel={() => setPendingReplace(null)}
     />

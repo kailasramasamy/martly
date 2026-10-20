@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../constants/theme";
 import { useStore } from "../lib/store-context";
+import { useStrings } from "../lib/i18n/use-strings";
 import { LocationPickerModal } from "./location/LocationPickerModal";
 import type { PlaceResult } from "../lib/use-place-search";
 
@@ -28,6 +29,7 @@ const INDIA = { latitude: 20.59, longitude: 78.96 };
  * The pin's coordinates are what get saved, so riders navigate to the door, not just the area.
  */
 export function AddressAutocomplete({ onSelect, placeholder, initialValue }: Props) {
+  const t = useStrings("search");
   const { userLocation, selectedStore } = useStore();
   const [open, setOpen] = useState(false);
   const [chosen, setChosen] = useState<PlaceResult | null>(null);
@@ -52,12 +54,12 @@ export function AddressAutocomplete({ onSelect, placeholder, initialValue }: Pro
 
   return (
     <View>
-      <TouchableOpacity style={styles.field} onPress={() => setOpen(true)} activeOpacity={0.7} accessibilityRole="button" accessibilityLabel={label ? `Address: ${label}. Change on map` : "Pick your address on the map"}>
+      <TouchableOpacity style={styles.field} onPress={() => setOpen(true)} activeOpacity={0.7} accessibilityRole="button" accessibilityLabel={label ? t.addressChangeOnMap(label) : t.pickAddressOnMap}>
         <Ionicons name={label ? "location" : "map-outline"} size={18} color={colors.primary} />
         <Text style={[styles.text, !label && styles.placeholder]} numberOfLines={2}>
-          {label || placeholder || "Search or pick on map"}
+          {label || placeholder || t.searchOrPickOnMap}
         </Text>
-        <Text style={styles.action}>{label ? "Change" : "Open map"}</Text>
+        <Text style={styles.action}>{label ? t.change : t.openMap}</Text>
       </TouchableOpacity>
       <LocationPickerModal visible={open} start={start} onClose={() => setOpen(false)} onConfirm={confirm} />
     </View>

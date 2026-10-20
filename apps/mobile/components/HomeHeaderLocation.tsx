@@ -1,6 +1,8 @@
 import { View, Text, Pressable, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
+import { useLanguage } from "../lib/language-context";
 import type { Store } from "../lib/types";
 
 interface Props {
@@ -13,11 +15,14 @@ interface Props {
 
 // Home header: leads with the delivery promise once a store is chosen, otherwise with the user's area
 export function HomeHeaderLocation({ store, userArea, onPress, ink }: Props) {
+  const t = useStrings("home");
+  const { getLocalizedName } = useLanguage();
+  const name = store ? getLocalizedName(store) : "";
   const eta = store?.expressEtaMinutes;
   const headline = store
-    ? eta ? `Delivery in ${eta} minutes` : store.name
-    : userArea ?? "Choose a store";
-  const caption = store ? (eta ? store.name : "Delivering from") : "Delivering to";
+    ? eta ? t.deliveryInMinutes(eta) : name
+    : userArea ?? t.chooseStore;
+  const caption = store ? (eta ? name : t.deliveringFrom) : t.deliveringTo;
   const strong = ink ? { color: ink } : null;
   const soft = ink ? { color: ink, opacity: 0.8 } : null;
   const chevron = ink ?? colors.textSecondary;
@@ -27,7 +32,7 @@ export function HomeHeaderLocation({ store, userArea, onPress, ink }: Props) {
       style={({ pressed }) => [styles.row, pressed && { opacity: 0.7 }]}
       onPress={onPress}
       accessibilityRole="button"
-      accessibilityLabel={`${headline}. ${caption}. Change store`}
+      accessibilityLabel={t.locationA11y(headline, caption)}
     >
       <View style={[styles.icon, eta ? styles.iconFast : null]}>
         <Ionicons name={eta ? "flash" : "location-sharp"} size={18} color={eta ? "#b45309" : colors.primary} />

@@ -17,6 +17,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { uploadImage } from "../lib/upload";
 import { useToast } from "../lib/toast-context";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { withSignIn } from "../components/SignInPrompt";
@@ -33,6 +35,7 @@ function WriteReviewScreen() {
   const keyboard = useKeyboardReveal();
   const router = useRouter();
   const toast = useToast();
+  const t = useStrings("orders");
 
   const [rating, setRating] = useState(0);
   const [title, setTitle] = useState("");
@@ -44,13 +47,13 @@ function WriteReviewScreen() {
   const pickImages = async () => {
     const remaining = MAX_IMAGES - images.length;
     if (remaining <= 0) {
-      toast.show(`Maximum ${MAX_IMAGES} photos allowed`, "error");
+      toast.show(t.photos.max(MAX_IMAGES), "error");
       return;
     }
 
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (status !== "granted") {
-      toast.show("Photo library permission is required", "error");
+      toast.show(t.photos.permission, "error");
       return;
     }
 
@@ -73,7 +76,7 @@ function WriteReviewScreen() {
 
   const handleSubmit = async () => {
     if (rating === 0) {
-      toast.show("Please select a star rating", "error");
+      toast.show(t.review.ratePrompt, "error");
       return;
     }
 
@@ -99,10 +102,10 @@ function WriteReviewScreen() {
         comment: comment.trim() || undefined,
         imageUrls,
       });
-      toast.show("Review submitted for approval", "success");
+      toast.show(t.review.submitted, "success");
       router.back();
     } catch (e: unknown) {
-      const msg = e instanceof Error ? e.message : "Failed to submit review";
+      const msg = e instanceof Error ? e.message : t.review.submitFailed;
       toast.show(msg, "error");
     } finally {
       setSubmitting(false);
@@ -111,10 +114,10 @@ function WriteReviewScreen() {
 
   const isUploading = submitting && uploadingImages;
   const submitLabel = isUploading
-    ? "Uploading photos..."
+    ? t.photos.uploading
     : submitting
-      ? "Submitting..."
-      : "Submit Review";
+      ? t.photos.submitting
+      : t.review.submit;
 
   return (
     <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
@@ -126,7 +129,7 @@ function WriteReviewScreen() {
       <ScrollView keyboardDismissMode="on-drag" ref={keyboard.scrollRef} onScroll={keyboard.onScroll} scrollEventThrottle={16} contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
         {productName && <Text style={styles.productName}>{productName}</Text>}
 
-        <Text style={styles.label}>Your Rating</Text>
+        <Text style={styles.label}>{t.review.yourRating}</Text>
         <View style={styles.starRow}>
           {[1, 2, 3, 4, 5].map((star) => (
             <TouchableOpacity key={star} onPress={() => setRating(star)} hitSlop={{ top: 8, bottom: 8, left: 4, right: 4 }}>
@@ -139,22 +142,22 @@ function WriteReviewScreen() {
           ))}
         </View>
 
-        <Text style={styles.label}>Title (optional)</Text>
+        <Text style={styles.label}>{t.review.titleOptional}</Text>
         <TextInput
           style={styles.input}
           value={title}
           onChangeText={setTitle}
-          placeholder="Brief summary"
+          placeholder={t.review.titlePlaceholder}
           placeholderTextColor="#94a3b8"
           maxLength={200}
         />
 
-        <Text style={styles.label}>Comment (optional)</Text>
+        <Text style={styles.label}>{t.review.commentOptional}</Text>
         <TextInput
           style={[styles.input, styles.textArea]}
           value={comment}
           onChangeText={setComment}
-          placeholder="Tell others about your experience..."
+          placeholder={t.review.commentPlaceholder}
           placeholderTextColor="#94a3b8"
           multiline
           numberOfLines={5}
@@ -162,7 +165,7 @@ function WriteReviewScreen() {
           maxLength={2000}
         />
 
-        <Text style={styles.label}>Photos (optional)</Text>
+        <Text style={styles.label}>{t.review.photosOptional}</Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.imageScroll} contentContainerStyle={styles.imageScrollContent}>
           {images.map((uri, i) => (
             <View key={uri} style={styles.imageThumb}>
@@ -175,7 +178,7 @@ function WriteReviewScreen() {
           {images.length < MAX_IMAGES && (
             <TouchableOpacity style={styles.addPhotoBtn} onPress={pickImages}>
               <Ionicons name="camera-outline" size={28} color={colors.textSecondary} />
-              <Text style={styles.addPhotoText}>{images.length === 0 ? "Add" : `${images.length}/${MAX_IMAGES}`}</Text>
+              <Text style={styles.addPhotoText}>{images.length === 0 ? t.photos.add : `${images.length}/${MAX_IMAGES}`}</Text>
             </TouchableOpacity>
           )}
         </ScrollView>
@@ -251,4 +254,7 @@ const styles = StyleSheet.create({
   submitLoading: { flexDirection: "row", alignItems: "center", gap: 8 },
 });
 
-export default withSignIn(WriteReviewScreen, { icon: "star-outline", title: "Write a review", message: "Sign in to review products you've bought." });
+export default withSignIn(WriteReviewScreen, "star-outline", () => ({
+  title: strings("orders").review.signInTitle,
+  message: strings("orders").review.signInMessage,
+}));

@@ -21,44 +21,46 @@ import type { UserAddress } from "../../lib/types";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 import { useRequireSignIn } from "../../lib/sign-in-context";
 import { GuestAccountCard, StaffSignInLink } from "../../components/account/GuestAccount";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 const BUILD_NUMBER = Constants.expoConfig?.ios?.buildNumber;
-const APP_VERSION = `Version ${Constants.expoConfig?.version}${BUILD_NUMBER ? ` (${BUILD_NUMBER})` : ""}`;
+const APP_VERSION = Constants.expoConfig?.version;
 
 const MAX_ADDRESSES = 5;
 
 function useMenuGroups(subscriptionsEnabled: boolean): { title: string; items: MenuItem[] }[] {
   const router = useRouter();
   const { language, supportedLanguages } = useLanguage();
+  const { martPlus, profile: t } = useStrings("account");
   const { canManage, switchPersona } = usePersona();
   const requireSignIn = useRequireSignIn();
   // Everything here but Language belongs to an account, so guests sign in on the way
   const go = (path: Parameters<typeof router.push>[0]) => () => requireSignIn(() => router.push(path));
   return [
     ...(canManage
-      ? [{ title: "Business", items: [{ icon: "storefront-outline" as const, label: "Manage my store", onPress: () => switchPersona("manage") }] }]
+      ? [{ title: t.business, items: [{ icon: "storefront-outline" as const, label: t.manageStore, onPress: () => switchPersona("manage") }] }]
       : []),
     {
-      title: "Shopping",
+      title: t.shopping,
       items: [
-        { icon: "heart-outline", label: "My Wishlist", onPress: go("/wishlist") },
-        { icon: "refresh-circle-outline", label: "Smart Reorder", onPress: go("/smart-reorder") },
-        ...(subscriptionsEnabled ? [{ icon: "calendar-outline" as const, label: "My Subscriptions", onPress: go("/subscriptions") }] : []),
+        { icon: "heart-outline", label: t.wishlist, onPress: go("/wishlist") },
+        { icon: "refresh-circle-outline", label: t.smartReorder, onPress: go("/smart-reorder") },
+        ...(subscriptionsEnabled ? [{ icon: "calendar-outline" as const, label: t.subscriptions, onPress: go("/subscriptions") }] : []),
       ],
     },
     {
-      title: "Rewards",
+      title: t.rewards,
       items: [
-        { icon: "diamond-outline", label: "Mart Plus", onPress: go("/membership"), premium: true },
-        { icon: "gift-outline", label: "Refer & Earn", onPress: go("/referral") },
+        { icon: "diamond-outline", label: martPlus, onPress: go("/membership"), premium: true },
+        { icon: "gift-outline", label: t.referEarn, onPress: go("/referral") },
       ],
     },
     {
-      title: "Help & settings",
+      title: t.helpSettings,
       items: [
-        { icon: "chatbubbles-outline", label: "Chat with Support", onPress: go("/support-chat") },
-        { icon: "headset-outline", label: "My Tickets", onPress: go("/support-tickets") },
-        { icon: "language-outline", label: "Language", value: language ? supportedLanguages[language] : "English", onPress: () => router.push("/language-settings") },
+        { icon: "chatbubbles-outline", label: t.chatSupport, onPress: go("/support-chat") },
+        { icon: "headset-outline", label: t.tickets, onPress: go("/support-tickets") },
+        { icon: "language-outline", label: t.language, value: language ? supportedLanguages[language] : "English", onPress: () => router.push("/language-settings") },
       ],
     },
   ];
@@ -67,13 +69,14 @@ function useMenuGroups(subscriptionsEnabled: boolean): { title: string; items: M
 /** Account tab for guests: why to sign in, the menu (which asks to sign in), Language, and the staff sign-in link */
 function GuestAccountScreen({ menuGroups }: { menuGroups: { title: string; items: MenuItem[] }[] }) {
   const tabBarScroll = useTabBarAutoHide();
+  const t = useStrings("account").profile;
   return (
     <View style={styles.container}>
       <ScrollView {...tabBarScroll.scrollProps} showsVerticalScrollIndicator={false} contentContainerStyle={tabBarScroll.contentStyle(styles.scroll)}>
         <GuestAccountCard />
         {menuGroups.map((group) => <MenuGroup key={group.title} title={group.title} items={group.items} />)}
         <StaffSignInLink />
-        <Text style={styles.version}>{APP_VERSION}</Text>
+        <Text style={styles.version}>{t.version(APP_VERSION, BUILD_NUMBER)}</Text>
       </ScrollView>
     </View>
   );
@@ -81,6 +84,7 @@ function GuestAccountScreen({ menuGroups }: { menuGroups: { title: string; items
 
 export default function ProfileScreen() {
   const tabBarScroll = useTabBarAutoHide();
+  const t = useStrings("account");
   const router = useRouter();
   const { logout, user, isAuthenticated } = useAuth();
   const { selectedStore } = useStore();
@@ -93,7 +97,7 @@ export default function ProfileScreen() {
 
   const openAddAddress = () => {
     if (summary.addresses.length >= MAX_ADDRESSES) {
-      toast.show(`You can save up to ${MAX_ADDRESSES} addresses`, "error");
+      toast.show(t.profile.addressLimit(MAX_ADDRESSES), "error");
       return;
     }
     setAddressSheet({ address: null });
@@ -106,7 +110,7 @@ export default function ProfileScreen() {
       setDeleteTarget(null);
       summary.fetchAddresses();
     } catch {
-      toast.show("Failed to delete address", "error");
+      toast.show(t.profile.deleteAddressFailed, "error");
     }
   };
 
@@ -130,12 +134,12 @@ export default function ProfileScreen() {
         />
         <TouchableOpacity style={styles.signOut} onPress={logout} activeOpacity={0.8}>
           <Ionicons name="log-out-outline" size={18} color={colors.error} />
-          <Text style={styles.signOutText}>Sign out</Text>
+          <Text style={styles.signOutText}>{t.profile.signOut}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.deleteAccount} onPress={() => router.push("/delete-account")} activeOpacity={0.7}>
-          <Text style={styles.deleteAccountText}>Delete account</Text>
+          <Text style={styles.deleteAccountText}>{t.profile.deleteAccount}</Text>
         </TouchableOpacity>
-        <Text style={styles.version}>{APP_VERSION}</Text>
+        <Text style={styles.version}>{t.profile.version(APP_VERSION, BUILD_NUMBER)}</Text>
       </ScrollView>
 
       <EditProfileSheet visible={editingProfile} onClose={() => setEditingProfile(false)} />
@@ -147,11 +151,11 @@ export default function ProfileScreen() {
       />
       <ConfirmSheet
         visible={deleteTarget !== null}
-        title="Delete Address"
-        message={deleteTarget ? `Remove "${deleteTarget.label}" address?` : ""}
+        title={t.profile.deleteAddressTitle}
+        message={deleteTarget ? t.profile.removeAddress(t.addresses.labels[deleteTarget.label] ?? deleteTarget.label) : ""}
         icon="trash-outline"
         iconColor="#ef4444"
-        confirmLabel="Delete"
+        confirmLabel={t.profile.delete}
         onConfirm={confirmDelete}
         onCancel={() => setDeleteTarget(null)}
       />

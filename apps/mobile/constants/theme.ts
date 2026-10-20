@@ -35,11 +35,11 @@ export const fontSize = {
 } as const;
 
 export const fonts = {
-  regular: "Manrope-Regular",
-  medium: "Manrope-Medium",
-  semibold: "Manrope-SemiBold",
-  bold: "Manrope-Bold",
-  extrabold: "Manrope-ExtraBold",
+  regular: "App-Regular",
+  medium: "App-Medium",
+  semibold: "App-SemiBold",
+  bold: "App-Bold",
+  extrabold: "App-ExtraBold",
 } as const;
 
 /** Festival hero headline faces, keyed by the FestiveFont the hero designer picks; Playfair Display is the default */

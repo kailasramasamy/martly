@@ -1,5 +1,6 @@
 import { Text, TouchableOpacity, View, StyleSheet } from "react-native";
 import { colors, fonts, spacing } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 interface SearchEmptyStateProps {
   filtered: boolean;
@@ -8,19 +9,20 @@ interface SearchEmptyStateProps {
 }
 
 export function SearchEmptyState({ filtered, hasQuery, onClearFilters }: SearchEmptyStateProps) {
+  const t = useStrings("search");
   if (filtered) {
     return (
       <View style={styles.box}>
-        <Text style={styles.text}>No products match these filters</Text>
+        <Text style={styles.text}>{t.noMatchFilters}</Text>
         <TouchableOpacity style={styles.btn} onPress={onClearFilters}>
-          <Text style={styles.btnText}>Clear filters</Text>
+          <Text style={styles.btnText}>{t.clearFilters}</Text>
         </TouchableOpacity>
       </View>
     );
   }
   return (
     <View style={styles.box}>
-      <Text style={styles.text}>{hasQuery ? "No products found" : "Start typing to search"}</Text>
+      <Text style={styles.text}>{hasQuery ? t.noProductsFound : t.startTyping}</Text>
     </View>
   );
 }

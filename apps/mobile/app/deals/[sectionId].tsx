@@ -4,11 +4,13 @@ import { useLocalSearchParams, useNavigation } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useStore } from "../../lib/store-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { useDealsFeed } from "../../lib/use-deals-feed";
 import { ProductList } from "../../components/ProductList";
 import { FloatingCart } from "../../components/FloatingCart";
 import { BandSelector, CategoryChips, DEALS_PANEL } from "../../components/home/sections/PriceBandControls";
+import { useLanguage } from "../../lib/language-context";
 
 function Message({ icon, text }: { icon: keyof typeof Ionicons.glyphMap; text: string }) {
   return (
@@ -26,19 +28,25 @@ function Message({ icon, text }: { icon: keyof typeof Ionicons.glyphMap; text: s
 export default function DealsScreen() {
   const params = useLocalSearchParams<{ sectionId: string; band?: string; categoryId?: string }>();
   const { selectedStore } = useStore();
+  const t = useStrings("home");
   const navigation = useNavigation();
   const [band, setBand] = useState(Number(params.band ?? 0));
   const [categoryId, setCategoryId] = useState<string | null>(params.categoryId || null);
   const feed = useDealsFeed(selectedStore?.id, params.sectionId, band, categoryId);
 
-  const title = feed.section?.title;
+  const { language } = useLanguage();
+  const translated = language ? feed.section?.translations?.[language] : undefined;
+  const title = translated?.title || feed.section?.title;
   useEffect(() => { if (title) navigation.setOptions({ title }); }, [navigation, title]);
 
-  const labels = useMemo(() => feed.section?.bands.map((b) => b.label) ?? [], [feed.section]);
+  const labels = useMemo(
+    () => feed.section?.bands.map((b, i) => translated?.bandLabels?.[i] || b.label) ?? [],
+    [feed.section, translated],
+  );
   const onBand = useCallback((index: number) => { setBand(index); setCategoryId(null); }, []);
 
   if (feed.loading && !feed.section) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
-  if (feed.failed || !feed.section) return <Message icon="cloud-offline-outline" text="These deals aren't available right now." />;
+  if (feed.failed || !feed.section) return <Message icon="cloud-offline-outline" text={t.dealsUnavailable} />;
 
   return (
     <ProductActionsProvider store={selectedStore ?? null}>
@@ -47,7 +55,7 @@ export default function DealsScreen() {
           <BandSelector labels={labels} selected={band} onSelect={onBand} />
           {feed.chips.length > 0 && <CategoryChips chips={feed.chips} selectedId={categoryId} onSelect={setCategoryId} />}
           <Text style={styles.count}>
-            {feed.loading ? " " : `${feed.total.toLocaleString("en-IN")} products ${labels[band]?.toLowerCase() ?? ""}`}
+            {feed.loading ? " " : t.dealsCount(feed.total.toLocaleString("en-IN"), labels[band]?.toLowerCase() ?? "")}
           </Text>
         </View>
         <ProductList
@@ -58,7 +66,7 @@ export default function DealsScreen() {
           style={feed.loading && styles.loading}
           onEndReached={feed.loadMore}
           onEndReachedThreshold={0.6}
-          ListEmptyComponent={feed.loading ? null : <Message icon="basket-outline" text="Nothing in this price band right now" />}
+          ListEmptyComponent={feed.loading ? null : <Message icon="basket-outline" text={t.bandEmpty} />}
           ListFooterComponent={feed.loadingMore ? <ActivityIndicator style={styles.more} color={colors.primary} /> : null}
         />
         <FloatingCart />

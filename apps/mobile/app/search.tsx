@@ -5,6 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
 import { useLanguage } from "../lib/language-context";
+import { useStrings } from "../lib/i18n/use-strings";
 import { useProductSearch, hasActiveFilters, type SearchFilters } from "../lib/use-product-search";
 import { useVoiceInput } from "../lib/use-voice-input";
 import { colors, spacing, fontSize } from "../constants/theme";
@@ -62,6 +63,7 @@ function findNode(nodes: TreeNode[], id: string): TreeNode | null {
 function useScreenTitle(categoryId: string | undefined, hasDiscount: string | undefined, sortBy: string | undefined) {
   const navigation = useNavigation();
   const { getLocalizedName } = useLanguage();
+  const t = useStrings("search");
   const [tree, setTree] = useState<TreeNode[]>([]);
 
   useEffect(() => {
@@ -70,15 +72,15 @@ function useScreenTitle(categoryId: string | undefined, hasDiscount: string | un
   }, [categoryId]);
 
   useEffect(() => {
-    let title = "Search";
-    if (hasDiscount === "true") title = "Today's Deals";
-    else if (sortBy === "newest") title = "New Arrivals";
+    let title = t.screenSearch;
+    if (hasDiscount === "true") title = t.todaysDeals;
+    else if (sortBy === "newest") title = t.newArrivals;
     else if (categoryId) {
       const node = findNode(tree, categoryId);
-      title = node ? getLocalizedName(node) : "Products";
+      title = node ? getLocalizedName(node) : t.products;
     }
     navigation.setOptions({ title });
-  }, [categoryId, tree, navigation, hasDiscount, sortBy]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [categoryId, tree, navigation, hasDiscount, sortBy, t]); // eslint-disable-line react-hooks/exhaustive-deps
 }
 
 // Animated wrapper so the header can follow scroll on the native thread
@@ -116,6 +118,7 @@ function SearchFacetControls({ facets, filters, search, onOpenSheet, hidden }: {
 function SearchInput({ value, onChangeText, onSubmit, autoVoice }: {
   value: string; onChangeText: (text: string) => void; onSubmit: () => void; autoVoice: boolean;
 }) {
+  const t = useStrings("search");
   const ref = useRef<TextInput>(null);
   const [partial, setPartial] = useState("");
   const [focused, setFocused] = useState(false);
@@ -146,7 +149,7 @@ function SearchInput({ value, onChangeText, onSubmit, autoVoice }: {
         <TextInput
           ref={ref}
           style={styles.searchInput}
-          placeholder={voice.listening ? "Listening\u2026" : "Search products..."}
+          placeholder={voice.listening ? t.listening : t.searchProducts}
           placeholderTextColor={voice.listening ? colors.primary : colors.textSecondary}
           value={voice.listening ? partial : value}
           onChangeText={onChangeText}
@@ -163,7 +166,7 @@ function SearchInput({ value, onChangeText, onSubmit, autoVoice }: {
             style={styles.clearButton}
             onPress={() => onChangeText("")}
             accessibilityRole="button"
-            accessibilityLabel="Clear search"
+            accessibilityLabel={t.clearSearch}
           >
             <Ionicons name="close-circle" size={18} color={colors.textSecondary} />
           </TouchableOpacity>
@@ -173,7 +176,7 @@ function SearchInput({ value, onChangeText, onSubmit, autoVoice }: {
             style={[styles.micButton, voice.listening && styles.micButtonActive]}
             onPress={toggleVoice}
             accessibilityRole="button"
-            accessibilityLabel={voice.listening ? "Stop voice search" : "Search by voice"}
+            accessibilityLabel={voice.listening ? t.stopVoiceSearch : t.searchByVoice}
           >
             <Ionicons name={voice.listening ? "stop" : "mic-outline"} size={20} color={voice.listening ? "#fff" : colors.primary} />
           </TouchableOpacity>

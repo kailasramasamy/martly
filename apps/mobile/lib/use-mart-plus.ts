@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { useFocusEffect } from "expo-router";
 import { api } from "./api";
 import { useToast } from "./toast-context";
+import { useStrings } from "./i18n/use-strings";
 import type { MembershipPlan, UserMembership, MembershipUpgradeOption } from "./types";
 
 interface RazorpayData {
@@ -75,6 +76,7 @@ function useMembershipData(storeId: string | undefined) {
 
 function useMembershipCheckout(storeId: string | undefined, onActivated: () => void) {
   const { show } = useToast();
+  const t = useStrings("account").membership;
   const [busyPlanId, setBusyPlanId] = useState<string | null>(null);
   const [rpData, setRpData] = useState<RazorpayData | null>(null);
 
@@ -83,7 +85,7 @@ function useMembershipCheckout(storeId: string | undefined, onActivated: () => v
     try {
       const payment = await start();
       if (payment) setRpData(payment);
-      else { show("Plan upgraded successfully!", "success"); onActivated(); }
+      else { show(t.upgraded, "success"); onActivated(); }
     } catch {
       show(failMsg, "error");
     } finally {
@@ -92,9 +94,9 @@ function useMembershipCheckout(storeId: string | undefined, onActivated: () => v
   };
 
   const purchase = (plan: MembershipPlan) =>
-    storeId && run(plan.id, () => requestPurchase(plan.id, storeId), "Failed to initiate payment");
+    storeId && run(plan.id, () => requestPurchase(plan.id, storeId), t.paymentFailed);
   const upgrade = (option: MembershipUpgradeOption) =>
-    storeId && run(option.plan.id, () => requestUpgrade(option.plan.id, storeId), "Failed to initiate upgrade");
+    storeId && run(option.plan.id, () => requestUpgrade(option.plan.id, storeId), t.upgradeFailed);
 
   const onPaymentSuccess = async (data: PaymentResult) => {
     const paid = rpData;
@@ -102,14 +104,14 @@ function useMembershipCheckout(storeId: string | undefined, onActivated: () => v
     if (!paid) return;
     try {
       await verifyPayment(paid, data);
-      show(paid.previousMembershipId ? "Plan upgraded successfully!" : "Welcome to Mart Plus!", "success");
+      show(paid.previousMembershipId ? t.upgraded : t.welcome, "success");
       onActivated();
     } catch {
-      show("Payment verified but activation failed. Contact support.", "error");
+      show(t.activationFailed, "error");
     }
   };
 
-  const onPaymentCancel = () => { setRpData(null); show("Payment cancelled", "error"); };
+  const onPaymentCancel = () => { setRpData(null); show(t.paymentCancelled, "error"); };
   return { busyPlanId, rpData, purchase, upgrade, onPaymentSuccess, onPaymentCancel };
 }
 

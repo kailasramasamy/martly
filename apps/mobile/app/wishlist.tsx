@@ -11,6 +11,8 @@ import { ProductList } from "../components/ProductList";
 import { FloatingCart } from "../components/FloatingCart";
 import type { StoreProduct } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
 
 function EmptyState({ title, text }: { title?: string; text: string }) {
   return (
@@ -23,6 +25,7 @@ function EmptyState({ title, text }: { title?: string; text: string }) {
 }
 
 function WishlistScreen() {
+  const t = useStrings("account").wishlist;
   const { isAuthenticated } = useAuth();
   const { selectedStore } = useStore();
   const { wishlistedIds } = useWishlist();
@@ -48,7 +51,7 @@ function WishlistScreen() {
     return <View style={styles.center}><ActivityIndicator size="large" color={colors.primary} /></View>;
   }
   if (products.length === 0) {
-    return <EmptyState title="Your wishlist is empty" text="Products you love will appear here" />;
+    return <EmptyState title={t.emptyTitle} text={t.emptyText} />;
   }
 
   return (
@@ -69,4 +72,4 @@ const styles = StyleSheet.create({
   list: { paddingTop: spacing.md, paddingBottom: 80 },
 });
 
-export default withSignIn(WishlistScreen, { icon: "heart-outline", title: "Your wishlist", message: "Sign in to save products you love and find them later." });
+export default withSignIn(WishlistScreen, "heart-outline", () => strings("account").signIn.wishlist);

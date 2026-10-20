@@ -15,6 +15,7 @@ import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { AddressAutocomplete } from "./AddressAutocomplete";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
+import { useStrings } from "../lib/i18n/use-strings";
 
 interface ProfileGateProps {
   visible: boolean;
@@ -31,6 +32,7 @@ const LABEL_ICONS: Record<string, string> = {
 
 export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps) {
   const keyboard = useKeyboardReveal();
+  const t = useStrings("auth");
   const [label, setLabel] = useState<string>("Home");
   const [placeName, setPlaceName] = useState<string | null>(null);
   const [address, setAddress] = useState("");
@@ -56,7 +58,7 @@ export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps
 
   const handleSave = async () => {
     if (address.trim().length < 5) {
-      setError("Please select or search for your address");
+      setError(t.profile.selectAddress);
       return;
     }
 
@@ -73,7 +75,7 @@ export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps
       await api.post("/api/v1/addresses", payload);
       onComplete();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to save address");
+      setError(err instanceof Error ? err.message : t.profile.saveFailed);
     } finally {
       setSaving(false);
     }
@@ -112,15 +114,13 @@ export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps
                 <Ionicons name="location-outline" size={24} color={colors.primary} />
               </View>
             </View>
-            <Text style={styles.sheetTitle}>Add your delivery address</Text>
-            <Text style={styles.sheetSubtitle}>
-              We need your address to check delivery availability and calculate fees
-            </Text>
+            <Text style={styles.sheetTitle}>{t.profile.title}</Text>
+            <Text style={styles.sheetSubtitle}>{t.profile.subtitle}</Text>
 
             {error ? <Text style={styles.error}>{error}</Text> : null}
 
             {/* Label picker */}
-            <Text style={styles.fieldLabel}>Address type</Text>
+            <Text style={styles.fieldLabel}>{t.profile.addressType}</Text>
             <View style={styles.labelPicker}>
               {LABEL_OPTIONS.map((opt) => (
                 <TouchableOpacity
@@ -134,16 +134,16 @@ export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps
                     color={label === opt ? "#fff" : colors.text}
                   />
                   <Text style={[styles.labelChipText, label === opt && styles.labelChipTextActive]}>
-                    {opt}
+                    {t.profile.labels[opt]}
                   </Text>
                 </TouchableOpacity>
               ))}
             </View>
 
             {/* Address autocomplete */}
-            <Text style={styles.fieldLabel}>Address</Text>
+            <Text style={styles.fieldLabel}>{t.profile.address}</Text>
             <AddressAutocomplete
-              placeholder="Search for your address..."
+              placeholder={t.profile.searchPlaceholder}
               onSelect={(result) => {
                 setAddress(result.address);
                 setLatitude(result.latitude || null);
@@ -175,7 +175,7 @@ export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps
               {saving ? (
                 <ActivityIndicator color="#fff" size="small" />
               ) : (
-                <Text style={styles.buttonText}>Save & Continue</Text>
+                <Text style={styles.buttonText}>{t.profile.saveContinue}</Text>
               )}
             </TouchableOpacity>
           </ScrollView>

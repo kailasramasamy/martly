@@ -3,23 +3,22 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../lib/auth-context";
 import { colors, fonts, radius } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
 
 export default function UnsupportedRoleScreen() {
   const insets = useSafeAreaInsets();
   const { user, logout } = useAuth();
+  const t = useStrings("auth");
 
   return (
     <View style={[styles.root, { paddingTop: insets.top + 48, paddingBottom: insets.bottom + 24 }]}>
       <View style={styles.icon}>
         <Ionicons name="desktop-outline" size={30} color={colors.primary} />
       </View>
-      <Text style={styles.title}>No responsibilities assigned yet</Text>
-      <Text style={styles.message}>
-        You're signed in as {user?.email}, but you don't have any responsibilities in the app yet.
-        Ask your store owner to assign some, such as orders, catalog or stock count.
-      </Text>
+      <Text style={styles.title}>{t.unsupportedRole.title}</Text>
+      <Text style={styles.message}>{t.unsupportedRole.message(user?.email)}</Text>
       <TouchableOpacity style={styles.button} onPress={logout} activeOpacity={0.85}>
-        <Text style={styles.buttonText}>Sign out</Text>
+        <Text style={styles.buttonText}>{t.unsupportedRole.signOut}</Text>
       </TouchableOpacity>
     </View>
   );

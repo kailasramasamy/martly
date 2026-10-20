@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "rea
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import type { MembershipUpgradeOption } from "../../lib/types";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 interface Props {
   option: MembershipUpgradeOption;
@@ -11,23 +12,25 @@ interface Props {
 }
 
 export function UpgradeCard({ option, busy, disabled, onUpgrade }: Props) {
+  const t = useStrings("account").membership.upgrade;
+  const common = useStrings("common");
   return (
     <View style={styles.card}>
       <Text style={styles.name}>{option.plan.name}</Text>
       <View style={styles.priceRow}>
         <Text style={styles.original}>{"\u20B9"}{option.plan.price}</Text>
-        <Text style={styles.charge}>{option.isFree ? "FREE" : `\u20B9${option.upgradeCharge}`}</Text>
+        <Text style={styles.charge}>{option.isFree ? common.free : `\u20B9${option.upgradeCharge}`}</Text>
       </View>
       <View style={styles.credit}>
         <Ionicons name="gift-outline" size={15} color="#b45309" />
-        <Text style={styles.creditText}>{"\u20B9"}{option.credit} credit from your current plan</Text>
+        <Text style={styles.creditText}>{t.creditFrom(option.credit)}</Text>
       </View>
       <TouchableOpacity style={styles.button} onPress={() => onUpgrade(option)} disabled={disabled} activeOpacity={0.85}>
         {busy ? (
           <ActivityIndicator size="small" color="#fff" />
         ) : (
           <Text style={styles.buttonText}>
-            {option.isFree ? "Upgrade for free" : `Upgrade · \u20B9${option.upgradeCharge}`}
+            {option.isFree ? t.free : t.pay(option.upgradeCharge)}
           </Text>
         )}
       </TouchableOpacity>

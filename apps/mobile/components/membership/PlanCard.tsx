@@ -2,10 +2,9 @@ import { View, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "rea
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import type { MembershipPlan } from "../../lib/types";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 const MONTHS: Record<MembershipPlan["duration"], number> = { MONTHLY: 1, QUARTERLY: 3, ANNUAL: 12 };
-const PERIOD: Record<MembershipPlan["duration"], string> = { MONTHLY: "month", QUARTERLY: "quarter", ANNUAL: "year" };
-const LABEL: Record<MembershipPlan["duration"], string> = { MONTHLY: "Monthly", QUARTERLY: "Quarterly", ANNUAL: "Annual" };
 
 export const perMonth = (plan: MembershipPlan) => Number(plan.price) / MONTHS[plan.duration];
 const rupees = (n: number) => `\u20B9${Math.round(n).toLocaleString("en-IN")}`;
@@ -30,6 +29,7 @@ function Perk({ text }: { text: string }) {
 }
 
 export function PlanCard({ plan, monthlyPrice, bestValue, busy, disabled, onSubscribe }: Props) {
+  const t = useStrings("account").membership.plan;
   const monthly = perMonth(plan);
   const savePct = monthlyPrice && plan.duration !== "MONTHLY" ? Math.round((1 - monthly / monthlyPrice) * 100) : 0;
   return (
@@ -37,23 +37,23 @@ export function PlanCard({ plan, monthlyPrice, bestValue, busy, disabled, onSubs
       {bestValue && (
         <View style={styles.ribbon}>
           <Ionicons name="star" size={11} color={colors.accentText} />
-          <Text style={styles.ribbonText}>BEST VALUE</Text>
+          <Text style={styles.ribbonText}>{t.bestValue}</Text>
         </View>
       )}
-      <Text style={styles.duration}>{LABEL[plan.duration]}</Text>
+      <Text style={styles.duration}>{t.durations[plan.duration]}</Text>
       <View style={styles.priceRow}>
         <Text style={styles.price}>{rupees(Number(plan.price))}</Text>
-        <Text style={styles.period}>/{PERIOD[plan.duration]}</Text>
+        <Text style={styles.period}>/{t.periods[plan.duration]}</Text>
       </View>
       {plan.duration !== "MONTHLY" && (
         <Text style={styles.equivalent}>
-          {rupees(monthly)}/month{savePct > 0 && <Text style={styles.save}>{"  ·  "}Save {savePct}%</Text>}
+          {t.perMonth(rupees(monthly))}{savePct > 0 && <Text style={styles.save}>{"  ·  "}{t.save(savePct)}</Text>}
         </Text>
       )}
       <View style={styles.perks}>
-        {plan.freeDelivery && <Perk text="Free delivery on every order" />}
-        {plan.loyaltyMultiplier > 1 && <Perk text={`${plan.loyaltyMultiplier}× loyalty points`} />}
-        <Perk text="Exclusive member prices" />
+        {plan.freeDelivery && <Perk text={t.perkFreeDelivery} />}
+        {plan.loyaltyMultiplier > 1 && <Perk text={t.perkPoints(plan.loyaltyMultiplier)} />}
+        <Perk text={t.perkPrices} />
       </View>
       <TouchableOpacity
         style={[styles.button, bestValue && styles.buttonBest]}
@@ -64,7 +64,7 @@ export function PlanCard({ plan, monthlyPrice, bestValue, busy, disabled, onSubs
         {busy ? (
           <ActivityIndicator size="small" color={bestValue ? colors.accentText : "#fff"} />
         ) : (
-          <Text style={[styles.buttonText, bestValue && styles.buttonTextBest]}>Get {LABEL[plan.duration]}</Text>
+          <Text style={[styles.buttonText, bestValue && styles.buttonTextBest]}>{t.get(t.durations[plan.duration])}</Text>
         )}
       </TouchableOpacity>
     </View>

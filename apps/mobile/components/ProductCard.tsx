@@ -4,6 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, spacing, fontSize } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
 import { useLanguage } from "../lib/language-context";
+import { useStrings } from "../lib/i18n/use-strings";
 
 interface ProductCardProps {
   item: StoreProduct;
@@ -15,16 +16,17 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ item, variantCount = 1, onAddToCart, onUpdateQuantity, quantity = 0, storeId }: ProductCardProps) {
-  const { getLocalizedName, getLocalizedSubtitle } = useLanguage();
+  const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   const localizedName = getLocalizedName(item.product);
-  const subtitle = getLocalizedSubtitle(item.product);
   const hasDiscount = item.pricing?.discountActive;
   const displayPrice = hasDiscount ? item.pricing!.effectivePrice : Number(item.price);
   const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
   const discountLabel = hasDiscount
     ? item.pricing!.discountType === "PERCENTAGE"
-      ? `${item.pricing!.discountValue}% OFF`
-      : `₹${item.pricing!.discountValue} OFF`
+      ? tc.percentOff(item.pricing!.discountValue!)
+      : t.flatOff(item.pricing!.discountValue!)
     : null;
   const productImage = item.product.imageUrl || item.variant.imageUrl;
   const available = item.availableStock ?? (item.stock - (item.reservedStock ?? 0));
@@ -61,7 +63,7 @@ export function ProductCard({ item, variantCount = 1, onAddToCart, onUpdateQuant
           )}
           {isOutOfStock && (
             <View style={styles.imageOosOverlay}>
-              <Text style={styles.imageOosText}>Out of{"\n"}stock</Text>
+              <Text style={styles.imageOosText}>{t.outOfStockStacked}</Text>
             </View>
           )}
         </View>
@@ -95,7 +97,6 @@ export function ProductCard({ item, variantCount = 1, onAddToCart, onUpdateQuant
           <View style={styles.cardRow}>
             <View style={{ flex: 1 }}>
               <Text style={styles.productName} numberOfLines={3}>{localizedName}</Text>
-              {subtitle && <Text style={{ fontSize: 11, color: "#94a3b8" }}>{subtitle}</Text>}
             </View>
             <View style={styles.priceGroup}>
               {originalPrice != null && (
@@ -111,7 +112,7 @@ export function ProductCard({ item, variantCount = 1, onAddToCart, onUpdateQuant
             {item.variant.name} · {item.variant.unitType} {item.variant.unitValue}
           </Text>
           {isLowStock && (
-            <Text style={styles.lowStockText}>Only {available} left</Text>
+            <Text style={styles.lowStockText}>{t.onlyLeft(available)}</Text>
           )}
           {item.product.description && (
             <Text style={styles.description} numberOfLines={2}>{item.product.description}</Text>
@@ -168,7 +169,7 @@ export function ProductCard({ item, variantCount = 1, onAddToCart, onUpdateQuant
           disabled={isOutOfStock}
         >
           <Text style={[styles.addButtonText, isOutOfStock && styles.disabledButtonText]}>
-            {isOutOfStock ? "Out of Stock" : "Add to Cart"}
+            {isOutOfStock ? t.outOfStockCaps : t.addToCart}
           </Text>
         </TouchableOpacity>
       )}

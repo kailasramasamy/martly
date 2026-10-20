@@ -23,6 +23,10 @@ import { useToast } from "../lib/toast-context";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import type { StoreProduct, UserAddress } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
+import { formatDate as formatLocalized } from "../lib/i18n/format";
+import { useLanguage } from "../lib/language-context";
 
 type Frequency = "DAILY" | "ALTERNATE_DAYS" | "SPECIFIC_DAYS" | "WEEKLY" | "BIWEEKLY" | "MONTHLY";
 
@@ -30,10 +34,6 @@ interface SubscriptionItem {
   storeProduct: StoreProduct;
   quantity: number;
 }
-
-const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-const STEPS = ["Items", "Frequency", "Address", "Review"];
 
 function getEffectivePrice(sp: StoreProduct): number {
   return sp.pricing?.effectivePrice ?? sp.price;
@@ -84,12 +84,13 @@ function getNextDeliveryDate(frequency: Frequency, selectedDays: number[]): stri
 }
 
 function formatDate(d: Date): string {
-  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  return `${days[d.getDay()]}, ${d.getDate()} ${months[d.getMonth()]}`;
+  return `${formatLocalized(d, { weekday: "long" })}, ${d.getDate()} ${formatLocalized(d, { month: "short" })}`;
 }
 
 function SubscriptionBuilderScreen() {
+  const t = useStrings("subscriptions");
+  const common = useStrings("common");
+  const { getLocalizedName } = useLanguage();
   const router = useRouter();
   const { storeProductId, productId: paramProductId } = useLocalSearchParams<{ storeProductId?: string; productId?: string }>();
   const toast = useToast();
@@ -265,10 +266,10 @@ function SubscriptionBuilderScreen() {
           quantity: i.quantity,
         })),
       });
-      toast.show("Subscription created!", "success");
+      toast.show(t.builder.created, "success");
       router.replace("/subscriptions");
     } catch (e: any) {
-      toast.show(e.message || "Failed to create subscription", "error");
+      toast.show(e.message || t.builder.createFailed, "error");
     } finally {
       setSubmitting(false);
     }
@@ -287,7 +288,7 @@ function SubscriptionBuilderScreen() {
 
   const renderStepIndicator = () => (
     <View style={styles.stepIndicator}>
-      {STEPS.map((label, i) => (
+      {t.builder.steps.map((label, i) => (
         <View key={label} style={styles.stepDotRow}>
           <View
             style={[
@@ -317,7 +318,7 @@ function SubscriptionBuilderScreen() {
           >
             {label}
           </Text>
-          {i < STEPS.length - 1 && (
+          {i < t.builder.steps.length - 1 && (
             <View
               style={[
                 styles.stepLine,
@@ -344,7 +345,7 @@ function SubscriptionBuilderScreen() {
         )}
         <View style={styles.searchResultInfo}>
           <Text style={styles.searchResultName} numberOfLines={1}>
-            {sp.product.name}
+            {getLocalizedName(sp.product)}
           </Text>
           <Text style={styles.searchResultVariant}>
             {sp.variant.name} &middot; {sp.variant.unitValue}
@@ -380,7 +381,7 @@ function SubscriptionBuilderScreen() {
         )}
         <View style={styles.selectedItemInfo}>
           <Text style={styles.selectedItemName} numberOfLines={1}>
-            {item.storeProduct.product.name}
+            {getLocalizedName(item.storeProduct.product)}
           </Text>
           <Text style={styles.selectedItemVariant}>
             {item.storeProduct.variant.unitValue}
@@ -420,7 +421,7 @@ function SubscriptionBuilderScreen() {
         <Ionicons name="search" size={20} color={colors.textSecondary} />
         <TextInput
           style={styles.searchInput}
-          placeholder="Search products..."
+          placeholder={t.builder.searchPlaceholder}
           placeholderTextColor={colors.textSecondary}
           value={searchQuery}
           onChangeText={setSearchQuery}
@@ -445,7 +446,7 @@ function SubscriptionBuilderScreen() {
       {!searching && searchQuery.trim().length > 0 && searchResults.length === 0 && (
         <View style={styles.emptyState}>
           <Ionicons name="search-outline" size={40} color={colors.border} />
-          <Text style={styles.emptyText}>No products found</Text>
+          <Text style={styles.emptyText}>{t.builder.noProducts}</Text>
         </View>
       )}
 
@@ -462,18 +463,18 @@ function SubscriptionBuilderScreen() {
       {!searchQuery.trim() && items.length === 0 && (
         <View style={styles.emptyState}>
           <Ionicons name="cart-outline" size={48} color={colors.border} />
-          <Text style={styles.emptyText}>Search and add items to your subscription</Text>
+          <Text style={styles.emptyText}>{t.builder.searchHint}</Text>
         </View>
       )}
 
       {items.length > 0 && !searchQuery.trim() && (
         <ScrollView keyboardDismissMode="on-drag" style={styles.selectedItemsList}>
           <Text style={styles.sectionTitle}>
-            Subscription Items ({items.length})
+            {t.builder.itemsTitle(items.length)}
           </Text>
           {items.map(renderSelectedItem)}
           <View style={styles.totalRow}>
-            <Text style={styles.totalLabel}>Per delivery total</Text>
+            <Text style={styles.totalLabel}>{t.builder.perDeliveryTotal}</Text>
             <Text style={styles.totalValue}>{formatPrice(totalAmount)}</Text>
           </View>
         </ScrollView>
@@ -494,12 +495,12 @@ function SubscriptionBuilderScreen() {
       icon: keyof typeof Ionicons.glyphMap;
       needsPicker?: "days" | "dayOfWeek" | "monthDate";
     }[] = [
-      { value: "DAILY", title: "Daily", desc: "Delivered every day", icon: "calendar" },
-      { value: "ALTERNATE_DAYS", title: "Alternate Days", desc: "Every other day", icon: "calendar-outline" },
-      { value: "SPECIFIC_DAYS", title: "Specific Days", desc: "Choose your days", icon: "calendar-number-outline", needsPicker: "days" },
-      { value: "WEEKLY", title: "Weekly", desc: "Once a week", icon: "repeat", needsPicker: "dayOfWeek" },
-      { value: "BIWEEKLY", title: "Every 2 Weeks", desc: "Once every 2 weeks", icon: "swap-horizontal", needsPicker: "dayOfWeek" },
-      { value: "MONTHLY", title: "Monthly", desc: "Once a month", icon: "calendar-clear-outline", needsPicker: "monthDate" },
+      { value: "DAILY", title: t.builder.freq.DAILY.title, desc: t.builder.freq.DAILY.desc, icon: "calendar" },
+      { value: "ALTERNATE_DAYS", title: t.builder.freq.ALTERNATE_DAYS.title, desc: t.builder.freq.ALTERNATE_DAYS.desc, icon: "calendar-outline" },
+      { value: "SPECIFIC_DAYS", title: t.builder.freq.SPECIFIC_DAYS.title, desc: t.builder.freq.SPECIFIC_DAYS.desc, icon: "calendar-number-outline", needsPicker: "days" },
+      { value: "WEEKLY", title: t.builder.freq.WEEKLY.title, desc: t.builder.freq.WEEKLY.desc, icon: "repeat", needsPicker: "dayOfWeek" },
+      { value: "BIWEEKLY", title: t.builder.freq.BIWEEKLY.title, desc: t.builder.freq.BIWEEKLY.desc, icon: "swap-horizontal", needsPicker: "dayOfWeek" },
+      { value: "MONTHLY", title: t.builder.freq.MONTHLY.title, desc: t.builder.freq.MONTHLY.desc, icon: "calendar-clear-outline", needsPicker: "monthDate" },
     ];
 
     const monthDates = Array.from({ length: 28 }, (_, i) => i + 1);
@@ -508,9 +509,9 @@ function SubscriptionBuilderScreen() {
       if (type === "days") {
         return (
           <View style={styles.inlinePicker}>
-            <Text style={styles.inlinePickerLabel}>Select delivery days</Text>
+            <Text style={styles.inlinePickerLabel}>{t.builder.selectDays}</Text>
             <View style={styles.dayChips}>
-              {DAY_LABELS.map((label, i) => (
+              {t.list.daysShort.map((label, i) => (
                 <TouchableOpacity
                   key={label}
                   style={[styles.dayChip, selectedDays.includes(i) && styles.dayChipActive]}
@@ -528,9 +529,9 @@ function SubscriptionBuilderScreen() {
       if (type === "dayOfWeek") {
         return (
           <View style={styles.inlinePicker}>
-            <Text style={styles.inlinePickerLabel}>Pick delivery day</Text>
+            <Text style={styles.inlinePickerLabel}>{t.builder.pickDay}</Text>
             <View style={styles.dayChips}>
-              {DAY_LABELS.map((label, i) => (
+              {t.list.daysShort.map((label, i) => (
                 <TouchableOpacity
                   key={label}
                   style={[styles.dayChip, selectedDays[0] === i && styles.dayChipActive]}
@@ -547,7 +548,7 @@ function SubscriptionBuilderScreen() {
       }
       return (
         <View style={styles.inlinePicker}>
-          <Text style={styles.inlinePickerLabel}>Pick day of month</Text>
+          <Text style={styles.inlinePickerLabel}>{t.builder.pickDate}</Text>
           <View style={styles.monthDateGrid}>
             {monthDates.map((d) => (
               <TouchableOpacity
@@ -567,7 +568,7 @@ function SubscriptionBuilderScreen() {
 
     return (
       <ScrollView keyboardDismissMode="on-drag" style={styles.stepContent} contentContainerStyle={styles.stepContentPadding}>
-        <Text style={styles.sectionTitle}>How often do you want delivery?</Text>
+        <Text style={styles.sectionTitle}>{t.builder.howOften}</Text>
         <View style={styles.freqList}>
           {frequencyOptions.map((opt) => {
             const isActive = frequency === opt.value;
@@ -619,9 +620,9 @@ function SubscriptionBuilderScreen() {
       return (
         <View style={styles.emptyState}>
           <Ionicons name="location-outline" size={48} color={colors.border} />
-          <Text style={styles.emptyText}>No saved addresses</Text>
+          <Text style={styles.emptyText}>{t.builder.noAddresses}</Text>
           <Text style={styles.emptySubtext}>
-            Add an address from your profile to continue
+            {t.builder.addAddressHint}
           </Text>
         </View>
       );
@@ -629,7 +630,7 @@ function SubscriptionBuilderScreen() {
 
     return (
       <ScrollView keyboardDismissMode="on-drag" style={styles.stepContent} contentContainerStyle={styles.stepContentPadding}>
-        <Text style={styles.sectionTitle}>Select delivery address</Text>
+        <Text style={styles.sectionTitle}>{t.builder.selectAddress}</Text>
         {addresses.map((addr) => (
           <TouchableOpacity
             key={addr.id}
@@ -683,7 +684,7 @@ function SubscriptionBuilderScreen() {
                 </Text>
                 {addr.isDefault && (
                   <View style={styles.defaultBadge}>
-                    <Text style={styles.defaultBadgeText}>Default</Text>
+                    <Text style={styles.defaultBadgeText}>{t.builder.default}</Text>
                   </View>
                 )}
               </View>
@@ -702,32 +703,32 @@ function SubscriptionBuilderScreen() {
 
   // Step 4: Review
   const renderStep4 = () => {
-    const FULL_DAY_LABELS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const day = selectedDays[0];
     const frequencyLabel =
       frequency === "DAILY"
-        ? "Daily"
+        ? t.list.daily
         : frequency === "ALTERNATE_DAYS"
-        ? "Alternate Days"
+        ? t.list.alternateDays
         : frequency === "WEEKLY"
-        ? `Weekly \u2013 ${FULL_DAY_LABELS[selectedDays[0]] ?? ""}`
+        ? t.builder.reviewWeekly(t.list.daysFull[day] ?? "")
         : frequency === "BIWEEKLY"
-        ? `Every 2 Weeks \u2013 ${FULL_DAY_LABELS[selectedDays[0]] ?? ""}`
+        ? t.builder.reviewBiweekly(t.list.daysFull[day] ?? "")
         : frequency === "MONTHLY"
-        ? `Monthly \u2013 ${selectedDays[0]}${selectedDays[0] === 1 ? "st" : selectedDays[0] === 2 ? "nd" : selectedDays[0] === 3 ? "rd" : "th"} of each month`
-        : `${selectedDays.map((d) => DAY_LABELS[d]).join(", ")}`;
+        ? t.builder.reviewMonthly(day)
+        : `${selectedDays.map((d) => t.list.daysShort[d]).join(", ")}`;
 
     const nextDelivery = getNextDeliveryDate(frequency, selectedDays);
 
     return (
       <ScrollView keyboardDismissMode="on-drag" style={styles.stepContent} contentContainerStyle={styles.stepContentPadding}>
-        <Text style={styles.sectionTitle}>Review your subscription</Text>
+        <Text style={styles.sectionTitle}>{t.builder.reviewTitle}</Text>
 
         {/* Items */}
         <View style={styles.reviewCard}>
           <View style={styles.reviewCardHeader}>
             <Ionicons name="cart-outline" size={18} color={colors.primary} />
             <Text style={styles.reviewCardTitle}>
-              Items ({items.length})
+              {t.builder.reviewItems(items.length)}
             </Text>
           </View>
           {items.map((item) => {
@@ -735,7 +736,7 @@ function SubscriptionBuilderScreen() {
             return (
               <View key={item.storeProduct.id} style={styles.reviewItemRow}>
                 <Text style={styles.reviewItemName} numberOfLines={1}>
-                  {item.storeProduct.product.name}
+                  {getLocalizedName(item.storeProduct.product)}
                 </Text>
                 <Text style={styles.reviewItemQty}>x{item.quantity}</Text>
                 <Text style={styles.reviewItemPrice}>
@@ -745,7 +746,7 @@ function SubscriptionBuilderScreen() {
             );
           })}
           <View style={styles.reviewTotalRow}>
-            <Text style={styles.reviewTotalLabel}>Per delivery</Text>
+            <Text style={styles.reviewTotalLabel}>{t.builder.perDelivery}</Text>
             <Text style={styles.reviewTotalValue}>
               {formatPrice(totalAmount)}
             </Text>
@@ -756,7 +757,7 @@ function SubscriptionBuilderScreen() {
         <View style={styles.reviewCard}>
           <View style={styles.reviewCardHeader}>
             <Ionicons name="repeat-outline" size={18} color={colors.primary} />
-            <Text style={styles.reviewCardTitle}>Frequency</Text>
+            <Text style={styles.reviewCardTitle}>{t.builder.frequency}</Text>
           </View>
           <Text style={styles.reviewCardValue}>{frequencyLabel}</Text>
         </View>
@@ -769,7 +770,7 @@ function SubscriptionBuilderScreen() {
               size={18}
               color={colors.primary}
             />
-            <Text style={styles.reviewCardTitle}>Delivery Address</Text>
+            <Text style={styles.reviewCardTitle}>{t.builder.deliveryAddress}</Text>
           </View>
           {selectedAddress && (
             <>
@@ -792,7 +793,7 @@ function SubscriptionBuilderScreen() {
                 size={18}
                 color={colors.primary}
               />
-              <Text style={styles.autoPayLabel}>Auto-pay with wallet</Text>
+              <Text style={styles.autoPayLabel}>{t.builder.autoPay}</Text>
             </View>
             <Switch
               value={autoPayWithWallet}
@@ -808,7 +809,7 @@ function SubscriptionBuilderScreen() {
         <View style={styles.firstDeliveryCard}>
           <Ionicons name="time-outline" size={18} color={colors.primary} />
           <Text style={styles.firstDeliveryText}>
-            First delivery: {nextDelivery}
+            {t.builder.firstDelivery(nextDelivery)}
           </Text>
         </View>
       </ScrollView>
@@ -845,7 +846,7 @@ function SubscriptionBuilderScreen() {
         {step > 0 && (
           <TouchableOpacity style={styles.backButton} onPress={handleBack}>
             <Ionicons name="arrow-back" size={20} color={colors.text} />
-            <Text style={styles.backButtonText}>Back</Text>
+            <Text style={styles.backButtonText}>{common.back}</Text>
           </TouchableOpacity>
         )}
         <TouchableOpacity
@@ -862,7 +863,7 @@ function SubscriptionBuilderScreen() {
             <ActivityIndicator size="small" color="#fff" />
           ) : (
             <Text style={styles.nextButtonText}>
-              {step === 3 ? "Subscribe" : "Next"}
+              {step === 3 ? t.builder.subscribe : t.builder.next}
             </Text>
           )}
         </TouchableOpacity>
@@ -1514,4 +1515,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(SubscriptionBuilderScreen, { icon: "repeat-outline", title: "Subscribe & save", message: "Sign in to set up a subscription." });
+export default withSignIn(SubscriptionBuilderScreen, "repeat-outline", () => ({
+  title: strings("subscriptions").builder.signInTitle,
+  message: strings("subscriptions").builder.signInMessage,
+}));

@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Platform } from "react-native";
 import MapView, { PROVIDER_GOOGLE, type Region } from "react-native-maps";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
 
 interface PinMapProps {
   latitude: number;
@@ -23,6 +24,7 @@ const PIN_SIZE = 40;
  * A new place from search or GPS recentres it; resting after a drag reports the spot under the pin.
  */
 export function PinMap({ latitude, longitude, onMove, fill }: PinMapProps) {
+  const t = useStrings("search");
   const mapRef = useRef<MapView>(null);
   const last = useRef({ latitude, longitude });
 
@@ -55,7 +57,7 @@ export function PinMap({ latitude, longitude, onMove, fill }: PinMapProps) {
         <Ionicons name="location" size={PIN_SIZE} color={colors.primary} />
       </View>
       <View style={[styles.hint, fill && styles.hintLow]} pointerEvents="none">
-        <Text style={styles.hintText}>Move the map to place the pin on your door</Text>
+        <Text style={styles.hintText}>{t.pinHint}</Text>
       </View>
     </View>
   );

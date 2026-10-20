@@ -11,6 +11,7 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
 
 const SCREEN_HEIGHT = Dimensions.get("window").height;
 
@@ -34,13 +35,14 @@ export function ConfirmSheet({
   message,
   icon = "alert-circle-outline",
   iconColor = "#ef4444",
-  confirmLabel = "Confirm",
-  cancelLabel = "Cancel",
+  confirmLabel,
+  cancelLabel,
   destructive = true,
   loading = false,
   onConfirm,
   onCancel,
 }: ConfirmSheetProps) {
+  const common = useStrings("common");
   const backdropOpacity = useRef(new Animated.Value(0)).current;
   const sheetTranslateY = useRef(new Animated.Value(SCREEN_HEIGHT)).current;
   const mounted = useRef(false);
@@ -105,7 +107,7 @@ export function ConfirmSheet({
             disabled={loading}
             activeOpacity={0.7}
           >
-            <Text style={styles.cancelBtnText}>{cancelLabel}</Text>
+            <Text style={styles.cancelBtnText}>{cancelLabel ?? common.cancel}</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -121,7 +123,7 @@ export function ConfirmSheet({
             {loading ? (
               <ActivityIndicator size="small" color="#fff" />
             ) : (
-              <Text style={styles.confirmBtnText}>{confirmLabel}</Text>
+              <Text style={styles.confirmBtnText}>{confirmLabel ?? common.confirm}</Text>
             )}
           </TouchableOpacity>
         </View>

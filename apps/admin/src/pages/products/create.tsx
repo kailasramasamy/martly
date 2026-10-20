@@ -345,12 +345,12 @@ export const ProductCreate = () => {
                       children: (
                         <Row gutter={16}>
                           <Col xs={24} sm={12}>
-                            <Form.Item label="Name (Tamil)" name={["translations", "ta", "name"]}>
+                            <Form.Item label="Name (Tamil)" name={["translations", "ta", "name"]} extra="Leave blank and Martly will translate it">
                               <Input placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAA\u0BC6\u0BAF\u0BB0\u0BCD" />
                             </Form.Item>
                           </Col>
                           <Col xs={24} sm={12}>
-                            <Form.Item label="Description (Tamil)" name={["translations", "ta", "description"]}>
+                            <Form.Item label="Description (Tamil)" name={["translations", "ta", "description"]} extra="Leave blank and Martly will translate it">
                               <Input.TextArea rows={2} placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BB5\u0BBF\u0BB5\u0BB0\u0BAE\u0BCD" />
                             </Form.Item>
                           </Col>

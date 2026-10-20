@@ -334,6 +334,7 @@ export async function recipeRoutes(app: FastifyInstance) {
           product: {
             id: item.product.id,
             name: item.product.name,
+            translations: item.product.translations,
             imageUrl: item.product.imageUrl,
             foodType: item.product.foodType,
           },

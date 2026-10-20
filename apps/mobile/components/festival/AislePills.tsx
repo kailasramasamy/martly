@@ -3,6 +3,7 @@ import { Image, Pressable, ScrollView, StyleSheet, Text, View } from "react-nati
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useLanguage } from "../../lib/language-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { FestiveAisle } from "../../lib/types";
 
 // Catalog names carry asides ("Agarbatti (Incense Sticks)"); a pill only needs the name itself
@@ -41,11 +42,12 @@ function Pill({ label, selected, ink, onPress, children }: PillProps) {
 /** Narrows a tile's mixed shelf to one of its aisles; hidden when the tile has only one. */
 export function AislePills({ aisles, selectedId, ink, onSelect }: Props) {
   const { language } = useLanguage();
+  const t = useStrings("home");
   if (aisles.length < 2) return null;
 
   return (
     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.bar} contentContainerStyle={styles.rail}>
-      <Pill label="All" selected={selectedId === null} ink={ink} onPress={() => onSelect(null)}>
+      <Pill label={t.all} selected={selectedId === null} ink={ink} onPress={() => onSelect(null)}>
         <Ionicons name="grid-outline" size={15} color={selectedId === null ? ink : colors.textSecondary} />
       </Pill>
       {aisles.map((aisle) => {

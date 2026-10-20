@@ -1,6 +1,8 @@
 import { View, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../../constants/theme";
+import { strings } from "../../lib/i18n";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 export interface AvailableSlot {
   id: string;
@@ -18,18 +20,20 @@ export interface AvailableSlot {
 /** A slot can be picked while it's open and has room */
 export const isBookable = (slot: AvailableSlot) => !slot.full && !slot.closed;
 
-function clock(t: string) {
-  const [h, m] = t.split(":").map(Number);
-  return `${h % 12 || 12}:${m.toString().padStart(2, "0")} ${h >= 12 ? "PM" : "AM"}`;
+export function clock(time: string) {
+  const [h, m] = time.split(":").map(Number);
+  const t = strings("checkout").slots;
+  return `${h % 12 || 12}:${m.toString().padStart(2, "0")} ${h >= 12 ? t.pm : t.am}`;
 }
 
 function SlotCard({ slot, selected, onSelect }: { slot: AvailableSlot; selected: boolean; onSelect: () => void }) {
+  const t = useStrings("checkout").slots;
   const off = !isBookable(slot);
   const status = slot.closed
-    ? `Closed · order by ${clock(slot.orderBy)}`
+    ? t.closed(clock(slot.orderBy))
     : slot.full
-      ? "Full"
-      : `Order by ${clock(slot.orderBy)} · ${slot.available} left`;
+      ? t.full
+      : t.orderBy(clock(slot.orderBy), slot.available);
   return (
     <TouchableOpacity
       style={[styles.card, selected && styles.cardActive, off && styles.cardOff]}
@@ -53,19 +57,20 @@ function SlotCard({ slot, selected, onSelect }: { slot: AvailableSlot; selected:
 
 /** The day's delivery slots: open ones to pick, closed and full ones shown with the reason */
 export function SlotGrid({ slots, loading, selectedId, onSelect }: { slots: AvailableSlot[]; loading: boolean; selectedId: string | null; onSelect: (slot: AvailableSlot) => void }) {
+  const t = useStrings("checkout").slots;
   if (loading) return <ActivityIndicator color={colors.primary} style={{ marginVertical: 16 }} />;
   if (slots.length === 0) {
     return (
       <View style={styles.empty}>
         <Ionicons name="calendar-outline" size={20} color="#94a3b8" />
-        <Text style={styles.emptyText}>No time slots available for this date</Text>
+        <Text style={styles.emptyText}>{t.none}</Text>
       </View>
     );
   }
   const allClosed = slots.every((s) => s.closed);
   return (
     <>
-      {allClosed && <Text style={styles.closedNote}>Orders for today's slots have closed. Pick another day.</Text>}
+      {allClosed && <Text style={styles.closedNote}>{t.todayClosed}</Text>}
       <View style={styles.grid}>
         {slots.map((slot) => (
           <SlotCard key={slot.id} slot={slot} selected={selectedId === slot.id} onSelect={() => onSelect(slot)} />

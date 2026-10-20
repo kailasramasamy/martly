@@ -4,6 +4,8 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../constants/theme";
 import { useLanguage } from "../lib/language-context";
+import { useStrings } from "../lib/i18n/use-strings";
+import { strings } from "../lib/i18n";
 import { FoodTypeMark } from "./FoodTypeMark";
 import { AdBadge, BestsellerBadge, UnitPrice } from "./ProductBadges";
 import { SizeChips, SizePager, maxChips, sizeImage } from "./PackSizes";
@@ -40,7 +42,7 @@ export interface CompactProductCardProps {
 function discountLine(item: StoreProduct): string | null {
   const p = item.pricing;
   if (!p?.discountActive) return null;
-  return p.discountType === "PERCENTAGE" ? `${p.discountValue}% OFF` : `₹${p.discountValue} OFF`;
+  return p.discountType === "PERCENTAGE" ? strings("common").percentOff(p.discountValue!) : strings("catalog").flatOff(p.discountValue!);
 }
 
 function resolvePrices(item: StoreProduct, isMember?: boolean) {
@@ -55,16 +57,17 @@ function resolvePrices(item: StoreProduct, isMember?: boolean) {
 }
 
 function CompactControl({ item, quantity, outOfStock, onAddToCart, onUpdateQuantity }: Required<Pick<CompactProductCardProps, "quantity">> & Pick<CompactProductCardProps, "item" | "onAddToCart" | "onUpdateQuantity"> & { outOfStock: boolean }) {
+  const t = useStrings("catalog");
   const increment = () => onAddToCart(item);
   const decrement = () => onUpdateQuantity(item.id, quantity - 1);
   if (quantity > 0) {
     return (
       <View style={styles.stepper}>
-        <TouchableOpacity style={styles.stepBtn} onPress={decrement} hitSlop={HIT_SLOP} accessibilityLabel="Remove one">
+        <TouchableOpacity style={styles.stepBtn} onPress={decrement} hitSlop={HIT_SLOP} accessibilityLabel={t.removeOne}>
           <Ionicons name="remove" size={14} color="#fff" />
         </TouchableOpacity>
         <Text style={styles.stepText}>{quantity}</Text>
-        <TouchableOpacity style={styles.stepBtn} onPress={increment} hitSlop={HIT_SLOP} accessibilityLabel="Add one more">
+        <TouchableOpacity style={styles.stepBtn} onPress={increment} hitSlop={HIT_SLOP} accessibilityLabel={t.addOneMore}>
           <Ionicons name="add" size={14} color="#fff" />
         </TouchableOpacity>
       </View>
@@ -77,9 +80,9 @@ function CompactControl({ item, quantity, outOfStock, onAddToCart, onUpdateQuant
       disabled={outOfStock}
       activeOpacity={0.8}
       hitSlop={HIT_SLOP}
-      accessibilityLabel="Add to cart"
+      accessibilityLabel={t.addToCartLabel}
     >
-      <Text style={[styles.addText, outOfStock && styles.addTextDisabled]}>ADD</Text>
+      <Text style={[styles.addText, outOfStock && styles.addTextDisabled]}>{t.addBtn}</Text>
     </TouchableOpacity>
   );
 }
@@ -87,6 +90,8 @@ function CompactControl({ item, quantity, outOfStock, onAddToCart, onUpdateQuant
 function CompactImage({ item, primaryId, outOfStock, wished, onHeart, pager }: {
   item: StoreProduct; primaryId: string; outOfStock: boolean; wished?: boolean; onHeart?: () => void; pager?: React.ReactNode;
 }) {
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   const uri = sizeImage(item, primaryId);
   return (
     <View style={styles.imageContainer}>
@@ -98,10 +103,10 @@ function CompactImage({ item, primaryId, outOfStock, wished, onHeart, pager }: {
       {item.product.foodType && <FoodTypeMark foodType={item.product.foodType} />}
       {item.product.isBestseller && <BestsellerBadge />}
       {outOfStock && (
-        <View style={styles.oos}><Text style={styles.oosLabel}>Out of stock</Text></View>
+        <View style={styles.oos}><Text style={styles.oosLabel}>{tc.outOfStock}</Text></View>
       )}
       {onHeart && (
-        <Pressable style={styles.heart} onPress={onHeart} hitSlop={8} accessibilityLabel="Toggle wishlist">
+        <Pressable style={styles.heart} onPress={onHeart} hitSlop={8} accessibilityLabel={t.toggleWishlist}>
           <Ionicons name={wished ? "heart" : "heart-outline"} size={14} color={wished ? "#ef4444" : "#94a3b8"} />
         </Pressable>
       )}

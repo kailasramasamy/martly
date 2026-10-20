@@ -13,30 +13,18 @@ import { notificationAudience, type NotificationAudience } from "@martly/shared/
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { colors, spacing } from "../constants/theme";
-import { resolveNotificationDeepLink } from "../lib/notification-helpers";
+import { resolveNotificationDeepLink, relativeTime } from "../lib/notification-helpers";
 import { usePersona } from "../lib/persona-context";
 import { notificationTypeStyle } from "../lib/notification-types";
 import { useNotifications } from "../lib/notification-context";
 import { NotificationDetailSheet } from "../components/NotificationDetailSheet";
 import type { AppNotification } from "../lib/types";
+import { useStrings } from "../lib/i18n/use-strings";
 import { withSignIn } from "../components/SignInPrompt";
-
-function relativeTime(dateStr: string): string {
-  const now = Date.now();
-  const then = new Date(dateStr).getTime();
-  const diff = now - then;
-  const mins = Math.floor(diff / 60000);
-  if (mins < 1) return "Just now";
-  if (mins < 60) return `${mins}m ago`;
-  const hrs = Math.floor(mins / 60);
-  if (hrs < 24) return `${hrs}h ago`;
-  const days = Math.floor(hrs / 24);
-  if (days === 1) return "Yesterday";
-  if (days < 7) return `${days}d ago`;
-  return new Date(dateStr).toLocaleDateString("en-IN", { day: "numeric", month: "short" });
-}
+import { strings } from "../lib/i18n";
 
 function NotificationsScreen() {
+  const t = useStrings("account").notifications;
   const router = useRouter();
   const params = useLocalSearchParams<{ audience?: string }>();
   const { persona } = usePersona();
@@ -162,12 +150,12 @@ function NotificationsScreen() {
 
   return (
     <View style={styles.container}>
-      <Stack.Screen options={{ title: isStaff ? "Alerts" : "Notifications" }} />
+      <Stack.Screen options={{ title: isStaff ? t.alerts : t.title }} />
       {unreadCount > 0 && (
         <View style={styles.topBar}>
-          <Text style={styles.topBarText}>{unreadCount} unread</Text>
+          <Text style={styles.topBarText}>{t.unread(unreadCount)}</Text>
           <TouchableOpacity onPress={handleMarkAllRead} hitSlop={{ top: 8, bottom: 8, left: 12, right: 12 }}>
-            <Text style={styles.markAllText}>Mark All Read</Text>
+            <Text style={styles.markAllText}>{t.markAllRead}</Text>
           </TouchableOpacity>
         </View>
       )}
@@ -199,9 +187,9 @@ function NotificationsScreen() {
             <View style={styles.emptyIconCircle}>
               <Ionicons name="notifications-off-outline" size={40} color="#94a3b8" />
             </View>
-            <Text style={styles.emptyTitle}>{isStaff ? "No alerts yet" : "No notifications yet"}</Text>
+            <Text style={styles.emptyTitle}>{isStaff ? t.noAlerts : t.noNotifications}</Text>
             <Text style={styles.emptySubtitle}>
-              {isStaff ? "New orders, stock and team alerts show up here" : "We'll notify you about orders, offers, and more"}
+              {isStaff ? t.alertsHint : t.notificationsHint}
             </Text>
           </View>
         }
@@ -340,4 +328,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(NotificationsScreen, { icon: "notifications-outline", title: "Notifications", message: "Sign in to get order updates and offers." });
+export default withSignIn(NotificationsScreen, "notifications-outline", () => strings("account").signIn.notifications);

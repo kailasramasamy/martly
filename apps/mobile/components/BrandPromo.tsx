@@ -4,6 +4,7 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { fonts } from "../constants/theme";
 import { brandDisplayName, brandTheme } from "../lib/brand-strip";
+import { useStrings } from "../lib/i18n/use-strings";
 
 interface Brand { id: string; name: string; imageUrl?: string | null; themeColor?: string | null; themeColorSecondary?: string | null }
 
@@ -11,6 +12,7 @@ const openStore = (brand: Brand) => router.push(`/brand/${brand.id}`);
 
 // Logo + name in the brand's colour, above the product name: recognisable at a glance, taps through to its store
 export function BrandChip({ brand }: { brand: Brand }) {
+  const t = useStrings("home");
   const { base } = brandTheme(brand);
   const name = brandDisplayName(brand.name);
   return (
@@ -19,7 +21,7 @@ export function BrandChip({ brand }: { brand: Brand }) {
       onPress={() => openStore(brand)}
       hitSlop={6}
       accessibilityRole="button"
-      accessibilityLabel={`Visit ${name} store`}
+      accessibilityLabel={t.visitBrandStore(name)}
     >
       {brand.imageUrl && (
         <View style={styles.chipLogo}>
@@ -34,10 +36,11 @@ export function BrandChip({ brand }: { brand: Brand }) {
 
 // Brand-store call to action in the brand's own gradient, after the product details
 export function BrandStoreBanner({ brand }: { brand: Brand }) {
+  const t = useStrings("home");
   const { base, dark, accent } = brandTheme(brand);
   const name = brandDisplayName(brand.name);
   return (
-    <Pressable onPress={() => openStore(brand)} accessibilityRole="button" accessibilityLabel={`Visit ${name} store`}>
+    <Pressable onPress={() => openStore(brand)} accessibilityRole="button" accessibilityLabel={t.visitBrandStore(name)}>
       {({ pressed }) => (
         <LinearGradient
           colors={[base, dark]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }}
@@ -51,9 +54,9 @@ export function BrandStoreBanner({ brand }: { brand: Brand }) {
               : <Text style={[styles.bannerWordmark, { color: base }]} numberOfLines={2}>{name}</Text>}
           </View>
           <View style={styles.bannerText}>
-            <Text style={styles.eyebrow}>BRAND STORE</Text>
-            <Text style={styles.bannerTitle} numberOfLines={1}>Shop all {name}</Text>
-            <Text style={styles.bannerSub}>Every pack size, in one place</Text>
+            <Text style={styles.eyebrow}>{t.brandStore}</Text>
+            <Text style={styles.bannerTitle} numberOfLines={1}>{t.shopAllBrand(name)}</Text>
+            <Text style={styles.bannerSub}>{t.brandBannerSub}</Text>
           </View>
           <View style={styles.go}>
             <Ionicons name="arrow-forward" size={18} color={base} />

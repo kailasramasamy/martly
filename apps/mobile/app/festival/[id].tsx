@@ -5,6 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useStore } from "../../lib/store-context";
 import { useLanguage } from "../../lib/language-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { useFestiveHero, useTileProducts } from "../../lib/use-festive";
 import { ProductList } from "../../components/ProductList";
@@ -29,10 +30,11 @@ interface ShelfProps {
 }
 
 function TileShelf({ collectionId, tileId, aisleId, storeId }: ShelfProps) {
+  const t = useStrings("home");
   const { products, loading, loadingMore, failed, loadMore } = useTileProducts(collectionId, tileId, storeId, aisleId);
   if (loading) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
-  if (failed) return <Message icon="cloud-offline-outline" text="Couldn't load these products right now." />;
-  if (products.length === 0) return <Message icon="basket-outline" text="Nothing in stock here right now." />;
+  if (failed) return <Message icon="cloud-offline-outline" text={t.tileFailed} />;
+  if (products.length === 0) return <Message icon="basket-outline" text={t.tileEmpty} />;
   return (
     <ProductList
       products={products}
@@ -50,6 +52,7 @@ export default function FestivalScreen() {
   const navigation = useNavigation();
   const { selectedStore } = useStore();
   const { language } = useLanguage();
+  const t = useStrings("home");
   const storeId = selectedStore?.id;
   const { hero, loading } = useFestiveHero(id, storeId);
   const [tileId, setTileId] = useState<string | null>(tile ?? null);
@@ -74,15 +77,18 @@ export default function FestivalScreen() {
   }, [hero, language, navigation]);
 
   if (loading) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
-  if (!hero || !selected || !storeId) return <Message icon="sparkles-outline" text="This festival's picks have ended." />;
+  if (!hero || !selected || !storeId) return <Message icon="sparkles-outline" text={t.festivalEnded} />;
+
+  // Light title ink only reads on the festive band; white chips and pills need the band colour instead
+  const ink = hero.theme.dark ? hero.theme.background : hero.theme.title;
 
   return (
     <ProductActionsProvider store={selectedStore ?? null}>
       <View style={styles.container}>
         <View style={[styles.chips, { backgroundColor: hero.theme.background }]}>
-          <TileChips tiles={hero.tiles} selectedId={selected.id} ink={hero.theme.title} onSelect={selectTile} />
+          <TileChips tiles={hero.tiles} selectedId={selected.id} ink={ink} labelColor={hero.theme.title} onSelect={selectTile} />
         </View>
-        <AislePills aisles={selected.subcategories} selectedId={aisleId} ink={hero.theme.title} onSelect={setAisleId} />
+        <AislePills aisles={selected.subcategories} selectedId={aisleId} ink={ink} onSelect={setAisleId} />
         <TileShelf key={`${selected.id}|${aisleId}`} collectionId={hero.id} tileId={selected.id} aisleId={aisleId} storeId={storeId} />
         <FloatingCart />
       </View>

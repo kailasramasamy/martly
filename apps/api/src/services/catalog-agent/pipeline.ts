@@ -5,6 +5,7 @@ import { brandCandidates, classify, findByBarcode } from "./match.js";
 import { fetchPhoto } from "./photos.js";
 import { listExisting, publishNew, type DraftForPublish, type Proposal } from "./publish.js";
 import type { UsageEntry } from "./usage.js";
+import { translateNewProduct, type ErrorLog } from "../translate/product.js";
 
 // Shots rendered at once for one draft; the worker runs two drafts side by side
 const SHOT_CONCURRENCY = 4;
@@ -70,7 +71,7 @@ export function reviewReasons(p: Proposal, draft: Pick<DraftForPublish, "mrp">) 
 }
 
 /** Runs one claimed draft to PUBLISHED, DUPLICATE or NEEDS_REVIEW */
-export async function runDraft(prisma: PrismaClient, id: string) {
+export async function runDraft(prisma: PrismaClient, id: string, log: ErrorLog) {
   const draft = await loadDraft(prisma, id);
   if (!draft || draft.status !== "PROCESSING") return;
   const photos = await Promise.all(draft.photos.map(fetchPhoto));
@@ -86,5 +87,6 @@ export async function runDraft(prisma: PrismaClient, id: string) {
     await prisma.catalogDraft.update({ where: { id }, data: { status: "NEEDS_REVIEW", reviewReasons: reasons, error: null } });
     return;
   }
-  await publishNew(prisma, draft, proposal, shots);
+  const productId = await publishNew(prisma, draft, proposal, shots);
+  void translateNewProduct(prisma, productId, log);
 }

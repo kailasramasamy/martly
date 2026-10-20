@@ -20,6 +20,7 @@ import sharp from "sharp";
 import { readFileSync, writeFileSync } from "node:fs";
 import { PRODUCT_TYPE, isFoodPath, resolveSubcategory, slugify, type TaxonomyPath } from "./lib/catalog.js";
 import { uploadImage, transparentLogoPng } from "./lib/media.js";
+import { translateNewProduct } from "../src/services/translate/product.js";
 import {
   fetchShopifyProducts, toPackVariant, titlePackOf, isBogoTitle, cleanTitle, plainDescription,
   type ShopifyProduct, type PackVariant, type ProductDetails,
@@ -256,6 +257,7 @@ async function applyPlan(plan: Plan, config: Config, brandId: string): Promise<"
     const urls = await uploadProductImages(plan.site, slugify(config.brand), slugify(plan.name));
     if (urls.length) await prisma.product.update({ where: { id: product.id }, data: { imageUrl: urls[0], images: urls } });
   }
+  if (!existing) await translateNewProduct(prisma, product.id, { error: (err, msg) => console.error(`  ${msg}:`, err) });
   return existing ? "updated" : "created";
 }
 

@@ -5,12 +5,14 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useCart } from "../lib/cart-context";
 import { useBasketMode } from "../lib/basket-mode-context";
 import { colors, spacing, fontSize } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
 
 // aboveTabBar: rendered inside a tab screen, where the tab bar already covers the bottom safe area
 export function FloatingCart({ aboveTabBar = false }: { aboveTabBar?: boolean }) {
   const { itemCount, totalAmount, storeName } = useCart();
   const { isBasketMode, itemCount: basketItemCount, exitBasketMode } = useBasketMode();
   const insets = useSafeAreaInsets();
+  const t = useStrings("checkout").floating;
   const paddingBottom = aboveTabBar ? 10 : Math.max(12, insets.bottom + 8);
 
   // Basket mode bar takes priority
@@ -30,16 +32,16 @@ export function FloatingCart({ aboveTabBar = false }: { aboveTabBar?: boolean })
               <Ionicons name="basket" size={18} color="#fff" />
             </View>
             <View style={styles.info}>
-              <Text style={styles.storeName} numberOfLines={1}>Adding to tomorrow's basket</Text>
+              <Text style={styles.storeName} numberOfLines={1}>{t.addingToBasket}</Text>
               {basketItemCount > 0 && (
                 <Text style={styles.basketCount}>
-                  {basketItemCount} item{basketItemCount !== 1 ? "s" : ""} added
+                  {t.itemsAdded(basketItemCount)}
                 </Text>
               )}
             </View>
           </View>
           <View style={styles.right}>
-            <Text style={styles.viewCart}>View Basket</Text>
+            <Text style={styles.viewCart}>{t.viewBasket}</Text>
             <Ionicons name="arrow-forward" size={16} color="#fff" />
           </View>
         </TouchableOpacity>
@@ -66,7 +68,7 @@ export function FloatingCart({ aboveTabBar = false }: { aboveTabBar?: boolean })
           </View>
         </View>
         <View style={styles.right}>
-          <Text style={styles.viewCart}>View Cart</Text>
+          <Text style={styles.viewCart}>{t.viewCart}</Text>
           <Ionicons name="arrow-forward" size={16} color="#fff" />
         </View>
       </TouchableOpacity>

@@ -21,14 +21,20 @@ import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../constants/theme";
 import type { ReferralInfo, ReferralItem } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
+import { formatDate } from "../lib/i18n/format";
 
-const STATUS_COLORS: Record<string, { bg: string; text: string; label: string }> = {
-  PENDING: { bg: "#fef3c7", text: "#92400e", label: "Pending" },
-  COMPLETED: { bg: "#dcfce7", text: "#166534", label: "Completed" },
-  EXPIRED: { bg: "#fee2e2", text: "#991b1b", label: "Expired" },
+type ReferralStatus = "PENDING" | "COMPLETED" | "EXPIRED";
+
+const STATUS_COLORS: Record<ReferralStatus, { bg: string; text: string }> = {
+  PENDING: { bg: "#fef3c7", text: "#92400e" },
+  COMPLETED: { bg: "#dcfce7", text: "#166534" },
+  EXPIRED: { bg: "#fee2e2", text: "#991b1b" },
 };
 
 function ReferralScreen() {
+  const t = useStrings("account").referral;
   const { selectedStore } = useStore();
   const storeId = selectedStore?.id;
   const { show: showToast } = useToast();
@@ -62,14 +68,14 @@ function ReferralScreen() {
   const copyCode = async () => {
     if (!data?.referralCode) return;
     await Clipboard.setStringAsync(data.referralCode);
-    showToast("Referral code copied!", "success");
+    showToast(t.copied, "success");
   };
 
   const shareCode = async () => {
     if (!data?.referralCode) return;
     try {
       await Share.share({
-        message: `Join Martly and get wallet credits! Use my referral code: ${data.referralCode}\n\nDownload Martly and start shopping for fresh groceries.`,
+        message: t.shareMessage(data.referralCode),
       });
     } catch {
       // user cancelled
@@ -78,21 +84,21 @@ function ReferralScreen() {
 
   const applyCode = async () => {
     if (!code.trim()) {
-      showToast("Please enter a referral code", "error");
+      showToast(t.enterCode, "error");
       return;
     }
     if (!storeId) {
-      showToast("Please select a store first", "error");
+      showToast(t.selectStore, "error");
       return;
     }
     setApplying(true);
     try {
       await api.post("/api/v1/referrals/apply", { code: code.trim(), storeId });
-      showToast("Referral code applied!", "success");
+      showToast(t.applied, "success");
       setCode("");
       fetchData();
     } catch (err: any) {
-      const msg = err?.response?.data?.message || err?.message || "Failed to apply code";
+      const msg = err?.response?.data?.message || err?.message || t.applyFailed;
       showToast(msg, "error");
     } finally {
       setApplying(false);
@@ -128,22 +134,20 @@ function ReferralScreen() {
       <View style={styles.codeCard}>
         <View style={styles.codeHeader}>
           <Ionicons name="gift-outline" size={24} color={colors.primary} />
-          <Text style={styles.codeTitle}>Your Referral Code</Text>
+          <Text style={styles.codeTitle}>{t.yourCode}</Text>
         </View>
-        <Text style={styles.codeSubtitle}>
-          Share your code with friends and earn wallet credits when they complete their first order!
-        </Text>
+        <Text style={styles.codeSubtitle}>{t.codeSubtitle}</Text>
         <View style={styles.codeBox}>
           <Text style={styles.codeText}>{data?.referralCode ?? "—"}</Text>
         </View>
         <View style={styles.codeActions}>
           <TouchableOpacity style={styles.actionBtn} onPress={copyCode}>
             <Ionicons name="copy-outline" size={18} color={colors.primary} />
-            <Text style={styles.actionBtnText}>Copy</Text>
+            <Text style={styles.actionBtnText}>{t.copy}</Text>
           </TouchableOpacity>
           <TouchableOpacity style={[styles.actionBtn, styles.shareBtn]} onPress={shareCode}>
             <Ionicons name="share-social-outline" size={18} color="#fff" />
-            <Text style={[styles.actionBtnText, { color: "#fff" }]}>Share</Text>
+            <Text style={[styles.actionBtnText, { color: "#fff" }]}>{t.share}</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -151,11 +155,11 @@ function ReferralScreen() {
       {/* Enter a Code */}
       {!data?.appliedReferral && (
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Have a referral code?</Text>
+          <Text style={styles.sectionTitle}>{t.haveCode}</Text>
           <View style={styles.inputRow}>
             <TextInput
               style={styles.input}
-              placeholder="Enter code (e.g. MRT-XXXXXX)"
+              placeholder={t.placeholder}
               placeholderTextColor="#94a3b8"
               value={code}
               onChangeText={setCode}
@@ -170,7 +174,7 @@ function ReferralScreen() {
               {applying ? (
                 <ActivityIndicator size="small" color="#fff" />
               ) : (
-                <Text style={styles.applyBtnText}>Apply</Text>
+                <Text style={styles.applyBtnText}>{t.apply}</Text>
               )}
             </TouchableOpacity>
           </View>
@@ -183,13 +187,13 @@ function ReferralScreen() {
           <View style={styles.appliedRow}>
             <Ionicons name="checkmark-circle" size={20} color="#16a34a" />
             <Text style={styles.appliedText}>
-              Referred by <Text style={{ fontFamily: "Manrope-SemiBold" }}>{data.appliedReferral.referrerName}</Text>
+              {t.referredBy} <Text style={{ fontFamily: "App-SemiBold" }}>{data.appliedReferral.referrerName}</Text>
             </Text>
           </View>
           <Text style={styles.appliedSub}>
             {data.appliedReferral.status === "COMPLETED"
-              ? `You earned \u20B9${data.appliedReferral.refereeReward} wallet credit!`
-              : `\u20B9${data.appliedReferral.refereeReward} credit after your first order is delivered`}
+              ? t.earnedCredit(data.appliedReferral.refereeReward)
+              : t.creditAfterDelivery(data.appliedReferral.refereeReward)}
           </Text>
         </View>
       )}
@@ -198,24 +202,25 @@ function ReferralScreen() {
       <View style={styles.statsRow}>
         <View style={styles.statCard}>
           <Text style={styles.statValue}>{data?.stats.totalReferrals ?? 0}</Text>
-          <Text style={styles.statLabel}>Referrals</Text>
+          <Text style={styles.statLabel}>{t.referrals}</Text>
         </View>
         <View style={styles.statCard}>
           <Text style={[styles.statValue, { color: "#16a34a" }]}>{data?.stats.completedReferrals ?? 0}</Text>
-          <Text style={styles.statLabel}>Completed</Text>
+          <Text style={styles.statLabel}>{t.completed}</Text>
         </View>
         <View style={styles.statCard}>
           <Text style={[styles.statValue, { color: colors.primary }]}>{"\u20B9"}{data?.stats.totalEarned ?? 0}</Text>
-          <Text style={styles.statLabel}>Earned</Text>
+          <Text style={styles.statLabel}>{t.earned}</Text>
         </View>
       </View>
 
       {/* Referral History */}
       {referrals.length > 0 ? (
         <>
-          <Text style={styles.historyTitle}>Referral History</Text>
+          <Text style={styles.historyTitle}>{t.history}</Text>
           {referrals.map((item) => {
-            const statusCfg = STATUS_COLORS[item.status] ?? STATUS_COLORS.PENDING;
+            const status: ReferralStatus = item.status in STATUS_COLORS ? (item.status as ReferralStatus) : "PENDING";
+            const statusCfg = STATUS_COLORS[status];
             return (
               <View key={item.id} style={styles.historyItem}>
                 <View style={styles.historyIcon}>
@@ -228,12 +233,12 @@ function ReferralScreen() {
                 <View style={{ flex: 1 }}>
                   <Text style={styles.historyName}>{item.refereeName}</Text>
                   <Text style={styles.historyDate}>
-                    {new Date(item.createdAt).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" })}
+                    {formatDate(item.createdAt, { day: "numeric", month: "short", year: "numeric" })}
                   </Text>
                 </View>
                 <View style={{ alignItems: "flex-end" }}>
                   <View style={[styles.statusBadge, { backgroundColor: statusCfg.bg }]}>
-                    <Text style={[styles.statusText, { color: statusCfg.text }]}>{statusCfg.label}</Text>
+                    <Text style={[styles.statusText, { color: statusCfg.text }]}>{t.status[status]}</Text>
                   </View>
                   {item.status === "COMPLETED" && (
                     <Text style={styles.rewardText}>{"\u20B9"}{item.referrerReward}</Text>
@@ -246,8 +251,8 @@ function ReferralScreen() {
       ) : (
         <View style={styles.emptyState}>
           <Ionicons name="people-outline" size={48} color="#cbd5e1" />
-          <Text style={styles.emptyTitle}>No referrals yet</Text>
-          <Text style={styles.emptySubtitle}>Share your code with friends to start earning!</Text>
+          <Text style={styles.emptyTitle}>{t.emptyTitle}</Text>
+          <Text style={styles.emptySubtitle}>{t.emptySubtitle}</Text>
         </View>
       )}
     </ScrollView>
@@ -282,7 +287,7 @@ const styles = StyleSheet.create({
   },
   codeTitle: {
     fontSize: fontSize.subtitle,
-    fontFamily: "Manrope-SemiBold",
+    fontFamily: "App-SemiBold",
     color: colors.text,
   },
   codeSubtitle: {
@@ -303,7 +308,7 @@ const styles = StyleSheet.create({
   },
   codeText: {
     fontSize: 22,
-    fontFamily: "Manrope-Bold",
+    fontFamily: "App-Bold",
     color: colors.primary,
     letterSpacing: 3,
   },
@@ -329,7 +334,7 @@ const styles = StyleSheet.create({
   },
   actionBtnText: {
     fontSize: fontSize.sm,
-    fontFamily: "Manrope-SemiBold",
+    fontFamily: "App-SemiBold",
     color: colors.primary,
   },
   section: {
@@ -338,7 +343,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: fontSize.body,
-    fontFamily: "Manrope-SemiBold",
+    fontFamily: "App-SemiBold",
     color: colors.text,
     marginBottom: 8,
   },
@@ -354,7 +359,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingHorizontal: 12,
     fontSize: fontSize.body,
-    fontFamily: "Manrope-Regular",
+    fontFamily: "App-Regular",
     color: colors.text,
     backgroundColor: "#fff",
   },
@@ -368,7 +373,7 @@ const styles = StyleSheet.create({
   },
   applyBtnText: {
     fontSize: fontSize.sm,
-    fontFamily: "Manrope-SemiBold",
+    fontFamily: "App-SemiBold",
     color: "#fff",
   },
   appliedCard: {
@@ -388,7 +393,7 @@ const styles = StyleSheet.create({
   },
   appliedText: {
     fontSize: fontSize.body,
-    fontFamily: "Manrope-Regular",
+    fontFamily: "App-Regular",
     color: "#166534",
   },
   appliedSub: {
@@ -413,7 +418,7 @@ const styles = StyleSheet.create({
   },
   statValue: {
     fontSize: fontSize.title,
-    fontFamily: "Manrope-Bold",
+    fontFamily: "App-Bold",
     color: colors.text,
   },
   statLabel: {
@@ -423,7 +428,7 @@ const styles = StyleSheet.create({
   },
   historyTitle: {
     fontSize: fontSize.body,
-    fontFamily: "Manrope-SemiBold",
+    fontFamily: "App-SemiBold",
     color: colors.text,
     marginHorizontal: spacing.md,
     marginBottom: 8,
@@ -448,7 +453,7 @@ const styles = StyleSheet.create({
   },
   historyName: {
     fontSize: fontSize.body,
-    fontFamily: "Manrope-Regular",
+    fontFamily: "App-Regular",
     color: colors.text,
   },
   historyDate: {
@@ -463,11 +468,11 @@ const styles = StyleSheet.create({
   },
   statusText: {
     fontSize: 11,
-    fontFamily: "Manrope-SemiBold",
+    fontFamily: "App-SemiBold",
   },
   rewardText: {
     fontSize: fontSize.sm,
-    fontFamily: "Manrope-SemiBold",
+    fontFamily: "App-SemiBold",
     color: "#16a34a",
     marginTop: 4,
   },
@@ -477,7 +482,7 @@ const styles = StyleSheet.create({
   },
   emptyTitle: {
     fontSize: fontSize.body,
-    fontFamily: "Manrope-SemiBold",
+    fontFamily: "App-SemiBold",
     color: colors.textSecondary,
     marginTop: 12,
   },
@@ -488,4 +493,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(ReferralScreen, { icon: "people-outline", title: "Refer & earn", message: "Sign in to invite friends and earn rewards." });
+export default withSignIn(ReferralScreen, "people-outline", () => strings("account").signIn.referral);

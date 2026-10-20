@@ -4,6 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { ADDRESS_ICONS } from "./AddressSheet";
 import type { UserAddress } from "../../lib/types";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 interface Props {
   addresses: UserAddress[];
@@ -14,6 +15,7 @@ interface Props {
 }
 
 function AddressRow({ address, onEdit, onDelete }: { address: UserAddress; onEdit: () => void; onDelete: () => void }) {
+  const t = useStrings("account").addresses;
   return (
     <View style={styles.row}>
       <View style={styles.icon}>
@@ -21,15 +23,15 @@ function AddressRow({ address, onEdit, onDelete }: { address: UserAddress; onEdi
       </View>
       <View style={styles.info}>
         <View style={styles.labelRow}>
-          <Text style={styles.label} numberOfLines={1}>{address.placeName || address.label}</Text>
-          {address.isDefault && <Text style={styles.defaultBadge}>DEFAULT</Text>}
+          <Text style={styles.label} numberOfLines={1}>{address.placeName || t.labels[address.label] || address.label}</Text>
+          {address.isDefault && <Text style={styles.defaultBadge}>{t.defaultBadge}</Text>}
         </View>
         <Text style={styles.address} numberOfLines={2}>{address.address}</Text>
       </View>
-      <TouchableOpacity style={styles.action} onPress={onEdit} accessibilityLabel="Edit address">
+      <TouchableOpacity style={styles.action} onPress={onEdit} accessibilityLabel={t.edit}>
         <Ionicons name="create-outline" size={18} color={colors.textSecondary} />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.action} onPress={onDelete} accessibilityLabel="Delete address">
+      <TouchableOpacity style={styles.action} onPress={onDelete} accessibilityLabel={t.delete}>
         <Ionicons name="trash-outline" size={18} color={colors.error} />
       </TouchableOpacity>
     </View>
@@ -37,13 +39,14 @@ function AddressRow({ address, onEdit, onDelete }: { address: UserAddress; onEdi
 }
 
 export function AddressList({ addresses, loading, onAdd, onEdit, onDelete }: Props) {
+  const t = useStrings("account").addresses;
   return (
     <View style={styles.group}>
       <View style={styles.header}>
-        <Text style={styles.title}>Saved addresses</Text>
+        <Text style={styles.title}>{t.title}</Text>
         <TouchableOpacity style={styles.add} onPress={onAdd} hitSlop={6}>
           <Ionicons name="add" size={16} color={colors.primary} />
-          <Text style={styles.addText}>Add new</Text>
+          <Text style={styles.addText}>{t.addNew}</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.card}>
@@ -52,7 +55,7 @@ export function AddressList({ addresses, loading, onAdd, onEdit, onDelete }: Pro
         ) : addresses.length === 0 ? (
           <TouchableOpacity style={styles.empty} onPress={onAdd}>
             <Ionicons name="map-outline" size={22} color={colors.primary} />
-            <Text style={styles.emptyText}>Add an address for faster checkout</Text>
+            <Text style={styles.emptyText}>{t.empty}</Text>
           </TouchableOpacity>
         ) : (
           addresses.map((a, i) => (

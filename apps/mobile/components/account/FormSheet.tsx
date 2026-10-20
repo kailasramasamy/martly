@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, Modal, ActivityIndicator, KeyboardAvoidin
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 interface Props {
   visible: boolean;
@@ -17,6 +18,7 @@ interface Props {
 // Page-sheet form shell shared by the account screen's edit forms
 export function FormSheet({ visible, title, submitLabel, submitting, onSubmit, onClose, children }: Props) {
   const keyboard = useKeyboardReveal();
+  const common = useStrings("common");
   return (
     <Modal visible={visible} animationType="slide" presentationStyle="pageSheet" onRequestClose={onClose}>
       <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
@@ -27,7 +29,7 @@ export function FormSheet({ visible, title, submitLabel, submitting, onSubmit, o
       >
         <View style={styles.header}>
           <Text style={styles.title}>{title}</Text>
-          <TouchableOpacity style={styles.close} onPress={onClose} accessibilityLabel="Close">
+          <TouchableOpacity style={styles.close} onPress={onClose} accessibilityLabel={common.close}>
             <Ionicons name="close" size={20} color={colors.text} />
           </TouchableOpacity>
         </View>

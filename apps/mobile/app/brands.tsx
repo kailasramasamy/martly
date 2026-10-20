@@ -6,6 +6,8 @@ import { Ionicons } from "@expo/vector-icons";
 import type { BrandDirectory } from "@martly/shared/types";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
+import { useLanguage } from "../lib/language-context";
+import { useStrings } from "../lib/i18n/use-strings";
 import { useLightStatusBar } from "../lib/use-light-status-bar";
 import { buildDirectoryItems, TILES_PER_ROW, type DirectoryItem } from "../lib/brand-directory";
 import { BrandTile } from "../components/brands/BrandTile";
@@ -48,13 +50,15 @@ function LoadingGrid({ tileWidth }: { tileWidth: number }) {
 }
 
 function EmptyState({ query, failed, onRetry }: { query: string; failed: boolean; onRetry: () => void }) {
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   return (
     <View style={styles.empty}>
       <Ionicons name={failed ? "cloud-offline-outline" : "storefront-outline"} size={40} color={colors.textSecondary} />
-      <Text style={styles.emptyTitle}>{failed ? "Couldn't load brands" : query ? `No brand matches "${query}"` : "No brands here yet"}</Text>
+      <Text style={styles.emptyTitle}>{failed ? t.brands.loadFailed : query ? t.brands.noMatch(query) : t.brands.empty}</Text>
       {failed && (
         <Pressable style={styles.retry} onPress={onRetry} accessibilityRole="button">
-          <Text style={styles.retryText}>Try again</Text>
+          <Text style={styles.retryText}>{tc.tryAgain}</Text>
         </Pressable>
       )}
     </View>
@@ -90,6 +94,7 @@ function DirectoryRow({ item, tileWidth, header, chips, empty, onOpenBrand, onEx
 
 export default function BrandsScreen() {
   const { selectedStore } = useStore();
+  const { getLocalizedName } = useLanguage();
   useLightStatusBar();
   const { directory, loading, failed, load } = useBrandDirectory(selectedStore?.id);
   const { width } = useWindowDimensions();
@@ -120,7 +125,7 @@ export default function BrandsScreen() {
       onExpand={(id) => setExpanded((prev) => new Set(prev).add(id))}
       header={
         <View onLayout={(e) => { headerHeight.current = e.nativeEvent.layout.height; }}>
-          <BrandsHero storeName={selectedStore?.name} brandCount={directory?.brandCount ?? 0} categoryCount={categoryCount} query={query} onQuery={setQuery} />
+          <BrandsHero storeName={selectedStore ? getLocalizedName(selectedStore) : undefined} brandCount={directory?.brandCount ?? 0} categoryCount={categoryCount} query={query} onQuery={setQuery} />
           {!query && <FeaturedBrands brands={directory?.featured ?? []} />}
           {loading && <LoadingGrid tileWidth={tileWidth} />}
         </View>

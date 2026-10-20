@@ -1,6 +1,7 @@
 import { Keyboard, ScrollView, View, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { spacing } from "../../../constants/theme";
+import { useStrings } from "../../../lib/i18n/use-strings";
 import { ProductList } from "../../ProductList";
 import { SkeletonBox } from "../../SkeletonLoader";
 import { LandingSection } from "./LandingSection";
@@ -43,6 +44,7 @@ function LandingSkeleton() {
 
 // Every section hides when it has nothing, so a brand-new guest still lands on trending + categories
 export function SearchLanding({ data, loading, recent, onSearch, onRemoveRecent, onClearRecent, onCategory }: SearchLandingProps) {
+  const t = useStrings("search");
   const reorder = data?.reorder;
   const time = data?.timePicks;
   return (
@@ -53,20 +55,20 @@ export function SearchLanding({ data, loading, recent, onSearch, onRemoveRecent,
       contentContainerStyle={styles.content}
     >
       {recent.length > 0 && (
-        <LandingSection title="Recent searches" action={{ label: "Clear", onPress: onClearRecent }}>
+        <LandingSection title={t.recentSearches} action={{ label: t.clear, onPress: onClearRecent }}>
           <QueryChips queries={recent} icon="time-outline" onPress={onSearch} onRemove={onRemoveRecent} />
         </LandingSection>
       )}
       {!data && loading && <LandingSkeleton />}
       {data && data.trending.length > 0 && (
-        <LandingSection title="Trending near you" icon="trending-up">
+        <LandingSection title={t.trendingNearYou} icon="trending-up">
           <QueryChips queries={data.trending} icon="search" onPress={onSearch} />
         </LandingSection>
       )}
       {reorder && reorder.products.length > 0 && (
         <LandingSection
-          title={reorder.dueCount > 0 ? "Running low?" : "Buy again"}
-          subtitle={reorder.dueCount > 0 ? "Due for a refill, based on how often you buy" : "Your usuals from this store"}
+          title={reorder.dueCount > 0 ? t.runningLow : t.buyAgain}
+          subtitle={reorder.dueCount > 0 ? t.dueRefill : t.yourUsuals}
           icon="refresh"
         >
           <ProductList products={reorder.products} layout="rail" />
@@ -74,12 +76,12 @@ export function SearchLanding({ data, loading, recent, onSearch, onRemoveRecent,
       )}
       {data?.occasions.map((o) => <OccasionSpotlight key={o.id} collection={o} onSubcategory={onCategory} />)}
       {time && time.products.length > 0 && (
-        <LandingSection title={time.title} subtitle="Picked for this time of day" icon={TIME_ICONS[time.period]}>
+        <LandingSection title={t.timeTitles[time.period]} subtitle={t.pickedForTime} icon={TIME_ICONS[time.period]}>
           <ProductList products={time.products} layout="rail" />
         </LandingSection>
       )}
       {data && data.categories.length > 0 && (
-        <LandingSection title="Popular categories" icon="grid-outline">
+        <LandingSection title={t.popularCategories} icon="grid-outline">
           <CategoryGrid categories={data.categories} onPress={onCategory} />
         </LandingSection>
       )}

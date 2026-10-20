@@ -1,5 +1,7 @@
 import { useCallback, useState } from "react";
 import { useToast } from "./toast-context";
+import { useStrings } from "./i18n/use-strings";
+import { activeLocale } from "./i18n";
 
 // Native speech recognition is absent in Expo Go; callers hide voice UI when `available` is false
 let SpeechModule: typeof import("expo-speech-recognition").ExpoSpeechRecognitionModule | null = null;
@@ -18,6 +20,7 @@ try {
  */
 export function useVoiceInput(onPartial: (text: string) => void, onFinal: (text: string) => void) {
   const { show } = useToast();
+  const t = useStrings("search");
   const [listening, setListening] = useState(false);
 
   useSpeechEvent("start", () => setListening(true));
@@ -32,19 +35,20 @@ export function useVoiceInput(onPartial: (text: string) => void, onFinal: (text:
   });
   useSpeechEvent("error", (event) => {
     setListening(false);
-    if (event.error === "not-allowed") show("Microphone permission denied", "error");
-    else if (event.error === "no-speech") show("Didn't catch that — try again");
+    if (event.error === "not-allowed") show(t.micDenied, "error");
+    else if (event.error === "no-speech") show(t.didntCatch);
   });
 
   const start = useCallback(async () => {
     if (!SpeechModule) return;
     const { granted } = await SpeechModule.requestPermissionsAsync();
     if (!granted) {
-      show("Microphone permission denied", "error");
+      show(t.micDenied, "error");
       return;
     }
-    SpeechModule.start({ lang: "en-IN", interimResults: true, continuous: false });
-  }, [show]);
+    // Listens in the app language, so a Tamil shopper can speak Tamil; search matches Tamil product names
+    SpeechModule.start({ lang: activeLocale(), interimResults: true, continuous: false });
+  }, [show, t]);
 
   const stop = useCallback(() => SpeechModule?.stop(), []);
 

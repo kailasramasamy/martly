@@ -3,6 +3,8 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import type { UserMembership } from "../../lib/types";
+import { useStrings } from "../../lib/i18n/use-strings";
+import { formatDate } from "../../lib/i18n/format";
 
 const PLUS_GRADIENT = ["#134e4a", colors.primary] as const;
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -20,31 +22,32 @@ function Benefit({ icon, text }: { icon: keyof typeof Ionicons.glyphMap; text: s
 
 // Active membership: the Plus card plus what the member gets
 export function MemberCard({ membership }: { membership: UserMembership }) {
+  const t = useStrings("account").membership.member;
   const daysLeft = Math.max(0, Math.ceil((new Date(membership.endDate).getTime() - Date.now()) / DAY_MS));
-  const validUntil = new Date(membership.endDate).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+  const validUntil = formatDate(membership.endDate, { day: "numeric", month: "long", year: "numeric" });
   return (
     <>
       <LinearGradient colors={PLUS_GRADIENT} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.card}>
         <View style={styles.orb} />
         <View style={styles.badge}>
           <Ionicons name="diamond" size={14} color={colors.accentText} />
-          <Text style={styles.badgeText}>MART PLUS MEMBER</Text>
+          <Text style={styles.badgeText}>{t.badge}</Text>
         </View>
         <Text style={styles.plan}>{membership.plan.name}</Text>
-        <Text style={styles.valid}>Valid until {validUntil}</Text>
+        <Text style={styles.valid}>{t.validUntil(validUntil)}</Text>
         <View style={styles.daysChip}>
-          <Text style={styles.daysText}>{daysLeft} days left</Text>
+          <Text style={styles.daysText}>{t.daysLeft(daysLeft)}</Text>
         </View>
       </LinearGradient>
 
       <View style={styles.benefits}>
-        <Text style={styles.benefitsTitle}>Your benefits</Text>
-        {membership.plan.freeDelivery && <Benefit icon="bicycle-outline" text="Free delivery on all orders" />}
+        <Text style={styles.benefitsTitle}>{t.benefitsTitle}</Text>
+        {membership.plan.freeDelivery && <Benefit icon="bicycle-outline" text={t.freeDelivery} />}
         {membership.plan.loyaltyMultiplier > 1 && (
-          <Benefit icon="star-outline" text={`${membership.plan.loyaltyMultiplier}× loyalty points on every order`} />
+          <Benefit icon="star-outline" text={t.points(membership.plan.loyaltyMultiplier)} />
         )}
-        <Benefit icon="pricetag-outline" text="Exclusive member prices on select items" />
-        <Benefit icon="flash-outline" text="Priority order processing" />
+        <Benefit icon="pricetag-outline" text={t.prices} />
+        <Benefit icon="flash-outline" text={t.priority} />
       </View>
     </>
   );

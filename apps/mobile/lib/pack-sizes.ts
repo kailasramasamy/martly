@@ -1,5 +1,6 @@
 import type { StoreProduct } from "./types";
 import { effectivePrice } from "./group-variants";
+import { strings } from "./i18n";
 
 // Pack quantity in a base unit (ml or g), keyed by the API's display labels (formatUnitType)
 const BASE: Record<string, [factor: number, family: "L" | "kg"]> = {
@@ -27,5 +28,5 @@ export function packSaving(sp: StoreProduct, sizes: StoreProduct[]): string | nu
   const ref = perUnit(smallest);
   if (!own || !ref || own.unit !== ref.unit) return null;
   const saving = Math.round(ref.price - own.price);
-  return saving >= 1 ? `Saves ₹${saving}/${own.unit}` : null;
+  return saving >= 1 ? strings("catalog").saves(saving, own.unit) : null;
 }

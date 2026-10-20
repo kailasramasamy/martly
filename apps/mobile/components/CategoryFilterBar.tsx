@@ -1,6 +1,7 @@
 import { View, Text, TouchableOpacity, TextInput, StyleSheet, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useLanguage } from "../lib/language-context";
+import { useStrings } from "../lib/i18n/use-strings";
 import { colors } from "../constants/theme";
 
 export type PriceSort = "price_asc" | "price_desc";
@@ -26,10 +27,11 @@ interface CategoryFilterBarProps {
 }
 
 function SortChip({ sort, active, onPress }: { sort: PriceSort; active: boolean; onPress: () => void }) {
+  const t = useStrings("catalog");
   return (
     <TouchableOpacity style={[styles.chip, active && styles.chipActive]} onPress={onPress} activeOpacity={0.7}>
       <Ionicons name={sort === "price_asc" ? "arrow-up" : "arrow-down"} size={13} color={active ? "#fff" : "#64748b"} />
-      <Text style={[styles.chipText, active && styles.chipTextActive]}>Price</Text>
+      <Text style={[styles.chipText, active && styles.chipTextActive]}>{t.price}</Text>
     </TouchableOpacity>
   );
 }
@@ -37,6 +39,7 @@ function SortChip({ sort, active, onPress }: { sort: PriceSort; active: boolean;
 // Search box, subcategory pills and the brand / on-sale / price chips above a category's product grid
 export function CategoryFilterBar(props: CategoryFilterBarProps) {
   const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
   const { searchQuery, onSearchChange, pills, activePill, onPillSelect, sortBy, onSortChange } = props;
   const toggleSort = (sort: PriceSort) => onSortChange(sortBy === sort ? null : sort);
 
@@ -46,7 +49,7 @@ export function CategoryFilterBar(props: CategoryFilterBarProps) {
         <Ionicons name="search" size={16} color="#94a3b8" style={styles.searchIcon} />
         <TextInput
           style={styles.searchInput}
-          placeholder="Search products..."
+          placeholder={t.searchProducts}
           placeholderTextColor="#94a3b8"
           value={searchQuery}
           onChangeText={onSearchChange}
@@ -62,7 +65,7 @@ export function CategoryFilterBar(props: CategoryFilterBarProps) {
 
       {pills.length > 0 && (
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.pillScroll} contentContainerStyle={styles.bar}>
-          {[{ id: null, label: "All" }, ...pills.map((p) => ({ id: p.id, label: getLocalizedName(p) }))].map(({ id, label }) => {
+          {[{ id: null, label: t.all }, ...pills.map((p) => ({ id: p.id, label: getLocalizedName(p) }))].map(({ id, label }) => {
             const isActive = activePill === id;
             return (
               <TouchableOpacity
@@ -87,7 +90,7 @@ export function CategoryFilterBar(props: CategoryFilterBarProps) {
         )}
         <TouchableOpacity style={[styles.chip, props.onSale && styles.chipActive]} onPress={props.onToggleSale} activeOpacity={0.7}>
           <Ionicons name="pricetag" size={13} color={props.onSale ? "#fff" : "#64748b"} />
-          <Text style={[styles.chipText, props.onSale && styles.chipTextActive]}>On Sale</Text>
+          <Text style={[styles.chipText, props.onSale && styles.chipTextActive]}>{t.onSale}</Text>
         </TouchableOpacity>
         <SortChip sort="price_asc" active={sortBy === "price_asc"} onPress={() => toggleSort("price_asc")} />
         <SortChip sort="price_desc" active={sortBy === "price_desc"} onPress={() => toggleSort("price_desc")} />

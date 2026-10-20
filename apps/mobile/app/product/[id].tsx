@@ -26,6 +26,7 @@ import { useMembership, getBestPrice } from "../../lib/membership-context";
 import { useToast } from "../../lib/toast-context";
 import { useBasketMode } from "../../lib/basket-mode-context";
 import { useLanguage } from "../../lib/language-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ProductList } from "../../components/ProductList";
@@ -164,12 +165,13 @@ export default function ProductDetailScreen() {
   const { isMember } = useMembership();
   const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
   const toast = useToast();
+  const t = useStrings("catalog");
 
   const { getLocalizedName, getLocalizedSubtitle } = useLanguage();
   const navigation = useNavigation();
   const router = useRouter();
   const storeId = paramStoreId || selectedStore?.id;
-  const storeName = selectedStore?.name ?? "";
+  const cartStore = storeId ? { id: storeId, name: selectedStore?.name ?? "", translations: selectedStore?.translations } : null;
 
   const [product, setProduct] = useState<ProductDetail | null>(null);
   const [storeProducts, setStoreProducts] = useState<StoreProduct[]>([]);
@@ -351,11 +353,11 @@ export default function ProductDetailScreen() {
   }, [id, storeId]);
 
   const handleAddToCart = (sp: StoreProduct) => {
-    if (!storeId) return;
+    if (!cartStore) return;
 
     if (isBasketMode) {
       addBasketItem(sp.id);
-      toast.show("Added to tomorrow's basket", "success");
+      toast.show(t.addedToBasket, "success");
       return;
     }
 
@@ -371,12 +373,12 @@ export default function ProductDetailScreen() {
 
     if (cartStoreId && cartStoreId !== storeId) {
       setReplaceCartConfirm({
-        pending: () => addItem(storeId, storeName, item),
+        pending: () => addItem(cartStore, item),
       });
       return;
     }
 
-    addItem(storeId, storeName, item);
+    addItem(cartStore, item);
   };
 
   const effectiveUpdateQty = useCallback(
@@ -419,7 +421,7 @@ export default function ProductDetailScreen() {
   if (!product) {
     return (
       <View style={styles.center}>
-        <Text style={styles.emptyText}>Product not found</Text>
+        <Text style={styles.emptyText}>{t.product.notFound}</Text>
       </View>
     );
   }
@@ -428,7 +430,7 @@ export default function ProductDetailScreen() {
   const nutritionalEntries = nutritionalInfo ? Object.entries(nutritionalInfo) : [];
 
   return (
-    <ProductActionsProvider store={storeId ? { id: storeId, name: storeName } : null}>
+    <ProductActionsProvider store={cartStore}>
       <View style={styles.container}>
       <ScrollView keyboardDismissMode="on-drag" style={styles.scrollView}>
         {/* Image Gallery */}
@@ -451,7 +453,7 @@ export default function ProductDetailScreen() {
             {/* Wishlist Heart — top-right overlay */}
             <TouchableOpacity
               style={styles.wishlistOverlay}
-              onPress={() => requireSignIn(() => toggleWishlist(product.id), { title: "Sign in to save to your wishlist" })}
+              onPress={() => requireSignIn(() => toggleWishlist(product.id), { title: t.signInWishlist })}
               hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
             >
               <Ionicons
@@ -470,7 +472,7 @@ export default function ProductDetailScreen() {
           </View>
         ) : (
           <View style={[styles.heroImageWrap, styles.heroPlaceholder]}>
-            <Text style={styles.heroPlaceholderText}>No image</Text>
+            <Text style={styles.heroPlaceholderText}>{t.product.noImage}</Text>
           </View>
         )}
 
@@ -478,7 +480,7 @@ export default function ProductDetailScreen() {
         {storeProducts.length > 0 && (
           <View style={styles.unitSection}>
             {storeProducts.length > 1 && (
-              <Text style={styles.unitSectionTitle}>Select Unit</Text>
+              <Text style={styles.unitSectionTitle}>{t.product.selectUnit}</Text>
             )}
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.unitCardStrip}>
               {storeProducts.map((sp, idx) => {
@@ -506,9 +508,9 @@ export default function ProductDetailScreen() {
                       )}
                       <Text style={[styles.unitCardPrice, isOos && { color: colors.textSecondary }]}>{"\u20B9"}{displayPrice}</Text>
                       {sp.pricing?.memberPrice != null && sp.pricing.memberPrice < displayPrice && (
-                        <Text style={styles.unitCardMember}>{"\u20B9"}{sp.pricing.memberPrice} member</Text>
+                        <Text style={styles.unitCardMember}>{t.product.memberPrice(sp.pricing.memberPrice)}</Text>
                       )}
-                      {isOos && <Text style={styles.unitCardOosLabel}>Out of Stock</Text>}
+                      {isOos && <Text style={styles.unitCardOosLabel}>{t.outOfStockCaps}</Text>}
                     </View>
                   </TouchableOpacity>
                 );
@@ -549,20 +551,20 @@ export default function ProductDetailScreen() {
 
           {product.subcategory?.name && (
             <View style={styles.categoryChip}>
-              <Text style={styles.categoryChipText}>{product.subcategory.name}</Text>
+              <Text style={styles.categoryChipText}>{getLocalizedName(product.subcategory)}</Text>
             </View>
           )}
 
           {/* Description */}
           {product.description && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Description</Text>
+              <Text style={styles.sectionTitle}>{t.product.description}</Text>
               <Text style={styles.descText} numberOfLines={descExpanded ? undefined : 3}>
                 {product.description}
               </Text>
               {product.description.length > 120 && (
                 <TouchableOpacity onPress={() => setDescExpanded(!descExpanded)}>
-                  <Text style={styles.readMore}>{descExpanded ? "Show less" : "Read more"}</Text>
+                  <Text style={styles.readMore}>{descExpanded ? t.product.showLess : t.product.readMore}</Text>
                 </TouchableOpacity>
               )}
             </View>
@@ -590,8 +592,8 @@ export default function ProductDetailScreen() {
                 <Ionicons name="repeat" size={22} color="#fff" />
               </View>
               <View style={styles.subscribeBannerContent}>
-                <Text style={styles.subscribeBannerTitle}>Subscribe & Save</Text>
-                <Text style={styles.subscribeBannerDesc}>Get regular deliveries — daily, weekly, or monthly</Text>
+                <Text style={styles.subscribeBannerTitle}>{t.product.subscribeTitle}</Text>
+                <Text style={styles.subscribeBannerDesc}>{t.product.subscribeDesc}</Text>
               </View>
               <Ionicons name="chevron-forward" size={20} color={colors.primary} />
             </TouchableOpacity>
@@ -600,7 +602,7 @@ export default function ProductDetailScreen() {
           {/* Frequently Bought Together */}
           {frequentlyBought.length > 0 && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Frequently Bought Together</Text>
+              <Text style={styles.sectionTitle}>{t.product.frequentlyBought}</Text>
               <ProductList products={frequentlyBought} layout="rail" />
             </View>
           )}
@@ -608,7 +610,7 @@ export default function ProductDetailScreen() {
           {/* Substitute Suggestions */}
           {substitutes.length > 0 && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Similar Products</Text>
+              <Text style={styles.sectionTitle}>{t.product.similar}</Text>
               <ProductList products={substitutes} layout="rail" />
             </View>
           )}
@@ -616,14 +618,14 @@ export default function ProductDetailScreen() {
           {/* No store selected hint */}
           {!storeId && (
             <View style={styles.hintBox}>
-              <Text style={styles.hintText}>Select a store to see pricing and add to cart.</Text>
+              <Text style={styles.hintText}>{t.product.selectStoreHint}</Text>
             </View>
           )}
 
           {/* Nutritional Info */}
           {nutritionalEntries.length > 0 && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Nutritional Information</Text>
+              <Text style={styles.sectionTitle}>{t.product.nutrition}</Text>
               <View style={styles.table}>
                 {nutritionalEntries.map(([key, value]) => (
                   <View key={key} style={styles.tableRow}>
@@ -638,7 +640,7 @@ export default function ProductDetailScreen() {
           {/* Ingredients */}
           {product.ingredients && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Ingredients</Text>
+              <Text style={styles.sectionTitle}>{t.product.ingredients}</Text>
               <Text style={styles.bodyText}>{product.ingredients}</Text>
             </View>
           )}
@@ -646,7 +648,7 @@ export default function ProductDetailScreen() {
           {/* Allergens */}
           {product.allergens?.length > 0 && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Allergens</Text>
+              <Text style={styles.sectionTitle}>{t.product.allergens}</Text>
               <View style={styles.allergenBadge}>
                 <Text style={styles.allergenText}>{Array.isArray(product.allergens) ? product.allergens.join(", ") : product.allergens}</Text>
               </View>
@@ -656,7 +658,7 @@ export default function ProductDetailScreen() {
           {/* Storage Instructions */}
           {product.storageInstructions && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Storage</Text>
+              <Text style={styles.sectionTitle}>{t.product.storage}</Text>
               <Text style={styles.bodyText}>{product.storageInstructions}</Text>
             </View>
           )}
@@ -668,7 +670,7 @@ export default function ProductDetailScreen() {
             product.manufacturer ||
             product.countryOfOrigin) && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Regulatory Information</Text>
+              <Text style={styles.sectionTitle}>{t.product.regulatory}</Text>
 
               {product.regulatoryMarks?.length > 0 && (
                 <View style={styles.badgeRow}>
@@ -697,10 +699,10 @@ export default function ProductDetailScreen() {
               )}
 
               {product.manufacturer && (
-                <Text style={styles.metaText}>Manufacturer: {product.manufacturer}</Text>
+                <Text style={styles.metaText}>{t.product.manufacturer(product.manufacturer)}</Text>
               )}
               {product.countryOfOrigin && (
-                <Text style={styles.metaText}>Origin: {product.countryOfOrigin}</Text>
+                <Text style={styles.metaText}>{t.product.origin(product.countryOfOrigin)}</Text>
               )}
             </View>
           )}
@@ -708,12 +710,12 @@ export default function ProductDetailScreen() {
           {/* Reviews */}
           {(reviewSummary?.count ?? 0) > 0 && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Ratings & Reviews</Text>
+              <Text style={styles.sectionTitle}>{t.product.ratingsReviews}</Text>
               <View style={styles.ratingSummary}>
                 <View style={styles.ratingBig}>
                   <Ionicons name="star" size={24} color="#f59e0b" />
                   <Text style={styles.ratingBigText}>{reviewSummary!.average.toFixed(1)}</Text>
-                  <Text style={styles.ratingCount}>{reviewSummary!.count} review{reviewSummary!.count !== 1 ? "s" : ""}</Text>
+                  <Text style={styles.ratingCount}>{t.product.reviewCount(reviewSummary!.count)}</Text>
                 </View>
                 <View style={styles.ratingBars}>
                   {[5, 4, 3, 2, 1].map((star) => {
@@ -740,7 +742,7 @@ export default function ProductDetailScreen() {
                         <Ionicons key={s} name={s <= r.rating ? "star" : "star-outline"} size={12} color="#f59e0b" />
                       ))}
                     </View>
-                    {r.isVerified && <Text style={styles.verifiedBadge}>Verified</Text>}
+                    {r.isVerified && <Text style={styles.verifiedBadge}>{t.product.verified}</Text>}
                   </View>
                   {r.title && <Text style={styles.reviewTitle}>{r.title}</Text>}
                   {r.comment && <Text style={styles.reviewComment}>{r.comment}</Text>}
@@ -757,7 +759,7 @@ export default function ProductDetailScreen() {
                     <View style={styles.replyBox}>
                       <View style={styles.replyHeader}>
                         <Ionicons name="storefront-outline" size={12} color={colors.primary} />
-                        <Text style={styles.replyLabel}>Store Response</Text>
+                        <Text style={styles.replyLabel}>{t.product.storeResponse}</Text>
                       </View>
                       <Text style={styles.replyBody}>{r.reply.body}</Text>
                     </View>
@@ -767,24 +769,24 @@ export default function ProductDetailScreen() {
 
               <TouchableOpacity
                 style={styles.writeReviewBtn}
-                onPress={() => requireSignIn(() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } }), { title: "Sign in to write a review" })}
+                onPress={() => requireSignIn(() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } }), { title: t.signInReview })}
               >
                 <Ionicons name="create-outline" size={16} color={colors.primary} />
-                <Text style={styles.writeReviewText}>Write a Review</Text>
+                <Text style={styles.writeReviewText}>{t.product.writeReview}</Text>
               </TouchableOpacity>
             </View>
           )}
 
           {(reviewSummary?.count ?? 0) === 0 && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Reviews</Text>
-              <Text style={styles.descText}>No reviews yet. Be the first!</Text>
+              <Text style={styles.sectionTitle}>{t.product.reviews}</Text>
+              <Text style={styles.descText}>{t.product.noReviews}</Text>
               <TouchableOpacity
                 style={styles.writeReviewBtn}
-                onPress={() => requireSignIn(() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } }), { title: "Sign in to write a review" })}
+                onPress={() => requireSignIn(() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } }), { title: t.signInReview })}
               >
                 <Ionicons name="create-outline" size={16} color={colors.primary} />
-                <Text style={styles.writeReviewText}>Write a Review</Text>
+                <Text style={styles.writeReviewText}>{t.product.writeReview}</Text>
               </TouchableOpacity>
             </View>
           )}
@@ -792,7 +794,7 @@ export default function ProductDetailScreen() {
           {/* Related Products */}
           {relatedProducts.length > 0 && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Related Products</Text>
+              <Text style={styles.sectionTitle}>{t.product.related}</Text>
               <ProductList products={relatedProducts} layout="rail" />
             </View>
           )}
@@ -813,7 +815,7 @@ export default function ProductDetailScreen() {
           </View>
           {selectedSpOos ? (
             <View style={[styles.bottomBarAddBtn, styles.disabledBtn]}>
-              <Text style={[styles.bottomBarAddText, styles.disabledText]}>Out of Stock</Text>
+              <Text style={[styles.bottomBarAddText, styles.disabledText]}>{t.outOfStockCaps}</Text>
             </View>
           ) : selectedSpCartQty > 0 ? (
             <View style={styles.variantQtyStepper}>
@@ -835,7 +837,7 @@ export default function ProductDetailScreen() {
             </View>
           ) : (
             <TouchableOpacity style={styles.bottomBarAddBtn} onPress={() => handleAddToCart(selectedSp)}>
-              <Text style={styles.bottomBarAddText}>Add to Cart</Text>
+              <Text style={styles.bottomBarAddText}>{t.addToCart}</Text>
             </TouchableOpacity>
           )}
         </View>
@@ -856,11 +858,11 @@ export default function ProductDetailScreen() {
       />
       <ConfirmSheet
         visible={replaceCartConfirm !== null}
-        title="Replace Cart?"
-        message="Your cart has items from another store. Adding this item will replace your current cart."
+        title={t.replaceCartTitle}
+        message={t.replaceCartMessage}
         icon="cart-outline"
         iconColor="#f59e0b"
-        confirmLabel="Replace"
+        confirmLabel={t.replaceCartConfirm}
         onConfirm={() => {
           replaceCartConfirm?.pending();
           setReplaceCartConfirm(null);

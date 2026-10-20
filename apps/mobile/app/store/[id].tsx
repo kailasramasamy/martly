@@ -3,6 +3,8 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView } from 
 import { Ionicons } from "@expo/vector-icons";
 import { useLocalSearchParams } from "expo-router";
 import { api } from "../../lib/api";
+import { useLanguage } from "../../lib/language-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ProductList } from "../../components/ProductList";
@@ -14,6 +16,8 @@ import type { Store, StoreProduct } from "../../lib/types";
 
 export default function StoreDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
+  const { getLocalizedName } = useLanguage();
+  const t = useStrings("search");
   const [store, setStore] = useState<Store | null>(null);
   const [products, setProducts] = useState<StoreProduct[]>([]);
   const [loading, setLoading] = useState(true);
@@ -25,11 +29,11 @@ export default function StoreDetailScreen() {
     const catMap = new Map<string, string>();
     for (const p of products) {
       if (p.product.subcategory) {
-        catMap.set(p.product.subcategory.id, p.product.subcategory.name);
+        catMap.set(p.product.subcategory.id, getLocalizedName(p.product.subcategory));
       }
     }
     return Array.from(catMap.entries()).map(([cid, name]) => ({ id: cid, name }));
-  }, [products]);
+  }, [products, getLocalizedName]);
 
   const filteredProducts = useMemo(() => {
     let result = products;
@@ -78,11 +82,11 @@ export default function StoreDetailScreen() {
   }
 
   return (
-    <ProductActionsProvider store={store && id ? { id, name: store.name } : null}>
+    <ProductActionsProvider store={store}>
       <View style={styles.container}>
         {store && (
           <View style={styles.header}>
-            <Text style={styles.storeName}>{store.name}</Text>
+            <Text style={styles.storeName}>{getLocalizedName(store)}</Text>
             <Text style={styles.storeAddress}>{store.address}</Text>
           </View>
         )}
@@ -93,7 +97,7 @@ export default function StoreDetailScreen() {
               style={[styles.pill, !activeCategory && styles.pillActive]}
               onPress={() => setActiveCategory(null)}
             >
-              <Text style={[styles.pillText, !activeCategory && styles.pillTextActive]}>All</Text>
+              <Text style={[styles.pillText, !activeCategory && styles.pillTextActive]}>{t.all}</Text>
             </TouchableOpacity>
             {categories.map((cat) => (
               <TouchableOpacity
@@ -107,10 +111,10 @@ export default function StoreDetailScreen() {
           </ScrollView>
         )}
 
-        <Text style={styles.sectionTitle}>Products</Text>
+        <Text style={styles.sectionTitle}>{t.products}</Text>
         <TextInput
           style={styles.filterInput}
-          placeholder="Filter products..."
+          placeholder={t.filterProducts}
           value={filterText}
           onChangeText={setFilterText}
           autoCapitalize="none"
@@ -133,7 +137,7 @@ export default function StoreDetailScreen() {
           keyboardDismissMode="on-drag"
           keyboardShouldPersistTaps="handled"
           contentContainerStyle={styles.grid}
-          ListEmptyComponent={<Text style={styles.empty}>No products available</Text>}
+          ListEmptyComponent={<Text style={styles.empty}>{t.noProductsAvailable}</Text>}
         />
         <FloatingCart />
       </View>

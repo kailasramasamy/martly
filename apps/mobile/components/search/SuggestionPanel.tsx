@@ -1,6 +1,7 @@
 import { FlatList, Image, Text, TouchableOpacity, View, StyleSheet } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { SearchSuggestion } from "../../lib/types";
 
 const MAX_RECENT_MATCHES = 2;
@@ -50,9 +51,10 @@ function HighlightedText({ text, query }: { text: string; query: string }) {
 }
 
 function SuggestionRow({ row, query, onSelect, onFill }: { row: Row; query: string; onSelect: () => void; onFill: () => void }) {
+  const t = useStrings("search");
   return (
     <View style={styles.row}>
-      <TouchableOpacity style={styles.main} onPress={onSelect} accessibilityRole="button" accessibilityLabel={`Search ${row.text}`}>
+      <TouchableOpacity style={styles.main} onPress={onSelect} accessibilityRole="button" accessibilityLabel={t.searchItem(row.text)}>
         <View style={styles.thumb}>
           {row.imageUrl ? (
             <Image source={{ uri: row.imageUrl }} style={styles.thumbImage} resizeMode="contain" />
@@ -62,7 +64,7 @@ function SuggestionRow({ row, query, onSelect, onFill }: { row: Row; query: stri
         </View>
         <HighlightedText text={row.text} query={query} />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.fill} onPress={onFill} accessibilityRole="button" accessibilityLabel={`Edit search as ${row.text}`}>
+      <TouchableOpacity style={styles.fill} onPress={onFill} accessibilityRole="button" accessibilityLabel={t.editSearchAs(row.text)}>
         <MaterialCommunityIcons name="arrow-top-left" size={20} color="#94a3b8" />
       </TouchableOpacity>
     </View>

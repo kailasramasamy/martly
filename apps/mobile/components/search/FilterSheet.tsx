@@ -3,14 +3,10 @@ import { FlatList, Text, TouchableOpacity, View, StyleSheet } from "react-native
 import { Ionicons } from "@expo/vector-icons";
 import { BottomSheet } from "./BottomSheet";
 import { colors, fonts, spacing } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { SearchFacets } from "../../lib/types";
 
-const FOOD_TYPES = [
-  { id: "VEG", label: "Veg" },
-  { id: "NON_VEG", label: "Non-veg" },
-  { id: "VEGAN", label: "Vegan" },
-  { id: "EGG", label: "Egg" },
-];
+const FOOD_TYPES = ["VEG", "NON_VEG", "VEGAN", "EGG"] as const;
 
 export interface FilterSelection {
   brandIds: string[];
@@ -28,20 +24,21 @@ interface FilterSheetProps {
 }
 
 function FoodTypeChips({ selected, onChange }: { selected: string | null; onChange: (id: string | null) => void }) {
+  const t = useStrings("search");
   return (
     <View>
-      <Text style={styles.section}>Food type</Text>
+      <Text style={styles.section}>{t.foodType}</Text>
       <View style={styles.chips}>
         {FOOD_TYPES.map((f) => {
-          const active = selected === f.id;
+          const active = selected === f;
           return (
             <TouchableOpacity
-              key={f.id}
+              key={f}
               style={[styles.chip, active && styles.chipActive]}
-              onPress={() => onChange(active ? null : f.id)}
+              onPress={() => onChange(active ? null : f)}
               accessibilityState={{ selected: active }}
             >
-              <Text style={[styles.chipText, active && styles.chipTextActive]}>{f.label}</Text>
+              <Text style={[styles.chipText, active && styles.chipTextActive]}>{t.foodTypes[f]}</Text>
             </TouchableOpacity>
           );
         })}
@@ -51,6 +48,7 @@ function FoodTypeChips({ selected, onChange }: { selected: string | null; onChan
 }
 
 export function FilterSheet({ visible, brandsOnly = false, brands, value, onApply, onClose }: FilterSheetProps) {
+  const t = useStrings("search");
   const [draft, setDraft] = useState(value);
   useEffect(() => { if (visible) setDraft(value); }, [visible]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -60,20 +58,20 @@ export function FilterSheet({ visible, brandsOnly = false, brands, value, onAppl
   const footer = (
     <View style={styles.footer}>
       <TouchableOpacity style={styles.clearBtn} onPress={() => setDraft((d) => ({ brandIds: [], foodType: brandsOnly ? d.foodType : null }))}>
-        <Text style={styles.clearText}>Clear all</Text>
+        <Text style={styles.clearText}>{t.clearAll}</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.applyBtn} onPress={() => { onApply(draft); onClose(); }}>
-        <Text style={styles.applyText}>Apply</Text>
+        <Text style={styles.applyText}>{t.apply}</Text>
       </TouchableOpacity>
     </View>
   );
 
   return (
-    <BottomSheet flush visible={visible} title={brandsOnly ? "Brand" : "Filters"} onClose={onClose} footer={footer}>
+    <BottomSheet flush visible={visible} title={brandsOnly ? t.brand : t.filters} onClose={onClose} footer={footer}>
       <FlatList keyboardDismissMode="on-drag"
         data={brands}
         keyExtractor={(b) => b.id}
-        ListHeaderComponent={brands.length > 0 && !brandsOnly ? <Text style={styles.section}>Brands</Text> : null}
+        ListHeaderComponent={brands.length > 0 && !brandsOnly ? <Text style={styles.section}>{t.brands}</Text> : null}
         ListFooterComponent={brandsOnly ? null : <FoodTypeChips selected={draft.foodType} onChange={(foodType) => setDraft((d) => ({ ...d, foodType }))} />}
         renderItem={({ item }) => {
           const active = draft.brandIds.includes(item.id);

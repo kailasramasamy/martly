@@ -4,12 +4,13 @@ import { Ionicons } from "@expo/vector-icons";
 import { fonts, spacing } from "../../../constants/theme";
 import { ProductList } from "../../ProductList";
 import { useLanguage } from "../../../lib/language-context";
+import { useStrings } from "../../../lib/i18n/use-strings";
 import type { LandingCollection } from "../../../lib/types";
 
 // Festivals run warm (diya amber → marigold), seasons cool; text colours keep 4.5:1 on each tint
 const THEMES = {
-  OCCASION: { gradient: ["#fff7ed", "#ffedd5"] as const, accent: "#c2410c", ink: "#431407", kicker: "Festive picks", icon: "sparkles" as const },
-  SEASON: { gradient: ["#f0fdfa", "#e0f2fe"] as const, accent: "#0f766e", ink: "#083344", kicker: "In season", icon: "leaf" as const },
+  OCCASION: { gradient: ["#fff7ed", "#ffedd5"] as const, accent: "#c2410c", ink: "#431407", kicker: "festivePicks" as const, icon: "sparkles" as const },
+  SEASON: { gradient: ["#f0fdfa", "#e0f2fe"] as const, accent: "#0f766e", ink: "#083344", kicker: "inSeason" as const, icon: "leaf" as const },
 };
 type Theme = (typeof THEMES)[keyof typeof THEMES];
 
@@ -19,10 +20,11 @@ interface OccasionSpotlightProps {
 }
 
 function Kicker({ theme, onPhoto }: { theme: Theme; onPhoto: boolean }) {
+  const t = useStrings("search");
   return (
     <View style={[styles.badge, onPhoto ? styles.badgePhoto : { borderColor: theme.accent }]}>
       <Ionicons name={theme.icon} size={12} color={theme.accent} />
-      <Text style={[styles.kicker, { color: theme.accent }]}>{theme.kicker.toUpperCase()}</Text>
+      <Text style={[styles.kicker, { color: theme.accent }]}>{t[theme.kicker].toUpperCase()}</Text>
     </View>
   );
 }

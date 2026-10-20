@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Animated, Easing, Text, View, StyleSheet } from "react-native";
 import { colors, fonts, spacing } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 const DOT_COUNT = 3;
 const BOUNCE_MS = 320;
@@ -35,12 +36,13 @@ function BouncingDots() {
 
 // Covers stale results while a tab/filter change refetches
 export function SearchLoadingOverlay({ label, top }: { label: string | null; top: number }) {
+  const t = useStrings("search");
   return (
-    <View style={[styles.overlay, { paddingTop: top + 64 }]} pointerEvents="auto" accessibilityRole="progressbar" accessibilityLabel="Loading products">
+    <View style={[styles.overlay, { paddingTop: top + 64 }]} pointerEvents="auto" accessibilityRole="progressbar" accessibilityLabel={t.loadingProducts}>
       <View style={styles.loaderCard}>
         <BouncingDots />
         <Text style={styles.loaderText} numberOfLines={1}>
-          {label ? <>Finding <Text style={styles.loaderBold}>{label}</Text>{"…"}</> : "Updating results…"}
+          {label ? <>{t.finding}<Text style={styles.loaderBold}>{label}</Text>{t.findingAfter}</> : t.updatingResults}
         </Text>
       </View>
     </View>

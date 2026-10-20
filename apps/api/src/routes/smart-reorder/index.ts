@@ -85,6 +85,7 @@ export async function smartReorderRoutes(app: FastifyInstance) {
           product: {
             id: sp.product.id,
             name: sp.product.name,
+            translations: sp.product.translations,
             description: sp.product.description,
             imageUrl: sp.product.imageUrl,
             brand: sp.product.brand,

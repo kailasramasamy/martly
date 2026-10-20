@@ -5,6 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import type { DirectoryBrand } from "@martly/shared/types";
 import { colors, fonts } from "../../constants/theme";
 import { brandDisplayName, brandTheme } from "../../lib/brand-strip";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 interface HeroProps {
   storeName?: string;
@@ -19,31 +20,33 @@ export const HERO_TOP = "#0f766e";
 // Teal masthead with an amber accent rule, a giant "BRANDS" watermark and the search field.
 // It starts below the status bar; the screen fills the status bar with HERO_TOP so the two read as one
 export function BrandsHero({ storeName, brandCount, categoryCount, query, onQuery }: HeroProps) {
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   return (
     <LinearGradient colors={[HERO_TOP, "#134e4a"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.hero}>
       <View style={[styles.orb, styles.orbLarge]} />
       <View style={[styles.orb, styles.orbAmber]} />
-      <Text style={styles.watermark} numberOfLines={1}>BRANDS</Text>
-      <Pressable style={styles.back} onPress={() => router.back()} hitSlop={8} accessibilityLabel="Back">
+      <Text style={styles.watermark} numberOfLines={1}>{t.brands.watermark}</Text>
+      <Pressable style={styles.back} onPress={() => router.back()} hitSlop={8} accessibilityLabel={tc.back}>
         <Ionicons name="chevron-back" size={22} color="#fff" />
       </Pressable>
-      <Text style={styles.eyebrow}>{storeName ? `AT ${storeName.toUpperCase()}` : "ALL BRANDS"}</Text>
-      <Text style={styles.title}>Shop by brand</Text>
+      <Text style={styles.eyebrow}>{storeName ? t.brands.eyebrowAt(storeName) : t.brands.eyebrowAll}</Text>
+      <Text style={styles.title}>{t.brands.title}</Text>
       <View style={styles.rule} />
-      <Text style={styles.meta}>{brandCount} brands across {categoryCount} categories</Text>
+      <Text style={styles.meta}>{t.brands.meta(brandCount, categoryCount)}</Text>
       <View style={styles.search}>
         <Ionicons name="search" size={18} color={colors.textSecondary} />
         <TextInput
           value={query}
           onChangeText={onQuery}
-          placeholder="Search a brand"
+          placeholder={t.brands.search}
           placeholderTextColor="#94a3b8"
           style={styles.searchInput}
           returnKeyType="search"
           autoCorrect={false}
         />
         {query.length > 0 && (
-          <Pressable onPress={() => onQuery("")} hitSlop={10} accessibilityLabel="Clear search">
+          <Pressable onPress={() => onQuery("")} hitSlop={10} accessibilityLabel={t.clearSearch}>
             <Ionicons name="close-circle" size={18} color="#94a3b8" />
           </Pressable>
         )}
@@ -53,10 +56,11 @@ export function BrandsHero({ storeName, brandCount, categoryCount, query, onQuer
 }
 
 function FeaturedCard({ brand }: { brand: DirectoryBrand }) {
+  const t = useStrings("catalog");
   const { base, dark, accent } = brandTheme(brand);
   const name = brandDisplayName(brand.name);
   return (
-    <Pressable onPress={() => router.push(`/brand/${brand.id}`)} accessibilityRole="button" accessibilityLabel={`Visit ${name} store`}>
+    <Pressable onPress={() => router.push(`/brand/${brand.id}`)} accessibilityRole="button" accessibilityLabel={t.brands.visitLabel(name)}>
       {({ pressed }) => (
         <LinearGradient colors={[base, dark]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={[styles.card, brand.themeColorSecondary && { borderBottomWidth: 4, borderBottomColor: accent }, pressed && styles.pressed]}>
           <View style={[styles.orb, styles.cardOrb]} />
@@ -67,10 +71,10 @@ function FeaturedCard({ brand }: { brand: DirectoryBrand }) {
           <View style={styles.cardBottom}>
             <View style={styles.cardText}>
               <Text style={styles.cardName} numberOfLines={1}>{name}</Text>
-              <Text style={styles.cardMeta}>{brand.productCount} products</Text>
+              <Text style={styles.cardMeta}>{t.brands.productCount(brand.productCount)}</Text>
             </View>
             <View style={styles.visit}>
-              <Text style={[styles.visitText, { color: base }]}>Visit</Text>
+              <Text style={[styles.visitText, { color: base }]}>{t.brands.visit}</Text>
               <Ionicons name="arrow-forward" size={13} color={base} />
             </View>
           </View>
@@ -82,12 +86,13 @@ function FeaturedCard({ brand }: { brand: DirectoryBrand }) {
 
 // "Brand stores" carousel: brands with their own store get a full-colour card
 export function FeaturedBrands({ brands }: { brands: DirectoryBrand[] }) {
+  const t = useStrings("catalog");
   if (brands.length === 0) return null;
   return (
     <View style={styles.featured}>
       <View style={styles.featuredHead}>
-        <Text style={styles.featuredTitle}>Brand stores</Text>
-        <Text style={styles.featuredSub}>Their full range, in one place</Text>
+        <Text style={styles.featuredTitle}>{t.brands.featuredTitle}</Text>
+        <Text style={styles.featuredSub}>{t.brands.featuredSub}</Text>
       </View>
       <FlatList
         horizontal

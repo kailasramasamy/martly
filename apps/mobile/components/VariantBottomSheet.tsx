@@ -3,6 +3,9 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../constants/theme";
+import { useLanguage } from "../lib/language-context";
+import { useStrings } from "../lib/i18n/use-strings";
+import { strings } from "../lib/i18n";
 import type { StoreProduct } from "../lib/types";
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("window");
@@ -32,7 +35,7 @@ function getPrices(sp: StoreProduct, isMember?: boolean) {
   const memberPrice = sp.pricing?.memberPrice;
   const memberCheaper = memberPrice != null && memberPrice < displayPrice;
   const discountLabel = hasDiscount
-    ? sp.pricing!.discountType === "PERCENTAGE" ? `${sp.pricing!.discountValue}% OFF` : `\u20B9${sp.pricing!.discountValue} OFF`
+    ? sp.pricing!.discountType === "PERCENTAGE" ? strings("common").percentOff(sp.pricing!.discountValue!) : strings("catalog").flatOff(sp.pricing!.discountValue!)
     : null;
   return {
     shown: isMember && memberCheaper ? memberPrice! : displayPrice,
@@ -73,20 +76,21 @@ interface ControlProps {
 
 // Mirrors the product card: outlined ADD, solid stepper once in the cart
 function VariantControl({ sp, qty, isOutOfStock, mode, onAddToCart, onUpdateQuantity, onSelect }: ControlProps) {
+  const t = useStrings("catalog");
   if (mode === "cart" && qty > 0) {
     return (
       <View style={styles.stepper}>
-        <TouchableOpacity style={styles.stepBtn} onPress={() => onUpdateQuantity(sp.id, qty - 1)} hitSlop={HIT_SLOP} accessibilityLabel="Remove one">
+        <TouchableOpacity style={styles.stepBtn} onPress={() => onUpdateQuantity(sp.id, qty - 1)} hitSlop={HIT_SLOP} accessibilityLabel={t.removeOne}>
           <Ionicons name="remove" size={16} color="#fff" />
         </TouchableOpacity>
         <Text style={styles.stepText}>{qty}</Text>
-        <TouchableOpacity style={styles.stepBtn} onPress={() => onAddToCart(sp)} hitSlop={HIT_SLOP} accessibilityLabel="Add one more">
+        <TouchableOpacity style={styles.stepBtn} onPress={() => onAddToCart(sp)} hitSlop={HIT_SLOP} accessibilityLabel={t.addOneMore}>
           <Ionicons name="add" size={16} color="#fff" />
         </TouchableOpacity>
       </View>
     );
   }
-  const label = isOutOfStock ? "N/A" : mode === "subscribe" ? "SUBSCRIBE" : "ADD";
+  const label = isOutOfStock ? t.notAvailable : mode === "subscribe" ? t.subscribeBtn : t.addBtn;
   return (
     <TouchableOpacity
       style={[styles.addBtn, isOutOfStock && styles.addBtnDisabled]}
@@ -102,6 +106,8 @@ function VariantControl({ sp, qty, isOutOfStock, mode, onAddToCart, onUpdateQuan
 
 // One size per row: thumbnail, size with price and per-unit price, then the ADD control
 function VariantRow({ sp, qty, isMember, ...controlProps }: Omit<ControlProps, "isOutOfStock"> & { isMember?: boolean }) {
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   const { shown, struck, plusHint, discountLabel } = getPrices(sp, isMember);
   const available = sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0));
   const isOutOfStock = available <= 0;
@@ -120,8 +126,8 @@ function VariantRow({ sp, qty, isMember, ...controlProps }: Omit<ControlProps, "
           {discountLabel && <Text style={styles.discount}>{discountLabel}</Text>}
         </View>
         {unitPrice && <Text style={styles.unitPrice}>{unitPrice}</Text>}
-        {plusHint != null && <Text style={styles.plusHint}>{"\u20B9"}{plusHint.toFixed(0)} with Plus</Text>}
-        {isOutOfStock && <Text style={styles.outOfStock}>Out of stock</Text>}
+        {plusHint != null && <Text style={styles.plusHint}>{t.withPlus(plusHint.toFixed(0))}</Text>}
+        {isOutOfStock && <Text style={styles.outOfStock}>{tc.outOfStock}</Text>}
       </View>
       <VariantControl sp={sp} qty={qty} isOutOfStock={isOutOfStock} {...controlProps} />
     </View>
@@ -130,21 +136,23 @@ function VariantRow({ sp, qty, isMember, ...controlProps }: Omit<ControlProps, "
 
 // Shown once any size is in the cart: the two natural next steps, keep browsing or check out
 function SheetFooter({ count, total, onDone }: { count: number; total: number; onDone: () => void }) {
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   return (
     <View style={styles.footer}>
       <View style={styles.footerSummary}>
-        <Text style={styles.footerCount}>{count} {count === 1 ? "item" : "items"}</Text>
+        <Text style={styles.footerCount}>{tc.items(count)}</Text>
         <Text style={styles.footerTotal}>{"\u20B9"}{total.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</Text>
       </View>
       <TouchableOpacity style={styles.doneBtn} onPress={onDone} activeOpacity={0.8}>
-        <Text style={styles.doneText}>Done</Text>
+        <Text style={styles.doneText}>{tc.done}</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.viewCartBtn}
         onPress={() => { onDone(); router.push("/(tabs)/cart"); }}
         activeOpacity={0.85}
       >
-        <Text style={styles.viewCartText}>View cart</Text>
+        <Text style={styles.viewCartText}>{t.viewCart}</Text>
         <Ionicons name="arrow-forward" size={16} color="#fff" />
       </TouchableOpacity>
     </View>
@@ -155,6 +163,9 @@ export function VariantBottomSheet({
   visible, onClose, variants, onAddToCart, onUpdateQuantity, cartQuantityMap, isMember, mode = "cart", onSelect, children,
 }: VariantBottomSheetProps) {
   const insets = useSafeAreaInsets();
+  const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   if (!visible || variants.length === 0) return null;
 
   const inCart = variants.map((sp) => ({ qty: cartQuantityMap.get(sp.id) ?? 0, price: getPrices(sp, isMember).shown }));
@@ -169,11 +180,11 @@ export function VariantBottomSheet({
           <View style={styles.backdrop} />
         </TouchableWithoutFeedback>
         <View style={[styles.sheet, { paddingBottom: spacing.md + Math.max(insets.bottom, spacing.md) }]}>
-          <TouchableOpacity style={styles.closeBtn} onPress={onClose} hitSlop={8} accessibilityLabel="Close">
+          <TouchableOpacity style={styles.closeBtn} onPress={onClose} hitSlop={8} accessibilityLabel={tc.close}>
             <Ionicons name="close" size={22} color="#fff" />
           </TouchableOpacity>
-          <Text style={styles.title} numberOfLines={2}>{variants[0].product.name}</Text>
-          {mode === "subscribe" && <Text style={styles.subtitle}>Choose a size to subscribe</Text>}
+          <Text style={styles.title} numberOfLines={2}>{getLocalizedName(variants[0].product)}</Text>
+          {mode === "subscribe" && <Text style={styles.subtitle}>{t.chooseSizeSubscribe}</Text>}
           <ScrollView keyboardDismissMode="on-drag" bounces={false} style={styles.scroll} contentContainerStyle={styles.list}>
             {variants.map((sp) => (
               <VariantRow

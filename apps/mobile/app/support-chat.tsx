@@ -16,8 +16,11 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
+import { useLanguage } from "../lib/language-context";
 import { colors, fonts } from "../constants/theme";
 import { withSignIn } from "../components/SignInPrompt";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
@@ -64,9 +67,12 @@ function TypingDots() {
 
 // ── Main Screen ─────────────────────────────────────
 function SupportChatScreen() {
+  const t = useStrings("subscriptions");
+  const common = useStrings("common");
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { selectedStore } = useStore();
+  const { getLocalizedName } = useLanguage();
   const { orderId } = useLocalSearchParams<{ orderId?: string }>();
 
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -133,7 +139,7 @@ function SupportChatScreen() {
           newMessages.push({
             id: `ticket-${Date.now()}`,
             role: "ticket",
-            content: "Support ticket created successfully. Our team will review your issue and get back to you.",
+            content: t.support.ticketCreatedMessage,
             ticketId: res.data.ticketId,
           });
         }
@@ -145,14 +151,14 @@ function SupportChatScreen() {
         const errorMsg: ChatMessage = {
           id: `error-${Date.now()}`,
           role: "error",
-          content: "Something went wrong. Please try again.",
+          content: t.ai.error,
         };
         setMessages((prev) => prev.filter((m) => m.role !== "loading").concat(errorMsg));
       } finally {
         setSending(false);
       }
     },
-    [selectedStore, sending, apiMessages, orderId],
+    [selectedStore, sending, apiMessages, orderId, t],
   );
 
   const handleRetry = useCallback(() => {
@@ -165,7 +171,7 @@ function SupportChatScreen() {
   const invertedMessages = useMemo(() => [...messages].reverse(), [messages]);
 
   const welcomeContent = selectedStore
-    ? `Hi! I'm here to help with any issues \u2014 orders, payments, deliveries, or anything else. How can I assist you today?`
+    ? t.support.welcome
     : "";
 
   const renderMessage = useCallback(
@@ -203,7 +209,7 @@ function SupportChatScreen() {
               <Text style={s.errorText}>{item.content}</Text>
               <TouchableOpacity style={s.retryBtn} onPress={handleRetry} activeOpacity={0.7}>
                 <Ionicons name="refresh" size={14} color={colors.primary} />
-                <Text style={s.retryBtnText}>Retry</Text>
+                <Text style={s.retryBtnText}>{common.retry}</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -217,15 +223,15 @@ function SupportChatScreen() {
               <View style={s.ticketIconCircle}>
                 <Ionicons name="checkmark-circle" size={24} color="#16a34a" />
               </View>
-              <Text style={s.ticketTitle}>Ticket Created</Text>
+              <Text style={s.ticketTitle}>{t.support.ticketCreated}</Text>
               <Text style={s.ticketText}>{item.content}</Text>
-              <Text style={s.ticketId}>Ticket ID: {item.ticketId?.slice(0, 8)}...</Text>
+              <Text style={s.ticketId}>{t.support.ticketId(`${item.ticketId?.slice(0, 8)}...`)}</Text>
               <TouchableOpacity
                 style={s.viewTicketsLink}
                 onPress={() => router.push("/support-tickets")}
                 activeOpacity={0.7}
               >
-                <Text style={s.viewTicketsLinkText}>View My Tickets</Text>
+                <Text style={s.viewTicketsLinkText}>{t.support.viewTickets}</Text>
                 <Ionicons name="arrow-forward" size={14} color={colors.primary} />
               </TouchableOpacity>
             </View>
@@ -245,10 +251,9 @@ function SupportChatScreen() {
         </View>
       );
     },
-    [handleRetry],
+    [handleRetry, t, common],
   );
 
-  const suggestions = ["Where's my order?", "Payment issue", "Talk to a human"];
   const hasConversation = messages.length > 0;
 
   if (!selectedStore) {
@@ -258,13 +263,13 @@ function SupportChatScreen() {
           <View style={s.emptyIconCircle}>
             <Ionicons name="storefront-outline" size={40} color={colors.primary} />
           </View>
-          <Text style={s.emptyTitle}>No store selected</Text>
+          <Text style={s.emptyTitle}>{t.ai.noStore}</Text>
           <Text style={s.emptySubtitle}>
-            Please select a store from the home screen to get support.
+            {t.support.noStoreHint}
           </Text>
           <TouchableOpacity style={s.emptyBtn} onPress={() => router.back()} activeOpacity={0.7}>
             <Ionicons name="arrow-back" size={18} color="#fff" />
-            <Text style={s.emptyBtnText}>Go Back</Text>
+            <Text style={s.emptyBtnText}>{t.ai.goBack}</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -282,9 +287,9 @@ function SupportChatScreen() {
         <View style={s.headerCenter}>
           <View style={s.headerTitleRow}>
             <Ionicons name="headset" size={16} color={colors.primary} />
-            <Text style={s.headerTitle}>Martly Support</Text>
+            <Text style={s.headerTitle}>{t.support.title}</Text>
           </View>
-          <Text style={s.headerSubtitle} numberOfLines={1}>{selectedStore.name}</Text>
+          <Text style={s.headerSubtitle} numberOfLines={1}>{getLocalizedName(selectedStore)}</Text>
         </View>
 
         <View style={{ width: 40 }} />
@@ -310,13 +315,13 @@ function SupportChatScreen() {
               <View style={s.welcomeIconCircle}>
                 <Ionicons name="headset" size={24} color={colors.primary} />
               </View>
-              <Text style={s.welcomeTitle}>Martly Support</Text>
+              <Text style={s.welcomeTitle}>{t.support.title}</Text>
               <Text style={s.welcomeText}>{welcomeContent}</Text>
               {orderId && (
                 <View style={s.orderBanner}>
                   <Ionicons name="receipt-outline" size={16} color={colors.primary} />
                   <Text style={s.orderBannerText}>
-                    Asking about Order #{orderId.slice(0, 8)}...
+                    {t.support.askingAbout(`${orderId.slice(0, 8)}...`)}
                   </Text>
                 </View>
               )}
@@ -328,7 +333,7 @@ function SupportChatScreen() {
         <View style={[s.inputArea, { paddingBottom: Math.max(insets.bottom, 12) }]}>
           {!hasConversation && (
             <View style={s.suggestionsRow}>
-              {suggestions.map((text) => (
+              {t.support.suggestions.map((text) => (
                 <TouchableOpacity
                   key={text}
                   style={s.suggestionChip}
@@ -344,7 +349,7 @@ function SupportChatScreen() {
           <View style={s.inputRow}>
             <TextInput
               style={s.textInput}
-              placeholder="Describe your issue..."
+              placeholder={t.support.placeholder}
               placeholderTextColor="#94a3b8"
               value={input}
               onChangeText={setInput}
@@ -737,4 +742,7 @@ const s = StyleSheet.create({
   },
 });
 
-export default withSignIn(SupportChatScreen, { icon: "chatbubbles-outline", title: "Help & support", message: "Sign in to chat with us about your orders." });
+export default withSignIn(SupportChatScreen, "chatbubbles-outline", () => ({
+  title: strings("subscriptions").support.signInTitle,
+  message: strings("subscriptions").support.signInMessage,
+}));

@@ -3,6 +3,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
 import { getCategoryIcon } from "../constants/category-icons";
 import { useLanguage } from "../lib/language-context";
+import { useStrings } from "../lib/i18n/use-strings";
 
 const SIDEBAR_WIDTH = Math.round(Dimensions.get("window").width * 0.21);
 
@@ -37,9 +38,10 @@ function SidebarItem({ label, active, onPress, children }: { label: string; acti
 /** Instamart-style subcategory rail: floating images, a tinted block behind the active one. */
 export function CategorySidebar({ subcategories, activeId, onSelect }: Props) {
   const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
   return (
     <ScrollView keyboardDismissMode="on-drag" style={styles.sidebar} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-      <SidebarItem label="All" active={!activeId} onPress={() => onSelect(null)}>
+      <SidebarItem label={t.all} active={!activeId} onPress={() => onSelect(null)}>
         <Ionicons name="grid-outline" size={26} color={!activeId ? colors.primary : "#94a3b8"} />
       </SidebarItem>
       {subcategories.map((sub) => (

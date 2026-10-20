@@ -13,6 +13,11 @@ import { api } from "../lib/api";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import { OrderCardSkeleton } from "../components/SkeletonLoader";
 import { withSignIn } from "../components/SignInPrompt";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
+import { useLanguage } from "../lib/language-context";
+import type { StoreLabel } from "../lib/types";
+import { formatDate } from "../lib/i18n/format";
 
 interface SupportTicket {
   id: string;
@@ -20,17 +25,19 @@ interface SupportTicket {
   status: "OPEN" | "RESOLVED" | "CLOSED";
   messages: { role: string; content: string; timestamp: string }[];
   createdAt: string;
-  store: { id: string; name: string } | null;
+  store: StoreLabel | null;
   order: { id: string; status: string } | null;
 }
 
-const TICKET_STATUS_CONFIG: Record<string, { color: string; bg: string; label: string }> = {
-  OPEN: { color: "#92400e", bg: "#fef3c7", label: "Open" },
-  RESOLVED: { color: "#166534", bg: "#dcfce7", label: "Resolved" },
-  CLOSED: { color: "#475569", bg: "#f1f5f9", label: "Closed" },
+const TICKET_STATUS_CONFIG: Record<string, { color: string; bg: string }> = {
+  OPEN: { color: "#92400e", bg: "#fef3c7" },
+  RESOLVED: { color: "#166534", bg: "#dcfce7" },
+  CLOSED: { color: "#475569", bg: "#f1f5f9" },
 };
 
 function SupportTicketsScreen() {
+  const t = useStrings("subscriptions");
+  const { getLocalizedName } = useLanguage();
   const router = useRouter();
   const [tickets, setTickets] = useState<SupportTicket[]>([]);
   const [loading, setLoading] = useState(true);
@@ -83,15 +90,15 @@ function SupportTicketsScreen() {
             <View style={styles.emptyIconCircle}>
               <Ionicons name="chatbubbles-outline" size={36} color="#94a3b8" />
             </View>
-            <Text style={styles.emptyTitle}>No tickets yet</Text>
+            <Text style={styles.emptyTitle}>{t.tickets.emptyTitle}</Text>
             <Text style={styles.emptySubtitle}>
-              When you contact support, your tickets will appear here.
+              {t.tickets.emptySubtitle}
             </Text>
           </View>
         }
         renderItem={({ item }) => {
           const cfg = TICKET_STATUS_CONFIG[item.status] ?? TICKET_STATUS_CONFIG.OPEN;
-          const date = new Date(item.createdAt).toLocaleDateString();
+          const date = formatDate(item.createdAt, { year: "numeric", month: "numeric", day: "numeric" });
           const messageCount = Array.isArray(item.messages) ? item.messages.length : 0;
 
           return (
@@ -103,7 +110,7 @@ function SupportTicketsScreen() {
               <View style={styles.cardHeader}>
                 <Text style={styles.subject} numberOfLines={1}>{item.subject}</Text>
                 <View style={[styles.badge, { backgroundColor: cfg.bg }]}>
-                  <Text style={[styles.badgeText, { color: cfg.color }]}>{cfg.label}</Text>
+                  <Text style={[styles.badgeText, { color: cfg.color }]}>{t.tickets.status[item.status]}</Text>
                 </View>
               </View>
 
@@ -111,13 +118,13 @@ function SupportTicketsScreen() {
                 {item.store && (
                   <View style={styles.metaRow}>
                     <Ionicons name="storefront-outline" size={13} color={colors.textSecondary} />
-                    <Text style={styles.metaText}>{item.store.name}</Text>
+                    <Text style={styles.metaText}>{getLocalizedName(item.store)}</Text>
                   </View>
                 )}
                 {item.order && (
                   <View style={styles.metaRow}>
                     <Ionicons name="receipt-outline" size={13} color={colors.textSecondary} />
-                    <Text style={styles.metaText}>Order #{item.order.id.slice(0, 8)}</Text>
+                    <Text style={styles.metaText}>{t.tickets.order(item.order.id.slice(0, 8))}</Text>
                   </View>
                 )}
               </View>
@@ -127,7 +134,7 @@ function SupportTicketsScreen() {
                 <View style={styles.messageCountRow}>
                   <Ionicons name="chatbubble-outline" size={12} color={colors.textSecondary} />
                   <Text style={styles.messageCount}>
-                    {messageCount} message{messageCount !== 1 ? "s" : ""}
+                    {t.tickets.messages(messageCount)}
                   </Text>
                 </View>
               </View>
@@ -241,4 +248,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(SupportTicketsScreen, { icon: "chatbubbles-outline", title: "Your support tickets", message: "Sign in to see your support requests." });
+export default withSignIn(SupportTicketsScreen, "chatbubbles-outline", () => ({
+  title: strings("subscriptions").tickets.signInTitle,
+  message: strings("subscriptions").tickets.signInMessage,
+}));

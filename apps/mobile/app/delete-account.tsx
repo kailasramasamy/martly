@@ -14,6 +14,8 @@ import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { DeletionSummary } from "../components/account/DeletionSummary";
 import { colors, fonts } from "../constants/theme";
 import { withSignIn } from "../components/SignInPrompt";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
 
 type Step = "review" | "confirm";
 
@@ -24,6 +26,7 @@ function errorMessage(err: unknown, fallback: string) {
 function useAccountDeletion() {
   const { logout } = useAuth();
   const toast = useToast();
+  const t = useStrings("account").deletion;
   const [step, setStep] = useState<Step>("review");
   const [phone, setPhone] = useState<string | null>(null);
   const [otp, setOtp] = useState("");
@@ -38,7 +41,7 @@ function useAccountDeletion() {
       setPhone(res.data.phone);
       setStep("confirm");
     } catch (err) {
-      setError(errorMessage(err, "Could not send the verification code"));
+      setError(errorMessage(err, t.sendFailed));
     } finally {
       setLoading(false);
     }
@@ -46,7 +49,7 @@ function useAccountDeletion() {
 
   async function deleteAccount() {
     if (phone && otp.length !== 6) {
-      setError("Enter the 6-digit code");
+      setError(t.enterSixDigit);
       return;
     }
     setError("");
@@ -55,9 +58,9 @@ function useAccountDeletion() {
       await api.delete("/api/v1/auth/me", phone ? { otp } : {});
       logout();
       router.replace("/(tabs)");
-      toast.show("Your account has been deleted", "success");
+      toast.show(t.deleted, "success");
     } catch (err) {
-      setError(errorMessage(err, "Could not delete your account"));
+      setError(errorMessage(err, t.deleteFailed));
       setLoading(false);
     }
   }
@@ -67,9 +70,10 @@ function useAccountDeletion() {
 }
 
 function OtpField({ phone, value, onChange }: { phone: string; value: string; onChange: (text: string) => void }) {
+  const t = useStrings("account").deletion;
   return (
     <View style={styles.otpBlock}>
-      <Text style={styles.otpLabel}>Enter the code sent to +91 {phone}</Text>
+      <Text style={styles.otpLabel}>{t.enterCode(phone)}</Text>
       <TextInput
         style={styles.otpInput}
         value={value}
@@ -95,6 +99,7 @@ function ErrorBox({ message }: { message: string }) {
 }
 
 function DeleteAccountScreen() {
+  const t = useStrings("account").deletion;
   const { isAuthenticated } = useAuth();
   const { selectedStore } = useStore();
   const summary = useAccountSummary(isAuthenticated, selectedStore?.id);
@@ -110,8 +115,8 @@ function DeleteAccountScreen() {
           <View style={styles.heroIcon}>
             <Ionicons name="person-remove-outline" size={26} color={colors.error} />
           </View>
-          <Text style={styles.title}>Delete your account</Text>
-          <Text style={styles.subtitle}>This is permanent. Once deleted, your account can't be recovered.</Text>
+          <Text style={styles.title}>{t.title}</Text>
+          <Text style={styles.subtitle}>{t.subtitle}</Text>
         </View>
 
         <DeletionSummary walletBalance={summary.walletBalance} loyaltyPoints={summary.loyaltyPoints} isMember={summary.isMember} />
@@ -128,12 +133,12 @@ function DeleteAccountScreen() {
             <ActivityIndicator color={reviewing ? colors.error : "#fff"} />
           ) : (
             <Text style={[styles.dangerText, reviewing && styles.dangerOutlineText]}>
-              {reviewing ? "Continue to delete" : "Delete my account"}
+              {reviewing ? t.continueDelete : t.deleteMine}
             </Text>
           )}
         </TouchableOpacity>
         <TouchableOpacity style={styles.keep} onPress={() => router.back()} activeOpacity={0.7}>
-          <Text style={styles.keepText}>Keep my account</Text>
+          <Text style={styles.keepText}>{t.keep}</Text>
         </TouchableOpacity>
       </ScrollView>
     </KeyboardAvoidingView>
@@ -178,4 +183,4 @@ const styles = StyleSheet.create({
   keepText: { fontFamily: fonts.bold, fontSize: 15, color: colors.primary, letterSpacing: 0 },
 });
 
-export default withSignIn(DeleteAccountScreen, { icon: "person-outline", title: "Delete account", message: "Sign in to the account you want to delete." });
+export default withSignIn(DeleteAccountScreen, "person-outline", () => strings("account").signIn.deleteAccount);

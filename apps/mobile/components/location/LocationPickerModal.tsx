@@ -4,6 +4,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import * as Location from "expo-location";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { PinMap } from "../PinMap";
 import { PickerSearch } from "./PickerSearch";
 import { addressAt, placeDetails, usePlaceSearch, type PlacePrediction, type PlaceResult } from "../../lib/use-place-search";
@@ -82,15 +83,16 @@ export function LocationPickerModal({ visible, start, onClose, onConfirm }: Loca
 }
 
 function PickerFooter({ place, locating, bottom, onLocate, onConfirm }: { place: PlaceResult | null; locating: boolean; bottom: number; onLocate: () => void; onConfirm: () => void }) {
-  const title = place?.placeName || place?.address.split(",")[0] || "Pinned location";
+  const t = useStrings("search");
+  const title = place?.placeName || place?.address.split(",")[0] || t.pinnedLocation;
   return (
     <>
-      <TouchableOpacity style={styles.locate} onPress={onLocate} accessibilityRole="button" accessibilityLabel="Use my current location">
+      <TouchableOpacity style={styles.locate} onPress={onLocate} accessibilityRole="button" accessibilityLabel={t.useMyLocation}>
         <Ionicons name="locate" size={20} color={colors.primary} />
-        <Text style={styles.locateText}>Current location</Text>
+        <Text style={styles.locateText}>{t.currentLocation}</Text>
       </TouchableOpacity>
       <View style={[styles.footer, { paddingBottom: Math.max(bottom, 16) }]}>
-        <Text style={styles.label}>Deliver to</Text>
+        <Text style={styles.label}>{t.deliverTo}</Text>
         {locating ? (
           <ActivityIndicator color={colors.primary} style={styles.loading} />
         ) : (
@@ -100,7 +102,7 @@ function PickerFooter({ place, locating, bottom, onLocate, onConfirm }: { place:
           </>
         )}
         <TouchableOpacity style={[styles.confirm, (!place || locating) && styles.confirmOff]} onPress={onConfirm} disabled={!place || locating} accessibilityRole="button">
-          <Text style={styles.confirmText}>Confirm location</Text>
+          <Text style={styles.confirmText}>{t.confirmLocation}</Text>
         </TouchableOpacity>
       </View>
     </>

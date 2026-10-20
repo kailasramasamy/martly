@@ -5,6 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, spacing } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
 import { useLanguage } from "../lib/language-context";
+import { useStrings } from "../lib/i18n/use-strings";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 export const GRID_GAP = 12;
@@ -28,9 +29,10 @@ interface ProductGridCardProps {
 }
 
 export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, variantCount = 1, onShowVariants, containerWidth, variantSizes, isWishlisted, onToggleWishlist, isMember }: ProductGridCardProps) {
-  const { getLocalizedName, getLocalizedSubtitle } = useLanguage();
+  const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   const localizedName = getLocalizedName(item.product);
-  const subtitle = getLocalizedSubtitle(item.product);
   const cardWidth = containerWidth
     ? (containerWidth - GRID_GAP) / 2
     : GRID_CARD_WIDTH;
@@ -39,8 +41,8 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
   const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
   const discountLabel = hasDiscount
     ? item.pricing!.discountType === "PERCENTAGE"
-      ? `${item.pricing!.discountValue}% OFF`
-      : `₹${item.pricing!.discountValue} OFF`
+      ? tc.percentOff(item.pricing!.discountValue!)
+      : t.flatOff(item.pricing!.discountValue!)
     : null;
   const productImage = item.product.imageUrl || item.variant.imageUrl;
   const available = item.availableStock ?? (item.stock - (item.reservedStock ?? 0));
@@ -101,7 +103,7 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
 
         {isOutOfStock && (
           <View style={styles.oosOverlay}>
-            <Text style={styles.oosLabel}>Out of stock</Text>
+            <Text style={styles.oosLabel}>{tc.outOfStock}</Text>
           </View>
         )}
       </View>
@@ -109,7 +111,6 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
       {/* Content */}
       <View style={styles.content}>
         <Text style={styles.name} numberOfLines={3}>{localizedName}</Text>
-        {subtitle && <Text style={styles.nameSubtitle} numberOfLines={1}>{subtitle}</Text>}
         {variantSizes && variantSizes.length > 1 ? (
           <Text style={styles.variant} numberOfLines={1}>
             {variantSizes.join(" · ")}
@@ -126,7 +127,7 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
             )}
           </View>
         )}
-        {isLowStock && <Text style={styles.lowStock}>Only {available} left</Text>}
+        {isLowStock && <Text style={styles.lowStock}>{t.onlyLeft(available)}</Text>}
 
         <View style={styles.footer}>
           <View>
@@ -144,7 +145,7 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
               </>
             )}
             {!isMember && item.pricing?.memberPrice != null && item.pricing.memberPrice < displayPrice && (
-              <Text style={{ fontSize: 9, color: "#7c3aed", fontWeight: "600" }}>{"\u20B9"}{item.pricing.memberPrice.toFixed(0)} for members</Text>
+              <Text style={{ fontSize: 9, color: "#7c3aed", fontWeight: "600" }}>{t.forMembers(item.pricing.memberPrice.toFixed(0))}</Text>
             )}
           </View>
           {quantity > 0 ? (
@@ -163,10 +164,10 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
               activeOpacity={0.7}
             >
               <View style={styles.optionsBtn}>
-                <Text style={styles.optionsBtnText}>{variantCount} options</Text>
+                <Text style={styles.optionsBtnText} numberOfLines={1}>{t.options(variantCount)}</Text>
               </View>
               <View style={styles.stackedAddBtn}>
-                <Text style={styles.stackedAddBtnText}>ADD</Text>
+                <Text style={styles.stackedAddBtnText}>{t.addBtn}</Text>
               </View>
             </TouchableOpacity>
           ) : (
@@ -176,7 +177,7 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
               disabled={isOutOfStock}
             >
               <Text style={[styles.addBtnText, isOutOfStock && styles.addBtnTextDisabled]}>
-                {isOutOfStock ? "N/A" : "ADD"}
+                {isOutOfStock ? t.notAvailable : t.addBtn}
               </Text>
             </TouchableOpacity>
           )}
@@ -259,7 +260,6 @@ const styles = StyleSheet.create({
   oosLabel: { fontSize: 12, fontWeight: "700", color: colors.error },
   content: { padding: 10 },
   name: { fontSize: 13, fontWeight: "600", color: colors.text, lineHeight: 17 },
-  nameSubtitle: { fontSize: 10, color: colors.textSecondary, marginTop: 1 },
   variant: { fontSize: 11, color: colors.textSecondary, marginTop: 2 },
   ratingRow: { flexDirection: "row", alignItems: "center", gap: 3, marginTop: 3 },
   ratingText: { fontSize: 11, fontWeight: "600", color: "#92400e" },

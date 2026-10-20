@@ -21,7 +21,7 @@ import { todayIST, tomorrowIST, endOfDayUTC, parseDate, formatDate } from "../..
 const STORE_PRODUCT_INCLUDE = {
   storeProduct: {
     include: {
-      product: { select: { id: true, name: true, imageUrl: true } },
+      product: { select: { id: true, name: true, imageUrl: true, translations: true } },
       variant: { select: { id: true, name: true, unitType: true, unitValue: true, mrp: true } },
     },
   },
@@ -95,7 +95,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
         },
         include: {
           items: { include: STORE_PRODUCT_INCLUDE },
-          store: { select: { id: true, name: true } },
+          store: { select: { id: true, name: true, translations: true } },
         },
       });
       return sub;
@@ -120,7 +120,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
       orderBy: { createdAt: "desc" },
       include: {
         items: { include: STORE_PRODUCT_INCLUDE },
-        store: { select: { id: true, name: true } },
+        store: { select: { id: true, name: true, translations: true } },
       },
     });
 
@@ -150,7 +150,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
       where: { id: request.params.id },
       include: {
         items: { include: STORE_PRODUCT_INCLUDE },
-        store: { select: { id: true, name: true } },
+        store: { select: { id: true, name: true, translations: true } },
         skippedDates: { orderBy: { date: "asc" } },
       },
     });
@@ -284,7 +284,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
         data: updateData,
         include: {
           items: { include: STORE_PRODUCT_INCLUDE },
-          store: { select: { id: true, name: true } },
+          store: { select: { id: true, name: true, translations: true } },
         },
       });
     });
@@ -487,7 +487,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
       include: {
         storeProduct: {
           include: {
-            product: { select: { id: true, name: true, imageUrl: true } },
+            product: { select: { id: true, name: true, imageUrl: true, translations: true } },
             variant: { select: { id: true, name: true, unitType: true, unitValue: true, mrp: true } },
           },
         },
@@ -623,7 +623,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
       include: {
         storeProduct: {
           include: {
-            product: { select: { id: true, name: true, imageUrl: true } },
+            product: { select: { id: true, name: true, imageUrl: true, translations: true } },
             variant: { select: { id: true, name: true, unitType: true, unitValue: true, mrp: true } },
           },
         },
@@ -661,7 +661,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
         include: {
           storeProduct: {
             include: {
-              product: { select: { id: true, name: true, imageUrl: true } },
+              product: { select: { id: true, name: true, imageUrl: true, translations: true } },
               variant: { select: { id: true, name: true, unitType: true, unitValue: true, mrp: true } },
             },
           },
@@ -1025,7 +1025,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
         ? await app.prisma.storeProduct.findMany({
             where: { id: { in: popularItems.map((i) => i.storeProductId) } },
             include: {
-              product: { select: { id: true, name: true, imageUrl: true } },
+              product: { select: { id: true, name: true, imageUrl: true, translations: true } },
               variant: { select: { id: true, name: true, unitType: true, unitValue: true } },
             },
           })

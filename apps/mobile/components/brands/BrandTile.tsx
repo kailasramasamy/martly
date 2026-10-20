@@ -2,11 +2,13 @@ import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import type { DirectoryBrand } from "@martly/shared/types";
 import { fonts } from "../../constants/theme";
 import { brandDisplayName, brandTheme, wordmarkColors } from "../../lib/brand-strip";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 // Long names step down so most fit on two lines of the signboard
 const wordmarkSize = (name: string) => (name.length <= 6 ? 20 : name.length <= 11 ? 16 : 13.5);
 
 function Signboard({ brand }: { brand: DirectoryBrand }) {
+  const tc = useStrings("common");
   const [background, ink] = wordmarkColors(brand.name);
   const name = brandDisplayName(brand.name);
   return (
@@ -19,7 +21,7 @@ function Signboard({ brand }: { brand: DirectoryBrand }) {
       >
         {name}
       </Text>
-      <Text style={[styles.count, { color: ink }]}>{brand.productCount} {brand.productCount === 1 ? "item" : "items"}</Text>
+      <Text style={[styles.count, { color: ink }]}>{tc.items(brand.productCount)}</Text>
     </View>
   );
 }
@@ -38,24 +40,26 @@ function PackShot({ brand }: { brand: DirectoryBrand }) {
 }
 
 function LogoPlate({ brand }: { brand: DirectoryBrand }) {
+  const t = useStrings("catalog");
   const { base } = brandTheme(brand);
   return (
     <View style={[styles.plate, styles.logoPlate, { borderColor: base }]}>
       <Image source={{ uri: brand.imageUrl! }} style={styles.logo} resizeMode="contain" />
       <View style={[styles.storeBar, { backgroundColor: base }]}>
-        <Text style={styles.storeBarText} numberOfLines={1}>STORE · {brand.productCount}</Text>
+        <Text style={styles.storeBarText} numberOfLines={1}>{t.brands.storeBar(brand.productCount)}</Text>
       </View>
     </View>
   );
 }
 
 export function BrandTile({ brand, width, onPress }: { brand: DirectoryBrand; width: number; onPress: () => void }) {
+  const t = useStrings("catalog");
   return (
     <Pressable
       style={({ pressed }) => [{ width }, pressed && styles.pressed]}
       onPress={onPress}
       accessibilityRole="button"
-      accessibilityLabel={`${brandDisplayName(brand.name)}, ${brand.productCount} items`}
+      accessibilityLabel={t.brands.tileLabel(brandDisplayName(brand.name), brand.productCount)}
     >
       {brand.imageUrl ? <LogoPlate brand={brand} /> : brand.coverImageUrl ? <PackShot brand={brand} /> : <Signboard brand={brand} />}
     </Pressable>

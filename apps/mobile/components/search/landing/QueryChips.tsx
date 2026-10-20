@@ -1,6 +1,7 @@
 import { FlatList, Text, TouchableOpacity, View, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../../../constants/theme";
+import { useStrings } from "../../../lib/i18n/use-strings";
 
 interface QueryChipsProps {
   queries: string[];
@@ -12,14 +13,15 @@ interface QueryChipsProps {
 const capitalise = (q: string) => q.charAt(0).toUpperCase() + q.slice(1);
 
 function Chip({ query, icon, onPress, onRemove }: Omit<QueryChipsProps, "queries"> & { query: string }) {
+  const t = useStrings("search");
   return (
     <View style={styles.chip}>
-      <TouchableOpacity style={styles.chipMain} onPress={() => onPress(query)} accessibilityRole="button" accessibilityLabel={`Search ${query}`}>
+      <TouchableOpacity style={styles.chipMain} onPress={() => onPress(query)} accessibilityRole="button" accessibilityLabel={t.searchItem(query)}>
         <Ionicons name={icon} size={14} color={colors.textSecondary} />
         <Text style={styles.label} numberOfLines={1}>{capitalise(query)}</Text>
       </TouchableOpacity>
       {onRemove && (
-        <TouchableOpacity style={styles.remove} onPress={() => onRemove(query)} accessibilityRole="button" accessibilityLabel={`Remove ${query}`} hitSlop={6}>
+        <TouchableOpacity style={styles.remove} onPress={() => onRemove(query)} accessibilityRole="button" accessibilityLabel={t.removeItem(query)} hitSlop={6}>
           <Ionicons name="close" size={14} color="#94a3b8" />
         </TouchableOpacity>
       )}

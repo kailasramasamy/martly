@@ -4,6 +4,8 @@ import Constants, { ExecutionEnvironment } from "expo-constants";
 import { WebView } from "react-native-webview";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
+import { strings } from "../lib/i18n";
 
 interface CheckoutBase {
   visible: boolean;
@@ -36,7 +38,7 @@ const checkoutConfig = (upiAppPackage?: string) => ({
   display: {
     blocks: {
       upi: {
-        name: "Pay with a UPI app",
+        name: strings("checkout").razorpay.upiBlock,
         instruments: [{ method: "upi", flows: ["intent"], ...(upiAppPackage ? { apps: [upiAppPackage] } : {}) }],
       },
     },
@@ -59,7 +61,8 @@ if (!isExpoGo) {
 
 // ── Native SDK (production / dev client) ──────────────────
 function NativeCheckout(props: RazorpayCheckoutProps) {
-  const { visible, keyId, name = "Martly", description = "Order Payment", customerId, prefill, upiAppPackage, onSuccess, onCancel } = props;
+  const t = useStrings("checkout").razorpay;
+  const { visible, keyId, name = "Martly", description = t.description, customerId, prefill, upiAppPackage, onSuccess, onCancel } = props;
   const openedRef = useRef(false);
 
   useEffect(() => {
@@ -101,7 +104,8 @@ function NativeCheckout(props: RazorpayCheckoutProps) {
 
 // ── WebView fallback (Expo Go / native SDK unavailable) ───
 function WebViewCheckout(props: RazorpayCheckoutProps) {
-  const { visible, keyId, name = "Martly", description = "Order Payment", customerId, prefill, upiAppPackage, onSuccess, onCancel } = props;
+  const t = useStrings("checkout").razorpay;
+  const { visible, keyId, name = "Martly", description = t.description, customerId, prefill, upiAppPackage, onSuccess, onCancel } = props;
   const html = `
 <!DOCTYPE html>
 <html>
@@ -116,7 +120,7 @@ function WebViewCheckout(props: RazorpayCheckoutProps) {
 </head>
 <body>
   <div class="loading">
-    <p>Opening payment...</p>
+    <p>${t.opening}</p>
   </div>
   <script>
     var options = {
@@ -150,7 +154,7 @@ function WebViewCheckout(props: RazorpayCheckoutProps) {
           <TouchableOpacity onPress={onCancel} style={styles.closeBtn} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
             <Ionicons name="close" size={24} color={colors.text} />
           </TouchableOpacity>
-          <Text style={styles.headerTitle}>Payment</Text>
+          <Text style={styles.headerTitle}>{t.sheetTitle}</Text>
           <View style={{ width: 32 }} />
         </View>
         <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === "ios" ? "padding" : undefined}>

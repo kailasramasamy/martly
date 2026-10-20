@@ -16,6 +16,7 @@ import { useAuth } from "../lib/auth-context";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
 import type { AuthTokens } from "@martly/shared/types";
+import { useStrings } from "../lib/i18n/use-strings";
 
 interface AuthGateProps {
   visible: boolean;
@@ -31,9 +32,11 @@ export function AuthGate({
   visible,
   onAuthenticated,
   onDismiss,
-  title = "Sign in to continue",
-  subtitle = "Enter your phone number to proceed",
+  title,
+  subtitle,
 }: AuthGateProps) {
+  const t = useStrings("auth");
+  const common = useStrings("common");
   const { login, refreshUser } = useAuth();
   const [step, setStep] = useState<Step>("phone");
   const [phone, setPhone] = useState("");
@@ -65,7 +68,7 @@ export function AuthGate({
   async function handleSendOtp() {
     const cleaned = phone.replace(/\D/g, "");
     if (cleaned.length < 10) {
-      setError("Please enter a valid 10-digit phone number");
+      setError(t.errors.invalidPhone);
       return;
     }
     setError("");
@@ -74,7 +77,7 @@ export function AuthGate({
       await api.post("/api/v1/auth/send-otp", { phone: cleaned });
       setStep("otp");
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to send OTP");
+      setError(err instanceof Error ? err.message : t.errors.sendOtpFailed);
     } finally {
       setLoading(false);
     }
@@ -82,7 +85,7 @@ export function AuthGate({
 
   async function handleVerifyOtp() {
     if (otp.length !== 6) {
-      setError("Please enter the 6-digit OTP");
+      setError(t.errors.enterOtp);
       return;
     }
     setError("");
@@ -100,7 +103,7 @@ export function AuthGate({
         onAuthenticated();
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Invalid OTP");
+      setError(err instanceof Error ? err.message : t.errors.invalidOtp);
     } finally {
       setLoading(false);
     }
@@ -108,7 +111,7 @@ export function AuthGate({
 
   async function handleSaveName() {
     if (!name.trim()) {
-      setError("Please enter your name");
+      setError(t.errors.enterName);
       return;
     }
     setError("");
@@ -118,7 +121,7 @@ export function AuthGate({
       await refreshUser();
       onAuthenticated();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to save name");
+      setError(err instanceof Error ? err.message : t.errors.saveNameFailed);
     } finally {
       setLoading(false);
     }
@@ -149,8 +152,8 @@ export function AuthGate({
                   <Ionicons name="phone-portrait-outline" size={24} color={colors.primary} />
                 </View>
               </View>
-              <Text style={styles.sheetTitle}>{title}</Text>
-              <Text style={styles.sheetSubtitle}>{subtitle}</Text>
+              <Text style={styles.sheetTitle}>{title ?? t.gate.defaultTitle}</Text>
+              <Text style={styles.sheetSubtitle}>{subtitle ?? t.gate.defaultSubtitle}</Text>
 
               {error ? <Text style={styles.error}>{error}</Text> : null}
 
@@ -160,7 +163,7 @@ export function AuthGate({
                 </View>
                 <TextInput
                   style={styles.phoneInput}
-                  placeholder="Phone number"
+                  placeholder={t.login.phonePlaceholder}
                   placeholderTextColor="#94a3b8"
                   value={phone}
                   onChangeText={(t) => { setPhone(t); setError(""); }}
@@ -179,13 +182,13 @@ export function AuthGate({
                 {loading ? (
                   <ActivityIndicator color="#fff" size="small" />
                 ) : (
-                  <Text style={styles.buttonText}>Send OTP</Text>
+                  <Text style={styles.buttonText}>{t.gate.sendOtp}</Text>
                 )}
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.staffLink} onPress={() => { onDismiss(); router.push("/(auth)/staff-login"); }} accessibilityRole="link">
                 <Ionicons name="briefcase-outline" size={15} color={colors.textSecondary} />
-                <Text style={styles.staffText}>Store owner or manager? <Text style={styles.staffStrong}>Staff login</Text></Text>
+                <Text style={styles.staffText}>{t.login.staffQuestion} <Text style={styles.staffStrong}>{t.login.staffLogin}</Text></Text>
               </TouchableOpacity>
             </>
           )}
@@ -198,9 +201,9 @@ export function AuthGate({
                   <Ionicons name="keypad-outline" size={24} color={colors.primary} />
                 </View>
               </View>
-              <Text style={styles.sheetTitle}>Enter verification code</Text>
+              <Text style={styles.sheetTitle}>{t.gate.otpTitle}</Text>
               <Text style={styles.sheetSubtitle}>
-                Sent to <Text style={{ fontWeight: "700", color: colors.text }}>+91 {phone}</Text>
+                {t.gate.sentTo} <Text style={{ fontWeight: "700", color: colors.text }}>+91 {phone}</Text>
               </Text>
 
               {error ? <Text style={styles.error}>{error}</Text> : null}
@@ -226,7 +229,7 @@ export function AuthGate({
                 {loading ? (
                   <ActivityIndicator color="#fff" size="small" />
                 ) : (
-                  <Text style={styles.buttonText}>Verify & Continue</Text>
+                  <Text style={styles.buttonText}>{t.gate.verifyContinue}</Text>
                 )}
               </TouchableOpacity>
 
@@ -235,14 +238,14 @@ export function AuthGate({
                 disabled={loading}
                 style={styles.changeLink}
               >
-                <Text style={styles.changeLinkText}>Didn't get it? Resend code</Text>
+                <Text style={styles.changeLinkText}>{t.login.resend}</Text>
               </TouchableOpacity>
 
               <TouchableOpacity
                 onPress={() => { setStep("phone"); setOtp(""); setError(""); }}
                 style={styles.changeLink}
               >
-                <Text style={styles.changeLinkText}>Change number</Text>
+                <Text style={styles.changeLinkText}>{t.login.changeNumber}</Text>
               </TouchableOpacity>
             </>
           )}
@@ -255,14 +258,14 @@ export function AuthGate({
                   <Ionicons name="person-outline" size={24} color={colors.primary} />
                 </View>
               </View>
-              <Text style={styles.sheetTitle}>What's your name?</Text>
-              <Text style={styles.sheetSubtitle}>Let us know what to call you</Text>
+              <Text style={styles.sheetTitle}>{t.login.nameTitle}</Text>
+              <Text style={styles.sheetSubtitle}>{t.login.nameSubtitle}</Text>
 
               {error ? <Text style={styles.error}>{error}</Text> : null}
 
               <TextInput
                 style={styles.nameInput}
-                placeholder="Your name"
+                placeholder={t.login.namePlaceholder}
                 placeholderTextColor="#94a3b8"
                 value={name}
                 onChangeText={(t) => { setName(t); setError(""); }}
@@ -279,7 +282,7 @@ export function AuthGate({
                 {loading ? (
                   <ActivityIndicator color="#fff" size="small" />
                 ) : (
-                  <Text style={styles.buttonText}>Continue</Text>
+                  <Text style={styles.buttonText}>{common.continue}</Text>
                 )}
               </TouchableOpacity>
             </>

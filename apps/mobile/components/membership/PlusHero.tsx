@@ -2,6 +2,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 const PLUS_GRADIENT = ["#134e4a", colors.primary] as const;
 
@@ -17,20 +18,21 @@ function HeroPerk({ icon, label }: { icon: keyof typeof Ionicons.glyphMap; label
 }
 
 export function PlusHero({ maxPointsMultiplier }: { maxPointsMultiplier: number }) {
+  const t = useStrings("account").membership.hero;
   return (
     <LinearGradient colors={PLUS_GRADIENT} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.hero}>
       <View style={[styles.orb, styles.orbLarge]} />
       <View style={[styles.orb, styles.orbSmall]} />
       <View style={styles.badge}>
         <Ionicons name="diamond" size={14} color={colors.accentText} />
-        <Text style={styles.badgeText}>MART PLUS</Text>
+        <Text style={styles.badgeText}>{t.badge}</Text>
       </View>
-      <Text style={styles.title}>Save on every order</Text>
-      <Text style={styles.subtitle}>Free delivery, bonus points and member-only prices, all in one plan.</Text>
+      <Text style={styles.title}>{t.title}</Text>
+      <Text style={styles.subtitle}>{t.subtitle}</Text>
       <View style={styles.perks}>
-        <HeroPerk icon="bicycle" label="Free delivery" />
-        <HeroPerk icon="star" label={maxPointsMultiplier > 1 ? `Up to ${maxPointsMultiplier}× points` : "Bonus points"} />
-        <HeroPerk icon="pricetag" label="Member prices" />
+        <HeroPerk icon="bicycle" label={t.freeDelivery} />
+        <HeroPerk icon="star" label={maxPointsMultiplier > 1 ? t.upToPoints(maxPointsMultiplier) : t.bonusPoints} />
+        <HeroPerk icon="pricetag" label={t.memberPrices} />
       </View>
     </LinearGradient>
   );

@@ -1,7 +1,8 @@
 import { FlatList, Text, TouchableOpacity, View, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { SearchSortBy, SearchSortLabels } from "@martly/shared/constants";
+import { SearchSortBy } from "@martly/shared/constants";
 import { colors, fonts, spacing } from "../../constants/theme";
+import { strings } from "../../lib/i18n";
 
 type IconName = keyof typeof Ionicons.glyphMap;
 
@@ -32,11 +33,12 @@ interface SearchControlBarProps {
 }
 
 function buildPills(p: SearchControlBarProps): Pill[] {
+  const t = strings("search");
   const pills: Pill[] = [
-    { key: "filters", label: "Filters", icon: "options-outline", chevron: true, badge: p.filterCount, active: p.filterCount > 0, onPress: p.onOpenFilters },
+    { key: "filters", label: t.filters, icon: "options-outline", chevron: true, badge: p.filterCount, active: p.filterCount > 0, onPress: p.onOpenFilters },
     {
       key: "sort",
-      label: p.sortBy === SearchSortBy.RELEVANCE ? "Sort" : SearchSortLabels[p.sortBy],
+      label: p.sortBy === SearchSortBy.RELEVANCE ? t.sort : t.sortLabels[p.sortBy],
       icon: "swap-vertical-outline",
       chevron: true,
       active: p.sortBy !== SearchSortBy.RELEVANCE,
@@ -45,13 +47,13 @@ function buildPills(p: SearchControlBarProps): Pill[] {
   ];
   // Zepto-style shortcut straight to brands; Filters still holds brands + food type together
   if (p.hasBrands) {
-    pills.splice(1, 0, { key: "brand", label: "Brand", chevron: true, badge: p.brandCount, active: p.brandCount > 0, onPress: p.onOpenBrand });
+    pills.splice(1, 0, { key: "brand", label: t.brand, chevron: true, badge: p.brandCount, active: p.brandCount > 0, onPress: p.onOpenBrand });
   }
   if (p.hasSizes) {
-    pills.push({ key: "quantity", label: p.size ?? "Quantity", chevron: true, active: p.size != null, onPress: p.onOpenQuantity });
+    pills.push({ key: "quantity", label: p.size ?? t.quantity, chevron: true, active: p.size != null, onPress: p.onOpenQuantity });
   }
   if (p.offerCount > 0 || p.offers) {
-    pills.push({ key: "offers", label: "Offers", icon: "pricetag-outline", active: p.offers, onPress: p.onToggleOffers });
+    pills.push({ key: "offers", label: t.offers, icon: "pricetag-outline", active: p.offers, onPress: p.onToggleOffers });
   }
   return pills;
 }

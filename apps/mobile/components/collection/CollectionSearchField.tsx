@@ -1,6 +1,7 @@
 import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 interface Props {
   value: string;
@@ -12,6 +13,8 @@ interface Props {
 
 /** Searches within one collection; Cancel closes it and brings the collection's header back */
 export function CollectionSearchField({ value, onChange, onCancel, accent }: Props) {
+  const t = useStrings("home");
+  const c = useStrings("common");
   return (
     <View style={styles.row}>
       <View style={styles.field}>
@@ -19,22 +22,22 @@ export function CollectionSearchField({ value, onChange, onCancel, accent }: Pro
         <TextInput
           value={value}
           onChangeText={onChange}
-          placeholder="Search in this collection"
+          placeholder={t.searchInCollection}
           placeholderTextColor={colors.textSecondary}
           style={styles.input}
           autoFocus
           autoCorrect={false}
           returnKeyType="search"
-          accessibilityLabel="Search in this collection"
+          accessibilityLabel={t.searchInCollection}
         />
         {value ? (
-          <Pressable onPress={() => onChange("")} hitSlop={12} accessibilityRole="button" accessibilityLabel="Clear search">
+          <Pressable onPress={() => onChange("")} hitSlop={12} accessibilityRole="button" accessibilityLabel={t.clearSearch}>
             <Ionicons name="close-circle" size={18} color={colors.textSecondary} />
           </Pressable>
         ) : null}
       </View>
       <Pressable onPress={onCancel} style={styles.cancel} accessibilityRole="button">
-        <Text style={[styles.cancelText, { color: accent }]}>Cancel</Text>
+        <Text style={[styles.cancelText, { color: accent }]}>{c.cancel}</Text>
       </Pressable>
     </View>
   );

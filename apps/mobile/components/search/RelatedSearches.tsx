@@ -1,20 +1,22 @@
 import { FlatList, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 // Refinements of the current search ("→ Surf Excel detergent"), shown under the filters like Instamart
 export function RelatedSearches({ items, onSelect }: { items: string[]; onSelect: (text: string) => void }) {
+  const t = useStrings("search");
   if (items.length === 0) return null;
   return (
     <FlatList
       horizontal
       data={items}
-      keyExtractor={(t) => t}
+      keyExtractor={(i) => i}
       showsHorizontalScrollIndicator={false}
       contentContainerStyle={styles.row}
       style={styles.list}
       renderItem={({ item }) => (
-        <TouchableOpacity style={styles.chip} onPress={() => onSelect(item)} accessibilityRole="button" accessibilityLabel={`Search ${item}`}>
+        <TouchableOpacity style={styles.chip} onPress={() => onSelect(item)} accessibilityRole="button" accessibilityLabel={t.searchItem(item)}>
           <Ionicons name="arrow-forward" size={13} color={colors.primary} />
           <Text style={styles.label} numberOfLines={1}>{item}</Text>
         </TouchableOpacity>

@@ -11,6 +11,7 @@ import { formatVariantUnit, formatVariantUnits } from "../../services/units.js";
 import { searchProductsForAdmin } from "../../services/search.js";
 import { fetchRankedPage } from "../../services/ranked-page.js";
 import { brandFacets, countIds, inSearchOrder, subcategoryFacets, type SubcategoryFacet } from "../../services/search-facets.js";
+import { translateNewProduct } from "../../services/translate/product.js";
 
   // Shared helper: build visibility + catalogType where clause
   function buildVisibilityFilter(user: { role: string; organizationId?: string | null }, catalogType?: string) {
@@ -325,6 +326,7 @@ export async function productRoutes(app: FastifyInstance) {
       });
 
       if (organizationId) await listInStores(request, product, organizationId, requestedStoreIds);
+      void translateNewProduct(app.prisma, product.id, app.log);
 
       const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
       return response;

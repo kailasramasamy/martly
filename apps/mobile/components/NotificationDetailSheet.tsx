@@ -15,29 +15,12 @@ import { Ionicons } from "@expo/vector-icons";
 import Markdown from "react-native-markdown-display";
 import type { AppNotification } from "../lib/types";
 import { colors } from "../constants/theme";
-import { notificationDeepLink } from "../lib/notification-helpers";
+import { notificationDeepLink, relativeTime } from "../lib/notification-helpers";
+import { useStrings } from "../lib/i18n/use-strings";
 import { notificationTypeStyle } from "../lib/notification-types";
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("window");
 const SHEET_MAX = SCREEN_HEIGHT * 0.78;
-
-function relativeTime(dateStr: string): string {
-  const now = Date.now();
-  const then = new Date(dateStr).getTime();
-  const diff = now - then;
-  const mins = Math.floor(diff / 60000);
-  if (mins < 1) return "Just now";
-  if (mins < 60) return `${mins}m ago`;
-  const hrs = Math.floor(mins / 60);
-  if (hrs < 24) return `${hrs}h ago`;
-  const days = Math.floor(hrs / 24);
-  if (days === 1) return "Yesterday";
-  if (days < 7) return `${days}d ago`;
-  return new Date(dateStr).toLocaleDateString("en-IN", {
-    day: "numeric",
-    month: "short",
-  });
-}
 
 interface Props {
   notification: AppNotification | null;
@@ -53,6 +36,7 @@ export function NotificationDetailSheet({
   onAction,
 }: Props) {
   const insets = useSafeAreaInsets();
+  const t = useStrings("account").notifications;
   const backdropAnim = useRef(new Animated.Value(0)).current;
   const slideAnim = useRef(new Animated.Value(SHEET_MAX)).current;
 
@@ -152,7 +136,7 @@ export function NotificationDetailSheet({
             activeOpacity={0.85}
             onPress={onAction}
           >
-            <Text style={styles.actionText}>View Details</Text>
+            <Text style={styles.actionText}>{t.viewDetails}</Text>
             <Ionicons name="arrow-forward" size={16} color="#fff" />
           </TouchableOpacity>
         )}

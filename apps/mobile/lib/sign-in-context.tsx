@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from "react";
 import { AuthGate } from "../components/AuthGate";
 import { useAuth } from "./auth-context";
+import { strings } from "./i18n";
 
 interface Prompt {
   title: string;
@@ -11,8 +12,6 @@ type RequireSignIn = (then: () => void, prompt?: Partial<Prompt>) => void;
 
 const SignInContext = createContext<RequireSignIn | null>(null);
 
-const DEFAULT_PROMPT: Prompt = { title: "Sign in to continue", subtitle: "Enter your phone number to proceed" };
-
 /** One sign-in sheet for the whole shop: guests browse freely and sign in only when an action needs an account */
 export function SignInProvider({ children }: { children: ReactNode }) {
   const { isAuthenticated } = useAuth();
@@ -22,7 +21,8 @@ export function SignInProvider({ children }: { children: ReactNode }) {
   const requireSignIn = useCallback<RequireSignIn>((then, custom) => {
     if (isAuthenticated) return then();
     pending.current = then;
-    setPrompt({ ...DEFAULT_PROMPT, ...custom });
+    const t = strings("auth");
+    setPrompt({ title: t.gate.defaultTitle, subtitle: t.gate.defaultSubtitle, ...custom });
   }, [isAuthenticated]);
 
   const [signedIn, setSignedIn] = useState(false);

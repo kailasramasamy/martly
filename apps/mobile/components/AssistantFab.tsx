@@ -3,11 +3,12 @@ import { View, Text, Pressable, Animated, StyleSheet } from "react-native";
 import { router, type Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
 
-const ACTIONS: { label: string; icon: keyof typeof Ionicons.glyphMap; href: Href }[] = [
-  { label: "AI Order", icon: "sparkles", href: "/ai-order" },
-  { label: "Help & Support", icon: "headset", href: "/support-chat" },
-  { label: "Smart Reorder", icon: "refresh-circle", href: "/smart-reorder" },
+const ACTIONS: { key: "aiOrder" | "support" | "reorder"; icon: keyof typeof Ionicons.glyphMap; href: Href }[] = [
+  { key: "aiOrder", icon: "sparkles", href: "/ai-order" },
+  { key: "support", icon: "headset", href: "/support-chat" },
+  { key: "reorder", icon: "refresh-circle", href: "/smart-reorder" },
 ];
 
 const LABEL_WIDTH = 82;
@@ -17,6 +18,7 @@ type Action = (typeof ACTIONS)[number];
 function ActionItem({ action, index, menu, open, onPress }: {
   action: Action; index: number; menu: Animated.Value; open: boolean; onPress: (href: Href) => void;
 }) {
+  const t = useStrings("subscriptions");
   const translateY = menu.interpolate({ inputRange: [0, 1], outputRange: [0, -72 - index * 60] });
   return (
     <Animated.View
@@ -25,7 +27,7 @@ function ActionItem({ action, index, menu, open, onPress }: {
     >
       <Pressable style={styles.actionRow} onPress={() => onPress(action.href)} accessibilityRole="button">
         <View style={styles.actionLabel}>
-          <Text style={styles.actionLabelText}>{action.label}</Text>
+          <Text style={styles.actionLabelText}>{t.fab[action.key]}</Text>
         </View>
         <View style={styles.actionBtn}>
           <Ionicons name={action.icon} size={20} color="#fff" />
@@ -41,6 +43,7 @@ interface Props {
 }
 
 export function AssistantFab({ compact }: Props) {
+  const t = useStrings("subscriptions");
   const [open, setOpen] = useState(false);
   const menu = useRef(new Animated.Value(0)).current;
   const label = useRef(new Animated.Value(compact ? 0 : 1)).current;
@@ -66,25 +69,25 @@ export function AssistantFab({ compact }: Props) {
     <>
       {open && (
         <Animated.View style={[styles.overlay, { opacity: menu }]}>
-          <Pressable style={StyleSheet.absoluteFill} onPress={toggle} accessibilityLabel="Close assistant menu" />
+          <Pressable style={StyleSheet.absoluteFill} onPress={toggle} accessibilityLabel={t.fab.closeMenu} />
         </Animated.View>
       )}
 
       {ACTIONS.map((action, i) => (
-        <ActionItem key={action.label} action={action} index={i} menu={menu} open={open} onPress={go} />
+        <ActionItem key={action.key} action={action} index={i} menu={menu} open={open} onPress={go} />
       ))}
 
       <Pressable
         style={({ pressed }) => [styles.fab, pressed && { opacity: 0.9 }]}
         onPress={toggle}
         accessibilityRole="button"
-        accessibilityLabel={open ? "Close assistant menu" : "Open assistant: AI order, help and smart reorder"}
+        accessibilityLabel={open ? t.fab.closeMenu : t.fab.openMenu}
       >
         <Animated.View style={{ transform: [{ rotate }] }}>
           <Ionicons name={open ? "close" : "sparkles"} size={22} color="#fff" />
         </Animated.View>
         <Animated.View style={{ width: labelWidth, overflow: "hidden", opacity: label }}>
-          <Text style={styles.fabLabel} numberOfLines={1}>Assistant</Text>
+          <Text style={styles.fabLabel} numberOfLines={1}>{t.fab.assistant}</Text>
         </Animated.View>
       </Pressable>
     </>

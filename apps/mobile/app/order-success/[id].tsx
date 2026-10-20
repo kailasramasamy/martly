@@ -14,6 +14,9 @@ import { api } from "../../lib/api";
 import { useCart } from "../../lib/cart-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { withSignIn } from "../../components/SignInPrompt";
+import { strings } from "../../lib/i18n";
+import { useStrings } from "../../lib/i18n/use-strings";
+import { formatTime } from "../../lib/i18n/format";
 
 interface OrderData {
   id: string;
@@ -28,11 +31,6 @@ interface OrderData {
   couponDiscount?: string | null;
 }
 
-const PAYMENT_METHOD_LABELS: Record<string, string> = {
-  ONLINE: "Online Payment",
-  COD: "Cash on Delivery",
-};
-
 function OrderSuccessScreen() {
   const { id, walletPaid, paymentMethod: paramPaymentMethod, fulfillmentType: paramFulfillmentType } =
     useLocalSearchParams<{
@@ -42,6 +40,7 @@ function OrderSuccessScreen() {
       fulfillmentType?: string;
     }>();
   const router = useRouter();
+  const t = useStrings("checkout");
   const { clearCart, setPendingCoupon } = useCart();
 
   const [order, setOrder] = useState<OrderData | null>(null);
@@ -128,21 +127,22 @@ function OrderSuccessScreen() {
   // Determine subtitle based on payment context
   const getSubtitle = (): string => {
     if (walletPaid === "true") {
-      return "Paid using Martly Wallet";
+      return t.success.paidWallet;
     }
     if (paramPaymentMethod === "COD" && paramFulfillmentType === "PICKUP") {
-      return "Pay when you pick up";
+      return t.success.payOnPickup;
     }
     if (paramPaymentMethod === "COD") {
-      return "Pay on delivery";
+      return t.success.payOnDelivery;
     }
-    return "Payment pending";
+    return t.success.paymentPending;
   };
 
   const getPaymentLabel = (): string => {
     if (!order) return "";
-    if (walletPaid === "true") return "Martly Wallet";
-    return PAYMENT_METHOD_LABELS[order.paymentMethod] ?? order.paymentMethod;
+    if (walletPaid === "true") return t.success.martlyWallet;
+    const labels: Record<string, string> = { ONLINE: t.payment.online, COD: t.payment.cod };
+    return labels[order.paymentMethod] ?? order.paymentMethod;
   };
 
   const formatEstimatedTime = (dateStr: string): string => {
@@ -151,9 +151,9 @@ function OrderSuccessScreen() {
     const diffMs = date.getTime() - now.getTime();
     const diffMin = Math.round(diffMs / 60000);
     if (diffMin > 0 && diffMin < 120) {
-      return `~${diffMin} min`;
+      return t.approxMin(diffMin);
     }
-    return date.toLocaleTimeString(undefined, {
+    return formatTime(date, {
       hour: "2-digit",
       minute: "2-digit",
     });
@@ -200,21 +200,21 @@ function OrderSuccessScreen() {
         ]}
       >
         {/* Heading */}
-        <Text style={styles.heading}>Order Confirmed!</Text>
+        <Text style={styles.heading}>{t.success.confirmed}</Text>
         <Text style={styles.subtitle}>{getSubtitle()}</Text>
 
         {/* Info card */}
         {order && (
           <View style={styles.infoCard}>
             <View style={styles.infoRow}>
-              <Text style={styles.infoLabel}>Order #</Text>
+              <Text style={styles.infoLabel}>{t.success.orderNo}</Text>
               <Text style={styles.infoValue}>{order.id.slice(0, 8).toUpperCase()}</Text>
             </View>
 
             <View style={styles.infoDivider} />
 
             <View style={styles.infoRow}>
-              <Text style={styles.infoLabel}>Amount</Text>
+              <Text style={styles.infoLabel}>{t.success.amount}</Text>
               <Text style={styles.infoValueBold}>
                 {"\u20B9"}
                 {Number(order.totalAmount).toFixed(0)}
@@ -225,7 +225,7 @@ function OrderSuccessScreen() {
               <>
                 <View style={styles.infoDivider} />
                 <View style={styles.infoRow}>
-                  <Text style={styles.infoLabel}>Wallet used</Text>
+                  <Text style={styles.infoLabel}>{t.success.walletUsed}</Text>
                   <Text style={styles.infoValueGreen}>
                     -{"\u20B9"}
                     {walletUsed.toFixed(0)}
@@ -238,7 +238,7 @@ function OrderSuccessScreen() {
               <>
                 <View style={styles.infoDivider} />
                 <View style={styles.infoRow}>
-                  <Text style={styles.infoLabel}>Estimated time</Text>
+                  <Text style={styles.infoLabel}>{t.success.estimatedTime}</Text>
                   <Text style={styles.infoValue}>
                     {formatEstimatedTime(order.estimatedDeliveryAt)}
                   </Text>
@@ -249,7 +249,7 @@ function OrderSuccessScreen() {
             <View style={styles.infoDivider} />
 
             <View style={styles.infoRow}>
-              <Text style={styles.infoLabel}>Payment</Text>
+              <Text style={styles.infoLabel}>{t.success.payment}</Text>
               <Text style={styles.infoValue}>{getPaymentLabel()}</Text>
             </View>
           </View>
@@ -262,7 +262,7 @@ function OrderSuccessScreen() {
           onPress={() => router.replace(`/order/${id}`)}
         >
           <Ionicons name="location-outline" size={20} color="#fff" />
-          <Text style={styles.trackButtonText}>Track Order</Text>
+          <Text style={styles.trackButtonText}>{t.success.trackOrder}</Text>
         </TouchableOpacity>
 
         {/* Back to Home link */}
@@ -271,7 +271,7 @@ function OrderSuccessScreen() {
           activeOpacity={0.7}
           onPress={() => router.replace("/(tabs)")}
         >
-          <Text style={styles.homeLinkText}>Back to Home</Text>
+          <Text style={styles.homeLinkText}>{t.success.backHome}</Text>
         </TouchableOpacity>
       </Animated.View>
     </View>
@@ -399,4 +399,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(OrderSuccessScreen, { icon: "receipt-outline", title: "Your order", message: "Sign in to see this order." });
+export default withSignIn(OrderSuccessScreen, "receipt-outline", () => ({
+  title: strings("checkout").success.signInTitle,
+  message: strings("checkout").success.signInMessage,
+}));

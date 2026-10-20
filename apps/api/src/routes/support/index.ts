@@ -398,7 +398,7 @@ export async function supportRoutes(app: FastifyInstance) {
       where: { userId: user.sub },
       orderBy: { createdAt: "desc" },
       include: {
-        store: { select: { id: true, name: true } },
+        store: { select: { id: true, name: true, translations: true } },
         order: { select: { id: true, status: true } },
       },
     });

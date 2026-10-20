@@ -5,6 +5,7 @@ import { colors, fonts } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
 import { wordmarkColors } from "../../lib/brand-strip";
 import { useLanguage } from "../../lib/language-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 interface ChipsProps {
   departments: DirectoryDepartment[];
@@ -32,10 +33,11 @@ function Chip({ label, icon, tint, active, onPress }: {
 // Sticky department filter: every chip wears its department's colour, solid when picked
 export function DepartmentChips({ departments, activeId, onSelect }: ChipsProps) {
   const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
   return (
     <View style={styles.chipsBar}>
       <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chips}>
-        <Chip label="All" icon="apps" tint={["#ccfbf1", colors.primary]} active={activeId === null} onPress={() => onSelect(null)} />
+        <Chip label={t.all} icon="apps" tint={["#ccfbf1", colors.primary]} active={activeId === null} onPress={() => onSelect(null)} />
         {departments.map((d) => (
           <Chip
             key={d.id} label={getLocalizedName(d)} icon={getCategoryIcon(d.name)} tint={wordmarkColors(d.name)}
@@ -50,6 +52,7 @@ export function DepartmentChips({ departments, activeId, onSelect }: ChipsProps)
 // Full-width colour band that opens a department when "All" is showing
 export function DepartmentBand({ department, brandCount }: { department: DirectoryDepartment; brandCount: number }) {
   const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
   const [background, ink] = wordmarkColors(department.name);
   return (
     <View style={[styles.band, { backgroundColor: background }]}>
@@ -57,27 +60,29 @@ export function DepartmentBand({ department, brandCount }: { department: Directo
         <Ionicons name={getCategoryIcon(department.name)} size={18} color="#fff" />
       </View>
       <Text style={[styles.bandTitle, { color: ink }]} numberOfLines={1}>{getLocalizedName(department)}</Text>
-      <Text style={[styles.bandCount, { color: ink }]}>{brandCount} brands</Text>
+      <Text style={[styles.bandCount, { color: ink }]}>{t.brands.bandCount(brandCount)}</Text>
     </View>
   );
 }
 
 export function CategoryHeader({ category, departmentName, brandCount }: { category: DirectoryCategory; departmentName: string; brandCount: number }) {
   const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
   const [, ink] = wordmarkColors(departmentName);
   return (
     <View style={styles.catHeader}>
       <View style={[styles.catBar, { backgroundColor: ink }]} />
       <Text style={styles.catTitle} numberOfLines={1}>{getLocalizedName(category)}</Text>
-      <Text style={styles.catCount}>{brandCount} {brandCount === 1 ? "brand" : "brands"}</Text>
+      <Text style={styles.catCount}>{t.brands.count(brandCount)}</Text>
     </View>
   );
 }
 
 export function ViewAllButton({ hidden, onPress }: { hidden: number; onPress: () => void }) {
+  const t = useStrings("catalog");
   return (
     <Pressable style={styles.more} onPress={onPress} accessibilityRole="button">
-      <Text style={styles.moreText}>View {hidden} more {hidden === 1 ? "brand" : "brands"}</Text>
+      <Text style={styles.moreText}>{t.brands.viewMore(hidden)}</Text>
       <Ionicons name="chevron-down" size={15} color={colors.primary} />
     </Pressable>
   );

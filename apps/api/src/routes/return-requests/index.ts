@@ -140,7 +140,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
             orderItem: {
               select: {
                 unitPrice: true,
-                product: { select: { name: true, imageUrl: true, images: true } },
+                product: { select: { name: true, translations: true, imageUrl: true, images: true } },
                 variant: { select: { name: true, imageUrl: true } },
               },
             },

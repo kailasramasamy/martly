@@ -4,6 +4,7 @@ import type { CouponOffer } from "@martly/shared/types";
 import { colors, fonts } from "../../constants/theme";
 import { api } from "../../lib/api";
 import { offerCondition } from "../../lib/coupon-offer";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 interface Props {
   storeId: string | null;
@@ -28,6 +29,7 @@ function useAvailableOffers(storeId: string | null, orderAmount: number) {
 }
 
 function OfferRow({ offer, disabled, onApply }: { offer: CouponOffer; disabled: boolean; onApply: (code: string) => void }) {
+  const t = useStrings("checkout").promo;
   return (
     <View style={styles.row}>
       <View style={styles.text}>
@@ -40,23 +42,24 @@ function OfferRow({ offer, disabled, onApply }: { offer: CouponOffer; disabled: 
           disabled={disabled}
           style={({ pressed }) => [styles.apply, (pressed || disabled) && styles.dim]}
           accessibilityRole="button"
-          accessibilityLabel={`Apply ${offer.code}`}
+          accessibilityLabel={t.applyCode(offer.code)}
         >
-          <Text style={styles.applyText}>Apply</Text>
+          <Text style={styles.applyText}>{t.apply}</Text>
         </Pressable>
       ) : (
-        <Text style={styles.short}>Add {"₹"}{Math.ceil(offer.shortBy ?? 0)} more</Text>
+        <Text style={styles.short}>{t.addMore(Math.ceil(offer.shortBy ?? 0))}</Text>
       )}
     </View>
   );
 }
 
 export const AvailableOffers = memo(function AvailableOffers({ storeId, orderAmount, disabled, onApply }: Props) {
+  const t = useStrings("checkout").promo;
   const offers = useAvailableOffers(storeId, orderAmount);
   if (offers.length === 0) return null;
   return (
     <View style={styles.panel}>
-      <Text style={styles.heading}>Available offers</Text>
+      <Text style={styles.heading}>{t.availableOffers}</Text>
       {offers.map((offer) => <OfferRow key={offer.code} offer={offer} disabled={disabled} onApply={onApply} />)}
     </View>
   );

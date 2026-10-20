@@ -17,48 +17,51 @@ import { useStore } from "../lib/store-context";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import type { Subscription } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
+import { useStrings } from "../lib/i18n/use-strings";
+import { strings } from "../lib/i18n";
+import { formatDate } from "../lib/i18n/format";
+import { useLanguage } from "../lib/language-context";
 
-const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-const FREQUENCY_CONFIG: Record<string, { label: string; bg: string; color: string; icon: string }> = {
-  DAILY: { label: "Daily", bg: "#dbeafe", color: "#2563eb", icon: "refresh" },
-  ALTERNATE_DAYS: { label: "Alternate Days", bg: "#fce7f3", color: "#db2777", icon: "swap-horizontal" },
-  SPECIFIC_DAYS: { label: "", bg: "#f3e8ff", color: "#7c3aed", icon: "calendar" },
-  WEEKLY: { label: "", bg: "#dcfce7", color: "#16a34a", icon: "repeat" },
-  BIWEEKLY: { label: "", bg: "#fff7ed", color: "#ea580c", icon: "swap-horizontal" },
-  MONTHLY: { label: "", bg: "#fdf2f8", color: "#c026d3", icon: "calendar-clear" },
+const FREQUENCY_CONFIG: Record<string, { bg: string; color: string; icon: string }> = {
+  DAILY: { bg: "#dbeafe", color: "#2563eb", icon: "refresh" },
+  ALTERNATE_DAYS: { bg: "#fce7f3", color: "#db2777", icon: "swap-horizontal" },
+  SPECIFIC_DAYS: { bg: "#f3e8ff", color: "#7c3aed", icon: "calendar" },
+  WEEKLY: { bg: "#dcfce7", color: "#16a34a", icon: "repeat" },
+  BIWEEKLY: { bg: "#fff7ed", color: "#ea580c", icon: "swap-horizontal" },
+  MONTHLY: { bg: "#fdf2f8", color: "#c026d3", icon: "calendar-clear" },
 };
 
-const STATUS_CONFIG: Record<string, { label: string; bg: string; color: string; dotColor: string }> = {
-  ACTIVE: { label: "Active", bg: "#dcfce7", color: "#15803d", dotColor: "#22c55e" },
-  PAUSED: { label: "Paused", bg: "#fef3c7", color: "#92400e", dotColor: "#f59e0b" },
-  CANCELLED: { label: "Cancelled", bg: "#fee2e2", color: "#991b1b", dotColor: "#ef4444" },
+const STATUS_CONFIG: Record<string, { bg: string; color: string; dotColor: string }> = {
+  ACTIVE: { bg: "#dcfce7", color: "#15803d", dotColor: "#22c55e" },
+  PAUSED: { bg: "#fef3c7", color: "#92400e", dotColor: "#f59e0b" },
+  CANCELLED: { bg: "#fee2e2", color: "#991b1b", dotColor: "#ef4444" },
 };
-
-const FULL_DAY_LABELS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 function formatFrequencyLabel(sub: Subscription): string {
+  const t = strings("subscriptions");
   if (sub.frequency === "SPECIFIC_DAYS") {
     return sub.selectedDays
       .sort((a, b) => a - b)
-      .map((d) => DAY_LABELS[d])
+      .map((d) => t.list.daysShort[d])
       .join("\u00b7");
   }
   if (sub.frequency === "WEEKLY") {
-    return `${FULL_DAY_LABELS[sub.selectedDays[0]] ?? ""}s`;
+    return t.list.weeklyOn(t.list.daysFull[sub.selectedDays[0]] ?? "");
   }
   if (sub.frequency === "BIWEEKLY") {
-    return `${FULL_DAY_LABELS[sub.selectedDays[0]] ?? ""}s / 2wk`;
+    return t.list.biweeklyOn(t.list.daysFull[sub.selectedDays[0]] ?? "");
   }
   if (sub.frequency === "MONTHLY") {
     const day = sub.selectedDays[0] ?? 1;
-    const suffix = day === 1 ? "st" : day === 2 ? "nd" : day === 3 ? "rd" : "th";
-    return `${day}${suffix} of month`;
+    return t.list.monthlyOn(day);
   }
-  return FREQUENCY_CONFIG[sub.frequency]?.label ?? sub.frequency;
+  if (sub.frequency === "DAILY") return t.list.daily;
+  if (sub.frequency === "ALTERNATE_DAYS") return t.list.alternateDays;
+  return sub.frequency;
 }
 
 function formatNextDelivery(dateStr: string): string {
+  const common = strings("common");
   const date = new Date(dateStr);
   const now = new Date();
 
@@ -67,17 +70,19 @@ function formatNextDelivery(dateStr: string): string {
   const target = new Date(date.getFullYear(), date.getMonth(), date.getDate());
   const diffDays = Math.round((target.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
 
-  if (diffDays === 0) return "Today";
-  if (diffDays === 1) return "Tomorrow";
-  if (diffDays === -1) return "Yesterday";
+  if (diffDays === 0) return common.today;
+  if (diffDays === 1) return common.tomorrow;
+  if (diffDays === -1) return strings("subscriptions").list.yesterday;
 
-  const dayName = date.toLocaleDateString("en-US", { weekday: "short" });
-  const month = date.toLocaleDateString("en-US", { month: "short" });
+  const dayName = formatDate(date, { weekday: "short" });
+  const month = formatDate(date, { month: "short" });
   const day = date.getDate();
   return `${dayName}, ${month} ${day}`;
 }
 
 function SubscriptionsScreen() {
+  const t = useStrings("subscriptions");
+  const { getLocalizedName } = useLanguage();
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const { selectedStore } = useStore();
@@ -124,7 +129,7 @@ function SubscriptionsScreen() {
     return (
       <View style={styles.center}>
         <ActivityIndicator size="large" color={colors.primary} />
-        <Text style={styles.loadingText}>Loading subscriptions...</Text>
+        <Text style={styles.loadingText}>{t.list.loading}</Text>
       </View>
     );
   }
@@ -145,9 +150,9 @@ function SubscriptionsScreen() {
             <View style={[styles.emptyDot, { backgroundColor: "#4ade80" }]} />
           </View>
         </View>
-        <Text style={styles.emptyTitle}>No subscriptions yet</Text>
+        <Text style={styles.emptyTitle}>{t.list.emptyTitle}</Text>
         <Text style={styles.emptySubtitle}>
-          Start your first subscription to get daily essentials delivered automatically
+          {t.list.emptySubtitle}
         </Text>
         <TouchableOpacity
           style={styles.getStartedBtn}
@@ -155,7 +160,7 @@ function SubscriptionsScreen() {
           activeOpacity={0.8}
         >
           <Ionicons name="add-circle-outline" size={20} color="#fff" />
-          <Text style={styles.getStartedText}>Get Started</Text>
+          <Text style={styles.getStartedText}>{t.list.getStarted}</Text>
         </TouchableOpacity>
       </View>
     );
@@ -165,6 +170,7 @@ function SubscriptionsScreen() {
     const freqConfig = FREQUENCY_CONFIG[sub.frequency] ?? FREQUENCY_CONFIG.DAILY;
     const statusConfig = STATUS_CONFIG[sub.status] ?? STATUS_CONFIG.ACTIVE;
     const freqLabel = formatFrequencyLabel(sub);
+    const statusLabels: Record<string, string> = { ACTIVE: t.list.statusActive, PAUSED: t.list.statusPaused, CANCELLED: t.list.statusCancelled };
     const itemCount = sub._count?.items ?? sub.items?.length ?? 0;
 
     return (
@@ -180,13 +186,13 @@ function SubscriptionsScreen() {
               <Ionicons name="storefront" size={13} color={colors.primary} />
             </View>
             <Text style={styles.storeName} numberOfLines={1}>
-              {sub.store?.name ?? "Store"}
+              {sub.store ? getLocalizedName(sub.store) : t.list.store}
             </Text>
           </View>
           <View style={[styles.statusBadge, { backgroundColor: statusConfig.bg }]}>
             <View style={[styles.statusDot, { backgroundColor: statusConfig.dotColor }]} />
             <Text style={[styles.statusText, { color: statusConfig.color }]}>
-              {statusConfig.label}
+              {statusLabels[sub.status] ?? t.list.statusActive}
             </Text>
           </View>
         </View>
@@ -203,7 +209,7 @@ function SubscriptionsScreen() {
                 </View>
               )}
               <View style={styles.itemInfo}>
-                <Text style={styles.itemName} numberOfLines={1}>{item.storeProduct?.product?.name ?? "Product"}</Text>
+                <Text style={styles.itemName} numberOfLines={1}>{item.storeProduct?.product ? getLocalizedName(item.storeProduct.product) : t.list.product}</Text>
                 <Text style={styles.itemVariant}>
                   {item.storeProduct?.variant?.name ?? `${item.storeProduct?.variant?.unitValue} ${item.storeProduct?.variant?.unitType}`}
                 </Text>
@@ -214,7 +220,7 @@ function SubscriptionsScreen() {
             </View>
           ))}
           {itemCount > 3 && (
-            <Text style={styles.moreItemsText}>+{itemCount - 3} more item{itemCount - 3 !== 1 ? "s" : ""}</Text>
+            <Text style={styles.moreItemsText}>{t.list.moreItems(itemCount - 3)}</Text>
           )}
         </View>
 
@@ -238,7 +244,7 @@ function SubscriptionsScreen() {
             <View style={styles.nextDeliveryRow}>
               <Ionicons name="pause-circle-outline" size={12} color="#d97706" />
               <Text style={[styles.nextDeliveryText, { color: "#d97706" }]}>
-                Until {formatNextDelivery(sub.pausedUntil)}
+                {t.list.until(formatNextDelivery(sub.pausedUntil))}
               </Text>
             </View>
           )}
@@ -278,9 +284,9 @@ function SubscriptionsScreen() {
                 <Ionicons name="basket" size={20} color="#fff" />
               </View>
               <View style={styles.tomorrowContent}>
-                <Text style={styles.tomorrowTitle}>Tomorrow's Basket</Text>
+                <Text style={styles.tomorrowTitle}>{t.list.tomorrowTitle}</Text>
                 <Text style={styles.tomorrowSubtitle}>
-                  Review and customize what's coming tomorrow
+                  {t.list.tomorrowSubtitle}
                 </Text>
               </View>
               <Ionicons name="chevron-forward" size={18} color={colors.primaryDark} />
@@ -605,4 +611,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(SubscriptionsScreen, { icon: "repeat-outline", title: "Subscriptions", message: "Sign in to set up daily or weekly deliveries." });
+export default withSignIn(SubscriptionsScreen, "repeat-outline", () => ({
+  title: strings("subscriptions").list.signInTitle,
+  message: strings("subscriptions").list.signInMessage,
+}));

@@ -9,6 +9,7 @@ import { colors, spacing, fontSize } from "../../constants/theme";
 import type { AuthTokens, LoginResponse } from "@martly/shared/types";
 import { completeLogin } from "../../lib/org-selection";
 import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 type Step = "phone" | "otp" | "name";
 
@@ -16,6 +17,8 @@ const wordmark = require("../../assets/branding/martly-wordmark-light.png");
 
 export default function LoginScreen() {
   const { login, refreshUser } = useAuth();
+  const t = useStrings("auth");
+  const common = useStrings("common");
   const insets = useSafeAreaInsets();
   const [step, setStep] = useState<Step>("phone");
   const [phone, setPhone] = useState("");
@@ -37,7 +40,7 @@ export default function LoginScreen() {
   async function handleSendOtp() {
     const cleaned = phone.replace(/\D/g, "");
     if (cleaned.length < 10) {
-      setError("Please enter a valid 10-digit phone number");
+      setError(t.errors.invalidPhone);
       return;
     }
     setError("");
@@ -46,7 +49,7 @@ export default function LoginScreen() {
       await api.post("/api/v1/auth/send-otp", { phone: cleaned });
       setStep("otp");
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to send OTP");
+      setError(err instanceof Error ? err.message : t.errors.sendOtpFailed);
     } finally {
       setLoading(false);
     }
@@ -54,7 +57,7 @@ export default function LoginScreen() {
 
   async function handleVerifyOtp() {
     if (otp.length !== 6) {
-      setError("Please enter the 6-digit OTP");
+      setError(t.errors.enterOtp);
       return;
     }
     setError("");
@@ -76,7 +79,7 @@ export default function LoginScreen() {
         await completeLogin(data, login);
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Invalid OTP");
+      setError(err instanceof Error ? err.message : t.errors.invalidOtp);
     } finally {
       setLoading(false);
     }
@@ -84,7 +87,7 @@ export default function LoginScreen() {
 
   async function handleSaveName() {
     if (!name.trim()) {
-      setError("Please enter your name");
+      setError(t.errors.enterName);
       return;
     }
     setError("");
@@ -98,7 +101,7 @@ export default function LoginScreen() {
         pendingTokensRef.current = null;
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to save name");
+      setError(err instanceof Error ? err.message : t.errors.saveNameFailed);
     } finally {
       setLoading(false);
     }
@@ -122,14 +125,14 @@ export default function LoginScreen() {
         {/* Logo */}
         <View style={styles.logoSection}>
           <Image source={wordmark} style={styles.wordmark} resizeMode="contain" accessibilityLabel="Martly" />
-          <Text style={styles.subtitle}>Your local stores, delivered</Text>
+          <Text style={styles.subtitle}>{t.tagline}</Text>
         </View>
 
         {/* Phone Step */}
         {step === "phone" && (
           <View style={styles.formSection}>
-            <Text style={styles.stepTitle}>Enter your phone number</Text>
-            <Text style={styles.stepSubtitle}>We'll send you a verification code</Text>
+            <Text style={styles.stepTitle}>{t.login.phoneTitle}</Text>
+            <Text style={styles.stepSubtitle}>{t.login.phoneSubtitle}</Text>
 
             {error ? <Text style={styles.error}>{error}</Text> : null}
 
@@ -139,7 +142,7 @@ export default function LoginScreen() {
               </View>
               <TextInput
                 style={styles.phoneInput}
-                placeholder="Phone number"
+                placeholder={t.login.phonePlaceholder}
                 placeholderTextColor="#94a3b8"
                 value={phone}
                 onChangeText={(t) => { setPhone(t); setError(""); }}
@@ -157,13 +160,13 @@ export default function LoginScreen() {
               {loading ? (
                 <ActivityIndicator color="#fff" size="small" />
               ) : (
-                <Text style={styles.buttonText}>Continue</Text>
+                <Text style={styles.buttonText}>{common.continue}</Text>
               )}
             </Pressable>
 
             <Pressable onPress={() => router.push("/(auth)/staff-login")} style={styles.staffLink} accessibilityRole="link">
               <Ionicons name="briefcase-outline" size={15} color={colors.textSecondary} />
-              <Text style={styles.linkText}>Store owner or manager? <Text style={styles.staffLinkStrong}>Staff login</Text></Text>
+              <Text style={styles.linkText}>{t.login.staffQuestion} <Text style={styles.staffLinkStrong}>{t.login.staffLogin}</Text></Text>
             </Pressable>
           </View>
         )}
@@ -171,9 +174,9 @@ export default function LoginScreen() {
         {/* OTP Step */}
         {step === "otp" && (
           <View style={styles.formSection}>
-            <Text style={styles.stepTitle}>Verify your number</Text>
+            <Text style={styles.stepTitle}>{t.login.otpTitle}</Text>
             <Text style={styles.stepSubtitle}>
-              Enter the 6-digit code sent to{"\n"}
+              {t.login.otpSentTo}{"\n"}
               <Text style={{ fontWeight: "700", color: colors.text }}>+91 {phone}</Text>
             </Text>
 
@@ -199,17 +202,17 @@ export default function LoginScreen() {
               {loading ? (
                 <ActivityIndicator color="#fff" size="small" />
               ) : (
-                <Text style={styles.buttonText}>Verify</Text>
+                <Text style={styles.buttonText}>{t.login.verify}</Text>
               )}
             </Pressable>
 
             <Pressable onPress={() => { setOtp(""); handleSendOtp(); }} disabled={loading} style={styles.linkContainer}>
-              <Text style={styles.resendText}>Didn't get it? Resend code</Text>
+              <Text style={styles.resendText}>{t.login.resend}</Text>
             </Pressable>
 
             <Pressable onPress={() => { setStep("phone"); setOtp(""); setError(""); }} style={styles.linkContainer}>
               <Text style={styles.linkText}>
-                <Ionicons name="arrow-back" size={13} color={colors.textSecondary} /> Change number
+                <Ionicons name="arrow-back" size={13} color={colors.textSecondary} /> {t.login.changeNumber}
               </Text>
             </Pressable>
           </View>
@@ -218,14 +221,14 @@ export default function LoginScreen() {
         {/* Name Step (new user) */}
         {step === "name" && (
           <View style={styles.formSection}>
-            <Text style={styles.stepTitle}>What's your name?</Text>
-            <Text style={styles.stepSubtitle}>Let us know what to call you</Text>
+            <Text style={styles.stepTitle}>{t.login.nameTitle}</Text>
+            <Text style={styles.stepSubtitle}>{t.login.nameSubtitle}</Text>
 
             {error ? <Text style={styles.error}>{error}</Text> : null}
 
             <TextInput
               style={styles.input}
-              placeholder="Your name"
+              placeholder={t.login.namePlaceholder}
               placeholderTextColor="#94a3b8"
               value={name}
               onChangeText={(t) => { setName(t); setError(""); }}
@@ -241,7 +244,7 @@ export default function LoginScreen() {
               {loading ? (
                 <ActivityIndicator color="#fff" size="small" />
               ) : (
-                <Text style={styles.buttonText}>Get Started</Text>
+                <Text style={styles.buttonText}>{t.login.getStarted}</Text>
               )}
             </Pressable>
           </View>
@@ -251,8 +254,8 @@ export default function LoginScreen() {
     </KeyboardAvoidingView>
       {step === "phone" && (
         // Shoppers can browse first and sign in at checkout
-        <Pressable onPress={() => router.replace("/(tabs)")} style={[styles.skip, { top: insets.top + 8 }]} hitSlop={8} accessibilityRole="button" accessibilityLabel="Skip and browse">
-          <Text style={styles.skipText}>Skip</Text>
+        <Pressable onPress={() => router.replace("/(tabs)")} style={[styles.skip, { top: insets.top + 8 }]} hitSlop={8} accessibilityRole="button" accessibilityLabel={t.login.skipLabel}>
+          <Text style={styles.skipText}>{t.login.skip}</Text>
         </Pressable>
       )}
     </View>

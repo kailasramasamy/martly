@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { api } from "./api";
 import { useAuth } from "./auth-context";
 import { useToast } from "./toast-context";
+import { useStrings } from "./i18n/use-strings";
 
 export type PhoneChangeStep = "idle" | "number" | "code";
 
@@ -12,6 +13,8 @@ export type PhoneChangeStep = "idle" | "number" | "code";
 export function usePhoneChange() {
   const { refreshUser } = useAuth();
   const toast = useToast();
+  const t = useStrings("account").editProfile;
+  const common = useStrings("common");
   const [step, setStep] = useState<PhoneChangeStep>("idle");
   const [phone, setPhone] = useState("");
   const [code, setCode] = useState("");
@@ -23,12 +26,12 @@ export function usePhoneChange() {
       await action();
       return true;
     } catch (e: unknown) {
-      toast.show(e instanceof Error ? e.message : "Something went wrong", "error");
+      toast.show(e instanceof Error ? e.message : common.somethingWrong, "error");
       return false;
     } finally {
       setBusy(false);
     }
-  }, [toast]);
+  }, [toast, common]);
 
   const start = useCallback(() => { setPhone(""); setCode(""); setStep("number"); }, []);
   const cancel = useCallback(() => setStep("idle"), []);
@@ -43,9 +46,9 @@ export function usePhoneChange() {
       await refreshUser();
     });
     if (!ok) return;
-    toast.show("Phone number updated", "success");
+    toast.show(t.phoneUpdated, "success");
     setStep("idle");
-  }, [run, phone, code, refreshUser, toast]);
+  }, [run, phone, code, refreshUser, toast, t]);
 
   return { step, phone, setPhone, code, setCode, busy, start, cancel, sendCode, verify };
 }

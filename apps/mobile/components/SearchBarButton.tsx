@@ -4,6 +4,7 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { DEFAULT_SEARCH_HINTS } from "@martly/shared/constants";
 import { colors, fonts } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
 
 const ROTATE_MS = 2600;
 
@@ -15,6 +16,7 @@ interface Props {
 }
 
 export function SearchBarButton({ onTint = false, hints }: Props) {
+  const t = useStrings("search");
   const suggestions = hints?.length ? hints : DEFAULT_SEARCH_HINTS;
   const [index, setIndex] = useState(0);
   const fade = useRef(new Animated.Value(1)).current;
@@ -38,12 +40,13 @@ export function SearchBarButton({ onTint = false, hints }: Props) {
         style={styles.searchArea}
         onPress={() => router.push("/search")}
         accessibilityRole="search"
-        accessibilityLabel="Search groceries and brands"
+        accessibilityLabel={t.searchGroceries}
       >
         <Ionicons name="search-outline" size={18} color={colors.textSecondary} />
         <Text style={styles.placeholder} numberOfLines={1}>
-          Search for{" "}
+          {t.searchForBefore}
           <Animated.Text style={[styles.suggestion, { opacity: fade }]}>{`"${suggestions[index] ?? suggestions[0]}"`}</Animated.Text>
+          {t.searchForAfter}
         </Text>
       </Pressable>
       <View style={styles.divider} />
@@ -51,7 +54,7 @@ export function SearchBarButton({ onTint = false, hints }: Props) {
         style={({ pressed }) => [styles.mic, pressed && { opacity: 0.6 }]}
         onPress={() => router.push({ pathname: "/search", params: { voice: "1" } })}
         accessibilityRole="button"
-        accessibilityLabel="Search by voice"
+        accessibilityLabel={t.searchByVoice}
         hitSlop={6}
       >
         <Ionicons name="mic-outline" size={20} color={colors.primary} />

@@ -54,7 +54,7 @@ export function ProductForm({ product }: { product?: ProductDetail }) {
       <Tab show={on("sizes")}><VariantsSection {...section} mode={form.isEdit ? "edit" : "create"} /></Tab>
       <Tab show={on("details")}><DetailsSection {...section} /></Tab>
       <Tab show={on("compliance")}><ComplianceSection {...section} /></Tab>
-      <Tab show={on("translations")}><TranslationsSection {...section} /></Tab>
+      <Tab show={on("translations")}><TranslationsSection {...section} isNew={!form.isEdit} /></Tab>
       {form.assignStores && (
         <Tab show={on("stores")}><StoreAssignSection stores={form.activeStores} selected={form.selectedStores} onChange={form.setStoreIds} /></Tab>
       )}

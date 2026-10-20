@@ -1,3 +1,4 @@
+import { strings } from "./i18n";
 import type { DepartmentNode, StoreProduct, Translations } from "./types";
 
 export interface BrandSection {
@@ -52,7 +53,8 @@ export function groupBrandProducts(listings: StoreProduct[], tree: DepartmentNod
   const rest = [...bySub.values()].flat();
   if (rest.length) {
     const count = countProducts(rest);
-    categories.push({ id: OTHER_ID, name: "More", productCount: count, sections: [{ id: OTHER_ID, name: "More", products: rest, productCount: count }] });
+    const more = strings("catalog").more;
+    categories.push({ id: OTHER_ID, name: more, productCount: count, sections: [{ id: OTHER_ID, name: more, products: rest, productCount: count }] });
   }
   return categories;
 }

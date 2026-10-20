@@ -14,18 +14,16 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
+import { useStrings } from "../lib/i18n/use-strings";
 import { RecipeCard } from "../components/RecipeCard";
 import type { RecipeSummary } from "../lib/types";
 import { colors } from "../constants/theme";
 
 const DIFFICULTY_OPTIONS = ["EASY", "MEDIUM", "HARD"];
-const DIET_OPTIONS = [
-  { value: "VEG", label: "Veg" },
-  { value: "NON_VEG", label: "Non-Veg" },
-  { value: "EGG", label: "Egg" },
-];
+const DIET_OPTIONS = ["VEG", "NON_VEG", "EGG"] as const;
 
 export default function RecipesScreen() {
+  const t = useStrings("catalog");
   const { selectedStore } = useStore();
   const storeId = selectedStore?.id;
 
@@ -102,7 +100,7 @@ export default function RecipesScreen() {
               <Ionicons name="search" size={16} color="#94a3b8" />
               <TextInput
                 style={styles.searchInput}
-                placeholder="Search recipes..."
+                placeholder={t.recipe.search}
                 placeholderTextColor="#94a3b8"
                 value={search}
                 onChangeText={setSearch}
@@ -126,19 +124,19 @@ export default function RecipesScreen() {
                   onPress={() => setDifficulty(difficulty === d ? null : d)}
                 >
                   <Text style={[styles.chipText, difficulty === d && styles.chipTextActive]}>
-                    {d.charAt(0) + d.slice(1).toLowerCase()}
+                    {t.recipe.difficulty[d as keyof typeof t.recipe.difficulty]}
                   </Text>
                 </TouchableOpacity>
               ))}
               <View style={styles.chipDivider} />
               {DIET_OPTIONS.map((dt) => (
                 <TouchableOpacity
-                  key={dt.value}
-                  style={[styles.chip, dietType === dt.value && styles.chipActive]}
-                  onPress={() => setDietType(dietType === dt.value ? null : dt.value)}
+                  key={dt}
+                  style={[styles.chip, dietType === dt && styles.chipActive]}
+                  onPress={() => setDietType(dietType === dt ? null : dt)}
                 >
-                  <Text style={[styles.chipText, dietType === dt.value && styles.chipTextActive]}>
-                    {dt.label}
+                  <Text style={[styles.chipText, dietType === dt && styles.chipTextActive]}>
+                    {t.recipe.diet[dt]}
                   </Text>
                 </TouchableOpacity>
               ))}
@@ -152,8 +150,8 @@ export default function RecipesScreen() {
         )}
         ListEmptyComponent={
           <View style={styles.empty}>
-            <Text style={styles.emptyTitle}>No recipes found</Text>
-            <Text style={styles.emptySubtitle}>Try changing your filters</Text>
+            <Text style={styles.emptyTitle}>{t.recipe.emptyTitle}</Text>
+            <Text style={styles.emptySubtitle}>{t.recipe.emptySubtitle}</Text>
           </View>
         }
       />

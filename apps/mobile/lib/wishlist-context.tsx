@@ -3,6 +3,7 @@ import { api } from "./api";
 import { useAuth } from "./auth-context";
 import { useToast } from "./toast-context";
 import { useStore } from "./store-context";
+import { strings } from "./i18n";
 
 interface WishlistContextType {
   wishlistedIds: Set<string>;
@@ -54,7 +55,7 @@ export function WishlistProvider({ children }: { children: React.ReactNode }) {
 
   const toggle = useCallback(async (productId: string) => {
     if (!authRef.current) {
-      toast.show("Sign in to save to wishlist", "error");
+      toast.show(strings("catalog").wishlistSignIn, "error");
       return;
     }
     // Prevent concurrent toggles for the same product
@@ -69,7 +70,7 @@ export function WishlistProvider({ children }: { children: React.ReactNode }) {
       else next.add(productId);
       return next;
     });
-    toast.show(wasWishlisted ? "Removed from wishlist" : "Added to wishlist", "success");
+    toast.show(strings("catalog")[wasWishlisted ? "wishlistRemoved" : "wishlistAdded"], "success");
     try {
       const res = await api.post<{ wishlisted: boolean }>("/api/v1/wishlist/toggle", { productId, storeId });
       // Reconcile with server response (silent — no toast)

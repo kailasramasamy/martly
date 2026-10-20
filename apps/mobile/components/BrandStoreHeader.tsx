@@ -7,6 +7,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
 import { brandDisplayName, brandTheme } from "../lib/brand-strip";
 import { useLanguage } from "../lib/language-context";
+import { useStrings } from "../lib/i18n/use-strings";
 import type { BrandCategory } from "../lib/brand-store";
 
 export interface BrandInfo { name: string; imageUrl: string | null; themeColor: string | null; themeColorSecondary: string | null }
@@ -26,6 +27,8 @@ interface HeroProps {
 // Full-bleed brand hero: runs under the status bar, carries the back button, brand block and in-store search
 export function BrandHero({ brand, productCount, categoryCount, query, onQuery, inputRef, searchOpen, onSearchOpen }: HeroProps) {
   const insets = useSafeAreaInsets();
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   const { base, dark, accent } = brandTheme(brand);
   const name = brandDisplayName(brand.name);
   return (
@@ -38,11 +41,11 @@ export function BrandHero({ brand, productCount, categoryCount, query, onQuery, 
       <Text style={styles.watermark} numberOfLines={1}>{name}</Text>
 
       <View style={styles.topRow}>
-        <Pressable style={styles.iconBtn} onPress={() => router.back()} hitSlop={8} accessibilityLabel="Back">
+        <Pressable style={styles.iconBtn} onPress={() => router.back()} hitSlop={8} accessibilityLabel={tc.back}>
           <Ionicons name="chevron-back" size={22} color="#fff" />
         </Pressable>
         {!searchOpen && (
-          <Pressable style={styles.iconBtn} onPress={() => onSearchOpen(true)} hitSlop={8} accessibilityLabel={`Search in ${name}`}>
+          <Pressable style={styles.iconBtn} onPress={() => onSearchOpen(true)} hitSlop={8} accessibilityLabel={t.searchIn(name)}>
             <Ionicons name="search" size={20} color="#fff" />
           </Pressable>
         )}
@@ -55,10 +58,10 @@ export function BrandHero({ brand, productCount, categoryCount, query, onQuery, 
             : <Text style={[styles.logoWordmark, { color: base }]} numberOfLines={2}>{name}</Text>}
         </View>
         <View style={styles.brandText}>
-          <Text style={styles.eyebrow}>BRAND STORE</Text>
+          <Text style={styles.eyebrow}>{t.brand.eyebrow}</Text>
           <Text style={styles.name} numberOfLines={1}>{name}</Text>
           <Text style={styles.meta}>
-            {productCount} products · {categoryCount} {categoryCount === 1 ? "category" : "categories"}
+            {t.brand.meta(productCount, categoryCount)}
           </Text>
         </View>
       </View>
@@ -69,13 +72,13 @@ export function BrandHero({ brand, productCount, categoryCount, query, onQuery, 
           ref={inputRef}
           value={query}
           onChangeText={onQuery}
-          placeholder={`Search in ${name}`}
+          placeholder={t.searchIn(name)}
           placeholderTextColor="#94a3b8"
           style={styles.searchInput}
           returnKeyType="search"
           autoCorrect={false}
         />
-        <Pressable onPress={() => { onQuery(""); onSearchOpen(false); }} hitSlop={10} accessibilityLabel="Close search">
+        <Pressable onPress={() => { onQuery(""); onSearchOpen(false); }} hitSlop={10} accessibilityLabel={t.closeSearch}>
           <Ionicons name="close-circle" size={18} color="#94a3b8" />
         </Pressable>
       </View>}
@@ -103,11 +106,12 @@ export function BrandCategoryTiles({ brand, categories, activeId, onSelect }: {
   brand: BrandInfo; categories: BrandCategory[]; activeId: string | null; onSelect: (id: string | null) => void;
 }) {
   const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
   const { base } = brandTheme(brand);
   if (categories.length < 2) return null;
   return (
     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.tiles} contentContainerStyle={styles.tilesContent}>
-      <Tile label="All" imageUrl={brand.imageUrl} active={activeId === null} color={base} onPress={() => onSelect(null)} zoom={false} />
+      <Tile label={t.all} imageUrl={brand.imageUrl} active={activeId === null} color={base} onPress={() => onSelect(null)} zoom={false} />
       {categories.map((c) => (
         <Tile key={c.id} label={getLocalizedName(c)} imageUrl={c.imageUrl} active={activeId === c.id} color={base} onPress={() => onSelect(c.id)} />
       ))}

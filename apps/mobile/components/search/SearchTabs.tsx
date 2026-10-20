@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { FlatList, Image, Text, TouchableOpacity, View, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { SearchFacets } from "../../lib/types";
 import type { SearchTab } from "../../lib/use-product-search";
 
@@ -69,15 +70,16 @@ function TagTab({ item, active, onPress }: { item: TabItem; active: boolean; onP
 }
 
 export function SearchTabs({ facets, active, onSelect, compact = false, hidden = false }: SearchTabsProps) {
+  const t = useStrings("search");
   const listRef = useRef<FlatList<TabItem>>(null);
   const tabs = tabItems(facets);
-  const items: TabItem[] = [{ tab: null, label: "All", imageUrl: null }, ...tabs];
+  const items: TabItem[] = [{ tab: null, label: t.all, imageUrl: null }, ...tabs];
   const activeIndex = items.findIndex((i) => i.tab?.key === active?.key);
 
   useEffect(() => {
     if (!hidden || activeIndex < 0 || tabs.length === 0) return;
-    const t = setTimeout(() => listRef.current?.scrollToIndex({ index: activeIndex, viewPosition: 0.5, animated: false }), 0);
-    return () => clearTimeout(t);
+    const timer = setTimeout(() => listRef.current?.scrollToIndex({ index: activeIndex, viewPosition: 0.5, animated: false }), 0);
+    return () => clearTimeout(timer);
   }, [hidden, activeIndex, tabs.length]);
 
   if (tabs.length === 0) return null;

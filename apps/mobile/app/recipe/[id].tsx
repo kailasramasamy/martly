@@ -16,6 +16,8 @@ import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
 import { useCart } from "../../lib/cart-context";
 import { useToast } from "../../lib/toast-context";
+import { useLanguage } from "../../lib/language-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { RecipeDetail, RecipeIngredient } from "../../lib/types";
 import { colors } from "../../constants/theme";
 
@@ -29,9 +31,12 @@ export default function RecipeDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { selectedStore } = useStore();
   const storeId = selectedStore?.id;
-  const storeName = selectedStore?.name ?? "";
   const cart = useCart();
   const toast = useToast();
+  const { getLocalizedName } = useLanguage();
+  const storeName = selectedStore ? getLocalizedName(selectedStore) : "";
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   const insets = useSafeAreaInsets();
 
   const [recipe, setRecipe] = useState<RecipeDetail | null>(null);
@@ -92,12 +97,12 @@ export default function RecipeDetailScreen() {
     // Check if cart has items from a different store
     if (cart.storeId && cart.storeId !== storeId && cart.items.length > 0) {
       Alert.alert(
-        "Switch Store?",
-        `Your cart has items from ${cart.storeName}. Adding from ${storeName} will clear existing items.`,
+        t.recipe.switchTitle,
+        t.recipe.switchMessage(cart.storeName ?? "", storeName),
         [
-          { text: "Cancel", style: "cancel" },
+          { text: tc.cancel, style: "cancel" },
           {
-            text: "Switch & Add",
+            text: t.recipe.switchConfirm,
             style: "destructive",
             onPress: () => addItems(true),
           },
@@ -110,7 +115,7 @@ export default function RecipeDetailScreen() {
   }, [storeId, recipe, checkedAvailable, cart, storeName]);
 
   const addItems = (clearFirst: boolean) => {
-    if (!storeId) return;
+    if (!selectedStore) return;
     setAdding(true);
 
     if (clearFirst) {
@@ -121,7 +126,7 @@ export default function RecipeDetailScreen() {
     for (const item of checkedAvailable) {
       if (!item.storeProduct) continue;
       const sp = item.storeProduct;
-      cart.addItem(storeId, storeName, {
+      cart.addItem(selectedStore, {
         storeProductId: sp.id,
         productId: item.product.id,
         productName: item.product.name,
@@ -134,7 +139,7 @@ export default function RecipeDetailScreen() {
     }
 
     setAdding(false);
-    toast.show(`Added ${addedCount} items to cart`, "success");
+    toast.show(t.recipe.addedToCart(addedCount), "success");
   };
 
   if (loading) {
@@ -148,7 +153,7 @@ export default function RecipeDetailScreen() {
   if (!recipe) {
     return (
       <View style={styles.center}>
-        <Text style={styles.errorText}>Recipe not found</Text>
+        <Text style={styles.errorText}>{t.recipe.notFound}</Text>
       </View>
     );
   }
@@ -167,28 +172,28 @@ export default function RecipeDetailScreen() {
 
         {/* Title & Description */}
         <View style={styles.header}>
-          <Text style={styles.title}>{recipe.title}</Text>
+          <Text style={styles.title}>{getLocalizedName({ name: recipe.title, translations: recipe.translations })}</Text>
           {recipe.description && (
-            <Text style={styles.description}>{recipe.description}</Text>
+            <Text style={styles.description}>{getLocalizedName({ name: recipe.description, translations: recipe.translations }, "description")}</Text>
           )}
         </View>
 
         {/* Metadata row */}
         <View style={styles.metaRow}>
           {recipe.prepTime && (
-            <MetaChip icon="time-outline" label={`${recipe.prepTime}m prep`} />
+            <MetaChip icon="time-outline" label={t.recipe.prep(recipe.prepTime)} />
           )}
           {recipe.cookTime && (
-            <MetaChip icon="flame-outline" label={`${recipe.cookTime}m cook`} />
+            <MetaChip icon="flame-outline" label={t.recipe.cook(recipe.cookTime)} />
           )}
           {recipe.servings && (
-            <MetaChip icon="people-outline" label={`${recipe.servings} servings`} />
+            <MetaChip icon="people-outline" label={t.recipe.servings(recipe.servings)} />
           )}
           {recipe.difficulty && (
             <View style={[styles.metaChip, { borderColor: DIFFICULTY_COLORS[recipe.difficulty] + "40" }]}>
               <View style={[styles.diffDot, { backgroundColor: DIFFICULTY_COLORS[recipe.difficulty] }]} />
               <Text style={[styles.metaChipText, { color: DIFFICULTY_COLORS[recipe.difficulty] }]}>
-                {recipe.difficulty.charAt(0) + recipe.difficulty.slice(1).toLowerCase()}
+                {t.recipe.difficulty[recipe.difficulty as keyof typeof t.recipe.difficulty]}
               </Text>
             </View>
           )}
@@ -200,7 +205,7 @@ export default function RecipeDetailScreen() {
         {/* Ingredients */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>
-            Ingredients ({recipe.items.length})
+            {t.recipe.ingredients(recipe.items.length)}
           </Text>
           {recipe.items.map((item) => (
             <IngredientRow
@@ -215,7 +220,7 @@ export default function RecipeDetailScreen() {
 
         {/* Instructions */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Instructions</Text>
+          <Text style={styles.sectionTitle}>{t.recipe.instructions}</Text>
           {(recipe.instructions as string[]).map((step, i) => (
             <View key={i} style={styles.stepRow}>
               <View style={styles.stepNumber}>
@@ -240,7 +245,7 @@ export default function RecipeDetailScreen() {
               <ActivityIndicator size="small" color="#fff" />
             ) : (
               <Text style={styles.addButtonText}>
-                Add {checkedAvailable.length} items — {"\u20B9"}{Math.round(totalPrice)}
+                {t.recipe.addButton(checkedAvailable.length, Math.round(totalPrice))}
               </Text>
             )}
           </TouchableOpacity>
@@ -271,6 +276,8 @@ function IngredientRow({
   storeId: string | undefined;
 }) {
   const router = useRouter();
+  const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
   const unavailable = !item.available;
   const price = item.storeProduct?.pricing?.effectivePrice ?? Number(item.storeProduct?.price ?? 0);
 
@@ -300,7 +307,7 @@ function IngredientRow({
         )}
         <View style={styles.ingredientInfo}>
           <Text style={[styles.ingredientName, unavailable && styles.textMuted]} numberOfLines={1}>
-            {item.product.name}
+            {getLocalizedName(item.product)}
           </Text>
           <View style={styles.ingredientMeta}>
             <Text style={styles.ingredientQty}>{item.displayQty}</Text>
@@ -309,7 +316,7 @@ function IngredientRow({
         </View>
         <View style={styles.ingredientRight}>
           {unavailable ? (
-            <Text style={styles.unavailableLabel}>Unavailable</Text>
+            <Text style={styles.unavailableLabel}>{t.recipe.unavailable}</Text>
           ) : (
             <Text style={styles.ingredientPrice}>{"\u20B9"}{Math.round(price)}</Text>
           )}

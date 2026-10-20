@@ -3,6 +3,8 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import type { RecipeSummary } from "../lib/types";
 import { colors } from "../constants/theme";
+import { useLanguage } from "../lib/language-context";
+import { useStrings } from "../lib/i18n/use-strings";
 
 const DIFFICULTY_COLORS: Record<string, string> = {
   EASY: "#16a34a",
@@ -15,6 +17,8 @@ interface RecipeCardProps {
 }
 
 export function RecipeCard({ recipe }: RecipeCardProps) {
+  const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
   const allAvailable = recipe.availableCount === recipe.ingredientCount;
 
   return (
@@ -38,26 +42,26 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
               { backgroundColor: recipe.dietType === "VEG" ? "#16a34a" : recipe.dietType === "NON_VEG" ? "#dc2626" : "#d97706" },
             ]}
           >
-            <Text style={styles.dietText}>{recipe.dietType === "NON_VEG" ? "Non-Veg" : recipe.dietType === "EGG" ? "Egg" : "Veg"}</Text>
+            <Text style={styles.dietText}>{t.recipe.diet[recipe.dietType === "NON_VEG" || recipe.dietType === "EGG" ? recipe.dietType : "VEG"]}</Text>
           </View>
         )}
       </View>
       <View style={styles.content}>
         <Text style={styles.title} numberOfLines={2}>
-          {recipe.title}
+          {getLocalizedName({ name: recipe.title, translations: recipe.translations })}
         </Text>
         <View style={styles.metaRow}>
           {recipe.cookTime && (
             <View style={styles.metaItem}>
               <Ionicons name="time-outline" size={12} color="#64748b" />
-              <Text style={styles.metaText}>{recipe.cookTime}m</Text>
+              <Text style={styles.metaText}>{t.recipe.minutes(recipe.cookTime)}</Text>
             </View>
           )}
           {recipe.difficulty && (
             <View style={styles.metaItem}>
               <View style={[styles.difficultyDot, { backgroundColor: DIFFICULTY_COLORS[recipe.difficulty] ?? "#94a3b8" }]} />
               <Text style={[styles.metaText, { color: DIFFICULTY_COLORS[recipe.difficulty] ?? "#94a3b8" }]}>
-                {recipe.difficulty.charAt(0) + recipe.difficulty.slice(1).toLowerCase()}
+                {t.recipe.difficulty[recipe.difficulty as keyof typeof t.recipe.difficulty]}
               </Text>
             </View>
           )}

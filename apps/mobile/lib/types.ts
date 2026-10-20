@@ -29,7 +29,7 @@ export interface Store {
   offerText?: string | null;
   brandColor?: string | null;
   highlights?: string[];
-  translations?: Record<string, { tagline?: string; offerText?: string }> | null;
+  translations?: Record<string, { name?: string; tagline?: string; offerText?: string }> | null;
   /** Items on offer right now and the biggest saving among them */
   deals?: { count: number; maxPercent: number } | null;
   /** Scheduled delivery slots still open for booking, soonest first (IST date, HH:MM times) */
@@ -96,7 +96,7 @@ export interface Product {
   regulatoryMarks: string[];
   certifications: string[];
   dangerWarnings: string | null;
-  subcategory?: { id: string; name: string; category?: { id: string; name: string; department?: { id: string; name: string } } } | null;
+  subcategory?: { id: string; name: string; translations?: Record<string, { name?: string; description?: string }> | null; category?: { id: string; name: string; department?: { id: string; name: string } } } | null;
   variants?: Variant[];
   nutritionalInfo?: Record<string, string> | null;
   ingredients?: string | null;
@@ -218,6 +218,7 @@ export interface RecipeIngredient {
   product: {
     id: string;
     name: string;
+    translations?: Translations | null;
     imageUrl: string | null;
     foodType: string | null;
   };
@@ -476,11 +477,14 @@ export interface SubscriptionItem {
   storeProduct: {
     id: string;
     price: number;
-    product: { id: string; name: string; imageUrl: string | null };
+    product: { id: string; name: string; imageUrl: string | null; translations?: Translations | null };
     variant: { id: string; name: string; unitType: string; unitValue: string; mrp: number | null };
   };
   pricing?: Pricing;
 }
+
+/** A store as other records carry it: enough to show its name in the app language */
+export type StoreLabel = Pick<Store, "id" | "name" | "translations">;
 
 export interface Subscription {
   id: string;
@@ -496,7 +500,7 @@ export interface Subscription {
   autoPayWithWallet: boolean;
   createdAt: string;
   items: SubscriptionItem[];
-  store?: { id: string; name: string };
+  store?: StoreLabel;
   _count?: { items: number };
 }
 
@@ -505,7 +509,7 @@ export interface BasketItem {
   quantity: number;
   source: "subscription" | "addon";
   subscriptionId?: string;
-  product: { id: string; name: string; imageUrl: string | null };
+  product: { id: string; name: string; imageUrl: string | null; translations?: Translations | null };
   variant: { id: string; name: string; unitType: string; unitValue: string };
   pricing: Pricing;
   isOverridden?: boolean;
@@ -614,7 +618,7 @@ export interface ReturnLineSummary {
   quantity: number;
   orderItem: {
     unitPrice?: string;
-    product: { name: string; imageUrl?: string | null; images?: string[] };
+    product: { name: string; translations?: Translations | null; imageUrl?: string | null; images?: string[] };
     variant?: { name: string; imageUrl?: string | null } | null;
   };
 }

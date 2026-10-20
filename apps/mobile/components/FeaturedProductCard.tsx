@@ -5,6 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
 import { useLanguage } from "../lib/language-context";
+import { useStrings } from "../lib/i18n/use-strings";
 import { FoodTypeMark } from "./FoodTypeMark";
 import { AdBadge, BestsellerBadge, UnitPrice } from "./ProductBadges";
 import { CompactProductCard } from "./CompactProductCard";
@@ -63,6 +64,8 @@ function CardImage({ item, primaryId, size, isOutOfStock, isWishlisted, onHeart,
   item: StoreProduct; primaryId: string; size: number; isOutOfStock: boolean; isWishlisted?: boolean; onHeart?: () => void;
   pager?: React.ReactNode; control: React.ReactNode; elevated?: boolean;
 }) {
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   const productImage = sizeImage(item, primaryId);
   return (
     <View style={[styles.imageContainer, { width: size, height: size }, elevated && styles.imageElevated]}>
@@ -75,11 +78,11 @@ function CardImage({ item, primaryId, size, isOutOfStock, isWishlisted, onHeart,
       {item.product.isBestseller && <BestsellerBadge />}
       {isOutOfStock && (
         <View style={styles.oosOverlay}>
-          <Text style={styles.oosLabel}>Out of stock</Text>
+          <Text style={styles.oosLabel}>{tc.outOfStock}</Text>
         </View>
       )}
       {onHeart && (
-        <Pressable style={styles.heartBtn} onPress={onHeart} hitSlop={8} accessibilityLabel="Toggle wishlist">
+        <Pressable style={styles.heartBtn} onPress={onHeart} hitSlop={8} accessibilityLabel={t.toggleWishlist}>
           <Ionicons name={isWishlisted ? "heart" : "heart-outline"} size={15} color={isWishlisted ? "#ef4444" : "#94a3b8"} />
         </Pressable>
       )}
@@ -89,6 +92,8 @@ function CardImage({ item, primaryId, size, isOutOfStock, isWishlisted, onHeart,
 }
 
 function PriceBlock({ item, isMember, saving }: { item: StoreProduct; isMember?: boolean; saving?: string | null }) {
+  const t = useStrings("catalog");
+  const tc = useStrings("common");
   const hasDiscount = item.pricing?.discountActive;
   const displayPrice = hasDiscount ? item.pricing!.effectivePrice : Number(item.price);
   const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
@@ -104,10 +109,10 @@ function PriceBlock({ item, isMember, saving }: { item: StoreProduct; isMember?:
         {offPercent > 0 && <Text style={styles.mrp}>{"\u20B9"}{struck!.toFixed(0)}</Text>}
       </View>
       <UnitPrice price={shown} variant={item.variant} />
-      {offPercent > 0 && <View style={styles.offTag}><Text style={styles.off}>{offPercent}% OFF</Text></View>}
+      {offPercent > 0 && <View style={styles.offTag}><Text style={styles.off}>{tc.percentOff(offPercent)}</Text></View>}
       {saving && <Text style={styles.saving}>{saving}</Text>}
       {!isMember && memberCheaper && (
-        <Text style={styles.memberHint}>{"\u20B9"}{memberPrice!.toFixed(0)} with Plus</Text>
+        <Text style={styles.memberHint}>{t.withPlus(memberPrice!.toFixed(0))}</Text>
       )}
     </View>
   );
@@ -127,6 +132,7 @@ interface AddControlProps {
 // ADD (with "N options" when there are several sizes); once in the cart a wider stepper takes its place, for thumbs.
 // With several sizes every control opens the size sheet, since which size to change is ambiguous.
 function AddControl({ item, quantity, variantCount, isOutOfStock, onAddToCart, onUpdateQuantity, onShowVariants, cardWidth }: AddControlProps) {
+  const t = useStrings("catalog");
   const hasOptions = variantCount > 1 && onShowVariants != null;
   const increment = hasOptions ? onShowVariants : () => onAddToCart(item);
   const decrement = hasOptions ? onShowVariants : () => onUpdateQuantity(item.id, quantity - 1);
@@ -134,11 +140,11 @@ function AddControl({ item, quantity, variantCount, isOutOfStock, onAddToCart, o
   if (quantity > 0) {
     return (
       <View style={[styles.stepper, { width: stepperWidth(cardWidth) }]}>
-        <TouchableOpacity style={styles.stepBtn} onPress={decrement} hitSlop={STEP_HIT_SLOP} accessibilityLabel="Remove one">
+        <TouchableOpacity style={styles.stepBtn} onPress={decrement} hitSlop={STEP_HIT_SLOP} accessibilityLabel={t.removeOne}>
           <Ionicons name="remove" size={17} color="#fff" />
         </TouchableOpacity>
         <Text style={styles.stepText}>{quantity}</Text>
-        <TouchableOpacity style={styles.stepBtn} onPress={increment} hitSlop={STEP_HIT_SLOP} accessibilityLabel="Add one more">
+        <TouchableOpacity style={styles.stepBtn} onPress={increment} hitSlop={STEP_HIT_SLOP} accessibilityLabel={t.addOneMore}>
           <Ionicons name="add" size={17} color="#fff" />
         </TouchableOpacity>
       </View>
@@ -151,22 +157,21 @@ function AddControl({ item, quantity, variantCount, isOutOfStock, onAddToCart, o
       disabled={isOutOfStock}
       activeOpacity={0.8}
       hitSlop={HIT_SLOP}
-      accessibilityLabel={hasOptions ? `Add, choose from ${variantCount} sizes` : "Add to cart"}
+      accessibilityLabel={hasOptions ? t.addChooseSize(variantCount) : t.addToCartLabel}
     >
-      <Text style={[styles.addBtnText, isOutOfStock && styles.addBtnTextDisabled]}>ADD</Text>
-      {hasOptions && !isOutOfStock && <Text style={styles.optionsText}>{variantCount} options</Text>}
+      <Text style={[styles.addBtnText, isOutOfStock && styles.addBtnTextDisabled]}>{t.addBtn}</Text>
+      {hasOptions && !isOutOfStock && <Text style={styles.optionsText} numberOfLines={1}>{t.options(variantCount)}</Text>}
     </TouchableOpacity>
   );
 }
 
 function CardDetails({ item, lowStock, sponsored }: { item: StoreProduct; lowStock: number | null; sponsored: boolean }) {
-  const { getLocalizedName, getLocalizedSubtitle } = useLanguage();
-  const subtitle = getLocalizedSubtitle(item.product);
+  const { getLocalizedName } = useLanguage();
+  const t = useStrings("catalog");
   return (
     <>
       {sponsored && <AdBadge />}
       <Text style={styles.name} numberOfLines={3}>{getLocalizedName(item.product)}</Text>
-      {subtitle && <Text style={styles.nameSubtitle} numberOfLines={1}>{subtitle}</Text>}
       {(item.product.averageRating ?? 0) > 0 && (
         <View style={styles.ratingRow}>
           <Ionicons name="star" size={10} color="#f59e0b" />
@@ -174,7 +179,7 @@ function CardDetails({ item, lowStock, sponsored }: { item: StoreProduct; lowSto
           {(item.product.reviewCount ?? 0) > 0 && <Text style={styles.ratingCount}>({item.product.reviewCount})</Text>}
         </View>
       )}
-      {lowStock != null && <Text style={styles.lowStock}>Only {lowStock} left</Text>}
+      {lowStock != null && <Text style={styles.lowStock}>{t.onlyLeft(lowStock)}</Text>}
     </>
   );
 }
@@ -303,7 +308,6 @@ const styles = StyleSheet.create({
   oosLabel: { fontFamily: fonts.bold, fontSize: 10.5, color: colors.textSecondary },
   content: { paddingHorizontal: 2, paddingTop: 8 },
   name: { fontFamily: fonts.semibold, fontSize: 12.5, lineHeight: 16, minHeight: 32, color: colors.text, marginTop: 3 },
-  nameSubtitle: { fontFamily: fonts.regular, fontSize: 10, color: "#94a3b8" },
   // The pack size on show, just above the price
   unit: { fontFamily: fonts.medium, fontSize: 11.5, lineHeight: 15, color: colors.textSecondary, marginBottom: 2 },
   ratingRow: { flexDirection: "row", alignItems: "center", gap: 2, marginTop: 3 },

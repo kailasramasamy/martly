@@ -11,15 +11,18 @@ import { MemberCard } from "../components/membership/MemberCard";
 import { UpgradeCard } from "../components/membership/UpgradeCard";
 import type { MembershipPlan } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
+import { strings } from "../lib/i18n";
+import { useStrings } from "../lib/i18n/use-strings";
 
 function PlanChooser({ plans, busyPlanId, onSubscribe }: {
   plans: MembershipPlan[]; busyPlanId: string | null; onSubscribe: (plan: MembershipPlan) => void;
 }) {
+  const t = useStrings("account").membership;
   if (plans.length === 0) {
     return (
       <View style={styles.empty}>
         <Ionicons name="diamond-outline" size={44} color={colors.textSecondary} />
-        <Text style={styles.emptyText}>No membership plans available for this store yet.</Text>
+        <Text style={styles.emptyText}>{t.noPlans}</Text>
       </View>
     );
   }
@@ -28,7 +31,7 @@ function PlanChooser({ plans, busyPlanId, onSubscribe }: {
   return (
     <>
       <PlusHero maxPointsMultiplier={Math.max(...plans.map((p) => p.loyaltyMultiplier))} />
-      <Text style={styles.sectionTitle}>Choose your plan</Text>
+      <Text style={styles.sectionTitle}>{t.choosePlan}</Text>
       {plans.map((plan) => (
         <PlanCard
           key={plan.id}
@@ -48,6 +51,7 @@ function MembershipScreen() {
   const { selectedStore } = useStore();
   const { user } = useAuth();
   const plus = useMartPlus(selectedStore?.id);
+  const t = useStrings("account").membership;
 
   if (plus.loading) {
     return <View style={styles.center}><ActivityIndicator size="large" color={colors.primary} /></View>;
@@ -62,7 +66,7 @@ function MembershipScreen() {
         {plus.activeMembership ? (
           <>
             <MemberCard membership={plus.activeMembership} />
-            {plus.upgradeOptions.length > 0 && <Text style={styles.sectionTitle}>Upgrade your plan</Text>}
+            {plus.upgradeOptions.length > 0 && <Text style={styles.sectionTitle}>{t.upgradePlan}</Text>}
             {plus.upgradeOptions.map((option) => (
               <UpgradeCard
                 key={option.plan.id}
@@ -86,8 +90,8 @@ function MembershipScreen() {
           amount={plus.rpData.amount}
           currency={plus.rpData.currency}
           customerId={plus.rpData.customerId}
-          name="Mart Plus Membership"
-          description="Membership subscription"
+          name={t.checkoutName}
+          description={t.checkoutDescription}
           prefill={{ email: user?.email, name: user?.name, contact: user?.phone ?? undefined }}
           onSuccess={plus.onPaymentSuccess}
           onCancel={plus.onPaymentCancel}
@@ -106,4 +110,4 @@ const styles = StyleSheet.create({
   emptyText: { fontFamily: fonts.medium, fontSize: 14.5, color: colors.textSecondary, textAlign: "center" },
 });
 
-export default withSignIn(MembershipScreen, { icon: "star-outline", title: "Mart Plus", message: "Sign in to join Mart Plus for free delivery and member prices." });
+export default withSignIn(MembershipScreen, "star-outline", () => strings("account").signIn.membership);

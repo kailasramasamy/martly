@@ -22,6 +22,10 @@ import { useToast } from "../lib/toast-context";
 import { ConfirmSheet } from "../components/ConfirmSheet";
 import { colors, fonts } from "../constants/theme";
 import { withSignIn } from "../components/SignInPrompt";
+import { useStrings } from "../lib/i18n/use-strings";
+import { activeLocale, strings } from "../lib/i18n";
+import { useLanguage } from "../lib/language-context";
+import type { Translations } from "../lib/types";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
@@ -41,6 +45,7 @@ interface AIProduct {
   storeProductId: string;
   productId: string;
   name: string;
+  translations?: Translations | null;
   brand: string | null;
   variant: string;
   price: number;
@@ -101,6 +106,9 @@ function ProductCard({
   onAdd: () => void;
   onUpdateQty: (qty: number) => void;
 }) {
+  const t = useStrings("subscriptions");
+  const common = useStrings("common");
+  const { getLocalizedName } = useLanguage();
   const hasDiscount = product.originalPrice && product.originalPrice > product.price;
 
   return (
@@ -116,14 +124,14 @@ function ProductCard({
         {hasDiscount && (
           <View style={s.discountBadge}>
             <Text style={s.discountBadgeText}>
-              {Math.round(((product.originalPrice! - product.price) / product.originalPrice!) * 100)}% OFF
+              {common.percentOff(Math.round(((product.originalPrice! - product.price) / product.originalPrice!) * 100))}
             </Text>
           </View>
         )}
       </View>
 
       <View style={s.productInfo}>
-        <Text style={s.productName} numberOfLines={1}>{product.name}</Text>
+        <Text style={s.productName} numberOfLines={1}>{getLocalizedName(product)}</Text>
         {product.brand && <Text style={s.productBrand} numberOfLines={1}>{product.brand}</Text>}
         <Text style={s.productVariant}>{product.variant}</Text>
 
@@ -137,7 +145,7 @@ function ProductCard({
 
       {!product.inStock ? (
         <View style={s.outOfStockBtn}>
-          <Text style={s.outOfStockText}>Out of stock</Text>
+          <Text style={s.outOfStockText}>{common.outOfStock}</Text>
         </View>
       ) : cartQty > 0 ? (
         <View style={s.qtyRow}>
@@ -151,7 +159,7 @@ function ProductCard({
         </View>
       ) : (
         <TouchableOpacity style={s.addBtn} onPress={onAdd} activeOpacity={0.7}>
-          <Text style={s.addBtnText}>ADD</Text>
+          <Text style={s.addBtnText}>{t.ai.add}</Text>
         </TouchableOpacity>
       )}
     </View>
@@ -160,9 +168,12 @@ function ProductCard({
 
 // ── Main Screen ─────────────────────────────────────
 function AIOrderScreen() {
+  const t = useStrings("subscriptions");
+  const common = useStrings("common");
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { selectedStore } = useStore();
+  const { getLocalizedName } = useLanguage();
   const {
     items: cartItems,
     addItem,
@@ -221,24 +232,24 @@ function AIOrderScreen() {
     micPulseAnim.stopAnimation();
     micPulseAnim.setValue(1);
     if (event.error === "not-allowed") {
-      showToast("Microphone permission denied", "error");
+      showToast(t.ai.micDenied, "error");
     }
   });
 
   const startListening = useCallback(async () => {
     const result = await ExpoSpeechRecognitionModule.requestPermissionsAsync();
     if (!result.granted) {
-      showToast("Microphone permission denied", "error");
+      showToast(t.ai.micDenied, "error");
       return;
     }
     setInput("");
     ExpoSpeechRecognitionModule.start({
-      lang: "en-US",
+      lang: activeLocale(),
       interimResults: true,
       continuous: false,
       addsPunctuation: true,
     });
-  }, [showToast]);
+  }, [showToast, t]);
 
   const stopListening = useCallback(() => {
     ExpoSpeechRecognitionModule.stop();
@@ -319,14 +330,14 @@ function AIOrderScreen() {
         const errorMsg: ChatMessage = {
           id: `error-${Date.now()}`,
           role: "error",
-          content: "Something went wrong. Please try again.",
+          content: t.ai.error,
         };
         setMessages((prev) => prev.filter((m) => m.role !== "loading").concat(errorMsg));
       } finally {
         setSending(false);
       }
     },
-    [selectedStore, sending, apiMessages, cartPayload],
+    [selectedStore, sending, apiMessages, cartPayload, t],
   );
 
   const handleRetry = useCallback(() => {
@@ -345,6 +356,7 @@ function AIOrderScreen() {
         storeProductId: product.storeProductId,
         productId: product.productId,
         productName: product.name,
+        translations: product.translations,
         variantId: product.storeProductId,
         variantName: product.variant,
         price: product.price,
@@ -353,12 +365,12 @@ function AIOrderScreen() {
 
       if (cartStoreId && cartStoreId !== selectedStore.id) {
         setReplaceCartConfirm({
-          pending: () => addItem(selectedStore.id, selectedStore.name, item),
+          pending: () => addItem(selectedStore, item),
         });
         return;
       }
 
-      addItem(selectedStore.id, selectedStore.name, item);
+      addItem(selectedStore, item);
     },
     [selectedStore, cartStoreId, addItem],
   );
@@ -374,9 +386,7 @@ function AIOrderScreen() {
   const invertedMessages = useMemo(() => [...messages].reverse(), [messages]);
 
   // Welcome message (static, shown at the bottom of inverted list = top visually)
-  const welcomeContent = selectedStore
-    ? `Hi! I'm your Martly AI assistant for ${selectedStore.name}. Tell me what you'd like to order \u2014 for example, "I need milk and bread" or "show me snacks".`
-    : "";
+  const welcomeContent = selectedStore ? t.ai.welcome(getLocalizedName(selectedStore)) : "";
 
   const renderMessage = useCallback(
     ({ item }: { item: ChatMessage }) => {
@@ -413,7 +423,7 @@ function AIOrderScreen() {
               <Text style={s.errorText}>{item.content}</Text>
               <TouchableOpacity style={s.retryBtn} onPress={handleRetry} activeOpacity={0.7}>
                 <Ionicons name="refresh" size={14} color={colors.primary} />
-                <Text style={s.retryBtnText}>Retry</Text>
+                <Text style={s.retryBtnText}>{common.retry}</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -452,11 +462,8 @@ function AIOrderScreen() {
         </View>
       );
     },
-    [cartQtyMap, handleAddToCart, handleUpdateQty, handleRetry],
+    [cartQtyMap, handleAddToCart, handleUpdateQty, handleRetry, common],
   );
-
-  // ── Quick Suggestion Chips ──
-  const suggestions = ["Show categories", "Today's deals", "What's popular?"];
 
   const hasConversation = messages.length > 0;
 
@@ -468,13 +475,13 @@ function AIOrderScreen() {
           <View style={s.emptyIconCircle}>
             <Ionicons name="storefront-outline" size={40} color={colors.primary} />
           </View>
-          <Text style={s.emptyTitle}>No store selected</Text>
+          <Text style={s.emptyTitle}>{t.ai.noStore}</Text>
           <Text style={s.emptySubtitle}>
-            Please select a store from the home screen to start ordering with AI.
+            {t.ai.noStoreHint}
           </Text>
           <TouchableOpacity style={s.emptyBtn} onPress={() => router.back()} activeOpacity={0.7}>
             <Ionicons name="arrow-back" size={18} color="#fff" />
-            <Text style={s.emptyBtnText}>Go Back</Text>
+            <Text style={s.emptyBtnText}>{t.ai.goBack}</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -492,9 +499,9 @@ function AIOrderScreen() {
         <View style={s.headerCenter}>
           <View style={s.headerTitleRow}>
             <Ionicons name="sparkles" size={16} color={colors.primary} />
-            <Text style={s.headerTitle}>Martly AI</Text>
+            <Text style={s.headerTitle}>{t.ai.title}</Text>
           </View>
-          <Text style={s.headerSubtitle} numberOfLines={1}>{selectedStore.name}</Text>
+          <Text style={s.headerSubtitle} numberOfLines={1}>{getLocalizedName(selectedStore)}</Text>
         </View>
 
         <TouchableOpacity
@@ -532,7 +539,7 @@ function AIOrderScreen() {
               <View style={s.welcomeIconCircle}>
                 <Ionicons name="sparkles" size={24} color={colors.primary} />
               </View>
-              <Text style={s.welcomeTitle}>Martly AI</Text>
+              <Text style={s.welcomeTitle}>{t.ai.title}</Text>
               <Text style={s.welcomeText}>{welcomeContent}</Text>
             </View>
           }
@@ -543,7 +550,7 @@ function AIOrderScreen() {
           {/* Quick suggestions */}
           {!hasConversation && (
             <View style={s.suggestionsRow}>
-              {suggestions.map((text) => (
+              {t.ai.suggestions.map((text) => (
                 <TouchableOpacity
                   key={text}
                   style={s.suggestionChip}
@@ -559,7 +566,7 @@ function AIOrderScreen() {
           <View style={s.inputRow}>
             <TextInput
               style={s.textInput}
-              placeholder={isListening ? "Listening..." : "Ask me anything..."}
+              placeholder={isListening ? t.ai.listening : t.ai.askAnything}
               placeholderTextColor="#94a3b8"
               value={isListening ? partialTranscript : input}
               onChangeText={setInput}
@@ -611,11 +618,11 @@ function AIOrderScreen() {
 
       <ConfirmSheet
         visible={replaceCartConfirm !== null}
-        title="Replace Cart?"
-        message="Your cart has items from another store. Adding this item will replace your current cart."
+        title={t.reorder.replaceTitle}
+        message={t.ai.replaceMessage}
         icon="cart-outline"
         iconColor="#f59e0b"
-        confirmLabel="Replace"
+        confirmLabel={t.reorder.replace}
         onConfirm={() => {
           replaceCartConfirm?.pending();
           setReplaceCartConfirm(null);
@@ -1105,4 +1112,7 @@ const s = StyleSheet.create({
   },
 });
 
-export default withSignIn(AIOrderScreen, { icon: "sparkles-outline", title: "Order with AI", message: "Sign in to build your basket by chatting." });
+export default withSignIn(AIOrderScreen, "sparkles-outline", () => ({
+  title: strings("subscriptions").ai.signInTitle,
+  message: strings("subscriptions").ai.signInMessage,
+}));

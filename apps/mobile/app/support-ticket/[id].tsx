@@ -13,6 +13,11 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { colors, spacing, fontSize, fonts } from "../../constants/theme";
 import { withSignIn } from "../../components/SignInPrompt";
+import { strings } from "../../lib/i18n";
+import { useStrings } from "../../lib/i18n/use-strings";
+import { useLanguage } from "../../lib/language-context";
+import type { StoreLabel } from "../../lib/types";
+import { formatDate, formatTime } from "../../lib/i18n/format";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
@@ -28,23 +33,25 @@ interface SupportTicket {
   status: "OPEN" | "RESOLVED" | "CLOSED";
   messages: TicketMessage[];
   createdAt: string;
-  store: { id: string; name: string } | null;
+  store: StoreLabel | null;
   order: { id: string; status: string } | null;
 }
 
-const TICKET_STATUS_CONFIG: Record<string, { color: string; bg: string; label: string }> = {
-  OPEN: { color: "#92400e", bg: "#fef3c7", label: "Open" },
-  RESOLVED: { color: "#166534", bg: "#dcfce7", label: "Resolved" },
-  CLOSED: { color: "#475569", bg: "#f1f5f9", label: "Closed" },
+const TICKET_STATUS_CONFIG: Record<string, { color: string; bg: string }> = {
+  OPEN: { color: "#92400e", bg: "#fef3c7" },
+  RESOLVED: { color: "#166534", bg: "#dcfce7" },
+  CLOSED: { color: "#475569", bg: "#f1f5f9" },
 };
 
-const ROLE_CONFIG: Record<string, { label: string; bubbleBg: string; textColor: string; align: "right" | "left"; badgeBg: string; badgeColor: string }> = {
-  user: { label: "You", bubbleBg: "#3b82f6", textColor: "#fff", align: "right", badgeBg: "#3b82f6", badgeColor: "#fff" },
-  assistant: { label: "AI Support", bubbleBg: "#fff", textColor: colors.text, align: "left", badgeBg: colors.primary, badgeColor: "#fff" },
-  admin: { label: "Admin", bubbleBg: "#fff", textColor: colors.text, align: "left", badgeBg: "#f59e0b", badgeColor: "#fff" },
+const ROLE_CONFIG: Record<string, { bubbleBg: string; textColor: string; align: "right" | "left"; badgeBg: string; badgeColor: string }> = {
+  user: { bubbleBg: "#3b82f6", textColor: "#fff", align: "right", badgeBg: "#3b82f6", badgeColor: "#fff" },
+  assistant: { bubbleBg: "#fff", textColor: colors.text, align: "left", badgeBg: colors.primary, badgeColor: "#fff" },
+  admin: { bubbleBg: "#fff", textColor: colors.text, align: "left", badgeBg: "#f59e0b", badgeColor: "#fff" },
 };
 
 function SupportTicketDetailScreen() {
+  const t = useStrings("subscriptions");
+  const { getLocalizedName } = useLanguage();
   const { id } = useLocalSearchParams<{ id: string }>();
   const [ticket, setTicket] = useState<SupportTicket | null>(null);
   const [loading, setLoading] = useState(true);
@@ -80,7 +87,7 @@ function SupportTicketDetailScreen() {
     return (
       <View style={styles.loadingContainer}>
         <Ionicons name="alert-circle-outline" size={40} color="#94a3b8" />
-        <Text style={styles.errorText}>Ticket not found</Text>
+        <Text style={styles.errorText}>{t.tickets.notFound}</Text>
       </View>
     );
   }
@@ -100,7 +107,7 @@ function SupportTicketDetailScreen() {
             <View style={styles.subjectRow}>
               <Text style={styles.subject}>{ticket.subject}</Text>
               <View style={[styles.statusBadge, { backgroundColor: cfg.bg }]}>
-                <Text style={[styles.statusBadgeText, { color: cfg.color }]}>{cfg.label}</Text>
+                <Text style={[styles.statusBadgeText, { color: cfg.color }]}>{t.tickets.status[ticket.status]}</Text>
               </View>
             </View>
 
@@ -108,38 +115,36 @@ function SupportTicketDetailScreen() {
             <View style={styles.metaCard}>
               <View style={styles.metaItem}>
                 <Ionicons name="calendar-outline" size={14} color={colors.textSecondary} />
-                <Text style={styles.metaLabel}>Created</Text>
+                <Text style={styles.metaLabel}>{t.tickets.created}</Text>
                 <Text style={styles.metaValue}>
-                  {new Date(ticket.createdAt).toLocaleDateString(undefined, {
-                    year: "numeric", month: "short", day: "numeric",
-                  })}
+                  {formatDate(ticket.createdAt, { year: "numeric", month: "short", day: "numeric" })}
                 </Text>
               </View>
               {ticket.store && (
                 <View style={styles.metaItem}>
                   <Ionicons name="storefront-outline" size={14} color={colors.textSecondary} />
-                  <Text style={styles.metaLabel}>Store</Text>
-                  <Text style={styles.metaValue}>{ticket.store.name}</Text>
+                  <Text style={styles.metaLabel}>{t.list.store}</Text>
+                  <Text style={styles.metaValue}>{getLocalizedName(ticket.store)}</Text>
                 </View>
               )}
               {ticket.order && (
                 <View style={styles.metaItem}>
                   <Ionicons name="receipt-outline" size={14} color={colors.textSecondary} />
-                  <Text style={styles.metaLabel}>Order</Text>
+                  <Text style={styles.metaLabel}>{t.tickets.orderLabel}</Text>
                   <Text style={styles.metaValue}>#{ticket.order.id.slice(0, 8)}</Text>
                 </View>
               )}
             </View>
 
             {/* Conversation header */}
-            <Text style={styles.conversationTitle}>Conversation</Text>
+            <Text style={styles.conversationTitle}>{t.tickets.conversation}</Text>
 
             {/* Pending notice for open tickets */}
             {ticket.status === "OPEN" && (
               <View style={styles.pendingNotice}>
                 <Ionicons name="time-outline" size={16} color="#92400e" />
                 <Text style={styles.pendingNoticeText}>
-                  An admin will respond to your ticket soon.
+                  {t.tickets.pending}
                 </Text>
               </View>
             )}
@@ -149,9 +154,7 @@ function SupportTicketDetailScreen() {
           const roleCfg = ROLE_CONFIG[item.role] ?? ROLE_CONFIG.assistant;
           const isUser = roleCfg.align === "right";
           const time = item.timestamp
-            ? new Date(item.timestamp).toLocaleTimeString(undefined, {
-                hour: "2-digit", minute: "2-digit",
-              })
+            ? formatTime(item.timestamp, { hour: "2-digit", minute: "2-digit" })
             : "";
 
           return (
@@ -167,7 +170,7 @@ function SupportTicketDetailScreen() {
               )}
               <View style={{ maxWidth: SCREEN_WIDTH - 90 }}>
                 {!isUser && (
-                  <Text style={styles.roleLabel}>{roleCfg.label}</Text>
+                  <Text style={styles.roleLabel}>{t.tickets.roles[item.role in ROLE_CONFIG ? (item.role as keyof typeof t.tickets.roles) : "assistant"]}</Text>
                 )}
                 <View
                   style={[
@@ -188,7 +191,7 @@ function SupportTicketDetailScreen() {
         ListEmptyComponent={
           <View style={styles.emptyMessages}>
             <Ionicons name="chatbubbles-outline" size={28} color="#cbd5e1" />
-            <Text style={styles.emptyMessagesText}>No messages in this ticket</Text>
+            <Text style={styles.emptyMessagesText}>{t.tickets.noMessages}</Text>
           </View>
         }
       />
@@ -362,4 +365,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withSignIn(SupportTicketDetailScreen, { icon: "chatbubbles-outline", title: "Support ticket", message: "Sign in to see this request." });
+export default withSignIn(SupportTicketDetailScreen, "chatbubbles-outline", () => ({
+  title: strings("subscriptions").tickets.detailSignInTitle,
+  message: strings("subscriptions").tickets.detailSignInMessage,
+}));

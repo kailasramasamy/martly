@@ -1,6 +1,7 @@
 import { Text, TouchableOpacity, View, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { SearchMeta } from "../../lib/types";
 
 interface SearchMetaBannerProps {
@@ -11,18 +12,19 @@ interface SearchMetaBannerProps {
 
 // Says when we searched something other than what was typed; a spelling fix can be undone in one tap
 export function SearchMetaBanner({ meta, typed, onSearchInstead }: SearchMetaBannerProps) {
-  const shown = meta.correctedQuery ?? meta.expandedTerms?.join(", ") ?? "similar products";
+  const t = useStrings("search");
+  const shown = meta.correctedQuery ?? meta.expandedTerms?.join(", ") ?? t.similarProducts;
   return (
     <View style={styles.banner}>
       <Ionicons name={meta.correctedQuery ? "color-wand-outline" : "sparkles-outline"} size={14} color={colors.primary} />
       <View style={styles.body}>
         <Text style={styles.text}>
-          Showing results for <Text style={styles.bold}>{shown}</Text>
+          {t.showingResultsFor}<Text style={styles.bold}>{shown}</Text>{t.showingResultsForAfter}
         </Text>
         {meta.correctedQuery ? (
           <TouchableOpacity onPress={onSearchInstead} accessibilityRole="button" hitSlop={{ top: 10, bottom: 10 }}>
             <Text style={styles.text}>
-              Search instead for <Text style={styles.link}>{typed}</Text>
+              {t.searchInsteadFor}<Text style={styles.link}>{typed}</Text>{t.searchInsteadForAfter}
             </Text>
           </TouchableOpacity>
         ) : null}

@@ -2,14 +2,8 @@ import { useMemo, useState, type ReactNode } from "react";
 import { View, Text, ScrollView, Pressable, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
 import type { StoreProduct, TimeCategorySection } from "../lib/types";
-
-const PERIOD_COPY: Record<string, { title: string; subtitle: string }> = {
-  morning: { title: "Morning picks", subtitle: "Start your morning right" },
-  afternoon: { title: "Afternoon picks", subtitle: "Quick bites and lunch staples" },
-  evening: { title: "Evening picks", subtitle: "Snacks and dinner essentials" },
-  night: { title: "Late-night cravings", subtitle: "Delivered while you're up" },
-};
 
 const ALL = "all";
 const ALL_LIMIT = 12;
@@ -24,7 +18,9 @@ interface Props {
 // One rail for all time-of-day subcategories, filtered by chips (instead of one rail per subcategory)
 export function TimeSpotlight({ sections, period, renderProducts, onViewAll }: Props) {
   const [selected, setSelected] = useState<string>(ALL);
-  const copy = PERIOD_COPY[period] ?? PERIOD_COPY.morning;
+  const t = useStrings("home");
+  const c = useStrings("common");
+  const copy = t.periodCopy(period);
 
   const products = useMemo(() => {
     if (selected !== ALL) return sections.find((s) => s.id === selected)?.products ?? [];
@@ -39,7 +35,7 @@ export function TimeSpotlight({ sections, period, renderProducts, onViewAll }: P
     return rows.filter((row, i) => rows.findIndex((r) => r.id === row.id) === i);
   }, [sections, selected]);
 
-  const chips = [{ id: ALL, name: "All" }, ...sections.map((s) => ({ id: s.id, name: s.name }))];
+  const chips = [{ id: ALL, name: t.all }, ...sections.map((s) => ({ id: s.id, name: s.name }))];
 
   return (
     <View style={styles.section}>
@@ -50,7 +46,7 @@ export function TimeSpotlight({ sections, period, renderProducts, onViewAll }: P
         </View>
         {selected !== ALL && (
           <Pressable style={styles.seeAll} onPress={() => onViewAll(selected)} hitSlop={8}>
-            <Text style={styles.seeAllText}>See all</Text>
+            <Text style={styles.seeAllText}>{c.seeAll}</Text>
             <Ionicons name="chevron-forward" size={14} color={colors.primary} />
           </Pressable>
         )}

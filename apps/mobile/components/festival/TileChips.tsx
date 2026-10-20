@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
-import { colors, fonts } from "../../constants/theme";
+import { fonts } from "../../constants/theme";
 import { useLanguage } from "../../lib/language-context";
 import type { FestiveTile } from "../../lib/types";
 
@@ -10,12 +10,15 @@ const CHIP_GAP = 8;
 interface Props {
   tiles: FestiveTile[];
   selectedId: string | null;
+  /** Selected chip's text and border, on its white card */
   ink: string;
+  /** Unselected labels, on the festive band */
+  labelColor: string;
   onSelect: (id: string) => void;
 }
 
 /** The festival's themes as a rail of illustrated chips; the selected one lifts into a card. */
-export function TileChips({ tiles, selectedId, ink, onSelect }: Props) {
+export function TileChips({ tiles, selectedId, ink, labelColor, onSelect }: Props) {
   const { language } = useLanguage();
   const rail = useRef<ScrollView>(null);
   const selectedIndex = tiles.findIndex((t) => t.id === selectedId);
@@ -46,7 +49,7 @@ export function TileChips({ tiles, selectedId, ink, onSelect }: Props) {
             <View style={styles.art}>
               <Image source={{ uri: tile.imageUrl }} style={styles.artImage} resizeMode="contain" />
             </View>
-            <Text style={[styles.label, selected && { color: ink, fontFamily: fonts.extrabold }]} numberOfLines={2}>
+            <Text style={[styles.label, { color: selected ? ink : labelColor }, selected && { fontFamily: fonts.extrabold }]} numberOfLines={2}>
               {title}
             </Text>
           </Pressable>
@@ -69,7 +72,7 @@ const styles = StyleSheet.create({
   },
   artImage: { width: 50, height: 50 },
   label: {
-    fontFamily: fonts.semibold, fontSize: 12, lineHeight: 15, color: colors.text,
+    fontFamily: fonts.semibold, fontSize: 12, lineHeight: 15,
     textAlign: "center", marginTop: 6, minHeight: 30, paddingHorizontal: 2,
   },
 });
