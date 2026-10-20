@@ -22,6 +22,8 @@ export interface ProductListItem {
   imageUrl: string | null;
   images: string[];
   isActive: boolean;
+  /** Created but not launched: shoppers can't see it yet */
+  isDraft: boolean;
   organizationId: string | null;
   brand: BrandRef | null;
   subcategory: { id: string; name: string } | null;

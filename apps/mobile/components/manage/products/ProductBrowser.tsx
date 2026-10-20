@@ -11,7 +11,7 @@ import { tabular } from "../ui/tokens";
 import { useTaxonomy } from "../taxonomy/use-taxonomy";
 import { selectionFilter } from "../taxonomy/selection";
 import { ProductTile } from "../inventory/ProductTile";
-import { ListingPill } from "./ListingPill";
+import { DraftPill, ListingPill } from "./ListingPill";
 import { useManageScope } from "../../../lib/manage-scope-context";
 import { ProductFilterSheet, NO_FILTERS, type ProductFilters } from "./ProductFilterSheet";
 import { useBrandOptions } from "./use-brand-options";
@@ -78,7 +78,7 @@ export function ProductBrowser({ title, searchPlaceholder, subcategoryId, contex
           <ProductTile
             product={p}
             width={cell.width}
-            badge={<ListingPill listings={p.storeProducts} storeId={storeId} />}
+            badge={p.isDraft ? <DraftPill /> : <ListingPill listings={p.storeProducts} storeId={storeId} />}
             dimmed={!p.isActive}
             onPress={() => router.push(`/manage/products/${p.id}`)}
           />

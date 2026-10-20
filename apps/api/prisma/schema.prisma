@@ -793,6 +793,8 @@ model Product {
   subcategoryId       String?      @map("subcategory_id")
   brandId             String?      @map("brand_id")
   isActive            Boolean      @default(true) @map("is_active")
+  /// Created but not launched yet; its store listings stay off until the owner launches it
+  isDraft             Boolean      @default(false) @map("is_draft")
   tags                String[]     @default([])
   hsnCode             String?      @map("hsn_code")
   gstPercent          Decimal?     @map("gst_percent") @db.Decimal(4, 2)

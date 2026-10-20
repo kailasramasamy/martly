@@ -38,7 +38,8 @@ interface StoreRecord {
 
 export const ProductCreate = () => {
   const { token } = theme.useToken();
-  const { formProps, saveButtonProps } = useForm({ resource: "products" });
+  // Saved as a draft, then opened so it can be reviewed and launched
+  const { formProps, saveButtonProps } = useForm({ resource: "products", redirect: "show" });
   const { data: identity } = useGetIdentity<{ role: string; permissions?: string[] }>();
   const isOrgAdmin = !!identity && identity.role !== "SUPER_ADMIN";
 
@@ -80,6 +81,7 @@ export const ProductCreate = () => {
     const path = values.categoryPath as string[] | undefined;
     values.subcategoryId = path?.length ? path[path.length - 1] : null;
     delete values.categoryPath;
+    values.draft = true;
     originalOnFinish?.(values);
   };
 

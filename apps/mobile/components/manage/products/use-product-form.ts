@@ -39,10 +39,14 @@ export function useProductForm(product?: ProductDetail) {
     const found = validateProductForm(values);
     setErrors(found);
     if (hasErrors(found)) return;
-    const saved = product
-      ? await run(() => api.put(`/api/v1/products/${product.id}`, updatePayload(values)), "Product saved")
-      : await run(() => api.post("/api/v1/products", createPayload(values, assignStores ? selectedStores : undefined)), "Product created");
-    if (saved) router.back();
+    if (product) {
+      const saved = await run(() => api.put(`/api/v1/products/${product.id}`, updatePayload(values)), "Product saved");
+      if (saved) router.back();
+      return;
+    }
+    const created = await run(() => api.post<{ id: string }>("/api/v1/products", createPayload(values, assignStores ? selectedStores : undefined)), "Saved as draft");
+    // Straight to the product to review it and launch
+    if (created) router.replace(`/manage/products/${created.data.id}`);
   };
 
   const remove = async () => {

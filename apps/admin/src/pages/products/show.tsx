@@ -17,6 +17,7 @@ import {
 import { FOOD_TYPE_CONFIG, PRODUCT_TYPE_CONFIG, STORAGE_TYPE_CONFIG } from "../../constants/tag-colors";
 import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../../components/ReadableSection";
+import { DraftBanner } from "./draft-banner";
 
 const { Text } = Typography;
 
@@ -86,7 +87,13 @@ const NutritionalInfoView = ({ data }: { data: any }) => {
 };
 
 export const ProductShow = () => {
-  const { query } = useShow({ resource: "products" });
+  const { query } = useShow({
+    resource: "products",
+    // A new product's Tamil lands a few seconds after saving: check back until it does
+    queryOptions: {
+      refetchInterval: (data) => (data?.data.isDraft && !data.data.translations?.ta?.name ? 3000 : false),
+    },
+  });
   const record = query?.data?.data;
   const { data: identity } = useGetIdentity<{ role: string; permissions?: string[] }>();
   const navigate = useNavigate();
@@ -106,6 +113,7 @@ export const ProductShow = () => {
   return (
     <Show canEdit={canEdit} canDelete={canEdit}>
       <ReadableSection>
+        {record.isDraft && <DraftBanner productId={String(record.id)} canLaunch={canEdit} onLaunched={() => void query.refetch()} />}
         <Row gutter={[16, 16]}>
           {/* Left column: details */}
           <Col xs={24} lg={record.imageUrl || record.images?.length > 0 ? 16 : 24}>
@@ -228,6 +236,13 @@ export const ProductShow = () => {
           </Col>
 
           {/* Translations */}
+          {record.isDraft && !record.translations?.ta?.name && (
+            <Col xs={24}>
+              <Card title={sectionTitle(<TranslationOutlined />, "Translations")} size="small" style={{ marginBottom: 16 }}>
+                <Text type="secondary">Translating to Tamil…</Text>
+              </Card>
+            </Col>
+          )}
           {record.translations && Object.keys(record.translations).length > 0 && (
             <Col xs={24}>
               <Card title={sectionTitle(<TranslationOutlined />, "Translations")} size="small" style={{ marginBottom: 16 }}>

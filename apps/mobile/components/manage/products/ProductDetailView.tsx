@@ -7,6 +7,7 @@ import { formatINR, manage, tabular } from "../ui/tokens";
 import { PhotoGallery } from "../inventory/PhotoGallery";
 import { photosOf } from "../inventory/ProductTile";
 import { CatalogPill } from "./CatalogPill";
+import { DraftPill } from "./ListingPill";
 import { ReadMoreText } from "./ReadMoreText";
 import { FoodTypeLabels, ProductTypeLabels, StorageTypeLabels } from "@martly/shared/constants";
 import type { ProductDetail } from "./types";
@@ -32,7 +33,7 @@ function Header({ product }: { product: ProductDetail }) {
         {product.subcategory ? <Text style={styles.category}>{product.subcategory.name}</Text> : null}
         <View style={styles.pills}>
           <CatalogPill organizationId={product.organizationId} />
-          <StatusPill {...(product.isActive ? ACTIVE : INACTIVE)} />
+          {product.isDraft ? <DraftPill /> : <StatusPill {...(product.isActive ? ACTIVE : INACTIVE)} />}
           {food && <StatusPill {...food} dot />}
         </View>
       </View>
@@ -53,6 +54,23 @@ function InfoCard({ title, rows }: { title: string; rows: Row[] }) {
 function TextCard({ title, text }: { title: string; text: string | null }) {
   if (!text?.trim()) return null;
   return <SectionCard title={title}><ReadMoreText text={text} /></SectionCard>;
+}
+
+/** New products get their Tamil a few seconds after saving; until then it shows as on its way */
+function TamilCard({ product }: { product: ProductDetail }) {
+  const ta = product.translations?.ta;
+  const pending = product.isDraft && !ta?.name;
+  if (!ta?.name && !pending) return null;
+  return (
+    <SectionCard title="Tamil">
+      {pending ? <Text style={styles.pending}>Translating…</Text> : (
+        <>
+          <Text style={styles.taName}>{ta?.name}</Text>
+          {ta?.description ? <ReadMoreText text={ta.description} /> : null}
+        </>
+      )}
+    </SectionCard>
+  );
 }
 
 function VariantsCard({ product }: { product: ProductDetail }) {
@@ -81,6 +99,7 @@ export function ProductDetailView({ product }: { product: ProductDetail }) {
     <>
       <SectionCard><Header product={product} /></SectionCard>
       <TextCard title="Description" text={product.description} />
+      <TamilCard product={product} />
       <VariantsCard product={product} />
       <InfoCard title="Details" rows={[
         ["Product type", label(ProductTypeLabels, product.productType)],
@@ -112,6 +131,8 @@ const styles = StyleSheet.create({
   name: { fontFamily: fonts.extrabold, fontSize: 18, lineHeight: 23, color: colors.text },
   category: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary },
   pills: { flexDirection: "row", flexWrap: "wrap", gap: 6, marginTop: 6 },
+  pending: { fontFamily: fonts.medium, fontSize: 14, color: manage.muted },
+  taName: { fontFamily: fonts.bold, fontSize: 15, color: colors.text, marginBottom: 6 },
   variant: { flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 14, minHeight: 52, paddingVertical: 10 },
   variantDivider: { borderTopWidth: 1, borderTopColor: manage.hairline },
   variantText: { flex: 1 },

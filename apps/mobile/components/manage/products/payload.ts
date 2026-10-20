@@ -71,5 +71,6 @@ export function createPayload(v: ProductFormValues, storeIds: string[] | undefin
   const fields = Object.fromEntries(Object.entries(sharedFields(v)).filter(([, value]) => value !== null && value !== undefined));
   const variants = v.variants.map((variant) =>
     Object.fromEntries(Object.entries(variantPayload(variant)).filter(([, value]) => value !== null)));
-  return { ...fields, variants, ...(storeIds && { storeIds }) };
+  // Saved for review; the owner launches it from the product screen
+  return { ...fields, variants, draft: true, ...(storeIds && { storeIds }) };
 }

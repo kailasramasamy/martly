@@ -9,6 +9,8 @@ const TONE: Record<ListingState["kind"], { color: string; bg: string }> = {
   stores: { color: "#0f766e", bg: "#ccfbf1" },
 };
 
+export const DraftPill = () => <StatusPill label="Draft" color="#b45309" bg="#fef3c7" />;
+
 interface ListingPillProps {
   listings: readonly VariantListing[] | undefined;
   /** The selected store; null shows how many stores list it */

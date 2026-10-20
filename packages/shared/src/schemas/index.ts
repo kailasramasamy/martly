@@ -322,6 +322,8 @@ export const createProductSchema = z.object({
   usageInstructions: z.string().optional(),
   variants: z.array(createProductVariantSchema).min(1).optional(),
   storeIds: z.array(z.string().uuid()).optional(),
+  /** Save for review: store listings stay off until the product is launched */
+  draft: z.boolean().optional(),
   translations: translationsSchema,
 });
 export type CreateProductInput = z.infer<typeof createProductSchema>;

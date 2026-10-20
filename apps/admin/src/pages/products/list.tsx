@@ -50,6 +50,7 @@ interface StoreProductEntry {
 interface ProductRecord {
   id: string;
   name: string;
+  isDraft?: boolean;
   imageUrl?: string;
   brand?: { name: string };
   foodType?: string;
@@ -520,6 +521,7 @@ const ProductsTableTab = ({
               <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                 {record.foodType && foodTypeDot(record.foodType)}
                 <Text strong style={{ fontSize: 13 }}>{record.name}</Text>
+                {record.isDraft && <Tag color="gold" style={{ marginInlineEnd: 0 }}>Draft</Tag>}
               </div>
               {record.brand?.name && (
                 <Text type="secondary" style={{ fontSize: 12, marginTop: 2, display: "block" }}>{record.brand.name}</Text>

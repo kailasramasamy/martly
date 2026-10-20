@@ -7,6 +7,7 @@ import { requirePermission } from "../../middleware/authorize.js";
 import { assertBrandUsable } from "../../services/brands.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgUser, getOrgStoreIds } from "../../middleware/org-scope.js";
+import type { JwtUser } from "../../types/jwt.js";
 import { formatVariantUnit, formatVariantUnits } from "../../services/units.js";
 import { searchProductsForAdmin } from "../../services/search.js";
 import { fetchRankedPage } from "../../services/ranked-page.js";
@@ -20,12 +21,15 @@ import { translateNewProduct } from "../../services/translate/product.js";
       // SUPER_ADMIN sees all products
     } else if (user.role === "CUSTOMER" || user.role === "GUEST") {
       where.organizationId = null;
+      where.isDraft = false;
     } else {
-      where.OR = [{ organizationId: null }, { organizationId: user.organizationId }];
+      // Master drafts stay with Super Admin until launched
+      where.OR = [{ organizationId: null, isDraft: false }, { organizationId: user.organizationId }];
     }
     if (catalogType === "master") {
       delete where.OR;
       where.organizationId = null;
+      if (user.role !== "SUPER_ADMIN") where.isDraft = false;
     } else if (catalogType === "org") {
       delete where.OR;
       // Only SUPER_ADMIN may browse every org's catalog; others see their own org's products (or none)
@@ -49,6 +53,13 @@ import { translateNewProduct } from "../../services/translate/product.js";
     }
     return result as T;
   }
+
+/** Master products are Super Admin's to change; org products belong to members of that org */
+function editDenial(user: JwtUser, product: { organizationId: string | null }): string | null {
+  if (product.organizationId === null) return user.role === "SUPER_ADMIN" ? null : "Only Super Admin can edit master catalog products";
+  if (user.role === "SUPER_ADMIN") return "Super Admin cannot edit org-specific products";
+  return user.organizationId === product.organizationId ? null : "Access denied";
+}
 
 export async function productRoutes(app: FastifyInstance) {
 
@@ -271,7 +282,8 @@ export async function productRoutes(app: FastifyInstance) {
     request: FastifyRequest,
     product: { id: string; variants: { id: string; mrp: Prisma.Decimal | null }[] },
     organizationId: string,
-    requestedStoreIds?: string[],
+    requestedStoreIds: string[] | undefined,
+    isActive: boolean,
   ) {
     const accessible = await getOrgStoreIds(request, app.prisma);
     const stores = await app.prisma.store.findMany({
@@ -289,6 +301,7 @@ export async function productRoutes(app: FastifyInstance) {
         variantId: v.id,
         price: v.mrp != null ? Number(v.mrp) : 0,
         stock: 0,
+        isActive,
       })),
     );
     if (data.length > 0) await app.prisma.storeProduct.createMany({ data });
@@ -300,7 +313,7 @@ export async function productRoutes(app: FastifyInstance) {
     { preHandler: [authenticate, requirePermission(Permission.CATALOG_PRODUCTS)] },
     async (request) => {
       const body = createProductSchema.parse(request.body);
-      const { variants: variantsInput, nutritionalInfo, organizationId: _bodyOrgId, storeIds: requestedStoreIds, translations, ...productData } = body;
+      const { variants: variantsInput, nutritionalInfo, organizationId: _bodyOrgId, storeIds: requestedStoreIds, translations, draft, ...productData } = body;
       const user = getOrgUser(request);
 
       // SUPER_ADMIN: always master catalog (organizationId = null)
@@ -316,6 +329,7 @@ export async function productRoutes(app: FastifyInstance) {
         data: {
           ...productData,
           organizationId,
+          isDraft: draft ?? false,
           nutritionalInfo: nutritionalInfo as Prisma.InputJsonValue | undefined,
           translations: translations as Prisma.InputJsonValue | undefined,
           variants: {
@@ -325,7 +339,7 @@ export async function productRoutes(app: FastifyInstance) {
         include: { subcategory: true, brand: true, variants: true },
       });
 
-      if (organizationId) await listInStores(request, product, organizationId, requestedStoreIds);
+      if (organizationId) await listInStores(request, product, organizationId, requestedStoreIds, !draft);
       void translateNewProduct(app.prisma, product.id, app.log);
 
       const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
@@ -342,23 +356,8 @@ export async function productRoutes(app: FastifyInstance) {
       const existing = await app.prisma.product.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Product not found");
 
-      const user = getOrgUser(request);
-
-      // Ownership check
-      if (existing.organizationId === null) {
-        // Master product: only SUPER_ADMIN can edit
-        if (user.role !== "SUPER_ADMIN") {
-          return reply.forbidden("Only Super Admin can edit master catalog products");
-        }
-      } else {
-        // Org product: only members of that org can edit
-        if (user.role === "SUPER_ADMIN") {
-          return reply.forbidden("Super Admin cannot edit org-specific products");
-        }
-        if (user.organizationId !== existing.organizationId) {
-          return reply.forbidden("Access denied");
-        }
-      }
+      const denied = editDenial(getOrgUser(request), existing);
+      if (denied) return reply.forbidden(denied);
       await assertBrandUsable(app.prisma, rest.brandId, existing.organizationId);
 
       const data: Prisma.ProductUncheckedUpdateInput = {
@@ -403,6 +402,25 @@ export async function productRoutes(app: FastifyInstance) {
       }
 
       const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
+      return response;
+    },
+  );
+
+  // Launch a draft: its store listings go live together
+  app.post<{ Params: { id: string } }>(
+    "/:id/launch",
+    { preHandler: [authenticate, requirePermission(Permission.CATALOG_PRODUCTS)] },
+    async (request, reply) => {
+      const existing = await app.prisma.product.findUnique({ where: { id: request.params.id }, select: { organizationId: true, isDraft: true } });
+      if (!existing) return reply.notFound("Product not found");
+      const denied = editDenial(getOrgUser(request), existing);
+      if (denied) return reply.forbidden(denied);
+      if (!existing.isDraft) return reply.badRequest("This product is already live");
+      const [product] = await app.prisma.$transaction([
+        app.prisma.product.update({ where: { id: request.params.id }, data: { isDraft: false } }),
+        app.prisma.storeProduct.updateMany({ where: { productId: request.params.id }, data: { isActive: true } }),
+      ]);
+      const response: ApiResponse<{ id: string; isDraft: boolean }> = { success: true, data: { id: product.id, isDraft: product.isDraft } };
       return response;
     },
   );
