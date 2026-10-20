@@ -66,7 +66,7 @@ export const PERMISSION_META: Record<Permission, { label: string; description: s
   STORE_SETTINGS: { group: "Business", label: "Store settings", description: "Edit store hours, contact and profile" },
   TEAM_MANAGE: { group: "Business", label: "Manage team", description: "Add staff and grant responsibilities" },
   REPORTS_VIEW: { group: "Business", label: "Reports", description: "Dashboard, store intelligence and customer insights" },
-  FINANCE_MANAGE: { group: "Business", label: "Payments", description: "Override order payment status" },
+  FINANCE_MANAGE: { group: "Business", label: "Payments", description: "Payments, ledger and payouts" },
 };
 
 /** A member's full permission set: their role's preset plus the add-ons that role may hold */

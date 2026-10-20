@@ -1,6 +1,6 @@
 # Store Ledger and Settlements (design)
 
-Status: **design, not built**. Written 2026-10-19 while reworking returns. Pick this up once the returns flow is fully tested.
+Status: **Phases 1–3 built 2026-10-19** (see "Build notes" at the end). Phase 4 (RazorpayX/Route payouts, brand-funded promos, TCS/TDS) is not built and waits on the open questions.
 
 ## Why
 
@@ -32,7 +32,7 @@ The ledger is a running, per-store account between Martly and the store. Every m
 | Online order (Razorpay) | Customer | Martly | **+** online amount, on delivery |
 | Wallet used on an order | Customer's wallet (Martly money) | Martly | **+** wallet amount, on delivery |
 | Loyalty points redeemed | Organization (points are per org) | — | None: the store simply collected less |
-| COD, cash or UPI at the door | Customer | Store or rider | None. Shown on the statement for information. |
+| COD, cash or UPI at the door | Customer | Store or rider | **−** Martly commission (COD rate) only. Shown on the statement for information. |
 | Org coupon (`organizationId` set) | Organization | — | None: the store simply collected less |
 | Platform coupon (`organizationId` null) | Martly | — | **+** coupon discount (Martly reimburses the store) |
 | Delivery fee | Customer | Store (part of the total) | Included in the sale amounts above |
@@ -240,3 +240,92 @@ Customers get no new notifications; the refund notifications already exist. Ride
 - **Concurrent posting:** a duplicate `(type, sourceId)` is ignored rather than throwing, so retries are safe.
 - **Store moved between organizations or deactivated:** entries stay with the original organization, and the settlement still pays out.
 - **Rounding:** all amounts are in paise-safe `Decimal`, and statement totals equal the sum of their lines.
+
+## Build notes (2026-10-19)
+
+### What was built
+
+- **Ledger:** the `LedgerEntry` model, posted by `services/ledger/post.ts` (`postEntries`, `createMany` with `skipDuplicates` on `(type, sourceId)`). The hooks are:
+  - delivery: `services/ledger/order.ts`, called from the orders status route;
+  - return refunds: `services/returns/settle.ts`;
+  - undo delivery: `services/order-undo.ts`;
+  - membership verify;
+  - support wallet adjustments: `services/ledger/goodwill.ts`;
+  - plan and ad purchases paid from the balance: `services/marketing/billing.ts`.
+- **Settlements:** `services/ledger/settlement.ts` and `plugins/settlement-scheduler.ts`.
+  - The run is weekly, at Monday 06:00 IST or later, keyed by `stl:{org}:{weekStart}`. The key is claimed in the same transaction that writes the settlement.
+  - A net of ₹100 or more becomes `APPROVED` if the payout account is verified, otherwise `DRAFT`. Owners get a daily reminder to add bank details.
+  - Anything below ₹100 is `CARRIED_FORWARD`. Open nets (`DRAFT`, `CARRIED_FORWARD`, `FAILED`) roll into the next settlement through `carriedIntoId`.
+  - Marking a settlement paid posts `SETTLEMENT_PAYOUT` for −net, linked to that settlement.
+- **Payout account:** `OrgPayoutAccount` is encrypted with AES-256-GCM using `PAYOUT_ACCOUNT_KEY`. Only the last 4 digits are shown. The full number is decrypted only for the super admin bank file, and that export is logged. The edit form opens with the saved details; leaving the account number blank keeps the stored one.
+- **Dues:** a balance that is negative for 4 runs in a row and above ₹500 raises a `BalanceDue`. The owner can also pay a negative balance at any time.
+  - Payment goes through Razorpay (verify endpoint plus webhook) or is marked paid offline by a super admin.
+  - Either way it posts `BALANCE_PAYMENT`.
+- **COD cash refunds:** `ReturnRequest.refundTo` (`WALLET`/`CASH`).
+  - Cash is allowed only when cash or UPI was actually collected at the door (`paymentMethod = COD` and `codCollectedVia` set).
+  - Cash is paid only at handover, when the rider collects the item or the counter receives it. Any other refund path (keep, replacement fallback) goes to the wallet.
+- **Paying from the balance:** one-off marketing purchases (extra promotions, AI image packs) accept `payWith: "BALANCE"`, which posts `PLAN_FEE` under an organization lock. Refunding such an order posts a reversal. Plan subscriptions stay on Razorpay.
+- **Ledger queries:** `POST /ledger/entries/:id/query` creates a support ticket with no organization, so only Martly sees it, and alerts super admins.
+- **API:** `routes/ledger/` (`index`, `settlements`, `platform`, `scope`), plus the contract in this doc's "What owners see" section.
+- **Admin:** a Finance group with Ledger, Settlements, Payout account, and "Payouts (platform)": balances, queue, accounts to verify, adjustments and dues. Also added: an order and funded-by choice on the customer wallet adjust, and the cash refund cue on return detail.
+- **Mobile:** More → Organization → Payments & payouts (`app/manage/finance/`), a Today payout card, `STAFF_FINANCE` notification routing, the refund-to picker on customer returns, the rider "Hand back ₹X cash" cue, the counter cash cue, and "Pay from balance" in the marketing plan.
+
+### Martly commission (added 2026-10-20)
+
+- **Rates** are set per organization by a super admin: `onlineCommissionPct` (default 4: 2% gateway plus 2% Martly) and `codCommissionPct` (default 2). Both include GST. They're on the organization edit page in admin, and owners see them read-only on Payments & payouts.
+- **On delivery**, one `COMMISSION` entry (−) is posted with the sales, under the same hold (`services/ledger/commission.ts`):
+  - the online rate applies to what was paid online;
+  - the COD rate applies to cash or UPI collected and to the wallet part, since wallet money has no gateway cost;
+  - the delivery fee is included; loyalty points and coupons are not, because the customer didn't pay them;
+  - units handed back at the door first reduce the cash collected, and any wallet credit reduces the online and wallet parts in proportion.
+  - So a pure COD order now posts an entry: ₹500 COD gives −₹10. This is how COD commission is recovered from payouts.
+- **The order records** `commissionBase` and `commissionAmount` at delivery. Rate changes apply only to later deliveries.
+- **Returns** post `COMMISSION_REFUND` (+) = refunded amount × the order's charged rate, capped at what was charged. This applies to wallet and cash refunds alike, so a cash refund now posts an entry.
+- **Undo delivery** reverses the commission with the other delivery entries.
+- **Statements** show the period's net commission and its GST share (18/118). The ledger has a Fees filter.
+- **Not charged:** membership sales and Martly's platform coupon reimbursements.
+- **Tested with curl:**
+  - COD ₹176 → −₹3.52.
+  - Wallet ₹264 → −₹5.28.
+  - Online ₹264 with ₹88 handed back → −₹7.04, charged on ₹176.
+  - A cash return of ₹88 → +₹1.76; a wallet return of ₹176 → +₹3.52.
+  - Undo reverses the commission, and redelivery charges it again.
+  - With a 3% rate, the next delivery is charged at 3%.
+  - A rate of 25% is rejected, and an owner can't change rates.
+  - Statement GST: ₹22.88 includes ₹3.49.
+
+### Decisions that differ from the design above
+
+- **Platform coupons:** there is no `Coupon.fundedBy`. A coupon with no organization is a platform coupon; that is the only case today.
+- **Entry types:** only the types in use exist. `OPENING_BALANCE` was dropped because the ledger starts at zero. `BRAND_FUNDED`, `PLATFORM_FEE`, `TCS` and `TDS` will be added when they are built. `BALANCE_PAYMENT` was added.
+- **Referral rewards:** both rewards are debited to the store of the referee's first delivery.
+- **Reversals** of an entry still on hold keep its `availableAt`, so a sale and its undo always land in the same settlement.
+- **Redelivery after an undo** posts entries with a fresh source id (`orderId:n`).
+- **Membership verify** now takes the price from the Razorpay payment, not from the client's `amountPaid`, and rejects a reused payment id. Before this change, a replayed verify call created duplicate memberships and, with the ledger, would have credited money that was never received.
+- **Large refund alert:** a fixed threshold of ₹1,000 (`LARGE_REFUND_ALERT`), sent by the scheduler sweep, not configurable per store.
+
+### Tested (curl against a local API, pushes disabled)
+
+- Wallet-paid delivery posts `SALE_WALLET` with a 72h hold. Undo posts a `REVERSAL`, and a second undo is refused. Redelivery posts fresh entries.
+- Return refund to the wallet posts `RETURN_REFUND`. Wallet transactions carry `reason`, `organizationId` and `storeId`.
+- A cash refund is refused on a wallet-paid COD order. On a cash-collected order, a drop at the store refunds in cash: no wallet credit and no ledger entry.
+- Door hand-back on a wallet+COD order posts `SALE_WALLET` ₹633.20 and `DOOR_REFUND` −₹281.20, matching `amountDue`.
+- Settlement: credits ₹552 and debits −₹264 give net ₹288, `DRAFT` without an account. Once the account is verified it becomes `APPROVED`. Mark paid posts the payout and zeroes the balance; a second mark-paid is a no-op.
+- The statement renders through the signed link; a tampered signature gets 403.
+- Four negative weeks raised a ₹700 due. Marking it paid offline posts `BALANCE_PAYMENT`, and the next run nets to 0.
+- Paying from the balance posts `PLAN_FEE` and marks the order paid. When the balance falls short, the API returns 400 and the order is cancelled.
+- A store manager sees the ledger for their stores only. They get 403 on settlements and on saving the payout account.
+- The CSV export and the platform balances, queue, bank file, dues and accounts endpoints all respond.
+
+### Needs manual verification
+
+- Online (Razorpay) order delivered, giving `SALE_ONLINE`. Platform coupon on a COD order.
+- Paying a due through Razorpay checkout in the app, and through the webhook.
+- Membership purchase and upgrade through Razorpay. Verify now fetches the payment from Razorpay.
+- Rider collecting a cash-refund return on the next order, with the cash cue in the deliver flow.
+- All new admin and mobile screens on a device or browser. None were run during the build.
+
+### Deploying
+
+- Set `PAYOUT_ACCOUNT_KEY` on Railway (`openssl rand -hex 32`) before owners save bank details. Without it, saving returns 503. Keep the key: losing it makes the stored account numbers unreadable.
+- Migration `20261020090000_store_ledger` backfills `wallet_transactions.reason` from descriptions, and the store and organization from the order.

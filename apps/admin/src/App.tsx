@@ -45,6 +45,8 @@ import {
   SafetyCertificateOutlined,
   FileTextOutlined,
   SolutionOutlined,
+  WalletOutlined,
+  SwapOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -157,6 +159,10 @@ import { CampaignShow } from "./pages/brand-campaigns/show";
 import { BrandPartners } from "./pages/brand-campaigns/partners";
 import { BrandInvoices } from "./pages/brand-portal/invoices";
 import { BRAND_SCOPE, PLATFORM_SCOPE } from "./pages/brand-campaigns/types";
+import { LedgerPage } from "./pages/finance/ledger";
+import { SettlementsPage } from "./pages/finance/settlements";
+import { PayoutAccountPage } from "./pages/finance/payout-account";
+import { PlatformPayoutsPage } from "./pages/finance/platform";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 import { NotificationBell } from "./components/notifications/NotificationBell";
 import { UserRoleLabels, type UserRole } from "@martly/shared/constants";
@@ -495,6 +501,30 @@ export default function App() {
                 meta: { label: "Invoices", icon: <FileTextOutlined />, parent: "brand-portal" },
               },
               {
+                name: "finance",
+                meta: { label: "Finance", icon: <WalletOutlined /> },
+              },
+              {
+                name: "ledger",
+                list: "/ledger",
+                meta: { label: "Ledger", icon: <BankOutlined />, parent: "finance" },
+              },
+              {
+                name: "settlements",
+                list: "/settlements",
+                meta: { label: "Settlements", icon: <SwapOutlined />, parent: "finance" },
+              },
+              {
+                name: "payout-account",
+                list: "/payout-account",
+                meta: { label: "Payout account", icon: <SolutionOutlined />, parent: "finance" },
+              },
+              {
+                name: "ledger-balances",
+                list: "/ledger-balances",
+                meta: { label: "Payouts (platform)", icon: <DollarOutlined />, parent: "finance" },
+              },
+              {
                 name: "delivery",
                 meta: { label: "Delivery", icon: <EnvironmentOutlined /> },
               },
@@ -676,6 +706,10 @@ export default function App() {
                   <Route path="create" element={<PromoCreate />} />
                   <Route path="show/:id" element={<PromoShow />} />
                 </Route>
+                <Route path="/ledger" element={<LedgerPage />} />
+                <Route path="/settlements" element={<SettlementsPage />} />
+                <Route path="/payout-account" element={<PayoutAccountPage />} />
+                <Route path="/ledger-balances" element={<PlatformPayoutsPage />} />
                 <Route path="/marketing-plan" element={<MarketingPlan />} />
                 <Route path="/marketing-pricing" element={<MarketingPricing />} />
                 <Route path="/marketing-orders" element={<MarketingRevenue />} />

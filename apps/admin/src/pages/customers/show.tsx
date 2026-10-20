@@ -19,11 +19,6 @@ import {
   Alert,
   Steps,
   Spin,
-  InputNumber,
-  Input,
-  Radio,
-  Form,
-  message,
 } from "antd";
 import {
   UserOutlined,
@@ -47,6 +42,7 @@ import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG, SUBSCRIPTION_STATUS_CONFIG,
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle, BRAND } from "../../theme";
 import { ReadableSection } from "../../components/ReadableSection";
+import { WalletAdjustModal } from "./wallet-adjust-modal";
 
 const { Text } = Typography;
 
@@ -97,8 +93,6 @@ export const CustomerShow = () => {
   const [walletTransactions, setWalletTransactions] = useState<any[]>([]);
   const [walletLoading, setWalletLoading] = useState(true);
   const [walletModalOpen, setWalletModalOpen] = useState(false);
-  const [adjusting, setAdjusting] = useState(false);
-  const [walletForm] = Form.useForm();
 
   const fetchWallet = (userId: string) => {
     axiosInstance.get(`/wallet/admin/${userId}`)
@@ -118,28 +112,6 @@ export const CustomerShow = () => {
       .finally(() => setSubsLoading(false));
     fetchWallet(id);
   }, [id]);
-
-  const handleWalletAdjust = async () => {
-    if (!id) return;
-    try {
-      const values = await walletForm.validateFields();
-      setAdjusting(true);
-      await axiosInstance.post(`/wallet/admin/${id}/adjust`, {
-        type: values.type,
-        amount: values.amount,
-        description: values.description,
-      });
-      message.success(`Wallet ${values.type === "CREDIT" ? "credited" : "debited"} successfully`);
-      setWalletModalOpen(false);
-      walletForm.resetFields();
-      setWalletLoading(true);
-      fetchWallet(id);
-    } catch (err: any) {
-      message.error(err?.response?.data?.message || "Failed to adjust wallet");
-    } finally {
-      setAdjusting(false);
-    }
-  };
 
   const { mutate: deleteUser, isLoading: isDeleting } = useDelete();
 
@@ -530,36 +502,15 @@ export const CustomerShow = () => {
           </Col>
         </Row>
 
-        {/* Wallet Adjust Modal */}
-        <Modal
-          title={<Space><WalletOutlined /> Adjust Wallet Balance</Space>}
-          open={walletModalOpen}
-          onCancel={() => { setWalletModalOpen(false); walletForm.resetFields(); }}
-          onOk={handleWalletAdjust}
-          confirmLoading={adjusting}
-          okText="Submit"
-        >
-          <Alert
-            type="info"
-            showIcon
-            style={{ marginBottom: 16 }}
-            message={`Current balance: \u20B9${walletBalance?.toFixed(0) ?? 0}`}
+        {id && (
+          <WalletAdjustModal
+            userId={id}
+            balance={walletBalance}
+            open={walletModalOpen}
+            onClose={() => setWalletModalOpen(false)}
+            onDone={() => { setWalletLoading(true); fetchWallet(id); }}
           />
-          <Form form={walletForm} layout="vertical" initialValues={{ type: "CREDIT" }}>
-            <Form.Item name="type" label="Type" rules={[{ required: true }]}>
-              <Radio.Group>
-                <Radio.Button value="CREDIT"><PlusOutlined /> Credit</Radio.Button>
-                <Radio.Button value="DEBIT"><MinusOutlined /> Debit</Radio.Button>
-              </Radio.Group>
-            </Form.Item>
-            <Form.Item name="amount" label="Amount (₹)" rules={[{ required: true, message: "Enter amount" }]}>
-              <InputNumber min={1} max={100000} style={{ width: "100%" }} placeholder="Enter amount" />
-            </Form.Item>
-            <Form.Item name="description" label="Reason / Note">
-              <Input.TextArea rows={2} placeholder="e.g. Compensation for delayed delivery" />
-            </Form.Item>
-          </Form>
-        </Modal>
+        )}
 
         {/* Delete Customer Modal */}
         <Modal

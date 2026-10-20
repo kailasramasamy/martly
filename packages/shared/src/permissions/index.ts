@@ -52,6 +52,14 @@ export const RESOURCE_PERMISSIONS = {
   "store-intelligence": P.REPORTS_VIEW,
   "customer-insights": P.REPORTS_VIEW,
 
+  // Finance: the Martly ↔ store ledger; balances across organizations and adjustments are platform-only
+  finance: P.FINANCE_MANAGE,
+  ledger: P.FINANCE_MANAGE,
+  // Payouts and bank details belong to the owner; store finance staff only see their stores' ledger
+  settlements: "OWNER",
+  "payout-account": "OWNER",
+  "ledger-balances": "PLATFORM",
+
   // Organization
   organizations: "PLATFORM",
   users: P.TEAM_MANAGE,

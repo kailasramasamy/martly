@@ -92,6 +92,8 @@ export const updateOrganizationSchema = z.object({
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
   festivalRegions: festivalRegionsSchema.optional(),
   promoDiscountCap: z.number().int().min(1).max(90).optional(),
+  onlineCommissionPct: z.number().min(0).max(20).multipleOf(0.01).optional(),
+  codCommissionPct: z.number().min(0).max(20).multipleOf(0.01).optional(),
 });
 export type UpdateOrganizationInput = z.infer<typeof updateOrganizationSchema>;
 
@@ -468,7 +470,7 @@ export type CreateOrderInput = z.infer<typeof createOrderSchema>;
 // ── Store branding ───────────────────────────────────
 export const storeTranslationsSchema = z.record(
   z.enum(languageCodes),
-  z.object({ tagline: z.string().trim().max(80).optional(), offerText: z.string().trim().max(80).optional() }),
+  z.object({ name: z.string().trim().max(80).optional(), tagline: z.string().trim().max(80).optional(), offerText: z.string().trim().max(80).optional() }),
 );
 export type StoreTranslations = z.infer<typeof storeTranslationsSchema>;
 
@@ -1088,6 +1090,8 @@ export const createReturnRequestSchema = z.object({
     orderItemId: z.string().uuid(),
     quantity: z.number().int().positive(),
   })).min(1),
+  /** Cash is offered only on cash-on-delivery orders */
+  refundTo: z.enum(["WALLET", "CASH"]).default("WALLET"),
 });
 export type CreateReturnRequestInput = z.infer<typeof createReturnRequestSchema>;
 
@@ -1489,3 +1493,4 @@ export const stockCountListQuerySchema = z.object({
 });
 export * from "./marketing.js";
 export * from "./home.js";
+export * from "./ledger.js";

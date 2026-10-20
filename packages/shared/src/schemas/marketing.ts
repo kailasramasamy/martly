@@ -56,6 +56,8 @@ export type UpdateAdPricingInput = z.infer<typeof updateAdPricingSchema>;
 export const createAdOrderSchema = z.object({
   productId: z.string().uuid(),
   quantity: z.coerce.number().int().min(1).max(12).default(1),
+  /** Pay online, or from what Martly owes the organization */
+  payWith: z.enum(["ONLINE", "BALANCE"]).default("ONLINE"),
 });
 
 export const billingProfileSchema = z.object({

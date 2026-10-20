@@ -15,13 +15,14 @@ import {
 import { useLocalSearchParams, useRouter } from "expo-router";
 import * as ImagePicker from "expo-image-picker";
 import { Ionicons } from "@expo/vector-icons";
-import { RETURN_REASONS } from "@martly/shared/constants";
+import { RETURN_REASONS, type RefundDestination } from "@martly/shared/constants";
 import { api } from "../lib/api";
 import { uploadImage } from "../lib/upload";
 import { useToast } from "../lib/toast-context";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { withSignIn } from "../components/SignInPrompt";
+import { RefundDestinationPicker } from "../components/order/RefundDestinationPicker";
 
 const MAX_IMAGES = 5;
 
@@ -38,6 +39,9 @@ interface OrderItemData {
 
 interface OrderData {
   id: string;
+  paymentMethod: string;
+  /** Set once cash or UPI was taken at the door */
+  codCollectedVia: "CASH" | "UPI" | null;
   items: OrderItemData[];
 }
 
@@ -61,6 +65,7 @@ function ReturnRequestScreen() {
   const [reason, setReason] = useState("");
   const [description, setDescription] = useState("");
   const [images, setImages] = useState<string[]>([]);
+  const [refundTo, setRefundTo] = useState<RefundDestination>("WALLET");
   const [submitting, setSubmitting] = useState(false);
   const [uploadingImages, setUploadingImages] = useState(false);
   const keyboard = useKeyboardReveal();
@@ -185,6 +190,7 @@ function ReturnRequestScreen() {
         reason,
         description: description.trim() || undefined,
         imageUrls: imageUrls || undefined,
+        refundTo,
         items: Array.from(selectedItems.values()).map((item) => ({
           orderItemId: item.orderItemId,
           quantity: item.quantity,
@@ -351,6 +357,10 @@ function ReturnRequestScreen() {
             </TouchableOpacity>
           )}
         </ScrollView>
+
+        {order.paymentMethod === "COD" && order.codCollectedVia !== null && (
+          <RefundDestinationPicker value={refundTo} onChange={setRefundTo} />
+        )}
 
         {/* Refund Summary */}
         <View style={styles.refundCard}>

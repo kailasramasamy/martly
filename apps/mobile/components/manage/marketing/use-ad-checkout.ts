@@ -15,15 +15,11 @@ export interface PaymentResult {
 
 export const billingComplete = (p: BillingProfile) => !!(p.billingName && p.billingAddress && p.billingState);
 
-/** Buy a marketing product: billing details first, then Razorpay (order or auto-renewing subscription) and server-side verification */
-export function useAdCheckout(onPaid: () => void) {
+/** Billing details are needed for invoices: sends the owner to fill them in first when missing */
+function useBillingGate(run: ReturnType<typeof useAction>["run"]) {
   const router = useRouter();
   const toast = useToast();
-  const { run, running } = useAction();
-  const [order, setOrder] = useState<AdOrderCheckout | null>(null);
-  const [subscription, setSubscription] = useState<(SubscriptionCheckout & { planName: string }) | null>(null);
-
-  const billingReady = async () => {
+  return async () => {
     const profile = await run(() => api.get<BillingProfile>("/api/v1/marketing/billing-profile"));
     if (!profile) return false;
     if (billingComplete(profile.data)) return true;
@@ -31,11 +27,26 @@ export function useAdCheckout(onPaid: () => void) {
     router.push("/manage/marketing-plan/billing");
     return false;
   };
+}
+
+/** Buy a marketing product: billing details first, then Razorpay (order or auto-renewing subscription) and server-side verification */
+export function useAdCheckout(onPaid: () => void) {
+  const toast = useToast();
+  const { run, running } = useAction();
+  const billingReady = useBillingGate(run);
+  const [order, setOrder] = useState<AdOrderCheckout | null>(null);
+  const [subscription, setSubscription] = useState<(SubscriptionCheckout & { planName: string }) | null>(null);
 
   const buy = async (productId: string, quantity: number) => {
     if (!(await billingReady())) return;
     const created = await run(() => api.post<AdOrderCheckout>("/api/v1/marketing/orders", { productId, quantity }));
     if (created) setOrder(created.data);
+  };
+
+  const buyFromBalance = async (productId: string, quantity: number) => {
+    if (!(await billingReady())) return;
+    const paid = await run(() => api.post("/api/v1/marketing/orders", { productId, quantity, payWith: "BALANCE" }), "Paid from your balance");
+    if (paid) onPaid();
   };
 
   const subscribe = async (plan: AdProduct, interval: BillingInterval) => {
@@ -62,5 +73,5 @@ export function useAdCheckout(onPaid: () => void) {
     onPaid();
   };
 
-  return { buy, subscribe, order, subscription, running, onSuccess, onSubscribed, onCancel: () => { setOrder(null); setSubscription(null); } };
+  return { buy, buyFromBalance, subscribe, order, subscription, running, onSuccess, onSubscribed, onCancel: () => { setOrder(null); setSubscription(null); } };
 }

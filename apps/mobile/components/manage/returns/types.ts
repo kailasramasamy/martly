@@ -1,4 +1,4 @@
-import type { ReturnMethod, ReturnRemedy } from "@martly/shared/constants";
+import type { RefundDestination, ReturnMethod, ReturnRemedy } from "@martly/shared/constants";
 
 export type ReturnStatus = "PENDING" | "IN_PROGRESS" | "APPROVED" | "REJECTED" | "EXPIRED";
 
@@ -15,6 +15,7 @@ export interface ReturnRequestRow {
   resolvedAt: string | null;
   remedy: ReturnRemedy | null;
   method: ReturnMethod | null;
+  refundTo: RefundDestination;
   receivedAt: string | null;
   receivedBy: string | null;
   collectedOnOrderId: string | null;

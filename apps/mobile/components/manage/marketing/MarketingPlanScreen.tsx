@@ -18,6 +18,7 @@ import { PlanCard, TopUpCard, UsageCard } from "./PlanSections";
 import { useAdCheckout } from "./use-ad-checkout";
 import { usePlanActions } from "./use-plan-actions";
 import { useEntitlements } from "./use-entitlements";
+import { useBalance } from "./use-balance";
 import type { AdProduct, BillingInterval } from "./plan-types";
 
 const UPGRADE_NOTE = "Upgrading starts now; unused days of your current plan carry over as extra days. Same or cheaper plans start after your current one.";
@@ -33,7 +34,7 @@ const LINKS = [
   { title: "Billing details", subtitle: "Name, GSTIN and address on invoices", icon: "business-outline", href: "/manage/marketing-plan/billing" },
 ] as const;
 
-type PacksProps = { packs: AdProduct[]; canBuy: boolean; pendingId: string | null; locked: boolean; onBuy: (pack: AdProduct) => void };
+type PacksProps = Parameters<typeof ImagePackList>[0];
 
 function ImagePacksCard({ packs, ...list }: PacksProps) {
   return (
@@ -42,6 +43,11 @@ function ImagePacksCard({ packs, ...list }: PacksProps) {
       <ImagePackList packs={packs} {...list} />
     </SectionCard>
   );
+}
+
+function splitProducts(products: AdProduct[] | null) {
+  const all = products ?? [];
+  return { plans: all.filter((p) => p.kind === "STORE_PLAN"), packs: imagePacks(products), topUp: all.find((p) => p.kind === "PROMOTION_TOPUP") };
 }
 
 /** Only the button that was tapped spins; the rest wait, disabled, until it finishes */
@@ -57,16 +63,15 @@ export function MarketingPlanScreen() {
   const { user } = useAuth();
   const entitlements = useEntitlements();
   const products = useResource<AdProduct[]>("/api/v1/marketing/products");
-  const checkout = useAdCheckout(entitlements.reload);
+  const balance = useBalance(can(user, "marketing-plan", "create"));
+  const checkout = useAdCheckout(() => { entitlements.reload(); balance.reload(); });
   const actions = usePlanActions(entitlements.reload);
   const [quantity, setQuantity] = useState(1);
   const [pickedInterval, setPickedInterval] = useState<BillingInterval | null>(null);
   const canBuy = can(user, "marketing-plan", "create");
   const e = entitlements.data;
   const interval = pickedInterval ?? e?.plan?.billingInterval ?? "MONTHLY";
-  const plans = (products.data ?? []).filter((p) => p.kind === "STORE_PLAN");
-  const packs = imagePacks(products.data);
-  const topUp = (products.data ?? []).find((p) => p.kind === "PROMOTION_TOPUP");
+  const { plans, packs, topUp } = splitProducts(products.data);
   // Turning auto-renew back on buys the plan that was renewing again, from the end of the paid time
   const renewingPlan = plans.find((p) => p.code === e?.subscription?.productCode);
   const { tapped, setTapped, locked, busy, tap } = useTapped(checkout.running || actions.running);
@@ -89,9 +94,9 @@ export function MarketingPlanScreen() {
           {plans.map((p) => (
             <PlanCard key={p.id} product={p} currentProduct={plans.find((c) => c.id === e.plan?.id)} interval={interval} e={e} canBuy={canBuy} busy={busy(p.id)} locked={locked} onBuy={tap(p.id, () => checkout.subscribe(p, interval))} />
           ))}
-          {topUp ? <TopUpCard onPaidPlan={e.onPaidPlan} product={topUp} quantity={quantity} onQuantity={setQuantity} canBuy={canBuy} busy={busy(topUp.id)} locked={locked} onBuy={tap(topUp.id, () => checkout.buy(topUp.id, quantity))} /> : null}
+          {topUp ? <TopUpCard onPaidPlan={e.onPaidPlan} product={topUp} quantity={quantity} onQuantity={setQuantity} canBuy={canBuy} busy={busy(topUp.id)} locked={locked} onBuy={tap(topUp.id, () => checkout.buy(topUp.id, quantity))} onBuyFromBalance={balance.covers(topUp, quantity) ? tap(topUp.id, () => checkout.buyFromBalance(topUp.id, quantity)) : undefined} /> : null}
           {packs.length > 0 ? (
-            <ImagePacksCard packs={packs} canBuy={canBuy} pendingId={locked ? tapped : null} locked={locked} onBuy={(p) => tap(p.id, () => checkout.buy(p.id, 1))()} />
+            <ImagePacksCard packs={packs} canBuy={canBuy} pendingId={locked ? tapped : null} locked={locked} onBuy={(p) => tap(p.id, () => checkout.buy(p.id, 1))()} onBuyFromBalance={(p) => tap(p.id, () => checkout.buyFromBalance(p.id, 1))()} coveredByBalance={(p) => balance.covers(p, 1)} />
           ) : null}
           <SectionCard flush>
             {LINKS.map((l) => <ListRow key={l.title} title={l.title} subtitle={l.subtitle} icon={l.icon} chevron onPress={() => router.push(l.href)} />)}

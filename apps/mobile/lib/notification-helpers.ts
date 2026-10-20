@@ -31,6 +31,8 @@ const STATIC_SCREENS: Record<string, string> = {
   "marketing-plan": "/manage/marketing-plan",
   "manage-subscriptions": "/manage/subscriptions",
   "manage-profile": "/manage/profile",
+  "manage-finance": "/manage/finance",
+  "manage-payout-account": "/manage/finance/payout-account",
 };
 
 function resolveScreen(screen: string, data: Data): Href | null {
@@ -53,6 +55,8 @@ function resolveScreen(screen: string, data: Data): Href | null {
     case "delivery-slots": return withId("/manage/delivery-slots", data.slotId, "/manage/delivery-slots");
     case "manage-return": return data.returnRequestId ? (`/manage/return-requests/${str(data.returnRequestId)}` as Href) : null;
     case "manage-ticket": return data.ticketId ? (`/manage/support-tickets/${str(data.ticketId)}` as Href) : null;
+    case "manage-settlement": return data.settlementId ? (`/manage/finance/settlements/${str(data.settlementId)}` as Href) : null;
+    case "manage-ledger-entry": return data.entryId ? (`/manage/finance/activity/${str(data.entryId)}` as Href) : null;
     case "stock":
       return { pathname: "/manage/stock/receive", params: data.storeProductId ? { storeProductId: str(data.storeProductId) } : {} } as Href;
     case "stock-count": return data.countId ? (`/manage/stock-counts/${str(data.countId)}` as Href) : null;

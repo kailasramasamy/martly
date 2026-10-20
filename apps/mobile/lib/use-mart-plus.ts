@@ -7,7 +7,7 @@ import type { MembershipPlan, UserMembership, MembershipUpgradeOption } from "./
 interface RazorpayData {
   orderId: string; amount: number; currency: string; keyId: string;
   planId: string; customerId?: string;
-  previousMembershipId?: string; amountPaid?: number;
+  previousMembershipId?: string;
 }
 
 interface PurchaseResponse {
@@ -34,13 +34,13 @@ async function requestPurchase(planId: string, storeId: string): Promise<Razorpa
 async function requestUpgrade(planId: string, storeId: string): Promise<RazorpayData | null> {
   const res = await api.post<UpgradeResponse>("/api/v1/memberships/upgrade", { planId, storeId });
   if (res.data.upgraded) return null;
-  return toRazorpayData(res.data, { previousMembershipId: res.data.previousMembershipId, amountPaid: res.data.amountPaid });
+  return toRazorpayData(res.data, { previousMembershipId: res.data.previousMembershipId });
 }
 
 async function verifyPayment(paid: RazorpayData, data: PaymentResult) {
   let verifyUrl = `/api/v1/memberships/verify?planId=${paid.planId}`;
   if (paid.previousMembershipId) {
-    verifyUrl += `&previousMembershipId=${paid.previousMembershipId}&amountPaid=${paid.amountPaid}`;
+    verifyUrl += `&previousMembershipId=${paid.previousMembershipId}`;
   }
   await api.post(verifyUrl, data);
 }

@@ -11,6 +11,9 @@ import {
 import { sendWalletNotification } from "../../services/notification.js";
 import { createRecharge, settleRecharge } from "../../services/wallet-recharge.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
+import { type FundedBy, goodwillPayer } from "../../services/ledger/goodwill.js";
+import { postEntries } from "../../services/ledger/post.js";
+import { formatOrderRef } from "../../services/notify/copy.js";
 
 export async function walletRoutes(app: FastifyInstance) {
   async function customerInOrg(request: FastifyRequest, userId: string): Promise<boolean> {
@@ -43,6 +46,7 @@ export async function walletRoutes(app: FastifyInstance) {
           balanceAfter: true,
           description: true,
           orderId: true,
+          reason: true,
           createdAt: true,
         },
       }),
@@ -151,6 +155,7 @@ export async function walletRoutes(app: FastifyInstance) {
             balanceAfter: true,
             description: true,
             orderId: true,
+            reason: true,
             createdAt: true,
           },
         }),
@@ -175,10 +180,12 @@ export async function walletRoutes(app: FastifyInstance) {
     async (request, reply) => {
       const { userId } = request.params;
       if (!(await customerInOrg(request, userId))) return reply.forbidden("Access denied");
-      const { type, amount, description } = request.body as {
+      const { type, amount, description, orderId, fundedBy } = request.body as {
         type: "CREDIT" | "DEBIT";
         amount: number;
         description?: string;
+        orderId?: string;
+        fundedBy?: FundedBy;
       };
 
       if (!type || !["CREDIT", "DEBIT"].includes(type)) {
@@ -197,6 +204,8 @@ export async function walletRoutes(app: FastifyInstance) {
       if (type === "DEBIT" && Number(user.walletBalance) < amount) {
         return reply.badRequest(`Insufficient balance. Current balance: \u20B9${Number(user.walletBalance).toFixed(0)}`);
       }
+      const payer = await goodwillPayer(app.prisma, getOrgUser(request), userId, { orderId, fundedBy });
+      const note = description || "Balance adjusted by support";
 
       const result = await app.prisma.$transaction(async (tx) => {
         const updatedUser = await tx.user.update({
@@ -209,20 +218,33 @@ export async function walletRoutes(app: FastifyInstance) {
           select: { walletBalance: true },
         });
 
-        await tx.walletTransaction.create({
+        const txn = await tx.walletTransaction.create({
           data: {
             userId,
             type,
             amount,
             balanceAfter: updatedUser.walletBalance,
-            description: description || "Balance adjusted by support",
+            description: note,
+            reason: "SUPPORT",
+            orderId: payer?.orderId,
+            organizationId: payer?.organizationId,
+            storeId: payer?.storeId,
           },
         });
+        // A credit the organization funds comes off its balance; taking credit back returns it
+        if (payer) {
+          const onOrder = payer.orderId ? ` · order ${formatOrderRef(payer.orderId)}` : "";
+          await postEntries(tx, [{
+            ...payer, type: "GOODWILL_DEBIT", amount: type === "CREDIT" ? -amount : amount,
+            sourceType: "WALLET_TXN", sourceId: txn.id, memo: `Support wallet ${type === "CREDIT" ? "credit" : "debit"}: ${note}${onOrder}`,
+            createdBy: request.user.sub,
+          }]);
+        }
 
         return updatedUser;
       });
 
-      sendWalletNotification(app.fcm, app.prisma, userId, type, amount, description || "Balance adjusted by support");
+      sendWalletNotification(app.fcm, app.prisma, userId, type, amount, note);
 
       return {
         success: true,

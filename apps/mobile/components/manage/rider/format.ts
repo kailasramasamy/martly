@@ -67,3 +67,6 @@ export function pickupText(pickups: OrderPickup[]): string {
 
 /** The short order number customers and staff quote, e.g. #310E2D69 */
 export const orderRef = (orderId: string) => `#${orderId.slice(0, 8).toUpperCase()}`;
+
+/** Cash the rider hands to the customer when collecting this return; 0 when the refund goes elsewhere */
+export const cashHandBack = (p: OrderPickup): number => (p.refundTo === "CASH" && p.remedy === "REFUND" ? Number(p.approvedAmount ?? 0) : 0);

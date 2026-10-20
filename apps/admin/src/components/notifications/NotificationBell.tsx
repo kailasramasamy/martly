@@ -9,6 +9,7 @@ import {
   CustomerServiceOutlined,
   NotificationOutlined,
   TeamOutlined,
+  BankOutlined,
   BellFilled,
 } from "@ant-design/icons";
 import dayjs from "dayjs";
@@ -28,6 +29,7 @@ const TYPE_ICONS: Record<string, React.ReactNode> = {
   STAFF_SERVICE: <CustomerServiceOutlined />,
   STAFF_MARKETING: <NotificationOutlined />,
   STAFF_TEAM: <TeamOutlined />,
+  STAFF_FINANCE: <BankOutlined />,
 };
 
 const BRAND = "#0d9488";

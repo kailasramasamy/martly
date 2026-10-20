@@ -31,6 +31,10 @@ export function notificationRoute(data: Record<string, string> | null): string |
     case "brand-ads": return "/brand-campaigns";
     case "marketing-plan": return "/marketing-plan";
     case "manage-subscriptions": return "/subscriptions";
+    case "manage-finance":
+    case "manage-ledger-entry": return "/ledger";
+    case "manage-settlement": return "/settlements";
+    case "manage-payout-account": return "/payout-account";
     case "manage-profile": return "/profile";
     default: return undefined;
   }

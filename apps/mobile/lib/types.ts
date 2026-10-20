@@ -599,6 +599,7 @@ export interface ReturnRequestData {
   status: "PENDING" | "IN_PROGRESS" | "APPROVED" | "REJECTED" | "EXPIRED";
   remedy: "REFUND" | "REPLACE" | null;
   method: "KEEP" | "NEXT_ORDER" | "AT_STORE" | null;
+  refundTo: "WALLET" | "CASH";
   reason: string;
   requestedAmount: string;
   approvedAmount: string | null;

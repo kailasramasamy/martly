@@ -1,23 +1,15 @@
-import crypto from "crypto";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { getMarketingConfig } from "./config.js";
 import type { BillingSnapshot } from "./billing.js";
-
-const LINK_TTL_MS = 15 * 60 * 1000;
-const secret = () => process.env.JWT_SECRET ?? "dev-secret-change-me";
-const sign = (orderId: string, expires: number) => crypto.createHmac("sha256", secret()).update(`invoice:${orderId}:${expires}`).digest("hex");
+import { signatureValid, signedQuery } from "../signed-link.js";
 
 /** A link that opens the invoice in any browser for 15 minutes, so apps can hand it to the system browser */
 export function invoiceLink(orderId: string) {
-  const expires = Date.now() + LINK_TTL_MS;
-  return `/api/v1/marketing/invoices/${orderId}?expires=${expires}&sig=${sign(orderId, expires)}`;
+  return `/api/v1/marketing/invoices/${orderId}?${signedQuery("invoice", orderId)}`;
 }
 
 export function invoiceLinkValid(orderId: string, expires: number, sig: string) {
-  if (!Number.isFinite(expires) || expires < Date.now()) return false;
-  const expected = Buffer.from(sign(orderId, expires));
-  const given = Buffer.from(sig);
-  return expected.length === given.length && crypto.timingSafeEqual(expected, given);
+  return signatureValid("invoice", orderId, expires, sig);
 }
 
 const esc = (s: string | null | undefined) =>

@@ -31,7 +31,7 @@ export async function settleRecharge(app: FastifyInstance, razorpayOrderId: stri
       select: { walletBalance: true },
     });
     await tx.walletTransaction.create({
-      data: { userId: recharge.userId, type: "CREDIT", amount: recharge.amount, balanceAfter: user.walletBalance, description: "Wallet recharge via Razorpay" },
+      data: { userId: recharge.userId, type: "CREDIT", amount: recharge.amount, balanceAfter: user.walletBalance, description: "Wallet recharge via Razorpay", reason: "RECHARGE" },
     });
     return true;
   });

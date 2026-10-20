@@ -44,7 +44,7 @@ async function anonymiseRecords(tx: Prisma.TransactionClient, userId: string) {
 async function forfeitWallet(tx: Prisma.TransactionClient, userId: string, balance: Prisma.Decimal) {
   if (balance.lte(0)) return;
   await tx.walletTransaction.create({
-    data: { userId, type: "DEBIT", amount: balance, balanceAfter: 0, description: "Forfeited on account deletion" },
+    data: { userId, type: "DEBIT", amount: balance, balanceAfter: 0, description: "Forfeited on account deletion", reason: "FORFEIT" },
   });
 }
 

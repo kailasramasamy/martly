@@ -105,6 +105,12 @@ export async function findCapturedPayment(razorpayOrderId: string): Promise<stri
   return items.find((payment) => payment.status === "captured")?.id ?? null;
 }
 
+/** What a payment actually charged, in rupees, and the Razorpay order it belongs to */
+export async function fetchPaymentAmount(paymentId: string): Promise<{ amount: number; orderId: string | null }> {
+  const payment = await getRazorpay().payments.fetch(paymentId);
+  return { amount: Number(payment.amount) / 100, orderId: payment.order_id ?? null };
+}
+
 /** A Razorpay plan billing an amount in paise (GST included) every month or every year */
 export async function createRazorpayPlan(name: string, amountInPaise: number, period: "monthly" | "yearly") {
   const plan = await providerCall(() => getRazorpay().plans.create({

@@ -30,6 +30,10 @@ export interface OrderPickup {
   id: string;
   orderId: string;
   reason: string;
+  remedy: string | null;
+  refundTo: string;
+  /** Decimal as a string */
+  approvedAmount: string | null;
   items: {
     quantity: number;
     orderItem: {

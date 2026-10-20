@@ -5,6 +5,8 @@ import type { JwtUser } from "../../types/jwt.js";
 
 export const PICKUP_SELECT = {
   id: true, userId: true, storeId: true, orderId: true, reason: true, resolvedAt: true,
+  /** Cash refunds are handed over by the rider on collection */
+  remedy: true, refundTo: true, approvedAmount: true,
   items: {
     select: {
       quantity: true,

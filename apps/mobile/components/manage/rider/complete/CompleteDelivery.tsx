@@ -5,7 +5,7 @@ import { ManageStackScreen } from "../../ManageStackScreen";
 import { Button } from "../../ui/Button";
 import { EmptyState } from "../../ui/EmptyState";
 import { formatINR, manage, tabular } from "../../ui/tokens";
-import { orderRef } from "../format";
+import { cashHandBack, orderRef } from "../format";
 import { useRiderActions } from "../use-rider-actions";
 import { useRiderDay } from "../use-rider-day";
 import type { RiderStop } from "../types";
@@ -41,7 +41,7 @@ function Steps({ stop, flow }: { stop: RiderStop; flow: Flow }) {
         </StepSection>
       )}
       <StepSection number={hasReturns ? 3 : 2} title={flow.cod ? "Collect payment" : "Payment"} last>
-        <PaymentBody cod={flow.cod} fullDue={stop.amountDue} refusedValue={flow.value} via={flow.via} onVia={flow.setVia} />
+        <PaymentBody cod={flow.cod} fullDue={stop.amountDue} refusedValue={flow.value} handBack={stop.pickups.filter((p) => flow.checked.includes(p.id)).reduce((n, p) => n + cashHandBack(p), 0)} via={flow.via} onVia={flow.setVia} />
       </StepSection>
     </View>
   );

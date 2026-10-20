@@ -15,7 +15,10 @@ import {
   getRazorpayKeyId,
   verifyRazorpaySignature,
   ensureRazorpayCustomer,
+  fetchPaymentAmount,
 } from "../../services/payment.js";
+import type { Prisma } from "../../../generated/prisma/client.js";
+import { postEntries } from "../../services/ledger/post.js";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { notifyMembershipWelcome } from "../../services/notify/service-alerts.js";
 
@@ -285,15 +288,21 @@ export async function membershipRoutes(app: FastifyInstance) {
     );
     if (!isValid) throw Object.assign(new Error("Payment verification failed"), { statusCode: 400 });
 
-    const { planId, previousMembershipId, amountPaid } = request.query as {
-      planId?: string;
-      previousMembershipId?: string;
-      amountPaid?: string;
-    };
+    const { planId, previousMembershipId } = request.query as { planId?: string; previousMembershipId?: string };
     if (!planId) throw Object.assign(new Error("planId query param required"), { statusCode: 400 });
 
     const plan = await app.prisma.membershipPlan.findUnique({ where: { id: planId } });
     if (!plan) throw Object.assign(new Error("Plan not found"), { statusCode: 404 });
+
+    // The price comes from what Razorpay charged, never from the client
+    const payment = await fetchPaymentAmount(body.razorpay_payment_id);
+    if (payment.orderId !== body.razorpay_order_id) throw Object.assign(new Error("Payment does not match this order"), { statusCode: 400 });
+    const duplicate = await app.prisma.userMembership.findFirst({ where: { razorpayPaymentId: body.razorpay_payment_id }, select: { id: true } });
+    if (duplicate) throw Object.assign(new Error("This payment was already used"), { statusCode: 409 });
+    const sale = (tx: Prisma.TransactionClient, membershipId: string) => postEntries(tx, [{
+      organizationId: plan.organizationId, type: "MEMBERSHIP_SALE", amount: payment.amount,
+      sourceType: "MEMBERSHIP", sourceId: body.razorpay_payment_id, memo: `Membership sale · ${plan.name} · ${membershipId.slice(0, 8)}`,
+    }]);
 
     const now = new Date();
     const days = DURATION_DAYS[plan.duration] ?? 30;
@@ -306,7 +315,7 @@ export async function membershipRoutes(app: FastifyInstance) {
           where: { id: previousMembershipId },
           data: { status: "CANCELLED" },
         });
-        return tx.userMembership.create({
+        const created = await tx.userMembership.create({
           data: {
             userId: user.sub,
             planId: plan.id,
@@ -314,13 +323,15 @@ export async function membershipRoutes(app: FastifyInstance) {
             status: "ACTIVE",
             startDate: now,
             endDate,
-            pricePaid: amountPaid ? Number(amountPaid) : plan.price,
+            pricePaid: payment.amount,
             razorpayOrderId: body.razorpay_order_id,
             razorpayPaymentId: body.razorpay_payment_id,
             previousMembershipId,
           },
           include: { plan: true },
         });
+        await sale(tx, created.id);
+        return created;
       });
 
       notifyMembershipWelcome(app.fcm, app.prisma, user.sub, membership.plan.name, membership.endDate);
@@ -336,19 +347,23 @@ export async function membershipRoutes(app: FastifyInstance) {
     }
 
     // New purchase path
-    const membership = await app.prisma.userMembership.create({
-      data: {
-        userId: user.sub,
-        planId: plan.id,
-        organizationId: plan.organizationId,
-        status: "ACTIVE",
-        startDate: now,
-        endDate,
-        pricePaid: plan.price,
-        razorpayOrderId: body.razorpay_order_id,
-        razorpayPaymentId: body.razorpay_payment_id,
-      },
-      include: { plan: true },
+    const membership = await app.prisma.$transaction(async (tx) => {
+      const created = await tx.userMembership.create({
+        data: {
+          userId: user.sub,
+          planId: plan.id,
+          organizationId: plan.organizationId,
+          status: "ACTIVE",
+          startDate: now,
+          endDate,
+          pricePaid: payment.amount,
+          razorpayOrderId: body.razorpay_order_id,
+          razorpayPaymentId: body.razorpay_payment_id,
+        },
+        include: { plan: true },
+      });
+      await sale(tx, created.id);
+      return created;
     });
 
     notifyMembershipWelcome(app.fcm, app.prisma, user.sub, membership.plan.name, membership.endDate);

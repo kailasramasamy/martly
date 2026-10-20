@@ -119,9 +119,11 @@ interface TopUpProps {
   /** Another purchase is running: this one waits, without spinning */
   locked: boolean;
   onBuy: () => void;
+  /** Set when the ledger balance covers the total */
+  onBuyFromBalance?: () => void;
 }
 
-export function TopUpCard({ onPaidPlan, product, quantity, onQuantity, canBuy, busy, locked, onBuy }: TopUpProps) {
+export function TopUpCard({ onPaidPlan, product, quantity, onQuantity, canBuy, busy, locked, onBuy, onBuyFromBalance }: TopUpProps) {
   return (
     <SectionCard title="Extra promotions">
       <Text style={styles.muted}>{`${formatINR(product.price)} each + ${product.gstPercent}% GST. Used after your monthly promotions run out; they never expire.`}</Text>
@@ -131,6 +133,7 @@ export function TopUpCard({ onPaidPlan, product, quantity, onQuantity, canBuy, b
         <StepButton icon="add" label="More" disabled={quantity >= MAX_QTY} onPress={() => onQuantity(quantity + 1)} />
       </View>
       <Button label={`Buy ${quantity} for ${formatINR(product.price * quantity)}`} onPress={onBuy} disabled={!canBuy || locked || !onPaidPlan} loading={busy} style={styles.buy} />
+      {onBuyFromBalance ? <Button label="Pay from balance" icon="wallet-outline" variant="secondary" onPress={onBuyFromBalance} disabled={!canBuy || locked || !onPaidPlan} style={styles.buy} /> : null}
       {onPaidPlan ? null : <Text style={styles.muted}>Extra promotions are available on Growth and Pro</Text>}
     </SectionCard>
   );

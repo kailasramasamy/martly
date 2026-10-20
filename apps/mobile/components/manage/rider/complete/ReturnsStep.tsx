@@ -3,7 +3,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../../../constants/theme";
 import { manage } from "../../ui/tokens";
 import { PickupThumbs } from "../PickupItems";
-import { orderRef } from "../format";
+import { cashHandBack, orderRef } from "../format";
+import { formatINR } from "../../ui/tokens";
 import type { OrderPickup } from "../../orders/types";
 
 /** Step 2: each return waiting with this customer; ticking one says the rider has all its items */
@@ -12,6 +13,7 @@ export function ReturnsList({ pickups, checked, onToggle }: { pickups: OrderPick
     <>
       {pickups.map((p) => {
         const on = checked.includes(p.id);
+        const cash = cashHandBack(p);
         return (
           <TouchableOpacity
             key={p.id}
@@ -30,7 +32,13 @@ export function ReturnsList({ pickups, checked, onToggle }: { pickups: OrderPick
             </View>
             <PickupThumbs lines={p.items} size={52} />
             <Text style={styles.items}>{p.items.map((i) => `${i.quantity} × ${i.orderItem.product.name} ${i.orderItem.variant.name}`).join("\n")}</Text>
-            <Text style={[styles.state, on && styles.stateOn]}>{on ? "Collected · customer will be refunded" : "Tap when you have all of these"}</Text>
+            {cash > 0 && (
+              <View style={styles.cash}>
+                <Ionicons name="cash-outline" size={20} color="#fff" />
+                <Text style={styles.cashText}>Hand back {formatINR(cash)} cash</Text>
+              </View>
+            )}
+            <Text style={[styles.state, on && styles.stateOn]}>{on ? (cash > 0 ? "Collected · hand the cash back" : "Collected · customer will be refunded") : "Tap when you have all of these"}</Text>
           </TouchableOpacity>
         );
       })}
@@ -46,6 +54,8 @@ const styles = StyleSheet.create({
   title: { fontFamily: fonts.bold, fontSize: 15.5, color: colors.text },
   reason: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, marginTop: 1 },
   items: { fontFamily: fonts.medium, fontSize: 13.5, lineHeight: 20, color: colors.text },
+  cash: { flexDirection: "row", alignItems: "center", gap: 8, minHeight: 44, paddingHorizontal: 12, borderRadius: 10, backgroundColor: colors.primary },
+  cashText: { fontFamily: fonts.extrabold, fontSize: 17, color: "#fff" },
   state: { fontFamily: fonts.bold, fontSize: 13, color: manage.attentionText },
   stateOn: { color: colors.primary },
 });

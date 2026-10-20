@@ -7,7 +7,7 @@ import { getOrgUser } from "../../middleware/org-scope.js";
 import { verifyRazorpaySignature } from "../../services/payment.js";
 import { getEntitlements } from "../../services/marketing/entitlements.js";
 import { getMarketingConfig } from "../../services/marketing/config.js";
-import { createAdOrder, fulfilAdOrder } from "../../services/marketing/billing.js";
+import { BillingError, createAdOrder, fulfilAdOrder } from "../../services/marketing/billing.js";
 import { invoiceLink, invoiceLinkValid, renderInvoice } from "../../services/marketing/invoice.js";
 import { bannerResults, promoSales } from "../../services/marketing/stats.js";
 import { brandAdRoutes } from "./brand-ads.js";
@@ -26,6 +26,16 @@ export function orgOf(request: FastifyRequest, reply: FastifyReply): string | un
 }
 
 /** Store owners' paid marketing: plan, usage, purchases, invoices and results */
+/** An unpaid order can't linger when the balance falls short: it is cancelled and the reason passed on */
+async function payFromBalance(app: FastifyInstance, orderId: string, userId: string) {
+  try {
+    return await fulfilAdOrder(app.prisma, orderId, { fromBalanceBy: userId }, app.fcm);
+  } catch (err) {
+    if (err instanceof BillingError) await app.prisma.adOrder.update({ where: { id: orderId }, data: { status: "CANCELLED" } });
+    throw err;
+  }
+}
+
 export async function marketingRoutes(app: FastifyInstance) {
   await app.register(brandAdRoutes);
   await app.register(subscriptionRoutes);
@@ -64,7 +74,7 @@ export async function marketingRoutes(app: FastifyInstance) {
   });
 
   app.post("/orders", owner, async (request, reply) => {
-    const { productId, quantity } = createAdOrderSchema.parse(request.body);
+    const { productId, quantity, payWith } = createAdOrderSchema.parse(request.body);
     const user = getOrgUser(request);
     const [product, org] = await Promise.all([
       app.prisma.adProduct.findUnique({ where: { id: productId } }),
@@ -78,7 +88,13 @@ export async function marketingRoutes(app: FastifyInstance) {
     }
     if (!org.billingName || !org.billingAddress || !org.billingState) return reply.badRequest("Add your billing details before paying");
     const billing = { name: org.billingName, gstin: org.gstin, address: org.billingAddress, state: org.billingState };
-    const { order, checkout } = await createAdOrder(app.prisma, product, quantity, { organizationId: org.id, billing, createdById: user.sub });
+    const buyer = { organizationId: org.id, billing, createdById: user.sub };
+    if (payWith === "BALANCE") {
+      const { order } = await createAdOrder(app.prisma, product, quantity, buyer, false);
+      const paid = await payFromBalance(app, order.id, user.sub);
+      return reply.code(201).send({ success: true, data: { orderId: order.id, total: Number(order.total), checkout: null, status: paid.status, number: paid.number } });
+    }
+    const { order, checkout } = await createAdOrder(app.prisma, product, quantity, buyer);
     return reply.code(201).send({ success: true, data: { orderId: order.id, total: Number(order.total), checkout } });
   });
 

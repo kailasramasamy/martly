@@ -16,6 +16,7 @@ import { AccessGate } from "../../../components/manage/support/AccessGate";
 import { useAction } from "../../../lib/manage/use-action";
 import { api } from "../../../lib/api";
 import { ConfirmDialog } from "../../../components/manage/ui/ConfirmDialog";
+import { CashRefundBanner, cashDueAtStore, receiveMessage } from "../../../components/manage/returns/CashRefund";
 import { OutcomeRows } from "../../../components/manage/returns/OutcomeRows";
 import { ReturnedItems } from "../../../components/manage/returns/ReturnedItems";
 import { ResolveSheet, type Resolution } from "../../../components/manage/returns/ResolveSheet";
@@ -39,6 +40,8 @@ function ReturnDetail({ id }: { id: string }) {
     reload();
   };
 
+  const cashDue = data ? cashDueAtStore(data) : 0;
+
   const actions = canResolve ? (
     <>
       <Button label="Reject" icon="close" variant="danger" onPress={() => setMode("REJECTED")} style={{ flex: 1 }} />
@@ -52,6 +55,7 @@ function ReturnDetail({ id }: { id: string }) {
     <ManageStackScreen title="Return request" loading={loading} error={error} onRetry={reload} actions={actions}>
       {data && (
         <>
+          {canReceive && <CashRefundBanner amount={cashDue} />}
           <SectionCard title="Request">
             <StatusPill {...RETURN_STATUS[data.status]} />
             <KeyValue label="Order" value={orderRef(data.order.id)} />
@@ -92,7 +96,7 @@ function ReturnDetail({ id }: { id: string }) {
           <ConfirmDialog
             visible={confirmReceive}
             title="Mark received at store?"
-            message={data.remedy === "REFUND" ? "The item is back with the store. The refund is paid to the customer's wallet now." : "The item is back with the store."}
+            message={receiveMessage(data, cashDue)}
             confirmLabel="Mark received"
             confirmVariant="primary"
             running={running}

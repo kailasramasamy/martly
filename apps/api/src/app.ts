@@ -50,6 +50,7 @@ import { smartReorderRoutes } from "./routes/smart-reorder/index.js";
 import { storeIntelligenceRoutes } from "./routes/store-intelligence/index.js";
 import { customerInsightsRoutes } from "./routes/customer-insights/index.js";
 import { returnRequestRoutes } from "./routes/return-requests/index.js";
+import { ledgerRoutes } from "./routes/ledger/index.js";
 import { riderLocationRoutes } from "./routes/rider-location/index.js";
 import { membershipRoutes } from "./routes/memberships/index.js";
 import { marketingRoutes } from "./routes/marketing/index.js";
@@ -74,6 +75,7 @@ import deliveryAlertsSchedulerPlugin from "./plugins/delivery-alerts-scheduler.j
 import membershipSchedulerPlugin from "./plugins/membership-scheduler.js";
 import orderSlaSchedulerPlugin from "./plugins/order-sla-scheduler.js";
 import returnsSchedulerPlugin from "./plugins/returns-scheduler.js";
+import settlementSchedulerPlugin from "./plugins/settlement-scheduler.js";
 import attentionSchedulerPlugin from "./plugins/attention-scheduler.js";
 import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
 
@@ -113,6 +115,7 @@ export async function buildApp() {
   await app.register(membershipSchedulerPlugin);
   await app.register(orderSlaSchedulerPlugin);
   await app.register(returnsSchedulerPlugin);
+  await app.register(settlementSchedulerPlugin);
   await app.register(attentionSchedulerPlugin);
   await app.register(catalogAgentWorkerPlugin);
 
@@ -189,6 +192,7 @@ export async function buildApp() {
       await api.register(storeIntelligenceRoutes, { prefix: "/store-intelligence" });
       await api.register(customerInsightsRoutes, { prefix: "/customer-insights" });
       await api.register(returnRequestRoutes, { prefix: "/return-requests" });
+      await api.register(ledgerRoutes, { prefix: "/ledger" });
       await api.register(riderLocationRoutes, { prefix: "/rider-location" });
       await api.register(membershipRoutes, { prefix: "/memberships" });
       await api.register(marketingRoutes, { prefix: "/marketing" });

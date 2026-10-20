@@ -22,6 +22,7 @@ export function OutcomeRows({ request: r }: { request: ReturnRequestDetail }) {
   return (
     <>
       <KeyValue label="Outcome" value={ReturnRemedyLabels[r.remedy]} />
+      {r.remedy === "REFUND" ? <KeyValue label="Refund to" value={r.refundTo === "CASH" ? "Cash" : "Martly wallet"} /> : null}
       <KeyValue label="Return method" value={ReturnMethodLabels[r.method]} />
       {r.receivedAt ? <KeyValue label="Received" value={receivedText(r)} /> : null}
       {receiverText(r) ? <KeyValue label={r.collectedOnOrderId ? "Collected by" : "Received by"} value={receiverText(r) as string} /> : null}

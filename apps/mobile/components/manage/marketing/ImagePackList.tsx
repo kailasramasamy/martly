@@ -12,12 +12,15 @@ interface Props {
   /** Another purchase is running: the others waits, without spinning */
   locked: boolean;
   onBuy: (pack: AdProduct) => void;
+  /** Offered per pack when the ledger balance covers it */
+  onBuyFromBalance?: (pack: AdProduct) => void;
+  coveredByBalance?: (pack: AdProduct) => boolean;
 }
 
 const perImage = (p: AdProduct) => p.price / p.aiImageCredits;
 
 /** AI-image packs: how many images, the price before GST and the price per image, each with a Buy button */
-export function ImagePackList({ packs, canBuy, pendingId, locked, onBuy }: Props) {
+export function ImagePackList({ packs, canBuy, pendingId, locked, onBuy, onBuyFromBalance, coveredByBalance }: Props) {
   const cheapest = Math.min(...packs.map(perImage));
   return (
     <View style={styles.list}>
@@ -32,7 +35,10 @@ export function ImagePackList({ packs, canBuy, pendingId, locked, onBuy }: Props
             <Text style={[styles.muted, tabular]}>{`${formatINR(perImage(p), { decimals: true })} an image`}</Text>
             {packs.length > 1 && perImage(p) === cheapest ? <Text style={styles.best}>Best value</Text> : null}
           </View>
-          <Button label="Buy" onPress={() => onBuy(p)} disabled={!canBuy || locked} loading={pendingId === p.id} style={styles.buy} />
+          <View style={styles.actions}>
+            <Button label="Buy" onPress={() => onBuy(p)} disabled={!canBuy || locked} loading={pendingId === p.id} style={styles.buy} />
+            {onBuyFromBalance && coveredByBalance?.(p) ? <Button label="From balance" compact variant="secondary" onPress={() => onBuyFromBalance(p)} disabled={!canBuy || locked} style={styles.buy} /> : null}
+          </View>
         </View>
       ))}
     </View>
@@ -49,5 +55,6 @@ const styles = StyleSheet.create({
   price: { fontFamily: fonts.bold, fontSize: 15, color: colors.text },
   muted: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, marginTop: 2 },
   best: { fontFamily: fonts.extrabold, fontSize: 11, letterSpacing: 0.6, color: manage.attentionText, marginTop: 4 },
+  actions: { gap: 6 },
   buy: { minWidth: 72 },
 });

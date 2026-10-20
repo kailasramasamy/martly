@@ -1,18 +1,25 @@
 import { Edit, useForm } from "@refinedev/antd";
 import { Form, Input, InputNumber, Select, Card, Row, Col } from "antd";
-import { BankOutlined } from "@ant-design/icons";
+import { BankOutlined, PercentageOutlined } from "@ant-design/icons";
 import { FESTIVAL_REGIONS } from "@martly/shared/constants";
 
 import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../../components/ReadableSection";
 
+const COMMISSION_HELP = "Includes GST. Applies to orders delivered after you save.";
+
 export const OrganizationEdit = () => {
   const { formProps, saveButtonProps } = useForm({ resource: "organizations" });
+  const initialValues = formProps.initialValues && {
+    ...formProps.initialValues,
+    onlineCommissionPct: Number(formProps.initialValues.onlineCommissionPct),
+    codCommissionPct: Number(formProps.initialValues.codCommissionPct),
+  };
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
       <ReadableSection>
-        <Form {...formProps} layout="vertical">
+        <Form {...formProps} initialValues={initialValues} layout="vertical">
           <Row gutter={[16, 16]}>
             <Col xs={24} lg={12}>
               <Card title={sectionTitle(<BankOutlined />, "Organization Details")} size="small">
@@ -30,6 +37,16 @@ export const OrganizationEdit = () => {
                 </Form.Item>
                 <Form.Item label="Promo discount cap (%)" name="promoDiscountCap" help="The promo agent never sets a discount above this.">
                   <InputNumber min={1} max={90} style={{ width: "100%" }} />
+                </Form.Item>
+              </Card>
+            </Col>
+            <Col xs={24} lg={12}>
+              <Card title={sectionTitle(<PercentageOutlined />, "Martly Commission")} size="small">
+                <Form.Item label="Commission on online payments (%)" name="onlineCommissionPct" help={COMMISSION_HELP}>
+                  <InputNumber min={0} max={20} step={0.5} precision={2} style={{ width: "100%" }} />
+                </Form.Item>
+                <Form.Item label="Commission on COD and wallet payments (%)" name="codCommissionPct" help={COMMISSION_HELP}>
+                  <InputNumber min={0} max={20} step={0.5} precision={2} style={{ width: "100%" }} />
                 </Form.Item>
               </Card>
             </Col>

@@ -11,6 +11,7 @@ interface ListRowProps {
   caption?: string;
   /** Right-aligned primary figure, e.g. an amount */
   value?: string;
+  valueColor?: string;
   /** Right-aligned node under the value, e.g. a StatusPill */
   trailing?: ReactNode;
   icon?: keyof typeof Ionicons.glyphMap;
@@ -42,7 +43,7 @@ function Leading({ icon, imageUrl, imageContain, status }: Pick<ListRowProps, "i
 }
 
 export function ListRow(props: ListRowProps) {
-  const { title, subtitle, caption, value, trailing, railColor, status, onPress, onLongPress, selected, chevron } = props;
+  const { title, subtitle, caption, value, valueColor, trailing, railColor, status, onPress, onLongPress, selected, chevron } = props;
   return (
     <TouchableOpacity
       style={[styles.row, railColor ? styles.railed : null, selected && styles.selected]}
@@ -69,7 +70,7 @@ export function ListRow(props: ListRowProps) {
       </View>
       {(value || trailing) && (
         <View style={styles.right}>
-          {value ? <Text style={[styles.value, tabular]}>{value}</Text> : null}
+          {value ? <Text style={[styles.value, tabular, valueColor ? { color: valueColor } : null]}>{value}</Text> : null}
           {trailing}
         </View>
       )}

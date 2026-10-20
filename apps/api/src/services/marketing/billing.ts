@@ -3,6 +3,8 @@ import type { AdOrder, AdProduct, Prisma, PrismaClient } from "../../../generate
 import { createRazorpayOrder, getRazorpayKeyId, refundRazorpayPayment } from "../payment.js";
 import { notifyCampaignInReview } from "../notify/marketing-alerts.js";
 import { getMarketingConfig, nextInvoiceNumber, quote } from "./config.js";
+import { spendableBalance } from "../ledger/balance.js";
+import { lockOrganization, postEntries } from "../ledger/post.js";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -55,15 +57,22 @@ export async function createAdOrder(prisma: PrismaClient, product: AdProduct, qu
  * Marks the order paid and hands over what was bought. Both the app's verify call and the Razorpay webhook land
  * here, so the PENDING → PAID claim makes the second arrival a no-op.
  */
-export async function fulfilAdOrder(prisma: PrismaClient, adOrderId: string, payment: { paymentId?: string; offlineReference?: string }, fcm: Messaging | null = null) {
+export async function fulfilAdOrder(
+  prisma: PrismaClient, adOrderId: string,
+  payment: { paymentId?: string; offlineReference?: string; fromBalanceBy?: string }, fcm: Messaging | null = null,
+) {
   const { order: paid, claimed } = await prisma.$transaction(async (tx) => {
     const config = await getMarketingConfig(tx);
     const claimed = await tx.adOrder.updateMany({
       where: { id: adOrderId, status: "PENDING" },
-      data: { status: "PAID", paidAt: new Date(), razorpayPaymentId: payment.paymentId, offlineReference: payment.offlineReference },
+      data: {
+        status: "PAID", paidAt: new Date(), razorpayPaymentId: payment.paymentId,
+        offlineReference: payment.fromBalanceBy ? "Paid from Martly balance" : payment.offlineReference,
+      },
     });
     const order = await tx.adOrder.findUniqueOrThrow({ where: { id: adOrderId }, include: { product: true } });
     if (!claimed.count) return { order, claimed: false };
+    if (payment.fromBalanceBy) await chargeBalance(tx, order, payment.fromBalanceBy);
     const number = await nextInvoiceNumber(tx, config.invoicePrefix);
     await tx.adOrder.update({ where: { id: adOrderId }, data: { number } });
     await deliver(tx, order, order.product);
@@ -72,6 +81,17 @@ export async function fulfilAdOrder(prisma: PrismaClient, adOrderId: string, pay
   // The payment is already recorded; a failed alert must not fail it
   if (claimed) void announceCampaignInReview(prisma, fcm, adOrderId).catch((err: unknown) => console.error("Brand campaign review alert failed", err));
   return paid;
+}
+
+/** Pays an organization's order from what Martly owes it; fails (rolling back the claim) when the balance falls short */
+async function chargeBalance(tx: Prisma.TransactionClient, order: AdOrder & { product: AdProduct }, userId: string) {
+  if (!order.organizationId) throw new BillingError("Only organizations can pay from their balance");
+  await lockOrganization(tx, order.organizationId);
+  if ((await spendableBalance(tx, order.organizationId)) < Number(order.total)) throw new BillingError("Your available balance doesn't cover this");
+  await postEntries(tx, [{
+    organizationId: order.organizationId, type: "PLAN_FEE", amount: -Number(order.total), sourceType: "AD_ORDER", sourceId: order.id,
+    memo: `Paid from balance · ${order.product.name}`, createdBy: userId,
+  }]);
 }
 
 /** A paid brand package waits for Martly's review, so Martly's team is told */
@@ -167,5 +187,15 @@ export async function refundAdOrder(prisma: PrismaClient, adOrderId: string) {
   if (order.status === "PENDING") return prisma.adOrder.update({ where: { id: adOrderId }, data: { status: "CANCELLED" } });
   if (order.status !== "PAID") return order;
   if (order.razorpayPaymentId) await refundRazorpayPayment(order.razorpayPaymentId);
-  return prisma.adOrder.update({ where: { id: adOrderId }, data: { status: "REFUNDED" } });
+  return prisma.$transaction(async (tx) => {
+    // An order paid from the balance is refunded back to it
+    const fee = await tx.ledgerEntry.findUnique({ where: { type_sourceId: { type: "PLAN_FEE", sourceId: order.id } } });
+    if (fee) {
+      await postEntries(tx, [{
+        organizationId: fee.organizationId, type: "REVERSAL", amount: -Number(fee.amount), sourceType: "LEDGER_ENTRY", sourceId: fee.id,
+        memo: `Refunded · reverses ${fee.memo}`,
+      }]);
+    }
+    return tx.adOrder.update({ where: { id: adOrderId }, data: { status: "REFUNDED" } });
+  });
 }

@@ -35,6 +35,10 @@ export async function returnRequestRoutes(app: FastifyInstance) {
     if (order.returnRequest) {
       return reply.badRequest("A return request already exists for this order");
     }
+    // Cash goes back only where cash (or UPI to the store) was collected; wallet-paid orders refund to the wallet
+    if (body.refundTo === "CASH" && (order.paymentMethod !== "COD" || order.codCollectedVia === null)) {
+      return reply.badRequest("Cash refunds are only for orders paid in cash on delivery");
+    }
 
     const delivered = deliveredAt(order.statusLogs) ?? order.updatedAt;
     const hoursSinceDelivery = (Date.now() - delivered.getTime()) / (1000 * 60 * 60);
@@ -65,6 +69,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
         description: body.description,
         images: body.imageUrls ?? [],
         requestedAmount,
+        refundTo: body.refundTo,
         items: {
           create: body.items.map((i) => ({
             orderItemId: i.orderItemId,

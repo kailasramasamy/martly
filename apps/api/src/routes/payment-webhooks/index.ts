@@ -3,6 +3,7 @@ import { verifyRazorpayWebhook } from "../../services/payment.js";
 import { settleOrderPayment } from "../../services/order-payment.js";
 import { settleRecharge } from "../../services/wallet-recharge.js";
 import { fulfilAdOrder } from "../../services/marketing/billing.js";
+import { settleDue } from "../../services/ledger/dues.js";
 import { recordSubscriptionCharge, updateSubscriptionStatus } from "../../services/marketing/subscriptions.js";
 import { markPaymentFailed } from "../../services/notify/order-alerts.js";
 import { notifyOwners } from "../../services/marketing/renewals.js";
@@ -33,10 +34,15 @@ async function onOrderPaid(app: FastifyInstance, event: RazorpayEvent) {
   const razorpayOrderId = event.payload?.order?.entity?.id;
   if (event.event !== "order.paid" || !razorpayOrderId) return;
   const paymentId = event.payload?.payment?.entity?.id;
-  // Marketing orders, customer orders and wallet top-ups are all settled here
+  // Marketing orders, balance dues, customer orders and wallet top-ups are all settled here
   const adOrder = await app.prisma.adOrder.findUnique({ where: { razorpayOrderId }, select: { id: true } });
   if (adOrder) await fulfilAdOrder(app.prisma, adOrder.id, { paymentId }, app.fcm);
   if (!paymentId) return;
+  const due = await app.prisma.balanceDue.findUnique({ where: { razorpayOrderId }, select: { id: true } });
+  if (due) {
+    await settleDue(app.prisma, app.fcm, due.id, { paymentId });
+    return;
+  }
   const order = await app.prisma.order.findFirst({ where: { razorpayOrderId }, select: { id: true } });
   if (order) await settleOrderPayment(app, order.id, paymentId);
   else await settleRecharge(app, razorpayOrderId, paymentId);

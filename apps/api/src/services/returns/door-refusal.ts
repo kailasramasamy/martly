@@ -15,6 +15,7 @@ interface RefusedLine {
 interface DeliveringOrder {
   id: string;
   userId: string;
+  storeId: string;
   totalAmount: unknown;
   paymentMethod: string;
   paymentStatus: string;
@@ -77,10 +78,12 @@ export async function deliverWithRefusals(tx: Tx, order: DeliveringOrder, refuse
   const walletCredit = Math.max(0, refusedAmount - cashDue);
   if (walletCredit > 0) {
     const user = await tx.user.update({ where: { id: order.userId }, data: { walletBalance: { increment: walletCredit } } });
+    const store = await tx.store.findUniqueOrThrow({ where: { id: order.storeId }, select: { organizationId: true } });
     await tx.walletTransaction.create({
       data: {
         userId: order.userId, orderId: order.id, type: "CREDIT", amount: walletCredit, balanceAfter: Number(user.walletBalance),
-        description: `Refund for items handed back on order #${order.id.slice(0, 8)}`,
+        description: `Refund for items handed back on order #${order.id.slice(0, 8)}`, reason: "DOOR_REFUND",
+        organizationId: store.organizationId, storeId: order.storeId,
       },
     });
   }

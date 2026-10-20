@@ -90,6 +90,7 @@ const MODULE_GROUPS: ModuleGroup[] = [
     title: "Organization",
     modules: [
       { resource: "stores", label: "Stores", icon: "storefront-outline", href: "/manage/stores" },
+      { resource: "finance", label: "Payments & payouts", icon: "cash-outline", href: "/manage/finance" },
       { resource: "organizations", label: "Organizations", icon: "business-outline", href: "/manage/organizations" },
     ],
   },

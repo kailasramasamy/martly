@@ -14,6 +14,7 @@ interface ReturnRef {
   method: string | null;
   approvedAmount: unknown;
   adminNote?: string | null;
+  refundTo?: string;
 }
 
 export type ReturnEvent =
@@ -31,7 +32,9 @@ async function storeName(prisma: PrismaClient, storeId: string) {
 
 /** What the customer has to do next with an approved return */
 function handoverLine(rr: ReturnRef, store: string): string {
-  const after = rr.remedy === "REFUND" ? ` Your ${formatINR(Number(rr.approvedAmount))} refund follows once we have it.` : "";
+  const amount = formatINR(Number(rr.approvedAmount));
+  const cash = rr.refundTo === "CASH" && rr.method !== "KEEP";
+  const after = rr.remedy !== "REFUND" ? "" : cash ? ` You'll get ${amount} back in cash when you hand it over.` : ` Your ${amount} refund follows once we have it.`;
   if (rr.method === "NEXT_ORDER") return `Hand the item to our rider with your next order.${after}`;
   if (rr.method === "AT_STORE") return `Please drop the item at ${store}.${after}`;
   return "";
@@ -54,6 +57,9 @@ async function eventCopy(prisma: PrismaClient, rr: ReturnRef, event: ReturnEvent
     case "APPROVED":
       return approvedCopy(rr, event.refunded, store);
     case "RECEIVED":
+      if (event.refunded !== null && rr.refundTo === "CASH") {
+        return { title: "Refunded in cash", body: `We've received your return for order ${ref} and refunded ${formatINR(event.refunded)} in cash.` };
+      }
       return event.refunded !== null
         ? { title: "Refund credited", body: `We've received your return for order ${ref}. ${formatINR(event.refunded)} is in your Martly wallet.` }
         : { title: "Return received", body: `We've received the item you returned from order ${ref}.` };

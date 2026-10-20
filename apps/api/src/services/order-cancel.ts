@@ -55,11 +55,13 @@ export async function applyCancelRefunds(tx: Tx, order: CancellableOrder, opts: 
   const paymentRefunded = order.paymentMethod === "ONLINE" && order.paymentStatus === "PAID";
   // Points come back as points below, so the wallet gets back only what was paid in money
   const refundAmount = paymentRefunded ? Number(order.totalAmount) - (order.loyaltyPointsUsed ?? 0) : Number(order.walletAmountUsed ?? 0);
+  const store = await tx.store.findUniqueOrThrow({ where: { id: order.storeId }, select: { organizationId: true } });
   if (refundAmount > 0) {
     const user = await tx.user.update({ where: { id: order.userId }, data: { walletBalance: { increment: refundAmount } } });
     await tx.walletTransaction.create({
       data: {
-        userId: order.userId, orderId: order.id, type: "CREDIT", amount: refundAmount,
+        userId: order.userId, orderId: order.id, type: "CREDIT", amount: refundAmount, reason: "CANCEL_REFUND",
+        organizationId: store.organizationId, storeId: order.storeId,
         balanceAfter: Number(user.walletBalance), description: `Refund for cancelled order ${ref}`,
       },
     });
@@ -68,7 +70,6 @@ export async function applyCancelRefunds(tx: Tx, order: CancellableOrder, opts: 
   const used = order.loyaltyPointsUsed ?? 0;
   const earned = opts.reverseEarned ? order.loyaltyPointsEarned ?? 0 : 0;
   if (used > 0 || earned > 0) {
-    const store = await tx.store.findUniqueOrThrow({ where: { id: order.storeId }, select: { organizationId: true } });
     if (used > 0) await moveLoyalty(tx, order, store.organizationId, used, `Reversal for cancelled order ${ref}`);
     if (earned > 0) await moveLoyalty(tx, order, store.organizationId, -earned, `Earned points reversed for cancelled order ${ref}`);
   }

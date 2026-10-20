@@ -29,6 +29,7 @@ export const NotificationType = {
   STAFF_SERVICE: "STAFF_SERVICE",
   STAFF_MARKETING: "STAFF_MARKETING",
   STAFF_TEAM: "STAFF_TEAM",
+  STAFF_FINANCE: "STAFF_FINANCE",
 } as const;
 export type NotificationType = (typeof NotificationType)[keyof typeof NotificationType];
 
@@ -63,11 +64,12 @@ export const NotificationTypeLabels: Record<NotificationType, string> = {
   STAFF_SERVICE: "Customer Service",
   STAFF_MARKETING: "Marketing",
   STAFF_TEAM: "Team",
+  STAFF_FINANCE: "Payments",
 };
 
 /** Types that belong in the staff (Manage) inbox; everything else is a shopper notification */
 export const STAFF_NOTIFICATION_TYPES: readonly NotificationType[] = [
-  "NEW_ORDER", "STAFF_ORDER", "STAFF_STOCK", "STAFF_DELIVERY", "STAFF_SERVICE", "STAFF_MARKETING", "STAFF_TEAM",
+  "NEW_ORDER", "STAFF_ORDER", "STAFF_STOCK", "STAFF_DELIVERY", "STAFF_SERVICE", "STAFF_MARKETING", "STAFF_TEAM", "STAFF_FINANCE",
 ];
 
 export const NotificationAudience = { STAFF: "staff", CUSTOMER: "customer" } as const;

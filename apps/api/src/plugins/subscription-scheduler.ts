@@ -423,6 +423,9 @@ async function subscriptionSchedulerPlugin(app: FastifyInstance) {
                     orderId: newOrder.id,
                     type: "DEBIT",
                     amount: finalTotal,
+                    reason: "SUBSCRIPTION",
+                    organizationId: store.organizationId,
+                    storeId: store.id,
                     balanceAfter: Number(updatedUser.walletBalance),
                     description: isPartial
                       ? `Subscription order #${newOrder.id.slice(0, 8)} (partial)`

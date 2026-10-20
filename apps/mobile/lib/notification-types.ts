@@ -42,6 +42,7 @@ const LOOKS: Record<NotificationType, Look> = {
   STAFF_SERVICE: { icon: "chatbubbles", bg: "#e0f2fe", color: "#0284c7" },
   STAFF_MARKETING: { icon: "megaphone", bg: "#fce7f3", color: "#db2777" },
   STAFF_TEAM: { icon: "people", bg: "#e0e7ff", color: "#4f46e5" },
+  STAFF_FINANCE: { icon: "cash", bg: "#dcfce7", color: "#15803d" },
 };
 
 const DEFAULT_LOOK: Look = { icon: "notifications", bg: "#f1f5f9", color: colors.textSecondary };

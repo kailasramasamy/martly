@@ -10,6 +10,7 @@ import { ImagePackList } from "./ImagePackList";
 import { PlanPayment } from "./PlanPayment";
 import { imagePacks } from "./ai-images";
 import { useAdCheckout } from "./use-ad-checkout";
+import { useBalance } from "./use-balance";
 import type { AdProduct } from "./plan-types";
 
 interface Props {
@@ -30,10 +31,15 @@ export function BuyImagesSheet({ visible, onClose, onBought }: Props) {
     onBought();
     onClose();
   });
+  const balance = useBalance(visible && can(user, "marketing-plan", "create"));
   const packs = imagePacks(products.data);
   const buy = (pack: AdProduct) => {
     bought.current = pack;
     checkout.buy(pack.id, 1);
+  };
+  const buyFromBalance = (pack: AdProduct) => {
+    bought.current = pack;
+    checkout.buyFromBalance(pack.id, 1);
   };
 
   return (
@@ -42,6 +48,7 @@ export function BuyImagesSheet({ visible, onClose, onBought }: Props) {
         <Text style={styles.note}>Packs are used after your monthly AI images run out, and never expire.</Text>
         {packs.length > 0 ? <ImagePackList
           packs={packs} canBuy={can(user, "marketing-plan", "create")} onBuy={buy}
+          onBuyFromBalance={buyFromBalance} coveredByBalance={(p) => balance.covers(p, 1)}
           pendingId={checkout.running ? bought.current?.id ?? null : null} locked={checkout.running}
         /> : (
           <Text style={styles.note}>{products.error ?? "Loading packs…"}</Text>

@@ -18,6 +18,7 @@ import { calculateEffectivePrice } from "../../services/pricing.js";
 import { checkCoupon } from "../../services/coupons.js";
 import { reserveStock, releaseStock } from "../../services/stock.js";
 import { deliverWithRefusals } from "../../services/returns/door-refusal.js";
+import { postDeliveryEntries } from "../../services/ledger/order.js";
 import { attachReplacements, reopenReplacements } from "../../services/returns/replacement.js";
 import { pendingPickups } from "../../services/returns/pickups.js";
 import { notifyReplacementRefunds } from "../../services/notify/return-alerts.js";
@@ -195,6 +196,7 @@ export async function orderRoutes(app: FastifyInstance) {
       where: { id: body.storeId },
       select: { organizationId: true, name: true, address: true, latitude: true, longitude: true, deliveryRadius: true, minOrderAmount: true, freeDeliveryThreshold: true, baseDeliveryFee: true },
     });
+    if (!store) return reply.notFound("Store not found");
 
     // Resolve delivery address from addressId or direct input
     let deliveryAddress: string | null = null;
@@ -630,6 +632,9 @@ export async function orderRoutes(app: FastifyInstance) {
               amount: walletDeduction,
               balanceAfter: Number(updatedUser.walletBalance),
               description: `Used for order #${newOrder.id.slice(0, 8)}`,
+              reason: "ORDER_PAYMENT",
+              organizationId: store.organizationId,
+              storeId: body.storeId,
             },
           });
         }
@@ -839,6 +844,7 @@ export async function orderRoutes(app: FastifyInstance) {
         let referralReferrerId: string | null = null;
         let referralReferrerReward = 0;
         let referralRefereeReward = 0;
+        let referralId: string | null = null;
         if (body.status === "DELIVERED") {
           const orderStore = await tx.store.findUnique({
             where: { id: existing.storeId },
@@ -882,6 +888,9 @@ export async function orderRoutes(app: FastifyInstance) {
                       amount: rrReward,
                       balanceAfter: Number(updatedReferrer.walletBalance),
                       description: `Referral reward — your friend placed their first order`,
+                      reason: "REFERRAL",
+                      organizationId: orderStore.organizationId,
+                      storeId: existing.storeId,
                     },
                   });
                 }
@@ -899,6 +908,10 @@ export async function orderRoutes(app: FastifyInstance) {
                       amount: reReward,
                       balanceAfter: Number(updatedReferee.walletBalance),
                       description: `Welcome reward — referral bonus for your first order`,
+                      reason: "REFERRAL",
+                      orderId: existing.id,
+                      organizationId: orderStore.organizationId,
+                      storeId: existing.storeId,
                     },
                   });
                 }
@@ -914,12 +927,18 @@ export async function orderRoutes(app: FastifyInstance) {
                 });
 
                 referralCompleted = true;
+                referralId = pendingReferral.id;
                 referralReferrerId = pendingReferral.referrerId;
                 referralReferrerReward = rrReward;
                 referralRefereeReward = reReward;
               }
             }
           }
+        }
+
+        if (body.status === "DELIVERED") {
+          const referral = referralId ? { id: referralId, referrerReward: referralReferrerReward, refereeReward: referralRefereeReward } : null;
+          await postDeliveryEntries(tx, existing, refusal ?? { refusedAmount: 0, walletCredit: 0 }, referral);
         }
 
         const refunds = body.status === "CANCELLED" ? await applyCancelRefunds(tx, existing, { reverseEarned: true }) : null;

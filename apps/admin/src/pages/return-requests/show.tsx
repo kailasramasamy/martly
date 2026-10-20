@@ -33,6 +33,7 @@ import {
   ReturnMethodLabels,
   ReturnRemedy,
   ReturnRemedyLabels,
+  RefundDestination,
 } from "@martly/shared/constants";
 import { ApproveModal, type ApproveBody } from "./ApproveModal";
 import { sectionTitle } from "../../theme";
@@ -107,6 +108,8 @@ export const ReturnRequestShow = () => {
   const replacement = (record.replacementItems ?? []).find((r: any) => r.order?.status !== "CANCELLED");
   const canReceive = record.status === "IN_PROGRESS" && record.method !== ReturnMethod.KEEP && !record.receivedAt;
 
+  const owesCash = record.refundTo === RefundDestination.CASH && record.remedy === ReturnRemedy.REFUND && record.approvedAmount != null;
+
   return (
     <Show>
       <ReadableSection>
@@ -147,7 +150,14 @@ export const ReturnRequestShow = () => {
             <Col xs={24}>
               <Card size="small">
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ color: "#64748b" }}>Waiting for the item to come back.</span>
+                  <span style={{ color: "#64748b" }}>
+                    Waiting for the item to come back.
+                    {owesCash && (
+                      <strong style={{ display: "block", color: "#b45309" }}>
+                        Pay {"\u20B9"}{Number(record.approvedAmount).toLocaleString("en-IN", { maximumFractionDigits: 0 })} cash to the customer
+                      </strong>
+                    )}
+                  </span>
                   <Popconfirm title="Mark this item as received?" onConfirm={handleReceive}>
                     <Button type="primary" icon={<CheckCircleOutlined />}>Mark received</Button>
                   </Popconfirm>
@@ -179,6 +189,9 @@ export const ReturnRequestShow = () => {
                 )}
                 {record.adminNote && (
                   <Descriptions.Item label="Admin Note">{record.adminNote}</Descriptions.Item>
+                )}
+                {record.refundTo && record.remedy === ReturnRemedy.REFUND && (
+                  <Descriptions.Item label="Refund to">{record.refundTo === RefundDestination.CASH ? "Cash" : "Wallet"}</Descriptions.Item>
                 )}
                 {record.remedy && (
                   <Descriptions.Item label="Outcome">{ReturnRemedyLabels[record.remedy as ReturnRemedy]}</Descriptions.Item>

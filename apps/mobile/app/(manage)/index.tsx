@@ -20,6 +20,7 @@ import { AttentionCard } from "../../components/manage/today/AttentionCard";
 import { RecentOrdersCard, TopProductsCard } from "../../components/manage/today/TodayLists";
 import { useTodayData } from "../../components/manage/today/use-today-data";
 import { MarketingPlanStrip } from "../../components/manage/today/MarketingPlanStrip";
+import { PayoutCard } from "../../components/manage/today/PayoutCard";
 import { useStatusCounts } from "../../components/manage/orders/use-status-counts";
 
 function Greeting({ name }: { name?: string }) {
@@ -56,6 +57,7 @@ function TodayDashboard() {
   // Coming back to Today refreshes the live queue counts
   useFocusEffect(useCallback(() => { reloadCounts(); }, [reloadCounts]));
   // The marketing plan belongs to an organisation, so the platform admin doesn't get the strip
+  const showPayout = user?.role !== "SUPER_ADMIN" && hasPermission(user?.permissions, Permission.FINANCE_MANAGE);
   const showMarketing = user?.role !== "SUPER_ADMIN" && can(user, "marketing-plan");
 
   const openOrders = (status?: string) => {
@@ -77,7 +79,8 @@ function TodayDashboard() {
         <EmptyState icon="cloud-offline-outline" title="Couldn't load today" message={error ?? undefined} action={{ label: "Try again", onPress: refresh }} />
       ) : (
         <>
-          <AttentionCard key={pulls} storeId={storeId} />
+          <AttentionCard key={`attention-${pulls}`} storeId={storeId} />
+          {showPayout && <PayoutCard key={`payout-${pulls}`} />}
           <TodayKpis stats={stats} />
           {showMarketing && <MarketingPlanStrip />}
           <SectionCard title="Live queue" action={{ label: "All orders", onPress: () => openOrders() }}>
