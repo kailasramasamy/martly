@@ -1,11 +1,12 @@
 import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
+import type { Prisma } from "../../../generated/prisma/client.js";
 import { authenticate } from "../../middleware/auth.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { decorateStoreProducts, storeProductInclude, type StoreProductView } from "../../services/store-product-view.js";
 
 interface ReorderItems {
-  store: { id: string; name: string };
+  store: { id: string; name: string; translations: Prisma.JsonValue };
   items: { storeProduct: StoreProductView; quantity: number }[];
   /** Lines from the order the store no longer sells or has run out of */
   unavailable: { productName: string; variantName: string }[];
@@ -18,7 +19,7 @@ export async function reorderRoutes(app: FastifyInstance) {
     const order = await app.prisma.order.findFirst({
       where: { id: request.params.id, userId: user.sub },
       select: {
-        store: { select: { id: true, name: true } },
+        store: { select: { id: true, name: true, translations: true } },
         items: { select: { variantId: true, quantity: true, product: { select: { name: true } }, variant: { select: { name: true } } } },
       },
     });

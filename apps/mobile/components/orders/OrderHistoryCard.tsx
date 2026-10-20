@@ -1,15 +1,15 @@
 import { memo } from "react";
-import { ActivityIndicator, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { ActivityIndicator, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useLanguage } from "../../lib/language-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { ReturnStateLine } from "../order/ReturnStateLine";
 import { friendlyTime, itemCount, itemPreview, rupees } from "./format";
 import { statusMeta } from "./status";
 import type { OrderSummary } from "./types";
 import { cardStyles } from "./card-styles";
-
-const THUMBS = 4;
-const THUMB_TINTS = ["#eff6ff", "#fef3c7", "#fce7f3", "#dcfce7"];
+import { ItemThumbs } from "./ItemThumbs";
 
 interface Props {
   order: OrderSummary;
@@ -18,32 +18,14 @@ interface Props {
   onReorder: (order: OrderSummary) => void;
 }
 
-function Thumbs({ order }: { order: OrderSummary }) {
-  const rest = order.items.length - THUMBS;
-  return (
-    <View style={styles.thumbs}>
-      {order.items.slice(0, THUMBS).map((item, i) => {
-        const uri = item.variant.imageUrl ?? item.product.imageUrl;
-        return (
-          <View key={item.id} style={[styles.thumb, { backgroundColor: THUMB_TINTS[i % THUMB_TINTS.length] }]}>
-            {uri ? <Image source={{ uri }} style={styles.thumbImg} /> : <Ionicons name="cube-outline" size={22} color="#94a3b8" />}
-          </View>
-        );
-      })}
-      {rest > 0 && (
-        <View style={[styles.thumb, styles.thumbMore]}>
-          <Text style={styles.thumbMoreText}>+{rest}</Text>
-        </View>
-      )}
-    </View>
-  );
-}
-
 export const OrderHistoryCard = memo(function OrderHistoryCard({ order, reordering, onOpen, onReorder }: Props) {
+  const t = useStrings("orders").card;
+  const common = useStrings("common");
+  const { getLocalizedName } = useLanguage();
   const meta = statusMeta(order);
   const cancelled = order.status === "CANCELLED";
   const canRate = order.status === "DELIVERED" && order.storeRatings.length === 0;
-  const { names, more } = itemPreview(order, 3);
+  const { names, more } = itemPreview(order, getLocalizedName, 3);
   const count = itemCount(order);
 
   return (
@@ -54,7 +36,7 @@ export const OrderHistoryCard = memo(function OrderHistoryCard({ order, reorderi
             <View style={styles.storeMark}>
               <Text style={styles.storeMarkText}>{order.store.name.charAt(0).toUpperCase()}</Text>
             </View>
-            <Text style={styles.storeName} numberOfLines={1}>{order.store.name}</Text>
+            <Text style={styles.storeName} numberOfLines={1}>{getLocalizedName(order.store)}</Text>
           </View>
           <View style={[cardStyles.pill, { backgroundColor: meta.bg }]}>
             {order.status === "DELIVERED" && <Ionicons name="checkmark" size={12} color={meta.fg} />}
@@ -62,11 +44,11 @@ export const OrderHistoryCard = memo(function OrderHistoryCard({ order, reorderi
           </View>
         </View>
         <Text style={styles.when}>
-          {friendlyTime(order.createdAt)}{order.fulfillmentType === "PICKUP" ? " · Store pickup" : ""}
+          {friendlyTime(order.createdAt)}{order.fulfillmentType === "PICKUP" ? ` · ${t.storePickup}` : ""}
         </Text>
 
         <View style={cancelled && styles.muted}>
-          <Thumbs order={order} />
+          <ItemThumbs order={order} />
         </View>
         <Text style={styles.names} numberOfLines={2}>
           <Text style={styles.namesLead}>{names[0]}</Text>
@@ -82,18 +64,18 @@ export const OrderHistoryCard = memo(function OrderHistoryCard({ order, reorderi
         <View style={styles.foot}>
           <Text style={[styles.amount, cancelled && styles.amountMuted]}>
             {rupees(order.totalAmount)}
-            <Text style={styles.count}>  {count} item{count !== 1 ? "s" : ""}</Text>
+            <Text style={styles.count}>  {common.items(count)}</Text>
           </Text>
           <View style={styles.footActions}>
             {canRate && (
-              <TouchableOpacity style={[styles.sbtn, styles.sbtnGhost]} onPress={() => onOpen(order.id)} accessibilityLabel="Rate this order">
+              <TouchableOpacity style={[styles.sbtn, styles.sbtnGhost]} onPress={() => onOpen(order.id)} accessibilityLabel={t.rateThisOrder}>
                 <Ionicons name="star-outline" size={14} color={colors.text} />
-                <Text style={styles.sbtnGhostText}>Rate</Text>
+                <Text style={styles.sbtnGhostText}>{t.rate}</Text>
               </TouchableOpacity>
             )}
             <TouchableOpacity style={[styles.sbtn, styles.sbtnPrimary]} onPress={() => onReorder(order)} disabled={reordering}>
               {reordering ? <ActivityIndicator size="small" color="#fff" /> : <Ionicons name="refresh" size={14} color="#fff" />}
-              <Text style={styles.sbtnPrimaryText}>Reorder</Text>
+              <Text style={styles.sbtnPrimaryText}>{t.reorder}</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -110,11 +92,6 @@ const styles = StyleSheet.create({
   storeMarkText: { fontSize: 11, fontFamily: fonts.extrabold, color: colors.primary },
   storeName: { fontSize: 14, fontFamily: fonts.bold, color: colors.text, flexShrink: 1 },
   when: { fontSize: 12, fontFamily: fonts.regular, color: colors.textSecondary, marginTop: 4 },
-  thumbs: { flexDirection: "row", gap: 8, marginTop: 12 },
-  thumb: { width: 52, height: 52, borderRadius: 12, borderWidth: 1, borderColor: "#f1f5f9", alignItems: "center", justifyContent: "center", overflow: "hidden" },
-  thumbImg: { width: 44, height: 44, resizeMode: "contain" },
-  thumbMore: { backgroundColor: colors.surface },
-  thumbMoreText: { fontSize: 13, fontFamily: fonts.bold, color: colors.textSecondary },
   muted: { opacity: 0.5 },
   names: { fontSize: 13, fontFamily: fonts.regular, color: colors.textSecondary, lineHeight: 18, marginTop: 10 },
   namesLead: { fontFamily: fonts.semibold, color: colors.text },

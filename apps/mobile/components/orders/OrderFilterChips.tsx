@@ -1,13 +1,7 @@
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { OrderFilter } from "./types";
-
-const FILTERS: { key: OrderFilter; label: string }[] = [
-  { key: "ALL", label: "All" },
-  { key: "ACTIVE", label: "Active" },
-  { key: "DELIVERED", label: "Delivered" },
-  { key: "CANCELLED", label: "Cancelled" },
-];
 
 interface Props {
   value: OrderFilter;
@@ -16,9 +10,16 @@ interface Props {
 }
 
 export function OrderFilterChips({ value, activeCount, onChange }: Props) {
+  const t = useStrings("orders").tab;
+  const filters: { key: OrderFilter; label: string }[] = [
+    { key: "ALL", label: t.filterAll },
+    { key: "ACTIVE", label: t.filterActive },
+    { key: "DELIVERED", label: t.filterDelivered },
+    { key: "CANCELLED", label: t.filterCancelled },
+  ];
   return (
     <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row}>
-      {FILTERS.map(({ key, label }) => {
+      {filters.map(({ key, label }) => {
         const on = key === value;
         return (
           <TouchableOpacity

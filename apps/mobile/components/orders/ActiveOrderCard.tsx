@@ -1,19 +1,19 @@
 import { memo, useEffect, useRef } from "react";
 import { Animated, Linking, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
-import { StatusStepper } from "./StatusStepper";
-import { etaLabel, friendlyTime, itemCount, itemPreview, rupees, slotLabel } from "./format";
-import { isHeadlineStatus, orderSteps, statusMeta } from "./status";
-import { CANCELLABLE_STATUSES, type OrderSummary } from "./types";
+import { useStrings } from "../../lib/i18n/use-strings";
+import { useLanguage } from "../../lib/language-context";
+import { etaLabel, friendlyTime, rupees, slotLabel } from "./format";
+import { isHeadlineStatus, statusMeta } from "./status";
+import type { OrderSummary } from "./types";
 import { cardStyles } from "./card-styles";
+import { ItemLines } from "./ItemLines";
 
 interface Props {
   order: OrderSummary;
   onOpen: (id: string) => void;
   onTrack: (id: string) => void;
-  onCancel: (id: string) => void;
 }
 
 function LiveDot() {
@@ -31,30 +31,29 @@ function LiveDot() {
   );
 }
 
-function Headline({ order }: { order: OrderSummary }) {
+/** The live order's delivery, grouped in one tinted panel inside the card: when it arrives and who is bringing it */
+function DeliveryPanel({ order }: { order: OrderSummary }) {
+  const t = useStrings("orders").card;
   const pickup = order.fulfillmentType === "PICKUP";
-  const title = pickup ? "Ready at the counter" : etaLabel(order.estimatedDeliveryAt) ?? "On the way to you";
-  const count = itemCount(order);
+  const title = pickup ? t.readyAtCounter : etaLabel(order.estimatedDeliveryAt) ?? t.onTheWayToYou;
+  const rider = order.status === "OUT_FOR_DELIVERY" ? order.deliveryTrip?.rider : null;
   return (
-    <LinearGradient colors={[colors.primary, colors.primaryDark]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.hero}>
-      <View style={styles.heroText}>
-        <View style={styles.eyebrow}>
-          <LiveDot />
-          <Text style={styles.eyebrowText}>{statusMeta(order).label}</Text>
+    <View style={styles.panel}>
+      <View style={styles.panelHead}>
+        <LiveDot />
+        <Text style={styles.panelTitle}>{title}</Text>
+        <View style={styles.panelIcon}>
+          <Ionicons name={pickup ? "storefront" : "bicycle"} size={22} color="#fff" />
         </View>
-        <Text style={styles.heroTitle}>{title}</Text>
-        <Text style={styles.heroMeta} numberOfLines={1}>
-          {order.store.name} · {count} item{count !== 1 ? "s" : ""} · {rupees(order.totalAmount)}
-        </Text>
       </View>
-      <View style={styles.heroIcon}>
-        <Ionicons name={pickup ? "storefront" : "bicycle"} size={28} color="#fff" />
-      </View>
-    </LinearGradient>
+      {rider && <RiderRow rider={rider} />}
+    </View>
   );
 }
 
 function PlainHead({ order }: { order: OrderSummary }) {
+  const t = useStrings("orders").card;
+  const { getLocalizedName } = useLanguage();
   const slot = slotLabel(order);
   const meta = statusMeta(order);
   return (
@@ -63,8 +62,8 @@ function PlainHead({ order }: { order: OrderSummary }) {
         <Ionicons name={slot ? "calendar" : "receipt"} size={20} color={slot ? "#b45309" : colors.primary} />
       </View>
       <View style={styles.headText}>
-        <Text style={styles.headKey}>{slot ? "Scheduled delivery" : order.store.name}</Text>
-        <Text style={styles.headValue}>{slot ?? `Placed ${friendlyTime(order.createdAt)}`}</Text>
+        <Text style={styles.headKey}>{slot ? t.scheduledDelivery : getLocalizedName(order.store)}</Text>
+        <Text style={styles.headValue}>{slot ?? t.placedAt(friendlyTime(order.createdAt))}</Text>
       </View>
       <View style={[cardStyles.pill, { backgroundColor: meta.bg }]}>
         <Text style={[cardStyles.pillText, { color: meta.fg }]}>{meta.label}</Text>
@@ -74,6 +73,7 @@ function PlainHead({ order }: { order: OrderSummary }) {
 }
 
 function RiderRow({ rider }: { rider: { name: string; phone: string | null } }) {
+  const t = useStrings("orders").card;
   return (
     <View style={styles.rider}>
       <View style={styles.avatar}>
@@ -81,10 +81,10 @@ function RiderRow({ rider }: { rider: { name: string; phone: string | null } }) 
       </View>
       <View style={styles.headText}>
         <Text style={styles.riderName}>{rider.name}</Text>
-        <Text style={styles.riderRole}>Your delivery partner</Text>
+        <Text style={styles.riderRole}>{t.deliveryPartner}</Text>
       </View>
       {rider.phone && (
-        <TouchableOpacity style={styles.call} onPress={() => Linking.openURL(`tel:${rider.phone}`)} accessibilityLabel={`Call ${rider.name}`}>
+        <TouchableOpacity style={styles.call} onPress={() => Linking.openURL(`tel:${rider.phone}`)} accessibilityLabel={t.callRider(rider.name)}>
           <Ionicons name="call" size={18} color={colors.primary} />
         </TouchableOpacity>
       )}
@@ -92,74 +92,57 @@ function RiderRow({ rider }: { rider: { name: string; phone: string | null } }) 
   );
 }
 
-export const ActiveOrderCard = memo(function ActiveOrderCard({ order, onOpen, onTrack, onCancel }: Props) {
+export const ActiveOrderCard = memo(function ActiveOrderCard({ order, onOpen, onTrack }: Props) {
+  const t = useStrings("orders").card;
   const headline = isHeadlineStatus(order);
-  const { steps, current } = orderSteps(order);
-  const { names, more } = itemPreview(order);
-  const rider = order.status === "OUT_FOR_DELIVERY" ? order.deliveryTrip?.rider : null;
   const trackable = order.status === "OUT_FOR_DELIVERY" && order.fulfillmentType === "DELIVERY";
 
   return (
     <TouchableOpacity activeOpacity={0.9} style={cardStyles.card} onPress={() => onOpen(order.id)}>
-      {headline ? <Headline order={order} /> : <PlainHead order={order} />}
-      <StatusStepper steps={steps} current={current} />
-      {rider && <RiderRow rider={rider} />}
-      {!headline && (
-        <Text style={styles.preview} numberOfLines={2}>
-          <Text style={styles.previewLead}>{names[0]}</Text>
-          {names[1] ? `, ${names[1]}` : ""}{more ? ` ${more}` : ""} · {rupees(order.totalAmount)}
-        </Text>
-      )}
-      <View style={styles.actions}>
-        {trackable && (
-          <TouchableOpacity style={[styles.btn, styles.btnPrimary]} onPress={() => onTrack(order.id)}>
-            <Ionicons name="navigate" size={16} color="#fff" />
-            <Text style={styles.btnPrimaryText}>Track live</Text>
-          </TouchableOpacity>
-        )}
-        {CANCELLABLE_STATUSES.includes(order.status) && (
-          <TouchableOpacity style={[styles.btn, styles.btnDanger]} onPress={() => onCancel(order.id)}>
-            <Text style={styles.btnDangerText}>Cancel order</Text>
-          </TouchableOpacity>
-        )}
-        <TouchableOpacity style={[styles.btn, styles.btnGhost]} onPress={() => onOpen(order.id)}>
-          <Text style={styles.btnGhostText}>Details</Text>
-        </TouchableOpacity>
+      <PlainHead order={order} />
+      {headline && <DeliveryPanel order={order} />}
+      <View style={styles.items}>
+        <ItemLines order={order} />
+        <View style={styles.totalRow}>
+          <Text style={styles.totalLabel}>{t.total}</Text>
+          <Text style={styles.total}>{rupees(order.totalAmount)}</Text>
+        </View>
       </View>
+      {/* The card itself opens the order (cancel lives there); only live tracking earns a button here */}
+      {trackable && (
+        <TouchableOpacity style={styles.track} onPress={() => onTrack(order.id)}>
+          <Ionicons name="navigate" size={16} color="#fff" />
+          <Text style={styles.trackText}>{t.trackLive}</Text>
+        </TouchableOpacity>
+      )}
     </TouchableOpacity>
   );
 });
 
 const styles = StyleSheet.create({
-  hero: { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingTop: 14, paddingBottom: 16 },
-  heroText: { flex: 1 },
-  eyebrow: { flexDirection: "row", alignItems: "center", gap: 8 },
-  eyebrowText: { fontSize: 12, fontFamily: fonts.semibold, color: "rgba(255,255,255,0.85)" },
-  liveDot: { width: 8, height: 8, borderRadius: 4, backgroundColor: "#5eead4" },
-  liveRing: { ...StyleSheet.absoluteFillObject, borderRadius: 4, backgroundColor: "#5eead4" },
-  heroTitle: { fontSize: 22, fontFamily: fonts.extrabold, color: "#fff", marginTop: 4, letterSpacing: -0.3 },
-  heroMeta: { fontSize: 13, fontFamily: fonts.medium, color: "rgba(255,255,255,0.85)", marginTop: 2 },
-  heroIcon: { width: 52, height: 52, borderRadius: 14, backgroundColor: "rgba(255,255,255,0.14)", alignItems: "center", justifyContent: "center", marginLeft: 12 },
+  // The delivery sits in its own tinted panel inside the order card, so it reads as this order's delivery
+  panel: { marginHorizontal: 12, marginTop: 14, paddingVertical: 12, borderRadius: 14, backgroundColor: "#f0fdfa" },
+  panelHead: { flexDirection: "row", alignItems: "center", gap: 10, paddingHorizontal: 14 },
+  panelTitle: { flex: 1, fontSize: 17, fontFamily: fonts.extrabold, color: colors.text },
+  panelIcon: { width: 40, height: 40, borderRadius: 12, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" },
+  liveDot: { width: 8, height: 8, borderRadius: 4, backgroundColor: colors.primary },
+  liveRing: { ...StyleSheet.absoluteFillObject, borderRadius: 4, backgroundColor: colors.primary },
   plainHead: { flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 16, paddingTop: 14 },
   headIcon: { width: 44, height: 44, borderRadius: 12, backgroundColor: "#f0fdfa", alignItems: "center", justifyContent: "center" },
   headIconSlot: { backgroundColor: "#fef3c7" },
   headText: { flex: 1 },
   headKey: { fontSize: 12, fontFamily: fonts.semibold, color: colors.textSecondary },
   headValue: { fontSize: 16, fontFamily: fonts.extrabold, color: colors.text, marginTop: 1 },
-  rider: { flexDirection: "row", alignItems: "center", gap: 10, marginHorizontal: 16, marginTop: 14, padding: 10, borderRadius: 12, backgroundColor: colors.surface },
+  rider: { flexDirection: "row", alignItems: "center", gap: 10, marginHorizontal: 12, marginTop: 12, padding: 10, borderRadius: 12, backgroundColor: "#fff" },
   avatar: { width: 36, height: 36, borderRadius: 18, backgroundColor: "#fde68a", alignItems: "center", justifyContent: "center" },
   avatarText: { fontSize: 14, fontFamily: fonts.extrabold, color: "#92400e" },
   riderName: { fontSize: 14, fontFamily: fonts.bold, color: colors.text },
   riderRole: { fontSize: 12, fontFamily: fonts.regular, color: colors.textSecondary },
   call: { width: 44, height: 44, borderRadius: 22, borderWidth: 1, borderColor: colors.border, backgroundColor: "#fff", alignItems: "center", justifyContent: "center" },
-  preview: { fontSize: 13, fontFamily: fonts.regular, color: colors.textSecondary, lineHeight: 18, paddingHorizontal: 16, marginTop: 14 },
-  previewLead: { fontFamily: fonts.semibold, color: colors.text },
-  actions: { flexDirection: "row", gap: 10, padding: 16, paddingTop: 14 },
-  btn: { flex: 1, height: 44, borderRadius: 12, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6 },
-  btnPrimary: { backgroundColor: colors.primary },
-  btnPrimaryText: { fontSize: 14, fontFamily: fonts.bold, color: "#fff" },
-  btnGhost: { borderWidth: 1, borderColor: colors.border },
-  btnGhostText: { fontSize: 14, fontFamily: fonts.bold, color: colors.text },
-  btnDanger: { borderWidth: 1, borderColor: "#fecaca" },
-  btnDangerText: { fontSize: 14, fontFamily: fonts.bold, color: "#dc2626" },
+  items: { paddingHorizontal: 16, paddingBottom: 14, marginTop: 14, gap: 10 },
+  totalRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingTop: 10, borderTopWidth: 1, borderTopColor: colors.border },
+  totalLabel: { fontSize: 13, fontFamily: fonts.semibold, color: colors.textSecondary },
+  total: { fontSize: 15, fontFamily: fonts.extrabold, color: colors.text },
+  track: { height: 44, marginHorizontal: 16, marginBottom: 16, borderRadius: 12, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, backgroundColor: colors.primary },
+  trackText: { fontSize: 14, fontFamily: fonts.bold, color: "#fff" },
 });

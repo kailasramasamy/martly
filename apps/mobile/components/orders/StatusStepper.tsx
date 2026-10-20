@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 const DOT = 20;
 
@@ -12,8 +13,9 @@ interface Props {
 
 /** Placed → … → Delivered, with done steps ticked and the current one ringed */
 export function StatusStepper({ steps, current }: Props) {
+  const t = useStrings("orders");
   return (
-    <View style={styles.wrap} accessibilityLabel={`Step ${current + 1} of ${steps.length}: ${steps[current]}`}>
+    <View style={styles.wrap} accessibilityLabel={t.status.stepOf(current + 1, steps.length, steps[current])}>
       <View style={styles.track}>
         {steps.map((step, i) => (
           <Fragment key={step}>
@@ -29,7 +31,7 @@ export function StatusStepper({ steps, current }: Props) {
         {steps.map((step, i) => (
           <Text
             key={step}
-            numberOfLines={1}
+            numberOfLines={2}
             style={[styles.label, i <= current && styles.labelReached, i === 0 && styles.first, i === steps.length - 1 && styles.last]}
           >
             {step}

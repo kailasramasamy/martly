@@ -1,10 +1,10 @@
 import type { ReturnStateLine } from "../order/ReturnStateLine";
-import type { StoreProduct } from "../../lib/types";
+import type { StoreLabel, StoreProduct, Translations } from "../../lib/types";
 
 export interface OrderSummaryItem {
   id: string;
   quantity: number;
-  product: { name: string; imageUrl: string | null };
+  product: { name: string; imageUrl: string | null; translations?: Translations | null };
   variant: { name: string; imageUrl?: string | null };
 }
 
@@ -19,7 +19,7 @@ export interface OrderSummary {
   slotStartTime: string | null;
   slotEndTime: string | null;
   items: OrderSummaryItem[];
-  store: { id: string; name: string };
+  store: StoreLabel;
   deliveryTrip: { rider: { name: string; phone: string | null } | null } | null;
   storeRatings: { id: string }[];
   returnRequest: Parameters<typeof ReturnStateLine>[0]["request"] | null;
@@ -29,10 +29,8 @@ export type OrderFilter = "ALL" | "ACTIVE" | "DELIVERED" | "CANCELLED";
 
 export const ACTIVE_STATUSES = ["PENDING", "CONFIRMED", "PREPARING", "READY", "OUT_FOR_DELIVERY"];
 
-export const CANCELLABLE_STATUSES = ["PENDING", "CONFIRMED"];
-
 export interface ReorderItems {
-  store: { id: string; name: string };
+  store: StoreLabel;
   items: { storeProduct: StoreProduct; quantity: number }[];
   unavailable: { productName: string; variantName: string }[];
 }

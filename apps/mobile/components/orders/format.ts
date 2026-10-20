@@ -1,4 +1,6 @@
-import type { OrderSummary } from "./types";
+import { strings } from "../../lib/i18n";
+import { formatDate, formatTime } from "../../lib/i18n/format";
+import type { OrderSummary, OrderSummaryItem } from "./types";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -8,20 +10,20 @@ function dayDiff(date: Date, now = new Date()) {
 }
 
 function clock(date: Date) {
-  return date.toLocaleTimeString("en-IN", { hour: "numeric", minute: "2-digit", hour12: true }).toUpperCase();
+  return formatTime(date, { hour: "numeric", minute: "2-digit", hour12: true }).toUpperCase();
 }
 
 /** "Today, 8:14 AM", "Yesterday, 6:42 PM" or "12 Oct, 6:42 PM" */
 export function friendlyTime(iso: string) {
   const date = new Date(iso);
   const diff = dayDiff(date);
-  const day = diff === 0 ? "Today" : diff === -1 ? "Yesterday" : date.toLocaleDateString("en-IN", { day: "numeric", month: "short" });
+  const day = diff === 0 ? strings("common").today : diff === -1 ? strings("orders").card.yesterday : formatDate(date, { day: "numeric", month: "short" });
   return `${day}, ${clock(date)}`;
 }
 
 /** "October 2026", the heading orders are grouped under */
 export function monthKey(iso: string) {
-  return new Date(iso).toLocaleDateString("en-IN", { month: "long", year: "numeric" });
+  return formatDate(iso, { month: "long", year: "numeric" });
 }
 
 /** "7 – 9 AM" from slot times like "07:00" and "09:00" */
@@ -41,7 +43,8 @@ export function slotLabel(order: Pick<OrderSummary, "scheduledDate" | "slotStart
   if (!order.scheduledDate || !order.slotStartTime || !order.slotEndTime) return null;
   const date = new Date(order.scheduledDate);
   const diff = dayDiff(date);
-  const day = diff === 0 ? "Today" : diff === 1 ? "Tomorrow" : date.toLocaleDateString("en-IN", { weekday: "short", day: "numeric", month: "short" });
+  const common = strings("common");
+  const day = diff === 0 ? common.today : diff === 1 ? common.tomorrow : formatDate(date, { weekday: "short", day: "numeric", month: "short" });
   return `${day}, ${slotRange(order.slotStartTime, order.slotEndTime)}`;
 }
 
@@ -49,20 +52,21 @@ export function slotLabel(order: Pick<OrderSummary, "scheduledDate" | "slotStart
 export function etaLabel(estimatedDeliveryAt: string | null, now = Date.now()) {
   if (!estimatedDeliveryAt) return null;
   const minutes = Math.round((new Date(estimatedDeliveryAt).getTime() - now) / 60000);
-  if (minutes <= 1) return "Arriving soon";
-  if (minutes < 90) return `Arriving in ${minutes} min`;
-  return `Arriving by ${clock(new Date(estimatedDeliveryAt))}`;
+  const t = strings("orders").card;
+  if (minutes <= 1) return t.arrivingSoon;
+  if (minutes < 90) return t.arrivingIn(minutes);
+  return t.arrivingBy(clock(new Date(estimatedDeliveryAt)));
 }
 
 export function itemCount(order: Pick<OrderSummary, "items">) {
   return order.items.reduce((sum, i) => sum + i.quantity, 0);
 }
 
-/** The first product names plus "+N more" for the rest */
-export function itemPreview(order: Pick<OrderSummary, "items">, shown = 2) {
-  const names = order.items.slice(0, shown).map((i) => `${i.product.name} ${i.variant.name}`);
+/** The first product names (localized by `nameOf`) plus "+N more" for the rest */
+export function itemPreview(order: Pick<OrderSummary, "items">, nameOf: (product: OrderSummaryItem["product"]) => string, shown = 2) {
+  const names = order.items.slice(0, shown).map((i) => `${nameOf(i.product)} ${i.variant.name}`);
   const rest = order.items.length - shown;
-  return { names, more: rest > 0 ? `+${rest} more` : null };
+  return { names, more: rest > 0 ? strings("orders").card.moreItems(rest) : null };
 }
 
 export function rupees(amount: string | number) {
