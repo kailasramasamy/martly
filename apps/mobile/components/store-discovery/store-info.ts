@@ -1,3 +1,5 @@
+import { strings } from "../../lib/i18n";
+import { formatDate } from "../../lib/i18n/format";
 import type { Store } from "../../lib/types";
 
 export interface OpenState {
@@ -19,11 +21,12 @@ export function formatTime(hhmm: string): string {
 
 export function getOpenState(store: Store, now = new Date()): OpenState | null {
   if (!store.operatingStart || !store.operatingEnd) return null;
+  const t = strings("home");
   const current = now.getHours() * 60 + now.getMinutes();
   const isOpen = current >= toMinutes(store.operatingStart) && current < toMinutes(store.operatingEnd);
   return isOpen
-    ? { isOpen, label: `Open · closes ${formatTime(store.operatingEnd)}` }
-    : { isOpen, label: `Closed · opens ${formatTime(store.operatingStart)}` };
+    ? { isOpen, label: t.openUntil(formatTime(store.operatingEnd)) }
+    : { isOpen, label: t.closedUntil(formatTime(store.operatingStart)) };
 }
 
 export function getStoreArea(store: Store): string {
@@ -36,22 +39,24 @@ export function formatDistance(km: number): string {
 
 /** Driving distance and time when the road route is known, else how far away it is as the crow flies */
 export function distanceText(store: Store): string | null {
-  if (store.drive) return `${formatDistance(store.drive.km)} · ${store.drive.minutes} min drive`;
-  return store.distance != null ? `${formatDistance(store.distance)} away` : null;
+  if (store.drive) return strings("home").driveText(formatDistance(store.drive.km), store.drive.minutes);
+  return store.distance != null ? strings("home").awayText(formatDistance(store.distance)) : null;
 }
 
 export function getGreeting(now = new Date()): string {
   const hour = now.getHours();
-  if (hour < 12) return "Good morning";
-  if (hour < 17) return "Good afternoon";
-  return "Good evening";
+  const t = strings("home");
+  if (hour < 12) return t.goodMorning;
+  if (hour < 17) return t.goodAfternoon;
+  return t.goodEvening;
 }
 
 /** "Today", "Tomorrow" or the weekday for an IST date key */
 export function dayLabel(dateKey: string, now = new Date()): string {
   const today = new Date(now.getTime() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
   const diff = Math.round((Date.parse(dateKey) - Date.parse(today)) / 86400000);
-  if (diff === 0) return "Today";
-  if (diff === 1) return "Tomorrow";
-  return new Date(`${dateKey}T00:00:00Z`).toLocaleDateString("en-IN", { weekday: "long", timeZone: "UTC" });
+  const c = strings("common");
+  if (diff === 0) return c.today;
+  if (diff === 1) return c.tomorrow;
+  return formatDate(`${dateKey}T00:00:00Z`, { weekday: "long", timeZone: "UTC" });
 }

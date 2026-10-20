@@ -1,7 +1,7 @@
 import { parseHomeSectionConfig } from "@martly/shared/schemas";
 import type { HomeTheme } from "@martly/shared/types";
 import { withAllSizes } from "../../store-feed.js";
-import { sectionBase, type SectionResolver } from "../types.js";
+import { sectionBase, withCollectionText, type SectionResolver } from "../types.js";
 import { autoTiles, itemTiles, stockedCollectionItems } from "./campaign-tiles.js";
 import { liveCollection } from "./collection.js";
 import { defaultTheme } from "../campaign-look.js";
@@ -23,9 +23,7 @@ export const campaignCard: SectionResolver = async (ctx, entry) => {
   const base = sectionBase(entry);
   return {
     ...base,
-    title: base.title ?? collection.title,
-    subtitle: base.subtitle ?? collection.subtitle,
-    translations: base.translations ?? (collection.translations as typeof base.translations),
+    ...withCollectionText(base, collection),
     type: "CAMPAIGN_CARD",
     collectionId: collection.id,
     offerLabel: config.offerLabel ?? null,

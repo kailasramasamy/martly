@@ -42,6 +42,32 @@ export function sectionBase(entry: LayoutEntry) {
     id: entry.id,
     title: entry.title,
     subtitle: entry.subtitle,
-    translations: (entry.translations ?? null) as Record<string, { title?: string; subtitle?: string }> | null,
+    translations: (entry.translations ?? null) as SectionTranslations | null,
   };
+}
+
+type SectionTranslations = Record<string, { title?: string; subtitle?: string; headline?: string; offerLabel?: string; bandLabels?: string[] }>;
+
+/**
+ * A collection-backed section's text: the collection fills whatever the section leaves unset. In other languages the
+ * section's own translation wins; without one, a field shows the collection's translation when its English is the
+ * collection's (unset, or the same words), so a section that only renames its title keeps the translated subtitle.
+ */
+export function withCollectionText(
+  base: ReturnType<typeof sectionBase>,
+  collection: { title: string; subtitle: string | null; translations: unknown },
+) {
+  const own = base.translations ?? {};
+  const lent = (collection.translations ?? {}) as SectionTranslations;
+  const borrowsTitle = base.title == null || base.title === collection.title;
+  const borrowsSubtitle = base.subtitle == null || base.subtitle === collection.subtitle;
+  const translations: SectionTranslations = {};
+  for (const lang of new Set([...Object.keys(own), ...Object.keys(lent)])) {
+    translations[lang] = {
+      ...own[lang],
+      title: own[lang]?.title ?? (borrowsTitle ? lent[lang]?.title : undefined),
+      subtitle: own[lang]?.subtitle ?? (borrowsSubtitle ? lent[lang]?.subtitle : undefined),
+    };
+  }
+  return { title: base.title ?? collection.title, subtitle: base.subtitle ?? collection.subtitle, translations };
 }

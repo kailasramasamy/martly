@@ -1,6 +1,8 @@
 import { Alert } from "react-native";
 import { hasBannerTarget, openBannerTarget } from "../../lib/banner-action";
 import { useCart } from "../../lib/cart-context";
+import { useStrings } from "../../lib/i18n/use-strings";
+import { useLanguage } from "../../lib/language-context";
 import type { Store } from "../../lib/types";
 import type { StoreBanner } from "./StoreDetailPanel";
 
@@ -11,6 +13,8 @@ import type { StoreBanner } from "./StoreDetailPanel";
  */
 export function useOfferTap(current: Store | null, switchTo: (store: Store) => void) {
   const { itemCount, storeName: cartStore } = useCart();
+  const t = useStrings("home");
+  const { getLocalizedName } = useLanguage();
 
   return (store: Store, banner: StoreBanner) => {
     if (!hasBannerTarget(banner)) return;
@@ -18,13 +22,14 @@ export function useOfferTap(current: Store | null, switchTo: (store: Store) => v
       openBannerTarget(banner, "replace");
       return;
     }
-    const from = current ? `You'll switch from ${current.name} to ${store.name}.` : `You'll start shopping at ${store.name}.`;
+    const name = getLocalizedName(store);
+    const from = current ? t.switchFrom(getLocalizedName(current), name) : t.startShopping(name);
     const cart = itemCount > 0 && cartStore
-      ? `\n\nYour cart from ${cartStore} (${itemCount} item${itemCount === 1 ? "" : "s"}) is kept until you add something from ${store.name}.`
+      ? t.cartKept(cartStore, itemCount, name)
       : "";
-    Alert.alert(`See this offer at ${store.name}?`, from + cart, [
-      { text: "Not now", style: "cancel" },
-      { text: "Switch & see offer", onPress: () => { switchTo(store); openBannerTarget(banner, "replace"); } },
+    Alert.alert(t.seeOfferAt(name), from + cart, [
+      { text: t.notNow, style: "cancel" },
+      { text: t.switchAndSee, onPress: () => { switchTo(store); openBannerTarget(banner, "replace"); } },
     ]);
   };
 }

@@ -58,7 +58,7 @@ function StoreTile({ tile, label, paint, width, height }: TileProps) {
     >
       <Awning width={width} paint={paint} />
       <View style={styles.body}>
-        <TileLabel text={label} width={tile.wide ? "62%" : "92%"} />
+        <TileLabel text={label} width="92%" />
       </View>
       <TileArt tile={tile} size={tile.wide ? 112 : 78} />
     </Pressable>

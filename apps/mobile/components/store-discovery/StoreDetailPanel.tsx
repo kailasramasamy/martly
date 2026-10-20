@@ -70,7 +70,7 @@ export function StoreDetailPanel({ store, onBannerPress }: { store: Store; onBan
       <View style={styles.logo}><StoreLogo store={store} brand={brand} size={LOGO} /></View>
       <View style={styles.body}>
         <View style={styles.nameRow}>
-          <Text style={styles.name} numberOfLines={1}>{store.name}</Text>
+          <Text style={styles.name} numberOfLines={1}>{brand.name}</Text>
           <OffersTag store={store} />
         </View>
         {brand.tagline ? <Text style={styles.tagline} numberOfLines={2}>{brand.tagline}</Text> : null}

@@ -1,7 +1,7 @@
 import { parseHomeSectionConfig } from "@martly/shared/schemas";
 import { rankedCollectionProductIds } from "../../collection-products.js";
 import { withAllSizes } from "../../store-feed.js";
-import { sectionBase, type SectionResolver } from "../types.js";
+import { sectionBase, withCollectionText, type SectionResolver } from "../types.js";
 import { liveCollection } from "./collection.js";
 
 export const productRow: SectionResolver = async (ctx, entry) => {
@@ -16,9 +16,7 @@ export const productRow: SectionResolver = async (ctx, entry) => {
   const base = sectionBase(entry);
   return {
     ...base,
-    title: base.title ?? collection.title,
-    subtitle: base.subtitle ?? collection.subtitle,
-    translations: base.translations ?? (collection.translations as typeof base.translations),
+    ...withCollectionText(base, collection),
     type: "PRODUCT_ROW",
     header: { style: config.headerStyle, imageUrl: config.headerImageUrl ?? null, tint: config.tint ?? null },
     products,

@@ -6,6 +6,7 @@ import type { SystemSection } from "@martly/shared/types";
 import { colors } from "../../../../constants/theme";
 import { getCategoryIcon } from "../../../../constants/category-icons";
 import { useLanguage } from "../../../../lib/language-context";
+import { useStrings } from "../../../../lib/i18n/use-strings";
 import type { DepartmentNode } from "../../../../lib/types";
 import { CategoryTile } from "../../../CategoryTile";
 
@@ -20,12 +21,14 @@ const openDepartment = (id: string) => router.push({ pathname: "/category/[id]",
 export const DepartmentGridSection = memo(function DepartmentGridSection({ section }: { section: SystemSection }) {
   const departments = section.data.departments as DepartmentNode[];
   const { getLocalizedName } = useLanguage();
+  const t = useStrings("home");
+  const c = useStrings("common");
   return (
     <View style={styles.card}>
       <View style={styles.header}>
-        <Text style={styles.title}>Shop by Category</Text>
+        <Text style={styles.title}>{t.shopByCategory}</Text>
         <TouchableOpacity onPress={() => router.push("/(tabs)/categories")} style={styles.link}>
-          <Text style={styles.linkText}>See All</Text>
+          <Text style={styles.linkText}>{c.seeAll}</Text>
           <Ionicons name="chevron-forward" size={14} color={colors.primary} />
         </TouchableOpacity>
       </View>

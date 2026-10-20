@@ -1,6 +1,8 @@
 import { memo, useEffect, useRef, useState } from "react";
 import { Animated, StyleSheet, Text, View } from "react-native";
 import { fonts } from "../../../../constants/theme";
+import { useStrings } from "../../../../lib/i18n/use-strings";
+import { strings } from "../../../../lib/i18n";
 
 const MINUTE = 60_000;
 const HOUR = 60 * MINUTE;
@@ -14,8 +16,9 @@ function remaining(endsAt: string, now: number) {
   const d = Math.floor(left / DAY);
   const h = Math.floor((left % DAY) / HOUR);
   const m = Math.max(1, Math.floor((left % HOUR) / MINUTE));
-  if (d > 0) return `${d}d ${h}h`;
-  return h > 0 ? `${h}h ${m}m` : `${m}m`;
+  const t = strings("home");
+  if (d > 0) return t.durationDH(d, h);
+  return h > 0 ? t.durationHM(h, m) : t.durationM(m);
 }
 
 function useRemaining(endsAt: string | null) {
@@ -37,6 +40,7 @@ interface Props {
 
 /** A live "Ends in 2d 4h" chip with a beating dot; nothing when the offer is open-ended */
 export const CountdownChip = memo(function CountdownChip({ endsAt, ink, fill }: Props) {
+  const t = useStrings("home");
   const left = useRemaining(endsAt);
   const pulse = useRef(new Animated.Value(1)).current;
   useEffect(() => {
@@ -50,9 +54,9 @@ export const CountdownChip = memo(function CountdownChip({ endsAt, ink, fill }: 
   if (!left) return null;
 
   return (
-    <View style={[styles.chip, { backgroundColor: fill }]} accessibilityLabel={`Offer ends in ${left}`}>
+    <View style={[styles.chip, { backgroundColor: fill }]} accessibilityLabel={t.offerEndsIn(left)}>
       <Animated.View style={[styles.dot, { backgroundColor: ink, opacity: pulse }]} />
-      <Text style={[styles.text, { color: ink }]}>Ends in {left}</Text>
+      <Text style={[styles.text, { color: ink }]}>{t.endsIn(left)}</Text>
     </View>
   );
 });

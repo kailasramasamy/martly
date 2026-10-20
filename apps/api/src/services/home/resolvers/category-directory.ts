@@ -1,12 +1,14 @@
 import { DIRECTORY_WIDE_TILES } from "@martly/shared/constants";
 import { parseHomeSectionConfig } from "@martly/shared/schemas";
 import type { CategoryDirectorySection } from "@martly/shared/types";
-import { sectionBase, type SectionResolver } from "../types.js";
+import { sectionBase, type ResolveContext, type SectionResolver } from "../types.js";
 
 type Names = CategoryDirectorySection["groups"][number]["translations"];
-
-export const categoryDirectory: SectionResolver = async (ctx, entry) => {
-  const { departmentIds } = parseHomeSectionConfig("CATEGORY_DIRECTORY", entry.config) as { departmentIds: string[] };
+/**
+ * Departments with the categories this store has in stock, as directory groups, in order. The first `wideTiles` of
+ * each lead as wide tiles (Home's Shop by aisle); the Categories tab asks for none.
+ */
+export async function directoryGroups(ctx: ResolveContext, departmentIds: string[], wideTiles: number) {
   const stocked = await ctx.prisma.$queryRaw<{ category_id: string }[]>`
     SELECT DISTINCT s.category_id FROM store_products sp
     JOIN products p ON p.id = sp.product_id AND p.is_active
@@ -26,11 +28,16 @@ export const categoryDirectory: SectionResolver = async (ctx, entry) => {
   });
   // A picked list keeps the admin's order
   if (departmentIds.length > 0) departments.sort((a, b) => departmentIds.indexOf(a.id) - departmentIds.indexOf(b.id));
-  const groups = departments.filter((d) => d.categories.length > 0).map((d) => ({
+  return departments.filter((d) => d.categories.length > 0).map((d) => ({
     departmentId: d.id, name: d.name, translations: d.translations as Names,
     tiles: d.categories.map((c, i) => ({
-      categoryId: c.id, name: c.name, translations: c.translations as Names, imageUrl: c.imageUrl, wide: i < DIRECTORY_WIDE_TILES,
+      categoryId: c.id, name: c.name, translations: c.translations as Names, imageUrl: c.imageUrl, wide: i < wideTiles,
     })),
   }));
+}
+
+export const categoryDirectory: SectionResolver = async (ctx, entry) => {
+  const { departmentIds } = parseHomeSectionConfig("CATEGORY_DIRECTORY", entry.config) as { departmentIds: string[] };
+  const groups = await directoryGroups(ctx, departmentIds, DIRECTORY_WIDE_TILES);
   return groups.length > 0 ? { ...sectionBase(entry), type: "CATEGORY_DIRECTORY", groups } : null;
 };

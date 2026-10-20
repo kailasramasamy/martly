@@ -4,6 +4,7 @@ import type { HomeTab, TabbedRowSection as TabbedRow } from "@martly/shared/type
 import { HOME_ROW_MAX_PRODUCTS, TabRailStyle } from "@martly/shared/constants";
 import { ProductList } from "../../ProductList";
 import { api } from "../../../lib/api";
+import { useStrings } from "../../../lib/i18n/use-strings";
 import type { StoreProduct } from "../../../lib/types";
 import { openCollection, useHomeSectionEnv, useSectionText } from "./context";
 import { SectionHeader } from "./SectionHeader";
@@ -17,6 +18,7 @@ const DEFAULT_TINT = "#e6f4f1";
 
 /** A collection rail switched between collections by a tab rail; each tab loads once, when first picked */
 export const TabbedRowSection = memo(function TabbedRowSection({ section }: { section: TabbedRow<StoreProduct> }) {
+  const t = useStrings("home");
   const { title, subtitle } = useSectionText(section);
   const { store } = useHomeSectionEnv();
   const { tabs } = section;
@@ -53,7 +55,7 @@ export const TabbedRowSection = memo(function TabbedRowSection({ section }: { se
         <View style={loading && styles.loading} pointerEvents={loading ? "none" : "auto"}>
           <ProductList products={page.products} layout="rail" elevated contentContainerStyle={styles.rail} />
         </View>
-        <SeeAllButton onPress={onSeeAll} label={page.total > 0 ? `See all ${page.total} products` : "See all"} />
+        <SeeAllButton onPress={onSeeAll} label={page.total > 0 ? t.seeAllProducts(page.total) : undefined} />
       </View>
     </View>
   );

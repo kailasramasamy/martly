@@ -107,7 +107,12 @@ function TileGrid({ hero, edge, onTile }: TilesProps) {
 function useGreeting(hero: FestiveHeroData) {
   const { language } = useLanguage();
   const ta = language ? hero.translations?.[language] : undefined;
-  return { kicker: ta?.kicker || hero.kicker, title: ta?.title || hero.title, subtitle: ta?.subtitle || hero.subtitle };
+  return {
+    kicker: ta?.kicker || hero.kicker,
+    title: ta?.title || hero.title,
+    subtitle: ta?.subtitle || hero.subtitle,
+    translated: !!ta?.title,
+  };
 }
 
 interface StripProps {
@@ -116,7 +121,7 @@ interface StripProps {
 
 /** The silhouette strip with the three-line greeting set over its calm centre */
 function GreetingStrip({ hero }: StripProps) {
-  const { kicker, title, subtitle } = useGreeting(hero);
+  const { kicker, title, subtitle, translated } = useGreeting(hero);
   const { title: ink, font } = hero.theme;
   const fontFamily = festiveFonts[font ?? "PLAYFAIR"] ?? festiveFonts.PLAYFAIR;
   // The art's own proportions, read when it loads, size the box; the art is contained, never cropped, so its faded
@@ -141,10 +146,16 @@ function GreetingStrip({ hero }: StripProps) {
         />
       )}
       <View style={styles.greeting} accessibilityRole="header">
-        {kicker ? <Text style={[styles.kicker, { color: ink }]} numberOfLines={1}>✦ {kicker} ✦</Text> : null}
-        <Text style={[styles.title, { color: ink, fontFamily }]} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.7}>
-          {title}
-        </Text>
+        {kicker ? <Text style={[styles.kicker, { color: ink }]} numberOfLines={translated ? 2 : 1}>✦ {kicker} ✦</Text> : null}
+        {translated ? (
+          // The display faces are Latin-only, and iOS fit-to-width shrinks Tamil past minimumFontScale to a speck,
+          // so a translated title is set in the app face and wraps instead
+          <Text style={[styles.titleTranslated, { color: ink }]} numberOfLines={2}>{title}</Text>
+        ) : (
+          <Text style={[styles.title, { color: ink, fontFamily }]} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.7}>
+            {title}
+          </Text>
+        )}
         {subtitle ? <Text style={[styles.subtitle, { color: ink }]} numberOfLines={2}>{subtitle}</Text> : null}
       </View>
     </View>
@@ -175,6 +186,7 @@ const styles = StyleSheet.create({
   greeting: { alignItems: "center", paddingHorizontal: 40, gap: 2 },
   kicker: { fontFamily: fonts.semibold, fontSize: 13, letterSpacing: 0.6, opacity: 0.9 },
   title: { fontSize: 30, lineHeight: 40, letterSpacing: 0.2, textAlign: "center" },
+  titleTranslated: { fontFamily: fonts.extrabold, fontSize: 24, lineHeight: 34, textAlign: "center" },
   subtitle: { fontFamily: fonts.medium, fontSize: 13, lineHeight: 18, textAlign: "center", opacity: 0.92 },
   grid: { flexDirection: "row", flexWrap: "wrap", gap: GAP, paddingHorizontal: H_PADDING },
   feature: { flexDirection: "row", gap: GAP, paddingHorizontal: H_PADDING },

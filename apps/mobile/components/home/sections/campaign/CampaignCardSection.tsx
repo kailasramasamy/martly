@@ -3,6 +3,7 @@ import { Dimensions, Image, Pressable, StyleSheet, Text, View } from "react-nati
 import { Ionicons } from "@expo/vector-icons";
 import type { CampaignCardSection as CampaignCard, CampaignTile } from "@martly/shared/types";
 import { fonts } from "../../../../constants/theme";
+import { useStrings } from "../../../../lib/i18n/use-strings";
 import type { StoreProduct } from "../../../../lib/types";
 import { mix } from "../../color-mix";
 import { openCollection, useSectionText } from "../context";
@@ -26,6 +27,7 @@ function useCardTones(theme: Section["theme"]) {
 }
 
 function Headline({ section, tones, onPress }: { section: Section; tones: ReturnType<typeof useCardTones>; onPress: () => void }) {
+  const t = useStrings("home");
   const { title, subtitle } = useSectionText(section);
   const ink = section.theme.title;
   const ctaInk = section.theme.dark ? "#0f172a" : "#ffffff";
@@ -40,7 +42,7 @@ function Headline({ section, tones, onPress }: { section: Section; tones: Return
         style={({ pressed }) => [styles.cta, { backgroundColor: ink }, pressed && styles.ctaPressed]}
       >
         <Text style={[styles.ctaText, { color: ctaInk }]}>
-          {section.productCount > 0 ? `Shop all ${section.productCount}` : "Shop now"}
+          {section.productCount > 0 ? t.shopAllCount(section.productCount) : t.shopNow}
         </Text>
         <Ionicons name="arrow-forward" size={14} color={ctaInk} />
       </Pressable>
@@ -54,7 +56,10 @@ function Headline({ section, tones, onPress }: { section: Section; tones: Return
  * narrowed to that aisle.
  */
 export const CampaignCardSection = memo(function CampaignCardSection({ section }: { section: Section }) {
+  const t = useStrings("home");
   const tones = useCardTones(section.theme);
+  const { title, translated } = useSectionText(section);
+  const offerLabel = translated?.offerLabel || section.offerLabel;
   const { collectionId } = section;
   const openAll = useCallback(() => openCollection(collectionId), [collectionId]);
   const openTile = useCallback((tile: CampaignTile) => openCollection(collectionId, tile.subcategoryIds), [collectionId]);
@@ -65,7 +70,7 @@ export const CampaignCardSection = memo(function CampaignCardSection({ section }
         <Pressable
           onPress={openAll}
           accessibilityRole="button"
-          accessibilityLabel={`${section.title ?? "Campaign"}. ${section.offerLabel ?? ""}`}
+          accessibilityLabel={`${title ?? t.campaign}. ${offerLabel ?? ""}`}
           style={styles.top}
         >
           {section.imageUrl ? (
@@ -74,7 +79,7 @@ export const CampaignCardSection = memo(function CampaignCardSection({ section }
             <View style={styles.fan}><HighlightFan products={section.highlights} edge={tones.rim} /></View>
           )}
           <Headline section={section} tones={tones} onPress={openAll} />
-          {section.offerLabel ? <View style={styles.stamp}><OfferStamp label={section.offerLabel} /></View> : null}
+          {offerLabel ? <View style={styles.stamp}><OfferStamp label={offerLabel} /></View> : null}
         </Pressable>
         {section.tiles.length > 0 && (
           <View style={styles.aisles}>
@@ -89,10 +94,12 @@ export const CampaignCardSection = memo(function CampaignCardSection({ section }
 const styles = StyleSheet.create({
   wrap: { marginTop: 20, marginHorizontal: 16 },
   card: { borderRadius: 20, borderWidth: 1, overflow: "hidden" },
-  top: { height: TOP_HEIGHT },
+  // A floor, not a fixed height: a headline that wraps further (Tamil runs longer) grows the card instead of
+  // running into the aisles
+  top: { minHeight: TOP_HEIGHT },
   art: { position: "absolute", right: 0, top: 18, bottom: 14, width: ART_WIDTH },
   fan: { position: "absolute", right: 8, top: 12 },
-  headline: { position: "absolute", left: 16, top: 16, width: "50%", gap: 4 },
+  headline: { marginLeft: 16, marginTop: 16, marginBottom: 12, width: "50%", gap: 4 },
   title: { fontFamily: fonts.extrabold, fontSize: 24, lineHeight: 28, letterSpacing: -0.4 },
   subtitle: { fontFamily: fonts.semibold, fontSize: 13, lineHeight: 17, opacity: 0.85 },
   cta: {

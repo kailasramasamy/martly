@@ -1,18 +1,20 @@
 import { View, Text, FlatList, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { Store } from "../../lib/types";
 import { dayLabel, formatTime } from "./store-info";
 
 type Slot = NonNullable<Store["slots"]>[number];
 
 function SlotChip({ slot }: { slot: Slot }) {
+  const t = useStrings("home");
   return (
     <View style={styles.chip}>
       <Text style={styles.day}>{dayLabel(slot.date)}</Text>
       <Text style={styles.time}>{formatTime(slot.startTime)} – {formatTime(slot.endTime)}</Text>
       <Text style={[styles.orderBy, slot.fewLeft && styles.fewLeft]}>
-        {slot.fewLeft ? "Few left · " : ""}Order by {formatTime(slot.orderBy)}
+        {t.orderBy(formatTime(slot.orderBy), Boolean(slot.fewLeft))}
       </Text>
     </View>
   );
@@ -20,8 +22,9 @@ function SlotChip({ slot }: { slot: Slot }) {
 
 /** Express hours, then every slot still open for booking, side by side; `inset` lets the row run to the card's edges */
 export function DeliveryOptions({ store, inset }: { store: Store; inset: number }) {
+  const t = useStrings("home");
   const express = store.expressEtaMinutes && store.operatingStart && store.operatingEnd
-    ? `${store.expressEtaMinutes} min · ${formatTime(store.operatingStart)} – ${formatTime(store.operatingEnd)}` : null;
+    ? `${t.minutes(store.expressEtaMinutes)} · ${formatTime(store.operatingStart)} – ${formatTime(store.operatingEnd)}` : null;
   const slots = store.slots ?? [];
   if (!express && slots.length === 0) return null;
   return (
@@ -29,14 +32,14 @@ export function DeliveryOptions({ store, inset }: { store: Store; inset: number 
       {express && (
         <View style={styles.line}>
           <Ionicons name="flash-outline" size={14} color={colors.primary} />
-          <Text style={styles.lineText} numberOfLines={1}><Text style={styles.label}>Express</Text>  {express}</Text>
+          <Text style={styles.lineText} numberOfLines={1}><Text style={styles.label}>{t.express}</Text>  {express}</Text>
         </View>
       )}
       {slots.length > 0 && (
         <>
           <View style={styles.line}>
             <Ionicons name="calendar-outline" size={14} color={colors.primary} />
-            <Text style={[styles.lineText, styles.label]}>Scheduled delivery</Text>
+            <Text style={[styles.lineText, styles.label]}>{t.scheduledDelivery}</Text>
           </View>
           <FlatList
             horizontal

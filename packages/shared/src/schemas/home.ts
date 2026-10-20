@@ -34,7 +34,13 @@ export function parseHomeSectionConfig(type: HomeSectionType, config: unknown): 
   return schema ? schema.parse(config ?? {}) : {};
 }
 
-const translations = z.record(z.string(), z.object({ title: z.string().optional(), subtitle: z.string().optional() })).optional();
+const translations = z.record(z.string(), z.object({
+  title: z.string().optional(),
+  subtitle: z.string().optional(),
+  headline: z.string().optional(),
+  offerLabel: z.string().optional(),
+  bandLabels: z.array(z.string()).optional(),
+})).optional();
 
 export const createHomeSectionSchema = z.object({
   type: z.nativeEnum(HomeSectionType),

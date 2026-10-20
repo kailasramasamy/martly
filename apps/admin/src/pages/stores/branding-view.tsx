@@ -10,7 +10,7 @@ export interface StoreBrandingRecord {
   offerText?: string | null;
   highlights?: string[];
   promoImages?: string[];
-  translations?: Record<string, { tagline?: string; offerText?: string }> | null;
+  translations?: Record<string, { name?: string; tagline?: string; offerText?: string }> | null;
 }
 
 const empty = <Typography.Text type="secondary">Not set</Typography.Text>;
@@ -45,6 +45,7 @@ export function BrandingView({ record }: { record: StoreBrandingRecord }) {
             <Descriptions.Item label="Brand colour">
               {record.brandColor ? <Space><span style={{ display: "inline-block", width: 16, height: 16, borderRadius: 4, background: record.brandColor }} />{record.brandColor}</Space> : empty}
             </Descriptions.Item>
+            <Descriptions.Item label="Name (Tamil)">{ta?.name || empty}</Descriptions.Item>
             <Descriptions.Item label="Tagline"><Text en={record.tagline} ta={ta?.tagline} /></Descriptions.Item>
             <Descriptions.Item label="Offer line"><Text en={record.offerText} ta={ta?.offerText} /></Descriptions.Item>
             <Descriptions.Item label="Highlights">{record.highlights?.length ? record.highlights.map((h) => <Tag key={h}>{h}</Tag>) : empty}</Descriptions.Item>

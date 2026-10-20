@@ -4,6 +4,7 @@ import { ScrollView, StyleSheet, Text, View } from "react-native";
 import type { PriceBandDealsSection as PriceBandDeals, PriceBandPage } from "@martly/shared/types";
 import { COMPACT_GAP } from "../../CompactProductCard";
 import { api } from "../../../lib/api";
+import { useStrings } from "../../../lib/i18n/use-strings";
 import type { StoreProduct } from "../../../lib/types";
 import { colors, fonts } from "../../../constants/theme";
 import { useCompactCards } from "./CompactCards";
@@ -29,7 +30,7 @@ const toRows = (products: StoreProduct[]) => [products.filter((_, i) => i % 2 ==
  * products in a two-row grid that scrolls sideways. Each band and chip combination loads once, when first picked.
  */
 export const PriceBandDealsSection = memo(function PriceBandDealsSection({ section }: { section: Section }) {
-  const { title, subtitle } = useSectionText(section);
+  const { title, subtitle, translated } = useSectionText(section);
   const { store } = useHomeSectionEnv();
 
   const fetchDeals = useCallback(async (key: string) => {
@@ -48,7 +49,12 @@ export const PriceBandDealsSection = memo(function PriceBandDealsSection({ secti
   const { band, categoryId } = parseKey(key);
   const { products, renderCard } = useCompactCards(page.products);
   const rows = useMemo(() => toRows(products), [products]);
-  const bandLabels = useMemo(() => section.bands.map((b) => b.label), [section.bands]);
+  const t = useStrings("home");
+  const bandLabels = useMemo(
+    () => section.bands.map((b, i) => translated?.bandLabels?.[i] || b.label),
+    [section.bands, translated],
+  );
+  const headline = translated?.headline || section.headline;
 
   const onBand = useCallback((index: number) => select(pageKey(index, null)), [select]);
   const onChip = useCallback((id: string | null) => select(pageKey(band, id)), [select, band]);
@@ -56,7 +62,7 @@ export const PriceBandDealsSection = memo(function PriceBandDealsSection({ secti
     pathname: "/deals/[sectionId]",
     params: { sectionId: section.id, band: String(band), ...(categoryId ? { categoryId } : {}) },
   }), [section.id, band, categoryId]);
-  const seeAllLabel = `See all ${page.total.toLocaleString("en-IN")} ${bandLabels[band]?.toLowerCase() ?? ""}`;
+  const seeAllLabel = t.seeAllBand(page.total.toLocaleString("en-IN"), bandLabels[band]?.toLowerCase() ?? "");
 
   // The grid is bounded (one page of 20), so it's two plain rows in one scroller: a row's cards stretch to its tallest
   return (
@@ -66,7 +72,7 @@ export const PriceBandDealsSection = memo(function PriceBandDealsSection({ secti
           <Text style={styles.title} numberOfLines={1}>{title}</Text>
           {subtitle ? <Text style={styles.subtitle} numberOfLines={1}>{subtitle}</Text> : null}
         </View>
-        {section.headline ? <Text style={styles.headline}>{section.headline}</Text> : null}
+        {headline ? <Text style={styles.headline}>{headline}</Text> : null}
       </View>
       <BandSelector labels={bandLabels} selected={band} onSelect={onBand} />
       {page.chips.length > 0 && <CategoryChips chips={page.chips} selectedId={categoryId} onSelect={onChip} />}

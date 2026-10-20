@@ -5,6 +5,7 @@ import type { BrandCardSection as BrandCard } from "@martly/shared/types";
 import { HOME_BRAND_CARD_PRODUCTS } from "@martly/shared/constants";
 import { COMPACT_GAP } from "../../CompactProductCard";
 import { colors, fonts } from "../../../constants/theme";
+import { useStrings } from "../../../lib/i18n/use-strings";
 import type { StoreProduct } from "../../../lib/types";
 import { useCompactCards } from "./CompactCards";
 import { openSeeAll, useSectionText } from "./context";
@@ -25,6 +26,8 @@ function isDark(hex: string) {
  * page. The card is inset 8px (not the usual 16) so three compact cards fit across its padding.
  */
 export const BrandCardSection = memo(function BrandCardSection({ section }: { section: BrandCard<StoreProduct> }) {
+  const t = useStrings("home");
+  const c = useStrings("common");
   const { title, subtitle } = useSectionText(section);
   const { brand, seeAll } = section;
   const tint = section.tint ?? NEUTRAL_TINT;
@@ -51,10 +54,10 @@ export const BrandCardSection = memo(function BrandCardSection({ section }: { se
         <Pressable
           onPress={onSeeAll}
           accessibilityRole="button"
-          accessibilityLabel={`See all ${brand.name}`}
+          accessibilityLabel={t.seeAllOf(brand.name)}
           style={({ pressed }) => [styles.cta, { backgroundColor: ink }, pressed && styles.pressed]}
         >
-          <Text style={[styles.ctaText, { color: tint }]}>See all</Text>
+          <Text style={[styles.ctaText, { color: tint }]}>{c.seeAll}</Text>
           <Ionicons name="arrow-forward" size={14} color={tint} />
         </Pressable>
       )}

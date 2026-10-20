@@ -1,5 +1,6 @@
 import { colors } from "../../constants/theme";
 import { useLanguage } from "../../lib/language-context";
+import { strings } from "../../lib/i18n";
 import type { Store } from "../../lib/types";
 
 export interface StoreBranding {
@@ -9,6 +10,8 @@ export interface StoreBranding {
   /** `color` faded for chip backgrounds */
   tint: string;
   initials: string;
+  /** The store's name in the app language */
+  name: string;
   tagline: string | null;
   offer: { icon: "pricetag" | "flash" | "bicycle"; text: string } | null;
 }
@@ -26,13 +29,13 @@ const initialsOf = (name: string) =>
 /** The store's own offer line, else its live deals, else free delivery */
 function offerFor(store: Store, offerText: string | undefined): StoreBranding["offer"] {
   if (offerText) return { icon: "pricetag", text: offerText };
-  if (store.deals) return { icon: "flash", text: `Up to ${store.deals.maxPercent}% off · ${store.deals.count} deals` };
-  if (store.freeDeliveryThreshold != null) return { icon: "bicycle", text: `Free delivery above ₹${Number(store.freeDeliveryThreshold).toLocaleString("en-IN")}` };
+  if (store.deals) return { icon: "flash", text: strings("home").dealsUpTo(store.deals.maxPercent, store.deals.count) };
+  if (store.freeDeliveryThreshold != null) return { icon: "bicycle", text: strings("home").freeDeliveryAbove(Number(store.freeDeliveryThreshold).toLocaleString("en-IN")) };
   return null;
 }
 
 export function useStoreBranding(store: Store): StoreBranding {
-  const { language } = useLanguage();
+  const { language, getLocalizedName } = useLanguage();
   const local = language ? store.translations?.[language] : undefined;
   const color = store.brandColor ?? colors.primary;
   return {
@@ -40,6 +43,7 @@ export function useStoreBranding(store: Store): StoreBranding {
     onColor: isLight(color) ? colors.text : "#fff",
     tint: `${color}1a`,
     initials: initialsOf(store.name),
+    name: getLocalizedName(store),
     tagline: local?.tagline || store.tagline || null,
     offer: offerFor(store, local?.offerText || store.offerText || undefined),
   };

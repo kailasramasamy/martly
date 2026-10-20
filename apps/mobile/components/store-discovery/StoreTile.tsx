@@ -1,6 +1,8 @@
 import { View, Text, Pressable, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { strings } from "../../lib/i18n";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { Store } from "../../lib/types";
 import { useStoreBranding } from "./branding";
 import { StoreLogo } from "./StoreLogo";
@@ -17,13 +19,14 @@ interface StoreTileProps {
 }
 
 function shortDistance(store: Store): string | null {
-  if (store.drive) return `${formatDistance(store.drive.km)} · ${store.drive.minutes} min`;
+  if (store.drive) return `${formatDistance(store.drive.km)} · ${strings("home").minutes(store.drive.minutes)}`;
   return store.distance != null ? formatDistance(store.distance) : null;
 }
 
 /** A store at a glance in the strip: logo, name, express time and how far */
 export function StoreTile({ store, active, muted, onPress }: StoreTileProps) {
   const brand = useStoreBranding(store);
+  const t = useStrings("home");
   const far = shortDistance(store);
   return (
     <Pressable
@@ -31,21 +34,21 @@ export function StoreTile({ store, active, muted, onPress }: StoreTileProps) {
       style={({ pressed }) => [styles.tile, active && { borderColor: brand.color, borderWidth: 2, padding: 9 }, muted && styles.muted, pressed && styles.pressed]}
       accessibilityRole="button"
       accessibilityState={{ selected: active }}
-      accessibilityLabel={store.name}
+      accessibilityLabel={brand.name}
     >
       <View style={[styles.logoWell, { backgroundColor: brand.tint }]}>
         <StoreLogo store={store} brand={brand} size={40} />
         {(store.promoImages?.length ?? 0) > 0 && <View style={styles.offerDot} />}
       </View>
-      <Text style={styles.name} numberOfLines={2}>{store.name}</Text>
+      <Text style={styles.name} numberOfLines={2}>{brand.name}</Text>
       {muted ? (
-        <Text style={styles.outside} numberOfLines={1}>Outside delivery area</Text>
+        <Text style={styles.outside} numberOfLines={1}>{t.outsideArea}</Text>
       ) : (
         <View style={styles.meta}>
           {store.expressEtaMinutes ? (
             <View style={styles.eta}>
               <Ionicons name="flash" size={10} color={colors.primary} />
-              <Text style={styles.etaText}>{store.expressEtaMinutes} min</Text>
+              <Text style={styles.etaText}>{t.minutes(store.expressEtaMinutes)}</Text>
             </View>
           ) : null}
           {far ? <Text style={styles.far} numberOfLines={1}>{far}</Text> : null}

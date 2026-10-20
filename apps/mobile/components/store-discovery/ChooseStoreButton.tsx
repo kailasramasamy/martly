@@ -1,6 +1,7 @@
 import { Pressable, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { Store } from "../../lib/types";
 import { useStoreBranding } from "./branding";
 
@@ -16,6 +17,7 @@ interface ChooseStoreButtonProps {
 /** Commits the previewed store, in its brand colour */
 export function ChooseStoreButton({ store, current, blockedReason, onChoose }: ChooseStoreButtonProps) {
   const brand = useStoreBranding(store);
+  const t = useStrings("home");
   if (blockedReason) {
     return (
       <Pressable style={[styles.button, styles.blocked]} disabled accessibilityState={{ disabled: true }}>
@@ -23,7 +25,7 @@ export function ChooseStoreButton({ store, current, blockedReason, onChoose }: C
       </Pressable>
     );
   }
-  const label = current ? `You're shopping at ${store.name}` : `Shop at ${store.name}`;
+  const label = current ? t.shoppingAt(brand.name) : t.shopAt(brand.name);
   return (
     <Pressable
       style={({ pressed }) => [styles.button, { backgroundColor: brand.color }, pressed && styles.pressed]}

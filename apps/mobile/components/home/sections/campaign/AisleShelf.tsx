@@ -2,7 +2,9 @@ import { memo } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import type { CampaignTile } from "@martly/shared/types";
 import { colors, fonts } from "../../../../constants/theme";
+import { useStrings } from "../../../../lib/i18n/use-strings";
 import { PackCluster } from "../PackCluster";
+import { useTileLabel } from "../TileGridParts";
 
 const CLUSTER = 48;
 // Every chip is the same size, so the row reads as a set whatever the aisle names
@@ -19,6 +21,8 @@ interface Props {
 /** The campaign's aisles as chips along the bottom of the card, packs on the left and the name and count on the right;
  *  each opens the campaign narrowed to that aisle */
 export const AisleShelf = memo(function AisleShelf({ tiles, rim, onTile }: Props) {
+  const c = useStrings("common");
+  const labelOf = useTileLabel();
   return (
     <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row}>
       {tiles.map((tile) => (
@@ -26,13 +30,13 @@ export const AisleShelf = memo(function AisleShelf({ tiles, rim, onTile }: Props
           key={tile.id}
           onPress={() => onTile(tile)}
           accessibilityRole="button"
-          accessibilityLabel={`${tile.label}, ${tile.productCount} items`}
+          accessibilityLabel={`${labelOf(tile)}, ${c.items(tile.productCount)}`}
           style={({ pressed }) => [styles.chip, { borderColor: rim }, pressed && styles.pressed]}
         >
           <View style={styles.art}><PackCluster images={tile.images} size={CLUSTER} /></View>
           <View style={styles.text}>
-            <Text style={styles.label} numberOfLines={2}>{tile.label}</Text>
-            <Text style={styles.count}>{tile.productCount} items</Text>
+            <Text style={styles.label} numberOfLines={2}>{labelOf(tile)}</Text>
+            <Text style={styles.count}>{c.items(tile.productCount)}</Text>
           </View>
         </Pressable>
       ))}

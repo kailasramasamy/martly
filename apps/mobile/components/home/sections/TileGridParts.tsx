@@ -9,9 +9,11 @@ export const H_PADDING = 16;
 export const GAP = 10;
 export const WIDTH = Dimensions.get("window").width - H_PADDING * 2;
 
+/** A tile's label in the shopper's language: grid tiles and campaign aisle tiles share this shape */
 export function useTileLabel() {
   const { language } = useLanguage();
-  return (tile: GridTile) => (language && tile.translations?.[language]?.label) || tile.label;
+  return (tile: Pick<GridTile, "label"> & { translations?: Record<string, { label?: string }> | null }) =>
+    (language && tile.translations?.[language]?.label) || tile.label;
 }
 
 export function chunk<T>(items: T[], size: number) {

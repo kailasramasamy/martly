@@ -1,6 +1,14 @@
 import type { FestiveFont, HeroTileLayout, HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
 
-type Translations = Record<string, { title?: string; subtitle?: string }> | null;
+/** A section's text in other languages; the config-driven labels (headline, bands, offer) translate here too */
+type Translations = Record<string, {
+  title?: string;
+  subtitle?: string;
+  headline?: string;
+  offerLabel?: string;
+  /** In the order of the section's bands */
+  bandLabels?: string[];
+}> | null;
 type NameTranslations = Record<string, { name?: string }> | null;
 
 /** Where a section's "See all" leads: a collection (optionally narrowed to aisles) or an app path */
@@ -33,6 +41,8 @@ export interface ProductRowSection<P> extends HomeSectionBase {
 export interface CampaignTile {
   id: string;
   label: string;
+  /** The label in other languages, keyed by language code */
+  translations?: Record<string, { label?: string }> | null;
   subcategoryIds: string[];
   /** Up to 3 product images, drawn as an overlapping pack cluster */
   images: string[];
@@ -107,7 +117,7 @@ export interface PriceBandPage<P = unknown> {
 
 /** A deals page with the section it belongs to, so the full Deals screen can open on its own */
 export interface PriceBandDealsPage<P = unknown> extends PriceBandPage<P> {
-  section: { title: string | null; headline: string | null; bands: PriceBand[] };
+  section: { title: string | null; headline: string | null; bands: PriceBand[]; translations: Translations };
 }
 
 export interface BrandCardSection<P> extends HomeSectionBase {
@@ -146,6 +156,12 @@ export interface GridTile {
 export interface TileGridSection extends HomeSectionBase {
   type: "EXPLORE_GRID" | "STORE_GRID";
   tiles: GridTile[];
+}
+
+/** The Categories tab: every stocked department as a tile directory, then the org's Shop by store grid */
+export interface CategoryDirectoryPage {
+  groups: CategoryDirectorySection["groups"];
+  stores: TileGridSection | null;
 }
 
 /** Built-in blocks; `data` carries the same shape the legacy feed used for that block */

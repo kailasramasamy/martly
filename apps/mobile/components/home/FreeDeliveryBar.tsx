@@ -4,6 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useBasketMode } from "../../lib/basket-mode-context";
 import { useCart } from "../../lib/cart-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 const UNLOCKED_MS = 2500;
 
@@ -32,6 +33,7 @@ function useUnlockedFlash(remaining: number | null) {
 
 /** Sits on the cart bar: how much more to add for free delivery, with the progress so far */
 export const FreeDeliveryBar = memo(function FreeDeliveryBar({ threshold, storeId }: Props) {
+  const t = useStrings("home");
   const { totalAmount, itemCount, storeId: cartStoreId } = useCart();
   const { isBasketMode } = useBasketMode();
   // Only for a cart at this store, and not while filling tomorrow's basket (its bar takes the dock)
@@ -43,7 +45,7 @@ export const FreeDeliveryBar = memo(function FreeDeliveryBar({ threshold, storeI
     return (
       <View style={[styles.bar, styles.unlocked]} accessibilityLiveRegion="polite">
         <Ionicons name="checkmark-circle" size={16} color={colors.success} />
-        <Text style={styles.unlockedText}>Free delivery unlocked</Text>
+        <Text style={styles.unlockedText}>{t.freeDeliveryUnlocked}</Text>
       </View>
     );
   }
@@ -51,12 +53,12 @@ export const FreeDeliveryBar = memo(function FreeDeliveryBar({ threshold, storeI
   const progress = Math.min(1, totalAmount / (threshold as number));
 
   return (
-    <View style={styles.bar} accessibilityLabel={`Shop for ${rupees(remaining)} more to unlock free delivery`}>
+    <View style={styles.bar} accessibilityLabel={t.unlockA11y(rupees(remaining))}>
       <View style={styles.row}>
         <Ionicons name="bicycle" size={16} color={colors.primary} />
         <Text style={styles.text} numberOfLines={1}>
-          <Text style={styles.strong}>Unlock free delivery</Text>
-          {` · Shop for ${rupees(remaining)} more`}
+          <Text style={styles.strong}>{t.unlockFreeDelivery}</Text>
+          {t.shopMore(rupees(remaining))}
         </Text>
       </View>
       <View style={styles.track}>

@@ -1,14 +1,16 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { Store } from "../../lib/types";
 import { getOpenState } from "./store-info";
 
 export function EtaChip({ minutes, onImage }: { minutes: number; onImage?: boolean }) {
+  const t = useStrings("home");
   return (
     <View style={[styles.etaChip, onImage && styles.etaChipOnImage]}>
       <Ionicons name="flash" size={11} color={onImage ? colors.accentText : colors.primary} />
-      <Text style={[styles.etaText, onImage && styles.etaTextOnImage]}>{minutes} min</Text>
+      <Text style={[styles.etaText, onImage && styles.etaTextOnImage]}>{t.minutes(minutes)}</Text>
     </View>
   );
 }

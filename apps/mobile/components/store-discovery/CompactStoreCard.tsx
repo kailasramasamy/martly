@@ -1,6 +1,8 @@
 import { View, Text, Pressable, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { strings } from "../../lib/i18n";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { Store } from "../../lib/types";
 import { useStoreBranding, type StoreBranding } from "./branding";
 import { EtaChip } from "./StoreCards";
@@ -21,18 +23,19 @@ interface CompactStoreCardProps {
 
 function whereText(store: Store): string {
   const parts = [getStoreArea(store), distanceText(store)];
-  if (store.deliversToYou === false) parts.push("Outside delivery area");
+  if (store.deliversToYou === false) parts.push(strings("home").outsideArea);
   return parts.filter(Boolean).join("  ·  ");
 }
 
 function BannerChips({ store, brand, selected }: { store: Store; brand: StoreBranding; selected: boolean }) {
+  const t = useStrings("home");
   return (
     <View style={styles.coverRow}>
       {store.expressEtaMinutes ? <EtaChip minutes={store.expressEtaMinutes} onImage /> : <View />}
       {selected && (
         <View style={[styles.current, { backgroundColor: brand.color }]}>
           <Ionicons name="checkmark" size={12} color={brand.onColor} />
-          <Text style={[styles.currentText, { color: brand.onColor }]}>Current</Text>
+          <Text style={[styles.currentText, { color: brand.onColor }]}>{t.current}</Text>
         </View>
       )}
     </View>
@@ -49,14 +52,14 @@ export function CompactStoreCard({ store, selected, onPress }: CompactStoreCardP
       onPress={() => onPress(store)}
       accessibilityRole="button"
       accessibilityState={{ selected }}
-      accessibilityLabel={store.name}
+      accessibilityLabel={brand.name}
     >
       <CoverCarousel store={store} brand={brand} height={COVER} overlay={<BannerChips store={store} brand={brand} selected={selected} />} />
       <View style={[styles.stripe, { backgroundColor: brand.color }]} />
       <View style={styles.logo}><StoreLogo store={store} brand={brand} size={LOGO} /></View>
       <View style={styles.body}>
         <View style={styles.nameRow}>
-          <Text style={styles.name} numberOfLines={1}>{store.name}</Text>
+          <Text style={styles.name} numberOfLines={1}>{brand.name}</Text>
           <OffersTag store={store} />
         </View>
         {brand.tagline ? <Text style={styles.tagline} numberOfLines={2}>{brand.tagline}</Text> : null}

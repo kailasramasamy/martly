@@ -4,12 +4,15 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import type { SystemSection } from "@martly/shared/types";
 import { colors } from "../../../../constants/theme";
+import { useStrings } from "../../../../lib/i18n/use-strings";
 import type { StoreProduct } from "../../../../lib/types";
 import { ProductList } from "../../../ProductList";
 
 const H_PADDING = 16;
 
 export const DealsSection = memo(function DealsSection({ section }: { section: SystemSection }) {
+  const t = useStrings("home");
+  const c = useStrings("common");
   const products = section.data.products as StoreProduct[];
   return (
     <View style={styles.section}>
@@ -18,13 +21,13 @@ export const DealsSection = memo(function DealsSection({ section }: { section: S
           <View style={styles.icon}>
             <Ionicons name="flash" size={14} color="#fff" />
           </View>
-          <Text style={styles.title}>Deals of the Day</Text>
+          <Text style={styles.title}>{t.dealsOfTheDay}</Text>
         </View>
         <TouchableOpacity
           onPress={() => router.push({ pathname: "/search", params: { hasDiscount: "true" } } as never)}
           style={styles.link}
         >
-          <Text style={styles.linkText}>View All</Text>
+          <Text style={styles.linkText}>{c.viewAll}</Text>
           <Ionicons name="chevron-forward" size={14} color="#92400e" />
         </TouchableOpacity>
       </View>

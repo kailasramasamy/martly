@@ -4,6 +4,7 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import type { SystemSection } from "@martly/shared/types";
 import { colors } from "../../../../constants/theme";
+import { useStrings } from "../../../../lib/i18n/use-strings";
 import type { StoreProduct } from "../../../../lib/types";
 import { ProductList } from "../../../ProductList";
 
@@ -11,6 +12,7 @@ const H_PADDING = 16;
 
 /** Top priority for returning customers: what they order often */
 export const BuyAgainSection = memo(function BuyAgainSection({ section }: { section: SystemSection }) {
+  const t = useStrings("home");
   const products = section.data.products as StoreProduct[];
   return (
     <View style={styles.section}>
@@ -19,13 +21,13 @@ export const BuyAgainSection = memo(function BuyAgainSection({ section }: { sect
           <View style={styles.icon}>
             <Ionicons name="repeat" size={14} color="#fff" />
           </View>
-          <View>
-            <Text style={styles.title}>Buy Again</Text>
-            <Text style={styles.subtitle}>Your frequently ordered items</Text>
+          <View style={styles.titleText}>
+            <Text style={styles.title} numberOfLines={1}>{t.buyAgain}</Text>
+            <Text style={styles.subtitle} numberOfLines={1}>{t.buyAgainSubtitle}</Text>
           </View>
         </View>
         <TouchableOpacity onPress={() => router.push("/smart-reorder")} style={styles.link}>
-          <Text style={styles.linkText}>Smart reorder</Text>
+          <Text style={styles.linkText}>{t.smartReorder}</Text>
           <Ionicons name="chevron-forward" size={14} color={colors.primary} />
         </TouchableOpacity>
       </View>
@@ -37,7 +39,9 @@ export const BuyAgainSection = memo(function BuyAgainSection({ section }: { sect
 const styles = StyleSheet.create({
   section: { marginTop: 16, backgroundColor: "#f0fdfa", paddingVertical: 18, borderTopWidth: 1, borderBottomWidth: 1, borderColor: "#ccfbf1" },
   header: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingHorizontal: H_PADDING, marginBottom: 14 },
-  titleRow: { flexDirection: "row", alignItems: "center", gap: 10 },
+  // The title side gives way so the link always stays on screen, however long the language's words run
+  titleRow: { flex: 1, flexDirection: "row", alignItems: "center", gap: 10, marginRight: 8 },
+  titleText: { flex: 1 },
   icon: { width: 30, height: 30, borderRadius: 9, backgroundColor: colors.primary, justifyContent: "center", alignItems: "center" },
   title: { fontSize: 16, fontWeight: "700", color: colors.text },
   subtitle: { fontSize: 12, color: "#64748b", marginTop: 1 },

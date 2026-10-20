@@ -1,5 +1,6 @@
 import { View, Text, Image, Pressable, FlatList, StyleSheet } from "react-native";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { Store } from "../../lib/types";
 import { useStoreBranding } from "./branding";
 import { StoreLogo } from "./StoreLogo";
@@ -14,13 +15,14 @@ interface Poster {
 
 function PosterTile({ poster, onPress }: { poster: Poster; onPress: (store: Store) => void }) {
   const brand = useStoreBranding(poster.store);
+  const t = useStrings("home");
   return (
     <Pressable style={({ pressed }) => [styles.tile, pressed && styles.pressed]} onPress={() => onPress(poster.store)}
-      accessibilityRole="button" accessibilityLabel={`Offer from ${poster.store.name}`}>
+      accessibilityRole="button" accessibilityLabel={t.offerFrom(brand.name)}>
       <Image source={{ uri: poster.uri }} style={styles.poster} resizeMode="cover" />
       <View style={styles.caption}>
         <StoreLogo store={poster.store} brand={brand} size={24} />
-        <Text style={styles.storeName} numberOfLines={1}>{poster.store.name}</Text>
+        <Text style={styles.storeName} numberOfLines={1}>{brand.name}</Text>
       </View>
     </Pressable>
   );
@@ -28,11 +30,12 @@ function PosterTile({ poster, onPress }: { poster: Poster; onPress: (store: Stor
 
 /** Store owners' own promo posters; tapping one picks that store. Hidden when no store has posters */
 export function PromoPosterStrip({ stores, onSelect }: { stores: Store[]; onSelect: (store: Store) => void }) {
+  const t = useStrings("home");
   const posters: Poster[] = stores.flatMap((store) => (store.promoImages ?? []).map((uri, i) => ({ key: `${store.id}-${i}`, uri, store })));
   if (posters.length === 0) return null;
   return (
     <View>
-      <Text style={styles.title}>Offers from stores near you</Text>
+      <Text style={styles.title}>{t.offersNearYou}</Text>
       <FlatList
         horizontal
         data={posters}

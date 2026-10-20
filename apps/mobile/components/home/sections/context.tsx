@@ -35,11 +35,14 @@ export function useHomeSectionEnv() {
   return env;
 }
 
-/** A section's title and subtitle in the shopper's language */
+/**
+ * A section's title and subtitle in the shopper's language, plus its translation for the labels the admin typed into
+ * its settings (headline, offer, bands), which each section falls back from to the English it was given
+ */
 export function useSectionText(section: Pick<MobileHomeSection, "title" | "subtitle" | "translations">) {
   const { language } = useLanguage();
   const t = language ? section.translations?.[language] : undefined;
-  return { title: t?.title || section.title, subtitle: t?.subtitle || section.subtitle };
+  return { title: t?.title || section.title, subtitle: t?.subtitle || section.subtitle, translated: t };
 }
 
 export function openSeeAll(seeAll: HomeSeeAll) {

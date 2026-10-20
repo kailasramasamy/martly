@@ -31,10 +31,19 @@ function wholeRows<T>(groups: T[]) {
 }
 
 async function labels(prisma: PrismaClient, keys: string[], byCategory: boolean) {
+  const select = { id: true, name: true, translations: true };
   const rows = byCategory
-    ? await prisma.category.findMany({ where: { id: { in: keys } }, select: { id: true, name: true } })
-    : await prisma.subcategory.findMany({ where: { id: { in: keys } }, select: { id: true, name: true } });
-  return new Map(rows.map((r) => [r.id, r.name]));
+    ? await prisma.category.findMany({ where: { id: { in: keys } }, select })
+    : await prisma.subcategory.findMany({ where: { id: { in: keys } }, select });
+  return new Map(rows.map((r) => [r.id, { name: r.name, translations: asLabelTranslations(r.translations) }]));
+}
+
+// Taxonomy translations carry a `name`; tiles show a `label`
+function asLabelTranslations(translations: unknown): CampaignTile["translations"] {
+  if (!translations || typeof translations !== "object") return null;
+  return Object.fromEntries(
+    Object.entries(translations as Record<string, { name?: string }>).map(([lang, t]) => [lang, { label: t?.name }]),
+  );
 }
 
 /** A collection's products in stock at a store, with what aisle grouping needs, in collection order */
@@ -66,7 +75,8 @@ export async function autoTiles(prisma: PrismaClient, items: StockedItem[], ever
   const shown = every ? (groups.length >= 2 ? groups : []) : wholeRows(groups);
   const names = await labels(prisma, shown.map((g) => g.key), byCategory);
   return shown.map((g) => ({
-    id: g.key, label: names.get(g.key) ?? "", subcategoryIds: [...g.subcategoryIds], images: g.images, productCount: g.count,
+    id: g.key, label: names.get(g.key)?.name ?? "", translations: names.get(g.key)?.translations ?? null,
+    subcategoryIds: [...g.subcategoryIds], images: g.images, productCount: g.count,
   }));
 }
 
@@ -77,6 +87,6 @@ export function itemTiles(layoutItems: LayoutItem[], items: StockedItem[]): Camp
     const matching = items.filter((i) => i.subcategoryId && wanted.has(i.subcategoryId));
     if (matching.length === 0) return [];
     const images = matching.flatMap((i) => (i.imageUrl ? [i.imageUrl] : [])).slice(0, TILE_IMAGES);
-    return [{ id: li.id, label: li.label, subcategoryIds: li.subcategoryIds, images: images.length > 0 ? images : li.imageUrl ? [li.imageUrl] : [], productCount: matching.length }];
+    return [{ id: li.id, label: li.label, translations: li.translations as CampaignTile["translations"], subcategoryIds: li.subcategoryIds, images: images.length > 0 ? images : li.imageUrl ? [li.imageUrl] : [], productCount: matching.length }];
   });
 }

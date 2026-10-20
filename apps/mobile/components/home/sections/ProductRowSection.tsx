@@ -2,6 +2,7 @@ import { memo, useCallback } from "react";
 import { StyleSheet, View } from "react-native";
 import type { ProductRowSection as ProductRow } from "@martly/shared/types";
 import { ProductList } from "../../ProductList";
+import { useStrings } from "../../../lib/i18n/use-strings";
 import type { StoreProduct } from "../../../lib/types";
 import { openSeeAll, useSectionText } from "./context";
 import { SectionHeader } from "./SectionHeader";
@@ -9,6 +10,7 @@ import { SeeAllButton } from "./SeeAllButton";
 
 /** A collection as a horizontal rail, with a "See all" pill when the collection holds more than the rail shows */
 export const ProductRowSection = memo(function ProductRowSection({ section }: { section: ProductRow<StoreProduct> }) {
+  const t = useStrings("home");
   const { title, subtitle } = useSectionText(section);
   const { seeAll } = section;
   const onSeeAll = useCallback(() => { if (seeAll) openSeeAll(seeAll); }, [seeAll]);
@@ -20,7 +22,7 @@ export const ProductRowSection = memo(function ProductRowSection({ section }: { 
     <View style={[styles.section, band && [styles.band, band]]}>
       <SectionHeader title={title} subtitle={subtitle} look={look} imageUrl={section.header.imageUrl} tint={tint} />
       <ProductList products={section.products} layout="rail" elevated={band !== null} contentContainerStyle={band && styles.bandRail} />
-      {seeAll && <SeeAllButton onPress={onSeeAll} label={section.total > 0 ? `See all ${section.total} products` : "See all"} />}
+      {seeAll && <SeeAllButton onPress={onSeeAll} label={section.total > 0 ? t.seeAllProducts(section.total) : undefined} />}
     </View>
   );
 });

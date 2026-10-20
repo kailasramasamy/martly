@@ -4,6 +4,7 @@ import { Image, Pressable, ScrollView, StyleSheet, Text, View } from "react-nati
 import type { PriceBandChip } from "@martly/shared/types";
 import { colors, fonts } from "../../../constants/theme";
 import { useLanguage } from "../../../lib/language-context";
+import { useStrings } from "../../../lib/i18n/use-strings";
 
 const CHIP_ART = 44;
 
@@ -59,9 +60,10 @@ function Chip({ label, imageUrl, selected, onPress }: { label: string; imageUrl:
 /** Category chips that narrow the band's products; "All" leads */
 export const CategoryChips = memo(function CategoryChips({ chips, selectedId, onSelect }: ChipsProps) {
   const { language } = useLanguage();
+  const t = useStrings("home");
   return (
     <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chips}>
-      <Chip label="All" imageUrl={null} selected={selectedId === null} onPress={() => onSelect(null)} />
+      <Chip label={t.all} imageUrl={null} selected={selectedId === null} onPress={() => onSelect(null)} />
       {chips.map((chip) => (
         <Chip
           key={chip.categoryId}

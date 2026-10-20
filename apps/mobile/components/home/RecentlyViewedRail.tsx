@@ -1,11 +1,13 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { clearRecentlyViewed, useRecentlyViewed } from "../../lib/recently-viewed";
 import { ProductList } from "../ProductList";
 
 /** Products the shopper opened lately, so they can pick up where they left off; hidden until there are any */
 export function RecentlyViewedRail({ storeId }: { storeId: string }) {
+  const t = useStrings("home");
   const products = useRecentlyViewed(storeId);
   if (products.length === 0) return null;
   return (
@@ -16,12 +18,12 @@ export function RecentlyViewedRail({ storeId }: { storeId: string }) {
             <Ionicons name="time-outline" size={16} color={colors.primary} />
           </View>
           <View>
-            <Text style={styles.title}>Recently viewed</Text>
-            <Text style={styles.subtitle}>Pick up where you left off</Text>
+            <Text style={styles.title}>{t.recentlyViewed}</Text>
+            <Text style={styles.subtitle}>{t.recentlySubtitle}</Text>
           </View>
         </View>
-        <TouchableOpacity onPress={clearRecentlyViewed} style={styles.clear} accessibilityRole="button" accessibilityLabel="Clear recently viewed">
-          <Text style={styles.clearText}>Clear</Text>
+        <TouchableOpacity onPress={clearRecentlyViewed} style={styles.clear} accessibilityRole="button" accessibilityLabel={t.clearRecentlyViewed}>
+          <Text style={styles.clearText}>{t.clear}</Text>
         </TouchableOpacity>
       </View>
       <ProductList products={products} layout="rail" />

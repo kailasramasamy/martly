@@ -5,6 +5,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useStore } from "../../lib/store-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { Store } from "../../lib/types";
 import { StoreBrowser } from "./StoreBrowser";
 import { ChooseStoreButton } from "./ChooseStoreButton";
@@ -24,13 +25,14 @@ function useStoreChoices(search: string): Store[] {
 }
 
 function SearchBar({ value, onChange }: { value: string; onChange: (q: string) => void }) {
+  const t = useStrings("home");
   return (
     <View style={styles.searchWrap}>
       <Ionicons name="search-outline" size={18} color="#94a3b8" />
-      <TextInput style={styles.searchInput} placeholder="Search stores, areas or specialities" value={value} onChangeText={onChange}
+      <TextInput style={styles.searchInput} placeholder={t.searchPlaceholder} value={value} onChangeText={onChange}
         autoFocus autoCapitalize="none" autoCorrect={false} placeholderTextColor="#94a3b8" />
       {value.length > 0 && (
-        <TouchableOpacity onPress={() => onChange("")} hitSlop={12} accessibilityLabel="Clear search">
+        <TouchableOpacity onPress={() => onChange("")} hitSlop={12} accessibilityLabel={t.clearSearch}>
           <Ionicons name="close-circle" size={18} color="#cbd5e1" />
         </TouchableOpacity>
       )}
@@ -40,23 +42,25 @@ function SearchBar({ value, onChange }: { value: string; onChange: (q: string) =
 
 /** Search lives behind an icon in the header so the store panel gets the room */
 function useHeaderSearch() {
+  const t = useStrings("home");
   const navigation = useNavigation();
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");
   useLayoutEffect(() => {
     navigation.setOptions({
       headerRight: () => (
-        <TouchableOpacity onPress={() => { setOpen((o) => !o); setSearch(""); }} style={styles.headerIcon} accessibilityLabel={open ? "Close search" : "Search stores"}>
+        <TouchableOpacity onPress={() => { setOpen((o) => !o); setSearch(""); }} style={styles.headerIcon} accessibilityLabel={open ? t.closeSearch : t.searchStores}>
           <Ionicons name={open ? "close" : "search"} size={22} color={colors.text} />
         </TouchableOpacity>
       ),
     });
-  }, [navigation, open]);
+  }, [navigation, open, t]);
   return { open, search, setSearch };
 }
 
 /** Full-screen store chooser: tiles to compare, the previewed store in full, and a button to shop there */
 export function ChooseStoreScreen() {
+  const t = useStrings("home");
   const { selectedStore, setSelectedStore } = useStore();
   const insets = useSafeAreaInsets();
   const { open, search, setSearch } = useHeaderSearch();
@@ -77,13 +81,13 @@ export function ChooseStoreScreen() {
         ) : (
           <View style={styles.empty}>
             <Ionicons name="search" size={28} color="#94a3b8" />
-            <Text style={styles.emptyTitle}>No stores found</Text>
-            <Text style={styles.emptyText}>Try a different search term</Text>
+            <Text style={styles.emptyTitle}>{t.noStoresFound}</Text>
+            <Text style={styles.emptyText}>{t.tryDifferentSearch}</Text>
           </View>
         )}
         <View style={styles.everywhere}>
           <Ionicons name="shield-checkmark-outline" size={15} color={colors.primary} />
-          <Text style={styles.everywhereText}>Every store: pay online, or cash/UPI on delivery · free pickup from the store</Text>
+          <Text style={styles.everywhereText}>{t.everyStore}</Text>
         </View>
       </ScrollView>
       {preview && (

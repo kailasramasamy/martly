@@ -7,6 +7,7 @@ import { colors } from "../../constants/theme";
 import { useNotifications } from "../../lib/notification-context";
 import { useRequireSignIn } from "../../lib/sign-in-context";
 import { useAuth } from "../../lib/auth-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { HomeHeaderLocation } from "../HomeHeaderLocation";
 import { SearchBarButton } from "../SearchBarButton";
 import type { HomeTheme } from "@martly/shared/types";
@@ -35,6 +36,7 @@ function useFestiveBand(collapsed: boolean) {
 }
 
 export function HomeHeader({ store, userArea, onPickStore, festive, collapsed = false, onLayout, searchHints }: Props) {
+  const t = useStrings("home");
   const requireSignIn = useRequireSignIn();
   const insets = useSafeAreaInsets();
   const { unreadCount } = useNotifications();
@@ -50,15 +52,15 @@ export function HomeHeader({ store, userArea, onPickStore, festive, collapsed = 
         <HomeHeaderLocation store={store} userArea={userArea} onPress={onPickStore} ink={festive?.title} />
         {!store && !isAuthenticated ? (
           // Before a store is chosen there's nothing to browse yet; returning customers can still sign in
-          <TouchableOpacity style={styles.signIn} onPress={() => requireSignIn(() => {}, { title: "Welcome back", subtitle: "Sign in with your phone number" })} accessibilityRole="button">
-            <Text style={styles.signInText}>Sign in</Text>
+          <TouchableOpacity style={styles.signIn} onPress={() => requireSignIn(() => {}, { title: t.welcomeBack, subtitle: t.signInWithPhone })} accessibilityRole="button">
+            <Text style={styles.signInText}>{t.signIn}</Text>
           </TouchableOpacity>
         ) : (
         <TouchableOpacity
           style={[styles.iconBtn, tint ? styles.onTint : null]}
-          onPress={() => requireSignIn(() => router.push({ pathname: "/notifications", params: { audience: "customer" } }), { title: "Sign in to see notifications" })}
+          onPress={() => requireSignIn(() => router.push({ pathname: "/notifications", params: { audience: "customer" } }), { title: t.signInForNotifications })}
           accessibilityRole="button"
-          accessibilityLabel="Notifications"
+          accessibilityLabel={t.notifications}
         >
           <Ionicons name="notifications-outline" size={20} color={colors.text} />
           {unreadCount > 0 && (

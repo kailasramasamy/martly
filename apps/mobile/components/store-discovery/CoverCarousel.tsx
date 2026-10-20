@@ -3,6 +3,7 @@ import { View, Text, Image, FlatList, Pressable, StyleSheet, type LayoutChangeEv
 import { LinearGradient } from "expo-linear-gradient";
 import { colors, fonts } from "../../constants/theme";
 import { recordBannerTap, recordBannerView } from "../../lib/banner-events";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { Store } from "../../lib/types";
 import type { StoreBranding } from "./branding";
 
@@ -29,6 +30,7 @@ function pagesOf(store: Store): Page[] {
 
 /** The store's photo, banners and promo posters, swiped by hand; posters are shown whole on the brand colour, never cropped */
 export function CoverCarousel({ store, brand, height, overlay, onBannerPress, onPosterPress }: CoverCarouselProps) {
+  const t = useStrings("home");
   const [width, setWidth] = useState(0);
   const [index, setIndex] = useState(0);
   const pages = pagesOf(store);
@@ -56,7 +58,7 @@ export function CoverCarousel({ store, brand, height, overlay, onBannerPress, on
             const onPress = banner && onBannerPress ? () => { recordBannerTap(store.id, banner.id); onBannerPress(banner); } : item.poster && onPosterPress ? () => onPosterPress(item.uri) : undefined;
             return (
               <Pressable onPress={onPress} disabled={!onPress} style={{ width, height, backgroundColor: item.poster ? brand.color : undefined }}
-                accessibilityRole={onPress ? "imagebutton" : "image"} accessibilityLabel={banner ? "Offer banner" : item.poster ? "Store poster" : "Store photo"}>
+                accessibilityRole={onPress ? "imagebutton" : "image"} accessibilityLabel={banner ? t.offerBanner : item.poster ? t.storePoster : t.storePhoto}>
                 <Image source={{ uri: item.uri }} style={StyleSheet.absoluteFill} resizeMode={item.poster ? "contain" : "cover"} />
               </Pressable>
             );
@@ -67,7 +69,7 @@ export function CoverCarousel({ store, brand, height, overlay, onBannerPress, on
       <View style={styles.overlay} pointerEvents="none">{overlay}</View>
       {pages.length > 1 && (
         <View style={styles.footer} pointerEvents="none">
-          {offers > 0 && index === 0 && <Text style={styles.hint}>Swipe for {offers} offer{offers === 1 ? "" : "s"}</Text>}
+          {offers > 0 && index === 0 && <Text style={styles.hint}>{t.swipeForOffers(offers)}</Text>}
           <View style={styles.dots}>
             {pages.map((p, i) => <View key={p.key} style={[styles.dot, i === index && styles.dotActive]} />)}
           </View>
@@ -79,8 +81,9 @@ export function CoverCarousel({ store, brand, height, overlay, onBannerPress, on
 
 /** Marks a store whose card carries promo posters */
 export function OffersTag({ store }: { store: Store }) {
+  const t = useStrings("home");
   if (!store.promoImages?.length) return null;
-  return <Text style={styles.offersTag}>Offers</Text>;
+  return <Text style={styles.offersTag}>{t.offers}</Text>;
 }
 
 const styles = StyleSheet.create({

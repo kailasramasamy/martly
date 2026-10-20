@@ -2,6 +2,7 @@ import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { Animated, Dimensions, Pressable, StyleSheet, Text, type NativeScrollEvent, type NativeSyntheticEvent } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 // Offered once the shopper is a couple of screens down
 const SHOW_AFTER = Dimensions.get("window").height * 2;
@@ -27,6 +28,7 @@ interface Props {
 }
 
 export const BackToTopPill = memo(function BackToTopPill({ visible, top, onPress }: Props) {
+  const t = useStrings("home");
   const shown = useRef(new Animated.Value(0)).current;
   useEffect(() => {
     Animated.spring(shown, { toValue: visible ? 1 : 0, friction: 8, tension: 90, useNativeDriver: true }).start();
@@ -38,9 +40,9 @@ export const BackToTopPill = memo(function BackToTopPill({ visible, top, onPress
       style={[styles.wrap, { top, opacity: shown, transform: [{ translateY }] }]}
       pointerEvents={visible ? "box-none" : "none"}
     >
-      <Pressable onPress={onPress} style={styles.pill} accessibilityRole="button" accessibilityLabel="Back to top">
+      <Pressable onPress={onPress} style={styles.pill} accessibilityRole="button" accessibilityLabel={t.backToTop}>
         <Ionicons name="arrow-up" size={14} color="#fff" />
-        <Text style={styles.text}>Back to top</Text>
+        <Text style={styles.text}>{t.backToTop}</Text>
       </Pressable>
     </Animated.View>
   );

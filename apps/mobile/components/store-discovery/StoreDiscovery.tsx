@@ -4,6 +4,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useStore } from "../../lib/store-context";
 import { useAuth } from "../../lib/auth-context";
+import { useStrings } from "../../lib/i18n/use-strings";
+import { strings } from "../../lib/i18n";
 import type { Store } from "../../lib/types";
 import { StoreBrowser } from "./StoreBrowser";
 import { ChooseStoreButton } from "./ChooseStoreButton";
@@ -44,6 +46,7 @@ interface HeroProps {
 }
 
 function Hero({ firstName, headline, onEnableLocation }: HeroProps) {
+  const t = useStrings("home");
   return (
     <View style={styles.hero}>
       <View style={[styles.heroOrb, styles.heroOrbLarge]} />
@@ -56,7 +59,7 @@ function Hero({ firstName, headline, onEnableLocation }: HeroProps) {
       {onEnableLocation && (
         <Pressable style={({ pressed }) => [styles.heroBtn, pressed && { opacity: 0.85 }]} onPress={onEnableLocation}>
           <Ionicons name="navigate" size={15} color={colors.primary} />
-          <Text style={styles.heroBtnText}>Enable location</Text>
+          <Text style={styles.heroBtnText}>{t.enableLocation}</Text>
         </Pressable>
       )}
     </View>
@@ -64,11 +67,10 @@ function Hero({ firstName, headline, onEnableLocation }: HeroProps) {
 }
 
 function headlineFor(locationDenied: boolean, deliverable: Store[]): string {
-  if (locationDenied) return "Turn on location to see the stores that deliver to you.";
-  if (deliverable.length === 0) return "We don't deliver to your location yet, but you can still browse our stores.";
-  const fastest = fastestFirst(deliverable)[0].expressEtaMinutes;
-  const count = deliverable.length === 1 ? "1 store delivers" : `${deliverable.length} stores deliver`;
-  return fastest ? `${count} to you, the fastest in ${fastest} minutes.` : `${count} to you.`;
+  const t = strings("home");
+  if (locationDenied) return t.turnOnLocation;
+  if (deliverable.length === 0) return t.noDelivery;
+  return t.storesDeliver(deliverable.length, fastestFirst(deliverable)[0].expressEtaMinutes);
 }
 
 /** Stores in the order shoppers should see them: those that deliver (fastest first), else every store, then the rest */
@@ -86,6 +88,7 @@ function browseOrder(stores: Store[], nearbyStores: Store[]) {
 export default function StoreDiscovery() {
   const { stores, nearbyStores, locationStatus, requestLocation, setSelectedStore } = useStore();
   const { user } = useAuth();
+  const t = useStrings("home");
   const [previewId, setPreviewId] = useState<string | null>(null);
   const { deliverable, ordered, blocked } = browseOrder(stores, nearbyStores);
   const preview = ordered.find((s) => s.id === previewId) ?? ordered[0];
@@ -100,8 +103,8 @@ export default function StoreDiscovery() {
     return (
       <View style={styles.empty}>
         <Ionicons name="storefront-outline" size={40} color={colors.primary} />
-        <Text style={styles.emptyTitle}>No stores yet</Text>
-        <Text style={styles.emptyText}>Martly is coming to your area soon. Pull down to check again.</Text>
+        <Text style={styles.emptyTitle}>{t.noStoresYet}</Text>
+        <Text style={styles.emptyText}>{t.comingSoon}</Text>
       </View>
     );
   }
@@ -116,12 +119,12 @@ export default function StoreDiscovery() {
         />
       </FadeIn>
       <FadeIn index={1}>
-        <SectionTitle title="Choose your store" caption="Tap a store to see its offers and delivery slots" />
+        <SectionTitle title={t.chooseYourStore} caption={t.tapStoreCaption} />
         <StoreBrowser stores={ordered} activeId={preview?.id ?? null} onPreview={(st) => setPreviewId(st.id)} isMuted={(st) => blocked.has(st.id)} inset={16} onBannerPress={tapOffer} />
       </FadeIn>
       {preview && (
         <FadeIn index={2}>
-          <ChooseStoreButton store={preview} blockedReason={blocked.has(preview.id) ? "Doesn't deliver to your location yet" : null} onChoose={setSelectedStore} />
+          <ChooseStoreButton store={preview} blockedReason={blocked.has(preview.id) ? t.notDeliverYet : null} onChoose={setSelectedStore} />
         </FadeIn>
       )}
     </View>

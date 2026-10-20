@@ -6,6 +6,7 @@ import { colors, fonts } from "../../../../constants/theme";
 import { useCart } from "../../../../lib/cart-context";
 import { offerCondition } from "../../../../lib/coupon-offer";
 import { useToast } from "../../../../lib/toast-context";
+import { useStrings } from "../../../../lib/i18n/use-strings";
 import { useHomeSectionEnv } from "../context";
 
 const TICKET_WIDTH = 248;
@@ -29,16 +30,17 @@ interface TicketProps {
 
 /** A short coupon ticket: the saving on an amber stub (offers are always amber), a tear line, then what it is */
 const Ticket = memo(function Ticket({ offer, saved, band, onSave }: TicketProps) {
+  const t = useStrings("home");
   return (
     <Pressable
       onPress={() => onSave(offer.code)}
       style={({ pressed }) => [styles.ticket, pressed && styles.pressed]}
       accessibilityRole="button"
-      accessibilityLabel={saved ? `${offer.title}, saved for checkout` : `${offer.title}. Tap to save for checkout`}
+      accessibilityLabel={saved ? t.savedA11y(offer.title) : t.tapToSaveA11y(offer.title)}
     >
       <View style={styles.stub}>
         <Text style={styles.stubValue} numberOfLines={1} adjustsFontSizeToFit>{stubValue(offer)}</Text>
-        <Text style={styles.stubOff}>OFF</Text>
+        <Text style={styles.stubOff}>{t.off}</Text>
       </View>
       <View style={styles.tear}>
         <View style={[styles.notch, styles.notchTop, { backgroundColor: band.background }]} />
@@ -50,7 +52,7 @@ const Ticket = memo(function Ticket({ offer, saved, band, onSave }: TicketProps)
         <Text style={styles.condition} numberOfLines={1}>{offerCondition(offer)}</Text>
         <View style={styles.status}>
           <Ionicons name={saved ? "checkmark-circle" : "bookmark-outline"} size={13} color={saved ? colors.success : colors.textSecondary} />
-          <Text style={[styles.statusText, saved && styles.savedText]}>{saved ? "Saved for checkout" : "Tap to save"}</Text>
+          <Text style={[styles.statusText, saved && styles.savedText]}>{saved ? t.savedForCheckout : t.tapToSave}</Text>
         </View>
       </View>
     </Pressable>
@@ -66,20 +68,21 @@ export const OffersSection = memo(function OffersSection({ section }: { section:
   const { festiveTheme, afterHeroId } = useHomeSectionEnv();
   const { pendingCoupon, setPendingCoupon } = useCart();
   const toast = useToast();
+  const t = useStrings("home");
   const band = afterHeroId === section.id && festiveTheme ? festiveTheme : PLAIN;
   const ink = band === PLAIN ? PLAIN.title : "#ffffff";
 
   const save = useCallback((code: string) => {
     setPendingCoupon(code);
-    toast.show(`${code} will be applied at checkout`, "success");
-  }, [setPendingCoupon, toast]);
+    toast.show(t.couponApplied(code), "success");
+  }, [setPendingCoupon, toast, t]);
 
   if (offers.length === 0) return null;
   return (
     <View style={[styles.band, { backgroundColor: band.background }, band !== PLAIN && styles.joined]}>
       <View style={styles.label}>
         <Ionicons name="sparkles" size={12} color={ink} />
-        <Text style={[styles.labelText, { color: ink }]}>{`OFFERS FOR YOU · ${offers.length}`}</Text>
+        <Text style={[styles.labelText, { color: ink }]}>{t.offersForYou(offers.length)}</Text>
       </View>
       <FlatList
         horizontal

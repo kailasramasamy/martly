@@ -2,6 +2,7 @@ import { memo } from "react";
 import { Pressable, StyleSheet, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../../constants/theme";
+import { useStrings } from "../../../lib/i18n/use-strings";
 
 interface Props {
   onPress: () => void;
@@ -10,15 +11,17 @@ interface Props {
 }
 
 /** Full-width pill under a section that opens everything behind it */
-export const SeeAllButton = memo(function SeeAllButton({ onPress, label = "See all" }: Props) {
+export const SeeAllButton = memo(function SeeAllButton({ onPress, label }: Props) {
+  const c = useStrings("common");
+  const text = label ?? c.seeAll;
   return (
     <Pressable
       onPress={onPress}
       accessibilityRole="button"
-      accessibilityLabel={label}
+      accessibilityLabel={text}
       style={({ pressed }) => [styles.pill, pressed && styles.pressed]}
     >
-      <Text style={styles.text}>{label}</Text>
+      <Text style={styles.text}>{text}</Text>
       <Ionicons name="caret-forward" size={11} color={colors.primary} />
     </Pressable>
   );

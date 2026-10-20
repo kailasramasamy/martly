@@ -19,6 +19,9 @@ export function BrandingCard() {
       <Form.Item label="Brand colour" name="brandColor" tooltip="Usually the main colour of the logo" getValueFromEvent={(_: unknown, hex: string) => hex || null}>
         <ColorPicker showText allowClear disabledAlpha format="hex" />
       </Form.Item>
+      <Form.Item label="Store name (Tamil)" name={["translations", "ta", "name"]} tooltip="Shown to shoppers using the app in Tamil">
+        <Input maxLength={80} placeholder="தமிழில் கடையின் பெயர்" />
+      </Form.Item>
       <Row gutter={12}>
         <Col xs={24} md={12}>
           <Form.Item label="Tagline" name="tagline" normalize={blankToNull}><Input maxLength={80} showCount placeholder="Great products at great prices" /></Form.Item>
