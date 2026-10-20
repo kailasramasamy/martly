@@ -4,11 +4,15 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
 import { colors, spacing } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
+import { useLanguage } from "../../lib/language-context";
 import type { ReturnLineSummary, ReturnLinesGroup } from "../../lib/types";
 import { replacementNote } from "./replacement-copy";
 
 
 function ReplacementRow({ line, group }: { line: ReturnLineSummary; group: ReturnLinesGroup }) {
+  const t = useStrings("orders").item;
+  const { getLocalizedName } = useLanguage();
   const { product, variant } = line.orderItem;
   const image = variant?.imageUrl ?? product.imageUrl ?? product.images?.[0];
   return (
@@ -19,15 +23,15 @@ function ReplacementRow({ line, group }: { line: ReturnLineSummary; group: Retur
       <View style={styles.info}>
         <View style={styles.tag}>
           <Ionicons name="refresh" size={11} color="#15803d" />
-          <Text style={styles.tagText}>Replacement</Text>
+          <Text style={styles.tagText}>{t.replacement}</Text>
         </View>
-        <Text style={styles.name} numberOfLines={2}>{product.name}</Text>
-        <Text style={styles.variant}>{variant ? `${variant.name} · ` : ""}Qty {line.quantity}</Text>
+        <Text style={styles.name} numberOfLines={2}>{getLocalizedName(product)}</Text>
+        <Text style={styles.variant}>{variant ? `${variant.name} · ` : ""}{t.qty(line.quantity)}</Text>
         <Text style={styles.why}>{replacementNote(group.reason, group.orderId)}</Text>
       </View>
       <View style={styles.price}>
         <Text style={styles.paid}>{"₹"}0</Text>
-        <Text style={styles.was}>Paid earlier</Text>
+        <Text style={styles.was}>{t.paidEarlier}</Text>
       </View>
     </View>
   );

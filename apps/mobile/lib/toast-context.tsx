@@ -1,13 +1,21 @@
 import { createContext, useContext, useCallback, useRef, useState } from "react";
-import { Animated, View, Text, StyleSheet, Platform } from "react-native";
+import { Animated, View, Text, TouchableOpacity, StyleSheet, Platform } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 
 type ToastVariant = "default" | "info" | "success" | "error";
 
-interface ToastContextType {
-  show: (message: string, variant?: ToastVariant) => void;
+/** A button on the toast, e.g. Undo; the toast stays a little longer so there's time to tap it */
+interface ToastAction {
+  label: string;
+  onPress: () => void;
 }
+
+interface ToastContextType {
+  show: (message: string, variant?: ToastVariant, action?: ToastAction) => void;
+}
+
+const ACTION_VISIBLE_MS = 4500;
 
 const ToastContext = createContext<ToastContextType>({ show: () => {} });
 
@@ -29,12 +37,21 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   const [, forceRender] = useState(0);
   const messageRef = useRef("");
   const variantRef = useRef<ToastVariant>("default");
+  const actionRef = useRef<ToastAction | undefined>(undefined);
   const opacity = useRef(new Animated.Value(0)).current;
   const translateY = useRef(new Animated.Value(20)).current;
   const hideTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const lastShowTime = useRef(0);
 
-  const show = useCallback((msg: string, v: ToastVariant = "default") => {
+  const hide = useCallback(() => {
+    actionRef.current = undefined;
+    Animated.parallel([
+      Animated.timing(opacity, { toValue: 0, duration: 300, useNativeDriver: true }),
+      Animated.timing(translateY, { toValue: 20, duration: 300, useNativeDriver: true }),
+    ]).start(() => forceRender((n) => n + 1));
+  }, [opacity, translateY]);
+
+  const show = useCallback((msg: string, v: ToastVariant = "default", action?: ToastAction) => {
     const now = Date.now();
     const elapsed = now - lastShowTime.current;
     lastShowTime.current = now;
@@ -42,15 +59,11 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
     // Update content
     messageRef.current = msg;
     variantRef.current = v;
+    actionRef.current = action;
 
     // Reset hide timer
     if (hideTimer.current) clearTimeout(hideTimer.current);
-    hideTimer.current = setTimeout(() => {
-      Animated.parallel([
-        Animated.timing(opacity, { toValue: 0, duration: 300, useNativeDriver: true }),
-        Animated.timing(translateY, { toValue: 20, duration: 300, useNativeDriver: true }),
-      ]).start();
-    }, visibleFor(msg, v));
+    hideTimer.current = setTimeout(hide, action ? Math.max(ACTION_VISIBLE_MS, visibleFor(msg, v)) : visibleFor(msg, v));
 
     if (elapsed < 500) {
       // Toast already visible — just swap content, no animation
@@ -71,20 +84,31 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
         Animated.timing(translateY, { toValue: 0, duration: 200, useNativeDriver: true }),
       ]).start();
     });
-  }, [opacity, translateY]);
+  }, [opacity, translateY, hide]);
 
   const config = VARIANT_CONFIG[variantRef.current];
+  const action = actionRef.current;
+  const runAction = () => {
+    if (hideTimer.current) clearTimeout(hideTimer.current);
+    action?.onPress();
+    hide();
+  };
 
   return (
     <ToastContext.Provider value={{ show }}>
       {children}
       <Animated.View
-        pointerEvents="none"
+        pointerEvents={action ? "box-none" : "none"}
         style={[styles.wrapper, { bottom: insets.bottom + 72, opacity, transform: [{ translateY }] }]}
       >
         <View style={[styles.card, { backgroundColor: config.bg }]} accessibilityLiveRegion="polite">
           <Ionicons name={config.icon} size={18} color={config.iconColor} style={styles.icon} />
           <Text style={styles.text}>{messageRef.current}</Text>
+          {action ? (
+            <TouchableOpacity onPress={runAction} hitSlop={{ top: 12, bottom: 12, left: 12, right: 12 }} accessibilityRole="button">
+              <Text style={styles.action}>{action.label}</Text>
+            </TouchableOpacity>
+          ) : null}
         </View>
       </Animated.View>
     </ToastContext.Provider>
@@ -115,6 +139,7 @@ const styles = StyleSheet.create({
     }),
   },
   icon: { marginTop: 0.5 },
+  action: { color: "#fbbf24", fontSize: 13.5, lineHeight: 19, fontWeight: "800", marginLeft: 6 },
   text: {
     flexShrink: 1,
     color: "#fff",

@@ -1,8 +1,14 @@
 import { useEffect, useRef } from "react";
 import { View, Animated, StyleSheet } from "react-native";
 import { colors } from "../constants/theme";
+import { useStrings } from "../lib/i18n/use-strings";
+import { useLanguage } from "../lib/language-context";
 
-const wordmark = require("../assets/splash-wordmark.png");
+// Same letter height in both scripts; the Tamil word runs wider
+const WORDMARKS = {
+  en: { source: require("../assets/splash-wordmark.png"), width: 200, height: 81 },
+  ta: { source: require("../assets/splash-wordmark-ta.png"), width: 255, height: 86 },
+};
 
 interface SplashScreenProps {
   onFinish: () => void;
@@ -10,6 +16,9 @@ interface SplashScreenProps {
 }
 
 export default function SplashScreen({ onFinish, onBeforeFadeOut }: SplashScreenProps) {
+  const t = useStrings("auth");
+  const { language } = useLanguage();
+  const wordmark = language === "ta" ? WORDMARKS.ta : WORDMARKS.en;
   const iconScale = useRef(new Animated.Value(0)).current;
   const iconOpacity = useRef(new Animated.Value(0)).current;
   const subtitleOpacity = useRef(new Animated.Value(0)).current;
@@ -60,13 +69,13 @@ export default function SplashScreen({ onFinish, onBeforeFadeOut }: SplashScreen
     <Animated.View style={[styles.container, { opacity: screenOpacity }]}>
       <View style={styles.content}>
         <Animated.Image
-          source={wordmark}
-          style={[styles.wordmark, { opacity: iconOpacity, transform: [{ scale: iconScale }] }]}
+          source={wordmark.source}
+          style={{ width: wordmark.width, height: wordmark.height, opacity: iconOpacity, transform: [{ scale: iconScale }] }}
           resizeMode="contain"
         />
 
-        <Animated.Text style={[styles.subtitle, { opacity: subtitleOpacity }]}>
-          Your local stores, delivered
+        <Animated.Text style={[styles.subtitle, { top: wordmark.height + 16, opacity: subtitleOpacity }]}>
+          {t.tagline}
         </Animated.Text>
       </View>
     </Animated.View>
@@ -84,15 +93,10 @@ const styles = StyleSheet.create({
   content: {
     alignItems: "center",
   },
-  wordmark: {
-    width: 200,
-    height: 81,
-  },
   subtitle: {
     fontSize: 17,
     color: "rgba(255, 255, 255, 0.85)",
     position: "absolute",
-    top: 97,
     width: 300,
     textAlign: "center",
     fontWeight: "500",

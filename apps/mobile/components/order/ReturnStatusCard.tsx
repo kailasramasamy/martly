@@ -6,6 +6,7 @@ import { RETURN_COLLECT_DAYS, RETURN_EXPIRY_DAYS, RETURN_WINDOW_HOURS } from "@m
 import { deliveredAt } from "@martly/shared/order-flow";
 import { api } from "../../lib/api";
 import { useToast } from "../../lib/toast-context";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import type { ReturnRequestData } from "../../lib/types";
 
@@ -17,66 +18,60 @@ const STATUS_COLORS: Record<ReturnRequestData["status"], string> = {
   EXPIRED: colors.textSecondary,
 };
 
-const STATUS_LABELS: Record<ReturnRequestData["status"], string> = {
-  PENDING: "Pending review",
-  IN_PROGRESS: "In progress",
-  APPROVED: "Completed",
-  REJECTED: "Rejected",
-  EXPIRED: "Closed",
-};
-
 const money = (v: string | number) => `₹${Number(v).toFixed(0)}`;
 
 function InProgress({ request, onSwitch, busy }: { request: ReturnRequestData; onSwitch: (m: "NEXT_ORDER" | "AT_STORE") => void; busy: boolean }) {
+  const t = useStrings("orders").returns;
   const isReplace = request.remedy === "REPLACE";
   if (request.method === "KEEP") {
-    return <Text style={styles.headline}>No need to return it. A free replacement comes with your next order.</Text>;
+    return <Text style={styles.headline}>{t.keepFreeReplacement}</Text>;
   }
   if (request.method === "AT_STORE") {
     const { store } = request;
     return (
       <>
-        <Text style={styles.headline}>Drop the item at {store?.name ?? "the store"}</Text>
+        <Text style={styles.headline}>{t.dropAt(store?.name)}</Text>
         {store?.address && <Text style={styles.detail}>{store.address}</Text>}
         <Text style={styles.detail}>
-          {isReplace ? "Your replacement comes with your next order. " : ""}The return closes {RETURN_EXPIRY_DAYS} days after approval if the item isn{"’"}t returned.
+          {t.atStoreDetail(RETURN_EXPIRY_DAYS, isReplace, request.refundTo === "CASH" ? money(request.requestedAmount) : null)}
         </Text>
         {store?.phone && (
           <TouchableOpacity style={styles.callBtn} onPress={() => Linking.openURL(`tel:${store.phone}`)} activeOpacity={0.7}>
             <Ionicons name="call-outline" size={16} color={colors.primary} />
-            <Text style={styles.callBtnText}>Call store</Text>
+            <Text style={styles.callBtnText}>{t.callStore}</Text>
           </TouchableOpacity>
         )}
         <TouchableOpacity style={styles.link} disabled={busy} onPress={() => onSwitch("NEXT_ORDER")}>
-          <Text style={styles.linkText}>Collect with my next order instead</Text>
+          <Text style={styles.linkText}>{t.collectNextOrder}</Text>
         </TouchableOpacity>
       </>
     );
   }
   return (
     <>
-      <Text style={styles.headline}>Hand the item to our rider with your next order</Text>
+      <Text style={styles.headline}>{t.handToRider}</Text>
       <Text style={styles.detail}>
-        {isReplace ? "Replacement comes with your next order." : `${money(request.requestedAmount)} refund once we have it.`}
+        {isReplace ? t.replacementNextOrder : t.refundOnceWeHaveIt(money(request.requestedAmount), request.refundTo === "CASH")}
       </Text>
-      <Text style={styles.detail}>No order in {RETURN_COLLECT_DAYS} days? We{"’"}ll ask you to drop it at the store.</Text>
+      <Text style={styles.detail}>{t.noOrderInDays(RETURN_COLLECT_DAYS)}</Text>
       <TouchableOpacity style={styles.link} disabled={busy} onPress={() => onSwitch("AT_STORE")}>
-        <Text style={styles.linkText}>I{"’"}ll drop it at the store instead</Text>
+        <Text style={styles.linkText}>{t.dropAtStoreInstead}</Text>
       </TouchableOpacity>
     </>
   );
 }
 
 function Outcome({ request }: { request: ReturnRequestData }) {
+  const t = useStrings("orders").returns;
   if (request.status === "APPROVED") {
     return (
       <Text style={[styles.headline, { color: "#15803d" }]}>
-        {request.remedy === "REPLACE" ? "Replacement sent" : `${money(request.approvedAmount ?? request.requestedAmount)} refunded to your wallet`}
+        {request.remedy === "REPLACE" ? t.replacementSent : t.refundedOutcome(money(request.approvedAmount ?? request.requestedAmount), request.refundTo === "CASH")}
       </Text>
     );
   }
   if (request.status === "EXPIRED") {
-    return <Text style={styles.headline}>Closed {"—"} the item wasn{"’"}t returned in time</Text>;
+    return <Text style={styles.headline}>{t.closedExpired}</Text>;
   }
   return null;
 }
@@ -90,6 +85,7 @@ export function ReturnStatusCard({ orderId, status, statusLogs, request, onChang
 }) {
   const router = useRouter();
   const toast = useToast();
+  const t = useStrings("orders").returns;
   const [busy, setBusy] = useState(false);
 
   const switchMethod = async (method: "NEXT_ORDER" | "AT_STORE") => {
@@ -97,13 +93,21 @@ export function ReturnStatusCard({ orderId, status, statusLogs, request, onChang
     setBusy(true);
     try {
       await api.patch(`/api/v1/return-requests/my-requests/${request.id}/method`, { method });
-      toast.show("Return method updated", "success");
+      toast.show(t.methodUpdated, "success");
       onChanged();
     } catch (e: unknown) {
-      toast.show(e instanceof Error ? e.message : "Couldn't update return method", "error");
+      toast.show(e instanceof Error ? e.message : t.methodFailed, "error");
     } finally {
       setBusy(false);
     }
+  };
+
+  const statusLabels: Record<ReturnRequestData["status"], string> = {
+    PENDING: t.statusPending,
+    IN_PROGRESS: t.statusInProgress,
+    APPROVED: t.statusCompleted,
+    REJECTED: t.statusRejected,
+    EXPIRED: t.statusClosed,
   };
 
   if (!request) {
@@ -112,7 +116,7 @@ export function ReturnStatusCard({ orderId, status, statusLogs, request, onChang
     return (
       <TouchableOpacity style={styles.returnBtn} onPress={() => router.push({ pathname: "/return-request", params: { orderId } })} activeOpacity={0.7}>
         <Ionicons name="return-down-back-outline" size={18} color={colors.primary} />
-        <Text style={styles.returnBtnText}>Request Return/Refund</Text>
+        <Text style={styles.returnBtnText}>{t.requestReturn}</Text>
       </TouchableOpacity>
     );
   }
@@ -120,15 +124,15 @@ export function ReturnStatusCard({ orderId, status, statusLogs, request, onChang
   return (
     <View style={styles.card}>
       <View style={styles.header}>
-        <Text style={styles.title}>Return Request</Text>
+        <Text style={styles.title}>{t.returnRequest}</Text>
         <View style={[styles.badge, { backgroundColor: STATUS_COLORS[request.status] }]}>
-          <Text style={styles.badgeText}>{STATUS_LABELS[request.status]}</Text>
+          <Text style={styles.badgeText}>{statusLabels[request.status]}</Text>
         </View>
       </View>
-      <Text style={styles.reason}>{request.reason}</Text>
+      <Text style={styles.reason}>{(t.reasons as Record<string, string>)[request.reason] ?? request.reason}</Text>
       {request.status === "PENDING" && (
         <View style={styles.amountRow}>
-          <Text style={styles.amountLabel}>Requested Amount</Text>
+          <Text style={styles.amountLabel}>{t.requestedAmount}</Text>
           <Text style={styles.amountValue}>{money(request.requestedAmount)}</Text>
         </View>
       )}

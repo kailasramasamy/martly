@@ -4,55 +4,67 @@ import { api, ApiError } from "../../lib/api";
 import { useCart } from "../../lib/cart-context";
 import { getBestPrice, useMembership } from "../../lib/membership-context";
 import { useToast } from "../../lib/toast-context";
-import type { OrderSummary, ReorderItems } from "./types";
+import { useStrings } from "../../lib/i18n/use-strings";
+import type { ReorderItems } from "./types";
 
-/** Puts a past order back in the cart at today's prices, asking first when the cart holds another store's items */
+/**
+ * Buy again from a past order: loads its items at today's prices for the shopper to pick from, then adds the picked
+ * ones to the cart, asking first when the cart holds another store's items
+ */
 export function useReorder() {
   const router = useRouter();
   const toast = useToast();
+  const t = useStrings("orders").reorder;
   const { storeId: cartStoreId, addItems } = useCart();
   const { isMember } = useMembership();
   const [reorderingId, setReorderingId] = useState<string | null>(null);
   const [pending, setPending] = useState<ReorderItems | null>(null);
+  const [choices, setChoices] = useState<ReorderItems | null>(null);
 
   const apply = useCallback((data: ReorderItems) => {
-    addItems(data.store.id, data.store.name, data.items.map(({ storeProduct: sp, quantity }) => ({
+    addItems(data.store, data.items.map(({ storeProduct: sp, quantity }) => ({
       storeProductId: sp.id,
       productId: sp.product.id,
       productName: sp.product.name,
+      translations: sp.product.translations,
       variantId: sp.variant.id,
       variantName: sp.variant.name,
       price: getBestPrice(sp, isMember),
       imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl ?? null,
       quantity,
     })));
-    const added = data.items.length;
-    const missing = data.unavailable.length;
-    toast.show(
-      missing ? `${added} item${added !== 1 ? "s" : ""} added · ${missing} not available now` : `${added} item${added !== 1 ? "s" : ""} added to cart`,
-      missing ? "info" : "success",
-    );
+    toast.show(t.added(data.items.length), "success");
     router.push("/(tabs)/cart");
-  }, [addItems, isMember, toast, router]);
+  }, [addItems, isMember, toast, router, t]);
 
-  const reorder = useCallback(async (order: OrderSummary) => {
-    setReorderingId(order.id);
+  const reorder = useCallback(async (orderId: string) => {
+    setReorderingId(orderId);
     try {
-      const { data } = await api.get<ReorderItems>(`/api/v1/orders/${order.id}/reorder-items`);
-      if (data.items.length === 0) toast.show("None of these items are available right now", "error");
-      else if (cartStoreId && cartStoreId !== data.store.id) setPending(data);
-      else apply(data);
+      const { data } = await api.get<ReorderItems>(`/api/v1/orders/${orderId}/reorder-items`);
+      if (data.items.length === 0) toast.show(t.noneAvailable, "error");
+      else setChoices(data);
     } catch (err) {
-      toast.show(err instanceof ApiError ? err.message : "Couldn't load this order. Check your connection.", "error");
+      toast.show(err instanceof ApiError ? err.message : t.loadFailed, "error");
     } finally {
       setReorderingId(null);
     }
-  }, [cartStoreId, apply, toast]);
+  }, [toast, t]);
+
+  const addPicked = useCallback((picked: ReorderItems["items"]) => {
+    if (!choices) return;
+    const data = { ...choices, items: picked };
+    setChoices(null);
+    if (cartStoreId && cartStoreId !== data.store.id) setPending(data);
+    else apply(data);
+  }, [choices, cartStoreId, apply]);
 
   const confirmReplace = useCallback(() => {
     if (pending) apply(pending);
     setPending(null);
   }, [pending, apply]);
 
-  return { reorderingId, reorder, pending, confirmReplace, dismissReplace: () => setPending(null) };
+  return {
+    reorderingId, reorder, choices, addPicked, closeChoices: () => setChoices(null),
+    pending, confirmReplace, dismissReplace: () => setPending(null),
+  };
 }

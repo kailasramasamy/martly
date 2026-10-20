@@ -3,6 +3,8 @@ import { View, Text, Image, FlatList, TouchableOpacity, ScrollView, StyleSheet }
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useCart } from "../../lib/cart-context";
+import { ConfirmSheet } from "../../components/ConfirmSheet";
+import { useCartRemoval } from "../../components/cart/use-cart-removal";
 import { useStore } from "../../lib/store-context";
 import { recordBannerTap, recordBannerView } from "../../lib/banner-events";
 import { useMembership } from "../../lib/membership-context";
@@ -15,14 +17,20 @@ import { TabBottomDock } from "../../components/TabIcon";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 import { RewardsReminder } from "../../components/cart/RewardsReminder";
 import { useRequireSignIn } from "../../lib/sign-in-context";
+import { useStrings } from "../../lib/i18n/use-strings";
+import { useLanguage } from "../../lib/language-context";
 
 export default function CartScreen() {
   const requireSignIn = useRequireSignIn();
+  const t = useStrings("cart");
+  const common = useStrings("common");
+  const { getLocalizedName } = useLanguage();
   const tabBarScroll = useTabBarAutoHide();
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
   const [dockHeight, setDockHeight] = useState(0);
   const router = useRouter();
-  const { storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem } = useCart();
+  const { store, storeId, storeName, items, totalAmount, itemCount, updateQuantity } = useCart();
+  const removal = useCartRemoval();
   const { selectedStore } = useStore();
   const { freeDelivery: memberFreeDelivery } = useMembership();
   const [upsellBanners, setUpsellBanners] = useState<Banner[]>([]);
@@ -90,20 +98,18 @@ export default function CartScreen() {
         <View style={styles.emptyIcon}>
           <Ionicons name="cart-outline" size={64} color={colors.border} />
         </View>
-        <Text style={styles.emptyTitle}>Your cart is empty</Text>
-        <Text style={styles.emptySubtitle}>
-          Browse stores and add items to get started
-        </Text>
+        <Text style={styles.emptyTitle}>{t.emptyTitle}</Text>
+        <Text style={styles.emptySubtitle}>{t.emptySubtitle}</Text>
         <TouchableOpacity style={styles.browseButton} onPress={() => router.push("/(tabs)")}>
           <Ionicons name="storefront-outline" size={18} color="#fff" />
-          <Text style={styles.browseButtonText}>Browse Stores</Text>
+          <Text style={styles.browseButtonText}>{t.browseStores}</Text>
         </TouchableOpacity>
       </View>
     );
   }
 
   return (
-    <ProductActionsProvider store={storeId ? { id: storeId, name: storeName ?? "" } : null}>
+    <ProductActionsProvider store={store}>
       <View style={styles.container}>
         {/* Store Header */}
         <View style={styles.storeHeader}>
@@ -112,8 +118,11 @@ export default function CartScreen() {
           </View>
           <View style={styles.storeInfo}>
             <Text style={styles.storeName}>{storeName}</Text>
-            <Text style={styles.itemCountLabel}>{itemCount} item{itemCount !== 1 ? "s" : ""} in cart</Text>
+            <Text style={styles.itemCountLabel}>{t.itemsInCart(itemCount)}</Text>
           </View>
+          <TouchableOpacity style={styles.clearBtn} onPress={removal.askClear} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }} accessibilityRole="button">
+            <Text style={styles.clearText}>{t.clearCart}</Text>
+          </TouchableOpacity>
         </View>
 
         {/* Nudge Banners */}
@@ -121,7 +130,7 @@ export default function CartScreen() {
           <View style={styles.nudgeBanner}>
             <Ionicons name="alert-circle" size={18} color="#c2410c" />
             <Text style={styles.nudgeText}>
-              Add {"\u20B9"}{(minOrderAmount! - totalAmount).toFixed(0)} more to place your order (min {"\u20B9"}{minOrderAmount!.toFixed(0)})
+              {t.belowMinimum((minOrderAmount! - totalAmount).toFixed(0), minOrderAmount!.toFixed(0))}
             </Text>
           </View>
         )}
@@ -129,7 +138,7 @@ export default function CartScreen() {
           <View style={styles.freeDeliveryNudge}>
             <Ionicons name="bicycle" size={18} color={colors.primary} />
             <Text style={styles.freeDeliveryNudgeText}>
-              Add {"\u20B9"}{(freeDeliveryThreshold! - totalAmount).toFixed(0)} more for free delivery
+              {t.belowFreeDelivery((freeDeliveryThreshold! - totalAmount).toFixed(0))}
             </Text>
           </View>
         )}
@@ -161,7 +170,7 @@ export default function CartScreen() {
               </ScrollView>
             ) : null
           }
-          renderItem={({ item }) => (
+          renderItem={({ item, index }) => (
             <View style={styles.card}>
               <View style={styles.cardBody}>
                 {item.imageUrl ? (
@@ -172,7 +181,7 @@ export default function CartScreen() {
                   </View>
                 )}
                 <View style={styles.cardMiddle}>
-                  <Text style={styles.itemName} numberOfLines={2}>{item.productName}</Text>
+                  <Text style={styles.itemName} numberOfLines={2}>{getLocalizedName({ name: item.productName, translations: item.translations })}</Text>
                   <Text style={styles.itemVariant}>{item.variantName}</Text>
                   <Text style={styles.itemPrice}>
                     {"\u20B9"}{item.price.toFixed(0)}
@@ -182,7 +191,7 @@ export default function CartScreen() {
                   <View style={styles.qtyStepper}>
                     <TouchableOpacity
                       style={styles.qtyBtn}
-                      onPress={() => updateQuantity(item.storeProductId, item.quantity - 1)}
+                      onPress={() => (item.quantity === 1 ? removal.removeAt(index) : updateQuantity(item.storeProductId, item.quantity - 1))}
                       hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
                     >
                       <Ionicons
@@ -211,39 +220,39 @@ export default function CartScreen() {
             <View>
             {alsoBought.length > 0 && (
               <View style={styles.alsoBoughtSection}>
-                <Text style={styles.alsoBoughtTitle}>Customers Also Bought</Text>
+                <Text style={styles.alsoBoughtTitle}>{t.alsoBought}</Text>
                 <ProductList products={alsoBought} layout="rail" />
               </View>
             )}
             <RewardsReminder storeId={storeId ?? undefined} />
             <View style={styles.billSection}>
-              <Text style={styles.billTitle}>Bill Details</Text>
+              <Text style={styles.billTitle}>{t.billDetails}</Text>
               <View style={styles.billCard}>
                 <View style={styles.billRow}>
-                  <Text style={styles.billLabel}>Item total</Text>
+                  <Text style={styles.billLabel}>{t.itemTotal}</Text>
                   <Text style={styles.billValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
                 </View>
                 <View style={styles.billRow}>
-                  <Text style={styles.billLabel}>Delivery fee</Text>
+                  <Text style={styles.billLabel}>{t.deliveryFee}</Text>
                   {cartFreeDelivery ? (
                     <View style={styles.freeDeliveryTag}>
-                      <Text style={styles.billFree}>FREE</Text>
+                      <Text style={styles.billFree}>{common.free}</Text>
                       {memberFreeDelivery && (
                         <View style={styles.memberBadge}>
                           <Ionicons name="star" size={10} color="#7c3aed" />
-                          <Text style={styles.memberBadgeText}>PLUS</Text>
+                          <Text style={styles.memberBadgeText}>{t.plus}</Text>
                         </View>
                       )}
                     </View>
                   ) : baseDeliveryFee > 0 ? (
                     <Text style={styles.billValue}>{"\u20B9"}{baseDeliveryFee.toFixed(0)}</Text>
                   ) : (
-                    <Text style={styles.billMuted}>At checkout</Text>
+                    <Text style={styles.billMuted}>{t.atCheckout}</Text>
                   )}
                 </View>
                 <View style={styles.billDivider} />
                 <View style={styles.billRow}>
-                  <Text style={styles.billGrandLabel}>Grand Total</Text>
+                  <Text style={styles.billGrandLabel}>{t.grandTotal}</Text>
                   <Text style={styles.billGrandValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
                 </View>
               </View>
@@ -258,21 +267,31 @@ export default function CartScreen() {
           <TouchableOpacity
             style={[styles.checkoutBar, belowMinimum && styles.checkoutBarDisabled]}
             activeOpacity={belowMinimum ? 1 : 0.9}
-            onPress={() => !belowMinimum && requireSignIn(() => router.push("/checkout"), { title: "Sign in to place your order", subtitle: "Your cart is saved. Enter your phone number to check out." })}
+            onPress={() => !belowMinimum && requireSignIn(() => router.push("/checkout"), { title: t.signInTitle, subtitle: t.signInSubtitle })}
           >
             <View style={styles.checkoutLeft}>
               <Text style={styles.checkoutTotal}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
-              <Text style={styles.checkoutSubtext}>TOTAL</Text>
+              <Text style={styles.checkoutSubtext}>{t.total}</Text>
             </View>
             <View style={styles.checkoutRight}>
               <Text style={styles.checkoutBtnText}>
-                {belowMinimum ? `Min \u20B9${minOrderAmount!.toFixed(0)}` : "Checkout"}
+                {belowMinimum ? t.minOrder(minOrderAmount!.toFixed(0)) : t.checkout}
               </Text>
               <Ionicons name={belowMinimum ? "lock-closed" : "arrow-forward"} size={18} color="#fff" />
             </View>
           </TouchableOpacity>
         </View>
         </TabBottomDock>
+        <ConfirmSheet
+          visible={removal.confirmClear}
+          title={t.clearTitle}
+          message={t.clearMessage(itemCount)}
+          icon="trash-outline"
+          iconColor="#ef4444"
+          confirmLabel={t.clearConfirm}
+          onConfirm={removal.clearAll}
+          onCancel={removal.cancelClear}
+        />
       </View>
     </ProductActionsProvider>
   );
@@ -382,7 +401,9 @@ const styles = StyleSheet.create({
     color: colors.primary,
     lineHeight: 18,
   },
-  storeInfo: { marginLeft: 12 },
+  storeInfo: { marginLeft: 12, flex: 1 },
+  clearBtn: { minHeight: 44, justifyContent: "center", paddingLeft: 12 },
+  clearText: { fontSize: fontSize.md, fontWeight: "700", color: colors.error },
   storeName: {
     fontSize: 15,
     fontWeight: "700",

@@ -1,16 +1,18 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, spacing, fontSize } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { ReturnLinesGroup } from "../../lib/types";
 
 export function PickupNotice({ pickups }: { pickups: ReturnLinesGroup[] }) {
+  const t = useStrings("orders").item;
   return (
     <>
       {pickups.map((p) => (
         <View key={p.id} style={styles.box}>
           <Ionicons name="return-down-back-outline" size={18} color="#92400e" />
           <Text style={styles.text}>
-            Keep the item from order #{p.orderId.slice(0, 8).toUpperCase()} ready {"—"} our rider will collect it
+            {t.pickupNotice(p.orderId.slice(0, 8).toUpperCase())}
           </Text>
         </View>
       ))}

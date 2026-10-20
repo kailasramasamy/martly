@@ -1,12 +1,16 @@
 import { createContext, useContext, useState, useCallback, useEffect, useMemo, type ReactNode } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useLanguage } from "./language-context";
+import type { Store, Translations } from "./types";
 
 const PENDING_COUPON_KEY = "martly_pending_coupon";
 
-interface CartItem {
+export interface CartItem {
   storeProductId: string;
   productId: string;
   productName: string;
+  /** The product's name in other languages; absent on carts saved before this was added */
+  translations?: Translations | null;
   variantId: string;
   variantName: string;
   price: number;
@@ -14,16 +18,27 @@ interface CartItem {
   imageUrl: string | null;
 }
 
+/** The cart's store, kept with its translations so the name follows the app language */
+export interface CartStore {
+  id: string;
+  name: string;
+  translations?: Store["translations"];
+}
+
 interface CartState {
+  store: CartStore | null;
   storeId: string | null;
+  /** In the app language */
   storeName: string | null;
   items: CartItem[];
-  addItem: (storeId: string, storeName: string, item: Omit<CartItem, "quantity">) => void;
+  addItem: (store: CartStore, item: Omit<CartItem, "quantity">) => void;
   /** Adds several lines at once, e.g. a reorder; a cart from another store is replaced */
-  addItems: (storeId: string, storeName: string, lines: CartItem[]) => void;
+  addItems: (store: CartStore, lines: CartItem[]) => void;
   removeItem: (storeProductId: string) => void;
   updateQuantity: (storeProductId: string, quantity: number) => void;
   clearCart: () => void;
+  /** Undo: puts back lines removed a moment ago at their old positions, unless the cart has moved to another store */
+  restoreItems: (store: CartStore, lines: { item: CartItem; index: number }[]) => void;
   totalAmount: number;
   itemCount: number;
   productQuantityMap: Map<string, number>;
@@ -35,8 +50,10 @@ interface CartState {
 const CartContext = createContext<CartState | null>(null);
 
 export function CartProvider({ children }: { children: ReactNode }) {
-  const [storeId, setStoreId] = useState<string | null>(null);
-  const [storeName, setStoreName] = useState<string | null>(null);
+  const { getLocalizedName } = useLanguage();
+  const [store, setStore] = useState<CartStore | null>(null);
+  const storeId = store?.id ?? null;
+  const storeName = store ? getLocalizedName(store) : null;
   const [items, setItems] = useState<CartItem[]>([]);
   const [pendingCoupon, setPendingCouponState] = useState<string | null>(null);
 
@@ -53,17 +70,15 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const addItem = useCallback(
-    (newStoreId: string, newStoreName: string, item: Omit<CartItem, "quantity">) => {
-      if (storeId && storeId !== newStoreId) {
+    (newStore: CartStore, item: Omit<CartItem, "quantity">) => {
+      if (storeId && storeId !== newStore.id) {
         // Different store — caller should have confirmed via Alert already
         setItems([{ ...item, quantity: 1 }]);
-        setStoreId(newStoreId);
-        setStoreName(newStoreName);
+        setStore(newStore);
         return;
       }
 
-      setStoreId(newStoreId);
-      setStoreName(newStoreName);
+      setStore(newStore);
       setItems((prev) => {
         const existing = prev.find((i) => i.storeProductId === item.storeProductId);
         if (existing) {
@@ -78,10 +93,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
   );
 
   const addItems = useCallback(
-    (newStoreId: string, newStoreName: string, lines: CartItem[]) => {
-      const replace = storeId !== newStoreId;
-      setStoreId(newStoreId);
-      setStoreName(newStoreName);
+    (newStore: CartStore, lines: CartItem[]) => {
+      const replace = storeId !== newStore.id;
+      setStore(newStore);
       setItems((prev) => {
         const next = replace ? [] : [...prev];
         for (const line of lines) {
@@ -99,8 +113,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setItems((prev) => {
       const next = prev.filter((i) => i.storeProductId !== storeProductId);
       if (next.length === 0) {
-        setStoreId(null);
-        setStoreName(null);
+        setStore(null);
       }
       return next;
     });
@@ -111,8 +124,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       setItems((prev) => {
         const next = prev.filter((i) => i.storeProductId !== storeProductId);
         if (next.length === 0) {
-          setStoreId(null);
-          setStoreName(null);
+          setStore(null);
         }
         return next;
       });
@@ -124,10 +136,24 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const clearCart = useCallback(() => {
-    setStoreId(null);
-    setStoreName(null);
+    setStore(null);
     setItems([]);
   }, []);
+
+  const restoreItems = useCallback(
+    (from: CartStore, lines: { item: CartItem; index: number }[]) => {
+      if (storeId && storeId !== from.id) return;
+      setStore(from);
+      setItems((prev) => {
+        const next = [...prev];
+        for (const { item, index } of [...lines].sort((a, b) => a.index - b.index)) {
+          if (!next.some((i) => i.storeProductId === item.storeProductId)) next.splice(Math.min(index, next.length), 0, item);
+        }
+        return next;
+      });
+    },
+    [storeId],
+  );
 
   const totalAmount = useMemo(() => items.reduce((sum, i) => sum + i.price * i.quantity, 0), [items]);
   const itemCount = useMemo(() => items.reduce((sum, i) => sum + i.quantity, 0), [items]);
@@ -141,7 +167,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   return (
     <CartContext.Provider
-      value={{ storeId, storeName, items, addItem, addItems, removeItem, updateQuantity, clearCart, totalAmount, itemCount, productQuantityMap, pendingCoupon, setPendingCoupon }}
+      value={{ store, storeId, storeName, items, addItem, addItems, removeItem, updateQuantity, clearCart, restoreItems, totalAmount, itemCount, productQuantityMap, pendingCoupon, setPendingCoupon }}
     >
       {children}
     </CartContext.Provider>

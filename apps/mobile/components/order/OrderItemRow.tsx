@@ -1,7 +1,10 @@
 import { View, Text, Image, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { RefuseReasonLabels, type RefuseReason } from "@martly/shared/constants";
+import type { RefuseReason } from "@martly/shared/constants";
 import { colors, spacing, fontSize } from "../../constants/theme";
+import { useLanguage } from "../../lib/language-context";
+import { useStrings } from "../../lib/i18n/use-strings";
+import type { Translations } from "../../lib/types";
 import { replacementNote } from "./replacement-copy";
 
 export interface OrderLine {
@@ -13,11 +16,13 @@ export interface OrderLine {
   refusedReason?: RefuseReason | null;
   replacesReturnId?: string | null;
   replacesReturn?: { orderId: string; reason: string } | null;
-  product: { name: string; imageUrl?: string | null };
+  product: { name: string; imageUrl?: string | null; translations?: Translations | null };
   variant?: { name: string; imageUrl?: string | null } | null;
 }
 
 export function OrderItemRow({ item, returnTag }: { item: OrderLine; returnTag?: string }) {
+  const t = useStrings("orders").item;
+  const { getLocalizedName } = useLanguage();
   const imageUrl = item.variant?.imageUrl || item.product.imageUrl;
   const refused = item.refusedQuantity ?? 0;
   return (
@@ -30,13 +35,13 @@ export function OrderItemRow({ item, returnTag }: { item: OrderLine; returnTag?:
         )}
       </View>
       <View style={styles.info}>
-        <Text style={styles.name} numberOfLines={2}>{item.product.name}</Text>
+        <Text style={styles.name} numberOfLines={2}>{getLocalizedName(item.product)}</Text>
         {item.variant && <Text style={styles.variant}>{item.variant.name}</Text>}
         {item.replacesReturn ? (
           <>
-            <Text style={styles.qty}>Qty {item.quantity}</Text>
+            <Text style={styles.qty}>{t.qty(item.quantity)}</Text>
             <View style={styles.freePill}>
-              <Text style={styles.freePillText}>Replacement</Text>
+              <Text style={styles.freePillText}>{t.replacement}</Text>
             </View>
             <Text style={styles.replacesNote}>{replacementNote(item.replacesReturn.reason, item.replacesReturn.orderId)}</Text>
           </>
@@ -50,13 +55,13 @@ export function OrderItemRow({ item, returnTag }: { item: OrderLine; returnTag?:
         )}
         {refused > 0 && (
           <Text style={styles.refused}>
-            {refused} handed back at door{item.refusedReason ? ` (${RefuseReasonLabels[item.refusedReason]})` : ""}
+            {t.handedBack(refused, item.refusedReason ? t.refuseReasons[item.refusedReason] : undefined)}
           </Text>
         )}
       </View>
       <View style={styles.priceCol}>
         <Text style={styles.price}>{"₹"}{Number(item.totalPrice).toFixed(0)}</Text>
-        {item.replacesReturn && <Text style={styles.paidEarlier}>Paid earlier</Text>}
+        {item.replacesReturn && <Text style={styles.paidEarlier}>{t.paidEarlier}</Text>}
       </View>
     </View>
   );

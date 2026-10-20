@@ -1,7 +1,9 @@
-import { Text, TouchableOpacity, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { returnState, type ReturnTone } from "@martly/shared/order-flow";
 import { colors, fontSize } from "../../constants/theme";
+import { strings, type Strings } from "../../lib/i18n";
+import { useStrings } from "../../lib/i18n/use-strings";
 
 const TONE_COLORS: Record<ReturnTone, string> = {
   pending: "#d97706",
@@ -13,36 +15,44 @@ const TONE_COLORS: Record<ReturnTone, string> = {
 
 interface Props {
   request: Parameters<typeof returnState>[0];
-  /** Makes the line tappable, e.g. to jump to the return card */
-  onPress?: () => void;
+}
+
+function stateLabel(request: Props["request"], t: Strings<"orders">["returns"]) {
+  switch (request.status) {
+    case "PENDING":
+      return t.stateRequested;
+    case "IN_PROGRESS":
+      return request.remedy === "REPLACE" && request.method === "KEEP" ? t.stateReplacementComing : t.stateInProgress;
+    case "APPROVED":
+      return request.remedy === "REPLACE" ? t.stateReplaced : t.stateRefunded(`\u20B9${Math.round(Number(request.approvedAmount ?? 0)).toLocaleString("en-IN")}`);
+    case "REJECTED":
+      return t.stateDeclined;
+    default:
+      return t.stateClosed;
+  }
 }
 
 /** Where an order's return stands, shown beside the Delivered status */
-export function ReturnStateLine({ request, onPress }: Props) {
-  const { label, tone } = returnState(request);
+export function ReturnStateLine({ request }: Props) {
+  const t = useStrings("orders").returns;
+  const { tone } = returnState(request);
+  const label = stateLabel(request, t);
   const color = TONE_COLORS[tone];
-  const content = (
+  return (
     <View style={styles.row}>
       <Ionicons name="return-down-back" size={14} color={color} />
       <Text style={[styles.label, { color }]}>{label}</Text>
-      {onPress && <Ionicons name="chevron-forward" size={14} color={color} />}
     </View>
-  );
-  if (!onPress) return content;
-  return (
-    <TouchableOpacity onPress={onPress} accessibilityRole="button" hitSlop={{ top: 12, bottom: 12, left: 8, right: 8 }}>
-      {content}
-    </TouchableOpacity>
   );
 }
 
-const TAG_VERB: Record<string, string> = { PENDING: "Return requested", IN_PROGRESS: "Returning", APPROVED: "Returned" };
-
 /** Per order line, the tag for units in the return ("Returning 1"); declined and closed returns tag nothing */
 export function returnTags(request: { status: string; remedy?: string | null; items?: { orderItemId: string; quantity: number }[] } | null) {
-  const verb = request && (request.status === "APPROVED" && request.remedy === "REPLACE" ? "Replaced" : TAG_VERB[request.status]);
+  const t = strings("orders").returns;
+  const verbs: Record<string, string> = { PENDING: t.tagRequested, IN_PROGRESS: t.tagReturning, APPROVED: t.tagReturned };
+  const verb = request && (request.status === "APPROVED" && request.remedy === "REPLACE" ? t.tagReplaced : verbs[request.status]);
   if (!request || !verb) return new Map<string, string>();
-  return new Map((request.items ?? []).map((i) => [i.orderItemId, `${verb} · ${i.quantity}`]));
+  return new Map((request.items ?? []).map((i) => [i.orderItemId, t.tag(verb, i.quantity)]));
 }
 
 const styles = StyleSheet.create({
