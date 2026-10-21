@@ -574,6 +574,8 @@ export interface SearchSuggestion {
   text: string;
   kind: "query" | "category" | "brand";
   imageUrl: string | null;
+  /** A paid row, marked "Ad"; its banner counts the views and taps */
+  sponsored?: { bannerId: string };
 }
 
 export interface SearchSuggestions {

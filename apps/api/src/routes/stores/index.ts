@@ -291,7 +291,7 @@ export async function storeRoutes(app: FastifyInstance) {
     if (q) {
       const parsed = storeProductSearchQuerySchema.safeParse(request.query);
       if (!parsed.success) return reply.badRequest(parsed.error.issues[0].message);
-      const { data, facets, searchMeta } = await searchStoreProducts(app.prisma, store.id, parsed.data);
+      const { data, facets, searchMeta } = await searchStoreProducts(app.prisma, store, parsed.data);
       return {
         success: true,
         data,

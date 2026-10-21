@@ -2,6 +2,8 @@ import type { Prisma, PrismaClient } from "../../generated/prisma/index.js";
 import { SearchSortBy } from "@martly/shared/constants";
 import { searchProducts } from "./search.js";
 import { markBrandPicks, storeBrandBoost } from "./brand-boost.js";
+import { liveSponsored } from "./sponsored.js";
+import { namesBrand, placeSearchAds } from "./sponsored-search.js";
 import { decorateStoreProducts, storeProductInclude, type StoreProductView } from "./store-product-view.js";
 
 const MAX_TAG_TABS = 8;
@@ -127,9 +129,11 @@ function sortByProduct(rows: StoreProductView[], sortBy: SearchSortBy, rank: Map
  * Text search within a store. Returns the whole ranked match set (search caps it), facets for the
  * tab row (subcategories, or tags when the matches sit in one subcategory) and filter controls, and the
  * search strategy meta. Tab facets ignore every other filter so the tab row stays stable; filter facets
- * reflect the selected tab.
+ * reflect the selected tab. Relevance-sorted results carry up to two sponsored products that matched,
+ * unless the query names a brand or the shopper filtered by one.
  */
-export async function searchStoreProducts(prisma: PrismaClient, storeId: string, params: StoreSearchParams) {
+export async function searchStoreProducts(prisma: PrismaClient, store: { id: string; organizationId: string }, params: StoreSearchParams) {
+  const storeId = store.id;
   const boost = await storeBrandBoost(prisma, storeId);
   const { productIds, meta } = await searchProducts(prisma, storeId, params.q, { exact: params.exact, boost });
   const productWhere: Prisma.ProductWhereInput = productIds.length > 0
@@ -149,5 +153,7 @@ export async function searchStoreProducts(prisma: PrismaClient, storeId: string,
     (!params.subcategoryId || r.product.subcategoryId === params.subcategoryId));
   const facets: SearchFacets = { tags: tagFacets(ranked), subcategories: subcategoryFacets(ranked, meta.correctedQuery ?? params.q), ...filterFacets(inTag) };
   const data = markBrandPicks(sortByProduct(applyFilters(inTag, params), params.sortBy, rank), boost);
-  return { data, facets, searchMeta: meta };
+  const query = meta.correctedQuery ?? params.q;
+  const adFree = params.sortBy !== SearchSortBy.RELEVANCE || params.brandIds?.length || namesBrand(query, facets.brands.map((b) => b.name));
+  return { data: adFree ? data : placeSearchAds(data, await liveSponsored(prisma, store), query), facets, searchMeta: meta };
 }

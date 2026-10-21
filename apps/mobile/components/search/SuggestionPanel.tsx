@@ -2,7 +2,9 @@ import { FlatList, Image, Text, TouchableOpacity, View, StyleSheet } from "react
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../../constants/theme";
 import { useStrings } from "../../lib/i18n/use-strings";
+import { useSponsoredTracking } from "../../lib/use-sponsored";
 import type { SearchSuggestion } from "../../lib/types";
+import { AdBadge } from "../ProductBadges";
 
 const MAX_RECENT_MATCHES = 2;
 const THUMB = 40;
@@ -11,6 +13,7 @@ interface Row {
   text: string;
   imageUrl: string | null;
   recent: boolean;
+  sponsored?: SearchSuggestion["sponsored"];
 }
 
 interface SuggestionPanelProps {
@@ -52,9 +55,14 @@ function HighlightedText({ text, query }: { text: string; query: string }) {
 
 function SuggestionRow({ row, query, onSelect, onFill }: { row: Row; query: string; onSelect: () => void; onFill: () => void }) {
   const t = useStrings("search");
+  const tapSponsored = useSponsoredTracking(row.sponsored);
+  const select = () => {
+    tapSponsored();
+    onSelect();
+  };
   return (
     <View style={styles.row}>
-      <TouchableOpacity style={styles.main} onPress={onSelect} accessibilityRole="button" accessibilityLabel={t.searchItem(row.text)}>
+      <TouchableOpacity style={styles.main} onPress={select} accessibilityRole="button" accessibilityLabel={t.searchItem(row.text)}>
         <View style={styles.thumb}>
           {row.imageUrl ? (
             <Image source={{ uri: row.imageUrl }} style={styles.thumbImage} resizeMode="contain" />
@@ -63,6 +71,7 @@ function SuggestionRow({ row, query, onSelect, onFill }: { row: Row; query: stri
           )}
         </View>
         <HighlightedText text={row.text} query={query} />
+        {row.sponsored ? <AdBadge style={styles.ad} /> : null}
       </TouchableOpacity>
       <TouchableOpacity style={styles.fill} onPress={onFill} accessibilityRole="button" accessibilityLabel={t.editSearchAs(row.text)}>
         <MaterialCommunityIcons name="arrow-top-left" size={20} color="#94a3b8" />
@@ -98,5 +107,6 @@ const styles = StyleSheet.create({
   thumbImage: { width: THUMB - 8, height: THUMB - 8, mixBlendMode: "multiply" },
   text: { flex: 1, fontFamily: fonts.regular, fontSize: 15, color: colors.text },
   bold: { fontFamily: fonts.bold },
+  ad: { alignSelf: "center", marginBottom: 0 },
   fill: { width: 44, height: 44, alignItems: "center", justifyContent: "center" },
 });

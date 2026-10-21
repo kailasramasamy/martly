@@ -41,7 +41,7 @@ export async function searchRoutes(app: FastifyInstance) {
     const { storeId, q } = searchSuggestQuerySchema.parse(request.query);
     const store = await findActiveStore(app, storeId);
     if (!store) return reply.notFound("Store not found");
-    const data = await suggestSearches(app.prisma, store.id, q);
+    const data = await suggestSearches(app.prisma, store, q);
     return { success: true, data } satisfies ApiResponse<typeof data>;
   });
 

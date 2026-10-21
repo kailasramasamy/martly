@@ -197,7 +197,7 @@ enum BannerPlacement {
   POPUP
   /// Tall brand posters in a rail on Home
   HOME_POSTER
-  /// A brand's product placed second in Home rows and category listings of its category, marked "Ad"
+  /// A brand's product marked "Ad": second in Home rows and category listings of its category, first in matching searches, suggestions and list orders
   SPONSORED_PRODUCT
 }
 

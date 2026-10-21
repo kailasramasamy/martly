@@ -54,8 +54,35 @@ Seed: `cd apps/api && npx tsx prisma/seed-brand-boost.ts` (features Sakthi Masal
 - The Manage → Brand ads screen: add and remove featured brands, the switch, and Save.
 - The admin Brand ads tab: the new card saves on change.
 
+## Phase 2: sponsored products in search, suggestions and list orders (built 2026-10-21)
+
+The existing `SPONSORED_PRODUCT` booking (one product, brand portal, weekly) now also runs here. Ads come from `liveSponsored`, so the owner's brand-ads switch, blocked brands, the per-category slot cap, the in-stock check and the banner's view and tap counts all apply as before. Placement logic is in `apps/api/src/services/sponsored-search.ts`.
+
+| Surface | Rule |
+|---|---|
+| Search results (`searchStoreProducts`) | Up to 2 ads, at product positions 1 and 6, one per brand, removed from their organic place. An ad's product must already rank in the top 40 for the query. No ads when sorted by price or discount, filtered by brand, or when the query names a brand (`namesBrand`) |
+| Suggestions (`/search/suggest`) | One row right after the typed term: the ad product's name, marked Ad. Its name or aisle search terms must match the term (3+ characters), and the term mustn't name a brand. Tapping it searches that product name, which names the brand, so the results carry no ad |
+| Voice / list / photo to cart | A line with no brand named moves a matching ad product to the front of its options, marked Ad. A brand the customer named or bought before still ranks above it, and it's never `MATCHED` (auto-added) |
+
+- **Rotation:** with more eligible ads than slots, the order is a hash of query + IST day, so it's stable while scrolling and fair across days.
+- **Paid vs store-promoted:** separate slots. Paid takes fixed positions and featured/own brands are boosted inside the organic ranking, so both show (an Everest ad at 1, featured Sakthi at 2).
+- **Mobile:** product cards already showed Ad for `sponsored` rows and counted views and taps, so search results and the list picker get that for free. Suggestion rows show `AdBadge` and count a view on render and a tap on select.
+- **Package copy:** migration `20261021160000_sponsored_product_in_search` rewords the `SPONSORED_PRODUCT_WEEK` description, but only if an admin hasn't edited it.
+
+### Tested (curl, Harur Fresh Mart; live ads: Lay's chips, Everest Kashmirilal Chilli Powder via `prisma/seed-sponsored-search.ts`)
+
+- `chilli powder`: Everest Ad 1st, Sakthi Featured 2nd, then organic. Each product appears once (200 products, 3 ad rows = its sizes).
+- `chips`: Lay's Ad 1st. `masala` and `milk`: no ad (Everest chilli powder isn't a top-40 match for "masala"). `everest`: no ad (brand query). `chilli powder` sorted by price: no ad.
+- Suggest `chilli` / `chilli pow`: the Everest row (Ad) is 2nd. `chips`: the Lay's row. `sak` (brand), `milk`, `chi` (completes to chicken): no ad.
+- List "chilli powder / chips / Aachi chilli powder / milk": chilli powder offers Everest [Ad] then Sakthi [Featured], chips offers Lay's [Ad], all `PICK`. Aachi (named brand) and milk get no ad.
+
+### Needs manual check
+
+- The Ad label on search results and the list picker, and the suggestion row's Ad badge aligned in the row.
+- Views and taps for search and suggestion ads show up in the brand campaign report (same banner counters).
+
 ## Next phases (decided 2026-10-21)
 
-- **Phase 2:** sponsored products in search results (slots 1 and 6) and a sponsored row in suggestions, both from the existing `SPONSORED_PRODUCT` booking. In the cart picker, a sponsored product comes after the brand the customer named and after what they bought before. `ad_events` per surface. No sponsored slot when the query names a brand.
 - **Phase 3:** `BRAND_TAB_SLOT` for the bottom nav: one brand per week across all stores. If unsold, it falls back to the org's own brand, then the daily rotation.
+- **Phase 4:** reporting per surface (`BannerStatDaily` has no surface column yet, so search, suggest and Home views are counted together), plus rotation weighted by units bought.
 - Stores get no revenue share of brand ads.

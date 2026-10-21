@@ -1,6 +1,8 @@
 import { Prisma, type PrismaClient } from "../../generated/prisma/client.js";
 import { brandNamesCte, nameForQuery, normalizeQuery } from "./search.js";
 import { completeQuery, correctQuery } from "./spell.js";
+import { liveSponsored } from "./sponsored.js";
+import { namesBrand, rotateAds } from "./sponsored-search.js";
 
 export type SuggestionKind = "query" | "category" | "brand";
 
@@ -8,12 +10,16 @@ export interface Suggestion {
   text: string;
   kind: SuggestionKind;
   imageUrl: string | null;
+  /** A paid row: a sponsored product the term matches, marked "Ad"; its banner counts the views and taps */
+  sponsored?: { bannerId: string };
 }
 
 const MAX_SUGGESTIONS = 8;
 const POPULAR_LIMIT = 3;
 const CATEGORY_LIMIT = 4;
 const BRAND_LIMIT = 3;
+// Shorter terms say too little to match an ad against
+const MIN_AD_TERM = 3;
 // Display name without the maker in brackets: "Surf Excel (HUL)" → "Surf Excel"
 const MAKER_SUFFIX = "\\s*\\([^)]*\\)";
 
@@ -104,6 +110,28 @@ function brandSuggestions(rows: BrandRow[], term: string, tokens: string[]): Sug
   });
 }
 
+/**
+ * One sponsored product whose name (or aisle) the term matches, unless the term names a brand: its name becomes the
+ * row, so tapping it searches for that product.
+ */
+async function sponsoredSuggestion(prisma: PrismaClient, store: { id: string; organizationId: string }, term: string, tokens: string[], brands: BrandRow[]) {
+  if (term.length < MIN_AD_TERM || namesBrand(term, brands.map((b) => b.brand))) return null;
+  const ads = await liveSponsored(prisma, store);
+  if (ads.length === 0) return null;
+  const matching = await prisma.$queryRaw<{ id: string; name: string; imageUrl: string | null }[]>`
+    WITH ${brandNamesCte}
+    SELECT p.id, p.name, p.image_url AS "imageUrl" FROM products p
+    LEFT JOIN brand_names b ON b.id = p.brand_id
+    LEFT JOIN subcategories s ON s.id = p.subcategory_id
+    WHERE p.id IN (${Prisma.join(ads.map((a) => a.productId))})
+      AND (${allWords(nameForQuery(term), tokens)} OR ${term} = ANY(s.search_terms))`;
+  const byId = new Map(matching.map((m) => [m.id, m]));
+  const ad = rotateAds(ads.filter((a) => byId.has(a.productId)), term)[0];
+  if (!ad) return null;
+  const product = byId.get(ad.productId)!;
+  return { text: product.name, kind: "query" as const, imageUrl: product.imageUrl, sponsored: { bannerId: ad.bannerId } };
+}
+
 function dedupe(candidates: Suggestion[]) {
   const seen = new Set<string>();
   return candidates.filter((s) => {
@@ -118,7 +146,8 @@ function dedupe(candidates: Suggestion[]) {
  * Typeahead for one store: the (spell-corrected, completed) term, popular searches, matching subcategories
  * and brand suggestions — only things the store has in stock, so no suggestion leads to an empty page.
  */
-export async function suggestSearches(prisma: PrismaClient, storeId: string, rawQuery: string) {
+export async function suggestSearches(prisma: PrismaClient, store: { id: string; organizationId: string }, rawQuery: string) {
+  const storeId = store.id;
   const q = normalizeQuery(rawQuery);
   const completed = await completeQuery(prisma, storeId, q);
   const termImage = await productImage(prisma, storeId, completed.split(" "));
@@ -134,9 +163,11 @@ export async function suggestSearches(prisma: PrismaClient, storeId: string, raw
   const popularRows = await Promise.all(popular.map(async (p) => ({
     text: p.text, kind: "query" as const, imageUrl: await productImage(prisma, storeId, p.text.split(" ")),
   })));
+  const ad = await sponsoredSuggestion(prisma, store, term, tokens, brands);
   const suggestions = dedupe([
-    // The term itself only earns a row when something in the store matches it
+    // The term itself only earns a row when something in the store matches it; the ad sits right after it
     ...(image ? [{ text: term, kind: "query" as const, imageUrl: image }] : []),
+    ...(ad ? [ad] : []),
     ...popularRows,
     ...categories.map((c) => ({ text: c.text, kind: "category" as const, imageUrl: c.imageUrl })),
     ...brandSuggestions(brands, term, tokens),

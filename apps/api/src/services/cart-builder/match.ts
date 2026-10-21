@@ -3,6 +3,8 @@ import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { searchProducts } from "../search.js";
 import { decorateStoreProducts, storeProductInclude, type StoreProductView } from "../store-product-view.js";
 import { markBrandPicks, storeBrandBoost, type BrandBoost } from "../brand-boost.js";
+import { liveSponsored, type SponsoredAd } from "../sponsored.js";
+import { sponsorLine } from "../sponsored-search.js";
 import type { ParsedLine } from "./parse.js";
 import { packSize, pickPack } from "./variant-pick.js";
 
@@ -93,13 +95,17 @@ function matchLine(line: ParsedLine, groups: StoreProductView[][], bought: Bough
   };
 }
 
+/** What the store promotes, loaded once per run: boosted brands, and live sponsored products */
+interface Promotions { boost: BrandBoost; ads: SponsoredAd[] }
+
 /**
  * A line's in-stock products. When it names a brand the search didn't find (the catalog calls Rin's bar a "detergent
- * bar", not "soap"), that brand's own products come first.
+ * bar", not "soap"), that brand's own products come first. A line naming no brand offers a matching sponsored product first.
  */
-async function findGroups(prisma: PrismaClient, storeId: string, line: ParsedLine, bought: Bought, boost: BrandBoost) {
+async function findGroups(prisma: PrismaClient, storeId: string, line: ParsedLine, bought: Bought, { boost, ads }: Promotions) {
   const groups = await loadInStock(prisma, storeId, await searchLine(prisma, storeId, line, bought, boost), boost);
-  if (!line.brand || groups.some((g) => brandMatches(g, line.brand))) return { groups, brandOnly: false };
+  if (!line.brand) return { groups: sponsorLine(groups, ads, line.searchTerm), brandOnly: false };
+  if (groups.some((g) => brandMatches(g, line.brand))) return { groups, brandOnly: false };
   const { productIds } = await searchProducts(prisma, storeId, line.brand, { exact: true, boost });
   const ofBrand = (await loadInStock(prisma, storeId, productIds.slice(0, TOP_PRODUCTS), boost)).filter((g) => brandMatches(g, line.brand));
   return ofBrand.length > 0 ? { groups: [...ofBrand, ...groups], brandOnly: true } : { groups, brandOnly: false };
@@ -117,12 +123,13 @@ export async function matchLines(
   onLine?: (index: number, line: CartBuilderLine<CardProduct>) => void,
 ) {
   const matched: CartBuilderLine<CardProduct>[] = new Array(lines.length);
-  const boost = await storeBrandBoost(prisma, storeId);
+  const store = await prisma.store.findUniqueOrThrow({ where: { id: storeId }, select: { id: true, organizationId: true } });
+  const [boost, ads] = await Promise.all([storeBrandBoost(prisma, storeId), liveSponsored(prisma, store)]);
   let next = 0;
   const worker = async () => {
     while (next < lines.length) {
       const i = next++;
-      const { groups, brandOnly } = await findGroups(prisma, storeId, lines[i], bought, boost);
+      const { groups, brandOnly } = await findGroups(prisma, storeId, lines[i], bought, { boost, ads });
       matched[i] = matchLine(lines[i], groups, bought, brandOnly);
       onLine?.(i, matched[i]);
     }

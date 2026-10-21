@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, type TextStyle } from "react-native";
+import { Text, View, StyleSheet, type TextStyle, type ViewStyle } from "react-native";
 import { colors, fonts } from "../constants/theme";
 import { unitPriceLabel } from "../lib/unit-price";
 import { useStrings } from "../lib/i18n/use-strings";
@@ -16,10 +16,10 @@ export function BestsellerBadge() {
 }
 
 // Paid placements are marked plainly but quietly; sits in the card's text block
-export function AdBadge() {
+export function AdBadge({ style }: { style?: ViewStyle }) {
   const t = useStrings("catalog");
   return (
-    <View style={styles.ad} accessibilityLabel={t.advertisement}>
+    <View style={[styles.ad, style]} accessibilityLabel={t.advertisement}>
       <Text style={styles.adText}>{t.ad}</Text>
     </View>
   );
