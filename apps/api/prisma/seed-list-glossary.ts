@@ -5,8 +5,8 @@ dotenv.config({ override: true });
 
 const prisma = new PrismaClient();
 
-// The Tamil / Tanglish staples the list reader started with. Safe to run again: terms upsert by their catalog
-// word and their phrases are replaced, so edits made in the admin panel to other terms are left alone.
+// The Tamil / Tanglish staples and household words the list reader started with. Safe to run again: terms upsert
+// by their catalog word and their phrases are replaced, so edits made in the admin panel to other terms are left alone.
 const TERMS: { searchTerm: string; note?: string; ta: string[] }[] = [
   { searchTerm: "rice", ta: ["அரிசி", "arisi"] },
   { searchTerm: "ponni rice", ta: ["பொன்னி அரிசி", "ponni arisi"] },
@@ -31,6 +31,17 @@ const TERMS: { searchTerm: string; note?: string; ta: string[] }[] = [
   { searchTerm: "coriander leaves", ta: ["கொத்தமல்லி", "kothamalli"] },
   { searchTerm: "vermicelli", ta: ["சேமியா", "semiya"] },
   { searchTerm: "oil", note: "when they don't say which oil", ta: ["எண்ணெய்", "ennai"] },
+  // "Soap" covers washing bars too: a laundry or dish brand, or cloth / vessel, with soap means the bar
+  {
+    searchTerm: "detergent bar", note: "soap for washing clothes",
+    ta: ["துணி சோப்பு", "thuni soap", "thuni soppu", "துவைக்கும் சோப்பு", "washing soap"],
+  },
+  { searchTerm: "dishwash bar", note: "soap for washing vessels", ta: ["பாத்திரம் தேய்க்கும் சோப்பு", "pathiram soap", "vessel soap"] },
+  { searchTerm: "rin detergent bar", ta: ["rin soap", "rin soppu", "ரின் சோப்பு"] },
+  { searchTerm: "wheel detergent bar", ta: ["wheel soap", "wheel soppu", "வீல் சோப்பு"] },
+  { searchTerm: "surf excel detergent bar", ta: ["surf soap", "surf excel soap"] },
+  { searchTerm: "501 detergent bar", ta: ["501 soap", "501 soppu"] },
+  { searchTerm: "vim dishwash bar", ta: ["vim soap", "vim bar", "விம் சோப்பு"] },
 ];
 
 async function main() {

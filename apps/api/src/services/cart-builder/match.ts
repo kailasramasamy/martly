@@ -79,16 +79,29 @@ function toCandidate(group: StoreProductView[], line: ParsedLine, bought: Bought
  * or have bought it here before; otherwise they pick from the best ten. A lone search hit isn't enough: "dish soap"
  * with one hit can be a kitchen cleaner.
  */
-function matchLine(line: ParsedLine, groups: StoreProductView[][], bought: Bought): CartBuilderLine<CardProduct> {
+function matchLine(line: ParsedLine, groups: StoreProductView[][], bought: Bought, brandOnly = false): CartBuilderLine<CardProduct> {
   const score = (g: StoreProductView[]) => (brandMatches(g, line.brand) ? 2 : 0) + (bought.has(g[0].productId) ? 1 : 0);
   const orders = (g: StoreProductView[]) => bought.get(g[0].productId)?.orderCount ?? 0;
   const ranked = [...groups].sort((a, b) => score(b) - score(a) || orders(b) - orders(a)).slice(0, OFFERED);
   return {
     text: line.text,
     item: line.item,
-    confidence: ranked.length === 0 ? "NOT_FOUND" : score(ranked[0]) > 0 ? "MATCHED" : "PICK",
+    // Found by brand alone, the item word didn't match, so it's never added for them ("Rin soap" isn't Rin powder)
+    confidence: ranked.length === 0 ? "NOT_FOUND" : score(ranked[0]) > 0 && !brandOnly ? "MATCHED" : "PICK",
     candidates: ranked.map((g) => toCandidate(g, line, bought)),
   };
+}
+
+/**
+ * A line's in-stock products. When it names a brand the search didn't find (the catalog calls Rin's bar a "detergent
+ * bar", not "soap"), that brand's own products come first.
+ */
+async function findGroups(prisma: PrismaClient, storeId: string, line: ParsedLine, bought: Bought) {
+  const groups = await loadInStock(prisma, storeId, await searchLine(prisma, storeId, line, bought));
+  if (!line.brand || groups.some((g) => brandMatches(g, line.brand))) return { groups, brandOnly: false };
+  const { productIds } = await searchProducts(prisma, storeId, line.brand, { exact: true });
+  const ofBrand = (await loadInStock(prisma, storeId, productIds.slice(0, TOP_PRODUCTS))).filter((g) => brandMatches(g, line.brand));
+  return ofBrand.length > 0 ? { groups: [...ofBrand, ...groups], brandOnly: true } : { groups, brandOnly: false };
 }
 
 /**
@@ -107,8 +120,8 @@ export async function matchLines(
   const worker = async () => {
     while (next < lines.length) {
       const i = next++;
-      const groups = await loadInStock(prisma, storeId, await searchLine(prisma, storeId, lines[i], bought));
-      matched[i] = matchLine(lines[i], groups, bought);
+      const { groups, brandOnly } = await findGroups(prisma, storeId, lines[i], bought);
+      matched[i] = matchLine(lines[i], groups, bought, brandOnly);
       onLine?.(i, matched[i]);
     }
   };
