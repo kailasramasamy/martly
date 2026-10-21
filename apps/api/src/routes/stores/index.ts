@@ -14,6 +14,7 @@ import { drivingDistances } from "../../services/driving-distance.js";
 import { searchStoreProducts } from "../../services/store-search.js";
 import { decorateStoreProducts, storeProductInclude } from "../../services/store-product-view.js";
 import { injectAd, listingAd, type SponsoredAd } from "../../services/sponsored.js";
+import { boostedListingPage, markBrandPicks, storeBrandBoost, type BrandBoost } from "../../services/brand-boost.js";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { getStoreDiscoveryInfo } from "../../services/store-discovery.js";
 import { catalogCoverage, type CatalogCoverage } from "../../services/catalog-coverage.js";
@@ -323,7 +324,10 @@ export async function storeRoutes(app: FastifyInstance) {
     }
     // A plain category listing (no filters or sort the ad would break) carries one sponsored product, second
     let ad: SponsoredAd | null = null;
+    // Category listings label the store's own and featured brands, and give them every third slot unless the shopper sorts
+    let boost: BrandBoost | null = null;
     if (categoryId) {
+      boost = await storeBrandBoost(app.prisma, store.id);
       const subcategoryIds = await subcategoryIdsUnder(app.prisma, categoryId);
       where.product = { ...(where.product as Record<string, unknown> ?? {}), subcategoryId: { in: subcategoryIds } };
       const plain = !hasDiscount && !sortBy && !brandId && !foodType && !productId && !productIds && !isFeatured;
@@ -343,12 +347,15 @@ export async function storeRoutes(app: FastifyInstance) {
     else if (sortBy === "price_desc") orderBy = { price: "desc" };
     else if (sortBy === "newest") orderBy = { createdAt: "desc" };
 
-    const [storeProducts, total] = await Promise.all([
-      // id breaks ties (bulk imports share timestamps and prices) so pages never repeat or skip a listing
-      app.prisma.storeProduct.findMany({ where, skip, take: Number(pageSize), include: storeProductInclude, orderBy: [orderBy, { id: "asc" }] }),
-      app.prisma.storeProduct.count({ where }),
-    ]);
-    const listed = await decorateStoreProducts(app.prisma, storeProducts);
+    // id breaks ties (bulk imports share timestamps and prices) so pages never repeat or skip a listing
+    const find = (w: Prisma.StoreProductWhereInput, from: number, take: number) =>
+      app.prisma.storeProduct.findMany({ where: w, skip: from, take, include: storeProductInclude, orderBy: [orderBy, { id: "asc" }] });
+    const count = (w: Prisma.StoreProductWhereInput) => app.prisma.storeProduct.count({ where: w });
+    const listingWhere = where as Prisma.StoreProductWhereInput;
+    const { rows: storeProducts, total } = boost?.size && !sortBy && !brandId
+      ? await boostedListingPage(boost, listingWhere, { skip, take: Number(pageSize) }, find, count)
+      : await Promise.all([find(listingWhere, skip, Number(pageSize)), count(listingWhere)]).then(([rows, n]) => ({ rows, total: n }));
+    const listed = markBrandPicks(await decorateStoreProducts(app.prisma, storeProducts), boost ?? new Map());
     const data = ad && Number(page) === 1 ? injectAd(listed, await sponsoredRows(app.prisma, store.id, ad.productId), ad) : listed;
 
     const response: PaginatedResponse<(typeof data)[0]> = {

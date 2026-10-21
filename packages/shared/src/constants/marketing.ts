@@ -136,3 +136,10 @@ export type PromoKind = (typeof PromoKind)[keyof typeof PromoKind];
 
 /** What a manual promotion's discount can cover; search and links don't map to a set of products */
 export const DISCOUNTABLE_TARGETS = ["CATEGORY", "PRODUCT", "COLLECTION", "BRAND"] as const;
+
+// Why a product ranks ahead in a store: the organisation's own brand, or one the owner features (shown on the card)
+export const BrandPick = {
+  OWN: "OWN",
+  FEATURED: "FEATURED",
+} as const;
+export type BrandPick = (typeof BrandPick)[keyof typeof BrandPick];

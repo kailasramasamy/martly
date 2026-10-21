@@ -2,6 +2,7 @@ import type { CartBuilderCandidate, CartBuilderLine } from "@martly/shared/types
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { searchProducts } from "../search.js";
 import { decorateStoreProducts, storeProductInclude, type StoreProductView } from "../store-product-view.js";
+import { markBrandPicks, storeBrandBoost, type BrandBoost } from "../brand-boost.js";
 import type { ParsedLine } from "./parse.js";
 import { packSize, pickPack } from "./variant-pick.js";
 
@@ -18,20 +19,20 @@ const PARALLEL = 5;
  * Ranked product IDs for a line. The parsed term is already clean, so a plain keyword search comes first; the slow
  * fuzzy and full-text fallbacks run only when it finds nothing, then the customer's own words (Tamil-only names).
  */
-async function searchLine(prisma: PrismaClient, storeId: string, line: ParsedLine, bought: Bought) {
-  let { productIds } = await searchProducts(prisma, storeId, line.searchTerm, { exact: true });
-  if (productIds.length === 0) ({ productIds } = await searchProducts(prisma, storeId, line.searchTerm));
-  if (productIds.length === 0 && line.item !== line.searchTerm) ({ productIds } = await searchProducts(prisma, storeId, line.item));
+async function searchLine(prisma: PrismaClient, storeId: string, line: ParsedLine, bought: Bought, boost: BrandBoost) {
+  let { productIds } = await searchProducts(prisma, storeId, line.searchTerm, { exact: true, boost });
+  if (productIds.length === 0) ({ productIds } = await searchProducts(prisma, storeId, line.searchTerm, { boost }));
+  if (productIds.length === 0 && line.item !== line.searchTerm) ({ productIds } = await searchProducts(prisma, storeId, line.item, { boost }));
   return [...productIds.slice(0, TOP_PRODUCTS), ...productIds.slice(TOP_PRODUCTS).filter((id) => bought.has(id))];
 }
 
 /** In-stock store products for a line's hits, one group per product, in search order */
-async function loadInStock(prisma: PrismaClient, storeId: string, productIds: string[]) {
+async function loadInStock(prisma: PrismaClient, storeId: string, productIds: string[], boost: BrandBoost) {
   if (productIds.length === 0) return [];
-  const rows = await decorateStoreProducts(prisma, await prisma.storeProduct.findMany({
+  const rows = markBrandPicks(await decorateStoreProducts(prisma, await prisma.storeProduct.findMany({
     where: { storeId, isActive: true, productId: { in: productIds }, product: { isActive: true } },
     include: storeProductInclude,
-  }));
+  })), boost);
   const byProduct = new Map<string, StoreProductView[]>();
   for (const sp of rows.filter((r) => r.availableStock > 0)) byProduct.set(sp.productId, [...(byProduct.get(sp.productId) ?? []), sp]);
   return productIds.map((id) => byProduct.get(id)).filter((g): g is StoreProductView[] => g !== undefined);
@@ -96,11 +97,11 @@ function matchLine(line: ParsedLine, groups: StoreProductView[][], bought: Bough
  * A line's in-stock products. When it names a brand the search didn't find (the catalog calls Rin's bar a "detergent
  * bar", not "soap"), that brand's own products come first.
  */
-async function findGroups(prisma: PrismaClient, storeId: string, line: ParsedLine, bought: Bought) {
-  const groups = await loadInStock(prisma, storeId, await searchLine(prisma, storeId, line, bought));
+async function findGroups(prisma: PrismaClient, storeId: string, line: ParsedLine, bought: Bought, boost: BrandBoost) {
+  const groups = await loadInStock(prisma, storeId, await searchLine(prisma, storeId, line, bought, boost), boost);
   if (!line.brand || groups.some((g) => brandMatches(g, line.brand))) return { groups, brandOnly: false };
-  const { productIds } = await searchProducts(prisma, storeId, line.brand, { exact: true });
-  const ofBrand = (await loadInStock(prisma, storeId, productIds.slice(0, TOP_PRODUCTS))).filter((g) => brandMatches(g, line.brand));
+  const { productIds } = await searchProducts(prisma, storeId, line.brand, { exact: true, boost });
+  const ofBrand = (await loadInStock(prisma, storeId, productIds.slice(0, TOP_PRODUCTS), boost)).filter((g) => brandMatches(g, line.brand));
   return ofBrand.length > 0 ? { groups: [...ofBrand, ...groups], brandOnly: true } : { groups, brandOnly: false };
 }
 
@@ -116,11 +117,12 @@ export async function matchLines(
   onLine?: (index: number, line: CartBuilderLine<CardProduct>) => void,
 ) {
   const matched: CartBuilderLine<CardProduct>[] = new Array(lines.length);
+  const boost = await storeBrandBoost(prisma, storeId);
   let next = 0;
   const worker = async () => {
     while (next < lines.length) {
       const i = next++;
-      const { groups, brandOnly } = await findGroups(prisma, storeId, lines[i], bought);
+      const { groups, brandOnly } = await findGroups(prisma, storeId, lines[i], bought, boost);
       matched[i] = matchLine(lines[i], groups, bought, brandOnly);
       onLine?.(i, matched[i]);
     }

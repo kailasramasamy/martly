@@ -1,6 +1,7 @@
 import { Prisma, type PrismaClient } from "../../generated/prisma/index.js";
 import Anthropic from "@anthropic-ai/sdk";
 import { correctQuery } from "./spell.js";
+import { storeBrandBoost, type BrandBoost } from "./brand-boost.js";
 
 export type SearchStrategy = "keyword" | "fuzzy" | "fulltext" | "semantic";
 
@@ -26,6 +27,8 @@ const MAX_ADMIN_RESULTS = 2000;
 // doesn't contain the query) carry a penalty so "razor" shows razors before the aisle's shaving brushes.
 const BRAND_TURN_BASE = 120;
 const INTENT_ONLY_PENALTY = 40;
+// A store's own and featured brands take turns just ahead of a 100-popularity leader (every 15 points)
+const BOOSTED_POPULARITY = 105;
 
 /**
  * What a search runs over. Shoppers see a store's listed, active products; admins also see unlisted listings
@@ -35,6 +38,8 @@ interface SearchScope {
   storeId?: string;
   listedOnly?: boolean;
   collectionId?: string;
+  /** Brands the store promotes, ranked as BOOSTED_POPULARITY */
+  boostedBrandIds?: string[];
 }
 
 const inScope = ({ storeId, listedOnly, collectionId }: SearchScope) => {
@@ -80,9 +85,10 @@ export async function searchProducts(
   prisma: PrismaClient,
   storeId: string,
   query: string,
-  { minResults = 3, exact = false }: { minResults?: number; exact?: boolean } = {},
+  { minResults = 3, exact = false, boost }: { minResults?: number; exact?: boolean; boost?: BrandBoost } = {},
 ): Promise<SearchResult> {
-  return runSearch(prisma, { storeId, listedOnly: true }, query, { minResults, exact, semantic: true, limit: MAX_KEYWORD_RESULTS });
+  const boostedBrandIds = [...(boost ?? await storeBrandBoost(prisma, storeId)).keys()];
+  return runSearch(prisma, { storeId, listedOnly: true, boostedBrandIds }, query, { minResults, exact, semantic: true, limit: MAX_KEYWORD_RESULTS });
 }
 
 /** Same ranking within one collection's products, for a campaign screen's search; no LLM expansion as it runs per keystroke */
@@ -175,10 +181,14 @@ export const nameForQuery = (q: string) => Prisma.sql`CASE
   ELSE p.name
 END`;
 
+const popularity = ({ boostedBrandIds }: SearchScope) => (boostedBrandIds?.length
+  ? Prisma.sql`CASE WHEN p.brand_id = ANY(${boostedBrandIds}::text[]) THEN ${BOOSTED_POPULARITY} ELSE COALESCE(b.popularity, 0) END`
+  : Prisma.sql`COALESCE(b.popularity, 0)`);
+
 // Every stocked product with its intent flag, name tier and taxonomy hit for the query
 // (needs the `term`, `sales` and brand_names CTEs)
 const matchedProducts = (q: string, scope: SearchScope) => Prisma.sql`
-  SELECT p.id, p.name, p.brand_id, COALESCE(b.popularity, 0) AS popularity, COALESCE(sales.n, 0) AS sold,
+  SELECT p.id, p.name, p.brand_id, ${popularity(scope)} AS popularity, COALESCE(sales.n, 0) AS sold,
     COALESCE(${q} = ANY(s.search_terms), false) AS intent,
     CASE
       WHEN own.name ~* ('\\m' || term.rx || '\\M') THEN 0

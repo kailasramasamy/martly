@@ -471,6 +471,8 @@ model Organization {
   billingAddress      String?   @map("billing_address")
   billingState        String?   @map("billing_state")
   allowBrandAds       Boolean   @default(true) @map("allow_brand_ads")
+  /// The organisation's own brands rank like market leaders in search and lead category listings
+  boostOwnBrands      Boolean   @default(true) @map("boost_own_brands")
   /// When the organisation started its one free Growth trial
   trialUsedAt         DateTime? @map("trial_used_at")
   /// Martly's commission, GST included: on online payments, and on COD and wallet payments
@@ -512,6 +514,7 @@ model Organization {
   promotionCredits      PromotionCreditEntry[]
   aiImageCredits        AiImageCreditEntry[]
   brandBlocks           OrgBrandBlock[]
+  brandFeatures         OrgBrandFeature[]
   campaignOptOuts       BrandCampaignOptOut[]
 
   bannerArtRuns BannerArtRun[]
@@ -783,6 +786,7 @@ model Brand {
   banners      Banner[]
   campaigns    BrandCampaign[]
   blockedBy    OrgBrandBlock[]
+  featuredBy   OrgBrandFeature[]
 
   @@index([organizationId])
   @@map("brands")
@@ -2531,6 +2535,19 @@ model OrgBrandBlock {
 
   @@id([organizationId, brandId])
   @@map("org_brand_blocks")
+}
+
+/// A brand the store owner promotes in their stores (a distributor deal, a local favourite), ranked like their own brands
+model OrgBrandFeature {
+  organizationId String   @map("organization_id")
+  brandId        String   @map("brand_id")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  brand        Brand        @relation(fields: [brandId], references: [id], onDelete: Cascade)
+
+  @@id([organizationId, brandId])
+  @@map("org_brand_features")
 }
 
 model BrandCampaign {

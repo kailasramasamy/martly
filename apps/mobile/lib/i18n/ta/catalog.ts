@@ -34,6 +34,7 @@ export const catalog: Strings<"catalog"> = {
   bestsellerBadge: "அதிகம் விற்பனை",
   advertisement: "விளம்பரம்",
   ad: "விளம்பரம்",
+  brandPick: { OWN: "எங்கள் பிராண்ட்", FEATURED: "சிறப்புத் தேர்வு" },
   packSwipe: (name: string) => `${name} பேக், மற்ற அளவுகளுக்கு ஸ்வைப் செய்யுங்கள்`,
   pack: (name: string) => `${name} பேக்`,
   moreSizes: (n: number) => `மேலும் ${n} அளவுகள்`,

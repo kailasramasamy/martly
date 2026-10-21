@@ -88,6 +88,11 @@ export const bannerEventsSchema = z.object({
 export const brandAdSettingsSchema = z.object({
   allowBrandAds: z.boolean(),
   blockedBrandIds: z.array(z.string().uuid()).max(500),
+  boostOwnBrands: z.boolean(),
+  featuredBrandIds: z.array(z.string().uuid()).max(50),
+}).refine((s) => !s.featuredBrandIds.some((id) => s.blockedBrandIds.includes(id)), {
+  message: "A brand can't be both featured and blocked",
+  path: ["featuredBrandIds"],
 });
 
 export const brandCampaignSchema = z.object({

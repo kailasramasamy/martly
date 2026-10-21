@@ -7,7 +7,7 @@ import { useLanguage } from "../lib/language-context";
 import { useStrings } from "../lib/i18n/use-strings";
 import { strings } from "../lib/i18n";
 import { FoodTypeMark } from "./FoodTypeMark";
-import { AdBadge, BestsellerBadge, UnitPrice } from "./ProductBadges";
+import { AdBadge, BestsellerBadge, BrandPickBadge, UnitPrice } from "./ProductBadges";
 import { SizeChips, SizePager, maxChips, sizeImage } from "./PackSizes";
 import { bySize, packSaving } from "../lib/pack-sizes";
 import { useSponsoredTracking } from "../lib/use-sponsored";
@@ -125,7 +125,7 @@ function CompactDetails({ item, sizes, onSelectSize, onMoreSizes, isMember, spon
   const rated = (item.product.reviewCount ?? 0) > 0 && (item.product.averageRating ?? 0) > 0;
   return (
     <>
-      {sponsored && <AdBadge />}
+      {sponsored ? <AdBadge /> : item.brandPick && <BrandPickBadge pick={item.brandPick} />}
       {sizes.length > 1 ? (
         <SizeChips
           sizes={sizes} selectedId={item.id} maxChips={maxChips(COMPACT_CARD_WIDTH)}

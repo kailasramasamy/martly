@@ -32,6 +32,7 @@ export const catalog = {
   bestsellerBadge: "BESTSELLER",
   advertisement: "Advertisement",
   ad: "Ad",
+  brandPick: { OWN: "Our brand", FEATURED: "Featured" },
   packSwipe: (name: string) => `${name} pack, swipe for other sizes`,
   pack: (name: string) => `${name} pack`,
   moreSizes: (n: number) => `${n} more sizes`,

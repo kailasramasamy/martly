@@ -7,15 +7,26 @@ import { getOrgUser } from "../../middleware/org-scope.js";
 
 const staff = { preHandler: [authenticate, requirePermission(Permission.MARKETING_MANAGE)] };
 const owner = { preHandler: [authenticate, requireRole("ORG_ADMIN")] };
+const BRAND_REF = { id: true, name: true, imageUrl: true } as const;
 
-/** Store owners' say over brand advertising in their stores: on/off, blocked brands, and opting out of brand discounts */
+/**
+ * Store owners' say over brands in their stores: brand ads on/off, blocked brands, opting out of brand discounts, and
+ * the brands they promote (their own, and featured ones)
+ */
 export async function brandAdRoutes(app: FastifyInstance) {
   async function settings(organizationId: string) {
     const org = await app.prisma.organization.findUniqueOrThrow({
       where: { id: organizationId },
-      select: { allowBrandAds: true, brandBlocks: { select: { brand: { select: { id: true, name: true, imageUrl: true } } } } },
+      select: {
+        allowBrandAds: true, boostOwnBrands: true,
+        brandBlocks: { select: { brand: { select: BRAND_REF } } },
+        brandFeatures: { select: { brand: { select: BRAND_REF } } },
+      },
     });
-    return { allowBrandAds: org.allowBrandAds, blockedBrands: org.brandBlocks.map((b) => b.brand) };
+    return {
+      allowBrandAds: org.allowBrandAds, blockedBrands: org.brandBlocks.map((b) => b.brand),
+      boostOwnBrands: org.boostOwnBrands, featuredBrands: org.brandFeatures.map((f) => f.brand),
+    };
   }
 
   app.get("/brand-ads", staff, async (request, reply) => {
@@ -24,13 +35,17 @@ export async function brandAdRoutes(app: FastifyInstance) {
     return { success: true, data: await settings(organizationId) };
   });
 
-  app.put("/brand-ads", owner, async (request) => {
-    const { allowBrandAds, blockedBrandIds } = brandAdSettingsSchema.parse(request.body);
+  app.put("/brand-ads", owner, async (request, reply) => {
+    const parsed = brandAdSettingsSchema.safeParse(request.body);
+    if (!parsed.success) return reply.badRequest(parsed.error.issues[0].message);
+    const { allowBrandAds, blockedBrandIds, boostOwnBrands, featuredBrandIds } = parsed.data;
     const organizationId = getOrgUser(request).organizationId!;
     await app.prisma.$transaction([
-      app.prisma.organization.update({ where: { id: organizationId }, data: { allowBrandAds } }),
+      app.prisma.organization.update({ where: { id: organizationId }, data: { allowBrandAds, boostOwnBrands } }),
       app.prisma.orgBrandBlock.deleteMany({ where: { organizationId, brandId: { notIn: blockedBrandIds } } }),
       app.prisma.orgBrandBlock.createMany({ data: blockedBrandIds.map((brandId) => ({ organizationId, brandId })), skipDuplicates: true }),
+      app.prisma.orgBrandFeature.deleteMany({ where: { organizationId, brandId: { notIn: featuredBrandIds } } }),
+      app.prisma.orgBrandFeature.createMany({ data: featuredBrandIds.map((brandId) => ({ organizationId, brandId })), skipDuplicates: true }),
     ]);
     return { success: true, data: await settings(organizationId) };
   });

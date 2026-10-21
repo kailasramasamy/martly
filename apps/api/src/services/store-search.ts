@@ -1,6 +1,7 @@
 import type { Prisma, PrismaClient } from "../../generated/prisma/index.js";
 import { SearchSortBy } from "@martly/shared/constants";
 import { searchProducts } from "./search.js";
+import { markBrandPicks, storeBrandBoost } from "./brand-boost.js";
 import { decorateStoreProducts, storeProductInclude, type StoreProductView } from "./store-product-view.js";
 
 const MAX_TAG_TABS = 8;
@@ -129,7 +130,8 @@ function sortByProduct(rows: StoreProductView[], sortBy: SearchSortBy, rank: Map
  * reflect the selected tab.
  */
 export async function searchStoreProducts(prisma: PrismaClient, storeId: string, params: StoreSearchParams) {
-  const { productIds, meta } = await searchProducts(prisma, storeId, params.q, { exact: params.exact });
+  const boost = await storeBrandBoost(prisma, storeId);
+  const { productIds, meta } = await searchProducts(prisma, storeId, params.q, { exact: params.exact, boost });
   const productWhere: Prisma.ProductWhereInput = productIds.length > 0
     ? { id: { in: productIds } }
     : { name: { contains: params.q, mode: "insensitive" } };
@@ -146,6 +148,6 @@ export async function searchStoreProducts(prisma: PrismaClient, storeId: string,
     (!params.tag || r.product.tags.includes(params.tag)) &&
     (!params.subcategoryId || r.product.subcategoryId === params.subcategoryId));
   const facets: SearchFacets = { tags: tagFacets(ranked), subcategories: subcategoryFacets(ranked, meta.correctedQuery ?? params.q), ...filterFacets(inTag) };
-  const data = sortByProduct(applyFilters(inTag, params), params.sortBy, rank);
+  const data = markBrandPicks(sortByProduct(applyFilters(inTag, params), params.sortBy, rank), boost);
   return { data, facets, searchMeta: meta };
 }

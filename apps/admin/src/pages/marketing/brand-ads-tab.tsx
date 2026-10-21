@@ -22,7 +22,14 @@ interface BrandAdCampaign {
   optedOut: boolean;
 }
 
-function BrandSearch({ blocked, disabled, onChange }: { blocked: BrandRef[]; disabled: boolean; onChange: (brands: BrandRef[]) => void }) {
+interface BrandSettings {
+  allowBrandAds: boolean;
+  blockedBrands: BrandRef[];
+  boostOwnBrands: boolean;
+  featuredBrands: BrandRef[];
+}
+
+function BrandSearch({ value, placeholder, disabled, onChange }: { value: BrandRef[]; placeholder: string; disabled: boolean; onChange: (brands: BrandRef[]) => void }) {
   const [options, setOptions] = useState<BrandRef[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -36,7 +43,7 @@ function BrandSearch({ blocked, disabled, onChange }: { blocked: BrandRef[]; dis
     }
   };
 
-  const known = new Map([...blocked, ...options].map((b) => [b.id, b]));
+  const known = new Map([...value, ...options].map((b) => [b.id, b]));
   return (
     <Select
       mode="multiple"
@@ -44,9 +51,9 @@ function BrandSearch({ blocked, disabled, onChange }: { blocked: BrandRef[]; dis
       filterOption={false}
       disabled={disabled}
       loading={loading}
-      placeholder="Search brands to block"
+      placeholder={placeholder}
       style={{ width: "100%" }}
-      value={blocked.map((b) => b.id)}
+      value={value.map((b) => b.id)}
       options={[...known.values()].map((b) => ({ value: b.id, label: b.name }))}
       onSearch={(q) => void search(q)}
       onChange={(ids: string[]) => onChange(ids.flatMap((id) => known.get(id) ?? []))}
@@ -61,16 +68,14 @@ function discountText(c: BrandAdCampaign): string {
 
 function useBrandAds() {
   const { notification } = App.useApp();
-  const [allow, setAllow] = useState(true);
-  const [blocked, setBlocked] = useState<BrandRef[]>([]);
+  const [settings, setSettings] = useState<BrandSettings>({ allowBrandAds: true, blockedBrands: [], boostOwnBrands: true, featuredBrands: [] });
   const [campaigns, setCampaigns] = useState<BrandAdCampaign[]>([]);
   const [saving, setSaving] = useState(false);
 
   const load = useCallback(async () => {
     try {
       const [settings, list] = await Promise.all([axiosInstance.get("/marketing/brand-ads"), axiosInstance.get("/marketing/brand-ads/campaigns")]);
-      setAllow(settings.data.data.allowBrandAds);
-      setBlocked(settings.data.data.blockedBrands);
+      setSettings(settings.data.data);
       setCampaigns(list.data.data);
     } catch (err) {
       notification.error({ message: errorMessage(err, "Could not load brand ads") });
@@ -79,12 +84,15 @@ function useBrandAds() {
 
   useEffect(() => { void load(); }, [load]);
 
-  const save = async (nextAllow: boolean, nextBlocked: BrandRef[]) => {
+  const save = async (patch: Partial<BrandSettings>) => {
+    const next = { ...settings, ...patch };
     setSaving(true);
     try {
-      await axiosInstance.put("/marketing/brand-ads", { allowBrandAds: nextAllow, blockedBrandIds: nextBlocked.map((b) => b.id) });
-      setAllow(nextAllow);
-      setBlocked(nextBlocked);
+      await axiosInstance.put("/marketing/brand-ads", {
+        allowBrandAds: next.allowBrandAds, blockedBrandIds: next.blockedBrands.map((b) => b.id),
+        boostOwnBrands: next.boostOwnBrands, featuredBrandIds: next.featuredBrands.map((b) => b.id),
+      });
+      setSettings(next);
     } catch (err) {
       notification.error({ message: errorMessage(err, "Could not save") });
     } finally {
@@ -101,11 +109,11 @@ function useBrandAds() {
     }
   };
 
-  return { allow, blocked, campaigns, saving, save, optOut };
+  return { settings, campaigns, saving, save, optOut };
 }
 
 export function BrandAdsTab({ canEdit }: { canEdit: boolean }) {
-  const { allow, blocked, campaigns, saving, save, optOut } = useBrandAds();
+  const { settings, campaigns, saving, save, optOut } = useBrandAds();
   const columns = [
     { title: "Brand", render: (_: unknown, c: BrandAdCampaign) => <Space><Avatar src={c.brand.imageUrl} size="small">{c.brand.name[0]}</Avatar>{c.brand.name}</Space> },
     { title: "Campaign", dataIndex: "title" },
@@ -133,11 +141,24 @@ export function BrandAdsTab({ canEdit }: { canEdit: boolean }) {
         <Card size="small" title="Brand ads in my stores" style={{ marginBottom: 16 }}>
           <Space direction="vertical" style={{ width: "100%" }}>
             <Space>
-              <Switch checked={allow} disabled={!canEdit} loading={saving} onChange={(v) => void save(v, blocked)} />
+              <Switch checked={settings.allowBrandAds} disabled={!canEdit} loading={saving} onChange={(v) => void save({ allowBrandAds: v })} />
               <Text>Show brand ads in my stores</Text>
             </Space>
             <Paragraph type="secondary" style={{ margin: 0 }}>Blocked brands</Paragraph>
-            <BrandSearch blocked={blocked} disabled={!canEdit || saving} onChange={(next) => void save(allow, next)} />
+            <BrandSearch value={settings.blockedBrands} placeholder="Search brands to block" disabled={!canEdit || saving} onChange={(next) => void save({ blockedBrands: next })} />
+          </Space>
+        </Card>
+        <Card size="small" title="Brands you promote" style={{ marginBottom: 16 }}>
+          <Space direction="vertical" style={{ width: "100%" }}>
+            <Paragraph type="secondary" style={{ margin: 0 }}>
+              Your own brands and featured brands come first in search, category pages and voice or list orders, marked "Our brand" or "Featured" for shoppers.
+            </Paragraph>
+            <Space>
+              <Switch checked={settings.boostOwnBrands} disabled={!canEdit} loading={saving} onChange={(v) => void save({ boostOwnBrands: v })} />
+              <Text>Promote my own brands</Text>
+            </Space>
+            <Paragraph type="secondary" style={{ margin: 0 }}>Featured brands</Paragraph>
+            <BrandSearch value={settings.featuredBrands} placeholder="Search brands to feature" disabled={!canEdit || saving} onChange={(next) => void save({ featuredBrands: next })} />
           </Space>
         </Card>
       </ReadableSection>

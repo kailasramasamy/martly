@@ -1,4 +1,4 @@
-import type { HeroTileLayout } from "@martly/shared/constants";
+import type { BrandPick, HeroTileLayout } from "@martly/shared/constants";
 import type { CampaignTile, HomeTheme } from "@martly/shared/types";
 import type { PaginatedResponse } from "@martly/shared/types";
 
@@ -73,6 +73,8 @@ export interface StoreProduct {
   product: Product;
   /** Set on a paid placement; its banner counts the views and taps */
   sponsored?: { bannerId: string };
+  /** The store promotes this brand (its own, or one the owner features); labelled on the card */
+  brandPick?: BrandPick;
 }
 
 export interface Translations {

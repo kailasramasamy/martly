@@ -20,8 +20,10 @@ import { discountLabel } from "./promo-utils";
 import type { BrandAdsSettings, BrandCampaign } from "./plan-types";
 
 const EXPLAINER = "Brand ads show in your stores only for brands you stock. Block any brand you don't want. A brand promotion lowers prices on that brand, and the brand reimburses the discount. You can opt out of a promotion before it starts.";
+const PROMOTE_NOTE = "Your own brands and the brands you feature come first in search, category pages and voice or list orders, marked \"Our brand\" or \"Featured\".";
 
-type Blocked = BrandAdsSettings["blockedBrands"];
+type Brands = BrandAdsSettings["blockedBrands"];
+const ids = (brands: Brands) => brands.map((b) => b.id).join();
 
 export function BrandAdsScreen() {
   const settings = useResource<BrandAdsSettings>("/api/v1/marketing/brand-ads");
@@ -45,34 +47,51 @@ function SettingsCard({ initial, onSaved }: { initial: BrandAdsSettings; onSaved
   const { run, running } = useAction();
   const canEdit = can(user, "brand-ads", "edit");
   const [allow, setAllow] = useState(initial.allowBrandAds);
-  const [blocked, setBlocked] = useState<Blocked>(initial.blockedBrands);
-  const dirty = allow !== initial.allowBrandAds || blocked.map((b) => b.id).join() !== initial.blockedBrands.map((b) => b.id).join();
+  const [blocked, setBlocked] = useState<Brands>(initial.blockedBrands);
+  const [boostOwn, setBoostOwn] = useState(initial.boostOwnBrands);
+  const [featured, setFeatured] = useState<Brands>(initial.featuredBrands);
+  const dirty = allow !== initial.allowBrandAds || boostOwn !== initial.boostOwnBrands
+    || ids(blocked) !== ids(initial.blockedBrands) || ids(featured) !== ids(initial.featuredBrands);
 
-  const add = async (id: string) => {
-    if (blocked.some((b) => b.id === id)) return;
-    const res = await run(() => api.get<Blocked[number]>(`/api/v1/brands/${id}`));
-    if (res) setBlocked((prev) => [...prev, { id, name: res.data.name, imageUrl: res.data.imageUrl }]);
-  };
   const save = async () => {
-    const body = { allowBrandAds: allow, blockedBrandIds: blocked.map((b) => b.id) };
-    if (await run(() => api.put("/api/v1/marketing/brand-ads", body), "Brand ad settings saved")) onSaved();
+    const body = { allowBrandAds: allow, blockedBrandIds: blocked.map((b) => b.id), boostOwnBrands: boostOwn, featuredBrandIds: featured.map((b) => b.id) };
+    if (await run(() => api.put("/api/v1/marketing/brand-ads", body), "Brand settings saved")) onSaved();
   };
 
   return (
-    <SectionCard title="In your stores">
-      <SwitchRow label="Allow brand ads" description="Turn off to hide every brand promotion and banner" value={allow} onValueChange={setAllow} disabled={!canEdit} />
-      {allow ? (
-        <>
-          <Text style={styles.heading}>Blocked brands</Text>
-          {blocked.length === 0 ? <Text style={styles.note}>No brands blocked</Text> : null}
-          {blocked.map((b) => (
-            <ListRow key={b.id} title={b.name} imageUrl={b.imageUrl} imageContain trailing={canEdit ? <Button label="Remove" variant="ghost" compact onPress={() => setBlocked((prev) => prev.filter((x) => x.id !== b.id))} /> : undefined} />
-          ))}
-          {canEdit ? <RemotePicker label="Block a brand" path="/api/v1/brands" value={null} onChange={add} placeholder="Search brands" /> : null}
-        </>
-      ) : null}
-      {canEdit ? <Button label="Save" onPress={save} loading={running} disabled={!dirty} style={styles.save} /> : <Text style={styles.note}>Only the owner can change this</Text>}
-    </SectionCard>
+    <>
+      <SectionCard title="In your stores">
+        <SwitchRow label="Allow brand ads" description="Turn off to hide every brand promotion and banner" value={allow} onValueChange={setAllow} disabled={!canEdit} />
+        {allow ? <BrandList title="Blocked brands" empty="No brands blocked" addLabel="Block a brand" brands={blocked} onChange={setBlocked} canEdit={canEdit} /> : null}
+      </SectionCard>
+      <SectionCard title="Brands you promote">
+        <Text style={styles.note}>{PROMOTE_NOTE}</Text>
+        <SwitchRow label="Promote my own brands" description="Your organisation's brands lead their aisles" value={boostOwn} onValueChange={setBoostOwn} disabled={!canEdit} />
+        <BrandList title="Featured brands" empty="No featured brands" addLabel="Feature a brand" brands={featured} onChange={setFeatured} canEdit={canEdit} />
+      </SectionCard>
+      {canEdit ? <Button label="Save" onPress={save} loading={running} disabled={!dirty} /> : <Text style={styles.note}>Only the owner can change this</Text>}
+    </>
+  );
+}
+
+function BrandList({ title, empty, addLabel, brands, onChange, canEdit }: {
+  title: string; empty: string; addLabel: string; brands: Brands; onChange: (next: Brands) => void; canEdit: boolean;
+}) {
+  const { run } = useAction();
+  const add = async (id: string) => {
+    if (brands.some((b) => b.id === id)) return;
+    const res = await run(() => api.get<Brands[number]>(`/api/v1/brands/${id}`));
+    if (res) onChange([...brands, { id, name: res.data.name, imageUrl: res.data.imageUrl }]);
+  };
+  return (
+    <>
+      <Text style={styles.heading}>{title}</Text>
+      {brands.length === 0 ? <Text style={styles.note}>{empty}</Text> : null}
+      {brands.map((b) => (
+        <ListRow key={b.id} title={b.name} imageUrl={b.imageUrl} imageContain trailing={canEdit ? <Button label="Remove" variant="ghost" compact onPress={() => onChange(brands.filter((x) => x.id !== b.id))} /> : undefined} />
+      ))}
+      {canEdit ? <RemotePicker label={addLabel} path="/api/v1/brands" value={null} onChange={add} placeholder="Search brands" /> : null}
+    </>
   );
 }
 
@@ -115,5 +134,4 @@ const styles = StyleSheet.create({
   note: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, lineHeight: 18, paddingHorizontal: 4 },
   pad: { padding: 14 },
   heading: { fontFamily: fonts.bold, fontSize: 13, color: colors.text, marginTop: 12, marginBottom: 4 },
-  save: { marginTop: 12 },
 });
