@@ -4,31 +4,9 @@ import { authenticate } from "../../middleware/auth.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
 import type { ApiResponse } from "@martly/shared/types";
+import { createRateLimiter } from "../../services/rate-limit.js";
 
-// ── Rate Limiter ────────────────────────────────────
-const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
-const RATE_LIMIT = 30;
-const RATE_WINDOW_MS = 60_000;
-
-function checkRateLimit(userId: string): boolean {
-  const now = Date.now();
-  const entry = rateLimitMap.get(userId);
-  if (!entry || now > entry.resetAt) {
-    rateLimitMap.set(userId, { count: 1, resetAt: now + RATE_WINDOW_MS });
-    return true;
-  }
-  if (entry.count >= RATE_LIMIT) return false;
-  entry.count++;
-  return true;
-}
-
-// Clean up stale entries every 5 minutes
-setInterval(() => {
-  const now = Date.now();
-  for (const [key, entry] of rateLimitMap) {
-    if (now > entry.resetAt) rateLimitMap.delete(key);
-  }
-}, 5 * 60_000);
+const checkRateLimit = createRateLimiter(30, 60_000);
 
 // ── Tool Definitions ────────────────────────────────
 const tools: Anthropic.Tool[] = [
@@ -332,8 +310,10 @@ export async function aiRoutes(app: FastifyInstance) {
 
     for (let i = 0; i < MAX_ITERATIONS; i++) {
       const response = await anthropic.messages.create({
-        model: "claude-haiku-4-5-20251001",
-        max_tokens: 2048,
+        model: "claude-haiku-5-5",
+        max_tokens: 4096,
+        // Haiku 5.5 thinks by default; a shopping chat needs quick replies more than deep reasoning
+        output_config: { effort: "low" },
         system: systemPrompt,
         tools,
         messages: claudeMessages,

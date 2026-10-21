@@ -577,6 +577,7 @@ model Store {
   subscriptions         Subscription[]
   basketAddOns          BasketAddOn[]
   searchLogs            SearchLog[]
+  cartBuilderRuns       CartBuilderRun[]
   stockMovements        StockMovement[]
   stockCounts           StockCount[]
   catalogDrafts         CatalogDraft[]
@@ -635,6 +636,8 @@ model User {
   subscriptions       Subscription[]
   basketAddOns        BasketAddOn[]
   searchLogs          SearchLog[]
+  cartBuilderRuns     CartBuilderRun[]
+  shoppingListItems   ShoppingListItem[]
   promosCreated       Promo[]
   catalogDrafts       CatalogDraft[]
   memberPermissions   MemberPermission[]
@@ -2020,6 +2023,82 @@ model SearchEvent {
   @@unique([searchLogId, productId, type])
   @@index([productId])
   @@map("search_events")
+}
+
+enum CartBuilderSource {
+  VOICE
+  LIST
+  PHOTO
+  WHATSAPP
+}
+
+// One spoken or written list turned into a cart: what was said, what we offered, what the customer kept
+model CartBuilderRun {
+  id            String            @id @default(uuid())
+  userId        String            @map("user_id")
+  storeId       String            @map("store_id")
+  source        CartBuilderSource
+  inputText     String            @map("input_text")
+  /// Parsed lines with the store product IDs offered for each
+  lines         Json
+  matchedCount  Int               @map("matched_count")
+  pickCount     Int               @map("pick_count")
+  notFoundCount Int               @map("not_found_count")
+  /// What the customer added, per line; null until they add to cart
+  chosen        Json?
+  inputTokens   Int               @map("input_tokens")
+  outputTokens  Int               @map("output_tokens")
+  createdAt     DateTime          @default(now()) @map("created_at")
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  store Store @relation(fields: [storeId], references: [id], onDelete: Cascade)
+
+  @@index([storeId, createdAt])
+  @@index([userId, createdAt])
+  @@map("cart_builder_runs")
+}
+
+// A customer's running shopping list: items kept as written, matched to a store only when they build a cart
+model ShoppingListItem {
+  id        String    @id @default(uuid())
+  userId    String    @map("user_id")
+  text      String
+  createdAt DateTime  @default(now()) @map("created_at")
+  doneAt    DateTime? @map("done_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, doneAt])
+  @@map("shopping_list_items")
+}
+
+// How shoppers say things in their language, and the word the catalog lists them under (kadalai maavu → besan).
+// Platform-wide language knowledge, read into the shopping-list AI's prompt; managed by Super Admin
+model ListGlossaryTerm {
+  id         String   @id @default(uuid())
+  searchTerm String   @unique @map("search_term")
+  note       String?
+  isActive   Boolean  @default(true) @map("is_active")
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  phrases ListGlossaryPhrase[]
+
+  @@map("list_glossary_terms")
+}
+
+// One way of saying a glossary term, in native script or romanised ("கடலை மாவு", "kadalai maavu")
+model ListGlossaryPhrase {
+  id       String @id @default(uuid())
+  termId   String @map("term_id")
+  language String
+  text     String
+
+  term ListGlossaryTerm @relation(fields: [termId], references: [id], onDelete: Cascade)
+
+  @@unique([language, text])
+  @@index([termId])
+  @@map("list_glossary_phrases")
 }
 
 // A promo drafted by the promo agent from an admin's one-line brief: banner + collection + optional discount

@@ -26,6 +26,8 @@ export const nav: Strings<"nav"> = {
   supportTickets: "என் புகார்கள்",
   ticketDetails: "புகார் விவரங்கள்",
   smartReorder: "விரைவு மறுஆர்டர்",
+  speakList: "பட்டியலைச் சொல்லுங்கள்",
+  myList: "என் பட்டியல்",
   returnRequest: "திருப்பி அனுப்பக் கோரு",
   liveTracking: "நேரலை கண்காணிப்பு",
   membership: "மார்ட் பிளஸ்",

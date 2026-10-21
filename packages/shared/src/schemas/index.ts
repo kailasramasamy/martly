@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { BULK_STATUSES } from "../order-flow/index.js";
-import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, SUPPORTED_LANGUAGES, CatalogDraftStatus, Permission, StockCountStatus, ReturnRemedy, ReturnMethod, RefuseReason } from "../constants/index.js";
+import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, CartBuilderSource, GLOSSARY_LANGUAGES, SUPPORTED_LANGUAGES, CatalogDraftStatus, Permission, StockCountStatus, ReturnRemedy, ReturnMethod, RefuseReason } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -1493,6 +1493,80 @@ export const stockCountListQuerySchema = z.object({
   page: z.coerce.number().int().min(1).default(1),
   pageSize: z.coerce.number().int().min(1).max(100).default(20),
 });
+
+// ── Cart builder (spoken or written list → cart) ──
+// The shopper's app language, so the glossary phrases in it reach the list reader
+const appLanguage = z.string().trim().max(8).optional();
+
+export const listToCartSchema = z.object({
+  storeId: z.string().uuid(),
+  text: z.string().trim().min(1).max(2000),
+  source: z.nativeEnum(CartBuilderSource),
+  language: appLanguage,
+});
+export type ListToCartInput = z.infer<typeof listToCartSchema>;
+
+// One line of a list under review, re-worded by the shopper and searched again on its own
+export const listToCartLineSchema = z.object({
+  storeId: z.string().uuid(),
+  text: z.string().trim().min(1).max(200),
+  language: appLanguage,
+});
+export type ListToCartLineInput = z.infer<typeof listToCartLineSchema>;
+
+// What the customer kept from each line of a run (storeProductId null = they dropped the line)
+export const cartBuilderOutcomeSchema = z.object({
+  chosen: z.array(z.object({
+    line: z.number().int().min(0),
+    storeProductId: z.string().uuid().nullable(),
+    quantity: z.number().int().min(0).max(99),
+  })).max(100),
+});
+export type CartBuilderOutcomeInput = z.infer<typeof cartBuilderOutcomeSchema>;
+
+// ── Shopping list (a customer's running list) ──
+export const addShoppingListItemSchema = z.object({ text: z.string().trim().min(1).max(200) });
+export type AddShoppingListItemInput = z.infer<typeof addShoppingListItemSchema>;
+
+// Several items at once, e.g. a past list picked from Recent lists
+export const addShoppingListItemsSchema = z.object({
+  texts: z.array(z.string().trim().min(1).max(200)).min(1).max(100),
+});
+export type AddShoppingListItemsInput = z.infer<typeof addShoppingListItemsSchema>;
+
+export const updateShoppingListItemSchema = z.object({ text: z.string().trim().min(1).max(200) });
+export type UpdateShoppingListItemInput = z.infer<typeof updateShoppingListItemSchema>;
+
+export const buildShoppingListSchema = z.object({ storeId: z.string().uuid(), language: appLanguage });
+export type BuildShoppingListInput = z.infer<typeof buildShoppingListSchema>;
+
+export const shoppingListDoneSchema = z.object({ ids: z.array(z.string().uuid()).min(1).max(100) });
+export type ShoppingListDoneInput = z.infer<typeof shoppingListDoneSchema>;
 export * from "./marketing.js";
 export * from "./home.js";
 export * from "./ledger.js";
+
+// ── List glossary (how shoppers say things → the word the catalog uses) ──
+const glossaryLanguageCodes = Object.keys(GLOSSARY_LANGUAGES) as [keyof typeof GLOSSARY_LANGUAGES, ...(keyof typeof GLOSSARY_LANGUAGES)[]];
+
+export const glossaryPhraseSchema = z.object({
+  language: z.enum(glossaryLanguageCodes),
+  text: z.string().trim().min(1).max(80),
+});
+
+export const listGlossaryTermSchema = z.object({
+  searchTerm: z.string().trim().toLowerCase().min(1).max(60),
+  note: z.string().trim().max(120).nullish(),
+  isActive: z.boolean().default(true),
+  phrases: z.array(glossaryPhraseSchema).min(1).max(30),
+});
+export type ListGlossaryTermInput = z.infer<typeof listGlossaryTermSchema>;
+
+export const listGlossaryQuerySchema = z.object({
+  q: z.string().trim().optional(),
+  language: z.enum(glossaryLanguageCodes).optional(),
+  page: z.coerce.number().int().min(1).default(1),
+  pageSize: z.coerce.number().int().min(1).max(100).default(20),
+});
+
+export const listGlossaryActiveSchema = z.object({ isActive: z.boolean() });

@@ -25,6 +25,8 @@ export const nav = {
   supportTickets: "My Tickets",
   ticketDetails: "Ticket Details",
   smartReorder: "Smart Reorder",
+  speakList: "Speak your list",
+  myList: "My list",
   returnRequest: "Request Return",
   liveTracking: "Live Tracking",
   membership: "Mart Plus",

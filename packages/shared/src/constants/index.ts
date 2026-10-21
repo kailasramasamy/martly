@@ -339,6 +339,28 @@ export const FESTIVAL_REGIONS = {
 } as const;
 export type FestivalRegion = keyof typeof FESTIVAL_REGIONS;
 
+// Languages the list glossary holds phrases for (catalog translations use SUPPORTED_LANGUAGES)
+export const GLOSSARY_LANGUAGES = {
+  ta: "Tamil",
+  kn: "Kannada",
+  ml: "Malayalam",
+  te: "Telugu",
+  hi: "Hindi",
+} as const;
+export type GlossaryLanguage = keyof typeof GLOSSARY_LANGUAGES;
+
+// The language shoppers speak in each festival region, so a store's lists get that language's glossary phrases;
+// regions without one get every language
+export const REGION_LANGUAGES: Partial<Record<FestivalRegion, GlossaryLanguage>> = {
+  TN: "ta",
+  KA: "kn",
+  KL: "ml",
+  AP: "te",
+  TS: "te",
+  DL: "hi",
+  UP: "hi",
+};
+
 export const BannerPlacementLabels: Record<BannerPlacement, string> = {
   HERO_CAROUSEL: "Hero Carousel",
   CATEGORY_STRIP: "Category Strip",
@@ -654,6 +676,23 @@ export const SearchEventType = {
   ADD_TO_CART: "ADD_TO_CART",
 } as const;
 export type SearchEventType = (typeof SearchEventType)[keyof typeof SearchEventType];
+
+// Where a list-to-cart request came from (mirrors Prisma CartBuilderSource)
+export const CartBuilderSource = {
+  VOICE: "VOICE",
+  LIST: "LIST",
+  PHOTO: "PHOTO",
+  WHATSAPP: "WHATSAPP",
+} as const;
+export type CartBuilderSource = (typeof CartBuilderSource)[keyof typeof CartBuilderSource];
+
+// How sure the cart builder is about a line: added for them, three to pick from, or nothing in stock
+export const CartLineConfidence = {
+  MATCHED: "MATCHED",
+  PICK: "PICK",
+  NOT_FOUND: "NOT_FOUND",
+} as const;
+export type CartLineConfidence = (typeof CartLineConfidence)[keyof typeof CartLineConfidence];
 
 export const SearchSortLabels: Record<SearchSortBy, string> = {
   relevance: "Relevance",

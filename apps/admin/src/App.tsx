@@ -47,6 +47,7 @@ import {
   SolutionOutlined,
   WalletOutlined,
   SwapOutlined,
+  TranslationOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -105,6 +106,9 @@ import { HomeLayoutList } from "./pages/home-layout/list";
 import { FestivalList } from "./pages/festival-calendar/list";
 import { FestivalCreate } from "./pages/festival-calendar/create";
 import { FestivalEdit } from "./pages/festival-calendar/edit";
+import { GlossaryList } from "./pages/list-glossary/list";
+import { GlossaryCreate } from "./pages/list-glossary/create";
+import { GlossaryEdit } from "./pages/list-glossary/edit";
 import { CouponList } from "./pages/coupons/list";
 import { CouponCreate } from "./pages/coupons/create";
 import { CouponEdit } from "./pages/coupons/edit";
@@ -350,6 +354,13 @@ export default function App() {
                 create: "/promos/create",
                 show: "/promos/show/:id",
                 meta: { label: "Promotions", icon: <RocketOutlined />, parent: "marketing" },
+              },
+              {
+                name: "list-glossary",
+                list: "/list-glossary",
+                create: "/list-glossary/create",
+                edit: "/list-glossary/edit/:id",
+                meta: { label: "List glossary", icon: <TranslationOutlined />, parent: "inventory" },
               },
               {
                 name: "festival-events",
@@ -737,6 +748,11 @@ export default function App() {
                   <Route index element={<FestivalList />} />
                   <Route path="create" element={<FestivalCreate />} />
                   <Route path="edit/:id" element={<FestivalEdit />} />
+                </Route>
+                <Route path="/list-glossary">
+                  <Route index element={<GlossaryList />} />
+                  <Route path="create" element={<GlossaryCreate />} />
+                  <Route path="edit/:id" element={<GlossaryEdit />} />
                 </Route>
                 <Route path="/coupons">
                   <Route index element={<CouponList />} />

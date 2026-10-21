@@ -10,6 +10,7 @@ import { orders } from "./orders";
 import { account } from "./account";
 import { subscriptions } from "./subscriptions";
 import { auth } from "./auth";
+import { shoppingList } from "./shopping-list";
 
 /** English UI strings: the source of truth every other language must match key for key */
-export const en = { common, nav, cart, language, home, catalog, search, checkout, orders, account, subscriptions, auth };
+export const en = { common, nav, cart, language, home, catalog, search, checkout, orders, account, subscriptions, auth, shoppingList };

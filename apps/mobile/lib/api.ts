@@ -1,3 +1,4 @@
+import { fetch as streamingFetch } from "expo/fetch";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { API_URL } from "./config";
 import { strings } from "./i18n";
@@ -26,6 +27,19 @@ export class ApiError extends Error {
   }
 }
 
+/** Refreshes the access token once for any number of concurrent 401s; resolves to the new token, or null */
+function refreshAccessToken() {
+  if (!refreshPromise && tokenRefresher) {
+    refreshPromise = tokenRefresher().finally(() => { refreshPromise = null; });
+  }
+  return refreshPromise ?? Promise.resolve(null);
+}
+
+async function errorOf(response: { status: number; json: () => Promise<{ message?: string; error?: string }> }) {
+  const error = await response.json().catch(() => ({ message: strings("auth").errors.requestFailed, error: undefined }));
+  return new ApiError(error.message ?? `HTTP ${response.status}`, response.status, error.error);
+}
+
 async function request<T>(path: string, options: RequestInit = {}, isRetry = false): Promise<T> {
   const headers: Record<string, string> = {
     ...((options.headers as Record<string, string>) ?? {}),
@@ -47,22 +61,43 @@ async function request<T>(path: string, options: RequestInit = {}, isRetry = fal
 
   // On 401, try refreshing the token once (skip for credential endpoints, and for guests who never sent one)
   if (response.status === 401 && !isRetry && headers.Authorization && tokenRefresher && !NO_REFRESH_PATHS.some((p) => path.includes(p))) {
-    // Deduplicate concurrent refresh calls
-    if (!refreshPromise) {
-      refreshPromise = tokenRefresher().finally(() => { refreshPromise = null; });
-    }
-    const newToken = await refreshPromise;
-    if (newToken) {
+    if (await refreshAccessToken()) {
       return request<T>(path, options, true);
     }
   }
 
-  if (!response.ok) {
-    const error = await response.json().catch(() => ({ message: strings("auth").errors.requestFailed }));
-    throw new ApiError(error.message ?? `HTTP ${response.status}`, response.status, error.error);
-  }
+  if (!response.ok) throw await errorOf(response);
 
   return response.json() as Promise<T>;
+}
+
+/**
+ * POSTs and reads a newline-delimited JSON response as it arrives, handing each object to `onEvent`
+ * (so a screen can show results while the rest are still coming). Retries once on an expired session.
+ */
+async function stream<E>(path: string, body: unknown, onEvent: (event: E) => void, isRetry = false): Promise<void> {
+  const headers: Record<string, string> = { "Content-Type": "application/json" };
+  if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+  const response = await streamingFetch(`${API_URL}${path}`, { method: "POST", headers, body: JSON.stringify(body) });
+  if (response.status === 401 && !isRetry && headers.Authorization && (await refreshAccessToken())) {
+    return stream(path, body, onEvent, true);
+  }
+  if (!response.ok || !response.body) throw await errorOf(response);
+
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffered = "";
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buffered += decoder.decode(value, { stream: true });
+    let end: number;
+    while ((end = buffered.indexOf("\n")) >= 0) {
+      const line = buffered.slice(0, end).trim();
+      buffered = buffered.slice(end + 1);
+      if (line) onEvent(JSON.parse(line) as E);
+    }
+  }
 }
 
 export function getApiUrl() { return API_URL; }
@@ -81,4 +116,5 @@ export const api = {
     request<ApiResponse<T>>(path, { method: "DELETE", ...(body ? { body: JSON.stringify(body) } : {}) }),
   upload: <T>(path: string, form: FormData) =>
     request<ApiResponse<T>>(path, { method: "POST", body: form }),
+  stream,
 };

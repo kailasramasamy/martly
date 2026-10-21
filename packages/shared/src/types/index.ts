@@ -307,4 +307,66 @@ export interface PromoBanner {
   taps: number;
   ctr: number;
 }
+
+// ── Cart builder ──
+/** One store product offered for a list line, with the pack count that covers what was asked */
+export interface CartBuilderCandidate<P = unknown> {
+  storeProduct: P;
+  /** The product's other sizes in stock, smallest first (not `storeProduct` itself) */
+  sizes: P[];
+  quantity: number;
+  boughtBefore: boolean;
+}
+
+/** One line of a spoken or written list. MATCHED: the first candidate goes in the cart unless changed; PICK: the customer chooses */
+export interface CartBuilderLine<P = unknown> {
+  /** The words as the customer said or wrote them */
+  text: string;
+  /** The item, cleaned up ("Ponni rice") */
+  item: string;
+  confidence: "MATCHED" | "PICK" | "NOT_FOUND";
+  /** Up to ten products, best first; empty when NOT_FOUND */
+  candidates: CartBuilderCandidate<P>[];
+}
+
+export interface CartBuilderResult<P = unknown> {
+  runId: string;
+  lines: CartBuilderLine<P>[];
+}
+
+/**
+ * The list-to-cart response, streamed as newline-delimited JSON so products show as they're found: the parsed
+ * lines first, then each line's match as it completes (in any order), then the logged run. `error` ends it early.
+ */
+export type CartBuilderEvent<P = unknown> =
+  | { type: "lines"; lines: { text: string; item: string }[] }
+  | { type: "line"; index: number; line: CartBuilderLine<P> }
+  | { type: "done"; runId: string; itemIds?: string[] }
+  | { type: "error"; message: string };
+
+export interface ShoppingListItem {
+  id: string;
+  text: string;
+  createdAt: string;
+}
+
+/** A glossary entry: the ways shoppers say a thing, and the word the catalog uses for it */
+export interface ListGlossaryTerm {
+  id: string;
+  searchTerm: string;
+  note: string | null;
+  isActive: boolean;
+  phrases: { id: string; language: string; text: string }[];
+  updatedAt: string;
+}
+
+/** A list the customer built a cart from before, to pick items from again */
+export interface RecentList {
+  /** The cart builder run it came from */
+  id: string;
+  createdAt: string;
+  store: { name: string; translations?: Record<string, { name?: string }> | null };
+  /** Each item in the customer's own words */
+  items: string[];
+}
 export * from "./home.js";

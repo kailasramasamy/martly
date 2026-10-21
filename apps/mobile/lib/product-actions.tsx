@@ -15,7 +15,8 @@ import type { StoreProduct } from "./types";
 export interface ProductActions {
   storeId: string | undefined;
   cartQuantityMap: Map<string, number>;
-  addToCart: (sp: StoreProduct) => void;
+  /** Adds one, or `quantity` (e.g. the packs a spoken list asked for) */
+  addToCart: (sp: StoreProduct, quantity?: number) => void;
   updateQuantity: (storeProductId: string, quantity: number) => void;
   showVariants: (variants: StoreProduct[]) => void;
   isWishlisted: (productId: string) => boolean;
@@ -29,7 +30,7 @@ const ProductActionsContext = createContext<ProductActions | null>(null);
 
 // Cart / tomorrow's-basket logic shared by every screen that lists products
 function useCartActions(store: CartStore | null) {
-  const { storeId: cartStoreId, items, addItem, updateQuantity: updateCartQty } = useCart();
+  const { storeId: cartStoreId, items, addItem, addItems, updateQuantity: updateCartQty } = useCart();
   const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
   const { isMember } = useMembership();
   const toast = useToast();
@@ -38,7 +39,7 @@ function useCartActions(store: CartStore | null) {
 
   const cartQtyMap = useMemo(() => new Map(items.map((i) => [i.storeProductId, i.quantity])), [items]);
 
-  const addToCart = useCallback((sp: StoreProduct) => {
+  const addToCart = useCallback((sp: StoreProduct, quantity = 1) => {
     if (!store) return;
     if (isBasketMode) {
       addBasketItem(sp.id);
@@ -50,11 +51,11 @@ function useCartActions(store: CartStore | null) {
       variantId: sp.variant.id, variantName: sp.variant.name,
       price: getBestPrice(sp, isMember), imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
     };
-    const add = () => addItem(store, item);
+    const add = () => (quantity > 1 ? addItems(store, [{ ...item, quantity }]) : addItem(store, item));
     // The cart holds one store at a time: confirm before discarding another store's cart
     if (cartStoreId && cartStoreId !== store.id) setPendingReplace(() => add);
     else add();
-  }, [store, cartStoreId, addItem, isMember, isBasketMode, addBasketItem, toast, t]);
+  }, [store, cartStoreId, addItem, addItems, isMember, isBasketMode, addBasketItem, toast, t]);
 
   const updateQuantity = useCallback((spId: string, qty: number) => {
     if (isBasketMode) updateBasketQuantity(spId, qty);
@@ -86,8 +87,8 @@ export function ProductActionsProvider({ store, onTrack, children }: {
   );
   const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
 
-  const addToCart = useCallback((sp: StoreProduct) => {
-    cart.addToCart(sp);
+  const addToCart = useCallback((sp: StoreProduct, quantity?: number) => {
+    cart.addToCart(sp, quantity);
     onTrack?.(sp.product.id, SearchEventType.ADD_TO_CART);
   }, [cart.addToCart, onTrack]);
   const trackOpen = useMemo(() => onTrack && ((productId: string) => onTrack(productId, SearchEventType.CLICK)), [onTrack]);

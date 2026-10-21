@@ -51,7 +51,7 @@ export function SizePager({ sizes, primaryId, index, width, onIndex, onPress }: 
 // Every size at a glance, on the photo itself: tap to switch the card to that pack. Sizes that don't fit
 // collapse into "+N", which opens the size sheet; a size beyond them (reached by swiping) takes the last slot
 export function SizeChips({ sizes, selectedId, maxChips, onSelect, onMore, style }: {
-  sizes: StoreProduct[]; selectedId: string; maxChips: number; onSelect: (id: string) => void; onMore?: () => void;
+  sizes: { id: string; variant: { name: string } }[]; selectedId: string; maxChips: number; onSelect: (id: string) => void; onMore?: () => void;
   style?: StyleProp<ViewStyle>;
 }) {
   const t = useStrings("catalog");

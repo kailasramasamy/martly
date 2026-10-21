@@ -34,10 +34,11 @@ const ADD_WIDTH = 66;
 // Extends the 32pt controls to a 44pt touch target
 const HIT_SLOP = { top: 6, bottom: 6, left: 6, right: 6 };
 const STEP_HIT_SLOP = { top: 8, bottom: 8, left: 6, right: 6 };
+const UNIT_PICK_SLOP = { top: 6, bottom: 6, left: 4, right: 4 };
 
 interface FeaturedProductCardProps {
   item: StoreProduct;
-  onAddToCart: (sp: StoreProduct) => void;
+  onAddToCart: (sp: StoreProduct, quantity?: number) => void;
   onUpdateQuantity: (storeProductId: string, quantity: number) => void;
   quantity?: number;
   storeId?: string;
@@ -57,6 +58,9 @@ interface FeaturedProductCardProps {
   compact?: boolean;
   // Called as the product page opens (search result tracking)
   onOpen?: () => void;
+  // Quick add (list review): open on this size, and ADD adds the size on show this many at once, sheet-free
+  preferredId?: string;
+  addCount?: (sp: StoreProduct) => number;
 }
 
 // A square photo tile with ADD in its bottom-right corner, Zepto-style
@@ -222,11 +226,15 @@ function useFollowCartSize(sizes: StoreProduct[], selectedId: string, select: (i
 function StandardCard(props: FeaturedProductCardProps) {
   const { onAddToCart, onUpdateQuantity, storeId, onShowVariants, isWishlisted, onToggleWishlist, isMember, width, elevated } = props;
   const sizes = bySize(props.variants ?? [props.item]);
-  const [selectedId, setSelectedId] = useState(props.item.id);
+  const [selectedId, setSelectedId] = useState(props.preferredId ?? props.item.id);
+  const quick = props.addCount != null;
   useFollowCartSize(sizes, selectedId, setSelectedId, props.quantityOf);
   // The chosen size drives the photo, price and ADD; it starts on the cheapest (the list's primary)
   const item = sizes.find((s) => s.id === selectedId) ?? props.item;
   const quantity = props.quantityOf?.(item.id) ?? props.quantity ?? 0;
+  // Quick add: before it's in the cart, the size line says how many packs ADD will put in ("2 × 1kg")
+  const packs = quick && quantity === 0 ? props.addCount!(item) : 1;
+  const unitLabel = packs > 1 ? `${packs} × ${item.variant.name}` : item.variant.name;
   const cardWidth = width ?? FEATURED_CARD_WIDTH;
   const tile = imageTileSize(cardWidth);
   // Swiping sizes only in grids: in a horizontal rail the swipe belongs to the rail
@@ -258,12 +266,21 @@ function StandardCard(props: FeaturedProductCardProps) {
         control={
           <AddControl
             item={item} quantity={quantity} variantCount={sizes.length} isOutOfStock={isOutOfStock}
-            onAddToCart={onAddToCart} onUpdateQuantity={onUpdateQuantity} onShowVariants={onShowVariants} cardWidth={cardWidth}
+            // Quick add: the first tap adds the packs asked for, + adds one more
+            onAddToCart={quick ? (sp) => onAddToCart(sp, quantity > 0 ? 1 : props.addCount!(sp)) : onAddToCart}
+            onUpdateQuantity={onUpdateQuantity} onShowVariants={quick ? undefined : onShowVariants} cardWidth={cardWidth}
           />
         }
       />
       <View style={[styles.content, elevated && styles.contentElevated]}>
-        <Text style={styles.unit} numberOfLines={2}>{item.variant.name}</Text>
+        {quick && sizes.length > 1 && onShowVariants ? (
+          <TouchableOpacity style={styles.unitPick} onPress={onShowVariants} hitSlop={UNIT_PICK_SLOP} accessibilityRole="button">
+            <Text style={styles.unitPickText} numberOfLines={1}>{unitLabel}</Text>
+            <Ionicons name="chevron-down" size={15} color={colors.primary} />
+          </TouchableOpacity>
+        ) : (
+          <Text style={[styles.unit, packs > 1 && styles.unitPacks]} numberOfLines={2}>{unitLabel}</Text>
+        )}
         <PriceBlock item={item} isMember={isMember} saving={packSaving(item, sizes)} />
         <CardDetails item={item} lowStock={isLowStock ? available : null} sponsored={!!props.item.sponsored} />
       </View>
@@ -310,6 +327,13 @@ const styles = StyleSheet.create({
   name: { fontFamily: fonts.semibold, fontSize: 12.5, lineHeight: 16, minHeight: 32, color: colors.text, marginTop: 3 },
   // The pack size on show, just above the price
   unit: { fontFamily: fonts.medium, fontSize: 11.5, lineHeight: 15, color: colors.textSecondary, marginBottom: 2 },
+  // Quick add's size switch: a full-width pill, 32 tall with slop to a 44 tap target
+  unitPick: {
+    flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 4, minHeight: 32, marginTop: 2, marginBottom: 6,
+    paddingHorizontal: 10, borderRadius: 8, borderWidth: 1, borderColor: "#99f6e4", backgroundColor: "#f0fdfa",
+  },
+  unitPickText: { flexShrink: 1, fontFamily: fonts.semibold, fontSize: 13, color: colors.primaryDark },
+  unitPacks: { fontFamily: fonts.semibold, color: colors.primaryDark },
   ratingRow: { flexDirection: "row", alignItems: "center", gap: 2, marginTop: 3 },
   ratingText: { fontFamily: fonts.semibold, fontSize: 10, color: "#92400e" },
   ratingCount: { fontFamily: fonts.regular, fontSize: 9.5, color: "#94a3b8" },

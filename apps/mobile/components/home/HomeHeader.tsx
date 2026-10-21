@@ -10,6 +10,7 @@ import { useAuth } from "../../lib/auth-context";
 import { useStrings } from "../../lib/i18n/use-strings";
 import { HomeHeaderLocation } from "../HomeHeaderLocation";
 import { SearchBarButton } from "../SearchBarButton";
+import { EasyShopRow } from "./EasyShopRow";
 import type { HomeTheme } from "@martly/shared/types";
 import type { Store } from "../../lib/types";
 
@@ -73,6 +74,8 @@ export function HomeHeader({ store, userArea, onPickStore, festive, collapsed = 
       </View>
       )}
       {store && <SearchBarButton onTint={tint} hints={searchHints} />}
+      {/* Folds away with the location row once scrolled, so only the search bar stays pinned */}
+      {store && !collapsed && <EasyShopRow onTint={tint} />}
     </View>
   );
 }

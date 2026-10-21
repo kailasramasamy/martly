@@ -23,6 +23,11 @@ interface ProductListProps extends PassThroughProps {
   midSlot?: { afterRows: number; element: ReactElement | null; bleed?: number };
   /** White, shadowed cards that stand out on a coloured screen */
   elevated?: boolean;
+  /**
+   * Quick add (a spoken or written list): the size picked for each product and how many. Cards open on that size
+   * and ADD adds it at once; the size line opens the size sheet instead of ADD.
+   */
+  picks?: Map<string, number>;
 }
 
 type GridRowItem = { key: string; products?: StoreProduct[] };
@@ -44,7 +49,7 @@ function buildGridRows(products: StoreProduct[], columns: number, afterRows: num
  * which supplies cart/wishlist actions and the size picker.
  */
 export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(function ProductList(
-  { products, layout, cardWidth, sortBy, numColumns = 2, midSlot, elevated, contentContainerStyle, ...listProps },
+  { products, layout, cardWidth, sortBy, numColumns = 2, midSlot, elevated, picks, contentContainerStyle, ...listProps },
   ref,
 ) {
   const actions = useProductActions();
@@ -79,9 +84,11 @@ export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(
         onToggleWishlist={actions.toggleWishlist}
         isMember={actions.isMember}
         elevated={elevated}
+        preferredId={picks && variants.find((v) => picks.has(v.id))?.id}
+        addCount={picks && ((sp) => picks.get(sp.id) ?? 1)}
       />
     );
-  }, [variantsByProductId, actions, layout, cardWidth, numColumns, elevated]);
+  }, [variantsByProductId, actions, layout, cardWidth, numColumns, elevated, picks]);
 
   const renderItem = useCallback(({ item }: { item: StoreProduct }) => renderCard(item), [renderCard]);
 
