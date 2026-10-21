@@ -15,6 +15,9 @@ org shows the same layout, and a section with nothing in stock at a store hides 
   - Two automatic entries expand on the server:
     - `LIVE_CAMPAIGNS`: one campaign card per live PROMO collection that no section already places.
     - `OTHER_COLLECTIONS`: a product row per live collection that isn't placed anywhere else.
+  - The server enforces two placements on every layout (`services/home/layout.ts`, since 2026-10-21):
+    - `HERO_BANNERS` is pinned right under `FESTIVE_HERO`, at the top when there's no festival, even if a saved layout moved or dropped it. It carries paid brand banners, and brand slides lead it.
+    - Campaign cards (placed or `LIVE_CAMPAIGNS`) are spread through the product rows (`PRODUCT_ROW`, `TABBED_ROW`) instead of stacked: brand-paid cards first, then a card for each live festival the single hero has no room for (unless a section already shows it), the first card after the first row, then one every two rows (closer when there are more cards than rows).
 - **Resolvers:** `services/home/resolvers/*`. Each section type resolves to its payload, or to null to hide it.
 - **Shared contract:** types, configs and labels live in `packages/shared/src/{constants,schemas,types}/home.ts`.
 - **Admin:**

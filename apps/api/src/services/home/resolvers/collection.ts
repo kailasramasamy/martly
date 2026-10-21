@@ -9,6 +9,6 @@ export function liveCollection(ctx: ResolveContext, collectionId: string | null)
       id: collectionId, isActive: true, AND: liveWindow(ctx.now),
       OR: [{ organizationId: ctx.store.organizationId }, { organizationId: null }],
     },
-    select: { id: true, title: true, subtitle: true, imageUrl: true, endsAt: true, translations: true },
+    select: { id: true, title: true, subtitle: true, imageUrl: true, textInImage: true, endsAt: true, translations: true },
   });
 }

@@ -3,6 +3,7 @@ import { promoOfferLabel } from "./campaign-look.js";
 import { liveWindow } from "../store-feed.js";
 import { DEFAULT_LAYOUT } from "./default-layout.js";
 import { festiveHeroesFor } from "./resolvers/system.js";
+import { rankedFestivals } from "../festive-hero.js";
 import type { LayoutEntry, ResolveContext } from "./types.js";
 
 export const SECTION_INCLUDE = { items: { orderBy: { sortOrder: "asc" } } } satisfies Prisma.HomeSectionInclude;
@@ -43,11 +44,13 @@ async function liveCampaigns(ctx: ResolveContext, placed: Set<string>): Promise<
       OR: orgOrGlobal(ctx.store.organizationId), AND: liveWindow(ctx.now),
     },
     orderBy: [{ sortOrder: "asc" }, { id: "asc" }],
-    select: { id: true, title: true, subtitle: true, translations: true, promo: { select: { discountType: true, discountValue: true } } },
+    select: {
+      id: true, title: true, subtitle: true, translations: true, promo: { select: { discountType: true, discountValue: true, chargedFrom: true } },
+    },
   });
   return collections.map((c) => ({
     id: `campaign-${c.id}`, type: "CAMPAIGN_CARD", title: c.title, subtitle: c.subtitle, translations: c.translations,
-    collectionId: c.id, config: { offerLabel: promoOfferLabel(c.promo) ?? undefined }, items: [],
+    collectionId: c.id, config: { offerLabel: promoOfferLabel(c.promo) ?? undefined }, items: [], cardLead: c.promo?.chargedFrom === "BRAND" ? "BRAND" : undefined,
   }));
 }
 
@@ -67,14 +70,55 @@ async function otherCollections(ctx: ResolveContext, placed: Set<string>): Promi
   }));
 }
 
-/** With no festival to show, the hero banner carousel takes the empty top slot instead of waiting further down */
-function bannersIntoHeroSlot(layout: LayoutEntry[]) {
-  const hero = layout.findIndex((e) => e.type === "FESTIVE_HERO");
-  const banners = layout.findIndex((e) => e.type === "HERO_BANNERS");
-  if (hero === -1 || banners === -1) return layout;
-  const rest = layout.filter((_, i) => i !== hero && i !== banners);
-  const at = banners < hero ? hero - 1 : hero;
-  return [...rest.slice(0, at), layout[banners], ...rest.slice(at)];
+/**
+ * The hero banner carousel carries paid brand banners, so it always sits right under the festive top (or leads the page
+ * without one), wherever a saved layout put it and even if the layout left it out.
+ */
+function pinHeroBanners(layout: LayoutEntry[]) {
+  const banners = layout.find((e) => e.type === "HERO_BANNERS") ?? DEFAULT_LAYOUT.find((e) => e.type === "HERO_BANNERS")!;
+  const rest = layout.filter((e) => e.type !== "HERO_BANNERS");
+  const at = rest.findIndex((e) => e.type === "FESTIVE_HERO") + 1;
+  return [...rest.slice(0, at), banners, ...rest.slice(at)];
+}
+
+// Live festivals the single hero has no room for get a campaign card each, unless a section already shows them
+async function festivalCards(ctx: ResolveContext, heroIds: string[], layout: LayoutEntry[]): Promise<LayoutEntry[]> {
+  const shown = new Set([...heroIds, ...layout.map((e) => e.collectionId).filter((id): id is string => !!id)]);
+  const festivals = await rankedFestivals(ctx.prisma, ctx.store.organizationId, ctx.now);
+  return festivals.filter((f) => !shown.has(f.id)).map((f) => ({
+    id: `festival-${f.id}`, type: "CAMPAIGN_CARD", title: f.heroTitle ?? f.title, subtitle: f.heroSubtitle ?? f.subtitle,
+    translations: f.translations, collectionId: f.id, config: {}, items: [], cardLead: "FESTIVAL",
+  }));
+}
+
+const CARD_LEAD_ORDER = { BRAND: 0, FESTIVAL: 1 } as const;
+const leadRank = (e: LayoutEntry) => (e.cardLead ? CARD_LEAD_ORDER[e.cardLead] : 2);
+
+// Product rows that space campaign cards apart: collection-backed, so they reliably have products to show
+const SPACER_TYPES = new Set(["PRODUCT_ROW", "TABBED_ROW"]);
+const MAX_ROWS_BETWEEN_CARDS = 2;
+
+/**
+ * Campaign cards stacked together read as a wall of ads and push products down, so they're spread through the product
+ * rows: brand-paid cards first, then festivals, the first card after the first row, then every two rows (closer when
+ * cards outnumber rows). Cards beyond the last row follow it.
+ */
+function interleaveCampaignCards(layout: LayoutEntry[]) {
+  const cards = layout.filter((e) => e.type === "CAMPAIGN_CARD").sort((a, b) => leadRank(a) - leadRank(b));
+  const rest = layout.filter((e) => e.type !== "CAMPAIGN_CARD");
+  const rows = rest.filter((e) => SPACER_TYPES.has(e.type)).length;
+  if (cards.length < 2 || rows === 0) return layout;
+  const gap = Math.min(MAX_ROWS_BETWEEN_CARDS, Math.max(1, Math.floor((rows - 1) / (cards.length - 1))));
+  const out: LayoutEntry[] = [];
+  let rowsSeen = 0;
+  for (const entry of rest) {
+    out.push(entry);
+    if (!SPACER_TYPES.has(entry.type)) continue;
+    rowsSeen++;
+    const due = (rowsSeen - 1) % gap === 0 || rowsSeen === rows;
+    if (due) out.push(...cards.splice(0, rowsSeen === rows ? cards.length : 1));
+  }
+  return out;
 }
 
 /** The layout as the app sees it: automatic sections replaced by the cards and rows they stand for. */
@@ -82,9 +126,11 @@ export async function expandLayout(ctx: ResolveContext, saved: LayoutEntry[]): P
   // Festivals in the hero carousel are placed; ones it has no room for fall through to plain rows
   const heroEntry = saved.find((e) => e.type === "FESTIVE_HERO");
   const heroes = heroEntry ? await festiveHeroesFor(ctx, heroEntry) : [];
-  const layout = heroEntry && heroes.length === 0 ? bannersIntoHeroSlot(saved) : saved;
+  const layout = pinHeroBanners(saved);
+  const festivals = await festivalCards(ctx, heroes.map((h) => h.id), layout);
   const placed = new Set([
     ...heroes.map((h) => h.id),
+    ...festivals.map((f) => f.collectionId!),
     ...layout.flatMap((e) => [e.collectionId, ...e.items.map((i) => i.collectionId)]).filter((id): id is string => !!id),
   ]);
   const expanded = await Promise.all(layout.map((entry) => {
@@ -92,5 +138,5 @@ export async function expandLayout(ctx: ResolveContext, saved: LayoutEntry[]): P
     if (entry.type === "OTHER_COLLECTIONS") return otherCollections(ctx, placed);
     return [entry];
   }));
-  return expanded.flat();
+  return interleaveCampaignCards([...expanded.flat(), ...festivals]);
 }

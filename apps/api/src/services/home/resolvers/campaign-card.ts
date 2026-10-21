@@ -27,7 +27,9 @@ export const campaignCard: SectionResolver = async (ctx, entry) => {
     type: "CAMPAIGN_CARD",
     collectionId: collection.id,
     offerLabel: config.offerLabel ?? null,
-    imageUrl: config.imageUrl ?? collection.imageUrl,
+    // A finished banner (headline painted in) would be cropped and repeat the card's own text, so the card fans out its
+    // products instead
+    imageUrl: config.imageUrl ?? (collection.textInImage ? null : collection.imageUrl),
     theme: config.theme ?? defaultTheme(collection.id),
     tiles,
     highlights,

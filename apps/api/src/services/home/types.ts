@@ -32,6 +32,8 @@ export interface LayoutEntry {
   collectionId: string | null;
   config: Record<string, unknown>;
   items: LayoutItem[];
+  /** Campaign cards that lead the others: a brand-paid promotion's, then a live festival's that missed the hero */
+  cardLead?: "BRAND" | "FESTIVAL";
 }
 
 export type ResolvedSection = HomeSection<any>;

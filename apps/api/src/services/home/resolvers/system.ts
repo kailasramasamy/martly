@@ -35,7 +35,12 @@ const bannersFor = (placement: "HERO_CAROUSEL" | "MID_PAGE" | "HOME_POSTER"): Se
   const banners = await storeBanners(ctx.prisma, ctx.store, [placement]);
   return banners.length > 0 ? system(entry, { banners }) : null;
 };
-export const heroBanners = bannersFor("HERO_CAROUSEL");
+// Paid brand slides lead the carousel, ahead of the store's own banners
+export const heroBanners: SectionResolver = async (ctx, entry) => {
+  const banners = await storeBanners(ctx.prisma, ctx.store, ["HERO_CAROUSEL"]);
+  const ordered = [...banners.filter((b) => b.sponsorType === "BRAND"), ...banners.filter((b) => b.sponsorType !== "BRAND")];
+  return ordered.length > 0 ? system(entry, { banners: ordered }) : null;
+};
 export const midBanners = bannersFor("MID_PAGE");
 // Brand posters run through the same feed, so the org's brand-ads switch, blocked brands and slot limits apply
 export const brandPosters = bannersFor("HOME_POSTER");

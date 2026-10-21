@@ -32,9 +32,10 @@ chip and the tile's products below.
    - then the shorter festival, so a one-day festival on its day leads a long one it falls in (on 19 Oct 2026:
      Ayudha Pooja, Navratri, Dussehra).
 
-   A collection is live from its lead date (`startsAt - leadDays`), so festivals in their run-up are in the carousel
-   too. With 2 or more heroes the app shows a swipeable carousel with dots; the header and status bar take the
-   colours of the slide in view. `hero` (the lead slide) is still sent for released builds, as is `festiveHero` on
+   A collection is live from its lead date (`startsAt - leadDays`), so festivals in their run-up qualify too. Since
+   2026-10-21 the hero shows **only the first** (`MAX_HEROES = 1`) and holds still, so the banner carousel below is the
+   one moving thing on Home. The app still supports a swipeable multi-hero carousel with dots if that's raised again;
+   the header and status bar take the colours of the slide in view. `hero` (the lead slide) is still sent for released builds, as is `festiveHero` on
    the legacy `GET /home/:storeId`. Search landing ranks its 2 festival rails the same way.
 
    Tiles whose aisles have nothing in stock at that store are hidden, still keeping whole rows. When no hero

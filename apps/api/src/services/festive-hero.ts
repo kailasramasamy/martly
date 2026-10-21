@@ -6,8 +6,9 @@ import { liveWindow, reviewSummaries, withAllSizes, withReviews } from "./store-
 const GRID_COLUMNS = 3;
 // One tall tile and a 2×2 block
 const FEATURE_TILES = 5;
-// Festivals live at once share the hero as a carousel, at most this many
-const MAX_HEROES = 3;
+// The hero shows the nearest festival only, holding still so the banner carousel below is the one thing that moves;
+// other live festivals fall through to rows further down Home
+const MAX_HEROES = 1;
 
 type HeroCollection = {
   id: string; heroTitle: string | null; heroKicker: string | null; heroSubtitle: string | null;
@@ -69,13 +70,22 @@ const HERO_SELECT = {
   tiles: { orderBy: { sortOrder: "asc" as const }, select: { id: true, title: true, translations: true, imageUrl: true, subcategoryIds: true } },
 };
 
-/** The home screen's festive heroes: up to three live festivals this store can stock, in rankFestivals order. */
+/** The home screen's festive hero: the first live festival this store can stock, in rankFestivals order. */
 export async function liveFestiveHeroes(
   prisma: PrismaClient, store: { id: string; organizationId: string }, now = new Date(), tileLayout: HeroTileLayout = "GRID",
 ) {
   const collections = await prisma.collection.findMany({ where: liveHeroWhere(store.organizationId, now), select: HERO_SELECT });
   const heroes = await Promise.all(rankFestivals(collections, now).map((c) => forStore(prisma, store.id, c, tileLayout)));
   return heroes.filter((h) => h !== null).slice(0, MAX_HEROES);
+}
+
+/** Live festivals for an organisation, best first in rankFestivals order; the hero shows the first one the store stocks */
+export async function rankedFestivals(prisma: PrismaClient, organizationId: string, now = new Date()) {
+  const collections = await prisma.collection.findMany({
+    where: liveHeroWhere(organizationId, now),
+    select: { id: true, kind: true, startsAt: true, endsAt: true, ...FESTIVAL_DAYS_SELECT, heroTitle: true, heroSubtitle: true, title: true, subtitle: true, translations: true },
+  });
+  return rankFestivals(collections, now);
 }
 
 export async function festiveHeroById(prisma: PrismaClient, store: { id: string; organizationId: string }, collectionId: string) {
