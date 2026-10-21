@@ -49,7 +49,7 @@ export function CampaignList({ scope }: { scope: CampaignScope }) {
   return (
     <List
       title={scope.mode === "platform" ? "Brand campaigns" : "Campaigns"}
-      headerButtons={<Button type="primary" icon={<PlusOutlined />} onClick={() => navigate(`${scope.path}/create`)}>New campaign</Button>}
+      headerButtons={scope.mode === "platform" ? <Button type="primary" icon={<PlusOutlined />} onClick={() => navigate(`${scope.path}/create`)}>New campaign</Button> : undefined}
     >
       <Space wrap style={{ marginBottom: 16 }}>
         <Select allowClear placeholder="Status" options={statusOptions} value={status} onChange={setStatus} style={{ width: 180 }} />

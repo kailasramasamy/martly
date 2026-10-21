@@ -17,7 +17,7 @@ const DETAIL_INCLUDE = {
   product: { select: { id: true, code: true, name: true, kind: true, price: true, durationDays: true, viewsPerUnit: true } },
   category: { select: { id: true, name: true } },
   adOrder: { select: { id: true, number: true, status: true, total: true, paidAt: true } },
-  _count: { select: { promos: true, optOuts: true } },
+  _count: { select: { promos: true } },
 } as const;
 
 /** Who is asking: the platform admin sees every brand; a brand partner only their own */
@@ -25,6 +25,8 @@ export interface CampaignScope {
   guard: preHandlerHookHandler[];
   /** The brand the caller is limited to, or null for the platform admin */
   brandOf: (request: FastifyRequest) => Promise<string | null>;
+  /** Creating, changing and cancelling campaigns: Martly only, as brands pay Martly for reach */
+  canBook: boolean;
 }
 
 /** Loading a campaign within the caller's scope, and its full detail */
@@ -144,12 +146,12 @@ function paymentRoutes(app: FastifyInstance, { load, detail, opts }: ReturnType<
   });
 }
 
-/** Booking, paying for and following brand campaigns, shared by the Martly team and the brand portal */
+/** Following and paying for brand campaigns, shared by the Martly team and the brand portal; only Martly books them */
 export function campaignRoutes(scope: CampaignScope) {
   return async function (app: FastifyInstance) {
     const ctx = campaignContext(app, scope);
     readRoutes(app, scope, ctx);
-    bookingRoutes(app, scope, ctx);
+    if (scope.canBook) bookingRoutes(app, scope, ctx);
     paymentRoutes(app, ctx);
   };
 }

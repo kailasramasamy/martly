@@ -85,15 +85,21 @@ export const bannerEventsSchema = z.object({
 });
 
 // ── Brand ads ────────────────────────────────────────
+// Owners only choose whether their own brands lead; brand campaigns and featured brands are Martly's to set
 export const brandAdSettingsSchema = z.object({
-  allowBrandAds: z.boolean(),
-  blockedBrandIds: z.array(z.string().uuid()).max(500),
   boostOwnBrands: z.boolean(),
-  featuredBrandIds: z.array(z.string().uuid()).max(50),
-}).refine((s) => !s.featuredBrandIds.some((id) => s.blockedBrandIds.includes(id)), {
-  message: "A brand can't be both featured and blocked",
-  path: ["featuredBrandIds"],
 });
+
+/** Brands Martly features in one organisation's stores */
+export const orgFeaturedBrandsSchema = z.object({
+  brandIds: z.array(z.string().uuid()).max(50),
+});
+
+// A district target names its state too, so same-named districts in two states stay apart: "Tamil Nadu:Dharmapuri"
+const districtTarget = z.string().refine((key) => {
+  const [state, district] = key.split(":");
+  return (INDIAN_STATES as readonly string[]).includes(state) && Boolean(district?.trim());
+}, "Pick a district from the list");
 
 export const brandCampaignSchema = z.object({
   brandId: z.string().uuid(),
@@ -106,6 +112,8 @@ export const brandCampaignSchema = z.object({
   actionType: z.nativeEnum(BannerActionType).default("BRAND"),
   actionTarget: z.string().max(200).nullish(),
   targetStoreIds: z.array(z.string().uuid()).max(500).default([]),
+  targetStates: z.array(z.enum(INDIAN_STATES)).max(40).default([]),
+  targetDistricts: z.array(districtTarget).max(200).default([]),
   discountType: z.nativeEnum(DiscountType).nullish(),
   discountValue: z.coerce.number().positive().max(90).nullish(),
   quantity: z.coerce.number().int().min(1).max(52).default(1),

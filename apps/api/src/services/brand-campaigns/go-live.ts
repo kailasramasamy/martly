@@ -3,6 +3,7 @@ import type { FastifyBaseLogger } from "fastify";
 import type { BrandCampaign, PrismaClient } from "../../../generated/prisma/client.js";
 import { pushBrandCampaignLive } from "../notify/marketing-alerts.js";
 import { endPromo, launchPromo, PromoStateError } from "../promo/lifecycle.js";
+import { storesTargeted } from "./targeting.js";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const UNPAID_HOLD_MS = 2 * DAY_MS;
@@ -21,21 +22,27 @@ async function startBanner(prisma: PrismaClient, campaign: BrandCampaign) {
     data: {
       sponsorType: "BRAND", brandId: campaign.brandId, brandCampaignId: campaign.id, title: campaign.title, subtitle: campaign.subtitle,
       imageUrl: campaign.imageUrl!, textInImage: true, placement: campaign.placement, categoryId: campaign.categoryId,
-      actionType: campaign.actionType, actionTarget: campaign.actionTarget, targetStoreIds: campaign.targetStoreIds,
+      actionType: campaign.actionType, actionTarget: campaign.actionTarget,
+      targetStoreIds: campaign.targetStoreIds, targetStates: campaign.targetStates, targetDistricts: campaign.targetDistricts,
       startsAt: campaign.startsAt, endsAt: campaign.endsAt, sortOrder: 1,
       viewCap: product.kind === "BRAND_CPM" ? campaign.quantity * (product.viewsPerUnit ?? 1000) : null,
     },
   });
 }
 
-/** Organisations that take part in a brand promotion: they allow brand ads, haven't blocked or opted out, and stock the brand */
+/**
+ * Organisations that take part in a brand promotion: an active store the campaign targets stocks the brand. Promos are
+ * organisation-wide, so the price cut then runs in all of that organisation's stores.
+ */
 export function participatingOrgs(prisma: PrismaClient, campaign: BrandCampaign) {
   return prisma.organization.findMany({
     where: {
-      allowBrandAds: true,
-      brandBlocks: { none: { brandId: campaign.brandId } },
-      campaignOptOuts: { none: { campaignId: campaign.id } },
-      stores: { some: { status: "ACTIVE", storeProducts: { some: { isActive: true, product: { brandId: campaign.brandId } } } } },
+      stores: {
+        some: {
+          status: "ACTIVE", ...storesTargeted(campaign),
+          storeProducts: { some: { isActive: true, product: { brandId: campaign.brandId } } },
+        },
+      },
     },
     select: { id: true },
   });

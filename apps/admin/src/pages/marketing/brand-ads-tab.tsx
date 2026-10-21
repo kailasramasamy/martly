@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
-import { App, Alert, Avatar, Button, Card, Select, Space, Switch, Table, Tag, Tooltip, Typography } from "antd";
+import { App, Alert, Avatar, Card, Space, Switch, Table, Tag, Typography } from "antd";
 import dayjs from "dayjs";
 import { axiosInstance } from "../../providers/data-provider";
 import { errorMessage } from "./utils";
 import { ReadableSection } from "../../components/ReadableSection";
+import { BRAND_CAMPAIGN_STATUS_COLORS } from "../../constants/tag-colors";
 
 const { Paragraph, Text } = Typography;
-const SEARCH_PAGE_SIZE = 20;
 
 interface BrandRef { id: string; name: string; imageUrl: string | null }
 
@@ -18,47 +18,13 @@ interface BrandAdCampaign {
   endsAt: string;
   discountType: "PERCENTAGE" | "FLAT" | null;
   discountValue: number | null;
+  packageName: string;
   brand: BrandRef;
-  optedOut: boolean;
 }
 
 interface BrandSettings {
-  allowBrandAds: boolean;
-  blockedBrands: BrandRef[];
   boostOwnBrands: boolean;
   featuredBrands: BrandRef[];
-}
-
-function BrandSearch({ value, placeholder, disabled, onChange }: { value: BrandRef[]; placeholder: string; disabled: boolean; onChange: (brands: BrandRef[]) => void }) {
-  const [options, setOptions] = useState<BrandRef[]>([]);
-  const [loading, setLoading] = useState(false);
-
-  const search = async (q: string) => {
-    setLoading(true);
-    try {
-      const res = await axiosInstance.get("/brands", { params: { q, pageSize: SEARCH_PAGE_SIZE } });
-      setOptions(res.data.data);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const known = new Map([...value, ...options].map((b) => [b.id, b]));
-  return (
-    <Select
-      mode="multiple"
-      showSearch
-      filterOption={false}
-      disabled={disabled}
-      loading={loading}
-      placeholder={placeholder}
-      style={{ width: "100%" }}
-      value={value.map((b) => b.id)}
-      options={[...known.values()].map((b) => ({ value: b.id, label: b.name }))}
-      onSearch={(q) => void search(q)}
-      onChange={(ids: string[]) => onChange(ids.flatMap((id) => known.get(id) ?? []))}
-    />
-  );
 }
 
 function discountText(c: BrandAdCampaign): string {
@@ -68,7 +34,7 @@ function discountText(c: BrandAdCampaign): string {
 
 function useBrandAds() {
   const { notification } = App.useApp();
-  const [settings, setSettings] = useState<BrandSettings>({ allowBrandAds: true, blockedBrands: [], boostOwnBrands: true, featuredBrands: [] });
+  const [settings, setSettings] = useState<BrandSettings>({ boostOwnBrands: true, featuredBrands: [] });
   const [campaigns, setCampaigns] = useState<BrandAdCampaign[]>([]);
   const [saving, setSaving] = useState(false);
 
@@ -84,15 +50,11 @@ function useBrandAds() {
 
   useEffect(() => { void load(); }, [load]);
 
-  const save = async (patch: Partial<BrandSettings>) => {
-    const next = { ...settings, ...patch };
+  const setBoostOwnBrands = async (boostOwnBrands: boolean) => {
     setSaving(true);
     try {
-      await axiosInstance.put("/marketing/brand-ads", {
-        allowBrandAds: next.allowBrandAds, blockedBrandIds: next.blockedBrands.map((b) => b.id),
-        boostOwnBrands: next.boostOwnBrands, featuredBrandIds: next.featuredBrands.map((b) => b.id),
-      });
-      setSettings(next);
+      await axiosInstance.put("/marketing/brand-ads", { boostOwnBrands });
+      setSettings((prev) => ({ ...prev, boostOwnBrands }));
     } catch (err) {
       notification.error({ message: errorMessage(err, "Could not save") });
     } finally {
@@ -100,34 +62,20 @@ function useBrandAds() {
     }
   };
 
-  const optOut = async (id: string, optedOut: boolean) => {
-    try {
-      await axiosInstance.put(`/marketing/brand-ads/campaigns/${id}/opt-out`, { optedOut });
-      setCampaigns((prev) => prev.map((c) => (c.id === id ? { ...c, optedOut } : c)));
-    } catch (err) {
-      notification.error({ message: errorMessage(err, "Could not update the campaign") });
-    }
-  };
-
-  return { settings, campaigns, saving, save, optOut };
+  return { settings, campaigns, saving, setBoostOwnBrands };
 }
 
+const brandCell = (brand: BrandRef) => <Space><Avatar src={brand.imageUrl} size="small">{brand.name[0]}</Avatar>{brand.name}</Space>;
+
 export function BrandAdsTab({ canEdit }: { canEdit: boolean }) {
-  const { settings, campaigns, saving, save, optOut } = useBrandAds();
+  const { settings, campaigns, saving, setBoostOwnBrands } = useBrandAds();
   const columns = [
-    { title: "Brand", render: (_: unknown, c: BrandAdCampaign) => <Space><Avatar src={c.brand.imageUrl} size="small">{c.brand.name[0]}</Avatar>{c.brand.name}</Space> },
+    { title: "Brand", render: (_: unknown, c: BrandAdCampaign) => brandCell(c.brand) },
     { title: "Campaign", dataIndex: "title" },
-    { title: "Status", dataIndex: "status", render: (v: string) => <Tag>{v.replace("_", " ")}</Tag> },
+    { title: "Package", dataIndex: "packageName" },
+    { title: "Status", dataIndex: "status", render: (v: string) => <Tag color={BRAND_CAMPAIGN_STATUS_COLORS[v]}>{v.replace("_", " ")}</Tag> },
     { title: "Runs", render: (_: unknown, c: BrandAdCampaign) => `${dayjs(c.startsAt).format("D MMM")} – ${dayjs(c.endsAt).format("D MMM")}` },
     { title: "Discount", render: (_: unknown, c: BrandAdCampaign) => discountText(c) },
-    {
-      title: "Opt out",
-      render: (_: unknown, c: BrandAdCampaign) => (
-        <Tooltip title={c.status !== "SCHEDULED" ? "You can opt out only before a campaign starts" : canEdit ? undefined : "Only the owner can change this"}>
-          <Switch checked={c.optedOut} disabled={!canEdit || c.status !== "SCHEDULED"} onChange={(v) => void optOut(c.id, v)} />
-        </Tooltip>
-      ),
-    },
   ];
   return (
     <>
@@ -136,29 +84,23 @@ export function BrandAdsTab({ canEdit }: { canEdit: boolean }) {
           type="info"
           showIcon
           style={{ marginBottom: 16 }}
-          message="Brand ads appear in your stores only for brands you stock. Block any brand you don't want. A brand promotion lowers prices on that brand in your stores and the brand reimburses the discount (claims report). You can opt out of a campaign before it starts."
+          message="Brand ads are booked by Martly and run in your stores for the brands you stock. They help your sales."
         />
-        <Card size="small" title="Brand ads in my stores" style={{ marginBottom: 16 }}>
-          <Space direction="vertical" style={{ width: "100%" }}>
-            <Space>
-              <Switch checked={settings.allowBrandAds} disabled={!canEdit} loading={saving} onChange={(v) => void save({ allowBrandAds: v })} />
-              <Text>Show brand ads in my stores</Text>
-            </Space>
-            <Paragraph type="secondary" style={{ margin: 0 }}>Blocked brands</Paragraph>
-            <BrandSearch value={settings.blockedBrands} placeholder="Search brands to block" disabled={!canEdit || saving} onChange={(next) => void save({ blockedBrands: next })} />
-          </Space>
-        </Card>
         <Card size="small" title="Brands you promote" style={{ marginBottom: 16 }}>
           <Space direction="vertical" style={{ width: "100%" }}>
-            <Paragraph type="secondary" style={{ margin: 0 }}>
-              Your own brands and featured brands come first in search, category pages and voice or list orders, marked "Our brand" or "Featured" for shoppers.
-            </Paragraph>
             <Space>
-              <Switch checked={settings.boostOwnBrands} disabled={!canEdit} loading={saving} onChange={(v) => void save({ boostOwnBrands: v })} />
+              <Switch checked={settings.boostOwnBrands} disabled={!canEdit} loading={saving} onChange={(v) => void setBoostOwnBrands(v)} />
               <Text>Promote my own brands</Text>
             </Space>
-            <Paragraph type="secondary" style={{ margin: 0 }}>Featured brands</Paragraph>
-            <BrandSearch value={settings.featuredBrands} placeholder="Search brands to feature" disabled={!canEdit || saving} onChange={(next) => void save({ featuredBrands: next })} />
+            <Paragraph type="secondary" style={{ margin: 0 }}>
+              Your own brand and unbranded staples (rice, dal, flour…) lead search and category pages, marked "Our brand".
+            </Paragraph>
+            <Text strong>Featured by Martly</Text>
+            {settings.featuredBrands.length === 0 ? (
+              <Text type="secondary">None right now</Text>
+            ) : (
+              <Space wrap size="middle">{settings.featuredBrands.map((b) => <span key={b.id}>{brandCell(b)}</span>)}</Space>
+            )}
           </Space>
         </Card>
       </ReadableSection>

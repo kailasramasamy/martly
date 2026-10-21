@@ -470,7 +470,6 @@ model Organization {
   gstin               String?
   billingAddress      String?   @map("billing_address")
   billingState        String?   @map("billing_state")
-  allowBrandAds       Boolean   @default(true) @map("allow_brand_ads")
   /// The organisation's own brands rank like market leaders in search and lead category listings
   boostOwnBrands      Boolean   @default(true) @map("boost_own_brands")
   /// When the organisation started its one free Growth trial
@@ -513,9 +512,7 @@ model Organization {
   planPeriods           OrgPlanPeriod[]
   promotionCredits      PromotionCreditEntry[]
   aiImageCredits        AiImageCreditEntry[]
-  brandBlocks           OrgBrandBlock[]
   brandFeatures         OrgBrandFeature[]
-  campaignOptOuts       BrandCampaignOptOut[]
 
   bannerArtRuns BannerArtRun[]
 
@@ -531,6 +528,9 @@ model Store {
   name                  String
   slug                  String      @unique
   address               String
+  /// State (INDIAN_STATES name) and district, for region-targeted brand campaigns
+  state                 String?
+  district              String?
   phone                 String?
   imageUrl              String?     @map("image_url")
   status                StoreStatus @default(PENDING)
@@ -779,13 +779,12 @@ model Brand {
   createdAt           DateTime @default(now()) @map("created_at")
   updatedAt           DateTime @updatedAt @map("updated_at")
 
-  organization Organization?   @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  organization Organization?     @relation(fields: [organizationId], references: [id], onDelete: Cascade)
   products     Product[]
-  partners     User[]          @relation("BrandPartners")
+  partners     User[]            @relation("BrandPartners")
   adOrders     AdOrder[]
   banners      Banner[]
   campaigns    BrandCampaign[]
-  blockedBy    OrgBrandBlock[]
   featuredBy   OrgBrandFeature[]
 
   @@index([organizationId])
@@ -1569,8 +1568,10 @@ model Banner {
   subcategoryId   String?          @map("subcategory_id")
   sponsorType     SponsorType      @default(STORE) @map("sponsor_type")
   brandId         String?          @map("brand_id")
-  /// Empty means every eligible store; otherwise only these stores
+  /// No targets means every eligible store; otherwise stores matching any of these stores, states or districts
   targetStoreIds  String[]         @default([]) @map("target_store_ids")
+  targetStates    String[]         @default([]) @map("target_states")
+  targetDistricts String[]         @default([]) @map("target_districts")
   /// Prepaid views for CPM campaigns; the feed stops serving the banner once viewsServed reaches it
   viewCap         Int?             @map("view_cap")
   viewsServed     Int              @default(0) @map("views_served")
@@ -2524,19 +2525,6 @@ model BannerStatDaily {
   @@map("banner_stats_daily")
 }
 
-/// A store owner keeping a brand's ads out of their stores
-model OrgBrandBlock {
-  organizationId String   @map("organization_id")
-  brandId        String   @map("brand_id")
-  createdAt      DateTime @default(now()) @map("created_at")
-
-  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
-  brand        Brand        @relation(fields: [brandId], references: [id], onDelete: Cascade)
-
-  @@id([organizationId, brandId])
-  @@map("org_brand_blocks")
-}
-
 /// A brand the store owner promotes in their stores (a distributor deal, a local favourite), ranked like their own brands
 model OrgBrandFeature {
   organizationId String   @map("organization_id")
@@ -2551,58 +2539,46 @@ model OrgBrandFeature {
 }
 
 model BrandCampaign {
-  id             String              @id @default(uuid())
-  brandId        String              @map("brand_id")
-  productId      String              @map("product_id")
-  status         BrandCampaignStatus @default(DRAFT)
-  title          String
-  subtitle       String?
-  imageUrl       String?             @map("image_url")
+  id              String              @id @default(uuid())
+  brandId         String              @map("brand_id")
+  productId       String              @map("product_id")
+  status          BrandCampaignStatus @default(DRAFT)
+  title           String
+  subtitle        String?
+  imageUrl        String?             @map("image_url")
   /// Brief for AI art/products when the brand asks Martly to make the creative
-  brief          String?
-  placement      BannerPlacement
-  categoryId     String?             @map("category_id")
-  actionType     BannerActionType    @default(BRAND) @map("action_type")
-  actionTarget   String?             @map("action_target")
-  /// Empty means every store that stocks the brand
-  targetStoreIds String[]            @default([]) @map("target_store_ids")
-  discountType   DiscountType?       @map("discount_type")
-  discountValue  Decimal?            @map("discount_value") @db.Decimal(10, 2)
+  brief           String?
+  placement       BannerPlacement
+  categoryId      String?             @map("category_id")
+  actionType      BannerActionType    @default(BRAND) @map("action_type")
+  actionTarget    String?             @map("action_target")
+  /// No targets means every store that stocks the brand; otherwise stores matching any of these stores, states or districts
+  targetStoreIds  String[]            @default([]) @map("target_store_ids")
+  targetStates    String[]            @default([]) @map("target_states")
+  targetDistricts String[]            @default([]) @map("target_districts")
+  discountType    DiscountType?       @map("discount_type")
+  discountValue   Decimal?            @map("discount_value") @db.Decimal(10, 2)
   /// Units of the package bought (weeks, or thousands of views for CPM)
-  quantity       Int                 @default(1)
-  startsAt       DateTime            @map("starts_at")
-  endsAt         DateTime            @map("ends_at")
-  adOrderId      String?             @unique @map("ad_order_id")
-  reviewNote     String?             @map("review_note")
-  createdById    String              @map("created_by_id")
-  createdAt      DateTime            @default(now()) @map("created_at")
-  updatedAt      DateTime            @updatedAt @map("updated_at")
+  quantity        Int                 @default(1)
+  startsAt        DateTime            @map("starts_at")
+  endsAt          DateTime            @map("ends_at")
+  adOrderId       String?             @unique @map("ad_order_id")
+  reviewNote      String?             @map("review_note")
+  createdById     String              @map("created_by_id")
+  createdAt       DateTime            @default(now()) @map("created_at")
+  updatedAt       DateTime            @updatedAt @map("updated_at")
 
-  brand     Brand                 @relation(fields: [brandId], references: [id])
-  product   AdProduct             @relation(fields: [productId], references: [id])
-  category  Category?             @relation(fields: [categoryId], references: [id])
-  adOrder   AdOrder?              @relation(fields: [adOrderId], references: [id])
-  createdBy User                  @relation(fields: [createdById], references: [id])
+  brand     Brand     @relation(fields: [brandId], references: [id])
+  product   AdProduct @relation(fields: [productId], references: [id])
+  category  Category? @relation(fields: [categoryId], references: [id])
+  adOrder   AdOrder?  @relation(fields: [adOrderId], references: [id])
+  createdBy User      @relation(fields: [createdById], references: [id])
   banner    Banner?
   promos    Promo[]
-  optOuts   BrandCampaignOptOut[]
 
   @@index([brandId, status])
   @@index([status, startsAt])
   @@map("brand_campaigns")
-}
-
-/// A store owner sitting out one brand promotion (its price cuts)
-model BrandCampaignOptOut {
-  campaignId     String   @map("campaign_id")
-  organizationId String   @map("organization_id")
-  createdAt      DateTime @default(now()) @map("created_at")
-
-  campaign     BrandCampaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
-  organization Organization  @relation(fields: [organizationId], references: [id], onDelete: Cascade)
-
-  @@id([campaignId, organizationId])
-  @@map("brand_campaign_opt_outs")
 }
 
 /// Each AI banner painted: which layout and style it used (so the next one looks different) and whose allowance it used

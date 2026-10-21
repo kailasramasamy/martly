@@ -1,8 +1,19 @@
 import type { Prisma, PrismaClient } from "../../generated/prisma/index.js";
-import type { BrandPick } from "@martly/shared/constants";
+import { STORE_BRAND_DEPARTMENT_SLUG, type BrandPick } from "@martly/shared/constants";
 
-/** Brands an organisation promotes in its stores: its own (unless switched off) and the ones the owner features */
-export type BrandBoost = Map<string, BrandPick>;
+/**
+ * What an organisation promotes in its stores: featured brands (set by Martly), and unless switched off its own brands
+ * plus its unbranded staples (store-packed rice, dal, flour…), both labelled "Our brand"
+ */
+export interface BrandBoost {
+  brands: Map<string, BrandPick>;
+  /** Subcategories whose unbranded products are the store's own packs; empty when own-brand boosting is off */
+  stapleSubcategoryIds: string[];
+}
+
+export const NO_BOOST: BrandBoost = { brands: new Map(), stapleSubcategoryIds: [] };
+
+export const hasBoost = (boost: BrandBoost) => boost.brands.size > 0 || boost.stapleSubcategoryIds.length > 0;
 
 export async function storeBrandBoost(prisma: PrismaClient, storeId: string): Promise<BrandBoost> {
   const store = await prisma.store.findUnique({
@@ -18,16 +29,28 @@ export async function storeBrandBoost(prisma: PrismaClient, storeId: string): Pr
     },
   });
   const org = store?.organization;
-  if (!org) return new Map();
-  const boost: BrandBoost = new Map(org.brandFeatures.map((f) => [f.brandId, "FEATURED"]));
-  if (org.boostOwnBrands) for (const { id } of org.brands) boost.set(id, "OWN");
-  return boost;
+  if (!org) return NO_BOOST;
+  const brands = new Map<string, BrandPick>(org.brandFeatures.map((f) => [f.brandId, "FEATURED"]));
+  if (!org.boostOwnBrands) return { brands, stapleSubcategoryIds: [] };
+  for (const { id } of org.brands) brands.set(id, "OWN");
+  const staples = await prisma.subcategory.findMany({
+    where: { category: { department: { slug: STORE_BRAND_DEPARTMENT_SLUG } } }, select: { id: true },
+  });
+  return { brands, stapleSubcategoryIds: staples.map((s) => s.id) };
+}
+
+type BoostedRow = { product: { brandId: string | null; subcategoryId: string | null } };
+
+/** Why a product is boosted, if it is */
+export function brandPickOf({ product }: BoostedRow, boost: BrandBoost): BrandPick | undefined {
+  if (product.brandId) return boost.brands.get(product.brandId);
+  return product.subcategoryId && boost.stapleSubcategoryIds.includes(product.subcategoryId) ? "OWN" : undefined;
 }
 
 /** Labels boosted products on the card, so a promoted brand is never passed off as plain relevance */
-export function markBrandPicks<T extends { product: { brandId: string | null } }>(rows: T[], boost: BrandBoost) {
+export function markBrandPicks<T extends BoostedRow>(rows: T[], boost: BrandBoost) {
   return rows.map((row) => {
-    const pick = row.product.brandId ? boost.get(row.product.brandId) : undefined;
+    const pick = brandPickOf(row, boost);
     return pick ? { ...row, brandPick: pick } : row;
   });
 }
@@ -52,10 +75,18 @@ export async function boostedListingPage<T>(
   find: (where: Prisma.StoreProductWhereInput, skip: number, take: number) => Promise<T[]>,
   count: (where: Prisma.StoreProductWhereInput) => Promise<number>,
 ): Promise<{ rows: T[]; total: number }> {
-  const brandIds = [...boost.keys()];
-  const boosted: Prisma.StoreProductWhereInput = { AND: [where, { product: { brandId: { in: brandIds } } }] };
+  const brandIds = [...boost.brands.keys()];
+  const staples = boost.stapleSubcategoryIds;
+  const boosted: Prisma.StoreProductWhereInput = {
+    AND: [where, { OR: [{ product: { brandId: { in: brandIds } } }, { product: { brandId: null, subcategoryId: { in: staples } } }] }],
+  };
   const rest: Prisma.StoreProductWhereInput = {
-    AND: [where, { OR: [{ product: { brandId: null } }, { product: { brandId: { notIn: brandIds } } }] }],
+    AND: [where, {
+      OR: [
+        { product: { brandId: { not: null, notIn: brandIds } } },
+        { product: { brandId: null, OR: [{ subcategoryId: null }, { subcategoryId: { notIn: staples } }] } },
+      ],
+    }],
   };
   const [boostedTotal, restTotal] = await Promise.all([count(boosted), count(rest)]);
   const total = boostedTotal + restTotal;

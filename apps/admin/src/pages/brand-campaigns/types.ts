@@ -38,6 +38,8 @@ export interface Campaign {
   actionType: BannerActionType;
   actionTarget: string | null;
   targetStoreIds: string[];
+  targetStates: string[];
+  targetDistricts: string[];
   discountType: "PERCENTAGE" | "FLAT" | null;
   discountValue: number | null;
   quantity: number;
@@ -48,7 +50,7 @@ export interface Campaign {
   product: { id: string; code: string; name: string; kind: string; price: number; durationDays: number; viewsPerUnit: number | null };
   category: { id: string; name: string } | null;
   adOrder: { id: string; number: string | null; status: string; total: number; paidAt: string | null; invoiceUrl: string | null } | null;
-  _count: { promos: number; optOuts: number };
+  _count: { promos: number };
   results: { stores: CampaignResultRow[]; total: Omit<CampaignResultRow, "storeId" | "store"> } | null;
 }
 

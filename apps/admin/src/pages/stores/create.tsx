@@ -1,6 +1,7 @@
 import { Create, useForm, useSelect } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
 import { Form, Input, InputNumber, Select, Card, Row, Col, Slider, Switch, Radio } from "antd";
+import { INDIAN_STATES } from "@martly/shared/constants";
 import { ShopOutlined, EnvironmentOutlined, ShoppingCartOutlined, CalendarOutlined } from "@ant-design/icons";
 
 import { sectionTitle } from "../../theme";
@@ -64,6 +65,20 @@ export const StoreCreate = () => {
                 <Form.Item label="Phone" name="phone">
                   <Input />
                 </Form.Item>
+                {isSuperAdmin && (
+                  <Row gutter={12}>
+                    <Col span={12}>
+                      <Form.Item label="State" name="state">
+                        <Select allowClear showSearch optionFilterProp="label" options={INDIAN_STATES.map((name) => ({ value: name, label: name }))} />
+                      </Form.Item>
+                    </Col>
+                    <Col span={12}>
+                      <Form.Item label="District" name="district">
+                        <Input />
+                      </Form.Item>
+                    </Col>
+                  </Row>
+                )}
                 <Row gutter={12}>
                   <Col span={12}>
                     <Form.Item label="Latitude" name="latitude">

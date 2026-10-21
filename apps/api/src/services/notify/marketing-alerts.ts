@@ -74,7 +74,7 @@ export async function notifyCampaignScheduled(fcm: Messaging | null, prisma: Pri
     {
       type: "STAFF_MARKETING",
       title: `${brand} campaign starts ${formatISTDate(campaign.startsAt)} in your stores`,
-      body: "You can opt out until it starts.",
+      body: "Its ads and offers will show to your shoppers from that day.",
       data: { screen: "brand-ads" },
     },
   )));

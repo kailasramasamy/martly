@@ -91,19 +91,20 @@ const cancelButton = (campaign: Campaign, busy: string | null, call: ReturnType<
 
 function StatusButtons({ campaign, scope, busy, call, open }: { campaign: Campaign; scope: CampaignScope; busy: string | null; call: ReturnType<typeof useCampaignCall>["call"]; open: (d: Dialog) => void }) {
   const platform = scope.mode === "platform";
+  const cancel = platform ? cancelButton(campaign, busy, call) : null;
   switch (campaign.status) {
     case "PENDING_PAYMENT":
-      return <Space>{platform ? <Button type="primary" onClick={() => open("bank")}>Record bank transfer</Button> : <Button type="primary" onClick={() => open("pay")}>Pay now</Button>}{cancelButton(campaign, busy, call)}</Space>;
+      return <Space>{platform ? <Button type="primary" onClick={() => open("bank")}>Record bank transfer</Button> : <Button type="primary" onClick={() => open("pay")}>Pay now</Button>}{cancel}</Space>;
     case "IN_REVIEW":
       return (
         <Space>
           {platform && <Popconfirm title="Approve this campaign?" okText="Approve" onConfirm={() => call("approve", "review", { approve: true }, "Campaign approved")}><Button type="primary" loading={busy === "approve"}>Approve</Button></Popconfirm>}
           {platform && <Button danger onClick={() => open("reject")}>Reject</Button>}
-          {cancelButton(campaign, busy, call)}
+          {cancel}
         </Space>
       );
     case "SCHEDULED":
-      return cancelButton(campaign, busy, call);
+      return cancel;
     case "LIVE":
       return platform ? <Popconfirm title="End this campaign now?" okText="End now" okButtonProps={{ danger: true }} onConfirm={() => call("end", "end", null, "Campaign ended")}><Button danger loading={busy === "end"}>End now</Button></Popconfirm> : null;
     default:

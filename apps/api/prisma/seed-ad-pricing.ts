@@ -22,7 +22,7 @@ const PRODUCTS = [
   { kind: "AI_IMAGE_PACK", code: "AI_IMAGES_100", name: "100 AI images", description: "100 more AI images, valid until used", price: 999, durationDays: 30, aiImageCredits: 100, sortOrder: 1 },
   { kind: "BRAND_BANNER", code: "BRAND_BANNER_WEEK", name: "Brand banner", description: "Home carousel in every store that stocks the brand, per week", price: 7500, durationDays: 7, placement: "HERO_CAROUSEL", sortOrder: 0 },
   { kind: "BRAND_TAKEOVER", code: "CATEGORY_TAKEOVER_WEEK", name: "Category takeover", description: "Top of one category in every store that stocks the brand, per week", price: 4500, durationDays: 7, placement: "CATEGORY_TOP", sortOrder: 1 },
-  { kind: "BRAND_PROMOTION", code: "BRAND_PROMOTION_WEEK", name: "Brand promotion", description: "Discount on the brand's products with a home banner, per week", price: 15000, durationDays: 7, placement: "HERO_CAROUSEL", sortOrder: 2 },
+  { kind: "BRAND_PROMOTION", code: "BRAND_PROMOTION_WEEK", name: "Brand promotion", description: "Discount on the brand's products with a home banner and a shoppable offer card on Home, per week", price: 15000, durationDays: 7, placement: "HERO_CAROUSEL", sortOrder: 2 },
   { kind: "BRAND_CPM", code: "BRAND_CPM_1000", name: "Brand views", description: "Home carousel, billed per 1,000 views", price: 200, durationDays: 30, placement: "HERO_CAROUSEL", viewsPerUnit: 1000, isActive: false, sortOrder: 3 },
 ] as const;
 

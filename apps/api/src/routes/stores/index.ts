@@ -14,7 +14,7 @@ import { drivingDistances } from "../../services/driving-distance.js";
 import { searchStoreProducts } from "../../services/store-search.js";
 import { decorateStoreProducts, storeProductInclude } from "../../services/store-product-view.js";
 import { injectAd, listingAd, type SponsoredAd } from "../../services/sponsored.js";
-import { boostedListingPage, markBrandPicks, storeBrandBoost, type BrandBoost } from "../../services/brand-boost.js";
+import { boostedListingPage, hasBoost, markBrandPicks, NO_BOOST, storeBrandBoost, type BrandBoost } from "../../services/brand-boost.js";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { getStoreDiscoveryInfo } from "../../services/store-discovery.js";
 import { catalogCoverage, type CatalogCoverage } from "../../services/catalog-coverage.js";
@@ -173,9 +173,11 @@ export async function storeRoutes(app: FastifyInstance) {
       const body = createStoreSchema.parse(request.body);
       const user = getOrgUser(request);
 
-      // Non-SUPER_ADMIN: force organizationId from JWT
+      // Non-SUPER_ADMIN: force organizationId from JWT; region decides which brand campaigns reach the store, so only Martly sets it
       if (user.role !== "SUPER_ADMIN") {
         body.organizationId = user.organizationId!;
+        body.state = undefined;
+        body.district = undefined;
       }
 
       const store = await app.prisma.store.create({ data: body });
@@ -198,7 +200,9 @@ export async function storeRoutes(app: FastifyInstance) {
         return reply.forbidden("Access denied");
       }
 
-      const { translations, ...rest } = body;
+      // Region decides which brand campaigns reach the store, so only Martly sets it
+      const { translations, state, district, ...rest } = body;
+      if (getOrgUser(request).role === "SUPER_ADMIN") Object.assign(rest, { state, district });
       const store = await app.prisma.store.update({
         where: { id: request.params.id },
         data: { ...rest, ...(translations !== undefined ? { translations: translations ?? Prisma.DbNull } : {}) },
@@ -352,10 +356,10 @@ export async function storeRoutes(app: FastifyInstance) {
       app.prisma.storeProduct.findMany({ where: w, skip: from, take, include: storeProductInclude, orderBy: [orderBy, { id: "asc" }] });
     const count = (w: Prisma.StoreProductWhereInput) => app.prisma.storeProduct.count({ where: w });
     const listingWhere = where as Prisma.StoreProductWhereInput;
-    const { rows: storeProducts, total } = boost?.size && !sortBy && !brandId
+    const { rows: storeProducts, total } = boost && hasBoost(boost) && !sortBy && !brandId
       ? await boostedListingPage(boost, listingWhere, { skip, take: Number(pageSize) }, find, count)
       : await Promise.all([find(listingWhere, skip, Number(pageSize)), count(listingWhere)]).then(([rows, n]) => ({ rows, total: n }));
-    const listed = markBrandPicks(await decorateStoreProducts(app.prisma, storeProducts), boost ?? new Map());
+    const listed = markBrandPicks(await decorateStoreProducts(app.prisma, storeProducts), boost ?? NO_BOOST);
     const data = ad && Number(page) === 1 ? injectAd(listed, await sponsoredRows(app.prisma, store.id, ad.productId), ad) : listed;
 
     const response: PaginatedResponse<(typeof data)[0]> = {

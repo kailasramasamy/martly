@@ -12,10 +12,10 @@ async function partnerBrand(app: FastifyInstance, request: FastifyRequest) {
   return user.brandId;
 }
 
-/** The brand portal: brand partners book, pay for and follow their own campaigns */
+/** The brand portal: brand partners follow and pay for the campaigns Martly books for their brand */
 export async function brandPortalRoutes(app: FastifyInstance) {
   const guard = [authenticate, requireRole("BRAND_PARTNER")];
-  const scope: CampaignScope = { guard, brandOf: (request) => partnerBrand(app, request) };
+  const scope: CampaignScope = { guard, brandOf: (request) => partnerBrand(app, request), canBook: false };
   await app.register(campaignRoutes(scope), { prefix: "/campaigns" });
 
   app.get("/orders", { preHandler: guard }, async (request) => {

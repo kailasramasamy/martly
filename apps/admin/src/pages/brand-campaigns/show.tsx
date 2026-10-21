@@ -41,7 +41,7 @@ function SponsoredCard({ campaign }: { campaign: Campaign }) {
 function CreativeCard({ campaign, scope, onChange }: { campaign: Campaign; scope: CampaignScope; onChange: (c: Campaign) => void }) {
   const { notification } = App.useApp();
   const [generating, setGenerating] = useState(false);
-  const canGenerate = EDITABLE_STATUSES.includes(campaign.status) && !!campaign.brief;
+  const canGenerate = scope.mode === "platform" && EDITABLE_STATUSES.includes(campaign.status) && !!campaign.brief;
   const poster = campaign.placement === "HOME_POSTER";
 
   const generate = async () => {
@@ -71,16 +71,23 @@ function CreativeCard({ campaign, scope, onChange }: { campaign: Campaign; scope
   );
 }
 
+function targetingText(c: Campaign): string {
+  if (c.targetStoreIds.length) return `${c.targetStoreIds.length} selected store(s)`;
+  const regions = [...c.targetStates, ...c.targetDistricts.map((d) => d.replace(":", ", "))];
+  return regions.length ? regions.join(" · ") : "All stores";
+}
+
 function DetailsCard({ campaign, platform }: { campaign: Campaign; platform: boolean }) {
   const order = campaign.adOrder;
   const unit = campaign.product.kind === "BRAND_CPM" ? "thousand views" : "week(s)";
   return (
     <Card title="Details" size="small" style={{ marginBottom: 16 }}>
-      <Descriptions size="small" column={1}>
+      <Descriptions size="small" column={1} styles={{ label: { width: 120 } }}>
         {platform && <Descriptions.Item label="Brand">{campaign.brand.name}</Descriptions.Item>}
         <Descriptions.Item label="Package">{campaign.product.name} × {campaign.quantity} {unit}</Descriptions.Item>
         <Descriptions.Item label="Runs">{date(campaign.startsAt)} – {date(campaign.endsAt)}</Descriptions.Item>
         {campaign.category && <Descriptions.Item label="Category">{campaign.category.name}</Descriptions.Item>}
+        <Descriptions.Item label="Where it runs">{targetingText(campaign)}</Descriptions.Item>
         {campaign.discountType && (
           <Descriptions.Item label="Discount">{campaign.discountType === "PERCENTAGE" ? `${campaign.discountValue}% off` : `${formatRupees(campaign.discountValue ?? 0)} off`}</Descriptions.Item>
         )}
@@ -113,7 +120,7 @@ export function CampaignShow({ scope }: { scope: CampaignScope }) {
       canEdit={false}
       headerButtons={() => (
         <Space>
-          {EDITABLE_STATUSES.includes(campaign.status) && <Button onClick={() => navigate(`${scope.path}/edit/${campaign.id}`)}>Edit</Button>}
+          {scope.mode === "platform" && EDITABLE_STATUSES.includes(campaign.status) && <Button onClick={() => navigate(`${scope.path}/edit/${campaign.id}`)}>Edit</Button>}
           <CampaignActions campaign={campaign} scope={scope} onChange={setCampaign} />
         </Space>
       )}

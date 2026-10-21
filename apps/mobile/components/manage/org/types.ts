@@ -14,6 +14,8 @@ export interface StoreDetail extends Omit<StoreRow, "organizationName"> {
   latitude: number | null;
   longitude: number | null;
   deliveryRadius: number;
+  state: string | null;
+  district: string | null;
   minOrderAmount: string | null;
   freeDeliveryThreshold: string | null;
   returnKeepThreshold: string | null;

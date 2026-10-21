@@ -1,5 +1,6 @@
 import type { BannerPlacement, Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { getMarketingConfig } from "./config.js";
+import { bannersTargeting } from "../brand-campaigns/targeting.js";
 
 const FEED_SELECT = {
   id: true, title: true, subtitle: true, imageUrl: true, imageUrls: true, textInImage: true, placement: true,
@@ -37,7 +38,7 @@ function capSlots(rows: FeedRow[], limits: Partial<Record<string, Partial<Record
 
 /**
  * Live banners a store's shoppers see: the store's and its organisation's own (brand promotions it joined included),
- * Martly's, and network brand campaigns the owner allows for brands the store stocks.
+ * Martly's, and network brand campaigns aimed at the store for brands it stocks.
  */
 export async function storeBanners(
   prisma: PrismaClient,
@@ -46,28 +47,20 @@ export async function storeBanners(
   extra: Prisma.BannerWhereInput = {},
 ) {
   const now = new Date();
-  const [org, config] = await Promise.all([
-    prisma.organization.findUniqueOrThrow({ where: { id: store.organizationId }, select: { allowBrandAds: true, brandBlocks: { select: { brandId: true } } } }),
+  const [place, config] = await Promise.all([
+    prisma.store.findUniqueOrThrow({ where: { id: store.id }, select: { id: true, state: true, district: true } }),
     getMarketingConfig(prisma),
   ]);
-  const blocked = org.brandBlocks.map((b) => b.brandId);
-  const networkBrand: Prisma.BannerWhereInput = {
-    sponsorType: "BRAND", organizationId: null, storeId: null,
-    OR: [{ targetStoreIds: { isEmpty: true } }, { targetStoreIds: { has: store.id } }],
-  };
-  // A block (or switching brand ads off) also hides brand promotions the organisation had already joined
-  const hiddenBrands: Prisma.BannerWhereInput = org.allowBrandAds
-    ? { NOT: { sponsorType: "BRAND", brandId: { in: blocked } } }
-    : { NOT: { sponsorType: "BRAND" } };
+  const networkBrand: Prisma.BannerWhereInput = { sponsorType: "BRAND", organizationId: null, storeId: null, ...bannersTargeting(place) };
   const rows = await prisma.banner.findMany({
     where: {
       isActive: true, placement: { in: placements },
-      AND: [{ OR: [{ startsAt: null }, { startsAt: { lte: now } }] }, { OR: [{ endsAt: null }, { endsAt: { gte: now } }] }, hiddenBrands, extra],
+      AND: [{ OR: [{ startsAt: null }, { startsAt: { lte: now } }] }, { OR: [{ endsAt: null }, { endsAt: { gte: now } }] }, extra],
       OR: [
         { storeId: store.id },
         { storeId: null, organizationId: store.organizationId },
         { storeId: null, organizationId: null, sponsorType: "PLATFORM" },
-        ...(org.allowBrandAds ? [networkBrand] : []),
+        networkBrand,
       ],
     },
     // Newest first among equals, so a just-launched promo leads the carousel

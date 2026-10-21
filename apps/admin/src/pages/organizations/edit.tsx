@@ -1,15 +1,18 @@
 import { Edit, useForm } from "@refinedev/antd";
+import { useGetIdentity } from "@refinedev/core";
 import { Form, Input, InputNumber, Select, Card, Row, Col } from "antd";
 import { BankOutlined, PercentageOutlined } from "@ant-design/icons";
 import { FESTIVAL_REGIONS } from "@martly/shared/constants";
 
 import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../../components/ReadableSection";
+import { FeaturedBrandsCard } from "./featured-brands-card";
 
 const COMMISSION_HELP = "Includes GST. Applies to orders delivered after you save.";
 
 export const OrganizationEdit = () => {
-  const { formProps, saveButtonProps } = useForm({ resource: "organizations" });
+  const { formProps, saveButtonProps, id } = useForm({ resource: "organizations" });
+  const { data: identity } = useGetIdentity<{ role: string }>();
   const initialValues = formProps.initialValues && {
     ...formProps.initialValues,
     onlineCommissionPct: Number(formProps.initialValues.onlineCommissionPct),
@@ -52,6 +55,7 @@ export const OrganizationEdit = () => {
             </Col>
           </Row>
         </Form>
+        {identity?.role === "SUPER_ADMIN" && id && <FeaturedBrandsCard organizationId={String(id)} />}
       </ReadableSection>
     </Edit>
   );

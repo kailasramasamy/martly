@@ -501,8 +501,6 @@ export default function App() {
               {
                 name: "brand-portal-campaigns",
                 list: "/brand-portal/campaigns",
-                create: "/brand-portal/campaigns/create",
-                edit: "/brand-portal/campaigns/edit/:id",
                 show: "/brand-portal/campaigns/show/:id",
                 meta: { label: "Campaigns", icon: <PictureOutlined />, parent: "brand-portal" },
               },
@@ -733,8 +731,6 @@ export default function App() {
                 <Route path="/brand-partners" element={<BrandPartners />} />
                 <Route path="/brand-portal">
                   <Route path="campaigns" element={<CampaignList scope={BRAND_SCOPE} />} />
-                  <Route path="campaigns/create" element={<CampaignForm scope={BRAND_SCOPE} />} />
-                  <Route path="campaigns/edit/:id" element={<CampaignForm scope={BRAND_SCOPE} />} />
                   <Route path="campaigns/show/:id" element={<CampaignShow scope={BRAND_SCOPE} />} />
                   <Route path="invoices" element={<BrandInvoices />} />
                 </Route>

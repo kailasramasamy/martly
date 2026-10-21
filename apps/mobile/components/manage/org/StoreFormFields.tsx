@@ -1,3 +1,4 @@
+import { Text, StyleSheet } from "react-native";
 import { SectionCard } from "../ui/SectionCard";
 import { TextField } from "../ui/TextField";
 import { SelectField } from "../ui/SelectField";
@@ -6,7 +7,10 @@ import { SwitchRow } from "../ui/SwitchRow";
 import { TimeSelect } from "../delivery-config/TimeSelect";
 import { parseNumber } from "../delivery-config/numbers";
 import { LocationPicker } from "./LocationPicker";
+import { colors, fonts } from "../../../constants/theme";
 import { STORE_STATUS_OPTIONS } from "./constants";
+import { INDIAN_STATES } from "@martly/shared/constants";
+import { useAuth } from "../../../lib/auth-context";
 import { slugify, type StoreDraft } from "./store-draft";
 
 interface CardProps {
@@ -51,6 +55,23 @@ function LocationCard({ draft, set }: CardProps) {
   );
 }
 
+const STATE_OPTIONS: SelectOption[] = INDIAN_STATES.map((s) => ({ value: s, label: s }));
+
+function RegionCard({ draft, set }: CardProps) {
+  const { user } = useAuth();
+  if (user?.role === "SUPER_ADMIN") {
+    return (
+      <SectionCard title="Region">
+        <SelectField label="State" value={draft.state} options={STATE_OPTIONS} onChange={(state) => set({ state })} />
+        <TextField label="District" value={draft.district} onChangeText={(district) => set({ district })} />
+      </SectionCard>
+    );
+  }
+  if (!draft.state) return null;
+  const region = [draft.district, draft.state].filter(Boolean).join(", ");
+  return <Text style={styles.note}>{`Region: ${region} \u00B7 set by Martly`}</Text>;
+}
+
 function DeliveryCard({ draft, set }: CardProps) {
   return (
     <SectionCard title="Delivery settings">
@@ -80,8 +101,13 @@ export function StoreFormFields(props: StoreFormFieldsProps) {
     <>
       <DetailsCard {...props} />
       <LocationCard draft={props.draft} set={props.set} />
+      <RegionCard draft={props.draft} set={props.set} />
       <DeliveryCard draft={props.draft} set={props.set} />
       {!props.creating && <SubscriptionCard draft={props.draft} set={props.set} />}
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  note: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, lineHeight: 18, paddingHorizontal: 4 },
+});

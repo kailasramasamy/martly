@@ -6,10 +6,10 @@ import { requireRole } from "../../middleware/authorize.js";
 import { notifyCampaignScheduled } from "../../services/notify/marketing-alerts.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { markPaidOffline, reviewCampaign } from "../../services/brand-campaigns/booking.js";
-import { endCampaign, participatingOrgs } from "../../services/brand-campaigns/go-live.js";
+import { endCampaign, participatingOrgs, startCampaign } from "../../services/brand-campaigns/go-live.js";
 import { campaignContext, campaignRoutes, type CampaignScope } from "./campaign-routes.js";
 
-const scope: CampaignScope = { guard: [authenticate, requireRole("SUPER_ADMIN")], brandOf: async () => null };
+const scope: CampaignScope = { guard: [authenticate, requireRole("SUPER_ADMIN")], brandOf: async () => null, canBook: true };
 
 /** The Martly team's side of brand campaigns: everything brands can do, plus offline payment, review, ending early and partner accounts */
 export async function brandCampaignAdminRoutes(app: FastifyInstance) {
@@ -29,8 +29,11 @@ export async function brandCampaignAdminRoutes(app: FastifyInstance) {
     const campaign = await load(request, reply);
     if (!campaign) return;
     const { approve, note } = reviewBrandCampaignSchema.parse(request.body);
-    await reviewCampaign(app.prisma, campaign, approve, note);
-    if (approve) {
+    const reviewed = await reviewCampaign(app.prisma, campaign, approve, note);
+    // A campaign whose start date has come goes live on approval instead of waiting for the scheduler
+    if (approve && reviewed.startsAt <= new Date()) {
+      await startCampaign({ prisma: app.prisma, fcm: app.fcm, log: request.log }, reviewed);
+    } else if (approve) {
       const orgs = await participatingOrgs(app.prisma, campaign);
       void notifyCampaignScheduled(app.fcm, app.prisma, campaign, orgs.map((o) => o.id)).catch((err: unknown) => app.log.error(err, `Brand campaign ${campaign.id}: schedule alert failed`));
     }
@@ -45,10 +48,18 @@ export async function brandCampaignAdminRoutes(app: FastifyInstance) {
     return { success: true, data: await detail(campaign.id) };
   });
 
+  // Districts that have active stores, for aiming a campaign at regions ("Tamil Nadu:Dharmapuri")
+  app.get("/regions", opts, async () => {
+    const rows = await app.prisma.store.groupBy({
+      by: ["state", "district"], where: { status: "ACTIVE", state: { not: null } }, _count: { _all: true }, orderBy: [{ state: "asc" }, { district: "asc" }],
+    });
+    return { success: true, data: rows.map((r) => ({ state: r.state!, district: r.district, stores: r._count._all })) };
+  });
+
   app.register(brandPartnerRoutes, { prefix: "/partners" });
 }
 
-/** Brand partner logins: people at a brand who book and pay for its campaigns in the portal */
+/** Brand partner logins: people at a brand who follow and pay for its campaigns in the portal */
 async function brandPartnerRoutes(app: FastifyInstance) {
   const select = { id: true, name: true, email: true, phone: true, createdAt: true, deletedAt: true, brand: { select: { id: true, name: true } } } as const;
 

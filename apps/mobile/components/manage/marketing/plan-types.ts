@@ -86,8 +86,6 @@ export interface MarketingResults {
 }
 
 export interface BrandAdsSettings {
-  allowBrandAds: boolean;
-  blockedBrands: { id: string; name: string; imageUrl: string | null }[];
   boostOwnBrands: boolean;
   featuredBrands: { id: string; name: string; imageUrl: string | null }[];
 }
@@ -101,5 +99,5 @@ export interface BrandCampaign {
   discountType: "FLAT" | "PERCENTAGE" | null;
   discountValue: number | null;
   brand: { id: string; name: string; imageUrl: string | null };
-  optedOut: boolean;
+  packageName: string;
 }

@@ -1,11 +1,28 @@
 # Brand Promotion
 
-Brands get ahead in a store in two ways:
+Brands get ahead in a store in three ways:
 
-- **Store-promoted** (free, phase 1): the organisation's own brands and the brands the owner features. They rank ahead, but stay inside the normal results, and carry an "Our brand" or "Featured" badge.
-- **Paid** (phases 2–3): brand campaigns bought through the brand portal. They get fixed slots marked "Ad" (`SPONSORED_PRODUCT` today; search, suggestions and the bottom-nav slot next).
+- **Store brand** (owner's switch): the organisation's own brands, plus **unbranded staples** (rice, dal, flour… in Grocery & Staples), which are the store's own packs. They are boosted and marked "Our brand".
+- **Featured by Martly:** brands Martly features in one organisation's stores, boosted and marked "Featured". Only super admin sets these.
+- **Paid brand campaigns:** booked **only by Martly super admin**, with the brand paying Martly. They get fixed slots marked "Ad": `SPONSORED_PRODUCT` in Home, categories, search, suggestions and list orders, plus banners and takeovers. Stores can't switch them off, block a brand, or opt out of brand promotions, and get no share of the revenue (the sales lift is theirs).
 
-The two never compete for the same position: paid products take fixed slots, and store-promoted brands are boosted inside the ranking.
+Paid ads and boosted brands never compete for the same position: paid products take fixed slots, and boosted brands move up inside the ranking.
+
+## Who controls what (since 2026-10-21)
+
+| | Martly super admin | Store owner | Brand partner (portal) |
+|---|---|---|---|
+| Book / edit / cancel brand campaigns | ✓ (Brand campaigns) | — | — (read-only portal) |
+| Pay for a campaign | Record an offline payment | — | ✓ Razorpay checkout from the portal |
+| Campaign targeting: all stores / states / districts / selected stores | ✓ | — | — |
+| Featured brands per organisation | ✓ (organisation page) | Sees them (read-only) | — |
+| Store state and district (decides region targeting) | ✓ | — (ignored by the API) | — |
+| "Promote my own brands" | — | ✓ | — |
+| Block brands / switch off brand ads / opt out of brand promotions | Removed | Removed | — |
+
+**Targeting:** `targetStoreIds`, `targetStates` (`INDIAN_STATES` names) and `targetDistricts` (`"Tamil Nadu:Dharmapuri"`) on `BrandCampaign`, copied to its banner at go-live. No targets means every store. Otherwise a store qualifies if **any** target matches it, and it must still stock the brand (`services/brand-campaigns/targeting.ts`). Brand discount promotions are per organisation: an org takes part if a targeted store stocks the brand, and its price cut then applies in all its stores. `GET /brand-campaigns/regions` lists the state and district pairs that have stores.
+
+Migrations: `20261021180000_brand_ad_regions` (store region with Dharmapuri backfill, campaign and banner targets, drops `allow_brand_ads`) and `20261021181000_drop_store_brand_ad_controls` (drops brand blocks and promotion opt-outs; prod had none).
 
 ## Rules
 
@@ -18,24 +35,24 @@ The two never compete for the same position: paid products take fixed slots, and
 
 ### Data
 
-- `Organization.boostOwnBrands` (default `true`): brands with `Brand.organizationId` = the org are "Our brand".
-- `OrgBrandFeature (organizationId, brandId)`: brands the owner features (distributor deals, local favourites), up to 50. A brand can't be both featured and blocked.
-- `storeBrandBoost(prisma, storeId)` (`apps/api/src/services/brand-boost.ts`) returns `Map<brandId, "OWN" | "FEATURED">`. Own wins if a brand is both.
+- `Organization.boostOwnBrands` (default `true`): brands with `Brand.organizationId` = the org, and unbranded products in the `grocery-staples` department (`STORE_BRAND_DEPARTMENT_SLUG`), are "Our brand". Unbranded fruit, veg, meat and so on are not.
+- `OrgBrandFeature (organizationId, brandId)`: brands Martly features in the organisation, up to 50 (`GET/PUT /marketing/brand-ads/orgs/:organizationId/featured`, super admin).
+- `storeBrandBoost(prisma, storeId)` (`apps/api/src/services/brand-boost.ts`) returns `{ brands: Map<brandId, "OWN" | "FEATURED">, stapleSubcategoryIds }`. Own wins if a brand is both. In search, unbranded staples take turns together as one brand.
 
 ### Where it applies
 
 | Surface | Effect |
 |---|---|
-| Search (`searchProducts`) | Boosted brands rank with popularity 105 in the weighted brand turns (a 100-popularity leader gets 100), so they take the first turn and every 15 points after. Relevance bands (intent, name tier, taxonomy) are unchanged |
+| Search (`searchProducts`) | In the weighted brand turns, the store's own brand and staples rank with popularity 106 (a turn every 14 points) and featured brands with 105 (every 15). Against a 100-popularity leader (every 20), they take the first turn, and own beats featured. Relevance bands (intent, name tier, taxonomy) are unchanged |
 | Category listings (`GET /stores/:id/products?categoryId=`) | With no sort and no brand filter, boosted rows take slots 1, 4, 7… until they run out (`boostedListingPage`; the slot math pages in the DB). Sorting by price turns the boost off, but the badge stays |
 | Voice / list / photo to cart | Search order includes the boost, so an unbranded line ("chilli powder") lists the featured brand first among its options (`PICK`), never `MATCHED`. The boost is loaded once per run |
 | Cards | `brandPick: "OWN" | "FEATURED"` on store-product rows; `BrandPickBadge` in `CompactProductCard` / `FeaturedProductCard` ("Our brand" / "Featured", Tamil included). An Ad badge replaces it on a sponsored row |
 
 ### Owner controls
 
-`GET/PUT /api/v1/marketing/brand-ads` now also carries `boostOwnBrands` and `featuredBrandIds` / `featuredBrands`.
-- Admin: Marketing → Brand ads → **Brands you promote** card.
-- Mobile Manage: Brand ads screen → **Brands you promote** card. One Save button covers both cards.
+`GET /api/v1/marketing/brand-ads` returns `{ boostOwnBrands, featuredBrands }`, and `PUT` takes `{ boostOwnBrands }`. `GET /marketing/brand-ads/campaigns` lists the campaigns reaching the org's stores (read-only).
+- Admin: Marketing → Marketing plan → Brand ads.
+- Mobile Manage: More → Brand ads.
 
 ## Tested (curl, Harur Fresh Mart, Demo Grocers featuring Sakthi Masala)
 
@@ -44,19 +61,20 @@ The two never compete for the same position: paid products take fixed slots, and
 - Spices category, 1,580 rows: `S..S..S..` pattern. Paging through every page returns each row exactly once, and Sakthi's 67 rows sit within the first 200. A `price_asc` sort isn't boosted.
 - List to cart "chilli powder / turmeric powder / MDH garam masala": the first two are `PICK` with Sakthi first and flagged. MDH is `MATCHED`.
 - Own brand (Test Mills, "multigrain atta"): 14th with `boostOwnBrands` off, 2nd with it on, with the label removed when off.
-- `PUT` with the same brand both featured and blocked gives a 400.
+- Store brand staples: `toor dal`, `atta` and `rice` lead with the unbranded packs ("Our brand"), interleaved with Tata, Fortune and India Gate. `tomato` doesn't change (unbranded veg isn't store brand).
 
 Seed: `cd apps/api && npx tsx prisma/seed-brand-boost.ts` (features Sakthi Masala for the first org).
 
 ## Needs manual check
 
 - The badge on cards in search, the category screen and the list-to-cart picker (English and Tamil).
-- The Manage → Brand ads screen: add and remove featured brands, the switch, and Save.
-- The admin Brand ads tab: the new card saves on change.
+- Owner, in admin and Manage → Brand ads: the own-brand switch saves, and featured brands and campaigns are read-only.
+- Super admin: featured brands on the organisation page; "Where it runs" (all stores / regions / selected stores) on the campaign form; state and district on the store form.
+- Brand portal: no create, edit or cancel; Pay still works.
 
 ## Phase 2: sponsored products in search, suggestions and list orders (built 2026-10-21)
 
-The existing `SPONSORED_PRODUCT` booking (one product, brand portal, weekly) now also runs here. Ads come from `liveSponsored`, so the owner's brand-ads switch, blocked brands, the per-category slot cap, the in-stock check and the banner's view and tap counts all apply as before. Placement logic is in `apps/api/src/services/sponsored-search.ts`.
+The existing `SPONSORED_PRODUCT` booking (one product, weekly) now also runs here. Ads come from `liveSponsored`, so campaign targeting, the per-category slot cap, the in-stock check and the banner's view and tap counts all apply as before. Placement logic is in `apps/api/src/services/sponsored-search.ts`.
 
 | Surface | Rule |
 |---|---|
@@ -85,4 +103,4 @@ The existing `SPONSORED_PRODUCT` booking (one product, brand portal, weekly) now
 
 - **Phase 3:** `BRAND_TAB_SLOT` for the bottom nav: one brand per week across all stores. If unsold, it falls back to the org's own brand, then the daily rotation.
 - **Phase 4:** reporting per surface (`BannerStatDaily` has no surface column yet, so search, suggest and Home views are counted together), plus rotation weighted by units bought.
-- Stores get no revenue share of brand ads.
+- **Store-brand packs:** replace generic staples with each store's own branded packs. Photograph the front and back of a store's pack, then have AI make per-product images with the store brand. Not started.

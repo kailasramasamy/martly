@@ -143,3 +143,6 @@ export const BrandPick = {
   FEATURED: "FEATURED",
 } as const;
 export type BrandPick = (typeof BrandPick)[keyof typeof BrandPick];
+
+// Unbranded products in this department are the store's own packs (rice, dal, flour…), promoted as "Our brand"
+export const STORE_BRAND_DEPARTMENT_SLUG = "grocery-staples";

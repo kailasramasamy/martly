@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { App, Card, Col, DatePicker, Form, Input, InputNumber, Row, Select, Spin, Tag } from "antd";
 import { Create, Edit } from "@refinedev/antd";
-import { useGetIdentity, useList } from "@refinedev/core";
+import { useList } from "@refinedev/core";
 import { useNavigate, useParams } from "react-router";
 import type { FormInstance } from "antd";
 import dayjs, { type Dayjs } from "dayjs";
@@ -12,6 +12,7 @@ import type { AdProduct } from "../marketing/types";
 import { BookingSummary } from "./booking-summary";
 import { BrandSelect } from "./brand-select";
 import { CreativeSection, type CreativeMode } from "./creative-section";
+import { TargetingCard, inferTargetMode, type TargetMode } from "./targeting-card";
 import { ProductPicker, type SponsorableProduct } from "./product-picker";
 import { EDITABLE_STATUSES, type Campaign, type CampaignScope } from "./types";
 import { ReadableSection } from "../../components/ReadableSection";
@@ -27,7 +28,10 @@ interface FormValues {
   imageUrl?: string;
   brief?: string;
   actionTarget?: string;
+  targetMode: TargetMode;
   targetStoreIds?: string[];
+  targetStates?: string[];
+  targetDistricts?: string[];
   discountType?: "PERCENTAGE" | "FLAT";
   discountValue?: number;
 }
@@ -42,7 +46,7 @@ const packageLabel = (p: AdProduct) =>
 function useFormOptions(scope: CampaignScope) {
   const [packages, setPackages] = useState<AdProduct[]>([]);
   const [categories, setCategories] = useState<{ value: string; label: string }[]>([]);
-  const { data: storesData } = useList<{ id: string; name: string }>({ resource: "stores", pagination: { pageSize: 200 }, queryOptions: { enabled: scope.mode === "platform" } });
+  const { data: storesData } = useList<{ id: string; name: string }>({ resource: "stores", pagination: { pageSize: 200 } });
 
   useEffect(() => {
     axiosInstance.get(`${scope.apiBase}/packages`).then((res) => setPackages(res.data.data));
@@ -58,16 +62,17 @@ function toFormValues(c: Campaign): FormValues {
   return {
     brandId: c.brandId, productId: c.productId, quantity: c.quantity, startsAt: dayjs(c.startsAt), categoryId: c.categoryId ?? undefined,
     title: c.title, subtitle: c.subtitle ?? undefined, imageUrl: c.imageUrl ?? undefined, brief: c.brief ?? undefined, actionTarget: c.actionTarget ?? undefined,
-    targetStoreIds: c.targetStoreIds, discountType: c.discountType ?? undefined, discountValue: c.discountValue ?? undefined,
+    targetMode: inferTargetMode(c), targetStoreIds: c.targetStoreIds, targetStates: c.targetStates, targetDistricts: c.targetDistricts,
+    discountType: c.discountType ?? undefined, discountValue: c.discountValue ?? undefined,
   };
 }
 
 const isSponsored = (p?: AdProduct) => p?.kind === "BRAND_SPONSORED_PRODUCT";
 const isPoster = (p?: AdProduct) => p?.placement === "HOME_POSTER";
 
-function buildBody(values: FormValues, mode: CreativeMode, scope: CampaignScope, sponsored: boolean) {
+function buildBody(values: FormValues, mode: CreativeMode, sponsored: boolean) {
   return {
-    ...(scope.mode === "platform" ? { brandId: values.brandId } : {}),
+    brandId: values.brandId,
     productId: values.productId,
     quantity: values.quantity,
     startsAt: values.startsAt.toISOString(),
@@ -77,7 +82,9 @@ function buildBody(values: FormValues, mode: CreativeMode, scope: CampaignScope,
     imageUrl: sponsored ? null : values.imageUrl ?? null,
     brief: mode === "ai" && !sponsored ? values.brief : null,
     ...(sponsored ? { actionType: "PRODUCT", actionTarget: values.actionTarget } : {}),
-    targetStoreIds: values.targetStoreIds ?? [],
+    targetStoreIds: values.targetMode === "STORES" ? values.targetStoreIds ?? [] : [],
+    targetStates: values.targetMode === "REGIONS" ? values.targetStates ?? [] : [],
+    targetDistricts: values.targetMode === "REGIONS" ? values.targetDistricts ?? [] : [],
     discountType: values.discountType ?? null,
     discountValue: values.discountValue ?? null,
   };
@@ -112,7 +119,6 @@ function SponsoredCard({ form, brandId, locked }: { form: FormInstance<FormValue
 }
 
 interface FieldsProps {
-  scope: CampaignScope;
   campaign: Campaign | null;
   locked: boolean;
   packages: AdProduct[];
@@ -120,14 +126,12 @@ interface FieldsProps {
   categories: { value: string; label: string }[];
 }
 
-function BookingFields({ scope, campaign, locked, packages, product, categories }: FieldsProps) {
+function BookingFields({ campaign, locked, packages, product, categories }: FieldsProps) {
   return (
     <>
-      {scope.mode === "platform" && (
-        <Form.Item name="brandId" label="Brand" rules={[{ required: true }]}>
-          <BrandSelect disabled={!!campaign} selected={campaign?.brand} />
-        </Form.Item>
-      )}
+      <Form.Item name="brandId" label="Brand" rules={[{ required: true }]}>
+        <BrandSelect disabled={!!campaign} selected={campaign?.brand} />
+      </Form.Item>
       <Form.Item name="productId" label="Package" rules={[{ required: true }]}>
         <Select disabled={locked} options={packages.map((p) => ({ value: p.id, label: packageLabel(p) }))} />
       </Form.Item>
@@ -188,7 +192,7 @@ function useSave(scope: CampaignScope, id: string | undefined, mode: CreativeMod
   const save = async (values: FormValues) => {
     setSaving(true);
     try {
-      const body = buildBody(values, mode, scope, sponsored);
+      const body = buildBody(values, mode, sponsored);
       const res = id ? await axiosInstance.put(`${scope.apiBase}/${id}`, body) : await axiosInstance.post(scope.apiBase, body);
       navigate(`${scope.path}/show/${res.data.data.id}`);
     } catch (err) {
@@ -206,13 +210,13 @@ export function CampaignForm({ scope }: { scope: CampaignScope }) {
   const [mode, setMode] = useState<CreativeMode>("upload");
   const { packages, categories, stores } = useFormOptions(scope);
   const campaign = useCampaignLoader(scope, id, setMode);
-  const { data: identity } = useGetIdentity<{ brand?: { id: string } | null }>();
 
   const productId = Form.useWatch("productId", form);
   const quantity = Form.useWatch("quantity", form);
   const startsAt = Form.useWatch("startsAt", form);
   const categoryId = Form.useWatch("categoryId", form);
   const brandId = Form.useWatch("brandId", form);
+  const targetMode = Form.useWatch("targetMode", form) ?? "ALL";
   const product = packages.find((p) => p.id === productId);
   const sponsored = isSponsored(product);
   const { save, saving } = useSave(scope, id, mode, sponsored);
@@ -225,24 +229,18 @@ export function CampaignForm({ scope }: { scope: CampaignScope }) {
   return (
     <Wrapper title={id ? "Edit campaign" : "New campaign"} saveButtonProps={{ onClick: () => form.submit(), loading: saving }} isLoading={false}>
       <ReadableSection>
-        <Form form={form} layout="vertical" onFinish={save} onValuesChange={(changed) => { if ("brandId" in changed) form.setFieldsValue({ actionTarget: undefined, categoryId: undefined }); }} initialValues={campaign ? toFormValues(campaign) : { quantity: 1, startsAt: dayjs().add(DEFAULT_START_DAYS, "day") }}>
+        <Form form={form} layout="vertical" onFinish={save} onValuesChange={(changed) => { if ("brandId" in changed) form.setFieldsValue({ actionTarget: undefined, categoryId: undefined }); }} initialValues={campaign ? toFormValues(campaign) : { quantity: 1, targetMode: "ALL", startsAt: dayjs().add(DEFAULT_START_DAYS, "day") }}>
           <Row gutter={24}>
             <Col xs={24} lg={12}>
               <Card title="Booking" size="small" style={{ marginBottom: 16 }}>
-                <BookingFields scope={scope} campaign={campaign} locked={locked} packages={packages} product={product} categories={categories} />
+                <BookingFields campaign={campaign} locked={locked} packages={packages} product={product} categories={categories} />
                 <BookingSummary scope={scope} product={product} quantity={quantity ?? 1} startsAt={startsAt} categoryId={categoryId} excludeId={id} />
               </Card>
-              {scope.mode === "platform" && (
-                <Card title="Target stores (optional)" size="small">
-                  <Form.Item name="targetStoreIds" extra="Leave empty to run in every store that stocks the brand" style={{ marginBottom: 0 }}>
-                    <Select mode="multiple" optionFilterProp="label" options={stores.map((s) => ({ value: s.id, label: s.name }))} disabled={locked} />
-                  </Form.Item>
-                </Card>
-              )}
+              <TargetingCard mode={targetMode} locked={locked} stores={stores} />
             </Col>
             <Col xs={24} lg={12}>
               {sponsored ? (
-                <SponsoredCard form={form} brandId={scope.mode === "platform" ? brandId : identity?.brand?.id} locked={locked} />
+                <SponsoredCard form={form} brandId={brandId} locked={locked} />
               ) : (
                 <CreativeCards mode={mode} onModeChange={setMode} portrait={isPoster(product)} />
               )}
