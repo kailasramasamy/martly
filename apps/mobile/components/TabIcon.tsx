@@ -6,13 +6,13 @@ import { useTabBarHeight, useTabBarProgress } from "../lib/tab-bar-visibility";
 
 type IconName = keyof typeof Ionicons.glyphMap;
 
-const INACTIVE = "#475569";
+export const TAB_INACTIVE = "#475569";
 
 export function TabIcon({ focused, icon, badge }: { focused: boolean; icon: IconName; badge?: number }) {
   const name = (focused ? icon : `${icon}-outline`) as IconName;
   return (
     <View style={[styles.pill, focused && styles.pillActive]}>
-      <Ionicons name={name} size={22} color={focused ? colors.primary : INACTIVE} />
+      <Ionicons name={name} size={20} color={focused ? colors.primary : TAB_INACTIVE} />
       {badge ? (
         <View style={styles.badge}>
           <Text style={styles.badgeText}>{badge > 9 ? "9+" : badge}</Text>
@@ -21,6 +21,8 @@ export function TabIcon({ focused, icon, badge }: { focused: boolean; icon: Icon
     </View>
   );
 }
+
+export const tabLabelStyle = { fontFamily: fonts.bold, fontSize: 10.5, marginTop: 3 } as const;
 
 /**
  * Wraps every tab screen. The bar floats over the content and slides away on the native driver, so hiding it
@@ -52,8 +54,8 @@ export function useTabBarOptions() {
   const translateY = progress.interpolate({ inputRange: [0, 1], outputRange: [0, height] });
   return {
     tabBarActiveTintColor: colors.primary,
-    tabBarInactiveTintColor: INACTIVE,
-    tabBarLabelStyle: styles.tabLabel,
+    tabBarInactiveTintColor: TAB_INACTIVE,
+    tabBarLabelStyle: tabLabelStyle,
     tabBarStyle: { ...styles.tabBar, height, paddingBottom: bottomPadding, transform: [{ translateY }] },
     headerTitleStyle: styles.headerTitle,
     headerShadowVisible: false,
@@ -75,9 +77,8 @@ const styles = StyleSheet.create({
     elevation: 0,
     shadowOpacity: 0,
   },
-  tabLabel: { fontFamily: fonts.bold, fontSize: 11.5, marginTop: 3 },
   headerTitle: { fontSize: 17, fontWeight: "700" },
-  pill: { width: 60, height: 30, borderRadius: 15, alignItems: "center", justifyContent: "center" },
+  pill: { width: 56, height: 28, borderRadius: 14, alignItems: "center", justifyContent: "center" },
   pillActive: { backgroundColor: "#ccfbf1" },
   badge: {
     position: "absolute",

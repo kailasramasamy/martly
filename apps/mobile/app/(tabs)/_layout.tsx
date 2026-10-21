@@ -6,12 +6,15 @@ import { useCart } from "../../lib/cart-context";
 import { useStore } from "../../lib/store-context";
 import { TabIcon, TabSceneLayout, useTabBarOptions } from "../../components/TabIcon";
 import { useStrings } from "../../lib/i18n/use-strings";
+import { useBrandSpotlight } from "../../lib/use-brand-spotlight";
+import { BrandTabSlot } from "../../components/BrandTabSlot";
 
 export default function TabsLayout() {
   const { itemCount } = useCart();
   const t = useStrings("nav");
   const screenOptions = useTabBarOptions();
   const { selectedStore, loading } = useStore();
+  const spotlight = useBrandSpotlight(selectedStore?.id);
   // Every tab depends on a store, so the bar waits until one is chosen
   const choosing = !loading && !selectedStore;
 
@@ -42,10 +45,8 @@ export default function TabsLayout() {
         name="orders"
         options={{ title: t.orders, tabBarIcon: ({ focused }) => <TabIcon focused={focused} icon="receipt" /> }}
       />
-      <Tabs.Screen
-        name="profile"
-        options={{ title: t.account, tabBarIcon: ({ focused }) => <TabIcon focused={focused} icon="person" /> }}
-      />
+      {/* Never shown: the slot opens the spotlight brand's store (or the brands directory) on the root stack */}
+      <Tabs.Screen name="brand-spot" options={{ tabBarItemStyle: spotlight ? { flex: 1.25 } : undefined, tabBarButton: () => <BrandTabSlot brand={spotlight} /> }} />
     </Tabs>
   );
 }

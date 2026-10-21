@@ -21,6 +21,7 @@ export const account: Strings<"account"> = {
     rewards: "பரிசுகள்",
     referEarn: "பரிந்துரைத்து சம்பாதி",
     helpSettings: "உதவி & அமைப்புகள்",
+    notifications: "அறிவிப்புகள்",
     chatSupport: "உதவியாளருடன் அரட்டை",
     tickets: "என் டிக்கெட்டுகள்",
     language: "மொழி (Language)",

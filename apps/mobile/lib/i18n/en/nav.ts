@@ -7,6 +7,8 @@ export const nav = {
   cartWithCount: (n: number) => `Cart, ${n} items`,
   orders: "Orders",
   account: "Account",
+  brands: "Brands",
+  shopBrand: (name: string) => `Shop ${name}`,
   back: "Back",
   deleteAccount: "Delete Account",
   store: "Store",

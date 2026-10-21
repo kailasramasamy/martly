@@ -3,7 +3,7 @@ import { useFocusEffect } from "expo-router";
 import { api } from "./api";
 import type { UserAddress } from "./types";
 
-// Wallet, loyalty, Mart Plus status and saved addresses for the Account tab; refreshed whenever it gains focus
+// Wallet, loyalty, Mart Plus status and saved addresses for the Account screen; refreshed whenever it gains focus
 export function useAccountSummary(isAuthenticated: boolean, storeId: string | undefined) {
   const [walletBalance, setWalletBalance] = useState(0);
   const [loyaltyPoints, setLoyaltyPoints] = useState(0);

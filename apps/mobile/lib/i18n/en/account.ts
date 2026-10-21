@@ -19,6 +19,7 @@ export const account = {
     rewards: "Rewards",
     referEarn: "Refer & Earn",
     helpSettings: "Help & settings",
+    notifications: "Notifications",
     chatSupport: "Chat with Support",
     tickets: "My Tickets",
     language: "Language",

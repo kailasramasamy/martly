@@ -3,25 +3,25 @@ import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-nati
 import { useRouter } from "expo-router";
 import Constants from "expo-constants";
 import { Ionicons } from "@expo/vector-icons";
-import { useAuth } from "../../lib/auth-context";
-import { usePersona } from "../../lib/persona-context";
-import { useStore } from "../../lib/store-context";
-import { useLanguage } from "../../lib/language-context";
-import { useToast } from "../../lib/toast-context";
-import { useAccountSummary } from "../../lib/use-account-summary";
-import { api } from "../../lib/api";
-import { colors, fonts, spacing } from "../../constants/theme";
-import { ConfirmSheet } from "../../components/ConfirmSheet";
-import { ProfileHeader } from "../../components/account/ProfileHeader";
-import { MenuGroup, type MenuItem } from "../../components/account/MenuGroup";
-import { AddressList } from "../../components/account/AddressList";
-import { AddressSheet } from "../../components/account/AddressSheet";
-import { EditProfileSheet } from "../../components/account/EditProfileSheet";
-import type { UserAddress } from "../../lib/types";
-import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
-import { useRequireSignIn } from "../../lib/sign-in-context";
-import { GuestAccountCard, StaffSignInLink } from "../../components/account/GuestAccount";
-import { useStrings } from "../../lib/i18n/use-strings";
+import { useAuth } from "../lib/auth-context";
+import { usePersona } from "../lib/persona-context";
+import { useStore } from "../lib/store-context";
+import { useLanguage } from "../lib/language-context";
+import { useToast } from "../lib/toast-context";
+import { useAccountSummary } from "../lib/use-account-summary";
+import { api } from "../lib/api";
+import { colors, fonts, spacing } from "../constants/theme";
+import { ConfirmSheet } from "../components/ConfirmSheet";
+import { ProfileHeader } from "../components/account/ProfileHeader";
+import { MenuGroup, type MenuItem } from "../components/account/MenuGroup";
+import { AddressList } from "../components/account/AddressList";
+import { AddressSheet } from "../components/account/AddressSheet";
+import { EditProfileSheet } from "../components/account/EditProfileSheet";
+import type { UserAddress } from "../lib/types";
+import { useRequireSignIn } from "../lib/sign-in-context";
+import { GuestAccountCard, StaffSignInLink } from "../components/account/GuestAccount";
+import { useStrings } from "../lib/i18n/use-strings";
+import { useNotifications } from "../lib/notification-context";
 
 const BUILD_NUMBER = Constants.expoConfig?.ios?.buildNumber;
 const APP_VERSION = Constants.expoConfig?.version;
@@ -34,6 +34,7 @@ function useMenuGroups(subscriptionsEnabled: boolean): { title: string; items: M
   const { martPlus, profile: t } = useStrings("account");
   const { canManage, switchPersona } = usePersona();
   const requireSignIn = useRequireSignIn();
+  const { unreadCount } = useNotifications();
   // Everything here but Language belongs to an account, so guests sign in on the way
   const go = (path: Parameters<typeof router.push>[0]) => () => requireSignIn(() => router.push(path));
   return [
@@ -58,6 +59,7 @@ function useMenuGroups(subscriptionsEnabled: boolean): { title: string; items: M
     {
       title: t.helpSettings,
       items: [
+        { icon: "notifications-outline", label: t.notifications, badge: unreadCount, onPress: go({ pathname: "/notifications", params: { audience: "customer" } }) },
         { icon: "chatbubbles-outline", label: t.chatSupport, onPress: go("/support-chat") },
         { icon: "headset-outline", label: t.tickets, onPress: go("/support-tickets") },
         { icon: "language-outline", label: t.language, value: language ? supportedLanguages[language] : "English", onPress: () => router.push("/language-settings") },
@@ -66,13 +68,12 @@ function useMenuGroups(subscriptionsEnabled: boolean): { title: string; items: M
   ];
 }
 
-/** Account tab for guests: why to sign in, the menu (which asks to sign in), Language, and the staff sign-in link */
+/** Account screen for guests: why to sign in, the menu (which asks to sign in), Language, and the staff sign-in link */
 function GuestAccountScreen({ menuGroups }: { menuGroups: { title: string; items: MenuItem[] }[] }) {
-  const tabBarScroll = useTabBarAutoHide();
   const t = useStrings("account").profile;
   return (
     <View style={styles.container}>
-      <ScrollView {...tabBarScroll.scrollProps} showsVerticalScrollIndicator={false} contentContainerStyle={tabBarScroll.contentStyle(styles.scroll)}>
+      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scroll}>
         <GuestAccountCard />
         {menuGroups.map((group) => <MenuGroup key={group.title} title={group.title} items={group.items} />)}
         <StaffSignInLink />
@@ -82,8 +83,7 @@ function GuestAccountScreen({ menuGroups }: { menuGroups: { title: string; items
   );
 }
 
-export default function ProfileScreen() {
-  const tabBarScroll = useTabBarAutoHide();
+export default function AccountScreen() {
   const t = useStrings("account");
   const router = useRouter();
   const { logout, user, isAuthenticated } = useAuth();
@@ -118,7 +118,7 @@ export default function ProfileScreen() {
 
   return (
     <View style={styles.container}>
-      <ScrollView keyboardDismissMode="on-drag" {...tabBarScroll.scrollProps} showsVerticalScrollIndicator={false} contentContainerStyle={tabBarScroll.contentStyle(styles.scroll)}>
+      <ScrollView keyboardDismissMode="on-drag" showsVerticalScrollIndicator={false} contentContainerStyle={styles.scroll}>
         <ProfileHeader
           name={user?.name} phone={user?.phone} email={user?.email}
           walletBalance={summary.walletBalance} loyaltyPoints={summary.loyaltyPoints} isMember={summary.isMember}

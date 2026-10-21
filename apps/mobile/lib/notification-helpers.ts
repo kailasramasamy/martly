@@ -35,7 +35,7 @@ const STATIC_SCREENS: Record<string, string> = {
   "smart-reorder": "/smart-reorder",
   home: "/(tabs)",
   orders: "/(tabs)/orders",
-  profile: "/(tabs)/profile",
+  profile: "/account",
   categories: "/(tabs)/categories",
   "manage-orders": "/(manage)/orders",
   "manage-today": "/(manage)",

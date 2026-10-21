@@ -8,6 +8,8 @@ export const nav: Strings<"nav"> = {
   cartWithCount: (n: number) => `கார்ட், ${n} பொருட்கள்`,
   orders: "ஆர்டர்கள்",
   account: "கணக்கு",
+  brands: "பிராண்டுகள்",
+  shopBrand: (name: string) => `${name} வாங்குங்கள்`,
   back: "பின்",
   deleteAccount: "கணக்கை நீக்கு",
   store: "கடை",

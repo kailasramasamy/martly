@@ -11,6 +11,8 @@ export interface MenuItem {
   onPress: () => void;
   /** Mart Plus and other premium entries use the amber accent */
   premium?: boolean;
+  /** Count shown as a red pill, e.g. unread notifications; hidden at zero */
+  badge?: number;
 }
 
 export function MenuGroup({ title, items }: { title: string; items: MenuItem[] }) {
@@ -27,6 +29,11 @@ export function MenuGroup({ title, items }: { title: string; items: MenuItem[] }
               </View>
               <Text style={styles.label}>{item.label}</Text>
               {item.value ? <Text style={styles.value}>{item.value}</Text> : null}
+              {item.badge ? (
+                <View style={styles.badge}>
+                  <Text style={styles.badgeText}>{item.badge > 99 ? "99+" : item.badge}</Text>
+                </View>
+              ) : null}
               <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
             </TouchableOpacity>
           </Fragment>
@@ -48,5 +55,7 @@ const styles = StyleSheet.create({
   iconPremium: { backgroundColor: "#fef3c7" },
   label: { flex: 1, fontFamily: fonts.semibold, fontSize: 15, color: colors.text },
   value: { fontFamily: fonts.medium, fontSize: 13.5, color: colors.textSecondary },
+  badge: { minWidth: 22, height: 22, borderRadius: 11, paddingHorizontal: 6, backgroundColor: colors.error, alignItems: "center", justifyContent: "center" },
+  badgeText: { fontFamily: fonts.bold, fontSize: 11.5, color: "#fff" },
   divider: { height: 1, backgroundColor: "#f1f5f9", marginLeft: 62 },
 });

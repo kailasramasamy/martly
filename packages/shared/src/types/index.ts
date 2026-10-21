@@ -118,6 +118,13 @@ export interface DirectoryDepartment {
   categories: DirectoryCategory[];
 }
 
+/** The brand featured in the shopper app's tab bar for a store */
+export interface BrandSpotlight {
+  id: string;
+  name: string;
+  imageUrl: string;
+}
+
 // A store's brands by department → category (a brand appears under every category it has products in);
 // `featured` = brands with a brand store (theme colour), `brandCount` = distinct brands in the store
 export interface BrandDirectory {

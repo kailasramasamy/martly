@@ -169,6 +169,7 @@ function RootLayoutNav() {
         <Stack.Screen name="wallet" options={{ headerShown: true, title: t.wallet }} />
         <Stack.Screen name="loyalty" options={{ headerShown: true, title: t.loyalty }} />
         <Stack.Screen name="notifications" options={{ headerShown: true, title: t.notifications }} />
+        <Stack.Screen name="account" options={{ headerShown: true, title: t.account }} />
         <Stack.Screen name="referral" options={{ headerShown: true, title: t.referral }} />
         <Stack.Screen name="ai-order" options={{ headerShown: false }} />
         <Stack.Screen name="support-chat" options={{ headerShown: false }} />
