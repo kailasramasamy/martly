@@ -22,14 +22,12 @@ interface TabBarVisibility {
 
 const TabBarVisibilityContext = createContext<TabBarVisibility | null>(null);
 
-/** Height of the floating capsule itself */
-const BAR_HEIGHT = 66;
-
-/** Space the bottom tab bar takes: the floating capsule plus its gap above the home indicator */
+/** Height of the bottom tab bar, including the home-indicator inset */
 export function useTabBarHeight() {
   const insets = useSafeAreaInsets();
-  const gap = Math.max(insets.bottom - 6, 12);
-  return { height: BAR_HEIGHT + gap, barHeight: BAR_HEIGHT, gap };
+  // Labels sit partly inside the home-indicator inset, as in other quick-commerce apps
+  const bottomPadding = Math.max(insets.bottom - 8, 10);
+  return { height: 52 + bottomPadding, bottomPadding };
 }
 
 export function TabBarVisibilityProvider({ children }: { children: ReactNode }) {

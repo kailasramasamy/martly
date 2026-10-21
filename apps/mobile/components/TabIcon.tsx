@@ -1,20 +1,17 @@
 import type { ReactNode } from "react";
 import { View, Text, Animated, StyleSheet, type LayoutChangeEvent } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { PlatformPressable } from "@react-navigation/elements";
-import type { BottomTabBarButtonProps } from "@react-navigation/bottom-tabs";
 import { colors, fonts } from "../constants/theme";
 import { useTabBarHeight, useTabBarProgress } from "../lib/tab-bar-visibility";
 
 type IconName = keyof typeof Ionicons.glyphMap;
 
 const INACTIVE = "#475569";
-const ACTIVE_BG = "#e6f4f2";
 
 export function TabIcon({ focused, icon, badge }: { focused: boolean; icon: IconName; badge?: number }) {
   const name = (focused ? icon : `${icon}-outline`) as IconName;
   return (
-    <View style={styles.iconWrap}>
+    <View style={[styles.pill, focused && styles.pillActive]}>
       <Ionicons name={name} size={22} color={focused ? colors.primary : INACTIVE} />
       {badge ? (
         <View style={styles.badge}>
@@ -48,24 +45,16 @@ export function TabBottomDock({ children, onLayout }: { children: ReactNode; onL
   );
 }
 
-/** The library paints the active background on its inner button with square corners, so round it here */
-function TabButton(props: BottomTabBarButtonProps) {
-  return <PlatformPressable {...props} style={[props.style, styles.tabButton]} />;
-}
-
 /** Shared bottom tab bar look for the Shop and Manage personas */
 export function useTabBarOptions() {
-  const { height, barHeight, gap } = useTabBarHeight();
+  const { height, bottomPadding } = useTabBarHeight();
   const { progress } = useTabBarProgress();
   const translateY = progress.interpolate({ inputRange: [0, 1], outputRange: [0, height] });
   return {
     tabBarActiveTintColor: colors.primary,
     tabBarInactiveTintColor: INACTIVE,
-    tabBarActiveBackgroundColor: ACTIVE_BG,
     tabBarLabelStyle: styles.tabLabel,
-    tabBarItemStyle: styles.tabItem,
-    tabBarButton: TabButton,
-    tabBarStyle: { ...styles.tabBar, height: barHeight, bottom: gap, transform: [{ translateY }] },
+    tabBarStyle: { ...styles.tabBar, height, paddingBottom: bottomPadding, transform: [{ translateY }] },
     headerTitleStyle: styles.headerTitle,
     headerShadowVisible: false,
   };
@@ -78,31 +67,22 @@ const styles = StyleSheet.create({
     position: "absolute",
     left: 0,
     right: 0,
-    marginHorizontal: 12,
-    paddingTop: 0,
-    paddingBottom: 0,
-    paddingHorizontal: 4,
-    borderRadius: 31,
-    borderTopWidth: 0,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: "#e2e8f0",
+    bottom: 0,
+    paddingTop: 5,
+    borderTopWidth: 1,
+    borderTopColor: "#eef2f6",
     backgroundColor: "#fff",
-    shadowColor: "#0f172a",
-    shadowOpacity: 0.12,
-    shadowRadius: 18,
-    shadowOffset: { width: 0, height: 6 },
-    elevation: 10,
+    elevation: 0,
+    shadowOpacity: 0,
   },
-  // Sized to the label, so a long label like "Categories" gets a wider highlight than "Cart"
-  tabItem: { marginVertical: 5, flex: 0, flexGrow: 1, flexBasis: "auto" },
-  tabButton: { flexGrow: 1, borderRadius: 26, paddingHorizontal: 10, paddingBottom: 9 },
-  tabLabel: { fontFamily: fonts.bold, fontSize: 11, marginTop: 2 },
+  tabLabel: { fontFamily: fonts.bold, fontSize: 11.5, marginTop: 3 },
   headerTitle: { fontSize: 17, fontWeight: "700" },
-  iconWrap: { width: 40, height: 26, alignItems: "center", justifyContent: "center" },
+  pill: { width: 60, height: 30, borderRadius: 15, alignItems: "center", justifyContent: "center" },
+  pillActive: { backgroundColor: "#ccfbf1" },
   badge: {
     position: "absolute",
     top: -4,
-    right: 0,
+    right: 8,
     minWidth: 19,
     height: 19,
     borderRadius: 10,
