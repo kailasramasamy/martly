@@ -40,6 +40,12 @@
           ]
         }
       ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow Martly to use the microphone for voice ordering."
+        }
+      ],
       "@react-native-firebase/app",
       "@react-native-firebase/messaging",
       "expo-localization",

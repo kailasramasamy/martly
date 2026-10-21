@@ -13,12 +13,13 @@ const PREVIEW = 3;
 type Actions = {
   /** Straight to finding products for the picked items (the build logs the list, so it stays in Recent lists) */
   onFind: (texts: string[]) => void;
-  /** Onto My list instead, to refine before shopping */
+  /** Onto My list instead, to refine before shopping (or wherever `addLabel` says) */
   onAdd: (texts: string[]) => void;
+  addLabel?: string;
 };
 
 /** A past list's items, all ticked; the shopper unticks what they don't need, then finds them or adds them to My list */
-function PickSheet({ list, onFind, onAdd, onClose }: Actions & { list: RecentList | null; onClose: () => void }) {
+function PickSheet({ list, onFind, onAdd, addLabel, onClose }: Actions & { list: RecentList | null; onClose: () => void }) {
   const t = useStrings("shoppingList");
   const [kept, setKept] = useState<Set<number>>(new Set());
   useEffect(() => setKept(new Set(list?.items.map((_, i) => i))), [list]);
@@ -36,7 +37,7 @@ function PickSheet({ list, onFind, onAdd, onClose }: Actions & { list: RecentLis
         <Text style={styles.findText}>{t.findProducts(picked.length)}</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.instead} disabled={none} onPress={() => onAdd(picked)}>
-        <Text style={[styles.insteadText, none && styles.insteadOff]}>{t.addInstead}</Text>
+        <Text style={[styles.insteadText, none && styles.insteadOff]}>{addLabel ?? t.addInstead}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -75,7 +76,7 @@ function ListCard({ list, onPress }: { list: RecentList; onPress: () => void }) 
 }
 
 /** Lists from earlier shops: pick one, keep what's needed this time, and find its products (or refine it on My list first) */
-export function RecentLists({ lists, onFind, onAdd }: Actions & { lists: RecentList[] }) {
+export function RecentLists({ lists, onFind, onAdd, addLabel }: Actions & { lists: RecentList[] }) {
   const t = useStrings("shoppingList");
   const [open, setOpen] = useState<RecentList | null>(null);
   if (lists.length === 0) return null;
@@ -85,7 +86,7 @@ export function RecentLists({ lists, onFind, onAdd }: Actions & { lists: RecentL
       <Text style={styles.hint}>{t.recentHint}</Text>
       {lists.map((list) => <ListCard key={list.id} list={list} onPress={() => setOpen(list)} />)}
       <PickSheet
-        list={open} onClose={() => setOpen(null)}
+        list={open} onClose={() => setOpen(null)} addLabel={addLabel}
         onFind={(texts) => { setOpen(null); onFind(texts); }} onAdd={(texts) => { setOpen(null); onAdd(texts); }}
       />
     </View>

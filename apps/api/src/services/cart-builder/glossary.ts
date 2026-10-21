@@ -49,3 +49,25 @@ export async function glossaryPrompt(prisma: PrismaClient, languages: GlossaryLa
   });
   return lines.length > 0 ? `Staples as shoppers say them, and the word this catalog uses:\n${lines.join("\n")}` : "";
 }
+
+// Amount words said with almost every item, so the recogniser expects them too
+const UNIT_WORDS: Record<GlossaryLanguage, string[]> = {
+  ta: ["கிலோ", "அரை கிலோ", "கால் கிலோ", "லிட்டர்", "பாக்கெட்"],
+  kn: ["ಕಿಲೋ", "ಲೀಟರ್", "ಪ್ಯಾಕೆಟ್"],
+  ml: ["കിലോ", "ലിറ്റർ", "പാക്കറ്റ്"],
+  te: ["కిలో", "లీటర్", "ప్యాకెట్"],
+  hi: ["किलो", "लीटर", "पैकेट"],
+};
+const MAX_KEYTERMS = 50;
+const NATIVE_SCRIPT = /[^\x00-\x7F]/;
+
+/**
+ * Words a speech recogniser should listen for in one language: the glossary's phrases in that language's own script
+ * (romanised spellings are for typed lists) and the amount words, in a stable order and capped at the provider's 50.
+ */
+export async function glossaryKeyterms(prisma: PrismaClient, language: GlossaryLanguage) {
+  const phrases = (await activeEntries(prisma)).flatMap((e) =>
+    e.phrases.filter((p) => p.language === language && NATIVE_SCRIPT.test(p.text)).map((p) => p.text),
+  );
+  return [...new Set([...UNIT_WORDS[language], ...phrases])].slice(0, MAX_KEYTERMS);
+}

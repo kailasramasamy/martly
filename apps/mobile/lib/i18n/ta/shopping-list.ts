@@ -51,4 +51,5 @@ export const shoppingList: Strings<"shoppingList"> = {
   pickItems: "இந்த முறை வேண்டாதவற்றின் தேர்வை நீக்குங்கள்",
   findProducts: (n: number) => `${n} பொருட்களைத் தேடு`,
   addInstead: "பதிலாக என் பட்டியலில் சேர்",
+  addToSpoken: "இந்தப் பட்டியலில் சேர்",
 };

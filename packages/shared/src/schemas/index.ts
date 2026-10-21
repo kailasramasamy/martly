@@ -1570,3 +1570,9 @@ export const listGlossaryQuerySchema = z.object({
 });
 
 export const listGlossaryActiveSchema = z.object({ isActive: z.boolean() });
+
+// The form fields sent with one spoken list item (the clip itself is the file part)
+export const speechTranscribeSchema = z.object({
+  storeId: z.string().uuid(),
+  language: appLanguage,
+});

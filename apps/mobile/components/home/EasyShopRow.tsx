@@ -45,9 +45,11 @@ function Pill({ icon, label, onPress, onTint, count, busy }: PillProps) {
     >
       <View style={[styles.icon, onTint && styles.iconOnTint]}>
         {busy ? <ActivityIndicator size="small" color="#ffffff" /> : <Ionicons name={icon} size={15} color="#ffffff" />}
+        {/* On the icon's corner, so a long (Tamil) label keeps the pill's width */}
+        {count ? <View style={styles.count}><Text style={styles.countText}>{count}</Text></View> : null}
       </View>
-      <Text style={styles.label} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75}>{label}</Text>
-      {count ? <View style={styles.count}><Text style={styles.countText}>{count}</Text></View> : null}
+      {/* Tamil labels run long: wrap to two lines before shrinking much */}
+      <Text style={styles.label} numberOfLines={2} adjustsFontSizeToFit minimumFontScale={0.85}>{label}</Text>
     </TouchableOpacity>
   );
 }
@@ -90,7 +92,10 @@ const styles = StyleSheet.create({
   pillOnTint: { backgroundColor: "rgba(255,255,255,0.92)", borderColor: "rgba(255,255,255,0.6)" },
   icon: { width: 28, height: 28, borderRadius: 14, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" },
   iconOnTint: { backgroundColor: colors.primaryDark },
-  label: { flexShrink: 1, fontSize: 14, fontFamily: fonts.bold, color: colors.primaryDark },
-  count: { minWidth: 22, height: 22, borderRadius: 11, backgroundColor: colors.accent, alignItems: "center", justifyContent: "center", paddingHorizontal: 6 },
-  countText: { fontSize: 12, fontFamily: fonts.extrabold, color: colors.accentText },
+  label: { flexShrink: 1, fontSize: 14, lineHeight: 17, fontFamily: fonts.bold, color: colors.primaryDark },
+  count: {
+    position: "absolute", top: -6, left: -6, minWidth: 18, height: 18, borderRadius: 9, paddingHorizontal: 4,
+    backgroundColor: colors.accent, alignItems: "center", justifyContent: "center", borderWidth: 1.5, borderColor: "#ffffff",
+  },
+  countText: { fontSize: 10.5, fontFamily: fonts.extrabold, color: colors.accentText },
 });

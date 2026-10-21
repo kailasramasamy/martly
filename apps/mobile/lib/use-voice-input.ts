@@ -27,6 +27,8 @@ interface Options {
 interface Session {
   /** This hook started the running session; speech events are global */
   ours: boolean;
+  /** The recogniser language for this session: the app's, or Indian English when the phone can't do the app's */
+  lang: string;
   /** Continuous mode: still wanted until the shopper taps Done */
   keepGoing: boolean;
   /** Audio time (ms into the session) up to which words were handed over as items */
@@ -55,6 +57,22 @@ function freshWords(s: Session, result: SpeechResult | undefined) {
   }
   const words = (result?.transcript ?? "").split(/\s+/).filter(Boolean);
   return { text: words.slice(s.handedOverWords).join(" "), endMs: 0, words: words.length };
+}
+
+const FALLBACK_LOCALE = "en-IN";
+
+/**
+ * Listens in the app language, so a Tamil shopper can speak Tamil; a phone whose recogniser has no voice for it
+ * (iPhones have no Tamil, for one) listens in Indian English instead of not listening at all.
+ */
+async function recognitionLocale() {
+  const wanted = activeLocale();
+  if (wanted === FALLBACK_LOCALE || !SpeechModule) return FALLBACK_LOCALE;
+  // The lookup itself can fail ("error_N"); then try the app language and let the error event say if it's unsupported
+  const locales = await SpeechModule.getSupportedLocales({}).then((r) => r.locales, () => null);
+  if (!locales) return wanted;
+  const lang = wanted.toLowerCase();
+  return locales.some((l) => l.replace("_", "-").toLowerCase() === lang) ? wanted : FALLBACK_LOCALE;
 }
 
 /** Turns the recogniser's events into partial and final transcripts for the session this hook started */
@@ -118,24 +136,27 @@ export function useVoiceInput(onPartial: (text: string) => void, onFinal: (text:
   const { show } = useToast();
   const t = useStrings("search");
   const [listening, setListening] = useState(false);
-  const session = useRef<Session>({ ours: false, keepGoing: false, handedOverMs: 0, handedOverWords: 0, pause: null });
+  const session = useRef<Session>({ ours: false, lang: FALLBACK_LOCALE, keepGoing: false, handedOverMs: 0, handedOverWords: 0, pause: null });
 
-  // Listens in the app language, so a Tamil shopper can speak Tamil; search matches Tamil product names
   const begin = useCallback(() => {
     Object.assign(session.current, { handedOverMs: 0, handedOverWords: 0 });
-    SpeechModule?.start({ lang: activeLocale(), interimResults: true, continuous, contextualStrings: hints });
+    SpeechModule?.start({ lang: session.current.lang, interimResults: true, continuous, contextualStrings: hints });
   }, [continuous, hints]);
 
   useSessionEvents(session, begin, setListening, onPartial, onFinal, (error) => {
     if (error === "not-allowed") show(t.micDenied, "error");
     else if (error === "no-speech") show(t.didntCatch);
+    // Never stop silently: an idle mic with no word reads as broken
+    else if (error !== "aborted") show(t.voiceStopped, "error");
   });
 
   const start = useCallback(async () => {
     if (!SpeechModule) return;
     const { granted } = await SpeechModule.requestPermissionsAsync();
     if (!granted) return show(t.micDenied, "error");
-    Object.assign(session.current, { ours: true, keepGoing: continuous });
+    const lang = await recognitionLocale();
+    if (lang !== activeLocale()) show(t.voiceInEnglish);
+    Object.assign(session.current, { ours: true, lang, keepGoing: continuous });
     begin();
   }, [show, t, continuous, begin]);
 

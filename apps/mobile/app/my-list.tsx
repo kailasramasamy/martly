@@ -6,7 +6,8 @@ import { colors, fonts } from "../constants/theme";
 import { useStore } from "../lib/store-context";
 import { strings } from "../lib/i18n";
 import { useStrings } from "../lib/i18n/use-strings";
-import { useVoiceInput } from "../lib/use-voice-input";
+import { useCloudVoice } from "../lib/use-cloud-voice";
+import { LIST_HINTS } from "../lib/cart-builder";
 import { useShoppingList } from "../lib/use-shopping-list";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
 import { useCartBuild } from "../lib/use-cart-build";
@@ -42,10 +43,11 @@ function Row({ item, index, onEdit, onRemove }: { item: ShoppingListItem; index:
 function AddBar({ onAdd }: { onAdd: (text: string) => void }) {
   const t = useStrings("shoppingList");
   const [draft, setDraft] = useState("");
-  const voice = useVoiceInput(setDraft, (text) => {
+  const { selectedStore } = useStore();
+  const voice = useCloudVoice(setDraft, (text) => {
     setDraft("");
     onAdd(text);
-  });
+  }, { storeId: selectedStore?.id, hints: LIST_HINTS });
   const submit = () => {
     if (draft.trim()) onAdd(draft.trim());
     setDraft("");

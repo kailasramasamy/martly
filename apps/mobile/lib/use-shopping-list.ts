@@ -43,6 +43,17 @@ function useListData(failed: (err: unknown) => void) {
   return { items, setItems, recent, loading };
 }
 
+/** Lists from earlier shops (any list the customer built a cart from, spoken or kept), loaded whenever the screen shows */
+export function useRecentLists() {
+  const { isAuthenticated } = useAuth();
+  const failed = useFailureToast();
+  const [recent, setRecent] = useState<RecentList[]>([]);
+  useFocusEffect(useCallback(() => {
+    if (isAuthenticated) api.get<RecentList[]>(`${BASE}/recent`).then((res) => setRecent(res.data), failed);
+  }, [isAuthenticated, failed]));
+  return recent;
+}
+
 /** The customer's running list (kept on the server, so it survives reinstalls), and lists to start it from */
 export function useShoppingList() {
   const failed = useFailureToast();

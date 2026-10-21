@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { View, Text, TextInput, TouchableOpacity, Animated, ScrollView, KeyboardAvoidingView, Platform, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
@@ -9,18 +9,19 @@ const PAPER = "#fffdf5";
 const RULE = "#e8e1cc";
 const MARGIN = "#f3b4a8";
 
-/** A big mic with a slow ring while it listens */
-function MicButton({ listening, onPress }: { listening: boolean; onPress: () => void }) {
+/** A big mic with a ring while it listens: it follows the voice when the level is known, else pulses slowly */
+function MicButton({ listening, level, onPress }: { listening: boolean; level: Animated.Value | null; onPress: () => void }) {
   const t = useStrings("shoppingList");
   const ring = useRef(new Animated.Value(0)).current;
   useEffect(() => {
-    if (!listening) return ring.setValue(0);
+    if (!listening || level) return ring.setValue(0);
     const loop = Animated.loop(Animated.timing(ring, { toValue: 1, duration: 1600, useNativeDriver: true }));
     loop.start();
     return () => loop.stop();
-  }, [listening, ring]);
-  const scale = ring.interpolate({ inputRange: [0, 1], outputRange: [1, 1.45] });
-  const opacity = ring.interpolate({ inputRange: [0, 1], outputRange: [0.35, 0] });
+  }, [listening, level, ring]);
+  const live = listening && level;
+  const scale = live ? level.interpolate({ inputRange: [0, 1], outputRange: [1.05, 1.45] }) : ring.interpolate({ inputRange: [0, 1], outputRange: [1, 1.45] });
+  const opacity = live ? 0.3 : ring.interpolate({ inputRange: [0, 1], outputRange: [0.35, 0] });
   return (
     <View style={styles.micWrap}>
       <Animated.View style={[styles.ring, { transform: [{ scale }], opacity }]} />
@@ -37,13 +38,15 @@ function MicButton({ listening, onPress }: { listening: boolean; onPress: () => 
 interface PaperProps {
   lines: string[];
   partial: string;
+  /** Spoken items still being written out */
+  pending?: number;
   onEditLine: (i: number, text: string) => void;
   onRemoveLine: (i: number) => void;
   onAddTyped: (text: string) => void;
 }
 
 /** The list as a ruled paper slip: every spoken pause is a line the shopper can fix or remove */
-function PaperList({ lines, partial, onEditLine, onRemoveLine, onAddTyped }: PaperProps) {
+function PaperList({ lines, partial, pending = 0, onEditLine, onRemoveLine, onAddTyped }: PaperProps) {
   const t = useStrings("shoppingList");
   const [typed, setTyped] = useState("");
   const submit = () => {
@@ -65,6 +68,12 @@ function PaperList({ lines, partial, onEditLine, onRemoveLine, onAddTyped }: Pap
           </TouchableOpacity>
         </View>
       ))}
+      {Array.from({ length: pending }, (_, i) => (
+        <View key={`pending-${i}`} style={styles.line}>
+          <Text style={styles.num}>{lines.length + i + 1}</Text>
+          <Text style={[styles.lineText, styles.partial]}>…</Text>
+        </View>
+      ))}
       {partial ? (
         <View style={styles.line}>
           <Text style={styles.num}>{lines.length + 1}</Text>
@@ -84,15 +93,19 @@ function PaperList({ lines, partial, onEditLine, onRemoveLine, onAddTyped }: Pap
 
 interface Props extends PaperProps {
   listening: boolean;
+  /** The live voice level (0-1), when the mic can measure it */
+  level?: Animated.Value | null;
   voiceAvailable: boolean;
   onMic: () => void;
   onFind: () => void;
+  /** Below the list, e.g. lists from earlier shops */
+  footer?: ReactNode;
 }
 
 /** Speaking (or typing) the list, before it's matched */
-export function ListeningPanel({ listening, voiceAvailable, onMic, onFind, ...paper }: Props) {
+export function ListeningPanel({ listening, level = null, voiceAvailable, onMic, onFind, footer, ...paper }: Props) {
   const t = useStrings("shoppingList");
-  const count = paper.lines.length + (paper.partial ? 1 : 0);
+  const count = paper.lines.length + (paper.pending ?? 0) + (paper.partial ? 1 : 0);
   const status = !voiceAvailable ? t.noVoice : listening ? t.listening : count ? t.tapToResume : t.tapToSpeak;
   // The screen shrinks above the keyboard, so Find stays in reach while typing or fixing a line
   const keyboard = useKeyboardReveal();
@@ -103,7 +116,7 @@ export function ListeningPanel({ listening, voiceAvailable, onMic, onFind, ...pa
           ref={keyboard.scrollRef} onScroll={keyboard.onScroll} scrollEventThrottle={16}
           contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag"
         >
-          {voiceAvailable && <MicButton listening={listening} onPress={onMic} />}
+          {voiceAvailable && <MicButton listening={listening} level={level} onPress={onMic} />}
           <Text style={styles.status}>{status}</Text>
           {count === 0 && voiceAvailable && (
             <View style={styles.example}>
@@ -112,6 +125,7 @@ export function ListeningPanel({ listening, voiceAvailable, onMic, onFind, ...pa
             </View>
           )}
           <PaperList {...paper} />
+          {footer}
         </ScrollView>
         {count > 0 && (
           <View style={styles.footer}>
@@ -133,10 +147,11 @@ const styles = StyleSheet.create({
   ring: { position: "absolute", width: 112, height: 112, borderRadius: 56, backgroundColor: colors.primary },
   mic: { width: 112, height: 112, borderRadius: 56, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center", elevation: 4, shadowColor: colors.primaryDark, shadowOpacity: 0.3, shadowRadius: 12, shadowOffset: { width: 0, height: 6 } },
   micOn: { backgroundColor: colors.primaryDark },
-  status: { fontSize: 18, fontFamily: fonts.bold, color: colors.text, textAlign: "center", marginTop: 6 },
-  example: { marginTop: 10, alignItems: "center", gap: 4, paddingHorizontal: 8 },
-  hint: { fontSize: 14, fontFamily: fonts.medium, color: colors.textSecondary, textAlign: "center" },
-  exampleText: { fontSize: 15, fontFamily: fonts.semibold, color: "#92400e", textAlign: "center" },
+  // Line heights leave room for Tamil vowel signs above and below the letters
+  status: { fontSize: 18, lineHeight: 27, fontFamily: fonts.bold, color: colors.text, textAlign: "center", marginTop: 6 },
+  example: { marginTop: 14, alignItems: "center", gap: 10, paddingHorizontal: 8 },
+  hint: { fontSize: 14, lineHeight: 22, fontFamily: fonts.medium, color: colors.textSecondary, textAlign: "center" },
+  exampleText: { fontSize: 15, lineHeight: 24, fontFamily: fonts.semibold, color: "#92400e", textAlign: "center" },
   paper: { marginTop: 22, backgroundColor: PAPER, borderRadius: 14, borderWidth: 1, borderColor: "#efe6c9", paddingVertical: 6, overflow: "hidden" },
   margin: { position: "absolute", left: 44, top: 0, bottom: 0, width: 1.5, backgroundColor: MARGIN },
   line: { flexDirection: "row", alignItems: "center", minHeight: 52, borderBottomWidth: 1, borderBottomColor: RULE },

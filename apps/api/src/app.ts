@@ -48,6 +48,7 @@ import { aiRoutes } from "./routes/ai/index.js";
 import { listToCartRoutes } from "./routes/list-to-cart/index.js";
 import { shoppingListRoutes } from "./routes/shopping-list/index.js";
 import { listGlossaryRoutes } from "./routes/list-glossary/index.js";
+import { speechRoutes } from "./routes/speech/index.js";
 import { supportRoutes } from "./routes/support/index.js";
 import { smartReorderRoutes } from "./routes/smart-reorder/index.js";
 import { storeIntelligenceRoutes } from "./routes/store-intelligence/index.js";
@@ -193,6 +194,7 @@ export async function buildApp() {
       await api.register(listToCartRoutes, { prefix: "/list-to-cart" });
       await api.register(shoppingListRoutes, { prefix: "/shopping-list" });
       await api.register(listGlossaryRoutes, { prefix: "/list-glossary" });
+      await api.register(speechRoutes, { prefix: "/speech" });
       await api.register(supportRoutes, { prefix: "/support" });
       await api.register(smartReorderRoutes, { prefix: "/smart-reorder" });
       await api.register(storeIntelligenceRoutes, { prefix: "/store-intelligence" });

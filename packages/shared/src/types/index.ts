@@ -369,4 +369,9 @@ export interface RecentList {
   /** Each item in the customer's own words */
   items: string[];
 }
+
+/** What a spoken list item was heard as */
+export interface SpeechTranscript {
+  text: string;
+}
 export * from "./home.js";

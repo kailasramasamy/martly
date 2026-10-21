@@ -1,24 +1,28 @@
 import { useEffect, useState } from "react";
 import { useStore } from "../lib/store-context";
 import { strings } from "../lib/i18n";
-import { useVoiceInput } from "../lib/use-voice-input";
+import { useStrings } from "../lib/i18n/use-strings";
+import { useCloudVoice } from "../lib/use-cloud-voice";
 import { LIST_HINTS } from "../lib/cart-builder";
 import { useCartBuild } from "../lib/use-cart-build";
+import { useRecentLists } from "../lib/use-shopping-list";
 import { withSignIn } from "../components/SignInPrompt";
 import { ListeningPanel } from "../components/cart-builder/ListeningPanel";
 import { CartReview } from "../components/cart-builder/CartReview";
 import { Building } from "../components/cart-builder/Building";
+import { RecentLists } from "../components/shopping-list/RecentLists";
 
-/** Speak (or type) a shopping list, then check what the store matched before it goes in the cart */
-function SpeakListScreen() {
+/** The spoken list: lines heard so far, and finding products for them once every spoken item is written out */
+function useSpokenList(cart: ReturnType<typeof useCartBuild>) {
   const { selectedStore } = useStore();
   const [lines, setLines] = useState<string[]>([]);
   const [partial, setPartial] = useState("");
-  const cart = useCartBuild();
-  const voice = useVoiceInput(setPartial, (text) => {
+  const voice = useCloudVoice(setPartial, (text) => {
     setPartial("");
     setLines((prev) => [...prev, text]);
-  }, { continuous: true, hints: LIST_HINTS });
+  }, { storeId: selectedStore?.id, continuous: true, hints: LIST_HINTS });
+  // Find was tapped while spoken items were still being written: find once they're in
+  const [findWhenReady, setFindWhenReady] = useState(false);
 
   // They came here to speak: start listening straight away
   useEffect(() => {
@@ -28,13 +32,43 @@ function SpeakListScreen() {
 
   // A phrase still being spoken counts too
   const said = [...lines, partial].map((l) => l.trim()).filter(Boolean);
-  const find = () => {
-    if (said.length === 0 || !selectedStore) return;
-    voice.stop();
-    cart.build("/api/v1/list-to-cart", { storeId: selectedStore.id, text: said.join("\n"), source: "VOICE" });
+  const build = (texts: string[], source: "VOICE" | "LIST") => {
+    if (texts.length === 0 || !selectedStore) return;
+    cart.build("/api/v1/list-to-cart", { storeId: selectedStore.id, text: texts.join("\n"), source });
   };
+  const find = async () => {
+    // Done speaking: the item being said is cut and written out before finding
+    if (!voice.level) {
+      voice.stop();
+      return build(said, "VOICE");
+    }
+    await voice.stop();
+    setFindWhenReady(true);
+  };
+  useEffect(() => {
+    if (!findWhenReady || voice.listening || voice.pending > 0) return;
+    setFindWhenReady(false);
+    build(said, "VOICE");
+  }, [findWhenReady, voice.listening, voice.pending]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  if (cart.phase === "reading") return <Building count={said.length} />;
+  // A list from an earlier shop, straight to products (the build logs it, so it stays in Recent lists)
+  const findFrom = (texts: string[]) => {
+    voice.stop();
+    setLines(texts);
+    build(texts, "LIST");
+  };
+  return { voice, lines, setLines, partial, said, find, findFrom, waiting: findWhenReady };
+}
+
+/** Speak (or type) a shopping list, then check what the store matched before it goes in the cart */
+function SpeakListScreen() {
+  const { selectedStore } = useStore();
+  const t = useStrings("shoppingList");
+  const cart = useCartBuild();
+  const recent = useRecentLists();
+  const { voice, lines, setLines, partial, said, find, findFrom, waiting } = useSpokenList(cart);
+
+  if (waiting || cart.phase === "reading") return <Building count={said.length + voice.pending} />;
   if (cart.phase === "review" && cart.review) {
     return (
       <CartReview
@@ -45,11 +79,18 @@ function SpeakListScreen() {
   }
   return (
     <ListeningPanel
-      lines={lines} partial={partial} listening={voice.listening} voiceAvailable={voice.available}
+      lines={lines} partial={partial} pending={voice.pending} listening={voice.listening} level={voice.level}
+      voiceAvailable={voice.available}
       onMic={voice.listening ? voice.stop : voice.start} onFind={find}
       onEditLine={(i, text) => setLines((prev) => prev.map((l, j) => (j === i ? text : l)))}
       onRemoveLine={(i) => setLines((prev) => prev.filter((_, j) => j !== i))}
       onAddTyped={(text) => setLines((prev) => [...prev, text])}
+      footer={
+        <RecentLists
+          lists={recent} onFind={findFrom} addLabel={t.addToSpoken}
+          onAdd={(texts) => setLines((prev) => [...prev, ...texts])}
+        />
+      }
     />
   );
 }

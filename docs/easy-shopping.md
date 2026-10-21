@@ -57,6 +57,30 @@ How shoppers say staples in their language, and the word the catalog lists them 
 - **Seed:** `npx tsx prisma/seed-list-glossary.ts` loads the first 23 Tamil and Tanglish terms. It's safe to run again; it upserts by catalog word.
 - **Admin API:** `GET/POST /list-glossary`, `GET/PUT/PATCH/DELETE /list-glossary/:id`. A duplicate catalog word, or a phrase repeated within the same language, returns 409.
 
+## Speech
+
+Speak list and My list record each item on the phone and send it to `POST /api/v1/speech/transcribe`. The phone's own recogniser can't do Tamil on iPhones. The API sends the clip to **Sarvam saaras:v4**.
+
+- **Recording (`apps/mobile/lib/use-cloud-voice.ts`):**
+  - `expo-audio` records 16 kHz mono AAC with metering, about 10 KB per item.
+  - A clip is cut after 1.2 s of quiet following speech. Quiet is measured against the room's own noise level, so a noisy shop still cuts. Clips are capped at 15 s (`SPEECH_MAX_SECONDS`).
+  - Items are written out in the order spoken. "…" rows show items still being written, and Find waits for them.
+- **Language:**
+  - Sarvam listens in the store's region language (`REGION_LANGUAGES`: Tamil Nadu → `ta-IN`), whatever the app language. A shopper can speak Tamil, English or both mixed.
+  - With the app in English, the text comes back in English letters (Sarvam `mode=translit`): "Oru kilo thuvaram paruppu", "Half kilo sugar". With the app in Tamil, it's in Tamil script.
+- **Keyterms:**
+  - `glossaryKeyterms()` in `services/cart-builder/glossary.ts` sends up to 50 words for Sarvam to listen for. They are the glossary's native-script phrases for that language plus the amount words (கிலோ, அரை கிலோ…).
+  - Editing the glossary in the admin panel updates them straight away.
+- **Fallback:**
+  - If voice is off on the server (503), Sarvam fails (502) or there is no network, that session carries on with the phone's recogniser and shows a toast.
+  - App builds without `expo-audio` (1.0.6 and older) always use the phone's recogniser.
+  - The search-bar mic always uses the phone's recogniser.
+- **Cost:** ₹30 per hour of audio, billed per second. One spoken item (about 2 s) costs about ₹0.017. Each clip is logged once (`speech transcribed`: bytes, ms, language, keyterm count, length; the text is not logged).
+- **Limits:** 30 items per minute per user, and 1 MB per clip.
+- **Env:**
+  - `SPEECH_PROVIDER=sarvam` and `SARVAM_API_KEY`. Leaving `SPEECH_PROVIDER` unset turns cloud speech off.
+  - The provider switch in `services/speech/index.ts` is where a self-hosted IndicConformer would go later.
+
 ## API
 
 | Route | What it does |
@@ -71,6 +95,7 @@ How shoppers say staples in their language, and the word the catalog lists them 
 | `GET /shopping-list/recent` | The customer's last 5 distinct lists from their cart builds |
 | `POST /shopping-list/bulk` | `{ texts }` adds several items; ones already on the list are skipped |
 | `POST /list-to-cart/line` | `{ storeId, text }` re-matches one re-worded line during review |
+| `POST /speech/transcribe` | Multipart `file` (m4a/aac/wav) + `storeId`, `language` → `{ text }` for one spoken item |
 
 ## What was tested
 

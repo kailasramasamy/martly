@@ -361,6 +361,9 @@ export const REGION_LANGUAGES: Partial<Record<FestivalRegion, GlossaryLanguage>>
   UP: "hi",
 };
 
+// Longest single spoken item sent for transcription; a list item takes 2-3 seconds
+export const SPEECH_MAX_SECONDS = 15;
+
 export const BannerPlacementLabels: Record<BannerPlacement, string> = {
   HERO_CAROUSEL: "Hero Carousel",
   CATEGORY_STRIP: "Category Strip",

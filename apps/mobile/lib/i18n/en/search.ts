@@ -15,6 +15,10 @@ export const search = {
   searchForAfter: "",
   micDenied: "Microphone permission denied",
   didntCatch: "Didn't catch that — try again",
+  voiceInEnglish: "Voice in your language isn't available on this phone, listening in English",
+  voiceStopped: "Voice stopped — tap the mic to try again",
+  voiceDevice: "Listening with your phone's voice for now",
+  voiceBusy: "Too many voice items at once — wait a moment",
   // Filters and sorting
   all: "All",
   filters: "Filters",

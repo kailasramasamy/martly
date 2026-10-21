@@ -56,4 +56,5 @@ export const shoppingList = {
   pickItems: "Untick what you don't need this time",
   findProducts: (n: number) => `Find ${n} product${n !== 1 ? "s" : ""}`,
   addInstead: "Add to my list instead",
+  addToSpoken: "Add to this list",
 };

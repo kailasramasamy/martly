@@ -85,7 +85,6 @@ function Said({ text, draft, setDraft, onResearch }: {
 /** One line of the list: the shopper's own words on top, then the store's products for it once found */
 export function ReviewLine({ entry, inCart, onResearch }: { entry: ReviewState["lines"][number]; inCart: boolean; onResearch: (text: string) => void }) {
   const t = useStrings("shoppingList");
-  // Re-wording: the field takes the badge's room
   const [draft, setDraft] = useState<string | null>(null);
   const { line } = entry;
   const state = !line ? "FINDING" : inCart ? "ADDED" : line.candidates.length > 0 ? "PICK" : "NOT_FOUND";
@@ -93,15 +92,12 @@ export function ReviewLine({ entry, inCart, onResearch }: { entry: ReviewState["
   const label = { FINDING: t.findingLine, ADDED: t.added, PICK: t.pickOne, NOT_FOUND: t.notFound }[state];
   return (
     <View style={styles.card}>
-      <View style={styles.head}>
-        <Said text={entry.text} draft={draft} setDraft={setDraft} onResearch={onResearch} />
-        {draft === null && (
-          <View style={[styles.badge, { backgroundColor: badge.bg }]}>
-            <Ionicons name={badge.icon} size={14} color={badge.color} />
-            <Text style={[styles.badgeText, { color: badge.color }]}>{label}</Text>
-          </View>
-        )}
+      {/* The badge sits above, so the shopper's words get the card's full width (Tamil labels are long) */}
+      <View style={[styles.badge, { backgroundColor: badge.bg }]}>
+        <Ionicons name={badge.icon} size={14} color={badge.color} />
+        <Text style={[styles.badgeText, { color: badge.color }]}>{label}</Text>
       </View>
+      <Said text={entry.text} draft={draft} setDraft={setDraft} onResearch={onResearch} />
       {!line ? (
         <LineFinding item={entry.item} />
       ) : line.candidates.length > 0 ? (
@@ -118,8 +114,7 @@ export function ReviewLine({ entry, inCart, onResearch }: { entry: ReviewState["
 
 const styles = StyleSheet.create({
   card: { backgroundColor: "#ffffff", borderRadius: 14, borderWidth: 1, borderColor: colors.border, padding: 14, gap: 8 },
-  head: { flexDirection: "row", alignItems: "flex-start", gap: 10 },
-  said: { flex: 1, backgroundColor: "#fffbeb", borderLeftWidth: 3, borderLeftColor: "#fbbf24", borderRadius: 6, paddingVertical: 6, paddingHorizontal: 10 },
+  said: { backgroundColor: "#fffbeb", borderLeftWidth: 3, borderLeftColor: "#fbbf24", borderRadius: 6, paddingVertical: 6, paddingHorizontal: 10 },
   saidRow: { flexDirection: "row", alignItems: "center", gap: 8, paddingRight: 6 },
   saidBody: { flex: 1 },
   // Looks 36 across; the whole box takes the tap, so it reaches well past 44
@@ -129,8 +124,8 @@ const styles = StyleSheet.create({
   saidInput: { flex: 1, minHeight: 44, fontSize: 16, fontFamily: fonts.medium, color: "#422006", backgroundColor: "#ffffff", borderRadius: 8, borderWidth: 1, borderColor: "#fbbf24", paddingHorizontal: 10 },
   again: { width: 44, height: 44, borderRadius: 22, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" },
   cancel: { width: 44, height: 44, alignItems: "center", justifyContent: "center" },
-  saidText: { fontSize: 15, fontFamily: fonts.medium, color: "#422006", marginTop: 1 },
-  badge: { flexDirection: "row", alignItems: "center", gap: 4, borderRadius: 12, paddingHorizontal: 8, paddingVertical: 4 },
+  saidText: { fontSize: 15, lineHeight: 23, fontFamily: fonts.medium, color: "#422006", marginTop: 1 },
+  badge: { flexDirection: "row", alignItems: "center", alignSelf: "flex-start", gap: 4, borderRadius: 12, paddingHorizontal: 8, paddingVertical: 4 },
   badgeText: { fontSize: 12, fontFamily: fonts.bold },
   finding: { height: 180, alignItems: "center", justifyContent: "center", gap: 14, backgroundColor: colors.surface, borderRadius: 12 },
   hops: { flexDirection: "row", gap: 12, height: 44, alignItems: "flex-end" },
