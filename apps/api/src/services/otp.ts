@@ -17,11 +17,16 @@ function hashCode(phone: string, code: string) {
   return crypto.createHmac("sha256", process.env.JWT_SECRET ?? "dev-secret-change-me").update(`${phone}:${code}`).digest("hex");
 }
 
-/** App Store review account: a fixed phone/OTP pair configured via env, never sent by SMS. */
+/**
+ * Phones that sign in with a fixed OTP, never sent by SMS: the App Store review account (OTP_REVIEW_PHONE /
+ * OTP_REVIEW_CODE) and team test phones (OTP_FIXED_LOGINS, e.g. "9876543210:123456,9123456780:654321").
+ */
 function reviewCode(phone: string) {
   const reviewPhone = process.env.OTP_REVIEW_PHONE;
   const code = process.env.OTP_REVIEW_CODE;
-  return reviewPhone && code && phone === reviewPhone ? code : undefined;
+  if (reviewPhone && code && phone === reviewPhone) return code;
+  const fixed = (process.env.OTP_FIXED_LOGINS ?? "").split(",").map((pair) => pair.trim().split(":"));
+  return fixed.find(([p, c]) => p === phone && c)?.[1];
 }
 
 async function deliverSms(phone: string, code: string, log: FastifyBaseLogger) {
