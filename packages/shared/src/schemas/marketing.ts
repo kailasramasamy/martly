@@ -15,7 +15,6 @@ export const adProductSchema = z.object({
   /** Store plans: the price for a year paid up front; empty means no annual option */
   yearlyPrice: money.nullish(),
   durationDays: z.coerce.number().int().min(1).max(365),
-  bannerSlots: z.coerce.number().int().min(0).max(100).nullable(),
   promotionCredits: z.coerce.number().int().min(0).max(100),
   /** Store plans: AI images a month; left out, a save keeps the current number */
   aiImagesPerMonth: z.coerce.number().int().min(0).max(10_000).optional(),
@@ -39,6 +38,7 @@ export const marketingConfigSchema = z.object({
   gstPercent: z.coerce.number().min(0).max(28),
   slotLimits: slotLimitsSchema,
   freeRegenerations: z.coerce.number().int().min(0).max(10),
+  featuredBrandSlots: z.coerce.number().int().min(0).max(20),
   sellerName: z.string().trim().min(2).max(120),
   sellerGstin: z.string().trim().toUpperCase().regex(GSTIN, "Enter a valid GSTIN").nullish().or(z.literal("")),
   sellerState: z.enum(INDIAN_STATES),
@@ -90,11 +90,6 @@ export const brandAdSettingsSchema = z.object({
   boostOwnBrands: z.boolean(),
 });
 
-/** Brands Martly features in one organisation's stores */
-export const orgFeaturedBrandsSchema = z.object({
-  brandIds: z.array(z.string().uuid()).max(50),
-});
-
 // A district target names its state too, so same-named districts in two states stay apart: "Tamil Nadu:Dharmapuri"
 const districtTarget = z.string().refine((key) => {
   const [state, district] = key.split(":");
@@ -118,8 +113,7 @@ export const brandCampaignSchema = z.object({
   discountValue: z.coerce.number().positive().max(90).nullish(),
   quantity: z.coerce.number().int().min(1).max(52).default(1),
   startsAt: z.coerce.date(),
-  // A sponsored product's photo is its creative
-}).refine((c) => c.imageUrl || c.brief || c.actionType === "PRODUCT", { message: "Upload an image or describe what the AI should make", path: ["imageUrl"] });
+});
 export type BrandCampaignInput = z.infer<typeof brandCampaignSchema>;
 
 export const reviewBrandCampaignSchema = z.object({

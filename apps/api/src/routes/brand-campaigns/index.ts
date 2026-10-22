@@ -3,10 +3,9 @@ import bcrypt from "bcryptjs";
 import { billingProfileSchema, brandPartnerSchema, offlinePaymentSchema, reviewBrandCampaignSchema } from "@martly/shared/schemas";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { notifyCampaignScheduled } from "../../services/notify/marketing-alerts.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { markPaidOffline, reviewCampaign } from "../../services/brand-campaigns/booking.js";
-import { endCampaign, participatingOrgs, startCampaign } from "../../services/brand-campaigns/go-live.js";
+import { endCampaign, launchOrAnnounce } from "../../services/brand-campaigns/go-live.js";
 import { campaignContext, campaignRoutes, type CampaignScope } from "./campaign-routes.js";
 
 const scope: CampaignScope = { guard: [authenticate, requireRole("SUPER_ADMIN")], brandOf: async () => null, canBook: true };
@@ -30,13 +29,7 @@ export async function brandCampaignAdminRoutes(app: FastifyInstance) {
     if (!campaign) return;
     const { approve, note } = reviewBrandCampaignSchema.parse(request.body);
     const reviewed = await reviewCampaign(app.prisma, campaign, approve, note);
-    // A campaign whose start date has come goes live on approval instead of waiting for the scheduler
-    if (approve && reviewed.startsAt <= new Date()) {
-      await startCampaign({ prisma: app.prisma, fcm: app.fcm, log: request.log }, reviewed);
-    } else if (approve) {
-      const orgs = await participatingOrgs(app.prisma, campaign);
-      void notifyCampaignScheduled(app.fcm, app.prisma, campaign, orgs.map((o) => o.id)).catch((err: unknown) => app.log.error(err, `Brand campaign ${campaign.id}: schedule alert failed`));
-    }
+    if (approve) await launchOrAnnounce({ prisma: app.prisma, fcm: app.fcm, log: request.log }, reviewed);
     return { success: true, data: await detail(campaign.id) };
   });
 

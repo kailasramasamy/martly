@@ -208,7 +208,6 @@ export interface HomeChrome {
   searchHints: string[];
   /** Cart total that unlocks free delivery; null when delivery is already free for this shopper */
   freeDeliveryThreshold: number | null;
-  popup: Record<string, unknown> | null;
 }
 
 export interface HomeSectionsPage<P = unknown> {

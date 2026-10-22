@@ -12,8 +12,8 @@ export const districtKey = (state: string, district: string) => `${state}:${dist
 
 const untargeted = (t: CampaignTargets) => !t.targetStoreIds.length && !t.targetStates.length && !t.targetDistricts.length;
 
-/** Banners aimed at this store: untargeted, or naming the store, its state or its district */
-export function bannersTargeting(store: { id: string; state: string | null; district: string | null }): Prisma.BannerWhereInput {
+/** Banners or campaigns aimed at this store: untargeted, or naming the store, its state or its district */
+export function aimedAtStore(store: { id: string; state: string | null; district: string | null }) {
   return {
     OR: [
       { targetStoreIds: { isEmpty: true }, targetStates: { isEmpty: true }, targetDistricts: { isEmpty: true } },

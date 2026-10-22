@@ -8,6 +8,7 @@ import { fulfilAdOrder } from "../../services/marketing/billing.js";
 import { invoiceLink } from "../../services/marketing/invoice.js";
 import { availability, cancelCampaign, checkoutCampaign, createCampaign, updateCampaign, windowFor } from "../../services/brand-campaigns/booking.js";
 import { generateCampaignArt } from "../../services/brand-campaigns/art.js";
+import { launchOrAnnounce } from "../../services/brand-campaigns/go-live.js";
 import { campaignResults, claimsCsv } from "../../services/brand-campaigns/reports.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { getMarketingConfig } from "../../services/marketing/config.js";
@@ -65,9 +66,9 @@ function readRoutes(app: FastifyInstance, scope: CampaignScope, { load, detail, 
     const q = request.query;
     const product = q.productId ? await app.prisma.adProduct.findUnique({ where: { id: q.productId } }) : null;
     const start = new Date(q.startsAt ?? "");
-    if (!product?.placement || Number.isNaN(start.getTime())) return reply.badRequest("Choose a package and a start date");
+    if (!product || Number.isNaN(start.getTime())) return reply.badRequest("Choose a package and a start date");
     const window = windowFor(product, Math.max(Number(q.quantity) || 1, 1), start);
-    const slot = await availability(app.prisma, { placement: product.placement, categoryId: q.categoryId, ...window, excludeId: q.excludeId });
+    const slot = await availability(app.prisma, { product, categoryId: q.categoryId, ...window, excludeId: q.excludeId });
     return { success: true, data: { ...slot, ...window } };
   });
 
@@ -94,6 +95,19 @@ function readRoutes(app: FastifyInstance, scope: CampaignScope, { load, detail, 
 }
 
 function bookingRoutes(app: FastifyInstance, scope: CampaignScope, { load, detail, opts }: ReturnType<typeof campaignContext>) {
+  // Categories the brand sells in, most products first: where it can be featured
+  app.get<{ Querystring: { brandId?: string } }>("/brand-categories", opts, async (request, reply) => {
+    const { brandId } = request.query;
+    if (!brandId) return reply.badRequest("Choose a brand");
+    const rows = await app.prisma.$queryRaw<{ id: string; name: string; department: string; products: number }[]>`
+      SELECT c.id, c.name, d.name AS department, COUNT(*)::int AS products
+      FROM products p JOIN subcategories s ON s.id = p.subcategory_id JOIN categories c ON c.id = s.category_id JOIN departments d ON d.id = c.department_id
+      WHERE p.brand_id = ${brandId} AND p.is_active
+      GROUP BY c.id, c.name, d.name
+      ORDER BY products DESC, c.name`;
+    return { success: true, data: rows };
+  });
+
   app.post("/", opts, async (request, reply) => {
     const brandId = await scope.brandOf(request);
     const input = brandCampaignSchema.parse({ ...(request.body as object), ...(brandId ? { brandId } : {}) });
@@ -104,7 +118,9 @@ function bookingRoutes(app: FastifyInstance, scope: CampaignScope, { load, detai
   app.put<{ Params: { id: string } }>("/:id", opts, async (request, reply) => {
     const campaign = await load(request, reply);
     if (!campaign) return;
-    await updateCampaign(app.prisma, campaign, brandCampaignSchema.parse({ ...(request.body as object), brandId: campaign.brandId }));
+    const updated = await updateCampaign(app.prisma, campaign, brandCampaignSchema.parse({ ...(request.body as object), brandId: campaign.brandId }));
+    // Owners were told when an approved campaign starts, so a move is announced again (or launches if moved to today)
+    if (campaign.status === "SCHEDULED") await launchOrAnnounce({ prisma: app.prisma, fcm: app.fcm, log: request.log }, updated, true);
     return { success: true, data: await detail(campaign.id) };
   });
 

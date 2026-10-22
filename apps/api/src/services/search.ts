@@ -1,8 +1,7 @@
 import { Prisma, type PrismaClient } from "../../generated/prisma/index.js";
 import Anthropic from "@anthropic-ai/sdk";
 import { correctQuery } from "./spell.js";
-import { hasBoost, storeBrandBoost, type BrandBoost } from "./brand-boost.js";
-import type { BrandPick } from "@martly/shared/constants";
+import { featuredPairs, hasBoost, storeBrandBoost, type BrandBoost } from "./brand-boost.js";
 
 export type SearchStrategy = "keyword" | "fuzzy" | "fulltext" | "semantic";
 
@@ -184,16 +183,16 @@ export const nameForQuery = (q: string) => Prisma.sql`CASE
   ELSE p.name
 END`;
 
-const brandsPicked = (boost: BrandBoost, pick: BrandPick) => [...boost.brands].filter(([, p]) => p === pick).map(([id]) => id);
-
-// Unbranded staples take their turns together, like one store brand
-const popularity = ({ boost }: SearchScope) => (boost && hasBoost(boost)
-  ? Prisma.sql`CASE
-      WHEN p.brand_id = ANY(${brandsPicked(boost, "OWN")}::text[])
+// Unbranded staples take their turns together, like one store brand; a featured brand is lifted only in its category
+function popularity({ boost }: SearchScope) {
+  if (!boost || !hasBoost(boost)) return Prisma.sql`COALESCE(b.popularity, 0)`;
+  const featured = featuredPairs(boost);
+  return Prisma.sql`CASE
+      WHEN p.brand_id = ANY(${boost.ownBrandIds}::text[])
         OR (p.brand_id IS NULL AND p.subcategory_id = ANY(${boost.stapleSubcategoryIds}::text[])) THEN ${OWN_POPULARITY}
-      WHEN p.brand_id = ANY(${brandsPicked(boost, "FEATURED")}::text[]) THEN ${FEATURED_POPULARITY}
-      ELSE COALESCE(b.popularity, 0) END`
-  : Prisma.sql`COALESCE(b.popularity, 0)`);
+      WHEN (p.brand_id, p.subcategory_id) IN (SELECT * FROM unnest(${featured.brandIds}::text[], ${featured.subcategoryIds}::text[])) THEN ${FEATURED_POPULARITY}
+      ELSE COALESCE(b.popularity, 0) END`;
+}
 
 // Every stocked product with its intent flag, name tier and taxonomy hit for the query
 // (needs the `term`, `sales` and brand_names CTEs)

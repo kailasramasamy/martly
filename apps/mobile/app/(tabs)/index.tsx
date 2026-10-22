@@ -20,7 +20,6 @@ import { FloatingCart } from "../../components/FloatingCart";
 import { HomeScreenSkeleton } from "../../components/SkeletonLoader";
 import { HomeHeader } from "../../components/home/HomeHeader";
 import { HomeListFooter } from "../../components/home/HomeListFooter";
-import { PopupBanner } from "../../components/home/PopupBanner";
 import { BackToTopPill, useBackToTop } from "../../components/home/BackToTopPill";
 import { FreeDeliveryBar } from "../../components/home/FreeDeliveryBar";
 import { useMemberStatus } from "../../components/home/use-member-status";
@@ -29,7 +28,6 @@ import { HomeSectionProvider, type HomeSectionEnv } from "../../components/home/
 import { useLightStatusBar } from "../../lib/use-light-status-bar";
 import { useHomeSections, type MobileHomeSection } from "../../lib/use-home-sections";
 import type { HomeTheme } from "@martly/shared/types";
-import type { Banner } from "../../lib/types";
 import { TabBottomDock } from "../../components/TabIcon";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 
@@ -204,7 +202,6 @@ export default function HomeScreen() {
           <FreeDeliveryBar threshold={chrome?.freeDeliveryThreshold ?? null} storeId={selectedStore?.id} />
           <FloatingCart aboveTabBar />
         </TabBottomDock>
-        <PopupBanner banner={(chrome?.popup as Banner | null | undefined) ?? null} storeId={selectedStore?.id} />
       </View>
     </ProductActionsProvider>
   );

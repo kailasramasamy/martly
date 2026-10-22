@@ -67,14 +67,14 @@ async function brandName(prisma: PrismaClient, brandId: string) {
 }
 
 /** Marketing managers of each participating organisation hear about a brand campaign before it starts */
-export async function notifyCampaignScheduled(fcm: Messaging | null, prisma: PrismaClient, campaign: BrandCampaign, organizationIds: string[]) {
+export async function notifyCampaignScheduled(fcm: Messaging | null, prisma: PrismaClient, campaign: BrandCampaign, organizationIds: string[], rescheduled = false) {
   const brand = await brandName(prisma, campaign.brandId);
   await Promise.all(organizationIds.map((organizationId) => notifyOrgStaff(
     fcm, prisma, organizationId, { permissions: ["MARKETING_MANAGE"] },
     {
       type: "STAFF_MARKETING",
-      title: `${brand} campaign starts ${formatISTDate(campaign.startsAt)} in your stores`,
-      body: "Its ads and offers will show to your shoppers from that day.",
+      title: `${brand} campaign ${rescheduled ? "now starts" : "starts"} ${formatISTDate(campaign.startsAt)} in your stores`,
+      body: campaign.placement ? "Its ads and offers will show to your shoppers from that day." : `${brand} products will show as Featured in search and aisles from that day.`,
       data: { screen: "brand-ads" },
     },
   )));

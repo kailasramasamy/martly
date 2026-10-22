@@ -49,40 +49,6 @@ async function main() {
         organizationId: org.id,
       },
 
-      // ── Category Strip (2) ──
-      {
-        title: "Dairy Delights",
-        subtitle: null,
-        imageUrl: "https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=400&h=250&fit=crop",
-        placement: "CATEGORY_STRIP",
-        actionType: categories.length > 0 ? "CATEGORY" : "SEARCH",
-        actionTarget: categories.length > 0 ? categories[0].id : "dairy",
-        sortOrder: 0,
-        organizationId: org.id,
-      },
-      {
-        title: "Snack Attack",
-        subtitle: null,
-        imageUrl: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=250&fit=crop",
-        placement: "CATEGORY_STRIP",
-        actionType: "SEARCH",
-        actionTarget: "snacks",
-        sortOrder: 1,
-        organizationId: org.id,
-      },
-
-      // ── Mid-Page (1) ──
-      {
-        title: "Organic & Natural",
-        subtitle: "Eat clean, live well",
-        imageUrl: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=800&h=300&fit=crop",
-        placement: "MID_PAGE",
-        actionType: "SEARCH",
-        actionTarget: "organic",
-        sortOrder: 0,
-        organizationId: org.id,
-      },
-
       // ── Category Top — category-specific banners ──
       ...(categories.length > 0
         ? [
@@ -138,39 +104,6 @@ async function main() {
         actionType: "SEARCH",
         actionTarget: "deals",
         sortOrder: 10,
-        organizationId: org.id,
-      },
-
-      // ── Cart Upsell (2) ──
-      {
-        title: "Add Dessert?",
-        subtitle: "Sweeten the deal — chocolates from \u20B949",
-        imageUrl: "https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=400&h=200&fit=crop",
-        placement: "CART_UPSELL",
-        actionType: "SEARCH",
-        actionTarget: "chocolates",
-        sortOrder: 0,
-        organizationId: org.id,
-      },
-      {
-        title: "Don't Forget Bread!",
-        subtitle: "Freshly baked, delivered warm",
-        imageUrl: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=200&fit=crop",
-        placement: "CART_UPSELL",
-        actionType: "SEARCH",
-        actionTarget: "bread",
-        sortOrder: 1,
-        organizationId: org.id,
-      },
-
-      // ── Popup (1) ──
-      {
-        title: "First Order? Get 20% Off!",
-        subtitle: "Use code WELCOME20 at checkout",
-        imageUrl: "https://images.unsplash.com/photo-1607082349566-187342175e2f?w=600&h=600&fit=crop",
-        placement: "POPUP",
-        actionType: "NONE",
-        sortOrder: 0,
         organizationId: org.id,
       },
     ],

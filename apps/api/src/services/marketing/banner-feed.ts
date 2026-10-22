@@ -1,6 +1,6 @@
 import type { BannerPlacement, Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { getMarketingConfig } from "./config.js";
-import { bannersTargeting } from "../brand-campaigns/targeting.js";
+import { aimedAtStore } from "../brand-campaigns/targeting.js";
 
 const FEED_SELECT = {
   id: true, title: true, subtitle: true, imageUrl: true, imageUrls: true, textInImage: true, placement: true,
@@ -51,7 +51,7 @@ export async function storeBanners(
     prisma.store.findUniqueOrThrow({ where: { id: store.id }, select: { id: true, state: true, district: true } }),
     getMarketingConfig(prisma),
   ]);
-  const networkBrand: Prisma.BannerWhereInput = { sponsorType: "BRAND", organizationId: null, storeId: null, ...bannersTargeting(place) };
+  const networkBrand: Prisma.BannerWhereInput = { sponsorType: "BRAND", organizationId: null, storeId: null, ...aimedAtStore(place) };
   const rows = await prisma.banner.findMany({
     where: {
       isActive: true, placement: { in: placements },

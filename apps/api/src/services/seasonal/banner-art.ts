@@ -5,14 +5,25 @@ import { putObject } from "../media.js";
 import { designBrief, type BannerDesign } from "./banner-design.js";
 
 const IMAGE_MODEL = process.env.OPENAI_IMAGE_MODEL ?? "gpt-image-2.5-flare";
+const FULL_FRAME = "Compose for the full 3:2 frame, filled edge to edge. Some screens show only its centre 2:1 band, so keep every word and key subject inside the middle 80% of the width and the middle two thirds of the height.";
+
 /**
  * Landscape banners keep the model's full 3:2 canvas for the home carousel (the search spotlight shows the centre 2:1
- * band); portrait is the 2:3 brand poster
+ * band); portrait is the 2:3 brand poster; wide is the 2:1 strip atop a category page, painted on the 3:2 canvas (the
+ * model's widest) and trimmed to its centre band
  */
-export type BannerFormat = "landscape" | "portrait";
+export type BannerFormat = "landscape" | "portrait" | "wide";
 const FORMATS = {
-  landscape: { size: "1536x1024", width: 1536, height: 1024, words: "wide 3:2 landscape" },
-  portrait: { size: "1024x1536", width: 1024, height: 1536, words: "tall 2:3 portrait poster" },
+  landscape: { size: "1536x1024", width: 1536, height: 1024, words: "wide 3:2 landscape", frame: FULL_FRAME },
+  portrait: { size: "1024x1536", width: 1024, height: 1536, words: "tall 2:3 portrait poster", frame: FULL_FRAME },
+  wide: {
+    size: "1536x1024", width: 1536, height: 768, words: "wide 2:1 banner strip",
+    frame: [
+      "This canvas is trimmed to a 2:1 strip: the top eighth and the bottom eighth are cut off.",
+      "Leave a plain background margin of at least a sixth of the canvas height above the headline and below the lowest subject, with no letters, objects or props in those margins.",
+      "Everything that matters sits in one horizontal band through the middle; keep words inside the middle 80% of the width.",
+    ].join(" "),
+  },
 } as const;
 
 export interface BannerCopy {
@@ -50,7 +61,7 @@ function prompt(scene: string, format: BannerFormat, copy?: BannerCopy, design?:
     `Subject: ${scene}`,
     `Composition: ${d.composition}`,
     typography(copy, d.textPlacement),
-    "Keep every word and key subject inside the middle 80% of the width and the middle three quarters of the height; the edges may be cropped on some screens.",
+    FORMATS[format].frame,
     "No logos, brand packaging, prices, borders, phone frames or people's faces.",
   ].join("\n\n");
 }

@@ -3,7 +3,7 @@
 Brands get ahead in a store in three ways:
 
 - **Store brand** (owner's switch): the organisation's own brands, plus **unbranded staples** (rice, dal, flour… in Grocery & Staples), which are the store's own packs. They are boosted and marked "Our brand".
-- **Featured by Martly:** brands Martly features in one organisation's stores, boosted and marked "Featured". Only super admin sets these.
+- **Featured brand (paid):** a brand campaign package (`BRAND_FEATURE`, "Featured brand", ₹3,000/week). It's bought for one category: while it's live, the brand's products in that category are boosted and marked "Featured" in the stores it targets. See [Featured brands](#featured-brands-paid-since-2026-10-22).
 - **Paid brand campaigns:** booked **only by Martly super admin**, with the brand paying Martly. They get fixed slots marked "Ad": `SPONSORED_PRODUCT` in Home, categories, search, suggestions and list orders, plus banners and takeovers. Stores can't switch them off, block a brand, or opt out of brand promotions, and get no share of the revenue (the sales lift is theirs).
 
 Paid ads and boosted brands never compete for the same position: paid products take fixed slots, and boosted brands move up inside the ranking.
@@ -15,7 +15,7 @@ Paid ads and boosted brands never compete for the same position: paid products t
 | Book / edit / cancel brand campaigns | ✓ (Brand campaigns) | — | — (read-only portal) |
 | Pay for a campaign | Record an offline payment | — | ✓ Razorpay checkout from the portal |
 | Campaign targeting: all stores / states / districts / selected stores | ✓ | — | — |
-| Featured brands per organisation | ✓ (organisation page) | Sees them (read-only) | — |
+| Featured brands (a campaign package, aimed like any campaign) | ✓ (Brand campaigns) | Sees them (read-only) | Follows and pays, like other campaigns |
 | Store state and district (decides region targeting) | ✓ | — (ignored by the API) | — |
 | "Promote my own brands" | — | ✓ | — |
 | Block brands / switch off brand ads / opt out of brand promotions | Removed | Removed | — |
@@ -36,7 +36,7 @@ Migrations: `20261021180000_brand_ad_regions` (store region with Dharmapuri back
 ### Data
 
 - `Organization.boostOwnBrands` (default `true`): brands with `Brand.organizationId` = the org, and unbranded products in the `grocery-staples` department (`STORE_BRAND_DEPARTMENT_SLUG`), are "Our brand". Unbranded fruit, veg, meat and so on are not.
-- `OrgBrandFeature (organizationId, brandId)`: brands Martly features in the organisation, up to 50 (`GET/PUT /marketing/brand-ads/orgs/:organizationId/featured`, super admin).
+- Featured brands: `LIVE` campaigns on a `BRAND_FEATURE` package aimed at the store (see below). This replaced the per-organisation `OrgBrandFeature` list on 2026-10-22.
 - `storeBrandBoost(prisma, storeId)` (`apps/api/src/services/brand-boost.ts`) returns `{ brands: Map<brandId, "OWN" | "FEATURED">, stapleSubcategoryIds }`. Own wins if a brand is both. In search, unbranded staples take turns together as one brand.
 
 ### Where it applies
@@ -63,14 +63,52 @@ Migrations: `20261021180000_brand_ad_regions` (store region with Dharmapuri back
 - Own brand (Test Mills, "multigrain atta"): 14th with `boostOwnBrands` off, 2nd with it on, with the label removed when off.
 - Store brand staples: `toor dal`, `atta` and `rice` lead with the unbranded packs ("Our brand"), interleaved with Tata, Fortune and India Gate. `tomato` doesn't change (unbranded veg isn't store brand).
 
-Seed: `cd apps/api && npx tsx prisma/seed-brand-boost.ts` (features Sakthi Masala for the first org).
+Seed: `cd apps/api && npx tsx prisma/seed-ad-pricing.ts && npx tsx prisma/seed-brand-boost.ts` (books Sakthi Masala as a live featured brand in all stores for a week).
 
 ## Needs manual check
 
 - The badge on cards in search, the category screen and the list-to-cart picker (English and Tamil).
 - Owner, in admin and Manage → Brand ads: the own-brand switch saves, and featured brands and campaigns are read-only.
-- Super admin: featured brands on the organisation page; "Where it runs" (all stores / regions / selected stores) on the campaign form; state and district on the store form.
+- Super admin: book a Featured brand package (Brand campaigns → New campaign); "Where it runs" (all stores / regions / selected stores) on the campaign form; state and district on the store form.
 - Brand portal: no create, edit or cancel; Pay still works.
+
+## Featured brands (paid, since 2026-10-22)
+
+Brands pay Martly to be featured, so it's a brand campaign package rather than a per-organisation setting:
+
+- **Package:** `AdProduct` kind `BRAND_FEATURE`, code `FEATURED_BRAND_WEEK`, ₹3,000 per week **per category**, with no placement. It's booked, paid (Razorpay or offline) and reviewed like other campaigns, with a category (`BrandCampaign.categoryId`, which the brand must have products in) and "Where it runs" (all stores, states, districts or selected stores). A brand wanting two categories books two features.
+- **No creative.** `BrandCampaign.placement` is null. The form asks only for a campaign name, approval doesn't need an image, art generation is refused, and going live makes no banner, promo or push. The "scheduled" staff alert says the brand will show as Featured.
+- **Ranking:** `storeBrandBoost` reads `LIVE` `BRAND_FEATURE` campaigns aimed at the store (`aimedAtStore`, shared with banners) into `featured: { brandId, subcategoryIds }[]` (the category's subcategories). Only those (brand, subcategory) products get `FEATURED`: search matches the pairs in SQL (`featuredPairs`), and the listing split in `boostSplit` does the same. A store's own brand still wins.
+- **Where shoppers see it:** search results, department, category and subcategory pages (default order), and speak, list and photo orders (first option for an unbranded line, never auto-added), with the Featured badge on those cards. There's no Home card, banner, suggestion row or push.
+- **Slots:** `MarketingConfig.featuredBrandSlots` (default 2; Marketing → Pricing → "Featured brands per category at once") caps how many run at once **in one category**. Categories don't limit each other, because brands only dilute each other within an aisle. The same brand can't hold two overlapping features in one category (it would pay twice for nothing). Different categories or regions are fine. Both checks run under the slot's advisory lock. When a slot is full, `availability` also returns `nextStartsAt`: the earliest start from which the whole campaign length fits (always the moment a held campaign ends). The booking form shows "Fully booked · next opening Thu, 29 Oct" with a **Start then** button, and a refused save names the date too. This applies to every package, banners included.
+- **Owners:** `featuredBrands` in `GET /marketing/brand-ads` lists brands with a live feature reaching one of the org's stores that stocks them. The feature also appears in the read-only campaign list.
+
+Migration `20261022100000_paid_featured_brands`: adds the enum value, makes `brand_campaigns.placement` nullable, adds `featured_brand_slots` (default 2), and drops `org_brand_features` (prod had no rows).
+
+**Tested (curl):** booked MDH for one Dharmapuri store, marked it paid offline and approved it. It went `LIVE` at once with no banner, promo or push. MDH was Featured in that store's chilli powder search and plain in Harur's. Generate-art was refused. A banner booking without art or a brief is still refused.
+
+Per category: Sakthi featured in Spices & Masala is Featured on its 67 spice products and plain on its pickles, flours and oil. Paging through Spices (1,577 rows) and Pickles (328) returns each row exactly once, `F..F..` in Spices and nothing in Pickles. Booking with no category was refused, and so was a brand with no products in the category (Aachi in biscuits). With Sakthi and Aachi in Spices, a 3rd Spices feature was refused while Sakthi in Pickles was accepted. With a Spices slot free, a second Sakthi Spices booking was refused ("already featured in that category"). Taking Sakthi Pickles live made "mango pickle" lead with Sakthi, Featured, alongside its spices.
+
+**Needs manual check:** the admin campaign form with the Featured brand package (category picker, campaign name, targeting); the campaign page's "Featured brand" card; the "Featured brands at once" field on Pricing.
+
+## Category takeover art (since 2026-10-22)
+
+A takeover shows as a 2:1 strip (140px tall, full width) at the top of its category page, marked Sponsored. It doesn't reorder products; that's what a Featured brand is for. AI art for a `CATEGORY_TOP` campaign uses the `wide` format (`services/seasonal/banner-art.ts`): it's painted on the 3:2 canvas, the model's widest, and the prompt keeps a plain margin above the headline and below the subjects. The image is then trimmed to 1536×768, so the app shows it uncropped. Upload guidance asks for 2:1, at least 1200 × 600, with text kept to the middle. Posters stay 2:3, and carousel banners stay 3:2.
+
+Local demo: Britannia "Biscuits for every chai" on Biscuits & Cookies (paid offline as DEMO-LOCAL-003).
+
+## Changing a booked campaign (since 2026-10-22)
+
+| Status | What super admin can change (admin → campaign → Edit) |
+|---|---|
+| Draft / Awaiting payment | Everything |
+| In review (paid) | Start date, where it runs, banner and copy |
+| Scheduled (approved) | Start date and where it runs only; it stays approved |
+| Live / Ended | Nothing |
+
+Once a campaign is paid, its package, brand and weeks are locked (the API ignores them), so moving the start date moves the end date by the same length. A new window must fit the slot limit (and for a featured brand, not overlap the brand's other feature). Moving a scheduled campaign sends the owners it reaches "… campaign now starts <date> in your stores", and moving it to today launches it at once (`launchOrAnnounce`, which approval also uses). The brand portal stays read-only.
+
+**Tested (curl):** paid in-review feature: the date moved, and a package or weeks change in the body was ignored. Approval sent "starts Thu, 12 Nov". Scheduled: moved to 20 Nov with Tamil Nadu targeting, the title change was ignored, the end date kept 2 weeks, and the alert said "now starts Fri, 20 Nov". A past date was refused. Moving it to today made it `LIVE`. Editing a live campaign was refused.
 
 ## Phase 2: sponsored products in search, suggestions and list orders (built 2026-10-21)
 

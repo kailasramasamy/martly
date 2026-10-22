@@ -14,7 +14,7 @@ import { PriceBandDealsSection } from "./PriceBandDealsSection";
 import { ProductRowSection } from "./ProductRowSection";
 import { StoreGridSection } from "./StoreGridSection";
 import { TabbedRowSection } from "./TabbedRowSection";
-import { HeroBannersSection, MidBannersSection } from "./system/BannerSections";
+import { HeroBannersSection } from "./system/BannerSections";
 import { BrandPostersSection } from "./system/BrandPostersSection";
 import { BuyAgainSection } from "./system/BuyAgainSection";
 import { BrandRailSection, PlusPromoSection, RecentlyViewedSection, TimePicksSection } from "./system/ClientSections";
@@ -47,7 +47,6 @@ const SECTIONS: Registry = {
   DEPARTMENT_GRID: DepartmentGridSection,
   BRAND_RAIL: BrandRailSection,
   PLUS_PROMO: PlusPromoSection,
-  MID_BANNERS: MidBannersSection,
   TIME_PICKS: TimePicksSection,
   DEALS: DealsSection,
   RECIPES: RecipesSection,

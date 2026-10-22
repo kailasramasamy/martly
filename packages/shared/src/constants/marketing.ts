@@ -8,6 +8,7 @@ export const AdProductKind = {
   BRAND_PROMOTION: "BRAND_PROMOTION",
   BRAND_CPM: "BRAND_CPM",
   BRAND_SPONSORED_PRODUCT: "BRAND_SPONSORED_PRODUCT",
+  BRAND_FEATURE: "BRAND_FEATURE",
 } as const;
 export type AdProductKind = (typeof AdProductKind)[keyof typeof AdProductKind];
 
@@ -20,6 +21,7 @@ export const AdProductKindLabels: Record<AdProductKind, string> = {
   BRAND_PROMOTION: "Brand promotion",
   BRAND_CPM: "Brand views (per 1,000)",
   BRAND_SPONSORED_PRODUCT: "Sponsored product",
+  BRAND_FEATURE: "Featured brand",
 };
 
 /** What an organisation's AI images were spent on (mirrors Prisma enum AiImagePurpose) */
@@ -47,7 +49,7 @@ export const AI_IMAGE_COST = {
 export const AI_IMAGES_LOW_SHARE = 0.2;
 
 /** Packages sold to brands, as opposed to store owners */
-export const BRAND_PRODUCT_KINDS: readonly AdProductKind[] = ["BRAND_BANNER", "BRAND_TAKEOVER", "BRAND_PROMOTION", "BRAND_CPM", "BRAND_SPONSORED_PRODUCT"];
+export const BRAND_PRODUCT_KINDS: readonly AdProductKind[] = ["BRAND_BANNER", "BRAND_TAKEOVER", "BRAND_PROMOTION", "BRAND_CPM", "BRAND_SPONSORED_PRODUCT", "BRAND_FEATURE"];
 
 export const AdOrderStatus = {
   PENDING: "PENDING",
@@ -137,7 +139,7 @@ export type PromoKind = (typeof PromoKind)[keyof typeof PromoKind];
 /** What a manual promotion's discount can cover; search and links don't map to a set of products */
 export const DISCOUNTABLE_TARGETS = ["CATEGORY", "PRODUCT", "COLLECTION", "BRAND"] as const;
 
-// Why a product ranks ahead in a store: the organisation's own brand, or one the owner features (shown on the card)
+// Why a product ranks ahead in a store: the organisation's own brand, or a brand paying Martly to be featured (shown on the card)
 export const BrandPick = {
   OWN: "OWN",
   FEATURED: "FEATURED",

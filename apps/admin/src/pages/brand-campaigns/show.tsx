@@ -9,7 +9,7 @@ import { errorMessage, invoiceHref } from "../marketing/utils";
 import { CampaignActions } from "./campaign-actions";
 import { CampaignResults } from "./campaign-results";
 import { CampaignStatusTag } from "./list";
-import { EDITABLE_STATUSES, type Campaign, type CampaignScope } from "./types";
+import { CREATIVE_STATUSES, EDITABLE_STATUSES, type Campaign, type CampaignScope } from "./types";
 import { ReadableSection } from "../../components/ReadableSection";
 
 const ART_TIMEOUT_MS = 120000;
@@ -38,11 +38,25 @@ function SponsoredCard({ campaign }: { campaign: Campaign }) {
   );
 }
 
+function FeatureCard({ campaign }: { campaign: Campaign }) {
+  return (
+    <Card title="Featured brand" size="small" style={{ marginBottom: 16 }}>
+      <Space align="center">
+        {campaign.brand.imageUrl && <Image src={campaign.brand.imageUrl} width={64} preview={false} style={{ objectFit: "contain" }} />}
+        <Typography.Text>
+          {campaign.brand.name} products in {campaign.category?.name ?? "its category"} rank ahead, marked Featured, in search, category pages and list orders.
+        </Typography.Text>
+      </Space>
+    </Card>
+  );
+}
+
 function CreativeCard({ campaign, scope, onChange }: { campaign: Campaign; scope: CampaignScope; onChange: (c: Campaign) => void }) {
   const { notification } = App.useApp();
   const [generating, setGenerating] = useState(false);
-  const canGenerate = scope.mode === "platform" && EDITABLE_STATUSES.includes(campaign.status) && !!campaign.brief;
+  const canGenerate = scope.mode === "platform" && CREATIVE_STATUSES.includes(campaign.status) && !!campaign.brief;
   const poster = campaign.placement === "HOME_POSTER";
+  const strip = campaign.placement === "CATEGORY_TOP";
 
   const generate = async () => {
     setGenerating(true);
@@ -59,7 +73,7 @@ function CreativeCard({ campaign, scope, onChange }: { campaign: Campaign; scope
   return (
     <Card title={poster ? "Poster" : "Banner"} size="small" style={{ marginBottom: 16 }}>
       <Space direction="vertical">
-        {campaign.imageUrl ? <Image src={campaign.imageUrl} width={poster ? 240 : 360} style={{ aspectRatio: poster ? "2 / 3" : "3 / 2", objectFit: "cover", borderRadius: 8 }} /> : <Typography.Text type="secondary">No {poster ? "poster" : "banner"} yet</Typography.Text>}
+        {campaign.imageUrl ? <Image src={campaign.imageUrl} width={poster ? 240 : 360} style={{ aspectRatio: poster ? "2 / 3" : strip ? "2 / 1" : "3 / 2", objectFit: "cover", borderRadius: 8 }} /> : <Typography.Text type="secondary">No {poster ? "poster" : "banner"} yet</Typography.Text>}
         {canGenerate && (
           <Button loading={generating} onClick={generate}>{campaign.imageUrl ? "Regenerate" : "Generate"}{poster ? " poster" : " banner"}</Button>
         )}
@@ -128,9 +142,11 @@ export function CampaignShow({ scope }: { scope: CampaignScope }) {
       <ReadableSection>
         <Space style={{ marginBottom: 16 }}><CampaignStatusTag status={campaign.status} /></Space>
         {campaign.reviewNote && <Alert type={campaign.status === "REJECTED" ? "error" : "info"} showIcon message={campaign.reviewNote} style={{ marginBottom: 16 }} />}
-        {campaign.placement === "SPONSORED_PRODUCT"
-          ? <SponsoredCard campaign={campaign} />
-          : <CreativeCard campaign={campaign} scope={scope} onChange={setCampaign} />}
+        {!campaign.placement
+          ? <FeatureCard campaign={campaign} />
+          : campaign.placement === "SPONSORED_PRODUCT"
+            ? <SponsoredCard campaign={campaign} />
+            : <CreativeCard campaign={campaign} scope={scope} onChange={setCampaign} />}
         <DetailsCard campaign={campaign} platform={scope.mode === "platform"} />
         {campaign.results && (
           <Card title="Results" size="small"><CampaignResults results={campaign.results} /></Card>

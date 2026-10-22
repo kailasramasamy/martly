@@ -7,7 +7,7 @@ org shows the same layout, and a section with nothing in stock at a store hides 
 
 - **API:** `GET /api/v1/home/:storeId/sections?cursor=` returns `{ sections, nextCursor, chrome }`, 8 layout
   entries per page.
-  - `chrome` comes on the first page only: the festive header theme, the free-delivery threshold and the popup banner.
+  - `chrome` comes on the first page only: the festive header theme, the search hints and the free-delivery threshold.
   - The legacy `GET /home/:storeId` is unchanged for old app builds.
 - **Layout:**
   - `HomeSection` and `HomeSectionItem` rows hold each org's layout.

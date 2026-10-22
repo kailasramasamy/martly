@@ -1,7 +1,7 @@
 import type { Messaging } from "firebase-admin/messaging";
 import type { FastifyBaseLogger } from "fastify";
 import type { BrandCampaign, PrismaClient } from "../../../generated/prisma/client.js";
-import { pushBrandCampaignLive } from "../notify/marketing-alerts.js";
+import { notifyCampaignScheduled, pushBrandCampaignLive } from "../notify/marketing-alerts.js";
 import { endPromo, launchPromo, PromoStateError } from "../promo/lifecycle.js";
 import { storesTargeted } from "./targeting.js";
 
@@ -21,7 +21,7 @@ async function startBanner(prisma: PrismaClient, campaign: BrandCampaign) {
   await prisma.banner.create({
     data: {
       sponsorType: "BRAND", brandId: campaign.brandId, brandCampaignId: campaign.id, title: campaign.title, subtitle: campaign.subtitle,
-      imageUrl: campaign.imageUrl!, textInImage: true, placement: campaign.placement, categoryId: campaign.categoryId,
+      imageUrl: campaign.imageUrl!, textInImage: true, placement: campaign.placement!, categoryId: campaign.categoryId,
       actionType: campaign.actionType, actionTarget: campaign.actionTarget,
       targetStoreIds: campaign.targetStoreIds, targetStates: campaign.targetStates, targetDistricts: campaign.targetDistricts,
       startsAt: campaign.startsAt, endsAt: campaign.endsAt, sortOrder: 1,
@@ -81,6 +81,8 @@ async function startPromotion(deps: Deps, campaign: BrandCampaign, organizationI
 export async function startCampaign(deps: Deps, campaign: BrandCampaign) {
   const { count } = await deps.prisma.brandCampaign.updateMany({ where: { id: campaign.id, status: "SCHEDULED" }, data: { status: "LIVE" } });
   if (!count) return;
+  // A featured brand only changes ranking, which reads live campaigns; there's no banner, offer or announcement
+  if (!campaign.placement) return;
   const orgs = await participatingOrgs(deps.prisma, campaign);
   if (!campaign.discountType) await startBanner(deps.prisma, campaign);
   for (const { id } of orgs) {
@@ -90,6 +92,17 @@ export async function startCampaign(deps: Deps, campaign: BrandCampaign) {
     }
     await pushBrandCampaignLive(deps.fcm, deps.prisma, campaign, id).catch((err: unknown) => deps.log.error(err, `Brand campaign ${campaign.id}: push for org ${id} failed`));
   }
+}
+
+/**
+ * An approved or rescheduled campaign whose start date has come goes live now instead of waiting for the scheduler;
+ * otherwise owners of the stores it reaches hear when it starts
+ */
+export async function launchOrAnnounce(deps: Deps, campaign: BrandCampaign, rescheduled = false) {
+  if (campaign.startsAt <= new Date()) return startCampaign(deps, campaign);
+  const orgs = await participatingOrgs(deps.prisma, campaign);
+  void notifyCampaignScheduled(deps.fcm, deps.prisma, campaign, orgs.map((o) => o.id), rescheduled)
+    .catch((err: unknown) => deps.log.error(err, `Brand campaign ${campaign.id}: schedule alert failed`));
 }
 
 /** Ends a live campaign: its banner goes off and every store's promo restores its prices */

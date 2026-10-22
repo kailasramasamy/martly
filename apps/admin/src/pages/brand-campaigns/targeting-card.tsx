@@ -24,30 +24,29 @@ function useDistrictOptions() {
 
 interface TargetingCardProps {
   mode: TargetMode;
-  locked: boolean;
   stores: { id: string; name: string }[];
 }
 
-export function TargetingCard({ mode, locked, stores }: TargetingCardProps) {
+export function TargetingCard({ mode, stores }: TargetingCardProps) {
   const districts = useDistrictOptions();
   return (
     <Card title="Where it runs" size="small">
       <Form.Item name="targetMode" extra="Runs only in stores that stock the brand" style={{ marginBottom: mode === "ALL" ? 0 : undefined }}>
-        <Radio.Group disabled={locked} options={[{ value: "ALL", label: "All stores" }, { value: "REGIONS", label: "Regions" }, { value: "STORES", label: "Selected stores" }]} />
+        <Radio.Group options={[{ value: "ALL", label: "All stores" }, { value: "REGIONS", label: "Regions" }, { value: "STORES", label: "Selected stores" }]} />
       </Form.Item>
       {mode === "REGIONS" && (
         <>
           <Form.Item name="targetStates" label="States">
-            <Select mode="multiple" optionFilterProp="label" disabled={locked} options={INDIAN_STATES.map((s) => ({ value: s, label: s }))} />
+            <Select mode="multiple" optionFilterProp="label" options={INDIAN_STATES.map((s) => ({ value: s, label: s }))} />
           </Form.Item>
           <Form.Item name="targetDistricts" label="Districts" style={{ marginBottom: 0 }}>
-            <Select mode="multiple" optionFilterProp="label" disabled={locked} options={districts} />
+            <Select mode="multiple" optionFilterProp="label" options={districts} />
           </Form.Item>
         </>
       )}
       {mode === "STORES" && (
         <Form.Item name="targetStoreIds" style={{ marginBottom: 0 }}>
-          <Select mode="multiple" optionFilterProp="label" disabled={locked} options={stores.map((s) => ({ value: s.id, label: s.name }))} />
+          <Select mode="multiple" optionFilterProp="label" options={stores.map((s) => ({ value: s.id, label: s.name }))} />
         </Form.Item>
       )}
     </Card>

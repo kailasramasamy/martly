@@ -106,7 +106,7 @@ export async function homeRoutes(app: FastifyInstance) {
         user.sub ? pastOrderLines(app.prisma, storeId, user.sub) : Promise.resolve([]),
 
         // 6. Banners — active banners for mobile placements (brand campaigns and slot caps applied)
-        storeBanners(app.prisma, store, ["HERO_CAROUSEL", "CATEGORY_STRIP", "MID_PAGE", "POPUP"]),
+        storeBanners(app.prisma, store, ["HERO_CAROUSEL"]),
 
         // 7. Recipes — active recipes with availability summary
         app.prisma.recipe.findMany({

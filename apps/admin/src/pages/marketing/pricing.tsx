@@ -17,6 +17,7 @@ interface PricingConfig {
   gstPercent: number;
   slotLimits: SlotLimits;
   freeRegenerations: number;
+  featuredBrandSlots: number;
   sellerName: string;
   sellerGstin: string | null;
   sellerState: string;
@@ -33,10 +34,16 @@ function cleanSlotLimits(limits: SlotLimits | undefined): SlotLimits {
   return cleaned;
 }
 
-function SlotLimitsCard() {
+/** Limits for the placements brand packages run in; a placement nothing sells has no row */
+function SlotLimitsCard({ products }: { products: AdProduct[] }) {
+  const sold = new Set(products.filter((p) => BRAND_PRODUCT_KINDS.includes(p.kind)).map((p) => p.placement));
   return (
-    <Card title="Home carousel limits (brand campaigns)" size="small" style={{ marginBottom: 16 }} extra={<Text type="secondary">Brand banners that can run at once per placement (per category for Sponsored product and Category top); empty means no cap</Text>}>
-      {Object.entries(BannerPlacementLabels).map(([placement, label]) => (
+    <Card title="Brand campaign limits" size="small" style={{ marginBottom: 16 }}>
+      <Text type="secondary" style={{ display: "block", marginBottom: 12 }}>
+        How many brand campaigns can run at once in each placement. Sponsored product, Category top and featured brands
+        count per category. Leave a placement empty for no limit.
+      </Text>
+      {Object.entries(BannerPlacementLabels).filter(([placement]) => sold.has(placement)).map(([placement, label]) => (
         <Row gutter={8} key={placement} align="middle">
           <Col span={14}><Text>{label}</Text></Col>
           <Col span={10}>
@@ -46,6 +53,14 @@ function SlotLimitsCard() {
           </Col>
         </Row>
       ))}
+      <Row gutter={8} align="middle">
+        <Col span={14}><Text>Featured brands per category at once</Text></Col>
+        <Col span={10}>
+          <Form.Item name="featuredBrandSlots" rules={[{ required: true }]} style={{ marginBottom: 8 }}>
+            <InputNumber min={0} max={20} precision={0} style={{ width: "100%" }} />
+          </Form.Item>
+        </Col>
+      </Row>
     </Card>
   );
 }
@@ -140,7 +155,7 @@ export const MarketingPricing = () => {
       <ImagePacksCard products={ofKind((p) => p.kind === "AI_IMAGE_PACK")} patch={patch} />
       <BrandPackagesCard products={ofKind((p) => BRAND_PRODUCT_KINDS.includes(p.kind))} patch={patch} />
       <Form form={form} layout="vertical">
-        <SlotLimitsCard />
+        <SlotLimitsCard products={products} />
         <InvoiceCard />
       </Form>
       <Button type="primary" icon={<SaveOutlined />} loading={saving} onClick={save}>Save</Button>

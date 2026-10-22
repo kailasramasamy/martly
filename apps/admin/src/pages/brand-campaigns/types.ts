@@ -33,7 +33,8 @@ export interface Campaign {
   subtitle: string | null;
   imageUrl: string | null;
   brief: string | null;
-  placement: string;
+  /** Null for a featured brand, which runs no banner */
+  placement: string | null;
   categoryId: string | null;
   actionType: BannerActionType;
   actionTarget: string | null;
@@ -54,4 +55,8 @@ export interface Campaign {
   results: { stores: CampaignResultRow[]; total: Omit<CampaignResultRow, "storeId" | "store"> } | null;
 }
 
-export const EDITABLE_STATUSES: BrandCampaignStatus[] = ["DRAFT", "PENDING_PAYMENT", "IN_REVIEW"];
+/** Not live yet; once paid (in review or scheduled) only the dates and where it runs change, plus the creative until approved */
+export const EDITABLE_STATUSES: BrandCampaignStatus[] = ["DRAFT", "PENDING_PAYMENT", "IN_REVIEW", "SCHEDULED"];
+export const PAID_STATUSES: BrandCampaignStatus[] = ["IN_REVIEW", "SCHEDULED"];
+/** The banner can be redrawn until the campaign is approved */
+export const CREATIVE_STATUSES: BrandCampaignStatus[] = ["DRAFT", "PENDING_PAYMENT", "IN_REVIEW"];

@@ -1,14 +1,18 @@
 import type { FastifyBaseLogger } from "fastify";
-import type { BrandCampaign, PrismaClient } from "../../../generated/prisma/client.js";
+import type { BannerPlacement, BrandCampaign, PrismaClient } from "../../../generated/prisma/client.js";
+import type { BannerFormat } from "../seasonal/banner-art.js";
 import { buildDesignedBannerSet } from "../seasonal/banner-set.js";
 import { CampaignError } from "./booking.js";
 
 const DAILY_LIMIT = 6;
+// Posters are tall; a category takeover is the wide strip atop the category page
+const ART_FORMAT: Partial<Record<BannerPlacement, BannerFormat>> = { HOME_POSTER: "portrait", CATEGORY_TOP: "wide" };
 
-/** Paints the campaign's banner from its brief and copy, in a layout the brand hasn't used lately; posters are tall */
+/** Paints the campaign's banner from its brief and copy, in a layout the brand hasn't used lately, shaped for its placement */
 export async function generateCampaignArt(prisma: PrismaClient, campaign: BrandCampaign, log: FastifyBaseLogger) {
   if (!["DRAFT", "PENDING_PAYMENT", "IN_REVIEW"].includes(campaign.status)) throw new CampaignError("The banner can't change once the campaign is scheduled", 409);
   if (campaign.placement === "SPONSORED_PRODUCT") throw new CampaignError("A sponsored product shows its own product photo; there's no banner to paint");
+  if (!campaign.placement) throw new CampaignError("A featured brand has no banner; it lifts the brand's products in search and aisles");
   const today = await prisma.bannerArtRun.count({
     where: { brandId: campaign.brandId, createdAt: { gte: new Date(Date.now() - 24 * 60 * 60 * 1000) } },
   });
@@ -17,6 +21,6 @@ export async function generateCampaignArt(prisma: PrismaClient, campaign: BrandC
   const slug = `brand-${campaign.id.slice(0, 8)}`;
   const art = await buildDesignedBannerSet(prisma, { brandId: campaign.brandId, purpose: "BRAND" }, scene,
     { en: { title: campaign.title, subtitle: campaign.subtitle ?? "" } }, slug, (m) => log.warn(`${slug}: ${m}`),
-    campaign.placement === "HOME_POSTER" ? "portrait" : "landscape");
+    ART_FORMAT[campaign.placement] ?? "landscape");
   return prisma.brandCampaign.update({ where: { id: campaign.id }, data: { imageUrl: art.imageUrl } });
 }

@@ -19,7 +19,7 @@ const COUPONS = [
 
 const BANNERS = [
   { title: "Fresh produce, delivered", placement: "HERO_CAROUSEL", sortOrder: 0, imageUrl: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=900&h=600&fit=crop", actionType: "SEARCH", actionTarget: "vegetables" },
-  { title: "Dairy essentials", placement: "MID_PAGE", sortOrder: 0, imageUrl: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=900&h=600&fit=crop", actionType: "SEARCH", actionTarget: "milk" },
+  { title: "Dairy essentials", placement: "HERO_CAROUSEL", sortOrder: 1, imageUrl: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=900&h=600&fit=crop", actionType: "SEARCH", actionTarget: "milk" },
 ] as const;
 
 async function seedCoupons(organizationId: string) {

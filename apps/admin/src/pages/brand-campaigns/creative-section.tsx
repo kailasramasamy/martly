@@ -13,7 +13,9 @@ export function ImageGuidance() {
   );
 }
 
-const PosterHint = () => <Typography.Paragraph type="secondary" style={{ fontSize: 12 }}>Tall 2:3 poster, text in the image</Typography.Paragraph>;
+const Hint = ({ text }: { text: string }) => <Typography.Paragraph type="secondary" style={{ fontSize: 12 }}>{text}</Typography.Paragraph>;
+const POSTER_HINT = "Tall 2:3 poster, text in the image";
+const STRIP_HINT = "Wide 2:1 strip for the top of the category page, at least 1200 × 600 px, text in the image and kept to the middle";
 
 interface CreativeSectionProps {
   mode: CreativeMode;
@@ -21,9 +23,11 @@ interface CreativeSectionProps {
   disabled?: boolean;
   /** Tall 2:3 poster instead of the landscape banner */
   portrait?: boolean;
+  /** Wide 2:1 strip atop a category page (category takeover) */
+  wide?: boolean;
 }
 
-export function CreativeSection({ mode, onModeChange, disabled, portrait }: CreativeSectionProps) {
+export function CreativeSection({ mode, onModeChange, disabled, portrait, wide }: CreativeSectionProps) {
   return (
     <>
       <Radio.Group
@@ -34,7 +38,7 @@ export function CreativeSection({ mode, onModeChange, disabled, portrait }: Crea
       />
       {mode === "upload" ? (
         <>
-          {portrait ? <PosterHint /> : <ImageGuidance />}
+          {portrait ? <Hint text={POSTER_HINT} /> : wide ? <Hint text={STRIP_HINT} /> : <ImageGuidance />}
           <Form.Item name="imageUrl" getValueFromEvent={(url: string) => url} rules={[{ required: true, message: portrait ? "Upload a poster image" : "Upload a banner image" }]}>
             <ImageUpload />
           </Form.Item>

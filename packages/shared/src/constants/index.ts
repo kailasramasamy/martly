@@ -267,11 +267,7 @@ export const TripStatusLabels: Record<TripStatus, string> = {
 
 export const BannerPlacement = {
   HERO_CAROUSEL: "HERO_CAROUSEL",
-  CATEGORY_STRIP: "CATEGORY_STRIP",
-  MID_PAGE: "MID_PAGE",
   CATEGORY_TOP: "CATEGORY_TOP",
-  CART_UPSELL: "CART_UPSELL",
-  POPUP: "POPUP",
   HOME_POSTER: "HOME_POSTER",
   SPONSORED_PRODUCT: "SPONSORED_PRODUCT",
 } as const;
@@ -366,11 +362,7 @@ export const SPEECH_MAX_SECONDS = 15;
 
 export const BannerPlacementLabels: Record<BannerPlacement, string> = {
   HERO_CAROUSEL: "Hero Carousel",
-  CATEGORY_STRIP: "Category Strip",
-  MID_PAGE: "Mid Page",
   CATEGORY_TOP: "Category Top",
-  CART_UPSELL: "Cart Upsell",
-  POPUP: "Popup",
   HOME_POSTER: "Home brand poster",
   SPONSORED_PRODUCT: "Sponsored product",
 };

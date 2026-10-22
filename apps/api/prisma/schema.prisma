@@ -190,11 +190,7 @@ enum CurationSource {
 
 enum BannerPlacement {
   HERO_CAROUSEL
-  CATEGORY_STRIP
-  MID_PAGE
   CATEGORY_TOP
-  CART_UPSELL
-  POPUP
   /// Tall brand posters in a rail on Home
   HOME_POSTER
   /// A brand's product marked "Ad": second in Home rows and category listings of its category, first in matching searches, suggestions and list orders
@@ -220,6 +216,7 @@ enum AdProductKind {
   BRAND_PROMOTION
   BRAND_CPM
   BRAND_SPONSORED_PRODUCT
+  BRAND_FEATURE
 }
 
 enum BillingInterval {
@@ -512,7 +509,6 @@ model Organization {
   planPeriods           OrgPlanPeriod[]
   promotionCredits      PromotionCreditEntry[]
   aiImageCredits        AiImageCreditEntry[]
-  brandFeatures         OrgBrandFeature[]
 
   bannerArtRuns BannerArtRun[]
 
@@ -779,13 +775,12 @@ model Brand {
   createdAt           DateTime @default(now()) @map("created_at")
   updatedAt           DateTime @updatedAt @map("updated_at")
 
-  organization Organization?     @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  organization Organization?   @relation(fields: [organizationId], references: [id], onDelete: Cascade)
   products     Product[]
-  partners     User[]            @relation("BrandPartners")
+  partners     User[]          @relation("BrandPartners")
   adOrders     AdOrder[]
   banners      Banner[]
   campaigns    BrandCampaign[]
-  featuredBy   OrgBrandFeature[]
 
   @@index([organizationId])
   @@map("brands")
@@ -2377,17 +2372,19 @@ model AdProduct {
 
 /// Singleton (id "default") with platform-wide marketing settings
 model MarketingConfig {
-  id                String   @id @default("default")
-  gstPercent        Decimal  @default(18) @map("gst_percent") @db.Decimal(4, 2)
+  id                 String   @id @default("default")
+  gstPercent         Decimal  @default(18) @map("gst_percent") @db.Decimal(4, 2)
   /// { [placement]: { STORE?: n, BRAND?: n, PLATFORM?: n } }; a missing entry means no cap
-  slotLimits        Json     @default("{}") @map("slot_limits")
-  freeRegenerations Int      @default(2) @map("free_regenerations")
-  sellerName        String   @default("Martly") @map("seller_name")
-  sellerGstin       String?  @map("seller_gstin")
-  sellerState       String   @default("Tamil Nadu") @map("seller_state")
-  sellerAddress     String?  @map("seller_address")
-  invoicePrefix     String   @default("MKT") @map("invoice_prefix")
-  updatedAt         DateTime @updatedAt @map("updated_at")
+  slotLimits         Json     @default("{}") @map("slot_limits")
+  freeRegenerations  Int      @default(2) @map("free_regenerations")
+  /// Featured brands that can run at once in one category
+  featuredBrandSlots Int      @default(2) @map("featured_brand_slots")
+  sellerName         String   @default("Martly") @map("seller_name")
+  sellerGstin        String?  @map("seller_gstin")
+  sellerState        String   @default("Tamil Nadu") @map("seller_state")
+  sellerAddress      String?  @map("seller_address")
+  invoicePrefix      String   @default("MKT") @map("invoice_prefix")
+  updatedAt          DateTime @updatedAt @map("updated_at")
 
   @@map("marketing_config")
 }
@@ -2526,18 +2523,6 @@ model BannerStatDaily {
 }
 
 /// A brand the store owner promotes in their stores (a distributor deal, a local favourite), ranked like their own brands
-model OrgBrandFeature {
-  organizationId String   @map("organization_id")
-  brandId        String   @map("brand_id")
-  createdAt      DateTime @default(now()) @map("created_at")
-
-  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
-  brand        Brand        @relation(fields: [brandId], references: [id], onDelete: Cascade)
-
-  @@id([organizationId, brandId])
-  @@map("org_brand_features")
-}
-
 model BrandCampaign {
   id              String              @id @default(uuid())
   brandId         String              @map("brand_id")
@@ -2548,7 +2533,8 @@ model BrandCampaign {
   imageUrl        String?             @map("image_url")
   /// Brief for AI art/products when the brand asks Martly to make the creative
   brief           String?
-  placement       BannerPlacement
+  /// Null for a featured brand: it boosts the brand's products instead of running a banner
+  placement       BannerPlacement?
   categoryId      String?             @map("category_id")
   actionType      BannerActionType    @default(BRAND) @map("action_type")
   actionTarget    String?             @map("action_target")
@@ -2660,7 +2646,6 @@ enum HomeSectionType {
   DEPARTMENT_GRID
   BRAND_RAIL
   PLUS_PROMO
-  MID_BANNERS
   TIME_PICKS
   DEALS
   RECIPES

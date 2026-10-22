@@ -24,13 +24,13 @@ const PRODUCTS = [
   { kind: "BRAND_TAKEOVER", code: "CATEGORY_TAKEOVER_WEEK", name: "Category takeover", description: "Top of one category in every store that stocks the brand, per week", price: 4500, durationDays: 7, placement: "CATEGORY_TOP", sortOrder: 1 },
   { kind: "BRAND_PROMOTION", code: "BRAND_PROMOTION_WEEK", name: "Brand promotion", description: "Discount on the brand's products with a home banner and a shoppable offer card on Home, per week", price: 15000, durationDays: 7, placement: "HERO_CAROUSEL", sortOrder: 2 },
   { kind: "BRAND_CPM", code: "BRAND_CPM_1000", name: "Brand views", description: "Home carousel, billed per 1,000 views", price: 200, durationDays: 30, placement: "HERO_CAROUSEL", viewsPerUnit: 1000, isActive: false, sortOrder: 3 },
+  { kind: "BRAND_FEATURE", code: "FEATURED_BRAND_WEEK", name: "Featured brand", description: "The brand's products rank ahead in search, category pages and list orders, marked Featured, per week", price: 3000, durationDays: 7, sortOrder: 5 },
 ] as const;
 
 // Brand campaigns per placement at once; store promotions are never capped
 const SLOT_LIMITS = {
   HERO_CAROUSEL: { BRAND: 2 },
   CATEGORY_TOP: { BRAND: 1 },
-  MID_PAGE: { BRAND: 1 },
 };
 
 async function main() {
