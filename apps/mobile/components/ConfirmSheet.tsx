@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   View,
   Text,
@@ -8,6 +8,7 @@ import {
   Animated,
   ActivityIndicator,
   Dimensions,
+  Modal,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../constants/theme";
@@ -45,11 +46,12 @@ export function ConfirmSheet({
   const common = useStrings("common");
   const backdropOpacity = useRef(new Animated.Value(0)).current;
   const sheetTranslateY = useRef(new Animated.Value(SCREEN_HEIGHT)).current;
-  const mounted = useRef(false);
+  // Stays up through the closing animation
+  const [presented, setPresented] = useState(visible);
 
   useEffect(() => {
     if (visible) {
-      mounted.current = true;
+      setPresented(true);
       Animated.parallel([
         Animated.timing(backdropOpacity, {
           toValue: 1,
@@ -64,7 +66,7 @@ export function ConfirmSheet({
           useNativeDriver: true,
         }),
       ]).start();
-    } else if (mounted.current) {
+    } else {
       Animated.parallel([
         Animated.timing(backdropOpacity, {
           toValue: 0,
@@ -76,59 +78,60 @@ export function ConfirmSheet({
           duration: 200,
           useNativeDriver: true,
         }),
-      ]).start();
+      ]).start(({ finished }) => finished && setPresented(false));
     }
   }, [visible, backdropOpacity, sheetTranslateY]);
 
-  if (!visible && !mounted.current) return null;
-
+  // A modal, so the sheet covers the tab bar on tab screens instead of sliding under it
   return (
-    <View style={styles.overlay} pointerEvents={visible ? "auto" : "none"}>
-      <TouchableWithoutFeedback onPress={loading ? undefined : onCancel}>
-        <Animated.View style={[styles.backdrop, { opacity: backdropOpacity }]} />
-      </TouchableWithoutFeedback>
+    <Modal visible={presented} transparent animationType="none" statusBarTranslucent onRequestClose={loading ? undefined : onCancel}>
+      <View style={styles.overlay} pointerEvents={visible ? "auto" : "none"}>
+        <TouchableWithoutFeedback onPress={loading ? undefined : onCancel}>
+          <Animated.View style={[styles.backdrop, { opacity: backdropOpacity }]} />
+        </TouchableWithoutFeedback>
 
-      <Animated.View
-        style={[styles.sheet, { transform: [{ translateY: sheetTranslateY }] }]}
-      >
-        <View style={styles.handle} />
+        <Animated.View
+          style={[styles.sheet, { transform: [{ translateY: sheetTranslateY }] }]}
+        >
+          <View style={styles.handle} />
 
-        <View style={[styles.iconCircle, { backgroundColor: iconColor + "14" }]}>
-          <Ionicons name={icon} size={28} color={iconColor} />
-        </View>
+          <View style={[styles.iconCircle, { backgroundColor: iconColor + "14" }]}>
+            <Ionicons name={icon} size={28} color={iconColor} />
+          </View>
 
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.message}>{message}</Text>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.message}>{message}</Text>
 
-        <View style={styles.buttonRow}>
-          <TouchableOpacity
-            style={styles.cancelBtn}
-            onPress={onCancel}
-            disabled={loading}
-            activeOpacity={0.7}
-          >
-            <Text style={styles.cancelBtnText}>{cancelLabel ?? common.cancel}</Text>
-          </TouchableOpacity>
+          <View style={styles.buttonRow}>
+            <TouchableOpacity
+              style={styles.cancelBtn}
+              onPress={onCancel}
+              disabled={loading}
+              activeOpacity={0.7}
+            >
+              <Text style={styles.cancelBtnText}>{cancelLabel ?? common.cancel}</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[
-              styles.confirmBtn,
-              destructive ? styles.confirmBtnDestructive : styles.confirmBtnPrimary,
-              loading && styles.confirmBtnLoading,
-            ]}
-            onPress={onConfirm}
-            disabled={loading}
-            activeOpacity={0.7}
-          >
-            {loading ? (
-              <ActivityIndicator size="small" color="#fff" />
-            ) : (
-              <Text style={styles.confirmBtnText}>{confirmLabel ?? common.confirm}</Text>
-            )}
-          </TouchableOpacity>
-        </View>
-      </Animated.View>
-    </View>
+            <TouchableOpacity
+              style={[
+                styles.confirmBtn,
+                destructive ? styles.confirmBtnDestructive : styles.confirmBtnPrimary,
+                loading && styles.confirmBtnLoading,
+              ]}
+              onPress={onConfirm}
+              disabled={loading}
+              activeOpacity={0.7}
+            >
+              {loading ? (
+                <ActivityIndicator size="small" color="#fff" />
+              ) : (
+                <Text style={styles.confirmBtnText}>{confirmLabel ?? common.confirm}</Text>
+              )}
+            </TouchableOpacity>
+          </View>
+        </Animated.View>
+      </View>
+    </Modal>
   );
 }
 

@@ -36,6 +36,8 @@ interface CartState {
   addItems: (store: CartStore, lines: CartItem[]) => void;
   removeItem: (storeProductId: string) => void;
   updateQuantity: (storeProductId: string, quantity: number) => void;
+  /** Sets lines to the store's current prices (keyed by storeProductId) */
+  repriceItems: (prices: Map<string, number>) => void;
   clearCart: () => void;
   /** Undo: puts back lines removed a moment ago at their old positions, unless the cart has moved to another store */
   restoreItems: (store: CartStore, lines: { item: CartItem; index: number }[]) => void;
@@ -135,6 +137,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
     );
   }, []);
 
+  const repriceItems = useCallback((prices: Map<string, number>) => {
+    setItems((prev) => prev.map((i) => (prices.has(i.storeProductId) ? { ...i, price: prices.get(i.storeProductId)! } : i)));
+  }, []);
+
   const clearCart = useCallback(() => {
     setStore(null);
     setItems([]);
@@ -167,7 +173,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   return (
     <CartContext.Provider
-      value={{ store, storeId, storeName, items, addItem, addItems, removeItem, updateQuantity, clearCart, restoreItems, totalAmount, itemCount, productQuantityMap, pendingCoupon, setPendingCoupon }}
+      value={{ store, storeId, storeName, items, addItem, addItems, removeItem, updateQuantity, repriceItems, clearCart, restoreItems, totalAmount, itemCount, productQuantityMap, pendingCoupon, setPendingCoupon }}
     >
       {children}
     </CartContext.Provider>

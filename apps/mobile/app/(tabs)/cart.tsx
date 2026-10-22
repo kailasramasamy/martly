@@ -1,40 +1,36 @@
-import { useState, useEffect, useCallback } from "react";
-import { View, Text, Image, FlatList, TouchableOpacity, ScrollView, StyleSheet } from "react-native";
+import { useState } from "react";
+import { View, Text, FlatList, TouchableOpacity, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useCart } from "../../lib/cart-context";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { useCartRemoval } from "../../components/cart/use-cart-removal";
 import { useStore } from "../../lib/store-context";
-import { recordBannerTap, recordBannerView } from "../../lib/banner-events";
 import { useMembership } from "../../lib/membership-context";
-import { api } from "../../lib/api";
-import type { Banner, StoreProduct } from "../../lib/types";
 import { colors, spacing, fontSize } from "../../constants/theme";
-import { ProductList } from "../../components/ProductList";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { TabBottomDock } from "../../components/TabIcon";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 import { RewardsReminder } from "../../components/cart/RewardsReminder";
+import { CartLine } from "../../components/cart/CartLine";
+import { CartBill } from "../../components/cart/CartBill";
+import { OrderGoal } from "../../components/cart/OrderGoal";
+import { SuggestionRail } from "../../components/cart/SuggestionRail";
+import { useCartReview } from "../../components/cart/use-cart-review";
 import { useRequireSignIn } from "../../lib/sign-in-context";
 import { useStrings } from "../../lib/i18n/use-strings";
-import { useLanguage } from "../../lib/language-context";
 
 export default function CartScreen() {
   const requireSignIn = useRequireSignIn();
   const t = useStrings("cart");
-  const common = useStrings("common");
-  const { getLocalizedName } = useLanguage();
   const tabBarScroll = useTabBarAutoHide();
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
   const [dockHeight, setDockHeight] = useState(0);
   const router = useRouter();
-  const { store, storeId, storeName, items, totalAmount, itemCount, updateQuantity } = useCart();
+  const { store, storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem } = useCart();
   const removal = useCartRemoval();
   const { selectedStore } = useStore();
   const { freeDelivery: memberFreeDelivery } = useMembership();
-  const [upsellBanners, setUpsellBanners] = useState<Banner[]>([]);
-  const [alsoBought, setAlsoBought] = useState<StoreProduct[]>([]);
 
   const minOrderAmount = selectedStore?.minOrderAmount ? Number(selectedStore.minOrderAmount) : null;
   const freeDeliveryThreshold = selectedStore?.freeDeliveryThreshold ? Number(selectedStore.freeDeliveryThreshold) : null;
@@ -43,54 +39,21 @@ export default function CartScreen() {
   const thresholdFreeDelivery = freeDeliveryThreshold != null && totalAmount >= freeDeliveryThreshold;
   const cartFreeDelivery = memberFreeDelivery || thresholdFreeDelivery;
   const belowFreeDelivery = !cartFreeDelivery && freeDeliveryThreshold != null && totalAmount < freeDeliveryThreshold && !belowMinimum;
-
-  useEffect(() => {
-    if (!storeId) {
-      setUpsellBanners([]);
-      return;
-    }
-    api
-      .get<Banner[]>(`/api/v1/banners/by-placement/${storeId}?placement=CART_UPSELL`)
-      .then((res) => {
-        setUpsellBanners(res.data);
-        res.data.forEach((b) => recordBannerView(storeId, b.id));
-      })
-      .catch(() => {});
-  }, [storeId]);
-
-  useEffect(() => {
-    if (!storeId || items.length === 0) {
-      setAlsoBought([]);
-      return;
-    }
-    const productIds = [...new Set(items.map((i) => i.productId))].join(",");
-    const excludeIds = items.map((i) => i.storeProductId).join(",");
-    api
-      .get<StoreProduct[]>(`/api/v1/stores/${storeId}/frequently-bought-together?productIds=${productIds}&exclude=${excludeIds}&limit=6`)
-      .then((res) => setAlsoBought(res.data))
-      .catch(() => {});
-  }, [storeId, items]);
-
-  const handleBannerPress = useCallback((banner: Banner) => {
-    recordBannerTap(selectedStore?.id, banner.id);
-    switch (banner.actionType) {
-      case "CATEGORY":
-        if (banner.actionTarget) router.push({ pathname: "/category/[id]", params: { id: banner.actionTarget } } as any);
-        break;
-      case "PRODUCT":
-        if (banner.actionTarget) router.push({ pathname: "/product/[id]", params: { id: banner.actionTarget } } as any);
-        break;
-      case "COLLECTION":
-        if (banner.actionTarget) router.push({ pathname: "/search", params: { collectionId: banner.actionTarget } } as any);
-        break;
-      case "SEARCH":
-        if (banner.actionTarget) router.push({ pathname: "/search", params: { q: banner.actionTarget } } as any);
-        break;
-      case "BRAND":
-        if (banner.actionTarget) router.push({ pathname: "/brand/[id]", params: { id: banner.actionTarget } });
-        break;
-    }
-  }, [router, selectedStore?.id]);
+  const goal = belowMinimum
+    ? { kind: "minimum" as const, target: minOrderAmount! }
+    : belowFreeDelivery ? { kind: "freeDelivery" as const, target: freeDeliveryThreshold! } : null;
+  const review = useCartReview(goal ? goal.target - totalAmount : null);
+  const deliveryFee = cartFreeDelivery ? 0 : baseDeliveryFee > 0 ? baseDeliveryFee : null;
+  const grandTotal = totalAmount + (deliveryFee ?? 0);
+  // Below the minimum the bar is grey; unavailable lines turn it into the button that removes them
+  const checkoutLocked = belowMinimum && !review.hasUnavailable;
+  const removeUnavailable = () => {
+    for (const i of items) if (review.statusOf(i.storeProductId, i.quantity, i.price).unavailable) removeItem(i.storeProductId);
+  };
+  const onCheckout = () => {
+    if (review.hasUnavailable) removeUnavailable();
+    else if (!belowMinimum) requireSignIn(() => router.push("/checkout"), { title: t.signInTitle, subtitle: t.signInSubtitle });
+  };
 
   if (items.length === 0) {
     return (
@@ -125,138 +88,36 @@ export default function CartScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* Nudge Banners */}
-        {belowMinimum && (
-          <View style={styles.nudgeBanner}>
-            <Ionicons name="alert-circle" size={18} color="#c2410c" />
-            <Text style={styles.nudgeText}>
-              {t.belowMinimum((minOrderAmount! - totalAmount).toFixed(0), minOrderAmount!.toFixed(0))}
-            </Text>
-          </View>
-        )}
-        {belowFreeDelivery && (
-          <View style={styles.freeDeliveryNudge}>
-            <Ionicons name="bicycle" size={18} color={colors.primary} />
-            <Text style={styles.freeDeliveryNudgeText}>
-              {t.belowFreeDelivery((freeDeliveryThreshold! - totalAmount).toFixed(0))}
-            </Text>
-          </View>
-        )}
+        {goal && <OrderGoal kind={goal.kind} target={goal.target} total={totalAmount} />}
 
         <FlatList {...tabBarScroll.scrollProps}
           data={items}
           keyExtractor={(item) => item.storeProductId}
           contentContainerStyle={tabBarScroll.contentStyle(styles.list, dockHeight)}
-          ListHeaderComponent={
-            upsellBanners.length > 0 ? (
-              <ScrollView
-                horizontal
-                showsHorizontalScrollIndicator={false}
-                contentContainerStyle={styles.upsellList}
-              >
-                {upsellBanners.map((banner) => (
-                  <TouchableOpacity
-                    key={banner.id}
-                    activeOpacity={banner.actionType === "NONE" ? 1 : 0.85}
-                    onPress={() => handleBannerPress(banner)}
-                    style={styles.upsellCard}
-                  >
-                    <Image source={{ uri: banner.imageUrl }} style={styles.upsellImage} resizeMode="cover" />
-                    <View style={styles.upsellTextOverlay}>
-                      <Text style={styles.upsellTitle} numberOfLines={1}>{banner.title}</Text>
-                    </View>
-                  </TouchableOpacity>
-                ))}
-              </ScrollView>
-            ) : null
-          }
           renderItem={({ item, index }) => (
-            <View style={styles.card}>
-              <View style={styles.cardBody}>
-                {item.imageUrl ? (
-                  <Image source={{ uri: item.imageUrl }} style={styles.itemImage} />
-                ) : (
-                  <View style={styles.itemImagePlaceholder}>
-                    <Ionicons name="cube-outline" size={20} color={colors.border} />
-                  </View>
-                )}
-                <View style={styles.cardMiddle}>
-                  <Text style={styles.itemName} numberOfLines={2}>{getLocalizedName({ name: item.productName, translations: item.translations })}</Text>
-                  <Text style={styles.itemVariant}>{item.variantName}</Text>
-                  <Text style={styles.itemPrice}>
-                    {"\u20B9"}{item.price.toFixed(0)}
-                  </Text>
-                </View>
-                <View style={styles.cardRight}>
-                  <View style={styles.qtyStepper}>
-                    <TouchableOpacity
-                      style={styles.qtyBtn}
-                      onPress={() => (item.quantity === 1 ? removal.removeAt(index) : updateQuantity(item.storeProductId, item.quantity - 1))}
-                      hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-                    >
-                      <Ionicons
-                        name={item.quantity === 1 ? "trash-outline" : "remove"}
-                        size={16}
-                        color={colors.primary}
-                      />
-                    </TouchableOpacity>
-                    <Text style={styles.qtyText}>{item.quantity}</Text>
-                    <TouchableOpacity
-                      style={styles.qtyBtn}
-                      onPress={() => updateQuantity(item.storeProductId, item.quantity + 1)}
-                      hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-                    >
-                      <Ionicons name="add" size={16} color={colors.primary} />
-                    </TouchableOpacity>
-                  </View>
-                  <Text style={styles.lineTotal}>
-                    {"\u20B9"}{(item.price * item.quantity).toFixed(0)}
-                  </Text>
-                </View>
-              </View>
-            </View>
+            <CartLine
+              item={item}
+              status={review.statusOf(item.storeProductId, item.quantity, item.price)}
+              onDecrement={() => (item.quantity === 1 ? removal.removeAt(index) : updateQuantity(item.storeProductId, item.quantity - 1))}
+              onIncrement={() => updateQuantity(item.storeProductId, item.quantity + 1)}
+              onRemove={() => removal.removeAt(index)}
+            />
           )}
           ListFooterComponent={
             <View>
-            {alsoBought.length > 0 && (
-              <View style={styles.alsoBoughtSection}>
-                <Text style={styles.alsoBoughtTitle}>{t.alsoBought}</Text>
-                <ProductList products={alsoBought} layout="rail" />
-              </View>
-            )}
-            <RewardsReminder storeId={storeId ?? undefined} />
-            <View style={styles.billSection}>
-              <Text style={styles.billTitle}>{t.billDetails}</Text>
-              <View style={styles.billCard}>
-                <View style={styles.billRow}>
-                  <Text style={styles.billLabel}>{t.itemTotal}</Text>
-                  <Text style={styles.billValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
-                </View>
-                <View style={styles.billRow}>
-                  <Text style={styles.billLabel}>{t.deliveryFee}</Text>
-                  {cartFreeDelivery ? (
-                    <View style={styles.freeDeliveryTag}>
-                      <Text style={styles.billFree}>{common.free}</Text>
-                      {memberFreeDelivery && (
-                        <View style={styles.memberBadge}>
-                          <Ionicons name="star" size={10} color="#7c3aed" />
-                          <Text style={styles.memberBadgeText}>{t.plus}</Text>
-                        </View>
-                      )}
-                    </View>
-                  ) : baseDeliveryFee > 0 ? (
-                    <Text style={styles.billValue}>{"\u20B9"}{baseDeliveryFee.toFixed(0)}</Text>
-                  ) : (
-                    <Text style={styles.billMuted}>{t.atCheckout}</Text>
-                  )}
-                </View>
-                <View style={styles.billDivider} />
-                <View style={styles.billRow}>
-                  <Text style={styles.billGrandLabel}>{t.grandTotal}</Text>
-                  <Text style={styles.billGrandValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
-                </View>
-              </View>
-            </View>
+              {/* Due usual items first: the likeliest adds, and they close the gap too */}
+              <SuggestionRail title={t.forgotTitle} subtitle={t.forgotSubtitle} products={review.forgotten} />
+              <SuggestionRail title={t.gapRailTitle} products={review.gapFillers} />
+              {review.forgotten.length === 0 && <SuggestionRail title={t.alsoBought} products={review.alsoBought} />}
+              <RewardsReminder storeId={storeId ?? undefined} />
+              <CartBill
+                itemTotal={totalAmount}
+                deliveryFee={deliveryFee}
+                freeDelivery={cartFreeDelivery}
+                memberFreeDelivery={memberFreeDelivery}
+                grandTotal={grandTotal}
+                savings={review.savings}
+              />
             </View>
           }
         />
@@ -265,19 +126,22 @@ export default function CartScreen() {
         <TabBottomDock onLayout={(e) => setDockHeight(e.nativeEvent.layout.height)}>
         <View style={styles.footer}>
           <TouchableOpacity
-            style={[styles.checkoutBar, belowMinimum && styles.checkoutBarDisabled]}
-            activeOpacity={belowMinimum ? 1 : 0.9}
-            onPress={() => !belowMinimum && requireSignIn(() => router.push("/checkout"), { title: t.signInTitle, subtitle: t.signInSubtitle })}
+            style={[styles.checkoutBar, checkoutLocked && styles.checkoutBarDisabled]}
+            activeOpacity={checkoutLocked ? 1 : 0.9}
+            onPress={onCheckout}
           >
-            <View style={styles.checkoutLeft}>
-              <Text style={styles.checkoutTotal}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
-              <Text style={styles.checkoutSubtext}>{t.total}</Text>
+            <View>
+              <View style={styles.checkoutLeft}>
+                <Text style={styles.checkoutTotal}>{"\u20B9"}{grandTotal.toFixed(0)}</Text>
+                <Text style={styles.checkoutSubtext}>{t.total}</Text>
+              </View>
+              {review.savings >= 1 && <Text style={styles.checkoutSaved}>{t.saved(review.savings.toFixed(0))}</Text>}
             </View>
             <View style={styles.checkoutRight}>
               <Text style={styles.checkoutBtnText}>
-                {belowMinimum ? t.minOrder(minOrderAmount!.toFixed(0)) : t.checkout}
+                {review.hasUnavailable ? t.removeUnavailable : belowMinimum ? t.minOrder(minOrderAmount!.toFixed(0)) : t.checkout}
               </Text>
-              <Ionicons name={belowMinimum ? "lock-closed" : "arrow-forward"} size={18} color="#fff" />
+              {!review.hasUnavailable && <Ionicons name={belowMinimum ? "lock-closed" : "arrow-forward"} size={18} color="#fff" />}
             </View>
           </TouchableOpacity>
         </View>
@@ -363,44 +227,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  nudgeBanner: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-    marginHorizontal: spacing.md,
-    marginTop: spacing.sm,
-    backgroundColor: "#fff7ed",
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: "#fed7aa",
-    padding: 12,
-  },
-  nudgeText: {
-    flex: 1,
-    fontSize: 13,
-    fontWeight: "600",
-    color: "#c2410c",
-    lineHeight: 18,
-  },
-  freeDeliveryNudge: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-    marginHorizontal: spacing.md,
-    marginTop: spacing.sm,
-    backgroundColor: colors.primary + "0D",
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: colors.primary + "30",
-    padding: 12,
-  },
-  freeDeliveryNudgeText: {
-    flex: 1,
-    fontSize: 13,
-    fontWeight: "600",
-    color: colors.primary,
-    lineHeight: 18,
-  },
   storeInfo: { marginLeft: 12, flex: 1 },
   clearBtn: { minHeight: 44, justifyContent: "center", paddingLeft: 12 },
   clearText: { fontSize: fontSize.md, fontWeight: "700", color: colors.error },
@@ -414,200 +240,7 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     marginTop: 1,
   },
-  // Upsell banners
-  upsellList: {
-    paddingHorizontal: spacing.md,
-    paddingVertical: 10,
-    gap: 10,
-  },
-  upsellCard: {
-    width: 140,
-    height: 90,
-    borderRadius: 12,
-    overflow: "hidden",
-    backgroundColor: "#e2e8f0",
-  },
-  upsellImage: {
-    width: "100%",
-    height: "100%",
-  },
-  upsellTextOverlay: {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    paddingHorizontal: 8,
-    paddingVertical: 6,
-    backgroundColor: "rgba(0,0,0,0.4)",
-  },
-  upsellTitle: {
-    fontSize: 12,
-    fontWeight: "700",
-    color: "#fff",
-  },
-  // List
   list: { padding: spacing.md, paddingBottom: spacing.sm },
-  card: {
-    backgroundColor: "#fff",
-    borderRadius: 12,
-    padding: spacing.md,
-    marginBottom: spacing.sm,
-    borderWidth: 1,
-    borderColor: colors.border,
-  },
-  cardBody: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  itemImage: {
-    width: 56,
-    height: 56,
-    borderRadius: 8,
-    backgroundColor: colors.surface,
-  },
-  itemImagePlaceholder: {
-    width: 56,
-    height: 56,
-    borderRadius: 8,
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: colors.border,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  cardMiddle: { flex: 1, marginHorizontal: 12 },
-  cardRight: { alignItems: "flex-end", justifyContent: "space-between" },
-  itemName: {
-    fontSize: 15,
-    fontWeight: "600",
-    color: colors.text,
-    lineHeight: 20,
-  },
-  itemVariant: {
-    fontSize: 12,
-    color: colors.textSecondary,
-    marginTop: 2,
-  },
-  itemPrice: {
-    fontSize: 13,
-    color: colors.textSecondary,
-    marginTop: 4,
-  },
-  qtyStepper: {
-    flexDirection: "row",
-    alignItems: "center",
-    borderWidth: 1.5,
-    borderColor: colors.primary,
-    borderRadius: 8,
-    backgroundColor: colors.primary + "08",
-    overflow: "hidden",
-  },
-  qtyBtn: {
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  qtyText: {
-    fontSize: fontSize.md,
-    fontWeight: "700",
-    color: colors.primary,
-    minWidth: 24,
-    textAlign: "center",
-  },
-  lineTotal: {
-    fontSize: 15,
-    fontWeight: "700",
-    color: colors.text,
-    marginTop: 6,
-  },
-  // Also bought
-  alsoBoughtSection: {
-    marginTop: spacing.sm,
-    paddingBottom: spacing.sm,
-  },
-  alsoBoughtTitle: {
-    fontSize: 15,
-    fontWeight: "700",
-    color: colors.text,
-    marginBottom: spacing.sm,
-  },
-  // Bill details
-  billSection: {
-    marginTop: spacing.sm,
-    paddingBottom: spacing.md,
-  },
-  billTitle: {
-    fontSize: 15,
-    fontWeight: "700",
-    color: colors.text,
-    marginBottom: spacing.sm,
-  },
-  billCard: {
-    backgroundColor: "#fff",
-    borderRadius: 12,
-    padding: spacing.md,
-    borderWidth: 1,
-    borderColor: colors.border,
-  },
-  billRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    paddingVertical: 6,
-  },
-  billLabel: {
-    fontSize: fontSize.md,
-    color: colors.textSecondary,
-  },
-  billValue: {
-    fontSize: fontSize.md,
-    fontWeight: "600",
-    color: colors.text,
-  },
-  freeDeliveryTag: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-  },
-  billFree: {
-    fontSize: fontSize.md,
-    fontWeight: "600",
-    color: colors.primary,
-  },
-  memberBadge: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 3,
-    backgroundColor: "#7c3aed14",
-    paddingHorizontal: 6,
-    paddingVertical: 2,
-    borderRadius: 4,
-  },
-  memberBadgeText: {
-    fontSize: 10,
-    fontWeight: "700",
-    color: "#7c3aed",
-  },
-  billMuted: {
-    fontSize: fontSize.md,
-    color: colors.textSecondary,
-  },
-  billDivider: {
-    height: 1,
-    backgroundColor: colors.border,
-    marginVertical: 8,
-  },
-  billGrandLabel: {
-    fontSize: 15,
-    fontWeight: "700",
-    color: colors.text,
-  },
-  billGrandValue: {
-    fontSize: 15,
-    fontWeight: "700",
-    color: colors.text,
-  },
   // Footer
   footer: {
     padding: spacing.md,
@@ -644,6 +277,13 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: "600",
     color: "rgba(255,255,255,0.7)",
+  },
+  // Light amber stays legible at 11px on the teal bar
+  checkoutSaved: {
+    fontSize: 11,
+    fontWeight: "700",
+    color: "#fde68a",
+    marginTop: 2,
   },
   checkoutRight: {
     flexDirection: "row",

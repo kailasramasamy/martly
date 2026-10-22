@@ -1546,6 +1546,16 @@ export type BuildShoppingListInput = z.infer<typeof buildShoppingListSchema>;
 
 export const shoppingListDoneSchema = z.object({ ids: z.array(z.string().uuid()).min(1).max(100) });
 export type ShoppingListDoneInput = z.infer<typeof shoppingListDoneSchema>;
+
+// ── Cart review: live prices and stock for the cart's lines, plus what to suggest beside them ──
+export const cartReviewSchema = z.object({
+  storeId: z.string().uuid(),
+  storeProductIds: z.array(z.string().uuid()).min(1).max(100),
+  /** Rupees still needed for the minimum order or free delivery; the reply then carries items that close it */
+  gap: z.number().positive().max(10000).optional(),
+});
+export type CartReviewInput = z.infer<typeof cartReviewSchema>;
+
 export * from "./marketing.js";
 export * from "./home.js";
 export * from "./ledger.js";

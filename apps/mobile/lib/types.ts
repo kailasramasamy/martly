@@ -77,6 +77,15 @@ export interface StoreProduct {
   brandPick?: BrandPick;
 }
 
+/** POST /cart/review: the cart's lines as sold now (a missing line can't be bought) and what to suggest beside them */
+export interface CartReview {
+  lines: StoreProduct[];
+  /** Usual items that are due and not in the cart; empty for guests */
+  forgotten: StoreProduct[];
+  /** Items priced to close the gap to the minimum order or free delivery */
+  gapFillers: StoreProduct[];
+}
+
 export interface Translations {
   [lang: string]: { name?: string; description?: string };
 }
