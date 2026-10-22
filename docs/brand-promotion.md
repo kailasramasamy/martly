@@ -137,8 +137,25 @@ The existing `SPONSORED_PRODUCT` booking (one product, weekly) now also runs her
 - The Ad label on search results and the list picker, and the suggestion row's Ad badge aligned in the row.
 - Views and taps for search and suggestion ads show up in the brand campaign report (same banner counters).
 
+## Phase 3: brand tab slot (built 2026-10-22)
+
+The last slot of the shopper app's bottom bar shows one brand's logo and opens its brand page. Unlike other paid placements it carries no Ad badge (decided 2026-10-23): a brand logo in the nav reads as a brand placement, and the badge cluttered the bar.
+
+- **Package:** `BRAND_TAB_SLOT`, code `BRAND_TAB_WEEK`, "Brand tab slot", ₹10,000 per week, on the new `BRAND_TAB` placement. Booked, paid and approved like other campaigns, with "Where it runs". The brand's logo is the creative: booking copies it, refuses a brand without one, and art generation is refused.
+- **One brand at a time:** slot limit `BRAND_TAB: { BRAND: 1 }`, network-wide, so a second booking is refused with the next opening date.
+- **Going live** makes a `BRAND_TAB` banner row (like sponsored products), so targeting, the "store stocks the brand" check, views and taps, and campaign results all reuse the banner feed. There's no push to customers.
+- **What the slot shows** (`services/brand-spotlight.ts`, `GET /brands/store/:storeId/spotlight`):
+  1. a live tab slot aimed at the store, returned with `sponsored: { bannerId }`
+  2. otherwise the organisation's own brand with a logo that the store stocks, when "Promote my own brands" is on
+  3. otherwise the daily rotation through the store's 5 best-known stocked brand stores
+- **App:** `BrandTabSlot` records a view once per session and a tap per press for a paid logo. The slot refetches when Home is pulled to refresh and when the app returns to the foreground (`refreshBrandSpotlight`), so a new booking or the next day's rotation shows without a restart.
+- **Migrations:** `20261022140000_brand_tab_slot` (enum values) and `20261022140100_brand_package_rows`. The second adds the Featured brand (₹4,000) and Brand tab slot (₹10,000) packages to prod, plus the slot limit. It skips rows that already exist.
+
+**Tested (curl):** before booking, Harur's spotlight was Tata Salt (rotation). Britannia booked, paid offline and approved went Live with its logo and no push, and the spotlight became Britannia with `sponsored`. A brand without a logo was refused. A second booking was refused ("the next opening starts Thu, 29 Oct"). Generate-art was refused. Tab views and taps showed in the campaign's results. Local demo: Britannia tab slot (DEMO-TAB-1).
+
+**Needs manual check:** the phone's bottom bar shows the Britannia logo, and tapping opens the Britannia brand page. In admin, the booking form with the Brand tab slot package shows only a campaign name, and the campaign page shows the logo card.
+
 ## Next phases (decided 2026-10-21)
 
-- **Phase 3:** `BRAND_TAB_SLOT` for the bottom nav: one brand per week across all stores. If unsold, it falls back to the org's own brand, then the daily rotation.
 - **Phase 4:** reporting per surface (`BannerStatDaily` has no surface column yet, so search, suggest and Home views are counted together), plus rotation weighted by units bought.
 - **Store-brand packs:** replace generic staples with each store's own branded packs. Photograph the front and back of a store's pack, then have AI make per-product images with the store brand. Not started.

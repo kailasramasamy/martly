@@ -198,7 +198,7 @@ export interface Banner {
   imageUrl: string;
   imageUrls: Record<string, string> | null;
   textInImage: boolean;
-  placement: "HERO_CAROUSEL" | "CATEGORY_TOP" | "HOME_POSTER" | "SPONSORED_PRODUCT";
+  placement: "HERO_CAROUSEL" | "CATEGORY_TOP" | "HOME_POSTER" | "SPONSORED_PRODUCT" | "BRAND_TAB";
   actionType: "CATEGORY" | "PRODUCT" | "COLLECTION" | "SEARCH" | "URL" | "BRAND" | "NONE";
   actionTarget: string | null;
   sponsorType?: "STORE" | "BRAND" | "PLATFORM";

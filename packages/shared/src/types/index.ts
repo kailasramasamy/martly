@@ -123,6 +123,8 @@ export interface BrandSpotlight {
   id: string;
   name: string;
   imageUrl: string;
+  /** Set when the brand paid for the tab slot: the slot reports its views and taps to the campaign */
+  sponsored?: { bannerId: string };
 }
 
 // A store's brands by department → category (a brand appears under every category it has products in);

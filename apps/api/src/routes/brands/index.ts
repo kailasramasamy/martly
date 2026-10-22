@@ -10,7 +10,7 @@ import type { JwtUser } from "../../types/jwt.js";
 import { brandVisibility, uniqueBrandSlug } from "../../services/brands.js";
 import { cleanLogo } from "../../services/brand-logo.js";
 import { putObject } from "../../services/media.js";
-import { istDateKey } from "../../services/ist-day.js";
+import { brandSpotlight } from "../../services/brand-spotlight.js";
 
 type Translations = DirectoryDepartment["translations"];
 type DirectoryRow = DirectoryBrand & {
@@ -49,9 +49,6 @@ const SEGMENTS: Record<BrandSegment, () => Record<string, unknown>> = {
   withoutProducts: () => ({ products: { none: {} } }),
   addedLast30d: () => ({ createdAt: { gte: new Date(Date.now() - THIRTY_DAYS_MS) } }),
 };
-
-// The tab bar rotates daily through this many of the store's best-known brand stores
-const SPOTLIGHT_POOL = 5;
 
 const isSegment = (value: string): value is BrandSegment => Object.hasOwn(SEGMENTS, value);
 
@@ -162,20 +159,9 @@ export async function brandRoutes(app: FastifyInstance) {
     return response;
   });
 
-  // One brand store for the shopper tab bar: the store's best-known stocked brands, rotating each day
+  // The brand in the shopper tab bar's last slot: a paid tab slot, the store's own brand, or a daily rotation
   app.get<{ Params: { storeId: string } }>("/store/:storeId/spotlight", async (request) => {
-    const pool = await app.prisma.$queryRaw<BrandSpotlight[]>`
-      SELECT b.id, b.name, b.image_url AS "imageUrl"
-      FROM brands b
-      WHERE b.theme_color IS NOT NULL AND b.image_url IS NOT NULL
-        AND EXISTS (
-          SELECT 1 FROM store_products sp JOIN products p ON p.id = sp.product_id
-          WHERE sp.store_id = ${request.params.storeId} AND sp.is_active = true AND p.is_active = true AND p.brand_id = b.id
-        )
-      ORDER BY b.popularity DESC, b.name
-      LIMIT ${SPOTLIGHT_POOL}`;
-    const day = Math.floor(new Date(istDateKey(new Date())).getTime() / 86_400_000);
-    const response: ApiResponse<BrandSpotlight | null> = { success: true, data: pool.length ? pool[day % pool.length] : null };
+    const response: ApiResponse<BrandSpotlight | null> = { success: true, data: await brandSpotlight(app.prisma, request.params.storeId) };
     return response;
   });
 

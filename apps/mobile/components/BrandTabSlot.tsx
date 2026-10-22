@@ -1,12 +1,18 @@
+import { useEffect } from "react";
 import { Text, Image, Pressable, StyleSheet } from "react-native";
 import { router } from "expo-router";
 import type { BrandSpotlight } from "@martly/shared/types";
 import { useStrings } from "../lib/i18n/use-strings";
+import { recordBannerTap, recordBannerView } from "../lib/banner-events";
 import { TabIcon, TAB_INACTIVE, tabLabelStyle } from "./TabIcon";
 
-/** The tab bar's last slot: the store's spotlight brand's logo, or the brands directory when it has none */
-export function BrandTabSlot({ brand }: { brand: BrandSpotlight | null }) {
+/** The tab bar's last slot: the store's spotlight brand's logo (views and taps reported when the brand paid for it), or the brands directory */
+export function BrandTabSlot({ brand, storeId }: { brand: BrandSpotlight | null; storeId: string | undefined }) {
   const t = useStrings("nav");
+  const bannerId = brand?.sponsored?.bannerId;
+  useEffect(() => {
+    if (bannerId) recordBannerView(storeId, bannerId);
+  }, [storeId, bannerId]);
   if (!brand) {
     return (
       <Pressable style={styles.plain} onPress={() => router.push("/brands")} accessibilityRole="button" accessibilityLabel={t.brands}>
@@ -16,7 +22,15 @@ export function BrandTabSlot({ brand }: { brand: BrandSpotlight | null }) {
     );
   }
   return (
-    <Pressable style={styles.tileSlot} onPress={() => router.push(`/brand/${brand.id}`)} accessibilityRole="button" accessibilityLabel={t.shopBrand(brand.name)}>
+    <Pressable
+      style={styles.tileSlot}
+      onPress={() => {
+        if (bannerId) recordBannerTap(storeId, bannerId);
+        router.push(`/brand/${brand.id}`);
+      }}
+      accessibilityRole="button"
+      accessibilityLabel={t.shopBrand(brand.name)}
+    >
       <Image source={{ uri: brand.imageUrl }} style={styles.logo} resizeMode="contain" />
     </Pressable>
   );

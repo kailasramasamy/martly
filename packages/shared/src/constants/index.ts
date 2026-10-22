@@ -270,6 +270,7 @@ export const BannerPlacement = {
   CATEGORY_TOP: "CATEGORY_TOP",
   HOME_POSTER: "HOME_POSTER",
   SPONSORED_PRODUCT: "SPONSORED_PRODUCT",
+  BRAND_TAB: "BRAND_TAB",
 } as const;
 export type BannerPlacement = (typeof BannerPlacement)[keyof typeof BannerPlacement];
 
@@ -365,6 +366,7 @@ export const BannerPlacementLabels: Record<BannerPlacement, string> = {
   CATEGORY_TOP: "Category Top",
   HOME_POSTER: "Home brand poster",
   SPONSORED_PRODUCT: "Sponsored product",
+  BRAND_TAB: "Bottom-bar brand tab",
 };
 
 export const BannerActionType = {

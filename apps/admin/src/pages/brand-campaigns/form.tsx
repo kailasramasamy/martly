@@ -71,6 +71,7 @@ function toFormValues(c: Campaign): FormValues {
 const isSponsored = (p?: AdProduct) => p?.kind === "BRAND_SPONSORED_PRODUCT";
 const isPoster = (p?: AdProduct) => p?.placement === "HOME_POSTER";
 const isFeature = (p?: AdProduct) => p?.kind === "BRAND_FEATURE";
+const isTabSlot = (p?: AdProduct) => p?.kind === "BRAND_TAB_SLOT";
 
 /** A featured brand has no creative: it lifts the brand's products wherever the campaign runs */
 function FeatureCard() {
@@ -82,6 +83,21 @@ function FeatureCard() {
       <Typography.Text type="secondary">
         The brand's products in the chosen category rank ahead in search, category pages and list orders, marked
         Featured, in the stores it runs in that carry the brand. A store's own brand still comes first. No banner or push.
+      </Typography.Text>
+    </Card>
+  );
+}
+
+/** A tab slot shows the brand's logo in the app's bottom bar, so there's no creative to make */
+function TabSlotCard() {
+  return (
+    <Card title="Brand tab slot" size="small">
+      <Form.Item name="title" label="Campaign name" rules={[{ required: true, min: 2, max: 60 }]} extra="For your records; shoppers don't see it.">
+        <Input maxLength={60} />
+      </Form.Item>
+      <Typography.Text type="secondary">
+        The brand's logo takes the last slot of the app's bottom bar and opens its brand page, in the stores it
+        runs in that carry the brand. One brand at a time. The brand needs a logo. No banner or push.
       </Typography.Text>
     </Card>
   );
@@ -216,7 +232,7 @@ function useSave(scope: CampaignScope, id: string | undefined, mode: CreativeMod
   const save = async (values: FormValues) => {
     setSaving(true);
     try {
-      const body = buildBody(values, mode, isSponsored(product), isFeature(product));
+      const body = buildBody(values, mode, isSponsored(product), isFeature(product) || isTabSlot(product));
       const res = id ? await axiosInstance.put(`${scope.apiBase}/${id}`, body) : await axiosInstance.post(scope.apiBase, body);
       navigate(`${scope.path}/show/${res.data.data.id}`);
     } catch (err) {
@@ -271,6 +287,8 @@ export function CampaignForm({ scope }: { scope: CampaignScope }) {
               <ConfigProvider componentDisabled={approved}>
               {isFeature(product) ? (
                 <FeatureCard />
+              ) : isTabSlot(product) ? (
+                <TabSlotCard />
               ) : isSponsored(product) ? (
                 <SponsoredCard form={form} brandId={brandId} locked={locked} />
               ) : (

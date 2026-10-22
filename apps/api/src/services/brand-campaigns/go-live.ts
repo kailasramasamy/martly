@@ -83,8 +83,10 @@ export async function startCampaign(deps: Deps, campaign: BrandCampaign) {
   if (!count) return;
   // A featured brand only changes ranking, which reads live campaigns; there's no banner, offer or announcement
   if (!campaign.placement) return;
-  const orgs = await participatingOrgs(deps.prisma, campaign);
   if (!campaign.discountType) await startBanner(deps.prisma, campaign);
+  // A logo in the tab bar is no news to announce
+  if (campaign.placement === "BRAND_TAB") return;
+  const orgs = await participatingOrgs(deps.prisma, campaign);
   for (const { id } of orgs) {
     // One organisation's failure shouldn't keep the brand's offer out of every other store
     if (campaign.discountType) {

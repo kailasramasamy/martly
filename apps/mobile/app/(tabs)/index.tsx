@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback, useRef } from "react";
 import {
   View,
+  ActivityIndicator,
   FlatList,
   StyleSheet,
   RefreshControl,
@@ -27,6 +28,7 @@ import { HomeSectionView } from "../../components/home/sections";
 import { HomeSectionProvider, type HomeSectionEnv } from "../../components/home/sections/context";
 import { useLightStatusBar } from "../../lib/use-light-status-bar";
 import { useHomeSections, type MobileHomeSection } from "../../lib/use-home-sections";
+import { refreshBrandSpotlight } from "../../lib/use-brand-spotlight";
 import type { HomeTheme } from "@martly/shared/types";
 import { TabBottomDock } from "../../components/TabIcon";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
@@ -75,6 +77,7 @@ function useHomeData() {
     setRefreshing(true);
     if (selectedStore) {
       refreshMember();
+      refreshBrandSpotlight();
       await reload();
     } else {
       await refreshStores();
@@ -159,7 +162,7 @@ function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, ready
         <RefreshControl
           refreshing={refreshing}
           onRefresh={onRefresh}
-          tintColor={festiveInk ?? colors.primary}
+          tintColor={festiveInk && Platform.OS === "ios" ? "transparent" : festiveInk ?? colors.primary}
           colors={[colors.primary]}
           progressViewOffset={festiveInk ? headerOffset : undefined}
         />
@@ -197,6 +200,10 @@ export default function HomeScreen() {
         <HomeSectionProvider value={env}>
           <SectionList data={data} scroll={scroll} dockHeight={dockHeight} festiveInk={festive?.title ?? null} headerOffset={header.expanded} ready={env !== null} onHeroInView={setHeroInView} />
         </HomeSectionProvider>
+        {/* iOS draws the pull-to-refresh spinner under the floating festive header (its offset is Android-only), so show one below it */}
+        {festive && Platform.OS === "ios" && data.refreshing ? (
+          <ActivityIndicator color={festive.title} style={[styles.festiveRefresh, { top: header.expanded + 12 }]} />
+        ) : null}
         <BackToTopPill visible={scroll.showBackToTop} top={header.height + 8} onPress={scroll.scrollToTop} />
         <TabBottomDock onLayout={(e) => setDockHeight(e.nativeEvent.layout.height)}>
           <FreeDeliveryBar threshold={chrome?.freeDeliveryThreshold ?? null} storeId={selectedStore?.id} />
@@ -210,4 +217,5 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.surface },
   scrollContent: { paddingBottom: 8 },
+  festiveRefresh: { position: "absolute", alignSelf: "center", zIndex: 11 },
 });

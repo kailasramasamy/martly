@@ -51,6 +51,22 @@ function FeatureCard({ campaign }: { campaign: Campaign }) {
   );
 }
 
+function TabSlotCard({ campaign }: { campaign: Campaign }) {
+  return (
+    <Card title="Brand tab slot" size="small" style={{ marginBottom: 16 }}>
+      <Space align="center">
+        {campaign.imageUrl && <Image src={campaign.imageUrl} width={96} preview={false} style={{ objectFit: "contain" }} />}
+        <Typography.Text>{campaign.brand.name}'s logo in the app's bottom bar, opening its brand page.</Typography.Text>
+      </Space>
+    </Card>
+  );
+}
+
+// Packages whose creative isn't designed: a featured brand (no placement), a sponsored product's photo, a tab slot's logo
+const FIXED_CREATIVE: Record<string, (props: { campaign: Campaign }) => React.ReactNode> = {
+  FEATURE: FeatureCard, SPONSORED_PRODUCT: SponsoredCard, BRAND_TAB: TabSlotCard,
+};
+
 function CreativeCard({ campaign, scope, onChange }: { campaign: Campaign; scope: CampaignScope; onChange: (c: Campaign) => void }) {
   const { notification } = App.useApp();
   const [generating, setGenerating] = useState(false);
@@ -126,6 +142,7 @@ export function CampaignShow({ scope }: { scope: CampaignScope }) {
   useEffect(() => { void load(); }, [load]);
 
   if (!campaign) return <Spin style={{ display: "block", margin: "64px auto" }} />;
+  const FixedCreative = FIXED_CREATIVE[campaign.placement ?? "FEATURE"];
 
   return (
     <Show
@@ -142,11 +159,7 @@ export function CampaignShow({ scope }: { scope: CampaignScope }) {
       <ReadableSection>
         <Space style={{ marginBottom: 16 }}><CampaignStatusTag status={campaign.status} /></Space>
         {campaign.reviewNote && <Alert type={campaign.status === "REJECTED" ? "error" : "info"} showIcon message={campaign.reviewNote} style={{ marginBottom: 16 }} />}
-        {!campaign.placement
-          ? <FeatureCard campaign={campaign} />
-          : campaign.placement === "SPONSORED_PRODUCT"
-            ? <SponsoredCard campaign={campaign} />
-            : <CreativeCard campaign={campaign} scope={scope} onChange={setCampaign} />}
+        {FixedCreative ? <FixedCreative campaign={campaign} /> : <CreativeCard campaign={campaign} scope={scope} onChange={setCampaign} />}
         <DetailsCard campaign={campaign} platform={scope.mode === "platform"} />
         {campaign.results && (
           <Card title="Results" size="small"><CampaignResults results={campaign.results} /></Card>

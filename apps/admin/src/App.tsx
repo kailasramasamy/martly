@@ -221,11 +221,18 @@ function HeaderBar() {
   );
 }
 
-function HomeRoute() {
+// A brand partner sees only their portal and profile, however they reach another page (a link, or the page the last
+// person signed out on, which login returns to)
+const PARTNER_PATHS = ["/brand-portal", "/profile"];
+
+function RoleOutlet() {
   const { data: identity, isLoading } = useGetIdentity<{ role: string }>();
+  const { pathname } = useLocation();
   if (isLoading) return <Spin style={{ display: "block", margin: "64px auto" }} />;
-  if (identity?.role === "BRAND_PARTNER") return <Navigate to="/brand-portal/campaigns" replace />;
-  return <DashboardPage />;
+  if (identity?.role === "BRAND_PARTNER" && !PARTNER_PATHS.some((p) => pathname.startsWith(p))) {
+    return <Navigate to="/brand-portal/campaigns" replace />;
+  }
+  return <Outlet />;
 }
 
 /** Each page opens at the top; the browser would otherwise keep the previous page's scroll position */
@@ -644,7 +651,7 @@ export default function App() {
                       Header={HeaderBar}
                     >
                       <ScrollToTop />
-                      <Outlet />
+                      <RoleOutlet />
                     </ThemedLayoutV2>
                   </Authenticated>
                 }
@@ -803,7 +810,7 @@ export default function App() {
                   <Route index element={<SubscriptionList />} />
                   <Route path="show/:id" element={<SubscriptionShow />} />
                 </Route>
-                <Route path="/" element={<HomeRoute />} />
+                <Route path="/" element={<DashboardPage />} />
               </Route>
               <Route path="/login" element={<LoginPage />} />
               <Route path="/select-org" element={<SelectOrgPage />} />

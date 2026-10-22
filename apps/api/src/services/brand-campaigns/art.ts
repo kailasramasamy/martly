@@ -13,6 +13,7 @@ export async function generateCampaignArt(prisma: PrismaClient, campaign: BrandC
   if (!["DRAFT", "PENDING_PAYMENT", "IN_REVIEW"].includes(campaign.status)) throw new CampaignError("The banner can't change once the campaign is scheduled", 409);
   if (campaign.placement === "SPONSORED_PRODUCT") throw new CampaignError("A sponsored product shows its own product photo; there's no banner to paint");
   if (!campaign.placement) throw new CampaignError("A featured brand has no banner; it lifts the brand's products in search and aisles");
+  if (campaign.placement === "BRAND_TAB") throw new CampaignError("A tab slot shows the brand's logo; there's no banner to paint");
   const today = await prisma.bannerArtRun.count({
     where: { brandId: campaign.brandId, createdAt: { gte: new Date(Date.now() - 24 * 60 * 60 * 1000) } },
   });

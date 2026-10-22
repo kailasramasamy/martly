@@ -90,9 +90,16 @@ function checkInput(product: AdProduct, input: BrandCampaignInput) {
   if (product.kind === "BRAND_FEATURE" && !input.categoryId) throw new CampaignError("Pick the category to feature the brand in");
   if (product.kind === "BRAND_PROMOTION" && (!input.discountType || !input.discountValue)) throw new CampaignError("A brand promotion needs a discount");
   if (input.startsAt.getTime() < Date.now() - DAY_MS) throw new CampaignError("Pick a start date from today on");
-  // A sponsored product's photo is its creative, and a featured brand has none
-  const needsArt = product.placement && product.kind !== "BRAND_SPONSORED_PRODUCT";
+  // A sponsored product's photo and a tab slot's logo are their creative, and a featured brand has none
+  const needsArt = product.placement && !["BRAND_SPONSORED_PRODUCT", "BRAND_TAB_SLOT"].includes(product.kind);
   if (needsArt && !input.imageUrl && !input.brief) throw new CampaignError("Upload an image or describe what the AI should make");
+}
+
+/** A tab slot shows the brand's logo and opens its brand page, so the logo is the creative */
+async function tabSlotTarget(db: Db, input: BrandCampaignInput): Promise<BrandCampaignInput> {
+  const brand = await db.brand.findUnique({ where: { id: input.brandId }, select: { imageUrl: true } });
+  if (!brand?.imageUrl) throw new CampaignError("Add the brand's logo before booking its tab slot");
+  return { ...input, imageUrl: brand.imageUrl, brief: null, actionType: "BRAND", actionTarget: input.brandId };
 }
 
 /**
@@ -100,6 +107,7 @@ function checkInput(product: AdProduct, input: BrandCampaignInput) {
  * photo is the creative, so there's nothing to design or review beyond the product itself.
  */
 async function sponsoredTarget(db: Db, product: AdProduct, input: BrandCampaignInput): Promise<BrandCampaignInput> {
+  if (product.kind === "BRAND_TAB_SLOT") return tabSlotTarget(db, input);
   if (product.kind !== "BRAND_SPONSORED_PRODUCT") return input;
   const item = input.actionTarget
     ? await db.product.findFirst({

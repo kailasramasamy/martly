@@ -46,7 +46,7 @@ export default function TabsLayout() {
         options={{ title: t.orders, tabBarIcon: ({ focused }) => <TabIcon focused={focused} icon="receipt" /> }}
       />
       {/* Never shown: the slot opens the spotlight brand's store (or the brands directory) on the root stack */}
-      <Tabs.Screen name="brand-spot" options={{ tabBarItemStyle: spotlight ? { flex: 1.25 } : undefined, tabBarButton: () => <BrandTabSlot brand={spotlight} /> }} />
+      <Tabs.Screen name="brand-spot" options={{ tabBarItemStyle: spotlight ? { flex: 1.25 } : undefined, tabBarButton: () => <BrandTabSlot brand={spotlight} storeId={selectedStore?.id} /> }} />
     </Tabs>
   );
 }
