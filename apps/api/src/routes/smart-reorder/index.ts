@@ -25,7 +25,7 @@ export async function smartReorderRoutes(app: FastifyInstance) {
       });
       if (!store) return reply.notFound("Store not found");
 
-      const predictions = await predictReorders(app.prisma, user.sub, storeId);
+      const predictions = (await predictReorders(app.prisma, user.sub, storeId)).filter((p) => p.restockable);
       if (predictions.length === 0) {
         return {
           success: true,

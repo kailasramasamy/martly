@@ -750,6 +750,8 @@ model Subcategory {
   translations Json?    @map("translations")
   // Words shoppers use for this aisle ("shaving" → Razor & Blades); search matches products here by intent
   searchTerms  String[] @default([]) @map("search_terms")
+  // Used up and bought again (milk, detergent); off for durables and seasonal items, which reorder suggestions skip
+  restockable  Boolean  @default(true)
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")
 

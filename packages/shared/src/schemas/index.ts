@@ -181,6 +181,7 @@ export const createSubcategorySchema = z.object({
   imageUrl: z.string().url().nullish(),
   translations: translationsSchema,
   searchTerms: searchTermsSchema,
+  restockable: z.boolean().optional(),
 });
 export type CreateSubcategoryInput = z.infer<typeof createSubcategorySchema>;
 
@@ -192,6 +193,7 @@ export const updateSubcategorySchema = z.object({
   imageUrl: z.string().url().nullish(),
   translations: translationsSchema,
   searchTerms: searchTermsSchema,
+  restockable: z.boolean().optional(),
 });
 export type UpdateSubcategoryInput = z.infer<typeof updateSubcategorySchema>;
 

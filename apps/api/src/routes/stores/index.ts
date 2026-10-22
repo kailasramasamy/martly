@@ -28,6 +28,8 @@ async function sponsoredRows(prisma: PrismaClient, storeId: string, productId: s
   return decorateStoreProducts(prisma, rows);
 }
 
+const CO_PURCHASE_MIN = 3;
+
 export async function storeRoutes(app: FastifyInstance) {
   // List stores (scoped to user's org; guests see all active stores)
   app.get("/", { preHandler: [authenticateOptional] }, async (request) => {
@@ -506,7 +508,8 @@ export async function storeRoutes(app: FastifyInstance) {
       const store = await app.prisma.store.findUnique({ where: { id: storeId } });
       if (!store) return reply.notFound("Store not found");
 
-      // Raw SQL: find products co-purchased with the given products in DELIVERED orders (last 90 days)
+      // Products bought with the given ones in DELIVERED orders (last 90 days). Only real patterns count: a pair seen in
+      // CO_PURCHASE_MIN orders from as many different customers, so one shopper's habit or a one-off basket isn't "customers also bought"
       const coProductIds = await app.prisma.$queryRawUnsafe<{ product_id: string; co_count: number }[]>(
         `
         SELECT oi2.product_id, COUNT(DISTINCT oi1.order_id)::int AS co_count
@@ -519,41 +522,19 @@ export async function storeRoutes(app: FastifyInstance) {
           AND o.store_id = $1
           AND o.status = 'DELIVERED'
           AND o.created_at >= NOW() - INTERVAL '90 days'
-          ${excludeIds.length > 0 ? `AND sp.id != ALL($3)` : ""}
+          ${excludeIds.length > 0 ? `AND sp.id != ALL($4)` : ""}
         GROUP BY oi2.product_id
+        HAVING COUNT(DISTINCT oi1.order_id) >= $3 AND COUNT(DISTINCT o.user_id) >= $3
         ORDER BY co_count DESC
-        LIMIT $${excludeIds.length > 0 ? "4" : "3"}
+        LIMIT ${limit}
         `,
         storeId,
         productIds,
-        ...(excludeIds.length > 0 ? [excludeIds, limit + 5] : [limit + 5]),
+        CO_PURCHASE_MIN,
+        ...(excludeIds.length > 0 ? [excludeIds] : []),
       );
 
-      let resultProductIds = coProductIds.map((r) => r.product_id);
-
-      // Fallback: if too few co-purchase results, supplement with best-sellers
-      if (resultProductIds.length < 3) {
-        const allExclude = [...productIds, ...resultProductIds];
-        const bestSellers = await app.prisma.$queryRawUnsafe<{ product_id: string }[]>(
-          `
-          SELECT oi.product_id, COUNT(*)::int AS order_count
-          FROM order_items oi
-          JOIN orders o ON o.id = oi.order_id
-          JOIN store_products sp ON sp.store_id = $1 AND sp.product_id = oi.product_id AND sp.is_active = true AND sp.stock > 0
-          WHERE o.store_id = $1
-            AND o.status = 'DELIVERED'
-            AND oi.product_id != ALL($2)
-            ${excludeIds.length > 0 ? `AND sp.id != ALL($3)` : ""}
-          GROUP BY oi.product_id
-          ORDER BY order_count DESC
-          LIMIT $${excludeIds.length > 0 ? "4" : "3"}
-          `,
-          storeId,
-          allExclude,
-          ...(excludeIds.length > 0 ? [excludeIds, limit + 5 - resultProductIds.length] : [limit + 5 - resultProductIds.length]),
-        );
-        resultProductIds = [...resultProductIds, ...bestSellers.map((r) => r.product_id)];
-      }
+      const resultProductIds = coProductIds.map((r) => r.product_id);
 
       if (resultProductIds.length === 0) {
         return { success: true, data: [] } satisfies ApiResponse<never[]>;

@@ -10,6 +10,7 @@ interface PurchaseGroup {
   productId: string;
   variantId: string;
   storeProductId: string;
+  restockable: boolean;
   orderCount: number;
   totalQty: number;
   firstOrdered: Date;
@@ -20,6 +21,8 @@ export interface ReorderPrediction {
   storeProductId: string;
   productId: string;
   variantId: string;
+  /** False for durables and seasonal items (the subcategory's flag): reorder suggestions skip them */
+  restockable: boolean;
   orderCount: number;
   avgQuantity: number;
   avgIntervalDays: number | null;
@@ -29,7 +32,12 @@ export interface ReorderPrediction {
   suggestedQuantity: number;
 }
 
-function groupPurchases(items: { productId: string; variantId: string; storeProductId: string; quantity: number; order: { createdAt: Date } }[]) {
+type PurchasedItem = {
+  productId: string; variantId: string; storeProductId: string; quantity: number;
+  order: { createdAt: Date }; product: { subcategory: { restockable: boolean } | null };
+};
+
+function groupPurchases(items: PurchasedItem[]) {
   const groups = new Map<string, PurchaseGroup>();
   for (const item of items) {
     const key = `${item.productId}:${item.variantId}`;
@@ -43,6 +51,7 @@ function groupPurchases(items: { productId: string; variantId: string; storeProd
     } else {
       groups.set(key, {
         productId: item.productId, variantId: item.variantId, storeProductId: item.storeProductId,
+        restockable: item.product.subcategory?.restockable ?? true,
         orderCount: 1, totalQty: item.quantity, firstOrdered: at, lastOrdered: at,
       });
     }
@@ -61,7 +70,7 @@ function predict(g: PurchaseGroup, now: Date): ReorderPrediction {
   }
   const status: PredictionStatus = predictedNeed >= 1 ? "overdue" : predictedNeed >= 0.7 ? "due_soon" : "not_yet";
   return {
-    storeProductId: g.storeProductId, productId: g.productId, variantId: g.variantId,
+    storeProductId: g.storeProductId, productId: g.productId, variantId: g.variantId, restockable: g.restockable,
     orderCount: g.orderCount, avgQuantity, avgIntervalDays, daysSinceLast, predictedNeed, status,
     suggestedQuantity: avgQuantity,
   };
@@ -74,7 +83,10 @@ function predict(g: PurchaseGroup, now: Date): ReorderPrediction {
 export async function predictReorders(prisma: PrismaClient, userId: string, storeId: string): Promise<ReorderPrediction[]> {
   const orderItems = await prisma.orderItem.findMany({
     where: { order: { userId, storeId, status: { in: ["DELIVERED", "CONFIRMED"] } } },
-    select: { productId: true, variantId: true, storeProductId: true, quantity: true, order: { select: { createdAt: true } } },
+    select: {
+      productId: true, variantId: true, storeProductId: true, quantity: true,
+      order: { select: { createdAt: true } }, product: { select: { subcategory: { select: { restockable: true } } } },
+    },
     orderBy: { order: { createdAt: "asc" } },
   });
   const now = new Date();

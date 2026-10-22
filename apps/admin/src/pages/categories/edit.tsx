@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Edit, useForm } from "@refinedev/antd";
-import { Form, Input, Select, Card, Row, Col, Tabs, Tag, Spin } from "antd";
+import { Form, Input, Select, Switch, Card, Row, Col, Tabs, Tag, Spin } from "antd";
 import { AppstoreOutlined, PictureOutlined, TranslationOutlined } from "@ant-design/icons";
 import { ImageUpload } from "../../components/ImageUpload";
 import { sectionTitle } from "../../theme";
@@ -71,6 +71,18 @@ export const CategoryEdit = () => {
                         tooltip="Words shoppers type for this aisle (e.g. shaving, razor, dadhi). Search shows these products first for them"
                       >
                         <Select mode="tags" tokenSeparators={[","]} open={false} placeholder="Type a term and press Enter" />
+                      </Form.Item>
+                    </Col>
+                  )}
+                  {level === "subcategory" && (
+                    <Col xs={24}>
+                      <Form.Item
+                        label="Restocked regularly"
+                        name="restockable"
+                        valuePropName="checked"
+                        tooltip="On for things that get used up (milk, detergent). Off for durables and seasonal items (brooms, bottles, diyas), so reorder suggestions skip them"
+                      >
+                        <Switch />
                       </Form.Item>
                     </Col>
                   )}

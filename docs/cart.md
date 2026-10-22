@@ -11,10 +11,15 @@ The cart re-checks itself with the store and suggests what's worth adding, witho
    - **`lines`**: each cart line as the store sells it now (pricing, MRP, `availableStock`). A line missing
      from the reply was deactivated and can't be bought.
    - **`forgotten`**: the shopper's due or overdue usual items (`predictReorders`) that aren't in the cart, in
-     the size they buy, in stock. Empty for guests.
+     the size they buy, in stock. Empty for guests. Only habits count: bought at least twice, with those purchases
+     spread over 7+ days, and from a **restockable** subcategory. `Subcategory.restockable` is off for durables
+     and seasonal items (brooms, bottles, bulbs, diyas, gift packs; 24 at launch) and is set in admin under
+     Categories → edit subcategory. Smart Reorder and the search page's Buy Again rail skip these subcategories
+     too; the list-to-cart matcher doesn't, because there "broom" should still find the broom you bought before.
    - **`gapFillers`**: up to 8 in-stock items whose effective price is between the gap and
-     max(1.5 × gap, gap + ₹40). Ranking: the cart's categories first, then the store's 90-day best sellers,
-     then brand popularity. At most 2 per subcategory.
+     max(1.5 × gap, gap + ₹40). Never from the cart's own categories, so a salt cart isn't offered more salt.
+     Ranking: the cart's departments first (salt → atta, besan, spices), then the store's 90-day best
+     sellers, then brand popularity. At most 2 per subcategory.
 3. The app (`components/cart/use-cart-review.ts`):
    - **Reprices** stale lines through `cart-context.repriceItems` and notes "Price changed from ₹X" on the line.
      The order is still priced on the server; this only keeps the cart honest.
@@ -28,6 +33,13 @@ The cart re-checks itself with the store and suggests what's worth adding, witho
 Store header → **OrderGoal** progress bar (minimum order in orange, otherwise free delivery in teal; hidden once
 reached) → lines → **"Add one of these"** (gap fillers, only while there's a gap) → **one** more rail:
 "Did you forget?" if there are due items, otherwise "Customers Also Bought" → rewards → bill → checkout button.
+
+## Customers Also Bought
+
+`GET /stores/:id/frequently-bought-together` (also used for the product page's "Frequently bought together")
+returns only real patterns: products bought together in at least 3 delivered orders from at least 3 different
+customers in the last 90 days. With less data it returns nothing and the rail hides. It no longer fills in
+with best sellers, which made the label untrue.
 
 ## Bug fixed
 

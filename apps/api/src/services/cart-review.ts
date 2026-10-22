@@ -11,6 +11,9 @@ const GAP_CANDIDATES = 60;
 // So the gap rail isn't eight detergents
 const GAP_PER_SUBCATEGORY = 2;
 
+// A habit: bought more than once, with the purchases spread over at least a week (not a burst of test orders)
+const HABIT_MIN_SPAN_DAYS = 7;
+
 const sellable = { isActive: true, product: { isActive: true } } as const;
 
 // One size per product, in the order given
@@ -22,20 +25,23 @@ function firstPerProduct<T extends { productId: string }>(rows: T[]) {
 // The customer's usual items that are due or overdue and not in the cart, in the size they buy
 async function forgottenItems(prisma: PrismaClient, userId: string, storeId: string, cartProductIds: string[]) {
   const due = (await predictReorders(prisma, userId, storeId))
-    .filter((p) => p.status !== "not_yet" && !cartProductIds.includes(p.productId));
+    .filter((p) => p.restockable && p.status !== "not_yet" && !cartProductIds.includes(p.productId))
+    .filter((p) => p.orderCount >= 2 && (p.avgIntervalDays ?? 0) * (p.orderCount - 1) >= HABIT_MIN_SPAN_DAYS);
   const order = due.map((p) => p.storeProductId);
   const rows = await prisma.storeProduct.findMany({ where: { id: { in: order }, storeId, ...sellable }, include: storeProductInclude });
   const inStock = rows.filter((sp) => sp.stock - sp.reservedStock > 0).sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
   return decorateStoreProducts(prisma, firstPerProduct(inStock).slice(0, SUGGESTION_LIMIT));
 }
 
-// In-stock items priced just over the gap: from the categories the shopper is buying first, then the store's best sellers and popular brands
-async function gapFillers(prisma: PrismaClient, storeId: string, gap: number, excludeProductIds: string[], categoryIds: string[]) {
+// In-stock items priced just over the gap: from the departments the shopper is buying in first, but never the cart's own
+// categories (a salt cart gets dal or spices, not more salt), then the store's best sellers and popular brands
+async function gapFillers(prisma: PrismaClient, storeId: string, gap: number, excludeProductIds: string[], cartCategoryIds: string[]) {
   const ceiling = Math.max(gap * GAP_STRETCH, gap + GAP_MIN_SPREAD);
   const candidates = await prisma.$queryRaw<{ id: string }[]>`
     SELECT sp.id FROM store_products sp
     JOIN products p ON p.id = sp.product_id AND p.is_active AND p.image_url IS NOT NULL
     LEFT JOIN subcategories sc ON sc.id = p.subcategory_id
+    LEFT JOIN categories c ON c.id = sc.category_id
     LEFT JOIN brands b ON b.id = p.brand_id
     LEFT JOIN (
       SELECT oi.product_id, SUM(oi.quantity) AS units FROM order_items oi JOIN orders o ON o.id = oi.order_id
@@ -45,7 +51,8 @@ async function gapFillers(prisma: PrismaClient, storeId: string, gap: number, ex
     WHERE sp.store_id = ${storeId} AND sp.is_active AND sp.stock - sp.reserved_stock > 0
       AND sp.price >= ${gap} AND (sp.price <= ${ceiling} OR (sp.discount_type IS NOT NULL AND sp.price <= ${ceiling * 2}))
       AND sp.product_id <> ALL(${excludeProductIds}::text[])
-    ORDER BY COALESCE(sc.category_id = ANY(${categoryIds}::text[]), false) DESC, COALESCE(s.units, 0) DESC, COALESCE(b.popularity, 0) DESC
+      AND (sc.category_id IS NULL OR sc.category_id <> ALL(${cartCategoryIds}::text[]))
+    ORDER BY COALESCE(c.department_id IN (SELECT department_id FROM categories WHERE id = ANY(${cartCategoryIds}::text[])), false) DESC, COALESCE(s.units, 0) DESC, COALESCE(b.popularity, 0) DESC
     LIMIT ${GAP_CANDIDATES}`;
   const order = candidates.map((c) => c.id);
   const rows = await prisma.storeProduct.findMany({ where: { id: { in: order } }, include: storeProductInclude });

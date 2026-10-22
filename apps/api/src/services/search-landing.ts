@@ -120,7 +120,7 @@ async function buildShared(prisma: PrismaClient, storeId: string, organizationId
 }
 
 async function reorderRail(prisma: PrismaClient, userId: string, storeId: string) {
-  const predictions = await predictReorders(prisma, userId, storeId);
+  const predictions = (await predictReorders(prisma, userId, storeId)).filter((p) => p.restockable);
   const products = await withAllSizes(prisma, storeId, predictions.slice(0, RAIL_LIMIT));
   const dueCount = predictions.filter((p) => p.status !== "not_yet").length;
   return { dueCount, products };
