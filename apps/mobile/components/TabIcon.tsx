@@ -1,8 +1,10 @@
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
+import { useIsFocused } from "@react-navigation/native";
 import { View, Text, Animated, StyleSheet, type LayoutChangeEvent } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
 import { useTabBarHeight, useTabBarProgress } from "../lib/tab-bar-visibility";
+import { useToast } from "../lib/toast-context";
 
 type IconName = keyof typeof Ionicons.glyphMap;
 
@@ -35,13 +37,30 @@ export function TabSceneLayout({ children }: { children: ReactNode }) {
 /**
  * A sticky footer on a tab screen (checkout bar, floating cart, bulk actions): sits just above the tab bar and
  * slides down with it when the bar hides. Report its height via `onLayout` to pad the list above it.
+ * While its screen is in view, toasts rise above it instead of covering it.
  */
 export function TabBottomDock({ children, onLayout }: { children: ReactNode; onLayout?: (e: LayoutChangeEvent) => void }) {
   const { height } = useTabBarHeight();
   const { progress } = useTabBarProgress();
   const translateY = progress.interpolate({ inputRange: [0, 1], outputRange: [0, height] });
+  const focused = useIsFocused();
+  const { setDockHeight } = useToast();
+  const [dockHeight, setOwnHeight] = useState(0);
+
+  useEffect(() => {
+    if (!focused) return;
+    setDockHeight(dockHeight);
+    return () => setDockHeight(0);
+  }, [focused, dockHeight, setDockHeight]);
+
   return (
-    <Animated.View style={[styles.dock, { bottom: height, transform: [{ translateY }] }]} onLayout={onLayout}>
+    <Animated.View
+      style={[styles.dock, { bottom: height, transform: [{ translateY }] }]}
+      onLayout={(e) => {
+        setOwnHeight(e.nativeEvent.layout.height);
+        onLayout?.(e);
+      }}
+    >
       {children}
     </Animated.View>
   );

@@ -1,5 +1,5 @@
 import { createContext, useContext, useCallback, useRef, useState } from "react";
-import { Animated, View, Text, TouchableOpacity, StyleSheet, Platform } from "react-native";
+import { Animated, View, Text, TouchableOpacity, StyleSheet, Platform, useWindowDimensions } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -13,11 +13,16 @@ interface ToastAction {
 
 interface ToastContextType {
   show: (message: string, variant?: ToastVariant, action?: ToastAction) => void;
+  /** Height of a bar docked above the tab bar on the screen in view (e.g. checkout), so toasts sit above it */
+  setDockHeight: (height: number) => void;
 }
 
 const ACTION_VISIBLE_MS = 4500;
 
-const ToastContext = createContext<ToastContextType>({ show: () => {} });
+const ToastContext = createContext<ToastContextType>({ show: () => {}, setDockHeight: () => {} });
+
+const SIDE_MARGIN = 16;
+const MAX_CARD_WIDTH = 440;
 
 // Long enough to read: a base, more for longer text, and errors linger a little longer
 function visibleFor(message: string, variant: ToastVariant) {
@@ -34,6 +39,8 @@ const VARIANT_CONFIG: Record<ToastVariant, { bg: string; icon: keyof typeof Ioni
 
 export function ToastProvider({ children }: { children: React.ReactNode }) {
   const insets = useSafeAreaInsets();
+  const { width: windowWidth } = useWindowDimensions();
+  const [dockHeight, setDockHeight] = useState(0);
   const [, forceRender] = useState(0);
   const messageRef = useRef("");
   const variantRef = useRef<ToastVariant>("default");
@@ -95,13 +102,16 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <ToastContext.Provider value={{ show }}>
+    <ToastContext.Provider value={{ show, setDockHeight }}>
       {children}
       <Animated.View
         pointerEvents={action ? "box-none" : "none"}
-        style={[styles.wrapper, { bottom: insets.bottom + 72, opacity, transform: [{ translateY }] }]}
+        style={[styles.wrapper, { bottom: insets.bottom + 72 + dockHeight, opacity, transform: [{ translateY }] }]}
       >
-        <View style={[styles.card, { backgroundColor: config.bg }]} accessibilityLiveRegion="polite">
+        <View
+          style={[styles.card, { backgroundColor: config.bg, maxWidth: Math.min(MAX_CARD_WIDTH, windowWidth - SIDE_MARGIN * 2) }]}
+          accessibilityLiveRegion="polite"
+        >
           <Ionicons name={config.icon} size={18} color={config.iconColor} style={styles.icon} />
           <Text style={styles.text}>{messageRef.current}</Text>
           {action ? (
@@ -121,15 +131,14 @@ const styles = StyleSheet.create({
   // One standard for every toast: a centred card with side margins, never edge to edge, wrapping long text cleanly
   wrapper: {
     position: "absolute",
-    left: 16,
-    right: 16,
+    left: SIDE_MARGIN,
+    right: SIDE_MARGIN,
     alignItems: "center",
   },
   card: {
     flexDirection: "row",
     alignItems: "flex-start",
     gap: 10,
-    maxWidth: 440,
     paddingHorizontal: 14,
     paddingVertical: 11,
     borderRadius: 14,
