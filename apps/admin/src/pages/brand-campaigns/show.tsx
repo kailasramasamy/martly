@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { App, Alert, Button, Card, Descriptions, Image, Space, Spin, Typography } from "antd";
+import { App, Alert, Button, Card, Descriptions, Image, Skeleton, Space, Spin, Typography } from "antd";
 import { Show } from "@refinedev/antd";
 import { useNavigate, useParams } from "react-router";
 import dayjs from "dayjs";
@@ -7,6 +7,7 @@ import { axiosInstance } from "../../providers/data-provider";
 import { formatRupees } from "../promos/promo-utils";
 import { errorMessage, invoiceHref } from "../marketing/utils";
 import { CampaignActions } from "./campaign-actions";
+import { CampaignPlacementCard } from "./placements/CampaignPlacementCard";
 import { CampaignResults } from "./campaign-results";
 import { CampaignStatusTag } from "./list";
 import { CREATIVE_STATUSES, EDITABLE_STATUSES, type Campaign, type CampaignScope } from "./types";
@@ -73,6 +74,7 @@ function CreativeCard({ campaign, scope, onChange }: { campaign: Campaign; scope
   const canGenerate = scope.mode === "platform" && CREATIVE_STATUSES.includes(campaign.status) && !!campaign.brief;
   const poster = campaign.placement === "HOME_POSTER";
   const strip = campaign.placement === "CATEGORY_TOP";
+  const size = poster ? { width: 240, height: 360 } : strip ? { width: 360, height: 180 } : { width: 360, height: 240 };
 
   const generate = async () => {
     setGenerating(true);
@@ -89,7 +91,16 @@ function CreativeCard({ campaign, scope, onChange }: { campaign: Campaign; scope
   return (
     <Card title={poster ? "Poster" : "Banner"} size="small" style={{ marginBottom: 16 }}>
       <Space direction="vertical">
-        {campaign.imageUrl ? <Image src={campaign.imageUrl} width={poster ? 240 : 360} style={{ aspectRatio: poster ? "2 / 3" : strip ? "2 / 1" : "3 / 2", objectFit: "cover", borderRadius: 8 }} /> : <Typography.Text type="secondary">No {poster ? "poster" : "banner"} yet</Typography.Text>}
+        {campaign.imageUrl ? (
+          <Image
+            src={campaign.imageUrl}
+            width={size.width}
+            height={size.height}
+            style={{ objectFit: "cover", borderRadius: 8 }}
+            // Large creatives take a moment to arrive; a shimmer of the same size shows it's loading, not missing
+            placeholder={<Skeleton.Image active style={{ width: size.width, height: size.height, borderRadius: 8 }} />}
+          />
+        ) : <Typography.Text type="secondary">No {poster ? "poster" : "banner"} yet</Typography.Text>}
         {canGenerate && (
           <Button loading={generating} onClick={generate}>{campaign.imageUrl ? "Regenerate" : "Generate"}{poster ? " poster" : " banner"}</Button>
         )}
@@ -160,6 +171,7 @@ export function CampaignShow({ scope }: { scope: CampaignScope }) {
         <Space style={{ marginBottom: 16 }}><CampaignStatusTag status={campaign.status} /></Space>
         {campaign.reviewNote && <Alert type={campaign.status === "REJECTED" ? "error" : "info"} showIcon message={campaign.reviewNote} style={{ marginBottom: 16 }} />}
         {FixedCreative ? <FixedCreative campaign={campaign} /> : <CreativeCard campaign={campaign} scope={scope} onChange={setCampaign} />}
+        <CampaignPlacementCard campaign={campaign} />
         <DetailsCard campaign={campaign} platform={scope.mode === "platform"} />
         {campaign.results && (
           <Card title="Results" size="small"><CampaignResults results={campaign.results} /></Card>

@@ -13,11 +13,14 @@ const FULL_FRAME = "Compose for the full 3:2 frame, filled edge to edge. Some sc
  * model's widest) and trimmed to its centre band
  */
 export type BannerFormat = "landscape" | "portrait" | "wide";
+// Images are painted on the model's canvas and saved at the size phones show them (about 3x a phone's points), which
+// keeps a poster near 50 KB instead of 180 KB
+const BANNER_QUALITY = 75;
 const FORMATS = {
-  landscape: { size: "1536x1024", width: 1536, height: 1024, words: "wide 3:2 landscape", frame: FULL_FRAME },
-  portrait: { size: "1024x1536", width: 1024, height: 1536, words: "tall 2:3 portrait poster", frame: FULL_FRAME },
+  landscape: { size: "1536x1024", width: 1200, height: 800, words: "wide 3:2 landscape", frame: FULL_FRAME },
+  portrait: { size: "1024x1536", width: 600, height: 900, words: "tall 2:3 portrait poster", frame: FULL_FRAME },
   wide: {
-    size: "1536x1024", width: 1536, height: 768, words: "wide 2:1 banner strip",
+    size: "1536x1024", width: 1200, height: 600, words: "wide 2:1 banner strip",
     frame: [
       "This canvas is trimmed to a 2:1 strip: the top eighth and the bottom eighth are cut off.",
       "Leave a plain background margin of at least a sixth of the canvas height above the headline and below the lowest subject, with no letters, objects or props in those margins.",
@@ -83,8 +86,11 @@ export async function renderBanner(scene: string, copy?: BannerCopy, design?: Ba
 /** Any banner image, generated or uploaded, cropped to the WebP the app expects. */
 export function prepareBanner(image: Buffer, format: BannerFormat = "landscape") {
   const { width, height } = FORMATS[format];
-  return sharp(image).resize(width, height, { fit: "cover", position: "centre" }).webp({ quality: 80 }).toBuffer();
+  return sharp(image).resize(width, height, { fit: "cover", position: "centre" }).webp({ quality: BANNER_QUALITY }).toBuffer();
 }
+
+/** The pixel size a banner of this format is saved at */
+export const bannerSize = (format: BannerFormat) => ({ width: FORMATS[format].width, height: FORMATS[format].height });
 
 export async function uploadBanner(image: Buffer, slug: string, lang: string) {
   const { url } = await putObject(`banners/seasonal/${slug}-${lang}-${randomUUID()}.webp`, image, "image/webp");

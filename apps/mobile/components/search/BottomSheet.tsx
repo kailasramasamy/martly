@@ -32,9 +32,11 @@ interface BottomSheetProps {
   flush?: boolean;
   /** Scrolls the body and brings the focused input above the keyboard; use for forms, not for lists */
   scrollable?: boolean;
+  /** A centred title with more room around it, for showcase sheets rather than forms and lists */
+  centeredTitle?: boolean;
 }
 
-export function BottomSheet({ visible, title, onClose, children, footer, flush, scrollable }: BottomSheetProps) {
+export function BottomSheet({ visible, title, onClose, children, footer, flush, scrollable, centeredTitle }: BottomSheetProps) {
   const common = useStrings("common");
   const insets = useSafeAreaInsets();
   const { height: windowHeight } = useWindowDimensions();
@@ -64,9 +66,9 @@ export function BottomSheet({ visible, title, onClose, children, footer, flush, 
           <Pressable style={StyleSheet.absoluteFill} onPress={onClose} accessibilityLabel={common.close} />
         </Animated.View>
         <Animated.View style={[styles.sheet, { maxHeight, paddingBottom: Math.max(insets.bottom, spacing.md), transform: [{ translateY }] }]}>
-          <View style={styles.header}>
-            <Text style={styles.title}>{title}</Text>
-            <TouchableOpacity style={styles.closeBtn} onPress={onClose} accessibilityLabel={common.close}>
+          <View style={[styles.header, centeredTitle && styles.headerCentered]}>
+            <Text style={[styles.title, centeredTitle && styles.titleCentered]}>{title}</Text>
+            <TouchableOpacity style={[styles.closeBtn, centeredTitle && styles.closeCentered]} onPress={onClose} accessibilityLabel={common.close}>
               <Ionicons name="close" size={22} color={colors.text} />
             </TouchableOpacity>
           </View>
@@ -95,6 +97,10 @@ const styles = StyleSheet.create({
   header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingLeft: spacing.md, paddingTop: spacing.sm },
   title: { fontFamily: fonts.bold, fontSize: 17, color: colors.text },
   closeBtn: { width: 44, height: 44, alignItems: "center", justifyContent: "center" },
+  headerCentered: { justifyContent: "center", paddingHorizontal: 52, paddingTop: spacing.lg, paddingBottom: spacing.md },
+  titleCentered: { textAlign: "center" },
+  // Level with the centred title's middle line
+  closeCentered: { position: "absolute", right: spacing.xs, top: spacing.lg - 11 },
   body: { flexShrink: 1 },
   inset: { paddingHorizontal: spacing.md, paddingTop: spacing.xs },
   footer: { paddingHorizontal: spacing.md, paddingTop: spacing.sm },

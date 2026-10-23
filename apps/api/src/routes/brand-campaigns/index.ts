@@ -5,6 +5,7 @@ import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { markPaidOffline, reviewCampaign } from "../../services/brand-campaigns/booking.js";
+import { lastBrandBilling } from "../../services/marketing/billing.js";
 import { endCampaign, launchOrAnnounce } from "../../services/brand-campaigns/go-live.js";
 import { campaignContext, campaignRoutes, type CampaignScope } from "./campaign-routes.js";
 
@@ -14,6 +15,12 @@ const scope: CampaignScope = { guard: [authenticate, requireRole("SUPER_ADMIN")]
 export async function brandCampaignAdminRoutes(app: FastifyInstance) {
   await app.register(campaignRoutes(scope));
   const { load, detail, opts } = campaignContext(app, scope);
+
+  // The brand's details from its last invoice, so recording a bank transfer only needs the reference
+  app.get<{ Params: { id: string } }>("/:id/billing", opts, async (request, reply) => {
+    const campaign = await load(request, reply);
+    return campaign && { success: true, data: await lastBrandBilling(app.prisma, campaign.brandId) };
+  });
 
   app.post<{ Params: { id: string } }>("/:id/mark-paid", opts, async (request, reply) => {
     const campaign = await load(request, reply);

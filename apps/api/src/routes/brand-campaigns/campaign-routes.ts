@@ -6,12 +6,18 @@ import type { Prisma } from "../../../generated/prisma/client.js";
 import { verifyRazorpaySignature } from "../../services/payment.js";
 import { fulfilAdOrder } from "../../services/marketing/billing.js";
 import { invoiceLink } from "../../services/marketing/invoice.js";
-import { availability, cancelCampaign, checkoutCampaign, createCampaign, updateCampaign, windowFor } from "../../services/brand-campaigns/booking.js";
+import { cancelCampaign, checkoutCampaign, createCampaign, updateCampaign, windowFor } from "../../services/brand-campaigns/booking.js";
+import { availability } from "../../services/brand-campaigns/slots.js";
+import { slotCalendar } from "../../services/brand-campaigns/calendar.js";
 import { generateCampaignArt } from "../../services/brand-campaigns/art.js";
 import { launchOrAnnounce } from "../../services/brand-campaigns/go-live.js";
 import { campaignResults, claimsCsv } from "../../services/brand-campaigns/reports.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { getMarketingConfig } from "../../services/marketing/config.js";
+
+// The booking calendar shows about three months ahead
+const CALENDAR_DAYS = 90;
+const MAX_CALENDAR_DAYS = 120;
 
 const DETAIL_INCLUDE = {
   brand: { select: { id: true, name: true, imageUrl: true } },
@@ -95,6 +101,17 @@ function readRoutes(app: FastifyInstance, scope: CampaignScope, { load, detail, 
 }
 
 function bookingRoutes(app: FastifyInstance, scope: CampaignScope, { load, detail, opts }: ReturnType<typeof campaignContext>) {
+  // Day-by-day slot for booking: how full, who holds it, and when a booking of this length could start. Martly only,
+  // as it shows other brands' bookings
+  app.get<{ Querystring: { productId?: string; quantity?: string; categoryId?: string; excludeId?: string; days?: string } }>("/calendar", opts, async (request, reply) => {
+    const q = request.query;
+    const product = q.productId ? await app.prisma.adProduct.findUnique({ where: { id: q.productId } }) : null;
+    if (!product) return reply.badRequest("Choose a package");
+    const days = Math.min(Math.max(Number(q.days) || CALENDAR_DAYS, 1), MAX_CALENDAR_DAYS);
+    const quantity = Math.max(Number(q.quantity) || 1, 1);
+    return { success: true, data: await slotCalendar(app.prisma, { product, quantity, categoryId: q.categoryId, excludeId: q.excludeId, days }) };
+  });
+
   // Categories the brand sells in, most products first: where it can be featured
   app.get<{ Querystring: { brandId?: string } }>("/brand-categories", opts, async (request, reply) => {
     const { brandId } = request.query;

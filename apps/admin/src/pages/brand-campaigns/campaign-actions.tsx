@@ -1,3 +1,4 @@
+import { isAxiosError } from "axios";
 import { useEffect, useState } from "react";
 import { App, Button, Form, Input, Modal, Popconfirm, Space } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
@@ -37,11 +38,25 @@ function RejectModal({ open, onClose, onReject }: { open: boolean; onClose: () =
   );
 }
 
-function BankModal({ open, campaign, onClose, onRecord }: { open: boolean; campaign: Campaign; onClose: () => void; onRecord: (v: BillingValues & { reference: string }) => Promise<void> }) {
-  const profile: BillingProfile = { billingName: campaign.brand.name, gstin: null, billingAddress: null, billingState: null };
+// Filled from the brand's last invoice (else just its name), so recording a transfer usually needs only the reference
+function BankModal({ open, scope, campaign, onClose, onRecord }: { open: boolean; scope: CampaignScope; campaign: Campaign; onClose: () => void; onRecord: (v: BillingValues & { reference: string }) => Promise<void> }) {
+  const [profile, setProfile] = useState<BillingProfile | null>(null);
+  useEffect(() => {
+    if (!open) {
+      setProfile(null);
+      return;
+    }
+    const fallback = { billingName: campaign.brand.name, gstin: null, billingAddress: null, billingState: null };
+    axiosInstance.get(`${scope.apiBase}/${campaign.id}/billing`)
+      .then((res) => setProfile(res.data.data ?? fallback))
+      .catch((err) => {
+        if (!isAxiosError(err)) throw err;
+        setProfile(fallback);
+      });
+  }, [open, scope.apiBase, campaign.id, campaign.brand.name]);
   return (
     <BillingModal<BillingValues & { reference: string }>
-      open={open}
+      open={open && profile !== null}
       title="Record bank transfer"
       okText="Mark as paid"
       profile={profile}
@@ -128,7 +143,7 @@ export function CampaignActions({ campaign, scope, onChange }: ActionsProps) {
         </Button>
       )}
       <StatusButtons campaign={campaign} scope={scope} busy={busy} call={call} open={setDialog} />
-      <BankModal open={dialog === "bank"} campaign={campaign} onClose={close} onRecord={record} />
+      <BankModal open={dialog === "bank"} scope={scope} campaign={campaign} onClose={close} onRecord={record} />
       <PayModal open={dialog === "pay"} scope={scope} campaign={campaign} onClose={close} onPaid={onChange} />
       <RejectModal open={dialog === "reject"} onClose={close} onReject={reject} />
     </Space>

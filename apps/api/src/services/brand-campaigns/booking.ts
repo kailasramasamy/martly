@@ -1,24 +1,15 @@
 import type { Messaging } from "firebase-admin/messaging";
 import { BRAND_PRODUCT_KINDS } from "@martly/shared/constants";
 import type { BrandCampaignInput } from "@martly/shared/schemas";
-import type { AdProduct, BannerPlacement, BrandCampaign, Prisma, PrismaClient } from "../../../generated/prisma/client.js";
-import { getMarketingConfig } from "../marketing/config.js";
+import type { AdProduct, BrandCampaign, Prisma, PrismaClient } from "../../../generated/prisma/client.js";
+import { availability, HOLDING, slotKey, type Db, type Package } from "./slots.js";
+import { CampaignError } from "./booking-error.js";
+import { fitCreative } from "./creative.js";
 import { formatISTDate } from "../notify/copy.js";
 import { createAdOrder, fulfilAdOrder, refundAdOrder, type BillingSnapshot } from "../marketing/billing.js";
 
-type Db = PrismaClient | Prisma.TransactionClient;
 const DAY_MS = 24 * 60 * 60 * 1000;
-// Placements whose slots are counted per category rather than across the network
-const PER_CATEGORY: BannerPlacement[] = ["CATEGORY_TOP", "SPONSORED_PRODUCT"];
-/** Campaigns that hold a slot: unpaid ones too (until they lapse), so a slot can't be sold twice */
-const HOLDING = ["PENDING_PAYMENT", "IN_REVIEW", "SCHEDULED", "LIVE"] as const;
 
-export class CampaignError extends Error {
-  name = "CampaignError";
-  constructor(message: string, public statusCode = 400) {
-    super(message);
-  }
-}
 
 /** Weekly packages run for as many weeks as bought; view packages run their fixed window until the views are delivered */
 export function windowFor(product: AdProduct, quantity: number, startsAt: Date) {
@@ -26,42 +17,12 @@ export function windowFor(product: AdProduct, quantity: number, startsAt: Date) 
   return { startsAt, endsAt: new Date(startsAt.getTime() + days * DAY_MS) };
 }
 
-type Package = Pick<AdProduct, "kind" | "placement">;
 type Booking = { brandId: string; categoryId?: string | null; startsAt: Date; endsAt: Date; excludeId?: string };
-
-/** A package's slots: its banner placement, or for featured brands (no banner) the featured list, per category */
-const slotKey = (p: Package) => p.placement ?? p.kind;
 
 const overlapping = (slot: Omit<Booking, "brandId">): Prisma.BrandCampaignWhereInput => ({
   status: { in: [...HOLDING] }, startsAt: { lt: slot.endsAt }, endsAt: { gt: slot.startsAt },
   ...(slot.excludeId ? { id: { not: slot.excludeId } } : {}),
 });
-
-/**
- * How many brand campaigns already overlap this window in the package's slot (per category for takeovers, sponsored
- * products and featured brands). When it's full, the earliest start from which a window of the same length fits: that's
- * always the moment a held campaign ends, as sliding a window back to the last such moment never adds an overlap.
- */
-export async function availability(db: Db, slot: Omit<Booking, "brandId"> & { product: Package }) {
-  const config = await getMarketingConfig(db);
-  const { placement, kind } = slot.product;
-  const cap = placement ? config.slotLimits[placement]?.BRAND ?? null : config.featuredBrandSlots;
-  const held = await db.brandCampaign.findMany({
-    where: {
-      status: { in: [...HOLDING] }, endsAt: { gt: slot.startsAt },
-      ...(slot.excludeId ? { id: { not: slot.excludeId } } : {}),
-      ...(placement ? { placement } : { product: { kind } }),
-      ...(!placement || PER_CATEGORY.includes(placement) ? { categoryId: slot.categoryId } : {}),
-    },
-    select: { startsAt: true, endsAt: true },
-  });
-  const length = slot.endsAt.getTime() - slot.startsAt.getTime();
-  const overlaps = (start: Date) => held.filter((h) => h.startsAt.getTime() < start.getTime() + length && h.endsAt > start).length;
-  const booked = overlaps(slot.startsAt);
-  const available = cap === null || booked < cap;
-  const nextStartsAt = available ? null : held.map((h) => h.endsAt).sort((a, b) => a.getTime() - b.getTime()).find((end) => overlaps(end) < cap!) ?? null;
-  return { cap, booked, available, nextStartsAt };
-}
 
 /** Claims the package's slot for the booking inside its transaction; a brand is featured once at a time in a category */
 async function holdSlot(tx: Prisma.TransactionClient, product: Package, booking: Booking) {
@@ -94,6 +55,12 @@ function checkInput(product: AdProduct, input: BrandCampaignInput) {
   const needsArt = product.placement && !["BRAND_SPONSORED_PRODUCT", "BRAND_TAB_SLOT"].includes(product.kind);
   if (needsArt && !input.imageUrl && !input.brief) throw new CampaignError("Upload an image or describe what the AI should make");
 }
+
+const creativeSlug = (brandId: string) => `brand-${brandId.slice(0, 8)}`;
+
+// Only a new creative is fitted; one already saved (or painted at size by us) is kept
+const changedCreative = (campaign: BrandCampaign, placement: BrandCampaign["placement"], imageUrl: string | null | undefined) =>
+  imageUrl && imageUrl !== campaign.imageUrl ? fitCreative(placement, imageUrl, creativeSlug(campaign.brandId)) : imageUrl ?? null;
 
 /** A tab slot shows the brand's logo and opens its brand page, so the logo is the creative */
 async function tabSlotTarget(db: Db, input: BrandCampaignInput): Promise<BrandCampaignInput> {
@@ -133,11 +100,12 @@ export async function createCampaign(prisma: PrismaClient, booked: BrandCampaign
   checkInput(product, input);
   await checkFeatureCategory(prisma, product, input);
   const window = windowFor(product, input.quantity, input.startsAt);
+  const imageUrl = await fitCreative(product.placement, input.imageUrl, creativeSlug(input.brandId));
   return prisma.$transaction(async (tx) => {
     await holdSlot(tx, product, { brandId: input.brandId, categoryId: input.categoryId, ...window });
     return tx.brandCampaign.create({
       data: {
-        ...input, ...window, placement: product.placement, status: "PENDING_PAYMENT", createdById,
+        ...input, ...window, imageUrl, placement: product.placement, status: "PENDING_PAYMENT", createdById,
         actionTarget: input.actionTarget ?? (input.actionType === "BRAND" ? input.brandId : null),
         discountType: product.kind === "BRAND_PROMOTION" ? input.discountType : null,
         discountValue: product.kind === "BRAND_PROMOTION" ? input.discountValue : null,
@@ -157,7 +125,7 @@ async function reschedule(prisma: PrismaClient, campaign: BrandCampaign, input: 
   // A sponsored product keeps its product: changing it would move the campaign to another category's slot
   const target = campaign.placement === "SPONSORED_PRODUCT" ? {} : { actionType: input.actionType, actionTarget: input.actionTarget };
   const creative = campaign.status === "IN_REVIEW"
-    ? { title: input.title, subtitle: input.subtitle, imageUrl: input.imageUrl, brief: input.brief, ...target }
+    ? { title: input.title, subtitle: input.subtitle, imageUrl: await changedCreative(campaign, campaign.placement, input.imageUrl), brief: input.brief, ...target }
     : {};
   return prisma.$transaction(async (tx) => {
     await holdSlot(tx, product, { brandId: campaign.brandId, categoryId: campaign.categoryId, ...window, excludeId: campaign.id });
@@ -177,11 +145,12 @@ export async function updateCampaign(prisma: PrismaClient, campaign: BrandCampai
   checkInput(product, input);
   await checkFeatureCategory(prisma, product, input);
   const window = windowFor(product, input.quantity, input.startsAt);
+  const imageUrl = await changedCreative(campaign, product.placement, input.imageUrl);
   return prisma.$transaction(async (tx) => {
     await holdSlot(tx, product, { brandId: campaign.brandId, categoryId: input.categoryId, ...window, excludeId: campaign.id });
     return tx.brandCampaign.update({
       where: { id: campaign.id },
-      data: { ...input, ...window, brandId: campaign.brandId, placement: product.placement, discountType: input.discountType ?? null, discountValue: input.discountValue ?? null },
+      data: { ...input, ...window, imageUrl, brandId: campaign.brandId, placement: product.placement, discountType: input.discountType ?? null, discountValue: input.discountValue ?? null },
     });
   });
 }

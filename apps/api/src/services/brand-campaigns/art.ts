@@ -1,12 +1,10 @@
 import type { FastifyBaseLogger } from "fastify";
-import type { BannerPlacement, BrandCampaign, PrismaClient } from "../../../generated/prisma/client.js";
-import type { BannerFormat } from "../seasonal/banner-art.js";
+import type { BrandCampaign, PrismaClient } from "../../../generated/prisma/client.js";
 import { buildDesignedBannerSet } from "../seasonal/banner-set.js";
-import { CampaignError } from "./booking.js";
+import { CampaignError } from "./booking-error.js";
+import { creativeFormat } from "./creative.js";
 
 const DAILY_LIMIT = 6;
-// Posters are tall; a category takeover is the wide strip atop the category page
-const ART_FORMAT: Partial<Record<BannerPlacement, BannerFormat>> = { HOME_POSTER: "portrait", CATEGORY_TOP: "wide" };
 
 /** Paints the campaign's banner from its brief and copy, in a layout the brand hasn't used lately, shaped for its placement */
 export async function generateCampaignArt(prisma: PrismaClient, campaign: BrandCampaign, log: FastifyBaseLogger) {
@@ -22,6 +20,6 @@ export async function generateCampaignArt(prisma: PrismaClient, campaign: BrandC
   const slug = `brand-${campaign.id.slice(0, 8)}`;
   const art = await buildDesignedBannerSet(prisma, { brandId: campaign.brandId, purpose: "BRAND" }, scene,
     { en: { title: campaign.title, subtitle: campaign.subtitle ?? "" } }, slug, (m) => log.warn(`${slug}: ${m}`),
-    ART_FORMAT[campaign.placement] ?? "landscape");
+    creativeFormat(campaign.placement) ?? "landscape");
   return prisma.brandCampaign.update({ where: { id: campaign.id }, data: { imageUrl: art.imageUrl } });
 }

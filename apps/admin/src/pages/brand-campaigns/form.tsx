@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { Alert, App, Card, Col, ConfigProvider, DatePicker, Form, Input, InputNumber, Row, Select, Spin, Tag, Typography } from "antd";
+import { Alert, App, Card, Col, ConfigProvider, Form, Input, InputNumber, Row, Select, Spin, Tag, Typography } from "antd";
 import { Create, Edit } from "@refinedev/antd";
 import { useList } from "@refinedev/core";
-import { useNavigate, useParams } from "react-router";
+import { useNavigate, useParams, useSearchParams } from "react-router";
 import type { FormInstance } from "antd";
 import dayjs, { type Dayjs } from "dayjs";
 import { axiosInstance } from "../../providers/data-provider";
-import { formatRupees } from "../promos/promo-utils";
 import { errorMessage } from "../marketing/utils";
 import type { AdProduct } from "../marketing/types";
 import { BookingSummary } from "./booking-summary";
@@ -15,6 +14,8 @@ import { CreativeSection, type CreativeMode } from "./creative-section";
 import { TargetingCard, inferTargetMode, type TargetMode } from "./targeting-card";
 import { ProductPicker, type SponsorableProduct } from "./product-picker";
 import { FeatureCategorySelect } from "./feature-category-select";
+import { PackagePicker } from "./placements/PackagePicker";
+import { StartDatePicker } from "./start-date-picker";
 import { EDITABLE_STATUSES, PAID_STATUSES, type Campaign, type CampaignScope } from "./types";
 import { ReadableSection } from "../../components/ReadableSection";
 
@@ -40,9 +41,14 @@ interface FormValues {
 const DEFAULT_START_DAYS = 3;
 const discountOptions = [{ value: "PERCENTAGE", label: "Percentage off" }, { value: "FLAT", label: "Flat amount off" }];
 
+/** A calendar day passed as ?startDate=YYYY-MM-DD seeds the start; past or invalid dates fall back to the default */
+function defaultStart(startDate: string | null): Dayjs {
+  const picked = startDate && /^\d{4}-\d{2}-\d{2}$/.test(startDate) ? dayjs(startDate) : null;
+  if (!picked?.isValid() || picked.isBefore(dayjs(), "day")) return dayjs().add(DEFAULT_START_DAYS, "day");
+  return picked.isSame(dayjs(), "day") ? dayjs() : picked.startOf("day");
+}
+
 const unitLabel = (p?: AdProduct) => (p?.kind === "BRAND_CPM" ? "Thousands of views" : "Weeks");
-const packageLabel = (p: AdProduct) =>
-  `${p.name} · ${formatRupees(p.price)} ${p.kind === "BRAND_CPM" ? "per 1,000 views" : p.durationDays === 7 ? "per week" : `per ${p.durationDays} days`}`;
 
 function useFormOptions(scope: CampaignScope) {
   const [packages, setPackages] = useState<AdProduct[]>([]);
@@ -168,7 +174,7 @@ function BookingFields({ apiBase, brandId, campaign, locked, packages, product, 
         <BrandSelect disabled={!!campaign} selected={campaign?.brand} />
       </Form.Item>
       <Form.Item name="productId" label="Package" rules={[{ required: true }]}>
-        <Select disabled={locked} options={packages.map((p) => ({ value: p.id, label: packageLabel(p) }))} />
+        <PackagePicker packages={packages} disabled={locked} />
       </Form.Item>
       <Row gutter={16}>
         <Col span={12}>
@@ -178,7 +184,7 @@ function BookingFields({ apiBase, brandId, campaign, locked, packages, product, 
         </Col>
         <Col span={12}>
           <Form.Item name="startsAt" label="Start date" rules={[{ required: true }]}>
-            <DatePicker style={{ width: "100%" }} disabledDate={(d) => d.isBefore(dayjs(), "day")} />
+            <StartDatePicker apiBase={apiBase} product={product} excludeId={campaign?.id} />
           </Form.Item>
         </Col>
       </Row>
@@ -246,6 +252,7 @@ function useSave(scope: CampaignScope, id: string | undefined, mode: CreativeMod
 
 export function CampaignForm({ scope }: { scope: CampaignScope }) {
   const { id } = useParams();
+  const [searchParams] = useSearchParams();
   const [form] = Form.useForm<FormValues>();
   const [mode, setMode] = useState<CreativeMode>("upload");
   const { packages, categories, stores } = useFormOptions(scope);
@@ -274,7 +281,7 @@ export function CampaignForm({ scope }: { scope: CampaignScope }) {
           <Alert type="info" showIcon style={{ marginBottom: 16 }}
             message={approved ? "Paid and approved: only the start date and where it runs can change" : "Paid: the start date, where it runs and the creative can change"} />
         )}
-        <Form form={form} layout="vertical" onFinish={save} onValuesChange={(changed) => { if ("brandId" in changed) form.setFieldsValue({ actionTarget: undefined, categoryId: undefined }); }} initialValues={campaign ? toFormValues(campaign) : { quantity: 1, targetMode: "ALL", startsAt: dayjs().add(DEFAULT_START_DAYS, "day") }}>
+        <Form form={form} layout="vertical" onFinish={save} onValuesChange={(changed) => { if ("brandId" in changed) form.setFieldsValue({ actionTarget: undefined, categoryId: undefined }); }} initialValues={campaign ? toFormValues(campaign) : { quantity: 1, targetMode: "ALL", startsAt: defaultStart(searchParams.get("startDate")) }}>
           <Row gutter={24}>
             <Col xs={24} lg={12}>
               <Card title="Booking" size="small" style={{ marginBottom: 16 }}>

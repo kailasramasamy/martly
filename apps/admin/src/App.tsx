@@ -160,6 +160,7 @@ import { MarketingRevenue } from "./pages/marketing/revenue";
 import { CampaignList } from "./pages/brand-campaigns/list";
 import { CampaignForm } from "./pages/brand-campaigns/form";
 import { CampaignShow } from "./pages/brand-campaigns/show";
+import { CampaignCalendar } from "./pages/brand-campaigns/calendar";
 import { BrandPartners } from "./pages/brand-campaigns/partners";
 import { BrandInvoices } from "./pages/brand-portal/invoices";
 import { BRAND_SCOPE, PLATFORM_SCOPE } from "./pages/brand-campaigns/types";
@@ -731,6 +732,7 @@ export default function App() {
                 <Route path="/marketing-orders" element={<MarketingRevenue />} />
                 <Route path="/brand-campaigns">
                   <Route index element={<CampaignList scope={PLATFORM_SCOPE} />} />
+                  <Route path="calendar" element={<CampaignCalendar />} />
                   <Route path="create" element={<CampaignForm scope={PLATFORM_SCOPE} />} />
                   <Route path="edit/:id" element={<CampaignForm scope={PLATFORM_SCOPE} />} />
                   <Route path="show/:id" element={<CampaignShow scope={PLATFORM_SCOPE} />} />

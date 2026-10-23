@@ -1,6 +1,8 @@
-import { Card, Input, InputNumber, Switch, Table, Tag } from "antd";
+import { useState } from "react";
+import { Button, Card, Input, InputNumber, Switch, Table, Tag } from "antd";
 import { BannerPlacementLabels, type BannerPlacement } from "@martly/shared/constants";
 import type { AdProduct } from "./types";
+import { PlacementPreviewModal, type PreviewTarget } from "../brand-campaigns/placements/PlacementPreviewModal";
 
 type Patch = (id: string, change: Partial<AdProduct>) => void;
 
@@ -79,6 +81,7 @@ export function ImagePacksCard({ products, patch }: TableProps) {
 }
 
 export function BrandPackagesCard({ products, patch }: TableProps) {
+  const [preview, setPreview] = useState<PreviewTarget | null>(null);
   const columns = [
     ...textColumns(patch),
     { title: "Price", dataIndex: "price", width: 130, render: (v: number, r: AdProduct) => rupeeInput(v, (price) => patch(r.id, { price })) },
@@ -96,11 +99,19 @@ export function BrandPackagesCard({ products, patch }: TableProps) {
       render: (v: number | null, r: AdProduct) =>
         r.kind === "BRAND_CPM" ? countInput(v ?? 1000, (n) => patch(r.id, { viewsPerUnit: n }), 1) : "—",
     },
+    {
+      title: "Where it shows",
+      width: 130,
+      render: (_: unknown, r: AdProduct) => (
+        <Button type="link" size="small" style={{ padding: 0 }} onClick={() => setPreview({ name: r.name, kind: r.kind, placement: r.placement })}>Where it shows</Button>
+      ),
+    },
     onSaleColumn(patch),
   ];
   return (
     <Card title="Brand packages" size="small" style={{ marginBottom: 16 }}>
-      <Table size="small" rowKey="id" pagination={false} dataSource={products} columns={columns} scroll={{ x: 1000 }} />
+      <Table size="small" rowKey="id" pagination={false} dataSource={products} columns={columns} scroll={{ x: 1130 }} />
+      <PlacementPreviewModal target={preview} onClose={() => setPreview(null)} />
     </Card>
   );
 }

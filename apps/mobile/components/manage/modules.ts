@@ -94,11 +94,25 @@ const MODULE_GROUPS: ModuleGroup[] = [
       { resource: "organizations", label: "Organizations", icon: "business-outline", href: "/manage/organizations" },
     ],
   },
+  {
+    // Martly's own ad business; the PLATFORM requirement keeps it to super admin
+    title: "Platform",
+    modules: [
+      { resource: "brand-campaigns", label: "Brand campaigns", icon: "megaphone-outline", href: "/manage/brand-campaigns" },
+      { resource: "brand-partners", label: "Brand partners", icon: "people-circle-outline", href: "/manage/brand-partners" },
+      { resource: "marketing-pricing", label: "Ad pricing", icon: "pricetag-outline", href: "/manage/ad-pricing" },
+      { resource: "marketing-orders", label: "Marketing revenue", icon: "trending-up-outline", href: "/manage/marketing-revenue" },
+    ],
+  },
 ];
+
+// An organisation's own marketing; Martly runs pricing and brand campaigns from the web admin, as admin hides these too
+const ORG_MARKETING: Resource[] = ["marketing-plan", "brand-ads"];
 
 /** Module groups visible to a user; empty groups are dropped */
 export function modulesFor(user: { role: string; permissions?: readonly string[] } | null): ModuleGroup[] {
+  const shown = (m: ManageModule) => can(user, m.resource) && !(user?.role === "SUPER_ADMIN" && ORG_MARKETING.includes(m.resource));
   return MODULE_GROUPS
-    .map((g) => ({ ...g, modules: g.modules.filter((m) => can(user, m.resource)) }))
+    .map((g) => ({ ...g, modules: g.modules.filter(shown) }))
     .filter((g) => g.modules.length > 0);
 }

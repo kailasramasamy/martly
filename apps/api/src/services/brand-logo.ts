@@ -1,7 +1,8 @@
 import sharp from "sharp";
 import { PhotoroomError, photoroomCutout } from "./catalog-agent/photoroom.js";
 
-const MAX_SIZE = 800;
+// Logos show at most a few dozen points wide; 512px stays sharp at 3x
+const MAX_SIZE = 512;
 const PADDING = 0.04;
 // Pixels this washed-out, dark or light are outlines and backgrounds, not the brand's colour
 const MIN_SATURATION = 0.25;
@@ -108,7 +109,7 @@ export async function cleanLogo(upload: Buffer, removeBg: boolean): Promise<Clea
   const image = await sharp(trimmed.data)
     .extend({ top: pad, bottom: pad, left: pad, right: pad, background: { r: 0, g: 0, b: 0, alpha: 0 } })
     .resize(MAX_SIZE, MAX_SIZE, { fit: "inside", withoutEnlargement: true })
-    .png()
+    .webp({ quality: 85, alphaQuality: 90 })
     .toBuffer();
   return { image, background, ...(await logoColours(image)) };
 }

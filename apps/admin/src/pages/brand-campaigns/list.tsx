@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { List } from "@refinedev/antd";
 import { App, Avatar, Button, Select, Space, Table, Tag } from "antd";
-import { PlusOutlined } from "@ant-design/icons";
+import { CalendarOutlined, PlusOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router";
 import dayjs from "dayjs";
 import { BrandCampaignStatusLabels, type BrandCampaignStatus } from "@martly/shared/constants";
@@ -49,7 +49,12 @@ export function CampaignList({ scope }: { scope: CampaignScope }) {
   return (
     <List
       title={scope.mode === "platform" ? "Brand campaigns" : "Campaigns"}
-      headerButtons={scope.mode === "platform" ? <Button type="primary" icon={<PlusOutlined />} onClick={() => navigate(`${scope.path}/create`)}>New campaign</Button> : undefined}
+      headerButtons={scope.mode === "platform" ? (
+        <Space>
+          <Button icon={<CalendarOutlined />} onClick={() => navigate(`${scope.path}/calendar`)}>Calendar</Button>
+          <Button type="primary" icon={<PlusOutlined />} onClick={() => navigate(`${scope.path}/create`)}>New campaign</Button>
+        </Space>
+      ) : undefined}
     >
       <Space wrap style={{ marginBottom: 16 }}>
         <Select allowClear placeholder="Status" options={statusOptions} value={status} onChange={setStatus} style={{ width: 180 }} />

@@ -6,9 +6,9 @@ const BUCKET = process.env.S3_BUCKET ?? "martly-media";
 // Empty prefix means objects live at the bucket root; strip stray slashes so
 // the key never starts with "/" (which S3 treats as an unnamed folder).
 const KEY_PREFIX = (process.env.S3_KEY_PREFIX ?? "").replace(/^\/+|\/+$/g, "");
-const BASE_URL =
-  process.env.MEDIA_PUBLIC_BASE_URL ??
-  `https://${BUCKET}.s3.${REGION}.amazonaws.com${KEY_PREFIX ? `/${KEY_PREFIX}` : ""}`;
+const S3_URL = `https://${BUCKET}.s3.${REGION}.amazonaws.com${KEY_PREFIX ? `/${KEY_PREFIX}` : ""}`;
+// The CDN in front of the bucket when configured; files saved before it keep their direct S3 address
+const BASE_URL = process.env.MEDIA_PUBLIC_BASE_URL ?? S3_URL;
 
 const s3 = new S3Client({
   region: REGION,
@@ -33,7 +33,7 @@ export async function putObject(name: string, body: Buffer, contentType: string)
 
 /** True for URLs of objects this API uploaded, so server-side fetches never follow a user-supplied URL elsewhere */
 export function isMediaUrl(url: string) {
-  return url.startsWith(`${BASE_URL}/`);
+  return url.startsWith(`${BASE_URL}/`) || url.startsWith(`${S3_URL}/`);
 }
 
 /** True for raster photos worth re-encoding; SVG, GIF and non-images pass through as uploaded */

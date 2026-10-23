@@ -80,7 +80,7 @@ Brands pay Martly to be featured, so it's a brand campaign package rather than a
 - **No creative.** `BrandCampaign.placement` is null. The form asks only for a campaign name, approval doesn't need an image, art generation is refused, and going live makes no banner, promo or push. The "scheduled" staff alert says the brand will show as Featured.
 - **Ranking:** `storeBrandBoost` reads `LIVE` `BRAND_FEATURE` campaigns aimed at the store (`aimedAtStore`, shared with banners) into `featured: { brandId, subcategoryIds }[]` (the category's subcategories). Only those (brand, subcategory) products get `FEATURED`: search matches the pairs in SQL (`featuredPairs`), and the listing split in `boostSplit` does the same. A store's own brand still wins.
 - **Where shoppers see it:** search results, department, category and subcategory pages (default order), and speak, list and photo orders (first option for an unbranded line, never auto-added), with the Featured badge on those cards. There's no Home card, banner, suggestion row or push.
-- **Slots:** `MarketingConfig.featuredBrandSlots` (default 2; Marketing → Pricing → "Featured brands per category at once") caps how many run at once **in one category**. Categories don't limit each other, because brands only dilute each other within an aisle. The same brand can't hold two overlapping features in one category (it would pay twice for nothing). Different categories or regions are fine. Both checks run under the slot's advisory lock. When a slot is full, `availability` also returns `nextStartsAt`: the earliest start from which the whole campaign length fits (always the moment a held campaign ends). The booking form shows "Fully booked · next opening Thu, 29 Oct" with a **Start then** button, and a refused save names the date too. This applies to every package, banners included.
+- **Slots:** `MarketingConfig.featuredBrandSlots` (default 2; Marketing → Pricing → "Featured brands per category at once") caps how many run at once **in one category**. Categories don't limit each other, because brands only dilute each other within an aisle. The same brand can't hold two overlapping features in one category (it would pay twice for nothing). Different categories or regions are fine. Both checks run under the slot's advisory lock. A slot counts as full by the **peak**: the most campaigns running at one moment in the window (`peakRunning`). One that ends as another starts doesn't double-count, so an existing valid booking never shows as full when edited. When a slot is full, `availability` also returns `nextStartsAt`: the earliest start from which the whole campaign length fits (always the moment a held campaign ends). The booking form shows "Fully booked · next opening Thu, 29 Oct" with a **Start then** button, and a refused save names the date too. This applies to every package, banners included.
 - **Owners:** `featuredBrands` in `GET /marketing/brand-ads` lists brands with a live feature reaching one of the org's stores that stocks them. The feature also appears in the read-only campaign list.
 
 Migration `20261022100000_paid_featured_brands`: adds the enum value, makes `brand_campaigns.placement` nullable, adds `featured_brand_slots` (default 2), and drops `org_brand_features` (prod had no rows).
@@ -154,6 +154,39 @@ The last slot of the shopper app's bottom bar shows one brand's logo and opens i
 **Tested (curl):** before booking, Harur's spotlight was Tata Salt (rotation). Britannia booked, paid offline and approved went Live with its logo and no push, and the spotlight became Britannia with `sponsored`. A brand without a logo was refused. A second booking was refused ("the next opening starts Thu, 29 Oct"). Generate-art was refused. Tab views and taps showed in the campaign's results. Local demo: Britannia tab slot (DEMO-TAB-1).
 
 **Needs manual check:** the phone's bottom bar shows the Britannia logo, and tapping opens the Britannia brand page. In admin, the booking form with the Brand tab slot package shows only a campaign name, and the campaign page shows the logo card.
+
+## Booking calendar (built 2026-10-23)
+
+The start-date picker in admin and on the phone shows the package's slot day by day:
+- **Green:** a booking of the chosen length can start that day.
+- **Amber:** it opens part-way through the day, after an earlier booking ends. Picking it starts the booking then.
+- **Red:** full for this length, so it can't be picked.
+
+Each day also shows "booked of limit" and who holds it (brand, status, times): a tooltip in admin, and a list under the calendar on the phone. Takeovers, sponsored products and featured brands wait for a category first.
+
+- **API:** `GET /brand-campaigns/calendar?productId&quantity&categoryId&excludeId&days` (`services/brand-campaigns/calendar.ts`). It sits with the booking routes, so it's super admin only, because it shows other brands' bookings. For each IST day it returns `booked` (peak), `startsAt` (the earliest moment that day a booking of this length fits, or null) and `campaigns`.
+- **Shared rules:** the slot rules live in `services/brand-campaigns/slots.ts` (`heldInSlot`, `peakRunning`, `firstFit`, `availability`) and are used by booking, the availability line and the calendar, so they can't disagree.
+- **Tested (curl, Featured brand in Spices):** 23–28 Oct full (MDH, Sakthi). 29 Oct–4 Nov full (Sakthi until 04:25, then Everest and Aachi). 5 Nov can start at 00:00, at 1 of 2 with Aachi until 04:25. The Biscuits takeover can start from 29 Oct.
+
+## Platform screens in the mobile app (built 2026-10-23)
+
+Super admins can run the ad business from Manage → More → **Platform**. Access uses the shared `PLATFORM` permissions, the same as admin.
+
+- **Brand campaigns** (`app/manage/brand-campaigns/`, `components/manage/platform/campaigns/`):
+  - The list has status filters.
+  - The detail page shows the creative in its package's shape (banner 3:2, poster 2:3, takeover 2:1, product, logo or featured category), plus details, the order and invoice, and results.
+  - Actions: mark paid offline, approve or reject, end early, cancel, and generate art.
+  - Generating art can outlast iOS's roughly 60-second request limit. If the request drops, the screen checks the campaign every 5 seconds, for up to 3 minutes, until the new image appears.
+- **Book and edit** (`components/manage/platform/booking/`): the same body and rules as the admin form, including the featured category picker, live availability with **Start then**, "Where it runs", the paid-campaign locks, and name-only creative for featured brands and tab slots. Dates are picked by day: today starts now, and another day starts at local midnight.
+- **Recording a bank transfer** (admin and phone) pre-fills the GST invoice details (legal name, GSTIN, address and state) from the brand's last order, via `GET /brand-campaigns/:id/billing` (`lastBrandBilling`, shared with the brand portal's Pay form). Usually only the bank reference needs typing. The state decides CGST + SGST versus IGST.
+- **Campaign calendar** (`app/manage/brand-campaigns/calendar.tsx`, `components/manage/platform/calendar/`): opened from the calendar icon on Brand campaigns.
+  - **Month view:** coloured bars per day, with unpaid and in-review campaigns drawn faint. Tapping a day lists its campaigns. "Book from {day}" opens the booking form on that date (`/manage/brand-campaigns/new?startDate=`).
+  - **Timeline view:** one row per package, campaign bars stacked in lanes across the month, and a line for today. It shows slot use and gaps at a glance.
+  - **Filters:** package type, and "Show ended & cancelled" (off by default).
+  - **Colours:** by package (`package-colors.ts`), with posters purple, apart from banners.
+  - **Admin:** the same calendar is at `/brand-campaigns/calendar` (`apps/admin/src/pages/brand-campaigns/calendar/`), opened from the **Calendar** button on Brand campaigns. A day panel sits beside the grid, timeline bars have hover tooltips, and the create form reads `?startDate=`.
+- **Ad pricing**, **Marketing revenue** and **Brand partners** (`components/manage/platform/pricing|revenue|partners/`) mirror the admin pages.
+- Under "All stores", org-only create screens (coupon, membership plan, manual promotion, delivery zone) show "Pick a store" (`OrgRequired`). Marketing plan and Brand ads are hidden for super admin, as in admin.
 
 ## Next phases (decided 2026-10-21)
 

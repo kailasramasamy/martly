@@ -193,7 +193,7 @@ export async function brandRoutes(app: FastifyInstance) {
       // ?removeBackground=false keeps a logo that's already clean as it is
       const { removeBackground } = request.query as { removeBackground?: string };
       const logo = await cleanLogo(await file.toBuffer(), removeBackground !== "false");
-      const { url } = await putObject(`brands/${randomUUID()}.png`, logo.image, "image/png");
+      const { url } = await putObject(`brands/${randomUUID()}.webp`, logo.image, "image/webp");
       const data = { imageUrl: url, themeColor: logo.themeColor, themeColorSecondary: logo.themeColorSecondary, background: logo.background };
       return { success: true, data } satisfies ApiResponse<typeof data>;
     },

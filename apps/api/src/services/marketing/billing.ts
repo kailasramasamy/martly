@@ -15,6 +15,13 @@ export interface BillingSnapshot {
   state: string | null;
 }
 
+/** A brand's billing details from its latest order, to pre-fill the next payment form */
+export async function lastBrandBilling(prisma: PrismaClient, brandId: string) {
+  const last = await prisma.adOrder.findFirst({ where: { brandId }, orderBy: { createdAt: "desc" }, select: { billing: true } });
+  const b = last?.billing as unknown as BillingSnapshot | undefined;
+  return b?.name ? { billingName: b.name, gstin: b.gstin, billingAddress: b.address, billingState: b.state } : null;
+}
+
 export interface Buyer {
   organizationId?: string;
   brandId?: string;
