@@ -1,4 +1,4 @@
-import type { BrandPick, HeroTileLayout } from "@martly/shared/constants";
+import type { BrandPick } from "@martly/shared/constants";
 import type { CampaignTile, CouponOffer, HomeTheme } from "@martly/shared/types";
 import type { PaginatedResponse } from "@martly/shared/types";
 
@@ -289,17 +289,14 @@ export interface FestiveTile {
 export interface FestiveHero {
   id: string;
   title: string;
-  translations: { [lang: string]: { title?: string; kicker?: string; subtitle?: string } } | null;
-  /** Small line above the headline and the line under it, set over the silhouette strip */
+  translations: { [lang: string]: { title?: string; kicker?: string } } | null;
+  /** Small line above the headline */
   kicker: string | null;
-  subtitle: string | null;
-  /** The tone-on-tone silhouette strip drawn under the search bar */
+  /** The faint silhouette strip running behind the header's pills and the greeting */
   imageUrl: string;
-  /** background is the solid festival colour behind the whole block; title is its text colour; dark means light text */
+  /** background is the pale festival wash behind the whole block; title is the deep ink its text is set in */
   theme: HomeTheme;
   tiles: FestiveTile[];
-  /** FEATURE: five tiles, the first tall beside a 2x2 block; absent on older API responses, which mean GRID */
-  tileLayout?: HeroTileLayout;
 }
 
 export interface HomeFeed {

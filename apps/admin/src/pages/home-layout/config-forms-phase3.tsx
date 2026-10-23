@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { Button, Form, Input, Radio, Select, Space, Switch, Typography } from "antd";
+import { Button, Form, Input, Select, Space, Switch, Typography } from "antd";
 import type { SelectProps } from "antd";
 import { DeleteOutlined, PlusOutlined } from "@ant-design/icons";
-import { HeroTileLayout } from "@martly/shared/constants";
 import { axiosInstance } from "../../providers/data-provider";
 import { ImageUpload } from "../../components/ImageUpload";
 
@@ -12,22 +11,6 @@ export const MIN_TILES = 2;
 export const MAX_TILES = 12;
 
 const urlField = { getValueFromEvent: (url: string) => url };
-
-const HERO_LAYOUTS = [
-  { value: HeroTileLayout.GRID, label: "Rows of three" },
-  { value: HeroTileLayout.FEATURE, label: "One tall + four" },
-];
-
-export const FestiveHeroFields = () => (
-  <Form.Item
-    label="Tile layout"
-    name={["config", "tileLayout"]}
-    initialValue={HeroTileLayout.GRID}
-    extra="One tall + four is used only when the festival has exactly 5 tiles in stock; otherwise rows of three"
-  >
-    <Radio.Group options={HERO_LAYOUTS} optionType="button" />
-  </Form.Item>
-);
 
 interface SubcategoryOption {
   value: string;

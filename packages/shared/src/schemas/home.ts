@@ -1,12 +1,11 @@
 import { z } from "zod";
-import { HeroTileLayout, HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
+import { HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
 
 const hex = z.string().regex(/^#[0-9a-fA-F]{6}$/, "Use a #RRGGBB colour");
 const theme = z.object({ background: hex, title: hex, dark: z.boolean() });
 
 /** Per-type display settings stored in HomeSection.config */
 export const homeSectionConfigSchemas = {
-  FESTIVE_HERO: z.object({ tileLayout: z.nativeEnum(HeroTileLayout).default("GRID") }),
   PRODUCT_ROW: z.object({
     headerStyle: z.nativeEnum(SectionHeaderStyle).default("PLAIN"),
     headerImageUrl: z.string().url().optional(),

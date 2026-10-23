@@ -1,5 +1,5 @@
 import {
-  HOME_ROW_MAX_PRODUCTS, HeroTileLayout, SECTION_COLLECTION, SectionHeaderStyle, TabRailStyle, type HomeSectionType,
+  HOME_ROW_MAX_PRODUCTS, SECTION_COLLECTION, SectionHeaderStyle, TabRailStyle, type HomeSectionType,
 } from "@martly/shared/constants";
 import { homeSectionConfigSchemas, homeSectionItemsSchema, type HomeSectionItemsInput } from "@martly/shared/schemas";
 import type { HomeSectionRecord } from "./types";
@@ -21,7 +21,7 @@ export const MIN_BANDS = 2;
 export const MAX_BANDS = 5;
 
 /** Types whose settings this screen edits; the rest keep their stored config untouched */
-export const CONFIG_TYPES: readonly HomeSectionType[] = ["FESTIVE_HERO", "PRODUCT_ROW", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID"];
+export const CONFIG_TYPES: readonly HomeSectionType[] = ["PRODUCT_ROW", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID"];
 
 /** Types offered when adding a section from the phone */
 export const CREATABLE_TYPES: readonly HomeSectionType[] = ["PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID"];
@@ -56,7 +56,6 @@ export interface FormValues {
   maxProducts: string;
   tabStyle: TabRailStyle;
   items: ItemDraft[];
-  tileLayout: HeroTileLayout;
   headline: string;
   bands: BandDraft[];
   brandId: string | null;
@@ -74,7 +73,7 @@ export function emptyForm(): FormValues {
   return {
     type: null, title: "", subtitle: "", collectionId: null, isActive: true,
     headerStyle: SectionHeaderStyle.PLAIN, tint: "", maxProducts: String(HOME_ROW_MAX_PRODUCTS),
-    tabStyle: TabRailStyle.ICON_CARD, items: [], tileLayout: HeroTileLayout.GRID, headline: "", bands: DEFAULT_BANDS.map((b) => ({ ...b, key: newKey() })),
+    tabStyle: TabRailStyle.ICON_CARD, items: [], headline: "", bands: DEFAULT_BANDS.map((b) => ({ ...b, key: newKey() })),
     brandId: null, departmentIds: [],
   };
 }
@@ -94,7 +93,6 @@ export function sectionToForm(section: HomeSectionRecord): FormValues {
     maxProducts: c.maxProducts ? String(c.maxProducts) : base.maxProducts,
     tabStyle: (c.tabStyle as TabRailStyle) ?? base.tabStyle,
     items: (section.items ?? []).map((i) => ({ key: newKey(), label: i.label, translations: i.translations ?? undefined, collectionId: i.collectionId, imageUrl: i.imageUrl, subcategoryIds: i.subcategoryIds, wide: i.wide })),
-    tileLayout: (c.tileLayout as HeroTileLayout) ?? base.tileLayout,
     headline: str(c.headline),
     bands: Array.isArray(c.bands) ? c.bands.map((b: { label: string; maxPrice: number | null }) => ({ key: newKey(), label: b.label, maxPrice: b.maxPrice === null ? "" : String(b.maxPrice) })) : base.bands,
     brandId: str(c.brandId) || null,
@@ -110,8 +108,6 @@ function configDraft(type: HomeSectionType, v: FormValues, stored: Record<string
       return { ...stored, headerStyle: v.headerStyle, tint, maxProducts: Number(v.maxProducts) };
     case "TABBED_ROW":
       return { ...stored, tabStyle: v.tabStyle, tint };
-    case "FESTIVE_HERO":
-      return { ...stored, tileLayout: v.tileLayout };
     case "PRICE_BAND_DEALS":
       return { ...stored, headline: v.headline.trim() || undefined, bands: v.bands.map((b) => ({ label: b.label, maxPrice: b.maxPrice.trim() === "" ? null : Number(b.maxPrice) })) };
     case "BRAND_CARD":

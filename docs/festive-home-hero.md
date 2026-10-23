@@ -97,3 +97,36 @@ chip and the tile's products below.
 - The admin Home hero card in a browser: preview, tile edits, Regenerate and Remove.
 - Android: the tinted header under the status bar (`app/_layout.tsx` sets a white, non-translucent bar).
 - The banner carousel at the top once no festival hero is live, and below "Shop by Category" while one is.
+
+## Pastel redesign (2026-10-24)
+
+The solid festival-colour block took up about 78% of the first screen. Blinkit, Instamart and Zepto had all moved to pale washes, so the hero changed to match. The user picked the design from HTML mockups compared against those three apps.
+
+- **Theme:** `heroTheme` keeps its shape but changes meaning.
+  - `background` is now a pale wash of the festival hue: about 94% lightness, saturation capped at 0.7.
+  - `title` is a deep ink of the same hue, with at least 7:1 contrast against the wash.
+  - `dark` is false.
+  - `washTheme()` in `services/seasonal/hero-art.ts` derives both from the designer's `themeColor`, replacing `stripTheme()`, which built the white-text theme.
+  - The header, status bar, carousel dots and festival-screen chips read the same fields, so they follow without changes. Older app builds also get the pale colours with dark text.
+- **Strip:** `prepareStrip(image, theme)` moves every silhouette tone, lighter or darker than the backdrop, from the wash toward the ink.
+  - The strongest tone reaches 28% of the way.
+  - Tones are scaled by their 98th percentile, so faint and bold sources come out alike.
+  - New strips are asked to keep the left half low and sparse, because the greeting sits there.
+- **App (`components/home/FestiveHero.tsx`):**
+  - The wash runs from the status bar.
+  - The strip rises 46pt behind the header's pills.
+  - The kicker and headline sit on the left in the ink, with a white "See all ›" pill on the right. It opens the festival screen at its first tile.
+  - The tiles are white cards in one horizontal row.
+  - The subtitle is no longer shown on Home. It is still generated, because the festival's campaign card uses it.
+- **Tiles:** every stocked tile is shown, so the row has no whole-rows trimming. The designer makes 3 to 6 tiles. The `FESTIVE_HERO` `tileLayout` setting (GRID or FEATURE) was removed from the API, the shared package, admin and Manage.
+- **Repaint:** `npx tsx prisma/repaint-festive-heroes-pastel.ts` moves existing heroes over without calling an image model. Each strip is recoloured from its own pixels, because its edges are the old theme colour. Heroes already on a wash (`dark: false`) are skipped. Run it against each DB, for example with `DATABASE_URL=$PROD_DATABASE_URL`.
+- **Admin:** the collection's Home hero card preview mirrors the new layout.
+- **Tested:**
+  - The 5 live local heroes were repainted.
+  - `GET /home/:storeId/sections` returns the pale theme, no `tileLayout`, and all 6 Diwali tiles.
+  - API, admin and the touched mobile files type-check.
+- **Needs manual verification:**
+  - The phone: wash, strip behind the pills, row scrolling, See all, and Tamil titles.
+  - Android shadows on the white tiles.
+  - An older app build against the new theme.
+

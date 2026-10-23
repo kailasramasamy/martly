@@ -3,20 +3,21 @@ import sharp from "sharp";
 import { randomUUID } from "crypto";
 import { putObject } from "../media.js";
 import { BannerArtError } from "./banner-art.js";
-import { contrast, fromHsl, hex, rgb, toHsl, WHITE } from "../color.js";
+import { contrast, fromHsl, hex, rgb, toHsl } from "../color.js";
 
 const IMAGE_MODEL = process.env.OPENAI_IMAGE_MODEL ?? "gpt-image-2.5-flare";
 const STRIP_WIDTH = 1200;
 const TILE_SIZE = 512;
-// Silhouettes are painted on this flat grey; the recolour maps it to exactly the theme colour, so the strip
-// melts into the solid bands above (header, search) and below (tiles) with no seam
+// Silhouettes are painted on this flat grey; the recolour maps it to exactly the wash, so the strip melts into the
+// wash above (header, search) and below (tiles) with no seam
 const GREY_BACKDROP = "#808080";
-// Tones are the theme colour pushed at most this far towards white (lighter shapes) or black (darker shapes)
-const TONE_STRENGTH = 0.62;
-// Brightness this close to the backdrop is noise from the model, not a shape, and stays the theme colour
+// The strongest silhouette tone is the wash moved this far towards the ink: faint enough that the greeting over it stays calm
+const TONE_STRENGTH = 0.28;
+// Tones are scaled so this share of them stays under full strength, which evens out faint and bold source art alike
+const TONE_PERCENTILE = 0.98;
+// Brightness this close to the backdrop is noise from the model, not a shape, and stays the wash
 const NOISE_FLOOR = 0.06;
 const STRIP_PADDING = 0.06;
-// The greeting is set over the strip, so it keeps enough height for three lines of text
 const MAX_STRIP_ASPECT = 1 / 1.9;
 const MIN_TRANSPARENT_SHARE = 0.15;
 // Self-check for strips: most of the painting's border must be the flat grey backdrop, otherwise the model painted
@@ -24,15 +25,15 @@ const MIN_TRANSPARENT_SHARE = 0.15;
 const MIN_FLAT_BORDER = 0.8;
 const FLAT_TOLERANCE = 10;
 const ATTEMPTS = 2;
-// White text must stay readable on the theme colour, but a colour far darker than that just looks heavy, so a
-// rich colour is nudged into this band: deepened if too light for white text, lifted if needlessly dark
-const MIN_CONTRAST = 3.8;
-const MAX_CONTRAST = 4.6;
-const STEP = 0.06;
-// Lifting stops after this much lightness, so a deep colour gets a little lighter, not a different colour
-const MAX_LIFT = 0.1;
+// The festival's hue as a pale wash behind the whole block, with text in a deep shade of the same hue
+const WASH_LIGHTNESS = 0.94;
+const MAX_WASH_SATURATION = 0.7;
+const MAX_INK_SATURATION = 0.75;
+const INK_START_LIGHTNESS = 0.4;
+const MIN_INK_CONTRAST = 7;
+const STEP = 0.02;
 
-/** The festive block's colours: one solid theme colour from the status bar to the tiles, and its text colour */
+/** The festive block's colours: a pale wash from the status bar to the tiles, and the deep ink its text is set in */
 export interface HeroTheme {
   background: string;
   title: string;
@@ -55,16 +56,14 @@ export async function generate(prompt: string, size: "1024x1024" | "1024x1536" |
   return Buffer.from(b64, "base64");
 }
 
-/** White text on the theme colour: the colour's lightness (hue and saturation kept) moved until white reads
- *  clearly on it without the colour looking heavy */
-export function stripTheme(proposed: string): HeroTheme {
-  const [h, sat, start] = toHsl(rgb(proposed) ?? [24, 110, 70]);
-  let l = start;
-  while (l > 0 && contrast(WHITE, fromHsl([h, sat, l])) < MIN_CONTRAST) l -= STEP / 3;
-  const ceiling = Math.max(l, start + MAX_LIFT);
-  while (l + STEP / 3 <= ceiling && contrast(WHITE, fromHsl([h, sat, l])) > MAX_CONTRAST
-    && contrast(WHITE, fromHsl([h, sat, l + STEP / 3])) >= MIN_CONTRAST) l += STEP / 3;
-  return { background: hex(fromHsl([h, sat, l])), title: "#ffffff", dark: true };
+/** The festival's hue as a pale wash, and an ink of the same hue darkened until text reads clearly on the wash */
+export function washTheme(proposed: string): HeroTheme {
+  const [h, sat] = toHsl(rgb(proposed) ?? [24, 110, 70]);
+  const wash = fromHsl([h, Math.min(sat, MAX_WASH_SATURATION), WASH_LIGHTNESS]);
+  const inkSat = Math.min(sat, MAX_INK_SATURATION);
+  let l = INK_START_LIGHTNESS;
+  while (l > STEP && contrast(wash, fromHsl([h, inkSat, l])) < MIN_INK_CONTRAST) l -= STEP;
+  return { background: hex(wash), title: hex(fromHsl([h, inkSat, l])), dark: false };
 }
 
 // The grey every edge of the painting shares, i.e. the backdrop the model actually painted
@@ -86,8 +85,14 @@ function contentRows(tone: Float32Array, width: number, height: number): [number
   return top > bottom ? [0, height] : [top, bottom + 1];
 }
 
-/** Turns grey silhouettes into lighter and darker tones of the theme colour on exactly the theme colour */
-async function tonal(image: Buffer, theme: number[]) {
+// The tone most shapes stay under, so the strongest shapes land at full strength whatever the source's contrast
+function toneScale(tone: Float32Array) {
+  const sizes = Array.from(tone, Math.abs).filter((t) => t > 0).sort((a, b) => a - b);
+  return sizes.length ? sizes[Math.floor((sizes.length - 1) * TONE_PERCENTILE)] : 1;
+}
+
+/** Turns grey silhouettes, lighter or darker than their backdrop, into faint shades of the ink on exactly the wash */
+async function tonal(image: Buffer, wash: number[], ink: number[]) {
   const { data, info } = await sharp(image).flatten({ background: GREY_BACKDROP }).greyscale().raw().toBuffer({ resolveWithObject: true });
   const { width, height } = info;
   const backdrop = backdropLevel(data, width, height);
@@ -97,21 +102,22 @@ async function tonal(image: Buffer, theme: number[]) {
     const t = d > 0 ? d / (255 - backdrop || 1) : d / (backdrop || 1);
     tone[i] = Math.abs(t) < NOISE_FLOOR ? 0 : t;
   }
+  const scale = toneScale(tone);
   const out = Buffer.alloc(width * height * 3);
   for (let i = 0; i < tone.length; i++) {
-    const t = tone[i] * TONE_STRENGTH;
-    for (let c = 0; c < 3; c++) out[i * 3 + c] = t >= 0 ? theme[c] + (255 - theme[c]) * t : theme[c] * (1 + t);
+    const t = Math.min(1, Math.abs(tone[i]) / scale) * TONE_STRENGTH;
+    for (let c = 0; c < 3; c++) out[i * 3 + c] = wash[c] + (ink[c] - wash[c]) * t;
   }
   return { out, width, height, rows: contentRows(tone, width, height) };
 }
 
-// Silhouettes dissolve into the theme colour over these shares of the art's own height, measured from where the
+// Silhouettes dissolve into the wash over these shares of the art's own height, measured from where the
 // art starts and stops (not the image edge), so a painted ground line can't end in a hard edge: a short fade at
-// the top (the search bar's band) and a longer one at the bottom, where figures stand
+// the top (behind the header's pills) and a longer one at the bottom, where figures stand
 const FADE_TOP = 0.15;
 const FADE_BOTTOM = 0.35;
 
-function fadeEdges(pixels: Buffer, width: number, height: number, theme: number[], art: [number, number]) {
+function fadeEdges(pixels: Buffer, width: number, height: number, wash: number[], art: [number, number]) {
   const span = Math.max(1, art[1] - art[0]);
   const top = span * FADE_TOP, bottom = span * FADE_BOTTOM;
   for (let y = 0; y < height; y++) {
@@ -121,18 +127,18 @@ function fadeEdges(pixels: Buffer, width: number, height: number, theme: number[
     for (let x = 0; x < width; x++) {
       for (let c = 0; c < 3; c++) {
         const i = (y * width + x) * 3 + c;
-        pixels[i] = theme[c] + (pixels[i] - theme[c]) * eased;
+        pixels[i] = wash[c] + (pixels[i] - wash[c]) * eased;
       }
     }
   }
   return pixels;
 }
 
-/** Any strip art, generated or uploaded: recoloured to the theme, cropped to its silhouettes, wide and low, with
- *  its top and bottom edges dissolving into the theme colour */
-export async function prepareStrip(image: Buffer, themeColor: string) {
-  const theme = rgb(themeColor) ?? [24, 110, 70];
-  const { out, width, height, rows } = await tonal(image, theme);
+/** Any strip art, generated, uploaded or an earlier strip being repainted: recoloured to faint ink on the wash,
+ *  cropped to its silhouettes, wide and low, with its top and bottom edges dissolving into the wash */
+export async function prepareStrip(image: Buffer, theme: HeroTheme) {
+  const wash = rgb(theme.background) ?? [248, 250, 252];
+  const { out, width, height, rows } = await tonal(image, wash, rgb(theme.title) ?? [15, 23, 42]);
   const pad = Math.round(height * STRIP_PADDING);
   const top = Math.max(0, rows[0] - pad);
   const stripHeight = Math.min(height - top, rows[1] + pad - top, Math.round(width * MAX_STRIP_ASPECT));
@@ -144,7 +150,7 @@ export async function prepareStrip(image: Buffer, themeColor: string) {
   const { width: w, height: h } = strip.info;
   const scale = h / stripHeight;
   const art: [number, number] = [(rows[0] - top) * scale, Math.min(h, (rows[1] - top) * scale)];
-  return sharp(fadeEdges(strip.data, w, h, theme, art), { raw: { width: w, height: h, channels: 3 } }).webp({ quality: 82 }).toBuffer();
+  return sharp(fadeEdges(strip.data, w, h, wash, art), { raw: { width: w, height: h, channels: 3 } }).webp({ quality: 82 }).toBuffer();
 }
 
 // Share of border pixels that sit on the backdrop's grey
@@ -165,20 +171,20 @@ async function renderStrip(scene: string) {
     "Flat silhouettes only, like layered paper cut-outs: shapes in several shades of grey, from light grey to charcoal,",
     "with lighter shapes in the background and darker ones in front, some motifs (string lights, stars, petals) spread",
     "thinly across the whole width so it feels airy. Keep the composition in a horizontal band through the middle half,",
-    "tallest at the left and right ends and calmer, lower and lighter through the centre, where a greeting will be written over it.",
+    "low and sparse through the left half, where a greeting will be written over it, with the tallest motifs towards the right.",
     `The background is a perfectly flat, uniform ${GREY_BACKDROP} grey with no gradient, vignette, texture, frame or shadow.`,
     "No colour other than greys, no text, letters, numbers or logos, no photographic detail.",
   ].join("\n"), "1536x1024", false);
 }
 
-/** The silhouette strip between the search bar and the tiles, in tones of the theme colour; repainted once if the
+/** The silhouette strip behind the header's pills and the greeting, in faint ink on the wash; repainted once if the
  *  model's backdrop isn't flat */
-export async function paintStrip(scene: string, themeColor: string) {
+export async function paintStrip(scene: string, theme: HeroTheme) {
   let image = await renderStrip(scene);
   for (let attempt = 1; attempt < ATTEMPTS && (await flatBorderShare(image)) < MIN_FLAT_BORDER; attempt++) {
     image = await renderStrip(scene);
   }
-  return prepareStrip(image, themeColor);
+  return prepareStrip(image, theme);
 }
 
 /** Any tile illustration, generated or uploaded, trimmed of empty margins so it fills its card. */

@@ -110,10 +110,7 @@ type must, may, or must not name a collection on the section; the layout API enf
 - **Search hints:**
   - `chrome.searchHints` holds the live festival's first 2 aisles, then the store's most-searched terms from the last 14 days, topped up from `DEFAULT_SEARCH_HINTS`. There are at most 8.
   - A term only counts once 3 different signed-in shoppers have searched it, it returned results, and it has no long digit runs. This keeps any one shopper's searches (names, phone numbers) out of everyone else's search bar.
-- **Festival hero tile layout:**
-  - The `FESTIVE_HERO` section config `tileLayout` is `GRID` (rows of three) or `FEATURE` (one tall tile plus a 2×2 block).
-  - FEATURE is used only when a hero has exactly 5 stocked tiles, so it never hides one. Otherwise it falls back to GRID, per hero. Each hero carries the `tileLayout` it got.
-  - The legacy endpoint and the festival screen always use GRID.
+- **Festival hero tiles:** since 2026-10-24 the hero shows every stocked tile in one sideways-scrolling row, so `FESTIVE_HERO` has no config. The old `tileLayout` setting (GRID or FEATURE) was removed; see `docs/festive-home-hero.md`.
 
 ## Phase 4: offers and ads
 

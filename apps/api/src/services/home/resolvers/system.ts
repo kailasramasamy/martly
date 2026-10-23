@@ -1,5 +1,3 @@
-import type { HeroTileLayout } from "@martly/shared/constants";
-import { parseHomeSectionConfig } from "@martly/shared/schemas";
 import { getTimePeriod, TIME_CATEGORY_MAP } from "../../time-picks.js";
 import { buildProductData, enrichStoreProduct, withAllSizes } from "../../store-feed.js";
 import { liveFestiveHeroes } from "../../festive-hero.js";
@@ -18,16 +16,15 @@ export const clientFetched: SectionResolver = async (_ctx, entry) => system(entr
 
 // Looked up once per request: the layout expansion needs the heroes' collections too, to keep them out of other rows
 const heroesByRequest = new WeakMap<ResolveContext, ReturnType<typeof liveFestiveHeroes>>();
-export function festiveHeroesFor(ctx: ResolveContext, heroEntry: Parameters<SectionResolver>[1]) {
-  const { tileLayout } = parseHomeSectionConfig("FESTIVE_HERO", heroEntry.config) as { tileLayout: HeroTileLayout };
+export function festiveHeroesFor(ctx: ResolveContext) {
   let heroes = heroesByRequest.get(ctx);
-  if (!heroes) heroesByRequest.set(ctx, heroes = liveFestiveHeroes(ctx.prisma, ctx.store, ctx.now, tileLayout));
+  if (!heroes) heroesByRequest.set(ctx, heroes = liveFestiveHeroes(ctx.prisma, ctx.store, ctx.now));
   return heroes;
 }
 
 // `hero` is the lead slide, for released app builds that show a single hero
 export const festiveHero: SectionResolver = async (ctx, entry) => {
-  const heroes = await festiveHeroesFor(ctx, entry);
+  const heroes = await festiveHeroesFor(ctx);
   return heroes.length > 0 ? system(entry, { hero: heroes[0], heroes }) : null;
 };
 

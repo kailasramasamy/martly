@@ -22,7 +22,7 @@ interface HomeHeroRecord {
   id: string;
   heroTitle: string | null;
   heroImageUrl: string | null;
-  heroTheme: { background: string; title: string; dark: boolean; ornamentDepth: number } | null;
+  heroTheme: { background: string; title: string; dark: boolean } | null;
   translations: { ta?: { heroTitle?: string } } | null;
   tiles: HeroTile[];
 }
@@ -37,7 +37,9 @@ interface SubcategoryGroup {
 }
 
 const PREVIEW_WIDTH = 300;
-const PREVIEW_HEIGHT = PREVIEW_WIDTH * 1.5;
+// Room between the stand-in search bar and the greeting, where the strip's scene shows as it does under the app's pills
+const PREVIEW_GREETING_GAP = 40;
+const TILE_CARD = 72;
 const TILE_THUMB = 44;
 
 function buildSubcategoryGroups(departments: TreeDepartment[]): SubcategoryGroup[] {
@@ -58,44 +60,33 @@ function useSubcategoryGroups() {
   return groups;
 }
 
-// Mirrors the app: headline tucked under the measured ornament, tiles as gradients of the festival's wash
+// Mirrors the app: the wash from the top, the faint strip rising behind the header, the greeting on the left and a
+// row of white tiles
 function HeroPreview({ record }: { record: HomeHeroRecord }) {
   const theme = record.heroTheme;
   const wash = theme?.background ?? "#f8fafc";
+  const ink = theme?.title ?? "#0f172a";
   return (
-    <div
-      style={{
-        width: PREVIEW_WIDTH,
-        height: PREVIEW_HEIGHT,
-        flexShrink: 0,
-        borderRadius: 16,
-        overflow: "hidden",
-        paddingTop: Math.max(8, (theme?.ornamentDepth ?? 0.25) * PREVIEW_HEIGHT),
-        background: `${wash} url(${record.heroImageUrl}) top / cover no-repeat`,
-      }}
-    >
-      <div
-        style={{
-          textAlign: "center", padding: "0 16px 8px", color: theme?.title, fontVariant: "small-caps",
-          fontFamily: "Georgia, 'Times New Roman', serif", fontSize: 20, fontWeight: 700, lineHeight: 1.2,
-        }}
-      >
-        {record.heroTitle}
+    <div style={{ width: PREVIEW_WIDTH, flexShrink: 0, borderRadius: 16, overflow: "hidden", position: "relative", background: wash }}>
+      {record.heroImageUrl && (
+        <img src={record.heroImageUrl} alt="" style={{ position: "absolute", top: 0, left: 0, width: "100%" }} />
+      )}
+      <div style={{ position: "relative", padding: "14px 12px 0" }}>
+        <div style={{ height: 30, borderRadius: 10, background: "#fff", border: "1px solid #e2e8f0" }} />
+        <div style={{ display: "flex", alignItems: "flex-end", gap: 8, marginTop: PREVIEW_GREETING_GAP }}>
+          <div style={{ flex: 1, color: ink, fontFamily: "Georgia, 'Times New Roman', serif", fontSize: 21, fontWeight: 700, lineHeight: 1.15 }}>
+            {record.heroTitle}
+          </div>
+          <div style={{ background: "#fff", color: ink, borderRadius: 12, padding: "4px 10px", fontSize: 11, fontWeight: 700 }}>See all ›</div>
+        </div>
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 6, padding: "0 10px" }}>
+      <div style={{ position: "relative", display: "flex", gap: 6, padding: "12px 12px 12px", overflow: "hidden" }}>
         {record.tiles.map((tile) => (
-          <div
-            key={tile.id}
-            style={{
-              borderRadius: 10, padding: 6, textAlign: "center",
-              border: `1px solid color-mix(in srgb, ${wash}, black 16%)`,
-              background: `linear-gradient(color-mix(in srgb, ${wash}, white 70%), ${wash}, color-mix(in srgb, ${wash}, black 10%))`,
-            }}
-          >
-            <div style={{ fontSize: 11, fontWeight: 600, color: "#0f172a", lineHeight: 1.2 }}>{tile.title}</div>
+          <div key={tile.id} style={{ width: TILE_CARD, flexShrink: 0, borderRadius: 10, padding: 5, textAlign: "center", background: "#fff" }}>
             {tile.imageUrl && (
-              <img src={tile.imageUrl} alt={tile.title} style={{ width: "100%", aspectRatio: "1", objectFit: "contain" }} />
+              <img src={tile.imageUrl} alt={tile.title} style={{ width: "100%", height: TILE_CARD - 14, objectFit: "contain" }} />
             )}
+            <div style={{ fontSize: 10, fontWeight: 700, color: "#0f172a", lineHeight: 1.2 }}>{tile.title}</div>
           </div>
         ))}
       </div>

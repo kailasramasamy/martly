@@ -5,11 +5,11 @@ import { HomeSectionType, HomeSectionTypeLabels, SECTION_COLLECTION } from "@mar
 import { homeSectionConfigSchemas } from "@martly/shared/schemas";
 import { CampaignCardFields, ProductRowFields } from "./config-forms";
 import { BrandCardFields, CategoryDirectoryFields, PriceBandFields, TabbedRowFields, MAX_TABS, MIN_TABS, itemsOf, parseItems } from "./config-forms-phase2";
-import { FestiveHeroFields, MAX_TILES, MIN_TILES, TileGridFields } from "./config-forms-phase3";
+import { MAX_TILES, MIN_TILES, TileGridFields } from "./config-forms-phase3";
 import type { HomeLayoutSection, SectionPayload } from "./use-home-layout";
 
 const EDITABLE: HomeSectionType[] = [
-  "FESTIVE_HERO", "PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID",
+  "PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID",
 ];
 const COMING_SOON: HomeSectionType[] = [
   "PERSONALISED",
@@ -117,7 +117,6 @@ export const SectionDrawer = ({ open, section, onClose, onSave }: Props) => {
             <Select {...selectProps} allowClear={collectionMode === "OPTIONAL"} showSearch optionFilterProp="label" placeholder="Select collection" />
           </Form.Item>
         )}
-        {type === "FESTIVE_HERO" && <FestiveHeroFields />}
         {type === "EXPLORE_GRID" && <TileGridFields collectionProps={selectProps} wideHint="spans two columns" />}
         {type === "STORE_GRID" && <TileGridFields collectionProps={selectProps} wideHint="fills the wide row" />}
         {type === "PRODUCT_ROW" && <ProductRowFields />}

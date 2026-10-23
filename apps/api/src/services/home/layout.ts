@@ -125,7 +125,7 @@ function interleaveCampaignCards(layout: LayoutEntry[]) {
 export async function expandLayout(ctx: ResolveContext, saved: LayoutEntry[]): Promise<LayoutEntry[]> {
   // Festivals in the hero carousel are placed; ones it has no room for fall through to plain rows
   const heroEntry = saved.find((e) => e.type === "FESTIVE_HERO");
-  const heroes = heroEntry ? await festiveHeroesFor(ctx, heroEntry) : [];
+  const heroes = heroEntry ? await festiveHeroesFor(ctx) : [];
   const layout = pinHeroBanners(saved);
   const festivals = await festivalCards(ctx, heroes.map((h) => h.id), layout);
   const placed = new Set([

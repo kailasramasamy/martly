@@ -16,15 +16,15 @@ interface SlideProps {
   onOpen: () => void;
 }
 
-// Each slide is painted in its festival's colour, so a shorter grid still fills the carousel's height
+// Each slide is painted in its festival's wash, so a shorter slide still fills the carousel's height
 const Slide = memo(function Slide({ hero, backdrop, onOpen }: SlideProps) {
-  const onTile = useCallback((tile: FestiveTile) => {
+  const openFestival = useCallback((tile?: FestiveTile) => {
     onOpen();
-    router.push({ pathname: "/festival/[id]", params: { id: hero.id, tile: tile.id } });
+    router.push({ pathname: "/festival/[id]", params: tile ? { id: hero.id, tile: tile.id } : { id: hero.id } });
   }, [hero.id, onOpen]);
   return (
     <View style={[styles.slide, { backgroundColor: hero.theme.background }]}>
-      <FestiveHero hero={hero} onTile={onTile} backdrop={backdrop} />
+      <FestiveHero hero={hero} onOpen={openFestival} backdrop={backdrop} />
     </View>
   );
 });

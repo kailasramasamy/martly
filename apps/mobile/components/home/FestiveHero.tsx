@@ -1,37 +1,27 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Animated, Dimensions, Image, Pressable, StyleSheet, Text, View, type ImageLoadEventData } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { Animated, Dimensions, FlatList, Image, Pressable, StyleSheet, Text, View, type ImageLoadEventData } from "react-native";
 import { colors, festiveFonts, fonts } from "../../constants/theme";
 import { useLanguage } from "../../lib/language-context";
-import { mix } from "./color-mix";
+import { useStrings } from "../../lib/i18n/use-strings";
 import type { FestiveHero as FestiveHeroData, FestiveTile } from "../../lib/types";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const H_PADDING = 16;
-const GAP = 10;
+const GAP = 8;
 const MIN_TOP = 12;
-// Room for the three-line greeting even when the strip art is short or missing
-const MIN_STRIP_HEIGHT = 150;
-// How far the search bar's gap and the tiles reach into the strip's faded edges
-const STRIP_OVERLAP_TOP = 16;
-const STRIP_OVERLAP_BOTTOM = 12;
-const TILE_WIDTH = Math.floor((SCREEN_WIDTH - H_PADDING * 2 - GAP * 2) / 3);
-const TILE_HEIGHT = Math.round(TILE_WIDTH * 1.18);
-const TALL_TILE_HEIGHT = TILE_HEIGHT * 2 + GAP;
+// The strip rises this far behind the overlaid header, so its garlands sit behind the pills and the scene shows above the tiles
+const STRIP_RISE = 46;
 // The silhouette strip is wide and low; until its real size loads, assume the server's usual crop
 const DEFAULT_STRIP_ASPECT = 2.6;
 // Older heroes stored a tall painted background; it isn't a strip, so it's left out rather than squashed
 const MIN_STRIP_ASPECT = 1.2;
-const FEATURE_TILES = 5;
+const TILE_WIDTH = 98;
 const STAGGER_MS = 70;
-// Cards are warm cream on the solid festival colour, edged with a hint of that colour so they sit in it
-const CARD_STOPS = [0, 0.55, 1] as const;
-const CARD_FILL = ["#fffaf0", "#fdf3dc", "#f9e9c6"] as const;
-const CARD_EDGE = 0.55;
 
 interface Props {
   hero: FestiveHeroData;
-  onTile: (tile: FestiveTile) => void;
+  /** Opens the festival, at the tapped tile or (See all) at its first */
+  onOpen: (tile?: FestiveTile) => void;
   /** The block runs up behind the overlaid home header; this is the header's height to clear */
   backdrop?: { top: number } | null;
 }
@@ -44,14 +34,12 @@ function useLocalizedTitle() {
 
 interface TileProps {
   tile: FestiveTile;
-  edge: string;
+  ink: string;
   index: number;
   onPress: () => void;
-  /** Spans two rows: the FEATURE layout's lead tile */
-  tall?: boolean;
 }
 
-function Tile({ tile, edge, index, onPress, tall = false }: TileProps) {
+function Tile({ tile, ink, index, onPress }: TileProps) {
   const title = useLocalizedTitle()(tile);
   const rise = useRef(new Animated.Value(0)).current;
   useEffect(() => {
@@ -65,88 +53,51 @@ function Tile({ tile, edge, index, onPress, tall = false }: TileProps) {
         onPress={onPress}
         accessibilityRole="button"
         accessibilityLabel={title}
-        style={({ pressed }) => [styles.tile, tall && styles.tileTall, { borderColor: edge }, pressed && styles.tilePressed]}
+        style={({ pressed }) => [styles.tile, { shadowColor: ink }, pressed && styles.tilePressed]}
       >
-        <LinearGradient colors={CARD_FILL} locations={CARD_STOPS} style={styles.tileFill}>
-          <Text style={styles.tileTitle} numberOfLines={2}>{title}</Text>
-          <Image source={{ uri: tile.imageUrl }} style={styles.tileArt} resizeMode="contain" />
-        </LinearGradient>
+        <Image source={{ uri: tile.imageUrl }} style={styles.tileArt} resizeMode="contain" />
+        <Text style={styles.tileTitle} numberOfLines={2}>{title}</Text>
       </Pressable>
     </Animated.View>
-  );
-}
-
-interface TilesProps {
-  hero: FestiveHeroData;
-  edge: string;
-  onTile: (tile: FestiveTile) => void;
-}
-
-/** Tiles in rows of three; a FEATURE hero's five instead put the first tall on the left beside a 2x2 block */
-function TileGrid({ hero, edge, onTile }: TilesProps) {
-  const { tiles } = hero;
-  const featured = hero.tileLayout === "FEATURE" && tiles.length === FEATURE_TILES;
-  if (!featured) {
-    return (
-      <View style={styles.grid}>
-        {tiles.map((tile, i) => <Tile key={tile.id} tile={tile} edge={edge} index={i} onPress={() => onTile(tile)} />)}
-      </View>
-    );
-  }
-  const [lead, ...rest] = tiles;
-  return (
-    <View style={styles.feature}>
-      <Tile tile={lead} edge={edge} index={0} tall onPress={() => onTile(lead)} />
-      <View style={styles.featureBlock}>
-        {rest.map((tile, i) => <Tile key={tile.id} tile={tile} edge={edge} index={i + 1} onPress={() => onTile(tile)} />)}
-      </View>
-    </View>
   );
 }
 
 function useGreeting(hero: FestiveHeroData) {
   const { language } = useLanguage();
   const ta = language ? hero.translations?.[language] : undefined;
-  return {
-    kicker: ta?.kicker || hero.kicker,
-    title: ta?.title || hero.title,
-    subtitle: ta?.subtitle || hero.subtitle,
-    translated: !!ta?.title,
-  };
+  return { kicker: ta?.kicker || hero.kicker, title: ta?.title || hero.title, translated: !!ta?.title };
 }
 
-interface StripProps {
-  hero: FestiveHeroData;
-}
-
-/** The silhouette strip with the three-line greeting set over its calm centre */
-function GreetingStrip({ hero }: StripProps) {
-  const { kicker, title, subtitle, translated } = useGreeting(hero);
-  const { title: ink, font } = hero.theme;
-  const fontFamily = festiveFonts[font ?? "PLAYFAIR"] ?? festiveFonts.PLAYFAIR;
-  // The art's own proportions, read when it loads, size the box; the art is contained, never cropped, so its faded
-  // edges always show and any spare room is the same theme colour
+/** The faint silhouette strip behind the header's pills and the greeting, at the art's own proportions */
+function Strip({ hero, top }: { hero: FestiveHeroData; top: number }) {
   const [aspect, setAspect] = useState(DEFAULT_STRIP_ASPECT);
   const onLoad = useCallback((e: ImageLoadEventData) => {
-    const { width, height: h } = e.source;
-    if (width > 0 && h > 0) setAspect(width / h);
+    const { width, height } = e.source;
+    if (width > 0 && height > 0) setAspect(width / height);
   }, []);
-  const height = Math.max(MIN_STRIP_HEIGHT, aspect >= MIN_STRIP_ASPECT ? SCREEN_WIDTH / aspect : 0);
-
+  if (aspect < MIN_STRIP_ASPECT) return null;
   return (
-    <View style={[styles.strip, { height }]}>
-      {aspect >= MIN_STRIP_ASPECT && (
-        <Image
-          source={{ uri: hero.imageUrl }}
-          style={StyleSheet.absoluteFill}
-          resizeMode="contain"
-          onLoad={(e) => onLoad(e.nativeEvent)}
-          accessibilityElementsHidden
-          importantForAccessibility="no-hide-descendants"
-        />
-      )}
-      <View style={styles.greeting} accessibilityRole="header">
-        {kicker ? <Text style={[styles.kicker, { color: ink }]} numberOfLines={translated ? 2 : 1}>✦ {kicker} ✦</Text> : null}
+    <Image
+      source={{ uri: hero.imageUrl }}
+      style={[styles.strip, { top: top - STRIP_RISE, height: SCREEN_WIDTH / aspect }]}
+      resizeMode="cover"
+      onLoad={(e) => onLoad(e.nativeEvent)}
+      accessibilityElementsHidden
+      importantForAccessibility="no-hide-descendants"
+    />
+  );
+}
+
+/** Kicker and headline on the left in the festival's ink, See all on the right */
+function Greeting({ hero, onSeeAll }: { hero: FestiveHeroData; onSeeAll: () => void }) {
+  const c = useStrings("common");
+  const { kicker, title, translated } = useGreeting(hero);
+  const { title: ink, font } = hero.theme;
+  const fontFamily = festiveFonts[font ?? "PLAYFAIR"] ?? festiveFonts.PLAYFAIR;
+  return (
+    <View style={styles.greeting}>
+      <View style={styles.greetingText} accessibilityRole="header">
+        {kicker ? <Text style={[styles.kicker, { color: ink }]} numberOfLines={translated ? 2 : 1}>✦ {kicker}</Text> : null}
         {translated ? (
           // The display faces are Latin-only, and iOS fit-to-width shrinks Tamil past minimumFontScale to a speck,
           // so a translated title is set in the app face and wraps instead
@@ -156,48 +107,57 @@ function GreetingStrip({ hero }: StripProps) {
             {title}
           </Text>
         )}
-        {subtitle ? <Text style={[styles.subtitle, { color: ink }]} numberOfLines={2}>{subtitle}</Text> : null}
       </View>
+      <Pressable onPress={onSeeAll} accessibilityRole="button" style={({ pressed }) => [styles.seeAll, pressed && styles.tilePressed]}>
+        <Text style={[styles.seeAllText, { color: ink }]}>{c.seeAll} ›</Text>
+      </Pressable>
     </View>
   );
 }
 
-/** The festive top of the home screen: one solid festival colour from the very top of the screen, a strip of
- *  tone-on-tone silhouettes under the search bar carrying the greeting, and a grid of themed shopping tiles. */
-export function FestiveHero({ hero, onTile, backdrop }: Props) {
-  const { background } = hero.theme;
-  const edge = useMemo(() => mix(background, 255, CARD_EDGE), [background]);
+/** The festive top of the home screen: a pale festival wash from the very top of the screen with a faint silhouette
+ *  strip behind the header and the greeting, then a row of themed shopping tiles. */
+export function FestiveHero({ hero, onOpen, backdrop }: Props) {
+  const { background, title: ink } = hero.theme;
   const top = backdrop ? backdrop.top : MIN_TOP;
+  const onSeeAll = useCallback(() => onOpen(), [onOpen]);
 
   return (
-    <View>
-      <View style={[styles.hero, { backgroundColor: background, paddingTop: top }]}>
-        <GreetingStrip hero={hero} />
-        <TileGrid hero={hero} edge={edge} onTile={onTile} />
-      </View>
+    <View style={[styles.hero, { backgroundColor: background, paddingTop: top }]}>
+      <Strip hero={hero} top={top} />
+      <Greeting hero={hero} onSeeAll={onSeeAll} />
+      <FlatList
+        horizontal
+        data={hero.tiles}
+        keyExtractor={(tile) => tile.id}
+        renderItem={({ item, index }) => <Tile tile={item} ink={ink} index={index} onPress={() => onOpen(item)} />}
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={styles.tiles}
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  hero: { paddingBottom: 18, overflow: "hidden" },
-  // The art's top and bottom fade into the theme colour, so the search bar's gap and the tiles overlap them
-  strip: { width: SCREEN_WIDTH, justifyContent: "center", marginTop: -STRIP_OVERLAP_TOP, marginBottom: -STRIP_OVERLAP_BOTTOM },
-  greeting: { alignItems: "center", paddingHorizontal: 40, gap: 2 },
-  kicker: { fontFamily: fonts.semibold, fontSize: 13, letterSpacing: 0.6, opacity: 0.9 },
-  title: { fontSize: 30, lineHeight: 40, letterSpacing: 0.2, textAlign: "center" },
-  titleTranslated: { fontFamily: fonts.extrabold, fontSize: 24, lineHeight: 34, textAlign: "center" },
-  subtitle: { fontFamily: fonts.medium, fontSize: 13, lineHeight: 18, textAlign: "center", opacity: 0.92 },
-  grid: { flexDirection: "row", flexWrap: "wrap", gap: GAP, paddingHorizontal: H_PADDING },
-  feature: { flexDirection: "row", gap: GAP, paddingHorizontal: H_PADDING },
-  featureBlock: { flex: 1, flexDirection: "row", flexWrap: "wrap", gap: GAP },
-  tile: { width: TILE_WIDTH, height: TILE_HEIGHT, borderRadius: 16, borderWidth: 1, overflow: "hidden" },
-  tileTall: { height: TALL_TILE_HEIGHT },
-  tilePressed: { transform: [{ scale: 0.96 }], opacity: 0.9 },
-  tileFill: { flex: 1, paddingTop: 10, alignItems: "center" },
-  tileTitle: {
-    fontFamily: fonts.bold, fontSize: 13, lineHeight: 16, color: colors.text,
-    textAlign: "center", paddingHorizontal: 6, minHeight: 32,
+  hero: { paddingBottom: 16, overflow: "hidden" },
+  strip: { position: "absolute", left: 0, width: SCREEN_WIDTH },
+  greeting: { flexDirection: "row", alignItems: "flex-end", gap: 12, paddingHorizontal: H_PADDING, paddingTop: 14 },
+  greetingText: { flex: 1 },
+  kicker: { fontFamily: fonts.semibold, fontSize: 13, letterSpacing: 0.3, opacity: 0.85 },
+  title: { fontSize: 28, lineHeight: 36, letterSpacing: 0.2 },
+  titleTranslated: { fontFamily: fonts.extrabold, fontSize: 22, lineHeight: 30 },
+  seeAll: {
+    minHeight: 44, justifyContent: "center", paddingHorizontal: 14, borderRadius: 22,
+    backgroundColor: colors.background, marginBottom: -4,
   },
-  tileArt: { flex: 1, width: TILE_WIDTH - 12, marginTop: 4, marginBottom: 6 },
+  seeAllText: { fontFamily: fonts.extrabold, fontSize: 13 },
+  tiles: { gap: GAP, paddingHorizontal: H_PADDING, paddingTop: 18, paddingBottom: 4 },
+  tile: {
+    width: TILE_WIDTH, borderRadius: 14, backgroundColor: colors.background, alignItems: "center",
+    paddingTop: 8, paddingHorizontal: 6, paddingBottom: 8,
+    shadowOpacity: 0.08, shadowRadius: 4, shadowOffset: { width: 0, height: 1 }, elevation: 1,
+  },
+  tilePressed: { transform: [{ scale: 0.96 }], opacity: 0.9 },
+  tileArt: { width: 78, height: 72 },
+  tileTitle: { fontFamily: fonts.bold, fontSize: 12, lineHeight: 15, color: colors.text, textAlign: "center", marginTop: 4, minHeight: 30 },
 });

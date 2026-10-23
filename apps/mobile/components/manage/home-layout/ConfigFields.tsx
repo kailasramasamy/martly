@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { HeroTileLayout, SectionHeaderStyle, TabRailStyle } from "@martly/shared/constants";
+import { SectionHeaderStyle, TabRailStyle } from "@martly/shared/constants";
 import { colors, fonts } from "../../../constants/theme";
 import { useResource } from "../../../lib/manage/use-resource";
 import { RemotePicker } from "../marketing/RemotePicker";
@@ -28,11 +28,6 @@ const TAB_STYLE_OPTIONS = [
   { value: TabRailStyle.ICON_CARD, label: "Icon cards" },
   { value: TabRailStyle.ICON_UNDERLINE, label: "Icons with underline" },
   { value: TabRailStyle.PILL, label: "Pills" },
-];
-
-const HERO_LAYOUT_OPTIONS = [
-  { value: HeroTileLayout.GRID, label: "Rows of three" },
-  { value: HeroTileLayout.FEATURE, label: "One tall + four", description: "Needs 5 tiles in stock, else rows of three" },
 ];
 
 const WIDE_LABELS: Record<string, string> = { EXPLORE_GRID: "Wide tile (spans two columns)", STORE_GRID: "Wide tile (fills the wide row)" };
@@ -124,8 +119,6 @@ function ItemFields({ values, patch }: FieldsProps) {
 /** Settings specific to the section type; types without phone settings render nothing */
 export function ConfigFields({ values, patch }: FieldsProps) {
   switch (values.type) {
-    case "FESTIVE_HERO":
-      return <SelectField label="Tile layout" value={values.tileLayout} options={HERO_LAYOUT_OPTIONS} onChange={(tileLayout) => patch({ tileLayout: tileLayout as FormValues["tileLayout"] })} />;
     case "PRODUCT_ROW": return <ProductRowFields values={values} patch={patch} />;
     case "TABBED_ROW":
     case "EXPLORE_GRID":

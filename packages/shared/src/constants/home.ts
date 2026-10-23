@@ -74,9 +74,6 @@ export const SectionHeaderStyle = { PLAIN: "PLAIN", BANNER: "BANNER", ARTWORK: "
 export type SectionHeaderStyle = (typeof SectionHeaderStyle)[keyof typeof SectionHeaderStyle];
 
 /** How a festival hero lays out its tiles: rows of three, or one tall tile beside a 2×2 block (exactly 5 tiles) */
-export const HeroTileLayout = { GRID: "GRID", FEATURE: "FEATURE" } as const;
-export type HeroTileLayout = (typeof HeroTileLayout)[keyof typeof HeroTileLayout];
-
 export const TabRailStyle = { ICON_CARD: "ICON_CARD", ICON_UNDERLINE: "ICON_UNDERLINE", PILL: "PILL" } as const;
 export type TabRailStyle = (typeof TabRailStyle)[keyof typeof TabRailStyle];
 

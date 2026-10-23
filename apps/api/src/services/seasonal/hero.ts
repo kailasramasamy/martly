@@ -1,7 +1,7 @@
 import { Prisma, type PrismaClient } from "../../../generated/prisma/client.js";
 import { orgSubcategoryCandidates } from "./candidates.js";
 import { designHero } from "./hero-designer.js";
-import { paintStrip, paintTile, stripTheme, uploadHeroArt, type HeroTheme } from "./hero-art.js";
+import { paintStrip, paintTile, uploadHeroArt, washTheme, type HeroTheme } from "./hero-art.js";
 
 type Translations = Record<string, Record<string, string> | undefined>;
 
@@ -45,9 +45,9 @@ export async function buildHero(
   const design = await designHero({ description, neighbours }, candidates);
   if (design.tiles.length === 0) return null;
 
-  const heroTheme = { ...stripTheme(design.themeColor), font: design.font };
+  const heroTheme = { ...washTheme(design.themeColor), font: design.font };
   const [strip, tileArt] = await Promise.all([
-    paintStrip(design.silhouetteScene, heroTheme.background),
+    paintStrip(design.silhouetteScene, heroTheme),
     Promise.all(design.tiles.map((t) => paintTile(t.artPrompt))),
   ]);
   const [heroImageUrl, tileUrls] = await Promise.all([

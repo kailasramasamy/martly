@@ -1,4 +1,4 @@
-import type { FestiveFont, HeroTileLayout, HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
+import type { FestiveFont, HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
 
 /** A section's text in other languages; the config-driven labels (headline, bands, offer) translate here too */
 type Translations = Record<string, {

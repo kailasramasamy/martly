@@ -4,6 +4,7 @@ import { router } from "expo-router";
 import { colors, fonts } from "../../constants/theme";
 import { useLanguage } from "../../lib/language-context";
 import { useStrings } from "../../lib/i18n/use-strings";
+import { usesTamilFont } from "../../lib/i18n/fonts";
 import { useShoppingList } from "../../lib/use-shopping-list";
 import { useReorder } from "../orders/use-reorder";
 import { useLastOrderId } from "../orders/use-last-order-id";
@@ -20,6 +21,7 @@ interface PillProps {
 }
 
 function Pill({ icon, label, onPress, onTint, count, busy }: PillProps) {
+  const { language } = useLanguage();
   return (
     <TouchableOpacity
       style={[styles.pill, onTint && styles.pillOnTint]} onPress={onPress} disabled={busy} activeOpacity={0.8}
@@ -30,8 +32,8 @@ function Pill({ icon, label, onPress, onTint, count, busy }: PillProps) {
         {/* On the icon's corner, so a long (Tamil) label keeps the pill's width */}
         {count ? <View style={styles.count}><Text style={styles.countText}>{count}</Text></View> : null}
       </View>
-      {/* Tamil labels run long: wrap to two lines before shrinking much */}
-      <Text style={styles.label} numberOfLines={2} adjustsFontSizeToFit minimumFontScale={0.85}>{label}</Text>
+      {/* English fits one line, shrinking a touch if needed; Tamil labels run long, so they wrap to two lines first */}
+      <Text style={styles.label} numberOfLines={usesTamilFont(language) ? 2 : 1} adjustsFontSizeToFit minimumFontScale={0.85}>{label}</Text>
     </TouchableOpacity>
   );
 }
@@ -68,13 +70,13 @@ const styles = StyleSheet.create({
   // Spans the search bar's width: equal pills, each shrinking a long (Tamil) label rather than cutting it
   row: { flexDirection: "row", gap: 8, marginTop: 10 },
   pill: {
-    flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, minHeight: 44, paddingLeft: 6, paddingRight: 10, borderRadius: 22,
+    flex: 1, flexDirection: "row", alignItems: "center", gap: 6, minHeight: 44, paddingHorizontal: 6, borderRadius: 22,
     backgroundColor: "#f0fdfa", borderWidth: 1, borderColor: "#99f6e4",
   },
   pillOnTint: { backgroundColor: "rgba(255,255,255,0.92)", borderColor: "rgba(255,255,255,0.6)" },
   icon: { width: 28, height: 28, borderRadius: 14, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" },
   iconOnTint: { backgroundColor: colors.primaryDark },
-  label: { flexShrink: 1, fontSize: 14, lineHeight: 17, fontFamily: fonts.bold, color: colors.primaryDark },
+  label: { flexShrink: 1, fontSize: 13, lineHeight: 16, fontFamily: fonts.bold, color: colors.primaryDark },
   count: {
     position: "absolute", top: -6, left: -6, minWidth: 18, height: 18, borderRadius: 9, paddingHorizontal: 4,
     backgroundColor: colors.accent, alignItems: "center", justifyContent: "center", borderWidth: 1.5, borderColor: "#ffffff",

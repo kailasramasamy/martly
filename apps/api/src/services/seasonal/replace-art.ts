@@ -31,11 +31,11 @@ export async function replaceBannerImage(prisma: PrismaClient, collection: Banne
   return art;
 }
 
-/** Swaps the hero's silhouette strip, recolouring the upload into tones of the hero's theme colour. */
+/** Swaps the hero's silhouette strip, recolouring the upload into faint ink on the hero's wash. */
 export async function replaceHeroBackground(prisma: PrismaClient, collection: { id: string; slug: string; heroTheme: unknown }, image: Buffer) {
   const theme = collection.heroTheme as HeroTheme | null;
   if (!theme) throw new ArtReplaceError("This collection has no festive hero");
-  const heroImageUrl = await uploadHeroArt(await prepareStrip(image, theme.background), collection.slug, "strip");
+  const heroImageUrl = await uploadHeroArt(await prepareStrip(image, theme), collection.slug, "strip");
   await prisma.collection.update({ where: { id: collection.id }, data: { heroImageUrl } });
   return { heroImageUrl, heroTheme: theme };
 }

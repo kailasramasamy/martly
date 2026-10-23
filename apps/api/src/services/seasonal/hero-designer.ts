@@ -6,7 +6,7 @@ import type { SubcategoryCandidate } from "./candidates.js";
 import type { HeroTheme } from "./hero-art.js";
 
 const MODEL = "claude-sonnet-5-5";
-const GRID_COLUMNS = 3;
+const MIN_TILES = 3;
 const MAX_TILES = 6;
 
 const TileSchema = z.object({
@@ -21,32 +21,31 @@ const HeroSchema = z.object({
   heroTitleTa: z.string().describe("natural Tamil headline"),
   heroKicker: z.string().describe("short line above the headline, 2-5 words, Sentence case, e.g. 'Nine nights of devotion'"),
   heroKickerTa: z.string().describe("natural Tamil kicker"),
-  heroSubtitle: z.string().describe("one line under the headline, 4-9 words, Sentence case, what shoppers get, e.g. 'Fasting staples, pooja needs and sweets'"),
+  heroSubtitle: z.string().describe("one line for the festival's campaign card, 4-9 words, Sentence case, what shoppers get, e.g. 'Fasting staples, pooja needs and sweets'"),
   heroSubtitleTa: z.string().describe("natural Tamil subtitle"),
   silhouetteScene: z.string().describe("the festive silhouette strip's motifs, e.g. 'garba dancers twirling dandiya sticks, hanging diyas, string lights and marigold torans'"),
   font: z.enum(["PLAYFAIR", "YATRA", "KALAM", "LOBSTER"]).describe("headline typeface that suits the festival"),
-  themeColor: z.string().describe("hex of the deep, rich festive colour filling the whole block, white text must read on it, e.g. '#1f7a4d'"),
-  tiles: z.array(TileSchema).describe(`exactly ${MAX_TILES} tiles, or ${GRID_COLUMNS} if the catalog only supports a few themes`),
+  themeColor: z.string().describe("hex of the rich festive hue the block is tinted with, e.g. '#1f7a4d'"),
+  tiles: z.array(TileSchema).describe(`${MIN_TILES}-${MAX_TILES} tiles`),
 });
 export type HeroDesign = z.infer<typeof HeroSchema>;
 
 const SYSTEM = `You design the festive top section of the home screen of Martly, a grocery delivery app for neighbourhood
-stores in India. The section is a solid festive colour with a silhouette strip carrying a three-line greeting (kicker, headline,
-subtitle), then a 3-column grid of shopping tiles.
+stores in India. The section is a pale wash of a festive hue with a faint silhouette strip behind a short greeting (kicker
+and headline), then a row of shopping tiles.
 
-Group the in-stock subcategories shoppers will buy for the occasion into ${MAX_TILES} themed tiles (${GRID_COLUMNS} if only a few
-themes are credible), most important first: rituals and pooja, festive cooking, sweets and snacks, gifting, decor,
-kids, hosting. Each tile opens 1-4 subcategories; a subcategory belongs to at most one tile. Respect the event's
+Group the in-stock subcategories shoppers will buy for the occasion into ${MIN_TILES}-${MAX_TILES} themed tiles, as many as
+the catalog credibly supports, most important first: rituals and pooja, festive cooking, sweets and snacks, gifting,
+decor, kids, hosting. Each tile opens 1-4 subcategories; a subcategory belongs to at most one tile. Respect the event's
 guidance strictly; never pick alcohol, tobacco, or anything out of place for the occasion.
 
 Each tile's artPrompt names 2-4 physical items that read instantly at thumbnail size: generic products and
 festival props only, never brand packaging, logos, text, or people.
 
-The whole block (greeting, search bar, a thin silhouette strip, headline and tiles) sits on one solid themeColor:
-a deep, saturated colour that suits the festival (e.g. Navratri green or magenta, Diwali maroon, Christmas pine)
-and that white text reads clearly on. silhouetteScene lists the motifs for a wide, low strip of tone-on-tone
-silhouettes between the search bar and the tiles: people celebrating, lamps, string lights, torans, the season's
-weather. It is drawn in lighter and darker shades of the theme colour, so describe shapes, not colours.
+themeColor is a rich hue that suits the festival (e.g. Navratri green or magenta, Diwali maroon, Christmas pine); the
+app turns it into a pale wash behind the block and a deep shade of it for the text. silhouetteScene lists the motifs
+for a wide, low strip of faint silhouettes running behind the greeting: people celebrating, lamps, string lights,
+torans, the season's weather. It is drawn in shades of the theme hue, so describe shapes, not colours.
 
 font sets the headline's character: PLAYFAIR (elegant serif; the safe default, good for most festivals and seasons),
 YATRA (Indian, Devanagari-inspired display; Navratri, Diwali, Dussehra, Ganesh Chaturthi), KALAM (warm handwriting;
@@ -89,13 +88,13 @@ export async function designHero(brief: HeroBrief, candidates: SubcategoryCandid
   return withValidTiles(response.parsed_output, new Set(candidates.map((c) => c.id)));
 }
 
-// Drops unknown or reused subcategories, then keeps whole grid rows so the layout never has a gap
+// Drops unknown or reused subcategories, and tiles left with none
 function withValidTiles(design: HeroDesign, known: Set<string>): HeroDesign {
   const used = new Set<string>();
   const tiles = design.tiles.flatMap((tile) => {
     const ids = tile.subcategoryIds.filter((id) => known.has(id) && !used.has(id));
     ids.forEach((id) => used.add(id));
     return ids.length ? [{ ...tile, subcategoryIds: ids }] : [];
-  }).slice(0, MAX_TILES);
-  return { ...design, tiles: tiles.slice(0, tiles.length - (tiles.length % GRID_COLUMNS)) };
+  });
+  return { ...design, tiles: tiles.slice(0, MAX_TILES) };
 }
