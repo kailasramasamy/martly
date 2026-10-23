@@ -119,7 +119,6 @@ export const home = {
   noStoresYet: "No stores yet",
   comingSoon: "Martly is coming to your area soon. Pull down to check again.",
   chooseYourStore: "Choose your store",
-  tapStoreCaption: "Tap a store to see its offers and delivery slots",
   notDeliverYet: "Doesn't deliver to your location yet",
   offerBanner: "Offer banner",
   storePoster: "Store poster",

@@ -2,17 +2,18 @@ import { memo } from "react";
 import { ActivityIndicator, StyleSheet, View } from "react-native";
 import { colors } from "../../constants/theme";
 import { FEATURED_CARD_WIDTH } from "../FeaturedProductCard";
-import StoreDiscovery from "../store-discovery/StoreDiscovery";
+import StoreDiscovery, { type StoreDiscoveryState } from "../store-discovery/StoreDiscovery";
 
 interface Props {
   hasStore: boolean;
   /** First page still on its way: placeholder cards */
   loading: boolean;
   loadingMore: boolean;
+  discovery: StoreDiscoveryState;
 }
 
 /** Below the sections: the first-load placeholders, the next page's spinner, or store discovery when no store is chosen */
-export const HomeListFooter = memo(function HomeListFooter({ hasStore, loading, loadingMore }: Props) {
+export const HomeListFooter = memo(function HomeListFooter({ hasStore, loading, loadingMore, discovery }: Props) {
   return (
     <View>
       {hasStore && loading && (
@@ -29,7 +30,7 @@ export const HomeListFooter = memo(function HomeListFooter({ hasStore, loading, 
         </View>
       )}
       {loadingMore && <ActivityIndicator style={styles.more} color={colors.primary} />}
-      {!hasStore && <StoreDiscovery />}
+      {!hasStore && <StoreDiscovery discovery={discovery} />}
       <View style={styles.spacer} />
     </View>
   );

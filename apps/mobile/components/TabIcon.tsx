@@ -39,7 +39,14 @@ export function TabSceneLayout({ children }: { children: ReactNode }) {
  * slides down with it when the bar hides. Report its height via `onLayout` to pad the list above it.
  * While its screen is in view, toasts rise above it instead of covering it.
  */
-export function TabBottomDock({ children, onLayout }: { children: ReactNode; onLayout?: (e: LayoutChangeEvent) => void }) {
+interface TabBottomDockProps {
+  children: ReactNode;
+  onLayout?: (e: LayoutChangeEvent) => void;
+  /** The screen has hidden the tab bar, so the dock sits on the screen's bottom edge; its content clears the home indicator */
+  noTabBar?: boolean;
+}
+
+export function TabBottomDock({ children, onLayout, noTabBar }: TabBottomDockProps) {
   const { height } = useTabBarHeight();
   const { progress } = useTabBarProgress();
   const translateY = progress.interpolate({ inputRange: [0, 1], outputRange: [0, height] });
@@ -55,7 +62,7 @@ export function TabBottomDock({ children, onLayout }: { children: ReactNode; onL
 
   return (
     <Animated.View
-      style={[styles.dock, { bottom: height, transform: [{ translateY }] }]}
+      style={[styles.dock, noTabBar ? { bottom: 0 } : { bottom: height, transform: [{ translateY }] }]}
       onLayout={(e) => {
         setOwnHeight(e.nativeEvent.layout.height);
         onLayout?.(e);

@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { View, Text, Pressable, Animated, Image, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { colors, fonts } from "../../constants/theme";
 import { useStore } from "../../lib/store-context";
 import { useAuth } from "../../lib/auth-context";
@@ -24,53 +25,48 @@ function FadeIn({ index, children }: { index: number; children: ReactNode }) {
   return <Animated.View style={{ opacity: progress, transform: [{ translateY }] }}>{children}</Animated.View>;
 }
 
-function SectionTitle({ title, caption }: { title: string; caption?: string }) {
-  return (
-    <View style={styles.sectionHeader}>
-      <Text style={styles.sectionTitle}>{title}</Text>
-      {caption ? <Text style={styles.sectionCaption}>{caption}</Text> : null}
-    </View>
-  );
-}
-
 function fastestFirst(stores: Store[]): Store[] {
   return [...stores].sort(
     (a, b) => (a.expressEtaMinutes ?? Infinity) - (b.expressEtaMinutes ?? Infinity) || (a.distance ?? 0) - (b.distance ?? 0),
   );
 }
 
-interface HeroProps {
+interface GreetingProps {
   firstName?: string;
-  headline: string;
+  status: { text: string; tone: "good" | "warn" };
   onEnableLocation?: () => void;
 }
 
-function Hero({ firstName, headline, onEnableLocation }: HeroProps) {
+/** A light greeting and one line on whether anything delivers here, so the stores come into view straight away */
+function Greeting({ firstName, status, onEnableLocation }: GreetingProps) {
   const t = useStrings("home");
+  const warn = status.tone === "warn";
   return (
-    <View style={styles.hero}>
-      <View style={[styles.heroOrb, styles.heroOrbLarge]} />
-      <View style={[styles.heroOrb, styles.heroOrbSmall]} />
-      <Text style={styles.heroGreeting}>
-        {getGreeting()}{firstName ? `, ${firstName}` : ""}
-      </Text>
-      <Image source={smile} style={styles.heroSmile} resizeMode="contain" />
-      <Text style={styles.heroHeadline}>{headline}</Text>
-      {onEnableLocation && (
-        <Pressable style={({ pressed }) => [styles.heroBtn, pressed && { opacity: 0.85 }]} onPress={onEnableLocation}>
-          <Ionicons name="navigate" size={15} color={colors.primary} />
-          <Text style={styles.heroBtnText}>{t.enableLocation}</Text>
-        </Pressable>
-      )}
+    <View style={styles.greeting}>
+      <View style={styles.greetingName}>
+        <Text style={styles.greetingText}>
+          {getGreeting()}{firstName ? `, ${firstName}` : ""}
+        </Text>
+        <Image source={smile} style={styles.smile} resizeMode="contain" />
+      </View>
+      <View style={[styles.status, warn ? styles.statusWarn : styles.statusGood]}>
+        <Ionicons name={warn ? "information-circle-outline" : "flash"} size={16} color={warn ? colors.textSecondary : colors.primary} />
+        <Text style={[styles.statusText, { color: warn ? colors.text : colors.primary }]}>{status.text}</Text>
+        {onEnableLocation && (
+          <Pressable style={({ pressed }) => [styles.locationBtn, pressed && { opacity: 0.85 }]} onPress={onEnableLocation} hitSlop={6}>
+            <Text style={styles.locationBtnText}>{t.enableLocation}</Text>
+          </Pressable>
+        )}
+      </View>
     </View>
   );
 }
 
-function headlineFor(locationDenied: boolean, deliverable: Store[]): string {
+function statusFor(locationDenied: boolean, deliverable: Store[]): GreetingProps["status"] {
   const t = strings("home");
-  if (locationDenied) return t.turnOnLocation;
-  if (deliverable.length === 0) return t.noDelivery;
-  return t.storesDeliver(deliverable.length, fastestFirst(deliverable)[0].expressEtaMinutes);
+  if (locationDenied) return { text: t.turnOnLocation, tone: "warn" };
+  if (deliverable.length === 0) return { text: t.noDelivery, tone: "warn" };
+  return { text: t.storesDeliver(deliverable.length, fastestFirst(deliverable)[0].expressEtaMinutes), tone: "good" };
 }
 
 /** Stores in the order shoppers should see them: those that deliver (fastest first), else every store, then the rest */
@@ -85,13 +81,38 @@ function browseOrder(stores: Store[], nearbyStores: Store[]) {
   return { deliverable, ordered, blocked };
 }
 
-export default function StoreDiscovery() {
-  const { stores, nearbyStores, locationStatus, requestLocation, setSelectedStore } = useStore();
+/** Which store is being previewed, shared by the discovery list and the button docked above the tab bar */
+export function useStoreDiscovery() {
+  const { stores, nearbyStores } = useStore();
+  const [previewId, setPreviewId] = useState<string | null>(null);
+  return useMemo(() => {
+    const { deliverable, ordered, blocked } = browseOrder(stores, nearbyStores);
+    const preview = ordered.find((s) => s.id === previewId) ?? ordered[0];
+    return { deliverable, ordered, blocked, preview, setPreviewId };
+  }, [stores, nearbyStores, previewId]);
+}
+
+export type StoreDiscoveryState = ReturnType<typeof useStoreDiscovery>;
+
+/** Shop at the previewed store; lives in the bottom dock so it never scrolls away */
+export function StoreDiscoveryButton({ discovery }: { discovery: StoreDiscoveryState }) {
+  const { setSelectedStore } = useStore();
+  const t = useStrings("home");
+  const insets = useSafeAreaInsets();
+  const { preview, blocked } = discovery;
+  if (!preview) return null;
+  return (
+    <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 10) }]}>
+      <ChooseStoreButton store={preview} blockedReason={blocked.has(preview.id) ? t.notDeliverYet : null} onChoose={setSelectedStore} />
+    </View>
+  );
+}
+
+export default function StoreDiscovery({ discovery }: { discovery: StoreDiscoveryState }) {
+  const { stores, locationStatus, requestLocation, setSelectedStore } = useStore();
   const { user } = useAuth();
   const t = useStrings("home");
-  const [previewId, setPreviewId] = useState<string | null>(null);
-  const { deliverable, ordered, blocked } = browseOrder(stores, nearbyStores);
-  const preview = ordered.find((s) => s.id === previewId) ?? ordered[0];
+  const { deliverable, ordered, blocked, preview, setPreviewId } = discovery;
   // Nothing chosen yet, so an offer simply picks its store; out-of-area stores can't be picked
   const tapOffer = (store: Store, banner: StoreBanner) => {
     if (blocked.has(store.id) || !hasBannerTarget(banner)) return;
@@ -112,21 +133,16 @@ export default function StoreDiscovery() {
   return (
     <View style={styles.container}>
       <FadeIn index={0}>
-        <Hero
+        <Greeting
           firstName={user?.name?.split(" ")[0]}
-          headline={headlineFor(locationStatus === "denied", deliverable)}
+          status={statusFor(locationStatus === "denied", deliverable)}
           onEnableLocation={locationStatus === "denied" ? requestLocation : undefined}
         />
       </FadeIn>
       <FadeIn index={1}>
-        <SectionTitle title={t.chooseYourStore} caption={t.tapStoreCaption} />
+        <Text style={styles.sectionTitle}>{t.chooseYourStore}</Text>
         <StoreBrowser stores={ordered} activeId={preview?.id ?? null} onPreview={(st) => setPreviewId(st.id)} isMuted={(st) => blocked.has(st.id)} inset={16} onBannerPress={tapOffer} />
       </FadeIn>
-      {preview && (
-        <FadeIn index={2}>
-          <ChooseStoreButton store={preview} blockedReason={blocked.has(preview.id) ? t.notDeliverYet : null} onChoose={setSelectedStore} />
-        </FadeIn>
-      )}
     </View>
   );
 }
@@ -134,27 +150,19 @@ export default function StoreDiscovery() {
 const styles = StyleSheet.create({
   container: { paddingHorizontal: 16, paddingTop: 16, gap: 12 },
 
-  hero: {
-    backgroundColor: colors.primary, borderRadius: 24, padding: 22, paddingTop: 24, overflow: "hidden",
-  },
-  heroOrb: { position: "absolute", borderRadius: 999, backgroundColor: "rgba(255,255,255,0.07)" },
-  heroOrbLarge: { width: 220, height: 220, right: -70, top: -90 },
-  heroOrbSmall: { width: 120, height: 120, right: 40, bottom: -70, backgroundColor: "rgba(251,191,36,0.14)" },
-  heroGreeting: { fontFamily: fonts.extrabold, fontSize: 26, color: "#fff", letterSpacing: -0.5 },
-  heroSmile: { width: 63, height: 12, marginTop: 6 },
-  heroHeadline: {
-    fontFamily: fonts.medium, fontSize: 15, lineHeight: 22, color: "rgba(255,255,255,0.9)",
-    marginTop: 12, maxWidth: "88%",
-  },
-  heroBtn: {
-    flexDirection: "row", alignItems: "center", gap: 7, alignSelf: "flex-start",
-    backgroundColor: "#fff", borderRadius: 12, paddingHorizontal: 16, height: 44, marginTop: 16,
-  },
-  heroBtnText: { fontFamily: fonts.bold, fontSize: 14.5, color: colors.primary },
+  greeting: { gap: 10 },
+  greetingName: { alignSelf: "flex-start" },
+  greetingText: { fontFamily: fonts.extrabold, fontSize: 22, color: colors.text, letterSpacing: -0.4 },
+  smile: { width: 52, height: 10, marginTop: 4 },
+  status: { flexDirection: "row", alignItems: "center", gap: 8, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 9 },
+  statusWarn: { backgroundColor: "#f1f5f9" },
+  statusGood: { backgroundColor: "#f0fdfa" },
+  statusText: { flex: 1, fontFamily: fonts.semibold, fontSize: 13, lineHeight: 18 },
+  locationBtn: { backgroundColor: colors.primary, borderRadius: 10, paddingHorizontal: 12, height: 34, justifyContent: "center" },
+  locationBtnText: { fontFamily: fonts.bold, fontSize: 13, color: "#fff" },
+  dock: { paddingHorizontal: 16, paddingTop: 10, backgroundColor: "#fff", borderTopWidth: 1, borderTopColor: "#f1f5f9" },
 
-  sectionHeader: { marginTop: 12, marginBottom: 10 },
-  sectionTitle: { fontFamily: fonts.extrabold, fontSize: 18, color: colors.text, letterSpacing: -0.2 },
-  sectionCaption: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, marginTop: 2 },
+  sectionTitle: { fontFamily: fonts.extrabold, fontSize: 18, color: colors.text, letterSpacing: -0.2, marginTop: 8, marginBottom: 10 },
 
   empty: { alignItems: "center", padding: 40, gap: 8 },
   emptyTitle: { fontFamily: fonts.bold, fontSize: 18, color: colors.text, marginTop: 8 },

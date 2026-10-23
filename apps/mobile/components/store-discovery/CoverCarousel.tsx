@@ -65,8 +65,12 @@ export function CoverCarousel({ store, brand, height, overlay, onBannerPress, on
           }}
         />
       )}
-      <LinearGradient colors={["rgba(15,23,42,0.35)", "transparent"]} style={[styles.shade, { height: height * 0.5 }]} pointerEvents="none" />
-      <View style={styles.overlay} pointerEvents="none">{overlay}</View>
+      {overlay && (
+        <>
+          <LinearGradient colors={["rgba(15,23,42,0.35)", "transparent"]} style={[styles.shade, { height: height * 0.5 }]} pointerEvents="none" />
+          <View style={styles.overlay} pointerEvents="none">{overlay}</View>
+        </>
+      )}
       {pages.length > 1 && (
         <View style={styles.footer} pointerEvents="none">
           {offers > 0 && index === 0 && <Text style={styles.hint}>{t.swipeForOffers(offers)}</Text>}

@@ -32,6 +32,7 @@ import { refreshBrandSpotlight } from "../../lib/use-brand-spotlight";
 import type { HomeTheme } from "@martly/shared/types";
 import { TabBottomDock } from "../../components/TabIcon";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { StoreDiscoveryButton, useStoreDiscovery, type StoreDiscoveryState } from "../../components/store-discovery/StoreDiscovery";
 
 const renderSection: ListRenderItem<MobileHomeSection> = ({ item }) => <HomeSectionView section={item} />;
 const keyOf = (section: MobileHomeSection) => section.id;
@@ -125,12 +126,13 @@ interface ListProps {
   headerOffset: number;
   /** False while there is no store to render against, e.g. the render where it clears before the stale sections do */
   ready: boolean;
+  discovery: StoreDiscoveryState;
   onHeroInView: (inView: boolean) => void;
 }
 
 const HERO_VIEWABILITY = { itemVisiblePercentThreshold: 30 };
 
-function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, ready, onHeroInView }: ListProps) {
+function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, ready, discovery, onHeroInView }: ListProps) {
   const { home, refreshing, onRefresh } = data;
   const { tabBarScroll } = scroll;
   const onViewableItemsChanged = useCallback(({ viewableItems }: { viewableItems: ViewToken<MobileHomeSection>[] }) => {
@@ -156,7 +158,7 @@ function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, ready
       maxToRenderPerBatch={4}
       removeClippedSubviews={Platform.OS === "android"}
       ListFooterComponent={
-        <HomeListFooter hasStore={Boolean(home.storeId)} loading={home.loading && home.sections.length === 0} loadingMore={home.loadingMore} />
+        <HomeListFooter hasStore={Boolean(home.storeId)} loading={home.loading && home.sections.length === 0} loadingMore={home.loadingMore} discovery={discovery} />
       }
       refreshControl={
         <RefreshControl
@@ -177,6 +179,7 @@ export default function HomeScreen() {
   const scroll = useHomeScroll();
   const header = useHeaderHeights(scroll.tabBarScroll.headerCollapsed);
   const [heroInView, setHeroInView] = useState(true);
+  const discovery = useStoreDiscovery();
   const { env, festive } = useSectionEnv(data, header.expanded, heroInView);
   useLightStatusBar(Boolean(festive?.dark));
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
@@ -198,14 +201,15 @@ export default function HomeScreen() {
           searchHints={chrome?.searchHints}
         />
         <HomeSectionProvider value={env}>
-          <SectionList data={data} scroll={scroll} dockHeight={dockHeight} festiveInk={festive?.title ?? null} headerOffset={header.expanded} ready={env !== null} onHeroInView={setHeroInView} />
+          <SectionList data={data} scroll={scroll} dockHeight={dockHeight} festiveInk={festive?.title ?? null} headerOffset={header.expanded} ready={env !== null} discovery={discovery} onHeroInView={setHeroInView} />
         </HomeSectionProvider>
         {/* iOS draws the pull-to-refresh spinner under the floating festive header (its offset is Android-only), so show one below it */}
         {festive && Platform.OS === "ios" && data.refreshing ? (
           <ActivityIndicator color={festive.title} style={[styles.festiveRefresh, { top: header.expanded + 12 }]} />
         ) : null}
         <BackToTopPill visible={scroll.showBackToTop} top={header.height + 8} onPress={scroll.scrollToTop} />
-        <TabBottomDock onLayout={(e) => setDockHeight(e.nativeEvent.layout.height)}>
+        <TabBottomDock onLayout={(e) => setDockHeight(e.nativeEvent.layout.height)} noTabBar={!selectedStore}>
+          {!selectedStore && <StoreDiscoveryButton discovery={discovery} />}
           <FreeDeliveryBar threshold={chrome?.freeDeliveryThreshold ?? null} storeId={selectedStore?.id} />
           <FloatingCart aboveTabBar />
         </TabBottomDock>
