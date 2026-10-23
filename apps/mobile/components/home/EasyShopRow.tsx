@@ -1,32 +1,14 @@
-import { useCallback, useState } from "react";
 import { View, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { router, useFocusEffect } from "expo-router";
+import { router } from "expo-router";
 import { colors, fonts } from "../../constants/theme";
-import { api, ApiError } from "../../lib/api";
-import { useAuth } from "../../lib/auth-context";
 import { useLanguage } from "../../lib/language-context";
 import { useStrings } from "../../lib/i18n/use-strings";
 import { useShoppingList } from "../../lib/use-shopping-list";
 import { useReorder } from "../orders/use-reorder";
+import { useLastOrderId } from "../orders/use-last-order-id";
 import { BuyAgainSheet } from "../order/BuyAgainSheet";
 import { ConfirmSheet } from "../ConfirmSheet";
-
-/** The customer's latest delivered order, for "Last order"; null for guests and first-time shoppers */
-function useLastOrderId() {
-  const { isAuthenticated } = useAuth();
-  const [id, setId] = useState<string | null>(null);
-  useFocusEffect(useCallback(() => {
-    if (!isAuthenticated) return setId(null);
-    api.getList<{ id: string }>("/api/v1/orders?pageSize=1&status=DELIVERED")
-      .then((res) => setId(res.data[0]?.id ?? null))
-      .catch((err) => {
-        // Only hides the shortcut; Home itself must not fail over it
-        if (!(err instanceof ApiError || err instanceof TypeError)) throw err;
-      });
-  }, [isAuthenticated]));
-  return id;
-}
 
 interface PillProps {
   icon: keyof typeof Ionicons.glyphMap;

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useCart } from "../../lib/cart-context";
 import { getBestPrice, useMembership } from "../../lib/membership-context";
 import { api } from "../../lib/api";
-import type { CartReview, StoreProduct } from "../../lib/types";
+import type { CartReview, PackDeal, StoreProduct } from "../../lib/types";
 
 const REFETCH_DELAY_MS = 300;
 
@@ -21,13 +21,16 @@ function listPrice(sp: StoreProduct) {
   return Math.max(Number(sp.variant.mrp ?? 0), Number(sp.price));
 }
 
-// Asks the store about the cart's lines (debounced) whenever they or the gap change, plus "also bought" for the rail
+// Asks the store about the cart's lines (debounced) whenever they, their quantities or the gap change, plus "also bought"
 function useReviewFetch(gapKey: number | null) {
-  const { storeId, items } = useCart();
+  const { storeId, items, totalAmount, pendingCoupon } = useCart();
   // With the lines it was asked about, so a line added since isn't taken for one the store dropped
   const [review, setReview] = useState<(CartReview & { asked: Set<string> }) | null>(null);
   const [alsoBought, setAlsoBought] = useState<StoreProduct[]>([]);
   const ids = items.map((i) => i.storeProductId).join(",");
+  const linesKey = items.map((i) => `${i.storeProductId}:${i.quantity}`).join(",");
+  // Whole rupees, so a reprice by paise doesn't refetch
+  const itemTotal = Math.round(totalAmount);
   const productIds = [...new Set(items.map((i) => i.productId))].join(",");
 
   useEffect(() => {
@@ -38,9 +41,12 @@ function useReviewFetch(gapKey: number | null) {
     }
     let live = true;
     const timer = setTimeout(() => {
-      const asked = ids.split(",");
-      api.post<CartReview>("/api/v1/cart/review", { storeId, storeProductIds: asked, gap: gapKey ?? undefined })
-        .then((res) => live && setReview({ ...res.data, asked: new Set(asked) }))
+      const lines = linesKey.split(",").map((entry) => {
+        const [storeProductId, quantity] = entry.split(":");
+        return { storeProductId, quantity: Number(quantity) };
+      });
+      api.post<CartReview>("/api/v1/cart/review", { storeId, lines, gap: gapKey ?? undefined, itemTotal: itemTotal || undefined, couponCode: pendingCoupon ?? undefined })
+        .then((res) => live && setReview({ ...res.data, asked: new Set(lines.map((l) => l.storeProductId)) }))
         .catch(() => {});
       api.get<StoreProduct[]>(`/api/v1/stores/${storeId}/frequently-bought-together?productIds=${productIds}&exclude=${ids}&limit=6`)
         .then((res) => live && setAlsoBought(res.data))
@@ -50,7 +56,7 @@ function useReviewFetch(gapKey: number | null) {
       live = false;
       clearTimeout(timer);
     };
-  }, [storeId, ids, productIds, gapKey]);
+  }, [storeId, ids, linesKey, productIds, gapKey, itemTotal, pendingCoupon]);
 
   return { review, alsoBought };
 }
@@ -84,7 +90,8 @@ function useRepricing(byId: Map<string, StoreProduct>) {
  * problems, totals the savings, and brings the suggestions shown under the items.
  */
 export function useCartReview(gap: number | null) {
-  const { items } = useCart();
+  const { items, replaceItem } = useCart();
+  const { isMember } = useMembership();
   // Whole rupees, so a price refresh that moves the gap by paise doesn't refetch
   const gapKey = gap != null && gap > 0 ? Math.ceil(gap) : null;
   const { review, alsoBought } = useReviewFetch(gapKey);
@@ -101,6 +108,12 @@ export function useCartReview(gap: number | null) {
     };
   };
 
+  const switchPack = ({ storeProductId, to, quantity }: PackDeal) => replaceItem(storeProductId, {
+    storeProductId: to.id, productId: to.product.id, productName: to.product.name, translations: to.product.translations,
+    variantId: to.variant.id, variantName: to.variant.name, price: getBestPrice(to, isMember),
+    imageUrl: to.product.imageUrl ?? to.variant.imageUrl, quantity,
+  });
+
   const savings = items.reduce((sum, item) => {
     const sp = byId.get(item.storeProductId);
     return sp ? sum + Math.max(0, listPrice(sp) - item.price) * item.quantity : sum;
@@ -112,6 +125,10 @@ export function useCartReview(gap: number | null) {
     hasUnavailable: items.some((i) => statusOf(i.storeProductId, i.quantity, i.price).unavailable),
     forgotten: review?.forgotten ?? [],
     gapFillers: gapKey ? review?.gapFillers ?? [] : [],
+    switchPack,
+    packDealFor: (storeProductId: string) => review?.packDeals.find((d) => d.storeProductId === storeProductId) ?? null,
+    coupon: review?.coupon ?? null,
+    plusOffer: review?.plusOffer ?? null,
     alsoBought,
   };
 }

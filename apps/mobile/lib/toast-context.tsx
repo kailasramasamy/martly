@@ -5,14 +5,14 @@ import { Ionicons } from "@expo/vector-icons";
 
 type ToastVariant = "default" | "info" | "success" | "error";
 
-/** A button on the toast, e.g. Undo; the toast stays a little longer so there's time to tap it */
+/** A button on the toast, e.g. Undo; the toast stays a little longer so there's time to tap one */
 interface ToastAction {
   label: string;
   onPress: () => void;
 }
 
 interface ToastContextType {
-  show: (message: string, variant?: ToastVariant, action?: ToastAction) => void;
+  show: (message: string, variant?: ToastVariant, actions?: ToastAction[]) => void;
   /** Height of a bar docked above the tab bar on the screen in view (e.g. checkout), so toasts sit above it */
   setDockHeight: (height: number) => void;
 }
@@ -44,21 +44,21 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   const [, forceRender] = useState(0);
   const messageRef = useRef("");
   const variantRef = useRef<ToastVariant>("default");
-  const actionRef = useRef<ToastAction | undefined>(undefined);
+  const actionsRef = useRef<ToastAction[]>([]);
   const opacity = useRef(new Animated.Value(0)).current;
   const translateY = useRef(new Animated.Value(20)).current;
   const hideTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const lastShowTime = useRef(0);
 
   const hide = useCallback(() => {
-    actionRef.current = undefined;
+    actionsRef.current = [];
     Animated.parallel([
       Animated.timing(opacity, { toValue: 0, duration: 300, useNativeDriver: true }),
       Animated.timing(translateY, { toValue: 20, duration: 300, useNativeDriver: true }),
     ]).start(() => forceRender((n) => n + 1));
   }, [opacity, translateY]);
 
-  const show = useCallback((msg: string, v: ToastVariant = "default", action?: ToastAction) => {
+  const show = useCallback((msg: string, v: ToastVariant = "default", actions: ToastAction[] = []) => {
     const now = Date.now();
     const elapsed = now - lastShowTime.current;
     lastShowTime.current = now;
@@ -66,11 +66,11 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
     // Update content
     messageRef.current = msg;
     variantRef.current = v;
-    actionRef.current = action;
+    actionsRef.current = actions;
 
     // Reset hide timer
     if (hideTimer.current) clearTimeout(hideTimer.current);
-    hideTimer.current = setTimeout(hide, action ? Math.max(ACTION_VISIBLE_MS, visibleFor(msg, v)) : visibleFor(msg, v));
+    hideTimer.current = setTimeout(hide, actions.length > 0 ? Math.max(ACTION_VISIBLE_MS, visibleFor(msg, v)) : visibleFor(msg, v));
 
     if (elapsed < 500) {
       // Toast already visible — just swap content, no animation
@@ -94,10 +94,10 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   }, [opacity, translateY, hide]);
 
   const config = VARIANT_CONFIG[variantRef.current];
-  const action = actionRef.current;
-  const runAction = () => {
+  const actions = actionsRef.current;
+  const runAction = (action: ToastAction) => {
     if (hideTimer.current) clearTimeout(hideTimer.current);
-    action?.onPress();
+    action.onPress();
     hide();
   };
 
@@ -105,7 +105,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
     <ToastContext.Provider value={{ show, setDockHeight }}>
       {children}
       <Animated.View
-        pointerEvents={action ? "box-none" : "none"}
+        pointerEvents={actions.length > 0 ? "box-none" : "none"}
         style={[styles.wrapper, { bottom: insets.bottom + 72 + dockHeight, opacity, transform: [{ translateY }] }]}
       >
         <View
@@ -114,11 +114,11 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
         >
           <Ionicons name={config.icon} size={18} color={config.iconColor} style={styles.icon} />
           <Text style={styles.text}>{messageRef.current}</Text>
-          {action ? (
-            <TouchableOpacity onPress={runAction} hitSlop={{ top: 12, bottom: 12, left: 12, right: 12 }} accessibilityRole="button">
+          {actions.map((action) => (
+            <TouchableOpacity key={action.label} onPress={() => runAction(action)} hitSlop={{ top: 12, bottom: 12, left: 8, right: 8 }} accessibilityRole="button">
               <Text style={styles.action}>{action.label}</Text>
             </TouchableOpacity>
-          ) : null}
+          ))}
         </View>
       </Animated.View>
     </ToastContext.Provider>

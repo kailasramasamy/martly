@@ -1,5 +1,5 @@
 import type { BrandPick, HeroTileLayout } from "@martly/shared/constants";
-import type { CampaignTile, HomeTheme } from "@martly/shared/types";
+import type { CampaignTile, CouponOffer, HomeTheme } from "@martly/shared/types";
 import type { PaginatedResponse } from "@martly/shared/types";
 
 export interface Store {
@@ -84,6 +84,22 @@ export interface CartReview {
   forgotten: StoreProduct[];
   /** Items priced to close the gap to the minimum order or free delivery */
   gapFillers: StoreProduct[];
+  /** Bigger sizes of cart lines that cost less per kg / litre / piece */
+  packDeals: PackDeal[];
+  /** The best coupon that applies now, else the nearest to unlock; null without one in reach */
+  coupon: CouponOffer | null;
+  /** The cheapest plan with free delivery, for shoppers who aren't members */
+  plusOffer: { name: string; price: number; duration: MembershipPlan["duration"] } | null;
+}
+
+export interface PackDeal {
+  /** The cart line it replaces */
+  storeProductId: string;
+  to: StoreProduct;
+  quantity: number;
+  /** What the cart total goes up by (0 when the same amount simply costs less) */
+  extra: number;
+  saves: number;
 }
 
 export interface Translations {

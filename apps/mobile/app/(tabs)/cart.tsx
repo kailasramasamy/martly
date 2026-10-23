@@ -17,6 +17,8 @@ import { CartBill } from "../../components/cart/CartBill";
 import { OrderGoal } from "../../components/cart/OrderGoal";
 import { SuggestionRail } from "../../components/cart/SuggestionRail";
 import { useCartReview } from "../../components/cart/use-cart-review";
+import { CouponHint, PlusHint } from "../../components/cart/CartHints";
+import { EmptyCart } from "../../components/cart/EmptyCart";
 import { useRequireSignIn } from "../../lib/sign-in-context";
 import { useStrings } from "../../lib/i18n/use-strings";
 
@@ -27,7 +29,7 @@ export default function CartScreen() {
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
   const [dockHeight, setDockHeight] = useState(0);
   const router = useRouter();
-  const { store, storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem } = useCart();
+  const { store, storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem, pendingCoupon } = useCart();
   const removal = useCartRemoval();
   const { selectedStore } = useStore();
   const { freeDelivery: memberFreeDelivery } = useMembership();
@@ -44,7 +46,12 @@ export default function CartScreen() {
     : belowFreeDelivery ? { kind: "freeDelivery" as const, target: freeDeliveryThreshold! } : null;
   const review = useCartReview(goal ? goal.target - totalAmount : null);
   const deliveryFee = cartFreeDelivery ? 0 : baseDeliveryFee > 0 ? baseDeliveryFee : null;
-  const grandTotal = totalAmount + (deliveryFee ?? 0);
+  // The applied coupon comes off here too, as checkout will take it off; it's re-validated there
+  const coupon = review.coupon?.eligible && review.coupon.code === pendingCoupon
+    ? { code: review.coupon.code, amount: review.coupon.discount ?? 0 }
+    : null;
+  const grandTotal = totalAmount + (deliveryFee ?? 0) - (coupon?.amount ?? 0);
+  const savings = review.savings + (coupon?.amount ?? 0);
   // Below the minimum the bar is grey; unavailable lines turn it into the button that removes them
   const checkoutLocked = belowMinimum && !review.hasUnavailable;
   const removeUnavailable = () => {
@@ -55,21 +62,7 @@ export default function CartScreen() {
     else if (!belowMinimum) requireSignIn(() => router.push("/checkout"), { title: t.signInTitle, subtitle: t.signInSubtitle });
   };
 
-  if (items.length === 0) {
-    return (
-      <View style={styles.emptyContainer}>
-        <View style={styles.emptyIcon}>
-          <Ionicons name="cart-outline" size={64} color={colors.border} />
-        </View>
-        <Text style={styles.emptyTitle}>{t.emptyTitle}</Text>
-        <Text style={styles.emptySubtitle}>{t.emptySubtitle}</Text>
-        <TouchableOpacity style={styles.browseButton} onPress={() => router.push("/(tabs)")}>
-          <Ionicons name="storefront-outline" size={18} color="#fff" />
-          <Text style={styles.browseButtonText}>{t.browseStores}</Text>
-        </TouchableOpacity>
-      </View>
-    );
-  }
+  if (items.length === 0) return <EmptyCart />;
 
   return (
     <ProductActionsProvider store={store}>
@@ -98,6 +91,8 @@ export default function CartScreen() {
             <CartLine
               item={item}
               status={review.statusOf(item.storeProductId, item.quantity, item.price)}
+              deal={review.packDealFor(item.storeProductId)}
+              onSwitch={review.switchPack}
               onDecrement={() => (item.quantity === 1 ? removal.removeAt(index) : updateQuantity(item.storeProductId, item.quantity - 1))}
               onIncrement={() => updateQuantity(item.storeProductId, item.quantity + 1)}
               onRemove={() => removal.removeAt(index)}
@@ -110,13 +105,16 @@ export default function CartScreen() {
               <SuggestionRail title={t.gapRailTitle} products={review.gapFillers} />
               {review.forgotten.length === 0 && <SuggestionRail title={t.alsoBought} products={review.alsoBought} />}
               <RewardsReminder storeId={storeId ?? undefined} />
+              <CouponHint coupon={review.coupon} />
+              {!cartFreeDelivery && <PlusHint offer={review.plusOffer} />}
               <CartBill
                 itemTotal={totalAmount}
                 deliveryFee={deliveryFee}
                 freeDelivery={cartFreeDelivery}
                 memberFreeDelivery={memberFreeDelivery}
+                coupon={coupon}
                 grandTotal={grandTotal}
-                savings={review.savings}
+                savings={savings}
               />
             </View>
           }
@@ -135,7 +133,7 @@ export default function CartScreen() {
                 <Text style={styles.checkoutTotal}>{"\u20B9"}{grandTotal.toFixed(0)}</Text>
                 <Text style={styles.checkoutSubtext}>{t.total}</Text>
               </View>
-              {review.savings >= 1 && <Text style={styles.checkoutSaved}>{t.saved(review.savings.toFixed(0))}</Text>}
+              {savings >= 1 && <Text style={styles.checkoutSaved}>{t.saved(savings.toFixed(0))}</Text>}
             </View>
             <View style={styles.checkoutRight}>
               <Text style={styles.checkoutBtnText}>
@@ -163,53 +161,6 @@ export default function CartScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.surface },
-  // Empty state
-  emptyContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: colors.surface,
-    paddingHorizontal: spacing.xl,
-  },
-  emptyIcon: {
-    width: 120,
-    height: 120,
-    borderRadius: 60,
-    backgroundColor: colors.surface,
-    borderWidth: 2,
-    borderColor: colors.border,
-    borderStyle: "dashed",
-    justifyContent: "center",
-    alignItems: "center",
-    marginBottom: spacing.lg,
-  },
-  emptyTitle: {
-    fontSize: 20,
-    fontWeight: "700",
-    color: colors.text,
-    marginBottom: spacing.xs,
-  },
-  emptySubtitle: {
-    fontSize: fontSize.md,
-    color: colors.textSecondary,
-    textAlign: "center",
-    lineHeight: 20,
-  },
-  browseButton: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-    backgroundColor: colors.primary,
-    borderRadius: 12,
-    paddingVertical: 12,
-    paddingHorizontal: 24,
-    marginTop: spacing.lg,
-  },
-  browseButtonText: {
-    color: "#fff",
-    fontSize: fontSize.md,
-    fontWeight: "700",
-  },
   // Store header
   storeHeader: {
     flexDirection: "row",

@@ -72,6 +72,36 @@ for the OTP review login (`OTP_REVIEW_PHONE`), so milk, curd, eggs, bread, atta,
 - Price change: edit a cart line's price in admin, then reopen the cart.
 - Tamil strings.
 
-## Phase 2 (not built)
+## Phase 2
 
-Coupon hint, bigger-pack upsell, tap a line to open the product, move to wishlist on remove, Plus hint, a richer empty cart.
+`/cart/review` now takes `lines: [{ storeProductId, quantity }]` and `itemTotal`, and also returns:
+
+- **`packDeals`** (`services/pack-deals.ts`): for each line, the bigger size of the same product that costs least
+  per g / ml / piece. Sizes are compared in a common unit (KG/GRAM, LITER/ML, PIECE/DOZEN; packs and bundles
+  aren't compared). The bigger size must cover at least what the line holds, be at most 3× it, and save ₹2 or
+  more. The line shows "Switch to 1 × 1kg · save ₹34" (same amount, costs less) or "Get 1kg for ₹37 more ·
+  save ₹34". Switch swaps the line in place (`cart-context.replaceItem`).
+- **`coupon`**: the best advertised coupon that applies now, else the nearest one to unlock, if it's within
+  max(₹150, cart total). Apply saves it as the pending coupon that checkout applies, the same as a coupon
+  saved from Home.
+- **`plusOffer`**: for non-members, the cheapest active plan with free delivery. It's shown only while the cart
+  pays for delivery and opens the membership screen.
+
+On the app:
+
+- **Tap a line's picture or name** to open the product page.
+- **Save for later**: the toast after removing a line offers Undo and Save for later, which adds it to the
+  wishlist. It only shows for signed-in shoppers when the item isn't already wishlisted. Toasts now take a
+  list of actions.
+- **Empty cart**: "Repeat last order" (the same flow as Home's Last order pill) and "Your usual items", from
+  a cart review with no lines.
+
+Tested with curl at Harur Fresh Mart:
+
+- Bajra 500g ×1 → 1kg, +₹37, saves ₹34.
+- Bajra 500g ×2 → 1kg, +₹0, saves ₹34.
+- Chilli 100g → 200g, saves ₹105.
+- Brown chana gets no deal, because its 1kg costs more per kg.
+- SNACK30 applies on ₹285 and is ₹57 short on ₹142.
+- The plan offer is Mart Plus Monthly, ₹49.
+- The empty cart returns the review login's 7 usual items.

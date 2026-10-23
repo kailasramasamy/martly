@@ -11,10 +11,10 @@ export async function cartRoutes(app: FastifyInstance) {
     const parsed = cartReviewSchema.safeParse(request.body);
     if (!parsed.success) return reply.badRequest(parsed.error.issues[0].message);
 
-    const store = await app.prisma.store.findFirst({ where: { id: parsed.data.storeId, status: "ACTIVE" }, select: { id: true } });
+    const store = await app.prisma.store.findFirst({ where: { id: parsed.data.storeId, status: "ACTIVE" }, select: { id: true, organizationId: true } });
     if (!store) return reply.notFound("Store not found");
 
-    const data = await reviewCart(app.prisma, getOrgUser(request).sub || null, parsed.data);
+    const data = await reviewCart(app.prisma, getOrgUser(request).sub || null, store, parsed.data);
     return { success: true, data } satisfies ApiResponse<typeof data>;
   });
 }

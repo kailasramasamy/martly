@@ -1,6 +1,8 @@
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import type { CartItem } from "../../lib/cart-context";
+import { router } from "expo-router";
+import { useCart, type CartItem } from "../../lib/cart-context";
+import type { PackDeal } from "../../lib/types";
 import { useLanguage } from "../../lib/language-context";
 import { useStrings } from "../../lib/i18n/use-strings";
 import { colors, spacing, fontSize } from "../../constants/theme";
@@ -11,43 +13,54 @@ const HIT_SLOP = { top: 8, bottom: 8, left: 8, right: 8 };
 interface CartLineProps {
   item: CartItem;
   status: LineStatus;
+  /** A bigger pack of the same product that saves; tapping Switch swaps the line for it */
+  deal: PackDeal | null;
+  onSwitch: (deal: PackDeal) => void;
   onDecrement: () => void;
   onIncrement: () => void;
   onRemove: () => void;
 }
 
-/** One cart line; notes a price the store changed, low stock, or that it can't be bought any more */
-export function CartLine({ item, status, onDecrement, onIncrement, onRemove }: CartLineProps) {
+/**
+ * One cart line; notes a price the store changed, low stock, or that it can't be bought any more. The picture and
+ * name open the product page.
+ */
+export function CartLine({ item, status, deal, onSwitch, onDecrement, onIncrement, onRemove }: CartLineProps) {
   const t = useStrings("cart");
   const { getLocalizedName } = useLanguage();
+  const { storeId } = useCart();
   const atStockLimit = status.stockLeft != null && item.quantity >= status.stockLeft;
+  const openProduct = () =>
+    router.push({ pathname: "/product/[id]", params: storeId ? { id: item.productId, storeId } : { id: item.productId } });
 
   return (
     <View style={styles.card}>
       <View style={styles.cardBody}>
-        <View style={status.unavailable && styles.faded}>
-          {item.imageUrl ? (
-            <Image source={{ uri: item.imageUrl }} style={styles.itemImage} />
-          ) : (
-            <View style={styles.itemImagePlaceholder}>
-              <Ionicons name="cube-outline" size={20} color={colors.border} />
-            </View>
-          )}
-        </View>
-        <View style={styles.cardMiddle}>
-          <Text style={[styles.itemName, status.unavailable && styles.fadedText]} numberOfLines={2}>
-            {getLocalizedName({ name: item.productName, translations: item.translations })}
-          </Text>
-          <Text style={styles.itemVariant}>{item.variantName}</Text>
-          <Text style={styles.itemPrice}>{"₹"}{item.price.toFixed(0)}</Text>
-          {status.unavailable ? (
-            <Text style={[styles.note, styles.noteError]}>{t.outOfStock}</Text>
-          ) : status.stockLeft != null ? (
-            <Text style={[styles.note, styles.noteWarn]}>{t.onlyLeft(status.stockLeft)}</Text>
-          ) : status.previousPrice != null ? (
-            <Text style={[styles.note, styles.noteWarn]}>{t.priceChanged(status.previousPrice.toFixed(0))}</Text>
-          ) : null}
-        </View>
+        <TouchableOpacity style={styles.opener} onPress={openProduct} activeOpacity={0.7} accessibilityRole="link">
+          <View style={status.unavailable && styles.faded}>
+            {item.imageUrl ? (
+              <Image source={{ uri: item.imageUrl }} style={styles.itemImage} />
+            ) : (
+              <View style={styles.itemImagePlaceholder}>
+                <Ionicons name="cube-outline" size={20} color={colors.border} />
+              </View>
+            )}
+          </View>
+          <View style={styles.cardMiddle}>
+            <Text style={[styles.itemName, status.unavailable && styles.fadedText]} numberOfLines={2}>
+              {getLocalizedName({ name: item.productName, translations: item.translations })}
+            </Text>
+            <Text style={styles.itemVariant}>{item.variantName}</Text>
+            <Text style={styles.itemPrice}>{"\u20B9"}{item.price.toFixed(0)}</Text>
+            {status.unavailable ? (
+              <Text style={[styles.note, styles.noteError]}>{t.outOfStock}</Text>
+            ) : status.stockLeft != null ? (
+              <Text style={[styles.note, styles.noteWarn]}>{t.onlyLeft(status.stockLeft)}</Text>
+            ) : status.previousPrice != null ? (
+              <Text style={[styles.note, styles.noteWarn]}>{t.priceChanged(status.previousPrice.toFixed(0))}</Text>
+            ) : null}
+          </View>
+        </TouchableOpacity>
         {status.unavailable ? (
           <TouchableOpacity style={styles.removeBtn} onPress={onRemove} accessibilityRole="button">
             <Text style={styles.removeText}>{t.remove}</Text>
@@ -63,10 +76,21 @@ export function CartLine({ item, status, onDecrement, onIncrement, onRemove }: C
                 <Ionicons name="add" size={16} color={atStockLimit ? colors.border : colors.primary} />
               </TouchableOpacity>
             </View>
-            <Text style={styles.lineTotal}>{"₹"}{(item.price * item.quantity).toFixed(0)}</Text>
+            <Text style={styles.lineTotal}>{"\u20B9"}{(item.price * item.quantity).toFixed(0)}</Text>
           </View>
         )}
       </View>
+      {deal && !status.unavailable && (
+        <TouchableOpacity style={styles.deal} onPress={() => onSwitch(deal)} activeOpacity={0.8} accessibilityRole="button">
+          <Ionicons name="trending-down" size={15} color={colors.primary} />
+          <Text style={styles.dealText} numberOfLines={2}>
+            {deal.extra > 0
+              ? t.packUpsize(deal.to.variant.name, String(deal.extra), String(deal.saves))
+              : t.packSwitch(deal.quantity, deal.to.variant.name, String(deal.saves))}
+          </Text>
+          <Text style={styles.dealAction}>{t.switchPack}</Text>
+        </TouchableOpacity>
+      )}
     </View>
   );
 }
@@ -81,6 +105,7 @@ const styles = StyleSheet.create({
     borderColor: colors.border,
   },
   cardBody: { flexDirection: "row", alignItems: "center" },
+  opener: { flex: 1, flexDirection: "row", alignItems: "center" },
   faded: { opacity: 0.4 },
   fadedText: { color: colors.textSecondary },
   itemImage: { width: 56, height: 56, borderRadius: 8, backgroundColor: colors.surface },
@@ -123,4 +148,17 @@ const styles = StyleSheet.create({
     borderColor: colors.error,
   },
   removeText: { fontSize: fontSize.md, fontWeight: "700", color: colors.error },
+  deal: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    minHeight: 44,
+    marginTop: 12,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 8,
+    backgroundColor: colors.primary + "0D",
+  },
+  dealText: { flex: 1, fontSize: 13, fontWeight: "600", color: colors.primary, lineHeight: 18 },
+  dealAction: { fontSize: 13, fontWeight: "800", color: colors.primary },
 });

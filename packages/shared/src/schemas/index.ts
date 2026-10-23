@@ -1552,9 +1552,14 @@ export type ShoppingListDoneInput = z.infer<typeof shoppingListDoneSchema>;
 // ── Cart review: live prices and stock for the cart's lines, plus what to suggest beside them ──
 export const cartReviewSchema = z.object({
   storeId: z.string().uuid(),
-  storeProductIds: z.array(z.string().uuid()).min(1).max(100),
+  /** Empty for an empty cart, which still gets the shopper's usual items */
+  lines: z.array(z.object({ storeProductId: z.string().uuid(), quantity: z.number().int().min(1).max(99) })).max(100),
   /** Rupees still needed for the minimum order or free delivery; the reply then carries items that close it */
   gap: z.number().positive().max(10000).optional(),
+  /** The cart's items total, for the coupon hint */
+  itemTotal: z.number().positive().optional(),
+  /** The coupon the shopper already applied; the reply reports on it rather than another */
+  couponCode: z.string().trim().max(40).optional(),
 });
 export type CartReviewInput = z.infer<typeof cartReviewSchema>;
 

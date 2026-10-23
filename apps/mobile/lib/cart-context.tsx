@@ -36,6 +36,8 @@ interface CartState {
   addItems: (store: CartStore, lines: CartItem[]) => void;
   removeItem: (storeProductId: string) => void;
   updateQuantity: (storeProductId: string, quantity: number) => void;
+  /** Swaps a line for another size in the same place, e.g. a bigger pack that saves */
+  replaceItem: (storeProductId: string, line: CartItem) => void;
   /** Sets lines to the store's current prices (keyed by storeProductId) */
   repriceItems: (prices: Map<string, number>) => void;
   clearCart: () => void;
@@ -137,6 +139,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
     );
   }, []);
 
+  const replaceItem = useCallback((storeProductId: string, line: CartItem) => {
+    setItems((prev) => prev.map((i) => (i.storeProductId === storeProductId ? line : i)));
+  }, []);
+
   const repriceItems = useCallback((prices: Map<string, number>) => {
     setItems((prev) => prev.map((i) => (prices.has(i.storeProductId) ? { ...i, price: prices.get(i.storeProductId)! } : i)));
   }, []);
@@ -173,7 +179,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   return (
     <CartContext.Provider
-      value={{ store, storeId, storeName, items, addItem, addItems, removeItem, updateQuantity, repriceItems, clearCart, restoreItems, totalAmount, itemCount, productQuantityMap, pendingCoupon, setPendingCoupon }}
+      value={{ store, storeId, storeName, items, addItem, addItems, removeItem, updateQuantity, replaceItem, repriceItems, clearCart, restoreItems, totalAmount, itemCount, productQuantityMap, pendingCoupon, setPendingCoupon }}
     >
       {children}
     </CartContext.Provider>

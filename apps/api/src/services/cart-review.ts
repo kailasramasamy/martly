@@ -1,7 +1,10 @@
 import type { PrismaClient } from "../../generated/prisma/client.js";
 import type { CartReviewInput } from "@martly/shared/schemas";
+import type { CouponOffer } from "@martly/shared/types";
 import { predictReorders } from "./reorder.js";
 import { decorateStoreProducts, storeProductInclude } from "./store-product-view.js";
+import { couponOffers } from "./coupon-offers.js";
+import { packDeals } from "./pack-deals.js";
 
 const SUGGESTION_LIMIT = 8;
 // A gap filler costs the gap up to half as much again (at least ₹40 over), so one item closes it without overshooting much
@@ -10,6 +13,9 @@ const GAP_MIN_SPREAD = 40;
 const GAP_CANDIDATES = 60;
 // So the gap rail isn't eight detergents
 const GAP_PER_SUBCATEGORY = 2;
+
+// A locked coupon is worth mentioning only when it's in reach: at most ₹150 more, or doubling the cart
+const COUPON_MIN_REACH = 150;
 
 // A habit: bought more than once, with the purchases spread over at least a week (not a burst of test orders)
 const HABIT_MIN_SPAN_DAYS = 7;
@@ -69,18 +75,48 @@ async function gapFillers(prisma: PrismaClient, storeId: string, gap: number, ex
     .slice(0, SUGGESTION_LIMIT);
 }
 
+// The coupon to mention: the one already applied, else the best one that applies now, else the nearest one to unlock
+async function couponHint(prisma: PrismaClient, organizationId: string, userId: string | null, itemTotal: number, applied?: string): Promise<CouponOffer | null> {
+  const offers = await couponOffers(prisma, { organizationId, userId: userId ?? "", orderAmount: itemTotal });
+  const chosen = offers.find((o) => o.code === applied);
+  if (chosen) return chosen;
+  const reach = Math.max(COUPON_MIN_REACH, itemTotal);
+  const locked = offers.filter((o) => o.shortBy != null && o.shortBy <= reach).sort((a, b) => a.shortBy! - b.shortBy!);
+  return offers.find((o) => o.eligible) ?? locked[0] ?? null;
+}
+
+// Whether the shopper has an active membership here, and if not, the cheapest plan that brings free delivery
+async function membership(prisma: PrismaClient, organizationId: string, userId: string | null) {
+  const [active, plan] = await Promise.all([
+    userId ? prisma.userMembership.findFirst({ where: { userId, organizationId, status: "ACTIVE", endDate: { gt: new Date() } }, select: { id: true } }) : null,
+    prisma.membershipPlan.findFirst({
+      where: { organizationId, isActive: true, freeDelivery: true },
+      orderBy: { price: "asc" },
+      select: { name: true, price: true, duration: true },
+    }),
+  ]);
+  const plusOffer = active || !plan ? null : { name: plan.name, price: Number(plan.price), duration: plan.duration };
+  return { isMember: active != null, plusOffer };
+}
+
 /**
- * The cart's lines as the store sells them now (a line missing from `lines` can no longer be bought),
- * the customer's due items they haven't added, and items that close the gap to the minimum or free delivery.
+ * The cart's lines as the store sells them now (a line missing from `lines` can no longer be bought), the customer's
+ * due items they haven't added, items that close the gap to the minimum or free delivery, bigger packs that save,
+ * the coupon worth mentioning, and the membership plan that would make delivery free.
  */
-export async function reviewCart(prisma: PrismaClient, userId: string | null, input: CartReviewInput) {
-  const { storeId, storeProductIds, gap } = input;
-  const rows = await prisma.storeProduct.findMany({ where: { storeId, id: { in: storeProductIds }, ...sellable }, include: storeProductInclude });
-  const lines = await decorateStoreProducts(prisma, rows);
+export async function reviewCart(prisma: PrismaClient, userId: string | null, store: { id: string; organizationId: string }, input: CartReviewInput) {
+  const { gap, itemTotal } = input;
+  const quantities = new Map(input.lines.map((l) => [l.storeProductId, l.quantity]));
+  const rows = await prisma.storeProduct.findMany({ where: { storeId: store.id, id: { in: [...quantities.keys()] }, ...sellable }, include: storeProductInclude });
+  const [lines, member] = await Promise.all([decorateStoreProducts(prisma, rows), membership(prisma, store.organizationId, userId)]);
   const cartProductIds = [...new Set(lines.map((l) => l.productId))];
-  const forgotten = userId ? await forgottenItems(prisma, userId, storeId, cartProductIds) : [];
+  const forgotten = userId ? await forgottenItems(prisma, userId, store.id, cartProductIds) : [];
   const categoryIds = [...new Set(lines.flatMap((sp) => sp.product.subcategory?.categoryId ?? []))];
   const shownProductIds = [...cartProductIds, ...forgotten.map((f) => f.productId)];
-  const fillers = gap ? await gapFillers(prisma, storeId, gap, shownProductIds, categoryIds) : [];
-  return { lines, forgotten, gapFillers: fillers };
+  const [fillers, deals, coupon] = await Promise.all([
+    gap ? gapFillers(prisma, store.id, gap, shownProductIds, categoryIds) : [],
+    packDeals(prisma, store.id, lines, quantities, member.isMember),
+    itemTotal ? couponHint(prisma, store.organizationId, userId, itemTotal, input.couponCode) : null,
+  ]);
+  return { lines, forgotten, gapFillers: fillers, packDeals: deals, coupon, plusOffer: member.plusOffer };
 }
