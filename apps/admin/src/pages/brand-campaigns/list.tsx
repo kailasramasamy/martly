@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { List } from "@refinedev/antd";
-import { App, Avatar, Button, Select, Space, Table, Tag } from "antd";
+import { App, Button, Select, Space, Table, Tag } from "antd";
 import { CalendarOutlined, PlusOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router";
 import dayjs from "dayjs";
@@ -10,6 +10,7 @@ import { axiosInstance } from "../../providers/data-provider";
 import { formatRupees } from "../promos/promo-utils";
 import { errorMessage } from "../marketing/utils";
 import { BrandSelect } from "./brand-select";
+import { BrandLogo } from "../brands/brand-drawer";
 import type { Campaign, CampaignScope } from "./types";
 
 const statusOptions = Object.entries(BrandCampaignStatusLabels).map(([value, label]) => ({ value, label }));
@@ -36,7 +37,7 @@ export function CampaignList({ scope }: { scope: CampaignScope }) {
 
   const columns = [
     ...(scope.mode === "platform"
-      ? [{ title: "Brand", render: (_: unknown, c: Campaign) => <Space><Avatar src={c.brand.imageUrl} size="small">{c.brand.name[0]}</Avatar>{c.brand.name}</Space> }]
+      ? [{ title: "Brand", render: (_: unknown, c: Campaign) => <Space><BrandLogo brand={c.brand} height={24} />{c.brand.name}</Space> }]
       : []),
     { title: "Campaign", dataIndex: "title" },
     { title: "Package", render: (_: unknown, c: Campaign) => `${c.product.name} × ${c.quantity}` },

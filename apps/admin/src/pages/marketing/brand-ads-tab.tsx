@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
-import { App, Alert, Avatar, Card, Space, Switch, Table, Tag, Typography } from "antd";
+import { App, Alert, Card, Space, Switch, Table, Tag, Typography } from "antd";
 import dayjs from "dayjs";
 import { axiosInstance } from "../../providers/data-provider";
 import { errorMessage } from "./utils";
 import { ReadableSection } from "../../components/ReadableSection";
 import { BRAND_CAMPAIGN_STATUS_COLORS } from "../../constants/tag-colors";
+import { BrandLogo } from "../brands/brand-drawer";
 
 const { Paragraph, Text } = Typography;
 
@@ -65,7 +66,7 @@ function useBrandAds() {
   return { settings, campaigns, saving, setBoostOwnBrands };
 }
 
-const brandCell = (brand: BrandRef) => <Space><Avatar src={brand.imageUrl} size="small">{brand.name[0]}</Avatar>{brand.name}</Space>;
+const brandCell = (brand: BrandRef) => <Space><BrandLogo brand={brand} height={24} />{brand.name}</Space>;
 
 export function BrandAdsTab({ canEdit }: { canEdit: boolean }) {
   const { settings, campaigns, saving, setBoostOwnBrands } = useBrandAds();

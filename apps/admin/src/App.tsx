@@ -3,7 +3,7 @@ import { Refine, Authenticated, useGetIdentity, useLogout } from "@refinedev/cor
 import { ThemedLayoutV2, useNotificationProvider } from "@refinedev/antd";
 import routerProvider from "@refinedev/react-router";
 import { BrowserRouter, Routes, Route, Outlet, Link, Navigate, useLocation } from "react-router";
-import { App as AntdApp, Avatar, ConfigProvider, Typography, Space, Button, Spin } from "antd";
+import { App as AntdApp, ConfigProvider, Typography, Space, Button, Spin } from "antd";
 import {
   DashboardOutlined,
   BankOutlined,
@@ -92,6 +92,7 @@ import { CategoryTree } from "./pages/categories/tree";
 import { BrandList } from "./pages/brands/list";
 import { BrandCreate } from "./pages/brands/create";
 import { BrandEdit } from "./pages/brands/edit";
+import { BrandLogo } from "./pages/brands/brand-drawer";
 import { UserList } from "./pages/users/list";
 import { UserCreate } from "./pages/users/create";
 import { UserEdit } from "./pages/users/edit";
@@ -183,7 +184,9 @@ function HeaderBar() {
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0 24px", height: 48, background: "#0d9488" }}>
       {identity?.brand ? (
         <Space size={8}>
-          <Avatar size={28} src={identity.brand.imageUrl}>{identity.brand.name[0]}</Avatar>
+          <span style={{ display: "flex", background: "#fff", borderRadius: 6, padding: "2px 4px" }}>
+            <BrandLogo brand={identity.brand} height={24} />
+          </span>
           <Text style={{ color: "#fff", fontWeight: 600 }}>{identity.brand.name}</Text>
         </Space>
       ) : (
