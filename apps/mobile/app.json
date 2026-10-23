@@ -63,6 +63,20 @@
           }
         }
       ],
+      [
+        "expo-alternate-app-icons",
+        [
+          {
+            "name": "Tamil",
+            "ios": "./assets/icon-ta.png",
+            "android": {
+              "foregroundImage": "./assets/adaptive-icon-ta.png",
+              "backgroundColor": "#0f766e"
+            }
+          }
+        ]
+      ],
+      "./plugins/with-default-icon-alias",
       "./plugins/with-upi-queries",
       "./plugins/with-release-signing",
       "./plugins/with-notification-color-override",

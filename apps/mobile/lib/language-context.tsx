@@ -3,6 +3,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { getLocales } from "expo-localization";
 import { reloadAsync } from "expo-updates";
 import { setActiveLanguage } from "./i18n";
+import { syncAppIcon } from "./app-icon";
 import { usesTamilFont } from "./i18n/fonts";
 
 const SUPPORTED_CODES = ["ta", "kn", "te", "hi"] as const;
@@ -26,6 +27,7 @@ const isSupported = (code: string | null | undefined): code is LanguageCode =>
 /** The saved language, or the device's when nothing is saved; read before fonts load at launch */
 export async function loadInitialLanguage(): Promise<LanguageCode | null> {
   const stored = await AsyncStorage.getItem(STORAGE_KEY);
+  syncAppIcon(stored);
   if (stored === ENGLISH) return null;
   if (isSupported(stored)) return stored;
   const deviceLang = getLocales()[0]?.languageCode;
@@ -60,6 +62,7 @@ export function LanguageProvider({ initialLanguage, children }: { initialLanguag
       await reloadAsync();
       return;
     }
+    syncAppIcon(lang ?? ENGLISH);
     setLanguageState(lang);
   }, [language]);
 
