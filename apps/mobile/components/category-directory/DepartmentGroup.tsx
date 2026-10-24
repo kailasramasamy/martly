@@ -27,24 +27,42 @@ const TILE_BACKGROUND = "#e8f1f1";
 
 const openNode = (id: string) => router.push({ pathname: "/category/[id]", params: { id } });
 
-// Uncapped, every tile shows. Capped, whole rows only, so no tile is left stranded on a short last row (a department
-// with fewer than a row shows them all) and "See all" opens the rest
+// As few rows as four-across needs, with the tiles shared evenly across them (bigger rows first), so 6 reads 3 + 3
+// and 9 reads 3 + 3 + 3 instead of leaving a short last row beside a hole
+function balancedRows(tiles: Tile[]) {
+  const rowCount = Math.ceil(tiles.length / COLUMNS);
+  const base = Math.floor(tiles.length / rowCount);
+  const extra = tiles.length % rowCount;
+  const rows: Tile[][] = [];
+  for (let i = 0, start = 0; i < rowCount; i++) {
+    const size = base + (i < extra ? 1 : 0);
+    rows.push(tiles.slice(start, start + size));
+    start += size;
+  }
+  return rows;
+}
+
+// Uncapped, every tile shows in balanced rows. Capped, whole rows of four only, so no tile is left stranded on a short
+// last row (a department with fewer than a row shows them all) and "See all" opens the rest
 function squareRows(tiles: Tile[], maxRows?: number) {
   if (tiles.length === 0) return [];
-  if (maxRows === undefined) return chunk(tiles, COLUMNS);
+  if (maxRows === undefined) return balancedRows(tiles);
   const full = Math.min(Math.floor(tiles.length / COLUMNS), maxRows);
   return full === 0 ? [tiles] : chunk(tiles.slice(0, full * COLUMNS), COLUMNS);
 }
 
-function SquareTile({ tile, label }: { tile: Tile; label: string }) {
+// Tiles in a shorter row widen to fill it; the height stays, so every row lines up
+const tileWidth = (perRow: number) => Math.floor((WIDTH - GAP * (perRow - 1)) / perRow);
+
+function SquareTile({ tile, label, width }: { tile: Tile; label: string; width: number }) {
   return (
     <Pressable
       onPress={() => openNode(tile.categoryId)}
       accessibilityRole="button"
       accessibilityLabel={label}
-      style={({ pressed }) => [styles.square, pressed && styles.pressed]}
+      style={({ pressed }) => [styles.square, { width }, pressed && styles.pressed]}
     >
-      <View style={styles.squareArt}>
+      <View style={[styles.squareArt, { width }]}>
         {tile.imageUrl
           ? <Image source={{ uri: tile.imageUrl }} style={styles.squareImage} resizeMode="contain" />
           : <Ionicons name={getCategoryIcon(tile.name)} size={28} color={colors.primary} />}
@@ -60,7 +78,7 @@ interface GroupProps {
   maxRows?: number;
 }
 
-/** A department heading with "See all", then its categories four to a row */
+/** A department heading with "See all", then its categories up to four to a row */
 export function DepartmentGroup({ group, maxRows }: GroupProps) {
   const c = useStrings("common");
   const t = useStrings("home");
@@ -76,7 +94,9 @@ export function DepartmentGroup({ group, maxRows }: GroupProps) {
       </Pressable>
       {rows.map((row) => (
         <View key={row[0].categoryId} style={styles.row}>
-          {row.map((tile) => <SquareTile key={tile.categoryId} tile={tile} label={getLocalizedName(tile)} />)}
+          {row.map((tile) => (
+            <SquareTile key={tile.categoryId} tile={tile} label={getLocalizedName(tile)} width={tileWidth(row.length)} />
+          ))}
         </View>
       ))}
     </View>
@@ -90,15 +110,15 @@ const styles = StyleSheet.create({
   seeAll: { fontFamily: fonts.bold, fontSize: 13, color: colors.primary },
   row: { flexDirection: "row", gap: GAP },
   pressed: { opacity: 0.85 },
-  square: { width: SQUARE_SIZE, gap: 6 },
+  square: { gap: 6 },
   squareArt: {
-    width: SQUARE_SIZE, height: TILE_HEIGHT, borderRadius: 16, padding: ART_INSET, overflow: "hidden", backgroundColor: TILE_BACKGROUND,
+    height: TILE_HEIGHT, borderRadius: 16, padding: ART_INSET, overflow: "hidden", backgroundColor: TILE_BACKGROUND,
     alignItems: "center", justifyContent: "center",
   },
   squareImage: { width: "100%", height: "100%" },
   // The label borrows half the gap on each side, so a long single word (common in Tamil) fits instead of splitting
   // Two lines are always reserved, so a row's labels line up whether they wrap or not
   squareLabel: {
-    marginHorizontal: -GAP / 2, minHeight: 34, fontFamily: fonts.semibold, fontSize: 13, lineHeight: 17, color: colors.text, textAlign: "center",
+    marginHorizontal: -GAP / 2, minHeight: 34, fontFamily: fonts.bold, fontSize: 13, lineHeight: 17, color: colors.text, textAlign: "center",
   },
 });
