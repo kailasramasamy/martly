@@ -1,0 +1,8 @@
+ai/resp*.json
+ai/*-back.png
+ai/*-edges.png
+ai/corners.png
+out*/*-preview.png
+out*/*-pair.png
+out*/review.png
+out*/dal.png
