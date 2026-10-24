@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import type { CouponOffer, HomeTheme, SystemSection } from "@martly/shared/types";
 import { colors, fonts } from "../../../../constants/theme";
 import { useCart } from "../../../../lib/cart-context";
-import { offerCondition } from "../../../../lib/coupon-offer";
+import { offerCondition, useOfferTitle } from "../../../../lib/coupon-offer";
 import { useToast } from "../../../../lib/toast-context";
 import { useStrings } from "../../../../lib/i18n/use-strings";
 import { useHomeSectionEnv } from "../context";
@@ -12,11 +12,11 @@ import { useHomeSectionEnv } from "../context";
 const TICKET_WIDTH = 248;
 const TICKET_HEIGHT = 78;
 const STUB_WIDTH = 70;
-// Warm cream like the festive hero's tiles, so the strip reads as part of the same block
-const TICKET_FILL = "#fffbeb";
+// White tickets stand off the cream band
+const TICKET_FILL = "#ffffff";
 const NOTCH = 12;
-// Without a festival above it, the strip gets Martly's own band
-const PLAIN: HomeTheme = { background: "#ccfbf1", title: colors.primaryDark, dark: false };
+// Without a festival above it, the strip sits on a warm cream band that matches the amber stubs without shouting
+const PLAIN: HomeTheme = { background: "#fdf3dc", title: "#92400e", dark: false };
 
 /** "₹50" / "20%": the saving set big on the ticket's stub */
 const stubValue = (o: CouponOffer) => (o.discountType === "FLAT" ? `₹${Math.round(o.discountValue)}` : `${Math.round(o.discountValue)}%`);
@@ -31,12 +31,13 @@ interface TicketProps {
 /** A short coupon ticket: the saving on an amber stub (offers are always amber), a tear line, then what it is */
 const Ticket = memo(function Ticket({ offer, saved, band, onSave }: TicketProps) {
   const t = useStrings("home");
+  const title = useOfferTitle()(offer);
   return (
     <Pressable
       onPress={() => onSave(offer.code)}
       style={({ pressed }) => [styles.ticket, pressed && styles.pressed]}
       accessibilityRole="button"
-      accessibilityLabel={saved ? t.savedA11y(offer.title) : t.tapToSaveA11y(offer.title)}
+      accessibilityLabel={saved ? t.savedA11y(title) : t.tapToSaveA11y(title)}
     >
       <View style={styles.stub}>
         <Text style={styles.stubValue} numberOfLines={1} adjustsFontSizeToFit>{stubValue(offer)}</Text>
@@ -48,11 +49,11 @@ const Ticket = memo(function Ticket({ offer, saved, band, onSave }: TicketProps)
         <View style={[styles.notch, styles.notchBottom, { backgroundColor: band.background }]} />
       </View>
       <View style={styles.body}>
-        <Text style={styles.title} numberOfLines={1}>{offer.title}</Text>
+        <Text style={styles.title} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.85}>{title}</Text>
         <Text style={styles.condition} numberOfLines={1}>{offerCondition(offer)}</Text>
         <View style={styles.status}>
           <Ionicons name={saved ? "checkmark-circle" : "bookmark-outline"} size={13} color={saved ? colors.success : colors.textSecondary} />
-          <Text style={[styles.statusText, saved && styles.savedText]}>{saved ? t.savedForCheckout : t.tapToSave}</Text>
+          <Text style={[styles.statusText, saved && styles.savedText]} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75}>{saved ? t.savedForCheckout : t.tapToSave}</Text>
         </View>
       </View>
     </Pressable>
@@ -104,7 +105,10 @@ const styles = StyleSheet.create({
   label: { flexDirection: "row", alignItems: "center", gap: 6, paddingHorizontal: 16 },
   labelText: { fontFamily: fonts.extrabold, fontSize: 11, letterSpacing: 1.2 },
   rail: { paddingHorizontal: 16, gap: 10 },
-  ticket: { width: TICKET_WIDTH, height: TICKET_HEIGHT, flexDirection: "row", borderRadius: 14, backgroundColor: TICKET_FILL, overflow: "hidden" },
+  ticket: {
+    width: TICKET_WIDTH, height: TICKET_HEIGHT, flexDirection: "row", borderRadius: 14, backgroundColor: TICKET_FILL, overflow: "hidden",
+    borderWidth: 1, borderColor: "#f6dfa6",
+  },
   pressed: { opacity: 0.85 },
   stub: { width: STUB_WIDTH, alignItems: "center", justifyContent: "center", paddingHorizontal: 6, backgroundColor: colors.accent },
   stubValue: { fontFamily: fonts.extrabold, fontSize: 21, color: colors.accentText, letterSpacing: -0.5 },
@@ -118,6 +122,6 @@ const styles = StyleSheet.create({
   title: { fontFamily: fonts.extrabold, fontSize: 14, color: colors.text },
   condition: { fontFamily: fonts.medium, fontSize: 12, color: colors.textSecondary },
   status: { flexDirection: "row", alignItems: "center", gap: 4, marginTop: 2 },
-  statusText: { fontFamily: fonts.semibold, fontSize: 11, color: colors.textSecondary },
+  statusText: { flexShrink: 1, fontFamily: fonts.semibold, fontSize: 11, color: colors.textSecondary },
   savedText: { color: colors.success },
 });

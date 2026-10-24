@@ -27,6 +27,8 @@ export const HomeSectionType = {
   BESTSELLER_CATEGORIES: "BESTSELLER_CATEGORIES",
   THEME_BAND: "THEME_BAND",
   STORE_SPECIALS: "STORE_SPECIALS",
+  BUY_GET_DEALS: "BUY_GET_DEALS",
+  HERO_CARDS: "HERO_CARDS",
 } as const;
 export type HomeSectionType = (typeof HomeSectionType)[keyof typeof HomeSectionType];
 
@@ -74,7 +76,59 @@ export const HomeSectionTypeLabels: Record<HomeSectionType, string> = {
   BESTSELLER_CATEGORIES: "Bestseller categories",
   THEME_BAND: "Theme band",
   STORE_SPECIALS: "Store specials",
+  BUY_GET_DEALS: "Buy X get Y free",
+  HERO_CARDS: "Hero cards",
 };
+
+/** The tall cards the Home hero carousel can show, in their default order */
+export const HeroCardKind = {
+  FESTIVE: "FESTIVE",
+  BUY_GET: "BUY_GET",
+  MOST_BOUGHT: "MOST_BOUGHT",
+  STORE_SPECIAL: "STORE_SPECIAL",
+  RIGHT_NOW: "RIGHT_NOW",
+} as const;
+export type HeroCardKind = (typeof HeroCardKind)[keyof typeof HeroCardKind];
+export const HERO_CARD_KINDS = Object.values(HeroCardKind);
+
+export const HeroCardKindLabels: Record<HeroCardKind, string> = {
+  FESTIVE: "Live festival",
+  BUY_GET: "Buy X get Y free",
+  MOST_BOUGHT: "Most bought at the store",
+  STORE_SPECIAL: "Store special",
+  RIGHT_NOW: "Right now (by time of day)",
+};
+
+/** Parts of the day (IST) the "Right now" card switches its collection by */
+export const DayPart = { morning: "morning", afternoon: "afternoon", evening: "evening", night: "night" } as const;
+export type DayPart = (typeof DayPart)[keyof typeof DayPart];
+export const DAY_PARTS = Object.values(DayPart);
+
+/**
+ * A hero card's colours: the page wash fades from `tint` through `tintSoft` into the page, `ink` is the header's text and
+ * the search bar's action colour (readable on the tint and on white), `card`/`cardInk` paint the card itself
+ */
+export interface HeroCardTheme { tint: string; tintSoft: string; ink: string; card: string; cardInk: string }
+
+/** Fixed looks for the cards that have no designer theme; a festival card takes its colours from the festival */
+export const HERO_CARD_THEMES: Record<Exclude<HeroCardKind, "FESTIVE">, HeroCardTheme> = {
+  BUY_GET: { tint: "#bfe6de", tintSoft: "#e2f4f0", ink: "#115e59", card: "#b3ddd2", cardInk: "#115e59" },
+  MOST_BOUGHT: { tint: "#ddd6fe", tintSoft: "#efebff", ink: "#4c1d95", card: "#d4c9fb", cardInk: "#4c1d95" },
+  STORE_SPECIAL: { tint: "#fde68a", tintSoft: "#fef3c7", ink: "#78350f", card: "#fbe2a4", cardInk: "#78350f" },
+  RIGHT_NOW: { tint: "#bae6fd", tintSoft: "#e0f2fe", ink: "#075985", card: "#b0daf5", cardInk: "#075985" },
+};
+/** Products a buy X get Y card lists, and the fewest offers worth a card */
+export const HERO_BUY_GET_PRODUCTS = 4;
+export const HERO_BUY_GET_MIN = 3;
+/** Products a most-bought card lists; it needs them all */
+export const HERO_MOST_BOUGHT_PRODUCTS = 4;
+/** The full most-bought list its card's "View all" opens */
+export const MOST_BOUGHT_LIST = 30;
+/** Products the "Right now" card lists, and the fewest worth a card */
+export const HERO_RIGHT_NOW_PRODUCTS = 4;
+export const HERO_RIGHT_NOW_MIN = 3;
+/** One card is a banner, not a carousel */
+export const HERO_MIN_CARDS = 2;
 
 export const SectionHeaderStyle = { PLAIN: "PLAIN", BANNER: "BANNER", ARTWORK: "ARTWORK" } as const;
 export type SectionHeaderStyle = (typeof SectionHeaderStyle)[keyof typeof SectionHeaderStyle];
@@ -89,6 +143,9 @@ export const HOME_SHELF_PRODUCTS = 6;
 export const HOME_SECTIONS_PAGE_SIZE = 8;
 /** A price-band grid holds 2 rows of 10 */
 export const HOME_DEALS_PAGE_SIZE = 20;
+/** Buy X get Y offers: the Home row, and each page of the full list */
+export const HOME_BUY_GET_ROW = 10;
+export const BUY_GET_PAGE_SIZE = 20;
 export const HOME_BRAND_CARD_PRODUCTS = 3;
 /** Bestseller category cards: how many categories, and the product images in each card's 2×2 grid */
 export const BESTSELLER_CATEGORY_CARDS = 6;
@@ -103,6 +160,10 @@ export const TILE_PACK_IMAGES = 3;
 export const MAX_SEARCH_HINTS = 8;
 /** Everyday searches that fill the search bar's rotation where a store's own searches run short */
 export const DEFAULT_SEARCH_HINTS = ["milk", "atta", "onion", "eggs", "bread", "paneer", "chips", "detergent"];
+/** The everyday searches in other languages, by language */
+export const DEFAULT_SEARCH_HINT_TRANSLATIONS: Record<string, Record<string, string>> = {
+  ta: { milk: "பால்", atta: "ஆட்டா", onion: "வெங்காயம்", eggs: "முட்டை", bread: "பிரெட்", paneer: "பனீர்", chips: "சிப்ஸ்", detergent: "சோப்புத் தூள்" },
+};
 
 /** Headline typefaces a festival hero can use; the designer picks one per festival, the app bundles them all */
 export const FestiveFont = {

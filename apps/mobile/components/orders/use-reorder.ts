@@ -1,8 +1,8 @@
 import { useCallback, useState } from "react";
 import { useRouter } from "expo-router";
 import { api, ApiError } from "../../lib/api";
-import { useCart } from "../../lib/cart-context";
-import { getBestPrice, useMembership } from "../../lib/membership-context";
+import { toCartItem, useCart } from "../../lib/cart-context";
+import { useMembership } from "../../lib/membership-context";
 import { useToast } from "../../lib/toast-context";
 import { useStrings } from "../../lib/i18n/use-strings";
 import type { ReorderItems } from "./types";
@@ -22,17 +22,7 @@ export function useReorder() {
   const [choices, setChoices] = useState<ReorderItems | null>(null);
 
   const apply = useCallback((data: ReorderItems) => {
-    addItems(data.store, data.items.map(({ storeProduct: sp, quantity }) => ({
-      storeProductId: sp.id,
-      productId: sp.product.id,
-      productName: sp.product.name,
-      translations: sp.product.translations,
-      variantId: sp.variant.id,
-      variantName: sp.variant.name,
-      price: getBestPrice(sp, isMember),
-      imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl ?? null,
-      quantity,
-    })));
+    addItems(data.store, data.items.map(({ storeProduct: sp, quantity }) => toCartItem(sp, quantity, isMember)));
     toast.show(t.added(data.items.length), "success");
     router.push("/(tabs)/cart");
   }, [addItems, isMember, toast, router, t]);

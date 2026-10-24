@@ -7,6 +7,7 @@ import { useLanguage } from "../../lib/language-context";
 import { useStrings } from "../../lib/i18n/use-strings";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import type { LineStatus } from "./use-cart-review";
+import { freeUnits, lineTotal, offerNudge } from "@martly/shared/offers";
 
 const HIT_SLOP = { top: 8, bottom: 8, left: 8, right: 8 };
 
@@ -52,6 +53,7 @@ export function CartLine({ item, status, deal, onSwitch, onDecrement, onIncremen
             </Text>
             <Text style={styles.itemVariant}>{item.variantName}</Text>
             <Text style={styles.itemPrice}>{"\u20B9"}{item.price.toFixed(0)}</Text>
+            {item.offer && <OfferNote item={item} />}
             {status.unavailable ? (
               <Text style={[styles.note, styles.noteError]}>{t.outOfStock}</Text>
             ) : status.stockLeft != null ? (
@@ -76,10 +78,11 @@ export function CartLine({ item, status, deal, onSwitch, onDecrement, onIncremen
                 <Ionicons name="add" size={16} color={atStockLimit ? colors.border : colors.primary} />
               </TouchableOpacity>
             </View>
-            <Text style={styles.lineTotal}>{"\u20B9"}{(item.price * item.quantity).toFixed(0)}</Text>
+            <LineTotal item={item} />
           </View>
         )}
       </View>
+      {!status.unavailable && !atStockLimit && <OfferNudge item={item} onAdd={onIncrement} />}
       {deal && !status.unavailable && (
         <TouchableOpacity style={styles.deal} onPress={() => onSwitch(deal)} activeOpacity={0.8} accessibilityRole="button">
           <Ionicons name="trending-down" size={15} color={colors.primary} />
@@ -92,6 +95,48 @@ export function CartLine({ item, status, deal, onSwitch, onDecrement, onIncremen
         </TouchableOpacity>
       )}
     </View>
+  );
+}
+
+// The offer on the line, and how many units of it come free
+function OfferNote({ item }: { item: CartItem }) {
+  const t = useStrings("cart");
+  const tc = useStrings("common");
+  const free = freeUnits(item.quantity, item.offer);
+  return (
+    <View style={styles.offerRow}>
+      <Ionicons name="gift" size={11} color={colors.primary} />
+      <Text style={styles.offerText}>{tc.buyGet(item.offer!.buy, item.offer!.get)}</Text>
+      {free > 0 && <Text style={styles.freeTag}>{t.freeUnits(free)}</Text>}
+    </View>
+  );
+}
+
+// What the line costs, with the full price struck above it when units come free
+function LineTotal({ item }: { item: CartItem }) {
+  const total = lineTotal(item.price, item.quantity, item.offer);
+  const full = item.price * item.quantity;
+  return (
+    <View style={styles.totals}>
+      {full > total && <Text style={styles.fullTotal}>{"\u20B9"}{full.toFixed(0)}</Text>}
+      <Text style={styles.lineTotal}>{"\u20B9"}{total.toFixed(0)}</Text>
+    </View>
+  );
+}
+
+// Part-way through an offer: one tap adds the units that are free (or that unlock the free ones)
+function OfferNudge({ item, onAdd }: { item: CartItem; onAdd: () => void }) {
+  const t = useStrings("cart");
+  const nudge = offerNudge(item.quantity, item.offer);
+  if (!nudge) return null;
+  return (
+    <TouchableOpacity style={styles.deal} onPress={onAdd} activeOpacity={0.8} accessibilityRole="button">
+      <Ionicons name="gift-outline" size={15} color={colors.primary} />
+      <Text style={styles.dealText} numberOfLines={2}>
+        {nudge.kind === "free" ? t.nudgeFree(nudge.count) : t.nudgeBuy(nudge.count, item.offer!.get)}
+      </Text>
+      <Text style={styles.dealAction}>{t.addMore}</Text>
+    </TouchableOpacity>
   );
 }
 
@@ -138,7 +183,15 @@ const styles = StyleSheet.create({
   },
   qtyBtn: { paddingHorizontal: 10, paddingVertical: 8, justifyContent: "center", alignItems: "center" },
   qtyText: { fontSize: fontSize.md, fontWeight: "700", color: colors.primary, minWidth: 24, textAlign: "center" },
-  lineTotal: { fontSize: 15, fontWeight: "700", color: colors.text, marginTop: 6 },
+  totals: { alignItems: "flex-end", marginTop: 6 },
+  fullTotal: { fontSize: 12, color: colors.textSecondary, textDecorationLine: "line-through" },
+  lineTotal: { fontSize: 15, fontWeight: "700", color: colors.text },
+  offerRow: { flexDirection: "row", alignItems: "center", gap: 4, marginTop: 4 },
+  offerText: { fontSize: 12, fontWeight: "700", color: colors.primary },
+  freeTag: {
+    fontSize: 11, fontWeight: "800", color: "#fff", backgroundColor: colors.success,
+    paddingHorizontal: 5, borderRadius: 4, overflow: "hidden",
+  },
   removeBtn: {
     minHeight: 44,
     justifyContent: "center",

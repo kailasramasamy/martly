@@ -12,6 +12,8 @@ export interface OrderLine {
   quantity: number;
   unitPrice: string;
   totalPrice: string;
+  /** Units that came free under a buy X get Y offer */
+  freeQuantity?: number;
   refusedQuantity?: number;
   refusedReason?: RefuseReason | null;
   replacesReturnId?: string | null;
@@ -22,6 +24,7 @@ export interface OrderLine {
 
 export function OrderItemRow({ item, returnTag }: { item: OrderLine; returnTag?: string }) {
   const t = useStrings("orders").item;
+  const tCart = useStrings("cart");
   const { getLocalizedName } = useLanguage();
   const imageUrl = item.variant?.imageUrl || item.product.imageUrl;
   const refused = item.refusedQuantity ?? 0;
@@ -46,7 +49,10 @@ export function OrderItemRow({ item, returnTag }: { item: OrderLine; returnTag?:
             <Text style={styles.replacesNote}>{replacementNote(item.replacesReturn.reason, item.replacesReturn.orderId)}</Text>
           </>
         ) : (
-          <Text style={styles.qty}>{item.quantity} {"×"} {"₹"}{Number(item.unitPrice).toFixed(0)}</Text>
+          <Text style={styles.qty}>
+            {item.quantity} {"×"} {"₹"}{Number(item.unitPrice).toFixed(0)}
+            {(item.freeQuantity ?? 0) > 0 && <Text style={styles.freeUnits}>{" · "}{tCart.freeUnits(item.freeQuantity!)}</Text>}
+          </Text>
         )}
         {returnTag && (
           <View style={styles.returnPill}>
@@ -68,6 +74,7 @@ export function OrderItemRow({ item, returnTag }: { item: OrderLine; returnTag?:
 }
 
 const styles = StyleSheet.create({
+  freeUnits: { fontWeight: "800", color: colors.success },
   row: {
     flexDirection: "row",
     alignItems: "center",

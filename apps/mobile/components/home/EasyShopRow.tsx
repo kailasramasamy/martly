@@ -4,7 +4,6 @@ import { router } from "expo-router";
 import { colors, fonts } from "../../constants/theme";
 import { useLanguage } from "../../lib/language-context";
 import { useStrings } from "../../lib/i18n/use-strings";
-import { usesTamilFont } from "../../lib/i18n/fonts";
 import { useShoppingList } from "../../lib/use-shopping-list";
 import { useReorder } from "../orders/use-reorder";
 import { useLastOrderId } from "../orders/use-last-order-id";
@@ -14,32 +13,30 @@ import { ConfirmSheet } from "../ConfirmSheet";
 interface PillProps {
   icon: keyof typeof Ionicons.glyphMap;
   label: string;
+  ink: string;
   onPress: () => void;
-  onTint: boolean;
   count?: number;
   busy?: boolean;
 }
 
-function Pill({ icon, label, onPress, onTint, count, busy }: PillProps) {
-  const { language } = useLanguage();
+// A white pill ringed and glowing in the ink, so it takes on the colour of the hero card in view
+function Pill({ icon, label, ink, onPress, count, busy }: PillProps) {
   return (
     <TouchableOpacity
-      style={[styles.pill, onTint && styles.pillOnTint]} onPress={onPress} disabled={busy} activeOpacity={0.8}
+      style={[styles.pill, { borderColor: `${ink}40`, shadowColor: ink }]} onPress={onPress} disabled={busy} activeOpacity={0.8}
       accessibilityRole="button" accessibilityLabel={count ? `${label}, ${count}` : label}
     >
-      <View style={[styles.icon, onTint && styles.iconOnTint]}>
-        {busy ? <ActivityIndicator size="small" color="#ffffff" /> : <Ionicons name={icon} size={15} color="#ffffff" />}
-        {/* On the icon's corner, so a long (Tamil) label keeps the pill's width */}
+      <View>
+        {busy ? <ActivityIndicator size="small" color={ink} /> : <Ionicons name={icon} size={16} color={ink} />}
         {count ? <View style={styles.count}><Text style={styles.countText}>{count}</Text></View> : null}
       </View>
-      {/* English fits one line, shrinking a touch if needed; Tamil labels run long, so they wrap to two lines first */}
-      <Text style={styles.label} numberOfLines={usesTamilFont(language) ? 2 : 1} adjustsFontSizeToFit minimumFontScale={0.85}>{label}</Text>
+      <Text style={[styles.label, { color: ink }]} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75}>{label}</Text>
     </TouchableOpacity>
   );
 }
 
 /** Ways to shop without searching, right under the search bar: speak a list, the running list, last order again */
-export function EasyShopRow({ onTint = false }: { onTint?: boolean }) {
+export function EasyShopRow({ ink }: { ink: string }) {
   const t = useStrings("shoppingList");
   const r = useStrings("orders").reorder;
   const { getLocalizedName } = useLanguage();
@@ -49,10 +46,10 @@ export function EasyShopRow({ onTint = false }: { onTint?: boolean }) {
   return (
     <>
       <View style={styles.row}>
-        <Pill icon="mic" label={t.homeSpeak} onPress={() => router.push("/speak-list")} onTint={onTint} />
-        <Pill icon="list" label={t.homeMyList} count={list.items.length} onPress={() => router.push("/my-list")} onTint={onTint} />
+        <Pill icon="mic" label={t.homeSpeak} ink={ink} onPress={() => router.push("/speak-list")} />
+        <Pill icon="list" label={t.homeMyList} ink={ink} count={list.items.length} onPress={() => router.push("/my-list")} />
         {lastOrderId && (
-          <Pill icon="refresh" label={t.homeSameAsLast} busy={reorder.reorderingId === lastOrderId} onPress={() => reorder.reorder(lastOrderId)} onTint={onTint} />
+          <Pill icon="refresh" label={t.homeSameAsLast} ink={ink} busy={reorder.reorderingId === lastOrderId} onPress={() => reorder.reorder(lastOrderId)} />
         )}
       </View>
       <BuyAgainSheet choices={reorder.choices} onAdd={reorder.addPicked} onClose={reorder.closeChoices} />
@@ -67,19 +64,17 @@ export function EasyShopRow({ onTint = false }: { onTint?: boolean }) {
 }
 
 const styles = StyleSheet.create({
-  // Spans the search bar's width: equal pills, each shrinking a long (Tamil) label rather than cutting it
   row: { flexDirection: "row", gap: 8, marginTop: 10 },
+  // Equal shares of the search bar's width; a long (Tamil) label shrinks rather than widening its pill
   pill: {
-    flex: 1, flexDirection: "row", alignItems: "center", gap: 6, minHeight: 44, paddingHorizontal: 6, borderRadius: 22,
-    backgroundColor: "#f0fdfa", borderWidth: 1, borderColor: "#99f6e4",
+    flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, height: 36, paddingHorizontal: 12, borderRadius: 18,
+    backgroundColor: "rgba(255,255,255,0.94)", borderWidth: 1,
+    shadowOpacity: 0.28, shadowRadius: 8, shadowOffset: { width: 0, height: 2 }, elevation: 3,
   },
-  pillOnTint: { backgroundColor: "rgba(255,255,255,0.92)", borderColor: "rgba(255,255,255,0.6)" },
-  icon: { width: 28, height: 28, borderRadius: 14, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" },
-  iconOnTint: { backgroundColor: colors.primaryDark },
-  label: { flexShrink: 1, fontSize: 13, lineHeight: 16, fontFamily: fonts.bold, color: colors.primaryDark },
+  label: { flexShrink: 1, fontSize: 13, fontFamily: fonts.bold },
   count: {
-    position: "absolute", top: -6, left: -6, minWidth: 18, height: 18, borderRadius: 9, paddingHorizontal: 4,
+    position: "absolute", top: -7, right: -9, minWidth: 16, height: 16, borderRadius: 8, paddingHorizontal: 3,
     backgroundColor: colors.accent, alignItems: "center", justifyContent: "center", borderWidth: 1.5, borderColor: "#ffffff",
   },
-  countText: { fontSize: 10.5, fontFamily: fonts.extrabold, color: colors.accentText },
+  countText: { fontSize: 9.5, fontFamily: fonts.extrabold, color: colors.accentText },
 });

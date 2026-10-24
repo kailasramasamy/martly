@@ -9,7 +9,8 @@
     "./constants": "./src/constants/index.ts",
     "./permissions": "./src/permissions/index.ts",
     "./order-flow": "./src/order-flow/index.ts",
-    "./listing": "./src/listing/index.ts"
+    "./listing": "./src/listing/index.ts",
+    "./offers": "./src/offers/index.ts"
   },
   "dependencies": {
     "zod": "^3.24"

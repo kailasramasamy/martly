@@ -29,7 +29,7 @@ export const DepartmentGridSection = memo(function DepartmentGridSection({ secti
   return (
     <View style={styles.card}>
       <View style={styles.header}>
-        <Text style={styles.title}>{t.shopByCategory}</Text>
+        <Text style={styles.title} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.8}>{t.shopByCategory}</Text>
         <TouchableOpacity onPress={() => router.push("/(tabs)/categories")} style={styles.link}>
           <Text style={styles.linkText}>{c.seeAll}</Text>
           <Ionicons name="chevron-forward" size={14} color={colors.primary} />
@@ -57,8 +57,8 @@ const styles = StyleSheet.create({
     marginTop: 20, marginHorizontal: H_PADDING, backgroundColor: "#fff", borderRadius: 16, padding: 16,
     shadowColor: "#000", shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.04, shadowRadius: 6, elevation: 2,
   },
-  header: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 14 },
-  title: { fontSize: 18, fontWeight: "700", color: colors.text },
+  header: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 12, marginBottom: 14 },
+  title: { flexShrink: 1, fontSize: 18, fontWeight: "700", color: colors.text },
   link: { flexDirection: "row", alignItems: "center", gap: 2 },
   linkText: { fontSize: 13, fontWeight: "600", color: colors.primary },
   grid: { flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", rowGap: 14 },

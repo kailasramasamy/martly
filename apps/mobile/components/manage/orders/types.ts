@@ -18,6 +18,8 @@ export interface OrderDetailItem {
   quantity: number;
   unitPrice: string;
   totalPrice: string;
+  /** Units that came free under a buy X get Y offer */
+  freeQuantity: number;
   product: { name: string; imageUrl: string | null; images: string[] };
   variant: { name: string; imageUrl: string | null };
   refusedQuantity: number;

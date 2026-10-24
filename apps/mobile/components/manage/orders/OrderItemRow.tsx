@@ -16,6 +16,7 @@ export function OrderItemRow({ item }: { item: OrderDetailItem }) {
       <View style={styles.itemBody}>
         <Text style={styles.itemName} numberOfLines={2}>{item.product.name}</Text>
         <Text style={styles.itemMeta}>{item.variant.name} · {item.quantity} × {formatINR(Number(item.unitPrice))}</Text>
+        {item.freeQuantity > 0 ? <Text style={styles.free}>{item.freeQuantity} free</Text> : null}
         {item.replacesReturnId ? <Text style={styles.replacement}>Free replacement</Text> : null}
         {item.refusedQuantity > 0 ? (
           <Text style={styles.refused}>{item.refusedQuantity} handed back{item.refusedReason ? ` · ${RefuseReasonLabels[item.refusedReason]}` : ""}</Text>
@@ -33,6 +34,7 @@ const styles = StyleSheet.create({
   itemBody: { flex: 1, minWidth: 0 },
   itemName: { fontFamily: fonts.semibold, fontSize: 14, color: colors.text },
   itemMeta: { fontFamily: fonts.medium, fontSize: 12.5, color: colors.textSecondary, marginTop: 2 },
+  free: { fontFamily: fonts.bold, fontSize: 12.5, color: colors.primaryDark, marginTop: 2 },
   replacement: { fontFamily: fonts.bold, fontSize: 12.5, color: "#15803d", marginTop: 2 },
   refused: { fontFamily: fonts.bold, fontSize: 12.5, color: manage.attentionText, marginTop: 2 },
   itemTotal: { fontFamily: fonts.bold, fontSize: 14, color: colors.text },

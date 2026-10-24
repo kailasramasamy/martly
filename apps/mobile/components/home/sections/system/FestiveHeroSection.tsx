@@ -78,10 +78,16 @@ function useAutoAdvance(count: number) {
 /** Festivals live at once share the top of Home as a looping carousel; the header takes the colours of the one in view */
 export const FestiveHeroSection = memo(function FestiveHeroSection({ section }: { section: SystemSection }) {
   const heroes = section.data.heroes as FestiveHeroData[];
-  const { backdrop, onFestiveTheme } = useHomeSectionEnv();
+  const env = useHomeSectionEnv();
+  // Below the hero cards (which left this festival out) it is a plain block, leaving the header to the cards
+  const leads = env.leadId === section.id;
+  const backdrop = leads ? env.backdrop : null;
+  const { onFestiveTheme } = env;
   const { listRef, active, onScroll, stop } = useAutoAdvance(heroes.length);
   const current = heroes[Math.min(active, heroes.length - 1)];
-  useEffect(() => onFestiveTheme(current.theme), [current, onFestiveTheme]);
+  useEffect(() => {
+    if (leads) onFestiveTheme(current.theme);
+  }, [leads, current, onFestiveTheme]);
 
   if (heroes.length === 1) return <Slide hero={current} backdrop={backdrop} onOpen={stop} />;
   return (

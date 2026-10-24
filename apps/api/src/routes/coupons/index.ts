@@ -1,5 +1,5 @@
 import type { FastifyInstance, FastifyRequest } from "fastify";
-import { createCouponSchema, updateCouponSchema, applyCouponSchema, availableCouponsQuerySchema } from "@martly/shared/schemas";
+import { createCouponSchema, updateCouponSchema, applyCouponSchema, availableCouponsQuerySchema, type UpdateCouponInput } from "@martly/shared/schemas";
 import type { ApiResponse, CouponOffer, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
@@ -7,10 +7,25 @@ import { Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { checkCoupon } from "../../services/coupons.js";
 import { couponOffers } from "../../services/coupon-offers.js";
+import { translateCoupon } from "../../services/translate/coupon.js";
+import type { Prisma } from "../../../generated/prisma/client.js";
 
 function canAccessCoupon(request: FastifyRequest, coupon: { organizationId: string | null }) {
   const user = getOrgUser(request);
   return user.role === "SUPER_ADMIN" || coupon.organizationId === user.organizationId;
+}
+
+type TaText = { title?: string; description?: string };
+
+// A new English headline or description outdates its Tamil unless the edit sends Tamil too; the dropped field is
+// translated again after the save
+function staleTamilDropped(existing: { title: string | null; description: string | null; translations: unknown }, body: UpdateCouponInput) {
+  if (body.translations !== undefined) return (body.translations ?? undefined) as Prisma.InputJsonValue | undefined;
+  const all = (existing.translations ?? {}) as Record<string, TaText>;
+  const ta = { ...all.ta };
+  if (body.title !== undefined && body.title !== existing.title) delete ta.title;
+  if (body.description !== undefined && body.description !== existing.description) delete ta.description;
+  return { ...all, ta } as Prisma.InputJsonValue;
 }
 
 export async function couponRoutes(app: FastifyInstance) {
@@ -92,6 +107,7 @@ export async function couponRoutes(app: FastifyInstance) {
         organizationId: orgId ?? undefined,
         description: body.description ?? undefined,
         title: body.title ?? undefined,
+        translations: (body.translations ?? undefined) as Prisma.InputJsonValue | undefined,
         showOnHome: body.showOnHome,
         minOrderAmount: body.minOrderAmount ?? undefined,
         maxDiscount: body.maxDiscount ?? undefined,
@@ -100,6 +116,7 @@ export async function couponRoutes(app: FastifyInstance) {
         expiresAt: body.expiresAt ?? undefined,
       },
     });
+    void translateCoupon(app.prisma, coupon.id, app.log);
 
     const response: ApiResponse<typeof coupon> = { success: true, data: coupon };
     return response;
@@ -123,8 +140,9 @@ export async function couponRoutes(app: FastifyInstance) {
 
     const coupon = await app.prisma.coupon.update({
       where: { id: request.params.id },
-      data: body,
+      data: { ...body, translations: staleTamilDropped(existing, body) },
     });
+    void translateCoupon(app.prisma, coupon.id, app.log);
 
     const response: ApiResponse<typeof coupon> = { success: true, data: coupon };
     return response;

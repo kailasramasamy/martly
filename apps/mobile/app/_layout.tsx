@@ -192,6 +192,8 @@ function RootLayoutNav() {
         <Stack.Screen name="festival/[id]" options={{ headerShown: true, title: t.festivePicks }} />
         <Stack.Screen name="collection/[id]" options={{ headerShown: true, title: "" }} />
         <Stack.Screen name="deals/[sectionId]" options={{ headerShown: true, title: t.deals }} />
+        <Stack.Screen name="buy-get" options={{ headerShown: true, title: t.buyGet }} />
+        <Stack.Screen name="most-bought" options={{ headerShown: true, title: t.mostBought }} />
       </Stack>
       {!splashDone && <SplashScreen onBeforeFadeOut={handleBeforeFadeOut} onFinish={handleSplashFinish} />}
     </>

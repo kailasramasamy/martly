@@ -1,4 +1,5 @@
 import type { BrandPick } from "@martly/shared/constants";
+import type { MultiBuyOffer } from "@martly/shared/offers";
 import type { CampaignTile, CouponOffer, HomeTheme } from "@martly/shared/types";
 import type { PaginatedResponse } from "@martly/shared/types";
 
@@ -59,6 +60,8 @@ export interface Pricing {
   savingsPercent: number;
   memberPrice: number | null;
   memberSavingsAmount: number | null;
+  /** Buy X get Y running now, on top of the price above */
+  offer: MultiBuyOffer | null;
 }
 
 export interface StoreProduct {
@@ -204,6 +207,7 @@ export interface TimeCategorySection {
   id: string;
   name: string;
   slug: string;
+  translations?: Record<string, { name?: string }> | null;
   products: StoreProduct[];
 }
 

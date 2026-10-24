@@ -8,6 +8,7 @@ import dayjs from "dayjs";
 import { sectionTitle } from "../../theme";
 import { DISCOUNT_TYPE_OPTIONS } from "../../constants/tag-colors";
 import { ReadableSection } from "../../components/ReadableSection";
+import { OfferCard, offerInitialValues, offerPayload } from "../../components/OfferFields";
 
 export const StoreProductEdit = () => {
   const { formProps, saveButtonProps, query } = useForm({
@@ -37,6 +38,9 @@ export const StoreProductEdit = () => {
       ...formProps.initialValues,
       discountStart: formProps.initialValues?.discountStart ? dayjs(formProps.initialValues.discountStart) : null,
       discountEnd: formProps.initialValues?.discountEnd ? dayjs(formProps.initialValues.discountEnd) : null,
+      ...offerInitialValues(formProps.initialValues ?? {}),
+      offerStart: formProps.initialValues?.offerStart ? dayjs(formProps.initialValues.offerStart) : null,
+      offerEnd: formProps.initialValues?.offerEnd ? dayjs(formProps.initialValues.offerEnd) : null,
     },
     onFinish: (values: Record<string, unknown>) => {
       return originalOnFinish?.({
@@ -47,6 +51,7 @@ export const StoreProductEdit = () => {
           discountValue: values.discountValue != null ? Number(values.discountValue) : null,
           discountStart: values.discountStart ? (values.discountStart as dayjs.Dayjs).toISOString() : null,
           discountEnd: values.discountEnd ? (values.discountEnd as dayjs.Dayjs).toISOString() : null,
+          ...offerPayload(values),
         }),
         ...(canStock && { stock: values.stock != null ? Number(values.stock) : undefined }),
         ...(may("isActive") && { isActive: values.isActive }),
@@ -160,6 +165,10 @@ export const StoreProductEdit = () => {
                   </Col>
                 </Row>
               </Card>
+            </Col>
+
+            <Col xs={24} lg={12}>
+              <OfferCard disabled={!canPrice} />
             </Col>
           </Row>
         </Form>

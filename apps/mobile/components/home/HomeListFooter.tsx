@@ -2,6 +2,7 @@ import { memo } from "react";
 import { ActivityIndicator, StyleSheet, View } from "react-native";
 import { colors } from "../../constants/theme";
 import { FEATURED_CARD_WIDTH } from "../FeaturedProductCard";
+import { HomeSignOff } from "./HomeSignOff";
 import StoreDiscovery, { type StoreDiscoveryState } from "../store-discovery/StoreDiscovery";
 
 interface Props {
@@ -9,11 +10,14 @@ interface Props {
   /** First page still on its way: placeholder cards */
   loading: boolean;
   loadingMore: boolean;
+  /** Every section is on screen: the sign-off closes the page */
+  reachedEnd: boolean;
   discovery: StoreDiscoveryState;
 }
 
-/** Below the sections: the first-load placeholders, the next page's spinner, or store discovery when no store is chosen */
-export const HomeListFooter = memo(function HomeListFooter({ hasStore, loading, loadingMore, discovery }: Props) {
+/** Below the sections: the first-load placeholders, the next page's spinner, the sign-off once every section is in, or
+ * store discovery when no store is chosen */
+export const HomeListFooter = memo(function HomeListFooter({ hasStore, loading, loadingMore, reachedEnd, discovery }: Props) {
   return (
     <View>
       {hasStore && loading && (
@@ -30,6 +34,7 @@ export const HomeListFooter = memo(function HomeListFooter({ hasStore, loading, 
         </View>
       )}
       {loadingMore && <ActivityIndicator style={styles.more} color={colors.primary} />}
+      {hasStore && reachedEnd && <HomeSignOff />}
       {!hasStore && <StoreDiscovery discovery={discovery} />}
       <View style={styles.spacer} />
     </View>

@@ -42,4 +42,6 @@ export const nav: Strings<"nav"> = {
   recipe: "சமையல் குறிப்பு",
   festivePicks: "பண்டிகைத் தேர்வுகள்",
   deals: "சலுகைகள்",
+  buyGet: "1 வாங்கினால் 1 இலவசம்",
+  mostBought: "அதிகம் வாங்கியவை",
 };

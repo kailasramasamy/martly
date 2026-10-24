@@ -16,6 +16,7 @@ interface Pricing {
   savingsAmount: number;
   savingsPercent: number;
   memberPrice: number | null;
+  offer: { buy: number; get: number } | null;
 }
 
 interface StoreProductRecord {
@@ -124,8 +125,12 @@ export const StoreProductList = () => {
 
         <Table.Column
           title="Price"
-          width={130}
+          width={140}
           render={(_, record: StoreProductRecord) => {
+            const offer = record.pricing?.offer;
+            const offerTag = offer && (
+              <Tag color="teal" style={{ marginInlineEnd: 0 }}>Buy {offer.buy} Get {offer.get}</Tag>
+            );
             if (record.pricing?.discountActive) {
               return (
                 <div>
@@ -134,10 +139,16 @@ export const StoreProductList = () => {
                   </Text>
                   <br />
                   <Text strong>₹{Number(record.pricing.effectivePrice).toFixed(2)}</Text>
+                  {offerTag && <div>{offerTag}</div>}
                 </div>
               );
             }
-            return <Text>₹{Number(record.price).toFixed(2)}</Text>;
+            return (
+              <div>
+                <Text>₹{Number(record.price).toFixed(2)}</Text>
+                {offerTag && <div>{offerTag}</div>}
+              </div>
+            );
           }}
         />
 

@@ -3,7 +3,7 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 import type { CouponOffer } from "@martly/shared/types";
 import { colors, fonts } from "../../constants/theme";
 import { api } from "../../lib/api";
-import { offerCondition } from "../../lib/coupon-offer";
+import { offerCondition, useOfferTitle } from "../../lib/coupon-offer";
 import { useStrings } from "../../lib/i18n/use-strings";
 
 interface Props {
@@ -30,10 +30,11 @@ function useAvailableOffers(storeId: string | null, orderAmount: number) {
 
 function OfferRow({ offer, disabled, onApply }: { offer: CouponOffer; disabled: boolean; onApply: (code: string) => void }) {
   const t = useStrings("checkout").promo;
+  const title = useOfferTitle()(offer);
   return (
     <View style={styles.row}>
       <View style={styles.text}>
-        <Text style={styles.title} numberOfLines={1}>{offer.title}</Text>
+        <Text style={styles.title} numberOfLines={1}>{title}</Text>
         <Text style={styles.condition} numberOfLines={1}>{offer.code} · {offerCondition(offer)}</Text>
       </View>
       {offer.eligible ? (

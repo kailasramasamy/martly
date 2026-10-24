@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
-import { useCart } from "../../lib/cart-context";
+import { toCartItem, useCart, type LineTerms } from "../../lib/cart-context";
 import { getBestPrice, useMembership } from "../../lib/membership-context";
 import { api } from "../../lib/api";
+import { lineTotal, type MultiBuyOffer } from "@martly/shared/offers";
 import type { CartReview, PackDeal, StoreProduct } from "../../lib/types";
 
 const REFETCH_DELAY_MS = 300;
@@ -61,22 +62,29 @@ function useReviewFetch(gapKey: number | null) {
   return { review, alsoBought };
 }
 
-// Moves lines to the store's current price and remembers what they were, for the "Price changed" note
+const offerKey = (offer: MultiBuyOffer | null | undefined) => (offer ? `${offer.buy}+${offer.get}` : "");
+
+// Moves lines to the store's current price and offer, and remembers old prices for the "Price changed" note
 function useRepricing(byId: Map<string, StoreProduct>) {
   const { items, repriceItems } = useCart();
   const { isMember } = useMembership();
   const [previousPrices, setPreviousPrices] = useState<Map<string, number>>(new Map());
 
   useEffect(() => {
-    const changed = new Map<string, number>();
+    const changed = new Map<string, LineTerms>();
     for (const item of items) {
       const sp = byId.get(item.storeProductId);
-      if (sp && Math.abs(getBestPrice(sp, isMember) - item.price) >= 0.01) changed.set(item.storeProductId, getBestPrice(sp, isMember));
+      if (!sp) continue;
+      const terms = { price: getBestPrice(sp, isMember), offer: sp.pricing?.offer ?? null };
+      if (Math.abs(terms.price - item.price) >= 0.01 || offerKey(terms.offer) !== offerKey(item.offer)) changed.set(item.storeProductId, terms);
     }
     if (changed.size === 0) return;
     setPreviousPrices((prev) => {
       const next = new Map(prev);
-      for (const item of items) if (changed.has(item.storeProductId) && !next.has(item.storeProductId)) next.set(item.storeProductId, item.price);
+      for (const item of items) {
+        const terms = changed.get(item.storeProductId);
+        if (terms && Math.abs(terms.price - item.price) >= 0.01 && !next.has(item.storeProductId)) next.set(item.storeProductId, item.price);
+      }
       return next;
     });
     repriceItems(changed);
@@ -108,15 +116,12 @@ export function useCartReview(gap: number | null) {
     };
   };
 
-  const switchPack = ({ storeProductId, to, quantity }: PackDeal) => replaceItem(storeProductId, {
-    storeProductId: to.id, productId: to.product.id, productName: to.product.name, translations: to.product.translations,
-    variantId: to.variant.id, variantName: to.variant.name, price: getBestPrice(to, isMember),
-    imageUrl: to.product.imageUrl ?? to.variant.imageUrl, quantity,
-  });
+  const switchPack = ({ storeProductId, to, quantity }: PackDeal) => replaceItem(storeProductId, toCartItem(to, quantity, isMember));
 
+  // Against the list price, free units included
   const savings = items.reduce((sum, item) => {
     const sp = byId.get(item.storeProductId);
-    return sp ? sum + Math.max(0, listPrice(sp) - item.price) * item.quantity : sum;
+    return sp ? sum + Math.max(0, listPrice(sp) * item.quantity - lineTotal(item.price, item.quantity, item.offer)) : sum;
   }, 0);
 
   return {

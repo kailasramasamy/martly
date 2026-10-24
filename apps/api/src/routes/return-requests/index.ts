@@ -12,6 +12,7 @@ import { notifyReturnUpdate } from "../../services/notify/return-alerts.js";
 import { resolveReturn } from "../../services/returns/resolve.js";
 import { loadReturn, receiveReturn } from "../../services/returns/settle.js";
 import { collectDenial } from "../../services/returns/pickups.js";
+import { paidPerUnit } from "@martly/shared/offers";
 
 export async function returnRequestRoutes(app: FastifyInstance) {
   // ── POST / — Customer creates a return request ─────────────
@@ -56,7 +57,7 @@ export async function returnRequestRoutes(app: FastifyInstance) {
       if (item.quantity > kept) {
         return reply.badRequest(`Quantity ${item.quantity} exceeds the ${kept} delivered`);
       }
-      requestedAmount += (Number(orderItem.unitPrice) * item.quantity);
+      requestedAmount += paidPerUnit(orderItem) * item.quantity;
     }
 
     const returnRequest = await app.prisma.returnRequest.create({

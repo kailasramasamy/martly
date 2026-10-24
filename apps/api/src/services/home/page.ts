@@ -4,7 +4,7 @@ import { reviewSummaries, withAllSizes, withReviews } from "../store-feed.js";
 import { dominantCategory, injectAd, liveSponsored, pickAd } from "../sponsored.js";
 import { expandLayout, loadLayout } from "./layout.js";
 import { RESOLVERS } from "./registry.js";
-import { searchHints } from "./search-hints.js";
+import { searchHints, type HintTile } from "./search-hints.js";
 import type { LayoutEntry, ResolveContext, ResolvedSection } from "./types.js";
 
 const FESTIVAL_HINTS = 2;
@@ -62,6 +62,9 @@ function mapProductLists(section: ResolvedSection, fn: (items: any[]) => any[]):
   if ("products" in section) return { ...section, products: fn(section.products) } as ResolvedSection;
   if (section.type === "CAMPAIGN_CARD") return { ...section, highlights: fn(section.highlights) };
   if (section.type === "STORE_SPECIALS") return { ...section, collections: section.collections.map((c) => ({ ...c, products: fn(c.products) })) };
+  if (section.type === "HERO_CARDS") {
+    return { ...section, cards: section.cards.map((c) => ("products" in c ? { ...c, products: fn(c.products) } : c)) };
+  }
   if (data?.products) return { ...section, data: { ...data, products: fn(data.products) } } as ResolvedSection;
   if (data?.categories) {
     return { ...section, data: { ...data, categories: data.categories.map((c: any) => ({ ...c, products: fn(c.products) })) } } as ResolvedSection;
@@ -77,8 +80,10 @@ async function withPageReviews(ctx: ResolveContext, sections: ResolvedSection[])
 }
 
 async function pageChrome(ctx: ResolveContext, store: PageStore, sections: ResolvedSection[]): Promise<HomeChrome> {
-  const lead = sections[0] as { type: string; data?: { hero?: { theme: HomeChrome["headerTheme"]; tiles: { title: string }[] } } } | undefined;
+  const lead = sections[0] as { type: string; data?: { hero?: { theme: HomeChrome["headerTheme"]; tiles: HintTile[] } } } | undefined;
   const hero = lead?.type === "FESTIVE_HERO" ? lead.data?.hero : undefined;
+  const festival = sections.flatMap((s) => (s.type === "HERO_CARDS" ? s.cards : [])).find((c) => c.kind === "FESTIVE");
+  const festivalTiles = hero?.tiles ?? (festival?.kind === "FESTIVE" ? festival.festival.tiles : []);
   const [membership, hints] = await Promise.all([
     ctx.userId
       ? ctx.prisma.userMembership.findFirst({
@@ -87,11 +92,12 @@ async function pageChrome(ctx: ResolveContext, store: PageStore, sections: Resol
         })
       : null,
     // The live festival's first aisles lead the rotation
-    searchHints(ctx.prisma, store.id, (hero?.tiles ?? []).slice(0, FESTIVAL_HINTS).map((t) => t.title), ctx.now),
+    searchHints(ctx.prisma, store.id, festivalTiles.slice(0, FESTIVAL_HINTS), ctx.now),
   ]);
   return {
     headerTheme: hero?.theme ?? null,
-    searchHints: hints,
+    searchHints: hints.hints,
+    searchHintTranslations: hints.translations,
     freeDeliveryThreshold: store.freeDeliveryThreshold === null || membership ? null : Number(store.freeDeliveryThreshold),
   };
 }

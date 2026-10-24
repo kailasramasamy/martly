@@ -2,6 +2,7 @@ import { View, StyleSheet } from "react-native";
 import { ListRow } from "../ui/ListRow";
 import { StatusPill } from "../ui/StatusPill";
 import { formatINR, manage } from "../ui/tokens";
+import { OfferPill } from "./OfferPill";
 import { STOCK_STATE, stockState } from "./stock-status";
 import type { StoreProductItem } from "./types";
 
@@ -27,6 +28,7 @@ export function StoreProductListRow({ item, onPress }: { item: StoreProductItem;
         <View style={styles.trailing}>
           <StatusPill {...STOCK_STATE[state]} label={`${item.availableStock} left`} />
           <View style={styles.badges}>
+            {item.pricing.offer && <OfferPill offer={item.pricing.offer} />}
             {!item.isActive && <StatusPill {...UNLISTED} />}
             {item.isFeatured && <StatusPill {...FEATURED} />}
           </View>

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Button, ColorPicker, Form, Input, Select, Space, Switch, Typography } from "antd";
 import type { SelectProps } from "antd";
 import { DeleteOutlined, PlusOutlined } from "@ant-design/icons";
-import { THEME_BAND_MAX_TILES, THEME_BAND_MIN_TILES } from "@martly/shared/constants";
+import { DAY_PARTS, HERO_CARD_KINDS, HeroCardKindLabels, THEME_BAND_MAX_TILES, THEME_BAND_MIN_TILES } from "@martly/shared/constants";
 import { axiosInstance } from "../../providers/data-provider";
 import { ImageUpload } from "../../components/ImageUpload";
 
@@ -118,3 +118,26 @@ export const ThemeBandFields = () => {
     </>
   );
 };
+
+const DAY_PART_LABELS = { morning: "Morning (6am–12)", afternoon: "Afternoon (12–5pm)", evening: "Evening (5–9pm)", night: "Night (9pm–6am)" };
+
+/** Selection order is the carousel's order; a card the store has too little for is skipped on its own */
+export const HeroCardsFields = ({ collectionProps }: { collectionProps: SelectProps }) => (
+  <>
+  <Form.Item
+    label="Cards"
+    name={["config", "cards"]}
+    initialValue={[...HERO_CARD_KINDS]}
+    extra={<Text type="secondary">Shown in the order picked. Cards a store has nothing for (no live festival, too few offers) are left out, and the carousel hides itself with fewer than two.</Text>}
+  >
+    <Select mode="multiple" optionFilterProp="label" options={HERO_CARD_KINDS.map((k) => ({ value: k, label: HeroCardKindLabels[k] }))} />
+  </Form.Item>
+  <Form.Item label="Right now" extra={<Text type="secondary">The collection the "Right now" card shows in each part of the day (IST). A part left empty shows no card then.</Text>}>
+    {DAY_PARTS.map((part) => (
+      <Form.Item key={part} label={DAY_PART_LABELS[part]} name={["config", "rightNow", part]} style={{ marginBottom: 8 }}>
+        <Select {...collectionProps} allowClear showSearch optionFilterProp="label" placeholder="No card" />
+      </Form.Item>
+    ))}
+  </Form.Item>
+  </>
+);

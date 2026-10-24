@@ -26,6 +26,7 @@ import {
   CheckCircleOutlined,
   CloseCircleOutlined,
 } from "@ant-design/icons";
+import { paidPerUnit } from "@martly/shared/offers";
 import { axiosInstance } from "../../providers/data-provider";
 import { RETURN_REQUEST_STATUS_CONFIG } from "../../constants/tag-colors";
 import {
@@ -53,6 +54,7 @@ interface ReturnRequestItem {
     quantity: number;
     unitPrice: number;
     totalPrice: number;
+    freeQuantity: number;
     product?: { name?: string };
     variant?: { name?: string; unitValue?: string; unitType?: string };
   };
@@ -308,14 +310,21 @@ export const ReturnRequestShow = () => {
                   {
                     title: "Unit Price",
                     key: "unitPrice",
-                    width: 120,
-                    render: (_, item) => `\u20B9${Number(item.orderItem?.unitPrice ?? 0).toFixed(0)}`,
+                    width: 160,
+                    render: (_, item) => (
+                      <>
+                        {`\u20B9${Number(item.orderItem?.unitPrice ?? 0).toFixed(0)}`}
+                        {item.orderItem?.freeQuantity > 0 && (
+                          <Tag color="teal" style={{ marginInlineStart: 6 }}>{item.orderItem.freeQuantity} free</Tag>
+                        )}
+                      </>
+                    ),
                   },
                   {
                     title: "Line Total",
                     key: "lineTotal",
                     width: 120,
-                    render: (_, item) => `\u20B9${(item.quantity * Number(item.orderItem?.unitPrice ?? 0)).toFixed(0)}`,
+                    render: (_, item) => `\u20B9${(item.quantity * paidPerUnit(item.orderItem)).toFixed(0)}`,
                   },
                   {
                     title: "Restock",

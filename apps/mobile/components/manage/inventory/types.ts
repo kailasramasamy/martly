@@ -16,10 +16,14 @@ export interface StoreProductItem {
   discountStart: string | null;
   discountEnd: string | null;
   memberPrice: string | null;
+  offerBuyQty: number | null;
+  offerGetQty: number | null;
+  offerStart: string | null;
+  offerEnd: string | null;
   store: { id: string; name: string };
   product: { id: string; name: string; imageUrl: string | null; images: string[]; organizationId: string | null; brand: { name: string } | null };
   variant: { id: string; name: string; imageUrl: string | null; mrp: string | null };
-  pricing: { effectivePrice: number; originalPrice: number; discountActive: boolean };
+  pricing: { effectivePrice: number; originalPrice: number; discountActive: boolean; offer: { buy: number; get: number } | null };
 }
 
 export interface StockSummary {

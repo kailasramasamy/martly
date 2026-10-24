@@ -126,8 +126,8 @@ function interleaveCampaignCards(layout: LayoutEntry[]) {
 
 /** The layout as the app sees it: automatic sections replaced by the cards and rows they stand for. */
 export async function expandLayout(ctx: ResolveContext, saved: LayoutEntry[]): Promise<LayoutEntry[]> {
-  // Festivals in the hero carousel are placed; ones it has no room for fall through to plain rows
-  const heroEntry = saved.find((e) => e.type === "FESTIVE_HERO");
+  // Festivals in the festive hero or the hero cards are placed; ones they have no room for fall through to plain rows
+  const heroEntry = saved.find((e) => e.type === "FESTIVE_HERO" || e.type === "HERO_CARDS");
   const heroes = heroEntry ? await festiveHeroesFor(ctx) : [];
   const layout = pinHeroBanners(saved);
   const festivals = await festivalCards(ctx, heroes.map((h) => h.id), layout);

@@ -32,6 +32,7 @@ interface OrderItem extends FlaggedItem {
   quantity: number;
   unitPrice: number;
   totalPrice: number;
+  freeQuantity: number;
 }
 
 export const OrderShow = () => {
@@ -363,7 +364,10 @@ export const OrderShow = () => {
                     title: "Qty",
                     dataIndex: "quantity",
                     key: "quantity",
-                    width: 80,
+                    width: 130,
+                    render: (v: number, item: OrderItem) => (
+                      <>{v}{item.freeQuantity > 0 && <Tag color="teal" style={{ marginInlineStart: 6 }}>{item.freeQuantity} free</Tag>}</>
+                    ),
                   },
                   {
                     title: "Unit Price",

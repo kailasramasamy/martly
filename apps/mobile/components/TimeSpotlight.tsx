@@ -3,6 +3,7 @@ import { View, Text, ScrollView, Pressable, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
 import { useStrings } from "../lib/i18n/use-strings";
+import { useLanguage } from "../lib/language-context";
 import type { StoreProduct, TimeCategorySection } from "../lib/types";
 
 const ALL = "all";
@@ -20,6 +21,7 @@ export function TimeSpotlight({ sections, period, renderProducts, onViewAll }: P
   const [selected, setSelected] = useState<string>(ALL);
   const t = useStrings("home");
   const c = useStrings("common");
+  const { getLocalizedName } = useLanguage();
   const copy = t.periodCopy(period);
 
   const products = useMemo(() => {
@@ -35,7 +37,7 @@ export function TimeSpotlight({ sections, period, renderProducts, onViewAll }: P
     return rows.filter((row, i) => rows.findIndex((r) => r.id === row.id) === i);
   }, [sections, selected]);
 
-  const chips = [{ id: ALL, name: t.all }, ...sections.map((s) => ({ id: s.id, name: s.name }))];
+  const chips = [{ id: ALL, name: t.all }, ...sections.map((s) => ({ id: s.id, name: getLocalizedName(s) }))];
 
   return (
     <View style={styles.section}>

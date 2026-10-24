@@ -5,6 +5,7 @@ import { LinkOutlined, DollarOutlined, TagOutlined } from "@ant-design/icons";
 import { sectionTitle } from "../../theme";
 import { DISCOUNT_TYPE_OPTIONS } from "../../constants/tag-colors";
 import { ReadableSection } from "../../components/ReadableSection";
+import { OfferCard, offerPayload } from "../../components/OfferFields";
 
 export const StoreProductCreate = () => {
   const { formProps, saveButtonProps } = useForm({ resource: "store-products" });
@@ -26,7 +27,14 @@ export const StoreProductCreate = () => {
   return (
     <Create saveButtonProps={saveButtonProps}>
       <ReadableSection>
-        <Form {...formProps} layout="vertical">
+        <Form
+          {...formProps}
+          layout="vertical"
+          onFinish={(values: Record<string, unknown>) => {
+            const { offerPreset: _preset, ...rest } = values;
+            return formProps.onFinish?.({ ...rest, ...offerPayload(values) });
+          }}
+        >
           <Row gutter={[16, 16]}>
             <Col xs={24} lg={12}>
               <Card title={sectionTitle(<LinkOutlined />, "Assignment")} size="small">
@@ -82,6 +90,10 @@ export const StoreProductCreate = () => {
                   </Col>
                 </Row>
               </Card>
+            </Col>
+
+            <Col xs={24}>
+              <OfferCard />
             </Col>
           </Row>
         </Form>

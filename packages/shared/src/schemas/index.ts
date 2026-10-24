@@ -333,6 +333,17 @@ export const createProductSchema = z.object({
 export type CreateProductInput = z.infer<typeof createProductSchema>;
 
 // ── StoreProduct ─────────────────────────────────────
+// Buy X get Y free: both quantities together, or both cleared
+const offerFields = {
+  offerBuyQty: z.number().int().min(1).max(10).nullish(),
+  offerGetQty: z.number().int().min(1).max(10).nullish(),
+  offerStart: z.coerce.date().nullish(),
+  offerEnd: z.coerce.date().nullish(),
+};
+const offerPaired = (v: { offerBuyQty?: number | null; offerGetQty?: number | null }) =>
+  (v.offerBuyQty == null) === (v.offerGetQty == null);
+const OFFER_PAIR_MESSAGE = { message: "Set both the buy and the free quantity, or neither", path: ["offerGetQty"] };
+
 export const createStoreProductSchema = z.object({
   storeId: z.string().uuid(),
   variantId: z.string().uuid(),
@@ -342,7 +353,8 @@ export const createStoreProductSchema = z.object({
   discountValue: z.number().min(0).nullish(),
   discountStart: z.coerce.date().nullish(),
   discountEnd: z.coerce.date().nullish(),
-});
+  ...offerFields,
+}).refine(offerPaired, OFFER_PAIR_MESSAGE);
 export type CreateStoreProductInput = z.infer<typeof createStoreProductSchema>;
 
 export const bulkCreateStoreProductSchema = z.object({
@@ -371,7 +383,8 @@ export const updateStoreProductSchema = z.object({
   discountStart: z.coerce.date().nullish(),
   discountEnd: z.coerce.date().nullish(),
   memberPrice: z.number().positive().nullish(),
-});
+  ...offerFields,
+}).refine(offerPaired, OFFER_PAIR_MESSAGE);
 export type UpdateStoreProductInput = z.infer<typeof updateStoreProductSchema>;
 
 // ── User Address ─────────────────────────────────────
@@ -683,11 +696,18 @@ export const updateFestivalEventSchema = z.object(festivalEventFields).partial()
 export type UpdateFestivalEventInput = z.infer<typeof updateFestivalEventSchema>;
 
 // ── Coupon ──────────────────────────────────────────
+/** A coupon's headline and description in other languages; blank Tamil is filled in automatically */
+const couponTranslations = z.record(z.string(), z.object({
+  title: z.string().trim().max(60).optional(),
+  description: z.string().trim().optional(),
+})).nullish();
+
 export const createCouponSchema = z.object({
   code: z.string().min(1).transform((v) => v.toUpperCase()),
   /** Offer card headline, e.g. "Flat \u20B950 off" */
   title: z.string().trim().max(40).nullish(),
   description: z.string().optional(),
+  translations: couponTranslations,
   /** Advertise it in Home's offers and checkout's offer list */
   showOnHome: z.boolean().default(false),
   discountType: z.nativeEnum(DiscountType),
@@ -712,6 +732,7 @@ export const updateCouponSchema = z.object({
   code: z.string().min(1).transform((v) => v.toUpperCase()).optional(),
   title: z.string().trim().max(40).nullish(),
   description: z.string().nullish(),
+  translations: couponTranslations,
   showOnHome: z.boolean().optional(),
   discountType: z.nativeEnum(DiscountType).optional(),
   discountValue: z.number().positive().optional(),

@@ -27,6 +27,7 @@ import { colors, spacing, fontSize } from "../constants/theme";
 import type { Translations } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
 import { RefundDestinationPicker } from "../components/order/RefundDestinationPicker";
+import { paidPerUnit } from "@martly/shared/offers";
 
 const MAX_IMAGES = 5;
 
@@ -55,7 +56,8 @@ interface SelectedItem {
   orderItemId: string;
   quantity: number;
   maxQuantity: number;
-  unitPrice: number;
+  /** What each unit was paid for, free units averaged in */
+  paidEach: number;
 }
 
 function ReturnRequestScreen() {
@@ -91,7 +93,7 @@ function ReturnRequestScreen() {
           orderItemId: item.id,
           quantity: returnable(item),
           maxQuantity: returnable(item),
-          unitPrice: Number(item.unitPrice),
+          paidEach: paidPerUnit(item),
         });
       });
       setSelectedItems(initial);
@@ -116,7 +118,7 @@ function ReturnRequestScreen() {
           orderItemId: itemId,
           quantity: returnable(item),
           maxQuantity: returnable(item),
-          unitPrice: Number(item.unitPrice),
+          paidEach: paidPerUnit(item),
         });
       }
       return next;
@@ -136,7 +138,7 @@ function ReturnRequestScreen() {
   };
 
   const refundAmount = Array.from(selectedItems.values()).reduce(
-    (sum, item) => sum + item.unitPrice * item.quantity,
+    (sum, item) => sum + item.paidEach * item.quantity,
     0
   );
 

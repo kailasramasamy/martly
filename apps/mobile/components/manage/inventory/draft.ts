@@ -1,8 +1,11 @@
+import type { MultiBuyOffer } from "@martly/shared/offers";
 import { fromDateKey, toDateKey } from "../ui/dates";
 import type { DiscountType, StoreProductItem } from "./types";
 import type { ListingAccess } from "./use-listing-access";
 
 export type DiscountMode = "NONE" | DiscountType;
+
+export type OfferMode = "NONE" | "B1G1" | "B2G1" | "CUSTOM";
 
 export interface StoreProductDraft {
   stock: string;
@@ -14,6 +17,30 @@ export interface StoreProductDraft {
   discountValue: string;
   discountStart: string | null;
   discountEnd: string | null;
+  offerMode: OfferMode;
+  offerBuy: string;
+  offerGet: string;
+  offerStart: string | null;
+  offerEnd: string | null;
+}
+
+function offerModeOf(buy: number | null, get: number | null): OfferMode {
+  if (buy === null || get === null) return "NONE";
+  if (buy === 1 && get === 1) return "B1G1";
+  return buy === 2 && get === 1 ? "B2G1" : "CUSTOM";
+}
+
+export function offerLabel(offer: MultiBuyOffer): string {
+  return `Buy ${offer.buy} Get ${offer.get}`;
+}
+
+/** The offer the draft describes, or null when none is set or the quantities aren't valid yet */
+export function draftOffer(d: StoreProductDraft): MultiBuyOffer | null {
+  if (d.offerMode === "NONE") return null;
+  const buy = Number(d.offerBuy);
+  const get = Number(d.offerGet);
+  const valid = (n: number) => Number.isInteger(n) && n >= 1 && n <= 10;
+  return valid(buy) && valid(get) ? { buy, get } : null;
 }
 
 export function draftFromItem(item: StoreProductItem): StoreProductDraft {
@@ -27,10 +54,18 @@ export function draftFromItem(item: StoreProductItem): StoreProductDraft {
     discountValue: item.discountValue ? String(Number(item.discountValue)) : "",
     discountStart: item.discountStart ? toDateKey(new Date(item.discountStart)) : null,
     discountEnd: item.discountEnd ? toDateKey(new Date(item.discountEnd)) : null,
+    offerMode: offerModeOf(item.offerBuyQty, item.offerGetQty),
+    offerBuy: item.offerBuyQty ? String(item.offerBuyQty) : "",
+    offerGet: item.offerGetQty ? String(item.offerGetQty) : "",
+    offerStart: item.offerStart ? toDateKey(new Date(item.offerStart)) : null,
+    offerEnd: item.offerEnd ? toDateKey(new Date(item.offerEnd)) : null,
   };
 }
 
 export type DraftResult = { payload: Record<string, unknown> } | { error: string };
+
+const startIso = (key: string | null) => (key ? fromDateKey(key).toISOString() : null);
+const endIso = (key: string | null) => (key ? new Date(fromDateKey(key).setHours(23, 59, 59, 999)).toISOString() : null);
 
 function discountPayload(d: StoreProductDraft, price: number): Record<string, unknown> | string {
   if (d.discountMode === "NONE") {
@@ -43,9 +78,16 @@ function discountPayload(d: StoreProductDraft, price: number): Record<string, un
   return {
     discountType: d.discountMode,
     discountValue: value,
-    discountStart: d.discountStart ? fromDateKey(d.discountStart).toISOString() : null,
-    discountEnd: d.discountEnd ? new Date(fromDateKey(d.discountEnd).setHours(23, 59, 59, 999)).toISOString() : null,
+    discountStart: startIso(d.discountStart),
+    discountEnd: endIso(d.discountEnd),
   };
+}
+
+function offerPayload(d: StoreProductDraft): Record<string, unknown> | string {
+  if (d.offerMode === "NONE") return { offerBuyQty: null, offerGetQty: null, offerStart: null, offerEnd: null };
+  const offer = draftOffer(d);
+  if (!offer) return "Offer quantities must be whole numbers from 1 to 10";
+  return { offerBuyQty: offer.buy, offerGetQty: offer.get, offerStart: startIso(d.offerStart), offerEnd: endIso(d.offerEnd) };
 }
 
 /** Validate the draft and build the PUT /store-products/:id body, with only the fields the member may change */
@@ -62,7 +104,9 @@ export function buildUpdatePayload(d: StoreProductDraft, access: ListingAccess):
     if (d.memberPrice && !(Number(d.memberPrice) > 0)) return { error: "Member price must be above zero" };
     const discount = discountPayload(d, price);
     if (typeof discount === "string") return { error: discount };
-    Object.assign(payload, { price, memberPrice: d.memberPrice ? Number(d.memberPrice) : null, ...discount });
+    const offer = offerPayload(d);
+    if (typeof offer === "string") return { error: offer };
+    Object.assign(payload, { price, memberPrice: d.memberPrice ? Number(d.memberPrice) : null, ...discount, ...offer });
   }
   if (access.listed) payload.isActive = d.isActive;
   if (access.featured) payload.isFeatured = d.isFeatured;

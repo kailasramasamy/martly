@@ -28,12 +28,14 @@ import { HomeSectionView } from "../../components/home/sections";
 import { HomeSectionProvider, type HomeSectionEnv } from "../../components/home/sections/context";
 import { useLightStatusBar } from "../../lib/use-light-status-bar";
 import { useHomeSections, type MobileHomeSection } from "../../lib/use-home-sections";
+import { heroHeaderTheme, withoutHeroDuplicates } from "../../components/home/hero-cards/hero-theme";
 import { refreshBrandSpotlight } from "../../lib/use-brand-spotlight";
 import type { HomeTheme } from "@martly/shared/types";
 import { TabBottomDock } from "../../components/TabIcon";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 import { StoreDiscoveryButton, useStoreDiscovery, type StoreDiscoveryState } from "../../components/store-discovery/StoreDiscovery";
 
+const THEMED_LEADS = new Set<string>(["FESTIVE_HERO", "HERO_CARDS"]);
 const renderSection: ListRenderItem<MobileHomeSection> = ({ item }) => <HomeSectionView section={item} />;
 const keyOf = (section: MobileHomeSection) => section.id;
 
@@ -68,7 +70,9 @@ function useHomeScroll() {
 function useHomeData() {
   const { selectedStore, refreshStores } = useStore();
   const { isAuthenticated } = useAuth();
-  const home = useHomeSections(selectedStore?.id);
+  const loaded = useHomeSections(selectedStore?.id);
+  const sections = useMemo(() => withoutHeroDuplicates(loaded.sections), [loaded.sections]);
+  const home = { ...loaded, sections };
   const member = useMemberStatus(selectedStore, isAuthenticated);
   const [refreshing, setRefreshing] = useState(false);
   const { reload } = home;
@@ -93,10 +97,12 @@ function useHomeData() {
 function useSectionEnv(data: ReturnType<typeof useHomeData>, expandedHeader: number, heroInView: boolean) {
   const { selectedStore } = useStore();
   const { sections, chrome } = data.home;
-  // A festival hero leading the page runs its art up behind the header, which floats over it see-through and
-  // takes the colours of the slide in view
+  // A festival hero or the hero cards leading the page run their wash up behind the header, which floats over it
+  // see-through and takes the colours of the slide or card in view
   const [slideTheme, setSlideTheme] = useState<HomeTheme | null>(null);
-  const festive = sections[0]?.type === "FESTIVE_HERO" ? slideTheme ?? chrome?.headerTheme ?? null : null;
+  const lead = sections[0];
+  const leadTheme = lead?.type === "HERO_CARDS" ? heroHeaderTheme(lead.cards[0].theme) : chrome?.headerTheme ?? null;
+  const festive = lead && THEMED_LEADS.has(lead.type) ? slideTheme ?? leadTheme : null;
   const festiveHeroIds = useMemo(() => {
     const hero = sections.find((s) => s.type === "FESTIVE_HERO");
     return hero && "data" in hero ? (hero.data.heroes as { id: string }[]).map((h) => h.id) : [];
@@ -109,11 +115,13 @@ function useSectionEnv(data: ReturnType<typeof useHomeData>, expandedHeader: num
     hasSubscriptions,
     festiveHeroIds,
     onFestiveTheme: setSlideTheme,
+    leadId: lead?.id ?? null,
     festiveTheme: festive,
-    afterHeroId: festive ? sections[1]?.id ?? null : null,
+    // Only the festive hero's colour carries into the row under it; the hero cards' wash fades into the page
+    afterHeroId: festive && lead?.type === "FESTIVE_HERO" ? sections[1]?.id ?? null : null,
     heroInView,
     backdrop: festive && expandedHeader ? { top: expandedHeader } : null,
-  }), [selectedStore, memberStatus, hasSubscriptions, festiveHeroIds, festive, sections, expandedHeader, heroInView]);
+  }), [selectedStore, memberStatus, hasSubscriptions, festiveHeroIds, festive, sections, lead, expandedHeader, heroInView]);
   return { env, festive };
 }
 
@@ -136,7 +144,7 @@ function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, ready
   const { home, refreshing, onRefresh } = data;
   const { tabBarScroll } = scroll;
   const onViewableItemsChanged = useCallback(({ viewableItems }: { viewableItems: ViewToken<MobileHomeSection>[] }) => {
-    onHeroInView(viewableItems.some((v) => v.item.type === "FESTIVE_HERO"));
+    onHeroInView(viewableItems.some((v) => THEMED_LEADS.has(v.item.type)));
   }, [onHeroInView]);
   return (
     <FlatList
@@ -158,7 +166,13 @@ function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, ready
       maxToRenderPerBatch={4}
       removeClippedSubviews={Platform.OS === "android"}
       ListFooterComponent={
-        <HomeListFooter hasStore={Boolean(home.storeId)} loading={home.loading && home.sections.length === 0} loadingMore={home.loadingMore} discovery={discovery} />
+        <HomeListFooter
+          hasStore={Boolean(home.storeId)}
+          loading={home.loading && home.sections.length === 0}
+          loadingMore={home.loadingMore}
+          reachedEnd={home.reachedEnd && home.sections.length > 0}
+          discovery={discovery}
+        />
       }
       refreshControl={
         <RefreshControl
@@ -199,6 +213,7 @@ export default function HomeScreen() {
           collapsed={scroll.tabBarScroll.headerCollapsed}
           onLayout={header.onLayout}
           searchHints={chrome?.searchHints}
+          searchHintTranslations={chrome?.searchHintTranslations}
         />
         <HomeSectionProvider value={env}>
           <SectionList data={data} scroll={scroll} dockHeight={dockHeight} festiveInk={festive?.title ?? null} headerOffset={header.expanded} ready={env !== null} discovery={discovery} onHeroInView={setHeroInView} />

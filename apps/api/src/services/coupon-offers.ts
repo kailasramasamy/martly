@@ -15,6 +15,19 @@ export function offerTitle(coupon: Pick<Coupon, "title" | "discountType" | "disc
   return coupon.maxDiscount ? `${value}% off, up to ${rupees(Number(coupon.maxDiscount))}` : `${value}% off`;
 }
 
+type OfferTranslations = NonNullable<CouponOffer["translations"]>;
+
+// A coupon without a headline gets one made from its discount in Tamil too, as it does in English
+function offerTranslations(coupon: Coupon): OfferTranslations | null {
+  const own = (coupon.translations ?? {}) as OfferTranslations;
+  if (coupon.title) return Object.keys(own).length > 0 ? own : null;
+  const value = Number(coupon.discountValue);
+  const made = coupon.discountType === "FLAT"
+    ? `${rupees(value)} தள்ளுபடி`
+    : `${value}% தள்ளுபடி${coupon.maxDiscount ? `, அதிகபட்சம் ${rupees(Number(coupon.maxDiscount))}` : ""}`;
+  return { ...own, ta: { ...own.ta, title: own.ta?.title || made } };
+}
+
 interface OfferQuery {
   organizationId: string;
   /** Empty for guests, who see every advertised coupon */
@@ -29,7 +42,7 @@ function toOffer(coupon: Coupon, orderAmount: number | undefined): CouponOffer {
   const shortBy = orderAmount !== undefined && minimum !== null && orderAmount < minimum ? Math.ceil(minimum - orderAmount) : null;
   const eligible = orderAmount !== undefined && shortBy === null;
   return {
-    code: coupon.code, title: offerTitle(coupon), description: coupon.description,
+    code: coupon.code, title: offerTitle(coupon), description: coupon.description, translations: offerTranslations(coupon),
     discountType: coupon.discountType, discountValue: Number(coupon.discountValue), minOrderAmount: minimum,
     maxDiscount: coupon.maxDiscount === null ? null : Number(coupon.maxDiscount), expiresAt: coupon.expiresAt?.toISOString() ?? null,
     eligible, shortBy, discount: eligible ? couponDiscount(coupon, orderAmount!) : null,

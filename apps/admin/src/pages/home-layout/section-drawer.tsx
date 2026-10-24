@@ -5,11 +5,11 @@ import { HomeSectionType, HomeSectionTypeLabels, SECTION_COLLECTION, THEME_BAND_
 import { homeSectionConfigSchemas } from "@martly/shared/schemas";
 import { CampaignCardFields, ProductRowFields } from "./config-forms";
 import { BrandCardFields, CategoryDirectoryFields, PriceBandFields, TabbedRowFields, MAX_TABS, MIN_TABS, itemsOf, parseItems } from "./config-forms-phase2";
-import { MAX_TILES, MIN_TILES, ThemeBandFields, TileGridFields } from "./config-forms-phase3";
+import { HeroCardsFields, MAX_TILES, MIN_TILES, ThemeBandFields, TileGridFields } from "./config-forms-phase3";
 import type { HomeLayoutSection, SectionPayload } from "./use-home-layout";
 
 const EDITABLE: HomeSectionType[] = [
-  "PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID", "THEME_BAND",
+  "PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID", "THEME_BAND", "HERO_CARDS",
 ];
 const COMING_SOON: HomeSectionType[] = [
   "PERSONALISED",
@@ -126,6 +126,7 @@ export const SectionDrawer = ({ open, section, onClose, onSave }: Props) => {
         {type === "BRAND_CARD" && <BrandCardFields brandId={section?.config?.brandId} />}
         {type === "CATEGORY_DIRECTORY" && <CategoryDirectoryFields />}
         {type === "THEME_BAND" && <ThemeBandFields />}
+        {type === "HERO_CARDS" && <HeroCardsFields collectionProps={selectProps} />}
         {type === "CAMPAIGN_CARD" && <CampaignCardFields themed={themed} onThemedChange={setThemed} />}
         <Form.Item label="Active" name="isActive" valuePropName="checked"><Switch /></Form.Item>
       </Form>

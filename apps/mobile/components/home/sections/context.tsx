@@ -12,8 +12,10 @@ export interface HomeSectionEnv {
   hasSubscriptions: boolean;
   /** The live festivals' collections; hero carousel banners that just point at one are left out */
   festiveHeroIds: string[];
-  /** The festive hero in view, whose colours the header takes */
+  /** The festive hero slide or hero card in view, whose colours the header takes */
   onFestiveTheme: (theme: HomeTheme) => void;
+  /** The section leading the page; only it themes the header and runs up behind it */
+  leadId: string | null;
   /** The festive hero slide's colours while a festival leads the page */
   festiveTheme: HomeTheme | null;
   /** The section right under a leading festive hero, which continues its colour so the top reads as one block */

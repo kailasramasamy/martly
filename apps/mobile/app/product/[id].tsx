@@ -18,11 +18,11 @@ import { useRequireSignIn } from "../../lib/sign-in-context";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
-import { useCart } from "../../lib/cart-context";
+import { toCartItem, useCart } from "../../lib/cart-context";
 import { useStore } from "../../lib/store-context";
 import { useWishlist } from "../../lib/wishlist-context";
 import { useAuth } from "../../lib/auth-context";
-import { useMembership, getBestPrice } from "../../lib/membership-context";
+import { useMembership } from "../../lib/membership-context";
 import { useToast } from "../../lib/toast-context";
 import { useBasketMode } from "../../lib/basket-mode-context";
 import { useLanguage } from "../../lib/language-context";
@@ -35,6 +35,7 @@ import { BrandChip, BrandStoreBanner } from "../../components/BrandPromo";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { ProductDetailSkeleton } from "../../components/SkeletonLoader";
 import type { Product, StoreProduct, Variant, Review, ReviewSummary } from "../../lib/types";
+import { OfferTag } from "../../components/DealTag";
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get("window");
 
@@ -361,15 +362,7 @@ export default function ProductDetailScreen() {
       return;
     }
 
-    const item = {
-      storeProductId: sp.id,
-      productId: sp.product.id,
-      productName: sp.product.name,
-      variantId: sp.variant.id,
-      variantName: sp.variant.name,
-      price: getBestPrice(sp, isMember),
-      imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
-    };
+    const item = toCartItem(sp, 1, isMember);
 
     if (cartStoreId && cartStoreId !== storeId) {
       setReplaceCartConfirm({
@@ -510,6 +503,7 @@ export default function ProductDetailScreen() {
                       {sp.pricing?.memberPrice != null && sp.pricing.memberPrice < displayPrice && (
                         <Text style={styles.unitCardMember}>{t.product.memberPrice(sp.pricing.memberPrice)}</Text>
                       )}
+                      {sp.pricing?.offer && <OfferTag offer={sp.pricing.offer} />}
                       {isOos && <Text style={styles.unitCardOosLabel}>{t.outOfStockCaps}</Text>}
                     </View>
                   </TouchableOpacity>
@@ -812,6 +806,7 @@ export default function ProductDetailScreen() {
               )}
               <Text style={styles.bottomBarPrice}>{"\u20B9"}{selectedSpPrice}</Text>
             </View>
+            {selectedSp.pricing?.offer && <OfferTag offer={selectedSp.pricing.offer} />}
           </View>
           {selectedSpOos ? (
             <View style={[styles.bottomBarAddBtn, styles.disabledBtn]}>

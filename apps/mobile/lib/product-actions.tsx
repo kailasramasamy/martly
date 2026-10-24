@@ -1,8 +1,8 @@
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
 import { View, StyleSheet } from "react-native";
-import { useCart, type CartStore } from "./cart-context";
+import { toCartItem, useCart, type CartStore } from "./cart-context";
 import { useBasketMode } from "./basket-mode-context";
-import { useMembership, getBestPrice } from "./membership-context";
+import { useMembership } from "./membership-context";
 import { useWishlist } from "./wishlist-context";
 import { useRequireSignIn } from "./sign-in-context";
 import { useToast } from "./toast-context";
@@ -46,12 +46,8 @@ function useCartActions(store: CartStore | null) {
       toast.show(t.addedToBasket, "success");
       return;
     }
-    const item = {
-      storeProductId: sp.id, productId: sp.product.id, productName: sp.product.name, translations: sp.product.translations,
-      variantId: sp.variant.id, variantName: sp.variant.name,
-      price: getBestPrice(sp, isMember), imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
-    };
-    const add = () => (quantity > 1 ? addItems(store, [{ ...item, quantity }]) : addItem(store, item));
+    const item = toCartItem(sp, quantity, isMember);
+    const add = () => (quantity > 1 ? addItems(store, [item]) : addItem(store, item));
     // The cart holds one store at a time: confirm before discarding another store's cart
     if (cartStoreId && cartStoreId !== store.id) setPendingReplace(() => add);
     else add();

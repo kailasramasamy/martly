@@ -25,6 +25,7 @@ interface Props {
   onLayout?: (e: LayoutChangeEvent) => void;
   /** The search bar's rotating suggestions, from the server's home chrome */
   searchHints?: string[];
+  searchHintTranslations?: Record<string, string[]>;
 }
 
 /** Over festive art the header is clear at the top of the page; once scrolled a solid festive band fades in behind it */
@@ -36,7 +37,7 @@ function useFestiveBand(collapsed: boolean) {
   return band;
 }
 
-export function HomeHeader({ store, userArea, onPickStore, festive, collapsed = false, onLayout, searchHints }: Props) {
+export function HomeHeader({ store, userArea, onPickStore, festive, collapsed = false, onLayout, searchHints, searchHintTranslations }: Props) {
   const t = useStrings("home");
   const requireSignIn = useRequireSignIn();
   const insets = useSafeAreaInsets();
@@ -73,9 +74,10 @@ export function HomeHeader({ store, userArea, onPickStore, festive, collapsed = 
         )}
       </View>
       )}
-      {store && <SearchBarButton onTint={tint} hints={searchHints} />}
-      {/* Folds away with the location row once scrolled, so only the search bar stays pinned */}
-      {store && !collapsed && <EasyShopRow onTint={tint} />}
+      {store && <SearchBarButton onTint={tint} hints={searchHints} hintTranslations={searchHintTranslations} />}
+      {/* Folds away with the location row once scrolled, so only the search bar stays pinned.
+          A dark festival's light title would vanish on the white pills, so they stay teal */}
+      {store && !collapsed && <EasyShopRow ink={festive && !festive.dark ? festive.title : colors.primary} />}
     </View>
   );
 }

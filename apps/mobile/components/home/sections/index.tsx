@@ -1,7 +1,8 @@
 import { memo, type ComponentType } from "react";
 import type { HomeSectionType } from "@martly/shared/constants";
 import type {
-  BestsellerCategoriesSection as BestsellerCategories, BrandCardSection as BrandCard, CampaignCardSection as CampaignCard, CategoryDirectorySection as CategoryDirectory,
+  BestsellerCategoriesSection as BestsellerCategories, BrandCardSection as BrandCard, BuyGetDealsSection as BuyGetDeals, CampaignCardSection as CampaignCard, CategoryDirectorySection as CategoryDirectory,
+  HeroCardsSection as HeroCards,
   PriceBandDealsSection as PriceBandDeals, ProductRowSection as ProductRow, StoreSpecialsSection as StoreSpecials, SystemSection, TabbedRowSection as TabbedRow, ThemeBandSection as ThemeBand,
   TileGridSection as TileGrid,
 } from "@martly/shared/types";
@@ -9,6 +10,7 @@ import type { MobileHomeSection } from "../../../lib/use-home-sections";
 import type { StoreProduct } from "../../../lib/types";
 import { BestsellerCategoriesSection } from "./BestsellerCategoriesSection";
 import { BrandCardSection } from "./BrandCardSection";
+import { BuyGetDealsSection } from "./BuyGetDealsSection";
 import { CampaignCardSection } from "./campaign/CampaignCardSection";
 import { CategoryDirectorySection } from "./CategoryDirectorySection";
 import { ExploreGridSection } from "./ExploreGridSection";
@@ -28,6 +30,7 @@ import { FestiveHeroSection } from "./system/FestiveHeroSection";
 import { MemberChipsSection } from "./system/MemberChipsSection";
 import { OffersSection } from "./system/OffersSection";
 import { RecipesSection } from "./system/RecipesSection";
+import { HeroCardsSection } from "../hero-cards/HeroCardsSection";
 
 type SectionOf<K extends HomeSectionType> =
   K extends "PRODUCT_ROW" ? ProductRow<StoreProduct>
@@ -39,6 +42,8 @@ type SectionOf<K extends HomeSectionType> =
   : K extends "BESTSELLER_CATEGORIES" ? BestsellerCategories
   : K extends "THEME_BAND" ? ThemeBand
   : K extends "STORE_SPECIALS" ? StoreSpecials<StoreProduct>
+  : K extends "BUY_GET_DEALS" ? BuyGetDeals<StoreProduct>
+  : K extends "HERO_CARDS" ? HeroCards<StoreProduct>
   : K extends "EXPLORE_GRID" | "STORE_GRID" ? TileGrid
   : SystemSection;
 
@@ -66,6 +71,8 @@ const SECTIONS: Registry = {
   BESTSELLER_CATEGORIES: BestsellerCategoriesSection,
   THEME_BAND: ThemeBandSection,
   STORE_SPECIALS: StoreSpecialsSection,
+  BUY_GET_DEALS: BuyGetDealsSection,
+  HERO_CARDS: HeroCardsSection,
   EXPLORE_GRID: ExploreGridSection,
   STORE_GRID: StoreGridSection,
   OFFERS: OffersSection,

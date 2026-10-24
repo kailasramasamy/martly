@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import { colors, fonts, radius } from "../../../constants/theme";
 import { formatINR, manage, tabular } from "../ui/tokens";
-import type { StoreProductDraft } from "./draft";
+import { draftOffer, offerLabel, type StoreProductDraft } from "./draft";
 
 function effectivePrice(d: StoreProductDraft): number | null {
   const price = Number(d.price);
@@ -18,14 +18,18 @@ export function PricePreview({ draft }: { draft: StoreProductDraft }) {
   const pay = effectivePrice(draft);
   if (pay === null) return null;
   const discounted = pay < price;
+  const offer = draftOffer(draft);
   return (
-    <View style={styles.box}>
-      <Text style={styles.label}>Customers pay</Text>
-      <View style={styles.figures}>
-        {discounted && <Text style={[styles.was, tabular]}>{formatINR(price, { decimals: true })}</Text>}
-        <Text style={[styles.pay, tabular]}>{formatINR(pay, { decimals: true })}</Text>
-        {discounted && <Text style={styles.off}>{Math.round(((price - pay) / price) * 100)}% off</Text>}
+    <View>
+      <View style={styles.box}>
+        <Text style={styles.label}>Customers pay</Text>
+        <View style={styles.figures}>
+          {discounted && <Text style={[styles.was, tabular]}>{formatINR(price, { decimals: true })}</Text>}
+          <Text style={[styles.pay, tabular]}>{formatINR(pay, { decimals: true })}</Text>
+          {discounted && <Text style={styles.off}>{Math.round(((price - pay) / price) * 100)}% off</Text>}
+        </View>
       </View>
+      {offer && <Text style={[styles.offer, tabular]}>{`${offerLabel(offer)} · ${offer.buy + offer.get} for ${formatINR(pay * offer.buy, { decimals: true })}`}</Text>}
     </View>
   );
 }
@@ -35,6 +39,7 @@ const styles = StyleSheet.create({
     flexDirection: "row", alignItems: "center", justifyContent: "space-between",
     paddingHorizontal: 14, height: 48, borderRadius: radius.lg, backgroundColor: manage.tint,
   },
+  offer: { marginTop: 6, paddingHorizontal: 14, fontFamily: fonts.semibold, fontSize: 12.5, color: colors.primaryDark },
   label: { fontFamily: fonts.semibold, fontSize: 13, color: colors.primaryDark },
   figures: { flexDirection: "row", alignItems: "baseline", gap: 8 },
   was: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, textDecorationLine: "line-through" },

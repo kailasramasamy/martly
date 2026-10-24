@@ -33,7 +33,7 @@ const RIDER_TRIP_INCLUDE = {
       collectedReturns: { select: PICKUP_SELECT },
       items: {
         select: {
-          id: true, quantity: true, unitPrice: true, totalPrice: true, refusedQuantity: true, refusedReason: true, replacesReturnId: true,
+          id: true, quantity: true, unitPrice: true, totalPrice: true, freeQuantity: true, refusedQuantity: true, refusedReason: true, replacesReturnId: true,
           product: { select: { name: true, imageUrl: true, images: true } },
           variant: { select: { name: true, imageUrl: true } },
         },

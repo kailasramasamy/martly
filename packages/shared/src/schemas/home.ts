@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
+import { DayPart, HERO_CARD_KINDS, HeroCardKind, HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
 
 const hex = z.string().regex(/^#[0-9a-fA-F]{6}$/, "Use a #RRGGBB colour");
 const theme = z.object({ background: hex, title: hex, dark: z.boolean() });
@@ -25,6 +25,13 @@ export const homeSectionConfigSchemas = {
   BRAND_CARD: z.object({ brandId: z.string().uuid(), tint: hex.optional(), imageUrl: z.string().url().optional() }),
   CATEGORY_DIRECTORY: z.object({ departmentIds: z.array(z.string().uuid()).default([]) }),
   THEME_BAND: z.object({ tint: hex, imageUrl: z.string().url().optional() }),
+  HERO_CARDS: z.object({
+    cards: z.array(z.nativeEnum(HeroCardKind)).min(1)
+      .refine((cards) => new Set(cards).size === cards.length, "Each card once")
+      .default([...HERO_CARD_KINDS]),
+    /** The collection the "Right now" card shows in each part of the day; a part without one shows no card */
+    rightNow: z.record(z.nativeEnum(DayPart), z.string().uuid()).default({}),
+  }),
 } as const;
 
 /** Config for a type, or `{}` for types without settings */
@@ -75,6 +82,11 @@ export const homeSectionArtSchema = z.object({ itemIds: z.array(z.string().uuid(
 
 // The cursor carries the sponsored products already shown, so it grows a little with each page
 export const homeSectionsQuerySchema = z.object({ cursor: z.string().max(2000).optional() });
+
+export const buyGetQuerySchema = z.object({
+  categoryId: z.string().uuid().optional(),
+  page: z.coerce.number().int().min(1).max(50).default(1),
+});
 
 export const homeDealsQuerySchema = z.object({
   sectionId: z.string().uuid(),

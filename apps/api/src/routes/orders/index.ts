@@ -33,6 +33,7 @@ import { formatOrderRef } from "../../services/notify/copy.js";
 import { notifyOrderPlaced, notifyPaymentFailed, notifySlotFullIfNeeded } from "../../services/notify/order-alerts.js";
 import { applyCancelRefunds, cancelOrder, notifyOrderCancelled } from "../../services/order-cancel.js";
 import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
+import { freeUnits, lineTotal } from "@martly/shared/offers";
 import { OrderStatus, Permission } from "@martly/shared/constants";
 
 function getValidTransitions(fulfillmentType: string): Record<string, string[]> {
@@ -265,7 +266,8 @@ export async function orderRoutes(app: FastifyInstance) {
         const mp = Number(spMemberPrice);
         if (mp < unitPrice) unitPrice = mp;
       }
-      const totalPrice = unitPrice * item.quantity;
+      const freeQuantity = freeUnits(item.quantity, pricing.offer);
+      const totalPrice = lineTotal(unitPrice, item.quantity, pricing.offer);
       itemsTotal += totalPrice;
       return {
         storeProductId: item.storeProductId,
@@ -274,6 +276,7 @@ export async function orderRoutes(app: FastifyInstance) {
         quantity: item.quantity,
         unitPrice,
         totalPrice,
+        freeQuantity,
         originalPrice: pricing.discountActive ? pricing.originalPrice : undefined,
         discountType: pricing.discountType ?? undefined,
         discountValue: pricing.discountValue ?? undefined,

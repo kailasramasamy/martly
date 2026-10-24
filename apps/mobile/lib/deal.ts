@@ -42,13 +42,13 @@ export function cardDeal(item: StoreProduct, isMember: boolean): CardDeal {
   };
 }
 
-/** Turns a deal into its badge text: "₹N OFF" for big rupee savings, else "N% OFF" (on MRP when struck against it) */
+/** Turns a deal into its badge text: "₹N OFF" for big rupee savings, else "N% OFF" */
 export function useDealLabel() {
   const tc = useStrings("common");
   const t = useStrings("catalog");
   return (deal: CardDeal): string | null => {
     if (deal.kind == null) return null;
     if (deal.savingRupees >= FLAT_LABEL_MIN_RUPEES && deal.savingRupees > deal.savingPercent) return t.flatOff(deal.savingRupees);
-    return deal.kind === "PROMO" ? tc.percentOff(deal.savingPercent) : tc.percentOffMrp(deal.savingPercent);
+    return tc.percentOff(deal.savingPercent);
   };
 }

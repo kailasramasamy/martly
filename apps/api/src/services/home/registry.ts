@@ -2,7 +2,9 @@ import type { HomeSectionType } from "@martly/shared/constants";
 import type { SectionResolver } from "./types.js";
 import { bestsellerCategories } from "./resolvers/bestseller-categories.js";
 import { brandCard } from "./resolvers/brand-card.js";
+import { buyGetDeals } from "./resolvers/buy-get-deals.js";
 import { campaignCard } from "./resolvers/campaign-card.js";
+import { heroCards } from "./resolvers/hero-cards.js";
 import { categoryDirectory } from "./resolvers/category-directory.js";
 import { priceBandDeals } from "./resolvers/price-band-deals.js";
 import { productRow } from "./resolvers/product-row.js";
@@ -45,4 +47,6 @@ export const RESOLVERS: Record<HomeSectionType, SectionResolver> = {
   BESTSELLER_CATEGORIES: bestsellerCategories,
   THEME_BAND: themeBand,
   STORE_SPECIALS: storeSpecials,
+  BUY_GET_DEALS: buyGetDeals,
+  HERO_CARDS: heroCards,
 };

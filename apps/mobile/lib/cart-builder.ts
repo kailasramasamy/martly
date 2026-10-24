@@ -1,7 +1,5 @@
 import type { CartBuilderResult } from "@martly/shared/types";
 import type { StoreProduct } from "./types";
-import type { CartItem } from "./cart-context";
-import { getBestPrice } from "./membership-context";
 
 /** Grocery words the speech recogniser tends to mishear ("toor dal" as "to dal"); passed as recognition hints */
 export const LIST_HINTS = [
@@ -51,18 +49,4 @@ export function lineProducts(line: BuiltLine): StoreProduct[] {
 export function lineInCart(line: BuiltLine, quantities: Map<string, number>) {
   const sp = lineProducts(line).find((p) => (quantities.get(p.id) ?? 0) > 0);
   return sp ? { sp, quantity: quantities.get(sp.id)! } : null;
-}
-
-export function toCartItem(sp: StoreProduct, quantity: number, isMember: boolean): CartItem {
-  return {
-    storeProductId: sp.id,
-    productId: sp.product.id,
-    productName: sp.product.name,
-    translations: sp.product.translations,
-    variantId: sp.variant.id,
-    variantName: sp.variant.name,
-    price: getBestPrice(sp, isMember),
-    imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl ?? null,
-    quantity,
-  };
 }

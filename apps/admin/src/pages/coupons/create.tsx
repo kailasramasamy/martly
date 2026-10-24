@@ -33,6 +33,9 @@ export const CouponCreate = () => {
               <Form.Item label="Offer headline" name="title" rules={[{ max: 40 }]} extra="Shown on the Home offer card; made from the discount if empty">
                 <Input maxLength={40} placeholder="e.g. Flat 10% off groceries" />
               </Form.Item>
+              <Form.Item label="Headline in Tamil" name={["translations", "ta", "title"]} rules={[{ max: 60 }]} extra="Filled in automatically when left empty">
+                <Input maxLength={60} />
+              </Form.Item>
             </Col>
             <Col xs={24} md={12}>
               <Form.Item label="Show in Home offers" name="showOnHome" valuePropName="checked" initialValue={false} extra="Advertise in Home offers and checkout">

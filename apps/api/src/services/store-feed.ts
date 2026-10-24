@@ -27,6 +27,13 @@ export function buildProductData(p: any) {
   };
 }
 
+/** Store listings by id, enriched, in the order given; ids no longer found are skipped */
+export async function storeListings(prisma: PrismaClient, ids: string[]) {
+  const rows = await prisma.storeProduct.findMany({ where: { id: { in: ids } }, include: STORE_PRODUCT_INCLUDE });
+  const byId = new Map(rows.map((sp) => [sp.id, sp]));
+  return ids.flatMap((id) => (byId.has(id) ? [enrichStoreProduct(byId.get(id))] : []));
+}
+
 // The app groups rows by product and offers a size picker, so feed sections send all active sizes
 export async function withAllSizes(prisma: PrismaClient, storeId: string, rows: { productId: string }[]) {
   const productIds = [...new Set(rows.map((r) => r.productId))];

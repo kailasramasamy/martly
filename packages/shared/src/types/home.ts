@@ -1,4 +1,4 @@
-import type { FestiveFont, HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
+import type { DayPart, FestiveFont, HeroCardTheme, HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
 
 /** A section's text in other languages; the config-driven labels (headline, bands, offer) translate here too */
 type Translations = Record<string, {
@@ -204,11 +204,45 @@ export interface CategoryDirectoryPage {
   stores: TileGridSection | null;
 }
 
+/** The store's buy X get Y offers, best first; "View all" opens the full list from `/home/:storeId/buy-get` */
+export interface BuyGetDealsSection<P> extends HomeSectionBase {
+  type: "BUY_GET_DEALS";
+  products: P[];
+  /** Every offer running, for "View all" */
+  total: number;
+}
+
+/** A live festival as the hero carousel's poster card; the tiles open the festival narrowed to that aisle */
+export interface HeroFestival {
+  id: string;
+  title: string;
+  kicker: string | null;
+  subtitle: string | null;
+  translations: Record<string, { title?: string; kicker?: string | null; subtitle?: string | null }> | null;
+  imageUrl: string;
+  tiles: { id: string; title: string; translations: unknown; imageUrl: string }[];
+}
+
+type HeroCardBody<P> =
+  | { kind: "FESTIVE"; festival: HeroFestival }
+  | { kind: "BUY_GET"; products: P[]; total: number }
+  | { kind: "MOST_BOUGHT"; products: P[] }
+  | { kind: "STORE_SPECIAL"; collection: StoreSpecialsSection<P>["collections"][number] }
+  | { kind: "RIGHT_NOW"; dayPart: DayPart; collection: { id: string; title: string; subtitle: string | null; translations: unknown }; products: P[]; total: number };
+
+export type HeroCard<P> = HeroCardBody<P> & { id: string; theme: HeroCardTheme };
+
+/** The tall cards leading Home; the page wash behind the header follows the card in view */
+export interface HeroCardsSection<P> extends HomeSectionBase {
+  type: "HERO_CARDS";
+  cards: HeroCard<P>[];
+}
+
 /** Built-in blocks; `data` carries the same shape the legacy feed used for that block */
 export interface SystemSection extends HomeSectionBase {
   type: Exclude<HomeSectionType,
     "PRODUCT_ROW" | "CAMPAIGN_CARD" | "TABBED_ROW" | "PRICE_BAND_DEALS" | "BRAND_CARD" | "CATEGORY_DIRECTORY" | "EXPLORE_GRID" | "STORE_GRID"
-    | "BESTSELLER_CATEGORIES" | "THEME_BAND" | "STORE_SPECIALS">;
+    | "BESTSELLER_CATEGORIES" | "THEME_BAND" | "STORE_SPECIALS" | "BUY_GET_DEALS" | "HERO_CARDS">;
   data: Record<string, unknown>;
 }
 
@@ -222,6 +256,8 @@ export type HomeSection<P = unknown> =
   | BestsellerCategoriesSection
   | ThemeBandSection
   | StoreSpecialsSection<P>
+  | BuyGetDealsSection<P>
+  | HeroCardsSection<P>
   | TileGridSection
   | SystemSection;
 
@@ -231,6 +267,8 @@ export interface CouponOffer {
   /** Headline, e.g. "Flat \u20B950 off"; made from the discount when the coupon has none */
   title: string;
   description: string | null;
+  /** Headline and description in other languages, keyed by language code */
+  translations: Record<string, { title?: string; description?: string }> | null;
   discountType: "FLAT" | "PERCENTAGE";
   discountValue: number;
   minOrderAmount: number | null;
@@ -250,6 +288,8 @@ export interface HomeChrome {
   headerTheme: HomeTheme | null;
   /** What the search bar cycles through: festival aisles, the store's popular searches, then everyday ones */
   searchHints: string[];
+  /** The rotation in other languages, by language; hints without a translation are left out */
+  searchHintTranslations: Record<string, string[]>;
   /** Cart total that unlocks free delivery; null when delivery is already free for this shopper */
   freeDeliveryThreshold: number | null;
 }

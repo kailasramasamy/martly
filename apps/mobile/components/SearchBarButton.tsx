@@ -1,10 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { View, Text, Pressable, Animated, StyleSheet } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { DEFAULT_SEARCH_HINTS } from "@martly/shared/constants";
+import { DEFAULT_SEARCH_HINTS, DEFAULT_SEARCH_HINT_TRANSLATIONS } from "@martly/shared/constants";
 import { colors, fonts } from "../constants/theme";
 import { useStrings } from "../lib/i18n/use-strings";
+import { useLanguage } from "../lib/language-context";
 
 const ROTATE_MS = 2600;
 
@@ -13,11 +14,19 @@ interface Props {
   onTint?: boolean;
   /** What the placeholder cycles through; the everyday defaults when the server sends none */
   hints?: string[];
+  /** The rotation in other languages, by language */
+  hintTranslations?: Record<string, string[]>;
 }
 
-export function SearchBarButton({ onTint = false, hints }: Props) {
+export function SearchBarButton({ onTint = false, hints, hintTranslations }: Props) {
   const t = useStrings("search");
-  const suggestions = hints?.length ? hints : DEFAULT_SEARCH_HINTS;
+  const { language } = useLanguage();
+  // In another language the bar cycles that language's words; English ones would sit oddly in its sentence
+  const suggestions = useMemo(() => {
+    if (!language || !DEFAULT_SEARCH_HINT_TRANSLATIONS[language]) return hints?.length ? hints : DEFAULT_SEARCH_HINTS;
+    const own = hintTranslations?.[language];
+    return own?.length ? own : Object.values(DEFAULT_SEARCH_HINT_TRANSLATIONS[language]);
+  }, [language, hints, hintTranslations]);
   const [index, setIndex] = useState(0);
   const fade = useRef(new Animated.Value(1)).current;
 

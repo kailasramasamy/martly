@@ -23,6 +23,6 @@ export const common: Strings<"common"> = {
   tomorrow: "நாளை",
   items: (n: number) => `${n} பொருட்கள்`,
   percentOff: (n: number) => `${n}% தள்ளுபடி`,
-  percentOffMrp: (n: number) => `MRP-ல் ${n}% தள்ளுபடி`,
+  buyGet: (buy: number, get: number) => `${buy}+${get} இலவசம்`,
   allOf: (name: string) => `அனைத்து ${name}`,
 };

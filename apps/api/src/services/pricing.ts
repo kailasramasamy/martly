@@ -1,3 +1,4 @@
+import type { MultiBuyOffer } from "@martly/shared/offers";
 import type { Decimal } from "../../generated/prisma/runtime/library.js";
 
 interface DiscountFields {
@@ -5,6 +6,14 @@ interface DiscountFields {
   discountValue: Decimal | number | null;
   discountStart: Date | null;
   discountEnd: Date | null;
+}
+
+/** A store listing's buy X get Y offer; partial because some callers select only the discount columns */
+interface OfferFields {
+  offerBuyQty?: number | null;
+  offerGetQty?: number | null;
+  offerStart?: Date | null;
+  offerEnd?: Date | null;
 }
 
 export interface PricingResult {
@@ -17,6 +26,15 @@ export interface PricingResult {
   savingsPercent: number;
   memberPrice: number | null;
   memberSavingsAmount: number | null;
+  /** Buy X get Y running now; it applies on top of the unit price above */
+  offer: MultiBuyOffer | null;
+}
+
+export function activeOffer(fields: OfferFields | null, now: Date = new Date()): MultiBuyOffer | null {
+  if (!fields?.offerBuyQty || !fields.offerGetQty) return null;
+  if (fields.offerStart && now < fields.offerStart) return null;
+  if (fields.offerEnd && now > fields.offerEnd) return null;
+  return { buy: fields.offerBuyQty, get: fields.offerGetQty };
 }
 
 export function isDiscountActive(discount: DiscountFields, now: Date = new Date()): boolean {
@@ -42,7 +60,7 @@ export function applyDiscount(basePrice: number, discount: DiscountFields): numb
 export function calculateEffectivePrice(
   storePrice: number | Decimal,
   variantDiscount: DiscountFields | null,
-  storeDiscount: DiscountFields | null,
+  storeDiscount: (DiscountFields & OfferFields) | null,
   memberPrice?: number | Decimal | null,
 ): PricingResult {
   const basePrice = Number(storePrice);
@@ -59,6 +77,7 @@ export function calculateEffectivePrice(
   // Member pricing
   const mp = memberPrice != null ? Math.round(Number(memberPrice) * 100) / 100 : null;
   const memberSavingsAmount = mp != null && basePrice > mp ? Math.round((basePrice - mp) * 100) / 100 : null;
+  const offer = activeOffer(storeDiscount, now);
 
   if (!activeDiscount) {
     return {
@@ -71,6 +90,7 @@ export function calculateEffectivePrice(
       savingsPercent: 0,
       memberPrice: mp,
       memberSavingsAmount,
+      offer,
     };
   }
 
@@ -88,5 +108,6 @@ export function calculateEffectivePrice(
     savingsPercent,
     memberPrice: mp,
     memberSavingsAmount,
+    offer,
   };
 }

@@ -13,7 +13,7 @@ import { searchProductsForAdmin } from "../../services/search.js";
 import { fetchRankedPage } from "../../services/ranked-page.js";
 import { countIds, subcategoryFacets, type SubcategoryFacet } from "../../services/search-facets.js";
 
-function withPricing(sp: { stock: number; reservedStock: number; price: unknown; memberPrice?: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown; variant: { unitType: string; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown } }) {
+function withPricing(sp: { stock: number; reservedStock: number; price: unknown; memberPrice?: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown; offerBuyQty?: number | null; offerGetQty?: number | null; offerStart?: Date | null; offerEnd?: Date | null; variant: { unitType: string; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown } }) {
   const pricing = calculateEffectivePrice(
     sp.price as number,
     sp.variant as Parameters<typeof calculateEffectivePrice>[1],
@@ -194,6 +194,10 @@ export async function storeProductRoutes(app: FastifyInstance) {
           discountValue: body.discountValue ?? undefined,
           discountStart: body.discountStart ?? undefined,
           discountEnd: body.discountEnd ?? undefined,
+          offerBuyQty: body.offerBuyQty ?? undefined,
+          offerGetQty: body.offerGetQty ?? undefined,
+          offerStart: body.offerStart ?? undefined,
+          offerEnd: body.offerEnd ?? undefined,
         },
         include: spInclude,
         });

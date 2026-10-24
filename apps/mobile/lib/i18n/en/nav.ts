@@ -41,4 +41,6 @@ export const nav = {
   recipe: "Recipe",
   festivePicks: "Festive picks",
   deals: "Deals",
+  buyGet: "Buy 1 Get 1 Free",
+  mostBought: "Most bought",
 };

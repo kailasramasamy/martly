@@ -896,6 +896,12 @@ model StoreProduct {
   discountEnd   DateTime?     @map("discount_end")
   memberPrice   Decimal?      @map("member_price") @db.Decimal(10, 2)
 
+  /// Buy X get Y free on this product: every offerBuyQty paid units bring offerGetQty free ones
+  offerBuyQty Int?      @map("offer_buy_qty")
+  offerGetQty Int?      @map("offer_get_qty")
+  offerStart  DateTime? @map("offer_start")
+  offerEnd    DateTime? @map("offer_end")
+
   store                 Store                      @relation(fields: [storeId], references: [id])
   product               Product                    @relation(fields: [productId], references: [id])
   variant               ProductVariant             @relation(fields: [variantId], references: [id])
@@ -1004,6 +1010,8 @@ model OrderItem {
   originalPrice Decimal?      @map("original_price") @db.Decimal(10, 2)
   discountType  DiscountType? @map("discount_type")
   discountValue Decimal?      @map("discount_value") @db.Decimal(10, 2)
+  /// Units of quantity that came free under a buy X get Y offer; totalPrice covers only the rest
+  freeQuantity  Int           @default(0) @map("free_quantity")
 
   /// Units the customer handed back to the rider at the door
   refusedQuantity  Int           @default(0) @map("refused_quantity")
@@ -1120,6 +1128,8 @@ model Coupon {
   /// Short headline for the offer card, e.g. "Flat ₹50 off"; falls back to one made from the discount
   title          String?
   description    String?
+  /** Headline and description in other languages, keyed by language code */
+  translations   Json?
   /// Advertised to shoppers in Home's offers and checkout's offer list; otherwise used by typing its code
   showOnHome     Boolean      @default(false) @map("show_on_home")
   discountType   DiscountType @map("discount_type")
@@ -2671,6 +2681,8 @@ enum HomeSectionType {
   BESTSELLER_CATEGORIES
   THEME_BAND
   STORE_SPECIALS
+  BUY_GET_DEALS
+  HERO_CARDS
 }
 
 /// One block on an organisation's Home, in display order; config holds per-type display settings

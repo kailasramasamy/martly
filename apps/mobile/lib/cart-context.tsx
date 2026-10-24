@@ -1,7 +1,9 @@
 import { createContext, useContext, useState, useCallback, useEffect, useMemo, type ReactNode } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { lineTotal, type MultiBuyOffer } from "@martly/shared/offers";
 import { useLanguage } from "./language-context";
-import type { Store, Translations } from "./types";
+import { getBestPrice } from "./membership-context";
+import type { Store, StoreProduct, Translations } from "./types";
 
 const PENDING_COUPON_KEY = "martly_pending_coupon";
 
@@ -16,6 +18,30 @@ export interface CartItem {
   price: number;
   quantity: number;
   imageUrl: string | null;
+  /** Buy X get Y on the line; absent on carts saved before offers, until the cart review brings it */
+  offer?: MultiBuyOffer | null;
+}
+
+/** The store's current terms for a line: the price it charges and any buy X get Y running */
+export interface LineTerms {
+  price: number;
+  offer: MultiBuyOffer | null;
+}
+
+/** A cart line for a store listing, at the shopper's best price and with its offer */
+export function toCartItem(sp: StoreProduct, quantity: number, isMember: boolean): CartItem {
+  return {
+    storeProductId: sp.id,
+    productId: sp.product.id,
+    productName: sp.product.name,
+    translations: sp.product.translations,
+    variantId: sp.variant.id,
+    variantName: sp.variant.name,
+    price: getBestPrice(sp, isMember),
+    imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl ?? null,
+    offer: sp.pricing?.offer ?? null,
+    quantity,
+  };
 }
 
 /** The cart's store, kept with its translations so the name follows the app language */
@@ -38,8 +64,8 @@ interface CartState {
   updateQuantity: (storeProductId: string, quantity: number) => void;
   /** Swaps a line for another size in the same place, e.g. a bigger pack that saves */
   replaceItem: (storeProductId: string, line: CartItem) => void;
-  /** Sets lines to the store's current prices (keyed by storeProductId) */
-  repriceItems: (prices: Map<string, number>) => void;
+  /** Sets lines to the store's current price and offer (keyed by storeProductId) */
+  repriceItems: (terms: Map<string, LineTerms>) => void;
   clearCart: () => void;
   /** Undo: puts back lines removed a moment ago at their old positions, unless the cart has moved to another store */
   restoreItems: (store: CartStore, lines: { item: CartItem; index: number }[]) => void;
@@ -143,8 +169,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setItems((prev) => prev.map((i) => (i.storeProductId === storeProductId ? line : i)));
   }, []);
 
-  const repriceItems = useCallback((prices: Map<string, number>) => {
-    setItems((prev) => prev.map((i) => (prices.has(i.storeProductId) ? { ...i, price: prices.get(i.storeProductId)! } : i)));
+  const repriceItems = useCallback((terms: Map<string, LineTerms>) => {
+    setItems((prev) => prev.map((i) => (terms.has(i.storeProductId) ? { ...i, ...terms.get(i.storeProductId)! } : i)));
   }, []);
 
   const clearCart = useCallback(() => {
@@ -167,7 +193,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     [storeId],
   );
 
-  const totalAmount = useMemo(() => items.reduce((sum, i) => sum + i.price * i.quantity, 0), [items]);
+  const totalAmount = useMemo(() => items.reduce((sum, i) => sum + lineTotal(i.price, i.quantity, i.offer), 0), [items]);
   const itemCount = useMemo(() => items.reduce((sum, i) => sum + i.quantity, 0), [items]);
   const productQuantityMap = useMemo(() => {
     const map = new Map<string, number>();

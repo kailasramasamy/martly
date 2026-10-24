@@ -1,5 +1,6 @@
 import { BESTSELLER_CARD_IMAGES, BESTSELLER_CATEGORY_CARDS } from "@martly/shared/constants";
 import type { BestsellerCategoriesSection } from "@martly/shared/types";
+import { recentStoreSales } from "../most-bought.js";
 import { sectionBase, type SectionResolver } from "../types.js";
 
 // Fewer than one row of cards reads as a gap, not a shelf
@@ -18,12 +19,7 @@ export const bestsellerCategories: SectionResolver = async (ctx, entry) => {
       FROM products p
       JOIN subcategories s ON s.id = p.subcategory_id
       JOIN store_products sp ON sp.product_id = p.id AND sp.store_id = ${ctx.store.id} AND sp.is_active AND sp.stock > 0
-      LEFT JOIN (
-        SELECT oi.product_id, SUM(oi.quantity) AS qty
-        FROM order_items oi JOIN orders o ON o.id = oi.order_id
-        WHERE o.store_id = ${ctx.store.id} AND o.status <> 'CANCELLED' AND o.created_at > now() - interval '30 days'
-        GROUP BY oi.product_id
-      ) sales ON sales.product_id = p.id
+      LEFT JOIN (${recentStoreSales(ctx.store.id)}) sales ON sales.product_id = p.id
       WHERE p.is_active
       GROUP BY p.id, p.image_url, s.category_id, sales.qty
     ),

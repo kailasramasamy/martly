@@ -1,4 +1,5 @@
 import { Permission } from "../constants/index";
+import { paidPerUnit } from "../offers/index";
 
 export const DELIVERY_TRANSITIONS: Record<string, string[]> = {
   PENDING: ["CONFIRMED", "CANCELLED"],
@@ -125,14 +126,15 @@ export function handoverNote(order: PayableOrder): string {
   return "This completes the order and notifies the customer.";
 }
 
-/** What units handed back at the door are worth: their price, less their share of the order's coupon */
+/** What units handed back at the door are worth: what they were paid for (free units averaged in), less their share of
+ * the order's coupon */
 export function refusedValue(
-  order: { couponDiscount?: string | number | null; items: readonly { id: string; quantity: number; unitPrice: string | number }[] },
+  order: { couponDiscount?: string | number | null; items: readonly { id: string; quantity: number; totalPrice: string | number }[] },
   refused: readonly { orderItemId: string; quantity: number }[],
 ): number {
-  const itemsTotal = order.items.reduce((sum, i) => sum + Number(i.unitPrice) * i.quantity, 0);
+  const itemsTotal = order.items.reduce((sum, i) => sum + Number(i.totalPrice), 0);
   if (itemsTotal === 0) return 0;
-  const price = new Map(order.items.map((i) => [i.id, Number(i.unitPrice)]));
+  const price = new Map(order.items.map((i) => [i.id, paidPerUnit(i)]));
   const value = refused.reduce((sum, r) => sum + (price.get(r.orderItemId) ?? 0) * r.quantity, 0);
   const share = Math.max(0, itemsTotal - Number(order.couponDiscount ?? 0)) / itemsTotal;
   return Math.round(value * share * 100) / 100;

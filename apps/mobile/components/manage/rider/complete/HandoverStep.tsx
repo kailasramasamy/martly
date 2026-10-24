@@ -61,6 +61,7 @@ function ItemRow({ item, line, onChange }: { item: OrderDetailItem; line: { quan
         <View style={styles.itemText}>
           <Text style={styles.name} numberOfLines={2}>{item.product.name}</Text>
           <Text style={styles.variant}>{item.variant.name} · {formatINR(Number(item.unitPrice))} each</Text>
+          {item.freeQuantity > 0 ? <Text style={styles.free}>{item.freeQuantity} free</Text> : null}
         </View>
         <Text style={[styles.qty, tabular]}>× {item.quantity}</Text>
       </View>
@@ -96,6 +97,7 @@ const styles = StyleSheet.create({
   itemText: { flex: 1 },
   name: { fontFamily: fonts.bold, fontSize: 15.5, color: colors.text },
   variant: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, marginTop: 2 },
+  free: { fontFamily: fonts.bold, fontSize: 12.5, color: colors.primaryDark, marginTop: 2 },
   qty: { fontFamily: fonts.extrabold, fontSize: 20, color: colors.text },
   refuseLink: { flexDirection: "row", alignItems: "center", gap: 6, minHeight: 44, alignSelf: "flex-start" },
   refuseLinkText: { fontFamily: fonts.semibold, fontSize: 14, color: colors.error },

@@ -13,6 +13,7 @@ import { bySize, packSaving } from "../lib/pack-sizes";
 import { SizePager, sizeImage } from "./PackSizes";
 import { useSponsoredTracking } from "../lib/use-sponsored";
 import { cardDeal, useDealLabel } from "../lib/deal";
+import { DealTag } from "./DealTag";
 import { AisleLink } from "./AisleLink";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
@@ -112,9 +113,7 @@ function PriceBlock({ item, isMember, saving }: { item: StoreProduct; isMember?:
         {deal.struck != null && <Text style={styles.mrp}>{"\u20B9"}{deal.struck.toFixed(0)}</Text>}
       </View>
       <UnitPrice price={deal.shown} variant={item.variant} />
-      {dealText && (deal.kind === "MRP"
-        ? <Text style={styles.offMrp}>{dealText}</Text>
-        : <View style={styles.offTag}><Text style={styles.off}>{dealText}</Text></View>)}
+      <DealTag deal={deal} label={dealText} offer={item.pricing?.offer} />
       {saving && <Text style={styles.saving}>{saving}</Text>}
       {!isMember && memberCheaper && (
         <Text style={styles.memberHint}>{t.withPlus(memberPrice!.toFixed(0))}</Text>
@@ -344,10 +343,6 @@ const styles = StyleSheet.create({
   price: { fontFamily: fonts.extrabold, fontSize: 17, color: colors.text },
   highlight: { backgroundColor: colors.salePill, paddingHorizontal: 4, borderRadius: 4 },
   mrp: { fontFamily: fonts.medium, fontSize: 11, color: "#94a3b8", textDecorationLine: "line-through" },
-  // Sale info in the offers amber, apart from the price
-  offTag: { alignSelf: "flex-start", backgroundColor: colors.salePill, borderRadius: 4, paddingHorizontal: 5, paddingVertical: 1, marginTop: 3 },
-  off: { fontFamily: fonts.extrabold, fontSize: 11, letterSpacing: 0.2, color: colors.salePillText },
-  offMrp: { fontFamily: fonts.bold, fontSize: 10.5, color: "#2563eb", marginTop: 3 },
   memberHint: { fontFamily: fonts.bold, fontSize: 9.5, color: "#b45309", marginTop: 1 },
   saving: { fontFamily: fonts.bold, fontSize: 10, color: "#15803d", marginTop: 1 },
   addBtn: {

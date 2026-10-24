@@ -176,6 +176,10 @@ export const STORE_PRODUCT_FIELD_PERMISSIONS: Record<string, Permission> = {
   discountValue: P.LISTING_PRICES,
   discountStart: P.LISTING_PRICES,
   discountEnd: P.LISTING_PRICES,
+  offerBuyQty: P.LISTING_PRICES,
+  offerGetQty: P.LISTING_PRICES,
+  offerStart: P.LISTING_PRICES,
+  offerEnd: P.LISTING_PRICES,
   stock: P.STOCK_ADJUST,
 };
 

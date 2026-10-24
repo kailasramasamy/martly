@@ -11,6 +11,7 @@ export function useHomeSections(storeId: string | undefined) {
   const [chrome, setChrome] = useState<HomeChrome | null>(null);
   const [loading, setLoading] = useState(false);
   const [loadingMore, setLoadingMore] = useState(false);
+  const [reachedEnd, setReachedEnd] = useState(false);
   const cursor = useRef<string | null>(null);
   const request = useRef(0);
 
@@ -24,6 +25,7 @@ export function useHomeSections(storeId: string | undefined) {
   const reload = useCallback(() => {
     const id = ++request.current;
     cursor.current = null;
+    setReachedEnd(false);
     if (!storeId) {
       setSections([]);
       setChrome(null);
@@ -37,6 +39,7 @@ export function useHomeSections(storeId: string | undefined) {
         setSections(res.data.sections);
         setChrome(res.data.chrome ?? null);
         cursor.current = res.data.nextCursor;
+        setReachedEnd(!res.data.nextCursor);
       })
       // Keeps what was on screen; pull-to-refresh retries
       .catch(() => {})
@@ -58,6 +61,7 @@ export function useHomeSections(storeId: string | undefined) {
       .then((res) => {
         if (id !== request.current) return;
         cursor.current = res.data.nextCursor;
+        setReachedEnd(!res.data.nextCursor);
         setSections((prev) => [...prev, ...res.data.sections]);
       })
       // The next scroll to the end retries the page
@@ -65,5 +69,5 @@ export function useHomeSections(storeId: string | undefined) {
       .finally(() => setLoadingMore(false));
   }, [fetchPage, loading, loadingMore]);
 
-  return { storeId, sections, chrome, loading, loadingMore, reload, loadMore };
+  return { storeId, sections, chrome, loading, loadingMore, reachedEnd, reload, loadMore };
 }

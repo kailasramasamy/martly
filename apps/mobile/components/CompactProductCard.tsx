@@ -11,6 +11,7 @@ import { sizeImage } from "./PackSizes";
 import { bySize, packSaving } from "../lib/pack-sizes";
 import { useSponsoredTracking } from "../lib/use-sponsored";
 import { cardDeal, useDealLabel } from "../lib/deal";
+import { DealTag } from "./DealTag";
 import { AisleLink } from "./AisleLink";
 import type { StoreProduct } from "../lib/types";
 
@@ -43,7 +44,7 @@ export interface CompactProductCardProps {
 }
 
 // With several sizes every control opens the size sheet, as on the larger cards, since which size to change is ambiguous
-function CompactControl({ item, quantity, outOfStock, options, onAddToCart, onUpdateQuantity, onShowVariants }:
+export function CompactControl({ item, quantity, outOfStock, options, onAddToCart, onUpdateQuantity, onShowVariants }:
   Required<Pick<CompactProductCardProps, "quantity">> & Pick<CompactProductCardProps, "item" | "onAddToCart" | "onUpdateQuantity" | "onShowVariants">
   & { outOfStock: boolean; options: number }) {
   const t = useStrings("catalog");
@@ -123,7 +124,7 @@ function CompactDetails({ item, sizes, isMember, sponsored, aisleLink }: {
         {deal.struck != null && <Text style={styles.mrp}>{"₹"}{deal.struck.toFixed(0)}</Text>}
       </View>
       <UnitPrice price={deal.shown} variant={item.variant} />
-      {discount && <Text style={styles.discount}>{discount}</Text>}
+      <DealTag deal={deal} label={discount} offer={item.pricing?.offer} />
       {saving && <Text style={styles.saving}>{saving}</Text>}
       <Text style={styles.name} numberOfLines={3}>{getLocalizedName(item.product)}</Text>
       {rated && (
@@ -207,7 +208,6 @@ const styles = StyleSheet.create({
   price: { fontFamily: fonts.extrabold, fontSize: 14, color: colors.text },
   mrp: { fontFamily: fonts.medium, fontSize: 11, color: "#94a3b8", textDecorationLine: "line-through" },
   highlight: { backgroundColor: colors.salePill, paddingHorizontal: 4, borderRadius: 4 },
-  discount: { fontFamily: fonts.bold, fontSize: 10.5, color: "#2563eb", marginTop: 1 },
   saving: { fontFamily: fonts.bold, fontSize: 9.5, color: "#15803d", marginTop: 1 },
   name: { fontFamily: fonts.semibold, fontSize: 12, lineHeight: 15, color: colors.text, marginTop: 3 },
   ratingRow: { flexDirection: "row", alignItems: "center", gap: 2, marginTop: 3 },

@@ -1,12 +1,14 @@
-import { View, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import { SectionCard } from "../ui/SectionCard";
 import { TextField } from "../ui/TextField";
 import { SwitchRow } from "../ui/SwitchRow";
 import { KeyValue } from "../ui/KeyValue";
+import { colors, fonts } from "../../../constants/theme";
 import { formatINR, manage } from "../ui/tokens";
-import type { StoreProductDraft } from "./draft";
+import { draftOffer, offerLabel, type StoreProductDraft } from "./draft";
 import { StockStepper } from "./StockStepper";
 import { DiscountFields } from "./DiscountFields";
+import { OfferFields } from "./OfferFields";
 import { ListingHeader } from "./ListingHeader";
 import { PricePreview } from "./PricePreview";
 import { ProductDetailsLink } from "./ProductDetailsLink";
@@ -33,6 +35,8 @@ function PricingFields({ draft, onChange }: DraftProps) {
     <>
       <TextField label="Selling price" value={draft.price} onChangeText={(price) => onChange({ price })} keyboardType="decimal-pad" prefix={"₹"} />
       <DiscountFields draft={draft} onChange={onChange} withDates />
+      <Text style={styles.subhead}>Offer</Text>
+      <OfferFields draft={draft} onChange={onChange} />
       <View style={styles.preview}><PricePreview draft={draft} /></View>
       <TextField
         label="Member price"
@@ -47,12 +51,14 @@ function PricingFields({ draft, onChange }: DraftProps) {
 }
 
 function PricingValues({ draft }: { draft: StoreProductDraft }) {
+  const offer = draftOffer(draft);
   return (
     <>
       <KeyValue label="Selling price" value={formatINR(Number(draft.price), { decimals: true })} />
       <KeyValue label="Discount" value={discountLabel(draft)} />
+      <KeyValue label="Offer" value={offer ? offerLabel(offer) : "None"} />
       <KeyValue label="Member price" value={draft.memberPrice ? formatINR(Number(draft.memberPrice), { decimals: true }) : "None"} />
-      {draft.discountMode !== "NONE" && <View style={styles.preview}><PricePreview draft={draft} /></View>}
+      {(draft.discountMode !== "NONE" || offer) && <View style={styles.preview}><PricePreview draft={draft} /></View>}
     </>
   );
 }
@@ -85,6 +91,7 @@ export function StoreProductForm({ item, draft, onChange, access }: StoreProduct
 }
 
 const styles = StyleSheet.create({
+  subhead: { fontFamily: fonts.semibold, fontSize: 13, color: colors.textSecondary, marginTop: 14, marginBottom: 8 },
   preview: { marginTop: 4, marginBottom: 14 },
   divider: { height: 1, backgroundColor: manage.hairline, marginVertical: 4 },
 });

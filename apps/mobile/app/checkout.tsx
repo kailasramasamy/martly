@@ -39,6 +39,7 @@ import { strings } from "../lib/i18n";
 import { useStrings } from "../lib/i18n/use-strings";
 import { formatDate } from "../lib/i18n/format";
 import { useLanguage } from "../lib/language-context";
+import { freeUnits, lineTotal } from "@martly/shared/offers";
 
 type PaymentMethod = "ONLINE" | "COD";
 type DeliveryMode = "express" | "scheduled";
@@ -66,6 +67,7 @@ function CheckoutScreen() {
   const toast = useToast();
   const t = useStrings("checkout");
   const common = useStrings("common");
+  const tCart = useStrings("cart");
   const { getLocalizedName } = useLanguage();
   const insets = useSafeAreaInsets();
   const keyboard = useKeyboardReveal();
@@ -585,9 +587,12 @@ function CheckoutScreen() {
                 <View style={styles.itemInfo}>
                   <Text style={styles.itemName} numberOfLines={2}>{getLocalizedName({ name: item.productName, translations: item.translations })}</Text>
                   <Text style={styles.itemVariant}>{t.summary.variantQty(item.variantName, item.quantity)}</Text>
+                  {freeUnits(item.quantity, item.offer) > 0 && (
+                    <Text style={styles.itemFree}>{tCart.freeUnits(freeUnits(item.quantity, item.offer))}</Text>
+                  )}
                 </View>
                 <Text style={styles.itemTotal}>
-                  {"\u20B9"}{(item.price * item.quantity).toFixed(0)}
+                  {"\u20B9"}{lineTotal(item.price, item.quantity, item.offer).toFixed(0)}
                 </Text>
               </View>
             ))}
@@ -1532,6 +1537,7 @@ const styles = StyleSheet.create({
   itemInfo: { flex: 1, marginLeft: 12, marginRight: 12 },
   itemName: { fontSize: 14, fontWeight: "600", color: colors.text },
   itemVariant: { fontSize: 12, color: colors.textSecondary, marginTop: 1 },
+  itemFree: { fontSize: 11, fontWeight: "800", color: colors.success, marginTop: 1 },
   itemTotal: { fontSize: 14, fontWeight: "700", color: colors.text },
 
   // Fulfillment selector
