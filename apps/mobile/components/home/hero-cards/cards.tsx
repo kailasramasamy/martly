@@ -135,7 +135,7 @@ function PosterCard({ card }: { card: CardOf<"FESTIVE"> }) {
           <View key={row[0].id} style={styles.tileRow}>
             {row.map((tile) => (
               <Pressable
-                key={tile.id} style={[styles.festTile, { backgroundColor: theme.tint }]} onPress={() => open(tile.id)}
+                key={tile.id} style={[styles.festTile, { backgroundColor: "rgba(255,255,255,0.7)" }]} onPress={() => open(tile.id)}
                 accessibilityRole="link" accessibilityLabel={tileTitle(tile)}
               >
                 <Image source={{ uri: tile.imageUrl }} style={styles.festTileImage} resizeMode="contain" />
