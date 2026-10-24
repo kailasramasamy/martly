@@ -42,8 +42,9 @@ guidance strictly; never pick alcohol, tobacco, or anything out of place for the
 Each tile's artPrompt names 2-4 physical items that read instantly at thumbnail size: generic products and
 festival props only, never brand packaging, logos, text, or people.
 
-themeColor is a rich hue that suits the festival (e.g. Navratri green or magenta, Diwali maroon, Christmas pine); the
-app turns it into a pale wash behind the block and a deep shade of it for the text. silhouetteScene lists the motifs
+themeColor is a rich hue that suits the festival (e.g. Navratri green or magenta, Diwali saffron, Christmas pine); the
+app turns it into a pale wash behind the block and a deep shade of it for the text, so crimson, maroon and rose all wash
+out to Valentine's pink: keep those for festivals that are meant to look romantic. silhouetteScene lists the motifs
 for a wide, low strip of faint silhouettes running behind the greeting: people celebrating, lamps, string lights,
 torans, the season's weather. It is drawn in shades of the theme hue, so describe shapes, not colours.
 
