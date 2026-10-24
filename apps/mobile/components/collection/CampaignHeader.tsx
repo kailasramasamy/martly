@@ -24,6 +24,8 @@ const TEXT_WIDTH = SCREEN_WIDTH - BLEED * 2 - ART_WIDTH - TEXT_GAP;
 const HEADER_DEEPEN = 0.14;
 // Holds the deeper shade behind the headline, then fades into the page colour above the products
 const FADE_STOPS = [0, 0.62, 1] as const;
+// A photo banner runs edge to edge at the spotlight card's proportions
+const PHOTO_ASPECT = 2.1;
 
 export function campaignHeaderColor(theme: { background: string; title: string }) {
   return blend(theme.background, theme.title, HEADER_DEEPEN);
@@ -33,7 +35,7 @@ type Campaign = NonNullable<CollectionHeader["campaign"]>;
 
 /** The top of a campaign's own screen, matching its Home card: headline and countdown on the left, the products'
  *  cut-out on the right with the offer stamped on its corner, on a deeper shade of the campaign colour that fades
- *  into the page */
+ *  into the page. A store special's photo banner instead runs edge to edge above the headline. */
 export function CampaignHeader({ collection, campaign }: { collection: CollectionHeader; campaign: Campaign }) {
   const { language } = useLanguage();
   const title = (language && collection.translations?.[language]?.title) || collection.title;
@@ -41,6 +43,17 @@ export function CampaignHeader({ collection, campaign }: { collection: Collectio
   const { title: ink, dark } = campaign.theme;
 
   const deep = campaignHeaderColor(campaign.theme);
+  if (campaign.photo && campaign.imageUrl) {
+    return (
+      <LinearGradient colors={[deep, campaign.theme.background]} style={styles.photoWrap} accessibilityRole="header">
+        <Image source={{ uri: campaign.imageUrl }} style={styles.photo} resizeMode="cover" />
+        <View style={styles.photoText}>
+          <Text style={[styles.title, { color: ink }]} numberOfLines={2}>{title}</Text>
+          {subtitle ? <Text style={[styles.subtitle, { color: ink }]} numberOfLines={2}>{subtitle}</Text> : null}
+        </View>
+      </LinearGradient>
+    );
+  }
   const compact = !campaign.offerLabel && !collection.endsAt;
 
   return (
@@ -62,6 +75,9 @@ export function CampaignHeader({ collection, campaign }: { collection: Collectio
 }
 
 const styles = StyleSheet.create({
+  photoWrap: { marginHorizontal: -BLEED, marginBottom: 14 },
+  photo: { width: SCREEN_WIDTH, height: Math.round(SCREEN_WIDTH / PHOTO_ASPECT) },
+  photoText: { paddingHorizontal: BLEED, paddingTop: 14, paddingBottom: 6, gap: 4 },
   wrap: { height: HEIGHT, marginHorizontal: -BLEED, paddingHorizontal: BLEED, marginBottom: 14 },
   compactWrap: { height: COMPACT_HEIGHT },
   // The art lines up with the grid's right edge, and the text is centred on it (a countdown can grow it downwards)

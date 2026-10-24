@@ -1,5 +1,5 @@
-import { ColorPicker, Form, Input, InputNumber, Radio, Space, Switch, Typography, theme as antTheme } from "antd";
-import { HOME_ROW_MAX_PRODUCTS, SectionHeaderStyle } from "@martly/shared/constants";
+import { ColorPicker, Form, Input, Radio, Space, Switch, Typography, theme as antTheme } from "antd";
+import { SectionHeaderStyle } from "@martly/shared/constants";
 import { ImageUpload } from "../../components/ImageUpload";
 
 const { Text } = Typography;
@@ -31,9 +31,6 @@ export const ProductRowFields = () => (
     </Form.Item>
     <Form.Item label="Tint colour" name={["config", "tint"]} {...colorField}>
       <ColorPicker showText disabledAlpha />
-    </Form.Item>
-    <Form.Item label="Max products" name={["config", "maxProducts"]} initialValue={HOME_ROW_MAX_PRODUCTS}>
-      <InputNumber min={3} max={20} />
     </Form.Item>
   </>
 );

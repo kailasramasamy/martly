@@ -6,17 +6,17 @@ import {
 import { usePreviewBrand } from "./preview-context";
 import { colors, fonts } from "../../../../constants/theme";
 
-/** Home with the carousel slide highlighted, right under the festival hero */
+/** Home with the carousel slide highlighted, just below the category directory */
 export function HomeCarouselMockup() {
   return (
     <PhoneFrame>
       <HomeHeader />
       <FestiveHero />
       <View style={styles.pad}>
-        <Highlight style={styles.gap}><BrandSlide /></Highlight>
-        <Dots />
         <SectionTitle />
         <TileRow />
+        <Highlight style={styles.gap}><BrandSlide /></Highlight>
+        <Dots />
       </View>
     </PhoneFrame>
   );

@@ -134,7 +134,21 @@ export interface CategoryDirectorySection extends HomeSectionBase {
     departmentId: string;
     name: string;
     translations: NameTranslations;
-    tiles: { categoryId: string; name: string; translations: NameTranslations; imageUrl: string | null; wide: boolean }[];
+    tiles: { categoryId: string; name: string; translations: NameTranslations; imageUrl: string | null }[];
+  }[];
+}
+
+/** The store's best-selling categories, each shown through its own best sellers */
+export interface BestsellerCategoriesSection extends HomeSectionBase {
+  type: "BESTSELLER_CATEGORIES";
+  categories: {
+    id: string;
+    name: string;
+    translations: NameTranslations;
+    /** Images of the category's top sellers at this store, best first */
+    images: string[];
+    /** In-stock products beyond those pictured */
+    more: number;
   }[];
 }
 
@@ -158,6 +172,32 @@ export interface TileGridSection extends HomeSectionBase {
   tiles: GridTile[];
 }
 
+/** A pastel band between shelves: a themed title and art over a row of aisle tiles, each opening one aisle */
+export interface ThemeBandSection extends HomeSectionBase {
+  type: "THEME_BAND";
+  tint: string;
+  imageUrl: string | null;
+  tiles: { id: string; label: string; translations: NameTranslations; imageUrl: string | null; subcategoryId: string }[];
+}
+
+/** A store's own ranges (its bakery, its sweets) as the search screen's spotlight cards; `P` is the product shape */
+export interface StoreSpecialsSection<P> extends HomeSectionBase {
+  type: "STORE_SPECIALS";
+  collections: {
+    id: string;
+    title: string;
+    subtitle: string | null;
+    slug: string;
+    kind: string;
+    translations: unknown;
+    imageUrl: string | null;
+    imageUrls: Record<string, string> | null;
+    textInImage: boolean;
+    subcategories: { id: string; name: string; translations: unknown }[];
+    products: P[];
+  }[];
+}
+
 /** The Categories tab: every stocked department as a tile directory, then the org's Shop by store grid */
 export interface CategoryDirectoryPage {
   groups: CategoryDirectorySection["groups"];
@@ -167,7 +207,8 @@ export interface CategoryDirectoryPage {
 /** Built-in blocks; `data` carries the same shape the legacy feed used for that block */
 export interface SystemSection extends HomeSectionBase {
   type: Exclude<HomeSectionType,
-    "PRODUCT_ROW" | "CAMPAIGN_CARD" | "TABBED_ROW" | "PRICE_BAND_DEALS" | "BRAND_CARD" | "CATEGORY_DIRECTORY" | "EXPLORE_GRID" | "STORE_GRID">;
+    "PRODUCT_ROW" | "CAMPAIGN_CARD" | "TABBED_ROW" | "PRICE_BAND_DEALS" | "BRAND_CARD" | "CATEGORY_DIRECTORY" | "EXPLORE_GRID" | "STORE_GRID"
+    | "BESTSELLER_CATEGORIES" | "THEME_BAND" | "STORE_SPECIALS">;
   data: Record<string, unknown>;
 }
 
@@ -178,6 +219,9 @@ export type HomeSection<P = unknown> =
   | PriceBandDealsSection<P>
   | BrandCardSection<P>
   | CategoryDirectorySection
+  | BestsellerCategoriesSection
+  | ThemeBandSection
+  | StoreSpecialsSection<P>
   | TileGridSection
   | SystemSection;
 

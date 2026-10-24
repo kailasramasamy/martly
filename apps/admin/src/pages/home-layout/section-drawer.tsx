@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { useSelect } from "@refinedev/antd";
 import { Alert, Button, Drawer, Form, Input, Select, Space, Switch, message } from "antd";
-import { HomeSectionType, HomeSectionTypeLabels, SECTION_COLLECTION } from "@martly/shared/constants";
+import { HomeSectionType, HomeSectionTypeLabels, SECTION_COLLECTION, THEME_BAND_MAX_TILES, THEME_BAND_MIN_TILES } from "@martly/shared/constants";
 import { homeSectionConfigSchemas } from "@martly/shared/schemas";
 import { CampaignCardFields, ProductRowFields } from "./config-forms";
 import { BrandCardFields, CategoryDirectoryFields, PriceBandFields, TabbedRowFields, MAX_TABS, MIN_TABS, itemsOf, parseItems } from "./config-forms-phase2";
-import { MAX_TILES, MIN_TILES, TileGridFields } from "./config-forms-phase3";
+import { MAX_TILES, MIN_TILES, ThemeBandFields, TileGridFields } from "./config-forms-phase3";
 import type { HomeLayoutSection, SectionPayload } from "./use-home-layout";
 
 const EDITABLE: HomeSectionType[] = [
-  "PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID",
+  "PRODUCT_ROW", "CAMPAIGN_CARD", "TABBED_ROW", "PRICE_BAND_DEALS", "BRAND_CARD", "CATEGORY_DIRECTORY", "EXPLORE_GRID", "STORE_GRID", "THEME_BAND",
 ];
 const COMING_SOON: HomeSectionType[] = [
   "PERSONALISED",
@@ -22,10 +22,11 @@ const typeOptions = [
   { label: "Coming soon", options: COMING_SOON.map((t) => ({ value: t, label: HomeSectionTypeLabels[t], disabled: true })) },
 ];
 
-const ITEM_LIMITS: Record<string, { min: number; max: number; noun: string }> = {
+const ITEM_LIMITS: Record<string, { min: number; max: number; noun: string; opens?: "COLLECTION" | "AISLE" }> = {
   TABBED_ROW: { min: MIN_TABS, max: MAX_TABS, noun: "tab" },
   EXPLORE_GRID: { min: MIN_TILES, max: MAX_TILES, noun: "tile" },
   STORE_GRID: { min: MIN_TILES, max: MAX_TILES, noun: "tile" },
+  THEME_BAND: { min: THEME_BAND_MIN_TILES, max: THEME_BAND_MAX_TILES, noun: "tile", opens: "AISLE" },
 };
 
 /** Drops empty values so optional config fields validate as absent */
@@ -124,6 +125,7 @@ export const SectionDrawer = ({ open, section, onClose, onSave }: Props) => {
         {type === "PRICE_BAND_DEALS" && <PriceBandFields />}
         {type === "BRAND_CARD" && <BrandCardFields brandId={section?.config?.brandId} />}
         {type === "CATEGORY_DIRECTORY" && <CategoryDirectoryFields />}
+        {type === "THEME_BAND" && <ThemeBandFields />}
         {type === "CAMPAIGN_CARD" && <CampaignCardFields themed={themed} onThemedChange={setThemed} />}
         <Form.Item label="Active" name="isActive" valuePropName="checked"><Switch /></Form.Item>
       </Form>

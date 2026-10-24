@@ -17,7 +17,6 @@ const prisma = new PrismaClient();
 type Config = Record<string, unknown>;
 
 const PERSONAL_CARE_ID = "6ab1eb86-eafb-4b7b-9a79-6a1003126a73";
-const BEST_SELLERS_ID = "ddfbfb6c-70ca-4f1c-bf64-33f6a3a4b06d";
 const SNACK_AISLES = ["Potato Chips", "Bhujia & Sev", "Cream Biscuits", "Chocolate Bars & Countlines", "Cola", "Instant Noodles"];
 const SNACK_PERCENTS = [25, 20, 15, 12, 18, 10];
 
@@ -96,15 +95,10 @@ async function rows(organizationId: string, previous: Map<string | null, Config>
     "A glossy cut-out illustration of a wicker basket overflowing with fresh apples, bananas, grapes and oranges.",
     "Soft studio light, gentle contact shadow, isolated on a fully transparent background. No text, logos or people.",
   ].join("\n"), "1024x1024", true);
-  const bestArt = reusableArt(previous.get("Best Sellers"), "headerImageUrl") ?? await paintArt("best-sellers", [
-    "A glossy cut-out illustration of a golden star medal with a ribbon, with a few fruits and snacks around it, celebrating the most loved products.",
-    "Isolated on a fully transparent background, soft studio light. No text, letters, logos or people.",
-  ].join("\n"), "1024x1024", true);
   return {
-    best: { type: "PRODUCT_ROW", title: "Best Sellers", collectionId: BEST_SELLERS_ID, config: { headerStyle: "BANNER", headerImageUrl: bestArt, tint: "#fef3c7", maxProducts: 12 } } as Planned,
-    value: { type: "PRODUCT_ROW", title: "Value Picks", collectionId: valuePicks.collection.id, config: { headerStyle: "PLAIN", maxProducts: 12 } } as Planned,
-    crunch: { type: "PRODUCT_ROW", title: "Crunch time", collectionId: crunch.collection.id, config: { headerStyle: "PLAIN", maxProducts: 12 } } as Planned,
-    fruit: { type: "PRODUCT_ROW", title: "Fresh Fruit Basket", collectionId: fruit.collection.id, config: { headerStyle: "BANNER", headerImageUrl: fruitArt, tint: "#dcfce7", maxProducts: 12 } } as Planned,
+    value: { type: "PRODUCT_ROW", title: "Value Picks", collectionId: valuePicks.collection.id, config: { headerStyle: "PLAIN" } } as Planned,
+    crunch: { type: "PRODUCT_ROW", title: "Crunch time", collectionId: crunch.collection.id, config: { headerStyle: "PLAIN" } } as Planned,
+    fruit: { type: "PRODUCT_ROW", title: "Fresh Fruit Basket", collectionId: fruit.collection.id, config: { headerStyle: "BANNER", headerImageUrl: fruitArt, tint: "#dcfce7" } } as Planned,
   };
 }
 
@@ -128,13 +122,12 @@ async function main() {
   // Default order with the showcase sections slotted in
   const plan: Planned[] = DEFAULT_LAYOUT.flatMap((e) => {
     const base: Planned = { type: e.type };
-    if (e.type === "DEPARTMENT_GRID") return [base, p3.stores];
+    if (e.type === "RECENTLY_VIEWED") return [base, p3.stores];
     if (e.type === "TIME_PICKS") return [base, p3.explore];
     if (e.type === "MEMBER_CHIPS") return [base, pcw, snack, combo];
-    if (e.type === "BUY_AGAIN") return [base, r.best, p2.tabs, r.value, r.crunch, r.fruit];
+    if (e.type === "LIVE_CAMPAIGNS") return [base, p2.tabs, r.value, r.crunch, r.fruit];
     if (e.type === "HERO_BANNERS") return [base, p2.deals];
     if (e.type === "OTHER_COLLECTIONS") return [base, ...p2.brands];
-    if (e.type === "RECIPES") return [base, p2.directory];
     return [base];
   });
   await prisma.$transaction(async (tx) => {

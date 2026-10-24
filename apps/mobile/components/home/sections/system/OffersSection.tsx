@@ -70,7 +70,7 @@ export const OffersSection = memo(function OffersSection({ section }: { section:
   const toast = useToast();
   const t = useStrings("home");
   const band = afterHeroId === section.id && festiveTheme ? festiveTheme : PLAIN;
-  const ink = band === PLAIN ? PLAIN.title : "#ffffff";
+  const ink = band.title;
 
   const save = useCallback((code: string) => {
     setPendingCoupon(code);

@@ -24,6 +24,9 @@ export const HomeSectionType = {
   BRAND_CARD: "BRAND_CARD",
   EXPLORE_GRID: "EXPLORE_GRID",
   STORE_GRID: "STORE_GRID",
+  BESTSELLER_CATEGORIES: "BESTSELLER_CATEGORIES",
+  THEME_BAND: "THEME_BAND",
+  STORE_SPECIALS: "STORE_SPECIALS",
 } as const;
 export type HomeSectionType = (typeof HomeSectionType)[keyof typeof HomeSectionType];
 
@@ -68,27 +71,38 @@ export const HomeSectionTypeLabels: Record<HomeSectionType, string> = {
   BRAND_CARD: "Brand card",
   EXPLORE_GRID: "Explore tiles",
   STORE_GRID: "Shop by store",
+  BESTSELLER_CATEGORIES: "Bestseller categories",
+  THEME_BAND: "Theme band",
+  STORE_SPECIALS: "Store specials",
 };
 
 export const SectionHeaderStyle = { PLAIN: "PLAIN", BANNER: "BANNER", ARTWORK: "ARTWORK" } as const;
 export type SectionHeaderStyle = (typeof SectionHeaderStyle)[keyof typeof SectionHeaderStyle];
 
-/** How a festival hero lays out its tiles: rows of three, or one tall tile beside a 2×2 block (exactly 5 tiles) */
 export const TabRailStyle = { ICON_CARD: "ICON_CARD", ICON_UNDERLINE: "ICON_UNDERLINE", PILL: "PILL" } as const;
 export type TabRailStyle = (typeof TabRailStyle)[keyof typeof TabRailStyle];
 
 export const HOME_ROW_MAX_PRODUCTS = 12;
+/** A product shelf on Home is a 3-column grid of two rows */
+export const HOME_SHELF_COLUMNS = 3;
+export const HOME_SHELF_PRODUCTS = 6;
 export const HOME_SECTIONS_PAGE_SIZE = 8;
 /** A price-band grid holds 2 rows of 10 */
 export const HOME_DEALS_PAGE_SIZE = 20;
 export const HOME_BRAND_CARD_PRODUCTS = 3;
+/** Bestseller category cards: how many categories, and the product images in each card's 2×2 grid */
+export const BESTSELLER_CATEGORY_CARDS = 6;
+export const BESTSELLER_CARD_IMAGES = 4;
+/** A theme band holds one row of aisle tiles */
+export const THEME_BAND_MIN_TILES = 2;
+export const THEME_BAND_MAX_TILES = 4;
+/** Store special cards Home shows, most recently updated first */
+export const HOME_STORE_SPECIALS = 2;
 /** Product images a tile without art shows as a pack cluster */
 export const TILE_PACK_IMAGES = 3;
 export const MAX_SEARCH_HINTS = 8;
 /** Everyday searches that fill the search bar's rotation where a store's own searches run short */
 export const DEFAULT_SEARCH_HINTS = ["milk", "atta", "onion", "eggs", "bread", "paneer", "chips", "detergent"];
-/** Each directory department opens with this many wide tiles before its 4-column grid */
-export const DIRECTORY_WIDE_TILES = 2;
 
 /** Headline typefaces a festival hero can use; the designer picks one per festival, the app bundles them all */
 export const FestiveFont = {

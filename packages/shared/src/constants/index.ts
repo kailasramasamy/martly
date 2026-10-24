@@ -279,6 +279,7 @@ export const CollectionKind = {
   OCCASION: "OCCASION",
   SEASON: "SEASON",
   PROMO: "PROMO",
+  STORE_SPECIAL: "STORE_SPECIAL",
 } as const;
 export type CollectionKind = (typeof CollectionKind)[keyof typeof CollectionKind];
 
@@ -287,10 +288,11 @@ export const CollectionKindLabels: Record<CollectionKind, string> = {
   OCCASION: "Occasion / Festival",
   SEASON: "Season",
   PROMO: "Promo",
+  STORE_SPECIAL: "Store special (made in-store)",
 };
 
 // Kinds an admin can pick by hand; PROMO collections are only made by the promo agent
-export const EDITABLE_COLLECTION_KINDS = ["STANDARD", "OCCASION", "SEASON"] as const;
+export const EDITABLE_COLLECTION_KINDS = ["STANDARD", "OCCASION", "SEASON", "STORE_SPECIAL"] as const;
 
 export const PromoStatus = {
   DRAFTING: "DRAFTING",

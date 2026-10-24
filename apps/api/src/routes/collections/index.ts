@@ -11,7 +11,7 @@ import { requirePermission } from "../../middleware/authorize.js";
 import { AI_IMAGE_COST, Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { canSeeOrgRecord, assertProductsUsable } from "../../services/catalog-access.js";
-import { isCurationConfigured, regenerateBanner, regenerateHero } from "../../services/seasonal/index.js";
+import { isCurationConfigured, regenerateBanner, regenerateHero, storeSpecialArt } from "../../services/seasonal/index.js";
 import { saveHero, withHeroTranslation } from "../../services/seasonal/hero.js";
 import { ownCollection } from "./access.js";
 import { collectionImageRoutes } from "./images.js";
@@ -192,8 +192,8 @@ export async function collectionRoutes(app: FastifyInstance) {
       if (user.role !== "SUPER_ADMIN" && existing.organizationId !== user.organizationId) {
         return reply.forbidden("Access denied");
       }
-      const { artDirection } = existing;
-      if (!artDirection) return reply.badRequest("Only AI-curated collections can regenerate their banner");
+      const artDirection = existing.artDirection ?? (existing.kind === "STORE_SPECIAL" ? await storeSpecialArt(app.prisma, existing) : null);
+      if (!artDirection) return reply.badRequest("Only AI-curated collections and store specials can regenerate their banner");
 
       const art = await withAiImages(app, meteredOrg(user, existing.organizationId), AI_IMAGE_COST.COLLECTION_BANNER, "COLLECTION_BANNER", existing.id,
         () => regenerateBanner(app.prisma, { ...existing, artDirection }, (msg) => request.log.warn(`${existing.slug}: ${msg}`)));

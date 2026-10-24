@@ -58,7 +58,8 @@ async function liveCampaigns(ctx: ResolveContext, placed: Set<string>): Promise<
 async function otherCollections(ctx: ResolveContext, placed: Set<string>): Promise<LayoutEntry[]> {
   const collections = await ctx.prisma.collection.findMany({
     where: {
-      isActive: true, kind: { not: "PROMO" }, id: { notIn: [...placed] },
+      // Store specials show as their own cards (STORE_SPECIALS), never also as a plain shelf
+      isActive: true, kind: { notIn: ["PROMO", "STORE_SPECIAL"] }, id: { notIn: [...placed] },
       OR: orgOrGlobal(ctx.store.organizationId), AND: liveWindow(ctx.now),
     },
     orderBy: [{ sortOrder: "asc" }, { id: "asc" }],
@@ -71,13 +72,15 @@ async function otherCollections(ctx: ResolveContext, placed: Set<string>): Promi
 }
 
 /**
- * The hero banner carousel carries paid brand banners, so it always sits right under the festive top (or leads the page
- * without one), wherever a saved layout put it and even if the layout left it out.
+ * The hero banner carousel carries paid brand banners, so it always shows in the first screens, wherever a saved layout
+ * put it and even if the layout left it out: right after the department grid (or the category directory), so shoppers
+ * can browse before the ads, or right under the festive top (leading the page without one) when the layout has neither.
  */
 function pinHeroBanners(layout: LayoutEntry[]) {
   const banners = layout.find((e) => e.type === "HERO_BANNERS") ?? DEFAULT_LAYOUT.find((e) => e.type === "HERO_BANNERS")!;
   const rest = layout.filter((e) => e.type !== "HERO_BANNERS");
-  const at = rest.findIndex((e) => e.type === "FESTIVE_HERO") + 1;
+  const directory = rest.findIndex((e) => e.type === "DEPARTMENT_GRID" || e.type === "CATEGORY_DIRECTORY");
+  const at = (directory >= 0 ? directory : rest.findIndex((e) => e.type === "FESTIVE_HERO")) + 1;
   return [...rest.slice(0, at), banners, ...rest.slice(at)];
 }
 

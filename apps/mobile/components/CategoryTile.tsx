@@ -8,9 +8,11 @@ interface Props {
   fallbackIcon: keyof typeof Ionicons.glyphMap;
   size: number;
   onPress: () => void;
+  /** A flat tile colour in place of the default mint with a border */
+  tint?: string;
 }
 
-export function CategoryTile({ title, imageUrl, fallbackIcon, size, onPress }: Props) {
+export function CategoryTile({ title, imageUrl, fallbackIcon, size, onPress, tint }: Props) {
   return (
     <Pressable
       style={({ pressed }) => [{ width: size }, styles.tile, pressed && styles.pressed]}
@@ -18,7 +20,7 @@ export function CategoryTile({ title, imageUrl, fallbackIcon, size, onPress }: P
       accessibilityRole="button"
       accessibilityLabel={title}
     >
-      <View style={[styles.imageWrap, { width: size, height: size, borderRadius: size * 0.22 }]}>
+      <View style={[styles.imageWrap, { width: size, height: size, borderRadius: size * 0.22 }, tint ? { backgroundColor: tint, borderWidth: 0 } : null]}>
         {imageUrl ? (
           <Image source={{ uri: imageUrl }} style={styles.image} resizeMode="cover" />
         ) : (

@@ -79,6 +79,7 @@ export const search = {
   },
   festivePicks: "Festive picks",
   inSeason: "In season",
+  madeAt: (store: string) => `Made at ${store}`,
   // Store page
   filterProducts: "Filter products...",
   noProductsAvailable: "No products available",

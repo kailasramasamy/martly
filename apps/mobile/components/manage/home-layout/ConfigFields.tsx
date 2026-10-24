@@ -39,7 +39,6 @@ function ProductRowFields({ values, patch }: FieldsProps) {
     <>
       <SelectField label="Header style" value={values.headerStyle} options={HEADER_OPTIONS} onChange={(headerStyle) => patch({ headerStyle: headerStyle as FormValues["headerStyle"] })} />
       <TextField label="Tint colour" value={values.tint} onChangeText={(tint) => patch({ tint })} placeholder="#0f766e" hint={TINT_HINT} autoCapitalize="none" maxLength={7} />
-      <TextField label="Max products" value={values.maxProducts} onChangeText={(maxProducts) => patch({ maxProducts })} keyboardType="number-pad" hint="3 to 20" maxLength={2} />
     </>
   );
 }

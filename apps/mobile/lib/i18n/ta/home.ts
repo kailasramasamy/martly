@@ -59,6 +59,8 @@ export const home: Strings<"home"> = {
   shoppableRecipes: "வாங்கக்கூடிய ரெசிபிகள்",
   recipesSubtitle: "சமையல் செய்யுங்கள், எல்லா பொருட்களையும் சேருங்கள்",
   shopByCategory: "வகை வாரியாக வாங்குங்கள்",
+  bestsellers: "அதிகம் விற்பவை",
+  moreProducts: (n: number) => `+${n} மேலும்`,
   buyAgain: "மீண்டும் வாங்கு",
   buyAgainSubtitle: "நீங்கள் அடிக்கடி ஆர்டர் செய்பவை",
   smartReorder: "மறுஆர்டர்",

@@ -16,7 +16,7 @@ org shows the same layout, and a section with nothing in stock at a store hides 
     - `LIVE_CAMPAIGNS`: one campaign card per live PROMO collection that no section already places.
     - `OTHER_COLLECTIONS`: a product row per live collection that isn't placed anywhere else.
   - The server enforces two placements on every layout (`services/home/layout.ts`, since 2026-10-21):
-    - `HERO_BANNERS` is pinned right under `FESTIVE_HERO`, at the top when there's no festival, even if a saved layout moved or dropped it. It carries paid brand banners, and brand slides lead it.
+    - `HERO_BANNERS` is pinned right after `DEPARTMENT_GRID` (or `CATEGORY_DIRECTORY`), so shoppers can browse before the ads (since 2026-10-24). A layout with no directory keeps it right under `FESTIVE_HERO`, at the top when there's no festival. It is pinned even if a saved layout moved or dropped it, because it carries paid brand banners; brand slides lead it.
     - Campaign cards (placed or `LIVE_CAMPAIGNS`) are spread through the product rows (`PRODUCT_ROW`, `TABBED_ROW`) instead of stacked: brand-paid cards first, then a card for each live festival the single hero has no room for (unless a section already shows it), the first card after the first row, then one every two rows (closer when there are more cards than rows).
 - **Resolvers:** `services/home/resolvers/*`. Each section type resolves to its payload, or to null to hide it.
 - **Shared contract:** types, configs and labels live in `packages/shared/src/{constants,schemas,types}/home.ts`.
@@ -28,12 +28,44 @@ org shows the same layout, and a section with nothing in stock at a store hides 
   - `app/(tabs)/index.tsx` renders the sections in a virtualised `FlatList`, through the registry at `components/home/sections/index.tsx`. Unknown section types render nothing.
   - Also on Home: a back-to-top pill and a free-delivery progress bar in the bottom dock.
 
+## Default order (since 2026-10-24)
+
+Modelled on Instamart's and Blinkit's Home, which both show the category directory on screens 2–4 and keep ads lower:
+
+1. `FESTIVE_HERO`, `OFFERS`, `MEMBER_CHIPS`
+2. `BESTSELLER_CATEGORIES`: the store's 6 best-selling categories (30-day units here, then stocked count), each card a 2×2 of its own top sellers, a "+N more" pill and the name. It hides with fewer than 3 cards. It replaced the hand-picked "Best Sellers" row.
+3. `BUY_AGAIN`: the shopper's repeat buys (shows only for signed-in shoppers with past orders).
+4. `DEPARTMENT_GRID`: every department as one 4-column grid (16 tiles), each opening its department. A tabbed and a full per-department aisle directory were both tried on 2026-10-24 and dropped as too long or too hidden; the aisle directory (`CATEGORY_DIRECTORY`) stays available but is switched off on Demo Grocers' Home.
+5. `HERO_BANNERS` (pinned here)
+6. Campaign cards, product shelves and the rest
+
+`prisma/reorder-home-layout.ts` moved saved layouts to this order: it adds the bestseller cards, moves buy again, the department grid and the banners up, and switches off the aisle directory, the Best Sellers row and its collection (rows kept, `isActive=false`).
+
+**Product shelves (`PRODUCT_ROW`):** a 3-column grid of 6 products (whole rows of 3; a shelf with fewer than 3 shows them as they are), then a "See all N products" pill previewing 3 product images. A sponsored product takes a slot in the shelf rather than adding one. The `maxProducts` config was removed. Older app builds draw the same 6 products as a rail.
+
+**Deal signals on product cards (since 2026-10-24, `apps/mobile/lib/deal.ts`):**
+- A card strikes the promo's original price while a store promo runs, else the printed MRP when the price is below it (~90% of listings), else nothing.
+- Label: "₹N OFF" when the saving is at least ₹50 and that reads bigger than the percentage; otherwise "N% OFF" for a promo or "N% OFF on MRP". A promo keeps the amber pill; an MRP saving is plain blue text.
+- A saving of 20% or more puts the price on a yellow highlighter.
+- Home shelves (`PRODUCT_ROW`) add an "All <aisle> ›" chip that opens the product's subcategory; other screens don't (the `aisleLink` prop on `ProductList`).
+
+**Theme bands (`THEME_BAND`, since 2026-10-24):**
+- A full-width pastel band between shelves: title and subtitle on the left, cut-out art on the right, then 2–4 aisle tiles.
+- Config `{ tint, imageUrl? }`. Items: each tile opens exactly one subcategory (`subcategoryIds: [id]`, no collection); the items endpoint rejects anything else.
+- A tile shows only while its aisle has stock at the store, with the aisle's own picture when the tile has none. The band hides with fewer than 2 tiles.
+- Edited in admin (band colour, art, tiles). Mobile Manage can retitle, reorder and toggle it.
+- `prisma/seed-home-bands.ts` adds Demo Grocers' three: Pooja corner, Breakfast sorted, Home care refresh.
+
+**Store specials (`STORE_SPECIALS`, since 2026-10-24):** a built-in block that draws the store's own ranges (collections of type Store special) as the search screen's spotlight cards. See `docs/store-specials.md`.
+
+**Regional pantry picks:** a `PRODUCT_ROW` on the collection "Regional pantry picks", built by `prisma/seed-regional-pantry.ts` from South Indian brands the store stocks (MTR, Sakthi, Eastern, GRB, Aavin, Gold Winner, Idhayam…) in pantry aisles, best sellers first with at most 3 of a brand in the first 12. It sits right below the hero banners. Brands carry no region field, so the brand list lives in the script; admins edit the collection like any other.
+
 ## Festive hero
 
-- **Layout:**
-  - One solid theme colour runs from the status bar down to the tiles, with white text.
-  - A wide strip of tone-on-tone silhouettes sits under the search bar, carrying a three-line greeting: kicker, title (in the font chosen for the festival) and subtitle.
-  - The festival's tiles come below on cream cards.
+- **Layout (pastel since 2026-10-24, see `docs/festive-home-hero.md`):**
+  - A pale wash of the festival hue runs from the status bar through the block, with deep-ink text.
+  - A faint silhouette strip rises behind the header's pills; the kicker and title sit on the left with a See all pill.
+  - The festival's tiles follow as white cards in one sideways row.
 - **The hero designer (Claude)** chooses:
   - the theme colour, kept within a contrast band against white
   - the silhouette scene
@@ -91,7 +123,7 @@ type must, may, or must not name a collection on the section; the layout API enf
 - **Category directory (`CATEGORY_DIRECTORY`):**
   - Shows the departments in `config.departmentIds`, in the admin's order, or all departments when the list is empty.
   - Only categories with stock at the store are listed.
-  - The first `DIRECTORY_WIDE_TILES` (2) tiles in each department are wide; the rest fill a 4-column grid.
+  - Every tile is a square in a 4-column grid on one quiet tile colour (wide tiles were removed on 2026-10-24).
 - **Mobile Manage → Marketing → Home layout:**
   - Reorder with up/down, switch sections on and off, delete, and see the "hidden at store" hint.
   - Per-type forms for the product row and all Phase 2 types.

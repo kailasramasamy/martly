@@ -10,6 +10,9 @@ const PALETTE: HomeTheme[] = [
   { background: "#f5f3ff", title: "#4c1d95", dark: false },
 ];
 
+// A store's own range wears the bakery-warm colours of its spotlight card, on Home and in search
+const STORE_SPECIAL_THEME: HomeTheme = { background: "#fdebd3", title: "#7c3a0a", dark: false };
+
 /** Stable per collection, so a promotion keeps its colours between visits and on its own screen */
 export function defaultTheme(collectionId: string): HomeTheme {
   const hash = [...collectionId].reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
@@ -38,6 +41,8 @@ export function promoOfferLabel(promo: { discountType: string | null; discountVa
 
 export interface CampaignLook {
   imageUrl: string | null;
+  /** The art is a full photo (a store special's banner) rather than a cut-out, so it runs edge to edge */
+  photo: boolean;
   theme: HomeTheme;
   offerLabel: string | null;
 }
@@ -46,8 +51,8 @@ type LookCollection = { id: string; kind: string; imageUrl: string | null; promo
 
 /**
  * How a collection presents itself in an organisation: its Home campaign card's art, colours and offer, else the
- * tint and art of a themed Home row, else a live promo's defaults; null when Home gives it no look. Its own screen
- * uses this to match what was tapped.
+ * tint and art of a themed Home row, else a live promo's or store special's defaults; null when Home gives it no look.
+ * Its own screen uses this to match what was tapped.
  */
 export async function campaignLook(prisma: PrismaClient, organizationId: string, collection: LookCollection): Promise<CampaignLook | null> {
   const sections = await prisma.homeSection.findMany({
@@ -61,13 +66,15 @@ export async function campaignLook(prisma: PrismaClient, organizationId: string,
       imageUrl: config.imageUrl ?? collection.imageUrl,
       theme: config.theme ?? defaultTheme(collection.id),
       offerLabel: config.offerLabel ?? null,
+      photo: false,
     };
   }
   const row = sections
     .map((s) => s.config as { headerStyle?: string; headerImageUrl?: string; tint?: string })
     .find((c) => c.tint && c.headerStyle !== "PLAIN");
   const theme = row?.tint ? rowTheme(row.tint) : null;
-  if (row && theme) return { imageUrl: row.headerImageUrl ?? null, theme, offerLabel: promoOfferLabel(collection.promo) };
+  if (row && theme) return { imageUrl: row.headerImageUrl ?? null, photo: false, theme, offerLabel: promoOfferLabel(collection.promo) };
+  if (collection.kind === "STORE_SPECIAL") return { imageUrl: collection.imageUrl, photo: true, theme: STORE_SPECIAL_THEME, offerLabel: null };
   if (collection.kind !== "PROMO") return null;
-  return { imageUrl: collection.imageUrl, theme: defaultTheme(collection.id), offerLabel: promoOfferLabel(collection.promo) };
+  return { imageUrl: collection.imageUrl, photo: false, theme: defaultTheme(collection.id), offerLabel: promoOfferLabel(collection.promo) };
 }

@@ -14,7 +14,6 @@ import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 const H_PADDING = 16;
 const GAP = 10;
 // One quiet grey behind every tile, so the product art carries the colour
-const TILE_BACKGROUND = "#f1f5f9";
 const SKELETON_TILE = Math.floor((Dimensions.get("window").width - H_PADDING * 2 - GAP * 3) / 4);
 
 type Group = CategoryDirectoryPage["groups"][number];
@@ -50,7 +49,7 @@ export default function CategoriesScreen() {
   const renderGroup = useCallback(
     ({ item }: { item: Group }) => (
       <View style={styles.group}>
-        <DepartmentGroup group={item} tint={TILE_BACKGROUND} />
+        <DepartmentGroup group={item} />
       </View>
     ),
     [],

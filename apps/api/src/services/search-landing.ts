@@ -9,6 +9,8 @@ const TRENDING_LIMIT = 8;
 const CATEGORY_LIMIT = 12;
 const RAIL_LIMIT = 12;
 const OCCASION_LIMIT = 2;
+// A store's own range (its bakery, its sweets) gets a spotlight of its own after the festivals
+const STORE_SPECIAL_LIMIT = 1;
 
 // Only the parts that are the same for every customer are cached; reorder is per user
 const sharedCache = new Map<string, { at: number; data: Awaited<ReturnType<typeof buildShared>> }>();
@@ -63,12 +65,14 @@ function occasionSubcategories<T extends { id: string }>(subs: (T | null)[]) {
   return [...seen.values()];
 }
 
-async function occasionCollections(prisma: PrismaClient, storeId: string, organizationId: string) {
-  const now = new Date();
+type SpotlightKind = "OCCASION" | "SEASON" | "STORE_SPECIAL";
+
+// Live collections of these kinds with something in stock at the store, with their first products' aisles
+async function stockedSpotlights(prisma: PrismaClient, storeId: string, organizationId: string, kinds: SpotlightKind[], now: Date) {
   const collections = await prisma.collection.findMany({
     where: {
       isActive: true,
-      kind: { in: ["OCCASION", "SEASON"] },
+      kind: { in: kinds },
       OR: [{ organizationId }, { organizationId: null }],
       AND: liveWindow(now),
     },
@@ -82,13 +86,36 @@ async function occasionCollections(prisma: PrismaClient, storeId: string, organi
       },
     },
   });
-  const live = rankFestivals(collections, now).filter((c) => c.items.length > 0).slice(0, OCCASION_LIMIT);
-  return Promise.all(live.map(async (c) => ({
+  return collections.filter((c) => c.items.length > 0);
+}
+
+type Spotlight = Awaited<ReturnType<typeof stockedSpotlights>>[number];
+
+async function toSpotlight(prisma: PrismaClient, storeId: string, c: Spotlight) {
+  return {
     id: c.id, title: c.title, subtitle: c.subtitle, slug: c.slug, kind: c.kind, translations: c.translations,
     imageUrl: c.imageUrl, imageUrls: c.imageUrls as Record<string, string> | null, textInImage: c.textInImage,
     subcategories: occasionSubcategories(c.items.map((i) => i.product.subcategory)),
     products: await withAllSizes(prisma, storeId, c.items),
-  })));
+  };
+}
+
+/** A store's own ranges (its bakery, its sweets) it has in stock, most recently updated first: the search spotlight
+ *  shows one after the festivals, and Home's store specials block shows them as the same cards */
+export async function storeSpecials(prisma: PrismaClient, storeId: string, organizationId: string, limit: number) {
+  const rows = await stockedSpotlights(prisma, storeId, organizationId, ["STORE_SPECIAL"], new Date());
+  const latest = rows.sort((a, b) => b.updatedAt.getTime() - a.updatedAt.getTime()).slice(0, limit);
+  return Promise.all(latest.map((c) => toSpotlight(prisma, storeId, c)));
+}
+
+async function occasionCollections(prisma: PrismaClient, storeId: string, organizationId: string) {
+  const now = new Date();
+  const [festivals, specials] = await Promise.all([
+    stockedSpotlights(prisma, storeId, organizationId, ["OCCASION", "SEASON"], now),
+    storeSpecials(prisma, storeId, organizationId, STORE_SPECIAL_LIMIT),
+  ]);
+  const ranked = rankFestivals(festivals, now).slice(0, OCCASION_LIMIT);
+  return [...await Promise.all(ranked.map((c) => toSpotlight(prisma, storeId, c))), ...specials];
 }
 
 async function timePicks(prisma: PrismaClient, storeId: string) {

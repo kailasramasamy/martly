@@ -41,7 +41,7 @@ export const CollectionEdit = () => {
           }}
           onFinish={(values) => formProps.onFinish?.(toSchedulePayload(values))}
         >
-          {isCurated && record && <AiBannerCard record={record} onRegenerated={() => queryResult?.refetch()} />}
+          {(isCurated || record?.kind === "STORE_SPECIAL") && record && <AiBannerCard record={record} onRegenerated={() => queryResult?.refetch()} />}
           {(record?.kind === "OCCASION" || record?.kind === "SEASON") && (
             <HomeHeroCard record={record} onChanged={() => queryResult?.refetch()} />
           )}

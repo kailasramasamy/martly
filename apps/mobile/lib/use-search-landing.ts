@@ -4,7 +4,7 @@ import { api } from "./api";
 import type { SearchLanding } from "./types";
 
 // Bump the version whenever the SearchLanding shape changes so a cached payload from an older build is never painted
-const CACHE_VERSION = 3;
+const CACHE_VERSION = 4;
 const cacheKey = (storeId: string) => `martly_search_landing_v${CACHE_VERSION}_${storeId}`;
 
 /** Paints the last landing for this store instantly, then refreshes it from the API. */

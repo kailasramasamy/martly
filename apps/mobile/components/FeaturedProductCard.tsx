@@ -12,6 +12,8 @@ import { CompactProductCard } from "./CompactProductCard";
 import { bySize, packSaving } from "../lib/pack-sizes";
 import { SizePager, sizeImage } from "./PackSizes";
 import { useSponsoredTracking } from "../lib/use-sponsored";
+import { cardDeal, useDealLabel } from "../lib/deal";
+import { AisleLink } from "./AisleLink";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const CARD_GAP = 10;
@@ -61,6 +63,8 @@ interface FeaturedProductCardProps {
   // Quick add (list review): open on this size, and ADD adds the size on show this many at once, sheet-free
   preferredId?: string;
   addCount?: (sp: StoreProduct) => number;
+  // Ends the details with a link to the product's subcategory aisle
+  aisleLink?: boolean;
 }
 
 // A square photo tile with ADD in its bottom-right corner, Zepto-style
@@ -97,23 +101,20 @@ function CardImage({ item, primaryId, size, isOutOfStock, isWishlisted, onHeart,
 
 function PriceBlock({ item, isMember, saving }: { item: StoreProduct; isMember?: boolean; saving?: string | null }) {
   const t = useStrings("catalog");
-  const tc = useStrings("common");
-  const hasDiscount = item.pricing?.discountActive;
-  const displayPrice = hasDiscount ? item.pricing!.effectivePrice : Number(item.price);
-  const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
+  const deal = cardDeal(item, !!isMember);
+  const dealText = useDealLabel()(deal);
   const memberPrice = item.pricing?.memberPrice;
-  const memberCheaper = memberPrice != null && memberPrice < displayPrice;
-  const shown = isMember && memberCheaper ? memberPrice : displayPrice;
-  const struck = isMember && memberCheaper ? displayPrice : originalPrice;
-  const offPercent = struck != null && struck > shown ? Math.round(((struck - shown) / struck) * 100) : 0;
+  const memberCheaper = memberPrice != null && memberPrice < (item.pricing?.discountActive ? item.pricing.effectivePrice : Number(item.price));
   return (
     <View>
       <View style={styles.priceRow}>
-        <Text style={styles.price} numberOfLines={1}>{"\u20B9"}{shown.toFixed(0)}</Text>
-        {offPercent > 0 && <Text style={styles.mrp}>{"\u20B9"}{struck!.toFixed(0)}</Text>}
+        <Text style={[styles.price, deal.highlight && styles.highlight]} numberOfLines={1}>{"\u20B9"}{deal.shown.toFixed(0)}</Text>
+        {deal.struck != null && <Text style={styles.mrp}>{"\u20B9"}{deal.struck.toFixed(0)}</Text>}
       </View>
-      <UnitPrice price={shown} variant={item.variant} />
-      {offPercent > 0 && <View style={styles.offTag}><Text style={styles.off}>{tc.percentOff(offPercent)}</Text></View>}
+      <UnitPrice price={deal.shown} variant={item.variant} />
+      {dealText && (deal.kind === "MRP"
+        ? <Text style={styles.offMrp}>{dealText}</Text>
+        : <View style={styles.offTag}><Text style={styles.off}>{dealText}</Text></View>)}
       {saving && <Text style={styles.saving}>{saving}</Text>}
       {!isMember && memberCheaper && (
         <Text style={styles.memberHint}>{t.withPlus(memberPrice!.toFixed(0))}</Text>
@@ -169,7 +170,7 @@ function AddControl({ item, quantity, variantCount, isOutOfStock, onAddToCart, o
   );
 }
 
-function CardDetails({ item, lowStock, sponsored }: { item: StoreProduct; lowStock: number | null; sponsored: boolean }) {
+function CardDetails({ item, lowStock, sponsored, aisleLink }: { item: StoreProduct; lowStock: number | null; sponsored: boolean; aisleLink?: boolean }) {
   const { getLocalizedName } = useLanguage();
   const t = useStrings("catalog");
   return (
@@ -184,6 +185,7 @@ function CardDetails({ item, lowStock, sponsored }: { item: StoreProduct; lowSto
         </View>
       )}
       {lowStock != null && <Text style={styles.lowStock}>{t.onlyLeft(lowStock)}</Text>}
+      {aisleLink && <AisleLink subcategory={item.product.subcategory} />}
     </>
   );
 }
@@ -282,7 +284,7 @@ function StandardCard(props: FeaturedProductCardProps) {
           <Text style={[styles.unit, packs > 1 && styles.unitPacks]} numberOfLines={2}>{unitLabel}</Text>
         )}
         <PriceBlock item={item} isMember={isMember} saving={packSaving(item, sizes)} />
-        <CardDetails item={item} lowStock={isLowStock ? available : null} sponsored={!!props.item.sponsored} />
+        <CardDetails item={item} lowStock={isLowStock ? available : null} sponsored={!!props.item.sponsored} aisleLink={props.aisleLink} />
       </View>
     </TouchableOpacity>
   );
@@ -323,10 +325,10 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255,255,255,0.8)", justifyContent: "center", alignItems: "center",
   },
   oosLabel: { fontFamily: fonts.bold, fontSize: 10.5, color: colors.textSecondary },
-  content: { paddingHorizontal: 2, paddingTop: 8 },
+  content: { paddingHorizontal: 2, paddingTop: 4 },
   name: { fontFamily: fonts.semibold, fontSize: 12.5, lineHeight: 16, minHeight: 32, color: colors.text, marginTop: 3 },
   // The pack size on show, just above the price
-  unit: { fontFamily: fonts.medium, fontSize: 11.5, lineHeight: 15, color: colors.textSecondary, marginBottom: 2 },
+  unit: { fontFamily: fonts.medium, fontSize: 11.5, lineHeight: 15, color: colors.textSecondary },
   // Quick add's size switch: a full-width pill, 32 tall with slop to a 44 tap target
   unitPick: {
     flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 4, minHeight: 32, marginTop: 2, marginBottom: 6,
@@ -340,10 +342,12 @@ const styles = StyleSheet.create({
   lowStock: { fontFamily: fonts.semibold, fontSize: 10, color: colors.warning, marginTop: 2 },
   priceRow: { flexDirection: "row", alignItems: "baseline", gap: 5 },
   price: { fontFamily: fonts.extrabold, fontSize: 17, color: colors.text },
+  highlight: { backgroundColor: colors.salePill, paddingHorizontal: 4, borderRadius: 4 },
   mrp: { fontFamily: fonts.medium, fontSize: 11, color: "#94a3b8", textDecorationLine: "line-through" },
   // Sale info in the offers amber, apart from the price
   offTag: { alignSelf: "flex-start", backgroundColor: colors.salePill, borderRadius: 4, paddingHorizontal: 5, paddingVertical: 1, marginTop: 3 },
   off: { fontFamily: fonts.extrabold, fontSize: 11, letterSpacing: 0.2, color: colors.salePillText },
+  offMrp: { fontFamily: fonts.bold, fontSize: 10.5, color: "#2563eb", marginTop: 3 },
   memberHint: { fontFamily: fonts.bold, fontSize: 9.5, color: "#b45309", marginTop: 1 },
   saving: { fontFamily: fonts.bold, fontSize: 10, color: "#15803d", marginTop: 1 },
   addBtn: {

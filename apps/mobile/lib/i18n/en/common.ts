@@ -21,4 +21,6 @@ export const common = {
   tomorrow: "Tomorrow",
   items: (n: number) => (n === 1 ? "1 item" : `${n} items`),
   percentOff: (n: number) => `${n}% OFF`,
+  percentOffMrp: (n: number) => `${n}% OFF on MRP`,
+  allOf: (name: string) => `All ${name}`,
 };

@@ -568,7 +568,7 @@ export interface SearchMeta {
   expandedTerms?: string[];
 }
 
-export type CollectionKind = "STANDARD" | "OCCASION" | "SEASON";
+export type CollectionKind = "STANDARD" | "OCCASION" | "SEASON" | "PROMO" | "STORE_SPECIAL";
 
 export interface LandingCollection {
   id: string;
@@ -615,7 +615,13 @@ export interface CollectionHeader {
   translations: CollectionTranslations | null;
   endsAt: string | null;
   /** Present when the collection is a campaign on Home: the card's cut-out art, colours and offer, so its screen matches */
-  campaign: { imageUrl: string | null; theme: { background: string; title: string; dark: boolean }; offerLabel: string | null } | null;
+  campaign: {
+    imageUrl: string | null;
+    /** A full photo banner (a store special's) rather than a cut-out */
+    photo?: boolean;
+    theme: { background: string; title: string; dark: boolean };
+    offerLabel: string | null;
+  } | null;
   /** The collection's aisles in stock at the store (first page only), for filter chips; null on later pages */
   aisles: CampaignTile[] | null;
 }

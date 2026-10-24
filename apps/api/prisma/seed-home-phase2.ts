@@ -6,7 +6,6 @@ export type PlannedSection = {
 };
 
 const TAB_COLLECTIONS = ["Snack Time", "Morning Essentials", "Monsoon Essentials", "Value Picks"];
-const DIRECTORY_DEPARTMENTS = ["Grocery & Staples", "Snacks & Packaged Foods", "Beverages", "Personal Care", "Home Care"];
 const BRAND_CARDS = [
   { name: "Cadbury (Mondelez)", title: "Cadbury Celebrations", subtitle: "Something sweet for every moment", tint: "#ede9fe" },
   { name: "Amul", title: "The Taste of India", subtitle: "Milk, butter, cheese and more from Amul", tint: "#fef3c7" },
@@ -31,13 +30,7 @@ async function brandCards(prisma: PrismaClient): Promise<PlannedSection[]> {
   });
 }
 
-async function directory(prisma: PrismaClient): Promise<PlannedSection> {
-  const departments = await prisma.department.findMany({ where: { name: { in: DIRECTORY_DEPARTMENTS } }, select: { id: true, name: true } });
-  const departmentIds = DIRECTORY_DEPARTMENTS.flatMap((n) => departments.filter((d) => d.name === n).map((d) => d.id));
-  return { type: "CATEGORY_DIRECTORY", title: "Shop by aisle", config: { departmentIds } };
-}
-
-/** Phase 2 showcase: a tabbed row, price-band deals, two brand cards and a category directory */
+/** Phase 2 showcase: a tabbed row, price-band deals and two brand cards */
 export async function phase2Sections(prisma: PrismaClient, organizationId: string) {
   return {
     tabs: await tabbedRow(prisma, organizationId),
@@ -48,6 +41,5 @@ export async function phase2Sections(prisma: PrismaClient, organizationId: strin
       },
     } as PlannedSection,
     brands: await brandCards(prisma),
-    directory: await directory(prisma),
   };
 }

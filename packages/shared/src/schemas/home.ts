@@ -10,7 +10,6 @@ export const homeSectionConfigSchemas = {
     headerStyle: z.nativeEnum(SectionHeaderStyle).default("PLAIN"),
     headerImageUrl: z.string().url().optional(),
     tint: hex.optional(),
-    maxProducts: z.number().int().min(3).max(20).default(12),
   }),
   CAMPAIGN_CARD: z.object({
     offerLabel: z.string().trim().max(24).optional(),
@@ -25,6 +24,7 @@ export const homeSectionConfigSchemas = {
   }),
   BRAND_CARD: z.object({ brandId: z.string().uuid(), tint: hex.optional(), imageUrl: z.string().url().optional() }),
   CATEGORY_DIRECTORY: z.object({ departmentIds: z.array(z.string().uuid()).default([]) }),
+  THEME_BAND: z.object({ tint: hex, imageUrl: z.string().url().optional() }),
 } as const;
 
 /** Config for a type, or `{}` for types without settings */

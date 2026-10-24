@@ -1,16 +1,17 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { View, Text, TouchableOpacity, Pressable, Image, StyleSheet, Dimensions } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../constants/theme";
 import { useLanguage } from "../lib/language-context";
 import { useStrings } from "../lib/i18n/use-strings";
-import { strings } from "../lib/i18n";
 import { FoodTypeMark } from "./FoodTypeMark";
 import { AdBadge, BestsellerBadge, BrandPickBadge, UnitPrice } from "./ProductBadges";
-import { SizeChips, SizePager, maxChips, sizeImage } from "./PackSizes";
+import { sizeImage } from "./PackSizes";
 import { bySize, packSaving } from "../lib/pack-sizes";
 import { useSponsoredTracking } from "../lib/use-sponsored";
+import { cardDeal, useDealLabel } from "../lib/deal";
+import { AisleLink } from "./AisleLink";
 import type { StoreProduct } from "../lib/types";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
@@ -37,29 +38,18 @@ export interface CompactProductCardProps {
   quantityOf?: (storeProductId: string) => number;
   // Called as the product page opens (search result tracking)
   onOpen?: () => void;
+  // Ends the details with a link to the product's subcategory aisle
+  aisleLink?: boolean;
 }
 
-function discountLine(item: StoreProduct): string | null {
-  const p = item.pricing;
-  if (!p?.discountActive) return null;
-  return p.discountType === "PERCENTAGE" ? strings("common").percentOff(p.discountValue!) : strings("catalog").flatOff(p.discountValue!);
-}
-
-function resolvePrices(item: StoreProduct, isMember?: boolean) {
-  const active = !!item.pricing?.discountActive;
-  const price = active ? item.pricing!.effectivePrice : Number(item.price);
-  const memberPrice = item.pricing?.memberPrice;
-  const memberCheaper = !!isMember && memberPrice != null && memberPrice < price;
-  return {
-    shown: memberCheaper ? memberPrice! : price,
-    struck: memberCheaper ? price : active ? item.pricing!.originalPrice : null,
-  };
-}
-
-function CompactControl({ item, quantity, outOfStock, onAddToCart, onUpdateQuantity }: Required<Pick<CompactProductCardProps, "quantity">> & Pick<CompactProductCardProps, "item" | "onAddToCart" | "onUpdateQuantity"> & { outOfStock: boolean }) {
+// With several sizes every control opens the size sheet, as on the larger cards, since which size to change is ambiguous
+function CompactControl({ item, quantity, outOfStock, options, onAddToCart, onUpdateQuantity, onShowVariants }:
+  Required<Pick<CompactProductCardProps, "quantity">> & Pick<CompactProductCardProps, "item" | "onAddToCart" | "onUpdateQuantity" | "onShowVariants">
+  & { outOfStock: boolean; options: number }) {
   const t = useStrings("catalog");
-  const increment = () => onAddToCart(item);
-  const decrement = () => onUpdateQuantity(item.id, quantity - 1);
+  const choose = options > 1 ? onShowVariants : undefined;
+  const increment = choose ?? (() => onAddToCart(item));
+  const decrement = choose ?? (() => onUpdateQuantity(item.id, quantity - 1));
   if (quantity > 0) {
     return (
       <View style={styles.stepper}>
@@ -80,26 +70,27 @@ function CompactControl({ item, quantity, outOfStock, onAddToCart, onUpdateQuant
       disabled={outOfStock}
       activeOpacity={0.8}
       hitSlop={HIT_SLOP}
-      accessibilityLabel={t.addToCartLabel}
+      accessibilityLabel={choose ? t.addChooseSize(options) : t.addToCartLabel}
     >
       <Text style={[styles.addText, outOfStock && styles.addTextDisabled]}>{t.addBtn}</Text>
+      {choose && !outOfStock && <Text style={styles.optionsText} numberOfLines={1}>{t.options(options)}</Text>}
     </TouchableOpacity>
   );
 }
 
-function CompactImage({ item, primaryId, outOfStock, wished, onHeart, pager }: {
-  item: StoreProduct; primaryId: string; outOfStock: boolean; wished?: boolean; onHeart?: () => void; pager?: React.ReactNode;
+function CompactImage({ item, primaryId, outOfStock, wished, onHeart }: {
+  item: StoreProduct; primaryId: string; outOfStock: boolean; wished?: boolean; onHeart?: () => void;
 }) {
   const t = useStrings("catalog");
   const tc = useStrings("common");
   const uri = sizeImage(item, primaryId);
   return (
     <View style={styles.imageContainer}>
-      {pager ?? (uri ? (
+      {uri ? (
         <Image source={{ uri }} style={styles.image} resizeMode="contain" />
       ) : (
         <Text style={styles.noImageLetter}>{item.product.name.charAt(0)}</Text>
-      ))}
+      )}
       {item.product.foodType && <FoodTypeMark foodType={item.product.foodType} />}
       {item.product.isBestseller && <BestsellerBadge />}
       {outOfStock && (
@@ -114,31 +105,24 @@ function CompactImage({ item, primaryId, outOfStock, wished, onHeart, pager }: {
   );
 }
 
-// Sizes sit as chips where a single-size card shows its pack size; picking one switches the card to that pack
-function CompactDetails({ item, sizes, onSelectSize, onMoreSizes, isMember, sponsored }: {
-  item: StoreProduct; sizes: StoreProduct[]; onSelectSize: (id: string) => void; onMoreSizes?: () => void; isMember?: boolean; sponsored: boolean;
+// The pack size shown; other sizes are picked from ADD's size sheet
+function CompactDetails({ item, sizes, isMember, sponsored, aisleLink }: {
+  item: StoreProduct; sizes: StoreProduct[]; isMember?: boolean; sponsored: boolean; aisleLink?: boolean;
 }) {
   const { getLocalizedName } = useLanguage();
-  const { shown, struck } = resolvePrices(item, isMember);
-  const discount = discountLine(item);
+  const deal = cardDeal(item, !!isMember);
+  const discount = useDealLabel()(deal);
   const saving = packSaving(item, sizes);
   const rated = (item.product.reviewCount ?? 0) > 0 && (item.product.averageRating ?? 0) > 0;
   return (
     <>
       {sponsored ? <AdBadge /> : item.brandPick && <BrandPickBadge pick={item.brandPick} />}
-      {sizes.length > 1 ? (
-        <SizeChips
-          sizes={sizes} selectedId={item.id} maxChips={maxChips(COMPACT_CARD_WIDTH)}
-          onSelect={onSelectSize} onMore={onMoreSizes} style={styles.inlineChips}
-        />
-      ) : (
-        <Text style={styles.unit} numberOfLines={1}>{item.variant.name}</Text>
-      )}
+      <Text style={styles.unit} numberOfLines={1}>{item.variant.name}</Text>
       <View style={styles.priceRow}>
-        <Text style={styles.price} numberOfLines={1}>{"₹"}{shown.toFixed(0)}</Text>
-        {struck != null && <Text style={styles.mrp}>{"₹"}{struck.toFixed(0)}</Text>}
+        <Text style={[styles.price, deal.highlight && styles.highlight]} numberOfLines={1}>{"₹"}{deal.shown.toFixed(0)}</Text>
+        {deal.struck != null && <Text style={styles.mrp}>{"₹"}{deal.struck.toFixed(0)}</Text>}
       </View>
-      <UnitPrice price={shown} variant={item.variant} />
+      <UnitPrice price={deal.shown} variant={item.variant} />
       {discount && <Text style={styles.discount}>{discount}</Text>}
       {saving && <Text style={styles.saving}>{saving}</Text>}
       <Text style={styles.name} numberOfLines={3}>{getLocalizedName(item.product)}</Text>
@@ -149,6 +133,7 @@ function CompactDetails({ item, sizes, onSelectSize, onMoreSizes, isMember, spon
           <Text style={styles.ratingCount}>({item.product.reviewCount})</Text>
         </View>
       )}
+      {aisleLink && <AisleLink subcategory={item.product.subcategory} />}
     </>
   );
 }
@@ -156,9 +141,8 @@ function CompactDetails({ item, sizes, onSelectSize, onMoreSizes, isMember, spon
 export function CompactProductCard(props: CompactProductCardProps) {
   const { storeId, onToggleWishlist, isWishlisted } = props;
   const sizes = bySize(props.variants ?? [props.item]);
-  const [selectedId, setSelectedId] = useState(props.item.id);
-  // The chosen size drives the photo, price and ADD; it starts on the cheapest (the list's primary)
-  const item = sizes.find((s) => s.id === selectedId) ?? props.item;
+  // The card shows the cheapest size (the list's primary); the rest are a tap on ADD away
+  const item = props.item;
   const quantity = props.quantityOf?.(item.id) ?? props.quantity ?? 0;
   const available = item.availableStock ?? (item.stock - (item.reservedStock ?? 0));
   const heartTapped = useRef(false);
@@ -178,26 +162,20 @@ export function CompactProductCard(props: CompactProductCardProps) {
       <CompactImage
         item={item}
         primaryId={props.item.id}
-        pager={sizes.length > 1 ? (
-          <SizePager
-            sizes={sizes} primaryId={props.item.id} index={sizes.indexOf(item)} width={TILE_SIZE - 8}
-            onIndex={(i) => setSelectedId(sizes[i].id)} onPress={openProduct}
-          />
-        ) : undefined}
         outOfStock={available <= 0}
         wished={isWishlisted}
         onHeart={onToggleWishlist && (() => { heartTapped.current = true; onToggleWishlist(item.product.id); })}
       />
       <View style={styles.controlOverlay}>
         <CompactControl
-          item={item} quantity={quantity} outOfStock={available <= 0}
-          onAddToCart={props.onAddToCart} onUpdateQuantity={props.onUpdateQuantity}
+          item={item} quantity={quantity} outOfStock={available <= 0} options={sizes.length}
+          onAddToCart={props.onAddToCart} onUpdateQuantity={props.onUpdateQuantity} onShowVariants={props.onShowVariants}
         />
       </View>
       <View style={styles.content}>
         <CompactDetails
-          item={item} sizes={sizes} onSelectSize={setSelectedId} onMoreSizes={props.onShowVariants} isMember={props.isMember}
-          sponsored={!!props.item.sponsored}
+          item={item} sizes={sizes} isMember={props.isMember}
+          sponsored={!!props.item.sponsored} aisleLink={props.aisleLink}
         />
       </View>
     </TouchableOpacity>
@@ -222,16 +200,13 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff", justifyContent: "center", alignItems: "center", zIndex: 2,
   },
   controlOverlay: { position: "absolute", right: 6, top: 6 + TILE_SIZE - CONTROL_HEIGHT / 2, zIndex: 3 },
-  content: { paddingHorizontal: 8, paddingTop: CONTROL_HEIGHT / 2 + 2, paddingBottom: 8 },
-  unit: { fontFamily: fonts.medium, fontSize: 11, lineHeight: 26, color: colors.textSecondary },
-  // Same chips as the photo overlay on larger cards, laid inline in the details
-  inlineChips: {
-    position: "relative", right: 0, bottom: 0, alignSelf: "flex-start", backgroundColor: "#f1f5f9",
-    shadowOpacity: 0, elevation: 0,
-  },
-  priceRow: { flexDirection: "row", alignItems: "baseline", gap: 4, marginTop: 4 },
+  content: { paddingHorizontal: 8, paddingTop: 4, paddingBottom: 8 },
+  // Sits beside the lower half of ADD (which overhangs the photo), so it keeps clear of the button
+  unit: { fontFamily: fonts.medium, fontSize: 11, lineHeight: 14, color: colors.textSecondary, marginRight: CONTROL_WIDTH },
+  priceRow: { flexDirection: "row", alignItems: "baseline", gap: 4, marginTop: CONTROL_HEIGHT / 2 - 12 },
   price: { fontFamily: fonts.extrabold, fontSize: 14, color: colors.text },
   mrp: { fontFamily: fonts.medium, fontSize: 11, color: "#94a3b8", textDecorationLine: "line-through" },
+  highlight: { backgroundColor: colors.salePill, paddingHorizontal: 4, borderRadius: 4 },
   discount: { fontFamily: fonts.bold, fontSize: 10.5, color: "#2563eb", marginTop: 1 },
   saving: { fontFamily: fonts.bold, fontSize: 9.5, color: "#15803d", marginTop: 1 },
   name: { fontFamily: fonts.semibold, fontSize: 12, lineHeight: 15, color: colors.text, marginTop: 3 },
@@ -244,7 +219,8 @@ const styles = StyleSheet.create({
     borderRightWidth: 3, borderBottomWidth: 3,
   },
   addBtnDisabled: { borderColor: colors.border, backgroundColor: colors.surface },
-  addText: { fontFamily: fonts.extrabold, fontSize: 12, color: colors.primary, letterSpacing: 0.3 },
+  addText: { fontFamily: fonts.extrabold, fontSize: 12, lineHeight: 14, color: colors.primary, letterSpacing: 0.3 },
+  optionsText: { fontFamily: fonts.medium, fontSize: 8, lineHeight: 10, color: colors.textSecondary },
   addTextDisabled: { color: "#94a3b8" },
   stepper: {
     flexDirection: "row", alignItems: "center", justifyContent: "space-between",

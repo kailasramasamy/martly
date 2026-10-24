@@ -1,5 +1,5 @@
 import {
-  HOME_ROW_MAX_PRODUCTS, SECTION_COLLECTION, SectionHeaderStyle, TabRailStyle, type HomeSectionType,
+  SECTION_COLLECTION, SectionHeaderStyle, TabRailStyle, type HomeSectionType,
 } from "@martly/shared/constants";
 import { homeSectionConfigSchemas, homeSectionItemsSchema, type HomeSectionItemsInput } from "@martly/shared/schemas";
 import type { HomeSectionRecord } from "./types";
@@ -53,7 +53,6 @@ export interface FormValues {
   isActive: boolean;
   headerStyle: SectionHeaderStyle;
   tint: string;
-  maxProducts: string;
   tabStyle: TabRailStyle;
   items: ItemDraft[];
   headline: string;
@@ -72,7 +71,7 @@ const str = (v: unknown) => (typeof v === "string" ? v : "");
 export function emptyForm(): FormValues {
   return {
     type: null, title: "", subtitle: "", collectionId: null, isActive: true,
-    headerStyle: SectionHeaderStyle.PLAIN, tint: "", maxProducts: String(HOME_ROW_MAX_PRODUCTS),
+    headerStyle: SectionHeaderStyle.PLAIN, tint: "",
     tabStyle: TabRailStyle.ICON_CARD, items: [], headline: "", bands: DEFAULT_BANDS.map((b) => ({ ...b, key: newKey() })),
     brandId: null, departmentIds: [],
   };
@@ -90,7 +89,6 @@ export function sectionToForm(section: HomeSectionRecord): FormValues {
     isActive: section.isActive,
     headerStyle: (c.headerStyle as SectionHeaderStyle) ?? base.headerStyle,
     tint: str(c.tint),
-    maxProducts: c.maxProducts ? String(c.maxProducts) : base.maxProducts,
     tabStyle: (c.tabStyle as TabRailStyle) ?? base.tabStyle,
     items: (section.items ?? []).map((i) => ({ key: newKey(), label: i.label, translations: i.translations ?? undefined, collectionId: i.collectionId, imageUrl: i.imageUrl, subcategoryIds: i.subcategoryIds, wide: i.wide })),
     headline: str(c.headline),
@@ -105,7 +103,7 @@ function configDraft(type: HomeSectionType, v: FormValues, stored: Record<string
   const tint = v.tint.trim() || undefined;
   switch (type) {
     case "PRODUCT_ROW":
-      return { ...stored, headerStyle: v.headerStyle, tint, maxProducts: Number(v.maxProducts) };
+      return { ...stored, headerStyle: v.headerStyle, tint };
     case "TABBED_ROW":
       return { ...stored, tabStyle: v.tabStyle, tint };
     case "PRICE_BAND_DEALS":

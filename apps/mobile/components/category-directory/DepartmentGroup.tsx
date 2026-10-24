@@ -16,10 +16,14 @@ const GAP = 10;
 const COLUMNS = 4;
 const WIDTH = Dimensions.get("window").width - H_PADDING * 2;
 const SQUARE_SIZE = Math.floor((WIDTH - GAP * (COLUMNS - 1)) / COLUMNS);
-const WIDE_WIDTH = Math.floor((WIDTH - GAP) / 2);
-const WIDE_HEIGHT = 96;
-// Each department takes the next soft tint, so neighbouring groups read apart
-export const DIRECTORY_TINTS = ["#fef3c7", "#e0f2fe", "#fce7f3", "#dcfce7", "#ede9fe", "#ffedd5"];
+// A touch taller than wide, so the category art stands up in it
+const TILE_HEIGHT = Math.round(SQUARE_SIZE * 1.1);
+// Breathing room around the art, so it fills most of the tile without crowding its edges
+const ART_INSET = 4;
+// Rows sit further apart than tiles side by side, so each label reads with the picture above it
+const ROW_GAP = 16;
+// One quiet tile colour for every department, so the category art does the talking
+const TILE_BACKGROUND = "#e8f1f1";
 
 const openNode = (id: string) => router.push({ pathname: "/category/[id]", params: { id } });
 
@@ -32,21 +36,7 @@ function squareRows(tiles: Tile[], maxRows?: number) {
   return full === 0 ? [tiles] : chunk(tiles.slice(0, full * COLUMNS), COLUMNS);
 }
 
-function WideTile({ tile, label, tint }: { tile: Tile; label: string; tint: string }) {
-  return (
-    <Pressable
-      onPress={() => openNode(tile.categoryId)}
-      accessibilityRole="button"
-      accessibilityLabel={label}
-      style={({ pressed }) => [styles.wide, { backgroundColor: tint }, pressed && styles.pressed]}
-    >
-      <Text style={styles.wideLabel} numberOfLines={3}>{label}</Text>
-      {tile.imageUrl ? <Image source={{ uri: tile.imageUrl }} style={styles.wideImage} resizeMode="contain" /> : null}
-    </Pressable>
-  );
-}
-
-function SquareTile({ tile, label, tint }: { tile: Tile; label: string; tint: string }) {
+function SquareTile({ tile, label }: { tile: Tile; label: string }) {
   return (
     <Pressable
       onPress={() => openNode(tile.categoryId)}
@@ -54,7 +44,7 @@ function SquareTile({ tile, label, tint }: { tile: Tile; label: string; tint: st
       accessibilityLabel={label}
       style={({ pressed }) => [styles.square, pressed && styles.pressed]}
     >
-      <View style={[styles.squareArt, { backgroundColor: tint }]}>
+      <View style={styles.squareArt}>
         {tile.imageUrl
           ? <Image source={{ uri: tile.imageUrl }} style={styles.squareImage} resizeMode="contain" />
           : <Ionicons name={getCategoryIcon(tile.name)} size={28} color={colors.primary} />}
@@ -66,19 +56,17 @@ function SquareTile({ tile, label, tint }: { tile: Tile; label: string; tint: st
 
 interface GroupProps {
   group: Group;
-  tint: string;
-  /** Square rows shown past the wide tiles; unset shows every row */
+  /** Rows shown; unset shows every row */
   maxRows?: number;
 }
 
-/** A department heading with "See all", its wide tiles two to a row, then its other categories four to a row */
-export function DepartmentGroup({ group, tint, maxRows }: GroupProps) {
+/** A department heading with "See all", then its categories four to a row */
+export function DepartmentGroup({ group, maxRows }: GroupProps) {
   const c = useStrings("common");
   const t = useStrings("home");
   const { getLocalizedName } = useLanguage();
   const name = getLocalizedName(group);
-  const wide = group.tiles.filter((t) => t.wide);
-  const rows = squareRows(group.tiles.filter((t) => !t.wide), maxRows);
+  const rows = squareRows(group.tiles, maxRows);
   return (
     <View style={styles.group}>
       <Pressable onPress={() => openNode(group.departmentId)} style={styles.head} accessibilityRole="link" accessibilityLabel={t.seeAllOf(name)}>
@@ -86,14 +74,9 @@ export function DepartmentGroup({ group, tint, maxRows }: GroupProps) {
         <Text style={styles.seeAll}>{c.seeAll}</Text>
         <Ionicons name="chevron-forward" size={14} color={colors.primary} />
       </Pressable>
-      {chunk(wide, 2).map((row) => (
-        <View key={row[0].categoryId} style={styles.row}>
-          {row.map((tile) => <WideTile key={tile.categoryId} tile={tile} label={getLocalizedName(tile)} tint={tint} />)}
-        </View>
-      ))}
       {rows.map((row) => (
         <View key={row[0].categoryId} style={styles.row}>
-          {row.map((tile) => <SquareTile key={tile.categoryId} tile={tile} label={getLocalizedName(tile)} tint={tint} />)}
+          {row.map((tile) => <SquareTile key={tile.categoryId} tile={tile} label={getLocalizedName(tile)} />)}
         </View>
       ))}
     </View>
@@ -101,22 +84,21 @@ export function DepartmentGroup({ group, tint, maxRows }: GroupProps) {
 }
 
 const styles = StyleSheet.create({
-  group: { gap: GAP },
+  group: { gap: ROW_GAP },
   head: { flexDirection: "row", alignItems: "center", minHeight: 44, gap: 2 },
   department: { flex: 1, fontFamily: fonts.extrabold, fontSize: 17, color: colors.text, letterSpacing: -0.3 },
   seeAll: { fontFamily: fonts.bold, fontSize: 13, color: colors.primary },
   row: { flexDirection: "row", gap: GAP },
   pressed: { opacity: 0.85 },
-  wide: { width: WIDE_WIDTH, height: WIDE_HEIGHT, borderRadius: 16, overflow: "hidden", padding: 12 },
-  wideLabel: { width: "62%", fontFamily: fonts.extrabold, fontSize: 14, lineHeight: 18, color: colors.text },
-  // Anchored to the corner and slightly oversized, so the pack sits into the tile rather than floating in it
-  wideImage: { position: "absolute", right: -4, bottom: -6, width: WIDE_HEIGHT - 8, height: WIDE_HEIGHT - 8 },
   square: { width: SQUARE_SIZE, gap: 6 },
   squareArt: {
-    width: SQUARE_SIZE, height: SQUARE_SIZE, borderRadius: 16, padding: 6, overflow: "hidden",
+    width: SQUARE_SIZE, height: TILE_HEIGHT, borderRadius: 16, padding: ART_INSET, overflow: "hidden", backgroundColor: TILE_BACKGROUND,
     alignItems: "center", justifyContent: "center",
   },
   squareImage: { width: "100%", height: "100%" },
   // The label borrows half the gap on each side, so a long single word (common in Tamil) fits instead of splitting
-  squareLabel: { marginHorizontal: -GAP / 2, fontFamily: fonts.semibold, fontSize: 11.5, lineHeight: 14, color: colors.text, textAlign: "center" },
+  // Two lines are always reserved, so a row's labels line up whether they wrap or not
+  squareLabel: {
+    marginHorizontal: -GAP / 2, minHeight: 34, fontFamily: fonts.semibold, fontSize: 13, lineHeight: 17, color: colors.text, textAlign: "center",
+  },
 });

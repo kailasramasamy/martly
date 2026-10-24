@@ -15,6 +15,9 @@ const H_PADDING = 16;
 // 4 tiles per row inside the padded section card
 const TILE_SIZE = Math.floor((SCREEN_WIDTH - H_PADDING * 2 - 32 - 12 * 3) / 4);
 
+// The bestseller cards' neutral grey with a touch of teal, so Home's first blocks read as one set
+const TILE_TINT = "#e8f1f1";
+
 const openDepartment = (id: string) => router.push({ pathname: "/category/[id]", params: { id } });
 
 /** "Shop by Category": every department as a tile */
@@ -41,6 +44,7 @@ export const DepartmentGridSection = memo(function DepartmentGridSection({ secti
             fallbackIcon={getCategoryIcon(dept.name)}
             size={TILE_SIZE}
             onPress={() => openDepartment(dept.id)}
+            tint={TILE_TINT}
           />
         ))}
       </View>

@@ -15,7 +15,7 @@ Category strip, mid-page, cart upsell and popup banners were removed on 2026-10-
 
 **Displayed on:** Home screen — top of page, auto-rotating full-width carousel with dot indicators.
 
-Full-width auto-rotating carousel at top of home screen. Bold product photography, large text, vibrant backgrounds.
+Full-width auto-rotating carousel on Home, just below the category directory. Bold product photography, large text, vibrant backgrounds.
 
 | # | Title | Subtitle | Action Type | Action Target |
 |---|-------|----------|-------------|---------------|

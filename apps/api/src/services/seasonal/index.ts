@@ -85,4 +85,22 @@ export async function regenerateBanner(prisma: PrismaClient, collection: BannerS
   return art;
 }
 
+// Aisles named in a store special's art direction, so the counter shows what the range actually holds
+const STORE_SPECIAL_AISLES = 4;
+
+/** Art direction for a store's own range (its bakery, its sweets), which has none from the festival curator */
+export async function storeSpecialArt(prisma: PrismaClient, collection: { id: string; title: string }) {
+  const items = await prisma.collectionItem.findMany({
+    where: { collectionId: collection.id, product: { isActive: true } },
+    orderBy: { sortOrder: "asc" },
+    select: { product: { select: { subcategory: { select: { name: true } } } } },
+  });
+  const aisles = [...new Set(items.flatMap((i) => i.product.subcategory?.name ?? []))].slice(0, STORE_SPECIAL_AISLES);
+  return [
+    `A neighbourhood store's own counter for "${collection.title}", freshly made in-store that morning.`,
+    aisles.length ? `Show an inviting, abundant spread of ${aisles.join(", ").toLowerCase()} on wooden trays and a glass counter.` : "",
+    "Warm morning light, homely and appetising, Indian neighbourhood shop feel; no brand logos or packaging.",
+  ].filter(Boolean).join(" ");
+}
+
 export { regenerateHero } from "./hero.js";

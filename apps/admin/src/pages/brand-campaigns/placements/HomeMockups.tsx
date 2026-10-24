@@ -6,17 +6,17 @@ import { T, TEXT, V, WEIGHT, row, type Style } from "./ui";
 const pad: Style = { padding: "8px 8px 0", gap: 5 };
 const onBrand: Style = { backgroundColor: "rgba(255,255,255,0.85)" };
 
-/** Home with the carousel slide highlighted, right under the festival hero */
+/** Home with the carousel slide highlighted, just below the category directory */
 export function HomeCarouselMockup() {
   return (
     <PhoneFrame>
       <HomeHeader />
       <FestiveHero />
       <V style={pad}>
-        <Highlight style={{ marginTop: 6 }}><BrandSlide /></Highlight>
-        <Dots />
         <SectionTitle />
         <TileRow />
+        <Highlight style={{ marginTop: 6 }}><BrandSlide /></Highlight>
+        <Dots />
       </V>
     </PhoneFrame>
   );

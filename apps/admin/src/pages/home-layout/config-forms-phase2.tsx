@@ -43,15 +43,18 @@ interface ItemLimits {
   min: number;
   max: number;
   noun: string;
+  /** What each item opens: a collection (the default), or exactly one aisle (theme band tiles) */
+  opens?: "COLLECTION" | "AISLE";
 }
 
 /** Validates the item list the way the items endpoint will, or returns the problem */
-export function parseItems(items: unknown, { min, max, noun }: ItemLimits): { items: ItemInput[] } | { error: string } {
+export function parseItems(items: unknown, { min, max, noun, opens = "COLLECTION" }: ItemLimits): { items: ItemInput[] } | { error: string } {
   const list = (Array.isArray(items) ? items : []).map((t) => ({ ...t, imageUrl: t.imageUrl || undefined }));
   if (list.length < min || list.length > max) return { error: `Add ${min} to ${max} ${noun}s` };
   const parsed = homeSectionItemsSchema.safeParse({ items: list });
   if (!parsed.success) return { error: parsed.error.issues.map((i) => `${noun} ${Number(i.path[1]) + 1}: ${i.message}`).join("; ") };
-  if (list.some((t) => !t.collectionId)) return { error: `Every ${noun} needs a collection` };
+  if (opens === "COLLECTION" && list.some((t) => !t.collectionId)) return { error: `Every ${noun} needs a collection` };
+  if (opens === "AISLE" && list.some((t) => t.subcategoryIds?.length !== 1)) return { error: `Every ${noun} needs one aisle` };
   return { items: parsed.data.items };
 }
 

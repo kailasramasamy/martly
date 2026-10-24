@@ -28,6 +28,8 @@ interface ProductListProps extends PassThroughProps {
    * and ADD adds it at once; the size line opens the size sheet instead of ADD.
    */
   picks?: Map<string, number>;
+  /** Each card links to its subcategory's aisle */
+  aisleLink?: boolean;
 }
 
 type GridRowItem = { key: string; products?: StoreProduct[] };
@@ -49,7 +51,7 @@ function buildGridRows(products: StoreProduct[], columns: number, afterRows: num
  * which supplies cart/wishlist actions and the size picker.
  */
 export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(function ProductList(
-  { products, layout, cardWidth, sortBy, numColumns = 2, midSlot, elevated, picks, contentContainerStyle, ...listProps },
+  { products, layout, cardWidth, sortBy, numColumns = 2, midSlot, elevated, picks, aisleLink, contentContainerStyle, ...listProps },
   ref,
 ) {
   const actions = useProductActions();
@@ -84,11 +86,12 @@ export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(
         onToggleWishlist={actions.toggleWishlist}
         isMember={actions.isMember}
         elevated={elevated}
+        aisleLink={aisleLink}
         preferredId={picks && variants.find((v) => picks.has(v.id))?.id}
         addCount={picks && ((sp) => picks.get(sp.id) ?? 1)}
       />
     );
-  }, [variantsByProductId, actions, layout, cardWidth, numColumns, elevated, picks]);
+  }, [variantsByProductId, actions, layout, cardWidth, numColumns, elevated, picks, aisleLink]);
 
   const renderItem = useCallback(({ item }: { item: StoreProduct }) => renderCard(item), [renderCard]);
 

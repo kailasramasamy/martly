@@ -162,6 +162,7 @@ enum CollectionKind {
   OCCASION
   SEASON
   PROMO
+  STORE_SPECIAL
 }
 
 enum PromoStatus {
@@ -2667,6 +2668,9 @@ enum HomeSectionType {
   BRAND_CARD
   EXPLORE_GRID
   STORE_GRID
+  BESTSELLER_CATEGORIES
+  THEME_BAND
+  STORE_SPECIALS
 }
 
 /// One block on an organisation's Home, in display order; config holds per-type display settings

@@ -23,7 +23,7 @@ export async function pickProducts(prisma: PrismaClient, subcategoryNames: strin
 }
 
 interface CollectionSpec {
-  slug: string; title: string; subtitle: string; kind: "STANDARD" | "PROMO"; groups: string[][];
+  slug: string; title: string; subtitle: string; kind: "STANDARD" | "PROMO" | "STORE_SPECIAL"; groups: string[][];
   windowDays?: number; imageUrl?: string | null;
 }
 
@@ -67,4 +67,31 @@ export async function ensurePromo(prisma: PrismaClient, organizationId: string, 
     discountType: "PERCENTAGE" as const, discountValue: percent, startsAt: collection.startsAt, endsAt: collection.endsAt, collectionId: collection.id,
   };
   await prisma.promo.upsert({ where: { collectionId: collection.id }, create: data, update: data });
+}
+
+/**
+ * Puts a section right after the first section matching `after` (by title, else type) in the org's saved layout,
+ * creating or updating it by title, then renumbers the layout. Idempotent: a rerun moves it back to the same place.
+ */
+export async function placeSection(
+  prisma: PrismaClient, organizationId: string, after: string,
+  section: { type: string; title: string; subtitle?: string; collectionId?: string; config: object; items?: object[] },
+) {
+  await prisma.$transaction(async (tx) => {
+    const existing = await tx.homeSection.findFirst({ where: { organizationId, title: section.title } });
+    const data = { type: section.type as never, title: section.title, subtitle: section.subtitle, collectionId: section.collectionId, config: section.config, isActive: true };
+    const saved = existing
+      ? await tx.homeSection.update({ where: { id: existing.id }, data })
+      : await tx.homeSection.create({ data: { ...data, organizationId } });
+    if (section.items) {
+      await tx.homeSectionItem.deleteMany({ where: { sectionId: saved.id } });
+      await tx.homeSectionItem.createMany({ data: section.items.map((item, sortOrder) => ({ ...item, sectionId: saved.id, sortOrder })) as never });
+    }
+    const rows = (await tx.homeSection.findMany({ where: { organizationId }, orderBy: [{ sortOrder: "asc" }, { id: "asc" }] }))
+      .filter((r) => r.id !== saved.id);
+    const anchor = rows.findIndex((r) => r.title === after || r.type === after);
+    if (anchor < 0) throw new Error(`No section "${after}" to place "${section.title}" after`);
+    const ordered = [...rows.slice(0, anchor + 1), saved, ...rows.slice(anchor + 1)];
+    for (const [sortOrder, row] of ordered.entries()) await tx.homeSection.update({ where: { id: row.id }, data: { sortOrder } });
+  }, { timeout: 30_000 });
 }

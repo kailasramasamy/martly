@@ -1,11 +1,12 @@
 import type { HomeSectionType } from "@martly/shared/constants";
 import type { LayoutEntry } from "./types.js";
 
-// The order for organisations that have not saved a layout of their own: hero banners (pinned there for every layout,
-// as they carry paid brand banners) and offers right under the festive top, then promotions and the shopper's own picks
+// The order for organisations that have not saved a layout of their own: the festive top and offers, then the best-selling
+// categories, the shopper's own repeat buys and the department grid so shoppers can shop straight away, then the hero
+// banners (pinned after the department grid for every layout, as they carry paid brand banners), promotions and the rest
 const DEFAULT_ORDER: HomeSectionType[] = [
-  "FESTIVE_HERO", "HERO_BANNERS", "OFFERS", "MEMBER_CHIPS", "LIVE_CAMPAIGNS", "BUY_AGAIN", "RECENTLY_VIEWED", "DEPARTMENT_GRID",
-  "BRAND_RAIL", "BRAND_POSTERS", "PLUS_PROMO", "OTHER_COLLECTIONS", "TIME_PICKS", "DEALS", "RECIPES",
+  "FESTIVE_HERO", "OFFERS", "MEMBER_CHIPS", "BESTSELLER_CATEGORIES", "BUY_AGAIN", "DEPARTMENT_GRID", "HERO_BANNERS",
+  "STORE_SPECIALS", "LIVE_CAMPAIGNS", "RECENTLY_VIEWED", "BRAND_RAIL", "BRAND_POSTERS", "PLUS_PROMO", "OTHER_COLLECTIONS", "TIME_PICKS", "DEALS", "RECIPES",
 ];
 
 export const DEFAULT_LAYOUT: LayoutEntry[] = DEFAULT_ORDER.map((type) => ({

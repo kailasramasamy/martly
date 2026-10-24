@@ -9,7 +9,7 @@ export async function categoryDirectoryPage(prisma: ResolveContext["prisma"], st
   const ctx: ResolveContext = { prisma, store, userId, now: new Date() };
   const storeGrid = (await loadLayout(ctx)).find((entry) => entry.type === "STORE_GRID");
   const [groups, stores] = await Promise.all([
-    directoryGroups(ctx, [], 0),
+    directoryGroups(ctx, []),
     storeGrid ? tileGrid(ctx, storeGrid) : null,
   ]);
   return { groups, stores: stores as TileGridSection | null };

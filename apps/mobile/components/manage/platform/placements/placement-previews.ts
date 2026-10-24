@@ -8,7 +8,7 @@ import { TabSlotMockup } from "./TabSlotMockup";
 export interface PlacementMockup { render: ComponentType; caption: string }
 export interface PlacementPreview { title: string; mockups: PlacementMockup[] }
 
-const CAROUSEL: PlacementMockup = { render: HomeCarouselMockup, caption: "Leads the Home carousel, right under the festival hero." };
+const CAROUSEL: PlacementMockup = { render: HomeCarouselMockup, caption: "Leads the Home carousel, just below the category directory." };
 
 /** What a brand package buys and where the shopper sees it; null when nothing is shown */
 export function previewFor(kind: AdProductKind, placement: string | null): PlacementPreview | null {

@@ -1,5 +1,5 @@
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { AI_IMAGE_COST, Permission, SECTION_COLLECTION } from "@martly/shared/constants";
+import { AI_IMAGE_COST, Permission, SECTION_COLLECTION, THEME_BAND_MAX_TILES } from "@martly/shared/constants";
 import {
   createHomeSectionSchema, homeSectionArtSchema, homeSectionItemsSchema, parseHomeSectionConfig, reorderHomeSectionsSchema, updateHomeSectionSchema,
 } from "@martly/shared/schemas";
@@ -131,6 +131,10 @@ export async function homeLayoutRoutes(app: FastifyInstance) {
     const { items } = homeSectionItemsSchema.parse(request.body);
     if ([...GRID_TYPES, "TABBED_ROW"].includes(section.type) && items.some((i) => !i.collectionId)) {
       throw badRequest("Every tile needs a collection to open");
+    }
+    if (section.type === "THEME_BAND") {
+      if (items.length > THEME_BAND_MAX_TILES) throw badRequest(`A theme band holds at most ${THEME_BAND_MAX_TILES} tiles`);
+      if (items.some((i) => i.subcategoryIds.length !== 1 || i.collectionId)) throw badRequest("Each band tile opens exactly one aisle");
     }
     await assertCollections(section.organizationId, items.map((i) => i.collectionId));
     await app.prisma.$transaction([

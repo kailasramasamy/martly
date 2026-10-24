@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Button, Form, Input, Select, Space, Switch, Typography } from "antd";
+import { Button, ColorPicker, Form, Input, Select, Space, Switch, Typography } from "antd";
 import type { SelectProps } from "antd";
 import { DeleteOutlined, PlusOutlined } from "@ant-design/icons";
+import { THEME_BAND_MAX_TILES, THEME_BAND_MIN_TILES } from "@martly/shared/constants";
 import { axiosInstance } from "../../providers/data-provider";
 import { ImageUpload } from "../../components/ImageUpload";
 
@@ -73,5 +74,47 @@ export const TileGridFields = ({ collectionProps, wideHint }: TileGridProps) => 
         </Form.Item>
       )}
     </Form.List>
+  );
+};
+
+const colorField = { getValueFromEvent: (c: { toHexString: () => string }) => c.toHexString() };
+// A band tile opens one aisle, stored as the item's one-entry subcategoryIds
+const oneAisle = { getValueProps: (ids?: string[]) => ({ value: ids?.[0] }), normalize: (id?: string) => (id ? [id] : []) };
+
+/** A theme band: its tint and art, then a row of tiles that each open one aisle */
+export const ThemeBandFields = () => {
+  const subcategories = useSubcategories();
+  return (
+    <>
+      <Form.Item label="Band colour" name={["config", "tint"]} rules={[{ required: true, message: "Pick a soft colour" }]} {...colorField}>
+        <ColorPicker showText disabledAlpha />
+      </Form.Item>
+      <Form.Item label="Art" name={["config", "imageUrl"]} extra="A cut-out picture for the band's right side" {...urlField}>
+        <ImageUpload />
+      </Form.Item>
+      <Form.List name="items">
+        {(fields, { add, remove }) => (
+          <Form.Item label="Tiles" extra={`${THEME_BAND_MIN_TILES} to ${THEME_BAND_MAX_TILES} aisles. Leave the image empty to use the aisle's own picture.`}>
+            {fields.map(({ key, name }) => (
+              <div key={key} style={{ marginBottom: 12 }}>
+                <Space align="start" wrap>
+                  <Form.Item name={[name, "subcategoryIds"]} rules={[{ required: true, message: "Pick an aisle" }]} style={{ marginBottom: 0 }} {...oneAisle}>
+                    <Select showSearch optionFilterProp="label" placeholder="Aisle" options={subcategories} style={{ width: 190 }} />
+                  </Form.Item>
+                  <Form.Item name={[name, "label"]} rules={[{ required: true, message: "Label" }]} style={{ marginBottom: 0 }}>
+                    <Input placeholder="Label" maxLength={40} style={{ width: 130 }} />
+                  </Form.Item>
+                  <Button icon={<DeleteOutlined />} danger disabled={fields.length <= THEME_BAND_MIN_TILES} onClick={() => remove(name)} />
+                </Space>
+                <Form.Item name={[name, "imageUrl"]} {...urlField} style={{ marginBottom: 0, marginTop: 4 }}>
+                  <ImageUpload />
+                </Form.Item>
+              </div>
+            ))}
+            <Button icon={<PlusOutlined />} disabled={fields.length >= THEME_BAND_MAX_TILES} onClick={() => add({ label: "", subcategoryIds: [], wide: false })}>Add tile</Button>
+          </Form.Item>
+        )}
+      </Form.List>
+    </>
   );
 };

@@ -27,7 +27,14 @@ function decodeCursor(cursor: string | undefined): Cursor {
 
 const encodeCursor = (cursor: Cursor) => Buffer.from(JSON.stringify(cursor)).toString("base64url");
 
-/** A product row or tabbed row takes the ad for the category most of its products are in, second in line */
+// The first `count` products of a list of size rows, every size of each kept
+function firstProducts<T extends { productId: string }>(rows: T[], count: number) {
+  const kept = new Set<string>();
+  return rows.filter((r) => (kept.has(r.productId) || (kept.size < count && kept.add(r.productId))));
+}
+
+/** A product row or tabbed row takes the ad for the category most of its products are in, second in line; a product
+ *  row is a grid of whole rows, so the ad takes a slot rather than adding one */
 async function withSponsored(ctx: ResolveContext, sections: ResolvedSection[], shown: Set<string>) {
   const ads = await liveSponsored(ctx.prisma, ctx.store);
   if (ads.length === 0) return sections;
@@ -42,7 +49,9 @@ async function withSponsored(ctx: ResolveContext, sections: ResolvedSection[], s
     }
     shown.add(ad.bannerId);
     const adRows = await withAllSizes(ctx.prisma, ctx.store.id, [{ productId: ad.productId }]);
-    out.push({ ...section, products: injectAd(products, adRows, ad) } as ResolvedSection);
+    const injected = injectAd(products, adRows, ad);
+    const shelf = section.type === "PRODUCT_ROW" ? firstProducts(injected, new Set(products.map((p) => p.productId)).size) : injected;
+    out.push({ ...section, products: shelf } as ResolvedSection);
   }
   return out;
 }
@@ -52,6 +61,7 @@ function mapProductLists(section: ResolvedSection, fn: (items: any[]) => any[]):
   const data = (section as { data?: Record<string, any> }).data;
   if ("products" in section) return { ...section, products: fn(section.products) } as ResolvedSection;
   if (section.type === "CAMPAIGN_CARD") return { ...section, highlights: fn(section.highlights) };
+  if (section.type === "STORE_SPECIALS") return { ...section, collections: section.collections.map((c) => ({ ...c, products: fn(c.products) })) };
   if (data?.products) return { ...section, data: { ...data, products: fn(data.products) } } as ResolvedSection;
   if (data?.categories) {
     return { ...section, data: { ...data, categories: data.categories.map((c: any) => ({ ...c, products: fn(c.products) })) } } as ResolvedSection;

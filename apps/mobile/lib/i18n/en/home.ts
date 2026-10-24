@@ -57,6 +57,8 @@ export const home = {
   shoppableRecipes: "Shoppable Recipes",
   recipesSubtitle: "Cook a meal, add all ingredients",
   shopByCategory: "Shop by Category",
+  bestsellers: "Bestsellers",
+  moreProducts: (n: number) => `+${n} more`,
   buyAgain: "Buy Again",
   buyAgainSubtitle: "Your frequently ordered items",
   smartReorder: "Smart reorder",

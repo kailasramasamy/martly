@@ -1,18 +1,28 @@
-import { FlatList, Image, Text, TouchableOpacity, View, StyleSheet } from "react-native";
+import { FlatList, Image, Pressable, Text, TouchableOpacity, View, StyleSheet } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { fonts, spacing } from "../../../constants/theme";
 import { ProductList } from "../../ProductList";
 import { useLanguage } from "../../../lib/language-context";
 import { useStrings } from "../../../lib/i18n/use-strings";
+import { useStore } from "../../../lib/store-context";
+import { openCollection } from "../../home/sections/context";
 import type { LandingCollection } from "../../../lib/types";
 
-// Festivals run warm (diya amber → marigold), seasons cool; text colours keep 4.5:1 on each tint
-const THEMES = {
-  OCCASION: { gradient: ["#fff7ed", "#ffedd5"] as const, accent: "#c2410c", ink: "#431407", kicker: "festivePicks" as const, icon: "sparkles" as const },
-  SEASON: { gradient: ["#f0fdfa", "#e0f2fe"] as const, accent: "#0f766e", ink: "#083344", kicker: "inSeason" as const, icon: "leaf" as const },
+// Festivals run warm (diya amber → marigold), seasons cool, a store's own range bakery-warm (cream → apricot); text
+// colours keep 4.5:1 on each tint
+type Theme = {
+  gradient: readonly [string, string];
+  accent: string;
+  ink: string;
+  kicker: "festivePicks" | "inSeason" | "madeAt";
+  icon: "sparkles" | "leaf" | "storefront";
 };
-type Theme = (typeof THEMES)[keyof typeof THEMES];
+const THEMES: Partial<Record<LandingCollection["kind"], Theme>> = {
+  OCCASION: { gradient: ["#fff7ed", "#ffedd5"], accent: "#c2410c", ink: "#431407", kicker: "festivePicks", icon: "sparkles" },
+  SEASON: { gradient: ["#f0fdfa", "#e0f2fe"], accent: "#0f766e", ink: "#083344", kicker: "inSeason", icon: "leaf" },
+  STORE_SPECIAL: { gradient: ["#f8d3a8", "#fff8ef"], accent: "#9a4a12", ink: "#3b1d08", kicker: "madeAt", icon: "storefront" },
+};
 
 interface OccasionSpotlightProps {
   collection: LandingCollection;
@@ -21,10 +31,13 @@ interface OccasionSpotlightProps {
 
 function Kicker({ theme, onPhoto }: { theme: Theme; onPhoto: boolean }) {
   const t = useStrings("search");
+  const { selectedStore } = useStore();
+  const { getLocalizedName } = useLanguage();
+  const label = theme.kicker === "madeAt" ? t.madeAt(selectedStore ? getLocalizedName(selectedStore) : "") : t[theme.kicker];
   return (
     <View style={[styles.badge, onPhoto ? styles.badgePhoto : { borderColor: theme.accent }]}>
       <Ionicons name={theme.icon} size={12} color={theme.accent} />
-      <Text style={[styles.kicker, { color: theme.accent }]}>{t[theme.kicker].toUpperCase()}</Text>
+      <Text style={[styles.kicker, { color: theme.accent }]}>{label.toUpperCase()}</Text>
     </View>
   );
 }
@@ -51,7 +64,12 @@ function AislePills({ collection, theme, onPress }: { collection: LandingCollect
 
 export function OccasionSpotlight({ collection, onSubcategory }: OccasionSpotlightProps) {
   const { language } = useLanguage();
-  const theme = collection.kind === "OCCASION" ? THEMES.OCCASION : THEMES.SEASON;
+  const tc = useStrings("common");
+  // A store's own range stays within itself: its aisles and "Shop all" open the collection, not the whole aisle with
+  // every brand in it
+  const own = collection.kind === "STORE_SPECIAL";
+  const openAisle = own ? (id: string) => openCollection(collection.id, [id]) : onSubcategory;
+  const theme = THEMES[collection.kind] ?? THEMES.SEASON!;
   const localized = language ? collection.translations?.[language] : undefined;
   const title = localized?.title || collection.title;
   const subtitle = localized?.subtitle || collection.subtitle;
@@ -73,19 +91,31 @@ export function OccasionSpotlight({ collection, onSubcategory }: OccasionSpotlig
         </View>
       ) : null}
       {showCopy ? (
-        <View style={styles.copy}>
+        <Pressable style={styles.copy} disabled={!own} onPress={() => openCollection(collection.id)} accessibilityRole={own ? "link" : undefined}>
           {imageUrl ? null : <Kicker theme={theme} onPhoto={false} />}
-          <Text style={[styles.title, { color: theme.ink }]} numberOfLines={2}>{title}</Text>
+          <View style={styles.titleRow}>
+            <Text style={[styles.title, styles.titleText, { color: theme.ink }]} numberOfLines={2}>{title}</Text>
+            {own ? (
+              <View style={styles.shopAll}>
+                <Text style={[styles.shopAllText, { color: theme.accent }]}>{tc.seeAll}</Text>
+                <Ionicons name="chevron-forward" size={14} color={theme.accent} />
+              </View>
+            ) : null}
+          </View>
           {subtitle ? <Text style={[styles.subtitle, { color: theme.ink }]} numberOfLines={2}>{subtitle}</Text> : null}
-        </View>
+        </Pressable>
       ) : null}
-      <AislePills collection={collection} theme={theme} onPress={onSubcategory} />
+      <AislePills collection={collection} theme={theme} onPress={openAisle} />
       <ProductList products={collection.products} layout="rail" />
     </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
+  titleRow: { flexDirection: "row", alignItems: "center", gap: 8 },
+  titleText: { flex: 1 },
+  shopAll: { flexDirection: "row", alignItems: "center", gap: 2, minHeight: 44 },
+  shopAllText: { fontFamily: fonts.bold, fontSize: 13 },
   card: { marginTop: spacing.md + 4, marginHorizontal: spacing.sm, paddingBottom: spacing.sm, borderRadius: 20, overflow: "hidden" },
   art: { aspectRatio: 2.1, padding: spacing.sm + 4, justifyContent: "flex-start", alignItems: "flex-start" },
   artBanner: { aspectRatio: 2 },

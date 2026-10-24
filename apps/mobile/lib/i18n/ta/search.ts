@@ -76,6 +76,7 @@ export const search: Strings<"search"> = {
   },
   festivePicks: "பண்டிகை தேர்வுகள்",
   inSeason: "இந்தப் பருவத்தில்",
+  madeAt: (store: string) => `${store} தயாரிப்பு`,
   filterProducts: "பொருட்களை வடிகட்டுங்கள்",
   noProductsAvailable: "பொருட்கள் எதுவும் இல்லை",
   searchAreaPlaceholder: "பகுதி, தெரு அல்லது அடையாளத்தைத் தேடுங்கள்",
