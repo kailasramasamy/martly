@@ -19,7 +19,7 @@ A **store special** is a collection of things a store makes or sources itself: i
 
 ## Demo data
 
-`npx tsx prisma/seed-store-bakery.ts` (point `DATABASE_URL` at the target DB) creates:
+`npx tsx prisma/seed-store-bakery.ts` (set `TARGET_DATABASE_URL` for another DB) creates:
 - the brand "Harur Fresh Bakes" and eight bakes listed at Harur Fresh Mart only, with painted photos
 - the collection "Fresh from our oven"
 - the store specials card on Home after "Regional pantry picks" (replacing the shelf an earlier run placed)

@@ -1,18 +1,17 @@
 /**
  * Three pastel theme bands for Demo Grocers' Home, spread between the shelves below the hero banners. Each tile opens
  * one aisle the store stocks; band art is painted once and reused on reruns unless --regen-art is passed.
- * Run: npx tsx prisma/seed-home-bands.ts [--regen-art]   (point DATABASE_URL at the target DB)
+ * Run: npx tsx prisma/seed-home-bands.ts [--regen-art]   (set TARGET_DATABASE_URL for another DB)
  */
 import dotenv from "dotenv";
 import { PrismaClient } from "../generated/prisma/client.js";
 import { paintArt, reusableArt } from "./seed-home-art.js";
 import { ORG_NAME, placeSection } from "./seed-home-collections.js";
 
-const databaseUrl = process.env.DATABASE_URL;
 dotenv.config({ override: true });
-if (databaseUrl) process.env.DATABASE_URL = databaseUrl;
 
-const prisma = new PrismaClient();
+// seed-home-art loads apps/api/.env (overriding DATABASE_URL) as it's imported, so another database is named apart
+const prisma = new PrismaClient({ datasourceUrl: process.env.TARGET_DATABASE_URL ?? process.env.DATABASE_URL });
 
 interface Band {
   title: string;

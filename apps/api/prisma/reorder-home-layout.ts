@@ -36,7 +36,7 @@ async function reorder(organizationId: string) {
       await tx.homeSection.update({ where: { id: row.id }, data: { sortOrder } });
     }
     console.log(`${organizationId}: ${ordered.filter((r) => r.isActive || moved.includes(r)).map((r) => r.title ?? r.type).join(" → ")}`);
-  });
+  }, { timeout: 60_000 });
 }
 
 async function main() {

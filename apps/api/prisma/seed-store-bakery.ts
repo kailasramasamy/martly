@@ -3,7 +3,7 @@
  * only), the "Fresh from our oven" collection with its banner, and Home's store specials card after Regional pantry
  * picks.
  * Product photos and the banner art are painted once (image model only) and reused on reruns. Safe to rerun.
- * Run: npx tsx prisma/seed-store-bakery.ts   (point DATABASE_URL at the target DB)
+ * Run: npx tsx prisma/seed-store-bakery.ts   (set TARGET_DATABASE_URL for another DB)
  */
 import dotenv from "dotenv";
 import { Prisma, PrismaClient } from "../generated/prisma/client.js";
@@ -11,11 +11,10 @@ import { storeSpecialArt } from "../src/services/seasonal/index.js";
 import { paintArt } from "./seed-home-art.js";
 import { ORG_NAME, STORE_ID, placeSection, upsertCollection } from "./seed-home-collections.js";
 
-const databaseUrl = process.env.DATABASE_URL;
 dotenv.config({ override: true });
-if (databaseUrl) process.env.DATABASE_URL = databaseUrl;
 
-const prisma = new PrismaClient();
+// seed-home-art loads apps/api/.env (overriding DATABASE_URL) as it's imported, so another database is named apart
+const prisma = new PrismaClient({ datasourceUrl: process.env.TARGET_DATABASE_URL ?? process.env.DATABASE_URL });
 
 const BRAND = { name: "Harur Fresh Bakes", slug: "harur-fresh-bakes" };
 const COLLECTION = { slug: "fresh-from-our-oven-harur", title: "Fresh from our oven", subtitle: "Baked every morning at Harur Fresh Mart" };
