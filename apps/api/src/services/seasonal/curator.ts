@@ -1,7 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import * as z from "zod/v4";
-import type { FestivalEvent } from "../../../generated/prisma/client.js";
+import type { CollectionKind, FestivalEvent } from "../../../generated/prisma/client.js";
 import type { SubcategoryCandidate } from "./candidates.js";
 
 const MODEL = "claude-sonnet-5-5";
@@ -9,7 +9,7 @@ const MIN_SUBCATEGORIES = 4;
 const MAX_SUBCATEGORIES = 12;
 
 const CurationSchema = z.object({
-  skip: z.boolean().describe("true only if the catalog cannot support a credible collection for this event"),
+  skip: z.boolean().describe("true only if the catalog cannot support a credible collection for this brief"),
   skipReason: z.string().describe("why it was skipped; empty string otherwise"),
   subcategoryIds: z.array(z.string()).describe(`${MIN_SUBCATEGORIES}-${MAX_SUBCATEGORIES} ids from the list, most relevant first`),
   title: z.string().describe("collection title, 2-4 words, e.g. 'Pongal Essentials'"),
@@ -20,15 +20,16 @@ const CurationSchema = z.object({
 });
 export type Curation = z.infer<typeof CurationSchema>;
 
-const SYSTEM = `You curate seasonal shelves for Martly, a grocery delivery app for neighbourhood stores in India.
-Given an upcoming festival or season and the subcategories the stores actually stock, choose what shoppers will
-genuinely buy for it: ritual and pooja needs, traditional cooking ingredients, sweets, gifting, decor, and the
-everyday items demand spikes on. Respect the event's guidance strictly; when a festival is observed vegetarian,
+const SYSTEM = `You curate shelves for Martly, a grocery delivery app for neighbourhood stores in India.
+Given a festival, season or shopping theme and the subcategories the stores actually stock, choose what shoppers will
+genuinely buy for it. For a festival that means ritual and pooja needs, traditional cooking ingredients, sweets,
+gifting, decor, and the everyday items demand spikes on; for a theme, what a shopper with that need would put in the
+basket. Respect the brief's guidance strictly; when a festival is observed vegetarian,
 leave out meat, fish and eggs. Never pick alcohol, tobacco, or items that would feel out of place for the occasion.
 If fewer than ${MIN_SUBCATEGORIES} subcategories truly fit, set skip to true rather than padding the list.
 
-The imagePrompt describes the subject of the banner art: the festival's own foods, props, flowers and colours
-and the mood they create, specific to this occasion. Don't describe layout, framing, camera, art style or where
+The imagePrompt describes the subject of the banner art: the occasion's or theme's own foods, props, flowers and
+colours and the mood they create, specific to this brief. Don't describe layout, framing, camera, art style or where
 text goes; the designer chooses those so each banner looks different. No text, letters, logos, brand packaging,
 or people's faces.
 
@@ -48,7 +49,17 @@ export function describeEvent(event: FestivalEvent) {
   ].filter(Boolean).join("\n");
 }
 
-export async function curateWithClaude(event: FestivalEvent, candidates: SubcategoryCandidate[]): Promise<Curation> {
+const KIND_NAMES: Partial<Record<CollectionKind, string>> = {
+  STORE_SPECIAL: "the store's own range, made or packed in-store", OCCASION: "festival/occasion", SEASON: "season",
+};
+
+/** An admin's brief for a new collection, in the same shape describeEvent gives the curator */
+export function describeBrief(brief: string, kind: CollectionKind) {
+  return `Theme: ${brief.trim()} (${KIND_NAMES[kind] ?? "store collection"})`;
+}
+
+/** Picks aisles and writes English and Tamil copy for a festival (describeEvent) or an admin's brief (describeBrief) */
+export async function curate(description: string, candidates: SubcategoryCandidate[]): Promise<Curation> {
   const client = new Anthropic();
   const catalog = candidates.map((c) => `${c.id} | ${c.department} > ${c.category} > ${c.name} (${c.products})`).join("\n");
   const response = await client.beta.messages.parse({
@@ -60,11 +71,11 @@ export async function curateWithClaude(event: FestivalEvent, candidates: Subcate
     output_config: { effort: "medium", format: betaZodOutputFormat(CurationSchema) },
     messages: [{
       role: "user",
-      content: `${describeEvent(event)}\n\nIn-stock subcategories (id | department > category > subcategory (product count)):\n${catalog}`,
+      content: `${description}\n\nIn-stock subcategories (id | department > category > subcategory (product count)):\n${catalog}`,
     }],
   });
   if (response.stop_reason === "refusal" || !response.parsed_output) {
-    throw new CurationRefusedError(`Curator returned no result for ${event.slug} (stop_reason: ${response.stop_reason})`);
+    throw new CurationRefusedError(`Curator returned no result (stop_reason: ${response.stop_reason})`);
   }
   const known = new Set(candidates.map((c) => c.id));
   const result = response.parsed_output;

@@ -47,6 +47,7 @@ import { placesRoutes } from "./routes/places/index.js";
 import { aiRoutes } from "./routes/ai/index.js";
 import { listToCartRoutes } from "./routes/list-to-cart/index.js";
 import { cartRoutes } from "./routes/cart/index.js";
+import { storeWalkRoutes } from "./routes/store-walk/index.js";
 import { shoppingListRoutes } from "./routes/shopping-list/index.js";
 import { listGlossaryRoutes } from "./routes/list-glossary/index.js";
 import { speechRoutes } from "./routes/speech/index.js";
@@ -194,6 +195,7 @@ export async function buildApp() {
       await api.register(aiRoutes, { prefix: "/ai" });
       await api.register(listToCartRoutes, { prefix: "/list-to-cart" });
       await api.register(cartRoutes, { prefix: "/cart" });
+      await api.register(storeWalkRoutes, { prefix: "/store-walk" });
       await api.register(shoppingListRoutes, { prefix: "/shopping-list" });
       await api.register(listGlossaryRoutes, { prefix: "/list-glossary" });
       await api.register(speechRoutes, { prefix: "/speech" });

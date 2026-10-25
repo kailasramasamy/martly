@@ -1,4 +1,5 @@
-import { View, Text, TextInput, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
@@ -79,7 +80,7 @@ export function RateOrderSheet({ visible, order, ratings, onClose }: { visible: 
   const canSubmit = !ratings.storeRating && ratings.draft.overall > 0;
   const footer = ratings.storeRating ? undefined : (
     <TouchableOpacity style={[styles.submit, !canSubmit && { opacity: 0.4 }]} disabled={!canSubmit || ratings.submitting} onPress={async () => { if (await ratings.submit()) onClose(); }}>
-      {ratings.submitting ? <ActivityIndicator color="#fff" /> : <Text style={styles.submitText}>{t.submitRating}</Text>}
+      {ratings.submitting ? <Loader color="#fff" /> : <Text style={styles.submitText}>{t.submitRating}</Text>}
     </TouchableOpacity>
   );
   return (

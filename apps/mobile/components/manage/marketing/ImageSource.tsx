@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, Text, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+import { Loader } from "../../Loader";
 import { AI_IMAGE_COST, BANNER_IMAGE_REQUIREMENTS } from "@martly/shared/constants";
 import { SegmentedTabs } from "../ui/SegmentedTabs";
 import { ImageField } from "../ui/ImageField";
@@ -74,7 +75,7 @@ export function ImageSource({ imageUrl, onImage, onGenerated, title, subtitle, a
             <AiImageUsage aiImages={entitlements?.aiImages} cost={cost} onBuy={gate.openBuy} />
             <Button label={out ? "Buy AI images" : "Generate"} icon={out ? "cart-outline" : "sparkles-outline"} onPress={out ? gate.openBuy : generate} loading={running} />
           </View>
-          {running ? <View style={styles.progress}><ActivityIndicator color={colors.primary} /><Text style={styles.bullet}>Designing your banner… up to a minute</Text></View> : null}
+          {running ? <View style={styles.progress}><Loader /><Text style={styles.bullet}>Designing your banner… up to a minute</Text></View> : null}
           <PlanLimitNotice message={limit.message} />
           <BuyImagesSheet visible={gate.buying} onClose={gate.closeBuy} onBought={reload} />
         </>

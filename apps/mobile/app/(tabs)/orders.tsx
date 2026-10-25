@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useState } from "react";
-import { ActivityIndicator, RefreshControl, SectionList, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { RefreshControl, SectionList, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Loader } from "../../components/Loader";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { strings, type Strings } from "../../lib/i18n";
@@ -126,7 +127,7 @@ function OrdersScreen() {
           onEndReached={feed.loadMore}
           onEndReachedThreshold={0.4}
           ListEmptyComponent={<EmptyState filter={filter} onShop={() => router.push("/(tabs)")} />}
-          ListFooterComponent={feed.loadingMore ? <ActivityIndicator style={styles.more} color={colors.primary} /> : null}
+          ListFooterComponent={feed.loadingMore ? <Loader style={styles.more} /> : null}
         />
       )}
     </View>

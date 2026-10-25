@@ -633,8 +633,18 @@ export const createCollectionSchema = z.object({
   kind: z.enum(EDITABLE_COLLECTION_KINDS).default("STANDARD"),
   startsAt: z.coerce.date().nullish(),
   endsAt: z.coerce.date().nullish(),
+  /** What an AI draft says the banner shows; makes the banner generatable */
+  artDirection: z.string().min(1).max(1000).optional(),
+  translations: z.object({ ta: z.object({ title: z.string().min(1), subtitle: z.string().optional() }) }).optional(),
 }).refine(collectionWindowValid, { message: "endsAt must be after startsAt", path: ["endsAt"] });
 export type CreateCollectionInput = z.infer<typeof createCollectionSchema>;
+
+/** A brief the AI curator turns into a draft collection */
+export const collectionDraftSchema = z.object({
+  brief: z.string().trim().min(3).max(300),
+  kind: z.enum(EDITABLE_COLLECTION_KINDS).default("STANDARD"),
+  organizationId: z.string().uuid().optional(),
+});
 
 export const updateCollectionSchema = z.object({
   title: z.string().min(1).optional(),
@@ -1339,6 +1349,8 @@ export const storeProductSearchQuerySchema = z.object({
   q: z.string().trim().min(1),
   tag: z.string().trim().toLowerCase().optional(),
   subcategoryId: z.string().uuid().optional(),
+  /** Only this aisle's products, e.g. searching from inside Walk the store */
+  categoryId: z.string().uuid().optional(),
   brandIds: z.string().optional().transform((v) => v?.split(",").filter(Boolean)),
   size: z.string().optional(),
   foodType: z.nativeEnum(FoodType).optional(),
@@ -1583,6 +1595,15 @@ export const cartReviewSchema = z.object({
   couponCode: z.string().trim().max(40).optional(),
 });
 export type CartReviewInput = z.infer<typeof cartReviewSchema>;
+
+// ── Store walk: the store's aisles in shelf order, one department at a time ──
+export const storeWalkRouteSchema = z.object({
+  /** The department to walk; without it, the one holding most of the shopper's due items, else the best-selling one */
+  departmentId: z.string().uuid().optional(),
+  /** The cart's lines, so the walk knows which aisles are covered and which due items are still missing */
+  cartStoreProductIds: z.array(z.string().uuid()).max(100).default([]),
+});
+export type StoreWalkRouteInput = z.infer<typeof storeWalkRouteSchema>;
 
 export * from "./marketing.js";
 export * from "./home.js";

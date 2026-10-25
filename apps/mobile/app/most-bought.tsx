@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import { Loader } from "../components/Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
 import { api } from "../lib/api";
@@ -38,7 +39,7 @@ export default function MostBoughtScreen() {
   const { products, failed } = useMostBought(selectedStore?.id);
 
   if (failed) return <Message icon="cloud-offline-outline" text={t.mostBoughtUnavailable} />;
-  if (!products) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
+  if (!products) return <Loader style={styles.spinner} />;
 
   return (
     <ProductActionsProvider store={selectedStore ?? null}>

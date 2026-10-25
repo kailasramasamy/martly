@@ -1,7 +1,7 @@
 import type { PrismaClient } from "../../generated/prisma/client.js";
 import type { CartReviewInput } from "@martly/shared/schemas";
 import type { CouponOffer } from "@martly/shared/types";
-import { predictReorders } from "./reorder.js";
+import { dueInStock } from "./reorder.js";
 import { decorateStoreProducts, storeProductInclude } from "./store-product-view.js";
 import { couponOffers } from "./coupon-offers.js";
 import { packDeals } from "./pack-deals.js";
@@ -17,9 +17,6 @@ const GAP_PER_SUBCATEGORY = 2;
 // A locked coupon is worth mentioning only when it's in reach: at most ₹150 more, or doubling the cart
 const COUPON_MIN_REACH = 150;
 
-// A habit: bought more than once, with the purchases spread over at least a week (not a burst of test orders)
-const HABIT_MIN_SPAN_DAYS = 7;
-
 const sellable = { isActive: true, product: { isActive: true } } as const;
 
 // One size per product, in the order given
@@ -30,13 +27,8 @@ function firstPerProduct<T extends { productId: string }>(rows: T[]) {
 
 // The customer's usual items that are due or overdue and not in the cart, in the size they buy
 async function forgottenItems(prisma: PrismaClient, userId: string, storeId: string, cartProductIds: string[]) {
-  const due = (await predictReorders(prisma, userId, storeId))
-    .filter((p) => p.restockable && p.status !== "not_yet" && !cartProductIds.includes(p.productId))
-    .filter((p) => p.orderCount >= 2 && (p.avgIntervalDays ?? 0) * (p.orderCount - 1) >= HABIT_MIN_SPAN_DAYS);
-  const order = due.map((p) => p.storeProductId);
-  const rows = await prisma.storeProduct.findMany({ where: { id: { in: order }, storeId, ...sellable }, include: storeProductInclude });
-  const inStock = rows.filter((sp) => sp.stock - sp.reservedStock > 0).sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
-  return decorateStoreProducts(prisma, firstPerProduct(inStock).slice(0, SUGGESTION_LIMIT));
+  const due = (await dueInStock(prisma, userId, storeId)).filter((sp) => !cartProductIds.includes(sp.productId));
+  return decorateStoreProducts(prisma, due.slice(0, SUGGESTION_LIMIT));
 }
 
 // In-stock items priced just over the gap: from the departments the shopper is buying in first, but never the cart's own

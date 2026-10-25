@@ -12,5 +12,6 @@ import { account } from "./account";
 import { subscriptions } from "./subscriptions";
 import { auth } from "./auth";
 import { shoppingList } from "./shopping-list";
+import { storeWalk } from "./store-walk";
 
-export const ta: Catalog = { common, nav, cart, language, home, catalog, search, checkout, orders, account, subscriptions, auth, shoppingList };
+export const ta: Catalog = { common, nav, cart, language, home, catalog, search, checkout, orders, account, subscriptions, auth, shoppingList, storeWalk };

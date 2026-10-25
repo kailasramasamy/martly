@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Modal, View, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
+import { Modal, View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import * as Location from "expo-location";
 import { Ionicons } from "@expo/vector-icons";
@@ -94,7 +95,7 @@ function PickerFooter({ place, locating, bottom, onLocate, onConfirm }: { place:
       <View style={[styles.footer, { paddingBottom: Math.max(bottom, 16) }]}>
         <Text style={styles.label}>{t.deliverTo}</Text>
         {locating ? (
-          <ActivityIndicator color={colors.primary} style={styles.loading} />
+          <Loader style={styles.loading} />
         ) : (
           <>
             <Text style={styles.title} numberOfLines={1}>{title}</Text>

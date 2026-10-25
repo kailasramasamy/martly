@@ -7,10 +7,10 @@ import {
   Keyboard,
   TouchableOpacity,
   StyleSheet,
-  ActivityIndicator,
   ScrollView,
   RefreshControl,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
@@ -78,7 +78,7 @@ export default function RecipesScreen() {
   if (loading && initialLoad.current) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color={colors.primary} />
+        <Loader size="large" />
       </View>
     );
   }

@@ -3,12 +3,12 @@ import {
   View,
   Text,
   StyleSheet,
-  ActivityIndicator,
   Animated,
   Linking,
   TouchableOpacity,
   Platform,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import MapView, { Marker, Polyline, PROVIDER_GOOGLE } from "react-native-maps";
 import { Ionicons } from "@expo/vector-icons";
@@ -254,7 +254,7 @@ function LiveTrackingScreen() {
   if (loading) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color={colors.primary} />
+        <Loader size="large" />
         <Text style={styles.loadingText}>{t.finding}</Text>
       </View>
     );

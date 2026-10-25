@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, Text, TextInput, Pressable, StyleSheet, ActivityIndicator, KeyboardAvoidingView, ScrollView, Platform, Image } from "react-native";
+import { View, Text, TextInput, Pressable, StyleSheet, KeyboardAvoidingView, ScrollView, Platform, Image } from "react-native";
+import { Loader } from "../../components/Loader";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import type { LoginResponse } from "@martly/shared/types";
@@ -96,7 +97,7 @@ export default function StaffLoginScreen() {
         </View>
 
         <Pressable style={[styles.button, loading && styles.buttonDisabled]} onPress={handleSignIn} disabled={loading}>
-          {loading ? <ActivityIndicator color="#fff" size="small" /> : <Text style={styles.buttonText}>Sign in</Text>}
+          {loading ? <Loader color="#fff" size="small" /> : <Text style={styles.buttonText}>Sign in</Text>}
         </Pressable>
 
         <Pressable onPress={() => router.back()} style={styles.linkContainer} accessibilityRole="link">

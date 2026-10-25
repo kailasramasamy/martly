@@ -1,6 +1,6 @@
 import { Prisma, type FestivalEvent, type PrismaClient } from "../../../generated/prisma/client.js";
 import { orgSubcategoryCandidates, pickProducts } from "./candidates.js";
-import { curateWithClaude, describeEvent } from "./curator.js";
+import { curate, describeEvent } from "./curator.js";
 import { buildDesignedBannerSet, type BannerLog, type BannerSet } from "./banner-set.js";
 import { liveFrom, type CurationOrg } from "./due-events.js";
 import { buildHero, heroFields, withHeroTranslation } from "./hero.js";
@@ -30,7 +30,7 @@ export async function curateEvent(prisma: PrismaClient, org: CurationOrg, event:
   if (existing) return { status: "exists", collectionId: existing.id };
 
   const candidates = await orgSubcategoryCandidates(prisma, org.id);
-  const curation = await curateWithClaude(event, candidates);
+  const curation = await curate(describeEvent(event), candidates);
   if (curation.skip) return { status: "skipped", reason: curation.skipReason };
 
   const productIds = await pickProducts(prisma, org.id, curation.subcategoryIds);

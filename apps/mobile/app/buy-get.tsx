@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import { Loader } from "../components/Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
 import { useStore } from "../lib/store-context";
@@ -27,7 +28,7 @@ export default function BuyGetScreen() {
   const [categoryId, setCategoryId] = useState<string | null>(null);
   const feed = useBuyGetFeed(selectedStore?.id, categoryId);
 
-  if (feed.loading && !feed.first) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
+  if (feed.loading && !feed.first) return <Loader style={styles.spinner} />;
   if (feed.failed && !feed.first) return <Message icon="cloud-offline-outline" text={t.buyGetUnavailable} />;
 
   return (
@@ -49,7 +50,7 @@ export default function BuyGetScreen() {
           onEndReached={feed.loadMore}
           onEndReachedThreshold={0.6}
           ListEmptyComponent={feed.loading ? null : <Message icon="gift-outline" text={t.buyGetEmpty} />}
-          ListFooterComponent={feed.loadingMore ? <ActivityIndicator style={styles.more} color={colors.primary} /> : null}
+          ListFooterComponent={feed.loadingMore ? <Loader style={styles.more} /> : null}
         />
         <FloatingCart />
       </View>

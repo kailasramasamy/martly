@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, FlatList, ActivityIndicator, StyleSheet } from "react-native";
+import { View, FlatList, StyleSheet } from "react-native";
+import { Loader } from "../../Loader";
 import { BottomSheet } from "../../search/BottomSheet";
 import { usePagedList } from "../../../lib/manage/use-paged-list";
 import { colors } from "../../../constants/theme";
@@ -32,7 +33,7 @@ export function ProductPickerSheet({ visible, title, onClose, onPick, pickedIds 
         onEndReached={list.loadMore}
         style={styles.list}
         ListEmptyComponent={list.loading
-          ? <ActivityIndicator style={styles.loading} color={colors.primary} />
+          ? <Loader style={styles.loading} />
           : <EmptyState icon="search-outline" title={q ? "No products found" : "Search to add products"} />}
         renderItem={({ item }) => (
           <ListRow

@@ -4,10 +4,10 @@ import {
   Text,
   FlatList,
   StyleSheet,
-  ActivityIndicator,
   TouchableOpacity,
   RefreshControl,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
@@ -53,7 +53,7 @@ function LoyaltyScreen() {
   if (loading) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color={colors.primary} />
+        <Loader size="large" />
       </View>
     );
   }

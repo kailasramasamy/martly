@@ -1,4 +1,5 @@
-import { View, Text, ScrollView, StyleSheet, ActivityIndicator, RefreshControl } from "react-native";
+import { View, Text, ScrollView, StyleSheet, RefreshControl } from "react-native";
+import { Loader } from "../components/Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { useStore } from "../lib/store-context";
 import { useAuth } from "../lib/auth-context";
@@ -54,7 +55,7 @@ function MembershipScreen() {
   const t = useStrings("account").membership;
 
   if (plus.loading) {
-    return <View style={styles.center}><ActivityIndicator size="large" color={colors.primary} /></View>;
+    return <View style={styles.center}><Loader size="large" /></View>;
   }
 
   return (

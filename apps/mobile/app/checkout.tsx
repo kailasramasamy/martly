@@ -7,12 +7,12 @@ import {
   TextInput,
   TouchableOpacity,
   StyleSheet,
-  ActivityIndicator,
   KeyboardAvoidingView,
   Platform,
   Modal,
   Image,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { useRouter } from "expo-router";
 import { useToast } from "../lib/toast-context";
 import { Ionicons } from "@expo/vector-icons";
@@ -40,6 +40,7 @@ import { useStrings } from "../lib/i18n/use-strings";
 import { formatDate } from "../lib/i18n/format";
 import { useLanguage } from "../lib/language-context";
 import { freeUnits, lineTotal } from "@martly/shared/offers";
+import { CheckoutWalkNudge } from "../components/store-walk/WalkNudge";
 
 type PaymentMethod = "ONLINE" | "COD";
 type DeliveryMode = "express" | "scheduled";
@@ -738,7 +739,7 @@ function CheckoutScreen() {
             </View>
 
             {loadingAddresses ? (
-              <ActivityIndicator color={colors.primary} style={{ marginVertical: 16 }} />
+              <Loader style={{ marginVertical: 16 }} />
             ) : addresses.length === 0 ? (
               <TouchableOpacity
                 style={styles.addAddressPrompt}
@@ -823,7 +824,7 @@ function CheckoutScreen() {
                           </View>
                         )}
                         {!hasLookup && addr.latitude != null && lookingUpDelivery && (
-                          <ActivityIndicator size="small" color={colors.primary} style={{ marginTop: 6, alignSelf: "flex-start" }} />
+                          <Loader size="small" style={{ marginTop: 6, alignSelf: "flex-start" }} />
                         )}
                       </View>
                     </TouchableOpacity>
@@ -1045,7 +1046,7 @@ function CheckoutScreen() {
                 disabled={applyingCoupon}
               >
                 {applyingCoupon ? (
-                  <ActivityIndicator color="#fff" size="small" />
+                  <Loader color="#fff" size="small" />
                 ) : (
                   <Text style={styles.couponApplyText}>{t.promo.apply}</Text>
                 )}
@@ -1203,7 +1204,7 @@ function CheckoutScreen() {
               {isPickup ? (
                 <Text style={styles.billFree}>{common.free}</Text>
               ) : lookingUpDelivery ? (
-                <ActivityIndicator size="small" color={colors.primary} />
+                <Loader size="small" />
               ) : freeDeliveryApplied ? (
                 <View style={{ alignItems: "flex-end" }}>
                   {rawDeliveryFee > 0 && (
@@ -1283,6 +1284,7 @@ function CheckoutScreen() {
         </View>
       </ScrollView>
 
+      <CheckoutWalkNudge />
       {/* Sticky Place Order Bar */}
       <View style={[styles.footer, { paddingBottom: Math.max(12, insets.bottom + 8) }]}>
         <TouchableOpacity
@@ -1292,7 +1294,7 @@ function CheckoutScreen() {
           disabled={orderDisabled}
         >
           {submitting ? (
-            <ActivityIndicator color="#fff" size="small" />
+            <Loader color="#fff" size="small" />
           ) : (
             <>
               <View style={styles.placeOrderLeft}>

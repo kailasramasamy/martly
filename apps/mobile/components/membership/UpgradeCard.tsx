@@ -1,4 +1,5 @@
-import { View, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import type { MembershipUpgradeOption } from "../../lib/types";
@@ -27,7 +28,7 @@ export function UpgradeCard({ option, busy, disabled, onUpgrade }: Props) {
       </View>
       <TouchableOpacity style={styles.button} onPress={() => onUpgrade(option)} disabled={disabled} activeOpacity={0.85}>
         {busy ? (
-          <ActivityIndicator size="small" color="#fff" />
+          <Loader size="small" color="#fff" />
         ) : (
           <Text style={styles.buttonText}>
             {option.isFree ? t.free : t.pay(option.upgradeCharge)}

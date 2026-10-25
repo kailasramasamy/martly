@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, Image, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Loader } from "../../Loader";
 import * as ImagePicker from "expo-image-picker";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, radius } from "../../../constants/theme";
@@ -51,7 +52,7 @@ export function ImageGalleryField({ label, value, onChange, hint }: ImageGallery
           </View>
         ))}
         <TouchableOpacity style={[styles.tile, styles.addTile]} onPress={add} disabled={uploading} accessibilityLabel={`Add ${label}`}>
-          {uploading ? <ActivityIndicator color={colors.primary} /> : (
+          {uploading ? <Loader /> : (
             <>
               <Ionicons name="add" size={22} color={colors.primary} />
               <Text style={styles.addText}>Add</Text>

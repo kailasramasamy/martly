@@ -4,9 +4,9 @@ import {
   Text,
   FlatList,
   StyleSheet,
-  ActivityIndicator,
   Dimensions,
 } from "react-native";
+import { Loader } from "../../components/Loader";
 import { useLocalSearchParams, useNavigation, router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
@@ -215,7 +215,7 @@ export default function CategoryScreen() {
     if (loading) {
       return (
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color={colors.primary} />
+          <Loader size="large" />
         </View>
       );
     }
@@ -250,7 +250,7 @@ export default function CategoryScreen() {
         ListHeaderComponent={renderTopBanner(narrow)}
         onEndReached={loadMore}
         onEndReachedThreshold={0.6}
-        ListFooterComponent={loadingMore ? <ActivityIndicator style={styles.pageLoader} color={colors.primary} /> : null}
+        ListFooterComponent={loadingMore ? <Loader style={styles.pageLoader} /> : null}
         midSlot={{
           afterRows: 2,
           bleed: narrow ? styles.gridNarrow.paddingHorizontal : styles.grid.paddingHorizontal,

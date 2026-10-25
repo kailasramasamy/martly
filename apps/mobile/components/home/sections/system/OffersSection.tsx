@@ -9,12 +9,12 @@ import { useToast } from "../../../../lib/toast-context";
 import { useStrings } from "../../../../lib/i18n/use-strings";
 import { useHomeSectionEnv } from "../context";
 
-const TICKET_WIDTH = 248;
-const TICKET_HEIGHT = 78;
-const STUB_WIDTH = 70;
+const TICKET_WIDTH = 236;
+const TICKET_HEIGHT = 50;
+const STUB_WIDTH = 58;
 // White tickets stand off the cream band
 const TICKET_FILL = "#ffffff";
-const NOTCH = 12;
+const NOTCH = 10;
 // Without a festival above it, the strip sits on a warm cream band that matches the amber stubs without shouting
 const PLAIN: HomeTheme = { background: "#fdf3dc", title: "#92400e", dark: false };
 
@@ -28,7 +28,7 @@ interface TicketProps {
   onSave: (code: string) => void;
 }
 
-/** A short coupon ticket: the saving on an amber stub (offers are always amber), a tear line, then what it is */
+/** A slim coupon strip: the saving on an amber stub (offers are always amber), a tear line, what it is, then a save mark */
 const Ticket = memo(function Ticket({ offer, saved, band, onSave }: TicketProps) {
   const t = useStrings("home");
   const title = useOfferTitle()(offer);
@@ -51,17 +51,14 @@ const Ticket = memo(function Ticket({ offer, saved, band, onSave }: TicketProps)
       <View style={styles.body}>
         <Text style={styles.title} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.85}>{title}</Text>
         <Text style={styles.condition} numberOfLines={1}>{offerCondition(offer)}</Text>
-        <View style={styles.status}>
-          <Ionicons name={saved ? "checkmark-circle" : "bookmark-outline"} size={13} color={saved ? colors.success : colors.textSecondary} />
-          <Text style={[styles.statusText, saved && styles.savedText]} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75}>{saved ? t.savedForCheckout : t.tapToSave}</Text>
-        </View>
       </View>
+      <Ionicons name={saved ? "checkmark-circle" : "bookmark-outline"} size={16} color={saved ? colors.success : colors.textSecondary} style={styles.mark} />
     </Pressable>
   );
 });
 
 /**
- * Coupons the shopper can use, as a strip of short tickets. Right under a festival hero it continues the hero's colour so
+ * Coupons the shopper can use, as a rail of slim strips. Right under a festival hero it continues the hero's colour so
  * the top of Home reads as one block; elsewhere it sits on Martly's teal band. A tap saves the coupon for checkout.
  */
 export const OffersSection = memo(function OffersSection({ section }: { section: SystemSection }) {
@@ -99,29 +96,27 @@ export const OffersSection = memo(function OffersSection({ section }: { section:
 });
 
 const styles = StyleSheet.create({
-  band: { marginTop: 16, paddingTop: 12, paddingBottom: 16, gap: 10 },
+  band: { marginTop: 12, paddingTop: 10, paddingBottom: 12, gap: 8 },
   // Under the festive hero there's no gap: the strip is the hero block's last row
   joined: { marginTop: 0, paddingTop: 4 },
   label: { flexDirection: "row", alignItems: "center", gap: 6, paddingHorizontal: 16 },
   labelText: { fontFamily: fonts.extrabold, fontSize: 11, letterSpacing: 1.2 },
   rail: { paddingHorizontal: 16, gap: 10 },
   ticket: {
-    width: TICKET_WIDTH, height: TICKET_HEIGHT, flexDirection: "row", borderRadius: 14, backgroundColor: TICKET_FILL, overflow: "hidden",
+    width: TICKET_WIDTH, height: TICKET_HEIGHT, flexDirection: "row", alignItems: "center", borderRadius: 12, backgroundColor: TICKET_FILL, overflow: "hidden",
     borderWidth: 1, borderColor: "#f6dfa6",
   },
   pressed: { opacity: 0.85 },
-  stub: { width: STUB_WIDTH, alignItems: "center", justifyContent: "center", paddingHorizontal: 6, backgroundColor: colors.accent },
-  stubValue: { fontFamily: fonts.extrabold, fontSize: 21, color: colors.accentText, letterSpacing: -0.5 },
-  stubOff: { fontFamily: fonts.extrabold, fontSize: 10, color: colors.accentText, letterSpacing: 1.5 },
-  tear: { width: NOTCH, alignItems: "center" },
+  stub: { width: STUB_WIDTH, alignSelf: "stretch", alignItems: "center", justifyContent: "center", paddingHorizontal: 5, backgroundColor: colors.accent },
+  stubValue: { fontFamily: fonts.extrabold, fontSize: 16, color: colors.accentText, letterSpacing: -0.5 },
+  stubOff: { fontFamily: fonts.extrabold, fontSize: 8, color: colors.accentText, letterSpacing: 1.2 },
+  tear: { width: NOTCH, alignSelf: "stretch", alignItems: "center" },
   notch: { position: "absolute", width: NOTCH, height: NOTCH, borderRadius: NOTCH / 2 },
   notchTop: { top: -NOTCH / 2 },
   notchBottom: { bottom: -NOTCH / 2 },
   dash: { flex: 1, marginVertical: NOTCH, borderLeftWidth: 1.5, borderStyle: "dashed", borderColor: "#e7d9b8" },
-  body: { flex: 1, justifyContent: "center", paddingRight: 12, gap: 2 },
-  title: { fontFamily: fonts.extrabold, fontSize: 14, color: colors.text },
-  condition: { fontFamily: fonts.medium, fontSize: 12, color: colors.textSecondary },
-  status: { flexDirection: "row", alignItems: "center", gap: 4, marginTop: 2 },
-  statusText: { flexShrink: 1, fontFamily: fonts.semibold, fontSize: 11, color: colors.textSecondary },
-  savedText: { color: colors.success },
+  body: { flex: 1, justifyContent: "center", gap: 1 },
+  title: { fontFamily: fonts.extrabold, fontSize: 13, color: colors.text },
+  condition: { fontFamily: fonts.medium, fontSize: 11, color: colors.textSecondary },
+  mark: { paddingHorizontal: 10 },
 });

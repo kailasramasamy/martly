@@ -4,9 +4,9 @@ import {
   Text,
   FlatList,
   StyleSheet,
-  ActivityIndicator,
   Dimensions,
 } from "react-native";
+import { Loader } from "../../components/Loader";
 import { useLocalSearchParams } from "expo-router";
 import { useFocusEffect } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -78,7 +78,7 @@ function SupportTicketDetailScreen() {
   if (loading) {
     return (
       <View style={styles.loadingContainer}>
-        <ActivityIndicator color={colors.primary} size="large" />
+        <Loader size="large" />
       </View>
     );
   }

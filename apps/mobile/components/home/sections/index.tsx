@@ -30,6 +30,7 @@ import { FestiveHeroSection } from "./system/FestiveHeroSection";
 import { MemberChipsSection } from "./system/MemberChipsSection";
 import { OffersSection } from "./system/OffersSection";
 import { RecipesSection } from "./system/RecipesSection";
+import { StoreWalkSection } from "./system/StoreWalkSection";
 import { HeroCardsSection } from "../hero-cards/HeroCardsSection";
 
 type SectionOf<K extends HomeSectionType> =
@@ -77,6 +78,7 @@ const SECTIONS: Registry = {
   STORE_GRID: StoreGridSection,
   OFFERS: OffersSection,
   BRAND_POSTERS: BrandPostersSection,
+  STORE_WALK: StoreWalkSection,
 };
 
 export const HomeSectionView = memo(function HomeSectionView({ section }: { section: MobileHomeSection }) {

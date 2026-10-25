@@ -8,29 +8,55 @@ import {
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
-import { AI_IMAGE_COST, Permission } from "@martly/shared/constants";
+import { AI_IMAGE_COST, CollectionKind, Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { canSeeOrgRecord, assertProductsUsable } from "../../services/catalog-access.js";
 import { isCurationConfigured, regenerateBanner, regenerateHero, storeSpecialArt } from "../../services/seasonal/index.js";
 import { saveHero, withHeroTranslation } from "../../services/seasonal/hero.js";
+import { rankedFestivals } from "../../services/festive-hero.js";
 import { ownCollection } from "./access.js";
 import { collectionImageRoutes } from "./images.js";
 import { collectionStorefrontRoutes } from "./storefront.js";
+import { collectionDraftRoutes } from "./ai-draft.js";
+
+const HOME_HERO_TAG = "home hero";
+const LIVE_FESTIVAL_TAG = "live festival";
+
+// The festival each org's Home "Live festival" card leads with now, so the list can point it out
+async function liveFestivalIds(prisma: FastifyInstance["prisma"], organizationIds: string[]) {
+  const ranked = await Promise.all(organizationIds.map((id) => rankedFestivals(prisma, id)));
+  return new Set(ranked.flatMap((festivals) => (festivals[0] ? [festivals[0].id] : [])));
+}
+
+// A search for the list's hero tags ("live", "home hero") also finds the collections wearing them
+async function heroTagMatches(prisma: FastifyInstance["prisma"], scope: Record<string, unknown>, q: string, userOrgId?: string) {
+  const term = q.trim().toLowerCase();
+  if (term.length < 3) return [];
+  if (HOME_HERO_TAG.includes(term)) return [{ heroImageUrl: { not: null } }];
+  if (!LIVE_FESTIVAL_TAG.includes(term)) return [];
+  const heroOrgs = await prisma.collection.findMany({
+    where: { ...scope, heroImageUrl: { not: null } }, select: { organizationId: true }, distinct: ["organizationId"],
+  });
+  const orgIds = heroOrgs.map((c) => c.organizationId ?? userOrgId).filter((id): id is string => !!id);
+  return [{ id: { in: [...(await liveFestivalIds(prisma, [...new Set(orgIds)]))] } }];
+}
 
 export async function collectionRoutes(app: FastifyInstance) {
   await app.register(collectionImageRoutes);
   await app.register(collectionStorefrontRoutes);
+  await app.register(collectionDraftRoutes);
 
   // List collections
   app.get("/", { preHandler: [authenticate] }, async (request) => {
-    const { page = 1, pageSize = 50, q } = request.query as {
-      page?: number; pageSize?: number; q?: string;
+    const { page = 1, pageSize = 50, q, kind } = request.query as {
+      page?: number; pageSize?: number; q?: string; kind?: string;
     };
     const skip = (Number(page) - 1) * Number(pageSize);
     const user = getOrgUser(request);
 
     // Promo collections are managed from the Promos page
-    const where: Record<string, unknown> = { kind: { not: "PROMO" } };
+    const listed = kind && kind !== "PROMO" && kind in CollectionKind;
+    const where: Record<string, unknown> = { kind: listed ? kind : { not: "PROMO" } };
 
     // Org-scoped: non-SUPER_ADMIN sees own org + global
     if (user.role !== "SUPER_ADMIN") {
@@ -39,7 +65,7 @@ export async function collectionRoutes(app: FastifyInstance) {
     }
 
     if (q) {
-      where.title = { contains: q, mode: "insensitive" };
+      where.AND = { OR: [{ title: { contains: q, mode: "insensitive" } }, ...(await heroTagMatches(app.prisma, where, q, user.organizationId))] };
     }
 
     const [collections, total] = await Promise.all([
@@ -56,9 +82,12 @@ export async function collectionRoutes(app: FastifyInstance) {
       app.prisma.collection.count({ where }),
     ]);
 
-    const response: PaginatedResponse<(typeof collections)[0]> = {
+    const orgIds = new Set(collections.map((c) => c.organizationId ?? user.organizationId).filter((id): id is string => !!id));
+    const live = await liveFestivalIds(app.prisma, [...orgIds]);
+    const data = collections.map((c) => ({ ...c, liveFestival: live.has(c.id) }));
+    const response: PaginatedResponse<(typeof data)[0]> = {
       success: true,
-      data: collections,
+      data,
       meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
     };
     return response;

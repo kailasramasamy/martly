@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import { View, Text, TouchableOpacity, Modal, ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, Modal, KeyboardAvoidingView, Platform, ScrollView, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
@@ -47,7 +48,7 @@ export function FormSheet({ visible, title, submitLabel, submitting, onSubmit, o
             disabled={submitting}
             activeOpacity={0.85}
           >
-            {submitting ? <ActivityIndicator color="#fff" size="small" /> : <Text style={styles.submitText}>{submitLabel}</Text>}
+            {submitting ? <Loader color="#fff" size="small" /> : <Text style={styles.submitText}>{submitLabel}</Text>}
           </TouchableOpacity>
         </ScrollView>
       </KeyboardAvoidingView>

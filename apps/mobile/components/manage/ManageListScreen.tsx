@@ -1,5 +1,6 @@
 import type { ReactElement, ReactNode } from "react";
-import { View, Animated, FlatList, RefreshControl, ActivityIndicator, StyleSheet, useWindowDimensions } from "react-native";
+import { View, Animated, FlatList, RefreshControl, StyleSheet, useWindowDimensions } from "react-native";
+import { Loader } from "../Loader";
 import { Stack } from "expo-router";
 import type { Ionicons } from "@expo/vector-icons";
 import { colors } from "../../constants/theme";
@@ -85,7 +86,7 @@ export function ManageListScreen<T extends { id: string }>(props: ManageListScre
           scrollEventThrottle={16}
           refreshControl={<RefreshControl refreshing={list.refreshing} onRefresh={list.refresh} tintColor={colors.primary} progressViewOffset={toolbar.height} />}
           ListEmptyComponent={<ListEmpty error={list.error} empty={empty} onRetry={list.refresh} />}
-          ListFooterComponent={list.loadingMore ? <ActivityIndicator style={styles.more} color={colors.primary} /> : null}
+          ListFooterComponent={list.loadingMore ? <Loader style={styles.more} /> : null}
           contentContainerStyle={[list.items.length === 0 ? styles.emptyContent : columns ? styles.grid : undefined, inset]}
         />
       )}

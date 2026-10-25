@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ActivityIndicator, Animated, Image, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions, type FlatList, type TextInput } from "react-native";
+import { Animated, Image, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions, type FlatList, type TextInput } from "react-native";
+import { Loader } from "../../components/Loader";
 import { useLocalSearchParams } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
@@ -232,7 +233,7 @@ function BrandBody({ brand, listings, categories, loading, storeName, query, tab
   const t = useStrings("catalog");
   const results = useMemo(() => searchBrandListings(listings, query), [listings, query]);
   const below = (node: React.ReactNode) => <View style={{ paddingTop: scroll.inset }}>{node}</View>;
-  if (loading || !brand) return below(<ActivityIndicator style={styles.loader} color={colors.primary} />);
+  if (loading || !brand) return below(<Loader style={styles.loader} />);
   const name = brandDisplayName(brand.name);
   const { base } = brandTheme(brand);
   if (!categories.length) return below(<Message icon="storefront-outline" title={t.brand.notStockedTitle(name)} text={t.brand.notStockedText(name, storeName)} />);

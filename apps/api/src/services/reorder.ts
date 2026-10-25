@@ -1,10 +1,13 @@
 import type { PrismaClient } from "../../generated/prisma/client.js";
+import { storeProductInclude } from "./store-product-view.js";
 
 export type PredictionStatus = "overdue" | "due_soon" | "not_yet";
 
 const DAY_MS = 1000 * 60 * 60 * 24;
 // Single-purchase products have no interval yet, so they get low priority
 const SINGLE_PURCHASE_NEED = 0.3;
+// A habit: bought more than once, with the purchases spread over at least a week (not a burst of test orders)
+const HABIT_MIN_SPAN_DAYS = 7;
 
 interface PurchaseGroup {
   productId: string;
@@ -91,4 +94,24 @@ export async function predictReorders(prisma: PrismaClient, userId: string, stor
   });
   const now = new Date();
   return groupPurchases(orderItems).map((g) => predict(g, now)).sort((a, b) => b.predictedNeed - a.predictedNeed);
+}
+
+/**
+ * The customer's usual items that are due or overdue and the store can sell now, each in the size they buy, most needed
+ * first. Only habits count (see HABIT_MIN_SPAN_DAYS), and only restockable subcategories. Cart review and the store walk
+ * share it, so "due" means the same everywhere.
+ */
+export async function dueInStock(prisma: PrismaClient, userId: string, storeId: string) {
+  const due = (await predictReorders(prisma, userId, storeId))
+    .filter((p) => p.restockable && p.status !== "not_yet")
+    .filter((p) => p.orderCount >= 2 && (p.avgIntervalDays ?? 0) * (p.orderCount - 1) >= HABIT_MIN_SPAN_DAYS);
+  const order = due.map((p) => p.storeProductId);
+  const rows = await prisma.storeProduct.findMany({
+    where: { id: { in: order }, storeId, isActive: true, product: { isActive: true } }, include: storeProductInclude,
+  });
+  const seen = new Set<string>();
+  return rows
+    .filter((sp) => sp.stock - sp.reservedStock > 0)
+    .sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id))
+    .filter((sp) => !seen.has(sp.productId) && seen.add(sp.productId));
 }

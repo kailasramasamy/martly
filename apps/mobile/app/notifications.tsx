@@ -4,10 +4,10 @@ import {
   Text,
   FlatList,
   StyleSheet,
-  ActivityIndicator,
   TouchableOpacity,
   RefreshControl,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { useRouter, useLocalSearchParams, Stack } from "expo-router";
 import { notificationAudience, type NotificationAudience } from "@martly/shared/constants";
 import { Ionicons } from "@expo/vector-icons";
@@ -117,7 +117,7 @@ function NotificationsScreen() {
   if (loading) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color={colors.primary} />
+        <Loader size="large" />
       </View>
     );
   }
@@ -178,7 +178,7 @@ function NotificationsScreen() {
         ListFooterComponent={
           loadingMore ? (
             <View style={styles.footerLoader}>
-              <ActivityIndicator size="small" color={colors.primary} />
+              <Loader size="small" />
             </View>
           ) : null
         }

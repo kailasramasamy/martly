@@ -5,7 +5,6 @@ import {
   TextInput,
   TouchableOpacity,
   StyleSheet,
-  ActivityIndicator,
   FlatList,
   Image,
   ScrollView,
@@ -13,6 +12,7 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -436,9 +436,8 @@ function SubscriptionBuilderScreen() {
       </View>
 
       {searching && (
-        <ActivityIndicator
+        <Loader
           size="small"
-          color={colors.primary}
           style={{ marginTop: spacing.md }}
         />
       )}
@@ -611,7 +610,7 @@ function SubscriptionBuilderScreen() {
     if (loadingAddresses) {
       return (
         <View style={styles.centered}>
-          <ActivityIndicator size="large" color={colors.primary} />
+          <Loader size="large" />
         </View>
       );
     }
@@ -860,7 +859,7 @@ function SubscriptionBuilderScreen() {
           activeOpacity={0.8}
         >
           {submitting ? (
-            <ActivityIndicator size="small" color="#fff" />
+            <Loader size="small" color="#fff" />
           ) : (
             <Text style={styles.nextButtonText}>
               {step === 3 ? t.builder.subscribe : t.builder.next}

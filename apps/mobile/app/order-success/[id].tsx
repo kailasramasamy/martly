@@ -4,10 +4,10 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-  ActivityIndicator,
   Animated,
   StatusBar,
 } from "react-native";
+import { Loader } from "../../components/Loader";
 import { useLocalSearchParams, useRouter, useFocusEffect } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
@@ -164,7 +164,7 @@ function OrderSuccessScreen() {
     return (
       <View style={styles.loadingContainer}>
         <StatusBar barStyle="dark-content" />
-        <ActivityIndicator size="large" color={colors.primary} />
+        <Loader size="large" />
       </View>
     );
   }

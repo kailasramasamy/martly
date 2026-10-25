@@ -1,4 +1,5 @@
-import { ActivityIndicator } from "react-native";
+import {  } from "react-native";
+import { Loader } from "../../Loader";
 import { colors } from "../../../constants/theme";
 import { EmptyState } from "../ui/EmptyState";
 import { OrdersSection, ReadySection, TripsSection } from "./BoardSections";
@@ -81,10 +82,10 @@ interface DeliveryContentProps extends Omit<DeliveryBodyProps, "board"> {
 export function DeliveryContent({ storeId, scopeLoading, loading, error, board, onRetry, ...rest }: DeliveryContentProps) {
   if (!storeId) {
     return scopeLoading
-      ? <ActivityIndicator style={{ marginTop: 40 }} color={colors.primary} />
+      ? <Loader style={{ marginTop: 40 }} />
       : <EmptyState icon="storefront-outline" title="Pick a store" message="The delivery board is per store. Choose one from the switcher above." />;
   }
-  if (loading) return <ActivityIndicator style={{ marginTop: 40 }} color={colors.primary} />;
+  if (loading) return <Loader style={{ marginTop: 40 }} />;
   if (error || !board) return <EmptyState icon="cloud-offline-outline" title="Couldn't load" message={error ?? undefined} action={{ label: "Try again", onPress: onRetry }} />;
   return <DeliveryBody board={board} {...rest} />;
 }

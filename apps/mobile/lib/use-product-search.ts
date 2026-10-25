@@ -32,6 +32,8 @@ export const EMPTY_FILTERS: SearchFilters = {
 
 export interface BrowseParams {
   categoryId?: string;
+  /** An aisle to keep text search inside (Walk the store's search); unlike categoryId it isn't a listing */
+  within?: string;
   hasDiscount?: string;
   sortBy?: string;
 }
@@ -55,6 +57,7 @@ function buildPath(storeId: string | undefined, q: string, textMode: boolean, fi
     if (filters.size) params.set("size", filters.size);
     if (filters.foodType) params.set("foodType", filters.foodType);
     if (filters.offers) params.set("hasDiscount", "true");
+    if (browse.within) params.set("categoryId", browse.within);
     params.set("sortBy", filters.sortBy);
   } else {
     params.set("page", String(page));
@@ -99,7 +102,7 @@ function useSearchResults(storeId: string | undefined, q: string, textMode: bool
       .finally(() => {
         if (id === requestId.current) setLoading(false);
       });
-  }, [storeId, q, textMode, filters, exact, browse.categoryId, browse.hasDiscount, browse.sortBy]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [storeId, q, textMode, filters, exact, browse.categoryId, browse.within, browse.hasDiscount, browse.sortBy]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     setPage(1);

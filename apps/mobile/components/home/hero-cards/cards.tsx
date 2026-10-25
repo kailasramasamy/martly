@@ -27,7 +27,7 @@ type CardOf<K extends Card["kind"]> = Extract<Card, { kind: K }>;
 
 /** A product list card: a lighter band with the title (and a badge where artwork would sit), then rows of products */
 function ProductListCard({ card, title, subtitle, badge, link, onPress }: {
-  card: CardOf<"BUY_GET" | "MOST_BOUGHT" | "RIGHT_NOW">; title: string; subtitle: string; badge?: ReactNode; link?: string; onPress?: () => void;
+  card: CardOf<"BUY_GET" | "MOST_BOUGHT" | "RIGHT_NOW" | "COLLECTION">; title: string; subtitle: string; badge?: ReactNode; link?: string; onPress?: () => void;
 }) {
   const { theme } = card;
   return (
@@ -174,6 +174,22 @@ function RightNowCard({ card }: { card: CardOf<"RIGHT_NOW"> }) {
   );
 }
 
+/** A collection the admin put in the carousel, as product rows in the palette they picked; "View all" opens it */
+function CollectionCard({ card }: { card: CardOf<"COLLECTION"> }) {
+  const t = useStrings("home");
+  const c = useStrings("common");
+  const { language } = useLanguage();
+  const { collection } = card;
+  const localized = language ? (collection.translations as Record<string, { title?: string; subtitle?: string }> | null)?.[language] : undefined;
+  return (
+    <ProductListCard
+      card={card} title={localized?.title || collection.title}
+      subtitle={localized?.subtitle || collection.subtitle || t.heroCollectionCount(card.total)}
+      link={c.viewAll} onPress={() => openCollection(collection.id)}
+    />
+  );
+}
+
 export const HeroCardBody = memo(function HeroCardBody({ card }: { card: Card }) {
   switch (card.kind) {
     case "BUY_GET": return <BuyGetCard card={card} />;
@@ -181,6 +197,7 @@ export const HeroCardBody = memo(function HeroCardBody({ card }: { card: Card })
     case "STORE_SPECIAL": return <StoreSpecialCard card={card} />;
     case "FESTIVE": return <PosterCard card={card} />;
     case "RIGHT_NOW": return <RightNowCard card={card} />;
+    case "COLLECTION": return <CollectionCard card={card} />;
   }
 });
 

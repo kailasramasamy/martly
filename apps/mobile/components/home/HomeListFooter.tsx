@@ -1,5 +1,6 @@
 import { memo } from "react";
-import { ActivityIndicator, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { Loader } from "../Loader";
 import { colors } from "../../constants/theme";
 import { FEATURED_CARD_WIDTH } from "../FeaturedProductCard";
 import { HomeSignOff } from "./HomeSignOff";
@@ -33,7 +34,7 @@ export const HomeListFooter = memo(function HomeListFooter({ hasStore, loading, 
           ))}
         </View>
       )}
-      {loadingMore && <ActivityIndicator style={styles.more} color={colors.primary} />}
+      {loadingMore && <Loader style={styles.more} />}
       {hasStore && reachedEnd && <HomeSignOff />}
       {!hasStore && <StoreDiscovery discovery={discovery} />}
       <View style={styles.spacer} />

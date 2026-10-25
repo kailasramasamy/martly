@@ -383,4 +383,63 @@ export interface RecentList {
 export interface SpeechTranscript {
   text: string;
 }
+type WalkNameTranslations = Record<string, { name?: string }> | null;
+
+export interface StoreWalkDepartment {
+  id: string;
+  name: string;
+  translations: WalkNameTranslations;
+  imageUrl: string | null;
+  /** A photo of the department's aisle in a shop, behind Walk the store's signs; null uses the app's own */
+  aisleImageUrl: string | null;
+  aisleCount: number;
+  /** The shopper's due items in this department that aren't in the cart */
+  dueCount: number;
+}
+
+/** One aisle of the walk: a category with stock at the store */
+export interface StoreWalkStop {
+  categoryId: string;
+  name: string;
+  translations: WalkNameTranslations;
+  imageUrl: string | null;
+  /** In-stock products in the aisle */
+  stocked: number;
+  /** Photos of the aisle's best sellers here, for its shelf */
+  packs: string[];
+  dueCount: number;
+  /** The cart already holds something from this aisle */
+  inCart: boolean;
+}
+
+export interface StoreWalkRoute<P = unknown> {
+  departmentId: string;
+  /** Departments with stock here, in shelf order */
+  departments: StoreWalkDepartment[];
+  /** The chosen department's aisles, in shelf order */
+  stops: StoreWalkStop[];
+  /** Aisles the cart's items come from, across departments */
+  cartAisles: number;
+  /** The chosen department's aisles with nothing in the cart, and the due items among them */
+  uncovered: number;
+  uncoveredDue: number;
+  /** Due items not in the cart, across departments, most needed first (at most 8) */
+  due: P[];
+}
+
+export interface StoreWalkAisle<P = unknown> {
+  category: { id: string; name: string; translations: WalkNameTranslations; departmentId: string };
+  stocked: number;
+  /** The aisle's subcategories with stock here, in shelf order */
+  subcategories: { id: string; name: string; translations: WalkNameTranslations; imageUrl: string | null; stocked: number }[];
+  /** The brands on these shelves (the picked subcategory's, when one is), best sellers first */
+  brands: { id: string; name: string; imageUrl: string | null; count: number }[];
+  /** The shopper's due items in this aisle, in the size they buy */
+  due: P[];
+  /** The aisle's best sellers (or one subcategory's, when asked), due items left out */
+  popular: P[];
+  /** Running offers elsewhere in the department, for the display at the aisle's end (at most 3) */
+  endcap: P[];
+}
+
 export * from "./home.js";

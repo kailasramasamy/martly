@@ -1,4 +1,5 @@
-import { FlatList, RefreshControl, ActivityIndicator, StyleSheet, type FlatListProps } from "react-native";
+import { FlatList, RefreshControl, StyleSheet, type FlatListProps } from "react-native";
+import { Loader } from "../../Loader";
 import { colors } from "../../../constants/theme";
 import { EmptyState } from "../ui/EmptyState";
 import { ListSkeleton } from "../ui/ListSkeleton";
@@ -53,7 +54,7 @@ export function OrdersList({ list, selected, searching, onOpen, onSelect, onAdva
           ? <EmptyState icon="cloud-offline-outline" title="Couldn't load orders" message={list.error} action={{ label: "Try again", onPress: list.refresh }} />
           : <EmptyState icon="receipt-outline" title="No orders here" message={searching ? "Nothing matches that search." : "New orders will appear as they come in."} />
       }
-      ListFooterComponent={list.loadingMore ? <ActivityIndicator style={styles.more} color={colors.primary} /> : null}
+      ListFooterComponent={list.loadingMore ? <Loader style={styles.more} /> : null}
     />
   );
 }

@@ -4,7 +4,6 @@ import {
   Text,
   ScrollView,
   StyleSheet,
-  ActivityIndicator,
   TouchableOpacity,
   RefreshControl,
   Image,
@@ -14,6 +13,7 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { useRouter, useFocusEffect } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -248,7 +248,7 @@ function TomorrowsBasketScreen() {
   if (loading) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color={colors.primary} />
+        <Loader size="large" />
       </View>
     );
   }
@@ -608,7 +608,7 @@ function TomorrowsBasketScreen() {
               disabled={recharging}
             >
               {recharging ? (
-                <ActivityIndicator size="small" color="#fff" />
+                <Loader size="small" color="#fff" />
               ) : (
                 <Text style={styles.proceedButtonText}>
                   {t.basket.addToWallet(customAmount || selectedRechargeAmount)}

@@ -6,10 +6,10 @@ import {
   TouchableOpacity,
   StyleSheet,
   Modal,
-  ActivityIndicator,
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
+import { Loader } from "./Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { useAuth } from "../lib/auth-context";
@@ -180,7 +180,7 @@ export function AuthGate({
                 activeOpacity={0.8}
               >
                 {loading ? (
-                  <ActivityIndicator color="#fff" size="small" />
+                  <Loader color="#fff" size="small" />
                 ) : (
                   <Text style={styles.buttonText}>{t.gate.sendOtp}</Text>
                 )}
@@ -227,7 +227,7 @@ export function AuthGate({
                 activeOpacity={0.8}
               >
                 {loading ? (
-                  <ActivityIndicator color="#fff" size="small" />
+                  <Loader color="#fff" size="small" />
                 ) : (
                   <Text style={styles.buttonText}>{t.gate.verifyContinue}</Text>
                 )}
@@ -280,7 +280,7 @@ export function AuthGate({
                 activeOpacity={0.8}
               >
                 {loading ? (
-                  <ActivityIndicator color="#fff" size="small" />
+                  <Loader color="#fff" size="small" />
                 ) : (
                   <Text style={styles.buttonText}>{common.continue}</Text>
                 )}

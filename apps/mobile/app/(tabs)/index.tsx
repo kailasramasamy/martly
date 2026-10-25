@@ -1,7 +1,6 @@
 import { useState, useMemo, useCallback, useRef } from "react";
 import {
   View,
-  ActivityIndicator,
   FlatList,
   StyleSheet,
   RefreshControl,
@@ -12,6 +11,7 @@ import {
   type NativeSyntheticEvent,
   type ViewToken,
 } from "react-native";
+import { Loader } from "../../components/Loader";
 import { router } from "expo-router";
 import { useStore } from "../../lib/store-context";
 import { useAuth } from "../../lib/auth-context";
@@ -220,7 +220,7 @@ export default function HomeScreen() {
         </HomeSectionProvider>
         {/* iOS draws the pull-to-refresh spinner under the floating festive header (its offset is Android-only), so show one below it */}
         {festive && Platform.OS === "ios" && data.refreshing ? (
-          <ActivityIndicator color={festive.title} style={[styles.festiveRefresh, { top: header.expanded + 12 }]} />
+          <Loader color={festive.title} style={[styles.festiveRefresh, { top: header.expanded + 12 }]} />
         ) : null}
         <BackToTopPill visible={scroll.showBackToTop} top={header.height + 8} onPress={scroll.scrollToTop} />
         <TabBottomDock onLayout={(e) => setDockHeight(e.nativeEvent.layout.height)} noTabBar={!selectedStore}>

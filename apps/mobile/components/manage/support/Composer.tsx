@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, TextInput, TouchableOpacity, StyleSheet, ActivityIndicator } from "react-native";
+import { View, TextInput, TouchableOpacity, StyleSheet } from "react-native";
+import { Loader } from "../../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, radius } from "../../../constants/theme";
 import { manage } from "../ui/tokens";
@@ -30,7 +31,7 @@ export function Composer({ sending, onSend }: ComposerProps) {
         accessibilityLabel="Reply"
       />
       <TouchableOpacity style={[styles.send, !ready && styles.sendOff]} onPress={send} disabled={!ready} accessibilityLabel="Send reply">
-        {sending ? <ActivityIndicator color="#fff" size="small" /> : <Ionicons name="send" size={18} color="#fff" />}
+        {sending ? <Loader color="#fff" size="small" /> : <Ionicons name="send" size={18} color="#fff" />}
       </TouchableOpacity>
     </View>
   );

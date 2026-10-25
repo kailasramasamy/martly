@@ -13,6 +13,7 @@ export interface StoreSearchParams {
   q: string;
   tag?: string;
   subcategoryId?: string;
+  categoryId?: string;
   brandIds?: string[];
   size?: string;
   foodType?: string;
@@ -147,7 +148,9 @@ export async function searchStoreProducts(prisma: PrismaClient, store: { id: str
   }));
 
   const rank = new Map(productIds.map((id, i) => [id, i]));
-  const ranked = sortByProduct(rows, SearchSortBy.RELEVANCE, rank);
+  // Within one aisle when asked; the facets then describe only that aisle too
+  const inAisle = params.categoryId ? rows.filter((r) => r.product.subcategory?.categoryId === params.categoryId) : rows;
+  const ranked = sortByProduct(inAisle, SearchSortBy.RELEVANCE, rank);
   const inTag = ranked.filter((r) =>
     (!params.tag || r.product.tags.includes(params.tag)) &&
     (!params.subcategoryId || r.product.subcategoryId === params.subcategoryId));

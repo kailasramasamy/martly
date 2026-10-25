@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, ActivityIndicator, KeyboardAvoidingView, Platform, StyleSheet, type FlatList } from "react-native";
+import { View, KeyboardAvoidingView, Platform, StyleSheet, type FlatList } from "react-native";
+import { Loader } from "../../Loader";
 import { Stack, useRouter } from "expo-router";
 import { colors } from "../../../constants/theme";
 import { useKeyboardReveal } from "../../../lib/use-keyboard-reveal";
@@ -19,7 +20,7 @@ import type { StockCountDetail } from "./types";
 /** Count detail: blind entry while DRAFT or RECOUNT, read-only review (with recount and correction for approvers) once submitted */
 export function CountDetailScreen({ id }: { id: string }) {
   const c = useCountDetail(id);
-  if (c.loading) return <ActivityIndicator style={styles.loading} color={colors.primary} size="large" />;
+  if (c.loading) return <Loader style={styles.loading} size="large" />;
   if (c.error || !c.data) return <EmptyState icon="cloud-offline-outline" title="Couldn't load" message={c.error ?? "Count not found"} action={{ label: "Try again", onPress: c.reload }} />;
   return <CountDetailBody c={c} count={c.data} />;
 }

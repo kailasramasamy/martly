@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
-import { View, FlatList, ActivityIndicator, StyleSheet } from "react-native";
+import { View, FlatList, StyleSheet } from "react-native";
+import { Loader } from "../../Loader";
 import { BottomSheet } from "../../search/BottomSheet";
 import { api } from "../../../lib/api";
 import { colors } from "../../../constants/theme";
@@ -39,7 +40,7 @@ export function FeaturePickerSheet({ visible, storeId, onClose }: FeaturePickerS
         keyboardShouldPersistTaps="handled"
         onEndReached={list.loadMore}
         style={styles.list}
-        ListEmptyComponent={list.loading ? <ActivityIndicator style={styles.loading} color={colors.primary} /> : <EmptyState icon="search-outline" title="No products to feature" />}
+        ListEmptyComponent={list.loading ? <Loader style={styles.loading} /> : <EmptyState icon="search-outline" title="No products to feature" />}
         renderItem={({ item }) => (
           <ListRow
             title={item.product.name}

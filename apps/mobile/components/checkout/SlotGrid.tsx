@@ -1,4 +1,5 @@
-import { View, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../../constants/theme";
 import { strings } from "../../lib/i18n";
@@ -58,7 +59,7 @@ function SlotCard({ slot, selected, onSelect }: { slot: AvailableSlot; selected:
 /** The day's delivery slots: open ones to pick, closed and full ones shown with the reason */
 export function SlotGrid({ slots, loading, selectedId, onSelect }: { slots: AvailableSlot[]; loading: boolean; selectedId: string | null; onSelect: (slot: AvailableSlot) => void }) {
   const t = useStrings("checkout").slots;
-  if (loading) return <ActivityIndicator color={colors.primary} style={{ marginVertical: 16 }} />;
+  if (loading) return <Loader style={{ marginVertical: 16 }} />;
   if (slots.length === 0) {
     return (
       <View style={styles.empty}>

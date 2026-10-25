@@ -3,7 +3,6 @@ import {
   View,
   Text,
   StyleSheet,
-  ActivityIndicator,
   RefreshControl,
   TouchableOpacity,
   TextInput,
@@ -12,6 +11,7 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { Ionicons } from "@expo/vector-icons";
 import * as Clipboard from "expo-clipboard";
 import { api } from "../lib/api";
@@ -108,7 +108,7 @@ function ReferralScreen() {
   if (loading) {
     return (
       <View style={styles.centered}>
-        <ActivityIndicator size="large" color={colors.primary} />
+        <Loader size="large" />
       </View>
     );
   }
@@ -172,7 +172,7 @@ function ReferralScreen() {
               disabled={applying}
             >
               {applying ? (
-                <ActivityIndicator size="small" color="#fff" />
+                <Loader size="small" color="#fff" />
               ) : (
                 <Text style={styles.applyBtnText}>{t.apply}</Text>
               )}

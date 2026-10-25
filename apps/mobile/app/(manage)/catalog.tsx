@@ -1,5 +1,6 @@
 import { useRef } from "react";
-import { View, FlatList, RefreshControl, ActivityIndicator, TouchableOpacity, Text, StyleSheet, useWindowDimensions } from "react-native";
+import { View, FlatList, RefreshControl, TouchableOpacity, Text, StyleSheet, useWindowDimensions } from "react-native";
+import { Loader } from "../../components/Loader";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { can } from "@martly/shared/permissions";
@@ -49,7 +50,7 @@ export default function ManageCatalogScreen() {
     return (
       <View style={styles.root}>
         <ManageHeader title="Inventory" />
-        {scopeLoading ? <ActivityIndicator style={styles.loading} color={colors.primary} /> : (
+        {scopeLoading ? <Loader style={styles.loading} /> : (
           <EmptyState icon="storefront-outline" title="Pick a store" message="Stock and prices are set per store. Choose one from the switcher above. The shared product catalog is under More." />
         )}
       </View>
@@ -81,7 +82,7 @@ export default function ManageCatalogScreen() {
         refreshControl={<RefreshControl refreshing={list.refreshing} onRefresh={refreshAll} tintColor={colors.primary} />}
         ListEmptyComponent={<CatalogEmpty loading={list.loading} error={list.error} filtered={!!search || filter !== "all"} onRetry={refreshAll}
           grid={{ columns: COLUMNS, width: tileWidth, gap: GRID_GAP, padding: GRID_PAD }} />}
-        ListFooterComponent={list.loadingMore ? <ActivityIndicator style={styles.loading} color={colors.primary} /> : null}
+        ListFooterComponent={list.loadingMore ? <Loader style={styles.loading} /> : null}
       />
     </View>
   );

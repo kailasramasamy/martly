@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
-import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Loader } from "../../components/Loader";
 import { useLocalSearchParams, useNavigation } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
@@ -138,7 +139,7 @@ export default function CollectionScreen() {
   const { collection, products, loading, loadingMore, failed, loadMore } = useCollectionProducts(id, selectedStore?.id, aisle, search.q || undefined);
   const theme = useCollectionBar(collection, search.onOpen);
 
-  if (loading && !collection) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
+  if (loading && !collection) return <Loader style={styles.spinner} />;
   if (failed || !collection) return <Message icon="cloud-offline-outline" text={t.offerUnavailable} />;
 
   return (
@@ -162,11 +163,11 @@ export default function CollectionScreen() {
             />
           }
           ListEmptyComponent={loading
-            ? <ActivityIndicator style={styles.more} color={colors.primary} />
+            ? <Loader style={styles.more} />
             : search.q
               ? <Message icon="search-outline" text={t.noMatches(search.q)} />
               : <Message icon="basket-outline" text={t.offerOutOfStock} />}
-          ListFooterComponent={loadingMore ? <ActivityIndicator style={styles.more} color={colors.primary} /> : null}
+          ListFooterComponent={loadingMore ? <Loader style={styles.more} /> : null}
         />
         <FloatingCart />
       </View>

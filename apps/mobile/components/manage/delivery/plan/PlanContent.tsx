@@ -1,4 +1,5 @@
-import { ActivityIndicator } from "react-native";
+import {  } from "react-native";
+import { Loader } from "../../../Loader";
 import { useRouter } from "expo-router";
 import { can } from "@martly/shared/permissions";
 import { colors } from "../../../../constants/theme";
@@ -44,10 +45,10 @@ export function PlanContent({ desk }: { desk: Desk }) {
   const { storeId, data, wave } = desk;
   if (!storeId) {
     return desk.scopeLoading
-      ? <ActivityIndicator style={{ marginTop: 40 }} color={colors.primary} />
+      ? <Loader style={{ marginTop: 40 }} />
       : <EmptyState icon="storefront-outline" title="Pick a store" message="Delivery is planned per store. Choose one from the switcher above." />;
   }
-  if (data.loading) return <ActivityIndicator style={{ marginTop: 40 }} color={colors.primary} />;
+  if (data.loading) return <Loader style={{ marginTop: 40 }} />;
   if (data.error || !data.plan) return <EmptyState icon="cloud-offline-outline" title="Couldn't load" message={data.error ?? undefined} action={{ label: "Try again", onPress: data.refresh }} />;
   const plan = data.plan;
   if (!wave || plan.waves.length === 0) {

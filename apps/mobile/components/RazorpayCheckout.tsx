@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
-import { Modal, View, StyleSheet, ActivityIndicator, TouchableOpacity, Text, SafeAreaView, KeyboardAvoidingView, Platform } from "react-native";
+import { Modal, View, StyleSheet, TouchableOpacity, Text, SafeAreaView, KeyboardAvoidingView, Platform } from "react-native";
+import { Loader } from "./Loader";
 import Constants, { ExecutionEnvironment } from "expo-constants";
 import { WebView } from "react-native-webview";
 import { Ionicons } from "@expo/vector-icons";
@@ -168,7 +169,7 @@ function WebViewCheckout(props: RazorpayCheckoutProps) {
             automaticallyAdjustContentInsets
             renderLoading={() => (
               <View style={styles.loader}>
-                <ActivityIndicator size="large" color={colors.primary} />
+                <Loader size="large" />
               </View>
             )}
             onMessage={(event) => {

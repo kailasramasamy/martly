@@ -1,8 +1,28 @@
 import { z } from "zod";
-import { DayPart, HERO_CARD_KINDS, HeroCardKind, HomeSectionType, SectionHeaderStyle, TabRailStyle } from "../constants/home.js";
+import {
+  DayPart, FIXED_HERO_CARD_KINDS, HeroCardPalette, HomeSectionType, SectionHeaderStyle, TabRailStyle, type FixedHeroCardKind,
+} from "../constants/home.js";
 
 const hex = z.string().regex(/^#[0-9a-fA-F]{6}$/, "Use a #RRGGBB colour");
 const theme = z.object({ background: hex, title: hex, dark: z.boolean() });
+
+type SelfFillingKind = Exclude<FixedHeroCardKind, "STORE_SPECIAL">;
+const SELF_FILLING_KINDS = FIXED_HERO_CARD_KINDS.filter((k): k is SelfFillingKind => k !== "STORE_SPECIAL") as [SelfFillingKind, ...SelfFillingKind[]];
+
+const heroCardEntry = z.union([
+  z.object({ kind: z.literal("COLLECTION"), collectionId: z.string().uuid(), palette: z.nativeEnum(HeroCardPalette) }),
+  // Without a collection, the store's latest special
+  z.object({ kind: z.literal("STORE_SPECIAL"), collectionId: z.string().uuid().optional() }),
+  z.object({ kind: z.enum(SELF_FILLING_KINDS) }),
+]);
+/** One card in the hero carousel: a card that fills itself, or a collection the admin picked */
+export type HeroCardEntry = z.infer<typeof heroCardEntry>;
+
+// A self-filling card shows once, and a collection (store specials included) gets one card
+const distinctCards = (cards: HeroCardEntry[]) => {
+  const keys = cards.map((c) => ("collectionId" in c && c.collectionId ? c.collectionId : c.kind));
+  return new Set(keys).size === keys.length;
+};
 
 /** Per-type display settings stored in HomeSection.config */
 export const homeSectionConfigSchemas = {
@@ -26,9 +46,9 @@ export const homeSectionConfigSchemas = {
   CATEGORY_DIRECTORY: z.object({ departmentIds: z.array(z.string().uuid()).default([]) }),
   THEME_BAND: z.object({ tint: hex, imageUrl: z.string().url().optional() }),
   HERO_CARDS: z.object({
-    cards: z.array(z.nativeEnum(HeroCardKind)).min(1)
-      .refine((cards) => new Set(cards).size === cards.length, "Each card once")
-      .default([...HERO_CARD_KINDS]),
+    cards: z.array(heroCardEntry).min(1)
+      .refine(distinctCards, "Each card once, and each collection or store special once")
+      .default(FIXED_HERO_CARD_KINDS.map((kind) => ({ kind }))),
     /** The collection the "Right now" card shows in each part of the day; a part without one shows no card */
     rightNow: z.record(z.nativeEnum(DayPart), z.string().uuid()).default({}),
   }),

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, Text, Image, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet } from "react-native";
+import { Loader } from "../../Loader";
 import { AI_IMAGE_COST } from "@martly/shared/constants";
 import type { PromoDetail } from "@martly/shared/types";
 import { SectionCard } from "../ui/SectionCard";
@@ -91,7 +92,7 @@ export function PromoBannerCard({ promo, onChange }: Props) {
         </View>
       ) : null}
       {editable && !editing ? <View style={styles.usage}><AiImageUsage aiImages={entitlements?.aiImages} cost={COST} onBuy={gate.openBuy} /></View> : null}
-      {generating ? <View style={styles.progress}><ActivityIndicator color={colors.primary} /><Text style={styles.stats}>Designing your banner… up to a minute</Text></View> : null}
+      {generating ? <View style={styles.progress}><Loader /><Text style={styles.stats}>Designing your banner… up to a minute</Text></View> : null}
       <PlanLimitNotice message={limit.message} />
       <BuyImagesSheet visible={gate.buying} onClose={gate.closeBuy} onBought={reload} />
     </SectionCard>

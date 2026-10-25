@@ -1,5 +1,6 @@
 import { Fragment } from "react";
-import { View, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { ADDRESS_ICONS } from "./AddressSheet";
@@ -51,7 +52,7 @@ export function AddressList({ addresses, loading, onAdd, onEdit, onDelete }: Pro
       </View>
       <View style={styles.card}>
         {loading ? (
-          <ActivityIndicator color={colors.primary} style={styles.loading} />
+          <Loader style={styles.loading} />
         ) : addresses.length === 0 ? (
           <TouchableOpacity style={styles.empty} onPress={onAdd}>
             <Ionicons name="map-outline" size={22} color={colors.primary} />

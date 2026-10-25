@@ -705,14 +705,16 @@ model UserStore {
 }
 
 model Department {
-  id           String   @id @default(uuid())
-  name         String
-  slug         String   @unique
-  sortOrder    Int      @default(0) @map("sort_order")
-  imageUrl     String?  @map("image_url")
-  translations Json?    @map("translations")
-  createdAt    DateTime @default(now()) @map("created_at")
-  updatedAt    DateTime @updatedAt @map("updated_at")
+  id            String   @id @default(uuid())
+  name          String
+  slug          String   @unique
+  sortOrder     Int      @default(0) @map("sort_order")
+  imageUrl      String?  @map("image_url")
+  /// A photo of this department's aisle in a local shop, behind the hanging sign on Walk the store
+  aisleImageUrl String?  @map("aisle_image_url")
+  translations  Json?    @map("translations")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
 
   categories Category[]
   banners    Banner[]
@@ -1128,7 +1130,9 @@ model Coupon {
   /// Short headline for the offer card, e.g. "Flat ₹50 off"; falls back to one made from the discount
   title          String?
   description    String?
-  /** Headline and description in other languages, keyed by language code */
+  /**
+   * Headline and description in other languages, keyed by language code
+   */
   translations   Json?
   /// Advertised to shoppers in Home's offers and checkout's offer list; otherwise used by typing its code
   showOnHome     Boolean      @default(false) @map("show_on_home")
@@ -2683,6 +2687,7 @@ enum HomeSectionType {
   STORE_SPECIALS
   BUY_GET_DEALS
   HERO_CARDS
+  STORE_WALK
 }
 
 /// One block on an organisation's Home, in display order; config holds per-type display settings

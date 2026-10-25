@@ -1,5 +1,6 @@
 import { memo } from "react";
-import { ActivityIndicator, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Loader } from "../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useLanguage } from "../../lib/language-context";
@@ -74,7 +75,7 @@ export const OrderHistoryCard = memo(function OrderHistoryCard({ order, reorderi
               </TouchableOpacity>
             )}
             <TouchableOpacity style={[styles.sbtn, styles.sbtnPrimary]} onPress={() => onReorder(order)} disabled={reordering}>
-              {reordering ? <ActivityIndicator size="small" color="#fff" /> : <Ionicons name="refresh" size={14} color="#fff" />}
+              {reordering ? <Loader size="small" color="#fff" /> : <Ionicons name="refresh" size={14} color="#fff" />}
               <Text style={styles.sbtnPrimaryText}>{t.reorder}</Text>
             </TouchableOpacity>
           </View>

@@ -6,9 +6,9 @@ import {
   TouchableOpacity,
   Image,
   StyleSheet,
-  ActivityIndicator,
   RefreshControl,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { useRouter, useFocusEffect } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
@@ -128,7 +128,7 @@ function SubscriptionsScreen() {
   if (loading) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color={colors.primary} />
+        <Loader size="large" />
         <Text style={styles.loadingText}>{t.list.loading}</Text>
       </View>
     );

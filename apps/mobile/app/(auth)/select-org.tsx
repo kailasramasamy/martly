@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, Text, Pressable, FlatList, StyleSheet, ActivityIndicator } from "react-native";
+import { View, Text, Pressable, FlatList, StyleSheet } from "react-native";
+import { Loader } from "../../components/Loader";
 import { router, useLocalSearchParams } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
@@ -56,7 +57,7 @@ export default function SelectOrgScreen() {
               <Text style={styles.orgSlug}>{item.slug}</Text>
             </View>
             {pendingId === item.id
-              ? <ActivityIndicator color={colors.primary} />
+              ? <Loader />
               : <Ionicons name="chevron-forward" size={18} color="#94a3b8" />}
           </Pressable>
         )}

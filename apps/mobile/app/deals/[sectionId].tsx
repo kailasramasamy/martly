@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import { Loader } from "../../components/Loader";
 import { useLocalSearchParams, useNavigation } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
@@ -45,7 +46,7 @@ export default function DealsScreen() {
   );
   const onBand = useCallback((index: number) => { setBand(index); setCategoryId(null); }, []);
 
-  if (feed.loading && !feed.section) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
+  if (feed.loading && !feed.section) return <Loader style={styles.spinner} />;
   if (feed.failed || !feed.section) return <Message icon="cloud-offline-outline" text={t.dealsUnavailable} />;
 
   return (
@@ -67,7 +68,7 @@ export default function DealsScreen() {
           onEndReached={feed.loadMore}
           onEndReachedThreshold={0.6}
           ListEmptyComponent={feed.loading ? null : <Message icon="basket-outline" text={t.bandEmpty} />}
-          ListFooterComponent={feed.loadingMore ? <ActivityIndicator style={styles.more} color={colors.primary} /> : null}
+          ListFooterComponent={feed.loadingMore ? <Loader style={styles.more} /> : null}
         />
         <FloatingCart />
       </View>

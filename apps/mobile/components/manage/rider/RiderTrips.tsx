@@ -1,6 +1,7 @@
 import { useCallback, useRef, useState } from "react";
 import { router } from "expo-router";
-import { ActivityIndicator, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { Loader } from "../../Loader";
 import { colors } from "../../../constants/theme";
 import { ManageScreen } from "../ManageScreen";
 import { EmptyState } from "../ui/EmptyState";
@@ -53,7 +54,7 @@ function TripList({ day, handlers }: { day: RiderDay; handlers: StopHandlers }) 
 
 function Body({ rider, handlers }: { rider: ReturnType<typeof useRiderDay>; handlers: StopHandlers }) {
   const { day, loading, error, refresh } = rider;
-  if (loading) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
+  if (loading) return <Loader style={styles.spinner} />;
   if (error || !day) return <EmptyState icon="cloud-offline-outline" title="Couldn't load your trips" message={error ?? undefined} action={{ label: "Try again", onPress: refresh }} />;
   const empty = day.trips.length === 0;
   return (

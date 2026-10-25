@@ -1,4 +1,5 @@
-import { View, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
@@ -31,7 +32,7 @@ function Pill({ icon, label, onPress, highlight, busy }: PillProps) {
   const color = highlight ? colors.accentText : colors.text;
   return (
     <TouchableOpacity style={[styles.pill, highlight && styles.pillHighlight]} onPress={onPress} disabled={busy} activeOpacity={0.7}>
-      {busy ? <ActivityIndicator size="small" color={color} /> : <Ionicons name={icon} size={16} color={color} />}
+      {busy ? <Loader size="small" color={color} /> : <Ionicons name={icon} size={16} color={color} />}
       <Text style={[styles.pillText, highlight && styles.pillTextHighlight]}>{label}</Text>
     </TouchableOpacity>
   );
@@ -43,7 +44,7 @@ function CancelButton({ order, actions }: { order: OrderData; actions: Actions }
   if (order.status !== "PENDING" && order.status !== "CONFIRMED") return null;
   return (
     <TouchableOpacity style={styles.cancel} onPress={actions.onCancel} disabled={actions.cancelling} activeOpacity={0.7}>
-      {actions.cancelling ? <ActivityIndicator color={colors.error} /> : <Text style={styles.cancelText}>{t.cancelOrder}</Text>}
+      {actions.cancelling ? <Loader color={colors.error} /> : <Text style={styles.cancelText}>{t.cancelOrder}</Text>}
     </TouchableOpacity>
   );
 }

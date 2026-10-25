@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, Image, TouchableOpacity, ActivityIndicator, Text, StyleSheet } from "react-native";
+import { View, Image, TouchableOpacity, Text, StyleSheet } from "react-native";
+import { Loader } from "../../Loader";
 import * as ImagePicker from "expo-image-picker";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, radius } from "../../../constants/theme";
@@ -50,7 +51,7 @@ export function ImageField({ label, required, hint, error, value, onChange, aspe
             <Text style={styles.emptyText}>Upload image</Text>
           </View>
         )}
-        {uploading && <View style={styles.overlay}><ActivityIndicator color="#fff" /></View>}
+        {uploading && <View style={styles.overlay}><Loader color="#fff" /></View>}
       </TouchableOpacity>
       {value && !uploading && (
         <View style={styles.actions}>

@@ -68,9 +68,12 @@ function occasionSubcategories<T extends { id: string }>(subs: (T | null)[]) {
 type SpotlightKind = "OCCASION" | "SEASON" | "STORE_SPECIAL";
 
 // Live collections of these kinds with something in stock at the store, with their first products' aisles
-async function stockedSpotlights(prisma: PrismaClient, storeId: string, organizationId: string, kinds: SpotlightKind[], now: Date) {
+async function stockedSpotlights(
+  prisma: PrismaClient, storeId: string, organizationId: string, kinds: SpotlightKind[], now: Date, id?: string,
+) {
   const collections = await prisma.collection.findMany({
     where: {
+      id,
       isActive: true,
       kind: { in: kinds },
       OR: [{ organizationId }, { organizationId: null }],
@@ -101,9 +104,10 @@ async function toSpotlight(prisma: PrismaClient, storeId: string, c: Spotlight) 
 }
 
 /** A store's own ranges (its bakery, its sweets) it has in stock, most recently updated first: the search spotlight
- *  shows one after the festivals, and Home's store specials block shows them as the same cards */
-export async function storeSpecials(prisma: PrismaClient, storeId: string, organizationId: string, limit: number) {
-  const rows = await stockedSpotlights(prisma, storeId, organizationId, ["STORE_SPECIAL"], new Date());
+ *  shows one after the festivals, and Home's store specials block shows them as the same cards. With `collectionId`,
+ *  just that one, when it's live and stocked */
+export async function storeSpecials(prisma: PrismaClient, storeId: string, organizationId: string, limit: number, collectionId?: string) {
+  const rows = await stockedSpotlights(prisma, storeId, organizationId, ["STORE_SPECIAL"], new Date(), collectionId);
   const latest = rows.sort((a, b) => b.updatedAt.getTime() - a.updatedAt.getTime()).slice(0, limit);
   return Promise.all(latest.map((c) => toSpotlight(prisma, storeId, c)));
 }

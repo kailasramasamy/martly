@@ -6,10 +6,10 @@ import {
   TouchableWithoutFeedback,
   StyleSheet,
   Animated,
-  ActivityIndicator,
   Dimensions,
   Modal,
 } from "react-native";
+import { Loader } from "./Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../constants/theme";
 import { useStrings } from "../lib/i18n/use-strings";
@@ -123,7 +123,7 @@ export function ConfirmSheet({
               activeOpacity={0.7}
             >
               {loading ? (
-                <ActivityIndicator size="small" color="#fff" />
+                <Loader size="small" color="#fff" />
               ) : (
                 <Text style={styles.confirmBtnText}>{confirmLabel ?? common.confirm}</Text>
               )}

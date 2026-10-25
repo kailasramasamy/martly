@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from "react";
-import { ActivityIndicator, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
+import { Loader } from "../../Loader";
 import { colors } from "../../../constants/theme";
 import { api } from "../../../lib/api";
 import { useAction } from "../../../lib/manage/use-action";
@@ -24,7 +25,7 @@ interface ExpressFormProps {
 }
 
 function LoadGate({ loading, error, onReload, children }: Pick<ExpressFormProps, "loading" | "error" | "onReload"> & { children: ReactNode }) {
-  if (loading) return <ActivityIndicator color={colors.primary} style={styles.loading} />;
+  if (loading) return <Loader style={styles.loading} />;
   if (error) return <EmptyState icon="cloud-offline-outline" title="Couldn't load" message={error} action={{ label: "Try again", onPress: onReload }} />;
   return <>{children}</>;
 }

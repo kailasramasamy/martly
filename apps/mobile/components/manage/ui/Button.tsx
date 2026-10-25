@@ -1,4 +1,5 @@
-import { TouchableOpacity, Text, ActivityIndicator, Keyboard, StyleSheet, type ViewStyle } from "react-native";
+import { TouchableOpacity, Text, Keyboard, StyleSheet, type ViewStyle } from "react-native";
+import { Loader } from "../../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, radius } from "../../../constants/theme";
 import { manage } from "./tokens";
@@ -41,7 +42,7 @@ export function Button({ label, onPress, variant = "primary", icon, loading, dis
       accessibilityRole="button"
     >
       {loading ? (
-        <ActivityIndicator color={v.fg} size="small" />
+        <Loader color={v.fg} size="small" />
       ) : (
         <>
           {icon && <Ionicons name={icon} size={compact ? 15 : 18} color={v.fg} />}

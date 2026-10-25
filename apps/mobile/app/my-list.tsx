@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, Text, TextInput, FlatList, TouchableOpacity, ActivityIndicator, KeyboardAvoidingView, Platform, StyleSheet } from "react-native";
+import { View, Text, TextInput, FlatList, TouchableOpacity, KeyboardAvoidingView, Platform, StyleSheet } from "react-native";
+import { Loader } from "../components/Loader";
 import { Ionicons } from "@expo/vector-icons";
 import type { ShoppingListItem } from "@martly/shared/types";
 import { colors, fonts } from "../constants/theme";
@@ -128,7 +129,7 @@ function MyListScreen() {
   return (
     <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={styles.root}>
       <KeyboardAvoidingView style={styles.root} behavior={Platform.OS === "ios" ? "padding" : undefined} keyboardVerticalOffset={keyboard.topOffset}>
-        {list.loading ? <ActivityIndicator style={styles.loader} color={colors.primary} /> : (
+        {list.loading ? <Loader style={styles.loader} /> : (
           <FlatList
             ref={keyboard.scrollRef}
             onScroll={keyboard.onScroll}

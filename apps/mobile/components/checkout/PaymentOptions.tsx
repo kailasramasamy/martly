@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import { View, Text, TouchableOpacity, Image, Modal, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, Image, Modal, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../../constants/theme";
 import type { PaymentChoice, UpiApp } from "../../lib/upi-apps";
@@ -89,7 +90,7 @@ export function PaymentConfirming({ visible, appLabel, onCancel }: { visible: bo
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onCancel}>
       <View style={styles.backdrop}>
         <View style={styles.confirmCard}>
-          <ActivityIndicator size="large" color={colors.primary} />
+          <Loader size="large" />
           <Text style={styles.confirmTitle}>{t.confirmingTitle}</Text>
           <Text style={styles.confirmSub}>
             {t.confirmingSub(appLabel)}

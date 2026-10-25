@@ -4,7 +4,7 @@ import { DeleteOutlined, HomeOutlined, ReloadOutlined, SaveOutlined } from "@ant
 import { isAxiosError } from "axios";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
-import { AI_IMAGE_COST } from "@martly/shared/constants";
+import { AI_IMAGE_COST, festivalCardTheme, type HeroCardTheme } from "@martly/shared/constants";
 import { AiImageUsage } from "../../components/ai-images/ai-image-usage";
 import { canAfford, useAiImages } from "../../hooks/use-ai-images";
 import { ReplaceImageButton } from "./replace-image-button";
@@ -21,6 +21,7 @@ interface HeroTile {
 interface HomeHeroRecord {
   id: string;
   heroTitle: string | null;
+  heroKicker: string | null;
   heroImageUrl: string | null;
   heroTheme: { background: string; title: string; dark: boolean } | null;
   translations: { ta?: { heroTitle?: string } } | null;
@@ -36,10 +37,16 @@ interface SubcategoryGroup {
   options: { value: string; label: string }[];
 }
 
-const PREVIEW_WIDTH = 300;
-// Room between the stand-in search bar and the greeting, where the strip's scene shows as it does under the app's pills
-const PREVIEW_GREETING_GAP = 40;
-const TILE_CARD = 72;
+// The preview is drawn at the app's own size (a 393pt-wide phone) and scaled down to fit the card
+const PHONE_WIDTH = 393;
+const PREVIEW_SCALE = 300 / PHONE_WIDTH;
+const PHONE_HEIGHT = 600;
+const CARD_WIDTH = Math.round(PHONE_WIDTH * 0.73);
+const CARD_HEIGHT = 380;
+const CARD_PADDING = 14;
+const FESTIVAL_TILES = 6;
+// The next card peeking in at the right, in the Buy X get Y card's colour
+const NEXT_CARD = "#b3ddd2";
 const TILE_THUMB = 44;
 
 function buildSubcategoryGroups(departments: TreeDepartment[]): SubcategoryGroup[] {
@@ -60,35 +67,57 @@ function useSubcategoryGroups() {
   return groups;
 }
 
-// Mirrors the app: the wash from the top, the faint strip rising behind the header, the greeting on the left and a
-// row of white tiles
-function HeroPreview({ record }: { record: HomeHeroRecord }) {
-  const theme = record.heroTheme;
-  const wash = theme?.background ?? "#f8fafc";
-  const ink = theme?.title ?? "#0f172a";
+// The header over the wash: location line, search bar and the three list pills ringed in the card's ink
+function PreviewHeader({ ink }: { ink: string }) {
+  const pill = { flex: 1, height: 36, borderRadius: 18, background: "rgba(255,255,255,0.94)", border: `1px solid ${ink}40` };
   return (
-    <div style={{ width: PREVIEW_WIDTH, flexShrink: 0, borderRadius: 16, overflow: "hidden", position: "relative", background: wash }}>
-      {record.heroImageUrl && (
-        <img src={record.heroImageUrl} alt="" style={{ position: "absolute", top: 0, left: 0, width: "100%" }} />
-      )}
-      <div style={{ position: "relative", padding: "14px 12px 0" }}>
-        <div style={{ height: 30, borderRadius: 10, background: "#fff", border: "1px solid #e2e8f0" }} />
-        <div style={{ display: "flex", alignItems: "flex-end", gap: 8, marginTop: PREVIEW_GREETING_GAP }}>
-          <div style={{ flex: 1, color: ink, fontFamily: "Georgia, 'Times New Roman', serif", fontSize: 21, fontWeight: 700, lineHeight: 1.15 }}>
-            {record.heroTitle}
-          </div>
-          <div style={{ background: "#fff", color: ink, borderRadius: 12, padding: "4px 10px", fontSize: 11, fontWeight: 700 }}>See all ›</div>
-        </div>
+    <div style={{ padding: "20px 16px 0" }}>
+      <div style={{ color: ink, fontSize: 22, fontWeight: 800 }}>Delivery in 10 minutes</div>
+      <div style={{ color: ink, fontSize: 14, fontWeight: 600, opacity: 0.85 }}>Your store</div>
+      <div style={{ height: 46, borderRadius: 14, background: "#fff", marginTop: 14 }} />
+      <div style={{ display: "flex", gap: 8, marginTop: 10 }}>
+        <div style={pill} />
+        <div style={pill} />
+        <div style={pill} />
       </div>
-      <div style={{ position: "relative", display: "flex", gap: 6, padding: "12px 12px 12px", overflow: "hidden" }}>
-        {record.tiles.map((tile) => (
-          <div key={tile.id} style={{ width: TILE_CARD, flexShrink: 0, borderRadius: 10, padding: 5, textAlign: "center", background: "#fff" }}>
-            {tile.imageUrl && (
-              <img src={tile.imageUrl} alt={tile.title} style={{ width: "100%", height: TILE_CARD - 14, objectFit: "contain" }} />
-            )}
-            <div style={{ fontSize: 10, fontWeight: 700, color: "#0f172a", lineHeight: 1.2 }}>{tile.title}</div>
+    </div>
+  );
+}
+
+// The app's festive card: kicker and headline, two columns of aisle tiles, then the "See all" band
+function PreviewCard({ record, theme }: { record: HomeHeroRecord; theme: HeroCardTheme }) {
+  const ink = theme.cardInk;
+  const tiles = record.tiles.slice(0, FESTIVAL_TILES);
+  return (
+    <div style={{ width: CARD_WIDTH, height: CARD_HEIGHT, flexShrink: 0, borderRadius: 22, padding: CARD_PADDING, background: theme.card, display: "flex", flexDirection: "column", overflow: "hidden" }}>
+      {record.heroKicker && <div style={{ color: ink, fontSize: 11, fontWeight: 700, letterSpacing: 1, opacity: 0.8, textTransform: "uppercase" }}>{record.heroKicker}</div>}
+      <div style={{ color: ink, fontSize: 20, fontWeight: 800, lineHeight: "24px", letterSpacing: -0.3, marginBottom: 10 }}>{record.heroTitle}</div>
+      <div style={{ flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr", gridAutoRows: "1fr", gap: 8, marginBottom: 12, minHeight: 0 }}>
+        {tiles.map((tile) => (
+          <div key={tile.id} style={{ borderRadius: 14, padding: 6, background: "rgba(255,255,255,0.7)", display: "flex", flexDirection: "column", alignItems: "center", minHeight: 0 }}>
+            {tile.imageUrl && <img src={tile.imageUrl} alt={tile.title} style={{ flex: 1, minHeight: 0, width: "100%", objectFit: "contain" }} />}
+            <div style={{ fontSize: 11.5, fontWeight: 700, color: "#0f172a", marginTop: 2, whiteSpace: "nowrap" }}>{tile.title}</div>
           </div>
         ))}
+      </div>
+      <div style={{ height: 44, margin: `0 -${CARD_PADDING}px -${CARD_PADDING}px`, background: `${ink}14`, color: ink, fontSize: 13, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        See all ›
+      </div>
+    </div>
+  );
+}
+
+// Mirrors the app's Home: the wash following the festival card, the header over it, and the card leading the carousel
+function HeroPreview({ record }: { record: HomeHeroRecord }) {
+  const theme = festivalCardTheme(record.heroTheme ?? { background: "#f8fafc", title: "#0f172a", dark: false });
+  return (
+    <div style={{ width: PHONE_WIDTH * PREVIEW_SCALE, height: PHONE_HEIGHT * PREVIEW_SCALE, borderRadius: 16, overflow: "hidden", border: "1px solid #e2e8f0" }}>
+      <div style={{ width: PHONE_WIDTH, height: PHONE_HEIGHT, transform: `scale(${PREVIEW_SCALE})`, transformOrigin: "top left", background: `linear-gradient(${theme.tint}, ${theme.tintSoft} 45%, #fff 90%)` }}>
+        <PreviewHeader ink={theme.ink} />
+        <div style={{ display: "flex", gap: 12, padding: "16px 16px 0", overflow: "hidden" }}>
+          <PreviewCard record={record} theme={theme} />
+          <div style={{ width: CARD_WIDTH, height: CARD_HEIGHT, flexShrink: 0, borderRadius: 22, background: NEXT_CARD }} />
+        </div>
       </div>
     </div>
   );
@@ -250,6 +279,7 @@ export const HomeHeroCard = ({ record, onChanged }: { record: HomeHeroRecord; on
       <Space size={24} align="start" wrap>
         <Space direction="vertical" size={8}>
           <HeroPreview record={record} />
+          <Typography.Text type="secondary" style={{ fontSize: 12 }}>Background strip (older app versions)</Typography.Text>
           <ReplaceImageButton
             path={`/collections/${record.id}/hero/image`}
             hint="A tall 2:3 image with decoration at the top and a plain colour below. The headline position, fade colour and headline contrast are re-measured from it."

@@ -5,11 +5,11 @@ import {
   TouchableOpacity,
   StyleSheet,
   Modal,
-  ActivityIndicator,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
 } from "react-native";
+import { Loader } from "./Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
@@ -173,7 +173,7 @@ export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps
               activeOpacity={0.8}
             >
               {saving ? (
-                <ActivityIndicator color="#fff" size="small" />
+                <Loader color="#fff" size="small" />
               ) : (
                 <Text style={styles.buttonText}>{t.profile.saveContinue}</Text>
               )}

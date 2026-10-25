@@ -1,5 +1,6 @@
 import { useEffect, type ReactNode } from "react";
-import { View, ScrollView, KeyboardAvoidingView, Platform, RefreshControl, ActivityIndicator, StyleSheet } from "react-native";
+import { View, ScrollView, KeyboardAvoidingView, Platform, RefreshControl, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { Stack } from "expo-router";
 import { colors } from "../../constants/theme";
 import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
@@ -30,7 +31,7 @@ export function ManageStackScreen(props: ManageStackScreenProps) {
   const keyboard = useKeyboardReveal();
   useEffect(() => keyboard.scrollRef.current?.scrollTo({ y: 0, animated: false }), [scrollKey, keyboard.scrollRef]);
   let body: ReactNode;
-  if (loading) body = <ActivityIndicator style={styles.loading} color={colors.primary} size="large" />;
+  if (loading) body = <Loader style={styles.loading} size="large" />;
   else if (error) body = <EmptyState icon="cloud-offline-outline" title="Couldn't load" message={error} action={onRetry ? { label: "Try again", onPress: onRetry } : undefined} />;
   else body = children;
 

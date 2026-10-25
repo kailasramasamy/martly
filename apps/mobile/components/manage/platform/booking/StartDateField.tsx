@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, Text, TouchableOpacity, ActivityIndicator, ScrollView, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, StyleSheet } from "react-native";
+import { Loader } from "../../../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { BottomSheet } from "../../../search/BottomSheet";
 import { colors, fonts } from "../../../../constants/theme";
@@ -72,7 +73,7 @@ export function StartDateField({ value, error, product, quantity, categoryId, ex
       </TouchableOpacity>
       <BottomSheet visible={open} title="Start date" onClose={() => setOpen(false)}>
         <ScrollView contentContainerStyle={styles.body}>
-          {loading ? <ActivityIndicator color={colors.primary} style={styles.state} /> : null}
+          {loading ? <Loader style={styles.state} /> : null}
           {failed ? <Text style={[styles.state, styles.failed]}>Couldn't load availability. Try again in a moment.</Text> : null}
           {calendar ? (
             <>

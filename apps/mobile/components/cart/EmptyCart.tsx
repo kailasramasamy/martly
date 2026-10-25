@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react";
-import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { router, useFocusEffect } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
@@ -59,7 +60,7 @@ export function EmptyCart() {
                 disabled={reorder.reorderingId === lastOrderId}
               >
                 {reorder.reorderingId === lastOrderId ? (
-                  <ActivityIndicator size="small" color={colors.primary} />
+                  <Loader size="small" />
                 ) : (
                   <Ionicons name="refresh" size={18} color={colors.primary} />
                 )}

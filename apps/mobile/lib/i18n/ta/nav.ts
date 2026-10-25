@@ -29,6 +29,7 @@ export const nav: Strings<"nav"> = {
   ticketDetails: "புகார் விவரங்கள்",
   smartReorder: "விரைவு மறுஆர்டர்",
   speakList: "பட்டியலைச் சொல்லுங்கள்",
+  storeWalk: "கடையைச் சுற்றிப் பாருங்கள்",
   myList: "என் பட்டியல்",
   returnRequest: "திருப்பி அனுப்பக் கோரு",
   liveTracking: "நேரலை கண்காணிப்பு",

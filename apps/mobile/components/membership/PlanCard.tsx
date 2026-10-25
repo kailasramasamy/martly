@@ -1,4 +1,5 @@
-import { View, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import type { MembershipPlan } from "../../lib/types";
@@ -62,7 +63,7 @@ export function PlanCard({ plan, monthlyPrice, bestValue, busy, disabled, onSubs
         activeOpacity={0.85}
       >
         {busy ? (
-          <ActivityIndicator size="small" color={bestValue ? colors.accentText : "#fff"} />
+          <Loader size="small" color={bestValue ? colors.accentText : "#fff"} />
         ) : (
           <Text style={[styles.buttonText, bestValue && styles.buttonTextBest]}>{t.get(t.durations[plan.duration])}</Text>
         )}

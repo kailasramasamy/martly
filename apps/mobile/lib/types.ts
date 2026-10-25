@@ -1,6 +1,6 @@
 import type { BrandPick } from "@martly/shared/constants";
 import type { MultiBuyOffer } from "@martly/shared/offers";
-import type { CampaignTile, CouponOffer, HomeTheme } from "@martly/shared/types";
+import type { CampaignTile, CouponOffer, HomeTheme, StoreWalkAisle, StoreWalkRoute } from "@martly/shared/types";
 import type { PaginatedResponse } from "@martly/shared/types";
 
 export interface Store {
@@ -81,6 +81,10 @@ export interface StoreProduct {
 }
 
 /** POST /cart/review: the cart's lines as sold now (a missing line can't be bought) and what to suggest beside them */
+/** Walk the store: one department's aisles, and one aisle's products */
+export type WalkRoute = StoreWalkRoute<StoreProduct>;
+export type WalkAisle = StoreWalkAisle<StoreProduct>;
+
 export interface CartReview {
   lines: StoreProduct[];
   /** Usual items that are due and not in the cart; empty for guests */

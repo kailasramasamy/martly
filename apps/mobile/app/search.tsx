@@ -296,17 +296,39 @@ function useSuggestionPanel(storeId: string | undefined, search: ReturnType<type
   };
 }
 
+// Searching inside an aisle: the title names it
+function useAisleTitle(name: string | undefined) {
+  const navigation = useNavigation();
+  const t = useStrings("storeWalk");
+  useEffect(() => {
+    if (name) navigation.setOptions({ title: t.searchIn(name) });
+  }, [name, navigation, t]);
+}
+
+function AisleSearchHint({ name }: { name: string }) {
+  const t = useStrings("storeWalk");
+  return (
+    <View style={styles.aisleHint}>
+      <Ionicons name="search" size={28} color={colors.textSecondary} />
+      <Text style={styles.aisleHintText}>{t.searchInHint(name)}</Text>
+    </View>
+  );
+}
+
 export default function SearchScreen() {
-  const { categoryId, hasDiscount, sortBy, q, voice } = useLocalSearchParams<{
+  const { categoryId, hasDiscount, sortBy, q, voice, within, withinName } = useLocalSearchParams<{
     categoryId?: string; hasDiscount?: string; sortBy?: string; q?: string; voice?: string;
+    /** Search inside one aisle (from Walk the store) */
+    within?: string; withinName?: string;
   }>();
   const { selectedStore } = useStore();
-  const search = useProductSearch(selectedStore?.id, { categoryId, hasDiscount, sortBy }, q ?? "");
+  const search = useProductSearch(selectedStore?.id, { categoryId, hasDiscount, sortBy, within }, q ?? "");
+  useAisleTitle(withinName);
   const { filters, facets, results, loading } = search;
   const [sheet, setSheet] = useState<SheetName | null>(null);
   useScreenTitle(categoryId, hasDiscount, sortBy);
   const isDeepLink = !!(categoryId || hasDiscount || sortBy);
-  const showLanding = !isDeepLink && !search.query.trim();
+  const showLanding = !isDeepLink && !within && !search.query.trim();
   const landing = useSearchLanding(selectedStore?.id, !isDeepLink);
   const recents = useRecentSearches();
   const { commit, track } = useSearchCommit(selectedStore?.id, search.activeQuery, results.length, loading, recents.add);
@@ -330,7 +352,9 @@ export default function SearchScreen() {
       <View style={styles.container}>
         <SearchInput value={search.query} onChangeText={panel.onChangeText} onSubmit={submit} autoVoice={voice === "1"} />
         <View style={styles.body}>
-          {showLanding ? (
+          {within && !search.query.trim() ? (
+            <AisleSearchHint name={withinName ?? ""} />
+          ) : showLanding ? (
             <SearchLanding
               data={landing.data}
               loading={landing.loading}
@@ -356,6 +380,8 @@ export default function SearchScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.background },
+  aisleHint: { alignItems: "center", gap: 10, paddingTop: 64, paddingHorizontal: 32 },
+  aisleHintText: { fontSize: 14, color: colors.textSecondary, textAlign: "center" },
   searchRow: { padding: spacing.md, paddingBottom: spacing.xs },
   searchBox: {
     flexDirection: "row",

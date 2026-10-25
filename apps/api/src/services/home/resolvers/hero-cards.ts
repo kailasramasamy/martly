@@ -1,9 +1,9 @@
 import {
-  HERO_BUY_GET_MIN, HERO_BUY_GET_PRODUCTS, HERO_CARD_THEMES, HERO_MIN_CARDS, HERO_MOST_BOUGHT_PRODUCTS, HERO_RIGHT_NOW_MIN, HERO_RIGHT_NOW_PRODUCTS,
-  type HeroCardKind, type HeroCardTheme,
+  festivalCardTheme, HERO_BUY_GET_MIN, HERO_BUY_GET_PRODUCTS, HERO_CARD_PALETTES, HERO_CARD_THEMES, HERO_COLLECTION_MIN,
+  HERO_COLLECTION_PRODUCTS, HERO_MIN_CARDS, HERO_MOST_BOUGHT_PRODUCTS, HERO_RIGHT_NOW_MIN, HERO_RIGHT_NOW_PRODUCTS, type FixedHeroCardKind,
 } from "@martly/shared/constants";
-import { homeSectionConfigSchemas } from "@martly/shared/schemas";
-import type { HeroCard, HomeTheme } from "@martly/shared/types";
+import { homeSectionConfigSchemas, type HeroCardEntry } from "@martly/shared/schemas";
+import type { HeroCard } from "@martly/shared/types";
 import { rankedCollectionProductIds } from "../../collection-products.js";
 import { storeSpecials } from "../../search-landing.js";
 import { withAllSizes } from "../../store-feed.js";
@@ -16,35 +16,12 @@ import { festiveHeroesFor } from "./system.js";
 
 type Card = HeroCard<unknown>;
 
-function blend(hex: string, toward: string, amount: number) {
-  const parse = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
-  const [a, b] = [parse(hex), parse(toward)];
-  return `#${a.map((c, i) => Math.round(c + (b[i] - c) * amount).toString(16).padStart(2, "0")).join("")}`;
-}
-
-// A festival's designer theme as card colours; a dark festival still washes the page in a pale tint of its colour,
-// so the header and search bar always sit on light
-function festivalTheme(theme: HomeTheme): HeroCardTheme {
-  const page = "#f8fafc";
-  if (!theme.dark) {
-    // The card is shaded a touch towards the ink, so it stands off the wash of the same colour
-    return {
-      tint: theme.background, tintSoft: blend(theme.background, page, 0.5),
-      ink: theme.title, card: blend(theme.background, theme.title, 0.08), cardInk: theme.title,
-    };
-  }
-  return {
-    tint: blend(theme.background, page, 0.78), tintSoft: blend(theme.background, page, 0.9),
-    ink: theme.background, card: theme.background, cardInk: theme.title,
-  };
-}
-
 async function festive(ctx: ResolveContext): Promise<Card | null> {
   const [hero] = await festiveHeroesFor(ctx);
   if (!hero) return null;
   const { theme, tiles, ...festival } = hero;
   return {
-    id: `festive-${hero.id}`, kind: "FESTIVE", theme: festivalTheme(theme),
+    id: `festive-${hero.id}`, kind: "FESTIVE", theme: festivalCardTheme(theme),
     festival: { ...festival, tiles: tiles.map(({ id, title, translations, imageUrl }) => ({ id, title, translations, imageUrl })) },
   };
 }
@@ -61,38 +38,56 @@ async function mostBoughtCard(ctx: ResolveContext): Promise<Card | null> {
     : null;
 }
 
-async function storeSpecial(ctx: ResolveContext): Promise<Card | null> {
-  const [collection] = await storeSpecials(ctx.prisma, ctx.store.id, ctx.store.organizationId, 1);
+// The special the admin picked, or the store's latest one
+async function storeSpecial(ctx: ResolveContext, entry: Extract<HeroCardEntry, { kind: "STORE_SPECIAL" }>): Promise<Card | null> {
+  const [collection] = await storeSpecials(ctx.prisma, ctx.store.id, ctx.store.organizationId, 1, entry.collectionId);
   return collection
     ? { id: `store-special-${collection.id}`, kind: "STORE_SPECIAL", theme: HERO_CARD_THEMES.STORE_SPECIAL, collection }
     : null;
 }
 
-// The collection the admin set for this part of the day, each product once (its first size) so a row is a product
-async function rightNow(ctx: ResolveContext, config: Config): Promise<Card | null> {
-  const dayPart = getTimePeriod();
-  const collection = await liveCollection(ctx, config.rightNow[dayPart] ?? null);
+// A live collection's top products at this store, each once (its first size) so a row is a product; null when it has
+// fewer than `min` in stock
+async function collectionProducts(ctx: ResolveContext, collectionId: string | null, take: number, min: number) {
+  const collection = await liveCollection(ctx, collectionId);
   if (!collection) return null;
-  const ranked = await rankedCollectionProductIds(ctx.prisma, collection.id, ctx.store.id, 1, HERO_RIGHT_NOW_PRODUCTS);
-  if (ranked.length < HERO_RIGHT_NOW_MIN) return null;
+  const ranked = await rankedCollectionProductIds(ctx.prisma, collection.id, ctx.store.id, 1, take);
+  if (ranked.length < min) return null;
   const sizes = await withAllSizes(ctx.prisma, ctx.store.id, ranked.map((r) => ({ productId: r.id })));
   const products = sizes.filter((sp, i) => sizes.findIndex((o) => o.productId === sp.productId) === i);
   const { id, title, subtitle, translations } = collection;
-  return {
-    id: `right-now-${id}`, kind: "RIGHT_NOW", theme: HERO_CARD_THEMES.RIGHT_NOW, dayPart,
-    collection: { id, title, subtitle, translations }, products, total: ranked[0].total,
-  };
+  return { collection: { id, title, subtitle, translations }, products, total: ranked[0].total };
+}
+
+// The collection the admin set for this part of the day
+async function rightNow(ctx: ResolveContext, config: Config): Promise<Card | null> {
+  const dayPart = getTimePeriod();
+  const body = await collectionProducts(ctx, config.rightNow[dayPart] ?? null, HERO_RIGHT_NOW_PRODUCTS, HERO_RIGHT_NOW_MIN);
+  return body && { id: `right-now-${body.collection.id}`, kind: "RIGHT_NOW", theme: HERO_CARD_THEMES.RIGHT_NOW, dayPart, ...body };
+}
+
+async function collectionCard(ctx: ResolveContext, entry: Extract<HeroCardEntry, { kind: "COLLECTION" }>): Promise<Card | null> {
+  const body = await collectionProducts(ctx, entry.collectionId, HERO_COLLECTION_PRODUCTS, HERO_COLLECTION_MIN);
+  return body && { id: `collection-${body.collection.id}`, kind: "COLLECTION", theme: HERO_CARD_PALETTES[entry.palette], ...body };
 }
 
 type Config = ReturnType<typeof homeSectionConfigSchemas.HERO_CARDS.parse>;
 
-const BUILDERS: Record<HeroCardKind, (ctx: ResolveContext, config: Config) => Promise<Card | null>> = {
-  FESTIVE: festive, BUY_GET: buyGet, MOST_BOUGHT: mostBoughtCard, STORE_SPECIAL: storeSpecial, RIGHT_NOW: rightNow,
+const BUILDERS: Record<Exclude<FixedHeroCardKind, "STORE_SPECIAL">, (ctx: ResolveContext, config: Config) => Promise<Card | null>> = {
+  FESTIVE: festive, BUY_GET: buyGet, MOST_BOUGHT: mostBoughtCard, RIGHT_NOW: rightNow,
 };
+
+function buildCard(ctx: ResolveContext, config: Config, card: HeroCardEntry) {
+  if (card.kind === "COLLECTION") return collectionCard(ctx, card);
+  if (card.kind === "STORE_SPECIAL") return storeSpecial(ctx, card);
+  return BUILDERS[card.kind](ctx, config);
+}
 
 /** The tall cards leading Home, in the admin's order; a card the store has too little for is left out */
 export const heroCards: SectionResolver = async (ctx, entry) => {
   const config = homeSectionConfigSchemas.HERO_CARDS.parse(entry.config);
-  const cards = (await Promise.all(config.cards.map((kind) => BUILDERS[kind](ctx, config)))).filter((c): c is Card => c !== null);
+  const built = (await Promise.all(config.cards.map((card) => buildCard(ctx, config, card)))).filter((c): c is Card => c !== null);
+  // "Latest store special" can land on one that's also picked by name; it shows once, in the earlier slot
+  const cards = built.filter((c, i) => built.findIndex((o) => o.id === c.id) === i);
   return cards.length >= HERO_MIN_CARDS ? { ...sectionBase(entry), type: "HERO_CARDS", cards } : null;
 };

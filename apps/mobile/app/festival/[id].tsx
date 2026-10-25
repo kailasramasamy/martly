@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import { Loader } from "../../components/Loader";
 import { useLocalSearchParams, useNavigation } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
@@ -32,7 +33,7 @@ interface ShelfProps {
 function TileShelf({ collectionId, tileId, aisleId, storeId }: ShelfProps) {
   const t = useStrings("home");
   const { products, loading, loadingMore, failed, loadMore } = useTileProducts(collectionId, tileId, storeId, aisleId);
-  if (loading) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
+  if (loading) return <Loader style={styles.spinner} />;
   if (failed) return <Message icon="cloud-offline-outline" text={t.tileFailed} />;
   if (products.length === 0) return <Message icon="basket-outline" text={t.tileEmpty} />;
   return (
@@ -42,7 +43,7 @@ function TileShelf({ collectionId, tileId, aisleId, storeId }: ShelfProps) {
       contentContainerStyle={styles.grid}
       onEndReached={loadMore}
       onEndReachedThreshold={0.6}
-      ListFooterComponent={loadingMore ? <ActivityIndicator style={styles.more} color={colors.primary} /> : null}
+      ListFooterComponent={loadingMore ? <Loader style={styles.more} /> : null}
     />
   );
 }
@@ -76,7 +77,7 @@ export default function FestivalScreen() {
     });
   }, [hero, language, navigation]);
 
-  if (loading) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
+  if (loading) return <Loader style={styles.spinner} />;
   if (!hero || !selected || !storeId) return <Message icon="sparkles-outline" text={t.festivalEnded} />;
 
   // Light title ink only reads on the festive band; white chips and pills need the band colour instead

@@ -5,12 +5,12 @@ import {
   TextInput,
   TouchableOpacity,
   StyleSheet,
-  ActivityIndicator,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
   Image,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import * as ImagePicker from "expo-image-picker";
 import { Ionicons } from "@expo/vector-icons";
@@ -190,7 +190,7 @@ function WriteReviewScreen() {
         >
           {submitting ? (
             <View style={styles.submitLoading}>
-              <ActivityIndicator color="#fff" size="small" />
+              <Loader color="#fff" size="small" />
               <Text style={styles.submitBtnText}>{submitLabel}</Text>
             </View>
           ) : (

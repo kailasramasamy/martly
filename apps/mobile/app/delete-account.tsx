@@ -1,8 +1,15 @@
 import { useState } from "react";
 import {
-  View, Text, TextInput, TouchableOpacity, ScrollView, ActivityIndicator, StyleSheet,
-  KeyboardAvoidingView, Platform,
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  ScrollView,
+  StyleSheet,
+  KeyboardAvoidingView,
+  Platform,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
@@ -130,7 +137,7 @@ function DeleteAccountScreen() {
           activeOpacity={0.85}
         >
           {loading ? (
-            <ActivityIndicator color={reviewing ? colors.error : "#fff"} />
+            <Loader color={reviewing ? colors.error : "#fff"} />
           ) : (
             <Text style={[styles.dangerText, reviewing && styles.dangerOutlineText]}>
               {reviewing ? t.continueDelete : t.deleteMine}

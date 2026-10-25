@@ -223,12 +223,15 @@ export interface HeroFestival {
   tiles: { id: string; title: string; translations: unknown; imageUrl: string }[];
 }
 
+type HeroCollection = { id: string; title: string; subtitle: string | null; translations: unknown };
+
 type HeroCardBody<P> =
   | { kind: "FESTIVE"; festival: HeroFestival }
   | { kind: "BUY_GET"; products: P[]; total: number }
   | { kind: "MOST_BOUGHT"; products: P[] }
   | { kind: "STORE_SPECIAL"; collection: StoreSpecialsSection<P>["collections"][number] }
-  | { kind: "RIGHT_NOW"; dayPart: DayPart; collection: { id: string; title: string; subtitle: string | null; translations: unknown }; products: P[]; total: number };
+  | { kind: "RIGHT_NOW"; dayPart: DayPart; collection: HeroCollection; products: P[]; total: number }
+  | { kind: "COLLECTION"; collection: HeroCollection; products: P[]; total: number };
 
 export type HeroCard<P> = HeroCardBody<P> & { id: string; theme: HeroCardTheme };
 

@@ -1,5 +1,5 @@
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
-import { Table, Space, Tag, Switch } from "antd";
+import { Table, Space, Tag, Switch, Tooltip } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import type { HttpError } from "@refinedev/core";
 import { useUpdate } from "@refinedev/core";
@@ -21,6 +21,9 @@ interface CollectionRecord {
   endsAt: string | null;
   organizationId: string | null;
   organization: { id: string; name: string } | null;
+  heroImageUrl: string | null;
+  heroTheme: { background: string; title: string } | null;
+  liveFestival: boolean;
   _count: { items: number };
 }
 
@@ -30,6 +33,19 @@ const getStatus = (r: CollectionRecord) => {
   if (r.startsAt && dayjs(r.startsAt).isAfter(now)) return { color: "blue", label: "Scheduled" };
   if (r.endsAt && dayjs(r.endsAt).isBefore(now)) return { color: "default", label: "Expired" };
   return { color: "green", label: "Active now" };
+};
+
+/** Marks a collection with a Home hero, and the one Home's "Live festival" card shows right now */
+const HeroTag = ({ record }: { record: CollectionRecord }) => {
+  const style = record.heroTheme ? { background: record.heroTheme.background, color: record.heroTheme.title, borderColor: record.heroTheme.title } : undefined;
+  if (!record.liveFestival) {
+    return <Tooltip title="Can lead Home's Live festival card while its dates are on"><Tag style={style}>Home hero</Tag></Tooltip>;
+  }
+  return (
+    <Tooltip title="Home's Live festival card shows this now. A store that stocks none of its aisles shows the next live one.">
+      <Tag style={style}>● Live festival</Tag>
+    </Tooltip>
+  );
 };
 
 export const CollectionList = () => {
@@ -48,7 +64,7 @@ export const CollectionList = () => {
     <List>
       <div style={{ marginBottom: 16 }}>
         <DebouncedSearch
-          placeholder="Search collections..."
+          placeholder="Search collections, or live / home hero"
           prefix={<SearchOutlined />}
           onSearch={(q) => searchFormProps.onFinish?.({ q })}
           style={{ maxWidth: 360 }}
@@ -62,6 +78,7 @@ export const CollectionList = () => {
             <Space size={8}>
               {v}
               {record.source === "AGENT" && <Tag color="purple">AI-curated</Tag>}
+              {record.heroImageUrl && <HeroTag record={record} />}
             </Space>
           )}
         />

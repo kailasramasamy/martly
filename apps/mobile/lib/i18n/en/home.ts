@@ -66,8 +66,6 @@ export const home = {
 
   savedA11y: (title: string) => `${title}, saved for checkout`,
   tapToSaveA11y: (title: string) => `${title}. Tap to save for checkout`,
-  savedForCheckout: "Saved for checkout",
-  tapToSave: "Tap to save",
   couponApplied: (code: string) => `${code} will be applied at checkout`,
   offersForYou: (n: number) => `OFFERS FOR YOU · ${n}`,
 
@@ -149,6 +147,7 @@ export const home = {
   mostBoughtEmpty: "Nothing here yet. Check back once the store has a few orders.",
   mostBoughtUnavailable: "Couldn't load the list. Go back and try again.",
   heroRightNow: { morning: "Picked for this morning", afternoon: "Picked for this afternoon", evening: "Picked for this evening", night: "Picked for tonight" },
+  heroCollectionCount: (n: number) => `${n} product${n === 1 ? "" : "s"} to pick from`,
   heroOnlyHere: "Only at this store",
   heroShopNow: "Shop now",
 };

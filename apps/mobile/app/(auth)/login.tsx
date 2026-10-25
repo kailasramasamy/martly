@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import { View, Text, TextInput, Pressable, StyleSheet, ActivityIndicator, KeyboardAvoidingView, ScrollView, Platform, Image } from "react-native";
+import { View, Text, TextInput, Pressable, StyleSheet, KeyboardAvoidingView, ScrollView, Platform, Image } from "react-native";
+import { Loader } from "../../components/Loader";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
@@ -158,7 +159,7 @@ export default function LoginScreen() {
               disabled={loading}
             >
               {loading ? (
-                <ActivityIndicator color="#fff" size="small" />
+                <Loader color="#fff" size="small" />
               ) : (
                 <Text style={styles.buttonText}>{common.continue}</Text>
               )}
@@ -200,7 +201,7 @@ export default function LoginScreen() {
               disabled={loading}
             >
               {loading ? (
-                <ActivityIndicator color="#fff" size="small" />
+                <Loader color="#fff" size="small" />
               ) : (
                 <Text style={styles.buttonText}>{t.login.verify}</Text>
               )}
@@ -242,7 +243,7 @@ export default function LoginScreen() {
               disabled={loading}
             >
               {loading ? (
-                <ActivityIndicator color="#fff" size="small" />
+                <Loader color="#fff" size="small" />
               ) : (
                 <Text style={styles.buttonText}>{t.login.getStarted}</Text>
               )}

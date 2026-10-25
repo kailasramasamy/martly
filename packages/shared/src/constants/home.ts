@@ -29,6 +29,7 @@ export const HomeSectionType = {
   STORE_SPECIALS: "STORE_SPECIALS",
   BUY_GET_DEALS: "BUY_GET_DEALS",
   HERO_CARDS: "HERO_CARDS",
+  STORE_WALK: "STORE_WALK",
 } as const;
 export type HomeSectionType = (typeof HomeSectionType)[keyof typeof HomeSectionType];
 
@@ -78,6 +79,7 @@ export const HomeSectionTypeLabels: Record<HomeSectionType, string> = {
   STORE_SPECIALS: "Store specials",
   BUY_GET_DEALS: "Buy X get Y free",
   HERO_CARDS: "Hero cards",
+  STORE_WALK: "Walk the store",
 };
 
 /** The tall cards the Home hero carousel can show, in their default order */
@@ -87,9 +89,14 @@ export const HeroCardKind = {
   MOST_BOUGHT: "MOST_BOUGHT",
   STORE_SPECIAL: "STORE_SPECIAL",
   RIGHT_NOW: "RIGHT_NOW",
+  /** A collection the admin picks, in a palette they pick; can be added any number of times */
+  COLLECTION: "COLLECTION",
 } as const;
 export type HeroCardKind = (typeof HeroCardKind)[keyof typeof HeroCardKind];
 export const HERO_CARD_KINDS = Object.values(HeroCardKind);
+/** The cards that fill themselves; each shows at most once */
+export type FixedHeroCardKind = Exclude<HeroCardKind, "COLLECTION">;
+export const FIXED_HERO_CARD_KINDS = HERO_CARD_KINDS.filter((k): k is FixedHeroCardKind => k !== "COLLECTION");
 
 export const HeroCardKindLabels: Record<HeroCardKind, string> = {
   FESTIVE: "Live festival",
@@ -97,6 +104,7 @@ export const HeroCardKindLabels: Record<HeroCardKind, string> = {
   MOST_BOUGHT: "Most bought at the store",
   STORE_SPECIAL: "Store special",
   RIGHT_NOW: "Right now (by time of day)",
+  COLLECTION: "Collection",
 };
 
 /** Parts of the day (IST) the "Right now" card switches its collection by */
@@ -110,13 +118,55 @@ export const DAY_PARTS = Object.values(DayPart);
  */
 export interface HeroCardTheme { tint: string; tintSoft: string; ink: string; card: string; cardInk: string }
 
-/** Fixed looks for the cards that have no designer theme; a festival card takes its colours from the festival */
-export const HERO_CARD_THEMES: Record<Exclude<HeroCardKind, "FESTIVE">, HeroCardTheme> = {
-  BUY_GET: { tint: "#bfe6de", tintSoft: "#e2f4f0", ink: "#115e59", card: "#b3ddd2", cardInk: "#115e59" },
-  MOST_BOUGHT: { tint: "#ddd6fe", tintSoft: "#efebff", ink: "#4c1d95", card: "#d4c9fb", cardInk: "#4c1d95" },
-  STORE_SPECIAL: { tint: "#fde68a", tintSoft: "#fef3c7", ink: "#78350f", card: "#fbe2a4", cardInk: "#78350f" },
-  RIGHT_NOW: { tint: "#bae6fd", tintSoft: "#e0f2fe", ink: "#075985", card: "#b0daf5", cardInk: "#075985" },
+/** Looks an admin can give a collection card; the fixed cards wear the first four */
+export const HeroCardPalette = {
+  MINT: "MINT", LAVENDER: "LAVENDER", AMBER: "AMBER", SKY: "SKY", ROSE: "ROSE", SAFFRON: "SAFFRON", LIME: "LIME",
+} as const;
+export type HeroCardPalette = (typeof HeroCardPalette)[keyof typeof HeroCardPalette];
+export const HERO_CARD_PALETTES: Record<HeroCardPalette, HeroCardTheme> = {
+  MINT: { tint: "#bfe6de", tintSoft: "#e2f4f0", ink: "#115e59", card: "#b3ddd2", cardInk: "#115e59" },
+  LAVENDER: { tint: "#ddd6fe", tintSoft: "#efebff", ink: "#4c1d95", card: "#d4c9fb", cardInk: "#4c1d95" },
+  AMBER: { tint: "#fde68a", tintSoft: "#fef3c7", ink: "#78350f", card: "#fbe2a4", cardInk: "#78350f" },
+  SKY: { tint: "#bae6fd", tintSoft: "#e0f2fe", ink: "#075985", card: "#b0daf5", cardInk: "#075985" },
+  ROSE: { tint: "#fecdd3", tintSoft: "#ffe4e6", ink: "#9f1239", card: "#fbd0d6", cardInk: "#9f1239" },
+  SAFFRON: { tint: "#fed7aa", tintSoft: "#ffedd5", ink: "#9a3412", card: "#fbcfa0", cardInk: "#9a3412" },
+  LIME: { tint: "#d9f99d", tintSoft: "#ecfccb", ink: "#3f6212", card: "#d3f08f", cardInk: "#3f6212" },
 };
+export const HeroCardPaletteLabels: Record<HeroCardPalette, string> = {
+  MINT: "Mint", LAVENDER: "Lavender", AMBER: "Amber", SKY: "Sky", ROSE: "Rose", SAFFRON: "Saffron", LIME: "Lime",
+};
+
+/** Fixed looks for the cards that have no designer theme; a festival card takes its colours from the festival */
+export const HERO_CARD_THEMES: Record<Exclude<FixedHeroCardKind, "FESTIVE">, HeroCardTheme> = {
+  BUY_GET: HERO_CARD_PALETTES.MINT,
+  MOST_BOUGHT: HERO_CARD_PALETTES.LAVENDER,
+  STORE_SPECIAL: HERO_CARD_PALETTES.AMBER,
+  RIGHT_NOW: HERO_CARD_PALETTES.SKY,
+};
+function blend(hex: string, toward: string, amount: number) {
+  const parse = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const [a, b] = [parse(hex), parse(toward)];
+  return `#${a.map((c, i) => Math.round(c + (b[i] - c) * amount).toString(16).padStart(2, "0")).join("")}`;
+}
+
+/**
+ * A festival's designer theme as card colours; a dark festival still washes the page in a pale tint of its colour,
+ * so the header and search bar always sit on light
+ */
+export function festivalCardTheme(theme: { background: string; title: string; dark: boolean }): HeroCardTheme {
+  const page = "#f8fafc";
+  if (!theme.dark) {
+    // The card is shaded a touch towards the ink, so it stands off the wash of the same colour
+    return {
+      tint: theme.background, tintSoft: blend(theme.background, page, 0.5),
+      ink: theme.title, card: blend(theme.background, theme.title, 0.08), cardInk: theme.title,
+    };
+  }
+  return {
+    tint: blend(theme.background, page, 0.78), tintSoft: blend(theme.background, page, 0.9),
+    ink: theme.background, card: theme.background, cardInk: theme.title,
+  };
+}
 /** Products a buy X get Y card lists, and the fewest offers worth a card */
 export const HERO_BUY_GET_PRODUCTS = 4;
 export const HERO_BUY_GET_MIN = 3;
@@ -127,6 +177,9 @@ export const MOST_BOUGHT_LIST = 30;
 /** Products the "Right now" card lists, and the fewest worth a card */
 export const HERO_RIGHT_NOW_PRODUCTS = 4;
 export const HERO_RIGHT_NOW_MIN = 3;
+/** Products a collection card lists, and the fewest worth a card */
+export const HERO_COLLECTION_PRODUCTS = 4;
+export const HERO_COLLECTION_MIN = 3;
 /** One card is a banner, not a carousel */
 export const HERO_MIN_CARDS = 2;
 

@@ -19,6 +19,7 @@ import { SuggestionRail } from "../../components/cart/SuggestionRail";
 import { useCartReview } from "../../components/cart/use-cart-review";
 import { CouponHint, PlusHint } from "../../components/cart/CartHints";
 import { EmptyCart } from "../../components/cart/EmptyCart";
+import { CartWalkNudge } from "../../components/store-walk/WalkNudge";
 import { useRequireSignIn } from "../../lib/sign-in-context";
 import { useStrings } from "../../lib/i18n/use-strings";
 
@@ -100,6 +101,7 @@ export default function CartScreen() {
           )}
           ListFooterComponent={
             <View>
+              <CartWalkNudge />
               {/* Due usual items first: the likeliest adds, and they close the gap too */}
               <SuggestionRail title={t.forgotTitle} subtitle={t.forgotSubtitle} products={review.forgotten} />
               <SuggestionRail title={t.gapRailTitle} products={review.gapFillers} />

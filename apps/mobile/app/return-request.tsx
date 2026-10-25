@@ -5,13 +5,13 @@ import {
   TextInput,
   TouchableOpacity,
   StyleSheet,
-  ActivityIndicator,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
   Image,
   Keyboard,
 } from "react-native";
+import { Loader } from "../components/Loader";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import * as ImagePicker from "expo-image-picker";
 import { Ionicons } from "@expo/vector-icons";
@@ -227,7 +227,7 @@ function ReturnRequestScreen() {
   if (loading) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color={colors.primary} />
+        <Loader size="large" />
       </View>
     );
   }
@@ -398,7 +398,7 @@ function ReturnRequestScreen() {
         >
           {submitting ? (
             <View style={styles.submitLoading}>
-              <ActivityIndicator color="#fff" size="small" />
+              <Loader color="#fff" size="small" />
               <Text style={styles.submitBtnText}>{submitLabel}</Text>
             </View>
           ) : (

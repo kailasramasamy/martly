@@ -1,4 +1,5 @@
-import { View, Text, Image, TouchableOpacity, ActivityIndicator, ScrollView, StyleSheet } from "react-native";
+import { View, Text, Image, TouchableOpacity, ScrollView, StyleSheet } from "react-native";
+import { Loader } from "../../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, radius } from "../../../constants/theme";
 import { manage } from "../ui/tokens";
@@ -20,7 +21,7 @@ function Thumb({ photo, index, onRemove, onRetry }: { photo: CapturePhoto; index
         accessibilityLabel={photo.state === "error" ? "Retry upload" : `Photo ${index + 1}`}
       >
         <Image source={{ uri: photo.uri }} style={StyleSheet.absoluteFill} />
-        {photo.state === "uploading" && <View style={styles.overlay}><ActivityIndicator color="#fff" /></View>}
+        {photo.state === "uploading" && <View style={styles.overlay}><Loader color="#fff" /></View>}
         {photo.state === "error" && (
           <View style={[styles.overlay, styles.errorOverlay]}>
             <Ionicons name="refresh" size={22} color="#fff" />

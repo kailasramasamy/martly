@@ -1,4 +1,5 @@
-import { View, Text, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Loader } from "../Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { colors, fonts } from "../../constants/theme";
@@ -27,7 +28,7 @@ function Pill({ icon, label, ink, onPress, count, busy }: PillProps) {
       accessibilityRole="button" accessibilityLabel={count ? `${label}, ${count}` : label}
     >
       <View>
-        {busy ? <ActivityIndicator size="small" color={ink} /> : <Ionicons name={icon} size={16} color={ink} />}
+        {busy ? <Loader size="small" color={ink} /> : <Ionicons name={icon} size={16} color={ink} />}
         {count ? <View style={styles.count}><Text style={styles.countText}>{count}</Text></View> : null}
       </View>
       <Text style={[styles.label, { color: ink }]} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75}>{label}</Text>

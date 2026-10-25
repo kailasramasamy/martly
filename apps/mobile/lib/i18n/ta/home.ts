@@ -68,8 +68,6 @@ export const home: Strings<"home"> = {
 
   savedA11y: (title: string) => `${title}, ஆர்டருக்காக சேமிக்கப்பட்டது`,
   tapToSaveA11y: (title: string) => `${title}. ஆர்டருக்காக சேமிக்கத் தொடுங்கள்`,
-  savedForCheckout: "ஆர்டருக்காக சேமிக்கப்பட்டது",
-  tapToSave: "சேமிக்கத் தொடுங்கள்",
   couponApplied: (code: string) => `${code} ஆர்டர் செய்யும்போது பயன்படுத்தப்படும்`,
   offersForYou: (n: number) => `உங்களுக்கான சலுகைகள் · ${n}`,
 
@@ -149,6 +147,7 @@ export const home: Strings<"home"> = {
   mostBoughtEmpty: "இன்னும் எதுவும் இல்லை. கடைக்குச் சில ஆர்டர்கள் வந்ததும் பாருங்கள்.",
   mostBoughtUnavailable: "பட்டியலை ஏற்ற முடியவில்லை. பின்சென்று மீண்டும் முயலவும்.",
   heroRightNow: { morning: "இன்று காலைக்கு", afternoon: "இன்று மதியத்துக்கு", evening: "இன்று மாலைக்கு", night: "இன்று இரவுக்கு" },
+  heroCollectionCount: (n: number) => `தேர்ந்தெடுக்க ${n} பொருட்கள்`,
   heroOnlyHere: "இந்தக் கடையில் மட்டும்",
   heroShopNow: "வாங்குங்கள்",
 };

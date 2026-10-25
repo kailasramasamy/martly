@@ -5,11 +5,11 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  ActivityIndicator,
   Alert,
   Image,
   RefreshControl,
 } from "react-native";
+import { Loader } from "../../components/Loader";
 import { useLocalSearchParams, useRouter, useFocusEffect } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
@@ -220,7 +220,7 @@ function SubscriptionDetailScreen() {
   if (loading) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color={colors.primary} />
+        <Loader size="large" />
       </View>
     );
   }
@@ -495,7 +495,7 @@ function SubscriptionDetailScreen() {
 
       {updating && (
         <View style={styles.updatingOverlay}>
-          <ActivityIndicator size="small" color={colors.primary} />
+          <Loader size="small" />
         </View>
       )}
 

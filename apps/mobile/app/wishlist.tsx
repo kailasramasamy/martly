@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { View, Text, StyleSheet, ActivityIndicator } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+import { Loader } from "../components/Loader";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
@@ -48,7 +49,7 @@ function WishlistScreen() {
   }, [isAuthenticated, storeId, wishlistedIds]);
 
   if (loading) {
-    return <View style={styles.center}><ActivityIndicator size="large" color={colors.primary} /></View>;
+    return <View style={styles.center}><Loader size="large" /></View>;
   }
   if (products.length === 0) {
     return <EmptyState title={t.emptyTitle} text={t.emptyText} />;

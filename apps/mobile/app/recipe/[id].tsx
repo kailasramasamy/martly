@@ -6,9 +6,9 @@ import {
   Image,
   TouchableOpacity,
   StyleSheet,
-  ActivityIndicator,
   Alert,
 } from "react-native";
+import { Loader } from "../../components/Loader";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -145,7 +145,7 @@ export default function RecipeDetailScreen() {
   if (loading) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color={colors.primary} />
+        <Loader size="large" />
       </View>
     );
   }
@@ -242,7 +242,7 @@ export default function RecipeDetailScreen() {
             disabled={adding}
           >
             {adding ? (
-              <ActivityIndicator size="small" color="#fff" />
+              <Loader size="small" color="#fff" />
             ) : (
               <Text style={styles.addButtonText}>
                 {t.recipe.addButton(checkedAvailable.length, Math.round(totalPrice))}

@@ -1,4 +1,5 @@
-import { View, Text, FlatList, Alert, ActivityIndicator, RefreshControl, StyleSheet } from "react-native";
+import { View, Text, FlatList, Alert, RefreshControl, StyleSheet } from "react-native";
+import { Loader } from "../../Loader";
 import { Stack, useRouter } from "expo-router";
 import { colors, fonts, radius } from "../../../constants/theme";
 import { useManageScope } from "../../../lib/manage-scope-context";
@@ -48,7 +49,7 @@ export function HomeLayoutScreen() {
   return (
     <View style={styles.root}>
       <Stack.Screen options={{ title: "Home layout", headerRight }} />
-      {loading ? <ActivityIndicator style={styles.loading} color={colors.primary} size="large" /> : (
+      {loading ? <Loader style={styles.loading} size="large" /> : (
         <FlatList
           data={data?.sections ?? []}
           keyExtractor={(s) => s.id}
