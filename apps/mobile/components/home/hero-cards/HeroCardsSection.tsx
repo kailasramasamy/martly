@@ -17,18 +17,27 @@ const INTERVAL = HERO_CARD_WIDTH + HERO_CARD_GAP;
 // The first card lines up with the page's 16px edge; the next one peeks in on the right
 const EDGE = 16;
 const ROTATE_MS = 5000;
+// How far the next card peeks in; the last card comes to rest this much short of a full step, against the right edge
+const PEEK = SCREEN_WIDTH - 2 * EDGE - HERO_CARD_WIDTH;
+
+/** Where each card comes to rest: at the left edge, except the last, which rests at the right edge */
+const restingOffsets = (count: number) =>
+  Array.from({ length: count }, (_, i) => (i > 0 && i === count - 1 ? i * INTERVAL - PEEK : i * INTERVAL));
+
+const nearest = (offsets: number[], x: number) =>
+  offsets.reduce((best, o, i) => (Math.abs(o - x) < Math.abs(offsets[best] - x) ? i : best), 0);
 // Under the header when it sits above the list rather than over this section
 const MIN_TOP = 12;
 
 /** Each card's wash, stacked in order: a card's layer fades in over the previous one as it slides into view */
-function Washes({ cards, scrollX }: { cards: Card[]; scrollX: Animated.Value }) {
+function Washes({ cards, offsets, scrollX }: { cards: Card[]; offsets: number[]; scrollX: Animated.Value }) {
   return (
     <View style={StyleSheet.absoluteFill} pointerEvents="none">
       {cards.map((card, i) => (
         <Animated.View
           key={card.id}
           style={[StyleSheet.absoluteFill, i > 0 && {
-            opacity: scrollX.interpolate({ inputRange: [(i - 1) * INTERVAL, i * INTERVAL], outputRange: [0, 1], extrapolate: "clamp" }),
+            opacity: scrollX.interpolate({ inputRange: [offsets[i - 1], offsets[i]], outputRange: [0, 1], extrapolate: "clamp" }),
           }]}
         >
           <LinearGradient colors={[card.theme.tint, card.theme.tintSoft, colors.surface]} locations={[0, 0.5, 1]} style={StyleSheet.absoluteFill} />
@@ -49,7 +58,8 @@ function Dots({ count, active, ink }: { count: number; active: number; ink: stri
 }
 
 /** Moves to the next card every few seconds while the hero is on screen and Home is in front, until the shopper swipes */
-function useAutoAdvance(count: number) {
+function useAutoAdvance(offsets: number[]) {
+  const count = offsets.length;
   const { heroInView } = useHomeSectionEnv();
   const focused = useIsFocused();
   const listRef = useRef<FlatList<Card>>(null);
@@ -59,15 +69,15 @@ function useAutoAdvance(count: number) {
 
   useEffect(() => {
     if (count < 2 || stopped || !focused || !heroInView) return undefined;
-    const timer = setTimeout(() => listRef.current?.scrollToOffset({ offset: ((active + 1) % count) * INTERVAL, animated: true }), ROTATE_MS);
+    const timer = setTimeout(() => listRef.current?.scrollToOffset({ offset: offsets[(active + 1) % count], animated: true }), ROTATE_MS);
     return () => clearTimeout(timer);
-  }, [count, stopped, focused, heroInView, active]);
+  }, [count, offsets, stopped, focused, heroInView, active]);
 
   // The header switches as the next card passes halfway, while it is still moving
   const onPosition = useCallback((e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    const next = Math.min(count - 1, Math.max(0, Math.round(e.nativeEvent.contentOffset.x / INTERVAL)));
+    const next = nearest(offsets, e.nativeEvent.contentOffset.x);
     setActive((current) => (current === next ? current : next));
-  }, [count]);
+  }, [offsets]);
 
   return { listRef, active, onPosition, stop };
 }
@@ -81,7 +91,8 @@ export const HeroCardsSection = memo(function HeroCardsSection({ section }: { se
   const backdrop = leads ? env.backdrop : null;
   const { onFestiveTheme } = env;
   const scrollX = useRef(new Animated.Value(0)).current;
-  const { listRef, active, onPosition, stop } = useAutoAdvance(cards.length);
+  const offsets = useMemo(() => restingOffsets(cards.length), [cards.length]);
+  const { listRef, active, onPosition, stop } = useAutoAdvance(offsets);
   const current = cards[active];
   useEffect(() => {
     if (leads) onFestiveTheme(heroHeaderTheme(current.theme));
@@ -93,7 +104,7 @@ export const HeroCardsSection = memo(function HeroCardsSection({ section }: { se
 
   return (
     <View style={{ paddingTop: backdrop ? backdrop.top + 4 : MIN_TOP }}>
-      <Washes cards={cards} scrollX={scrollX} />
+      <Washes cards={cards} offsets={offsets} scrollX={scrollX} />
       <Animated.FlatList
         ref={listRef}
         horizontal
@@ -101,8 +112,7 @@ export const HeroCardsSection = memo(function HeroCardsSection({ section }: { se
         keyExtractor={(card) => card.id}
         renderItem={({ item }) => <HeroCardBody card={item} />}
         ItemSeparatorComponent={Gap}
-        snapToInterval={INTERVAL}
-        snapToAlignment="start"
+        snapToOffsets={offsets}
         decelerationRate="fast"
         disableIntervalMomentum
         contentContainerStyle={styles.rail}
@@ -119,8 +129,7 @@ export const HeroCardsSection = memo(function HeroCardsSection({ section }: { se
 const Gap = () => <View style={styles.gap} />;
 
 const styles = StyleSheet.create({
-  // Room after the last card so it too can come to rest at the left edge, its wash fully in
-  rail: { paddingLeft: EDGE, paddingRight: SCREEN_WIDTH - EDGE - HERO_CARD_WIDTH },
+  rail: { paddingHorizontal: EDGE },
   gap: { width: HERO_CARD_GAP },
   dots: { flexDirection: "row", justifyContent: "center", gap: 6, paddingTop: 12, paddingBottom: 4 },
   dot: { height: 6, borderRadius: 3 },
