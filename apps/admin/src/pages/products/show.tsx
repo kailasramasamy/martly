@@ -17,6 +17,7 @@ import {
 import { FOOD_TYPE_CONFIG, PRODUCT_TYPE_CONFIG, STORAGE_TYPE_CONFIG } from "../../constants/tag-colors";
 import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../../components/ReadableSection";
+import { OwnerPickCard } from "./owner-pick";
 import { DraftBanner } from "./draft-banner";
 
 const { Text } = Typography;
@@ -281,6 +282,8 @@ export const ProductShow = () => {
               />
             </Col>
           )}
+
+          {!record.isDraft && <Col xs={24}><OwnerPickCard productId={String(record.id)} /></Col>}
 
           {/* Variants table */}
           <Col xs={24}>

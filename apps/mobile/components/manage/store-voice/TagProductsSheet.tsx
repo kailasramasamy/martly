@@ -25,8 +25,9 @@ export function TagProductsSheet({ visible, storeId, tagged, onToggle, onClose }
   const params = useMemo(() => ({ storeId, q }), [storeId, q]);
   const list = usePagedList<FeaturedStoreProduct>("/api/v1/store-products", params, { enabled: visible });
   const on = new Set(tagged.map((p) => p.id));
-  // One row per product: sizes of the same product would tag the same thing
-  const rows = list.items.filter((sp, i, all) => all.findIndex((o) => o.product.id === sp.product.id) === i);
+  // One row per product (sizes of the same product would tag the same thing), from listings shoppers can buy
+  const listed = list.items.filter((sp) => sp.isActive);
+  const rows = listed.filter((sp, i) => listed.findIndex((o) => o.product.id === sp.product.id) === i);
   return (
     <BottomSheet
       flush visible={visible} title="Tag products" onClose={onClose}

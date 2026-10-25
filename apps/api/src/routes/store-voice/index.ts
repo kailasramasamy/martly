@@ -2,6 +2,7 @@ import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import { z } from "zod";
 import { MAX_PICKS_PER_AISLE, Permission } from "@martly/shared/constants";
 import { createStorePostSchema, storePickSchema, storePostAudienceSchema, translateVoiceSchema, updateStorePostSchema } from "@martly/shared/schemas";
+import type { PostAudience } from "@martly/shared/store-voice";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
@@ -38,7 +39,7 @@ export async function storeVoiceRoutes(app: FastifyInstance) {
     if (!body.success) return reply.badRequest(body.error.issues[0].message);
     if (!(await mayManage(request, reply, body.data.storeId))) return;
     const { userIds, scope, aisleBuyers } = await postAudience(app.prisma, body.data.storeId, body.data.kind, body.data.productIds);
-    const data = { count: userIds.length, scope, aisleBuyers: aisleBuyers ?? null };
+    const data: PostAudience = { count: userIds.length, scope, aisleBuyers: aisleBuyers ?? null };
     return { success: true, data } satisfies ApiResponse<typeof data>;
   });
 

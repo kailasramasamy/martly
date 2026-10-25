@@ -101,6 +101,20 @@ The mockups are on the canvas "Store experience mockups", page "Annachi's voice"
 - **Products → a product → Owner's pick:** "I recommend this", a one-line reason with 4 starter phrases, and the aisle's
   picks (N of 3) with Remove.
 
+### Admin (web, in parity with Manage)
+
+- **Marketing → Shop posts** (`/store-posts`, `pages/store-posts/`):
+  - A store picker (defaults to the first store) and the last 30 days of posts. Each shows its kind, live/ended
+    status, the translation and products, with Edit and Delete.
+  - **New post** and Edit open a drawer with the same form as Manage: kind; text, with the other language filled in
+    to correct; up to 6 products (search finds active listings only); how long it shows ("Ends …" when editing);
+    and "Notify shoppers" with who will get it and why.
+- **Products → a product → Owner's pick** (`pages/products/owner-pick.tsx`): a store picker, "I recommend this", the
+  reason (≤90 chars) with starter phrases, and the aisle's picks (N of 3) with Remove.
+- **Access:** the `store-posts` resource (LISTING_MANAGE). The menu item and edit actions hide without it.
+- **Shared:** the "who gets this" wording is in `@martly/shared/store-voice` (`describeAudience`), so Manage and admin
+  say the same thing.
+
 ## Tested
 
 - **Seed:** `cd apps/api && npx tsx prisma/seed-store-voice.ts` adds 3 posts (fresh vegetables today, wood-pressed oils

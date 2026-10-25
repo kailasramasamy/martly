@@ -47,7 +47,7 @@ import {
   SolutionOutlined,
   WalletOutlined,
   SwapOutlined,
-  TranslationOutlined,
+  TranslationOutlined, MessageOutlined
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -85,6 +85,7 @@ import { StockCountList } from "./pages/stock-counts/list";
 import { StockCountShow } from "./pages/stock-counts/show";
 import { StockReceivePage } from "./pages/stock-receive";
 import { FeaturedProductsPage } from "./pages/featured-products";
+import { StorePostsPage } from "./pages/store-posts";
 import { CategoryList } from "./pages/categories/list";
 import { CategoryCreate } from "./pages/categories/create";
 import { CategoryEdit } from "./pages/categories/edit";
@@ -372,6 +373,11 @@ export default function App() {
                 create: "/list-glossary/create",
                 edit: "/list-glossary/edit/:id",
                 meta: { label: "List glossary", icon: <TranslationOutlined />, parent: "inventory" },
+              },
+              {
+                name: "store-posts",
+                list: "/store-posts",
+                meta: { label: "Shop posts", icon: <MessageOutlined />, parent: "marketing" },
               },
               {
                 name: "festival-events",
@@ -801,6 +807,7 @@ export default function App() {
                 </Route>
                 <Route path="/stock-receive" element={<StockReceivePage />} />
                 <Route path="/featured-products" element={<FeaturedProductsPage />} />
+                <Route path="/store-posts" element={<StorePostsPage />} />
                 <Route path="/store-intelligence" element={<StoreIntelligencePage />} />
                 <Route path="/customer-insights" element={<CustomerInsightsPage />} />
                 <Route path="/membership-plans" element={<MembershipPlans />} />

@@ -18,7 +18,8 @@ import { SwitchRow } from "../ui/SwitchRow";
 import { TextField } from "../ui/TextField";
 import { TagProductsSheet, type TaggedProduct } from "./TagProductsSheet";
 import { TranslationPreview, useTranslationPreview } from "./TranslationPreview";
-import { describeAudience, usePostAudience } from "./use-post-audience";
+import { describeAudience } from "@martly/shared/store-voice";
+import { usePostAudience } from "./use-post-audience";
 
 type Kind = CreateStorePostInput["kind"];
 // "keep": an edit leaves the end date as it is
