@@ -569,6 +569,7 @@ model Store {
   storeDeliveryZones    StoreDeliveryZone[]
   deliveryTiers         DeliveryTier[]
   deliverySlots         DeliverySlot[]
+  monthlyLists          MonthlyList[]
   expressDeliveryConfig ExpressDeliveryConfig?
   deliverySettings      StoreDeliverySettings?
   deliveryTrips         DeliveryTrip[]
@@ -641,6 +642,7 @@ model User {
   searchLogs          SearchLog[]
   cartBuilderRuns     CartBuilderRun[]
   shoppingListItems   ShoppingListItem[]
+  monthlyLists        MonthlyList[]
   promosCreated       Promo[]
   catalogDrafts       CatalogDraft[]
   memberPermissions   MemberPermission[]
@@ -832,19 +834,20 @@ model Product {
 
   searchText String @default("") @map("search_text")
 
-  organization    Organization?    @relation(fields: [organizationId], references: [id])
-  subcategory     Subcategory?     @relation(fields: [subcategoryId], references: [id])
-  brand           Brand?           @relation(fields: [brandId], references: [id])
-  variants        ProductVariant[]
-  storeProducts   StoreProduct[]
-  orderItems      OrderItem[]
-  collectionItems CollectionItem[]
-  reviews         Review[]
-  wishlistItems   WishlistItem[]
-  searchAliases   SearchAlias[]
-  searchEvents    SearchEvent[]
-  recipeItems     RecipeItem[]
-  catalogDrafts   CatalogDraft[]
+  organization     Organization?     @relation(fields: [organizationId], references: [id])
+  subcategory      Subcategory?      @relation(fields: [subcategoryId], references: [id])
+  brand            Brand?            @relation(fields: [brandId], references: [id])
+  variants         ProductVariant[]
+  storeProducts    StoreProduct[]
+  orderItems       OrderItem[]
+  monthlyListItems MonthlyListItem[]
+  collectionItems  CollectionItem[]
+  reviews          Review[]
+  wishlistItems    WishlistItem[]
+  searchAliases    SearchAlias[]
+  searchEvents     SearchEvent[]
+  recipeItems      RecipeItem[]
+  catalogDrafts    CatalogDraft[]
 
   @@index([productType])
   @@index([organizationId])
@@ -871,9 +874,10 @@ model ProductVariant {
   discountStart DateTime?     @map("discount_start")
   discountEnd   DateTime?     @map("discount_end")
 
-  product       Product        @relation(fields: [productId], references: [id], onDelete: Cascade)
-  storeProducts StoreProduct[]
-  orderItems    OrderItem[]
+  product          Product           @relation(fields: [productId], references: [id], onDelete: Cascade)
+  storeProducts    StoreProduct[]
+  orderItems       OrderItem[]
+  monthlyListItems MonthlyListItem[]
 
   @@map("product_variants")
 }
@@ -2092,6 +2096,51 @@ model ShoppingListItem {
   @@map("shopping_list_items")
 }
 
+/// A shopper's monthly provisions at one store: ready on their reminder day at that day's prices, ordered in one tap
+model MonthlyList {
+  id                String   @id @default(uuid())
+  userId            String   @map("user_id")
+  storeId           String   @map("store_id")
+  /// Day of the month the list is ready and reminded (1–28, so every month has it)
+  reminderDay       Int      @map("reminder_day")
+  pushOn            Boolean  @default(true) @map("push_on")
+  whatsappOn        Boolean  @default(true) @map("whatsapp_on")
+  isActive          Boolean  @default(true) @map("is_active")
+  /// "2026-11": the month last reminded, and the month last ordered
+  lastRemindedMonth String?  @map("last_reminded_month")
+  lastOrderedMonth  String?  @map("last_ordered_month")
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+
+  user  User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  store Store             @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  items MonthlyListItem[]
+
+  @@unique([userId, storeId])
+  @@index([reminderDay, isActive])
+  @@map("monthly_lists")
+}
+
+/// One line of a monthly list, in the size the shopper buys
+model MonthlyListItem {
+  id            String    @id @default(uuid())
+  listId        String    @map("list_id")
+  productId     String    @map("product_id")
+  variantId     String    @map("variant_id")
+  quantity      Int
+  /// The price when last ordered, for the up/down arrow next to today's price
+  lastPrice     Decimal?  @map("last_price") @db.Decimal(10, 2)
+  lastOrderedAt DateTime? @map("last_ordered_at")
+  createdAt     DateTime  @default(now()) @map("created_at")
+
+  list    MonthlyList    @relation(fields: [listId], references: [id], onDelete: Cascade)
+  product Product        @relation(fields: [productId], references: [id], onDelete: Cascade)
+  variant ProductVariant @relation(fields: [variantId], references: [id], onDelete: Cascade)
+
+  @@unique([listId, variantId])
+  @@map("monthly_list_items")
+}
+
 // How shoppers say things in their language, and the word the catalog lists them under (kadalai maavu → besan).
 // Platform-wide language knowledge, read into the shopping-list AI's prompt; managed by Super Admin
 model ListGlossaryTerm {
@@ -2688,6 +2737,7 @@ enum HomeSectionType {
   BUY_GET_DEALS
   HERO_CARDS
   STORE_WALK
+  MONTHLY_LIST
 }
 
 /// One block on an organisation's Home, in display order; config holds per-type display settings

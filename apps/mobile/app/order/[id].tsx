@@ -21,6 +21,8 @@ import { OrderSummaryCard } from "../../components/order/OrderSummaryCard";
 import { RateOrderSheet } from "../../components/order/RateOrderSheet";
 import { BuyAgainSheet } from "../../components/order/BuyAgainSheet";
 import { useOrderRatings } from "../../components/order/use-order-ratings";
+import { SaveAsMonthlyList } from "../../components/monthly-list/SaveAsMonthlyList";
+import { useStore } from "../../lib/store-context";
 import type { OrderData } from "../../components/order/types";
 import type { ReturnRequestData } from "../../lib/types";
 
@@ -96,6 +98,8 @@ function OrderDetailScreen() {
   const ratings = useOrderRatings(order);
   const cancel = useCancel(order, fetchOrder);
   const [rating, setRating] = useState(false);
+  const { selectedStore } = useStore();
+  const ml = useStrings("monthlyList");
 
   if (loading) return <OrderDetailSkeleton />;
   if (!order) return <View style={styles.center}><Text style={styles.empty}>{t.notFound}</Text></View>;
@@ -116,6 +120,11 @@ function OrderDetailScreen() {
         {returnRequest && (
           <View style={styles.inset}>
             <ReturnStatusCard orderId={order.id} status={order.status} statusLogs={order.statusLogs} request={returnRequest} onChanged={fetchReturn} />
+          </View>
+        )}
+        {order.status === "DELIVERED" && order.storeId === selectedStore?.id && (
+          <View style={styles.inset}>
+            <SaveAsMonthlyList storeId={order.storeId} from={{ source: "ORDER", orderId: order.id }} label={ml.fromOrder} />
           </View>
         )}
         <OrderSummaryCard order={order} />

@@ -27,7 +27,8 @@ export interface PackDeal {
   saves: number;
 }
 
-function sizeOf(variant: { unitType: string; unitValue: unknown }): Size | null {
+/** A size in a common unit (g, ml, pc), so 500 g and 1 kg compare; null for packs and bundles. Takes the raw unit enum */
+export function sizeOf(variant: { unitType: string; unitValue: unknown }): Size | null {
   const unit = BASE_UNITS[variant.unitType];
   const value = Number(variant.unitValue);
   return unit && value > 0 ? { base: unit.base, amount: value * unit.factor } : null;

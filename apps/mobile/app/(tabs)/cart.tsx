@@ -22,10 +22,14 @@ import { EmptyCart } from "../../components/cart/EmptyCart";
 import { CartWalkNudge } from "../../components/store-walk/WalkNudge";
 import { useRequireSignIn } from "../../lib/sign-in-context";
 import { useStrings } from "../../lib/i18n/use-strings";
+import { useAuth } from "../../lib/auth-context";
+import { SaveAsMonthlyList } from "../../components/monthly-list/SaveAsMonthlyList";
 
 export default function CartScreen() {
   const requireSignIn = useRequireSignIn();
   const t = useStrings("cart");
+  const ml = useStrings("monthlyList");
+  const { isAuthenticated } = useAuth();
   const tabBarScroll = useTabBarAutoHide();
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
   const [dockHeight, setDockHeight] = useState(0);
@@ -118,6 +122,14 @@ export default function CartScreen() {
                 grandTotal={grandTotal}
                 savings={savings}
               />
+              {isAuthenticated && storeId && storeId === selectedStore?.id && (
+                <View style={styles.monthly}>
+                  <SaveAsMonthlyList
+                    storeId={storeId} label={ml.fromCart}
+                    from={{ source: "LINES", lines: items.map((i) => ({ productId: i.productId, variantId: i.variantId, quantity: i.quantity })) }}
+                  />
+                </View>
+              )}
             </View>
           }
         />
@@ -162,6 +174,7 @@ export default function CartScreen() {
 }
 
 const styles = StyleSheet.create({
+  monthly: { marginHorizontal: 16, marginTop: 12 },
   container: { flex: 1, backgroundColor: colors.surface },
   // Store header
   storeHeader: {

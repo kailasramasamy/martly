@@ -474,6 +474,8 @@ export const createOrderSchema = z.object({
   useLoyaltyPoints: z.boolean().default(false),
   deliverySlotId: z.string().uuid().optional(),
   scheduledDate: z.string().optional(),
+  /** Set when the order is the shopper's monthly list, so the list records this month's prices */
+  monthlyListId: z.string().uuid().optional(),
   items: z.array(
     z.object({
       storeProductId: z.string().uuid(),
@@ -1604,6 +1606,43 @@ export const storeWalkRouteSchema = z.object({
   cartStoreProductIds: z.array(z.string().uuid()).max(100).default([]),
 });
 export type StoreWalkRouteInput = z.infer<typeof storeWalkRouteSchema>;
+
+// ── Monthly list: a shopper's monthly provisions at one store ──
+const monthlyListLine = z.object({
+  productId: z.string().uuid(),
+  variantId: z.string().uuid(),
+  quantity: z.number().int().min(1).max(99),
+});
+const reminderDay = z.number().int().min(1).max(28);
+
+export const createMonthlyListSchema = z.object({
+  storeId: z.string().uuid(),
+  /** ORDER: `orderId`, else the shopper's biggest order at the store in the last 45 days. LINES: the lines given (the cart) */
+  source: z.enum(["ORDER", "LINES"]),
+  orderId: z.string().uuid().optional(),
+  lines: z.array(monthlyListLine).max(100).optional(),
+  reminderDay,
+  pushOn: z.boolean().default(true),
+  whatsappOn: z.boolean().default(true),
+}).refine((d) => d.source === "ORDER" || (d.lines?.length ?? 0) > 0, { message: "lines are required", path: ["lines"] });
+export type CreateMonthlyListInput = z.infer<typeof createMonthlyListSchema>;
+
+export const updateMonthlyListSchema = z.object({
+  reminderDay: reminderDay.optional(),
+  pushOn: z.boolean().optional(),
+  whatsappOn: z.boolean().optional(),
+  isActive: z.boolean().optional(),
+});
+export type UpdateMonthlyListInput = z.infer<typeof updateMonthlyListSchema>;
+
+export const monthlyListItemsSchema = z.object({ items: z.array(monthlyListLine).max(100) });
+export type MonthlyListItemsInput = z.infer<typeof monthlyListItemsSchema>;
+
+/** The lines a one-tap order would place this month (ticked, with any swaps), as store listings */
+export const monthlyListQuoteSchema = z.object({
+  lines: z.array(z.object({ storeProductId: z.string().uuid(), quantity: z.number().int().min(1).max(99) })).min(1).max(100),
+});
+export type MonthlyListQuoteInput = z.infer<typeof monthlyListQuoteSchema>;
 
 export * from "./marketing.js";
 export * from "./home.js";

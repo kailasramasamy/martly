@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-import { useFocusEffect } from "expo-router";
+import { useFocusEffect, useLocalSearchParams } from "expo-router";
 import {
   View,
   Text,
@@ -65,6 +65,8 @@ interface WalletData {
 function CheckoutScreen() {
   const { user } = useAuth();
   const router = useRouter();
+  // Set when the cart is the shopper's monthly list, so the order records this month's prices on it
+  const { monthlyListId } = useLocalSearchParams<{ monthlyListId?: string }>();
   const toast = useToast();
   const t = useStrings("checkout");
   const common = useStrings("common");
@@ -438,6 +440,7 @@ function CheckoutScreen() {
       }
 
       if (couponResult?.code) orderPayload.couponCode = couponResult.code;
+      if (monthlyListId) orderPayload.monthlyListId = monthlyListId;
       if (deliveryNotes.trim()) orderPayload.deliveryNotes = deliveryNotes.trim();
 
       if (deliveryMode === "scheduled" && selectedSlot && selectedDate) {

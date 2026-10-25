@@ -64,10 +64,12 @@ interface Props {
   onNext: () => void;
   /** Leave the walk for the cart */
   onCart: () => void;
+  /** The walk fills the monthly list: the bar shows the list, and both bag buttons go back to it */
+  forList: boolean;
 }
 
 /** The walk's bottom bar: what's in the bag (tap it for the cart), then "See my bag" and the next aisle */
-export function WalkDock({ addedHere, basket, next, onBag, onNext, onCart }: Props) {
+export function WalkDock({ addedHere, basket, next, onBag, onNext, onCart, forList }: Props) {
   const t = useStrings("storeWalk");
   const insets = useSafeAreaInsets();
   const { itemCount, totalAmount } = useCart();
@@ -75,9 +77,9 @@ export function WalkDock({ addedHere, basket, next, onBag, onNext, onCart }: Pro
   const { scale, chip, gain } = useBagBump(Math.round(totalAmount));
   return (
     <View style={[styles.dock, { paddingBottom: Math.max(10, insets.bottom - 14) }]}>
-      <TouchableOpacity style={styles.bagRow} onPress={onCart} activeOpacity={0.7} accessibilityRole="button" accessibilityLabel={t.goToBag}>
+      <TouchableOpacity style={styles.bagRow} onPress={onCart} activeOpacity={0.7} accessibilityRole="button" accessibilityLabel={forList ? t.backToList : t.goToBag}>
         <Basket photos={basket} scale={scale} />
-        <Text style={styles.bagText}>{t.bag(itemCount, shownTotal.toLocaleString("en-IN"))}</Text>
+        <Text style={styles.bagText}>{(forList ? t.onList : t.bag)(itemCount, shownTotal.toLocaleString("en-IN"))}</Text>
         {addedHere > 0 && <Text style={styles.addedHere}>{t.addedHere(addedHere)}</Text>}
         <Ionicons name="chevron-forward" size={18} color={colors.textSecondary} />
         <Animated.View pointerEvents="none" style={[styles.chip, chip]}>
@@ -86,7 +88,7 @@ export function WalkDock({ addedHere, basket, next, onBag, onNext, onCart }: Pro
       </TouchableOpacity>
       <View style={styles.buttons}>
         <TouchableOpacity style={[styles.button, styles.bag]} onPress={onBag} activeOpacity={0.8} accessibilityRole="button">
-          <Text style={styles.bagButtonText} numberOfLines={2}>{t.seeMyBag}</Text>
+          <Text style={styles.bagButtonText} numberOfLines={2}>{forList ? t.backToList : t.seeMyBag}</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, styles.next]} onPress={onNext} activeOpacity={0.85} accessibilityRole="button"

@@ -13,5 +13,6 @@ import { subscriptions } from "./subscriptions";
 import { auth } from "./auth";
 import { shoppingList } from "./shopping-list";
 import { storeWalk } from "./store-walk";
+import { monthlyList } from "./monthly-list";
 
-export const ta: Catalog = { common, nav, cart, language, home, catalog, search, checkout, orders, account, subscriptions, auth, shoppingList, storeWalk };
+export const ta: Catalog = { common, nav, cart, language, home, catalog, search, checkout, orders, account, subscriptions, auth, shoppingList, storeWalk, monthlyList };

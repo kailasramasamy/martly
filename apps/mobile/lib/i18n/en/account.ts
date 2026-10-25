@@ -15,6 +15,7 @@ export const account = {
     shopping: "Shopping",
     wishlist: "My Wishlist",
     smartReorder: "Smart Reorder",
+    monthlyList: "Monthly list",
     subscriptions: "My Subscriptions",
     rewards: "Rewards",
     referEarn: "Refer & Earn",

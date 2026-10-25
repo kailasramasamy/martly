@@ -33,6 +33,7 @@ const STATIC_SCREENS: Record<string, string> = {
   referral: "/referral",
   wishlist: "/wishlist",
   "smart-reorder": "/smart-reorder",
+  "monthly-list": "/monthly-list",
   home: "/(tabs)",
   orders: "/(tabs)/orders",
   profile: "/account",

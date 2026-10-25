@@ -48,6 +48,7 @@ import { aiRoutes } from "./routes/ai/index.js";
 import { listToCartRoutes } from "./routes/list-to-cart/index.js";
 import { cartRoutes } from "./routes/cart/index.js";
 import { storeWalkRoutes } from "./routes/store-walk/index.js";
+import { monthlyListRoutes } from "./routes/monthly-list/index.js";
 import { shoppingListRoutes } from "./routes/shopping-list/index.js";
 import { listGlossaryRoutes } from "./routes/list-glossary/index.js";
 import { speechRoutes } from "./routes/speech/index.js";
@@ -83,6 +84,7 @@ import orderSlaSchedulerPlugin from "./plugins/order-sla-scheduler.js";
 import returnsSchedulerPlugin from "./plugins/returns-scheduler.js";
 import settlementSchedulerPlugin from "./plugins/settlement-scheduler.js";
 import attentionSchedulerPlugin from "./plugins/attention-scheduler.js";
+import monthlyListSchedulerPlugin from "./plugins/monthly-list-scheduler.js";
 import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
 
 export async function buildApp() {
@@ -123,6 +125,7 @@ export async function buildApp() {
   await app.register(returnsSchedulerPlugin);
   await app.register(settlementSchedulerPlugin);
   await app.register(attentionSchedulerPlugin);
+  await app.register(monthlyListSchedulerPlugin);
   await app.register(catalogAgentWorkerPlugin);
 
   // ── Error Handler ────────────────────────────────
@@ -196,6 +199,7 @@ export async function buildApp() {
       await api.register(listToCartRoutes, { prefix: "/list-to-cart" });
       await api.register(cartRoutes, { prefix: "/cart" });
       await api.register(storeWalkRoutes, { prefix: "/store-walk" });
+      await api.register(monthlyListRoutes, { prefix: "/monthly-list" });
       await api.register(shoppingListRoutes, { prefix: "/shopping-list" });
       await api.register(listGlossaryRoutes, { prefix: "/list-glossary" });
       await api.register(speechRoutes, { prefix: "/speech" });

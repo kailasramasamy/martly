@@ -46,6 +46,7 @@ function useMenuGroups(subscriptionsEnabled: boolean): { title: string; items: M
       items: [
         { icon: "heart-outline", label: t.wishlist, onPress: go("/wishlist") },
         { icon: "refresh-circle-outline", label: t.smartReorder, onPress: go("/smart-reorder") },
+        { icon: "reader-outline", label: t.monthlyList, onPress: go("/monthly-list") },
         ...(subscriptionsEnabled ? [{ icon: "calendar-outline" as const, label: t.subscriptions, onPress: go("/subscriptions") }] : []),
       ],
     },

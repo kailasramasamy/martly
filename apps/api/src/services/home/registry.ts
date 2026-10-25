@@ -10,6 +10,7 @@ import { priceBandDeals } from "./resolvers/price-band-deals.js";
 import { productRow } from "./resolvers/product-row.js";
 import { storeSpecials } from "./resolvers/store-specials.js";
 import { storeWalk } from "./resolvers/store-walk.js";
+import { monthlyList } from "./resolvers/monthly-list.js";
 import { tabbedRow } from "./resolvers/tabbed-row.js";
 import { themeBand } from "./resolvers/theme-band.js";
 import { tileGrid } from "./resolvers/tile-grid.js";
@@ -51,4 +52,5 @@ export const RESOLVERS: Record<HomeSectionType, SectionResolver> = {
   BUY_GET_DEALS: buyGetDeals,
   HERO_CARDS: heroCards,
   STORE_WALK: storeWalk,
+  MONTHLY_LIST: monthlyList,
 };

@@ -33,6 +33,11 @@ export const storeWalk = {
   lastAisle: "Done with this department",
   bag: (n: number, total: string) => `${plural(n, "item", "items")} · ₹${total}`,
   goToBag: "Go to your cart",
+  // A walk from the monthly list fills the list instead of the bag
+  onList: (n: number, total: string) => `On your list: ${plural(n, "item", "items")} · ₹${total}`,
+  backToList: "Back to my list",
+  listDoneStats: (aisles: number, items: number, total: string) =>
+    `${plural(aisles, "aisle", "aisles")} · ${plural(items, "item", "items")} on your list · ₹${total}`,
   addedHere: (n: number) => `+${n} from this aisle`,
   endcapTitle: "End of aisle offers",
   endcapSubtitle: "Deals from the rest of this department",

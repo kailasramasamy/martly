@@ -21,6 +21,7 @@ import { FlyProvider } from "../components/store-walk/basket-fly";
 import { walkSession } from "../lib/walk-session";
 import { ShopFloor } from "../components/store-walk/ShopFloor";
 import { useStoreWalk, type StoreWalk } from "../components/store-walk/use-store-walk";
+import { ListCart } from "../components/monthly-list/ListCart";
 
 const SHIFT = Dimensions.get("window").width * 0.35;
 
@@ -109,7 +110,8 @@ function useAisleBack(onBack: (() => void) | null) {
   }, [navigation, onBack, c]);
 }
 
-function Aisles({ walk, onBack }: { walk: StoreWalk; onBack: (() => void) | null }) {
+// `forList`: the walk fills the monthly list, and finishing or the bag goes back to it
+function Aisles({ walk, onBack, onFinish, forList }: { walk: StoreWalk; onBack: (() => void) | null; onFinish: () => void; forList: boolean }) {
   const t = useStrings("storeWalk");
   const { getLocalizedName } = useLanguage();
   const [mapOpen, setMapOpen] = useState(false);
@@ -122,6 +124,7 @@ function Aisles({ walk, onBack }: { walk: StoreWalk; onBack: (() => void) | null
   const leave = () => slide.go(walk.leave);
   // The cart is a tab, so going there ends the walk; it counts as walked, so the cart doesn't nudge for another
   const goToCart = () => {
+    if (forList) return onFinish();
     walkSession.walked = true;
     router.navigate("/(tabs)/cart");
   };
@@ -150,33 +153,33 @@ function Aisles({ walk, onBack }: { walk: StoreWalk; onBack: (() => void) | null
       </Animated.View>
       <WalkDock
         addedHere={addedHere} basket={walk.added.flatMap((l) => l.item.imageUrl ?? [])} next={next ? { name: getLocalizedName(next), imageUrl: next.imageUrl } : null}
-        onBag={walk.finish} onNext={leave} onCart={goToCart}
+        onBag={onFinish} onNext={leave} onCart={goToCart} forList={forList}
       />
       <AisleMapSheet
         visible={mapOpen} stops={walk.stops} index={walk.index} walked={walk.walked}
-        onJump={(i) => slide.go(() => walk.jump(i), i < walk.index ? -1 : 1)} onFinish={walk.finish} onClose={() => setMapOpen(false)}
+        onJump={(i) => slide.go(() => walk.jump(i), i < walk.index ? -1 : 1)} onFinish={onFinish} onClose={() => setMapOpen(false)} forList={forList}
       />
     </ShopFloor>
   );
 }
 
-/** Walk the store: a department's aisles one by one, like strolling the shop. From the cart, covered aisles are skipped */
-export default function StoreWalkScreen() {
-  const params = useLocalSearchParams<{ from?: string; departmentId?: string }>();
+function Walk({ from, departmentId }: { from?: string; departmentId?: string }) {
   const t = useStrings("storeWalk");
   const { selectedStore } = useStore();
   const [startedAt] = useState(Date.now);
-  const fromBag = params.from === "cart" || params.from === "checkout";
-  const walk = useStoreWalk(selectedStore?.id, { skipCovered: fromBag, departmentId: params.departmentId });
+  const fromBag = from === "cart" || from === "checkout";
+  const forList = from === "monthly-list";
+  const walk = useStoreWalk(selectedStore?.id, { skipCovered: fromBag, departmentId });
+  const finish = forList ? () => router.back() : walk.finish;
 
   let body;
   if (walk.failed) body = <Message text={t.loadFailed} onRetry={walk.retry} />;
   else if (!walk.route) body = <Loader style={styles.spinner} />;
   else if (walk.stops.length === 0) body = <Message text={t.emptyStore} />;
   else if (walk.phase === "route") body = <WalkRoute route={walk.route} onPick={(id) => walk.switchDepartment(id, false)} onStart={walk.start} onOpen={walk.jump} />;
-  else if (walk.phase === "aisle") body = <FlyProvider><Aisles walk={walk} onBack={fromBag ? null : walk.toRoute} /></FlyProvider>;
+  else if (walk.phase === "aisle") body = <FlyProvider><Aisles walk={walk} onBack={fromBag ? null : walk.toRoute} onFinish={finish} forList={forList} /></FlyProvider>;
   else if (walk.phase === "department") {
-    body = <NextDepartmentCard route={walk.route} walked={walk.walkedDepartments} onWalk={(id) => walk.switchDepartment(id, true)} onFinish={walk.finish} />;
+    body = <NextDepartmentCard route={walk.route} walked={walk.walkedDepartments} onWalk={(id) => walk.switchDepartment(id, true)} onFinish={finish} forList={forList} />;
   } else body = <WalkSummary walk={walk} minutes={Math.max(1, Math.round((Date.now() - startedAt) / 60_000))} onBack={() => walk.jump(walk.index)} />;
 
   return (
@@ -184,6 +187,16 @@ export default function StoreWalkScreen() {
       <View style={styles.container}>{body}</View>
     </ProductActionsProvider>
   );
+}
+
+/**
+ * Walk the store: a department's aisles one by one, like strolling the shop. From the cart, covered aisles are skipped;
+ * from the monthly list, what's picked goes on the list
+ */
+export default function StoreWalkScreen() {
+  const { from, departmentId } = useLocalSearchParams<{ from?: string; departmentId?: string }>();
+  const walk = <Walk from={from} departmentId={departmentId} />;
+  return from === "monthly-list" ? <ListCart>{walk}</ListCart> : walk;
 }
 
 const styles = StyleSheet.create({

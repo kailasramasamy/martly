@@ -14,6 +14,7 @@ interface Props {
   walked: Set<string>;
   onJump: (index: number) => void;
   onFinish: () => void;
+  forList: boolean;
   onClose: () => void;
 }
 
@@ -23,7 +24,7 @@ function Dot({ state }: { state: "walked" | "here" | "ahead" }) {
 }
 
 /** The department's aisles with where the shopper has been: walked, here, ahead. Tap one to go there. */
-export function AisleMapSheet({ visible, stops, index, walked, onJump, onFinish, onClose }: Props) {
+export function AisleMapSheet({ visible, stops, index, walked, onJump, onFinish, onClose, forList }: Props) {
   const t = useStrings("storeWalk");
   const { getLocalizedName } = useLanguage();
   const insets = useSafeAreaInsets();
@@ -52,7 +53,7 @@ export function AisleMapSheet({ visible, stops, index, walked, onJump, onFinish,
           })}
         </ScrollView>
         <TouchableOpacity style={styles.finish} onPress={() => { onClose(); onFinish(); }} accessibilityRole="button">
-          <Text style={styles.finishText}>{t.finishNow}</Text>
+          <Text style={styles.finishText}>{forList ? t.backToList : t.finishNow}</Text>
         </TouchableOpacity>
       </View>
     </Modal>

@@ -53,10 +53,10 @@ function Other({ department, delay, onPress }: { department: StoreWalkDepartment
   );
 }
 
-interface Props { route: WalkRoute; walked: string[]; onWalk: (departmentId: string) => void; onFinish: () => void }
+interface Props { route: WalkRoute; walked: string[]; onWalk: (departmentId: string) => void; onFinish: () => void; forList: boolean }
 
 /** A department walked: what's in the bag, then the next department to walk (most due items first) or finish */
-export function NextDepartmentCard({ route, walked, onWalk, onFinish }: Props) {
+export function NextDepartmentCard({ route, walked, onWalk, onFinish, forList }: Props) {
   const t = useStrings("storeWalk");
   const { getLocalizedName } = useLanguage();
   const insets = useSafeAreaInsets();
@@ -70,7 +70,7 @@ export function NextDepartmentCard({ route, walked, onWalk, onFinish }: Props) {
         <View style={styles.hero}>
           <DoneMark />
           <Text style={styles.heroTitle}>{t.departmentDone(getLocalizedName(done))}</Text>
-          <Text style={styles.heroStats}>{t.departmentDoneStats(route.stops.length, itemCount, Math.round(totalAmount).toLocaleString("en-IN"))}</Text>
+          <Text style={styles.heroStats}>{(forList ? t.listDoneStats : t.departmentDoneStats)(route.stops.length, itemCount, Math.round(totalAmount).toLocaleString("en-IN"))}</Text>
         </View>
         {next && (
           <Animated.View style={[styles.next, nextCard]}>
@@ -93,7 +93,7 @@ export function NextDepartmentCard({ route, walked, onWalk, onFinish }: Props) {
       </ScrollView>
       <View style={[styles.footer, { paddingBottom: Math.max(16, insets.bottom + 8) }]}>
         <TouchableOpacity style={styles.finish} onPress={onFinish} accessibilityRole="button">
-          <Text style={styles.finishText}>{t.imDone}</Text>
+          <Text style={styles.finishText}>{forList ? t.backToList : t.imDone}</Text>
         </TouchableOpacity>
       </View>
     </View>

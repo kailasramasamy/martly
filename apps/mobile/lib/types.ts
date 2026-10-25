@@ -1,6 +1,6 @@
 import type { BrandPick } from "@martly/shared/constants";
 import type { MultiBuyOffer } from "@martly/shared/offers";
-import type { CampaignTile, CouponOffer, HomeTheme, StoreWalkAisle, StoreWalkRoute } from "@martly/shared/types";
+import type { CampaignTile, CouponOffer, HomeTheme, MonthlyListChange, MonthlyListItemView, MonthlyListView, StoreWalkAisle, StoreWalkRoute } from "@martly/shared/types";
 import type { PaginatedResponse } from "@martly/shared/types";
 
 export interface Store {
@@ -84,6 +84,11 @@ export interface StoreProduct {
 /** Walk the store: one department's aisles, and one aisle's products */
 export type WalkRoute = StoreWalkRoute<StoreProduct>;
 export type WalkAisle = StoreWalkAisle<StoreProduct>;
+
+/** The monthly list as it stands today, its lines and what changed */
+export type MonthlyList = MonthlyListView<StoreProduct>;
+export type MonthlyListLine = MonthlyListItemView<StoreProduct>;
+export type MonthlyListCheck = MonthlyListChange<StoreProduct>;
 
 export interface CartReview {
   lines: StoreProduct[];

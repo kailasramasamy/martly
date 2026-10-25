@@ -51,7 +51,7 @@ export interface CartStore {
   translations?: Store["translations"];
 }
 
-interface CartState {
+export interface CartState {
   store: CartStore | null;
   storeId: string | null;
   /** In the app language */
@@ -78,6 +78,22 @@ interface CartState {
 }
 
 const CartContext = createContext<CartState | null>(null);
+
+/** What a basket of lines comes to: the amount, the packs, and the packs of each product */
+export function cartTotals(items: CartItem[]) {
+  const productQuantityMap = new Map<string, number>();
+  for (const item of items) productQuantityMap.set(item.productId, (productQuantityMap.get(item.productId) ?? 0) + item.quantity);
+  return {
+    totalAmount: items.reduce((sum, i) => sum + lineTotal(i.price, i.quantity, i.offer), 0),
+    itemCount: items.reduce((sum, i) => sum + i.quantity, 0),
+    productQuantityMap,
+  };
+}
+
+/** Puts another basket in the cart's place for the screens inside, e.g. a walk that fills the monthly list */
+export function CartScope({ value, children }: { value: CartState; children: ReactNode }) {
+  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
+}
 
 export function CartProvider({ children }: { children: ReactNode }) {
   const { getLocalizedName } = useLanguage();
@@ -193,15 +209,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     [storeId],
   );
 
-  const totalAmount = useMemo(() => items.reduce((sum, i) => sum + lineTotal(i.price, i.quantity, i.offer), 0), [items]);
-  const itemCount = useMemo(() => items.reduce((sum, i) => sum + i.quantity, 0), [items]);
-  const productQuantityMap = useMemo(() => {
-    const map = new Map<string, number>();
-    for (const item of items) {
-      map.set(item.productId, (map.get(item.productId) ?? 0) + item.quantity);
-    }
-    return map;
-  }, [items]);
+  const { totalAmount, itemCount, productQuantityMap } = useMemo(() => cartTotals(items), [items]);
 
   return (
     <CartContext.Provider

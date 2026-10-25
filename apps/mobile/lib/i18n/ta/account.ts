@@ -17,6 +17,7 @@ export const account: Strings<"account"> = {
     shopping: "ஷாப்பிங்",
     wishlist: "என் விருப்பப் பட்டியல்",
     smartReorder: "ஸ்மார்ட் மறுஆர்டர்",
+    monthlyList: "மாதப் பட்டியல்",
     subscriptions: "என் சந்தாக்கள்",
     rewards: "பரிசுகள்",
     referEarn: "பரிந்துரைத்து சம்பாதி",

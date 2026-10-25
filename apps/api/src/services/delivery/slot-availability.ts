@@ -50,6 +50,7 @@ export async function slotsForDate(prisma: PrismaClient, storeId: string, date: 
 }
 
 export interface OpenSlot {
+  id: string;
   date: string;
   startTime: string;
   endTime: string;
@@ -70,7 +71,7 @@ export async function upcomingSlots(prisma: PrismaClient, storeIds: string[], li
     for (let d = 0; d <= BOOKING_DAYS && open.length < limit; d++) {
       const date = addDays(today, d);
       for (const s of (await slotsForDate(prisma, storeId, date)).filter((x) => !x.full && !x.closed)) {
-        open.push({ date, startTime: s.startTime, endTime: s.endTime, orderBy: s.orderBy, fewLeft: s.available <= FEW_LEFT });
+        open.push({ id: s.id, date, startTime: s.startTime, endTime: s.endTime, orderBy: s.orderBy, fewLeft: s.available <= FEW_LEFT });
       }
     }
     return [storeId, open.slice(0, limit)] as const;

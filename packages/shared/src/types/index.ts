@@ -442,4 +442,72 @@ export interface StoreWalkAisle<P = unknown> {
   endcap: P[];
 }
 
+/** One line of a monthly list as the store sells it today; `listing` is null when the store no longer lists that size */
+export interface MonthlyListItemView<P = unknown> {
+  id: string;
+  productId: string;
+  variantId: string;
+  quantity: number;
+  name: string;
+  translations: WalkNameTranslations;
+  variantName: string;
+  imageUrl: string | null;
+  /** The aisle (category) it sits in, for grouping */
+  aisle: { id: string; name: string; translations: WalkNameTranslations } | null;
+  listing: P | null;
+  inStock: boolean;
+  /** Today's price minus the price when last ordered; null when never ordered or unpriced */
+  delta: number | null;
+}
+
+/** What changed since last month, for the shopper to settle before ordering */
+export type MonthlyListChange<P = unknown> =
+  | { kind: "OUT_OF_STOCK"; itemId: string; swap: P | null }
+  | { kind: "BIGGER_PACK"; itemId: string; bigger: P; packs: number; saving: number }
+  | { kind: "LAPSED"; itemId: string; lastOrderedAt: string | null }
+  | { kind: "NEW_USUAL"; product: P };
+
+export interface MonthlyListView<P = unknown> {
+  id: string;
+  storeId: string;
+  reminderDay: number;
+  pushOn: boolean;
+  whatsappOn: boolean;
+  isActive: boolean;
+  lastOrderedMonth: string | null;
+  /** "2026-11": the month the list is for */
+  month: string;
+  /** The list is due this month and not yet ordered */
+  due: boolean;
+  items: MonthlyListItemView<P>[];
+  /** Today's total for the in-stock lines */
+  total: number;
+  changes: MonthlyListChange<P>[];
+}
+
+/** What a list line can be swapped for, in stock today: its product's other sizes, and other brands in its subcategory closest in size */
+export interface MonthlyListItemOptions<P = unknown> {
+  sizes: P[];
+  brands: P[];
+}
+
+/** Why a list can't be ordered in one tap; the app opens checkout instead */
+export type MonthlyListQuoteBlock = "NOTHING_IN_STOCK" | "NO_ADDRESS" | "NOT_SERVICEABLE" | "NO_DELIVERY" | "BELOW_MINIMUM";
+
+/** One-tap order for a list, paid on delivery: what it would be placed with, at today's prices */
+export type MonthlyListQuote =
+  | { ready: false; reason: MonthlyListQuoteBlock }
+  | {
+      ready: true;
+      address: { id: string; label: string; address: string };
+      delivery:
+        | { kind: "EXPRESS"; etaMinutes: number | null }
+        | { kind: "SLOT"; slotId: string; date: string; startTime: string; endTime: string };
+      /** The lines asked about that the store can fill now, as the order takes them */
+      lines: { storeProductId: string; quantity: number }[];
+      itemsTotal: number;
+      deliveryFee: number;
+      toPay: number;
+    };
+
 export * from "./home.js";

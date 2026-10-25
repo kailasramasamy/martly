@@ -28,6 +28,7 @@ import { DealsSection } from "./system/DealsSection";
 import { DepartmentGridSection } from "./system/DepartmentGridSection";
 import { FestiveHeroSection } from "./system/FestiveHeroSection";
 import { MemberChipsSection } from "./system/MemberChipsSection";
+import { MonthlyListSection } from "./system/MonthlyListSection";
 import { OffersSection } from "./system/OffersSection";
 import { RecipesSection } from "./system/RecipesSection";
 import { StoreWalkSection } from "./system/StoreWalkSection";
@@ -79,6 +80,7 @@ const SECTIONS: Registry = {
   OFFERS: OffersSection,
   BRAND_POSTERS: BrandPostersSection,
   STORE_WALK: StoreWalkSection,
+  MONTHLY_LIST: MonthlyListSection,
 };
 
 export const HomeSectionView = memo(function HomeSectionView({ section }: { section: MobileHomeSection }) {

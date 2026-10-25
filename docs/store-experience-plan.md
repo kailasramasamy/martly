@@ -46,7 +46,7 @@ specials, recipes, Tamil UI.
 | # | Feature | What it does | Status |
 |---|---------|--------------|--------|
 | 1 | **Walk the store** | Guided pass through the store's aisles in shelf order. Each aisle shows the shopper's due item, then the aisle's bestsellers; "I have enough" moves on. A memory checklist by aisle, not by product | Built 2026-10-25, phone check pending ([store-walk.md](store-walk.md)) |
-| 2 | **Monthly provision list** | My list as a template that comes back every month; nudge on the 1st–5th with today's total | Not started |
+| 2 | **Monthly provision list** | My list as a template that comes back every month; nudge on the 1st–5th with today's total | Built 2026-10-25, phone check and Interakt templates pending ([monthly-list.md](monthly-list.md)) |
 | 3 | **The annachi's voice** | "Fresh today / New in store" posts from Manage, and an "Owner recommends" tag on products | Not started |
 | 4 | **Ritual-calendar nudges** | Weekly and monthly rituals (Friday pooja, Amavasya, oil bath) as small Home bands and timed notifications, on top of the festival calendar | Not started |
 | 5 | **Add to my order** | After an order is placed, add items to it until packing starts, with no new delivery fee | Not started |

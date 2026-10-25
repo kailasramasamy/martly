@@ -194,6 +194,20 @@ function popularity({ boost }: SearchScope) {
       ELSE COALESCE(b.popularity, 0) END`;
 }
 
+// "rin soap": the query names the product's brand, and each of its other words starts a word of the product's
+// subcategory name or one of the subcategory's search terms ("soap" → Detergent Bar's "washing soap"), so a
+// brand plus the shopper's word for the shelf finds the brand's products there even when their names don't say it
+const brandOnShelf = Prisma.sql`(cardinality(rest.words) > 0 AND (SELECT bool_and(
+  s.name ILIKE w || '%' OR s.name ILIKE '% ' || w || '%'
+  OR EXISTS (SELECT 1 FROM unnest(s.search_terms) st WHERE st LIKE w || '%' OR st LIKE '% ' || w || '%')
+) FROM unnest(rest.words) w))`;
+
+// The query's words other than the brand's name, when it names the product's brand (needs brand_names `b`)
+const wordsBesideBrand = (q: string) => Prisma.sql`CROSS JOIN LATERAL (SELECT CASE
+  WHEN b.clean IS NOT NULL AND position(' ' || b.clean || ' ' IN ' ' || ${q} || ' ') > 0
+    THEN array_remove(string_to_array(replace(' ' || ${q} || ' ', ' ' || b.clean || ' ', ' '), ' '), '')
+  ELSE '{}'::text[] END AS words) rest`;
+
 // Every stocked product with its intent flag, name tier and taxonomy hit for the query
 // (needs the `term`, `sales` and brand_names CTEs)
 const matchedProducts = (q: string, scope: SearchScope) => Prisma.sql`
@@ -202,13 +216,14 @@ const matchedProducts = (q: string, scope: SearchScope) => Prisma.sql`
     CASE
       WHEN own.name ~* ('\\m' || term.rx || '\\M') THEN 0
       WHEN own.name ~* ('\\m' || term.rx) THEN 1
-      WHEN own.name ILIKE '%' || ${q} || '%'
-        OR (SELECT bool_and(own.name ~* ('\\m' || w)) FROM unnest(term.words) w) THEN 2
+      WHEN (SELECT bool_and(own.name ~* ('\\m' || w)) FROM unnest(term.words) w) THEN 2
+      WHEN ${brandOnShelf} THEN 3
+      WHEN own.name ILIKE '%' || ${q} || '%' THEN 4
       WHEN EXISTS (
         SELECT 1 FROM jsonb_each(COALESCE(p.translations, '{}'::jsonb)) t
         WHERE t.value->>'name' ILIKE '%' || ${q} || '%'
-      ) THEN 3
-      WHEN p.description ILIKE '%' || ${q} || '%' THEN 4
+      ) THEN 5
+      WHEN p.description ILIKE '%' || ${q} || '%' THEN 6
     END AS tier,
     CASE
       WHEN c.name ~* ('\\m' || term.rx) THEN 0
@@ -222,12 +237,14 @@ const matchedProducts = (q: string, scope: SearchScope) => Prisma.sql`
   LEFT JOIN categories c ON c.id = s.category_id
   LEFT JOIN sales ON sales.product_id = p.id
   CROSS JOIN LATERAL (SELECT regexp_replace(${nameForQuery(q)}, '[''\u2019]', '', 'g') AS name) own
+  ${wordsBesideBrand(q)}
   WHERE ${inScope(scope)}`;
 
 async function keywordSearch(prisma: PrismaClient, q: string, scope: SearchScope, limit: number): Promise<string[]> {
   // Intent first: products in a subcategory whose search terms include the query ("shaving" → Razor & Blades),
   // brands taking weighted turns by popularity, each brand leading with its name matches.
-  // Then name tiers: 0 whole word, 1 word-start, 2 substring, 3 translated name, 4 description only. Within a tier:
+  // Then name tiers: 0 whole word, 1 word-start, 2 every word starts a name word, 3 brand + its shelf ("rin soap"),
+  // 4 substring, 5 translated name, 6 description only. Within a tier:
   // category name hit ("oil" → Edible Oils), then subcategory hit (Hair Oil), then brands round-robin
   // (best-known brands take turns more often) so one brand's A–Z run can't fill the top rows.
   const rows = await prisma.$queryRaw<{ id: string; tier: number }[]>`
@@ -265,7 +282,7 @@ async function keywordSearch(prisma: PrismaClient, q: string, scope: SearchScope
 
 // Prefer whole-word name hits ("dal" → not "Dalda"), then any name hit, before falling back to everything
 function tightestTier<T extends { tier: number }>(rows: T[]): T[] {
-  for (const maxTier of [0, 3]) {
+  for (const maxTier of [0, 5]) {
     const hits = rows.filter((r) => r.tier <= maxTier);
     if (hits.length >= 3) return hits;
   }

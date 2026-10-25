@@ -10,9 +10,10 @@ import { reoptimizeTrips } from "../../services/delivery/plan-wave.js";
 import { undoDeliveryRoutes } from "./undo-delivery.js";
 import { OPEN_ORDER_STATUSES, addDays, istDay, istNow, istWeekday } from "../../services/ist-day.js";
 import { slotCapacity } from "../../services/delivery/settings.js";
+import { deliveryFeeTo, expressOutsideHours } from "../../services/delivery/fee.js";
 import { hasPermission } from "@martly/shared/permissions";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
-import { haversine, locateAddress } from "../../lib/geo.js";
+import { locateAddress } from "../../lib/geo.js";
 import { sendOrderStatusNotification, sendWalletNotification, sendLoyaltyNotification, sendNotification } from "../../services/notification.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { checkCoupon } from "../../services/coupons.js";
@@ -35,6 +36,7 @@ import { applyCancelRefunds, cancelOrder, notifyOrderCancelled } from "../../ser
 import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
 import { freeUnits, lineTotal } from "@martly/shared/offers";
 import { OrderStatus, Permission } from "@martly/shared/constants";
+import { recordMonthlyListOrder } from "../../services/monthly-list/index.js";
 
 function getValidTransitions(fulfillmentType: string): Record<string, string[]> {
   return fulfillmentType === "PICKUP" ? PICKUP_TRANSITIONS : DELIVERY_TRANSITIONS;
@@ -334,54 +336,18 @@ export async function orderRoutes(app: FastifyInstance) {
         }
       }
 
-      // Try distance-based delivery tier lookup
-      let usedDistanceTier = false;
-      if (store?.latitude != null && store?.longitude != null && deliveryLat != null && deliveryLng != null) {
-        const dist = haversine(deliveryLat, deliveryLng, store.latitude, store.longitude);
-        deliveryDistance = dist;
-
-        if (dist > store.deliveryRadius) {
-          return reply.status(400).send({
-            success: false,
-            error: "Not Serviceable",
-            message: `Delivery address is ${dist.toFixed(1)} km away, which exceeds the store's delivery radius of ${store.deliveryRadius} km`,
-            statusCode: 400,
-          });
-        }
-
-        const tier = await app.prisma.deliveryTier.findFirst({
-          where: {
-            storeId: body.storeId,
-            isActive: true,
-            minDistance: { lte: dist },
-            maxDistance: { gt: dist },
-          },
+      const delivery = await deliveryFeeTo(app.prisma, body.storeId, store, deliveryLat != null && deliveryLng != null ? { lat: deliveryLat, lng: deliveryLng } : null);
+      deliveryDistance = delivery.distance;
+      if (delivery.outOfRange) {
+        return reply.status(400).send({
+          success: false,
+          error: "Not Serviceable",
+          message: `Delivery address is ${delivery.distance!.toFixed(1)} km away, which exceeds the store's delivery radius of ${store.deliveryRadius} km`,
+          statusCode: 400,
         });
-
-        if (tier) {
-          deliveryFee = Number(tier.deliveryFee);
-          estimatedMinutes = tier.estimatedMinutes;
-          usedDistanceTier = true;
-        }
       }
-
-      // Fallback to zone-based delivery fee if no distance tier matched
-      if (!usedDistanceTier) {
-        const storeZones = await app.prisma.storeDeliveryZone.findMany({
-          where: { storeId: body.storeId },
-          include: { deliveryZone: true },
-        });
-        const activeZone = storeZones.find((sz) => sz.deliveryZone.isActive)?.deliveryZone;
-        if (activeZone) {
-          deliveryFee = Number(activeZone.deliveryFee);
-          estimatedMinutes = activeZone.estimatedMinutes;
-        }
-      }
-
-      // Store-level base delivery fee as final fallback
-      if (deliveryFee === 0 && store?.baseDeliveryFee) {
-        deliveryFee = Number(store.baseDeliveryFee);
-      }
+      deliveryFee = delivery.fee;
+      estimatedMinutes = delivery.estimatedMinutes;
     }
 
     // Free delivery threshold override
@@ -410,22 +376,13 @@ export async function orderRoutes(app: FastifyInstance) {
           });
         }
 
-        if (expressConfig.operatingStart && expressConfig.operatingEnd) {
-          // Operating hours are India time, whatever zone the server runs in
-          const currentMinutes = istNow().minutes;
-          const [startH, startM] = expressConfig.operatingStart.split(":").map(Number);
-          const [endH, endM] = expressConfig.operatingEnd.split(":").map(Number);
-          const startMinutes = startH * 60 + startM;
-          const endMinutes = endH * 60 + endM;
-
-          if (currentMinutes < startMinutes || currentMinutes >= endMinutes) {
-            return reply.status(400).send({
-              success: false,
-              error: "Express Unavailable",
-              message: "Express delivery is outside operating hours",
-              statusCode: 400,
-            });
-          }
+        if (expressOutsideHours(expressConfig)) {
+          return reply.status(400).send({
+            success: false,
+            error: "Express Unavailable",
+            message: "Express delivery is outside operating hours",
+            statusCode: 400,
+          });
         }
 
         // Override ETA with config value
@@ -698,6 +655,7 @@ export async function orderRoutes(app: FastifyInstance) {
         notifyOrderPlaced(app, result.order.id);
       }
       if (result.order.deliverySlotId && body.scheduledDate) notifySlotFullIfNeeded(app, result.order.deliverySlotId, body.scheduledDate);
+      if (body.monthlyListId) await recordMonthlyListOrder(app.prisma, body.monthlyListId, user.sub, result.order.id);
 
       const responseData = {
         ...formatOrderUnits(result.order),

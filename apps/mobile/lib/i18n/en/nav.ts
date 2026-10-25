@@ -29,6 +29,7 @@ export const nav = {
   smartReorder: "Smart Reorder",
   speakList: "Speak your list",
   storeWalk: "Walk the store",
+  monthlyList: "Monthly list",
   myList: "My list",
   returnRequest: "Request Return",
   liveTracking: "Live Tracking",
