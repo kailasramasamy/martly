@@ -7,7 +7,7 @@ import type { StoreProduct } from "../lib/types";
 import { useLanguage } from "../lib/language-context";
 import { useStrings } from "../lib/i18n/use-strings";
 import { FoodTypeMark } from "./FoodTypeMark";
-import { AdBadge, BestsellerBadge, BrandPickBadge, UnitPrice } from "./ProductBadges";
+import { AdBadge, BestsellerBadge, BrandPickBadge, OwnerPickBadge, UnitPrice } from "./ProductBadges";
 import { CompactProductCard } from "./CompactProductCard";
 import { bySize, packSaving } from "../lib/pack-sizes";
 import { SizePager, sizeImage } from "./PackSizes";
@@ -174,7 +174,7 @@ function CardDetails({ item, lowStock, sponsored, aisleLink }: { item: StoreProd
   const t = useStrings("catalog");
   return (
     <>
-      {sponsored ? <AdBadge /> : item.brandPick && <BrandPickBadge pick={item.brandPick} />}
+      {sponsored ? <AdBadge /> : item.ownerPick ? <OwnerPickBadge /> : item.brandPick && <BrandPickBadge pick={item.brandPick} />}
       <Text style={styles.name} numberOfLines={3}>{getLocalizedName(item.product)}</Text>
       {(item.product.averageRating ?? 0) > 0 && (
         <View style={styles.ratingRow}>

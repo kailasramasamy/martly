@@ -5,7 +5,7 @@ import type { ApiResponse, SpeechTranscript } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { createRateLimiter } from "../../services/rate-limit.js";
-import { SpeechProviderError, SpeechUnavailableError, transcribe } from "../../services/speech/index.js";
+import { SpeechLanguageError, SpeechProviderError, SpeechUnavailableError, transcribe, transcribePost } from "../../services/speech/index.js";
 
 // One call per spoken item, so a long list stays well inside this
 const checkRateLimit = createRateLimiter(30, 60_000);
@@ -15,7 +15,7 @@ export async function speechRoutes(app: FastifyInstance) {
   // A 15 s AAC clip is about 150 KB
   await app.register(multipart, { limits: { fileSize: 1024 * 1024, files: 1 } });
 
-  // One spoken shopping-list item (a short clip cut at the shopper's pause) → its text
+  // One spoken shopping-list item, or one sentence of an owner's post (a short clip cut at the pause) → its text
   app.post("/transcribe", { preHandler: [authenticate] }, async (request, reply) => {
     const user = getOrgUser(request);
     const file = await request.file();
@@ -35,11 +35,14 @@ export async function speechRoutes(app: FastifyInstance) {
 
     const started = Date.now();
     try {
-      const heard = await transcribe(app.prisma, { audio, mime: file.mimetype, storeId: store.id, appLanguage: parsed.data.language });
+      const heard = parsed.data.purpose === "post"
+        ? await transcribePost(audio, file.mimetype)
+        : await transcribe(app.prisma, { audio, mime: file.mimetype, storeId: store.id, appLanguage: parsed.data.language });
       request.log.info({ bytes: audio.length, ms: Date.now() - started, language: heard.language, keyterms: heard.keyterms, chars: heard.text.length }, "speech transcribed");
       return { success: true, data: { text: heard.text } } satisfies ApiResponse<SpeechTranscript>;
     } catch (err) {
       if (err instanceof SpeechUnavailableError) return reply.serviceUnavailable("Voice is not available");
+      if (err instanceof SpeechLanguageError) return reply.badRequest("Speak in English or Tamil");
       if (err instanceof SpeechProviderError) {
         request.log.warn({ err: err.message, ms: Date.now() - started }, "speech provider failed");
         return reply.badGateway("We couldn't hear that. Please try again.");

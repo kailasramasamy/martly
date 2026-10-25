@@ -31,6 +31,7 @@ export const HomeSectionType = {
   HERO_CARDS: "HERO_CARDS",
   STORE_WALK: "STORE_WALK",
   MONTHLY_LIST: "MONTHLY_LIST",
+  STORE_POSTS: "STORE_POSTS",
 } as const;
 export type HomeSectionType = (typeof HomeSectionType)[keyof typeof HomeSectionType];
 
@@ -82,6 +83,7 @@ export const HomeSectionTypeLabels: Record<HomeSectionType, string> = {
   HERO_CARDS: "Hero cards",
   STORE_WALK: "Walk the store",
   MONTHLY_LIST: "Monthly list (in the shopper's reminder week)",
+  STORE_POSTS: "From the shop (while a post is live)",
 };
 
 /** The tall cards the Home hero carousel can show, in their default order */

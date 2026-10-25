@@ -570,6 +570,8 @@ model Store {
   deliveryTiers         DeliveryTier[]
   deliverySlots         DeliverySlot[]
   monthlyLists          MonthlyList[]
+  posts                 StorePost[]
+  picks                 StorePick[]
   expressDeliveryConfig ExpressDeliveryConfig?
   deliverySettings      StoreDeliverySettings?
   deliveryTrips         DeliveryTrip[]
@@ -643,6 +645,8 @@ model User {
   cartBuilderRuns     CartBuilderRun[]
   shoppingListItems   ShoppingListItem[]
   monthlyLists        MonthlyList[]
+  storePosts          StorePost[]
+  storePicks          StorePick[]
   promosCreated       Promo[]
   catalogDrafts       CatalogDraft[]
   memberPermissions   MemberPermission[]
@@ -848,6 +852,8 @@ model Product {
   searchEvents     SearchEvent[]
   recipeItems      RecipeItem[]
   catalogDrafts    CatalogDraft[]
+  storePostItems   StorePostProduct[]
+  storePicks       StorePick[]
 
   @@index([productType])
   @@index([organizationId])
@@ -2141,6 +2147,67 @@ model MonthlyListItem {
   @@map("monthly_list_items")
 }
 
+enum StorePostKind {
+  FRESH_TODAY
+  NEW_IN_STORE
+  BACK_IN_STOCK
+}
+
+/// The owner speaking to shoppers: what came in, what's new, what's back. Shows on Home and the shop's board until it expires
+model StorePost {
+  id           String        @id @default(uuid())
+  storeId      String        @map("store_id")
+  authorId     String        @map("author_id")
+  kind         StorePostKind
+  text         String
+  /// The language the owner wrote in ("ta" | "en"); `translations` holds the other ({ en: { text } })
+  language     String
+  translations Json?
+  expiresAt    DateTime      @map("expires_at")
+  notifiedAt   DateTime?     @map("notified_at")
+  createdAt    DateTime      @default(now()) @map("created_at")
+
+  store    Store              @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  author   User               @relation(fields: [authorId], references: [id])
+  products StorePostProduct[]
+
+  @@index([storeId, expiresAt])
+  @@map("store_posts")
+}
+
+/// A product the post is about, in the order the owner tagged them
+model StorePostProduct {
+  id        String @id @default(uuid())
+  postId    String @map("post_id")
+  productId String @map("product_id")
+  position  Int
+
+  post    StorePost @relation(fields: [postId], references: [id], onDelete: Cascade)
+  product Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([postId, productId])
+  @@map("store_post_products")
+}
+
+/// "Owner's pick": a product the owner vouches for at their store, with why in a line; at most 3 an aisle
+model StorePick {
+  id           String   @id @default(uuid())
+  storeId      String   @map("store_id")
+  productId    String   @map("product_id")
+  authorId     String   @map("author_id")
+  note         String
+  language     String
+  translations Json?
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  store   Store   @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  author  User    @relation(fields: [authorId], references: [id])
+
+  @@unique([storeId, productId])
+  @@map("store_picks")
+}
+
 // How shoppers say things in their language, and the word the catalog lists them under (kadalai maavu → besan).
 // Platform-wide language knowledge, read into the shopping-list AI's prompt; managed by Super Admin
 model ListGlossaryTerm {
@@ -2738,6 +2805,7 @@ enum HomeSectionType {
   HERO_CARDS
   STORE_WALK
   MONTHLY_LIST
+  STORE_POSTS
 }
 
 /// One block on an organisation's Home, in display order; config holds per-type display settings

@@ -608,6 +608,17 @@ export const SubscriptionStatusLabels: Record<SubscriptionStatus, string> = {
   CANCELLED: "Cancelled",
 };
 
+/** What an owner's post to shoppers is about */
+export const StorePostKind = {
+  FRESH_TODAY: "FRESH_TODAY",
+  NEW_IN_STORE: "NEW_IN_STORE",
+  BACK_IN_STOCK: "BACK_IN_STOCK",
+} as const;
+export type StorePostKind = (typeof StorePostKind)[keyof typeof StorePostKind];
+
+/** An aisle shows at most this many owner's picks, so each one means something */
+export const MAX_PICKS_PER_AISLE = 3;
+
 export const SubscriptionFrequency = {
   DAILY: "DAILY",
   ALTERNATE_DAYS: "ALTERNATE_DAYS",

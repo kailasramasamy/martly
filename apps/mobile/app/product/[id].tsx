@@ -31,6 +31,7 @@ import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ProductList } from "../../components/ProductList";
 import { VariantBottomSheet } from "../../components/VariantBottomSheet";
+import { OwnerRecommends } from "../../components/store-voice/OwnerRecommends";
 import { BrandChip, BrandStoreBanner } from "../../components/BrandPromo";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { ProductDetailSkeleton } from "../../components/SkeletonLoader";
@@ -547,6 +548,10 @@ export default function ProductDetailScreen() {
             <View style={styles.categoryChip}>
               <Text style={styles.categoryChipText}>{getLocalizedName(product.subcategory)}</Text>
             </View>
+          )}
+
+          {storeProducts[0]?.ownerPick && selectedStore && (
+            <OwnerRecommends pick={storeProducts[0].ownerPick} storeName={getLocalizedName(selectedStore)} logoUrl={selectedStore.logoUrl} />
           )}
 
           {/* Description */}

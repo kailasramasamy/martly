@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { BULK_STATUSES } from "../order-flow/index.js";
-import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, CartBuilderSource, GLOSSARY_LANGUAGES, SUPPORTED_LANGUAGES, CatalogDraftStatus, Permission, StockCountStatus, ReturnRemedy, ReturnMethod, RefuseReason, INDIAN_STATES } from "../constants/index.js";
+import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, StorePostKind, Difficulty, SearchSortBy, SearchEventType, CartBuilderSource, GLOSSARY_LANGUAGES, SUPPORTED_LANGUAGES, CatalogDraftStatus, Permission, StockCountStatus, ReturnRemedy, ReturnMethod, RefuseReason, INDIAN_STATES } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -1644,6 +1644,37 @@ export const monthlyListQuoteSchema = z.object({
 });
 export type MonthlyListQuoteInput = z.infer<typeof monthlyListQuoteSchema>;
 
+/** The owner's post to shoppers. `days`: 0 shows it today only; left out, the kind decides (fresh today, back 3, new 7) */
+export const createStorePostSchema = z.object({
+  storeId: z.string().uuid(),
+  kind: z.enum([StorePostKind.FRESH_TODAY, StorePostKind.NEW_IN_STORE, StorePostKind.BACK_IN_STOCK]),
+  text: z.string().trim().min(1).max(400),
+  productIds: z.array(z.string().uuid()).max(6).default([]),
+  days: z.union([z.literal(0), z.literal(3), z.literal(7)]).optional(),
+  notify: z.boolean().default(false),
+  /** The other language as the owner checked it before posting ({ ta: { text } }); left out, it's translated after */
+  translations: z.record(z.string(), z.object({ text: z.string().trim().min(1).max(600) })).optional(),
+});
+export type CreateStorePostInput = z.infer<typeof createStorePostSchema>;
+
+/** Changing a post: its words, kind and products; `days` resets when it ends (left out, the end date stays) */
+export const updateStorePostSchema = createStorePostSchema.omit({ storeId: true });
+export type UpdateStorePostInput = z.infer<typeof updateStorePostSchema>;
+
+/** Who a post would notify, for the form to show before posting */
+export const storePostAudienceSchema = createStorePostSchema.pick({ storeId: true, kind: true, productIds: true });
+
+/** Text an owner is writing, to translate before posting */
+export const translateVoiceSchema = z.object({ text: z.string().trim().min(1).max(400) });
+
+/** An owner's pick: the product they vouch for at their store, and why in a line */
+export const storePickSchema = z.object({
+  storeId: z.string().uuid(),
+  productId: z.string().uuid(),
+  note: z.string().trim().min(1).max(90),
+});
+export type StorePickInput = z.infer<typeof storePickSchema>;
+
 export * from "./marketing.js";
 export * from "./home.js";
 export * from "./ledger.js";
@@ -1677,4 +1708,6 @@ export const listGlossaryActiveSchema = z.object({ isActive: z.boolean() });
 export const speechTranscribeSchema = z.object({
   storeId: z.string().uuid(),
   language: appLanguage,
+  /** "list": one shopping-list item; "post": an owner's post to shoppers, in English or Tamil as spoken */
+  purpose: z.enum(["list", "post"]).default("list"),
 });

@@ -34,6 +34,7 @@ const STATIC_SCREENS: Record<string, string> = {
   wishlist: "/wishlist",
   "smart-reorder": "/smart-reorder",
   "monthly-list": "/monthly-list",
+  "store-posts": "/store-posts",
   home: "/(tabs)",
   orders: "/(tabs)/orders",
   profile: "/account",

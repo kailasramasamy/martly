@@ -1,6 +1,6 @@
 import type { BrandPick } from "@martly/shared/constants";
 import type { MultiBuyOffer } from "@martly/shared/offers";
-import type { CampaignTile, CouponOffer, HomeTheme, MonthlyListChange, MonthlyListItemView, MonthlyListView, StoreWalkAisle, StoreWalkRoute } from "@martly/shared/types";
+import type { CampaignTile, CouponOffer, HomeTheme, MonthlyListChange, MonthlyListItemView, MonthlyListView, OwnerPick, StorePostView, StoreWalkAisle, StoreWalkRoute } from "@martly/shared/types";
 import type { PaginatedResponse } from "@martly/shared/types";
 
 export interface Store {
@@ -78,6 +78,8 @@ export interface StoreProduct {
   sponsored?: { bannerId: string };
   /** The store promotes this brand (its own, or one the owner features); labelled on the card */
   brandPick?: BrandPick;
+  /** The store's owner vouches for it: "Owner's pick", and why in their words */
+  ownerPick?: OwnerPick | null;
 }
 
 /** POST /cart/review: the cart's lines as sold now (a missing line can't be bought) and what to suggest beside them */
@@ -89,6 +91,9 @@ export type WalkAisle = StoreWalkAisle<StoreProduct>;
 export type MonthlyList = MonthlyListView<StoreProduct>;
 export type MonthlyListLine = MonthlyListItemView<StoreProduct>;
 export type MonthlyListCheck = MonthlyListChange<StoreProduct>;
+
+/** A post from the store's owner, with its products as the store sells them now */
+export type StorePost = StorePostView<StoreProduct>;
 
 export interface CartReview {
   lines: StoreProduct[];

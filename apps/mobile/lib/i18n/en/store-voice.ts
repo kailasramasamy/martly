@@ -1,0 +1,21 @@
+export const storeVoice = {
+  fromTheShop: "From the shop",
+  byline: (name: string, when: string) => `${name}, owner · ${when}`,
+  ownerOf: (name: string, store: string) => `${name}, ${store}`,
+  kind: { FRESH_TODAY: "FRESH TODAY", NEW_IN_STORE: "NEW IN STORE", BACK_IN_STOCK: "BACK IN STOCK" },
+  headline: { FRESH_TODAY: "Just in", NEW_IN_STORE: "New in store", BACK_IN_STOCK: "Back on the shelf" },
+  atStore: (store: string) => `at ${store}`,
+  saidBy: (name: string) => `${name}, owner`,
+  moreThisWeek: (n: number) => `${n} more from the shop this week`,
+  seeAll: "See everything from the shop",
+  boardSubtitle: "What came in, and what the owner would take home",
+  add: (name: string) => `Add ${name}`,
+  today: "Today",
+  yesterday: "Yesterday",
+  noPosts: "Nothing new from the shop this week.",
+  loadFailed: "Couldn't load the shop's posts. Check your connection.",
+  retry: "Try again",
+  // Owner's pick
+  ownersPick: "Owner's pick",
+  ownerRecommends: "OWNER RECOMMENDS",
+};

@@ -1,4 +1,5 @@
 import { Text, View, StyleSheet, type TextStyle, type ViewStyle } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
 import { unitPriceLabel } from "../lib/unit-price";
 import { useStrings } from "../lib/i18n/use-strings";
@@ -35,6 +36,17 @@ export function BrandPickBadge({ pick }: { pick: BrandPick }) {
   );
 }
 
+// The owner vouches for it: solid teal with a tick, a step above the brand labels; the product page says why
+export function OwnerPickBadge() {
+  const t = useStrings("storeVoice");
+  return (
+    <View style={styles.owner}>
+      <Ionicons name="checkmark" size={10} color="#ffffff" />
+      <Text style={styles.ownerText}>{t.ownersPick}</Text>
+    </View>
+  );
+}
+
 export function UnitPrice({ price, variant, style }: { price: number; variant: Variant; style?: TextStyle }) {
   const label = unitPriceLabel(price, variant);
   return label ? <Text style={[styles.unitPrice, style]} numberOfLines={1}>{label}</Text> : null;
@@ -49,6 +61,8 @@ const styles = StyleSheet.create({
   ad: { alignSelf: "flex-start", backgroundColor: colors.border, borderRadius: 4, paddingHorizontal: 5, paddingVertical: 1, marginBottom: 3 },
   adText: { fontFamily: fonts.semibold, fontSize: 9.5, letterSpacing: 0.3, color: colors.textSecondary },
   pick: { alignSelf: "flex-start", backgroundColor: "#ccfbf1", borderRadius: 4, paddingHorizontal: 5, paddingVertical: 1, marginBottom: 3 },
+  owner: { alignSelf: "flex-start", flexDirection: "row", alignItems: "center", gap: 2, backgroundColor: colors.primary, borderRadius: 4, paddingHorizontal: 5, paddingVertical: 1, marginBottom: 3 },
+  ownerText: { fontFamily: fonts.bold, fontSize: 9.5, letterSpacing: 0.3, color: "#ffffff" },
   pickText: { fontFamily: fonts.semibold, fontSize: 9.5, letterSpacing: 0.3, color: colors.primary },
   unitPrice: { fontFamily: fonts.medium, fontSize: 10.5, color: colors.textSecondary, marginTop: 1 },
 });

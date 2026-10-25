@@ -13,6 +13,7 @@ import { auth } from "./auth";
 import { shoppingList } from "./shopping-list";
 import { storeWalk } from "./store-walk";
 import { monthlyList } from "./monthly-list";
+import { storeVoice } from "./store-voice";
 
 /** English UI strings: the source of truth every other language must match key for key */
-export const en = { common, nav, cart, language, home, catalog, search, checkout, orders, account, subscriptions, auth, shoppingList, storeWalk, monthlyList };
+export const en = { common, nav, cart, language, home, catalog, search, checkout, orders, account, subscriptions, auth, shoppingList, storeWalk, monthlyList, storeVoice };

@@ -7,7 +7,8 @@ export class SpeechProviderError extends Error {}
 /**
  * One clip through Sarvam's saaras:v4. `language` is a BCP-47 code such as "ta-IN", or "unknown" to let it detect;
  * `keyterms` (up to 50) are words it should expect, such as the staples shoppers name. `roman` writes the words in
- * English letters ("Rin soppu ondru") instead of the language's own script.
+ * English letters ("Rin soppu ondru") instead of the language's own script. Returns the text and the language Sarvam
+ * heard (its BCP-47 code, e.g. "ta-IN").
  */
 export async function sarvamTranscribe(audio: Buffer, mime: string, language: string, keyterms: string[], roman: boolean) {
   const key = process.env.SARVAM_API_KEY;
@@ -28,6 +29,6 @@ export async function sarvamTranscribe(audio: Buffer, mime: string, language: st
     throw new SpeechProviderError(`Sarvam unreachable: ${err.message}`);
   });
   if (!res.ok) throw new SpeechProviderError(`Sarvam ${res.status}: ${(await res.text()).slice(0, 200)}`);
-  const body = (await res.json()) as { transcript?: string };
-  return body.transcript ?? "";
+  const body = (await res.json()) as { transcript?: string; language_code?: string | null };
+  return { transcript: body.transcript ?? "", language: body.language_code ?? language };
 }

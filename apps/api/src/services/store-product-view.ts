@@ -1,6 +1,7 @@
 import type { Prisma, PrismaClient } from "../../generated/prisma/index.js";
 import { calculateEffectivePrice } from "./pricing.js";
 import { formatVariantUnit } from "./units.js";
+import { ownerPicks } from "./store-voice/picks.js";
 
 export const storeProductInclude = {
   product: { include: { subcategory: true, variants: true, brand: { select: { id: true, name: true, imageUrl: true } } } },
@@ -44,11 +45,12 @@ async function bestsellers(prisma: PrismaClient, storeId: string) {
   return ids;
 }
 
-/** Shape store-product rows for customers: effective pricing, formatted unit, review aggregates, available stock, bestseller flag. */
+/** Shape store-product rows for customers: effective pricing, formatted unit, review aggregates, available stock, bestseller flag, owner's pick. */
 export async function decorateStoreProducts(prisma: PrismaClient, rows: StoreProductRow[]) {
   const storeIds = [...new Set(rows.map((sp) => sp.storeId))];
-  const [reviewMap, ...topSellers] = await Promise.all([
+  const [reviewMap, picks, ...topSellers] = await Promise.all([
     reviewAggregates(prisma, [...new Set(rows.map((sp) => sp.productId))]),
+    ownerPicks(prisma, rows),
     ...storeIds.map((id) => bestsellers(prisma, id)),
   ]);
   const topByStore = new Map(storeIds.map((id, i) => [id, topSellers[i]]));
@@ -62,7 +64,8 @@ export async function decorateStoreProducts(prisma: PrismaClient, rows: StorePro
     const reviews = reviewMap.get(sp.productId);
     const isBestseller = topByStore.get(sp.storeId)?.has(sp.productId) ?? false;
     const product = { ...sp.product, ...reviews, isBestseller };
-    return { ...sp, product, variant: formatVariantUnit(sp.variant), pricing, availableStock: sp.stock - sp.reservedStock };
+    const ownerPick = picks.get(`${sp.storeId}:${sp.productId}`) ?? null;
+    return { ...sp, product, variant: formatVariantUnit(sp.variant), pricing, availableStock: sp.stock - sp.reservedStock, ownerPick };
   });
 }
 

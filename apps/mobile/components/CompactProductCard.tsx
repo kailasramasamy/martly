@@ -6,7 +6,7 @@ import { colors, fonts, spacing } from "../constants/theme";
 import { useLanguage } from "../lib/language-context";
 import { useStrings } from "../lib/i18n/use-strings";
 import { FoodTypeMark } from "./FoodTypeMark";
-import { AdBadge, BestsellerBadge, BrandPickBadge, UnitPrice } from "./ProductBadges";
+import { AdBadge, BestsellerBadge, BrandPickBadge, OwnerPickBadge, UnitPrice } from "./ProductBadges";
 import { sizeImage } from "./PackSizes";
 import { bySize, packSaving } from "../lib/pack-sizes";
 import { useSponsoredTracking } from "../lib/use-sponsored";
@@ -117,7 +117,7 @@ function CompactDetails({ item, sizes, isMember, sponsored, aisleLink }: {
   const rated = (item.product.reviewCount ?? 0) > 0 && (item.product.averageRating ?? 0) > 0;
   return (
     <>
-      {sponsored ? <AdBadge /> : item.brandPick && <BrandPickBadge pick={item.brandPick} />}
+      {sponsored ? <AdBadge /> : item.ownerPick ? <OwnerPickBadge /> : item.brandPick && <BrandPickBadge pick={item.brandPick} />}
       <Text style={styles.unit} numberOfLines={1}>{item.variant.name}</Text>
       <View style={styles.priceRow}>
         <Text style={[styles.price, deal.highlight && styles.highlight]} numberOfLines={1}>{"₹"}{deal.shown.toFixed(0)}</Text>

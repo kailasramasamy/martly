@@ -58,7 +58,7 @@ function readLevel(clip: Clip, db: number, durationMs: number) {
 }
 
 /** Sends clips for transcription and hands their text over in the order they were spoken */
-function useClipQueue(storeId: string | undefined, onFinal: (text: string) => void, onFail: (err: unknown) => void) {
+function useClipQueue(storeId: string | undefined, purpose: VoicePurpose, onFinal: (text: string) => void, onFail: (err: unknown) => void) {
   const [pending, setPending] = useState(0);
   const queue = useRef<{ done: boolean; text: string }[]>([]);
 
@@ -76,6 +76,7 @@ function useClipQueue(storeId: string | undefined, onFinal: (text: string) => vo
     const form = new FormData();
     form.append("storeId", storeId ?? "");
     form.append("language", activeLanguage() ?? "en");
+    form.append("purpose", purpose);
     form.append("file", { uri, name: "item.m4a", type: "audio/mp4" } as unknown as Blob);
     try {
       slot.text = (await api.upload<SpeechTranscript>("/api/v1/speech/transcribe", form)).data.text;
@@ -85,7 +86,7 @@ function useClipQueue(storeId: string | undefined, onFinal: (text: string) => vo
     slot.done = true;
     setPending((n) => n - 1);
     flush();
-  }, [storeId, flush, onFail]);
+  }, [storeId, purpose, flush, onFail]);
 
   return { pending, send };
 }
@@ -189,13 +190,15 @@ function useRecorderControls(recorder: ClipRecorder, deviceStart: () => void) {
   return { failed, start, stop, onFail };
 }
 
-type VoiceOptions = { storeId?: string; continuous?: boolean; hints?: string[] };
+// "list": shopping-list items in the store's language; "post": an owner's post, English or Tamil written as spoken
+type VoicePurpose = "list" | "post";
+type VoiceOptions = { storeId?: string; continuous?: boolean; hints?: string[]; purpose?: VoicePurpose };
 
 function useRecordedVoice(onPartial: (text: string) => void, onFinal: (text: string) => void, options: VoiceOptions) {
   const device = useVoiceInput(onPartial, onFinal, options);
   // The queue reports failures to the controls, which need the recorder the queue feeds
   const fail = useRef<(err: unknown) => void>(() => {});
-  const queue = useClipQueue(options.storeId, onFinal, useCallback((err: unknown) => fail.current(err), []));
+  const queue = useClipQueue(options.storeId, options.purpose ?? "list", onFinal, useCallback((err: unknown) => fail.current(err), []));
   const recorder = useClipRecorder(options.continuous ?? false, queue.send);
   const controls = useRecorderControls(recorder, device.start);
   fail.current = controls.onFail;

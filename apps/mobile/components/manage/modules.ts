@@ -66,6 +66,7 @@ const MODULE_GROUPS: ModuleGroup[] = [
       { resource: "coupons", label: "Coupons", icon: "ticket-outline", href: "/manage/coupons" },
       { resource: "promos", label: "Promotions", icon: "megaphone-outline", href: "/manage/promos" },
       { resource: "home-layout", label: "Home layout", icon: "grid-outline", href: "/manage/home-layout" },
+      { resource: "store-posts", label: "Shop posts", icon: "chatbubble-ellipses-outline", href: "/manage/store-posts" },
       { resource: "festival-events", label: "Festival calendar", icon: "calendar-outline", href: "/manage/festival-events" },
       { resource: "notification-send", label: "Push notifications", icon: "notifications-outline", href: "/manage/notification-send" },
       { resource: "loyalty-settings", label: "Loyalty", icon: "medal-outline", href: "/manage/loyalty-settings" },

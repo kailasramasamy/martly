@@ -485,6 +485,31 @@ export interface MonthlyListView<P = unknown> {
   changes: MonthlyListChange<P>[];
 }
 
+/** The other language's text for an owner's words, keyed by language ({ ta: { text } }) */
+export type VoiceTranslations = Partial<Record<string, { text: string }>>;
+
+/** "Owner's pick" on a listing: why the owner vouches for it, in the words and language they used */
+export interface OwnerPick {
+  note: string;
+  language: string;
+  translations: VoiceTranslations | null;
+  /** The owner's first name, for "Murugan, Harur Fresh Mart" */
+  author: string;
+}
+
+/** A post from the store's owner, with the products it's about as the store sells them now */
+export interface StorePostView<P = unknown> {
+  id: string;
+  kind: "FRESH_TODAY" | "NEW_IN_STORE" | "BACK_IN_STOCK";
+  text: string;
+  language: string;
+  translations: VoiceTranslations | null;
+  author: string;
+  createdAt: string;
+  expiresAt: string;
+  products: P[];
+}
+
 /** What a list line can be swapped for, in stock today: its product's other sizes, and other brands in its subcategory closest in size */
 export interface MonthlyListItemOptions<P = unknown> {
   sizes: P[];

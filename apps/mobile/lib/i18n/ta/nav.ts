@@ -31,6 +31,7 @@ export const nav: Strings<"nav"> = {
   speakList: "பட்டியலைச் சொல்லுங்கள்",
   storeWalk: "கடையைச் சுற்றிப் பாருங்கள்",
   monthlyList: "மாதப் பட்டியல்",
+  storePosts: "கடையிலிருந்து",
   myList: "என் பட்டியல்",
   returnRequest: "திருப்பி அனுப்பக் கோரு",
   liveTracking: "நேரலை கண்காணிப்பு",

@@ -180,6 +180,7 @@ function RootLayoutNav() {
         <Stack.Screen name="my-list" options={{ headerShown: true, title: t.myList }} />
         <Stack.Screen name="store-walk" options={{ headerShown: true, title: t.storeWalk }} />
         <Stack.Screen name="monthly-list" options={{ headerShown: true, title: t.monthlyList }} />
+        <Stack.Screen name="store-posts" options={{ headerShown: true, title: t.storePosts }} />
         <Stack.Screen name="return-request" options={{ headerShown: true, title: t.returnRequest }} />
         <Stack.Screen name="live-tracking" options={{ headerShown: true, title: t.liveTracking }} />
         <Stack.Screen name="order-success/[id]" options={{ headerShown: false, gestureEnabled: false }} />

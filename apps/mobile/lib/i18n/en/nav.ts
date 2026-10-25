@@ -30,6 +30,7 @@ export const nav = {
   speakList: "Speak your list",
   storeWalk: "Walk the store",
   monthlyList: "Monthly list",
+  storePosts: "From the shop",
   myList: "My list",
   returnRequest: "Request Return",
   liveTracking: "Live Tracking",

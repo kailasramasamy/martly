@@ -82,6 +82,16 @@ function OfferFlag({ item }: { item: StoreProduct }) {
   );
 }
 
+// The owner's pick gets a teal shelf talker on the other corner from the offer flag
+function OwnerTalker() {
+  const t = useStrings("storeVoice");
+  return (
+    <View style={styles.talker} pointerEvents="none">
+      <Text style={styles.talkerText} numberOfLines={2}>{t.ownersPick}</Text>
+    </View>
+  );
+}
+
 /** A pack standing on the shelf at its real size; adding it tosses its photo into the walk's basket */
 export function Pack({ item, variants, storeId }: { item: StoreProduct; variants: StoreProduct[]; storeId: string | undefined }) {
   const { getLocalizedName } = useLanguage();
@@ -97,6 +107,7 @@ export function Pack({ item, variants, storeId }: { item: StoreProduct; variants
         <Image ref={photo} source={{ uri }} style={[styles.image, { width: size, height: size }]} />
       </Pressable>
       <OfferFlag item={item} />
+      {item.ownerPick && <OwnerTalker />}
       <View style={styles.plusSpot}><PlusButton item={item} variants={variants} onAdd={() => uri && flyer?.fly(uri, photo.current)} /></View>
     </View>
   );
@@ -114,6 +125,12 @@ const styles = StyleSheet.create({
     shadowColor: "#0f172a", shadowOpacity: 0.25, shadowRadius: 3, shadowOffset: { width: 0, height: 2 }, elevation: 3,
   },
   flagText: { fontFamily: fonts.extrabold, fontSize: 10, lineHeight: 12, color: "#ffffff", textAlign: "center" },
+  talker: {
+    position: "absolute", right: -2, top: 6, maxWidth: 60, paddingHorizontal: 6, paddingVertical: 3, borderRadius: 4,
+    backgroundColor: colors.primary, transform: [{ rotate: "8deg" }],
+    shadowColor: "#0f172a", shadowOpacity: 0.25, shadowRadius: 3, shadowOffset: { width: 0, height: 2 }, elevation: 3,
+  },
+  talkerText: { fontFamily: fonts.extrabold, fontSize: 10, lineHeight: 12, color: "#ffffff", textAlign: "center" },
   plusSpot: { position: "absolute", right: 0, bottom: 2 },
   plus: {
     width: 34, height: 34, borderRadius: 17, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center",

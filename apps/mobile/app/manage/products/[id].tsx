@@ -12,6 +12,7 @@ import { Button } from "../../../components/manage/ui/Button";
 import { manage } from "../../../components/manage/ui/tokens";
 import { ProductDetailView } from "../../../components/manage/products/ProductDetailView";
 import { canEditProduct } from "../../../components/manage/products/access";
+import { OwnerPickSection } from "../../../components/manage/store-voice/OwnerPickSection";
 import type { ProductDetail } from "../../../components/manage/products/types";
 
 const TAMIL_POLL_MS = 3000;
@@ -70,6 +71,7 @@ export default function ProductScreen() {
         </View>
       ) : null}
       {data && <ProductDetailView product={data} />}
+      {data && !data.isDraft && <OwnerPickSection productId={data.id} />}
     </ManageStackScreen>
   );
 }
