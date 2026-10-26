@@ -69,8 +69,8 @@ function useHomeScroll() {
 /** Home's data: the section pages plus the shopper's membership, with one pull-to-refresh for both */
 function useHomeData() {
   const { selectedStore, refreshStores } = useStore();
-  const { isAuthenticated } = useAuth();
-  const loaded = useHomeSections(selectedStore?.id);
+  const { isAuthenticated, isLoading, user } = useAuth();
+  const loaded = useHomeSections(selectedStore?.id, isLoading ? undefined : user?.id ?? null);
   const sections = useMemo(() => withoutHeroDuplicates(loaded.sections), [loaded.sections]);
   const home = { ...loaded, sections };
   const member = useMemberStatus(selectedStore, isAuthenticated);

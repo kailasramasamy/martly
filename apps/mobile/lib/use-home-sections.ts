@@ -5,8 +5,12 @@ import type { StoreProduct } from "./types";
 
 export type MobileHomeSection = HomeSection<StoreProduct>;
 
-/** Home's merchandising sections for a store, a page at a time; the first page also carries the page chrome */
-export function useHomeSections(storeId: string | undefined) {
+/**
+ * Home's merchandising sections for a store, a page at a time; the first page also carries the page chrome.
+ * `viewer` is the signed-in user's id, null for a guest, or undefined while the session is still being restored: the
+ * page waits for it, so a signed-in shopper never gets the guest page, and reloads when it changes.
+ */
+export function useHomeSections(storeId: string | undefined, viewer: string | null | undefined) {
   const [sections, setSections] = useState<MobileHomeSection[]>([]);
   const [chrome, setChrome] = useState<HomeChrome | null>(null);
   const [loading, setLoading] = useState(false);
@@ -33,6 +37,7 @@ export function useHomeSections(storeId: string | undefined) {
       return Promise.resolve();
     }
     setLoading(true);
+    if (viewer === undefined) return Promise.resolve();
     return fetchPage(null)
       .then((res) => {
         if (id !== request.current) return;
@@ -44,7 +49,7 @@ export function useHomeSections(storeId: string | undefined) {
       // Keeps what was on screen; pull-to-refresh retries
       .catch(() => {})
       .finally(() => { if (id === request.current) setLoading(false); });
-  }, [fetchPage, storeId]);
+  }, [fetchPage, storeId, viewer]);
 
   useEffect(() => {
     setSections([]);

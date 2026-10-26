@@ -8,11 +8,8 @@ export async function authenticate(request: FastifyRequest, reply: FastifyReply)
   }
 }
 
-/** Try JWT verification but allow unauthenticated (guest) access */
-export async function authenticateOptional(request: FastifyRequest) {
-  try {
-    await request.jwtVerify();
-  } catch {
-    // guest — request.user remains undefined
-  }
+/** A guest sends no token. A token that is sent must be valid: an expired one gets a 401 so the app refreshes it, instead
+ *  of the shopper quietly seeing the guest version of the page */
+export async function authenticateOptional(request: FastifyRequest, reply: FastifyReply) {
+  if (request.headers.authorization) await authenticate(request, reply);
 }
