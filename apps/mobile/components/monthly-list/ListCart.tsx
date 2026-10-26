@@ -64,7 +64,7 @@ export function ListCart({ children }: { children: ReactNode }) {
   const { selectedStore } = useStore();
   const { state, reload, saveLines } = useMonthlyList(selectedStore?.id);
   const list = state.kind === "ready" ? state.list : null;
-  const save = useMemo(() => (lines: ListLine[]) => (list ? saveLines(list.id, lines) : Promise.resolve(false)), [list?.id, saveLines]);
+  const save = useMemo(() => (lines: ListLine[]) => (list ? saveLines(list.id, () => lines) : Promise.resolve(false)), [list?.id, saveLines]);
   if (state.kind === "loading") return <Loader style={styles.loader} />;
   if (!list || !selectedStore) {
     return (

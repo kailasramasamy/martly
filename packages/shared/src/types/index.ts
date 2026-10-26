@@ -463,7 +463,7 @@ export interface MonthlyListItemView<P = unknown> {
 /** What changed since last month, for the shopper to settle before ordering */
 export type MonthlyListChange<P = unknown> =
   | { kind: "OUT_OF_STOCK"; itemId: string; swap: P | null }
-  | { kind: "BIGGER_PACK"; itemId: string; bigger: P; packs: number; saving: number }
+  | { kind: "BIGGER_PACK"; itemId: string; bigger: P; packs: number; saving: number; extra: number }
   | { kind: "LAPSED"; itemId: string; lastOrderedAt: string | null }
   | { kind: "NEW_USUAL"; product: P };
 

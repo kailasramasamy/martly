@@ -77,6 +77,9 @@ export const monthlyList = {
   outTitle: (name: string) => `${name} is out`,
   outSwap: (name: string, price: string) => `Nearest in stock: ${name}, ₹${price}.`,
   outNoSwap: "Nothing close is in stock today.",
+  nearestInStock: "Nearest in stock",
+  swapShort: "Swap",
+  otherOptions: "More",
   leaveOut: "Leave it out",
   swap: "Swap for this month",
   swapped: "Swapped for this month only",
@@ -84,6 +87,8 @@ export const monthlyList = {
   biggerTag: "BIGGER PACK SAVES",
   biggerTitle: (name: string, size: string) => `${name}: take the ${size}?`,
   biggerBody: (packs: number, size: string, saving: string) => `${plural(packs, "pack", "packs")} of ${size} saves ₹${saving} for the same amount.`,
+  biggerUpsize: (packs: number, size: string, extra: string, saving: string, own: string) =>
+    `${plural(packs, "pack", "packs")} of ${size} costs ₹${extra} more for the bigger amount, and ₹${saving} less than buying it in ${own} packs.`,
   keepSize: (size: string) => `Keep ${size}`,
   switchSize: (size: string) => `Switch to ${size}`,
   switched: (size: string) => `Switched to ${size}`,

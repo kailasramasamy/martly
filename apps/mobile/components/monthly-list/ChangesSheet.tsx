@@ -32,7 +32,8 @@ function useCopy(list: MonthlyList) {
     }
     if (c.kind === "BIGGER_PACK") {
       const size = c.bigger.variant.name;
-      return { ...base, tag: t.biggerTag, tone: "teal", title: t.biggerTitle(name, size), body: t.biggerBody(c.packs, size, `${c.saving}`), no: t.keepSize(item.variantName), yes: t.switchSize(size), noDone: t.keptSize(item.variantName), yesDone: t.switched(size) };
+      const body = c.extra > 0 ? t.biggerUpsize(c.packs, size, `${c.extra}`, `${c.saving}`, item.variantName) : t.biggerBody(c.packs, size, `${c.saving}`);
+      return { ...base, tag: t.biggerTag, tone: "teal", title: t.biggerTitle(name, size), body, no: t.keepSize(item.variantName), yes: t.switchSize(size), noDone: t.keptSize(item.variantName), yesDone: t.switched(size) };
     }
     const since = c.lastOrderedAt ? formatDate(c.lastOrderedAt, { month: "long" }) : "";
     return { ...base, tag: t.lapsedTag, tone: "slate", title: t.lapsedTitle(name), body: t.lapsedBody(since), no: t.removeFromList, yes: t.keepIt, noDone: t.removed, yesDone: t.kept };

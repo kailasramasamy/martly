@@ -47,7 +47,7 @@ async function biggerPacks(prisma: PrismaClient, storeId: string, items: Monthly
   const deals = await packDeals(prisma, storeId, stocked.map((i) => i.listing!), quantities, false);
   return deals.flatMap((d): Change[] => {
     const item = stocked.find((i) => i.listing!.id === d.storeProductId);
-    return item ? [{ kind: "BIGGER_PACK", itemId: item.id, bigger: d.to, packs: d.quantity, saving: Math.round(d.saves) }] : [];
+    return item ? [{ kind: "BIGGER_PACK", itemId: item.id, bigger: d.to, packs: d.quantity, saving: Math.round(d.saves), extra: d.extra }] : [];
   });
 }
 

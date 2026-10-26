@@ -20,7 +20,7 @@ import { MonthlyListEmpty } from "../components/monthly-list/MonthlyListEmpty";
 import { SwapSheet } from "../components/monthly-list/SwapSheet";
 import { AddItemSheet } from "../components/monthly-list/AddItemSheet";
 import { listSavesDone } from "../components/monthly-list/list-saves";
-import { linesOf, useMonthlyList, type ListLine } from "../components/monthly-list/use-monthly-list";
+import { useMonthlyList, type LinesEdit } from "../components/monthly-list/use-monthly-list";
 import { useCheckoutHandoff, useMonthPlan, type Verdict } from "../components/monthly-list/use-month-plan";
 import { useQuickOrder } from "../components/monthly-list/use-quick-order";
 
@@ -53,7 +53,6 @@ function sectionsOf(list: MonthlyList, aisleName: (a: NonNullable<MonthlyList["i
 function useAnswer(list: MonthlyList, plan: ReturnType<typeof useMonthPlan>, saveLines: ReturnType<typeof useMonthlyList>["saveLines"]) {
   return useCallback((c: MonthlyListCheck, v: Verdict) => {
     plan.settle(c, v);
-    const lines = linesOf(list);
     if (c.kind === "OUT_OF_STOCK") {
       if (v === "yes" && c.swap) plan.swapFor(c.itemId, c.swap);
       else plan.leaveOut(c.itemId);
@@ -62,11 +61,13 @@ function useAnswer(list: MonthlyList, plan: ReturnType<typeof useMonthPlan>, sav
     const item = c.kind === "NEW_USUAL" ? null : list.items.find((i) => i.id === c.itemId);
     if (c.kind === "BIGGER_PACK" && v === "yes" && item) {
       const bigger = { productId: c.bigger.product.id, variantId: c.bigger.variantId, quantity: c.packs };
-      void saveLines(list.id, lines.map((l) => (l.variantId === item.variantId ? bigger : l)));
+      void saveLines(list.id, (lines) => lines.map((l) => (l.variantId === item.variantId ? bigger : l)));
     }
-    if (c.kind === "LAPSED" && v === "no" && item) void saveLines(list.id, lines.filter((l) => l.variantId !== item.variantId));
+    // By product, so it still goes if its pack was just switched
+    if (c.kind === "LAPSED" && v === "no" && item) void saveLines(list.id, (lines) => lines.filter((l) => l.productId !== item.productId));
     if (c.kind === "NEW_USUAL" && v === "yes") {
-      void saveLines(list.id, [...lines, { productId: c.product.product.id, variantId: c.product.variantId, quantity: 1 }]);
+      const usual = { productId: c.product.product.id, variantId: c.product.variantId, quantity: 1 };
+      void saveLines(list.id, (lines) => (lines.some((l) => l.variantId === usual.variantId) ? lines : [...lines, usual]));
     }
   }, [list, plan, saveLines]);
 }
@@ -75,18 +76,19 @@ function useAnswer(list: MonthlyList, plan: ReturnType<typeof useMonthPlan>, sav
 // that size if it's already on the list), a removal, a new line
 function useLineEdits(list: MonthlyList, saveLines: ReturnType<typeof useMonthlyList>["saveLines"]) {
   return useMemo(() => {
-    const lines = linesOf(list);
-    const save = (next: ListLine[]) => void saveLines(list.id, next);
+    const save = (edit: LinesEdit) => void saveLines(list.id, edit);
+    const variantOf = (itemId: string) => list.items.find((i) => i.id === itemId)?.variantId;
     const lineOf = (sp: StoreProduct, quantity: number) => ({ productId: sp.product.id, variantId: sp.variant.id, quantity });
     return {
-      swap: (itemId: string, sp: StoreProduct) => {
-        const at = list.items.findIndex((i) => i.id === itemId);
+      swap: (itemId: string, sp: StoreProduct) => save((lines) => {
+        const at = lines.findIndex((l) => l.variantId === variantOf(itemId));
         const there = lines.findIndex((l) => l.variantId === sp.variant.id);
+        if (at < 0 || at === there) return lines;
         const merged = lines.map((l, i) => (i === at ? lineOf(sp, l.quantity + (there >= 0 ? lines[there].quantity : 0)) : l));
-        save(there >= 0 ? merged.filter((_, i) => i !== there) : merged);
-      },
-      remove: (itemId: string) => save(lines.filter((_, i) => list.items[i].id !== itemId)),
-      add: (sp: StoreProduct) => save([...lines, lineOf(sp, 1)]),
+        return there >= 0 ? merged.filter((_, i) => i !== there) : merged;
+      }),
+      remove: (itemId: string) => save((lines) => lines.filter((l) => l.variantId !== variantOf(itemId))),
+      add: (sp: StoreProduct) => save((lines) => (lines.some((l) => l.variantId === sp.variant.id) ? lines : [...lines, lineOf(sp, 1)])),
     };
   }, [list, saveLines]);
 }
@@ -182,6 +184,11 @@ function ListScreen({ list, hook, openOrder }: { list: MonthlyList; hook: Return
   const setQuantity = useCallback((itemId: string, quantity: number) =>
     (quantity < 1 ? edits.remove(itemId) : hook.setQuantity(itemId, quantity)), [edits, hook.setQuantity]);
   const openSwap = useCallback((itemId: string) => { setSwapId(itemId); setSheet("swap"); }, []);
+  const outChecks = useMemo(() => new Map(list.changes.flatMap((c) => (c.kind === "OUT_OF_STOCK" ? [[c.itemId, c] as const] : []))), [list.changes]);
+  const swapMonth = useCallback((itemId: string) => {
+    const check = outChecks.get(itemId);
+    if (check) answer(check, "yes");
+  }, [outChecks, answer]);
   const settings = useDayPill(list, useCallback(() => setSheet("setup"), []));
   const close = () => setSheet(null);
   return (
@@ -200,6 +207,7 @@ function ListScreen({ list, hook, openOrder }: { list: MonthlyList; hook: Return
           <ListRow
             item={item} on={!plan.skipped.has(item.id)} swap={plan.swaps.get(item.id)} last={index === section.data.length - 1}
             onToggle={plan.toggle} onQuantity={setQuantity} onOpen={openSwap}
+            alternative={outChecks.get(item.id)?.swap} onSwap={swapMonth}
           />
         )}
       />

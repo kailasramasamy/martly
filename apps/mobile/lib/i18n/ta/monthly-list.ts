@@ -65,6 +65,9 @@ export const monthlyList: Strings<"monthlyList"> = {
   outTitle: (name: string) => `${name} இல்லை`,
   outSwap: (name: string, price: string) => `அருகில் உள்ளது: ${name}, ₹${price}.`,
   outNoSwap: "இன்று அதற்கு இணையானது எதுவும் இல்லை.",
+  nearestInStock: "அருகில் உள்ளது",
+  swapShort: "மாற்று",
+  otherOptions: "மேலும்",
   leaveOut: "விட்டுவிடு",
   swap: "இந்த மாதம் மாற்று",
   swapped: "இந்த மாதம் மட்டும் மாற்றப்பட்டது",
@@ -72,6 +75,8 @@ export const monthlyList: Strings<"monthlyList"> = {
   biggerTag: "பெரிய பேக் மலிவு",
   biggerTitle: (name: string, size: string) => `${name}: ${size} எடுக்கலாமா?`,
   biggerBody: (packs: number, size: string, saving: string) => `${size} ${packs} பேக் எடுத்தால் அதே அளவுக்கு ₹${saving} மிச்சம்.`,
+  biggerUpsize: (packs: number, size: string, extra: string, saving: string, own: string) =>
+    `${size} ${packs} பேக்: அதிக அளவுக்கு ₹${extra} கூடுதல், ${own} பேக்குகளில் வாங்குவதை விட ₹${saving} மிச்சம்.`,
   keepSize: (size: string) => `${size} போதும்`,
   switchSize: (size: string) => `${size} ஆக மாற்று`,
   switched: (size: string) => `${size} ஆக மாற்றப்பட்டது`,

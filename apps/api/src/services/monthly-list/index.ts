@@ -134,18 +134,23 @@ export async function updateMonthlyList(prisma: PrismaClient, userId: string, id
 
 /**
  * Replaces the list's lines. Sizes kept stay the same rows (same id and last price), so the app's choices for this month
- * still point at them; false when the list isn't the shopper's
+ * still point at them. A product switched to another size keeps when it was last ordered (the last price stays with the
+ * old size). False when the list isn't the shopper's
  */
 export async function replaceMonthlyListItems(prisma: PrismaClient, userId: string, id: string, input: MonthlyListItemsInput) {
-  const list = await prisma.monthlyList.findFirst({ where: { id, userId }, select: { id: true } });
+  const list = await prisma.monthlyList.findFirst({ where: { id, userId }, select: { id: true, items: { select: { productId: true, lastOrderedAt: true } } } });
   if (!list) return false;
+  const orderedAt = new Map(list.items.filter((i) => i.lastOrderedAt).map((i) => [i.productId, i.lastOrderedAt]));
   // A millisecond apart, so the lines keep the order sent (a swapped line stays in its place)
   const now = Date.now();
   await prisma.$transaction([
     prisma.monthlyListItem.deleteMany({ where: { listId: id, variantId: { notIn: input.items.map((l) => l.variantId) } } }),
     ...input.items.map((l, i) => prisma.monthlyListItem.upsert({
       where: { listId_variantId: { listId: id, variantId: l.variantId } },
-      create: { listId: id, productId: l.productId, variantId: l.variantId, quantity: l.quantity, createdAt: new Date(now + i) },
+      create: {
+        listId: id, productId: l.productId, variantId: l.variantId, quantity: l.quantity, createdAt: new Date(now + i),
+        lastOrderedAt: orderedAt.get(l.productId) ?? null,
+      },
       update: { quantity: l.quantity, createdAt: new Date(now + i) },
     })),
   ]);

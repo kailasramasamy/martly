@@ -23,7 +23,7 @@ when salary or pension lands. The monthly list brings that shop back every month
 | `POST /` | Creates or restarts the list. `source: "ORDER"` starts from the **biggest order at the store in the last 45 days** (or `orderId`); `"LINES"` takes cart lines. 404 when there's no order to start from |
 | `GET /?storeId=` | The list at today's prices: items (each with its listing, `inStock` and `delta` against `lastPrice`), `total`, `due` and `changes` |
 | `PUT /:id` | Reminder day, channels, pause |
-| `PUT /:id/items` | Replaces the lines. Sizes kept are **upserted, not recreated**, so they keep their id and last price, and the app's this-month choices still point at them. Lines keep the order sent |
+| `PUT /:id/items` | Replaces the lines. Sizes kept are **upserted, not recreated**, so they keep their id and last price, and the app's this-month choices still point at them. A product switched to another size keeps its `lastOrderedAt` (the last price stays with the old size). Lines keep the order sent |
 | `GET /:id/items/:itemId/options` | What a line can be swapped for, in stock: `sizes` (the same product's other sizes, smallest first) and `brands` (up to 12 others in the subcategory, closest in size then price, none already on the list) |
 | `POST /:id/quick-order` | Quote for a one-tap order: the address, delivery and amount, or why it has to go through checkout |
 
@@ -33,8 +33,11 @@ list's `lastOrderedMonth` (`recordMonthlyListOrder`), whichever screen placed it
 ### Things to check (`services/monthly-list/changes.ts`)
 
 - **Out of stock:** the size isn't available. The swap offered is the in-stock product in the same subcategory
-  closest in size, then in price (`closestTo` in `options.ts`). It applies to this month only.
-- **Bigger pack saves:** `packDeals()`, the same check the cart uses. Accepting it changes the list.
+  closest in size, then in price (`closestTo` in `options.ts`). It applies to this month only. The list row shows it
+  too, under the greyed-out line, with Swap (this month) and More (the swap sheet).
+- **Bigger pack saves:** `packDeals()`, the same check the cart uses. Accepting it changes the list. `extra` is what the
+  bill goes up by: 0 reads "saves ₹N for the same amount", more than 0 reads "costs ₹X more for the bigger amount, and
+  ₹N less than buying it in the smaller packs".
 - **Not bought lately:** not ordered in 60+ days. "Remove" takes it off the list.
 - **New usual:** a habit from `predictReorders` that repeats every 20–40 days and isn't on the list (at most 3).
 
@@ -79,7 +82,8 @@ list's `lastOrderedMonth` (`recordMonthlyListOrder`), whichever screen placed it
 - **Changes for this month only** (local state in `use-month-plan.ts`): the tick (leave it out this month) and the
   out-of-stock swap.
 - **Changes saved to the list for later months:**
-  - Quantity: debounced 600 ms.
+  - Saves run one at a time, each applied to the list the server last returned (`useLineSaves` in
+    `use-monthly-list.ts`), so quick taps build on each other. Quantity taps wait 600 ms and go with the next save.
   - Swap: tap the photo or name to open **SwapSheet**, with other sizes, other brands (with ₹/kg or ₹/L) and Remove.
     A swap keeps the line's place and quantity; picking a size already on the list merges the two.
   - Remove: − at quantity 1 is a bin icon.
