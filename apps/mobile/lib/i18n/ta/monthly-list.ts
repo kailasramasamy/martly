@@ -2,9 +2,9 @@ import type { Strings } from "../index";
 
 export const monthlyList: Strings<"monthlyList"> = {
   listFor: (month: string) => `${month} பட்டியல்`,
-  everyDay: (day: number) => `மாதம் ${day} ஆம் தேதி`,
+  everyDay: (day: number) => `${day} ஆம் தேதி`,
   pricesAsOf: (date: string) => `இன்றைய விலை, ${date}`,
-  stripTitle: (month: string) => `உங்கள் ${month} பட்டியல் தயார்`,
+  stripTitle: (month: string) => `${month} பட்டியல் தயார்`,
   stripMeta: (n: number, total: string) => `${n} பொருட்கள் · இன்று ₹${total}`,
   changedCount: (n: number) => `${n} மாற்றம்`,
   orderShort: "ஆர்டர்",
@@ -17,7 +17,7 @@ export const monthlyList: Strings<"monthlyList"> = {
   priceUp: (amount: string) => `₹${amount} கூடியது`,
   priceDown: (amount: string) => `₹${amount} குறைந்தது`,
   count: (on: number, all: number) => `${all} இல் ${on} பொருட்கள்`,
-  walkStore: "கடையைச் சுற்றிப் பாருங்கள்",
+  walkStore: "கடையைச் சுற்று",
   order: (total: string) => `₹${total} ஆர்டர் செய்`,
   loadFailed: "பட்டியலை ஏற்ற முடியவில்லை. இணைப்பைச் சரிபாருங்கள்.",
   retry: "மீண்டும் முயலுங்கள்",

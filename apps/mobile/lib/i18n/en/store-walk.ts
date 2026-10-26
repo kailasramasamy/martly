@@ -27,6 +27,7 @@ export const storeWalk = {
   allInAisle: "All",
   popular: "Popular in this aisle",
   seeAll: (n: number) => `See all ${n}`,
+  seeAllBrand: (n: number, brand: string) => `See all ${n} ${brand}`,
   seeMyBag: "See my bag",
   nextKicker: "Next aisle",
   nextAisle: (name: string) => `Next: ${name}`,

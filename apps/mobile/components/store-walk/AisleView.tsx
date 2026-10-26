@@ -79,15 +79,16 @@ function DueBlock({ products }: { products: StoreProduct[] }) {
   );
 }
 
-// To the full aisle, or the picked subcategory (the category page opens either)
-function SeeAll({ categoryId, stocked }: { categoryId: string; stocked: number }) {
+// To the full aisle, or the picked subcategory (the category page opens either), narrowed to the picked brand
+function SeeAll({ categoryId, stocked, brand }: { categoryId: string; stocked: number; brand: { id: string; name: string; count: number } | undefined }) {
   const t = useStrings("storeWalk");
+  const params = brand ? { id: categoryId, brandId: brand.id } : { id: categoryId };
   return (
     <TouchableOpacity
       style={styles.seeAll} activeOpacity={0.8} accessibilityRole="button"
-      onPress={() => router.push({ pathname: "/category/[id]", params: { id: categoryId } })}
+      onPress={() => router.push({ pathname: "/category/[id]", params })}
     >
-      <Text style={styles.seeAllText}>{t.seeAll(stocked)}</Text>
+      <Text style={styles.seeAllText}>{brand ? t.seeAllBrand(brand.count, brand.name) : t.seeAll(stocked)}</Text>
       <Ionicons name="chevron-forward" size={16} color={colors.primary} />
     </TouchableOpacity>
   );
@@ -162,7 +163,10 @@ function AisleShelves({ aisle, stop, sign, shelf }: ShelvesProps) {
       }
       ListFooterComponent={
         <View>
-          <SeeAll categoryId={picked?.id ?? aisle.category.id} stocked={picked?.stocked ?? aisle.stocked} />
+          <SeeAll
+            categoryId={picked?.id ?? aisle.category.id} stocked={picked?.stocked ?? aisle.stocked}
+            brand={shelf.brands.find((b) => b.id === shelf.brandId)}
+          />
           <EndCap deals={aisle.endcap} />
         </View>
       }

@@ -24,6 +24,8 @@ import { useStoreWalk, type StoreWalk } from "../components/store-walk/use-store
 import { ListCart } from "../components/monthly-list/ListCart";
 
 const SHIFT = Dimensions.get("window").width * 0.35;
+// Back button, the gutters either side and the gap before the buttons on the right
+const HEADER_BACK_WIDTH = 104;
 
 // Moving on slides the aisle out to the left and the next one in from the right, like walking forward; going back
 // (`direction` -1) slides the other way
@@ -58,18 +60,23 @@ function Message({ text, onRetry }: { text: string; onRetry?: () => void }) {
 // on its right
 function useAisleHeader(department: string, position: string, onMap: () => void, onSearch: () => void) {
   const navigation = useNavigation();
+  // iOS doesn't bound a custom header title, so it gets the width the Back button and the buttons on the right leave
+  const [actionsWidth, setActionsWidth] = useState(0);
+  const titleWidth = Dimensions.get("window").width - HEADER_BACK_WIDTH - actionsWidth;
   const t = useStrings("storeWalk");
   const nav = useStrings("nav");
   useEffect(() => {
     navigation.setOptions({
+      // Left-aligned, so the aisle name gets the room between Back and the buttons (centred, a long name runs under them)
+      headerTitleAlign: "left",
       headerTitle: () => (
-        <View style={styles.headerTitle}>
+        <View style={[styles.headerTitle, actionsWidth > 0 && { maxWidth: titleWidth }]}>
           <Text style={styles.department} numberOfLines={1}>{department.toUpperCase()}</Text>
           <Text style={styles.position}>{position}</Text>
         </View>
       ),
       headerRight: () => (
-        <View style={styles.headerActions}>
+        <View style={styles.headerActions} onLayout={(e) => setActionsWidth(e.nativeEvent.layout.width)}>
           <TouchableOpacity style={styles.searchButton} onPress={onSearch} hitSlop={4} accessibilityRole="button" accessibilityLabel={t.searchAisle}>
             <Ionicons name="search" size={18} color={colors.text} />
           </TouchableOpacity>
@@ -80,9 +87,9 @@ function useAisleHeader(department: string, position: string, onMap: () => void,
         </View>
       ),
     });
-  }, [navigation, department, position, onMap, onSearch, t]);
+  }, [navigation, department, position, onMap, onSearch, t, actionsWidth, titleWidth]);
   // Back to the plain title once the walk leaves the aisles
-  useEffect(() => () => navigation.setOptions({ headerTitle: nav.storeWalk, headerRight: undefined }), [navigation, nav]);
+  useEffect(() => () => navigation.setOptions({ headerTitle: nav.storeWalk, headerTitleAlign: undefined, headerRight: undefined }), [navigation, nav]);
 }
 
 // Back in the aisles steps back to the department's route instead of leaving the walk. The native stack can't reliably
@@ -202,7 +209,7 @@ export default function StoreWalkScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.background },
   spinner: { marginTop: 48 },
-  headerTitle: { alignItems: "center" },
+  headerTitle: { flexShrink: 1 },
   progressRow: { paddingVertical: 6 },
   department: { fontFamily: fonts.extrabold, fontSize: 11, letterSpacing: 0.6, color: colors.primary },
   position: { fontFamily: fonts.bold, fontSize: 13, color: colors.textSecondary },

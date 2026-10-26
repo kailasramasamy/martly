@@ -21,7 +21,7 @@ export const MonthlyListSection = memo(function MonthlyListSection({ section }: 
       <TouchableOpacity style={styles.strip} onPress={() => router.push("/monthly-list")} activeOpacity={0.85} accessibilityRole="button">
         <View style={styles.icon}><Ionicons name="reader-outline" size={22} color={colors.primary} /></View>
         <View style={styles.text}>
-          <Text style={styles.title} numberOfLines={1}>{t.stripTitle(monthName)}</Text>
+          <Text style={styles.title} numberOfLines={2}>{t.stripTitle(monthName)}</Text>
           <Text style={styles.meta} numberOfLines={2}>
             {t.stripMeta(itemCount, total.toLocaleString("en-IN"))}
             {flagged > 0 && <Text style={styles.flag}>{` · ${t.changedCount(flagged)}`}</Text>}

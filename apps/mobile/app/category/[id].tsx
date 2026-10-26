@@ -70,7 +70,8 @@ function collectIds(node: TreeNode): Set<string> {
 const EMPTY_SCOPE = new Set<string>();
 
 export default function CategoryScreen() {
-  const { id } = useLocalSearchParams<{ id: string }>();
+  // brandId: opened already narrowed to a brand (See all on a store walk shelf)
+  const { id, brandId: openBrandId } = useLocalSearchParams<{ id: string; brandId?: string }>();
   const navigation = useNavigation();
   const { selectedStore } = useStore();
   const { getLocalizedName } = useLanguage();
@@ -84,7 +85,7 @@ export default function CategoryScreen() {
   const [activeGrandchild, setActiveGrandchild] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
-  const [brandId, setBrandId] = useState<string | null>(null);
+  const [brandId, setBrandId] = useState<string | null>(openBrandId ?? null);
   const [topBanners, setTopBanners] = useState<Banner[]>([]);
 
   const gridRef = useRef<FlatList>(null);
@@ -174,8 +175,6 @@ export default function CategoryScreen() {
   // Scroll to top when filters change
   useEffect(scrollToTop, [filterOnSale, sortBy, activeGrandchild, brandId]);
 
-  useEffect(() => setBrandId(null), [activeGrandchild]);
-
   const handleBannerPress = useCallback((banner: Banner) => openBannerTarget(banner), []);
 
   const hasActiveFilters = filterOnSale || sortBy !== null || activeGrandchild !== null || brandId !== null || searchQuery.trim().length > 0;
@@ -200,6 +199,7 @@ export default function CategoryScreen() {
       activePill={activeGrandchild}
       onPillSelect={(gcId) => {
         setActiveGrandchild(gcId);
+        setBrandId(null);
         scrollToTop();
       }}
       brandName={brandId ? brandTiles.find((b) => b.id === brandId)?.name ?? null : null}

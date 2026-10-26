@@ -24,6 +24,7 @@ export const storeWalk: Strings<"storeWalk"> = {
   allInAisle: "அனைத்தும்",
   popular: "இந்த வரிசையில் பிரபலமானவை",
   seeAll: (n: number) => `அனைத்தும் ${n}`,
+  seeAllBrand: (n: number, brand: string) => `${brand}: அனைத்தும் ${n}`,
   seeMyBag: "என் பையைப் பார்",
   nextKicker: "அடுத்த வரிசை",
   nextAisle: (name: string) => `அடுத்து: ${name}`,
@@ -31,7 +32,7 @@ export const storeWalk: Strings<"storeWalk"> = {
   bag: (n: number, total: string) => `${n} பொருட்கள் · ₹${total}`,
   goToBag: "உங்கள் கார்ட்டுக்குச் செல்",
   onList: (n: number, total: string) => `பட்டியலில்: ${n} பொருட்கள் · ₹${total}`,
-  backToList: "என் பட்டியலுக்குத் திரும்பு",
+  backToList: "பட்டியலுக்குத் திரும்பு",
   listDoneStats: (aisles: number, items: number, total: string) =>
     `${aisles} வரிசைகள் · பட்டியலில் ${items} பொருட்கள் · ₹${total}`,
   addedHere: (n: number) => `இந்த வரிசையில் +${n}`,
