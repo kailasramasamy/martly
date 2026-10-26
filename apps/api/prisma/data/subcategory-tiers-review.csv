@@ -1,0 +1,479 @@
+department,category,subcategory,slug,products,tier
+Fruits & Vegetables,Fresh Vegetables,Onion & Garlic,fresh-vegetables-onion-garlic,8,ESSENTIAL
+Fruits & Vegetables,Fresh Vegetables,Tomato,fresh-vegetables-tomato,5,ESSENTIAL
+Fruits & Vegetables,Fresh Vegetables,Potato,fresh-vegetables-potato,5,ESSENTIAL
+Fruits & Vegetables,Fresh Vegetables,Capsicum & Chillies,fresh-vegetables-capsicum-chillies,8,ESSENTIAL
+Fruits & Vegetables,Fresh Vegetables,"Leafy Greens (Palak, Methi, etc.)",fresh-vegetables-leafy-greens-palak-methi-etc,16,ESSENTIAL
+Fruits & Vegetables,Fresh Vegetables,Brinjal & Okra (Bhindi),fresh-vegetables-brinjal-okra-bhindi,7,ESSENTIAL
+Fruits & Vegetables,Fresh Vegetables,"Gourds & Squash (Lauki, Tori, Karela)",fresh-vegetables-gourds-squash-lauki-tori-karela,12,ESSENTIAL
+Fruits & Vegetables,Fresh Vegetables,"Beans & Legumes (French Beans, Sem)",fresh-vegetables-beans-legumes-french-beans-sem,9,ESSENTIAL
+Fruits & Vegetables,Fresh Vegetables,"Root Vegetables (Carrot, Beetroot, Radish)",fresh-vegetables-root-vegetables-carrot-beetroot-radish,11,ESSENTIAL
+Fruits & Vegetables,Fresh Vegetables,Other Vegetables,fresh-vegetables-other-vegetables,6,ESSENTIAL
+Fruits & Vegetables,Fresh Vegetables,Cauliflower & Cabbage,fresh-vegetables-cauliflower-cabbage,6,ESSENTIAL
+Fruits & Vegetables,Fresh Vegetables,Peas,fresh-vegetables-peas,4,STANDARD
+Fruits & Vegetables,Fresh Vegetables,Corn & Baby Corn,fresh-vegetables-corn-baby-corn,6,STANDARD
+Fruits & Vegetables,Fresh Vegetables,Mushrooms,fresh-vegetables-mushrooms,5,STANDARD
+Fruits & Vegetables,Fresh Fruits,Banana,fresh-fruits-banana,11,ESSENTIAL
+Fruits & Vegetables,Fresh Fruits,Apple,fresh-fruits-apple,7,ESSENTIAL
+Fruits & Vegetables,Fresh Fruits,Mango,fresh-fruits-mango,11,ESSENTIAL
+Fruits & Vegetables,Fresh Fruits,Orange & Mosambi,fresh-fruits-orange-mosambi,6,ESSENTIAL
+Fruits & Vegetables,Fresh Fruits,Pomegranate (Anaar),fresh-fruits-pomegranate-anaar,4,ESSENTIAL
+Fruits & Vegetables,Fresh Fruits,Grapes,fresh-fruits-grapes,6,ESSENTIAL
+Fruits & Vegetables,Fresh Fruits,Papaya,fresh-fruits-papaya,4,ESSENTIAL
+Fruits & Vegetables,Fresh Fruits,Guava (Amrood),fresh-fruits-guava-amrood,5,ESSENTIAL
+Fruits & Vegetables,Fresh Fruits,Watermelon & Muskmelon,fresh-fruits-watermelon-muskmelon,5,ESSENTIAL
+Fruits & Vegetables,Fresh Fruits,Chiku (Sapota),fresh-fruits-chiku-sapota,4,STANDARD
+Fruits & Vegetables,Fresh Fruits,Pineapple,fresh-fruits-pineapple,4,STANDARD
+Fruits & Vegetables,Fresh Fruits,Seasonal & Exotic Fruits,fresh-fruits-seasonal-exotic-fruits,16,ESSENTIAL
+Fruits & Vegetables,Fresh Fruits,Litchi,fresh-fruits-litchi,4,STANDARD
+Fruits & Vegetables,Fresh Herbs & Sprouts,Coriander (Dhaniya),fresh-herbs-sprouts-coriander-dhaniya,4,ESSENTIAL
+Fruits & Vegetables,Fresh Herbs & Sprouts,Curry Leaves,fresh-herbs-sprouts-curry-leaves,4,ESSENTIAL
+Fruits & Vegetables,Fresh Herbs & Sprouts,Ginger & Turmeric (Fresh),fresh-herbs-sprouts-ginger-turmeric-fresh,5,ESSENTIAL
+Fruits & Vegetables,Fresh Herbs & Sprouts,Mint (Pudina),fresh-herbs-sprouts-mint-pudina,4,ESSENTIAL
+Fruits & Vegetables,Fresh Herbs & Sprouts,"Sprouts (Moong, Mixed)",fresh-herbs-sprouts-sprouts-moong-mixed,5,STANDARD
+Fruits & Vegetables,Cut & Prepared,Cut Vegetables,cut-prepared-cut-vegetables,8,STANDARD
+Fruits & Vegetables,Cut & Prepared,Cut Fruits,cut-prepared-cut-fruits,4,STANDARD
+Fruits & Vegetables,Cut & Prepared,Salad Mixes,cut-prepared-salad-mixes,3,EXTENDED
+Fruits & Vegetables,Organic Produce,Organic Vegetables,organic-produce-organic-vegetables,3,EXTENDED
+Fruits & Vegetables,Organic Produce,Organic Fruits,organic-produce-organic-fruits,3,EXTENDED
+Dairy,Milk,Toned Milk,milk-toned-milk,28,ESSENTIAL
+Dairy,Milk,Full Cream Milk,milk-full-cream-milk,25,ESSENTIAL
+Dairy,Milk,Double Toned Milk,milk-double-toned-milk,7,ESSENTIAL
+Dairy,Milk,A2 Milk,milk-a2-milk,6,STANDARD
+Dairy,Milk,Organic Milk,milk-organic-milk,6,EXTENDED
+Dairy,Milk,UHT / Long Life Milk,milk-uht-long-life-milk,23,STANDARD
+Dairy,Milk,Skimmed Milk,milk-skimmed-milk,6,STANDARD
+Dairy,Milk,Plant-Based Milk,milk-plant-based-milk,18,EXTENDED
+Dairy,Curd & Yogurt,Fresh Curd (Dahi),curd-yogurt-fresh-curd-dahi,56,ESSENTIAL
+Dairy,Curd & Yogurt,Probiotic Yogurt,curd-yogurt-probiotic-yogurt,19,STANDARD
+Dairy,Curd & Yogurt,Flavoured Yogurt,curd-yogurt-flavoured-yogurt,47,STANDARD
+Dairy,Curd & Yogurt,Greek Yogurt,curd-yogurt-greek-yogurt,42,EXTENDED
+Dairy,Curd & Yogurt,Hung Curd (Chakka),curd-yogurt-hung-curd-chakka,2,EXTENDED
+Dairy,Curd & Yogurt,Mishti Doi,curd-yogurt-mishti-doi,7,EXTENDED
+Dairy,Curd & Yogurt,Shrikhand,curd-yogurt-shrikhand,5,EXTENDED
+Dairy,Paneer & Tofu,Fresh Paneer,paneer-tofu-fresh-paneer,24,ESSENTIAL
+Dairy,Paneer & Tofu,Malai Paneer,paneer-tofu-malai-paneer,11,STANDARD
+Dairy,Paneer & Tofu,Tofu,paneer-tofu-tofu,11,EXTENDED
+Dairy,Butter,Salted Butter,butter-salted-butter,22,ESSENTIAL
+Dairy,Butter,Unsalted Butter,butter-unsalted-butter,6,STANDARD
+Dairy,Butter,Cooking Butter,butter-cooking-butter,17,STANDARD
+Dairy,Cheese,Processed Cheese (Slices & Blocks),cheese-processed-cheese-slices-blocks,32,STANDARD
+Dairy,Cheese,Mozzarella,cheese-mozzarella,31,EXTENDED
+Dairy,Cheese,Cottage Cheese (Paneer),cheese-cottage-cheese-paneer,3,STANDARD
+Dairy,Cheese,Cheddar,cheese-cheddar,26,EXTENDED
+Dairy,Cheese,Cream Cheese & Spread,cheese-cream-cheese-spread,38,EXTENDED
+Dairy,Cheese,Specialty Cheese,cheese-specialty-cheese,28,EXTENDED
+Dairy,Cream & Dairy Whitener,Dairy Whitener,cream-dairy-whitener-dairy-whitener,11,STANDARD
+Dairy,Cream & Dairy Whitener,Fresh Cream,cream-dairy-whitener-fresh-cream,14,STANDARD
+Dairy,Cream & Dairy Whitener,Whipping Cream,cream-dairy-whitener-whipping-cream,3,EXTENDED
+Dairy,Condensed & Evaporated Milk,Condensed Milk (Milkmaid),condensed-evaporated-milk-condensed-milk-milkmaid,6,STANDARD
+Dairy,Condensed & Evaporated Milk,Khoya (Mawa),condensed-evaporated-milk-khoya-mawa,7,EXTENDED
+Dairy,Condensed & Evaporated Milk,Evaporated Milk,condensed-evaporated-milk-evaporated-milk,3,EXTENDED
+Grocery & Staples,Rice,Parboiled Rice,rice-parboiled-rice,14,ESSENTIAL
+Grocery & Staples,Rice,Non-Basmati Rice,rice-non-basmati-rice,51,ESSENTIAL
+Grocery & Staples,Rice,Idli & Dosa Rice,rice-idli-dosa-rice,5,ESSENTIAL
+Grocery & Staples,Rice,Basmati Rice,rice-basmati-rice,54,ESSENTIAL
+Grocery & Staples,Rice,Poha & Puffed Rice,rice-poha-puffed-rice,19,STANDARD
+Grocery & Staples,Rice,Brown Rice,rice-brown-rice,18,STANDARD
+Grocery & Staples,Atta & Flours,Wheat Atta,atta-flours-wheat-atta,38,ESSENTIAL
+Grocery & Staples,Atta & Flours,Sooji & Rava,atta-flours-sooji-rava,28,ESSENTIAL
+Grocery & Staples,Atta & Flours,Rice Flour,atta-flours-rice-flour,46,ESSENTIAL
+Grocery & Staples,Atta & Flours,Besan (Gram Flour),atta-flours-besan-gram-flour,16,ESSENTIAL
+Grocery & Staples,Atta & Flours,Maida (Refined Flour),atta-flours-maida-refined-flour,11,ESSENTIAL
+Grocery & Staples,Atta & Flours,Ragi Flour,atta-flours-ragi-flour,16,ESSENTIAL
+Grocery & Staples,Atta & Flours,Multigrain Atta,atta-flours-multigrain-atta,28,STANDARD
+Grocery & Staples,Atta & Flours,Corn Flour,atta-flours-corn-flour,14,STANDARD
+Grocery & Staples,Atta & Flours,Jowar Flour,atta-flours-jowar-flour,8,STANDARD
+Grocery & Staples,Atta & Flours,Bajra Flour,atta-flours-bajra-flour,7,STANDARD
+Grocery & Staples,Atta & Flours,Sattu,atta-flours-sattu,12,EXTENDED
+Grocery & Staples,Dal & Pulses,Toor Dal (Arhar),dal-pulses-toor-dal-arhar,17,ESSENTIAL
+Grocery & Staples,Dal & Pulses,Urad Dal,dal-pulses-urad-dal,26,ESSENTIAL
+Grocery & Staples,Dal & Pulses,Moong Dal,dal-pulses-moong-dal,30,ESSENTIAL
+Grocery & Staples,Dal & Pulses,Chana Dal,dal-pulses-chana-dal,19,ESSENTIAL
+Grocery & Staples,Dal & Pulses,Chole (Kabuli Chana),dal-pulses-chole-kabuli-chana,12,ESSENTIAL
+Grocery & Staples,Dal & Pulses,Masoor Dal,dal-pulses-masoor-dal,16,STANDARD
+Grocery & Staples,Dal & Pulses,Lobia (Black Eyed Peas),dal-pulses-lobia-black-eyed-peas,8,ESSENTIAL
+Grocery & Staples,Dal & Pulses,Rajma,dal-pulses-rajma,16,STANDARD
+Grocery & Staples,Dal & Pulses,Mixed Pulses,dal-pulses-mixed-pulses,46,STANDARD
+Grocery & Staples,Edible Oils,Sunflower Oil,edible-oils-sunflower-oil,32,ESSENTIAL
+Grocery & Staples,Edible Oils,Groundnut Oil,edible-oils-groundnut-oil,30,ESSENTIAL
+Grocery & Staples,Edible Oils,Sesame Oil (Til),edible-oils-sesame-oil-til,23,ESSENTIAL
+Grocery & Staples,Edible Oils,Coconut Oil,edible-oils-coconut-oil,33,ESSENTIAL
+Grocery & Staples,Edible Oils,Blended Oil,edible-oils-blended-oil,28,STANDARD
+Grocery & Staples,Edible Oils,Rice Bran Oil,edible-oils-rice-bran-oil,10,STANDARD
+Grocery & Staples,Edible Oils,Vanaspati & Dalda,edible-oils-vanaspati-dalda,4,STANDARD
+Grocery & Staples,Edible Oils,Olive Oil,edible-oils-olive-oil,20,EXTENDED
+Grocery & Staples,Edible Oils,Soybean Oil,edible-oils-soybean-oil,9,STANDARD
+Grocery & Staples,Edible Oils,Mustard Oil,edible-oils-mustard-oil,43,STANDARD
+Grocery & Staples,Spices & Masala,Ground Spices,spices-masala-ground-spices,256,ESSENTIAL
+Grocery & Staples,Spices & Masala,Whole Spices,spices-masala-whole-spices,220,ESSENTIAL
+Grocery & Staples,Spices & Masala,Blended Masala,spices-masala-blended-masala,451,ESSENTIAL
+Grocery & Staples,Spices & Masala,Tamarind,spices-masala-tamarind,13,ESSENTIAL
+Grocery & Staples,Spices & Masala,Herbs & Seasonings,spices-masala-herbs-seasonings,233,STANDARD
+Grocery & Staples,Spices & Masala,Curry Paste & Wet Masala,spices-masala-curry-paste-wet-masala,46,STANDARD
+Grocery & Staples,Salt & Sugar,Iodised Salt,salt-sugar-iodised-salt,17,ESSENTIAL
+Grocery & Staples,Salt & Sugar,White Sugar,salt-sugar-white-sugar,18,ESSENTIAL
+Grocery & Staples,Salt & Sugar,Jaggery (Gur),salt-sugar-jaggery-gur,11,ESSENTIAL
+Grocery & Staples,Salt & Sugar,Jaggery Powder,salt-sugar-jaggery-powder,18,STANDARD
+Grocery & Staples,Salt & Sugar,Rock Salt (Sendha Namak),salt-sugar-rock-salt-sendha-namak,33,ESSENTIAL
+Grocery & Staples,Salt & Sugar,Brown Sugar,salt-sugar-brown-sugar,22,STANDARD
+Grocery & Staples,Salt & Sugar,Mishri (Rock Sugar),salt-sugar-mishri-rock-sugar,6,STANDARD
+Grocery & Staples,Salt & Sugar,Black Salt (Kala Namak),salt-sugar-black-salt-kala-namak,13,STANDARD
+Grocery & Staples,Ghee,Cow Ghee,ghee-cow-ghee,69,ESSENTIAL
+Grocery & Staples,Ghee,Buffalo Ghee,ghee-buffalo-ghee,13,STANDARD
+Grocery & Staples,Ghee,Organic Ghee,ghee-organic-ghee,12,EXTENDED
+Grocery & Staples,Dry Fruits & Nuts,Cashews (Kaju),dry-fruits-nuts-cashews-kaju,66,ESSENTIAL
+Grocery & Staples,Dry Fruits & Nuts,Almonds (Badam),dry-fruits-nuts-almonds-badam,50,STANDARD
+Grocery & Staples,Dry Fruits & Nuts,Raisins (Kishmish),dry-fruits-nuts-raisins-kishmish,37,ESSENTIAL
+Grocery & Staples,Dry Fruits & Nuts,Peanuts,dry-fruits-nuts-peanuts,31,ESSENTIAL
+Grocery & Staples,Dry Fruits & Nuts,Dates (Khajoor),dry-fruits-nuts-dates-khajoor,65,STANDARD
+Grocery & Staples,Dry Fruits & Nuts,Pistachios (Pista),dry-fruits-nuts-pistachios-pista,26,STANDARD
+Grocery & Staples,Dry Fruits & Nuts,Mixed Dry Fruits,dry-fruits-nuts-mixed-dry-fruits,47,STANDARD
+Grocery & Staples,Dry Fruits & Nuts,"Seeds (Chia, Flax, Pumpkin, Sunflower)",dry-fruits-nuts-seeds-chia-flax-pumpkin-sunflower,151,EXTENDED
+Grocery & Staples,Dry Fruits & Nuts,Walnuts (Akhrot),dry-fruits-nuts-walnuts-akhrot,38,STANDARD
+Grocery & Staples,Dry Fruits & Nuts,Figs (Anjeer),dry-fruits-nuts-figs-anjeer,15,STANDARD
+Grocery & Staples,Dry Fruits & Nuts,Dried Berries & Prunes,dry-fruits-nuts-dried-berries-prunes,62,EXTENDED
+Grocery & Staples,Papad & Fryums,Fryums & Appalam,papad-fryums-fryums-appalam,25,ESSENTIAL
+Grocery & Staples,Papad & Fryums,Papad,papad-fryums-papad,15,ESSENTIAL
+Grocery & Staples,Pickles & Chutney,Mango Pickle,pickles-chutney-mango-pickle,53,ESSENTIAL
+Grocery & Staples,Pickles & Chutney,Lime Pickle,pickles-chutney-lime-pickle,23,ESSENTIAL
+Grocery & Staples,Pickles & Chutney,Mixed Pickle,pickles-chutney-mixed-pickle,80,ESSENTIAL
+Grocery & Staples,Pickles & Chutney,Chilli Pickle,pickles-chutney-chilli-pickle,21,STANDARD
+Grocery & Staples,Pickles & Chutney,Chutney,pickles-chutney-chutney,62,STANDARD
+Grocery & Staples,Pickles & Chutney,Murabba,pickles-chutney-murabba,10,EXTENDED
+Grocery & Staples,Sauces & Condiments,Tomato Ketchup,sauces-condiments-tomato-ketchup,35,STANDARD
+Grocery & Staples,Sauces & Condiments,Honey,sauces-condiments-honey,61,STANDARD
+Grocery & Staples,Sauces & Condiments,Jam & Marmalade,sauces-condiments-jam-marmalade,29,STANDARD
+Grocery & Staples,Sauces & Condiments,Chilli Sauce,sauces-condiments-chilli-sauce,48,STANDARD
+Grocery & Staples,Sauces & Condiments,Soy Sauce,sauces-condiments-soy-sauce,18,STANDARD
+Grocery & Staples,Sauces & Condiments,Vinegar,sauces-condiments-vinegar,42,STANDARD
+Grocery & Staples,Sauces & Condiments,Mayonnaise,sauces-condiments-mayonnaise,65,STANDARD
+Grocery & Staples,Sauces & Condiments,Peanut Butter,sauces-condiments-peanut-butter,131,STANDARD
+Grocery & Staples,Sauces & Condiments,Chocolate & Hazelnut Spread,sauces-condiments-chocolate-hazelnut-spread,24,STANDARD
+Grocery & Staples,Sauces & Condiments,Mustard Sauce,sauces-condiments-mustard-sauce,18,EXTENDED
+Grocery & Staples,Sauces & Condiments,Dessert Syrups,sauces-condiments-dessert-syrups,31,EXTENDED
+"Meat, Fish & Eggs",Chicken,Chicken Curry Cut,chicken-chicken-curry-cut,6,ESSENTIAL
+"Meat, Fish & Eggs",Chicken,Whole Chicken,chicken-whole-chicken,4,STANDARD
+"Meat, Fish & Eggs",Chicken,Chicken Breast,chicken-chicken-breast,3,STANDARD
+"Meat, Fish & Eggs",Chicken,Chicken Legs & Thighs,chicken-chicken-legs-thighs,3,STANDARD
+"Meat, Fish & Eggs",Chicken,Chicken Wings,chicken-chicken-wings,5,STANDARD
+"Meat, Fish & Eggs",Chicken,Chicken Keema,chicken-chicken-keema,4,STANDARD
+"Meat, Fish & Eggs",Chicken,Marinated Chicken,chicken-marinated-chicken,3,STANDARD
+"Meat, Fish & Eggs",Eggs,White Eggs,eggs-white-eggs,4,ESSENTIAL
+"Meat, Fish & Eggs",Eggs,Brown Eggs,eggs-brown-eggs,4,ESSENTIAL
+"Meat, Fish & Eggs",Eggs,Organic Eggs,eggs-organic-eggs,3,STANDARD
+"Meat, Fish & Eggs",Eggs,Quail Eggs,eggs-quail-eggs,4,STANDARD
+"Meat, Fish & Eggs",Fish & Seafood,Bangda (Mackerel),fish-seafood-bangda-mackerel,3,STANDARD
+"Meat, Fish & Eggs",Fish & Seafood,Surmai (King Fish),fish-seafood-surmai-king-fish,4,STANDARD
+"Meat, Fish & Eggs",Fish & Seafood,Prawns & Shrimp,fish-seafood-prawns-shrimp,5,STANDARD
+"Meat, Fish & Eggs",Fish & Seafood,Other Fish,fish-seafood-other-fish,6,STANDARD
+"Meat, Fish & Eggs",Fish & Seafood,Pomfret,fish-seafood-pomfret,5,STANDARD
+"Meat, Fish & Eggs",Fish & Seafood,Rohu,fish-seafood-rohu,5,STANDARD
+"Meat, Fish & Eggs",Fish & Seafood,Crab,fish-seafood-crab,4,STANDARD
+"Meat, Fish & Eggs",Fish & Seafood,Fish Fillets,fish-seafood-fish-fillets,4,EXTENDED
+"Meat, Fish & Eggs",Mutton & Lamb,Mutton Curry Cut,mutton-lamb-mutton-curry-cut,5,ESSENTIAL
+"Meat, Fish & Eggs",Mutton & Lamb,Mutton Keema,mutton-lamb-mutton-keema,4,STANDARD
+"Meat, Fish & Eggs",Mutton & Lamb,Mutton Chops,mutton-lamb-mutton-chops,4,STANDARD
+"Meat, Fish & Eggs",Mutton & Lamb,Marinated Mutton,mutton-lamb-marinated-mutton,3,STANDARD
+"Meat, Fish & Eggs",Sausages & Cold Cuts,Chicken Sausage,sausages-cold-cuts-chicken-sausage,21,STANDARD
+"Meat, Fish & Eggs",Sausages & Cold Cuts,Salami,sausages-cold-cuts-salami,9,EXTENDED
+"Meat, Fish & Eggs",Sausages & Cold Cuts,Ham & Cold Cuts,sausages-cold-cuts-ham-cold-cuts,8,EXTENDED
+"Meat, Fish & Eggs",Sausages & Cold Cuts,Pork Sausage,sausages-cold-cuts-pork-sausage,6,EXTENDED
+Snacks & Packaged Foods,Biscuits & Cookies,Glucose & Marie,biscuits-cookies-glucose-marie,28,ESSENTIAL
+Snacks & Packaged Foods,Biscuits & Cookies,Cream Biscuits,biscuits-cookies-cream-biscuits,81,ESSENTIAL
+Snacks & Packaged Foods,Biscuits & Cookies,Cashew & Butter Cookies,biscuits-cookies-cashew-butter-cookies,108,STANDARD
+Snacks & Packaged Foods,Biscuits & Cookies,Digestive & Health,biscuits-cookies-digestive-health,94,STANDARD
+Snacks & Packaged Foods,Biscuits & Cookies,Rusk & Toast,biscuits-cookies-rusk-toast,27,STANDARD
+Snacks & Packaged Foods,Biscuits & Cookies,Khari & Puff,biscuits-cookies-khari-puff,25,STANDARD
+Snacks & Packaged Foods,Biscuits & Cookies,Wafers & Waffle,biscuits-cookies-wafers-waffle,37,STANDARD
+Snacks & Packaged Foods,Biscuits & Cookies,Crackers,biscuits-cookies-crackers,49,STANDARD
+Snacks & Packaged Foods,Namkeen & Savoury Snacks,Mixture & Chivda,namkeen-savoury-snacks-mixture-chivda,192,ESSENTIAL
+Snacks & Packaged Foods,Namkeen & Savoury Snacks,Murukku & Thattai,namkeen-savoury-snacks-murukku-thattai,27,ESSENTIAL
+Snacks & Packaged Foods,Namkeen & Savoury Snacks,Bhujia & Sev,namkeen-savoury-snacks-bhujia-sev,29,STANDARD
+Snacks & Packaged Foods,Namkeen & Savoury Snacks,Moong Dal & Chana,namkeen-savoury-snacks-moong-dal-chana,55,STANDARD
+Snacks & Packaged Foods,Namkeen & Savoury Snacks,Aloo & Potato Snacks,namkeen-savoury-snacks-aloo-potato-snacks,3,STANDARD
+Snacks & Packaged Foods,Namkeen & Savoury Snacks,Papad Chips,namkeen-savoury-snacks-papad-chips,5,STANDARD
+Snacks & Packaged Foods,Namkeen & Savoury Snacks,Mathri & Shakkar Para,namkeen-savoury-snacks-mathri-shakkar-para,14,EXTENDED
+Snacks & Packaged Foods,Namkeen & Savoury Snacks,Khakhra,namkeen-savoury-snacks-khakhra,7,EXTENDED
+Snacks & Packaged Foods,Chips & Crisps,Potato Chips,chips-crisps-potato-chips,88,ESSENTIAL
+Snacks & Packaged Foods,Chips & Crisps,Banana Chips,chips-crisps-banana-chips,20,ESSENTIAL
+Snacks & Packaged Foods,Chips & Crisps,Kurkure & Extruded Snacks,chips-crisps-kurkure-extruded-snacks,31,ESSENTIAL
+Snacks & Packaged Foods,Chips & Crisps,Puffs & Rings,chips-crisps-puffs-rings,160,STANDARD
+Snacks & Packaged Foods,Chips & Crisps,Tortilla & Nachos,chips-crisps-tortilla-nachos,91,EXTENDED
+Snacks & Packaged Foods,Chocolates & Confectionery,Chocolate Bars & Countlines,chocolates-confectionery-chocolate-bars-countlines,110,ESSENTIAL
+Snacks & Packaged Foods,Chocolates & Confectionery,Milk Chocolate,chocolates-confectionery-milk-chocolate,124,STANDARD
+Snacks & Packaged Foods,Chocolates & Confectionery,Toffees & Eclairs,chocolates-confectionery-toffees-eclairs,20,ESSENTIAL
+Snacks & Packaged Foods,Chocolates & Confectionery,Candy,chocolates-confectionery-candy,63,STANDARD
+Snacks & Packaged Foods,Chocolates & Confectionery,Dark Chocolate,chocolates-confectionery-dark-chocolate,81,STANDARD
+Snacks & Packaged Foods,Chocolates & Confectionery,Chewing Gum & Mints,chocolates-confectionery-chewing-gum-mints,24,STANDARD
+Snacks & Packaged Foods,Chocolates & Confectionery,Lollipops,chocolates-confectionery-lollipops,4,STANDARD
+Snacks & Packaged Foods,Chocolates & Confectionery,White Chocolate,chocolates-confectionery-white-chocolate,12,EXTENDED
+Snacks & Packaged Foods,Instant Noodles & Pasta,Instant Noodles,instant-noodles-pasta-instant-noodles,101,ESSENTIAL
+Snacks & Packaged Foods,Instant Noodles & Pasta,Vermicelli (Sevai),instant-noodles-pasta-vermicelli-sevai,36,ESSENTIAL
+Snacks & Packaged Foods,Instant Noodles & Pasta,Pasta,instant-noodles-pasta-pasta,103,STANDARD
+Snacks & Packaged Foods,Instant Noodles & Pasta,Cup Noodles,instant-noodles-pasta-cup-noodles,39,STANDARD
+Snacks & Packaged Foods,Breakfast Cereals & Muesli,Oats,breakfast-cereals-muesli-oats,84,STANDARD
+Snacks & Packaged Foods,Breakfast Cereals & Muesli,Cornflakes,breakfast-cereals-muesli-cornflakes,22,STANDARD
+Snacks & Packaged Foods,Breakfast Cereals & Muesli,Chocos & Kids Cereal,breakfast-cereals-muesli-chocos-kids-cereal,42,STANDARD
+Snacks & Packaged Foods,Breakfast Cereals & Muesli,Muesli & Granola,breakfast-cereals-muesli-muesli-granola,85,STANDARD
+Snacks & Packaged Foods,Breakfast Cereals & Muesli,Porridge & Daliya,breakfast-cereals-muesli-porridge-daliya,25,STANDARD
+Snacks & Packaged Foods,Sweets & Mithai,"Dry Sweet (Ladoo, Barfi, Peda)",sweets-mithai-dry-sweet-ladoo-barfi-peda,122,STANDARD
+Snacks & Packaged Foods,Sweets & Mithai,Rasgulla & Gulab Jamun,sweets-mithai-rasgulla-gulab-jamun,42,STANDARD
+Snacks & Packaged Foods,Sweets & Mithai,Halwa & Sheera,sweets-mithai-halwa-sheera,42,STANDARD
+Snacks & Packaged Foods,Sweets & Mithai,Packaged Mithai,sweets-mithai-packaged-mithai,48,STANDARD
+Snacks & Packaged Foods,Ready to Eat & Cook,Idli & Dosa Batter,ready-to-eat-cook-idli-dosa-batter,35,ESSENTIAL
+Snacks & Packaged Foods,Ready to Eat & Cook,Instant Upma & Poha,ready-to-eat-cook-instant-upma-poha,109,STANDARD
+Snacks & Packaged Foods,Ready to Eat & Cook,Ready to Cook Gravies,ready-to-eat-cook-ready-to-cook-gravies,89,STANDARD
+Snacks & Packaged Foods,Ready to Eat & Cook,Ready to Eat Meals,ready-to-eat-cook-ready-to-eat-meals,67,STANDARD
+Snacks & Packaged Foods,Ready to Eat & Cook,Instant Soup,ready-to-eat-cook-instant-soup,58,STANDARD
+Snacks & Packaged Foods,Ready to Eat & Cook,Frozen Ready Meals,ready-to-eat-cook-frozen-ready-meals,3,EXTENDED
+Snacks & Packaged Foods,Ready to Eat & Cook,Baking & Dessert Mixes,ready-to-eat-cook-baking-dessert-mixes,304,EXTENDED
+Snacks & Packaged Foods,Canned & Preserved Foods,Canned Vegetables,canned-preserved-foods-canned-vegetables,23,STANDARD
+Snacks & Packaged Foods,Canned & Preserved Foods,Canned Fruits,canned-preserved-foods-canned-fruits,4,EXTENDED
+Snacks & Packaged Foods,Canned & Preserved Foods,Canned Beans & Legumes,canned-preserved-foods-canned-beans-legumes,12,EXTENDED
+Snacks & Packaged Foods,Canned & Preserved Foods,Canned Fish & Meat,canned-preserved-foods-canned-fish-meat,18,EXTENDED
+Beverages,Tea,Leaf & Dust Tea (CTC),tea-leaf-dust-tea-ctc,59,ESSENTIAL
+Beverages,Tea,Tea Bags,tea-tea-bags,33,STANDARD
+Beverages,Tea,Green Tea,tea-green-tea,117,STANDARD
+Beverages,Tea,Masala Tea,tea-masala-tea,19,STANDARD
+Beverages,Tea,Herbal & Flavoured Tea,tea-herbal-flavoured-tea,81,EXTENDED
+Beverages,Tea,Instant Tea Premix,tea-instant-tea-premix,50,STANDARD
+Beverages,Tea,Iced Tea,tea-iced-tea,10,STANDARD
+Beverages,Coffee,Filter Coffee Powder,coffee-filter-coffee-powder,43,ESSENTIAL
+Beverages,Coffee,Chicory Blend,coffee-chicory-blend,20,ESSENTIAL
+Beverages,Coffee,Instant Coffee,coffee-instant-coffee,89,ESSENTIAL
+Beverages,Coffee,Ground Coffee Beans,coffee-ground-coffee-beans,11,EXTENDED
+Beverages,Coffee,Cold Coffee Premix,coffee-cold-coffee-premix,56,EXTENDED
+Beverages,Health & Energy Drinks,"Malted Beverages (Bournvita, Horlicks)",health-energy-drinks-malted-beverages-bournvita-horlicks,111,ESSENTIAL
+Beverages,Health & Energy Drinks,Glucose & Energy Drinks,health-energy-drinks-glucose-energy-drinks,58,ESSENTIAL
+Beverages,Health & Energy Drinks,Electrolyte & ORS,health-energy-drinks-electrolyte-ors,58,ESSENTIAL
+Beverages,Health & Energy Drinks,Protein Drinks,health-energy-drinks-protein-drinks,81,EXTENDED
+Beverages,Soft Drinks & Carbonated,Cola,soft-drinks-carbonated-cola,7,ESSENTIAL
+Beverages,Soft Drinks & Carbonated,Orange & Mango,soft-drinks-carbonated-orange-mango,8,ESSENTIAL
+Beverages,Soft Drinks & Carbonated,Lemon & Lime,soft-drinks-carbonated-lemon-lime,7,ESSENTIAL
+Beverages,Soft Drinks & Carbonated,Soda & Tonic Water,soft-drinks-carbonated-soda-tonic-water,52,STANDARD
+Beverages,Soft Drinks & Carbonated,Diet & Zero Sugar,soft-drinks-carbonated-diet-zero-sugar,7,STANDARD
+Beverages,Juices & Fruit Drinks,"Mango Drinks (Frooti, Maaza)",juices-fruit-drinks-mango-drinks-frooti-maaza,10,ESSENTIAL
+Beverages,Juices & Fruit Drinks,Fruit Juice (100%),juices-fruit-drinks-fruit-juice-100,32,STANDARD
+Beverages,Juices & Fruit Drinks,Coconut Water,juices-fruit-drinks-coconut-water,15,STANDARD
+Beverages,Juices & Fruit Drinks,Fruit Nectar & Drinks,juices-fruit-drinks-fruit-nectar-drinks,70,STANDARD
+Beverages,Juices & Fruit Drinks,Sugarcane Juice,juices-fruit-drinks-sugarcane-juice,5,STANDARD
+Beverages,Juices & Fruit Drinks,Fruit Drinks,juices-fruit-drinks-fruit-drinks,82,STANDARD
+Beverages,Water,Packaged Drinking Water,water-packaged-drinking-water,3,ESSENTIAL
+Beverages,Water,Mineral Water,water-mineral-water,3,ESSENTIAL
+Beverages,Water,Flavoured Water,water-flavoured-water,8,STANDARD
+Beverages,Milk Drinks,Buttermilk (Chaas),milk-drinks-buttermilk-chaas,35,ESSENTIAL
+Beverages,Milk Drinks,Lassi,milk-drinks-lassi,43,STANDARD
+Beverages,Milk Drinks,Flavoured Milk,milk-drinks-flavoured-milk,68,STANDARD
+Beverages,Milk Drinks,Milkshake,milk-drinks-milkshake,89,STANDARD
+Beverages,Sherbet & Traditional,Rooh Afza & Sharbat,sherbet-traditional-rooh-afza-sharbat,90,STANDARD
+Beverages,Sherbet & Traditional,Jaljeera,sherbet-traditional-jaljeera,7,STANDARD
+Beverages,Sherbet & Traditional,Aam Panna,sherbet-traditional-aam-panna,7,EXTENDED
+Beverages,Sherbet & Traditional,Thandai,sherbet-traditional-thandai,8,EXTENDED
+Bakery,Bread,Sandwich Bread,bread-sandwich-bread,18,ESSENTIAL
+Bakery,Bread,White Bread,bread-white-bread,17,ESSENTIAL
+Bakery,Bread,Brown & Whole Wheat Bread,bread-brown-whole-wheat-bread,40,STANDARD
+Bakery,Bread,Multigrain Bread,bread-multigrain-bread,22,STANDARD
+Bakery,Bread,Pav & Bun,bread-pav-bun,23,STANDARD
+Bakery,Bread,Garlic Bread,bread-garlic-bread,6,EXTENDED
+Bakery,Bread,"Kulcha, Roti & Pizza Base",bread-kulcha-roti-pizza-base,20,EXTENDED
+Bakery,Bakery Snacks,Buns & Rolls,bakery-snacks-buns-rolls,33,STANDARD
+Bakery,Bakery Snacks,Khari & Puff Pastry,bakery-snacks-khari-puff-pastry,17,STANDARD
+Bakery,Bakery Snacks,Cookies (Bakery Fresh),bakery-snacks-cookies-bakery-fresh,49,STANDARD
+Bakery,Bakery Snacks,Croissant,bakery-snacks-croissant,14,EXTENDED
+Bakery,Rusk,Plain Rusk,rusk-plain-rusk,19,STANDARD
+Bakery,Rusk,Elaichi Rusk,rusk-elaichi-rusk,9,STANDARD
+Bakery,Rusk,Suji Rusk,rusk-suji-rusk,4,STANDARD
+Bakery,Cakes & Pastries,Sliced Cake,cakes-pastries-sliced-cake,122,STANDARD
+Bakery,Cakes & Pastries,Muffins & Cupcakes,cakes-pastries-muffins-cupcakes,23,STANDARD
+Bakery,Cakes & Pastries,Pastries,cakes-pastries-pastries,29,EXTENDED
+Home Care,Detergent,Detergent Powder,detergent-detergent-powder,47,ESSENTIAL
+Home Care,Detergent,Detergent Bar,detergent-detergent-bar,16,ESSENTIAL
+Home Care,Detergent,Liquid Detergent,detergent-liquid-detergent,56,STANDARD
+Home Care,Detergent,Fabric Softener,detergent-fabric-softener,30,STANDARD
+Home Care,Detergent,Stain Remover,detergent-stain-remover,20,STANDARD
+Home Care,Detergent,Laundry Additives,detergent-laundry-additives,12,EXTENDED
+Home Care,Dishwash,Dishwash Bar,dishwash-dishwash-bar,11,ESSENTIAL
+Home Care,Dishwash,Dishwash Gel / Liquid,dishwash-dishwash-gel-liquid,31,ESSENTIAL
+Home Care,Dishwash,Scrub Pad & Sponge,dishwash-scrub-pad-sponge,42,STANDARD
+Home Care,Dishwash,Dishwash Powder,dishwash-dishwash-powder,6,STANDARD
+Home Care,Floor & Surface Cleaners,Floor Cleaner (Phenyl & Disinfectant),floor-surface-cleaners-floor-cleaner-phenyl-disinfectant,41,ESSENTIAL
+Home Care,Floor & Surface Cleaners,Toilet Cleaner,floor-surface-cleaners-toilet-cleaner,43,ESSENTIAL
+Home Care,Floor & Surface Cleaners,Bathroom Cleaner,floor-surface-cleaners-bathroom-cleaner,21,STANDARD
+Home Care,Floor & Surface Cleaners,Kitchen Cleaner,floor-surface-cleaners-kitchen-cleaner,26,STANDARD
+Home Care,Floor & Surface Cleaners,Glass Cleaner,floor-surface-cleaners-glass-cleaner,7,STANDARD
+Home Care,Floor & Surface Cleaners,Multi-Surface Spray,floor-surface-cleaners-multi-surface-spray,26,STANDARD
+Home Care,Air Fresheners & Repellents,Mosquito Liquid Vaporiser,air-fresheners-repellents-mosquito-liquid-vaporiser,36,ESSENTIAL
+Home Care,Air Fresheners & Repellents,Mosquito Coil & Mat,air-fresheners-repellents-mosquito-coil-mat,14,ESSENTIAL
+Home Care,Air Fresheners & Repellents,Mosquito Racquet,air-fresheners-repellents-mosquito-racquet,1,STANDARD
+Home Care,Air Fresheners & Repellents,Cockroach & Ant Killer,air-fresheners-repellents-cockroach-ant-killer,11,STANDARD
+Home Care,Air Fresheners & Repellents,Room Freshener Spray,air-fresheners-repellents-room-freshener-spray,94,STANDARD
+Home Care,Air Fresheners & Repellents,Air Freshener Gel & Block,air-fresheners-repellents-air-freshener-gel-block,87,STANDARD
+Home Care,Air Fresheners & Repellents,Rat Killer,air-fresheners-repellents-rat-killer,7,STANDARD
+Home Care,Air Fresheners & Repellents,Car Freshener,air-fresheners-repellents-car-freshener,49,EXTENDED
+Home Care,Air Fresheners & Repellents,Insect Killer Spray,air-fresheners-repellents-insect-killer-spray,19,STANDARD
+Home Care,Cleaning Tools & Supplies,Broom & Mop,cleaning-tools-supplies-broom-mop,86,STANDARD
+Home Care,Cleaning Tools & Supplies,Garbage Bags,cleaning-tools-supplies-garbage-bags,10,STANDARD
+Home Care,Cleaning Tools & Supplies,Dustpan & Brush,cleaning-tools-supplies-dustpan-brush,6,STANDARD
+Home Care,Cleaning Tools & Supplies,Cling Wrap & Aluminium Foil,cleaning-tools-supplies-cling-wrap-aluminium-foil,24,STANDARD
+Home Care,Cleaning Tools & Supplies,Rubber Gloves,cleaning-tools-supplies-rubber-gloves,6,STANDARD
+Home Care,Cleaning Tools & Supplies,Cleaning Brushes,cleaning-tools-supplies-cleaning-brushes,41,STANDARD
+Home Care,Cleaning Tools & Supplies,Cleaning Cloths & Wipes,cleaning-tools-supplies-cleaning-cloths-wipes,28,STANDARD
+Home Care,Paper & Disposables,Tissue Paper & Napkins,paper-disposables-tissue-paper-napkins,72,STANDARD
+Home Care,Paper & Disposables,Disposable Plates & Cups,paper-disposables-disposable-plates-cups,26,STANDARD
+Home Care,Paper & Disposables,Garbage Bags,paper-disposables-garbage-bags,9,STANDARD
+Home Care,Paper & Disposables,Paper Towels / Kitchen Roll,paper-disposables-paper-towels-kitchen-roll,24,EXTENDED
+Home Care,Paper & Disposables,Toilet Paper,paper-disposables-toilet-paper,39,STANDARD
+Home Care,Shoe Care,Shoe Polish,shoe-care-shoe-polish,19,STANDARD
+Home Care,Shoe Care,Shoe Cleaner,shoe-care-shoe-cleaner,2,STANDARD
+Personal Care,Bath & Body,Bathing Soap (Bar),bath-body-bathing-soap-bar,253,ESSENTIAL
+Personal Care,Bath & Body,Hand Wash,bath-body-hand-wash,62,STANDARD
+Personal Care,Bath & Body,Talcum Powder,bath-body-talcum-powder,58,ESSENTIAL
+Personal Care,Bath & Body,Body Lotion,bath-body-body-lotion,143,STANDARD
+Personal Care,Bath & Body,Body Wash & Shower Gel,bath-body-body-wash-shower-gel,237,STANDARD
+Personal Care,Bath & Body,Hand Sanitiser,bath-body-hand-sanitiser,19,STANDARD
+Personal Care,Bath & Body,Massage & Essential Oils,bath-body-massage-essential-oils,39,EXTENDED
+Personal Care,Oral Care,Toothpaste,oral-care-toothpaste,128,ESSENTIAL
+Personal Care,Oral Care,Toothbrush,oral-care-toothbrush,136,ESSENTIAL
+Personal Care,Oral Care,Mouthwash,oral-care-mouthwash,22,STANDARD
+Personal Care,Oral Care,Tongue Cleaner,oral-care-tongue-cleaner,4,STANDARD
+Personal Care,Oral Care,Dental Floss,oral-care-dental-floss,8,EXTENDED
+Personal Care,Hair Care,Hair Oil,hair-care-hair-oil,101,ESSENTIAL
+Personal Care,Hair Care,Shampoo,hair-care-shampoo,224,ESSENTIAL
+Personal Care,Hair Care,Conditioner,hair-care-conditioner,111,STANDARD
+Personal Care,Hair Care,Hair Colour & Dye,hair-care-hair-colour-dye,84,STANDARD
+Personal Care,Hair Care,Anti-Dandruff Treatment,hair-care-anti-dandruff-treatment,17,STANDARD
+Personal Care,Hair Care,Hair Serum,hair-care-hair-serum,74,EXTENDED
+Personal Care,Hair Care,Hair Gel & Wax,hair-care-hair-gel-wax,44,STANDARD
+Personal Care,Hair Care,Hair Mask,hair-care-hair-mask,66,EXTENDED
+Personal Care,Skin Care,Face Wash & Cleanser,skin-care-face-wash-cleanser,286,STANDARD
+Personal Care,Skin Care,Moisturiser & Lotion,skin-care-moisturiser-lotion,165,STANDARD
+Personal Care,Skin Care,Face Cream (Fairness & Anti-Ageing),skin-care-face-cream-fairness-anti-ageing,198,STANDARD
+Personal Care,Skin Care,Sunscreen,skin-care-sunscreen,104,EXTENDED
+Personal Care,Skin Care,Lip Balm,skin-care-lip-balm,78,STANDARD
+Personal Care,Skin Care,Face Scrub & Mask,skin-care-face-scrub-mask,184,EXTENDED
+Personal Care,Skin Care,Face Serum,skin-care-face-serum,82,EXTENDED
+Personal Care,Feminine Hygiene,Sanitary Pads,feminine-hygiene-sanitary-pads,145,ESSENTIAL
+Personal Care,Feminine Hygiene,Panty Liners,feminine-hygiene-panty-liners,26,STANDARD
+Personal Care,Feminine Hygiene,Intimate Wash,feminine-hygiene-intimate-wash,14,EXTENDED
+Personal Care,Feminine Hygiene,Menstrual Cups,feminine-hygiene-menstrual-cups,20,EXTENDED
+Personal Care,Feminine Hygiene,Tampons,feminine-hygiene-tampons,18,EXTENDED
+Personal Care,Men's Grooming,Razor & Blades,men-s-grooming-razor-blades,77,STANDARD
+Personal Care,Men's Grooming,Shaving Cream & Gel,men-s-grooming-shaving-cream-gel,46,STANDARD
+Personal Care,Men's Grooming,After Shave,men-s-grooming-after-shave,24,STANDARD
+Personal Care,Men's Grooming,Beard Oil & Balm,men-s-grooming-beard-oil-balm,24,EXTENDED
+Personal Care,Men's Grooming,Trimmer Accessories,men-s-grooming-trimmer-accessories,49,EXTENDED
+Personal Care,Health & Wellness,"Pain Relief (Balm, Spray)",health-wellness-pain-relief-balm-spray,64,ESSENTIAL
+Personal Care,Health & Wellness,Cough & Cold Relief,health-wellness-cough-cold-relief,49,ESSENTIAL
+Personal Care,Health & Wellness,"Digestive Care (Hajmola, ENO)",health-wellness-digestive-care-hajmola-eno,76,ESSENTIAL
+Personal Care,Health & Wellness,"Mosquito Repellent (Odomos, Patches)",health-wellness-mosquito-repellent-odomos-patches,25,ESSENTIAL
+Personal Care,Health & Wellness,Cotton & Bandages,health-wellness-cotton-bandages,46,ESSENTIAL
+Personal Care,Health & Wellness,Immunity & Supplements,health-wellness-immunity-supplements,186,EXTENDED
+Personal Care,Health & Wellness,Condoms & Lubricants,health-wellness-condoms-lubricants,119,STANDARD
+Personal Care,Health & Wellness,Ayurvedic Medicines,health-wellness-ayurvedic-medicines,157,STANDARD
+Personal Care,Deodorants & Fragrances,Deodorant Spray,deodorants-fragrances-deodorant-spray,270,STANDARD
+Personal Care,Deodorants & Fragrances,Roll-On,deodorants-fragrances-roll-on,66,STANDARD
+Personal Care,Deodorants & Fragrances,Perfume & Body Mist,deodorants-fragrances-perfume-body-mist,296,EXTENDED
+Personal Care,Deodorants & Fragrances,Attar,deodorants-fragrances-attar,31,EXTENDED
+Pooja & Festivals,Pooja Essentials,Agarbatti (Incense Sticks),pooja-essentials-agarbatti-incense-sticks,199,ESSENTIAL
+Pooja & Festivals,Pooja Essentials,Camphor (Kapur),pooja-essentials-camphor-kapur,28,ESSENTIAL
+Pooja & Festivals,Pooja Essentials,Diya & Wicks,pooja-essentials-diya-wicks,87,ESSENTIAL
+Pooja & Festivals,Pooja Essentials,Sindoor & Kumkum,pooja-essentials-sindoor-kumkum,56,ESSENTIAL
+Pooja & Festivals,Pooja Essentials,Dhoop & Cones,pooja-essentials-dhoop-cones,166,ESSENTIAL
+Pooja & Festivals,Pooja Essentials,Sacred Thread (Mauli / Kalava),pooja-essentials-sacred-thread-mauli-kalava,17,STANDARD
+Pooja & Festivals,Pooja Essentials,Matches,pooja-essentials-matches,2,ESSENTIAL
+Pooja & Festivals,Pooja Offerings,Flowers & Garlands (if available),pooja-offerings-flowers-garlands-if-available,12,STANDARD
+Pooja & Festivals,Pooja Offerings,Coconut (Nariyal),pooja-offerings-coconut-nariyal,6,ESSENTIAL
+Pooja & Festivals,Pooja Offerings,Betel Leaves & Areca,pooja-offerings-betel-leaves-areca,6,ESSENTIAL
+Pooja & Festivals,Pooja Offerings,Mishri & Batasha,pooja-offerings-mishri-batasha,4,STANDARD
+Pooja & Festivals,Pooja Offerings,Panchamrit Ingredients,pooja-offerings-panchamrit-ingredients,6,STANDARD
+Pooja & Festivals,Festival Items,Rangoli Colours,festival-items-rangoli-colours,26,STANDARD
+Pooja & Festivals,Festival Items,Diyas & Decorative Candles,festival-items-diyas-decorative-candles,45,STANDARD
+Pooja & Festivals,Festival Items,Gift Packs & Hampers,festival-items-gift-packs-hampers,133,EXTENDED
+Pooja & Festivals,Festival Items,Holi Colours (Gulal),festival-items-holi-colours-gulal,46,EXTENDED
+Baby Care,Diapers & Wipes,Diaper Pants,diapers-wipes-diaper-pants,98,ESSENTIAL
+Baby Care,Diapers & Wipes,Baby Diapers,diapers-wipes-baby-diapers,34,ESSENTIAL
+Baby Care,Diapers & Wipes,Baby Wipes,diapers-wipes-baby-wipes,17,STANDARD
+Baby Care,Diapers & Wipes,Changing Mats,diapers-wipes-changing-mats,3,EXTENDED
+Baby Care,Baby Food & Formula,Infant Formula,baby-food-formula-infant-formula,49,STANDARD
+Baby Care,Baby Food & Formula,Baby Cereal,baby-food-formula-baby-cereal,58,STANDARD
+Baby Care,Baby Food & Formula,Baby Purees & Snacks,baby-food-formula-baby-purees-snacks,16,EXTENDED
+Baby Care,Baby Food & Formula,Teething Biscuits,baby-food-formula-teething-biscuits,6,EXTENDED
+Baby Care,Baby Bath & Skin,Baby Soap & Body Wash,baby-bath-skin-baby-soap-body-wash,49,STANDARD
+Baby Care,Baby Bath & Skin,Baby Powder,baby-bath-skin-baby-powder,12,STANDARD
+Baby Care,Baby Bath & Skin,Baby Oil,baby-bath-skin-baby-oil,21,STANDARD
+Baby Care,Baby Bath & Skin,Baby Lotion & Cream,baby-bath-skin-baby-lotion-cream,34,STANDARD
+Baby Care,Baby Bath & Skin,Baby Shampoo,baby-bath-skin-baby-shampoo,25,STANDARD
+Baby Care,Baby Bath & Skin,Diaper Rash Cream,baby-bath-skin-diaper-rash-cream,9,STANDARD
+Baby Care,Baby Accessories,Feeding Bottles,baby-accessories-feeding-bottles,70,STANDARD
+Baby Care,Baby Accessories,Sippers & Cups,baby-accessories-sippers-cups,17,STANDARD
+Baby Care,Baby Accessories,Pacifiers & Teethers,baby-accessories-pacifiers-teethers,28,EXTENDED
+Baby Care,Baby Accessories,Breast Pump & Accessories,baby-accessories-breast-pump-accessories,23,EXTENDED
+Frozen Foods,Ice Cream & Desserts,Ice Cream Cones & Bars,ice-cream-desserts-ice-cream-cones-bars,163,STANDARD
+Frozen Foods,Ice Cream & Desserts,Ice Cream Tubs,ice-cream-desserts-ice-cream-tubs,316,STANDARD
+Frozen Foods,Ice Cream & Desserts,Kulfi,ice-cream-desserts-kulfi,33,STANDARD
+Frozen Foods,Ice Cream & Desserts,Frozen Desserts,ice-cream-desserts-frozen-desserts,102,STANDARD
+Frozen Foods,Frozen Snacks,Frozen Fries & Wedges,frozen-snacks-frozen-fries-wedges,32,STANDARD
+Frozen Foods,Frozen Snacks,Frozen Paratha & Roti,frozen-snacks-frozen-paratha-roti,57,STANDARD
+Frozen Foods,Frozen Snacks,Frozen Samosa & Spring Roll,frozen-snacks-frozen-samosa-spring-roll,17,EXTENDED
+Frozen Foods,Frozen Snacks,Frozen Tikki & Kebab,frozen-snacks-frozen-tikki-kebab,56,EXTENDED
+Frozen Foods,Frozen Snacks,Frozen Momos & Dumplings,frozen-snacks-frozen-momos-dumplings,14,EXTENDED
+Frozen Foods,Frozen Snacks,Frozen Pizza & Burger Patty,frozen-snacks-frozen-pizza-burger-patty,24,EXTENDED
+Frozen Foods,Frozen Vegetables,Frozen Peas,frozen-vegetables-frozen-peas,6,STANDARD
+Frozen Foods,Frozen Vegetables,Frozen Sweet Corn,frozen-vegetables-frozen-sweet-corn,7,STANDARD
+Frozen Foods,Frozen Vegetables,Frozen Mixed Vegetables,frozen-vegetables-frozen-mixed-vegetables,6,STANDARD
+Frozen Foods,Frozen Vegetables,Frozen Paneer,frozen-vegetables-frozen-paneer,4,EXTENDED
+Frozen Foods,Frozen Meat & Seafood,Frozen Chicken,frozen-meat-seafood-frozen-chicken,20,STANDARD
+Frozen Foods,Frozen Meat & Seafood,Frozen Fish & Prawns,frozen-meat-seafood-frozen-fish-prawns,14,STANDARD
+Frozen Foods,Frozen Meat & Seafood,Frozen Mutton,frozen-meat-seafood-frozen-mutton,3,EXTENDED
+Paan Corner,Mouth Freshener,Saunf (Fennel Seeds),mouth-freshener-saunf-fennel-seeds,4,ESSENTIAL
+Paan Corner,Mouth Freshener,Mukhwas,mouth-freshener-mukhwas,9,STANDARD
+Paan Corner,Mouth Freshener,Elaichi (Cardamom),mouth-freshener-elaichi-cardamom,2,ESSENTIAL
+Paan Corner,Mouth Freshener,Flavoured Supari,mouth-freshener-flavoured-supari,0,STANDARD
+Paan Corner,Paan Masala & Mouth Fresheners,Gutkha-Free Supari,paan-masala-tobacco-gutkha-free-supari,1,STANDARD
+Paan Corner,Paan Masala & Mouth Fresheners,Paan Masala,paan-masala-tobacco-paan-masala,0,STANDARD
+Gourmet & World Foods,Organic & Health Foods,"Millets (Ragi, Jowar, Bajra)",organic-health-foods-millets-ragi-jowar-bajra,35,STANDARD
+Gourmet & World Foods,Organic & Health Foods,"Organic Staples (Rice, Dal, Atta)",organic-health-foods-organic-staples-rice-dal-atta,26,EXTENDED
+Gourmet & World Foods,Organic & Health Foods,"Superfoods (Chia, Flax, Hemp)",organic-health-foods-superfoods-chia-flax-hemp,21,EXTENDED
+Gourmet & World Foods,Organic & Health Foods,Sugar-Free & Diet Foods,organic-health-foods-sugar-free-diet-foods,12,STANDARD
+Gourmet & World Foods,Organic & Health Foods,Gluten-Free Products,organic-health-foods-gluten-free-products,29,EXTENDED
+Gourmet & World Foods,Cooking Ingredients,Coconut Milk & Cream,cooking-ingredients-coconut-milk-cream,12,STANDARD
+Gourmet & World Foods,Cooking Ingredients,Olive Oil (Extra Virgin),cooking-ingredients-olive-oil-extra-virgin,6,EXTENDED
+Gourmet & World Foods,Cooking Ingredients,Noodles & Rice (Asian),cooking-ingredients-noodles-rice-asian,65,EXTENDED
+Gourmet & World Foods,Cooking Ingredients,Quinoa & Couscous,cooking-ingredients-quinoa-couscous,21,EXTENDED
+Gourmet & World Foods,Cooking Ingredients,Balsamic Vinegar,cooking-ingredients-balsamic-vinegar,3,EXTENDED
+Gourmet & World Foods,Cooking Ingredients,Tofu & Tempeh,cooking-ingredients-tofu-tempeh,3,EXTENDED
+Gourmet & World Foods,Cooking Ingredients,Olives,cooking-ingredients-olives,27,EXTENDED
+Gourmet & World Foods,International Snacks,Granola Bars & Protein Bars,international-snacks-granola-bars-protein-bars,119,EXTENDED
+Gourmet & World Foods,International Snacks,Exotic Chocolates,international-snacks-exotic-chocolates,52,EXTENDED
+Gourmet & World Foods,International Snacks,Imported Chips & Crisps,international-snacks-imported-chips-crisps,22,EXTENDED
+Gourmet & World Foods,International Snacks,Trail Mix,international-snacks-trail-mix,48,EXTENDED
+Gourmet & World Foods,International Sauces & Spreads,Pasta Sauce,international-sauces-spreads-pasta-sauce,43,EXTENDED
+Gourmet & World Foods,International Sauces & Spreads,Hot Sauce & Sriracha,international-sauces-spreads-hot-sauce-sriracha,49,EXTENDED
+Gourmet & World Foods,International Sauces & Spreads,Salsa & Dips,international-sauces-spreads-salsa-dips,51,EXTENDED
+Gourmet & World Foods,International Sauces & Spreads,Hummus,international-sauces-spreads-hummus,10,EXTENDED
+Gourmet & World Foods,International Sauces & Spreads,Tahini,international-sauces-spreads-tahini,3,EXTENDED
+Gourmet & World Foods,International Sauces & Spreads,Salad Dressings,international-sauces-spreads-salad-dressings,24,EXTENDED
+Gourmet & World Foods,International Sauces & Spreads,Cooking Sauces,international-sauces-spreads-cooking-sauces,81,EXTENDED
+Pet Care,Dog Food & Treats,Dry Dog Food,dog-food-treats-dry-dog-food,31,EXTENDED
+Pet Care,Dog Food & Treats,Puppy Food,dog-food-treats-puppy-food,29,EXTENDED
+Pet Care,Dog Food & Treats,Dog Treats & Biscuits,dog-food-treats-dog-treats-biscuits,77,EXTENDED
+Pet Care,Dog Food & Treats,Wet Dog Food,dog-food-treats-wet-dog-food,40,EXTENDED
+Pet Care,Cat Food & Treats,Dry Cat Food,cat-food-treats-dry-cat-food,47,EXTENDED
+Pet Care,Cat Food & Treats,Wet Cat Food,cat-food-treats-wet-cat-food,65,EXTENDED
+Pet Care,Cat Food & Treats,Cat Treats,cat-food-treats-cat-treats,27,EXTENDED
+Pet Care,Pet Accessories,Bowls & Feeders,pet-accessories-bowls-feeders,8,EXTENDED
+Pet Care,Pet Accessories,Pet Shampoo,pet-accessories-pet-shampoo,6,EXTENDED
+Pet Care,Pet Accessories,Litter & Litter Tray,pet-accessories-litter-litter-tray,12,EXTENDED
+Stationery & General Merchandise,Kitchen Accessories,Storage Containers,kitchen-accessories-storage-containers,62,STANDARD
+Stationery & General Merchandise,Kitchen Accessories,Water Bottles,kitchen-accessories-water-bottles,106,STANDARD
+Stationery & General Merchandise,Kitchen Accessories,Lunch Boxes,kitchen-accessories-lunch-boxes,79,STANDARD
+Stationery & General Merchandise,Kitchen Accessories,"Kitchen Tools (Peeler, Grater)",kitchen-accessories-kitchen-tools-peeler-grater,21,STANDARD
+Stationery & General Merchandise,Batteries & Electricals,AA & AAA Batteries,batteries-electricals-aa-aaa-batteries,32,STANDARD
+Stationery & General Merchandise,Batteries & Electricals,LED Bulbs,batteries-electricals-led-bulbs,51,STANDARD
+Stationery & General Merchandise,Batteries & Electricals,Extension Cords,batteries-electricals-extension-cords,27,EXTENDED
+Stationery & General Merchandise,Batteries & Electricals,Rechargeable Batteries,batteries-electricals-rechargeable-batteries,15,EXTENDED
+Stationery & General Merchandise,Stationery,Notebooks & Registers,stationery-notebooks-registers,212,STANDARD
+Stationery & General Merchandise,Stationery,Pens & Pencils,stationery-pens-pencils,227,STANDARD
+Stationery & General Merchandise,Stationery,Glue & Tape,stationery-glue-tape,77,STANDARD
+Stationery & General Merchandise,Stationery,Scissors & Cutters,stationery-scissors-cutters,26,STANDARD

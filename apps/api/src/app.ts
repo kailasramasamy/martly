@@ -8,6 +8,7 @@ import { firebasePlugin } from "./plugins/firebase.js";
 import { authRoutes } from "./routes/auth/index.js";
 import { organizationRoutes } from "./routes/organizations/index.js";
 import { storeRoutes } from "./routes/stores/index.js";
+import { onboardingRoutes } from "./routes/onboarding/index.js";
 import { productRoutes } from "./routes/products/index.js";
 import { orderRoutes } from "./routes/orders/index.js";
 import { storeProductRoutes } from "./routes/store-products/index.js";
@@ -160,6 +161,7 @@ export async function buildApp() {
       await api.register(authRoutes, { prefix: "/auth" });
       await api.register(organizationRoutes, { prefix: "/organizations" });
       await api.register(storeRoutes, { prefix: "/stores" });
+      await api.register(onboardingRoutes, { prefix: "/onboarding" });
       await api.register(productRoutes, { prefix: "/products" });
       await api.register(orderRoutes, { prefix: "/orders" });
       await api.register(storeProductRoutes, { prefix: "/store-products" });

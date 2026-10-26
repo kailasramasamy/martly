@@ -1709,3 +1709,4 @@ export const speechTranscribeSchema = z.object({
   /** "list": one shopping-list item; "post": an owner's post to shoppers, in English or Tamil as spoken */
   purpose: z.enum(["list", "post"]).default("list"),
 });
+export * from "./onboarding.js";

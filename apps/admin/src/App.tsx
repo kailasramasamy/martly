@@ -29,6 +29,7 @@ import {
   EnvironmentOutlined,
   ThunderboltOutlined,
   RocketOutlined,
+  FlagOutlined,
   CameraOutlined,
   CarOutlined,
   PictureOutlined,
@@ -67,6 +68,8 @@ import { StoreCreate } from "./pages/stores/create";
 import { StoreEdit } from "./pages/stores/edit";
 import { StoreShow } from "./pages/stores/show";
 import { StoreOnboard } from "./pages/stores/onboard";
+import { OnboardingList } from "./pages/onboarding/list";
+import { OnboardingWizard } from "./pages/onboarding/wizard";
 import { ProductList } from "./pages/products/list";
 import { ProductCreate } from "./pages/products/create";
 import { ProductEdit } from "./pages/products/edit";
@@ -306,6 +309,12 @@ export default function App() {
                 edit: "/stores/edit/:id",
                 show: "/stores/show/:id",
                 meta: { label: "Stores", icon: <ShopOutlined /> },
+              },
+              {
+                name: "onboarding",
+                list: "/onboarding",
+                show: "/onboarding/:id",
+                meta: { label: "Onboard store", icon: <FlagOutlined /> },
               },
               {
                 name: "inventory",
@@ -688,6 +697,10 @@ export default function App() {
                   <Route path="edit/:id" element={<StoreEdit />} />
                   <Route path="show/:id" element={<StoreShow />} />
                   <Route path="show/:id/onboard" element={<StoreOnboard />} />
+                </Route>
+                <Route path="/onboarding">
+                  <Route index element={<OnboardingList />} />
+                  <Route path=":storeId" element={<OnboardingWizard />} />
                 </Route>
                 <Route path="/categories">
                   <Route index element={<CategoryList />} />

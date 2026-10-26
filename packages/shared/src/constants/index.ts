@@ -749,3 +749,4 @@ export * from "./marketing";
 export * from "./notifications";
 export * from "./home";
 export * from "./ledger";
+export * from "./onboarding";

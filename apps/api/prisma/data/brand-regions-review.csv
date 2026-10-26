@@ -1,0 +1,728 @@
+slug,name,popularity,products,regions,confidence,note
+24-mantra-organic,24 Mantra Organic,45,53,ALL,high,
+3-roses-hul,3 Roses (HUL),55,5,ALL,high,
+3m,3M,0,4,ALL,high,
+4700bc,4700BC,0,55,ALL,high,
+6-pack-hector-beverages,6 Pack (Hector Beverages),20,1,ALL,low,"unknown/small, defaulted ALL"
+7up-pepsico,7UP (PepsiCo),78,5,ALL,high,
+aachi,Aachi,58,120,TN KA KL AP TS,high,Chennai masala brand
+aashirvaad-itc,Aashirvaad (ITC),55,49,ALL,high,
+aavin,Aavin,60,28,TN,high,TN state dairy
+abbie-s,Abbie's,0,28,ALL,low,unknown bakery brand
+act-ii-agro-tech,ACT II (Agro Tech),0,53,ALL,high,
+active,Active,0,15,ALL,low,"unknown/small, defaulted ALL"
+aim-itc,Aim (ITC),0,1,ALL,low,"unknown/small, defaulted ALL"
+air-karpure-cycle,Air Karpure (Cycle),30,4,ALL,low,"unknown/small, defaulted ALL"
+air-wick,Air Wick,0,23,ALL,high,
+ajmal,Ajmal,45,40,ALL,high,
+akshayakalpa,Akshayakalpa,0,37,KA TN,low,Bengaluru organic dairy
+al-haramain,Al Haramain,35,16,ALL,low,"unknown/small, defaulted ALL"
+all-out-sc-johnson,All Out (SC Johnson),88,12,ALL,high,
+alpenliebe-perfetti,Alpenliebe (Perfetti),80,17,ALL,high,
+amazon-basics,Amazon Basics,30,1,ALL,low,"unknown/small, defaulted ALL"
+ambi-pur-p-g,Ambi Pur (P&G),62,21,ALL,high,
+ambika,Ambika,25,1,ALL,low,"unknown/small, defaulted ALL"
+american-garden,American Garden,45,38,ALL,high,
+amrutanjan,Amrutanjan,72,13,ALL,high,
+amrutha,Amrutha,0,12,AP TS,low,Telugu-sounding pickles/foods guess
+amul,Amul,95,403,ALL,high,
+anandam,Anandam,0,2,TN,low,"Tamil name, sweets guess"
+anchor-panasonic,Anchor (Panasonic),68,14,ALL,high,
+anil,Anil,40,3,TN KL KA,low,Chennai/Kerala staples brand
+anmol,Anmol,40,20,WB UP DL,low,Kolkata biscuits
+annapurna,Annapurna,50,1,ALL,low,generic name
+anveshan,Anveshan,0,27,ALL,low,"unknown/small, defaulted ALL"
+appy-fizz-parle-agro,Appy Fizz (Parle Agro),78,2,ALL,high,
+appy-parle-agro,Appy (Parle Agro),65,1,ALL,high,
+apsara-faber-castell,Apsara (Faber-Castell),85,31,ALL,high,
+aptamil,Aptamil,0,6,ALL,high,
+aquafina-pepsico,Aquafina (PepsiCo),68,1,ALL,high,
+archies,Archies,50,1,ALL,high,
+ariel-p-g,Ariel (P&G),85,13,ALL,high,
+armaf,Armaf,35,7,ALL,low,"unknown/small, defaulted ALL"
+arokya,Arokya,50,3,TN KA AP TS,high,Hatsun milk brand
+aromahpure-sai-corporation,Aromahpure (Sai Corporation),15,18,ALL,low,"unknown/small, defaulted ALL"
+arun-icecreams,Arun Icecreams,50,36,TN KA KL AP TS,high,Hatsun ice cream
+asian-paints,Asian Paints,40,1,ALL,high,
+assure,Assure,15,9,ALL,low,"unknown/small, defaulted ALL"
+aveeno,Aveeno,45,8,ALL,high,
+axe-hul,Axe (HUL),80,50,ALL,high,
+azah,Azah,0,24,ALL,low,"unknown/small, defaulted ALL"
+b-natural-itc,B Natural (ITC),50,33,ALL,high,
+baby-dove,Baby Dove,50,6,ALL,high,
+babyhug,BabyHug,40,1,ALL,high,
+badshah,Badshah,0,29,ALL,high,
+bagrry-s,Bagrry's,45,54,ALL,high,
+baidyanath,Baidyanath,68,74,ALL,high,
+bajaj,Bajaj,72,6,ALL,high,
+balaji,Balaji,65,24,GJ MH,high,Gujarat wafers
+balasa,Balasa,15,1,ALL,low,unknown
+bambino,Bambino,72,23,ALL,high,
+band-aid-j-j,Band-Aid (J&J),78,2,ALL,high,
+banjara-s,Banjara's,35,19,ALL,low,unknown
+barilla,Barilla,40,17,ALL,high,
+barquillo,Barquillo,15,10,ALL,low,"unknown/small, defaulted ALL"
+baskin-robbins,Baskin Robbins,65,62,ALL,high,
+bauli,Bauli,0,24,ALL,high,
+baygon-sc-johnson,Baygon (SC Johnson),55,3,ALL,high,
+beardo,Beardo,50,89,ALL,high,
+beco,Beco,25,45,ALL,low,"unknown/small, defaulted ALL"
+belkin,Belkin,30,3,ALL,low,"unknown/small, defaulted ALL"
+bella,Bella,0,45,ALL,low,"unknown/small, defaulted ALL"
+bertolli,Bertolli,40,5,ALL,high,
+beyond-snack,Beyond Snack,25,1,ALL,low,"unknown/small, defaulted ALL"
+bikaji,Bikaji,0,48,ALL,high,
+bikano,Bikano,68,48,ALL,high,
+bingo-itc,Bingo! (ITC),78,40,ALL,high,
+biotique,Biotique,62,124,ALL,high,
+bisk-farm,Bisk Farm,0,44,ALL,low,"unknown/small, defaulted ALL"
+bisleri,Bisleri,45,8,ALL,high,
+blep,Blep,0,9,ALL,low,"unknown/small, defaulted ALL"
+blue-bird,Blue Bird,0,61,ALL,low,"unknown/small, defaulted ALL"
+blue-tokai,Blue Tokai,42,16,ALL,high,
+bombay-shaving-company,Bombay Shaving Company,50,72,ALL,high,
+bondset,Bondset,0,2,ALL,low,"unknown/small, defaulted ALL"
+bonn,Bonn,0,22,ALL,low,"unknown/small, defaulted ALL"
+boost-hul,Boost (HUL),65,7,ALL,high,
+borges,Borges,40,40,ALL,high,
+boroplus-emami,BoroPlus (Emami),70,14,ALL,high,
+borosil,Borosil,68,53,ALL,high,
+bounty-mars,Bounty (Mars),40,3,ALL,high,
+bournvita-mondelez,Bournvita (Mondelez),92,11,ALL,high,
+brahmins,Brahmins,0,27,TN KL,low,Kerala/TN breakfast mixes
+brikhsa,Brikhsa,12,1,ALL,low,"unknown/small, defaulted ALL"
+britannia,Britannia,90,65,ALL,high,
+brooke-bond-hul,Brooke Bond (HUL),85,21,ALL,high,
+brown-polson,Brown & Polson,60,2,ALL,high,
+bru-hul,Bru (HUL),85,24,ALL,high,
+brut,Brut,0,9,ALL,high,
+buffet,Buffet,0,40,ALL,low,"unknown/small, defaulted ALL"
+burt-s-bees,Burt's Bees,30,7,ALL,low,"unknown/small, defaulted ALL"
+cadbury-mondelez,Cadbury (Mondelez),97,96,ALL,high,
+camel,Camel,0,4,ALL,low,"unknown/small, defaulted ALL"
+camlin,Camlin,0,20,ALL,high,
+campure-mangalam-organics,CamPure (Mangalam Organics),30,21,ALL,low,"unknown/small, defaulted ALL"
+carefree-j-j,Carefree (J&J),55,3,ALL,high,
+carmesi,Carmesi,30,4,ALL,low,"unknown/small, defaulted ALL"
+carnation-nestle,Carnation (Nestle),25,1,ALL,low,"unknown/small, defaulted ALL"
+catch,Catch,65,51,ALL,high,
+catch-ds-group,Catch (DS Group),50,1,ALL,high,
+catsan-mars,Catsan (Mars),25,4,ALL,low,"unknown/small, defaulted ALL"
+cavin-s,Cavin's,50,28,TN KA KL AP TS,high,Chennai milkshake brand
+cello,Cello,80,86,ALL,high,
+center-fresh-perfetti,Center Fresh (Perfetti),82,9,ALL,high,
+centrum-haleon,Centrum (Haleon),50,12,ALL,high,
+cesar-mars,Cesar (Mars),30,5,ALL,low,"unknown/small, defaulted ALL"
+cetaphil-galderma,Cetaphil (Galderma),68,26,ALL,high,
+chandrika,Chandrika,50,5,KL KA TN,high,Kerala soap
+cheetos-pepsico,Cheetos (PepsiCo),45,3,ALL,high,
+cherry-blossom-sara-lee,Cherry Blossom (Sara Lee),75,10,ALL,high,
+chicco,Chicco,60,76,ALL,high,
+ching-s-secret,Ching's Secret,80,71,ALL,high,
+chrome,Chrome,0,17,ALL,low,"unknown/small, defaulted ALL"
+chupa-chups-perfetti,Chupa Chups (Perfetti),65,1,ALL,high,
+cif-hul,Cif (HUL),30,9,ALL,low,"unknown/small, defaulted ALL"
+cinthol-godrej,Cinthol (Godrej),72,20,ALL,high,
+classmate-itc,Classmate (ITC),85,70,ALL,high,
+clean-clear-j-j,Clean & Clear (J&J),65,8,ALL,high,
+clensta,Clensta,15,7,ALL,low,"unknown/small, defaulted ALL"
+clinic-plus-hul,Clinic Plus (HUL),82,7,ALL,high,
+close-up-hul,Close Up (HUL),85,15,ALL,high,
+coca-cola,Coca-Cola,95,3,ALL,high,
+coco-soul-marico,Coco Soul (Marico),35,35,ALL,low,"unknown/small, defaulted ALL"
+colgate,Colgate,98,107,ALL,high,
+colin-reckitt,Colin (Reckitt),88,4,ALL,high,
+comfort-hul,Comfort (HUL),88,18,ALL,high,
+complan-zydus,Complan (Zydus),75,10,ALL,high,
+confetteria-ferrero,Confetteria (Ferrero),25,1,ALL,low,"unknown/small, defaulted ALL"
+continental,Continental,45,27,ALL,high,
+cookme,Cookme,0,22,TN KA KL,high,Chennai masala/ready mix
+cornetto-hul,Cornetto (HUL),85,8,ALL,high,
+cornitos,Cornitos,50,42,ALL,high,
+cothas-coffee,Cothas Coffee,40,20,TN KA,high,Madurai coffee
+country-delight,Country Delight,0,12,ALL,high,
+country-fresh,Country Fresh,15,1,ALL,low,"unknown/small, defaulted ALL"
+creambell,Creambell,55,32,ALL,low,North/central strong
+cremica,Cremica,0,46,ALL,high,
+crocin,Crocin,0,1,ALL,high,
+cubic,Cubic,0,44,ALL,low,"unknown/small, defaulted ALL"
+cupid,Cupid,25,19,ALL,low,"unknown/small, defaulted ALL"
+cycle-nr-group,Cycle (NR Group),85,70,ALL,high,
+d-lecta-dynamix-dairy,D'Lecta (Dynamix Dairy),30,24,ALL,low,"unknown/small, defaulted ALL"
+daawat,Daawat,80,40,ALL,high,
+dabur,Dabur,85,68,ALL,high,
+dairy-day,Dairy Day,40,45,KA TN AP TS,high,Bengaluru ice cream
+dalda,Dalda,72,6,ALL,high,
+danone,Danone,30,0,ALL,high,
+del-monte,Del Monte,60,55,ALL,high,
+denver-guardian,Denver (Guardian),55,25,ALL,high,
+derby,Derby,15,1,ALL,low,"unknown/small, defaulted ALL"
+dettol-reckitt,Dettol (Reckitt),92,57,ALL,high,
+dexolac,Dexolac,0,9,ALL,high,
+dhampure,Dhampure,35,8,UP DL PB,low,UP sugar
+dhara-mother-dairy,Dhara (Mother Dairy),0,11,DL UP,low,Mother Dairy oil
+dheepam,Dheepam,0,2,TN KA KL,high,TN oil/ghee brand
+digene,Digene,0,9,ALL,high,
+disano,DiSano,45,1,ALL,high,
+dodla,Dodla,45,11,AP TS KA TN,high,Hyderabad dairy
+dole,Dole,35,1,ALL,low,"unknown/small, defaulted ALL"
+domex-hul,Domex (HUL),75,11,ALL,high,
+doritos-pepsico,Doritos (PepsiCo),60,8,ALL,high,
+double-horse,Double Horse,0,74,KL KA TN,high,Kerala rice/flour
+dove-hul,Dove (HUL),88,122,ALL,high,
+dr-beckmann,Dr. Beckmann,25,20,ALL,low,"unknown/small, defaulted ALL"
+dr-oetker,Dr. Oetker,65,70,ALL,high,
+dr-schar,Dr. Schar,20,1,ALL,low,"unknown/small, defaulted ALL"
+drools,Drools,65,70,ALL,high,
+ds-group,DS Group,50,3,ALL,high,
+duke-s,Duke's,35,38,ALL,low,"unknown/small, defaulted ALL"
+duracell,Duracell,85,14,ALL,high,
+durex-reckitt,Durex (Reckitt),90,28,ALL,high,
+early-foods,Early Foods,25,17,ALL,low,"unknown/small, defaulted ALL"
+eastern,Eastern,55,37,KL KA TN,high,Kerala masala
+electral-fdc,Electral (FDC),80,4,ALL,high,
+electrorush,Electrorush,15,7,ALL,low,"unknown/small, defaulted ALL"
+elite,Elite,0,52,ALL,high,
+emami,Emami,0,7,ALL,high,
+emami-healthy-tasty,Emami Healthy & Tasty,0,47,ALL,high,
+enfamil-mead-johnson,Enfamil (Mead Johnson),50,3,ALL,high,
+engage-itc,Engage (ITC),65,58,ALL,high,
+engine-shree-hari-oil,Engine (Shree Hari Oil),30,4,GJ,low,Gujarat groundnut oil guess
+english-oven,English Oven,55,30,ALL,high,
+eno-haleon,Eno (Haleon),92,10,ALL,high,
+ensure-abbott,Ensure (Abbott),70,9,ALL,high,
+epigamia,Epigamia,60,73,ALL,high,
+eveready,Eveready,88,39,ALL,high,
+everest,Everest,90,55,ALL,high,
+everteen,everteen,30,3,ALL,low,"unknown/small, defaulted ALL"
+everyuth-naturals,Everyuth Naturals,0,26,ALL,low,"unknown/small, defaulted ALL"
+exo-jyothy-labs,Exo (Jyothy Labs),60,13,ALL,high,
+ezee,Ezee,25,30,ALL,low,"unknown/small, defaulted ALL"
+fabelle-itc,Fabelle (ITC),35,30,ALL,low,"unknown/small, defaulted ALL"
+faber-castell,Faber-Castell,55,18,ALL,high,
+fanta-coca-cola,Fanta (Coca-Cola),80,2,ALL,high,
+farm-fresh,Farm Fresh,15,37,ALL,low,"unknown/small, defaulted ALL"
+farmina,Farmina,0,20,ALL,low,"unknown/small, defaulted ALL"
+farmley,Farmley,0,68,ALL,high,
+fast-up,Fast&Up,45,22,ALL,high,
+ferrero,Ferrero,70,7,ALL,high,
+fevicol-pidilite,Fevicol (Pidilite),97,12,ALL,high,
+fevicryl-pidilite,Fevicryl (Pidilite),55,1,ALL,high,
+fevikwik,Fevikwik,0,6,ALL,high,
+fevistik,Fevistik,0,3,ALL,high,
+fiama-itc,Fiama (ITC),60,33,ALL,high,
+figaro,Figaro,75,3,ALL,high,
+flair,Flair,0,22,ALL,low,"unknown/small, defaulted ALL"
+flavour-drum,Flavour Drum,0,52,ALL,low,"unknown/small, defaulted ALL"
+fogg-vini-cosmetics,Fogg (Vini Cosmetics),88,56,ALL,high,
+fortune-adani-wilmar,Fortune (Adani Wilmar),90,16,ALL,high,
+freedom-gemini,Freedom (Gemini),50,6,AP TS KA TN KL,low,Gemini Edibles Hyderabad oil
+french-s,French's,20,2,ALL,low,"unknown/small, defaulted ALL"
+fresh-produce,Fresh Produce,10,72,ALL,low,"unknown/small, defaulted ALL"
+fresho-bigbasket,Fresho (BigBasket),40,22,ALL,high,
+freshwrapp-hindalco,Freshwrapp (Hindalco),50,5,ALL,high,
+frooti-parle-agro,Frooti (Parle Agro),92,1,ALL,high,
+frost,Frost,15,1,ALL,low,"unknown/small, defaulted ALL"
+gala-freudenberg,Gala (Freudenberg),60,77,ALL,high,
+galaxy-mars,Galaxy (Mars),40,12,ALL,high,
+ganesh,Ganesh,30,14,ALL,low,"unknown/small, defaulted ALL"
+ganesh-sharbat,Ganesh Sharbat,0,62,ALL,low,"unknown/small, defaulted ALL"
+garnier,Garnier,0,65,ALL,high,
+gas-o-fast-mankind,Gas-O-Fast (Mankind),45,3,ALL,high,
+gatorade-pepsico,Gatorade (PepsiCo),0,8,ALL,high,
+gatsby-mandom,Gatsby (Mandom),55,3,ALL,high,
+gemini-cargill,Gemini (Cargill),55,8,AP TS KA TN KL,high,Hyderabad sunflower oil
+genteel-godrej,Genteel (Godrej),0,4,ALL,high,
+gerber-nestle,Gerber (Nestle),20,3,ALL,low,"unknown/small, defaulted ALL"
+get-a-way,Get-A-Way,0,23,ALL,low,"unknown/small, defaulted ALL"
+ghadi-rspl,Ghadi (RSPL),75,5,ALL,high,
+gillette-p-g,Gillette (P&G),100,76,ALL,high,
+girnar,Girnar,40,21,GJ MH DL,low,Gujarat tea
+gits,Gits,55,53,ALL,high,
+glade-sc-johnson,Glade (SC Johnson),45,16,ALL,high,
+glenand,Glenand,0,21,ALL,low,"unknown/small, defaulted ALL"
+glow-handsome,Glow & Handsome,0,3,ALL,high,
+glow-lovely-hul,Glow & Lovely (HUL),92,8,ALL,high,
+glucon-d-zydus,Glucon-D (Zydus),92,13,ALL,high,
+go-cheese-parag,Go Cheese (Parag),50,9,ALL,high,
+godrej-aer-godrej,Godrej aer (Godrej),75,61,ALL,high,
+godrej-ezee,Godrej Ezee,50,5,ALL,high,
+godrej-fab,Godrej Fab,30,2,ALL,low,"unknown/small, defaulted ALL"
+godrej-jersey,Godrej Jersey,0,28,AP TS KA TN,low,Jersey dairy South
+godrej-no-1,Godrej No.1,0,6,ALL,high,
+godrej-real-good,Godrej Real Good,30,3,ALL,low,"unknown/small, defaulted ALL"
+godrej-yummiez,Godrej Yummiez,45,65,ALL,high,
+gokul-santol,Gokul Santol,0,8,ALL,low,"unknown/small, defaulted ALL"
+gold-winner,Gold Winner,62,9,TN KA KL AP TS,high,Chennai sunflower oil
+goldiee,Goldiee,0,30,ALL,low,"unknown/small, defaulted ALL"
+good-knight-godrej,Good Knight (Godrej),92,26,ALL,high,
+gowardhan-parag,Gowardhan (Parag),55,27,ALL,high,
+graminway,Graminway,0,73,ALL,low,"unknown/small, defaulted ALL"
+grb,GRB,50,32,TN KA KL,high,Coimbatore ghee/sweets
+grocery-farm,Grocery Farm,0,35,ALL,low,"unknown/small, defaulted ALL"
+habanero,Habanero,0,27,ALL,low,"unknown/small, defaulted ALL"
+hair-care,Hair & Care,0,4,ALL,low,"unknown/small, defaulted ALL"
+hakubaku,Hakubaku,12,1,ALL,low,"unknown/small, defaulted ALL"
+haldiram-s,Haldiram's,95,53,ALL,high,
+hamam,Hamam,72,3,TN KA KL AP TS,high,HUL South soap
+hamdard,Hamdard,88,61,ALL,high,
+hansaplast,Hansaplast,0,18,ALL,high,
+happi-planet,Happi Planet,0,14,ALL,high,
+happilo,Happilo,60,177,ALL,high,
+happy-hen,Happy Hen,22,3,TS KA,low,Hyderabad/Bengaluru eggs
+happydent-perfetti,Happydent (Perfetti),0,4,ALL,high,
+hari-darshan,Hari Darshan,0,91,ALL,low,"unknown/small, defaulted ALL"
+harpic-reckitt,Harpic (Reckitt),97,35,ALL,high,
+harvest-gold,Harvest Gold,68,38,ALL,high,
+hatsun,Hatsun,55,18,TN KA KL AP TS,high,TN dairy
+havells,Havells,75,10,ALL,high,
+havmor-lotte,Havmor (Lotte),70,41,ALL,low,West/North strong but national
+head-shoulders-p-g,Head & Shoulders (P&G),85,16,ALL,high,
+hefty,Hefty,12,1,ALL,low,"unknown/small, defaulted ALL"
+hellmann-s-hul,Hellmann's (HUL),45,4,ALL,high,
+hello-tempeh,Hello Tempeh,18,1,ALL,low,"unknown/small, defaulted ALL"
+hem,HEM,60,28,ALL,high,
+henko,Henko,45,8,ALL,high,
+herbal-essences,Herbal Essences,45,8,ALL,high,
+herbal-strategi,Herbal Strategi,25,31,ALL,low,"unknown/small, defaulted ALL"
+heritage,Heritage,58,94,AP TS KA TN,high,Hyderabad dairy
+hershey-s,Hershey's,62,54,ALL,high,
+himalaya,Himalaya,85,212,ALL,high,
+himalaya-vet,Himalaya Vet,40,1,ALL,high,
+himalayan-natives,Himalayan Natives,0,38,ALL,low,"unknown/small, defaulted ALL"
+himalayan-tata,Himalayan (Tata),50,2,ALL,high,
+hit-godrej,HIT (Godrej),90,11,ALL,high,
+hocco,Hocco,40,19,ALL,high,
+homelites-itc,Homelites (ITC),0,1,ALL,low,"unknown/small, defaulted ALL"
+horlicks-hul,Horlicks (HUL),92,38,ALL,high,
+huft,HUFT,45,19,ALL,high,
+huggies-kimberly-clark,Huggies (Kimberly-Clark),82,35,ALL,high,
+huy-fong,Huy Fong,30,2,ALL,low,"unknown/small, defaulted ALL"
+id-fresh,iD Fresh,70,53,ALL,high,
+idhayam,Idhayam,58,5,TN KA KL,high,Chennai sesame oil
+imported,Imported,15,1,ALL,low,"unknown/small, defaulted ALL"
+india-gate,India Gate,90,35,ALL,high,
+indica-cavinkare,Indica (CavinKare),0,9,ALL,low,"unknown/small, defaulted ALL"
+induben,Induben,38,1,GJ,low,Gujarati name
+indulekha-hul,Indulekha (HUL),62,8,ALL,high,
+intersand,Intersand,15,3,ALL,low,"unknown/small, defaulted ALL"
+iodex-haleon,Iodex (Haleon),82,5,ALL,high,
+itc,ITC,45,1,ALL,high,
+itc-master-chef,ITC Master Chef,55,3,ALL,high,
+jabsons,Jabsons,42,1,GJ MH,low,Gujarat snacks
+jayashree,Jayashree,25,1,ALL,low,"unknown/small, defaulted ALL"
+jimmy-s,Jimmy's,20,1,ALL,low,"unknown/small, defaulted ALL"
+jimmy-s-cocktails,Jimmy's Cocktails,0,22,ALL,low,"unknown/small, defaulted ALL"
+jk-copier,JK Copier,0,7,ALL,low,"unknown/small, defaulted ALL"
+johnson-s-baby-j-j,Johnson's Baby (J&J),92,23,ALL,high,
+jus-amazin,Jus' Amazin,15,1,ALL,low,"unknown/small, defaulted ALL"
+just-organik,Just Organik,20,1,ALL,low,"unknown/small, defaulted ALL"
+k-p-namboodiri-s,K.P. Namboodiri's,38,14,KL KA TN,high,Kerala ayurveda/foods
+kalimark,Kalimark,38,1,TN KL KA,low,"Bovonto maker, TN"
+kamasutra,KamaSutra,70,34,ALL,high,
+kapiva,Kapiva,0,85,ALL,high,
+karachi-bakery,Karachi Bakery,62,78,TS AP KA,high,Hyderabad bakery
+karthika,Karthika,35,4,TN,low,"TN name, small"
+kataria,Kataria,12,1,ALL,low,"unknown/small, defaulted ALL"
+kayam-sheth-brothers,Kayam (Sheth Brothers),40,3,MH GJ,low,Mumbai churna
+keggs,Keggs,35,2,ALL,low,"unknown/small, defaulted ALL"
+kellogg-s,Kellogg's,88,46,ALL,high,
+kerala-chips-co,Kerala Chips Co.,18,1,KL,high,Kerala chips
+kesh-king-emami,Kesh King (Emami),0,8,ALL,high,
+kettle-brand,Kettle Brand,20,1,ALL,low,"unknown/small, defaulted ALL"
+kettle-studio,Kettle Studio,42,23,ALL,high,
+keventer,Keventer,30,67,WB DL,low,Kolkata origin
+keventers,Keventers,50,2,DL UP,low,Delhi milkshakes
+keya,Keya,38,164,ALL,low,"unknown/small, defaulted ALL"
+khadi-natural,Khadi Natural,50,135,ALL,high,
+khari-foods,Khari Foods,0,62,ALL,low,"unknown/small, defaulted ALL"
+khetika,Khetika,0,75,ALL,high,
+kikkoman,Kikkoman,40,1,ALL,high,
+kinder-ferrero,Kinder (Ferrero),75,11,ALL,high,
+kinley-coca-cola,Kinley (Coca-Cola),82,3,ALL,high,
+kissan-hul,Kissan (HUL),92,35,ALL,high,
+kitchens-of-india-itc,Kitchens of India (ITC),45,1,ALL,high,
+kitkat-nestle,KitKat (Nestle),90,22,ALL,high,
+kiwi-sc-johnson,Kiwi (SC Johnson),88,12,ALL,high,
+kleenex-kimberly-clark,Kleenex (Kimberly-Clark),50,6,ALL,high,
+klf,KLF,45,13,KL TN KA,high,Kerala coconut oil
+knorr-hul,Knorr (HUL),82,29,ALL,high,
+kodai-cheese,Kodai Cheese,0,23,TN,low,Kodaikanal cheese
+kohinoor,Kohinoor,62,30,ALL,high,
+kopiko-mayora,Kopiko (Mayora),0,2,ALL,high,
+kores,Kores,0,11,ALL,high,
+kurkure-pepsico,Kurkure (PepsiCo),96,1,ALL,high,
+kwality-wall-s-hul,Kwality Wall's (HUL),88,47,ALL,high,
+l-oreal-paris,L'Oreal Paris,82,75,ALL,high,
+la-french,La'French,30,18,ALL,low,"unknown/small, defaulted ALL"
+lakm-hul,Lakmé (HUL),88,69,ALL,high,
+lal-qilla,Lal Qilla,50,5,DL PB UP,high,North basmati
+lansinoh,Lansinoh,20,1,ALL,low,"unknown/small, defaulted ALL"
+laxman-rekha,Laxman Rekha,72,1,ALL,high,
+lay-s-pepsico,Lay's (PepsiCo),97,27,ALL,high,
+leo-coffee,Leo Coffee,45,7,TN KA,high,Chennai coffee
+let-s-try,Let's Try,0,84,ALL,low,"unknown/small, defaulted ALL"
+letsshave,LetsShave,35,19,ALL,low,"unknown/small, defaulted ALL"
+licious,Licious,68,30,ALL,high,
+lifebuoy-hul,Lifebuoy (HUL),95,24,ALL,high,
+lijjat,Lijjat,92,2,ALL,high,
+limca-coca-cola,Limca (Coca-Cola),82,2,ALL,high,
+limcee-abbott,Limcee (Abbott),65,1,ALL,high,
+lindberg,Lindberg,15,65,ALL,low,"unknown/small, defaulted ALL"
+lindt,Lindt,62,30,ALL,high,
+lion,Lion,0,16,ALL,low,"unknown/small, defaulted ALL"
+lipton-hul,Lipton (HUL),72,22,ALL,high,
+liril-hul,Liril (HUL),62,6,ALL,high,
+listerine-j-j,Listerine (J&J),85,9,ALL,high,
+little-s,Little's,0,21,ALL,low,"unknown/small, defaulted ALL"
+livon-marico,Livon (Marico),72,16,ALL,high,
+lizol-reckitt,Lizol (Reckitt),92,18,ALL,high,
+loacker,Loacker,35,11,ALL,low,"unknown/small, defaulted ALL"
+lotte,Lotte,55,22,ALL,high,
+lotus-herbals,Lotus Herbals,62,93,ALL,high,
+luvlap,LuvLap,40,61,ALL,high,
+lux-hul,Lux (HUL),90,28,ALL,high,
+luxor,Luxor,0,16,ALL,low,"unknown/small, defaulted ALL"
+m-m-s-mars,M&M's (Mars),0,2,ALL,high,
+maaza-coca-cola,Maaza (Coca-Cola),92,2,ALL,high,
+madhur,Madhur,55,1,ALL,high,
+maggi-nestle,Maggi (Nestle),97,47,ALL,high,
+magnum-hul,Magnum (HUL),70,9,ALL,high,
+mahak,Mahak,20,2,ALL,low,"unknown/small, defaulted ALL"
+malkist-mayora,Malkist (Mayora),0,6,ALL,high,
+mamaearth,Mamaearth,72,114,ALL,high,
+mamypoko-unicharm,MamyPoko (Unicharm),88,24,ALL,high,
+manforce-mankind,Manforce (Mankind),85,23,ALL,high,
+mangal-bhavan,Mangal Bhavan,0,69,ALL,low,"unknown/small, defaulted ALL"
+mangalam,Mangalam,60,9,KA TN KL,low,South agarbatti/camphor guess
+mangaldeep-itc,Mangaldeep (ITC),75,73,ALL,high,
+mangalmai,Mangalmai,0,1,ALL,low,"unknown/small, defaulted ALL"
+manna,Manna,40,45,ALL,high,
+maped,Maped,0,36,ALL,high,
+mapro,Mapro,42,47,MH GJ,high,Panchgani
+margo,Margo,60,6,ALL,high,
+mars,Mars,50,3,ALL,high,
+masterchow,MasterChow,0,54,ALL,low,"unknown/small, defaulted ALL"
+maxo-jyothy-labs,Maxo (Jyothy Labs),0,6,ALL,low,"unknown/small, defaulted ALL"
+mcaffeine,mCaffeine,0,115,ALL,high,
+mccain,McCain,82,38,ALL,high,
+mcvitie-s-pladis,McVitie's (Pladis),62,38,ALL,high,
+mdh,MDH,92,39,ALL,high,
+me-o,Me-O,40,4,ALL,high,
+meatigo,Meatigo,25,2,KA TS TN,low,Metro meat delivery South
+medela,Medela,40,1,ALL,high,
+medimix,Medimix,70,28,TN KA KL AP TS,low,"Cholayil, South-dominant"
+mee-mee,Mee Mee,58,18,ALL,high,
+meera,Meera,45,12,KL TN KA,low,Kerala herbal wash powder
+melam,Melam,0,27,TN,low,Tamil name guess
+mentos-perfetti,Mentos (Perfetti),82,10,ALL,high,
+mi-xiaomi,Mi (Xiaomi),45,1,ALL,high,
+milky-mist,Milky Mist,55,115,TN KA KL AP TS,high,Erode dairy
+milkybar-nestle,Milkybar (Nestle),72,5,ALL,high,
+millex,Millex,0,8,ALL,low,"unknown/small, defaulted ALL"
+milton,Milton,88,57,ALL,high,
+miltop,Miltop,20,13,ALL,low,"unknown/small, defaulted ALL"
+mirinda-pepsico,Mirinda (PepsiCo),78,2,ALL,high,
+modern,Modern,65,49,ALL,high,
+moi-soi,Moi Soi,0,41,ALL,low,"unknown/small, defaulted ALL"
+moksh,Moksh,0,28,ALL,low,"unknown/small, defaulted ALL"
+mom,MOM,0,50,ALL,high,
+monster-coca-cola,Monster (Coca-Cola),0,12,ALL,high,
+moov-reckitt,Moov (Reckitt),85,7,ALL,high,
+mooz,Mooz,0,39,ALL,high,
+mortein-reckitt,Mortein (Reckitt),85,17,ALL,high,
+mother-dairy,Mother Dairy,85,137,DL UP,high,Delhi NCR dairy
+mother-s-recipe,Mother's Recipe,62,48,ALL,high,
+mother-sparsh,Mother Sparsh,0,19,ALL,low,"unknown/small, defaulted ALL"
+mountain-dew-pepsico,Mountain Dew (PepsiCo),0,2,ALL,high,
+mr-gold,Mr. Gold,40,8,ALL,high,
+mr-muscle-sc-johnson,Mr Muscle (SC Johnson),45,17,ALL,high,
+mr-white,Mr. White,40,4,ALL,high,
+mtr,MTR,78,124,TN KA KL AP TS,high,South + metro national
+munch-nestle,Munch (Nestle),75,12,ALL,high,
+munix,Munix,0,9,ALL,low,"unknown/small, defaulted ALL"
+myfitness,Myfitness,0,15,ALL,low,"unknown/small, defaulted ALL"
+mysore-sandal,Mysore Sandal,70,12,KA TN AP TS KL,high,KSDL soap
+naga,Naga,40,8,TN,high,TN brand
+nandini-kmf,Nandini (KMF),65,80,KA TN KL AP TS,high,KMF dairy
+nandu-s,Nandu's,20,1,TN KA,low,Chennai/Bengaluru chicken
+narasu-s,Narasu's,40,16,TN KA,high,Coimbatore coffee
+nataraj,Nataraj,0,3,ALL,low,"unknown/small, defaulted ALL"
+nature-fresh-cargill,Nature Fresh (Cargill),55,6,ALL,high,
+natureland-organics,Natureland Organics,0,80,ALL,low,"unknown/small, defaulted ALL"
+naturo,Naturo,15,12,ALL,low,"unknown/small, defaulted ALL"
+navneet,Navneet,62,14,MH GJ,high,Mumbai stationery
+navratna-emami,Navratna (Emami),82,6,ALL,high,
+neocate,Neocate,0,1,ALL,high,
+nescafe-nestle,Nescafe (Nestle),95,33,ALL,high,
+nestle,Nestle,85,60,ALL,high,
+neutrogena-j-j,Neutrogena (J&J),62,30,ALL,high,
+nihar-marico,Nihar (Marico),0,6,ALL,high,
+nike,Nike,30,21,ALL,low,"unknown/small, defaulted ALL"
+nilon-s,Nilon's,0,58,MH GJ KA,low,Mumbai pickles
+nirma,Nirma,75,11,ALL,high,
+nissin,Nissin,50,27,ALL,high,
+nivea,NIVEA,85,148,ALL,high,
+nourish-you,Nourish You,0,37,ALL,low,"unknown/small, defaulted ALL"
+nua,Nua,0,36,ALL,high,
+nuovi,Nuovi,0,12,ALL,low,"unknown/small, defaulted ALL"
+nurture-farms,Nurture Farms,15,1,ALL,low,"unknown/small, defaulted ALL"
+nutella-ferrero,Nutella (Ferrero),78,2,ALL,high,
+nutraj,Nutraj,45,61,ALL,high,
+nutralite-zydus,Nutralite (Zydus),45,16,ALL,high,
+nutrela,Nutrela,65,11,ALL,high,
+nutriorg,Nutriorg,0,33,ALL,low,"unknown/small, defaulted ALL"
+nutriwish,Nutriwish,0,57,ALL,low,"unknown/small, defaulted ALL"
+nutty-yogi,Nutty Yogi,0,92,ALL,high,
+nycil-zydus,Nycil (Zydus),0,8,ALL,high,
+nyle,Nyle,45,21,ALL,high,
+oceans-secret,Oceans Secret,15,13,ALL,low,"unknown/small, defaulted ALL"
+oddy,Oddy,0,22,ALL,low,"unknown/small, defaulted ALL"
+odomos-dabur,Odomos (Dabur),88,8,ALL,high,
+odonil-dabur,Odonil (Dabur),85,35,ALL,high,
+olay-p-g,Olay (P&G),70,44,ALL,high,
+old-spice-p-g,Old Spice (P&G),68,18,ALL,high,
+om-bhakti,Om Bhakti,0,36,ALL,low,"unknown/small, defaulted ALL"
+on1y,On1y,0,57,ALL,low,"unknown/small, defaulted ALL"
+open-secret,Open Secret,0,71,ALL,high,
+oral-b-p-g,Oral-B (P&G),82,55,ALL,high,
+orbit-wrigley,Orbit (Wrigley),0,6,ALL,high,
+organic-farm,Organic Farm,15,2,ALL,low,"unknown/small, defaulted ALL"
+organic-india,Organic India,50,45,ALL,high,
+organic-nation,Organic Nation,15,1,ALL,low,"unknown/small, defaulted ALL"
+organic-tattva,Organic Tattva,45,53,ALL,high,
+organic-tatva,Organic Tatva,15,3,ALL,low,"unknown/small, defaulted ALL"
+origami,Origami,45,44,ALL,high,
+origami-good-karma,Origami Good Karma,30,10,ALL,low,"unknown/small, defaulted ALL"
+otrivin-haleon,Otrivin (Haleon),75,8,ALL,high,
+palmolive,Palmolive,0,33,ALL,high,
+pampers-p-g,Pampers (P&G),90,43,ALL,high,
+panasonic,Panasonic,60,28,ALL,high,
+pantene-p-g,Pantene (P&G),82,21,ALL,high,
+paper-boat,Paper Boat,15,1,ALL,low,"unknown/small, defaulted ALL"
+paper-boat-hector-beverages,Paper Boat (Hector Beverages),62,71,ALL,high,
+parachute-marico,Parachute (Marico),93,18,ALL,high,
+parag-fragrances,Parag Fragrances,15,1,ALL,low,"unknown/small, defaulted ALL"
+park-avenue-raymond,Park Avenue (Raymond),65,55,ALL,high,
+parle,Parle,95,51,ALL,high,
+parodontax,Parodontax,45,3,ALL,high,
+parry-s,Parry's,42,1,TN KA KL AP TS,low,South sugar/foods
+paseo-asia-pulp-paper,Paseo (Asia Pulp & Paper),40,17,ALL,high,
+patanjali,Patanjali,75,67,ALL,high,
+pears-hul,Pears (HUL),82,23,ALL,high,
+pediasure-abbott,PediaSure (Abbott),0,8,ALL,high,
+pedigree-mars,Pedigree (Mars),92,48,ALL,high,
+pee-safe,Pee Safe,0,39,ALL,high,
+pepsi-pepsico,Pepsi (PepsiCo),92,4,ALL,high,
+pepsodent-hul,Pepsodent (HUL),80,20,ALL,high,
+phalada-pure-sure,Phalada Pure & Sure,25,1,ALL,low,"unknown/small, defaulted ALL"
+philips,Philips,85,30,ALL,high,
+philips-avent,Philips Avent,72,15,ALL,high,
+phool,Phool,0,31,ALL,low,"unknown/small, defaulted ALL"
+pigeon,Pigeon,65,34,ALL,high,
+pilgrim,Pilgrim,45,81,ALL,high,
+pillsbury,Pillsbury,60,26,ALL,high,
+pintola,Pintola,60,41,ALL,high,
+pitambari,Pitambari,0,9,DL UP PB,low,North cleaning brand guess
+plackers,Plackers,20,5,ALL,low,"unknown/small, defaulted ALL"
+plum,Plum,0,134,ALL,high,
+plush,Plush,25,29,ALL,low,"unknown/small, defaulted ALL"
+polka,Polka,0,44,ALL,low,"unknown/small, defaulted ALL"
+polo-nestle,Polo (Nestle),70,1,ALL,high,
+pond-s-hul,Pond's (HUL),88,63,ALL,high,
+ponvandu,Ponvandu,0,7,TN KA KL,high,TN detergent
+popular,Popular,25,6,ALL,low,"unknown/small, defaulted ALL"
+popular-essentials,Popular Essentials,0,47,ALL,low,"unknown/small, defaulted ALL"
+praakritik,Praakritik,0,52,ALL,low,"unknown/small, defaulted ALL"
+prasuma,Prasuma,45,3,KA,low,Karnataka meat guess
+pravin,Pravin,0,7,GJ MH,low,Gujarati name
+premier-premier-tissues,Premier (Premier Tissues),45,30,ALL,high,
+prestige-ttk,Prestige (TTK),75,14,ALL,high,
+pril-henkel,Pril (Henkel),55,6,ALL,high,
+prime,PRIME,0,25,ALL,low,"unknown/small, defaulted ALL"
+pringles-kellogg-s,Pringles (Kellogg's),75,18,ALL,high,
+priya,Priya,55,48,AP TS KA TN,high,Telugu pickles
+pro-nature,Pro Nature,30,49,ALL,low,"unknown/small, defaulted ALL"
+prolyte-cipla,Prolyte (Cipla),40,10,ALL,high,
+protinex-danone,Protinex (Danone),65,6,ALL,high,
+prov,ProV,0,25,ALL,low,"unknown/small, defaulted ALL"
+pujahome,Pujahome,25,41,ALL,low,"unknown/small, defaulted ALL"
+pulse-ds-group,Pulse (DS Group),80,10,ALL,high,
+puramate,Puramate,0,150,ALL,low,"unknown/small, defaulted ALL"
+purepet,Purepet,0,26,ALL,low,"unknown/small, defaulted ALL"
+purrfeto,Purrfeto,0,11,ALL,low,"unknown/small, defaulted ALL"
+quaker-pepsico,Quaker (PepsiCo),85,11,ALL,high,
+rajdhani,Rajdhani,45,35,DL UP PB,low,North besan/pulses
+ramdev,Ramdev,0,41,GJ MH,low,Gujarat spices
+rangbirangi,Rangbirangi,15,2,ALL,low,"unknown/small, defaulted ALL"
+rangeela,Rangeela,0,6,ALL,low,"unknown/small, defaulted ALL"
+rasna,Rasna,0,43,ALL,high,
+rasoi-magic,Rasoi Magic,40,25,ALL,high,
+ratol-aimco,Ratol (AIMCO),55,1,ALL,high,
+raw-pressery,Raw Pressery,45,46,ALL,high,
+real-dabur,Real (Dabur),85,49,ALL,high,
+real-thai,Real Thai,0,40,ALL,low,"unknown/small, defaulted ALL"
+red-bull,Red Bull,88,10,ALL,high,
+revital-sun-pharma,Revital (Sun Pharma),70,4,ALL,high,
+revlon,Revlon,0,24,ALL,high,
+rexona-hul,Rexona (HUL),55,16,ALL,high,
+reynolds,Reynolds,75,47,ALL,high,
+rin-hul,Rin (HUL),82,9,ALL,high,
+ritebite,RiteBite,50,62,ALL,high,
+rkg,RKG,40,1,ALL,high,
+rostaa,Rostaa,30,34,ALL,low,"unknown/small, defaulted ALL"
+royal-canin-mars,Royal Canin (Mars),75,13,ALL,high,
+safal-mother-dairy,Safal (Mother Dairy),72,15,DL UP,high,Mother Dairy produce
+safe-harvest,Safe Harvest,25,2,ALL,low,"unknown/small, defaulted ALL"
+saffola-marico,Saffola (Marico),82,30,ALL,high,
+sakthi-masala,Sakthi Masala,50,55,TN KA KL AP TS,high,TN masala
+santoor,Santoor,82,23,ALL,high,
+saridon-bayer,Saridon (Bayer),70,4,ALL,high,
+savlon-itc,Savlon (ITC),72,17,ALL,high,
+savorit,Savorit,0,5,ALL,low,"unknown/small, defaulted ALL"
+schweppes-coca-cola,Schweppes (Coca-Cola),60,9,ALL,high,
+scotch-3m,Scotch (3M),60,19,ALL,high,
+scotch-brite-3m,Scotch-Brite (3M),88,67,ALL,high,
+scott-kimberly-clark,Scott (Kimberly-Clark),30,8,ALL,low,"unknown/small, defaulted ALL"
+sdp,SDP,20,1,ALL,low,"unknown/small, defaulted ALL"
+sebamed,Sebamed,0,33,ALL,high,
+selpak-eczac-ba,Selpak (Eczacıbaşı),25,18,ALL,low,"unknown/small, defaulted ALL"
+selsun-chattem,Selsun (Chattem),40,1,ALL,high,
+sensodyne-haleon,Sensodyne (Haleon),82,22,ALL,high,
+set-wet,Set Wet,65,23,ALL,high,
+shahi,Shahi,35,2,ALL,low,"unknown/small, defaulted ALL"
+sheba-mars,Sheba (Mars),35,29,ALL,low,"unknown/small, defaulted ALL"
+shower-to-shower-itc,Shower To Shower (ITC),0,3,ALL,low,"unknown/small, defaulted ALL"
+shree,Shree,20,1,ALL,low,"unknown/small, defaulted ALL"
+shubhkart,Shubhkart,0,61,ALL,low,"unknown/small, defaulted ALL"
+sid-s-farm,Sid's Farm,0,18,TS AP,low,Hyderabad dairy
+signoraware,Signoraware,0,113,ALL,high,
+similac-abbott,Similac (Abbott),70,14,ALL,high,
+sirona,Sirona,50,36,ALL,high,
+skinn-titan,Skinn (Titan),50,36,ALL,high,
+skippi,Skippi,45,21,ALL,high,
+skittles-mars,Skittles (Mars),45,10,ALL,high,
+skore-ttk,Skore (TTK),50,27,ALL,high,
+sleepy-owl,Sleepy Owl,50,32,ALL,high,
+slice-pepsico,Slice (PepsiCo),78,2,ALL,high,
+slimza,Slimza,15,1,ALL,low,"unknown/small, defaulted ALL"
+slurrp-farm,Slurrp Farm,45,62,ALL,high,
+smith-jones,Smith & Jones,0,16,ALL,high,
+snapin,Snapin,0,49,ALL,low,"unknown/small, defaulted ALL"
+snickers-mars,Snickers (Mars),78,14,ALL,high,
+society-tea,Society Tea,50,13,GJ MH,low,Gujarat/Mumbai tea
+soft-touch,Soft Touch,20,11,ALL,low,"unknown/small, defaulted ALL"
+sofy-unicharm,Sofy (Unicharm),60,13,ALL,high,
+soom,Soom,15,1,ALL,low,"unknown/small, defaulted ALL"
+soulflower,Soulflower,0,90,ALL,high,
+soulfull-tata,Soulfull (Tata),0,42,ALL,high,
+soy-fresh,Soy Fresh,20,1,ALL,low,"unknown/small, defaulted ALL"
+spinz,Spinz,0,13,ALL,low,"unknown/small, defaulted ALL"
+spontex,Spontex,35,4,ALL,low,"unknown/small, defaulted ALL"
+sprig,Sprig,0,32,ALL,low,"unknown/small, defaulted ALL"
+sprite-coca-cola,Sprite (Coca-Cola),90,2,ALL,high,
+sri-bhagyalakshmi,Sri Bhagyalakshmi,20,14,KA AP TS,low,South foods guess
+sri-sri-tattva,Sri Sri Tattva,0,258,ALL,high,
+star-meats,Star Meats,15,1,KA TS,low,guess
+stayfree-j-j,Stayfree (J&J),78,17,ALL,high,
+sting-pepsico,Sting (PepsiCo),75,5,ALL,high,
+streax,Streax,65,40,ALL,high,
+strepsils-reckitt,Strepsils (Reckitt),75,4,ALL,high,
+sudocrem,Sudocrem,40,1,ALL,high,
+sugar-free-zydus,Sugar Free (Zydus),75,2,ALL,high,
+suhana,Suhana,0,52,ALL,high,
+sumeru-innovative-foods,Sumeru (Innovative Foods),45,6,ALL,high,
+sundrop-agro-tech,Sundrop (Agro Tech),60,42,ALL,high,
+sunfeast-itc,Sunfeast (ITC),82,41,ALL,high,
+sunpure,Sunpure,40,7,ALL,high,
+sunsilk-hul,Sunsilk (HUL),85,18,ALL,high,
+surf-excel-hul,Surf Excel (HUL),98,15,ALL,high,
+svasti,Svasti,0,21,ALL,low,"unknown/small, defaulted ALL"
+swaha,Swaha,15,11,ALL,low,"unknown/small, defaulted ALL"
+swastiks,Swastiks,25,1,MH,low,Pune masala guess
+syska,Syska,72,6,ALL,high,
+tabasco-mcilhenny,Tabasco (McIlhenny),60,5,ALL,high,
+tang-mondelez,Tang (Mondelez),0,4,ALL,high,
+tata-coffee,Tata Coffee,45,37,ALL,high,
+tata-salt,Tata Salt,98,3,ALL,high,
+tata-sampann,Tata Sampann,72,53,ALL,high,
+tata-simply-better,Tata Simply Better,0,36,ALL,high,
+tata-tea,Tata Tea,92,61,ALL,high,
+temptations-mars,Temptations (Mars),35,7,ALL,low,"unknown/small, defaulted ALL"
+tetley-tata,Tetley (Tata),70,34,ALL,high,
+tgl-co,TGL Co.,0,41,ALL,low,"unknown/small, defaulted ALL"
+thai-kitchen-mccormick,Thai Kitchen (McCormick),20,1,ALL,low,"unknown/small, defaulted ALL"
+the-baker-s-dozen,The Baker's Dozen,0,95,ALL,low,"unknown/small, defaulted ALL"
+the-health-factory,The Health Factory,0,31,ALL,low,"unknown/small, defaulted ALL"
+the-old-natural,The Old Natural,12,21,ALL,low,"unknown/small, defaulted ALL"
+the-select-aisle,The Select Aisle,0,43,ALL,low,"unknown/small, defaulted ALL"
+the-whole-truth,The Whole Truth,0,49,ALL,high,
+thums-up-coca-cola,Thums Up (Coca-Cola),95,3,ALL,high,
+tide-p-g,Tide (P&G),88,18,ALL,high,
+tify,Tify,0,29,ALL,low,"unknown/small, defaulted ALL"
+timios,Timios,35,41,ALL,low,"unknown/small, defaulted ALL"
+tirumala,Tirumala,50,3,AP TS,low,Hyderabad dairy
+toblerone-mondelez,Toblerone (Mondelez),72,7,ALL,high,
+tong-garden,Tong Garden,0,47,ALL,low,"unknown/small, defaulted ALL"
+too-yumm-guiltfree,Too Yumm! (Guiltfree),50,3,ALL,high,
+top-n-town-bakers,Top 'N Town Bakers,0,40,ALL,low,"unknown/small, defaulted ALL"
+top-ramen-nissin,Top Ramen (Nissin),60,6,ALL,high,
+tops,Tops,0,52,ALL,high,
+tota,Tota,15,64,ALL,low,"unknown/small, defaulted ALL"
+tresemm-hul,TRESemmé (HUL),75,45,ALL,high,
+trixie,Trixie,30,1,ALL,low,"unknown/small, defaulted ALL"
+tropicana-pepsico,Tropicana (PepsiCo),85,16,ALL,high,
+true-elements,True Elements,50,6,ALL,high,
+true-story,True Story,0,54,ALL,high,
+truefarm,TrueFarm,15,1,ALL,low,"unknown/small, defaulted ALL"
+trust,Trust,40,2,ALL,high,
+tspp,TSPP,12,1,ALL,low,"unknown/small, defaulted ALL"
+tummyfriendly-foods,TummyFriendly Foods,0,12,ALL,low,"unknown/small, defaulted ALL"
+tupperware,Tupperware,85,1,ALL,high,
+twinings,Twinings,55,19,ALL,high,
+twix-mars,Twix (Mars),45,4,ALL,high,
+udhaiyam,Udhaiyam,40,10,TN,high,TN coffee/tea
+ujala,Ujala,85,8,ALL,high,
+uncle-chipps-pepsico,Uncle Chipps (PepsiCo),75,2,ALL,high,
+unibic,Unibic,60,39,ALL,high,
+urban-platter,Urban Platter,40,107,ALL,high,
+ustraa,Ustraa,50,41,ALL,high,
+v-wash-glenmark,V Wash (Glenmark),65,2,ALL,high,
+vadilal,Vadilal,75,73,ALL,low,"Gujarat origin, national"
+vahdam,Vahdam,0,46,ALL,high,
+vanish-reckitt,Vanish (Reckitt),75,7,ALL,high,
+vaseline-hul,Vaseline (HUL),92,42,ALL,high,
+vatika-dabur,Vatika (Dabur),78,22,ALL,high,
+vcare,Vcare,0,21,ALL,low,"unknown/small, defaulted ALL"
+veeba,Veeba,72,76,ALL,high,
+vicco,Vicco,70,13,ALL,high,
+vicks-p-g,Vicks (P&G),95,19,ALL,high,
+vim-hul,Vim (HUL),95,30,ALL,high,
+vivel-itc,Vivel (ITC),0,9,ALL,high,
+volini-sun-pharma,Volini (Sun Pharma),85,7,ALL,high,
+vvd-gold,VVD Gold,40,1,TN KL KA,high,TN coconut oil
+wagh-bakri,Wagh Bakri,78,32,GJ MH,high,Gujarat tea
+wai-wai,Wai Wai,62,28,ALL,high,
+weikfield,Weikfield,0,52,ALL,high,
+wheafree,Wheafree,20,1,ALL,low,"unknown/small, defaulted ALL"
+wheel-hul,Wheel (HUL),82,4,ALL,high,
+whiskas-mars,Whiskas (Mars),85,33,ALL,high,
+whisper-p-g,Whisper (P&G),95,25,ALL,high,
+white-tone,White Tone,0,3,ALL,low,"unknown/small, defaulted ALL"
+wild-stone-mcnroe,Wild Stone (McNROE),72,43,ALL,high,
+wingreens-farms,Wingreens Farms,45,96,ALL,high,
+wipro,Wipro,70,15,ALL,high,
+wok-n-roll,Wok N Roll,15,7,ALL,low,"unknown/small, defaulted ALL"
+wok-tok-by-veeba,Wok Tok by Veeba,35,21,ALL,low,"unknown/small, defaulted ALL"
+wonderland-foods,Wonderland Foods,0,58,ALL,low,"unknown/small, defaulted ALL"
+worldone,Worldone,0,5,ALL,low,"unknown/small, defaulted ALL"
+yakult,Yakult,0,3,ALL,high,
+yardley,Yardley,62,71,ALL,high,
+yoga-bar,Yoga Bar,62,77,ALL,high,
+youva,Youva,0,66,ALL,low,"unknown/small, defaulted ALL"
+z,Z,0,3,ALL,low,"unknown/small, defaulted ALL"
+zandu-emami,Zandu (Emami),80,66,ALL,high,
+zappfresh,Zappfresh,30,5,DL UP,low,Gurgaon meat
+zed-black,Zed Black,72,8,ALL,high,
+zoff,Zoff,0,54,ALL,low,"unknown/small, defaulted ALL"
+zorabian,Zorabian,35,1,ALL,low,"unknown/small, defaulted ALL"

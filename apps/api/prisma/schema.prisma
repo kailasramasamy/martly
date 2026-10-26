@@ -56,6 +56,20 @@ enum StoreStatus {
   CLOSED
 }
 
+/// Shop format chosen at onboarding; sets how many aisles and brands its proposed catalog carries
+enum StoreSize {
+  KIRANA
+  SUPERMARKET
+  HYPERMARKET
+}
+
+/// How widely an aisle is stocked: every kirana, a regular supermarket, or only large stores
+enum SubcategoryTier {
+  ESSENTIAL
+  STANDARD
+  EXTENDED
+}
+
 enum OrderStatus {
   PENDING
   CONFIRMED
@@ -478,6 +492,8 @@ model Organization {
   /// Martly's commission, GST included: on online payments, and on COD and wallet payments
   onlineCommissionPct Decimal   @default(4) @map("online_commission_pct") @db.Decimal(5, 2)
   codCommissionPct    Decimal   @default(2) @map("cod_commission_pct") @db.Decimal(5, 2)
+  /// A storefront source: onboarding copies its Home layout, collections and banners into new organisations
+  isTemplate          Boolean   @default(false) @map("is_template")
 
   stores                Store[]
   products              Product[]
@@ -542,6 +558,10 @@ model Store {
   /// Returns worth up to this much default to "refund, keep it"
   returnKeepThreshold   Decimal?    @map("return_keep_threshold") @db.Decimal(10, 2)
   baseDeliveryFee       Decimal?    @map("base_delivery_fee")
+  size                  StoreSize?
+  /// The onboarding catalog adjustments and pricing last applied, so the wizard reopens with them
+  catalogRules          Json?       @map("catalog_rules")
+  launchedAt            DateTime?   @map("launched_at")
   createdAt             DateTime    @default(now()) @map("created_at")
   updatedAt             DateTime    @updatedAt @map("updated_at")
 
@@ -761,6 +781,7 @@ model Subcategory {
   searchTerms  String[] @default([]) @map("search_terms")
   // Used up and bought again (milk, detergent); off for durables and seasonal items, which reorder suggestions skip
   restockable  Boolean  @default(true)
+  tier         SubcategoryTier @default(STANDARD)
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")
 
@@ -784,6 +805,8 @@ model Brand {
   themeColorSecondary String?  @map("theme_color_secondary")
   // 0–100 shopper recognition in India; breaks search ties so market leaders rank first
   popularity          Int      @default(0)
+  /// Region codes (FESTIVAL_REGIONS) where shoppers buy it, home state first; ["ALL"] for national brands, empty until reviewed
+  regions             String[] @default([])
   /// null = master brand shared by every organization; set = an organization's own local brand
   organizationId      String?  @map("organization_id")
   createdAt           DateTime @default(now()) @map("created_at")
