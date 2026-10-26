@@ -16,7 +16,7 @@ interface Branding {
 }
 
 const BRANDING: Record<string, Branding> = {
-  "harur-fresh-mart-bus-stand": {
+  "template-store": {
     tagline: "Fresh stock every morning, right by the bus stand",
     taglineTa: "பேருந்து நிலையம் அருகே, தினமும் காலையில் புதிய சரக்கு",
     brandColor: "#15803d",

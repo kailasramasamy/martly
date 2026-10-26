@@ -1,5 +1,5 @@
 /**
- * Harur Fresh Mart's own bakery as a store special: an org brand, eight products baked in-store (listed at that store
+ * The template store's own bakery as a store special: an org brand, eight products baked in-store (listed at that store
  * only), the "Fresh from our oven" collection with its banner, and Home's store specials card after Regional pantry
  * picks.
  * Product photos and the banner art are painted once (image model only) and reused on reruns. Safe to rerun.
@@ -16,8 +16,8 @@ dotenv.config({ override: true });
 // seed-home-art loads apps/api/.env (overriding DATABASE_URL) as it's imported, so another database is named apart
 const prisma = new PrismaClient({ datasourceUrl: process.env.TARGET_DATABASE_URL ?? process.env.DATABASE_URL });
 
-const BRAND = { name: "Harur Fresh Bakes", slug: "harur-fresh-bakes" };
-const COLLECTION = { slug: "fresh-from-our-oven-harur", title: "Fresh from our oven", subtitle: "Baked every morning at Harur Fresh Mart" };
+const BRAND = { name: "Fresh Bakes", slug: "harur-fresh-bakes" };
+const COLLECTION = { slug: "fresh-from-our-oven-harur", title: "Fresh from our oven", subtitle: "Baked every morning in our store" };
 const STOCK = 30;
 
 interface Bake {
@@ -57,7 +57,7 @@ async function upsertBake(bake: Bake, organizationId: string, brandId: string) {
   ].join("\n"), "1024x1024", false);
   const data = {
     name: bake.name, imageUrl, images: [imageUrl], subcategoryId: subcategory.id, brandId, organizationId, foodType: "VEG" as const,
-    shelfLifeDays: 2, manufacturerName: "Harur Fresh Mart", countryOfOrigin: "India", translations: { ta: { name: bake.ta } },
+    shelfLifeDays: 2, manufacturerName: "Template Store", countryOfOrigin: "India", translations: { ta: { name: bake.ta } },
     description: "Baked fresh every morning in our store.",
   };
   const product = existing

@@ -63,7 +63,7 @@ const STORES: StoreSeed[] = [
   { slug: "nallampalli-daily-needs", name: "Nallampalli Daily Needs", address: "Main Bazaar, Nallampalli, Dharmapuri, Tamil Nadu 636807",
     latitude: 12.064, longitude: 78.056, deliveryRadius: 5, minOrderAmount: 99, freeDeliveryThreshold: 299,
     baseDeliveryFee: 25, etaMinutes: 35, hours: ["07:00", "21:30"], photo: "1604719312566-8912e9227c6a" },
-  { slug: "harur-fresh-mart-bus-stand", name: "Harur Fresh Mart", address: "Main Road, Harur Taluk, Dharmapuri, Tamil Nadu",
+  { slug: "template-store", name: "Template Store", address: "Main Road, Harur Taluk, Dharmapuri, Tamil Nadu",
     latitude: 12.244, longitude: 78.269, deliveryRadius: 6, minOrderAmount: 99, freeDeliveryThreshold: 249,
     baseDeliveryFee: 20, etaMinutes: 10, hours: ["06:00", "22:30"], photo: "1488459716781-31db52582fe9" },
   { slug: "thamizh-supermarket-theerthamalai-road", name: "Thamizh Supermarket", address: "Market Street, Harur Taluk, Dharmapuri, Tamil Nadu",

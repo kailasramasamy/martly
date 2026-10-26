@@ -8,11 +8,11 @@ async function main() {
 
   // Create demo organization
   const org = await prisma.organization.upsert({
-    where: { slug: "demo-grocers" },
+    where: { slug: "martly-template" },
     update: {},
     create: {
-      name: "Demo Grocers",
-      slug: "demo-grocers",
+      name: "Martly Template",
+      slug: "martly-template",
     },
   });
 

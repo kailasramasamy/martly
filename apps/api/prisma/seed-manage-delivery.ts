@@ -1,5 +1,5 @@
 /**
- * Seeds the Manage delivery board for Harur Fresh Mart: 2 riders and 5 READY delivery orders dated today.
+ * Seeds the Manage delivery board for Template Store: 2 riders and 5 READY delivery orders dated today.
  *
  *   cd apps/api && npx tsx prisma/seed-manage-delivery.ts
  *
@@ -84,8 +84,8 @@ async function seedOrders(storeId: string) {
 }
 
 async function main() {
-  const store = await prisma.store.findFirst({ where: { name: "Harur Fresh Mart" } });
-  if (!store) throw new Error("Harur Fresh Mart not found");
+  const store = await prisma.store.findFirst({ where: { name: "Template Store" } });
+  if (!store) throw new Error("Template Store not found");
   await clearPrevious(store.id);
   await seedRiders(store.id);
   await seedOrders(store.id);

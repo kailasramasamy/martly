@@ -1,5 +1,5 @@
 /**
- * Gives a shopper (the phone passed, else the review login OTP_REVIEW_PHONE) a monthly provision list at Harur Fresh Mart: one best-stocked product from
+ * Gives a shopper (the phone passed, else the review login OTP_REVIEW_PHONE) a monthly provision list at Template Store: one best-stocked product from
  * each staple aisle, with the reminder day set to today so it is due (it shows on Home and the scheduler would remind).
  * Two lines carry history so the list has something to flag: one was cheaper last month, one hasn't been ordered in
  * 70 days.
@@ -15,7 +15,7 @@ dotenv.config({ override: true });
 if (databaseUrl) process.env.DATABASE_URL = databaseUrl;
 
 const prisma = new PrismaClient();
-const STORE_NAME = "Harur Fresh Mart";
+const STORE_NAME = "Template Store";
 // One month's provisions for a household, aisle by aisle, with how many of each
 const STAPLES: [string, number][] = [
   ["Parboiled Rice", 1], ["Wheat Atta", 1], ["Toor Dal (Arhar)", 2], ["Urad Dal", 1], ["Groundnut Oil", 2],

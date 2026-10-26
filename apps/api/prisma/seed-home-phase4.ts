@@ -1,5 +1,5 @@
 /**
- * Phase 4 showcase for Demo Grocers / Harur Fresh Mart: three advertised coupons, two live brand posters (painted
+ * Phase 4 showcase for Martly Template / Template Store: three advertised coupons, two live brand posters (painted
  * portrait art) and a live sponsored product. Idempotent: live campaigns and existing coupons are kept. Pushes are
  * off (no FCM client), so seeding never notifies anyone.
  *
@@ -75,7 +75,7 @@ async function sponsored(createdById: string) {
 
 async function main() {
   const org = await prisma.organization.findFirstOrThrow({ where: { name: ORG_NAME }, select: { id: true } });
-  const owner = await prisma.user.findFirstOrThrow({ where: { email: "owner@demogrocers.dev" }, select: { id: true } });
+  const owner = await prisma.user.findFirstOrThrow({ where: { email: "demo@martly.in" }, select: { id: true } });
   await coupons(org.id);
   await posters(owner.id);
   await sponsored(owner.id);

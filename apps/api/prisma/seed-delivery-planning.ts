@@ -1,5 +1,5 @@
 /**
- * Sets Harur Fresh Mart up for delivery planning: two slots a day (10–12, 17–19), a rider roster on both,
+ * Sets Template Store up for delivery planning: two slots a day (10–12, 17–19), a rider roster on both,
  * fleet settings, and slot orders spread over four neighbourhoods (with coordinates) for today's evening slot
  * and tomorrow's morning slot.
  *
@@ -125,7 +125,7 @@ async function seedOrders(storeId: string, origin: { lat: number; lng: number })
 }
 
 async function main() {
-  const harur = await prisma.store.findFirstOrThrow({ where: { name: "Harur Fresh Mart" }, select: { id: true, latitude: true, longitude: true } });
+  const harur = await prisma.store.findFirstOrThrow({ where: { name: "Template Store" }, select: { id: true, latitude: true, longitude: true } });
   const slotsOnly = process.argv.includes("--slots-only");
   if (!slotsOnly) await removePreviousSeed();
   await seedSlots(harur.id);

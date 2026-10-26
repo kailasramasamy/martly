@@ -1,5 +1,5 @@
 /**
- * Seeds sample marketing data for the mobile Manage persona against Demo Grocers. Idempotent.
+ * Seeds sample marketing data for the mobile Manage persona against Martly Template. Idempotent.
  * Historical campaigns are inserted directly, so nothing is pushed to any device.
  *
  *   cd apps/api && npx tsx prisma/seed-manage-marketing.ts
@@ -80,7 +80,7 @@ async function seedNotifications(organizationId: string, adminId: string, custom
 
 async function seedSubscription(organizationId: string, customerId: string) {
   if (await prisma.subscription.findFirst({ where: { organizationId } })) return;
-  const store = await prisma.store.findFirst({ where: { organizationId, name: "Harur Fresh Mart" } });
+  const store = await prisma.store.findFirst({ where: { organizationId, name: "Template Store" } });
   const items = store ? await prisma.storeProduct.findMany({ where: { storeId: store.id, isActive: true }, take: 2 }) : [];
   if (!store || items.length === 0) return;
   await prisma.subscription.create({
@@ -92,9 +92,9 @@ async function seedSubscription(organizationId: string, customerId: string) {
 }
 
 async function main() {
-  const org = await prisma.organization.findFirst({ where: { slug: "demo-grocers" } });
-  const admin = await prisma.user.findFirst({ where: { email: "owner@demogrocers.dev" } });
-  if (!org || !admin) throw new Error("Run seed-manage-users.ts first (Demo Grocers org and owner needed)");
+  const org = await prisma.organization.findFirst({ where: { slug: "martly-template" } });
+  const admin = await prisma.user.findFirst({ where: { email: "demo@martly.in" } });
+  if (!org || !admin) throw new Error("Run seed-manage-users.ts first (Martly Template org and owner needed)");
   const orders = await prisma.order.findMany({ where: { store: { organizationId: org.id } }, select: { userId: true }, distinct: ["userId"] });
   const customerIds = orders.map((o) => o.userId);
 

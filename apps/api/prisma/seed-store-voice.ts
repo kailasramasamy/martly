@@ -1,6 +1,6 @@
 /**
- * Annachi's voice test data at Harur Fresh Mart, matching the mockups: three live posts (fresh vegetables today, wood-pressed
- * oils new this week, small onions back) and two owner's picks in Edible Oils. Posts and picks come from owner@harur.dev.
+ * Annachi's voice test data at Template Store, matching the mockups: three live posts (fresh vegetables today, wood-pressed
+ * oils new this week, small onions back) and two owner's picks in Edible Oils. Posts and picks come from owner@martly.in.
  * Translations are written here, so it works without an Anthropic key. Re-running replaces what it made.
  *
  *   cd apps/api && npx tsx prisma/seed-store-voice.ts
@@ -47,8 +47,8 @@ async function productIds(names: string[]) {
 }
 
 async function main() {
-  const store = await prisma.store.findFirstOrThrow({ where: { name: "Harur Fresh Mart" }, select: { id: true } });
-  const owner = await prisma.user.findUniqueOrThrow({ where: { email: "owner@harur.dev" }, select: { id: true } });
+  const store = await prisma.store.findFirstOrThrow({ where: { name: "Template Store" }, select: { id: true } });
+  const owner = await prisma.user.findUniqueOrThrow({ where: { email: "owner@martly.in" }, select: { id: true } });
   await prisma.storePost.deleteMany({ where: { storeId: store.id, authorId: owner.id } });
   for (const p of POSTS) {
     const ids = await productIds(p.products);
@@ -67,7 +67,7 @@ async function main() {
     const data = { note: pick.note, language: "en", translations: { ta: { text: pick.ta } }, authorId: owner.id };
     await prisma.storePick.upsert({ where: { storeId_productId: { storeId: store.id, productId } }, create: { storeId: store.id, productId, ...data }, update: data });
   }
-  console.log(`Seeded ${POSTS.length} posts and ${PICKS.length} picks at Harur Fresh Mart`);
+  console.log(`Seeded ${POSTS.length} posts and ${PICKS.length} picks at Template Store`);
 }
 
 main().finally(() => prisma.$disconnect());

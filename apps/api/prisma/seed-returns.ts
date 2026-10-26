@@ -1,6 +1,6 @@
 /**
- * Seeds returns in every state for the OTP review customer at Harur Fresh Mart, plus orders to test them with:
- * a fresh delivery to raise a new return on, and an order out with rider@harur.dev that carries a pickup.
+ * Seeds returns in every state for the OTP review customer at Template Store, plus orders to test them with:
+ * a fresh delivery to raise a new return on, and an order out with rider@martly.in that carries a pickup.
  *
  *   cd apps/api && npx tsx prisma/seed-returns.ts [phone]
  *
@@ -65,9 +65,9 @@ async function seedReturn(order: { id: string; userId: string; items: { id: stri
 }
 
 async function main() {
-  const store = await prisma.store.findFirstOrThrow({ where: { name: "Harur Fresh Mart" } });
+  const store = await prisma.store.findFirstOrThrow({ where: { name: "Template Store" } });
   const customer = await prisma.user.findFirstOrThrow({ where: { phone: process.argv[2] ?? process.env.OTP_REVIEW_PHONE } });
-  const rider = await prisma.user.findUniqueOrThrow({ where: { email: "rider@harur.dev" } });
+  const rider = await prisma.user.findUniqueOrThrow({ where: { email: "rider@martly.in" } });
   await clearPrevious();
   await prisma.store.update({ where: { id: store.id }, data: { returnKeepThreshold: 150 } });
 
@@ -75,7 +75,7 @@ async function main() {
     where: { storeId: store.id, isActive: true, stock: { gte: 20 }, price: { gte: 40, lte: 400 } },
     select: { id: true, productId: true, variantId: true, price: true }, take: 12, orderBy: { id: "asc" },
   });
-  if (stocked.length < 12) throw new Error("Not enough stocked products at Harur Fresh Mart");
+  if (stocked.length < 12) throw new Error("Not enough stocked products at Template Store");
   const lines = (n: number) => stocked.slice(n * 2, n * 2 + 2);
   const ago = (hours: number) => new Date(Date.now() - hours * HOUR);
   const { organizationId } = store;

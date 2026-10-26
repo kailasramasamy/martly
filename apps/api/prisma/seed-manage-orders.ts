@@ -153,8 +153,8 @@ async function putOnTheRoad(storeId: string, organizationId: string) {
 }
 
 async function main() {
-  const harur = await prisma.store.findFirst({ where: { name: "Harur Fresh Mart" } });
-  if (!harur) throw new Error("Harur Fresh Mart not found");
+  const harur = await prisma.store.findFirst({ where: { name: "Template Store" } });
+  if (!harur) throw new Error("Template Store not found");
   const other = await prisma.store.findFirst({ where: { organizationId: harur.organizationId, id: { not: harur.id }, status: "ACTIVE" }, orderBy: { name: "asc" } });
   const customers = await prisma.user.findMany({ where: { role: "CUSTOMER", deletedAt: null }, orderBy: { createdAt: "asc" }, take: 6, select: { id: true } });
   if (customers.length === 0) throw new Error("No customers found");

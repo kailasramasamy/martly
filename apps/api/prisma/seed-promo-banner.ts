@@ -10,8 +10,8 @@ const DAY = 86_400_000;
 const BRIEF = "Weekend oil sale: 15% off cooking oils (seed)";
 
 async function main() {
-  const owner = await prisma.user.findUniqueOrThrow({ where: { email: "owner@demogrocers.dev" }, select: { id: true } });
-  const org = await prisma.organization.findFirstOrThrow({ where: { slug: "demo-grocers" }, select: { id: true } });
+  const owner = await prisma.user.findUniqueOrThrow({ where: { email: "demo@martly.in" }, select: { id: true } });
+  const org = await prisma.organization.findFirstOrThrow({ where: { slug: "martly-template" }, select: { id: true } });
 
   const existing = await prisma.promo.findFirst({ where: { organizationId: org.id, brief: BRIEF } });
   if (existing) return console.log(`Promo already seeded: ${existing.id}`);

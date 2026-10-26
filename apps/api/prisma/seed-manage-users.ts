@@ -1,18 +1,18 @@
 /**
- * Seeds staff accounts for testing the mobile Manage persona against the Demo Grocers org.
+ * Seeds staff accounts for testing the mobile Manage persona against the Martly Template org.
  *
  *   cd apps/api && npx tsx prisma/seed-manage-users.ts
  *   --no-qa skips the Martly QA org/store and multi@martly.dev (for production demos)
  *
- * owner@demogrocers.dev / owner123     ORG_ADMIN      all Demo Grocers stores
- * owner@harur.dev       / owner123     ORG_ADMIN      all Demo Grocers stores (same owner role, Harur-style login)
- * manager@harur.dev     / manager123   STORE_MANAGER  Harur Fresh Mart
- * staff@harur.dev       / staff123     STAFF          Harur Fresh Mart + online orders add-ons
- * catalog@harur.dev     / catalog123   STAFF          Harur Fresh Mart + catalog editor add-ons
- * counter@harur.dev     / counter123   STAFF          Harur Fresh Mart + stock count add-on
- * plain@harur.dev       / plain123     STAFF          Harur Fresh Mart, no add-ons
- * rider@harur.dev       / rider123     RIDER          Harur Fresh Mart
- * multi@martly.dev      / multi123     STORE_MANAGER  Harur Fresh Mart + Martly QA store (org picker)
+ * demo@martly.in        / owner123     ORG_ADMIN      all Martly Template stores
+ * owner@martly.in       / owner123     ORG_ADMIN      all Martly Template stores (same owner role)
+ * manager@martly.in     / manager123   STORE_MANAGER  Template Store
+ * staff@martly.in       / staff123     STAFF          Template Store + online orders add-ons
+ * catalog@martly.in     / catalog123   STAFF          Template Store + catalog editor add-ons
+ * counter@martly.in     / counter123   STAFF          Template Store + stock count add-on
+ * plain@martly.in       / plain123     STAFF          Template Store, no add-ons
+ * rider@martly.in       / rider123     RIDER          Template Store
+ * multi@martly.dev      / multi123     STORE_MANAGER  Template Store + Martly QA store (org picker)
  */
 import { PrismaClient, type Permission, type UserRole } from "../generated/prisma/index.js";
 import bcrypt from "bcryptjs";
@@ -61,22 +61,22 @@ async function ensureQaStore() {
 }
 
 async function main() {
-  const harur = await prisma.store.findFirst({ where: { name: "Harur Fresh Mart" }, select: { id: true, organizationId: true } });
-  if (!harur) throw new Error("Harur Fresh Mart not found — sync or seed the base catalog first");
+  const harur = await prisma.store.findFirst({ where: { name: "Template Store" }, select: { id: true, organizationId: true } });
+  if (!harur) throw new Error("Template Store not found — sync or seed the base catalog first");
 
   const orgStores = await prisma.store.findMany({ where: { organizationId: harur.organizationId }, select: { id: true } });
   const withQa = !process.argv.includes("--no-qa");
 
-  await upsertStaff("owner@demogrocers.dev", "owner123", "Demo Owner", "ORG_ADMIN", orgStores.map((s) => s.id));
-  await upsertStaff("owner@harur.dev", "owner123", "Harur Owner", "ORG_ADMIN", orgStores.map((s) => s.id));
-  await upsertStaff("manager@harur.dev", "manager123", "Harur Manager", "STORE_MANAGER", [harur.id]);
-  await upsertStaff("staff@harur.dev", "staff123", "Harur Staff", "STAFF", [harur.id],
+  await upsertStaff("demo@martly.in", "owner123", "Demo Owner", "ORG_ADMIN", orgStores.map((s) => s.id));
+  await upsertStaff("owner@martly.in", "owner123", "Martly Owner", "ORG_ADMIN", orgStores.map((s) => s.id));
+  await upsertStaff("manager@martly.in", "manager123", "Martly Manager", "STORE_MANAGER", [harur.id]);
+  await upsertStaff("staff@martly.in", "staff123", "Martly Staff", "STAFF", [harur.id],
     ["ORDERS_VIEW", "ORDERS_PROCESS", "ORDERS_DISPATCH", "DELIVERY_DELIVER"]);
-  await upsertStaff("catalog@harur.dev", "catalog123", "Harur Catalog Editor", "STAFF", [harur.id],
+  await upsertStaff("catalog@martly.in", "catalog123", "Martly Catalog Editor", "STAFF", [harur.id],
     ["CATALOG_PRODUCTS", "CATALOG_BRANDS"]);
-  await upsertStaff("counter@harur.dev", "counter123", "Harur Stock Counter", "STAFF", [harur.id], ["STOCK_COUNT"]);
-  await upsertStaff("plain@harur.dev", "plain123", "Harur Floor Staff", "STAFF", [harur.id]);
-  await upsertStaff("rider@harur.dev", "rider123", "Harur Rider", "RIDER", [harur.id]);
+  await upsertStaff("counter@martly.in", "counter123", "Martly Stock Counter", "STAFF", [harur.id], ["STOCK_COUNT"]);
+  await upsertStaff("plain@martly.in", "plain123", "Martly Floor Staff", "STAFF", [harur.id]);
+  await upsertStaff("rider@martly.in", "rider123", "Martly Rider", "RIDER", [harur.id]);
   if (withQa) {
     const qaStore = await ensureQaStore();
     await upsertStaff("multi@martly.dev", "multi123", "Multi-org Manager", "STORE_MANAGER", [harur.id, qaStore.id]);

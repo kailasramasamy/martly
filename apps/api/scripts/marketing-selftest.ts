@@ -90,7 +90,7 @@ async function annualPlans(userId: string) {
 }
 
 async function main() {
-  const user = await prisma.user.findFirstOrThrow({ where: { email: "owner@demogrocers.dev" } });
+  const user = await prisma.user.findFirstOrThrow({ where: { email: "demo@martly.in" } });
   const org = await prisma.organization.create({ data: { name: "Selftest Org", slug: `selftest-${Date.now()}` } });
   try {
     ok((await newPromo(org.id, user.id)).charge === 402, "Free plan: promo refused with 402");
@@ -133,7 +133,7 @@ async function main() {
 }
 main()
   .then(async () => {
-    const { id } = await prisma.user.findFirstOrThrow({ where: { email: "owner@demogrocers.dev" } });
+    const { id } = await prisma.user.findFirstOrThrow({ where: { email: "demo@martly.in" } });
     await trialAndSubscription(id);
     await annualPlans(id);
   })

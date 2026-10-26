@@ -4,7 +4,7 @@
  *
  *   cd apps/api && npx tsx prisma/seed-catalog-drafts.ts [store name]
  *
- * Needs manager@harur.dev (seed-manage-users.ts) and a running API for the worker to pick the drafts up.
+ * Needs manager@martly.in (seed-manage-users.ts) and a running API for the worker to pick the drafts up.
  */
 import "dotenv/config";
 import fs from "fs";
@@ -21,9 +21,9 @@ const PRICES: Record<string, { mrp: number; sellingPrice: number; stock: number 
 };
 
 async function main() {
-  const storeName = process.argv[2] ?? "Harur Fresh Mart";
+  const storeName = process.argv[2] ?? "Template Store";
   const store = await prisma.store.findFirstOrThrow({ where: { name: storeName } });
-  const manager = await prisma.user.findUniqueOrThrow({ where: { email: "manager@harur.dev" } });
+  const manager = await prisma.user.findUniqueOrThrow({ where: { email: "manager@martly.in" } });
   for (const product of fs.readdirSync(SAMPLE_DIR).sort()) {
     const dir = path.join(SAMPLE_DIR, product);
     const files = fs.readdirSync(dir).filter((f) => /\.jpe?g$/i.test(f)).sort();

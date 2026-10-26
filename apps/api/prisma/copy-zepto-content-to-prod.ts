@@ -1,6 +1,6 @@
 /**
  * Copies the Zepto-style Home content made locally (Phases 1–4) to prod without syncing anything else: new collections
- * with their items, Demo Grocers' Home layout, the advertised coupons, and the live brand posters and sponsored ad.
+ * with their items, Martly Template' Home layout, the advertised coupons, and the live brand posters and sponsored ad.
  * Insert-only with the same ids (existing rows are skipped). Layout sections prod already has (same type and title)
  * are updated in place rather than duplicated; nothing on prod is deleted. All prod writes run in one transaction.
  *
@@ -10,7 +10,7 @@
 import "../src/load-env.js";
 import { Prisma, PrismaClient } from "../generated/prisma/index.js";
 
-const ORG_NAME = "Demo Grocers";
+const ORG_NAME = "Martly Template";
 const COUPONS = ["WELCOME50", "SAVE20", "SNACK30"];
 // Brand campaigns to carry over, by title (the live posters and the sponsored product)
 const CAMPAIGNS = ["Make every moment sweeter", "The taste of India", "Lay's in your snack aisle"];
@@ -68,7 +68,7 @@ async function writeLayout(tx: Prisma.TransactionClient, plan: Awaited<ReturnTyp
 }
 
 async function writeAds(tx: Prisma.TransactionClient, campaigns: Awaited<ReturnType<typeof campaignRows>>) {
-  const owner = await tx.user.findFirstOrThrow({ where: { email: "owner@demogrocers.dev" }, select: { id: true } });
+  const owner = await tx.user.findFirstOrThrow({ where: { email: "demo@martly.in" }, select: { id: true } });
   for (const { banner, product, ...c } of campaigns) {
     const adProduct = await tx.adProduct.findUniqueOrThrow({ where: { code: product.code }, select: { id: true } });
     await tx.brandCampaign.create({ data: { ...c, productId: adProduct.id, createdById: owner.id, adOrderId: null } });

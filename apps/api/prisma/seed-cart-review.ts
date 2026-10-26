@@ -1,5 +1,5 @@
 /**
- * Seed data for the cart review: a repeat-purchase history at Harur Fresh Mart for the OTP review login,
+ * Seed data for the cart review: a repeat-purchase history at Template Store for the OTP review login,
  * dated so some staples are due or overdue, which fills the cart's "Did you forget?" rail.
  * Run: cd apps/api && npx tsx prisma/seed-cart-review.ts
  */
@@ -11,7 +11,7 @@ dotenv.config();
 
 const prisma = new PrismaClient();
 
-const STORE_SLUG = "harur-fresh-mart-bus-stand";
+const STORE_SLUG = "template-store";
 const SEED_ADDRESS = "Cart review seed, Bus Stand Road, Harur 636903";
 const DAY_MS = 24 * 60 * 60_000;
 

@@ -1,5 +1,5 @@
 /**
- * Three pastel theme bands for Demo Grocers' Home, spread between the shelves below the hero banners. Each tile opens
+ * Three pastel theme bands for Martly Template' Home, spread between the shelves below the hero banners. Each tile opens
  * one aisle the store stocks; band art is painted once and reused on reruns unless --regen-art is passed.
  * Run: npx tsx prisma/seed-home-bands.ts [--regen-art]   (set TARGET_DATABASE_URL for another DB)
  */

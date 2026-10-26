@@ -5,7 +5,7 @@
  * --missing-only lists just the sizes a store doesn't carry yet, leaving existing listings' price and stock alone.
  * --stores "<name>,<name>" limits it to those ACTIVE stores (default: all of them).
  *
- * Run: cd apps/api && npx tsx prisma/seed-brand-store-listings.ts Aachi [--discount 5] [--missing-only] [--stores "Harur Fresh Mart"]
+ * Run: cd apps/api && npx tsx prisma/seed-brand-store-listings.ts Aachi [--discount 5] [--missing-only] [--stores "Template Store"]
  */
 
 import { PrismaClient } from "../generated/prisma/index.js";

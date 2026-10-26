@@ -1,6 +1,6 @@
 import type { PrismaClient } from "../generated/prisma/index.js";
 
-export const ORG_NAME = "Demo Grocers";
+export const ORG_NAME = "Martly Template";
 export const STORE_ID = "66dd70fc-98e0-4120-bf7f-13723eaad571";
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -61,7 +61,7 @@ export async function discount(prisma: PrismaClient, productIds: string[], perce
 
 /** A live manual promotion record behind a PROMO collection, so its campaign card can state the offer. */
 export async function ensurePromo(prisma: PrismaClient, organizationId: string, collection: { id: string; title: string; startsAt: Date | null; endsAt: Date | null }, percent: number) {
-  const owner = await prisma.user.findFirstOrThrow({ where: { email: "owner@demogrocers.dev" }, select: { id: true } });
+  const owner = await prisma.user.findFirstOrThrow({ where: { email: "demo@martly.in" }, select: { id: true } });
   const data = {
     organizationId, createdById: owner.id, brief: `${collection.title}: ${percent}% off`, kind: "MANUAL" as const, status: "LIVE" as const,
     discountType: "PERCENTAGE" as const, discountValue: percent, startsAt: collection.startsAt, endsAt: collection.endsAt, collectionId: collection.id,

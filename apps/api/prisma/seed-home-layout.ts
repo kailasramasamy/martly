@@ -1,5 +1,5 @@
 /**
- * Seeds Demo Grocers' Home layout and the showcase collections behind it (idempotent; campaign and tile art already
+ * Seeds Martly Template' Home layout and the showcase collections behind it (idempotent; campaign and tile art already
  * stored is reused unless --regen-art is passed, and the Navratri hero is repainted only with --hero).
  *
  *   cd apps/api && npx tsx prisma/seed-home-layout.ts [--regen-art] [--hero]

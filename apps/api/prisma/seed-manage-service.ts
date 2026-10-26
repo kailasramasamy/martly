@@ -1,10 +1,10 @@
 /**
  * Seeds reviews, return requests, support tickets and store ratings for the mobile Manage persona
- * (Demo Grocers / Harur Fresh Mart). Idempotent: rows are keyed on their natural unique keys.
+ * (Martly Template / Template Store). Idempotent: rows are keyed on their natural unique keys.
  *
  *   cd apps/api && npx tsx prisma/seed-manage-service.ts
  *
- * Needs delivered orders at Harur Fresh Mart (run seed-manage-orders.ts first).
+ * Needs delivered orders at Template Store (run seed-manage-orders.ts first).
  */
 import { PrismaClient } from "../generated/prisma/index.js";
 
@@ -25,16 +25,16 @@ const REVIEW_PLAN = [
 ] as const;
 
 async function main() {
-  const store = await prisma.store.findFirst({ where: { name: "Harur Fresh Mart" } });
-  if (!store) throw new Error("Harur Fresh Mart not found");
-  const owner = await prisma.user.findUniqueOrThrow({ where: { email: "owner@demogrocers.dev" } });
+  const store = await prisma.store.findFirst({ where: { name: "Template Store" } });
+  if (!store) throw new Error("Template Store not found");
+  const owner = await prisma.user.findUniqueOrThrow({ where: { email: "demo@martly.in" } });
 
   const orders = await prisma.order.findMany({
     where: { storeId: store.id, status: "DELIVERED" },
     include: { items: true },
     orderBy: { createdAt: "desc" },
   });
-  if (orders.length === 0) throw new Error("No delivered orders at Harur Fresh Mart; run seed-manage-orders.ts first");
+  if (orders.length === 0) throw new Error("No delivered orders at Template Store; run seed-manage-orders.ts first");
 
   await seedStoreRatings(store.id, orders);
   await seedReviews(store.id, orders, owner.id);
