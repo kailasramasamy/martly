@@ -42,9 +42,10 @@ export const storeWalk = {
   addedHere: (n: number) => `+${n} from this aisle`,
   endcapTitle: "End of aisle offers",
   endcapSubtitle: "Deals from the rest of this department",
-  searchAisle: "Search in this aisle",
   searchIn: (name: string) => `Search in ${name}`,
-  searchInHint: (name: string) => `Type what you need from ${name}. Results stay in this aisle.`,
+  clearSearch: "Clear the search",
+  noShelfMatches: (q: string) => `No "${q}" on these shelves.`,
+  searchWholeStore: "Search the whole store",
   aisleFailed: "Couldn't load this aisle.",
   // The aisle map
   mapTitle: "Your walk",

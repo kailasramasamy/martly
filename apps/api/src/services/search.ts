@@ -34,21 +34,31 @@ const OWN_POPULARITY = 106;
 
 /**
  * What a search runs over. Shoppers see a store's listed, active products; admins also see unlisted listings
- * (store scope) or the whole catalog (no storeId), including inactive products. A collection narrows it to its items.
+ * (store scope) or the whole catalog (no storeId), including inactive products. A collection narrows it to its items, an
+ * aisle to its shelves (the store walk's search: a category, optionally one subcategory and one brand).
  */
 interface SearchScope {
   storeId?: string;
   listedOnly?: boolean;
   collectionId?: string;
+  aisle?: AisleScope;
   /** What the store promotes: own brands and unbranded staples (OWN_POPULARITY), featured brands (FEATURED_POPULARITY) */
   boost?: BrandBoost;
 }
 
-const inScope = ({ storeId, listedOnly, collectionId }: SearchScope) => {
+export type AisleScope = { categoryId: string; subcategoryId?: string; brandId?: string };
+
+const inScope = ({ storeId, listedOnly, collectionId, aisle }: SearchScope) => {
   const store = inStoreScope({ storeId, listedOnly });
-  return collectionId
-    ? Prisma.sql`${store} AND EXISTS (SELECT 1 FROM collection_items ci WHERE ci.collection_id = ${collectionId} AND ci.product_id = p.id)`
-    : store;
+  if (collectionId) {
+    return Prisma.sql`${store} AND EXISTS (SELECT 1 FROM collection_items ci WHERE ci.collection_id = ${collectionId} AND ci.product_id = p.id)`;
+  }
+  if (aisle) {
+    return Prisma.sql`${store} AND EXISTS (SELECT 1 FROM subcategories sc WHERE sc.id = p.subcategory_id AND sc.category_id = ${aisle.categoryId})
+      AND (${aisle.subcategoryId ?? null}::text IS NULL OR p.subcategory_id = ${aisle.subcategoryId ?? null})
+      AND (${aisle.brandId ?? null}::text IS NULL OR p.brand_id = ${aisle.brandId ?? null})`;
+  }
+  return store;
 };
 
 const inStoreScope = ({ storeId, listedOnly }: SearchScope) => {
@@ -96,6 +106,11 @@ export async function searchProducts(
 /** Same ranking within one collection's products, for a campaign screen's search; no LLM expansion as it runs per keystroke */
 export function searchCollectionProducts(prisma: PrismaClient, storeId: string, collectionId: string, query: string): Promise<SearchResult> {
   return runSearch(prisma, { storeId, listedOnly: true, collectionId }, query, { semantic: false, limit: MAX_KEYWORD_RESULTS });
+}
+
+/** Same ranking within a store walk's shelves (an aisle, its picked subcategory and brand); no LLM expansion, per keystroke */
+export function searchAisleProducts(prisma: PrismaClient, storeId: string, aisle: AisleScope, query: string): Promise<SearchResult> {
+  return runSearch(prisma, { storeId, listedOnly: true, aisle }, query, { semantic: false, limit: MAX_KEYWORD_RESULTS });
 }
 
 /** Same ranking for the Manage persona: unlisted listings / whole catalog, no LLM expansion, deeper result list */

@@ -56,9 +56,8 @@ function Message({ text, onRetry }: { text: string; onRetry?: () => void }) {
   );
 }
 
-// While walking, the app bar carries the department and the aisle count, with search (inside this aisle) and the Map
-// on its right
-function useAisleHeader(department: string, position: string, onMap: () => void, onSearch: () => void) {
+// While walking, the app bar carries the department and the aisle count, with the Map on its right
+function useAisleHeader(department: string, position: string, onMap: () => void) {
   const navigation = useNavigation();
   // iOS doesn't bound a custom header title, so it gets the width the Back button and the buttons on the right leave
   const [actionsWidth, setActionsWidth] = useState(0);
@@ -77,9 +76,6 @@ function useAisleHeader(department: string, position: string, onMap: () => void,
       ),
       headerRight: () => (
         <View style={styles.headerActions} onLayout={(e) => setActionsWidth(e.nativeEvent.layout.width)}>
-          <TouchableOpacity style={styles.searchButton} onPress={onSearch} hitSlop={4} accessibilityRole="button" accessibilityLabel={t.searchAisle}>
-            <Ionicons name="search" size={18} color={colors.text} />
-          </TouchableOpacity>
           <TouchableOpacity style={styles.mapButton} onPress={onMap} accessibilityRole="button" hitSlop={{ top: 6, bottom: 6 }}>
             <Ionicons name="map-outline" size={16} color={colors.text} />
             <Text style={styles.mapText}>{t.map}</Text>
@@ -87,7 +83,7 @@ function useAisleHeader(department: string, position: string, onMap: () => void,
         </View>
       ),
     });
-  }, [navigation, department, position, onMap, onSearch, t, actionsWidth, titleWidth]);
+  }, [navigation, department, position, onMap, t, actionsWidth, titleWidth]);
   // Back to the plain title once the walk leaves the aisles
   useEffect(() => () => navigation.setOptions({ headerTitle: nav.storeWalk, headerTitleAlign: undefined, headerRight: undefined }), [navigation, nav]);
 }
@@ -136,13 +132,7 @@ function Aisles({ walk, onBack, onFinish, forList }: { walk: StoreWalk; onBack: 
     router.navigate("/(tabs)/cart");
   };
   const openMap = useCallback(() => setMapOpen(true), []);
-  const aisleId = walk.stop?.categoryId;
-  const aisleName = walk.stop ? getLocalizedName(walk.stop) : "";
-  const searchAisle = useCallback(
-    () => aisleId && router.push({ pathname: "/search", params: { within: aisleId, withinName: aisleName } }),
-    [aisleId, aisleName],
-  );
-  useAisleHeader(getLocalizedName(department), t.aisleOf(walk.index + 1, walk.stops.length), openMap, searchAisle);
+  useAisleHeader(getLocalizedName(department), t.aisleOf(walk.index + 1, walk.stops.length), openMap);
   useAisleBack(onBack);
   const near = (stop: StoreWalkStop | undefined, onPress: () => void) =>
     stop ? { name: getLocalizedName(stop), label: getLocalizedName(stop), onPress } : null;
@@ -215,7 +205,6 @@ const styles = StyleSheet.create({
   position: { fontFamily: fonts.bold, fontSize: 13, color: colors.textSecondary },
   backButton: { width: 44, height: 44, alignItems: "center", justifyContent: "center" },
   headerActions: { flexDirection: "row", alignItems: "center", gap: 6 },
-  searchButton: { width: 36, height: 36, borderRadius: 18, borderWidth: 1, borderColor: colors.border, alignItems: "center", justifyContent: "center" },
   mapButton: {
     height: 36, paddingHorizontal: 12, borderRadius: 18, borderWidth: 1, borderColor: colors.border,
     flexDirection: "row", alignItems: "center", gap: 6,

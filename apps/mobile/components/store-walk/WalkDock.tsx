@@ -97,7 +97,7 @@ export function WalkDock({ addedHere, basket, next, onBag, onNext, onCart, forLi
           {next?.imageUrl && <View style={styles.nextPicture}><Image source={{ uri: next.imageUrl }} style={styles.nextImage} /></View>}
           <View style={styles.nextTextWrap}>
             {next && <Text style={styles.nextKicker}>{t.nextKicker}</Text>}
-            <Text style={styles.nextText} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75}>{next ? next.name : t.lastAisle}</Text>
+            <Text style={styles.nextText} numberOfLines={2}>{next ? next.name : t.lastAisle}</Text>
           </View>
           <Ionicons name="arrow-forward" size={18} color="#ffffff" />
         </TouchableOpacity>
@@ -118,13 +118,13 @@ const styles = StyleSheet.create({
   chip: { position: "absolute", left: 4, top: -6, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 10, backgroundColor: colors.primary },
   chipText: { fontFamily: fonts.extrabold, fontSize: 12, color: "#ffffff" },
   buttons: { flexDirection: "row", gap: 10 },
-  button: { height: 56, borderRadius: 14, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, paddingHorizontal: 12 },
+  button: { minHeight: 56, paddingVertical: 6, borderRadius: 14, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, paddingHorizontal: 12 },
   bag: { flex: 1, borderWidth: 1.5, borderColor: "#cbd5e1", backgroundColor: colors.background },
   bagButtonText: { fontFamily: fonts.extrabold, fontSize: 14, color: colors.text, textAlign: "center" },
   next: { flex: 1.5, backgroundColor: colors.primary, paddingLeft: 6 },
   nextPicture: { width: 44, height: 44, borderRadius: 10, backgroundColor: "#ffffff", padding: 3 },
   nextImage: { flex: 1, resizeMode: "contain" },
   nextTextWrap: { flex: 1 },
-  nextKicker: { fontFamily: fonts.bold, fontSize: 11, color: "#99f6e4" },
-  nextText: { fontFamily: fonts.extrabold, fontSize: 15, color: "#ffffff" },
+  nextKicker: { fontFamily: fonts.bold, fontSize: 13, color: "#99f6e4" },
+  nextText: { fontFamily: fonts.extrabold, fontSize: 15, lineHeight: 20, color: "#ffffff" },
 });

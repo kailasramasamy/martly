@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactElement } from "react";
-import { Animated, FlatList, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Animated, FlatList, StyleSheet, Text, TouchableOpacity, useWindowDimensions, View } from "react-native";
 import { Loader } from "../Loader";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -15,29 +15,35 @@ import { AisleSign } from "./AisleSign";
 import { AisleWall, type NearAisle } from "./AisleWall";
 import { EndCap } from "./EndCap";
 import { Shelf, useShelves } from "./ShelfProducts";
+import { NoShelfMatches, ShelfSearch } from "./ShelfSearch";
 import { SubcategoryRail } from "./SubcategoryRail";
 import { useReduceMotion } from "../../lib/use-reduce-motion";
 
 type Stop = { categoryId: string; name: string; translations: Record<string, { name?: string }> | null; imageUrl: string | null };
 
-// The products on show: the aisle's best sellers, or one subcategory's and/or one brand's once the shopper picks them.
-// Picking a subcategory clears the brand, as the brands on offer change with it
+type Picked = { subcategoryId: string | null; brandId: string | null; q: string };
+const NOTHING_PICKED: Picked = { subcategoryId: null, brandId: null, q: "" };
+
+// The products on show: the aisle's best sellers, or one subcategory's and/or one brand's once the shopper picks them,
+// or what a search finds on those shelves. Picking a subcategory clears the brand, as the brands on offer change with
+// it; a search stays on
 function useShelf(aisle: WalkAisle | "error" | undefined, categoryId: string) {
   const { selectedStore } = useStore();
-  const [picked, setPicked] = useState<{ subcategoryId: string | null; brandId: string | null }>({ subcategoryId: null, brandId: null });
+  const [picked, setPicked] = useState<Picked>(NOTHING_PICKED);
   // The last narrowed answer, kept while the next loads so the brand row doesn't jump
   const [narrowed, setNarrowed] = useState<{ key: string; aisle: WalkAisle } | null>(null);
-  const filtered = !!(picked.subcategoryId || picked.brandId);
-  const key = `${picked.subcategoryId}|${picked.brandId}`;
+  const filtered = !!(picked.subcategoryId || picked.brandId || picked.q);
+  const key = `${picked.subcategoryId}|${picked.brandId}|${picked.q}`;
   useEffect(() => {
     if (!filtered || !selectedStore) return;
     const query = new URLSearchParams();
     if (picked.subcategoryId) query.set("subcategoryId", picked.subcategoryId);
     if (picked.brandId) query.set("brandId", picked.brandId);
+    if (picked.q) query.set("q", picked.q);
     let live = true;
     api.get<WalkAisle>(`/api/v1/store-walk/${selectedStore.id}/aisles/${categoryId}?${query}`)
       .then((res) => live && setNarrowed({ key, aisle: res.data }))
-      .catch(() => live && setPicked({ subcategoryId: null, brandId: null }));
+      .catch(() => live && setPicked(NOTHING_PICKED));
     return () => { live = false; };
   }, [picked, key, filtered, categoryId, selectedStore]);
   const whole = aisle && aisle !== "error" ? aisle : null;
@@ -46,8 +52,9 @@ function useShelf(aisle: WalkAisle | "error" | undefined, categoryId: string) {
   const brands = (picked.subcategoryId ? narrowed?.aisle.brands : whole?.brands) ?? whole?.brands ?? [];
   return {
     ...picked, brands,
-    pickSubcategory: (subcategoryId: string | null) => setPicked({ subcategoryId, brandId: null }),
+    pickSubcategory: (subcategoryId: string | null) => setPicked((p) => ({ ...p, subcategoryId, brandId: null })),
     pickBrand: (brandId: string | null) => setPicked((p) => ({ ...p, brandId })),
+    search: (q: string) => setPicked((p) => ({ ...p, q })),
     products: filtered ? ready?.popular ?? null : whole?.popular ?? [],
     loading: filtered && ready === null,
   };
@@ -137,12 +144,25 @@ interface ShelvesProps { aisle: WalkAisle; stop: Stop; sign: ReactElement; shelf
 
 function AisleShelves({ aisle, stop, sign, shelf }: ShelvesProps) {
   const t = useStrings("storeWalk");
+  const list = useRef<FlatList<StoreProduct[]>>(null);
+  const searchY = useRef(0);
+  const [searching, setSearching] = useState(false);
+  const { height } = useWindowDimensions();
+  const searchOpened = (open: boolean) => {
+    setSearching(open);
+    if (open) list.current?.scrollToOffset({ offset: searchY.current, animated: true });
+  };
   const { getLocalizedName } = useLanguage();
   const { shelves, variantsOf } = useShelves(shelf.products ?? []);
   const picked = aisle.subcategories.find((sc) => sc.id === shelf.subcategoryId);
+  const brand = shelf.brands.find((b) => b.id === shelf.brandId);
+  const scope = [picked ? getLocalizedName(picked) : getLocalizedName(stop), brand?.name].filter(Boolean).join(" · ");
   return (
     <FlatList
-      data={shelves} keyExtractor={(row) => row[0].product.id} contentContainerStyle={styles.grid}
+      ref={list} data={shelves} keyExtractor={(row) => row[0].product.id}
+      // While searching there's room below to scroll the field to the top, even when few products match
+      contentContainerStyle={[styles.grid, searching && { paddingBottom: height }]}
+      keyboardDismissMode="on-drag" keyboardShouldPersistTaps="handled"
       renderItem={({ item }) => <Shelf items={item} variantsOf={variantsOf} />}
       ListHeaderComponent={
         <View style={styles.header}>
@@ -157,15 +177,21 @@ function AisleShelves({ aisle, stop, sign, shelf }: ShelvesProps) {
               onChange={(ids) => shelf.pickBrand(ids[0] ?? null)}
             />
           </View>
-          <Text style={styles.popular}>{picked ? getLocalizedName(picked) : t.popular}</Text>
+          <View onLayout={(e) => { searchY.current = e.nativeEvent.layout.y; }}>
+            <ShelfSearch
+              title={picked ? getLocalizedName(picked) : t.popular} scope={scope} onOpenChange={searchOpened}
+              onQuery={shelf.search}
+            />
+          </View>
           {shelf.loading && <Loader />}
         </View>
       }
+      ListEmptyComponent={shelf.q && !shelf.loading ? <NoShelfMatches query={shelf.q} /> : null}
       ListFooterComponent={
         <View>
           <SeeAll
             categoryId={picked?.id ?? aisle.category.id} stocked={picked?.stocked ?? aisle.stocked}
-            brand={shelf.brands.find((b) => b.id === shelf.brandId)}
+            brand={brand}
           />
           <EndCap deals={aisle.endcap} />
         </View>
@@ -184,7 +210,6 @@ const styles = StyleSheet.create({
   dueHeader: { flexDirection: "row", alignItems: "center", gap: 6, paddingHorizontal: 12, marginBottom: 4 },
   dueTitle: { fontFamily: fonts.extrabold, fontSize: 14, color: "#78350f" },
   dueHint: { flex: 1, fontFamily: fonts.semibold, fontSize: 12, color: "#92400e" },
-  popular: { fontFamily: fonts.extrabold, fontSize: 15, color: colors.text },
   seeAll: {
     flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 4, height: 48, marginTop: 16,
     borderRadius: 12, borderWidth: 1, borderStyle: "dashed", borderColor: "#5eead4", backgroundColor: "#f0fdfa",

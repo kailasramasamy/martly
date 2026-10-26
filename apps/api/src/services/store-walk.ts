@@ -3,6 +3,7 @@ import type { StoreWalkRouteInput } from "@martly/shared/schemas";
 import type { PrismaClient } from "../../generated/prisma/client.js";
 import { recentStoreSales } from "./home/most-bought.js";
 import { dueInStock } from "./reorder.js";
+import { searchAisleProducts } from "./search.js";
 import { decorateStoreProducts, storeProductInclude } from "./store-product-view.js";
 
 const DUE_LIMIT = 8;
@@ -12,6 +13,9 @@ const SUBCATEGORY_LIMIT = 9;
 // Candidates read before the per-aisle spread, so a dal aisle isn't eight toor dals
 const POPULAR_CANDIDATES = 40;
 const POPULAR_PER_SUBCATEGORY = 2;
+// A search on the shelves: eight full rows of matches, read from the ranked list's head
+const SEARCH_LIMIT = 24;
+const SEARCH_CANDIDATES = 60;
 
 type Translations = StoreWalkStop["translations"];
 type AisleRow = {
@@ -146,7 +150,24 @@ export async function walkRoute(prisma: PrismaClient, storeId: string, userId: s
   };
 }
 
-type AisleFilter = { categoryId: string; subcategoryId?: string; brandId?: string };
+type AisleFilter = { categoryId: string; subcategoryId?: string; brandId?: string; q?: string };
+
+// What a search finds on the shelves on show, in the store search's ranking, each product as its best-stocked size
+async function searchedIn(prisma: PrismaClient, storeId: string, { q, ...aisle }: AisleFilter) {
+  const ranked = (await searchAisleProducts(prisma, storeId, aisle, q!)).productIds.slice(0, SEARCH_CANDIDATES);
+  const listings = await prisma.storeProduct.findMany({
+    where: { storeId, isActive: true, productId: { in: ranked }, product: { isActive: true } },
+    include: storeProductInclude,
+  });
+  const best = new Map<string, (typeof listings)[number]>();
+  for (const sp of listings) {
+    const available = sp.stock - sp.reservedStock;
+    const held = best.get(sp.productId);
+    if (available > 0 && (!held || available > held.stock - held.reservedStock)) best.set(sp.productId, sp);
+  }
+  const picked = ranked.flatMap((id) => best.get(id) ?? []).slice(0, SEARCH_LIMIT);
+  return decorateStoreProducts(prisma, picked);
+}
 
 // The aisle's best sellers by 30-day units, then brand popularity and stock, each as its best-stocked size. Across the
 // whole aisle they're spread over its subcategories; within one subcategory or brand they're simply its best
@@ -253,7 +274,7 @@ export async function walkAisle(prisma: PrismaClient, storeId: string, userId: s
   const dueRows = dueAll.filter((sp) => categoryOf(sp) === filter.categoryId);
   const [due, popular, endcap, brands] = await Promise.all([
     decorateStoreProducts(prisma, dueRows),
-    popularIn(prisma, storeId, filter, dueRows.map((sp) => sp.productId)),
+    filter.q ? searchedIn(prisma, storeId, filter) : popularIn(prisma, storeId, filter, dueRows.map((sp) => sp.productId)),
     endcapDeals(prisma, storeId, category.departmentId, category.id),
     stockedBrands(prisma, storeId, filter),
   ]);
