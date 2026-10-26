@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { sectionSourceSchema } from "./storefront.js";
 import { BULK_STATUSES } from "../order-flow/index.js";
 import { storeSlugSchema } from "./towns.js";
 import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, StorePostKind, Difficulty, SearchSortBy, SearchEventType, CartBuilderSource, GLOSSARY_LANGUAGES, SUPPORTED_LANGUAGES, CatalogDraftStatus, Permission, StockCountStatus, ReturnRemedy, ReturnMethod, RefuseReason } from "../constants/index.js";
@@ -480,6 +481,8 @@ export const createOrderSchema = z.object({
     z.object({
       storeProductId: z.string().uuid(),
       quantity: z.number().int().positive(),
+      /** The Home section the shopper added it from */
+      source: sectionSourceSchema.optional(),
     }),
   ),
 }).refine(
@@ -1710,3 +1713,7 @@ export const speechTranscribeSchema = z.object({
 });
 export * from "./onboarding.js";
 export * from "./towns.js";
+export * from "./offers.js";
+export * from "./store-resolve.js";
+export * from "./web.js";
+export * from "./storefront.js";

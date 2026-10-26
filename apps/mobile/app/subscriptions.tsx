@@ -21,6 +21,7 @@ import { useStrings } from "../lib/i18n/use-strings";
 import { strings } from "../lib/i18n";
 import { formatDate } from "../lib/i18n/format";
 import { useLanguage } from "../lib/language-context";
+import { StoreMark } from "../components/StoreMark";
 
 const FREQUENCY_CONFIG: Record<string, { bg: string; color: string; icon: string }> = {
   DAILY: { bg: "#dbeafe", color: "#2563eb", icon: "refresh" },
@@ -182,9 +183,11 @@ function SubscriptionsScreen() {
         {/* Top row: Store name + Status */}
         <View style={styles.cardHeader}>
           <View style={styles.storeRow}>
-            <View style={styles.storeIconWrap}>
-              <Ionicons name="storefront" size={13} color={colors.primary} />
-            </View>
+            <StoreMark storeId={sub.store?.id} size={24} fallback={(
+              <View style={styles.storeIconWrap}>
+                <Ionicons name="storefront" size={13} color={colors.primary} />
+              </View>
+            )} />
             <Text style={styles.storeName} numberOfLines={1}>
               {sub.store ? getLocalizedName(sub.store) : t.list.store}
             </Text>

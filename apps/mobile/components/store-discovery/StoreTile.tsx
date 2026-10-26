@@ -37,7 +37,7 @@ export function StoreTile({ store, active, muted, onPress }: StoreTileProps) {
       accessibilityLabel={brand.name}
     >
       <View style={[styles.logoWell, { backgroundColor: brand.tint }]}>
-        <StoreLogo store={store} brand={brand} size={40} />
+        <StoreLogo store={store} brand={brand} size={40} maxWidth={TILE_WIDTH - 28} />
         {(store.promoImages?.length ?? 0) > 0 && <View style={styles.offerDot} />}
       </View>
       <Text style={styles.name} numberOfLines={2}>{brand.name}</Text>

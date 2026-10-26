@@ -21,6 +21,7 @@ import { RecentOrdersCard, TopProductsCard } from "../../components/manage/today
 import { useTodayData } from "../../components/manage/today/use-today-data";
 import { MarketingPlanStrip } from "../../components/manage/today/MarketingPlanStrip";
 import { PayoutCard } from "../../components/manage/today/PayoutCard";
+import { StorefrontCard } from "../../components/manage/today/StorefrontCard";
 import { useStatusCounts } from "../../components/manage/orders/use-status-counts";
 
 function Greeting({ name }: { name?: string }) {
@@ -83,6 +84,7 @@ function TodayDashboard() {
           {showPayout && <PayoutCard key={`payout-${pulls}`} />}
           <TodayKpis stats={stats} />
           {showMarketing && <MarketingPlanStrip />}
+          {storeId && can(user, "storefront") && <StorefrontCard key={`storefront-${storeId}-${pulls}`} storeId={storeId} />}
           <SectionCard title="Live queue" action={{ label: "All orders", onPress: () => openOrders() }}>
             <LiveQueue counts={counts} onSelect={openOrders} />
           </SectionCard>

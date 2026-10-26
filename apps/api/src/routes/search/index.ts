@@ -5,23 +5,7 @@ import { authenticateOptional } from "../../middleware/auth.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { buildSearchLanding } from "../../services/search-landing.js";
 import { suggestSearches } from "../../services/search-suggest.js";
-
-const LOG_LIMIT = 30;
-const LOG_WINDOW_MS = 60_000;
-const logBuckets = new Map<string, { count: number; resetAt: number }>();
-
-// Caps how fast one client can write search logs, so trending can't be stuffed
-function allowLog(key: string): boolean {
-  const now = Date.now();
-  const bucket = logBuckets.get(key);
-  if (!bucket || now > bucket.resetAt) {
-    if (logBuckets.size > 10_000) for (const [k, b] of logBuckets) if (now > b.resetAt) logBuckets.delete(k);
-    logBuckets.set(key, { count: 1, resetAt: now + LOG_WINDOW_MS });
-    return true;
-  }
-  bucket.count += 1;
-  return bucket.count <= LOG_LIMIT;
-}
+import { allowSearchLog, logSearch, recordSearchEvent } from "../../services/search-log.js";
 
 async function findActiveStore(app: FastifyInstance, storeId: string) {
   return app.prisma.store.findFirst({ where: { id: storeId, status: "ACTIVE" }, select: { id: true, organizationId: true } });
@@ -48,13 +32,10 @@ export async function searchRoutes(app: FastifyInstance) {
   app.post("/log", { preHandler: [authenticateOptional] }, async (request, reply) => {
     const body = searchLogSchema.parse(request.body);
     const user = getOrgUser(request);
-    if (!allowLog(user.sub || request.ip)) return reply.tooManyRequests("Too many searches");
+    if (!allowSearchLog(user.sub || request.ip)) return reply.tooManyRequests("Too many searches");
     const store = await findActiveStore(app, body.storeId);
     if (!store) return reply.notFound("Store not found");
-    const log = await app.prisma.searchLog.create({
-      data: { storeId: store.id, userId: user.sub || null, query: body.query.replace(/\s+/g, " "), resultCount: body.resultCount },
-      select: { id: true },
-    });
+    const log = await logSearch(app.prisma, { storeId: store.id, userId: user.sub || null, query: body.query, resultCount: body.resultCount });
     return reply.code(201).send({ success: true, data: log } satisfies ApiResponse<typeof log>);
   });
 
@@ -62,15 +43,10 @@ export async function searchRoutes(app: FastifyInstance) {
   app.post("/event", { preHandler: [authenticateOptional] }, async (request, reply) => {
     const body = searchEventSchema.parse(request.body);
     const user = getOrgUser(request);
-    if (!allowLog(user.sub || request.ip)) return reply.tooManyRequests("Too many events");
-    const [log, product] = await Promise.all([
-      app.prisma.searchLog.findUnique({ where: { id: body.searchLogId }, select: { userId: true } }),
-      app.prisma.product.findUnique({ where: { id: body.productId }, select: { id: true } }),
-    ]);
-    if (!log || (log.userId && log.userId !== user.sub)) return reply.notFound("Search not found");
-    if (!product) return reply.notFound("Product not found");
-    // One event per search, product and type: re-tapping the same result doesn't count twice
-    await app.prisma.searchEvent.createMany({ data: [body], skipDuplicates: true });
+    if (!allowSearchLog(user.sub || request.ip)) return reply.tooManyRequests("Too many events");
+    const missing = await recordSearchEvent(app.prisma, body, user.sub || null);
+    if (missing === "search") return reply.notFound("Search not found");
+    if (missing === "product") return reply.notFound("Product not found");
     return reply.code(201).send({ success: true, data: null });
   });
 }

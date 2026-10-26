@@ -1,4 +1,4 @@
-import type { Prisma } from "../../generated/prisma/client.js";
+import type { Prisma, PrismaClient } from "../../generated/prisma/client.js";
 import type { JwtUser } from "../types/jwt.js";
 
 type Db = Pick<Prisma.TransactionClient, "brand">;
@@ -32,4 +32,17 @@ export async function assertBrandUsable(db: Db, brandId: string | null | undefin
   if (!brand || (brand.organizationId !== null && brand.organizationId !== organizationId)) {
     throw Object.assign(new Error("Unknown brand"), { statusCode: 400 });
   }
+}
+
+/** A store's brands for its brand rail: themed brands first, then the ones it carries most of */
+export function storeBrands(prisma: PrismaClient, storeId: string, limit: number) {
+  return prisma.$queryRaw<{ id: string; name: string; imageUrl: string | null; themeColor: string | null; productCount: number }[]>`
+    SELECT b.id, b.name, b.image_url AS "imageUrl", b.theme_color AS "themeColor", COUNT(DISTINCT p.id)::int AS "productCount"
+    FROM store_products sp
+    JOIN products p ON p.id = sp.product_id
+    JOIN brands b ON b.id = p.brand_id
+    WHERE sp.store_id = ${storeId} AND sp.is_active = true AND p.is_active = true
+    GROUP BY b.id
+    ORDER BY (b.theme_color IS NOT NULL) DESC, "productCount" DESC, b.name ASC
+    LIMIT ${limit}`;
 }

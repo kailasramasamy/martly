@@ -1,8 +1,9 @@
 import { storePosts } from "../../store-voice/posts.js";
 import { sectionBase, type SectionResolver } from "../types.js";
 
-// Product tiles under the post on Home; the shop's board shows them all
-const HOME_TILES = 3;
+// Builds before the scrolling row lay the post's products out in one fixed row, so `products` stays at what fits
+// there; the rest go in `moreProducts` for the row that scrolls
+const FIXED_ROW_TILES = 3;
 
 /** The owner's newest live post, with how many more are live this week; hidden while there's none */
 export const storePostsSection: SectionResolver = async (ctx, entry) => {
@@ -13,6 +14,9 @@ export const storePostsSection: SectionResolver = async (ctx, entry) => {
   return {
     ...sectionBase(entry),
     type: "STORE_POSTS",
-    data: { post: { ...latest, products: latest.products.slice(0, HOME_TILES) }, more: rest.length, logoUrl: store?.logoUrl ?? null },
+    data: {
+      post: { ...latest, products: latest.products.slice(0, FIXED_ROW_TILES), moreProducts: latest.products.slice(FIXED_ROW_TILES) },
+      more: rest.length, logoUrl: store?.logoUrl ?? null,
+    },
   };
 };

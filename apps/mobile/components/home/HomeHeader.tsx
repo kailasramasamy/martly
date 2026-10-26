@@ -17,6 +17,8 @@ import type { Store } from "../../lib/types";
 interface Props {
   store: Store | null;
   userArea: string | null;
+  /** The shopper's location is known and the store doesn't deliver there */
+  pickupOnly: boolean;
   onPickStore: () => void;
   /** Festive art runs up behind the header: it floats over the list, see-through, in the festival's title colour */
   festive?: HomeTheme | null;
@@ -37,7 +39,7 @@ function useFestiveBand(collapsed: boolean) {
   return band;
 }
 
-export function HomeHeader({ store, userArea, onPickStore, festive, collapsed = false, onLayout, searchHints, searchHintTranslations }: Props) {
+export function HomeHeader({ store, userArea, pickupOnly, onPickStore, festive, collapsed = false, onLayout, searchHints, searchHintTranslations }: Props) {
   const t = useStrings("home");
   const requireSignIn = useRequireSignIn();
   const insets = useSafeAreaInsets();
@@ -51,7 +53,7 @@ export function HomeHeader({ store, userArea, onPickStore, festive, collapsed = 
       {festive && <Animated.View style={[StyleSheet.absoluteFill, { backgroundColor: festive.background, opacity: band }]} pointerEvents="none" />}
       {!collapsed && (
       <View style={[styles.headerRow, !store && styles.headerRowAlone]}>
-        <HomeHeaderLocation store={store} userArea={userArea} onPress={onPickStore} ink={festive?.title} />
+        <HomeHeaderLocation store={store} userArea={userArea} pickupOnly={pickupOnly} onPress={onPickStore} ink={festive?.title} />
         {!store && !isAuthenticated ? (
           // Before a store is chosen there's nothing to browse yet; returning customers can still sign in
           <TouchableOpacity style={styles.signIn} onPress={() => requireSignIn(() => {}, { title: t.welcomeBack, subtitle: t.signInWithPhone })} accessibilityRole="button">

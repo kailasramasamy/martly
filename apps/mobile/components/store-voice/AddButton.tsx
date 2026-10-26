@@ -9,7 +9,8 @@ import type { StoreProduct } from "../../lib/types";
 const HIT = { top: 8, bottom: 8, left: 6, right: 6 };
 
 /** A post's product into the cart: "+" (or ADD when `wide`), then − n + once it's in */
-export function AddButton({ sp, wide, tint }: { sp: StoreProduct; wide?: boolean; tint?: string }) {
+/** `fill` stretches the stepper across its row, for a narrow tile with no room beside it */
+export function AddButton({ sp, wide, tint, fill }: { sp: StoreProduct; wide?: boolean; tint?: string; fill?: boolean }) {
   const t = useStrings("storeVoice");
   const tc = useStrings("catalog");
   const { getLocalizedName } = useLanguage();
@@ -17,7 +18,7 @@ export function AddButton({ sp, wide, tint }: { sp: StoreProduct; wide?: boolean
   const quantity = actions.cartQuantityMap.get(sp.id) ?? 0;
   if (quantity > 0) {
     return (
-      <View style={[styles.stepper, tint ? { backgroundColor: tint } : null]}>
+      <View style={[styles.stepper, fill && styles.filled, tint ? { backgroundColor: tint } : null]}>
         <TouchableOpacity style={styles.step} onPress={() => actions.updateQuantity(sp.id, quantity - 1)} hitSlop={HIT} accessibilityLabel="−">
           <Ionicons name="remove" size={15} color="#ffffff" />
         </TouchableOpacity>
@@ -46,6 +47,7 @@ const styles = StyleSheet.create({
   wide: { height: 34, minWidth: 68, paddingHorizontal: 14, borderRadius: 9, borderWidth: 1.5, borderColor: colors.primary, backgroundColor: "#ffffff", alignItems: "center", justifyContent: "center" },
   wideText: { fontFamily: fonts.extrabold, fontSize: 13, color: colors.primary },
   stepper: { flexDirection: "row", alignItems: "center", height: 32, borderRadius: 16, backgroundColor: colors.primary },
+  filled: { alignSelf: "stretch", justifyContent: "space-between" },
   step: { width: 28, height: 32, alignItems: "center", justifyContent: "center" },
   count: { minWidth: 16, textAlign: "center", fontFamily: fonts.extrabold, fontSize: 13, color: "#ffffff", fontVariant: ["tabular-nums"] },
 });

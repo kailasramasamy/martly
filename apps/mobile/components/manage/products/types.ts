@@ -70,6 +70,8 @@ export interface StoreMapping {
   reservedStock: number;
   isActive: boolean;
   isFeatured: boolean;
+  offerBuyQty: number | null;
+  offerGetQty: number | null;
   store: { id: string; name: string };
   variant: { id: string; name: string };
 }

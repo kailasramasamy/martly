@@ -526,7 +526,7 @@ export interface SubscriptionItem {
 }
 
 /** A store as other records carry it: enough to show its name in the app language */
-export type StoreLabel = Pick<Store, "id" | "name" | "translations">;
+export type StoreLabel = Pick<Store, "id" | "name" | "translations" | "logoUrl">;
 
 export interface Subscription {
   id: string;

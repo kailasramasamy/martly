@@ -63,9 +63,11 @@ const MODULE_GROUPS: ModuleGroup[] = [
   {
     title: "Marketing",
     modules: [
+      { resource: "storefront", label: "Storefront health", icon: "storefront-outline", href: "/manage/storefront" },
       { resource: "coupons", label: "Coupons", icon: "ticket-outline", href: "/manage/coupons" },
       { resource: "promos", label: "Promotions", icon: "megaphone-outline", href: "/manage/promos" },
       { resource: "home-layout", label: "Home layout", icon: "grid-outline", href: "/manage/home-layout" },
+      { resource: "offers", label: "Offers", icon: "flash-outline", href: "/manage/offers" },
       { resource: "store-posts", label: "Shop posts", icon: "chatbubble-ellipses-outline", href: "/manage/store-posts" },
       { resource: "festival-events", label: "Festival calendar", icon: "calendar-outline", href: "/manage/festival-events" },
       { resource: "notification-send", label: "Push notifications", icon: "notifications-outline", href: "/manage/notification-send" },

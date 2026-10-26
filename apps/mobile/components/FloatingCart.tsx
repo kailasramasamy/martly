@@ -6,10 +6,11 @@ import { useCart } from "../lib/cart-context";
 import { useBasketMode } from "../lib/basket-mode-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { useStrings } from "../lib/i18n/use-strings";
+import { StoreMark } from "./StoreMark";
 
 // aboveTabBar: rendered inside a tab screen, where the tab bar already covers the bottom safe area
 export function FloatingCart({ aboveTabBar = false }: { aboveTabBar?: boolean }) {
-  const { itemCount, totalAmount, storeName } = useCart();
+  const { itemCount, totalAmount, storeName, storeId } = useCart();
   const { isBasketMode, itemCount: basketItemCount, exitBasketMode } = useBasketMode();
   const insets = useSafeAreaInsets();
   const t = useStrings("checkout").floating;
@@ -63,7 +64,10 @@ export function FloatingCart({ aboveTabBar = false }: { aboveTabBar?: boolean })
             <Text style={styles.badgeText}>{itemCount > 9 ? "9+" : itemCount}</Text>
           </View>
           <View style={styles.info}>
-            <Text style={styles.storeName} numberOfLines={1}>{storeName}</Text>
+            <View style={styles.storeRow}>
+              <StoreMark storeId={storeId} size={18} />
+              <Text style={styles.storeName} numberOfLines={1}>{storeName}</Text>
+            </View>
             <Text style={styles.total}>{"\u20B9"}{totalAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</Text>
           </View>
         </View>
@@ -127,7 +131,9 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     flex: 1,
   },
+  storeRow: { flexDirection: "row", alignItems: "center", gap: 6 },
   storeName: {
+    flexShrink: 1,
     fontSize: 11,
     color: "rgba(255,255,255,0.8)",
     fontWeight: "500",

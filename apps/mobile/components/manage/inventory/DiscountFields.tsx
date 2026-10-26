@@ -2,7 +2,7 @@ import { View } from "react-native";
 import { TextField } from "../ui/TextField";
 import { DateField } from "../ui/DateField";
 import { SegmentedTabs } from "../ui/SegmentedTabs";
-import type { DiscountMode, StoreProductDraft } from "./draft";
+import type { DiscountDraft, DiscountMode } from "./draft";
 
 const MODES: { value: DiscountMode; label: string }[] = [
   { value: "NONE", label: "No discount" },
@@ -11,8 +11,8 @@ const MODES: { value: DiscountMode; label: string }[] = [
 ];
 
 interface DiscountFieldsProps {
-  draft: StoreProductDraft;
-  onChange: (patch: Partial<StoreProductDraft>) => void;
+  draft: DiscountDraft;
+  onChange: (patch: Partial<DiscountDraft>) => void;
   /** Start/end dates are only shown in the full editor */
   withDates?: boolean;
 }

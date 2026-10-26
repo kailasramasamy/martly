@@ -13,23 +13,16 @@ import { HERO_CARD_PADDING, HeroCardFrame, HeroCardHead, HeroCardLink, HeroProdu
 
 type Card = HeroCard<StoreProduct>;
 const FESTIVAL_TILES = 6;
-const SPECIAL_AISLES = 4;
+// A store special shows the same rows as the other product cards, each product once
+const SPECIAL_PRODUCTS = 4;
 
-// Aisles have no art of their own, so each is pictured by the range's first product in it
-function aisleTiles(collection: CardOf<"STORE_SPECIAL">["collection"]) {
-  return collection.subcategories.map((sub) => {
-    const pictured = collection.products.find((p) => p.product.subcategory?.id === sub.id);
-    return { ...sub, translations: sub.translations as Record<string, { name?: string }> | null, imageUrl: pictured ? pictured.product.imageUrl || pictured.variant.imageUrl : null };
-  });
-}
 const pairs = <T,>(items: T[]) => items.flatMap((item, i) => (i % 2 === 0 ? [items.slice(i, i + 2)] : []));
 type CardOf<K extends Card["kind"]> = Extract<Card, { kind: K }>;
 
 /** A product list card: a lighter band with the title (and a badge where artwork would sit), then rows of products */
-function ProductListCard({ card, title, subtitle, badge, link, onPress }: {
-  card: CardOf<"BUY_GET" | "MOST_BOUGHT" | "RIGHT_NOW" | "COLLECTION">; title: string; subtitle: string; badge?: ReactNode; link?: string; onPress?: () => void;
+function ProductListCard({ theme, products, title, subtitle, badge, link, onPress }: {
+  theme: Card["theme"]; products: StoreProduct[]; title: string; subtitle: string; badge?: ReactNode; link?: string; onPress?: () => void;
 }) {
-  const { theme } = card;
   return (
     <HeroCardFrame theme={theme} onPress={onPress} label={title}>
       <View style={[styles.band, { backgroundColor: theme.tintSoft }]}>
@@ -41,7 +34,7 @@ function ProductListCard({ card, title, subtitle, badge, link, onPress }: {
         {badge}
       </View>
       <View style={styles.lines}>
-        {card.products.map((p) => <HeroProductLine key={p.id} item={p} ink={theme.cardInk} />)}
+        {products.map((p) => <HeroProductLine key={p.id} item={p} ink={theme.cardInk} />)}
       </View>
       {link ? <HeroCardLink label={link} color={theme.cardInk} /> : null}
     </HeroCardFrame>
@@ -53,7 +46,7 @@ function BuyGetCard({ card }: { card: CardOf<"BUY_GET"> }) {
   const c = useStrings("common");
   return (
     <ProductListCard
-      card={card} title={t.buyGetTitle} subtitle={t.buyGetCount(card.total)} link={c.viewAll} onPress={() => router.push("/buy-get")}
+      theme={card.theme} products={card.products} title={t.buyGetTitle} subtitle={t.buyGetCount(card.total)} link={c.viewAll} onPress={() => router.push("/buy-get")}
       badge={<View style={styles.badge}><Text style={styles.badgeText}>1+1</Text></View>}
     />
   );
@@ -66,54 +59,30 @@ function MostBoughtCard({ card }: { card: CardOf<"MOST_BOUGHT"> }) {
   const c = useStrings("common");
   return (
     <ProductListCard
-      card={card} title={t.heroMostBought} subtitle={t.heroMostBoughtSub(getLocalizedName(store))} link={c.viewAll}
+      theme={card.theme} products={card.products} title={t.heroMostBought} subtitle={t.heroMostBoughtSub(getLocalizedName(store))} link={c.viewAll}
       onPress={() => router.push("/most-bought")}
     />
   );
 }
 
-/** The store's own range: its photo across the top, then its aisles (each opening the range narrowed to it) and "Shop now" */
+/** The store's own range as product rows, its photo (or a shop badge) where the other cards put theirs; "Shop now" opens it */
 function StoreSpecialCard({ card }: { card: CardOf<"STORE_SPECIAL"> }) {
   const t = useStrings("home");
-  const { language, getLocalizedName } = useLanguage();
+  const { language } = useLanguage();
   const { collection, theme } = card;
   const localized = language ? (collection.translations as Record<string, { title?: string; subtitle?: string }> | null)?.[language] : undefined;
-  const title = localized?.title || collection.title;
-  const subtitle = localized?.subtitle || collection.subtitle;
   const imageUrl = (language && collection.imageUrls?.[language]) || collection.imageUrl;
-  // A text banner already carries the title, so the photo takes the title's room
-  const showCopy = !collection.textInImage || !imageUrl;
+  // Every size comes back; a row is a product, in its first size
+  const products = collection.products.filter((sp, i, all) => all.findIndex((o) => o.product.id === sp.product.id) === i).slice(0, SPECIAL_PRODUCTS);
+  const badge = imageUrl
+    ? <Image source={{ uri: imageUrl }} style={styles.specialPhoto} />
+    : <View style={[styles.dayPart, { backgroundColor: theme.cardInk }]}><Ionicons name="storefront" size={20} color={colors.accent} /></View>;
   return (
-    <HeroCardFrame theme={theme} onPress={() => openCollection(collection.id)} label={title}>
-      {imageUrl ? (
-        <View style={[styles.photo, !showCopy && styles.photoTall]}>
-          <Image source={{ uri: imageUrl }} style={styles.photoImage} resizeMode="cover" />
-          <View style={styles.onlyHere}><Text style={[styles.onlyHereText, { color: theme.cardInk }]}>{t.heroOnlyHere}</Text></View>
-        </View>
-      ) : null}
-      {showCopy && (
-        <View style={styles.copy}>
-          <Text style={[styles.bandTitle, { color: theme.cardInk }]} numberOfLines={1}>{title}</Text>
-          {subtitle ? <Text style={[styles.bandSubtitle, { color: theme.cardInk }]} numberOfLines={1}>{subtitle}</Text> : null}
-        </View>
-      )}
-      <View style={styles.aisles}>
-        {pairs(aisleTiles(collection).slice(0, SPECIAL_AISLES)).map((row) => (
-          <View key={row[0].id} style={styles.tileRow}>
-            {row.map((aisle) => (
-              <Pressable
-                key={aisle.id} style={[styles.aisle, { backgroundColor: theme.tintSoft }]}
-                onPress={() => openCollection(collection.id, [aisle.id])} accessibilityRole="link" accessibilityLabel={getLocalizedName(aisle)}
-              >
-                {aisle.imageUrl ? <Image source={{ uri: aisle.imageUrl }} style={styles.aisleImage} resizeMode="contain" /> : null}
-                <Text style={[styles.aisleText, { color: theme.cardInk }]} numberOfLines={2}>{getLocalizedName(aisle)}</Text>
-              </Pressable>
-            ))}
-          </View>
-        ))}
-      </View>
-      <HeroCardLink label={t.heroShopNow} color={theme.cardInk} />
-    </HeroCardFrame>
+    <ProductListCard
+      theme={theme} products={products} title={localized?.title || collection.title}
+      subtitle={localized?.subtitle || collection.subtitle || t.heroOnlyHere} badge={badge}
+      link={t.heroShopNow} onPress={() => openCollection(collection.id)}
+    />
   );
 }
 
@@ -168,7 +137,7 @@ function RightNowCard({ card }: { card: CardOf<"RIGHT_NOW"> }) {
   );
   return (
     <ProductListCard
-      card={card} title={localized?.title || collection.title} subtitle={t.heroRightNow[card.dayPart]} badge={badge}
+      theme={card.theme} products={card.products} title={localized?.title || collection.title} subtitle={t.heroRightNow[card.dayPart]} badge={badge}
       link={c.viewAll} onPress={() => openCollection(collection.id)}
     />
   );
@@ -183,7 +152,7 @@ function CollectionCard({ card }: { card: CardOf<"COLLECTION"> }) {
   const localized = language ? (collection.translations as Record<string, { title?: string; subtitle?: string }> | null)?.[language] : undefined;
   return (
     <ProductListCard
-      card={card} title={localized?.title || collection.title}
+      theme={card.theme} products={card.products} title={localized?.title || collection.title}
       subtitle={localized?.subtitle || collection.subtitle || t.heroCollectionCount(card.total)}
       link={c.viewAll} onPress={() => openCollection(collection.id)}
     />
@@ -216,20 +185,8 @@ const styles = StyleSheet.create({
   bandTitle: { fontFamily: fonts.extrabold, fontSize: 20, letterSpacing: -0.3 },
   bandSubtitle: { fontFamily: fonts.semibold, fontSize: 12, marginTop: 2, opacity: 0.8 },
   lines: { flex: 1, gap: 6, paddingVertical: 10 },
-  photo: { height: 150, margin: -HERO_CARD_PADDING, marginBottom: 0, backgroundColor: "rgba(255,255,255,0.5)" },
-  photoTall: { height: 206 },
-  photoImage: { width: "100%", height: "100%" },
-  onlyHere: {
-    position: "absolute", top: 12, left: 12, paddingHorizontal: 10, paddingVertical: 5, borderRadius: 999,
-    backgroundColor: "rgba(255,255,255,0.92)",
-  },
-  onlyHereText: { fontFamily: fonts.extrabold, fontSize: 10.5, letterSpacing: 0.8, textTransform: "uppercase" },
-  copy: { paddingTop: 12 },
+  specialPhoto: { width: 46, height: 46, borderRadius: 23, borderWidth: 2, borderColor: colors.surface },
   dayPart: { width: 42, height: 42, borderRadius: 21, alignItems: "center", justifyContent: "center" },
-  aisles: { flex: 1, gap: 8, paddingVertical: 12 },
-  aisle: { flex: 1, flexDirection: "row", alignItems: "center", gap: 8, borderRadius: 14, padding: 8 },
-  aisleImage: { width: 40, height: 40, borderRadius: 8, backgroundColor: colors.surface },
-  aisleText: { flex: 1, fontFamily: fonts.bold, fontSize: 12, lineHeight: 15 },
   tiles: { flex: 1, gap: 8, marginBottom: 12 },
   tileRow: { flex: 1, flexDirection: "row", gap: 8 },
   festTile: { flex: 1, borderRadius: 14, padding: 6, alignItems: "center" },

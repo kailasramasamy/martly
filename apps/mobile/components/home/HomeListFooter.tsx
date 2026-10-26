@@ -1,10 +1,11 @@
 import { memo } from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import { Loader } from "../Loader";
-import { colors } from "../../constants/theme";
+import { colors, fonts } from "../../constants/theme";
+import { useStrings } from "../../lib/i18n/use-strings";
 import { FEATURED_CARD_WIDTH } from "../FeaturedProductCard";
 import { HomeSignOff } from "./HomeSignOff";
-import StoreDiscovery, { type StoreDiscoveryState } from "../store-discovery/StoreDiscovery";
 
 interface Props {
   hasStore: boolean;
@@ -13,12 +14,12 @@ interface Props {
   loadingMore: boolean;
   /** Every section is on screen: the sign-off closes the page */
   reachedEnd: boolean;
-  discovery: StoreDiscoveryState;
 }
 
 /** Below the sections: the first-load placeholders, the next page's spinner, the sign-off once every section is in, or
- * store discovery when no store is chosen */
-export const HomeListFooter = memo(function HomeListFooter({ hasStore, loading, loadingMore, reachedEnd, discovery }: Props) {
+ * a coming-soon note when no store is live anywhere yet */
+export const HomeListFooter = memo(function HomeListFooter({ hasStore, loading, loadingMore, reachedEnd }: Props) {
+  const t = useStrings("home");
   return (
     <View>
       {hasStore && loading && (
@@ -36,7 +37,13 @@ export const HomeListFooter = memo(function HomeListFooter({ hasStore, loading, 
       )}
       {loadingMore && <Loader style={styles.more} />}
       {hasStore && reachedEnd && <HomeSignOff />}
-      {!hasStore && <StoreDiscovery discovery={discovery} />}
+      {!hasStore && (
+        <View style={styles.empty}>
+          <Ionicons name="storefront-outline" size={40} color={colors.primary} />
+          <Text style={styles.emptyTitle}>{t.noStoresYet}</Text>
+          <Text style={styles.emptyText}>{t.comingSoon}</Text>
+        </View>
+      )}
       <View style={styles.spacer} />
     </View>
   );
@@ -51,4 +58,7 @@ const styles = StyleSheet.create({
   lineShort: { width: "50%" },
   more: { marginTop: 24 },
   spacer: { height: 32 },
+  empty: { alignItems: "center", padding: 40, gap: 8 },
+  emptyTitle: { fontFamily: fonts.bold, fontSize: 18, color: colors.text, marginTop: 8 },
+  emptyText: { fontFamily: fonts.regular, fontSize: 14, color: colors.textSecondary, textAlign: "center", lineHeight: 20 },
 });

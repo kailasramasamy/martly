@@ -26,6 +26,7 @@ import { useMembership } from "../../lib/membership-context";
 import { useToast } from "../../lib/toast-context";
 import { useBasketMode } from "../../lib/basket-mode-context";
 import { useLanguage } from "../../lib/language-context";
+import { useMoveCart } from "../../lib/move-cart";
 import { useStrings } from "../../lib/i18n/use-strings";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing, fontSize } from "../../constants/theme";
@@ -160,7 +161,8 @@ interface ProductDetail extends Product {
 export default function ProductDetailScreen() {
   const { id, storeId: paramStoreId } = useLocalSearchParams<{ id: string; storeId?: string }>();
   const { selectedStore } = useStore();
-  const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
+  const { storeId: cartStoreId, store: cartFrom, items: cartItems, addItem, updateQuantity } = useCart();
+  const moveCart = useMoveCart();
   const { isWishlisted, toggle: toggleWishlist } = useWishlist();
   const { isAuthenticated } = useAuth();
   const requireSignIn = useRequireSignIn();
@@ -367,7 +369,7 @@ export default function ProductDetailScreen() {
 
     if (cartStoreId && cartStoreId !== storeId) {
       setReplaceCartConfirm({
-        pending: () => addItem(cartStore, item),
+        pending: () => moveCart(cartStore, [item]),
       });
       return;
     }
@@ -859,7 +861,7 @@ export default function ProductDetailScreen() {
       <ConfirmSheet
         visible={replaceCartConfirm !== null}
         title={t.replaceCartTitle}
-        message={t.replaceCartMessage}
+        message={t.replaceCartMessage(cartFrom ? getLocalizedName(cartFrom) : "", cartStore ? getLocalizedName(cartStore) : "")}
         icon="cart-outline"
         iconColor="#f59e0b"
         confirmLabel={t.replaceCartConfirm}

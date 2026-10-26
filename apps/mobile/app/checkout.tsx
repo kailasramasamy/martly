@@ -38,6 +38,7 @@ import { withSignIn } from "../components/SignInPrompt";
 import { strings } from "../lib/i18n";
 import { useStrings } from "../lib/i18n/use-strings";
 import { formatDate } from "../lib/i18n/format";
+import { StoreMark } from "../components/StoreMark";
 import { useLanguage } from "../lib/language-context";
 import { freeUnits, lineTotal } from "@martly/shared/offers";
 import { CheckoutWalkNudge } from "../components/store-walk/WalkNudge";
@@ -424,6 +425,7 @@ function CheckoutScreen() {
         items: items.map((i) => ({
           storeProductId: i.storeProductId,
           quantity: i.quantity,
+          source: i.source,
         })),
       };
 
@@ -544,9 +546,11 @@ function CheckoutScreen() {
       >
         {/* Store Info */}
         <View style={styles.storeCard}>
-          <View style={styles.storeIconWrap}>
-            <Ionicons name="storefront" size={18} color="#fff" />
-          </View>
+          <StoreMark storeId={storeId} size={40} fallback={(
+            <View style={styles.storeIconWrap}>
+              <Ionicons name="storefront" size={18} color="#fff" />
+            </View>
+          )} />
           <View style={styles.storeInfo}>
             <Text style={styles.storeName} numberOfLines={1}>{storeName}</Text>
             <Text style={styles.storeItemCount}>{common.items(itemCount)}</Text>
@@ -856,9 +860,11 @@ function CheckoutScreen() {
               <Text style={styles.sectionTitle}>{t.address.pickupTitle}</Text>
             </View>
             <View style={styles.pickupLocationCard}>
-              <View style={styles.pickupLocationIcon}>
-                <Ionicons name="storefront" size={20} color={colors.primary} />
-              </View>
+              <StoreMark storeId={storeId} size={40} fallback={(
+                <View style={styles.pickupLocationIcon}>
+                  <Ionicons name="storefront" size={20} color={colors.primary} />
+                </View>
+              )} />
               <View style={{ flex: 1 }}>
                 <Text style={styles.pickupStoreName}>
                   {storeName}

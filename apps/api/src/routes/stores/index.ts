@@ -1,7 +1,7 @@
 import type { FastifyInstance } from "fastify";
 import { Prisma } from "../../../generated/prisma/client.js";
-import { createStoreSchema, updateStoreSchema, storeProductSearchQuerySchema } from "@martly/shared/schemas";
-import type { ApiResponse, CategoryFacets, PaginatedResponse } from "@martly/shared/types";
+import { createStoreSchema, updateStoreSchema, storeProductSearchQuerySchema, storeResolveQuerySchema } from "@martly/shared/schemas";
+import type { ApiResponse, CategoryFacets, PaginatedResponse, StoreResolution } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requirePermission, requireRole } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
@@ -9,8 +9,6 @@ import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, ve
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
 import { reviewSummaries, withAllSizes, withReviews } from "../../services/store-feed.js";
-import { haversine } from "../../lib/geo.js";
-import { drivingDistances } from "../../services/driving-distance.js";
 import { searchStoreProducts } from "../../services/store-search.js";
 import { decorateStoreProducts, storeProductInclude } from "../../services/store-product-view.js";
 import { injectAd, listingAd, type SponsoredAd } from "../../services/sponsored.js";
@@ -22,6 +20,7 @@ import { recordOpeningStock } from "../../services/stock-ledger.js";
 import { notifyStoreStatusChange, notifyTeamMember } from "../../services/notify/team-alerts.js";
 import { categoryFacets, subcategoryIdsUnder } from "../../services/category-browse.js";
 import { storeWrite, townFields, townSelect } from "../../services/towns.js";
+import { nearbyStores, resolveStore, type CustomerStore } from "../../services/store-resolve.js";
 
 /** A sponsored product's listings at the store, in the same shape as the rest of a category page */
 async function sponsoredRows(prisma: PrismaClient, storeId: string, productId: string) {
@@ -116,56 +115,18 @@ export async function storeRoutes(app: FastifyInstance) {
   // Get nearby stores (public, sorted by distance)
   app.get("/nearby", { preHandler: [authenticateOptional] }, async (request) => {
     const { lat, lng, radius = 10 } = request.query as { lat?: string; lng?: string; radius?: number };
+    const point = { lat: parseFloat(lat ?? ""), lng: parseFloat(lng ?? "") };
+    if (isNaN(point.lat) || isNaN(point.lng)) return { success: true, data: [] };
+    return { success: true, data: await nearbyStores(app.prisma, point, Number(radius)) };
+  });
 
-    if (!lat || !lng) {
-      return { success: true, data: [] };
-    }
-
-    const userLat = parseFloat(lat);
-    const userLng = parseFloat(lng);
-    const maxRadius = Number(radius);
-
-    if (isNaN(userLat) || isNaN(userLng)) {
-      return { success: true, data: [] };
-    }
-
-    const stores = await app.prisma.store.findMany({
-      where: {
-        status: "ACTIVE",
-        latitude: { not: null },
-        longitude: { not: null },
-      },
-      include: { organization: { select: { subscriptionEnabled: true } } },
-    });
-
-    const inRange = stores
-      .map((store) => ({ store, distance: haversine(userLat, userLng, store.latitude!, store.longitude!) }))
-      .filter((s) => s.distance <= maxRadius);
-    const [discovery, tiers, drives] = await Promise.all([
-      getStoreDiscoveryInfo(app.prisma, inRange.map((s) => s.store.id)),
-      app.prisma.deliveryTier.findMany({
-        where: { storeId: { in: inRange.map((s) => s.store.id) }, isActive: true },
-        select: { storeId: true, minDistance: true, maxDistance: true },
-      }),
-      drivingDistances({ lat: userLat, lng: userLng }, inRange.map(({ store }) => ({ id: store.id, lat: store.latitude!, lng: store.longitude! }))),
-    ]);
-    // Same rule as checkout's delivery lookup: within radius AND an active tier covers the distance
-    const hasTier = (storeId: string, distance: number) =>
-      tiers.some((t) => t.storeId === storeId && t.minDistance <= distance && t.maxDistance > distance);
-
-    const nearbyStores = inRange
-      .map(({ store: { organization, ...store }, distance }) => ({
-        ...store,
-        ...discovery.get(store.id),
-        subscriptionEnabled: store.subscriptionEnabled && organization.subscriptionEnabled,
-        distance,
-        // Road distance for display; delivery eligibility and fees stay on straight-line distance, as at checkout
-        drive: drives.get(store.id) ?? null,
-        deliversToYou: distance <= store.deliveryRadius && hasTier(store.id, distance),
-      }))
-      .sort((a, b) => a.distance - b.distance);
-
-    return { success: true, data: nearbyStores };
+  // The store a shopper browses, picked for them: kept, nearest that delivers, their town's main store, or Martly's
+  app.get("/resolve", { preHandler: [authenticateOptional] }, async (request, reply) => {
+    const parsed = storeResolveQuerySchema.safeParse(request.query);
+    if (!parsed.success) return reply.badRequest(parsed.error.issues[0].message);
+    const resolution = await resolveStore(app.prisma, parsed.data);
+    if (!resolution) return reply.notFound("No store is live yet");
+    return { success: true, data: resolution } satisfies ApiResponse<StoreResolution<CustomerStore>>;
   });
 
   // Create store (force orgId from JWT for non-SUPER_ADMIN)

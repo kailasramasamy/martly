@@ -28,6 +28,7 @@ import {
   CommentOutlined,
   EnvironmentOutlined,
   ThunderboltOutlined,
+  HeartOutlined,
   RocketOutlined,
   FlagOutlined,
   CameraOutlined,
@@ -139,6 +140,10 @@ import { CatalogDraftShow } from "./pages/catalog-drafts/show";
 import { PromoList } from "./pages/promos/list";
 import { PromoShow } from "./pages/promos/show";
 import { PromoCreate } from "./pages/promos/create";
+import { OfferList } from "./pages/offers/list";
+import { OfferCreate } from "./pages/offers/create";
+import { StorefrontList } from "./pages/storefront/list";
+import { StorefrontShow } from "./pages/storefront/show";
 import { NotificationSend } from "./pages/notifications/send";
 import { NotificationDashboard } from "./pages/notifications/dashboard";
 import { CampaignList as NotificationCampaignList } from "./pages/notifications/campaigns/list";
@@ -385,6 +390,18 @@ export default function App() {
                 create: "/promos/create",
                 show: "/promos/show/:id",
                 meta: { label: "Promotions", icon: <RocketOutlined />, parent: "marketing" },
+              },
+              {
+                name: "offers",
+                list: "/offers",
+                create: "/offers/create",
+                meta: { label: "Offers", icon: <ThunderboltOutlined />, parent: "marketing" },
+              },
+              {
+                name: "storefront",
+                list: "/storefront",
+                show: "/storefront/show/:id",
+                meta: { label: "Storefront health", icon: <HeartOutlined />, parent: "marketing" },
               },
               {
                 name: "list-glossary",
@@ -754,6 +771,14 @@ export default function App() {
                 <Route path="/support-tickets">
                   <Route index element={<SupportTicketList />} />
                   <Route path="show/:id" element={<SupportTicketShow />} />
+                </Route>
+                <Route path="/offers">
+                  <Route index element={<OfferList />} />
+                  <Route path="create" element={<OfferCreate />} />
+                </Route>
+                <Route path="/storefront">
+                  <Route index element={<StorefrontList />} />
+                  <Route path="show/:id" element={<StorefrontShow />} />
                 </Route>
                 <Route path="/promos">
                   <Route index element={<PromoList />} />

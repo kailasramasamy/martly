@@ -1,0 +1,154 @@
+import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
+import type { WebCategoryPage, WebDepartmentTree, WebProductPage, WebShelf, WebShopStore, WebSitemap } from "@martly/shared/types";
+import { liveWindow } from "../store-feed.js";
+import { liveStoreWhere, resolveStore } from "../store-resolve.js";
+import { cardSelect, countProducts, productCards, soldAt, toCard } from "./cards.js";
+
+const SHELF_SIZE = 10;
+const PAGE_SIZE = 24;
+const withImage: Prisma.ProductWhereInput = { imageUrl: { not: null } };
+
+/** Departments and their categories, keeping only those the store has something in */
+export async function departmentTrees(prisma: PrismaClient, storeId: string, slug?: string): Promise<WebDepartmentTree[]> {
+  const departments = await prisma.department.findMany({
+    where: slug ? { slug } : {},
+    orderBy: { sortOrder: "asc" },
+    select: {
+      name: true, slug: true, imageUrl: true,
+      categories: {
+        where: { subcategories: { some: { products: { some: soldAt(storeId) } } } },
+        orderBy: { sortOrder: "asc" },
+        select: { name: true, slug: true, imageUrl: true },
+      },
+    },
+  });
+  return departments.filter((d) => d.categories.length > 0);
+}
+
+async function shelf(prisma: PrismaClient, storeId: string, name: string, path: string, where: Prisma.ProductWhereInput): Promise<WebShelf> {
+  const products = await productCards(prisma, storeId, { where: { AND: [withImage, where] }, take: SHELF_SIZE });
+  return { name, path, products };
+}
+
+/** A department: a shelf per category */
+export async function departmentPage(prisma: PrismaClient, store: WebShopStore, slug: string) {
+  const [department] = await departmentTrees(prisma, store.id, slug);
+  if (!department) return null;
+  const shelves = await Promise.all(department.categories.map((c) =>
+    shelf(prisma, store.id, c.name, `/c/${slug}/${c.slug}`, { subcategory: { category: { slug: c.slug } } })));
+  return { store, department, shelves: shelves.filter((s) => s.products.length > 0) };
+}
+
+/** A category's products a page at a time, narrowed to one subcategory when asked */
+export async function categoryPage(prisma: PrismaClient, store: WebShopStore, slugs: { department: string; category: string }, sub: string | undefined, page: number): Promise<WebCategoryPage | null> {
+  const category = await prisma.category.findFirst({
+    where: { slug: slugs.category, department: { slug: slugs.department } },
+    select: {
+      name: true, slug: true, imageUrl: true,
+      department: { select: { name: true, slug: true, imageUrl: true } },
+      subcategories: {
+        orderBy: { sortOrder: "asc" },
+        select: { name: true, slug: true, imageUrl: true, _count: { select: { products: { where: soldAt(store.id) } } } },
+      },
+    },
+  });
+  if (!category) return null;
+  const subcategories = category.subcategories.filter((s) => s._count.products > 0).map(({ _count, ...s }) => ({ ...s, count: _count.products }));
+  const subcategory = subcategories.find((s) => s.slug === sub)?.slug ?? null;
+  const where: Prisma.ProductWhereInput = { subcategory: subcategory ? { slug: subcategory } : { category: { slug: category.slug } } };
+  const [products, total] = await Promise.all([
+    productCards(prisma, store.id, { where, skip: (page - 1) * PAGE_SIZE, take: PAGE_SIZE }),
+    countProducts(prisma, store.id, where),
+  ]);
+  const { name, imageUrl, department } = category;
+  return { store, department, category: { name, slug: category.slug, imageUrl }, subcategories, subcategory, products, page, totalPages: Math.ceil(total / PAGE_SIZE) };
+}
+
+const productSelect = (storeId: string) => ({
+  ...cardSelect(storeId),
+  description: true, images: true, foodType: true, ingredients: true, shelfLifeDays: true,
+  storageInstructions: true, manufacturerName: true, countryOfOrigin: true, subcategoryId: true,
+  subcategory: { select: { name: true, slug: true, category: { select: { name: true, slug: true, department: { select: { name: true, slug: true } } } } } },
+}) satisfies Prisma.ProductSelect;
+
+type ProductRow = Prisma.ProductGetPayload<{ select: ReturnType<typeof productSelect> }>;
+
+function details(p: ProductRow) {
+  const rows: [string, string | null][] = [
+    ["Ingredients", p.ingredients],
+    ["Shelf life", p.shelfLifeDays ? `${p.shelfLifeDays} days` : null],
+    ["Storage", p.storageInstructions],
+    ["Manufacturer", p.manufacturerName],
+    ["Country of origin", p.countryOfOrigin],
+  ];
+  return rows.flatMap(([label, value]) => (value ? [{ label, value }] : []));
+}
+
+function trail(p: ProductRow) {
+  const sub = p.subcategory;
+  if (!sub) return [];
+  const dept = `/c/${sub.category.department.slug}`;
+  const cat = `${dept}/${sub.category.slug}`;
+  return [
+    { name: sub.category.department.name, path: dept },
+    { name: sub.category.name, path: cat },
+    { name: sub.name, path: `${cat}?sub=${sub.slug}` },
+  ];
+}
+
+/** A product any live store sells, priced at the shopper's store (no packs when that store doesn't sell it) */
+export async function productPage(prisma: PrismaClient, store: WebShopStore, slug: string): Promise<WebProductPage | null> {
+  const p = await prisma.product.findFirst({
+    where: { slug, isActive: true, isDraft: false, storeProducts: { some: { isActive: true, store: liveStoreWhere } } },
+    select: productSelect(store.id),
+  });
+  if (!p) return null;
+  const related = p.subcategoryId
+    ? await productCards(prisma, store.id, { where: { subcategoryId: p.subcategoryId, id: { not: p.id } }, take: SHELF_SIZE })
+    : [];
+  const { packs, ...card } = toCard(p);
+  const images = [...new Set([card.imageUrl, ...p.images].filter((u): u is string => Boolean(u)))];
+  return {
+    store,
+    product: { ...card, description: p.description, images, foodType: p.foodType, details: details(p), trail: trail(p) },
+    packs,
+    related,
+  };
+}
+
+/** Every page worth indexing: departments, categories and products some live store sells */
+/** Brands and collections a visitor without a store (a search engine) can open: those of the store they are given */
+async function crawlerLists(prisma: PrismaClient) {
+  const resolution = await resolveStore(prisma, {});
+  if (!resolution) return { collections: [], brands: [] };
+  const { id, organizationId } = resolution.store;
+  const [collections, brands] = await Promise.all([
+    prisma.collection.findMany({
+      where: {
+        isActive: true, AND: liveWindow(new Date()), OR: [{ organizationId }, { organizationId: null }],
+        items: { some: { product: { isActive: true, storeProducts: { some: { storeId: id, isActive: true, stock: { gt: 0 } } } } } },
+      },
+      select: { slug: true },
+    }),
+    prisma.brand.findMany({ where: { products: { some: soldAt(id) } }, select: { slug: true }, orderBy: { slug: "asc" } }),
+  ]);
+  return { collections: collections.map((c) => c.slug), brands: brands.map((b) => b.slug) };
+}
+
+export async function sitemap(prisma: PrismaClient): Promise<WebSitemap> {
+  const sold: Prisma.ProductWhereInput = { isActive: true, isDraft: false, storeProducts: { some: { isActive: true, store: liveStoreWhere } } };
+  const [categories, products, lists] = await Promise.all([
+    prisma.category.findMany({
+      where: { subcategories: { some: { products: { some: sold } } } },
+      select: { slug: true, department: { select: { slug: true } } },
+    }),
+    prisma.product.findMany({ where: sold, select: { slug: true, updatedAt: true }, orderBy: { slug: "asc" } }),
+    crawlerLists(prisma),
+  ]);
+  return {
+    departments: [...new Set(categories.map((c) => c.department.slug))],
+    categories: categories.map((c) => ({ slug: c.slug, department: c.department.slug })),
+    products: products.map((p) => ({ slug: p.slug, updatedAt: p.updatedAt.toISOString() })),
+    ...lists,
+  };
+}

@@ -5,13 +5,15 @@ import type { CollectionKind, FestivalEvent } from "../../../generated/prisma/cl
 import type { SubcategoryCandidate } from "./candidates.js";
 
 const MODEL = "claude-sonnet-5-5";
-const MIN_SUBCATEGORIES = 4;
+// A festival fills a shelf across several aisles; an owner's brief can be as narrow as the two aisles it names
+const MIN_EVENT_SUBCATEGORIES = 4;
+const MIN_BRIEF_SUBCATEGORIES = 2;
 const MAX_SUBCATEGORIES = 12;
 
 const CurationSchema = z.object({
   skip: z.boolean().describe("true only if the catalog cannot support a credible collection for this brief"),
   skipReason: z.string().describe("why it was skipped; empty string otherwise"),
-  subcategoryIds: z.array(z.string()).describe(`${MIN_SUBCATEGORIES}-${MAX_SUBCATEGORIES} ids from the list, most relevant first`),
+  subcategoryIds: z.array(z.string()).describe(`up to ${MAX_SUBCATEGORIES} ids from the list, most relevant first`),
   title: z.string().describe("collection title, 2-4 words, e.g. 'Pongal Essentials'"),
   subtitle: z.string().describe("one line naming what's inside, under 45 characters"),
   titleTa: z.string().describe("natural Tamil title as a Tamil shopper would say it, not a literal translation"),
@@ -26,7 +28,7 @@ genuinely buy for it. For a festival that means ritual and pooja needs, traditio
 gifting, decor, and the everyday items demand spikes on; for a theme, what a shopper with that need would put in the
 basket. Respect the brief's guidance strictly; when a festival is observed vegetarian,
 leave out meat, fish and eggs. Never pick alcohol, tobacco, or items that would feel out of place for the occasion.
-If fewer than ${MIN_SUBCATEGORIES} subcategories truly fit, set skip to true rather than padding the list.
+If fewer subcategories truly fit than the request asks for at least, set skip to true rather than padding the list.
 
 The imagePrompt describes the subject of the banner art: the occasion's or theme's own foods, props, flowers and
 colours and the mood they create, specific to this brief. Don't describe layout, framing, camera, art style or where
@@ -39,14 +41,18 @@ Write the Tamil copy in everyday native Tamil words rather than English words sp
 
 export class CurationRefusedError extends Error {}
 
-export function describeEvent(event: FestivalEvent) {
+/** What the curator is asked for, and the fewest aisles that make a credible collection of it */
+export interface CurationRequest { description: string; minSubcategories: number }
+
+export function describeEvent(event: FestivalEvent): CurationRequest {
   const day = (d: Date) => d.toISOString().slice(0, 10);
-  return [
+  const description = [
     `Event: ${event.name} (${event.kind === "SEASON" ? "season" : "festival/occasion"})`,
     `Dates: ${day(event.startsAt)} to ${day(event.endsAt)}`,
     `Regions: ${event.regions.join(", ")}`,
     event.guidance ? `Guidance: ${event.guidance}` : null,
   ].filter(Boolean).join("\n");
+  return { description, minSubcategories: MIN_EVENT_SUBCATEGORIES };
 }
 
 const KIND_NAMES: Partial<Record<CollectionKind, string>> = {
@@ -54,12 +60,17 @@ const KIND_NAMES: Partial<Record<CollectionKind, string>> = {
 };
 
 /** An admin's brief for a new collection, in the same shape describeEvent gives the curator */
-export function describeBrief(brief: string, kind: CollectionKind) {
-  return `Theme: ${brief.trim()} (${KIND_NAMES[kind] ?? "store collection"})`;
+export function describeBrief(brief: string, kind: CollectionKind): CurationRequest {
+  const description = `Theme: ${brief.trim()} (${KIND_NAMES[kind] ?? "store collection"})
+This is a shop's own brief, not a festival: pick only the subcategories that are exactly what it names, read literally.
+Leave out companions, ingredients and anything that merely goes well with it (a pickles brief gets no oil, rice,
+spices or papad). When something it names has no aisle of its own, take the aisle it's usually shelved in
+(podi and chutney powders sit with chutney). A few exact aisles beat a broad basket.`;
+  return { description, minSubcategories: MIN_BRIEF_SUBCATEGORIES };
 }
 
 /** Picks aisles and writes English and Tamil copy for a festival (describeEvent) or an admin's brief (describeBrief) */
-export async function curate(description: string, candidates: SubcategoryCandidate[]): Promise<Curation> {
+export async function curate({ description, minSubcategories }: CurationRequest, candidates: SubcategoryCandidate[]): Promise<Curation> {
   const client = new Anthropic();
   const catalog = candidates.map((c) => `${c.id} | ${c.department} > ${c.category} > ${c.name} (${c.products})`).join("\n");
   const response = await client.beta.messages.parse({
@@ -71,7 +82,7 @@ export async function curate(description: string, candidates: SubcategoryCandida
     output_config: { effort: "medium", format: betaZodOutputFormat(CurationSchema) },
     messages: [{
       role: "user",
-      content: `${description}\n\nIn-stock subcategories (id | department > category > subcategory (product count)):\n${catalog}`,
+      content: `${description}\nPick at least ${minSubcategories} subcategories.\n\nIn-stock subcategories (id | department > category > subcategory (product count)):\n${catalog}`,
     }],
   });
   if (response.stop_reason === "refusal" || !response.parsed_output) {
@@ -80,7 +91,7 @@ export async function curate(description: string, candidates: SubcategoryCandida
   const known = new Set(candidates.map((c) => c.id));
   const result = response.parsed_output;
   const subcategoryIds = [...new Set(result.subcategoryIds.filter((id) => known.has(id)))].slice(0, MAX_SUBCATEGORIES);
-  if (!result.skip && subcategoryIds.length < MIN_SUBCATEGORIES) {
+  if (!result.skip && subcategoryIds.length < minSubcategories) {
     return { ...result, skip: true, skipReason: `Only ${subcategoryIds.length} valid subcategories returned`, subcategoryIds };
   }
   return { ...result, subcategoryIds };

@@ -21,6 +21,8 @@ export async function postImage<T>(path: string, file: Blob): Promise<T> {
 }
 
 const plainUpload = async (file: Blob) => (await postImage<{ url: string }>("/api/v1/uploads", file)).url;
+/** Store logos: the API trims the margins so a wide wordmark fills its plate */
+export const logoUpload = async (file: Blob) => (await postImage<{ url: string }>("/api/v1/uploads?kind=logo", file)).url;
 
 interface ImageUploadProps {
   value?: string;

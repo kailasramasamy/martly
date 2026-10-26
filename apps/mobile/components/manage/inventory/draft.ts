@@ -24,6 +24,9 @@ export interface StoreProductDraft {
   offerEnd: string | null;
 }
 
+export type OfferDraft = Pick<StoreProductDraft, "offerMode" | "offerBuy" | "offerGet" | "offerStart" | "offerEnd">;
+export type DiscountDraft = Pick<StoreProductDraft, "discountMode" | "discountValue" | "discountStart" | "discountEnd">;
+
 function offerModeOf(buy: number | null, get: number | null): OfferMode {
   if (buy === null || get === null) return "NONE";
   if (buy === 1 && get === 1) return "B1G1";
@@ -35,7 +38,7 @@ export function offerLabel(offer: MultiBuyOffer): string {
 }
 
 /** The offer the draft describes, or null when none is set or the quantities aren't valid yet */
-export function draftOffer(d: StoreProductDraft): MultiBuyOffer | null {
+export function draftOffer(d: OfferDraft): MultiBuyOffer | null {
   if (d.offerMode === "NONE") return null;
   const buy = Number(d.offerBuy);
   const get = Number(d.offerGet);
@@ -64,8 +67,8 @@ export function draftFromItem(item: StoreProductItem): StoreProductDraft {
 
 export type DraftResult = { payload: Record<string, unknown> } | { error: string };
 
-const startIso = (key: string | null) => (key ? fromDateKey(key).toISOString() : null);
-const endIso = (key: string | null) => (key ? new Date(fromDateKey(key).setHours(23, 59, 59, 999)).toISOString() : null);
+export const startIso = (key: string | null) => (key ? fromDateKey(key).toISOString() : null);
+export const endIso = (key: string | null) => (key ? new Date(fromDateKey(key).setHours(23, 59, 59, 999)).toISOString() : null);
 
 function discountPayload(d: StoreProductDraft, price: number): Record<string, unknown> | string {
   if (d.discountMode === "NONE") {

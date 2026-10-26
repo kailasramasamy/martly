@@ -57,6 +57,8 @@ export function SectionForm({ section }: { section?: HomeSectionRecord }) {
   const type = values.type as HomeSectionType | null;
   const mode = type ? SECTION_COLLECTION[type] : undefined;
   const hasSettings = !!type && CONFIG_TYPES.includes(type);
+  const { storeId } = useManageScope();
+  const router = useRouter();
 
   return (
     <ManageStackScreen
@@ -80,7 +82,10 @@ export function SectionForm({ section }: { section?: HomeSectionRecord }) {
         <SwitchRow label="Active" value={values.isActive} onValueChange={(isActive) => patch({ isActive })} />
       </SectionCard>
       {hasSettings ? <SectionCard title="Settings"><ConfigFields values={values} patch={patch} /></SectionCard> : null}
-      {type && !hasSettings ? <Text style={styles.note}>{type === "CAMPAIGN_CARD" ? "More settings in the admin panel" : "Built-in block: it fills itself from store data"}</Text> : null}
+      {type === "HERO_CARDS" && storeId ? (
+        <Button label="Edit hero cards" icon="albums-outline" variant="secondary" onPress={() => router.push({ pathname: "/manage/storefront/hero-cards", params: { storeId } })} />
+      ) : null}
+      {type && !hasSettings && type !== "HERO_CARDS" ? <Text style={styles.note}>{type === "CAMPAIGN_CARD" ? "More settings in the admin panel" : "Built-in block: it fills itself from store data"}</Text> : null}
     </ManageStackScreen>
   );
 }

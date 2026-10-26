@@ -538,3 +538,9 @@ export type MonthlyListQuote =
 export * from "./home.js";
 export * from "./onboarding.js";
 export * from "./towns.js";
+export * from "./web.js";
+export * from "./web-home.js";
+export * from "./web-search.js";
+export * from "./offers.js";
+export * from "./store-resolve.js";
+export * from "./storefront.js";

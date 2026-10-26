@@ -46,6 +46,9 @@ const endsOn = (iso: string) => `Ends ${formatDate(iso, { day: "numeric", month:
 const KIND_DAYS: Record<Kind, Days> = { FRESH_TODAY: "0", BACK_IN_STOCK: "3", NEW_IN_STORE: "7" };
 const MAX_PRODUCTS = 6;
 
+/** A new post's starting point, e.g. an AI draft the owner reviews */
+export type PostSeed = Omit<EditablePost, "id" | "expiresAt">;
+
 // What the owner says, typed or spoken (Tamil, English or both); each spoken sentence is added to the text
 function useSayIt(storeId: string, initial: string) {
   const [text, setText] = useState(initial);
@@ -86,15 +89,16 @@ function Tagged({ products, onRemove }: { products: TaggedProduct[]; onRemove: (
 
 // The post being written or edited, and saving it: kind, how long it shows, tagged products and whether to notify.
 // An edit starts from the post as it is, keeps its end date, and doesn't notify unless asked
-function usePostDraft(storeId: string, existing: EditablePost | undefined) {
+function usePostDraft(storeId: string, existing: EditablePost | undefined, seed: PostSeed | undefined) {
   const router = useRouter();
   const toast = useToast();
   const { run, running } = useAction();
-  const say = useSayIt(storeId, existing?.text ?? "");
-  const translation = useTranslationPreview(say.text, say.voice.listening || say.voice.pending > 0, existing?.translations);
-  const [kind, setKind] = useState<Kind>(existing?.kind ?? "FRESH_TODAY");
-  const [days, setDays] = useState<Days>(existing ? "keep" : KIND_DAYS.FRESH_TODAY);
-  const [products, setProducts] = useState<TaggedProduct[]>(existing?.products ?? []);
+  const start = existing ?? seed;
+  const say = useSayIt(storeId, start?.text ?? "");
+  const translation = useTranslationPreview(say.text, say.voice.listening || say.voice.pending > 0, start?.translations);
+  const [kind, setKind] = useState<Kind>(start?.kind ?? "FRESH_TODAY");
+  const [days, setDays] = useState<Days>(existing ? "keep" : KIND_DAYS[start?.kind ?? "FRESH_TODAY"]);
+  const [products, setProducts] = useState<TaggedProduct[]>(start?.products ?? []);
   const [notify, setNotify] = useState(!existing);
   const pickKind = (k: Kind) => { setKind(k); if (!existing) setDays(KIND_DAYS[k]); };
   const toggle = (p: TaggedProduct) => setProducts((prev) =>
@@ -119,8 +123,8 @@ function usePostDraft(storeId: string, existing: EditablePost | undefined) {
  * The owner's post to shoppers, new or opened for editing: what it's about, what they'd say at the counter, which
  * products, how long it shows and who hears it
  */
-export function PostForm({ storeId, existing }: { storeId: string; existing?: EditablePost }) {
-  const { say, translation, kind, pickKind, days, setDays, products, toggle, notify, setNotify, post, running } = usePostDraft(storeId, existing);
+export function PostForm({ storeId, existing, seed }: { storeId: string; existing?: EditablePost; seed?: PostSeed }) {
+  const { say, translation, kind, pickKind, days, setDays, products, toggle, notify, setNotify, post, running } = usePostDraft(storeId, existing, seed);
   const [tagging, setTagging] = useState(false);
   const audience = usePostAudience(storeId, kind, products.map((p) => p.id));
   const dayOptions = existing ? [{ value: "keep" as const, label: endsOn(existing.expiresAt) }, ...DAYS] : DAYS;

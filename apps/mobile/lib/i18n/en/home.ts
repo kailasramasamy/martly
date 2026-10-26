@@ -16,6 +16,7 @@ export const home = {
   chooseStore: "Choose a store",
   deliveringFrom: "Delivering from",
   deliveringTo: "Delivering to",
+  pickupOnly: "Pickup only at your location",
   deliveryInMinutes: (eta: number) => `Delivery in ${eta} minutes`,
   locationA11y: (headline: string, caption: string) => `${headline}. ${caption}. Change store`,
   backToTop: "Back to top",
@@ -99,9 +100,6 @@ export const home = {
   closedUntil: (time: string) => `Closed · opens ${time}`,
   driveText: (distance: string, minutes: number) => `${distance} · ${minutes} min drive`,
   awayText: (distance: string) => `${distance} away`,
-  goodMorning: "Good morning",
-  goodAfternoon: "Good afternoon",
-  goodEvening: "Good evening",
   orderBy: (time: string, fewLeft: boolean) => `${fewLeft ? "Few left · " : ""}Order by ${time}`,
   express: "Express",
   scheduledDelivery: "Scheduled delivery",
@@ -116,15 +114,8 @@ export const home = {
   everyStore: "Every store: pay online, or cash/UPI on delivery · free pickup from the store",
   enableLocation: "Enable location",
   turnOnLocation: "Turn on location to see the stores that deliver to you.",
-  noDelivery: "We don't deliver to your location yet, but you can still browse our stores.",
-  storesDeliver: (n: number, fastest: number | null | undefined) => {
-    const count = n === 1 ? "1 store delivers" : `${n} stores deliver`;
-    return fastest ? `${count} to you, the fastest in ${fastest} minutes.` : `${count} to you.`;
-  },
   noStoresYet: "No stores yet",
   comingSoon: "Martly is coming to your area soon. Pull down to check again.",
-  chooseYourStore: "Choose your store",
-  notDeliverYet: "Doesn't deliver to your location yet",
   offerBanner: "Offer banner",
   storePoster: "Store poster",
   storePhoto: "Store photo",
@@ -137,8 +128,8 @@ export const home = {
   seeOfferAt: (store: string) => `See this offer at ${store}?`,
   switchFrom: (from: string, to: string) => `You'll switch from ${from} to ${to}.`,
   startShopping: (store: string) => `You'll start shopping at ${store}.`,
-  cartKept: (cartStore: string, n: number, store: string) =>
-    `\n\nYour cart from ${cartStore} (${n} item${n === 1 ? "" : "s"}) is kept until you add something from ${store}.`,
+  cartMoves: (n: number, store: string) =>
+    `\n\nYour cart (${n} item${n === 1 ? "" : "s"}) moves to ${store} at its prices.`,
   notNow: "Not now",
   switchAndSee: "Switch & see offer",
   signOff: "Your neighbourhood store,\nnow in your pocket ❤️",

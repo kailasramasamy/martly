@@ -80,6 +80,10 @@ export const RESOURCE_PERMISSIONS = {
   // Marketing
   banners: P.MARKETING_MANAGE,
   promos: P.MARKETING_MANAGE,
+  // Offers change what a listing sells for, so they follow the price duty rather than marketing
+  offers: P.LISTING_PRICES,
+  // How rich the store looks, what's working, and AI drafts to fill the gaps
+  storefront: P.MARKETING_MANAGE,
   "festival-events": { list: P.MARKETING_MANAGE },
   coupons: P.MARKETING_MANAGE,
   reviews: P.MARKETING_MANAGE,

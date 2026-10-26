@@ -28,12 +28,13 @@ import { HomeSectionView } from "../../components/home/sections";
 import { HomeSectionProvider, type HomeSectionEnv } from "../../components/home/sections/context";
 import { useLightStatusBar } from "../../lib/use-light-status-bar";
 import { useHomeSections, type MobileHomeSection } from "../../lib/use-home-sections";
-import { heroHeaderTheme, withoutHeroDuplicates } from "../../components/home/hero-cards/hero-theme";
+import { heroHeaderTheme } from "../../components/home/hero-cards/hero-theme";
+import { withoutHeroDuplicates } from "@martly/shared/home";
 import { refreshBrandSpotlight } from "../../lib/use-brand-spotlight";
 import type { HomeTheme } from "@martly/shared/types";
 import { TabBottomDock } from "../../components/TabIcon";
+import { recordSectionView } from "../../lib/home-events";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
-import { StoreDiscoveryButton, useStoreDiscovery, type StoreDiscoveryState } from "../../components/store-discovery/StoreDiscovery";
 
 const THEMED_LEADS = new Set<string>(["FESTIVE_HERO", "HERO_CARDS"]);
 const renderSection: ListRenderItem<MobileHomeSection> = ({ item }) => <HomeSectionView section={item} />;
@@ -134,18 +135,19 @@ interface ListProps {
   headerOffset: number;
   /** False while there is no store to render against, e.g. the render where it clears before the stale sections do */
   ready: boolean;
-  discovery: StoreDiscoveryState;
   onHeroInView: (inView: boolean) => void;
 }
 
 const HERO_VIEWABILITY = { itemVisiblePercentThreshold: 30 };
 
-function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, ready, discovery, onHeroInView }: ListProps) {
+function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, ready, onHeroInView }: ListProps) {
   const { home, refreshing, onRefresh } = data;
   const { tabBarScroll } = scroll;
+  const storeId = home.storeId;
   const onViewableItemsChanged = useCallback(({ viewableItems }: { viewableItems: ViewToken<MobileHomeSection>[] }) => {
     onHeroInView(viewableItems.some((v) => THEMED_LEADS.has(v.item.type)));
-  }, [onHeroInView]);
+    for (const v of viewableItems) recordSectionView(storeId, { sectionId: v.item.id, sectionType: v.item.type });
+  }, [onHeroInView, storeId]);
   return (
     <FlatList
       ref={scroll.listRef}
@@ -171,7 +173,6 @@ function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, ready
           loading={home.loading && home.sections.length === 0}
           loadingMore={home.loadingMore}
           reachedEnd={home.reachedEnd && home.sections.length > 0}
-          discovery={discovery}
         />
       }
       refreshControl={
@@ -188,12 +189,11 @@ function SectionList({ data, scroll, dockHeight, festiveInk, headerOffset, ready
 }
 
 export default function HomeScreen() {
-  const { selectedStore, loading: storesLoading, userArea } = useStore();
+  const { selectedStore, loading: storesLoading, userArea, deliversToYou } = useStore();
   const data = useHomeData();
   const scroll = useHomeScroll();
   const header = useHeaderHeights(scroll.tabBarScroll.headerCollapsed);
   const [heroInView, setHeroInView] = useState(true);
-  const discovery = useStoreDiscovery();
   const { env, festive } = useSectionEnv(data, header.expanded, heroInView);
   useLightStatusBar(Boolean(festive?.dark));
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
@@ -208,6 +208,7 @@ export default function HomeScreen() {
         <HomeHeader
           store={selectedStore}
           userArea={userArea}
+          pickupOnly={deliversToYou === false}
           onPickStore={() => router.push("/choose-store")}
           festive={festive}
           collapsed={scroll.tabBarScroll.headerCollapsed}
@@ -216,15 +217,14 @@ export default function HomeScreen() {
           searchHintTranslations={chrome?.searchHintTranslations}
         />
         <HomeSectionProvider value={env}>
-          <SectionList data={data} scroll={scroll} dockHeight={dockHeight} festiveInk={festive?.title ?? null} headerOffset={header.expanded} ready={env !== null} discovery={discovery} onHeroInView={setHeroInView} />
+          <SectionList data={data} scroll={scroll} dockHeight={dockHeight} festiveInk={festive?.title ?? null} headerOffset={header.expanded} ready={env !== null} onHeroInView={setHeroInView} />
         </HomeSectionProvider>
         {/* iOS draws the pull-to-refresh spinner under the floating festive header (its offset is Android-only), so show one below it */}
         {festive && Platform.OS === "ios" && data.refreshing ? (
           <Loader color={festive.title} style={[styles.festiveRefresh, { top: header.expanded + 12 }]} />
         ) : null}
         <BackToTopPill visible={scroll.showBackToTop} top={header.height + 8} onPress={scroll.scrollToTop} />
-        <TabBottomDock onLayout={(e) => setDockHeight(e.nativeEvent.layout.height)} noTabBar={!selectedStore}>
-          {!selectedStore && <StoreDiscoveryButton discovery={discovery} />}
+        <TabBottomDock onLayout={(e) => setDockHeight(e.nativeEvent.layout.height)}>
           <FreeDeliveryBar threshold={chrome?.freeDeliveryThreshold ?? null} storeId={selectedStore?.id} />
           <FloatingCart aboveTabBar />
         </TabBottomDock>

@@ -11,6 +11,7 @@ import { statusMeta } from "./status";
 import type { OrderSummary } from "./types";
 import { cardStyles } from "./card-styles";
 import { ItemThumbs } from "./ItemThumbs";
+import { StoreMark } from "../StoreMark";
 
 interface Props {
   order: OrderSummary;
@@ -34,9 +35,11 @@ export const OrderHistoryCard = memo(function OrderHistoryCard({ order, reorderi
       <View style={styles.body}>
         <View style={styles.headRow}>
           <View style={styles.store}>
-            <View style={styles.storeMark}>
-              <Text style={styles.storeMarkText}>{order.store.name.charAt(0).toUpperCase()}</Text>
-            </View>
+            <StoreMark storeId={order.store.id} logoUrl={order.store.logoUrl} size={24} fallback={(
+              <View style={styles.storeMark}>
+                <Text style={styles.storeMarkText}>{order.store.name.charAt(0).toUpperCase()}</Text>
+              </View>
+            )} />
             <Text style={styles.storeName} numberOfLines={1}>{getLocalizedName(order.store)}</Text>
           </View>
           <View style={[cardStyles.pill, { backgroundColor: meta.bg }]}>

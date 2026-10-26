@@ -10,9 +10,18 @@ import { activeDealRows, buyAgainProducts, pastOrderLines } from "../../services
 import { liveFestiveHeroes } from "../../services/festive-hero.js";
 import { homeSectionsRoutes } from "./sections.js";
 import { storeBanners } from "../../services/marketing/banner-feed.js";
+import { homeSectionEventsSchema } from "@martly/shared/schemas";
+import { recordHomeSectionEvents } from "../../services/storefront/events.js";
 
 export async function homeRoutes(app: FastifyInstance) {
   await app.register(homeSectionsRoutes);
+
+  // Views, taps and cart adds per Home section, batched by the shopper app; guests count too, so no login
+  app.post("/events", async (request) => {
+    const { storeId, events } = homeSectionEventsSchema.parse(request.body);
+    const recorded = await recordHomeSectionEvents(app.prisma, storeId, events);
+    return { success: true, data: { recorded } } satisfies ApiResponse<{ recorded: number }>;
+  });
 
   app.get<{ Params: { storeId: string } }>(
     "/:storeId",

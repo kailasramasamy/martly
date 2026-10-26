@@ -43,14 +43,6 @@ export function distanceText(store: Store): string | null {
   return store.distance != null ? strings("home").awayText(formatDistance(store.distance)) : null;
 }
 
-export function getGreeting(now = new Date()): string {
-  const hour = now.getHours();
-  const t = strings("home");
-  if (hour < 12) return t.goodMorning;
-  if (hour < 17) return t.goodAfternoon;
-  return t.goodEvening;
-}
-
 /** "Today", "Tomorrow" or the weekday for an IST date key */
 export function dayLabel(dateKey: string, now = new Date()): string {
   const today = new Date(now.getTime() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);

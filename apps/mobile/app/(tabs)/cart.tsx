@@ -24,6 +24,7 @@ import { useRequireSignIn } from "../../lib/sign-in-context";
 import { useStrings } from "../../lib/i18n/use-strings";
 import { useAuth } from "../../lib/auth-context";
 import { SaveAsMonthlyList } from "../../components/monthly-list/SaveAsMonthlyList";
+import { StoreMark } from "../../components/StoreMark";
 
 export default function CartScreen() {
   const requireSignIn = useRequireSignIn();
@@ -74,9 +75,11 @@ export default function CartScreen() {
       <View style={styles.container}>
         {/* Store Header */}
         <View style={styles.storeHeader}>
-          <View style={styles.storeIconWrap}>
-            <Ionicons name="storefront" size={16} color={colors.primary} />
-          </View>
+          <StoreMark storeId={storeId} size={36} fallback={(
+            <View style={styles.storeIconWrap}>
+              <Ionicons name="storefront" size={16} color={colors.primary} />
+            </View>
+          )} />
           <View style={styles.storeInfo}>
             <Text style={styles.storeName}>{storeName}</Text>
             <Text style={styles.itemCountLabel}>{t.itemsInCart(itemCount)}</Text>

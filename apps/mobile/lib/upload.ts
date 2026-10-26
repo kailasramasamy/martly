@@ -29,3 +29,9 @@ export async function uploadBrandLogo(uri: string, removeBackground: boolean): P
   const res = await api.upload<BrandLogo>(`/api/v1/brands/logo?removeBackground=${removeBackground}`, imageForm(uri));
   return res.data;
 }
+
+/** Upload a store logo: the API trims it to the mark, so wide and tall logos both fill their space */
+export async function uploadLogo(uri: string): Promise<string> {
+  const res = await api.upload<{ url: string }>("/api/v1/uploads?kind=logo", imageForm(uri));
+  return res.data.url;
+}

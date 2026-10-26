@@ -6,7 +6,7 @@ import type { Town } from "@martly/shared/types";
 
 import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../ReadableSection";
-import { ImageUpload } from "../ImageUpload";
+import { ImageUpload, logoUpload } from "../ImageUpload";
 import { TownSelect } from "../TownSelect";
 import { MapPreview, PlaceSearch } from "./PlaceSearch";
 import type { BusinessDraft } from "./BusinessStep";
@@ -71,7 +71,7 @@ function DeliveryCard() {
         </Row>
       </Card>
       <Card size="small" title={sectionTitle(<PictureOutlined />, "Logo")} style={{ marginTop: 16 }}>
-        <Form.Item name="logoUrl" extra="Square, on a plain or transparent background" style={{ marginBottom: 0 }}><ImageUpload /></Form.Item>
+        <Form.Item name="logoUrl" extra="Any shape, on a plain or transparent background" style={{ marginBottom: 0 }}><ImageUpload upload={logoUpload} /></Form.Item>
       </Card>
     </>
   );

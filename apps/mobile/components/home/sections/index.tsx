@@ -34,6 +34,8 @@ import { RecipesSection } from "./system/RecipesSection";
 import { StoreWalkSection } from "./system/StoreWalkSection";
 import { StorePostsSection } from "./system/StorePostsSection";
 import { HeroCardsSection } from "../hero-cards/HeroCardsSection";
+import { useStore } from "../../../lib/store-context";
+import { SectionSourceProvider } from "../../../lib/section-source";
 
 type SectionOf<K extends HomeSectionType> =
   K extends "PRODUCT_ROW" ? ProductRow<StoreProduct>
@@ -86,6 +88,12 @@ const SECTIONS: Registry = {
 };
 
 export const HomeSectionView = memo(function HomeSectionView({ section }: { section: MobileHomeSection }) {
+  const { selectedStore } = useStore();
   const Section = SECTIONS[section.type] as ComponentType<{ section: MobileHomeSection }> | undefined;
-  return Section ? <Section section={section} /> : null;
+  if (!Section) return null;
+  return (
+    <SectionSourceProvider storeId={selectedStore?.id} sectionId={section.id} sectionType={section.type}>
+      <Section section={section} />
+    </SectionSourceProvider>
+  );
 });

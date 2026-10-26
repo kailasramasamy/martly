@@ -7,7 +7,7 @@ import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import type { JwtUser } from "../../types/jwt.js";
-import { brandVisibility, uniqueBrandSlug } from "../../services/brands.js";
+import { brandVisibility, storeBrands, uniqueBrandSlug } from "../../services/brands.js";
 import { cleanLogo } from "../../services/brand-logo.js";
 import { putObject } from "../../services/media.js";
 import { brandSpotlight } from "../../services/brand-spotlight.js";
@@ -112,15 +112,7 @@ export async function brandRoutes(app: FastifyInstance) {
     if (!store) return reply.notFound("Store not found");
     const limit = Math.min(Math.max(Number((request.query as { limit?: string }).limit) || 50, 1), 200);
 
-    const brands = await app.prisma.$queryRaw<{ id: string; name: string; imageUrl: string | null; themeColor: string | null; productCount: number }[]>`
-      SELECT b.id, b.name, b.image_url AS "imageUrl", b.theme_color AS "themeColor", COUNT(DISTINCT p.id)::int AS "productCount"
-      FROM store_products sp
-      JOIN products p ON p.id = sp.product_id
-      JOIN brands b ON b.id = p.brand_id
-      WHERE sp.store_id = ${store.id} AND sp.is_active = true AND p.is_active = true
-      GROUP BY b.id
-      ORDER BY (b.theme_color IS NOT NULL) DESC, "productCount" DESC, b.name ASC
-      LIMIT ${limit}`;
+    const brands = await storeBrands(app.prisma, store.id, limit);
 
     const response: ApiResponse<typeof brands> = { success: true, data: brands };
     return response;

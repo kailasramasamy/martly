@@ -41,9 +41,10 @@ export const catalog = {
   addedToBasket: "Added to tomorrow's basket",
   signInWishlist: "Sign in to save to your wishlist",
   signInReview: "Sign in to write a review",
-  replaceCartTitle: "Replace Cart?",
-  replaceCartMessage: "Your cart has items from another store. Adding this item will replace your current cart.",
-  replaceCartConfirm: "Replace",
+  replaceCartTitle: "Move your cart here?",
+  replaceCartMessage: (from: string, to: string) =>
+    `Your cart is from ${from}. An order comes from one store, so your items move to ${to} at its prices. Anything it doesn't sell is left out.`,
+  replaceCartConfirm: "Move my cart here",
   wishlistSignIn: "Sign in to save to wishlist",
   wishlistAdded: "Added to wishlist",
   wishlistRemoved: "Removed from wishlist",

@@ -91,3 +91,23 @@ export const heroCards: SectionResolver = async (ctx, entry) => {
   const cards = built.filter((c, i) => built.findIndex((o) => o.id === c.id) === i);
   return cards.length >= HERO_MIN_CARDS ? { ...sectionBase(entry), type: "HERO_CARDS", cards } : null;
 };
+
+/** Each card the layout asks for and whether the store has enough for it, for the storefront health check */
+export async function heroCardReadiness(ctx: ResolveContext, entry: { config: Record<string, unknown> }) {
+  const config = homeSectionConfigSchemas.HERO_CARDS.parse(entry.config);
+  const ids = config.cards.flatMap((c) => ("collectionId" in c && c.collectionId ? [c.collectionId] : []));
+  const [built, named, bought] = await Promise.all([
+    Promise.all(config.cards.map((card) => buildCard(ctx, config, card))),
+    ctx.prisma.collection.findMany({ where: { id: { in: ids } }, select: { id: true, title: true } }),
+    config.cards.some((c) => c.kind === "MOST_BOUGHT") ? mostBought(ctx.prisma, ctx.store.id, HERO_MOST_BOUGHT_PRODUCTS) : [],
+  ]);
+  const titles = new Map(named.map((c) => [c.id, c.title]));
+  return config.cards.map((card, i) => {
+    const collectionId = "collectionId" in card ? card.collectionId : undefined;
+    const shown = built[i];
+    const title = collectionId ? titles.get(collectionId) : shown && "collection" in shown ? shown.collection.title : undefined;
+    // Most bought fills from orders alone, so the owner sees how far along it is
+    const progress = card.kind === "MOST_BOUGHT" && { have: bought.length, need: HERO_MOST_BOUGHT_PRODUCTS };
+    return { kind: card.kind, ready: shown !== null, ...(collectionId && { collectionId }), ...(title && { title }), ...progress };
+  });
+}

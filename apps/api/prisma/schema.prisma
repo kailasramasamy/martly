@@ -611,8 +611,10 @@ model Store {
   stockCounts           StockCount[]
   catalogDrafts         CatalogDraft[]
 
-  bannerStats   BannerStatDaily[]
-  wishlistItems WishlistItem[]
+  bannerStats      BannerStatDaily[]
+  homeSectionStats HomeSectionStatDaily[]
+  healthSnapshots  StorefrontHealthSnapshot[]
+  wishlistItems    WishlistItem[]
 
   @@unique([townId, slug])
   @@map("stores")
@@ -791,20 +793,20 @@ model Category {
 }
 
 model Subcategory {
-  id           String   @id @default(uuid())
+  id           String          @id @default(uuid())
   name         String
-  slug         String   @unique
-  categoryId   String   @map("category_id")
-  sortOrder    Int      @default(0) @map("sort_order")
-  imageUrl     String?  @map("image_url")
-  translations Json?    @map("translations")
+  slug         String          @unique
+  categoryId   String          @map("category_id")
+  sortOrder    Int             @default(0) @map("sort_order")
+  imageUrl     String?         @map("image_url")
+  translations Json?           @map("translations")
   // Words shoppers use for this aisle ("shaving" → Razor & Blades); search matches products here by intent
-  searchTerms  String[] @default([]) @map("search_terms")
+  searchTerms  String[]        @default([]) @map("search_terms")
   // Used up and bought again (milk, detergent); off for durables and seasonal items, which reorder suggestions skip
-  restockable  Boolean  @default(true)
+  restockable  Boolean         @default(true)
   tier         SubcategoryTier @default(STANDARD)
-  createdAt    DateTime @default(now()) @map("created_at")
-  updatedAt    DateTime @updatedAt @map("updated_at")
+  createdAt    DateTime        @default(now()) @map("created_at")
+  updatedAt    DateTime        @updatedAt @map("updated_at")
 
   category    Category     @relation(fields: [categoryId], references: [id])
   products    Product[]
@@ -847,6 +849,8 @@ model Brand {
 model Product {
   id                  String       @id @default(uuid())
   name                String
+  /// martlyshop.in/p/{slug}; a database trigger makes it from the name on insert and it never changes after
+  slug                String       @unique @default(dbgenerated())
   description         String?
   imageUrl            String?      @map("image_url")
   subcategoryId       String?      @map("subcategory_id")
@@ -882,9 +886,9 @@ model Product {
 
   searchText String @default("") @map("search_text")
 
-  organization     Organization?     @relation(fields: [organizationId], references: [id])
-  subcategory      Subcategory?      @relation(fields: [subcategoryId], references: [id])
-  brand            Brand?            @relation(fields: [brandId], references: [id])
+  organization     Organization?      @relation(fields: [organizationId], references: [id])
+  subcategory      Subcategory?       @relation(fields: [subcategoryId], references: [id])
+  brand            Brand?             @relation(fields: [brandId], references: [id])
   variants         ProductVariant[]
   storeProducts    StoreProduct[]
   orderItems       OrderItem[]
@@ -1070,10 +1074,13 @@ model OrderItem {
   freeQuantity  Int           @default(0) @map("free_quantity")
 
   /// Units the customer handed back to the rider at the door
-  refusedQuantity  Int           @default(0) @map("refused_quantity")
-  refusedReason    RefuseReason? @map("refused_reason")
+  refusedQuantity   Int           @default(0) @map("refused_quantity")
+  refusedReason     RefuseReason? @map("refused_reason")
   /// Set on a free item sent to replace a returned one
-  replacesReturnId String?       @map("replaces_return_id")
+  replacesReturnId  String?       @map("replaces_return_id")
+  /// The Home section the shopper added it from, for the storefront's "what's working"
+  sourceSectionId   String?       @map("source_section_id")
+  sourceSectionType String?       @map("source_section_type")
 
   order              Order               @relation(fields: [orderId], references: [id])
   product            Product             @relation(fields: [productId], references: [id])
@@ -2700,6 +2707,38 @@ model BannerStatDaily {
   @@id([bannerId, storeId, date])
   @@index([storeId, date])
   @@map("banner_stats_daily")
+}
+
+/// Shopper views, taps and cart adds per Home section per store per day
+model HomeSectionStatDaily {
+  storeId     String   @map("store_id")
+  /// The layout entry's id (saved section or default layout key)
+  sectionId   String   @map("section_id")
+  sectionType String   @map("section_type")
+  date        DateTime @db.Date
+  views       Int      @default(0)
+  taps        Int      @default(0)
+  cartAdds    Int      @default(0) @map("cart_adds")
+
+  store Store @relation(fields: [storeId], references: [id], onDelete: Cascade)
+
+  @@id([storeId, sectionId, date])
+  @@index([storeId, date])
+  @@map("home_section_stats_daily")
+}
+
+/// A store's storefront health score once a day, for its trend
+model StorefrontHealthSnapshot {
+  storeId String   @map("store_id")
+  date    DateTime @db.Date
+  score   Int
+  /// Score per group, e.g. { LOOKS: 40, DEALS: 75 }
+  groups  Json
+
+  store Store @relation(fields: [storeId], references: [id], onDelete: Cascade)
+
+  @@id([storeId, date])
+  @@map("storefront_health_snapshots")
 }
 
 /// A brand the store owner promotes in their stores (a distributor deal, a local favourite), ranked like their own brands

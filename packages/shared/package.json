@@ -11,7 +11,8 @@
     "./order-flow": "./src/order-flow/index.ts",
     "./listing": "./src/listing/index.ts",
     "./offers": "./src/offers/index.ts",
-    "./store-voice": "./src/store-voice/index.ts"
+    "./store-voice": "./src/store-voice/index.ts",
+    "./home": "./src/home/index.ts"
   },
   "dependencies": {
     "zod": "^3.24"

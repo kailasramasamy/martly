@@ -10,16 +10,17 @@ const SCREEN_HEIGHT = Dimensions.get("window").height;
 // Room kept between the sheet and the status bar
 const TOP_GAP = 12;
 
-/** iOS keyboard height while it's up; Android resizes the window itself, so it stays 0 there */
-function useKeyboardHeight() {
-  const [height, setHeight] = useState(0);
+/** Whether the keyboard is up, and its iOS height; Android resizes the window itself, so height stays 0 there */
+function useKeyboard() {
+  const [keyboard, setKeyboard] = useState({ visible: false, height: 0 });
   useEffect(() => {
-    if (Platform.OS !== "ios") return;
-    const show = Keyboard.addListener("keyboardWillShow", (e) => setHeight(e.endCoordinates.height));
-    const hide = Keyboard.addListener("keyboardWillHide", () => setHeight(0));
+    const ios = Platform.OS === "ios";
+    const show = Keyboard.addListener(ios ? "keyboardWillShow" : "keyboardDidShow", (e) =>
+      setKeyboard({ visible: true, height: ios ? e.endCoordinates.height : 0 }));
+    const hide = Keyboard.addListener(ios ? "keyboardWillHide" : "keyboardDidHide", () => setKeyboard({ visible: false, height: 0 }));
     return () => { show.remove(); hide.remove(); };
   }, []);
-  return height;
+  return keyboard;
 }
 
 interface BottomSheetProps {
@@ -34,16 +35,18 @@ interface BottomSheetProps {
   scrollable?: boolean;
   /** A centred title with more room around it, for showcase sheets rather than forms and lists */
   centeredTitle?: boolean;
+  /** Hide the footer while typing, for list sheets whose footer only closes them */
+  hideFooterWhileTyping?: boolean;
 }
 
-export function BottomSheet({ visible, title, onClose, children, footer, flush, scrollable, centeredTitle }: BottomSheetProps) {
+export function BottomSheet({ visible, title, onClose, children, footer, flush, scrollable, centeredTitle, hideFooterWhileTyping }: BottomSheetProps) {
   const common = useStrings("common");
   const insets = useSafeAreaInsets();
   const { height: windowHeight } = useWindowDimensions();
-  const keyboard = useKeyboardHeight();
+  const keyboard = useKeyboard();
   const reveal = useKeyboardReveal();
   // Never taller than the space between the status bar and the keyboard, so the header can't slide under the clock
-  const maxHeight = Math.min(windowHeight * 0.8, windowHeight - keyboard - insets.top - TOP_GAP);
+  const maxHeight = Math.min(windowHeight * 0.8, windowHeight - keyboard.height - insets.top - TOP_GAP);
   const [mounted, setMounted] = useState(visible);
   const backdrop = useRef(new Animated.Value(0)).current;
   const translateY = useRef(new Animated.Value(SCREEN_HEIGHT)).current;
@@ -79,7 +82,7 @@ export function BottomSheet({ visible, title, onClose, children, footer, flush, 
               </ScrollView>
             ) : children}
           </View>
-          {footer ? <View style={!flush && styles.footer}>{footer}</View> : null}
+          {footer && !(hideFooterWhileTyping && keyboard.visible) ? <View style={!flush && styles.footer}>{footer}</View> : null}
         </Animated.View>
       </KeyboardAvoidingView>
     </Modal>

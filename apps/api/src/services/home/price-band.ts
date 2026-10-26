@@ -1,7 +1,9 @@
 import { HOME_DEALS_PAGE_SIZE } from "@martly/shared/constants";
-import type { PriceBandChip, PriceBandPage } from "@martly/shared/types";
+import { parseHomeSectionConfig } from "@martly/shared/schemas";
+import type { PriceBand, PriceBandChip, PriceBandDealsPage, PriceBandPage } from "@martly/shared/types";
 import { Prisma, type PrismaClient } from "../../../generated/prisma/client.js";
 import { enrichStoreProduct, STORE_PRODUCT_INCLUDE } from "../store-feed.js";
+import { liveCollection } from "./resolvers/collection.js";
 
 export interface BandFilter {
   storeId: string;
@@ -76,4 +78,25 @@ export async function bandProducts(prisma: PrismaClient, f: BandFilter, page: nu
 export async function bandPage(prisma: PrismaClient, f: BandFilter, page: number): Promise<PriceBandPage> {
   const [chips, list] = await Promise.all([bandChips(prisma, { ...f, categoryId: undefined }), bandProducts(prisma, f, page)]);
   return { chips, ...list };
+}
+
+/** A live price-band deals section of the store's organisation, with the collection it narrows to; null when gone */
+export async function dealsSection(prisma: PrismaClient, store: { id: string; organizationId: string }, sectionId: string, now: Date) {
+  const section = await prisma.homeSection.findFirst({
+    where: { id: sectionId, organizationId: store.organizationId, type: "PRICE_BAND_DEALS", isActive: true },
+    select: { title: true, translations: true, collectionId: true, config: true },
+  });
+  if (!section) return null;
+  const { bands, headline } = parseHomeSectionConfig("PRICE_BAND_DEALS", section.config) as {
+    bands: Omit<PriceBand, "id">[]; headline?: string;
+  };
+  const collection = section.collectionId ? await liveCollection({ prisma, store, userId: "", now }, section.collectionId) : null;
+  if (section.collectionId && !collection) return null;
+  return {
+    title: section.title,
+    headline: headline ?? null,
+    bands: bands.map((b, i) => ({ id: String(i), ...b })),
+    translations: section.translations as PriceBandDealsPage["section"]["translations"],
+    collectionId: collection?.id ?? null,
+  };
 }

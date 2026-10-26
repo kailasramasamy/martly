@@ -8,8 +8,8 @@ import { authenticate } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { DEFAULT_LAYOUT } from "../../services/home/default-layout.js";
-import { expandLayout, SECTION_INCLUDE, toEntry } from "../../services/home/layout.js";
-import { RESOLVERS } from "../../services/home/registry.js";
+import { SECTION_INCLUDE, toEntry } from "../../services/home/layout.js";
+import { sectionVisibility } from "../../services/home/visibility.js";
 import { paintTiles } from "../../services/home/tile-art.js";
 import { refundAiImages, withAiImages } from "../../services/marketing/ai-images.js";
 import { meteredOrg } from "../../services/marketing/metered-org.js";
@@ -19,6 +19,13 @@ const GRID_TYPES: string[] = ["EXPLORE_GRID", "STORE_GRID"];
 
 const badRequest = (message: string) => Object.assign(new Error(message), { statusCode: 400 });
 const json = (value: unknown) => value as Prisma.InputJsonValue;
+
+// Collections a hero carousel's cards and "Right now" slots point at
+function configCollections(type: string, config: Record<string, unknown>) {
+  if (type !== "HERO_CARDS") return [];
+  const hero = config as { cards: { collectionId?: string }[]; rightNow: Record<string, string> };
+  return [...hero.cards.map((c) => c.collectionId), ...Object.values(hero.rightNow)];
+}
 
 // The organisation being edited: the caller's own, or the one a SUPER_ADMIN names
 function layoutOrg(request: FastifyRequest, reply: FastifyReply) {
@@ -77,7 +84,7 @@ export async function homeLayoutRoutes(app: FastifyInstance) {
     const config = parseHomeSectionConfig(input.type, input.config);
     if (SECTION_COLLECTION[input.type] === "REQUIRED" && !input.collectionId) throw badRequest("This section needs a collection");
     if (!SECTION_COLLECTION[input.type] && input.collectionId) throw badRequest("This section doesn't take a collection");
-    await assertCollections(organizationId, [input.collectionId]);
+    await assertCollections(organizationId, [input.collectionId, ...configCollections(input.type, config)]);
     const last = await app.prisma.homeSection.aggregate({ where: { organizationId }, _max: { sortOrder: true } });
     const section = await app.prisma.homeSection.create({
       data: {
@@ -94,14 +101,15 @@ export async function homeLayoutRoutes(app: FastifyInstance) {
     const section = await ownSection(request, reply);
     if (!section) return;
     const input = updateHomeSectionSchema.parse(request.body);
-    if (input.collectionId) await assertCollections(section.organizationId, [input.collectionId]);
+    const config = input.config && parseHomeSectionConfig(section.type, input.config);
+    await assertCollections(section.organizationId, [input.collectionId, ...(config ? configCollections(section.type, config) : [])]);
     if (input.collectionId === null && SECTION_COLLECTION[section.type] === "REQUIRED") throw badRequest("This section needs a collection");
     if (input.collectionId && !SECTION_COLLECTION[section.type]) throw badRequest("This section doesn't take a collection");
     const updated = await app.prisma.homeSection.update({
       where: { id: section.id },
       data: {
         title: input.title, subtitle: input.subtitle, translations: input.translations, collectionId: input.collectionId,
-        isActive: input.isActive, ...(input.config ? { config: json(parseHomeSectionConfig(section.type, input.config)) } : {}),
+        isActive: input.isActive, ...(config ? { config: json(config) } : {}),
       },
       include: SECTION_INCLUDE,
     });
@@ -177,11 +185,7 @@ export async function homeLayoutRoutes(app: FastifyInstance) {
     const ctx: ResolveContext = { prisma: app.prisma, store, userId: "", now: new Date() };
     const sections = await app.prisma.homeSection.findMany({ where: { organizationId }, orderBy: { sortOrder: "asc" }, include: SECTION_INCLUDE });
     const entries: LayoutEntry[] = sections.length > 0 ? sections.map(toEntry) : DEFAULT_LAYOUT;
-    const data = await Promise.all(entries.map(async (entry) => {
-      const expanded = await expandLayout(ctx, [entry]);
-      const resolved = await Promise.all(expanded.map((e) => RESOLVERS[e.type](ctx, e)));
-      return { id: entry.id, resolves: resolved.some((s) => s !== null) };
-    }));
+    const data = (await sectionVisibility(ctx, entries)).map(({ entry, resolves }) => ({ id: entry.id, resolves }));
     return { success: true, data };
   });
 }

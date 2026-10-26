@@ -1,6 +1,6 @@
 import { Card, Col, ColorPicker, Form, Input, Row, Select } from "antd";
 import { BgColorsOutlined } from "@ant-design/icons";
-import { ImageUpload } from "../../components/ImageUpload";
+import { ImageUpload, logoUpload } from "../../components/ImageUpload";
 import { MultiImageUpload } from "../../components/MultiImageUpload";
 import { sectionTitle } from "../../theme";
 import { StoreCardPreview } from "./store-card-preview";
@@ -14,7 +14,7 @@ export function BrandingCard() {
       <StoreCardPreview />
       <Row gutter={12}>
         <Col span={12}><Form.Item label="Cover photo" name="imageUrl" tooltip="Wide photo of the store front"><ImageUpload /></Form.Item></Col>
-        <Col span={12}><Form.Item label="Logo" name="logoUrl" tooltip="Square logo; shown as a badge on the store card"><ImageUpload /></Form.Item></Col>
+        <Col span={12}><Form.Item label="Logo" name="logoUrl" tooltip="Any shape, on a plain or transparent background; the empty margins are trimmed"><ImageUpload upload={logoUpload} /></Form.Item></Col>
       </Row>
       <Form.Item label="Brand colour" name="brandColor" tooltip="Usually the main colour of the logo" getValueFromEvent={(_: unknown, hex: string) => hex || null}>
         <ColorPicker showText allowClear disabledAlpha format="hex" />

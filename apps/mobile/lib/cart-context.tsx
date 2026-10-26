@@ -4,6 +4,7 @@ import { lineTotal, type MultiBuyOffer } from "@martly/shared/offers";
 import { useLanguage } from "./language-context";
 import { getBestPrice } from "./membership-context";
 import type { Store, StoreProduct, Translations } from "./types";
+import type { SectionSource } from "./home-events";
 
 const PENDING_COUPON_KEY = "martly_pending_coupon";
 
@@ -20,6 +21,8 @@ export interface CartItem {
   imageUrl: string | null;
   /** Buy X get Y on the line; absent on carts saved before offers, until the cart review brings it */
   offer?: MultiBuyOffer | null;
+  /** The Home section it was first added from, credited on the order */
+  source?: SectionSource;
 }
 
 /** The store's current terms for a line: the price it charges and any buy X get Y running */
@@ -67,6 +70,8 @@ export interface CartState {
   /** Sets lines to the store's current price and offer (keyed by storeProductId) */
   repriceItems: (terms: Map<string, LineTerms>) => void;
   clearCart: () => void;
+  /** Puts these lines in place of the whole cart, e.g. the cart moved to another store */
+  replaceCart: (store: CartStore, lines: CartItem[]) => void;
   /** Undo: puts back lines removed a moment ago at their old positions, unless the cart has moved to another store */
   restoreItems: (store: CartStore, lines: { item: CartItem; index: number }[]) => void;
   totalAmount: number;
@@ -194,6 +199,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setItems([]);
   }, []);
 
+  const replaceCart = useCallback((to: CartStore, lines: CartItem[]) => {
+    setStore(lines.length ? to : null);
+    setItems(lines);
+  }, []);
+
   const restoreItems = useCallback(
     (from: CartStore, lines: { item: CartItem; index: number }[]) => {
       if (storeId && storeId !== from.id) return;
@@ -213,7 +223,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   return (
     <CartContext.Provider
-      value={{ store, storeId, storeName, items, addItem, addItems, removeItem, updateQuantity, replaceItem, repriceItems, clearCart, restoreItems, totalAmount, itemCount, productQuantityMap, pendingCoupon, setPendingCoupon }}
+      value={{ store, storeId, storeName, items, addItem, addItems, removeItem, updateQuantity, replaceItem, repriceItems, clearCart, replaceCart, restoreItems, totalAmount, itemCount, productQuantityMap, pendingCoupon, setPendingCoupon }}
     >
       {children}
     </CartContext.Provider>

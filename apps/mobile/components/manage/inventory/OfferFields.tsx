@@ -2,7 +2,7 @@ import { View, StyleSheet } from "react-native";
 import { TextField } from "../ui/TextField";
 import { DateField } from "../ui/DateField";
 import { SegmentedTabs } from "../ui/SegmentedTabs";
-import type { OfferMode, StoreProductDraft } from "./draft";
+import type { OfferDraft, OfferMode } from "./draft";
 
 const MODES: { value: OfferMode; label: string }[] = [
   { value: "NONE", label: "None" },
@@ -17,8 +17,8 @@ const PRESETS: Partial<Record<OfferMode, { offerBuy: string; offerGet: string }>
 };
 
 interface OfferFieldsProps {
-  draft: StoreProductDraft;
-  onChange: (patch: Partial<StoreProductDraft>) => void;
+  draft: OfferDraft;
+  onChange: (patch: Partial<OfferDraft>) => void;
 }
 
 const digits = (t: string) => t.replace(/[^0-9]/g, "").slice(0, 2);

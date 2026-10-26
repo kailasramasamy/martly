@@ -12,7 +12,7 @@ import type { StoreBanner } from "./StoreDetailPanel";
  * The offer takes the chooser's place, so going back lands on home.
  */
 export function useOfferTap(current: Store | null, switchTo: (store: Store) => void) {
-  const { itemCount, storeName: cartStore } = useCart();
+  const { itemCount, storeId: cartStoreId } = useCart();
   const t = useStrings("home");
   const { getLocalizedName } = useLanguage();
 
@@ -24,9 +24,7 @@ export function useOfferTap(current: Store | null, switchTo: (store: Store) => v
     }
     const name = getLocalizedName(store);
     const from = current ? t.switchFrom(getLocalizedName(current), name) : t.startShopping(name);
-    const cart = itemCount > 0 && cartStore
-      ? t.cartKept(cartStore, itemCount, name)
-      : "";
+    const cart = itemCount > 0 && cartStoreId !== store.id ? t.cartMoves(itemCount, name) : "";
     Alert.alert(t.seeOfferAt(name), from + cart, [
       { text: t.notNow, style: "cancel" },
       { text: t.switchAndSee, onPress: () => { switchTo(store); openBannerTarget(banner, "replace"); } },

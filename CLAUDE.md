@@ -11,6 +11,7 @@ apps/
   admin/     → React 19 + Vite + Refine + Ant Design 5 (port 7000)
   api/       → Fastify 5 + Prisma 6 + PostgreSQL (port 7001)
   mobile/    → React Native + Expo 54 + Expo Router (port 8081)
+  web/       → martlyshop.in: TanStack Start (SSR) + Tailwind 4 (port 7002)
 packages/
   shared/    → Zod schemas, TypeScript types, enums
 ```
@@ -27,6 +28,7 @@ packages/
 | `pnpm --filter @martly/admin dev` | Start admin only |
 | `pnpm --filter @martly/api dev` | Start API only |
 | `pnpm --filter @martly/mobile dev` | Start mobile only |
+| `pnpm --filter @martly/web dev` | Start martlyshop.in only |
 
 ## Multi-Tenancy
 
@@ -67,3 +69,4 @@ OTP login sends a real SMS via MSG91 (Indian mobiles only). For testing, use the
 | Store context | `apps/mobile/lib/store-context.tsx` |
 | Auth context | `apps/mobile/lib/auth-context.tsx` |
 | Mobile types | `apps/mobile/lib/types.ts` |
+| Website (martlyshop.in) | `apps/web/src/routes/`, docs in `docs/web.md` |

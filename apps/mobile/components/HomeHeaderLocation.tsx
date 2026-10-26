@@ -4,25 +4,27 @@ import { colors, fonts } from "../constants/theme";
 import { useStrings } from "../lib/i18n/use-strings";
 import { useLanguage } from "../lib/language-context";
 import type { Store } from "../lib/types";
+import { StoreMark } from "./StoreMark";
 
 interface Props {
   store: Store | null;
   userArea: string | null;
+  pickupOnly: boolean;
   onPress: () => void;
   /** Text colour when the header sits over festive art */
   ink?: string | null;
 }
 
-// Home header: leads with the delivery promise once a store is chosen, otherwise with the user's area
-export function HomeHeaderLocation({ store, userArea, onPress, ink }: Props) {
+// Home header: leads with the delivery promise once a store is chosen (or says it is pickup only), otherwise with the user's area
+export function HomeHeaderLocation({ store, userArea, pickupOnly, onPress, ink }: Props) {
   const t = useStrings("home");
   const { getLocalizedName } = useLanguage();
   const name = store ? getLocalizedName(store) : "";
-  const eta = store?.expressEtaMinutes;
+  const eta = pickupOnly ? null : store?.expressEtaMinutes;
   const headline = store
     ? eta ? t.deliveryInMinutes(eta) : name
     : userArea ?? t.chooseStore;
-  const caption = store ? (eta ? name : t.deliveringFrom) : t.deliveringTo;
+  const caption = store ? (eta ? name : pickupOnly ? t.pickupOnly : t.deliveringFrom) : t.deliveringTo;
   const strong = ink ? { color: ink } : null;
   const soft = ink ? { color: ink, opacity: 0.8 } : null;
   const chevron = ink ?? colors.textSecondary;
@@ -34,13 +36,19 @@ export function HomeHeaderLocation({ store, userArea, onPress, ink }: Props) {
       accessibilityRole="button"
       accessibilityLabel={t.locationA11y(headline, caption)}
     >
-      <View style={[styles.icon, eta ? styles.iconFast : null]}>
-        <Ionicons name={eta ? "flash" : "location-sharp"} size={18} color={eta ? "#b45309" : colors.primary} />
-      </View>
+      {/* The store's logo stands in for the pin; the express promise then moves beside the headline */}
+      {store?.logoUrl ? <StoreMark storeId={store.id} logoUrl={store.logoUrl} size={38} /> : (
+        <View style={[styles.icon, eta ? styles.iconFast : null]}>
+          <Ionicons name={eta ? "flash" : "location-sharp"} size={18} color={eta ? "#b45309" : colors.primary} />
+        </View>
+      )}
       <View style={styles.text}>
         {eta ? (
           <>
-            <Text style={[styles.headline, strong]} numberOfLines={1}>{headline}</Text>
+            <View style={styles.captionRow}>
+              {store?.logoUrl ? <Ionicons name="flash" size={15} color={ink ?? "#b45309"} /> : null}
+              <Text style={[styles.headline, strong]} numberOfLines={1}>{headline}</Text>
+            </View>
             <View style={styles.captionRow}>
               <Text style={[styles.caption, soft]} numberOfLines={1}>{caption}</Text>
               <Ionicons name="chevron-down" size={13} color={chevron} />

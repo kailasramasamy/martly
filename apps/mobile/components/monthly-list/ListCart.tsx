@@ -36,6 +36,7 @@ function useListBasket(list: MonthlyList, store: CartStore) {
       replaceItem: (spId, line) => setItems((prev) => prev.map((i) => (i.storeProductId === spId ? line : i))),
       repriceItems: (terms) => setItems((prev) => prev.map((i) => (terms.has(i.storeProductId) ? { ...i, ...terms.get(i.storeProductId)! } : i))),
       clearCart: () => setItems([]),
+      replaceCart: (_, lines) => setItems(lines),
       restoreItems: (_, lines) => setItems((prev) => merge(prev, lines.map((l) => l.item))),
     };
   }, [items, store, getLocalizedName, pendingCoupon, setPendingCoupon]);

@@ -10,6 +10,7 @@ import type { Store } from "../../lib/types";
 import { StoreBrowser } from "./StoreBrowser";
 import { ChooseStoreButton } from "./ChooseStoreButton";
 import { useOfferTap } from "./use-offer-tap";
+import { useMoveCart } from "../../lib/move-cart";
 
 /** All stores with what we know about them from here: nearby ones that deliver first, fastest first */
 function useStoreChoices(search: string): Store[] {
@@ -58,6 +59,22 @@ function useHeaderSearch() {
   return { open, search, setSearch };
 }
 
+/** With location off the list can't tell who delivers to the shopper, so offer to turn it on */
+function LocationPrompt() {
+  const t = useStrings("home");
+  const { locationStatus, requestLocation } = useStore();
+  if (locationStatus !== "denied") return null;
+  return (
+    <View style={styles.location}>
+      <Ionicons name="location-outline" size={16} color={colors.textSecondary} />
+      <Text style={styles.locationText}>{t.turnOnLocation}</Text>
+      <TouchableOpacity style={styles.locationBtn} onPress={requestLocation} accessibilityRole="button">
+        <Text style={styles.locationBtnText}>{t.enableLocation}</Text>
+      </TouchableOpacity>
+    </View>
+  );
+}
+
 /** Full-screen store chooser: tiles to compare, the previewed store in full, and a button to shop there */
 export function ChooseStoreScreen() {
   const t = useStrings("home");
@@ -68,7 +85,14 @@ export function ChooseStoreScreen() {
   const choices = useStoreChoices(search);
   const preview = choices.find((s) => s.id === previewId) ?? choices[0];
 
-  const switchTo = (store: Store) => { if (store.id !== selectedStore?.id) setSelectedStore(store); };
+  const moveCart = useMoveCart();
+  // The cart follows the shopper to the new store; undo goes back to the old store and cart
+  const switchTo = (store: Store) => {
+    const from = selectedStore;
+    if (store.id === from?.id) return;
+    setSelectedStore(store);
+    moveCart(store, [], from ? () => setSelectedStore(from) : undefined);
+  };
   const choose = (store: Store) => { switchTo(store); router.back(); };
   const tapOffer = useOfferTap(selectedStore, switchTo);
 
@@ -76,6 +100,7 @@ export function ChooseStoreScreen() {
     <View style={styles.container}>
       {open && <View style={styles.searchBox}><SearchBar value={search} onChange={setSearch} /></View>}
       <ScrollView contentContainerStyle={styles.body} keyboardDismissMode="on-drag" keyboardShouldPersistTaps="handled">
+        <LocationPrompt />
         {choices.length > 0 ? (
           <StoreBrowser stores={choices} activeId={preview?.id ?? null} onPreview={(s) => setPreviewId(s.id)} isMuted={() => false} inset={16} onBannerPress={tapOffer} />
         ) : (
@@ -105,6 +130,10 @@ const styles = StyleSheet.create({
   searchBox: { paddingHorizontal: 16, paddingVertical: 10, backgroundColor: "#fff", borderBottomWidth: 1, borderBottomColor: "#f1f5f9" },
   body: { padding: 16, paddingBottom: 24 },
   footer: { paddingHorizontal: 16, paddingTop: 10, backgroundColor: "#fff", borderTopWidth: 1, borderTopColor: "#f1f5f9" },
+  location: { flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 14, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 9, backgroundColor: "#f1f5f9" },
+  locationText: { flex: 1, fontFamily: fonts.semibold, fontSize: 13, lineHeight: 18, color: colors.text },
+  locationBtn: { backgroundColor: colors.primary, borderRadius: 10, paddingHorizontal: 12, minHeight: 44, justifyContent: "center" },
+  locationBtnText: { fontFamily: fonts.bold, fontSize: 13, color: "#fff" },
   everywhere: { flexDirection: "row", alignItems: "center", gap: 8, marginTop: 14, padding: 10, borderRadius: 12, backgroundColor: "#f0fdfa" },
   everywhereText: { flex: 1, fontFamily: fonts.semibold, fontSize: 12.5, lineHeight: 17, color: colors.primary },
   searchWrap: {
