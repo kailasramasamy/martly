@@ -23,11 +23,14 @@ function useUnlockedFlash(remaining: number | null) {
   useEffect(() => {
     const crossed = last.current !== null && last.current > 0 && remaining !== null && remaining <= 0;
     last.current = remaining;
-    if (!crossed) return;
-    setFlash(true);
+    if (crossed) setFlash(true);
+  }, [remaining]);
+  // The note's own clock: a cart change while it shows mustn't cancel the hide and leave it up for good
+  useEffect(() => {
+    if (!flash) return;
     const timer = setTimeout(() => setFlash(false), UNLOCKED_MS);
     return () => clearTimeout(timer);
-  }, [remaining]);
+  }, [flash]);
   return flash;
 }
 
