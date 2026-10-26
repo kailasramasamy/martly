@@ -1,4 +1,6 @@
 import { numberText, parseNumber } from "../delivery-config/numbers";
+import { URL_SEGMENT_RULE } from "@martly/shared/constants";
+import type { Town } from "@martly/shared/types";
 import type { StoreDetail } from "./types";
 
 export interface StoreDraft {
@@ -8,8 +10,8 @@ export interface StoreDraft {
   status: string;
   address: string;
   phone: string;
-  state: string | null;
-  district: string;
+  townId: string;
+  town: Town | null;
   latitude: string;
   longitude: string;
   deliveryRadius: string;
@@ -28,7 +30,7 @@ const money = (v: string | null | undefined) => numberText(v === null || v === u
 
 export function emptyDraft(organizationId: string): StoreDraft {
   return {
-    organizationId, name: "", slug: "", status: "PENDING", address: "", phone: "", state: null, district: "", latitude: "", longitude: "",
+    organizationId, name: "", slug: "", status: "PENDING", address: "", phone: "", townId: "", town: null, latitude: "", longitude: "",
     deliveryRadius: "7", baseDeliveryFee: "", freeDeliveryThreshold: "", returnKeepThreshold: "", minOrderAmount: "",
     subscriptionEnabled: false, subscriptionDeliveryMode: "DEDICATED", subscriptionWindowStart: null,
     subscriptionWindowEnd: null, subscriptionCutoffTime: "22:00",
@@ -38,7 +40,7 @@ export function emptyDraft(organizationId: string): StoreDraft {
 export function draftFromStore(s: StoreDetail): StoreDraft {
   return {
     organizationId: s.organizationId, name: s.name, slug: s.slug, status: s.status, address: s.address,
-    phone: s.phone ?? "", state: s.state, district: s.district ?? "", latitude: numberText(s.latitude), longitude: numberText(s.longitude),
+    phone: s.phone ?? "", townId: s.townId, town: s.town, latitude: numberText(s.latitude), longitude: numberText(s.longitude),
     deliveryRadius: numberText(s.deliveryRadius), baseDeliveryFee: money(s.baseDeliveryFee),
     freeDeliveryThreshold: money(s.freeDeliveryThreshold), returnKeepThreshold: money(s.returnKeepThreshold), minOrderAmount: money(s.minOrderAmount),
     subscriptionEnabled: s.subscriptionEnabled, subscriptionDeliveryMode: s.subscriptionDeliveryMode,
@@ -54,7 +56,8 @@ type Built = { payload: Record<string, unknown> } | { error: string };
 function checkRequired(d: StoreDraft, creating: boolean): string | null {
   if (creating && !d.organizationId) return "Choose an organization";
   if (!d.name.trim()) return "Store name is required";
-  if (!/^[a-z0-9-]+$/.test(d.slug)) return "Slug can only use lowercase letters, numbers and hyphens";
+  if (!URL_SEGMENT_RULE.pattern.test(d.slug)) return `Slug: ${URL_SEGMENT_RULE.message}`;
+  if (!d.townId) return "Pick the store's town";
   if (!d.address.trim()) return "Address is required";
   return null;
 }
@@ -77,7 +80,7 @@ export function buildStorePayload(d: StoreDraft, creating: boolean, initial: Sto
   const num = (text: string) => parseNumber(text) ?? clear;
   const core = {
     name: d.name.trim(), slug: d.slug, address: d.address.trim(), phone: d.phone.trim() || clear,
-    state: d.state, district: d.district.trim() || null,
+    townId: d.townId,
     latitude: num(d.latitude), longitude: num(d.longitude), deliveryRadius: parseNumber(d.deliveryRadius) ?? undefined,
     baseDeliveryFee: num(d.baseDeliveryFee), freeDeliveryThreshold: num(d.freeDeliveryThreshold),
     returnKeepThreshold: num(d.returnKeepThreshold), minOrderAmount: num(d.minOrderAmount),

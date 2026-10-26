@@ -542,9 +542,11 @@ model Store {
   id                    String      @id @default(uuid())
   organizationId        String      @map("organization_id")
   name                  String
-  slug                  String      @unique
+  /// Unique within its town: the shop lives at onmartly.in/{town}/{slug}
+  slug                  String
+  townId                String      @map("town_id")
   address               String
-  /// State (INDIAN_STATES name) and district, for region-targeted brand campaigns
+  /// State (INDIAN_STATES name) and district, copied from the town, for region-targeted brand campaigns
   state                 String?
   district              String?
   phone                 String?
@@ -582,6 +584,7 @@ model Store {
   subscriptionCutoffTime   String                   @default("22:00") @map("subscription_cutoff_time")
 
   organization          Organization           @relation(fields: [organizationId], references: [id])
+  town                  Town                   @relation(fields: [townId], references: [id])
   storeProducts         StoreProduct[]
   userStores            UserStore[]
   orders                Order[]
@@ -611,7 +614,25 @@ model Store {
   bannerStats   BannerStatDaily[]
   wishlistItems WishlistItem[]
 
+  @@unique([townId, slug])
   @@map("stores")
+}
+
+/// A town or village Martly lists stores under; the name repeats across districts, the slug never does
+model Town {
+  id        String   @id @default(uuid())
+  name      String
+  slug      String   @unique
+  district  String
+  /// INDIAN_STATES name
+  state     String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  stores Store[]
+
+  @@unique([state, district, name])
+  @@map("towns")
 }
 
 model User {

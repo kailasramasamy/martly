@@ -537,3 +537,4 @@ export type MonthlyListQuote =
 
 export * from "./home.js";
 export * from "./onboarding.js";
+export * from "./towns.js";

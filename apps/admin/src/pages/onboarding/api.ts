@@ -3,7 +3,7 @@ import type {
   UpdateOnboardingInput,
 } from "@martly/shared/schemas";
 import type {
-  ApplyCatalogResult, CatalogProposal, OnboardingSummary, OnboardingTeamMember, ReadinessCheck, StorefrontCopyResult, UnpricedItem,
+  ApplyCatalogResult, CatalogProposal, OnboardingSummary, OnboardingTeamMember, ReadinessCheck, StorefrontCopyResult, Town, UnpricedItem,
 } from "@martly/shared/types";
 import { axiosInstance } from "../../providers/data-provider";
 
@@ -11,8 +11,8 @@ import { axiosInstance } from "../../providers/data-provider";
 export interface OnboardingDetails {
   name: string;
   address: string;
-  state: string | null;
-  district: string | null;
+  townId: string | null;
+  town: Town | null;
   phone: string | null;
   latitude: number | null;
   longitude: number | null;

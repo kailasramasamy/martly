@@ -29,9 +29,15 @@ async function main() {
     },
   });
 
+  const town = await prisma.town.upsert({
+    where: { slug: "dharmapuri" },
+    update: {},
+    create: { slug: "dharmapuri", name: "Dharmapuri", district: "Dharmapuri", state: "Tamil Nadu" },
+  });
+
   // Create demo store
   const store = await prisma.store.upsert({
-    where: { slug: "downtown-mart" },
+    where: { townId_slug: { townId: town.id, slug: "downtown-mart" } },
     update: {},
     create: {
       organizationId: org.id,
@@ -40,6 +46,9 @@ async function main() {
       address: "123 Main Street, Anytown, USA",
       phone: "+1-555-0100",
       status: "ACTIVE",
+      townId: town.id,
+      state: town.state,
+      district: town.district,
     },
   });
 

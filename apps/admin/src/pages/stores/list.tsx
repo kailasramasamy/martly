@@ -1,6 +1,7 @@
 import { List, useTable, EditButton, ShowButton } from "@refinedev/antd";
 import { Avatar, Table, Tag, Form, Select, Space } from "antd";
 import type { HttpError } from "@refinedev/core";
+import type { Town } from "@martly/shared/types";
 
 import { STORE_STATUS_CONFIG } from "../../constants/tag-colors";
 import { DebouncedSearch } from "../../components/DebouncedSearch";
@@ -15,7 +16,7 @@ const STATUS_OPTIONS = [
 
 export const StoreList = () => {
   const { tableProps, searchFormProps } = useTable<
-    { id: string; name: string; slug: string; address: string; status: string; logoUrl: string | null; brandColor: string | null },
+    { id: string; name: string; slug: string; address: string; status: string; logoUrl: string | null; brandColor: string | null; town: Town | null },
     HttpError,
     { q: string; status: string }
   >({
@@ -59,6 +60,7 @@ export const StoreList = () => {
           )}
         />
         <Table.Column dataIndex="slug" title="Slug" />
+        <Table.Column title="Town" render={(_, record: { town: Town | null }) => record.town?.name ?? "—"} />
         <Table.Column dataIndex="address" title="Address" />
         <Table.Column
           dataIndex="status"

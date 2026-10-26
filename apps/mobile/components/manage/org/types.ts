@@ -1,3 +1,5 @@
+import type { Town } from "@martly/shared/types";
+
 export interface StoreRow {
   id: string;
   name: string;
@@ -14,8 +16,8 @@ export interface StoreDetail extends Omit<StoreRow, "organizationName"> {
   latitude: number | null;
   longitude: number | null;
   deliveryRadius: number;
-  state: string | null;
-  district: string | null;
+  townId: string;
+  town: Town;
   minOrderAmount: string | null;
   freeDeliveryThreshold: string | null;
   returnKeepThreshold: string | null;

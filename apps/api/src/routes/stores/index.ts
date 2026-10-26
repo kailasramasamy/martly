@@ -21,6 +21,7 @@ import { catalogCoverage, type CatalogCoverage } from "../../services/catalog-co
 import { recordOpeningStock } from "../../services/stock-ledger.js";
 import { notifyStoreStatusChange, notifyTeamMember } from "../../services/notify/team-alerts.js";
 import { categoryFacets, subcategoryIdsUnder } from "../../services/category-browse.js";
+import { storeWrite, townFields, townSelect } from "../../services/towns.js";
 
 /** A sponsored product's listings at the store, in the same shape as the rest of a category page */
 async function sponsoredRows(prisma: PrismaClient, storeId: string, productId: string) {
@@ -55,7 +56,7 @@ export async function storeRoutes(app: FastifyInstance) {
     const [stores, total] = await Promise.all([
       app.prisma.store.findMany({
         where, skip, take: Number(pageSize), orderBy: [{ createdAt: "desc" }, { id: "asc" }],
-        include: { organization: { select: { name: true, subscriptionEnabled: true } } },
+        include: { organization: { select: { name: true, subscriptionEnabled: true } }, town: { select: townSelect } },
       }),
       app.prisma.store.count({ where }),
     ]);
@@ -82,7 +83,7 @@ export async function storeRoutes(app: FastifyInstance) {
   app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticateOptional] }, async (request, reply) => {
     const result = await app.prisma.store.findUnique({
       where: { id: request.params.id },
-      include: { organization: { select: { subscriptionEnabled: true } } },
+      include: { organization: { select: { subscriptionEnabled: true } }, town: { select: townSelect } },
     });
     if (!result) return reply.notFound("Store not found");
 
@@ -172,17 +173,16 @@ export async function storeRoutes(app: FastifyInstance) {
     "/",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN"), requireOrgContext] },
     async (request) => {
-      const body = createStoreSchema.parse(request.body);
+      const { townId, ...body } = createStoreSchema.parse(request.body);
       const user = getOrgUser(request);
 
-      // Non-SUPER_ADMIN: force organizationId from JWT; region decides which brand campaigns reach the store, so only Martly sets it
+      // Non-SUPER_ADMIN: force organizationId from JWT
       if (user.role !== "SUPER_ADMIN") {
         body.organizationId = user.organizationId!;
-        body.state = undefined;
-        body.district = undefined;
       }
 
-      const store = await app.prisma.store.create({ data: body });
+      const town = await townFields(app.prisma, townId);
+      const store = await storeWrite(() => app.prisma.store.create({ data: { ...body, ...town } }));
 
       const response: ApiResponse<typeof store> = { success: true, data: store };
       return response;
@@ -202,13 +202,13 @@ export async function storeRoutes(app: FastifyInstance) {
         return reply.forbidden("Access denied");
       }
 
-      // Region decides which brand campaigns reach the store, so only Martly sets it
-      const { translations, state, district, ...rest } = body;
-      if (getOrgUser(request).role === "SUPER_ADMIN") Object.assign(rest, { state, district });
-      const store = await app.prisma.store.update({
+      // The town sets the state and district brand campaigns target
+      const { translations, townId, ...rest } = body;
+      const town = townId ? await townFields(app.prisma, townId) : {};
+      const store = await storeWrite(() => app.prisma.store.update({
         where: { id: request.params.id },
-        data: { ...rest, ...(translations !== undefined ? { translations: translations ?? Prisma.DbNull } : {}) },
-      });
+        data: { ...rest, ...town, ...(translations !== undefined ? { translations: translations ?? Prisma.DbNull } : {}) },
+      }));
 
       if (body.status && body.status !== existing.status) {
         void notifyStoreStatusChange(app.fcm, app.prisma, store, existing.status, store.status);

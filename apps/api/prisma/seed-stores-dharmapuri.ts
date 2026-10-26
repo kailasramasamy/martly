@@ -27,10 +27,19 @@ const s3 = new S3Client({
 });
 
 const SOURCE_SLUG = "downtown-mart";
+const SOURCE_TOWN = "dharmapuri";
+const STATE = "Tamil Nadu";
+const TOWNS = [
+  { slug: "dharmapuri", name: "Dharmapuri" },
+  { slug: "harur", name: "Harur" },
+  { slug: "adhiyamankottai", name: "Adhiyamankottai" },
+  { slug: "nallampalli", name: "Nallampalli" },
+].map((t) => ({ ...t, district: "Dharmapuri", state: STATE }));
 const unsplash = (id: string) => `https://images.unsplash.com/photo-${id}?w=800&h=800&fit=crop&crop=center`;
 
 interface StoreSeed {
   slug: string;
+  town: string;
   name: string;
   address: string;
   latitude: number;
@@ -45,31 +54,31 @@ interface StoreSeed {
 }
 
 const STORES: StoreSeed[] = [
-  { slug: SOURCE_SLUG, name: "Downtown Mart", address: "Four Roads, Dharmapuri, Tamil Nadu 636701",
+  { slug: SOURCE_SLUG, town: "dharmapuri", name: "Downtown Mart", address: "Four Roads, Dharmapuri, Tamil Nadu 636701",
     latitude: 12.1311, longitude: 78.158, deliveryRadius: 7, minOrderAmount: 99, freeDeliveryThreshold: 299,
     baseDeliveryFee: 25, etaMinutes: 15, hours: ["06:00", "23:00"], photo: "1534723452862-4c874018d66d" },
-  { slug: "annapoorna-supermart-pennagaram-road", name: "Annapoorna Supermart", address: "Pennagaram Road, Dharmapuri, Tamil Nadu 636701",
+  { slug: "annapoorna-supermart", town: "dharmapuri", name: "Annapoorna Supermart", address: "Pennagaram Road, Dharmapuri, Tamil Nadu 636701",
     latitude: 12.1342, longitude: 78.143, deliveryRadius: 6, minOrderAmount: 149, freeDeliveryThreshold: 399,
     baseDeliveryFee: 30, etaMinutes: 20, hours: ["07:00", "22:30"], photo: "1578916171728-46686eac8d58" },
-  { slug: "kaveri-fresh-nethaji-bypass", name: "Kaveri Fresh", address: "Nethaji Bypass Road, Dharmapuri, Tamil Nadu 636705",
+  { slug: "kaveri-fresh", town: "dharmapuri", name: "Kaveri Fresh", address: "Nethaji Bypass Road, Dharmapuri, Tamil Nadu 636705",
     latitude: 12.1405, longitude: 78.165, deliveryRadius: 5, minOrderAmount: 99, freeDeliveryThreshold: 249,
     baseDeliveryFee: 20, etaMinutes: 12, hours: ["06:30", "22:00"], photo: "1542838132-92c53300491e" },
-  { slug: "greenleaf-organics-krishnagiri-road", name: "GreenLeaf Organics", address: "Krishnagiri Road, Sogathur, Dharmapuri, Tamil Nadu 636809",
+  { slug: "greenleaf-organics", town: "dharmapuri", name: "GreenLeaf Organics", address: "Krishnagiri Road, Sogathur, Dharmapuri, Tamil Nadu 636809",
     latitude: 12.165, longitude: 78.172, deliveryRadius: 8, minOrderAmount: 199, freeDeliveryThreshold: 499,
     baseDeliveryFee: 35, etaMinutes: 25, hours: ["08:00", "21:00"], photo: "1550989460-0adf9ea622e2" },
-  { slug: "sri-murugan-stores-adhiyamankottai", name: "Sri Murugan Stores", address: "Salem Main Road, Adhiyamankottai, Dharmapuri, Tamil Nadu 636807",
+  { slug: "sri-murugan-stores", town: "adhiyamankottai", name: "Sri Murugan Stores", address: "Salem Main Road, Adhiyamankottai, Dharmapuri, Tamil Nadu 636807",
     latitude: 12.0886, longitude: 78.1259, deliveryRadius: 6, minOrderAmount: 99, freeDeliveryThreshold: 299,
     baseDeliveryFee: 25, etaMinutes: 30, hours: ["06:00", "22:00"], photo: "1533900298318-6b8da08a523e" },
-  { slug: "nallampalli-daily-needs", name: "Nallampalli Daily Needs", address: "Main Bazaar, Nallampalli, Dharmapuri, Tamil Nadu 636807",
+  { slug: "nallampalli-daily-needs", town: "nallampalli", name: "Nallampalli Daily Needs", address: "Main Bazaar, Nallampalli, Dharmapuri, Tamil Nadu 636807",
     latitude: 12.064, longitude: 78.056, deliveryRadius: 5, minOrderAmount: 99, freeDeliveryThreshold: 299,
     baseDeliveryFee: 25, etaMinutes: 35, hours: ["07:00", "21:30"], photo: "1604719312566-8912e9227c6a" },
-  { slug: "template-store", name: "Template Store", address: "Main Road, Harur Taluk, Dharmapuri, Tamil Nadu",
+  { slug: "template-store", town: "harur", name: "Template Store", address: "Main Road, Harur Taluk, Dharmapuri, Tamil Nadu",
     latitude: 12.244, longitude: 78.269, deliveryRadius: 6, minOrderAmount: 99, freeDeliveryThreshold: 249,
     baseDeliveryFee: 20, etaMinutes: 10, hours: ["06:00", "22:30"], photo: "1488459716781-31db52582fe9" },
-  { slug: "thamizh-supermarket-theerthamalai-road", name: "Thamizh Supermarket", address: "Market Street, Harur Taluk, Dharmapuri, Tamil Nadu",
+  { slug: "thamizh-supermarket", town: "harur", name: "Thamizh Supermarket", address: "Market Street, Harur Taluk, Dharmapuri, Tamil Nadu",
     latitude: 12.225, longitude: 78.256, deliveryRadius: 7, minOrderAmount: 149, freeDeliveryThreshold: 399,
     baseDeliveryFee: 30, etaMinutes: 18, hours: ["07:00", "23:00"], photo: "1601599561213-832382fd07ba" },
-  { slug: "harur-daily-basket-morappur-road", name: "Harur Daily Basket", address: "Bus Stop Road, Harur Taluk, Dharmapuri, Tamil Nadu",
+  { slug: "harur-daily-basket", town: "harur", name: "Harur Daily Basket", address: "Bus Stop Road, Harur Taluk, Dharmapuri, Tamil Nadu",
     latitude: 12.256, longitude: 78.29, deliveryRadius: 5, minOrderAmount: 99, freeDeliveryThreshold: 299,
     baseDeliveryFee: 25, etaMinutes: 22, hours: ["06:30", "21:30"], photo: "1543168256-418811576931" },
 ];
@@ -86,17 +95,27 @@ async function uploadStorePhoto(slug: string, photoId: string): Promise<string> 
   return `${BASE_URL}/${key}`;
 }
 
-async function upsertStore(seed: StoreSeed, organizationId: string): Promise<string> {
-  const existing = await prisma.store.findUnique({ where: { slug: seed.slug }, select: { imageUrl: true } });
+async function upsertTowns(): Promise<Map<string, { id: string; district: string; state: string }>> {
+  const byslug = new Map<string, { id: string; district: string; state: string }>();
+  for (const t of TOWNS) {
+    const town = await prisma.town.upsert({ where: { slug: t.slug }, update: t, create: t });
+    byslug.set(t.slug, town);
+  }
+  return byslug;
+}
+
+async function upsertStore(seed: StoreSeed, organizationId: string, town: { id: string; district: string; state: string }): Promise<string> {
+  const townId = town.id;
+  const existing = await prisma.store.findUnique({ where: { townId_slug: { townId, slug: seed.slug } }, select: { imageUrl: true } });
   const imageUrl = existing?.imageUrl ?? (await uploadStorePhoto(seed.slug, seed.photo));
   const data = {
     name: seed.name, address: seed.address, imageUrl, status: "ACTIVE" as const,
     latitude: seed.latitude, longitude: seed.longitude, deliveryRadius: seed.deliveryRadius,
     minOrderAmount: seed.minOrderAmount, freeDeliveryThreshold: seed.freeDeliveryThreshold,
-    baseDeliveryFee: seed.baseDeliveryFee,
+    baseDeliveryFee: seed.baseDeliveryFee, townId, state: town.state, district: town.district,
   };
   const store = await prisma.store.upsert({
-    where: { slug: seed.slug },
+    where: { townId_slug: { townId, slug: seed.slug } },
     update: data,
     create: { ...data, slug: seed.slug, organizationId },
   });
@@ -139,11 +158,12 @@ async function copyCatalog(sourceStoreId: string, targetStoreId: string): Promis
 }
 
 async function main() {
-  const source = await prisma.store.findUnique({ where: { slug: SOURCE_SLUG } });
-  if (!source) throw new Error(`Source store "${SOURCE_SLUG}" not found`);
+  const source = await prisma.store.findFirst({ where: { slug: SOURCE_SLUG, town: { slug: SOURCE_TOWN } } });
+  if (!source) throw new Error(`Source store "${SOURCE_TOWN}/${SOURCE_SLUG}" not found`);
+  const towns = await upsertTowns();
 
   for (const seed of STORES) {
-    const storeId = await upsertStore(seed, source.organizationId);
+    const storeId = await upsertStore(seed, source.organizationId, towns.get(seed.town)!);
     await upsertDeliveryTiers(storeId, seed);
     const copied = seed.slug === SOURCE_SLUG ? 0 : await copyCatalog(source.id, storeId);
     console.log(`✔ ${seed.name} — ${copied} products copied`);

@@ -750,3 +750,4 @@ export * from "./notifications";
 export * from "./home";
 export * from "./ledger";
 export * from "./onboarding";
+export * from "./towns";

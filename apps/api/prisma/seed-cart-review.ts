@@ -31,7 +31,7 @@ async function main() {
   if (!phone) throw new Error("OTP_REVIEW_PHONE missing from apps/api/.env");
   const user = await prisma.user.findFirst({ where: { phone } });
   if (!user) throw new Error(`No user with phone ${phone} — sign in once with the review login first`);
-  const store = await prisma.store.findUnique({ where: { slug: STORE_SLUG }, select: { id: true } });
+  const store = await prisma.store.findFirst({ where: { slug: STORE_SLUG, town: { slug: "harur" } }, select: { id: true } });
   if (!store) throw new Error(`Store ${STORE_SLUG} not found`);
 
   const old = await prisma.order.findMany({ where: { userId: user.id, storeId: store.id, deliveryAddress: SEED_ADDRESS }, select: { id: true } });

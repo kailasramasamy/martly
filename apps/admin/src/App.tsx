@@ -64,6 +64,9 @@ import { accessControlProvider } from "./providers/access-control";
 import { LoginPage } from "./pages/login";
 import { SelectOrgPage } from "./pages/select-org";
 import { StoreList } from "./pages/stores/list";
+import { TownList } from "./pages/towns/list";
+import { TownCreate } from "./pages/towns/create";
+import { TownEdit } from "./pages/towns/edit";
 import { StoreCreate } from "./pages/stores/create";
 import { StoreEdit } from "./pages/stores/edit";
 import { StoreShow } from "./pages/stores/show";
@@ -309,6 +312,13 @@ export default function App() {
                 edit: "/stores/edit/:id",
                 show: "/stores/show/:id",
                 meta: { label: "Stores", icon: <ShopOutlined /> },
+              },
+              {
+                name: "towns",
+                list: "/towns",
+                create: "/towns/create",
+                edit: "/towns/edit/:id",
+                meta: { label: "Towns", icon: <EnvironmentOutlined /> },
               },
               {
                 name: "onboarding",
@@ -707,6 +717,11 @@ export default function App() {
                   <Route path="create" element={<CategoryCreate />} />
                   <Route path="edit/:id" element={<CategoryEdit />} />
                   <Route path="tree" element={<CategoryTree />} />
+                </Route>
+                <Route path="/towns">
+                  <Route index element={<TownList />} />
+                  <Route path="create" element={<TownCreate />} />
+                  <Route path="edit/:id" element={<TownEdit />} />
                 </Route>
                 <Route path="/brands">
                   <Route index element={<BrandList />} />

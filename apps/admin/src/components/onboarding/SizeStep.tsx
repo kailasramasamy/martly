@@ -11,7 +11,7 @@ const { Text, Title } = Typography;
 
 const TIER_LABEL = { ESSENTIAL: "Essentials", STANDARD: "Everyday", EXTENDED: "Niche & premium" } as const;
 
-/** The region the store's state shops in, and the shop format that sets how wide its catalog is */
+/** The region the store's town shops in, and the shop format that sets how wide its catalog is */
 export function SizeStep({ onboarding, onSaved }: { onboarding: Onboarding; onSaved: (o: Onboarding) => void }) {
   const { message } = App.useApp();
   const [size, setSize] = useState<StoreSize | null>(onboarding.size);
@@ -36,10 +36,10 @@ export function SizeStep({ onboarding, onSaved }: { onboarding: Onboarding; onSa
         type="info"
         showIcon
         style={{ marginBottom: 16 }}
-        message={region ? `Region: ${FESTIVAL_REGIONS[region]}` : "No regional catalog for this state"}
+        message={region ? `Region: ${FESTIVAL_REGIONS[region]}` : "No regional catalog for this town's state"}
         description={region
-          ? `Brands from ${FESTIVAL_REGIONS[region]} rank first in every aisle (Aavin, Aachi, Sakthi… for Tamil Nadu), with national brands alongside. Change the state on the Store step to switch region.`
-          : "The proposal uses national brands only. Set a South Indian state on the Store step for regional brands."}
+          ? `Brands from ${FESTIVAL_REGIONS[region]} rank first in every aisle (Aavin, Aachi, Sakthi… for Tamil Nadu), with national brands alongside. Change the town on the Store step to switch region.`
+          : "The proposal uses national brands only. Pick a South Indian town on the Store step for regional brands."}
       />
       <Row gutter={[16, 16]}>
         {Object.values(StoreSize).map((key) => {

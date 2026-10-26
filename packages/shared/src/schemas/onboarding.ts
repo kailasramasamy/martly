@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { INDIAN_STATES } from "../constants/marketing.js";
 import { StoreSize } from "../constants/onboarding.js";
 
 const time = z.string().regex(/^([01]\d|2[0-3]):[0-5]\d$/, "Use HH:MM");
@@ -18,8 +17,7 @@ export type OnboardingOwnerInput = z.infer<typeof onboardingOwnerSchema>;
 export const onboardingStoreSchema = z.object({
   name: z.string().trim().min(2),
   address: z.string().trim().min(5),
-  state: z.enum(INDIAN_STATES),
-  district: z.string().trim().min(2).max(60),
+  townId: z.string().uuid(),
   phone: mobile.optional(),
   latitude: z.number().min(-90).max(90),
   longitude: z.number().min(-180).max(180),

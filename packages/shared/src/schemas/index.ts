@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { BULK_STATUSES } from "../order-flow/index.js";
-import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, StorePostKind, Difficulty, SearchSortBy, SearchEventType, CartBuilderSource, GLOSSARY_LANGUAGES, SUPPORTED_LANGUAGES, CatalogDraftStatus, Permission, StockCountStatus, ReturnRemedy, ReturnMethod, RefuseReason, INDIAN_STATES } from "../constants/index.js";
+import { storeSlugSchema } from "./towns.js";
+import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, StorePostKind, Difficulty, SearchSortBy, SearchEventType, CartBuilderSource, GLOSSARY_LANGUAGES, SUPPORTED_LANGUAGES, CatalogDraftStatus, Permission, StockCountStatus, ReturnRemedy, ReturnMethod, RefuseReason } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -114,10 +115,9 @@ export type Store = z.infer<typeof storeSchema>;
 export const createStoreSchema = z.object({
   organizationId: z.string().uuid(),
   name: z.string().min(1),
-  slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
+  slug: storeSlugSchema,
+  townId: z.string().uuid(),
   address: z.string().min(1),
-  state: z.enum(INDIAN_STATES).nullish(),
-  district: z.string().trim().min(2).max(60).nullish(),
   phone: z.string().optional(),
   imageUrl: z.string().url().nullish(),
   latitude: z.number().min(-90).max(90).optional(),
@@ -508,10 +508,9 @@ export const storeBrandingSchema = z.object({
 // ── Update Schemas ───────────────────────────────────
 export const updateStoreSchema = storeBrandingSchema.extend({
   name: z.string().min(1).optional(),
-  slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
+  slug: storeSlugSchema.optional(),
+  townId: z.string().uuid().optional(),
   address: z.string().min(1).optional(),
-  state: z.enum(INDIAN_STATES).nullish(),
-  district: z.string().trim().min(2).max(60).nullish(),
   phone: z.string().nullish(),
   imageUrl: z.string().url().nullish(),
   status: z.nativeEnum(StoreStatus).optional(),
@@ -1710,3 +1709,4 @@ export const speechTranscribeSchema = z.object({
   purpose: z.enum(["list", "post"]).default("list"),
 });
 export * from "./onboarding.js";
+export * from "./towns.js";

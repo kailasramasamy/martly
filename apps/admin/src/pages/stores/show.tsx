@@ -149,6 +149,7 @@ export const StoreShow = () => {
           <Col xs={24} lg={12}>
             <Card title={sectionTitle(<EnvironmentOutlined />, "Contact & Location")} size="small">
               <Descriptions column={1} size="small" bordered>
+                <Descriptions.Item label="Town">{record.town ? `${record.town.name}, ${record.town.district}` : "—"}</Descriptions.Item>
                 <Descriptions.Item label="Address">{record.address}</Descriptions.Item>
                 <Descriptions.Item label="Phone">{record.phone ?? "—"}</Descriptions.Item>
                 <Descriptions.Item label="Created">

@@ -52,11 +52,16 @@ async function ensureQaStore() {
     update: {},
     create: { name: "Martly QA", slug: "martly-qa" },
   });
+  const town = await prisma.town.upsert({
+    where: { slug: "harur" },
+    update: {},
+    create: { slug: "harur", name: "Harur", district: "Dharmapuri", state: "Tamil Nadu" },
+  });
   return prisma.store.upsert({
-    where: { slug: "martly-qa-store" },
+    where: { townId_slug: { townId: town.id, slug: "martly-qa-store" } },
     update: {},
     // PENDING keeps it out of customer store discovery
-    create: { organizationId: org.id, name: "QA Test Store", slug: "martly-qa-store", address: "Harur, Dharmapuri", status: "PENDING" },
+    create: { organizationId: org.id, name: "QA Test Store", slug: "martly-qa-store", address: "Harur, Dharmapuri", status: "PENDING", townId: town.id, state: town.state, district: town.district },
   });
 }
 

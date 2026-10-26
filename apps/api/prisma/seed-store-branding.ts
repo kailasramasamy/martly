@@ -22,13 +22,13 @@ const BRANDING: Record<string, Branding> = {
     brandColor: "#15803d",
     highlights: ["Widest range", "Fresh produce", "Household needs"],
   },
-  "harur-daily-basket-morappur-road": {
+  "harur-daily-basket": {
     tagline: "Your everyday basket, packed with care",
     taglineTa: "உங்கள் தினசரி தேவைகள், அக்கறையுடன் பேக் செய்து",
     brandColor: "#ea580c",
     highlights: ["Daily essentials", "Dairy & bakery", "Quick top-ups"],
   },
-  "thamizh-supermarket-theerthamalai-road": {
+  "thamizh-supermarket": {
     tagline: "Taste of home: local brands and traditional staples",
     taglineTa: "வீட்டுச் சுவை: உள்ளூர் பிராண்டுகளும் பாரம்பரியப் பொருட்களும்",
     brandColor: "#b91c1c",
@@ -40,25 +40,25 @@ const BRANDING: Record<string, Branding> = {
     brandColor: "#2563eb",
     highlights: ["Daily essentials", "Cleaning & care", "Snacks"],
   },
-  "sri-murugan-stores-adhiyamankottai": {
+  "sri-murugan-stores": {
     tagline: "Trusted by Adhiyamankottai families",
     taglineTa: "அதியமான்கோட்டை குடும்பங்களின் நம்பிக்கைக்குரிய கடை",
     brandColor: "#a16207",
     highlights: ["Pooja items", "Rice & dals", "Spices"],
   },
-  "greenleaf-organics-krishnagiri-road": {
+  "greenleaf-organics": {
     tagline: "Organic and natural, from farm to your kitchen",
     taglineTa: "இயற்கை மற்றும் ஆர்கானிக், பண்ணையிலிருந்து உங்கள் சமையலறைக்கு",
     brandColor: "#4d7c0f",
     highlights: ["Organic", "Cold-pressed oils", "Millets"],
   },
-  "kaveri-fresh-nethaji-bypass": {
+  "kaveri-fresh": {
     tagline: "Fruits and vegetables picked fresh every day",
     taglineTa: "தினமும் புதிதாகப் பறித்த பழங்களும் காய்கறிகளும்",
     brandColor: "#0891b2",
     highlights: ["Fruits & veggies", "Dairy", "Fresh daily"],
   },
-  "annapoorna-supermart-pennagaram-road": {
+  "annapoorna-supermart": {
     tagline: "A full kitchen, stocked for every festival",
     taglineTa: "ஒவ்வொரு பண்டிகைக்கும் நிறைந்த சமையலறை",
     brandColor: "#be185d",

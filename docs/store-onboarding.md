@@ -11,10 +11,10 @@ reload or a later visit resumes there. Opening a store without `?step` jumps to 
 
 1. **Business & team**: organisation name, owner name, 10-digit mobile, optional email and admin-panel password.
    Nothing is saved until the store is created. Once it exists, this step also has the **Team** card (see Logins below).
-2. **Store**: place search or typed lat/lng, address, state, district, delivery radius, fee, free-delivery
+2. **Store**: place search or typed lat/lng, address, town (see Towns and store addresses), delivery radius, fee, free-delivery
    threshold, minimum order, express ETA, hours, logo. **Create store** runs `POST /onboarding` in one transaction:
-   - an organisation, with `festivalRegions` set to the state's region;
-   - a PENDING store;
+   - an organisation, with `festivalRegions` set to the town's state's region;
+   - a PENDING store, slug from its name alone and unique within its town (`sree-ranga-store`, then `-2`);
    - delivery tiers covering 0 → radius (fee rising ₹10 per band);
    - the express config;
    - the owner and their `UserStore` (ORG_ADMIN).
@@ -43,6 +43,23 @@ reload or a later visit resumes there. Opening a store without `?step` jumps to 
 6. **Review & launch**: the readiness checklist. Each failing item links to the step that fixes it. **Launch**
    sets the store ACTIVE, stamps `Store.launchedAt` and sends `notifyStoreStatusChange`. Launched stores stay on
    the Onboard store page under **Launched**. A launched store can't be launched again (409).
+
+## Towns and store addresses
+
+A store's web shop will live at `onmartly.in/{town.slug}/{store.slug}`, so `Store.slug` is unique per town
+(`@@unique([townId, slug])`), not across Martly. Two Sree Ranga stores in Dharmapuri and Attur can both be
+`sreeranga`.
+
+- `Town` (name, slug, district, state) is Martly's list, kept on the admin **Towns** page (SUPER_ADMIN). Many shops are
+  in villages, so towns are added as areas onboard; there's no bulk import. A name repeating in another district gets
+  the district in its slug (`palayam-salem`). Town slugs can't be a reserved word (`RESERVED_TOWN_SLUGS`).
+- Every store picks its town from that list, any role, in admin, the onboarding wizard and the mobile store form.
+  The API copies the town's `state` and `district` onto the store (brand campaigns target those) and a town edit
+  carries them to its stores. No form edits a store's state or district.
+- Slugs (town and store) follow `URL_SEGMENT_RULE`: 2–30 lowercase letters, digits, hyphens between. A clash in the
+  same town is a 409: "Another store in this town already uses that address".
+- The `20261026150000_towns` migration put every existing store in a town named after its district. Move stores to
+  their real town (e.g. Harur Taluk stores to Harur) from the store edit page.
 
 ## Logins
 

@@ -15,17 +15,24 @@ async function main() {
     create: { name: "Demo Grocers", slug: "demo-grocers" },
   });
 
-  const store1 = await prisma.store.upsert({
-    where: { slug: "downtown-mart" },
+  const town = await prisma.town.upsert({
+    where: { slug: "dharmapuri" },
     update: {},
-    create: { organizationId: org1.id, name: "Downtown Mart", slug: "downtown-mart", address: "123 Main Street", status: "ACTIVE" },
+    create: { slug: "dharmapuri", name: "Dharmapuri", district: "Dharmapuri", state: "Tamil Nadu" },
+  });
+  const region = { townId: town.id, state: town.state, district: town.district };
+
+  const store1 = await prisma.store.upsert({
+    where: { townId_slug: { townId: town.id, slug: "downtown-mart" } },
+    update: {},
+    create: { organizationId: org1.id, name: "Downtown Mart", slug: "downtown-mart", address: "123 Main Street", status: "ACTIVE", ...region },
   });
 
   // Create a second store in the same org
   const store2 = await prisma.store.upsert({
-    where: { slug: "uptown-mart" },
+    where: { townId_slug: { townId: town.id, slug: "uptown-mart" } },
     update: {},
-    create: { organizationId: org1.id, name: "Uptown Mart", slug: "uptown-mart", address: "456 Oak Avenue", status: "ACTIVE" },
+    create: { organizationId: org1.id, name: "Uptown Mart", slug: "uptown-mart", address: "456 Oak Avenue", status: "ACTIVE", ...region },
   });
 
   // ── Second org ────────────────────────────────────
@@ -36,9 +43,9 @@ async function main() {
   });
 
   const store3 = await prisma.store.upsert({
-    where: { slug: "fresh-central" },
+    where: { townId_slug: { townId: town.id, slug: "fresh-central" } },
     update: {},
-    create: { organizationId: org2.id, name: "Fresh Central", slug: "fresh-central", address: "789 Park Road", status: "ACTIVE" },
+    create: { organizationId: org2.id, name: "Fresh Central", slug: "fresh-central", address: "789 Park Road", status: "ACTIVE", ...region },
   });
 
   // ── Users ─────────────────────────────────────────

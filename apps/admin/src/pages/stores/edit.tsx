@@ -1,24 +1,26 @@
+import { useState } from "react";
 import { Edit, useForm } from "@refinedev/antd";
-import { useGetIdentity } from "@refinedev/core";
 import { Form, Input, InputNumber, Select, Card, Row, Col, Slider, Switch, Radio } from "antd";
-import { INDIAN_STATES } from "@martly/shared/constants";
 import { ShopOutlined, EnvironmentOutlined, ShoppingCartOutlined, CalendarOutlined } from "@ant-design/icons";
+import type { Town } from "@martly/shared/types";
 
 import { sectionTitle } from "../../theme";
 import { BrandingCard } from "./branding-card";
 import { ReadableSection } from "../../components/ReadableSection";
+import { TownSelect } from "../../components/TownSelect";
+import { URL_SEGMENT_RULE } from "@martly/shared/constants";
 
 export const StoreEdit = () => {
-  const { formProps, saveButtonProps } = useForm({ resource: "stores" });
-  const { data: identity } = useGetIdentity<{ role: string }>();
-  const isSuperAdmin = identity?.role === "SUPER_ADMIN";
-  const onFinish = (values: Record<string, unknown>) =>
-    formProps.onFinish?.(isSuperAdmin ? { ...values, state: values.state ?? null, district: values.district || null } : values);
+  const { formProps, saveButtonProps, query } = useForm({ resource: "stores" });
+  const record = query?.data?.data as { town?: Town } | undefined;
+  const [pickedTownSlug, setPickedTownSlug] = useState<string>();
+  const townSlug = pickedTownSlug ?? record?.town?.slug;
+  const slug = Form.useWatch("slug", formProps.form);
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
       <ReadableSection>
-        <Form {...formProps} onFinish={onFinish} layout="vertical">
+        <Form {...formProps} layout="vertical">
           <Row gutter={[16, 16]}>
             {/* Left column: General info */}
             <Col xs={24} lg={12}>
@@ -26,7 +28,10 @@ export const StoreEdit = () => {
                 <Form.Item label="Name" name="name" rules={[{ required: true }]}>
                   <Input />
                 </Form.Item>
-                <Form.Item label="Slug" name="slug" rules={[{ required: true }]}>
+                <Form.Item label="Town" name="townId" rules={[{ required: true }]} extra="Sets the store's state and district, and its web address">
+                  <TownSelect initialTown={record?.town} onChange={(_, town) => setPickedTownSlug(town.slug)} />
+                </Form.Item>
+                <Form.Item label="Slug" name="slug" rules={[{ required: true }, URL_SEGMENT_RULE]} extra={`Web address: onmartly.in/${townSlug ?? "{town}"}/${slug || "{slug}"}`}>
                   <Input />
                 </Form.Item>
                 <Form.Item label="Status" name="status" rules={[{ required: true }]}>
@@ -48,20 +53,6 @@ export const StoreEdit = () => {
                 <Form.Item label="Phone" name="phone">
                   <Input />
                 </Form.Item>
-                {isSuperAdmin && (
-                  <Row gutter={12}>
-                    <Col span={12}>
-                      <Form.Item label="State" name="state">
-                        <Select allowClear showSearch optionFilterProp="label" options={INDIAN_STATES.map((name) => ({ value: name, label: name }))} />
-                      </Form.Item>
-                    </Col>
-                    <Col span={12}>
-                      <Form.Item label="District" name="district">
-                        <Input />
-                      </Form.Item>
-                    </Col>
-                  </Row>
-                )}
                 <Row gutter={12}>
                   <Col span={12}>
                     <Form.Item label="Latitude" name="latitude">

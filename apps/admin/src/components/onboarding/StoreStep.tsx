@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { Button, Card, Col, Form, Input, InputNumber, Modal, Row, Select, Slider, App } from "antd";
+import { Button, Card, Col, Form, Input, InputNumber, Modal, Row, Slider, App } from "antd";
 import { ClockCircleOutlined, EnvironmentOutlined, PictureOutlined } from "@ant-design/icons";
-import { INDIAN_STATES } from "@martly/shared/constants";
 import type { OnboardingStoreInput } from "@martly/shared/schemas";
+import type { Town } from "@martly/shared/types";
 
 import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../ReadableSection";
 import { ImageUpload } from "../ImageUpload";
+import { TownSelect } from "../TownSelect";
 import { MapPreview, PlaceSearch } from "./PlaceSearch";
 import type { BusinessDraft } from "./BusinessStep";
 import { errorMessage, onboardingApi, type Onboarding } from "../../pages/onboarding/api";
@@ -14,7 +15,7 @@ import { errorMessage, onboardingApi, type Onboarding } from "../../pages/onboar
 type StoreForm = OnboardingStoreInput;
 
 const DEFAULTS: Partial<StoreForm> = {
-  state: "Tamil Nadu", deliveryRadius: 5, minOrderAmount: 99, freeDeliveryThreshold: 299, baseDeliveryFee: 20,
+  deliveryRadius: 5, minOrderAmount: 99, freeDeliveryThreshold: 299, baseDeliveryFee: 20,
   expressEtaMinutes: 30, opensAt: "07:00", closesAt: "21:30",
 };
 const TIME_RULE = { pattern: /^([01]\d|2[0-3]):[0-5]\d$/, message: "HH:MM, 24-hour" };
@@ -24,7 +25,7 @@ function fromSaved(o: Onboarding): Partial<StoreForm> {
   const d = o.details;
   const num = (v: string | null) => (v === null ? undefined : Number(v));
   return {
-    name: d.name, address: d.address, state: (d.state ?? undefined) as StoreForm["state"], district: d.district ?? undefined,
+    name: d.name, address: d.address, townId: d.townId ?? undefined,
     phone: d.phone ?? undefined, latitude: d.latitude ?? undefined, longitude: d.longitude ?? undefined,
     deliveryRadius: d.deliveryRadius, minOrderAmount: num(d.minOrderAmount), freeDeliveryThreshold: num(d.freeDeliveryThreshold) ?? null,
     baseDeliveryFee: num(d.baseDeliveryFee), logoUrl: d.logoUrl, expressEtaMinutes: d.expressEtaMinutes ?? 30,
@@ -32,7 +33,7 @@ function fromSaved(o: Onboarding): Partial<StoreForm> {
   };
 }
 
-function LocationCard() {
+function LocationCard({ initialTown }: { initialTown?: Town | null }) {
   const form = Form.useFormInstance<StoreForm>();
   const [lat, lng, radius] = [Form.useWatch("latitude", form), Form.useWatch("longitude", form), Form.useWatch("deliveryRadius", form)];
   return (
@@ -42,14 +43,9 @@ function LocationCard() {
       </Form.Item>
       <Form.Item label="Store name" name="name" rules={[{ required: true, min: 2 }]}><Input placeholder="As shoppers know it" /></Form.Item>
       <Form.Item label="Address" name="address" rules={[{ required: true, min: 5 }]}><Input.TextArea autoSize={{ minRows: 2 }} /></Form.Item>
-      <Row gutter={12}>
-        <Col span={12}>
-          <Form.Item label="State" name="state" rules={[{ required: true }]} extra="Sets the region its catalog favours">
-            <Select showSearch optionFilterProp="label" options={INDIAN_STATES.map((s) => ({ value: s, label: s }))} />
-          </Form.Item>
-        </Col>
-        <Col span={12}><Form.Item label="District" name="district" rules={[{ required: true, min: 2 }]}><Input /></Form.Item></Col>
-      </Row>
+      <Form.Item label="Town" name="townId" rules={[{ required: true }]} extra="Sets the state and district, and the region its catalog favours">
+        <TownSelect initialTown={initialTown} />
+      </Form.Item>
       <Row gutter={12}>
         <Col span={8}><Form.Item label="Shop phone" name="phone" rules={[{ pattern: /^\d{10}$/, message: "10 digits" }]}><Input maxLength={10} /></Form.Item></Col>
         <Col span={8}><Form.Item label="Latitude" name="latitude" rules={[{ required: true, message: "Place the pin" }]}><InputNumber style={{ width: "100%" }} step={0.0001} /></Form.Item></Col>
@@ -133,7 +129,7 @@ export function StoreStep({ onboarding, business, onBack, onCreated, onSaved }: 
     <ReadableSection>
       <Form form={form} layout="vertical" initialValues={onboarding ? fromSaved(onboarding) : DEFAULTS} onFinish={submit} requiredMark="optional">
         <Row gutter={[16, 16]}>
-          <Col xs={24} lg={13}><LocationCard /></Col>
+          <Col xs={24} lg={13}><LocationCard initialTown={onboarding?.details.town} /></Col>
           <Col xs={24} lg={11}><DeliveryCard /></Col>
         </Row>
         <div style={{ display: "flex", justifyContent: "space-between", marginTop: 16 }}>

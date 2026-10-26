@@ -7,7 +7,7 @@ async function main() {
 
   // ── Look up existing data ──────────────────────────
   const org = await prisma.organization.findFirstOrThrow({ where: { slug: "innovative-foods" } });
-  const store = await prisma.store.findFirstOrThrow({ where: { slug: "bigmart" } });
+  const store = await prisma.store.findFirstOrThrow({ where: { slug: "bigmart", town: { slug: "dharmapuri" } } });
   const customer = await prisma.user.findFirstOrThrow({ where: { email: "customer@martly.dev" } });
   const orgAdmin = await prisma.user.findFirstOrThrow({ where: { email: "owner@innovative.dev" } });
 

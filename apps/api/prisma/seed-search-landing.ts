@@ -181,7 +181,7 @@ async function seedPurchaseHistory(storeId: string) {
 }
 
 async function main() {
-  const store = await prisma.store.findUnique({ where: { slug: SOURCE_SLUG }, select: { id: true, organizationId: true } });
+  const store = await prisma.store.findFirst({ where: { slug: SOURCE_SLUG, town: { slug: "dharmapuri" } }, select: { id: true, organizationId: true } });
   if (!store) throw new Error(`Store ${SOURCE_SLUG} not found — run seed-stores-dharmapuri.ts first`);
   console.log("Scheduled collections:");
   await seedCollections(store.id, store.organizationId);

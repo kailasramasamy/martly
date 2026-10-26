@@ -1,11 +1,13 @@
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import type { OnboardingSummary } from "@martly/shared/types";
 import { regionOf } from "./create.js";
+import { townSelect } from "../towns.js";
 
 const include = {
   organization: { select: { id: true, name: true, slug: true } },
   userStores: { where: { role: "ORG_ADMIN" }, orderBy: { createdAt: "asc" }, take: 1, include: { user: { select: { id: true, name: true, phone: true, email: true } } } },
   expressDeliveryConfig: true,
+  town: { select: townSelect },
   _count: { select: { storeProducts: true } },
 } satisfies Prisma.StoreInclude;
 

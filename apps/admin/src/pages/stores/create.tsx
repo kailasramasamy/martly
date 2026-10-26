@@ -1,11 +1,13 @@
+import { useState } from "react";
 import { Create, useForm, useSelect } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
 import { Form, Input, InputNumber, Select, Card, Row, Col, Slider, Switch, Radio } from "antd";
-import { INDIAN_STATES } from "@martly/shared/constants";
 import { ShopOutlined, EnvironmentOutlined, ShoppingCartOutlined, CalendarOutlined } from "@ant-design/icons";
 
 import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../../components/ReadableSection";
+import { TownSelect } from "../../components/TownSelect";
+import { URL_SEGMENT_RULE } from "@martly/shared/constants";
 
 interface Identity {
   role: string;
@@ -15,6 +17,8 @@ interface Identity {
 export const StoreCreate = () => {
   const { formProps, saveButtonProps } = useForm({ resource: "stores" });
   const { data: identity } = useGetIdentity<Identity>();
+  const [townSlug, setTownSlug] = useState<string>();
+  const slug = Form.useWatch("slug", formProps.form);
 
   const isSuperAdmin = identity?.role === "SUPER_ADMIN";
 
@@ -53,7 +57,10 @@ export const StoreCreate = () => {
                 <Form.Item label="Name" name="name" rules={[{ required: true }]}>
                   <Input />
                 </Form.Item>
-                <Form.Item label="Slug" name="slug" rules={[{ required: true }]}>
+                <Form.Item label="Town" name="townId" rules={[{ required: true }]} extra="Sets the store's state and district, and its web address">
+                  <TownSelect onChange={(_, town) => setTownSlug(town.slug)} />
+                </Form.Item>
+                <Form.Item label="Slug" name="slug" rules={[{ required: true }, URL_SEGMENT_RULE]} extra={`Web address: onmartly.in/${townSlug ?? "{town}"}/${slug || "{slug}"}`}>
                   <Input />
                 </Form.Item>
               </Card>
@@ -65,20 +72,6 @@ export const StoreCreate = () => {
                 <Form.Item label="Phone" name="phone">
                   <Input />
                 </Form.Item>
-                {isSuperAdmin && (
-                  <Row gutter={12}>
-                    <Col span={12}>
-                      <Form.Item label="State" name="state">
-                        <Select allowClear showSearch optionFilterProp="label" options={INDIAN_STATES.map((name) => ({ value: name, label: name }))} />
-                      </Form.Item>
-                    </Col>
-                    <Col span={12}>
-                      <Form.Item label="District" name="district">
-                        <Input />
-                      </Form.Item>
-                    </Col>
-                  </Row>
-                )}
                 <Row gutter={12}>
                   <Col span={12}>
                     <Form.Item label="Latitude" name="latitude">

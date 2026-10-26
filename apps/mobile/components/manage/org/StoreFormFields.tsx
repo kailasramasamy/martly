@@ -1,3 +1,4 @@
+import { useEffect, useMemo, useState } from "react";
 import { Text, StyleSheet } from "react-native";
 import { SectionCard } from "../ui/SectionCard";
 import { TextField } from "../ui/TextField";
@@ -9,8 +10,8 @@ import { parseNumber } from "../delivery-config/numbers";
 import { LocationPicker } from "./LocationPicker";
 import { colors, fonts } from "../../../constants/theme";
 import { STORE_STATUS_OPTIONS } from "./constants";
-import { INDIAN_STATES } from "@martly/shared/constants";
-import { useAuth } from "../../../lib/auth-context";
+import type { Town } from "@martly/shared/types";
+import { api } from "../../../lib/api";
 import { slugify, type StoreDraft } from "./store-draft";
 
 interface CardProps {
@@ -35,7 +36,7 @@ function DetailsCard({ draft, set, creating, orgOptions }: StoreFormFieldsProps)
     <SectionCard title="Store details">
       {orgOptions && <SelectField label="Organization" required value={draft.organizationId || null} options={orgOptions} onChange={(organizationId) => set({ organizationId })} />}
       <TextField label="Name" required value={draft.name} onChangeText={rename} />
-      <TextField label="Slug" required autoCapitalize="none" hint="Lowercase letters, numbers and hyphens" value={draft.slug} onChangeText={(slug) => set({ slug })} />
+      <TextField label="Slug" required autoCapitalize="none" hint="Part of the web address: onmartly.in/town/slug" value={draft.slug} onChangeText={(slug) => set({ slug })} />
       {!creating && <SelectField label="Status" required value={draft.status} options={STORE_STATUS_OPTIONS} onChange={(status) => set({ status })} />}
     </SectionCard>
   );
@@ -55,21 +56,22 @@ function LocationCard({ draft, set }: CardProps) {
   );
 }
 
-const STATE_OPTIONS: SelectOption[] = INDIAN_STATES.map((s) => ({ value: s, label: s }));
-
 function RegionCard({ draft, set }: CardProps) {
-  const { user } = useAuth();
-  if (user?.role === "SUPER_ADMIN") {
-    return (
-      <SectionCard title="Region">
-        <SelectField label="State" value={draft.state} options={STATE_OPTIONS} onChange={(state) => set({ state })} />
-        <TextField label="District" value={draft.district} onChangeText={(district) => set({ district })} />
-      </SectionCard>
-    );
-  }
-  if (!draft.state) return null;
-  const region = [draft.district, draft.state].filter(Boolean).join(", ");
-  return <Text style={styles.note}>{`Region: ${region} \u00B7 set by Martly`}</Text>;
+  const [towns, setTowns] = useState<Town[]>([]);
+  useEffect(() => {
+    api.get<Town[]>("/api/v1/towns?pageSize=100").then((res) => setTowns(res.data), () => setTowns([]));
+  }, []);
+  const options = useMemo(() => {
+    const all = draft.town && !towns.some((t) => t.id === draft.town?.id) ? [draft.town, ...towns] : towns;
+    return all.map((t) => ({ value: t.id, label: t.name, description: `${t.district}, ${t.state}` }));
+  }, [towns, draft.town]);
+  const pick = (townId: string) => set({ townId, town: towns.find((t) => t.id === townId) ?? null });
+  return (
+    <SectionCard title="Town">
+      <SelectField label="Town" required value={draft.townId || null} options={options} onChange={pick} placeholder="Pick the store's town" />
+      {draft.town && <Text style={styles.note}>{`${draft.town.district}, ${draft.town.state}`}</Text>}
+    </SectionCard>
+  );
 }
 
 function DeliveryCard({ draft, set }: CardProps) {

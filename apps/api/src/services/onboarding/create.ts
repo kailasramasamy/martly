@@ -3,6 +3,7 @@ import { STATE_TO_REGION } from "@martly/shared/constants";
 import type { CreateOnboardingInput, OnboardingStoreInput, UpdateOnboardingInput } from "@martly/shared/schemas";
 import { slugify } from "../brands.js";
 import { assertEmailFree, firstFreeSlug, passwordData, resolveOwner } from "./owner.js";
+import { townFields } from "../towns.js";
 
 type Tx = Prisma.TransactionClient;
 
@@ -11,12 +12,12 @@ export function regionOf(state: string | null) {
   return (state && STATE_TO_REGION[state as keyof typeof STATE_TO_REGION]) || null;
 }
 
-async function freeSlug(tx: Tx, model: "organization" | "store", name: string) {
+async function freeSlug(tx: Tx, model: "organization" | "store", name: string, townId?: string) {
   const base = slugify(name) || model;
   const where = { slug: { startsWith: base } };
   const rows = model === "organization"
     ? await tx.organization.findMany({ where, select: { slug: true } })
-    : await tx.store.findMany({ where, select: { slug: true } });
+    : await tx.store.findMany({ where: { ...where, townId }, select: { slug: true } });
   return firstFreeSlug(base, rows.map((r) => r.slug));
 }
 
@@ -50,7 +51,8 @@ async function writeExpress(tx: Tx, storeId: string, s: Pick<OnboardingStoreInpu
 /** A new organisation, its first store (hidden until launch), the owner's login and delivery set up from the details */
 export async function createOnboarding(prisma: PrismaClient, input: CreateOnboardingInput) {
   return prisma.$transaction(async (tx) => {
-    const region = regionOf(input.store.state);
+    const town = await townFields(tx, input.store.townId);
+    const region = regionOf(town.state);
     const organization = await tx.organization.create({
       data: {
         name: input.organizationName,
@@ -61,8 +63,9 @@ export async function createOnboarding(prisma: PrismaClient, input: CreateOnboar
     const store = await tx.store.create({
       data: {
         ...storeData(input.store),
+        ...town,
         organizationId: organization.id,
-        slug: await freeSlug(tx, "store", `${input.store.name} ${input.store.district}`),
+        slug: await freeSlug(tx, "store", input.store.name, town.townId),
         status: "PENDING",
       },
     });
@@ -83,11 +86,12 @@ export async function updateOnboarding(prisma: PrismaClient, storeId: string, in
       await tx.organization.update({ where: { id: store.organizationId }, data: { name: input.organizationName } });
     }
     const s = input.store ?? {};
-    const region = s.state ? regionOf(s.state) : undefined;
-    if (region !== undefined) {
+    const town = s.townId ? await townFields(tx, s.townId) : undefined;
+    if (town) {
+      const region = regionOf(town.state);
       await tx.organization.update({ where: { id: store.organizationId }, data: { festivalRegions: region ? [region] : ["ALL"] } });
     }
-    const updated = await tx.store.update({ where: { id: storeId }, data: { ...storeData(s), ...(input.size ? { size: input.size } : {}) } });
+    const updated = await tx.store.update({ where: { id: storeId }, data: { ...storeData(s), ...town, ...(input.size ? { size: input.size } : {}) } });
     await updateOwner(tx, storeId, input.owner);
     await refreshDelivery(tx, updated, s);
     return updated;

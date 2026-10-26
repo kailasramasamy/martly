@@ -11,6 +11,11 @@ const prisma = new PrismaClient();
 const NAME = "Demo Sree Ranga Stores";
 
 const existing = await prisma.organization.findFirst({ where: { name: NAME } });
+const town = await prisma.town.upsert({
+  where: { slug: "harur" },
+  update: {},
+  create: { slug: "harur", name: "Harur", district: "Dharmapuri", state: "Tamil Nadu" },
+});
 if (existing) {
   console.log(`${NAME} already exists; open it from Onboard store`);
 } else {
@@ -21,8 +26,7 @@ if (existing) {
     store: {
       name: "Sree Ranga Supermarket",
       address: "12 Car Street, Harur, Tamil Nadu 636903",
-      state: "Tamil Nadu",
-      district: "Dharmapuri",
+      townId: town.id,
       latitude: 12.0512,
       longitude: 78.4821,
       deliveryRadius: 5,
