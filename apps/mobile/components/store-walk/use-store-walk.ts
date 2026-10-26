@@ -46,11 +46,19 @@ function useRoute(storeId: string | undefined, items: CartItem[]) {
 }
 
 /** Lines the walk added, or added to: how many and what they cost, against the cart when the walk began */
-function useAdded(items: CartItem[]) {
+type WalkStop = WalkRoute["stops"][number];
+
+// What the walk put in the bag, each line with the aisle the shopper stood in when it first went in
+function useAdded(items: CartItem[], here: WalkStop | undefined) {
   const [before] = useState(() => new Map(items.map((i) => [i.storeProductId, i.quantity])));
+  const from = useRef(new Map<string, WalkStop>());
   return useMemo(() => items
     .map((item) => ({ item, added: item.quantity - (before.get(item.storeProductId) ?? 0) }))
-    .filter((l) => l.added > 0), [items, before]);
+    .filter((l) => l.added > 0)
+    .map((l) => {
+      if (here && !from.current.has(l.item.storeProductId)) from.current.set(l.item.storeProductId, here);
+      return { ...l, from: from.current.get(l.item.storeProductId) };
+    }), [items, before, here]);
 }
 
 /**
@@ -66,7 +74,6 @@ export function useStoreWalk(storeId: string | undefined, { skipCovered, departm
   // Aisles the shopper has walked past, by category
   const [walked, setWalked] = useState<Set<string>>(new Set());
   const [walkedDepartments, setWalkedDepartments] = useState<string[]>([]);
-  const added = useAdded(items);
 
   useEffect(() => { loadRoute(departmentId); }, [loadRoute, departmentId]);
 
@@ -76,6 +83,11 @@ export function useStoreWalk(storeId: string | undefined, { skipCovered, departm
     return open.length > 0 ? open : all;
   }, [route, skipCovered]);
   const stop = stops[index];
+  const added = useAdded(items, phase === "aisle" ? stop : undefined);
+  // Jumping away on the map or finishing from an aisle counts it as walked, like leaving it does
+  const markHere = () => {
+    if (phase === "aisle" && stop) setWalked((w) => new Set(w).add(stop.categoryId));
+  };
 
   useEffect(() => {
     if (phase !== "aisle" || !stop) return;
@@ -106,7 +118,9 @@ export function useStoreWalk(storeId: string | undefined, { skipCovered, departm
     walkedDepartments, aisle: stop ? aisles.get(stop.categoryId) : undefined,
     retryAisle: () => stop && loadAisle(stop.categoryId, true),
     start: () => { setIndex(0); setPhase("aisle"); },
-    leave, jump: (i: number) => { setIndex(i); setPhase("aisle"); }, switchDepartment, finish: () => setPhase("done"),
+    leave, switchDepartment,
+    jump: (i: number) => { markHere(); setIndex(i); setPhase("aisle"); },
+    finish: () => { markHere(); setPhase("done"); },
     toRoute,
   };
 }

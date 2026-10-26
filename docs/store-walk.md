@@ -25,8 +25,10 @@ items, then the aisle's best sellers, and "Next aisle" moves on. It's the first 
    - Subcategory tiles follow ("All" first). A tile loads that subcategory's 9 best sellers in place.
    - Brand chips follow: the brands on these shelves (the picked subcategory's), best sellers first. One tap shows only
      that brand (9 best sellers), a second tap clears it; picking a subcategory clears the brand.
-   - **Search in this aisle:** the magnifier beside Map opens search titled "Search in ‹aisle›". Typed searches keep to
-     that aisle (`categoryId` on the store's text search); back returns to the walk where the shopper left it.
+   - **Search the shelves:** the magnifier on the "Popular in this aisle" row (or the picked subcategory's name) opens
+     a field in that row, "Search in ‹aisle · brand›". Typing pauses for 300 ms, then the shelves show only matches
+     within what's on show: the aisle, the picked subcategory and the picked brand. Picking a subcategory keeps the
+     words. No matches offers "Search the whole store"; ✕ clears it and the best sellers come back.
    - The products stand on wooden shelves, three to a shelf, in white shelf units (the catalog photos have white
      backgrounds). Each pack has a round + on its corner (a − n + pill once added; several sizes open the size
      picker). Its price, MRP, deal, name and size are on a paper sticker taped to the shelf's front edge, each a little
@@ -39,12 +41,15 @@ items, then the aisle's best sellers, and "Next aisle" moves on. It's the first 
    - **Department photos:** each department has its own aisle photo behind the signs (`departments.aisle_image_url`,
      made by `prisma/generate-aisle-walls.ts` with gpt-image-2.5-flare at medium quality and served from the CDN). The
      bundled grocery photo shows while one loads, and for a department without one.
-   The bottom bar shows the bag total (tap for the cart), "See my bag" (ends the walk at the summary) and "Next aisle" with the next aisle's photo and name. The Map button opens the aisle map: walked,
+   The bottom bar shows the bag total (tap for the cart), "See my bag" (ends the walk at the summary) and "Next aisle" with the next aisle's photo and name (15 pt, up to two lines). The Map button opens the aisle map: walked,
    here, ahead; tap an aisle to jump to it.
 4. **Department done:** a check mark, then the next department to walk (the one with most due items, else the next on
    the shelves) and up to 3 others, or "I'm done".
-5. **Summary:** aisles walked and minutes, items added and the bag total, up to 2 due items still missing (each with ADD),
-   the lines this walk added with their aisle, then "Go to cart".
+5. **Summary:** a paper bag (`assets/images/store-walk/paper-bag.webp`, drawn twice so up to 4 of the walk's own packs
+   stand inside it) with the done mark, beside the aisles walked and minutes, the bag total and items added. The aisle
+   the shopper is in when they finish, or jump away from on the map, counts as walked. The lines this walk added follow,
+   grouped under the aisle each went in from (recorded when it went in the bag). Tapping a line opens the product; − and
+   + change it, and the bin at 1 takes it out with Undo on the toast. Then the cart's suggestions and "Go to cart".
 
 ## How it's picked (`apps/api/src/services/store-walk.ts`)
 
@@ -61,13 +66,16 @@ items, then the aisle's best sellers, and "Next aisle" moves on. It's the first 
 - **Popular in an aisle:** up to 8 in-stock products, each as its best-stocked size, ranked by 30-day units, then brand
   popularity, then stock. Due items are left out. At most 2 come from one subcategory, unless the aisle is too small to
   fill the shelf otherwise.
+- **Searched in an aisle (`q`):** the store's keyword search (no meaning-based expansion), kept to listed products in
+  the aisle, subcategory and brand. Each matching product shows once, as its best-stocked in-stock size, in search rank
+  order, up to 24 (from the top 60 matches). Due items aren't pulled out. A blank `q` is no search.
 
 ## API
 
 | Endpoint | Auth | Body / reply |
 |---|---|---|
 | `POST /api/v1/store-walk/:storeId/route` | optional | `{ departmentId?, cartStoreProductIds? }` → `{ departmentId, departments[], stops[] (with dueCount, inCart), cartAisles, uncovered, uncoveredDue, due[] }` |
-| `GET /api/v1/store-walk/:storeId/aisles/:categoryId` | optional | `{ category, stocked, due[], popular[] }` |
+| `GET /api/v1/store-walk/:storeId/aisles/:categoryId` | optional | `?subcategoryId&brandId&q` → `{ category, stocked, due[], popular[] }` |
 
 - The route is a POST because the cart lives on the phone.
 - Guests get no due items.
@@ -106,6 +114,8 @@ All of them jump straight to the end when the phone's Reduce Motion setting is o
   - The Atta & Flours aisle: the due Pillsbury Chakki Fresh Atta 5 kg, then 8 popular items across maida, besan, rava,
     sattu and atta.
   - A bad store id and a bad cart id return 400. An unknown store and an unknown aisle return 404. An empty body is fine.
+  - Searching the Ghee aisle: "amul" → 6, "amul" in Buffalo Ghee → 3, "பசு நெய்" → 24, "aavin" → 3, "pouch" with the
+    Amul brand → 2, "soap" → 0, blank → the best sellers.
   - `/cart/review` returns the same 7 `forgotten` items after moving the due rule into `dueInStock`.
   - Home sections: `STORE_WALK` sits after `BUY_AGAIN` for guests and for signed-in shoppers (`aisleCount` 11, `dueCount` 7).
 - The API, admin and the touched mobile files type-check. The mobile app's existing errors in other screens are unchanged.
@@ -117,4 +127,5 @@ All of them jump straight to the end when the phone's Reduce Motion setting is o
 - The cart nudge, then a walk from it that skips covered aisles.
 - The checkout row's "Add all", with the order total updating.
 - Tamil: the strings and the bilingual aisle sign.
+- The shelf search: open, type, pick a subcategory and a brand while searching, no matches, ✕.
 - Reduce Motion on.
