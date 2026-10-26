@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderWidth: 1.5,
     borderColor: colors.primary,
-    borderRadius: 8,
+    borderRadius: 999,
     backgroundColor: colors.primary + "08",
     overflow: "hidden",
   },

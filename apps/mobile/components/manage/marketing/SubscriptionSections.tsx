@@ -104,6 +104,6 @@ export function HistoryCards({ s }: { s: Subscription }) {
 const styles = StyleSheet.create({
   pill: { marginBottom: 6 },
   stepper: { flexDirection: "row", alignItems: "center", gap: 4 },
-  stepBtn: { width: 44, height: 44, borderRadius: 10, borderWidth: 1, borderColor: manage.line, alignItems: "center", justifyContent: "center" },
+  stepBtn: { width: 44, height: 44, borderRadius: 22, borderWidth: 1, borderColor: manage.line, alignItems: "center", justifyContent: "center" },
   qty: { minWidth: 24, textAlign: "center", fontFamily: fonts.extrabold, fontSize: 16, color: colors.text },
 });

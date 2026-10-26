@@ -240,7 +240,7 @@ const styles = StyleSheet.create({
   plusHint: { fontFamily: fonts.bold, fontSize: 11.5, color: "#b45309", marginTop: 2 },
   outOfStock: { fontFamily: fonts.semibold, fontSize: 12, color: colors.textSecondary, marginTop: 2 },
   addBtn: {
-    minWidth: CONTROL_WIDTH, paddingHorizontal: 10, height: CONTROL_HEIGHT, borderRadius: 9,
+    minWidth: CONTROL_WIDTH, paddingHorizontal: 10, height: CONTROL_HEIGHT, borderRadius: CONTROL_HEIGHT / 2,
     borderWidth: 1.5, borderColor: colors.primary, backgroundColor: "#fff",
     shadowColor: "#0f172a", shadowOpacity: 0.08, shadowRadius: 4, shadowOffset: { width: 0, height: 2 }, elevation: 2,
     alignItems: "center", justifyContent: "center",
@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
   addTextDisabled: { color: "#94a3b8" },
   stepper: {
     flexDirection: "row", alignItems: "center", justifyContent: "space-between",
-    width: CONTROL_WIDTH, height: CONTROL_HEIGHT, borderRadius: 9, backgroundColor: colors.primary,
+    width: CONTROL_WIDTH, height: CONTROL_HEIGHT, borderRadius: CONTROL_HEIGHT / 2, backgroundColor: colors.primary,
   },
   stepBtn: { width: 24, height: 34, alignItems: "center", justifyContent: "center" },
   stepText: { fontFamily: fonts.extrabold, fontSize: 13.5, color: "#fff", textAlign: "center" },

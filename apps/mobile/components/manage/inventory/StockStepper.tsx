@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, TextInput, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { colors, fonts, radius } from "../../../constants/theme";
+import { colors, fonts } from "../../../constants/theme";
 import { manage, tabular } from "../ui/tokens";
 
 interface StockStepperProps {
@@ -47,12 +47,12 @@ const styles = StyleSheet.create({
   label: { fontFamily: fonts.semibold, fontSize: 13, color: colors.textSecondary, marginBottom: 6 },
   row: { flexDirection: "row", alignItems: "center", gap: 10 },
   step: {
-    width: 48, height: 48, borderRadius: radius.lg, alignItems: "center", justifyContent: "center",
+    width: 48, height: 48, borderRadius: 24, alignItems: "center", justifyContent: "center",
     backgroundColor: manage.canvas, borderWidth: 1, borderColor: manage.line,
   },
   input: {
     flex: 1, height: 48, textAlign: "center", fontFamily: fonts.extrabold, fontSize: 20, color: colors.text,
-    borderRadius: radius.lg, borderWidth: 1, borderColor: manage.line, backgroundColor: manage.card,
+    borderRadius: 24, borderWidth: 1, borderColor: manage.line, backgroundColor: manage.card,
   },
   hint: { fontFamily: fonts.medium, fontSize: 12.5, color: manage.muted, marginTop: 6 },
 });

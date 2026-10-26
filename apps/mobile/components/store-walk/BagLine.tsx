@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   size: { fontFamily: fonts.semibold, fontSize: 12, color: colors.textSecondary },
   right: { alignItems: "flex-end", gap: 8 },
   price: { fontFamily: fonts.extrabold, fontSize: 15, color: colors.text },
-  stepper: { flexDirection: "row", alignItems: "center", height: 32, borderRadius: 8, borderWidth: 1.5, borderColor: colors.primary },
+  stepper: { flexDirection: "row", alignItems: "center", height: 32, borderRadius: 16, borderWidth: 1.5, borderColor: colors.primary },
   step: { width: 30, height: 30, alignItems: "center", justifyContent: "center" },
   qty: { minWidth: 20, textAlign: "center", fontFamily: fonts.extrabold, fontSize: 14, color: colors.primary },
 });

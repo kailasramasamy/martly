@@ -767,7 +767,7 @@ const styles = StyleSheet.create({
     alignSelf: "flex-start",
     marginTop: 8,
     backgroundColor: "#f1f5f9",
-    borderRadius: 8,
+    borderRadius: 16,
     overflow: "hidden",
   },
   stepperBtn: {

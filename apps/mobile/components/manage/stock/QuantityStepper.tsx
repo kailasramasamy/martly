@@ -1,6 +1,6 @@
 import { View, TextInput, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { colors, fonts, radius } from "../../../constants/theme";
+import { colors, fonts } from "../../../constants/theme";
 import { manage, tabular } from "../ui/tokens";
 
 interface QuantityStepperProps {
@@ -45,12 +45,12 @@ export function QuantityStepper({ value, onChange, min = 0, label, placeholder =
 const styles = StyleSheet.create({
   row: { flexDirection: "row", alignItems: "center", gap: 6 },
   step: {
-    width: 44, height: 44, borderRadius: radius.lg, alignItems: "center", justifyContent: "center",
+    width: 44, height: 44, borderRadius: 22, alignItems: "center", justifyContent: "center",
     backgroundColor: manage.canvas, borderWidth: 1, borderColor: manage.line,
   },
   input: {
     width: 56, height: 44, textAlign: "center", fontFamily: fonts.extrabold, fontSize: 17, color: colors.text,
-    borderRadius: radius.lg, borderWidth: 1, borderColor: manage.line, backgroundColor: manage.card,
+    borderRadius: 22, borderWidth: 1, borderColor: manage.line, backgroundColor: manage.card,
   },
   // A word placeholder needs smaller type to fit the box
   inputEmpty: { fontFamily: fonts.semibold, fontSize: 13 },
