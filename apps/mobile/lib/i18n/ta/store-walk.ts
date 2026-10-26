@@ -66,9 +66,9 @@ export const storeWalk: Strings<"storeWalk"> = {
   goToCart: (total: string) => `கார்ட்டுக்குச் செல் · ₹${total}`,
   missedAnything: "ஏதாவது விட்டுப்போனதா?",
   cartNudge: (items: number, cartAisles: number, open: number, department: string) =>
-    `உங்கள் ${items} பொருட்கள் ${cartAisles} வரிசைகளிலிருந்து வந்தவை. ${department} பிரிவில் நீங்கள் பார்க்காத ${open} வரிசைகள் உள்ளன.`,
+    `உங்கள் ${items} பொருட்கள் ${cartAisles} ${cartAisles === 1 ? "வரிசையிலிருந்து" : "வரிசைகளிலிருந்து"} வந்தவை. ${department} பிரிவில் நீங்கள் பார்க்காத ${open} வரிசைகள் உள்ளன.`,
   cartNudgeDue: (n: number) => ` ${n} வழக்கமான பொருட்கள் வாங்கும் நேரம்.`,
-  walkTheAisles: (minutes: number) => `வரிசைகளைப் பாருங்கள் · சுமார் ${minutes} நிமிடம்`,
+  walkTheAisles: (minutes: number) => `வரிசைகளைப் பாருங்கள் · ${minutes} நிமிடம்`,
   hideNudge: "இதை மறை",
   checkoutMissing: (n: number) => `${n} வழக்கமான பொருட்கள் பையில் இல்லை`,
   quickWalk: "அல்லது ஒரு விரைவுச் சுற்று",

@@ -140,8 +140,8 @@ const styles = StyleSheet.create({
   chipDue: { backgroundColor: "#fef3c7" },
   chipText: { fontFamily: fonts.bold, fontSize: 12, color: "#334155" },
   chipTextDue: { color: "#78350f" },
-  walk: { height: 46, borderRadius: 12, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" },
-  walkText: { fontFamily: fonts.extrabold, fontSize: 15, color: "#ffffff" },
+  walk: { minHeight: 46, paddingHorizontal: 16, paddingVertical: 8, borderRadius: 12, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" },
+  walkText: { fontFamily: fonts.extrabold, fontSize: 15, color: "#ffffff", textAlign: "center" },
   row: {
     flexDirection: "row", alignItems: "center", gap: 10, paddingHorizontal: 16, paddingVertical: 10,
     backgroundColor: "#fffbeb", borderTopWidth: 1, borderTopColor: "#fde68a",
