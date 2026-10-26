@@ -72,6 +72,7 @@ export const RESOURCE_PERMISSIONS = {
   products: read("STAFF", P.CATALOG_PRODUCTS),
   "featured-products": P.LISTING_MANAGE,
   "store-posts": P.LISTING_MANAGE,
+  "loose-staples": P.LISTING_MANAGE,
   "catalog-drafts": P.CATALOG_PRODUCTS,
   collections: read("STAFF", P.CATALOG_COLLECTIONS),
   recipes: read("STAFF", P.CATALOG_COLLECTIONS),

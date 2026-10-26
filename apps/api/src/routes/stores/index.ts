@@ -12,7 +12,7 @@ import { reviewSummaries, withAllSizes, withReviews } from "../../services/store
 import { searchStoreProducts } from "../../services/store-search.js";
 import { decorateStoreProducts, storeProductInclude } from "../../services/store-product-view.js";
 import { injectAd, listingAd, type SponsoredAd } from "../../services/sponsored.js";
-import { boostedListingPage, hasBoost, markBrandPicks, NO_BOOST, storeBrandBoost, type BrandBoost } from "../../services/brand-boost.js";
+import { boostedListingPage, hasBoost, looseFirstPage, markBrandPicks, NO_BOOST, stapleSubcategoryIds, storeBrandBoost, type BrandBoost } from "../../services/brand-boost.js";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { getStoreDiscoveryInfo } from "../../services/store-discovery.js";
 import { catalogCoverage, type CatalogCoverage } from "../../services/catalog-coverage.js";
@@ -319,9 +319,16 @@ export async function storeRoutes(app: FastifyInstance) {
       app.prisma.storeProduct.findMany({ where: w, skip: from, take, include: storeProductInclude, orderBy: [orderBy, { id: "asc" }] });
     const count = (w: Prisma.StoreProductWhereInput) => app.prisma.storeProduct.count({ where: w });
     const listingWhere = where as Prisma.StoreProductWhereInput;
-    const { rows: storeProducts, total } = boost && hasBoost(boost) && !sortBy && !brandId
-      ? await boostedListingPage(boost, listingWhere, { skip, take: Number(pageSize) }, find, count)
-      : await Promise.all([find(listingWhere, skip, Number(pageSize)), count(listingWhere)]).then(([rows, n]) => ({ rows, total: n }));
+    // A staples aisle leads with the store's loose items; the boost then takes turns with the rest as usual
+    const looseIds = categoryId && !sortBy && !brandId ? await stapleSubcategoryIds(app.prisma) : [];
+    const restBoost = boost && looseIds.length ? { ...boost, stapleSubcategoryIds: [] } : boost;
+    const listingPage = (w: Prisma.StoreProductWhereInput, p: { skip: number; take: number }) => (restBoost && hasBoost(restBoost) && !sortBy && !brandId
+      ? boostedListingPage(restBoost, w, p, find, count)
+      : Promise.all([find(w, p.skip, p.take), count(w)]).then(([rows, n]) => ({ rows, total: n })));
+    const pageOf = { skip, take: Number(pageSize) };
+    const { rows: storeProducts, total } = looseIds.length
+      ? await looseFirstPage(looseIds, listingWhere, pageOf, find, count, listingPage)
+      : await listingPage(listingWhere, pageOf);
     const listed = markBrandPicks(await decorateStoreProducts(app.prisma, storeProducts), boost ?? NO_BOOST);
     const data = ad && Number(page) === 1 ? injectAd(listed, await sponsoredRows(app.prisma, store.id, ad.productId), ad) : listed;
 

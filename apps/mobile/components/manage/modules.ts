@@ -53,6 +53,7 @@ const MODULE_GROUPS: ModuleGroup[] = [
       { resource: "catalog-drafts", label: "Add product", icon: "add-circle-outline", href: "/manage/add-product" },
       { resource: "catalog-drafts", label: "AI queue", icon: "sparkles-outline", href: "/manage/catalog-drafts" },
       { resource: "products", label: "Products", icon: "cube-outline", href: "/manage/products" },
+      { resource: "loose-staples", label: "Loose staples", icon: "basket-outline", href: "/manage/loose-staples" },
       { resource: "categories", label: "Categories", icon: "file-tray-stacked-outline", href: "/manage/categories" },
       { resource: "brands", label: "Brands", icon: "pricetag-outline", href: "/manage/brands" },
       { resource: "collections", label: "Collections", icon: "albums-outline", href: "/manage/collections" },

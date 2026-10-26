@@ -1,9 +1,10 @@
 import type { ReactElement, ReactNode } from "react";
-import { View, Animated, FlatList, RefreshControl, StyleSheet, useWindowDimensions } from "react-native";
+import { View, Animated, FlatList, KeyboardAvoidingView, Platform, RefreshControl, StyleSheet, useWindowDimensions } from "react-native";
 import { Loader } from "../Loader";
 import { Stack } from "expo-router";
 import type { Ionicons } from "@expo/vector-icons";
 import { colors } from "../../constants/theme";
+import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
 import { manage } from "./ui/tokens";
 import { SearchField } from "./ui/SearchField";
 import { ListSkeleton } from "./ui/ListSkeleton";
@@ -57,9 +58,13 @@ export function ManageListScreen<T extends { id: string }>(props: ManageListScre
   const toolbar = useCollapsingToolbar(collapse);
   // A collapsing toolbar floats over the list, so the list starts below it
   const inset = collapse ? { paddingTop: toolbar.height } : undefined;
+  // A footer with inputs (a bulk-action bar) rides up with the keyboard, and a field typed into in the list scrolls into
+  // view above it; a collapsing toolbar owns the scroll position, so that list isn't scrolled for the keyboard
+  const keyboard = useKeyboardReveal<FlatList>();
 
   return (
-    <View style={styles.root}>
+    <View ref={keyboard.rootRef} style={styles.root} onLayout={keyboard.onRootLayout}>
+    <KeyboardAvoidingView style={styles.root} behavior={Platform.OS === "ios" ? "padding" : undefined} keyboardVerticalOffset={keyboard.topOffset}>
       <Stack.Screen options={{ title, headerRight }} />
       {showToolbar && (
         <Animated.View
@@ -82,7 +87,8 @@ export function ManageListScreen<T extends { id: string }>(props: ManageListScre
           columnWrapperStyle={columns ? styles.gridRow : undefined}
           onEndReached={list.loadMore}
           onEndReachedThreshold={0.4}
-          onScroll={collapse ? toolbar.onScroll : undefined}
+          ref={collapse ? undefined : keyboard.scrollRef}
+          onScroll={collapse ? toolbar.onScroll : keyboard.onScroll}
           scrollEventThrottle={16}
           refreshControl={<RefreshControl refreshing={list.refreshing} onRefresh={list.refresh} tintColor={colors.primary} progressViewOffset={toolbar.height} />}
           ListEmptyComponent={<ListEmpty error={list.error} empty={empty} onRetry={list.refresh} />}
@@ -91,6 +97,7 @@ export function ManageListScreen<T extends { id: string }>(props: ManageListScre
         />
       )}
       {footer}
+    </KeyboardAvoidingView>
     </View>
   );
 }

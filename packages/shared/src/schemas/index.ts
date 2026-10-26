@@ -1717,3 +1717,4 @@ export * from "./offers.js";
 export * from "./store-resolve.js";
 export * from "./web.js";
 export * from "./storefront.js";
+export * from "./loose-staples.js";

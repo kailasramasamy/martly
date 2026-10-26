@@ -29,6 +29,12 @@ function featuredHere(store: { id: string; state: string | null; district: strin
   return { status: "LIVE", endsAt: { gt: now }, product: { kind: "BRAND_FEATURE" }, ...aimedAtStore(store) };
 }
 
+/** Aisles whose unbranded products are a store's own loose or packed staples */
+export async function stapleSubcategoryIds(prisma: PrismaClient) {
+  const staples = await prisma.subcategory.findMany({ where: { category: { department: { slug: STORE_BRAND_DEPARTMENT_SLUG } } }, select: { id: true } });
+  return staples.map((s) => s.id);
+}
+
 export async function storeBrandBoost(prisma: PrismaClient, storeId: string): Promise<BrandBoost> {
   const store = await prisma.store.findUnique({
     where: { id: storeId },
@@ -40,10 +46,7 @@ export async function storeBrandBoost(prisma: PrismaClient, storeId: string): Pr
     { brandId: c.brandId, subcategoryIds: await subcategoryIdsUnder(prisma, c.categoryId!) }
   )));
   if (!store.organization.boostOwnBrands) return { ownBrandIds: [], stapleSubcategoryIds: [], featured };
-  const staples = await prisma.subcategory.findMany({
-    where: { category: { department: { slug: STORE_BRAND_DEPARTMENT_SLUG } } }, select: { id: true },
-  });
-  return { ownBrandIds: store.organization.brands.map((b) => b.id), stapleSubcategoryIds: staples.map((s) => s.id), featured };
+  return { ownBrandIds: store.organization.brands.map((b) => b.id), stapleSubcategoryIds: await stapleSubcategoryIds(prisma), featured };
 }
 
 type BoostedRow = { product: { brandId: string | null; subcategoryId: string | null } };
@@ -125,3 +128,28 @@ export async function boostedListingPage<T>(
   }
   return { rows, total };
 }
+
+type Page = { skip: number; take: number };
+
+/**
+ * A staples aisle leads with the store's loose items (its own rice, dal, flour…), then the rest of the listing in its
+ * usual order; paging runs across both in the database
+ */
+export async function looseFirstPage<T>(
+  looseSubcategoryIds: string[],
+  where: Prisma.StoreProductWhereInput,
+  page: Page,
+  find: (where: Prisma.StoreProductWhereInput, skip: number, take: number) => Promise<T[]>,
+  count: (where: Prisma.StoreProductWhereInput) => Promise<number>,
+  rest: (where: Prisma.StoreProductWhereInput, page: Page) => Promise<{ rows: T[]; total: number }>,
+): Promise<{ rows: T[]; total: number }> {
+  const loose: Prisma.StoreProductWhereInput = { AND: [where, { product: { brandId: null, subcategoryId: { in: looseSubcategoryIds } } }] };
+  const others: Prisma.StoreProductWhereInput = {
+    AND: [where, { product: { OR: [{ brandId: { not: null } }, { subcategoryId: null }, { subcategoryId: { notIn: looseSubcategoryIds } }] } }],
+  };
+  const looseTotal = await count(loose);
+  const head = page.skip < looseTotal ? await find(loose, page.skip, Math.min(page.take, looseTotal - page.skip)) : [];
+  const after = await rest(others, { skip: Math.max(0, page.skip - looseTotal), take: page.take - head.length });
+  return { rows: [...head, ...after.rows], total: looseTotal + after.total };
+}
+

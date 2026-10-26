@@ -58,7 +58,7 @@ export function ApplyCatalogCard({ storeId, proposal, rules, pricing, onPricingC
         </Col>
         <Col xs={24} md={12} style={{ textAlign: "right" }}>
           <Text type="secondary" style={{ display: "block", marginBottom: 8 }}>
-            {(totals.variants - totals.needsPrice).toLocaleString("en-IN")} sizes with an MRP get listed; {totals.needsPrice.toLocaleString("en-IN")} loose items wait for a price below.
+            {(totals.variants - totals.needsPrice).toLocaleString("en-IN")} sizes get listed, loose staples at a suggested price; {totals.needsPrice.toLocaleString("en-IN")} with nothing to go on wait for a price below.
           </Text>
           {totals.listed > 0 ? (
             <Popconfirm title="Update the store's listings?" description="Sizes no longer proposed are removed; prices and stock already set stay." okText="Apply" onConfirm={apply}>

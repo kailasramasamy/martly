@@ -79,6 +79,14 @@ export const STOREFRONT_CHECKS = {
     why: { en: "Your store card stands out among nearby shops", ta: "அருகிலுள்ள கடைகளிடையே உங்கள் அட்டை தனித்துத் தெரியும்" },
     screen: "/manage/storefront/branding", adminPath: "/stores/edit/:storeId",
   },
+  LOOSE_STAPLES: {
+    group: "LOOKS", weight: 6,
+    unit: { en: "aisles with loose staples", ta: "உதிரிப் பொருட்கள் உள்ள பிரிவுகள்" },
+    title: { en: "Loose rice, dal and flour", ta: "உதிரி அரிசி, பருப்பு, மாவு" },
+    what: { en: "Your own unbranded rice, dal, atta and spices, at your prices", ta: "உங்கள் விலையில் உங்கள் சொந்த அரிசி, பருப்பு, மாவு, மசாலா" },
+    why: { en: "Most shoppers here buy staples loose; they lead their aisles in the app", ta: "இங்கு பெரும்பாலோர் இவற்றை உதிரியாக வாங்குவார்கள்; ஆப்பில் அவை முதலில் தெரியும்" },
+    screen: "/manage/loose-staples", adminPath: "/store-products",
+  },
   HERO_CARDS: {
     group: "HOME", weight: 9,
     unit: { en: "cards ready", ta: "அட்டைகள் தயார்" },
@@ -231,6 +239,8 @@ export type StorefrontCheckKey = keyof typeof STOREFRONT_CHECKS;
 // Minimums behind the checks
 export const STOREFRONT_MIN = {
   HIGHLIGHTS: 3,
+  /** Staple aisles (rice, dal, atta…) with at least one loose item listed */
+  LOOSE_STAPLE_AISLES: 6,
   /** Ready hero cards; Home shows the carousel from 2, but a fuller one is the goal */
   HERO_CARDS: 4,
   BANNERS: 2,

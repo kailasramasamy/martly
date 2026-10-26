@@ -16,6 +16,7 @@ import { orderRoutes } from "./routes/orders/index.js";
 import { storeProductRoutes } from "./routes/store-products/index.js";
 import { offerRoutes } from "./routes/offers/index.js";
 import { storefrontRoutes } from "./routes/storefront/index.js";
+import { looseStapleRoutes } from "./routes/loose-staples/index.js";
 import { uploadRoutes } from "./routes/uploads/index.js";
 import { deviceTokenRoutes } from "./routes/device-tokens/index.js";
 import { dashboardRoutes } from "./routes/dashboard/index.js";
@@ -175,6 +176,7 @@ export async function buildApp() {
       await api.register(storeProductRoutes, { prefix: "/store-products" });
       await api.register(offerRoutes, { prefix: "/offers" });
       await api.register(storefrontRoutes, { prefix: "/storefront" });
+      await api.register(looseStapleRoutes, { prefix: "/loose-staples" });
       await api.register(uploadRoutes, { prefix: "/uploads" });
       await api.register(deviceTokenRoutes, { prefix: "/device-tokens" });
       await api.register(dashboardRoutes, { prefix: "/dashboard" });

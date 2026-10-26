@@ -3,6 +3,7 @@ import { STORE_SIZE_RULES, type StoreSize } from "@martly/shared/constants";
 import type { CatalogRules } from "@martly/shared/schemas";
 import type { CatalogProposal, ProposalAisle, ProposalBrand, ProposalDepartment, ProposalProduct } from "@martly/shared/types";
 import { loadCandidates, loadTaxonomy, type Candidate, type TaxonomyRow } from "./catalog-candidates.js";
+import { suggestPrices } from "../loose-staples.js";
 import { regionOf } from "./create.js";
 
 // A brand from the store's own state outranks a national one this much better known, one that also sells there by less;
@@ -145,6 +146,8 @@ export async function catalogProposal(
   const listedRows = await prisma.storeProduct.findMany({ where: { storeId: store.id }, select: { variantId: true } });
   const listed = new Set(listedRows.map((r) => r.variantId));
   const variants = proposedVariants(picks);
+  const loose = variants.filter((v) => v.mrp === null && !listed.has(v.variantId)).map((v) => v.variantId);
+  const suggested = await suggestPrices(prisma, store.id, loose);
   const included = [...picks.values()].filter((p) => p.included && p.picked.length > 0);
   const brandIds = new Set(included.flatMap((p) => p.picked.map((c) => c.brand?.id ?? "loose")));
   const aisle = subcategoryId ? picks.get(subcategoryId) : undefined;
@@ -158,7 +161,7 @@ export async function catalogProposal(
       brands: brandIds.size,
       products: included.reduce((n, p) => n + p.picked.length, 0),
       variants: variants.length,
-      needsPrice: variants.filter((v) => v.mrp === null).length,
+      needsPrice: loose.filter((id) => !suggested.has(id)).length,
       listed: listed.size,
     },
     departments: buildTree(taxonomy, picks),
