@@ -7,8 +7,6 @@ import {
   TouchableOpacity,
   StyleSheet,
   Dimensions,
-  Modal,
-  Animated,
   NativeSyntheticEvent,
   NativeScrollEvent,
 } from "react-native";
@@ -38,121 +36,9 @@ import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { ProductDetailSkeleton } from "../../components/SkeletonLoader";
 import type { Product, StoreProduct, Variant, Review, ReviewSummary } from "../../lib/types";
 import { OfferTag } from "../../components/DealTag";
+import { PhotoViewer } from "../../components/manage/inventory/PhotoViewer";
 
-const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get("window");
-
-function ZoomablePreview({ uri, onClose }: { uri: string | null; onClose: () => void }) {
-  const scale = useRef(new Animated.Value(1)).current;
-  const baseScale = useRef(1);
-  const pinchScale = useRef(new Animated.Value(1)).current;
-  const translateX = useRef(new Animated.Value(0)).current;
-  const translateY = useRef(new Animated.Value(0)).current;
-  const offsetX = useRef(0);
-  const offsetY = useRef(0);
-
-  const combinedScale = Animated.multiply(scale, pinchScale);
-
-  const isPinching = useRef(false);
-  const isPanning = useRef(false);
-  const initialDistance = useRef(0);
-  const panStartX = useRef(0);
-  const panStartY = useRef(0);
-  const lastTap = useRef(0);
-
-  const resetZoom = useCallback(() => {
-    Animated.parallel([
-      Animated.spring(scale, { toValue: 1, useNativeDriver: true }),
-      Animated.spring(translateX, { toValue: 0, useNativeDriver: true }),
-      Animated.spring(translateY, { toValue: 0, useNativeDriver: true }),
-    ]).start();
-    baseScale.current = 1;
-    offsetX.current = 0;
-    offsetY.current = 0;
-    pinchScale.setValue(1);
-  }, [scale, pinchScale, translateX, translateY]);
-
-  const getDistance = (touches: any) => {
-    const dx = touches[0].pageX - touches[1].pageX;
-    const dy = touches[0].pageY - touches[1].pageY;
-    return Math.sqrt(dx * dx + dy * dy);
-  };
-
-  const handleDoubleTap = () => {
-    const now = Date.now();
-    if (now - lastTap.current < 300) {
-      if (baseScale.current > 1) {
-        resetZoom();
-      } else {
-        baseScale.current = 2.5;
-        Animated.spring(scale, { toValue: 2.5, useNativeDriver: true }).start();
-      }
-    }
-    lastTap.current = now;
-  };
-
-  return (
-    <View
-      style={styles.previewOverlay}
-      onTouchStart={(e) => {
-        const { touches } = e.nativeEvent;
-        if (touches.length === 2) {
-          isPinching.current = true;
-          isPanning.current = false;
-          initialDistance.current = getDistance(touches);
-        } else if (touches.length === 1) {
-          handleDoubleTap();
-          if (baseScale.current > 1) {
-            isPanning.current = true;
-            panStartX.current = touches[0].pageX;
-            panStartY.current = touches[0].pageY;
-          }
-        }
-      }}
-      onTouchMove={(e) => {
-        const { touches } = e.nativeEvent;
-        if (touches.length === 2 && isPinching.current) {
-          const dist = getDistance(touches);
-          const newScale = Math.max(0.5, Math.min(5, dist / initialDistance.current));
-          pinchScale.setValue(newScale);
-        } else if (touches.length === 1 && isPanning.current && !isPinching.current) {
-          const dx = touches[0].pageX - panStartX.current;
-          const dy = touches[0].pageY - panStartY.current;
-          translateX.setValue(offsetX.current + dx / baseScale.current);
-          translateY.setValue(offsetY.current + dy / baseScale.current);
-        }
-      }}
-      onTouchEnd={(e) => {
-        if (isPinching.current) {
-          const final = baseScale.current * (pinchScale as any)._value;
-          if (final < 1) {
-            resetZoom();
-          } else {
-            baseScale.current = final;
-            scale.setValue(final);
-            pinchScale.setValue(1);
-          }
-          isPinching.current = false;
-          isPanning.current = false;
-        } else if (isPanning.current) {
-          offsetX.current = (translateX as any)._value;
-          offsetY.current = (translateY as any)._value;
-          isPanning.current = false;
-        }
-      }}
-    >
-      <TouchableOpacity style={styles.previewClose} onPress={onClose}>
-        <Ionicons name="close" size={28} color="#fff" />
-      </TouchableOpacity>
-      {uri && (
-        <Animated.Image
-          source={{ uri }}
-          style={[styles.previewImage, { transform: [{ scale: combinedScale }, { translateX }, { translateY }] }]}
-          resizeMode="contain"
-        />
-      )}
-    </View>
-  );
-}
+const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
 interface ProductDetail extends Product {
   variants?: Variant[];
@@ -183,7 +69,8 @@ export default function ProductDetailScreen() {
   const [loading, setLoading] = useState(true);
   const [descExpanded, setDescExpanded] = useState(false);
   const [activeImageIdx, setActiveImageIdx] = useState(0);
-  const [previewImage, setPreviewImage] = useState<string | null>(null);
+  // Full-screen viewer over a set of photos (the gallery, or one review's), opened at the tapped one
+  const [preview, setPreview] = useState<{ photos: string[]; index: number } | null>(null);
   const [reviewSummary, setReviewSummary] = useState<ReviewSummary | null>(null);
   const [reviews, setReviews] = useState<Review[]>([]);
   const [substitutes, setSubstitutes] = useState<StoreProduct[]>([]);
@@ -442,7 +329,7 @@ export default function ProductDetailScreen() {
               scrollEventThrottle={16}
             >
               {images.map((uri, idx) => (
-                <TouchableOpacity key={idx} activeOpacity={0.9} onPress={() => setPreviewImage(uri)} style={styles.heroImageWrap}>
+                <TouchableOpacity key={idx} activeOpacity={0.9} onPress={() => setPreview({ photos: images, index: idx })} style={styles.heroImageWrap}>
                   <Image source={{ uri }} style={styles.heroImage} resizeMode="contain" />
                 </TouchableOpacity>
               ))}
@@ -750,8 +637,8 @@ export default function ProductDetailScreen() {
                   {r.comment && <Text style={styles.reviewComment}>{r.comment}</Text>}
                   {r.images && r.images.length > 0 && (
                     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.reviewImageScroll} contentContainerStyle={{ gap: 8 }}>
-                      {r.images.map((img) => (
-                        <TouchableOpacity key={img.id} activeOpacity={0.8} onPress={() => setPreviewImage(img.imageUrl)}>
+                      {r.images.map((img, idx) => (
+                        <TouchableOpacity key={img.id} activeOpacity={0.8} onPress={() => setPreview({ photos: r.images!.map((i) => i.imageUrl), index: idx })}>
                           <Image source={{ uri: img.imageUrl }} style={styles.reviewThumb} />
                         </TouchableOpacity>
                       ))}
@@ -872,9 +759,7 @@ export default function ProductDetailScreen() {
         }}
         onCancel={() => setReplaceCartConfirm(null)}
       />
-      <Modal visible={!!previewImage} transparent animationType="fade" onRequestClose={() => setPreviewImage(null)}>
-        <ZoomablePreview uri={previewImage} onClose={() => setPreviewImage(null)} />
-      </Modal>
+      <PhotoViewer photos={preview?.photos ?? []} index={preview?.index ?? null} onClose={() => setPreview(null)} />
       </View>
     </ProductActionsProvider>
   );
@@ -1103,9 +988,6 @@ const styles = StyleSheet.create({
   writeReviewText: { fontSize: fontSize.md, fontWeight: "600", color: colors.primary },
   reviewImageScroll: { marginTop: spacing.sm },
   reviewThumb: { width: 64, height: 64, borderRadius: 8, backgroundColor: colors.border },
-  previewOverlay: { flex: 1, backgroundColor: "rgba(0,0,0,0.9)", justifyContent: "center", alignItems: "center" },
-  previewClose: { position: "absolute", top: 50, right: 20, zIndex: 1, padding: 8 },
-  previewImage: { width: SCREEN_WIDTH, height: SCREEN_WIDTH },
   replyBox: {
     marginTop: spacing.sm,
     paddingTop: spacing.sm,
