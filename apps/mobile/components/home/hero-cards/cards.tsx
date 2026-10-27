@@ -108,7 +108,7 @@ function PosterCard({ card }: { card: CardOf<"FESTIVE"> }) {
                 accessibilityRole="link" accessibilityLabel={tileTitle(tile)}
               >
                 <Image source={{ uri: tile.imageUrl }} style={styles.festTileImage} resizeMode="contain" />
-                <Text style={styles.festTileText} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75}>{tileTitle(tile)}</Text>
+                <Text style={styles.festTileText} numberOfLines={2}>{tileTitle(tile)}</Text>
               </Pressable>
             ))}
           </View>
@@ -191,5 +191,5 @@ const styles = StyleSheet.create({
   tileRow: { flex: 1, flexDirection: "row", gap: 8 },
   festTile: { flex: 1, borderRadius: 14, padding: 6, alignItems: "center" },
   festTileImage: { width: "100%", flex: 1 },
-  festTileText: { fontFamily: fonts.bold, fontSize: 11.5, color: colors.text, marginTop: 2 },
+  festTileText: { fontFamily: fonts.bold, fontSize: 11.5, lineHeight: 14, color: colors.text, textAlign: "center", marginTop: 2 },
 });
