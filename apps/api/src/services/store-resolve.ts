@@ -8,6 +8,9 @@ import { getStoreDiscoveryInfo, type StoreDiscoveryInfo } from "./store-discover
 /** Stores shoppers can see: launched, and not the Martly Template org's */
 export const liveStoreWhere = { status: "ACTIVE", organization: { isTemplate: false } } satisfies Prisma.StoreWhereInput;
 
+/** Shoppers and guests never see template stores; staff see only their own org's stores, so the template is the platform admin's alone */
+export const hidesTemplateStores = (user: { role: string }) => user.role === "GUEST" || user.role === "CUSTOMER";
+
 /** How far around the shopper to look when picking their store, as the app's nearby search */
 const RESOLVE_RADIUS_KM = 20;
 

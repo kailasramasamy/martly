@@ -21,7 +21,7 @@ import { recordOpeningStock } from "../../services/stock-ledger.js";
 import { notifyStoreStatusChange, notifyTeamMember } from "../../services/notify/team-alerts.js";
 import { categoryFacets, subcategoryIdsUnder } from "../../services/category-browse.js";
 import { storeWrite, townFields, townSelect } from "../../services/towns.js";
-import { nearbyStores, resolveStore, type CustomerStore } from "../../services/store-resolve.js";
+import { hidesTemplateStores, nearbyStores, resolveStore, type CustomerStore } from "../../services/store-resolve.js";
 
 /** A sponsored product's listings at the store, in the same shape as the rest of a category page */
 async function sponsoredRows(prisma: PrismaClient, storeId: string, productId: string) {
@@ -48,6 +48,9 @@ export async function storeRoutes(app: FastifyInstance) {
     }
     if (status) {
       where.status = status;
+    }
+    if (hidesTemplateStores(getOrgUser(request))) {
+      where.organization = { isTemplate: false };
     }
     if (q) {
       where.OR = [{ name: { contains: q, mode: "insensitive" as const } }, { address: { contains: q, mode: "insensitive" as const } }];
@@ -83,9 +86,9 @@ export async function storeRoutes(app: FastifyInstance) {
   app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticateOptional] }, async (request, reply) => {
     const result = await app.prisma.store.findUnique({
       where: { id: request.params.id },
-      include: { organization: { select: { subscriptionEnabled: true } }, town: { select: townSelect } },
+      include: { organization: { select: { subscriptionEnabled: true, isTemplate: true } }, town: { select: townSelect } },
     });
-    if (!result) return reply.notFound("Store not found");
+    if (!result || (result.organization.isTemplate && hidesTemplateStores(getOrgUser(request)))) return reply.notFound("Store not found");
 
     if (!(await verifyStoreOrgAccess(request, app.prisma, result.id))) {
       return reply.forbidden("Access denied");
@@ -249,8 +252,8 @@ export async function storeRoutes(app: FastifyInstance) {
     };
     const skip = (Number(page) - 1) * Number(pageSize);
 
-    const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
-    if (!store) return reply.notFound("Store not found");
+    const store = await app.prisma.store.findUnique({ where: { id: request.params.id }, include: { organization: { select: { isTemplate: true } } } });
+    if (!store || (store.organization.isTemplate && hidesTemplateStores(getOrgUser(request)))) return reply.notFound("Store not found");
 
     if (!(await verifyStoreOrgAccess(request, app.prisma, store.id))) {
       return reply.forbidden("Access denied");
