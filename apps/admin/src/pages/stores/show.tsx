@@ -16,6 +16,7 @@ import { ReadableSection } from "../../components/ReadableSection";
 interface Identity {
   role: string;
   permissions?: string[];
+  organizations?: { id: string; name: string }[];
 }
 
 interface StaffAssignment {
@@ -51,11 +52,14 @@ export const StoreShow = () => {
 
   const canManageStaff = can(identity, "users", "edit");
 
+  // Only Super Admin may read organizations; everyone else already has their own in their identity
+  const isSuperAdmin = identity?.role === "SUPER_ADMIN";
   const { data: orgData } = useOne({
     resource: "organizations",
     id: record?.organizationId,
-    queryOptions: { enabled: !!record?.organizationId },
+    queryOptions: { enabled: isSuperAdmin && !!record?.organizationId },
   });
+  const orgName = isSuperAdmin ? orgData?.data?.name : identity?.organizations?.find((o) => o.id === record?.organizationId)?.name;
 
   // Staff management state
   const [staff, setStaff] = useState<StaffAssignment[]>([]);
@@ -137,7 +141,7 @@ export const StoreShow = () => {
                 <Descriptions.Item label="Name">{record.name}</Descriptions.Item>
                 <Descriptions.Item label="Slug">{record.slug}</Descriptions.Item>
                 <Descriptions.Item label="Organization">
-                  {orgData?.data?.name ?? record.organizationId}
+                  {orgName ?? record.organizationId}
                 </Descriptions.Item>
                 <Descriptions.Item label="Status">
                   <Tag color={statusConfig.color}>{statusConfig.label}</Tag>

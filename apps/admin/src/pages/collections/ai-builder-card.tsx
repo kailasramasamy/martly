@@ -34,7 +34,10 @@ export const AiBuilderCard = ({ form, onDrafted }: { form: FormInstance; onDraft
   const { message } = App.useApp();
   const { data: identity } = useGetIdentity<{ role: string }>();
   const isSuperAdmin = identity?.role === "SUPER_ADMIN";
-  const { selectProps: orgSelectProps } = useSelect({ resource: "organizations", optionLabel: "name", optionValue: "id" });
+  // Only Super Admin picks an organization (and may list them); others draft for their own
+  const { selectProps: orgSelectProps } = useSelect({
+    resource: "organizations", optionLabel: "name", optionValue: "id", queryOptions: { enabled: isSuperAdmin },
+  });
   const [brief, setBrief] = useState("");
   const [organizationId, setOrganizationId] = useState<string>();
   const [busy, setBusy] = useState(false);
