@@ -117,6 +117,26 @@ export interface WebBrandPage extends WebFilteredList {
   brand: { name: string; slug: string; imageUrl: string | null };
 }
 
+export interface WebBrandTile {
+  name: string;
+  slug: string;
+  imageUrl: string | null;
+  themeColor: string | null;
+  productCount: number;
+  /** Slugs of the departments the brand's products sit in */
+  departments: string[];
+}
+
+/** Every brand the store stocks, A to Z, with the best known ones picked out */
+export interface WebBrandsPage {
+  store: WebShopStore;
+  brands: WebBrandTile[];
+  /** Slugs of the brands shoppers know best, most known first */
+  popular: string[];
+  /** The departments the brands cover, in store order */
+  departments: WebDepartment[];
+}
+
 /** The filters in use on a category page; null or empty when off */
 export interface WebCategoryFilters {
   brand: string[];

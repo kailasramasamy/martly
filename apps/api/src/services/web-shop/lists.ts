@@ -1,6 +1,6 @@
 import { BUY_GET_PAGE_SIZE, HOME_DEALS_PAGE_SIZE, MOST_BOUGHT_LIST } from "@martly/shared/constants";
 import type { WebShopQuery } from "@martly/shared/schemas";
-import type { HomeTheme, PriceBandChip, WebBrandPage, WebCollectionPage, WebListPage } from "@martly/shared/types";
+import type { HomeTheme, PriceBandChip, WebBrandPage, WebBrandsPage, WebBrandTile, WebCollectionPage, WebListPage } from "@martly/shared/types";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { rankedCollectionProductIds } from "../collection-products.js";
 import { campaignLook } from "../home/campaign-look.js";
@@ -11,8 +11,10 @@ import { autoTiles, stockedCollectionItems } from "../home/resolvers/campaign-ti
 import { liveWindow } from "../store-feed.js";
 import { cardsInOrder, soldAt, type ShopContext } from "./cards.js";
 import { filteredList } from "./category-filters.js";
+import { storeDepartments } from "./pages.js";
 
 const PAGE_SIZE = 24;
+const POPULAR_BRANDS = 12;
 
 const pages = (total: number, size: number) => Math.max(1, Math.ceil(total / size));
 
@@ -99,6 +101,39 @@ export async function brandPage(prisma: PrismaClient, ctx: ShopContext, slug: st
   const where = { brandId: brand.id, ...(subcategory ? { subcategory: { slug: subcategory } } : {}) };
   const listing = await filteredList(prisma, ctx.store.id, where, q, PAGE_SIZE);
   return { store: ctx.store, brand, subcategories, subcategory, page: q.page, ...listing };
+}
+
+/** Every brand the store stocks: the shopper's brand directory at /brands */
+export async function brandsPage(prisma: PrismaClient, ctx: ShopContext): Promise<WebBrandsPage | null> {
+  const [rows, departments] = await Promise.all([
+    prisma.$queryRaw<(WebBrandTile & { popularity: number })[]>`
+      SELECT b.name, b.slug, b.image_url AS "imageUrl", b.theme_color AS "themeColor", b.popularity,
+        COUNT(DISTINCT p.id)::int AS "productCount",
+        COALESCE(array_agg(DISTINCT d.slug) FILTER (WHERE d.slug IS NOT NULL), '{}') AS departments
+      FROM store_products sp
+      JOIN products p ON p.id = sp.product_id
+      JOIN brands b ON b.id = p.brand_id
+      LEFT JOIN subcategories s ON s.id = p.subcategory_id
+      LEFT JOIN categories c ON c.id = s.category_id
+      LEFT JOIN departments d ON d.id = c.department_id
+      WHERE sp.store_id = ${ctx.store.id} AND sp.is_active = true AND p.is_active = true AND p.is_draft = false
+        AND (b.organization_id IS NULL OR b.organization_id = ${ctx.organizationId})
+      GROUP BY b.id
+      ORDER BY b.name ASC`,
+    storeDepartments(prisma, ctx.store.id),
+  ]);
+  if (!rows.length) return null;
+  const popular = [...rows]
+    .sort((a, b) => b.popularity - a.popularity || Number(!!b.themeColor) - Number(!!a.themeColor) || b.productCount - a.productCount)
+    .slice(0, POPULAR_BRANDS)
+    .map((b) => b.slug);
+  const covered = new Set(rows.flatMap((b) => b.departments));
+  return {
+    store: ctx.store,
+    brands: rows.map(({ popularity: _, ...b }) => b),
+    popular,
+    departments: departments.filter((d) => covered.has(d.slug)),
+  };
 }
 
 /** Every buy X get Y offer at the store, a category at a time */

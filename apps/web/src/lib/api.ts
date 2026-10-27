@@ -3,7 +3,7 @@ import { createHash } from "node:crypto"
 import { getCookie, getRequestIP, setCookie } from "@tanstack/react-start/server"
 import type { FoodType, SearchEventType, SearchSortBy } from "@martly/shared/constants"
 import type {
-  ApiResponse, StoreResolution, WebBrandPage, WebCategoryPage, WebCollectionPage, WebDepartment, WebDepartmentPage, WebHome, WebHomeSectionsPage, WebListPage,
+  ApiResponse, StoreResolution, WebBrandPage, WebBrandsPage, WebCategoryPage, WebCollectionPage, WebDepartment, WebDepartmentPage, WebHome, WebHomeSectionsPage, WebListPage,
   WebProductPage, WebSearchLanding, WebSearchPage, WebSitemap, WebStorePage, WebSuggestion, WebTownPage,
 } from "@martly/shared/types"
 
@@ -73,6 +73,8 @@ export const getHomeSections = createServerFn({ method: "GET" })
 export const getCollection = createServerFn({ method: "GET" })
   .inputValidator((params: { slug: string; aisle?: string; tile?: string; page?: number }) => params)
   .handler(({ data: { slug, ...filters } }) => get<WebCollectionPage>(`/web/collections/${seg(slug)}${shopQuery(filters)}`))
+
+export const getBrands = createServerFn({ method: "GET" }).handler(() => get<WebBrandsPage>(`/web/brands${shopQuery()}`))
 
 export const getBrand = createServerFn({ method: "GET" })
   .inputValidator((params: { slug: string } & CategorySearch) => params)

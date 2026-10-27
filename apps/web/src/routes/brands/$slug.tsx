@@ -25,7 +25,7 @@ export const Route = createFileRoute("/brands/$slug")({
       path: listHref(path, { sub: subcategory ?? undefined, page }),
       image: brand.imageUrl,
       noindex: isFilteredView(loaderData),
-      jsonLd: { "@context": "https://schema.org", ...breadcrumbJsonLd([{ name: brand.name, path }]) },
+      jsonLd: { "@context": "https://schema.org", ...breadcrumbJsonLd([{ name: "Brands", path: "/brands" }, { name: brand.name, path }]) },
     })
   },
   component: BrandPage,
@@ -38,7 +38,7 @@ function BrandPage() {
   return (
     <ShopLayout store={page.store}>
       <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6">
-        <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: page.brand.name }]} />
+        <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Brands", path: "/brands" }, { name: page.brand.name }]} />
         <div className="mt-3 flex items-center gap-4">
           {page.brand.imageUrl && <img src={page.brand.imageUrl} alt="" className="h-16 w-16 shrink-0 rounded-full border border-line bg-white object-contain p-2" />}
           <div className="min-w-0">

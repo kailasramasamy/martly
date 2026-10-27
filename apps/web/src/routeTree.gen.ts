@@ -15,6 +15,7 @@ import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as ForStoresRouteImport } from './routes/for-stores'
 import { Route as BestSellersRouteImport } from './routes/best-sellers'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BrandsIndexRouteImport } from './routes/brands/index'
 import { Route as TownIndexRouteImport } from './routes/$town/index'
 import { Route as PSlugRouteImport } from './routes/p/$slug'
 import { Route as OffersBuyGetRouteImport } from './routes/offers/buy-get'
@@ -53,6 +54,11 @@ const BestSellersRoute = BestSellersRouteImport.update({
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BrandsIndexRoute = BrandsIndexRouteImport.update({
+  id: '/brands/',
+  path: '/brands/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TownIndexRoute = TownIndexRouteImport.update({
@@ -115,6 +121,7 @@ export interface FileRoutesByFullPath {
   '/offers/buy-get': typeof OffersBuyGetRoute
   '/p/$slug': typeof PSlugRoute
   '/$town/': typeof TownIndexRoute
+  '/brands/': typeof BrandsIndexRoute
   '/c/$department/$category': typeof CDepartmentCategoryRoute
   '/c/$department/': typeof CDepartmentIndexRoute
 }
@@ -132,6 +139,7 @@ export interface FileRoutesByTo {
   '/offers/buy-get': typeof OffersBuyGetRoute
   '/p/$slug': typeof PSlugRoute
   '/$town': typeof TownIndexRoute
+  '/brands': typeof BrandsIndexRoute
   '/c/$department/$category': typeof CDepartmentCategoryRoute
   '/c/$department': typeof CDepartmentIndexRoute
 }
@@ -150,6 +158,7 @@ export interface FileRoutesById {
   '/offers/buy-get': typeof OffersBuyGetRoute
   '/p/$slug': typeof PSlugRoute
   '/$town/': typeof TownIndexRoute
+  '/brands/': typeof BrandsIndexRoute
   '/c/$department/$category': typeof CDepartmentCategoryRoute
   '/c/$department/': typeof CDepartmentIndexRoute
 }
@@ -169,6 +178,7 @@ export interface FileRouteTypes {
     | '/offers/buy-get'
     | '/p/$slug'
     | '/$town/'
+    | '/brands/'
     | '/c/$department/$category'
     | '/c/$department/'
   fileRoutesByTo: FileRoutesByTo
@@ -186,6 +196,7 @@ export interface FileRouteTypes {
     | '/offers/buy-get'
     | '/p/$slug'
     | '/$town'
+    | '/brands'
     | '/c/$department/$category'
     | '/c/$department'
   id:
@@ -203,6 +214,7 @@ export interface FileRouteTypes {
     | '/offers/buy-get'
     | '/p/$slug'
     | '/$town/'
+    | '/brands/'
     | '/c/$department/$category'
     | '/c/$department/'
   fileRoutesById: FileRoutesById
@@ -221,6 +233,7 @@ export interface RootRouteChildren {
   OffersBuyGetRoute: typeof OffersBuyGetRoute
   PSlugRoute: typeof PSlugRoute
   TownIndexRoute: typeof TownIndexRoute
+  BrandsIndexRoute: typeof BrandsIndexRoute
   CDepartmentCategoryRoute: typeof CDepartmentCategoryRoute
   CDepartmentIndexRoute: typeof CDepartmentIndexRoute
 }
@@ -267,6 +280,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/brands/': {
+      id: '/brands/'
+      path: '/brands'
+      fullPath: '/brands/'
+      preLoaderRoute: typeof BrandsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/$town/': {
@@ -349,6 +369,7 @@ const rootRouteChildren: RootRouteChildren = {
   OffersBuyGetRoute: OffersBuyGetRoute,
   PSlugRoute: PSlugRoute,
   TownIndexRoute: TownIndexRoute,
+  BrandsIndexRoute: BrandsIndexRoute,
   CDepartmentCategoryRoute: CDepartmentCategoryRoute,
   CDepartmentIndexRoute: CDepartmentIndexRoute,
 }

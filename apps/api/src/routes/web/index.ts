@@ -7,7 +7,7 @@ import { webSearch, webSearchLanding, webSuggestions } from "../../services/web-
 import { webHomeSections } from "../../services/web-shop/home-sections.js";
 import { storeProfile } from "../../services/web-shop/store-profile.js";
 import { liveStore, townPage, webStoreSelect } from "../../services/web-shop/town-page.js";
-import { bestSellers, brandPage, buyGetList, collectionPage, dealsList } from "../../services/web-shop/lists.js";
+import { bestSellers, brandPage, brandsPage, buyGetList, collectionPage, dealsList } from "../../services/web-shop/lists.js";
 import { webSearchLogRoutes } from "./search-log.js";
 import { categoryPage, departmentPage, productPage, sitemap, storeDepartments } from "../../services/web-shop/pages.js";
 
@@ -85,6 +85,8 @@ function shopRoutes(app: FastifyInstance) {
 
   app.get<{ Params: { slug: string } }>("/collections/:slug", (request, reply) =>
     respond(request, reply, (ctx, q) => collectionPage(app.prisma, ctx, request.params.slug, q)));
+
+  app.get("/brands", (request, reply) => respond(request, reply, (ctx) => brandsPage(app.prisma, ctx)));
 
   app.get<{ Params: { slug: string } }>("/brands/:slug", (request, reply) =>
     respond(request, reply, (ctx, q) => brandPage(app.prisma, ctx, request.params.slug, q)));

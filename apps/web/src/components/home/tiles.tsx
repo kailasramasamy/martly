@@ -139,7 +139,7 @@ export function TileGrid({ section }: { section: Of<"EXPLORE_GRID" | "STORE_GRID
 export function BrandRail({ section }: { section: Of<"BRAND_RAIL"> }) {
   return (
     <Section id={section.id}>
-      <SectionHead id={section.id} title={section.title ?? "Shop by brand"} subtitle={section.subtitle} fallback="Brands" />
+      <SectionHead id={section.id} title={section.title ?? "Shop by brand"} subtitle={section.subtitle} href="/brands" fallback="Brands" />
       <TileRail cols="sm:grid-cols-6 lg:grid-cols-12">
         {section.brands.map((b) => (
           <li key={b.href} className="w-[22%] shrink-0 snap-start sm:w-auto">

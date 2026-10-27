@@ -14,6 +14,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           ...shop.departments.map((d): [string] => [`/c/${d}`]),
           ...shop.categories.map((c): [string] => [`/c/${c.department}/${c.slug}`]),
           ...shop.collections.map((slug): [string] => [`/collections/${slug}`]),
+          ["/brands"],
           ...shop.brands.map((slug): [string] => [`/brands/${slug}`]),
           ...shop.products.map((p): [string, string] => [`/p/${p.slug}`, p.updatedAt.slice(0, 10)]),
         ]
