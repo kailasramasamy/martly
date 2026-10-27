@@ -41,6 +41,9 @@ async function heroTagMatches(prisma: FastifyInstance["prisma"], scope: Record<s
   return [{ id: { in: [...(await liveFestivalIds(prisma, [...new Set(orgIds)]))] } }];
 }
 
+/** Collection addresses are unique across Martly, so a taken slug is a 409 with the reason, not a database error */
+const slugTakenMessage = (slug: string) => `Another collection already uses the address "${slug}". Change the slug and save again.`;
+
 export async function collectionRoutes(app: FastifyInstance) {
   await app.register(collectionImageRoutes);
   await app.register(collectionStorefrontRoutes);
@@ -118,9 +121,12 @@ export async function collectionRoutes(app: FastifyInstance) {
   app.post(
     "/",
     { preHandler: [authenticate, requirePermission(Permission.CATALOG_COLLECTIONS)] },
-    async (request) => {
+    async (request, reply) => {
       const { productIds, ...body } = createCollectionSchema.parse(request.body);
       const user = getOrgUser(request);
+      if (await app.prisma.collection.findUnique({ where: { slug: body.slug }, select: { id: true } })) {
+        return reply.conflict(slugTakenMessage(body.slug));
+      }
 
       // ORG_ADMIN: force their org
       if (user.role !== "SUPER_ADMIN") {
@@ -164,6 +170,9 @@ export async function collectionRoutes(app: FastifyInstance) {
       const { productIds, ...body } = updateCollectionSchema.parse(request.body);
       const existing = await app.prisma.collection.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Collection not found");
+      if (body.slug && body.slug !== existing.slug && await app.prisma.collection.findUnique({ where: { slug: body.slug }, select: { id: true } })) {
+        return reply.conflict(slugTakenMessage(body.slug));
+      }
 
       // ORG_ADMIN can only edit own org's collections
       const user = getOrgUser(request);

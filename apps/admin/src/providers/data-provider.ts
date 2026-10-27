@@ -32,7 +32,9 @@ axiosInstance.interceptors.response.use(
       }
     }
 
-    return Promise.reject(error);
+    // Refine's notifications read message and statusCode, so carry the API's own reason instead of axios's "Request failed…"
+    const body = error.response?.data as { message?: string } | undefined;
+    return Promise.reject(Object.assign(error, { message: body?.message ?? error.message, statusCode: error.response?.status }));
   },
 );
 
