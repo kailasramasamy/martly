@@ -1,4 +1,4 @@
-# Railway: project "martly" — PostgreSQL plus two services built from this repo.
+# Railway: project "martly" — PostgreSQL plus three services built from this repo.
 #
 # Service "api"   — Dockerfile (default). Migrations run on every start.
 #   DATABASE_URL          ${{Postgres.DATABASE_URL}}
@@ -12,6 +12,10 @@
 #
 # Service "admin" — RAILWAY_DOCKERFILE_PATH=Dockerfile.admin
 #   VITE_API_URL          https://<api service domain>   (baked in at build time)
+#
+# Service "web"   — martlyshop.in, RAILWAY_DOCKERFILE_PATH=Dockerfile.web
+#   MARTLY_API_URL        http://api.railway.internal:<api PORT>/api/v1   (private network; the site calls the API server-side)
+#   WEB_API_SECRET        same value as on "api", so the site's search logs count
 
 [deploy]
 restartPolicyType = "ON_FAILURE"

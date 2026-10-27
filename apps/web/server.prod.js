@@ -60,15 +60,21 @@ const httpServer = createServer(async (req, res) => {
     if (value) headers.set(key, Array.isArray(value) ? value.join(", ") : value)
   }
 
+  const hasBody = req.method !== "GET" && req.method !== "HEAD"
   const request = new Request(url.toString(), {
     method: req.method,
     headers,
+    body: hasBody ? req : undefined,
+    duplex: hasBody ? "half" : undefined,
   })
 
   const response = await server.fetch(request)
-  res.writeHead(response.status, Object.fromEntries(response.headers.entries()))
-  const body = await response.text()
-  res.end(body)
+  // Each cookie needs its own Set-Cookie header; folding them into one loses all but the last
+  const responseHeaders = Object.fromEntries([...response.headers].filter(([key]) => key !== "set-cookie"))
+  const cookies = response.headers.getSetCookie()
+  if (cookies.length) responseHeaders["set-cookie"] = cookies
+  res.writeHead(response.status, responseHeaders)
+  res.end(Buffer.from(await response.arrayBuffer()))
 })
 
 httpServer.listen(PORT, () => {
