@@ -112,7 +112,7 @@ function ProductsCard({ form, drafted }: { form: FormInstance; drafted: DraftPro
   return (
     <Card title={sectionTitle(<AppstoreOutlined />, "Products & Image")} size="small">
       <Form.Item label="Products" name="productIds">
-        <Select {...selectProps} options={options} mode="multiple" placeholder="Select products for this collection" allowClear />
+        <Select {...selectProps} options={options} mode="multiple" filterOption={false} placeholder="Type a product name to search" allowClear />
       </Form.Item>
       <BannerOption form={form} />
       <Form.Item label="Cover Image" name="imageUrl" getValueFromEvent={(url: string) => url}>

@@ -96,7 +96,8 @@ export const CollectionEdit = () => {
                       {...productSelectProps}
                       options={productOptions}
                       mode="multiple"
-                      placeholder="Select products for this collection"
+                      filterOption={false}
+                      placeholder="Type a product name to search"
                       allowClear
                     />
                   </Form.Item>

@@ -43,7 +43,7 @@ export const StoreProductCreate = () => {
                   <Select {...storeSelectProps} placeholder="Select a store" />
                 </Form.Item>
                 <Form.Item label="Product" name="productId" rules={[{ required: true }]}>
-                  <Select {...productSelectProps} placeholder="Select a product" />
+                  <Select {...productSelectProps} showSearch filterOption={false} placeholder="Type a product name to search" />
                 </Form.Item>
               </Card>
             </Col>
