@@ -4,7 +4,7 @@ import { createStoreSchema, updateStoreSchema, storeProductSearchQuerySchema, st
 import type { ApiResponse, CategoryFacets, PaginatedResponse, StoreResolution } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requirePermission, requireRole } from "../../middleware/authorize.js";
-import { Permission } from "@martly/shared/constants";
+import { Permission, ownBrandStoreId } from "@martly/shared/constants";
 import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
@@ -13,6 +13,7 @@ import { searchStoreProducts } from "../../services/store-search.js";
 import { decorateStoreProducts, storeProductInclude } from "../../services/store-product-view.js";
 import { injectAd, listingAd, type SponsoredAd } from "../../services/sponsored.js";
 import { boostedListingPage, hasBoost, looseFirstPage, markBrandPicks, NO_BOOST, stapleSubcategoryIds, storeBrandBoost, type BrandBoost } from "../../services/brand-boost.js";
+import { ownProductWhere } from "../../services/own-brand.js";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { getStoreDiscoveryInfo } from "../../services/store-discovery.js";
 import { catalogCoverage, type CatalogCoverage } from "../../services/catalog-coverage.js";
@@ -306,7 +307,8 @@ export async function storeRoutes(app: FastifyInstance) {
       where.product = { ...(where.product as Record<string, unknown> ?? {}), foodType };
     }
     if (brandId) {
-      where.product = { ...(where.product as Record<string, unknown> ?? {}), brandId };
+      const brandWhere = ownBrandStoreId(brandId) === store.id ? ownProductWhere(await storeBrandBoost(app.prisma, store.id)) : { brandId };
+      where.product = { ...(where.product as Record<string, unknown> ?? {}), ...brandWhere };
     }
 
     let orderBy: Record<string, string> = { createdAt: "desc" };

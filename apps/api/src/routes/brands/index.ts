@@ -5,24 +5,32 @@ import { createBrandSchema, updateBrandSchema } from "@martly/shared/schemas";
 import type { ApiResponse, BrandDirectory, BrandSegment, BrandSpotlight, BrandSummary, DirectoryBrand, DirectoryDepartment, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
-import { Permission } from "@martly/shared/constants";
+import { Permission, ownBrandStoreId } from "@martly/shared/constants";
 import type { JwtUser } from "../../types/jwt.js";
 import { brandVisibility, storeBrands, uniqueBrandSlug } from "../../services/brands.js";
 import { cleanLogo } from "../../services/brand-logo.js";
 import { putObject } from "../../services/media.js";
 import { brandSpotlight } from "../../services/brand-spotlight.js";
+import { storeBrandBoost } from "../../services/brand-boost.js";
+import { ownBrand, ownBrandAisles, ownBrandWithCount } from "../../services/own-brand.js";
 
 type Translations = DirectoryDepartment["translations"];
 type DirectoryRow = DirectoryBrand & {
-  deptId: string; deptName: string; deptTranslations: Translations;
-  catId: string; catName: string; catTranslations: Translations;
+  deptId: string; deptName: string; deptTranslations: Translations; deptSort: number;
+  catId: string; catName: string; catTranslations: Translations; catSort: number;
 };
 
-// Rows arrive ordered by department, category, then brand rank: fold them into the nested directory
+const isOwnBrand = (brand: { id: string }) => ownBrandStoreId(brand.id) !== null;
+
+// Department, then category order; a stable sort keeps each category's brands in the order they came
+const byAisle = (a: DirectoryRow, b: DirectoryRow) =>
+  a.deptSort - b.deptSort || a.deptName.localeCompare(b.deptName) || a.catSort - b.catSort || a.catName.localeCompare(b.catName);
+
+// Rows arrive ordered by department, category, then brand rank (the store's own brand first): fold them into the nested directory
 function buildDirectory(rows: DirectoryRow[]): BrandDirectory {
   const departments: DirectoryDepartment[] = [];
   const featured = new Map<string, DirectoryBrand>();
-  for (const { deptId, deptName, deptTranslations, catId, catName, catTranslations, ...brand } of rows) {
+  for (const { deptId, deptName, deptTranslations, deptSort: _d, catId, catName, catTranslations, catSort: _c, ...brand } of rows) {
     let dept = departments.at(-1);
     if (dept?.id !== deptId) departments.push(dept = { id: deptId, name: deptName, translations: deptTranslations, categories: [] });
     let cat = dept.categories.at(-1);
@@ -34,7 +42,7 @@ function buildDirectory(rows: DirectoryRow[]): BrandDirectory {
     }
   }
   return {
-    featured: [...featured.values()].sort((a, b) => b.productCount - a.productCount),
+    featured: [...featured.values()].sort((a, b) => Number(isOwnBrand(b)) - Number(isOwnBrand(a)) || b.productCount - a.productCount),
     departments,
     brandCount: new Set(rows.map((r) => r.id)).size,
   };
@@ -106,13 +114,15 @@ export async function brandRoutes(app: FastifyInstance) {
     return response;
   });
 
-  // Brands with active listings in a store: brands with a brand store (theme colour) first, then most products — powers "Shop by brand"
+  // Brands with active listings in a store: the store's own brand, then brands with a brand store (theme colour), then most products — powers "Shop by brand"
   app.get<{ Params: { storeId: string } }>("/store/:storeId", async (request, reply) => {
     const store = await app.prisma.store.findUnique({ where: { id: request.params.storeId }, select: { id: true } });
     if (!store) return reply.notFound("Store not found");
     const limit = Math.min(Math.max(Number((request.query as { limit?: string }).limit) || 50, 1), 200);
 
-    const brands = await storeBrands(app.prisma, store.id, limit);
+    const boost = await storeBrandBoost(app.prisma, store.id);
+    const [own, rest] = await Promise.all([ownBrandWithCount(app.prisma, store.id, boost), storeBrands(app.prisma, store.id, limit)]);
+    const brands = [...(own ? [own] : []), ...rest.filter((b) => !boost.ownBrandIds.includes(b.id))].slice(0, limit);
 
     const response: ApiResponse<typeof brands> = { success: true, data: brands };
     return response;
@@ -123,9 +133,10 @@ export async function brandRoutes(app: FastifyInstance) {
     const store = await app.prisma.store.findUnique({ where: { id: request.params.storeId }, select: { id: true } });
     if (!store) return reply.notFound("Store not found");
 
+    const boost = await storeBrandBoost(app.prisma, store.id);
     const rows = await app.prisma.$queryRaw<DirectoryRow[]>`
-      SELECT d.id AS "deptId", d.name AS "deptName", d.translations AS "deptTranslations",
-        c.id AS "catId", c.name AS "catName", c.translations AS "catTranslations",
+      SELECT d.id AS "deptId", d.name AS "deptName", d.translations AS "deptTranslations", d.sort_order AS "deptSort",
+        c.id AS "catId", c.name AS "catName", c.translations AS "catTranslations", c.sort_order AS "catSort",
         b.id, b.name, b.image_url AS "imageUrl", b.theme_color AS "themeColor",
         b.theme_color_secondary AS "themeColorSecondary", COUNT(DISTINCT p.id)::int AS "productCount",
         (array_agg(p.image_url ORDER BY COALESCE(sales.qty, 0) DESC, sp.stock DESC, p.id)
@@ -142,12 +153,14 @@ export async function brandRoutes(app: FastifyInstance) {
         WHERE o.store_id = ${store.id} AND o.status <> 'CANCELLED' AND o.created_at > now() - interval '30 days'
         GROUP BY oi.product_id
       ) sales ON sales.product_id = p.id
-      WHERE sp.store_id = ${store.id} AND sp.is_active = true AND p.is_active = true
+      WHERE sp.store_id = ${store.id} AND sp.is_active = true AND p.is_active = true AND NOT (b.id = ANY(${boost.ownBrandIds}))
       GROUP BY d.id, c.id, b.id
       ORDER BY d.sort_order, d.name, c.sort_order, c.name,
         (b.theme_color IS NOT NULL) DESC, "productCount" DESC, b.name`;
 
-    const response: ApiResponse<BrandDirectory> = { success: true, data: buildDirectory(rows) };
+    const [own, aisles] = await Promise.all([ownBrandWithCount(app.prisma, store.id, boost), ownBrandAisles(app.prisma, store.id, boost)]);
+    const ownRows = own ? aisles.map((a) => ({ ...own, ...a, coverImageUrl: null })) : [];
+    const response: ApiResponse<BrandDirectory> = { success: true, data: buildDirectory([...ownRows, ...rows].sort(byAisle)) };
     return response;
   });
 
@@ -159,6 +172,11 @@ export async function brandRoutes(app: FastifyInstance) {
 
   // Get brand by ID
   app.get<{ Params: { id: string } }>("/:id", async (request, reply) => {
+    const ownStoreId = ownBrandStoreId(request.params.id);
+    if (ownStoreId) {
+      const own = await ownBrand(app.prisma, ownStoreId);
+      return own ? { success: true, data: own } : reply.notFound("Brand not found");
+    }
     const brand = await app.prisma.brand.findUnique({
       where: { id: request.params.id },
     });

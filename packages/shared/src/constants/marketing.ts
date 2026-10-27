@@ -150,3 +150,8 @@ export type BrandPick = (typeof BrandPick)[keyof typeof BrandPick];
 
 // Unbranded products in this department are the store's own packs (rice, dal, flour…), promoted as "Our brand"
 export const STORE_BRAND_DEPARTMENT_SLUG = "grocery-staples";
+
+// The store's own brand as one brand id: everything it sells as "Our brand", under its name and logo
+const OWN_BRAND_PREFIX = "own-";
+export const ownBrandId = (storeId: string) => `${OWN_BRAND_PREFIX}${storeId}`;
+export const ownBrandStoreId = (brandId: string) => (brandId.startsWith(OWN_BRAND_PREFIX) ? brandId.slice(OWN_BRAND_PREFIX.length) : null);

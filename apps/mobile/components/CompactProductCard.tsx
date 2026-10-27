@@ -93,7 +93,7 @@ function CompactImage({ item, primaryId, outOfStock, wished, onHeart }: {
         <Text style={styles.noImageLetter}>{item.product.name.charAt(0)}</Text>
       )}
       {item.product.foodType && <FoodTypeMark foodType={item.product.foodType} />}
-      {item.product.isBestseller && <BestsellerBadge />}
+      {item.brandPick ? <BrandPickBadge pick={item.brandPick} /> : item.product.isBestseller && <BestsellerBadge />}
       {outOfStock && (
         <View style={styles.oos}><Text style={styles.oosLabel}>{tc.outOfStock}</Text></View>
       )}
@@ -117,7 +117,7 @@ function CompactDetails({ item, sizes, isMember, sponsored, aisleLink }: {
   const rated = (item.product.reviewCount ?? 0) > 0 && (item.product.averageRating ?? 0) > 0;
   return (
     <>
-      {sponsored ? <AdBadge /> : item.ownerPick ? <OwnerPickBadge /> : item.brandPick && <BrandPickBadge pick={item.brandPick} />}
+      {sponsored ? <AdBadge /> : item.ownerPick && <OwnerPickBadge />}
       <Text style={styles.unit} numberOfLines={1}>{item.variant.name}</Text>
       <View style={styles.priceRow}>
         <Text style={[styles.price, deal.highlight && styles.highlight]} numberOfLines={1}>{"₹"}{deal.shown.toFixed(0)}</Text>

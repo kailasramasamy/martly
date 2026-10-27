@@ -1,7 +1,7 @@
 import type { Prisma, PrismaClient } from "../../generated/prisma/index.js";
-import { SearchSortBy } from "@martly/shared/constants";
+import { SearchSortBy, ownBrandId } from "@martly/shared/constants";
 import { searchProducts } from "./search.js";
-import { markBrandPicks, storeBrandBoost } from "./brand-boost.js";
+import { brandPickOf, markBrandPicks, storeBrandBoost, type BrandBoost } from "./brand-boost.js";
 import { liveSponsored } from "./sponsored.js";
 import { namesBrand, placeSearchAds } from "./sponsored-search.js";
 import { decorateStoreProducts, storeProductInclude, type StoreProductView } from "./store-product-view.js";
@@ -85,22 +85,36 @@ function subcategoryFacets(ranked: StoreProductView[], query: string): SearchFac
   return withShortLabels([...facets.values()].slice(0, MAX_SUBCATEGORY_TABS), query);
 }
 
-function filterFacets(rows: StoreProductView[]): Omit<SearchFacets, "tags" | "subcategories"> {
+type OwnBrandStore = { id: string; name: string; logoUrl: string | null };
+
+const isOwn = (row: StoreProductView, boost: BrandBoost) => brandPickOf(row, boost) === "OWN";
+
+/** The store's own chip (its brands and its own staple packs, under its logo) first, then every other brand */
+function brandFacets(rows: StoreProductView[], boost: BrandBoost, store: OwnBrandStore): SearchFacets["brands"] {
+  const own = countProducts(rows.filter((r) => isOwn(r, boost)), () => [ownBrandId(store.id)])
+    .map(({ key, count }) => ({ id: key, count, name: store.name, imageUrl: store.logoUrl }));
+  const others = countProducts(rows.filter((r) => !isOwn(r, boost)), (r) => (r.product.brand ? [r.product.brand.id] : []))
+    .map(({ key, count }) => {
+      const brand = rows.find((r) => r.product.brandId === key)!.product.brand!;
+      return { id: key, count, name: brand.name, imageUrl: brand.imageUrl };
+    });
+  return [...own, ...others];
+}
+
+function filterFacets(rows: StoreProductView[], boost: BrandBoost, store: OwnBrandStore): Omit<SearchFacets, "tags" | "subcategories"> {
   return {
-    brands: countProducts(rows, (r) => (r.product.brand ? [r.product.brand.id] : []))
-      .map(({ key, count }) => {
-        const brand = rows.find((r) => r.product.brandId === key)!.product.brand!;
-        return { id: key, count, name: brand.name, imageUrl: brand.imageUrl };
-      }),
+    brands: brandFacets(rows, boost, store),
     sizes: countProducts(rows, (r) => [r.variant.name]).map(({ key, count }) => ({ label: key, count })),
     offerCount: new Set(rows.filter((r) => r.pricing.discountActive).map((r) => r.productId)).size,
   };
 }
 
-function applyFilters(rows: StoreProductView[], params: StoreSearchParams) {
+function applyFilters(rows: StoreProductView[], params: StoreSearchParams, boost: BrandBoost, storeId: string) {
   const brandIds = params.brandIds?.length ? new Set(params.brandIds) : null;
+  const brandMatch = (r: StoreProductView) =>
+    (r.product.brandId !== null && brandIds!.has(r.product.brandId)) || (brandIds!.has(ownBrandId(storeId)) && isOwn(r, boost));
   return rows.filter((r) =>
-    (!brandIds || (r.product.brandId !== null && brandIds.has(r.product.brandId))) &&
+    (!brandIds || brandMatch(r)) &&
     (!params.size || r.variant.name === params.size) &&
     (!params.foodType || r.product.foodType === params.foodType) &&
     (!params.hasDiscount || r.pricing.discountActive));
@@ -134,7 +148,10 @@ function sortByProduct(rows: StoreProductView[], sortBy: SearchSortBy, rank: Map
  */
 export async function searchStoreProducts(prisma: PrismaClient, store: { id: string; organizationId: string }, params: StoreSearchParams) {
   const storeId = store.id;
-  const boost = await storeBrandBoost(prisma, storeId);
+  const [boost, own] = await Promise.all([
+    storeBrandBoost(prisma, storeId),
+    prisma.store.findUniqueOrThrow({ where: { id: storeId }, select: { id: true, name: true, logoUrl: true } }),
+  ]);
   const { productIds, meta } = await searchProducts(prisma, storeId, params.q, { exact: params.exact, boost });
   const productWhere: Prisma.ProductWhereInput = productIds.length > 0
     ? { id: { in: productIds } }
@@ -151,8 +168,8 @@ export async function searchStoreProducts(prisma: PrismaClient, store: { id: str
   const inTag = ranked.filter((r) =>
     (!params.tag || r.product.tags.includes(params.tag)) &&
     (!params.subcategoryId || r.product.subcategoryId === params.subcategoryId));
-  const facets: SearchFacets = { tags: tagFacets(ranked), subcategories: subcategoryFacets(ranked, meta.correctedQuery ?? params.q), ...filterFacets(inTag) };
-  const data = markBrandPicks(sortByProduct(applyFilters(inTag, params), params.sortBy, rank), boost);
+  const facets: SearchFacets = { tags: tagFacets(ranked), subcategories: subcategoryFacets(ranked, meta.correctedQuery ?? params.q), ...filterFacets(inTag, boost, own) };
+  const data = markBrandPicks(sortByProduct(applyFilters(inTag, params, boost, storeId), params.sortBy, rank), boost);
   const query = meta.correctedQuery ?? params.q;
   const adFree = params.sortBy !== SearchSortBy.RELEVANCE || params.brandIds?.length || namesBrand(query, facets.brands.map((b) => b.name));
   return { data: adFree ? data : placeSearchAds(data, await liveSponsored(prisma, store), query), facets, searchMeta: meta };

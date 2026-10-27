@@ -84,7 +84,7 @@ function CardImage({ item, primaryId, size, isOutOfStock, isWishlisted, onHeart,
         <Text style={styles.noImageLetter}>{item.product.name.charAt(0)}</Text>
       ))}
       {item.product.foodType && <FoodTypeMark foodType={item.product.foodType} />}
-      {item.product.isBestseller && <BestsellerBadge />}
+      {item.brandPick ? <BrandPickBadge pick={item.brandPick} /> : item.product.isBestseller && <BestsellerBadge />}
       {isOutOfStock && (
         <View style={styles.oosOverlay}>
           <Text style={styles.oosLabel}>{tc.outOfStock}</Text>
@@ -174,7 +174,7 @@ function CardDetails({ item, lowStock, sponsored, aisleLink }: { item: StoreProd
   const t = useStrings("catalog");
   return (
     <>
-      {sponsored ? <AdBadge /> : item.ownerPick ? <OwnerPickBadge /> : item.brandPick && <BrandPickBadge pick={item.brandPick} />}
+      {sponsored ? <AdBadge /> : item.ownerPick && <OwnerPickBadge />}
       <Text style={styles.name} numberOfLines={3}>{getLocalizedName(item.product)}</Text>
       {(item.product.averageRating ?? 0) > 0 && (
         <View style={styles.ratingRow}>
