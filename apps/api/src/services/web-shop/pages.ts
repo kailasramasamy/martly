@@ -1,5 +1,5 @@
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
-import type { WebCategoryPage, WebDepartmentTree, WebProductPage, WebShelf, WebShopStore, WebSitemap } from "@martly/shared/types";
+import type { WebCategoryPage, WebDepartment, WebDepartmentTree, WebProductPage, WebShelf, WebShopStore, WebSitemap } from "@martly/shared/types";
 import { liveWindow } from "../store-feed.js";
 import { liveStoreWhere, resolveStore } from "../store-resolve.js";
 import type { WebShopQuery } from "@martly/shared/schemas";
@@ -25,6 +25,15 @@ export async function departmentTrees(prisma: PrismaClient, storeId: string, slu
     },
   });
   return departments.filter((d) => d.categories.length > 0);
+}
+
+/** The departments the store has something in, for the site's department bar */
+export function storeDepartments(prisma: PrismaClient, storeId: string): Promise<WebDepartment[]> {
+  return prisma.department.findMany({
+    where: { categories: { some: { subcategories: { some: { products: { some: soldAt(storeId) } } } } } },
+    orderBy: { sortOrder: "asc" },
+    select: { name: true, slug: true, imageUrl: true },
+  });
 }
 
 async function shelf(prisma: PrismaClient, storeId: string, name: string, path: string, where: Prisma.ProductWhereInput): Promise<WebShelf> {

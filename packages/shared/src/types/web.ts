@@ -34,10 +34,9 @@ export interface WebStorePage {
   town: Omit<WebTown, "stores">;
 }
 
-/** Everything martlyshop.in's home page renders */
+/** Live towns and their stores, for the store picker and footer on every page */
 export interface WebHome {
   towns: WebTown[];
-  departments: WebDepartment[];
 }
 
 /** The store martlyshop.in shows prices and stock from, picked for the shopper as in the app */

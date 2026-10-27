@@ -17,7 +17,7 @@ export function HomePage({ page }: { page: HomePageData }) {
   const [townSlug, setTownSlug] = useState(store.town.slug)
   const selected = towns.find((t) => t.slug === townSlug)
   return (
-    <ShopLayout store={store}>
+    <ShopLayout store={store} departments={false}>
       <StoreBanner store={store} profile={profile} />
       {covers.length > 0 && <HeroCarousel banners={covers} storeId={store.id} />}
       <HomeSections key={store.id} sections={sections} cursor={cursor} />

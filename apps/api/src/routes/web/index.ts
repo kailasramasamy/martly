@@ -9,36 +9,30 @@ import { storeProfile } from "../../services/web-shop/store-profile.js";
 import { liveStore, townPage, webStoreSelect } from "../../services/web-shop/town-page.js";
 import { bestSellers, brandPage, buyGetList, collectionPage, dealsList } from "../../services/web-shop/lists.js";
 import { webSearchLogRoutes } from "./search-log.js";
-import { categoryPage, departmentPage, productPage, sitemap } from "../../services/web-shop/pages.js";
+import { categoryPage, departmentPage, productPage, sitemap, storeDepartments } from "../../services/web-shop/pages.js";
 
 
 /** Public data for martlyshop.in, the website shoppers land on before they have an account */
 export async function webRoutes(app: FastifyInstance) {
   // Live towns are the ones with at least one launched store; the Martly Template org never shows
   app.get("/home", async (_request, reply) => {
-    const [towns, departments] = await Promise.all([
-      app.prisma.town.findMany({
-        where: { stores: { some: liveStore } },
-        orderBy: { name: "asc" },
-        select: {
-          name: true,
-          slug: true,
-          district: true,
-          state: true,
-          stores: {
-            where: liveStore,
-            orderBy: [{ launchedAt: "asc" }, { name: "asc" }],
-            select: webStoreSelect,
-          },
+    const towns = await app.prisma.town.findMany({
+      where: { stores: { some: liveStore } },
+      orderBy: { name: "asc" },
+      select: {
+        name: true,
+        slug: true,
+        district: true,
+        state: true,
+        stores: {
+          where: liveStore,
+          orderBy: [{ launchedAt: "asc" }, { name: "asc" }],
+          select: webStoreSelect,
         },
-      }),
-      app.prisma.department.findMany({
-        orderBy: { sortOrder: "asc" },
-        select: { name: true, slug: true, imageUrl: true },
-      }),
-    ]);
+      },
+    });
     reply.header("Cache-Control", "public, max-age=300");
-    return { success: true, data: { towns, departments } } satisfies ApiResponse<WebHome>;
+    return { success: true, data: { towns } } satisfies ApiResponse<WebHome>;
   });
 
   // A town's page at martlyshop.in/{town}: its live stores and what ordering from each is like
@@ -101,6 +95,9 @@ function shopRoutes(app: FastifyInstance) {
 
   app.get<{ Params: { sectionId: string } }>("/deals/:sectionId", (request, reply) =>
     respond(request, reply, (ctx, q) => dealsList(app.prisma, ctx, request.params.sectionId, q)));
+
+  // The departments the store stocks, for the department bar on every page
+  app.get("/departments", (request, reply) => respond(request, reply, ({ store }) => storeDepartments(app.prisma, store.id)));
 
   app.get<{ Params: { department: string } }>("/departments/:department", (request, reply) =>
     respond(request, reply, ({ store }) => departmentPage(app.prisma, store, request.params.department)));

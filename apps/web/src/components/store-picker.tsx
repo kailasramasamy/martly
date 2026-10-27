@@ -92,11 +92,16 @@ export function StorePicker({ store, towns }: { store: WebShopStore | null; town
 
   return (
     <>
-      <button onClick={() => dialog.current?.showModal()} className="flex h-11 min-w-0 items-center gap-2 rounded-full border border-line px-3 text-left hover:border-brand">
-        <Icon name="pin" size={17} className="shrink-0 text-brand" />
+      <button onClick={() => dialog.current?.showModal()} aria-label={`Shopping at ${store.name}, ${store.town.name}. Change store`}
+        className="flex h-12 min-w-0 items-center gap-2 rounded-2xl border border-line py-1 pl-1 pr-3 text-left hover:border-brand">
+        {store.logoUrl
+          ? <img src={store.logoUrl} alt="" className="h-10 w-auto max-w-16 shrink-0 rounded-xl bg-white object-contain p-0.5" />
+          : <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-tint text-brand"><Icon name="store" size={20} /></span>}
         <span className="min-w-0 leading-tight">
-          <span className="block truncate text-[13px] font-extrabold">{store.town.name}</span>
-          <span className="block truncate text-[11px] font-semibold text-muted">from {store.name}</span>
+          <span className="block max-w-[11rem] truncate text-[13px] font-extrabold sm:max-w-[16rem]">{store.name}</span>
+          <span className="flex items-center gap-0.5 truncate text-[11.5px] font-semibold text-muted">
+            <Icon name="pin" size={12} className="shrink-0 text-brand" />{store.town.name}
+          </span>
         </span>
         <Icon name="chevron" size={15} className="shrink-0 text-muted" />
       </button>

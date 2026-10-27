@@ -3,16 +3,18 @@ import { useLoaderData } from "@tanstack/react-router"
 import type { WebShopStore } from "@martly/shared/types"
 import { SiteHeader } from "./site-header"
 import { SiteFooter } from "./site-footer"
+import { DepartmentBar } from "./department-bar"
 
 /** Live towns from the root loader */
 export const useTowns = () => useLoaderData({ from: "__root__" }).towns
 
-/** Header with the shopper's store, the page, and the footer */
-export function ShopLayout({ store, q, children }: { store: WebShopStore | null; q?: string; children: ReactNode }) {
+/** Header with the shopper's store, the store's departments (Home has its own tiles), the page, and the footer */
+export function ShopLayout({ store, q, departments = true, children }: { store: WebShopStore | null; q?: string; departments?: boolean; children: ReactNode }) {
   const towns = useTowns()
   return (
     <>
       <SiteHeader store={store} towns={towns} q={q} />
+      {store && departments && <DepartmentBar />}
       <main className="pb-24">{children}</main>
       <SiteFooter towns={towns} />
     </>

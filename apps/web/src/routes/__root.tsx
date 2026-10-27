@@ -1,11 +1,14 @@
 import { HeadContent, Outlet, Scripts, createRootRoute } from "@tanstack/react-router"
 import appCss from "~/styles/app.css?url"
-import { getHome } from "~/lib/api"
+import { getDepartments, getHome } from "~/lib/api"
 import { AppSheetProvider } from "~/components/app-sheet"
 
 export const Route = createRootRoute({
-  // Live towns and their stores, for the store picker and the footer on every page
-  loader: () => getHome(),
+  // Live towns and their stores for the store picker and footer, and the store's departments for the department bar, on every page
+  loader: async () => {
+    const [home, departments] = await Promise.all([getHome(), getDepartments()])
+    return { ...home, departments }
+  },
   head: () => ({
     meta: [
       { charSet: "utf-8" },
