@@ -1,5 +1,5 @@
 /** Public origin, for canonical links, the sitemap and structured data; local runs point at it too */
-export const SITE_URL = "https://martlyshop.in"
+export const SITE_URL = "https://www.martlyshop.in"
 
 export const SITE_NAME = "Martly"
 
