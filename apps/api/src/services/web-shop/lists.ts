@@ -1,6 +1,6 @@
 import { BUY_GET_PAGE_SIZE, HOME_DEALS_PAGE_SIZE, MOST_BOUGHT_LIST } from "@martly/shared/constants";
 import type { WebShopQuery } from "@martly/shared/schemas";
-import type { HomeTheme, PriceBandChip, WebCollectionPage, WebListPage } from "@martly/shared/types";
+import type { HomeTheme, PriceBandChip, WebBrandPage, WebCollectionPage, WebListPage } from "@martly/shared/types";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { rankedCollectionProductIds } from "../collection-products.js";
 import { campaignLook } from "../home/campaign-look.js";
@@ -9,7 +9,8 @@ import { mostBought } from "../home/most-bought.js";
 import { bandPage, dealsSection } from "../home/price-band.js";
 import { autoTiles, stockedCollectionItems } from "../home/resolvers/campaign-tiles.js";
 import { liveWindow } from "../store-feed.js";
-import { cardsInOrder, countProducts, productCards, type ShopContext } from "./cards.js";
+import { cardsInOrder, soldAt, type ShopContext } from "./cards.js";
+import { filteredList } from "./category-filters.js";
 
 const PAGE_SIZE = 24;
 
@@ -81,19 +82,23 @@ export async function collectionPage(prisma: PrismaClient, ctx: ShopContext, slu
 }
 
 /** A brand's products at the shopper's store */
-export async function brandPage(prisma: PrismaClient, ctx: ShopContext, slug: string, page: number): Promise<WebListPage | null> {
+export async function brandPage(prisma: PrismaClient, ctx: ShopContext, slug: string, q: WebShopQuery): Promise<WebBrandPage | null> {
   const brand = await prisma.brand.findFirst({
     where: { slug, OR: [{ organizationId: ctx.organizationId }, { organizationId: null }] },
-    select: { id: true, name: true, imageUrl: true },
+    select: { id: true, name: true, slug: true, imageUrl: true },
   });
   if (!brand) return null;
-  const where = { brandId: brand.id };
-  const [products, total] = await Promise.all([
-    productCards(prisma, ctx.store.id, { where, skip: (page - 1) * PAGE_SIZE, take: PAGE_SIZE }),
-    countProducts(prisma, ctx.store.id, where),
-  ]);
-  if (total === 0) return null;
-  return { store: ctx.store, title: brand.name, subtitle: `${total} products at ${ctx.store.name}`, imageUrl: brand.imageUrl, chips: [], products, page, totalPages: pages(total, PAGE_SIZE) };
+  const sold = { AND: [soldAt(ctx.store.id), { brandId: brand.id }] };
+  const rows = await prisma.subcategory.findMany({
+    where: { products: { some: sold } },
+    select: { name: true, slug: true, imageUrl: true, _count: { select: { products: { where: sold } } } },
+  });
+  if (!rows.length) return null;
+  const subcategories = rows.map(({ _count, ...s }) => ({ ...s, count: _count.products })).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+  const subcategory = subcategories.find((s) => s.slug === q.sub)?.slug ?? null;
+  const where = { brandId: brand.id, ...(subcategory ? { subcategory: { slug: subcategory } } : {}) };
+  const listing = await filteredList(prisma, ctx.store.id, where, q, PAGE_SIZE);
+  return { store: ctx.store, brand, subcategories, subcategory, page: q.page, ...listing };
 }
 
 /** Every buy X get Y offer at the store, a category at a time */

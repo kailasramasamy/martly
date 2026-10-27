@@ -78,7 +78,7 @@ async function allowance(prisma: PrismaClient, organizationId: string) {
 async function compute(prisma: PrismaClient, storeId: string): Promise<StorefrontHealth> {
   const now = new Date();
   const store = await prisma.store.findUniqueOrThrow({ where: { id: storeId }, select: STORE_SELECT });
-  const ctx: CheckContext = { prisma, store, now, resolve: { prisma, store, userId: "", now } };
+  const ctx: CheckContext = { prisma, store, now, resolve: { prisma, store, userId: "", now, shelves: "grid" } };
   const [groups, underperforming, sells, plan, history] = await Promise.all([
     Promise.all([looksChecks(ctx), homeChecks(ctx), dealsChecks(ctx), freshChecks(ctx), serviceChecks(ctx)]),
     bannersUnderperform(ctx),

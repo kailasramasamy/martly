@@ -1,13 +1,13 @@
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState, type RefObject } from "react"
 import { useRouter } from "@tanstack/react-router"
 import type { WebShopStore, WebTown } from "@martly/shared/types"
-import { chooseStore } from "~/lib/api"
+import { chooseStore, isStoreChosen } from "~/lib/api"
 import { Icon } from "./icons"
 
 type Status = { tone: "info" | "warn"; text: string } | null
 
 /** Reprices the page from a new store, as the app's store switch does */
-function useSwitchStore(close: () => void) {
+function useSwitchStore(close: () => void, onChosen: () => void) {
   const router = useRouter()
   const [busy, setBusy] = useState(false)
   const [status, setStatus] = useState<Status>(null)
@@ -17,6 +17,7 @@ function useSwitchStore(close: () => void) {
     const result = await chooseStore({ data }).catch(() => null)
     setBusy(false)
     if (!result) return setStatus({ tone: "warn", text: "Couldn't change the store. Try again." })
+    onChosen()
     await router.invalidate()
     if (result.deliversToYou === false) setStatus({ tone: "warn", text: `No store delivers to you yet. Showing ${result.name}, where you can pick up.` })
     else close()
@@ -37,7 +38,7 @@ function useSwitchStore(close: () => void) {
 function TownStores({ town, current, onPick, disabled }: { town: WebTown; current: string | undefined; onPick: (id: string) => void; disabled: boolean }) {
   return (
     <fieldset className="mt-5" disabled={disabled}>
-      <legend className="text-xs font-extrabold uppercase tracking-[0.1em] text-muted">{town.name} · {town.district}</legend>
+      <legend className="text-xs font-extrabold uppercase tracking-[0.1em] text-muted">{town.name}{town.district !== town.name && ` · ${town.district}`}</legend>
       <div className="mt-2 grid gap-2">
         {town.stores.map((s) => (
           <button
@@ -61,11 +62,32 @@ function TownStores({ town, current, onPick, disabled }: { town: WebTown; curren
   )
 }
 
+/** A shopper who hasn't chosen a store gets the picker on their first page; closing it any way keeps the store shown, so it asks once */
+function useFirstVisit(dialog: RefObject<HTMLDialogElement | null>, store: WebShopStore | null) {
+  const [firstVisit, setFirstVisit] = useState(false)
+  const hasStore = !!store
+  useEffect(() => {
+    if (!hasStore) return
+    void isStoreChosen().then((chosen) => {
+      if (chosen) return
+      setFirstVisit(true)
+      dialog.current?.showModal()
+    })
+  }, [dialog, hasStore])
+  const keepShown = () => {
+    if (!firstVisit || !store) return
+    setFirstVisit(false)
+    void chooseStore({ data: { storeId: store.id, town: store.town.slug } })
+  }
+  return { firstVisit, chosen: () => setFirstVisit(false), keepShown }
+}
+
 /** "Delivering in {town} from {store}": opens a picker of live towns and stores, or uses the shopper's location */
 export function StorePicker({ store, towns }: { store: WebShopStore | null; towns: WebTown[] }) {
   const dialog = useRef<HTMLDialogElement>(null)
   const close = () => dialog.current?.close()
-  const { busy, status, pick, locate } = useSwitchStore(close)
+  const { firstVisit, chosen, keepShown } = useFirstVisit(dialog, store)
+  const { busy, status, pick, locate } = useSwitchStore(close, chosen)
   if (!store) return null
 
   return (
@@ -81,10 +103,12 @@ export function StorePicker({ store, towns }: { store: WebShopStore | null; town
       <dialog
         ref={dialog}
         onClick={(e) => e.target === dialog.current && close()}
+        onClose={keepShown}
         aria-labelledby="store-picker-title"
-        className="m-auto max-h-[85vh] w-[calc(100%-32px)] max-w-md rounded-[24px] p-0 backdrop:bg-ink/50"
+        className="m-auto max-h-[85vh] w-[calc(100%-32px)] max-w-md rounded-[24px] p-0 backdrop:bg-ink/50 max-sm:mb-0 max-sm:w-full max-sm:max-w-none max-sm:rounded-b-none"
       >
-        <div className="p-6">
+        {/* Opening focuses the sheet itself, so no button wears a focus ring before the shopper touches it */}
+        <div className="p-6 outline-none" tabIndex={-1} autoFocus>
           <div className="flex items-center justify-between">
             <h2 id="store-picker-title" className="text-xl font-extrabold tracking-tight">Where should we deliver?</h2>
             <button onClick={close} aria-label="Close" className="-mr-2 flex h-11 w-11 items-center justify-center rounded-full text-muted hover:bg-surface">
@@ -95,6 +119,11 @@ export function StorePicker({ store, towns }: { store: WebShopStore | null; town
           <button onClick={locate} disabled={busy} className="mt-5 flex h-12 w-full items-center justify-center gap-2 rounded-full bg-brand font-bold text-white hover:bg-brand-deep disabled:opacity-60">
             <Icon name="locate" size={18} /> Use my location
           </button>
+          {firstVisit && (
+            <button onClick={close} disabled={busy} className="mt-2 flex h-12 w-full items-center justify-center rounded-full border border-line font-bold hover:border-brand disabled:opacity-60">
+              Continue with {store.name}
+            </button>
+          )}
           {status && (
             <p role="status" className={`mt-3 rounded-xl px-3 py-2 text-sm ${status.tone === "warn" ? "bg-amber-50 text-amber-900" : "bg-brand-tint text-brand-deep"}`}>{status.text}</p>
           )}

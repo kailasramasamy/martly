@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { FoodType, SearchEventType, SearchSortBy } from "../constants/index.js";
+import { DISCOUNT_TIERS, FoodType, parsePriceRange, RATING_TIERS, SearchEventType, SearchSortBy } from "../constants/index.js";
 
 /** martlyshop.in pages: the shopper's store (from a cookie, so a stale or bad one is ignored) and their town */
 export const webShopQuerySchema = z.object({
@@ -24,6 +24,11 @@ export const webShopQuerySchema = z.object({
   offers: z.literal("1").optional().catch(undefined).transform(Boolean),
   sort: z.nativeEnum(SearchSortBy).default(SearchSortBy.RELEVANCE).catch(SearchSortBy.RELEVANCE),
   exact: z.literal("1").optional().catch(undefined).transform(Boolean),
+  /** Category page filters: a price range ("50-100"), a "% off or more" tier, a "★ & up" tier, in stock only */
+  price: z.string().max(20).optional().transform(parsePriceRange),
+  off: z.coerce.number().refine((n) => (DISCOUNT_TIERS as readonly number[]).includes(n)).optional().catch(undefined),
+  rating: z.coerce.number().refine((n) => (RATING_TIERS as readonly number[]).includes(n)).optional().catch(undefined),
+  stock: z.literal("1").optional().catch(undefined).transform(Boolean),
 });
 export type WebShopQuery = z.infer<typeof webShopQuerySchema>;
 

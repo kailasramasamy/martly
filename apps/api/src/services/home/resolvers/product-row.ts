@@ -16,7 +16,8 @@ export const productRow: SectionResolver = async (ctx, entry) => {
   };
   const ranked = await rankedCollectionProductIds(ctx.prisma, collection.id, ctx.store.id, 1, HOME_SHELF_PRODUCTS);
   if (ranked.length === 0) return null;
-  const products = await withAllSizes(ctx.prisma, ctx.store.id, wholeRows(ranked).map((r) => ({ productId: r.id })));
+  const shown = ctx.shelves === "grid" ? wholeRows(ranked) : ranked;
+  const products = await withAllSizes(ctx.prisma, ctx.store.id, shown.map((r) => ({ productId: r.id })));
   const base = sectionBase(entry);
   return {
     ...base,

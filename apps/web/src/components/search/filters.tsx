@@ -27,8 +27,8 @@ const PILL = "flex h-11 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-
 const pillLook = (active: boolean) => (active ? "border-brand bg-brand-tint text-brand" : "border-line bg-white hover:border-brand")
 
 /** A pill that opens a panel: dropped under it on wider screens, a bottom sheet on phones */
-function Menu({ label, active, badge, icon, children }: {
-  label: string; active: boolean; badge?: number; icon?: "sliders"; children: (close: () => void) => ReactNode
+export function Menu({ label, active, badge, icon, align = "left", children }: {
+  label: string; active: boolean; badge?: number; icon?: "sliders"; align?: "left" | "right"; children: (close: () => void) => ReactNode
 }) {
   const [open, setOpen] = useState(false)
   const root = useRef<HTMLDivElement>(null)
@@ -52,7 +52,7 @@ function Menu({ label, active, badge, icon, children }: {
       {open && (
         <>
           <div className="fixed inset-0 z-40 bg-slate-900/40 sm:hidden" onClick={close} aria-hidden="true" />
-          <div role="dialog" aria-label={label} className="fixed inset-x-0 bottom-0 z-50 max-h-[80vh] overflow-y-auto rounded-t-3xl bg-white p-4 pb-6 shadow-2xl sm:absolute sm:inset-x-auto sm:bottom-auto sm:left-0 sm:top-[52px] sm:w-80 sm:rounded-2xl sm:border sm:border-line sm:shadow-xl">
+          <div role="dialog" aria-label={label} className={`fixed inset-x-0 bottom-0 z-50 max-h-[80vh] overflow-y-auto rounded-t-3xl bg-white p-4 pb-6 shadow-2xl sm:absolute sm:inset-x-auto sm:bottom-auto ${align === "left" ? "sm:left-0" : "sm:right-0"} sm:top-[52px] sm:w-80 sm:rounded-2xl sm:border sm:border-line sm:shadow-xl`}>
             {children(close)}
           </div>
         </>

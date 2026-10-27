@@ -2,7 +2,9 @@ import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import type { WebCategoryPage, WebDepartmentTree, WebProductPage, WebShelf, WebShopStore, WebSitemap } from "@martly/shared/types";
 import { liveWindow } from "../store-feed.js";
 import { liveStoreWhere, resolveStore } from "../store-resolve.js";
-import { cardSelect, countProducts, productCards, soldAt, toCard } from "./cards.js";
+import type { WebShopQuery } from "@martly/shared/schemas";
+import { cardSelect, productCards, soldAt, toCard } from "./cards.js";
+import { filteredList } from "./category-filters.js";
 
 const SHELF_SIZE = 10;
 const PAGE_SIZE = 24;
@@ -39,8 +41,8 @@ export async function departmentPage(prisma: PrismaClient, store: WebShopStore, 
   return { store, department, shelves: shelves.filter((s) => s.products.length > 0) };
 }
 
-/** A category's products a page at a time, narrowed to one subcategory when asked */
-export async function categoryPage(prisma: PrismaClient, store: WebShopStore, slugs: { department: string; category: string }, sub: string | undefined, page: number): Promise<WebCategoryPage | null> {
+/** A category's products, narrowed to one subcategory when asked, then by the shopper's filters, a page at a time */
+export async function categoryPage(prisma: PrismaClient, store: WebShopStore, slugs: { department: string; category: string }, q: WebShopQuery): Promise<WebCategoryPage | null> {
   const category = await prisma.category.findFirst({
     where: { slug: slugs.category, department: { slug: slugs.department } },
     select: {
@@ -54,14 +56,11 @@ export async function categoryPage(prisma: PrismaClient, store: WebShopStore, sl
   });
   if (!category) return null;
   const subcategories = category.subcategories.filter((s) => s._count.products > 0).map(({ _count, ...s }) => ({ ...s, count: _count.products }));
-  const subcategory = subcategories.find((s) => s.slug === sub)?.slug ?? null;
+  const subcategory = subcategories.find((s) => s.slug === q.sub)?.slug ?? null;
   const where: Prisma.ProductWhereInput = { subcategory: subcategory ? { slug: subcategory } : { category: { slug: category.slug } } };
-  const [products, total] = await Promise.all([
-    productCards(prisma, store.id, { where, skip: (page - 1) * PAGE_SIZE, take: PAGE_SIZE }),
-    countProducts(prisma, store.id, where),
-  ]);
+  const listing = await filteredList(prisma, store.id, where, q, PAGE_SIZE);
   const { name, imageUrl, department } = category;
-  return { store, department, category: { name, slug: category.slug, imageUrl }, subcategories, subcategory, products, page, totalPages: Math.ceil(total / PAGE_SIZE) };
+  return { store, department, category: { name, slug: category.slug, imageUrl }, subcategories, subcategory, page: q.page, ...listing };
 }
 
 const productSelect = (storeId: string) => ({

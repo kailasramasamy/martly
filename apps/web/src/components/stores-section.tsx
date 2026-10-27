@@ -2,7 +2,7 @@ import type { WebStore, WebTown } from "@martly/shared/types"
 import { STORE_SIZE_RULES } from "@martly/shared/constants"
 import { Icon } from "./icons"
 
-export function storePath(town: WebTown, store: WebStore) {
+export function storePath(town: { slug: string }, store: { slug: string }) {
   return `/${town.slug}/${store.slug}`
 }
 
@@ -47,7 +47,7 @@ function StoreCard({ town, store }: { town: WebTown; store: WebStore }) {
 }
 
 /** Fills a thin town's row and asks the shops shoppers miss to join */
-function InviteCard({ townName }: { townName: string }) {
+export function InviteCard({ townName }: { townName: string }) {
   return (
     <a href="/for-stores" className="flex flex-col justify-center rounded-[20px] border-2 border-dashed border-line p-6 text-center hover:border-brand">
       <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-tint text-brand">
@@ -56,6 +56,16 @@ function InviteCard({ townName }: { townName: string }) {
       <span className="mt-4 text-lg font-extrabold">More {townName} stores joining</span>
       <span className="mt-1 text-sm leading-relaxed text-muted">Own a shop here? Bring it online with Martly.</span>
     </a>
+  )
+}
+
+/** A town's live stores as cards, topped up with an invite while the town has few */
+export function TownStoreGrid({ town }: { town: WebTown }) {
+  return (
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {town.stores.map((s) => <StoreCard key={s.slug} town={town} store={s} />)}
+      {town.stores.length < 4 && <InviteCard townName={town.name} />}
+    </div>
   )
 }
 
@@ -84,10 +94,7 @@ export function StoresSection({ towns, selected, onSelect }: { towns: WebTown[];
           </div>
         )}
       </div>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {selected.stores.map((s) => <StoreCard key={s.slug} town={selected} store={s} />)}
-        {selected.stores.length < 4 && <InviteCard townName={selected.name} />}
-      </div>
+      <TownStoreGrid town={selected} />
     </section>
   )
 }

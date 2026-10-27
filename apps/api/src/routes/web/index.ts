@@ -1,16 +1,16 @@
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import { webShopQuerySchema } from "@martly/shared/schemas";
-import type { ApiResponse, WebHome, WebStorePage } from "@martly/shared/types";
+import type { ApiResponse, WebHome, WebStorePage, WebTownPage } from "@martly/shared/types";
 import { storeBrands } from "../../services/brands.js";
 import { shopStore, type ShopContext } from "../../services/web-shop/cards.js";
 import { webSearch, webSearchLanding, webSuggestions } from "../../services/web-shop/search.js";
 import { webHomeSections } from "../../services/web-shop/home-sections.js";
+import { storeProfile } from "../../services/web-shop/store-profile.js";
+import { liveStore, townPage, webStoreSelect } from "../../services/web-shop/town-page.js";
 import { bestSellers, brandPage, buyGetList, collectionPage, dealsList } from "../../services/web-shop/lists.js";
 import { webSearchLogRoutes } from "./search-log.js";
 import { categoryPage, departmentPage, productPage, sitemap } from "../../services/web-shop/pages.js";
 
-const storeSelect = { id: true, name: true, slug: true, tagline: true, address: true, imageUrl: true, logoUrl: true, size: true } as const;
-const liveStore = { status: "ACTIVE" as const, organization: { isTemplate: false } };
 
 /** Public data for martlyshop.in, the website shoppers land on before they have an account */
 export async function webRoutes(app: FastifyInstance) {
@@ -28,7 +28,7 @@ export async function webRoutes(app: FastifyInstance) {
           stores: {
             where: liveStore,
             orderBy: [{ launchedAt: "asc" }, { name: "asc" }],
-            select: storeSelect,
+            select: webStoreSelect,
           },
         },
       }),
@@ -41,11 +41,19 @@ export async function webRoutes(app: FastifyInstance) {
     return { success: true, data: { towns, departments } } satisfies ApiResponse<WebHome>;
   });
 
+  // A town's page at martlyshop.in/{town}: its live stores and what ordering from each is like
+  app.get<{ Params: { town: string } }>("/towns/:town", async (request, reply) => {
+    const page = await townPage(app.prisma, request.params.town);
+    if (!page) return reply.notFound("Town not found");
+    reply.header("Cache-Control", "public, max-age=60");
+    return { success: true, data: page } satisfies ApiResponse<WebTownPage>;
+  });
+
   // A store's page at martlyshop.in/{town}/{store}
   app.get<{ Params: { town: string; store: string } }>("/stores/:town/:store", async (request, reply) => {
     const store = await app.prisma.store.findFirst({
       where: { ...liveStore, slug: request.params.store, town: { slug: request.params.town } },
-      select: { ...storeSelect, town: { select: { name: true, slug: true, district: true, state: true } } },
+      select: { ...webStoreSelect, town: { select: { name: true, slug: true, district: true, state: true } } },
     });
     if (!store) return reply.notFound("Store not found");
     const { town, ...rest } = store;
@@ -77,6 +85,7 @@ function shopRoutes(app: FastifyInstance) {
   // The app's Home sections, a page at a time
   app.get("/home-sections", (request, reply) => respond(request, reply, async ({ store, organizationId }, q) => ({
     store,
+    profile: q.cursor ? null : await storeProfile(app.prisma, store.id),
     ...await webHomeSections(app.prisma, store, organizationId, q.cursor, () => storeBrands(app.prisma, store.id, BRAND_RAIL)),
   })));
 
@@ -84,7 +93,7 @@ function shopRoutes(app: FastifyInstance) {
     respond(request, reply, (ctx, q) => collectionPage(app.prisma, ctx, request.params.slug, q)));
 
   app.get<{ Params: { slug: string } }>("/brands/:slug", (request, reply) =>
-    respond(request, reply, (ctx, q) => brandPage(app.prisma, ctx, request.params.slug, q.page)));
+    respond(request, reply, (ctx, q) => brandPage(app.prisma, ctx, request.params.slug, q)));
 
   app.get("/offers/buy-get", (request, reply) => respond(request, reply, (ctx, q) => buyGetList(app.prisma, ctx, q)));
 
@@ -97,7 +106,7 @@ function shopRoutes(app: FastifyInstance) {
     respond(request, reply, ({ store }) => departmentPage(app.prisma, store, request.params.department)));
 
   app.get<{ Params: { department: string; category: string } }>("/departments/:department/:category", (request, reply) =>
-    respond(request, reply, ({ store }, q) => categoryPage(app.prisma, store, request.params, q.sub, q.page)));
+    respond(request, reply, ({ store }, q) => categoryPage(app.prisma, store, request.params, q)));
 
   app.get<{ Params: { slug: string } }>("/products/:slug", (request, reply) =>
     respond(request, reply, ({ store }) => productPage(app.prisma, store, request.params.slug)));

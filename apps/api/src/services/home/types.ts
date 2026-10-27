@@ -10,6 +10,8 @@ export interface ResolveContext {
   /** Empty for guests */
   userId: string;
   now: Date;
+  /** How product shelves are drawn: the app's grid keeps whole rows of three, the website's rail scrolls and takes them all */
+  shelves: "grid" | "rail";
 }
 
 export interface LayoutItem {

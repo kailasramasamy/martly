@@ -1,3 +1,5 @@
+import type { FoodType, SearchSortBy } from "../constants/index.js";
+import type { PriceRange } from "../constants/browse.js";
 import type { StoreSize } from "../constants/onboarding.js";
 
 /** A live store as the public website lists it: only what a shopper sees before signing in */
@@ -91,16 +93,53 @@ export interface WebDepartmentPage {
   shelves: WebShelf[];
 }
 
-export interface WebCategoryPage {
-  store: WebShopStore;
-  department: WebCategoryLink;
-  category: WebCategoryLink;
+/** A filtered product list: subcategory chips, the shopper's filters with their facets, a page of products */
+export interface WebFilteredList {
   subcategories: (WebCategoryLink & { count: number })[];
   /** The subcategory filter in use */
   subcategory: string | null;
   products: WebProductCard[];
+  /** Products that match the filters, across pages */
+  total: number;
+  filters: WebCategoryFilters;
+  facets: WebCategoryFacets;
   page: number;
   totalPages: number;
+}
+
+export interface WebCategoryPage extends WebFilteredList {
+  store: WebShopStore;
+  department: WebCategoryLink;
+  category: WebCategoryLink;
+}
+
+export interface WebBrandPage extends WebFilteredList {
+  store: WebShopStore;
+  brand: { name: string; slug: string; imageUrl: string | null };
+}
+
+/** The filters in use on a category page; null or empty when off */
+export interface WebCategoryFilters {
+  brand: string[];
+  price: PriceRange | null;
+  off: number | null;
+  rating: number | null;
+  offers: boolean;
+  food: FoodType | null;
+  stock: boolean;
+  sort: SearchSortBy;
+}
+
+/** What each filter group can pick, counted with every other group's filter applied (Amazon's rule) */
+export interface WebCategoryFacets {
+  brands: { slug: string; name: string; count: number }[];
+  /** Bands sized to the category's prices; the last has no max */
+  priceBands: (PriceRange & { count: number })[];
+  discounts: { min: number; count: number }[];
+  ratings: { min: number; count: number }[];
+  offerCount: number;
+  foodTypes: { type: FoodType; count: number }[];
+  inStockCount: number;
 }
 
 export interface WebProductPage {

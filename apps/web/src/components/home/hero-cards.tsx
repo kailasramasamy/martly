@@ -9,23 +9,40 @@ type Card = WebHeroCard<WebProductCard>
 const ROTATE_MS = 5000
 const LINES = 4
 
+/** The title band, a lighter shade of the card, with its "See all" on the top line; a festival's strip art is blended into it */
 function Head({ card }: { card: Card }) {
+  const art = card.kind === "FESTIVE" ? card.imageUrl : null
+  const badge = card.kind === "STORE_SPECIAL" && card.imageUrl
   return (
-    <div className="mb-3">
-      {card.kicker && <p className="mb-0.5 truncate text-[11px] font-bold uppercase tracking-[0.08em] opacity-80">{card.kicker}</p>}
-      <h3 className="line-clamp-2 text-xl font-extrabold leading-6 tracking-tight"><a href={card.href} className="hover:underline">{card.title}</a></h3>
-      {card.subtitle && <p className="mt-1 line-clamp-1 text-xs font-semibold opacity-80">{card.subtitle}</p>}
+    <div className="relative -mx-3.5 -mt-3.5 mb-3 shrink-0 overflow-hidden px-3.5 pb-3 pt-3" style={{ background: card.theme.tintSoft }}>
+      {art && (
+        <img src={art} alt="" className="absolute inset-0 h-full w-full object-cover opacity-60 mix-blend-multiply [mask-image:linear-gradient(90deg,transparent_10%,black_75%)]" />
+      )}
+      <div className="relative flex items-center justify-between gap-2">
+        <p className="min-w-0 truncate text-[11px] font-bold uppercase tracking-[0.08em] opacity-80">{card.kicker ?? "\u00a0"}</p>
+        <a href={card.href} className="-mr-1 flex h-7 shrink-0 items-center gap-0.5 rounded-full bg-white/70 pl-2.5 pr-1.5 text-xs font-extrabold hover:bg-white">
+          {linkLabel(card)} <Icon name="chevron" size={14} className="-rotate-90" />
+        </a>
+      </div>
+      <div className="relative flex items-center gap-3">
+        <div className="min-w-0 flex-1">
+          <h3 className="truncate text-xl font-extrabold leading-6 tracking-tight"><a href={card.href} className="hover:underline">{card.title}</a></h3>
+          <p className="mt-1 truncate text-xs font-semibold opacity-80">{card.subtitle ?? "\u00a0"}</p>
+        </div>
+        {badge && <img src={card.imageUrl!} alt="" className="h-11 w-11 shrink-0 rounded-full border-2 border-white object-cover" />}
+        {card.kind === "BUY_GET" && <span className="shrink-0 rounded-full px-2.5 py-1 text-sm font-extrabold text-white" style={{ background: card.theme.cardInk }}>1+1</span>}
+      </div>
     </div>
   )
 }
 
-/** One product straight on the card: photo, name over size and offer, price, ADD */
+/** One product straight on the card: photo, name over size and offer, then price over ADD so the name gets the width */
 function Line({ product, ink }: { product: WebProductCard; ink: string }) {
   const [pack] = usePack(product.packs)
   return (
-    <li className="flex items-center gap-2.5">
+    <li className="flex items-center gap-2">
       <a href={productPath(product.slug)} className="flex min-w-0 flex-1 items-center gap-2.5">
-        <Art src={product.imageUrl} className="h-14 w-14 shrink-0 rounded-xl bg-white p-1" />
+        <Art src={product.imageUrl} className="h-[52px] w-[52px] shrink-0 rounded-xl bg-white p-1" />
         <span className="min-w-0">
           <span className="line-clamp-2 text-[13px] font-semibold leading-4 text-ink">{product.name}</span>
           <span className="mt-0.5 block truncate text-xs text-muted">
@@ -34,11 +51,13 @@ function Line({ product, ink }: { product: WebProductCard; ink: string }) {
           </span>
         </span>
       </a>
-      <span className="w-12 shrink-0 text-right">
-        {pack.mrp && <s className="block text-[11px] text-muted">{rupees(pack.mrp)}</s>}
-        <b className="text-sm text-ink">{rupees(pack.price)}</b>
+      <span className="flex shrink-0 flex-col items-end gap-1">
+        <span className="flex items-baseline gap-1 text-sm">
+          {pack.mrp && <s className="text-[11px] text-muted">{rupees(pack.mrp)}</s>}
+          <b className="text-ink">{rupees(pack.price)}</b>
+        </span>
+        <AddButton pack={pack} name={product.name} size="compact" />
       </span>
-      <AddButton pack={pack} name={product.name} size="compact" />
     </li>
   )
 }
@@ -50,7 +69,7 @@ function Tiles({ card }: { card: Card }) {
         <li key={t.href}>
           <a href={t.href} className="flex h-full flex-col items-center justify-center rounded-xl bg-white/70 p-1.5 text-center hover:bg-white">
             <Art src={t.imageUrl} className="min-h-0 w-full flex-1" />
-            <span className="mt-0.5 line-clamp-1 text-[11.5px] font-bold text-ink">{t.label}</span>
+            <span className="mt-0.5 line-clamp-2 text-[11.5px] font-bold leading-tight text-ink">{t.label}</span>
           </a>
         </li>
       ))}
@@ -59,37 +78,24 @@ function Tiles({ card }: { card: Card }) {
 }
 
 function Body({ card }: { card: Card }) {
-  if (card.kind === "FESTIVE") {
-    return (
-      <>
-        {card.imageUrl && <img src={card.imageUrl} alt="" className="-mx-3.5 mb-3 h-16 w-[calc(100%+28px)] max-w-none object-cover" />}
-        <Tiles card={card} />
-      </>
-    )
-  }
+  if (card.kind === "FESTIVE") return <Tiles card={card} />
   return (
-    <>
-      {card.kind === "STORE_SPECIAL" && card.imageUrl && <img src={card.imageUrl} alt="" className="mb-3 h-28 w-full rounded-2xl object-cover" />}
-      <ul className="flex flex-1 flex-col justify-around gap-2">
-        {card.products.slice(0, card.kind === "STORE_SPECIAL" ? 2 : LINES).map((p) => <Line key={p.slug} product={p} ink={card.theme.cardInk} />)}
-      </ul>
-    </>
+    <ul className="flex flex-1 flex-col justify-around gap-2">
+      {card.products.slice(0, LINES).map((p) => <Line key={p.slug} product={p} ink={card.theme.cardInk} />)}
+    </ul>
   )
 }
 
 function linkLabel(card: Card) {
-  if (card.kind === "FESTIVE") return "Shop the festival"
+  if (card.kind === "FESTIVE") return "Shop all"
   return card.total > LINES ? `See all ${card.total}` : "See all"
 }
 
 function HeroCardView({ card }: { card: Card }) {
   return (
-    <article className="flex h-[400px] flex-col overflow-hidden rounded-[22px] p-3.5 pb-0" style={{ background: card.theme.card, color: card.theme.cardInk }}>
+    <article className="flex h-[424px] flex-col overflow-hidden rounded-[22px] p-3.5" style={{ background: card.theme.card, color: card.theme.cardInk }}>
       <Head card={card} />
       <Body card={card} />
-      <a href={card.href} className="-mx-3.5 mt-3 flex h-11 shrink-0 items-center justify-center gap-1 text-[13px] font-extrabold hover:brightness-95" style={{ background: `${card.theme.cardInk}14` }}>
-        {linkLabel(card)} <Icon name="arrow" size={15} />
-      </a>
     </article>
   )
 }

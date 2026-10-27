@@ -182,7 +182,7 @@ export async function homeLayoutRoutes(app: FastifyInstance) {
     if (!organizationId) return;
     const store = await app.prisma.store.findFirst({ where: { id: request.query.storeId, organizationId }, select: { id: true, organizationId: true } });
     if (!store) return reply.notFound("Store not found");
-    const ctx: ResolveContext = { prisma: app.prisma, store, userId: "", now: new Date() };
+    const ctx: ResolveContext = { prisma: app.prisma, store, userId: "", now: new Date(), shelves: "grid" };
     const sections = await app.prisma.homeSection.findMany({ where: { organizationId }, orderBy: { sortOrder: "asc" }, include: SECTION_INCLUDE });
     const entries: LayoutEntry[] = sections.length > 0 ? sections.map(toEntry) : DEFAULT_LAYOUT;
     const data = (await sectionVisibility(ctx, entries)).map(({ entry, resolves }) => ({ id: entry.id, resolves }));

@@ -98,9 +98,10 @@ export function ProductCard({ product, tracking }: { product: WebProductCard; tr
   )
 }
 
-export function ProductGrid({ products }: { products: WebProductCard[] }) {
+// Wide screens fit six across; beside a filter rail, four
+export function ProductGrid({ products, beside = false }: { products: WebProductCard[]; beside?: boolean }) {
   return (
-    <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5 xl:grid-cols-6">
+    <ul className={`grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 ${beside ? "xl:grid-cols-4" : "lg:grid-cols-5 xl:grid-cols-6"}`}>
       {products.map((p) => <li key={p.slug}><ProductCard product={p} /></li>)}
     </ul>
   )

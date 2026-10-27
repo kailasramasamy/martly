@@ -35,7 +35,7 @@ const DEAL_PERCENT = `
   END`;
 
 /** Live deals per store, counting only listings a shopper can buy */
-async function dealsByStore(prisma: PrismaClient, storeIds: string[]) {
+export async function dealsByStore(prisma: PrismaClient, storeIds: string[]) {
   const rows = await prisma.$queryRawUnsafe<{ store_id: string; deals: number; max_percent: number }[]>(
     `SELECT store_id, count(*)::int AS deals, floor(max(pct))::int AS max_percent FROM (
        SELECT sp.store_id, ${DEAL_PERCENT} AS pct

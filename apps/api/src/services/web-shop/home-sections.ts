@@ -24,7 +24,10 @@ function heroCard<P>(card: HeroCard<unknown>, links: LinkBook, cards: Cards<P>, 
       return { ...base, kicker: f.kicker, title: f.title, subtitle: f.subtitle, imageUrl: f.imageUrl, href, tiles };
     }
     case "BUY_GET":
-      return { ...base, title: "Buy 1 Get 1 Free", subtitle: "& more free-item offers", href: "/offers/buy-get", products: cards(card.products), total: card.total };
+      return {
+        ...base, kicker: "Free with your order", title: "Buy 1 Get 1 Free", subtitle: `${card.total} free-item offers`, href: "/offers/buy-get",
+        products: cards(card.products), total: card.total,
+      };
     case "MOST_BOUGHT":
       return { ...base, title: "Most bought", subtitle: `At ${store.name} this month`, href: "/best-sellers", products: cards(card.products) };
     case "STORE_SPECIAL": {
@@ -161,7 +164,7 @@ function bannerProductIds(sections: HomeSection<unknown>[]) {
 export async function webHomeSections(
   prisma: PrismaClient, store: WebShopStore, organizationId: string, cursor: string | undefined, brands: () => Promise<BrandRail>,
 ): Promise<{ sections: WebHomeSection[]; nextCursor: string | null }> {
-  const page = await homeSectionsPage(prisma, { id: store.id, organizationId, freeDeliveryThreshold: null }, "", cursor);
+  const page = await homeSectionsPage(prisma, { id: store.id, organizationId, freeDeliveryThreshold: null }, "", cursor, "rail");
   const sections = withoutHeroDuplicates(page.sections as HomeSection<unknown>[]);
   const links = await linkBook(prisma, organizationId, bannerProductIds(sections));
   const [cardOf, brandRail] = await Promise.all([

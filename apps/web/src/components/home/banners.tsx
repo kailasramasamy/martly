@@ -61,7 +61,7 @@ export function FestiveHero({ section }: { section: Of<"FESTIVE_HERO"> }) {
   )
 }
 
-function BannerImage({ banner, className }: { banner: WebBanner; className: string }) {
+export function BannerImage({ banner, className, onOpen }: { banner: WebBanner; className: string; onOpen?: () => void }) {
   const art = (
     <span className="relative block overflow-hidden rounded-2xl bg-surface">
       <img src={banner.imageUrl} alt={banner.textInImage ? banner.title : ""} loading="lazy" className={`w-full object-cover ${className}`} />
@@ -73,7 +73,7 @@ function BannerImage({ banner, className }: { banner: WebBanner; className: stri
       )}
     </span>
   )
-  return banner.href ? <a href={banner.href} className="block transition hover:opacity-95">{art}</a> : art
+  return banner.href ? <a href={banner.href} onClick={onOpen} className="block transition hover:opacity-95">{art}</a> : art
 }
 
 /** Wide banners on HERO_BANNERS (3:2) and tall brand posters (2:3), in a snapping rail */

@@ -1,4 +1,4 @@
-import { HOME_BRAND_CARD_PRODUCTS } from "@martly/shared/constants";
+import { HOME_BRAND_CARD_PRODUCTS, WEB_BRAND_CARD_PRODUCTS } from "@martly/shared/constants";
 import { parseHomeSectionConfig } from "@martly/shared/schemas";
 import { withAllSizes } from "../../store-feed.js";
 import { sectionBase, type SectionResolver } from "../types.js";
@@ -28,7 +28,7 @@ export const brandCard: SectionResolver = async (ctx, entry) => {
       AND EXISTS (SELECT 1 FROM store_products sp WHERE sp.product_id = p.id AND sp.store_id = ${ctx.store.id} AND sp.is_active AND sp.stock > 0)
       AND (${!collection} OR EXISTS (SELECT 1 FROM collection_items ci WHERE ci.collection_id = ${collection?.id ?? ""} AND ci.product_id = p.id))
     GROUP BY p.id ORDER BY COUNT(oi.id) DESC, md5(p.id || ${ctx.now.toISOString().slice(0, 10)})
-    LIMIT ${HOME_BRAND_CARD_PRODUCTS}`;
+    LIMIT ${ctx.shelves === "grid" ? HOME_BRAND_CARD_PRODUCTS : WEB_BRAND_CARD_PRODUCTS}`;
   if (ranked.length < HOME_BRAND_CARD_PRODUCTS) return null;
   return {
     ...sectionBase(entry),

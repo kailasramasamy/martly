@@ -90,7 +90,7 @@ export async function dealsSection(prisma: PrismaClient, store: { id: string; or
   const { bands, headline } = parseHomeSectionConfig("PRICE_BAND_DEALS", section.config) as {
     bands: Omit<PriceBand, "id">[]; headline?: string;
   };
-  const collection = section.collectionId ? await liveCollection({ prisma, store, userId: "", now }, section.collectionId) : null;
+  const collection = section.collectionId ? await liveCollection({ prisma, store, userId: "", now, shelves: "grid" }, section.collectionId) : null;
   if (section.collectionId && !collection) return null;
   return {
     title: section.title,

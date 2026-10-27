@@ -91,7 +91,3 @@ export async function cardsInOrder(prisma: PrismaClient, storeId: string, ids: s
   const byId = await cardsById(prisma, storeId, ids);
   return ids.flatMap((id) => byId.get(id) ?? []);
 }
-
-export function countProducts(prisma: PrismaClient, storeId: string, where: Prisma.ProductWhereInput) {
-  return prisma.product.count({ where: { AND: [soldAt(storeId), where] } });
-}

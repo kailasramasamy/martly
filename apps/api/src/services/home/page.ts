@@ -110,9 +110,9 @@ async function resolveSlice(ctx: ResolveContext, entries: LayoutEntry[]) {
 
 /** One page of Home sections for a store; the first page also carries the page-level chrome. */
 export async function homeSectionsPage(
-  prisma: ResolveContext["prisma"], store: PageStore, userId: string, cursor: string | undefined,
+  prisma: ResolveContext["prisma"], store: PageStore, userId: string, cursor: string | undefined, shelves: ResolveContext["shelves"] = "grid",
 ): Promise<HomeSectionsPage> {
-  const ctx: ResolveContext = { prisma, store, userId, now: new Date() };
+  const ctx: ResolveContext = { prisma, store, userId, now: new Date(), shelves };
   const entries = await expandLayout(ctx, await loadLayout(ctx));
   const position = decodeCursor(cursor);
   let start = position.i;

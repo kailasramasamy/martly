@@ -19,6 +19,10 @@ export function listHref(base: string, params: Params) {
 /** Reads a page number from the URL; page 1 is left out */
 export const pageParam = (value: unknown) => (Number(value) > 1 ? Math.floor(Number(value)) : undefined)
 export const textParam = (value: unknown) => (typeof value === "string" && value ? value : undefined)
+export const oneOf = <T extends string>(values: Record<string, T>, value: unknown) =>
+  (Object.values(values) as unknown[]).includes(value) ? (value as T) : undefined
+// The router runs validateSearch on what it read from the URL ("1") and again on its own output (1)
+export const flag = (value: unknown) => (value === "1" || value === 1 ? (1 as const) : undefined)
 
 export function Pager({ page, totalPages, href }: { page: number; totalPages: number; href: (page: number) => string }) {
   if (totalPages <= 1) return null

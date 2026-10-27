@@ -3,14 +3,9 @@ import { FoodType, SearchSortBy } from "@martly/shared/constants"
 import { getSearchLanding, searchShop, type SearchParams } from "~/lib/api"
 import { pageHead } from "~/lib/seo"
 import { ShopLayout } from "~/components/shop-layout"
-import { textParam } from "~/components/list-page"
+import { flag, oneOf, textParam } from "~/components/list-page"
 import { SearchLandingView } from "~/components/search/landing"
 import { SearchResults } from "~/components/search/results"
-
-const oneOf = <T extends string>(values: Record<string, T>, value: unknown) =>
-  (Object.values(values) as unknown[]).includes(value) ? (value as T) : undefined
-// The router runs this on what it read from the URL ("1") and again on its own output (1)
-const flag = (value: unknown) => (value === "1" || value === 1 ? (1 as const) : undefined)
 
 export const Route = createFileRoute("/search")({
   validateSearch: (search: Record<string, unknown>): Partial<SearchParams> => ({

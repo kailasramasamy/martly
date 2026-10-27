@@ -1,10 +1,10 @@
 import { createServerFn } from "@tanstack/react-start"
 import { createHash } from "node:crypto"
 import { getCookie, getRequestIP, setCookie } from "@tanstack/react-start/server"
-import type { SearchEventType, SearchSortBy } from "@martly/shared/constants"
+import type { FoodType, SearchEventType, SearchSortBy } from "@martly/shared/constants"
 import type {
-  ApiResponse, StoreResolution, WebCategoryPage, WebCollectionPage, WebDepartmentPage, WebHome, WebHomeSectionsPage, WebListPage,
-  WebProductPage, WebSearchLanding, WebSearchPage, WebSitemap, WebStorePage, WebSuggestion,
+  ApiResponse, StoreResolution, WebBrandPage, WebCategoryPage, WebCollectionPage, WebDepartmentPage, WebHome, WebHomeSectionsPage, WebListPage,
+  WebProductPage, WebSearchLanding, WebSearchPage, WebSitemap, WebStorePage, WebSuggestion, WebTownPage,
 } from "@martly/shared/types"
 
 const API_URL = process.env.MARTLY_API_URL ?? "http://localhost:7001/api/v1"
@@ -49,6 +49,10 @@ const seg = encodeURIComponent
 // Server functions run on the server, so pages render with live data and the API needs no CORS for the site
 export const getHome = createServerFn({ method: "GET" }).handler(() => required<WebHome>("/web/home"))
 
+export const getTownPage = createServerFn({ method: "GET" })
+  .inputValidator((town: string) => town)
+  .handler(({ data }) => get<WebTownPage>(`/web/towns/${seg(data)}`))
+
 /** A store's page also makes it the shopper's store, so the shop opens on it */
 export const getStorePage = createServerFn({ method: "GET" })
   .inputValidator((params: { town: string; store: string }) => params)
@@ -58,18 +62,21 @@ export const getStorePage = createServerFn({ method: "GET" })
     return page
   })
 
-/** A page of the app's Home sections at the shopper's store; the first call has no cursor */
+/** A page of the app's Home sections at the shopper's store, or at the store a store page names; the first call has no cursor */
 export const getHomeSections = createServerFn({ method: "GET" })
-  .inputValidator((params: { cursor?: string }) => params)
-  .handler(({ data }) => required<WebHomeSectionsPage>(`/web/home-sections${shopQuery({ cursor: data.cursor })}`))
+  .inputValidator((params: { cursor?: string; store?: { id: string; town: string } }) => params)
+  .handler(({ data }) => {
+    const store = data.store && { store: data.store.id, town: data.store.town }
+    return required<WebHomeSectionsPage>(`/web/home-sections${shopQuery({ cursor: data.cursor, ...store })}`)
+  })
 
 export const getCollection = createServerFn({ method: "GET" })
   .inputValidator((params: { slug: string; aisle?: string; tile?: string; page?: number }) => params)
   .handler(({ data: { slug, ...filters } }) => get<WebCollectionPage>(`/web/collections/${seg(slug)}${shopQuery(filters)}`))
 
 export const getBrand = createServerFn({ method: "GET" })
-  .inputValidator((params: { slug: string; page?: number }) => params)
-  .handler(({ data }) => get<WebListPage>(`/web/brands/${seg(data.slug)}${shopQuery({ page: data.page })}`))
+  .inputValidator((params: { slug: string } & CategorySearch) => params)
+  .handler(({ data: { slug, ...filters } }) => get<WebBrandPage>(`/web/brands/${seg(slug)}${shopQuery(filters)}`))
 
 export const getBuyGet = createServerFn({ method: "GET" })
   .inputValidator((params: { category?: string; page?: number }) => params)
@@ -86,9 +93,23 @@ export const getDepartment = createServerFn({ method: "GET" })
   .handler(({ data }) => get<WebDepartmentPage>(`/web/departments/${seg(data.department)}${shopQuery()}`))
 
 export const getCategory = createServerFn({ method: "GET" })
-  .inputValidator((params: { department: string; category: string; sub?: string; page?: number }) => params)
-  .handler(({ data }) => get<WebCategoryPage>(
-    `/web/departments/${seg(data.department)}/${seg(data.category)}${shopQuery({ sub: data.sub, page: data.page })}`))
+  .inputValidator((params: { department: string; category: string } & CategorySearch) => params)
+  .handler(({ data: { department, category, ...filters } }) => get<WebCategoryPage>(
+    `/web/departments/${seg(department)}/${seg(category)}${shopQuery(filters)}`))
+
+/** A category page's URL query: subcategory, filters (brand slugs comma separated, price "50-100"), sort and page */
+export interface CategorySearch {
+  sub?: string
+  brand?: string
+  price?: string
+  off?: number
+  rating?: number
+  offers?: 1
+  food?: FoodType
+  stock?: 1
+  sort?: SearchSortBy
+  page?: number
+}
 
 export const getProduct = createServerFn({ method: "GET" })
   .inputValidator((params: { slug: string }) => params)
@@ -145,6 +166,9 @@ export const recordAdEvents = createServerFn({ method: "POST" })
   .handler(async ({ data }) => { await post("/banners/events", data) })
 
 export const getSitemap = createServerFn({ method: "GET" }).handler(() => required<WebSitemap>("/web/sitemap"))
+
+/** Whether the shopper has chosen their store (in the picker, or by opening a store's page); until then pages show a default */
+export const isStoreChosen = createServerFn({ method: "GET" }).handler(() => !!getCookie(STORE_COOKIE))
 
 /** Picks the shopper's store as the app does (a store, a town, or their location) and remembers it */
 export const chooseStore = createServerFn({ method: "POST" })

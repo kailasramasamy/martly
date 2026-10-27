@@ -203,7 +203,9 @@ export const HOME_DEALS_PAGE_SIZE = 20;
 /** Buy X get Y offers: the Home row, and each page of the full list */
 export const HOME_BUY_GET_ROW = 10;
 export const BUY_GET_PAGE_SIZE = 20;
+/** A brand card: the app's card shows 3 (and hides with fewer); the website's scrolling rail takes up to 8 */
 export const HOME_BRAND_CARD_PRODUCTS = 3;
+export const WEB_BRAND_CARD_PRODUCTS = 8;
 /** Bestseller category cards: how many categories, and the product images in each card's 2×2 grid */
 export const BESTSELLER_CATEGORY_CARDS = 6;
 export const BESTSELLER_CARD_IMAGES = 4;

@@ -1,4 +1,4 @@
-import type { WebHome, WebProductPage } from "@martly/shared/types"
+import type { WebHome, WebProductPage, WebStorePage, WebTownPage } from "@martly/shared/types"
 import type { Faq } from "./content"
 import { SITE_NAME, SITE_URL } from "./site"
 
@@ -108,6 +108,38 @@ export function productJsonLd(page: WebProductPage) {
         offers,
       },
       breadcrumbJsonLd([...product.trail, { name: product.name, path: `/p/${product.slug}` }]),
+    ],
+  }
+}
+
+/** A store's own address: the store as a GroceryStore, under its town */
+export function storeJsonLd({ store, town }: WebStorePage, path: string) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "GroceryStore",
+        name: store.name,
+        url: `${SITE_URL}${path}`,
+        image: store.imageUrl ?? store.logoUrl ?? undefined,
+        address: { "@type": "PostalAddress", streetAddress: store.address, addressLocality: town.name, addressRegion: town.state, addressCountry: "IN" },
+      },
+      breadcrumbJsonLd([{ name: town.name, path: `/${town.slug}` }, { name: store.name, path }]),
+    ],
+  }
+}
+
+/** A town's page: its stores as a list, under the town */
+export function townJsonLd({ town, stores }: WebTownPage) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ItemList",
+        name: `Grocery stores in ${town.name}`,
+        itemListElement: stores.map((store, i) => ({ "@type": "ListItem", position: i + 1, name: store.name, url: `${SITE_URL}/${town.slug}/${store.slug}` })),
+      },
+      breadcrumbJsonLd([{ name: town.name, path: `/${town.slug}` }]),
     ],
   }
 }
