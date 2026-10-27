@@ -100,7 +100,12 @@ function DetailsCard({ onTitleChange }: { onTitleChange: (e: React.ChangeEvent<H
 }
 
 function ProductsCard({ form, drafted }: { form: FormInstance; drafted: DraftProduct[] }) {
-  const { selectProps } = useSelect({ resource: "products", optionLabel: "name", optionValue: "id" });
+  const { selectProps } = useSelect({
+    resource: "products",
+    optionLabel: "name",
+    optionValue: "id",
+    onSearch: (value) => [{ field: "q", operator: "contains", value }],
+  });
   // Drafted products are in the select even when its first page doesn't hold them, so their chips show names
   const known = new Set((selectProps.options ?? []).map((o) => o.value));
   const options = [...drafted.filter((p) => !known.has(p.id)).map((p) => ({ value: p.id, label: p.name })), ...(selectProps.options ?? [])];

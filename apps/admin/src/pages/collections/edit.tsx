@@ -20,6 +20,7 @@ export const CollectionEdit = () => {
     resource: "products",
     optionLabel: "name",
     optionValue: "id",
+    onSearch: (value) => [{ field: "q", operator: "contains", value }],
   });
 
   // Transform initial data: items → productIds

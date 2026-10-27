@@ -20,6 +20,7 @@ export const StoreProductCreate = () => {
     resource: "products",
     optionLabel: "name",
     optionValue: "id",
+    onSearch: (value) => [{ field: "q", operator: "contains", value }],
   });
 
   const discountType = Form.useWatch("discountType", formProps.form);
