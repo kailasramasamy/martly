@@ -3,7 +3,6 @@ import { PhotoroomError, photoroomCutout } from "./catalog-agent/photoroom.js";
 
 // Logos show at most a few dozen points wide; 512px stays sharp at 3x
 const MAX_SIZE = 512;
-const PADDING = 0.04;
 // Pixels this washed-out, dark or light are outlines and backgrounds, not the brand's colour
 const MIN_SATURATION = 0.25;
 const MIN_LIGHTNESS = 0.12;
@@ -100,21 +99,15 @@ async function removeBackground(original: Buffer, wanted: boolean): Promise<{ cu
   }
 }
 
-/** Cuts the empty or plain margins down to the mark, keeps a little padding, and caps it at MAX_SIZE as WebP */
+/** Cuts the empty or plain margins down to the mark, edge to edge like brand logos, capped at MAX_SIZE as WebP */
 export async function trimLogo(logo: Buffer): Promise<Buffer> {
-  // sharp always resizes before extending, so the padding is sized on an already resized mark
-  const trimmed = await sharp(logo).rotate().trim()
+  return sharp(logo).rotate().trim()
     .resize(MAX_SIZE, MAX_SIZE, { fit: "inside", withoutEnlargement: true })
-    .png()
-    .toBuffer({ resolveWithObject: true });
-  const pad = Math.round(Math.max(trimmed.info.width, trimmed.info.height) * PADDING);
-  return sharp(trimmed.data)
-    .extend({ top: pad, bottom: pad, left: pad, right: pad, background: { r: 0, g: 0, b: 0, alpha: 0 } })
     .webp({ quality: 85, alphaQuality: 90 })
     .toBuffer();
 }
 
-/** Trims the logo to its mark with a little padding and reads its colours; removes an opaque background (Photoroom) when asked */
+/** Trims the logo to its mark and reads its colours; removes an opaque background (Photoroom) when asked */
 export async function cleanLogo(upload: Buffer, removeBg: boolean): Promise<CleanLogo> {
   const original = await sharp(upload).rotate().png().toBuffer();
   const { cut, background } = await removeBackground(original, removeBg);
