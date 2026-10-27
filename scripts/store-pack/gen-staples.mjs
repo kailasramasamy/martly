@@ -21,6 +21,8 @@ const prompt = (contents) => "Keep this exact photo: the same clear unprinted pi
   + "filling the pouch the same way. No labels, no text, no shadow.";
 
 const ATTEMPTS = 3;
+const RATE_LIMIT_WAITS = 10;
+const RATE_LIMIT_PAUSE_MS = 15_000;
 
 // fetch throws TypeError on a dropped connection (EPIPE, reset); one bad socket shouldn't end the batch
 async function editWithRetry(form) {
@@ -39,7 +41,12 @@ async function generate({ name, contents }) {
   const form = new FormData();
   for (const [k, v] of Object.entries({ model: "gpt-image-2.5-flare", quality: "medium", size: "1024x1024", background: "transparent", output_format: "png", prompt: prompt(contents) })) form.append(k, v);
   form.append("image[]", new Blob([readFileSync(BASE_PHOTO)], { type: "image/png" }), "pouch.png");
-  const res = await editWithRetry(form);
+  let res = await editWithRetry(form);
+  // 20 edits a minute per org: wait out the window instead of failing
+  for (let waits = 0; res?.status === 429 && waits < RATE_LIMIT_WAITS; waits++) {
+    await new Promise((resolve) => setTimeout(resolve, RATE_LIMIT_PAUSE_MS));
+    res = await editWithRetry(form);
+  }
   if (!res) return console.log(`FAIL ${name}: network`);
   const body = await res.json();
   if (!res.ok) return console.log(`FAIL ${name}: ${body.error?.message ?? res.status}`);
