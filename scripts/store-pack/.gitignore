@@ -6,3 +6,13 @@ out*/*-preview.png
 out*/*-pair.png
 out*/review.png
 out*/dal.png
+sreeranga/c-*.png
+sreeranga/fonts.*
+sreeranga/logo.webp
+sreeranga/resp-*.json
+sreeranga/out/cmp-*.png
+# Staple pouch photos (~1.5MB each) live on the CDN under pack-photos/; regenerate with gen-staples.mjs
+ai/staples/
+ai/pillow-toor-dal-clear.png
+ai/pillow-toor-dal-wide.png
+ai/pillow-toor-dal-wide1.png

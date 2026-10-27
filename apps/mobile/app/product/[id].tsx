@@ -302,7 +302,8 @@ export default function ProductDetailScreen() {
   useEffect(() => {
     if (!id) return;
 
-    const fetchProduct = api.get<ProductDetail>(`/api/v1/products/${id}`);
+    // The store's own pack photos replace the catalog ones for products it packs itself
+    const fetchProduct = api.get<ProductDetail>(`/api/v1/products/${id}${storeId ? `?storeId=${storeId}` : ""}`);
 
     const fetchStoreProducts = storeId
       ? api.getList<StoreProduct>(`/api/v1/stores/${storeId}/products?productId=${id}`)

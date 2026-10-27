@@ -13,6 +13,7 @@ import { searchProductsForAdmin } from "../../services/search.js";
 import { fetchRankedPage } from "../../services/ranked-page.js";
 import { brandFacets, countIds, inSearchOrder, subcategoryFacets, type SubcategoryFacet } from "../../services/search-facets.js";
 import { translateNewProduct } from "../../services/translate/product.js";
+import { applyProductPacks } from "../../services/pack-images.js";
 
   // Shared helper: build visibility + catalogType where clause
   function buildVisibilityFilter(user: { role: string; organizationId?: string | null }, catalogType?: string) {
@@ -253,7 +254,7 @@ export async function productRoutes(app: FastifyInstance) {
   });
 
   // Get product by ID (guests can read master products)
-  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticateOptional] }, async (request, reply) => {
+  app.get<{ Params: { id: string }; Querystring: { storeId?: string } }>("/:id", { preHandler: [authenticateOptional] }, async (request, reply) => {
     const product = await app.prisma.product.findUnique({
       where: { id: request.params.id },
       include: {
@@ -265,15 +266,18 @@ export async function productRoutes(app: FastifyInstance) {
     if (!product) return reply.notFound("Product not found");
 
     const user = getOrgUser(request);
+    // Seen from a store: its own pack images replace the catalog photos
+    const { storeId } = request.query;
+    const packed = <T extends Parameters<typeof applyProductPacks>[1]>(data: T) => (storeId ? applyProductPacks(storeId, data) : data);
 
     // Master products: anyone can read
     if (product.organizationId === null) {
-      const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
+      const response: ApiResponse<typeof product> = { success: true, data: packed(formatProductUnits(product)) };
       return response;
     }
 
     // Org products: anyone can read (customers browse products from any org via stores)
-    const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
+    const response: ApiResponse<typeof product> = { success: true, data: packed(formatProductUnits(product)) };
     return response;
   });
 

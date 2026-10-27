@@ -15,3 +15,13 @@ node compose.mjs pillow-1kg out-pillow/back-filled.png out-pillow/render-back.pn
 ```
 
 Open items: replace the sample with a real store's artwork; generate other products from the same pouch photo and check the geometry stays identical; a real back photo instead of the mirrored front.
+
+## Sree Ranga (first real store)
+
+`sreeranga/` redraws their toor dal pack from photos (`photo-front.png`, `photo-back.png`). It's printed edge to edge, so it uses the `pillow-1kg-full` template, where the print area is the whole bag face. `mandala.png` is an AI-drawn stand-in for their floral line art.
+
+```sh
+python3 sreeranga/build.py "$PWD/sreeranga/out"
+node compose.mjs pillow-1kg-full sreeranga/out/front-filled.png sreeranga/out/render-front.png
+node compose.mjs pillow-1kg-full sreeranga/out/back-filled.png sreeranga/out/render-back.png ai/pillow-toor-dal-back.png
+```

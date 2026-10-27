@@ -534,6 +534,7 @@ model Organization {
 
   marketingSubscriptions MarketingSubscription[]
   homeSections           HomeSection[]
+  packDesigns            PackDesign[]
 
   @@map("organizations")
 }
@@ -615,6 +616,7 @@ model Store {
   homeSectionStats HomeSectionStatDaily[]
   healthSnapshots  StorefrontHealthSnapshot[]
   wishlistItems    WishlistItem[]
+  packDesigns      PackDesign[]
 
   @@unique([townId, slug])
   @@map("stores")
@@ -873,6 +875,8 @@ model Product {
   manufacturerName    String?      @map("manufacturer_name")
   countryOfOrigin     String?      @map("country_of_origin")
   images              String[]     @default([])
+  /// Blank clear pouch filled with this product; stores' pack designs are printed onto it (services/pack-render)
+  packPhotoUrl        String?      @map("pack_photo_url")
   productType         ProductType? @map("product_type")
   regulatoryMarks     String[]     @default([]) @map("regulatory_marks")
   certifications      String[]     @default([])
@@ -3092,4 +3096,30 @@ model BalanceDue {
 
   @@index([organizationId, status])
   @@map("balance_dues")
+}
+
+/// A store's own-brand pack artwork, printed onto products' blank pouch photos at render time
+model PackDesign {
+  id             String   @id @default(uuid())
+  organizationId String   @map("organization_id")
+  storeId        String   @map("store_id")
+  name           String
+  /// Pouch geometry the artwork is printed onto, a key of PACK_TEMPLATES in services/pack-render
+  template       String
+  frontArtUrl    String   @map("front_art_url")
+  backArtUrl     String?  @map("back_art_url")
+  /// Product text drawn over the artwork: PackZone[] from services/pack-render
+  zones          Json
+  /// Subcategories this design packs; the default design packs everything else
+  subcategoryIds String[] @default([]) @map("subcategory_ids")
+  isDefault      Boolean  @default(false) @map("is_default")
+  isActive       Boolean  @default(true) @map("is_active")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id])
+  store        Store        @relation(fields: [storeId], references: [id], onDelete: Cascade)
+
+  @@index([storeId])
+  @@map("pack_designs")
 }

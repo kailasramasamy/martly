@@ -93,6 +93,7 @@ import returnsSchedulerPlugin from "./plugins/returns-scheduler.js";
 import settlementSchedulerPlugin from "./plugins/settlement-scheduler.js";
 import attentionSchedulerPlugin from "./plugins/attention-scheduler.js";
 import monthlyListSchedulerPlugin from "./plugins/monthly-list-scheduler.js";
+import packImagesPlugin from "./plugins/pack-images.js";
 import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
 
 export async function buildApp() {
@@ -136,6 +137,7 @@ export async function buildApp() {
   await app.register(attentionSchedulerPlugin);
   await app.register(monthlyListSchedulerPlugin);
   await app.register(catalogAgentWorkerPlugin);
+  await app.register(packImagesPlugin);
 
   // ── Error Handler ────────────────────────────────
   app.setErrorHandler((error, _request, reply) => {

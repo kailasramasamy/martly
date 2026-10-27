@@ -1,4 +1,4 @@
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+import { S3Client, PutObjectCommand, HeadObjectCommand, NotFound } from "@aws-sdk/client-s3";
 import sharp from "sharp";
 
 const REGION = process.env.AWS_REGION ?? "ap-south-1";
@@ -29,6 +29,23 @@ export async function putObject(name: string, body: Buffer, contentType: string)
     CacheControl: "public, max-age=31536000, immutable",
   }));
   return { key, url: `${BASE_URL}/${name}` };
+}
+
+/** Public URL of an object stored under `name`, whether or not it exists yet */
+export function mediaUrl(name: string) {
+  return `${BASE_URL}/${name}`;
+}
+
+/** True when an object is already stored under `name` */
+export async function objectExists(name: string) {
+  const key = KEY_PREFIX ? `${KEY_PREFIX}/${name}` : name;
+  try {
+    await s3.send(new HeadObjectCommand({ Bucket: BUCKET, Key: key }));
+    return true;
+  } catch (err) {
+    if (err instanceof NotFound) return false;
+    throw err;
+  }
 }
 
 /** True for URLs of objects this API uploaded, so server-side fetches never follow a user-supplied URL elsewhere */
