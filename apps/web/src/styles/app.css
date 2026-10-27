@@ -1,4 +1,6 @@
-@import "tailwindcss";
+/* Scan src/ only: the Docker build has no .gitignore, so the SSR pass would otherwise read the freshly built
+   dist/client, emit different CSS and point pages at a stylesheet the client build never produced */
+@import "tailwindcss" source("../");
 
 @theme {
   --font-sans: "Manrope", "Noto Sans Tamil", ui-sans-serif, system-ui, sans-serif;
