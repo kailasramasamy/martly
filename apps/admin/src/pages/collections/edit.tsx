@@ -27,6 +27,14 @@ export const CollectionEdit = () => {
   const initialProductIds = record?.items?.map((item: any) => item.product?.id ?? item.productId) ?? [];
 
   const isCurated = record?.source === "AGENT" || !!record?.artDirection;
+  // The collection's own products are in the select even when its first page doesn't hold them, so their chips show names
+  const known = new Set((productSelectProps.options ?? []).map((o) => o.value));
+  const productOptions = [
+    ...(record?.items ?? [])
+      .filter((item: any) => item.product && !known.has(item.product.id))
+      .map((item: any) => ({ value: item.product.id, label: item.product.name })),
+    ...(productSelectProps.options ?? []),
+  ];
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
@@ -85,6 +93,7 @@ export const CollectionEdit = () => {
                   <Form.Item label="Products" name="productIds">
                     <Select
                       {...productSelectProps}
+                      options={productOptions}
                       mode="multiple"
                       placeholder="Select products for this collection"
                       allowClear
