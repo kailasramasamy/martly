@@ -14,6 +14,7 @@ import { fetchRankedPage } from "../../services/ranked-page.js";
 import { brandFacets, countIds, inSearchOrder, subcategoryFacets, type SubcategoryFacet } from "../../services/search-facets.js";
 import { translateNewProduct } from "../../services/translate/product.js";
 import { applyProductPacks } from "../../services/pack-images.js";
+import { storeBrandOf } from "../../services/own-brand.js";
 
   // Shared helper: build visibility + catalogType where clause
   function buildVisibilityFilter(user: { role: string; organizationId?: string | null }, catalogType?: string) {
@@ -266,18 +267,14 @@ export async function productRoutes(app: FastifyInstance) {
     if (!product) return reply.notFound("Product not found");
 
     const user = getOrgUser(request);
-    // Seen from a store: its own pack images replace the catalog photos
+    // Seen from a store: its own pack images replace the catalog photos, and its own staples carry the store as their brand
     const { storeId } = request.query;
-    const packed = <T extends Parameters<typeof applyProductPacks>[1]>(data: T) => (storeId ? applyProductPacks(storeId, data) : data);
+    const storeBrand = storeId ? await storeBrandOf(app.prisma, storeId, product) : null;
+    const formatted = formatProductUnits(product);
+    const data = storeId ? { ...applyProductPacks(storeId, formatted), brand: storeBrand ?? formatted.brand } : formatted;
 
-    // Master products: anyone can read
-    if (product.organizationId === null) {
-      const response: ApiResponse<typeof product> = { success: true, data: packed(formatProductUnits(product)) };
-      return response;
-    }
-
-    // Org products: anyone can read (customers browse products from any org via stores)
-    const response: ApiResponse<typeof product> = { success: true, data: packed(formatProductUnits(product)) };
+    // Master and org products alike: anyone can read (customers browse products from any org via stores)
+    const response: ApiResponse<typeof data> = { success: true, data };
     return response;
   });
 

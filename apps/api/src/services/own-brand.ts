@@ -1,7 +1,7 @@
 import type { Prisma, PrismaClient } from "../../generated/prisma/client.js";
 import { ownBrandId } from "@martly/shared/constants";
 import type { DirectoryDepartment } from "@martly/shared/types";
-import type { BrandBoost } from "./brand-boost.js";
+import { brandPickOf, storeBrandBoost, type BrandBoost } from "./brand-boost.js";
 
 // Stores have no theme colour of their own yet, so their brand store wears the app's teal
 const OWN_BRAND_THEME = "#0f766e";
@@ -16,6 +16,13 @@ export async function ownBrand(prisma: PrismaClient, storeId: string) {
   const store = await prisma.store.findUnique({ where: { id: storeId }, select: { name: true, logoUrl: true } });
   if (!store) return null;
   return { id: ownBrandId(storeId), name: store.name, imageUrl: store.logoUrl, themeColor: OWN_BRAND_THEME, themeColorSecondary: null };
+}
+
+/** A store's unbranded staple, seen in that store, carries the store as its brand: logo chip, banner, brand store */
+export async function storeBrandOf(prisma: PrismaClient, storeId: string, product: { brandId: string | null; subcategoryId: string | null }) {
+  if (product.brandId) return null;
+  const boost = await storeBrandBoost(prisma, storeId);
+  return brandPickOf({ product }, boost) === "OWN" ? ownBrand(prisma, storeId) : null;
 }
 
 /** The store's brand with its product count; null when it sells nothing as its own or doesn't promote it */
