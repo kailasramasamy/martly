@@ -168,7 +168,6 @@ export interface WebProductBrand {
   name: string;
   imageUrl: string | null;
   themeColor: string | null;
-  themeColorSecondary: string | null;
   /** The brand's store: /brands/{slug}, or /{town}/{store}/brand for the store's own brand */
   href: string;
 }

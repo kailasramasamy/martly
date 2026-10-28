@@ -8,7 +8,7 @@ import { Breadcrumbs, ShopLayout } from "~/components/shop-layout"
 import { AddButton, PriceLine, usePack } from "~/components/product-card"
 import { Shelf } from "~/components/shelf"
 import { Icon } from "~/components/icons"
-import { BrandChip, BrandStoreBanner } from "~/components/brand-promo"
+import { BrandChip } from "~/components/brand-promo"
 
 export const Route = createFileRoute("/p/$slug")({
   loader: async ({ params }) => {
@@ -120,7 +120,6 @@ function ProductPage() {
                 ))}
               </dl>
             )}
-            {brand && <BrandStoreBanner brand={brand} />}
           </div>
         </div>
       </div>

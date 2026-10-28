@@ -78,7 +78,7 @@ const productSelect = (storeId: string) => ({
   ...cardSelect(storeId),
   description: true, images: true, foodType: true, ingredients: true, shelfLifeDays: true,
   storageInstructions: true, manufacturerName: true, countryOfOrigin: true, subcategoryId: true, brandId: true,
-  brand: { select: { name: true, slug: true, imageUrl: true, themeColor: true, themeColorSecondary: true } },
+  brand: { select: { name: true, slug: true, imageUrl: true, themeColor: true } },
   subcategory: { select: { name: true, slug: true, category: { select: { name: true, slug: true, department: { select: { name: true, slug: true } } } } } },
 }) satisfies Prisma.ProductSelect;
 
@@ -115,7 +115,7 @@ async function productBrand(prisma: PrismaClient, store: WebShopStore, p: Produc
     return { ...brand, href: `/brands/${slug}` };
   }
   const own = await storeBrandOf(prisma, store.id, p);
-  return own && { name: own.name, imageUrl: own.imageUrl, themeColor: own.themeColor, themeColorSecondary: null, href: `/${store.town.slug}/${store.slug}/brand` };
+  return own && { name: own.name, imageUrl: own.imageUrl, themeColor: own.themeColor, href: `/${store.town.slug}/${store.slug}/brand` };
 }
 
 export async function productPage(prisma: PrismaClient, store: WebShopStore, slug: string): Promise<WebProductPage | null> {
