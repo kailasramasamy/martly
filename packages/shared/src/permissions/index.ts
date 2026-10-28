@@ -76,7 +76,8 @@ export const RESOURCE_PERMISSIONS = {
   "catalog-drafts": P.CATALOG_PRODUCTS,
   collections: read("STAFF", P.CATALOG_COLLECTIONS),
   recipes: read("STAFF", P.CATALOG_COLLECTIONS),
-  "home-layout": read("STAFF", P.CATALOG_COLLECTIONS),
+  // The layout editor has no view-only mode and every call needs the collections duty, so the menu does too
+  "home-layout": P.CATALOG_COLLECTIONS,
 
   // Marketing
   banners: P.MARKETING_MANAGE,

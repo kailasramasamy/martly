@@ -1,0 +1,30 @@
+# What `railway up` leaves out. Every service gets the same upload and its Dockerfile
+# (Dockerfile = api, Dockerfile.admin, Dockerfile.web) copies only what it builds, so
+# send just those inputs: root config, patches, packages/shared, apps/api, apps/admin,
+# apps/web, and the mobile and rider package.json files that pnpm's lockfile expects.
+
+# Never shipped (also in .gitignore, repeated so a dirty tree uploads clean)
+node_modules/
+dist/
+.turbo/
+.expo/
+generated/
+.env
+.env.*
+!.env.example
+.DS_Store
+tmp/
+
+# Not built by any service
+.claude/
+branding/
+docs/
+logo/
+marketing/
+scripts/
+
+# The apps Railway doesn't build: only their package.json
+apps/mobile/*
+!apps/mobile/package.json
+apps/rider/*
+!apps/rider/package.json
