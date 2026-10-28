@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Animated, Easing, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Animated, Easing, Image, Platform, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { colors, fonts } from "../../constants/theme";
@@ -76,7 +76,8 @@ export function WalkDock({ addedHere, basket, next, onBag, onNext, onCart, forLi
   const shownTotal = useCountUp(Math.round(totalAmount));
   const { scale, chip, gain } = useBagBump(Math.round(totalAmount));
   return (
-    <View style={[styles.dock, { paddingBottom: Math.max(10, insets.bottom - 14) }]}>
+    // Android's navigation bar scrim washes out anything inside it, so the buttons clear it there
+    <View style={[styles.dock, { paddingBottom: Platform.OS === "android" ? insets.bottom + 8 : Math.max(10, insets.bottom - 14) }]}>
       <TouchableOpacity style={styles.bagRow} onPress={onCart} activeOpacity={0.7} accessibilityRole="button" accessibilityLabel={forList ? t.backToList : t.goToBag}>
         <Basket photos={basket} scale={scale} />
         <Text style={styles.bagText}>{(forList ? t.onList : t.bag)(itemCount, shownTotal.toLocaleString("en-IN"))}</Text>

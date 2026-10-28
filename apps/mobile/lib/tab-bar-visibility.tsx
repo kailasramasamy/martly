@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useMemo, useRef, useState, type ReactNode } from "react";
 import {
-  Animated, LayoutAnimation, StyleSheet,
+  Animated, LayoutAnimation, Platform, StyleSheet,
   type LayoutChangeEvent, type NativeScrollEvent, type NativeSyntheticEvent, type StyleProp, type ViewStyle,
 } from "react-native";
 import { useFocusEffect } from "expo-router";
@@ -25,8 +25,9 @@ const TabBarVisibilityContext = createContext<TabBarVisibility | null>(null);
 /** Height of the bottom tab bar, including the home-indicator inset */
 export function useTabBarHeight() {
   const insets = useSafeAreaInsets();
-  // Labels sit partly inside the home-indicator inset, as in other quick-commerce apps
-  const bottomPadding = Math.max(insets.bottom - 8, 10);
+  // On iOS labels sit partly inside the home-indicator inset, as in other quick-commerce apps. Android draws a
+  // translucent scrim over its navigation bar that washes out anything inside it, so labels stay clear of it there.
+  const bottomPadding = Platform.OS === "android" ? insets.bottom + 6 : Math.max(insets.bottom - 8, 10);
   return { height: 52 + bottomPadding, bottomPadding };
 }
 
