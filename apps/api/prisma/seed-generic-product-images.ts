@@ -1,10 +1,11 @@
 /**
  * Upload generated generic-product images to S3 and set imageUrl/images on the matching products.
  * Images come from scripts/taxonomy-images/generate.ts --level product (out/product/<slug>.webp),
- * where slug is derived from the product name. Matches master products tagged "generic" only.
+ * where slug is derived from the product name. Matches master products tagged "generic", plus the fresh produce
+ * named in data/produce-image-subjects.json, whose scraped variant photos are cleared so the gallery shows one image.
  * Filenames carry a content hash so a regenerated image never hits a stale cache. Idempotent.
  *
- * Run: cd apps/api && npx tsx prisma/seed-generic-product-images.ts
+ * Run: cd apps/api && npx tsx prisma/seed-generic-product-images.ts [--produce]   (--produce: only the produce list)
  * Prod: prefix with DATABASE_URL=<prod url>
  */
 
@@ -15,9 +16,11 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { parseArgs } from "node:util";
 
 dotenv.config();
 
+const PRODUCE = join(dirname(fileURLToPath(import.meta.url)), "data/produce-image-subjects.json");
 const OUT = join(dirname(fileURLToPath(import.meta.url)), "../scripts/taxonomy-images/out/product");
 const BUCKET = process.env.S3_BUCKET!;
 const BASE_URL = process.env.MEDIA_PUBLIC_BASE_URL!;
@@ -51,8 +54,11 @@ async function upload(slug: string): Promise<string> {
 
 async function main() {
   console.log(`Seeding generic product images into ${new URL(process.env.DATABASE_URL!).host}`);
+  const produce = Object.keys(JSON.parse(readFileSync(PRODUCE, "utf8")));
   const products = await prisma.product.findMany({
-    where: { tags: { has: "generic" }, organizationId: null },
+    where: parseArgs({ options: { produce: { type: "boolean", default: false } } }).values.produce
+      ? { organizationId: null, name: { in: produce } }
+      : { organizationId: null, OR: [{ tags: { has: "generic" } }, { name: { in: produce } }] },
     select: { id: true, name: true },
   });
   const missing = products.filter((p) => !existsSync(join(OUT, `${slugify(p.name)}.webp`))).map((p) => p.name);
@@ -62,7 +68,10 @@ async function main() {
   for (let i = 0; i < ready.length; i += CONCURRENCY) {
     await Promise.all(ready.slice(i, i + CONCURRENCY).map(async (p) => {
       const url = await upload(slugify(p.name));
-      await prisma.product.update({ where: { id: p.id }, data: { imageUrl: url, images: [url] } });
+      await prisma.product.update({
+        where: { id: p.id },
+        data: { imageUrl: url, images: [url], variants: { updateMany: { where: {}, data: { imageUrl: null } } } },
+      });
       done++;
     }));
   }

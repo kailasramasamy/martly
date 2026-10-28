@@ -1,6 +1,6 @@
 /**
  * Generate transparent cut-out images for departments/categories, and for generic products (--level product,
- * subjects from prisma/data/generic-catalog, slug = product name).
+ * subjects from prisma/data/generic-catalog + produce-image-subjects.json, slug = product name).
  * Run: cd apps/api && npx tsx scripts/taxonomy-images/generate.ts --level department [--only a,b] [--quality medium|high] [--force]
  * Output: scripts/taxonomy-images/out/<level>/<slug>.png (1024 master) + .webp (512) + out/contact.html
  */
@@ -23,6 +23,7 @@ const CONCURRENCY = 4;
 const MAX_ATTEMPTS = 3;
 
 const CATALOG = join(ROOT, "../../prisma/data/generic-catalog");
+const PRODUCE = join(ROOT, "../../prisma/data/produce-image-subjects.json");
 
 const style = (level: string) => `Professional ${level === "product" ? "product" : "category"} image for an Indian grocery delivery app.
 A real photograph, not a 3D render or illustration: natural textures and true-to-life colours, as shot by a professional food and product photographer.
@@ -103,7 +104,11 @@ function productSubjects(): Record<string, string> {
   const groups: { items: { name: string; subject: string }[] }[] = readdirSync(CATALOG)
     .filter((f) => f.endsWith(".json"))
     .flatMap((f) => JSON.parse(readFileSync(join(CATALOG, f), "utf8")));
-  return Object.fromEntries(groups.flatMap((g) => g.items.map((i) => [slug(i.name), i.subject])));
+  const produce: Record<string, string> = JSON.parse(readFileSync(PRODUCE, "utf8"));
+  return Object.fromEntries([
+    ...groups.flatMap((g) => g.items.map((i) => [slug(i.name), i.subject])),
+    ...Object.entries(produce).map(([name, subject]) => [slug(name), subject]),
+  ]);
 }
 
 function writeContactSheet() {
