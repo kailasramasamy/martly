@@ -57,7 +57,7 @@ export default function ProductDetailScreen() {
   const toast = useToast();
   const t = useStrings("catalog");
 
-  const { getLocalizedName, getLocalizedSubtitle } = useLanguage();
+  const { language, getLocalizedName, getLocalizedSubtitle } = useLanguage();
   const navigation = useNavigation();
   const router = useRouter();
   const storeId = paramStoreId || selectedStore?.id;
@@ -310,7 +310,11 @@ export default function ProductDetailScreen() {
     );
   }
 
-  const nutritionalInfo = product.nutritionalInfo;
+  const localized = language ? product.translations?.[language] : undefined;
+  const description = localized?.description || product.description;
+  const ingredients = localized?.ingredients || product.ingredients;
+  const storageInstructions = localized?.storageInstructions || product.storageInstructions;
+  const nutritionalInfo = localized?.nutritionalInfo ?? product.nutritionalInfo;
   const nutritionalEntries = nutritionalInfo ? Object.entries(nutritionalInfo) : [];
 
   return (
@@ -445,13 +449,13 @@ export default function ProductDetailScreen() {
           )}
 
           {/* Description */}
-          {product.description && (
+          {description && (
             <View style={styles.section}>
               <Text style={styles.sectionTitle}>{t.product.description}</Text>
               <Text style={styles.descText} numberOfLines={descExpanded ? undefined : 3}>
-                {product.description}
+                {description}
               </Text>
-              {product.description.length > 120 && (
+              {description.length > 120 && (
                 <TouchableOpacity onPress={() => setDescExpanded(!descExpanded)}>
                   <Text style={styles.readMore}>{descExpanded ? t.product.showLess : t.product.readMore}</Text>
                 </TouchableOpacity>
@@ -527,10 +531,10 @@ export default function ProductDetailScreen() {
           )}
 
           {/* Ingredients */}
-          {product.ingredients && (
+          {ingredients && (
             <View style={styles.section}>
               <Text style={styles.sectionTitle}>{t.product.ingredients}</Text>
-              <Text style={styles.bodyText}>{product.ingredients}</Text>
+              <Text style={styles.bodyText}>{ingredients}</Text>
             </View>
           )}
 
@@ -545,10 +549,10 @@ export default function ProductDetailScreen() {
           )}
 
           {/* Storage Instructions */}
-          {product.storageInstructions && (
+          {storageInstructions && (
             <View style={styles.section}>
               <Text style={styles.sectionTitle}>{t.product.storage}</Text>
-              <Text style={styles.bodyText}>{product.storageInstructions}</Text>
+              <Text style={styles.bodyText}>{storageInstructions}</Text>
             </View>
           )}
 

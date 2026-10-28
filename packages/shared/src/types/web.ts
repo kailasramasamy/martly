@@ -172,13 +172,27 @@ export interface WebProductBrand {
   href: string;
 }
 
+export interface WebInfoRow { label: string; value: string }
+
+/** The product page's sections below the buy box, laid out like a marketplace listing */
+export interface WebProductInfo {
+  /** "About this item": the description as short points */
+  highlights: string[];
+  /** "Product information" table: brand, diet, packs, shelf life, origin… */
+  details: WebInfoRow[];
+  /** Nutrition facts and their basis ("100 g (typical values)"); null when the product has none */
+  nutrition: { per: string | null; rows: WebInfoRow[] } | null;
+  /** "Important information": ingredients, directions, storage, allergens, safety */
+  important: WebInfoRow[];
+}
+
 export interface WebProductPage {
   store: WebShopStore;
   product: Omit<WebProductCard, "packs"> & {
     description: string | null;
     images: string[];
     foodType: string | null;
-    details: { label: string; value: string }[];
+    info: WebProductInfo;
     /** Department → category → subcategory, for breadcrumbs */
     trail: { name: string; path: string }[];
   };

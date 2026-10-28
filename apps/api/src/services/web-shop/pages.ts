@@ -7,6 +7,7 @@ import { liveStoreWhere, resolveStore } from "../store-resolve.js";
 import type { WebShopQuery } from "@martly/shared/schemas";
 import { cardSelect, productCards, soldAt, toCard } from "./cards.js";
 import { filteredList } from "./category-filters.js";
+import { productInfo, productInfoSelect } from "./product-info.js";
 
 const SHELF_SIZE = 10;
 const PAGE_SIZE = 24;
@@ -76,24 +77,13 @@ export async function categoryPage(prisma: PrismaClient, store: WebShopStore, sl
 
 const productSelect = (storeId: string) => ({
   ...cardSelect(storeId),
-  description: true, images: true, foodType: true, ingredients: true, shelfLifeDays: true,
-  storageInstructions: true, manufacturerName: true, countryOfOrigin: true, subcategoryId: true, brandId: true,
+  ...productInfoSelect,
+  images: true, subcategoryId: true, brandId: true,
   brand: { select: { name: true, slug: true, imageUrl: true, themeColor: true } },
   subcategory: { select: { name: true, slug: true, category: { select: { name: true, slug: true, department: { select: { name: true, slug: true } } } } } },
 }) satisfies Prisma.ProductSelect;
 
 type ProductRow = Prisma.ProductGetPayload<{ select: ReturnType<typeof productSelect> }>;
-
-function details(p: ProductRow) {
-  const rows: [string, string | null][] = [
-    ["Ingredients", p.ingredients],
-    ["Shelf life", p.shelfLifeDays ? `${p.shelfLifeDays} days` : null],
-    ["Storage", p.storageInstructions],
-    ["Manufacturer", p.manufacturerName],
-    ["Country of origin", p.countryOfOrigin],
-  ];
-  return rows.flatMap(([label, value]) => (value ? [{ label, value }] : []));
-}
 
 function trail(p: ProductRow) {
   const sub = p.subcategory;
@@ -137,7 +127,10 @@ export async function productPage(prisma: PrismaClient, store: WebShopStore, slu
   const images = [...new Set((own.length ? own : [card.imageUrl, ...p.images]).filter((u): u is string => Boolean(u)))];
   return {
     store,
-    product: { ...card, description: p.description, images, foodType: p.foodType, details: details(p), trail: trail(p) },
+    product: {
+      ...card, description: p.description, images, foodType: p.foodType, trail: trail(p),
+      info: productInfo(p, { brand: brand?.name ?? null, category: p.subcategory?.name ?? null, packs: packs.map((pk) => pk.name) }),
+    },
     packs,
     brand,
     related,

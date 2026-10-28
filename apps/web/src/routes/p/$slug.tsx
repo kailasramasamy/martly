@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { createFileRoute, notFound } from "@tanstack/react-router"
-import type { WebPack, WebProductPage } from "@martly/shared/types"
+import type { WebInfoRow, WebPack, WebProductInfo, WebProductPage } from "@martly/shared/types"
 import { getProduct } from "~/lib/api"
 import { rupees } from "~/lib/format"
 import { pageHead, productJsonLd } from "~/lib/seo"
@@ -96,6 +96,71 @@ function BuyBox({ page }: { page: WebProductPage }) {
   )
 }
 
+function AboutItem({ points }: { points: string[] }) {
+  if (points.length === 0) return null
+  return (
+    <section className="mt-8 border-t border-line pt-6">
+      <h2 className="text-lg font-extrabold tracking-tight">About this item</h2>
+      <ul className="mt-3 list-disc space-y-2 pl-5 text-[15px] leading-relaxed text-slate-700 marker:text-muted">
+        {points.map((point) => <li key={point}>{point}</li>)}
+      </ul>
+    </section>
+  )
+}
+
+function InfoTable({ title, caption, rows }: { title: string; caption?: string | null; rows: WebInfoRow[] }) {
+  return (
+    <section className="min-w-0">
+      <h2 className="text-lg font-extrabold tracking-tight">{title}</h2>
+      {caption && <p className="mt-1 text-sm text-muted">Per {caption}</p>}
+      <div className="mt-3 overflow-hidden rounded-xl border border-line">
+        <table className="w-full text-sm">
+          <tbody className="divide-y divide-line">
+            {rows.map((r) => (
+              <tr key={r.label}>
+                <th scope="row" className="w-2/5 bg-surface px-4 py-2.5 text-left align-top font-bold text-slate-600">{r.label}</th>
+                <td className="px-4 py-2.5 align-top">{r.value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )
+}
+
+function ImportantInfo({ rows }: { rows: WebInfoRow[] }) {
+  const blocks = [
+    ...rows,
+    { label: "Legal disclaimer", value: "Product details and nutrition values are for reference and may vary by pack. Always read the label on the pack before use." },
+  ]
+  return (
+    <section className="mt-10">
+      <h2 className="text-lg font-extrabold tracking-tight">Important information</h2>
+      <div className="mt-3 grid gap-x-10 gap-y-5 sm:grid-cols-2 lg:grid-cols-3">
+        {blocks.map((b) => (
+          <div key={b.label}>
+            <h3 className="text-sm font-extrabold">{b.label}</h3>
+            <p className="mt-1 text-sm leading-relaxed text-slate-700">{b.value}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+function ProductInformation({ info }: { info: WebProductInfo }) {
+  return (
+    <div className="mx-auto mt-12 max-w-7xl border-t border-line px-4 pt-8 sm:px-6">
+      <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
+        {info.details.length > 0 && <InfoTable title="Product information" rows={info.details} />}
+        {info.nutrition && <InfoTable title="Nutrition facts" caption={info.nutrition.per} rows={info.nutrition.rows} />}
+      </div>
+      <ImportantInfo rows={info.important} />
+    </div>
+  )
+}
+
 function ProductPage() {
   const page = Route.useLoaderData()
   const { product, store, related, brand } = page
@@ -109,20 +174,11 @@ function ProductPage() {
             {brand && <BrandChip brand={brand} />}
             <h1 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight sm:text-[34px]">{product.name}</h1>
             <BuyBox page={page} />
-            {product.description && <p className="mt-8 whitespace-pre-line text-[15px] leading-relaxed text-slate-700">{product.description}</p>}
-            {product.details.length > 0 && (
-              <dl className="mt-6 divide-y divide-line rounded-2xl border border-line">
-                {product.details.map((d) => (
-                  <div key={d.label} className="grid grid-cols-[130px_1fr] gap-3 px-4 py-3 text-sm">
-                    <dt className="font-bold text-slate-600">{d.label}</dt>
-                    <dd>{d.value}</dd>
-                  </div>
-                ))}
-              </dl>
-            )}
+            <AboutItem points={product.info.highlights} />
           </div>
         </div>
       </div>
+      <ProductInformation info={product.info} />
       <Shelf id="related" title="You may also like" products={related} />
     </ShopLayout>
   )

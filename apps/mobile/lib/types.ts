@@ -123,6 +123,17 @@ export interface Translations {
   [lang: string]: { name?: string; description?: string };
 }
 
+/** Product text per language; the detail fields are filled for generic products */
+export interface ProductTranslations {
+  [lang: string]: {
+    name?: string;
+    description?: string;
+    ingredients?: string;
+    storageInstructions?: string;
+    nutritionalInfo?: Record<string, string>;
+  };
+}
+
 export interface CollectionTranslations {
   [lang: string]: { title?: string; subtitle?: string };
 }
@@ -152,7 +163,7 @@ export interface Product {
   // Top seller at this store over the last 30 days (search and listing responses)
   isBestseller?: boolean;
   reviewCount?: number;
-  translations?: Translations | null;
+  translations?: ProductTranslations | null;
 }
 
 export interface UserAddress {
