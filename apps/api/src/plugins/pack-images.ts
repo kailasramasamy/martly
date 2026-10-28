@@ -7,7 +7,13 @@ const INTERVAL_MS = 5 * 60 * 1000;
 /** Stores' own pack images: rendered in the background, swapped into every response that lists store products */
 async function packImagesPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
-  const refresh = () => refreshPackImages(app.prisma).catch((err: unknown) => app.log.error(err, "Pack image refresh failed"));
+  // A first render of a new design can outlast the interval; the next refresh waits for it instead of overlapping
+  let running: Promise<void> | undefined;
+  const refresh = () => {
+    running ??= refreshPackImages(app.prisma)
+      .catch((err: unknown) => app.log.error(err, "Pack image refresh failed"))
+      .finally(() => (running = undefined));
+  };
 
   app.addHook("preSerialization", async (_request, _reply, payload) => {
     applyPackImages(payload);

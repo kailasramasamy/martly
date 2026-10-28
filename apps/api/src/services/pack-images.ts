@@ -37,6 +37,8 @@ async function ensureRender(design: Design, product: PackProduct, variant: { id:
 async function loadInputs(prisma: PrismaClient) {
   const designs = await prisma.packDesign.findMany({
     where: { isActive: true },
+    // Oldest stores first: their packs are drawn already, so they go live in seconds after a restart
+    orderBy: { createdAt: "asc" },
     select: { id: true, storeId: true, template: true, frontArtUrl: true, backArtUrl: true, zones: true, subcategoryIds: true, isDefault: true, updatedAt: true },
   });
   if (!designs.length) return { designs, products: [] };
@@ -50,13 +52,16 @@ async function loadInputs(prisma: PrismaClient) {
   return { designs, products: products as PackProduct[] };
 }
 
-/** Renders any pack not drawn yet (new design, product or text change) and swaps in the new lookup */
+/**
+ * Renders any pack not drawn yet (new design, product or text change). Each store's lookup is swapped in as soon as
+ * that store is done, so a new store's first renders never hold back the packs of stores already drawn.
+ */
 export async function refreshPackImages(prisma: PrismaClient) {
   const { designs, products } = await loadInputs(prisma);
   const byStore = new Map<string, Design[]>();
   for (const d of designs) byStore.set(d.storeId, [...(byStore.get(d.storeId) ?? []), d]);
+  packs = new Map([...packs].filter(([storeId]) => byStore.has(storeId)));
 
-  const next = new Map<string, Map<string, Pack>>();
   for (const [storeId, storeDesigns] of byStore) {
     const storePacks = new Map<string, Pack>();
     for (const product of products) {
@@ -64,9 +69,8 @@ export async function refreshPackImages(prisma: PrismaClient) {
       if (!design) continue;
       for (const variant of product.variants) storePacks.set(variant.id, await ensureRender(design, product, variant));
     }
-    next.set(storeId, storePacks);
+    packs = new Map(packs).set(storeId, storePacks);
   }
-  packs = next;
 }
 
 /** The store's own pack for one of its pack sizes, when it has one */
