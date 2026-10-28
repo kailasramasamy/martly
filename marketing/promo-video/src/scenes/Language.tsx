@@ -8,8 +8,8 @@ import { useCopy } from "../copy";
 import { colors } from "../theme";
 
 const PHONES = [
-  { src: "screens/01-home.png", label: "English", tilt: -5 },
-  { src: "screens/08-tamil.png", label: "தமிழ்", tilt: 5 },
+  { src: "screens/v2/11-shop-home.png", label: "English", tilt: -5 },
+  { src: "screens/v2/19-shop-home-tamil.png", label: "தமிழ்", tilt: 5 },
 ];
 
 const Phone = ({ src, label, tilt, index }: (typeof PHONES)[number] & { index: number }) => {

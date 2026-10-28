@@ -5,31 +5,39 @@ import { AbsoluteFill, Audio, interpolate, staticFile } from "remotion";
 import { CopyProvider, type Lang } from "./copy";
 import { Catalog } from "./scenes/Catalog";
 import { Cta } from "./scenes/Cta";
-import { Grow } from "./scenes/Grow";
+import { Delivery } from "./scenes/Delivery";
 import { Hook } from "./scenes/Hook";
-import { Language } from "./scenes/Language";
 import { Manage } from "./scenes/Manage";
+import { Offers } from "./scenes/Offers";
+import { Onboard } from "./scenes/Onboard";
 import { Online } from "./scenes/Online";
 import { Orders } from "./scenes/Orders";
 import { OwnApp } from "./scenes/OwnApp";
+import { Packs } from "./scenes/Packs";
 import { Promos } from "./scenes/Promos";
 import { Shop } from "./scenes/Shop";
 import { Snap } from "./scenes/Snap";
+import { Specials } from "./scenes/Specials";
+import { Voice } from "./scenes/Voice";
 import { FPS, TRANSITION_FRAMES } from "./theme";
 
 export const SCENES = [
   { Component: Hook, frames: 130 },
   { Component: Online, frames: 150 },
-  { Component: OwnApp, frames: 120 },
   { Component: Catalog, frames: 150 },
+  { Component: Onboard, frames: 230 },
   { Component: Snap, frames: 150 },
-  { Component: Shop, frames: 250 },
-  { Component: Language, frames: 110 },
-  { Component: Manage, frames: 180 },
+  { Component: Packs, frames: 150 },
+  { Component: Specials, frames: 155 },
+  { Component: Shop, frames: 290 },
+  { Component: Voice, frames: 290 },
+  { Component: Manage, frames: 210 },
   { Component: Orders, frames: 120 },
+  { Component: Delivery, frames: 190 },
+  { Component: Offers, frames: 170 },
   { Component: Promos, frames: 210 },
-  { Component: Grow, frames: 140 },
-  { Component: Cta, frames: 180 },
+  { Component: OwnApp, frames: 120 },
+  { Component: Cta, frames: 210 },
 ];
 
 export const PROMO_FRAMES =
