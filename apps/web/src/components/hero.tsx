@@ -16,10 +16,10 @@ export function Backdrop() {
 function PhoneStack() {
   return (
     <div className="relative mx-auto h-[500px] w-full max-w-[500px] sm:h-[580px]">
-      <PhoneFrame src="/screenshots/categories.webp" alt="Aisles in the Martly app" className="absolute left-0 top-20 hidden w-[210px] -rotate-6 opacity-90 sm:block" />
-      <PhoneFrame src="/screenshots/order-tracking.webp" alt="Order tracking in the Martly app" className="absolute right-0 top-20 hidden w-[210px] rotate-6 opacity-90 sm:block" />
+      <PhoneFrame src="/screenshots/owners/orders.webp" alt="Orders for a store in the Martly app" className="absolute left-0 top-20 hidden w-[210px] -rotate-6 opacity-90 sm:block" />
+      <PhoneFrame src="/screenshots/owners/shop-home.webp" alt="A store's Home in the Martly app" className="absolute right-0 top-20 hidden w-[210px] rotate-6 opacity-90 sm:block" />
       <div className="phone-float absolute inset-x-0 top-0 flex justify-center">
-        <PhoneFrame src="/screenshots/home.webp" alt="The Martly app home screen" className="w-[240px] sm:w-[250px]" eager />
+        <PhoneFrame src="/screenshots/owners/today.webp" alt="The store owner's Today screen in the Martly app" className="w-[240px] sm:w-[250px]" eager />
       </div>
     </div>
   )
@@ -47,6 +47,9 @@ export function OwnersHero() {
           </p>
           <a href={LINKS.contact} className="inline-flex h-[52px] items-center gap-2 rounded-[14px] bg-amber px-7 text-base font-extrabold text-amber-ink hover:bg-amber-300">
             Talk to us <Icon name="arrow" size={18} />
+          </a>
+          <a href="/for-stores/pricing" className="ml-3 inline-flex h-[52px] items-center rounded-[14px] px-5 text-base font-extrabold text-white ring-1 ring-white/25 hover:bg-white/10">
+            See pricing
           </a>
         </div>
         <PhoneStack />

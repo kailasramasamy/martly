@@ -28,13 +28,13 @@ function SpotlightRow({ item, flip }: { item: Spotlight; flip: boolean }) {
   )
 }
 
-/** App screenshots beside what each screen does, alternating sides */
+/** Owner app screenshots beside what each screen does, alternating sides */
 export function Spotlights() {
   return (
     <section id="app" className="scroll-mt-20 pt-24 sm:pt-28">
       <div className="mx-auto max-w-2xl px-4 text-center">
-        <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand">The Martly app</p>
-        <h2 className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Everything you need from your local store.</h2>
+        <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand">For you, the owner</p>
+        <h2 className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Run your store from your phone.</h2>
       </div>
       <div className="mx-auto mt-16 flex max-w-6xl flex-col gap-24 px-4 sm:px-6">
         {spotlights.map((item, i) => <SpotlightRow key={item.title} item={item} flip={i % 2 === 1} />)}

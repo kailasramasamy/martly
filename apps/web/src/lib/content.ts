@@ -6,23 +6,25 @@ export interface Fact {
   body: string
 }
 
+/** The store-owner pitch on /for-stores; screenshots live in public/screenshots/owners */
 export const facts: Fact[] = [
-  { icon: "store", title: "Packed by your shopkeeper", body: "The store you know, not a warehouse" },
-  { icon: "wallet", title: "UPI, cards or cash", body: "Pay online or when it arrives" },
-  { icon: "bike", title: "Delivery or pickup", body: "Get it home, or collect it yourself" },
-  { icon: "language", title: "English or தமிழ்", body: "Shop in the language you like" },
+  { icon: "grid", title: "20,000 products ready", body: "Tick what you stock, no typing" },
+  { icon: "language", title: "English and தமிழ்", body: "For you and your customers" },
+  { icon: "wallet", title: "UPI, cards or cash", body: "Weekly payouts to your bank" },
+  { icon: "bike", title: "Your customers, your staff", body: "You pack and deliver, as today" },
 ]
 
 export interface Step {
   icon: IconName
   title: string
   body: string
+  image: string
 }
 
 export const steps: Step[] = [
-  { icon: "pin", title: "Choose your town", body: "See the stores in your town that deliver to your door." },
-  { icon: "basket", title: "Fill your basket", body: "Browse the store's aisles, search by voice, or reorder what you bought last time." },
-  { icon: "bike", title: "Delivered or picked up", body: "The store packs your order and brings it home, or keeps it ready for you to collect." },
+  { icon: "check", title: "Tick what you stock", body: "Go through the catalog by department and brand. Anything you don't carry is hidden.", image: "/screenshots/owners/stock-check.webp" },
+  { icon: "tag", title: "Check your prices", body: "Keep the suggested price or change it. Best sellers come first, so you're ready in minutes.", image: "/screenshots/owners/price-review.webp" },
+  { icon: "store", title: "Start taking orders", body: "Your shop goes live on the Martly app and martlyshop.in, with its own address.", image: "/screenshots/owners/orders.webp" },
 ]
 
 export interface Spotlight {
@@ -34,40 +36,68 @@ export interface Spotlight {
   alt: string
 }
 
-/** Feature rows beside app screenshots; screenshots live in public/screenshots */
 export const spotlights: Spotlight[] = [
   {
-    kicker: "Home",
-    title: "Your weekly shop, already half done.",
-    body: "Martly remembers what you buy. Your regulars come back to the top, so the monthly list takes a few taps.",
-    chips: ["Buy again in one tap", "Offers from your store", "Search by voice", "Festival specials"],
-    image: "/screenshots/home.webp",
-    alt: "Martly app home screen with Buy Again",
+    kicker: "Today",
+    title: "Your whole shop on one screen.",
+    body: "Open the app and see what needs you first: orders to pack, reviews to answer, and the money coming to your bank.",
+    chips: ["What needs attention", "Today's revenue", "Next payout", "Live order queue"],
+    image: "/screenshots/owners/today.webp",
+    alt: "The Today screen in the Martly app",
   },
   {
-    kicker: "Choose",
-    title: "Every pack size, side by side.",
-    body: "One product, every size the store stocks. Compare 50 g against 300 g and add the one that suits you.",
-    chips: ["All sizes in one sheet", "Price for each size", "Real product photos", "Save to your wishlist"],
-    image: "/screenshots/sizes.webp",
-    alt: "Choosing a pack size in the Martly app",
+    kicker: "Orders",
+    title: "Every order, one list.",
+    body: "New, confirmed, packing and ready. See who ordered, how they paid, and whether it's delivery or pickup.",
+    chips: ["Paid or cash on delivery", "Delivery or pickup", "Search by order or customer", "Order alerts on your phone"],
+    image: "/screenshots/owners/orders.webp",
+    alt: "The Orders screen in the Martly app",
   },
   {
-    kicker: "Checkout",
-    title: "Pay how you like. Get it how you like.",
-    body: "Pick home delivery or store pickup, then pay by UPI, card or cash on delivery. Fees are clear before you pay.",
-    chips: ["Delivery or store pickup", "UPI and cards", "Cash on delivery", "Coupons and points"],
-    image: "/screenshots/checkout.webp",
-    alt: "Martly checkout with delivery and payment options",
+    kicker: "Inventory",
+    title: "Stock and prices, always right.",
+    body: "Mark items out of stock, change a price, or add your own products. Low stock shows up before customers notice.",
+    chips: ["Low and out of stock", "Change prices any time", "Add your own products", "Sizes and variants"],
+    image: "/screenshots/owners/inventory.webp",
+    alt: "The Inventory screen in the Martly app",
   },
   {
-    kicker: "In your language",
-    title: "Shop in English or தமிழ்.",
-    body: "Menus, aisles and product names switch to Tamil in a tap, so everyone at home can order.",
-    chips: ["Full Tamil app", "Tamil product names", "Switch any time", "Speak your list in Tamil"],
-    image: "/screenshots/tamil.webp",
-    alt: "The Martly app in Tamil",
+    kicker: "Offers",
+    title: "Run offers in one tap.",
+    body: "Buy 1 Get 1, a discount, or a member price. Pick the products and the dates, and the offer ends by itself.",
+    chips: ["Buy 1 Get 1 and more", "Discounts on products", "Member prices", "Coupons for the whole order"],
+    image: "/screenshots/owners/offers.webp",
+    alt: "The Offers screen in the Martly app",
   },
+  {
+    kicker: "Delivery",
+    title: "Slots, riders and trips planned.",
+    body: "Customers pick express or a time slot. You group orders into trips and see where each rider is.",
+    chips: ["Express and time slots", "Trips planned for you", "Rider app with live tracking", "Store pickup too"],
+    image: "/screenshots/owners/delivery.webp",
+    alt: "The Delivery screen in the Martly app",
+  },
+  {
+    kicker: "Storefront",
+    title: "Martly shows what to fix next.",
+    body: "Your storefront gets a score. Add a logo, a shop photo or your best picks, and watch more customers stay to shop.",
+    chips: ["Storefront score", "Step-by-step tips", "Shop photo and logo", "Owner's picks"],
+    image: "/screenshots/owners/storefront-score.webp",
+    alt: "Storefront health in the Martly app",
+  },
+]
+
+export interface Screen {
+  title: string
+  image: string
+}
+
+export const customerScreens: Screen[] = [
+  { title: "Your shop's own Home", image: "/screenshots/owners/shop-home.webp" },
+  { title: "Say the list, get a cart", image: "/screenshots/owners/shop-speak-list.webp" },
+  { title: "Express or a time slot", image: "/screenshots/owners/shop-checkout-slots.webp" },
+  { title: "Live order tracking", image: "/screenshots/owners/shop-tracking.webp" },
+  { title: "Fully in Tamil", image: "/screenshots/owners/shop-tamil.webp" },
 ]
 
 export interface Faq {
@@ -86,3 +116,12 @@ export function faqs(townNames: string[]): Faq[] {
     { q: "How do I put my store on Martly?", a: "Talk to us and we set up your shop, catalogue and prices, so your customers can order from you online." },
   ]
 }
+
+export const ownerFaqs: Faq[] = [
+  { q: "Who delivers the orders?", a: "You do, with your own staff, as you do today. Martly plans the trips and your riders use the Martly rider app. Customers can also pick up from your shop." },
+  { q: "What do I pay per order?", a: "2% on cash on delivery and wallet orders and 4% on online payments, including payment gateway charges and GST. Plans start free. See the pricing page for details." },
+  { q: "How do I get paid for online orders?", a: "Online payments are settled to your bank account every week, after the order fee." },
+  { q: "Do I need my own app?", a: "No. Your shop gets its own page on the Martly app and on martlyshop.in. If you'd like an app under your own shop's name, we can build one for you as an add-on." },
+  { q: "Can I sell my own packs and local products?", a: "Yes. Popular brands are listed free. Your own brand and local products cost \u20B9100 each to list, and your first 25 are included with onboarding." },
+  { q: "How do I get started?", a: "Talk to us. We set up your shop, then you tick what you stock and check prices in the app. You start taking orders as soon as that's done." },
+]

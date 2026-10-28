@@ -10,6 +10,7 @@ export const Route = createFileRoute("/sitemap.xml")({
         const entries: [string, string?][] = [
           ["/"],
           ["/for-stores"],
+          ["/for-stores/pricing"],
           ...home.towns.flatMap((t): [string][] => [[`/${t.slug}`], ...t.stores.map((s): [string] => [`/${t.slug}/${s.slug}`])]),
           ...shop.departments.map((d): [string] => [`/c/${d}`]),
           ...shop.categories.map((c): [string] => [`/c/${c.department}/${c.slug}`]),

@@ -1,10 +1,10 @@
 import type { Faq } from "~/lib/content"
 import { Icon } from "./icons"
 
-export function FaqSection({ items }: { items: Faq[] }) {
+export function FaqSection({ items, title = "Questions people ask" }: { items: Faq[]; title?: string }) {
   return (
     <section aria-labelledby="faq-title" className="mx-auto max-w-3xl px-4 py-24 sm:px-6 sm:py-28">
-      <h2 id="faq-title" className="mb-4 text-3xl font-extrabold tracking-tight sm:text-[34px]">Questions people ask</h2>
+      <h2 id="faq-title" className="mb-4 text-3xl font-extrabold tracking-tight sm:text-[34px]">{title}</h2>
       {items.map((f) => (
         <details key={f.q} className="group border-b border-line py-5">
           <summary className="flex items-center justify-between gap-4 text-lg font-bold">

@@ -12,13 +12,14 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SearchRouteImport } from './routes/search'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
-import { Route as ForStoresRouteImport } from './routes/for-stores'
 import { Route as BestSellersRouteImport } from './routes/best-sellers'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ForStoresIndexRouteImport } from './routes/for-stores/index'
 import { Route as BrandsIndexRouteImport } from './routes/brands/index'
 import { Route as TownIndexRouteImport } from './routes/$town/index'
 import { Route as PSlugRouteImport } from './routes/p/$slug'
 import { Route as OffersBuyGetRouteImport } from './routes/offers/buy-get'
+import { Route as ForStoresPricingRouteImport } from './routes/for-stores/pricing'
 import { Route as DealsSectionIdRouteImport } from './routes/deals/$sectionId'
 import { Route as CollectionsSlugRouteImport } from './routes/collections/$slug'
 import { Route as BrandsSlugRouteImport } from './routes/brands/$slug'
@@ -42,11 +43,6 @@ const RobotsDottxtRoute = RobotsDottxtRouteImport.update({
   path: '/robots.txt',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ForStoresRoute = ForStoresRouteImport.update({
-  id: '/for-stores',
-  path: '/for-stores',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const BestSellersRoute = BestSellersRouteImport.update({
   id: '/best-sellers',
   path: '/best-sellers',
@@ -55,6 +51,11 @@ const BestSellersRoute = BestSellersRouteImport.update({
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForStoresIndexRoute = ForStoresIndexRouteImport.update({
+  id: '/for-stores/',
+  path: '/for-stores/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BrandsIndexRoute = BrandsIndexRouteImport.update({
@@ -75,6 +76,11 @@ const PSlugRoute = PSlugRouteImport.update({
 const OffersBuyGetRoute = OffersBuyGetRouteImport.update({
   id: '/offers/buy-get',
   path: '/offers/buy-get',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForStoresPricingRoute = ForStoresPricingRouteImport.update({
+  id: '/for-stores/pricing',
+  path: '/for-stores/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DealsSectionIdRoute = DealsSectionIdRouteImport.update({
@@ -116,7 +122,6 @@ const TownStoreBrandRoute = TownStoreBrandRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/best-sellers': typeof BestSellersRoute
-  '/for-stores': typeof ForStoresRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/search': typeof SearchRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -124,10 +129,12 @@ export interface FileRoutesByFullPath {
   '/brands/$slug': typeof BrandsSlugRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/deals/$sectionId': typeof DealsSectionIdRoute
+  '/for-stores/pricing': typeof ForStoresPricingRoute
   '/offers/buy-get': typeof OffersBuyGetRoute
   '/p/$slug': typeof PSlugRoute
   '/$town/': typeof TownIndexRoute
   '/brands/': typeof BrandsIndexRoute
+  '/for-stores/': typeof ForStoresIndexRoute
   '/$town/$store/brand': typeof TownStoreBrandRoute
   '/c/$department/$category': typeof CDepartmentCategoryRoute
   '/c/$department/': typeof CDepartmentIndexRoute
@@ -135,7 +142,6 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/best-sellers': typeof BestSellersRoute
-  '/for-stores': typeof ForStoresRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/search': typeof SearchRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -143,10 +149,12 @@ export interface FileRoutesByTo {
   '/brands/$slug': typeof BrandsSlugRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/deals/$sectionId': typeof DealsSectionIdRoute
+  '/for-stores/pricing': typeof ForStoresPricingRoute
   '/offers/buy-get': typeof OffersBuyGetRoute
   '/p/$slug': typeof PSlugRoute
   '/$town': typeof TownIndexRoute
   '/brands': typeof BrandsIndexRoute
+  '/for-stores': typeof ForStoresIndexRoute
   '/$town/$store/brand': typeof TownStoreBrandRoute
   '/c/$department/$category': typeof CDepartmentCategoryRoute
   '/c/$department': typeof CDepartmentIndexRoute
@@ -155,7 +163,6 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/best-sellers': typeof BestSellersRoute
-  '/for-stores': typeof ForStoresRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/search': typeof SearchRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -163,10 +170,12 @@ export interface FileRoutesById {
   '/brands/$slug': typeof BrandsSlugRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/deals/$sectionId': typeof DealsSectionIdRoute
+  '/for-stores/pricing': typeof ForStoresPricingRoute
   '/offers/buy-get': typeof OffersBuyGetRoute
   '/p/$slug': typeof PSlugRoute
   '/$town/': typeof TownIndexRoute
   '/brands/': typeof BrandsIndexRoute
+  '/for-stores/': typeof ForStoresIndexRoute
   '/$town/$store_/brand': typeof TownStoreBrandRoute
   '/c/$department/$category': typeof CDepartmentCategoryRoute
   '/c/$department/': typeof CDepartmentIndexRoute
@@ -176,7 +185,6 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/best-sellers'
-    | '/for-stores'
     | '/robots.txt'
     | '/search'
     | '/sitemap.xml'
@@ -184,10 +192,12 @@ export interface FileRouteTypes {
     | '/brands/$slug'
     | '/collections/$slug'
     | '/deals/$sectionId'
+    | '/for-stores/pricing'
     | '/offers/buy-get'
     | '/p/$slug'
     | '/$town/'
     | '/brands/'
+    | '/for-stores/'
     | '/$town/$store/brand'
     | '/c/$department/$category'
     | '/c/$department/'
@@ -195,7 +205,6 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/best-sellers'
-    | '/for-stores'
     | '/robots.txt'
     | '/search'
     | '/sitemap.xml'
@@ -203,10 +212,12 @@ export interface FileRouteTypes {
     | '/brands/$slug'
     | '/collections/$slug'
     | '/deals/$sectionId'
+    | '/for-stores/pricing'
     | '/offers/buy-get'
     | '/p/$slug'
     | '/$town'
     | '/brands'
+    | '/for-stores'
     | '/$town/$store/brand'
     | '/c/$department/$category'
     | '/c/$department'
@@ -214,7 +225,6 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/best-sellers'
-    | '/for-stores'
     | '/robots.txt'
     | '/search'
     | '/sitemap.xml'
@@ -222,10 +232,12 @@ export interface FileRouteTypes {
     | '/brands/$slug'
     | '/collections/$slug'
     | '/deals/$sectionId'
+    | '/for-stores/pricing'
     | '/offers/buy-get'
     | '/p/$slug'
     | '/$town/'
     | '/brands/'
+    | '/for-stores/'
     | '/$town/$store_/brand'
     | '/c/$department/$category'
     | '/c/$department/'
@@ -234,7 +246,6 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BestSellersRoute: typeof BestSellersRoute
-  ForStoresRoute: typeof ForStoresRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
   SearchRoute: typeof SearchRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -242,10 +253,12 @@ export interface RootRouteChildren {
   BrandsSlugRoute: typeof BrandsSlugRoute
   CollectionsSlugRoute: typeof CollectionsSlugRoute
   DealsSectionIdRoute: typeof DealsSectionIdRoute
+  ForStoresPricingRoute: typeof ForStoresPricingRoute
   OffersBuyGetRoute: typeof OffersBuyGetRoute
   PSlugRoute: typeof PSlugRoute
   TownIndexRoute: typeof TownIndexRoute
   BrandsIndexRoute: typeof BrandsIndexRoute
+  ForStoresIndexRoute: typeof ForStoresIndexRoute
   TownStoreBrandRoute: typeof TownStoreBrandRoute
   CDepartmentCategoryRoute: typeof CDepartmentCategoryRoute
   CDepartmentIndexRoute: typeof CDepartmentIndexRoute
@@ -274,13 +287,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RobotsDottxtRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/for-stores': {
-      id: '/for-stores'
-      path: '/for-stores'
-      fullPath: '/for-stores'
-      preLoaderRoute: typeof ForStoresRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/best-sellers': {
       id: '/best-sellers'
       path: '/best-sellers'
@@ -293,6 +299,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/for-stores/': {
+      id: '/for-stores/'
+      path: '/for-stores'
+      fullPath: '/for-stores/'
+      preLoaderRoute: typeof ForStoresIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/brands/': {
@@ -321,6 +334,13 @@ declare module '@tanstack/react-router' {
       path: '/offers/buy-get'
       fullPath: '/offers/buy-get'
       preLoaderRoute: typeof OffersBuyGetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/for-stores/pricing': {
+      id: '/for-stores/pricing'
+      path: '/for-stores/pricing'
+      fullPath: '/for-stores/pricing'
+      preLoaderRoute: typeof ForStoresPricingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/deals/$sectionId': {
@@ -378,7 +398,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BestSellersRoute: BestSellersRoute,
-  ForStoresRoute: ForStoresRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
   SearchRoute: SearchRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
@@ -386,10 +405,12 @@ const rootRouteChildren: RootRouteChildren = {
   BrandsSlugRoute: BrandsSlugRoute,
   CollectionsSlugRoute: CollectionsSlugRoute,
   DealsSectionIdRoute: DealsSectionIdRoute,
+  ForStoresPricingRoute: ForStoresPricingRoute,
   OffersBuyGetRoute: OffersBuyGetRoute,
   PSlugRoute: PSlugRoute,
   TownIndexRoute: TownIndexRoute,
   BrandsIndexRoute: BrandsIndexRoute,
+  ForStoresIndexRoute: ForStoresIndexRoute,
   TownStoreBrandRoute: TownStoreBrandRoute,
   CDepartmentCategoryRoute: CDepartmentCategoryRoute,
   CDepartmentIndexRoute: CDepartmentIndexRoute,
