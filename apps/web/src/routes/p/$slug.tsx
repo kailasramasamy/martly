@@ -8,6 +8,7 @@ import { Breadcrumbs, ShopLayout } from "~/components/shop-layout"
 import { AddButton, PriceLine, usePack } from "~/components/product-card"
 import { Shelf } from "~/components/shelf"
 import { Icon } from "~/components/icons"
+import { BrandChip, BrandStoreBanner } from "~/components/brand-promo"
 
 export const Route = createFileRoute("/p/$slug")({
   loader: async ({ params }) => {
@@ -97,7 +98,7 @@ function BuyBox({ page }: { page: WebProductPage }) {
 
 function ProductPage() {
   const page = Route.useLoaderData()
-  const { product, store, related } = page
+  const { product, store, related, brand } = page
   return (
     <ShopLayout store={store}>
       <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6">
@@ -105,8 +106,8 @@ function ProductPage() {
         <div className="mt-6 grid gap-8 lg:grid-cols-2 lg:gap-14 [&>*]:min-w-0">
           <Gallery images={product.images} name={product.name} />
           <div>
-            {product.brand && <p className="text-sm font-extrabold uppercase tracking-wide text-brand">{product.brand}</p>}
-            <h1 className="mt-1 text-2xl font-extrabold leading-tight tracking-tight sm:text-[34px]">{product.name}</h1>
+            {brand && <BrandChip brand={brand} />}
+            <h1 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight sm:text-[34px]">{product.name}</h1>
             <BuyBox page={page} />
             {product.description && <p className="mt-8 whitespace-pre-line text-[15px] leading-relaxed text-slate-700">{product.description}</p>}
             {product.details.length > 0 && (
@@ -119,6 +120,7 @@ function ProductPage() {
                 ))}
               </dl>
             )}
+            {brand && <BrandStoreBanner brand={brand} />}
           </div>
         </div>
       </div>

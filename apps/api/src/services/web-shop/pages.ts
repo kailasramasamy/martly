@@ -1,6 +1,7 @@
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
-import type { WebCategoryPage, WebDepartment, WebDepartmentTree, WebProductPage, WebShelf, WebShopStore, WebSitemap } from "@martly/shared/types";
+import type { WebCategoryPage, WebDepartment, WebDepartmentTree, WebProductBrand, WebProductPage, WebShelf, WebShopStore, WebSitemap } from "@martly/shared/types";
 import { liveWindow } from "../store-feed.js";
+import { storeBrandOf } from "../own-brand.js";
 import { storePack } from "../pack-images.js";
 import { liveStoreWhere, resolveStore } from "../store-resolve.js";
 import type { WebShopQuery } from "@martly/shared/schemas";
@@ -76,7 +77,8 @@ export async function categoryPage(prisma: PrismaClient, store: WebShopStore, sl
 const productSelect = (storeId: string) => ({
   ...cardSelect(storeId),
   description: true, images: true, foodType: true, ingredients: true, shelfLifeDays: true,
-  storageInstructions: true, manufacturerName: true, countryOfOrigin: true, subcategoryId: true,
+  storageInstructions: true, manufacturerName: true, countryOfOrigin: true, subcategoryId: true, brandId: true,
+  brand: { select: { name: true, slug: true, imageUrl: true, themeColor: true, themeColorSecondary: true } },
   subcategory: { select: { name: true, slug: true, category: { select: { name: true, slug: true, department: { select: { name: true, slug: true } } } } } },
 }) satisfies Prisma.ProductSelect;
 
@@ -106,15 +108,26 @@ function trail(p: ProductRow) {
 }
 
 /** A product any live store sells, priced at the shopper's store (no packs when that store doesn't sell it) */
+/** The product's brand and its store; a staple the store packs itself carries the store as its brand, as in the app */
+async function productBrand(prisma: PrismaClient, store: WebShopStore, p: ProductRow): Promise<WebProductBrand | null> {
+  if (p.brand) {
+    const { slug, ...brand } = p.brand;
+    return { ...brand, href: `/brands/${slug}` };
+  }
+  const own = await storeBrandOf(prisma, store.id, p);
+  return own && { name: own.name, imageUrl: own.imageUrl, themeColor: own.themeColor, themeColorSecondary: null, href: `/${store.town.slug}/${store.slug}/brand` };
+}
+
 export async function productPage(prisma: PrismaClient, store: WebShopStore, slug: string): Promise<WebProductPage | null> {
   const p = await prisma.product.findFirst({
     where: { slug, isActive: true, isDraft: false, storeProducts: { some: { isActive: true, store: liveStoreWhere } } },
     select: productSelect(store.id),
   });
   if (!p) return null;
-  const related = p.subcategoryId
-    ? await productCards(prisma, store.id, { where: { subcategoryId: p.subcategoryId, id: { not: p.id } }, take: SHELF_SIZE })
-    : [];
+  const [related, brand] = await Promise.all([
+    p.subcategoryId ? productCards(prisma, store.id, { where: { subcategoryId: p.subcategoryId, id: { not: p.id } }, take: SHELF_SIZE }) : [],
+    productBrand(prisma, store, p),
+  ]);
   const { packs, ...card } = toCard(p);
   // The store's own packs, front then back for each size, replace the catalog photos, as in the app
   const own = [...p.storeProducts].sort((a, b) => Number(a.price) - Number(b.price)).flatMap((sp) => {
@@ -126,6 +139,7 @@ export async function productPage(prisma: PrismaClient, store: WebShopStore, slu
     store,
     product: { ...card, description: p.description, images, foodType: p.foodType, details: details(p), trail: trail(p) },
     packs,
+    brand,
     related,
   };
 }

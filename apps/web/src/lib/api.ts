@@ -80,6 +80,11 @@ export const getBrand = createServerFn({ method: "GET" })
   .inputValidator((params: { slug: string } & CategorySearch) => params)
   .handler(({ data: { slug, ...filters } }) => get<WebBrandPage>(`/web/brands/${seg(slug)}${shopQuery(filters)}`))
 
+/** The store as a brand: its own brands and the staples it packs, priced at that store */
+export const getOwnBrand = createServerFn({ method: "GET" })
+  .inputValidator((params: { town: string; store: string } & CategorySearch) => params)
+  .handler(({ data: { town, store, ...filters } }) => get<WebBrandPage>(`/web/stores/${seg(town)}/${seg(store)}/brand${shopQuery(filters)}`))
+
 export const getBuyGet = createServerFn({ method: "GET" })
   .inputValidator((params: { category?: string; page?: number }) => params)
   .handler(({ data }) => get<WebListPage>(`/web/offers/buy-get${shopQuery(data)}`))

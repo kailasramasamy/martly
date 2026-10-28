@@ -1,9 +1,10 @@
 import { createFileRoute, notFound } from "@tanstack/react-router"
 import { getBrand } from "~/lib/api"
 import { breadcrumbJsonLd, pageHead } from "~/lib/seo"
-import { Breadcrumbs, ShopLayout } from "~/components/shop-layout"
+import { ShopLayout } from "~/components/shop-layout"
 import { listHref } from "~/components/list-page"
-import { FilteredListView, isFilteredView, listSearch } from "~/components/category/filtered-list"
+import { BrandListing } from "~/components/brand-listing"
+import { isFilteredView, listSearch } from "~/components/category/filtered-list"
 
 export const Route = createFileRoute("/brands/$slug")({
   validateSearch: listSearch,
@@ -34,20 +35,9 @@ export const Route = createFileRoute("/brands/$slug")({
 function BrandPage() {
   const page = Route.useLoaderData()
   const { slug } = Route.useParams()
-  const total = page.subcategories.reduce((sum, s) => sum + s.count, 0)
   return (
     <ShopLayout store={page.store}>
-      <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6">
-        <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Brands", path: "/brands" }, { name: page.brand.name }]} />
-        <div className="mt-3 flex items-center gap-4">
-          {page.brand.imageUrl && <img src={page.brand.imageUrl} alt="" className="h-16 w-16 shrink-0 rounded-full border border-line bg-white object-contain p-2" />}
-          <div className="min-w-0">
-            <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">{page.brand.name}</h1>
-            <p className="mt-1 text-sm text-muted">{total} products at {page.store.name}</p>
-          </div>
-        </div>
-        <FilteredListView list={page} route="/brands/$slug" base={`/brands/${slug}`} empty={`No ${page.brand.name} products at ${page.store.name} right now.`} />
-      </div>
+      <BrandListing page={page} route="/brands/$slug" base={`/brands/${slug}`} />
     </ShopLayout>
   )
 }

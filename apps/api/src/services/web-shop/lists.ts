@@ -1,13 +1,15 @@
 import { BUY_GET_PAGE_SIZE, HOME_DEALS_PAGE_SIZE, MOST_BOUGHT_LIST } from "@martly/shared/constants";
 import type { WebShopQuery } from "@martly/shared/schemas";
 import type { HomeTheme, PriceBandChip, WebBrandPage, WebBrandsPage, WebBrandTile, WebCollectionPage, WebListPage } from "@martly/shared/types";
-import type { PrismaClient } from "../../../generated/prisma/client.js";
+import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
+import { storeBrandBoost } from "../brand-boost.js";
 import { rankedCollectionProductIds } from "../collection-products.js";
 import { campaignLook } from "../home/campaign-look.js";
 import { buyGetPage } from "../home/buy-get.js";
 import { mostBought } from "../home/most-bought.js";
 import { bandPage, dealsSection } from "../home/price-band.js";
 import { autoTiles, stockedCollectionItems } from "../home/resolvers/campaign-tiles.js";
+import { ownProductWhere } from "../own-brand.js";
 import { liveWindow } from "../store-feed.js";
 import { cardsInOrder, soldAt, type ShopContext } from "./cards.js";
 import { filteredList } from "./category-filters.js";
@@ -83,14 +85,9 @@ export async function collectionPage(prisma: PrismaClient, ctx: ShopContext, slu
   };
 }
 
-/** A brand's products at the shopper's store */
-export async function brandPage(prisma: PrismaClient, ctx: ShopContext, slug: string, q: WebShopQuery): Promise<WebBrandPage | null> {
-  const brand = await prisma.brand.findFirst({
-    where: { slug, OR: [{ organizationId: ctx.organizationId }, { organizationId: null }] },
-    select: { id: true, name: true, slug: true, imageUrl: true },
-  });
-  if (!brand) return null;
-  const sold = { AND: [soldAt(ctx.store.id), { brandId: brand.id }] };
+/** A brand's products at the store, with its subcategories (largest first) as chips and the category filters */
+async function brandListing(prisma: PrismaClient, ctx: ShopContext, brand: WebBrandPage["brand"], match: Prisma.ProductWhereInput, q: WebShopQuery) {
+  const sold = { AND: [soldAt(ctx.store.id), match] };
   const rows = await prisma.subcategory.findMany({
     where: { products: { some: sold } },
     select: { name: true, slug: true, imageUrl: true, _count: { select: { products: { where: sold } } } },
@@ -98,9 +95,28 @@ export async function brandPage(prisma: PrismaClient, ctx: ShopContext, slug: st
   if (!rows.length) return null;
   const subcategories = rows.map(({ _count, ...s }) => ({ ...s, count: _count.products })).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
   const subcategory = subcategories.find((s) => s.slug === q.sub)?.slug ?? null;
-  const where = { brandId: brand.id, ...(subcategory ? { subcategory: { slug: subcategory } } : {}) };
+  const where = { AND: [match, ...(subcategory ? [{ subcategory: { slug: subcategory } }] : [])] };
   const listing = await filteredList(prisma, ctx.store.id, where, q, PAGE_SIZE);
   return { store: ctx.store, brand, subcategories, subcategory, page: q.page, ...listing };
+}
+
+/** A brand's products at the shopper's store */
+export async function brandPage(prisma: PrismaClient, ctx: ShopContext, slug: string, q: WebShopQuery): Promise<WebBrandPage | null> {
+  const brand = await prisma.brand.findFirst({
+    where: { slug, OR: [{ organizationId: ctx.organizationId }, { organizationId: null }] },
+    select: { id: true, name: true, slug: true, imageUrl: true },
+  });
+  if (!brand) return null;
+  const { id, ...shown } = brand;
+  return brandListing(prisma, ctx, shown, { brandId: id }, q);
+}
+
+/** The store as a brand, as in the app: its organisation's brands and the staples it packs itself */
+export async function ownBrandPage(prisma: PrismaClient, ctx: ShopContext, q: WebShopQuery): Promise<WebBrandPage | null> {
+  const boost = await storeBrandBoost(prisma, ctx.store.id);
+  if (!boost.ownBrandIds.length && !boost.stapleSubcategoryIds.length) return null;
+  const brand = { name: ctx.store.name, slug: ctx.store.slug, imageUrl: ctx.store.logoUrl };
+  return brandListing(prisma, ctx, brand, ownProductWhere(boost), q);
 }
 
 /** Every brand the store stocks: the shopper's brand directory at /brands */

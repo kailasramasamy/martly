@@ -163,6 +163,16 @@ export interface WebCategoryFacets {
   inStockCount: number;
 }
 
+/** The brand a product page shows and links to: its own brand, or the store itself for a staple the store packs */
+export interface WebProductBrand {
+  name: string;
+  imageUrl: string | null;
+  themeColor: string | null;
+  themeColorSecondary: string | null;
+  /** The brand's store: /brands/{slug}, or /{town}/{store}/brand for the store's own brand */
+  href: string;
+}
+
 export interface WebProductPage {
   store: WebShopStore;
   product: Omit<WebProductCard, "packs"> & {
@@ -175,6 +185,7 @@ export interface WebProductPage {
   };
   /** Empty when this store doesn't sell it */
   packs: WebPack[];
+  brand: WebProductBrand | null;
   related: WebProductCard[];
 }
 

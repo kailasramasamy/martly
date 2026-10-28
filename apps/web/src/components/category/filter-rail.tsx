@@ -7,7 +7,7 @@ import { rupees } from "~/lib/format"
 import { Icon } from "../icons"
 
 /** The routes with a filtered list; filter links stay on the page they are on */
-export type ListRoute = "/c/$department/$category" | "/brands/$slug" | "/search"
+export type ListRoute = "/c/$department/$category" | "/brands/$slug" | "/$town/$store/brand" | "/search"
 const FilterRoute = createContext<ListRoute | null>(null)
 export const FilterRouteProvider = FilterRoute.Provider
 export const useListRoute = () => useContext(FilterRoute)!

@@ -7,7 +7,7 @@ import { webSearch, webSearchLanding, webSuggestions } from "../../services/web-
 import { webHomeSections } from "../../services/web-shop/home-sections.js";
 import { storeProfile } from "../../services/web-shop/store-profile.js";
 import { liveStore, townPage, webStoreSelect } from "../../services/web-shop/town-page.js";
-import { bestSellers, brandPage, brandsPage, buyGetList, collectionPage, dealsList } from "../../services/web-shop/lists.js";
+import { bestSellers, brandPage, brandsPage, ownBrandPage, buyGetList, collectionPage, dealsList } from "../../services/web-shop/lists.js";
 import { webSearchLogRoutes } from "./search-log.js";
 import { categoryPage, departmentPage, productPage, sitemap, storeDepartments } from "../../services/web-shop/pages.js";
 
@@ -66,8 +66,10 @@ const BRAND_RAIL = 12;
  * Prices change, so these cache for a minute; a page the store can't fill is a 404.
  */
 function shopRoutes(app: FastifyInstance) {
-  const respond = async <T>(request: FastifyRequest, reply: FastifyReply, build: (ctx: ShopContext, q: ReturnType<typeof webShopQuerySchema.parse>) => Promise<T | null>) => {
-    const query = webShopQuerySchema.parse(request.query);
+  const respond = async <T>(
+    request: FastifyRequest, reply: FastifyReply, build: (ctx: ShopContext, q: ReturnType<typeof webShopQuerySchema.parse>) => Promise<T | null>, storeId?: string,
+  ) => {
+    const query = webShopQuerySchema.parse(storeId ? { ...(request.query as object), store: storeId } : request.query);
     const ctx = await shopStore(app.prisma, query);
     if (!ctx) return reply.notFound("No store is live yet");
     const data = await build(ctx, query);
@@ -90,6 +92,13 @@ function shopRoutes(app: FastifyInstance) {
 
   app.get<{ Params: { slug: string } }>("/brands/:slug", (request, reply) =>
     respond(request, reply, (ctx, q) => brandPage(app.prisma, ctx, request.params.slug, q)));
+
+  // The store as a brand at martlyshop.in/{town}/{store}/brand, priced at that store whoever's store the shopper has
+  app.get<{ Params: { town: string; store: string } }>("/stores/:town/:store/brand", async (request, reply) => {
+    const store = await app.prisma.store.findFirst({ where: { ...liveStore, slug: request.params.store, town: { slug: request.params.town } }, select: { id: true } });
+    if (!store) return reply.notFound("Store not found");
+    return respond(request, reply, (ctx, q) => ownBrandPage(app.prisma, ctx, q), store.id);
+  });
 
   app.get("/offers/buy-get", (request, reply) => respond(request, reply, (ctx, q) => buyGetList(app.prisma, ctx, q)));
 
