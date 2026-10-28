@@ -1,6 +1,6 @@
-import type { CollectionKind, SearchSortBy } from "../constants/index.js";
+import type { CollectionKind } from "../constants/index.js";
 import type { WebLinkTile } from "./web-home.js";
-import type { WebProductCard, WebShopStore } from "./web.js";
+import type { WebCategoryFacets, WebCategoryFilters, WebProductCard, WebShopStore } from "./web.js";
 
 /** A search result: a product card, and the banner it was paid for through when it sits in an ad slot */
 export type WebSearchCard = WebProductCard & { adBannerId?: string };
@@ -17,22 +17,17 @@ export interface WebSearchTab {
   count: number;
 }
 
-export interface WebSearchFacets {
+/** The category pages' filter facets, plus the search's own tab row and pack sizes */
+export interface WebSearchFacets extends WebCategoryFacets {
   tabs: WebSearchTab[];
-  brands: { slug: string; name: string; imageUrl: string | null; count: number }[];
   sizes: { label: string; count: number }[];
-  offerCount: number;
 }
 
-/** The filters a search ran with, as they sit in the page's URL */
-export interface WebSearchFilters {
+/** The filters a search ran with, as they sit in the page's URL: the category pages' filters plus a tab, a pack size and words as typed */
+export interface WebSearchFilters extends WebCategoryFilters {
   sub?: string;
   tag?: string;
-  brand: string[];
   size?: string;
-  food?: string;
-  offers: boolean;
-  sort: SearchSortBy;
   exact: boolean;
 }
 
@@ -40,6 +35,8 @@ export interface WebSearchPage {
   store: WebShopStore;
   q: string;
   products: WebSearchCard[];
+  /** Products that match the filters */
+  total: number;
   facets: WebSearchFacets | null;
   filters: WebSearchFilters;
   /** Set when the words searched differ from those typed: a spelling fix, or related terms */

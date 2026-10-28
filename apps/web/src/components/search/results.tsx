@@ -1,13 +1,15 @@
 import { useCallback, useEffect, useRef } from "react"
 import { Link } from "@tanstack/react-router"
 import { SearchEventType } from "@martly/shared/constants"
-import type { WebSearchCard, WebSearchFacets, WebSearchFilters, WebSearchPage } from "@martly/shared/types"
+import type { WebFilteredList, WebSearchCard, WebSearchFacets, WebSearchFilters, WebSearchPage } from "@martly/shared/types"
 import { logSearch, logSearchEvent } from "~/lib/api"
 import { recordAd, useAdView } from "~/lib/ad-events"
 import { addRecentSearch } from "~/lib/recent-searches"
 import { ProductCard } from "../product-card"
 import { Icon } from "../icons"
-import { ControlBar, searchFor } from "./filters"
+import { FilterBar } from "../category/filter-bar"
+import { filterCount, FilterGroups, FilterRouteProvider } from "../category/filter-rail"
+import { searchFor, SizeMenu } from "./filters"
 
 // Fewer brands than this and a brand row adds nothing (e.g. searching "surf excel")
 const MIN_BRANDS = 3
@@ -60,7 +62,7 @@ function Tabs({ q, filters, tabs }: { q: string; filters: WebSearchFilters; tabs
 function BrandRow({ q, filters, brands }: { q: string; filters: WebSearchFilters; brands: WebSearchFacets["brands"] }) {
   if (brands.length < MIN_BRANDS && !filters.brand.length) return null
   return (
-    <ul className="-mx-4 mt-3 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0">
+    <ul className="-mx-4 mb-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0 lg:hidden">
       {brands.map((b) => {
         const on = filters.brand.length === 1 && filters.brand[0] === b.slug
         return (
@@ -107,33 +109,58 @@ function ResultCard({ product, position, storeId, track }: {
   return <ProductCard product={product} tracking={{ ad: !!adBannerId, onOpen: () => act(SearchEventType.CLICK), onAdd: () => act(SearchEventType.ADD_TO_CART) }} />
 }
 
-const filtered = (f: WebSearchFilters) => !!(f.sub || f.tag || f.brand.length || f.size || f.food || f.offers)
+const filtered = (f: WebSearchFilters) => !!(f.sub || f.tag || f.size) || filterCount(f) > 0
 
-export function SearchResults({ page }: { page: WebSearchPage }) {
-  const { store, q, products, facets, filters } = page
+/** The results as the category pages' filtered list, so they share the sidebar, sheet, sort and chips */
+const asList = (page: WebSearchPage, facets: WebSearchFacets): WebFilteredList => ({
+  subcategories: [], subcategory: page.filters.sub ?? null, products: page.products, total: page.total,
+  filters: page.filters, facets, page: 1, totalPages: 1,
+})
+
+function Results({ page }: { page: WebSearchPage }) {
+  const { store, q, products, filters } = page
   const track = useSearchLog(store.id, q, products.length)
+  if (products.length) {
+    return (
+      <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 xl:grid-cols-4">
+        {products.map((p, i) => <li key={p.slug}><ResultCard product={p} position={i} storeId={store.id} track={track} /></li>)}
+      </ul>
+    )
+  }
   return (
-    <>
+    <div className="flex flex-col items-center gap-4 py-16 text-center text-muted">
+      <p>{filtered(filters) ? "No products match these filters." : `Nothing matches “${q}” at ${store.name}. Try another word.`}</p>
+      {filtered(filters) && (
+        <Link to="/search" search={{ q }} className="flex h-11 items-center rounded-full bg-brand px-6 text-sm font-bold text-white hover:bg-brand-deep">Clear filters</Link>
+      )}
+    </div>
+  )
+}
+
+/** Tabs on top, then Amazon's layout: the filter sidebar on wide screens (a sheet below them) beside the results */
+export function SearchResults({ page }: { page: WebSearchPage }) {
+  const { store, q, facets, filters } = page
+  const list = facets && asList(page, facets)
+  return (
+    <FilterRouteProvider value="/search">
       <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">Results for “{q}”</h1>
-      <p className="mt-1 text-sm text-muted">{products.length} products at {store.name}</p>
+      <p className="mt-1 text-sm text-muted">At {store.name}</p>
       {facets && <Tabs q={q} filters={filters} tabs={facets.tabs} />}
-      {facets && <ControlBar q={q} filters={filters} facets={facets} />}
-      {facets && <BrandRow q={q} filters={filters} brands={facets.brands} />}
       <MetaBanner page={page} />
-      <div className="mt-6">
-        {products.length ? (
-          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5 xl:grid-cols-6">
-            {products.map((p, i) => <li key={p.slug}><ResultCard product={p} position={i} storeId={store.id} track={track} /></li>)}
-          </ul>
-        ) : (
-          <div className="flex flex-col items-center gap-4 py-16 text-center text-muted">
-            <p>{filtered(filters) ? "No products match these filters." : `Nothing matches “${q}” at ${store.name}. Try another word.`}</p>
-            {filtered(filters) && (
-              <Link to="/search" search={{ q }} className="flex h-11 items-center rounded-full bg-brand px-6 text-sm font-bold text-white hover:bg-brand-deep">Clear filters</Link>
-            )}
-          </div>
+      <div className="mt-6 lg:grid lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-8">
+        {list && (
+          <aside aria-label="Filters" className="hidden lg:block">
+            <div className="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto pb-6 pr-1 [scrollbar-width:thin]">
+              <FilterGroups page={list} />
+            </div>
+          </aside>
         )}
+        <div className="min-w-0">
+          {facets && <BrandRow q={q} filters={filters} brands={facets.brands} />}
+          {list && facets && <FilterBar page={list} extra={<SizeMenu q={q} filters={filters} facets={facets} />} />}
+          <Results page={page} />
+        </div>
       </div>
-    </>
+    </FilterRouteProvider>
   )
 }

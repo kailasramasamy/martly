@@ -1,26 +1,16 @@
 import { useEffect, useRef, useState, type ReactNode } from "react"
-import { Link, useNavigate } from "@tanstack/react-router"
-import { FoodType, FoodTypeLabels, SearchSortBy, SearchSortLabels } from "@martly/shared/constants"
+import { Link } from "@tanstack/react-router"
 import type { WebSearchFacets, WebSearchFilters } from "@martly/shared/types"
 import type { SearchParams } from "~/lib/api"
 import { Icon } from "../icons"
+import { categorySearch } from "../category/filter-rail"
 
 export type SearchQuery = Partial<SearchParams>
 
 /** The URL for a search with these filters changed; defaults are left out so each search has one URL */
 export function searchFor(q: string, f: WebSearchFilters, change: Partial<WebSearchFilters> = {}): SearchQuery {
   const next = { ...f, ...change }
-  return {
-    q,
-    sub: next.sub,
-    tag: next.tag,
-    brand: next.brand.length ? next.brand.join(",") : undefined,
-    size: next.size,
-    food: next.food,
-    offers: next.offers ? 1 : undefined,
-    sort: next.sort === SearchSortBy.RELEVANCE ? undefined : next.sort,
-    exact: next.exact ? 1 : undefined,
-  }
+  return { q, ...categorySearch(next.sub ?? null, next), tag: next.tag, size: next.size, exact: next.exact ? 1 : undefined }
 }
 
 const PILL = "flex h-11 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border px-4 text-sm font-bold"
@@ -77,73 +67,12 @@ function Choices({ items, close }: { items: { label: string; search: SearchQuery
   )
 }
 
-/** Brands and food type together, applied at once, like the app's filter sheet; the Brand pill opens it with brands only */
-function FilterPanel({ q, filters, facets, close, brandsOnly = false }: {
-  q: string; filters: WebSearchFilters; facets: WebSearchFacets; close: () => void; brandsOnly?: boolean
-}) {
-  const [brands, setBrands] = useState(filters.brand)
-  const [food, setFood] = useState(filters.food)
-  const navigate = useNavigate()
-  const toggle = (slug: string) => setBrands((b) => (b.includes(slug) ? b.filter((s) => s !== slug) : [...b, slug]))
-  const apply = (brand: string[], foodType: string | undefined) => {
-    close()
-    void navigate({ to: "/search", search: searchFor(q, filters, { brand, food: foodType }) })
-  }
-  const box = "flex min-h-11 items-center gap-3 rounded-xl px-3 text-[15px] font-semibold hover:bg-surface"
-  return (
-    <div>
-      {facets.brands.length > 0 && <h3 className="px-3 pb-1 text-xs font-extrabold uppercase tracking-wide text-muted">Brand</h3>}
-      {facets.brands.map((b) => (
-        <label key={b.slug} className={box}>
-          <input type="checkbox" checked={brands.includes(b.slug)} onChange={() => toggle(b.slug)} className="h-5 w-5 accent-brand" />
-          <span className="flex-1">{b.name}</span><span className="text-sm text-muted">{b.count}</span>
-        </label>
-      ))}
-      {!brandsOnly && <h3 className="px-3 pb-1 pt-3 text-xs font-extrabold uppercase tracking-wide text-muted">Food type</h3>}
-      {!brandsOnly && Object.values(FoodType).map((type) => (
-        <label key={type} className={box}>
-          <input type="radio" name="food" checked={food === type} onChange={() => setFood(type)} onClick={() => food === type && setFood(undefined)} className="h-5 w-5 accent-brand" />
-          {FoodTypeLabels[type]}
-        </label>
-      ))}
-      <div className="sticky -bottom-6 -mx-4 mt-4 flex gap-3 border-t border-line bg-white px-4 pb-6 pt-3 sm:-bottom-4 sm:pb-4">
-        <button type="button" onClick={() => apply([], brandsOnly ? food : undefined)} className="h-11 flex-1 rounded-full border border-line text-sm font-bold hover:border-brand">Clear</button>
-        <button type="button" onClick={() => apply(brands, food)} className="h-11 flex-1 rounded-full bg-brand text-sm font-bold text-white hover:bg-brand-deep">Apply</button>
-      </div>
-    </div>
-  )
-}
-
-/** Filters, sort, size and the offers switch, as the app's control bar orders them */
-export function ControlBar({ q, filters, facets }: { q: string; filters: WebSearchFilters; facets: WebSearchFacets }) {
-  const filterCount = filters.brand.length + (filters.food ? 1 : 0)
-  const sorts = Object.values(SearchSortBy).map((sort) => ({ label: SearchSortLabels[sort], search: searchFor(q, filters, { sort }), on: filters.sort === sort }))
+/** The pack size picker; the other filters live in the sidebar (a sheet on narrow screens) */
+export function SizeMenu({ q, filters, facets }: { q: string; filters: WebSearchFilters; facets: WebSearchFacets }) {
+  if (!facets.sizes.length && !filters.size) return null
   const sizes = [
     { label: "Any size", search: searchFor(q, filters, { size: undefined }), on: !filters.size },
     ...facets.sizes.map((s) => ({ label: s.label, note: String(s.count), search: searchFor(q, filters, { size: s.label }), on: filters.size === s.label })),
   ]
-  return (
-    <div className="-mx-4 mt-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
-      <Menu label="Filters" icon="sliders" active={filterCount > 0} badge={filterCount}>
-        {(close) => <FilterPanel q={q} filters={filters} facets={facets} close={close} />}
-      </Menu>
-      {(facets.brands.length > 1 || filters.brand.length > 0) && (
-        <Menu label="Brand" active={filters.brand.length > 0} badge={filters.brand.length}>
-          {(close) => <FilterPanel q={q} filters={filters} facets={facets} close={close} brandsOnly />}
-        </Menu>
-      )}
-      <Menu label={filters.sort === SearchSortBy.RELEVANCE ? "Sort" : SearchSortLabels[filters.sort]} active={filters.sort !== SearchSortBy.RELEVANCE}>
-        {(close) => <Choices items={sorts} close={close} />}
-      </Menu>
-      {(facets.sizes.length > 0 || !!filters.size) && (
-        <Menu label={filters.size ?? "Size"} active={!!filters.size}>{(close) => <Choices items={sizes} close={close} />}</Menu>
-      )}
-      {(facets.offerCount > 0 || filters.offers) && (
-        <Link to="/search" search={searchFor(q, filters, { offers: !filters.offers })} aria-pressed={filters.offers}
-          className={`${PILL} ${filters.offers ? "border-brand bg-brand text-white" : "border-line bg-white hover:border-brand"}`}>
-          Offers
-        </Link>
-      )}
-    </div>
-  )
+  return <Menu label={filters.size ?? "Size"} active={!!filters.size}>{(close) => <Choices items={sizes} close={close} />}</Menu>
 }

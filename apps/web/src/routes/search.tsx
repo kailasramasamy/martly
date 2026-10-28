@@ -1,24 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router"
-import { FoodType, SearchSortBy } from "@martly/shared/constants"
 import { getSearchLanding, searchShop, type SearchParams } from "~/lib/api"
 import { pageHead } from "~/lib/seo"
 import { ShopLayout } from "~/components/shop-layout"
-import { flag, oneOf, textParam } from "~/components/list-page"
+import { flag, textParam } from "~/components/list-page"
+import { listSearch } from "~/components/category/filtered-list"
 import { SearchLandingView } from "~/components/search/landing"
 import { SearchResults } from "~/components/search/results"
 
 export const Route = createFileRoute("/search")({
-  validateSearch: (search: Record<string, unknown>): Partial<SearchParams> => ({
-    q: textParam(search.q)?.slice(0, 100),
-    sub: textParam(search.sub),
-    tag: textParam(search.tag),
-    brand: textParam(search.brand),
-    size: textParam(search.size),
-    food: oneOf(FoodType, search.food),
-    offers: flag(search.offers),
-    sort: oneOf(SearchSortBy, search.sort),
-    exact: flag(search.exact),
-  }),
+  validateSearch: (search: Record<string, unknown>): Partial<SearchParams> => {
+    const { page: _, ...filters } = listSearch(search)
+    return { q: textParam(search.q)?.slice(0, 100), tag: textParam(search.tag), size: textParam(search.size), exact: flag(search.exact), ...filters }
+  },
   loaderDeps: ({ search }) => ({ ...search, q: search.q?.trim() ?? "" }),
   loader: async ({ deps }) => (deps.q
     ? { kind: "results" as const, page: await searchShop({ data: deps }) }

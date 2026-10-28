@@ -7,14 +7,22 @@ import { rupees } from "~/lib/format"
 import { Icon } from "../icons"
 
 /** The routes with a filtered list; filter links stay on the page they are on */
-export type ListRoute = "/c/$department/$category" | "/brands/$slug"
+export type ListRoute = "/c/$department/$category" | "/brands/$slug" | "/search"
 const FilterRoute = createContext<ListRoute | null>(null)
 export const FilterRouteProvider = FilterRoute.Provider
-const useListRoute = () => useContext(FilterRoute)!
+export const useListRoute = () => useContext(FilterRoute)!
+
+// On search, filters change while the words, tab, pack size and "as typed" stay
+const SEARCH_KEEPS = ["q", "tag", "size", "exact"] as const
+
+const withKept = (from: ListRoute, search: CategorySearch) => (from === "/search"
+  ? (prev: Record<string, unknown>) => ({ ...Object.fromEntries(SEARCH_KEEPS.map((k) => [k, prev[k]])), ...search })
+  : search) as never
 
 /** A link to this page with other filters; it keeps the scroll unless it moves to another shelf */
 export function FilterLink({ search, keepScroll = true, ...props }: { search: CategorySearch; keepScroll?: boolean } & Omit<ComponentProps<"a">, "href">) {
-  return <Link from={useListRoute()} to="." params={(prev) => prev} search={search} resetScroll={!keepScroll} {...props} />
+  const from = useListRoute()
+  return <Link from={from} to="." params={(prev) => prev} search={withKept(from, search)} resetScroll={!keepScroll} {...props} />
 }
 const BRANDS_SHOWN = 8
 const BRAND_FIND_FROM = 12
@@ -145,7 +153,7 @@ function PriceGroup({ page }: { page: WebFilteredList }) {
     const value = (name: string) => (String(form.get(name) ?? "").trim() ? Math.max(0, Math.round(Number(form.get(name)))) : null)
     const [min, max] = [value("min"), value("max")]
     const range = min === null && max === null ? null : min !== null && max !== null && min > max ? { min: max, max: min } : { min, max }
-    void navigate({ from, to: ".", params: (prev) => prev, search: at({ price: range }), resetScroll: false })
+    void navigate({ from, to: ".", params: (prev) => prev, search: withKept(from, at({ price: range })), resetScroll: false })
   }
   const input = "h-9 w-full min-w-0 rounded-lg border border-line bg-white px-2.5 text-sm outline-none focus:border-brand"
   const custom = (

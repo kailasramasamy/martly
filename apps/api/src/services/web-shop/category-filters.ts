@@ -1,7 +1,7 @@
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { DISCOUNT_TIERS, FoodType, RATING_TIERS, SearchSortBy, type PriceRange } from "@martly/shared/constants";
 import type { WebShopQuery } from "@martly/shared/schemas";
-import type { WebCategoryFacets, WebCategoryFilters, WebProductCard } from "@martly/shared/types";
+import type { WebCategoryFacets, WebCategoryFilters, WebSearchCard } from "@martly/shared/types";
 import { cardSelect, popularFirst, soldAt, toCard } from "./cards.js";
 
 // Round numbers a price band can start or end on
@@ -10,8 +10,10 @@ const BAND_QUANTILES = [0.2, 0.4, 0.6, 0.8];
 
 /** A product as the filters see it: its card's cheapest price, best % off, any free-item offer, stock and rating */
 interface Item {
-  card: WebProductCard;
-  brand: { slug: string; name: string } | null;
+  id: string;
+  /** A search result's card also carries the ad slot it fills */
+  card: WebSearchCard;
+  brand: { slug: string; name: string; imageUrl: string | null } | null;
   foodType: FoodType | null;
   price: number;
   off: number;
@@ -25,10 +27,11 @@ const inRange = (price: number, r: PriceRange) => (r.min === null || price >= r.
 
 type Group = "brand" | "price" | "off" | "rating" | "offers" | "food" | "stock";
 
-async function loadItems(prisma: PrismaClient, storeId: string, where: Prisma.ProductWhereInput): Promise<Item[]> {
+/** The products as filter items, popular first; with a pack name, each card keeps only that pack */
+async function loadItems(prisma: PrismaClient, storeId: string, where: Prisma.ProductWhereInput, packName?: string): Promise<Item[]> {
   const rows = await prisma.product.findMany({
     where: { AND: [soldAt(storeId), where] },
-    select: { ...cardSelect(storeId), foodType: true, brand: { select: { name: true, slug: true } } },
+    select: { ...cardSelect(storeId), foodType: true, brand: { select: { name: true, slug: true, imageUrl: true } } },
     orderBy: popularFirst,
   });
   const ratings = rows.length
@@ -36,9 +39,11 @@ async function loadItems(prisma: PrismaClient, storeId: string, where: Prisma.Pr
     : [];
   const ratingOf = new Map(ratings.map((r) => [r.productId, r._avg.rating]));
   return rows.flatMap((row) => {
-    const card = toCard(row);
+    const full = toCard(row);
+    const card = packName ? { ...full, packs: full.packs.filter((p) => p.name === packName) } : full;
     if (!card.packs.length) return [];
     return [{
+      id: row.id,
       card,
       brand: row.brand,
       foodType: row.foodType,
@@ -91,7 +96,7 @@ function priceBands(all: Item[], pool: Item[]): WebCategoryFacets["priceBands"] 
 
 // Picked brands stay listed (at 0 when other filters leave them nothing) so they can be unticked
 function brandFacet(all: Item[], pool: Item[], selected: string[]): WebCategoryFacets["brands"] {
-  const brands = new Map<string, { slug: string; name: string; count: number }>();
+  const brands = new Map<string, WebCategoryFacets["brands"][number]>();
   for (const { brand } of all) if (brand && selected.includes(brand.slug)) brands.set(brand.slug, { ...brand, count: 0 });
   for (const { brand } of pool) {
     if (!brand) continue;
@@ -122,9 +127,8 @@ const SORTS: Partial<Record<SearchSortBy, (a: Item, b: Item) => number>> = {
   [SearchSortBy.DISCOUNT]: (a, b) => b.off - a.off,
 };
 
-/** A category's (or brand's) products filtered, sorted (popular first unless asked) and paged, with Amazon-style facet counts */
-export async function filteredList(prisma: PrismaClient, storeId: string, where: Prisma.ProductWhereInput, q: WebShopQuery, pageSize: number) {
-  const all = await loadItems(prisma, storeId, where);
+/** Items filtered, sorted (in the order given unless asked) and paged, with Amazon-style facet counts */
+function filterItems(all: Item[], q: WebShopQuery, pageSize: number) {
   const filters = filtersOf(q);
   const matched = all.filter((i) => passesAll(i, filters));
   const sort = SORTS[filters.sort];
@@ -137,4 +141,24 @@ export async function filteredList(prisma: PrismaClient, storeId: string, where:
     filters,
     facets: facetsOf(all, filters),
   };
+}
+
+/** A category's (or brand's) products, popular first, through the filters */
+export async function filteredList(prisma: PrismaClient, storeId: string, where: Prisma.ProductWhereInput, q: WebShopQuery, pageSize: number) {
+  return filterItems(await loadItems(prisma, storeId, where), q, pageSize);
+}
+
+/**
+ * Search results in their ranked order through the same filters, on one page; a pack size narrows each card to that pack.
+ * `order` maps each product to the ad banner whose slot it fills, if any.
+ */
+export async function rankedList(prisma: PrismaClient, storeId: string, order: Map<string, string | undefined>, q: WebShopQuery) {
+  const rank = new Map([...order.keys()].map((id, i) => [id, i]));
+  const items = await loadItems(prisma, storeId, { id: { in: [...rank.keys()] } }, q.size);
+  items.sort((a, b) => rank.get(a.id)! - rank.get(b.id)!);
+  const withAds = items.map((i) => {
+    const adBannerId = order.get(i.id);
+    return adBannerId ? { ...i, card: { ...i.card, adBannerId } } : i;
+  });
+  return filterItems(withAds, { ...q, page: 1 }, Math.max(items.length, 1));
 }

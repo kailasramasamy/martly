@@ -151,7 +151,7 @@ export interface WebCategoryFilters {
 
 /** What each filter group can pick, counted with every other group's filter applied (Amazon's rule) */
 export interface WebCategoryFacets {
-  brands: { slug: string; name: string; count: number }[];
+  brands: { slug: string; name: string; imageUrl: string | null; count: number }[];
   /** Bands sized to the category's prices; the last has no max */
   priceBands: (PriceRange & { count: number })[];
   discounts: { min: number; count: number }[];

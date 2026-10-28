@@ -1,11 +1,13 @@
+import type { ReactNode } from "react"
 import { FoodTypeLabels, SearchSortBy, SearchSortLabels } from "@martly/shared/constants"
 import type { WebFilteredList } from "@martly/shared/types"
 import type { CategorySearch } from "~/lib/api"
 import { Icon } from "../icons"
 import { Menu } from "../search/filters"
-import { changed, filterCount, FilterGroups, FilterLink, OFFERS_LABEL, offLabel, priceLabel } from "./filter-rail"
+import { changed, filterCount, FilterGroups, FilterLink, OFFERS_LABEL, offLabel, priceLabel, useListRoute } from "./filter-rail"
 
-const SORT_LABELS: Record<SearchSortBy, string> = { ...SearchSortLabels, [SearchSortBy.RELEVANCE]: "Popular" }
+// Lists open popular first; search opens on relevance
+const LIST_SORT_LABELS: Record<SearchSortBy, string> = { ...SearchSortLabels, [SearchSortBy.RELEVANCE]: "Popular" }
 
 const clearAll = (page: WebFilteredList): CategorySearch => ({
   sub: page.subcategory ?? undefined,
@@ -31,15 +33,16 @@ function appliedChips(page: WebFilteredList): { key: string; label: string; sear
 function SortMenu({ page }: { page: WebFilteredList }) {
   const at = changed(page)
   const { sort } = page.filters
+  const labels = useListRoute() === "/search" ? SearchSortLabels : LIST_SORT_LABELS
   return (
-    <Menu label={`Sort: ${SORT_LABELS[sort]}`} active={sort !== SearchSortBy.RELEVANCE} align="right">
+    <Menu label={`Sort: ${labels[sort]}`} active={sort !== SearchSortBy.RELEVANCE} align="right">
       {(close) => (
         <ul>
           {Object.values(SearchSortBy).map((s) => (
             <li key={s}>
               <FilterLink search={at({ sort: s })} keepScroll={false} onClick={close}
                 className={`flex min-h-12 items-center justify-between gap-3 rounded-xl px-3 text-[15px] font-semibold hover:bg-surface ${s === sort ? "text-brand" : ""}`}>
-                {SORT_LABELS[s]}
+                {labels[s]}
                 {s === sort && <Icon name="check" size={18} />}
               </FilterLink>
             </li>
@@ -72,14 +75,15 @@ function FilterSheet({ page }: { page: WebFilteredList }) {
   )
 }
 
-/** The count, Filters (below wide screens) and Sort, then the filters in use as chips */
-export function FilterBar({ page }: { page: WebFilteredList }) {
+/** The count, any extra controls, Filters (below wide screens) and Sort, then the filters in use as chips */
+export function FilterBar({ page, extra }: { page: WebFilteredList; extra?: ReactNode }) {
   const chips = appliedChips(page)
   return (
     <div className="mb-4">
       <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
         <p className="order-last w-full text-sm text-muted sm:order-none sm:w-auto"><b className="text-ink">{page.total.toLocaleString("en-IN")}</b> {page.total === 1 ? "product" : "products"}</p>
         <div className="flex gap-2">
+          {extra}
           <FilterSheet page={page} />
           <SortMenu page={page} />
         </div>

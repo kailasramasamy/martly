@@ -120,15 +120,11 @@ export const getProduct = createServerFn({ method: "GET" })
   .inputValidator((params: { slug: string }) => params)
   .handler(({ data }) => get<WebProductPage>(`/web/products/${seg(data.slug)}${shopQuery()}`))
 
-export interface SearchParams {
+/** A search's URL query: the words, a tab (subcategory or tag), a pack size, words as typed, and the category pages' filters */
+export interface SearchParams extends Omit<CategorySearch, "page"> {
   q: string
-  sub?: string
   tag?: string
-  brand?: string
   size?: string
-  food?: string
-  offers?: 1
-  sort?: SearchSortBy
   exact?: 1
 }
 
