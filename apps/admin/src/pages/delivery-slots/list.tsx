@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { usePickLoneStore } from "../../components/StoreSelect";
 import { List, DeleteButton } from "@refinedev/antd";
 import { useCustom, useApiUrl, useUpdate } from "@refinedev/core";
 import { axiosInstance } from "../../providers/data-provider";
@@ -59,6 +60,7 @@ export const DeliverySlotList = () => {
     config: { query: { pageSize: 100 } },
   });
   const stores = storesData?.data?.data ?? [];
+  usePickLoneStore(stores.map((s) => s.id), storeId, setStoreId);
 
   // Fetch slots for selected store
   const { data: slotsData, refetch } = useCustom<{ data: DeliverySlot[] }>({

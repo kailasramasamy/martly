@@ -64,6 +64,7 @@ export const OfferList = () => {
 
       <Table
         {...tableProps}
+        loading={!!storeId && tableProps.loading}
         dataSource={storeId ? tableProps.dataSource : []}
         rowKey="id"
         size="small"

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { usePickLoneStore } from "../../components/StoreSelect";
 import { App, Card, Form, Input, Switch, Radio, Button, Select, Space, Spin, Typography } from "antd";
 import { CalendarOutlined, ShopOutlined, SaveOutlined } from "@ant-design/icons";
 import { axiosInstance } from "../../providers/data-provider";
@@ -33,6 +34,7 @@ export const SubscriptionConfig = () => {
   const [loading, setLoading] = useState(true);
   const [stores, setStores] = useState<Store[]>([]);
   const [selectedStoreId, setSelectedStoreId] = useState<string | null>(null);
+  usePickLoneStore(stores.map((s) => s.id), selectedStoreId, setSelectedStoreId);
   const [storeConfigs, setStoreConfigs] = useState<Record<string, StoreConfig>>({});
   const [savingOrg, setSavingOrg] = useState(false);
   const [savingStore, setSavingStore] = useState(false);

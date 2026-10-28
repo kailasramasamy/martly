@@ -22,10 +22,12 @@ export function useStoreScope({ persist, defaultFirst, routeParam, required, pla
   const { storeId: scopeStoreId, stores, setStoreId } = useManageScope();
   const [picked, setPicked] = useState<string | null>(null);
   const param = routeParam ? params.storeId : undefined;
+  // With only one store there is nothing to pick
+  const lone = stores.length === 1 ? stores[0].id : null;
 
-  const local = defaultFirst ? (picked ?? scopeStoreId ?? stores[0]?.id ?? null) : (scopeStoreId ?? picked);
-  const storeId = param ?? (persist ? scopeStoreId : local);
-  const showPicker = persist || defaultFirst || (!param && !scopeStoreId);
+  const local = defaultFirst ? (picked ?? scopeStoreId ?? stores[0]?.id ?? null) : (scopeStoreId ?? picked ?? lone);
+  const storeId = param ?? (persist ? scopeStoreId ?? lone : local);
+  const showPicker = !lone && (persist || defaultFirst || (!param && !scopeStoreId));
 
   const picker: ReactElement | null = showPicker ? (
     <SelectField

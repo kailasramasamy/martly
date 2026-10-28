@@ -52,7 +52,8 @@ export function ManageScopeProvider({ children }: { children: ReactNode }) {
       setStores(res.data);
       const savedValid = saved && res.data.some((s) => s.id === saved);
       if (savedValid) setStoreIdState(saved);
-      else if (saved === ALL_STORES && allowAllStores) setStoreIdState(null);
+      // "All stores" means nothing with only one store, so a lone store is always the scope
+      else if (saved === ALL_STORES && allowAllStores && res.data.length > 1) setStoreIdState(null);
       else setStoreIdState(allowAllStores && res.data.length > 1 ? null : res.data[0]?.id ?? null);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Couldn't load your stores");

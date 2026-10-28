@@ -5,16 +5,11 @@ import { LinkOutlined, DollarOutlined, TagOutlined } from "@ant-design/icons";
 import { sectionTitle } from "../../theme";
 import { DISCOUNT_TYPE_OPTIONS } from "../../constants/tag-colors";
 import { ReadableSection } from "../../components/ReadableSection";
+import { StoreSelect } from "../../components/StoreSelect";
 import { OfferCard, offerPayload } from "../../components/OfferFields";
 
 export const StoreProductCreate = () => {
   const { formProps, saveButtonProps } = useForm({ resource: "store-products" });
-
-  const { selectProps: storeSelectProps } = useSelect({
-    resource: "stores",
-    optionLabel: "name",
-    optionValue: "id",
-  });
 
   const { selectProps: productSelectProps } = useSelect({
     resource: "products",
@@ -40,7 +35,7 @@ export const StoreProductCreate = () => {
             <Col xs={24} lg={12}>
               <Card title={sectionTitle(<LinkOutlined />, "Assignment")} size="small">
                 <Form.Item label="Store" name="storeId" rules={[{ required: true }]}>
-                  <Select {...storeSelectProps} placeholder="Select a store" />
+                  <StoreSelect placeholder="Select a store" />
                 </Form.Item>
                 <Form.Item label="Product" name="productId" rules={[{ required: true }]}>
                   <Select {...productSelectProps} showSearch filterOption={false} placeholder="Type a product name to search" />
