@@ -6,6 +6,7 @@ import { SegmentedTabs } from "../ui/SegmentedTabs";
 import { FacetChips, type Facet } from "../ui/FacetChips";
 import { StockTiles } from "./StockTiles";
 import { CatalogShortcuts } from "./CatalogShortcuts";
+import { SetupTasks } from "./SetupTasks";
 import { CountsWaitingCard } from "../stock/CountsWaitingCard";
 import { useWaitingCountStatus } from "../../../lib/manage/use-counts-waiting";
 import { useManageScope } from "../../../lib/manage-scope-context";
@@ -36,6 +37,7 @@ export function CatalogHeader({ summary, search, onSearch, filter, onFilter, fac
   return (
     <View style={styles.root}>
       {!compact && recountWaiting && <CountsWaitingCard storeId={storeId} />}
+      {!compact && storeId && <SetupTasks storeId={storeId} />}
       {!compact && <StockTiles summary={summary} />}
       {!compact && <CatalogShortcuts />}
       {!compact && (
