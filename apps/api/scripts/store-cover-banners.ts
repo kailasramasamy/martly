@@ -3,20 +3,21 @@
  * header on martlyshop.in, on the app's Home and on the store's card in the app's store selector.
  *
  * Usage: cd apps/api
- *   npx tsx scripts/store-cover-banners.ts paint <manifest.json>          paint the set and write the image URLs
- *   npx tsx scripts/store-cover-banners.ts insert <manifest.json> [--prod] add the banners locally, and on prod too
+ *   npx tsx scripts/store-cover-banners.ts paint <covers.json> [--prod]   paint the set into <covers>.painted.json
+ *   npx tsx scripts/store-cover-banners.ts insert <covers.json> [--prod]  add the painted banners to the store
  * Paint first and look at every image before inserting. Platform-made, so no AI image credits are taken.
+ *
+ * covers.json: { "townSlug", "storeSlug", "covers": [{ "key", "scene", "en": { "title", "subtitle" }, "ta": {…},
+ *   "action": { "type": "CATEGORY" | "COLLECTION" | "NONE", "target": "<category name or collection title>" }, "endsAt"? }] }
+ * Targets are names, looked up in the database the banners go into.
  */
 
 import dotenv from "dotenv";
 dotenv.config({ override: true });
 
-import { readFileSync, writeFileSync } from "fs";
+import { existsSync, readFileSync, writeFileSync } from "fs";
 import { PrismaClient } from "../generated/prisma/index.js";
 import { buildDesignedBannerSet } from "../src/services/seasonal/banner-set.js";
-
-const STORE_SLUG = "sreerangastore";
-const STORE_ID = "8f56d5c1-7a4d-4e87-8fe1-2d0b8600c839";
 
 type Copy = { title: string; subtitle: string };
 interface Cover {
@@ -24,92 +25,64 @@ interface Cover {
   scene: string;
   en: Copy;
   ta: Copy;
-  actionType: "CATEGORY" | "COLLECTION" | "NONE";
-  actionTarget: string | null;
-  endsAt: string | null;
+  action: { type: "CATEGORY" | "COLLECTION" | "NONE"; target?: string };
+  endsAt?: string | null;
 }
-
-// Only facts checked on prod: express delivery in 30 minutes, free delivery above ₹299, the store's live collections
-const COVERS: Cover[] = [
-  {
-    key: "express",
-    scene: "Fresh vegetables, fruit, milk and bread spilling from a paper grocery bag, bright morning light, ready for doorstep delivery",
-    en: { title: "Groceries in 30 minutes", subtitle: "Sree Ranga Store, Dharmapuri" },
-    ta: { title: "30 நிமிடங்களில் மளிகை", subtitle: "ஸ்ரீ ரங்கா ஸ்டோர், தர்மபுரி" },
-    actionType: "CATEGORY", actionTarget: "0ebde2fe-4e99-4899-a322-3a4178fc2ceb", endsAt: null,
-  },
-  {
-    key: "free-delivery",
-    scene: "A full woven grocery basket of Indian kitchen essentials, vegetables and snacks on a clean tabletop",
-    en: { title: "Free delivery above ₹299", subtitle: "Order from Sree Ranga Store" },
-    ta: { title: "₹299க்கு மேல் இலவச டெலிவரி", subtitle: "ஸ்ரீ ரங்கா ஸ்டோரில் ஆர்டர் செய்யுங்கள்" },
-    actionType: "NONE", actionTarget: null, endsAt: null,
-  },
-  {
-    key: "staples",
-    scene: "Unbranded sacks and glass jars of rice, wheat atta, toor dal and a bottle of cooking oil, warm kitchen pantry",
-    en: { title: "Your monthly staples", subtitle: "Rice, atta, dal and oil" },
-    ta: { title: "மாதாந்திர மளிகைப் பொருட்கள்", subtitle: "அரிசி, ஆட்டா, பருப்பு, எண்ணெய்" },
-    actionType: "CATEGORY", actionTarget: "557a5171-9029-4fd7-8571-463795762438", endsAt: null,
-  },
-  {
-    key: "diwali",
-    scene: "Indian sweets, festive snacks, gift boxes and lit clay diyas with marigolds, warm Diwali glow",
-    en: { title: "Diwali Celebration Store", subtitle: "Sweets, snacks, gifts and diyas" },
-    ta: { title: "தீபாவளி கொண்டாட்டம்", subtitle: "இனிப்புகள், காரம், பரிசுகள், விளக்குகள்" },
-    actionType: "COLLECTION", actionTarget: "ded1d2c4-023c-4026-8fb6-5119a8a01867", endsAt: "2026-11-08T18:29:59.000Z",
-  },
-  {
-    key: "monsoon",
-    scene: "Hot tea, a plate of crispy snacks, a folded umbrella and rain on a window, cosy rainy-day comfort",
-    en: { title: "Monsoon Essentials", subtitle: "Stay stocked for the rainy days" },
-    ta: { title: "மழைக்கால தேவைகள்", subtitle: "மழை நாட்களுக்குத் தயாராக இருங்கள்" },
-    actionType: "COLLECTION", actionTarget: "ed440271-f87d-471b-8acd-5ee78b743c40", endsAt: "2026-12-31T18:29:59.000Z",
-  },
-];
-
+interface Manifest { townSlug: string; storeSlug: string; covers: Cover[] }
 type Painted = Cover & { imageUrl: string; imageUrls: Record<string, string> | null; textInImage: boolean };
 
-async function paint(manifest: string) {
-  const prisma = new PrismaClient();
-  const store = await prisma.store.findUniqueOrThrow({ where: { id: STORE_ID }, select: { organizationId: true } });
-  const painted: Painted[] = [];
-  for (const cover of COVERS) {
+const [mode, manifestPath] = process.argv.slice(2);
+if (!manifestPath || (mode !== "paint" && mode !== "insert")) throw new Error("Usage: store-cover-banners.ts paint|insert <covers.json> [--prod]");
+const prod = process.argv.includes("--prod");
+const prisma = new PrismaClient(prod ? { datasourceUrl: process.env.PROD_DATABASE_URL } : undefined);
+const manifest = JSON.parse(readFileSync(manifestPath, "utf8")) as Manifest;
+const paintedPath = manifestPath.replace(/\.json$/, "") + ".painted.json";
+
+const findStore = () => prisma.store.findFirstOrThrow({
+  where: { slug: manifest.storeSlug, town: { slug: manifest.townSlug } },
+  select: { id: true, organizationId: true },
+});
+
+/** Painted covers are kept, so a re-run only paints the ones still missing */
+async function paint() {
+  const store = await findStore();
+  const painted: Painted[] = existsSync(paintedPath) ? JSON.parse(readFileSync(paintedPath, "utf8")) : [];
+  for (const cover of manifest.covers.filter((c) => !painted.some((p) => p.key === c.key))) {
     const art = await buildDesignedBannerSet(
       prisma, { organizationId: store.organizationId, purpose: "BANNER" }, cover.scene,
-      { en: cover.en, ta: cover.ta }, `${STORE_SLUG}-${cover.key}`, (m) => console.log(`  ${cover.key}: ${m}`),
+      { en: cover.en, ta: cover.ta }, `${manifest.storeSlug}-${cover.key}`, (m) => console.log(`  ${cover.key}: ${m}`),
     );
     painted.push({ ...cover, ...art });
     console.log(`${cover.key}: ${art.imageUrl}${art.imageUrls?.ta ? `\n  ta: ${art.imageUrls.ta}` : "\n  (no Tamil)"}`);
-    writeFileSync(manifest, JSON.stringify(painted, null, 2));
+    writeFileSync(paintedPath, JSON.stringify(painted, null, 2));
   }
-  await prisma.$disconnect();
 }
 
-async function insertInto(prisma: PrismaClient, painted: Painted[], label: string) {
-  const store = await prisma.store.findUniqueOrThrow({ where: { id: STORE_ID }, select: { organizationId: true } });
-  const rows = await prisma.$transaction(painted.map((p, i) => prisma.banner.create({
+async function actionTarget(organizationId: string, { type, target }: Cover["action"]) {
+  if (type === "NONE") return null;
+  const row = type === "CATEGORY"
+    ? await prisma.category.findFirst({ where: { name: target }, select: { id: true } })
+    : await prisma.collection.findFirst({ where: { organizationId, title: target }, select: { id: true } });
+  if (!row) throw new Error(`No ${type.toLowerCase()} named "${target}"`);
+  return row.id;
+}
+
+/** Skips covers whose image the store already shows, so a re-run adds only the new ones */
+async function insert() {
+  const store = await findStore();
+  const painted = JSON.parse(readFileSync(paintedPath, "utf8")) as Painted[];
+  const have = new Set((await prisma.banner.findMany({ where: { storeId: store.id }, select: { imageUrl: true } })).map((b) => b.imageUrl));
+  const fresh = painted.filter((p) => !have.has(p.imageUrl));
+  const targets = await Promise.all(fresh.map((p) => actionTarget(store.organizationId, p.action)));
+  const rows = await prisma.$transaction(fresh.map((p, i) => prisma.banner.create({
     data: {
       title: p.en.title, subtitle: p.en.subtitle, imageUrl: p.imageUrl, imageUrls: p.imageUrls ?? undefined, textInImage: p.textInImage,
-      placement: "HERO_CAROUSEL", actionType: p.actionType, actionTarget: p.actionTarget, sortOrder: i,
-      endsAt: p.endsAt ? new Date(p.endsAt) : null, storeId: STORE_ID, organizationId: store.organizationId, sponsorType: "STORE",
+      placement: "HERO_CAROUSEL", actionType: p.action.type, actionTarget: targets[i], sortOrder: painted.indexOf(p),
+      endsAt: p.endsAt ? new Date(p.endsAt) : null, storeId: store.id, organizationId: store.organizationId, sponsorType: "STORE",
     },
     select: { id: true },
   })));
-  console.log(`${label}: added ${rows.length} banners`);
+  console.log(`${prod ? "PROD" : "local"}: added ${rows.length} banners (${painted.length - fresh.length} already there)`);
 }
 
-async function insert(manifest: string, prod: boolean) {
-  const painted = JSON.parse(readFileSync(manifest, "utf8")) as Painted[];
-  const local = new PrismaClient();
-  await insertInto(local, painted, "local");
-  await local.$disconnect();
-  if (!prod) return;
-  const remote = new PrismaClient({ datasourceUrl: process.env.PROD_DATABASE_URL });
-  await insertInto(remote, painted, "PROD");
-  await remote.$disconnect();
-}
-
-const [mode, manifest] = process.argv.slice(2);
-if (!manifest || (mode !== "paint" && mode !== "insert")) throw new Error("Usage: store-cover-banners.ts paint|insert <manifest.json> [--prod]");
-await (mode === "paint" ? paint(manifest) : insert(manifest, process.argv.includes("--prod")));
+await (mode === "paint" ? paint() : insert()).finally(() => prisma.$disconnect());

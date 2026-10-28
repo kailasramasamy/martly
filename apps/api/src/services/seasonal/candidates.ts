@@ -30,7 +30,9 @@ export function orgSubcategoryCandidates(prisma: PrismaClient, organizationId: s
 /** Best sellers (30 days) then deepest stock per subcategory, interleaved in the curator's order. */
 export async function pickProducts(prisma: PrismaClient, organizationId: string, subcategoryIds: string[], ownFirst = false) {
   // A store's own range leads with what's its own: its products, its local brands, then unbranded goods
-  const own = ownFirst ? Prisma.sql`(p.organization_id = ${organizationId} OR b.organization_id = ${organizationId} OR p.brand_id IS NULL)` : Prisma.sql`false`;
+  const ownOrder = ownFirst
+    ? Prisma.sql`(p.organization_id = ${organizationId} OR b.organization_id = ${organizationId} OR p.brand_id IS NULL) DESC,`
+    : Prisma.empty;
   const rows = await prisma.$queryRaw<{ id: string; subcategory_id: string }[]>`
     SELECT p.id, p.subcategory_id
     FROM products p
@@ -49,7 +51,7 @@ export async function pickProducts(prisma: PrismaClient, organizationId: string,
     WHERE s.organization_id = ${organizationId} AND s.status = 'ACTIVE'
       AND sp.is_active AND sp.stock > 0 AND p.is_active AND p.subcategory_id = ANY(${subcategoryIds})
     GROUP BY p.id, p.subcategory_id, b.organization_id, sales.qty
-    ORDER BY ${own} DESC, COALESCE(sales.qty, 0) DESC, SUM(sp.stock) DESC`;
+    ORDER BY ${ownOrder} COALESCE(sales.qty, 0) DESC, SUM(sp.stock) DESC`;
   const columns = subcategoryIds.map((sub) => rows.filter((r) => r.subcategory_id === sub).slice(0, PER_SUBCATEGORY));
   const ids: string[] = [];
   for (let i = 0; i < PER_SUBCATEGORY && ids.length < MAX_ITEMS; i++) {

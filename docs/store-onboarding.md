@@ -174,6 +174,32 @@ All `SUPER_ADMIN`, under `/api/v1/onboarding` (`routes/onboarding/index.ts`):
 - Prices for loose items: enter a few, then **List priced**.
 - Review the two CSVs before loading the data on prod.
 
+## Scripted onboarding (`/onboard-store`)
+
+The `/onboard-store` skill (`.claude/skills/onboard-store/SKILL.md`) gathers a store's details and runs
+`scripts/onboard-store.ts <spec.json> [--prod]`, which calls the services above in wizard order. On top of the wizard it
+does the following:
+- creates the organisation's own brand from the logo;
+- sets up the shared `<slug>-manager|staff|rider@martlyshop.in` logins;
+- switches express and slots on or off;
+- launches the store;
+- then builds the AI hero collections (`services/collection-ai-draft.ts`, shared with `POST /collections/ai-draft`).
+
+Every step is skipped when already done. `scripts/store-cover-banners.ts paint|insert <covers.json>` adds the cover banners.
+`scripts/logo-preview.ts <logo> <out dir>` shows the logo the run will upload: cleaned, trimmed and with its colours.
+
+PSB Store was the first store onboarded with the skill, on prod on 2026-10-28. That run found two problems, both now fixed:
+- Prod's Postgres 18 rejects `ORDER BY false`, which `pickProducts` used; local Postgres 14 allows it.
+- The bare `martlyshop.in` only forwards its home page, so store links use `www.martlyshop.in`.
+
+Tested locally on 2026-10-28 with a dummy Supermarket (deleted afterwards):
+- 8,170 listings, 30 meat/fish/egg aisles left out;
+- storefront copied, launched;
+- 2 hero collections rendered on Home after the Right now card;
+- 1 banner painted and inserted, and a re-insert added none;
+- re-runs changed nothing;
+- the manager login signs in.
+
 ## Seeds
 
 - `npx tsx prisma/seed-onboarding-data.ts` loads brand regions and aisle tiers (set `TARGET_DATABASE_URL` for prod).

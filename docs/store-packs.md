@@ -29,9 +29,39 @@ Many stores pack loose staples (dal, rice, sugar) in their own printed pouches. 
 
 ```sh
 python3 scripts/store-pack/sreeranga/build.py "$PWD/scripts/store-pack/sreeranga/out"
-node scripts/store-pack/gen-staples.mjs                     # only makes missing photos
-cd apps/api && npx tsx prisma/seed-pack-designs.ts          # add --prod for PROD_DATABASE_URL
+node scripts/store-pack/gen-staples.mjs                                  # only makes missing photos
+cd apps/api && npx tsx prisma/seed-pack-designs.ts sreerangastore --photos   # add --prod for PROD_DATABASE_URL
 ```
+
+## PSB Store (second store, front only)
+
+The design went live on prod on 2026-10-28. PSB's packs are clear pouches with orange bands at the top and bottom
+and a clear wave window, printed on the front only, so the design has no back artwork.
+
+- `scripts/store-pack/psb/build.mjs` draws the bands and the "Packed by" address. The address is copied from
+  `photo-bottom.jpg`, and the net weight goes in the white circle.
+- The logo, `pack-logo.png`, was lifted from a close-up of the print (`photo-logo.png`): the white print was separated
+  from the orange by colour, then upscaled 4x with Real-ESRGAN, smoothed, and given a redrawn ®.
+- `rice-mark.png` is cropped from the same logo, for the small mark before "PSB GRAINS".
+
+```sh
+node scripts/store-pack/psb/build.mjs scripts/store-pack/psb/out
+cd apps/api && npx tsx prisma/seed-pack-designs.ts psbstore --prod
+```
+
+## A new store's pack
+
+1. Get photos of the real pack: the whole front, close-ups of the logo and the small print, and the back if it's printed.
+2. Draw the artwork in `scripts/store-pack/<store>/build.mjs`:
+   - The canvas is 1252×1528, the whole bag face of `pillow-1kg-full`.
+   - Anything left transparent shows the clear film.
+   - Lay a grid over the photo to place the bands and curves.
+3. Lift logos from close-ups rather than tracing them by hand. Run `/clean-logo`, or separate the print by colour when
+   it sits on a solid band.
+4. Preview with the production renderer on real pouch photos, and check the result against the photo:
+   `cd apps/api && npx tsx scripts/pack-preview.ts <artwork.png> <zones.json> <out dir> "1 kg" <packPhotoUrl>…`
+5. Add the store to `DESIGNS` in `prisma/seed-pack-designs.ts`, then run it with the store slug and `--prod`. The API
+   renders the packs within 5 minutes.
 
 ## Tested (local API, prod-synced DB)
 
