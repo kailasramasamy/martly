@@ -7,11 +7,6 @@ import {
   TouchableOpacity,
   RefreshControl,
   Image,
-  Modal,
-  Pressable,
-  TextInput,
-  KeyboardAvoidingView,
-  Platform,
 } from "react-native";
 import { Loader } from "../components/Loader";
 import { useRouter, useFocusEffect } from "expo-router";
@@ -19,11 +14,9 @@ import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
-import { useAuth } from "../lib/auth-context";
-import { useToast } from "../lib/toast-context";
 import { useBasketMode } from "../lib/basket-mode-context";
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
-import { RazorpayCheckout } from "../components/RazorpayCheckout";
+import { WalletRecharge } from "../components/account/WalletRecharge";
 import type { TomorrowsBasket, BasketItem } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
 import { strings } from "../lib/i18n";
@@ -31,22 +24,12 @@ import { useStrings } from "../lib/i18n/use-strings";
 import { formatDate, formatTime } from "../lib/i18n/format";
 import { useLanguage } from "../lib/language-context";
 
-interface RazorpayData {
-  razorpay_order_id: string;
-  amount: number;
-  currency: string;
-  key_id: string;
-  customer_id?: string;
-}
-
 function TomorrowsBasketScreen() {
   const t = useStrings("subscriptions");
   const { getLocalizedName } = useLanguage();
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { selectedStore } = useStore();
-  const { user } = useAuth();
-  const toast = useToast();
   const { enterBasketMode, exitBasketMode } = useBasketMode();
   const storeId = selectedStore?.id;
 
@@ -57,13 +40,7 @@ function TomorrowsBasketScreen() {
   const [cutoffPassed, setCutoffPassed] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  // Wallet recharge state
   const [rechargeSheetVisible, setRechargeSheetVisible] = useState(false);
-  const [selectedRechargeAmount, setSelectedRechargeAmount] = useState(0);
-  const [customAmount, setCustomAmount] = useState("");
-  const [recharging, setRecharging] = useState(false);
-  const [razorpayVisible, setRazorpayVisible] = useState(false);
-  const [razorpayData, setRazorpayData] = useState<RazorpayData | null>(null);
 
   const fetchBasket = useCallback(async () => {
     if (!storeId) {
@@ -199,50 +176,6 @@ function TomorrowsBasketScreen() {
     if (bump2 > bump1) chips.push(bump2);
     if (bump3 > bump2) chips.push(bump3);
     return chips;
-  };
-
-  const openRechargeSheet = () => {
-    const chips = getRechargeChips();
-    setSelectedRechargeAmount(chips[0] ?? 200);
-    setCustomAmount("");
-    setRechargeSheetVisible(true);
-  };
-
-  const handleProceedRecharge = async () => {
-    const amount = customAmount ? Number(customAmount) : selectedRechargeAmount;
-    if (!amount || amount < 1) {
-      toast.show(t.basket.invalidAmount, "error");
-      return;
-    }
-    setRecharging(true);
-    try {
-      const res = await api.post<RazorpayData>("/api/v1/wallet/recharge", { amount });
-      setRazorpayData(res.data);
-      setRechargeSheetVisible(false);
-      setRazorpayVisible(true);
-    } catch {
-      toast.show(t.basket.rechargeFailed, "error");
-    } finally {
-      setRecharging(false);
-    }
-  };
-
-  const handleRechargeSuccess = async (data: { razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string }) => {
-    setRazorpayVisible(false);
-    try {
-      await api.post("/api/v1/wallet/recharge/verify", {
-        ...data,
-        amount: razorpayData?.amount ?? 0,
-      });
-      toast.show(t.basket.rechargeSuccess, "success");
-      fetchBasket();
-    } catch {
-      toast.show(t.basket.verificationPending, "info");
-    }
-  };
-
-  const handleRechargeCancel = () => {
-    setRazorpayVisible(false);
   };
 
   if (loading) {
@@ -532,7 +465,7 @@ function TomorrowsBasketScreen() {
             <TouchableOpacity
               style={styles.rechargeButton}
               activeOpacity={0.8}
-              onPress={openRechargeSheet}
+              onPress={() => setRechargeSheetVisible(true)}
             >
               <Ionicons name="add-circle" size={18} color="#fff" />
               <Text style={styles.rechargeButtonText}>
@@ -543,103 +476,14 @@ function TomorrowsBasketScreen() {
         )}
       </View>
 
-      {/* Recharge Amount Sheet */}
-      <Modal
+      <WalletRecharge
         visible={rechargeSheetVisible}
-        transparent
-        animationType="slide"
-        onRequestClose={() => setRechargeSheetVisible(false)}
-      >
-        <KeyboardAvoidingView style={styles.sheetKeyboard} behavior={Platform.OS === "ios" ? "padding" : undefined}>
-        <Pressable style={styles.sheetOverlay} onPress={() => setRechargeSheetVisible(false)}>
-          <Pressable style={[styles.sheetContent, { paddingBottom: Math.max(insets.bottom, 16) + 8 }]} onPress={() => {}}>
-            <View style={styles.sheetHandle} />
-            <Text style={styles.sheetTitle}>{t.basket.rechargeWallet}</Text>
-            <Text style={styles.sheetSubtitle}>
-              {t.basket.youNeed(Math.ceil(basket!.total - basket!.walletBalance))}
-            </Text>
-
-            {/* Amount chips */}
-            <View style={styles.chipRow}>
-              {getRechargeChips().map((amt) => {
-                const isActive = !customAmount && selectedRechargeAmount === amt;
-                return (
-                  <TouchableOpacity
-                    key={amt}
-                    style={[styles.chip, isActive && styles.chipActive]}
-                    activeOpacity={0.7}
-                    onPress={() => { setSelectedRechargeAmount(amt); setCustomAmount(""); }}
-                  >
-                    <Text style={[styles.chipText, isActive && styles.chipTextActive]}>
-                      {"\u20B9"}{amt}
-                    </Text>
-                    {amt === getRechargeChips()[0] && (
-                      <Text style={[styles.chipHint, isActive && styles.chipHintActive]}>{t.basket.min}</Text>
-                    )}
-                  </TouchableOpacity>
-                );
-              })}
-            </View>
-
-            {/* Custom amount */}
-            <View style={styles.customAmountRow}>
-              <Text style={styles.customAmountLabel}>{t.basket.orEnter}</Text>
-              <View style={styles.customInputWrap}>
-                <Text style={styles.customInputPrefix}>{"\u20B9"}</Text>
-                <TextInput
-                  style={styles.customInput}
-                  placeholder="500"
-                  placeholderTextColor="#94a3b8"
-                  keyboardType="number-pad"
-                  value={customAmount}
-                  onChangeText={(text) => {
-                    setCustomAmount(text.replace(/[^0-9]/g, ""));
-                  }}
-                  onFocus={() => setCustomAmount("")}
-                />
-              </View>
-            </View>
-
-            {/* Proceed button */}
-            <TouchableOpacity
-              style={[styles.proceedButton, recharging && styles.proceedButtonDisabled]}
-              activeOpacity={0.8}
-              onPress={handleProceedRecharge}
-              disabled={recharging}
-            >
-              {recharging ? (
-                <Loader size="small" color="#fff" />
-              ) : (
-                <Text style={styles.proceedButtonText}>
-                  {t.basket.addToWallet(customAmount || selectedRechargeAmount)}
-                </Text>
-              )}
-            </TouchableOpacity>
-          </Pressable>
-        </Pressable>
-        </KeyboardAvoidingView>
-      </Modal>
-
-      {/* Razorpay Checkout */}
-      {razorpayData && (
-        <RazorpayCheckout
-          visible={razorpayVisible}
-          keyId={razorpayData.key_id}
-          orderId={razorpayData.razorpay_order_id}
-          amount={razorpayData.amount}
-          currency={razorpayData.currency}
-          customerId={razorpayData.customer_id}
-          name="Martly"
-          description="Wallet Recharge"
-          prefill={{
-            email: user?.email ?? "",
-            contact: user?.phone ?? "",
-            name: user?.name ?? "",
-          }}
-          onSuccess={handleRechargeSuccess}
-          onCancel={handleRechargeCancel}
-        />
-      )}
+        chips={getRechargeChips()}
+        subtitle={t.basket.youNeed(Math.ceil(basket.total - basket.walletBalance))}
+        firstIsMinimum
+        onClose={() => setRechargeSheetVisible(false)}
+        onRecharged={fetchBasket}
+      />
     </View>
   );
 }
@@ -973,125 +817,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   rechargeButtonText: {
-    fontSize: fontSize.md,
-    fontFamily: fonts.semibold,
-    color: "#fff",
-  },
-
-  // Recharge sheet
-  sheetKeyboard: { flex: 1 },
-  sheetOverlay: {
-    flex: 1,
-    backgroundColor: "rgba(0,0,0,0.4)",
-    justifyContent: "flex-end",
-  },
-  sheetContent: {
-    backgroundColor: "#fff",
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-    paddingHorizontal: 20,
-    paddingTop: 12,
-  },
-  sheetHandle: {
-    width: 36,
-    height: 4,
-    borderRadius: 2,
-    backgroundColor: "#d1d5db",
-    alignSelf: "center",
-    marginBottom: 16,
-  },
-  sheetTitle: {
-    fontSize: fontSize.xl,
-    fontFamily: fonts.bold,
-    color: colors.text,
-  },
-  sheetSubtitle: {
-    fontSize: fontSize.sm,
-    fontFamily: fonts.regular,
-    color: colors.textSecondary,
-    marginTop: 4,
-    marginBottom: 20,
-  },
-  chipRow: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 10,
-    marginBottom: 20,
-  },
-  chip: {
-    paddingHorizontal: 18,
-    paddingVertical: 10,
-    borderRadius: 10,
-    borderWidth: 1.5,
-    borderColor: colors.border,
-    backgroundColor: "#fff",
-    alignItems: "center",
-  },
-  chipActive: {
-    borderColor: colors.primary,
-    backgroundColor: colors.primary + "0D",
-  },
-  chipText: {
-    fontSize: fontSize.md,
-    fontFamily: fonts.semibold,
-    color: colors.text,
-  },
-  chipTextActive: {
-    color: colors.primary,
-  },
-  chipHint: {
-    fontSize: 10,
-    fontFamily: fonts.medium,
-    color: colors.textSecondary,
-    marginTop: 1,
-  },
-  chipHintActive: {
-    color: colors.primary,
-  },
-  customAmountRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginBottom: 20,
-  },
-  customAmountLabel: {
-    fontSize: fontSize.sm,
-    fontFamily: fonts.medium,
-    color: colors.textSecondary,
-  },
-  customInputWrap: {
-    flexDirection: "row",
-    alignItems: "center",
-    borderWidth: 1.5,
-    borderColor: colors.border,
-    borderRadius: 10,
-    paddingHorizontal: 12,
-    width: 130,
-  },
-  customInputPrefix: {
-    fontSize: fontSize.md,
-    fontFamily: fonts.semibold,
-    color: colors.textSecondary,
-    marginRight: 4,
-  },
-  customInput: {
-    flex: 1,
-    fontSize: fontSize.md,
-    fontFamily: fonts.semibold,
-    color: colors.text,
-    paddingVertical: 10,
-  },
-  proceedButton: {
-    backgroundColor: colors.primary,
-    paddingVertical: 14,
-    borderRadius: 12,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  proceedButtonDisabled: {
-    opacity: 0.7,
-  },
-  proceedButtonText: {
     fontSize: fontSize.md,
     fontFamily: fonts.semibold,
     color: "#fff",

@@ -16,6 +16,7 @@ import { withSignIn } from "../components/SignInPrompt";
 import { strings } from "../lib/i18n";
 import { useStrings } from "../lib/i18n/use-strings";
 import { formatDate, formatTime } from "../lib/i18n/format";
+import { WalletRecharge } from "../components/account/WalletRecharge";
 
 interface WalletTransaction {
   id: string;
@@ -27,6 +28,8 @@ interface WalletTransaction {
   orderId: string | null;
   createdAt: string;
 }
+
+const RECHARGE_CHIPS = [200, 500, 1000, 2000];
 
 interface WalletData {
   balance: number;
@@ -40,6 +43,7 @@ function WalletScreen() {
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [rechargeVisible, setRechargeVisible] = useState(false);
 
   const fetchWallet = useCallback(async () => {
     try {
@@ -165,6 +169,10 @@ function WalletScreen() {
       <Text style={styles.balanceLabel}>{t.balanceLabel}</Text>
       <Text style={styles.balanceAmount}>{"\u20B9"}{balance.toFixed(2)}</Text>
       <Text style={styles.balanceHint}>{t.balanceHint}</Text>
+      <TouchableOpacity style={styles.addMoneyBtn} activeOpacity={0.8} onPress={() => setRechargeVisible(true)}>
+        <Ionicons name="add" size={18} color={colors.primary} />
+        <Text style={styles.addMoneyText}>{t.addMoney}</Text>
+      </TouchableOpacity>
     </View>
   );
 
@@ -179,24 +187,33 @@ function WalletScreen() {
   );
 
   return (
-    <FlatList keyboardDismissMode="on-drag"
-      style={styles.container}
-      contentContainerStyle={styles.content}
-      data={transactions}
-      keyExtractor={(item) => item.id}
-      renderItem={renderTransaction}
-      ListHeaderComponent={ListHeader}
-      ListEmptyComponent={ListEmpty}
-      refreshControl={
-        <RefreshControl
-          refreshing={refreshing}
-          onRefresh={handleRefresh}
-          tintColor={colors.primary}
-        />
-      }
-      ItemSeparatorComponent={() => <View style={styles.separator} />}
-      showsVerticalScrollIndicator={false}
-    />
+    <>
+      <FlatList keyboardDismissMode="on-drag"
+        style={styles.container}
+        contentContainerStyle={styles.content}
+        data={transactions}
+        keyExtractor={(item) => item.id}
+        renderItem={renderTransaction}
+        ListHeaderComponent={ListHeader}
+        ListEmptyComponent={ListEmpty}
+        refreshControl={
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={handleRefresh}
+            tintColor={colors.primary}
+          />
+        }
+        ItemSeparatorComponent={() => <View style={styles.separator} />}
+        showsVerticalScrollIndicator={false}
+      />
+      <WalletRecharge
+        visible={rechargeVisible}
+        chips={RECHARGE_CHIPS}
+        subtitle={t.addMoneyHint}
+        onClose={() => setRechargeVisible(false)}
+        onRecharged={fetchWallet}
+      />
+    </>
   );
 }
 
@@ -258,6 +275,21 @@ const styles = StyleSheet.create({
     color: "rgba(255,255,255,0.65)",
     marginTop: 8,
     textAlign: "center",
+  },
+  addMoneyBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    marginTop: 16,
+    minHeight: 44,
+    paddingHorizontal: 22,
+    borderRadius: 22,
+    backgroundColor: "#fff",
+  },
+  addMoneyText: {
+    fontSize: 15,
+    fontWeight: "700",
+    color: colors.primary,
   },
 
   // Transactions
