@@ -15,6 +15,8 @@ import { productRoutes } from "./routes/products/index.js";
 import { orderRoutes } from "./routes/orders/index.js";
 import { storeProductRoutes } from "./routes/store-products/index.js";
 import { offerRoutes } from "./routes/offers/index.js";
+import { priceReviewRoutes } from "./routes/price-review/index.js";
+import { stockCheckRoutes } from "./routes/stock-check/index.js";
 import { storefrontRoutes } from "./routes/storefront/index.js";
 import { looseStapleRoutes } from "./routes/loose-staples/index.js";
 import { uploadRoutes } from "./routes/uploads/index.js";
@@ -177,6 +179,8 @@ export async function buildApp() {
       await api.register(orderRoutes, { prefix: "/orders" });
       await api.register(storeProductRoutes, { prefix: "/store-products" });
       await api.register(offerRoutes, { prefix: "/offers" });
+      await api.register(priceReviewRoutes, { prefix: "/price-review" });
+      await api.register(stockCheckRoutes, { prefix: "/stock-check" });
       await api.register(storefrontRoutes, { prefix: "/storefront" });
       await api.register(looseStapleRoutes, { prefix: "/loose-staples" });
       await api.register(uploadRoutes, { prefix: "/uploads" });

@@ -21,6 +21,8 @@ export interface StoreSizeRule {
   tiers: SubcategoryTier[];
   brandsPerAisle: number;
   productsPerAisle: number;
+  /** The aisle's top picks that go live at launch; the rest are listed hidden, as suggestions to confirm in Stock check */
+  likelyPerAisle: number;
 }
 
 /** What each shop format carries in its proposed catalog; an aisle is a subcategory */
@@ -31,6 +33,7 @@ export const STORE_SIZE_RULES: Record<StoreSize, StoreSizeRule> = {
     tiers: ["ESSENTIAL"],
     brandsPerAisle: 3,
     productsPerAisle: 8,
+    likelyPerAisle: 4,
   },
   SUPERMARKET: {
     label: "Supermarket",
@@ -38,6 +41,7 @@ export const STORE_SIZE_RULES: Record<StoreSize, StoreSizeRule> = {
     tiers: ["ESSENTIAL", "STANDARD"],
     brandsPerAisle: 6,
     productsPerAisle: 25,
+    likelyPerAisle: 10,
   },
   HYPERMARKET: {
     label: "Large supermarket",
@@ -45,6 +49,7 @@ export const STORE_SIZE_RULES: Record<StoreSize, StoreSizeRule> = {
     tiers: ["ESSENTIAL", "STANDARD", "EXTENDED"],
     brandsPerAisle: 12,
     productsPerAisle: 60,
+    likelyPerAisle: 25,
   },
 };
 

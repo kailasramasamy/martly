@@ -134,6 +134,12 @@ enum DiscountType {
   PERCENTAGE
 }
 
+/// How a manager settled a listing's onboarding price: kept it, or changed its price/MRP
+enum PriceReviewOutcome {
+  KEPT
+  CHANGED
+}
+
 enum ReviewStatus {
   PENDING
   APPROVED
@@ -679,6 +685,8 @@ model User {
   templatesCreated    NotificationTemplate[]   @relation("TemplatesCreated")
   reviewReplies       ReviewReply[]            @relation("ReviewReplies")
   storeRatings        StoreRating[]            @relation("StoreRatings")
+  priceReviews        StoreProduct[]           @relation("PriceReviews")
+  carryChecks         StoreProduct[]           @relation("CarryChecks")
   referralsMade       Referral[]               @relation("ReferralsMade")
   referralReceived    Referral[]               @relation("ReferralReceived")
   supportTickets      SupportTicket[]
@@ -960,6 +968,20 @@ model StoreProduct {
   discountEnd   DateTime?     @map("discount_end")
   memberPrice   Decimal?      @map("member_price") @db.Decimal(10, 2)
 
+  /// The MRP on this store's packs when it differs from the master variant's; customers see mrp ?? variant.mrp
+  mrp                Decimal?            @db.Decimal(10, 2)
+  priceReviewedAt    DateTime?           @map("price_reviewed_at")
+  priceReviewedById  String?             @map("price_reviewed_by_id")
+  priceReviewOutcome PriceReviewOutcome? @map("price_review_outcome")
+  /// Whether the store stocks it: null is onboarding's guess, false is "not sold here" (always hidden)
+  carried            Boolean?
+  /// What `carried` was before the last stock-check write, so its undo puts it back
+  carriedBefore      Boolean?            @map("carried_before")
+  carryCheckedAt     DateTime?           @map("carry_checked_at")
+  carryCheckedById   String?             @map("carry_checked_by_id")
+  /// Onboarding listed it hidden, as a less likely pick the store can switch on; records origin, never cleared
+  suggested          Boolean             @default(false)
+
   /// Buy X get Y free on this product: every offerBuyQty paid units bring offerGetQty free ones
   offerBuyQty Int?      @map("offer_buy_qty")
   offerGetQty Int?      @map("offer_get_qty")
@@ -976,8 +998,12 @@ model StoreProduct {
   promoPriceChanges     PromoPriceChange[]
   stockMovements        StockMovement[]
   stockCountLines       StockCountLine[]
+  priceReviewedBy       User?                      @relation("PriceReviews", fields: [priceReviewedById], references: [id])
+  carryCheckedBy        User?                      @relation("CarryChecks", fields: [carryCheckedById], references: [id])
 
   @@unique([storeId, variantId])
+  @@index([storeId, priceReviewedAt])
+  @@index([storeId, carried])
   @@map("store_products")
 }
 

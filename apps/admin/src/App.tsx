@@ -10,6 +10,8 @@ import {
   ShopOutlined,
   AppstoreOutlined,
   TagsOutlined,
+  TagOutlined,
+  CheckSquareOutlined,
   ShoppingCartOutlined,
   TrademarkOutlined,
   TeamOutlined,
@@ -141,6 +143,8 @@ import { PromoList } from "./pages/promos/list";
 import { PromoShow } from "./pages/promos/show";
 import { PromoCreate } from "./pages/promos/create";
 import { OfferList } from "./pages/offers/list";
+import { PriceReviewPage } from "./pages/price-review";
+import { StockCheckPage } from "./pages/stock-check";
 import { OfferCreate } from "./pages/offers/create";
 import { StorefrontList } from "./pages/storefront/list";
 import { StorefrontShow } from "./pages/storefront/show";
@@ -334,6 +338,16 @@ export default function App() {
               {
                 name: "inventory",
                 meta: { label: "Inventory", icon: <InboxOutlined /> },
+              },
+              {
+                name: "price-review",
+                list: "/price-review",
+                meta: { label: "Price review", icon: <TagOutlined />, parent: "inventory" },
+              },
+              {
+                name: "stock-check",
+                list: "/stock-check",
+                meta: { label: "Stock check", icon: <CheckSquareOutlined />, parent: "inventory" },
               },
               {
                 name: "categories",
@@ -772,6 +786,8 @@ export default function App() {
                   <Route index element={<SupportTicketList />} />
                   <Route path="show/:id" element={<SupportTicketShow />} />
                 </Route>
+                <Route path="/price-review" element={<PriceReviewPage />} />
+                <Route path="/stock-check" element={<StockCheckPage />} />
                 <Route path="/offers">
                   <Route index element={<OfferList />} />
                   <Route path="create" element={<OfferCreate />} />

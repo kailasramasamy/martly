@@ -542,6 +542,8 @@ export * from "./web.js";
 export * from "./web-home.js";
 export * from "./web-search.js";
 export * from "./offers.js";
+export * from "./price-review.js";
+export * from "./stock-check.js";
 export * from "./store-resolve.js";
 export * from "./storefront.js";
 export * from "./loose-staples.js";

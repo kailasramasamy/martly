@@ -70,12 +70,14 @@ export function AislePanel({ aisle, products, otherBrands, loading, rules, onRul
         <Title level={5} style={{ margin: 0 }}>{aisle.name}</Title>
         <Tag>{aisle.tier.toLowerCase()}</Tag>
         {!aisle.included && <Tag color="default">Not carried</Tag>}
-        <Text type="secondary">{aisle.products} of {aisle.available} products · {aisle.variants} sizes</Text>
+        <Text type="secondary">{aisle.products} of {aisle.available} products ({aisle.likely} visible) · {aisle.variants} sizes</Text>
       </Space>
       <BrandList aisle={aisle} otherBrands={otherBrands} rules={rules} onRulesChange={onRulesChange} />
       <Table<ProposalProduct> rowKey="id" size="small" dataSource={products} pagination={{ pageSize: 25, hideOnSinglePage: true }}>
         <Table.Column<ProposalProduct> width={56} render={(_, p) => p.imageUrl && <Image src={p.imageUrl} width={40} height={40} style={{ objectFit: "contain" }} preview={false} />} />
-        <Table.Column<ProposalProduct> title="Product" dataIndex="name" />
+        <Table.Column<ProposalProduct> title="Product" render={(_, p) => (
+          <Space size={6}>{p.name}{!p.likely && <Tooltip title="Listed hidden until the store confirms it in Stock check"><Tag>Suggestion</Tag></Tooltip>}</Space>
+        )} />
         <Table.Column<ProposalProduct> title="Brand" render={(_, p) => p.brand ? <Space size={4}>{p.brand.regional && regionalMark}{p.brand.name}</Space> : <Text type="secondary">Loose</Text>} />
         <Table.Column<ProposalProduct> title="Sizes · MRP" render={(_, p) => sizesLabel(p)} />
       </Table>

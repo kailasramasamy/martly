@@ -7,7 +7,7 @@ import { requirePermission, requireRole } from "../../middleware/authorize.js";
 import { Permission, ownBrandStoreId } from "@martly/shared/constants";
 import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
-import { formatVariantUnit } from "../../services/units.js";
+import { storeVariant } from "../../services/units.js";
 import { reviewSummaries, withAllSizes, withReviews } from "../../services/store-feed.js";
 import { searchStoreProducts } from "../../services/store-search.js";
 import { decorateStoreProducts, storeProductInclude } from "../../services/store-product-view.js";
@@ -238,7 +238,7 @@ export async function storeRoutes(app: FastifyInstance) {
 
       const response: ApiResponse<typeof storeProduct> = {
         success: true,
-        data: { ...storeProduct, variant: formatVariantUnit(storeProduct.variant) },
+        data: { ...storeProduct, variant: storeVariant(storeProduct) },
       };
       return response;
     },
@@ -449,7 +449,7 @@ export async function storeRoutes(app: FastifyInstance) {
           sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
           (sp as unknown as { memberPrice: number | null }).memberPrice,
         );
-        const variant = formatVariantUnit(sp.variant);
+        const variant = storeVariant(sp);
         const reviews = reviewMap.get(sp.productId);
         const product = reviews ? { ...sp.product, averageRating: reviews.averageRating, reviewCount: reviews.reviewCount } : sp.product;
         return { ...sp, product, variant, pricing, availableStock: sp.stock - sp.reservedStock };

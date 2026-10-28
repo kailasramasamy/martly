@@ -19,12 +19,14 @@ interface Context {
   tiers: Set<string>;
   brandsPerAisle: number;
   productsPerAisle: number;
+  likelyPerAisle: number;
   rules: CatalogRules;
 }
 
 interface BrandGroup extends ProposalBrand { score: number; members: Candidate[] }
 
-export interface AislePick { included: boolean; available: number; brands: ProposalBrand[]; picked: Candidate[]; candidates: Candidate[] }
+/** `picked` is in rank order, and its first `likely` go live at launch */
+export interface AislePick { included: boolean; available: number; brands: ProposalBrand[]; picked: Candidate[]; likely: number; candidates: Candidate[] }
 
 const isRegional = (c: Candidate, region: string | null) =>
   !!region && !!c.brand && c.brand.regions.includes(region) && !c.brand.regions.includes("ALL");
@@ -79,7 +81,7 @@ function pickAisle(subcategoryId: string, tier: string, candidates: Candidate[],
   const brands = kept.map(({ id, name, regional }) => ({
     id, name, regional, products: picked.filter((p) => (p.brand?.id ?? null) === id).length,
   }));
-  return { included, available: candidates.length, brands, picked, candidates };
+  return { included, available: candidates.length, brands, picked, likely: Math.min(picked.length, ctx.likelyPerAisle), candidates };
 }
 
 /** The aisle's brands the pick left out, best first, so one can be added by hand */
@@ -90,9 +92,9 @@ function otherBrands(pick: AislePick, ctx: Context) {
   }));
 }
 
-function toProduct(c: Candidate, region: string | null, listed: Set<string>): ProposalProduct {
+function toProduct(c: Candidate, likely: boolean, region: string | null, listed: Set<string>): ProposalProduct {
   return {
-    id: c.id, name: c.name, imageUrl: c.imageUrl,
+    id: c.id, name: c.name, imageUrl: c.imageUrl, likely,
     brand: c.brand ? { id: c.brand.id, name: c.brand.name, regional: isRegional(c, region) } : null,
     variants: c.variants.map((v) => ({ ...v, listed: listed.has(v.id) })),
   };
@@ -108,7 +110,7 @@ function buildTree(taxonomy: TaxonomyRow[], picks: Map<string, AislePick>): Prop
     const pick = picks.get(row.subcategory_id)!;
     const aisle: ProposalAisle = {
       id: row.subcategory_id, name: row.subcategory, tier: row.tier, included: pick.included, available: pick.available,
-      products: pick.picked.length, variants: pick.picked.reduce((n, p) => n + p.variants.length, 0), brands: pick.brands,
+      products: pick.picked.length, likely: pick.likely, variants: pick.picked.reduce((n, p) => n + p.variants.length, 0), brands: pick.brands,
     };
     cat.aisles.push(aisle);
   }
@@ -123,6 +125,7 @@ export async function proposeCatalog(prisma: PrismaClient, store: { id: string; 
     tiers: new Set(sizeRule.tiers),
     brandsPerAisle: rules.brandsPerAisle ?? sizeRule.brandsPerAisle,
     productsPerAisle: rules.productsPerAisle ?? sizeRule.productsPerAisle,
+    likelyPerAisle: rules.likelyPerAisle ?? sizeRule.likelyPerAisle,
     rules,
   };
   const [candidates, taxonomy] = await Promise.all([loadCandidates(prisma), loadTaxonomy(prisma)]);
@@ -132,10 +135,10 @@ export async function proposeCatalog(prisma: PrismaClient, store: { id: string; 
   return { ctx, taxonomy, picks };
 }
 
-/** The sizes the proposal lists: MRP-priced ones are listed directly, the rest wait for a price */
+/** The sizes the proposal lists: MRP-priced ones are listed directly, the rest wait for a price; unlikely ones start hidden */
 export function proposedVariants(picks: Map<string, AislePick>) {
-  return [...picks.values()].filter((p) => p.included).flatMap((p) => p.picked.flatMap((c) =>
-    c.variants.map((v) => ({ productId: c.id, variantId: v.id, mrp: v.mrp }))));
+  return [...picks.values()].filter((p) => p.included).flatMap((p) => p.picked.flatMap((c, rank) =>
+    c.variants.map((v) => ({ productId: c.id, variantId: v.id, mrp: v.mrp, likely: rank < p.likely }))));
 }
 
 /** The proposal as the wizard shows it, with one aisle's products when asked */
@@ -156,15 +159,18 @@ export async function catalogProposal(
     size: store.size,
     brandsPerAisle: ctx.brandsPerAisle,
     productsPerAisle: ctx.productsPerAisle,
+    likelyPerAisle: ctx.likelyPerAisle,
     totals: {
       aisles: included.length,
       brands: brandIds.size,
       products: included.reduce((n, p) => n + p.picked.length, 0),
+      visible: included.reduce((n, p) => n + p.likely, 0),
+      suggested: included.reduce((n, p) => n + p.picked.length - p.likely, 0),
       variants: variants.length,
       needsPrice: loose.filter((id) => !suggested.has(id)).length,
       listed: listed.size,
     },
     departments: buildTree(taxonomy, picks),
-    ...(aisle ? { products: aisle.picked.map((c) => toProduct(c, ctx.region, listed)), otherBrands: otherBrands(aisle, ctx) } : {}),
+    ...(aisle ? { products: aisle.picked.map((c, rank) => toProduct(c, rank < aisle.likely, ctx.region, listed)), otherBrands: otherBrands(aisle, ctx) } : {}),
   };
 }

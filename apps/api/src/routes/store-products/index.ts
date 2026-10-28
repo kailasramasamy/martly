@@ -8,19 +8,19 @@ import { INVENTORY_DUTIES, forbiddenStoreProductFields } from "@martly/shared/pe
 import { applyMovement, recordOpeningStock } from "../../services/stock-ledger.js";
 import { requireOrgContext, getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
-import { formatVariantUnit } from "../../services/units.js";
+import { storeVariant } from "../../services/units.js";
 import { searchProductsForAdmin } from "../../services/search.js";
 import { fetchRankedPage } from "../../services/ranked-page.js";
 import { countIds, subcategoryFacets, type SubcategoryFacet } from "../../services/search-facets.js";
 
-function withPricing(sp: { stock: number; reservedStock: number; price: unknown; memberPrice?: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown; offerBuyQty?: number | null; offerGetQty?: number | null; offerStart?: Date | null; offerEnd?: Date | null; variant: { unitType: string; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown } }) {
+function withPricing(sp: { stock: number; reservedStock: number; price: unknown; mrp?: unknown; memberPrice?: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown; offerBuyQty?: number | null; offerGetQty?: number | null; offerStart?: Date | null; offerEnd?: Date | null; variant: { unitType: string; mrp: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown } }) {
   const pricing = calculateEffectivePrice(
     sp.price as number,
     sp.variant as Parameters<typeof calculateEffectivePrice>[1],
     sp as Parameters<typeof calculateEffectivePrice>[2],
     sp.memberPrice as number | null | undefined,
   );
-  return { ...sp, variant: formatVariantUnit(sp.variant), pricing, availableStock: sp.stock - sp.reservedStock };
+  return { ...sp, variant: storeVariant(sp), pricing, availableStock: sp.stock - sp.reservedStock };
 }
 
 export async function storeProductRoutes(app: FastifyInstance) {
@@ -242,6 +242,8 @@ export async function storeProductRoutes(app: FastifyInstance) {
           variantId: item.variantId,
           price: item.price,
           stock: item.stock,
+          // Picked by hand, so the store carries it
+          carried: true,
           discountType: item.discountType ?? undefined,
           discountValue: item.discountValue ?? undefined,
           discountStart: item.discountStart ?? undefined,
@@ -281,11 +283,15 @@ export async function storeProductRoutes(app: FastifyInstance) {
     }
 
     const { stock, ...fields } = body;
+    // Setting the price or MRP by hand settles the listing's price review too
+    const reviewed = "price" in changed || "mrp" in changed
+      ? { priceReviewedAt: new Date(), priceReviewedById: request.user.sub, priceReviewOutcome: "CHANGED" as const }
+      : {};
     const storeProduct = await app.prisma.$transaction(async (tx) => {
       if (stock !== undefined && stock !== existing.stock) {
         await applyMovement(tx, { storeProductId: existing.id, quantity: stock - existing.stock, type: "MANUAL", note: "Stock edited", userId: request.user.sub });
       }
-      return tx.storeProduct.update({ where: { id: request.params.id }, data: fields, include: spInclude });
+      return tx.storeProduct.update({ where: { id: request.params.id }, data: { ...fields, ...reviewed }, include: spInclude });
     });
 
     const response: ApiResponse<ReturnType<typeof withPricing>> = { success: true, data: withPricing(storeProduct) };

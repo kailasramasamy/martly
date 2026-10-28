@@ -1,6 +1,6 @@
 import type { Prisma, PrismaClient } from "../../generated/prisma/index.js";
 import { calculateEffectivePrice } from "./pricing.js";
-import { formatVariantUnit } from "./units.js";
+import { storeVariant } from "./units.js";
 import { ownerPicks } from "./store-voice/picks.js";
 
 export const storeProductInclude = {
@@ -65,7 +65,7 @@ export async function decorateStoreProducts(prisma: PrismaClient, rows: StorePro
     const isBestseller = topByStore.get(sp.storeId)?.has(sp.productId) ?? false;
     const product = { ...sp.product, ...reviews, isBestseller };
     const ownerPick = picks.get(`${sp.storeId}:${sp.productId}`) ?? null;
-    return { ...sp, product, variant: formatVariantUnit(sp.variant), pricing, availableStock: sp.stock - sp.reservedStock, ownerPick };
+    return { ...sp, product, variant: storeVariant(sp), pricing, availableStock: sp.stock - sp.reservedStock, ownerPick };
   });
 }
 

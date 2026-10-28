@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Card, Col, InputNumber, Row, Space, Statistic, Typography, App } from "antd";
+import { Button, Card, Col, InputNumber, Row, Space, Statistic, Tooltip, Typography, App } from "antd";
 import { AppstoreOutlined, UndoOutlined } from "@ant-design/icons";
 import { STORE_SIZE_RULES } from "@martly/shared/constants";
 import type { CatalogRules } from "@martly/shared/schemas";
@@ -57,7 +57,7 @@ function useProposal(storeId: string, rules: CatalogRules, aisleId?: string) {
 
 function Totals({ proposal }: { proposal: CatalogProposal }) {
   const t = proposal.totals;
-  const stats: [string, number][] = [["Aisles", t.aisles], ["Brands", t.brands], ["Products", t.products], ["Sizes", t.variants], ["Need a price", t.needsPrice], ["Listed now", t.listed]];
+  const stats: [string, number][] = [["Aisles", t.aisles], ["Brands", t.brands], ["Products", t.products], ["Visible at launch", t.visible], ["Hidden suggestions", t.suggested], ["Sizes", t.variants], ["Need a price", t.needsPrice], ["Listed now", t.listed]];
   return (
     <Space size={32} wrap>
       {stats.map(([title, value]) => <Statistic key={title} title={title} value={value} groupSeparator="," />)}
@@ -68,7 +68,7 @@ function Totals({ proposal }: { proposal: CatalogProposal }) {
 interface HeaderProps {
   proposal?: CatalogProposal;
   rules: CatalogRules;
-  defaults: { brandsPerAisle: number; productsPerAisle: number };
+  defaults: { brandsPerAisle: number; productsPerAisle: number; likelyPerAisle: number };
   onChange: (patch: Partial<CatalogRules>) => void;
   onReset: () => void;
 }
@@ -85,6 +85,9 @@ function CatalogHeader({ proposal, rules, defaults, onChange, onReset }: HeaderP
               <Text type="secondary">Per aisle:</Text>
               <InputNumber min={1} max={30} addonAfter="brands" placeholder={String(defaults.brandsPerAisle)} value={rules.brandsPerAisle} onChange={(v) => onChange({ brandsPerAisle: v ?? undefined })} style={{ width: 130 }} />
               <InputNumber min={1} max={200} addonAfter="products" placeholder={String(defaults.productsPerAisle)} value={rules.productsPerAisle} onChange={(v) => onChange({ productsPerAisle: v ?? undefined })} style={{ width: 150 }} />
+              <Tooltip title="The aisle's top picks go live at launch; the rest are listed hidden, for the store to switch on in Stock check">
+                <InputNumber min={0} max={200} addonAfter="visible" placeholder={String(defaults.likelyPerAisle)} value={rules.likelyPerAisle} onChange={(v) => onChange({ likelyPerAisle: v ?? undefined })} style={{ width: 140 }} />
+              </Tooltip>
               <Button icon={<UndoOutlined />} onClick={onReset}>Reset</Button>
             </Space>
           </Col>

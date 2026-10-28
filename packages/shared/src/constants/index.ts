@@ -100,6 +100,26 @@ export const UnitTypeLabels: Record<UnitType, string> = {
   BUNDLE: "Bundle",
 };
 
+/** Short unit labels as sizes are written: "500g", "1L", "6 pcs" */
+export const UNIT_SHORT_LABELS: Record<UnitType, string> = {
+  KG: "kg",
+  GRAM: "g",
+  LITER: "L",
+  ML: "ml",
+  PIECE: "pcs",
+  PACK: "pack",
+  DOZEN: "doz",
+  BUNDLE: "bundle",
+};
+
+const METRIC_UNITS: UnitType[] = ["KG", "GRAM", "LITER", "ML"];
+
+/** A size's name in the catalog's style: metric units run on ("1kg"), counts take a space ("6 pcs") */
+export function variantName(unitType: UnitType, unitValue: number) {
+  const unit = UNIT_SHORT_LABELS[unitType];
+  return METRIC_UNITS.includes(unitType) ? `${unitValue}${unit}` : `${unitValue} ${unit}`;
+}
+
 export const FoodType = {
   VEG: "VEG",
   NON_VEG: "NON_VEG",
@@ -194,6 +214,12 @@ export const DiscountType = {
   PERCENTAGE: "PERCENTAGE",
 } as const;
 export type DiscountType = (typeof DiscountType)[keyof typeof DiscountType];
+
+export const PriceReviewOutcome = {
+  KEPT: "KEPT",
+  CHANGED: "CHANGED",
+} as const;
+export type PriceReviewOutcome = (typeof PriceReviewOutcome)[keyof typeof PriceReviewOutcome];
 
 export const ReviewStatus = {
   PENDING: "PENDING",
@@ -589,6 +615,8 @@ export const ATTENTION_STALE_MINUTES = {
   reviews: 48 * 60,
   tickets: 4 * 60,
   catalog_drafts: 48 * 60,
+  stock_check: null,
+  price_review: null,
 } as const;
 export type AttentionKey = keyof typeof ATTENTION_STALE_MINUTES;
 

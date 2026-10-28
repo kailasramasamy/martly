@@ -69,6 +69,7 @@ export const catalogRulesSchema = z.object({
   includedBrandIds: z.array(z.string().uuid()).default([]),
   brandsPerAisle: z.number().int().min(1).max(30).optional(),
   productsPerAisle: z.number().int().min(1).max(200).optional(),
+  likelyPerAisle: z.number().int().min(0).max(200).optional(),
 });
 export type CatalogRules = z.infer<typeof catalogRulesSchema>;
 

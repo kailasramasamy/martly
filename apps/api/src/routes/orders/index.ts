@@ -248,9 +248,13 @@ export async function orderRoutes(app: FastifyInstance) {
     const membershipPlan = activeMembership?.plan ?? null;
 
     const storeProducts = await app.prisma.storeProduct.findMany({
-      where: { id: { in: body.items.map((i) => i.storeProductId) } },
+      where: { id: { in: body.items.map((i) => i.storeProductId) }, storeId: body.storeId, isActive: true },
       include: { variant: true },
     });
+    // A hidden or not-carried listing can still sit in an old cart
+    if (storeProducts.length !== new Set(body.items.map((i) => i.storeProductId)).size) {
+      return reply.badRequest("Some items in your cart are no longer sold at this store");
+    }
 
     let itemsTotal = 0;
 

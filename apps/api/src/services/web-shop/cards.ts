@@ -44,7 +44,7 @@ type Listing = CardRow["storeProducts"][number];
 
 function toPack(sp: Listing): WebPack {
   const { effectivePrice: price, originalPrice, offer } = calculateEffectivePrice(sp.price, sp.variant, sp);
-  const mrp = Math.max(Number(sp.variant.mrp ?? 0), originalPrice);
+  const mrp = Math.max(Number(sp.mrp ?? sp.variant.mrp ?? 0), originalPrice);
   const off = mrp > price;
   return {
     id: sp.id,

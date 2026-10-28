@@ -70,7 +70,7 @@ export function BottomSheet({ visible, title, onClose, children, footer, flush, 
         </Animated.View>
         <Animated.View style={[styles.sheet, { maxHeight, paddingBottom: Math.max(insets.bottom, spacing.md), transform: [{ translateY }] }]}>
           <View style={[styles.header, centeredTitle && styles.headerCentered]}>
-            <Text style={[styles.title, centeredTitle && styles.titleCentered]}>{title}</Text>
+            <Text style={[styles.title, centeredTitle && styles.titleCentered]} numberOfLines={2}>{title}</Text>
             <TouchableOpacity style={[styles.closeBtn, centeredTitle && styles.closeCentered]} onPress={onClose} accessibilityLabel={common.close}>
               <Ionicons name="close" size={22} color={colors.text} />
             </TouchableOpacity>
@@ -97,8 +97,8 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
   },
-  header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingLeft: spacing.md, paddingTop: spacing.sm },
-  title: { fontFamily: fonts.bold, fontSize: 17, color: colors.text },
+  header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingLeft: spacing.md, paddingRight: spacing.xs, paddingTop: spacing.sm },
+  title: { flexShrink: 1, fontFamily: fonts.bold, fontSize: 17, color: colors.text },
   closeBtn: { width: 44, height: 44, alignItems: "center", justifyContent: "center" },
   headerCentered: { justifyContent: "center", paddingHorizontal: 52, paddingTop: spacing.lg, paddingBottom: spacing.md },
   titleCentered: { textAlign: "center" },

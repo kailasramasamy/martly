@@ -2,7 +2,7 @@ import type { FastifyInstance } from "fastify";
 import Anthropic from "@anthropic-ai/sdk";
 import { authenticate } from "../../middleware/auth.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
-import { formatVariantUnit } from "../../services/units.js";
+import { storeVariant } from "../../services/units.js";
 import type { ApiResponse } from "@martly/shared/types";
 import { createRateLimiter } from "../../services/rate-limit.js";
 
@@ -103,7 +103,7 @@ async function executeSearchProducts(
       sp.variant as Parameters<typeof calculateEffectivePrice>[1],
       sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
     );
-    const variant = formatVariantUnit(sp.variant);
+    const variant = storeVariant(sp);
     return {
       storeProductId: sp.id,
       productId: sp.productId,
@@ -156,7 +156,7 @@ async function executeGetProductDetails(
       sp.variant as Parameters<typeof calculateEffectivePrice>[1],
       sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
     );
-    const variant = formatVariantUnit(sp.variant);
+    const variant = storeVariant(sp);
     return {
       storeProductId: sp.id,
       variantName: variant.name,
@@ -211,7 +211,7 @@ async function executeGetDeals(
       sp.variant as Parameters<typeof calculateEffectivePrice>[1],
       sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
     );
-    const variant = formatVariantUnit(sp.variant);
+    const variant = storeVariant(sp);
     return {
       storeProductId: sp.id,
       productId: sp.productId,

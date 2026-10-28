@@ -23,7 +23,7 @@ export async function unpricedProposal(
 
 const sellingPrice = (mrp: number, discountPct: number) => Math.max(1, Math.round(mrp * (1 - discountPct / 100)));
 
-type NewListing = { storeId: string; productId: string; variantId: string; price: number; stock: number };
+type NewListing = { storeId: string; productId: string; variantId: string; price: number; stock: number; isActive: boolean; suggested: boolean };
 
 async function createListings(prisma: PrismaClient, rows: NewListing[], userId: string) {
   await prisma.$transaction(async (tx) => {
@@ -35,7 +35,7 @@ async function createListings(prisma: PrismaClient, rows: NewListing[], userId: 
 }
 
 /**
- * Makes the store's listings match the proposal: sizes it no longer proposes go, new ones with an MRP are listed at the
+ * Makes the store's listings match the proposal: sizes it no longer proposes go (unless confirmed carried), new ones with an MRP are listed at the
  * pricing rule with opening stock, and listings already there keep their price and stock (so hand-set prices survive).
  * Loose sizes (no MRP) are listed next at their suggested price, worked out once the branded packs set the aisle's rate;
  * only those with nothing to go on wait for a hand-entered price.
@@ -49,12 +49,14 @@ export async function applyCatalog(
   const { picks } = await proposeCatalog(prisma, store, input);
   const proposed = proposedVariants(picks);
   const wanted = new Set(proposed.map((v) => v.variantId));
-  const existing = await prisma.storeProduct.findMany({ where: { storeId: store.id }, select: { id: true, variantId: true } });
+  const existing = await prisma.storeProduct.findMany({ where: { storeId: store.id }, select: { id: true, variantId: true, carried: true } });
   const have = new Set(existing.map((e) => e.variantId));
-  const removeIds = existing.filter((e) => !wanted.has(e.variantId)).map((e) => e.id);
+  // What the store confirmed it carries stays, whatever the proposal now says
+  const removeIds = existing.filter((e) => !wanted.has(e.variantId) && !e.carried).map((e) => e.id);
+  const launch = (v: { likely: boolean }) => ({ isActive: v.likely, suggested: !v.likely });
   const toCreate = proposed.filter((v) => v.mrp !== null && !have.has(v.variantId)).map((v) => ({
     storeId: store.id, productId: v.productId, variantId: v.variantId,
-    price: sellingPrice(v.mrp!, input.discountPct), stock: input.openingStock,
+    price: sellingPrice(v.mrp!, input.discountPct), stock: input.openingStock, ...launch(v),
   }));
 
   await prisma.$transaction(async (tx) => {
@@ -67,7 +69,7 @@ export async function applyCatalog(
   const suggested = await suggestPrices(prisma, store.id, loose.map((v) => v.variantId));
   const looseRows = loose.flatMap((v) => {
     const start = suggested.get(v.variantId);
-    return start ? [{ storeId: store.id, productId: v.productId, variantId: v.variantId, price: start.price, stock: input.openingStock }] : [];
+    return start ? [{ storeId: store.id, productId: v.productId, variantId: v.variantId, price: start.price, stock: input.openingStock, ...launch(v) }] : [];
   });
   await createListings(prisma, looseRows, userId);
 

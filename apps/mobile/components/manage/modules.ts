@@ -45,6 +45,8 @@ const MODULE_GROUPS: ModuleGroup[] = [
     modules: [
       { resource: "stock-counts", label: "Stock counts", icon: "clipboard-outline", href: "/manage/stock-counts" },
       { resource: "stock-receive", label: "Receive stock", icon: "download-outline", href: "/manage/stock/receive" },
+      { resource: "stock-check", label: "Stock check", icon: "checkbox-outline", href: "/manage/stock-check" },
+      { resource: "price-review", label: "Price review", icon: "pricetags-outline", href: "/manage/price-review" },
     ],
   },
   {

@@ -117,12 +117,12 @@ export async function saveLooseStaples(prisma: PrismaClient, store: { id: string
   const repriced = input.items.filter((i) => byVariant.get(i.variantId)!.price !== null);
   await prisma.$transaction(async (tx) => {
     const created = await tx.storeProduct.createManyAndReturn({
-      data: fresh.map((i) => ({ storeId: store.id, productId: byVariant.get(i.variantId)!.product_id, variantId: i.variantId, price: i.price, stock: input.openingStock })),
+      data: fresh.map((i) => ({ storeId: store.id, productId: byVariant.get(i.variantId)!.product_id, variantId: i.variantId, price: i.price, stock: input.openingStock, carried: true })),
       select: { id: true, storeId: true, stock: true },
     });
     await recordOpeningStock(tx, created, userId);
     for (const i of repriced) {
-      await tx.storeProduct.update({ where: { storeId_variantId: { storeId: store.id, variantId: i.variantId } }, data: { price: i.price, isActive: true } });
+      await tx.storeProduct.update({ where: { storeId_variantId: { storeId: store.id, variantId: i.variantId } }, data: { price: i.price, isActive: true, carried: true } });
     }
   });
   return { listed: fresh.length, repriced: repriced.length };

@@ -25,6 +25,8 @@ const KINDS: Record<AttentionKey, { label: string; icon: keyof typeof Ionicons.g
   reviews: { label: "Reviews to moderate", icon: "star-outline", href: "/manage/reviews" },
   tickets: { label: "Support tickets open", icon: "chatbubbles-outline", href: "/manage/support-tickets" },
   catalog_drafts: { label: "Catalog drafts to review", icon: "sparkles-outline", href: "/manage/catalog-drafts" },
+  stock_check: { label: "Products to confirm", icon: "checkbox-outline", href: "/manage/stock-check" },
+  price_review: { label: "Prices to check", icon: "pricetags-outline", href: "/manage/price-review" },
 };
 
 function waited(iso: string): string {
@@ -48,7 +50,7 @@ function Row({ item, last, onPress }: { item: AttentionItem; last: boolean; onPr
         {item.oldestAt ? <Text style={[styles.age, stale && styles.ageStale]}>Oldest waiting {waited(item.oldestAt)}</Text> : null}
       </View>
       <View style={[styles.count, stale && styles.countStale]}>
-        <Text style={[styles.countText, tabular, stale && styles.countTextStale]}>{item.count}</Text>
+        <Text style={[styles.countText, tabular, stale && styles.countTextStale]}>{item.count.toLocaleString("en-IN")}</Text>
       </View>
       <Ionicons name="chevron-forward" size={18} color={manage.muted} />
     </TouchableOpacity>
@@ -77,8 +79,10 @@ export function AttentionCard({ storeId }: { storeId: string | null }) {
       </View>
     );
   }
+  // Thousands of onboarding prices would drown the count of urgent work, so the title counts the rest
+  const urgent = items.reduce((n, i) => n + (i.key === "price_review" || i.key === "stock_check" ? 0 : i.count), 0);
   return (
-    <SectionCard title={`Needs your attention · ${total}`} flush>
+    <SectionCard title={urgent ? `Needs your attention · ${urgent.toLocaleString("en-IN")}` : "Needs your attention"} flush>
       {items.map((item, i) => <Row key={item.key} item={item} last={i === items.length - 1} onPress={() => router.push(KINDS[item.key].href)} />)}
     </SectionCard>
   );

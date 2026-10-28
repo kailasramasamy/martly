@@ -33,6 +33,8 @@ export interface ProposalAisle {
   /** Candidate products before the brand and product caps */
   available: number;
   products: number;
+  /** Of `products`, those visible at launch; the rest are hidden suggestions */
+  likely: number;
   variants: number;
   brands: ProposalBrand[];
 }
@@ -45,6 +47,8 @@ export interface ProposalProduct {
   name: string;
   imageUrl: string | null;
   brand: { id: string; name: string; regional: boolean } | null;
+  /** Visible at launch; otherwise listed hidden as a suggestion */
+  likely: boolean;
   variants: { id: string; name: string; mrp: number | null; listed: boolean }[];
 }
 
@@ -53,7 +57,12 @@ export interface CatalogProposal {
   size: StoreSize;
   brandsPerAisle: number;
   productsPerAisle: number;
-  totals: { aisles: number; brands: number; products: number; variants: number; needsPrice: number; listed: number };
+  likelyPerAisle: number;
+  totals: {
+    aisles: number; brands: number; products: number; variants: number; needsPrice: number; listed: number;
+    /** Products visible at launch, and products listed hidden as suggestions */
+    visible: number; suggested: number;
+  };
   departments: ProposalDepartment[];
   /** The requested aisle's proposed products */
   products?: ProposalProduct[];

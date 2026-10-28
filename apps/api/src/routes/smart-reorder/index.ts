@@ -3,7 +3,7 @@ import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
-import { formatVariantUnit } from "../../services/units.js";
+import { storeVariant } from "../../services/units.js";
 import { predictReorders } from "../../services/reorder.js";
 
 export async function smartReorderRoutes(app: FastifyInstance) {
@@ -63,7 +63,7 @@ export async function smartReorderRoutes(app: FastifyInstance) {
           sp.variant as Parameters<typeof calculateEffectivePrice>[1],
           sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
         );
-        const variant = formatVariantUnit(sp.variant);
+        const variant = storeVariant(sp);
         const availableStock = sp.stock - sp.reservedStock;
 
         if (pred.status === "overdue") overdueCount++;

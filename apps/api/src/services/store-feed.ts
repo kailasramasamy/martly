@@ -1,6 +1,6 @@
 import type { PrismaClient } from "../../generated/prisma/client.js";
 import { calculateEffectivePrice } from "./pricing.js";
-import { formatVariantUnit } from "./units.js";
+import { storeVariant } from "./units.js";
 
 export const STORE_PRODUCT_INCLUDE = {
   product: { include: { subcategory: true, brand: true, variants: true } },
@@ -13,7 +13,7 @@ export function enrichStoreProduct(sp: any) {
     sp.variant as Parameters<typeof calculateEffectivePrice>[1],
     sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
   );
-  const variant = formatVariantUnit(sp.variant);
+  const variant = storeVariant(sp);
   return { ...sp, variant, pricing, availableStock: sp.stock - sp.reservedStock };
 }
 

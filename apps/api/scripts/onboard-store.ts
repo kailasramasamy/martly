@@ -69,6 +69,8 @@ const specSchema = z.object({
     openingStock: z.number().int().default(50),
     /** Department, category or aisle names the store doesn't sell, e.g. "Meat, Fish & Eggs" */
     exclude: z.array(z.string()).default([]),
+    /** Products per aisle visible at launch; the rest are hidden suggestions. Defaults by store size */
+    likelyPerAisle: z.number().int().min(0).optional(),
   }).default({}),
   /** Collections the AI curator builds from these briefs, each a Home hero card in its palette */
   heroCollections: z.array(z.object({ brief: z.string().min(3).max(300), palette: z.nativeEnum(HeroCardPalette) })).default([]),
@@ -178,7 +180,7 @@ async function setUpShelves(spec: Spec, store: Store) {
   const excludedSubcategoryIds = await excludedAisles(spec.catalog.exclude);
   const result = await applyCatalog(prisma, sized, {
     excludedSubcategoryIds, includedSubcategoryIds: [], excludedBrandIds: [], includedBrandIds: [],
-    discountPct: spec.catalog.discountPct, openingStock: spec.catalog.openingStock,
+    discountPct: spec.catalog.discountPct, openingStock: spec.catalog.openingStock, likelyPerAisle: spec.catalog.likelyPerAisle,
   }, admin.id);
   step(`Catalog: ${result.created} listed, ${result.kept} kept, ${result.removed} removed, ${result.needsPrice} need a price (${excludedSubcategoryIds.length} aisles left out)`);
 

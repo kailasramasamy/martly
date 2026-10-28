@@ -8,7 +8,7 @@ import { assertBrandUsable } from "../../services/brands.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgUser, getOrgStoreIds } from "../../middleware/org-scope.js";
 import type { JwtUser } from "../../types/jwt.js";
-import { formatVariantUnit, formatVariantUnits } from "../../services/units.js";
+import { formatVariantUnits, storeVariant } from "../../services/units.js";
 import { searchProductsForAdmin } from "../../services/search.js";
 import { fetchRankedPage } from "../../services/ranked-page.js";
 import { brandFacets, countIds, inSearchOrder, subcategoryFacets, type SubcategoryFacet } from "../../services/search-facets.js";
@@ -49,8 +49,8 @@ import { storeBrandOf } from "../../services/own-brand.js";
       result.variants = formatVariantUnits(result.variants as { unitType: string }[]);
     }
     if (Array.isArray(result.storeProducts)) {
-      result.storeProducts = (result.storeProducts as { variant?: { unitType: string } }[]).map((sp) =>
-        sp.variant ? { ...sp, variant: formatVariantUnit(sp.variant) } : sp,
+      result.storeProducts = (result.storeProducts as { mrp?: unknown; variant?: { unitType: string; mrp: unknown } }[]).map((sp) =>
+        sp.variant ? { ...sp, variant: storeVariant({ mrp: sp.mrp, variant: sp.variant }) } : sp,
       );
     }
     return result as T;

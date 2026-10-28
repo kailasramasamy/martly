@@ -27,7 +27,9 @@ export async function applyMovement(tx: Tx, m: MovementInput) {
   if (!row) throw Object.assign(new Error("Store product not found"), { statusCode: 404 });
 
   const stockAfter = Math.max(0, row.stock + m.quantity);
-  await tx.storeProduct.update({ where: { id: m.storeProductId }, data: { stock: stockAfter } });
+  // Receiving it, or counting some on the shelf, confirms the store carries it
+  const confirms = stockAfter > 0 && (m.type === "RECEIVE" || m.type === "COUNT");
+  await tx.storeProduct.update({ where: { id: m.storeProductId }, data: { stock: stockAfter, ...(confirms ? { carried: true, isActive: true } : {}) } });
   return tx.stockMovement.create({
     data: {
       organizationId: row.organization_id,

@@ -13,6 +13,9 @@ export interface AttentionItem {
 type StoreFilter = { storeId?: string | { in: string[] } };
 type Counter = { key: AttentionKey; permission: Permission; run: () => Promise<{ count: number; oldestAt: Date | null }> };
 
+/** Prisma twin of IN_RANGE in services/listing-sql.ts: what the store carries or shows without having confirmed */
+const IN_RANGE = [{ carried: true }, { carried: null, suggested: false }];
+
 const tally = (r: { _count: { _all: number }; _min: Record<string, Date | null> }, field: string) => ({ count: r._count._all, oldestAt: r._min[field] ?? null });
 
 /** One count per kind of work a manager may need to act on, in the order the card lists them */
@@ -26,6 +29,9 @@ function counters(prisma: PrismaClient, store: StoreFilter): Counter[] {
     { key: "reviews", permission: Permission.MARKETING_MANAGE, run: async () => tally(await prisma.review.aggregate({ where: { ...store, status: "PENDING" }, _count: { _all: true }, _min: { createdAt: true } }), "createdAt") },
     { key: "tickets", permission: Permission.SUPPORT_HANDLE, run: async () => tally(await prisma.supportTicket.aggregate({ where: { ...store, status: "OPEN" }, _count: { _all: true }, _min: { createdAt: true } }), "createdAt") },
     { key: "catalog_drafts", permission: Permission.CATALOG_PRODUCTS, run: async () => tally(await prisma.catalogDraft.aggregate({ where: { ...store, status: "NEEDS_REVIEW" }, _count: { _all: true }, _min: { createdAt: true } }), "createdAt") },
+    // Listings wait from onboarding, so their age says nothing; only the count matters
+    { key: "stock_check", permission: Permission.LISTING_AVAILABILITY, run: async () => ({ count: await prisma.storeProduct.count({ where: { ...store, carried: null } }), oldestAt: null }) },
+    { key: "price_review", permission: Permission.LISTING_PRICES, run: async () => ({ count: await prisma.storeProduct.count({ where: { ...store, priceReviewedAt: null, OR: IN_RANGE } }), oldestAt: null }) },
   ];
 }
 

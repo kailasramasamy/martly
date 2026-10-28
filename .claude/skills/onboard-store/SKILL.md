@@ -144,6 +144,11 @@ The script skips any step that's already done, so after a failure fix the spec a
 
 "Every essential aisle stocked" lists the aisles you left out. That's expected.
 
+The catalog shows only each aisle's likely products at launch (kirana 4, supermarket 10, large 25 per aisle; override
+with `catalog.likelyPerAisle`). The rest are listed hidden, as suggestions. Tell the owner the follow-up:
+1. Manage → Stock check: confirm what they carry (department, brand, then sizes).
+2. Then Price review.
+
 If the curator refuses a brief, reword it and re-run. Then read each collection's products and check they fit.
 
 Prod runs Postgres 18 and the local DB runs 14, so SQL that works locally can still fail on prod. Example: PG18

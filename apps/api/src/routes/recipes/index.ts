@@ -7,7 +7,7 @@ import { Permission } from "@martly/shared/constants";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { canSeeOrgRecord, assertProductsUsable } from "../../services/catalog-access.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
-import { formatVariantUnit } from "../../services/units.js";
+import { storeVariant } from "../../services/units.js";
 
 function enrichStoreProduct(sp: any) {
   const pricing = calculateEffectivePrice(
@@ -15,7 +15,7 @@ function enrichStoreProduct(sp: any) {
     sp.variant as Parameters<typeof calculateEffectivePrice>[1],
     sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
   );
-  const variant = formatVariantUnit(sp.variant);
+  const variant = storeVariant(sp);
   return { ...sp, variant, pricing, availableStock: sp.stock - sp.reservedStock };
 }
 

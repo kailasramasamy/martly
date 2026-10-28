@@ -376,6 +376,8 @@ export type BulkCreateStoreProductInput = z.infer<typeof bulkCreateStoreProductS
 
 export const updateStoreProductSchema = z.object({
   price: z.number().positive().optional(),
+  /** The store's own MRP; null goes back to the catalog's */
+  mrp: z.number().positive().nullish(),
   stock: z.number().int().min(0).optional(),
   isActive: z.boolean().optional(),
   isFeatured: z.boolean().optional(),
@@ -1714,6 +1716,8 @@ export const speechTranscribeSchema = z.object({
 export * from "./onboarding.js";
 export * from "./towns.js";
 export * from "./offers.js";
+export * from "./price-review.js";
+export * from "./stock-check.js";
 export * from "./store-resolve.js";
 export * from "./web.js";
 export * from "./storefront.js";
