@@ -15,6 +15,7 @@ Many stores pack loose staples (dal, rice, sugar) in their own printed pouches. 
 - **Serving:**
   - A `preSerialization` hook rewrites every store listing in API responses. A listing is any object with `storeId` + `variantId`; its `product.imageUrl`, `product.images` and `variant.imageUrl` become that store's pack. Existing app builds show packs without an update.
   - `GET /products/:id?storeId=` does the same for the product page gallery: front then back for each pack size. The app sends `storeId` from the next mobile build onward.
+  - **martlyshop.in** builds its own cards (`services/web-shop/cards.ts`), which the hook can't see, so they read `storePack()` directly. Each `WebPack` carries its pack's front as `imageUrl`, and the card shows the pack of the size picked (it opens on the first size in stock). The product page gallery is the store's packs, front then back for each size.
 
 ## Sree Ranga (first store)
 

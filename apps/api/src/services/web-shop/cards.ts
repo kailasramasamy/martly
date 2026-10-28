@@ -1,6 +1,7 @@
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import type { WebShopQuery } from "@martly/shared/schemas";
 import type { WebPack, WebProductCard, WebShopStore } from "@martly/shared/types";
+import { storePack } from "../pack-images.js";
 import { calculateEffectivePrice } from "../pricing.js";
 import { resolveStore } from "../store-resolve.js";
 
@@ -53,17 +54,19 @@ function toPack(sp: Listing): WebPack {
     offPercent: off ? Math.round((1 - price / mrp) * 100) : 0,
     inStock: sp.stock - sp.reservedStock > 0,
     offer,
+    imageUrl: storePack(sp.storeId, sp.variantId)?.front ?? null,
   };
 }
 
 export function toCard(row: CardRow): WebProductCard {
   const listings = [...row.storeProducts].sort((a, b) => Number(a.price) - Number(b.price));
+  const packs = listings.map(toPack);
   return {
     slug: row.slug,
     name: row.name,
     brand: row.brand?.name ?? null,
-    imageUrl: row.imageUrl ?? listings.find((sp) => sp.variant.imageUrl)?.variant.imageUrl ?? null,
-    packs: listings.map(toPack),
+    imageUrl: packs.find((p) => p.imageUrl)?.imageUrl ?? row.imageUrl ?? listings.find((sp) => sp.variant.imageUrl)?.variant.imageUrl ?? null,
+    packs,
   };
 }
 

@@ -67,12 +67,14 @@ export interface CardTracking {
 
 export function ProductCard({ product, tracking }: { product: WebProductCard; tracking?: CardTracking }) {
   const [pack, setPack] = usePack(product.packs)
+  // A store that packs the product itself shows its own pack for the size picked
+  const imageUrl = pack.imageUrl ?? product.imageUrl
   return (
     <article className="flex h-full flex-col rounded-2xl border border-line bg-white p-3 transition hover:shadow-lg hover:shadow-slate-200/70">
       <a href={productPath(product.slug)} onClick={tracking?.onOpen} className="group flex flex-1 flex-col">
         <span className="relative block overflow-hidden rounded-xl bg-surface">
-          {product.imageUrl
-            ? <img src={product.imageUrl} alt={product.name} loading="lazy" width={240} height={240} className="aspect-square w-full object-contain p-2 transition group-hover:scale-[1.03]" />
+          {imageUrl
+            ? <img src={imageUrl} alt={product.name} loading="lazy" width={240} height={240} className="aspect-square w-full object-contain p-2 transition group-hover:scale-[1.03]" />
             : <span className="flex aspect-square items-center justify-center text-muted"><Icon name="basket" size={40} strokeWidth={1.5} /></span>}
           <span className="absolute left-2 top-2 flex flex-col items-start gap-1">
             {pack.offer && (

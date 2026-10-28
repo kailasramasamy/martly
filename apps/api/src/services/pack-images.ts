@@ -69,6 +69,9 @@ export async function refreshPackImages(prisma: PrismaClient) {
   packs = next;
 }
 
+/** The store's own pack for one of its pack sizes, when it has one */
+export const storePack = (storeId: string, variantId: string): Pack | undefined => packs.get(storeId)?.get(variantId);
+
 type Json = Record<string, unknown>;
 const isObject = (v: unknown): v is Json => typeof v === "object" && v !== null && !Array.isArray(v);
 

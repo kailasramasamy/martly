@@ -1,6 +1,7 @@
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import type { WebCategoryPage, WebDepartment, WebDepartmentTree, WebProductPage, WebShelf, WebShopStore, WebSitemap } from "@martly/shared/types";
 import { liveWindow } from "../store-feed.js";
+import { storePack } from "../pack-images.js";
 import { liveStoreWhere, resolveStore } from "../store-resolve.js";
 import type { WebShopQuery } from "@martly/shared/schemas";
 import { cardSelect, productCards, soldAt, toCard } from "./cards.js";
@@ -115,7 +116,12 @@ export async function productPage(prisma: PrismaClient, store: WebShopStore, slu
     ? await productCards(prisma, store.id, { where: { subcategoryId: p.subcategoryId, id: { not: p.id } }, take: SHELF_SIZE })
     : [];
   const { packs, ...card } = toCard(p);
-  const images = [...new Set([card.imageUrl, ...p.images].filter((u): u is string => Boolean(u)))];
+  // The store's own packs, front then back for each size, replace the catalog photos, as in the app
+  const own = [...p.storeProducts].sort((a, b) => Number(a.price) - Number(b.price)).flatMap((sp) => {
+    const pack = storePack(sp.storeId, sp.variantId);
+    return pack ? [pack.front, ...(pack.back ? [pack.back] : [])] : [];
+  });
+  const images = [...new Set((own.length ? own : [card.imageUrl, ...p.images]).filter((u): u is string => Boolean(u)))];
   return {
     store,
     product: { ...card, description: p.description, images, foodType: p.foodType, details: details(p), trail: trail(p) },

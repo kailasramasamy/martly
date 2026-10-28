@@ -59,6 +59,8 @@ export interface WebPack {
   inStock: boolean;
   /** Buy X get Y free, while it runs */
   offer: { buy: number; get: number } | null;
+  /** The store's own printed pack for this size, when it packs the product itself */
+  imageUrl: string | null;
 }
 
 export interface WebProductCard {
