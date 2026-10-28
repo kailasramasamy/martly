@@ -13,15 +13,15 @@ generated/
 .env.*
 !.env.example
 .DS_Store
-tmp/
+/tmp/
 
-# Not built by any service
-.claude/
-branding/
-docs/
-logo/
-marketing/
-scripts/
+# Not built by any service; anchored to the root, since apps have folders with these names too
+/.claude/
+/branding/
+/docs/
+/logo/
+/marketing/
+/scripts/
 
 # The apps Railway doesn't build: only their package.json
 apps/mobile/*
