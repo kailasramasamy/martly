@@ -28,3 +28,6 @@ apps/mobile/*
 !apps/mobile/package.json
 apps/rider/*
 !apps/rider/package.json
+
+# Seed and import data: synced to prod by hand from this machine, never read by the API
+/apps/api/prisma/data/
