@@ -133,7 +133,14 @@ function BrandGroup({ page }: { page: WebFilteredList }) {
         </li>
       )}
       {shown.map((b) => (
-        <Option key={b.slug} search={at({ brand: toggle(b.slug) })} on={picked.includes(b.slug)} count={b.count}>{b.name}</Option>
+        <Option key={b.slug} search={at({ brand: toggle(b.slug) })} on={picked.includes(b.slug)} count={b.count}>
+          <span className="flex items-center gap-2">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded-full border border-line bg-white text-[11px] font-extrabold text-muted">
+              {b.imageUrl ? <img src={b.imageUrl} alt="" loading="lazy" className="h-full w-full object-contain p-0.5" /> : b.name.slice(0, 1)}
+            </span>
+            <span className="min-w-0">{b.name}</span>
+          </span>
+        </Option>
       ))}
       {term && !shown.length && <li className="px-2 py-2 text-sm text-muted">No brand matches “{find.trim()}”</li>}
     </Group>
