@@ -1,3 +1,5 @@
+import { todayIST } from "./timezone.js";
+
 /**
  * Shared helpers for subscription delivery-date calculations.
  * Used by both the subscription routes and the scheduler plugin.
@@ -12,7 +14,8 @@ export function calculateNextDeliveryDate(
   selectedDays: number[],
   fromDate?: Date,
 ): Date {
-  const base = fromDate ?? new Date();
+  // Without a start date, "today" is the day in India: right after midnight IST the UTC date is still yesterday's
+  const base = fromDate ?? todayIST();
   const tomorrow = new Date(Date.UTC(
     base.getUTCFullYear(),
     base.getUTCMonth(),

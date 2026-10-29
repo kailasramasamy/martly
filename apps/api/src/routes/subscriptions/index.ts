@@ -18,15 +18,24 @@ import { notifySubscriptionCancelled, notifySubscriptionCreated } from "../../se
 import { calculateNextDeliveryDate, advanceNextDeliveryDate, isDeliveryDay } from "../../utils/subscription-dates.js";
 import { deliveryFeeTo } from "../../services/delivery/fee.js";
 import { todayIST, tomorrowIST, endOfDayUTC, parseDate, formatDate } from "../../utils/timezone.js";
+import { deliveryFeeAfterWaivers, memberBenefits, priceLine, type PricedLine } from "../../services/line-pricing.js";
 
 const STORE_PRODUCT_INCLUDE = {
   storeProduct: {
     include: {
       product: { select: { id: true, name: true, imageUrl: true, translations: true } },
-      variant: { select: { id: true, name: true, unitType: true, unitValue: true, mrp: true } },
+      variant: {
+        select: {
+          id: true, name: true, unitType: true, unitValue: true, mrp: true,
+          discountType: true, discountValue: true, discountStart: true, discountEnd: true,
+        },
+      },
     },
   },
 };
+
+/** A basket line for the app: the unit price it is charged at, and the line total after any buy X get Y free units */
+const previewPricing = (l: PricedLine) => ({ ...l.pricing, effectivePrice: l.unitPrice, freeQuantity: l.freeQuantity, lineTotal: l.totalPrice });
 
 export async function subscriptionRoutes(app: FastifyInstance) {
   // ── Customer: Create subscription ────────────────────
@@ -396,6 +405,9 @@ export async function subscriptionRoutes(app: FastifyInstance) {
     const user = request.user as { sub: string };
     const { storeId } = request.query as { storeId?: string };
     if (!storeId) return reply.badRequest("storeId is required");
+    const storeOrg = await app.prisma.store.findUnique({ where: { id: storeId }, select: { organizationId: true } });
+    if (!storeOrg) return reply.notFound("Store not found");
+    const benefits = await memberBenefits(app.prisma, user.sub, storeOrg.organizationId);
 
     const tomorrow = tomorrowIST();
     const tomorrowEnd = endOfDayUTC(tomorrow);
@@ -461,11 +473,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
         if (overrideQty === 0) continue;
 
         const sp = item.storeProduct;
-        const pricing = calculateEffectivePrice(
-          sp.price as unknown as number,
-          null,
-          sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
-        );
+        const pricing = previewPricing(priceLine(sp, overrideQty, benefits.isMember));
         subscriptionItems.push({
           storeProductId: item.storeProductId,
           quantity: overrideQty,
@@ -485,23 +493,12 @@ export async function subscriptionRoutes(app: FastifyInstance) {
         storeId,
         deliveryDate: { gte: tomorrow, lte: tomorrowEnd },
       },
-      include: {
-        storeProduct: {
-          include: {
-            product: { select: { id: true, name: true, imageUrl: true, translations: true } },
-            variant: { select: { id: true, name: true, unitType: true, unitValue: true, mrp: true } },
-          },
-        },
-      },
+      include: STORE_PRODUCT_INCLUDE,
     });
 
     const addOnItems = addOns.map((addon) => {
       const sp = addon.storeProduct;
-      const pricing = calculateEffectivePrice(
-        sp.price as unknown as number,
-        null,
-        sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
-      );
+      const pricing = previewPricing(priceLine(sp, addon.quantity, benefits.isMember));
       return {
         id: addon.id,
         storeProductId: addon.storeProductId,
@@ -512,14 +509,9 @@ export async function subscriptionRoutes(app: FastifyInstance) {
       };
     });
 
-    // Calculate totals
+    // Totals as the scheduler will charge them
     let itemsTotal = 0;
-    for (const item of subscriptionItems) {
-      itemsTotal += item.pricing.effectivePrice * item.quantity;
-    }
-    for (const item of addOnItems) {
-      itemsTotal += item.pricing.effectivePrice * item.quantity;
-    }
+    for (const item of [...subscriptionItems, ...addOnItems]) itemsTotal += item.pricing.lineTotal;
 
     // Delivery fee
     const store = await app.prisma.store.findUnique({
@@ -539,10 +531,9 @@ export async function subscriptionRoutes(app: FastifyInstance) {
     const delivery = store
       ? await deliveryFeeTo(app.prisma, storeId, store, sub ? { lat: sub.deliveryLat!, lng: sub.deliveryLng! } : null)
       : null;
-    let deliveryFee = delivery?.serviceable ? delivery.fee : 0;
-    if (store?.freeDeliveryThreshold && itemsTotal >= Number(store.freeDeliveryThreshold)) {
-      deliveryFee = 0;
-    }
+    const deliveryFee = deliveryFeeAfterWaivers(
+      delivery?.serviceable ? delivery.fee : 0, itemsTotal, store?.freeDeliveryThreshold ?? null, benefits.freeDelivery,
+    );
 
     // Wallet balance
     const userData = await app.prisma.user.findUnique({

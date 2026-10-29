@@ -15,7 +15,6 @@ import { hasPermission } from "@martly/shared/permissions";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { locateAddress } from "../../lib/geo.js";
 import { sendOrderStatusNotification, sendWalletNotification, sendLoyaltyNotification, sendNotification } from "../../services/notification.js";
-import { calculateEffectivePrice } from "../../services/pricing.js";
 import { checkCoupon } from "../../services/coupons.js";
 import { reserveStock, releaseStock } from "../../services/stock.js";
 import { deliverWithRefusals } from "../../services/returns/door-refusal.js";
@@ -33,9 +32,9 @@ import { notifyStaffOfNewOrder } from "../../services/staff-alerts.js";
 import { formatOrderRef } from "../../services/notify/copy.js";
 import { notifyOrderPlaced, notifySlotFullIfNeeded } from "../../services/notify/order-alerts.js";
 import { applyCancelRefunds, cancelOrder, notifyOrderCancelled } from "../../services/order-cancel.js";
+import { deliveryFeeAfterWaivers, priceLine } from "../../services/line-pricing.js";
 import { claimStatus, lockCoupon, lockLoyaltyPoints, lockWalletBalance, releaseCoupon } from "../../services/order-guards.js";
 import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
-import { freeUnits, lineTotal } from "@martly/shared/offers";
 import { OrderStatus, Permission } from "@martly/shared/constants";
 import { recordMonthlyListOrder } from "../../services/monthly-list/index.js";
 
@@ -261,20 +260,7 @@ export async function orderRoutes(app: FastifyInstance) {
 
     const itemsData = body.items.map((item) => {
       const sp = storeProducts.find((sp) => sp.id === item.storeProductId)!;
-      const pricing = calculateEffectivePrice(
-        sp.price as unknown as number,
-        sp.variant as Parameters<typeof calculateEffectivePrice>[1],
-        sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
-      );
-      // Member pricing: use memberPrice if lower than effectivePrice
-      let unitPrice = pricing.effectivePrice;
-      const spMemberPrice = (sp as unknown as { memberPrice: unknown }).memberPrice;
-      if (userIsMember && spMemberPrice != null) {
-        const mp = Number(spMemberPrice);
-        if (mp < unitPrice) unitPrice = mp;
-      }
-      const freeQuantity = freeUnits(item.quantity, pricing.offer);
-      const totalPrice = lineTotal(unitPrice, item.quantity, pricing.offer);
+      const { pricing, unitPrice, freeQuantity, totalPrice } = priceLine(sp, item.quantity, userIsMember);
       itemsTotal += totalPrice;
       return {
         storeProductId: item.storeProductId,
@@ -359,14 +345,8 @@ export async function orderRoutes(app: FastifyInstance) {
       estimatedMinutes = delivery.estimatedMinutes;
     }
 
-    // Free delivery threshold override
-    if (!isPickup && store?.freeDeliveryThreshold && itemsTotal >= Number(store.freeDeliveryThreshold)) {
-      deliveryFee = 0;
-    }
-
-    // Membership free delivery override
-    if (!isPickup && userIsMember && membershipPlan?.freeDelivery) {
-      deliveryFee = 0;
+    if (!isPickup) {
+      deliveryFee = deliveryFeeAfterWaivers(deliveryFee, itemsTotal, store.freeDeliveryThreshold, !!membershipPlan?.freeDelivery);
     }
 
     // Express delivery validation (orders without a delivery slot)
