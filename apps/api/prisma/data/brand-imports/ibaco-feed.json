@@ -1,0 +1,457 @@
+[
+ {
+  "title": "Almond Crunch Ice Cream",
+  "handle": "almond-crunch-ice-cream",
+  "vendor": "Ibaco",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343562_1-ibaco-almond-crunch-flavoured-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343562_1-ibaco-almond-crunch-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343562-2_1-ibaco-almond-crunch-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343562-3_1-ibaco-almond-crunch-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343562-4_1-ibaco-almond-crunch-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343562-5_1-ibaco-almond-crunch-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343562-6_1-ibaco-almond-crunch-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343562-7_1-ibaco-almond-crunch-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343562-8_1-ibaco-almond-crunch-flavoured-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ibaco Almond Crunch Flavoured Ice Cream is a nutty\nmasterpiece that blends creamy indulgence with irresistible texture. Infused\nwith the rich, toasty essence of almonds, this ice cream offers a smooth base\nthat’s elevated by\ngenerous chunks of crunchy almond brittle. Each bite delivers a delightful\ncontrast - velvety creaminess\npaired with the satisfying snap of roasted nuts. Perfect for those who crave a\nbalance of flavour and crunch, this treat is a celebration of simplicity and\nsophistication. Whether enjoyed as a solo delight or paired with a warm\ndessert, Ibaco Almond Crunch promises a wholesome, nutty escape in every\nspoonful.",
+   "manufacturerName": "Hatsun Agro Product Limited",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Alphonso Mango Ice Cream",
+  "handle": "alphonso-mango-ice-cream",
+  "vendor": "Ibaco",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343563_1-ibaco-alphonso-mango-flavoured-ice-cream.jpg"
+    },
+    "barcode": "8904057307407"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343563_1-ibaco-alphonso-mango-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343563-2_1-ibaco-alphonso-mango-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343563-3_1-ibaco-alphonso-mango-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343563-4_1-ibaco-alphonso-mango-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343563-5_1-ibaco-alphonso-mango-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343563-6_1-ibaco-alphonso-mango-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343563-7_1-ibaco-alphonso-mango-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343563-8_1-ibaco-alphonso-mango-flavoured-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ibaco’s Alphonso Mango Flavoured Ice Cream is a tropical\ndelight that captures the essence of summer in every bite. Made with the king\nof mangoes, the Alphonso, this ice cream bursts with the fruit’s signature\nsweet, juicy flavour and vibrant golden hue. Its creamy texture melts\neffortlessly, delivering a refreshing and authentic mango experience that\ntransports you to sun-kissed orchards. Perfectly balanced, it’s neither too\nsweet nor too tart, making it an irresistible treat for mango enthusiasts.\nWhether savoured on a hot day or as a nostalgic indulgence, Ibaco’s Alphonso\nMango Ice Cream is pure fruity perfection.",
+   "manufacturerName": "Hatsun Agro Product Limited",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Overload Ice Cream",
+  "handle": "chocolate-overload-ice-cream",
+  "vendor": "Ibaco",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "530",
+    "compare_at_price": "530",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343565_1-ibaco-chocolate-overload-flavoured-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343565_1-ibaco-chocolate-overload-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343565-2_1-ibaco-chocolate-overload-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343565-3_1-ibaco-chocolate-overload-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343565-4_1-ibaco-chocolate-overload-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343565-5_1-ibaco-chocolate-overload-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343565-6_1-ibaco-chocolate-overload-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343565-7_1-ibaco-chocolate-overload-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343565-8_1-ibaco-chocolate-overload-flavoured-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ibaco’s Chocolate Overload Flavoured Ice Cream is a dream\ncome true for chocolate lovers. This indulgent treat takes you on the ultimate\ncocoa adventure with its rich, velvety layers of chocolate ice cream, swirled\nwith decadent fudge and studded with crunchy chocolate chips. Each spoonful\ndelivers a symphony of textures and deep, satisfying cocoa flavours that melt\nin your mouth, leaving you craving more. Perfectly crafted to satisfy even the\nmost intense chocolate cravings, Ibaco’s creation is a delightful escape into\npure bliss. Whether enjoyed solo or shared, this ice cream promises an\nunforgettable, chocolate-packed experience.",
+   "manufacturerName": "Hatsun Agro Product Limited",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Italian Wonder Ice Cream",
+  "handle": "italian-wonder-ice-cream",
+  "vendor": "Ibaco",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343566_1-ibaco-italian-wonder-flavoured-ice-cream.jpg"
+    },
+    "barcode": "8904057307476"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343566_1-ibaco-italian-wonder-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343566-2_1-ibaco-italian-wonder-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343566-3_1-ibaco-italian-wonder-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343566-4_1-ibaco-italian-wonder-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343566-5_1-ibaco-italian-wonder-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343566-6_1-ibaco-italian-wonder-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343566-7_1-ibaco-italian-wonder-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343566-8_1-ibaco-italian-wonder-flavoured-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ibaco's Italian Wonder ice cream is a delightful treat that\ncombines indulgence and creativity. This flavour features a creamy natural\nvanilla base, enhanced with the crunch of cashews and the sweetness of raisins.\nWhat sets it apart is the trio of luscious sauces—mixed fruit, pineapple, and\nraspberry—that create a\nsymphony of flavours in every scoop. Perfect for those seeking a balance of\nnutty textures and fruity zest, Italian Wonder offers a premium dessert\nexperience. Whether enjoyed on its own or as part of an ice cream cake, this flavour\npromises to tantalise your taste buds with its rich and varied profile",
+   "manufacturerName": "Hatsun Agro Product Limited",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Blueberry Sauce Topping",
+  "handle": "blueberry-sauce-topping",
+  "vendor": "Ibaco",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343569_1-ibaco-blueberry-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343569_1-ibaco-blueberry-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343569-2_1-ibaco-blueberry-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343569-3_1-ibaco-blueberry-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343569-4_1-ibaco-blueberry-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343569-5_1-ibaco-blueberry-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343569-6_1-ibaco-blueberry-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343569-7_1-ibaco-blueberry-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343569-8_1-ibaco-blueberry-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ibaco Blueberry Sauce is a luscious and fruity delight, perfect for adding a burst of berry goodness to your favourite treats. Made from rich, juicy blueberries, this smooth and flavorful sauce enhances desserts with its vibrant taste and natural sweetness. Drizzle it over ice creams, pancakes, waffles, or cheesecakes for an irresistible fruity twist. Its velvety texture and deep blueberry flavour make every bite more indulgent. Whether you're creating gourmet desserts or simply elevating everyday snacks, Ibaco Blueberry Sauce is the perfect companion. Enjoy the delightful fusion of sweetness and tanginess in every drop of this delicious sauce!",
+   "manufacturerName": "Hatsun Agro Product Limited",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Choco Sauce Topping",
+  "handle": "choco-sauce-topping",
+  "vendor": "Ibaco",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343567_1-ibaco-choco-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343567_1-ibaco-choco-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343567-2_1-ibaco-choco-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343567-3_1-ibaco-choco-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343567-4_1-ibaco-choco-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343567-5_1-ibaco-choco-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343567-6_1-ibaco-choco-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343567-7_1-ibaco-choco-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ibaco Choco Sauce is a luscious cocoa-based spread that\nbrings rich, chocolatey goodness to every bite. Made from premium cocoa, this\nsmooth and velvety sauce is perfect for drizzling over ice creams, pancakes,\nwaffles, and desserts. Its deep chocolate flavour and creamy texture make it an\nirresistible treat for chocolate lovers. Whether used as a spread, dip, or\ntopping, it enhances every dish with a delightful cocoa-infused taste. Indulge\nin the ultimate chocolate experience with Ibaco Choco Sauce, the perfect\ncompanion for your sweet cravings. Elevate your desserts with this deliciously\nrich and decadent chocolate sauce!",
+   "manufacturerName": "Hatsun Agro Product Limited",
+   "fssaiLicense": "10012042000069",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Choco Fudge Topping",
+  "handle": "choco-fudge-topping",
+  "vendor": "Ibaco",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343568_1-ibaco-choco-fudge.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343568_1-ibaco-choco-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343568-2_1-ibaco-choco-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343568-3_1-ibaco-choco-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343568-4_1-ibaco-choco-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343568-5_1-ibaco-choco-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343568-6_1-ibaco-choco-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343568-7_1-ibaco-choco-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343568-8_1-ibaco-choco-fudge.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ibaco Choco Fudge is a rich and indulgent treat crafted for true chocolate lovers. Made with smooth, velvety chocolate, this fudge delivers an irresistible melt-in-your-mouth experience. Its deep cocoa flavour, combined with a luscious, creamy texture, makes it the perfect addition to your favourite desserts. Drizzle it over ice creams, pancakes, brownies, or milkshakes to enhance every bite with pure chocolatey goodness. Whether you're craving a decadent topping or a spoonful of pure delight, Ibaco Choco Fudge satisfies every sweet tooth. Enjoy the ultimate fusion of richness and sweetness with this delightful chocolate fudge!",
+   "manufacturerName": "Hatsun Agro Product Limited",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Assorted Nuts Topping",
+  "handle": "assorted-nuts-topping",
+  "vendor": "Ibaco",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343570_1-ibaco-assorted-nuts-cashew-almond-pista.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343570_1-ibaco-assorted-nuts-cashew-almond-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343570-2_1-ibaco-assorted-nuts-cashew-almond-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343570-3_1-ibaco-assorted-nuts-cashew-almond-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343570-4_1-ibaco-assorted-nuts-cashew-almond-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343570-5_1-ibaco-assorted-nuts-cashew-almond-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343570-6_1-ibaco-assorted-nuts-cashew-almond-pista.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343570-7_1-ibaco-assorted-nuts-cashew-almond-pista.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ibaco Assorted Nuts brings together the finest selection\nof cashews, almonds, and pistachios, offering a perfect blend of crunch, taste,\nand nutrition. Each nut is carefully chosen for its premium quality, ensuring a\nrich and satisfying snacking experience. Packed with essential vitamins,\nminerals, and healthy fats, this assortment is both delicious and wholesome.\nWhether enjoyed on their own, sprinkled over desserts, or added to dishes,\nthese nuts enhance every bite with their natural goodness. Indulge in the\nperfect mix of cashew, almond, and pista, and treat yourself to a delightful\nand nutritious snack with Ibaco Assorted Nuts!",
+   "manufacturerName": "Hatsun Agro Product Limited",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Milk Choco Curls Topping",
+  "handle": "milk-choco-curls-topping",
+  "vendor": "Ibaco",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343571_1-ibaco-milk-chocolate-curls.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343571_1-ibaco-milk-chocolate-curls.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343571-2_1-ibaco-milk-chocolate-curls.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343571-3_1-ibaco-milk-chocolate-curls.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343571-4_1-ibaco-milk-chocolate-curls.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343571-5_1-ibaco-milk-chocolate-curls.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343571-6_1-ibaco-milk-chocolate-curls.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343571-7_1-ibaco-milk-chocolate-curls.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343571-8_1-ibaco-milk-chocolate-curls.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ibaco Milk Choco Curls are a delightful treat crafted for chocolate lovers. Made from rich, creamy milk chocolate, these delicate curls add a touch of indulgence to any dessert. Whether sprinkled over ice cream, cakes, or milkshakes, they enhance every bite with a smooth and velvety texture. Their fine, melt-in-your-mouth consistency makes them perfect for decorating or enjoying as a standalone treat. With their irresistible chocolatey goodness, Ibaco Milk Choco Curls elevate ordinary desserts into gourmet experiences. Enjoy the perfect balance of sweetness and texture with these delectable curls, designed to satisfy your chocolate cravings!",
+   "manufacturerName": "Hatsun Agro Product Limited",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
+ }
+]
