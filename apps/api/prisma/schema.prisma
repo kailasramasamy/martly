@@ -1316,6 +1316,8 @@ model Review {
   comment    String?
   isVerified Boolean      @default(false) @map("is_verified")
   status     ReviewStatus @default(PENDING)
+  /// Set when its loyalty reward was paid, so approving it again doesn't pay twice
+  loyaltyRewardedAt DateTime? @map("loyalty_rewarded_at")
   createdAt  DateTime     @default(now()) @map("created_at")
   updatedAt  DateTime     @updatedAt @map("updated_at")
 

@@ -33,7 +33,7 @@ import { formatOrderRef } from "../../services/notify/copy.js";
 import { notifyOrderPlaced, notifySlotFullIfNeeded } from "../../services/notify/order-alerts.js";
 import { applyCancelRefunds, cancelOrder, notifyOrderCancelled } from "../../services/order-cancel.js";
 import { deliveryFeeAfterWaivers, priceLine } from "../../services/line-pricing.js";
-import { claimStatus, lockCoupon, lockLoyaltyPoints, lockWalletBalance, releaseCoupon } from "../../services/order-guards.js";
+import { claimSlotPlace, claimStatus, lockCoupon, lockLoyaltyPoints, lockWalletBalance, releaseCoupon, toPaise } from "../../services/order-guards.js";
 import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
 import { OrderStatus, Permission } from "@martly/shared/constants";
 import { recordMonthlyListOrder } from "../../services/monthly-list/index.js";
@@ -198,9 +198,10 @@ export async function orderRoutes(app: FastifyInstance) {
     // Fetch store for both pickup and delivery
     const store = await app.prisma.store.findUnique({
       where: { id: body.storeId },
-      select: { organizationId: true, name: true, address: true, latitude: true, longitude: true, deliveryRadius: true, minOrderAmount: true, freeDeliveryThreshold: true },
+      select: { organizationId: true, name: true, status: true, address: true, latitude: true, longitude: true, deliveryRadius: true, minOrderAmount: true, freeDeliveryThreshold: true },
     });
     if (!store) return reply.notFound("Store not found");
+    if (store.status !== "ACTIVE") return reply.badRequest("This store isn't taking orders right now");
 
     // Resolve delivery address from addressId or direct input
     let deliveryAddress: string | null = null;
@@ -317,19 +318,7 @@ export async function orderRoutes(app: FastifyInstance) {
       deliveryFee = 0;
       estimatedMinutes = 30;
     } else {
-      // Resolve lat/lng from body or from addressId
-      let deliveryLat = body.deliveryAddressLat;
-      let deliveryLng = body.deliveryAddressLng;
-      if (deliveryLat == null || deliveryLng == null) {
-        if (body.addressId) {
-          const addr = await app.prisma.userAddress.findUnique({ where: { id: body.addressId } });
-          if (addr?.latitude != null && addr?.longitude != null) {
-            deliveryLat = addr.latitude;
-            deliveryLng = addr.longitude;
-          }
-        }
-      }
-
+      // Priced to where the order goes: the saved address's coordinates over the ones the app sent
       const delivery = await deliveryFeeTo(app.prisma, body.storeId, store, deliveryLat != null && deliveryLng != null ? { lat: deliveryLat, lng: deliveryLng } : null);
       deliveryDistance = delivery.distance;
       if (!delivery.serviceable) {
@@ -387,6 +376,7 @@ export async function orderRoutes(app: FastifyInstance) {
     let scheduledDate: Date | undefined;
     let slotStartTime: string | undefined;
     let slotEndTime: string | undefined;
+    let slotBooking: { day: { start: Date; end: Date }; capacity: number } | undefined;
 
     if (body.deliverySlotId && body.scheduledDate) {
       const slot = await app.prisma.deliverySlot.findUnique({
@@ -411,18 +401,8 @@ export async function orderRoutes(app: FastifyInstance) {
         return reply.badRequest("This slot is past its booking cutoff time");
       }
 
-      // A slot only takes what its riders can carry
-      const { start: startOfDay, end: endOfDay } = istDay(body.scheduledDate);
-      const bookedCount = await app.prisma.order.count({
-        where: {
-          deliverySlotId: body.deliverySlotId,
-          scheduledDate: { gte: startOfDay, lte: endOfDay },
-          status: { not: "CANCELLED" },
-        },
-      });
-      if (bookedCount >= await slotCapacity(app.prisma, slot, body.scheduledDate)) {
-        return reply.badRequest("This delivery slot is full");
-      }
+      // A slot only takes what its riders can carry; the place is claimed inside the order's transaction
+      slotBooking = { day: istDay(body.scheduledDate), capacity: await slotCapacity(app.prisma, slot, body.scheduledDate) };
       const parsedDate = new Date(`${body.scheduledDate}T00:00:00+05:30`);
 
       deliverySlotId = slot.id;
@@ -434,16 +414,18 @@ export async function orderRoutes(app: FastifyInstance) {
       estimatedMinutes = undefined;
     }
 
-    const totalAmount = itemsTotal - couponDiscount + deliveryFee;
+    const totalAmount = toPaise(itemsTotal - couponDiscount + deliveryFee);
 
-    const stockItems = body.items.map((item) => ({
-      storeProductId: item.storeProductId,
-      quantity: item.quantity,
-    }));
+    // Rows are locked in one order (by id), so two checkouts sharing products can't each hold one the other needs
+    const stockItems = body.items
+      .map((item) => ({ storeProductId: item.storeProductId, quantity: item.quantity }))
+      .sort((a, b) => a.storeProductId.localeCompare(b.storeProductId));
 
     // Reserve stock + create order in a single transaction
     try {
       const result = await app.prisma.$transaction(async (tx) => {
+        if (deliverySlotId && slotBooking) await claimSlotPlace(tx, deliverySlotId, slotBooking.day, slotBooking.capacity);
+
         // Reserve stock atomically
         for (const item of stockItems) {
           const res = await tx.$executeRaw`
@@ -478,7 +460,7 @@ export async function orderRoutes(app: FastifyInstance) {
           walletDeduction = Math.min(await lockWalletBalance(tx, user.sub), totalAmount);
         }
 
-        let remainingAfterWallet = totalAmount - walletDeduction;
+        let remainingAfterWallet = toPaise(totalAmount - walletDeduction);
 
         // Loyalty points redemption
         let loyaltyDeduction = 0;
@@ -502,7 +484,7 @@ export async function orderRoutes(app: FastifyInstance) {
                   maxByPercentage,
                 );
                 if (loyaltyDeduction > 0) {
-                  remainingAfterWallet -= loyaltyDeduction;
+                  remainingAfterWallet = toPaise(remainingAfterWallet - loyaltyDeduction);
                 }
               }
             }

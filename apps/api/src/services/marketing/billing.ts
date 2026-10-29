@@ -186,13 +186,39 @@ async function shiftQueuedPeriods(tx: Prisma.TransactionClient, organizationId: 
   }
 }
 
-/** Cancels an unpaid order, or refunds a paid one (online payments through Razorpay, transfers by hand) */
+/** Takes back what a refunded order gave: what's left of its plan (later plans move up), and its top-up credits */
+async function revokeGrant(tx: Prisma.TransactionClient, order: AdOrder) {
+  const now = new Date();
+  const period = await tx.orgPlanPeriod.findUnique({ where: { adOrderId: order.id } });
+  if (period && period.endsAt > now) {
+    const from = period.startsAt > now ? period.startsAt : now;
+    await tx.orgPlanPeriod.update({ where: { id: period.id }, data: { endsAt: from, closedAt: now } });
+    await shiftQueuedPeriods(tx, period.organizationId, period.startsAt, -(period.endsAt.getTime() - from.getTime()));
+  }
+  const where = { adOrderId: order.id, reason: "TOPUP" as const };
+  const [promotion, listing, images] = await Promise.all([
+    tx.promotionCreditEntry.aggregate({ where, _sum: { delta: true } }),
+    tx.listingCreditEntry.aggregate({ where, _sum: { delta: true } }),
+    tx.aiImageCreditEntry.aggregate({ where, _sum: { delta: true } }),
+  ]);
+  // A balance can go below zero when the credits were already spent; that's what the refund paid back
+  const back = (sum: { delta: number | null }) => ({ organizationId: order.organizationId!, delta: -(sum.delta ?? 0), reason: "REFUND" as const, adOrderId: order.id });
+  if (promotion._sum.delta) await tx.promotionCreditEntry.create({ data: back(promotion._sum) });
+  if (listing._sum.delta) await tx.listingCreditEntry.create({ data: back(listing._sum) });
+  if (images._sum.delta) await tx.aiImageCreditEntry.create({ data: back(images._sum) });
+}
+
+/**
+ * Cancels an unpaid order, or refunds a paid one (online payments through Razorpay, transfers by hand) and takes back
+ * what it bought. Each step claims the order's status, so a payment landing meanwhile or a second refund can't both apply.
+ */
 export async function refundAdOrder(prisma: PrismaClient, adOrderId: string) {
-  const order = await prisma.adOrder.findUniqueOrThrow({ where: { id: adOrderId } });
-  if (order.status === "PENDING") return prisma.adOrder.update({ where: { id: adOrderId }, data: { status: "CANCELLED" } });
-  if (order.status !== "PAID") return order;
-  if (order.razorpayPaymentId) await refundRazorpayPayment(order.razorpayPaymentId);
+  const cancelled = await prisma.adOrder.updateMany({ where: { id: adOrderId, status: "PENDING" }, data: { status: "CANCELLED" } });
+  if (cancelled.count) return prisma.adOrder.findUniqueOrThrow({ where: { id: adOrderId } });
   return prisma.$transaction(async (tx) => {
+    const { count } = await tx.adOrder.updateMany({ where: { id: adOrderId, status: "PAID" }, data: { status: "REFUNDED" } });
+    const order = await tx.adOrder.findUniqueOrThrow({ where: { id: adOrderId } });
+    if (!count) return order;
     // An order paid from the balance is refunded back to it
     const fee = await tx.ledgerEntry.findUnique({ where: { type_sourceId: { type: "PLAN_FEE", sourceId: order.id } } });
     if (fee) {
@@ -201,6 +227,9 @@ export async function refundAdOrder(prisma: PrismaClient, adOrderId: string) {
         memo: `Refunded · reverses ${fee.memo}`,
       }]);
     }
-    return tx.adOrder.update({ where: { id: adOrderId }, data: { status: "REFUNDED" } });
-  });
+    if (order.organizationId) await revokeGrant(tx, order);
+    // Last, so a refused refund rolls the rest back
+    if (order.razorpayPaymentId) await refundRazorpayPayment(order.razorpayPaymentId);
+    return order;
+  }, { timeout: 30_000 });
 }

@@ -10,6 +10,7 @@ import { istDay } from "../../services/ist-day.js";
 import { verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { broadcastOutForDelivery, startTripInTx, tripOrderProblem } from "../../services/delivery-trips.js";
 import { broadcastOrderUpdate } from "../../services/order-broadcast.js";
+import { conflict } from "../../services/order-guards.js";
 import { TripOpError, assignTrips, failDelivery, moveOrder, orderWave, sendToRider, startProblem } from "../../services/delivery/trip-ops.js";
 import { notifyDeliveryFailed, notifyRiderSent, notifyStopMoved, notifyTripCancelled, notifyTripsAssigned } from "../../services/notify/delivery-alerts.js";
 import { riderDay, storeRiderSummary } from "../../services/delivery/rider.js";
@@ -244,10 +245,10 @@ export async function deliveryTripRoutes(app: FastifyInstance) {
     }
 
     const updated = await app.prisma.$transaction(async (tx) => {
-      const updatedTrip = await tx.deliveryTrip.update({
-        where: { id: trip.id },
-        data: { status: "CANCELLED" },
-      });
+      // Only while it still hasn't started: a start that lands first keeps the trip on the road
+      const { count } = await tx.deliveryTrip.updateMany({ where: { id: trip.id, status: { in: ["CREATED", "PLANNED"] } }, data: { status: "CANCELLED" } });
+      if (count === 0) throw conflict("This trip was just started. Refresh and try again.");
+      const updatedTrip = await tx.deliveryTrip.findUniqueOrThrow({ where: { id: trip.id } });
 
       // Unlink orders from trip
       await tx.order.updateMany({

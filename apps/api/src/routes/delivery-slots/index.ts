@@ -131,9 +131,12 @@ export async function deliverySlotRoutes(app: FastifyInstance) {
       return reply.forbidden("Access denied");
     }
 
-    const affected = await openSlotOrders(app.prisma, existing.id);
+    // Deleting would turn its booked orders into express deliveries; turning it off keeps them in their slot
+    const booked = await openSlotOrders(app.prisma, existing.id);
+    if (booked.length > 0) {
+      return reply.conflict(`${booked.length} upcoming ${booked.length === 1 ? "order is" : "orders are"} booked in this slot. Turn the slot off instead, so they keep their delivery time.`);
+    }
     await app.prisma.deliverySlot.delete({ where: { id: request.params.id } });
-    notifySlotChanged(app.fcm, app.prisma, affected, null).catch((err: unknown) => app.log.error(err, "Slot removal notifications failed"));
 
     const response: ApiResponse<null> = { success: true, data: null };
     return response;

@@ -155,14 +155,12 @@ export function openSlotOrders(prisma: PrismaClient, slotId: string) {
   });
 }
 
-/** A slot's time changed or it was removed: customers with those orders are told */
-export async function notifySlotChanged(fcm: Messaging | null, prisma: PrismaClient, orders: Awaited<ReturnType<typeof openSlotOrders>>, updated: SlotWindow | null) {
+/** A slot's time changed: customers with orders booked in it are told */
+export async function notifySlotChanged(fcm: Messaging | null, prisma: PrismaClient, orders: Awaited<ReturnType<typeof openSlotOrders>>, updated: SlotWindow) {
   for (const o of orders) {
     const ref = formatOrderRef(o.id);
     const day = o.scheduledDate ? ` on ${formatISTDate(o.scheduledDate)}` : "";
-    const body = updated
-      ? `Order ${ref}${day} will now be delivered between ${updated.startTime} and ${updated.endTime}.`
-      : `The delivery slot for order ${ref}${day} is no longer available. The store will contact you.`;
+    const body = `Order ${ref}${day} will now be delivered between ${updated.startTime} and ${updated.endTime}.`;
     await sendNotification(fcm, prisma, { userId: o.userId, type: "DELIVERY_UPDATE", title: "Delivery time changed", body, data: { screen: "order", orderId: o.id } });
   }
 }

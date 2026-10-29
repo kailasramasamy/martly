@@ -482,7 +482,7 @@ export const createOrderSchema = z.object({
       /** The Home section the shopper added it from */
       source: sectionSourceSchema.optional(),
     }),
-  ),
+  ).min(1, "Add something to your cart first"),
 }).refine(
   (data) => data.fulfillmentType === "PICKUP" || data.deliveryAddress || data.addressId,
   { message: "Either deliveryAddress or addressId is required for delivery orders", path: ["deliveryAddress"] },
