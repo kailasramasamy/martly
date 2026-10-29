@@ -4,7 +4,7 @@ import { List, useTable, EditButton, ShowButton, useSelect } from "@refinedev/an
 import { Table, Form, Input, Space, Select, Tag, Typography, Badge, Tabs, Button, Switch, App, Popconfirm, Breadcrumb, theme as antTheme } from "antd";
 import type { HttpError, CrudFilter } from "@refinedev/core";
 import { useGetIdentity, useList } from "@refinedev/core";
-import { useNavigate, useSearchParams } from "react-router";
+import { Link, useNavigate, useSearchParams } from "react-router";
 import { axiosInstance } from "../../providers/data-provider";
 import { ShopOutlined, DeleteOutlined, HomeOutlined, RightOutlined } from "@ant-design/icons";
 
@@ -513,7 +513,7 @@ const ProductsTableTab = ({
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                 {record.foodType && foodTypeDot(record.foodType)}
-                <Text strong style={{ fontSize: 13 }}>{record.name}</Text>
+                <Link to={`/products/show/${record.id}`} style={{ fontSize: 13, fontWeight: 600 }}>{record.name}</Link>
                 {record.isDraft && <Tag color="gold" style={{ marginInlineEnd: 0 }}>Draft</Tag>}
               </div>
               {record.brand?.name && (
