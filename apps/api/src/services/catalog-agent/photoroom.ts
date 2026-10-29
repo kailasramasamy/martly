@@ -17,7 +17,7 @@ const SIZE = 1024;
 export class PhotoroomError extends Error {}
 
 async function post(url: string, form: FormData, headers: Record<string, string> = {}) {
-  const res = await fetch(url, { method: "POST", headers: { "x-api-key": process.env.PHOTOROOM_API_KEY ?? "", ...headers }, body: form });
+  const res = await fetch(url, { method: "POST", headers: { "x-api-key": process.env.PHOTOROOM_API_KEY ?? "", ...headers }, body: form, signal: AbortSignal.timeout(60_000) });
   if (!res.ok) throw new PhotoroomError(`Photoroom HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
   return Buffer.from(await res.arrayBuffer());
 }

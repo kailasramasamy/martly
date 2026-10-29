@@ -1,5 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import { authenticate } from "../../middleware/auth.js";
+import { MAPS_TIMEOUT_MS } from "../../lib/geo.js";
 
 const GOOGLE_API_KEY = process.env.GOOGLE_MAPS_API_KEY ?? "";
 const NEARBY_RADIUS_M = 30_000;
@@ -16,7 +17,7 @@ export async function placesRoutes(app: FastifyInstance) {
     // Prefer places around where the shopper is (or the store they shop at), so a local street beats a namesake across the country
     const near = lat && lng && !Number.isNaN(Number(lat)) && !Number.isNaN(Number(lng)) ? `&location=${Number(lat)},${Number(lng)}&radius=${NEARBY_RADIUS_M}` : "";
     const url = `https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${encodeURIComponent(input)}&components=country:in${near}&key=${GOOGLE_API_KEY}`;
-    const res = await fetch(url);
+    const res = await fetch(url, { signal: AbortSignal.timeout(MAPS_TIMEOUT_MS) });
     const data = (await res.json()) as {
       predictions: Array<{
         place_id: string;
@@ -35,7 +36,7 @@ export async function placesRoutes(app: FastifyInstance) {
     if (!GOOGLE_API_KEY) return reply.badRequest("Google Maps API key not configured");
 
     const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${place_id}&fields=geometry,formatted_address,address_components&key=${GOOGLE_API_KEY}`;
-    const res = await fetch(url);
+    const res = await fetch(url, { signal: AbortSignal.timeout(MAPS_TIMEOUT_MS) });
     const data = (await res.json()) as {
       result: {
         formatted_address: string;
@@ -65,7 +66,7 @@ export async function placesRoutes(app: FastifyInstance) {
     if (!GOOGLE_API_KEY) return reply.badRequest("Google Maps API key not configured");
 
     const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${GOOGLE_API_KEY}`;
-    const res = await fetch(url);
+    const res = await fetch(url, { signal: AbortSignal.timeout(MAPS_TIMEOUT_MS) });
     const data = (await res.json()) as {
       status: string;
       results: Array<{

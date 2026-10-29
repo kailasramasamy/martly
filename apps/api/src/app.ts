@@ -7,6 +7,7 @@ import { ZodError } from "zod";
 import { authSecret, checkSecrets } from "./services/secrets.js";
 import { errorReply } from "./services/error-reply.js";
 import { redactUrl } from "./services/request-log.js";
+import { clampPageSize } from "./services/page-size.js";
 import { prismaPlugin } from "./plugins/prisma.js";
 import { firebasePlugin } from "./plugins/firebase.js";
 import { authRoutes } from "./routes/auth/index.js";
@@ -131,6 +132,7 @@ export async function buildApp() {
   await app.register(sensible);
   // Limits are set per route with rateLimits() from middleware/rate-limit.ts
   await app.register(rateLimit, { global: false });
+  app.addHook("preValidation", async (request) => clampPageSize(request.query));
   await app.register(prismaPlugin);
   await app.register(firebasePlugin);
   await app.register(websocketPlugin);

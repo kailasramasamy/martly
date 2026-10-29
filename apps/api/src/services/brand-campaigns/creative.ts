@@ -19,7 +19,7 @@ export async function fitCreative(placement: BannerPlacement | null, imageUrl: s
   if (!imageUrl || !format) return imageUrl ?? null;
   // Only our own uploads are fetched, so a booking can't make the server request arbitrary URLs
   if (!isMediaUrl(imageUrl)) throw new CampaignError("Upload the creative through Martly");
-  const res = await fetch(imageUrl);
+  const res = await fetch(imageUrl, { signal: AbortSignal.timeout(30_000) });
   if (!res.ok) throw new CampaignError("The creative couldn't be read; upload it again");
   const image = Buffer.from(await res.arrayBuffer());
   const { width, height } = await sharp(image).metadata();

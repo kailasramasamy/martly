@@ -7,7 +7,7 @@ const CLAUDE_EDGE = 1568;
 export class PhotoFetchError extends Error {}
 
 export async function fetchPhoto(url: string): Promise<Buffer> {
-  const res = await fetch(url);
+  const res = await fetch(url, { signal: AbortSignal.timeout(30_000) });
   if (!res.ok) throw new PhotoFetchError(`Couldn't download ${url} (HTTP ${res.status})`);
   return Buffer.from(await res.arrayBuffer());
 }

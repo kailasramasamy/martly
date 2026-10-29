@@ -26,6 +26,7 @@ export async function sendTemplate(message: TemplateMessage, log: (msg: string) 
   }
   const response = await fetch(SEND_URL, {
     method: "POST",
+    signal: AbortSignal.timeout(10_000),
     headers: { Authorization: `Basic ${key}`, "Content-Type": "application/json" },
     body: JSON.stringify({
       countryCode: "+91",

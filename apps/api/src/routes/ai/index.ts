@@ -263,8 +263,11 @@ Copy product fields EXACTLY from tool results. products=[] if nothing to show. a
 
 // ── Route ───────────────────────────────────────────
 export async function aiRoutes(app: FastifyInstance) {
+  // A shopper is waiting on the reply: the SDK's 10-minute default with two retries would hold the request open
   const anthropic = new Anthropic({
     apiKey: process.env.ANTHROPIC_API_KEY,
+    timeout: 60_000,
+    maxRetries: 1,
   });
 
   app.post<{

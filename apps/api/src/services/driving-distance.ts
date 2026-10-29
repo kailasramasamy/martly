@@ -1,3 +1,5 @@
+import { MAPS_TIMEOUT_MS } from "../lib/geo.js";
+
 export interface Drive {
   km: number;
   minutes: number;
@@ -24,11 +26,12 @@ async function fetchMatrix(origin: Point, stores: { id: string; lat: number; lng
   const waypoint = (p: Point) => ({ waypoint: { location: { latLng: { latitude: p.lat, longitude: p.lng } } } });
   const res = await fetch("https://routes.googleapis.com/distanceMatrix/v2:computeRouteMatrix", {
     method: "POST",
+    signal: AbortSignal.timeout(MAPS_TIMEOUT_MS),
     headers: { "Content-Type": "application/json", "X-Goog-Api-Key": key, "X-Goog-FieldMask": "destinationIndex,distanceMeters,duration,condition" },
     body: JSON.stringify({ origins: [waypoint(origin)], destinations: stores.map(waypoint), travelMode: "DRIVE" }),
   }).catch((err: unknown) => {
-    // Network failure: fall back to straight-line distance rather than failing the store list
-    if (err instanceof TypeError) return null;
+    // Network failure or timeout: fall back to straight-line distance rather than failing the store list
+    if (err instanceof TypeError || (err instanceof DOMException && err.name === "TimeoutError")) return null;
     throw err;
   });
   if (!res?.ok) return null;

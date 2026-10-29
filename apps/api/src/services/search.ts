@@ -224,7 +224,7 @@ const wordsBesideBrand = (q: string) => Prisma.sql`CROSS JOIN LATERAL (SELECT CA
   ELSE '{}'::text[] END AS words) rest`;
 
 // Every stocked product with its intent flag, name tier and taxonomy hit for the query
-// (needs the `term`, `sales` and brand_names CTEs)
+// (needs the `term`, `sales`, `loose` and brand_names CTEs)
 const matchedProducts = (q: string, scope: SearchScope) => Prisma.sql`
   SELECT p.id, p.name, p.brand_id, ${popularity(scope)} AS popularity, COALESCE(sales.n, 0) AS sold,
     COALESCE(${q} = ANY(s.search_terms), false) AS intent,
@@ -234,11 +234,11 @@ const matchedProducts = (q: string, scope: SearchScope) => Prisma.sql`
       WHEN (SELECT bool_and(own.name ~* ('\\m' || w)) FROM unnest(term.words) w) THEN 2
       WHEN ${brandOnShelf} THEN 3
       WHEN own.name ILIKE '%' || ${q} || '%' THEN 4
-      WHEN EXISTS (
+      WHEN p.id IN (SELECT id FROM loose) AND EXISTS (
         SELECT 1 FROM jsonb_each(COALESCE(p.translations, '{}'::jsonb)) t
         WHERE t.value->>'name' ILIKE '%' || ${q} || '%'
       ) THEN 5
-      WHEN p.description ILIKE '%' || ${q} || '%' THEN 6
+      WHEN p.id IN (SELECT id FROM loose) AND p.description ILIKE '%' || ${q} || '%' THEN 6
     END AS tier,
     CASE
       WHEN c.name ~* ('\\m' || term.rx) THEN 0
@@ -272,6 +272,8 @@ async function keywordSearch(prisma: PrismaClient, q: string, scope: SearchScope
       WHERE ${salesScope(scope)} AND o.status <> 'CANCELLED'
       GROUP BY oi.product_id
     ),
+    -- search_text holds the translated names and the description: one indexed match spares reading them row by row
+    loose AS MATERIALIZED (SELECT id FROM products WHERE search_text ILIKE '%' || ${q} || '%'),
     ${brandNamesCte},
     matched AS MATERIALIZED (${matchedProducts(q, scope)}),
     banded AS (
@@ -306,17 +308,20 @@ function tightestTier<T extends { tier: number }>(rows: T[]): T[] {
 
 async function trigramSearch(prisma: PrismaClient, q: string, scope: SearchScope): Promise<string[]> {
   // Search both search_text and search_aliases
+  // Candidates come from each trigram index separately; an OR across the two tables would scan every product
   const rows = await prisma.$queryRaw<{ id: string; score: number }[]>`
-    SELECT DISTINCT p.id, GREATEST(
+    WITH hits AS MATERIALIZED (
+      SELECT id FROM products WHERE search_text % ${q}
+      UNION
+      SELECT product_id FROM search_aliases WHERE alias % ${q}
+    )
+    SELECT p.id, GREATEST(
       similarity(p.search_text, ${q}),
       COALESCE((SELECT MAX(similarity(sa.alias, ${q})) FROM search_aliases sa WHERE sa.product_id = p.id), 0)
     ) as score
     FROM products p
+    JOIN hits ON hits.id = p.id
     WHERE ${inScope(scope)}
-      AND (
-        p.search_text % ${q}
-        OR EXISTS (SELECT 1 FROM search_aliases sa WHERE sa.product_id = p.id AND sa.alias % ${q})
-      )
     ORDER BY score DESC
     LIMIT 50
   `;
@@ -355,7 +360,8 @@ async function semanticExpand(prisma: PrismaClient, query: string): Promise<stri
     });
     const categoryNames = subcategories.map((c) => c.name).join(", ");
 
-    const anthropic = new Anthropic({ apiKey });
+    // Search is waiting on this; a slow answer falls back to no results rather than holding the request open
+    const anthropic = new Anthropic({ apiKey, timeout: 10_000, maxRetries: 0 });
     const response = await anthropic.messages.create({
       model: "claude-haiku-4-5-20251001",
       max_tokens: 200,

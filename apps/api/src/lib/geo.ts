@@ -3,6 +3,8 @@
  */
 
 const EARTH_RADIUS_KM = 6371;
+// Google Maps calls give up after this, so a slow API can't hold a request open
+export const MAPS_TIMEOUT_MS = 10_000;
 
 function toRad(deg: number): number {
   return (deg * Math.PI) / 180;
@@ -31,7 +33,7 @@ export async function geocodeAddress(
   if (!key) return null;
 
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${key}`;
-  const res = await fetch(url);
+  const res = await fetch(url, { signal: AbortSignal.timeout(MAPS_TIMEOUT_MS) });
   const data = (await res.json()) as {
     status: string;
     results: Array<{
@@ -61,7 +63,7 @@ export async function reverseGeocode(
   if (!key) return null;
 
   const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${key}`;
-  const res = await fetch(url);
+  const res = await fetch(url, { signal: AbortSignal.timeout(MAPS_TIMEOUT_MS) });
   const data = (await res.json()) as {
     status: string;
     results: Array<{
@@ -164,6 +166,7 @@ export async function getDirectionsRoute(
 
   const res = await fetch("https://routes.googleapis.com/directions/v2:computeRoutes", {
     method: "POST",
+    signal: AbortSignal.timeout(MAPS_TIMEOUT_MS),
     headers: {
       "Content-Type": "application/json",
       "X-Goog-Api-Key": key,

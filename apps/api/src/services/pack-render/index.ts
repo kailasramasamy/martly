@@ -41,7 +41,7 @@ const media = new Map<string, Promise<Buffer>>();
 function fetchMedia(url: string) {
   let pending = media.get(url);
   if (!pending) {
-    pending = fetch(url).then(async (res) => {
+    pending = fetch(url, { signal: AbortSignal.timeout(30_000) }).then(async (res) => {
       if (!res.ok) throw new Error(`Pack media ${url} returned ${res.status}`);
       return Buffer.from(await res.arrayBuffer());
     });

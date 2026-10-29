@@ -36,7 +36,8 @@ export class ListUnreadableError extends Error {}
  * `glossary` (from the database, see glossary.ts) tells it how shoppers say staples and the catalog word for each.
  */
 export async function parseList(text: string, glossary: string) {
-  const response = await new Anthropic().beta.messages.parse({
+  // A shopper is waiting on the cart; the SDK default would let one call run for ten minutes
+  const response = await new Anthropic({ timeout: 90_000, maxRetries: 1 }).beta.messages.parse({
     model: MODEL,
     max_tokens: 8000,
     system: glossary ? `${SYSTEM}\n\n${glossary}` : SYSTEM,

@@ -228,8 +228,11 @@ Your response must be a single valid JSON object with no text before or after:
 
 // ── Route ───────────────────────────────────────────
 export async function supportRoutes(app: FastifyInstance) {
+  // A shopper is waiting on the reply: the SDK's 10-minute default with two retries would hold the request open
   const anthropic = new Anthropic({
     apiKey: process.env.ANTHROPIC_API_KEY,
+    timeout: 60_000,
+    maxRetries: 1,
   });
 
   // ── POST /chat — AI support chat ──

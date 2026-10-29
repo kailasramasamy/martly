@@ -4,30 +4,43 @@ import { Prisma } from "../../generated/prisma/index.js";
 // pg_trgm similarity a misspelt word needs to a catalogue word before we swap it ("deterget" → "detergent")
 const MIN_SIMILARITY = 0.3;
 
+// The vocabulary is rebuilt from the catalogue at most this often per store; a new product's words wait that long
+const VOCAB_TTL_MS = 10 * 60_000;
+const vocabCache = new Map<string, { words: string[]; builtAt: number }>();
+
+/** The words in this store's product and brand names and aisle search terms (the whole active catalog without a store) */
+async function vocabulary(prisma: PrismaClient, storeId: string | undefined): Promise<string[]> {
+  const key = storeId ?? "*";
+  const cached = vocabCache.get(key);
+  if (cached && Date.now() - cached.builtAt < VOCAB_TTL_MS) return cached.words;
+  const rows = await prisma.$queryRaw<{ w: string }[]>`
+    SELECT DISTINCT w FROM products p
+    ${storeId
+      ? Prisma.sql`JOIN store_products sp ON sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true`
+      : Prisma.empty}
+    LEFT JOIN brands b ON b.id = p.brand_id
+    LEFT JOIN subcategories s ON s.id = p.subcategory_id
+    CROSS JOIN LATERAL regexp_split_to_table(
+      lower(p.name || ' ' || COALESCE(b.name, '') || ' ' || array_to_string(COALESCE(s.search_terms, '{}'), ' ')), '[^a-z]+'
+    ) AS w
+    WHERE p.is_active = true AND length(w) >= 3`;
+  const words = rows.map((r) => r.w);
+  vocabCache.set(key, { words, builtAt: Date.now() });
+  return words;
+}
+
 /**
- * Per-word spelling correction against the words in this store's product and brand names and aisle search terms
- * (the whole active catalog when no store is given, e.g. admin catalog search).
+ * Per-word spelling correction against the store's vocabulary.
  * Known words are kept as typed; returns undefined when nothing changed.
  */
 export async function correctQuery(prisma: PrismaClient, storeId: string | undefined, q: string): Promise<string | undefined> {
   const tokens = q.split(" ").filter(Boolean);
   if (tokens.length === 0) return undefined;
+  const vocab = await vocabulary(prisma, storeId);
   const rows = await prisma.$queryRaw<{ token: string; best: string | null; known: boolean }[]>`
-    WITH vocab AS (
-      SELECT DISTINCT w FROM products p
-      ${storeId
-        ? Prisma.sql`JOIN store_products sp ON sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true`
-        : Prisma.empty}
-      LEFT JOIN brands b ON b.id = p.brand_id
-      LEFT JOIN subcategories s ON s.id = p.subcategory_id
-      CROSS JOIN LATERAL regexp_split_to_table(
-        lower(p.name || ' ' || COALESCE(b.name, '') || ' ' || array_to_string(COALESCE(s.search_terms, '{}'), ' ')), '[^a-z]+'
-      ) AS w
-      WHERE p.is_active = true AND length(w) >= 3
-    )
     SELECT t.token,
-      EXISTS (SELECT 1 FROM vocab WHERE w = t.token) AS known,
-      (SELECT w FROM vocab WHERE similarity(w, t.token) >= ${MIN_SIMILARITY}
+      t.token = ANY(${vocab}::text[]) AS known,
+      (SELECT w FROM unnest(${vocab}::text[]) w WHERE similarity(w, t.token) >= ${MIN_SIMILARITY}
         ORDER BY similarity(w, t.token) DESC, length(w) LIMIT 1) AS best
     FROM unnest(${tokens}::text[]) WITH ORDINALITY AS t(token, pos)
     ORDER BY t.pos`;

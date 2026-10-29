@@ -926,6 +926,8 @@ model Product {
   @@index([productType])
   @@index([organizationId])
   @@index([tags], type: Gin)
+  @@index([searchText(ops: raw("gin_trgm_ops"))], type: Gin, map: "products_search_text_trgm_idx")
+  // Also products_search_text_fts_idx on to_tsvector('english', search_text) (expression index, migration 20261029210000)
   @@map("products")
 }
 
@@ -953,6 +955,7 @@ model ProductVariant {
   orderItems       OrderItem[]
   monthlyListItems MonthlyListItem[]
 
+  @@index([productId])
   @@map("product_variants")
 }
 
@@ -1012,6 +1015,7 @@ model StoreProduct {
   @@unique([storeId, variantId])
   @@index([storeId, priceReviewedAt])
   @@index([storeId, carried])
+  @@index([productId])
   @@map("store_products")
 }
 
@@ -1079,6 +1083,11 @@ model Order {
   paymentAttempts     PaymentAttempt[]
 
   @@index([storeId, status])
+  @@index([userId, createdAt])
+  @@index([storeId, createdAt])
+  @@index([deliverySlotId, scheduledDate])
+  @@index([deliveryTripId])
+  @@index([razorpayOrderId])
   @@map("orders")
 }
 
@@ -1144,6 +1153,8 @@ model OrderItem {
   returnRequestItems ReturnRequestItem[]
   replacesReturn     ReturnRequest?      @relation(fields: [replacesReturnId], references: [id])
 
+  @@index([orderId])
+  @@index([productId])
   @@map("order_items")
 }
 
@@ -1870,6 +1881,7 @@ model SearchAlias {
   product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
 
   @@index([productId])
+  @@index([alias(ops: raw("gin_trgm_ops"))], type: Gin, map: "search_aliases_alias_trgm_idx")
   @@map("search_aliases")
 }
 

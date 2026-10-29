@@ -6,6 +6,7 @@ const OTP_TTL_MS = 5 * 60 * 1000;
 const RESEND_COOLDOWN_MS = 30 * 1000;
 const MAX_ATTEMPTS = 5;
 const MSG91_OTP_URL = "https://api.msg91.com/api/v5/otp";
+const MSG91_TIMEOUT_MS = 10_000;
 const INDIAN_MOBILE = /^[6-9]\d{9}$/;
 
 type Prisma = FastifyInstance["prisma"];
@@ -45,7 +46,11 @@ async function deliverSms(phone: string, code: string, log: FastifyBaseLogger) {
     route: process.env.MSG91_ROUTE ?? "4",
     template_id: process.env.MSG91_OTP_TEMPLATE_ID ?? "",
   });
-  const res = await fetch(`${MSG91_OTP_URL}?${params}`, { method: "POST" });
+  const res = await fetch(`${MSG91_OTP_URL}?${params}`, { method: "POST", signal: AbortSignal.timeout(MSG91_TIMEOUT_MS) }).catch((err: unknown) => {
+    if (!(err instanceof TypeError || (err instanceof DOMException && err.name === "TimeoutError"))) throw err;
+    log.error({ err }, "MSG91 OTP send unreachable");
+    throw httpError(502, "Could not send OTP. Please try again.");
+  });
   const body = (await res.json().catch(() => ({}))) as { type?: string; message?: string };
   if (!res.ok || body.type !== "success") {
     log.error({ status: res.status, msg91: body.message }, "MSG91 OTP send failed");
