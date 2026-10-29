@@ -1,7 +1,7 @@
 import { Prisma, type PrismaClient } from "../../generated/prisma/client.js";
 import { brandNamesCte, nameForQuery, normalizeQuery } from "./search.js";
 import { completeQuery, correctQuery } from "./spell.js";
-import { liveSponsored } from "./sponsored.js";
+import { liveSponsored, type SponsoredAd } from "./sponsored.js";
 import { namesBrand, rotateAds } from "./sponsored-search.js";
 
 export type SuggestionKind = "query" | "category" | "brand";
@@ -114,10 +114,8 @@ function brandSuggestions(rows: BrandRow[], term: string, tokens: string[]): Sug
  * One sponsored product whose name (or aisle) the term matches, unless the term names a brand: its name becomes the
  * row, so tapping it searches for that product.
  */
-async function sponsoredSuggestion(prisma: PrismaClient, store: { id: string; organizationId: string }, term: string, tokens: string[], brands: BrandRow[]) {
-  if (term.length < MIN_AD_TERM || namesBrand(term, brands.map((b) => b.brand))) return null;
-  const ads = await liveSponsored(prisma, store);
-  if (ads.length === 0) return null;
+async function sponsoredSuggestion(prisma: PrismaClient, ads: SponsoredAd[], term: string, tokens: string[], brands: BrandRow[]) {
+  if (ads.length === 0 || namesBrand(term, brands.map((b) => b.brand))) return null;
   const matching = await prisma.$queryRaw<{ id: string; name: string; imageUrl: string | null }[]>`
     WITH ${brandNamesCte}
     SELECT p.id, p.name, p.image_url AS "imageUrl" FROM products p
@@ -149,21 +147,29 @@ function dedupe(candidates: Suggestion[]) {
 export async function suggestSearches(prisma: PrismaClient, store: { id: string; organizationId: string }, rawQuery: string) {
   const storeId = store.id;
   const q = normalizeQuery(rawQuery);
-  const completed = await completeQuery(prisma, storeId, q);
-  const termImage = await productImage(prisma, storeId, completed.split(" "));
-  const correctedQuery = termImage ? undefined : await correctQuery(prisma, storeId, q);
+  // The spelling correction is only used when the completed term finds nothing, but looking both up at once saves a
+  // round trip on every keystroke
+  const [completed, corrected] = await Promise.all([completeQuery(prisma, storeId, q), correctQuery(prisma, storeId, q)]);
+  const [termImage, correctedImage] = await Promise.all([
+    productImage(prisma, storeId, completed.split(" ")),
+    corrected ? productImage(prisma, storeId, corrected.split(" ")) : null,
+  ]);
+  const correctedQuery = termImage ? undefined : corrected;
   const term = correctedQuery ?? completed;
   const tokens = term.split(" ");
-  const [image, popular, categories, brands] = await Promise.all([
-    correctedQuery ? productImage(prisma, storeId, tokens) : Promise.resolve(termImage),
+  const image = correctedQuery ? correctedImage : termImage;
+  const [popular, categories, brands, ads] = await Promise.all([
     popularQueries(prisma, storeId, term),
     categoryMatches(prisma, storeId, term, tokens),
     brandRows(prisma, storeId, term, tokens),
+    term.length >= MIN_AD_TERM ? liveSponsored(prisma, store) : [],
   ]);
-  const popularRows = await Promise.all(popular.map(async (p) => ({
-    text: p.text, kind: "query" as const, imageUrl: await productImage(prisma, storeId, p.text.split(" ")),
-  })));
-  const ad = await sponsoredSuggestion(prisma, store, term, tokens, brands);
+  const [popularRows, ad] = await Promise.all([
+    Promise.all(popular.map(async (p) => ({
+      text: p.text, kind: "query" as const, imageUrl: await productImage(prisma, storeId, p.text.split(" ")),
+    }))),
+    sponsoredSuggestion(prisma, ads, term, tokens, brands),
+  ]);
   const suggestions = dedupe([
     // The term itself only earns a row when something in the store matches it; the ad sits right after it
     ...(image ? [{ text: term, kind: "query" as const, imageUrl: image }] : []),

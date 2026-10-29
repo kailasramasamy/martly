@@ -2,6 +2,8 @@ import { Prisma, type PrismaClient } from "../../generated/prisma/index.js";
 import Anthropic from "@anthropic-ai/sdk";
 import { correctQuery } from "./spell.js";
 import { featuredPairs, hasBoost, storeBrandBoost, type BrandBoost } from "./brand-boost.js";
+import { mapLimit } from "./map-limit.js";
+import { lifetimeSales, salesTable } from "./product-sales.js";
 
 export type SearchStrategy = "keyword" | "fuzzy" | "fulltext" | "semantic";
 
@@ -31,6 +33,9 @@ const INTENT_ONLY_PENALTY = 40;
 // staples a little more often (every 14), so they lead when both match
 const FEATURED_POPULARITY = 105;
 const OWN_POPULARITY = 106;
+// An LLM expansion is searched for at most this many terms, this many terms at a time (each runs three queries)
+const MAX_EXPANDED_TERMS = 5;
+const EXPANDED_TERMS_AT_ONCE = 2;
 
 /**
  * What a search runs over. Shoppers see a store's listed, active products; admins also see unlisted listings
@@ -68,8 +73,6 @@ const inStoreScope = ({ storeId, listedOnly }: SearchScope) => {
         SELECT 1 FROM store_products sp WHERE sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true)`
     : Prisma.sql`EXISTS (SELECT 1 FROM store_products sp WHERE sp.product_id = p.id AND sp.store_id = ${storeId})`;
 };
-
-const salesScope = ({ storeId }: SearchScope) => (storeId ? Prisma.sql`o.store_id = ${storeId}` : Prisma.sql`TRUE`);
 
 interface SearchOptions {
   minResults?: number;
@@ -163,16 +166,12 @@ async function runSearch(prisma: PrismaClient, scope: SearchScope, query: string
   }
 
   // Re-run search with expanded terms
-  const expandedIds: string[] = [];
-  for (const term of expanded) {
-    const kw = await keywordSearch(prisma, term, scope, limit);
-    const tg = await trigramSearch(prisma, term, scope);
-    const ft = await fullTextSearch(prisma, term, scope);
-    expandedIds.push(...kw, ...tg, ...ft);
-  }
+  const perTerm = await mapLimit(expanded.slice(0, MAX_EXPANDED_TERMS), EXPANDED_TERMS_AT_ONCE, (term) => Promise.all([
+    keywordSearch(prisma, term, scope, limit), trigramSearch(prisma, term, scope), fullTextSearch(prisma, term, scope),
+  ]));
 
   return {
-    productIds: dedup(expandedIds),
+    productIds: dedup(perTerm.flat(2)),
     meta: { strategy: "semantic", expandedTerms: expanded },
   };
 }
@@ -262,16 +261,14 @@ async function keywordSearch(prisma: PrismaClient, q: string, scope: SearchScope
   // 4 substring, 5 translated name, 6 description only. Within a tier:
   // category name hit ("oil" → Edible Oils), then subcategory hit (Hair Oil), then brands round-robin
   // (best-known brands take turns more often) so one brand's A–Z run can't fill the top rows.
+  // Order lines per product, recounted every few minutes rather than from the whole order history on each keystroke
+  const sales = await lifetimeSales(prisma, scope.storeId);
   const rows = await prisma.$queryRaw<{ id: string; tier: number }[]>`
     WITH term AS (
       SELECT rx, string_to_array(rx, ' ') AS words
       FROM (SELECT regexp_replace(${q}, '([^[:alnum:] ])', '\\\\\\1', 'g') AS rx) e
     ),
-    sales AS (
-      SELECT oi.product_id, COUNT(*) AS n FROM order_items oi JOIN orders o ON o.id = oi.order_id
-      WHERE ${salesScope(scope)} AND o.status <> 'CANCELLED'
-      GROUP BY oi.product_id
-    ),
+    sales AS ${salesTable(sales)},
     -- search_text holds the translated names and the description: one indexed match spares reading them row by row
     loose AS MATERIALIZED (SELECT id FROM products WHERE search_text ILIKE '%' || ${q} || '%'),
     ${brandNamesCte},
