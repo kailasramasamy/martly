@@ -127,7 +127,7 @@ npx tsx scripts/onboard-store.ts ~/.martly/onboarding/<slug>/spec.json --prod
 }
 ```
 
-`delivery` also takes `radius`, `minOrderAmount`, `freeDeliveryThreshold`, `baseDeliveryFee`, `expressEtaMinutes`, `opensAt`
+`delivery` also takes `radius`, `minOrderAmount`, `freeDeliveryThreshold`, `startingDeliveryFee` (nearest tier; farther tiers add ₹10 each), `expressEtaMinutes`, `opensAt`
 and `closesAt`. `catalog` also takes `discountPct` and `openingStock`. `"launch": false` keeps the store hidden, and its
 hero collections wait until it launches.
 

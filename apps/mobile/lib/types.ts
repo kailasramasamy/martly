@@ -15,7 +15,8 @@ export interface Store {
   distance?: number;
   minOrderAmount?: number | null;
   freeDeliveryThreshold?: number | null;
-  baseDeliveryFee?: number | null;
+  /** The lowest delivery tier fee; the exact one depends on the address, at checkout */
+  deliveryFeeFrom?: number | null;
   subscriptionEnabled?: boolean;
   imageUrl?: string | null;
   deliversToYou?: boolean;
@@ -394,11 +395,6 @@ export interface CouponValidation {
   discount: number;
   code: string;
   description: string | null;
-}
-
-export interface DeliveryZoneInfo {
-  deliveryFee: number;
-  estimatedMinutes: number;
 }
 
 export type FulfillmentType = "DELIVERY" | "PICKUP";

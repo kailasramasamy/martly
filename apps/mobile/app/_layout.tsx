@@ -41,6 +41,7 @@ import { useStrings } from "../lib/i18n/use-strings";
 import { appFonts } from "../lib/i18n/fonts";
 import { addNotificationResponseListener, getLastNotificationResponse, notificationResponseData } from "../lib/notifications";
 import { resolveNotificationDeepLink } from "../lib/notification-helpers";
+import { isAwaitingUpiReturn } from "../lib/use-upi-payment";
 import SplashScreen from "../components/SplashScreen";
 import { colors } from "../constants/theme";
 import { manage } from "../components/manage/ui/tokens";
@@ -99,6 +100,8 @@ function RootLayoutNav() {
   useEffect(() => {
     const subscription = addNotificationResponseListener((response) => {
       const data = notificationResponseData(response);
+      // Checkout is waiting on this order's UPI payment and moves on to the success screen by itself
+      if (data?.screen === "order" && isAwaitingUpiReturn(String(data.orderId))) return;
       if (data) {
         const target = resolveNotificationDeepLink(data);
         if (splashDone) {

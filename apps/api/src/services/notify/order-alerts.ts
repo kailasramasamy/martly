@@ -1,4 +1,5 @@
 import type { FastifyInstance } from "fastify";
+import { UNPAID_EXPIRY_MINUTES } from "@martly/shared/order-flow";
 import { slotCapacity } from "../delivery/settings.js";
 import { istDateKey, istDay } from "../ist-day.js";
 import { cancelOrder } from "../order-cancel.js";
@@ -11,7 +12,6 @@ const MINUTE_MS = 60_000;
 const SCAN_WINDOW_MS = 24 * 60 * MINUTE_MS;
 // Slow-order alerts are for live operations; anything older is stale, not urgent
 const SLA_WINDOW_MS = 6 * 60 * MINUTE_MS;
-const UNPAID_EXPIRY_MINUTES = 30;
 const DISPATCH_WAIT_MINUTES = 20;
 const SLOW_THRESHOLDS = { PENDING: 10, CONFIRMED: 20, PREPARING: 30 } as const;
 

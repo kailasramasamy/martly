@@ -16,6 +16,7 @@ import { withSignIn } from "../../components/SignInPrompt";
 import { PickupNotice } from "../../components/order/PickupNotice";
 import { ReturnStatusCard } from "../../components/order/ReturnStatusCard";
 import { StatusCard } from "../../components/order/StatusCard";
+import { CompletePayment } from "../../components/order/CompletePayment";
 import { ItemsCard } from "../../components/order/ItemsCard";
 import { OrderSummaryCard } from "../../components/order/OrderSummaryCard";
 import { RateOrderSheet } from "../../components/order/RateOrderSheet";
@@ -24,6 +25,7 @@ import { useOrderRatings } from "../../components/order/use-order-ratings";
 import { SaveAsMonthlyList } from "../../components/monthly-list/SaveAsMonthlyList";
 import { useStore } from "../../lib/store-context";
 import type { OrderData } from "../../components/order/types";
+import { awaitingPayment } from "@martly/shared/order-flow";
 import type { ReturnRequestData } from "../../lib/types";
 
 /** The order, kept live over the websocket while it's open, plus its return request once delivered */
@@ -108,6 +110,7 @@ function OrderDetailScreen() {
     <>
       <ScrollView style={styles.container} contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, 24) }}>
         <StatusCard order={order} returnRequest={returnRequest} />
+        {awaitingPayment(order) && <CompletePayment order={order} onPaid={fetchOrder} />}
         {isActive && order.pickups && order.pickups.length > 0 && <View style={styles.inset}><PickupNotice pickups={order.pickups} /></View>}
         <ItemsCard
           order={order}

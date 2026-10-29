@@ -16,6 +16,7 @@ import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess, requireOrgContext } f
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { notifySubscriptionCancelled, notifySubscriptionCreated } from "../../services/notify/subscription-alerts.js";
 import { calculateNextDeliveryDate, advanceNextDeliveryDate, isDeliveryDay } from "../../utils/subscription-dates.js";
+import { deliveryFeeTo } from "../../services/delivery/fee.js";
 import { todayIST, tomorrowIST, endOfDayUTC, parseDate, formatDate } from "../../utils/timezone.js";
 
 const STORE_PRODUCT_INCLUDE = {
@@ -524,14 +525,21 @@ export async function subscriptionRoutes(app: FastifyInstance) {
     const store = await app.prisma.store.findUnique({
       where: { id: storeId },
       select: {
-        baseDeliveryFee: true,
+        latitude: true,
+        longitude: true,
+        deliveryRadius: true,
         subscriptionCutoffTime: true,
         freeDeliveryThreshold: true,
         subscriptionWindowStart: true,
         subscriptionWindowEnd: true,
       },
     });
-    let deliveryFee = store?.baseDeliveryFee ? Number(store.baseDeliveryFee) : 0;
+    // Tomorrow's basket goes to the subscription's address, charged like the scheduler will
+    const sub = subscriptions.find((s) => s.deliveryLat != null && s.deliveryLng != null);
+    const delivery = store
+      ? await deliveryFeeTo(app.prisma, storeId, store, sub ? { lat: sub.deliveryLat!, lng: sub.deliveryLng! } : null)
+      : null;
+    let deliveryFee = delivery?.serviceable ? delivery.fee : 0;
     if (store?.freeDeliveryThreshold && itemsTotal >= Number(store.freeDeliveryThreshold)) {
       deliveryFee = 0;
     }

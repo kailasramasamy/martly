@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Edit, useForm } from "@refinedev/antd";
-import { Form, Input, InputNumber, Select, Card, Row, Col, Slider, Switch, Radio } from "antd";
+import { Form, Input, InputNumber, Select, Card, Row, Col, Switch, Radio } from "antd";
 import { ShopOutlined, EnvironmentOutlined, ShoppingCartOutlined, CalendarOutlined } from "@ant-design/icons";
 import type { Town } from "@martly/shared/types";
 
@@ -73,18 +73,6 @@ export const StoreEdit = () => {
             {/* Right column: Operational settings */}
             <Col xs={24} lg={12}>
               <Card title={sectionTitle(<ShoppingCartOutlined />, "Delivery Settings")} size="small">
-                <Form.Item label="Delivery Radius (km)" name="deliveryRadius">
-                  <Slider min={1} max={25} step={0.5} marks={{ 1: "1", 5: "5", 10: "10", 15: "15", 25: "25" }} />
-                </Form.Item>
-                <Form.Item label="Base Delivery Fee" name="baseDeliveryFee" tooltip="Default delivery fee when no distance tier or zone matches. Leave empty for no base fee.">
-                  <InputNumber style={{ width: "100%" }} min={0} addonBefore={"\u20B9"} placeholder="No base fee" />
-                </Form.Item>
-                <Form.Item label="Free Delivery Threshold" name="freeDeliveryThreshold" tooltip="Orders above this amount get free delivery. Leave empty for no free delivery threshold.">
-                  <InputNumber style={{ width: "100%" }} min={0} addonBefore={"\u20B9"} placeholder="No threshold" />
-                </Form.Item>
-                <Form.Item label="Minimum Order Amount" name="minOrderAmount" tooltip="Customers must meet this minimum to place an order. Leave empty for no minimum.">
-                  <InputNumber style={{ width: "100%" }} min={0} addonBefore={"\u20B9"} placeholder="No minimum" />
-                </Form.Item>
                 <Form.Item label={"Return keep-it limit (\u20B9)"} name="returnKeepThreshold" help="Returns worth up to this amount default to refund without collecting the item.">
                   <InputNumber style={{ width: "100%" }} min={0} addonBefore={"\u20B9"} placeholder="No limit" />
                 </Form.Item>

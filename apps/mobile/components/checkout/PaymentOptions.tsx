@@ -104,6 +104,30 @@ export function PaymentConfirming({ visible, appLabel, onCancel }: { visible: bo
   );
 }
 
+/** iOS can't bring the customer back from the UPI app, so we say so before opening it */
+export function UpiHandoff({ visible, app, onContinue, onCancel }: {
+  visible: boolean; app?: UpiApp; onContinue: () => void; onCancel: () => void;
+}) {
+  const t = useStrings("checkout").payment;
+  return (
+    <Modal visible={visible} transparent animationType="fade" onRequestClose={onCancel}>
+      <View style={styles.backdrop}>
+        <View style={styles.confirmCard}>
+          {app && <Image source={app.logo} style={styles.handoffLogo} />}
+          <Text style={styles.confirmTitle}>{t.handoffTitle(app?.label)}</Text>
+          <Text style={styles.confirmSub}>{t.handoffSub(app?.label)}</Text>
+          <TouchableOpacity onPress={onContinue} style={styles.handoffButton} activeOpacity={0.8}>
+            <Text style={styles.handoffButtonText}>{t.handoffContinue(app?.label)}</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={onCancel} style={styles.confirmCancel} hitSlop={8}>
+            <Text style={styles.confirmCancelText}>{t.checkLater}</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </Modal>
+  );
+}
+
 const styles = StyleSheet.create({
   section: { marginTop: spacing.md, paddingHorizontal: spacing.md },
   header: { flexDirection: "row", alignItems: "center", gap: 6, marginBottom: spacing.sm },
@@ -132,4 +156,7 @@ const styles = StyleSheet.create({
   confirmSub: { fontSize: 13, color: colors.textSecondary, textAlign: "center", lineHeight: 19 },
   confirmCancel: { minHeight: 44, justifyContent: "center", paddingHorizontal: spacing.md },
   confirmCancelText: { fontSize: 13, fontWeight: "700", color: colors.primary },
+  handoffLogo: { width: 52, height: 52, borderRadius: 12 },
+  handoffButton: { alignSelf: "stretch", minHeight: 48, borderRadius: 12, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center", marginTop: 6 },
+  handoffButtonText: { fontSize: 15, fontWeight: "800", color: "#fff" },
 });

@@ -123,10 +123,6 @@ export const createStoreSchema = z.object({
   imageUrl: z.string().url().nullish(),
   latitude: z.number().min(-90).max(90).optional(),
   longitude: z.number().min(-180).max(180).optional(),
-  deliveryRadius: z.number().positive().optional(),
-  minOrderAmount: z.number().min(0).optional(),
-  freeDeliveryThreshold: z.number().min(0).optional(),
-  baseDeliveryFee: z.number().min(0).optional(),
 });
 export type CreateStoreInput = z.infer<typeof createStoreSchema>;
 
@@ -521,11 +517,7 @@ export const updateStoreSchema = storeBrandingSchema.extend({
   status: z.nativeEnum(StoreStatus).optional(),
   latitude: z.number().min(-90).max(90).nullish(),
   longitude: z.number().min(-180).max(180).nullish(),
-  deliveryRadius: z.number().positive().optional(),
   // Money comes back from the API as Decimal strings; forms send them back as-is
-  minOrderAmount: z.coerce.number().min(0).nullish(),
-  freeDeliveryThreshold: z.coerce.number().min(0).nullish(),
-  baseDeliveryFee: z.coerce.number().min(0).nullish(),
   returnKeepThreshold: z.coerce.number().min(0).nullish(),
   subscriptionEnabled: z.boolean().optional(),
   subscriptionDeliveryMode: z.nativeEnum(SubscriptionDeliveryMode).optional(),
@@ -857,6 +849,14 @@ export const updateDeliveryTierSchema = z.object({
   isActive: z.boolean().optional(),
 });
 export type UpdateDeliveryTierInput = z.infer<typeof updateDeliveryTierSchema>;
+
+/** A store's delivery charges besides its distance tiers, edited together with them */
+export const deliveryChargesSchema = z.object({
+  deliveryRadius: z.number().positive().max(30),
+  freeDeliveryThreshold: z.number().min(0).nullable(),
+  minOrderAmount: z.number().min(0).nullable(),
+});
+export type DeliveryChargesInput = z.infer<typeof deliveryChargesSchema>;
 
 export const deliveryLookupSchema = z.object({
   storeId: z.string().uuid(),

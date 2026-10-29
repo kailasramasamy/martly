@@ -7,6 +7,7 @@ import {
 } from "../services/notify/subscription-alerts.js";
 import { calculateEffectivePrice } from "../services/pricing.js";
 import { advanceNextDeliveryDate, isDeliveryDay } from "../utils/subscription-dates.js";
+import { deliveryFeeTo } from "../services/delivery/fee.js";
 import { tomorrowIST, endOfDayUTC, currentISTTime } from "../utils/timezone.js";
 
 const INTERVAL_MS = 60_000; // 1 minute
@@ -268,7 +269,10 @@ async function subscriptionSchedulerPlugin(app: FastifyInstance) {
               }
 
               // Calculate totals
-              const deliveryFee = Number(store.baseDeliveryFee ?? 0);
+              const point = sub.deliveryLat != null && sub.deliveryLng != null ? { lat: sub.deliveryLat, lng: sub.deliveryLng } : null;
+              const delivery = await deliveryFeeTo(app.prisma, store.id, store, point);
+              // A subscriber the store no longer reaches still gets the delivery they signed up for
+              const deliveryFee = delivery.serviceable ? delivery.fee : 0;
               let finalItems = orderItems;
               let finalItemsTotal = orderItems.reduce(
                 (sum, i) => sum + i.totalPrice,

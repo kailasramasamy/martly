@@ -43,15 +43,15 @@ export default function CartScreen() {
   const minOrderAmount = selectedStore?.minOrderAmount ? Number(selectedStore.minOrderAmount) : null;
   const freeDeliveryThreshold = selectedStore?.freeDeliveryThreshold ? Number(selectedStore.freeDeliveryThreshold) : null;
   const belowMinimum = minOrderAmount != null && totalAmount < minOrderAmount;
-  const baseDeliveryFee = selectedStore?.baseDeliveryFee ? Number(selectedStore.baseDeliveryFee) : 0;
+  const deliveryFeeFrom = selectedStore?.deliveryFeeFrom ?? null;
   const thresholdFreeDelivery = freeDeliveryThreshold != null && totalAmount >= freeDeliveryThreshold;
-  const cartFreeDelivery = memberFreeDelivery || thresholdFreeDelivery;
+  const cartFreeDelivery = memberFreeDelivery || thresholdFreeDelivery || deliveryFeeFrom === 0;
   const belowFreeDelivery = !cartFreeDelivery && freeDeliveryThreshold != null && totalAmount < freeDeliveryThreshold && !belowMinimum;
   const goal = belowMinimum
     ? { kind: "minimum" as const, target: minOrderAmount! }
     : belowFreeDelivery ? { kind: "freeDelivery" as const, target: freeDeliveryThreshold! } : null;
   const review = useCartReview(goal ? goal.target - totalAmount : null);
-  const deliveryFee = cartFreeDelivery ? 0 : baseDeliveryFee > 0 ? baseDeliveryFee : null;
+  const deliveryFee = cartFreeDelivery ? 0 : deliveryFeeFrom;
   // The applied coupon comes off here too, as checkout will take it off; it's re-validated there
   const coupon = review.coupon?.eligible && review.coupon.code === pendingCoupon
     ? { code: review.coupon.code, amount: review.coupon.discount ?? 0 }

@@ -1,3 +1,4 @@
+import { awaitingPayment } from "@martly/shared/order-flow";
 import { strings } from "../../lib/i18n";
 import type { OrderSummary } from "./types";
 
@@ -17,7 +18,10 @@ const STATUS_COLORS: Record<string, { bg: string; fg: string }> = {
   CANCELLED: { bg: "#fee2e2", fg: "#b91c1c" },
 };
 
-export function statusMeta(order: Pick<OrderSummary, "status" | "fulfillmentType">): StatusMeta {
+const AWAITING_PAYMENT_COLORS = { bg: "#fef3c7", fg: "#b45309" };
+
+export function statusMeta(order: Pick<OrderSummary, "status" | "fulfillmentType" | "totalAmount" | "paymentMethod" | "paymentStatus">): StatusMeta {
+  if (awaitingPayment(order)) return { label: strings("orders").card.paymentPending, ...AWAITING_PAYMENT_COLORS };
   const { card, cardPickup } = strings("orders").status as { card: Record<string, string>; cardPickup: Record<string, string> };
   const colors = STATUS_COLORS[order.status] ?? { bg: "#f1f5f9", fg: "#475569" };
   const pickupLabel = order.fulfillmentType === "PICKUP" ? cardPickup[order.status] : undefined;

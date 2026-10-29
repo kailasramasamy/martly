@@ -15,7 +15,7 @@ import { errorMessage, onboardingApi, type Onboarding } from "../../pages/onboar
 type StoreForm = OnboardingStoreInput;
 
 const DEFAULTS: Partial<StoreForm> = {
-  deliveryRadius: 5, minOrderAmount: 99, freeDeliveryThreshold: 299, baseDeliveryFee: 20,
+  deliveryRadius: 5, minOrderAmount: 99, freeDeliveryThreshold: 299, startingDeliveryFee: 20,
   expressEtaMinutes: 30, opensAt: "07:00", closesAt: "21:30",
 };
 const TIME_RULE = { pattern: /^([01]\d|2[0-3]):[0-5]\d$/, message: "HH:MM, 24-hour" };
@@ -28,7 +28,7 @@ function fromSaved(o: Onboarding): Partial<StoreForm> {
     name: d.name, address: d.address, townId: d.townId ?? undefined,
     phone: d.phone ?? undefined, latitude: d.latitude ?? undefined, longitude: d.longitude ?? undefined,
     deliveryRadius: d.deliveryRadius, minOrderAmount: num(d.minOrderAmount), freeDeliveryThreshold: num(d.freeDeliveryThreshold) ?? null,
-    baseDeliveryFee: num(d.baseDeliveryFee), logoUrl: d.logoUrl, expressEtaMinutes: d.expressEtaMinutes ?? 30,
+    startingDeliveryFee: d.startingDeliveryFee ?? 20, logoUrl: d.logoUrl, expressEtaMinutes: d.expressEtaMinutes ?? 30,
     opensAt: d.opensAt ?? "07:00", closesAt: d.closesAt ?? "21:30",
   };
 }
@@ -62,7 +62,7 @@ function DeliveryCard() {
       <Card size="small" title={sectionTitle(<ClockCircleOutlined />, "Delivery & hours")}>
         <Form.Item label="Delivery radius (km)" name="deliveryRadius"><Slider min={1} max={15} step={0.5} marks={{ 1: "1", 5: "5", 10: "10", 15: "15" }} /></Form.Item>
         <Row gutter={12}>
-          <Col span={12}><Form.Item label="Delivery fee" name="baseDeliveryFee" rules={[{ required: true }]} extra="Nearest band; farther bands add ₹10 each"><InputNumber {...money} /></Form.Item></Col>
+          <Col span={12}><Form.Item label="Delivery fee" name="startingDeliveryFee" rules={[{ required: true }]} extra="Nearest band; farther bands add ₹10 each"><InputNumber {...money} /></Form.Item></Col>
           <Col span={12}><Form.Item label="Free delivery above" name="freeDeliveryThreshold"><InputNumber {...money} placeholder="Never free" /></Form.Item></Col>
           <Col span={12}><Form.Item label="Minimum order" name="minOrderAmount" rules={[{ required: true }]}><InputNumber {...money} /></Form.Item></Col>
           <Col span={12}><Form.Item label="Express delivery (minutes)" name="expressEtaMinutes" rules={[{ required: true }]}><InputNumber style={{ width: "100%" }} min={5} max={240} /></Form.Item></Col>

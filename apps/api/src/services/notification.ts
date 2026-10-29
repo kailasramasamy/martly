@@ -127,6 +127,7 @@ export interface OrderStatusExtra {
   cancelledBy?: CancelledBy;
   reason?: string | null;
   refund?: { amount: number; to: "wallet" | "source" } | null;
+  paidAmount?: number;
 }
 
 /** Tells the customer their order moved to `newStatus`, worded for delivery vs pickup */

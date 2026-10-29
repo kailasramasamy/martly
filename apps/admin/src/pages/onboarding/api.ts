@@ -19,7 +19,7 @@ export interface OnboardingDetails {
   deliveryRadius: number;
   minOrderAmount: string | null;
   freeDeliveryThreshold: string | null;
-  baseDeliveryFee: string | null;
+  startingDeliveryFee: number | null;
   logoUrl: string | null;
   expressEtaMinutes: number | null;
   opensAt: string | null;

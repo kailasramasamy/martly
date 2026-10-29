@@ -24,7 +24,8 @@ export const onboardingStoreSchema = z.object({
   deliveryRadius: z.number().positive().max(30),
   minOrderAmount: z.number().min(0),
   freeDeliveryThreshold: z.number().min(0).nullable(),
-  baseDeliveryFee: z.number().min(0),
+  /** Fee for the nearest of the three distance tiers the store starts with; farther tiers add ₹10 each */
+  startingDeliveryFee: z.number().min(0),
   logoUrl: z.string().url().nullish(),
   expressEtaMinutes: z.number().int().min(5).max(240),
   opensAt: time,

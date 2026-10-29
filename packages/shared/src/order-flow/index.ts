@@ -99,14 +99,17 @@ export function canUndoDelivery(
   return !!at && now - at.getTime() <= UNDO_DELIVERY_WINDOW_MS;
 }
 
+// Strings from JSON, Prisma Decimals on the server
+type Amount = string | number | { toNumber(): number };
+
 interface PayableOrder {
-  totalAmount: string | number;
+  totalAmount: Amount;
   paymentMethod?: string;
   paymentStatus?: string;
-  walletAmountUsed?: string | number | null;
+  walletAmountUsed?: Amount | null;
   loyaltyPointsUsed?: number | null;
   /** Value of items handed back to the rider at the door */
-  refusedAmount?: string | number | null;
+  refusedAmount?: Amount | null;
 }
 
 /** Cash a rider collects at the door: the total less wallet, loyalty and anything handed back; nothing once paid or online */
@@ -116,6 +119,25 @@ export function amountDue(order: PayableOrder): number {
     0,
     Number(order.totalAmount) - Number(order.walletAmountUsed ?? 0) - Number(order.loyaltyPointsUsed ?? 0) - Number(order.refusedAmount ?? 0),
   );
+}
+
+/** Minutes an online order may stay unpaid before it's cancelled */
+export const UNPAID_EXPIRY_MINUTES = 30;
+
+/** What the customer pays online: the total less wallet and loyalty points already applied */
+export function onlineCharge(order: PayableOrder): number {
+  return Number(order.totalAmount) - Number(order.walletAmountUsed ?? 0) - Number(order.loyaltyPointsUsed ?? 0);
+}
+
+/** An online order still waiting for the customer's payment; it's cancelled once UNPAID_EXPIRY_MINUTES pass */
+export function awaitingPayment(order: PayableOrder & { status: string; isSubscriptionOrder?: boolean }): boolean {
+  return order.status === "PENDING" && order.paymentMethod === "ONLINE" && !order.isSubscriptionOrder
+    && (order.paymentStatus === "PENDING" || order.paymentStatus === "FAILED");
+}
+
+/** When an unpaid online order is cancelled */
+export function paymentDeadline(order: { createdAt: string | Date }): Date {
+  return new Date(new Date(order.createdAt).getTime() + UNPAID_EXPIRY_MINUTES * 60_000);
 }
 
 /** The reminder shown before completing an order: collect cash on unpaid COD orders */

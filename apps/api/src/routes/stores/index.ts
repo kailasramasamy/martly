@@ -147,7 +147,12 @@ export async function storeRoutes(app: FastifyInstance) {
       }
 
       const town = await townFields(app.prisma, townId);
-      const store = await storeWrite(() => app.prisma.store.create({ data: { ...body, ...town } }));
+      // One free tier across the radius so the store can deliver; owners set their fees under Delivery charges
+      const store = await storeWrite(() => app.prisma.$transaction(async (tx) => {
+        const created = await tx.store.create({ data: { ...body, ...town } });
+        await tx.deliveryTier.create({ data: { storeId: created.id, minDistance: 0, maxDistance: created.deliveryRadius, deliveryFee: 0 } });
+        return created;
+      }));
 
       const response: ApiResponse<typeof store> = { success: true, data: store };
       return response;

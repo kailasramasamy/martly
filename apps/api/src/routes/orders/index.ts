@@ -197,7 +197,7 @@ export async function orderRoutes(app: FastifyInstance) {
     // Fetch store for both pickup and delivery
     const store = await app.prisma.store.findUnique({
       where: { id: body.storeId },
-      select: { organizationId: true, name: true, address: true, latitude: true, longitude: true, deliveryRadius: true, minOrderAmount: true, freeDeliveryThreshold: true, baseDeliveryFee: true },
+      select: { organizationId: true, name: true, address: true, latitude: true, longitude: true, deliveryRadius: true, minOrderAmount: true, freeDeliveryThreshold: true },
     });
     if (!store) return reply.notFound("Store not found");
 
@@ -344,11 +344,13 @@ export async function orderRoutes(app: FastifyInstance) {
 
       const delivery = await deliveryFeeTo(app.prisma, body.storeId, store, deliveryLat != null && deliveryLng != null ? { lat: deliveryLat, lng: deliveryLng } : null);
       deliveryDistance = delivery.distance;
-      if (delivery.outOfRange) {
+      if (!delivery.serviceable) {
         return reply.status(400).send({
           success: false,
           error: "Not Serviceable",
-          message: `Delivery address is ${delivery.distance!.toFixed(1)} km away, which exceeds the store's delivery radius of ${store.deliveryRadius} km`,
+          message: delivery.reason === "TOO_FAR"
+            ? `Delivery address is ${delivery.distance!.toFixed(1)} km away, which exceeds the store's delivery radius of ${store.deliveryRadius} km`
+            : "This store doesn't deliver to this address",
           statusCode: 400,
         });
       }

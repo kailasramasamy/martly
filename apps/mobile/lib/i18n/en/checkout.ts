@@ -15,6 +15,7 @@ export const checkout = {
     homeDelivery: "Home Delivery",
     storePickup: "Store Pickup",
     notAvailable: "Not available",
+    feeFrom: (fee: string) => `from \u20B9${fee}`,
     calculating: "Calculating...",
     pickupEta: "~30 min",
     notServiceable: (km: string | null) =>
@@ -102,6 +103,10 @@ export const checkout = {
     confirmingTitle: "Confirming your payment",
     confirmingSub: (app?: string) =>
       `${app ? `Checking with ${app}. ` : ""}This takes a few seconds — please don't close the app.`,
+    handoffTitle: (app?: string) => `Paying with ${app ?? "your UPI app"}`,
+    handoffSub: (app?: string) =>
+      `After you pay in ${app ?? "the UPI app"}, come back to Martly to see your order. We'll also send you a notification — tap it to come back.`,
+    handoffContinue: (app?: string) => `Open ${app ?? "UPI app"}`,
     checkLater: "Check later in My Orders",
     placeFailed: "Failed to place order",
   },
@@ -156,6 +161,7 @@ export const checkout = {
     paidWallet: "Paid using Martly Wallet",
     payOnPickup: "Pay when you pick up",
     payOnDelivery: "Pay on delivery",
+    paidOnline: "Paid online",
     paymentPending: "Payment pending",
     orderNo: "Order #",
     amount: "Amount",

@@ -27,14 +27,26 @@ export default function DeliveryTiersScreen() {
     if (saved) list.updateItem(tier.id, { isActive });
   };
 
-  if (!allowed) return <ScreenNotice title="Delivery tiers" kind="denied" />;
-  if (!hasStores) return <ScreenNotice title="Delivery tiers" kind="no-store" />;
+  if (!allowed) return <ScreenNotice title="Delivery charges" kind="denied" />;
+  if (!hasStores) return <ScreenNotice title="Delivery charges" kind="no-store" />;
   const addTier = () => router.push(`/manage/delivery-tiers/new?storeId=${storeId}`);
   return (
     <ManageListScreen
-      title="Delivery tiers"
+      title="Delivery charges"
       list={list}
-      filters={picker}
+      filters={
+        <>
+          {picker}
+          {storeId && (
+            <ListRow
+              title="Radius, free delivery & minimum order"
+              subtitle="Fees below go by distance from the store"
+              chevron
+              onPress={() => router.push(`/manage/delivery-tiers/settings?storeId=${storeId}`)}
+            />
+          )}
+        </>
+      }
       headerRight={can(user, "delivery-tiers", "create") && storeId ? () => <HeaderAction accessibilityLabel="Add tier" onPress={addTier} /> : undefined}
       empty={{ icon: "navigate-outline", title: "No delivery tiers", message: "Add distance bands so customers can be charged for delivery." }}
       renderItem={(tier) => (

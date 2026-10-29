@@ -9,14 +9,12 @@ async function main() {
     where: { id: storeId },
     data: {
       minOrderAmount: 199,
-      baseDeliveryFee: 30,
       freeDeliveryThreshold: 499,
     },
   });
 
   console.log(`Updated ${store.name}:`);
   console.log(`  minOrderAmount: ₹${store.minOrderAmount}`);
-  console.log(`  baseDeliveryFee: ₹${store.baseDeliveryFee}`);
   console.log(`  freeDeliveryThreshold: ₹${store.freeDeliveryThreshold}`);
 }
 

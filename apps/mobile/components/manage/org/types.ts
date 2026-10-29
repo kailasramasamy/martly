@@ -15,13 +15,9 @@ export interface StoreRow {
 export interface StoreDetail extends Omit<StoreRow, "organizationName"> {
   latitude: number | null;
   longitude: number | null;
-  deliveryRadius: number;
   townId: string;
   town: Town;
-  minOrderAmount: string | null;
-  freeDeliveryThreshold: string | null;
   returnKeepThreshold: string | null;
-  baseDeliveryFee: string | null;
   subscriptionEnabled: boolean;
   subscriptionDeliveryMode: "DEDICATED" | "SLOT_BASED";
   subscriptionWindowStart: string | null;

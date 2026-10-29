@@ -6,6 +6,8 @@ import { useStrings } from "../../lib/i18n/use-strings";
 import { useLanguage } from "../../lib/language-context";
 import { etaLabel, friendlyTime, rupees, slotLabel } from "./format";
 import { isHeadlineStatus, statusMeta } from "./status";
+import { awaitingPayment, onlineCharge } from "@martly/shared/order-flow";
+import { useMinutesLeft } from "../order/CompletePayment";
 import type { OrderSummary } from "./types";
 import { cardStyles } from "./card-styles";
 import { ItemLines } from "./ItemLines";
@@ -92,6 +94,23 @@ function RiderRow({ rider }: { rider: { name: string; phone: string | null } }) 
   );
 }
 
+/** An unpaid online order: how long is left to pay, and a button into the order to pay */
+function PaymentDue({ order, onOpen }: { order: OrderSummary; onOpen: () => void }) {
+  const t = useStrings("orders").card;
+  const minutesLeft = useMinutesLeft(order.createdAt);
+  return (
+    <View style={styles.due}>
+      <View style={styles.dueHead}>
+        <Ionicons name="time-outline" size={18} color="#b45309" />
+        <Text style={styles.dueText}>{t.payWithin(minutesLeft)}</Text>
+      </View>
+      <TouchableOpacity style={styles.dueButton} onPress={onOpen} activeOpacity={0.8}>
+        <Text style={styles.dueButtonText}>{`${t.completePayment} · ${rupees(onlineCharge(order))}`}</Text>
+      </TouchableOpacity>
+    </View>
+  );
+}
+
 export const ActiveOrderCard = memo(function ActiveOrderCard({ order, onOpen, onTrack }: Props) {
   const t = useStrings("orders").card;
   const headline = isHeadlineStatus(order);
@@ -101,6 +120,7 @@ export const ActiveOrderCard = memo(function ActiveOrderCard({ order, onOpen, on
     <TouchableOpacity activeOpacity={0.9} style={cardStyles.card} onPress={() => onOpen(order.id)}>
       <PlainHead order={order} />
       {headline && <DeliveryPanel order={order} />}
+      {awaitingPayment(order) && <PaymentDue order={order} onOpen={() => onOpen(order.id)} />}
       <View style={styles.items}>
         <ItemLines order={order} />
         <View style={styles.totalRow}>
@@ -145,4 +165,9 @@ const styles = StyleSheet.create({
   total: { fontSize: 15, fontFamily: fonts.extrabold, color: colors.text },
   track: { height: 44, marginHorizontal: 16, marginBottom: 16, borderRadius: 12, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, backgroundColor: colors.primary },
   trackText: { fontSize: 14, fontFamily: fonts.bold, color: "#fff" },
+  due: { marginHorizontal: 12, marginTop: 14, padding: 12, borderRadius: 14, backgroundColor: "#fffbeb", borderWidth: 1, borderColor: "#fcd34d", gap: 10 },
+  dueHead: { flexDirection: "row", alignItems: "center", gap: 8 },
+  dueText: { flex: 1, fontSize: 13.5, fontFamily: fonts.semibold, color: "#92400e" },
+  dueButton: { minHeight: 44, borderRadius: 12, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" },
+  dueButtonText: { fontSize: 14, fontFamily: fonts.bold, color: "#fff" },
 });

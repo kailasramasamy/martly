@@ -31,7 +31,7 @@ if (!source) {
       deliveryRadius: 6,
       minOrderAmount: 149,
       freeDeliveryThreshold: 399,
-      baseDeliveryFee: 25,
+      startingDeliveryFee: 25,
       expressEtaMinutes: 40,
       opensAt: "07:00",
       closesAt: "22:00",

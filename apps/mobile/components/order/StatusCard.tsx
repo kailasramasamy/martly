@@ -7,6 +7,7 @@ import { useStrings } from "../../lib/i18n/use-strings";
 import { formatDate } from "../../lib/i18n/format";
 import { StatusStepper } from "../orders/StatusStepper";
 import { ReturnStateLine } from "./ReturnStateLine";
+import { awaitingPayment } from "@martly/shared/order-flow";
 import { orderHeadline, orderProgress } from "./order-status";
 import type { ReturnRequestData } from "../../lib/types";
 import type { OrderData } from "./types";
@@ -66,17 +67,18 @@ export function StatusCard({ order, returnRequest }: { order: OrderData; returnR
   const first = order.items[0];
   const thumb = first?.variant?.imageUrl || first?.product.imageUrl;
   const cancelled = order.status === "CANCELLED";
+  const unpaid = awaitingPayment(order);
   return (
     <View style={styles.card}>
       <View style={styles.head}>
         <View style={{ flex: 1 }}>
-          <Text style={[styles.title, cancelled && styles.titleCancelled]}>{title}</Text>
+          <Text style={[styles.title, cancelled && styles.titleCancelled, unpaid && styles.titleUnpaid]}>{title}</Text>
           <Text style={styles.sub}>{sub}</Text>
           {returnRequest ? <View style={styles.returnLine}><ReturnStateLine request={returnRequest} /></View> : null}
         </View>
         {thumb ? <View style={styles.thumb}><Image source={{ uri: thumb }} style={styles.thumbImg} /></View> : null}
       </View>
-      {!cancelled && <View style={styles.stepper}><StatusStepper steps={labels} current={current} /></View>}
+      {!cancelled && !unpaid && <View style={styles.stepper}><StatusStepper steps={labels} current={current} /></View>}
       <OnTheWay order={order} />
       {(order.statusLogs?.length ?? 0) > 0 && (
         <TouchableOpacity style={styles.toggle} onPress={() => setShowUpdates((v) => !v)} activeOpacity={0.7}>
@@ -94,6 +96,7 @@ const styles = StyleSheet.create({
   head: { flexDirection: "row", alignItems: "center", gap: 12, padding: 16, paddingBottom: 4 },
   title: { fontSize: 22, lineHeight: 28, fontFamily: fonts.extrabold, color: colors.text },
   titleCancelled: { color: "#b91c1c" },
+  titleUnpaid: { color: "#b45309" },
   returnLine: { marginTop: 6 },
   sub: { fontSize: 14, fontFamily: fonts.medium, color: colors.textSecondary, marginTop: 2 },
   thumb: { width: 60, height: 60, borderRadius: 12, backgroundColor: colors.surface, borderWidth: 1, borderColor: "#f1f5f9", alignItems: "center", justifyContent: "center" },

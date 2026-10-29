@@ -85,9 +85,8 @@ const MODULE_GROUPS: ModuleGroup[] = [
   {
     title: "Delivery setup",
     modules: [
-      { resource: "delivery-zones", label: "Delivery zones", icon: "map-outline", href: "/manage/delivery-zones" },
       { resource: "delivery-slots", label: "Time slots", icon: "time-outline", href: "/manage/delivery-slots" },
-      { resource: "delivery-tiers", label: "Delivery fees", icon: "cash-outline", href: "/manage/delivery-tiers" },
+      { resource: "delivery-tiers", label: "Delivery charges", icon: "cash-outline", href: "/manage/delivery-tiers" },
       { resource: "delivery-fleet", label: "Riders & trips", icon: "people-outline", href: "/manage/delivery-fleet" },
       { resource: "express-delivery", label: "Express delivery", icon: "flash-outline", href: "/manage/express-delivery" },
     ],

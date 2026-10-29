@@ -5,6 +5,7 @@ import { formatINR, formatOrderRef } from "./notify/copy.js";
 import { notifyStaff } from "./notify/staff.js";
 import { broadcastOrderUpdate } from "./order-broadcast.js";
 import { notifyStaffOfNewOrder } from "./staff-alerts.js";
+import { onlineCharge } from "@martly/shared/order-flow";
 
 function httpError(message: string, statusCode: number) {
   return Object.assign(new Error(message), { statusCode });
@@ -12,9 +13,6 @@ function httpError(message: string, statusCode: number) {
 
 type Payable = { totalAmount: { toNumber(): number }; walletAmountUsed: { toNumber(): number } | null; loyaltyPointsUsed: number | null };
 
-/** What the customer pays online: the total less wallet and loyalty points already applied */
-const onlineCharge = (order: Payable) =>
-  order.totalAmount.toNumber() - (order.walletAmountUsed?.toNumber() ?? 0) - (order.loyaltyPointsUsed ?? 0);
 
 /** Creates the Razorpay order for what the customer still owes (total less wallet and points) and remembers it on the order */
 export async function prepareOrderPayment(app: FastifyInstance, orderId: string, userId: string) {
@@ -22,6 +20,7 @@ export async function prepareOrderPayment(app: FastifyInstance, orderId: string,
   if (!order) throw httpError("Order not found", 404);
   if (order.userId !== userId) throw httpError("Access denied", 403);
   if (order.paymentStatus === "PAID") throw httpError("Order is already paid", 400);
+  if (order.status === "CANCELLED") throw httpError("This order was cancelled because payment wasn't completed in time", 400);
 
   const chargeAmount = onlineCharge(order);
   if (chargeAmount <= 0) throw httpError("Order is fully covered by wallet and points", 400);
@@ -69,7 +68,7 @@ export async function settleOrderPayment(app: FastifyInstance, orderId: string, 
   if (!updated) return app.prisma.order.findUniqueOrThrow({ where: { id: order.id } });
 
   if (order.status === "PENDING") {
-    sendOrderStatusNotification(app.fcm, app.prisma, order.id, "CONFIRMED");
+    sendOrderStatusNotification(app.fcm, app.prisma, order.id, "CONFIRMED", { paidAmount: onlineCharge(order) });
   }
   broadcastOrderUpdate(app.prisma, order.id, updated.status);
   notifyStaffOfNewOrder(app.fcm, app.prisma, order.id);

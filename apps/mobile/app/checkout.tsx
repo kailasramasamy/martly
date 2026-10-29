@@ -16,7 +16,6 @@ import { Loader } from "../components/Loader";
 import { useRouter } from "expo-router";
 import { useToast } from "../lib/toast-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useAuth } from "../lib/auth-context";
 import { useCart } from "../lib/cart-context";
 import { useStore } from "../lib/store-context";
 import { useKeyboardReveal } from "../lib/use-keyboard-reveal";
@@ -27,13 +26,12 @@ import { SlotGrid, isBookable, clock, type AvailableSlot } from "../components/c
 import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Switch } from "react-native";
-import { RazorpayCheckout } from "../components/RazorpayCheckout";
-import { PaymentOptions, PaymentConfirming } from "../components/checkout/PaymentOptions";
+import { PaymentOptions } from "../components/checkout/PaymentOptions";
+import { useOrderPayment } from "../components/checkout/use-order-payment";
 import { UPI_APPS, useInstalledUpiApps, loadPaymentChoice, savePaymentChoice, type PaymentChoice } from "../lib/upi-apps";
-import { useUpiIntentPayment } from "../lib/use-upi-payment";
 import { ProfileGate } from "../components/ProfileGate";
 import { ConfirmSheet } from "../components/ConfirmSheet";
-import type { FulfillmentType, UserAddress, CouponValidation, DeliveryZoneInfo, DeliveryLookupResult, LoyaltyData, MembershipStatus } from "../lib/types";
+import type { FulfillmentType, UserAddress, CouponValidation, DeliveryLookupResult, LoyaltyData, MembershipStatus } from "../lib/types";
 import { withSignIn } from "../components/SignInPrompt";
 import { strings } from "../lib/i18n";
 import { useStrings } from "../lib/i18n/use-strings";
@@ -49,22 +47,12 @@ type DeliveryMode = "express" | "scheduled";
 const toLocalDateStr = (d: Date) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 
-interface RazorpayData {
-  razorpay_order_id: string;
-  amount: number;
-  currency: string;
-  key_id: string;
-  customer_id?: string;
-  upi_s2s: boolean;
-}
-
 interface WalletData {
   balance: number;
   transactions: unknown[];
 }
 
 function CheckoutScreen() {
-  const { user } = useAuth();
   const router = useRouter();
   // Set when the cart is the shopper's monthly list, so the order records this month's prices on it
   const { monthlyListId } = useLocalSearchParams<{ monthlyListId?: string }>();
@@ -98,10 +86,6 @@ function CheckoutScreen() {
   const [couponError, setCouponError] = useState("");
   const [applyingCoupon, setApplyingCoupon] = useState(false);
   const [deliveryNotes, setDeliveryNotes] = useState("");
-  const [razorpayVisible, setRazorpayVisible] = useState(false);
-  const [razorpayData, setRazorpayData] = useState<RazorpayData | null>(null);
-  const [pendingOrderId, setPendingOrderId] = useState<string | null>(null);
-  const [deliveryZone, setDeliveryZone] = useState<DeliveryZoneInfo | null>(null);
   const [addressLookups, setAddressLookups] = useState<Record<string, DeliveryLookupResult>>({});
   const [lookingUpDelivery, setLookingUpDelivery] = useState(false);
   const [walletBalance, setWalletBalance] = useState(0);
@@ -157,14 +141,6 @@ function CheckoutScreen() {
       fetchAddresses();
     }, [fetchAddresses]),
   );
-
-  // Fetch delivery zone (fallback)
-  useEffect(() => {
-    if (!storeId) return;
-    api.get<DeliveryZoneInfo | null>(`/api/v1/delivery-zones/lookup?storeId=${storeId}`)
-      .then((res) => { if (res.data) setDeliveryZone(res.data); })
-      .catch(() => {});
-  }, [storeId]);
 
   // Fetch wallet balance
   useEffect(() => {
@@ -348,13 +324,9 @@ function CheckoutScreen() {
   };
 
   const couponDiscount = couponResult?.discount ?? 0;
-  // Delivery fee resolution: distance tier > zone > store base fee > 0
-  // Free delivery threshold waives the fee when item total meets threshold.
-  const baseDeliveryFee = selectedStore?.baseDeliveryFee ? Number(selectedStore.baseDeliveryFee) : 0;
-  const lookupOrZoneFee = deliveryLookup?.serviceable
-    ? (deliveryLookup.deliveryFee ?? 0)
-    : (deliveryZone?.deliveryFee ?? 0);
-  const rawDeliveryFee = isPickup ? 0 : (lookupOrZoneFee || baseDeliveryFee);
+  // The address's distance tier sets the fee; until it's looked up, the store's lowest tier. The threshold waives it.
+  const deliveryFeeFrom = selectedStore?.deliveryFeeFrom ?? 0;
+  const rawDeliveryFee = isPickup ? 0 : deliveryLookup?.serviceable ? (deliveryLookup.deliveryFee ?? 0) : deliveryFeeFrom;
   const memberFreeDelivery = !isPickup && membershipStatus?.isMember && membershipStatus.membership?.freeDelivery;
   const freeDeliveryApplied = !isPickup && (memberFreeDelivery || (freeDeliveryThreshold != null && totalAmount >= freeDeliveryThreshold));
   const totalSavings = couponDiscount + (freeDeliveryApplied ? rawDeliveryFee : 0);
@@ -365,7 +337,7 @@ function CheckoutScreen() {
       ? expressConfig.etaMinutes
       : deliveryLookup?.serviceable
         ? deliveryLookup.estimatedMinutes
-        : deliveryZone?.estimatedMinutes;
+        : undefined;
   const grandTotal = totalAmount - couponDiscount + deliveryFee;
   const walletDeduction = useWallet ? Math.min(walletBalance, grandTotal) : 0;
   const afterWallet = grandTotal - walletDeduction;
@@ -395,23 +367,11 @@ function CheckoutScreen() {
     });
   };
 
-  const upiIntent = useUpiIntentPayment((orderId) => navigateToSuccess(orderId));
-
-  const handlePaymentSuccess = async (data: { razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string }) => {
-    setRazorpayVisible(false);
-    try {
-      await api.post(`/api/v1/orders/${pendingOrderId}/payment/verify`, data);
-    } catch {
-      // verification pending — still show success
-    }
-    navigateToSuccess(pendingOrderId!);
-  };
-
-  const handlePaymentCancel = () => {
-    setRazorpayVisible(false);
-    // Order exists but unpaid — still navigate to success (payment pending)
-    navigateToSuccess(pendingOrderId!);
-  };
+  // An unpaid order opens on its details, where the customer can finish paying before it expires
+  const payment = useOrderPayment((orderId, paid) => {
+    if (paid) navigateToSuccess(orderId);
+    else router.replace(`/order/${orderId}`);
+  });
 
   const proceedWithOrder = async () => {
     setSubmitting(true);
@@ -468,17 +428,11 @@ function CheckoutScreen() {
         return;
       }
 
-      // Online payment — create Razorpay order and open in-app checkout
       try {
-        const payRes = await api.post<RazorpayData>(`/api/v1/orders/${orderId}/payment`, {});
-        setPendingOrderId(orderId);
-        // With S2S enabled the UPI app opens directly; otherwise Razorpay's sheet, narrowed to that app
-        if (chosenUpiApp && payRes.data.upi_s2s && (await upiIntent.start(orderId, chosenUpiApp))) return;
-        setRazorpayData(payRes.data);
-        setRazorpayVisible(true);
-      } catch (payErr: unknown) {
-        // Payment gateway unavailable — order still created, show success (payment pending)
-        navigateToSuccess(orderId);
+        await payment.pay(orderId, chosenUpiApp);
+      } catch {
+        // Payment couldn't open; the order's details offer to pay again
+        router.replace(`/order/${orderId}`);
       }
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : t.payment.placeFailed;
@@ -516,17 +470,13 @@ function CheckoutScreen() {
         ? deliveryLookup.deliveryFee
           ? `\u20B9${deliveryLookup.deliveryFee.toFixed(0)}`
           : common.free
-        : deliveryZone?.deliveryFee
-          ? `\u20B9${deliveryZone.deliveryFee.toFixed(0)}`
+        : deliveryFeeFrom
+          ? t.fulfillment.feeFrom(deliveryFeeFrom.toFixed(0))
           : common.free;
 
-  const deliveryEtaPreview = deliveryLookup?.serviceable
-    ? deliveryLookup.estimatedMinutes
-      ? t.min(deliveryLookup.estimatedMinutes)
-      : null
-    : deliveryZone?.estimatedMinutes
-      ? t.min(deliveryZone.estimatedMinutes)
-      : null;
+  const deliveryEtaPreview = deliveryLookup?.serviceable && deliveryLookup.estimatedMinutes
+    ? t.min(deliveryLookup.estimatedMinutes)
+    : null;
 
   return (
     <View ref={keyboard.rootRef} onLayout={keyboard.onRootLayout} style={{ flex: 1 }}>
@@ -1443,28 +1393,7 @@ function CheckoutScreen() {
           </View>
         </TouchableOpacity>
       </Modal>
-      {razorpayData && (
-        <RazorpayCheckout
-          visible={razorpayVisible}
-          keyId={razorpayData.key_id}
-          orderId={razorpayData.razorpay_order_id}
-          amount={razorpayData.amount}
-          currency={razorpayData.currency}
-          customerId={razorpayData.customer_id}
-          upiAppPackage={chosenUpiApp?.packageName}
-          prefill={{ email: user?.email, name: user?.name, contact: user?.phone ?? undefined }}
-          onSuccess={handlePaymentSuccess}
-          onCancel={handlePaymentCancel}
-        />
-      )}
-      <PaymentConfirming
-        visible={upiIntent.confirming}
-        appLabel={chosenUpiApp?.label}
-        onCancel={() => {
-          upiIntent.cancel();
-          navigateToSuccess(pendingOrderId!);
-        }}
-      />
+      {payment.sheets}
     </KeyboardAvoidingView>
     </View>
   );

@@ -47,6 +47,9 @@ export const orders: Strings<"orders"> = {
     stepOf: (step: number, total: number, label: string) => `படி ${step} / ${total}: ${label}`,
   },
   card: {
+    paymentPending: "பணம் செலுத்தவில்லை",
+    payWithin: (min: number) => `${min} நிமிடத்தில் பணம் செலுத்துங்கள், இல்லையெனில் ஆர்டர் ரத்தாகும்`,
+    completePayment: "பணம் செலுத்துங்கள்",
     yesterday: "நேற்று",
     arrivingSoon: "விரைவில் வருகிறது",
     arrivingIn: (min: number) => `${min} நிமிடத்தில் வருகிறது`,
@@ -82,6 +85,8 @@ export const orders: Strings<"orders"> = {
     loadFailed: "இந்த ஆர்டரை ஏற்ற முடியவில்லை. இணைய இணைப்பைச் சரிபார்க்கவும்.",
   },
   detail: {
+    headAwaitingPayment: "பணம் செலுத்தப்படவில்லை",
+    subAwaitingPayment: "பணம் செலுத்தியதும் உங்கள் ஆர்டர் உறுதியாகும்",
     headDelivered: (day: string) => `${day} அன்று டெலிவரி ஆனது`,
     headPickedUp: (day: string) => `${day} அன்று பெற்றுக்கொண்டீர்கள்`,
     handedOver: (time: string) => `${time} மணிக்கு ஒப்படைக்கப்பட்டது`,
@@ -172,6 +177,15 @@ export const orders: Strings<"orders"> = {
     replacesDefault: "நீங்கள் திருப்பிய பொருளுக்கு",
     replacesNote: (what: string, orderNo: string) => `ஆர்டர் #${orderNo}-இல் ${what} மாற்றாக வருகிறது. இதற்கான பணத்தை ஏற்கனவே செலுத்திவிட்டீர்கள்.`,
     pickupNotice: (orderNo: string) => `ஆர்டர் #${orderNo}-இன் பொருளைத் தயாராக வைத்திருங்கள் — எங்கள் டெலிவரி நபர் வந்து எடுத்துக்கொள்வார்`,
+  },
+  pay: {
+    title: "பணம் செலுத்துவதை முடியுங்கள்",
+    body: (amount: string, min: number) => `இந்த ஆர்டரை உறுதிசெய்ய அடுத்த ${min} நிமிடத்தில் ${amount} செலுத்துங்கள். இல்லையெனில் ஆர்டர் ரத்து செய்யப்படும்.`,
+    expired: "பணம் செலுத்தும் நேரம் முடிந்தது. இந்த ஆர்டர் ரத்து செய்யப்படுகிறது.",
+    payWith: (amount: string, app?: string) => (app ? `${app} மூலம் ${amount} செலுத்துங்கள்` : `${amount} செலுத்துங்கள்`),
+    paid: "பணம் கிடைத்தது. உங்கள் ஆர்டர் உறுதிசெய்யப்பட்டது.",
+    notPaid: "பணம் செலுத்தப்படவில்லை. மீண்டும் முயற்சிக்கலாம்.",
+    openFailed: "பணம் செலுத்தும் பக்கத்தைத் திறக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.",
   },
   returns: {
     reasons: {

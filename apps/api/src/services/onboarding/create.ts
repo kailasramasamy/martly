@@ -22,13 +22,13 @@ async function freeSlug(tx: Tx, model: "organization" | "store", name: string, t
 }
 
 /** Store columns from the form; express hours and ETA live on the express delivery config */
-function storeData<T extends Partial<OnboardingStoreInput>>(store: T): Omit<T, "expressEtaMinutes" | "opensAt" | "closesAt"> {
-  const { expressEtaMinutes: _eta, opensAt: _open, closesAt: _close, ...rest } = store;
+function storeData<T extends Partial<OnboardingStoreInput>>(store: T): Omit<T, "expressEtaMinutes" | "opensAt" | "closesAt" | "startingDeliveryFee"> {
+  const { expressEtaMinutes: _eta, opensAt: _open, closesAt: _close, startingDeliveryFee: _fee, ...rest } = store;
   return rest;
 }
 
 /** Three distance bands up to the radius, so checkout finds a fee for every address the store delivers to */
-async function writeDeliveryTiers(tx: Tx, storeId: string, radius: number, baseFee: number, etaMinutes: number) {
+async function writeDeliveryTiers(tx: Tx, storeId: string, radius: number, startingFee: number, etaMinutes: number) {
   const third = radius / 3;
   const round = (n: number) => Math.round(n * 10) / 10;
   await tx.deliveryTier.deleteMany({ where: { storeId } });
@@ -37,7 +37,7 @@ async function writeDeliveryTiers(tx: Tx, storeId: string, radius: number, baseF
       storeId,
       minDistance: round(i * third),
       maxDistance: i === 2 ? radius : round((i + 1) * third),
-      deliveryFee: baseFee + i * 10,
+      deliveryFee: startingFee + i * 10,
       estimatedMinutes: etaMinutes + i * 5,
     })),
   });
@@ -70,7 +70,7 @@ export async function createOnboarding(prisma: PrismaClient, input: CreateOnboar
       },
     });
     const s = input.store;
-    await writeDeliveryTiers(tx, store.id, s.deliveryRadius, s.baseDeliveryFee, s.expressEtaMinutes);
+    await writeDeliveryTiers(tx, store.id, s.deliveryRadius, s.startingDeliveryFee, s.expressEtaMinutes);
     await writeExpress(tx, store.id, s);
     const owner = await resolveOwner(tx, input.owner, input.upgradeShopper);
     await tx.userStore.create({ data: { userId: owner.id, storeId: store.id, role: "ORG_ADMIN" } });
@@ -113,8 +113,10 @@ type StoreRow = Awaited<ReturnType<Tx["store"]["update"]>>;
 async function refreshDelivery(tx: Tx, store: StoreRow, s: Partial<OnboardingStoreInput>) {
   const express = await tx.expressDeliveryConfig.findUnique({ where: { storeId: store.id } });
   const eta = s.expressEtaMinutes ?? express?.etaMinutes ?? 30;
-  if (s.deliveryRadius !== undefined || s.baseDeliveryFee !== undefined || s.expressEtaMinutes !== undefined) {
-    await writeDeliveryTiers(tx, store.id, store.deliveryRadius, Number(store.baseDeliveryFee ?? 0), eta);
+  if (s.deliveryRadius !== undefined || s.startingDeliveryFee !== undefined || s.expressEtaMinutes !== undefined) {
+    const nearest = await tx.deliveryTier.findFirst({ where: { storeId: store.id }, orderBy: { minDistance: "asc" } });
+    const startingFee = s.startingDeliveryFee ?? Number(nearest?.deliveryFee ?? 0);
+    await writeDeliveryTiers(tx, store.id, store.deliveryRadius, startingFee, eta);
   }
   if (s.expressEtaMinutes !== undefined || s.opensAt || s.closesAt) {
     await writeExpress(tx, store.id, {

@@ -29,6 +29,8 @@ export interface OrderCopyContext {
   cancelledBy?: CancelledBy;
   reason?: string | null;
   refund?: { amount: number; to: "wallet" | "source" } | null;
+  /** Set when the order is confirmed by its online payment; the customer may still be in their UPI app */
+  paidAmount?: number;
 }
 
 function cancelCopy(ctx: OrderCopyContext): { title: string; body: string } {
@@ -50,7 +52,9 @@ export function orderStatusCopy(status: string, ctx: OrderCopyContext): { title:
   const pickup = ctx.fulfillmentType === "PICKUP";
   switch (status) {
     case "CONFIRMED":
-      return { title: "Order confirmed", body: `${ctx.storeName} has confirmed order ${ref}.` };
+      return ctx.paidAmount != null
+        ? { title: "Payment received ✓", body: `${formatINR(ctx.paidAmount)} paid for order ${ref}. Tap to go back to Martly.` }
+        : { title: "Order confirmed", body: `${ctx.storeName} has confirmed order ${ref}.` };
     case "PREPARING":
       return { title: "Packing your order", body: `${ctx.storeName} is packing order ${ref}.` };
     case "READY":

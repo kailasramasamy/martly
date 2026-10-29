@@ -13,6 +13,10 @@ export interface OrderSummary {
   status: string;
   fulfillmentType: "DELIVERY" | "PICKUP";
   totalAmount: string;
+  paymentMethod: string;
+  paymentStatus: string;
+  walletAmountUsed: string | null;
+  loyaltyPointsUsed: number | null;
   createdAt: string;
   estimatedDeliveryAt: string | null;
   scheduledDate: string | null;

@@ -32,7 +32,7 @@ if (existing) {
       deliveryRadius: 5,
       minOrderAmount: 99,
       freeDeliveryThreshold: 299,
-      baseDeliveryFee: 20,
+      startingDeliveryFee: 20,
       expressEtaMinutes: 30,
       opensAt: "07:00",
       closesAt: "21:30",

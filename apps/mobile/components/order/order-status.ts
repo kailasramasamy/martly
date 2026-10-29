@@ -1,5 +1,5 @@
 import { RETURN_WINDOW_HOURS } from "@martly/shared/constants";
-import { deliveredAt } from "@martly/shared/order-flow";
+import { awaitingPayment, deliveredAt } from "@martly/shared/order-flow";
 import { strings } from "../../lib/i18n";
 import { formatDate, formatTime } from "../../lib/i18n/format";
 import { etaLabel, slotLabel } from "../orders/format";
@@ -35,6 +35,7 @@ export function orderHeadline(order: OrderData): { title: string; sub: string } 
     return { title: isPickup(order) ? t.headPickedUp(shortDay(at)) : t.headDelivered(shortDay(at)), sub: t.handedOver(clock(at)) };
   }
   if (order.status === "CANCELLED") return { title: t.headCancelled, sub: placed };
+  if (awaitingPayment(order)) return { title: t.headAwaitingPayment, sub: t.subAwaitingPayment };
   if (order.status === "OUT_FOR_DELIVERY") {
     return { title: etaLabel(order.estimatedDeliveryAt ?? null) ?? t.headOnTheWay, sub: t.headActive.OUT_FOR_DELIVERY };
   }

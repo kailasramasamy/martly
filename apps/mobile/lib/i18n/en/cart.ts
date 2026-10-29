@@ -47,6 +47,7 @@ export const cart = {
   itemTotal: "Item total",
   deliveryFee: "Delivery fee",
   plus: "PLUS",
+  deliveryFrom: (fee: string) => `from \u20B9${fee}`,
   atCheckout: "At checkout",
   grandTotal: "Grand Total",
   total: "TOTAL",

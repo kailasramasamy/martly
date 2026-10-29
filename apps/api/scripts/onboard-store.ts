@@ -56,7 +56,7 @@ const specSchema = z.object({
     radius: z.number().default(5),
     minOrderAmount: z.number().default(99),
     freeDeliveryThreshold: z.number().nullable().default(299),
-    baseDeliveryFee: z.number().default(20),
+    startingDeliveryFee: z.number().default(20),
     expressEtaMinutes: z.number().int().default(30),
     opensAt: z.string().default("07:00"),
     closesAt: z.string().default("21:30"),
@@ -114,7 +114,7 @@ async function ensureStore(spec: Spec, townId: string, logins: Logins): Promise<
       name: spec.storeName, address: spec.address, townId, phone: spec.phone,
       latitude: spec.latitude, longitude: spec.longitude,
       deliveryRadius: d.radius, minOrderAmount: d.minOrderAmount, freeDeliveryThreshold: d.freeDeliveryThreshold,
-      baseDeliveryFee: d.baseDeliveryFee, expressEtaMinutes: d.expressEtaMinutes, opensAt: d.opensAt, closesAt: d.closesAt,
+      startingDeliveryFee: d.startingDeliveryFee, expressEtaMinutes: d.expressEtaMinutes, opensAt: d.opensAt, closesAt: d.closesAt,
     },
   }));
   await updateOnboarding(prisma, created.id, { size: spec.size });

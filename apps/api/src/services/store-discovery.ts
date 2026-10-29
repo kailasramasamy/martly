@@ -1,5 +1,6 @@
 import type { PrismaClient } from "../../generated/prisma/client.js";
 import { upcomingSlots, type OpenSlot } from "./delivery/slot-availability.js";
+import { deliveryFeesFrom } from "./delivery/fee.js";
 import { liveWindow } from "./store-feed.js";
 
 // Slots shown per store card
@@ -19,6 +20,8 @@ export interface StoreDiscoveryInfo {
   slots: OpenSlot[];
   /** Live home hero banners for this store: its own first, then its organisation's */
   banners: { id: string; imageUrl: string; actionType: string; actionTarget: string | null }[];
+  /** The lowest delivery tier fee ("Delivery from ₹20"); null when the store has no active tier */
+  deliveryFeeFrom: number | null;
 }
 
 // A listing's live saving in percent: the store's own discount wins over the variant's, as at checkout
@@ -72,7 +75,7 @@ export async function getStoreDiscoveryInfo(
 ): Promise<Map<string, StoreDiscoveryInfo>> {
   if (storeIds.length === 0) return new Map();
 
-  const [ratings, expressConfigs, deals, slots, banners] = await Promise.all([
+  const [ratings, expressConfigs, deals, slots, banners, feesFrom] = await Promise.all([
     prisma.storeRating.groupBy({
       by: ["storeId"],
       where: { storeId: { in: storeIds } },
@@ -86,6 +89,7 @@ export async function getStoreDiscoveryInfo(
     dealsByStore(prisma, storeIds),
     upcomingSlots(prisma, storeIds, SLOTS_SHOWN),
     bannersByStore(prisma, storeIds),
+    deliveryFeesFrom(prisma, storeIds),
   ]);
 
   const ratingByStore = new Map(ratings.map((r) => [r.storeId, r]));
@@ -107,6 +111,7 @@ export async function getStoreDiscoveryInfo(
           deals: deals.get(id) ?? null,
           slots: slots.get(id) ?? [],
           banners: banners.get(id) ?? [],
+          deliveryFeeFrom: feesFrom.get(id) ?? null,
         },
       ];
     }),

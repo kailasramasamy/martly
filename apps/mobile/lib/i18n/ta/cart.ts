@@ -49,6 +49,7 @@ export const cart: Strings<"cart"> = {
   itemTotal: "பொருட்களின் மொத்தம்",
   deliveryFee: "டெலிவரி கட்டணம்",
   plus: "பிளஸ்",
+  deliveryFrom: (fee: string) => `\u20B9${fee} முதல்`,
   atCheckout: "ஆர்டர் செய்யும்போது",
   grandTotal: "மொத்தத் தொகை",
   total: "மொத்தம்",

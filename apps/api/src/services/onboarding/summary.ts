@@ -49,12 +49,14 @@ export async function listOnboarding(prisma: PrismaClient) {
 export async function getOnboarding(prisma: PrismaClient, storeId: string) {
   const store = await prisma.store.findUnique({ where: { id: storeId }, include });
   if (!store) return null;
+  const nearestTier = await prisma.deliveryTier.findFirst({ where: { storeId }, orderBy: { minDistance: "asc" } });
   const sections = await sectionCounts(prisma, [store.organizationId]);
   const { _count, userStores: _u, organization: _o, expressDeliveryConfig: express, ...details } = store;
   return {
     ...toSummary(store, sections.get(store.organizationId) ?? 0),
     details: {
       ...details,
+      startingDeliveryFee: nearestTier ? Number(nearestTier.deliveryFee) : null,
       expressEtaMinutes: express?.etaMinutes ?? null,
       opensAt: express?.operatingStart ?? null,
       closesAt: express?.operatingEnd ?? null,

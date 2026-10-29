@@ -6,47 +6,36 @@ interface FeeStore {
   latitude: number | null;
   longitude: number | null;
   deliveryRadius: number;
-  baseDeliveryFee: unknown;
 }
 
-export interface DeliveryFee {
-  fee: number;
-  estimatedMinutes?: number;
-  distance?: number;
-  /** Past the store's delivery radius: it can't deliver there */
-  outOfRange: boolean;
-}
+export type DeliveryFee =
+  | { serviceable: true; fee: number; estimatedMinutes: number; distance?: number }
+  /** Past the radius, or no active tier covers the distance */
+  | { serviceable: false; reason: "TOO_FAR" | "NO_TIER"; distance?: number };
 
-/** The fee and time to deliver to a point: its distance tier, else the store's zone, else the store's base fee */
+/**
+ * The fee and time to deliver to a point, from the store's distance tiers: the only place a delivery fee is set.
+ * Without both locations the distance is unknown, so the nearest tier applies.
+ */
 export async function deliveryFeeTo(
   prisma: PrismaClient, storeId: string, store: FeeStore, point: { lat: number; lng: number } | null,
 ): Promise<DeliveryFee> {
-  let fee = 0;
-  let estimatedMinutes: number | undefined;
-  let distance: number | undefined;
-  let usedTier = false;
-  if (store.latitude != null && store.longitude != null && point) {
-    distance = haversine(point.lat, point.lng, store.latitude, store.longitude);
-    if (distance > store.deliveryRadius) return { fee: 0, distance, outOfRange: true };
-    const tier = await prisma.deliveryTier.findFirst({
-      where: { storeId, isActive: true, minDistance: { lte: distance }, maxDistance: { gt: distance } },
-    });
-    if (tier) {
-      fee = Number(tier.deliveryFee);
-      estimatedMinutes = tier.estimatedMinutes;
-      usedTier = true;
-    }
-  }
-  if (!usedTier) {
-    const zones = await prisma.storeDeliveryZone.findMany({ where: { storeId }, include: { deliveryZone: true } });
-    const zone = zones.find((sz) => sz.deliveryZone.isActive)?.deliveryZone;
-    if (zone) {
-      fee = Number(zone.deliveryFee);
-      estimatedMinutes = zone.estimatedMinutes;
-    }
-  }
-  if (fee === 0 && store.baseDeliveryFee) fee = Number(store.baseDeliveryFee);
-  return { fee, estimatedMinutes, distance, outOfRange: false };
+  const tiers = await prisma.deliveryTier.findMany({ where: { storeId, isActive: true }, orderBy: { minDistance: "asc" } });
+  const distance = store.latitude != null && store.longitude != null && point
+    ? haversine(point.lat, point.lng, store.latitude, store.longitude)
+    : undefined;
+  if (distance !== undefined && distance > store.deliveryRadius) return { serviceable: false, reason: "TOO_FAR", distance };
+  const tier = distance === undefined ? tiers[0] : tiers.find((t) => t.minDistance <= distance && t.maxDistance > distance);
+  if (!tier) return { serviceable: false, reason: "NO_TIER", distance };
+  return { serviceable: true, fee: Number(tier.deliveryFee), estimatedMinutes: tier.estimatedMinutes, distance };
+}
+
+/** Each store's lowest active tier fee, shown to shoppers as "Delivery from ₹20" */
+export async function deliveryFeesFrom(prisma: PrismaClient, storeIds: string[]): Promise<Map<string, number>> {
+  const lowest = await prisma.deliveryTier.groupBy({
+    by: ["storeId"], where: { storeId: { in: storeIds }, isActive: true }, _min: { deliveryFee: true },
+  });
+  return new Map(lowest.map((t) => [t.storeId, Number(t._min.deliveryFee ?? 0)]));
 }
 
 /** Express runs all day without set hours; otherwise only between them, India time */

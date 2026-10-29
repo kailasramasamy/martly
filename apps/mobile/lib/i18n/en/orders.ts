@@ -45,6 +45,9 @@ export const orders = {
     stepOf: (step: number, total: number, label: string) => `Step ${step} of ${total}: ${label}`,
   },
   card: {
+    paymentPending: "Payment pending",
+    payWithin: (min: number) => `Pay within ${min} min or this order is cancelled`,
+    completePayment: "Complete payment",
     yesterday: "Yesterday",
     arrivingSoon: "Arriving soon",
     arrivingIn: (min: number) => `Arriving in ${min} min`,
@@ -80,6 +83,8 @@ export const orders = {
     loadFailed: "Couldn't load this order. Check your connection.",
   },
   detail: {
+    headAwaitingPayment: "Payment not completed",
+    subAwaitingPayment: "Your order is confirmed once you pay",
     headDelivered: (day: string) => `Delivered ${day}`,
     headPickedUp: (day: string) => `Picked up ${day}`,
     handedOver: (time: string) => `Handed over at ${time}`,
@@ -170,6 +175,15 @@ export const orders = {
     replacesDefault: "item you returned",
     replacesNote: (what: string, orderNo: string) => `Replaces the ${what} from order #${orderNo}. You already paid for it.`,
     pickupNotice: (orderNo: string) => `Keep the item from order #${orderNo} ready — our rider will collect it`,
+  },
+  pay: {
+    title: "Complete your payment",
+    body: (amount: string, min: number) => `Pay ${amount} in the next ${min} min to confirm this order. If not, it will be cancelled.`,
+    expired: "Payment time is up. This order is being cancelled.",
+    payWith: (amount: string, app?: string) => (app ? `Pay ${amount} with ${app}` : `Pay ${amount}`),
+    paid: "Payment received. Your order is confirmed.",
+    notPaid: "Payment not completed. You can try again.",
+    openFailed: "Couldn't open payment. Please try again.",
   },
   returns: {
     reasons: {

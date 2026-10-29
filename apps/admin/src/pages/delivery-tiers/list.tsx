@@ -16,13 +16,13 @@ import {
   Empty,
 } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
+import { ChargesSettingsForm } from "./charges-settings";
 
 const { Text } = Typography;
 
 interface Store {
   id: string;
   name: string;
-  deliveryRadius?: number;
   latitude?: number;
   longitude?: number;
 }
@@ -107,6 +107,7 @@ export const DeliveryTierList = () => {
 
   return (
     <List
+      title="Delivery charges"
       headerButtons={
         storeId
           ? [
@@ -139,14 +140,18 @@ export const DeliveryTierList = () => {
               ) : (
                 <Tag color="orange">No location configured</Tag>
               )}
-              <Tag>Radius: {selectedStore.deliveryRadius ?? 7} km</Tag>
             </Space>
           )}
         </Space>
 
         {!storeId ? (
-          <Empty description="Select a store to manage delivery tiers" />
+          <Empty description="Select a store to manage delivery charges" />
         ) : (
+          <>
+          <ChargesSettingsForm storeId={storeId} />
+          <Text type="secondary">
+            Delivery fee is charged by the customer's distance from the store. Addresses beyond the radius or outside every tier can't order delivery.
+          </Text>
           <Table dataSource={tiers} rowKey="id" size="small" pagination={false}>
             <Table.Column
               dataIndex="minDistance"
@@ -197,6 +202,7 @@ export const DeliveryTierList = () => {
               )}
             />
           </Table>
+          </>
         )}
       </Space>
 

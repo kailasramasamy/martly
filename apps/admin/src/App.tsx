@@ -619,12 +619,12 @@ export default function App() {
                 list: "/delivery-zones",
                 create: "/delivery-zones/create",
                 edit: "/delivery-zones/edit/:id",
-                meta: { label: "Zones (Pincode)", parent: "delivery" },
+                meta: { label: "Zones (Pincode)", parent: "delivery", hide: true },
               },
               {
                 name: "delivery-tiers",
                 list: "/delivery-tiers",
-                meta: { label: "Tiers (Distance)", parent: "delivery" },
+                meta: { label: "Delivery charges", parent: "delivery" },
               },
               {
                 name: "delivery-slots",

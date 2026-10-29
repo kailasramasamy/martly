@@ -47,7 +47,7 @@ interface StoreSeed {
   deliveryRadius: number;
   minOrderAmount: number;
   freeDeliveryThreshold: number;
-  baseDeliveryFee: number;
+  startingDeliveryFee: number;
   etaMinutes: number;
   hours: [string, string];
   photo: string;
@@ -56,31 +56,31 @@ interface StoreSeed {
 const STORES: StoreSeed[] = [
   { slug: SOURCE_SLUG, town: "dharmapuri", name: "Downtown Mart", address: "Four Roads, Dharmapuri, Tamil Nadu 636701",
     latitude: 12.1311, longitude: 78.158, deliveryRadius: 7, minOrderAmount: 99, freeDeliveryThreshold: 299,
-    baseDeliveryFee: 25, etaMinutes: 15, hours: ["06:00", "23:00"], photo: "1534723452862-4c874018d66d" },
+    startingDeliveryFee: 25, etaMinutes: 15, hours: ["06:00", "23:00"], photo: "1534723452862-4c874018d66d" },
   { slug: "annapoorna-supermart", town: "dharmapuri", name: "Annapoorna Supermart", address: "Pennagaram Road, Dharmapuri, Tamil Nadu 636701",
     latitude: 12.1342, longitude: 78.143, deliveryRadius: 6, minOrderAmount: 149, freeDeliveryThreshold: 399,
-    baseDeliveryFee: 30, etaMinutes: 20, hours: ["07:00", "22:30"], photo: "1578916171728-46686eac8d58" },
+    startingDeliveryFee: 30, etaMinutes: 20, hours: ["07:00", "22:30"], photo: "1578916171728-46686eac8d58" },
   { slug: "kaveri-fresh", town: "dharmapuri", name: "Kaveri Fresh", address: "Nethaji Bypass Road, Dharmapuri, Tamil Nadu 636705",
     latitude: 12.1405, longitude: 78.165, deliveryRadius: 5, minOrderAmount: 99, freeDeliveryThreshold: 249,
-    baseDeliveryFee: 20, etaMinutes: 12, hours: ["06:30", "22:00"], photo: "1542838132-92c53300491e" },
+    startingDeliveryFee: 20, etaMinutes: 12, hours: ["06:30", "22:00"], photo: "1542838132-92c53300491e" },
   { slug: "greenleaf-organics", town: "dharmapuri", name: "GreenLeaf Organics", address: "Krishnagiri Road, Sogathur, Dharmapuri, Tamil Nadu 636809",
     latitude: 12.165, longitude: 78.172, deliveryRadius: 8, minOrderAmount: 199, freeDeliveryThreshold: 499,
-    baseDeliveryFee: 35, etaMinutes: 25, hours: ["08:00", "21:00"], photo: "1550989460-0adf9ea622e2" },
+    startingDeliveryFee: 35, etaMinutes: 25, hours: ["08:00", "21:00"], photo: "1550989460-0adf9ea622e2" },
   { slug: "sri-murugan-stores", town: "adhiyamankottai", name: "Sri Murugan Stores", address: "Salem Main Road, Adhiyamankottai, Dharmapuri, Tamil Nadu 636807",
     latitude: 12.0886, longitude: 78.1259, deliveryRadius: 6, minOrderAmount: 99, freeDeliveryThreshold: 299,
-    baseDeliveryFee: 25, etaMinutes: 30, hours: ["06:00", "22:00"], photo: "1533900298318-6b8da08a523e" },
+    startingDeliveryFee: 25, etaMinutes: 30, hours: ["06:00", "22:00"], photo: "1533900298318-6b8da08a523e" },
   { slug: "nallampalli-daily-needs", town: "nallampalli", name: "Nallampalli Daily Needs", address: "Main Bazaar, Nallampalli, Dharmapuri, Tamil Nadu 636807",
     latitude: 12.064, longitude: 78.056, deliveryRadius: 5, minOrderAmount: 99, freeDeliveryThreshold: 299,
-    baseDeliveryFee: 25, etaMinutes: 35, hours: ["07:00", "21:30"], photo: "1604719312566-8912e9227c6a" },
+    startingDeliveryFee: 25, etaMinutes: 35, hours: ["07:00", "21:30"], photo: "1604719312566-8912e9227c6a" },
   { slug: "template-store", town: "harur", name: "Template Store", address: "Main Road, Harur Taluk, Dharmapuri, Tamil Nadu",
     latitude: 12.244, longitude: 78.269, deliveryRadius: 6, minOrderAmount: 99, freeDeliveryThreshold: 249,
-    baseDeliveryFee: 20, etaMinutes: 10, hours: ["06:00", "22:30"], photo: "1488459716781-31db52582fe9" },
+    startingDeliveryFee: 20, etaMinutes: 10, hours: ["06:00", "22:30"], photo: "1488459716781-31db52582fe9" },
   { slug: "thamizh-supermarket", town: "harur", name: "Thamizh Supermarket", address: "Market Street, Harur Taluk, Dharmapuri, Tamil Nadu",
     latitude: 12.225, longitude: 78.256, deliveryRadius: 7, minOrderAmount: 149, freeDeliveryThreshold: 399,
-    baseDeliveryFee: 30, etaMinutes: 18, hours: ["07:00", "23:00"], photo: "1601599561213-832382fd07ba" },
+    startingDeliveryFee: 30, etaMinutes: 18, hours: ["07:00", "23:00"], photo: "1601599561213-832382fd07ba" },
   { slug: "harur-daily-basket", town: "harur", name: "Harur Daily Basket", address: "Bus Stop Road, Harur Taluk, Dharmapuri, Tamil Nadu",
     latitude: 12.256, longitude: 78.29, deliveryRadius: 5, minOrderAmount: 99, freeDeliveryThreshold: 299,
-    baseDeliveryFee: 25, etaMinutes: 22, hours: ["06:30", "21:30"], photo: "1543168256-418811576931" },
+    startingDeliveryFee: 25, etaMinutes: 22, hours: ["06:30", "21:30"], photo: "1543168256-418811576931" },
 ];
 
 async function uploadStorePhoto(slug: string, photoId: string): Promise<string> {
@@ -112,7 +112,7 @@ async function upsertStore(seed: StoreSeed, organizationId: string, town: { id: 
     name: seed.name, address: seed.address, imageUrl, status: "ACTIVE" as const,
     latitude: seed.latitude, longitude: seed.longitude, deliveryRadius: seed.deliveryRadius,
     minOrderAmount: seed.minOrderAmount, freeDeliveryThreshold: seed.freeDeliveryThreshold,
-    baseDeliveryFee: seed.baseDeliveryFee, townId, state: town.state, district: town.district,
+    townId, state: town.state, district: town.district,
   };
   const store = await prisma.store.upsert({
     where: { townId_slug: { townId, slug: seed.slug } },
@@ -135,7 +135,7 @@ async function upsertDeliveryTiers(storeId: string, seed: StoreSeed) {
     storeId,
     minDistance: Math.round(i * third * 10) / 10,
     maxDistance: i === 2 ? seed.deliveryRadius : Math.round((i + 1) * third * 10) / 10,
-    deliveryFee: seed.baseDeliveryFee + i * 10,
+    deliveryFee: seed.startingDeliveryFee + i * 10,
     estimatedMinutes: seed.etaMinutes + i * 5,
   }));
   await prisma.$transaction([

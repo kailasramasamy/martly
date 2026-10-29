@@ -5,7 +5,7 @@ import { colors, spacing, fontSize } from "../../constants/theme";
 
 interface CartBillProps {
   itemTotal: number;
-  /** null: the store has no flat fee, so it's worked out at checkout from the address */
+  /** The store's lowest tier fee; the exact fee comes from the address at checkout. null: not known yet */
   deliveryFee: number | null;
   freeDelivery: boolean;
   memberFreeDelivery: boolean;
@@ -40,7 +40,7 @@ export function CartBill({ itemTotal, deliveryFee, freeDelivery, memberFreeDeliv
               )}
             </View>
           ) : deliveryFee != null ? (
-            <Text style={styles.value}>{"\u20B9"}{deliveryFee.toFixed(0)}</Text>
+            <Text style={styles.value}>{t.deliveryFrom(deliveryFee.toFixed(0))}</Text>
           ) : (
             <Text style={styles.label}>{t.atCheckout}</Text>
           )}

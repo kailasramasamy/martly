@@ -135,7 +135,7 @@ function OrderSuccessScreen() {
     if (paramPaymentMethod === "COD") {
       return t.success.payOnDelivery;
     }
-    return t.success.paymentPending;
+    return order?.paymentStatus === "PAID" ? t.success.paidOnline : t.success.paymentPending;
   };
 
   const getPaymentLabel = (): string => {

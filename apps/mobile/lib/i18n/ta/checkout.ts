@@ -17,6 +17,7 @@ export const checkout: Strings<"checkout"> = {
     homeDelivery: "வீட்டிற்கு டெலிவரி",
     storePickup: "கடையில் எடுத்துக்கொள்",
     notAvailable: "கிடைக்கவில்லை",
+    feeFrom: (fee: string) => `\u20B9${fee} முதல்`,
     calculating: "கணக்கிடுகிறது...",
     pickupEta: "~30 நிமிடம்",
     notServiceable: (km: string | null) =>
@@ -104,6 +105,10 @@ export const checkout: Strings<"checkout"> = {
     confirmingTitle: "உங்கள் பணம் செலுத்துதலை உறுதி செய்கிறோம்",
     confirmingSub: (app?: string) =>
       `${app ? `${app} இடம் சரிபார்க்கிறோம். ` : ""}இதற்குச் சில நொடிகள் ஆகும் — தயவுசெய்து ஆப்பை மூடாதீர்கள்.`,
+    handoffTitle: (app?: string) => `${app ?? "UPI ஆப்"} மூலம் பணம் செலுத்துகிறீர்கள்`,
+    handoffSub: (app?: string) =>
+      `${app ?? "UPI ஆப்"}-இல் பணம் செலுத்திய பிறகு, உங்கள் ஆர்டரைப் பார்க்க Martly-க்குத் திரும்பி வாருங்கள். நாங்கள் ஒரு அறிவிப்பும் அனுப்புவோம் — அதைத் தட்டினால் திரும்பி வரலாம்.`,
+    handoffContinue: (app?: string) => `${app ?? "UPI ஆப்"}-ஐத் திறக்கவும்`,
     checkLater: "என் ஆர்டர்களில் பிறகு பாருங்கள்",
     placeFailed: "ஆர்டர் செய்ய முடியவில்லை",
   },
@@ -158,6 +163,7 @@ export const checkout: Strings<"checkout"> = {
     paidWallet: "மார்ட்லி வாலட் மூலம் செலுத்தப்பட்டது",
     payOnPickup: "எடுத்துக்கொள்ளும்போது செலுத்துங்கள்",
     payOnDelivery: "டெலிவரியில் செலுத்துங்கள்",
+    paidOnline: "ஆன்லைனில் செலுத்தப்பட்டது",
     paymentPending: "பணம் செலுத்துதல் நிலுவையில் உள்ளது",
     orderNo: "ஆர்டர் எண்",
     amount: "தொகை",

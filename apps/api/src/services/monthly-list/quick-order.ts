@@ -64,7 +64,7 @@ export async function quickOrderQuote(
   if (store.minOrderAmount && itemsTotal < Number(store.minOrderAmount)) return { ready: false, reason: "BELOW_MINIMUM" };
   const point = address.latitude != null && address.longitude != null ? { lat: address.latitude, lng: address.longitude } : null;
   const fee = await deliveryFeeTo(prisma, list.storeId, store, point);
-  if (fee.outOfRange) return { ready: false, reason: "NOT_SERVICEABLE" };
+  if (!fee.serviceable) return { ready: false, reason: "NOT_SERVICEABLE" };
   const waived = membership.freeDelivery || (store.freeDeliveryThreshold != null && itemsTotal >= Number(store.freeDeliveryThreshold));
   const deliveryFee = waived ? 0 : fee.fee;
   return {
