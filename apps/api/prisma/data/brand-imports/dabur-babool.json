@@ -1,0 +1,22 @@
+{
+  "brand": "Dabur",
+  "manufacturer": "Dabur India Ltd.",
+  "feed": "dabur-babool-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/19a0b8e3-e968-4fe0-ba04-d86b4b22dfad.webp",
+  "themeColor": "#00843D",
+  "themeColorSecondary": "#F58220",
+  "namePrefix": "Dabur ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Babool\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+ {
+  "title": "Babool Toothpaste",
+  "handle": "babool-toothpaste",
+  "vendor": "Dabur",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263868_2-dabur-babool-toothpaste-babool-for-strong-teeth-healthy-gums.jpg"
+    },
+    "barcode": "8901207057564"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263868_2-dabur-babool-toothpaste-babool-for-strong-teeth-healthy-gums.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Babool Toothpaste is natural toothpaste filled with the medicinal benefits of Babul tree 'Acacia Arabia'. The Babul herbal extract in this toothpaste helps avoid swelling and bleeding of gums, keeping your gums strong and teeth sturdy.",
+   "ingredients": "Salt and Babul `Acacia Arabia` extracts.",
+   "usageInstructions": "Best results with four weeks of continuous use.",
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "India"
+  }
+ }
+]
