@@ -90,10 +90,15 @@ export const ProductEdit = () => {
     }
   }, [categoryTree, formProps.initialValues?.subcategoryId]);
 
+  // Hundreds of brands: search the API as the user types instead of listing a first page only
   const { selectProps: brandSelectProps } = useSelect({
     resource: "brands",
     optionLabel: "name",
     optionValue: "id",
+    pagination: { pageSize: 50 },
+    onSearch: (value) => [{ field: "q", operator: "contains", value }],
+    // The product's current brand is loaded by id, so it shows its name even when it isn't in the first page
+    defaultValue: formProps.initialValues?.brandId,
   });
 
   return (

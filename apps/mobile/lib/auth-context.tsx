@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, useCallback, useEffect, useRef, type ReactNode } from "react";
 import * as SecureStore from "expo-secure-store";
-import { setAccessToken, setTokenRefresher, api } from "./api";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { setAccessToken, setTokenRefresher, api, ApiError } from "./api";
 import { registerForPushNotifications, unregisterPushToken } from "./notifications";
 import type { AuthTokens, OrgSummary } from "@martly/shared/types";
 import { API_URL } from "./config";
@@ -34,6 +35,15 @@ const AuthContext = createContext<AuthState | null>(null);
 
 const ACCESS_TOKEN_KEY = "martly_access_token";
 const REFRESH_TOKEN_KEY = "martly_refresh_token";
+/** The signed-in user as last fetched, so a launch without network still knows who (and which persona) it is */
+const USER_KEY = "martly_user";
+
+async function cachedUser(): Promise<UserInfo | null> {
+  const saved = await AsyncStorage.getItem(USER_KEY).catch(() => null);
+  return saved ? (JSON.parse(saved) as UserInfo) : null;
+}
+
+const rememberUser = (user: UserInfo) => AsyncStorage.setItem(USER_KEY, JSON.stringify(user)).catch(() => undefined);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -43,13 +53,21 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const pushTokenRef = useRef<string | null>(null);
   const logoutRef = useRef<() => Promise<void>>(undefined);
 
+  // Set when the server refuses the saved session, so a launch that failed to load the user knows not to keep it
+  const sessionRefusedRef = useRef(false);
+
   // Register the token refresher so api.ts can transparently refresh on 401
   useEffect(() => {
+    // Not awaited: logout unregisters the push token, a request that can itself be waiting on this refresh
+    const endSession = () => {
+      sessionRefusedRef.current = true;
+      logoutRef.current?.();
+    };
     setTokenRefresher(async () => {
       try {
         const refreshToken = await SecureStore.getItemAsync(REFRESH_TOKEN_KEY);
         if (!refreshToken) {
-          logoutRef.current?.();
+          endSession();
           return null;
         }
         const res = await fetch(`${API_URL}/api/v1/auth/refresh`, {
@@ -57,10 +75,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ refreshToken }),
         });
-        if (!res.ok) {
-          logoutRef.current?.();
+        // Only the server refusing the refresh token ends the session; a 5xx leaves it for the next try
+        if (res.status === 401 || res.status === 403) {
+          endSession();
           return null;
         }
+        if (!res.ok) return null;
         const json = await res.json();
         const newToken = json.data?.accessToken;
         if (newToken) {
@@ -68,10 +88,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           await SecureStore.setItemAsync(ACCESS_TOKEN_KEY, newToken);
           return newToken;
         }
-        logoutRef.current?.();
+        endSession();
         return null;
       } catch {
-        logoutRef.current?.();
+        // Offline or the request failed: stay signed in and refresh on a later request
         return null;
       }
     });
@@ -82,19 +102,25 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     (async () => {
       try {
         const token = await SecureStore.getItemAsync(ACCESS_TOKEN_KEY);
-        if (token) {
-          setAccessToken(token);
+        if (!token) return;
+        setAccessToken(token);
+        try {
           const res = await api.get<UserInfo>("/api/v1/auth/me");
           setUser(res.data);
-          setIsAuthenticated(true);
-          // Register push token after session restore
-          const pt = await registerForPushNotifications();
-          pushTokenRef.current = pt;
+          rememberUser(res.data);
+        } catch (err) {
+          // The account is gone or blocked: sign out. A refused refresh token already signed out in the refresher;
+          // anything else (offline, server error) keeps the session with the user as last seen.
+          if (err instanceof ApiError && (err.status === 403 || err.status === 404)) {
+            await logoutRef.current?.();
+            return;
+          }
+          if (sessionRefusedRef.current) return;
+          setUser(await cachedUser());
         }
-      } catch {
-        await SecureStore.deleteItemAsync(ACCESS_TOKEN_KEY);
-        await SecureStore.deleteItemAsync(REFRESH_TOKEN_KEY);
-        setAccessToken(null);
+        setIsAuthenticated(true);
+        // Register push token after session restore; no push permission or network leaves the session as it is
+        pushTokenRef.current = await registerForPushNotifications().catch(() => null);
       } finally {
         setIsLoading(false);
       }
@@ -109,6 +135,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     try {
       const res = await api.get<UserInfo>("/api/v1/auth/me");
       setUser(res.data);
+      rememberUser(res.data);
     } catch {
       // token worked for login, user info fetch failed — proceed anyway
     }
@@ -131,6 +158,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setIsAuthenticated(false);
     setSignOuts((n) => n + 1);
     clearRecentlyViewed();
+    await AsyncStorage.removeItem(USER_KEY).catch(() => undefined);
     await SecureStore.deleteItemAsync(ACCESS_TOKEN_KEY);
     await SecureStore.deleteItemAsync(REFRESH_TOKEN_KEY);
   }, []);
@@ -142,6 +170,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     try {
       const res = await api.get<UserInfo>("/api/v1/auth/me");
       setUser(res.data);
+      rememberUser(res.data);
     } catch {
       // silently fail
     }

@@ -51,10 +51,13 @@ export const ProductCreate = () => {
     }).catch(() => {});
   }, []);
 
+  // Hundreds of brands: search the API as the user types instead of listing a first page only
   const { selectProps: brandSelectProps } = useSelect({
     resource: "brands",
     optionLabel: "name",
     optionValue: "id",
+    pagination: { pageSize: 50 },
+    onSearch: (value) => [{ field: "q", operator: "contains", value }],
   });
 
   // Store selection for ORG_ADMIN
