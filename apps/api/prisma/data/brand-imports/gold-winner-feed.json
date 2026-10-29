@@ -32,6 +32,15 @@
     "featured_image": {
      "src": "https://kaleesuwari.com/storage/products/11/GW_RSFO_5-L_Front.png"
     }
+   },
+   {
+    "title": "1.8L",
+    "price": "389",
+    "compare_at_price": "389",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360636_1-gold-winner-refined-sunflower-oil.jpg"
+    }
    }
   ],
   "images": [
@@ -64,6 +73,16 @@
     "featured_image": {
      "src": "https://kaleesuwari.com/storage/products/12/GW_RSFO_1-L_Front_2-Packs.png"
     }
+   },
+   {
+    "title": "500ml",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/274129_1-gold-winner-refined-oil-sunflower.jpg"
+    },
+    "barcode": "8906010261047"
    }
   ],
   "images": [
@@ -90,6 +109,16 @@
     "featured_image": {
      "src": "https://kaleesuwari.com/storage/products/60/Gold-Winner-Silde-Post-850ml-2250x2250PXL-09_11zon.png"
     }
+   },
+   {
+    "title": "1L",
+    "price": "243",
+    "compare_at_price": "243",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100287042_4-gold-winner-refined-groundnut-oil.jpg"
+    },
+    "barcode": "8906010265373"
    }
   ],
   "images": [
@@ -169,6 +198,16 @@
     "featured_image": {
      "src": "https://kaleesuwari.com/storage/products/89/Gold-Winner-Gingelly-Oil-1L-Front.png"
     }
+   },
+   {
+    "title": "850g",
+    "price": "360",
+    "compare_at_price": "360",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371280_1-gold-winner-gingelly-oil.jpg"
+    },
+    "barcode": "8906010260101"
    }
   ],
   "images": [
@@ -230,6 +269,15 @@
     "featured_image": {
      "src": "https://kaleesuwari.com/storage/products/93/Gold-Winner-Coconut-Oil-1L-Front.png"
     }
+   },
+   {
+    "title": "400g",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365200_1-gold-winner-coconut-oil.jpg"
+    }
    }
   ],
   "images": [
@@ -265,6 +313,16 @@
     "featured_image": {
      "src": "https://kaleesuwari.com/storage/products/95/Gold-Winner-Rice-bran-Oil-1L-Front.png"
     }
+   },
+   {
+    "title": "850g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371279_1-gold-winner-physically-refined-rice-bran-oil.jpg"
+    },
+    "barcode": "8906010269517"
    }
   ],
   "images": [
@@ -299,6 +357,15 @@
     "available": true,
     "featured_image": {
      "src": "https://kaleesuwari.com/storage/products/14/gold_winner_vanspati_1ltr_front.png"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "19",
+    "compare_at_price": "19",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/256746_1-gold-winner-vanaspati.jpg"
     }
    }
   ],
