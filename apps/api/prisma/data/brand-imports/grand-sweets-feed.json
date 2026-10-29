@@ -1,0 +1,133 @@
+[
+ {
+  "title": "Idli Chilli Podi",
+  "handle": "idli-chilli-podi",
+  "vendor": "Grand Sweets",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "146",
+    "compare_at_price": "146",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40088469_1-grand-sweets-podi-idli-chilli.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40088469_1-grand-sweets-podi-idli-chilli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Grand Sweets is famous for its traditional spice powders. Idli Chilli Podi, known variously as Malaga Podi and Karam Podi because it is spicy, goes well with Idlis and Dosas. Vegetarian. It is an ideal accompaniment during your breakfast or tiffin.",
+   "ingredients": "Red Chilli, Black Gram, Bengal Gram, White Sesame Seeds, Salt, Asafoetida, Gingelly Oil",
+   "usageInstructions": "It goes well with Idlis and dosas.",
+   "manufacturerName": "The Grand Sweets & Snacks/No",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Onion Thokku",
+  "handle": "onion-thokku",
+  "vendor": "Grand Sweets",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "420",
+    "compare_at_price": "420",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/800230271_2-the-grand-sweets-and-snacks-thokku-onion.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/800230271_2-the-grand-sweets-and-snacks-thokku-onion.jpg"
+   }
+  ],
+  "details": {
+   "description": "Onion Thokku a famous south Indian food made with all purpose flour. Its Traditional Food in South India Especially in Tamil Nadu. Taste the fine and hygienic product.\nA quick and delicious relish made with caramelized small onions (shallots) and a whole bunch of aromatic spices indigenous to the South Indian cuisine. Onion Thokku is a perfect accompaniment to Indian dishes such as Idlies, dosas and flat breads. It tastes great and is sure to shake awake your senses!\nweight: 500g, vegetarian",
+   "ingredients": "Onions, Chilly powder, Sesame oil, Tamarind, Mustard, Salt",
+   "usageInstructions": "perfect accompaniment to Indian dishes such as Idlies, dosas and flat breads",
+   "manufacturerName": "The Grand Sweets & Snacks/No"
+  }
+ },
+ {
+  "title": "Puli Kachal Rice Mix",
+  "handle": "puli-kachal-rice-mix",
+  "vendor": "Grand Sweets",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "414",
+    "compare_at_price": "414",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40088470_3-grand-sweets-mix-pulli-kachal-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40088470_3-grand-sweets-mix-pulli-kachal-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40088470-2_4-grand-sweets-mix-pulli-kachal-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40088470-3_4-grand-sweets-mix-pulli-kachal-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40088470-4_4-grand-sweets-mix-pulli-kachal-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40088470-5_4-grand-sweets-mix-pulli-kachal-rice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pulikachal is an authentic Tamil spice mix that combines tamarind, dal powders and red chilies. You will love its texture, aroma, heat, and taste. The delicious flavour of Pulikachal is sure to make you go back to it repeatedly. Enjoy it as a pickle for curd rice or as a side dish for Dosas. Vegetarian. Best Before 90 days from date of packing. Store in airtight container.",
+   "ingredients": "Tamarind, Dry Red Chilly, Coriander Seeds, Cumin Seeds, Mustard Seeds, Urad Dal, Bengal Dal",
+   "usageInstructions": "Enjoy it as a pickle for curd rice or as a side dish for dosas.",
+   "manufacturerName": "The Grand Sweets & Snacks/No",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Karivepillai Rice Mix",
+  "handle": "karivepillai-rice-mix",
+  "vendor": "Grand Sweets",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/800230267_2-the-grand-sweets-and-snacks-rice-mix-karivepillai.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/800230267_2-the-grand-sweets-and-snacks-rice-mix-karivepillai.jpg"
+   }
+  ],
+  "details": {
+   "description": "Karivepillai Mix a famous south Indian food made with all purpose flour. Its Traditional Food in South India Especially in Tamil Nadu. Taste the fine and hygienic product.",
+   "manufacturerName": "The Grand Sweets & Snacks/No",
+   "countryOfOrigin": "India"
+  }
+ }
+]

@@ -1,0 +1,46 @@
+{
+  "brand": "Grand Sweets",
+  "manufacturer": "The Grand Sweets and Snacks, 43 Second Main Road, Gandhi Nagar, Adyar, Chennai 600020",
+  "feed": "grand-sweets-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/grand-sweets/logo-067c11ca.png",
+  "themeColor": "#7A4A2A",
+  "themeColorSecondary": "#FBE7A1",
+  "namePrefix": "Grand Sweets ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Idli\\ Chilli\\ Podi$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Onion\\ Thokku$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Puli\\ Kachal\\ Rice\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Karivepillai\\ Rice\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    }
+  ]
+}
