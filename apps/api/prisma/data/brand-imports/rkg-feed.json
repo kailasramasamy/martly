@@ -8,8 +8,8 @@
   "variants": [
    {
     "title": "100ml",
-    "price": "97",
-    "compare_at_price": "97",
+    "price": "100",
+    "compare_at_price": "100",
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780_3-rkg-agmark-ghee-ghee.jpg"
@@ -27,8 +27,8 @@
    },
    {
     "title": "500ml",
-    "price": "446",
-    "compare_at_price": "446",
+    "price": "475",
+    "compare_at_price": "475",
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40128778_2-rkg-agmark-ghee-ghee.jpg"
@@ -36,8 +36,8 @@
    },
    {
     "title": "1L",
-    "price": "996",
-    "compare_at_price": "996",
+    "price": "1060",
+    "compare_at_price": "1060",
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40128777_2-rkg-agmark-ghee-ghee.jpg"
