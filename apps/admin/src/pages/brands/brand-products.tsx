@@ -11,7 +11,7 @@ export interface BrandProduct {
   isActive: boolean;
   organizationId: string | null;
   subcategory?: { id: string; name: string; category: { id: string; name: string } };
-  variants?: { id: string; name: string; mrp?: number }[];
+  variants?: { id: string; name: string; mrp?: number; unitType: string; unitValue: string }[];
   storeProducts?: (VariantListing & { store: { id: string; name: string } })[];
 }
 
@@ -24,6 +24,15 @@ function storeBreakdown(listings: NonNullable<BrandProduct["storeProducts"]>) {
   const stores = new Map(listings.map((l) => [l.store.id, l.store.name]));
   return [...stores].map(([id, name]) => `${name}: ${listingLabel(listingState(listings, id))}`).join("\n");
 }
+
+type Variant = NonNullable<BrandProduct["variants"]>[number];
+
+// Formatted units (kg, L) in grams / millilitres, so 500 g sorts before 1 kg
+const UNIT_FACTOR: Record<string, number> = { kg: 1000, L: 1000 };
+const packSize = (v: Variant) => Number(v.unitValue) * (UNIT_FACTOR[v.unitType] ?? 1);
+
+/** Smallest pack first; same size by MRP */
+const bySize = (a: Variant, b: Variant) => packSize(a) - packSize(b) || Number(a.mrp ?? 0) - Number(b.mrp ?? 0);
 
 export interface Pill { id: string; name: string; count: number }
 
@@ -68,7 +77,7 @@ export const ProductCard = ({ product, storeId }: { product: BrandProduct; store
         <Text strong style={{ display: "block", fontSize: 13 }}>{product.name}</Text>
         <Text type="secondary" style={{ fontSize: 12 }}>{product.subcategory?.name}</Text>
         <Space size={4} wrap style={{ marginTop: 6 }}>
-          {product.variants?.map((v) => (
+          {[...(product.variants ?? [])].sort(bySize).map((v) => (
             <Tag key={v.id} style={{ marginInlineEnd: 0 }}>
               {v.name}
               {v.mrp != null && ` · ₹${Number(v.mrp).toLocaleString("en-IN")}`}
