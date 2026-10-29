@@ -1,0 +1,69 @@
+[
+ {
+  "title": "Nutrition Drink Choco Caramel",
+  "handle": "nutrition-drink-choco-caramel",
+  "vendor": "Maltova (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "245",
+    "compare_at_price": "245",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/119383_3-maltova-health-drink-choco-caramel.jpg"
+    },
+    "barcode": "8901030824951"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119383_3-maltova-health-drink-choco-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119383-2_1-maltova-health-drink-choco-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119383-3_1-maltova-health-drink-choco-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119383-4_1-maltova-health-drink-choco-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119383-5_1-maltova-health-drink-choco-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119383-6_1-maltova-health-drink-choco-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119383-7_1-maltova-health-drink-choco-caramel.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Maltova Choco Caramel is made from malt extract, sugar, milk solids, and cocoa powder. It is a good source for vitamin B and C. Your child will feel energetic after drinking it. To kids, Maltova is the fun Nutrition Drink, which is extremely tasty, and makes nourishment truly enjoyable and exciting.",
+   "ingredients": "Cereal Extract (46%) [Barley (38%), Wheat (8%)], Sugar, Milk Solids (14%), Malted Barley (Extracted Solids) (11%), Corn Solids (Hydrolysed), Natural Colour [INS 150c], Cocoa Powder, Acidity Regulators [INS 500(ii), 501(ii)], Salt, Emulsifier [INS 412], Minerals, Vitamins, Nature Identical Flavouring Substance",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100g",
+    "Serving Size": "15g",
+    "Vitamin B1": "0.62 mg",
+    "Vitamin B2": "0.74 mg",
+    "Niacin": "8.5 mg",
+    "Vitamin B6": "0.91 mg",
+    "Folic Acid": "39.7 mcg",
+    "Vitamin B12": "0.57 mcg",
+    "Vitamin C": "22.7 mg",
+    "Iron": "19.3 mg",
+    "Energy": "395 kcal",
+    "Protein": "7.8 g",
+    "Carbohydrate": "82.5 g",
+    "Sugar": "19.0 g",
+    "Fat": "3.7 g"
+   },
+   "storageInstructions": "*Store in a clean and dry place away from sunlight",
+   "manufacturerName": "GSK CH India",
+   "countryOfOrigin": "India"
+  }
+ }
+]

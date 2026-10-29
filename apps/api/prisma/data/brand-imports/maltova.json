@@ -1,0 +1,22 @@
+{
+  "brand": "Maltova (HUL)",
+  "manufacturer": "Hindustan Unilever Limited",
+  "feed": "maltova-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/maltova/logo-dda30c7e.png",
+  "themeColor": "#D7141A",
+  "themeColorSecondary": "#F2B705",
+  "namePrefix": "Maltova ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Nutrition\\ Drink\\ Choco\\ Caramel$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    }
+  ]
+}
