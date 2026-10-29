@@ -2,7 +2,7 @@ import type { Messaging } from "firebase-admin/messaging";
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { istDateKey } from "../ist-day.js";
 import { DELIVERY_FAILURE_LABELS, type DeliveryFailureReason } from "@martly/shared/constants";
-import { startTripInTx } from "../delivery-trips.js";
+import { startTripInTx, tripOrderProblem } from "../delivery-trips.js";
 import { broadcastToTripSubscribers } from "../ws-manager.js";
 import { forgetTrip, invalidateRoute } from "./live-location.js";
 import { notifyTripCompleted, type TripAssignment } from "../notify/delivery-alerts.js";
@@ -64,9 +64,24 @@ interface SendArgs {
   start: boolean;
 }
 
+/**
+ * The orders, locked and checked again inside the transaction: two dispatchers sending the same order to different
+ * riders take turns, and the second finds it already on a trip.
+ */
+async function lockSendable(tx: Tx, orderIds: string[], storeId: string, start: boolean) {
+  await tx.$queryRaw`SELECT id FROM orders WHERE id = ANY(${[...orderIds].sort()}::text[]) ORDER BY id FOR UPDATE`;
+  const orders = await tx.order.findMany({
+    where: { id: { in: orderIds } },
+    select: { id: true, status: true, storeId: true, fulfillmentType: true, deliveryTripId: true, deliveryTrip: { select: { status: true } } },
+  });
+  const problem = tripOrderProblem(orders, orderIds, storeId, start);
+  if (problem) throw new TripOpError(problem);
+}
+
 /** Gives orders to a rider (joining their unstarted trip) and optionally starts it; a blocked start rolls everything back */
 export async function sendToRider(prisma: PrismaClient, { storeId, organizationId, rider, orderIds, wave, start }: SendArgs) {
   const sent = await prisma.$transaction(async (tx) => {
+    await lockSendable(tx, orderIds, storeId, start);
     const { tripId, created } = await attachToRiderTrip(tx, { storeId, organizationId, riderId: rider.id, orderIds, wave });
     const blocked = start ? await startProblem(tx, { id: tripId, riderId: rider.id, status: "CREATED" }) : null;
     if (blocked) throw new TripOpError(blocked);
@@ -96,7 +111,13 @@ export async function assignTrips(prisma: PrismaClient, storeId: string, riders:
     if (trip.status !== "PLANNED" && trip.status !== "CREATED") throw new TripOpError("Only trips that haven't started can be assigned");
     if (!riders.has(a.riderId)) throw new TripOpError("Rider is not assigned to this store");
   }
-  await prisma.$transaction(assignments.map((a) => prisma.deliveryTrip.update({ where: { id: a.tripId }, data: { riderId: a.riderId, status: "CREATED" } })));
+  await prisma.$transaction(async (tx) => {
+    for (const a of assignments) {
+      // A trip that started meanwhile keeps its rider
+      const { count } = await tx.deliveryTrip.updateMany({ where: { id: a.tripId, status: { in: ["PLANNED", "CREATED"] } }, data: { riderId: a.riderId, status: "CREATED" } });
+      if (count === 0) throw new TripOpError("Only trips that haven't started can be assigned");
+    }
+  });
   return assignments.map((a) => ({ ...a, previousRiderId: trips.find((t) => t.id === a.tripId)?.riderId ?? null }));
 }
 
@@ -142,10 +163,15 @@ export async function failDelivery(prisma: PrismaClient, fcm: Messaging | null, 
   if (!order) throw new TripOpError("This order isn't on that trip");
   if (order.status !== "OUT_FOR_DELIVERY") throw new TripOpError(`Order is ${order.status}, expected OUT_FOR_DELIVERY`);
   const label = DELIVERY_FAILURE_LABELS[reason];
-  await prisma.$transaction([
-    prisma.order.update({ where: { id: orderId }, data: { status: "READY", deliveryTripId: null, deliverySequence: null } }),
-    prisma.orderStatusLog.create({ data: { orderId, status: "READY", note: `Delivery attempt failed: ${label}${note ? `. ${note}` : ""}` } }),
-    prisma.deliveryFailure.create({ data: { orderId, tripId, riderId, reason, note } }),
-  ]);
+  await prisma.$transaction(async (tx) => {
+    // Still out on this trip: a second tap, or a delivery recorded meanwhile, finds nothing to fail
+    const { count } = await tx.order.updateMany({
+      where: { id: orderId, deliveryTripId: tripId, status: "OUT_FOR_DELIVERY" },
+      data: { status: "READY", deliveryTripId: null, deliverySequence: null },
+    });
+    if (count === 0) throw new TripOpError("This order was just updated. Refresh and try again.");
+    await tx.orderStatusLog.create({ data: { orderId, status: "READY", note: `Delivery attempt failed: ${label}${note ? `. ${note}` : ""}` } });
+    await tx.deliveryFailure.create({ data: { orderId, tripId, riderId, reason, note } });
+  });
   await stopFinished(prisma, fcm, tripId);
 }

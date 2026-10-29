@@ -52,3 +52,18 @@ export async function releaseCoupon(tx: Tx, order: { id: string; couponId: strin
   const { count } = await tx.couponRedemption.deleteMany({ where: { orderId: order.id } });
   if (count > 0) await tx.coupon.update({ where: { id: order.couponId }, data: { usedCount: { decrement: count } } });
 }
+
+/**
+ * Books a place in a delivery slot for a day: the slot's row is locked while its orders are counted, so two checkouts
+ * can't both take its last place. Throws 400 when the slot is full.
+ */
+export async function claimSlotPlace(tx: Tx, slotId: string, day: { start: Date; end: Date }, capacity: number) {
+  await tx.$queryRaw`SELECT id FROM delivery_slots WHERE id = ${slotId} FOR UPDATE`;
+  const booked = await tx.order.count({
+    where: { deliverySlotId: slotId, scheduledDate: { gte: day.start, lte: day.end }, status: { not: "CANCELLED" } },
+  });
+  if (booked >= capacity) throw Object.assign(new Error("This delivery slot is full"), { statusCode: 400 });
+}
+
+/** Money in rupees to the paise, so sums of prices compare exactly (a wallet that covers the total leaves 0, not 1e-14) */
+export const toPaise = (rupees: number) => Math.round(rupees * 100) / 100;

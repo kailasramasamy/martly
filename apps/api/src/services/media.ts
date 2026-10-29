@@ -18,7 +18,6 @@ const s3 = new S3Client({
   },
 });
 
-const OPTIMIZABLE_TYPES = new Set(["image/jpeg", "image/png", "image/webp"]);
 const MAX_IMAGE_WIDTH = 1600;
 
 /** Uploads under the configured prefix and returns the object's key and public URL. Every key is unique, so clients may cache forever. */
@@ -51,11 +50,6 @@ export async function objectExists(name: string) {
 /** True for URLs of objects this API uploaded, so server-side fetches never follow a user-supplied URL elsewhere */
 export function isMediaUrl(url: string) {
   return url.startsWith(`${BASE_URL}/`) || url.startsWith(`${S3_URL}/`);
-}
-
-/** True for raster photos worth re-encoding; SVG, GIF and non-images pass through as uploaded */
-export function isOptimizableImage(contentType: string) {
-  return OPTIMIZABLE_TYPES.has(contentType);
 }
 
 /** Re-encodes a raster photo as WebP no wider than 1600px, keeping transparency and applying EXIF rotation */
