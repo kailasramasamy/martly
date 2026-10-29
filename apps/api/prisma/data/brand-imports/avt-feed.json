@@ -1,0 +1,572 @@
+[
+ {
+  "title": "Premium CTC Dust Tea",
+  "handle": "premium-ctc-dust-tea",
+  "vendor": "AVT",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000302_6-avt-tea-premium.jpg"
+    },
+    "barcode": "8902042111053"
+   },
+   {
+    "title": "250g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000303_3-avt-tea-premium.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000304_3-avt-tea-premium.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "335",
+    "compare_at_price": "335",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40158417_1-avt-premium-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000302_6-avt-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000302-2_6-avt-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000302-3_6-avt-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000302-4_6-avt-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000303_3-avt-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000304_3-avt-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40158417_1-avt-premium-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Our flagship blend of the finest strong teas from North and South Indian States, that creates a cup with such a characteristic sharpness, that it has become a favourite among tea drinkers. AVT Premium is so well known for its strength and consistency that its unique taste has litreally been passed on from generation to generation.",
+   "usageInstructions": "Add tea powder to milk and let it boil. Add sugar as per your taste. A pinch of cardamom powder will add on to the flavor of tea.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (kcal)": "100 kcal",
+    "Protein": "20 g",
+    "Carbohydrate (g)": "4 g",
+    "Fat(All Types) (g)": "Traces g",
+    "Cholesterol (g)": "Nil g",
+    "Vitamins (mg)": "Traces mg",
+    "Minerals (mg)": "Traces mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight"
+  }
+ },
+ {
+  "title": "Premium CTC Dust Tea Jar",
+  "handle": "premium-ctc-dust-tea-jar",
+  "vendor": "AVT",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000305_6-avt-tea-premium.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000306_4-avt-tea-tea-premium.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000305_6-avt-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000305-2_6-avt-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000305-3_6-avt-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000305-4_5-avt-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000305-5_4-avt-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000306_4-avt-tea-tea-premium.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Our flagship blend of the finest strong teas from North and South Indian States, that creates a cup with such a characteristic sharpness, that it has become a favourite among tea drinkers. AVT Premium is so well known for its strength and consistency that its unique taste has litreally been passed on from generation to generation.",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100g",
+    "Serving Size": "100ml",
+    "Energy (kcal)": "100 kcal",
+    "Protein (g)": "20 g",
+    "Carbohydrate (g)": "4 g",
+    "Fat all types (g)": "Traces",
+    "Cholesterol (g)": "Nil",
+    "Vitamins (mg)": "Traces",
+    "Minerals (mg)": "Traces"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "usageInstructions": "Add tea powder to milk and let it boil. Add sugar as per your taste. A pinch of cardamom powder will add on to the flavour of the tea."
+  }
+ },
+ {
+  "title": "Premium CTC Dust Tea Carton",
+  "handle": "premium-ctc-dust-tea-carton",
+  "vendor": "AVT",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364369_1-avt-premium-ctc-dust-tea.jpg"
+    },
+    "barcode": "8902042300433"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364369_1-avt-premium-ctc-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364369-2_1-avt-premium-ctc-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364369-3_1-avt-premium-ctc-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364369-4_1-avt-premium-ctc-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364369-5_1-avt-premium-ctc-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364369-6_1-avt-premium-ctc-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364369-7_1-avt-premium-ctc-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364369-8_1-avt-premium-ctc-dust-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "AVT Premium CTC Dust Tea is a garden-fresh blend crafted for tea lovers who prefer a strong and flavourful cup. Made from a flagship selection of the finest strong teas sourced from North and South Indian states, this blend delivers a distinctive sharpness that has made it a favourite among tea drinkers.\nKnown for its consistently rich colour, strong brew, and unique pungency, AVT Premium Tea offers a bold and satisfying tea experience with every cup. Its carefully balanced CTC dust blend ensures depth of flavour and a refreshing aroma, making it ideal for daily consumption. For best results, prepare with boiling water or milk to enjoy its full-bodied taste and robust character.",
+   "manufacturerName": "For identification of the manufacturing unit",
+   "fssaiLicense": "10019042005036",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Cup Premium Dust Tea",
+  "handle": "gold-cup-premium-dust-tea",
+  "vendor": "AVT",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000308_7-avt-tea-gold-cup.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "430",
+    "compare_at_price": "430",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000309_6-avt-tea-gold-cup.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000308_7-avt-tea-gold-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000308-2_2-avt-tea-gold-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000308-3_2-avt-tea-gold-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000308-4_2-avt-tea-gold-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000308-5_1-avt-tea-gold-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000309_6-avt-tea-gold-cup.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the exquisite flavour and rich aroma of AVT Gold Cup Tea, a meticulously crafted blend of 100% Assam tea. Sourced from the finest gardens in the state, this full-bodied, brisk and bright golden-coloured tea strikes the perfect balance between taste and strength. Painstakingly created after tasting 25,000 cups, the AVT Gold Cup Duplex promises a premium tea experience like no other, with its harmonious blend of boldness and smoothness that will tantalize your taste buds. Enjoy the rich, flavourful brew that delivers a truly exceptional tea experience.",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100g",
+    "Energy (kcal)": "100 kcal",
+    "Protein (g)": "20 g",
+    "Carbohydrate (g)": "4 g",
+    "Fat (all types g)": "Traces",
+    "Cholesterol (mg)": "Nil",
+    "Vitamins (mg)": "Traces",
+    "Minerals (mg)": "Traces"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "usageInstructions": "Add tea powder to milk and let it boil. Add sugar as per your taste. A pinch of cardamom powder will add on to the flavour of the tea.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Select CTC Dust Tea",
+  "handle": "select-ctc-dust-tea",
+  "vendor": "AVT",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "52",
+    "compare_at_price": "52",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120071_3-avt-tea-select-dust.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120071_3-avt-tea-select-dust.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120071_3-avt-tea-select-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120071-2_3-avt-tea-select-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120071-3_3-avt-tea-select-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120071-4_1-avt-tea-select-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120071-5_1-avt-tea-select-dust.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A perfectly balanced blend of 70% North Indian and 30% South Indian Tea that creates a creamy and bright coloured cup. Known for its superior strength as well as taste, AVT Select is a uniquely refreshing and rejuvenating blend that can be enjoyed at any time of the day!",
+   "usageInstructions": "Add tea powder to milk and let it boil. Add sugar as per your taste. A pinch of cardamom powder will add on to the flavor of tea.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Leaf Tea",
+  "handle": "premium-leaf-tea",
+  "vendor": "AVT",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120073_5-avt-tea-premium-leaf.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120074_4-avt-tea-premium-leaf.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120073_5-avt-tea-premium-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120073-2_5-avt-tea-premium-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120073-3_5-avt-tea-premium-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120073-4_3-avt-tea-premium-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120073-5_2-avt-tea-premium-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120073-6_1-avt-tea-premium-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120074_4-avt-tea-premium-leaf.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sourced from the best plantations, this is a special blend of 100% Assam CTC leaf tea with 10% longleaf, that truly relaxes and refreshes the senses. The AVT Premium Leaf delivers a bright, rich, flavorful and strong cup of tea, perfectly combined with the light mellow flavour undertones of Orthodox Tea.",
+   "usageInstructions": "Add tea powder to milk and let it boil. Add sugar as per your taste. A pinch of cardamom powder will add on to the flavour of the tea.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pure Green Tea",
+  "handle": "pure-green-tea",
+  "vendor": "AVT",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121183_5-avt-green-tea.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121184_7-avt-green-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121183_5-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121183-2_4-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121183-3_4-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121183-4_2-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121183-5_1-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121183-6_1-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121183-7_1-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121184_7-avt-green-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "An authentic blend of the purest green teas, AVT Pure Green Tea is a natural powerhouse of antioxidants, catechins and amino acids that detoxifies your body and awakens your senses! Infuse Health with every sip of this authentic, crisp tasting green tea which delivers all the health benefits of a green tea with none of the bitter aftertastes!",
+   "ingredients": "Leaf Tea",
+   "usageInstructions": "Add tea powder to milk and let it boil. Add sugar as per your taste. A pinch of cardamom powder will add on to the flavour of tea.",
+   "manufacturerName": "A V Thomas & Co Ltd"
+  }
+ },
+ {
+  "title": "Pure Green Tea Bags",
+  "handle": "pure-green-tea-bags",
+  "vendor": "AVT",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121185_6-avt-green-tea.jpg"
+    },
+    "barcode": "8902042300716"
+   },
+   {
+    "title": "30 pcs",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121186_6-avt-green-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121185_6-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121185-2_6-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121185-3_6-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121185-4_4-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121185-5_3-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121185-6_1-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121185-7_1-avt-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121186_6-avt-green-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "An authentic blend of the purest green teas, AVT Pure Green Tea is a natural powerhouse of antioxidants, catechins and amino acids that detoxifies your body and awakens your senses! Infuse Health with every sip of this authentic, crisp tasting green tea which delivers all the health benefits of a green tea with none of the bitter aftertastes!",
+   "ingredients": "Plain Green Tea",
+   "usageInstructions": "Bring fresh water to boil. Green tea is best made with water at 85. Pour water into a cup. Place one teabag and allow it to brew for about 2 mins. Remove the teabag. Sweeten with honey or sugar as desired. Green Tea is best had without milk.",
+   "manufacturerName": "A V Thomas & Co Ltd"
+  }
+ },
+ {
+  "title": "Premium Coffee Chicory Blend",
+  "handle": "premium-coffee-chicory-blend",
+  "vendor": "AVT",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000310_2-avt-coffee-premium.jpg"
+    },
+    "barcode": "8902042302086"
+   },
+   {
+    "title": "200g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000311_2-avt-coffee-premium.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "440",
+    "compare_at_price": "440",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000312_2-avt-coffee-premium.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000310_2-avt-coffee-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000310-2_1-avt-coffee-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000310-3_1-avt-coffee-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000310-4_1-avt-coffee-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000311_2-avt-coffee-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000312_2-avt-coffee-premium.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a truly exceptional coffee experience with AVT Premium Coffee. This expertly crafted blend of 53% coffee and 47% chicory delivers a rich, full-bodied flavour that will delight your senses. Infused with a premium aroma, this coffee is made from carefully selected, high-quality Robusta and Arabica beans, ensuring an exceptional taste and smooth texture. Whether you prefer the traditional filter coffee or a quick instant brew, this premium roast and ground blend offers versatile brewing options to suit your preferences. Enjoy the convenience of a satisfying cup of coffee that is perfect for waking up your senses or providing a much-needed pick-me-up. With its deep, rich flavour and luxurious mouthfeel, AVT Premium Coffee is a true indulgence for coffee enthusiasts seeking quality and consistency in their daily brew.",
+   "ingredients": "This Mixture Contains Coffee 60% And Chicory 40%.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (kcal)": "330 kcal",
+    "Protein (g)": "10 g",
+    "Carbohydrate (g)": "55 g",
+    "Fat (g)": "7.5 g",
+    "Saturated (g)": "3.1 g",
+    "Polyunsaturated (g)": "3.0 g",
+    "Monounsaturated (g)": "1.2 g",
+    "Trans Fat (g)": "Traces",
+    "Cholesterol (g)": "Nil"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "A.V. Thomas & Co. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014041000453"
+  }
+ }
+]

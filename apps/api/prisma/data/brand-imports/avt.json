@@ -1,0 +1,86 @@
+{
+  "brand": "AVT",
+  "manufacturer": "A.V. Thomas Leather & Allied Products Pvt. Ltd., Chennai",
+  "feed": "avt-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/avt/logo-322264b3.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#1F7A3A",
+  "namePrefix": "AVT ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Premium\\ CTC\\ Dust\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ CTC\\ Dust\\ Tea\\ Jar$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ CTC\\ Dust\\ Tea\\ Carton$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Gold\\ Cup\\ Premium\\ Dust\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Select\\ CTC\\ Dust\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Leaf\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Pure\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Pure\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Premium\\ Coffee\\ Chicory\\ Blend$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    }
+  ]
+}
