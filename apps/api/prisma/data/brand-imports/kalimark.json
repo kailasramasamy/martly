@@ -1,0 +1,38 @@
+{
+  "brand": "Kalimark",
+  "manufacturer": "Kali Aerated Water Works, Virudhunagar, Tamil Nadu",
+  "feed": "kalimark-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/1bceedb8-d128-403a-afec-c0b5cbca9207.webp",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bovonto$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Cola"
+      ]
+    },
+    {
+      "match": "^Kalimark\\ Vibro\\ Paneer\\ Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Kalimark\\ Ginger\\ Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    }
+  ]
+}
