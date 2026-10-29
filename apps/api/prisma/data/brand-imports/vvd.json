@@ -1,0 +1,118 @@
+{
+  "brand": "VVD",
+  "manufacturer": "V.V.V. & Sons Edible Oils Ltd., Virudhunagar, Tamil Nadu",
+  "feed": "vvd-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/0311fa39-ac4c-478a-83b8-2d9b43ddc8a9.webp",
+  "themeColor": "#00843D",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "VVD ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Gold\\ Coconut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "match": "^Gold\\ Agmark\\ Coconut\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "match": "^Piriyam\\ Gingelly\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    },
+    {
+      "match": "^Pure\\ Drops\\ Sesame\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    },
+    {
+      "match": "^Pure\\ Drops\\ Sesame\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    },
+    {
+      "match": "^Piriyam\\ Crystal\\ Salt\\ Iodised$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Iodised Salt"
+      ]
+    },
+    {
+      "match": "^Ayush\\ Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Ayush\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Ayush\\ Curry\\ Masala\\ Millet\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Ayush\\ Magic\\ Masala\\ Millet\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Ayush\\ Schezwan\\ Masala\\ Millet\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Veda\\ Pancha\\ Deepam\\ Lamp\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Oil"
+      ]
+    },
+    {
+      "match": "^Veda\\ Pancha\\ Deepam\\ Lamp\\ Oil\\ Pouch$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Oil"
+      ]
+    }
+  ]
+}
