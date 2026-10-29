@@ -1,0 +1,70 @@
+{
+  "brand": "Bayars",
+  "manufacturer": "Bayars Coffee, Coimbatore",
+  "feed": "bayars-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/bayars/logo-4848d04b.png",
+  "themeColor": "#D7141A",
+  "themeColorSecondary": "#2E9E47",
+  "namePrefix": "Bayars ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^80\\ Degree\\ Premium\\ Filter\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Special\\ Gold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Brownie\\ Special\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Samrat\\ Pure\\ Filter\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Delight\\ Filter\\ Coffee\\ Decoction$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Instant\\ Strong\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    }
+  ]
+}
