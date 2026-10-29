@@ -13,6 +13,8 @@ module.exports = function withDefaultIconAlias(config) {
     const application = AndroidConfig.Manifest.getMainApplicationOrThrow(mod.modResults);
     const mainActivity = AndroidConfig.Manifest.getMainActivityOrThrow(mod.modResults);
     const launcherFilter = mainActivity["intent-filter"].find(isLauncherFilter);
+    // prebuild reuses an existing android/, where an earlier run already moved the filter
+    if (!launcherFilter) return mod;
     mainActivity["intent-filter"] = mainActivity["intent-filter"].filter((filter) => filter !== launcherFilter);
 
     application["activity-alias"] = [
