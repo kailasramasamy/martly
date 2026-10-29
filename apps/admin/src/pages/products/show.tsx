@@ -1,7 +1,7 @@
 import { can } from "@martly/shared/permissions";
 import { Show } from "@refinedev/antd";
 import { useShow, useGetIdentity } from "@refinedev/core";
-import { Typography, Image, Table, Tag, Card, Descriptions, Row, Col, Space, Button, Alert, Badge } from "antd";
+import { Typography, Table, Tag, Card, Descriptions, Row, Col, Space, Button, Alert, Badge } from "antd";
 import { useNavigate } from "react-router";
 import {
   InfoCircleOutlined,
@@ -19,6 +19,7 @@ import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../../components/ReadableSection";
 import { OwnerPickCard } from "./owner-pick";
 import { DraftBanner } from "./draft-banner";
+import { ProductImages } from "./product-images";
 
 const { Text } = Typography;
 
@@ -107,6 +108,9 @@ export const ProductShow = () => {
   // SUPER_ADMIN can edit master only; org members with edit permission can edit their org products only
   const canEdit = isSuperAdmin ? isMasterProduct : can(identity, "products", "edit") && !isMasterProduct;
 
+  // The main image leads the gallery; older products may only have imageUrl
+  const gallery: string[] = [...new Set([record.imageUrl, ...(record.images ?? [])].filter(Boolean))];
+
   const foodTypeConfig = record.foodType ? FOOD_TYPE_CONFIG[record.foodType as string] : null;
   const productTypeConfig = record.productType ? PRODUCT_TYPE_CONFIG[record.productType as string] : null;
   const storageTypeConfig = record.storageType ? STORAGE_TYPE_CONFIG[record.storageType as string] : null;
@@ -188,28 +192,16 @@ export const ProductShow = () => {
                 style={{ marginBottom: 16 }}
                 extra={
                   <Badge
-                    count={
-                      (record.imageUrl ? 1 : 0) + (record.images?.length ?? 0)
-                    }
+                    count={gallery.length}
                     style={{ backgroundColor: "#0d9488" }}
                     overflowCount={99}
                   />
                 }
               >
-                <Image.PreviewGroup>
-                  {record.imageUrl && (
-                    <div style={{ marginBottom: 12 }}>
-                      <Image width="100%" style={{ maxWidth: 300, borderRadius: 6 }} src={record.imageUrl} />
-                    </div>
-                  )}
-                  {record.images?.length > 0 && (
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                      {record.images.map((url: string, i: number) => (
-                        <Image key={i} width={100} height={100} style={{ borderRadius: 6, objectFit: "cover" }} src={url} />
-                      ))}
-                    </div>
-                  )}
-                </Image.PreviewGroup>
+                <ProductImages productId={String(record.id)} images={gallery} canEdit={canEdit} onSaved={() => void query.refetch()} />
+                {canEdit && gallery.length > 1 && (
+                  <Text type="secondary" style={{ display: "block", marginTop: 8, fontSize: 12 }}>Drag to reorder. The first photo is the main image.</Text>
+                )}
               </Card>
             </Col>
           )}

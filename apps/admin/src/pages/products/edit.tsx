@@ -188,7 +188,7 @@ export const ProductEdit = () => {
 
                     <Card title={sectionTitle(<PictureOutlined />, "Additional Images")} size="small" style={{ marginBottom: 16 }}>
                       <Form.Item name="images" style={{ marginBottom: 0 }}>
-                        <MultiImageUpload />
+                        <MultiImageUpload acceptPaste />
                       </Form.Item>
                     </Card>
                     </Col>

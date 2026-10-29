@@ -1,19 +1,34 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Upload, message } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import type { UploadFile, UploadProps } from "antd/es/upload";
-
-const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:7001";
-const TOKEN_KEY = "martly_admin_token";
+import { postImage } from "./ImageUpload";
 
 interface MultiImageUploadProps {
   value?: string[];
   onChange?: (urls: string[]) => void;
   max?: number;
+  /** Also takes images pasted anywhere on the page (one paste target per page) */
+  acceptPaste?: boolean;
 }
 
-export const MultiImageUpload = ({ value, onChange, max = 10 }: MultiImageUploadProps) => {
+const uploadImage = async (file: Blob) => (await postImage<{ url: string }>("/api/v1/uploads", file)).url;
+
+const doneUrls = (list: UploadFile[]) =>
+  list
+    .filter((f) => f.status === "done")
+    .map((f) => f.url || (f.response as { url?: string })?.url)
+    .filter((u): u is string => !!u);
+
+export const MultiImageUpload = ({ value, onChange, max = 10, acceptPaste = false }: MultiImageUploadProps) => {
   const [fileList, setFileList] = useState<UploadFile[]>([]);
+  const listRef = useRef(fileList);
+
+  const update = (next: UploadFile[]) => {
+    listRef.current = next;
+    setFileList(next);
+    onChange?.(doneUrls(next));
+  };
 
   useEffect(() => {
     if (value && value.length > 0) {
@@ -24,46 +39,48 @@ export const MultiImageUpload = ({ value, onChange, max = 10 }: MultiImageUpload
         status: "done" as const,
         url,
       }));
-      setFileList([...fromValue, ...existing]);
+      listRef.current = [...fromValue, ...existing];
+      setFileList(listRef.current);
     }
   // Only sync from value on mount or when value reference changes from outside
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const customRequest: UploadProps["customRequest"] = async (options) => {
-    const { file, onSuccess, onError } = options;
-    const formData = new FormData();
-    formData.append("file", file as Blob);
+  useEffect(() => {
+    if (!acceptPaste) return;
+    const onPaste = async (e: ClipboardEvent) => {
+      const files = Array.from(e.clipboardData?.files ?? []).filter((f) => f.type.startsWith("image/"));
+      if (files.length === 0) return;
+      e.preventDefault();
+      const room = max - listRef.current.length;
+      if (room <= 0) return void message.warning(`Up to ${max} images`);
+      await Promise.all(files.slice(0, room).map(async (file) => {
+        const uid = `paste-${crypto.randomUUID()}`;
+        update([...listRef.current, { uid, name: file.name || "pasted image", status: "uploading" }]);
+        try {
+          const url = await uploadImage(file);
+          update(listRef.current.map((f) => (f.uid === uid ? { ...f, status: "done", url, thumbUrl: url } : f)));
+          message.success("Pasted image added");
+        } catch {
+          update(listRef.current.filter((f) => f.uid !== uid));
+          message.error("Image upload failed");
+        }
+      }));
+    };
+    window.addEventListener("paste", onPaste);
+    return () => window.removeEventListener("paste", onPaste);
+  }, [acceptPaste, max]);
 
+  const customRequest: UploadProps["customRequest"] = async ({ file, onSuccess, onError }) => {
     try {
-      const token = localStorage.getItem(TOKEN_KEY);
-      const res = await fetch(`${API_URL}/api/v1/uploads`, {
-        method: "POST",
-        headers: token ? { Authorization: `Bearer ${token}` } : {},
-        body: formData,
-      });
-
-      if (!res.ok) throw new Error("Upload failed");
-
-      const json = await res.json();
-      const url = json.data.url as string;
-      onSuccess?.({ url });
+      onSuccess?.({ url: await uploadImage(file as Blob) });
     } catch (err) {
       message.error("Image upload failed");
       onError?.(err as Error);
     }
   };
 
-  const handleChange: UploadProps["onChange"] = ({ fileList: newFileList }) => {
-    setFileList(newFileList);
-
-    const urls = newFileList
-      .filter((f) => f.status === "done")
-      .map((f) => f.url || (f.response as { url?: string })?.url)
-      .filter((u): u is string => !!u);
-
-    onChange?.(urls);
-  };
+  const handleChange: UploadProps["onChange"] = ({ fileList: newFileList }) => update(newFileList);
 
   return (
     <Upload
@@ -78,7 +95,7 @@ export const MultiImageUpload = ({ value, onChange, max = 10 }: MultiImageUpload
       {fileList.length < max && (
         <div>
           <PlusOutlined />
-          <div style={{ marginTop: 8 }}>Upload</div>
+          <div style={{ marginTop: 8 }}>{acceptPaste ? "Upload or paste" : "Upload"}</div>
         </div>
       )}
     </Upload>
