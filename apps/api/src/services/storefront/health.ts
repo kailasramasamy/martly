@@ -22,7 +22,8 @@ const DEALS_BOOST = 1.3;
 const DEAL_SECTIONS: HomeSectionType[] = ["BUY_GET_DEALS", "DEALS", "PRICE_BAND_DEALS", "HERO_CARDS"];
 
 const cache = new Map<string, { at: number; value: StorefrontHealth }>();
-const today = (now: Date) => new Date(`${istDateKey(now)}T00:00:00Z`);
+/** The snapshot date for a moment: its IST day */
+export const today = (now: Date) => new Date(`${istDateKey(now)}T00:00:00Z`);
 
 /** Score out of 100 over the checks that apply, overall and per group */
 function scoreOf(checks: StorefrontCheckResult[]) {

@@ -925,6 +925,7 @@ model Product {
 
   @@index([productType])
   @@index([organizationId])
+  @@index([brandId])
   @@index([tags], type: Gin)
   @@index([searchText(ops: raw("gin_trgm_ops"))], type: Gin, map: "products_search_text_trgm_idx")
   // Also products_search_text_fts_idx on to_tsvector('english', search_text) (expression index, migration 20261029210000)
@@ -2846,11 +2847,13 @@ model HomeSectionStatDaily {
 
 /// A store's storefront health score once a day, for its trend
 model StorefrontHealthSnapshot {
-  storeId String   @map("store_id")
-  date    DateTime @db.Date
-  score   Int
+  storeId   String   @map("store_id")
+  date      DateTime @db.Date
+  score     Int
   /// Score per group, e.g. { LOOKS: 40, DEALS: 75 }
-  groups  Json
+  groups    Json
+  /// When the score was last worked out; the scheduler refreshes a store's snapshot once it's 6 hours old
+  updatedAt DateTime @default(now()) @updatedAt @map("updated_at")
 
   store Store @relation(fields: [storeId], references: [id], onDelete: Cascade)
 

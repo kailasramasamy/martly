@@ -5,7 +5,8 @@ import { requirePermission } from "../../middleware/authorize.js";
 import { Permission } from "@martly/shared/constants";
 import { getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { attentionFor } from "../../services/attention.js";
-import { addDays, istDateKey, istDay } from "../../services/ist-day.js";
+import { addDays, istDay } from "../../services/ist-day.js";
+import { customerCounts, dailyTotals, ordersInScope } from "../../services/dashboard-stats.js";
 
 interface KPIs {
   totalRevenue: number;
@@ -67,15 +68,15 @@ export async function dashboardRoutes(app: FastifyInstance) {
       // Org scoping
       const orgStoreIds = await getOrgStoreIds(request, app.prisma);
       const storeFilter = storeId ? { storeId } : orgStoreIds !== undefined ? { storeId: { in: orgStoreIds } } : {};
+      const scope = ordersInScope(storeId, orgStoreIds);
 
       // ── KPIs: Current Period ─────────────────────────────
       const [
         currentOrderCount,
         currentRevenueAgg,
-        currentCustomerCount,
         previousOrderCount,
         previousRevenueAgg,
-        previousCustomerCount,
+        customers,
       ] = await Promise.all([
         // Current period orders
         app.prisma.order.count({
@@ -86,12 +87,6 @@ export async function dashboardRoutes(app: FastifyInstance) {
           where: { ...storeFilter, createdAt: { gte: periodStart } },
           _sum: { totalAmount: true },
         }),
-        // Current period unique customers
-        app.prisma.order.findMany({
-          where: { ...storeFilter, createdAt: { gte: periodStart } },
-          select: { userId: true },
-          distinct: ["userId"],
-        }),
         // Previous period orders
         app.prisma.order.count({
           where: { ...storeFilter, createdAt: { gte: previousStart, lt: periodStart } },
@@ -101,12 +96,8 @@ export async function dashboardRoutes(app: FastifyInstance) {
           where: { ...storeFilter, createdAt: { gte: previousStart, lt: periodStart } },
           _sum: { totalAmount: true },
         }),
-        // Previous period unique customers
-        app.prisma.order.findMany({
-          where: { ...storeFilter, createdAt: { gte: previousStart, lt: periodStart } },
-          select: { userId: true },
-          distinct: ["userId"],
-        }),
+        // Unique customers, both periods
+        customerCounts(app.prisma, scope, periodStart, previousStart),
       ]);
 
       const currentRevenue = currentRevenueAgg._sum.totalAmount?.toNumber() ?? 0;
@@ -121,34 +112,14 @@ export async function dashboardRoutes(app: FastifyInstance) {
         previousOrders: previousOrderCount,
         averageOrderValue: Math.round(currentAOV * 100) / 100,
         previousAOV: Math.round(previousAOV * 100) / 100,
-        totalCustomers: currentCustomerCount.length,
-        previousCustomers: previousCustomerCount.length,
+        totalCustomers: customers.current,
+        previousCustomers: customers.previous,
       };
 
       // ── Time Series ──────────────────────────────────────
-      const periodOrders = await app.prisma.order.findMany({
-        where: { ...storeFilter, createdAt: { gte: periodStart } },
-        select: { createdAt: true, totalAmount: true },
-        orderBy: { createdAt: "asc" },
-      });
-
-      const dayMap = new Map<string, { count: number; revenue: number }>();
-      for (let i = days - 1; i >= 0; i--) dayMap.set(addDays(todayKey, -i), { count: 0, revenue: 0 });
-      for (const order of periodOrders) {
-        const key = istDateKey(order.createdAt);
-        const entry = dayMap.get(key);
-        if (entry) {
-          entry.count += 1;
-          entry.revenue += order.totalAmount.toNumber();
-        }
-      }
-
-      const revenueOverTime: { date: string; revenue: number }[] = [];
-      const ordersOverTime: { date: string; count: number }[] = [];
-      for (const [date, data] of dayMap) {
-        revenueOverTime.push({ date, revenue: Math.round(data.revenue * 100) / 100 });
-        ordersOverTime.push({ date, count: data.count });
-      }
+      const daily = await dailyTotals(app.prisma, scope, periodStart, todayKey, days);
+      const revenueOverTime = daily.map(({ date, revenue }) => ({ date, revenue }));
+      const ordersOverTime = daily.map(({ date, count }) => ({ date, count }));
 
       // ── Breakdowns ───────────────────────────────────────
       const [statusBreakdown, paymentBreakdown, fulfillmentBreakdown] = await Promise.all([
