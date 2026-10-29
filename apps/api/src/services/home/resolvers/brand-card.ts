@@ -1,6 +1,7 @@
 import { HOME_BRAND_CARD_PRODUCTS, WEB_BRAND_CARD_PRODUCTS } from "@martly/shared/constants";
 import { parseHomeSectionConfig } from "@martly/shared/schemas";
 import { withAllSizes } from "../../store-feed.js";
+import { recentSales, salesTable } from "../../product-sales.js";
 import { sectionBase, type SectionResolver } from "../types.js";
 import { liveCollection } from "./collection.js";
 
@@ -19,15 +20,15 @@ export const brandCard: SectionResolver = async (ctx, entry) => {
     entry.collectionId ? liveCollection(ctx, entry.collectionId) : null,
   ]);
   if (!brand || (entry.collectionId && !collection)) return null;
-  const since = new Date(ctx.now.getTime() - SALES_WINDOW_DAYS * 86_400_000);
+  // The store's recent sales are counted every few minutes, not joined from its order lines on every Home load
+  const sales = await recentSales(ctx.prisma, ctx.store.id, SALES_WINDOW_DAYS);
   const ranked = await ctx.prisma.$queryRaw<{ id: string }[]>`
     SELECT p.id FROM products p
-    LEFT JOIN order_items oi ON oi.product_id = p.id
-      AND oi.order_id IN (SELECT o.id FROM orders o WHERE o.store_id = ${ctx.store.id} AND o.created_at >= ${since})
+    LEFT JOIN ${salesTable(sales)} sold ON sold.product_id = p.id
     WHERE p.brand_id = ${brand.id} AND p.is_active
       AND EXISTS (SELECT 1 FROM store_products sp WHERE sp.product_id = p.id AND sp.store_id = ${ctx.store.id} AND sp.is_active AND sp.stock > 0)
       AND (${!collection} OR EXISTS (SELECT 1 FROM collection_items ci WHERE ci.collection_id = ${collection?.id ?? ""} AND ci.product_id = p.id))
-    GROUP BY p.id ORDER BY COUNT(oi.id) DESC, md5(p.id || ${ctx.now.toISOString().slice(0, 10)})
+    ORDER BY COALESCE(sold.n, 0) DESC, md5(p.id || ${ctx.now.toISOString().slice(0, 10)})
     LIMIT ${ctx.shelves === "grid" ? HOME_BRAND_CARD_PRODUCTS : WEB_BRAND_CARD_PRODUCTS}`;
   if (ranked.length < HOME_BRAND_CARD_PRODUCTS) return null;
   return {
