@@ -1,4 +1,5 @@
 import type { AuthProvider } from "@refinedev/core";
+import { closeSharedSocket } from "../hooks/sharedSocket";
 
 const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:7001";
 const TOKEN_KEY = "martly_admin_token";
@@ -18,33 +19,32 @@ export interface OrgSummary {
  */
 let refreshPromise: Promise<string | null> | null = null;
 
+async function requestRefresh(): Promise<string | null> {
+  const refreshToken = localStorage.getItem(REFRESH_TOKEN_KEY);
+  if (!refreshToken) return null;
+
+  try {
+    const response = await fetch(`${API_URL}/api/v1/auth/refresh`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ refreshToken }),
+    });
+
+    if (!response.ok) return null;
+
+    const { data } = await response.json();
+    localStorage.setItem(TOKEN_KEY, data.accessToken);
+    return data.accessToken as string;
+  } catch {
+    return null;
+  }
+}
+
 export async function refreshAccessToken(): Promise<string | null> {
-  // Deduplicate concurrent refresh calls
-  if (refreshPromise) return refreshPromise;
-
-  refreshPromise = (async () => {
-    const refreshToken = localStorage.getItem(REFRESH_TOKEN_KEY);
-    if (!refreshToken) return null;
-
-    try {
-      const response = await fetch(`${API_URL}/api/v1/auth/refresh`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ refreshToken }),
-      });
-
-      if (!response.ok) return null;
-
-      const { data } = await response.json();
-      localStorage.setItem(TOKEN_KEY, data.accessToken);
-      return data.accessToken as string;
-    } catch {
-      return null;
-    } finally {
-      refreshPromise = null;
-    }
-  })();
-
+  // Deduplicate concurrent refresh calls; cleared however the refresh ends, so a later call (e.g. after signing in) tries again
+  refreshPromise ??= requestRefresh().finally(() => {
+    refreshPromise = null;
+  });
   return refreshPromise;
 }
 
@@ -115,6 +115,7 @@ export const authProvider: AuthProvider = {
   },
 
   logout: async () => {
+    closeSharedSocket();
     localStorage.removeItem(TOKEN_KEY);
     localStorage.removeItem(REFRESH_TOKEN_KEY);
     localStorage.removeItem(PENDING_ORGS_KEY);
