@@ -33,7 +33,7 @@ function kindOffers(kind: StoreOfferKind, query: { storeId: string; status: Stor
   return Prisma.sql`SELECT sp.id, ${kind} AS kind, ${rank}::int AS rank, ${end ?? Prisma.sql`NULL::timestamp`} AS ends, p.name
     FROM store_products sp JOIN products p ON p.id = sp.product_id
     WHERE sp.store_id = ${query.storeId} AND ${set} AND ${inWindow(kind, query.status, now)}
-      AND (${query.q ?? null}::text IS NULL OR p.name ILIKE ${query.q ? likeTerm(query.q) : null})`;
+      ${query.q ? Prisma.sql`AND p.name ILIKE ${likeTerm(query.q)}` : Prisma.empty}`;
 }
 
 const SELECT = {

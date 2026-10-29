@@ -1,6 +1,6 @@
 import type { StoreWalkDepartment, StoreWalkStop } from "@martly/shared/types";
 import type { StoreWalkRouteInput } from "@martly/shared/schemas";
-import type { PrismaClient } from "../../generated/prisma/client.js";
+import { Prisma, type PrismaClient } from "../../generated/prisma/client.js";
 import { recentStoreSales } from "./home/most-bought.js";
 import { dueInStock } from "./reorder.js";
 import { searchAisleProducts } from "./search.js";
@@ -179,8 +179,8 @@ async function popularIn(prisma: PrismaClient, storeId: string, { categoryId, su
       FROM store_products sp
       JOIN products p ON p.id = sp.product_id AND p.is_active AND p.image_url IS NOT NULL
       JOIN subcategories s ON s.id = p.subcategory_id AND s.category_id = ${categoryId}
-        AND (${subcategoryId ?? null}::text IS NULL OR s.id = ${subcategoryId ?? null})
-        AND (${brandId ?? null}::text IS NULL OR p.brand_id = ${brandId ?? null})
+        ${subcategoryId ? Prisma.sql`AND s.id = ${subcategoryId}` : Prisma.empty}
+        ${brandId ? Prisma.sql`AND p.brand_id = ${brandId}` : Prisma.empty}
       LEFT JOIN brands b ON b.id = p.brand_id
       LEFT JOIN (${recentStoreSales(storeId)}) sales ON sales.product_id = p.id
       WHERE sp.store_id = ${storeId} AND sp.is_active AND sp.stock - sp.reserved_stock > 0
@@ -236,7 +236,7 @@ function stockedBrands(prisma: PrismaClient, storeId: string, { categoryId, subc
       SELECT DISTINCT p.id, p.brand_id FROM store_products sp
       JOIN products p ON p.id = sp.product_id AND p.is_active AND p.brand_id IS NOT NULL
       JOIN subcategories s ON s.id = p.subcategory_id AND s.category_id = ${categoryId}
-        AND (${subcategoryId ?? null}::text IS NULL OR s.id = ${subcategoryId ?? null})
+        ${subcategoryId ? Prisma.sql`AND s.id = ${subcategoryId}` : Prisma.empty}
       WHERE sp.store_id = ${storeId} AND sp.is_active AND sp.stock - sp.reserved_stock > 0
     ) stocked
     JOIN brands b ON b.id = stocked.brand_id

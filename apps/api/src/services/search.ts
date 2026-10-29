@@ -59,9 +59,11 @@ const inScope = ({ storeId, listedOnly, collectionId, aisle }: SearchScope) => {
     return Prisma.sql`${store} AND EXISTS (SELECT 1 FROM collection_items ci WHERE ci.collection_id = ${collectionId} AND ci.product_id = p.id)`;
   }
   if (aisle) {
+    // Only the filters given: a `$x IS NULL OR …` filter makes Postgres's cached generic plan expect one product,
+    // and the nested loops it picks for that take 20s+ once a pooled connection switches to it
     return Prisma.sql`${store} AND EXISTS (SELECT 1 FROM subcategories sc WHERE sc.id = p.subcategory_id AND sc.category_id = ${aisle.categoryId})
-      AND (${aisle.subcategoryId ?? null}::text IS NULL OR p.subcategory_id = ${aisle.subcategoryId ?? null})
-      AND (${aisle.brandId ?? null}::text IS NULL OR p.brand_id = ${aisle.brandId ?? null})`;
+      ${aisle.subcategoryId ? Prisma.sql`AND p.subcategory_id = ${aisle.subcategoryId}` : Prisma.empty}
+      ${aisle.brandId ? Prisma.sql`AND p.brand_id = ${aisle.brandId}` : Prisma.empty}`;
   }
   return store;
 };

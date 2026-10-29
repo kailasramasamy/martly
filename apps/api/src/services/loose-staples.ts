@@ -1,7 +1,7 @@
 import { STORE_BRAND_DEPARTMENT_SLUG } from "@martly/shared/constants";
 import type { SaveLooseStaplesInput } from "@martly/shared/schemas";
 import type { LooseStapleAisle, LooseStapleItem, LooseStaplePriceSource } from "@martly/shared/types";
-import type { PrismaClient } from "../../generated/prisma/client.js";
+import { Prisma, type PrismaClient } from "../../generated/prisma/client.js";
 import { recordOpeningStock } from "./stock-ledger.js";
 
 // Loose goods sell a little under the branded packs beside them
@@ -31,7 +31,7 @@ function stapleRows(prisma: PrismaClient, store: { id: string; organizationId: s
     LEFT JOIN store_products sp ON sp.variant_id = v.id AND sp.store_id = ${store.id}
     WHERE d.slug = ${STORE_BRAND_DEPARTMENT_SLUG} AND p.brand_id IS NULL AND p.is_active
       AND (p.organization_id IS NULL OR p.organization_id = ${store.organizationId})
-      AND (${variantIds ?? null}::text[] IS NULL OR v.id = ANY(${variantIds ?? null}::text[]))
+      ${variantIds ? Prisma.sql`AND v.id = ANY(${variantIds}::text[])` : Prisma.empty}
     ORDER BY c.sort_order, s.sort_order, p.name,
       v.unit_value * CASE v.unit_type WHEN 'GRAM' THEN 0.001 WHEN 'ML' THEN 0.001 ELSE 1 END NULLS LAST`;
 }
