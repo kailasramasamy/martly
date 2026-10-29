@@ -24,15 +24,24 @@ export function activeDealRows(prisma: PrismaClient, storeId: string, now: Date)
   });
 }
 
-/** The shopper's past orders at this store, one line per product, newest first. */
-export function pastOrderLines(prisma: PrismaClient, storeId: string, userId: string) {
-  return prisma.orderItem.findMany({
-    where: { order: { userId, storeId, status: { in: ["DELIVERED", "CONFIRMED"] } } },
-    distinct: ["productId"],
-    orderBy: { order: { createdAt: "desc" } },
-    take: FEED_ROW_LIMIT,
+/** The shopper's past orders at this store, one line per product (from its latest order), newest first. */
+export async function pastOrderLines(prisma: PrismaClient, storeId: string, userId: string) {
+  // DISTINCT ON in the database: Prisma's `distinct` reads every line the shopper ever ordered and dedupes them in memory
+  const latest = await prisma.$queryRaw<{ id: string }[]>`
+    SELECT id FROM (
+      SELECT DISTINCT ON (oi.product_id) oi.id, o.created_at
+      FROM order_items oi JOIN orders o ON o.id = oi.order_id
+      WHERE o.user_id = ${userId} AND o.store_id = ${storeId} AND o.status IN ('DELIVERED', 'CONFIRMED')
+      ORDER BY oi.product_id, o.created_at DESC, oi.id
+    ) lines
+    ORDER BY created_at DESC, id
+    LIMIT ${FEED_ROW_LIMIT}`;
+  const lines = await prisma.orderItem.findMany({
+    where: { id: { in: latest.map((l) => l.id) } },
     include: { storeProduct: { include: STORE_PRODUCT_INCLUDE } },
   });
+  const byId = new Map(lines.map((l) => [l.id, l]));
+  return latest.map((l) => byId.get(l.id)!);
 }
 
 // Related products from the same aisles, then popular ones from anywhere, to fill the row
