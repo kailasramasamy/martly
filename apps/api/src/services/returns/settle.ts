@@ -2,6 +2,7 @@ import type { Prisma } from "../../../generated/prisma/client.js";
 import { applyMovement } from "../stock-ledger.js";
 import { commissionRefund } from "../ledger/commission.js";
 import { postEntries } from "../ledger/post.js";
+import { returnPlatformEntries } from "../ledger/order.js";
 import { formatOrderRef } from "../notify/copy.js";
 
 type Tx = Prisma.TransactionClient;
@@ -26,7 +27,8 @@ export interface SettleOutcome {
 /**
  * Refund the approved amount once; a concurrent settle that lost the claim refunds nothing. A wallet refund is
  * Martly's money, so it is debited to the store; cash handed over with the item comes from the store's own till.
- * Either way Martly's commission on the refunded amount goes back to the store.
+ * Either way Martly's commission on the refunded amount goes back to the store, and Martly's coupon and credit on the
+ * returned units come back off it.
  */
 async function refund(tx: Tx, rr: ReturnWithItems, inCash: boolean): Promise<number | null> {
   const claim = await tx.returnRequest.updateMany({ where: { id: rr.id, refundedAt: null }, data: { refundedAt: new Date() } });
@@ -34,6 +36,7 @@ async function refund(tx: Tx, rr: ReturnWithItems, inCash: boolean): Promise<num
   const amount = Number(rr.approvedAmount ?? 0);
   const commission = amount > 0 ? await commissionRefund(tx, rr, amount) : null;
   if (commission) await postEntries(tx, [commission]);
+  if (amount > 0) await postEntries(tx, await returnPlatformEntries(tx, rr));
   if (amount > 0 && !inCash) {
     const user = await tx.user.update({ where: { id: rr.userId }, data: { walletBalance: { increment: amount } } });
     await tx.walletTransaction.create({

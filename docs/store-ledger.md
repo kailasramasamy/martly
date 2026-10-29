@@ -238,6 +238,7 @@ Customers get no new notifications; the refund notifications already exist. Ride
 - **Replacement sent free:** no money entry. Its stock cost stays with the store.
 - **Order paid partly by wallet and partly by COD:** `SALE_WALLET` only.
 - **Platform coupon on a COD order:** `PLATFORM_COUPON` credit, since the store collected less cash.
+- **Martly coupon or credit with goods coming back:** Martly pays its coupon and credit only on goods the customer kept. A door hand-back scales `PLATFORM_COUPON` and `PLATFORM_CREDIT` to the kept share of the items by price. A refunded return posts them negative (source `RETURN`) for the returned units' share, never more than delivery posted. Example: ₹280 of items with ₹50 Martly credit, ₹130 handed back → `PLATFORM_CREDIT` +₹26.79; returning the other ₹150 later → −₹26.79.
 - **Concurrent posting:** a duplicate `(type, sourceId)` is ignored rather than throwing, so retries are safe.
 - **Store moved between organizations or deactivated:** entries stay with the original organization, and the settlement still pays out.
 - **Rounding:** all amounts are in paise-safe `Decimal`, and statement totals equal the sum of their lines.

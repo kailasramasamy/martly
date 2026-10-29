@@ -161,12 +161,23 @@ export function paidShare(order: DiscountedOrder): number {
   return Math.max(0, itemsTotal - Number(order.couponDiscount ?? 0) - Number(order.creditDiscount ?? 0)) / itemsTotal;
 }
 
-/** What units handed back at the door are worth: what they were paid for (free units averaged in), less their share of
- * the order's coupon and credit */
-export function refusedValue(order: DiscountedOrder, refused: readonly { orderItemId: string; quantity: number }[]): number {
-  const price = new Map(order.items.map((i) => [i.id, paidPerUnit(i)]));
-  const value = refused.reduce((sum, r) => sum + (price.get(r.orderItemId) ?? 0) * r.quantity, 0);
-  return Math.round(value * paidShare(order) * 100) / 100;
+type Units = readonly { orderItemId: string; quantity: number }[];
+
+/** What these units cost at the order's item prices (free units averaged in), before any coupon or credit */
+export function unitsValue(items: DiscountedOrder["items"], units: Units): number {
+  const price = new Map(items.map((i) => [i.id, paidPerUnit(i)]));
+  return units.reduce((sum, u) => sum + (price.get(u.orderItemId) ?? 0) * u.quantity, 0);
+}
+
+/** What units handed back at the door are worth: what they were paid for, less their share of the order's coupon and credit */
+export function refusedValue(order: DiscountedOrder, refused: Units): number {
+  return Math.round(unitsValue(order.items, refused) * paidShare(order) * 100) / 100;
+}
+
+/** The part of the items, by price, the customer kept after handing these back; Martly's coupon and credit follow it */
+export function keptShare(order: DiscountedOrder, refused: Units): number {
+  const itemsTotal = order.items.reduce((sum, i) => sum + Number(i.totalPrice), 0);
+  return itemsTotal > 0 ? Math.max(0, 1 - unitsValue(order.items, refused) / itemsTotal) : 1;
 }
 
 export type ReturnTone = "pending" | "active" | "done" | "declined" | "closed";

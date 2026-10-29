@@ -898,7 +898,7 @@ export async function orderRoutes(app: FastifyInstance) {
         if (body.status === "DELIVERED") {
           const referral = referralId ? { id: referralId, referrerReward: referralReferrerReward, refereeReward: referralRefereeReward } : null;
           await spendCredits(tx, existing.id);
-          await postDeliveryEntries(tx, existing, refusal ?? { refusedAmount: 0, walletCredit: 0 }, referral);
+          await postDeliveryEntries(tx, existing, refusal ?? { refusedAmount: 0, walletCredit: 0, keptShare: 1 }, referral);
         }
 
         const refunds = body.status === "CANCELLED" ? await applyCancelRefunds(tx, existing, { reverseEarned: true }) : null;

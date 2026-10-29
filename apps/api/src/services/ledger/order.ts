@@ -1,4 +1,5 @@
 import { RETURN_WINDOW_HOURS } from "@martly/shared/constants";
+import { unitsValue } from "@martly/shared/order-flow";
 import type { Prisma } from "../../../generated/prisma/client.js";
 import { formatOrderRef } from "../notify/copy.js";
 import { deliveryCommission, keptParts } from "./commission.js";
@@ -25,6 +26,8 @@ interface DeliveredOrder {
 interface DoorRefusal {
   refusedAmount: number;
   walletCredit: number;
+  /** The part of the items, by price, the customer kept */
+  keptShare: number;
 }
 
 interface CompletedReferral {
@@ -41,8 +44,9 @@ async function deliverySourceId(tx: Tx, orderId: string) {
 
 /**
  * Sales are earned on delivery: money Martly took for the order (online, wallet, its own coupon and credit) becomes owed
- * to the store once the return window has passed, less Martly's commission on what the customer kept. Wallet
- * credits for units handed back and referral rewards come straight off the balance.
+ * to the store once the return window has passed, less Martly's commission on what the customer kept. Martly's coupon
+ * and credit cover only the goods kept, since the store has the rest back. Wallet credits for units handed back and
+ * referral rewards come straight off the balance.
  */
 export async function postDeliveryEntries(tx: Tx, order: DeliveredOrder, refusal: DoorRefusal, referral: CompletedReferral | null) {
   const store = await tx.store.findUniqueOrThrow({ where: { id: order.storeId }, select: { organizationId: true } });
@@ -58,8 +62,8 @@ export async function postDeliveryEntries(tx: Tx, order: DeliveredOrder, refusal
   const coupon = order.couponId
     ? await tx.coupon.findUnique({ where: { id: order.couponId }, select: { organizationId: true } })
     : null;
-  const platformCoupon = coupon && coupon.organizationId === null ? Number(order.couponDiscount ?? 0) : 0;
-  const platformCredit = await martlyCreditOn(tx, order.id);
+  const platformCoupon = coupon && coupon.organizationId === null ? Number(order.couponDiscount ?? 0) * refusal.keptShare : 0;
+  const platformCredit = (await martlyCreditOn(tx, order.id)) * refusal.keptShare;
   const commission = await deliveryCommission(tx, order.id, store.organizationId, keptParts(order, refusal));
 
   const entries: EntryInput[] = [
@@ -91,4 +95,53 @@ export async function reverseOrderEntries(tx: Tx, orderId: string, userId: strin
     availableAt: e.settlementId ? undefined : e.availableAt,
     memo: `Delivery undone · reverses ${e.memo}`, createdBy: userId,
   })));
+}
+
+const PLATFORM_FUNDED = ["PLATFORM_COUPON", "PLATFORM_CREDIT"] as const;
+
+interface PlatformEntry {
+  id: string;
+  type: string;
+  amount: unknown;
+  sourceType: string;
+}
+
+/**
+ * What a refunded return takes back of Martly's coupon and credit, by type: the returned units' share of what delivery
+ * posted (`share`, by price among the kept units), never more than is still left after earlier returns. Entries an
+ * undo reversed don't count.
+ */
+export function platformShareBack(entries: PlatformEntry[], reversedIds: Set<string>, share: number) {
+  return PLATFORM_FUNDED.map((type) => {
+    const live = entries.filter((e) => e.type === type && !reversedIds.has(e.id));
+    const delivered = live.filter((e) => e.sourceType === "ORDER").reduce((sum, e) => sum + Number(e.amount), 0);
+    const left = live.reduce((sum, e) => sum + Number(e.amount), 0);
+    return { type, amount: Math.max(0, Math.min(delivered * share, left)) };
+  });
+}
+
+interface RefundedReturn {
+  id: string;
+  orderId: string;
+  organizationId: string;
+  storeId: string;
+  items: { orderItemId: string; quantity: number }[];
+}
+
+/** Ledger entries taking Martly's coupon and credit on returned units back off the store: the sale is undone */
+export async function returnPlatformEntries(tx: Tx, rr: RefundedReturn): Promise<EntryInput[]> {
+  const items = await tx.orderItem.findMany({ where: { orderId: rr.orderId }, select: { id: true, quantity: true, refusedQuantity: true, totalPrice: true } });
+  const keptValue = unitsValue(items, items.map((i) => ({ orderItemId: i.id, quantity: i.quantity - i.refusedQuantity })));
+  if (keptValue <= 0) return [];
+  const entries = await tx.ledgerEntry.findMany({
+    where: { orderId: rr.orderId, type: { in: [...PLATFORM_FUNDED] } }, select: { id: true, type: true, amount: true, sourceType: true },
+  });
+  if (entries.length === 0) return [];
+  const reversals = await tx.ledgerEntry.findMany({ where: { type: "REVERSAL", sourceId: { in: entries.map((e) => e.id) } }, select: { sourceId: true } });
+  const share = unitsValue(items, rr.items) / keptValue;
+  const ref = formatOrderRef(rr.orderId);
+  return platformShareBack(entries, new Set(reversals.map((r) => r.sourceId)), share).map(({ type, amount }) => ({
+    organizationId: rr.organizationId, storeId: rr.storeId, orderId: rr.orderId, type, amount: -amount, sourceType: "RETURN" as const,
+    sourceId: rr.id, memo: `${type === "PLATFORM_CREDIT" ? "Martly welcome credit" : "Martly coupon"} on returned items · order ${ref}`,
+  }));
 }

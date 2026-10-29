@@ -1,6 +1,6 @@
 import type { Prisma } from "../../../generated/prisma/client.js";
 import type { RefuseReason } from "@martly/shared/constants";
-import { amountDue, refusedValue } from "@martly/shared/order-flow";
+import { amountDue, keptShare, refusedValue } from "@martly/shared/order-flow";
 import { deductStock } from "../stock.js";
 import { applyMovement } from "../stock-ledger.js";
 
@@ -29,6 +29,8 @@ interface DeliveringOrder {
 export interface DoorRefusal {
   refusedAmount: number;
   walletCredit: number;
+  /** The part of the items, by price, the customer kept */
+  keptShare: number;
   note: string | null;
 }
 
@@ -72,7 +74,8 @@ export async function deliverWithRefusals(tx: Tx, order: DeliveringOrder, refuse
   }
   const priced = { couponDiscount: Number(order.couponDiscount ?? 0), creditDiscount: Number(order.creditDiscount ?? 0), items: order.items.map((i) => ({ ...i, totalPrice: Number(i.totalPrice) })) };
   const refusedAmount = refusedValue(priced, refused);
-  if (refusedAmount === 0) return { refusedAmount, walletCredit: 0, note: null };
+  const kept = keptShare(priced, refused);
+  if (refusedAmount === 0) return { refusedAmount, walletCredit: 0, keptShare: kept, note: null };
 
   // Whatever the customer already paid for refused units (online, wallet or points) comes back to the wallet
   const cashDue = amountDue({ ...order, totalAmount: Number(order.totalAmount), walletAmountUsed: Number(order.walletAmountUsed ?? 0) });
@@ -89,5 +92,5 @@ export async function deliverWithRefusals(tx: Tx, order: DeliveringOrder, refuse
     });
   }
   const units = refused.reduce((n, r) => n + r.quantity, 0);
-  return { refusedAmount, walletCredit, note: `${units} unit${units === 1 ? "" : "s"} handed back at the door (₹${Math.round(refusedAmount)})` };
+  return { refusedAmount, walletCredit, keptShare: kept, note: `${units} unit${units === 1 ? "" : "s"} handed back at the door (₹${Math.round(refusedAmount)})` };
 }

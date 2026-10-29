@@ -34,6 +34,7 @@ A grant moves through `ACTIVE` → `RESERVED` (order placed) → `USED` (deliver
 
 - **On delivery**, Martly-funded credit posts `PLATFORM_CREDIT` (+, Martly pays the store), like a platform coupon. No commission is charged on it.
 - **Store-funded credit posts nothing**: the store simply collected less.
+- **Goods coming back:** Martly pays its credit only on goods the customer kept. A door hand-back posts it for the kept share; a refunded return takes the returned units' share back off the store. Martly coupons work the same way. See "Edge cases to test" in docs/store-ledger.md.
 - **Undo delivery** reverses the entry and moves the grants back to `RESERVED`. Redelivering posts it again.
 
 ## API
