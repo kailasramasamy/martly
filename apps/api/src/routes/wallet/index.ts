@@ -11,7 +11,7 @@ import {
 import { sendWalletNotification } from "../../services/notification.js";
 import { createRecharge, settleRecharge } from "../../services/wallet-recharge.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
-import { type FundedBy, goodwillPayer } from "../../services/ledger/goodwill.js";
+import { type FundedBy, goodwillPayer, supportCreditLeft } from "../../services/ledger/goodwill.js";
 import { postEntries } from "../../services/ledger/post.js";
 import { formatOrderRef } from "../../services/notify/copy.js";
 import { lockWalletBalance } from "../../services/order-guards.js";
@@ -139,6 +139,9 @@ export async function walletRoutes(app: FastifyInstance) {
     async (request, reply) => {
       const { userId } = request.params;
       if (!(await customerInOrg(request, userId))) return reply.forbidden("Access denied");
+      // Org staff see the wallet moves their organization made, not the customer's dealings with other stores
+      const actor = getOrgUser(request);
+      const scope = actor.role === "SUPER_ADMIN" ? {} : { organizationId: actor.organizationId };
 
       const [userData, transactions] = await Promise.all([
         app.prisma.user.findUnique({
@@ -146,7 +149,7 @@ export async function walletRoutes(app: FastifyInstance) {
           select: { walletBalance: true },
         }),
         app.prisma.walletTransaction.findMany({
-          where: { userId },
+          where: { userId, ...scope },
           orderBy: { createdAt: "desc" },
           take: 50,
           select: {
@@ -207,6 +210,14 @@ export async function walletRoutes(app: FastifyInstance) {
         const balance = await lockWalletBalance(tx, userId);
         if (type === "DEBIT" && balance < amount) {
           throw Object.assign(new Error(`Insufficient balance. Current balance: \u20B9${balance.toFixed(0)}`), { statusCode: 400 });
+        }
+        // Org staff can only take back support credit their own organization gave; the rest of the wallet is the
+        // customer's money (top-ups, refunds from other stores)
+        if (type === "DEBIT" && payer && getOrgUser(request).role !== "SUPER_ADMIN") {
+          const reclaimable = await supportCreditLeft(tx, userId, payer.organizationId);
+          if (amount > reclaimable) {
+            throw Object.assign(new Error(`You can take back at most \u20B9${reclaimable.toFixed(0)} of support credit your stores gave`), { statusCode: 400 });
+          }
         }
         const updatedUser = await tx.user.update({
           where: { id: userId },

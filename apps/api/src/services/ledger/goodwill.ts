@@ -1,4 +1,4 @@
-import type { PrismaClient } from "../../../generated/prisma/client.js";
+import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 
 export type FundedBy = "ORG" | "PLATFORM";
 
@@ -35,4 +35,15 @@ export async function goodwillPayer(
   if (!order || order.userId !== customerId) throw fail("That order isn't this customer's");
   if (actor.role !== "SUPER_ADMIN" && order.store.organizationId !== actor.organizationId) throw fail("That order isn't from your stores");
   return { organizationId: order.store.organizationId, storeId: order.storeId, orderId: input.orderId };
+}
+
+/** Support credit an organization gave a customer and hasn't taken back yet: the most its staff may debit */
+export async function supportCreditLeft(tx: Prisma.TransactionClient, userId: string, organizationId: string): Promise<number> {
+  const sums = await tx.walletTransaction.groupBy({
+    by: ["type"],
+    where: { userId, organizationId, reason: "SUPPORT" },
+    _sum: { amount: true },
+  });
+  const total = (type: string) => Number(sums.find((s) => s.type === type)?._sum.amount ?? 0);
+  return Math.max(total("CREDIT") - total("DEBIT"), 0);
 }
