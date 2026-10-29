@@ -10,23 +10,10 @@ import {
   upgradeMembershipSchema,
   verifyPaymentSchema,
 } from "@martly/shared/schemas";
-import {
-  createRazorpayOrder,
-  getRazorpayKeyId,
-  verifyRazorpaySignature,
-  ensureRazorpayCustomer,
-  fetchPaymentAmount,
-} from "../../services/payment.js";
-import type { Prisma } from "../../../generated/prisma/client.js";
-import { postEntries } from "../../services/ledger/post.js";
+import { getRazorpayKeyId, verifyRazorpaySignature, fetchPayment } from "../../services/payment.js";
+import { DURATION_DAYS, settleMembershipPurchase, startMembershipPurchase } from "../../services/membership-purchase.js";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { notifyMembershipWelcome } from "../../services/notify/service-alerts.js";
-
-const DURATION_DAYS: Record<string, number> = {
-  MONTHLY: 30,
-  QUARTERLY: 90,
-  ANNUAL: 365,
-};
 
 export async function membershipRoutes(app: FastifyInstance) {
   // ── Customer: list plans + active membership ───────
@@ -157,16 +144,14 @@ export async function membershipRoutes(app: FastifyInstance) {
     });
     if (existing) throw Object.assign(new Error("You already have an active membership"), { statusCode: 400 });
 
-    const amountInPaise = Math.round(Number(plan.price) * 100);
-    const receiptId = `mem_${user.sub.slice(0, 8)}_${Date.now()}`;
-
-    const customerId = await ensureRazorpayCustomer(app.prisma, user.sub);
-    const rpOrder = await createRazorpayOrder(amountInPaise, receiptId, customerId);
+    const { razorpayOrderId, amountInPaise, customerId } = await startMembershipPurchase(app, {
+      userId: user.sub, organizationId: store.organizationId, planId: plan.id, amount: Number(plan.price),
+    });
 
     return {
       success: true,
       data: {
-        razorpay_order_id: rpOrder.id,
+        razorpay_order_id: razorpayOrderId,
         amount: amountInPaise,
         currency: "INR",
         key_id: getRazorpayKeyId(),
@@ -255,16 +240,16 @@ export async function membershipRoutes(app: FastifyInstance) {
     }
 
     // Paid upgrade — create Razorpay order
-    const amountInPaise = Math.round(upgradeCharge * 100);
-    const receiptId = `mem_upg_${user.sub.slice(0, 8)}_${Date.now()}`;
-    const customerId = await ensureRazorpayCustomer(app.prisma, user.sub);
-    const rpOrder = await createRazorpayOrder(amountInPaise, receiptId, customerId);
+    const { razorpayOrderId, amountInPaise, customerId } = await startMembershipPurchase(app, {
+      userId: user.sub, organizationId: store.organizationId, planId: targetPlan.id,
+      previousMembershipId: activeMembership.id, amount: upgradeCharge,
+    });
 
     return {
       success: true,
       data: {
         upgraded: false,
-        razorpay_order_id: rpOrder.id,
+        razorpay_order_id: razorpayOrderId,
         amount: amountInPaise,
         currency: "INR",
         key_id: getRazorpayKeyId(),
@@ -277,97 +262,21 @@ export async function membershipRoutes(app: FastifyInstance) {
   });
 
   // ── Customer: verify membership payment ────────────
+  // The plan, the upgraded membership and the price come from the purchase recorded with the Razorpay order
   app.post("/verify", { preHandler: [authenticate] }, async (request) => {
     const body = verifyPaymentSchema.parse(request.body);
     const user = getOrgUser(request);
 
-    const isValid = verifyRazorpaySignature(
-      body.razorpay_order_id,
-      body.razorpay_payment_id,
-      body.razorpay_signature,
-    );
-    if (!isValid) throw Object.assign(new Error("Payment verification failed"), { statusCode: 400 });
-
-    const { planId, previousMembershipId } = request.query as { planId?: string; previousMembershipId?: string };
-    if (!planId) throw Object.assign(new Error("planId query param required"), { statusCode: 400 });
-
-    const plan = await app.prisma.membershipPlan.findUnique({ where: { id: planId } });
-    if (!plan) throw Object.assign(new Error("Plan not found"), { statusCode: 404 });
-
-    // The price comes from what Razorpay charged, never from the client
-    const payment = await fetchPaymentAmount(body.razorpay_payment_id);
-    if (payment.orderId !== body.razorpay_order_id) throw Object.assign(new Error("Payment does not match this order"), { statusCode: 400 });
-    const duplicate = await app.prisma.userMembership.findFirst({ where: { razorpayPaymentId: body.razorpay_payment_id }, select: { id: true } });
-    if (duplicate) throw Object.assign(new Error("This payment was already used"), { statusCode: 409 });
-    const sale = (tx: Prisma.TransactionClient, membershipId: string) => postEntries(tx, [{
-      organizationId: plan.organizationId, type: "MEMBERSHIP_SALE", amount: payment.amount,
-      sourceType: "MEMBERSHIP", sourceId: body.razorpay_payment_id, memo: `Membership sale · ${plan.name} · ${membershipId.slice(0, 8)}`,
-    }]);
-
-    const now = new Date();
-    const days = DURATION_DAYS[plan.duration] ?? 30;
-    const endDate = new Date(now.getTime() + days * 24 * 60 * 60 * 1000);
-
-    if (previousMembershipId) {
-      // Upgrade path — cancel previous, create new with link
-      const membership = await app.prisma.$transaction(async (tx) => {
-        await tx.userMembership.update({
-          where: { id: previousMembershipId },
-          data: { status: "CANCELLED" },
-        });
-        const created = await tx.userMembership.create({
-          data: {
-            userId: user.sub,
-            planId: plan.id,
-            organizationId: plan.organizationId,
-            status: "ACTIVE",
-            startDate: now,
-            endDate,
-            pricePaid: payment.amount,
-            razorpayOrderId: body.razorpay_order_id,
-            razorpayPaymentId: body.razorpay_payment_id,
-            previousMembershipId,
-          },
-          include: { plan: true },
-        });
-        await sale(tx, created.id);
-        return created;
-      });
-
-      notifyMembershipWelcome(app.fcm, app.prisma, user.sub, membership.plan.name, membership.endDate);
-
-      return {
-        success: true,
-        data: {
-          ...membership,
-          pricePaid: Number(membership.pricePaid),
-          plan: { ...membership.plan, price: Number(membership.plan.price) },
-        },
-      } satisfies ApiResponse<unknown>;
+    if (!verifyRazorpaySignature(body.razorpay_order_id, body.razorpay_payment_id, body.razorpay_signature)) {
+      throw Object.assign(new Error("Payment verification failed"), { statusCode: 400 });
     }
+    const payment = await fetchPayment(body.razorpay_payment_id);
+    if (payment.orderId !== body.razorpay_order_id) throw Object.assign(new Error("Payment does not match this order"), { statusCode: 400 });
+    const settled = await settleMembershipPurchase(app, payment, user.sub);
+    if (!settled) throw Object.assign(new Error("Payment does not match a membership purchase"), { statusCode: 400 });
+    if ("mismatch" in settled) throw Object.assign(new Error(settled.mismatch), { statusCode: 400 });
 
-    // New purchase path
-    const membership = await app.prisma.$transaction(async (tx) => {
-      const created = await tx.userMembership.create({
-        data: {
-          userId: user.sub,
-          planId: plan.id,
-          organizationId: plan.organizationId,
-          status: "ACTIVE",
-          startDate: now,
-          endDate,
-          pricePaid: payment.amount,
-          razorpayOrderId: body.razorpay_order_id,
-          razorpayPaymentId: body.razorpay_payment_id,
-        },
-        include: { plan: true },
-      });
-      await sale(tx, created.id);
-      return created;
-    });
-
-    notifyMembershipWelcome(app.fcm, app.prisma, user.sub, membership.plan.name, membership.endDate);
-
+    const { membership } = settled;
     return {
       success: true,
       data: {

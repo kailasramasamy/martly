@@ -1,5 +1,10 @@
 import type { FastifyInstance } from "fastify";
-import { createRazorpayOrder, ensureRazorpayCustomer, refundRazorpayPayment } from "./payment.js";
+import type { VerifyPaymentInput } from "@martly/shared/schemas";
+import {
+  createRazorpayOrder, ensureRazorpayCustomer, fetchPayment, findCapturedPayment, paymentMismatch, refundRazorpayPayment,
+  verifyRazorpaySignature, type RazorpayPayment,
+} from "./payment.js";
+import { markPaymentFailed } from "./notify/order-alerts.js";
 import { sendNotification, sendOrderStatusNotification } from "./notification.js";
 import { formatINR, formatOrderRef } from "./notify/copy.js";
 import { notifyStaff } from "./notify/staff.js";
@@ -14,7 +19,10 @@ function httpError(message: string, statusCode: number) {
 type Payable = { totalAmount: { toNumber(): number }; walletAmountUsed: { toNumber(): number } | null; loyaltyPointsUsed: number | null };
 
 
-/** Creates the Razorpay order for what the customer still owes (total less wallet and points) and remembers it on the order */
+/**
+ * Creates the Razorpay order for what the customer still owes (total less wallet and points). Each one is kept as an
+ * attempt, so a payment on an earlier attempt (UPI, then back, then card) still settles the order.
+ */
 export async function prepareOrderPayment(app: FastifyInstance, orderId: string, userId: string) {
   const order = await app.prisma.order.findUnique({ where: { id: orderId } });
   if (!order) throw httpError("Order not found", 404);
@@ -35,8 +43,54 @@ export async function prepareOrderPayment(app: FastifyInstance, orderId: string,
   }
 
   const rpOrder = await createRazorpayOrder(amountInPaise, order.id, customerId);
-  await app.prisma.order.update({ where: { id: order.id }, data: { razorpayOrderId: rpOrder.id } });
+  await app.prisma.$transaction([
+    app.prisma.paymentAttempt.create({ data: { orderId: order.id, razorpayOrderId: rpOrder.id, amount: amountInPaise } }),
+    app.prisma.order.update({ where: { id: order.id }, data: { razorpayOrderId: rpOrder.id } }),
+  ]);
   return { order, rpOrderId: rpOrder.id, amountInPaise, customerId };
+}
+
+export type AttemptSettlement = { order: Awaited<ReturnType<typeof settleOrderPayment>> } | { mismatch: string };
+
+/**
+ * Settles the order a Razorpay payment was made for, found through the attempt its Razorpay order belongs to. Null
+ * when that Razorpay order is no attempt (of `orderId`, when given); a mismatch when it didn't pay the attempt in full.
+ */
+export async function settleAttemptPayment(app: FastifyInstance, payment: RazorpayPayment, orderId?: string): Promise<AttemptSettlement | null> {
+  if (!payment.orderId) return null;
+  const attempt = await app.prisma.paymentAttempt.findUnique({ where: { razorpayOrderId: payment.orderId } });
+  if (!attempt || (orderId && attempt.orderId !== orderId)) return null;
+  const mismatch = paymentMismatch(payment, { razorpayOrderId: attempt.razorpayOrderId, amountInPaise: attempt.amount });
+  if (mismatch) return { mismatch };
+  return { order: await settleOrderPayment(app, attempt.orderId, payment.id) };
+}
+
+/**
+ * The app's checkout verify. The signed Razorpay order must be one of this order's attempts, and Razorpay must say the
+ * payment captured that attempt's full amount, so a payment made for anything else can't mark this order paid.
+ */
+export async function verifyOrderPayment(app: FastifyInstance, orderId: string, body: VerifyPaymentInput) {
+  const attempt = await app.prisma.paymentAttempt.findUnique({ where: { razorpayOrderId: body.razorpay_order_id } });
+  if (!attempt || attempt.orderId !== orderId) throw httpError("Payment does not belong to this order", 400);
+  if (!verifyRazorpaySignature(body.razorpay_order_id, body.razorpay_payment_id, body.razorpay_signature)) {
+    await markPaymentFailed(app, orderId, body.razorpay_payment_id);
+    throw httpError("Payment verification failed", 400);
+  }
+  const settled = await settleAttemptPayment(app, await fetchPayment(body.razorpay_payment_id), orderId);
+  if (!settled) throw httpError("Payment does not belong to this order", 400);
+  if ("mismatch" in settled) throw httpError(settled.mismatch, 400);
+  return settled.order;
+}
+
+/** Status poll for UPI intent: settles the order from a captured payment on any of its recent attempts */
+export async function pollOrderPayment(app: FastifyInstance, orderId: string): Promise<string | null> {
+  const attempts = await app.prisma.paymentAttempt.findMany({ where: { orderId }, orderBy: { createdAt: "desc" }, take: 5 });
+  for (const attempt of attempts) {
+    const payment = await findCapturedPayment(attempt.razorpayOrderId);
+    const settled = payment && await settleAttemptPayment(app, payment, orderId);
+    if (settled && "order" in settled) return settled.order.paymentStatus;
+  }
+  return null;
 }
 
 /** Marks an order paid and auto-confirms it; safe to call repeatedly (checkout verify, status poll and webhook race) */

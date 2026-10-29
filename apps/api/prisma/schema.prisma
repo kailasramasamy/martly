@@ -529,6 +529,7 @@ model Organization {
   balanceDues           BalanceDue[]
   membershipPlans       MembershipPlan[]
   userMemberships       UserMembership[]
+  membershipPurchases   MembershipPurchase[]
   subscriptions         Subscription[]
   recipes               Recipe[]
   catalogDrafts         CatalogDraft[]
@@ -697,6 +698,7 @@ model User {
   supportTickets      SupportTicket[]
   returnRequests      ReturnRequest[]
   memberships         UserMembership[]
+  membershipPurchases MembershipPurchase[]
   subscriptions       Subscription[]
   basketAddOns        BasketAddOn[]
   searchLogs          SearchLog[]
@@ -903,9 +905,9 @@ model Product {
 
   searchText String @default("") @map("search_text")
 
-  organization     Organization?      @relation(fields: [organizationId], references: [id])
-  subcategory      Subcategory?       @relation(fields: [subcategoryId], references: [id])
-  brand            Brand?             @relation(fields: [brandId], references: [id])
+  organization     Organization?        @relation(fields: [organizationId], references: [id])
+  subcategory      Subcategory?         @relation(fields: [subcategoryId], references: [id])
+  brand            Brand?               @relation(fields: [brandId], references: [id])
   variants         ProductVariant[]
   storeProducts    StoreProduct[]
   orderItems       OrderItem[]
@@ -919,11 +921,11 @@ model Product {
   catalogDrafts    CatalogDraft[]
   storePostItems   StorePostProduct[]
   storePicks       StorePick[]
+  listingCredits   ListingCreditEntry[]
 
   @@index([productType])
   @@index([organizationId])
   @@index([tags], type: Gin)
-  listingCredits ListingCreditEntry[]
   @@map("products")
 }
 
@@ -1074,9 +1076,26 @@ model Order {
   returnRequest       ReturnRequest?       @relation("ReturnRequestOrder")
   collectedReturns    ReturnRequest[]      @relation("ReturnCollectedOn")
   ledgerEntries       LedgerEntry[]
+  paymentAttempts     PaymentAttempt[]
 
   @@index([storeId, status])
   @@map("orders")
+}
+
+/// A Razorpay order raised to collect an order's online payment. Every attempt is kept, so a payment made on an
+/// earlier one (UPI, then back, then card) still settles the order.
+model PaymentAttempt {
+  id              String   @id @default(uuid())
+  orderId         String   @map("order_id")
+  razorpayOrderId String   @unique @map("razorpay_order_id")
+  /// What the Razorpay order charges, in paise
+  amount          Int
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([orderId])
+  @@map("payment_attempts")
 }
 
 model DeviceToken {
@@ -1909,8 +1928,9 @@ model MembershipPlan {
   createdAt         DateTime           @default(now()) @map("created_at")
   updatedAt         DateTime           @updatedAt @map("updated_at")
 
-  organization    Organization     @relation(fields: [organizationId], references: [id])
+  organization    Organization         @relation(fields: [organizationId], references: [id])
   userMemberships UserMembership[]
+  purchases       MembershipPurchase[]
 
   @@index([organizationId, isActive])
   @@map("membership_plans")
@@ -1940,6 +1960,28 @@ model UserMembership {
   @@index([userId, organizationId, status])
   @@index([endDate])
   @@map("user_memberships")
+}
+
+/// A membership checkout: the plan, the membership it upgrades and the price are fixed when its Razorpay order is
+/// made, so verifying the payment never trusts the app for them
+model MembershipPurchase {
+  id                   String    @id @default(uuid())
+  userId               String    @map("user_id")
+  organizationId       String    @map("organization_id")
+  planId               String    @map("plan_id")
+  previousMembershipId String?   @map("previous_membership_id")
+  amount               Decimal   @db.Decimal(10, 2)
+  razorpayOrderId      String    @unique @map("razorpay_order_id")
+  razorpayPaymentId    String?   @unique @map("razorpay_payment_id")
+  paidAt               DateTime? @map("paid_at")
+  createdAt            DateTime  @default(now()) @map("created_at")
+
+  user         User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization Organization   @relation(fields: [organizationId], references: [id])
+  plan         MembershipPlan @relation(fields: [planId], references: [id])
+
+  @@index([userId])
+  @@map("membership_purchases")
 }
 
 model ReturnRequestItem {

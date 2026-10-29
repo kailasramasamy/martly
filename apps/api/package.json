@@ -23,6 +23,7 @@
     "@fastify/cors": "^11",
     "@fastify/jwt": "^9",
     "@fastify/multipart": "^9.4.0",
+    "@fastify/rate-limit": "^10.3.0",
     "@fastify/sensible": "^6",
     "@fastify/websocket": "^11.2.0",
     "@martly/shared": "workspace:*",

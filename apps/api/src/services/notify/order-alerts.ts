@@ -61,12 +61,13 @@ export function notifyPaymentFailed(app: FastifyInstance, orderId: string, payme
   paymentFailed(app, orderId, paymentId).catch(logFailure(app, "Payment failed notification"));
 }
 
-/** Marks an unpaid, open order's payment as failed (webhook path) */
-export async function markPaymentFailed(app: FastifyInstance, razorpayOrderId: string, paymentId: string) {
-  const order = await app.prisma.order.findFirst({ where: { razorpayOrderId }, select: { id: true, status: true, paymentStatus: true } });
-  if (!order || order.status === "CANCELLED" || order.paymentStatus === "PAID" || order.paymentStatus === "REFUNDED") return;
-  await app.prisma.order.update({ where: { id: order.id }, data: { paymentStatus: "FAILED" } });
-  notifyPaymentFailed(app, order.id, paymentId);
+/** Marks an unpaid, open order's payment as failed; a paid, refunded or cancelled order is left as it is */
+export async function markPaymentFailed(app: FastifyInstance, orderId: string, paymentId: string) {
+  const { count } = await app.prisma.order.updateMany({
+    where: { id: orderId, status: { not: "CANCELLED" }, paymentStatus: { in: ["PENDING", "FAILED"] } },
+    data: { paymentStatus: "FAILED" },
+  });
+  if (count > 0) notifyPaymentFailed(app, orderId, paymentId);
 }
 
 async function slotFull(app: FastifyInstance, slotId: string, dateKey: string) {

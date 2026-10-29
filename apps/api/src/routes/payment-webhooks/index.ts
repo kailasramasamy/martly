@@ -1,6 +1,7 @@
 import type { FastifyInstance } from "fastify";
 import { verifyRazorpayWebhook } from "../../services/payment.js";
-import { settleOrderPayment } from "../../services/order-payment.js";
+import { settleAttemptPayment } from "../../services/order-payment.js";
+import { settleMembershipPurchase } from "../../services/membership-purchase.js";
 import { settleRecharge } from "../../services/wallet-recharge.js";
 import { fulfilAdOrder } from "../../services/marketing/billing.js";
 import { settleDue } from "../../services/ledger/dues.js";
@@ -12,7 +13,7 @@ interface RazorpayEvent {
   event: string;
   payload?: {
     order?: { entity?: { id?: string } };
-    payment?: { entity?: { id?: string; amount?: number; order_id?: string } };
+    payment?: { entity?: { id?: string; amount?: number; order_id?: string; status?: string } };
     subscription?: { entity?: { id?: string; notes?: { organizationId?: string } } };
   };
 }
@@ -43,9 +44,15 @@ async function onOrderPaid(app: FastifyInstance, event: RazorpayEvent) {
     await settleDue(app.prisma, app.fcm, due.id, { paymentId });
     return;
   }
-  const order = await app.prisma.order.findFirst({ where: { razorpayOrderId }, select: { id: true } });
-  if (order) await settleOrderPayment(app, order.id, paymentId);
-  else await settleRecharge(app, razorpayOrderId, paymentId);
+  const entity = event.payload?.payment?.entity;
+  const payment = { id: paymentId, orderId: entity?.order_id ?? razorpayOrderId, amount: Number(entity?.amount), status: entity?.status ?? "" };
+  // Customer orders (any of their attempts) and memberships are bound to the amount they were raised for
+  const settled = (await settleAttemptPayment(app, payment)) ?? (await settleMembershipPurchase(app, payment));
+  if (settled && "mismatch" in settled) {
+    app.log.error({ razorpayOrderId, paymentId, reason: settled.mismatch }, "Webhook payment not settled");
+    return;
+  }
+  if (!settled) await settleRecharge(app, razorpayOrderId, paymentId);
 }
 
 /** A failed payment attempt on a customer order: flag it and tell the customer (they can retry the same order) */
@@ -53,7 +60,8 @@ async function onPaymentFailed(app: FastifyInstance, event: RazorpayEvent) {
   const payment = event.payload?.payment?.entity;
   const razorpayOrderId = payment?.order_id ?? event.payload?.order?.entity?.id;
   if (!payment?.id || !razorpayOrderId) return;
-  await markPaymentFailed(app, razorpayOrderId, payment.id);
+  const attempt = await app.prisma.paymentAttempt.findUnique({ where: { razorpayOrderId }, select: { orderId: true } });
+  if (attempt) await markPaymentFailed(app, attempt.orderId, payment.id);
 }
 
 /** Monthly plan charges and subscription state changes; a halted one (payments failing) is told to the owners */

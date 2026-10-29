@@ -99,16 +99,35 @@ export async function createUpiIntentPayment(input: UpiIntentInput) {
   return { paymentId: res.razorpay_payment_id, link: res.link };
 }
 
-/** The id of a captured payment against a Razorpay order, or null while none has succeeded */
-export async function findCapturedPayment(razorpayOrderId: string): Promise<string | null> {
-  const { items } = await getRazorpay().orders.fetchPayments(razorpayOrderId);
-  return items.find((payment) => payment.status === "captured")?.id ?? null;
+/** A payment as Razorpay recorded it: the Razorpay order it was made on, what it charged in paise, and its status */
+export interface RazorpayPayment {
+  id: string;
+  orderId: string | null;
+  amount: number;
+  status: string;
 }
 
-/** What a payment actually charged, in rupees, and the Razorpay order it belongs to */
-export async function fetchPaymentAmount(paymentId: string): Promise<{ amount: number; orderId: string | null }> {
-  const payment = await getRazorpay().payments.fetch(paymentId);
-  return { amount: Number(payment.amount) / 100, orderId: payment.order_id ?? null };
+const asPayment = (p: { id: string; order_id?: string | null; amount: number | string; status: string }): RazorpayPayment => ({
+  id: p.id, orderId: p.order_id ?? null, amount: Number(p.amount), status: p.status,
+});
+
+/** The captured payment against a Razorpay order, or null while none has succeeded */
+export async function findCapturedPayment(razorpayOrderId: string): Promise<RazorpayPayment | null> {
+  const { items } = await getRazorpay().orders.fetchPayments(razorpayOrderId);
+  const captured = items.find((payment) => payment.status === "captured");
+  return captured ? asPayment(captured) : null;
+}
+
+export async function fetchPayment(paymentId: string): Promise<RazorpayPayment> {
+  return asPayment(await getRazorpay().payments.fetch(paymentId));
+}
+
+/** Why a payment can't settle the Razorpay order it is claimed for, or null when it paid exactly that order in full */
+export function paymentMismatch(payment: RazorpayPayment, expected: { razorpayOrderId: string; amountInPaise: number }): string | null {
+  if (payment.orderId !== expected.razorpayOrderId) return "Payment does not belong to this order";
+  if (payment.status !== "captured") return "Payment is not complete yet";
+  if (payment.amount !== expected.amountInPaise) return "Payment amount does not match";
+  return null;
 }
 
 /** A Razorpay plan billing an amount in paise (GST included) every month or every year */

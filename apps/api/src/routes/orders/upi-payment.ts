@@ -1,8 +1,8 @@
 import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
-import { createUpiIntentPayment, findCapturedPayment, isUpiS2SEnabled } from "../../services/payment.js";
-import { prepareOrderPayment, settleOrderPayment } from "../../services/order-payment.js";
+import { createUpiIntentPayment, isUpiS2SEnabled } from "../../services/payment.js";
+import { pollOrderPayment, prepareOrderPayment } from "../../services/order-payment.js";
 
 /** UPI-intent checkout: our server starts the payment, the app opens the UPI app and then polls for the result */
 export async function upiPaymentRoutes(app: FastifyInstance) {
@@ -46,11 +46,8 @@ export async function upiPaymentRoutes(app: FastifyInstance) {
       const user = request.user as { sub: string };
       if (order.userId !== user.sub) return reply.forbidden("Access denied");
 
-      let paymentStatus = order.paymentStatus;
-      if (paymentStatus !== "PAID" && order.razorpayOrderId) {
-        const paymentId = await findCapturedPayment(order.razorpayOrderId);
-        if (paymentId) paymentStatus = (await settleOrderPayment(app, order.id, paymentId)).paymentStatus;
-      }
+      let paymentStatus: string = order.paymentStatus;
+      if (paymentStatus !== "PAID") paymentStatus = (await pollOrderPayment(app, order.id)) ?? paymentStatus;
 
       const response: ApiResponse<{ paymentStatus: string }> = { success: true, data: { paymentStatus } };
       return response;

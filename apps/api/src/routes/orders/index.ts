@@ -24,14 +24,14 @@ import { attachReplacements, reopenReplacements } from "../../services/returns/r
 import { pendingPickups } from "../../services/returns/pickups.js";
 import { notifyReplacementRefunds } from "../../services/notify/return-alerts.js";
 import { formatVariantUnit } from "../../services/units.js";
-import { verifyRazorpaySignature, isRazorpayConfigured, getRazorpayKeyId, isUpiS2SEnabled } from "../../services/payment.js";
-import { prepareOrderPayment, settleOrderPayment } from "../../services/order-payment.js";
+import { isRazorpayConfigured, getRazorpayKeyId, isUpiS2SEnabled } from "../../services/payment.js";
+import { prepareOrderPayment, verifyOrderPayment } from "../../services/order-payment.js";
 import { upiPaymentRoutes } from "./upi-payment.js";
 import { reorderRoutes } from "./reorder.js";
 import { broadcastOrderUpdate } from "../../services/order-broadcast.js";
 import { notifyStaffOfNewOrder } from "../../services/staff-alerts.js";
 import { formatOrderRef } from "../../services/notify/copy.js";
-import { notifyOrderPlaced, notifyPaymentFailed, notifySlotFullIfNeeded } from "../../services/notify/order-alerts.js";
+import { notifyOrderPlaced, notifySlotFullIfNeeded } from "../../services/notify/order-alerts.js";
 import { applyCancelRefunds, cancelOrder, notifyOrderCancelled } from "../../services/order-cancel.js";
 import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
 import { freeUnits, lineTotal } from "@martly/shared/offers";
@@ -1115,26 +1115,9 @@ export async function orderRoutes(app: FastifyInstance) {
       const user = request.user as { sub: string };
       if (order.userId !== user.sub) return reply.forbidden("Access denied");
 
-      const isValid = verifyRazorpaySignature(
-        body.razorpay_order_id,
-        body.razorpay_payment_id,
-        body.razorpay_signature,
-      );
-
-      if (isValid) {
-        const updated = await settleOrderPayment(app, order.id, body.razorpay_payment_id);
-
-        const response: ApiResponse<typeof updated> = { success: true, data: updated };
-        return response;
-      } else {
-        await app.prisma.order.update({
-          where: { id: order.id },
-          data: { paymentStatus: "FAILED" },
-        });
-        notifyPaymentFailed(app, order.id, body.razorpay_payment_id);
-
-        return reply.badRequest("Payment verification failed");
-      }
+      const updated = await verifyOrderPayment(app, order.id, body);
+      const response: ApiResponse<typeof updated> = { success: true, data: updated };
+      return response;
     },
   );
 
