@@ -10,6 +10,7 @@ import { townPage, webStoreSelect } from "../../services/web-shop/town-page.js";
 import { webStoreWhere } from "../../services/store-resolve.js";
 import { bestSellers, brandPage, brandsPage, ownBrandPage, buyGetList, collectionPage, dealsList } from "../../services/web-shop/lists.js";
 import { webSearchLogRoutes } from "./search-log.js";
+import { byVisitor, rateLimits } from "../../middleware/rate-limit.js";
 import { categoryPage, departmentPage, productPage, sitemap, storeDepartments } from "../../services/web-shop/pages.js";
 
 
@@ -68,6 +69,9 @@ const BRAND_RAIL = 12;
  * Prices change, so these cache for a minute; a page the store can't fill is a 404.
  */
 function shopRoutes(app: FastifyInstance) {
+  // Searches run full-text queries; counted per martlyshop.in visitor, since every visitor arrives from the site's server
+  const searchLimit = rateLimits(app, [{ max: 60, window: "1 minute", key: byVisitor }]);
+  const suggestLimit = rateLimits(app, [{ max: 120, window: "1 minute", key: byVisitor }]);
   const respond = async <T>(
     request: FastifyRequest, reply: FastifyReply, build: (ctx: ShopContext, q: ReturnType<typeof webShopQuerySchema.parse>) => Promise<T | null>, storeId?: string,
   ) => {
@@ -121,9 +125,9 @@ function shopRoutes(app: FastifyInstance) {
   app.get<{ Params: { slug: string } }>("/products/:slug", (request, reply) =>
     respond(request, reply, ({ store }) => productPage(app.prisma, store, request.params.slug)));
 
-  app.get("/search", (request, reply) => respond(request, reply, (ctx, q) => webSearch(app.prisma, ctx, q)));
+  app.get("/search", { preHandler: [searchLimit] }, (request, reply) => respond(request, reply, (ctx, q) => webSearch(app.prisma, ctx, q)));
 
-  app.get("/search/suggest", (request, reply) => respond(request, reply, (ctx, q) => webSuggestions(app.prisma, ctx, q.q ?? "")));
+  app.get("/search/suggest", { preHandler: [suggestLimit] }, (request, reply) => respond(request, reply, (ctx, q) => webSuggestions(app.prisma, ctx, q.q ?? "")));
 
   app.get("/search/landing", (request, reply) => respond(request, reply, (ctx) => webSearchLanding(app.prisma, ctx)));
 

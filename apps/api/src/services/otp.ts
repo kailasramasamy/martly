@@ -1,5 +1,6 @@
 import crypto from "node:crypto";
 import type { FastifyBaseLogger, FastifyInstance } from "fastify";
+import { authSecret } from "./secrets.js";
 
 const OTP_TTL_MS = 5 * 60 * 1000;
 const RESEND_COOLDOWN_MS = 30 * 1000;
@@ -14,7 +15,7 @@ function httpError(statusCode: number, message: string) {
 }
 
 function hashCode(phone: string, code: string) {
-  return crypto.createHmac("sha256", process.env.JWT_SECRET ?? "dev-secret-change-me").update(`${phone}:${code}`).digest("hex");
+  return crypto.createHmac("sha256", authSecret()).update(`${phone}:${code}`).digest("hex");
 }
 
 /**
@@ -66,23 +67,31 @@ export async function issueOtp(prisma: Prisma, phone: string, log: FastifyBaseLo
   await prisma.otpCode.upsert({ where: { phone }, create: { phone, ...data }, update: data });
 }
 
-/** Returns true when the code matches; a used, expired or exhausted code is deleted. */
+/**
+ * Returns true when the code matches; a used, expired or exhausted code is deleted. Each guess claims an attempt with a
+ * conditional increment before the code is compared, so parallel guesses can't share one stale attempt count.
+ */
 export async function verifyOtp(prisma: Prisma, phone: string, code: string) {
   const record = await prisma.otpCode.findUnique({ where: { phone } });
   if (!record || record.expiresAt < new Date()) {
-    if (record) await prisma.otpCode.delete({ where: { phone } });
+    if (record) await prisma.otpCode.deleteMany({ where: { id: record.id } });
     throw httpError(401, "OTP expired or already used. Please request a new one.");
   }
+  const thisCode = { id: record.id, codeHash: record.codeHash };
+  const claimed = await prisma.otpCode.updateMany({
+    where: { ...thisCode, attempts: { lt: MAX_ATTEMPTS }, expiresAt: { gt: new Date() } },
+    data: { attempts: { increment: 1 } },
+  });
+  if (claimed.count === 0) throw httpError(401, "This OTP can no longer be used. Please request a new one.");
+
   const expected = Buffer.from(record.codeHash, "hex");
   const actual = Buffer.from(hashCode(phone, code), "hex");
   if (crypto.timingSafeEqual(expected, actual)) {
-    await prisma.otpCode.delete({ where: { phone } });
-    return true;
+    // Only the request that deletes the code signs in with it
+    const used = await prisma.otpCode.deleteMany({ where: thisCode });
+    return used.count === 1;
   }
-  if (record.attempts + 1 >= MAX_ATTEMPTS) {
-    await prisma.otpCode.delete({ where: { phone } });
-    throw httpError(401, "Too many incorrect attempts. Please request a new OTP.");
-  }
-  await prisma.otpCode.update({ where: { phone }, data: { attempts: { increment: 1 } } });
+  const exhausted = await prisma.otpCode.deleteMany({ where: { ...thisCode, attempts: { gte: MAX_ATTEMPTS } } });
+  if (exhausted.count > 0) throw httpError(401, "Too many incorrect attempts. Please request a new OTP.");
   return false;
 }

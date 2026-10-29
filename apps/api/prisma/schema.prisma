@@ -656,7 +656,7 @@ model User {
   email        String   @unique
   name         String
   passwordHash String   @map("password_hash")
-  phone        String?
+  phone        String?  @unique
   role         UserRole @default(CUSTOMER)
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")

@@ -110,6 +110,6 @@ The spotlight rows and the hero phone stack use `apps/web/public/screenshots/*.w
 - Home render time: about 1.1s locally, mostly the app's own section resolvers (~0.4s a page, and the second page waits for the first's cursor).
 - New app screenshots in place of the quartex.in ones.
 - Deploy target and DNS for martlyshop.in, and `MARTLY_API_URL` pointing at the prod API there.
-- `WEB_API_SECRET`: set the same value on the Railway API and on the web service, or web search logging is refused in production.
+- `WEB_API_SECRET`: set the same value on the Railway API and on the web service, or web search logging is refused in production. The site also sends the visitor headers on `/web/search`, `/web/search/suggest` and `POST /banners/events`, whose rate limits count per visitor; without the secret every web shopper shares the site server's one limit.
 - Search logging behind the real proxy: the visitor hash reads `X-Forwarded-For`; check it differs per shopper once deployed.
 - Tamil version of the site (not built yet).
