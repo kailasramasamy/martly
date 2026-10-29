@@ -9,8 +9,6 @@ interface ShopByBrandsProps {
   brands: BrandTile[];
   selectedId: string | null;
   onSelect: (id: string | null) => void;
-  // When set, a selected brand gets a "Visit <brand> store" link under the strip
-  onVisit?: (brand: BrandTile) => void;
   // When set, a "See all" link sits beside the title
   onSeeAll?: () => void;
 }
@@ -58,11 +56,10 @@ export function BrandPill({ brand, selected, onPress, outlined = false }: { bran
   );
 }
 
-export function ShopByBrands({ brands, selectedId, onSelect, onVisit, onSeeAll }: ShopByBrandsProps) {
+export function ShopByBrands({ brands, selectedId, onSelect, onSeeAll }: ShopByBrandsProps) {
   const t = useStrings("home");
   const c = useStrings("common");
   if (brands.length < MIN_BRANDS_FOR_STRIP) return null;
-  const selected = brands.find((b) => b.id === selectedId);
   return (
     <View style={styles.band}>
       <View style={styles.titleRow}>
@@ -85,12 +82,6 @@ export function ShopByBrands({ brands, selectedId, onSelect, onVisit, onSeeAll }
           <BrandPill brand={item} selected={item.id === selectedId} onPress={() => onSelect(item.id === selectedId ? null : item.id)} />
         )}
       />
-      {selected && onVisit && (
-        <TouchableOpacity style={styles.visit} onPress={() => onVisit(selected)} activeOpacity={0.7}>
-          <Text style={styles.visitText}>{t.visitBrandStore(brandDisplayName(selected.name))}</Text>
-          <Ionicons name="arrow-forward" size={14} color={colors.primary} />
-        </TouchableOpacity>
-      )}
     </View>
   );
 }
@@ -112,6 +103,5 @@ const styles = StyleSheet.create({
   pillSelected: { borderWidth: 2, borderColor: colors.primary },
   wordmark: { fontFamily: fonts.extrabold, fontSize: 15, letterSpacing: -0.2 },
   logo: { height: LOGO_HEIGHT },
-  visit: { flexDirection: "row", alignItems: "center", gap: 4, alignSelf: "flex-start", marginTop: 12, marginLeft: 16, minHeight: 32 },
   visitText: { fontFamily: fonts.bold, fontSize: 13, color: colors.primary },
 });

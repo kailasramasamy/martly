@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { BottomSheet } from "./BottomSheet";
 import { colors, fonts, spacing } from "../../constants/theme";
 import { useStrings } from "../../lib/i18n/use-strings";
-import type { SearchFacets } from "../../lib/types";
+import type { BrandTile } from "../../lib/brand-strip";
 
 const FOOD_TYPES = ["VEG", "NON_VEG", "VEGAN", "EGG"] as const;
 
@@ -17,7 +17,7 @@ interface FilterSheetProps {
   visible: boolean;
   // The Brand pill opens the same sheet narrowed to brands
   brandsOnly?: boolean;
-  brands: SearchFacets["brands"];
+  brands: BrandTile[];
   value: FilterSelection;
   onApply: (value: FilterSelection) => void;
   onClose: () => void;

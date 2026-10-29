@@ -2,20 +2,20 @@ import { useRef } from "react";
 import { FlatList, StyleSheet } from "react-native";
 import { spacing } from "../../constants/theme";
 import { BrandPill } from "../ShopByBrands";
-import type { SearchFacets } from "../../lib/types";
+import type { BrandTile } from "../../lib/brand-strip";
 
 // Fewer brands than this and a brand row adds nothing (e.g. searching "surf excel")
 const MIN_BRANDS = 3;
 
 interface BrandFilterRowProps {
-  brands: SearchFacets["brands"];
+  brands: BrandTile[];
   selectedIds: string[];
   onChange: (brandIds: string[]) => void;
 }
 
 // Quick single-brand jump: a tap shows only that brand, a second tap clears it. Several brands → Filters sheet.
 export function BrandFilterRow({ brands, selectedIds, onChange }: BrandFilterRowProps) {
-  const list = useRef<FlatList<BrandFilterRowProps["brands"][number]>>(null);
+  const list = useRef<FlatList<BrandTile>>(null);
   if (brands.length < MIN_BRANDS && selectedIds.length === 0) return null;
   // The picked brand slides fully into view, so a pill tapped at the edge isn't left half hidden
   const toggle = (id: string, index: number) => {

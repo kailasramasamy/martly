@@ -1,6 +1,5 @@
 import { useEffect, useState, useMemo } from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
 import { useLocalSearchParams } from "expo-router";
 import { api } from "../../lib/api";
 import { useLanguage } from "../../lib/language-context";
@@ -8,7 +7,8 @@ import { useStrings } from "../../lib/i18n/use-strings";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ProductList } from "../../components/ProductList";
-import { ShopByBrands } from "../../components/ShopByBrands";
+import { BrandChip, BrandHeader, showsBrandFilter } from "../../components/BrandFilter";
+import { FilterSheet } from "../../components/search/FilterSheet";
 import { brandsFromProducts } from "../../lib/brand-strip";
 import { FloatingCart } from "../../components/FloatingCart";
 import { ProductCardSkeleton } from "../../components/SkeletonLoader";
@@ -23,7 +23,8 @@ export default function StoreDetailScreen() {
   const [loading, setLoading] = useState(true);
   const [filterText, setFilterText] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
-  const [brandId, setBrandId] = useState<string | null>(null);
+  const [brandIds, setBrandIds] = useState<string[]>([]);
+  const [brandSheet, setBrandSheet] = useState(false);
 
   const categories = useMemo(() => {
     const catMap = new Map<string, string>();
@@ -48,11 +49,11 @@ export default function StoreDetailScreen() {
 
   const brandTiles = useMemo(() => brandsFromProducts(filteredProducts), [filteredProducts]);
   const visibleProducts = useMemo(
-    () => (brandId ? filteredProducts.filter((p) => p.product.brand?.id === brandId) : filteredProducts),
-    [filteredProducts, brandId],
+    () => (brandIds.length ? filteredProducts.filter((p) => brandIds.includes(p.product.brand?.id ?? "")) : filteredProducts),
+    [filteredProducts, brandIds],
   );
 
-  useEffect(() => setBrandId(null), [activeCategory]);
+  useEffect(() => setBrandIds([]), [activeCategory]);
 
   useEffect(() => {
     if (!id) return;
@@ -120,26 +121,25 @@ export default function StoreDetailScreen() {
           autoCapitalize="none"
           autoCorrect={false}
         />
-        {brandId && (
-          <TouchableOpacity style={styles.brandChip} onPress={() => setBrandId(null)} activeOpacity={0.7}>
-            <Text style={styles.brandChipText}>{brandTiles.find((b) => b.id === brandId)?.name}</Text>
-            <Ionicons name="close" size={14} color="#fff" />
-          </TouchableOpacity>
+        {showsBrandFilter({ brands: brandTiles, selectedIds: brandIds }) && (
+          <View style={styles.chipRow}>
+            <BrandChip brands={brandTiles} selectedIds={brandIds} onPress={() => setBrandSheet(true)} />
+          </View>
         )}
         <ProductList
           products={visibleProducts}
           layout="grid"
-          midSlot={{
-            afterRows: 2,
-            bleed: spacing.md,
-            element: <ShopByBrands brands={brandTiles} selectedId={brandId} onSelect={setBrandId} />,
-          }}
+          ListHeaderComponent={<BrandHeader brands={brandTiles} selectedIds={brandIds} onChange={setBrandIds} bleed={spacing.md} />}
           keyboardDismissMode="on-drag"
           keyboardShouldPersistTaps="handled"
           contentContainerStyle={styles.grid}
           ListEmptyComponent={<Text style={styles.empty}>{t.noProductsAvailable}</Text>}
         />
         <FloatingCart />
+        <FilterSheet
+          visible={brandSheet} brandsOnly brands={brandTiles} value={{ brandIds, foodType: null }}
+          onApply={(v) => setBrandIds(v.brandIds)} onClose={() => setBrandSheet(false)}
+        />
       </View>
     </ProductActionsProvider>
   );
@@ -166,12 +166,7 @@ const styles = StyleSheet.create({
     borderWidth: 1, borderColor: colors.border, borderRadius: 8,
     padding: spacing.sm, margin: spacing.md, fontSize: fontSize.md, backgroundColor: colors.surface,
   },
-  brandChip: {
-    flexDirection: "row", alignItems: "center", alignSelf: "flex-start", gap: 4, height: 30,
-    marginHorizontal: spacing.md, marginBottom: spacing.sm, paddingHorizontal: 10,
-    borderRadius: 16, backgroundColor: colors.primary,
-  },
-  brandChipText: { fontSize: fontSize.sm, color: "#fff", fontWeight: "600" },
+  chipRow: { flexDirection: "row", marginHorizontal: spacing.md, marginBottom: spacing.sm },
   grid: { paddingBottom: spacing.md },
   empty: { textAlign: "center", color: colors.textSecondary, marginTop: spacing.xl },
 });

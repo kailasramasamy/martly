@@ -1,4 +1,4 @@
-// Monkey-patch StyleSheet.create to inject the App-* fontFamily (Manrope, or Noto Sans Tamil in Tamil) into all text styles.
+// Monkey-patch StyleSheet.create to inject the App-* fontFamily (Plus Jakarta Sans, or Noto Sans Tamil in Tamil) into all text styles.
 // On Android, custom fonts don't resolve via fontWeight alone — each weight needs
 // an explicit fontFamily. This file MUST be the first import in the app entry point.
 

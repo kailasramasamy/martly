@@ -17,6 +17,7 @@
     "@expo-google-fonts/mukta-malar": "^0.4.1",
     "@expo-google-fonts/noto-sans-tamil": "^0.4.3",
     "@expo-google-fonts/playfair-display": "^0.4.2",
+    "@expo-google-fonts/plus-jakarta-sans": "^0.4.2",
     "@expo-google-fonts/yatra-one": "^0.4.1",
     "@expo/metro-runtime": "~6.1.2",
     "@martly/shared": "workspace:*",

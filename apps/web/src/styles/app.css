@@ -3,7 +3,7 @@
 @import "tailwindcss" source("../");
 
 @theme {
-  --font-sans: "Manrope", "Noto Sans Tamil", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Tamil", ui-sans-serif, system-ui, sans-serif;
   --color-brand: #0f766e;
   --color-brand-light: #14b8a6;
   --color-brand-mint: #2dd4bf;

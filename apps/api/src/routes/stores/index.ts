@@ -251,10 +251,12 @@ export async function storeRoutes(app: FastifyInstance) {
 
   // Get store products (guests allowed)
   app.get<{ Params: { id: string } }>("/:id/products", { preHandler: [authenticateOptional] }, async (request, reply) => {
-    const { page = 1, pageSize = 200, isFeatured, hasDiscount, sortBy, q, categoryId, brandId, foodType, productId, productIds } = request.query as {
+    const { page = 1, pageSize = 200, isFeatured, hasDiscount, sortBy, q, categoryId, brandId, brandIds, foodType, productId, productIds } = request.query as {
       page?: number; pageSize?: number; isFeatured?: string; hasDiscount?: string; sortBy?: string; q?: string;
-      categoryId?: string; brandId?: string; foodType?: string; productId?: string; productIds?: string;
+      categoryId?: string; brandId?: string; brandIds?: string; foodType?: string; productId?: string; productIds?: string;
     };
+    // Several brands from the brand sheet; older app builds send one brandId
+    const brands = brandIds ? brandIds.split(",").filter(Boolean) : brandId ? [brandId] : [];
     const skip = (Number(page) - 1) * Number(pageSize);
 
     const store = await app.prisma.store.findUnique({ where: { id: request.params.id }, include: { organization: { select: { isTemplate: true } } } });
@@ -306,7 +308,7 @@ export async function storeRoutes(app: FastifyInstance) {
       boost = await storeBrandBoost(app.prisma, store.id);
       const subcategoryIds = await subcategoryIdsUnder(app.prisma, categoryId);
       where.product = { ...(where.product as Record<string, unknown> ?? {}), subcategoryId: { in: subcategoryIds } };
-      const plain = !hasDiscount && !sortBy && !brandId && !foodType && !productId && !productIds && !isFeatured;
+      const plain = !hasDiscount && !sortBy && !brands.length && !foodType && !productId && !productIds && !isFeatured;
       ad = plain ? await listingAd(app.prisma, store, subcategoryIds) : null;
       // Kept out of the regular results on every page, so it never shows twice
       if (ad) where.productId = { notIn: [ad.productId] };
@@ -314,9 +316,12 @@ export async function storeRoutes(app: FastifyInstance) {
     if (foodType) {
       where.product = { ...(where.product as Record<string, unknown> ?? {}), foodType };
     }
-    if (brandId) {
-      const brandWhere = ownBrandStoreId(brandId) === store.id ? ownProductWhere(await storeBrandBoost(app.prisma, store.id)) : { brandId };
-      where.product = { ...(where.product as Record<string, unknown> ?? {}), ...brandWhere };
+    if (brands.length) {
+      // The store's own brand is a set of products rather than a brand id; another store's own brand matches nothing
+      const catalogBrands = brands.filter((b) => ownBrandStoreId(b) === null);
+      const anyOf: Prisma.ProductWhereInput[] = catalogBrands.length ? [{ brandId: { in: catalogBrands } }] : [];
+      if (brands.some((b) => ownBrandStoreId(b) === store.id)) anyOf.push(ownProductWhere(await storeBrandBoost(app.prisma, store.id)));
+      where.product = { ...(where.product as Record<string, unknown> ?? {}), OR: anyOf };
     }
 
     let orderBy: Record<string, string> = { createdAt: "desc" };
@@ -330,9 +335,9 @@ export async function storeRoutes(app: FastifyInstance) {
     const count = (w: Prisma.StoreProductWhereInput) => app.prisma.storeProduct.count({ where: w });
     const listingWhere = where as Prisma.StoreProductWhereInput;
     // A staples aisle leads with the store's loose items; the boost then takes turns with the rest as usual
-    const looseIds = categoryId && !sortBy && !brandId ? await stapleSubcategoryIds(app.prisma) : [];
+    const looseIds = categoryId && !sortBy && !brands.length ? await stapleSubcategoryIds(app.prisma) : [];
     const restBoost = boost && looseIds.length ? { ...boost, stapleSubcategoryIds: [] } : boost;
-    const listingPage = (w: Prisma.StoreProductWhereInput, p: { skip: number; take: number }) => (restBoost && hasBoost(restBoost) && !sortBy && !brandId
+    const listingPage = (w: Prisma.StoreProductWhereInput, p: { skip: number; take: number }) => (restBoost && hasBoost(restBoost) && !sortBy && !brands.length
       ? boostedListingPage(restBoost, w, p, find, count)
       : Promise.all([find(w, p.skip, p.take), count(w)]).then(([rows, n]) => ({ rows, total: n })));
     const pageOf = { skip, take: Number(pageSize) };

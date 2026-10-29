@@ -10,26 +10,26 @@ export interface CategoryProductQuery {
   nodeId: string | null;
   onSale: boolean;
   sortBy: "price_asc" | "price_desc" | null;
-  brandId: string | null;
+  brandIds: string[];
   query: string;
   // Subcategory ids under the node: search runs store-wide, so its results are narrowed to these
   scope: Set<string>;
 }
 
-function listPath({ storeId, nodeId, onSale, sortBy, brandId }: CategoryProductQuery, page: number): string {
+function listPath({ storeId, nodeId, onSale, sortBy, brandIds }: CategoryProductQuery, page: number): string {
   const params = new URLSearchParams({ categoryId: nodeId ?? "", page: String(page), pageSize: String(PAGE_SIZE) });
   if (onSale) params.set("hasDiscount", "true");
   if (sortBy) params.set("sortBy", sortBy);
-  if (brandId) params.set("brandId", brandId);
+  if (brandIds.length) params.set("brandIds", brandIds.join(","));
   return `/api/v1/stores/${storeId}/products?${params}`;
 }
 
 // Search returns every match at once, so its filters run here instead of on the server
-function narrowSearch(products: StoreProduct[], { scope, onSale, brandId }: CategoryProductQuery): StoreProduct[] {
+function narrowSearch(products: StoreProduct[], { scope, onSale, brandIds }: CategoryProductQuery): StoreProduct[] {
   return products.filter((p) =>
     scope.has(p.product.subcategory?.id ?? "")
     && (!onSale || p.pricing?.discountActive === true)
-    && (!brandId || p.product.brand?.id === brandId));
+    && (!brandIds.length || brandIds.includes(p.product.brand?.id ?? "")));
 }
 
 // A category's products a page at a time: the next page is fetched only when the list nears its end
@@ -41,6 +41,7 @@ export function useCategoryProducts(q: CategoryProductQuery) {
   const totalPages = useRef(1);
   const request = useRef(0); // drops responses for filters the user has already moved on from
   const term = q.query.trim();
+  const brandKey = q.brandIds.join(",");
 
   useEffect(() => {
     if (!q.storeId || !q.nodeId) {
@@ -59,7 +60,7 @@ export function useCategoryProducts(q: CategoryProductQuery) {
       })
       .catch(() => { if (id === request.current) setProducts([]); })
       .finally(() => { if (id === request.current) setLoading(false); });
-  }, [q.storeId, q.nodeId, q.onSale, q.sortBy, q.brandId, term, q.scope]);
+  }, [q.storeId, q.nodeId, q.onSale, q.sortBy, brandKey, term, q.scope]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const loadMore = useCallback(() => {
     if (loading || loadingMore || page.current >= totalPages.current) return;

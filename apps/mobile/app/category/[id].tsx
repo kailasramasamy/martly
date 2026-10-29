@@ -20,7 +20,8 @@ import { ProductList } from "../../components/ProductList";
 import { FloatingCart } from "../../components/FloatingCart";
 import { openBannerTarget } from "../../lib/banner-action";
 import { HeroBannerSlide } from "../../components/HeroBannerSlide";
-import { ShopByBrands } from "../../components/ShopByBrands";
+import { BrandChip, BrandHeader } from "../../components/BrandFilter";
+import { FilterSheet } from "../../components/search/FilterSheet";
 import { CategorySidebar } from "../../components/CategorySidebar";
 import { CategoryFilterBar, type PriceSort } from "../../components/CategoryFilterBar";
 import { useCategoryFacets, useCategoryProducts } from "../../lib/use-category-browse";
@@ -85,7 +86,8 @@ export default function CategoryScreen() {
   const [activeGrandchild, setActiveGrandchild] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
-  const [brandId, setBrandId] = useState<string | null>(openBrandId ?? null);
+  const [brandIds, setBrandIds] = useState<string[]>(openBrandId ? [openBrandId] : []);
+  const [brandSheet, setBrandSheet] = useState(false);
   const [topBanners, setTopBanners] = useState<Banner[]>([]);
 
   const gridRef = useRef<FlatList>(null);
@@ -145,7 +147,7 @@ export default function CategoryScreen() {
   const nodeFacets = selectedNodeId === id ? pageFacets : selectionFacets;
 
   const { products, loading, loadingMore, loadMore } = useCategoryProducts({
-    storeId, nodeId: selectedNodeId, onSale: filterOnSale, sortBy, brandId, query: debouncedQuery, scope,
+    storeId, nodeId: selectedNodeId, onSale: filterOnSale, sortBy, brandIds, query: debouncedQuery, scope,
   });
 
   const withCounts = useCallback(
@@ -166,18 +168,18 @@ export default function CategoryScreen() {
     (subId: string | null) => {
       setActiveSub((prev) => (prev === subId ? null : subId));
       setActiveGrandchild(null);
-      setBrandId(null);
+      setBrandIds([]);
       scrollToTop();
     },
     [scrollToTop]
   );
 
   // Scroll to top when filters change
-  useEffect(scrollToTop, [filterOnSale, sortBy, activeGrandchild, brandId]);
+  useEffect(scrollToTop, [filterOnSale, sortBy, activeGrandchild, brandIds]);
 
   const handleBannerPress = useCallback((banner: Banner) => openBannerTarget(banner), []);
 
-  const hasActiveFilters = filterOnSale || sortBy !== null || activeGrandchild !== null || brandId !== null || searchQuery.trim().length > 0;
+  const hasActiveFilters = filterOnSale || sortBy !== null || activeGrandchild !== null || brandIds.length > 0 || searchQuery.trim().length > 0;
   const hasSidebar = subcategories.length > 0;
 
   const renderTopBanner = (narrow: boolean) => {
@@ -199,11 +201,10 @@ export default function CategoryScreen() {
       activePill={activeGrandchild}
       onPillSelect={(gcId) => {
         setActiveGrandchild(gcId);
-        setBrandId(null);
+        setBrandIds([]);
         scrollToTop();
       }}
-      brandName={brandId ? brandTiles.find((b) => b.id === brandId)?.name ?? null : null}
-      onClearBrand={() => setBrandId(null)}
+      brandChip={<BrandChip brands={brandTiles} selectedIds={brandIds} onPress={() => setBrandSheet(true)} />}
       onSale={filterOnSale}
       onToggleSale={() => setFilterOnSale((v) => !v)}
       sortBy={sortBy}
@@ -247,15 +248,18 @@ export default function CategoryScreen() {
         layout="grid"
         sortBy={sortBy ?? undefined}
         cardWidth={narrow && contentWidth > 0 ? (contentWidth - 20 - GRID_GAP) / 2 : GRID_CARD_WIDTH}
-        ListHeaderComponent={renderTopBanner(narrow)}
+        ListHeaderComponent={(
+          <>
+            {renderTopBanner(narrow)}
+            <BrandHeader
+              brands={brandTiles} selectedIds={brandIds} onChange={setBrandIds}
+              onVisit={(b) => router.push(`/brand/${b.id}`)} bleed={narrow ? 0 : styles.grid.paddingHorizontal}
+            />
+          </>
+        )}
         onEndReached={loadMore}
         onEndReachedThreshold={0.6}
         ListFooterComponent={loadingMore ? <Loader style={styles.pageLoader} /> : null}
-        midSlot={{
-          afterRows: 2,
-          bleed: narrow ? styles.gridNarrow.paddingHorizontal : styles.grid.paddingHorizontal,
-          element: <ShopByBrands brands={brandTiles} selectedId={brandId} onSelect={setBrandId} onVisit={(b) => router.push(`/brand/${b.id}`)} />,
-        }}
         contentContainerStyle={[
           styles.grid,
           narrow && styles.gridNarrow,
@@ -288,6 +292,10 @@ export default function CategoryScreen() {
         )}
 
         <FloatingCart />
+        <FilterSheet
+          visible={brandSheet} brandsOnly brands={brandTiles} value={{ brandIds, foodType: null }}
+          onApply={(v) => setBrandIds(v.brandIds)} onClose={() => setBrandSheet(false)}
+        />
       </View>
     </ProductActionsProvider>
   );

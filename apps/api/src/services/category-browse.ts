@@ -9,8 +9,8 @@ export async function subcategoryIdsUnder(prisma: PrismaClient, nodeId: string):
   return subs.length > 0 ? subs.map((s) => s.id) : [nodeId];
 }
 
-// How many products a store lists in each subcategory under a node, and its top brands there
-export async function categoryFacets(prisma: PrismaClient, storeId: string, nodeId: string, maxBrands = 10): Promise<CategoryFacets> {
+// How many products a store lists in each subcategory under a node, and every brand there, most products first
+export async function categoryFacets(prisma: PrismaClient, storeId: string, nodeId: string): Promise<CategoryFacets> {
   const subIds = await subcategoryIdsUnder(prisma, nodeId);
   const listed = Prisma.sql`
     FROM store_products sp JOIN products p ON p.id = sp.product_id LEFT JOIN brands b ON b.id = p.brand_id
@@ -21,7 +21,7 @@ export async function categoryFacets(prisma: PrismaClient, storeId: string, node
     prisma.$queryRaw<{ id: string; name: string; imageUrl: string | null; count: bigint }[]>`
       SELECT b.id, b.name, b.image_url AS "imageUrl", COUNT(DISTINCT p.id) AS count
       ${listed} AND b.id IS NOT NULL
-      GROUP BY b.id ORDER BY count DESC, b.name LIMIT ${maxBrands}`,
+      GROUP BY b.id ORDER BY count DESC, b.name`,
   ]);
   return {
     subcategoryCounts: Object.fromEntries(counts.map((c) => [c.id, Number(c.count)])),

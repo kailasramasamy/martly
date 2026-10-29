@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { View, Text, TouchableOpacity, TextInput, StyleSheet, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useLanguage } from "../lib/language-context";
@@ -18,8 +19,8 @@ interface CategoryFilterBarProps {
   pills: Pill[];
   activePill: string | null;
   onPillSelect: (id: string | null) => void;
-  brandName: string | null;
-  onClearBrand: () => void;
+  /** The Brands chip, first among the filter chips */
+  brandChip?: ReactNode;
   onSale: boolean;
   onToggleSale: () => void;
   sortBy: PriceSort | null;
@@ -82,12 +83,7 @@ export function CategoryFilterBar(props: CategoryFilterBarProps) {
       )}
 
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.chipScroll} contentContainerStyle={styles.bar}>
-        {props.brandName && (
-          <TouchableOpacity style={[styles.chip, styles.chipActive]} onPress={props.onClearBrand} activeOpacity={0.7}>
-            <Text style={[styles.chipText, styles.chipTextActive]}>{props.brandName}</Text>
-            <Ionicons name="close" size={13} color="#fff" />
-          </TouchableOpacity>
-        )}
+        {props.brandChip}
         <TouchableOpacity style={[styles.chip, props.onSale && styles.chipActive]} onPress={props.onToggleSale} activeOpacity={0.7}>
           <Ionicons name="pricetag" size={13} color={props.onSale ? "#fff" : "#64748b"} />
           <Text style={[styles.chipText, props.onSale && styles.chipTextActive]}>{t.onSale}</Text>
