@@ -1,0 +1,78 @@
+{
+  "brand": "Ruchi (CavinKare)",
+  "manufacturer": "CavinKare Pvt. Ltd., Chennai",
+  "feed": "ruchi-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/ruchi/logo-ad39adfb.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Ruchi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Lime\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Lime Pickle"
+      ]
+    },
+    {
+      "match": "^Cut\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Mango\\ Thokku\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Mango\\ Ginger\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Amla\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Garlic\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    }
+  ]
+}

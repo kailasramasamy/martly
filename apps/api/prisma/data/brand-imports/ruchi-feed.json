@@ -1,0 +1,441 @@
+[
+ {
+  "title": "Lime Pickle",
+  "handle": "lime-pickle",
+  "vendor": "Ruchi (CavinKare)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40028947_3-ruchi-magic-lime-pickle.jpg"
+    },
+    "barcode": "8902979035194"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028947_3-ruchi-magic-lime-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028947-2_3-ruchi-magic-lime-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028947-3_3-ruchi-magic-lime-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028947-4_3-ruchi-magic-lime-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028947-5_3-ruchi-magic-lime-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028947-6_3-ruchi-magic-lime-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028947-7_1-ruchi-magic-lime-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028947-8_1-ruchi-magic-lime-pickle.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your meals with the tangy and zesty flavour of Ruchi Magic Lime Pickle. Crafted using fresh, natural yellow lemons and an authentic, age-old recipe, this pickle bursts with traditional Indian flavours. Enjoy its unique taste and texture with a variety of dishes, from curd rice and chips to khakra, farsan and dhokla. The hygienic packaging ensures the product remains fresh over time, allowing you to savour the novelty of this delightful pickle. Indulge in the perfect balance of tanginess and spice that will add an extra zing to all your meals.",
+   "ingredients": "Lime Pieces (60%), Iodized Salt, Water, Refined Rice Bran Oil, Chilli, Mixed Spices, Acidity Regulators (INS 260, INS 330), Asafoetida, CONTAINS PERMITTED CLASS I PRESERVATIVE (INS 211)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy, kcal": "93",
+    "Protein, g": "1.7",
+    "Carbohydrate, g": "8.6",
+    "Added Sugar, g": "0.0",
+    "Fat, g": "5.7"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place\n*Avoid direct sunlight",
+   "manufacturerName": "Kabini Agro Foods India Pvt. Ltd. S. No 432/1 & 433/B Dindal Village & Post",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cut Mango Pickle",
+  "handle": "cut-mango-pickle",
+  "vendor": "Ruchi (CavinKare)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40028944_4-ruchi-magic-cut-mango-pickle.jpg"
+    },
+    "barcode": "8902979035132"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028944_4-ruchi-magic-cut-mango-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028944-2_4-ruchi-magic-cut-mango-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028944-3_4-ruchi-magic-cut-mango-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028944-4_4-ruchi-magic-cut-mango-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028944-5_4-ruchi-magic-cut-mango-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028944-6_4-ruchi-magic-cut-mango-pickle.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Made of carefully vetted fresh mangoes from the mango grooves across South India, Ruchi Magic Cut Mango pickle is a taste tangling delightful partake for many when served with snack items like Khakra, Chips and French fries. It is also a yummy appetite when served with nicely roasted crispy Ghee Dosa, thick curd rice and bread.",
+   "ingredients": "Mango Pieces, Chilli, Portable Water, Iodised Salt, Rice Bran Oil, Mixed Spices, Asafoetida, Acidity Regulators (Ins 260 And Ins 330)",
+   "nutritionalInfo": {
+    "Energy": "158 kcal",
+    "Protein": "2.5 g",
+    "Carbohydrates": "10.2 g",
+    "Fat": "11.9 g"
+   },
+   "storageInstructions": "* Store in a cool, dry & hygienic place\n* Do not refrigerate",
+   "manufacturerName": "CAVINKARE PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Thokku Pickle",
+  "handle": "mango-thokku-pickle",
+  "vendor": "Ruchi (CavinKare)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40028950_3-ruchi-pickle-mango-thokku.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028950_3-ruchi-pickle-mango-thokku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028950-2_3-ruchi-pickle-mango-thokku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028950-3_3-ruchi-pickle-mango-thokku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028950-4_3-ruchi-pickle-mango-thokku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028950-5_3-ruchi-pickle-mango-thokku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028950-6_1-ruchi-pickle-mango-thokku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028950-7_1-ruchi-pickle-mango-thokku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028950-8_1-ruchi-pickle-mango-thokku.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ruchi Pickle - Mango Thokku is made of grated, juicy mangoes and is a delicious, piquant pickle that makes a great accompaniment with dosa, idly and rotis. It is a tongue-tickling, hot and sour combo that tempts you to savour it repeatedly. This pickle is specially made for food lovers.",
+   "ingredients": "Grated Mango (66%), Iodized Salt, Refined Rice Bran Oil, Chilli, Mixed Spices, Potable Water, Acidity Regulators (INS 260, INS 330), Asafoetida, PERMITTED CLASS II PRESERVATIVE (INS 211)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy, kcal": "151",
+    "Protein, g": "1.9",
+    "Carbohydrate, g": "9.5",
+    "Added Sugar, g": "0.0",
+    "Fat, g": "11.7"
+   },
+   "storageInstructions": "*Store in a cool, dry & hygienic place\n*Use a spoon while serving",
+   "manufacturerName": "CAVINKARE PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Ginger Pickle",
+  "handle": "mango-ginger-pickle",
+  "vendor": "Ruchi (CavinKare)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40028949_2-ruchi-pickle-mango-ginger.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028949_2-ruchi-pickle-mango-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028949-2_2-ruchi-pickle-mango-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028949-3_2-ruchi-pickle-mango-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028949-4_2-ruchi-pickle-mango-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028949-5_2-ruchi-pickle-mango-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028949-6_2-ruchi-pickle-mango-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028949-7_1-ruchi-pickle-mango-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028949-8_1-ruchi-pickle-mango-ginger.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Made of traditionally passed recipes, the aromatic and tangy Ruchi Magic Mango Ginger pickle makes your dish delicious and delightful. The look-alike of Ginger with the flavour of Raw Mango, Mango Ginger is certainly a great appetizer when served with Roti, Puri and plain rice topped with ghee.",
+   "ingredients": "Mango Ginger Paste, Water, Edile Vegetable Oil, Salt, Water, Tamarind, Jaggery, Chilli, Spices And Condiments, Bengal Gram, Black Gram, Acidity Regulators(E260, E330) And Asafoetida.\nClass Ii Preservatives (E211)",
+   "storageInstructions": "Store in a cool, dry & hygienic place. Use a spoon while serving. Ideal accompaniment with everyday meals, or use as a spread on bread or parathas.",
+   "manufacturerName": "CAVINKARE PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Garlic Pickle",
+  "handle": "garlic-pickle",
+  "vendor": "Ruchi (CavinKare)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40028945_3-ruchi-magic-garlic-pickle.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028945_3-ruchi-magic-garlic-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028945-2_3-ruchi-magic-garlic-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028945-3_3-ruchi-magic-garlic-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028945-4_3-ruchi-magic-garlic-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028945-5_3-ruchi-magic-garlic-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028945-6_2-ruchi-magic-garlic-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028945-7_1-ruchi-magic-garlic-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028945-8_1-ruchi-magic-garlic-pickle.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the authentic taste of tradition with Ruchi Magic Pickles. Founded in 1981, this brand has mastered the art of crafting delectable pickles using time-honoured recipes developed over generations. Boasting a tantalising aroma of freshly peeled white garlic cloves, each jar of Ruchi Magic Pickles promises an enriched, traditional flavour that will delight your senses. With eighteen mouth-watering variants to choose from, this large and loyal fan base can attest to the unparalleled authenticity and delectable taste of these pickles, firmly rooted in the rich culinary heritage of India. Indulge in the perfect balance of tradition and taste with Ruchi Magic Pickles.",
+   "ingredients": "Garlic Cloves And Crushed (22%), Potable Water, Iodised Salt, Refined Rice Bran Oil, Tamarind, Jaggery, Chilli, Mixed Spices, Ginger Paste, Split Bengal Gram (Dal Chana), Split Black Gram (Urad Dal), Acidity Regulators (Ins 260 And Ins 330) And Asafoetida",
+   "nutritionalInfo": {
+    "Serving Size": "100g",
+    "Energy": "210 kcal",
+    "Protein": "3.2 g",
+    "Carbohydrate": "21.1 g",
+    "Added Sugar": "5.8 g",
+    "Fat": "12.6 g"
+   },
+   "storageInstructions": "*Store in a cool and dry place away from sunlight",
+   "manufacturerName": "Kabini Agro Foods India Pvt. Ltd. S. No 432/1 & 433/B Dindal Village & Post",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ginger Pickle",
+  "handle": "ginger-pickle",
+  "vendor": "Ruchi (CavinKare)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40028946_3-ruchi-magic-ginger-pickle.jpg"
+    },
+    "barcode": "8902979035156"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028946_3-ruchi-magic-ginger-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028946-2_3-ruchi-magic-ginger-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028946-3_3-ruchi-magic-ginger-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028946-4_3-ruchi-magic-ginger-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028946-5_3-ruchi-magic-ginger-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028946-6_3-ruchi-magic-ginger-pickle.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ruchi’s magical recipe will make you fall for the all-new Ruchi Magic Ginger pickle. Now, spice up your food with the Ruchi Magic Ginger pickle that gives an everlasting impact on your taste buds. Blends well with Rotis and Meals. It is a perfect combination for curd rice. Pickle gives a particularly good taste as well as spicy.\nFounded in 1981, Ruchi Magic understands the tradition and culture that goes into making every single bottle of a pickle. Using traditional recipes developed over time, Ruchi Magic Pickles has eighteen different mouth-watering variants. A large, loyal, and growing fan base for Ruchi Magic Pickles will vouch for the authenticity of the pickles and their delectable taste. Ruchi Magic Pickles is firmly rooted in tradition and is incredibly tasty.",
+   "ingredients": "Ginger Crushed (17%), Potable Water, Refined Rice Bran Oil, Iodised Salt, Water, Tamarind, Jaggery, Chilli, Mixed Spices, Split Bengal Gram, Split Black Gram, Acidity Regulators (E260, E330) And Asafoetida. Contains Permitted Class II Preservatives.",
+   "usageInstructions": "Use only a dry spoon.\nDo not refrigerate.\nStore in a cool dry place away from sunlight.",
+   "manufacturerName": "Kabini Agro Foods India Pvt. Ltd. S. No 432/1 & 433/B Dindal Village & Post",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Amla Pickle",
+  "handle": "amla-pickle",
+  "vendor": "Ruchi (CavinKare)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40028954_3-ruchi-magic-amla-pickle.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028954_3-ruchi-magic-amla-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028954-2_3-ruchi-magic-amla-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028954-3_3-ruchi-magic-amla-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028954-4_3-ruchi-magic-amla-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028954-5_3-ruchi-magic-amla-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028954-6_2-ruchi-magic-amla-pickle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40028954-7_1-ruchi-magic-amla-pickle.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ruchi magic is an authentic pickle made in a traditional way. Amla pickle is made of finely grained amla fruits that are tarty in nature and spicy sour in taste.\nFounded in 1981, Ruchi Magic understands the tradition and culture that goes into making every single bottle of a pickle. Using traditional recipes developed over time, Ruchi Magic Pickles has eighteen different mouth-watering variants. A large, loyal, and growing fan base for Ruchi Magic Pickles will vouch for the authenticity of the pickles and the delectable taste. Ruchi Magic Pickles is firmly rooted in tradition and is incredibly tasty.",
+   "ingredients": "Amla Whole And Pieces (40%), Refined Rice Bran Oil, Iodised Salt, Potable Water, Tamarind, Chilli, Mixed Spices, Split Bengal Gram, (Dal Chana), Split Black Gram(Urad Dal), Acidity Regulators (Ins 260 And Ins 330) And Asafoetida.",
+   "usageInstructions": "Use only a dry spoon, don’t refrigerate. Store hygienically, in a cool and dry place away from sunlight.",
+   "nutritionalInfo": {
+    "Figures based on calculated values(ref": "NIN, ICMR and USFDA norms)"
+   },
+   "manufacturerName": "Kabini Agro Foods India Pvt. Ltd. S. No 432/1 & 433/B Dindal Village & Post",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tomato Garlic Pickle",
+  "handle": "tomato-garlic-pickle",
+  "vendor": "Ruchi (CavinKare)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40236850_1-ruchi-magic-tomato-garlic-pickle-authentic-taste-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40236850_1-ruchi-magic-tomato-garlic-pickle-authentic-taste-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40236850-2_1-ruchi-magic-tomato-garlic-pickle-authentic-taste-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40236850-3_1-ruchi-magic-tomato-garlic-pickle-authentic-taste-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40236850-4_1-ruchi-magic-tomato-garlic-pickle-authentic-taste-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40236850-5_1-ruchi-magic-tomato-garlic-pickle-authentic-taste-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40236850-6_1-ruchi-magic-tomato-garlic-pickle-authentic-taste-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40236850-7_1-ruchi-magic-tomato-garlic-pickle-authentic-taste-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Made of plump red tomatoes and curvy white garlic, Ruchi Tomato Garlic pickle is mouthwatering and scrumptious. It provides the heavenly taste of age-old authentic homemade pickle to delight your taste buds. This is the most preferred flavour of the South Indians. Now make your Rotis, Breads and Nachos magical with Ruchi Tomato Garlic pickle.",
+   "ingredients": "Tomato Crushed (35%), Garlic Crushed(17%), Mango Crushed, Iodized Salt, Refined Rice Bran Oil, Chilli, Mixed Spices, Potable Water, Green Chillies Crushed, Tamarind, Jaggery, Acidity Regulators (INS 260 and INS 330) and Asafoetida.",
+   "usageInstructions": "1. Can be served with meals or as an interesting condiment. Goes well with all Indian cuisines and dishes. Ideal for travel time too when you need something tangy yet easy to enhance flavours.\n2. Eat it with a hot plate of rice and a dollop of ghee to enjoy a delicious meal.",
+   "manufacturerName": "Rohit India",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014042001362"
+  }
+ }
+]
