@@ -137,18 +137,21 @@ async function reorderNudgeSchedulerPlugin(app: FastifyInstance) {
     }
   }
 
-  let intervalId: ReturnType<typeof setInterval>;
+  const run = app.scheduledJob("reorder-nudge", processReorderNudges);
+  let startTimer: ReturnType<typeof setTimeout> | undefined;
+  let intervalId: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", () => {
     // Delay first run to let the server settle
-    setTimeout(() => {
-      processReorderNudges();
-      intervalId = setInterval(processReorderNudges, INTERVAL_MS);
+    startTimer = setTimeout(() => {
+      void run();
+      intervalId = setInterval(run, INTERVAL_MS);
     }, STARTUP_DELAY_MS);
     app.log.info("Reorder nudge scheduler registered (24h interval, 5min startup delay)");
   });
 
   app.addHook("onClose", () => {
+    clearTimeout(startTimer);
     if (intervalId) clearInterval(intervalId);
   });
 }

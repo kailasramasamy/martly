@@ -11,7 +11,7 @@ const STARTUP_DELAY_MS = 5 * 60_000;
 async function monthlyListSchedulerPlugin(app: FastifyInstance) {
   let timer: ReturnType<typeof setTimeout> | undefined;
   const log = { info: (msg: string) => app.log.info(msg), error: (err: unknown, msg: string) => app.log.error(err, msg) };
-  const run = () => sendMonthlyListReminders(app.fcm, app.prisma, log).catch((err: unknown) => app.log.error(err, "Monthly list reminders failed"));
+  const run = app.scheduledJob("monthly-list", () => sendMonthlyListReminders(app.fcm, app.prisma, log));
 
   function scheduleDaily() {
     timer = setTimeout(async () => {

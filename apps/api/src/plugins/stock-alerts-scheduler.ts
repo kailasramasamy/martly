@@ -9,9 +9,7 @@ async function stockAlertsSchedulerPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", async () => {
-    interval = setInterval(() => {
-      scanStockCrossings(app.fcm, app.prisma).catch((err: unknown) => app.log.error(err, "Stock alerts scan failed"));
-    }, INTERVAL_MS);
+    interval = setInterval(app.scheduledJob("stock-alerts", () => scanStockCrossings(app.fcm, app.prisma)), INTERVAL_MS);
     app.log.info("Stock alerts scheduler started (every 5 minutes)");
   });
 

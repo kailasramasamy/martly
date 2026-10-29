@@ -9,9 +9,7 @@ async function returnsSchedulerPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", async () => {
-    interval = setInterval(() => {
-      runReturnSweep(app).catch((err: unknown) => app.log.error(err, "Returns scheduler run failed"));
-    }, INTERVAL_MS);
+    interval = setInterval(app.scheduledJob("returns", () => runReturnSweep(app)), INTERVAL_MS);
     app.log.info("Returns scheduler started (hourly)");
   });
 

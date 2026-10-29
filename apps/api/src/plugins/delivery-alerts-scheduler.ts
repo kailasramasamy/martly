@@ -9,10 +9,8 @@ async function deliveryAlertsSchedulerPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", async () => {
-    interval = setInterval(() => {
-      Promise.all([alertStaleRiders(app.fcm, app.prisma), alertUnclaimedFailures(app.fcm, app.prisma)])
-        .catch((err: unknown) => app.log.error(err, "Delivery alerts scheduler run failed"));
-    }, INTERVAL_MS);
+    const run = () => Promise.all([alertStaleRiders(app.fcm, app.prisma), alertUnclaimedFailures(app.fcm, app.prisma)]);
+    interval = setInterval(app.scheduledJob("delivery-alerts", run), INTERVAL_MS);
     app.log.info("Delivery alerts scheduler started (every minute)");
   });
 

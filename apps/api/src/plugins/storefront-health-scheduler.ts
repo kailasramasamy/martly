@@ -14,9 +14,7 @@ async function storefrontHealthSchedulerPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", async () => {
-    interval = setInterval(() => {
-      run().catch((err: unknown) => app.log.error(err, "Storefront health run failed"));
-    }, INTERVAL_MS);
+    interval = setInterval(app.scheduledJob("storefront-health", run), INTERVAL_MS);
     app.log.info("Storefront health scheduler started (every 6 h)");
   });
 

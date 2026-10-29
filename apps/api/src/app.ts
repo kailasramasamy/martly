@@ -102,6 +102,9 @@ import attentionSchedulerPlugin from "./plugins/attention-scheduler.js";
 import monthlyListSchedulerPlugin from "./plugins/monthly-list-scheduler.js";
 import packImagesPlugin from "./plugins/pack-images.js";
 import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
+import schedulerLockPlugin from "./plugins/scheduler-lock.js";
+import alertPruneSchedulerPlugin from "./plugins/alert-prune-scheduler.js";
+import { checkReadiness } from "./services/health.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -136,6 +139,7 @@ export async function buildApp() {
   await app.register(prismaPlugin);
   await app.register(firebasePlugin);
   await app.register(websocketPlugin);
+  await app.register(schedulerLockPlugin);
   await app.register(notificationSchedulerPlugin);
   await app.register(reorderNudgeSchedulerPlugin);
   await app.register(subscriptionSchedulerPlugin);
@@ -153,6 +157,7 @@ export async function buildApp() {
   await app.register(settlementSchedulerPlugin);
   await app.register(attentionSchedulerPlugin);
   await app.register(monthlyListSchedulerPlugin);
+  await app.register(alertPruneSchedulerPlugin);
   await app.register(catalogAgentWorkerPlugin);
   await app.register(packImagesPlugin);
 
@@ -164,8 +169,14 @@ export async function buildApp() {
   });
 
   // ── Health Check ──────────────────────────────────
+  // Liveness: the process answers. Readiness (Railway's deploy healthcheck): the database answers too
   app.get("/health", async () => {
     return { status: "ok" };
+  });
+  app.get("/health/ready", async (_request, reply) => {
+    const { statusCode, body } = await checkReadiness(() => app.prisma.$queryRaw`SELECT 1`);
+    if (statusCode !== 200) app.log.warn(body, "Readiness check failed");
+    return reply.status(statusCode).send(body);
   });
 
   // ── API Routes ────────────────────────────────────

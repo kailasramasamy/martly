@@ -44,36 +44,27 @@ async function subscriptionSchedulerPlugin(app: FastifyInstance) {
     await notifyStoreBasketSummary(ctx, store.id, dateKey, batch);
   }
 
-  let running = false;
-
   /**
    * Every minute: stores whose cutoff has passed today get tomorrow's orders. Running on after the cutoff minute means
    * a restart or a slow tick at the cutoff no longer skips a day; claimDate keeps each day to a single order.
    */
-  async function processSubscriptions() {
-    if (running) return;
-    running = true;
-    try {
-      const stores = await app.prisma.store.findMany({
-        where: { subscriptionEnabled: true, subscriptionCutoffTime: { lte: currentISTTime() } },
-      });
-      const start = tomorrowIST();
-      const day = { start, end: endOfDayUTC(start) };
-      for (const store of stores) {
-        await processStore(store, day).catch((err: unknown) => app.log.error(err, `Failed to process subscriptions for store ${store.id}`));
-      }
-    } catch (err) {
-      app.log.error(err, "Subscription scheduler: top-level error");
-    } finally {
-      running = false;
+  const processSubscriptions = app.scheduledJob("subscriptions", async () => {
+    const stores = await app.prisma.store.findMany({
+      where: { subscriptionEnabled: true, subscriptionCutoffTime: { lte: currentISTTime() } },
+    });
+    const start = tomorrowIST();
+    const day = { start, end: endOfDayUTC(start) };
+    for (const store of stores) {
+      await processStore(store, day).catch((err: unknown) => app.log.error(err, `Failed to process subscriptions for store ${store.id}`));
     }
-  }
+  });
 
-  let intervalId: ReturnType<typeof setInterval>;
+  let startTimer: ReturnType<typeof setTimeout> | undefined;
+  let intervalId: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", () => {
-    setTimeout(() => {
-      processSubscriptions();
+    startTimer = setTimeout(() => {
+      void processSubscriptions();
       intervalId = setInterval(processSubscriptions, INTERVAL_MS);
     }, STARTUP_DELAY_MS);
     app.log.info(
@@ -82,6 +73,7 @@ async function subscriptionSchedulerPlugin(app: FastifyInstance) {
   });
 
   app.addHook("onClose", () => {
+    clearTimeout(startTimer);
     if (intervalId) clearInterval(intervalId);
   });
 }

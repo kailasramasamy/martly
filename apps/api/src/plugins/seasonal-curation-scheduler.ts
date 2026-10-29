@@ -17,12 +17,12 @@ const ANNOUNCE_WINDOW_IST = { from: 9 * 60, to: 21 * 60 };
 
 /** Pushes collections that just went live; needs no AI keys, so it runs even when curation is disabled */
 function scheduleLiveAnnouncements(app: FastifyInstance) {
-  const announce = () => {
+  const announce = async () => {
     const { minutes } = istNow();
     if (minutes < ANNOUNCE_WINDOW_IST.from || minutes >= ANNOUNCE_WINDOW_IST.to) return;
-    announceLiveCollections(app.fcm, app.prisma).catch((err: unknown) => app.log.error(err, "Announcing live collections failed"));
+    await announceLiveCollections(app.fcm, app.prisma);
   };
-  const interval = setInterval(announce, ANNOUNCE_INTERVAL_MS);
+  const interval = setInterval(app.scheduledJob("seasonal-announce", announce), ANNOUNCE_INTERVAL_MS);
   app.addHook("onClose", () => clearInterval(interval));
 }
 
@@ -34,30 +34,21 @@ async function seasonalCurationSchedulerPlugin(app: FastifyInstance) {
   }
   // Skips aren't persisted, so remember them for this process instead of re-asking the curator every run
   const skipped = new Set<string>();
-  let running = false;
 
-  async function processDueCurations() {
-    if (running) return;
-    running = true;
-    try {
-      const due = await findDueCurations(app.prisma);
-      for (const { org, event } of due) {
-        const key = `${org.id}:${event.id}`;
-        if (skipped.has(key)) continue;
-        try {
-          const result = await curateEvent(app.prisma, org, event, (msg) => app.log.warn(`${org.slug} / ${event.slug}: ${msg}`));
-          if (result.status === "skipped") skipped.add(key);
-          app.log.info({ org: org.slug, event: event.slug, ...result }, "Seasonal curation");
-        } catch (err) {
-          app.log.error(err, `Seasonal curation failed for ${org.slug} / ${event.slug}`);
-        }
+  const processDueCurations = app.scheduledJob("seasonal-curation", async () => {
+    const due = await findDueCurations(app.prisma);
+    for (const { org, event } of due) {
+      const key = `${org.id}:${event.id}`;
+      if (skipped.has(key)) continue;
+      try {
+        const result = await curateEvent(app.prisma, org, event, (msg) => app.log.warn(`${org.slug} / ${event.slug}: ${msg}`));
+        if (result.status === "skipped") skipped.add(key);
+        app.log.info({ org: org.slug, event: event.slug, ...result }, "Seasonal curation");
+      } catch (err) {
+        app.log.error(err, `Seasonal curation failed for ${org.slug} / ${event.slug}`);
       }
-    } catch (err) {
-      app.log.error(err, "Error finding due seasonal curations");
-    } finally {
-      running = false;
     }
-  }
+  });
 
   let timer: ReturnType<typeof setTimeout> | undefined;
 

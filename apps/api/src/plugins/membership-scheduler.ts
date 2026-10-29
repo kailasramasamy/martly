@@ -55,9 +55,7 @@ async function membershipSchedulerPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", async () => {
-    interval = setInterval(() => {
-      run().catch((err: unknown) => app.log.error(err, "Membership scheduler run failed"));
-    }, INTERVAL_MS);
+    interval = setInterval(app.scheduledJob("membership", run), INTERVAL_MS);
     app.log.info("Membership scheduler started (hourly)");
   });
 
