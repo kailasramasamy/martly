@@ -182,7 +182,7 @@ export async function userRoutes(app: FastifyInstance) {
           email: body.email,
           name: body.name,
           passwordHash,
-          phone: body.phone,
+          phone: body.phone || null,
           role: body.role,
         },
         select: { id: true, email: true, name: true, phone: true, role: true, createdAt: true, updatedAt: true },
@@ -245,7 +245,7 @@ export async function userRoutes(app: FastifyInstance) {
 
       const data: Record<string, unknown> = {};
       if (name !== undefined) data.name = name;
-      if (phone !== undefined) data.phone = phone;
+      if (phone !== undefined) data.phone = phone || null;
       if (role !== undefined) data.role = role;
       if (email !== undefined) data.email = email;
       if (password && password.length >= 8) {

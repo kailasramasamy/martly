@@ -1,8 +1,8 @@
 import crypto from "crypto";
+import { authSecret } from "./secrets.js";
 
 const LINK_TTL_MS = 15 * 60 * 1000;
-const secret = () => process.env.JWT_SECRET ?? "dev-secret-change-me";
-const sign = (kind: string, id: string, expires: number) => crypto.createHmac("sha256", secret()).update(`${kind}:${id}:${expires}`).digest("hex");
+const sign = (kind: string, id: string, expires: number) => crypto.createHmac("sha256", authSecret()).update(`${kind}:${id}:${expires}`).digest("hex");
 
 /** Query string that lets a document open in any browser for 15 minutes, so apps can hand it to the system browser */
 export function signedQuery(kind: string, id: string) {

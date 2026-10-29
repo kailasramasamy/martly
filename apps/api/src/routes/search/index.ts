@@ -2,6 +2,7 @@ import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { searchEventSchema, searchLandingQuerySchema, searchLogSchema, searchSuggestQuerySchema } from "@martly/shared/schemas";
 import { authenticateOptional } from "../../middleware/auth.js";
+import { byClient, rateLimits } from "../../middleware/rate-limit.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { buildSearchLanding } from "../../services/search-landing.js";
 import { suggestSearches } from "../../services/search-suggest.js";
@@ -21,7 +22,10 @@ export async function searchRoutes(app: FastifyInstance) {
     return { success: true, data } satisfies ApiResponse<typeof data>;
   });
 
-  app.get("/suggest", { preHandler: [authenticateOptional] }, async (request, reply) => {
+  // Typeahead fires per keystroke, so the limit is roomy; it stops scripted scraping and query floods
+  const suggestLimit = rateLimits(app, [{ max: 120, window: "1 minute", key: byClient }]);
+
+  app.get("/suggest", { preHandler: [authenticateOptional, suggestLimit] }, async (request, reply) => {
     const { storeId, q } = searchSuggestQuerySchema.parse(request.query);
     const store = await findActiveStore(app, storeId);
     if (!store) return reply.notFound("Store not found");

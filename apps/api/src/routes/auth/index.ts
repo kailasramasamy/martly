@@ -3,7 +3,8 @@ import bcrypt from "bcryptjs";
 import { loginSchema, registerSchema, selectOrgSchema, updateProfileSchema, sendOtpSchema, verifyOtpSchema, deleteAccountSchema } from "@martly/shared/schemas";
 import type { ApiResponse, AuthTokens, LoginResponse, OrgSummary } from "@martly/shared/types";
 import type { Permission } from "@martly/shared/constants";
-import { authenticate } from "../../middleware/auth.js";
+import { authenticate, authenticateOrgSelection } from "../../middleware/auth.js";
+import { byBodyField, byIp, rateLimits } from "../../middleware/rate-limit.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { sendNotification } from "../../services/notification.js";
 import { ensureReferralCode } from "../../services/referral-code.js";
@@ -43,7 +44,23 @@ const NO_ORG_ROLES: string[] = ["SUPER_ADMIN", "CUSTOMER", "BRAND_PARTNER"];
 export async function authRoutes(app: FastifyInstance) {
   await app.register(phoneChangeRoutes);
 
-  app.post<{ Body: { email: string; password: string } }>("/login", async (request, reply) => {
+  // Password guessing, SMS pumping (each OTP is a paid SMS) and code guessing, per IP and per target. Mobile carriers
+  // put many shoppers behind one IP, so the per-IP limits stay roomy and the per-phone/email ones are the tight ones.
+  const loginLimit = rateLimits(app, [
+    { max: 30, window: "15 minutes", key: byIp },
+    { max: 10, window: "15 minutes", key: byBodyField("email") },
+  ]);
+  const sendOtpLimit = rateLimits(app, [
+    { max: 20, window: "1 hour", key: byIp },
+    { max: 5, window: "1 hour", key: byBodyField("phone") },
+  ]);
+  const verifyOtpLimit = rateLimits(app, [
+    { max: 40, window: "15 minutes", key: byIp },
+    { max: 10, window: "15 minutes", key: byBodyField("phone") },
+  ]);
+  const registerLimit = rateLimits(app, [{ max: 5, window: "1 hour", key: byIp }]);
+
+  app.post<{ Body: { email: string; password: string } }>("/login", { preHandler: [loginLimit] }, async (request, reply) => {
     const body = loginSchema.parse(request.body);
     const user = await app.prisma.user.findUnique({ where: { email: body.email } });
 
@@ -87,7 +104,7 @@ export async function authRoutes(app: FastifyInstance) {
   });
 
   // Select organization (initial selection or org switching)
-  app.post("/select-org", { preHandler: [authenticate] }, async (request, reply) => {
+  app.post("/select-org", { preHandler: [authenticateOrgSelection] }, async (request, reply) => {
     const { organizationId } = selectOrgSchema.parse(request.body);
     const user = request.user;
 
@@ -109,7 +126,8 @@ export async function authRoutes(app: FastifyInstance) {
     return response;
   });
 
-  app.post("/register", async (request) => {
+  // A phone is an OTP login, so it is only ever saved once proven by an OTP (verify-otp, /phone/verify), never here
+  app.post("/register", { preHandler: [registerLimit] }, async (request) => {
     const body = registerSchema.parse(request.body);
     const passwordHash = await bcrypt.hash(body.password, 10);
 
@@ -118,7 +136,6 @@ export async function authRoutes(app: FastifyInstance) {
         email: body.email,
         name: body.name,
         passwordHash,
-        phone: body.phone,
         role: "CUSTOMER",
       },
     });
@@ -141,7 +158,7 @@ export async function authRoutes(app: FastifyInstance) {
   });
 
   // ── OTP Auth (mobile) ────────────────────────────────
-  app.post("/send-otp", async (request) => {
+  app.post("/send-otp", { preHandler: [sendOtpLimit] }, async (request) => {
     const { phone } = sendOtpSchema.parse(request.body);
     await issueOtp(app.prisma, phone, request.log);
 
@@ -152,15 +169,15 @@ export async function authRoutes(app: FastifyInstance) {
     return response;
   });
 
-  app.post("/verify-otp", async (request, reply) => {
+  app.post("/verify-otp", { preHandler: [verifyOtpLimit] }, async (request, reply) => {
     const { phone, otp } = verifyOtpSchema.parse(request.body);
 
     if (!(await verifyOtp(app.prisma, phone, otp))) {
       return reply.unauthorized("Invalid OTP");
     }
 
-    // Find or create user by phone
-    let user = await app.prisma.user.findFirst({ where: { phone } });
+    // Find or create user by phone (unique, so one account per number)
+    let user = await app.prisma.user.findUnique({ where: { phone } });
 
     if (!user) {
       // Create new customer — generate placeholder email and password hash

@@ -4,6 +4,8 @@ import type { ApiResponse } from "@martly/shared/types";
 import { BannerPlacement } from "@martly/shared/constants";
 import { recordBannerEvents } from "../../services/marketing/stats.js";
 import { storeBanners } from "../../services/marketing/banner-feed.js";
+import { authenticateOptional } from "../../middleware/auth.js";
+import { byClient, rateLimits } from "../../middleware/rate-limit.js";
 
 /** What shoppers see of banners: the live ones per placement, and the views and taps they report back */
 export async function bannerRoutes(app: FastifyInstance) {
@@ -36,8 +38,10 @@ export async function bannerRoutes(app: FastifyInstance) {
   );
 
 
-  // Views and taps from the shopper app, batched; no login needed since guests see banners too
-  app.post("/events", async (request) => {
+  // Views and taps from the shopper app and martlyshop.in, batched; no login needed since guests see banners too.
+  // The app flushes every 15 s and the site every 2 s or on a tap, so 30 a minute per shopper (or per IP for guests) is plenty
+  const eventsLimit = rateLimits(app, [{ max: 30, window: "1 minute", key: byClient }]);
+  app.post("/events", { preHandler: [authenticateOptional, eventsLimit] }, async (request) => {
     const { storeId, events } = bannerEventsSchema.parse(request.body);
     const recorded = await recordBannerEvents(app.prisma, storeId, events);
     return { success: true, data: { recorded } };

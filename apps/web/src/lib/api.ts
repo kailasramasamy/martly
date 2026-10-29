@@ -14,9 +14,20 @@ const STORE_COOKIE = "martly_store"
 const TOWN_COOKIE = "martly_town"
 const YEAR = 60 * 60 * 24 * 365
 
-/** GETs from the Martly API; a 404 comes back as null so pages can show their own not-found */
-async function get<T>(path: string): Promise<T | null> {
-  const res = await fetch(`${API_URL}${path}`)
+/**
+ * Headers naming the shopper to the API: WEB_API_SECRET proves to the API that it is the site, and the visitor is a
+ * hash of their IP, so the API's rate limits count each shopper rather than the site's server
+ */
+function visitorHeaders(): Record<string, string> {
+  const headers: Record<string, string> = {}
+  if (process.env.WEB_API_SECRET) headers["x-martly-web-secret"] = process.env.WEB_API_SECRET
+  headers["x-martly-visitor"] = createHash("sha256").update(getRequestIP({ xForwardedFor: true }) ?? "unknown").digest("hex").slice(0, 32)
+  return headers
+}
+
+/** GETs from the Martly API; a 404 comes back as null so pages can show their own not-found. Rate-limited ones name the visitor */
+async function get<T>(path: string, visitor = false): Promise<T | null> {
+  const res = await fetch(`${API_URL}${path}`, visitor ? { headers: visitorHeaders() } : undefined)
   if (res.status === 404) return null
   if (!res.ok) throw new Error(`Martly API ${path} answered ${res.status}`)
   const body = (await res.json()) as ApiResponse<T>
@@ -136,22 +147,17 @@ export interface SearchParams extends Omit<CategorySearch, "page"> {
 
 export const searchShop = createServerFn({ method: "GET" })
   .inputValidator((params: SearchParams) => params)
-  .handler(({ data }) => get<WebSearchPage>(`/web/search${shopQuery({ ...data })}`))
+  .handler(({ data }) => get<WebSearchPage>(`/web/search${shopQuery({ ...data })}`, true))
 
 export const getSuggestions = createServerFn({ method: "GET" })
   .inputValidator((params: { q: string }) => params)
-  .handler(({ data }) => get<WebSuggestion[]>(`/web/search/suggest${shopQuery({ q: data.q })}`).then((rows) => rows ?? []))
+  .handler(({ data }) => get<WebSuggestion[]>(`/web/search/suggest${shopQuery({ q: data.q })}`, true).then((rows) => rows ?? []))
 
 export const getSearchLanding = createServerFn({ method: "GET" }).handler(() => get<WebSearchLanding>(`/web/search/landing${shopQuery()}`))
 
-/**
- * POSTs for the site itself: WEB_API_SECRET proves to the API that it is the site, and the visitor is a hash of their IP,
- * so the API's rate limit counts each shopper rather than the site's server
- */
-async function post<T>(path: string, body: unknown, visitor = false): Promise<T | null> {
-  const headers: Record<string, string> = { "content-type": "application/json" }
-  if (process.env.WEB_API_SECRET) headers["x-martly-web-secret"] = process.env.WEB_API_SECRET
-  if (visitor) headers["x-martly-visitor"] = createHash("sha256").update(getRequestIP({ xForwardedFor: true }) ?? "unknown").digest("hex").slice(0, 32)
+/** POSTs for the site itself, on behalf of the visitor (see visitorHeaders) */
+async function post<T>(path: string, body: unknown): Promise<T | null> {
+  const headers = { "content-type": "application/json", ...visitorHeaders() }
   const res = await fetch(`${API_URL}${path}`, { method: "POST", headers, body: JSON.stringify(body) })
   if (!res.ok) return null
   return ((await res.json()) as ApiResponse<T>).data
@@ -160,12 +166,12 @@ async function post<T>(path: string, body: unknown, visitor = false): Promise<T 
 /** Feeds trending and ranking, like the app's search log; null when it wasn't logged, which never disturbs searching */
 export const logSearch = createServerFn({ method: "POST" })
   .inputValidator((params: { storeId: string; query: string; resultCount: number }) => params)
-  .handler(async ({ data }) => (await post<{ id: string }>("/web/search/log", data, true))?.id ?? null)
+  .handler(async ({ data }) => (await post<{ id: string }>("/web/search/log", data))?.id ?? null)
 
 /** A result opened or added from a logged search; position is its 0-based place in the results */
 export const logSearchEvent = createServerFn({ method: "POST" })
   .inputValidator((params: { searchLogId: string; product: string; type: SearchEventType; position: number }) => params)
-  .handler(async ({ data }) => { await post("/web/search/event", data, true) })
+  .handler(async ({ data }) => { await post("/web/search/event", data) })
 
 /** Views and taps of sponsored results, counted against their banner like the app's */
 export const recordAdEvents = createServerFn({ method: "POST" })

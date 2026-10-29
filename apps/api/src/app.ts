@@ -2,7 +2,11 @@ import Fastify from "fastify";
 import cors from "@fastify/cors";
 import jwt from "@fastify/jwt";
 import sensible from "@fastify/sensible";
+import rateLimit from "@fastify/rate-limit";
 import { ZodError } from "zod";
+import { authSecret, checkSecrets } from "./services/secrets.js";
+import { errorReply } from "./services/error-reply.js";
+import { redactUrl } from "./services/request-log.js";
 import { prismaPlugin } from "./plugins/prisma.js";
 import { firebasePlugin } from "./plugins/firebase.js";
 import { authRoutes } from "./routes/auth/index.js";
@@ -100,10 +104,17 @@ import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
 
 export async function buildApp() {
   const app = Fastify({
+    // One Railway proxy hop sits in front of the API, so request.ip is the client it saw
+    trustProxy: 1,
     logger: {
       level: process.env.LOG_LEVEL ?? "info",
+      serializers: {
+        // The WebSocket handshake carries the JWT in its query string; never write it to the logs
+        req: (request) => ({ method: request.method, url: redactUrl(request.url), host: request.host, remoteAddress: request.ip }),
+      },
     },
   });
+  checkSecrets(app.log);
 
   // ── Plugins ───────────────────────────────────────
   await app.register(cors, {
@@ -113,11 +124,13 @@ export async function buildApp() {
   });
 
   await app.register(jwt, {
-    secret: process.env.JWT_SECRET ?? "dev-secret-change-me",
+    secret: authSecret(),
     sign: { expiresIn: process.env.JWT_EXPIRES_IN ?? "7d" },
   });
 
   await app.register(sensible);
+  // Limits are set per route with rateLimits() from middleware/rate-limit.ts
+  await app.register(rateLimit, { global: false });
   await app.register(prismaPlugin);
   await app.register(firebasePlugin);
   await app.register(websocketPlugin);
@@ -143,22 +156,9 @@ export async function buildApp() {
 
   // ── Error Handler ────────────────────────────────
   app.setErrorHandler((error, _request, reply) => {
-    if (error instanceof ZodError) {
-      return reply.status(400).send({
-        success: false,
-        error: "Validation Error",
-        message: error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; "),
-        statusCode: 400,
-      });
-    }
-    const err = error as Error & { statusCode?: number };
-    app.log.error(error);
-    return reply.status(err.statusCode ?? 500).send({
-      success: false,
-      error: err.name,
-      message: err.message,
-      statusCode: err.statusCode ?? 500,
-    });
+    const { statusCode, body } = errorReply(error);
+    if (!(error instanceof ZodError)) app.log.error(error);
+    return reply.status(statusCode).send(body);
   });
 
   // ── Health Check ──────────────────────────────────

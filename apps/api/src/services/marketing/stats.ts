@@ -9,13 +9,18 @@ export interface BannerEvent {
   count: number;
 }
 
+// One shopper's batch: the app counts a banner's view once per session and the site once per page, so a batch never
+// holds more than one real view of a banner; anything above these is dropped, so prepaid view caps can't be burned
+const MAX_VIEWS_PER_BATCH = 1;
+const MAX_TAPS_PER_BATCH = 3;
+
 /** Adds a batch of views and taps to today's (IST) counters; events for unknown banners are dropped */
 export async function recordBannerEvents(prisma: PrismaClient, storeId: string, events: BannerEvent[]) {
   const totals = new Map<string, { views: number; taps: number }>();
   for (const e of events) {
     const t = totals.get(e.bannerId) ?? { views: 0, taps: 0 };
-    if (e.type === "VIEW") t.views += e.count;
-    else t.taps += e.count;
+    if (e.type === "VIEW") t.views = Math.min(t.views + e.count, MAX_VIEWS_PER_BATCH);
+    else t.taps = Math.min(t.taps + e.count, MAX_TAPS_PER_BATCH);
     totals.set(e.bannerId, t);
   }
   const [store, known] = await Promise.all([

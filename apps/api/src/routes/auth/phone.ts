@@ -2,6 +2,7 @@ import type { FastifyInstance } from "fastify";
 import { sendOtpSchema, verifyOtpSchema } from "@martly/shared/schemas";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
+import { byBodyField, byClient, rateLimits } from "../../middleware/rate-limit.js";
 import { issueOtp, verifyOtp } from "../../services/otp.js";
 
 /**
@@ -9,6 +10,12 @@ import { issueOtp, verifyOtp } from "../../services/otp.js";
  * after proving you can receive codes on it, and never if another account already uses it.
  */
 export async function phoneChangeRoutes(app: FastifyInstance) {
+  // Each code is a paid SMS to a number of the caller's choosing
+  const otpLimit = rateLimits(app, [
+    { max: 5, window: "1 hour", key: byClient },
+    { max: 5, window: "1 hour", key: byBodyField("phone") },
+  ]);
+
   async function denial(userId: string, phone: string): Promise<string | null> {
     const me = await app.prisma.user.findUnique({ where: { id: userId }, select: { phone: true } });
     if (me?.phone === phone) return "That's already your number";
@@ -16,7 +23,7 @@ export async function phoneChangeRoutes(app: FastifyInstance) {
     return taken ? "This number is already used by another account" : null;
   }
 
-  app.post("/phone/otp", { preHandler: [authenticate] }, async (request, reply) => {
+  app.post("/phone/otp", { preHandler: [authenticate, otpLimit] }, async (request, reply) => {
     const { phone } = sendOtpSchema.parse(request.body);
     const denied = await denial(request.user.sub, phone);
     if (denied) return reply.conflict(denied);
