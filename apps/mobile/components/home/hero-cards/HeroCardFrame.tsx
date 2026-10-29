@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
   linkText: { fontFamily: fonts.extrabold, fontSize: 13 },
   line: { flex: 1, flexDirection: "row", alignItems: "center", gap: 8 },
   lineImage: { width: 52, height: 52, borderRadius: 12, backgroundColor: colors.surface, padding: 4 },
-  image: { width: "100%", height: "100%" },
+  image: { width: "100%", height: "100%", mixBlendMode: "multiply" },
   lineText: { flex: 1, gap: 2 },
   name: { fontFamily: fonts.semibold, fontSize: 12.5, lineHeight: 16, color: colors.text },
   unit: { fontFamily: fonts.medium, fontSize: 11.5, color: colors.textSecondary },

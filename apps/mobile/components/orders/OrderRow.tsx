@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   rowActive: { backgroundColor: "#f0fdfa" },
   pressed: { opacity: 0.85 },
   picture: { width: IMAGE, height: IMAGE, borderRadius: 12, backgroundColor: "#f1f5f9", alignItems: "center", justifyContent: "center" },
-  image: { width: IMAGE - 12, height: IMAGE - 12, resizeMode: "contain" },
+  image: { width: IMAGE - 12, height: IMAGE - 12, resizeMode: "contain", mixBlendMode: "multiply" },
   muted: { opacity: 0.5 },
   badge: {
     position: "absolute", right: -6, bottom: -6, minWidth: 24, height: 24, paddingHorizontal: 6, borderRadius: 12,

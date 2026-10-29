@@ -74,7 +74,7 @@ export function ProductCard({ product, tracking }: { product: WebProductCard; tr
       <a href={productPath(product.slug)} onClick={tracking?.onOpen} className="group flex flex-1 flex-col">
         <span className="relative block overflow-hidden rounded-xl bg-surface">
           {imageUrl
-            ? <img src={imageUrl} alt={product.name} loading="lazy" width={240} height={240} className="aspect-square w-full object-contain p-2 transition group-hover:scale-[1.03]" />
+            ? <img src={imageUrl} alt={product.name} loading="lazy" width={240} height={240} className="aspect-square w-full object-contain mix-blend-multiply p-2 transition group-hover:scale-[1.03]" />
             : <span className="flex aspect-square items-center justify-center text-muted"><Icon name="basket" size={40} strokeWidth={1.5} /></span>}
           <span className="absolute left-2 top-2 flex flex-col items-start gap-1">
             {pack.offer && (

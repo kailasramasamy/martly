@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   list: { gap: 8 },
   row: { flexDirection: "row", alignItems: "center", gap: 10 },
   thumb: { width: 40, height: 40, borderRadius: 10, backgroundColor: "#f1f5f9", alignItems: "center", justifyContent: "center", overflow: "hidden" },
-  thumbImg: { width: 34, height: 34, resizeMode: "contain" },
+  thumbImg: { width: 34, height: 34, resizeMode: "contain", mixBlendMode: "multiply" },
   text: { flex: 1 },
   name: { fontSize: 13.5, fontFamily: fonts.semibold, color: colors.text },
   meta: { fontSize: 12, fontFamily: fonts.medium, color: colors.textSecondary, marginTop: 1 },

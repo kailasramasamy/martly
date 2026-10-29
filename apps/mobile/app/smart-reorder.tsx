@@ -687,6 +687,7 @@ const styles = StyleSheet.create({
   productImage: {
     width: 64,
     height: 64,
+    mixBlendMode: "multiply",
   },
   imagePlaceholder: {
     width: 64,

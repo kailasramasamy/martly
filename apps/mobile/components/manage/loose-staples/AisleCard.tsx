@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   fillText: { fontFamily: fonts.bold, fontSize: 13, color: colors.primary },
   row: { flexDirection: "row", alignItems: "center", gap: 10, paddingVertical: 10, borderTopWidth: 1, borderTopColor: manage.hairline },
   photo: { width: 44, height: 44, borderRadius: radius.md, backgroundColor: manage.hairline, overflow: "hidden" },
-  photoImg: { width: "100%", height: "100%" },
+  photoImg: { width: "100%", height: "100%", mixBlendMode: "multiply" },
   body: { flex: 1 },
   name: { fontFamily: fonts.bold, fontSize: 14.5, color: colors.text },
   size: { fontFamily: fonts.semibold, fontSize: 12.5, color: colors.textSecondary, marginTop: 1 },

@@ -31,7 +31,7 @@ export function ItemThumbs({ order }: { order: OrderSummary }) {
 const styles = StyleSheet.create({
   thumbs: { flexDirection: "row", gap: 8, marginTop: 12 },
   thumb: { width: 52, height: 52, borderRadius: 12, borderWidth: 1, borderColor: "#f1f5f9", alignItems: "center", justifyContent: "center", overflow: "hidden" },
-  thumbImg: { width: 44, height: 44, resizeMode: "contain" },
+  thumbImg: { width: 44, height: 44, resizeMode: "contain", mixBlendMode: "multiply" },
   thumbMore: { backgroundColor: colors.surface },
   thumbMoreText: { fontSize: 13, fontFamily: fonts.bold, color: colors.textSecondary },
 });

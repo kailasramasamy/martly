@@ -63,7 +63,7 @@ function SuggestionRow({ row, query, storeId, active, id, onPick, onFill }: {
     <li id={id} role="option" aria-selected={active} className={`flex items-center ${active ? "bg-brand-tint" : "hover:bg-surface"}`}>
       <button type="button" onMouseDown={(e) => e.preventDefault()} onClick={pick} className="flex min-h-12 min-w-0 flex-1 items-center gap-3 px-4 text-left">
         <span className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-surface text-muted">
-          {row.imageUrl ? <img src={row.imageUrl} alt="" className="h-full w-full object-contain" /> : <Icon name={row.recent ? "clock" : "search"} size={18} />}
+          {row.imageUrl ? <img src={row.imageUrl} alt="" className="h-full w-full object-contain mix-blend-multiply" /> : <Icon name={row.recent ? "clock" : "search"} size={18} />}
         </span>
         <Highlighted text={row.text} query={query} />
         {row.adBannerId && <span className="shrink-0 rounded border border-line px-1 text-[10px] font-bold text-muted">Ad</span>}

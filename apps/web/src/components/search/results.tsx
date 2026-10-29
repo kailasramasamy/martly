@@ -47,7 +47,7 @@ function Tabs({ q, filters, tabs }: { q: string; filters: WebSearchFilters; tabs
             <Link to="/search" search={searchFor(q, filters, { ...change, brand: [], size: undefined })} title={t.name} aria-current={on ? "page" : undefined}
               className={`${tab} ${on ? "bg-brand-tint text-brand" : "text-slate-600 hover:text-brand"}`}>
               <span className={`flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border-2 bg-surface ${on ? "border-brand" : "border-transparent"}`}>
-                {t.imageUrl ? <img src={t.imageUrl} alt="" loading="lazy" className="h-full w-full object-contain p-1" /> : <Icon name={t.kind === "all" ? "basket" : "search"} size={22} />}
+                {t.imageUrl ? <img src={t.imageUrl} alt="" loading="lazy" className="h-full w-full object-contain mix-blend-multiply p-1" /> : <Icon name={t.kind === "all" ? "basket" : "search"} size={22} />}
               </span>
               <span className="line-clamp-2 leading-tight">{t.label}</span>
             </Link>

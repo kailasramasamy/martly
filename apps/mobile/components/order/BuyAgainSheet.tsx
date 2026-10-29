@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
   row: { flexDirection: "row", alignItems: "center", gap: 12, paddingVertical: 10, minHeight: 64, borderBottomWidth: 1, borderBottomColor: "#f1f5f9" },
   unavailable: { opacity: 0.7 },
   thumb: { width: 44, height: 44, borderRadius: 10, backgroundColor: colors.surface, alignItems: "center", justifyContent: "center" },
-  thumbImg: { width: 38, height: 38, resizeMode: "contain" },
+  thumbImg: { width: 38, height: 38, resizeMode: "contain", mixBlendMode: "multiply" },
   info: { flex: 1 },
   name: { fontSize: 14, fontFamily: fonts.semibold, color: colors.text },
   muted: { color: colors.textSecondary },

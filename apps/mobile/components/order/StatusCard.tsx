@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   returnLine: { marginTop: 6 },
   sub: { fontSize: 14, fontFamily: fonts.medium, color: colors.textSecondary, marginTop: 2 },
   thumb: { width: 60, height: 60, borderRadius: 12, backgroundColor: colors.surface, borderWidth: 1, borderColor: "#f1f5f9", alignItems: "center", justifyContent: "center" },
-  thumbImg: { width: 50, height: 50, resizeMode: "contain" },
+  thumbImg: { width: 50, height: 50, resizeMode: "contain", mixBlendMode: "multiply" },
   stepper: { paddingBottom: 14, marginHorizontal: -4 },
   onTheWay: { paddingHorizontal: 16, paddingBottom: 14, gap: 10 },
   riderRow: { flexDirection: "row", alignItems: "center", gap: 10, backgroundColor: "#f0fdfa", borderRadius: 12, padding: 10 },

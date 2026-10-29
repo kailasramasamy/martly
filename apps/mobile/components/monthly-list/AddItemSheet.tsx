@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
   loader: { marginVertical: 28 },
   product: { flexDirection: "row", gap: 12, paddingHorizontal: 16, paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: "#f1f5f9" },
   thumb: { width: 52, height: 52, borderRadius: 10, backgroundColor: colors.surface, alignItems: "center", justifyContent: "center" },
-  thumbImg: { width: 46, height: 46, resizeMode: "contain" },
+  thumbImg: { width: 46, height: 46, resizeMode: "contain", mixBlendMode: "multiply" },
   productInfo: { flex: 1, minWidth: 0, gap: 8 },
   productName: { fontFamily: fonts.semibold, fontSize: 14, lineHeight: 19, color: colors.text },
   chips: { flexDirection: "row", flexWrap: "wrap", gap: 8 },

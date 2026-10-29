@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
   open: { flex: 1, flexDirection: "row", alignItems: "center", gap: 10 },
   sizeRow: { flexDirection: "row", alignItems: "center", gap: 3 },
   thumb: { width: 52, height: 52, borderRadius: 10, backgroundColor: colors.surface, alignItems: "center", justifyContent: "center" },
-  thumbImg: { width: 46, height: 46, resizeMode: "contain" },
+  thumbImg: { width: 46, height: 46, resizeMode: "contain", mixBlendMode: "multiply" },
   info: { flex: 1, minWidth: 0, gap: 2 },
   name: { fontFamily: fonts.semibold, fontSize: 14, lineHeight: 19, color: colors.text },
   size: { flexShrink: 1, fontFamily: fonts.medium, fontSize: 12, color: colors.textSecondary },

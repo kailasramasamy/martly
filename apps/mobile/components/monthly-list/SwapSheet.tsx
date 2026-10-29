@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
   section: { marginTop: 16, marginBottom: 4, paddingHorizontal: 16, fontFamily: fonts.extrabold, fontSize: 11, letterSpacing: 0.6, color: colors.textSecondary },
   option: { flexDirection: "row", alignItems: "center", gap: 12, minHeight: 64, paddingHorizontal: 16, paddingVertical: 8 },
   thumb: { width: 48, height: 48, borderRadius: 10, backgroundColor: colors.surface, alignItems: "center", justifyContent: "center" },
-  thumbImg: { width: 42, height: 42, resizeMode: "contain" },
+  thumbImg: { width: 42, height: 42, resizeMode: "contain", mixBlendMode: "multiply" },
   optionInfo: { flex: 1, minWidth: 0, gap: 2 },
   optionName: { fontFamily: fonts.semibold, fontSize: 14, lineHeight: 19, color: colors.text },
   optionSize: { fontFamily: fonts.medium, fontSize: 12, color: colors.textSecondary },
