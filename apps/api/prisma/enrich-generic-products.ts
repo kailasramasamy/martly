@@ -1,9 +1,10 @@
 /**
  * Fill blank details (description, ingredients, nutrition, allergens, storage, shelf life, usage) on the
  * generic master products (no brand, no org) with Claude, in English and Tamil (translations.ta). Only
- * empty fields are written, so hand-entered details stay.
+ * empty fields are written, so hand-entered details stay. With --brand "<name>" it fills that brand's
+ * products instead, reading each pack photo for the real contents and directions.
  *
- * Dry run: cd apps/api && npx tsx prisma/enrich-generic-products.ts --limit 5
+ * Dry run: cd apps/api && npx tsx prisma/enrich-generic-products.ts --limit 5 [--brand "Gopuram"]
  * Apply:   ... --apply   (prefix DATABASE_URL=<prod url> for prod)
  */
 
@@ -16,14 +17,20 @@ import { Prisma, PrismaClient } from "../generated/prisma/index.js";
 const MODEL = "claude-haiku-5-5";
 const CONCURRENCY = 8;
 
-const INSTRUCTIONS = `You write product details for unbranded, generic groceries sold loose or in plain packs by small stores in Tamil Nadu, India.
+const GENERIC = `You write product details for unbranded, generic groceries sold loose or in plain packs by small stores in Tamil Nadu, India.
 - Description: 2-3 plain sentences on what it is, how it tastes or is used in Indian (especially South Indian) cooking or homes. No marketing hype, no brand names, no health claims beyond common knowledge.
-- Ingredients: for food, what it is made of, e.g. "Toor dal (100%)" or "Gram flour, rice flour, groundnut oil, salt, chilli powder". Fresh produce, meat and fish: the item itself, e.g. "Fresh tomatoes (100%)". Null for non-food items.
+- Ingredients: for food, what it is made of, e.g. "Toor dal (100%)" or "Gram flour, rice flour, groundnut oil, salt, chilli powder". Fresh produce, meat and fish: the item itself, e.g. "Fresh tomatoes (100%)". Null for non-food items.`;
+
+const BRANDED = `You write product details for branded groceries and pooja items sold by small stores in Tamil Nadu, India. A photo of the pack is attached: take contents, ingredients and directions from what it shows, and don't invent label text you can't read. Write for a shopper: never mention the photo, the pack, the label or what can't be read; when contents can't be read, describe them in general terms.
+- Description: 2-3 plain sentences on what it is and how it is used in Indian (especially South Indian) homes, kitchens, temples or rituals. No marketing hype, no health claims beyond common knowledge.
+- Ingredients: for food, what it is made of. For pooja and household items, what it is made of or contains, e.g. "Benzoin resin, charcoal powder, natural fragrance" or, for kits, the items in the kit. Null only when nothing sensible can be said.`;
+
+const COMMON = `
 - Nutrition: typical values per 100 g (per 100 ml for liquids) from standard food composition data; Energy, Protein, Carbohydrates, Total Sugars, Dietary Fibre, Total Fat, Sodium, plus one or two notable nutrients if well known. Values like "343 kcal", "22.3 g", "17 mg". Empty list for non-food items.
 - Allergens: only real ones (Gluten, Milk, Peanut, Tree nuts, Soy, Sesame, Egg, Fish, Crustacean, Mustard). Empty when none.
 - Storage, shelf life and usage: practical for an Indian kitchen. Shelf life is days from purchase.
 - When an existing English description is given, return it unchanged as the description.
-- Tamil: the same description, ingredients, storage, usage and nutrient names in natural everyday Tamil, the way a shopper in Dharmapuri would say it. Keep numbers and units as written (100 g, 22.3 g, kcal).`;
+- Tamil: the same description, ingredients, storage, usage and nutrient names in natural everyday Tamil, the way a shopper in Dharmapuri would say it, with brand and product names in Tamil script. Keep numbers and units as written (100 g, 22.3 g, kcal).`;
 
 const DetailsSchema = z.object({
   description: z.string(),
@@ -49,7 +56,7 @@ const anthropic = new Anthropic();
 const blank = (s: string | null) => !s?.trim();
 
 const select = {
-  id: true, name: true, description: true, ingredients: true, nutritionalInfo: true, allergens: true,
+  id: true, name: true, imageUrl: true, manufacturerName: true, description: true, ingredients: true, nutritionalInfo: true, allergens: true,
   storageType: true, storageInstructions: true, shelfLifeDays: true, usageInstructions: true,
   countryOfOrigin: true, productType: true, foodType: true, translations: true,
   subcategory: { select: { name: true, category: { select: { name: true } } } },
@@ -57,9 +64,10 @@ const select = {
 } satisfies Prisma.ProductSelect;
 type Row = Prisma.ProductGetPayload<{ select: typeof select }>;
 
-async function generate(p: Row): Promise<Details | null> {
+async function generate(p: Row, branded: boolean): Promise<Details | null> {
   const context = [
     `Product: ${p.name}`,
+    ...(branded ? [`Manufacturer: ${p.manufacturerName ?? "?"}`] : []),
     `Category: ${p.subcategory?.category.name ?? "?"} > ${p.subcategory?.name ?? "?"}`,
     `Type: ${p.productType ?? "?"}, ${p.foodType ?? "?"}`,
     `Pack sizes: ${p.variants.map((v) => v.name).join(", ") || "?"}`,
@@ -68,9 +76,14 @@ async function generate(p: Row): Promise<Details | null> {
   const res = await anthropic.beta.messages.parse({
     model: MODEL,
     max_tokens: 4000,
-    system: INSTRUCTIONS,
+    system: (branded ? BRANDED : GENERIC) + COMMON,
     output_config: { effort: "low", format: betaZodOutputFormat(DetailsSchema) },
-    messages: [{ role: "user", content: context }],
+    messages: [{
+      role: "user",
+      content: branded && p.imageUrl
+        ? [{ type: "image", source: { type: "url", url: p.imageUrl } }, { type: "text", text: context }]
+        : context,
+    }],
   });
   return res.stop_reason === "refusal" ? null : res.parsed_output;
 }
@@ -120,8 +133,8 @@ function patch(p: Row, d: Details): Prisma.ProductUpdateInput {
   };
 }
 
-async function enrich(p: Row, apply: boolean) {
-  const details = await generate(p);
+async function enrich(p: Row, apply: boolean, branded: boolean) {
+  const details = await generate(p, branded);
   if (!details) return console.log(`REFUSED  ${p.name}`);
   const data = patch(p, details);
   if (!apply) return console.log(JSON.stringify({ name: p.name, ...data }, null, 2));
@@ -130,10 +143,10 @@ async function enrich(p: Row, apply: boolean) {
 }
 
 async function main() {
-  const { values } = parseArgs({ options: { apply: { type: "boolean" }, limit: { type: "string" } } });
+  const { values } = parseArgs({ options: { apply: { type: "boolean" }, limit: { type: "string" }, brand: { type: "string" } } });
   const rows = await prisma.product.findMany({
     where: {
-      brandId: null, organizationId: null,
+      ...(values.brand ? { brand: { name: values.brand } } : { brandId: null, organizationId: null }),
       OR: [{ description: null }, { description: "" }, { ingredients: null }, { nutritionalInfo: { equals: Prisma.DbNull } }],
     },
     select,
@@ -144,7 +157,7 @@ async function main() {
   const failed: string[] = [];
   for (let i = 0; i < rows.length; i += CONCURRENCY) {
     const batch = rows.slice(i, i + CONCURRENCY);
-    const results = await Promise.allSettled(batch.map((p) => enrich(p, !!values.apply)));
+    const results = await Promise.allSettled(batch.map((p) => enrich(p, !!values.apply, !!values.brand)));
     results.forEach((r, j) => r.status === "rejected" && failed.push(`${batch[j].name}: ${r.reason}`));
   }
   if (failed.length) console.error(`${failed.length} failed:\n${failed.join("\n")}`);

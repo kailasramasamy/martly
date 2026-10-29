@@ -5642,5 +5642,83 @@
     "thanni",
     "paani",
     "1 litre water"
+  ],
+  "pooja-essentials-pooja-oil": [
+    "pooja oil",
+    "deepam oil",
+    "lamp oil",
+    "vilakku ennai",
+    "vilakkennai",
+    "diya oil",
+    "deepa oil",
+    "panchadeepam oil",
+    "pooja ennai"
+  ],
+  "pooja-essentials-chandan-vibhuti": [
+    "chandan",
+    "sandal powder",
+    "santhanam",
+    "sandhanam",
+    "chandan tika",
+    "vibhuti",
+    "vibhuthi",
+    "thiruneer",
+    "namakatti",
+    "namam",
+    "srichurnam",
+    "ashtagandha",
+    "javadhu",
+    "tilak"
+  ],
+  "pooja-essentials-pooja-turmeric": [
+    "pooja turmeric",
+    "manjal",
+    "virali manjal",
+    "finger turmeric",
+    "kizhangu manjal",
+    "round turmeric",
+    "kasthuri manjal",
+    "kasthuri turmeric",
+    "manjal podi",
+    "turmeric tin"
+  ],
+  "pooja-essentials-abhishekam-items": [
+    "abhishekam",
+    "abishekam",
+    "panneer",
+    "rose water",
+    "thirumanjanam",
+    "abhisheka powder",
+    "thailam",
+    "sandhanathi thailam"
+  ],
+  "pooja-essentials-havan-samagri": [
+    "homam",
+    "havan",
+    "havan samagri",
+    "homa dravyam",
+    "homa dravium",
+    "samithu",
+    "samidha",
+    "navadhanyam",
+    "dharbai",
+    "darbha",
+    "kusha grass",
+    "pavitram",
+    "tarpanam",
+    "amavasai",
+    "vettiver"
+  ],
+  "pooja-essentials-pooja-kits": [
+    "pooja kit",
+    "thamboolam",
+    "thambulam",
+    "irumudi",
+    "irumudi kit",
+    "sabarimala",
+    "ayyappa kit",
+    "sumangali",
+    "return gift",
+    "kumkum set"
   ]
 }

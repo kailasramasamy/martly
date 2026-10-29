@@ -1,0 +1,958 @@
+{
+  "brand": "Gopuram",
+  "manufacturer": "Y.V.S. & Co., 138 Audiappa Street, Chennai 600001",
+  "feed": "gopuram-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/gopuram/logo-7de713d1.png",
+  "themeColor": "#224B23",
+  "themeColorSecondary": "#FECC00",
+  "namePrefix": "",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Gopuram\\ Panchamirtham\\ Agarbathi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Sambrani\\ Agarbathi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Kamakshi\\ Premium\\ Agarbathi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Vishalakshi\\ Premium\\ Agarbathi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Meenakshi\\ Premium\\ Agarbathi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Chandan\\ Agarbathi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Vibhuti\\ Agarbathi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Thalampoo\\ Agarbathi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Kasthuri\\ Manjal\\ Agarbathi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Javadhu\\ Agarbathi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Panchalokam\\ 5\\-in\\-1\\ Agarbathi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Traditional\\ Agarbathi\\ Flora$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ 3G\\ Agarbathi\\ ₹6\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ 3G\\ Agarbathi\\ ₹12\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ 3G\\ Agarbathi\\ ₹25\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ 3G\\ Agarbathi\\ ₹60\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Premium\\ Sambrani\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Gold\\ Sambrani$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Dhoop\\ Cone$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Thalampoo\\ Sambrani$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Premium\\ Dasangam$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Sangamam\\ Cup\\ Sambrani$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Panchavarnam\\ Instant\\ Dhoop\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Herbal\\ Cup\\ Sambrani\\ Pouch$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Herbal\\ Cup\\ Sambrani\\ Box$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Pal\\ Sambrani$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Sambrani\\ \\(K\\.S\\)$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Computer\\ Sambrani\\ Instant\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Panchagavya\\ Agal$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Cow\\ Ghee\\ Agal$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ 365\\ Cotton\\ Diya\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ 365\\ Flower\\ Thiri\\ Small$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ 365\\ Flower\\ Thiri\\ Big$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Vazhaithandu\\ Thiri\\ \\(Banana\\ Stem\\ Wicks\\)$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Errukan\\ Thiri\\ \\(Calotropis\\ Wicks\\)$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Cotton\\ Thread\\ Special$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Cotton\\ Thread\\ Type\\ 1$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Sikharam\\ Pooja\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Oil"
+      ]
+    },
+    {
+      "match": "^Sri\\ Durga\\ Deepam\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Oil"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Pooja\\ Oil\\ Premium$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Oil"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Pooja\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Oil"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Sacred\\ Thread\\ Iyengar\\ \\(Vishnu\\ Special\\)$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Sacred\\ Thread\\ Iyer\\ \\(Sivan\\ Special\\)$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Cotton\\ Mala\\ Red\\ 4\\ m$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ 3\\ Colour\\ Thread$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ 5\\ Colour\\ Thread$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Meenakshi\\ Kumkum$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Srichurnam\\ Kumkum$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Kumkum\\ Dark\\ Red\\ Mini\\ Tin$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Kuberar\\ Kumkum$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Thazhamboo\\ Dark\\ Red\\ Kumkum$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Thazhamboo\\ Dark\\ Red\\ Kumkum\\ Pet\\ Jar$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Kumkum\\ Tin\\ Red$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Kumkum\\ Tin\\ Dark\\ Red$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Palani\\ Murugan\\ Kumkum\\ Red$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Palani\\ Murugan\\ Kumkum\\ Dark\\ Red$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Sri\\ Durga\\ Kumkum$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Kumkum\\ Red$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Kumkum\\ Dark\\ Red$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Cow\\ Dung\\ Vibhuti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Sikharam\\ Chandan\\ Tika\\ Tablets$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Ashtagandha\\ Chandan\\ Tika\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Namakatti\\ White$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Namakatti\\ Red\\ Srichurnam$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Namakatti\\ Vaishnava\\ Dark$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Namakatti\\ Vaishnava\\ Yellow$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Chandan\\ Tika\\ Pet\\ Jar$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Chandan\\ Tika\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Sikharam\\ Chandan\\ Tika\\ Ayyappa$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Sikharam\\ Chandan\\ Tika\\ Ranga\\ Pooja$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Sikharam\\ Special\\ Chandan\\ Tika\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Javadhu\\ Atthar$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Chandan & Vibhuti"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Turmeric\\ Powder\\ Pouch$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Turmeric"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Turmeric\\ Powder\\ Tin$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Turmeric"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Kasthuri\\ Turmeric\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Turmeric"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Kasthuri\\ Turmeric\\ Tin$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Turmeric"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Finger\\ Turmeric\\ Top$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Turmeric"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Finger\\ Turmeric\\ Medium$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Turmeric"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Round\\ Turmeric\\ Blue\\ Label$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Turmeric"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Round\\ Turmeric\\ Medium\\ Red\\ Label$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Turmeric"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Pooja\\ Panneer\\ \\(Rose\\ Water\\)$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Abhishekam Items"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Sandhanathi\\ Thailam$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Abhishekam Items"
+      ]
+    },
+    {
+      "match": "^Sikharam\\ Abhisheka\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Abhishekam Items"
+      ]
+    },
+    {
+      "match": "^Sri\\ Durga\\ Thirumanjana\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Abhishekam Items"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Karungali\\ Samithu\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Maa\\ Samithu$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Aalam\\ Samithu$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Purasu\\ Samithu$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Arasu\\ Samithu$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Navagraha\\ Samithu\\ Special$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Poornahuthi\\ Cloth$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Navadhanyam\\ Special$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Sri\\ Durga\\ Homa\\ Dravium\\ Mixed$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Sri\\ Durga\\ Homa\\ Dravium\\ 54$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Sri\\ Durga\\ Homa\\ Dravium\\ 108$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Sri\\ Durga\\ Homa\\ Dravium\\ 108\\ Special$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Homa\\ Dravium\\ 54$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Homa\\ Dravium\\ 108\\ Large$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Dharbai$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Pavitharam\\ 2\\ Pillu$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Pavitharam\\ 3\\ Pillu$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Ayyangar\\ Amavasai\\ Set$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Ayyer\\ Amavasai\\ Set$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Nayuruvi$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Vettiver\\ Ordinary$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Vettiver\\ Special$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Havan Samagri"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Sumangali\\ Kit$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Kits"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Iyyappan\\ Irumudi\\ Kit$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Kits"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Combi\\ Pack\\ Thamboolam$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Kits"
+      ]
+    },
+    {
+      "match": "^Sri\\ Durga\\ Combi\\ Pack\\ Thamboolam$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Kits"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Vibhuti\\ Combi\\ Thamboolam$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Kits"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Leaf\\ Set\\ Big$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Kits"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Leaf\\ Set\\ Small$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Kits"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Agmark\\ Turmeric\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Asafoetida\\ Gold\\ Premium$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Asafoetida\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Natural\\ Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Gopuram\\ Dolomite\\ White\\ \\(Kolam\\ Powder\\)$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    }
+  ]
+}
