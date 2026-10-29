@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useGetIdentity } from "@refinedev/core";
 import { List } from "@refinedev/antd";
-import { App, Card, Result, Segmented, Select, Space, Tabs, Tag, Typography } from "antd";
+import { App, Card, Empty, Result, Segmented, Select, Space, Tabs, Tag, Typography } from "antd";
 import { isAxiosError } from "axios";
 import type { PriceReviewGroup, PriceReviewSummary } from "@martly/shared/types";
 import { hasPermission } from "@martly/shared/permissions";
@@ -99,27 +99,33 @@ export const PriceReviewPage = () => {
 
   return (
     <List title="Price review" headerButtons={<StoreSelect value={storeId} onChange={setStoreId} style={{ width: 240 }} />}>
-      <StockCheckBanner storeId={storeId} version={version} />
       <Typography.Paragraph type="secondary">Settle the prices your store was onboarded with. Best sellers first.</Typography.Paragraph>
-      <SummaryPanel summary={summary} filters={filters} onFilters={change} />
-      <Tabs
-        activeKey={tab}
-        onChange={(k) => setTab(k as Tab)}
-        items={[
-          {
-            key: "products",
-            label: "Products",
-            children: (
-              <>
-                {productFilters}
-                <ItemsTable storeId={storeId} filters={filters} version={version} actions={actions} canHide={canHide} emptyText={emptyText} />
-              </>
-            ),
-          },
-          { key: "brand", label: "By brand", children: groupTable("brand") },
-          { key: "subcategory", label: "By aisle", children: groupTable("subcategory") },
-        ]}
-      />
+      {!storeId ? (
+        <Empty description="Select a store to review its prices" />
+      ) : (
+        <>
+          <StockCheckBanner storeId={storeId} version={version} />
+          <SummaryPanel summary={summary} filters={filters} onFilters={change} />
+          <Tabs
+            activeKey={tab}
+            onChange={(k) => setTab(k as Tab)}
+            items={[
+              {
+                key: "products",
+                label: "Products",
+                children: (
+                  <>
+                    {productFilters}
+                    <ItemsTable storeId={storeId} filters={filters} version={version} actions={actions} canHide={canHide} emptyText={emptyText} />
+                  </>
+                ),
+              },
+              { key: "brand", label: "By brand", children: groupTable("brand") },
+              { key: "subcategory", label: "By aisle", children: groupTable("subcategory") },
+            ]}
+          />
+        </>
+      )}
     </List>
   );
 };
