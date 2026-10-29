@@ -158,10 +158,6 @@ export const SubscriptionShow = () => {
     storeProductId: item.storeProductId,
     productName: item.storeProduct?.product?.name ?? "\u2014",
     variantName: item.storeProduct?.variant?.name ?? "",
-    unitSize:
-      item.storeProduct?.variant?.unitValue && item.storeProduct?.variant?.unitType
-        ? `${item.storeProduct.variant.unitValue}${item.storeProduct.variant.unitType}`
-        : "",
     quantity: item.quantity,
     price: Number(item.storeProduct?.price ?? 0),
   }));

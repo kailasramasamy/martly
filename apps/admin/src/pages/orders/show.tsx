@@ -352,12 +352,7 @@ export const OrderShow = () => {
                     title: "Variant",
                     key: "variant",
                     render: (_, item) => {
-                      if (!item.variant) return "—";
-                      const parts = [item.variant.name];
-                      if (item.variant.unitValue && item.variant.unitType) {
-                        parts.push(`(${item.variant.unitValue} ${item.variant.unitType})`);
-                      }
-                      return parts.join(" ");
+                      return item.variant?.name ?? "—";
                     },
                   },
                   {

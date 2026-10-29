@@ -1,4 +1,5 @@
 import { View, Text, Image, StyleSheet } from "react-native";
+import { amount } from "../../lib/money";
 import { Ionicons } from "@expo/vector-icons";
 import type { RefuseReason } from "@martly/shared/constants";
 import { colors, spacing, fontSize } from "../../constants/theme";
@@ -50,7 +51,7 @@ export function OrderItemRow({ item, returnTag }: { item: OrderLine; returnTag?:
           </>
         ) : (
           <Text style={styles.qty}>
-            {item.quantity} {"×"} {"₹"}{Number(item.unitPrice).toFixed(0)}
+            {item.quantity} {"×"} {"₹"}{amount(Number(item.unitPrice))}
             {(item.freeQuantity ?? 0) > 0 && <Text style={styles.freeUnits}>{" · "}{tCart.freeUnits(item.freeQuantity!)}</Text>}
           </Text>
         )}
@@ -66,7 +67,7 @@ export function OrderItemRow({ item, returnTag }: { item: OrderLine; returnTag?:
         )}
       </View>
       <View style={styles.priceCol}>
-        <Text style={styles.price}>{"₹"}{Number(item.totalPrice).toFixed(0)}</Text>
+        <Text style={styles.price}>{"₹"}{amount(Number(item.totalPrice))}</Text>
         {item.replacesReturn && <Text style={styles.paidEarlier}>{t.paidEarlier}</Text>}
       </View>
     </View>

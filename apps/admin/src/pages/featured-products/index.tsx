@@ -168,9 +168,7 @@ export const FeaturedProductsPage = () => {
               key: "variant",
               width: 180,
               render: (_, record) => {
-                const v = record.variant;
-                const unit = v?.unitValue != null && v?.unitType ? ` (${Number(v.unitValue)} ${v.unitType})` : "";
-                return <Text>{v?.name}{unit}</Text>;
+                return <Text>{record.variant?.name}</Text>;
               },
             },
             {
@@ -398,9 +396,7 @@ function AddFeaturedModal({
             key: "variant",
             width: 160,
             render: (_, record) => {
-              const v = record.variant;
-              const unit = v?.unitValue != null && v?.unitType ? ` (${Number(v.unitValue)} ${v.unitType})` : "";
-              return <Text style={{ fontSize: 12 }}>{v?.name}{unit}</Text>;
+              return <Text style={{ fontSize: 12 }}>{record.variant?.name}</Text>;
             },
           },
           {

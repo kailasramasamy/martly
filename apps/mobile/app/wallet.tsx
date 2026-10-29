@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { amount as money } from "../lib/money";
 import {
   View,
   Text,
@@ -114,7 +115,7 @@ function WalletScreen() {
             </View>
             <View style={styles.txAmountWrap}>
               <Text style={[styles.txAmount, isCredit ? styles.txAmountCredit : styles.txAmountDebit]}>
-                {isCredit ? "+" : "-"}{"\u20B9"}{amount.toFixed(0)}
+                {isCredit ? "+" : "-"}{"\u20B9"}{money(amount)}
               </Text>
               <Ionicons
                 name={isExpanded ? "chevron-up" : "chevron-down"}

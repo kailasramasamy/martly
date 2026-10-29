@@ -223,7 +223,6 @@ export const StoreOnboard = () => {
                       />
                       <span>{variant.name}</span>
                       {variant.listed && <Tag color="green">Listed</Tag>}
-                      <Text type="secondary">({variant.unitType} {variant.unitValue})</Text>
                       {variant.sku && <Text type="secondary">SKU: {variant.sku}</Text>}
                     </div>
                   ))}
@@ -241,7 +240,6 @@ export const StoreOnboard = () => {
           <Table dataSource={selectedItems} rowKey="variantId" pagination={false}>
             <Table.Column title="Product" dataIndex="productName" />
             <Table.Column title="Variant" dataIndex="variantName" />
-            <Table.Column title="Unit" render={(_, r: SelectedVariant) => `${r.unitType} ${r.unitValue}`} />
             <Table.Column
               title="Price"
               render={(_, r: SelectedVariant) => (
@@ -263,7 +261,6 @@ export const StoreOnboard = () => {
           <Table dataSource={selectedItems} rowKey="variantId" pagination={false} size="small">
             <Table.Column title="Product" dataIndex="productName" />
             <Table.Column title="Variant" dataIndex="variantName" />
-            <Table.Column title="Unit" render={(_, r: SelectedVariant) => `${r.unitType} ${r.unitValue}`} />
             <Table.Column title="Price" dataIndex="price" render={(v: number) => `\u20B9${v.toFixed(2)}`} />
             <Table.Column title="Stock" dataIndex="stock" />
           </Table>

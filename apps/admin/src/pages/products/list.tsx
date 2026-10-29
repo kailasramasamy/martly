@@ -252,11 +252,6 @@ const ProductsTableTab = ({
   const variantColumns = [
     { title: "Variant", dataIndex: "name", key: "name", width: 160 },
     {
-      title: "Unit", key: "unit", width: 100,
-      render: (_: unknown, v: Variant) =>
-        !v.unitValue || !v.unitType ? "—" : `${Number(v.unitValue)} ${v.unitType}`,
-    },
-    {
       title: "MRP", key: "mrp", width: 100,
       render: (_: unknown, v: Variant) =>
         v.mrp != null ? `₹${Number(v.mrp).toFixed(2)}` : "—",
@@ -295,9 +290,7 @@ const ProductsTableTab = ({
     {
       title: "Variant", key: "variant", width: 180,
       render: (_: unknown, sp: StoreProductEntry) => {
-        const v = sp.variant;
-        const unit = v.unitValue != null && v.unitType ? ` (${Number(v.unitValue)} ${v.unitType})` : "";
-        return <Text>{v.name}{unit}</Text>;
+        return <Text>{sp.variant.name}</Text>;
       },
     },
     {
@@ -632,7 +625,7 @@ const ProductsTableTab = ({
               const variants = record.variants ?? [];
               if (variants.length === 0) return <Text type="secondary">—</Text>;
               const v = variants[0];
-              const unit = v.unitValue != null && v.unitType ? `${Number(v.unitValue)} ${v.unitType}` : null;
+              const unit = v.name || null;
               const mrp = v.mrp != null ? `₹${Number(v.mrp).toFixed(2)}` : null;
               return (
                 <div>

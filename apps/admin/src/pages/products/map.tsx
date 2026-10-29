@@ -49,7 +49,6 @@ interface StoreRecord {
 interface MappingRow {
   variantId: string;
   variantName: string;
-  unit: string;
   mrp: number | null;
   price: number;
   stock: number;
@@ -61,7 +60,6 @@ interface ExistingMapping {
   storeName: string;
   variantId: string;
   variantName: string;
-  unit: string;
   price: number;
   stock: number;
   reservedStock: number;
@@ -118,8 +116,6 @@ export const ProductMap = () => {
         storeName: sp.store.name,
         variantId: sp.variant.id,
         variantName: sp.variant.name,
-        unit: sp.variant.unitValue != null && sp.variant.unitType
-          ? `${Number(sp.variant.unitValue)} ${sp.variant.unitType}` : "",
         price: Number(sp.price),
         stock: sp.stock,
         reservedStock: sp.reservedStock,
@@ -140,7 +136,6 @@ export const ProductMap = () => {
       const variantMappings = prod.variants.map((v) => ({
         variantId: v.id,
         variantName: v.name,
-        unit: `${Number(v.unitValue)} ${v.unitType}`,
         mrp: v.mrp != null ? Number(v.mrp) : null,
         price: v.mrp != null ? Number(v.mrp) : 0,
         stock: 0,
@@ -300,7 +295,6 @@ export const ProductMap = () => {
                   render={(name: string) => <Tag>{name}</Tag>}
                 />
                 <Table.Column title="Variant" dataIndex="variantName" />
-                <Table.Column title="Unit" dataIndex="unit" width={100} />
                 <Table.Column
                   title="Price"
                   width={100}
@@ -447,7 +441,6 @@ export const ProductMap = () => {
                       );
                     }}
                   />
-                  <Table.Column title="Unit" dataIndex="unit" width={100} />
                   <Table.Column
                     title="MRP"
                     width={120}

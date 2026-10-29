@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { amount } from "../lib/money";
 import {
   View,
   Text,
@@ -279,7 +280,7 @@ function ReturnRequestScreen() {
                   {item.variant && (
                     <Text style={styles.itemVariant}>{item.variant.name}</Text>
                   )}
-                  <Text style={styles.itemPrice}>{r.each(`\u20B9${Number(item.unitPrice).toFixed(0)}`)}</Text>
+                  <Text style={styles.itemPrice}>{r.each(`\u20B9${amount(Number(item.unitPrice))}`)}</Text>
                 </View>
                 {selected && sel && (
                   <View style={styles.qtyControl}>
@@ -376,7 +377,7 @@ function ReturnRequestScreen() {
           <View style={styles.refundRow}>
             <Text style={styles.refundLabel}>{r.estimatedRefund}</Text>
             <Text style={styles.refundAmount}>
-              {"\u20B9"}{refundAmount.toFixed(0)}
+              {"\u20B9"}{amount(refundAmount)}
             </Text>
           </View>
           <Text style={styles.refundNote}>

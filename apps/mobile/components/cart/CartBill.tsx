@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet } from "react-native";
+import { amount } from "../../lib/money";
 import { Ionicons } from "@expo/vector-icons";
 import { useStrings } from "../../lib/i18n/use-strings";
 import { colors, spacing, fontSize } from "../../constants/theme";
@@ -25,7 +26,7 @@ export function CartBill({ itemTotal, deliveryFee, freeDelivery, memberFreeDeliv
       <View style={styles.card}>
         <View style={styles.row}>
           <Text style={styles.label}>{t.itemTotal}</Text>
-          <Text style={styles.value}>{"\u20B9"}{itemTotal.toFixed(0)}</Text>
+          <Text style={styles.value}>{"\u20B9"}{amount(itemTotal)}</Text>
         </View>
         <View style={styles.row}>
           <Text style={styles.label}>{t.deliveryFee}</Text>
@@ -40,7 +41,7 @@ export function CartBill({ itemTotal, deliveryFee, freeDelivery, memberFreeDeliv
               )}
             </View>
           ) : deliveryFee != null ? (
-            <Text style={styles.value}>{t.deliveryFrom(deliveryFee.toFixed(0))}</Text>
+            <Text style={styles.value}>{t.deliveryFrom(amount(deliveryFee))}</Text>
           ) : (
             <Text style={styles.label}>{t.atCheckout}</Text>
           )}
@@ -48,19 +49,19 @@ export function CartBill({ itemTotal, deliveryFee, freeDelivery, memberFreeDeliv
         {coupon && (
           <View style={styles.row}>
             <Text style={styles.label}>{t.couponLine(coupon.code)}</Text>
-            <Text style={styles.free}>-{"\u20B9"}{coupon.amount.toFixed(0)}</Text>
+            <Text style={styles.free}>-{"\u20B9"}{amount(coupon.amount)}</Text>
           </View>
         )}
         <View style={styles.divider} />
         <View style={styles.row}>
           <Text style={styles.grand}>{t.grandTotal}</Text>
-          <Text style={styles.grand}>{"\u20B9"}{grandTotal.toFixed(0)}</Text>
+          <Text style={styles.grand}>{"\u20B9"}{amount(grandTotal)}</Text>
         </View>
         {savings >= 1 && (
           <View style={styles.savings}>
             <Ionicons name="pricetag" size={14} color={colors.primary} />
             <Text style={styles.savingsLabel}>{t.savings}</Text>
-            <Text style={styles.savingsValue}>{"\u20B9"}{savings.toFixed(0)}</Text>
+            <Text style={styles.savingsValue}>{"\u20B9"}{amount(savings)}</Text>
           </View>
         )}
       </View>

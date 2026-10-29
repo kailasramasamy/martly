@@ -1,4 +1,5 @@
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
+import { amount } from "../../lib/money";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { useCart, type CartItem } from "../../lib/cart-context";
@@ -52,14 +53,14 @@ export function CartLine({ item, status, deal, onSwitch, onDecrement, onIncremen
               {getLocalizedName({ name: item.productName, translations: item.translations })}
             </Text>
             <Text style={styles.itemVariant}>{item.variantName}</Text>
-            <Text style={styles.itemPrice}>{"\u20B9"}{item.price.toFixed(0)}</Text>
+            <Text style={styles.itemPrice}>{"\u20B9"}{amount(item.price)}</Text>
             {item.offer && <OfferNote item={item} />}
             {status.unavailable ? (
               <Text style={[styles.note, styles.noteError]}>{t.outOfStock}</Text>
             ) : status.stockLeft != null ? (
               <Text style={[styles.note, styles.noteWarn]}>{t.onlyLeft(status.stockLeft)}</Text>
             ) : status.previousPrice != null ? (
-              <Text style={[styles.note, styles.noteWarn]}>{t.priceChanged(status.previousPrice.toFixed(0))}</Text>
+              <Text style={[styles.note, styles.noteWarn]}>{t.priceChanged(amount(status.previousPrice))}</Text>
             ) : null}
           </View>
         </TouchableOpacity>
@@ -118,8 +119,8 @@ function LineTotal({ item }: { item: CartItem }) {
   const full = item.price * item.quantity;
   return (
     <View style={styles.totals}>
-      {full > total && <Text style={styles.fullTotal}>{"\u20B9"}{full.toFixed(0)}</Text>}
-      <Text style={styles.lineTotal}>{"\u20B9"}{total.toFixed(0)}</Text>
+      {full > total && <Text style={styles.fullTotal}>{"\u20B9"}{amount(full)}</Text>}
+      <Text style={styles.lineTotal}>{"\u20B9"}{amount(total)}</Text>
     </View>
   );
 }
