@@ -87,6 +87,25 @@
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/276214_10-sprite-soft-drink-lime-flavoured.jpg"
     }
+   },
+   {
+    "title": "740ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000732_9-sprite-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "180ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339820_1-sprite-lemon-lime-flavoured-soft-drink.jpg"
+    }
    }
   ],
   "images": [
