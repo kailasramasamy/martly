@@ -1,13 +1,16 @@
 import { Prisma, type PrismaClient } from "../../generated/prisma/client.js";
 import type { ApplyStoreOfferInput, EndStoreOfferInput } from "@martly/shared/schemas";
 import type { StoreOffer, StoreOfferKind, StoreOfferStatus } from "@martly/shared/types";
+import { likeTerm, utc } from "./listing-sql.js";
 
-// Each kind keeps its own columns on the listing
+// Each kind keeps its own columns on the listing; `rank` orders kinds whose offers end together on the same product
 const COLUMNS = {
-  BUY_GET: { set: { offerBuyQty: { not: null } }, start: "offerStart", end: "offerEnd" },
-  DISCOUNT: { set: { discountType: { not: null }, discountValue: { gt: 0 } }, start: "discountStart", end: "discountEnd" },
+  BUY_GET: { rank: 0, set: Prisma.sql`sp.offer_buy_qty IS NOT NULL`, start: Prisma.sql`sp.offer_start`, end: Prisma.sql`sp.offer_end` },
+  DISCOUNT: {
+    rank: 1, set: Prisma.sql`sp.discount_type IS NOT NULL AND sp.discount_value > 0`, start: Prisma.sql`sp.discount_start`, end: Prisma.sql`sp.discount_end`,
+  },
   // Member prices have no dates: always live
-  MEMBER_PRICE: { set: { memberPrice: { not: null } }, start: null, end: null },
+  MEMBER_PRICE: { rank: 2, set: Prisma.sql`sp.member_price IS NOT NULL`, start: null, end: null },
 } as const;
 
 const CLEARED = {
@@ -16,12 +19,21 @@ const CLEARED = {
   MEMBER_PRICE: { memberPrice: null },
 } as const;
 
-function windowWhere(kind: StoreOfferKind, status: StoreOfferStatus, now: Date): Prisma.StoreProductWhereInput {
+function inWindow(kind: StoreOfferKind, status: StoreOfferStatus, now: Prisma.Sql) {
   const { start, end } = COLUMNS[kind];
-  if (!start || !end) return status === "live" ? {} : { id: { in: [] } };
-  if (status === "scheduled") return { [start]: { gt: now } };
-  if (status === "ended") return { [end]: { lt: now } };
-  return { AND: [{ OR: [{ [start]: null }, { [start]: { lte: now } }] }, { OR: [{ [end]: null }, { [end]: { gte: now } }] }] };
+  if (!start || !end) return status === "live" ? Prisma.sql`TRUE` : Prisma.sql`FALSE`;
+  if (status === "scheduled") return Prisma.sql`${start} > ${now}`;
+  if (status === "ended") return Prisma.sql`${end} < ${now}`;
+  return Prisma.sql`(${start} IS NULL OR ${start} <= ${now}) AND (${end} IS NULL OR ${end} >= ${now})`;
+}
+
+// One kind's offers in the status, with what the list sorts on
+function kindOffers(kind: StoreOfferKind, query: { storeId: string; status: StoreOfferStatus; q?: string }, now: Prisma.Sql) {
+  const { rank, set, end } = COLUMNS[kind];
+  return Prisma.sql`SELECT sp.id, ${kind} AS kind, ${rank}::int AS rank, ${end ?? Prisma.sql`NULL::timestamp`} AS ends, p.name
+    FROM store_products sp JOIN products p ON p.id = sp.product_id
+    WHERE sp.store_id = ${query.storeId} AND ${set} AND ${inWindow(kind, query.status, now)}
+      AND (${query.q ?? null}::text IS NULL OR p.name ILIKE ${query.q ? likeTerm(query.q) : null})`;
 }
 
 const SELECT = {
@@ -46,25 +58,29 @@ function toOffer(kind: StoreOfferKind, r: Row): StoreOffer {
   };
 }
 
-/** A store's offers of both kinds in one status, the soonest to end first, then by product name */
+/** A store's offers of every kind in one status, the soonest to end first, then by product name */
 export async function listStoreOffers(
   prisma: PrismaClient,
   query: { storeId: string; status: StoreOfferStatus; q?: string; page: number; pageSize: number },
 ) {
-  const now = new Date();
-  const name = query.q ? { product: { name: { contains: query.q, mode: "insensitive" as const } } } : {};
+  const now = utc(new Date());
   const kinds = Object.keys(COLUMNS) as StoreOfferKind[];
-  const perKind = await Promise.all(kinds.map(async (kind) => {
-    const rows = await prisma.storeProduct.findMany({
-      where: { storeId: query.storeId, ...COLUMNS[kind].set, ...windowWhere(kind, query.status, now), ...name },
-      select: SELECT,
-    });
-    return rows.map((r) => toOffer(kind, r));
-  }));
-  const ends = (o: StoreOffer) => (o.endsAt ? Date.parse(o.endsAt) : Infinity);
-  const all = perKind.flat().sort((a, b) => ends(a) - ends(b) || a.productName.localeCompare(b.productName));
-  const skip = (query.page - 1) * query.pageSize;
-  return { items: all.slice(skip, skip + query.pageSize), total: all.length };
+  // Names sort as the app's lists do (ICU, not the database's byte order), so "amul" sits with "Amul"
+  const page = await prisma.$queryRaw<{ id: string; kind: StoreOfferKind; total: number }[]>`
+    SELECT id, kind, COUNT(*) OVER()::int AS total FROM (${Prisma.join(kinds.map((k) => kindOffers(k, query, now)), " UNION ALL ")}) o
+    ORDER BY ends NULLS LAST, name COLLATE "und-x-icu", rank, id
+    LIMIT ${query.pageSize} OFFSET ${(query.page - 1) * query.pageSize}`;
+  const rows = await prisma.storeProduct.findMany({ where: { id: { in: page.map((r) => r.id) } }, select: SELECT });
+  const byId = new Map(rows.map((r) => [r.id, r]));
+  return { items: page.map((r) => toOffer(r.kind, byId.get(r.id)!)), total: page[0]?.total ?? (await countOffers(prisma, query, now)) };
+}
+
+// The total when the page asked for is past the last offer
+async function countOffers(prisma: PrismaClient, query: { storeId: string; status: StoreOfferStatus; q?: string }, now: Prisma.Sql) {
+  const kinds = Object.keys(COLUMNS) as StoreOfferKind[];
+  const [{ total }] = await prisma.$queryRaw<{ total: number }[]>`
+    SELECT COUNT(*)::int AS total FROM (${Prisma.join(kinds.map((k) => kindOffers(k, query, now)), " UNION ALL ")}) o`;
+  return total;
 }
 
 /** The listings among `ids` that belong to the store; any other id is a mistake or another store's */

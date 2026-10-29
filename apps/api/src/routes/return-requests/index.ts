@@ -47,7 +47,10 @@ export async function returnRequestRoutes(app: FastifyInstance) {
       return reply.badRequest(`Return window of ${RETURN_WINDOW_HOURS} hours has expired`);
     }
 
-    // Validate items belong to order and quantities don't exceed
+    // Validate items belong to order and quantities don't exceed; a line listed twice would be refunded twice
+    if (new Set(body.items.map((i) => i.orderItemId)).size !== body.items.length) {
+      return reply.badRequest("Each item can only be listed once");
+    }
     const orderItemMap = new Map(order.items.map((i) => [i.id, i]));
     let requestedAmount = 0;
     for (const item of body.items) {

@@ -9,7 +9,6 @@ import { alertOnce } from "./once.js";
 import { notifyStaff } from "./staff.js";
 
 const MINUTE_MS = 60_000;
-const SCAN_WINDOW_MS = 24 * 60 * MINUTE_MS;
 // Slow-order alerts are for live operations; anything older is stale, not urgent
 const SLA_WINDOW_MS = 6 * 60 * MINUTE_MS;
 const DISPATCH_WAIT_MINUTES = 20;
@@ -96,7 +95,8 @@ async function expireUnpaidOrders(app: FastifyInstance, now: number) {
   const stale = await app.prisma.order.findMany({
     where: {
       status: "PENDING", paymentMethod: "ONLINE", paymentStatus: { in: ["PENDING", "FAILED"] }, isSubscriptionOrder: false,
-      createdAt: { gte: new Date(now - SCAN_WINDOW_MS), lte: new Date(now - UNPAID_EXPIRY_MINUTES * MINUTE_MS) },
+      // No lower bound: an order left unpaid through downtime still expires
+      createdAt: { lte: new Date(now - UNPAID_EXPIRY_MINUTES * MINUTE_MS) },
     },
     select: { id: true },
   });

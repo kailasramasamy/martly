@@ -5,9 +5,14 @@ import { dominantCategory, injectAd, liveSponsored, pickAd } from "../sponsored.
 import { expandLayout, loadLayout } from "./layout.js";
 import { RESOLVERS } from "./registry.js";
 import { searchHints, type HintTile } from "./search-hints.js";
+import { ttlCache } from "../ttl-cache.js";
 import type { LayoutEntry, ResolveContext, ResolvedSection } from "./types.js";
 
 const FESTIVAL_HINTS = 2;
+// The expanded layout is the same for every shopper of a store, so it's rebuilt at most this often; layout and
+// collection edits show within that
+const LAYOUT_TTL_MS = 60_000;
+const layoutCache = ttlCache<LayoutEntry[]>(LAYOUT_TTL_MS);
 
 export type PageStore = { id: string; organizationId: string; freeDeliveryThreshold: unknown };
 
@@ -113,7 +118,7 @@ export async function homeSectionsPage(
   prisma: ResolveContext["prisma"], store: PageStore, userId: string, cursor: string | undefined, shelves: ResolveContext["shelves"] = "grid",
 ): Promise<HomeSectionsPage> {
   const ctx: ResolveContext = { prisma, store, userId, now: new Date(), shelves };
-  const entries = await expandLayout(ctx, await loadLayout(ctx));
+  const entries = await layoutCache.get(store.id, async () => expandLayout(ctx, await loadLayout(ctx)));
   const position = decodeCursor(cursor);
   let start = position.i;
   let sections: ResolvedSection[] = [];

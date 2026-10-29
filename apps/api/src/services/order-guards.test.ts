@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import type { FastifyInstance } from "fastify";
 import type { Prisma } from "../../generated/prisma/client.js";
-import { claimStatus, lockCoupon, releaseCoupon } from "./order-guards.js";
+import { claimSlotPlace, claimStatus, lockCoupon, releaseCoupon, toPaise } from "./order-guards.js";
 import { cancelOrder } from "./order-cancel.js";
 
 type Call = [string, unknown];
@@ -71,4 +71,19 @@ test("a cancel that loses the race releases no stock and refunds nothing", async
   const calls: Call[] = [];
   await assert.rejects(cancelOrder(fakeApp(unpaid, calls, 0), "o1", expiry), { statusCode: 409 });
   assert.deepEqual(calls.map((c) => c[0]), ["order.updateMany"]);
+});
+
+test("a wallet that covers the total leaves exactly nothing to pay, whatever the float sum of the prices", async () => {
+  const total = toPaise(0.1 + 0.2 + 49.7);
+  assert.equal(toPaise(total - Math.min(50, total)), 0);
+});
+
+test("a full delivery slot refuses the booking while holding the slot's lock", async () => {
+  const calls: Call[] = [];
+  const tx = fakeTx(calls, 0, {
+    $queryRaw: async () => { calls.push(["lock", null]); return []; },
+    order: { count: async () => 20 },
+  });
+  await assert.rejects(claimSlotPlace(tx, "slot1", { start: new Date(), end: new Date() }, 20), { statusCode: 400 });
+  assert.equal(calls[0][0], "lock");
 });

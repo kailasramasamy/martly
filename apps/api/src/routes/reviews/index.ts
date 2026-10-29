@@ -110,13 +110,15 @@ export async function reviewRoutes(app: FastifyInstance) {
       return reply.status(409).send({ success: false, error: "Duplicate", message: "You already reviewed this product", statusCode: 409 });
     }
 
-    // Auto-verify if user has a delivered order containing this product
+    // Auto-verify if user has a delivered order containing this product (the one they named, when they named one)
     const deliveredOrder = await app.prisma.order.findFirst({
       where: {
+        ...(body.orderId ? { id: body.orderId } : {}),
         userId: user.sub,
         status: "DELIVERED",
         items: { some: { productId: body.productId } },
       },
+      select: { id: true, storeId: true },
     });
 
     const review = await app.prisma.$transaction(async (tx) => {
@@ -124,8 +126,9 @@ export async function reviewRoutes(app: FastifyInstance) {
         data: {
           userId: user.sub,
           productId: body.productId,
-          storeId: body.storeId,
-          orderId: body.orderId,
+          // A verified review belongs to the store that delivered it; that store's loyalty pays its reward
+          storeId: deliveredOrder?.storeId ?? body.storeId,
+          orderId: deliveredOrder?.id,
           rating: body.rating,
           title: body.title,
           comment: body.comment,
@@ -311,12 +314,14 @@ export async function reviewRoutes(app: FastifyInstance) {
         include: { user: { select: { id: true, name: true } }, product: { select: { id: true, name: true } } },
       });
 
-      // Award loyalty points when a verified review is approved
+      // Award loyalty points when a verified review is approved, once per review
       if (body.status === "APPROVED" && review.isVerified && review.store?.organizationId) {
         const orgId = review.store.organizationId;
         const loyaltyConfig = await tx.loyaltyConfig.findUnique({ where: { organizationId: orgId } });
+        const unpaid = loyaltyConfig?.isEnabled && loyaltyConfig.reviewRewardPoints > 0
+          && (await tx.review.updateMany({ where: { id: review.id, loyaltyRewardedAt: null }, data: { loyaltyRewardedAt: new Date() } })).count === 1;
 
-        if (loyaltyConfig?.isEnabled && loyaltyConfig.reviewRewardPoints > 0) {
+        if (loyaltyConfig && unpaid) {
           const balance = await tx.loyaltyBalance.upsert({
             where: { userId_organizationId: { userId: review.userId, organizationId: orgId } },
             create: {
