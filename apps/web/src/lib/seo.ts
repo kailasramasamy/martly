@@ -64,7 +64,8 @@ export function pageHead({ title, description, path, image, noindex, jsonLd }: P
       { property: "og:image", content: image ?? `${SITE_URL}/brand/app-icon.png` },
     ],
     links: noindex ? [] : [{ rel: "canonical", href: url }],
-    scripts: jsonLd ? [{ type: "application/ld+json", children: JSON.stringify(jsonLd) }] : [],
+    // "<" escaped so a name containing "</script>" can't end the script tag (the JSON reads the same)
+    scripts: jsonLd ? [{ type: "application/ld+json", children: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }] : [],
   }
 }
 
