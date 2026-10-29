@@ -1,8 +1,23 @@
 site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
-Supreme Detergent Cake,Ponvandu Supreme Detergent Cake,create,Home Care > Detergent > Detergent Bar,240g ₹20,240g ₹20,4,
-Perfect Detergent Cake,Ponvandu Perfect Detergent Cake,create,Home Care > Detergent > Detergent Bar,150g ₹10,150g ₹10,4,
-Superior Detergent Cake,Ponvandu Superior Detergent Cake,create,Home Care > Detergent > Detergent Bar,265g ₹30,265g ₹30,4,265g: out of stock online
-Accel Detergent Cake,Ponvandu Accel Detergent Cake,create,Home Care > Detergent > Detergent Bar,290g ₹32,290g ₹32,4,
-Active Wash Detergent Powder,Ponvandu Active Wash Detergent Powder,create,Home Care > Detergent > Detergent Powder,500g ₹48,500g ₹48,2,
-Dish Wash Shine Bar,Ponvandu Dish Wash Shine Bar,create,Home Care > Dishwash > Dishwash Bar,250g ₹30 | 500g ₹55,250g ₹30 | 500g ₹55,5,
-Cleaning Powder,Ponvandu Cleaning Powder,create,Home Care > Dishwash > Dishwash Powder,380g ₹12,380g ₹12,2,
+Ponvandu Perfect Detergent Cake,Ponvandu Perfect Detergent Cake,update,Home Care > Detergent > Detergent Bar,125g ₹10 | 140g ₹10,125g ₹10 | 140g ₹10,3,125g: out of stock online; 140g: out of stock online
+Ponvandu Supreme Detergent Cake,Ponvandu Supreme Detergent Cake,update,Home Care > Detergent > Detergent Bar,200g ₹16 | 210g ₹23 | 250g ₹28,200g ₹16 | 210g ₹23 | 250g ₹28,8,200g: out of stock online; 210g: out of stock online; 250g: out of stock online
+Ponvandu Superior Detergent Cake,Ponvandu Superior Detergent Cake,update,Home Care > Detergent > Detergent Bar,210g ₹25 | 225g ₹25 | 240g ₹30,210g ₹25 | 225g ₹25 | 240g ₹30,7,210g: out of stock online; 225g: out of stock online; 240g: out of stock online
+Ponvandu Accel Detergent Cake,Ponvandu Accel Detergent Cake,update,Home Care > Detergent > Detergent Bar,290g ₹32,290g ₹32,2,290g: out of stock online
+Ponvandu Accel Blue Detergent Cake,Ponvandu Accel Blue Detergent Cake,create,Home Care > Detergent > Detergent Bar,180g ₹27 | 215g ₹35,180g ₹27 | 215g ₹30,8,180g: out of stock online
+Ponvandu Accel Mini Detergent Cake,Ponvandu Accel Mini Detergent Cake,create,Home Care > Detergent > Detergent Bar,120g ₹18,120g ₹16,3,
+Ponvandu Detergent Cake Blue,Ponvandu Detergent Cake Blue,create,Home Care > Detergent > Detergent Bar,80g ₹5 | 150g ₹10,80g ₹5 | 150g ₹10,4,80g: out of stock online; 150g: out of stock online
+Ponvandu King Detergent Cake,Ponvandu King Detergent Cake,create,Home Care > Detergent > Detergent Bar,180g ₹12,180g ₹12,2,180g: out of stock online
+Ponvandu Mega Elite Detergent Cake,Ponvandu Mega Elite Detergent Cake,create,Home Care > Detergent > Detergent Bar,180g ₹10,180g ₹10,3,180g: out of stock online
+Ponvandu Royal Detergent Cake,Ponvandu Royal Detergent Cake,create,Home Care > Detergent > Detergent Bar,140g ₹15,140g ₹15,2,140g: out of stock online
+Ponvandu Active Wash Detergent Powder,Ponvandu Active Wash Detergent Powder,update,Home Care > Detergent > Detergent Powder,100g ₹10 | 500g ₹90 | 1kg ₹190 | 2kg ₹472 | 3kg ₹518,100g ₹10 | 500g ₹78 | 1kg ₹165 | 2kg ₹410 | 3kg ₹450,8,100g: out of stock online
+Ponvandu Perfect Active Wash Detergent Powder Blue,Ponvandu Perfect Active Wash Detergent Powder Blue,create,Home Care > Detergent > Detergent Powder,1kg ₹138,1kg ₹120,3,
+Ponvandu Premium Detergent Powder Orange,Ponvandu Premium Detergent Powder Orange,create,Home Care > Detergent > Detergent Powder,1kg ₹220,1kg ₹220,3,1kg: out of stock online
+Ponvandu Detergent Liquid,Ponvandu Detergent Liquid,create,Home Care > Detergent > Liquid Detergent,75ml ₹12 | 1L ₹125,75ml ₹10 | 1L ₹109,6,
+Ponvandu Detergent Liquid Value Pack,Ponvandu Detergent Liquid Value Pack,create,Home Care > Detergent > Liquid Detergent,500ml ₹75,500ml ₹65,5,
+Ponvandu Detergent Liquid Red Bottle,Ponvandu Detergent Liquid Red Bottle,create,Home Care > Detergent > Liquid Detergent,1L ₹132,1L ₹115,5,
+Ponvandu Active Wash Detergent Liquid,Ponvandu Active Wash Detergent Liquid,create,Home Care > Detergent > Liquid Detergent,5L ₹562,5L ₹489,1,5L: out of stock online
+Ponvandu Matic Liquid,Ponvandu Matic Liquid,create,Home Care > Detergent > Liquid Detergent,500ml ₹104 | 3L ₹368,500ml ₹90 | 3L ₹320,8,
+Ponvandu Matic Liquid Buy 1L Get 500ml Free,Ponvandu Matic Liquid Buy 1L Get 500ml Free,create,Home Care > Detergent > Liquid Detergent,1.5L ₹288,1.5L ₹250,7,
+Ponvandu Dish Wash Shine Bar,Ponvandu Dish Wash Shine Bar,update,Home Care > Dishwash > Dishwash Bar,250g ₹40 | 500g ₹75,250g ₹35 | 500g ₹65,7,
+Ponvandu Dishwash Liquid,Ponvandu Dishwash Liquid,create,Home Care > Dishwash > Dishwash Gel / Liquid,175ml ₹23,175ml ₹20,6,
+Ponvandu Steel Scrubber Pad,Ponvandu Steel Scrubber Pad,create,Home Care > Dishwash > Scrub Pad & Sponge,10g ₹10,10g ₹10,1,10g: out of stock online

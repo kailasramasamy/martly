@@ -1,70 +1,198 @@
 {
-  "brand": "Ponvandu",
-  "manufacturer": "",
-  "feed": "ponvandu-feed.json",
-  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ponvandu/logo-ed708513.png",
-  "themeColor": "#E30613",
-  "themeColorSecondary": "#2E2A86",
-  "namePrefix": "Ponvandu ",
-  "foodType": "VEG",
-  "exclude": [],
-  "aliases": {},
-  "rules": [
-    {
-      "match": "^Supreme\\ Detergent\\ Cake$",
-      "path": [
-        "Home Care",
-        "Detergent",
-        "Detergent Bar"
-      ]
-    },
-    {
-      "match": "^Perfect\\ Detergent\\ Cake$",
-      "path": [
-        "Home Care",
-        "Detergent",
-        "Detergent Bar"
-      ]
-    },
-    {
-      "match": "^Superior\\ Detergent\\ Cake$",
-      "path": [
-        "Home Care",
-        "Detergent",
-        "Detergent Bar"
-      ]
-    },
-    {
-      "match": "^Accel\\ Detergent\\ Cake$",
-      "path": [
-        "Home Care",
-        "Detergent",
-        "Detergent Bar"
-      ]
-    },
-    {
-      "match": "^Active\\ Wash\\ Detergent\\ Powder$",
-      "path": [
-        "Home Care",
-        "Detergent",
-        "Detergent Powder"
-      ]
-    },
-    {
-      "match": "^Dish\\ Wash\\ Shine\\ Bar$",
-      "path": [
-        "Home Care",
-        "Dishwash",
-        "Dishwash Bar"
-      ]
-    },
-    {
-      "match": "^Cleaning\\ Powder$",
-      "path": [
-        "Home Care",
-        "Dishwash",
-        "Dishwash Powder"
-      ]
-    }
-  ]
+ "brand": "Ponvandu",
+ "manufacturer": "Sree Pushpam Industries",
+ "feed": "ponvandu-feed.json",
+ "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ponvandu/logo-ed708513.png",
+ "themeColor": "#E30613",
+ "themeColorSecondary": "#2E2A86",
+ "namePrefix": "Ponvandu ",
+ "foodType": "VEG",
+ "exclude": [],
+ "aliases": {},
+ "rules": [
+  {
+   "match": "^Perfect\\ Detergent\\ Cake$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Bar"
+   ]
+  },
+  {
+   "match": "^Supreme\\ Detergent\\ Cake$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Bar"
+   ]
+  },
+  {
+   "match": "^Superior\\ Detergent\\ Cake$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Bar"
+   ]
+  },
+  {
+   "match": "^Accel\\ Detergent\\ Cake$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Bar"
+   ]
+  },
+  {
+   "match": "^Accel\\ Blue\\ Detergent\\ Cake$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Bar"
+   ]
+  },
+  {
+   "match": "^Accel\\ Mini\\ Detergent\\ Cake$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Bar"
+   ]
+  },
+  {
+   "match": "^Detergent\\ Cake\\ Blue$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Bar"
+   ]
+  },
+  {
+   "match": "^King\\ Detergent\\ Cake$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Bar"
+   ]
+  },
+  {
+   "match": "^Mega\\ Elite\\ Detergent\\ Cake$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Bar"
+   ]
+  },
+  {
+   "match": "^Royal\\ Detergent\\ Cake$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Bar"
+   ]
+  },
+  {
+   "match": "^Active\\ Wash\\ Detergent\\ Powder$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Powder"
+   ]
+  },
+  {
+   "match": "^Perfect\\ Active\\ Wash\\ Detergent\\ Powder\\ Blue$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Powder"
+   ]
+  },
+  {
+   "match": "^Premium\\ Detergent\\ Powder\\ Orange$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Powder"
+   ]
+  },
+  {
+   "match": "^Detergent\\ Liquid$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Liquid Detergent"
+   ]
+  },
+  {
+   "match": "^Detergent\\ Liquid\\ Value\\ Pack$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Liquid Detergent"
+   ]
+  },
+  {
+   "match": "^Detergent\\ Liquid\\ Red\\ Bottle$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Liquid Detergent"
+   ]
+  },
+  {
+   "match": "^Active\\ Wash\\ Detergent\\ Liquid$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Liquid Detergent"
+   ]
+  },
+  {
+   "match": "^Matic\\ Liquid$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Liquid Detergent"
+   ]
+  },
+  {
+   "match": "^Matic\\ Liquid\\ Buy\\ 1L\\ Get\\ 500ml\\ Free$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Liquid Detergent"
+   ]
+  },
+  {
+   "match": "^Dish\\ Wash\\ Shine\\ Bar$",
+   "path": [
+    "Home Care",
+    "Dishwash",
+    "Dishwash Bar"
+   ]
+  },
+  {
+   "match": "^Dishwash\\ Liquid$",
+   "path": [
+    "Home Care",
+    "Dishwash",
+    "Dishwash Gel / Liquid"
+   ]
+  },
+  {
+   "match": "^Steel\\ Scrubber\\ Pad$",
+   "path": [
+    "Home Care",
+    "Dishwash",
+    "Scrub Pad & Sponge"
+   ]
+  },
+  {
+   "match": "^Cleaning\\ Powder$",
+   "path": [
+    "Home Care",
+    "Dishwash",
+    "Dishwash Powder"
+   ]
+  }
+ ]
 }
