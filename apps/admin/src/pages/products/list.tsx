@@ -21,6 +21,19 @@ const { Text } = Typography;
 
 // --- Shared types ---
 
+interface SearchValues { q?: string; categoryPath: string[]; organizationId?: string }
+
+const searchFilters = (values: SearchValues): CrudFilter[] => {
+  const cp = values.categoryPath ?? [];
+  return [
+    { field: "q", operator: "contains", value: values.q },
+    { field: "departmentId", operator: "eq", value: cp.length === 1 ? cp[0] : undefined },
+    { field: "categoryId", operator: "eq", value: cp.length === 2 ? cp[1] : undefined },
+    { field: "subcategoryId", operator: "eq", value: cp.length >= 3 ? cp[2] : undefined },
+    { field: "organizationId", operator: "eq", value: values.organizationId },
+  ];
+};
+
 interface Variant {
   id: string;
   name: string;
@@ -127,8 +140,23 @@ const ProductsTableTab = ({
   const { message } = App.useApp();
   const [expandedKeys, setExpandedKeys] = useState<string[]>([]);
 
+  // Page, search, category and organization live in the URL so the view survives a trip to a product and back
+  const [params, setParams] = useSearchParams();
+  const [initialView] = useState<SearchValues>(() => ({
+    q: params.get("q") ?? undefined,
+    categoryPath: params.get("path")?.split(",") ?? [],
+    organizationId: params.get("org") ?? undefined,
+  }));
+  const setUrlView = (view: SearchValues) => setParams((prev) => {
+    const next = new URLSearchParams(prev);
+    const entries: [string, string | undefined][] = [["q", view.q || undefined], ["path", view.categoryPath.join(",") || undefined], ["org", view.organizationId]];
+    for (const [key, value] of entries) if (value) next.set(key, value); else next.delete(key);
+    next.delete("page");
+    return next;
+  }, { replace: true });
+
   // Hierarchy navigation state
-  const [selectedPath, setSelectedPath] = useState<string[]>([]);
+  const [selectedPath, setSelectedPath] = useState<string[]>(initialView.categoryPath);
   const selectedDeptId = selectedPath[0] ?? null;
   const selectedCatId = selectedPath[1] ?? null;
   const selectedSubcatId = selectedPath[2] ?? null;
@@ -139,26 +167,29 @@ const ProductsTableTab = ({
   if (hasStoreProducts) permanentFilters.push({ field: "hasStoreProducts", operator: "eq", value: "true" });
   if (includeStoreProducts) permanentFilters.push({ field: "includeStoreProducts", operator: "eq", value: "true" });
 
-  const { tableProps, searchFormProps, tableQuery } = useTable<
+  const { tableProps, searchFormProps, tableQuery, current } = useTable<
     ProductRecord,
     HttpError,
-    { q: string; categoryPath: string[]; organizationId: string }
+    SearchValues
   >({
     resource: "products",
-    pagination: { pageSize: 25 },
+    pagination: { current: Number(params.get("page")) || 1, pageSize: 25 },
     syncWithLocation: false,
-    filters: { permanent: permanentFilters },
+    filters: { permanent: permanentFilters, initial: searchFilters(initialView) },
     onSearch: (values) => {
-      const cp: string[] = values.categoryPath ?? [];
-      return [
-        { field: "q", operator: "contains", value: values.q },
-        { field: "departmentId", operator: "eq", value: cp.length === 1 ? cp[0] : undefined },
-        { field: "categoryId", operator: "eq", value: cp.length === 2 ? cp[1] : undefined },
-        { field: "subcategoryId", operator: "eq", value: cp.length >= 3 ? cp[2] : undefined },
-        { field: "organizationId", operator: "eq", value: values.organizationId },
-      ];
+      setUrlView({ q: values.q, categoryPath: values.categoryPath ?? [], organizationId: values.organizationId });
+      return searchFilters(values);
     },
   });
+
+  // Keep the URL in step with the page so coming back from a product lands on the same one
+  useEffect(() => {
+    setParams((prev) => {
+      const next = new URLSearchParams(prev);
+      if (current > 1) next.set("page", String(current)); else next.delete("page");
+      return next;
+    }, { replace: true });
+  }, [current, setParams]);
 
   // Fetch facets and category tree
   const [facets, setFacets] = useState<{
@@ -440,7 +471,7 @@ const ProductsTableTab = ({
   return (
     <>
       {/* Search + filters row */}
-      <Form {...searchFormProps} layout="inline" style={{ marginBottom: 12, gap: 8, display: "flex", flexWrap: "wrap" }}>
+      <Form {...searchFormProps} initialValues={initialView} layout="inline" style={{ marginBottom: 12, gap: 8, display: "flex", flexWrap: "wrap" }}>
         <Form.Item name="q" noStyle>
           <DebouncedSearch placeholder="Search products..." onSearch={() => searchFormProps.form?.submit()} style={{ width: 280 }} />
         </Form.Item>
