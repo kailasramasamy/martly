@@ -1,0 +1,46 @@
+{
+  "brand": "Vasmol",
+  "manufacturer": "Hygienic Research Institute Pvt. Ltd., Mumbai",
+  "feed": "vasmol-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/vasmol/logo-8677ad0f.png",
+  "themeColor": "#111111",
+  "themeColorSecondary": "#C8102E",
+  "namePrefix": "",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Super\\ Vasmol\\ 33\\ Kesh\\ Kala\\ Hair\\ Dye$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Vasmol\\ Henna\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Vasmol\\ Natural\\ Henna\\ Paste\\ with\\ Coffee\\ \\&\\ Beetroot$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Vasmol\\ Onion\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    }
+  ]
+}
