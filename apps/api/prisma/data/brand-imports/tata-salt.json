@@ -1,24 +1,120 @@
 {
-  "brand": "Tata Salt",
-  "manufacturer": "Tata Consumer Products",
-  "feed": "tata-salt-feed.json",
-  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tata-salt/logo-a80a4460.png",
-  "themeColor": "#3D1A1F",
-  "themeColorSecondary": "#F07C22",
-  "namePrefix": "Tata Salt ",
-  "foodType": "VEG",
-  "exclude": [],
-  "aliases": {
-    "Tata Salt - Vacuum Evaporated Iodised Salt": "Vacuum Evaporated Iodised Salt"
+ "brand": "Tata Salt",
+ "manufacturer": "Tata Consumer Products",
+ "feed": "tata-salt-feed.json",
+ "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tata-salt/logo-a80a4460.png",
+ "themeColor": "#3D1A1F",
+ "themeColorSecondary": "#F07C22",
+ "namePrefix": "Tata Salt ",
+ "foodType": "VEG",
+ "exclude": [],
+ "aliases": {
+  "Tata Salt - Vacuum Evaporated Iodised Salt": "Vacuum Evaporated Iodised Salt"
+ },
+ "rules": [
+  {
+   "match": "^Iodised\\ Crystal\\ Salt$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Iodised Salt"
+   ]
   },
-  "rules": [
-    {
-      "match": "^Vacuum\\ Evaporated\\ Iodised\\ Salt$",
-      "path": [
-        "Grocery & Staples",
-        "Salt & Sugar",
-        "Iodised Salt"
-      ]
-    }
-  ]
+  {
+   "match": "^Lite\\ Low\\ Sodium\\ Iodised\\ Salt$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Iodised Salt"
+   ]
+  },
+  {
+   "match": "^Super\\ Lite\\ Iodised\\ Salt$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Iodised Salt"
+   ]
+  },
+  {
+   "match": "^Iron\\ Health\\ Salt$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Iodised Salt"
+   ]
+  },
+  {
+   "match": "^Immuno\\ Salt$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Iodised Salt"
+   ]
+  },
+  {
+   "match": "^2\\ in\\ 1\\ Rock\\ \\&\\ Iodised\\ Shakti\\ Salt$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Iodised Salt"
+   ]
+  },
+  {
+   "match": "^Pink\\ Salt\\ \\(Sendha\\ Namak\\)$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Rock Salt (Sendha Namak)"
+   ]
+  },
+  {
+   "match": "^Himalayan\\ Rock\\ Salt$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Rock Salt (Sendha Namak)"
+   ]
+  },
+  {
+   "match": "^Himalayan\\ Rock\\ Salt\\ Crystal$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Rock Salt (Sendha Namak)"
+   ]
+  },
+  {
+   "match": "^LoSodium\\ Rock\\ Salt$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Rock Salt (Sendha Namak)"
+   ]
+  },
+  {
+   "match": "^Gourmet\\ Smoky\\ Tandoori\\ Rock\\ Salt\\ Sprinkler$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Rock Salt (Sendha Namak)"
+   ]
+  },
+  {
+   "match": "^Handcrafted\\ Black\\ Salt$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Black Salt (Kala Namak)"
+   ]
+  },
+  {
+   "match": "^Vacuum\\ Evaporated\\ Iodised\\ Salt$",
+   "path": [
+    "Grocery & Staples",
+    "Salt & Sugar",
+    "Iodised Salt"
+   ]
+  }
+ ]
 }

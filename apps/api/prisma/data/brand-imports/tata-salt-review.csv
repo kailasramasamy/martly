@@ -1,2 +1,14 @@
 site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
-Vacuum Evaporated Iodised Salt,Tata Salt Vacuum Evaporated Iodised Salt,update,Grocery & Staples > Salt & Sugar > Iodised Salt,1kg ₹28 | 2kg ₹62,1kg ₹28 | 2kg ₹62,8,
+Vacuum Evaporated Iodised Salt,Tata Salt Vacuum Evaporated Iodised Salt,update,Grocery & Staples > Salt & Sugar > Iodised Salt,1kg ₹28 | 2kg ₹62 | 180g ₹45,1kg ₹28 | 2kg ₹62 | 180g ₹45,8,1kg MRP ₹28 < 180g MRP ₹45
+Iodised Crystal Salt,Tata Salt Iodised Crystal Salt,create,Grocery & Staples > Salt & Sugar > Iodised Salt,1kg ₹22,1kg ₹22,8,
+Lite Low Sodium Iodised Salt,Tata Salt Lite Low Sodium Iodised Salt,create,Grocery & Staples > Salt & Sugar > Iodised Salt,180g ₹50 | 1kg ₹50,180g ₹50 | 1kg ₹50,8,
+Super Lite Iodised Salt,Tata Salt Super Lite Iodised Salt,create,Grocery & Staples > Salt & Sugar > Iodised Salt,1kg ₹75,1kg ₹75,8,
+Iron Health Salt,Tata Salt Iron Health Salt,create,Grocery & Staples > Salt & Sugar > Iodised Salt,1kg ₹35,1kg ₹35,8,
+Immuno Salt,Tata Salt Immuno Salt,create,Grocery & Staples > Salt & Sugar > Iodised Salt,1kg ₹30,1kg ₹30,8,
+2 in 1 Rock & Iodised Shakti Salt,Tata Salt 2 in 1 Rock & Iodised Shakti Salt,create,Grocery & Staples > Salt & Sugar > Iodised Salt,1kg ₹60,1kg ₹60,6,
+Pink Salt (Sendha Namak),Tata Salt Pink Salt (Sendha Namak),create,Grocery & Staples > Salt & Sugar > Rock Salt (Sendha Namak),200g ₹30 | 1kg ₹80,200g ₹30 | 1kg ₹80,8,
+Himalayan Rock Salt,Tata Salt Himalayan Rock Salt,create,Grocery & Staples > Salt & Sugar > Rock Salt (Sendha Namak),180g ₹50,180g ₹50,7,
+Himalayan Rock Salt Crystal,Tata Salt Himalayan Rock Salt Crystal,create,Grocery & Staples > Salt & Sugar > Rock Salt (Sendha Namak),1kg ₹120,1kg ₹120,6,
+LoSodium Rock Salt,Tata Salt LoSodium Rock Salt,create,Grocery & Staples > Salt & Sugar > Rock Salt (Sendha Namak),1kg ₹150,1kg ₹150,8,
+Gourmet Smoky Tandoori Rock Salt Sprinkler,Tata Salt Gourmet Smoky Tandoori Rock Salt Sprinkler,create,Grocery & Staples > Salt & Sugar > Rock Salt (Sendha Namak),80g ₹275,80g ₹275,8,
+Handcrafted Black Salt,Tata Salt Handcrafted Black Salt,create,Grocery & Staples > Salt & Sugar > Black Salt (Kala Namak),180g ₹50,180g ₹50,7,
