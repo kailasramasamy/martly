@@ -1,9 +1,12 @@
-import { createContext, useContext, useState, useCallback, useEffect, useRef } from "react";
+import { createContext, useContext, useState, useCallback, useEffect, useMemo, useRef } from "react";
 import { api } from "./api";
 import { useAuth } from "./auth-context";
 import { useToast } from "./toast-context";
 import { useStore } from "./store-context";
 import { strings } from "./i18n";
+
+const LOAD_RETRIES = 3;
+const RETRY_BASE_MS = 5_000;
 
 interface WishlistContextType {
   wishlistedIds: Set<string>;
@@ -26,26 +29,34 @@ export function WishlistProvider({ children }: { children: React.ReactNode }) {
   const storeId = selectedStore?.id;
   const [wishlistedIds, setWishlistedIds] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(false);
-  const fetched = useRef(false);
+  const [attempt, setAttempt] = useState(0);
 
   useEffect(() => {
     if (!isAuthenticated) {
       setWishlistedIds(new Set());
-      fetched.current = false;
+      setAttempt(0);
       return;
     }
-    if (fetched.current) return;
-    fetched.current = true;
-
+    // A sign-out while loading drops the answer
+    let current = true;
+    let retry: ReturnType<typeof setTimeout> | undefined;
     setLoading(true);
-    api.get<any[]>("/api/v1/wishlist")
+    api.get<{ productId: string }[]>("/api/v1/wishlist")
       .then((res) => {
-        const ids = new Set(res.data.map((item: any) => item.productId));
-        setWishlistedIds(ids);
+        if (current) setWishlistedIds(new Set(res.data.map((item) => item.productId)));
       })
-      .catch(() => {})
-      .finally(() => setLoading(false));
-  }, [isAuthenticated]);
+      .catch(() => {
+        // Tried again a little later each time, so a flaky launch doesn't leave every heart empty
+        if (current && attempt < LOAD_RETRIES) retry = setTimeout(() => setAttempt((n) => n + 1), RETRY_BASE_MS * 2 ** attempt);
+      })
+      .finally(() => {
+        if (current) setLoading(false);
+      });
+    return () => {
+      current = false;
+      clearTimeout(retry);
+    };
+  }, [isAuthenticated, attempt]);
 
   const wishlistedRef = useRef(wishlistedIds);
   wishlistedRef.current = wishlistedIds;
@@ -96,9 +107,10 @@ export function WishlistProvider({ children }: { children: React.ReactNode }) {
   }, [toast, storeId]);
 
   const isWishlisted = useCallback((productId: string) => wishlistedRef.current.has(productId), []);
+  const value = useMemo(() => ({ wishlistedIds, toggle, isWishlisted, loading }), [wishlistedIds, toggle, isWishlisted, loading]);
 
   return (
-    <WishlistContext.Provider value={{ wishlistedIds, toggle, isWishlisted, loading }}>
+    <WishlistContext.Provider value={value}>
       {children}
     </WishlistContext.Provider>
   );

@@ -25,7 +25,11 @@ export function useOrdersFeed(filter: OrderFilter) {
   const [refreshing, setRefreshing] = useState(false);
   const [loadingMore, setLoadingMore] = useState(false);
   const loaded = useRef(PAGE_SIZE);
+  // Only the latest reload, and only pages of the filter still shown, may land: a slower answer is dropped
+  const latestReload = useRef(0);
   const historyStatus = filter === "ACTIVE" ? null : HISTORY_STATUS[filter];
+  const statusShown = useRef(historyStatus);
+  statusShown.current = historyStatus;
 
   const historyPath = useCallback(
     (page: number, pageSize: number) => `/api/v1/orders?status=${historyStatus}&page=${page}&pageSize=${pageSize}`,
@@ -33,20 +37,22 @@ export function useOrdersFeed(filter: OrderFilter) {
   );
 
   const reload = useCallback(async () => {
+    const call = ++latestReload.current;
     try {
       const [a, h] = await Promise.all([
         api.getList<OrderSummary>(`/api/v1/orders?status=${ACTIVE_STATUSES.join(",")}&pageSize=${ACTIVE_LIMIT}`),
         historyStatus ? api.getList<OrderSummary>(historyPath(1, loaded.current)) : null,
       ]);
+      if (call !== latestReload.current) return;
       setActive(a.data);
       setHistory(h?.data ?? []);
       setHistoryTotal(h?.meta.total ?? 0);
       setPhase("ready");
     } catch {
       // A failed background refresh keeps what's on screen; only a first load shows the error state
-      setPhase((p) => (p === "ready" ? p : "error"));
+      if (call === latestReload.current) setPhase((p) => (p === "ready" ? p : "error"));
     } finally {
-      setRefreshing(false);
+      if (call === latestReload.current) setRefreshing(false);
     }
   }, [historyStatus, historyPath]);
 
@@ -73,6 +79,7 @@ export function useOrdersFeed(filter: OrderFilter) {
     setLoadingMore(true);
     try {
       const res = await api.getList<OrderSummary>(historyPath(Math.floor(history.length / PAGE_SIZE) + 1, PAGE_SIZE));
+      if (statusShown.current !== historyStatus) return;
       setHistory((prev) => {
         const seen = new Set(prev.map((o) => o.id));
         const next = [...prev, ...res.data.filter((o) => !seen.has(o.id))];

@@ -19,8 +19,7 @@ import {
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import * as SecureStore from "expo-secure-store";
-import { api } from "./api";
+import { api, freshAccessToken, getAccessToken } from "./api";
 import { notificationAudience, type NotificationAudience } from "@martly/shared/constants";
 import { useAuth } from "./auth-context";
 import { usePersona } from "./persona-context";
@@ -71,7 +70,8 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
   const wsRef = useRef<WebSocket | null>(null);
   const backoffRef = useRef(1000);
   const reconnectTimerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
-  const mountedRef = useRef(true);
+  // Bumped by every socket effect run and cleanup, so a connect still awaiting its token after logout gives up
+  const generationRef = useRef(0);
   const bannerTimerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const bannerTranslateY = useRef(new Animated.Value(-100)).current;
   const bannerOpacity = useRef(new Animated.Value(0)).current;
@@ -136,11 +136,21 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
   }, [bannerNotification, dismissBanner]);
 
   // WebSocket connection
-  const connect = useCallback(async () => {
-    if (!mountedRef.current) return;
+  const connect = useCallback(async (generation: number) => {
+    // Exponential backoff reconnect
+    const retryLater = () => {
+      const delay = backoffRef.current;
+      backoffRef.current = Math.min(backoffRef.current * 2, MAX_BACKOFF);
+      reconnectTimerRef.current = setTimeout(() => connect(generation), delay);
+    };
 
-    const token = await SecureStore.getItemAsync("martly_access_token");
-    if (!token) return;
+    const token = await freshAccessToken();
+    if (generation !== generationRef.current) return;
+    // No token: signed out, or the refresh failed offline (the session is still there, so try again)
+    if (!token) {
+      if (getAccessToken()) retryLater();
+      return;
+    }
 
     if (wsRef.current) {
       wsRef.current.onclose = null;
@@ -171,10 +181,7 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
     };
 
     ws.onclose = () => {
-      if (!mountedRef.current) return;
-      const delay = backoffRef.current;
-      backoffRef.current = Math.min(backoffRef.current * 2, MAX_BACKOFF);
-      reconnectTimerRef.current = setTimeout(connect, delay);
+      if (generation === generationRef.current) retryLater();
     };
 
     ws.onerror = () => {
@@ -183,8 +190,6 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
   }, [showBanner]);
 
   useEffect(() => {
-    mountedRef.current = true;
-
     if (!isAuthenticated) {
       // Clean up WS when logged out
       if (wsRef.current) {
@@ -196,18 +201,19 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
       return;
     }
 
-    connect();
+    const generation = ++generationRef.current;
+    connect(generation);
 
     const subscription = AppState.addEventListener("change", (state) => {
       if (state === "active" && (!wsRef.current || wsRef.current.readyState !== WebSocket.OPEN)) {
         clearTimeout(reconnectTimerRef.current);
         backoffRef.current = 1000;
-        connect();
+        connect(generation);
       }
     });
 
     return () => {
-      mountedRef.current = false;
+      generationRef.current++;
       subscription.remove();
       clearTimeout(reconnectTimerRef.current);
       clearTimeout(bannerTimerRef.current);

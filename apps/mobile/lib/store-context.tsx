@@ -58,6 +58,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   // Only a store the shopper picked is remembered; one picked for them is re-picked as they move
   const chosenId = useRef<string | null>(null);
   const point = useRef<Point | null>(null);
+  // Bumped by every resolve and every pick, so only the latest of them sets the store
+  const latestPick = useRef(0);
 
   const fetchStores = useCallback(async () => {
     const res = await api.getList<Store>("/api/v1/stores").catch(() => null);
@@ -78,14 +80,17 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   // The store to shop at: the chosen one while it is live, else the nearest that delivers, else the town's main store
   const resolve = useCallback(async () => {
+    const call = ++latestPick.current;
     const res = await api.get<StoreResolution<Store>>(resolveUrl(point.current, chosenId.current)).catch(() => null);
-    if (!res) return;
+    // A store the shopper picked (or a newer resolve) while this was in flight wins
+    if (!res || call !== latestPick.current) return;
     setSelectedStoreState(res.data.store);
     if (point.current) setNearbyStores([res.data.store, ...res.data.alternatives]);
   }, []);
 
   const setSelectedStore = useCallback((store: Store) => {
     chosenId.current = store.id;
+    latestPick.current++;
     setSelectedStoreState(store);
     SecureStore.setItemAsync(SELECTED_STORE_KEY, store.id).catch(() => {});
   }, []);

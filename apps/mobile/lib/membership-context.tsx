@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback, useEffect } from "react";
+import { createContext, useContext, useState, useCallback, useEffect, useRef } from "react";
 import { api } from "./api";
 import { useAuth } from "./auth-context";
 import { useStore } from "./store-context";
@@ -20,8 +20,11 @@ export function MembershipProvider({ children }: { children: React.ReactNode }) 
   const { selectedStore } = useStore();
   const [isMember, setIsMember] = useState(false);
   const [freeDelivery, setFreeDelivery] = useState(false);
+  // A status for a store switched away from (or a session since ended) is dropped when it arrives
+  const latestCall = useRef(0);
 
   const refresh = useCallback(() => {
+    const call = ++latestCall.current;
     if (!isAuthenticated || !selectedStore) {
       setIsMember(false);
       setFreeDelivery(false);
@@ -30,10 +33,12 @@ export function MembershipProvider({ children }: { children: React.ReactNode }) 
     api
       .get<{ isMember: boolean; membership?: { freeDelivery?: boolean } }>(`/api/v1/memberships/status?storeId=${selectedStore.id}`)
       .then((res) => {
+        if (call !== latestCall.current) return;
         setIsMember(res.data.isMember);
         setFreeDelivery(res.data.isMember && res.data.membership?.freeDelivery === true);
       })
       .catch(() => {
+        if (call !== latestCall.current) return;
         setIsMember(false);
         setFreeDelivery(false);
       });

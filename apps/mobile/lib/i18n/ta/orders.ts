@@ -122,6 +122,7 @@ export const orders: Strings<"orders"> = {
     deliverTo: "டெலிவரி முகவரி",
     pickupFrom: "பெற்றுக்கொள்ளும் இடம்",
     notFound: "ஆர்டர் கிடைக்கவில்லை",
+    loadFailed: "இந்த ஆர்டரை ஏற்ற முடியவில்லை. இணைய இணைப்பைச் சரிபார்க்கவும்.",
     trackRider: "டெலிவரி நபரை நேரடியாகக் கண்காணி",
     scheduledPickup: "திட்டமிட்ட பிக்அப்",
     scheduledDelivery: "திட்டமிட்ட டெலிவரி",

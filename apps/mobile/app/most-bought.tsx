@@ -34,10 +34,12 @@ function useMostBought(storeId: string | undefined) {
 
 /** The store's best sellers over the last 30 days, opened from the most-bought hero card */
 export default function MostBoughtScreen() {
-  const { selectedStore } = useStore();
+  const { selectedStore, loading } = useStore();
   const t = useStrings("home");
   const { products, failed } = useMostBought(selectedStore?.id);
 
+  // No store is live anywhere: nothing will load
+  if (!loading && !selectedStore) return <Message icon="storefront-outline" text={t.noStoresYet} />;
   if (failed) return <Message icon="cloud-offline-outline" text={t.mostBoughtUnavailable} />;
   if (!products) return <Loader style={styles.spinner} />;
 

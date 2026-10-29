@@ -1,7 +1,7 @@
 import { useEffect, useRef, useCallback } from "react";
-import * as SecureStore from "expo-secure-store";
 import { AppState } from "react-native";
 import { API_URL } from "./config";
+import { freshAccessToken, getAccessToken } from "./api";
 
 const WS_URL = API_URL.replace(/^http/, "ws");
 const MAX_BACKOFF = 30000;
@@ -26,18 +26,29 @@ export function useOrderWebSocket({
   const wsRef = useRef<WebSocket | null>(null);
   const backoffRef = useRef(1000);
   const reconnectTimerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
-  const mountedRef = useRef(true);
+  // Bumped by every effect run and cleanup, so a connect still awaiting its token after unmount or a change gives up
+  const generationRef = useRef(0);
   // Store latest callbacks in refs so reconnects use up-to-date handlers
   const onOrderUpdatedRef = useRef(onOrderUpdated);
   const onOrdersChangedRef = useRef(onOrdersChanged);
   onOrderUpdatedRef.current = onOrderUpdated;
   onOrdersChangedRef.current = onOrdersChanged;
 
-  const connect = useCallback(async () => {
-    if (!mountedRef.current) return;
+  const connect = useCallback(async (generation: number) => {
+    // Exponential backoff reconnect
+    const retryLater = () => {
+      const delay = backoffRef.current;
+      backoffRef.current = Math.min(backoffRef.current * 2, MAX_BACKOFF);
+      reconnectTimerRef.current = setTimeout(() => connect(generation), delay);
+    };
 
-    const token = await SecureStore.getItemAsync("martly_access_token");
-    if (!token) return;
+    const token = await freshAccessToken();
+    if (generation !== generationRef.current) return;
+    // No token: signed out, or the refresh failed offline (the session is still there, so try again)
+    if (!token) {
+      if (getAccessToken()) retryLater();
+      return;
+    }
 
     // Close existing connection if any
     if (wsRef.current) {
@@ -70,11 +81,7 @@ export function useOrderWebSocket({
     };
 
     ws.onclose = () => {
-      if (!mountedRef.current) return;
-      // Exponential backoff reconnect
-      const delay = backoffRef.current;
-      backoffRef.current = Math.min(backoffRef.current * 2, MAX_BACKOFF);
-      reconnectTimerRef.current = setTimeout(connect, delay);
+      if (generation === generationRef.current) retryLater();
     };
 
     ws.onerror = () => {
@@ -83,22 +90,22 @@ export function useOrderWebSocket({
   }, [orderId]);
 
   useEffect(() => {
-    mountedRef.current = true;
     if (!enabled) return;
+    const generation = ++generationRef.current;
 
-    connect();
+    connect(generation);
 
     // Reconnect when app comes to foreground
     const subscription = AppState.addEventListener("change", (state) => {
       if (state === "active" && (!wsRef.current || wsRef.current.readyState !== WebSocket.OPEN)) {
         clearTimeout(reconnectTimerRef.current);
         backoffRef.current = 1000;
-        connect();
+        connect(generation);
       }
     });
 
     return () => {
-      mountedRef.current = false;
+      generationRef.current++;
       subscription.remove();
       clearTimeout(reconnectTimerRef.current);
       if (wsRef.current) {
