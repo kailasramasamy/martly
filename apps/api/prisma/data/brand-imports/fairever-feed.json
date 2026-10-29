@@ -1,0 +1,46 @@
+[
+ {
+  "title": "Naturals Fairness Cream - Saffron & Milk",
+  "handle": "naturals-fairness-cream-saffron-milk",
+  "vendor": "Fairever",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "93",
+    "compare_at_price": "93",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265242_4-fairever-fairness-cream.jpg"
+    },
+    "barcode": "8902979013048"
+   },
+   {
+    "title": "80g",
+    "price": "137",
+    "compare_at_price": "137",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265265_4-fairever-fairness-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265242_4-fairever-fairness-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265242-2_1-fairever-fairness-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265265_4-fairever-fairness-cream.jpg"
+   }
+  ],
+  "details": {
+   "description": "Fairever fairness cream was launched blending in the goodness of saffron and milk, which are pure, safe, and nourishing manufactured straight from natures heart. These natural ingredients are being recommended and used in the Indian households since time immemorial to enhance the complexion and quality of the skin.",
+   "ingredients": "Saffron Milk, Licorice Extract, and Other Contents.",
+   "countryOfOrigin": "India"
+  }
+ }
+]

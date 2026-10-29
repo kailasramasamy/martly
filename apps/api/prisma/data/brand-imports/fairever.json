@@ -1,0 +1,22 @@
+{
+  "brand": "Fairever",
+  "manufacturer": "CavinKare Pvt. Ltd., Chennai",
+  "feed": "fairever-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/fairever/logo-4773cc4f.png",
+  "themeColor": "#D71920",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Fairever ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Naturals\\ Fairness\\ Cream\\ \\-\\ Saffron\\ \\&\\ Milk$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    }
+  ]
+}
