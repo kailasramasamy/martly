@@ -1,6 +1,6 @@
 {
   "brand": "Parry's",
-  "manufacturer": "EID Parry (India) Limited",
+  "manufacturer": "EID Parry (India) Limited, Dare House, Parrys Corner, Chennai 600001",
   "feed": "parrys-feed.json",
   "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/parrys/logo-630d3a53.png",
   "themeColor": "#1E2F8F",
@@ -16,6 +16,254 @@
         "Grocery & Staples",
         "Salt & Sugar",
         "White Sugar"
+      ]
+    },
+    {
+      "match": "^Pure\\ Refined\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    },
+    {
+      "match": "^Pure\\ Refined\\ Sugar\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    },
+    {
+      "match": "^Pure\\ Refined\\ Sugar\\ Cubes$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    },
+    {
+      "match": "^Superfine\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    },
+    {
+      "match": "^Amrit\\ Brown\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    },
+    {
+      "match": "^Gold\\ Premium\\ Brown\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Care\\ Low\\ GI\\ Sugar$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Sugar-Free & Diet Foods"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Care\\ Low\\ GI\\ Sugar\\ Sachets$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Sugar-Free & Diet Foods"
+      ]
+    },
+    {
+      "match": "^Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Jaggery\\ Cubes$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery (Gur)"
+      ]
+    },
+    {
+      "match": "^Amrit\\ Badam\\ Drink\\ Mix$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Amrit\\ Gulab\\ Jamun\\ Sweet\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Amrit\\ Vermicelli\\ Payasam\\ Sweet\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Barnyard\\ Millet$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Millets (Ragi, Jowar, Bajra)"
+      ]
+    },
+    {
+      "match": "^Foxtail\\ Millet$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Millets (Ragi, Jowar, Bajra)"
+      ]
+    },
+    {
+      "match": "^Kodo\\ Millet$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Millets (Ragi, Jowar, Bajra)"
+      ]
+    },
+    {
+      "match": "^Little\\ Millet$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Millets (Ragi, Jowar, Bajra)"
+      ]
+    },
+    {
+      "match": "^Sprouted\\ Ragi\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Ragi Flour"
+      ]
+    },
+    {
+      "match": "^Bullet\\ Kolam\\ Raw\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Bullet\\ Kolam\\ Steam\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^HMT\\ Rice\\ Deluxe$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Sona\\ Masoori\\ Raw\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Rajbhogam\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Nei\\ Kitchadi\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Ponni\\ Boiled\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Parboiled Rice"
+      ]
+    },
+    {
+      "match": "^Manachanallur\\ Ponni\\ Boiled\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Parboiled Rice"
+      ]
+    },
+    {
+      "match": "^Madurai\\ Idli\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Idli & Dosa Rice"
+      ]
+    },
+    {
+      "match": "^Chana\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Chana Dal"
+      ]
+    },
+    {
+      "match": "^Unpolished\\ Moong\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Moong Dal"
+      ]
+    },
+    {
+      "match": "^Unpolished\\ Toor\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Toor Dal (Arhar)"
+      ]
+    },
+    {
+      "match": "^Urad\\ Dal\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Urad Dal"
       ]
     }
   ]

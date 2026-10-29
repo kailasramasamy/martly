@@ -17,8 +17,8 @@
    },
    {
     "title": "5kg",
-    "price": "350",
-    "compare_at_price": "350",
+    "price": "400",
+    "compare_at_price": "400",
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40214887_4-parrys-white-label-sugar.jpg"
@@ -51,6 +51,7 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40004538-8_1-parrys-sugar-white-label.jpg"
    }
   ],
+  "food_type": "VEG",
   "details": {
    "description": "Parry's White Label Sugar offers the perfect touch of sweetness for all your culinary needs. Made from the finest sugarcane, this high-quality sugar dissolves effortlessly, making it ideal for baking, cooking, and beverages. Its pure, refined crystals ensure a consistent taste and texture, enhancing your favourite recipes with a delicate sweetness. Trusted for generations, Parry's White Label Sugar is your go-to choice for everyday use, adding a touch of perfection to every dish.",
    "nutritionalInfo": {
@@ -63,8 +64,2047 @@
     "Total Trans Fat Content": "Not more than 0% by weight",
     "Total Saturated Fat Content": "Not more than 0% by weight"
    },
-   "manufacturerName": "E.I.D. Parry (India) Ltd. 138",
+   "manufacturerName": "E.I.D. Parry (India) Ltd.",
    "fssaiLicense": "10012042000302",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pure Refined Sugar",
+  "handle": "pure-refined-sugar",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100342218_6-parrys-pure-refined-sugar-sulphur-free.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100342220_7-parrys-pure-refined-sugar-sulphur-free.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100342218_6-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100342218-2_5-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100342218-3_4-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100342218-4_4-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100342218-5_3-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100342218-6_3-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100342218-7_3-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100342218-8_2-parrys-pure-refined-sugar-sulphur-free.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's Refined Sugar is produced using a sulphur-free process to deliver pure sweetness. Carefully refined, it is suitable for adding sweetness to a variety of recipes and beverages. Ideal for baking or sweetening your favourite drinks, this sugar offers a clean and consistent taste in every spoonful.",
+   "nutritionalInfo": {
+    "Energy": "400.0 kcal",
+    "Carbohydrates": "99.5 g",
+    "of which Added Sugars": "0.0 g",
+    "Total Sugars": "99.5 g",
+    "Total Fat": "0.0 g",
+    "Protein": "0.0 g",
+    "Sodium": "0.0 mg"
+   },
+   "manufacturerName": "E.I.D.- Parry (India) Ltd",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pure Refined Sugar Jar",
+  "handle": "pure-refined-sugar-jar",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40004534_2-parrys-pure-refined-sugar-sulphur-free.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004534_2-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004534-2_2-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004534-3_2-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004534-4_2-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004534-5_2-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004534-6_1-parrys-pure-refined-sugar-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004534-7_1-parrys-pure-refined-sugar-sulphur-free.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pure Refined Sugar Cubes",
+  "handle": "pure-refined-sugar-cubes",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40004536_2-parrys-pure-refined-sugar-cubes-sulphur-free.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004536_2-parrys-pure-refined-sugar-cubes-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004536-2_2-parrys-pure-refined-sugar-cubes-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004536-3_2-parrys-pure-refined-sugar-cubes-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004536-4_2-parrys-pure-refined-sugar-cubes-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004536-5_2-parrys-pure-refined-sugar-cubes-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004536-6_1-parrys-pure-refined-sugar-cubes-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004536-7_1-parrys-pure-refined-sugar-cubes-sulphur-free.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Superfine Sugar",
+  "handle": "superfine-sugar",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238305_1-parrys-superfine-sugar-ideal-for-making-sweets-baking.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238305_1-parrys-superfine-sugar-ideal-for-making-sweets-baking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238305-2_1-parrys-superfine-sugar-ideal-for-making-sweets-baking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238305-3_1-parrys-superfine-sugar-ideal-for-making-sweets-baking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238305-4_1-parrys-superfine-sugar-ideal-for-making-sweets-baking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238305-5_1-parrys-superfine-sugar-ideal-for-making-sweets-baking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238305-6_1-parrys-superfine-sugar-ideal-for-making-sweets-baking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238305-7_1-parrys-superfine-sugar-ideal-for-making-sweets-baking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238305-8_1-parrys-superfine-sugar-ideal-for-making-sweets-baking.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's Pure Superfine Sugar is the baker's and housewives companion. Whether it's with your cup of tea or hot chocolate this finely granulated sugar is too good and quick to melt. It is useful in making sponge cakes, shortbreads, pastries, and biscuits. Buy Parry's Pure Sulpher Free Refined Sugar online now!",
+   "ingredients": "Refined Sugar.",
+   "usageInstructions": "Dissolves easily, quickly & completely in hot tea or coffee with less stirring, Ensure piping hot and perfectly sweet coffee, first sip to last. Dissolves instantly even in cold milk or chilled beverages, like never before.",
+   "manufacturerName": "E.I.D. PARRY (INDIA)LTD.138",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000302"
+  }
+ },
+ {
+  "title": "Amrit Brown Sugar",
+  "handle": "amrit-brown-sugar",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40311156_1-parrys-brown-sugar.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052563_3-parrys-brown-sugar.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238307_1-parrys-amrit-brown-sugar-with-vital-minerals-original-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311156_1-parrys-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311156-2_1-parrys-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311156-3_1-parrys-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311156-4_1-parrys-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311156-5_1-parrys-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311156-6_1-parrys-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40311156-7_1-parrys-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052563_3-parrys-brown-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your culinary experience with Parry's Amrit Natural Brown Sugar, a versatile and flavourful sweetener that blends seamlessly into both sweet and savoury dishes. Crafted from premium quality sugarcane, this brown sugar delivers a rich, molasses-like sweetness with a hint of caramel, adding depth and warmth to your creations. Its fine texture ensures a smooth integration, while its natural goodness provides 6 vital minerals to support healthier cooking. Whether you're baking delectable treats or enhancing the flavour of savoury meals, Parry's Amrit Natural Brown Sugar is the perfect companion, bringing a touch of indulgence and nourishment to every bite.",
+   "ingredients": "Brown Sugar",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "5g (1 teaspoon)",
+    "Energy (Kcal)": "370 kcal",
+    "Potassium (mg)": "126 mg",
+    "Calcium (mg)": "55 mg",
+    "Magnesium (mg)": "28 mg",
+    "Sodium (mg)": "4 mg",
+    "Phosphorous (mg)": "3.5 mg",
+    "Iron (mg)": "1 mg",
+    "Protein (g)": "1 g",
+    "Fat (g)": "0 g",
+    "Carbohydrates (g)": "92.5 g",
+    "Of which Sugar (g)": "90 g",
+    "Added Sugar (g)": "0 g",
+    "Cholesterol (mg)": "0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "E.I.D. PARRY (INDIA)LTD.138",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Premium Brown Sugar",
+  "handle": "gold-premium-brown-sugar",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328619_3-parrys-gold-premium-brown-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328619_3-parrys-gold-premium-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328619-2_3-parrys-gold-premium-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328619-3_3-parrys-gold-premium-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328619-4_3-parrys-gold-premium-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328619-5_3-parrys-gold-premium-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328619-6_2-parrys-gold-premium-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328619-7_2-parrys-gold-premium-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328619-8_2-parrys-gold-premium-brown-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, molasses-like flavour of Parry's Gold Premium Brown Sugar, a premium brown sugar that utilises advanced technology to accurately retain the naturally occurring powerful antioxidants found in sugarcane. This innovative process helps reduce the bio-accessibility of glucose by up to 20%, making it a healthier alternative to regular sugar. Perfect for baking and cooking, Parry's Gold Brown Sugar adds depth and complexity to both sweet and savoury dishes, from cakes and cookies to sauces and beverages. Blending naturally and easily with hot and cold drinks, this premium brown sugar offers the perfect balance of taste and health, providing a more natural and less refined option for sweetening your favourite recipes.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g Serving Size: 5 g Energy (Kcal): 400.00 kcal Carbohydrates (g): 99.88 g Total Sugars (g): 99.88 g Phosphorous (g): 0.04 g Fat (g): 0.00 g Protein (g): 0.00 g Potassium (mg): 17.20 mg Magnesium (mg): 2.70 mg Sodium (mg): 1.57 mg Iron (mg): 0.29 mg Calcium (mg): 0.10 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place, away from direct sunlight and moisture",
+   "manufacturerName": "E.I.D Parry India Ltd.",
+   "fssaiLicense": "12421999900049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sweet Care Low GI Sugar",
+  "handle": "sweet-care-low-gi-sugar",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328620_1-parrys-sweet-care-low-gi-sugar.jpg"
+    },
+    "barcode": "8906009010359"
+   },
+   {
+    "title": "500g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213543_3-parrys-sweet-care-low-gi-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328620_1-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328620-2_1-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328620-3_1-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328620-4_1-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328620-5_1-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213543_3-parrys-sweet-care-low-gi-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "With the power of 7 herbal extracts, SweetCare is a clinically tested Low GI Sugar (Glycemic Index < 55) that supports a healthier diet. Unlike regular sugar, SweetCare contributes to lower rise in blood sugar levels* with 30% lesser glucose load*. SweetCare is made using a sulphur-free process, is absolutely safe and has the natural taste of sugar. So take one worry off your mind with Parry’s SweetCare and watch your family enjoy your delicacies with no compromise on taste.",
+   "ingredients": "Refined Sugar with Herbal extractacts",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "400.16",
+    "Protein (g)": "0.56",
+    "Carbohydrates (g)": "99.95",
+    "of which Sugar (g)": "99.95",
+    "Total Fat (g)": "0.08",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "0.00",
+    "Serving Size": "5 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "E.I.D Parry India Ltd.",
+   "fssaiLicense": "12421999900049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sweet Care Low GI Sugar Sachets",
+  "handle": "sweet-care-low-gi-sugar-sachets",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40 pcs",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213544_2-parrys-sweet-care-low-gi-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213544_2-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213544-2_2-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213544-3_1-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213544-4_1-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213544-5_1-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213544-6_1-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213544-7_1-parrys-sweet-care-low-gi-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40213544-8_1-parrys-sweet-care-low-gi-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's SweetCare Low GI Sugar is clinically proven low GI sugar. Unlike regular sugar, this sugar contributes to a lower rise in blood sugar levels. It has the power of 7 natural herbal extracts that help in controlling the rise in blood glucose. It contains extracts of Fenugreek, turmeric, ginger, amla, pomegranate, black pepper and cinnamon. It is a healthier version of regular sugar. This can be used in replacement for the regular sugar. It is natural and without any artificial taste. It is a great alternative to regular white sugar. This is healthy and helps you control the rise in blood glucose.",
+   "ingredients": "Sugar with the Power of 7 Herbal Extracts (4%) - Fenugreek, Turmeric, Black Pepper, Pomegranate, Ginger, Cinnamon, Amla",
+   "nutritionalInfo": {
+    "(per 100 g) Energy": "400.1Kcal",
+    "Total Fat": "0.08 g",
+    "Cholesterol": "0.00 g",
+    "Total Carbohydrate": "99.30 g",
+    "Dietary fiber": "0.00 g",
+    "Protein": "0.56g"
+   },
+   "storageInstructions": "It’s an ideal replacement for sugar across all food items like hot and cold beverages, sweet preparations, cooking & baking needs.\n1 spoon of normal sugar and controls rise in Blood Sugar.\nStore in a cool and dry place.",
+   "manufacturerName": "Diabliss Consumer Products Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016042002651"
+  }
+ },
+ {
+  "title": "Jaggery Powder",
+  "handle": "jaggery-powder",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40187967_4-parrys-amrit-powdered-jaggery.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187967_4-parrys-amrit-powdered-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187967-2_4-parrys-amrit-powdered-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187967-3_3-parrys-amrit-powdered-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187967-4_3-parrys-amrit-powdered-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187967-5_3-parrys-amrit-powdered-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187967-6_1-parrys-amrit-powdered-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187967-7_1-parrys-amrit-powdered-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187967-8_1-parrys-amrit-powdered-jaggery.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's Jaggery Powder is fine jaggery produced using the highest standards of hygiene. Produced in a modern factory, it is untouched by hand and is factory packed. It is easy to use as it doesn't need to be graded, melted, or strained. It dissolves quickly and blends smoothly with your preparations. Parry's Jaggery Powder is rich in 4 vital minerals essential for the body - Calcium, Magnesium, Potassium, and Iron. Extracted from high-quality sugarcane, the ready-to-use jaggery powder ensures tasty and nourishing sweetness.",
+   "nutritionalInfo": {
+    "Serving Size": "50 g",
+    "Energy": "370.00 kcal",
+    "Protein": "1.10 g",
+    "Carbohydrates": "91.50 g",
+    "Total Sugars": "91.50 g",
+    "Added Sugars": "0.00 g",
+    "Total Fat": "0.00 g",
+    "Iron": "2.94 mg",
+    "Calcium": "259.30 mg",
+    "Magnesium": "93.30 mg",
+    "Potassium": "509.30 mg",
+    "Phosphorous": "11.20 mg",
+    "Sodium": "16.70 mg"
+   },
+   "manufacturerName": "E.I.D Parrys (India) Ltd Dare House 234 NSC Bose Road Chennai-01",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016042002651"
+  }
+ },
+ {
+  "title": "Jaggery Cubes",
+  "handle": "jaggery-cubes",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376039_1-parrys-jaggery-cubes.jpg"
+    },
+    "barcode": "8906009012629"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376039_1-parrys-jaggery-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376039-2_1-parrys-jaggery-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376039-3_1-parrys-jaggery-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376039-4_1-parrys-jaggery-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376039-5_1-parrys-jaggery-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376039-6_1-parrys-jaggery-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376039-7_1-parrys-jaggery-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376039-8_1-parrys-jaggery-cubes.jpg"
+   }
+  ],
+  "details": {
+   "description": "Parry’s Jaggery Cubes are crafted from quality sugarcane harvested from sun-drenched fields, bringing the authentic taste of traditional jaggery straight to your kitchen. Made for convenient everyday use, these neatly portioned cubes offer a naturally rich, caramel-like sweetness and distinctive jaggery flavour. Enjoy them on their own or use them to sweeten beverages, desserts and traditional recipes. A versatile pantry staple, Parry’s Jaggery Cubes make it easy to add a touch of traditional sweetness to your everyday meals.",
+   "ingredients": "Cane Jaggery",
+   "nutritionalInfo": {
+    "Energy": "386.00 kcal",
+    "Protein": "0.93 g",
+    "Carbohydrate": "96.70 g",
+    "Total Sugar": "96.54 g",
+    "Added Sugar": "0.00 g",
+    "Fat": "0.11 g",
+    "Saturated Fat": "0.05 g",
+    "Trans Fat": "0.01 g",
+    "Sodium": "147.54 mg"
+   },
+   "manufacturerName": "E.I.D .- Parry (India) Ltd",
+   "fssaiLicense": "12423031000060"
+  }
+ },
+ {
+  "title": "Amrit Badam Drink Mix",
+  "handle": "amrit-badam-drink-mix",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376384_2-parrys-parrys-amrit-badam-drink-mix.jpg"
+    },
+    "barcode": "8906009012605"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376384_2-parrys-parrys-amrit-badam-drink-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376384-2_2-parrys-parrys-amrit-badam-drink-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376384-3_2-parrys-parrys-amrit-badam-drink-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376384-4_2-parrys-parrys-amrit-badam-drink-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376384-5_2-parrys-parrys-amrit-badam-drink-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376384-6_2-parrys-parrys-amrit-badam-drink-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376384-7_2-parrys-parrys-amrit-badam-drink-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376384-8_2-parrys-parrys-amrit-badam-drink-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's Amrit Badam Drink is a rich and indulgent beverage mix crafted with Parry's Brown Sugar and real almond chunks. Easy to prepare and ready in just 2 minutes, it delivers a deliciously nutty flavour in every glass. The 200 g pack makes approximately 12 servings and can also be used to add richness to a variety of dessert creations.",
+   "ingredients": "Brown Sugar (72%), Milk solids, Maltodextrin, Almonds (4.7%) and Cashewnuts, Permitted Natural colour (INS 100) and Nature Identical Flavoring Substances - Cardamom and Almond",
+   "nutritionalInfo": {
+    "Energy": "403.9 kcal (3%)",
+    "Protein": "6.1 g (1.69%)",
+    "Total Fat": "3.1 g (0.69%)",
+    "Saturated Fat": "0.4 g (0.27%)",
+    "Trans Fat": "0 g (0%)",
+    "Cholesterol": "12 mg",
+    "Carbohydrate": "87.6 g",
+    "Total Sugar": "77 g",
+    "Added Sugar": "72 g (21.6%)",
+    "Dietary Fibre": "0.6 g (0.3%)",
+    "Sodium": "76 mg (0.57%)",
+    "Calcium": "176.3 mg (2.64%)"
+   },
+   "manufacturerName": "\"Functional & Innovative Foods Limited",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Amrit Gulab Jamun Sweet Mix",
+  "handle": "amrit-gulab-jamun-sweet-mix",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376382_2-parrys-amrit-gulab-jamun-sweet-mix.jpg"
+    },
+    "barcode": "8906009012582"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376382_2-parrys-amrit-gulab-jamun-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376382-2_2-parrys-amrit-gulab-jamun-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376382-3_2-parrys-amrit-gulab-jamun-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376382-4_2-parrys-amrit-gulab-jamun-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376382-5_2-parrys-amrit-gulab-jamun-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376382-6_2-parrys-amrit-gulab-jamun-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376382-7_2-parrys-amrit-gulab-jamun-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376382-8_2-parrys-amrit-gulab-jamun-sweet-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's Amrit Gulab Jamun Mix makes it easy to prepare soft, melt-in-the-mouth gulab jamuns at home. Simply mix with water or milk, knead into a smooth dough, shape into small balls, fry until golden brown and soak in warm sugar syrup. Ready in about 15–20 minutes, this 175 g pack makes approximately 35–38 gulab jamuns, perfect for festivals, celebrations and family occasions.",
+   "ingredients": "Refined Wheat Flour (Maida), Milk Solids, Interesterified Vegetable Fat, Raising Agent [ INS 500 (ii)] and Acidity regulator (INS 296)",
+   "nutritionalInfo": {
+    "Energy": "450 kcal (2%)",
+    "Protein": "12 g (2%)",
+    "Total Fat": "17.7 g (3%)",
+    "Saturated Fat": "8.8 g (4%)",
+    "Trans Fat": "0 g (0%)",
+    "Cholesterol": "15 mg",
+    "Carbohydrate": "60.3 g",
+    "Total Sugar": "8 g (0%)",
+    "Added Sugar": "0 g (0%)",
+    "Dietary Fibre": "1.6 g (1%)",
+    "Sodium": "762 mg (4%)",
+    "Calcium": "241.7 mg (2%)"
+   },
+   "manufacturerName": "\"Functional & Innovative Foods Limited",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Amrit Vermicelli Payasam Sweet Mix",
+  "handle": "amrit-vermicelli-payasam-sweet-mix",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376383_2-parrys-amrit-vermicelli-payasam-sweet-mix.jpg"
+    },
+    "barcode": "8906009012599"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376383_2-parrys-amrit-vermicelli-payasam-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376383-2_2-parrys-amrit-vermicelli-payasam-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376383-3_2-parrys-amrit-vermicelli-payasam-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376383-4_2-parrys-amrit-vermicelli-payasam-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376383-5_2-parrys-amrit-vermicelli-payasam-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376383-6_2-parrys-amrit-vermicelli-payasam-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376383-7_2-parrys-amrit-vermicelli-payasam-sweet-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376383-8_2-parrys-amrit-vermicelli-payasam-sweet-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's Amrit Vermicelli Payasam Mix brings home the rich, creamy goodness of a traditional festive dessert. Made with brown sugar, it offers a convenient way to prepare delicious vermicelli payasam in just 8–10 minutes. Simply blend the mix with boiled milk, cook to the desired consistency and serve. Ideal for celebrations, festive occasions and cherished family moments.",
+   "ingredients": "Brown Sugar (48%), Vermicelli (30%), Milk Solids, Cashewnuts, Cardamom Powder and its oleoresin and Modified Starch (INS1420)",
+   "nutritionalInfo": {
+    "Energy": "407 kcal (6%)",
+    "Protein": "8.8 g (4.9%)",
+    "Total Fat": "3 g (1.4%)",
+    "Saturated Fat": "0.6 g (0.8%)",
+    "Trans Fat": "0 g (0%)",
+    "Cholesterol": "2 mg",
+    "Carbohydrate": "84.6 g",
+    "Total Sugar": "54 g",
+    "Added Sugar": "48.5 g (29%)",
+    "Dietary Fibre": "3.1 g (3.1%)",
+    "Sodium": "80 mg (1.2%)",
+    "Calcium": "182.5 mg (5.5%)"
+   },
+   "manufacturerName": "\"Functional & Innovative Foods Limited",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Barnyard Millet",
+  "handle": "barnyard-millet",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329232_4-parrys-barnyard-millet.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329232_4-parrys-barnyard-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329232-2_4-parrys-barnyard-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329232-3_4-parrys-barnyard-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329232-4_4-parrys-barnyard-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329232-5_4-parrys-barnyard-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329232-6_3-parrys-barnyard-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329232-7_3-parrys-barnyard-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329232-8_2-parrys-barnyard-millet.jpg"
+   }
+  ],
+  "details": {
+   "description": "Parry's Barnyard Millet is a naturally gluten-free alternative to traditional rice and wheat. Carefully selected from premium grains, it is a source of protein and fibre, making it a versatile choice for everyday meals. Parboiled for added convenience, it cooks quickly and is easy to digest. With its mild flavour, it can be used to prepare savoury upma, comforting porridge or as a substitute for rice in a variety of recipes.",
+   "nutritionalInfo": {
+    "Energy": "412 kcal",
+    "Protein": "6.2 g",
+    "Total Fat": "5.2 g",
+    "Saturated Fat": "1.1 g",
+    "Trans Fat": "0.0 g",
+    "Carbohydrates": "81 g",
+    "Total Sugars": "0.4 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "6.4 g",
+    "Sodium": "0.0 mg",
+    "Iron": "82 mg",
+    "Magnesium": "82 mg",
+    "Phosphorous": "242.1 mg",
+    "Zinc": "3.7 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "C Nagarathinam & Sons",
+   "fssaiLicense": "12421999900049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Foxtail Millet",
+  "handle": "foxtail-millet",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355824_4-parrys-foxtail-millet.jpg"
+    },
+    "barcode": "8906009011677"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355824_4-parrys-foxtail-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355824-2_4-parrys-foxtail-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355824-3_4-parrys-foxtail-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355824-4_4-parrys-foxtail-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355824-5_4-parrys-foxtail-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355824-6_3-parrys-foxtail-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355824-7_3-parrys-foxtail-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355824-8_2-parrys-foxtail-millet.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's Foxtail Millet offers convenience with faster cooking and minimal soaking, while enhancing nutrient bioavailability for better absorption by the body. Naturally rich in fibre and essential nutrients, it supports weight management and is suitable for diabetic-friendly diets. Its premium quality ensures a wholesome, nutritious, and versatile addition to everyday meals.",
+   "nutritionalInfo": {
+    "Energy": "429 kcal",
+    "Protein": "12.3 g",
+    "Total Fat": "6.6 g",
+    "Saturated Fat": "0.6 g",
+    "Trans Fat": "0.0 g",
+    "Carbohydrates": "73.6 g",
+    "Total Sugars": "0.5 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "10.4 g",
+    "Sodium": "0.0 mg",
+    "Iron": "2.8 mg",
+    "Magnesium": "81 mg",
+    "Phosphorous": "219.1 mg",
+    "Zinc": "2.4 mg"
+   },
+   "manufacturerName": "MM Nutri Foodzee Private Limited",
+   "fssaiLicense": "12421999900049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kodo Millet",
+  "handle": "kodo-millet",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329231_4-parrys-kodo-millet.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329231_4-parrys-kodo-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329231-2_4-parrys-kodo-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329231-3_4-parrys-kodo-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329231-4_4-parrys-kodo-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329231-5_4-parrys-kodo-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329231-6_3-parrys-kodo-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329231-7_3-parrys-kodo-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329231-8_2-parrys-kodo-millet.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the exceptional goodness of Parry's Kodo Millet, a healthy and versatile grain that elevates your everyday meals. Carefully selected from premium grains, this naturally gluten-free millet is a nutritious substitute for rice and wheat, packed with essential fibre, protein, and minerals to support your overall well-being. Parry's Kodo Millet is parboiled, making it extra convenient - it requires less soaking time, cooks faster, and enhances the absorption of its abundant nutrients by your body. Enjoy the delicate, nutty flavour of this wholesome grain in a variety of delectable dishes, from savoury pongal and adai to nourishing salads and pilafs. Sustainably sourced and free from impurities, Parry's Kodo Millet is a natural and healthy addition to your kitchen, helping you achieve your wellness goals with ease.",
+   "nutritionalInfo": {
+    "Energy": "403 kcal",
+    "Protein": "7.7 g",
+    "Total Fat": "4.1 g",
+    "Saturated Fat": "0.8 g",
+    "Trans Fat": "0.0 g",
+    "Carbohydrates": "79.8 g",
+    "Total Sugars": "1.3 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "6.3 g",
+    "Sodium": "0.0 mg",
+    "Iron": "1.7 mg",
+    "Magnesium": "85 mg",
+    "Phosphorous": "101 mg",
+    "Zinc": "1.6 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture.",
+   "manufacturerName": "C Nagarathinam & Sons",
+   "fssaiLicense": "12421999900049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Little Millet",
+  "handle": "little-millet",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329233_4-parrys-little-millet.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329233_4-parrys-little-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329233-2_4-parrys-little-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329233-3_4-parrys-little-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329233-4_4-parrys-little-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329233-5_4-parrys-little-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329233-6_3-parrys-little-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329233-7_3-parrys-little-millet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329233-8_2-parrys-little-millet.jpg"
+   }
+  ],
+  "details": {
+   "description": "Parry's Little Millet is a naturally gluten-free alternative to rice and wheat. Carefully selected from quality grains, it is free from impurities and other additives. Parboiled for added convenience, it requires less soaking time and cooks faster, making it suitable for preparing khichdi and a variety of rice-based dishes. It is a source of protein and fibre, offering a versatile addition to everyday meals.",
+   "nutritionalInfo": {
+    "Energy": "409 kcal",
+    "Protein": "10 g",
+    "Total Fat": "5 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "0 g",
+    "Carbohydrates": "77.8 g",
+    "Total Sugars": "0.5 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "4.6 g",
+    "Sodium": "0.0 mg",
+    "Iron": "1.2 mg",
+    "Magnesium": "91.4 mg",
+    "Phosphorous": "130 mg",
+    "Zinc": "1.8 mg"
+   },
+   "storageInstructions": "Keep in a cool, dry place.\nOnce opened, transfer to an airtight container.",
+   "manufacturerName": "C Nagarathinam & Sons",
+   "fssaiLicense": "12421999900049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sprouted Ragi Flour",
+  "handle": "sprouted-ragi-flour",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329230_2-parrys-sprouted-ragi-flour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329230_2-parrys-sprouted-ragi-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329230-2_2-parrys-sprouted-ragi-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329230-3_2-parrys-sprouted-ragi-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329230-4_2-parrys-sprouted-ragi-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329230-5_2-parrys-sprouted-ragi-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329230-6_1-parrys-sprouted-ragi-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329230-7_1-parrys-sprouted-ragi-flour.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the exceptional nutritional benefits of Parry's Sprouted Ragi Flour, a versatile and wholesome ingredient that elevates every dish. Carefully sourced from select grains, this flour is free from impurities and additives, making it a pure and natural choice for your cooking. Packed with essential nutrients like calcium and iron, Parry's Sprouted Ragi Flour is a rich source of these vital minerals, supporting a balanced and healthy diet. Reimagine your meals with this versatile flour, perfect for crafting delicious rotis, dosas, and porridge. Bring the goodness of Parry's Sprouted Ragi Flour into your kitchen for a truly enriching cooking experience that nourishes both body and soul.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100 g",
+    "Energy (kcal)": "372.0",
+    "Calcium (mg)": "543.0",
+    "Carbohydrates (g)": "80.8",
+    "Of which Sugar (g)": "0.5",
+    "Added Sugars (g)": "0.0",
+    "Total Sugars (g)": "0.5",
+    "Dietary Fibre (g)": "3.9",
+    "Sodium (mg)": "55.8",
+    "Protein (g)": "8.5",
+    "Iron (mg)": "3.8",
+    "Total Fat (g)": "1.7",
+    "Saturated Fat (g)": "0.2",
+    "Trans Fat (g)": "0.0"
+   },
+   "storageInstructions": "Store in a cool and dry place away from moisture",
+   "manufacturerName": "C Nagarathinam & Sons",
+   "fssaiLicense": "12421999900049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Bullet Kolam Raw Rice",
+  "handle": "bullet-kolam-raw-rice",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355809_2-parrys-bullet-kolam-raw-rice.jpg"
+    }
+   },
+   {
+    "title": "10kg",
+    "price": "960",
+    "compare_at_price": "960",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355810_1-parrys-bullet-kolam-raw-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355809_2-parrys-bullet-kolam-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355809-2_2-parrys-bullet-kolam-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355809-3_2-parrys-bullet-kolam-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355809-4_2-parrys-bullet-kolam-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355809-5_2-parrys-bullet-kolam-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355809-6_2-parrys-bullet-kolam-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355809-7_2-parrys-bullet-kolam-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355810_1-parrys-bullet-kolam-raw-rice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry’s Bullet Kolam Raw Rice is carefully sourced to meet stringent quality standards, ensuring consistent grain size and a naturally non-sticky texture. Light, fluffy, and easy to cook, it is ideal for preparing a variety of everyday dishes. Perfectly versatile, this rice pairs well with curries, dals, sambar, and other traditional or contemporary recipes.",
+   "ingredients": "Milled Rice",
+   "nutritionalInfo": {
+    "Energy": "355 kcal (18% RDA/Serve)",
+    "Protein": "8.11 g (15% RDA/Serve)",
+    "Total Fat": "0.58 g (1% RDA/Serve)",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrates": "79.34 g (61% RDA/Serve)",
+    "Total Sugar": "0 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "0.50 g (2% RDA/Serve)",
+    "Sodium": "<0.5 mg"
+   },
+   "manufacturerName": "Sreeskandha Food Processing (India) Pvt. Ltd",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Bullet Kolam Steam Rice",
+  "handle": "bullet-kolam-steam-rice",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355807_2-parrys-bullet-kolam-steam-rice.jpg"
+    }
+   },
+   {
+    "title": "10kg",
+    "price": "960",
+    "compare_at_price": "960",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355808_1-parrys-bullet-kolam-steam-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355807_2-parrys-bullet-kolam-steam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355807-2_2-parrys-bullet-kolam-steam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355807-3_2-parrys-bullet-kolam-steam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355807-4_2-parrys-bullet-kolam-steam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355807-5_2-parrys-bullet-kolam-steam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355807-6_2-parrys-bullet-kolam-steam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355807-7_2-parrys-bullet-kolam-steam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355808_1-parrys-bullet-kolam-steam-rice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry’s Bullet Kolam Steam Rice is carefully sourced and processed to meet strict quality standards. Known for its uniform grain size and non-sticky texture, it cooks to perfection, making it ideal for everyday meals. Light, fluffy and aromatic, this rice pairs beautifully with curries, dals, and a wide range of traditional and contemporary dishes.",
+   "ingredients": "Milled Parboiled Rice",
+   "nutritionalInfo": {
+    "Energy": "365 kcal (18% RDA/Serve)",
+    "Protein": "7.85 g (15% RDA/Serve)",
+    "Total Fat": "0.58 g (1% RDA)",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrates": "80.07 g (62% RDA/Serve)",
+    "Total Sugar": "0 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "0.77 g (3% RDA/Serve)",
+    "Sodium": "<0.5 mg"
+   },
+   "manufacturerName": "Sreeskandha Food Processing (India) Pvt. Ltd",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "HMT Rice Deluxe",
+  "handle": "hmt-rice-deluxe",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355812_2-parrys-hmt-rice-deluxe.jpg"
+    }
+   },
+   {
+    "title": "10kg",
+    "price": "960",
+    "compare_at_price": "960",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355813_1-parrys-hmt-rice-deluxe.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355812_2-parrys-hmt-rice-deluxe.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355812-2_2-parrys-hmt-rice-deluxe.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355812-3_2-parrys-hmt-rice-deluxe.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355812-4_2-parrys-hmt-rice-deluxe.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355812-5_2-parrys-hmt-rice-deluxe.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355812-6_2-parrys-hmt-rice-deluxe.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355812-7_2-parrys-hmt-rice-deluxe.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355813_1-parrys-hmt-rice-deluxe.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry’s HMT Rice Deluxe is carefully sourced to meet stringent quality standards, ensuring uniform grain size and a naturally non-sticky texture. Light, fluffy, and easy to cook, it is ideal for everyday meals. This versatile rice pairs beautifully with curries, dals, sambar, and a variety of traditional and contemporary dishes.",
+   "ingredients": "Milled Parboiled Rice",
+   "nutritionalInfo": {
+    "Energy": "354 kcal (18% RDA)",
+    "Protein": "8.78 g (15% RDA)",
+    "Total Fat": "0.57 g (1% RDA)",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrates": "78.34 g (62% RDA)",
+    "Total Sugar": "<0.1 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "0.74 g (3% RDA)",
+    "Sodium": "<0.5 mg"
+   },
+   "manufacturerName": "Maharshi Rice Mills Private Limited",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sona Masoori Raw Rice",
+  "handle": "sona-masoori-raw-rice",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10kg",
+    "price": "960",
+    "compare_at_price": "960",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355819_1-parrys-sona-masoori-raw-rice.jpg"
+    },
+    "barcode": "8906009010960"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355819_1-parrys-sona-masoori-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355819-2_1-parrys-sona-masoori-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355819-3_1-parrys-sona-masoori-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355819-4_1-parrys-sona-masoori-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355819-5_1-parrys-sona-masoori-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355819-6_1-parrys-sona-masoori-raw-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355819-7_1-parrys-sona-masoori-raw-rice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry’s Sona Masoori Steam Rice is sourced as per stringent quality standards, ensuring uniform grain size and a naturally non-sticky texture. Light, fluffy, and aromatic, it is perfect for daily cooking. This versatile rice complements curries, dals, sambar, and other traditional or contemporary dishes, making every meal wholesome and enjoyable.",
+   "ingredients": "Milled Rice",
+   "nutritionalInfo": {
+    "Energy": "359 kcal (18% RDA/Serve)",
+    "Protein": "9.29 g (16% RDA/Serve)",
+    "Total Fat": "0.53 g (1% RDA/Serve)",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrates": "79.27 g (61% RDA/Serve)",
+    "Total Sugar": "<0.1 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "0.72 g (2% RDA/Serve)",
+    "Sodium": "<0.5 mg"
+   },
+   "manufacturerName": "Maharshi Rice Mills Private Limited",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rajbhogam Rice",
+  "handle": "rajbhogam-rice",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "590",
+    "compare_at_price": "590",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355817_2-parrys-rajbhogam-rice.jpg"
+    },
+    "barcode": "8906009011653"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355817_2-parrys-rajbhogam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355817-2_2-parrys-rajbhogam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355817-3_2-parrys-rajbhogam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355817-4_2-parrys-rajbhogam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355817-5_2-parrys-rajbhogam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355817-6_2-parrys-rajbhogam-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355817-7_2-parrys-rajbhogam-rice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's Rajabhogam Rice is carefully sourced to meet stringent quality standards, offering consistently uniform-sized grains. Naturally non-sticky, it cooks to a light, fluffy texture, making it ideal for everyday meals and special dishes alike. Its premium quality and superior taste ensure a delightful dining experience, bringing authenticity and richness to your table with every serving.",
+   "ingredients": "Milled Parboiled Rice",
+   "nutritionalInfo": {
+    "Energy kcal": "354 (18% RDA)",
+    "Protein g": "8.9 (16% RDA)",
+    "Total Fat g": "0.6 (1% RDA)",
+    "Saturated Fat g": "0.4 (2% RDA)",
+    "Trans Fat g": "0.0 (0% RDA)",
+    "Carbohydrates g": "78.1 (60% RDA)",
+    "Total Sugar g": "0.0 (0% RDA)",
+    "Added Sugar g": "0.0 (0% RDA)",
+    "Dietary Fibre g": "0.0 (0% RDA)",
+    "Sodium mg": "2.0 (0.1% RDA)"
+   },
+   "manufacturerName": "RMJ Modern Rice Mill",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Nei Kitchadi Rice",
+  "handle": "nei-kitchadi-rice",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "590",
+    "compare_at_price": "590",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355815_2-parrys-nei-kitchadi-rice.jpg"
+    },
+    "barcode": "8906009011455"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355815_2-parrys-nei-kitchadi-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355815-2_2-parrys-nei-kitchadi-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355815-3_2-parrys-nei-kitchadi-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355815-4_2-parrys-nei-kitchadi-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355815-5_2-parrys-nei-kitchadi-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355815-6_2-parrys-nei-kitchadi-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355815-7_2-parrys-nei-kitchadi-rice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry’s Nei Kitchadi Rice is sourced as per stringent quality standards, ensuring uniform grain size and a naturally non-sticky texture. Specially suited for preparing traditional South Indian delicacies like nei kitchadi, pongal, and flavoured rice dishes, it cooks soft and fluffy. Its consistency and quality make it a perfect choice for wholesome everyday meals.",
+   "ingredients": "Milled Parboiled Rice",
+   "nutritionalInfo": {
+    "Energy": "353 kcal (18% RDA)",
+    "Protein": "8.75 g (16% RDA)",
+    "Total Fat": "0.62 g (1% RDA)",
+    "Saturated Fat": "0.42 g (2% RDA)",
+    "Trans Fat": "0.0 g (0% RDA)",
+    "Carbohydrates": "78.1 g (60% RDA)",
+    "Total Sugar": "0.0 g",
+    "Added Sugar": "0.0 g (0% RDA)",
+    "Dietary Fibre": "<0.5 g (0% RDA)",
+    "Sodium": "1.5 mg (0.1% RDA)"
+   },
+   "manufacturerName": "Sreeskandha Food Processing (India) Pvt. Ltd",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ponni Boiled Rice",
+  "handle": "ponni-boiled-rice",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355816_1-parrys-ponni-boiled-rice.jpg"
+    },
+    "barcode": "8906009010502"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355816_1-parrys-ponni-boiled-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355816-2_1-parrys-ponni-boiled-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355816-3_1-parrys-ponni-boiled-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355816-4_1-parrys-ponni-boiled-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355816-5_1-parrys-ponni-boiled-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355816-6_1-parrys-ponni-boiled-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355816-7_1-parrys-ponni-boiled-rice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry’s Ponni Boiled Rice is sourced as per stringent quality standards, ensuring uniform grain size and a naturally non-sticky texture. Light, fluffy, and wholesome, it is perfect for daily meals. Ideal for South Indian dishes such as sambars, rasam, and curries, this versatile rice brings both taste and quality to your everyday cooking.",
+   "ingredients": "Milled Parboiled Rice",
+   "nutritionalInfo": {
+    "Energy": "356 kcal (18% RDA)",
+    "Protein": "9.5 g (17% RDA)",
+    "Total Fat": "0.5 g (1% RDA)",
+    "Saturated Fat": "0.3 g (1% RDA)",
+    "Trans Fat": "0.0 g (0% RDA)",
+    "Carbohydrates": "78.5 g (60% RDA)",
+    "Total Sugar": "0.0 g (0% RDA)",
+    "Added Sugar": "0.0 g (0% RDA)",
+    "Dietary Fibre": "0.0 g (0% RDA)",
+    "Sodium": "3.9 mg (0.2% RDA)"
+   },
+   "manufacturerName": "RMJ Modern Rice Mill",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Manachanallur Ponni Boiled Rice",
+  "handle": "manachanallur-ponni-boiled-rice",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "590",
+    "compare_at_price": "590",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355814_2-parrys-ponni-boiled-rice-manachanallur-ponni.jpg"
+    },
+    "barcode": "8906009011233"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355814_2-parrys-ponni-boiled-rice-manachanallur-ponni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355814-2_2-parrys-ponni-boiled-rice-manachanallur-ponni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355814-3_2-parrys-ponni-boiled-rice-manachanallur-ponni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355814-4_2-parrys-ponni-boiled-rice-manachanallur-ponni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355814-5_2-parrys-ponni-boiled-rice-manachanallur-ponni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355814-6_2-parrys-ponni-boiled-rice-manachanallur-ponni.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355814-7_2-parrys-ponni-boiled-rice-manachanallur-ponni.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry’s Ponni Boiled Rice, sourced from Manachanallur, is processed as per stringent quality standards to ensure uniform grain size and a naturally non-sticky texture. Light, fluffy, and wholesome, this rice is ideal for preparing daily meals. Perfectly versatile, it pairs well with curries, sambars, rasam, and a variety of traditional South Indian dishes.",
+   "ingredients": "Milled Parboiled Rice",
+   "nutritionalInfo": {
+    "Energy": "357 kcal (18% RDA)",
+    "Protein": "9.2 g (17% RDA)",
+    "Total Fat": "0.59 g (1% RDA)",
+    "Saturated Fat": "0.36 g (2% RDA)",
+    "Trans Fat": "0.0 g (0% RDA)",
+    "Carbohydrates": "78.8 g (61% RDA)",
+    "Total Sugar": "0.0 g",
+    "Added Sugar": "0.0 g (0% RDA",
+    "Dietary Fibre": "0.0 g (0% RDA)",
+    "Sodium": "7.1 mg (0.35% RDA)"
+   },
+   "manufacturerName": "RMJ Modern Rice Mill",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Madurai Idli Rice",
+  "handle": "madurai-idli-rice",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355820_1-parrys-madurai-idli-rice.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "420",
+    "compare_at_price": "420",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355821_2-parrys-madurai-idli-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355820_1-parrys-madurai-idli-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355820-2_1-parrys-madurai-idli-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355820-3_1-parrys-madurai-idli-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355820-4_1-parrys-madurai-idli-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355820-5_1-parrys-madurai-idli-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355820-6_1-parrys-madurai-idli-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355820-7_1-parrys-madurai-idli-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355820-8_1-parrys-madurai-idli-rice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's Madurai Idli Rice is carefully sourced in line with strict quality standards, ensuring consistently uniform-sized grains. Naturally non-sticky, it cooks to a soft, fluffy texture, making it perfect for traditional idlis and other South Indian delicacies. Its premium quality and superior taste deliver an authentic culinary experience, bringing softness and lightness to every meal.",
+   "ingredients": "Milled Parboiled Rice",
+   "nutritionalInfo": {
+    "Energy kcal": "352 (18% RDA)",
+    "Protein g": "9.56 (18% RDA)",
+    "Total Fat g": "0.78 (1% RDA)",
+    "Saturated Fat g": "0.29 (1% RDA)",
+    "Trans Fat g": "<0.1 (0% RDA)",
+    "Carbohydrates g": "76.8 (59% RDA)",
+    "Total Sugar g": "0.5 (0% RDA)",
+    "Added Sugar g": "0 (0% RDA)",
+    "Dietary Fibre g": "3.12 (3.53% RDA)",
+    "Sodium mg": "10 (0% RDA)"
+   },
+   "manufacturerName": "RMJ Modern Rice Mill",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chana Dal",
+  "handle": "chana-dal",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329228_2-parrys-unpolished-gram-dal.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329226_2-parrys-unpolished-gram-dal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329228_2-parrys-unpolished-gram-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329228-2_2-parrys-unpolished-gram-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329228-3_2-parrys-unpolished-gram-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329228-4_2-parrys-unpolished-gram-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329228-5_2-parrys-unpolished-gram-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329228-6_1-parrys-unpolished-gram-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329228-7_1-parrys-unpolished-gram-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329226_2-parrys-unpolished-gram-dal.jpg"
+   }
+  ],
+  "details": {
+   "description": "Split Chana Dal is a wholesome and nutritious pulse widely used in Indian kitchens. Rich in protein, fibre, and essential minerals, it makes for a healthy addition to your daily meals. With its mildly nutty flavour and soft texture when cooked, it is perfect for dals, curries, soups, or savoury snacks, supporting a balanced and nourishing diet.",
+   "ingredients": "CHANA DAL",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Energy": "379 kcal",
+    "Carbohydrates": "60 g",
+    "Total Sugar": "5.3 g",
+    "Added Sugar": "0 g",
+    "Protein": "20.7 g",
+    "Dietary Fibre": "10.6 g",
+    "Total Fat": "6.3 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "0 g",
+    "Calcium": "93 mg",
+    "Sodium": "12 mg",
+    "Iron": "6 mg"
+   },
+   "storageInstructions": "*Store in an airtight container after opening",
+   "manufacturerName": "C Nagarathinam & Sons",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Unpolished Moong Dal",
+  "handle": "unpolished-moong-dal",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329227_1-parrys-unpolished-moong-dal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329227_1-parrys-unpolished-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329227-2_1-parrys-unpolished-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329227-3_1-parrys-unpolished-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329227-4_1-parrys-unpolished-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329227-5_1-parrys-unpolished-moong-dal.jpg"
+   }
+  ],
+  "details": {
+   "description": "Parry's Moong Dal is a superior, handpicked split moong bean that is unpolished and minimally processed to retain its wholesome nutrition and delicious flavour. This high-quality dal is rich in protein, iron, and dietary fibre, making it an excellent addition to a balanced diet. Uniformly sised and requiring minimal soaking time, it provides a maximum yield for a variety of dishes like pongal, khichdi, and mouth-watering sweets like paruppu payasam. The mild, versatile flavour of this split dal allows it to be easily incorporated into curries, soups, salads, and even snacks, providing a nutritious and convenient meal option. Whether you're a vegetarian, vegan, or simply looking to incorporate more plant-based protein into your diet, Parry's Moong Dal is a delicious and nourishing choice.",
+   "ingredients": "Moong Dal",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100 g",
+    "Energy (kcal)": "326.0",
+    "Carbohydrates (g)": "52.6",
+    "Of which Sugar (g)": "1.0",
+    "Added Sugars (g)": "0.0",
+    "Total Sugars (g)": "1.0",
+    "Dietary Fibre (g)": "9.4",
+    "Calcium (mg)": "43.1",
+    "Protein (g)": "23.9",
+    "Sodium (mg)": "10.1",
+    "Iron (mg)": "3.9",
+    "Total Fat (g)": "1.4",
+    "Saturated Fat (g)": "0.3",
+    "Trans Fat (g)": "0.0"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "C Nagarathinam & Sons",
+   "fssaiLicense": "12421999900049",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Unpolished Toor Dal",
+  "handle": "unpolished-toor-dal",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355822_1-parrys-unpolished-toor-dal.jpg"
+    },
+    "barcode": "8906009011882"
+   },
+   {
+    "title": "1kg",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329225_2-parrys-unpolished-toor-dal.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "409",
+    "compare_at_price": "409",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357294_1-parrys-unpolished-toor-dal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355822_1-parrys-unpolished-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355822-2_1-parrys-unpolished-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355822-3_1-parrys-unpolished-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355822-4_1-parrys-unpolished-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355822-5_1-parrys-unpolished-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355822-6_1-parrys-unpolished-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355822-7_1-parrys-unpolished-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329225_2-parrys-unpolished-toor-dal.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's Toor Dal (Unpolished) is carefully sourced in accordance with strict quality standards, providing consistently uniform-sized grains. Naturally non-sticky, it cooks to a soft, wholesome texture, making it perfect for traditional Indian dals and lentil-based dishes. Its premium quality ensures rich taste, superior nutrition, and an authentic culinary experience with every meal.",
+   "ingredients": "Toor Dal",
+   "nutritionalInfo": {
+    "Energy kcal": "351.0 (17% RDA)",
+    "Protein g": "21.0 (39% RDA)",
+    "Total Fat g": "1.5 (2.3% RDA)",
+    "Saturated Fat g": "0.5 (2.1% RDA)",
+    "Trans Fat g": "0.0 (0% RDA)",
+    "Carbohydrates g": "63.0 (48.6% RDA)",
+    "Total Sugar g": "5.8 (0% RDA)",
+    "Added Sugar g": "0.0 (0% RDA)",
+    "Dietary Fibre g": "9.0 (29.8% RDA)",
+    "Sodium mg": "2.5 (0.12% RDA)",
+    "Calcium mg": "46.0 (4.6% RDA)",
+    "Iron mg": "2.9 (15.3% RDA)"
+   },
+   "manufacturerName": "C. Nagarathinam & Sons",
+   "fssaiLicense": "12421999000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Urad Dal Whole",
+  "handle": "urad-dal-whole",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355823_1-parrys-urad-dal-whole.jpg"
+    },
+    "barcode": "8906009011899"
+   },
+   {
+    "title": "1kg",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329224_4-parrys-unpolished-urad-dal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355823_1-parrys-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355823-2_1-parrys-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355823-3_1-parrys-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355823-4_1-parrys-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355823-5_1-parrys-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355823-6_1-parrys-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355823-7_1-parrys-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355823-8_1-parrys-urad-dal-whole.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Parry's Urad Dal is carefully sourced in line with stringent quality standards, ensuring consistently uniform-sized grains. Naturally non-sticky, it cooks to a soft, fluffy texture, making it ideal for traditional Indian dals, vadas, and other lentil-based dishes. Its premium quality delivers rich taste, wholesome nutrition, and an authentic culinary experience with every serving.",
+   "ingredients": "Urad Dal",
+   "nutritionalInfo": {
+    "Energy kcal": "347.0 (17.4% RDA)",
+    "Protein g": "21.4 (40% RDA)",
+    "Total Fat g": "1.5 (2.2% RDA)",
+    "Saturated Fat g": "0.35 (1.6% RDA)",
+    "Trans Fat g": "0.0 (0% RDA)",
+    "Carbohydrates g": "62.1 (48% RDA)",
+    "Total Sugar g": "4.8 (0% RDA)",
+    "Added Sugar g": "0.0 (0% RDA)",
+    "Dietary Fibre g": "20.2 (67.4% RDA)",
+    "Sodium mg": "31.0 (1.6% RDA)",
+    "Calcium mg": "64.9 (6.5% RDA)",
+    "Iron mg": "4.34 (22.8% RDA)"
+   },
+   "manufacturerName": "C. Nagarathinam & Sons",
+   "fssaiLicense": "12421999000493",
    "countryOfOrigin": "India"
   }
  }
