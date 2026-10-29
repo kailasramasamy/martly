@@ -1,0 +1,54 @@
+{
+  "brand": "Eyetex",
+  "manufacturer": "Eyetex (Swastik Laboratories), Chennai",
+  "feed": "eyetex-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/eyetex/logo-2e6225b5.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#C8102E",
+  "namePrefix": "Eyetex ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Divyaa\\ Kumkum\\ 11\\ in\\ 1$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Divyaa\\ Premium\\ Liquid\\ Kumkum$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Pallavi\\ Liquid\\ Kumkum\\ Maroon$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Pallavi\\ Mangal\\ Liquid\\ Sindoor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Pallavi\\ Liquid\\ Sindoor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    }
+  ]
+}
