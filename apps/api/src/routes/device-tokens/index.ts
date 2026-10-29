@@ -1,6 +1,8 @@
 import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
+import { deviceTokenReleaseSchema } from "@martly/shared/schemas";
 import { authenticate } from "../../middleware/auth.js";
+import { byIp, rateLimits } from "../../middleware/rate-limit.js";
 
 export async function deviceTokenRoutes(app: FastifyInstance) {
   // Register device token (upsert)
@@ -21,9 +23,11 @@ export async function deviceTokenRoutes(app: FastifyInstance) {
     return response;
   });
 
-  // Remove device token (on logout)
-  app.delete("/", { preHandler: [authenticate] }, async (request) => {
-    const { token } = request.body as { token: string };
+  // Release a device token on sign-out. No session needed: after a forced sign-out the app has none, and only the
+  // device knows its token
+  const releaseLimit = rateLimits(app, [{ max: 60, window: "15 minutes", key: byIp }]);
+  app.delete("/", { preHandler: [releaseLimit] }, async (request) => {
+    const { token } = deviceTokenReleaseSchema.parse(request.body);
 
     await app.prisma.deviceToken.deleteMany({ where: { token } });
 

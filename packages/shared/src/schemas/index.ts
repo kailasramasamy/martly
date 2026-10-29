@@ -1725,3 +1725,7 @@ export * from "./web.js";
 export * from "./storefront.js";
 export * from "./loose-staples.js";
 export * from "./credits.js";
+
+// ── Device tokens ───────────────────────────────────
+
+export const deviceTokenReleaseSchema = z.object({ token: z.string().trim().min(1).max(4096) });

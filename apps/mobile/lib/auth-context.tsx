@@ -43,6 +43,8 @@ async function cachedUser(): Promise<UserInfo | null> {
   return saved ? (JSON.parse(saved) as UserInfo) : null;
 }
 
+const fetchMe = async () => (await api.get<UserInfo>("/api/v1/auth/me")).data;
+
 const rememberUser = (user: UserInfo) => AsyncStorage.setItem(USER_KEY, JSON.stringify(user)).catch(() => undefined);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
@@ -129,25 +131,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     })();
   }, []);
 
-  const login = useCallback(async (tokens: AuthTokens) => {
-    setAccessToken(tokens.accessToken);
-    await SecureStore.setItemAsync(ACCESS_TOKEN_KEY, tokens.accessToken);
-    await SecureStore.setItemAsync(REFRESH_TOKEN_KEY, tokens.refreshToken);
-
-    try {
-      const res = await api.get<UserInfo>("/api/v1/auth/me");
-      setUser(res.data);
-      rememberUser(res.data);
-    } catch {
-      // token worked for login, user info fetch failed — proceed anyway
-    }
-    setIsAuthenticated(true);
-
-    // Register push notifications after login
-    const pt = await registerForPushNotifications();
-    pushTokenRef.current = pt;
-  }, []);
-
   const clearSession = useCallback(async () => {
     setAccessToken(null);
     setUser(null);
@@ -159,6 +142,29 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await SecureStore.deleteItemAsync(REFRESH_TOKEN_KEY);
   }, []);
 
+  const login = useCallback(async (tokens: AuthTokens) => {
+    setAccessToken(tokens.accessToken);
+    await SecureStore.setItemAsync(ACCESS_TOKEN_KEY, tokens.accessToken);
+    await SecureStore.setItemAsync(REFRESH_TOKEN_KEY, tokens.refreshToken);
+
+    // Without the user the app can't tell staff from shoppers, so a login that can't load them doesn't complete
+    const me = await fetchMe().catch(async () => {
+      await new Promise((resolve) => setTimeout(resolve, 1_000));
+      return fetchMe();
+    }).catch(() => null);
+    if (!me) {
+      await clearSession();
+      throw new Error("Couldn't load your account. Check your connection and try again.");
+    }
+    setUser(me);
+    rememberUser(me);
+    setIsAuthenticated(true);
+
+    // Register push notifications after login
+    const pt = await registerForPushNotifications();
+    pushTokenRef.current = pt;
+  }, [clearSession]);
+
   const logout = useCallback(async () => {
     // Unregister while still signed in; it gives up after a few seconds so a bad network can't block signing out
     const pushToken = pushTokenRef.current;
@@ -167,11 +173,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await clearSession();
   }, [clearSession]);
 
-  // The server refused the session: sign out at once. No unregister: it could only authenticate by starting
-  // another refresh with the refused token, racing the sign-out.
+  // The server refused the session: sign out at once, then release the push token, which needs no session
   const forcedLogout = useCallback(async () => {
+    const pushToken = pushTokenRef.current;
     pushTokenRef.current = null;
     await clearSession();
+    if (pushToken) await unregisterPushToken(pushToken);
   }, [clearSession]);
 
   // Keep logoutRef in sync so the refresher can trigger logout
