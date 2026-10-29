@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { App, Avatar, Button, Input, Segmented, Space, Table, Tag, Typography } from "antd";
+import { App, Button, Input, Segmented, Space, Table, Tag, Typography } from "antd";
 import { CrownOutlined, SearchOutlined, ShopOutlined } from "@ant-design/icons";
 import dayjs from "dayjs";
 import { axiosInstance } from "../../providers/data-provider";
@@ -9,6 +9,8 @@ import type { Subscriber } from "./types";
 import { errorMessage } from "./utils";
 
 const PAGE_SIZE = 25;
+/** Wide enough for landscape logos, which are trimmed to their mark on upload */
+const LOGO_PLATE = { width: 96, height: 48, flexShrink: 0, borderRadius: 8, border: "1px solid #e2e8f0", background: "#fff", padding: 4, display: "flex", alignItems: "center", justifyContent: "center" } as const;
 type Filter = "ALL" | "FREE" | "GROWTH" | "PRO" | "BETA";
 
 const date = (v: string | null) => (v ? dayjs(v).format("D MMM YYYY") : "—");
@@ -38,9 +40,12 @@ function useSubscribers() {
 const columns = (onOpen: (r: Subscriber) => void) => [
   {
     title: "Store",
+    width: 380,
     render: (_: unknown, r: Subscriber) => (
       <Space>
-        <Avatar shape="square" size={40} src={r.logoUrl ?? undefined} icon={<ShopOutlined />} style={{ background: r.logoUrl ? "#fff" : undefined }} />
+        <div style={LOGO_PLATE}>
+          {r.logoUrl ? <img src={r.logoUrl} alt="" style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }} /> : <ShopOutlined style={{ fontSize: 20, color: "#94a3b8" }} />}
+        </div>
         <div>
           <div style={{ fontWeight: 600 }}>{r.name}</div>
           <Typography.Text type="secondary" style={{ fontSize: 12 }}>
