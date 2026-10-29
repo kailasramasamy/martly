@@ -13,6 +13,14 @@
   },
   "rules": [
     {
+      "match": "^(?!.*wick)(?=.*\\boils?\\b)(?=.*\\b(puja|pooja|deepam|deepa|diya|lamp|camphor oil)\\b)",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Oil"
+      ]
+    },
+    {
       "match": "^Camphor\\ \\-\\ Jar$",
       "path": [
         "Pooja & Festivals",
