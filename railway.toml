@@ -17,6 +17,11 @@
 #   MARTLY_API_URL        http://api.railway.internal:<api PORT>/api/v1   (private network; the site calls the API server-side)
 #   WEB_API_SECRET        same value as on "api", so the site's search logs count
 
+#
+# Railway retired Config as Code: this file stops being read on 2026-12-01. Set the restart policy below in each
+# service's Settings before then. The api's healthcheck (/health/ready) and RAILWAY_DEPLOYMENT_DRAINING_SECONDS=20
+# already live in its service settings.
+
 [deploy]
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 3
