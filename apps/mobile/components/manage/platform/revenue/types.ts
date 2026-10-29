@@ -24,6 +24,12 @@ export interface Subscriber {
   name: string;
   webStoreAlwaysOn: boolean;
   unlimitedListings: boolean;
+  /** The first store's logo that has one */
+  logoUrl: string | null;
+  /** Where the first store is */
+  town: { name: string; state: string } | null;
+  stores: number;
+  liveStores: number;
   plan: { name: string; code: string } | null;
   currentUntil: string | null;
   paidThrough: string | null;

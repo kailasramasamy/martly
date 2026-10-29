@@ -64,13 +64,15 @@ export async function marketingAdminRoutes(app: FastifyInstance) {
     };
   });
 
-  // Every organisation with the plan it's on today (Free when no paid period covers now)
+  // Every real organisation (not Martly's template) with the plan it's on today (Free when no paid period covers now)
   app.get("/subscribers", platform, async () => {
     const now = new Date();
     const orgs = await app.prisma.organization.findMany({
+      where: { isTemplate: false },
       orderBy: { name: "asc" },
       select: {
         id: true, name: true, webStoreAlwaysOn: true, unlimitedListings: true,
+        stores: { orderBy: [{ launchedAt: "asc" }, { createdAt: "asc" }], select: { logoUrl: true, status: true, town: { select: { name: true, state: true } } } },
         planPeriods: {
           where: { endsAt: { gt: now } }, orderBy: { startsAt: "asc" },
           select: { startsAt: true, endsAt: true, product: { select: { name: true, code: true } } },
@@ -79,10 +81,17 @@ export async function marketingAdminRoutes(app: FastifyInstance) {
     });
     return {
       success: true,
-      data: orgs.map(({ planPeriods, ...org }) => {
+      data: orgs.map(({ planPeriods, stores, ...org }) => {
         // The newest started period is the one in force, as in getEntitlements
         const current = planPeriods.filter((p) => p.startsAt <= now).at(-1);
-        return { ...org, plan: current?.product ?? null, currentUntil: current?.endsAt ?? null, paidThrough: planPeriods.at(-1)?.endsAt ?? null };
+        return {
+          ...org,
+          logoUrl: stores.find((s) => s.logoUrl)?.logoUrl ?? null,
+          town: stores[0]?.town ?? null,
+          stores: stores.length,
+          liveStores: stores.filter((s) => s.status === "ACTIVE").length,
+          plan: current?.product ?? null, currentUntil: current?.endsAt ?? null, paidThrough: planPeriods.at(-1)?.endsAt ?? null,
+        };
       }),
     };
   });
