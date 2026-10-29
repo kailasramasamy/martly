@@ -21,7 +21,7 @@ function Brief({ kind, brief, onBrief }: { kind: DraftKind; brief: string; onBri
   return (
     <SectionCard title={kind === "STORE_SPECIAL" ? "What do you make at your shop?" : "What should the card be about?"}>
       <TextField value={brief} onChangeText={onBrief} multiline placeholder="A few words is enough"
-        hint="AI picks the products from what your store sells and writes the card in English and Tamil. You check it before it's saved." />
+        hint="We pick the products from what your store sells and writes the card in English and Tamil. You check it before it's saved." />
       <View style={styles.ideas}>
         {IDEAS[kind].map((idea) => (
           <TouchableOpacity key={idea} style={styles.idea} onPress={() => onBrief(idea)} accessibilityRole="button">
@@ -64,10 +64,10 @@ export default function HeroAiScreen() {
       <Button label="Save and add to Home" icon="checkmark" onPress={finish} loading={busy}
         disabled={!ai.draft.title.trim() || ai.draft.products.length < HERO_COLLECTION_MIN} style={styles.save} />
     </>
-  ) : <Button label="Draft with AI" icon="sparkles" onPress={() => ai.write(brief.trim())} loading={ai.running} disabled={brief.trim().length < 3} style={styles.back} />;
+  ) : <Button label="Write the card" icon="create-outline" onPress={() => ai.write(brief.trim())} loading={ai.running} disabled={brief.trim().length < 3} style={styles.back} />;
 
   return (
-    <ManageStackScreen title={kind === "STORE_SPECIAL" ? "Store specials with AI" : "Collection card with AI"} actions={actions}>
+    <ManageStackScreen title={kind === "STORE_SPECIAL" ? "Store specials" : "Collection card"} actions={actions}>
       {ai.draft
         ? <DraftReview draft={ai.draft} onChange={ai.setDraft} palette={kind === "STANDARD" ? palette : null} onPalette={setPalette} />
         : <Brief kind={kind} brief={brief} onBrief={setBrief} />}

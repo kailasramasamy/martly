@@ -7,7 +7,7 @@ import { SectionCard } from "../ui/SectionCard";
 import { StatusPill } from "../ui/StatusPill";
 import { manage } from "../ui/tokens";
 
-const SOURCE_LABEL = { openai: "AI retouch", plain: "Plain", photoroom: "Photoroom" } as const;
+const SOURCE_LABEL = { openai: "Retouched", plain: "Plain", photoroom: "Photoroom" } as const;
 const VERDICT: Record<NonNullable<CatalogDraftShot["verdict"]>, { label: string; color: string; bg: string }> = {
   pass: { label: "Matches", color: "#15803d", bg: "#dcfce7" },
   minor_only: { label: "Minor changes", color: "#b45309", bg: "#fef3c7" },

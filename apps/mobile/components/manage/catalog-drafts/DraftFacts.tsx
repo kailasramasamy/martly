@@ -12,7 +12,7 @@ function pick(label: string | null | undefined, confidence: string | null | unde
 
 export function DraftPicks({ draft }: { draft: CatalogDraftDetail }) {
   return (
-    <SectionCard title="AI picks">
+    <SectionCard title="Our picks">
       <KeyValue label="Brand" value={pick(draft.brand?.name ?? (draft.label?.brand ? `${draft.label.brand} (new)` : null), draft.brandConfidence)} />
       <KeyValue label="Aisle" value={pick(draft.subcategory?.path, draft.subcategoryConfidence)} />
       {draft.barcodeTaken && <KeyValue label="Barcode" value="Already used by another product" valueColor={colors.error} />}
@@ -48,7 +48,7 @@ export function DraftFacts({ draft }: { draft: CatalogDraftDetail }) {
 }
 
 export function CostLine({ usd }: { usd: number }) {
-  return <Text style={styles.cost}>AI cost ${usd.toFixed(2)}</Text>;
+  return <Text style={styles.cost}>Processing cost ${usd.toFixed(2)}</Text>;
 }
 
 const styles = StyleSheet.create({

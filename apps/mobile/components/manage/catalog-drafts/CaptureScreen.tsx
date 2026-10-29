@@ -69,7 +69,7 @@ export function CaptureScreen() {
         </View>
       </SectionCard>
       <SectionCard title="Details">
-        <TextField label="Name" value={form.name} onChangeText={form.setName} placeholder="Optional — AI will read it" maxLength={120} />
+        <TextField label="Name" value={form.name} onChangeText={form.setName} placeholder="Optional — we read it from the pack" maxLength={120} />
         <TextField label="MRP" required prefix={"₹"} keyboardType="decimal-pad" value={form.mrp} onChangeText={form.setMrp} error={form.mrpError} />
         <TextField label="Selling price" required prefix={"₹"} keyboardType="decimal-pad" value={form.price} onChangeText={form.setPrice} error={form.priceError} />
         <TextField label="Stock" keyboardType="number-pad" value={form.stock} onChangeText={form.setStock} placeholder="Optional" error={form.stockError} />

@@ -1,7 +1,7 @@
 import { usePagedList } from "../../../lib/manage/use-paged-list";
 import { useRefreshOnFocus } from "../../../lib/manage/use-refresh-on-focus";
 
-/** Drafts still moving through the AI queue or waiting for a human, for one store */
+/** Drafts still moving through processing or waiting for review, for one store */
 export function useQueueCount(storeId: string | null, enabled: boolean): number {
   const on = enabled && !!storeId;
   const params = (status: string) => ({ status, storeId: storeId ?? "" });

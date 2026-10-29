@@ -12,7 +12,7 @@ import { SponsoredProductField, type SponsorableProduct } from "./SponsoredProdu
 
 const POSTER_HINT = "Tall 2:3 poster, text in the image";
 const STRIP_HINT = "Wide 2:1 strip for the top of the category page, at least 1200 × 600 px, text in the image and kept to the middle";
-const MODES = [{ value: "upload", label: "Upload image" }, { value: "ai", label: "Generate with AI" }] as const;
+const MODES = [{ value: "upload", label: "Upload image" }, { value: "ai", label: "Make one for me" }] as const;
 
 const NAME_ONLY = {
   feature: {

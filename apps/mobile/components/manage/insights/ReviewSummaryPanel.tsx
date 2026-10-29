@@ -66,7 +66,7 @@ export function ReviewSummaryPanel({ storeId }: { storeId: string }) {
       <SegmentedTabs options={PERIODS} value={period} onChange={setPeriod} />
       <Button label="Generate summary" icon="sparkles-outline" loading={running} onPress={generate} />
       {data && <Summary data={data} />}
-      {!data && !running && <Text style={styles.hint}>Generate an AI summary of recent product reviews and store ratings.</Text>}
+      {!data && !running && <Text style={styles.hint}>Get a summary of recent product reviews and store ratings.</Text>}
     </View>
   );
 }

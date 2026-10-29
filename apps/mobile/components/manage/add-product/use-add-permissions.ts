@@ -7,7 +7,8 @@ export function useAddPermissions() {
   return {
     canList: can(user, "store-products", "create"),
     canSnap: can(user, "catalog-drafts", "create"),
-    canManual: can(user, "products", "create"),
+    /** The full product form is for Martly staff; owners add their own products from photos */
+    canManual: user?.role === "SUPER_ADMIN" && can(user, "products", "create"),
     canQueue: can(user, "catalog-drafts", "list"),
   };
 }

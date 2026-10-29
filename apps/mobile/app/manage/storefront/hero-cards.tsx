@@ -43,7 +43,7 @@ export default function HeroCardsScreen() {
 
   return (
     <ManageStackScreen title="Hero cards" loading={hero.loading && !hero.readiness.length} error={hero.error} onRetry={hero.reload}
-      actions={<Button label="Build a collection card with AI" icon="sparkles" onPress={() => router.push({ pathname: "/manage/storefront/hero-ai", params: { storeId } })} style={styles.action} />}>
+      actions={<Button label="Build a collection card for me" icon="flash" onPress={() => router.push({ pathname: "/manage/storefront/hero-ai", params: { storeId } })} style={styles.action} />}>
       <Summary rows={rows} />
       <SectionCard title="On Home, in this order">
         <HeroCardList rows={rows} storeId={storeId} onRemove={config.cards.length > 1 && !hero.running ? remove : undefined} />

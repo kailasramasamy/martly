@@ -24,7 +24,7 @@ const KINDS: Record<AttentionKey, { label: string; icon: keyof typeof Ionicons.g
   recounts: { label: "Recounts requested", icon: "clipboard-outline", href: "/manage/stock-counts?status=RECOUNT" },
   reviews: { label: "Reviews to moderate", icon: "star-outline", href: "/manage/reviews" },
   tickets: { label: "Support tickets open", icon: "chatbubbles-outline", href: "/manage/support-tickets" },
-  catalog_drafts: { label: "Catalog drafts to review", icon: "sparkles-outline", href: "/manage/catalog-drafts" },
+  catalog_drafts: { label: "Uploads to review", icon: "images-outline", href: "/manage/catalog-drafts" },
   stock_check: { label: "Products to confirm", icon: "checkbox-outline", href: "/manage/stock-check" },
   price_review: { label: "Prices to check", icon: "pricetags-outline", href: "/manage/price-review" },
 };

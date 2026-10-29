@@ -58,7 +58,7 @@ function StepActions({ step, storeId, plan }: { step: StorefrontSuggestion; stor
   return (
     <>
       <Button label={ai ? "Do it myself" : "Set it up"} icon={ai ? undefined : "arrow-forward"} variant={ai ? "secondary" : "primary"} onPress={() => router.push(setupHref(step.key, storeId))} style={styles.action} />
-      {ai && <Button label="Do it with AI" icon="sparkles" onPress={() => router.push(ai)} style={styles.aiAction} />}
+      {ai && <Button label="Do it for me" icon="flash" onPress={() => router.push(ai)} style={styles.aiAction} />}
     </>
   );
 }

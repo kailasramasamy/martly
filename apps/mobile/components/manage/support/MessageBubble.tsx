@@ -5,7 +5,7 @@ import type { TicketMessage } from "./types";
 
 const ROLE = {
   user: { label: "Customer", bg: "#eff6ff", fg: "#1d4ed8", align: "flex-start" as const },
-  assistant: { label: "AI support", bg: "#f0fdfa", fg: "#0f766e", align: "flex-start" as const },
+  assistant: { label: "Martly support", bg: "#f0fdfa", fg: "#0f766e", align: "flex-start" as const },
   admin: { label: "Team", bg: "#fef3c7", fg: "#92400e", align: "flex-end" as const },
 };
 

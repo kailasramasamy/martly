@@ -8,7 +8,7 @@ interface QueueActionProps {
   onPress: () => void;
 }
 
-/** Header link to the AI queue, with the number of items in progress or needing review */
+/** Header link to the products being added from photos, with the number of items in progress or needing review */
 export function QueueAction({ count, onPress }: QueueActionProps) {
   return (
     <TouchableOpacity
@@ -16,10 +16,10 @@ export function QueueAction({ count, onPress }: QueueActionProps) {
       onPress={onPress}
       hitSlop={8}
       accessibilityRole="button"
-      accessibilityLabel={count > 0 ? `AI queue, ${count} waiting` : "AI queue"}
+      accessibilityLabel={count > 0 ? `My uploads, ${count} waiting` : "My uploads"}
     >
-      <Ionicons name="sparkles-outline" size={18} color={colors.primary} />
-      <Text style={styles.label}>AI queue</Text>
+      <Ionicons name="images-outline" size={18} color={colors.primary} />
+      <Text style={styles.label}>My uploads</Text>
       {count > 0 && (
         <View style={styles.badge}>
           <Text style={[styles.badgeText, tabular]}>{count > 99 ? "99+" : count}</Text>

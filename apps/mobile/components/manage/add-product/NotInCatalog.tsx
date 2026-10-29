@@ -18,7 +18,7 @@ export function NotInCatalog({ onSnap, onManual }: NotInCatalogProps) {
         <Text style={styles.title}>Can't find it? Create it</Text>
         <View style={styles.rule} />
       </View>
-      {onSnap && <Button label="Easy add with AI" icon="sparkles" onPress={onSnap} />}
+      {onSnap && <Button label="Add your own product" icon="camera" onPress={onSnap} />}
       {onManual && <Button label="Create manually" icon="create-outline" variant="secondary" onPress={onManual} />}
     </View>
   );

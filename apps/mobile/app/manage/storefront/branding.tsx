@@ -18,8 +18,8 @@ function Words({ form, patch, draft, drafting }: { form: BrandingForm; patch: (p
     <SectionCard title="Tagline & highlights">
       <View style={styles.fields}>
         <View style={styles.ai}>
-          <Text style={styles.aiText}>AI writes these from what your shop sells and how it delivers. You check them before saving.</Text>
-          <Button label="Write them with AI" icon="sparkles" variant="secondary" compact loading={drafting} onPress={draft} />
+          <Text style={styles.aiText}>We write these from what your shop sells and how it delivers. You check them before saving.</Text>
+          <Button label="Write them for me" icon="create-outline" variant="secondary" compact loading={drafting} onPress={draft} />
         </View>
         <TextField label="Tagline" value={form.tagline} onChangeText={(tagline) => patch({ tagline })} maxLength={80} placeholder="Fresh stock every morning" />
         <TextField label="Tagline in Tamil" value={form.taglineTa} onChangeText={(taglineTa) => patch({ taglineTa })} maxLength={80} />

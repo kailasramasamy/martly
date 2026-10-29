@@ -68,12 +68,12 @@ export function DraftQueueScreen() {
 
   return (
     <ManageListScreen
-      title="Add products"
+      title="My uploads"
       list={list}
       headerRight={() => <HeaderAction icon="camera-outline" label="Add" onPress={addProduct} />}
       filters={<SegmentedTabs options={FILTER_OPTIONS} value={status} onChange={setStatus} />}
       renderItem={(d) => <DraftRow draft={d} onPress={() => router.push(`/manage/catalog-drafts/${d.id}`)} />}
-      empty={{ icon: "camera-outline", title: "Nothing here yet", message: "Photograph a product and the catalog agent does the rest." }}
+      empty={{ icon: "camera-outline", title: "Nothing here yet", message: "Take photos of a product and we fill in the rest." }}
       footer={
         <View style={styles.footer}>
           <Text style={styles.hint}>{polling ? "Updating automatically…" : "Snap the pack, enter prices, move on."}</Text>
