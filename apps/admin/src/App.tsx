@@ -104,7 +104,8 @@ import { CategoryTree } from "./pages/categories/tree";
 import { BrandList } from "./pages/brands/list";
 import { BrandCreate } from "./pages/brands/create";
 import { BrandEdit } from "./pages/brands/edit";
-import { BrandLogo } from "./pages/brands/brand-drawer";
+import { BrandShow } from "./pages/brands/show";
+import { BrandLogo } from "./pages/brands/brand-parts";
 import { UserList } from "./pages/users/list";
 import { UserCreate } from "./pages/users/create";
 import { UserEdit } from "./pages/users/edit";
@@ -371,6 +372,7 @@ export default function App() {
               {
                 name: "brands",
                 list: "/brands",
+                show: "/brands/show/:id",
                 create: "/brands/create",
                 edit: "/brands/edit/:id",
                 meta: { label: "Brands", icon: <TrademarkOutlined />, parent: "inventory" },
@@ -786,6 +788,7 @@ export default function App() {
                   <Route index element={<BrandList />} />
                   <Route path="create" element={<BrandCreate />} />
                   <Route path="edit/:id" element={<BrandEdit />} />
+                  <Route path="show/:id" element={<BrandShow />} />
                 </Route>
                 <Route path="/catalog-drafts">
                   <Route index element={<CatalogDraftList />} />

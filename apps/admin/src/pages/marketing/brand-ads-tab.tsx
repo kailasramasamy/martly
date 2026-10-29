@@ -5,7 +5,7 @@ import { axiosInstance } from "../../providers/data-provider";
 import { errorMessage } from "./utils";
 import { ReadableSection } from "../../components/ReadableSection";
 import { BRAND_CAMPAIGN_STATUS_COLORS } from "../../constants/tag-colors";
-import { BrandLogo } from "../brands/brand-drawer";
+import { BrandLogo } from "../brands/brand-parts";
 
 const { Paragraph, Text } = Typography;
 

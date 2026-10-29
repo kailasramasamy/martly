@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
-import { Table, Space, Typography, App } from "antd";
+import { Table, Space, App } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import type { HttpError } from "@refinedev/core";
 import { isAxiosError } from "axios";
 import type { BrandSegment, BrandSummary } from "@martly/shared/types";
-import { BrandDrawer, BrandLogo, BrandScopeTag, useCanEditBrand, type BrandRecord } from "./brand-drawer";
+import { Link } from "react-router";
+import { BrandLogo, BrandScopeTag, useCanEditBrand, type BrandRecord } from "./brand-parts";
 import { DebouncedSearch } from "../../components/DebouncedSearch";
 import { axiosInstance } from "../../providers/data-provider";
 import { BrandKpiCards } from "./kpi-cards";
@@ -19,8 +20,6 @@ export const BrandList = () => {
       { field: "q", operator: "eq", value: values.q },
     ],
   });
-  const [selected, setSelected] = useState<BrandRecord | null>(null);
-  const [drawerOpen, setDrawerOpen] = useState(false);
   const [summary, setSummary] = useState<BrandSummary | null>(null);
   const [segment, setSegment] = useState<BrandSegment | null>(null);
   const { message } = App.useApp();
@@ -42,11 +41,6 @@ export const BrandList = () => {
     setFilters([{ field: "segment", operator: "eq", value: next ?? undefined }]);
   };
 
-  const openBrand = (brand: BrandRecord) => {
-    setSelected(brand);
-    setDrawerOpen(true);
-  };
-
   return (
     <List>
       <BrandKpiCards summary={summary} segment={segment} onSegment={showSegment} />
@@ -63,15 +57,17 @@ export const BrandList = () => {
           dataIndex="name"
           title="Name"
           render={(name: string, record: BrandRecord) => (
-            <Space style={{ cursor: "pointer" }} onClick={() => openBrand(record)}>
-              <BrandLogo brand={record} height={32} />
-              <Typography.Link>{name}</Typography.Link>
-              <BrandScopeTag brand={record} />
-            </Space>
+            <Link to={`/brands/show/${record.id}`}>
+              <Space>
+                <BrandLogo brand={record} height={32} />
+                {name}
+                <BrandScopeTag brand={record} />
+              </Space>
+            </Link>
           )}
         />
         <Table.Column dataIndex="slug" title="Slug" />
-        <Table.Column title="Products" render={(_, record: BrandRecord) => record._count.products} />
+        <Table.Column title="Products" render={(_, record: BrandRecord) => record._count?.products} />
         <Table.Column
           title="Actions"
           render={(_, record: BrandRecord) => canEdit(record) && (
@@ -82,7 +78,6 @@ export const BrandList = () => {
           )}
         />
       </Table>
-      <BrandDrawer brand={selected} open={drawerOpen} onClose={() => setDrawerOpen(false)} />
     </List>
   );
 };

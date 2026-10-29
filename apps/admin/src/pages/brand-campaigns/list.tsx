@@ -10,7 +10,7 @@ import { axiosInstance } from "../../providers/data-provider";
 import { formatRupees } from "../promos/promo-utils";
 import { errorMessage } from "../marketing/utils";
 import { BrandSelect } from "./brand-select";
-import { BrandLogo } from "../brands/brand-drawer";
+import { BrandLogo } from "../brands/brand-parts";
 import type { Campaign, CampaignScope } from "./types";
 
 const statusOptions = Object.entries(BrandCampaignStatusLabels).map(([value, label]) => ({ value, label }));
