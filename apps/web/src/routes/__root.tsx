@@ -1,4 +1,5 @@
-import { HeadContent, Outlet, Scripts, createRootRoute } from "@tanstack/react-router"
+import type { ReactNode } from "react"
+import { HeadContent, Outlet, Scripts, createRootRoute, useRouter } from "@tanstack/react-router"
 import appCss from "~/styles/app.css?url"
 import { getDepartments, getHome } from "~/lib/api"
 import { AppSheetProvider } from "~/components/app-sheet"
@@ -26,21 +27,36 @@ export const Route = createRootRoute({
       { rel: "stylesheet", href: appCss },
     ],
   }),
-  component: RootLayout,
+  // The document is a shell around the root match, so a failed root loader still renders a page (the error below)
+  shellComponent: RootDocument,
+  component: Outlet,
+  errorComponent: RootError,
 })
 
-function RootLayout() {
+function RootDocument({ children }: { children: ReactNode }) {
   return (
     <html lang="en-IN">
       <head>
         <HeadContent />
       </head>
       <body>
-        <AppSheetProvider>
-          <Outlet />
-        </AppSheetProvider>
+        <AppSheetProvider>{children}</AppSheetProvider>
         <Scripts />
       </body>
     </html>
+  )
+}
+
+function RootError() {
+  const router = useRouter()
+  return (
+    <main className="mx-auto max-w-xl px-4 py-32 text-center">
+      <h1 className="text-3xl font-extrabold">Something went wrong</h1>
+      <p className="mt-4 text-slate-600">We couldn't load this page. Please try again in a moment.</p>
+      <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <button type="button" onClick={() => router.invalidate()} className="inline-flex h-12 items-center rounded-full bg-brand px-6 font-bold text-white">Try again</button>
+        <a href="/" className="inline-flex h-12 items-center rounded-full border border-slate-300 px-6 font-bold">Go to Martly home</a>
+      </div>
+    </main>
   )
 }

@@ -86,12 +86,16 @@ function useLineSaves(
   const queue = useRef<Promise<unknown>>(Promise.resolve());
   const quantities = useRef(new Map<string, number>());
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // The save the waiting quantity taps will make; closing the screen makes it at once instead of dropping it
+  const pendingSave = useRef<(() => void) | null>(null);
   useEffect(() => () => {
     if (timer.current) clearTimeout(timer.current);
+    pendingSave.current?.();
   }, []);
 
   const saveLines = useCallback((id: string, edit: LinesEdit) => {
     if (timer.current) clearTimeout(timer.current);
+    pendingSave.current = null;
     const run = () => {
       if (!saved.current) return Promise.resolve(false);
       const lines = linesOf(saved.current).map((l) => ({ ...l, quantity: quantities.current.get(l.variantId) ?? l.quantity }));
@@ -111,7 +115,8 @@ function useLineSaves(
     if (variantId) quantities.current.set(variantId, quantity);
     setState({ kind: "ready", list });
     if (timer.current) clearTimeout(timer.current);
-    timer.current = setTimeout(() => void saveLines(list.id, (lines) => lines), SAVE_DELAY_MS);
+    pendingSave.current = () => void saveLines(list.id, (lines) => lines);
+    timer.current = setTimeout(() => pendingSave.current?.(), SAVE_DELAY_MS);
   }, [state, setState, saveLines]);
 
   return { saveLines, setQuantity };

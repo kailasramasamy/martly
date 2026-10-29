@@ -63,9 +63,10 @@ export async function registerForPushNotifications(): Promise<string | null> {
   }
 }
 
+/** Best effort: signing out must not wait on a slow network, so this gives up after a few seconds */
 export async function unregisterPushToken(token: string): Promise<void> {
   try {
-    await api.delete("/api/v1/device-tokens", { token });
+    await api.delete("/api/v1/device-tokens", { token }, 5_000);
   } catch {}
 }
 

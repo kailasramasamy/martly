@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
 import { useLocalSearchParams, useFocusEffect } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { api } from "../../lib/api";
+import { api, ApiError } from "../../lib/api";
 import { useOrderWebSocket } from "../../lib/useOrderWebSocket";
 import { useToast } from "../../lib/toast-context";
 import { useLanguage } from "../../lib/language-context";
@@ -32,18 +32,27 @@ import type { ReturnRequestData } from "../../lib/types";
 function useOrder(id: string) {
   const [order, setOrder] = useState<OrderData | null>(null);
   const [loading, setLoading] = useState(true);
+  // Why there's no order to show: it doesn't exist (for this shopper), or it couldn't be loaded
+  const [missing, setMissing] = useState<"notFound" | "failed" | null>(null);
   const [returnRequest, setReturnRequest] = useState<ReturnRequestData | null>(null);
 
   const fetchOrder = useCallback(async () => {
     try {
       const res = await api.get<OrderData>(`/api/v1/orders/${id}`);
       setOrder(res.data);
-    } catch {
-      // the screen shows "Order not found"
+      setMissing(null);
+    } catch (err) {
+      // A failed refresh keeps the order on screen
+      setMissing(err instanceof ApiError && (err.status === 404 || err.status === 403) ? "notFound" : "failed");
     } finally {
       setLoading(false);
     }
   }, [id]);
+
+  const retry = useCallback(() => {
+    setLoading(true);
+    void fetchOrder();
+  }, [fetchOrder]);
 
   const fetchReturn = useCallback(() => {
     api.get<ReturnRequestData | null>(`/api/v1/return-requests/my-requests/${id}`).then((res) => { if (res.data) setReturnRequest(res.data); }).catch(() => {});
@@ -62,7 +71,7 @@ function useOrder(id: string) {
     return () => clearInterval(interval);
   }, [isActive, fetchOrder]);
 
-  return { order, loading, returnRequest, fetchOrder, fetchReturn, isActive };
+  return { order, loading, missing, retry, returnRequest, fetchOrder, fetchReturn, isActive };
 }
 
 function useCancel(order: OrderData | null, onCancelled: () => Promise<void>) {
@@ -92,11 +101,12 @@ function useCancel(order: OrderData | null, onCancelled: () => Promise<void>) {
 function OrderDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const t = useStrings("orders").detail;
+  const common = useStrings("common");
   const r = useStrings("orders").reorder;
   const { getLocalizedName } = useLanguage();
   const insets = useSafeAreaInsets();
   const reorder = useReorder();
-  const { order, loading, returnRequest, fetchOrder, fetchReturn, isActive } = useOrder(id);
+  const { order, loading, missing, retry, returnRequest, fetchOrder, fetchReturn, isActive } = useOrder(id);
   const ratings = useOrderRatings(order);
   const cancel = useCancel(order, fetchOrder);
   const [rating, setRating] = useState(false);
@@ -104,7 +114,18 @@ function OrderDetailScreen() {
   const ml = useStrings("monthlyList");
 
   if (loading) return <OrderDetailSkeleton />;
-  if (!order) return <View style={styles.center}><Text style={styles.empty}>{t.notFound}</Text></View>;
+  if (!order) {
+    return (
+      <View style={styles.center}>
+        <Text style={styles.empty}>{missing === "notFound" ? t.notFound : t.loadFailed}</Text>
+        {missing !== "notFound" && (
+          <TouchableOpacity style={styles.retry} onPress={retry} accessibilityRole="button">
+            <Text style={styles.retryText}>{common.tryAgain}</Text>
+          </TouchableOpacity>
+        )}
+      </View>
+    );
+  }
 
   return (
     <>
@@ -151,8 +172,10 @@ function OrderDetailScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.surface },
-  center: { flex: 1, justifyContent: "center", alignItems: "center" },
-  empty: { fontSize: 16, fontFamily: fonts.medium, color: colors.textSecondary },
+  center: { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 32, gap: 16 },
+  empty: { fontSize: 16, fontFamily: fonts.medium, color: colors.textSecondary, textAlign: "center" },
+  retry: { minHeight: 44, paddingHorizontal: 20, borderRadius: 8, backgroundColor: colors.primary, justifyContent: "center" },
+  retryText: { fontSize: 15, fontFamily: fonts.semibold, color: "#ffffff" },
   inset: { marginHorizontal: 16, marginTop: 12 },
 });
 

@@ -310,7 +310,7 @@ function SmartReorderScreen() {
           {/* Variant + Price */}
           <View style={styles.variantPriceRow}>
             <Text style={styles.variantText}>
-              {item.variant.unitValue} {item.variant.unitType}
+              {item.variant.name}
             </Text>
             <View style={styles.priceGroup}>
               <Text style={styles.price}>

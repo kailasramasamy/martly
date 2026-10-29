@@ -120,6 +120,7 @@ export const orders = {
     deliverTo: "Deliver to",
     pickupFrom: "Pick up from",
     notFound: "Order not found",
+    loadFailed: "Couldn't load this order. Check your connection.",
     trackRider: "Track Rider Live",
     scheduledPickup: "Scheduled Pickup",
     scheduledDelivery: "Scheduled Delivery",

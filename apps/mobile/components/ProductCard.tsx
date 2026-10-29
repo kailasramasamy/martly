@@ -109,7 +109,7 @@ export function ProductCard({ item, variantCount = 1, onAddToCart, onUpdateQuant
             </View>
           </View>
           <Text style={styles.variantInfo}>
-            {item.variant.name} · {item.variant.unitType} {item.variant.unitValue}
+            {item.variant.name}
           </Text>
           {isLowStock && (
             <Text style={styles.lowStockText}>{t.onlyLeft(available)}</Text>

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback, useEffect, useMemo, type ReactNode } from "react";
+import { createContext, useContext, useState, useCallback, useEffect, useMemo, useRef, type ReactNode } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { lineTotal, type MultiBuyOffer } from "@martly/shared/offers";
 import { useLanguage } from "./language-context";
@@ -7,6 +7,8 @@ import type { Store, StoreProduct, Translations } from "./types";
 import type { SectionSource } from "./home-events";
 
 const PENDING_COUPON_KEY = "martly_pending_coupon";
+/** The cart (its store and lines), so it survives an app restart or the OS killing the app */
+const CART_KEY = "martly_cart";
 
 export interface CartItem {
   storeProductId: string;
@@ -95,6 +97,31 @@ export function cartTotals(items: CartItem[]) {
   };
 }
 
+const isText = (value: unknown): value is string => typeof value === "string" && value.length > 0;
+
+function isCartLine(line: unknown): line is CartItem {
+  if (!line || typeof line !== "object") return false;
+  const l = line as Record<string, unknown>;
+  return isText(l.storeProductId) && isText(l.productId) && isText(l.variantId) && typeof l.productName === "string"
+    && typeof l.variantName === "string" && typeof l.price === "number" && Number.isFinite(l.price)
+    && Number.isInteger(l.quantity) && (l.quantity as number) > 0;
+}
+
+/** A saved cart, or null when there is none or it isn't one this app wrote; malformed lines are dropped */
+function parseSavedCart(raw: string | null): { store: CartStore; items: CartItem[] } | null {
+  if (!raw) return null;
+  let saved: { store?: Partial<CartStore>; items?: unknown };
+  try {
+    saved = JSON.parse(raw);
+  } catch (err) {
+    if (err instanceof SyntaxError) return null;
+    throw err;
+  }
+  if (!saved?.store || !isText(saved.store.id) || typeof saved.store.name !== "string" || !Array.isArray(saved.items)) return null;
+  const items = saved.items.filter(isCartLine);
+  return items.length ? { store: saved.store as CartStore, items } : null;
+}
+
 /** Puts another basket in the cart's place for the screens inside, e.g. a walk that fills the monthly list */
 export function CartScope({ value, children }: { value: CartState; children: ReactNode }) {
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
@@ -107,6 +134,30 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const storeName = store ? getLocalizedName(store) : null;
   const [items, setItems] = useState<CartItem[]>([]);
   const [pendingCoupon, setPendingCouponState] = useState<string | null>(null);
+  // Nothing is saved until the saved cart is read back, so the empty cart at launch can't overwrite it
+  const [hydrated, setHydrated] = useState(false);
+  const itemsRef = useRef(items);
+  itemsRef.current = items;
+
+  useEffect(() => {
+    AsyncStorage.getItem(CART_KEY)
+      .catch(() => null)
+      .then((raw) => {
+        const saved = parseSavedCart(raw);
+        // A line added while it was reading wins over the saved cart
+        if (saved && itemsRef.current.length === 0) {
+          setStore(saved.store);
+          setItems(saved.items);
+        }
+        setHydrated(true);
+      });
+  }, []);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    if (store && items.length) void AsyncStorage.setItem(CART_KEY, JSON.stringify({ store, items })).catch(() => undefined);
+    else void AsyncStorage.removeItem(CART_KEY).catch(() => undefined);
+  }, [hydrated, store, items]);
 
   useEffect(() => {
     AsyncStorage.getItem(PENDING_COUPON_KEY).then((saved) => {

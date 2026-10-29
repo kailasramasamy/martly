@@ -105,9 +105,6 @@ export const StoreProductList = () => {
                 {record.variant?.name && (
                   <Text type="secondary" style={{ fontSize: 12 }}>
                     {record.variant.name}
-                    {record.variant.unitValue != null && record.variant.unitType
-                      ? ` (${Number(record.variant.unitValue)} ${record.variant.unitType})`
-                      : ""}
                   </Text>
                 )}
               </div>

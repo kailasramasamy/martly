@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { amount } from "../../lib/money";
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -147,14 +148,14 @@ export default function CartScreen() {
           >
             <View>
               <View style={styles.checkoutLeft}>
-                <Text style={styles.checkoutTotal}>{"\u20B9"}{grandTotal.toFixed(0)}</Text>
+                <Text style={styles.checkoutTotal}>{"\u20B9"}{amount(grandTotal)}</Text>
                 <Text style={styles.checkoutSubtext}>{t.total}</Text>
               </View>
-              {savings >= 1 && <Text style={styles.checkoutSaved}>{t.saved(savings.toFixed(0))}</Text>}
+              {savings >= 1 && <Text style={styles.checkoutSaved}>{t.saved(amount(savings))}</Text>}
             </View>
             <View style={styles.checkoutRight}>
               <Text style={styles.checkoutBtnText}>
-                {review.hasUnavailable ? t.removeUnavailable : belowMinimum ? t.minOrder(minOrderAmount!.toFixed(0)) : t.checkout}
+                {review.hasUnavailable ? t.removeUnavailable : belowMinimum ? t.minOrder(amount(minOrderAmount!)) : t.checkout}
               </Text>
               {!review.hasUnavailable && <Ionicons name={belowMinimum ? "lock-closed" : "arrow-forward"} size={18} color="#fff" />}
             </View>

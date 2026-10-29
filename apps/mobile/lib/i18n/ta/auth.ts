@@ -10,6 +10,7 @@ export const auth: Strings<"auth"> = {
     invalidOtp: "OTP தவறானது",
     saveNameFailed: "பெயரைச் சேமிக்க முடியவில்லை",
     requestFailed: "கோரிக்கை தோல்வியடைந்தது",
+    timedOut: "இணைப்பு மெதுவாக உள்ளது. மீண்டும் முயலுங்கள்.",
   },
   login: {
     phoneTitle: "உங்கள் போன் எண்ணை உள்ளிடுங்கள்",

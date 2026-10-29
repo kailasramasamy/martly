@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useCallback, useEffect, useRef, type ReactNode } from "react";
 import * as SecureStore from "expo-secure-store";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { setAccessToken, setTokenRefresher, api, ApiError } from "./api";
+import { setAccessToken, setTokenRefresher, api, ApiError, withTimeout } from "./api";
 import { registerForPushNotifications, unregisterPushToken } from "./notifications";
 import type { AuthTokens, OrgSummary } from "@martly/shared/types";
 import { API_URL } from "./config";
@@ -52,16 +52,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<UserInfo | null>(null);
   const pushTokenRef = useRef<string | null>(null);
   const logoutRef = useRef<() => Promise<void>>(undefined);
+  const forcedLogoutRef = useRef<() => Promise<void>>(undefined);
 
   // Set when the server refuses the saved session, so a launch that failed to load the user knows not to keep it
   const sessionRefusedRef = useRef(false);
 
   // Register the token refresher so api.ts can transparently refresh on 401
   useEffect(() => {
-    // Not awaited: logout unregisters the push token, a request that can itself be waiting on this refresh
+    // Not awaited: signing out must not wait on requests that can themselves be waiting on this refresh
     const endSession = () => {
       sessionRefusedRef.current = true;
-      logoutRef.current?.();
+      forcedLogoutRef.current?.();
     };
     setTokenRefresher(async () => {
       try {
@@ -70,11 +71,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           endSession();
           return null;
         }
-        const res = await fetch(`${API_URL}/api/v1/auth/refresh`, {
+        const res = await withTimeout((signal) => fetch(`${API_URL}/api/v1/auth/refresh`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ refreshToken }),
-        });
+          signal,
+        }));
         // Only the server refusing the refresh token ends the session; a 5xx leaves it for the next try
         if (res.status === 401 || res.status === 403) {
           endSession();
@@ -91,7 +93,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         endSession();
         return null;
       } catch {
-        // Offline or the request failed: stay signed in and refresh on a later request
+        // Offline, timed out or the request failed: stay signed in and refresh on a later request
         return null;
       }
     });
@@ -146,13 +148,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     pushTokenRef.current = pt;
   }, []);
 
-  const logout = useCallback(async () => {
-    // Unregister push token before clearing auth
-    if (pushTokenRef.current) {
-      await unregisterPushToken(pushTokenRef.current);
-      pushTokenRef.current = null;
-    }
-
+  const clearSession = useCallback(async () => {
     setAccessToken(null);
     setUser(null);
     setIsAuthenticated(false);
@@ -163,8 +159,24 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await SecureStore.deleteItemAsync(REFRESH_TOKEN_KEY);
   }, []);
 
+  const logout = useCallback(async () => {
+    // Unregister while still signed in; it gives up after a few seconds so a bad network can't block signing out
+    const pushToken = pushTokenRef.current;
+    pushTokenRef.current = null;
+    if (pushToken) await unregisterPushToken(pushToken);
+    await clearSession();
+  }, [clearSession]);
+
+  // The server refused the session: sign out at once. No unregister: it could only authenticate by starting
+  // another refresh with the refused token, racing the sign-out.
+  const forcedLogout = useCallback(async () => {
+    pushTokenRef.current = null;
+    await clearSession();
+  }, [clearSession]);
+
   // Keep logoutRef in sync so the refresher can trigger logout
   logoutRef.current = logout;
+  forcedLogoutRef.current = forcedLogout;
 
   const refreshUser = useCallback(async () => {
     try {

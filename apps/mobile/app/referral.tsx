@@ -286,7 +286,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   codeTitle: {
-    fontSize: fontSize.subtitle,
+    fontSize: fontSize.lg,
     fontFamily: "App-SemiBold",
     color: colors.text,
   },
@@ -342,7 +342,7 @@ const styles = StyleSheet.create({
     marginBottom: spacing.md,
   },
   sectionTitle: {
-    fontSize: fontSize.body,
+    fontSize: fontSize.md,
     fontFamily: "App-SemiBold",
     color: colors.text,
     marginBottom: 8,
@@ -358,7 +358,7 @@ const styles = StyleSheet.create({
     borderColor: colors.border,
     borderRadius: 8,
     paddingHorizontal: 12,
-    fontSize: fontSize.body,
+    fontSize: fontSize.md,
     fontFamily: "App-Regular",
     color: colors.text,
     backgroundColor: "#fff",
@@ -392,7 +392,7 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   appliedText: {
-    fontSize: fontSize.body,
+    fontSize: fontSize.md,
     fontFamily: "App-Regular",
     color: "#166534",
   },
@@ -417,17 +417,17 @@ const styles = StyleSheet.create({
     borderColor: colors.border,
   },
   statValue: {
-    fontSize: fontSize.title,
+    fontSize: fontSize.xl,
     fontFamily: "App-Bold",
     color: colors.text,
   },
   statLabel: {
-    fontSize: fontSize.caption,
+    fontSize: fontSize.sm,
     color: colors.textSecondary,
     marginTop: 2,
   },
   historyTitle: {
-    fontSize: fontSize.body,
+    fontSize: fontSize.md,
     fontFamily: "App-SemiBold",
     color: colors.text,
     marginHorizontal: spacing.md,
@@ -452,12 +452,12 @@ const styles = StyleSheet.create({
     marginRight: 12,
   },
   historyName: {
-    fontSize: fontSize.body,
+    fontSize: fontSize.md,
     fontFamily: "App-Regular",
     color: colors.text,
   },
   historyDate: {
-    fontSize: fontSize.caption,
+    fontSize: fontSize.sm,
     color: colors.textSecondary,
     marginTop: 2,
   },
@@ -481,7 +481,7 @@ const styles = StyleSheet.create({
     paddingVertical: 48,
   },
   emptyTitle: {
-    fontSize: fontSize.body,
+    fontSize: fontSize.md,
     fontFamily: "App-SemiBold",
     color: colors.textSecondary,
     marginTop: 12,

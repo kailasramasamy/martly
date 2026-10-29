@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet } from "react-native";
+import { amount } from "../../lib/money";
 import { Ionicons } from "@expo/vector-icons";
 import { useStrings } from "../../lib/i18n/use-strings";
 import { colors, spacing } from "../../constants/theme";
@@ -19,7 +20,7 @@ const TONES = {
 export function OrderGoal({ kind, target, total }: OrderGoalProps) {
   const t = useStrings("cart");
   const tone = TONES[kind];
-  const more = (target - total).toFixed(0);
+  const more = amount(target - total);
   const progress = `${Math.min(100, Math.max(4, (total / target) * 100))}%` as const;
 
   return (
@@ -27,7 +28,7 @@ export function OrderGoal({ kind, target, total }: OrderGoalProps) {
       <View style={styles.header}>
         <Ionicons name={tone.icon} size={18} color={tone.fg} />
         <Text style={[styles.text, { color: tone.fg }]}>
-          {kind === "minimum" ? t.belowMinimum(more, target.toFixed(0)) : t.belowFreeDelivery(more)}
+          {kind === "minimum" ? t.belowMinimum(more, amount(target)) : t.belowFreeDelivery(more)}
         </Text>
       </View>
       <View style={[styles.track, { backgroundColor: tone.track }]}>

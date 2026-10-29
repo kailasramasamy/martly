@@ -348,8 +348,7 @@ function SubscriptionBuilderScreen() {
             {getLocalizedName(sp.product)}
           </Text>
           <Text style={styles.searchResultVariant}>
-            {sp.variant.name} &middot; {sp.variant.unitValue}
-            {sp.variant.unitType}
+            {sp.variant.name}
           </Text>
           <Text style={styles.searchResultPrice}>{formatPrice(price)}</Text>
         </View>
@@ -384,8 +383,7 @@ function SubscriptionBuilderScreen() {
             {getLocalizedName(item.storeProduct.product)}
           </Text>
           <Text style={styles.selectedItemVariant}>
-            {item.storeProduct.variant.unitValue}
-            {item.storeProduct.variant.unitType}
+            {item.storeProduct.variant.name}
           </Text>
         </View>
         <View style={styles.qtyControls}>

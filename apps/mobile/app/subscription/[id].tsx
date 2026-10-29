@@ -285,7 +285,7 @@ function SubscriptionDetailScreen() {
                   {getLocalizedName(item.storeProduct.product)}
                 </Text>
                 <Text style={styles.itemVariant}>
-                  {item.storeProduct.variant.unitValue} {item.storeProduct.variant.unitType}
+                  {item.storeProduct.variant.name}
                 </Text>
                 {pricing && (
                   <View style={styles.priceRow}>

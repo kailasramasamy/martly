@@ -1,4 +1,5 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { amount } from "../lib/money";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -68,7 +69,7 @@ export function FloatingCart({ aboveTabBar = false }: { aboveTabBar?: boolean })
               <StoreMark storeId={storeId} size={18} />
               <Text style={styles.storeName} numberOfLines={1}>{storeName}</Text>
             </View>
-            <Text style={styles.total}>{"\u20B9"}{totalAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</Text>
+            <Text style={styles.total}>{"\u20B9"}{amount(totalAmount)}</Text>
           </View>
         </View>
         <View style={styles.right}>

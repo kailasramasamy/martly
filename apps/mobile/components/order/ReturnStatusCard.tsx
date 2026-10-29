@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { amount } from "../../lib/money";
 import { View, Text, TouchableOpacity, StyleSheet, Linking } from "react-native";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -18,7 +19,7 @@ const STATUS_COLORS: Record<ReturnRequestData["status"], string> = {
   EXPIRED: colors.textSecondary,
 };
 
-const money = (v: string | number) => `₹${Number(v).toFixed(0)}`;
+const money = (v: string | number) => `₹${amount(Number(v))}`;
 
 function InProgress({ request, onSwitch, busy }: { request: ReturnRequestData; onSwitch: (m: "NEXT_ORDER" | "AT_STORE") => void; busy: boolean }) {
   const t = useStrings("orders").returns;

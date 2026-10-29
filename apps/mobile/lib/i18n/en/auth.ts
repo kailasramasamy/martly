@@ -8,6 +8,7 @@ export const auth = {
     invalidOtp: "Invalid OTP",
     saveNameFailed: "Failed to save name",
     requestFailed: "Request failed",
+    timedOut: "The connection is slow. Please try again.",
   },
   login: {
     phoneTitle: "Enter your phone number",

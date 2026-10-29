@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
+import { amount } from "../lib/money";
 import { useFocusEffect, useLocalSearchParams } from "expo-router";
 import {
   View,
@@ -81,6 +82,11 @@ function CheckoutScreen() {
   const paymentMethod: PaymentMethod = paymentChoice.kind === "cod" ? "COD" : "ONLINE";
   const chosenUpiApp = paymentChoice.kind === "upi" ? UPI_APPS.find((a) => a.id === paymentChoice.app) : undefined;
   const [submitting, setSubmitting] = useState(false);
+  // Set at once on tap (state lands a render later), so a double tap can't place the order twice
+  const placingRef = useRef(false);
+  // One key per checkout attempt, sent again on a retry, so an order placed by a request whose answer was lost is
+  // returned instead of placed a second time
+  const idempotencyKeyRef = useRef<string | null>(null);
   const [couponCode, setCouponCode] = useState("");
   const [couponResult, setCouponResult] = useState<CouponValidation | null>(null);
   const [couponError, setCouponError] = useState("");
@@ -374,7 +380,10 @@ function CheckoutScreen() {
   });
 
   const proceedWithOrder = async () => {
+    if (placingRef.current) return;
+    placingRef.current = true;
     setSubmitting(true);
+    idempotencyKeyRef.current ??= `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}${Math.random().toString(36).slice(2)}`;
     try {
       const orderPayload: Record<string, unknown> = {
         storeId,
@@ -410,7 +419,9 @@ function CheckoutScreen() {
         orderPayload.scheduledDate = selectedDate;
       }
 
-      const result = await api.post<{ id: string; walletFullyCovered?: boolean }>("/api/v1/orders", orderPayload);
+      const result = await api.post<{ id: string; walletFullyCovered?: boolean }>(
+        "/api/v1/orders", orderPayload, { "Idempotency-Key": idempotencyKeyRef.current },
+      );
       const orderId = result.data.id;
       const fullyCoveredByWallet = result.data.walletFullyCovered === true;
 
@@ -438,6 +449,7 @@ function CheckoutScreen() {
       const message = error instanceof Error ? error.message : t.payment.placeFailed;
       toast.show(message, "error");
     } finally {
+      placingRef.current = false;
       setSubmitting(false);
     }
   };
@@ -468,10 +480,10 @@ function CheckoutScreen() {
       ? common.free
       : deliveryLookup?.serviceable
         ? deliveryLookup.deliveryFee
-          ? `\u20B9${deliveryLookup.deliveryFee.toFixed(0)}`
+          ? `\u20B9${amount(deliveryLookup.deliveryFee)}`
           : common.free
         : deliveryFeeFrom
-          ? t.fulfillment.feeFrom(deliveryFeeFrom.toFixed(0))
+          ? t.fulfillment.feeFrom(amount(deliveryFeeFrom))
           : common.free;
 
   const deliveryEtaPreview = deliveryLookup?.serviceable && deliveryLookup.estimatedMinutes
@@ -518,7 +530,7 @@ function CheckoutScreen() {
           <View style={styles.minOrderWarning}>
             <Ionicons name="alert-circle" size={18} color="#c2410c" />
             <Text style={styles.minOrderWarningText}>
-              {t.summary.belowMinimum((minOrderAmount! - totalAmount).toFixed(0), minOrderAmount!.toFixed(0))}
+              {t.summary.belowMinimum(amount(minOrderAmount! - totalAmount), amount(minOrderAmount!))}
             </Text>
           </View>
         )}
@@ -550,7 +562,7 @@ function CheckoutScreen() {
                   )}
                 </View>
                 <Text style={styles.itemTotal}>
-                  {"\u20B9"}{lineTotal(item.price, item.quantity, item.offer).toFixed(0)}
+                  {"\u20B9"}{amount(lineTotal(item.price, item.quantity, item.offer))}
                 </Text>
               </View>
             ))}
@@ -767,7 +779,7 @@ function CheckoutScreen() {
                               <View style={[styles.addressDeliveryTag, styles.addressDeliveryTagGreen]}>
                                 <Ionicons name="bicycle-outline" size={11} color="#16a34a" />
                                 <Text style={[styles.addressDeliveryTagText, { color: "#16a34a" }]}>
-                                  {lookup.deliveryFee ? `₹${lookup.deliveryFee.toFixed(0)}` : common.free}
+                                  {lookup.deliveryFee ? `₹${amount(lookup.deliveryFee)}` : common.free}
                                 </Text>
                               </View>
                             ) : (
@@ -981,7 +993,7 @@ function CheckoutScreen() {
             <View style={styles.couponApplied}>
               <View style={{ flex: 1 }}>
                 <Text style={styles.couponAppliedCode}>{couponResult.code}</Text>
-                <Text style={styles.couponAppliedSaving}>{t.promo.youSave(couponDiscount.toFixed(0))}</Text>
+                <Text style={styles.couponAppliedSaving}>{t.promo.youSave(amount(couponDiscount))}</Text>
               </View>
               <TouchableOpacity onPress={handleRemoveCoupon}>
                 <Ionicons name="close-circle" size={22} color="#ef4444" />
@@ -1048,7 +1060,7 @@ function CheckoutScreen() {
                 </View>
                 <View style={{ flex: 1 }}>
                   <Text style={styles.walletBalanceLabel}>
-                    {t.wallet.available} <Text style={styles.walletBalanceAmount}>{"\u20B9"}{walletBalance.toFixed(0)}</Text>
+                    {t.wallet.available} <Text style={styles.walletBalanceAmount}>{"\u20B9"}{amount(walletBalance)}</Text>
                   </Text>
                   {useWallet && walletDeduction > 0 && (
                     walletCoversAll ? (
@@ -1058,10 +1070,10 @@ function CheckoutScreen() {
                     ) : (
                       <View style={styles.walletSplitInfo}>
                         <Text style={styles.walletApplyText}>
-                          {t.wallet.fromWallet(walletDeduction.toFixed(0))}
+                          {t.wallet.fromWallet(amount(walletDeduction))}
                         </Text>
                         <Text style={styles.walletRemainderText}>
-                          {t.wallet.via(amountToPay.toFixed(0), paymentMethod === "COD" ? (isPickup ? t.payment.payAtStore : t.payment.cod) : chosenUpiApp?.label ?? t.payment.online)}
+                          {t.wallet.via(amount(amountToPay), paymentMethod === "COD" ? (isPickup ? t.payment.payAtStore : t.payment.cod) : chosenUpiApp?.label ?? t.payment.online)}
                         </Text>
                       </View>
                     )
@@ -1080,7 +1092,7 @@ function CheckoutScreen() {
               <View style={styles.basketWarningBanner}>
                 <Ionicons name="warning-outline" size={16} color="#b45309" />
                 <Text style={styles.basketWarningText}>
-                  {t.wallet.lowWarning((walletBalance - walletDeduction).toFixed(0), basketTotal.toFixed(0))}
+                  {t.wallet.lowWarning(amount(walletBalance - walletDeduction), amount(basketTotal))}
                 </Text>
               </View>
             )}
@@ -1105,7 +1117,7 @@ function CheckoutScreen() {
                   </Text>
                   {useLoyalty && loyaltyDeduction > 0 && (
                     <Text style={styles.walletApplyText}>
-                      {t.loyalty.deduction(loyaltyDeduction.toFixed(0), loyaltyDeduction)}
+                      {t.loyalty.deduction(amount(loyaltyDeduction), loyaltyDeduction)}
                     </Text>
                   )}
                 </View>
@@ -1142,18 +1154,18 @@ function CheckoutScreen() {
               <View style={styles.savingsStrip}>
                 <Ionicons name="pricetag" size={14} color={colors.accentText} />
                 <Text style={styles.savingsText}>
-                  {t.bill.saving(totalSavings.toLocaleString("en-IN", { maximumFractionDigits: 0 }))}
+                  {t.bill.saving(amount(totalSavings))}
                 </Text>
               </View>
             )}
             <View style={styles.billRow}>
               <Text style={styles.billLabel}>{t.bill.itemTotal}</Text>
-              <Text style={styles.billValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
+              <Text style={styles.billValue}>{"\u20B9"}{amount(totalAmount)}</Text>
             </View>
             {couponDiscount > 0 && (
               <View style={styles.billRow}>
                 <Text style={styles.billLabel}>{t.bill.couponDiscount}</Text>
-                <Text style={styles.billSaving}>-{"\u20B9"}{couponDiscount.toFixed(0)}</Text>
+                <Text style={styles.billSaving}>-{"\u20B9"}{amount(couponDiscount)}</Text>
               </View>
             )}
             <View style={styles.billRow}>
@@ -1167,7 +1179,7 @@ function CheckoutScreen() {
               ) : freeDeliveryApplied ? (
                 <View style={{ alignItems: "flex-end" }}>
                   {rawDeliveryFee > 0 && (
-                    <Text style={styles.billStrikethrough}>{"\u20B9"}{rawDeliveryFee.toFixed(0)}</Text>
+                    <Text style={styles.billStrikethrough}>{"\u20B9"}{amount(rawDeliveryFee)}</Text>
                   )}
                   <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
                     <Text style={styles.billFree}>{common.free}</Text>
@@ -1179,7 +1191,7 @@ function CheckoutScreen() {
                   </View>
                 </View>
               ) : deliveryFee > 0 ? (
-                <Text style={styles.billValue}>{"\u20B9"}{deliveryFee.toFixed(0)}</Text>
+                <Text style={styles.billValue}>{"\u20B9"}{amount(deliveryFee)}</Text>
               ) : (
                 <Text style={styles.billValue}>{"\u20B9"}0</Text>
               )}
@@ -1187,13 +1199,13 @@ function CheckoutScreen() {
             {walletDeduction > 0 && (
               <View style={styles.billRow}>
                 <Text style={styles.billLabel}>{t.bill.wallet}</Text>
-                <Text style={styles.billSaving}>-{"\u20B9"}{walletDeduction.toFixed(0)}</Text>
+                <Text style={styles.billSaving}>-{"\u20B9"}{amount(walletDeduction)}</Text>
               </View>
             )}
             {loyaltyDeduction > 0 && (
               <View style={styles.billRow}>
                 <Text style={styles.billLabel}>{t.bill.loyalty(loyaltyDeduction)}</Text>
-                <Text style={styles.billSaving}>-{"\u20B9"}{loyaltyDeduction.toFixed(0)}</Text>
+                <Text style={styles.billSaving}>-{"\u20B9"}{amount(loyaltyDeduction)}</Text>
               </View>
             )}
             {!isPickup && deliveryLookup?.serviceable && deliveryLookup.distance != null && (
@@ -1224,7 +1236,7 @@ function CheckoutScreen() {
             <View style={styles.billDivider} />
             <View style={styles.billRow}>
               <Text style={styles.billGrandLabel}>{t.bill.toPay}</Text>
-              <Text style={styles.billGrandValue}>{"\u20B9"}{amountToPay.toFixed(0)}</Text>
+              <Text style={styles.billGrandValue}>{"\u20B9"}{amount(amountToPay)}</Text>
             </View>
             {loyaltyEarnPreview > 0 && (
               <>
@@ -1257,7 +1269,7 @@ function CheckoutScreen() {
           ) : (
             <>
               <View style={styles.placeOrderLeft}>
-                <Text style={styles.placeOrderTotal}>{"\u20B9"}{amountToPay.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</Text>
+                <Text style={styles.placeOrderTotal}>{"\u20B9"}{amount(amountToPay)}</Text>
                 {walletCoversAll ? (
                   <View style={styles.placeOrderWalletHint}>
                     <Ionicons name="wallet" size={11} color="rgba(255,255,255,0.85)" />
@@ -1266,7 +1278,7 @@ function CheckoutScreen() {
                 ) : walletDeduction > 0 ? (
                   <View style={styles.placeOrderWalletHint}>
                     <Ionicons name="wallet" size={11} color="rgba(255,255,255,0.85)" />
-                    <Text style={styles.placeOrderWalletHintText}>{t.footer.plusWallet(walletDeduction.toFixed(0))}</Text>
+                    <Text style={styles.placeOrderWalletHintText}>{t.footer.plusWallet(amount(walletDeduction))}</Text>
                   </View>
                 ) : (
                   <Text style={styles.placeOrderSubtext}>{t.footer.total}</Text>
@@ -1303,7 +1315,7 @@ function CheckoutScreen() {
       <ConfirmSheet
         visible={basketWarningVisible}
         title={t.wallet.lowTitle}
-        message={t.wallet.lowWarning((walletBalance - walletDeduction).toFixed(0), basketTotal.toFixed(0))}
+        message={t.wallet.lowWarning(amount(walletBalance - walletDeduction), amount(basketTotal))}
         icon="wallet-outline"
         iconColor="#f59e0b"
         confirmLabel={t.wallet.placeAnyway}
@@ -1371,7 +1383,7 @@ function CheckoutScreen() {
                               { color: lookup.serviceable ? "#16a34a" : "#dc2626" },
                             ]}>
                               {lookup.serviceable
-                                ? (lookup.deliveryFee ? `₹${lookup.deliveryFee.toFixed(0)}` : common.free)
+                                ? (lookup.deliveryFee ? `₹${amount(lookup.deliveryFee)}` : common.free)
                                 : t.address.notServiceable}
                             </Text>
                           </View>

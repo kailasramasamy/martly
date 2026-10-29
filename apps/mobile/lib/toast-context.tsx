@@ -1,4 +1,4 @@
-import { createContext, useContext, useCallback, useRef, useState } from "react";
+import { createContext, useContext, useCallback, useMemo, useRef, useState } from "react";
 import { Animated, View, Text, TouchableOpacity, StyleSheet, Platform, useWindowDimensions } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
@@ -93,6 +93,9 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
     });
   }, [opacity, translateY, hide]);
 
+  // Stable, so every toast shown doesn't re-render each screen that can show one
+  const value = useMemo(() => ({ show, setDockHeight }), [show]);
+
   const config = VARIANT_CONFIG[variantRef.current];
   const actions = actionsRef.current;
   const runAction = (action: ToastAction) => {
@@ -102,7 +105,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <ToastContext.Provider value={{ show, setDockHeight }}>
+    <ToastContext.Provider value={value}>
       {children}
       <Animated.View
         pointerEvents={actions.length > 0 ? "box-none" : "none"}

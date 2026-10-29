@@ -293,12 +293,7 @@ export const ReturnRequestShow = () => {
                     title: "Variant",
                     key: "variant",
                     render: (_, item) => {
-                      if (!item.orderItem?.variant) return "\u2014";
-                      const parts = [item.orderItem.variant.name];
-                      if (item.orderItem.variant.unitValue && item.orderItem.variant.unitType) {
-                        parts.push(`(${item.orderItem.variant.unitValue} ${item.orderItem.variant.unitType})`);
-                      }
-                      return parts.join(" ");
+                      return item.orderItem?.variant?.name ?? "\u2014";
                     },
                   },
                   {

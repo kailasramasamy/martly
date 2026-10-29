@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { amount } from "../../lib/money";
 import {
   View,
   Text,
@@ -217,7 +218,7 @@ function OrderSuccessScreen() {
               <Text style={styles.infoLabel}>{t.success.amount}</Text>
               <Text style={styles.infoValueBold}>
                 {"\u20B9"}
-                {Number(order.totalAmount).toFixed(0)}
+                {amount(Number(order.totalAmount))}
               </Text>
             </View>
 
@@ -228,7 +229,7 @@ function OrderSuccessScreen() {
                   <Text style={styles.infoLabel}>{t.success.walletUsed}</Text>
                   <Text style={styles.infoValueGreen}>
                     -{"\u20B9"}
-                    {walletUsed.toFixed(0)}
+                    {amount(walletUsed)}
                   </Text>
                 </View>
               </>
