@@ -77,7 +77,7 @@ export const CollectionList = () => {
           render={(v: string, record: CollectionRecord) => (
             <Space size={8}>
               {v}
-              {record.source === "AGENT" && <Tag color="purple">AI-curated</Tag>}
+              {record.source === "AGENT" && <Tag color="purple">Auto-curated</Tag>}
               {record.heroImageUrl && <HeroTag record={record} />}
             </Space>
           )}

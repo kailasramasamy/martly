@@ -7,6 +7,7 @@ import dayjs from "dayjs";
 import type { CatalogDraftSummary } from "@martly/shared/types";
 import { CATALOG_DRAFT_STATUS_CONFIG } from "../../constants/tag-colors";
 import { axiosInstance } from "../../providers/data-provider";
+import { ListingsMeter } from "./listings-meter";
 
 const { Text } = Typography;
 const POLL_MS = 5000;
@@ -100,7 +101,7 @@ function DraftTable({ rows, loading, pagination }: { rows: CatalogDraftSummary[]
         render={(_, r) => `₹${r.sellingPrice.toLocaleString("en-IN")} / ₹${r.mrp.toLocaleString("en-IN")}`}
       />
       <Table.Column<CatalogDraftSummary> title="Created by" dataIndex="createdByName" />
-      <Table.Column<CatalogDraftSummary> title="AI cost" dataIndex="costUsd" render={(v: number) => `$${v.toFixed(3)}`} />
+      <Table.Column<CatalogDraftSummary> title="Processing cost" dataIndex="costUsd" render={(v: number) => `$${v.toFixed(3)}`} />
       <Table.Column<CatalogDraftSummary> title="Created" dataIndex="createdAt" render={(v: string) => dayjs(v).format("D MMM, h:mm A")} />
     </Table>
   );
@@ -121,7 +122,8 @@ export const CatalogDraftList = () => {
   };
 
   return (
-    <List title="Catalog agent" breadcrumb={false}>
+    <List title="My uploads" breadcrumb={false}>
+      <ListingsMeter />
       <Space style={{ marginBottom: token.marginMD }} wrap>
         <Select allowClear placeholder="Status" style={{ width: 180 }} options={STATUS_OPTIONS} value={status} onChange={filter(setStatus)} />
         <Select

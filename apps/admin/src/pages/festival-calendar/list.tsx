@@ -74,7 +74,7 @@ const CuratedStatus = ({ collections }: { collections: FestivalCollection[] }) =
       {collections.map((c) => (
         <Link key={c.id} to={`/collections/edit/${c.id}`}>
           <Tag color={c.isActive ? "green" : "red"}>
-            {c.source === "AGENT" ? "AI " : ""}
+            {c.source === "AGENT" ? "Auto " : ""}
             {c.isActive ? "Active" : "Vetoed"} — Review
           </Tag>
         </Link>

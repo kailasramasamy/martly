@@ -108,6 +108,9 @@ const MODULE_GROUPS: ModuleGroup[] = [
       { resource: "marketing-pricing", label: "Ad pricing", icon: "pricetag-outline", href: "/manage/ad-pricing" },
       { resource: "marketing-orders", label: "Marketing revenue", icon: "trending-up-outline", href: "/manage/marketing-revenue" },
       { resource: "store-plans", label: "Store plans", icon: "ribbon-outline", href: "/manage/store-plans" },
+      { resource: "ledger-balances", label: "Platform payouts", icon: "swap-horizontal-outline", href: "/manage/platform-payouts" },
+      { resource: "towns", label: "Towns", icon: "location-outline", href: "/manage/towns" },
+      { resource: "list-glossary", label: "List glossary", icon: "language-outline", href: "/manage/list-glossary" },
     ],
   },
 ];

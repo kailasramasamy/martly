@@ -50,7 +50,7 @@ export const GlossaryFields = () => (
     <Form.Item
       label="Note"
       name="note"
-      extra="Anything the AI should know, e.g. raw gram flour, never roasted"
+      extra="Anything shopping lists should know, e.g. raw gram flour, never roasted"
       rules={[{ max: 120 }]}
     >
       <Input />

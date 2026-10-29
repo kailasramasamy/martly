@@ -1,13 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
-import { App, Button, Card, Col, Row, Select, Space, Statistic, Table, Tabs, Tag } from "antd";
+import { App, Card, Col, Row, Select, Space, Statistic, Table, Tag } from "antd";
 import { DollarOutlined } from "@ant-design/icons";
 import dayjs from "dayjs";
 import { AdProductKindLabels } from "@martly/shared/constants";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
 import { formatRupees } from "../promos/promo-utils";
-import { OrgPlanModal } from "./org-plan-modal";
-import type { Subscriber } from "./types";
 import { errorMessage, invoiceHref } from "./utils";
 
 const PAGE_SIZE = 25;
@@ -113,53 +111,9 @@ function OrdersTab() {
   );
 }
 
-function SubscribersTab() {
-  const { notification } = App.useApp();
-  const [rows, setRows] = useState<Subscriber[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [selected, setSelected] = useState<Subscriber | null>(null);
-
-  const load = useCallback(() => {
-    axiosInstance.get("/marketing-admin/subscribers")
-      .then((res) => setRows(res.data.data))
-      .catch((err) => notification.error({ message: errorMessage(err, "Could not load store plans") }))
-      .finally(() => setLoading(false));
-  }, [notification]);
-
-  useEffect(load, [load]);
-
-  const columns = [
-    {
-      title: "Organization",
-      render: (_: unknown, r: Subscriber) => (
-        <Space size={4} wrap>
-          {r.name}
-          {r.webStoreAlwaysOn && <Tag color="blue">Always on web</Tag>}
-          {r.unlimitedListings && <Tag color="purple">Unlimited products</Tag>}
-        </Space>
-      ),
-    },
-    { title: "Plan", dataIndex: "plan", render: (p: Subscriber["plan"]) => (p ? <Tag color="teal">{p.name}</Tag> : <Tag>Free</Tag>) },
-    { title: "Current period ends", dataIndex: "currentUntil", render: date },
-    { title: "Paid through", dataIndex: "paidThrough", render: date },
-    { title: "", render: (_: unknown, r: Subscriber) => <Button size="small" onClick={() => setSelected(r)}>Settings</Button> },
-  ];
-  return (
-    <>
-      <Table size="small" rowKey="id" loading={loading} dataSource={rows} columns={columns} pagination={{ pageSize: PAGE_SIZE }} />
-      <OrgPlanModal org={selected} onClose={() => setSelected(null)} onChanged={load} />
-    </>
-  );
-}
-
 export const MarketingRevenue = () => (
   <>
     <h2 style={{ marginTop: 0 }}>{sectionTitle(<DollarOutlined />, "Marketing revenue")}</h2>
-    <Tabs
-      items={[
-        { key: "orders", label: "Orders", children: <OrdersTab /> },
-        { key: "plans", label: "Store plans", children: <SubscribersTab /> },
-      ]}
-    />
+    <OrdersTab />
   </>
 );

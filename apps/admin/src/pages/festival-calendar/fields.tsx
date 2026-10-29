@@ -42,7 +42,7 @@ export const FestivalFields = ({ onNameChange }: { onNameChange?: (e: React.Chan
     <Form.Item
       label="Guidance"
       name="guidance"
-      extra="Hints for the AI curator, e.g. vegetarian, traditional dishes"
+      extra="Hints for picking products, e.g. vegetarian, traditional dishes"
     >
       <Input.TextArea rows={3} />
     </Form.Item>

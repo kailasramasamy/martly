@@ -3,7 +3,7 @@ import type { CatalogDraftShot } from "@martly/shared/types";
 
 const { Text } = Typography;
 
-const SOURCE_LABEL: Record<string, string> = { openai: "AI retouch", plain: "Plain", photoroom: "Photoroom" };
+const SOURCE_LABEL: Record<string, string> = { openai: "Retouched", plain: "Plain", photoroom: "Photoroom" };
 const VERDICT: Record<string, { color: string; label: string }> = {
   pass: { color: "green", label: "Matches" },
   minor_only: { color: "gold", label: "Minor differences" },

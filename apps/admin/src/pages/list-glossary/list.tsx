@@ -52,7 +52,7 @@ export const GlossaryList = () => {
   return (
     <List>
       <Typography.Paragraph type="secondary">
-        How shoppers say things in their language, and the word our catalog uses. The shopping-list AI reads these.
+        How shoppers say things in their language, and the word our catalog uses. Shopping lists use these.
       </Typography.Paragraph>
       <Space wrap style={{ marginBottom: 16 }}>
         <DebouncedSearch

@@ -686,7 +686,7 @@ export const StoreIntelligencePage = () => {
           },
           {
             key: "ai-description",
-            label: "AI Product Description",
+            label: "Product descriptions",
             children: <ReadableSection><AIDescriptionTab /></ReadableSection>,
           },
         ]}

@@ -116,7 +116,7 @@ export const SupportTicketShow = () => {
 
   const roleLabel = (role: string) => {
     if (role === "user") return "Customer";
-    if (role === "assistant") return "AI Support";
+    if (role === "assistant") return "Martly Support";
     return "Admin";
   };
 

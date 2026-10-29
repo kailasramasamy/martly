@@ -19,6 +19,8 @@ export const accessControlProvider: AccessControlProvider = {
     if (resource.startsWith("brand-portal") && payload.role !== "BRAND_PARTNER") return { can: false };
     // An organisation's own marketing plan; Martly's side is pricing, orders and brand campaigns
     if (resource === "marketing-plan" && payload.role === "SUPER_ADMIN") return { can: false };
+    // The full product form is for Martly staff; owners add their own products from photos in the app
+    if (resource === "products" && action === "create" && payload.role !== "SUPER_ADMIN") return { can: false };
     if (can(payload, resource, action as ResourceAction)) return { can: true };
     return { can: false, reason: "You don't have access to this section" };
   },

@@ -105,7 +105,7 @@ export function AiDraftModal({ storeId, action, onClose, onDone }: Props) {
     if (!action) return;
     axiosInstance.post(`/storefront/ai/${ENDPOINT[action]}`, { storeId })
       .then((res) => setDraft(res.data.data))
-      .catch((err) => setError(errorText(err, "The AI couldn't draft this right now")));
+      .catch((err) => setError(errorText(err, "We couldn't draft this right now")));
   }, [action, storeId]);
 
   const run = async (job: () => Promise<unknown>, done: string) => {

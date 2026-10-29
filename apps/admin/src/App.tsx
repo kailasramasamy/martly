@@ -13,6 +13,7 @@ import {
   TagOutlined,
   CheckSquareOutlined,
   ShoppingCartOutlined,
+  ShoppingOutlined,
   TrademarkOutlined,
   TeamOutlined,
   UserOutlined,
@@ -41,6 +42,7 @@ import {
   CustomerServiceOutlined,
   RobotOutlined,
   FundOutlined,
+  GlobalOutlined,
   RollbackOutlined,
   CrownOutlined,
   CalendarOutlined,
@@ -145,6 +147,7 @@ import { PromoCreate } from "./pages/promos/create";
 import { OfferList } from "./pages/offers/list";
 import { PriceReviewPage } from "./pages/price-review";
 import { StockCheckPage } from "./pages/stock-check";
+import { LooseStaplesPage } from "./pages/loose-staples";
 import { OfferCreate } from "./pages/offers/create";
 import { StorefrontList } from "./pages/storefront/list";
 import { StorefrontShow } from "./pages/storefront/show";
@@ -174,6 +177,7 @@ import { RecipeEdit } from "./pages/recipes/edit";
 import { MarketingPlan } from "./pages/marketing/plan";
 import { MarketingPricing } from "./pages/marketing/pricing";
 import { MarketingRevenue } from "./pages/marketing/revenue";
+import { StorePlans } from "./pages/marketing/store-plans";
 import { CampaignList } from "./pages/brand-campaigns/list";
 import { CampaignForm } from "./pages/brand-campaigns/form";
 import { CampaignShow } from "./pages/brand-campaigns/show";
@@ -350,6 +354,11 @@ export default function App() {
                 meta: { label: "Stock check", icon: <CheckSquareOutlined />, parent: "inventory" },
               },
               {
+                name: "loose-staples",
+                list: "/loose-staples",
+                meta: { label: "Loose staples", icon: <ShoppingOutlined />, parent: "inventory" },
+              },
+              {
                 name: "categories",
                 list: "/categories",
                 create: "/categories/create",
@@ -367,7 +376,7 @@ export default function App() {
                 name: "catalog-drafts",
                 list: "/catalog-drafts",
                 show: "/catalog-drafts/show/:id",
-                meta: { label: "Catalog agent", icon: <CameraOutlined />, parent: "inventory" },
+                meta: { label: "My uploads", icon: <CameraOutlined />, parent: "inventory" },
               },
               {
                 name: "products",
@@ -539,14 +548,23 @@ export default function App() {
                 meta: { label: "Marketing plan", icon: <DollarOutlined />, parent: "marketing" },
               },
               {
+                name: "platform",
+                meta: { label: "Platform", icon: <GlobalOutlined /> },
+              },
+              {
+                name: "store-plans",
+                list: "/store-plans",
+                meta: { label: "Store plans", icon: <CrownOutlined />, parent: "platform" },
+              },
+              {
                 name: "marketing-pricing",
                 list: "/marketing-pricing",
-                meta: { label: "Ad pricing", icon: <TagsOutlined />, parent: "marketing" },
+                meta: { label: "Ad pricing", icon: <TagsOutlined />, parent: "platform" },
               },
               {
                 name: "marketing-orders",
                 list: "/marketing-orders",
-                meta: { label: "Marketing revenue", icon: <FundOutlined />, parent: "marketing" },
+                meta: { label: "Marketing revenue", icon: <FundOutlined />, parent: "platform" },
               },
               {
                 name: "brand-campaigns",
@@ -554,12 +572,12 @@ export default function App() {
                 create: "/brand-campaigns/create",
                 edit: "/brand-campaigns/edit/:id",
                 show: "/brand-campaigns/show/:id",
-                meta: { label: "Brand campaigns", icon: <TrademarkOutlined />, parent: "marketing" },
+                meta: { label: "Brand campaigns", icon: <TrademarkOutlined />, parent: "platform" },
               },
               {
                 name: "brand-partners",
                 list: "/brand-partners",
-                meta: { label: "Brand partners", icon: <SolutionOutlined />, parent: "marketing" },
+                meta: { label: "Brand partners", icon: <SolutionOutlined />, parent: "platform" },
               },
               {
                 name: "brand-portal",
@@ -598,7 +616,7 @@ export default function App() {
               {
                 name: "ledger-balances",
                 list: "/ledger-balances",
-                meta: { label: "Payouts (platform)", icon: <DollarOutlined />, parent: "finance" },
+                meta: { label: "Platform payouts", icon: <DollarOutlined />, parent: "platform" },
               },
               {
                 name: "delivery",
@@ -788,6 +806,7 @@ export default function App() {
                 </Route>
                 <Route path="/price-review" element={<PriceReviewPage />} />
                 <Route path="/stock-check" element={<StockCheckPage />} />
+                <Route path="/loose-staples" element={<LooseStaplesPage />} />
                 <Route path="/offers">
                   <Route index element={<OfferList />} />
                   <Route path="create" element={<OfferCreate />} />
@@ -808,6 +827,7 @@ export default function App() {
                 <Route path="/marketing-plan" element={<MarketingPlan />} />
                 <Route path="/marketing-pricing" element={<MarketingPricing />} />
                 <Route path="/marketing-orders" element={<MarketingRevenue />} />
+                <Route path="/store-plans" element={<StorePlans />} />
                 <Route path="/brand-campaigns">
                   <Route index element={<CampaignList scope={PLATFORM_SCOPE} />} />
                   <Route path="calendar" element={<CampaignCalendar />} />

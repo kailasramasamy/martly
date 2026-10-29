@@ -25,7 +25,7 @@ function LabelFacts({ label }: { label: CatalogDraftLabel }) {
         <Descriptions.Item label="Ingredients" span={2}>{dash(label.ingredients)}</Descriptions.Item>
         <Descriptions.Item label="Description" span={2}>{dash(label.description)}</Descriptions.Item>
         <Descriptions.Item label="Tags" span={2}>{label.tags.map((t) => <Tag key={t}>{t}</Tag>)}</Descriptions.Item>
-        <Descriptions.Item label="AI notes" span={2}>{dash(label.notes)}</Descriptions.Item>
+        <Descriptions.Item label="Notes" span={2}>{dash(label.notes)}</Descriptions.Item>
       </Descriptions>
       {label.nutrition.length > 0 && (
         <Table
@@ -43,7 +43,7 @@ function LabelFacts({ label }: { label: CatalogDraftLabel }) {
 
 function Picks({ draft }: { draft: CatalogDraftDetail }) {
   return (
-    <Card title="AI picks" size="small">
+    <Card title="Our picks" size="small">
       <Descriptions column={1} size="small">
         <Descriptions.Item label="Brand">
           {draft.brand ? `${draft.brand.name} (${dash(draft.brandConfidence)})` : <Text type="secondary">No match</Text>}
@@ -59,7 +59,7 @@ function Picks({ draft }: { draft: CatalogDraftDetail }) {
 function Usage({ usage }: { usage: CatalogDraftDetail["usage"] }) {
   const total = usage.reduce((sum, u) => sum + u.usd, 0);
   return (
-    <Card title="AI usage" size="small">
+    <Card title="Processing usage" size="small">
       <Table
         size="small"
         pagination={false}

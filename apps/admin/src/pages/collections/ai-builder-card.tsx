@@ -54,16 +54,16 @@ export const AiBuilderCard = ({ form, onDrafted }: { form: FormInstance; onDraft
       message.success(`Drafted "${copy.title}" with ${products.length} products; check and edit before saving`);
     } catch (err) {
       if (!isAxiosError(err)) throw err;
-      message.error(err.response?.data?.message ?? "The AI draft failed");
+      message.error(err.response?.data?.message ?? "The draft failed");
     } finally {
       setBusy(false);
     }
   };
 
   return (
-    <Card title={sectionTitle(<RobotOutlined />, "Build with AI")} size="small" style={{ marginBottom: 16 }}>
+    <Card title={sectionTitle(<RobotOutlined />, "Build a collection for me")} size="small" style={{ marginBottom: 16 }}>
       <Typography.Paragraph type="secondary" style={{ marginBottom: 12 }}>
-        Describe the collection. The AI picks in-stock products across the right aisles and writes the title and subtitle in
+        Describe the collection. We pick in-stock products across the right aisles and write the title and subtitle in
         English and Tamil. Drafting is free; the banner is drawn when you save.
       </Typography.Paragraph>
       <Space direction="vertical" style={{ width: "100%" }}>
@@ -78,7 +78,7 @@ export const AiBuilderCard = ({ form, onDrafted }: { form: FormInstance; onDraft
           placeholder="e.g. Rainy-evening snacks and hot drinks, or Everything for a South Indian breakfast"
         />
         <Button type="primary" icon={<RobotOutlined />} loading={busy} disabled={brief.trim().length < 3 || (isSuperAdmin && !organizationId)} onClick={draft}>
-          Draft with AI
+          Draft it
         </Button>
       </Space>
     </Card>

@@ -9,7 +9,7 @@ import { QueueTab } from "./queue-tab";
 
 export const PlatformPayoutsPage = () => (
   <>
-    <h2 style={{ marginTop: 0 }}>{sectionTitle(<SwapOutlined />, "Payouts (platform)")}</h2>
+    <h2 style={{ marginTop: 0 }}>{sectionTitle(<SwapOutlined />, "Platform payouts")}</h2>
     <Tabs
       destroyOnHidden
       items={[

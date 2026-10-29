@@ -113,6 +113,8 @@ export const RESOURCE_PERMISSIONS = {
   "store-plans": "PLATFORM",
   "brand-campaigns": "PLATFORM",
   "brand-partners": "PLATFORM",
+  towns: "PLATFORM",
+  "list-glossary": "PLATFORM",
 
   // Brand portal (brand partners advertising across the network)
   "brand-portal": "BRAND",
