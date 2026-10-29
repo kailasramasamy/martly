@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 import { useSelect } from "@refinedev/antd";
 import { useCan } from "@refinedev/core";
-import { App, Button, Card, Empty, Popconfirm, Select, Space, Spin, Tag, Typography } from "antd";
+import { App, Button, Card, Empty, Popconfirm, Select, Space, Spin, Tag, Typography, theme } from "antd";
 import { DeleteOutlined, EditOutlined, MessageOutlined, PlusOutlined } from "@ant-design/icons";
 import { isAxiosError } from "axios";
 import { ReadableSection } from "../../components/ReadableSection";
 import { sectionTitle } from "../../theme";
-import { errorMessage, kindOf, storeVoice, type EditablePost, type StorePostRow } from "./api";
+import { errorMessage, kindOf, storeVoice, type EditablePost, type PostProduct, type StorePostRow } from "./api";
 import { PostDrawer } from "./PostDrawer";
 
 const { Text, Paragraph } = Typography;
@@ -51,6 +51,27 @@ function usePostActions(reload: () => Promise<void>) {
   return { drawer, setDrawer, edit, remove };
 }
 
+// Each tagged product as shoppers see it: photo, name, size and today's price
+function ProductTile({ sp }: { sp: PostProduct }) {
+  const { token } = theme.useToken();
+  const image = sp.product.imageUrl ?? sp.variant.imageUrl;
+  const { effectivePrice, originalPrice } = sp.pricing;
+  return (
+    <div style={{ border: `1px solid ${token.colorBorderSecondary}`, borderRadius: 10, padding: 8 }}>
+      {/* Multiply blends white pack-shot backdrops into the grey well */}
+      <div style={{ height: 88, borderRadius: 8, background: "#f3f5f8", padding: 6, marginBottom: 6, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        {image && <img src={image} alt={sp.product.name} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", mixBlendMode: "multiply" }} />}
+      </div>
+      <Paragraph strong ellipsis={{ rows: 2, tooltip: sp.product.name }} style={{ fontSize: 13, lineHeight: "18px", minHeight: 36, marginBottom: 2 }}>{sp.product.name}</Paragraph>
+      <Text type="secondary" style={{ fontSize: 12 }}>{sp.variant.name}</Text>
+      <div>
+        <Text strong>{`\u20B9${Math.round(effectivePrice)}`}</Text>
+        {originalPrice > effectivePrice && <Text delete type="secondary" style={{ fontSize: 12, marginLeft: 6 }}>{`\u20B9${Math.round(originalPrice)}`}</Text>}
+      </div>
+    </div>
+  );
+}
+
 function PostCard({ post, canEdit, onEdit, onDelete }: { post: StorePostRow; canEdit: boolean; onEdit: () => void; onDelete: () => void }) {
   const live = new Date(post.expiresAt) > new Date();
   const kind = kindOf(post.kind);
@@ -69,8 +90,13 @@ function PostCard({ post, canEdit, onEdit, onDelete }: { post: StorePostRow; can
       <Paragraph strong style={{ fontSize: 15, marginBottom: 6 }}>{post.text}</Paragraph>
       {Object.values(post.translations ?? {}).map((tr) => tr && <Paragraph key={tr.text} type="secondary" style={{ marginBottom: 6 }}>{tr.text}</Paragraph>)}
       <Text type="secondary" style={{ fontSize: 12 }}>
-        {`${when(post.createdAt)} · ${post.products.length ? post.products.map((p) => p.product.name).join(", ") : "No products in stock"}`}
+        {`Posted ${when(post.createdAt)}${post.products.length ? "" : " · No tagged products in stock"}`}
       </Text>
+      {post.products.length > 0 && (
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))", gap: 8, marginTop: 10 }}>
+          {post.products.map((sp) => <ProductTile key={sp.id} sp={sp} />)}
+        </div>
+      )}
     </Card>
   );
 }
