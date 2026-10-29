@@ -1,22 +1,118 @@
 {
-  "brand": "Kurkure (PepsiCo)",
-  "manufacturer": "PepsiCo India",
-  "feed": "kurkure-feed.json",
-  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kurkure-pepsico/logo-620990ee.png",
-  "themeColor": "#F26F21",
-  "themeColorSecondary": "#1E5BA8",
-  "namePrefix": "Kurkure ",
-  "foodType": "VEG",
-  "exclude": [],
-  "aliases": {},
-  "rules": [
-    {
-      "match": "^Masala\\ Munch$",
-      "path": [
-        "Snacks & Packaged Foods",
-        "Chips & Crisps",
-        "Kurkure & Extruded Snacks"
-      ]
-    }
-  ]
+ "brand": "Kurkure (PepsiCo)",
+ "manufacturer": "PepsiCo India",
+ "feed": "kurkure-feed.json",
+ "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kurkure-pepsico/logo-620990ee.png",
+ "themeColor": "#F26F21",
+ "themeColorSecondary": "#1E5BA8",
+ "namePrefix": "Kurkure ",
+ "foodType": "VEG",
+ "exclude": [],
+ "aliases": {},
+ "rules": [
+  {
+   "match": "^Chilli\\ Chatka$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Kurkure & Extruded Snacks"
+   ]
+  },
+  {
+   "match": "^Green\\ Chutney\\ Style$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Kurkure & Extruded Snacks"
+   ]
+  },
+  {
+   "match": "^Naughty\\ Tomato$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Kurkure & Extruded Snacks"
+   ]
+  },
+  {
+   "match": "^Solid\\ Masti\\ Masala\\ Twisteez$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Kurkure & Extruded Snacks"
+   ]
+  },
+  {
+   "match": "^Hyderabadi\\ Hungama$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Kurkure & Extruded Snacks"
+   ]
+  },
+  {
+   "match": "^Schezwan\\ Chutney$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Kurkure & Extruded Snacks"
+   ]
+  },
+  {
+   "match": "^Chaat\\ Fills\\ Bhel\\ Chutney\\ Twist$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Kurkure & Extruded Snacks"
+   ]
+  },
+  {
+   "match": "^Chaat\\ Fills\\ Papdi\\ Chaat\\ Twist$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Kurkure & Extruded Snacks"
+   ]
+  },
+  {
+   "match": "^Chatpata\\ Masala\\ Jowar\\ Puffs$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Puffs & Rings"
+   ]
+  },
+  {
+   "match": "^Yummy\\ Cheese\\ Puffcorn$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Puffs & Rings"
+   ]
+  },
+  {
+   "match": "^Playz\\ Yummy\\ Cheese\\ Puffcorn$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Puffs & Rings"
+   ]
+  },
+  {
+   "match": "^Playz\\ Puffs\\ Masala\\ Munch$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Puffs & Rings"
+   ]
+  },
+  {
+   "match": "^Masala\\ Munch$",
+   "path": [
+    "Snacks & Packaged Foods",
+    "Chips & Crisps",
+    "Kurkure & Extruded Snacks"
+   ]
+  }
+ ]
 }

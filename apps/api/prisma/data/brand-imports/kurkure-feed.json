@@ -32,6 +32,25 @@
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40207351_8-kurkure-namkeen-masala-munch.jpg"
     }
+   },
+   {
+    "title": "40g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/294305_15-kurkure-namkeen-masala-munch.jpg"
+    },
+    "barcode": "8901491361026"
+   },
+   {
+    "title": "166g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003258_6-kurkure-namkeen-masala-munch.jpg"
+    }
    }
   ],
   "images": [
@@ -76,6 +95,730 @@
     "Trans Fat": "0.1g",
     "Sodium": "694 mg"
    },
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Chatka",
+  "handle": "chilli-chatka",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "17g",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40068079_5-kurkure-namkeen-chilli-chatka.jpg"
+    },
+    "barcode": "8901491104463"
+   },
+   {
+    "title": "36g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/294267_14-kurkure-namkeen-chilli-chatka.jpg"
+    }
+   },
+   {
+    "title": "72g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/102764_19-kurkure-namkeen-chilli-chatka.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068079_5-kurkure-namkeen-chilli-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068079-2_7-kurkure-namkeen-chilli-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068079-3_7-kurkure-namkeen-chilli-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068079-4_7-kurkure-namkeen-chilli-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068079-5_7-kurkure-namkeen-chilli-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294267_14-kurkure-namkeen-chilli-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/102764_19-kurkure-namkeen-chilli-chatka.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Spice up your life with Kurkure Chilli Chatka!\nKurkure is a crunchy, new-age pack namkeen snack brand which symbolises light-hearted fun. Embodying the spirit of India, Kurkure has found a home in millions of hearts and minds and enjoys the position of a strong brand in India.\nMade with trusted kitchen ingredients - 100% veg - all the raw materials used in KurKure comply with the Food Safety & Standards Act & Regulations 2006 and rules that govern the manufacture, distribution and sale of KurKure.",
+   "manufacturerName": "N1 PepsiCo India Holdings Pvt. Ltd. Village Channo",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Green Chutney Style",
+  "handle": "green-chutney-style",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "17g",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40068080_3-kurkure-namkeen-green-chutney-rajasthani-style.jpg"
+    }
+   },
+   {
+    "title": "36g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/294266_14-kurkure-namkeen-green-chutney-rajasthani-style.jpg"
+    }
+   },
+   {
+    "title": "72g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/148392_16-kurkure-namkeen-green-chutney-rajasthani-style.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068080_3-kurkure-namkeen-green-chutney-rajasthani-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068080-2_3-kurkure-namkeen-green-chutney-rajasthani-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068080-3_3-kurkure-namkeen-green-chutney-rajasthani-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068080-4_3-kurkure-namkeen-green-chutney-rajasthani-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068080-5_3-kurkure-namkeen-green-chutney-rajasthani-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294266_14-kurkure-namkeen-green-chutney-rajasthani-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/148392_16-kurkure-namkeen-green-chutney-rajasthani-style.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These crunchy snacks are flavored with a spicy green chutney flavor in a North Indian Rajasthani style.\nAbout the brand-Kurkure is a crunchy, new-age Pack namkeen snack brand which symbolizes light-hearted fun. Embodying Pack the spirit of India, Kurkure has found a home in millions of hearts and minds and enjoys the position of a strong love mark brand in India.\nMade with trusted kitchen ingredients- 100% vegetarian\nAll the raw materials used in Kurkure comply with The Food Safety & Standards Act & Regulations 2006 and rules that govern the manufacture, distribution and sale of Kurkure.",
+   "manufacturerName": "N1 PepsiCo India Holdings Pvt. Ltd. Village channo",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Naughty Tomato",
+  "handle": "naughty-tomato",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "17g",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40068082_2-kurkure-namkeen-naughty-tomatoes.jpg"
+    }
+   },
+   {
+    "title": "36g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40068082_2-kurkure-namkeen-naughty-tomatoes.jpg"
+    }
+   },
+   {
+    "title": "68g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/247759_16-kurkure-namkeen-naughty-tomatoes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068082_2-kurkure-namkeen-naughty-tomatoes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068082-2_2-kurkure-namkeen-naughty-tomatoes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068082-3_2-kurkure-namkeen-naughty-tomatoes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068082-4_2-kurkure-namkeen-naughty-tomatoes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068082-5_2-kurkure-namkeen-naughty-tomatoes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/247759_16-kurkure-namkeen-naughty-tomatoes.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Solid Masti Masala Twisteez",
+  "handle": "solid-masti-masala-twisteez",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/294294_15-kurkure-namkeen-solid-masti-twisteez.jpg"
+    },
+    "barcode": "8901491380010"
+   },
+   {
+    "title": "61g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40070746_7-kurkure-namkeen-solid-masti-twisteez.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294294_15-kurkure-namkeen-solid-masti-twisteez.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294294-2_4-kurkure-namkeen-solid-masti-twisteez.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294294-3_4-kurkure-namkeen-solid-masti-twisteez.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294294-4_4-kurkure-namkeen-solid-masti-twisteez.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294294-5_3-kurkure-namkeen-solid-masti-twisteez.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294294-6_3-kurkure-namkeen-solid-masti-twisteez.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294294-7_2-kurkure-namkeen-solid-masti-twisteez.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294294-8_1-kurkure-namkeen-solid-masti-twisteez.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible masala twist of Kurkure Solid Masti Twisteez, a delightful crunchy snack that's perfect for satisfying your munchy cravings. Crafted with trusted kitchen ingredients and vegetarian, these light-hearted and fun Kurkure snacks embody the spirit of India, capturing the hearts and minds of millions. Boasting a delicious masala flavour and a satisfying crunchy texture, Kurkure Twisteez are made with quality ingredients that comply with the highest food safety standards. Whether you're looking for a tasty treat or a shareable snack, these Kurkure Twisteez are sure to delight your senses and leave you craving more.",
+   "ingredients": "Edible Vegetable Oil (Palmolein), Edible Starch, Besan (20.1%), Rice Flour (15.3%), Potato Powder, Iodised Salt, *Seasoning (~Spices and Condiments, Maltodextrin, Iodised Salt, Black Salt, Milk Solids, Acidity Regulators (330, 296, 334), Flavour (Natural and Nature Identical Flavouring Substances), Sugar, Tomato Powder), *As flavouring agent., ~Contains Onion, ALLERGEN ADVICE: Contains Nuts, Milk, May Contain Sulphite",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20 g",
+    "Energy": "528 kcal",
+    "Protein": "8.6 g",
+    "Carbohydrate": "58.7 g",
+    "Total Sugars": "0.5 g",
+    "Added Sugars": "0.1 g",
+    "Total Fat": "28.7 g",
+    "Saturated Fat": "12.9 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "878 mg",
+    "%RDA Per Serve": "5%"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "N1 PepsiCo India Holdings Pvt. Ltd. Village channo",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hyderabadi Hungama",
+  "handle": "hyderabadi-hungama",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "45g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/294304_6-kurkure-namkeen-hyderabadi-hungama.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294304_6-kurkure-namkeen-hyderabadi-hungama.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294304-2_1-kurkure-namkeen-hyderabadi-hungama.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294304-3_1-kurkure-namkeen-hyderabadi-hungama.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294304-4_1-kurkure-namkeen-hyderabadi-hungama.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the crunch of Kurkure in a Hyderabadi flavor with your family and friends!About the brand-Kurkure is a crunchy, new-age Pack namkeen snack brand which symbolizes light-hearted fun. Embodying the spirit of India, Kurkure has found a home in millions of hearts and minds and enjoys the position of a strong brand in India.Made with trusted kitchen ingredients- 100% vegAll the raw materials used in Kurkure comply with The Food Safety & Standards Act & Regulations 2006 and rules that govern the manufacture, distribution and sale of Kurkure.",
+   "ingredients": "Rice meal, edible vegetable oil, corn meal, salt, sugar, spices and condiments, black salt, tomato powder, citric acid and tartaric acid.",
+   "manufacturerName": "N1 PepsiCo India Holdings Pvt. Ltd. Village channo",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Schezwan Chutney",
+  "handle": "schezwan-chutney",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "33g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340557_3-kurkure-schezwan-chutney-flavour-namkeen.jpg"
+    },
+    "barcode": "8901491002905"
+   },
+   {
+    "title": "72g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40315958_5-kurkure-sizzlin-hot-namkeen.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340557_3-kurkure-schezwan-chutney-flavour-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340557-2_3-kurkure-schezwan-chutney-flavour-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340557-3_3-kurkure-schezwan-chutney-flavour-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340557-4_3-kurkure-schezwan-chutney-flavour-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340557-5_3-kurkure-schezwan-chutney-flavour-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340557-6_2-kurkure-schezwan-chutney-flavour-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340557-7_2-kurkure-schezwan-chutney-flavour-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340557-8_2-kurkure-schezwan-chutney-flavour-namkeen.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Spice up your snack time with Kurkure Schezwan Chutney Flavour Namkeen! Crispy, crunchy, and packed with the bold and fiery kick of Schezwan chutney, every bite delivers a perfect blend of spice and tangy goodness. Ideal for those who love a flavour-packed munch, this namkeen is sure to satisfy your cravings with every crunch.",
+   "ingredients": "Cereal Products (66.2%) (Rice Meal (43.4%), Corn Meal (22.8%)), Edible Vegetable Oil (Palmolein), Seasoning (Sugar, Spices and Condiments, Iodised Salt, Edible Vegetable Oil (Canola, Palm and Sunflower), Acidity Regulator (296, 330), Edible Starch, Salt Substitute (Potassium Chloride), Maltodextrin, Natural And Nature Identical Flavouring Substances, Flavour Enhancers (627, 631), Colour (150d)), Gram Meal (0.5%)",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy": "557 kcal",
+    "Protein": "5.5 g",
+    "Carbohydrate": "57.8 g",
+    "Total Sugars": "4.1 g",
+    "Added Sugars": "3.5 g",
+    "Total Fat": "33.7 g",
+    "Saturated Fat": "15.2 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "684 mg"
+   },
+   "manufacturerName": "& Marketed by",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chaat Fills Bhel Chutney Twist",
+  "handle": "chaat-fills-bhel-chutney-twist",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40319630_1-kurkure-chaat-fills-bhel-chutney-twist.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319630_1-kurkure-chaat-fills-bhel-chutney-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319630-2_1-kurkure-chaat-fills-bhel-chutney-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319630-3_1-kurkure-chaat-fills-bhel-chutney-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319630-4_1-kurkure-chaat-fills-bhel-chutney-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319630-5_1-kurkure-chaat-fills-bhel-chutney-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319630-6_1-kurkure-chaat-fills-bhel-chutney-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319630-7_1-kurkure-chaat-fills-bhel-chutney-twist.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A never-before-savoury-filled salty snack built with multi-textural inspiration from Indian street food, Kurkure Chaat Fills offers an irresistible combination of flavours and textures. Bite into the New Kurkure Chaat Fills, with a crispy bhel-like taste outside, and the tangy imli chutney filling inside, and experience a burst of street food magic in every bite. Enjoy the perfect fusion of crunch and tang that makes these snacks a must-try for all chaat lovers and snack enthusiasts alike.",
+   "ingredients": "Cereal Products (Corn Meal, Rice Meal, Rice Flour, Wheat Fibre), Edible Vegetable Oil (Palmolein, Palm Oil, Sugar, Maltodextrin, Milk Solids, *Spices, Condiments & Herb, Iodised Salt, Emulsifier (471, 322), Acidity Regulator (334, 330, 296), Tamarind Powder, Flavours (Natural & Nature Identical Flavouring Substances, Colour (150d, 160), Hydrogenated Vegetable Fat, Firming Agent (170i), Tomato Powder (0.1%), Antioxidant (307). As A Flavouring Agent; Contains Onion And Garlic. Allergen Advice: Contains Wheat, Milk & Soy.",
+   "nutritionalInfo": {
+    "Energy": "517 kcal",
+    "Protein": "5.1 g",
+    "Carbohydrate": "62.8 g",
+    "Added Sugar": "15.1 g",
+    "Total Sugar": "19.1 g",
+    "Total Fat": "27.3 g",
+    "Saturated Fat": "13.4 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "490 mg"
+   },
+   "manufacturerName": "PEPSICO INDIA HOLDING PVT LTD - FOODS",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chaat Fills Papdi Chaat Twist",
+  "handle": "chaat-fills-papdi-chaat-twist",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40319629_1-kurkure-chaat-fills-papdi-chaat-twist.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319629_1-kurkure-chaat-fills-papdi-chaat-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319629-2_1-kurkure-chaat-fills-papdi-chaat-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319629-3_1-kurkure-chaat-fills-papdi-chaat-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319629-4_1-kurkure-chaat-fills-papdi-chaat-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319629-5_1-kurkure-chaat-fills-papdi-chaat-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319629-6_1-kurkure-chaat-fills-papdi-chaat-twist.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319629-7_1-kurkure-chaat-fills-papdi-chaat-twist.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A never-before savoury-filled salty snack built with the multi-textural inspiration of Indian street food, Kurkure Chaat Fills offers an irresistible combination of flavours and textures. Bite into the New Kurkure Chaat Fills with their crispy papdi taste exterior and the tantalizing masaledaar chaat filling inside, and experience a burst of street food magic in every bite. Enjoy the perfect fusion of crunch and spice that makes these snacks a must-try for all chaat lovers and snack enthusiasts alike.",
+   "ingredients": "Cereal Products (Corn Meal, Rice Meal, Wheat Fibre), Edible Vegetable Oil (Palmolein, Palm, Coconut, Sunflower Oil), Sugar, Milk Solids, Curd Powder (3%), Maltodextrin, *Spices & Condiments, Emulsiers (471, 322, 414), lodised Salt, Acidity Regulators (330, 270, 296, 334), Flavours (Natural & Nature Identical Flavouring Substances), Tamarind Powder (0.26%), Color (160c), Firming Agent (170i), Hydrogenated Vegetable Fat, Flavour Enhancer (627, 631), Hydrolysed Vegetable Protein.*As Flavouring Agent; Contains Onion and Garlic. Allergen Advice: Contains Wheat, Mink & Soy.",
+   "nutritionalInfo": {
+    "Energy": "501 kcal",
+    "Protein": "5.6 g",
+    "Carbohydrate": "64.4 g",
+    "Added Sugar": "15.6 g",
+    "Total Sugar": "20.3 g",
+    "Total Fat": "24.5 g",
+    "Saturated Fat": "12.1 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "543.9 mg"
+   },
+   "manufacturerName": "PEPSICO INDIA HOLDING PVT LTD - FOODS",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chatpata Masala Jowar Puffs",
+  "handle": "chatpata-masala-jowar-puffs",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "56.2g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363472_1-kurkure-chatpata-masala-jowar-puffs.jpg"
+    },
+    "barcode": "8901491100045"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363472_1-kurkure-chatpata-masala-jowar-puffs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363472-2_1-kurkure-chatpata-masala-jowar-puffs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363472-3_1-kurkure-chatpata-masala-jowar-puffs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363472-4_1-kurkure-chatpata-masala-jowar-puffs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363472-5_1-kurkure-chatpata-masala-jowar-puffs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363472-6_1-kurkure-chatpata-masala-jowar-puffs.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Chatpata Masala Jowar Puffs are made from jowar (millet) and offer a light, crispy texture with a bold, tangy spice blend. Baked rather than fried and prepared without palm oil, these puffs deliver a satisfying crunch in every bite. Seasoned with a lively chatpata masala flavour, they are a vegetarian snack, ideal for sharing or enjoying anytime.",
+   "ingredients": "Millet (Jowar Meal (27%)), Cereal Products (Corn Meal (26%), Rice Meal (18%)), Edible Vegetable Oil (Rice Bran Oil), *Seasoning (~Spices and Condiments, Sugar, lodised Salt, Maltodextrin, Flavour (Natural and Nature Identical Flavouring Substances), Salt Substitute (Potassium Chloride), Black Salt, Hydrolysed Vegetable Protein, Tomato Powder, Acidity Regulator (330), Lemon Powder, Yeast Extract, Flavour Enhancers (627, 631)), Firming Agent (170(i)), Emulsifier (471).*As Flavouring Agent. ~Contains Onion and Garlic. Allergen: Contains Soy. May Contain Wheat.",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Yummy Cheese Puffcorn",
+  "handle": "yummy-cheese-puffcorn",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15g",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40078996_6-kurkure-puffcorn-yummy-cheese.jpg"
+    }
+   },
+   {
+    "title": "28g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100566580_3-kurkure-namkeen-puffcorn-yummy-cheese.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40078996_6-kurkure-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40078996-2_2-kurkure-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40078996-3_2-kurkure-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40078996-4_2-kurkure-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40078996-5_2-kurkure-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40078996-6_2-kurkure-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100566580_3-kurkure-namkeen-puffcorn-yummy-cheese.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kurkure Puffcorn is a tasty, light & fluffy snack with an irresistible mast chaat flavour, sparking fun & playful moments between kids & their mothers. About the brand-Kurkure is a crunchy, new-age Pack namkeen snack brand that symbolizes light-hearted fun. Embodying the spirit of India, Kurkure has found a home in millions of hearts and minds and enjoys the position of a strong brand in India. Made with trusted kitchen ingredients- 100% veg All the raw materials used in Kurkure comply with The Food Safety & Standards Act & Regulations 2006 and rules that govern the manufacture, distribution and sale of Kurkure.",
+   "ingredients": "Corn Meal, Edible Vegetable Oil Palmolein Oil, Rice Meal 13.5%, Sugar, Gram Meal 3.5%, Salt, Spices & Condiments (Onion Powder, Chilli Powder, Garlic Powder, Black Pepper Powder), Milk Solids, Calcium Carbonate INS 170 (i)), Fructose, Cheese Powder (0.2%), Citric Acid INS 330)",
+   "storageInstructions": "Store in a cool, dry and hygienic place. Keep away from direct sunlight. Once opened, keep in airtight container.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Playz Yummy Cheese Puffcorn",
+  "handle": "playz-yummy-cheese-puffcorn",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "19",
+    "compare_at_price": "19",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003266_14-kurkure-namkeen-puffcorn-yummy-cheese.jpg"
+    }
+   },
+   {
+    "title": "84g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287118_2-kurkure-playz-puffcorn-yummy-cheese-namkeen.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003266_14-kurkure-namkeen-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003266-2_10-kurkure-namkeen-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003266-3_9-kurkure-namkeen-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003266-4_9-kurkure-namkeen-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003266-5_8-kurkure-namkeen-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003266-6_8-kurkure-namkeen-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003266-7_7-kurkure-namkeen-puffcorn-yummy-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287118_2-kurkure-playz-puffcorn-yummy-cheese-namkeen.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kurkure Namkeen Puffcorn in Yummy Cheese Flavour offers a delightful snacking experience. These light and airy puffcorns are seasoned with a cheesy twist that appeals to cheese lovers. Perfect for munching at any time, Kurkure Puffcorns combine a crispy texture with a burst of savoury cheese flavour. Packed with the goodness of corn and seasoned to perfection, they're ideal for sharing with friends or enjoying as a quick snack. Kurkure Namkeen Puffcorn Yummy Cheese Flavour promises a satisfying crunch and irresistible taste that makes it a favourite among snack enthusiasts. It is a light and fluffy snack that has an irresistibly yummy cheese flavour. This delicious cheese flavour will tantalise your taste buds. The immense flavour of this puffcorn will leave you craving for more. It will create a playful bond between children and their mothers. It has an irresistible taste and is perfectly seasoned so that you can enjoy the flavour in every bite.",
+   "ingredients": "Cereal Products (67%) (Corn Meal (53%), Rice Meal), Edible Vegetable Oil (Palmolein), Seasoning (Sugar, Iodised Salt, Maltodextrin, Spices and Condiments, Milk Solids, Cheese, Salt Substitute (Potassium Chloride), Flavour (Natural and Nature Identical Flavouring Substances), Flavour Enhancers (627, 631), Acidity Regulators (296, 330), Emulsifying & Stabilising Agent (331(iii), 471, 327), Gram Meal, Firming Agent (170(i)), Iodised Salt",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "536 kcal",
+    "Protein": "6.4g",
+    "Carbohydrates": "66.5g",
+    "Total Sugars": "4.5g",
+    "Added Sugars": "4.1g",
+    "Total Fat": "27.1g",
+    "Saturated Fat": "12.2g",
+    "Trans Fat": "0.1g",
+    "Sodium": "770 mg"
+   },
+   "manufacturerName": "N2 PepsiCo India Holdings Pvt. Ltd",
+   "fssaiLicense": "10014064000435"
+  }
+ },
+ {
+  "title": "Playz Puffs Masala Munch",
+  "handle": "playz-puffs-masala-munch",
+  "vendor": "Kurkure (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "55g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40315957_1-kurkure-playz-puffs-masala-munch-namkeen.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315957_1-kurkure-playz-puffs-masala-munch-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315957-2_1-kurkure-playz-puffs-masala-munch-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315957-3_1-kurkure-playz-puffs-masala-munch-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315957-4_1-kurkure-playz-puffs-masala-munch-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315957-5_1-kurkure-playz-puffs-masala-munch-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315957-6_1-kurkure-playz-puffs-masala-munch-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315957-7_1-kurkure-playz-puffs-masala-munch-namkeen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315957-8_1-kurkure-playz-puffs-masala-munch-namkeen.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible taste of Kurkure Playz Puffs Masala Munch Namkeen, a delectable variation of the classic masala munch flavour. Cherished by consumers, it carries the legacy of the iconic masala munch taste. Crafted using our innovative Triple Turbo Technology, this snack guarantees a fuller bag and an enhanced snacking experience. Immerse yourself in the robust flavours of our Playz Puffs, delivering the perfect balance of crunchiness and zesty masala goodness.",
+   "ingredients": "Corn Meal, Edible Vegetable Oil (Palmolein Oil), Seasoning (Spices and Condiments, lodised Salt, Sugar, Flavour (Natural and Nature Identical Flavouring Substances), Black Salt, Tomato Powder, Acidity Regulators (330, 296, 3343, Colour (160c), Maltodextrin), Rice Meal, Gram Meal, Whole Wheat Flour (Atta), Firming Agent (170(i)).",
+   "manufacturerName": "PepsiCo India Pvt. Ltd. P.O. Box",
+   "fssaiLicense": "10014064000435",
    "countryOfOrigin": "India"
   }
  }
