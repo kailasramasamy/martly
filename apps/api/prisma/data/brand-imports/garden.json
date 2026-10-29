@@ -1,0 +1,182 @@
+{
+  "brand": "Garden",
+  "manufacturer": "CavinKare Pvt. Ltd., Chennai",
+  "feed": "garden-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/garden/logo-f4fd2c5c.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#0B7A3B",
+  "namePrefix": "Garden ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^2\\ in\\ 1\\ Instant\\ Combo\\ Pack\\ Bhelpuri\\ \\&\\ Sevpuri$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Bhavnagri\\ Gathia$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Bombay\\ Puri$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Murukku$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Diet\\ Bhel\\ Mumbai\\ Special$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Diet\\ Chivda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Farali\\ Chivda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Instant\\ Bhel\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Bhel$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Mahalaxmi\\ Chivda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Mini\\ Bhakarwadi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Mix\\ Farsan$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Moong\\ Dal$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Nylon\\ Sev$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Onion\\ Pakoda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Potato\\ Chips\\ Premium\\ Salted$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Raita\\ Boondi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Sabudana\\ Chivda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Nuts$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Tea\\ Time\\ Puri$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Yellow\\ Banana\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Banana Chips"
+      ]
+    }
+  ]
+}
