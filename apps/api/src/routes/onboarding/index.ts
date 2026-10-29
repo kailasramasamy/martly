@@ -13,6 +13,7 @@ import { applyCatalog, unpricedProposal } from "../../services/onboarding/catalo
 import { copyStorefront } from "../../services/onboarding/storefront-copy.js";
 import { addTeamMember, listTeam, removeTeamMember } from "../../services/onboarding/team.js";
 import { readiness } from "../../services/onboarding/readiness.js";
+import { launchStore } from "../../services/onboarding/launch.js";
 import { notifyStoreStatusChange } from "../../services/notify/team-alerts.js";
 
 type Params = { Params: { storeId: string } };
@@ -103,7 +104,7 @@ export async function onboardingRoutes(app: FastifyInstance) {
     const store = await pendingStore(request.params.storeId);
     const blocking = (await readiness(app.prisma, store.id)).filter((c) => c.required && !c.ok);
     if (blocking.length) throw fail(`Not ready: ${blocking.map((c) => c.label).join(", ")}`, 409);
-    const launched = await app.prisma.store.update({ where: { id: store.id }, data: { status: "ACTIVE", launchedAt: new Date() } });
+    const launched = await launchStore(app.prisma, store.id);
     void notifyStoreStatusChange(app.fcm, app.prisma, launched, store.status, launched.status);
     return ok(await getOnboarding(app.prisma, store.id));
   });

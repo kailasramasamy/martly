@@ -6,7 +6,8 @@ import { shopStore, type ShopContext } from "../../services/web-shop/cards.js";
 import { webSearch, webSearchLanding, webSuggestions } from "../../services/web-shop/search.js";
 import { webHomeSections } from "../../services/web-shop/home-sections.js";
 import { storeProfile } from "../../services/web-shop/store-profile.js";
-import { liveStore, townPage, webStoreSelect } from "../../services/web-shop/town-page.js";
+import { townPage, webStoreSelect } from "../../services/web-shop/town-page.js";
+import { webStoreWhere } from "../../services/store-resolve.js";
 import { bestSellers, brandPage, brandsPage, ownBrandPage, buyGetList, collectionPage, dealsList } from "../../services/web-shop/lists.js";
 import { webSearchLogRoutes } from "./search-log.js";
 import { categoryPage, departmentPage, productPage, sitemap, storeDepartments } from "../../services/web-shop/pages.js";
@@ -14,10 +15,11 @@ import { categoryPage, departmentPage, productPage, sitemap, storeDepartments } 
 
 /** Public data for martlyshop.in, the website shoppers land on before they have an account */
 export async function webRoutes(app: FastifyInstance) {
-  // Live towns are the ones with at least one launched store; the Martly Template org never shows
+  // Live towns are the ones with at least one store on martlyshop.in (launched, on a paid plan); the Martly Template org never shows
   app.get("/home", async (_request, reply) => {
+    const webStores = webStoreWhere();
     const towns = await app.prisma.town.findMany({
-      where: { stores: { some: liveStore } },
+      where: { stores: { some: webStores } },
       orderBy: { name: "asc" },
       select: {
         name: true,
@@ -25,7 +27,7 @@ export async function webRoutes(app: FastifyInstance) {
         district: true,
         state: true,
         stores: {
-          where: liveStore,
+          where: webStores,
           orderBy: [{ launchedAt: "asc" }, { name: "asc" }],
           select: webStoreSelect,
         },
@@ -46,7 +48,7 @@ export async function webRoutes(app: FastifyInstance) {
   // A store's page at martlyshop.in/{town}/{store}
   app.get<{ Params: { town: string; store: string } }>("/stores/:town/:store", async (request, reply) => {
     const store = await app.prisma.store.findFirst({
-      where: { ...liveStore, slug: request.params.store, town: { slug: request.params.town } },
+      where: { ...webStoreWhere(), slug: request.params.store, town: { slug: request.params.town } },
       select: { ...webStoreSelect, town: { select: { name: true, slug: true, district: true, state: true } } },
     });
     if (!store) return reply.notFound("Store not found");
@@ -95,7 +97,7 @@ function shopRoutes(app: FastifyInstance) {
 
   // The store as a brand at martlyshop.in/{town}/{store}/brand, priced at that store whoever's store the shopper has
   app.get<{ Params: { town: string; store: string } }>("/stores/:town/:store/brand", async (request, reply) => {
-    const store = await app.prisma.store.findFirst({ where: { ...liveStore, slug: request.params.store, town: { slug: request.params.town } }, select: { id: true } });
+    const store = await app.prisma.store.findFirst({ where: { ...webStoreWhere(), slug: request.params.store, town: { slug: request.params.town } }, select: { id: true } });
     if (!store) return reply.notFound("Store not found");
     return respond(request, reply, (ctx, q) => ownBrandPage(app.prisma, ctx, q), store.id);
   });

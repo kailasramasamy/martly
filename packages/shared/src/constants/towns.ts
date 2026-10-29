@@ -9,3 +9,7 @@ export const RESERVED_TOWN_SLUGS = [
   "about", "account", "admin", "api", "app", "assets", "blog", "cart", "checkout", "contact", "help", "login",
   "logout", "martly", "orders", "privacy", "search", "signup", "static", "stores", "support", "terms", "www",
 ] as const;
+
+/** martlyshop.in, where a store on a paid plan has its web store at /{town}/{store} */
+export const SHOP_SITE_URL = "https://www.martlyshop.in";
+export const webStoreUrl = (town: string, store: string) => `${SHOP_SITE_URL}/${town}/${store}`;

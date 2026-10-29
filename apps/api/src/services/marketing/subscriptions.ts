@@ -1,11 +1,8 @@
 import { Prisma, type AdProduct, type Organization, type PrismaClient } from "../../../generated/prisma/client.js";
-import { TRIAL_PLAN_CODE } from "./entitlements.js";
 import { cancelRazorpaySubscription, createRazorpayPlan, createRazorpaySubscription, getRazorpayKeyId } from "../payment.js";
 import { BillingError, grantPlan, intervalOf, listDailyRate } from "./billing.js";
 import { getMarketingConfig, nextInvoiceNumber, quote } from "./config.js";
 
-const DAY_MS = 24 * 60 * 60 * 1000;
-const TRIAL_DAYS = 14;
 /** Subscriptions that still bill (or will): the one an organisation has at most */
 const OPEN = ["CREATED", "ACTIVE", "PENDING", "HALTED"] as const;
 
@@ -122,22 +119,4 @@ export async function cancelSubscription(prisma: PrismaClient, organizationId: s
 export async function updateSubscriptionStatus(prisma: PrismaClient, razorpaySubscriptionId: string, status: "ACTIVE" | "PENDING" | "HALTED" | "CANCELLED" | "COMPLETED") {
   const { count } = await prisma.marketingSubscription.updateMany({ where: { razorpaySubscriptionId }, data: { status } });
   return count > 0;
-}
-
-/** The once-per-organisation 14-day Growth trial, for organisations that have never had a paid plan */
-export async function startTrial(prisma: PrismaClient, organizationId: string) {
-  return prisma.$transaction(async (tx) => {
-    const [org, paid, product] = await Promise.all([
-      tx.organization.findUniqueOrThrow({ where: { id: organizationId }, select: { trialUsedAt: true } }),
-      tx.orgPlanPeriod.count({ where: { organizationId, isTrial: false } }),
-      tx.adProduct.findUniqueOrThrow({ where: { code: TRIAL_PLAN_CODE } }),
-    ]);
-    if (org.trialUsedAt || paid) throw new SubscriptionError("The free trial is for organisations that haven't had a plan yet");
-    const claimed = await tx.organization.updateMany({ where: { id: organizationId, trialUsedAt: null }, data: { trialUsedAt: new Date() } });
-    if (!claimed.count) throw new SubscriptionError("The free trial has already been used");
-    const startsAt = new Date();
-    return tx.orgPlanPeriod.create({
-      data: { organizationId, productId: product.id, isTrial: true, startsAt, endsAt: new Date(startsAt.getTime() + TRIAL_DAYS * DAY_MS) },
-    });
-  });
 }

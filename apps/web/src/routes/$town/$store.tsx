@@ -10,7 +10,9 @@ export const Route = createFileRoute("/$town/$store")({
   loader: async ({ params }) => {
     const store = await getStorePage({ data: params })
     if (!store) throw notFound()
-    return { store, page: await loadHomePage({ id: store.store.id, town: store.town.slug }) }
+    const page = await loadHomePage({ id: store.store.id, town: store.town.slug })
+    if (!page) throw notFound()
+    return { store, page }
   },
   head: ({ loaderData, params }) => {
     if (!loaderData) return { meta: [{ title: "Store not found | Martly" }, { name: "robots", content: "noindex" }] }

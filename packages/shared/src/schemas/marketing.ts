@@ -38,6 +38,8 @@ export const marketingConfigSchema = z.object({
   gstPercent: z.coerce.number().min(0).max(28),
   slotLimits: slotLimitsSchema,
   freeRegenerations: z.coerce.number().int().min(0).max(10),
+  /** Banners an organisation may have painted a month outside promotions; left out, a save keeps the current number */
+  ownerBannerCap: z.coerce.number().int().min(0).max(1000).optional(),
   featuredBrandSlots: z.coerce.number().int().min(0).max(20),
   sellerName: z.string().trim().min(2).max(120),
   sellerGstin: z.string().trim().toUpperCase().regex(GSTIN, "Enter a valid GSTIN").nullish().or(z.literal("")),
@@ -176,3 +178,17 @@ export const createManualPromoSchema = z.object({
   .refine((p) => p.actionType === "NONE" || !!p.actionTarget, { message: "Choose where the promotion leads", path: ["actionTarget"] })
   .refine((p) => p.discountType !== "PERCENTAGE" || (p.discountValue ?? 0) <= 90, { message: "A percentage discount can be at most 90%", path: ["discountValue"] });
 export type CreateManualPromoInput = z.infer<typeof createManualPromoSchema>;
+
+/** Martly's per-organisation plan overrides, e.g. for beta stores */
+export const orgPlanOverridesSchema = z.object({
+  webStoreAlwaysOn: z.boolean().optional(),
+  unlimitedListings: z.boolean().optional(),
+});
+export type OrgPlanOverridesInput = z.infer<typeof orgPlanOverridesSchema>;
+
+/** A plan Martly gives an organisation without payment, starting now */
+export const grantOrgPlanSchema = z.object({
+  productCode: z.enum(["GROWTH", "PRO"]),
+  days: z.coerce.number().int().min(1).max(730),
+});
+export type GrantOrgPlanInput = z.infer<typeof grantOrgPlanSchema>;

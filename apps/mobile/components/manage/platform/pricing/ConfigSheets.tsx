@@ -75,6 +75,7 @@ function validateInvoicing(c: PricingConfig): Errors {
   const errors: Errors = {};
   if (!Number.isFinite(c.gstPercent) || c.gstPercent < 0 || c.gstPercent > 28) errors.gstPercent = "Enter 0 to 28";
   if (!wholeBetween(c.freeRegenerations, 0, 10)) errors.freeRegenerations = "Enter 0 to 10";
+  if (!wholeBetween(c.ownerBannerCap, 0, 1000)) errors.ownerBannerCap = "Enter 0 to 1000";
   if (!/^[A-Z0-9]{1,10}$/.test(c.invoicePrefix.trim())) errors.invoicePrefix = "Up to 10 capitals or digits";
   if (c.sellerName.trim().length < 2) errors.sellerName = "Required";
   if (c.sellerGstin && !GSTIN.test(c.sellerGstin)) errors.sellerGstin = "Enter a valid GSTIN";
@@ -95,7 +96,12 @@ export function InvoicingEditSheet({ visible, config, saving, onSave, onClose }:
   return (
     <BottomSheet visible={visible} title="Edit invoicing" onClose={onClose} scrollable footer={<Button label="Save" onPress={submit} loading={saving} />}>
       <NumberField label="GST %" suffix="%" value={Number.isNaN(draft.gstPercent) ? null : draft.gstPercent} onChange={(v) => set({ gstPercent: v ?? Number.NaN })} error={errors.gstPercent} />
-      <NumberField label="Free AI redrafts per promotion" integer value={Number.isNaN(draft.freeRegenerations) ? null : draft.freeRegenerations} onChange={(v) => set({ freeRegenerations: v ?? Number.NaN })} error={errors.freeRegenerations} />
+      <NumberField label="Free redrafts per promotion" integer value={Number.isNaN(draft.freeRegenerations) ? null : draft.freeRegenerations} onChange={(v) => set({ freeRegenerations: v ?? Number.NaN })} error={errors.freeRegenerations} />
+      <NumberField
+        label="Banners per store per month" integer value={Number.isNaN(draft.ownerBannerCap) ? null : draft.ownerBannerCap}
+        onChange={(v) => set({ ownerBannerCap: v ?? Number.NaN })} error={errors.ownerBannerCap}
+        hint="Banners a store can have made each month outside promotions. Store owners never see this number."
+      />
       <TextField label="Invoice prefix" required value={draft.invoicePrefix} onChangeText={(t) => set({ invoicePrefix: t.toUpperCase() })} maxLength={10} autoCapitalize="characters" error={errors.invoicePrefix} />
       <TextField label="Seller name" required value={draft.sellerName} onChangeText={(sellerName) => set({ sellerName })} maxLength={120} error={errors.sellerName} />
       <TextField label="Seller GSTIN" value={draft.sellerGstin ?? ""} onChangeText={(t) => set({ sellerGstin: t.toUpperCase() || null })} maxLength={15} autoCapitalize="characters" error={errors.sellerGstin} />

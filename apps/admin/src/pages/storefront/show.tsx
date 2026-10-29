@@ -36,7 +36,6 @@ function HeaderCard({ health }: { health: StorefrontHealth }) {
         <Space direction="vertical" size={4}>
           <Typography.Text type="secondary">Plan allowance left</Typography.Text>
           <Typography.Text>{health.allowance.promotions} promotions</Typography.Text>
-          <Typography.Text>{health.allowance.aiImages} AI images</Typography.Text>
         </Space>
       </Space>
     </Card>

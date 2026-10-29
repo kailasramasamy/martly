@@ -71,7 +71,7 @@ export function BrandPackagesView({ products, onEdit }: ListProps) {
 }
 
 function planFacts(p: AdProduct): string[] {
-  const facts = [`${p.promotionCredits} promotions / month`, `${p.aiImagesPerMonth} AI images / month`];
+  const facts = [`${p.promotionCredits} promotions / month`];
   if (p.yearlyPrice !== null) facts.unshift(`${formatINR(p.yearlyPrice)} / year`);
   if (p.pushIncluded) facts.push("Push included");
   return facts;
@@ -82,7 +82,6 @@ interface Section { title: string; kind: AdProductKind; unit: string; facts: (p:
 const SECTIONS: Section[] = [
   { title: "Store plans", kind: "STORE_PLAN", unit: "/ month", facts: planFacts },
   { title: "Extra promotion", kind: "PROMOTION_TOPUP", unit: "/ purchase", facts: (p) => [`${p.promotionCredits} promotions`] },
-  { title: "AI image packs", kind: "AI_IMAGE_PACK", unit: "/ pack", facts: (p) => [`${p.aiImageCredits} images`] },
 ];
 
 export function StorePricingView({ products, onEdit }: ListProps) {

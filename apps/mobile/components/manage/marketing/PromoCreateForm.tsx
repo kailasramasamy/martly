@@ -10,17 +10,20 @@ import { api } from "../../../lib/api";
 import { useAction } from "../../../lib/manage/use-action";
 import { useManageScope } from "../../../lib/manage-scope-context";
 import { useAuth } from "../../../lib/auth-context";
-import { NoPromotionsLeft, PromoImageChoice, PromoOptions, type ImageMode } from "./PromoCreateParts";
+import { PromoImageChoice, PromoOptions, type ImageMode } from "./PromoCreateParts";
+import { PromoRequestForm } from "./PromoRequestForm";
 import { PlanLimitNotice, usePlanLimit } from "./PlanLimit";
-import { promotionsLeft, useEntitlements } from "./use-entitlements";
 
 const PLACEHOLDER = 'e.g. "paneer 5% off", "ghee products", "fresh fruits"';
 
+/** Super admin's form, with the banner, launch and notification choices; store owners just say what to promote */
 export function PromoCreateForm() {
+  return useAuth().user?.role === "SUPER_ADMIN" ? <SuperAdminPromoForm /> : <PromoRequestForm />;
+}
+
+function SuperAdminPromoForm() {
   const router = useRouter();
-  const isSuper = useAuth().user?.role === "SUPER_ADMIN";
   const { stores, organizationId } = useManageScope();
-  const { data: entitlements } = useEntitlements();
   const { run, running } = useAction();
   const limit = usePlanLimit();
   const [brief, setBrief] = useState("");
@@ -35,33 +38,29 @@ export function PromoCreateForm() {
     () => [...new Map(stores.map((s) => [s.organizationId, s.organizationName])).entries()].map(([value, label]) => ({ value, label })),
     [stores],
   );
-  const left = entitlements ? promotionsLeft(entitlements) : null;
-  const outOfPromos = !isSuper && left === 0;
-  const pushAllowed = isSuper || !!entitlements?.pushIncluded;
 
   const submit = async () => {
     if (brief.trim().length < 3) return setError("Enter at least 3 characters");
-    if (isSuper && !org) return setError("Pick an organization");
+    if (!org) return setError("Pick an organization");
     if (mode === "upload" && !imageUrl) return setImageError("Upload a banner image");
     setError(null);
     setImageError(undefined);
     const body = {
-      brief: brief.trim(), autoLaunch, notify: pushAllowed && notify, ...(mode === "upload" ? { imageUrl } : {}), ...(isSuper ? { organizationId: org } : {}),
+      brief: brief.trim(), autoLaunch, notify, organizationId: org, ...(mode === "upload" ? { imageUrl } : {}),
     };
     const res = await run(() => limit.capture(() => api.post<{ id: string }>("/api/v1/promos", body)));
     if (res) router.replace(`/manage/promos/${res.data.id}`);
   };
 
-  const create = <Button label="Create promo" icon="rocket-outline" onPress={submit} loading={running} disabled={outOfPromos} style={styles.btn} />;
+  const create = <Button label="Create promo" icon="rocket-outline" onPress={submit} loading={running} style={styles.btn} />;
   return (
-    <ManageStackScreen title="New promo" actions={<View style={styles.bar}>{create}</View>}>
-      {outOfPromos ? <NoPromotionsLeft /> : null}
-      <SectionCard title={left === null ? "Brief" : `Brief · ${left} promotion${left === 1 ? "" : "s"} left`}>
-        {isSuper ? <SelectField label="Organization" required value={org} options={orgOptions} onChange={setOrg} /> : null}
-        <TextField label="What do you want to promote?" required value={brief} onChangeText={setBrief} multiline maxLength={200} placeholder={PLACEHOLDER} error={error} hint="The AI drafts the banner, copy and discount, usually in about a minute" />
+    <ManageStackScreen title="New promotion" actions={<View style={styles.bar}>{create}</View>}>
+      <SectionCard title="Brief">
+        <SelectField label="Organization" required value={org} options={orgOptions} onChange={setOrg} />
+        <TextField label="What do you want to promote?" required value={brief} onChangeText={setBrief} multiline maxLength={200} placeholder={PLACEHOLDER} error={error} hint="Martly drafts the banner, copy and discount, usually in about a minute" />
       </SectionCard>
       <PromoImageChoice mode={mode} onMode={setMode} imageUrl={imageUrl} onImage={setImageUrl} error={imageError} />
-      <PromoOptions autoLaunch={autoLaunch} onAutoLaunch={setAutoLaunch} notify={notify} onNotify={setNotify} pushAllowed={pushAllowed} />
+      <PromoOptions autoLaunch={autoLaunch} onAutoLaunch={setAutoLaunch} notify={notify} onNotify={setNotify} />
       <PlanLimitNotice message={limit.message} />
     </ManageStackScreen>
   );

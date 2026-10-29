@@ -2,6 +2,7 @@
 export const AdProductKind = {
   STORE_PLAN: "STORE_PLAN",
   PROMOTION_TOPUP: "PROMOTION_TOPUP",
+  LISTING_TOPUP: "LISTING_TOPUP",
   AI_IMAGE_PACK: "AI_IMAGE_PACK",
   BRAND_BANNER: "BRAND_BANNER",
   BRAND_TAKEOVER: "BRAND_TAKEOVER",
@@ -16,6 +17,7 @@ export type AdProductKind = (typeof AdProductKind)[keyof typeof AdProductKind];
 export const AdProductKindLabels: Record<AdProductKind, string> = {
   STORE_PLAN: "Store plan",
   PROMOTION_TOPUP: "Extra promotion",
+  LISTING_TOPUP: "Extra product listing",
   AI_IMAGE_PACK: "AI image pack",
   BRAND_BANNER: "Brand banner",
   BRAND_TAKEOVER: "Category takeover",
@@ -155,3 +157,9 @@ export const STORE_BRAND_DEPARTMENT_SLUG = "grocery-staples";
 const OWN_BRAND_PREFIX = "own-";
 export const ownBrandId = (storeId: string) => `${OWN_BRAND_PREFIX}${storeId}`;
 export const ownBrandStoreId = (brandId: string) => (brandId.startsWith(OWN_BRAND_PREFIX) ? brandId.slice(OWN_BRAND_PREFIX.length) : null);
+
+/** Own-brand or local products each store plan lists free, counted once over the store's life; each one after that costs LISTING_FEE, once */
+export const OWN_LISTINGS_INCLUDED: Record<string, number> = { FREE: 10, GROWTH: 25, PRO: 50 };
+export const LISTING_FEE = 100;
+/** Size of the master catalog stores list from free, as owners are told it */
+export const CATALOG_SIZE_LABEL = "12,000+";

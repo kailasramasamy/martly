@@ -110,7 +110,7 @@ function FestivalFields({ initial, id }: { initial: FormState; id?: string }) {
       </SectionCard>
       <SectionCard title="Audience and curation">
         <ChipSelect label="Regions" required options={REGION_OPTIONS} value={f.regions} onChange={set("regions")} error={errors.regions} />
-        <TextField label="Guidance" value={f.guidance} onChangeText={set("guidance")} multiline hint="Hints for the AI curator, e.g. vegetarian, traditional dishes" />
+        <TextField label="Guidance" value={f.guidance} onChangeText={set("guidance")} multiline hint="Hints for Martly, e.g. vegetarian, traditional dishes" />
         <SwitchRow label="Active" value={f.isActive} onValueChange={set("isActive")} />
       </SectionCard>
     </ManageStackScreen>

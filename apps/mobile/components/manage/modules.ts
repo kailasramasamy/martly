@@ -108,6 +108,7 @@ const MODULE_GROUPS: ModuleGroup[] = [
       { resource: "brand-partners", label: "Brand partners", icon: "people-circle-outline", href: "/manage/brand-partners" },
       { resource: "marketing-pricing", label: "Ad pricing", icon: "pricetag-outline", href: "/manage/ad-pricing" },
       { resource: "marketing-orders", label: "Marketing revenue", icon: "trending-up-outline", href: "/manage/marketing-revenue" },
+      { resource: "store-plans", label: "Store plans", icon: "ribbon-outline", href: "/manage/store-plans" },
     ],
   },
 ];

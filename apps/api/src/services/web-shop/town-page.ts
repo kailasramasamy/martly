@@ -1,10 +1,10 @@
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import type { WebTownPage } from "@martly/shared/types";
 import { getStoreDiscoveryInfo } from "../store-discovery.js";
+import { webStoreWhere } from "../store-resolve.js";
 import { deliveryOf } from "./store-profile.js";
 
 export const webStoreSelect = { id: true, name: true, slug: true, tagline: true, address: true, imageUrl: true, logoUrl: true, size: true } as const;
-export const liveStore = { status: "ACTIVE" as const, organization: { isTemplate: false } };
 
 /** Products a shopper can buy at each store, counting a product once across its sizes */
 async function productCounts(prisma: PrismaClient, storeIds: string[]) {
@@ -18,12 +18,13 @@ async function productCounts(prisma: PrismaClient, storeIds: string[]) {
 
 /** A town's live stores with their covers, delivery, deals and ratings, for martlyshop.in/{town} */
 export async function townPage(prisma: PrismaClient, slug: string): Promise<WebTownPage | null> {
+  const webStores = webStoreWhere();
   const town = await prisma.town.findFirst({
-    where: { slug, stores: { some: liveStore } },
+    where: { slug, stores: { some: webStores } },
     select: {
       name: true, slug: true, district: true, state: true,
       stores: {
-        where: liveStore,
+        where: webStores,
         orderBy: [{ launchedAt: "asc" }, { name: "asc" }],
         select: { ...webStoreSelect, brandColor: true, offerText: true, freeDeliveryThreshold: true },
       },

@@ -61,11 +61,13 @@ export async function promoRoutes(app: FastifyInstance) {
     const organizationId = platform ? requested : user.organizationId;
     if (!organizationId) return reply.badRequest("Choose an organisation for this promo");
     if (imageUrl && !isMediaUrl(imageUrl)) return reply.badRequest("Upload the banner image through Martly");
-    // Push notifications to shoppers are part of the higher plans; Martly's own promos always may
-    const notify = body.notify && (platform || (await getEntitlements(app.prisma, organizationId)).pushIncluded);
+    // A store's request goes live by itself and tells its customers; Martly's team chooses both
+    const options = platform ? body : { ...body, autoLaunch: true, notify: true };
+    // Push notifications to shoppers are part of the paid plans; Martly's own promos always may
+    const notify = options.notify && (platform || (await getEntitlements(app.prisma, organizationId)).pushIncluded);
     const promo = await startPromoDraft(
       deps(),
-      { ...body, notify, organizationId, createdById: user.sub, uploadedImageUrl: imageUrl ?? null, chargedFrom: platform ? "PLATFORM" : undefined },
+      { ...options, notify, organizationId, createdById: user.sub, uploadedImageUrl: imageUrl ?? null, chargedFrom: platform ? "PLATFORM" : undefined },
       platform ? undefined : chargePromotion,
     );
     return reply.code(201).send({ success: true, data: { id: promo.id, status: promo.status } });

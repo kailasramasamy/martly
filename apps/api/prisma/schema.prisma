@@ -233,6 +233,7 @@ enum BannerActionType {
 enum AdProductKind {
   STORE_PLAN
   PROMOTION_TOPUP
+  LISTING_TOPUP
   AI_IMAGE_PACK
   BRAND_BANNER
   BRAND_TAKEOVER
@@ -493,6 +494,10 @@ model Organization {
   billingState        String?   @map("billing_state")
   /// The organisation's own brands rank like market leaders in search and lead category listings
   boostOwnBrands      Boolean   @default(true) @map("boost_own_brands")
+  /// Set by Martly (e.g. beta stores): the stores stay on martlyshop.in whatever plan the organisation is on
+  webStoreAlwaysOn    Boolean   @default(false) @map("web_store_always_on")
+  /// Set by Martly (e.g. beta stores): own products list without using up listings
+  unlimitedListings   Boolean   @default(false) @map("unlimited_listings")
   /// When the organisation started its one free Growth trial
   trialUsedAt         DateTime? @map("trial_used_at")
   /// Martly's commission, GST included: on online payments, and on COD and wallet payments
@@ -534,6 +539,7 @@ model Organization {
   adOrders              AdOrder[]
   planPeriods           OrgPlanPeriod[]
   promotionCredits      PromotionCreditEntry[]
+  listingCredits        ListingCreditEntry[]
   aiImageCredits        AiImageCreditEntry[]
 
   bannerArtRuns BannerArtRun[]
@@ -918,6 +924,7 @@ model Product {
   @@index([productType])
   @@index([organizationId])
   @@index([tags], type: Gin)
+  listingCredits ListingCreditEntry[]
   @@map("products")
 }
 
@@ -2594,6 +2601,8 @@ model MarketingConfig {
   /// { [placement]: { STORE?: n, BRAND?: n, PLATFORM?: n } }; a missing entry means no cap
   slotLimits         Json     @default("{}") @map("slot_limits")
   freeRegenerations  Int      @default(2) @map("free_regenerations")
+  /// Banners an organisation may have painted each month outside promotions; owners never see the count
+  ownerBannerCap     Int      @default(60) @map("owner_banner_cap")
   /// Featured brands that can run at once in one category
   featuredBrandSlots Int      @default(2) @map("featured_brand_slots")
   sellerName         String   @default("Martly") @map("seller_name")
@@ -2641,6 +2650,7 @@ model AdOrder {
   createdBy      User                   @relation(fields: [createdById], references: [id])
   planPeriod     OrgPlanPeriod?
   credits        PromotionCreditEntry[]
+  listingCredits ListingCreditEntry[]
   aiImageCredits AiImageCreditEntry[]
   campaign       BrandCampaign?
 
@@ -2722,6 +2732,27 @@ model PromotionCreditEntry {
 
   @@index([organizationId])
   @@map("promotion_credit_entries")
+}
+
+/// Own-product listings: plan allowance used/refunded (fromPlan, counted over the org's life) and bought listings (balance = sum of delta)
+model ListingCreditEntry {
+  id             String                @id @default(uuid())
+  organizationId String                @map("organization_id")
+  delta          Int
+  fromPlan       Boolean               @default(false) @map("from_plan")
+  reason         PromotionCreditReason
+  productId      String?               @map("product_id")
+  adOrderId      String?               @map("ad_order_id")
+  note           String?
+  createdAt      DateTime              @default(now()) @map("created_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id])
+  product      Product?     @relation(fields: [productId], references: [id], onDelete: SetNull)
+  adOrder      AdOrder?     @relation(fields: [adOrderId], references: [id])
+
+  @@index([organizationId])
+  @@index([productId])
+  @@map("listing_credit_entries")
 }
 
 model BannerStatDaily {

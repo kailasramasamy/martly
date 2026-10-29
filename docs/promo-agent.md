@@ -1,16 +1,16 @@
 # Promo agent
 
-An admin types a one-line brief ("paneer 5% off", "fresh fruits", "buy natural soap"). An agent turns it into a promo:
+A store owner types or says a one-line request ("paneer 5% off", "fresh fruits", "buy natural soap"), in English or Tamil. An agent turns it into a promo:
 - a 3:2 home banner in English and Tamil, with the text set into the art;
 - a curated list of products behind it;
 - optionally, a time-limited discount;
 - a push notification.
 
-The admin previews the draft and launches it, or ticks "Launch automatically".
+A store owner's request always launches by itself and notifies customers (one promotion credit pays for all of it; see `docs/store-plans.md`). Martly's team can instead preview the draft and launch it, or tick "Launch automatically".
 
 ## Flow
 
-1. **Create**: `POST /promos { brief, autoLaunch, notify, organizationId? }` stores a DRAFTING promo and returns at once. SUPER_ADMIN must pass `organizationId`.
+1. **Create**: `POST /promos { brief, autoLaunch, notify, organizationId? }` stores a DRAFTING promo and returns at once. SUPER_ADMIN must pass `organizationId`; for store users `autoLaunch` and `notify` are always on.
 2. **Draft** (in-process background job, `services/promo/draft.ts`, about 1–2 minutes):
    - **Agent** (`agent.ts`, `claude-sonnet-5-5`, SDK tool runner, at most 14 turns) uses these tools (`tools.ts`). The catalogue tools run against the org's reference store, i.e. the active store with the widest catalogue:
      - `search_products`, which uses the app's product search;

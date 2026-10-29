@@ -5,6 +5,7 @@ import { requireRole } from "../../middleware/authorize.js";
 import { getMarketingConfig } from "../../services/marketing/config.js";
 import { invoiceLink } from "../../services/marketing/invoice.js";
 import { istDateKey } from "../../services/ist-day.js";
+import { orgPlanRoutes } from "./org-plan.js";
 
 const platform = { preHandler: [authenticate, requireRole("SUPER_ADMIN")] };
 
@@ -69,7 +70,7 @@ export async function marketingAdminRoutes(app: FastifyInstance) {
     const orgs = await app.prisma.organization.findMany({
       orderBy: { name: "asc" },
       select: {
-        id: true, name: true,
+        id: true, name: true, webStoreAlwaysOn: true, unlimitedListings: true,
         planPeriods: {
           where: { endsAt: { gt: now } }, orderBy: { startsAt: "asc" },
           select: { startsAt: true, endsAt: true, product: { select: { name: true, code: true } } },
@@ -79,9 +80,12 @@ export async function marketingAdminRoutes(app: FastifyInstance) {
     return {
       success: true,
       data: orgs.map(({ planPeriods, ...org }) => {
-        const current = planPeriods.find((p) => p.startsAt <= now);
+        // The newest started period is the one in force, as in getEntitlements
+        const current = planPeriods.filter((p) => p.startsAt <= now).at(-1);
         return { ...org, plan: current?.product ?? null, currentUntil: current?.endsAt ?? null, paidThrough: planPeriods.at(-1)?.endsAt ?? null };
       }),
     };
   });
+
+  orgPlanRoutes(app);
 }

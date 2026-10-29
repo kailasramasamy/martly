@@ -7,6 +7,7 @@ import { SectionCard } from "../ui/SectionCard";
 import { StatusPill } from "../ui/StatusPill";
 import { Button } from "../ui/Button";
 import { api } from "../../../lib/api";
+import { useAuth } from "../../../lib/auth-context";
 import { useAction } from "../../../lib/manage/use-action";
 import { useResource } from "../../../lib/manage/use-resource";
 import { colors, fonts } from "../../../constants/theme";
@@ -84,6 +85,7 @@ interface BodyProps {
 
 function PromoBody({ promo, busy, onRemove, onRedraft, onChange }: BodyProps) {
   const isAi = promo.kind === "AI";
+  const isSuper = useAuth().user?.role === "SUPER_ADMIN";
   return (
     <>
       <View style={styles.head}>
@@ -99,7 +101,7 @@ function PromoBody({ promo, busy, onRemove, onRedraft, onChange }: BodyProps) {
         <>
           {isAi ? <WordingAndPush promo={promo} /> : <ManualSummary promo={promo} />}
           <PromoBannerCard promo={promo} onChange={onChange} />
-          {isAi && promo.status === "READY" && promo.redraftsLeft > 0 ? <RedraftCard left={promo.redraftsLeft} busy={busy} onRedraft={onRedraft} /> : null}
+          {isSuper && isAi && promo.status === "READY" && promo.redraftsLeft > 0 ? <RedraftCard left={promo.redraftsLeft} busy={busy} onRedraft={onRedraft} /> : null}
           {promo.status === "LIVE" || promo.status === "ENDED" ? <PromoResultsCard promo={promo} /> : null}
           <Performance promo={promo} />
           {promo.assumptions.length > 0 ? <SectionCard title="Assumptions">{promo.assumptions.map((a) => <Text key={a} style={styles.assumption}>{`\u2022 ${a}`}</Text>)}</SectionCard> : null}

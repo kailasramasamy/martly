@@ -1,9 +1,10 @@
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { istDateKey } from "../ist-day.js";
 import { aiImageBalance } from "./ai-image-balance.js";
-
-/** The plan the free trial grants */
-export const TRIAL_PLAN_CODE = "GROWTH";
+import { webStoreUrl } from "@martly/shared/constants";
+import { getMarketingConfig } from "./config.js";
+import { webStoreWhere } from "../store-resolve.js";
+import { listingBalance } from "./listing-credits.js";
 
 type Db = PrismaClient | Prisma.TransactionClient;
 
@@ -43,17 +44,30 @@ function monthWindow(at: Date) {
   return { start, end: new Date(`${next}-01T00:00:00+05:30`) };
 }
 
+/** The organisation's stores on martlyshop.in now, with their addresses; empty on Free */
+async function webStores(db: Db, organizationId: string) {
+  const rows = await db.store.findMany({
+    where: { ...webStoreWhere(), organizationId },
+    select: { name: true, slug: true, town: { select: { slug: true } } },
+    orderBy: { name: "asc" },
+  });
+  return rows.map((s) => ({ name: s.name, url: webStoreUrl(s.town.slug, s.slug) }));
+}
+
 /** The plan in force, what it includes and how much of it is used */
 export async function getEntitlements(db: Db, organizationId: string) {
   const now = new Date();
   const period = await activePeriod(db, organizationId, now);
   const plan = period?.product ?? (await db.adProduct.findUnique({ where: { code: FREE_PLAN_CODE } }));
   const window = period ? periodMonth(period, now) : monthWindow(now);
-  const [planMoves, topUp, lastPeriod, aiImages] = await Promise.all([
+  const { ownerBannerCap } = await getMarketingConfig(db);
+  const [planMoves, topUp, lastPeriod, aiImages, web, listings] = await Promise.all([
     db.promotionCreditEntry.aggregate({ where: { organizationId, fromPlan: true, createdAt: { gte: window.start, lt: window.end } }, _sum: { delta: true } }),
     db.promotionCreditEntry.aggregate({ where: { organizationId, fromPlan: false }, _sum: { delta: true } }),
     db.orgPlanPeriod.findFirst({ where: { organizationId, endsAt: { gt: now } }, orderBy: { endsAt: "desc" }, select: { endsAt: true } }),
-    aiImageBalance(db, organizationId, window, plan?.aiImagesPerMonth ?? 0),
+    aiImageBalance(db, organizationId, window, ownerBannerCap),
+    webStores(db, organizationId),
+    listingBalance(db, organizationId, plan?.code ?? FREE_PLAN_CODE),
   ]);
   const planTotal = plan?.promotionCredits ?? 0;
   const planUsed = Math.max(0, -(planMoves._sum.delta ?? 0));
@@ -69,30 +83,26 @@ export async function getEntitlements(db: Db, organizationId: string) {
     promotions: { planUsed, planTotal, planLeft: Math.max(0, planTotal - planUsed), topUpBalance: topUp._sum.delta ?? 0, resetsAt: window.end },
     pushIncluded: plan?.pushIncluded ?? false,
     aiImages,
-    /** Paid plans only: extra promotions aren't sold on Free or during the trial */
+    /** A paid plan is running: it also puts the store on martlyshop.in (webStoreWhere) */
     onPaidPlan: !!period && !period.isTrial,
+    webStores: web,
+    /** Own or local products: the plan's free listings (counted once) and bought ones */
+    listings,
     ...(await trialAndRenewal(db, organizationId, period)),
   };
 }
 
-/** Whether the free trial can still be started (or when the running one ends), and how the plan renews */
+/** How the plan renews; `trial` stays for app builds from before the trial was replaced by the onboarding plan */
 async function trialAndRenewal(db: Db, organizationId: string, period: { isTrial: boolean; endsAt: Date } | null) {
-  const [org, paidPeriods, subscription, lastPeriod, trialPlan] = await Promise.all([
-    db.organization.findUniqueOrThrow({ where: { id: organizationId }, select: { trialUsedAt: true } }),
-    db.orgPlanPeriod.count({ where: { organizationId, isTrial: false } }),
+  const [subscription, lastPeriod] = await Promise.all([
     db.marketingSubscription.findFirst({
       where: { organizationId, status: { in: ["ACTIVE", "PENDING", "HALTED", "CREATED"] }, OR: [{ status: { not: "CREATED" } }, { startAt: { not: null } }] },
       orderBy: { createdAt: "desc" }, include: { product: { select: { name: true, code: true } } },
     }),
     db.orgPlanPeriod.findFirst({ where: { organizationId, endsAt: { gt: new Date() } }, orderBy: { endsAt: "desc" }, select: { endsAt: true } }),
-    db.adProduct.findUnique({ where: { code: TRIAL_PLAN_CODE }, select: { promotionCredits: true, aiImagesPerMonth: true } }),
   ]);
   return {
-    trial: {
-      available: !org.trialUsedAt && paidPeriods === 0, endsAt: period?.isTrial ? period.endsAt : null,
-      /** What the trial includes a month, for the offer's wording */
-      promotionCredits: trialPlan?.promotionCredits ?? 0, aiImagesPerMonth: trialPlan?.aiImagesPerMonth ?? 0,
-    },
+    trial: { available: false, endsAt: period?.isTrial ? period.endsAt : null },
     subscription: subscription && {
       status: subscription.status, productName: subscription.product.name, productCode: subscription.product.code, interval: subscription.interval, cancelAtPeriodEnd: subscription.cancelAtPeriodEnd,
       /** Next charge (or, once cancelled, when the paid time runs out) */
@@ -113,7 +123,7 @@ export async function chargePromotion(tx: Prisma.TransactionClient, promo: { id:
     throw new PaymentRequiredError(
       promotions.planTotal > 0
         ? "You've used this month's promotions. Buy an extra promotion or upgrade your plan."
-        : "Promotions need a paid plan. Upgrade your plan or buy an extra promotion.",
+        : "Buy an extra promotion, or upgrade to Growth or Pro for promotions every month.",
     );
   }
   await tx.promo.update({ where: { id: promo.id }, data: { chargedFrom: charge } });

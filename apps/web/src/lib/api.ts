@@ -62,12 +62,13 @@ export const getStorePage = createServerFn({ method: "GET" })
     return page
   })
 
-/** A page of the app's Home sections at the shopper's store, or at the store a store page names; the first call has no cursor */
+/** A page of the app's Home sections at the shopper's store, or at the store a store page names; the first call has no cursor.
+ *  Null when no store is on martlyshop.in */
 export const getHomeSections = createServerFn({ method: "GET" })
   .inputValidator((params: { cursor?: string; store?: { id: string; town: string } }) => params)
   .handler(({ data }) => {
     const store = data.store && { store: data.store.id, town: data.store.town }
-    return required<WebHomeSectionsPage>(`/web/home-sections${shopQuery({ cursor: data.cursor, ...store })}`)
+    return get<WebHomeSectionsPage>(`/web/home-sections${shopQuery({ cursor: data.cursor, ...store })}`)
   })
 
 export const getCollection = createServerFn({ method: "GET" })
@@ -89,7 +90,7 @@ export const getBuyGet = createServerFn({ method: "GET" })
   .inputValidator((params: { category?: string; page?: number }) => params)
   .handler(({ data }) => get<WebListPage>(`/web/offers/buy-get${shopQuery(data)}`))
 
-export const getBestSellers = createServerFn({ method: "GET" }).handler(() => required<WebListPage>(`/web/best-sellers${shopQuery()}`))
+export const getBestSellers = createServerFn({ method: "GET" }).handler(() => get<WebListPage>(`/web/best-sellers${shopQuery()}`))
 
 export const getDeals = createServerFn({ method: "GET" })
   .inputValidator((params: { sectionId: string; band?: number; category?: string; page?: number }) => params)
@@ -135,13 +136,13 @@ export interface SearchParams extends Omit<CategorySearch, "page"> {
 
 export const searchShop = createServerFn({ method: "GET" })
   .inputValidator((params: SearchParams) => params)
-  .handler(({ data }) => required<WebSearchPage>(`/web/search${shopQuery({ ...data })}`))
+  .handler(({ data }) => get<WebSearchPage>(`/web/search${shopQuery({ ...data })}`))
 
 export const getSuggestions = createServerFn({ method: "GET" })
   .inputValidator((params: { q: string }) => params)
-  .handler(({ data }) => required<WebSuggestion[]>(`/web/search/suggest${shopQuery({ q: data.q })}`))
+  .handler(({ data }) => get<WebSuggestion[]>(`/web/search/suggest${shopQuery({ q: data.q })}`).then((rows) => rows ?? []))
 
-export const getSearchLanding = createServerFn({ method: "GET" }).handler(() => required<WebSearchLanding>(`/web/search/landing${shopQuery()}`))
+export const getSearchLanding = createServerFn({ method: "GET" }).handler(() => get<WebSearchLanding>(`/web/search/landing${shopQuery()}`))
 
 /**
  * POSTs for the site itself: WEB_API_SECRET proves to the API that it is the site, and the visitor is a hash of their IP,

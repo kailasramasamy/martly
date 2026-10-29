@@ -9,7 +9,8 @@ import type { Entitlements } from "../marketing/types";
 import { ImageGuidance } from "../brand-campaigns/creative-section";
 import { createPromo } from "./promo-utils";
 
-const PLACEHOLDER = 'e.g. "paneer 5% off", "ghee products", "fresh fruits", "daily deals", "natural soaps"';
+const PLACEHOLDER = 'e.g. "Diwali sweets 10% off", "fresh fruits", "ghee products"';
+const OWNER_HELP = "Martly makes the banner, picks the products and puts it live, usually in a few minutes. Your customers get a notification.";
 
 export function OrganizationField() {
   const { data, isLoading } = useList<{ id: string; name: string }>({ resource: "organizations", pagination: { pageSize: 100 } });
@@ -33,7 +34,7 @@ function PromoImageChoice({ choice, onChange }: { choice: ImageChoice; onChange:
       <Radio.Group
         value={choice}
         onChange={(e) => onChange(e.target.value)}
-        options={[{ value: "ai", label: "Let AI design it" }, { value: "upload", label: "Upload my own" }]}
+        options={[{ value: "ai", label: "Design for me" }, { value: "upload", label: "Upload my own" }]}
       />
       {choice === "upload" && (
         <>
@@ -53,13 +54,27 @@ interface Props {
   noAllowance: boolean;
 }
 
-/** Push needs the Pro plan; the platform admin is unlimited */
+/** Customer notifications need Growth or Pro; the platform admin is unlimited */
 function usePushAllowed(isPlatform: boolean, entitlements: Entitlements | null, form: FormInstance) {
   const pushAllowed = isPlatform || !!entitlements?.pushIncluded;
   useEffect(() => {
     if (entitlements && !pushAllowed) form.setFieldValue("notify", false);
   }, [entitlements, pushAllowed, form]);
   return pushAllowed;
+}
+
+function AdminOptions({ choice, onChoice, pushAllowed }: { choice: ImageChoice; onChoice: (c: ImageChoice) => void; pushAllowed: boolean }) {
+  return (
+    <>
+      <PromoImageChoice choice={choice} onChange={onChoice} />
+      <Form.Item label="Launch automatically" name="autoLaunch" valuePropName="checked">
+        <Switch />
+      </Form.Item>
+      <Form.Item label="Notify customers" name="notify" valuePropName="checked" help={pushAllowed ? "One push per day at most" : "Customer notifications come with Growth and Pro"}>
+        <Switch disabled={!pushAllowed} />
+      </Form.Item>
+    </>
+  );
 }
 
 export function PromoCreateCard({ entitlements, isPlatform, noAllowance }: Props) {
@@ -73,8 +88,8 @@ export function PromoCreateCard({ entitlements, isPlatform, noAllowance }: Props
   const submit = async (values: { brief: string; autoLaunch: boolean; notify: boolean; organizationId?: string; imageUrl?: string }) => {
     setCreating(true);
     try {
-      const imageUrl = imageChoice === "upload" ? values.imageUrl : undefined;
-      const id = await createPromo({ ...values, imageUrl, brief: values.brief.trim() });
+      const brief = values.brief.trim();
+      const id = await createPromo(isPlatform ? { ...values, imageUrl: imageChoice === "upload" ? values.imageUrl : undefined, brief } : { brief });
       show("promos", id);
     } catch (err) {
       if (!isAxiosError(err)) throw err;
@@ -91,19 +106,14 @@ export function PromoCreateCard({ entitlements, isPlatform, noAllowance }: Props
         <Form.Item
           label="What do you want to promote?"
           name="brief"
+          help={isPlatform ? undefined : OWNER_HELP}
           rules={[{ required: true, min: 3, whitespace: true, message: "Enter at least 3 characters" }]}
         >
           <Input.TextArea rows={2} maxLength={200} showCount placeholder={PLACEHOLDER} />
         </Form.Item>
-        <PromoImageChoice choice={imageChoice} onChange={setImageChoice} />
-        <Form.Item label="Launch automatically" name="autoLaunch" valuePropName="checked">
-          <Switch />
-        </Form.Item>
-        <Form.Item label="Notify customers" name="notify" valuePropName="checked" help={pushAllowed ? "One push per day at most" : "Push notifications come with the Pro plan"}>
-          <Switch disabled={!pushAllowed} />
-        </Form.Item>
+        {isPlatform && <AdminOptions choice={imageChoice} onChoice={setImageChoice} pushAllowed={pushAllowed} />}
         <Button type="primary" htmlType="submit" icon={<RocketOutlined />} loading={creating} disabled={noAllowance}>
-          Create
+          {isPlatform ? "Create" : "Start promotion"}
         </Button>
       </Form>
     </Card>

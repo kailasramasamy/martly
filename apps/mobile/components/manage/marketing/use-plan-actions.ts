@@ -1,7 +1,7 @@
 import { api } from "../../../lib/api";
 import { useAction } from "../../../lib/manage/use-action";
 
-/** Owner actions on the marketing plan that need no payment: free trial and turning auto-renew off */
+/** Owner actions on the marketing plan that need no payment: turning auto-renew off */
 export function usePlanActions(onChanged: () => void) {
   const { run, running } = useAction();
 
@@ -13,7 +13,6 @@ export function usePlanActions(onChanged: () => void) {
 
   return {
     running,
-    startTrial: () => post("/api/v1/marketing/trial", "Your free trial has started"),
     cancelRenewal: () => post("/api/v1/marketing/subscription/cancel", "Auto-renew is off"),
   };
 }

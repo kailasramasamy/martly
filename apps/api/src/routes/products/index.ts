@@ -15,6 +15,8 @@ import { brandFacets, countIds, inSearchOrder, subcategoryFacets, type Subcatego
 import { translateNewProduct } from "../../services/translate/product.js";
 import { applyProductPacks } from "../../services/pack-images.js";
 import { storeBrandOf } from "../../services/own-brand.js";
+import { chargeListing } from "../../services/marketing/listing-credits.js";
+import { deleteProduct } from "../../services/product-delete.js";
 
   // Shared helper: build visibility + catalogType where clause
   function buildVisibilityFilter(user: { role: string; organizationId?: string | null }, catalogType?: string) {
@@ -326,18 +328,23 @@ export async function productRoutes(app: FastifyInstance) {
         ? variantsInput
         : [{ name: "Default", unitType: "PIECE" as const, unitValue: 1 }];
 
-      const product = await app.prisma.product.create({
-        data: {
-          ...productData,
-          organizationId,
-          isDraft: draft ?? false,
-          nutritionalInfo: nutritionalInfo as Prisma.InputJsonValue | undefined,
-          translations: translations as Prisma.InputJsonValue | undefined,
-          variants: {
-            create: variantsToCreate,
+      // An org's own product uses one of its listings (plan's free ones, then bought); master catalog products are free
+      const product = await app.prisma.$transaction(async (tx) => {
+        const created = await tx.product.create({
+          data: {
+            ...productData,
+            organizationId,
+            isDraft: draft ?? false,
+            nutritionalInfo: nutritionalInfo as Prisma.InputJsonValue | undefined,
+            translations: translations as Prisma.InputJsonValue | undefined,
+            variants: {
+              create: variantsToCreate,
+            },
           },
-        },
-        include: { subcategory: true, brand: true, variants: true },
+          include: { subcategory: true, brand: true, variants: true },
+        });
+        if (organizationId) await chargeListing(tx, organizationId, created.id);
+        return created;
       });
 
       if (organizationId) await listInStores(request, product, organizationId, requestedStoreIds, !draft);
@@ -452,7 +459,7 @@ export async function productRoutes(app: FastifyInstance) {
         }
       }
 
-      await app.prisma.product.delete({ where: { id: request.params.id } });
+      await deleteProduct(app.prisma, existing.id);
 
       const response: ApiResponse<null> = { success: true, data: null };
       return response;

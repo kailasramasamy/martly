@@ -18,6 +18,7 @@ export function PricingStrip() {
               <span className="block text-[15px] font-bold">{p.name}</span>
               <span className="mt-1 block text-2xl font-extrabold tabular-nums sm:text-3xl">{rupees(p.monthly)}</span>
               <span className="block text-[13px] text-muted">a month</span>
+              <span className="mt-2 block text-[13px] font-semibold text-brand">{p.promotions ? `${p.promotions} promotions a month` : "0 promotions"}</span>
             </li>
           ))}
         </ul>
@@ -68,7 +69,7 @@ function PlanCard({ plan }: { plan: Plan }) {
         <span className="text-4xl font-extrabold tabular-nums">{rupees(plan.monthly)}</span>
         <span className="text-[14px] text-muted"> / month</span>
         <p className="mt-1 text-[13px] text-muted tabular-nums">
-          {plan.yearly ? <><b className="font-semibold text-brand">{rupees(plan.yearly)} / year</b> · 2 months free</> : "Free for as long as you like"}
+          {plan.yearly ? <>or <b className="font-semibold text-ink">{rupees(plan.yearly)} a year</b> <span className="ml-1 rounded-full bg-amber px-2 py-0.5 text-[11px] font-extrabold uppercase text-amber-ink">2 months free</span></> : "Free for as long as you like"}
         </p>
       </div>
       <p className="flex items-baseline gap-2 rounded-xl bg-brand-tint px-4 py-3">
@@ -100,7 +101,7 @@ export function PlanCards() {
         </p>
         <div className="shrink-0 sm:text-right">
           <span className="block text-2xl font-extrabold tabular-nums">{rupees(EXTRA_PROMOTION)}</span>
-          <span className="block text-[13px] text-muted">per extra promotion, Growth and Pro</span>
+          <span className="block text-[13px] text-muted">per extra promotion, on any plan</span>
         </div>
       </div>
     </section>

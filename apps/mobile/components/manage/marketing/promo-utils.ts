@@ -12,7 +12,7 @@ export const PROMO_STATUS: Record<PromoSummary["status"], Tone> = {
 };
 
 export const PROMO_KIND: Record<PromoSummary["kind"], Tone> = {
-  AI: { label: "AI", ...TONES.violet },
+  AI: { label: "Request", ...TONES.violet },
   MANUAL: { label: "Manual", ...TONES.slate },
 };
 

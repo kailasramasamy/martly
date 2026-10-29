@@ -32,7 +32,7 @@ export function ScheduleFields() {
 
 export function NotifyField({ pushAllowed }: { pushAllowed: boolean }) {
   return (
-    <Form.Item name="notify" label="Notify customers" valuePropName="checked" extra={pushAllowed ? "One push per day at most" : "Push notifications come with the Pro plan"}>
+    <Form.Item name="notify" label="Notify customers" valuePropName="checked" extra={pushAllowed ? "One push per day at most" : "Customer notifications come with Growth and Pro"}>
       <Switch disabled={!pushAllowed} />
     </Form.Item>
   );

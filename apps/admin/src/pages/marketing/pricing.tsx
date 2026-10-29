@@ -4,7 +4,7 @@ import { SaveOutlined, TagsOutlined } from "@ant-design/icons";
 import { BannerPlacementLabels, INDIAN_STATES, BRAND_PRODUCT_KINDS } from "@martly/shared/constants";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
-import { BrandPackagesCard, ImagePacksCard, StorePlansCard, TopupCard } from "./pricing-products";
+import { BrandPackagesCard, StorePlansCard, TopupCard } from "./pricing-products";
 import type { AdProduct } from "./types";
 import { errorMessage } from "./utils";
 import { ReadableSection } from "../../components/ReadableSection";
@@ -17,6 +17,7 @@ interface PricingConfig {
   gstPercent: number;
   slotLimits: SlotLimits;
   freeRegenerations: number;
+  ownerBannerCap?: number;
   featuredBrandSlots: number;
   sellerName: string;
   sellerGstin: string | null;
@@ -75,8 +76,13 @@ function InvoiceCard() {
           </Form.Item>
         </Col>
         <Col xs={24} md={8}>
-          <Form.Item name="freeRegenerations" label="Free AI redrafts per promotion" rules={[{ required: true }]}>
+          <Form.Item name="freeRegenerations" label="Free redrafts per promotion" rules={[{ required: true }]}>
             <InputNumber min={0} precision={0} style={{ width: "100%" }} />
+          </Form.Item>
+        </Col>
+        <Col xs={24} md={8}>
+          <Form.Item name="ownerBannerCap" label="Banners per store per month" extra="Banners a store can have made each month outside promotions. Store owners never see this number.">
+            <InputNumber min={0} max={1000} precision={0} style={{ width: "100%" }} />
           </Form.Item>
         </Col>
         <Col xs={24} md={8}>
@@ -152,7 +158,6 @@ export const MarketingPricing = () => {
       <h2 style={{ marginTop: 0 }}>{sectionTitle(<TagsOutlined />, "Ad pricing")}</h2>
       <StorePlansCard products={ofKind((p) => p.kind === "STORE_PLAN")} patch={patch} />
       <TopupCard products={ofKind((p) => p.kind === "PROMOTION_TOPUP")} patch={patch} />
-      <ImagePacksCard products={ofKind((p) => p.kind === "AI_IMAGE_PACK")} patch={patch} />
       <BrandPackagesCard products={ofKind((p) => BRAND_PRODUCT_KINDS.includes(p.kind))} patch={patch} />
       <Form form={form} layout="vertical">
         <SlotLimitsCard products={products} />

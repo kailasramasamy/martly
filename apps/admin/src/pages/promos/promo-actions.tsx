@@ -55,7 +55,7 @@ function StatusAction({ promo, busy, run, onRetried }: { promo: PromoDetail; bus
         </Popconfirm>
         {promo.kind === "AI" && promo.redraftsLeft > 0 && (
           <Button loading={busy === "redraft"} onClick={() => run("redraft", () => axiosInstance.post(`/promos/${promo.id}/regenerate`), "Drafting again", "Could not redraft")}>
-            Redraft ({promo.redraftsLeft} free {promo.redraftsLeft === 1 ? "redraft" : "redrafts"} left)
+            Redraft ({promo.redraftsLeft} free left)
           </Button>
         )}
       </>

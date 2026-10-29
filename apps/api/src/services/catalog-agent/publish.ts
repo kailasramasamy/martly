@@ -5,6 +5,7 @@ import type { ProcessedShot } from "./images.js";
 import type { Classification } from "./match.js";
 import { uniqueBrandSlug } from "../brands.js";
 import { recordOpeningStock } from "../stock-ledger.js";
+import { chargeListing } from "../marketing/listing-credits.js";
 
 /** Everything the agent decided, kept on the draft so a reviewer can see and correct it */
 export interface Proposal {
@@ -122,6 +123,7 @@ export async function publishNew(prisma: PrismaClient, draft: DraftForPublish, p
       },
       select: { id: true, variants: { select: { id: true } } },
     });
+    await chargeListing(tx, draft.organizationId, product.id);
     const listing = await tx.storeProduct.create({
       data: {
         storeId: draft.storeId, productId: product.id, variantId: product.variants[0].id,

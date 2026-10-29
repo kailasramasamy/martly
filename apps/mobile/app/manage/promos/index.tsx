@@ -7,7 +7,6 @@ import { HeaderAction } from "../../../components/manage/HeaderAction";
 import { ListRow } from "../../../components/manage/ui/ListRow";
 import { StatusPill } from "../../../components/manage/ui/StatusPill";
 import { SegmentedTabs } from "../../../components/manage/ui/SegmentedTabs";
-import { NewPromoSheet } from "../../../components/manage/marketing/NewPromoSheet";
 import { formatDate, timeAgo } from "../../../components/manage/ui/dates";
 import { PROMO_KIND, PROMO_STATUS, discountLabel } from "../../../components/manage/marketing/promo-utils";
 import { usePagedList } from "../../../lib/manage/use-paged-list";
@@ -53,28 +52,17 @@ function PromoRow({ promo: p, onPress }: { promo: PromoSummary; onPress: () => v
 export default function PromosScreen() {
   const router = useRouter();
   const [filter, setFilter] = useState<Filter>("");
-  const [choosing, setChoosing] = useState(false);
   const list = usePagedList<PromoSummary>("/api/v1/promos", { status: filter });
 
   return (
-    <>
-      <ManageListScreen
-        title="Promotions"
-        list={list}
-        filters={<SegmentedTabs options={TABS} value={filter} onChange={setFilter} />}
-        headerRight={() => <HeaderAction onPress={() => setChoosing(true)} accessibilityLabel="New promo" />}
-        empty={{ icon: "megaphone-outline", title: "No promotions", message: "Describe what to promote and the AI drafts a banner, copy and discount." }}
-        renderItem={(p) => <PromoRow promo={p} onPress={() => router.push(`/manage/promos/${p.id}`)} />}
-      />
-      <NewPromoSheet
-        visible={choosing}
-        onPick={(href) => {
-          setChoosing(false);
-          router.push(href as never);
-        }}
-        onClose={() => setChoosing(false)}
-      />
-    </>
+    <ManageListScreen
+      title="Promotions"
+      list={list}
+      filters={<SegmentedTabs options={TABS} value={filter} onChange={setFilter} />}
+      headerRight={() => <HeaderAction onPress={() => router.push("/manage/promos/new")} accessibilityLabel="New promotion" />}
+      empty={{ icon: "megaphone-outline", title: "No promotions", message: "Say what to promote and Martly makes the banner and puts it live." }}
+      renderItem={(p) => <PromoRow promo={p} onPress={() => router.push(`/manage/promos/${p.id}`)} />}
+    />
   );
 }
 

@@ -12,8 +12,6 @@ export interface AdProduct {
   yearlyPrice: number | null;
   durationDays: number;
   promotionCredits: number;
-  aiImagesPerMonth: number;
-  aiImageCredits: number;
   pushIncluded: boolean;
   placement: string | null;
   viewsPerUnit: number | null;
@@ -28,6 +26,7 @@ export interface PricingConfig {
   gstPercent: number;
   slotLimits: SlotLimits;
   freeRegenerations: number;
+  ownerBannerCap: number;
   featuredBrandSlots: number;
   sellerName: string;
   sellerGstin: string | null;

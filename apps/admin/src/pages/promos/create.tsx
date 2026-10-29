@@ -24,13 +24,15 @@ export const PromoCreate = () => {
     <Create title="New promotion" footerButtons={[]}>
       <ReadableSection>
         {isOrgUser && entitlements && <PromoAllowance left={entitlements.promotions.planLeft} topUp={entitlements.promotions.topUpBalance} />}
-        <Segmented<Kind>
-          value={kind}
-          onChange={setKind}
-          options={[{ value: "AI", label: "AI promotion" }, { value: "MANUAL", label: "Manual promotion" }]}
-          style={{ marginBottom: 16 }}
-        />
-        {kind === "AI" ? (
+        {isPlatform && (
+          <Segmented<Kind>
+            value={kind}
+            onChange={setKind}
+            options={[{ value: "AI", label: "Request" }, { value: "MANUAL", label: "Manual promotion" }]}
+            style={{ marginBottom: 16 }}
+          />
+        )}
+        {kind === "AI" || !isPlatform ? (
           <PromoCreateCard entitlements={entitlements} isPlatform={isPlatform} noAllowance={noAllowance} />
         ) : (
           <ManualPromoForm entitlements={entitlements} isOrgUser={isOrgUser} noAllowance={noAllowance} />

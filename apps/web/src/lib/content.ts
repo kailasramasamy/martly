@@ -24,7 +24,7 @@ export interface Step {
 export const steps: Step[] = [
   { icon: "check", title: "Tick what you stock", body: "Go through the catalog by department and brand. Anything you don't carry is hidden.", image: "/screenshots/owners/stock-check.webp" },
   { icon: "tag", title: "Check your prices", body: "Keep the suggested price or change it. Best sellers come first, so you're ready in minutes.", image: "/screenshots/owners/price-review.webp" },
-  { icon: "store", title: "Start taking orders", body: "Your shop goes live on the Martly app and martlyshop.in, with its own address.", image: "/screenshots/owners/orders.webp" },
+  { icon: "store", title: "Start taking orders", body: "Your shop goes live on the Martly app. On Growth and Pro it also gets its own web store on martlyshop.in.", image: "/screenshots/owners/orders.webp" },
 ]
 
 export interface Spotlight {
@@ -120,8 +120,9 @@ export function faqs(townNames: string[]): Faq[] {
 export const ownerFaqs: Faq[] = [
   { q: "Who delivers the orders?", a: "You do, with your own staff, as you do today. Martly plans the trips and your riders use the Martly rider app. Customers can also pick up from your shop." },
   { q: "What do I pay per order?", a: "2% on cash on delivery and wallet orders and 4% on online payments, including payment gateway charges and GST. Plans start free. See the pricing page for details." },
+  { q: "How do promotions work?", a: "Tell us the offer in the app, by typing or speaking in Tamil or English. Martly makes the banner and offer page and puts it live. Growth includes 2 a month and Pro 6. Any store, Free included, can buy one for \u20B9599." },
   { q: "How do I get paid for online orders?", a: "Online payments are settled to your bank account every week, after the order fee." },
-  { q: "Do I need my own app?", a: "No. Your shop gets its own page on the Martly app and on martlyshop.in. If you'd like an app under your own shop's name, we can build one for you as an add-on." },
-  { q: "Can I sell my own packs and local products?", a: "Yes. Popular brands are listed free. Your own brand and local products cost \u20B9100 each to list, and your first 25 are included with onboarding." },
+  { q: "Do I need my own app?", a: "No. Your shop gets its own page on the Martly app, and a web store on martlyshop.in with Growth and Pro. If you'd like an app under your own shop's name, we can build one for you as an add-on." },
+  { q: "Can I sell my own packs and local products?", a: "Yes. Products from the Martly catalog are listed free. Your plan includes 10 of your own or local products on Free, 25 on Growth and 50 on Pro. Each one after that is \u20B9100, one-time." },
   { q: "How do I get started?", a: "Talk to us. We set up your shop, then you tick what you stock and check prices in the app. You start taking orders as soon as that's done." },
 ]

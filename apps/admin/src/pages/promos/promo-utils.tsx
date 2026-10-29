@@ -3,8 +3,8 @@ import { axiosInstance } from "../../providers/data-provider";
 
 export interface CreatePromoBody {
   brief: string;
-  autoLaunch: boolean;
-  notify: boolean;
+  autoLaunch?: boolean;
+  notify?: boolean;
   organizationId?: string;
   imageUrl?: string;
 }
@@ -25,5 +25,5 @@ export async function createPromo(body: CreatePromoBody): Promise<string> {
 }
 
 export function PromoKindTag({ kind }: { kind: "AI" | "MANUAL" }) {
-  return <Tag color={kind === "AI" ? "purple" : "blue"}>{kind === "AI" ? "AI" : "Manual"}</Tag>;
+  return <Tag color={kind === "AI" ? "purple" : "blue"}>{kind === "AI" ? "Requested" : "Manual"}</Tag>;
 }

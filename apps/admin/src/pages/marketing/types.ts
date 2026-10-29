@@ -13,9 +13,6 @@ export interface AdProduct {
   yearlyPrice: number | null;
   durationDays: number;
   promotionCredits: number;
-  aiImagesPerMonth: number;
-  /** AI image packs: images in one pack */
-  aiImageCredits: number;
   pushIncluded: boolean;
   placement: string | null;
   viewsPerUnit: number | null;
@@ -40,14 +37,14 @@ export type BillingValues = {
 };
 
 export interface Entitlements {
-  plan: { id: string; code: string; name: string; price: number; promotionCredits: number; pushIncluded: boolean; aiImagesPerMonth: number; billingInterval: BillingInterval } | null;
+  plan: { id: string; code: string; name: string; price: number; promotionCredits: number; pushIncluded: boolean; billingInterval: BillingInterval } | null;
   period: { startsAt: string; endsAt: string } | null;
   paidThrough: string | null;
   promotions: { planUsed: number; planTotal: number; planLeft: number; topUpBalance: number; resetsAt: string | null };
+  listings: { included: number; used: number; planLeft: number; extraBalance: number; unlimited: boolean };
   pushIncluded: boolean;
-  aiImages: { used: number; total: number; planLeft: number; packBalance: number; left: number; resetsAt: string | null };
   onPaidPlan: boolean;
-  trial: { available: boolean; endsAt: string | null; promotionCredits: number; aiImagesPerMonth: number };
+  trial: { available: boolean; endsAt: string | null };
   subscription: {
     status: "CREATED" | "ACTIVE" | "PENDING" | "HALTED";
     productName: string;
@@ -56,4 +53,14 @@ export interface Entitlements {
     cancelAtPeriodEnd: boolean;
     renewsAt: string | null;
   } | null;
+}
+
+export interface Subscriber {
+  id: string;
+  name: string;
+  webStoreAlwaysOn: boolean;
+  unlimitedListings: boolean;
+  plan: { name: string; code: string } | null;
+  currentUntil: string | null;
+  paidThrough: string | null;
 }

@@ -5,7 +5,7 @@ import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { verifySubscriptionSignature } from "../../services/payment.js";
 import { getEntitlements } from "../../services/marketing/entitlements.js";
-import { cancelSubscription, recordSubscriptionCharge, startSubscription, startTrial } from "../../services/marketing/subscriptions.js";
+import { cancelSubscription, recordSubscriptionCharge, startSubscription } from "../../services/marketing/subscriptions.js";
 
 const owner = { preHandler: [authenticate, requireRole("ORG_ADMIN")] };
 const verifySchema = z.object({
@@ -52,12 +52,6 @@ export async function subscriptionRoutes(app: FastifyInstance) {
   app.post("/subscription/cancel", owner, async (request) => {
     const organizationId = getOrgUser(request).organizationId!;
     await cancelSubscription(app.prisma, organizationId);
-    return { success: true, data: await entitlements(organizationId) };
-  });
-
-  app.post("/trial", owner, async (request) => {
-    const organizationId = getOrgUser(request).organizationId!;
-    await startTrial(app.prisma, organizationId);
     return { success: true, data: await entitlements(organizationId) };
   });
 }

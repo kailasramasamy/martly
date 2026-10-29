@@ -1,10 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router"
+import { createFileRoute, notFound } from "@tanstack/react-router"
 import { getBestSellers } from "~/lib/api"
 import { pageHead } from "~/lib/seo"
 import { ListPageView } from "~/components/list-page"
 
 export const Route = createFileRoute("/best-sellers")({
-  loader: () => getBestSellers(),
+  loader: async () => {
+    const page = await getBestSellers()
+    if (!page) throw notFound()
+    return page
+  },
   head: ({ loaderData }) => pageHead({
     title: `Best sellers at ${loaderData?.store.name ?? "your store"} | Martly`,
     description: `What shoppers at ${loaderData?.store.name ?? "your store"} bought most this month.`,

@@ -62,7 +62,7 @@ export function FestivalSheet({ event, canEdit, curating, onCurate, onEdit, onCl
           <KeyValue label="Regions" value={event.regions.map((r) => FESTIVAL_REGIONS[r as keyof typeof FESTIVAL_REGIONS] ?? r).join(", ")} />
           {event.collections.length === 0 ? <KeyValue label="Curated" value="Not curated" /> : null}
           {event.collections.map((c) => (
-            <KeyValue key={c.id} label={`${c.source === "AGENT" ? "AI \u00B7 " : ""}${c.title}`} value={c.isActive ? "Active" : "Vetoed"} valueColor={c.isActive ? TONES.green.color : TONES.red.color} />
+            <KeyValue key={c.id} label={c.title} value={c.isActive ? "Active" : "Vetoed"} valueColor={c.isActive ? TONES.green.color : TONES.red.color} />
           ))}
         </View>
       ) : null}

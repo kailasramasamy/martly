@@ -14,7 +14,8 @@ const PRODUCT_PREVIEW = 12;
 
 export function DraftingProgress({ log }: { log: PromoDetail["log"] }) {
   return (
-    <SectionCard title="Drafting - usually about a minute">
+    <SectionCard title="Getting your promotion ready…">
+      <Text style={styles.note}>It goes live by itself in a few minutes.</Text>
       {log.map((entry, i) => (
         <KeyValue key={`${entry.at}-${i}`} label={new Date(entry.at).toLocaleTimeString("en-IN")} value={entry.message} />
       ))}
@@ -99,6 +100,7 @@ export function PromoProducts({ promo, busy, onRemove }: ProductsProps) {
 }
 
 const styles = StyleSheet.create({
+  note: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, lineHeight: 18, marginBottom: 8 },
   lang: { fontFamily: fonts.bold, fontSize: 11, color: colors.textSecondary, letterSpacing: 0.6, textTransform: "uppercase", marginBottom: 6 },
   copy: { marginTop: 8 },
   copyTitle: { fontFamily: fonts.bold, fontSize: 15, color: colors.text },

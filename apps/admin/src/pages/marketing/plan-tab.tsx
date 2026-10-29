@@ -1,15 +1,14 @@
 import { useState } from "react";
-import { Alert, Button, Card, Col, InputNumber, Popconfirm, Progress, Row, Segmented, Space, Tag, Tooltip, Typography } from "antd";
+import { Alert, Button, Card, Col, Popconfirm, Progress, Row, Segmented, Space, Tag, Tooltip, Typography } from "antd";
 import { CheckOutlined } from "@ant-design/icons";
 import dayjs from "dayjs";
-import { PackList } from "../../components/ai-images/pack-list";
 import { formatRupees } from "../promos/promo-utils";
 import { usePlanActions } from "./use-plan-actions";
+import { TopupCard } from "./topup-card";
 import { usePurchase } from "./use-purchase";
 import type { AdProduct, BillingInterval, BillingProfile, Entitlements } from "./types";
 
 const { Text, Title } = Typography;
-const MAX_TOPUP = 12;
 const OWNER_ONLY = "Only the owner can buy";
 
 interface PlanTabProps {
@@ -45,7 +44,6 @@ interface RenewalProps {
 
 function RenewalInfo({ e, canBuy, acting, onCancel, onTurnOn }: RenewalProps) {
   const sub = e.subscription;
-  if (e.trial.endsAt) return <Tag color="gold">Free trial · ends {fmtDate(e.trial.endsAt)}</Tag>;
   if (sub?.status === "ACTIVE" && sub.renewsAt && !sub.cancelAtPeriodEnd) {
     return (
       <Space>
@@ -71,11 +69,6 @@ function RenewalInfo({ e, canBuy, acting, onCancel, onTurnOn }: RenewalProps) {
   return <Tag>Free plan</Tag>;
 }
 
-function aiImagesDetail({ packBalance, resetsAt }: Entitlements["aiImages"]) {
-  const reset = resetsAt ? ` · resets ${fmtDate(resetsAt)}` : "";
-  return ` · ${packBalance} pack ${packBalance === 1 ? "image" : "images"}${reset}`;
-}
-
 function UsageCard(props: RenewalProps) {
   const { e } = props;
   const { promotions } = e;
@@ -86,7 +79,6 @@ function UsageCard(props: RenewalProps) {
         <Title level={4} style={{ margin: 0 }}>{e.plan?.name ?? "Free plan"}{e.plan?.billingInterval === "YEARLY" && " (billed yearly)"}</Title>
         <RenewalInfo {...props} />
       </Space>
-      {e.trial.endsAt && <div style={{ marginBottom: 12 }}><Text type="secondary">Choose a plan to keep going after the trial</Text></div>}
       {e.subscription?.status === "HALTED" && activeUntil && (
         <Alert
           type="warning"
@@ -101,33 +93,14 @@ function UsageCard(props: RenewalProps) {
         total={promotions.planTotal}
         detail={` · ${promotions.planLeft} left + ${promotions.topUpBalance} extra`}
       />
-      <Meter label="AI images this month" used={e.aiImages.used} total={e.aiImages.total} detail={aiImagesDetail(e.aiImages)} />
-      <Text>Push notifications: {e.pushIncluded ? <Tag color="green">Included</Tag> : <Tag>Not included</Tag>}</Text>
-    </Card>
-  );
-}
-
-function TrialCard({ trial, canBuy, acting, onStart }: {
-  trial: { promotionCredits: number; aiImagesPerMonth: number }; canBuy: boolean; acting: boolean; onStart: () => void;
-}) {
-  return (
-    <Card size="small" style={{ marginBottom: 16, borderColor: "#0d9488", background: "rgba(13, 148, 136, 0.06)" }}>
-      <Space style={{ justifyContent: "space-between", width: "100%" }} wrap>
-        <Title level={5} style={{ margin: 0 }}>Try Growth free for 14 days — {trial.promotionCredits} promotions and {trial.aiImagesPerMonth} AI images, no payment needed</Title>
-        <Tooltip title={canBuy ? undefined : OWNER_ONLY}>
-          <Button type="primary" disabled={!canBuy} loading={acting} onClick={onStart}>Start free trial</Button>
-        </Tooltip>
-      </Space>
+      <Text>Customer notifications: {e.pushIncluded ? <Tag color="green">Included</Tag> : <Tag>Not included</Tag>}</Text>
     </Card>
   );
 }
 
 function planFeatures(p: AdProduct): string[] {
-  return [
-    `${p.promotionCredits} promotions a month`,
-    `${p.aiImagesPerMonth} AI images a month`,
-    p.pushIncluded ? "Push notifications included" : "No push notifications",
-  ];
+  if (p.promotionCredits === 0) return ["Your store on the Martly app and martlyshop.in"];
+  return [`${p.promotionCredits} promotions a month`, ...(p.pushIncluded ? ["Offer notifications to your customers"] : [])];
 }
 
 const FREE_NOTE = "You're on this plan whenever no paid plan is running.";
@@ -210,46 +183,20 @@ function PlanCards({ plans, interval, e, canBuy, buying, buy }: PlanCardsProps) 
   );
 }
 
-function TopupCard({ product, canBuy, onPaidPlan, buying, buy }: { product: AdProduct; canBuy: boolean; onPaidPlan: boolean; buying: string | null; buy: (p: AdProduct, quantity: number) => void }) {
-  const [quantity, setQuantity] = useState(1);
-  return (
-    <Card size="small" title="Extra promotion" style={{ height: "100%" }}>
-      <Space wrap>
-        <Text>{formatRupees(product.price)} each +{product.gstPercent}% GST</Text>
-        <InputNumber min={1} max={MAX_TOPUP} precision={0} value={quantity} onChange={(v) => setQuantity(v ?? 1)} />
-        <Tooltip title={canBuy ? undefined : OWNER_ONLY}>
-          <Button type="primary" disabled={!canBuy || !onPaidPlan} loading={buying === product.id} onClick={() => buy(product, quantity)}>
-            {onPaidPlan ? `Buy ${quantity * product.promotionCredits} ${quantity * product.promotionCredits === 1 ? "promotion" : "promotions"}` : "Extra promotions are available on Growth and Pro"}
-          </Button>
-        </Tooltip>
-      </Space>
-    </Card>
-  );
-}
-
-function ImagePacksCard({ packs, canBuy, buying, buy }: { packs: AdProduct[]; canBuy: boolean; buying: string | null; buy: (p: AdProduct) => void }) {
-  return (
-    <Card size="small" title="AI image packs" style={{ height: "100%" }}>
-      <Text type="secondary">Used after your monthly AI images run out; they never expire.</Text>
-      <PackList packs={packs} canBuy={canBuy} buying={buying} buy={buy} />
-    </Card>
-  );
-}
-
 export function PlanTab({ entitlements, products, profile, canBuy, onProfileSaved, onPaid }: PlanTabProps) {
   const { buying, buy, modal } = usePurchase(profile, onProfileSaved, onPaid);
-  const { acting, startTrial, cancelRenewal } = usePlanActions(onPaid);
+  const { acting, cancelRenewal } = usePlanActions(onPaid);
   const [interval, setPlanInterval] = useState<BillingInterval>(entitlements.plan?.billingInterval ?? "MONTHLY");
   const plans = products.filter((p) => p.kind === "STORE_PLAN");
   const topup = products.find((p) => p.kind === "PROMOTION_TOPUP");
-  const imagePacks = products.filter((p) => p.kind === "AI_IMAGE_PACK");
+  const listingTopup = products.find((p) => p.kind === "LISTING_TOPUP");
+  const { listings } = entitlements;
   // Turning auto-renew back on buys the plan that was renewing again, from the end of the paid time
   const renewingProduct = plans.find((p) => p.code === entitlements.subscription?.productCode);
   return (
     <>
       <UsageCard e={entitlements} canBuy={canBuy} acting={acting === "cancel"} onCancel={cancelRenewal} onTurnOn={() => renewingProduct && buy(renewingProduct, 1, entitlements.subscription?.interval)} />
-      {entitlements.trial.available && <TrialCard trial={entitlements.trial} canBuy={canBuy} acting={acting === "trial"} onStart={startTrial} />}
-      <Alert type="info" showIcon style={{ marginBottom: 16 }} message="Upgrading starts now; unused days of your current plan carry over as extra days (a free trial carries none). Switching to a cheaper plan starts after your current month." />
+      <Alert type="info" showIcon style={{ marginBottom: 16 }} message="Upgrading starts now; unused days of your current plan carry over as extra days. Switching to a cheaper plan starts after your current month." />
       <Segmented
         style={{ marginBottom: 16 }}
         value={interval}
@@ -257,10 +204,25 @@ export function PlanTab({ entitlements, products, profile, canBuy, onProfileSave
         options={[{ value: "MONTHLY", label: "Monthly" }, { value: "YEARLY", label: "Annual · 2 months free" }]}
       />
       <PlanCards plans={plans} interval={interval} e={entitlements} canBuy={canBuy} buying={buying} buy={buy} />
-      {/* Side by side on wide screens, stacked on narrow ones */}
       <Row gutter={[16, 16]} style={{ marginTop: 16 }}>
-        {topup && <Col xs={24} lg={12}><TopupCard product={topup} canBuy={canBuy} onPaidPlan={entitlements.onPaidPlan} buying={buying} buy={buy} /></Col>}
-        {imagePacks.length > 0 && <Col xs={24} lg={12}><ImagePacksCard packs={imagePacks} canBuy={canBuy} buying={buying} buy={(p) => buy(p)} /></Col>}
+        {topup && (
+          <Col xs={24} lg={12}>
+            <TopupCard
+              title="Extra promotion" product={topup} canBuy={canBuy} buying={buying} buy={buy}
+              buyLabel={(q) => `Buy ${q * topup.promotionCredits} ${q * topup.promotionCredits === 1 ? "promotion" : "promotions"}`}
+            />
+          </Col>
+        )}
+        {listingTopup && (
+          <Col xs={24} lg={12}>
+            <TopupCard
+              title="Your own products" product={listingTopup} canBuy={canBuy} buying={buying} buy={buy}
+              status={listings.unlimited ? "Unlimited own products (set by Martly)" : `${listings.used} of ${listings.included} free listings used · ${listings.extraBalance} extra left`}
+              description="For your own or local products beyond your plan's free listings. One-time; they never expire."
+              buyLabel={(q) => `Buy ${q} ${q === 1 ? "listing" : "listings"}`}
+            />
+          </Col>
+        )}
       </Row>
       {modal}
     </>

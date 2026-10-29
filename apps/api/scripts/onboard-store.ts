@@ -25,6 +25,7 @@ import { assertEmailFree } from "../src/services/onboarding/owner.js";
 import { cleanLogo } from "../src/services/brand-logo.js";
 import { uniqueBrandSlug } from "../src/services/brands.js";
 import { putObject } from "../src/services/media.js";
+import { launchStore } from "../src/services/onboarding/launch.js";
 import { draftCollection } from "../src/services/collection-ai-draft.js";
 
 const LOGIN_DOMAIN = "martlyshop.in";
@@ -229,8 +230,8 @@ async function checkAndLaunch(spec: Spec, store: Store) {
   const blocking = checks.filter((c) => c.required && !c.ok);
   if (store.status !== "PENDING" || !spec.launch) return;
   if (blocking.length) throw new Error(`Not launched: ${blocking.map((c) => c.label).join(", ")}`);
-  await prisma.store.update({ where: { id: store.id }, data: { status: "ACTIVE", launchedAt: new Date() } });
-  step("Launched");
+  await launchStore(prisma, store.id);
+  step("Launched, with 90 days of Growth on a first launch");
 }
 
 async function main() {

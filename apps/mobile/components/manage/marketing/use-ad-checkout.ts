@@ -32,6 +32,7 @@ function useBillingGate(run: ReturnType<typeof useAction>["run"]) {
 /** Buy a marketing product: billing details first, then Razorpay (order or auto-renewing subscription) and server-side verification */
 export function useAdCheckout(onPaid: () => void) {
   const toast = useToast();
+  const router = useRouter();
   const { run, running } = useAction();
   const billingReady = useBillingGate(run);
   const [order, setOrder] = useState<AdOrderCheckout | null>(null);
@@ -69,8 +70,10 @@ export function useAdCheckout(onPaid: () => void) {
     if (!pending) return;
     const verified = await run(() => api.post("/api/v1/marketing/subscription/verify", payment));
     if (!verified) return;
-    toast.show(pending.startsAt ? `Your ${pending.planName} plan starts on ${formatDate(pending.startsAt)}; no charge until then` : "Payment received", "success");
     onPaid();
+    // A plan that starts now opens its confirmation: what's included and the web store it switched on
+    if (pending.startsAt) toast.show(`Your ${pending.planName} plan starts on ${formatDate(pending.startsAt)}; no charge until then`, "success");
+    else router.push("/manage/marketing-plan/active");
   };
 
   return { buy, buyFromBalance, subscribe, order, subscription, running, onSuccess, onSubscribed, onCancel: () => { setOrder(null); setSubscription(null); } };

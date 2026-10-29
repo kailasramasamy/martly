@@ -41,13 +41,12 @@ export function StorePlansCard({ products, patch }: TableProps) {
     { title: "Price / month", dataIndex: "price", width: 130, render: (v: number, r: AdProduct) => rupeeInput(v, (price) => patch(r.id, { price })) },
     { title: "Price / year", dataIndex: "yearlyPrice", width: 130, render: (v: number | null, r: AdProduct) => yearlyPriceInput(v, (yearlyPrice) => patch(r.id, { yearlyPrice })) },
     { title: "Promotions / month", dataIndex: "promotionCredits", width: 130, render: (v: number, r: AdProduct) => countInput(v, (n) => patch(r.id, { promotionCredits: n })) },
-    { title: "AI images / month", dataIndex: "aiImagesPerMonth", width: 130, render: (v: number, r: AdProduct) => countInput(v, (n) => patch(r.id, { aiImagesPerMonth: n })) },
     { title: "Push included", dataIndex: "pushIncluded", width: 100, render: (v: boolean, r: AdProduct) => <Switch checked={v} onChange={(c) => patch(r.id, { pushIncluded: c })} /> },
     onSaleColumn(patch),
   ];
   return (
     <Card title="Store plans" size="small" style={{ marginBottom: 16 }}>
-      <Table size="small" rowKey="id" pagination={false} dataSource={products} columns={columns} scroll={{ x: 1230 }} />
+      <Table size="small" rowKey="id" pagination={false} dataSource={products} columns={columns} scroll={{ x: 1100 }} />
     </Card>
   );
 }
@@ -61,21 +60,6 @@ export function TopupCard({ products, patch }: TableProps) {
   return (
     <Card title="Extra promotion" size="small" style={{ marginBottom: 16 }}>
       <Table size="small" rowKey="id" pagination={false} dataSource={products} columns={columns} />
-    </Card>
-  );
-}
-
-export function ImagePacksCard({ products, patch }: TableProps) {
-  const columns = [
-    ...textColumns(patch),
-    { title: "Price", dataIndex: "price", width: 130, render: (v: number, r: AdProduct) => rupeeInput(v, (price) => patch(r.id, { price })) },
-    { title: "Images per pack", dataIndex: "aiImageCredits", width: 140, render: (v: number, r: AdProduct) => countInput(v, (n) => patch(r.id, { aiImageCredits: n }), 1) },
-    { title: "Sort order", dataIndex: "sortOrder", width: 100, render: (v: number, r: AdProduct) => countInput(v, (n) => patch(r.id, { sortOrder: n })) },
-    onSaleColumn(patch),
-  ];
-  return (
-    <Card title="AI image packs" size="small" style={{ marginBottom: 16 }}>
-      <Table size="small" rowKey="id" pagination={false} dataSource={products} columns={columns} scroll={{ x: 900 }} />
     </Card>
   );
 }

@@ -59,11 +59,10 @@ function statusLine(check: StorefrontCheckResult | undefined, meta: StorefrontCh
 
 // What setting it up spends from the plan, and whether there's any left
 function AllowanceNote({ meta, allowance }: { meta: StorefrontCheckMeta & { uses: NonNullable<StorefrontCheckMeta["uses"]> }; allowance: StorefrontHealth["allowance"] }) {
-  const left = meta.uses === "PROMOTION" ? allowance.promotions : allowance.aiImages;
-  const what = meta.uses === "PROMOTION" ? "promotion" : "AI image";
-  return left > 0
-    ? <Typography.Text type="secondary" style={{ fontSize: 12 }}>Uses 1 {what} · {left} left this month</Typography.Text>
-    : <Tag color="volcano">No {what}s left: plan upgrade or top-up needed</Tag>;
+  if (meta.uses !== "PROMOTION") return null;
+  return allowance.promotions > 0
+    ? <Typography.Text type="secondary" style={{ fontSize: 12 }}>Uses 1 promotion · {allowance.promotions} left this month</Typography.Text>
+    : <Tag color="volcano">No promotions left: plan upgrade or top-up needed</Tag>;
 }
 
 function SuggestionRow({ s, storeId, health, onDraft }: { s: StorefrontSuggestion; storeId: string; health: StorefrontHealth; onDraft: Props["onDraft"] }) {
@@ -74,7 +73,7 @@ function SuggestionRow({ s, storeId, health, onDraft }: { s: StorefrontSuggestio
   return (
     <List.Item actions={[
       <Link key="open" to={adminLink(meta.adminPath, storeId)}>Open</Link>,
-      draft && <Button key="ai" size="small" type="primary" ghost onClick={() => onDraft(draft)}>Draft with AI</Button>,
+      draft && <Button key="ai" size="small" type="primary" ghost onClick={() => onDraft(draft)}>Draft for me</Button>,
     ].filter(Boolean)}>
       <List.Item.Meta
         title={<Space>{meta.title.en}<Tag color="green">+{s.gain} pts</Tag></Space>}

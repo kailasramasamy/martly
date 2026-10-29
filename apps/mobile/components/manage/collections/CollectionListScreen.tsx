@@ -32,7 +32,7 @@ export function CollectionListScreen() {
           <ListRow
             title={c.title}
             subtitle={`${c._count.items} products · ${kind}`}
-            caption={[c.source === "AGENT" ? "AI-curated" : null, c.organizationId ? c.organization?.name : "Global"].filter(Boolean).join(" · ")}
+            caption={[c.source === "AGENT" ? "Made by Martly" : null, c.organizationId ? c.organization?.name : "Global"].filter(Boolean).join(" · ")}
             imageUrl={c.imageUrl}
             railColor={status.color}
             trailing={<StatusPill label={status.label} color={status.color} bg={status.bg} />}

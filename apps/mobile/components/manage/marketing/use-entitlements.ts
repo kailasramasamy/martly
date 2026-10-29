@@ -3,7 +3,7 @@ import { toQuery } from "../../../lib/manage/query";
 import { useManageScope } from "../../../lib/manage-scope-context";
 import type { Entitlements } from "./plan-types";
 
-/** What the organization's marketing plan allows right now (promotions, AI images, push) */
+/** What the organization's marketing plan allows right now (promotions, push) */
 export function useEntitlements() {
   const { organizationId } = useManageScope();
   const resource = useResource<Entitlements>(`/api/v1/marketing/entitlements${toQuery({ organizationId })}`);
@@ -11,3 +11,5 @@ export function useEntitlements() {
 }
 
 export const promotionsLeft = (e: Entitlements) => e.promotions.planLeft + e.promotions.topUpBalance;
+
+export const listingsLeft = (e: Entitlements) => (e.listings.unlimited ? Infinity : e.listings.planLeft + e.listings.extraBalance);

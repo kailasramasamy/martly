@@ -4,6 +4,7 @@ import { getHomeSections } from "~/lib/api"
  *  HTML, so the hero and the first rows are there for search engines and first paint */
 export async function loadHomePage(store?: { id: string; town: string }) {
   const first = await getHomeSections({ data: { store } })
+  if (!first) return null
   const second = first.nextCursor ? await getHomeSections({ data: { cursor: first.nextCursor, store } }) : null
   const sections = [...first.sections, ...(second?.sections ?? [])]
   // The store's own banners lead the page, under its header, instead of where the layout puts them
@@ -17,4 +18,4 @@ export async function loadHomePage(store?: { id: string; town: string }) {
   }
 }
 
-export type HomePageData = Awaited<ReturnType<typeof loadHomePage>>
+export type HomePageData = NonNullable<Awaited<ReturnType<typeof loadHomePage>>>

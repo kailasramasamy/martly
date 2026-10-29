@@ -4,9 +4,8 @@ import { DeleteOutlined, HomeOutlined, ReloadOutlined, SaveOutlined } from "@ant
 import { isAxiosError } from "axios";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
-import { AI_IMAGE_COST, festivalCardTheme, type HeroCardTheme } from "@martly/shared/constants";
-import { AiImageUsage } from "../../components/ai-images/ai-image-usage";
-import { canAfford, useAiImages } from "../../hooks/use-ai-images";
+import { festivalCardTheme, type HeroCardTheme } from "@martly/shared/constants";
+import { isAiImagesExhausted } from "../../components/ai-images/exhausted";
 import { ReplaceImageButton } from "./replace-image-button";
 
 interface HeroTile {
@@ -123,7 +122,7 @@ function HeroPreview({ record }: { record: HomeHeroRecord }) {
   );
 }
 
-function useAction(onDone: () => void, ai: ReturnType<typeof useAiImages>) {
+function useAction(onDone: () => void) {
   const { message } = App.useApp();
   const [busy, setBusy] = useState<string | null>(null);
 
@@ -133,9 +132,11 @@ function useAction(onDone: () => void, ai: ReturnType<typeof useAiImages>) {
       await call();
       message.success(success);
       onDone();
-      void ai.refresh();
     } catch (err) {
-      if (ai.handleExhausted(err)) return;
+      if (isAiImagesExhausted(err)) {
+        message.warning(err.response?.data.message);
+        return;
+      }
       if (!isAxiosError(err)) throw err;
       message.error(err.response?.data?.message ?? failure);
     } finally {
@@ -225,14 +226,11 @@ function TileRow({ collectionId, tile, groups, run, busy, onChanged }: {
   );
 }
 
-const HERO_USAGE_NOTE = "unused tiles are given back";
-
-function HeroActions({ busy, ai, onRegenerate, onRemove }: { busy: string | null; ai: ReturnType<typeof useAiImages>; onRegenerate: () => void; onRemove: () => void }) {
+function HeroActions({ busy, onRegenerate, onRemove }: { busy: string | null; onRegenerate: () => void; onRemove: () => void }) {
   return (
     <Space>
-      <AiImageUsage usage={ai.usage} cost={AI_IMAGE_COST.FESTIVE_HERO} upTo note={HERO_USAGE_NOTE} onBuy={ai.openBuy} />
       <Popconfirm title="Repaints the background and all tiles; edits are lost" onConfirm={onRegenerate}>
-        <Button size="small" icon={<ReloadOutlined />} loading={busy === "regenerate"} disabled={!canAfford(ai.usage, AI_IMAGE_COST.FESTIVE_HERO)}>Regenerate</Button>
+        <Button size="small" icon={<ReloadOutlined />} loading={busy === "regenerate"}>Regenerate</Button>
       </Popconfirm>
       <Popconfirm title="Remove the hero? Home falls back to the banner carousel" onConfirm={onRemove}>
         <Button size="small" danger icon={<DeleteOutlined />} loading={busy === "remove"}>Remove hero</Button>
@@ -242,8 +240,7 @@ function HeroActions({ busy, ai, onRegenerate, onRemove }: { busy: string | null
 }
 
 export const HomeHeroCard = ({ record, onChanged }: { record: HomeHeroRecord; onChanged: () => void }) => {
-  const ai = useAiImages();
-  const { busy, run } = useAction(onChanged, ai);
+  const { busy, run } = useAction(onChanged);
   const groups = useSubcategoryGroups();
   const hasHero = !!record.heroImageUrl;
 
@@ -264,18 +261,16 @@ export const HomeHeroCard = ({ record, onChanged }: { record: HomeHeroRecord; on
           A live festival's hero replaces the home banner carousel. Generating paints the background and tiles; takes 1–2 minutes.
         </Typography.Paragraph>
         <Space wrap>
-          <Button type="primary" icon={<ReloadOutlined />} loading={busy === "regenerate"} disabled={!canAfford(ai.usage, AI_IMAGE_COST.FESTIVE_HERO)} onClick={regenerate}>
+          <Button type="primary" icon={<ReloadOutlined />} loading={busy === "regenerate"} onClick={regenerate}>
             Generate hero
           </Button>
-          <AiImageUsage usage={ai.usage} cost={AI_IMAGE_COST.FESTIVE_HERO} upTo note={HERO_USAGE_NOTE} onBuy={ai.openBuy} />
         </Space>
-        {ai.buyModal}
       </Card>
     );
   }
 
   return (
-    <Card title={sectionTitle(<HomeOutlined />, "Home Hero")} size="small" extra={<HeroActions busy={busy} ai={ai} onRegenerate={regenerate} onRemove={remove} />} style={{ marginTop: 16 }}>
+    <Card title={sectionTitle(<HomeOutlined />, "Home Hero")} size="small" extra={<HeroActions busy={busy} onRegenerate={regenerate} onRemove={remove} />} style={{ marginTop: 16 }}>
       <Space size={24} align="start" wrap>
         <Space direction="vertical" size={8}>
           <HeroPreview record={record} />
@@ -294,7 +289,6 @@ export const HomeHeroCard = ({ record, onChanged }: { record: HomeHeroRecord; on
           ))}
         </Space>
       </Space>
-      {ai.buyModal}
     </Card>
   );
 };

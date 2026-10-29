@@ -11,21 +11,17 @@ import type { Entitlements } from "../marketing/plan-types";
 import { CHECK_STATUS, useBilingual } from "./storefront";
 
 const PLAN_HREF = "/manage/marketing-plan";
-const COST: Record<NonNullable<StorefrontCheckMeta["uses"]>, string> = {
-  PROMOTION: "Setting this up uses 1 promotion from your plan.",
-  AI_IMAGES: "An AI-made banner uses 1 AI image from your plan.",
-};
+const PROMOTION_COST = "Setting this up uses 1 promotion from your plan.";
 const NOT_COUNTED: Record<StorefrontCheckResult["status"], string> = {
   ON: "On", PARTIAL: "Started", STALE: "Was on, has lapsed", OFF: "Not set up yet", NA: "Not needed",
 };
 
 /** What a setup step would spend from the plan, or null when it's free or the plan isn't known */
 export function allowanceLeft(meta: StorefrontCheckMeta, plan: Entitlements | null) {
-  if (!meta.uses || !plan) return null;
-  return meta.uses === "PROMOTION" ? promotionsLeft(plan) : plan.aiImages.left;
+  return meta.uses === "PROMOTION" && plan ? promotionsLeft(plan) : null;
 }
 
-/** A promotion-backed step can't be done at all with no promotions left; AI images are only for the optional AI banner */
+/** A promotion-backed step can't be done at all with no promotions left */
 export const blockedByPlan = (meta: StorefrontCheckMeta, plan: Entitlements | null) => meta.uses === "PROMOTION" && allowanceLeft(meta, plan) === 0;
 
 function useStatusLine(check: StorefrontCheckResult, meta: StorefrontCheckMeta) {
@@ -40,7 +36,7 @@ function useStatusLine(check: StorefrontCheckResult, meta: StorefrontCheckMeta) 
 
 function PlanNudge({ plan }: { plan: Entitlements }) {
   const router = useRouter();
-  const label = plan.trial.available ? "Try Growth free for 14 days" : plan.onPaidPlan ? "Buy more or upgrade" : "See plans";
+  const label = plan.onPaidPlan ? "Buy more or upgrade" : "See plans";
   return (
     <View style={styles.nudge}>
       <Text style={styles.nudgeText}>
@@ -63,11 +59,11 @@ export function StepStatus({ check, meta, plan }: { check: StorefrontCheckResult
       {counted && (
         <View style={styles.track}><View style={[styles.fill, { width: `${Math.min(100, ((check.have ?? 0) / (check.need ?? 1)) * 100)}%` }]} /></View>
       )}
-      {meta.uses && plan && left !== null && (
+      {plan && left !== null && (
         <View style={styles.plan}>
-          <Text style={styles.cost}>{COST[meta.uses]}</Text>
+          <Text style={styles.cost}>{PROMOTION_COST}</Text>
           <Text style={[styles.left, tabular, left === 0 && styles.out]}>
-            {`${plan.plan?.name ?? "Free plan"}: ${left} ${meta.uses === "PROMOTION" ? "promotions" : "AI images"} left this month`}
+            {`${plan.plan?.name ?? "Free plan"}: ${left} promotions left this month`}
           </Text>
           {left === 0 && <PlanNudge plan={plan} />}
         </View>

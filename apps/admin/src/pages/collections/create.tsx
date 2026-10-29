@@ -1,18 +1,17 @@
 import { useRef, useState } from "react";
 import { Create, useForm, useSelect } from "@refinedev/antd";
 import { useNavigation } from "@refinedev/core";
-import { App, Form, Input, InputNumber, Select, Switch, Card, Row, Col, DatePicker, Checkbox, Space, Typography } from "antd";
+import { App, Form, Input, InputNumber, Select, Switch, Card, Row, Col, DatePicker, Checkbox, Typography } from "antd";
 import type { FormInstance } from "antd";
 import { isAxiosError } from "axios";
-import { AI_IMAGE_COST, CollectionKindLabels, EDITABLE_COLLECTION_KINDS } from "@martly/shared/constants";
+import { CollectionKindLabels, EDITABLE_COLLECTION_KINDS } from "@martly/shared/constants";
 import { toSchedulePayload } from "./schedule";
 import { AppstoreOutlined } from "@ant-design/icons";
 import { ImageUpload } from "../../components/ImageUpload";
 import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../../components/ReadableSection";
 import { axiosInstance } from "../../providers/data-provider";
-import { AiImageUsage } from "../../components/ai-images/ai-image-usage";
-import { useAiImages } from "../../hooks/use-ai-images";
+import { isAiImagesExhausted } from "../../components/ai-images/exhausted";
 import { AiBuilderCard, type DraftProduct } from "./ai-builder-card";
 
 type CreateValues = Record<string, unknown> & { titleTa?: string; subtitleTa?: string; generateBanner?: boolean };
@@ -26,16 +25,12 @@ function toPayload({ titleTa, subtitleTa, generateBanner: _banner, ...values }: 
 // Shown once an AI draft has set the banner's art direction
 function BannerOption({ form }: { form: FormInstance }) {
   const artDirection = Form.useWatch("artDirection", form) as string | undefined;
-  const ai = useAiImages();
   if (!artDirection) return null;
   return (
-    <Form.Item label="AI banner" extra={<Typography.Text type="secondary">Art direction: {artDirection}</Typography.Text>}>
-      <Space wrap>
-        <Form.Item name="generateBanner" valuePropName="checked" initialValue noStyle>
-          <Checkbox>Draw the banner when I save</Checkbox>
-        </Form.Item>
-        <AiImageUsage usage={ai.usage} cost={AI_IMAGE_COST.COLLECTION_BANNER} onBuy={ai.openBuy} />
-      </Space>
+    <Form.Item label="Banner" extra={<Typography.Text type="secondary">Art direction: {artDirection}</Typography.Text>}>
+      <Form.Item name="generateBanner" valuePropName="checked" initialValue noStyle>
+        <Checkbox>Draw the banner when I save</Checkbox>
+      </Form.Item>
     </Form.Item>
   );
 }
@@ -51,8 +46,9 @@ function useBannerAfterCreate() {
         await axiosInstance.post(`/collections/${id}/regenerate-banner`, undefined, { timeout: 240000 });
         message.success({ content: "Banner drawn", key: "banner" });
       } catch (err) {
-        if (!isAxiosError(err)) throw err;
-        message.error({ content: err.response?.data?.message ?? "The banner couldn't be drawn; regenerate it from the AI Banner card", key: "banner" });
+        if (isAiImagesExhausted(err)) message.warning({ content: err.response?.data.message, key: "banner" });
+        else if (!isAxiosError(err)) throw err;
+        else message.error({ content: err.response?.data?.message ?? "The banner couldn't be drawn; regenerate it from the Banner card", key: "banner" });
       }
     }
     edit("collections", id);

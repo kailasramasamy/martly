@@ -1,25 +1,16 @@
 export type BillingInterval = "MONTHLY" | "YEARLY";
 
 export interface Entitlements {
-  plan: { id: string; code: string; name: string; price: number; promotionCredits: number; pushIncluded: boolean; aiImagesPerMonth: number; billingInterval: BillingInterval } | null;
+  plan: { id: string; code: string; name: string; price: number; promotionCredits: number; pushIncluded: boolean; billingInterval: BillingInterval } | null;
   period: { startsAt: string; endsAt: string } | null;
   paidThrough: string | null;
   promotions: { planUsed: number; planTotal: number; planLeft: number; topUpBalance: number; resetsAt: string | null };
+  listings: { included: number; used: number; planLeft: number; extraBalance: number; unlimited: boolean };
   pushIncluded: boolean;
-  aiImages: AiImages;
   onPaidPlan: boolean;
-  trial: { available: boolean; endsAt: string | null; promotionCredits: number; aiImagesPerMonth: number };
+  /** The org's stores on martlyshop.in now; empty on Free */
+  webStores: { name: string; url: string }[];
   subscription: PlanSubscription | null;
-}
-
-/** The AI-image meter: this month's plan allowance is spent first, then bought packs (which never expire) */
-export interface AiImages {
-  used: number;
-  total: number;
-  planLeft: number;
-  packBalance: number;
-  left: number;
-  resetsAt: string | null;
 }
 
 export interface PlanSubscription {
@@ -33,7 +24,7 @@ export interface PlanSubscription {
 
 export interface AdProduct {
   id: string;
-  kind: "STORE_PLAN" | "PROMOTION_TOPUP" | "AI_IMAGE_PACK";
+  kind: "STORE_PLAN" | "PROMOTION_TOPUP" | "LISTING_TOPUP" | "AI_IMAGE_PACK";
   code: string;
   name: string;
   description: string | null;
@@ -41,8 +32,6 @@ export interface AdProduct {
   yearlyPrice: number | null;
   durationDays: number;
   promotionCredits: number;
-  aiImagesPerMonth: number;
-  aiImageCredits: number;
   pushIncluded: boolean;
   sortOrder: number;
   gstPercent: number;

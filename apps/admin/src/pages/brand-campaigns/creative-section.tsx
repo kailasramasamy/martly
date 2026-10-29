@@ -34,7 +34,7 @@ export function CreativeSection({ mode, onModeChange, disabled, portrait, wide }
         value={mode}
         onChange={(e) => onModeChange(e.target.value)}
         style={{ marginBottom: 12 }}
-        options={[{ value: "upload", label: "Upload image" }, { value: "ai", label: "Generate with AI" }]}
+        options={[{ value: "upload", label: "Upload image" }, { value: "ai", label: "Design for me" }]}
       />
       {mode === "upload" ? (
         <>

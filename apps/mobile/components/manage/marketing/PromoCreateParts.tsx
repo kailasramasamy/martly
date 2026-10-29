@@ -9,7 +9,7 @@ import { colors, fonts } from "../../../constants/theme";
 import { UploadGuidance } from "./ImageSource";
 
 export type ImageMode = "ai" | "upload";
-const IMAGE_TABS = [{ value: "ai", label: "Let AI design it" }, { value: "upload", label: "Upload my own" }] as const;
+const IMAGE_TABS = [{ value: "ai", label: "Design for me" }, { value: "upload", label: "Upload my own" }] as const;
 const BANNER_ASPECT = 1.5;
 
 interface ImageChoiceProps {
@@ -25,7 +25,7 @@ export function PromoImageChoice({ mode, onMode, imageUrl, onImage, error }: Ima
     <SectionCard title="Banner">
       <SegmentedTabs options={[...IMAGE_TABS]} value={mode} onChange={onMode} />
       {mode === "ai" ? (
-        <Text style={styles.note}>The AI paints the banner from your brief.</Text>
+        <Text style={styles.note}>Martly paints the banner from your brief.</Text>
       ) : (
         <>
           <UploadGuidance />
@@ -41,19 +41,17 @@ interface OptionsProps {
   onAutoLaunch: (v: boolean) => void;
   notify: boolean;
   onNotify: (v: boolean) => void;
-  pushAllowed: boolean;
 }
 
-export function PromoOptions({ autoLaunch, onAutoLaunch, notify, onNotify, pushAllowed }: OptionsProps) {
+export function PromoOptions({ autoLaunch, onAutoLaunch, notify, onNotify }: OptionsProps) {
   return (
     <SectionCard title="Options">
       <SwitchRow label="Launch automatically" description="Skips the review step" value={autoLaunch} onValueChange={onAutoLaunch} />
       <SwitchRow
         label="Notify customers"
-        description={pushAllowed ? "One push per day at most" : "Push notifications come with Pro"}
-        value={pushAllowed && notify}
+        description="One push per day at most"
+        value={notify}
         onValueChange={onNotify}
-        disabled={!pushAllowed}
       />
     </SectionCard>
   );
@@ -63,7 +61,7 @@ export function NoPromotionsLeft() {
   const router = useRouter();
   return (
     <SectionCard title="No promotions left">
-      <Text style={styles.note}>You've used this month's promotions. Upgrade your plan or buy extra promotions to create more.</Text>
+      <Text style={styles.note}>Buy an extra promotion, or upgrade your plan for promotions every month.</Text>
       <Button label="Open Marketing plan" variant="secondary" onPress={() => router.push("/manage/marketing-plan")} style={styles.upsell} />
     </SectionCard>
   );

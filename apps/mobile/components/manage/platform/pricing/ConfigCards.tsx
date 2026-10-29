@@ -35,7 +35,8 @@ export function InvoicingView({ config, onEdit }: { config: PricingConfig; onEdi
     <View style={styles.stack}>
       <SectionCard title="Tax">
         <KeyValue label="GST" value={`${config.gstPercent}%`} />
-        <KeyValue label="Free AI redrafts per promotion" value={config.freeRegenerations} />
+        <KeyValue label="Free redrafts per promotion" value={config.freeRegenerations} />
+        <KeyValue label="Banners per store per month" value={config.ownerBannerCap} />
       </SectionCard>
       <SectionCard title="Seller on invoices">
         <KeyValue label="Invoice prefix" value={config.invoicePrefix} />

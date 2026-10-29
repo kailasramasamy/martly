@@ -43,7 +43,7 @@ export function OwnersHero() {
             </span>
           </h1>
           <p className="mb-8 mt-9 max-w-lg text-lg leading-relaxed text-teal-100 sm:text-xl">
-            Your customers order from your shelves on the Martly app and on martlyshop.in. You pack and deliver, as you do today.
+            Your customers order from your shelves on the Martly app, and on martlyshop.in with Growth and Pro. You pack and deliver, as you do today.
           </p>
           <a href={LINKS.contact} className="inline-flex h-[52px] items-center gap-2 rounded-[14px] bg-amber px-7 text-base font-extrabold text-amber-ink hover:bg-amber-300">
             Talk to us <Icon name="arrow" size={18} />

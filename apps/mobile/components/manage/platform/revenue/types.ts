@@ -22,6 +22,8 @@ export interface OrdersMeta { revenue: { allTime: Totals; thisMonth: Totals } }
 export interface Subscriber {
   id: string;
   name: string;
+  webStoreAlwaysOn: boolean;
+  unlimitedListings: boolean;
   plan: { name: string; code: string } | null;
   currentUntil: string | null;
   paidThrough: string | null;

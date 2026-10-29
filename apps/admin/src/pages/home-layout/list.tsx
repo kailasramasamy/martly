@@ -9,8 +9,6 @@ import { CSS } from "@dnd-kit/utilities";
 import { EXPANDING_SECTION_TYPES, HomeSectionTypeLabels, COLLECTION_SECTION_TYPES, type HomeSectionType } from "@martly/shared/constants";
 import { axiosInstance } from "../../providers/data-provider";
 import { StoreSelect } from "../../components/StoreSelect";
-import { AiImageUsage } from "../../components/ai-images/ai-image-usage";
-import { canAfford, useAiImages, type AiImageUsageData } from "../../hooks/use-ai-images";
 import { SectionDrawer } from "./section-drawer";
 import { useHomeLayout, type HomeLayoutSection } from "./use-home-layout";
 import { useLayoutActions } from "./use-layout-actions";
@@ -23,13 +21,11 @@ const GRID_TYPES = ["EXPLORE_GRID", "STORE_GRID"];
 
 interface ArtProps {
   section: HomeLayoutSection;
-  usage: AiImageUsageData | null;
-  onBuy: () => void;
   onPaint: (s: HomeLayoutSection, repaint: boolean) => Promise<void>;
 }
 
-/** Image generation costs credits and takes a while, so both buttons lock until it finishes */
-const ArtButtons = ({ section, usage, onBuy, onPaint }: ArtProps) => {
+/** Image generation takes a while, so both buttons lock until it finishes */
+const ArtButtons = ({ section, onPaint }: ArtProps) => {
   const [running, setRunning] = useState<"missing" | "all">();
   const paint = async (repaint: boolean) => {
     setRunning(repaint ? "all" : "missing");
@@ -37,19 +33,15 @@ const ArtButtons = ({ section, usage, onBuy, onPaint }: ArtProps) => {
     setRunning(undefined);
   };
   const tiles = section.items ?? [];
-  const unpainted = tiles.filter((t) => !t.imageUrl).length;
   const noTiles = tiles.length === 0;
-  const canPaintMissing = canAfford(usage, unpainted);
-  const canRepaint = canAfford(usage, tiles.length);
   return (
     <Space size={8}>
-      {unpainted > 0 && <AiImageUsage usage={usage} cost={unpainted} onBuy={onBuy} />}
       <Space.Compact>
-        <Button size="small" icon={<BgColorsOutlined />} loading={running === "missing"} disabled={!!running || noTiles || !canPaintMissing} onClick={() => paint(false)}>
+        <Button size="small" icon={<BgColorsOutlined />} loading={running === "missing"} disabled={!!running || noTiles} onClick={() => paint(false)}>
           Generate art
         </Button>
-        <Popconfirm title="Repaint every tile?" description={`Replaces all tile images and uses ${tiles.length} AI ${tiles.length === 1 ? "image" : "images"}.`} onConfirm={() => paint(true)} disabled={!!running || noTiles || !canRepaint}>
-          <Button size="small" loading={running === "all"} disabled={!!running || noTiles || !canRepaint}>Repaint all</Button>
+        <Popconfirm title="Repaint every tile?" description="Replaces all tile images." onConfirm={() => paint(true)} disabled={!!running || noTiles}>
+          <Button size="small" loading={running === "all"} disabled={!!running || noTiles}>Repaint all</Button>
         </Popconfirm>
       </Space.Compact>
     </Space>
@@ -67,12 +59,10 @@ interface RowProps {
   onToggle: (s: HomeLayoutSection, active: boolean) => void;
   onEdit: (s: HomeLayoutSection) => void;
   onDelete: (s: HomeLayoutSection) => void;
-  usage: AiImageUsageData | null;
-  onBuy: () => void;
   onPaint: (s: HomeLayoutSection, repaint: boolean) => Promise<void>;
 }
 
-const SectionRow = ({ section, hint, storeName, onToggle, onEdit, onDelete, usage, onBuy, onPaint }: RowProps) => {
+const SectionRow = ({ section, hint, storeName, onToggle, onEdit, onDelete, onPaint }: RowProps) => {
   const { token } = antTheme.useToken();
   const { attributes, listeners, setNodeRef, setActivatorNodeRef, transform, transition, isDragging } = useSortable({ id: section.id });
   const hidden = hint && !hint.resolves;
@@ -106,7 +96,7 @@ const SectionRow = ({ section, hint, storeName, onToggle, onEdit, onDelete, usag
           <div><Text type="warning" style={{ fontSize: 12 }}>Hidden at {storeName}: nothing to show there</Text></div>
         )}
       </div>
-      {GRID_TYPES.includes(section.type) && <ArtButtons section={section} usage={usage} onBuy={onBuy} onPaint={onPaint} />}
+      {GRID_TYPES.includes(section.type) && <ArtButtons section={section} onPaint={onPaint} />}
       <Switch checked={section.isActive} onChange={(v) => onToggle(section, v)} />
       <Button icon={<EditOutlined />} size="small" onClick={() => onEdit(section)}>Edit</Button>
       <Popconfirm title="Remove this section?" onConfirm={() => onDelete(section)}>
@@ -145,8 +135,7 @@ export const HomeLayoutList = () => {
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 5 } }));
   const { sections } = layout;
 
-  const ai = useAiImages();
-  const { onToggle, onDelete, onDragEnd, onSave, onCustomize, onPaint } = useLayoutActions(layout, drawer.section, () => setDrawer({ open: false }), ai);
+  const { onToggle, onDelete, onDragEnd, onSave, onCustomize, onPaint } = useLayoutActions(layout, drawer.section, () => setDrawer({ open: false }));
 
   return (
     <List
@@ -191,8 +180,6 @@ export const HomeLayoutList = () => {
                     onToggle={onToggle}
                     onEdit={(sec) => setDrawer({ open: true, section: sec })}
                     onDelete={onDelete}
-                    usage={ai.usage}
-                    onBuy={ai.openBuy}
                     onPaint={onPaint}
                   />
                 ))}
@@ -201,7 +188,6 @@ export const HomeLayoutList = () => {
           </Card>
         </Spin>
       )}
-      {ai.buyModal}
       <SectionDrawer open={drawer.open} section={drawer.section} onClose={() => setDrawer({ open: false })} onSave={onSave} />
     </List>
   );

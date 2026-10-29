@@ -5,28 +5,23 @@ import { colors, fonts, radius } from "../../../constants/theme";
 import { manage, tabular } from "../ui/tokens";
 import { useRefreshOnFocus } from "../../../lib/manage/use-refresh-on-focus";
 import { useEntitlements } from "../marketing/use-entitlements";
-import { aiImageLevel } from "../marketing/ai-images";
 import type { Entitlements } from "../marketing/plan-types";
 
 const PLAN_HREF = "/manage/marketing-plan";
 const shortDate = (iso: string) => new Date(iso).toLocaleDateString("en-IN", { day: "numeric", month: "short" });
 
-/** On Free: an invitation to start the trial, or to see the plans */
-function PromoStrip({ trial, onPress }: { trial: Entitlements["trial"] | null; onPress: () => void }) {
+/** On Free: an invitation to see the plans */
+function PromoStrip({ onPress }: { onPress: () => void }) {
   return (
     <TouchableOpacity style={styles.promo} onPress={onPress} activeOpacity={0.9} accessibilityRole="button"
-      accessibilityLabel={trial ? "Try Growth free for 14 days" : "See marketing plans"}>
+      accessibilityLabel="See marketing plans">
       <View style={[styles.ring, styles.ringOuter]} />
       <View style={[styles.ring, styles.ringInner]} />
       <Text style={styles.eyebrow}>MARKETING</Text>
-      <Text style={styles.promoTitle}>{trial ? "Try Growth free for 14 days" : "Bring more shoppers in"}</Text>
-      <Text style={styles.promoBody}>
-        {trial
-          ? `${trial.promotionCredits} promotions and ${trial.aiImagesPerMonth} AI images a month. No payment needed.`
-          : "Run discounts with a banner on your home screen, from ₹833 a month."}
-      </Text>
+      <Text style={styles.promoTitle}>Bring more shoppers in</Text>
+      <Text style={styles.promoBody}>Run discounts with a banner on your home screen, from ₹833 a month.</Text>
       <View style={styles.cta}>
-        <Text style={styles.ctaText}>{trial ? "Start free trial" : "See plans"}</Text>
+        <Text style={styles.ctaText}>See plans</Text>
         <Ionicons name="arrow-forward" size={15} color={colors.accentText} />
       </View>
     </TouchableOpacity>
@@ -35,15 +30,14 @@ function PromoStrip({ trial, onPress }: { trial: Entitlements["trial"] | null; o
 
 function renewal(e: Entitlements): { text: string; warn?: boolean } {
   const sub = e.subscription;
-  if (e.trial.endsAt) return { text: `Free trial · ends ${shortDate(e.trial.endsAt)}` };
   if (sub?.status === "HALTED") return { text: "Renewal payment failed", warn: true };
   if (sub?.cancelAtPeriodEnd && sub.renewsAt) return { text: `Ends ${shortDate(sub.renewsAt)} · auto-renew off` };
   if (sub?.status === "ACTIVE" && sub.renewsAt) return { text: `Renews ${shortDate(sub.renewsAt)}${sub.interval === "YEARLY" ? " · yearly" : ""}` };
   return { text: e.paidThrough ? `Paid through ${shortDate(e.paidThrough)}` : "" };
 }
 
-function Meter({ label, left, used, total, extra, low }: { label: string; left: number; used: number; total: number; extra?: number; low?: boolean }) {
-  const empty = left === 0 || !!low;
+function Meter({ label, left, used, total, extra }: { label: string; left: number; used: number; total: number; extra?: number }) {
+  const empty = left === 0;
   return (
     <View style={styles.meter}>
       <Text style={styles.meterLabel}>{label}</Text>
@@ -56,7 +50,7 @@ function Meter({ label, left, used, total, extra, low }: { label: string; left: 
   );
 }
 
-/** On a plan or trial: what it is, how it renews, and how much of this month's allowance is left */
+/** On a plan: what it is, how it renews, and how much of this month's allowance is left */
 function PlanStatusStrip({ e, onPress }: { e: Entitlements; onPress: () => void }) {
   const status = renewal(e);
   const p = e.promotions;
@@ -73,7 +67,6 @@ function PlanStatusStrip({ e, onPress }: { e: Entitlements; onPress: () => void 
       </View>
       <View style={styles.meters}>
         <Meter label="Promotions" left={promosLeft} used={p.planUsed} total={p.planTotal} extra={p.topUpBalance} />
-        <Meter label="AI images" left={e.aiImages.left} used={e.aiImages.used} total={e.aiImages.total} extra={e.aiImages.packBalance} low={aiImageLevel(e.aiImages, 1) !== "ok"} />
       </View>
       {outOnGrowth && (
         <View style={styles.nudge}>
@@ -92,8 +85,7 @@ export function MarketingPlanStrip() {
   useRefreshOnFocus(reload);
   if (!data) return null;
   const open = () => router.push(PLAN_HREF);
-  const onPlan = data.onPaidPlan || !!data.trial.endsAt;
-  return onPlan ? <PlanStatusStrip e={data} onPress={open} /> : <PromoStrip trial={data.trial.available ? data.trial : null} onPress={open} />;
+  return data.onPaidPlan ? <PlanStatusStrip e={data} onPress={open} /> : <PromoStrip onPress={open} />;
 }
 
 const styles = StyleSheet.create({

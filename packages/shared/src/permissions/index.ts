@@ -110,6 +110,7 @@ export const RESOURCE_PERMISSIONS = {
   "brand-ads": { list: P.MARKETING_MANAGE, show: P.MARKETING_MANAGE, edit: "OWNER" },
   "marketing-pricing": "PLATFORM",
   "marketing-orders": "PLATFORM",
+  "store-plans": "PLATFORM",
   "brand-campaigns": "PLATFORM",
   "brand-partners": "PLATFORM",
 

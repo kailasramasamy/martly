@@ -1,6 +1,5 @@
 import { randomUUID } from "crypto";
 import OpenAI from "openai";
-import type { Messaging } from "firebase-admin/messaging";
 import { AI_IMAGE_COST } from "@martly/shared/constants";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
 import { buildBannerSet, type BannerLog } from "../seasonal/banner-set.js";
@@ -18,11 +17,11 @@ export interface BannerImageRequest {
 }
 
 /**
- * Paints a banner image with the copy set into it, in a layout and style the owner hasn't used lately. It takes one of
- * the organisation's AI images, given back if painting fails.
+ * Paints a banner image with the copy set into it, in a layout and style the owner hasn't used lately. It counts against
+ * the organisation's hidden monthly banner cap, given back if painting fails.
  */
 export function generateBannerImage(
-  ctx: { prisma: PrismaClient; fcm: Messaging | null }, organizationId: string | null, input: BannerImageRequest, log: BannerLog, refId: string | null = null,
+  ctx: { prisma: PrismaClient }, organizationId: string | null, input: BannerImageRequest, log: BannerLog, refId: string | null = null,
 ) {
   return withAiImages(ctx, organizationId, AI_IMAGE_COST.PROMO_BANNER, "PROMO_BANNER", refId, () => paintBannerImage(ctx.prisma, organizationId, input, log));
 }

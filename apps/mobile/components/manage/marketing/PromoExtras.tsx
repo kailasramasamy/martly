@@ -22,7 +22,7 @@ interface RedraftProps {
 export function RedraftCard({ left, busy, onRedraft }: RedraftProps) {
   return (
     <SectionCard title="Not happy with the draft?">
-      <Text style={styles.note}>{`${left} free redraft${left === 1 ? "" : "s"} left. The AI drafts the banner, copy and products again.`}</Text>
+      <Text style={styles.note}>{`${left} free redraft${left === 1 ? "" : "s"} left. Martly drafts the banner, copy and products again.`}</Text>
       <Button label="Redraft" icon="refresh-outline" variant="secondary" onPress={onRedraft} loading={busy} style={styles.btn} />
     </SectionCard>
   );

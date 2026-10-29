@@ -8,6 +8,18 @@ import { getStoreDiscoveryInfo, type StoreDiscoveryInfo } from "./store-discover
 /** Stores shoppers can see: launched, and not the Martly Template org's */
 export const liveStoreWhere = { status: "ACTIVE", organization: { isTemplate: false } } satisfies Prisma.StoreWhereInput;
 
+/**
+ * Stores on martlyshop.in: live, with a paid plan running now; the web store follows the plan, off on Free and back when a paid plan starts.
+ * Martly can keep an organisation on regardless (webStoreAlwaysOn, e.g. beta stores)
+ */
+export const webStoreWhere = (at = new Date()) => ({
+  ...liveStoreWhere,
+  organization: {
+    isTemplate: false,
+    OR: [{ webStoreAlwaysOn: true }, { planPeriods: { some: { startsAt: { lte: at }, endsAt: { gt: at }, product: { price: { gt: 0 } } } } }],
+  },
+}) satisfies Prisma.StoreWhereInput;
+
 /** Shoppers and guests never see template stores; staff see only their own org's stores, so the template is the platform admin's alone */
 export const hidesTemplateStores = (user: { role: string }) => user.role === "GUEST" || user.role === "CUSTOMER";
 
@@ -38,9 +50,9 @@ async function present(prisma: PrismaClient, rows: StoreRow[], reach?: Map<strin
 }
 
 /** Live stores within radiusKm of the point, nearest first, each saying whether it delivers there */
-export async function nearbyStores(prisma: PrismaClient, point: { lat: number; lng: number }, radiusKm: number) {
+export async function nearbyStores(prisma: PrismaClient, point: { lat: number; lng: number }, radiusKm: number, scope: Prisma.StoreWhereInput = liveStoreWhere) {
   const stores = await prisma.store.findMany({
-    where: { ...liveStoreWhere, latitude: { not: null }, longitude: { not: null } },
+    where: { ...scope, latitude: { not: null }, longitude: { not: null } },
     include: storeInclude,
   });
   const inRange = stores
@@ -64,9 +76,9 @@ export async function nearbyStores(prisma: PrismaClient, point: { lat: number; l
 }
 
 /** The store a town opens on: the one with the most on its shelves, then the first launched; no town means all of Martly */
-async function mainStore(prisma: PrismaClient, townId?: string): Promise<StoreRow | null> {
-  const stores = await prisma.store.findMany({ where: { ...liveStoreWhere, ...(townId && { townId }) }, include: storeInclude });
-  if (!stores.length) return townId ? mainStore(prisma) : null;
+async function mainStore(prisma: PrismaClient, scope: Prisma.StoreWhereInput, townId?: string): Promise<StoreRow | null> {
+  const stores = await prisma.store.findMany({ where: { ...scope, ...(townId && { townId }) }, include: storeInclude });
+  if (!stores.length) return townId ? mainStore(prisma, scope) : null;
   const counts = await prisma.storeProduct.groupBy({
     by: ["storeId"],
     where: { storeId: { in: stores.map((s) => s.id) }, isActive: true, product: { isActive: true } },
@@ -77,25 +89,25 @@ async function mainStore(prisma: PrismaClient, townId?: string): Promise<StoreRo
   return stores.sort((a, b) => (stocked.get(b.id) ?? 0) - (stocked.get(a.id) ?? 0) || launched(a) - launched(b))[0];
 }
 
-async function liveStoreById(prisma: PrismaClient, id: string) {
-  const row = await prisma.store.findFirst({ where: { ...liveStoreWhere, id }, include: storeInclude });
+async function liveStoreById(prisma: PrismaClient, scope: Prisma.StoreWhereInput, id: string) {
+  const row = await prisma.store.findFirst({ where: { ...scope, id }, include: storeInclude });
   return row ? (await present(prisma, [row]))[0] : null;
 }
 
 /** The other live stores in a store's town, for the shopper to switch to */
-async function townmates(prisma: PrismaClient, store: { id: string; townId: string }) {
-  const rows = await prisma.store.findMany({ where: { ...liveStoreWhere, townId: store.townId, id: { not: store.id } }, include: storeInclude, orderBy: { name: "asc" } });
+async function townmates(prisma: PrismaClient, scope: Prisma.StoreWhereInput, store: { id: string; townId: string }) {
+  const rows = await prisma.store.findMany({ where: { ...scope, townId: store.townId, id: { not: store.id } }, include: storeInclude, orderBy: { name: "asc" } });
   return present(prisma, rows);
 }
 
 /**
  * Picks the store a shopper browses without asking them: the one they already use while it is live,
- * else the nearest that delivers to them, else their town's main store, else Martly's main store
+ * else the nearest that delivers to them, else their town's main store, else Martly's main store; scope narrows the stores it may pick
  */
-export async function resolveStore(prisma: PrismaClient, query: StoreResolveQuery): Promise<StoreResolution<CustomerStore> | null> {
+export async function resolveStore(prisma: PrismaClient, query: StoreResolveQuery, scope: Prisma.StoreWhereInput = liveStoreWhere): Promise<StoreResolution<CustomerStore> | null> {
   const point = query.lat != null && query.lng != null ? { lat: query.lat, lng: query.lng } : null;
-  const near = point ? await nearbyStores(prisma, point, RESOLVE_RADIUS_KM) : [];
-  const others = (store: CustomerStore) => (point ? Promise.resolve(near.filter((s) => s.id !== store.id)) : townmates(prisma, store));
+  const near = point ? await nearbyStores(prisma, point, RESOLVE_RADIUS_KM, scope) : [];
+  const others = (store: CustomerStore) => (point ? Promise.resolve(near.filter((s) => s.id !== store.id)) : townmates(prisma, scope, store));
   const result = async (store: CustomerStore, reason: StoreResolution<CustomerStore>["reason"]) => ({
     store,
     reason,
@@ -104,14 +116,14 @@ export async function resolveStore(prisma: PrismaClient, query: StoreResolveQuer
   });
 
   if (query.current) {
-    const kept = near.find((s) => s.id === query.current) ?? (await liveStoreById(prisma, query.current));
+    const kept = near.find((s) => s.id === query.current) ?? (await liveStoreById(prisma, scope, query.current));
     if (kept) return result(kept, "kept");
   }
   const nearest = near.find((s) => s.deliversToYou) ?? near[0];
   if (nearest) return result(nearest, "nearest");
 
   const town = query.town ? await prisma.town.findUnique({ where: { slug: query.town }, select: { id: true } }) : null;
-  const main = await mainStore(prisma, town?.id);
+  const main = await mainStore(prisma, scope, town?.id);
   if (!main) return null;
   const [store] = await present(prisma, [main]);
   return result(store, town && main.townId === town.id ? "town" : "default");

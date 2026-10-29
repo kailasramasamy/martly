@@ -3,7 +3,7 @@ import type { WebCategoryPage, WebDepartment, WebDepartmentTree, WebProductBrand
 import { liveWindow } from "../store-feed.js";
 import { storeBrandOf } from "../own-brand.js";
 import { storePack } from "../pack-images.js";
-import { liveStoreWhere, resolveStore } from "../store-resolve.js";
+import { resolveStore, webStoreWhere } from "../store-resolve.js";
 import type { WebShopQuery } from "@martly/shared/schemas";
 import { cardSelect, productCards, soldAt, toCard } from "./cards.js";
 import { filteredList } from "./category-filters.js";
@@ -110,7 +110,7 @@ async function productBrand(prisma: PrismaClient, store: WebShopStore, p: Produc
 
 export async function productPage(prisma: PrismaClient, store: WebShopStore, slug: string): Promise<WebProductPage | null> {
   const p = await prisma.product.findFirst({
-    where: { slug, isActive: true, isDraft: false, storeProducts: { some: { isActive: true, store: liveStoreWhere } } },
+    where: { slug, isActive: true, isDraft: false, storeProducts: { some: { isActive: true, store: webStoreWhere() } } },
     select: productSelect(store.id),
   });
   if (!p) return null;
@@ -137,10 +137,10 @@ export async function productPage(prisma: PrismaClient, store: WebShopStore, slu
   };
 }
 
-/** Every page worth indexing: departments, categories and products some live store sells */
+/** Every page worth indexing: departments, categories and products some store on martlyshop.in sells */
 /** Brands and collections a visitor without a store (a search engine) can open: those of the store they are given */
 async function crawlerLists(prisma: PrismaClient) {
-  const resolution = await resolveStore(prisma, {});
+  const resolution = await resolveStore(prisma, {}, webStoreWhere());
   if (!resolution) return { collections: [], brands: [] };
   const { id, organizationId } = resolution.store;
   const [collections, brands] = await Promise.all([
@@ -157,7 +157,7 @@ async function crawlerLists(prisma: PrismaClient) {
 }
 
 export async function sitemap(prisma: PrismaClient): Promise<WebSitemap> {
-  const sold: Prisma.ProductWhereInput = { isActive: true, isDraft: false, storeProducts: { some: { isActive: true, store: liveStoreWhere } } };
+  const sold: Prisma.ProductWhereInput = { isActive: true, isDraft: false, storeProducts: { some: { isActive: true, store: webStoreWhere() } } };
   const [categories, products, lists] = await Promise.all([
     prisma.category.findMany({
       where: { subcategories: { some: { products: { some: sold } } } },

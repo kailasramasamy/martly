@@ -11,6 +11,7 @@ import { ConfirmDialog } from "../ui/ConfirmDialog";
 import { SectionCard } from "../ui/SectionCard";
 import { StatusPill } from "../ui/StatusPill";
 import { formatINR, manage } from "../ui/tokens";
+import { LISTINGS_USED_UP, OpenMarketingPlan } from "./ListingsNotice";
 import { DraftShots } from "./DraftShots";
 import { CostLine, DraftFacts, DraftPicks } from "./DraftFacts";
 import { DraftReviewForm } from "./DraftReviewForm";
@@ -43,6 +44,7 @@ function StatusCard({ draft }: { draft: CatalogDraftDetail }) {
           ))}
         </View>
       )}
+      {reasons.some((r) => r.startsWith(LISTINGS_USED_UP)) ? <OpenMarketingPlan style={styles.upsell} /> : null}
       {draft.error ? <Text style={styles.error}>{draft.error}</Text> : null}
       {draft.matchedExisting ? <Text style={styles.note}>This product was already in the catalog and has been listed for the store.</Text> : null}
     </SectionCard>
@@ -147,6 +149,7 @@ const styles = StyleSheet.create({
   reasons: { marginTop: 10, gap: 6 },
   reason: { flexDirection: "row", alignItems: "flex-start", gap: 8, padding: 10, borderRadius: radius.md, backgroundColor: manage.attentionBg },
   reasonText: { flex: 1, fontFamily: fonts.semibold, fontSize: 13, lineHeight: 18, color: manage.attentionText },
+  upsell: { marginTop: 10 },
   error: { marginTop: 10, fontFamily: fonts.medium, fontSize: 13, color: colors.error },
   note: { marginTop: 10, fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary },
   grow: { flex: 1 },

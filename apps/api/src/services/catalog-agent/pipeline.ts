@@ -6,6 +6,7 @@ import { fetchPhoto } from "./photos.js";
 import { listExisting, publishNew, type DraftForPublish, type Proposal } from "./publish.js";
 import type { UsageEntry } from "./usage.js";
 import { translateNewProduct, type ErrorLog } from "../translate/product.js";
+import { listingBalance, listingsLeft, NO_LISTINGS_LEFT } from "../marketing/listing-credits.js";
 
 // Shots rendered at once for one draft; the worker runs two drafts side by side
 const SHOT_CONCURRENCY = 4;
@@ -83,6 +84,8 @@ export async function runDraft(prisma: PrismaClient, id: string, log: ErrorLog) 
   }
   const shots = await processShots(prisma, draft, photos);
   const reasons = reviewReasons(proposal, draft);
+  // With no listing left the draft waits for review, where approving asks the owner to buy more
+  if (listingsLeft(await listingBalance(prisma, draft.organizationId)) === 0) reasons.push(NO_LISTINGS_LEFT);
   if (reasons.length) {
     await prisma.catalogDraft.update({ where: { id }, data: { status: "NEEDS_REVIEW", reviewReasons: reasons, error: null } });
     return;

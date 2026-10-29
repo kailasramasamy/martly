@@ -3,7 +3,7 @@ import type { WebShopQuery } from "@martly/shared/schemas";
 import type { WebPack, WebProductCard, WebShopStore } from "@martly/shared/types";
 import { storePack } from "../pack-images.js";
 import { calculateEffectivePrice } from "../pricing.js";
-import { resolveStore } from "../store-resolve.js";
+import { resolveStore, webStoreWhere } from "../store-resolve.js";
 
 /** The store a page prices from, and its organisation (kept off the page) */
 export interface ShopContext {
@@ -11,9 +11,9 @@ export interface ShopContext {
   organizationId: string;
 }
 
-/** The store a page prices from: the shopper's own while it is live, else their town's main store, else Martly's */
+/** The store a page prices from: the shopper's own while it is on martlyshop.in, else their town's main store, else Martly's */
 export async function shopStore(prisma: PrismaClient, query: WebShopQuery): Promise<ShopContext | null> {
-  const resolution = await resolveStore(prisma, { current: query.store, town: query.town });
+  const resolution = await resolveStore(prisma, { current: query.store, town: query.town }, webStoreWhere());
   if (!resolution) return null;
   const { id, name, slug, logoUrl, townId, organizationId } = resolution.store;
   const town = await prisma.town.findUniqueOrThrow({ where: { id: townId }, select: { name: true, slug: true } });

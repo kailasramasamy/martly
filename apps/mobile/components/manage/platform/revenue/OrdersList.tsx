@@ -24,7 +24,7 @@ const KIND_OPTIONS = [{ value: "", label: "All products" }, ...Object.entries(Ad
 
 const buyerOf = (o: AdOrderRow) => o.organization?.name ?? o.brand?.name ?? "—";
 
-export function OrdersList({ switcher }: { switcher: React.ReactNode }) {
+export function OrdersList() {
   const [status, setStatus] = useState("");
   const [kind, setKind] = useState("");
   const list = usePagedList<AdOrderRow, OrdersMeta>("/api/v1/marketing-admin/orders", { status, kind }, { pageSize: 25 });
@@ -35,7 +35,6 @@ export function OrdersList({ switcher }: { switcher: React.ReactNode }) {
       collapseToolbar
       filters={
         <>
-          {switcher}
           <RevenueSummary thisMonth={list.meta?.revenue.thisMonth} allTime={list.meta?.revenue.allTime} />
           <SegmentedTabs options={STATUS_OPTIONS} value={status} onChange={setStatus} />
           <SegmentedTabs options={KIND_OPTIONS} value={kind} onChange={(v) => setKind(v as AdProductKind | "")} />

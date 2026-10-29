@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router"
+import { createFileRoute, notFound } from "@tanstack/react-router"
 import { getSearchLanding, searchShop, type SearchParams } from "~/lib/api"
 import { pageHead } from "~/lib/seo"
 import { ShopLayout } from "~/components/shop-layout"
@@ -13,9 +13,17 @@ export const Route = createFileRoute("/search")({
     return { q: textParam(search.q)?.slice(0, 100), tag: textParam(search.tag), size: textParam(search.size), exact: flag(search.exact), ...filters }
   },
   loaderDeps: ({ search }) => ({ ...search, q: search.q?.trim() ?? "" }),
-  loader: async ({ deps }) => (deps.q
-    ? { kind: "results" as const, page: await searchShop({ data: deps }) }
-    : { kind: "landing" as const, page: await getSearchLanding() }),
+  // No store on martlyshop.in means nothing to search
+  loader: async ({ deps }) => {
+    if (deps.q) {
+      const page = await searchShop({ data: deps })
+      if (!page) throw notFound()
+      return { kind: "results" as const, page }
+    }
+    const page = await getSearchLanding()
+    if (!page) throw notFound()
+    return { kind: "landing" as const, page }
+  },
   head: ({ loaderData }) => pageHead({
     title: loaderData?.kind === "results" ? `${loaderData.page.q}: search | Martly` : "Search | Martly",
     description: "Search products at your Martly store.",

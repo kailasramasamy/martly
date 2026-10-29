@@ -58,7 +58,7 @@ function useSayIt(storeId: string, initial: string) {
 }
 
 // Under the text while speaking: listening (the dot pulses with the voice), then writing down what was said
-function VoiceStatus({ listening, pending, level }: { listening: boolean; pending: number; level: Animated.Value | null }) {
+export function VoiceStatus({ listening, pending, level }: { listening: boolean; pending: number; level: Animated.Value | null }) {
   if (!listening && pending === 0) return null;
   const pulse = level ? { opacity: level.interpolate({ inputRange: [0, 1], outputRange: [0.45, 1] }), transform: [{ scale: level.interpolate({ inputRange: [0, 1], outputRange: [1, 1.6] }) }] } : null;
   return (
