@@ -1,0 +1,246 @@
+{
+  "brand": "A2B",
+  "manufacturer": "Adyar Ananda Bhavan Sweets India Pvt. Ltd., Chennai",
+  "feed": "a2b-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/a2b/logo-3a64d152.png",
+  "themeColor": "#1E73BE",
+  "themeColorSecondary": "#E5197E",
+  "namePrefix": "A2B ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Adai\\ Dosa\\ Instant\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Andhra\\ Murukku$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Butter\\ Murukku$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Ellu\\ Murukku$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Thattai$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Pepper\\ Thattai$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Seedai$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Bitter\\ Gourd\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Banana Chips"
+      ]
+    },
+    {
+      "match": "^Dal\\ Mixture$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Madras\\ Mixture$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Navadhanya\\ Mixture$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Rajapalayam\\ Mixture$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Special\\ Mixture$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Ribbon\\ Pakoda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Sirai\\ Pakoda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Omapodi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Pepper\\ Sev$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Rajapalayam\\ Karasev$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Fried\\ Moong\\ Dal$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Packaged Mithai"
+      ]
+    },
+    {
+      "match": "^Choco\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Packaged Mithai"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Packaged Mithai"
+      ]
+    },
+    {
+      "match": "^Orange\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Packaged Mithai"
+      ]
+    },
+    {
+      "match": "^Gulab\\ Jamun$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Rasgulla & Gulab Jamun"
+      ]
+    },
+    {
+      "match": "^Rasgulla$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Rasgulla & Gulab Jamun"
+      ]
+    },
+    {
+      "match": "^Gongura\\ Thokku$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Thokku$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Puli\\ Kachal\\ Thokku$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Vathal\\ Kozhambu\\ Paste$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    }
+  ]
+}
