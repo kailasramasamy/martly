@@ -547,3 +547,4 @@ export * from "./stock-check.js";
 export * from "./store-resolve.js";
 export * from "./storefront.js";
 export * from "./loose-staples.js";
+export * from "./credits.js";

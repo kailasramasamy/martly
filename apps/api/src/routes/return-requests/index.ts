@@ -1,6 +1,6 @@
 import type { FastifyInstance, FastifyRequest } from "fastify";
 import { chooseReturnMethodSchema, collectReturnSchema, createReturnRequestSchema, resolveReturnRequestSchema } from "@martly/shared/schemas";
-import { deliveredAt } from "@martly/shared/order-flow";
+import { deliveredAt, paidShare } from "@martly/shared/order-flow";
 import { RETURN_WINDOW_HOURS } from "@martly/shared/constants";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
@@ -59,6 +59,8 @@ export async function returnRequestRoutes(app: FastifyInstance) {
       }
       requestedAmount += paidPerUnit(orderItem) * item.quantity;
     }
+    // The coupon and welcome credit's share was never paid, so it isn't refunded
+    requestedAmount = Math.round(requestedAmount * paidShare(order) * 100) / 100;
 
     const returnRequest = await app.prisma.returnRequest.create({
       data: {

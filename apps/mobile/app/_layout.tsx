@@ -45,6 +45,8 @@ import { isAwaitingUpiReturn } from "../lib/use-upi-payment";
 import SplashScreen from "../components/SplashScreen";
 import { colors } from "../constants/theme";
 import { manage } from "../components/manage/ui/tokens";
+import { CreditsProvider } from "../lib/credits-context";
+import { CreditCelebration } from "../components/credits/CreditCelebration";
 import { SignInProvider } from "../lib/sign-in-context";
 
 // Keep native splash visible until we're ready
@@ -201,6 +203,7 @@ function RootLayoutNav() {
         <Stack.Screen name="buy-get" options={{ headerShown: true, title: t.buyGet }} />
         <Stack.Screen name="most-bought" options={{ headerShown: true, title: t.mostBought }} />
       </Stack>
+      {splashDone && <CreditCelebration />}
       {!splashDone && <SplashScreen onBeforeFadeOut={handleBeforeFadeOut} onFinish={handleSplashFinish} />}
     </>
   );
@@ -249,9 +252,11 @@ function AppRoot({ initialLanguage }: { initialLanguage: LanguageCode | null }) 
               <ToastProvider>
               <WishlistProvider>
                 <NotificationProvider>
-                  <SignInProvider>
-                    <RootLayoutNav />
-                  </SignInProvider>
+                  <CreditsProvider>
+                    <SignInProvider>
+                      <RootLayoutNav />
+                    </SignInProvider>
+                  </CreditsProvider>
                 </NotificationProvider>
               </WishlistProvider>
               </ToastProvider>

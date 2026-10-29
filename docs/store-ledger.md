@@ -35,6 +35,7 @@ The ledger is a running, per-store account between Martly and the store. Every m
 | COD, cash or UPI at the door | Customer | Store or rider | **−** Martly commission (COD rate) only. Shown on the statement for information. |
 | Org coupon (`organizationId` set) | Organization | — | None: the store simply collected less |
 | Platform coupon (`organizationId` null) | Martly | — | **+** coupon discount (Martly reimburses the store) |
+| Welcome credit (docs/credit-offers.md) | Martly or the store | — | **+** Martly-funded credit on delivery (`PLATFORM_CREDIT`); none for store-funded |
 | Delivery fee | Customer | Store (part of the total) | Included in the sale amounts above |
 | Cancellation refund (before delivery) | Martly to the wallet | Customer | None (no sale was recorded) |
 | Return refund to wallet | Martly to the wallet | Customer | **−** refund amount |

@@ -30,6 +30,7 @@ export interface OrderData {
   statusLogs?: StatusLogData[];
   couponCode?: string | null;
   couponDiscount?: string | null;
+  creditDiscount?: string | number | null;
   deliveryFee?: string | null;
   deliveryNotes?: string | null;
   walletAmountUsed?: string | null;

@@ -42,6 +42,7 @@ import { catalogDraftRoutes } from "./routes/catalog-drafts/index.js";
 import { wishlistRoutes } from "./routes/wishlist/index.js";
 import { reviewRoutes } from "./routes/reviews/index.js";
 import { couponRoutes } from "./routes/coupons/index.js";
+import { creditRoutes } from "./routes/credits/index.js";
 import { deliveryZoneRoutes } from "./routes/delivery-zones/index.js";
 import { deliveryTierRoutes } from "./routes/delivery-tiers/index.js";
 import { deliverySlotRoutes } from "./routes/delivery-slots/index.js";
@@ -100,6 +101,7 @@ import returnsSchedulerPlugin from "./plugins/returns-scheduler.js";
 import settlementSchedulerPlugin from "./plugins/settlement-scheduler.js";
 import attentionSchedulerPlugin from "./plugins/attention-scheduler.js";
 import monthlyListSchedulerPlugin from "./plugins/monthly-list-scheduler.js";
+import creditSchedulerPlugin from "./plugins/credit-scheduler.js";
 import packImagesPlugin from "./plugins/pack-images.js";
 import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
 import schedulerLockPlugin from "./plugins/scheduler-lock.js";
@@ -158,6 +160,7 @@ export async function buildApp() {
   await app.register(attentionSchedulerPlugin);
   await app.register(monthlyListSchedulerPlugin);
   await app.register(alertPruneSchedulerPlugin);
+  await app.register(creditSchedulerPlugin);
   await app.register(catalogAgentWorkerPlugin);
   await app.register(packImagesPlugin);
 
@@ -214,6 +217,7 @@ export async function buildApp() {
       await api.register(wishlistRoutes, { prefix: "/wishlist" });
       await api.register(reviewRoutes, { prefix: "/reviews" });
       await api.register(couponRoutes, { prefix: "/coupons" });
+      await api.register(creditRoutes, { prefix: "/credits" });
       await api.register(deliveryZoneRoutes, { prefix: "/delivery-zones" });
       await api.register(deliveryTierRoutes, { prefix: "/delivery-tiers" });
       await api.register(deliverySlotRoutes, { prefix: "/delivery-slots" });

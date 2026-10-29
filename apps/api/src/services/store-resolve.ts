@@ -23,8 +23,8 @@ export const webStoreWhere = (at = new Date()) => ({
 /** Shoppers and guests never see template stores; staff see only their own org's stores, so the template is the platform admin's alone */
 export const hidesTemplateStores = (user: { role: string }) => user.role === "GUEST" || user.role === "CUSTOMER";
 
-/** How far around the shopper to look when picking their store, as the app's nearby search */
-const RESOLVE_RADIUS_KM = 20;
+/** How far around the shopper to look when picking their store, as the app's nearby search; within it they can pick up */
+export const RESOLVE_RADIUS_KM = 20;
 
 const storeInclude = { organization: { select: { subscriptionEnabled: true } } } satisfies Prisma.StoreInclude;
 type StoreRow = Prisma.StoreGetPayload<{ include: typeof storeInclude }>;

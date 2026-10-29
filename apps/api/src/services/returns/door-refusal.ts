@@ -21,6 +21,7 @@ interface DeliveringOrder {
   paymentStatus: string;
   walletAmountUsed: unknown;
   couponDiscount: unknown;
+  creditDiscount: unknown;
   loyaltyPointsUsed: number | null;
   items: { id: string; storeProductId: string; quantity: number; totalPrice: unknown }[];
 }
@@ -69,7 +70,7 @@ export async function deliverWithRefusals(tx: Tx, order: DeliveringOrder, refuse
       await applyMovement(tx, { storeProductId: item.storeProductId, quantity: -r.quantity, type: writeOff, orderId: order.id, userId, note: "Handed back at the door" });
     }
   }
-  const priced = { couponDiscount: Number(order.couponDiscount ?? 0), items: order.items.map((i) => ({ ...i, totalPrice: Number(i.totalPrice) })) };
+  const priced = { couponDiscount: Number(order.couponDiscount ?? 0), creditDiscount: Number(order.creditDiscount ?? 0), items: order.items.map((i) => ({ ...i, totalPrice: Number(i.totalPrice) })) };
   const refusedAmount = refusedValue(priced, refused);
   if (refusedAmount === 0) return { refusedAmount, walletCredit: 0, note: null };
 

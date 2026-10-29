@@ -37,6 +37,7 @@ export interface RiderStop {
   estimatedDeliveryAt: string | null;
   user: { name: string; phone: string | null };
   couponDiscount: string | null;
+  creditDiscount?: string | number | null;
   refusedAmount: string | null;
   items: OrderDetailItem[];
   /** Open stop: returns to collect. Delivered stop: returns that were waiting but weren't collected */

@@ -23,6 +23,7 @@ function amountDue(order: OrderDetail, deductions: number): number {
 export function PaymentBreakdown({ order }: { order: OrderDetail }) {
   const subtotal = order.items.reduce((sum, i) => sum + Number(i.totalPrice), 0);
   const coupon = Number(order.couponDiscount ?? 0);
+  const credit = Number(order.creditDiscount ?? 0);
   const refused = Number(order.refusedAmount ?? 0);
   const fee = Number(order.deliveryFee ?? 0);
   const wallet = Number(order.walletAmountUsed ?? 0);
@@ -37,6 +38,7 @@ export function PaymentBreakdown({ order }: { order: OrderDetail }) {
       </View>
       <KeyValue label="Items subtotal" value={formatINR(subtotal)} />
       {coupon > 0 ? <KeyValue label={`Coupon ${order.couponCode ?? ""}`.trim()} value={`−${formatINR(coupon)}`} valueColor="#15803d" /> : null}
+      {credit > 0 ? <KeyValue label="Welcome credit" value={`−${formatINR(credit)}`} valueColor="#15803d" /> : null}
       {fee > 0 ? <KeyValue label="Delivery fee" value={formatINR(fee)} /> : null}
       <KeyValue label="Order total" value={formatINR(Number(order.totalAmount))} emphasis />
       {wallet > 0 ? <KeyValue label="Wallet" value={`−${formatINR(wallet)}`} valueColor="#15803d" /> : null}

@@ -3,6 +3,7 @@ export const LedgerEntryType = {
   SALE_ONLINE: "SALE_ONLINE",
   SALE_WALLET: "SALE_WALLET",
   PLATFORM_COUPON: "PLATFORM_COUPON",
+  PLATFORM_CREDIT: "PLATFORM_CREDIT",
   RETURN_REFUND: "RETURN_REFUND",
   DOOR_REFUND: "DOOR_REFUND",
   REFERRAL_REWARD: "REFERRAL_REWARD",
@@ -22,6 +23,7 @@ export const LedgerEntryTypeLabels: Record<LedgerEntryType, string> = {
   SALE_ONLINE: "Online payment",
   SALE_WALLET: "Wallet payment",
   PLATFORM_COUPON: "Martly coupon",
+  PLATFORM_CREDIT: "Martly welcome credit",
   RETURN_REFUND: "Return refund",
   DOOR_REFUND: "Door hand-back refund",
   REFERRAL_REWARD: "Referral rewards",
@@ -38,7 +40,7 @@ export const LedgerEntryTypeLabels: Record<LedgerEntryType, string> = {
 
 /** Activity tabs: which entry types each one lists */
 export const LedgerEntryGroup = {
-  SALES: ["SALE_ONLINE", "SALE_WALLET", "PLATFORM_COUPON", "MEMBERSHIP_SALE"],
+  SALES: ["SALE_ONLINE", "SALE_WALLET", "PLATFORM_COUPON", "PLATFORM_CREDIT", "MEMBERSHIP_SALE"],
   REFUNDS: ["RETURN_REFUND", "DOOR_REFUND", "REFERRAL_REWARD", "GOODWILL_DEBIT", "REVERSAL"],
   FEES: ["COMMISSION", "COMMISSION_REFUND"],
   PAYOUTS: ["SETTLEMENT_PAYOUT", "PLAN_FEE", "BALANCE_PAYMENT", "ADJUSTMENT"],

@@ -42,6 +42,7 @@ export const account: Strings<"account"> = {
     points: "புள்ளிகள்",
     plusActive: "செயலில்",
     plusJoin: "சேருங்கள்",
+    freeCredit: (amount) => `+₹${amount} இலவசம்`,
   },
   guest: {
     title: "நீங்கள் விருந்தினராகப் பார்க்கிறீர்கள்",

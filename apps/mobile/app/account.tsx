@@ -9,6 +9,7 @@ import { useStore } from "../lib/store-context";
 import { useLanguage } from "../lib/language-context";
 import { useToast } from "../lib/toast-context";
 import { useAccountSummary } from "../lib/use-account-summary";
+import { useCredits } from "../lib/credits-context";
 import { api } from "../lib/api";
 import { colors, fonts, spacing } from "../constants/theme";
 import { ConfirmSheet } from "../components/ConfirmSheet";
@@ -91,6 +92,7 @@ export default function AccountScreen() {
   const { selectedStore } = useStore();
   const toast = useToast();
   const summary = useAccountSummary(isAuthenticated, selectedStore?.id);
+  const { grants } = useCredits();
   const menuGroups = useMenuGroups(!!selectedStore?.subscriptionEnabled);
   const [editingProfile, setEditingProfile] = useState(false);
   const [addressSheet, setAddressSheet] = useState<{ address: UserAddress | null } | null>(null);
@@ -122,7 +124,7 @@ export default function AccountScreen() {
       <ScrollView keyboardDismissMode="on-drag" showsVerticalScrollIndicator={false} contentContainerStyle={styles.scroll}>
         <ProfileHeader
           name={user?.name} phone={user?.phone} email={user?.email}
-          walletBalance={summary.walletBalance} loyaltyPoints={summary.loyaltyPoints} isMember={summary.isMember}
+          walletBalance={summary.walletBalance} freeCredit={grants.reduce((sum, g) => sum + g.amount, 0)} loyaltyPoints={summary.loyaltyPoints} isMember={summary.isMember}
           onEdit={() => setEditingProfile(true)}
         />
         {menuGroups.map((group) => <MenuGroup key={group.title} title={group.title} items={group.items} />)}

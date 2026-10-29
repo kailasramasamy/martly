@@ -4,6 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
 import { useStrings } from "../../lib/i18n/use-strings";
+import { rupees } from "../../lib/credit-copy";
 
 // Phone sign-ups get a generated placeholder email; it is not something to show the customer
 const PLACEHOLDER_EMAIL_DOMAIN = "@phone.martly.app";
@@ -16,24 +17,29 @@ interface Props {
   phone?: string | null;
   email?: string | null;
   walletBalance: number;
+  /** Unused welcome credit, shown under the wallet since it is spent like money but isn't wallet balance */
+  freeCredit: number;
   loyaltyPoints: number;
   isMember: boolean;
   onEdit: () => void;
 }
 
-function Stat({ icon, value, label, href, highlight }: {
-  icon: keyof typeof Ionicons.glyphMap; value: string; label: string; href: Href; highlight?: boolean;
+function Stat({ icon, value, label, href, highlight, badge }: {
+  icon: keyof typeof Ionicons.glyphMap; value: string; label: string; href: Href; highlight?: boolean; badge?: string;
 }) {
   return (
     <TouchableOpacity style={styles.stat} onPress={() => router.push(href)} activeOpacity={0.8}>
-      <Ionicons name={icon} size={18} color={highlight ? colors.accent : colors.primary} />
+      <View style={styles.statTop}>
+        <Ionicons name={icon} size={18} color={highlight ? colors.accent : colors.primary} />
+        {badge ? <Text style={styles.badge}>{badge}</Text> : null}
+      </View>
       <Text style={styles.statValue} numberOfLines={1}>{value}</Text>
       <Text style={styles.statLabel}>{label}</Text>
     </TouchableOpacity>
   );
 }
 
-export function ProfileHeader({ name, phone, email, walletBalance, loyaltyPoints, isMember, onEdit }: Props) {
+export function ProfileHeader({ name, phone, email, walletBalance, freeCredit, loyaltyPoints, isMember, onEdit }: Props) {
   const { header: t, martPlus } = useStrings("account");
   const initials = (name || "U").split(" ").map((w) => w[0]).join("").toUpperCase().slice(0, 2);
   const contact = [phone && formatPhone(phone), email && !email.endsWith(PLACEHOLDER_EMAIL_DOMAIN) && email]
@@ -52,7 +58,9 @@ export function ProfileHeader({ name, phone, email, walletBalance, loyaltyPoints
         </TouchableOpacity>
       </LinearGradient>
       <View style={styles.stats}>
-        <Stat icon="wallet-outline" value={`\u20B9${walletBalance.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`} label={t.wallet} href="/wallet" />
+        <Stat icon="wallet-outline" value={`\u20B9${walletBalance.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`} label={t.wallet} href="/wallet"
+          badge={freeCredit > 0 ? t.freeCredit(rupees(freeCredit)) : undefined}
+        />
         <Stat icon="star-outline" value={loyaltyPoints.toLocaleString("en-IN")} label={t.points} href="/loyalty" />
         <Stat icon="diamond" value={isMember ? t.plusActive : t.plusJoin} label={martPlus} href="/membership" highlight />
       </View>
@@ -84,6 +92,11 @@ const styles = StyleSheet.create({
     shadowColor: "#0f172a", shadowOpacity: 0.06, shadowRadius: 10, shadowOffset: { width: 0, height: 4 }, elevation: 2,
   },
   stat: { flex: 1, alignItems: "center", gap: 2 },
+  statTop: { flexDirection: "row", alignItems: "center", gap: 5, height: 20 },
   statValue: { fontFamily: fonts.extrabold, fontSize: 16, color: colors.text, marginTop: 4 },
   statLabel: { fontFamily: fonts.medium, fontSize: 12, color: colors.textSecondary },
+  badge: {
+    fontFamily: fonts.bold, fontSize: 11, color: colors.accentText, backgroundColor: colors.accent, borderRadius: 8,
+    overflow: "hidden", paddingHorizontal: 6, paddingVertical: 1,
+  },
 });

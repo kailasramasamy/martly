@@ -40,6 +40,7 @@ export const account = {
     points: "Points",
     plusActive: "Active",
     plusJoin: "Join",
+    freeCredit: (amount: string) => `+₹${amount} free`,
   },
   guest: {
     title: "You're browsing as a guest",

@@ -9,6 +9,7 @@ import { formatINR, formatOrderRef, plural, type CancelledBy } from "./notify/co
 import { notifyStaff } from "./notify/staff.js";
 import { reopenReplacements } from "./returns/replacement.js";
 import { claimStatus, lockLoyaltyPoints, releaseCoupon } from "./order-guards.js";
+import { releaseCredits } from "./credits/spend.js";
 
 type Tx = Prisma.TransactionClient;
 
@@ -131,6 +132,7 @@ export async function cancelOrder(app: FastifyInstance, orderId: string, ctx: Ca
     await claimStatus(tx, orderId, existing, "CANCELLED");
     await releaseStock(tx, existing.items.map((i) => ({ storeProductId: i.storeProductId, quantity: i.quantity })));
     await releaseCoupon(tx, existing);
+    await releaseCredits(tx, orderId);
     const refunds = await applyCancelRefunds(tx, existing, { reverseEarned: false });
     await reopenReplacements(tx, orderId);
     const order = await tx.order.update({

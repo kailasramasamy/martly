@@ -20,6 +20,7 @@ import { ProductActionsProvider } from "../../lib/product-actions";
 import { FloatingCart } from "../../components/FloatingCart";
 import { HomeScreenSkeleton } from "../../components/SkeletonLoader";
 import { HomeHeader } from "../../components/home/HomeHeader";
+import { HomeCredits } from "../../components/credits/HomeCredits";
 import { HomeListFooter } from "../../components/home/HomeListFooter";
 import { BackToTopPill, useBackToTop } from "../../components/home/BackToTopPill";
 import { FreeDeliveryBar } from "../../components/home/FreeDeliveryBar";
@@ -37,7 +38,10 @@ import { recordSectionView } from "../../lib/home-events";
 import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
 
 const THEMED_LEADS = new Set<string>(["FESTIVE_HERO", "HERO_CARDS"]);
-const renderSection: ListRenderItem<MobileHomeSection> = ({ item }) => <HomeSectionView section={item} />;
+// Welcome credit sits under the lead section: the lead hero lays itself out under the floating header
+const renderSection: ListRenderItem<MobileHomeSection> = ({ item, index }) => (
+  index === 0 ? <><HomeSectionView section={item} /><HomeCredits /></> : <HomeSectionView section={item} />
+);
 const keyOf = (section: MobileHomeSection) => section.id;
 
 /** The header's height as laid out now, and fully expanded (the festive art clears the expanded one) */

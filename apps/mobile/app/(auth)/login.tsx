@@ -11,6 +11,7 @@ import type { AuthTokens, LoginResponse } from "@martly/shared/types";
 import { completeLogin } from "../../lib/org-selection";
 import { useKeyboardReveal } from "../../lib/use-keyboard-reveal";
 import { useStrings } from "../../lib/i18n/use-strings";
+import { LoginCreditCallout } from "../../components/credits/LoginCreditCallout";
 
 type Step = "phone" | "otp" | "name";
 
@@ -127,6 +128,7 @@ export default function LoginScreen() {
         <View style={styles.logoSection}>
           <Image source={wordmark} style={styles.wordmark} resizeMode="contain" accessibilityLabel="Martly" />
           <Text style={styles.subtitle}>{t.tagline}</Text>
+          {step === "phone" && <LoginCreditCallout />}
         </View>
 
         {/* Phone Step */}

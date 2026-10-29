@@ -17,6 +17,7 @@ import { withSignIn } from "../components/SignInPrompt";
 import { strings } from "../lib/i18n";
 import { useStrings } from "../lib/i18n/use-strings";
 import { formatDate, formatTime } from "../lib/i18n/format";
+import { WalletCredits } from "../components/credits/WalletCredits";
 import { WalletRecharge } from "../components/account/WalletRecharge";
 
 interface WalletTransaction {
@@ -163,6 +164,7 @@ function WalletScreen() {
   };
 
   const ListHeader = () => (
+    <>
     <View style={styles.balanceCard}>
       <View style={styles.balanceIconWrap}>
         <Ionicons name="wallet" size={28} color="#fff" />
@@ -175,6 +177,8 @@ function WalletScreen() {
         <Text style={styles.addMoneyText}>{t.addMoney}</Text>
       </TouchableOpacity>
     </View>
+    <WalletCredits />
+    </>
   );
 
   const ListEmpty = () => (

@@ -125,6 +125,9 @@ import { GlossaryEdit } from "./pages/list-glossary/edit";
 import { CouponList } from "./pages/coupons/list";
 import { CouponCreate } from "./pages/coupons/create";
 import { CouponEdit } from "./pages/coupons/edit";
+import { WelcomeCreditList } from "./pages/welcome-credit/list";
+import { WelcomeCreditCreate } from "./pages/welcome-credit/create";
+import { WelcomeCreditEdit } from "./pages/welcome-credit/edit";
 import { ReviewList } from "./pages/reviews/list";
 import { ReviewAnalytics } from "./pages/review-analytics/index";
 import { StoreRatingList } from "./pages/store-ratings/list";
@@ -451,6 +454,13 @@ export default function App() {
                 create: "/coupons/create",
                 edit: "/coupons/edit/:id",
                 meta: { label: "Coupons", icon: <GiftOutlined />, parent: "marketing" },
+              },
+              {
+                name: "welcome-credit",
+                list: "/welcome-credit",
+                create: "/welcome-credit/create",
+                edit: "/welcome-credit/edit/:id",
+                meta: { label: "Welcome credit", icon: <GiftOutlined />, parent: "marketing" },
               },
               {
                 name: "reviews",
@@ -861,6 +871,11 @@ export default function App() {
                   <Route index element={<CouponList />} />
                   <Route path="create" element={<CouponCreate />} />
                   <Route path="edit/:id" element={<CouponEdit />} />
+                </Route>
+                <Route path="/welcome-credit">
+                  <Route index element={<WelcomeCreditList />} />
+                  <Route path="create" element={<WelcomeCreditCreate />} />
+                  <Route path="edit/:id" element={<WelcomeCreditEdit />} />
                 </Route>
                 <Route path="/reviews" element={<ReviewList />} />
                 <Route path="/review-analytics" element={<ReviewAnalytics />} />

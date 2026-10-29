@@ -25,6 +25,8 @@ import { useRequireSignIn } from "../../lib/sign-in-context";
 import { useStrings } from "../../lib/i18n/use-strings";
 import { useAuth } from "../../lib/auth-context";
 import { SaveAsMonthlyList } from "../../components/monthly-list/SaveAsMonthlyList";
+import { CartCreditNote } from "../../components/credits/CartCreditNote";
+import { useCheckoutCredit } from "../../lib/use-checkout-credit";
 import { StoreMark } from "../../components/StoreMark";
 
 export default function CartScreen() {
@@ -57,8 +59,10 @@ export default function CartScreen() {
   const coupon = review.coupon?.eligible && review.coupon.code === pendingCoupon
     ? { code: review.coupon.code, amount: review.coupon.discount ?? 0 }
     : null;
-  const grandTotal = totalAmount + (deliveryFee ?? 0) - (coupon?.amount ?? 0);
-  const savings = review.savings + (coupon?.amount ?? 0);
+  // Welcome credit comes off after the coupon, as it will at checkout
+  const credit = useCheckoutCredit(storeId, totalAmount - (coupon?.amount ?? 0));
+  const grandTotal = totalAmount + (deliveryFee ?? 0) - (coupon?.amount ?? 0) - credit.applied;
+  const savings = review.savings + (coupon?.amount ?? 0) + credit.applied;
   // Below the minimum the bar is grey; unavailable lines turn it into the button that removes them
   const checkoutLocked = belowMinimum && !review.hasUnavailable;
   const removeUnavailable = () => {
@@ -91,6 +95,7 @@ export default function CartScreen() {
         </View>
 
         {goal && <OrderGoal kind={goal.kind} target={goal.target} total={totalAmount} />}
+        <CartCreditNote itemTotal={totalAmount} />
 
         <FlatList {...tabBarScroll.scrollProps}
           data={items}
@@ -123,6 +128,7 @@ export default function CartScreen() {
                 freeDelivery={cartFreeDelivery}
                 memberFreeDelivery={memberFreeDelivery}
                 coupon={coupon}
+                credit={credit.applied > 0 ? { name: credit.name, amount: credit.applied } : null}
                 grandTotal={grandTotal}
                 savings={savings}
               />

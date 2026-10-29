@@ -90,6 +90,7 @@ export const RESOURCE_PERMISSIONS = {
   storefront: P.MARKETING_MANAGE,
   "festival-events": { list: P.MARKETING_MANAGE },
   coupons: P.MARKETING_MANAGE,
+  "welcome-credit": P.MARKETING_MANAGE,
   reviews: P.MARKETING_MANAGE,
   "review-analytics": P.MARKETING_MANAGE,
   "store-ratings": P.MARKETING_MANAGE,

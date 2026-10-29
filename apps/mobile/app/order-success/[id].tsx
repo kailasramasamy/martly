@@ -30,6 +30,7 @@ interface OrderData {
   estimatedDeliveryAt?: string | null;
   deliveryFee?: string | null;
   couponDiscount?: string | null;
+  creditDiscount?: string | number | null;
 }
 
 function OrderSuccessScreen() {

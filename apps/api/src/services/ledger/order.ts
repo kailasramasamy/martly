@@ -3,6 +3,7 @@ import type { Prisma } from "../../../generated/prisma/client.js";
 import { formatOrderRef } from "../notify/copy.js";
 import { deliveryCommission, keptParts } from "./commission.js";
 import { type EntryInput, postEntries } from "./post.js";
+import { martlyCreditOn } from "../credits/spend.js";
 
 type Tx = Prisma.TransactionClient;
 
@@ -39,7 +40,7 @@ async function deliverySourceId(tx: Tx, orderId: string) {
 }
 
 /**
- * Sales are earned on delivery: money Martly took for the order (online, wallet, its own coupon) becomes owed
+ * Sales are earned on delivery: money Martly took for the order (online, wallet, its own coupon and credit) becomes owed
  * to the store once the return window has passed, less Martly's commission on what the customer kept. Wallet
  * credits for units handed back and referral rewards come straight off the balance.
  */
@@ -58,12 +59,14 @@ export async function postDeliveryEntries(tx: Tx, order: DeliveredOrder, refusal
     ? await tx.coupon.findUnique({ where: { id: order.couponId }, select: { organizationId: true } })
     : null;
   const platformCoupon = coupon && coupon.organizationId === null ? Number(order.couponDiscount ?? 0) : 0;
+  const platformCredit = await martlyCreditOn(tx, order.id);
   const commission = await deliveryCommission(tx, order.id, store.organizationId, keptParts(order, refusal));
 
   const entries: EntryInput[] = [
     { ...sale, type: "SALE_ONLINE", amount: online, memo: `Online payment · order ${ref}` },
     { ...sale, type: "SALE_WALLET", amount: wallet, memo: `Wallet payment · order ${ref}` },
     { ...sale, type: "PLATFORM_COUPON", amount: platformCoupon, memo: `Martly coupon ${order.couponCode ?? ""} · order ${ref}` },
+    { ...sale, type: "PLATFORM_CREDIT", amount: platformCredit, memo: `Martly welcome credit · order ${ref}` },
     { ...sale, type: "COMMISSION", amount: -commission.amount, memo: `Martly commission · ${commission.memo} · order ${ref}` },
     { ...base, sourceType: "ORDER", sourceId, type: "DOOR_REFUND", amount: -refusal.walletCredit, memo: `Handed back at the door, refunded to wallet · order ${ref}` },
   ];

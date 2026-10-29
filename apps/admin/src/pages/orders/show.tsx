@@ -271,6 +271,11 @@ export const OrderShow = () => {
                     <Tag color="green">{record.couponCode}</Tag> −₹{Number(record.couponDiscount ?? 0).toFixed(0)}
                   </Descriptions.Item>
                 )}
+                {Number(record.creditDiscount ?? 0) > 0 && (
+                  <Descriptions.Item label="Welcome credit">
+                    <Tag color="green">−₹{Number(record.creditDiscount).toFixed(0)}</Tag>
+                  </Descriptions.Item>
+                )}
                 {record.deliveryFee && Number(record.deliveryFee) > 0 && (
                   <Descriptions.Item label="Delivery Fee">₹{Number(record.deliveryFee).toFixed(0)}</Descriptions.Item>
                 )}
@@ -382,6 +387,7 @@ export const OrderShow = () => {
                 summary={() => {
                   const itemsSubtotal = (record.items ?? []).reduce((sum: number, i: OrderItem) => sum + Number(i.totalPrice), 0);
                   const couponDiscount = Number(record.couponDiscount ?? 0);
+                  const creditDiscount = Number(record.creditDiscount ?? 0);
                   const deliveryFee = Number(record.deliveryFee ?? 0);
                   return (
                     <>
@@ -398,6 +404,17 @@ export const OrderShow = () => {
                           </Table.Summary.Cell>
                           <Table.Summary.Cell index={2}>
                             <span style={{ color: "#22c55e" }}>−₹{couponDiscount.toFixed(0)}</span>
+                          </Table.Summary.Cell>
+                        </Table.Summary.Row>
+                      )}
+                      {creditDiscount > 0 && (
+                        <Table.Summary.Row>
+                          <Table.Summary.Cell index={0} colSpan={3} />
+                          <Table.Summary.Cell index={1}>
+                            <span style={{ color: "#22c55e" }}>Welcome credit</span>
+                          </Table.Summary.Cell>
+                          <Table.Summary.Cell index={2}>
+                            <span style={{ color: "#22c55e" }}>−₹{creditDiscount.toFixed(0)}</span>
                           </Table.Summary.Cell>
                         </Table.Summary.Row>
                       )}

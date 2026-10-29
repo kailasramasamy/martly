@@ -548,6 +548,7 @@ model Organization {
   marketingSubscriptions MarketingSubscription[]
   homeSections           HomeSection[]
   packDesigns            PackDesign[]
+  creditCampaigns        CreditCampaign[]
 
   @@map("organizations")
 }
@@ -629,6 +630,7 @@ model Store {
   healthSnapshots  StorefrontHealthSnapshot[]
   wishlistItems    WishlistItem[]
   packDesigns      PackDesign[]
+  creditCampaigns  CreditCampaign[]
 
   @@unique([townId, slug])
   @@map("stores")
@@ -716,6 +718,7 @@ model User {
   stockCountRevisions StockCountLineRevision[]
   adOrdersCreated     AdOrder[]
   brandCampaigns      BrandCampaign[]
+  creditGrants        CreditGrant[]
 
   @@index([brandId])
   @@map("users")
@@ -1071,6 +1074,9 @@ model Order {
   /// Recorded on delivery: what the customer kept paying for, and Martly's commission on it. Returns refund at this rate.
   commissionBase      Decimal?             @map("commission_base") @db.Decimal(10, 2)
   commissionAmount    Decimal?             @map("commission_amount") @db.Decimal(10, 2)
+  /// Welcome credit spent on the order; taken off the total like a coupon and never refunded as money
+  creditDiscount      Decimal?             @map("credit_discount") @db.Decimal(10, 2)
+  creditGrants        CreditGrant[]
   items               OrderItem[]
   couponRedemptions   CouponRedemption[]
   statusLogs          OrderStatusLog[]
@@ -3055,6 +3061,7 @@ enum LedgerEntryType {
   SALE_ONLINE
   SALE_WALLET
   PLATFORM_COUPON
+  PLATFORM_CREDIT
   RETURN_REFUND
   DOOR_REFUND
   REFERRAL_REWARD
@@ -3235,4 +3242,72 @@ model PackDesign {
 
   @@index([storeId])
   @@map("pack_designs")
+}
+
+enum CreditGrantStatus {
+  ACTIVE
+  /// Held by a placed order until it is delivered or cancelled
+  RESERVED
+  USED
+  EXPIRED
+}
+
+/// Free shopping credit for new customers, funded by Martly (no store) or by one store
+model CreditCampaign {
+  id             String    @id @default(uuid())
+  organizationId String?   @map("organization_id")
+  storeId        String?   @map("store_id")
+  amount         Decimal   @db.Decimal(10, 2)
+  minOrderAmount Decimal   @map("min_order_amount") @db.Decimal(10, 2)
+  validDays      Int       @map("valid_days")
+  /// Spent (delivered) plus reserved credit never goes past this; grants already made are still honoured
+  budget         Decimal   @db.Decimal(12, 2)
+  headline       String?
+  message        String?
+  /// Headline and message in other languages, keyed by language code
+  translations   Json?
+  isActive       Boolean   @default(true) @map("is_active")
+  startsAt       DateTime  @default(now()) @map("starts_at")
+  endsAt         DateTime? @map("ends_at")
+  createdBy      String?   @map("created_by")
+  createdAt      DateTime  @default(now()) @map("created_at")
+  updatedAt      DateTime  @updatedAt @map("updated_at")
+
+  organization Organization? @relation(fields: [organizationId], references: [id])
+  store        Store?        @relation(fields: [storeId], references: [id])
+  grants       CreditGrant[]
+
+  @@index([storeId, isActive])
+  @@index([organizationId])
+  @@map("credit_campaigns")
+}
+
+model CreditGrant {
+  id             String            @id @default(uuid())
+  campaignId     String            @map("campaign_id")
+  userId         String            @map("user_id")
+  /// Kept after account deletion so the same number can't claim again
+  phone          String
+  /// The funding store's id, or MARTLY: one welcome credit per phone from each funder
+  funderKey      String            @map("funder_key")
+  amount         Decimal           @db.Decimal(10, 2)
+  status         CreditGrantStatus @default(ACTIVE)
+  expiresAt      DateTime          @map("expires_at")
+  orderId        String?           @map("order_id")
+  usedAt         DateTime?         @map("used_at")
+  announcedAt    DateTime?         @map("announced_at")
+  reminderSentAt DateTime?         @map("reminder_sent_at")
+  createdAt      DateTime          @default(now()) @map("created_at")
+  updatedAt      DateTime          @updatedAt @map("updated_at")
+
+  campaign CreditCampaign @relation(fields: [campaignId], references: [id])
+  user     User           @relation(fields: [userId], references: [id])
+  order    Order?         @relation(fields: [orderId], references: [id])
+
+  @@unique([funderKey, phone])
+  @@index([campaignId, status])
+  @@index([userId, status])
+  @@index([orderId])
+  @@index([status, expiresAt])
+  @@map("credit_grants")
 }

@@ -2,6 +2,7 @@ import { UNDO_DELIVERY_WINDOW_MS, deliveredAt, undoDeliveryTarget } from "@martl
 import type { OrderStatus, PaymentStatus, Prisma, PrismaClient } from "../../generated/prisma/client.js";
 import { applyMovement } from "./stock-ledger.js";
 import { reverseOrderEntries } from "./ledger/order.js";
+import { unspendCredits } from "./credits/spend.js";
 import { claimStatus, lockLoyaltyPoints } from "./order-guards.js";
 
 type Tx = Prisma.TransactionClient;
@@ -84,6 +85,7 @@ export async function undoDelivery(tx: Tx, order: UndoableOrder, ctx: { userId: 
   await restoreStock(tx, order.id, ctx.userId);
   await reverseLoyalty(tx, order);
   await reverseOrderEntries(tx, order.id, ctx.userId);
+  await unspendCredits(tx, order.id);
   if (order.deliveryTripId) {
     await tx.deliveryTrip.updateMany({
       where: { id: order.deliveryTripId, status: "COMPLETED" },

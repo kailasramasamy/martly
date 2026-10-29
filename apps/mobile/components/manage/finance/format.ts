@@ -22,6 +22,7 @@ const ENTRY_ICONS: Record<LedgerEntryType, keyof typeof Ionicons.glyphMap> = {
   SALE_ONLINE: "card-outline",
   SALE_WALLET: "wallet-outline",
   PLATFORM_COUPON: "ticket-outline",
+  PLATFORM_CREDIT: "gift-outline",
   RETURN_REFUND: "return-down-back-outline",
   DOOR_REFUND: "hand-left-outline",
   REFERRAL_REWARD: "gift-outline",

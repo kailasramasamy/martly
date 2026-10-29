@@ -38,6 +38,7 @@ import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-f
 import { OrderStatus, Permission } from "@martly/shared/constants";
 import { recordMonthlyListOrder } from "../../services/monthly-list/index.js";
 import { idempotencyKeyOf, isIdempotencyConflict, replayAfterConflict, replayPlacedOrder } from "../../services/order-idempotency.js";
+import { releaseCredits, reserveCredits, spendCredits, usableCredit } from "../../services/credits/spend.js";
 
 function getValidTransitions(fulfillmentType: string): Record<string, string[]> {
   return fulfillmentType === "PICKUP" ? PICKUP_TRANSITIONS : DELIVERY_TRANSITIONS;
@@ -434,7 +435,7 @@ export async function orderRoutes(app: FastifyInstance) {
       estimatedMinutes = undefined;
     }
 
-    const totalAmount = itemsTotal - couponDiscount + deliveryFee;
+    const totalBeforeCredit = itemsTotal - couponDiscount + deliveryFee;
 
     const stockItems = body.items.map((item) => ({
       storeProductId: item.storeProductId,
@@ -471,6 +472,12 @@ export async function orderRoutes(app: FastifyInstance) {
           const check = await lockCoupon(tx, couponId, { userId: user.sub, organizationId: store.organizationId, orderAmount: itemsTotal });
           if (!check.ok) throw Object.assign(new Error(check.reason), { statusCode: 400 });
         }
+
+        // Welcome credit comes off like a coupon, on what the items cost after it
+        const credit = body.useCredit
+          ? await usableCredit(tx, user.sub, body.storeId, itemsTotal - couponDiscount, true)
+          : { amount: 0, grantIds: [] };
+        const totalAmount = totalBeforeCredit - credit.amount;
 
         // Wallet deduction
         let walletDeduction = 0;
@@ -510,7 +517,7 @@ export async function orderRoutes(app: FastifyInstance) {
         }
 
         const remainingAmount = remainingAfterWallet;
-        const walletFullyCovered = remainingAmount === 0 && (walletDeduction > 0 || loyaltyDeduction > 0);
+        const walletFullyCovered = remainingAmount === 0 && (walletDeduction > 0 || loyaltyDeduction > 0 || credit.amount > 0);
 
         // Determine initial payment status
         let paymentStatus: "PENDING" | "PAID" = "PENDING";
@@ -537,6 +544,7 @@ export async function orderRoutes(app: FastifyInstance) {
             couponId,
             couponCode,
             couponDiscount: couponDiscount > 0 ? couponDiscount : undefined,
+            creditDiscount: credit.amount > 0 ? credit.amount : undefined,
             deliveryFee,
             deliveryDistance,
             deliveryNotes: body.deliveryNotes,
@@ -563,6 +571,7 @@ export async function orderRoutes(app: FastifyInstance) {
           },
           include: { items: { include: { variant: true } } },
         });
+        await reserveCredits(tx, newOrder.id, credit.grantIds);
 
         // Deduct wallet balance
         if (walletDeduction > 0) {
@@ -722,6 +731,7 @@ export async function orderRoutes(app: FastifyInstance) {
         if (body.status === "CANCELLED") {
           await releaseStock(tx, stockItems);
           await releaseCoupon(tx, existing);
+          await releaseCredits(tx, existing.id);
         }
         const refusal = body.status === "DELIVERED" ? await deliverWithRefusals(tx, existing, body.refused ?? [], request.user.sub) : null;
         const updateData: Record<string, unknown> = { status: body.status };
@@ -887,6 +897,7 @@ export async function orderRoutes(app: FastifyInstance) {
 
         if (body.status === "DELIVERED") {
           const referral = referralId ? { id: referralId, referrerReward: referralReferrerReward, refereeReward: referralRefereeReward } : null;
+          await spendCredits(tx, existing.id);
           await postDeliveryEntries(tx, existing, refusal ?? { refusedAmount: 0, walletCredit: 0 }, referral);
         }
 

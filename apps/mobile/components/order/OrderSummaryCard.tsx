@@ -26,15 +26,18 @@ function Row({ label, value, strong, tone }: { label: ReactNode; value: string; 
 function Bill({ order }: { order: OrderData }) {
   const t = useStrings("orders").detail;
   const common = useStrings("common");
+  const welcomeCredit = useStrings("credits").orderLine;
   const pickup = order.fulfillmentType === "PICKUP";
   const fee = Number(order.deliveryFee ?? 0);
   const coupon = Number(order.couponDiscount ?? 0);
+  const credit = Number(order.creditDiscount ?? 0);
   const refused = Number(order.refusedAmount ?? 0);
   return (
     <View style={styles.group}>
-      <Row label={t.itemsSubtotal} value={rupees(Number(order.totalAmount) + coupon - fee)} />
+      <Row label={t.itemsSubtotal} value={rupees(Number(order.totalAmount) + coupon + credit - fee)} />
       <Row label={pickup ? t.fulfillment : t.deliveryFee} value={pickup ? t.storePickupFree : fee > 0 ? rupees(fee) : common.free} tone={fee > 0 ? undefined : "saving"} />
       {coupon > 0 && <Row label={t.coupon(order.couponCode ?? "")} value={`−${rupees(coupon)}`} tone="saving" />}
+      {credit > 0 && <Row label={welcomeCredit} value={`−${rupees(credit)}`} tone="saving" />}
       <Row label={t.orderTotal} value={rupees(order.totalAmount)} strong />
       {refused > 0 && <Row label={order.paymentMethod === "COD" ? t.handedBackCod : t.handedBackOnline} value={`−${rupees(refused)}`} tone="saving" />}
     </View>

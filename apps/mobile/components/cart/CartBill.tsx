@@ -12,11 +12,13 @@ interface CartBillProps {
   memberFreeDelivery: boolean;
   /** The applied coupon and what it takes off, when it applies to this cart */
   coupon: { code: string; amount: number } | null;
+  /** Welcome credit checkout will take off, by its name */
+  credit: { name: string; amount: number } | null;
   grandTotal: number;
   savings: number;
 }
 
-export function CartBill({ itemTotal, deliveryFee, freeDelivery, memberFreeDelivery, coupon, grandTotal, savings }: CartBillProps) {
+export function CartBill({ itemTotal, deliveryFee, freeDelivery, memberFreeDelivery, coupon, credit, grandTotal, savings }: CartBillProps) {
   const t = useStrings("cart");
   const common = useStrings("common");
 
@@ -50,6 +52,12 @@ export function CartBill({ itemTotal, deliveryFee, freeDelivery, memberFreeDeliv
           <View style={styles.row}>
             <Text style={styles.label}>{t.couponLine(coupon.code)}</Text>
             <Text style={styles.free}>-{"\u20B9"}{amount(coupon.amount)}</Text>
+          </View>
+        )}
+        {credit && (
+          <View style={styles.row}>
+            <Text style={styles.label}>{credit.name}</Text>
+            <Text style={styles.free}>-{"\u20B9"}{credit.amount.toFixed(0)}</Text>
           </View>
         )}
         <View style={styles.divider} />

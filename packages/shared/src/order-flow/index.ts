@@ -148,18 +148,25 @@ export function handoverNote(order: PayableOrder): string {
   return "This completes the order and notifies the customer.";
 }
 
-/** What units handed back at the door are worth: what they were paid for (free units averaged in), less their share of
- * the order's coupon */
-export function refusedValue(
-  order: { couponDiscount?: string | number | null; items: readonly { id: string; quantity: number; totalPrice: string | number }[] },
-  refused: readonly { orderItemId: string; quantity: number }[],
-): number {
+interface DiscountedOrder {
+  couponDiscount?: Amount | null;
+  creditDiscount?: Amount | null;
+  items: readonly { id: string; quantity: number; totalPrice: Amount }[];
+}
+
+/** The part of the items' price the customer paid for: the rest was the coupon and welcome credit, never refunded as money */
+export function paidShare(order: DiscountedOrder): number {
   const itemsTotal = order.items.reduce((sum, i) => sum + Number(i.totalPrice), 0);
   if (itemsTotal === 0) return 0;
+  return Math.max(0, itemsTotal - Number(order.couponDiscount ?? 0) - Number(order.creditDiscount ?? 0)) / itemsTotal;
+}
+
+/** What units handed back at the door are worth: what they were paid for (free units averaged in), less their share of
+ * the order's coupon and credit */
+export function refusedValue(order: DiscountedOrder, refused: readonly { orderItemId: string; quantity: number }[]): number {
   const price = new Map(order.items.map((i) => [i.id, paidPerUnit(i)]));
   const value = refused.reduce((sum, r) => sum + (price.get(r.orderItemId) ?? 0) * r.quantity, 0);
-  const share = Math.max(0, itemsTotal - Number(order.couponDiscount ?? 0)) / itemsTotal;
-  return Math.round(value * share * 100) / 100;
+  return Math.round(value * paidShare(order) * 100) / 100;
 }
 
 export type ReturnTone = "pending" | "active" | "done" | "declined" | "closed";

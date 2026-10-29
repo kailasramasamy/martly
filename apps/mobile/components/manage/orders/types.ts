@@ -58,6 +58,7 @@ export interface OrderDetail {
   deliveryNotes: string | null;
   couponCode: string | null;
   couponDiscount: string | null;
+  creditDiscount?: string | number | null;
   refusedAmount: string | null;
   walletAmountUsed: string | null;
   loyaltyPointsUsed: number | null;

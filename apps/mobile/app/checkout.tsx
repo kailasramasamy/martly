@@ -29,6 +29,10 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Switch } from "react-native";
 import { PaymentOptions } from "../components/checkout/PaymentOptions";
 import { useOrderPayment } from "../components/checkout/use-order-payment";
+import { CheckoutCreditRow } from "../components/credits/CheckoutCreditRow";
+import { CreditLossNote } from "../components/credits/CreditLossNote";
+import { useCheckoutCredit } from "../lib/use-checkout-credit";
+import { useCredits } from "../lib/credits-context";
 import { UPI_APPS, useInstalledUpiApps, loadPaymentChoice, savePaymentChoice, type PaymentChoice } from "../lib/upi-apps";
 import { ProfileGate } from "../components/ProfileGate";
 import { ConfirmSheet } from "../components/ConfirmSheet";
@@ -330,12 +334,14 @@ function CheckoutScreen() {
   };
 
   const couponDiscount = couponResult?.discount ?? 0;
+  const credit = useCheckoutCredit(storeId, totalAmount - couponDiscount);
+  const { refresh: refreshCredits } = useCredits();
   // The address's distance tier sets the fee; until it's looked up, the store's lowest tier. The threshold waives it.
   const deliveryFeeFrom = selectedStore?.deliveryFeeFrom ?? 0;
   const rawDeliveryFee = isPickup ? 0 : deliveryLookup?.serviceable ? (deliveryLookup.deliveryFee ?? 0) : deliveryFeeFrom;
   const memberFreeDelivery = !isPickup && membershipStatus?.isMember && membershipStatus.membership?.freeDelivery;
   const freeDeliveryApplied = !isPickup && (memberFreeDelivery || (freeDeliveryThreshold != null && totalAmount >= freeDeliveryThreshold));
-  const totalSavings = couponDiscount + (freeDeliveryApplied ? rawDeliveryFee : 0);
+  const totalSavings = couponDiscount + credit.applied + (freeDeliveryApplied ? rawDeliveryFee : 0);
   const deliveryFee = freeDeliveryApplied ? 0 : rawDeliveryFee;
   const effectiveEstMinutes = isPickup
     ? 30
@@ -344,7 +350,7 @@ function CheckoutScreen() {
       : deliveryLookup?.serviceable
         ? deliveryLookup.estimatedMinutes
         : undefined;
-  const grandTotal = totalAmount - couponDiscount + deliveryFee;
+  const grandTotal = totalAmount - couponDiscount - credit.applied + deliveryFee;
   const walletDeduction = useWallet ? Math.min(walletBalance, grandTotal) : 0;
   const afterWallet = grandTotal - walletDeduction;
 
@@ -411,6 +417,7 @@ function CheckoutScreen() {
       }
 
       if (couponResult?.code) orderPayload.couponCode = couponResult.code;
+      if (credit.applied > 0) orderPayload.useCredit = true;
       if (monthlyListId) orderPayload.monthlyListId = monthlyListId;
       if (deliveryNotes.trim()) orderPayload.deliveryNotes = deliveryNotes.trim();
 
@@ -423,6 +430,7 @@ function CheckoutScreen() {
         "/api/v1/orders", orderPayload, { "Idempotency-Key": idempotencyKeyRef.current },
       );
       const orderId = result.data.id;
+      refreshCredits();
       const fullyCoveredByWallet = result.data.walletFullyCovered === true;
 
       // Wallet fully covered — no further payment needed
@@ -1168,6 +1176,7 @@ function CheckoutScreen() {
                 <Text style={styles.billSaving}>-{"\u20B9"}{amount(couponDiscount)}</Text>
               </View>
             )}
+            <CheckoutCreditRow credit={credit} />
             <View style={styles.billRow}>
               <Text style={styles.billLabel}>
                 {isPickup ? t.bill.storePickup : t.bill.deliveryFee}
@@ -1258,6 +1267,7 @@ function CheckoutScreen() {
       <CheckoutWalkNudge />
       {/* Sticky Place Order Bar */}
       <View style={[styles.footer, { paddingBottom: Math.max(12, insets.bottom + 8) }]}>
+        <CreditLossNote credit={credit} orderAmount={totalAmount - couponDiscount} />
         <TouchableOpacity
           style={[styles.placeOrderBar, orderDisabled && styles.placeOrderBarDisabled]}
           activeOpacity={0.9}

@@ -470,6 +470,8 @@ export const createOrderSchema = z.object({
   couponCode: z.string().optional(),
   deliveryNotes: z.string().max(500).optional(),
   useWallet: z.boolean().default(true),
+  /** Spend welcome credit; off unless the app asks, so older builds keep the totals they show */
+  useCredit: z.boolean().default(false),
   useLoyaltyPoints: z.boolean().default(false),
   deliverySlotId: z.string().uuid().optional(),
   scheduledDate: z.string().optional(),
@@ -1722,3 +1724,4 @@ export * from "./store-resolve.js";
 export * from "./web.js";
 export * from "./storefront.js";
 export * from "./loose-staples.js";
+export * from "./credits.js";
