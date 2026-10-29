@@ -11,10 +11,10 @@ async function wishlistAlertSchedulerPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", async () => {
-    interval = setInterval(() => {
-      if (istNow().minutes < RUN_AT_MINUTES) return;
-      runWishlistAlerts(app.fcm, app.prisma).catch((err: unknown) => app.log.error(err, "Wishlist alerts run failed"));
-    }, INTERVAL_MS);
+    const run = async () => {
+      if (istNow().minutes >= RUN_AT_MINUTES) await runWishlistAlerts(app.fcm, app.prisma);
+    };
+    interval = setInterval(app.scheduledJob("wishlist-alerts", run), INTERVAL_MS);
     app.log.info("Wishlist alert scheduler started (daily ~10:00 IST)");
   });
 

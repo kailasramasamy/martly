@@ -55,9 +55,7 @@ async function deliveryPlanningSchedulerPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", async () => {
-    interval = setInterval(() => {
-      run().catch((err: unknown) => app.log.error(err, "Delivery planning scheduler run failed"));
-    }, INTERVAL_MS);
+    interval = setInterval(app.scheduledJob("delivery-planning", run), INTERVAL_MS);
     app.log.info("Delivery planning scheduler started (every minute)");
   });
 

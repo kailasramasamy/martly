@@ -1,4 +1,5 @@
 import type { PrismaClient } from "../../../generated/prisma/client.js";
+import { utc } from "../listing-sql.js";
 
 /**
  * Claims a one-time alert key. Returns true only for the first caller, so schedulers
@@ -15,6 +16,27 @@ export async function claimOnce(prisma: PrismaClient, keys: string[]): Promise<S
   const rows = await prisma.$queryRaw<{ key: string }[]>`
     INSERT INTO alert_once (key) SELECT unnest(${keys}::text[]) ON CONFLICT DO NOTHING RETURNING key`;
   return new Set(rows.map((r) => r.key));
+}
+
+/**
+ * A key only has to outlive the window its scanner looks back over: the longest is a monthly list's month, then
+ * attention escalations' 7 days; event keys (payment failed, rider assigned) only dedupe retries within a day.
+ */
+export const ALERT_KEY_RETENTION_MS = 90 * 24 * 60 * 60 * 1000;
+const PRUNE_BATCH = 5000;
+
+export const alertKeyCutoff = (now: Date) => new Date(now.getTime() - ALERT_KEY_RETENTION_MS);
+
+/** Deletes alert keys past retention in batches, so a large backlog never holds one long lock; returns how many went */
+export async function pruneAlertKeys(prisma: PrismaClient, now = new Date()): Promise<number> {
+  const cutoff = utc(alertKeyCutoff(now));
+  let total = 0;
+  for (;;) {
+    const deleted = await prisma.$executeRaw`
+      DELETE FROM alert_once WHERE key IN (SELECT key FROM alert_once WHERE created_at < ${cutoff} LIMIT ${PRUNE_BATCH})`;
+    total += deleted;
+    if (deleted < PRUNE_BATCH) return total;
+  }
 }
 
 const PROMO_WINDOW_MS = 24 * 60 * 60 * 1000;

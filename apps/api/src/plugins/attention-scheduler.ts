@@ -9,9 +9,7 @@ async function attentionSchedulerPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", async () => {
-    interval = setInterval(() => {
-      escalateStaleWork(app.fcm, app.prisma).catch((err: unknown) => app.log.error(err, "Attention scheduler run failed"));
-    }, INTERVAL_MS);
+    interval = setInterval(app.scheduledJob("attention", () => escalateStaleWork(app.fcm, app.prisma)), INTERVAL_MS);
     app.log.info("Attention scheduler started (every 5 minutes)");
   });
 

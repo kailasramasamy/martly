@@ -9,9 +9,7 @@ async function orderSlaSchedulerPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", async () => {
-    interval = setInterval(() => {
-      runOrderSlaChecks(app).catch((err: unknown) => app.log.error(err, "Order SLA scheduler run failed"));
-    }, INTERVAL_MS);
+    interval = setInterval(app.scheduledJob("order-sla", () => runOrderSlaChecks(app)), INTERVAL_MS);
     app.log.info("Order SLA scheduler started (every minute)");
   });
 

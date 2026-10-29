@@ -16,9 +16,7 @@ async function marketingSchedulerPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", async () => {
-    interval = setInterval(() => {
-      run().catch((err: unknown) => app.log.error(err, "Marketing scheduler run failed"));
-    }, INTERVAL_MS);
+    interval = setInterval(app.scheduledJob("marketing", run), INTERVAL_MS);
     app.log.info("Marketing scheduler started (every 5 min)");
   });
 

@@ -44,11 +44,7 @@ async function promoSchedulerPlugin(app: FastifyInstance) {
   app.addHook("onReady", async () => {
     // Drafts run in-process, so any still drafting from before this start were cut off
     await failStaleDrafts(app.prisma, app.fcm);
-    interval = setInterval(() => {
-      launchDuePromos()
-        .then(endExpiredPromos)
-        .catch((err: unknown) => app.log.error(err, "Promo scheduler run failed"));
-    }, INTERVAL_MS);
+    interval = setInterval(app.scheduledJob("promo", () => launchDuePromos().then(endExpiredPromos)), INTERVAL_MS);
     app.log.info("Promo scheduler started (every 5 min)");
   });
 

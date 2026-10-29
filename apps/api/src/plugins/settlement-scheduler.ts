@@ -47,9 +47,7 @@ async function settlementSchedulerPlugin(app: FastifyInstance) {
   let interval: ReturnType<typeof setInterval> | undefined;
 
   app.addHook("onReady", async () => {
-    interval = setInterval(() => {
-      run().catch((err: unknown) => app.log.error(err, "Settlement scheduler run failed"));
-    }, INTERVAL_MS);
+    interval = setInterval(app.scheduledJob("settlement", run), INTERVAL_MS);
     app.log.info("Settlement scheduler started (every 5 minutes)");
   });
 

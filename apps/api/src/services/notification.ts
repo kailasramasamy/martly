@@ -245,6 +245,8 @@ export async function sendCampaignNotifications(
       ),
     );
     allNotifications.push(...notifications);
+    // Keeps a campaign that is still sending from being taken for a stale one (see notification-scheduler)
+    await prisma.notificationCampaign.updateMany({ where: { id: campaignId, status: "SENDING" }, data: { updatedAt: new Date() } });
   }
 
   // 2. Broadcast via WebSocket (non-blocking, in-memory)
