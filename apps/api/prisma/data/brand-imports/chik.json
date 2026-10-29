@@ -1,0 +1,38 @@
+{
+  "brand": "Chik",
+  "manufacturer": "CavinKare Pvt. Ltd., Chennai",
+  "feed": "chik-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/chik/logo-84e74f00.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#F5B800",
+  "namePrefix": "Chik ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Anti\\ Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Protein\\ Solutions\\ Hairfall\\ Prevent\\ Shampoo\\ with\\ Egg\\ White$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Protein\\ Solutions\\ Thick\\ \\&\\ Glossy\\ Shampoo\\ with\\ Badam$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    }
+  ]
+}

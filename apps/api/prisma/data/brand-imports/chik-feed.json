@@ -1,0 +1,179 @@
+[
+ {
+  "title": "Anti Dandruff Shampoo",
+  "handle": "anti-dandruff-shampoo",
+  "vendor": "Chik",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "650ml",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40232975_2-chik-anti-dandruff-shampoo-fights-dandruff-strengthens.jpg"
+    },
+    "barcode": "8902979042277"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232975_2-chik-anti-dandruff-shampoo-fights-dandruff-strengthens.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232975-2_2-chik-anti-dandruff-shampoo-fights-dandruff-strengthens.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232975-3_2-chik-anti-dandruff-shampoo-fights-dandruff-strengthens.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232975-4_2-chik-anti-dandruff-shampoo-fights-dandruff-strengthens.jpg"
+   }
+  ],
+  "details": {
+   "description": "Protect your scalp from dandruff and itch with Chik Anti-Dandruff Shampoo. It helps cleanse your hair gently and soothes itchy scalp. It helps make your scalp more radiant and your roots strong. Use it three times a week for the best results and make your hair look great.",
+   "ingredients": "Water, Sodium Laureth Sulfate, Polydimethylsiloxane, Sodium Chloride, Fenugreek, Lemon Extract, Maha Neem Extract, Zinc Pyrithione, Acrylates Copolymer, Fattyamide Mea, Cocamidopropyl Betaine, Fragrance, Glycol Disterate, Guar Hydroxypropyltrimonium Chloride, PEG-45M, DMDM Hydantoin, Citric Acid, CI 42090, CI 19140.",
+   "usageInstructions": "Shake before use. Apply on wet hair, lather and rinse.",
+   "manufacturerName": "Cavinkare Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Protein Solutions Hairfall Prevent Shampoo with Egg White",
+  "handle": "protein-solutions-hairfall-prevent-shampoo-with-egg-white",
+  "vendor": "Chik",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "118",
+    "compare_at_price": "118",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40106425_5-chik-shampoo-egg-white-protein.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40232973_4-chik-shampoo-hairfall-prevent-egg-white-for-thicker-looking-hair.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "749",
+    "compare_at_price": "749",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40232974_3-chik-shampoo-hairfall-prevent-egg-white-for-thicker-looking-hair.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106425_5-chik-shampoo-egg-white-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106425-2_8-chik-shampoo-egg-white-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106425-3_2-chik-shampoo-egg-white-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106425-4_2-chik-shampoo-egg-white-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106425-5_2-chik-shampoo-egg-white-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106425-6_1-chik-shampoo-egg-white-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106425-7_1-chik-shampoo-egg-white-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106425-8_1-chik-shampoo-egg-white-protein.jpg"
+   }
+  ],
+  "details": {
+   "description": "CHIK is an iconic shampoo brand from the house of CavinKare. Known for conceptualizing innovative sachet packaging in India, the brand today has a vast portfolio of innovative, affordable hair and personal care products. CHIK Hair fall prevention shampoo has the goodness of Egg White Protein. It strengthens damaged hair by reducing hair fall thereby helping you to get thicker looking healthy hair. It prevents hair fall due to hair breakage.",
+   "ingredients": "Water, Sodium Laureth Sulfate, Sodium Chloride, Glycol Disterate, Hydrolyzed Egg White Protein, Citric Acid, Sodium Hydroxide, Peg-45M, Dmdm Hydantoin, Fattyamide Mea, Fragrance",
+   "usageInstructions": "Apply on wet hair.\nLather and rinse.\nFor external use only; Avoid contact with eyes.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Protein Solutions Thick & Glossy Shampoo with Badam",
+  "handle": "protein-solutions-thick-glossy-shampoo-with-badam",
+  "vendor": "Chik",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40246839_2-chik-chik-thick-glossy-shampoo-badam-black-tea-bhringraj-oil-for-shiny-hair.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "169",
+    "compare_at_price": "169",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40043763_3-chik-shampoo-amla-badam-hairfall-prevent.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "525",
+    "compare_at_price": "525",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40275204_2-chik-protein-solutions-thick-glossy-shampoo-badam-protein-bhringraj-oil-black-tea-for-shiny-hair.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40246839_2-chik-chik-thick-glossy-shampoo-badam-black-tea-bhringraj-oil-for-shiny-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40246839-2_2-chik-chik-thick-glossy-shampoo-badam-black-tea-bhringraj-oil-for-shiny-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40246839-3_2-chik-chik-thick-glossy-shampoo-badam-black-tea-bhringraj-oil-for-shiny-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40246839-4_2-chik-chik-thick-glossy-shampoo-badam-black-tea-bhringraj-oil-for-shiny-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40246839-5_2-chik-chik-thick-glossy-shampoo-badam-black-tea-bhringraj-oil-for-shiny-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40246839-6_1-chik-chik-thick-glossy-shampoo-badam-black-tea-bhringraj-oil-for-shiny-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40246839-7_1-chik-chik-thick-glossy-shampoo-badam-black-tea-bhringraj-oil-for-shiny-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40246839-8_1-chik-chik-thick-glossy-shampoo-badam-black-tea-bhringraj-oil-for-shiny-hair.jpg"
+   }
+  ],
+  "details": {
+   "description": "Chik thick & glossy black shampoo contains the goodness of black tea, badam protein & Bhringraj oil. It helps to enhance hair shine & strengthens your hair thereby, giving you thicker-looking & glossy hair. Get gorgeous-looking shiny hair with regular use of Chik Thick & Glossy Black Shampoo. It reduces hair fall due to hair breakage. Based on a consumer research study done in 2016.",
+   "ingredients": "Water, Sodium Laureth Sulfate, Polydimethylsiloxane, Cocamidopropyl Betaine, Sodium Chloride, Fattyamide Mea, Fragrance, Glycol Distearate, Carbomer, Camellia Sinesis (Black Tea) Leaf Extract, Eclipta Alba (Bhringraj) Oil Extract, Hydrolysed Sweet Almond Protein, Hydrolyzed Protein, Guar Hydroxypropyltrimonium Chloride, Peg-45m, Dmdm Hydantoin, Disodium EDTA, Mica And Titanium Dioxide, Citric Acid, Sodium Hydroxide, Ci 20470, Ci 19140, Ci 14720, Ci 77266.",
+   "usageInstructions": "Take 2 to 3 drops of the shampoo, equal to the size of a coin, on your palm.\nThen apply the shampoo gently massaging it all over your hair from the roots to the tips.\nLeave the shampoo on your hair for a couple of minutes and then rinse it off completely.",
+   "manufacturerName": "CavinKare Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]
