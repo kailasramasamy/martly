@@ -86,6 +86,36 @@
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40371506_1-coca-cola-original-taste-soft-drink.jpg"
     }
+   },
+   {
+    "title": "740ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000655_10-coca-cola-soft-drink-original-taste.jpg"
+    },
+    "barcode": "8901764012990"
+   },
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203850_3-coca-cola-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "180ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333593_1-coca-cola-coke.jpg"
+    }
    }
   ],
   "images": [
@@ -163,6 +193,35 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40371507_1-coca-cola-zero-sugar-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "600ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40265466_1-coca-cola-soft-drink-zero-sugar-no-calories.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362488_1-coca-cola-coke-zero.jpg"
+    }
+   },
+   {
+    "title": "180ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333592_1-coca-cola-coke-zero-sugar.jpg"
     }
    }
   ],

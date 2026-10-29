@@ -1,41 +1,41 @@
 {
-  "brand": "Coca-Cola",
-  "manufacturer": "Hindustan Coca-Cola Beverages Pvt. Ltd.",
-  "feed": "coca-cola-feed.json",
-  "themeColor": "#F40009",
-  "themeColorSecondary": "#000000",
-  "namePrefix": "Coca-Cola ",
-  "foodType": "VEG",
-  "exclude": [],
-  "aliases": {
-    "Coca-Cola Classic Soft Drink": "Original Taste Soft Drink",
-    "Coca-Cola Zero Sugar": "Zero Sugar Soft Drink"
+ "brand": "Coca-Cola",
+ "manufacturer": "Hindustan Coca-Cola Beverages Pvt. Ltd.",
+ "feed": "coca-cola-feed.json",
+ "themeColor": "#F40009",
+ "themeColorSecondary": "#000000",
+ "namePrefix": "Coca-Cola ",
+ "foodType": "VEG",
+ "exclude": [],
+ "aliases": {
+  "Coca-Cola Classic Soft Drink": "Original Taste Soft Drink",
+  "Coca-Cola Zero Sugar": "Zero Sugar Soft Drink"
+ },
+ "rules": [
+  {
+   "match": "^Original\\ Taste\\ Soft\\ Drink$",
+   "path": [
+    "Beverages",
+    "Soft Drinks & Carbonated",
+    "Cola"
+   ]
   },
-  "rules": [
-    {
-      "match": "^Original\\ Taste\\ Soft\\ Drink$",
-      "path": [
-        "Beverages",
-        "Soft Drinks & Carbonated",
-        "Cola"
-      ]
-    },
-    {
-      "match": "^Zero\\ Sugar\\ Soft\\ Drink$",
-      "path": [
-        "Beverages",
-        "Soft Drinks & Carbonated",
-        "Diet & Zero Sugar"
-      ]
-    },
-    {
-      "match": "^Diet\\ Coke\\ Soft\\ Drink$",
-      "path": [
-        "Beverages",
-        "Soft Drinks & Carbonated",
-        "Diet & Zero Sugar"
-      ]
-    }
-  ],
-  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/coca-cola/logo-6402753d.png"
+  {
+   "match": "^Zero\\ Sugar\\ Soft\\ Drink$",
+   "path": [
+    "Beverages",
+    "Soft Drinks & Carbonated",
+    "Diet & Zero Sugar"
+   ]
+  },
+  {
+   "match": "^Diet\\ Coke\\ Soft\\ Drink$",
+   "path": [
+    "Beverages",
+    "Soft Drinks & Carbonated",
+    "Diet & Zero Sugar"
+   ]
+  }
+ ],
+ "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/coca-cola/logo-6402753d.png"
 }
