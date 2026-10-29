@@ -1050,6 +1050,8 @@ model Order {
   slotEndTime         String?         @map("slot_end_time")
   subscriptionId      String?         @map("subscription_id")
   isSubscriptionOrder Boolean         @default(false) @map("is_subscription_order")
+  /// The Idempotency-Key the app sent when placing it: a repeat of that request returns this order instead of placing another
+  idempotencyKey      String?         @map("idempotency_key")
   createdAt           DateTime        @default(now()) @map("created_at")
   updatedAt           DateTime        @updatedAt @map("updated_at")
 
@@ -1078,6 +1080,7 @@ model Order {
   ledgerEntries       LedgerEntry[]
   paymentAttempts     PaymentAttempt[]
 
+  @@unique([userId, idempotencyKey])
   @@index([storeId, status])
   @@map("orders")
 }

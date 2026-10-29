@@ -81,6 +81,11 @@ function CheckoutScreen() {
   const paymentMethod: PaymentMethod = paymentChoice.kind === "cod" ? "COD" : "ONLINE";
   const chosenUpiApp = paymentChoice.kind === "upi" ? UPI_APPS.find((a) => a.id === paymentChoice.app) : undefined;
   const [submitting, setSubmitting] = useState(false);
+  // Set at once on tap (state lands a render later), so a double tap can't place the order twice
+  const placingRef = useRef(false);
+  // One key per checkout attempt, sent again on a retry, so an order placed by a request whose answer was lost is
+  // returned instead of placed a second time
+  const idempotencyKeyRef = useRef<string | null>(null);
   const [couponCode, setCouponCode] = useState("");
   const [couponResult, setCouponResult] = useState<CouponValidation | null>(null);
   const [couponError, setCouponError] = useState("");
@@ -374,7 +379,10 @@ function CheckoutScreen() {
   });
 
   const proceedWithOrder = async () => {
+    if (placingRef.current) return;
+    placingRef.current = true;
     setSubmitting(true);
+    idempotencyKeyRef.current ??= `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}${Math.random().toString(36).slice(2)}`;
     try {
       const orderPayload: Record<string, unknown> = {
         storeId,
@@ -410,7 +418,9 @@ function CheckoutScreen() {
         orderPayload.scheduledDate = selectedDate;
       }
 
-      const result = await api.post<{ id: string; walletFullyCovered?: boolean }>("/api/v1/orders", orderPayload);
+      const result = await api.post<{ id: string; walletFullyCovered?: boolean }>(
+        "/api/v1/orders", orderPayload, { "Idempotency-Key": idempotencyKeyRef.current },
+      );
       const orderId = result.data.id;
       const fullyCoveredByWallet = result.data.walletFullyCovered === true;
 
@@ -438,6 +448,7 @@ function CheckoutScreen() {
       const message = error instanceof Error ? error.message : t.payment.placeFailed;
       toast.show(message, "error");
     } finally {
+      placingRef.current = false;
       setSubmitting(false);
     }
   };

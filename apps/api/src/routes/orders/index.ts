@@ -37,6 +37,7 @@ import { claimStatus, lockCoupon, lockLoyaltyPoints, lockWalletBalance, releaseC
 import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
 import { OrderStatus, Permission } from "@martly/shared/constants";
 import { recordMonthlyListOrder } from "../../services/monthly-list/index.js";
+import { idempotencyKeyOf, isIdempotencyConflict, replayAfterConflict, replayPlacedOrder } from "../../services/order-idempotency.js";
 
 function getValidTransitions(fulfillmentType: string): Record<string, string[]> {
   return fulfillmentType === "PICKUP" ? PICKUP_TRANSITIONS : DELIVERY_TRANSITIONS;
@@ -188,7 +189,7 @@ export async function orderRoutes(app: FastifyInstance) {
   });
 
   // Create order (authenticated) — reserve stock + create order in one transaction
-  app.post("/", { preHandler: [authenticate] }, async (request, reply) => {
+  app.post("/", { preHandler: [authenticate, replayPlacedOrder(app.prisma)] }, async (request, reply) => {
     const body = createOrderSchema.parse(request.body);
     const user = request.user as { sub: string };
     const fulfillmentType = body.fulfillmentType ?? "DELIVERY";
@@ -549,6 +550,7 @@ export async function orderRoutes(app: FastifyInstance) {
             scheduledDate: scheduledDate ?? undefined,
             slotStartTime: slotStartTime ?? undefined,
             slotEndTime: slotEndTime ?? undefined,
+            idempotencyKey: idempotencyKeyOf(request),
             items: { create: itemsData },
             statusLogs: {
               create: walletFullyCovered
@@ -651,6 +653,7 @@ export async function orderRoutes(app: FastifyInstance) {
       const response: ApiResponse<typeof responseData> = { success: true, data: responseData };
       return response;
     } catch (err) {
+      if (isIdempotencyConflict(err)) return replayAfterConflict(app.prisma, request, reply);
       const e = err as Error & { statusCode?: number };
       if (e.statusCode === 409) {
         return reply.status(409).send({
