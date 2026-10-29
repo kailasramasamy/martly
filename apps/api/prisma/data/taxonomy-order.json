@@ -82,7 +82,7 @@
     "Deodorants & Fragrances": ["Deodorant Spray", "Roll-On", "Perfume & Body Mist", "Attar"]
   },
   "Pooja & Festivals": {
-    "Pooja Essentials": ["Agarbatti (Incense Sticks)", "Camphor (Kapur)", "Diya & Wicks", "Sindoor & Kumkum", "Dhoop & Cones", "Sacred Thread (Mauli / Kalava)", "Matches"],
+    "Pooja Essentials": ["Agarbatti (Incense Sticks)", "Camphor (Kapur)", "Diya & Wicks", "Pooja Oil", "Sindoor & Kumkum", "Chandan & Vibhuti", "Pooja Turmeric", "Dhoop & Cones", "Sacred Thread (Mauli / Kalava)", "Abhishekam Items", "Havan Samagri", "Pooja Kits", "Matches"],
     "Pooja Offerings": ["Flowers & Garlands (if available)", "Coconut (Nariyal)", "Betel Leaves & Areca", "Mishri & Batasha", "Panchamrit Ingredients"],
     "Festival Items": ["Rangoli Colours", "Diyas & Decorative Candles", "Gift Packs & Hampers", "Holi Colours (Gulal)"]
   },
