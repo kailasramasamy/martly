@@ -37,7 +37,7 @@ function Gallery({ images, name }: { images: string[]; name: string }) {
     <div>
       <div className="overflow-hidden rounded-[24px] border border-line bg-surface">
         {images.length
-          ? <img src={images[shown]} alt={name} width={640} height={640} className="aspect-square w-full object-contain p-6" />
+          ? <img src={images[shown]} alt={name} width={640} height={640} className="aspect-square w-full object-contain mix-blend-multiply p-6" />
           : <span className="flex aspect-square items-center justify-center text-muted"><Icon name="basket" size={64} strokeWidth={1.25} /></span>}
       </div>
       {images.length > 1 && (
@@ -45,7 +45,7 @@ function Gallery({ images, name }: { images: string[]; name: string }) {
           {images.map((src, i) => (
             <li key={src} className="shrink-0">
               <button onClick={() => setShown(i)} aria-label={`Photo ${i + 1}`} aria-pressed={i === shown} className="block h-16 w-16 overflow-hidden rounded-xl border-2 border-transparent bg-surface aria-pressed:border-brand">
-                <img src={src} alt="" loading="lazy" className="h-full w-full object-contain p-1" />
+                <img src={src} alt="" loading="lazy" className="h-full w-full object-contain mix-blend-multiply p-1" />
               </button>
             </li>
           ))}

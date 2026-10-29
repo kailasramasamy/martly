@@ -776,7 +776,7 @@ const styles = StyleSheet.create({
   emptyText: { fontSize: fontSize.lg, color: colors.textSecondary },
   galleryContainer: { position: "relative" },
   heroImageWrap: { width: SCREEN_WIDTH, aspectRatio: 1, backgroundColor: "#f1f5f9", justifyContent: "center", alignItems: "center" },
-  heroImage: { width: "100%", height: "100%" },
+  heroImage: { width: "100%", height: "100%", mixBlendMode: "multiply" },
   heroPlaceholder: { backgroundColor: "#f1f5f9", justifyContent: "center", alignItems: "center" },
   heroPlaceholderText: { fontSize: fontSize.lg, color: colors.textSecondary },
   wishlistOverlay: {
@@ -819,7 +819,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary + "08",
   },
   unitCardOos: { opacity: 0.55 },
-  unitCardImage: { width: 44, height: 44, borderRadius: 6 },
+  unitCardImage: { width: 44, height: 44, borderRadius: 6, mixBlendMode: "multiply" },
   unitCardInfo: { flexShrink: 1 },
   unitCardName: { fontSize: 12, fontWeight: "600", color: colors.text, marginBottom: 2 },
   unitCardMrp: { fontSize: 11, color: colors.textSecondary, textDecorationLine: "line-through" },

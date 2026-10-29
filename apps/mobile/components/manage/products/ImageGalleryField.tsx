@@ -67,7 +67,7 @@ export function ImageGalleryField({ label, value, onChange, hint }: ImageGallery
 const styles = StyleSheet.create({
   row: { flexDirection: "row", flexWrap: "wrap", gap: 10 },
   tile: { width: 76, height: 76, borderRadius: radius.md, overflow: "hidden", backgroundColor: manage.canvas },
-  image: { width: "100%", height: "100%" },
+  image: { width: "100%", height: "100%", mixBlendMode: "multiply" },
   remove: { position: "absolute", top: 4, right: 4, width: 22, height: 22, borderRadius: 11, backgroundColor: "rgba(15,23,42,0.7)", alignItems: "center", justifyContent: "center" },
   addTile: { alignItems: "center", justifyContent: "center", borderWidth: 1, borderStyle: "dashed", borderColor: manage.line },
   addText: { fontFamily: fonts.bold, fontSize: 12, color: colors.primary },

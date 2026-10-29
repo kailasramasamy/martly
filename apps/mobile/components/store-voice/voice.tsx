@@ -1,5 +1,5 @@
-import { useCallback } from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { useCallback, useState } from "react";
+import { Image, StyleSheet, Text, View, type ViewStyle } from "react-native";
 import type { VoiceTranslations } from "@martly/shared/types";
 import { colors, fonts } from "../../constants/theme";
 import { useLanguage } from "../../lib/language-context";
@@ -46,19 +46,26 @@ export function KindTag({ kind }: { kind: StorePost["kind"] }) {
   );
 }
 
-/** The store's logo when it has one, else the owner's initial on teal */
-export function OwnerAvatar({ name, logoUrl, size = 40 }: { name: string; logoUrl?: string | null; size?: number }) {
-  const round = { width: size, height: size, borderRadius: size / 2 };
-  // Logos are often wide wordmarks: fitted inside the circle, never cropped
+// Logos are often wide wordmarks: the plate starts wide, then takes the logo's own shape once it loads
+const LOGO_ASPECT = 1.8;
+const MAX_ASPECT = 2.6;
+
+/** The store's logo on a plate shaped like it, else the owner's initial on teal */
+export function OwnerAvatar({ name, logoUrl, size = 40, style }: { name: string; logoUrl?: string | null; size?: number; style?: ViewStyle }) {
+  const [aspect, setAspect] = useState(LOGO_ASPECT);
   if (logoUrl) {
+    const width = size * Math.min(Math.max(aspect, 1), MAX_ASPECT);
     return (
-      <View style={[round, styles.logo]}>
-        <Image source={{ uri: logoUrl }} style={styles.logoImg} />
+      <View style={[styles.logo, { width, height: size, borderRadius: size * 0.28, padding: size * 0.08 }, style]}>
+        <Image
+          source={{ uri: logoUrl }} style={styles.logoImg} resizeMode="contain"
+          onLoad={(e) => { const { width: w, height: h } = e.nativeEvent.source; if (w && h) setAspect(w / h); }}
+        />
       </View>
     );
   }
   return (
-    <View style={[round, styles.initial]}>
+    <View style={[styles.initial, { width: size, height: size, borderRadius: size / 2 }, style]}>
       <Text style={[styles.initialText, { fontSize: size * 0.42 }]}>{name.slice(0, 1).toUpperCase()}</Text>
     </View>
   );
@@ -68,7 +75,7 @@ const styles = StyleSheet.create({
   tag: { alignSelf: "flex-start", paddingHorizontal: 8, paddingVertical: 3, borderRadius: 8 },
   tagText: { fontFamily: fonts.extrabold, fontSize: 11, letterSpacing: 0.3 },
   logo: { backgroundColor: "#ffffff", borderWidth: 1, borderColor: colors.border, alignItems: "center", justifyContent: "center", overflow: "hidden" },
-  logoImg: { width: "78%", height: "78%", resizeMode: "contain" },
+  logoImg: { width: "100%", height: "100%" },
   initial: { backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" },
   initialText: { fontFamily: fonts.extrabold, color: "#ffffff" },
 });

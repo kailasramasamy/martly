@@ -19,10 +19,13 @@ type Theme = (typeof KIND_THEME)[StorePost["kind"]];
 
 const openBoard = () => router.push("/store-posts");
 const TILE_WIDTH = 96;
+// Up to this many products share the row's width; more than that scroll
+const FIT_MAX = 3;
+type Fit = "scroll" | "share" | "wide";
 // The band's photo stack: each pack in a white disc, fanned and overlapping
 const FAN = [{ right: 80, top: 24, rotate: "-10deg" }, { right: 40, top: 4, rotate: "6deg" }, { right: 0, top: 28, rotate: "14deg" }];
 
-function Tile({ sp, theme }: { sp: StoreProduct; theme: Theme }) {
+function Tile({ sp, theme, fit }: { sp: StoreProduct; theme: Theme; fit: Fit }) {
   const { getLocalizedName } = useLanguage();
   const { isMember, storeId, cartQuantityMap } = useProductActions();
   const image = sp.product.imageUrl ?? sp.variant.imageUrl;
@@ -30,21 +33,23 @@ function Tile({ sp, theme }: { sp: StoreProduct; theme: Theme }) {
   // In the cart the stepper needs the whole foot, so the price moves up beside the size
   const inCart = (cartQuantityMap.get(sp.id) ?? 0) > 0;
   return (
-    <View style={styles.tile}>
+    <View style={[styles.tile, fit !== "scroll" && styles.tileShare, fit === "wide" && styles.tileWide]}>
       <TouchableOpacity
-        style={styles.photo} accessibilityRole="button" accessibilityLabel={getLocalizedName(sp.product)}
+        style={[styles.photo, fit === "share" && styles.photoShare, fit === "wide" && styles.photoWide]} accessibilityRole="button" accessibilityLabel={getLocalizedName(sp.product)}
         onPress={() => router.push({ pathname: "/product/[id]", params: storeId ? { id: sp.product.id, storeId } : { id: sp.product.id } })}
       >
         {image && <Image source={{ uri: image }} style={styles.photoImg} />}
       </TouchableOpacity>
-      <Text style={styles.tileName} numberOfLines={2}>{getLocalizedName(sp.product)}</Text>
-      <Text style={styles.tileSize} numberOfLines={1}>
-        {sp.variant.name}
-        {inCart && <Text style={[styles.sizePrice, { color: theme.ink }]}>{` · ${price}`}</Text>}
-      </Text>
-      <View style={styles.tileFoot}>
-        {!inCart && <Text style={[styles.price, { color: theme.ink }]}>{price}</Text>}
-        <View style={inCart ? styles.fullStep : undefined}><AddButton sp={sp} tint={theme.accent} fill={inCart} /></View>
+      <View style={fit === "wide" ? styles.wideInfo : undefined}>
+        <Text style={styles.tileName} numberOfLines={2}>{getLocalizedName(sp.product)}</Text>
+        <Text style={styles.tileSize} numberOfLines={1}>
+          {sp.variant.name}
+          {inCart && <Text style={[styles.sizePrice, { color: theme.ink }]}>{` · ${price}`}</Text>}
+        </Text>
+        <View style={styles.tileFoot}>
+          {!inCart && <Text style={[styles.price, { color: theme.ink }]}>{price}</Text>}
+          <View style={inCart ? styles.fullStep : undefined}><AddButton sp={sp} tint={theme.accent} fill={inCart} /></View>
+        </View>
       </View>
     </View>
   );
@@ -89,15 +94,19 @@ export const StorePostsSection = memo(function StorePostsSection({ section }: { 
         <Band post={post} theme={theme} />
         <View style={styles.body}>
           <View style={styles.owner}>
-            <View style={styles.ring}><OwnerAvatar name={post.author} logoUrl={logoUrl} size={44} /></View>
+            <OwnerAvatar name={post.author} logoUrl={logoUrl} size={44} style={styles.ring} />
             <Text style={[styles.ownerName, { color: theme.ink }]} numberOfLines={1}>{t.saidBy(post.author)}</Text>
           </View>
           <Text style={styles.quote}>{voice(post)}</Text>
-          {products.length > 0 && (
+          {products.length > FIT_MAX ? (
             <FlatList
-              horizontal data={products} keyExtractor={(sp) => sp.id} renderItem={({ item }) => <Tile sp={item} theme={theme} />}
+              horizontal data={products} keyExtractor={(sp) => sp.id} renderItem={({ item }) => <Tile sp={item} theme={theme} fit="scroll" />}
               showsHorizontalScrollIndicator={false} style={styles.row} contentContainerStyle={styles.tiles}
             />
+          ) : products.length > 0 && (
+            <View style={styles.shareRow}>
+              {products.map((sp) => <Tile key={sp.id} sp={sp} theme={theme} fit={products.length === 1 ? "wide" : "share"} />)}
+            </View>
           )}
           {more > 0 && (
             <TouchableOpacity style={styles.more} onPress={openBoard} accessibilityRole="button">
@@ -127,19 +136,27 @@ const styles = StyleSheet.create({
   },
   // A square photo's corners stay inside the disc: its diagonal (48 × 1.41 ≈ 68) is under the disc's 70
   discImg: { width: 48, height: 48, resizeMode: "contain" },
-  body: { paddingHorizontal: 14, paddingBottom: 14, gap: 10 },
+  body: { paddingHorizontal: 12, paddingBottom: 12, gap: 8 },
   // The avatar sits half over the band, as if the owner leaned in from the shop
-  owner: { flexDirection: "row", alignItems: "flex-end", gap: 8, marginTop: -22 },
-  ring: { borderRadius: 26, borderWidth: 3, borderColor: "#ffffff", backgroundColor: "#ffffff" },
-  ownerName: { flex: 1, fontFamily: fonts.extrabold, fontSize: 13, paddingBottom: 4 },
+  owner: { flexDirection: "row", alignItems: "flex-end", gap: 8, marginTop: -16 },
+  ring: { borderWidth: 3, borderColor: "#ffffff" },
+  ownerName: { flex: 1, fontFamily: fonts.extrabold, fontSize: 13, paddingBottom: 9 },
   quote: { fontFamily: fonts.bold, fontSize: 16, lineHeight: 23, color: "#0f172a" },
   // The row runs to the card's edges, so a fourth tile peeks in to show it scrolls
-  row: { marginHorizontal: -14 },
-  tiles: { gap: 8, paddingHorizontal: 14 },
-  tile: { width: TILE_WIDTH, borderRadius: 14, backgroundColor: "#ffffff", padding: 8, gap: 1 },
+  row: { marginHorizontal: -12 },
+  tiles: { gap: 8, paddingHorizontal: 12 },
+  tile: { width: TILE_WIDTH, borderRadius: 14, backgroundColor: "#ffffff", padding: 6, gap: 1 },
+  // Two or three products split the row; a lone one lies flat, photo beside its details
+  shareRow: { flexDirection: "row", gap: 8 },
+  tileShare: { flex: 1, width: undefined },
+  tileWide: { flexDirection: "row", alignItems: "center", gap: 12 },
+  wideInfo: { flex: 1, minWidth: 0 },
+  photoShare: { height: 84 },
+  photoWide: { width: 88, height: 88 },
   // A shorter photo makes room for a two-line name, keeping the tile as tall as before
-  photo: { height: 68, alignItems: "center", justifyContent: "center" },
-  photoImg: { width: 64, height: 64, resizeMode: "contain" },
+  // A soft teal well, so the pack doesn't float on bare white
+  photo: { height: 68, borderRadius: 10, backgroundColor: "#f0fdfa", padding: 6, marginBottom: 4, alignItems: "center", justifyContent: "center" },
+  photoImg: { width: "100%", height: "100%", resizeMode: "contain", mixBlendMode: "multiply" },
   tileName: { fontFamily: fonts.bold, fontSize: 12.5, lineHeight: 16, height: 32, color: "#0f172a" },
   tileSize: { fontFamily: fonts.medium, fontSize: 11.5, color: "#64748b" },
   tileFoot: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 4 },

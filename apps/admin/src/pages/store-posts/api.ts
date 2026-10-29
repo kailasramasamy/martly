@@ -27,7 +27,15 @@ export interface StorePostRow {
   translations: VoiceTranslations | null;
   createdAt: string;
   expiresAt: string;
-  products: { id: string; product: { id: string; name: string } }[];
+  products: PostProduct[];
+}
+
+/** A tagged product as the store lists it today: its cheapest in-stock size */
+export interface PostProduct {
+  id: string;
+  product: { id: string; name: string; imageUrl: string | null };
+  variant: { name: string; imageUrl: string | null };
+  pricing: { effectivePrice: number; originalPrice: number };
 }
 
 /** A post opened for editing, with every product it tags */

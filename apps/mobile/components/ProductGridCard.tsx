@@ -201,11 +201,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#f1f5f9",
     position: "relative",
   },
-  image: { width: "100%", height: "100%" },
+  image: { width: "100%", height: "100%", mixBlendMode: "multiply" },
   noImage: {
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#e2e8f0",
+    mixBlendMode: "normal",
   },
   noImageLetter: {
     fontSize: 36,
