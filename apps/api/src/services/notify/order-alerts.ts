@@ -101,7 +101,13 @@ async function expireUnpaidOrders(app: FastifyInstance, now: number) {
     select: { id: true },
   });
   for (const { id } of stale) {
-    await cancelOrder(app, id, { by: "system", note: `Payment not completed in ${UNPAID_EXPIRY_MINUTES} minutes` });
+    // Only while still unpaid: a payment that lands in between keeps the order
+    await cancelOrder(app, id, {
+      by: "system", note: `Payment not completed in ${UNPAID_EXPIRY_MINUTES} minutes`,
+      allowed: { statuses: ["PENDING"], paymentStatuses: ["PENDING", "FAILED"] },
+    }).catch((err: { statusCode?: number }) => {
+      if (err.statusCode !== 409) throw err;
+    });
   }
 }
 

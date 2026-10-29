@@ -1,4 +1,4 @@
-import type { Coupon, PrismaClient } from "../../generated/prisma/client.js";
+import type { Coupon, Prisma, PrismaClient } from "../../generated/prisma/client.js";
 
 export type CouponCheck =
   | { ok: true; discount: number }
@@ -34,7 +34,7 @@ export function couponOpen(coupon: Coupon, organizationId: string, now = new Dat
  * Whether a shopper can use a coupon on an order, and for how much. Checkout, the code box and the offers list all
  * decide through this, so they never disagree.
  */
-export async function checkCoupon(prisma: PrismaClient, coupon: Coupon, use: CouponUse): Promise<CouponCheck> {
+export async function checkCoupon(prisma: PrismaClient | Prisma.TransactionClient, coupon: Coupon, use: CouponUse): Promise<CouponCheck> {
   const closed = couponOpen(coupon, use.organizationId, use.now);
   if (closed) return { ok: false, reason: closed };
   const used = await prisma.couponRedemption.count({ where: { couponId: coupon.id, userId: use.userId } });

@@ -14,6 +14,7 @@ import { getOrgUser } from "../../middleware/org-scope.js";
 import { type FundedBy, goodwillPayer } from "../../services/ledger/goodwill.js";
 import { postEntries } from "../../services/ledger/post.js";
 import { formatOrderRef } from "../../services/notify/copy.js";
+import { lockWalletBalance } from "../../services/order-guards.js";
 
 export async function walletRoutes(app: FastifyInstance) {
   async function customerInOrg(request: FastifyRequest, userId: string): Promise<boolean> {
@@ -195,19 +196,18 @@ export async function walletRoutes(app: FastifyInstance) {
         return reply.badRequest("amount must be between 1 and 100000");
       }
 
-      const user = await app.prisma.user.findUnique({
-        where: { id: userId },
-        select: { walletBalance: true },
-      });
+      const user = await app.prisma.user.findUnique({ where: { id: userId }, select: { id: true } });
       if (!user) return reply.notFound("User not found");
 
-      if (type === "DEBIT" && Number(user.walletBalance) < amount) {
-        return reply.badRequest(`Insufficient balance. Current balance: \u20B9${Number(user.walletBalance).toFixed(0)}`);
-      }
       const payer = await goodwillPayer(app.prisma, getOrgUser(request), userId, { orderId, fundedBy });
       const note = description || "Balance adjusted by support";
 
       const result = await app.prisma.$transaction(async (tx) => {
+        // Checked under a lock so a debit and a concurrent order can't both spend the same balance
+        const balance = await lockWalletBalance(tx, userId);
+        if (type === "DEBIT" && balance < amount) {
+          throw Object.assign(new Error(`Insufficient balance. Current balance: \u20B9${balance.toFixed(0)}`), { statusCode: 400 });
+        }
         const updatedUser = await tx.user.update({
           where: { id: userId },
           data: {

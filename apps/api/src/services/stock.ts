@@ -40,16 +40,14 @@ export async function reserveStock(prisma: PrismaClient, items: StockItem[]) {
 /**
  * Release reserved stock (e.g. on order cancellation).
  */
-export async function releaseStock(prisma: PrismaClient, items: StockItem[]) {
-  await prisma.$transaction(async (tx) => {
-    for (const item of items) {
-      await tx.$executeRaw`
-        UPDATE store_products
-        SET reserved_stock = GREATEST(reserved_stock - ${item.quantity}, 0)
-        WHERE id = ${item.storeProductId}
-      `;
-    }
-  });
+export async function releaseStock(tx: Prisma.TransactionClient, items: StockItem[]) {
+  for (const item of items) {
+    await tx.$executeRaw`
+      UPDATE store_products
+      SET reserved_stock = GREATEST(reserved_stock - ${item.quantity}, 0)
+      WHERE id = ${item.storeProductId}
+    `;
+  }
 }
 
 /**

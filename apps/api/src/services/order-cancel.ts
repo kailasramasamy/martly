@@ -1,5 +1,5 @@
 import type { FastifyInstance } from "fastify";
-import type { Prisma } from "../../generated/prisma/index.js";
+import type { OrderStatus, PaymentStatus, Prisma } from "../../generated/prisma/index.js";
 import { releaseFromUnstartedTrip } from "./delivery/trip-ops.js";
 import { reoptimizeTrips } from "./delivery/plan-wave.js";
 import { releaseStock } from "./stock.js";
@@ -8,6 +8,7 @@ import { sendLoyaltyNotification, sendOrderStatusNotification } from "./notifica
 import { formatINR, formatOrderRef, plural, type CancelledBy } from "./notify/copy.js";
 import { notifyStaff } from "./notify/staff.js";
 import { reopenReplacements } from "./returns/replacement.js";
+import { claimStatus, lockLoyaltyPoints, releaseCoupon } from "./order-guards.js";
 
 type Tx = Prisma.TransactionClient;
 
@@ -71,7 +72,10 @@ export async function applyCancelRefunds(tx: Tx, order: CancellableOrder, opts: 
   const earned = opts.reverseEarned ? order.loyaltyPointsEarned ?? 0 : 0;
   if (used > 0 || earned > 0) {
     if (used > 0) await moveLoyalty(tx, order, store.organizationId, used, `Reversal for cancelled order ${ref}`);
-    if (earned > 0) await moveLoyalty(tx, order, store.organizationId, -earned, `Earned points reversed for cancelled order ${ref}`);
+    // Earned points already spent can't be taken back
+    const held = earned > 0 ? await lockLoyaltyPoints(tx, order.userId, store.organizationId) ?? 0 : 0;
+    const reclaim = Math.min(earned, held);
+    if (reclaim > 0) await moveLoyalty(tx, order, store.organizationId, -reclaim, `Earned points reversed for cancelled order ${ref}`);
   }
   return { refundAmount, paymentRefunded, pointsReturned: used };
 }
@@ -110,12 +114,23 @@ export async function notifyOrderCancelled(
   });
 }
 
+interface CancelContext {
+  by: "customer" | "system";
+  note: string;
+  /** What the order may still be in; null comes back when it has moved on (picked up, or paid before expiry) */
+  allowed: { statuses: OrderStatus[]; paymentStatuses?: PaymentStatus[] };
+}
+
 /** Customer or system cancellation of a PENDING/CONFIRMED order: stock back, refunds, trip gap closed, everyone told */
-export async function cancelOrder(app: FastifyInstance, orderId: string, ctx: { by: "customer" | "system"; note: string }) {
+export async function cancelOrder(app: FastifyInstance, orderId: string, ctx: CancelContext) {
   const existing = await app.prisma.order.findUniqueOrThrow({ where: { id: orderId }, include: { items: true, user: { select: { name: true } }, deliveryTrip: { select: { riderId: true } } } });
-  await releaseStock(app.prisma, existing.items.map((i) => ({ storeProductId: i.storeProductId, quantity: i.quantity })));
+  const { statuses, paymentStatuses } = ctx.allowed;
+  if (!statuses.includes(existing.status) || (paymentStatuses && !paymentStatuses.includes(existing.paymentStatus))) return null;
 
   const { order, refunds } = await app.prisma.$transaction(async (tx) => {
+    await claimStatus(tx, orderId, existing, "CANCELLED");
+    await releaseStock(tx, existing.items.map((i) => ({ storeProductId: i.storeProductId, quantity: i.quantity })));
+    await releaseCoupon(tx, existing);
     const refunds = await applyCancelRefunds(tx, existing, { reverseEarned: false });
     await reopenReplacements(tx, orderId);
     const order = await tx.order.update({

@@ -1,7 +1,8 @@
 import { UNDO_DELIVERY_WINDOW_MS, deliveredAt, undoDeliveryTarget } from "@martly/shared/order-flow";
-import type { Prisma, PrismaClient } from "../../generated/prisma/client.js";
+import type { OrderStatus, PaymentStatus, Prisma, PrismaClient } from "../../generated/prisma/client.js";
 import { applyMovement } from "./stock-ledger.js";
 import { reverseOrderEntries } from "./ledger/order.js";
+import { claimStatus, lockLoyaltyPoints } from "./order-guards.js";
 
 type Tx = Prisma.TransactionClient;
 
@@ -49,11 +50,12 @@ async function restoreStock(tx: Tx, orderId: string, userId: string) {
   }
 }
 
-/** Take back loyalty points the delivery earned */
+/** Take back loyalty points the delivery earned, or what is left of them when some were already spent */
 async function reverseLoyalty(tx: Tx, order: UndoableOrder) {
-  const points = order.loyaltyPointsEarned ?? 0;
-  if (points <= 0) return;
   const store = await tx.store.findUniqueOrThrow({ where: { id: order.storeId }, select: { organizationId: true } });
+  const held = await lockLoyaltyPoints(tx, order.userId, store.organizationId);
+  const points = Math.min(order.loyaltyPointsEarned ?? 0, held ?? 0);
+  if (points <= 0) return;
   const key = { userId_organizationId: { userId: order.userId, organizationId: store.organizationId } };
   const balance = await tx.loyaltyBalance.update({
     where: key,
@@ -77,6 +79,8 @@ export async function undoDelivery(tx: Tx, order: UndoableOrder, ctx: { userId: 
   const target = undoDeliveryTarget(order.fulfillmentType);
   const codAutoPaid = order.paymentMethod === "COD" && order.paymentStatus === "PAID" && order.codCollectedVia !== null;
 
+  // A second undo of the same delivery stops here instead of restoring stock and points again
+  await claimStatus(tx, order.id, { status: order.status as OrderStatus, paymentStatus: order.paymentStatus as PaymentStatus }, target);
   await restoreStock(tx, order.id, ctx.userId);
   await reverseLoyalty(tx, order);
   await reverseOrderEntries(tx, order.id, ctx.userId);

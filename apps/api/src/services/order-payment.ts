@@ -108,9 +108,10 @@ export async function settleOrderPayment(app: FastifyInstance, orderId: string, 
   if (order.status === "CANCELLED") return refundLatePayment(app, order, paymentId);
 
   const updated = await app.prisma.$transaction(async (tx) => {
-    // Conditional update so a concurrent verify/poll/webhook settles the order only once
+    // Conditional update so a concurrent verify/poll/webhook settles the order only once, and a cancel that lands
+    // first is not overwritten
     const { count } = await tx.order.updateMany({
-      where: { id: order.id, paymentStatus: { not: "PAID" } },
+      where: { id: order.id, status: order.status, paymentStatus: { notIn: ["PAID", "REFUNDED"] } },
       data: {
         paymentStatus: "PAID",
         razorpayPaymentId: paymentId,
@@ -127,7 +128,11 @@ export async function settleOrderPayment(app: FastifyInstance, orderId: string, 
     await tx.user.update({ where: { id: order.userId }, data: { preferredPaymentMethod: "ONLINE" } });
     return tx.order.findUniqueOrThrow({ where: { id: order.id } });
   });
-  if (!updated) return app.prisma.order.findUniqueOrThrow({ where: { id: order.id } });
+  if (!updated) {
+    const current = await app.prisma.order.findUniqueOrThrow({ where: { id: order.id } });
+    const unpaid = current.paymentStatus !== "PAID" && current.paymentStatus !== "REFUNDED";
+    return current.status === "CANCELLED" && unpaid ? refundLatePayment(app, current, paymentId) : current;
+  }
 
   if (order.status === "PENDING") {
     sendOrderStatusNotification(app.fcm, app.prisma, order.id, "CONFIRMED", { paidAmount: onlineCharge(order) });

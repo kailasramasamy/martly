@@ -9,6 +9,7 @@ import { calculateEffectivePrice } from "../services/pricing.js";
 import { advanceNextDeliveryDate, isDeliveryDay } from "../utils/subscription-dates.js";
 import { deliveryFeeTo } from "../services/delivery/fee.js";
 import { tomorrowIST, endOfDayUTC, currentISTTime } from "../utils/timezone.js";
+import { lockWalletBalance } from "../services/order-guards.js";
 
 const INTERVAL_MS = 60_000; // 1 minute
 const STARTUP_DELAY_MS = 30_000; // 30 seconds after startup
@@ -416,7 +417,10 @@ async function subscriptionSchedulerPlugin(app: FastifyInstance) {
                   },
                 });
 
-                // Deduct wallet balance
+                // Deduct wallet balance; the balance read for the batch may be stale, so re-check it under a lock
+                if (await lockWalletBalance(tx, sub.userId) < finalTotal) {
+                  throw new Error(`insufficient wallet balance for \u20B9${finalTotal}`);
+                }
                 const updatedUser = await tx.user.update({
                   where: { id: sub.userId },
                   data: { walletBalance: { decrement: finalTotal } },

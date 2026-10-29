@@ -33,6 +33,7 @@ import { notifyStaffOfNewOrder } from "../../services/staff-alerts.js";
 import { formatOrderRef } from "../../services/notify/copy.js";
 import { notifyOrderPlaced, notifySlotFullIfNeeded } from "../../services/notify/order-alerts.js";
 import { applyCancelRefunds, cancelOrder, notifyOrderCancelled } from "../../services/order-cancel.js";
+import { claimStatus, lockCoupon, lockLoyaltyPoints, lockWalletBalance, releaseCoupon } from "../../services/order-guards.js";
 import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS } from "@martly/shared/order-flow";
 import { freeUnits, lineTotal } from "@martly/shared/offers";
 import { OrderStatus, Permission } from "@martly/shared/constants";
@@ -484,15 +485,16 @@ export async function orderRoutes(app: FastifyInstance) {
           }
         }
 
+        // The coupon's limits are checked again under a lock, so parallel checkouts can't exceed them
+        if (couponId) {
+          const check = await lockCoupon(tx, couponId, { userId: user.sub, organizationId: store.organizationId, orderAmount: itemsTotal });
+          if (!check.ok) throw Object.assign(new Error(check.reason), { statusCode: 400 });
+        }
+
         // Wallet deduction
         let walletDeduction = 0;
         if (body.useWallet !== false) {
-          const userData = await tx.user.findUnique({
-            where: { id: user.sub },
-            select: { walletBalance: true },
-          });
-          const walletBalance = Number(userData?.walletBalance ?? 0);
-          walletDeduction = Math.min(walletBalance, totalAmount);
+          walletDeduction = Math.min(await lockWalletBalance(tx, user.sub), totalAmount);
         }
 
         let remainingAfterWallet = totalAmount - walletDeduction;
@@ -509,19 +511,13 @@ export async function orderRoutes(app: FastifyInstance) {
               where: { organizationId: storeForOrg.organizationId },
             });
             if (loyaltyConfig?.isEnabled) {
-              const loyaltyBalance = await tx.loyaltyBalance.findUnique({
-                where: {
-                  userId_organizationId: {
-                    userId: user.sub,
-                    organizationId: storeForOrg.organizationId,
-                  },
-                },
-              });
-              if (loyaltyBalance && loyaltyBalance.points >= loyaltyConfig.minRedeemPoints) {
+              const points = await lockLoyaltyPoints(tx, user.sub, storeForOrg.organizationId);
+              if (points !== null && points >= loyaltyConfig.minRedeemPoints) {
                 const maxByPercentage = Math.floor(totalAmount * loyaltyConfig.maxRedeemPercentage / 100);
+                // Points are whole numbers; the paise left over are paid another way
                 loyaltyDeduction = Math.min(
-                  loyaltyBalance.points,
-                  remainingAfterWallet,
+                  points,
+                  Math.floor(remainingAfterWallet),
                   maxByPercentage,
                 );
                 if (loyaltyDeduction > 0) {
@@ -738,11 +734,12 @@ export async function orderRoutes(app: FastifyInstance) {
         quantity: i.quantity,
       }));
 
-      if (body.status === "CANCELLED") {
-        await releaseStock(app.prisma, stockItems);
-      }
-
       const txResult = await app.prisma.$transaction(async (tx) => {
+        await claimStatus(tx, existing.id, existing, body.status);
+        if (body.status === "CANCELLED") {
+          await releaseStock(tx, stockItems);
+          await releaseCoupon(tx, existing);
+        }
         const refusal = body.status === "DELIVERED" ? await deliverWithRefusals(tx, existing, body.refused ?? [], request.user.sub) : null;
         const updateData: Record<string, unknown> = { status: body.status };
         if (refusal?.refusedAmount) updateData.refusedAmount = refusal.refusedAmount;
@@ -1056,7 +1053,10 @@ export async function orderRoutes(app: FastifyInstance) {
         });
       }
 
-      const order = await cancelOrder(app, existing.id, { by: "customer", note: "Cancelled by customer" });
+      const order = await cancelOrder(app, existing.id, {
+        by: "customer", note: "Cancelled by customer", allowed: { statuses: ["PENDING", "CONFIRMED"] },
+      });
+      if (!order) return reply.conflict("This order was just updated. Refresh and try again.");
 
       const response: ApiResponse<typeof order> = { success: true, data: order };
       return response;
