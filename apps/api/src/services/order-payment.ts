@@ -50,6 +50,14 @@ export async function prepareOrderPayment(app: FastifyInstance, orderId: string,
   return { order, rpOrderId: rpOrder.id, amountInPaise, customerId };
 }
 
+/** The attempt a Razorpay order belongs to; an order prepared before attempts were recorded still carries its id */
+async function findAttempt(app: FastifyInstance, razorpayOrderId: string) {
+  const attempt = await app.prisma.paymentAttempt.findUnique({ where: { razorpayOrderId } });
+  if (attempt) return attempt;
+  const order = await app.prisma.order.findFirst({ where: { razorpayOrderId } });
+  return order && { orderId: order.id, razorpayOrderId, amount: Math.round(onlineCharge(order) * 100) };
+}
+
 export type AttemptSettlement = { order: Awaited<ReturnType<typeof settleOrderPayment>> } | { mismatch: string };
 
 /**
@@ -58,7 +66,7 @@ export type AttemptSettlement = { order: Awaited<ReturnType<typeof settleOrderPa
  */
 export async function settleAttemptPayment(app: FastifyInstance, payment: RazorpayPayment, orderId?: string): Promise<AttemptSettlement | null> {
   if (!payment.orderId) return null;
-  const attempt = await app.prisma.paymentAttempt.findUnique({ where: { razorpayOrderId: payment.orderId } });
+  const attempt = await findAttempt(app, payment.orderId);
   if (!attempt || (orderId && attempt.orderId !== orderId)) return null;
   const mismatch = paymentMismatch(payment, { razorpayOrderId: attempt.razorpayOrderId, amountInPaise: attempt.amount });
   if (mismatch) return { mismatch };
@@ -70,7 +78,7 @@ export async function settleAttemptPayment(app: FastifyInstance, payment: Razorp
  * payment captured that attempt's full amount, so a payment made for anything else can't mark this order paid.
  */
 export async function verifyOrderPayment(app: FastifyInstance, orderId: string, body: VerifyPaymentInput) {
-  const attempt = await app.prisma.paymentAttempt.findUnique({ where: { razorpayOrderId: body.razorpay_order_id } });
+  const attempt = await findAttempt(app, body.razorpay_order_id);
   if (!attempt || attempt.orderId !== orderId) throw httpError("Payment does not belong to this order", 400);
   if (!verifyRazorpaySignature(body.razorpay_order_id, body.razorpay_payment_id, body.razorpay_signature)) {
     await markPaymentFailed(app, orderId, body.razorpay_payment_id);
