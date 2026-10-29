@@ -5,7 +5,8 @@
  * named in data/produce-image-subjects.json, whose scraped variant photos are cleared so the gallery shows one image.
  * Filenames carry a content hash so a regenerated image never hits a stale cache. Idempotent.
  *
- * Run: cd apps/api && npx tsx prisma/seed-generic-product-images.ts [--produce]   (--produce: only the produce list)
+ * Run: cd apps/api && npx tsx prisma/seed-generic-product-images.ts [--produce | --missing]
+ *   --produce: only the produce list; --missing: only products with no image yet (safe on prod when local images are stale)
  * Prod: prefix with DATABASE_URL=<prod url>
  */
 
@@ -55,10 +56,11 @@ async function upload(slug: string): Promise<string> {
 async function main() {
   console.log(`Seeding generic product images into ${new URL(process.env.DATABASE_URL!).host}`);
   const produce = Object.keys(JSON.parse(readFileSync(PRODUCE, "utf8")));
+  const { values } = parseArgs({ options: { produce: { type: "boolean", default: false }, missing: { type: "boolean", default: false } } });
   const products = await prisma.product.findMany({
-    where: parseArgs({ options: { produce: { type: "boolean", default: false } } }).values.produce
+    where: values.produce
       ? { organizationId: null, name: { in: produce } }
-      : { organizationId: null, OR: [{ tags: { has: "generic" } }, { name: { in: produce } }] },
+      : { organizationId: null, OR: [{ tags: { has: "generic" } }, { name: { in: produce } }], ...(values.missing && { imageUrl: null }) },
     select: { id: true, name: true },
   });
   const missing = products.filter((p) => !existsSync(join(OUT, `${slugify(p.name)}.webp`))).map((p) => p.name);

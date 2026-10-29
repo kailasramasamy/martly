@@ -58,7 +58,7 @@
   },
   "Bakery": {
     "Bread": ["Sandwich Bread", "White Bread", "Brown & Whole Wheat Bread", "Multigrain Bread", "Pav & Bun", "Garlic Bread"],
-    "Bakery Snacks": ["Buns & Rolls", "Khari & Puff Pastry", "Cookies (Bakery Fresh)", "Croissant"],
+    "Bakery Snacks": ["Buns & Rolls", "Khari & Puff Pastry", "Cookies (Bakery Fresh)", "Croissant", "Sweet Bakes"],
     "Rusk": ["Plain Rusk", "Elaichi Rusk", "Suji Rusk"],
     "Cakes & Pastries": ["Sliced Cake", "Muffins & Cupcakes", "Pastries"]
   },

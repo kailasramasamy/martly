@@ -57,22 +57,68 @@
   { "path": ["Bakery", "Bakery Snacks", "Buns & Rolls"], "sizes": ["2 pcs", "4 pcs"], "items": [
     { "name": "Sweet Bun", "ta": "இனிப்பு பன்", "subject": "a few glossy golden-brown round sweet buns" },
     { "name": "Cream Bun", "ta": "கிரீம் பன்", "subject": "a few soft buns split and filled with white cream and sprinkled sugar" },
-    { "name": "Coconut Bun", "ta": "தேங்காய் பன்", "subject": "a few golden buns with sweet coconut filling visible" }
+    { "name": "Coconut Bun", "ta": "தேங்காய் பன்", "subject": "a few golden buns with sweet coconut filling visible" },
+    { "name": "Jam Bun", "ta": "ஜாம் பன்", "subject": "a few soft golden buns split and filled with red mixed-fruit jam" },
+    { "name": "Butter Bun", "ta": "பட்டர் பன்", "subject": "a few glossy soft buns brushed with butter, one split showing butter and sugar" },
+    { "name": "Masala Bun", "ta": "மசாலா பன்", "subject": "a few golden buns, one cut showing spiced potato and onion masala filling" },
+    { "name": "Fruit Bun", "ta": "ஃப்ரூட் பன்", "subject": "a few round golden buns dotted with colourful tutti frutti pieces" },
+    { "name": "Honey Bun", "ta": "ஹனி பன்", "subject": "a few glossy golden buns glazed with honey syrup and desiccated coconut on top" },
+    { "name": "Dilpasand", "ta": "தில்பசந்த்", "subject": "a large round flaky puff pastry pie, one wedge cut showing sweet coconut and tutti frutti filling" },
+    { "name": "Dilkhush", "ta": "தில்குஷ்", "subject": "a round golden bread pie scored on top, one wedge cut showing sweet coconut and tutti frutti filling" },
+    { "name": "Bun Butter Jam", "ta": "பன் பட்டர் ஜாம்", "subject": "a soft bun sliced in half and spread with butter and red jam" }
   ]},
   { "path": ["Bakery", "Bakery Snacks", "Khari & Puff Pastry"], "sizes": ["1 pc", "4 pcs"], "items": [
     { "name": "Veg Puff", "ta": "வெஜ் பஃப்ஸ்", "subject": "a few flaky golden triangular vegetable puffs, one cut showing filling" },
-    { "name": "Egg Puff", "ta": "முட்டை பஃப்ஸ்", "foodType": "EGG", "subject": "a few flaky golden puffs, one cut showing half a boiled egg in masala" }
+    { "name": "Egg Puff", "ta": "முட்டை பஃப்ஸ்", "foodType": "EGG", "subject": "a few flaky golden puffs, one cut showing half a boiled egg in masala" },
+    { "name": "Chicken Puff", "ta": "சிக்கன் பஃப்ஸ்", "subject": "a few flaky golden triangular puffs, one cut showing spiced chicken masala filling", "foodType": "NON_VEG" },
+    { "name": "Paneer Puff", "ta": "பனீர் பஃப்ஸ்", "subject": "a few flaky golden triangular puffs, one cut showing paneer masala filling" },
+    { "name": "Mushroom Puff", "ta": "காளான் பஃப்ஸ்", "subject": "a few flaky golden triangular puffs, one cut showing mushroom masala filling" },
+    { "name": "Veg Roll", "ta": "வெஜ் ரோல்", "subject": "a few flaky golden puff pastry rolls, one cut showing vegetable masala filling" },
+    { "name": "Egg Roll", "ta": "முட்டை ரோல்", "subject": "a few flaky golden puff pastry rolls, one cut showing egg and onion masala filling", "foodType": "EGG" },
+    { "name": "Chicken Roll", "ta": "சிக்கன் ரோல்", "subject": "a few flaky golden puff pastry rolls, one cut showing chicken masala filling", "foodType": "NON_VEG" },
+    { "name": "Bakery Samosa", "ta": "பேக்கரி சமோசா", "subject": "a few small crisp golden triangular bakery samosas" },
+    { "name": "Khari", "ta": "காரி", "subject": "a heap of long flaky golden plain khari puff pastry sticks", "sizes": ["200g", "400g"] },
+    { "name": "Masala Khari", "ta": "மசாலா காரி", "subject": "a heap of long flaky golden khari puff sticks speckled with red chilli masala", "sizes": ["200g", "400g"] },
+    { "name": "Jeera Khari", "ta": "சீரக காரி", "subject": "a heap of long flaky golden khari puff sticks dotted with cumin seeds", "sizes": ["200g", "400g"] }
   ]},
   { "path": ["Bakery", "Bakery Snacks", "Cookies (Bakery Fresh)"], "sizes": ["200g", "500g"], "items": [
     { "name": "Butter Biscuit", "ta": "பட்டர் பிஸ்கட்", "subject": "a heap of round golden bakery butter biscuits" },
     { "name": "Coconut Biscuit", "ta": "தேங்காய் பிஸ்கட்", "subject": "a heap of round bakery biscuits speckled with coconut" },
-    { "name": "Osmania Biscuit", "ta": "ஒஸ்மானியா பிஸ்கட்", "subject": "a heap of round pale golden Osmania biscuits" }
+    { "name": "Osmania Biscuit", "ta": "ஒஸ்மானியா பிஸ்கட்", "subject": "a heap of round pale golden Osmania biscuits" },
+    { "name": "Nankhatai", "ta": "நான்கட்டாய்", "subject": "a heap of round cracked-top pale golden nankhatai cookies" },
+    { "name": "Jeera Biscuit", "ta": "சீரக பிஸ்கட்", "subject": "a heap of round golden bakery biscuits dotted with cumin seeds" },
+    { "name": "Salt Biscuit", "ta": "உப்பு பிஸ்கட்", "subject": "a heap of crisp square golden salt biscuits with pricked holes" },
+    { "name": "Badam Biscuit", "ta": "பாதாம் பிஸ்கட்", "subject": "a heap of round golden bakery biscuits topped with sliced almonds" },
+    { "name": "Kaju Biscuit", "ta": "முந்திரி பிஸ்கட்", "subject": "a heap of round golden bakery biscuits each topped with a cashew half" },
+    { "name": "Pista Biscuit", "ta": "பிஸ்தா பிஸ்கட்", "subject": "a heap of round pale green bakery biscuits topped with chopped pistachio" },
+    { "name": "Ragi Biscuit", "ta": "கேழ்வரகு பிஸ்கட்", "subject": "a heap of round brown ragi finger millet bakery biscuits" },
+    { "name": "Wheat Biscuit", "ta": "கோதுமை பிஸ்கட்", "subject": "a heap of round light brown whole wheat bakery biscuits" },
+    { "name": "Rava Biscuit", "ta": "ரவா பிஸ்கட்", "subject": "a heap of round golden semolina bakery biscuits with a grainy texture" },
+    { "name": "Ajwain Biscuit", "ta": "ஓமம் பிஸ்கட்", "subject": "a heap of round golden savoury bakery biscuits dotted with ajwain seeds" },
+    { "name": "Milk Biscuit", "ta": "மில்க் பிஸ்கட்", "subject": "a heap of round pale cream bakery milk biscuits" },
+    { "name": "Ghee Biscuit", "ta": "நெய் பிஸ்கட்", "subject": "a heap of round crumbly golden ghee biscuits" },
+    { "name": "Fruit Biscuit", "ta": "ஃப்ரூட் பிஸ்கட்", "subject": "a heap of rectangular golden bakery biscuits studded with colourful tutti frutti" },
+    { "name": "Choco Chip Cookie", "ta": "சாக்கோ சிப் குக்கீ", "subject": "a heap of round golden bakery cookies studded with chocolate chips" },
+    { "name": "Honey Biscuit", "ta": "ஹனி பிஸ்கட்", "subject": "a heap of round glossy golden bakery biscuits glazed with honey" }
   ]},
   { "path": ["Bakery", "Rusk", "Plain Rusk"], "sizes": ["200g", "400g"], "items": [
-    { "name": "Bakery Rusk", "ta": "ரஸ்க்", "subject": "a stack of crisp golden rusk slices" }
+    { "name": "Bakery Rusk", "ta": "ரஸ்க்", "subject": "a stack of crisp golden rusk slices" },
+    { "name": "Milk Rusk", "ta": "மில்க் ரஸ்க்", "subject": "a stack of crisp pale golden milk rusk slices" },
+    { "name": "Cake Rusk", "ta": "கேக் ரஸ்க்", "subject": "a stack of long crisp golden cake rusk slices with a fine crumb" },
+    { "name": "Wheat Rusk", "ta": "கோதுமை ரஸ்க்", "subject": "a stack of crisp brown whole wheat rusk slices" },
+    { "name": "Milk Toast", "ta": "மில்க் டோஸ்ட்", "subject": "a stack of square crisp golden milk toast slices" }
   ]},
   { "path": ["Bakery", "Cakes & Pastries", "Sliced Cake"], "sizes": ["250g", "500g"], "items": [
-    { "name": "Tea Cake", "ta": "டீ கேக்", "subject": "a golden plain tea cake loaf with a few slices cut" }
+    { "name": "Tea Cake", "ta": "டீ கேக்", "subject": "a golden plain tea cake loaf with a few slices cut" },
+    { "name": "Plum Cake", "ta": "பிளம் கேக்", "subject": "a dark brown plum cake loaf with a few slices cut showing raisins and dried fruit" },
+    { "name": "Fruit Cake", "ta": "ஃப்ரூட் கேக்", "subject": "a golden fruit cake loaf with a few slices cut showing colourful tutti frutti" },
+    { "name": "Honey Cake", "ta": "ஹனி கேக்", "subject": "square pieces of golden sponge cake soaked in honey with jam and desiccated coconut on top" },
+    { "name": "Butter Sponge Cake", "ta": "பட்டர் ஸ்பான்ஜ் கேக்", "subject": "a soft golden butter sponge cake loaf with a few slices cut" },
+    { "name": "Marble Cake", "ta": "மார்பிள் கேக்", "subject": "a cake loaf with a few slices cut showing swirls of vanilla and chocolate" },
+    { "name": "Chocolate Cake", "ta": "சாக்லேட் கேக்", "subject": "a dark chocolate cake loaf with a few slices cut" },
+    { "name": "Banana Cake", "ta": "வாழைப்பழ கேக்", "subject": "a moist brown banana cake loaf with a few slices cut" },
+    { "name": "Dates Cake", "ta": "பேரீச்சை கேக்", "subject": "a dark moist dates cake loaf with a few slices cut showing date pieces" },
+    { "name": "Carrot Cake", "ta": "கேரட் கேக்", "subject": "a carrot cake loaf with a few slices cut showing orange carrot flecks and nuts" }
   ]},
   { "path": ["Beverages", "Coffee", "Filter Coffee Powder"], "sizes": ["100g", "250g", "500g"], "items": [
     { "name": "Filter Coffee Powder (with Chicory)", "ta": "ஃபில்டர் காபித் தூள்", "subject": "a heap of fine dark brown coffee powder beside a steel tumbler and dabarah of frothy filter coffee" },
@@ -87,5 +133,45 @@
   ]},
   { "path": ["Beverages", "Juices & Fruit Drinks", "Coconut Water"], "sizes": ["1 pc"], "items": [
     { "name": "Tender Coconut", "ta": "இளநீர்", "subject": "one fresh green tender coconut with the top cut open" }
+  ]},
+  { "path": ["Bakery", "Rusk", "Elaichi Rusk"], "sizes": ["200g", "400g"], "items": [
+    { "name": "Elaichi Rusk", "ta": "ஏலக்காய் ரஸ்க்", "subject": "a stack of crisp golden rusk slices with a few green cardamom pods" }
+  ]},
+  { "path": ["Bakery", "Rusk", "Suji Rusk"], "sizes": ["200g", "400g"], "items": [
+    { "name": "Suji Rusk", "ta": "ரவா ரஸ்க்", "subject": "a stack of crisp golden semolina rusk slices with a grainy texture" }
+  ]},
+  { "path": ["Bakery", "Bread", "Pav & Bun"], "sizes": ["6 pcs", "12 pcs"], "items": [
+    { "name": "Pav", "ta": "பாவ்", "subject": "a tray of soft golden pav dinner rolls joined together" },
+    { "name": "Burger Bun", "ta": "பர்கர் பன்", "subject": "a few round golden burger buns topped with sesame seeds", "sizes": ["2 pcs", "4 pcs"] },
+    { "name": "Hot Dog Bun", "ta": "ஹாட் டாக் பன்", "subject": "a few long soft golden hot dog buns", "sizes": ["2 pcs", "4 pcs"] }
+  ]},
+  { "path": ["Bakery", "Bread", "White Bread"], "sizes": ["400g", "800g"], "items": [
+    { "name": "Sweet Bread", "ta": "ஸ்வீட் பிரெட்", "subject": "an unwrapped loaf of soft golden sweet bread with a few slices cut" },
+    { "name": "Fruit Bread", "ta": "ஃப்ரூட் பிரெட்", "subject": "an unwrapped loaf of soft bread with a few slices cut showing colourful tutti frutti" },
+    { "name": "Jumbo Bread", "ta": "ஜம்போ பிரெட்", "subject": "a large unwrapped long sandwich loaf of white bread with a few slices cut", "sizes": ["800g"] }
+  ]},
+  { "path": ["Bakery", "Bread", "Brown & Whole Wheat Bread"], "sizes": ["400g"], "items": [
+    { "name": "Wheat Bread", "ta": "கோதுமை பிரெட்", "subject": "an unwrapped loaf of brown whole wheat bread with a few slices cut" }
+  ]},
+  { "path": ["Bakery", "Cakes & Pastries", "Pastries"], "sizes": ["1 pc", "2 pcs"], "items": [
+    { "name": "Black Forest Pastry", "ta": "பிளாக் ஃபாரஸ்ட் பேஸ்ட்ரி", "subject": "a slice of black forest pastry with chocolate sponge, whipped cream, chocolate shavings and a red cherry" },
+    { "name": "White Forest Pastry", "ta": "வைட் ஃபாரஸ்ட் பேஸ்ட்ரி", "subject": "a slice of white forest pastry with vanilla sponge, whipped cream, white chocolate shavings and a red cherry" },
+    { "name": "Pineapple Pastry", "ta": "பைனாப்பிள் பேஸ்ட்ரி", "subject": "a slice of pineapple pastry with whipped cream, yellow pineapple glaze and a red cherry" },
+    { "name": "Butterscotch Pastry", "ta": "பட்டர்ஸ்காட்ச் பேஸ்ட்ரி", "subject": "a slice of butterscotch pastry with cream and crunchy golden praline bits" },
+    { "name": "Chocolate Pastry", "ta": "சாக்லேட் பேஸ்ட்ரி", "subject": "a slice of chocolate truffle pastry with glossy chocolate ganache" },
+    { "name": "Strawberry Pastry", "ta": "ஸ்ட்ராபெரி பேஸ்ட்ரி", "subject": "a slice of strawberry pastry with pink strawberry cream and glaze" }
+  ]},
+  { "path": ["Bakery", "Cakes & Pastries", "Muffins & Cupcakes"], "sizes": ["1 pc", "4 pcs"], "items": [
+    { "name": "Vanilla Cup Cake", "ta": "வெனிலா கப் கேக்", "subject": "a few golden vanilla cup cakes in paper cups" },
+    { "name": "Chocolate Muffin", "ta": "சாக்லேட் மஃபின்", "subject": "a few domed chocolate muffins in paper cups" },
+    { "name": "Fruit Cup Cake", "ta": "ஃப்ரூட் கப் கேக்", "subject": "a few golden cup cakes in paper cups dotted with tutti frutti" }
+  ]},
+  { "path": ["Bakery", "Bakery Snacks", "Sweet Bakes"], "sizes": ["1 pc", "4 pcs"], "items": [
+    { "name": "Cream Roll", "ta": "கிரீம் ரோல்", "subject": "a few flaky golden cone-shaped puff pastry cream rolls filled with white cream" },
+    { "name": "Jam Swiss Roll", "ta": "ஜாம் ஸ்விஸ் ரோல்", "subject": "a golden sponge swiss roll with a red jam spiral, a few slices cut", "sizes": ["1 pc"] },
+    { "name": "Doughnut", "ta": "டோனட்", "subject": "a few round sugar-dusted bakery doughnuts" },
+    { "name": "Coconut Tart", "ta": "தேங்காய் டார்ட்", "subject": "a few small round golden tarts filled with sweet coconut" },
+    { "name": "Jam Tart", "ta": "ஜாம் டார்ட்", "subject": "a few small round golden shortcrust tarts filled with red jam" },
+    { "name": "Sweet Puff", "ta": "ஸ்வீட் பஃப்ஸ்", "subject": "a few flaky golden puffs, one cut showing sweet coconut and tutti frutti filling" }
   ]}
 ]
