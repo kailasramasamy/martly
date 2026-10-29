@@ -1,0 +1,46 @@
+{
+ "brand": "Arasan",
+ "manufacturer": "Prabu Soap Works, 3/A1 Thayir Ittari Road, Kannappan Nagar, Rathinapuri, Coimbatore 641027",
+ "feed": "arasan-feed.json",
+ "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/arasan/logo-55769074.png",
+ "themeColor": "#D7141A",
+ "themeColorSecondary": "#1B3A9B",
+ "namePrefix": "Arasan ",
+ "foodType": "VEG",
+ "exclude": [],
+ "aliases": {},
+ "rules": [
+  {
+   "match": "^Detergent Cake$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Bar"
+   ]
+  },
+  {
+   "match": "^Detergent Powder$",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Detergent Powder"
+   ]
+  },
+  {
+   "match": "^Detergent Liquid",
+   "path": [
+    "Home Care",
+    "Detergent",
+    "Liquid Detergent"
+   ]
+  },
+  {
+   "match": "^Limax Dish Wash Round$",
+   "path": [
+    "Home Care",
+    "Dishwash",
+    "Dishwash Bar"
+   ]
+  }
+ ]
+}

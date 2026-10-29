@@ -1,0 +1,86 @@
+[
+ {
+  "title": "Arasan Detergent Cake",
+  "handle": "arasan-detergent-cake",
+  "vendor": "Arasan",
+  "product_type": "",
+  "body_html": "<p>Arasan Detergent Cake is a household staple across Tamil Nadu, Kerala and Karnataka. It removes tough stains and dirt with a strong cleaning action and leaves clothes clean with a fresh fragrance.</p>",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "estimated": false
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/arasan/arasan-detergent-cake-1-a78ceafd.webp"
+   }
+  ]
+ },
+ {
+  "title": "Arasan Detergent Powder",
+  "handle": "arasan-detergent-powder",
+  "vendor": "Arasan",
+  "product_type": "",
+  "body_html": "<p>Arasan Detergent Powder lifts dirt and grime from deep in the fabric and leaves a pleasant scent that lasts all day. Made for everyday hand and bucket wash.</p>",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "estimated": false
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/arasan/arasan-detergent-powder-1-4d5d8bac.webp"
+   }
+  ]
+ },
+ {
+  "title": "Arasan Detergent Liquid 2 in 1",
+  "handle": "arasan-detergent-liquid",
+  "vendor": "Arasan",
+  "product_type": "",
+  "body_html": "<p>Arasan 2 in 1 Detergent Liquid with added fabric conditioner, made for top and front load washing machines. It gets deep into the fibres to remove stubborn stains and leaves clothes soft and fresh.</p>",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/arasan/arasan-detergent-liquid-2-in-1-1-4ae37d4a.webp"
+   }
+  ]
+ },
+ {
+  "title": "Arasan Limax Dish Wash Round",
+  "handle": "arasan-limax-dish-wash-round",
+  "vendor": "Arasan",
+  "product_type": "",
+  "body_html": "<p>Limax Dish Wash Round by Arasan is an anti-bacterial dishwash tub, a monthly budget pack. Tough on grease and food residue yet gentle on hands, it leaves dishes clean and hygienic.</p>",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "57",
+    "compare_at_price": "57",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/arasan/arasan-limax-dish-wash-round-1-84911eb7.webp"
+   }
+  ]
+ }
+]
