@@ -1,0 +1,174 @@
+{
+  "brand": "Nilgiris",
+  "manufacturer": "Nilgiri Dairy Farm Pvt. Ltd., Bengaluru",
+  "feed": "nilgiris-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/nilgiris/logo-b7c28dba.png",
+  "themeColor": "#2E9B47",
+  "themeColorSecondary": "#F26722",
+  "namePrefix": "Nilgiris ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Burger\\ Bun\\ 4\\ pcs$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Tea\\ Time\\ Bun\\ 5\\ pcs$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Milk\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Sandwich\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Six\\ Grain\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Cookie\\ Drops\\ \\-\\ Orange$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Cookie\\ Drops\\ \\-\\ Pineapple$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Cookie\\ Drops\\ \\-\\ Vanilla$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Eighth\\ Sin\\ Eggless\\ Cookie\\ Bites\\ \\-\\ Butter$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Eighth\\ Sin\\ Eggless\\ Cookie\\ Bites\\ \\-\\ Vanilla$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Eighth\\ Sin\\ Eggless\\ Chocolate\\ Walnut\\ Brownie$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Eighth\\ Sin\\ Eggless\\ Tea\\ Cake\\ \\-\\ Banana\\ \\&\\ Walnut$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Eighth\\ Sin\\ Eggless\\ Tea\\ Cake\\ \\-\\ Carrot\\ \\&\\ Raisin$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Eighth\\ Sin\\ Eggless\\ Tea\\ Cake\\ \\-\\ Choco\\ Chip$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Eighth\\ Sin\\ Eggless\\ Tea\\ Cake\\ \\-\\ Coffee$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Eighth\\ Sin\\ Eggless\\ Tea\\ Cake\\ \\-\\ Date\\ \\&\\ Walnut$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Eighth\\ Sin\\ Eggless\\ Tea\\ Cake\\ \\-\\ Rich\\ Dry\\ Fruit$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Walnut\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    }
+  ]
+}

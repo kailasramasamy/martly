@@ -1,0 +1,878 @@
+[
+ {
+  "title": "Burger Bun 4 pcs",
+  "handle": "burger-bun-4-pcs",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "280g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237437_1-nilgiris-burger-bun-35-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237437_1-nilgiris-burger-bun-35-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237437-2_1-nilgiris-burger-bun-35-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237437-3_1-nilgiris-burger-bun-35-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237437-4_1-nilgiris-burger-bun-35-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237437-5_1-nilgiris-burger-bun-35-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Bun is made with significant amounts of flour. It is a perfect blend of softness and nutrition. It is very healthy and safe to add to your daily diet. The bread is soft and fluffy that has a creamy-white interior. This bread is high in fibre and other nutrients. It is made using natural ingredients and is free from any preservatives.",
+   "ingredients": "Maida, Water, Sugar, Hydrogenated Vegetable Fat, Sesame Seed, Yeast, Iodized Salt, Wheat Gluten, Bun Improver, Preservative Ins-282, Hydrogenated Vegetable Fat Used Contains Transfat, “contains No Added Food Colors And Added Flavours”. Allergen Advice: Contains Wheat Gluten.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Tea Time Bun 5 pcs",
+  "handle": "tea-time-bun-5-pcs",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237438_1-nilgiris-tea-time-bun-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237438_1-nilgiris-tea-time-bun-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237438-2_1-nilgiris-tea-time-bun-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237438-3_1-nilgiris-tea-time-bun-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237438-4_1-nilgiris-tea-time-bun-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237438-5_1-nilgiris-tea-time-bun-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Tea Bun is made with significant amounts of flour. It is a perfect blend of softness and nutrition. It is very healthy and safe to add to your daily diet. The bread is soft and fluffy that has a creamy-white interior. This bread is high in fibre and other nutrients. It is made using natural ingredients and is free from any preservatives.",
+   "ingredients": "Refined Wheat Flour, Water, Sugar, Edible Vegetable Oil (Refined Palmolein Oil), Yeast, Iodized Salt, Wheat Gluten, Bun Improver (Ins-1100), Preservative (Ins-282), Antioxidant (Ins - 300) Allergen Advice: Contains Wheat Gluten",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Milk Bread",
+  "handle": "milk-bread",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237434_1-nilgiris-milk-bread-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237434_1-nilgiris-milk-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237434-2_1-nilgiris-milk-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237434-3_1-nilgiris-milk-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237434-4_1-nilgiris-milk-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237434-5_1-nilgiris-milk-bread-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Sandwich Bread is made with high-quality wholesome ingredients. It is a perfect blend of softness and nutrition. The bread is soft and fluffy that has a creamy-white interior. It is the most common type of bread used to make sandwiches. It is very healthy and safe to add to your daily diet. This bread is high in fibre and other nutrients. It is made using natural ingredients and is free from any preservatives.",
+   "ingredients": "Refined Flour, Water, Sugar, Edible Vegetable Oil (Refined Palmolein Oil), Yeast, Iodized Salt, Milk Maid (0.50%), Wheat Gluten, Bread Improver INS-1100, Preservative INS-282, Emulsifier INS-471,481. Allergen Advice: Contains Wheat Gluten, Milk.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Sweet Bread",
+  "handle": "sweet-bread",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237436_1-nilgiris-sweet-bread-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237436_1-nilgiris-sweet-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237436-2_1-nilgiris-sweet-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237436-3_1-nilgiris-sweet-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237436-4_1-nilgiris-sweet-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237436-5_1-nilgiris-sweet-bread-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Sweet Bread is made with high-quality wholesome ingredients. It is a perfect blend of softness and nutrition. The bread is soft and fluffy that has a creamy-white interior. It is the most common type of bread used to make sandwiches. It is very healthy and safe to add to your daily diet. This bread is high in fibre and other nutrients. It is made using natural ingredients and is free from any preservatives.",
+   "ingredients": "Refined Flour, Water, Sugar, Edible Vegetable Oil (Refined Palmolein Oil), Yeast, Iodized Salt, Wheat Gluten, Bread Improver INS-1100, Preservative INS-282, Emulcifier INS-471,481, Acidity regulator INS – 260. Allergen Advice: Contains Wheat Gluten.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Sandwich Bread",
+  "handle": "sandwich-bread",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237433_1-nilgiris-sandwich-bread-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237433_1-nilgiris-sandwich-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237433-2_1-nilgiris-sandwich-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237433-3_1-nilgiris-sandwich-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237433-4_1-nilgiris-sandwich-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237433-5_1-nilgiris-sandwich-bread-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Sandwich Bread is made with high-quality wholesome ingredients. It is a perfect blend of softness and nutrition. The bread is soft and fluffy that has a creamy-white interior. It is the most common type of bread used to make sandwiches. It is very healthy and safe to add to your daily diet. This bread is high in fibre and other nutrients. It is made using natural ingredients and is free from any preservatives.",
+   "ingredients": "Refined Flour, Water, Sugar, Edible Vegetable Oil (Refined Palmolein oil), Yeast, Iodized Salt, Wheat Gluten, Bread Improver INS-1100, Preservative INS-282, Soya Flour Emulsifier INS-471,481, Acidity regulator INS – 260. Allergen Advice: Contains Wheat Gluten.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Six Grain Bread",
+  "handle": "six-grain-bread",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237426_1-nilgiris-six-grain-bread-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237426_1-nilgiris-six-grain-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237426-2_1-nilgiris-six-grain-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237426-3_1-nilgiris-six-grain-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237426-4_1-nilgiris-six-grain-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237426-5_1-nilgiris-six-grain-bread-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris NM six Grain Bread is made with more than one type of grain. It is made using wheat, barley, and millets. The other grains were added for nutrition, flavour, and texture. This bread has more fibre and so it is healthier than white bread. It makes one feel full for a long time. Grain bread is a good source of carbohydrates. It is a healthy choice because they contain nutrients, fibre and other healthy plant compounds found naturally in the grain. It makes great sandwiches you can also use it to make croutons for soups. It is made of all-natural ingredients and free from preservatives.",
+   "ingredients": "Refined Flour, Water, Mixed Grain {(7.1%)(Linseed, Kibbled Wheat, Maize, Semolina, Sesame Seeds, Sun Flower Seeds & Whole Ragi)} Whole Wheat Flour, Sugar, Edible Vegetable Oil (Refined Palmolein Oil), Yeast, Iodized Salt, Wheat Gluten, Bread Improver Ins-1100, Preservative Ins-282, Emulsifier Ins-471,481, Acidity Regulator Ins – 260.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 2
+  }
+ },
+ {
+  "title": "Whole Wheat Bread",
+  "handle": "whole-wheat-bread",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237435_1-nilgiris-whole-wheat-bread-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237435_1-nilgiris-whole-wheat-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237435-2_1-nilgiris-whole-wheat-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237435-3_1-nilgiris-whole-wheat-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237435-4_1-nilgiris-whole-wheat-bread-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237435-5_1-nilgiris-whole-wheat-bread-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Whole Wheat Bread is made with significant amounts of whole grain flour and usually wheat. It is considered much healthier than white bread. The whole wheat flour bread provides fibre, protein, vitamin E and B, magnesium, manganese, iron, phosphorous, potassium and zinc. It is the most common type of bread used to make sandwiches other than white sandwich bread. It is very healthy and safe to add to your daily diet. This bread is high in fibre and other nutrients as compared to other white bread. This Whole Wheat Bread is made using natural ingredients and is free from any preservatives.",
+   "ingredients": "Whole Wheat Atta (54%), Refined Flour, Water, Wheat Bran, Sugar, Edible Vegetable Oil (Refined Palmolein Oil), Yeast, Iodized Salt, Wheat Gluten, Bread Improver INS-1100, Preservative INS-282, Emulsifier INS-471,481, Acidity Regulator INS – 260, Neropan. Allergen Advice: Contains Wheat Gluten.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
+ },
+ {
+  "title": "Cookie Drops - Orange",
+  "handle": "cookie-drops-orange",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237408_1-nilgiris-cookie-drops-orange-soft-crunchy.jpg"
+    },
+    "barcode": "8901018031173"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237408_1-nilgiris-cookie-drops-orange-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237408-2_1-nilgiris-cookie-drops-orange-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237408-3_1-nilgiris-cookie-drops-orange-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237408-4_1-nilgiris-cookie-drops-orange-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237408-5_1-nilgiris-cookie-drops-orange-soft-crunchy.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Nilgiris Orange Cookie Drops are made with the finest ingredients. They are a perfect blend of chocolate chips. Indulge in the flavour of these beautiful cookies in every bite. These cookies make a great snacking option. They are soft, chewy and have a crunch. Enjoy it with your loved ones. It is sweet and super satisfying. It contains healthy fats, fibre, protein, magnesium and vitamin E.",
+   "ingredients": "Refined Wheat Flour(Maida), Icing Sugar, Butter, Dehydrated Vanilla, Eggs, Corn Flour, Preservative Ins 500(Ii). Contains Permitted Synthetic Food Colour Ins (102) And Added Flavour (Nature-identical & Artificial Flavouring Substance - Orange.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cookie Drops - Pineapple",
+  "handle": "cookie-drops-pineapple",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237407_1-nilgiris-cookie-drops-pineapple-soft-crunchy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237407_1-nilgiris-cookie-drops-pineapple-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237407-2_1-nilgiris-cookie-drops-pineapple-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237407-3_1-nilgiris-cookie-drops-pineapple-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237407-4_1-nilgiris-cookie-drops-pineapple-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237407-5_1-nilgiris-cookie-drops-pineapple-soft-crunchy.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Nilgiris Pineapple Cookie Drops are made with the finest ingredients. They are a perfect blend of chocolate chips. Indulge in the flavour of these beautiful cookies in every bite. These cookies make a great snacking option. They are soft, chewy and have a crunch. Enjoy it with your loved ones. It is sweet and super satisfying. It contains healthy fats, fibre, protein, magnesium and vitamin E.",
+   "ingredients": "Refined Wheat Flour(Maida), Icing Sugar, Butter, Dehydrated Vanilla, Eggs, Corn Flour, Preservative Ins 500(Ii). Contains Permitted Synthetic Food Colour Ins (102) And Added Flavour (Nature-identical & Artificial Flavouring Substance-Pineapple.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cookie Drops - Vanilla",
+  "handle": "cookie-drops-vanilla",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237406_1-nilgiris-cookie-drops-vanilla-soft-crunchy.jpg"
+    },
+    "barcode": "8901018031166"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237406_1-nilgiris-cookie-drops-vanilla-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237406-2_1-nilgiris-cookie-drops-vanilla-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237406-3_1-nilgiris-cookie-drops-vanilla-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237406-4_1-nilgiris-cookie-drops-vanilla-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237406-5_1-nilgiris-cookie-drops-vanilla-soft-crunchy.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Nilgiris Vanilla Cookie Drops are made with the finest ingredients. They are a perfect blend of chocolate chips. Indulge in the flavour of these beautiful cookies in every bite. These cookies make a great snacking option. They are soft, chewy and have a crunch. Enjoy it with your loved ones. It is sweet and super satisfying. It contains healthy fats, fibre, protein, magnesium and vitamin E.",
+   "ingredients": "Refined Wheat Flour(Maida), Icing Sugar, Butter, Dehydrated Vanilla, Eggs, Corn Flour, Preservative Ins 500(Ii). Contains Added Flavour (Nature Identical Artificial Flavouring Substance Vanilla.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Eighth Sin Eggless Cookie Bites - Butter",
+  "handle": "eighth-sin-eggless-cookie-bites-butter",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237414_1-nilgiris-eighth-sin-cookie-bites-butter-eggless-soft-crunchy.jpg"
+    },
+    "barcode": "8901153043192"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237414_1-nilgiris-eighth-sin-cookie-bites-butter-eggless-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237414-2_1-nilgiris-eighth-sin-cookie-bites-butter-eggless-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237414-3_1-nilgiris-eighth-sin-cookie-bites-butter-eggless-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237414-4_1-nilgiris-eighth-sin-cookie-bites-butter-eggless-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237414-5_1-nilgiris-eighth-sin-cookie-bites-butter-eggless-soft-crunchy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Eighth Sin Eggless Butter Cookie Bites are made with the finest ingredients. They are a perfect blend of chocolate chips. Indulge in the flavour of these beautiful cookies in every bite. These cookies make a great snacking option. They are soft, chewy and have a crunch. Enjoy it with your loved ones. It is sweet and super satisfying. It contains healthy fats, fibre, protein, magnesium and vitamin E.",
+   "ingredients": "Edible Hydrogenated Vegetable Oil, Maida, Powder Sugar, Palmolein Oil, Essence Butter, Skimmed Milk Powder, Baking Powder, Emulsifiers, Preservative (INS-282).",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Eighth Sin Eggless Cookie Bites - Vanilla",
+  "handle": "eighth-sin-eggless-cookie-bites-vanilla",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237413_1-nilgiris-eighth-sin-cookie-bites-vanilla-eggless-soft-crunchy.jpg"
+    },
+    "barcode": "8901153043208"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237413_1-nilgiris-eighth-sin-cookie-bites-vanilla-eggless-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237413-2_1-nilgiris-eighth-sin-cookie-bites-vanilla-eggless-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237413-3_1-nilgiris-eighth-sin-cookie-bites-vanilla-eggless-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237413-4_1-nilgiris-eighth-sin-cookie-bites-vanilla-eggless-soft-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237413-5_1-nilgiris-eighth-sin-cookie-bites-vanilla-eggless-soft-crunchy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Eighth Sin Eggless Vanilla Cookie Bites are made with the finest ingredients. They are a perfect blend of chocolate chips. Indulge in the flavour of these beautiful cookies in every bite. These cookies make a great snacking option. They are soft, chewy and have a crunch. Enjoy it with your loved ones. It is sweet and super satisfying. It contains healthy fats, fibre, protein, magnesium and vitamin E.",
+   "ingredients": "Maida , Powder Sugar, Edible Hydrogenated Vegetable Oils,palmolien Oil,cocoa Powder, Skimmed Milk Powder, Dark Chocolate Compound, Fresh Cream, Emulsifiers, Baking Powder, Vanilla Essence, Preservative Ins (282).",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Eighth Sin Eggless Chocolate Walnut Brownie",
+  "handle": "eighth-sin-eggless-chocolate-walnut-brownie",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237415_1-nilgiris-eighth-sin-chocolate-walnut-browni-eggless-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237415_1-nilgiris-eighth-sin-chocolate-walnut-browni-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237415-3_1-nilgiris-eighth-sin-chocolate-walnut-browni-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237415-4_1-nilgiris-eighth-sin-chocolate-walnut-browni-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237415-5_1-nilgiris-eighth-sin-chocolate-walnut-browni-eggless-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Eighth Sin Eggless Chocolate Walnut Browni is 100% vegetarian treat that literally melt in your mouth. It is made with high quality ingredients. The added goodness of dry fruits adds crunch to this cake. This soft and fluffy cake is filled with delightful and fresh dry fruits. The cake is divinely scrumptious and perfect for all the vegetarians.",
+   "ingredients": "Eggfree Brownie Premix, Palmolein Oil, Chocolate Dark compound, Butter Unsalted, Walnuts, Inverted Sugar Syrup, Preservative(INS-202).",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Eighth Sin Eggless Tea Cake - Banana & Walnut",
+  "handle": "eighth-sin-eggless-tea-cake-banana-walnut",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237421_1-nilgiris-eighth-sin-tea-cake-banana-walnut-eggless-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237421_1-nilgiris-eighth-sin-tea-cake-banana-walnut-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237421-2_1-nilgiris-eighth-sin-tea-cake-banana-walnut-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237421-3_1-nilgiris-eighth-sin-tea-cake-banana-walnut-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237421-4_1-nilgiris-eighth-sin-tea-cake-banana-walnut-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237421-5_1-nilgiris-eighth-sin-tea-cake-banana-walnut-eggless-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Eighth Sin Eggless Banana & Walnut Tea Cake is a 100% vegetarian treat that literally melts in your mouth. It is made with high-quality ingredients. A perfect evening or breakfast diet snack option. This soft and fluffy cake is filled with delightful and flavourful. The cake is divinely scrumptious and perfect for all vegetarians.",
+   "ingredients": "Banana(35%), Sugar, Edible Vegetable Oil, Refined Wheat Flour(Atta), Eggs, Walnuts(5%), Raising Agents(Ins 500ii), Preservative(Ins 202), Cinnamon Powder, Vanilla Essence.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 5
+  }
+ },
+ {
+  "title": "Eighth Sin Eggless Tea Cake - Carrot & Raisin",
+  "handle": "eighth-sin-eggless-tea-cake-carrot-raisin",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237420_1-nilgiris-eighth-sin-tea-cake-carrot-raisi-eggless-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237420_1-nilgiris-eighth-sin-tea-cake-carrot-raisi-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237420-2_1-nilgiris-eighth-sin-tea-cake-carrot-raisi-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237420-3_1-nilgiris-eighth-sin-tea-cake-carrot-raisi-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237420-4_1-nilgiris-eighth-sin-tea-cake-carrot-raisi-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237420-5_1-nilgiris-eighth-sin-tea-cake-carrot-raisi-eggless-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Eighth Sin Eggless Carrot & Raisins Tea Cake is a 100% vegetarian treat that literally melts in your mouth. It is made with high-quality ingredients. A perfect evening or breakfast diet snack option. This soft and fluffy cake is filled with delightful and flavourful. The cake is divinely scrumptious and perfect for all vegetarians.",
+   "ingredients": "Egg Free Premix(46.3%),{Sugar, MIlk Flour, Milk Solids, Wheat Gluten, Acidity Regulator(INS 450i), Raising Agent(INS 500ii), Flavouring(Vanilla)}, Salt, Water Edible Vegetable oil, Carrot & Raisins.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 5
+  }
+ },
+ {
+  "title": "Eighth Sin Eggless Tea Cake - Choco Chip",
+  "handle": "eighth-sin-eggless-tea-cake-choco-chip",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237424_1-nilgiris-eighth-sin-tea-cake-choco-chip-eggless-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237424_1-nilgiris-eighth-sin-tea-cake-choco-chip-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237424-2_1-nilgiris-eighth-sin-tea-cake-choco-chip-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237424-3_1-nilgiris-eighth-sin-tea-cake-choco-chip-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237424-4_1-nilgiris-eighth-sin-tea-cake-choco-chip-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237424-5_1-nilgiris-eighth-sin-tea-cake-choco-chip-eggless-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Eighth Sin Eggless Choco Chip Tea Cake is a 100% vegetarian treat that literally melts in your mouth. It is made with high-quality ingredients. A perfect evening or breakfast diet snack option. This soft and fluffy cake is filled with delightful and flavourful. The cake is divinely scrumptious and perfect for all vegetarians.",
+   "ingredients": "Chocolate Mix, Palmolein Oil, Chocolate Chips, Preservative (INS-282, 202), Glycerin, Invert Sugar Syrup, Acidity Regulator.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Eighth Sin Eggless Tea Cake - Coffee",
+  "handle": "eighth-sin-eggless-tea-cake-coffee",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237422_1-nilgiris-eighth-sin-tea-cake-coffee-eggless-soft-fluffy.jpg"
+    },
+    "barcode": "8901153043079"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237422_1-nilgiris-eighth-sin-tea-cake-coffee-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237422-2_1-nilgiris-eighth-sin-tea-cake-coffee-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237422-3_1-nilgiris-eighth-sin-tea-cake-coffee-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237422-4_1-nilgiris-eighth-sin-tea-cake-coffee-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237422-5_1-nilgiris-eighth-sin-tea-cake-coffee-eggless-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Eighth Sin Eggless Coffee Tea Cake is a 100% vegetarian treat that literally melts in your mouth. It is made with high-quality ingredients. A perfect evening or breakfast diet snack option. This soft and fluffy cake is filled with delightful and flavourful. The cake is divinely scrumptious and perfect for all vegetarians.",
+   "ingredients": "Maida, Sugar, Edible Hydrogenated Vegetable Oil, Cake Premix, Egg, Refined Oil, Milk Solids, Refined Coffee Powder, Baking Powder, Essence Coffee, Preservative(Ins 202).",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Eighth Sin Eggless Tea Cake - Date & Walnut",
+  "handle": "eighth-sin-eggless-tea-cake-date-walnut",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237423_1-nilgiris-eighth-sin-tea-cake-date-walnut-eggless-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237423_1-nilgiris-eighth-sin-tea-cake-date-walnut-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237423-2_1-nilgiris-eighth-sin-tea-cake-date-walnut-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237423-3_1-nilgiris-eighth-sin-tea-cake-date-walnut-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237423-4_1-nilgiris-eighth-sin-tea-cake-date-walnut-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237423-5_1-nilgiris-eighth-sin-tea-cake-date-walnut-eggless-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Eighth Sin Eggless Date & Walnut Tea Cake is a 100% vegetarian treat that literally melts in your mouth. It is made with high-quality ingredients. A perfect evening or breakfast diet snack option. This soft and fluffy cake is filled with delightful and flavourful. The cake is divinely scrumptious and perfect for all vegetarians.",
+   "ingredients": "Egg-free mix (46.3%), {Milk Flour, Sugar, Milk Solids, Wheat Gluten, Raising Agents(INS 500ii), Acidity Regulators(INS450i), Flavouring (Vanilla), Salt}, Water, Edible Vegetable Oil, Dates And Walnuts, Preservative(INS 202).",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Eighth Sin Eggless Tea Cake - Rich Dry Fruit",
+  "handle": "eighth-sin-eggless-tea-cake-rich-dry-fruit",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237425_1-nilgiris-eighth-sin-tea-cake-rich-dry-fruit-eggless-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237425_1-nilgiris-eighth-sin-tea-cake-rich-dry-fruit-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237425-2_1-nilgiris-eighth-sin-tea-cake-rich-dry-fruit-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237425-3_1-nilgiris-eighth-sin-tea-cake-rich-dry-fruit-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237425-4_1-nilgiris-eighth-sin-tea-cake-rich-dry-fruit-eggless-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237425-5_1-nilgiris-eighth-sin-tea-cake-rich-dry-fruit-eggless-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nilgiris Eighth Sin Eggless Rich Dry Fruit Tea Cake is a 100% vegetarian treat that literally melts in your mouth. It is made with high-quality ingredients. A perfect evening or breakfast diet snack option. This soft and fluffy cake is filled with delightful and flavourful. The cake is divinely scrumptious and perfect for all vegetarians.",
+   "ingredients": "Vanilla Mix, Palmolein Oil, Glycerin, Tutti Fruity, Bakers Plums, Preservative (INS-282, 202), Glycerin, Invert Sugar Syrup, Acidity Regulator.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Walnut Cake",
+  "handle": "walnut-cake",
+  "vendor": "Nilgiris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "230g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237443_1-nilgiris-walnut-cake-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237443_1-nilgiris-walnut-cake-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237443-2_1-nilgiris-walnut-cake-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237443-3_1-nilgiris-walnut-cake-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237443-4_1-nilgiris-walnut-cake-soft-fluffy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237443-5_1-nilgiris-walnut-cake-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Nilgiris Walnut Cake is a great treat that literally melts in your mouth. It is made with high-quality ingredients. A perfect evening or breakfast diet snack option. This soft and fluffy cake is filled with delightful and flavourful. The cake is divinely scrumptious and perfect for all vegetarians.",
+   "ingredients": "Eggs, Refined Wheat Flour, Sugar, Edible Vegetable Oil (Sun Flower Oil), Margaine, Walnut(7.74%), Hms, Humectant- Ins 422, Skimmed Milk Powder, Invert Sugar Syrup, Iodised Salt, Preservative Ins 282,202, Rasing Agent Ins 500(Ii), Acidity Regulator Ins 330,296. Contains Added Flavours - Natural, Nature Identical, Artificial Flavoring Substances- Vanilla.",
+   "manufacturerName": "Galaxy Cloud Kitchens LTD",
+   "fssaiLicense": "10018043002002",
+   "countryOfOrigin": "India"
+  }
+ }
+]
