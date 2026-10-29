@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { List } from "@refinedev/antd";
-import { Button, Space, Typography } from "antd";
+import { Button, Empty, Space, Typography } from "antd";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import type { StockCheckBrand, StockCheckSummary } from "@martly/shared/types";
 import { StoreSelect } from "../../components/StoreSelect";
@@ -32,18 +32,24 @@ export const StockCheckPage = () => {
   return (
     <List title="Stock check" headerButtons={<StoreSelect value={storeId} onChange={setStoreId} style={{ width: 240 }} />}>
       <Typography.Paragraph type="secondary">Onboarding guessed your range. Confirm what the store really carries; customers only see what you confirm.</Typography.Paragraph>
-      <SummaryPanel summary={summary} focus={focus} onFocus={(f) => { setFocus(f); setDepartmentId(undefined); }} />
-      {storeId && department ? (
-        <div style={{ marginTop: 24 }}>
-          <Space style={{ marginBottom: 12 }}>
-            <Button icon={<ArrowLeftOutlined />} onClick={() => setDepartmentId(undefined)}>All departments</Button>
-            <Typography.Title level={4} style={{ margin: 0 }}>{department.name}</Typography.Title>
-          </Space>
-          <BrandsTable storeId={storeId} initialTab={focus ?? undefined} department={department} version={version} actions={actions} onSizes={(brand, tab) => setSizes({ brand, tab })} />
-          <SizesDrawer storeId={storeId} departmentId={department.id} brand={sizes?.brand ?? null} tab={sizes?.tab ?? "all"} version={version} actions={actions} onClose={() => setSizes(null)} />
-        </div>
+      {!storeId ? (
+        <Empty description="Select a store to check its stock" />
       ) : (
-        <DepartmentsTable departments={(summary?.departments ?? []).filter((d) => !focus || d[focus] > 0)} loading={loading && !summary} actions={actions} onPick={setDepartmentId} />
+        <>
+          <SummaryPanel summary={summary} focus={focus} onFocus={(f) => { setFocus(f); setDepartmentId(undefined); }} />
+          {department ? (
+            <div style={{ marginTop: 24 }}>
+              <Space style={{ marginBottom: 12 }}>
+                <Button icon={<ArrowLeftOutlined />} onClick={() => setDepartmentId(undefined)}>All departments</Button>
+                <Typography.Title level={4} style={{ margin: 0 }}>{department.name}</Typography.Title>
+              </Space>
+              <BrandsTable storeId={storeId} initialTab={focus ?? undefined} department={department} version={version} actions={actions} onSizes={(brand, tab) => setSizes({ brand, tab })} />
+              <SizesDrawer storeId={storeId} departmentId={department.id} brand={sizes?.brand ?? null} tab={sizes?.tab ?? "all"} version={version} actions={actions} onClose={() => setSizes(null)} />
+            </div>
+          ) : (
+            <DepartmentsTable departments={(summary?.departments ?? []).filter((d) => !focus || d[focus] > 0)} loading={loading && !summary} actions={actions} onPick={setDepartmentId} />
+          )}
+        </>
       )}
     </List>
   );
