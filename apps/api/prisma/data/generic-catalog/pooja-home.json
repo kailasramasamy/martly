@@ -28,8 +28,10 @@
   ]},
   { "path": ["Pooja & Festivals", "Pooja Essentials", "Diya & Wicks"], "sizes": ["1 pack"], "items": [
     { "name": "Cotton Wicks (Thiri)", "ta": "பஞ்சுத் திரி", "subject": "a small bundle of white cotton lamp wicks" },
-    { "name": "Lotus Stem Wicks", "ta": "தாமரைத் தண்டு திரி", "subject": "a small bundle of off-white lotus stem fibre wicks" },
-    { "name": "Deepam Oil (Lamp Oil)", "ta": "தீப எண்ணெய்", "sizes": ["500ml", "1L"], "subject": "a plain unlabeled bottle of golden lamp oil beside a lit brass lamp" }
+    { "name": "Lotus Stem Wicks", "ta": "தாமரைத் தண்டு திரி", "subject": "a small bundle of off-white lotus stem fibre wicks" }
+  ]},
+  { "path": ["Pooja & Festivals", "Pooja Essentials", "Pooja Oil"], "sizes": ["500ml", "1L"], "items": [
+    { "name": "Deepam Oil (Lamp Oil)", "ta": "தீப எண்ணெய்", "subject": "a plain unlabeled bottle of golden lamp oil beside a lit brass lamp" }
   ]},
   { "path": ["Pooja & Festivals", "Pooja Essentials", "Sindoor & Kumkum"], "sizes": ["25g", "50g", "100g"], "items": [
     { "name": "Kumkum", "ta": "குங்குமம்", "subject": "a small heap of bright red kumkum powder in a small brass bowl" },

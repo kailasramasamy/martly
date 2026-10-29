@@ -14,6 +14,14 @@
   },
   "rules": [
     {
+      "match": "^(?!.*wick)(?=.*\\boils?\\b)(?=.*\\b(puja|pooja|deepam|deepa|diya|lamp|camphor oil)\\b)",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Oil"
+      ]
+    },
+    {
       "match": "^Three\\ In\\ One\\ Agarbatti$",
       "path": [
         "Pooja & Festivals",

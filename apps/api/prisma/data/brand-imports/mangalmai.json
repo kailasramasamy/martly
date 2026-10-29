@@ -11,6 +11,14 @@
   "aliases": {},
   "rules": [
     {
+      "match": "^(?!.*wick)(?=.*\\boils?\\b)(?=.*\\b(puja|pooja|deepam|deepa|diya|lamp|camphor oil)\\b)",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Pooja Oil"
+      ]
+    },
+    {
       "match": "^Pooja\\ Oil$",
       "path": [
         "Pooja & Festivals",
