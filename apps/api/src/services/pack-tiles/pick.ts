@@ -44,7 +44,7 @@ function pairFrom(candidates: Candidate[]): [Candidate, Candidate] | null {
 
 const pack = ({ productId, url, aspect }: Pack): Pack => ({ productId, url, aspect });
 
-/** Each category's tile pair at this store: its chosen packs first, then its best-known brands; none without two */
+/** Each category's tile pair at this store: its first two chosen packs it stocks, else matched from its chosen and best-known packs */
 export async function pickPairs(prisma: PrismaClient, storeId: string, region: string | null, categoryIds: string[]) {
   const [chosen, popular] = await Promise.all([
     chosenPacks(prisma, storeId, categoryIds),
@@ -53,7 +53,9 @@ export async function pickPairs(prisma: PrismaClient, storeId: string, region: s
   const pairs = new Map<string, [Pack, Pack]>();
   for (const categoryId of categoryIds) {
     const own = (c: Candidate) => c.categoryId === categoryId;
-    const pair = pairFrom([...chosen.filter(own), ...popular.filter(own)]);
+    const picked = chosen.filter(own);
+    // Two chosen packs are shown as chosen, even one flat beside one upright; otherwise the pair is matched
+    const pair = picked.length >= 2 ? [picked[0], picked[1]] as const : pairFrom([...picked, ...popular.filter(own)]);
     if (pair) pairs.set(categoryId, [pack(pair[0]), pack(pair[1])]);
   }
   return pairs;

@@ -15,7 +15,9 @@ the store sells, Instamart-style, instead of the category's generic art. Mockup 
    `prisma/data/category-packs.json` and applied by `npx tsx scripts/pack-cutouts/apply-picks.ts [--prod]`.
    A chosen pack may sit in another category's aisle (the Maggi pack on Ready to Eat).
 3. **Pairing** (`services/pack-tiles/pick.ts`), per store, only from packs it stocks (active, in stock):
-   - First the category's chosen packs that the store has, in order.
+   - When the store has two of the category's chosen packs, the first two are shown as chosen, even a flat pack beside
+     an upright one (paneer).
+   - Otherwise, first the category's chosen packs that the store has, in order.
    - Then its other cut-out packs in the category, one per brand, best known in the store's region first.
    - The first is the back pack. The front is the next one lying the same way (both flat or both upright), from
      another brand when there is one.
