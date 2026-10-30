@@ -31,8 +31,8 @@ the store sells, Instamart-style, instead of the category's generic art. Mockup 
    - Flat packs: the back one raised so the front one covers its lower part, with no gap between them.
    - An upright pack behind a flat one (Harpic behind a Vim bar): the upright one stands tall at the left, the flat one
      lies across its lower right.
-5. **Serving.** `directoryGroups` swaps a category's `imageUrl` for its tile (martlyshop.in lists categories as text, so
-   it has no tiles to swap). A tile
+5. **Serving.** `directoryGroups` swaps a category's `imageUrl` for its tile, and so does `departmentTrees` for the
+   category pills on martlyshop.in's department pages (`/c/{department}`). A tile
    not drawn yet is drawn in the background on first request, and the category shows its old art until then. No app
    build is needed; current builds show the new images.
 

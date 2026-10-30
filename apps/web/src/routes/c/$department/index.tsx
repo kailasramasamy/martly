@@ -37,7 +37,10 @@ function DepartmentPage() {
         <ul className="mt-5 flex gap-2 overflow-x-auto pb-1">
           {department.categories.map((c) => (
             <li key={c.slug} className="shrink-0">
-              <a href={`${departmentPath(department.slug)}/${c.slug}`} className="flex h-11 items-center whitespace-nowrap rounded-full border border-line px-4 text-sm font-bold hover:border-brand hover:text-brand">{c.name}</a>
+              <a href={`${departmentPath(department.slug)}/${c.slug}`} className="flex h-12 items-center gap-2 whitespace-nowrap rounded-full border border-line pl-1.5 pr-4 text-sm font-bold hover:border-brand hover:text-brand">
+                {c.imageUrl && <img src={c.imageUrl} alt="" loading="lazy" className="h-9 w-9 rounded-full bg-[#e8f1f1] object-contain p-0.5" />}
+                {c.name}
+              </a>
             </li>
           ))}
         </ul>
