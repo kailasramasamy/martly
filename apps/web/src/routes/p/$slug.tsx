@@ -77,9 +77,8 @@ function PackOptions({ packs, value, onChange }: { packs: WebPack[]; value: WebP
   )
 }
 
-function BuyBox({ page }: { page: WebProductPage }) {
+function BuyBox({ page, pack, setPack }: { page: WebProductPage; pack: WebPack | undefined; setPack: (p: WebPack) => void }) {
   const { product, packs, store } = page
-  const [pack, setPack] = usePack(packs)
   if (!pack) {
     return <p className="mt-6 rounded-2xl bg-amber-50 p-4 text-sm text-amber-900">{store.name} doesn't sell this right now. Change your store at the top of the page to see where it's in stock.</p>
   }
@@ -164,16 +163,19 @@ function ProductInformation({ info }: { info: WebProductInfo }) {
 function ProductPage() {
   const page = Route.useLoaderData()
   const { product, store, related, brand } = page
+  const [pack, setPack] = usePack(page.packs)
+  // The picked size's own photo leads the gallery
+  const images = [...new Set([pack?.imageUrl, ...product.images].filter((u): u is string => Boolean(u)))]
   return (
     <ShopLayout store={store}>
       <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6">
         <Breadcrumbs items={[{ name: "Home", path: "/" }, ...product.trail, { name: product.name }]} />
         <div className="mt-6 grid gap-8 lg:grid-cols-2 lg:gap-14 [&>*]:min-w-0">
-          <Gallery images={product.images} name={product.name} />
+          <Gallery key={pack?.id} images={images} name={product.name} />
           <div>
             {brand && <BrandChip brand={brand} />}
             <h1 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight sm:text-[34px]">{product.name}</h1>
-            <BuyBox page={page} />
+            <BuyBox page={page} pack={pack} setPack={setPack} />
             <AboutItem points={product.info.highlights} />
           </div>
         </div>

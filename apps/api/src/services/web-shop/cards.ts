@@ -54,7 +54,7 @@ function toPack(sp: Listing): WebPack {
     offPercent: off ? Math.round((1 - price / mrp) * 100) : 0,
     inStock: sp.stock - sp.reservedStock > 0,
     offer,
-    imageUrl: storePack(sp.storeId, sp.variantId)?.front ?? null,
+    imageUrl: storePack(sp.storeId, sp.variantId)?.front ?? sp.variant.imageUrl ?? null,
   };
 }
 
@@ -65,7 +65,7 @@ export function toCard(row: CardRow): WebProductCard {
     slug: row.slug,
     name: row.name,
     brand: row.brand?.name ?? null,
-    imageUrl: packs.find((p) => p.imageUrl)?.imageUrl ?? row.imageUrl ?? listings.find((sp) => sp.variant.imageUrl)?.variant.imageUrl ?? null,
+    imageUrl: listings.map((sp) => storePack(sp.storeId, sp.variantId)?.front).find(Boolean) ?? row.imageUrl ?? packs.find((p) => p.imageUrl)?.imageUrl ?? null,
     packs,
   };
 }

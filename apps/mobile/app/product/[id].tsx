@@ -77,7 +77,6 @@ export default function ProductDetailScreen() {
   const [frequentlyBought, setFrequentlyBought] = useState<StoreProduct[]>([]);
 
   // Group images by variant — match gallery images to variants via shared URL path
-  const [activeVariantIdx, setActiveVariantIdx] = useState(0);
   const [selectedSpIdx, setSelectedSpIdx] = useState(0);
   const insets = useSafeAreaInsets();
 
@@ -154,10 +153,6 @@ export default function ProductDetailScreen() {
     return groups;
   }, [product]);
 
-  const images = useMemo(() => {
-    if (imageGroups.length === 0) return [];
-    return imageGroups[activeVariantIdx]?.images ?? imageGroups[0]?.images ?? [];
-  }, [imageGroups, activeVariantIdx]);
 
   const galleryRef = useRef<ScrollView>(null);
 
@@ -283,16 +278,20 @@ export default function ProductDetailScreen() {
 
   const handleSelectVariant = useCallback((idx: number) => {
     setSelectedSpIdx(idx);
-    const variantName = storeProducts[idx]?.variant.name;
-    const groupIdx = imageGroups.findIndex((g) => g.label === variantName);
-    if (groupIdx >= 0) {
-      setActiveVariantIdx(groupIdx);
-    }
     setActiveImageIdx(0);
     galleryRef.current?.scrollTo({ x: 0, animated: false });
-  }, [storeProducts, imageGroups]);
+  }, []);
 
   const selectedSp = storeProducts[selectedSpIdx] ?? storeProducts[0];
+
+  // The gallery follows the picked size; a size without its own photo shows the product's photos
+  const images = useMemo(() => {
+    const group = imageGroups.find((g) => g.label === selectedSp?.variant.name);
+    if (group) return group.images;
+    const overview = imageGroups.find((g) => g.label === "Overview" || g.label === "All");
+    if (overview) return overview.images;
+    return [...new Set([product?.imageUrl, ...(product?.images ?? [])].filter((u): u is string => !!u))];
+  }, [imageGroups, selectedSp, product]);
   const selectedSpAvail = selectedSp ? (selectedSp.availableStock ?? (selectedSp.stock - (selectedSp.reservedStock ?? 0))) : 0;
   const selectedSpOos = selectedSpAvail <= 0;
   const selectedSpHasDiscount = selectedSp?.pricing?.discountActive;
