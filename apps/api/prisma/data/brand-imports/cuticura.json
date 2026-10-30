@@ -1,0 +1,22 @@
+{
+ "brand": "Cuticura",
+ "manufacturer": "Cholayil Private Limited, Chennai",
+ "feed": "cuticura-feed.json",
+ "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/cuticura/logo-6ee9435c.png",
+ "themeColor": "#5B2A86",
+ "themeColorSecondary": "#E8641B",
+ "namePrefix": "Cuticura ",
+ "foodType": "VEG",
+ "exclude": [],
+ "aliases": {},
+ "rules": [
+  {
+   "match": "Talc$",
+   "path": [
+    "Personal Care",
+    "Bath & Body",
+    "Talcum Powder"
+   ]
+  }
+ ]
+}
