@@ -1,0 +1,46 @@
+{
+ "brand": "Velvette",
+ "manufacturer": "Reliance Consumer Products Limited, Mumbai",
+ "feed": "velvette-feed.json",
+ "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/velvette/logo-b26a758a.png",
+ "themeColor": "#1F3A8A",
+ "themeColorSecondary": "#B5172F",
+ "namePrefix": "Velvette ",
+ "foodType": "VEG",
+ "exclude": [],
+ "aliases": {},
+ "rules": [
+  {
+   "match": "Shampoo$",
+   "path": [
+    "Personal Care",
+    "Hair Care",
+    "Shampoo"
+   ]
+  },
+  {
+   "match": "Conditioner$",
+   "path": [
+    "Personal Care",
+    "Hair Care",
+    "Conditioner"
+   ]
+  },
+  {
+   "match": "Soap$",
+   "path": [
+    "Personal Care",
+    "Bath & Body",
+    "Bathing Soap (Bar)"
+   ]
+  },
+  {
+   "match": "Talc$",
+   "path": [
+    "Personal Care",
+    "Bath & Body",
+    "Talcum Powder"
+   ]
+  }
+ ]
+}
