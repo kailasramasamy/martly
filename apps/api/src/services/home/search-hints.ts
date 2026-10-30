@@ -1,5 +1,6 @@
 import { DEFAULT_SEARCH_HINTS, DEFAULT_SEARCH_HINT_TRANSLATIONS, MAX_SEARCH_HINTS } from "@martly/shared/constants";
 import type { PrismaClient } from "../../../generated/prisma/client.js";
+import { soldAt } from "../web-shop/cards.js";
 
 const WINDOW_DAYS = 14;
 // Shown to every shopper, so a search only counts once several signed-in people made it: nobody's own query (and no
@@ -45,8 +46,21 @@ async function popularHints(prisma: PrismaClient, storeId: string, now: Date): P
  * What the Home search bar cycles through: the live festival's aisles first, then the store's most searched terms
  * that found something, topped up with everyday searches. Other languages get the hints that have a translation.
  */
+/** The everyday searches the store sells something for: no "eggs" in a vegetarian store's bar */
+async function soldTerms(prisma: PrismaClient, storeId: string) {
+  const sold = await Promise.all(DEFAULT_SEARCH_HINTS.map((term) => prisma.product.findFirst({
+    where: {
+      AND: [soldAt(storeId), {
+        OR: [{ name: { contains: term, mode: "insensitive" } }, { subcategory: { name: { contains: term, mode: "insensitive" } } }],
+      }],
+    },
+    select: { id: true },
+  })));
+  return DEFAULT_SEARCH_HINTS.filter((_, i) => sold[i]);
+}
+
 export async function searchHints(prisma: PrismaClient, storeId: string, festivalTiles: HintTile[], now: Date) {
-  const everyday = DEFAULT_SEARCH_HINTS.map((term): Hint => ({
+  const everyday = (await soldTerms(prisma, storeId)).map((term): Hint => ({
     term,
     translations: Object.fromEntries(Object.entries(DEFAULT_SEARCH_HINT_TRANSLATIONS).map(([lang, words]) => [lang, words[term]])),
   }));
