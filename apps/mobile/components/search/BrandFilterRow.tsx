@@ -16,7 +16,6 @@ interface BrandFilterRowProps {
 // Quick single-brand jump: a tap shows only that brand, a second tap clears it. Several brands → Filters sheet.
 export function BrandFilterRow({ brands, selectedIds, onChange }: BrandFilterRowProps) {
   const list = useRef<FlatList<BrandTile>>(null);
-  const placed = useRef(false);
   if (brands.length < MIN_BRANDS && selectedIds.length === 0) return null;
   // The picked brand slides fully into view, so a pill tapped at the edge isn't left half hidden
   const toggle = (id: string, index: number) => {
@@ -24,20 +23,12 @@ export function BrandFilterRow({ brands, selectedIds, onChange }: BrandFilterRow
     onChange(picking ? [id] : []);
     if (picking) list.current?.scrollToIndex({ index, viewPosition: 0.5, animated: true });
   };
-  // Screens remount the row while products reload: open on the picked brand rather than the start
-  const placePicked = () => {
-    if (placed.current) return;
-    placed.current = true;
-    const index = selectedIds.length === 1 ? brands.findIndex((b) => b.id === selectedIds[0]) : -1;
-    if (index > 0) list.current?.scrollToIndex({ index, viewPosition: 0.5, animated: false });
-  };
   return (
     <FlatList
       ref={list}
       horizontal
       // A pill not laid out yet: aim by the average pill width instead
       onScrollToIndexFailed={({ index, averageItemLength }) => list.current?.scrollToOffset({ offset: index * averageItemLength, animated: true })}
-      onContentSizeChange={placePicked}
       data={brands}
       keyExtractor={(b) => b.id}
       showsHorizontalScrollIndicator={false}

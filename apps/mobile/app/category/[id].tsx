@@ -26,7 +26,7 @@ import { CategorySidebar } from "../../components/CategorySidebar";
 import { CategoryFilterBar, type PriceSort } from "../../components/CategoryFilterBar";
 import { useCategoryFacets, useCategoryProducts } from "../../lib/use-category-browse";
 import type { BrandTile } from "../../lib/brand-strip";
-import type { DepartmentNode, Banner } from "../../lib/types";
+import type { DepartmentNode, Banner, StoreProduct } from "../../lib/types";
 
 // Unified tree node for recursive category browsing
 interface TreeNode {
@@ -69,6 +69,7 @@ function collectIds(node: TreeNode): Set<string> {
 }
 
 const EMPTY_SCOPE = new Set<string>();
+const EMPTY_PRODUCTS: StoreProduct[] = [];
 
 export default function CategoryScreen() {
   // brandId: opened already narrowed to a brand (See all on a store walk shelf)
@@ -212,39 +213,34 @@ export default function CategoryScreen() {
     />
   );
 
+  // The list stays mounted while products load, so the brand logo row above them keeps its scroll position
+  const renderEmpty = () => loading ? (
+    <View style={styles.loadingContainer}>
+      <Loader size="large" />
+    </View>
+  ) : (
+    <View style={styles.emptyContainer}>
+      <View style={styles.emptyIcon}>
+        <Ionicons name="search-outline" size={32} color="#94a3b8" />
+      </View>
+      <Text style={styles.emptyTitle}>{t.category.noProducts}</Text>
+      <Text style={styles.emptySubtitle}>
+        {hasActiveFilters
+          ? t.category.adjustFilters
+          : activeSub
+            ? t.category.differentSubcategory
+            : t.category.noneYet}
+      </Text>
+    </View>
+  );
+
   const renderProductGrid = (narrow: boolean) => {
-    if (loading) {
-      return (
-        <View style={styles.loadingContainer}>
-          <Loader size="large" />
-        </View>
-      );
-    }
-
-    if (products.length === 0) {
-      return (
-        <View style={styles.emptyContainer}>
-          <View style={styles.emptyIcon}>
-            <Ionicons name="search-outline" size={32} color="#94a3b8" />
-          </View>
-          <Text style={styles.emptyTitle}>{t.category.noProducts}</Text>
-          <Text style={styles.emptySubtitle}>
-            {hasActiveFilters
-              ? t.category.adjustFilters
-              : activeSub
-                ? t.category.differentSubcategory
-                : t.category.noneYet}
-          </Text>
-        </View>
-      );
-    }
-
     return (
       <ProductList
         keyboardDismissMode="on-drag"
         keyboardShouldPersistTaps="handled"
         ref={gridRef}
-        products={products}
+        products={loading ? EMPTY_PRODUCTS : products}
         layout="grid"
         sortBy={sortBy ?? undefined}
         cardWidth={narrow && contentWidth > 0 ? (contentWidth - 20 - GRID_GAP) / 2 : GRID_CARD_WIDTH}
@@ -257,6 +253,7 @@ export default function CategoryScreen() {
             />
           </>
         )}
+        ListEmptyComponent={renderEmpty()}
         onEndReached={loadMore}
         onEndReachedThreshold={0.6}
         ListFooterComponent={loadingMore ? <Loader style={styles.pageLoader} /> : null}
@@ -323,15 +320,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   loadingContainer: {
-    flex: 1,
-    justifyContent: "center",
+    paddingVertical: 48,
     alignItems: "center",
   },
   emptyContainer: {
-    flex: 1,
-    justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: 40,
+    paddingVertical: 48,
   },
   emptyIcon: {
     width: 64,
