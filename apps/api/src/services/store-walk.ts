@@ -1,4 +1,5 @@
 import type { StoreWalkDepartment, StoreWalkStop } from "@martly/shared/types";
+import { brandPopularitySql, storeRegion } from "./brand-popularity.js";
 import type { StoreWalkRouteInput } from "@martly/shared/schemas";
 import { Prisma, type PrismaClient } from "../../generated/prisma/client.js";
 import { recentStoreSales } from "./home/most-bought.js";
@@ -172,10 +173,11 @@ async function searchedIn(prisma: PrismaClient, storeId: string, { q, ...aisle }
 // The aisle's best sellers by 30-day units, then brand popularity and stock, each as its best-stocked size. Across the
 // whole aisle they're spread over its subcategories; within one subcategory or brand they're simply its best
 async function popularIn(prisma: PrismaClient, storeId: string, { categoryId, subcategoryId, brandId }: AisleFilter, skipProductIds: string[]) {
+  const region = await storeRegion(prisma, storeId);
   const candidates = await prisma.$queryRaw<{ id: string; subcategoryId: string }[]>`
     SELECT id, "subcategoryId" FROM (
       SELECT DISTINCT ON (p.id) sp.id, p.subcategory_id AS "subcategoryId", COALESCE(sales.qty, 0) AS units,
-        COALESCE(b.popularity, 0) AS popularity, sp.stock - sp.reserved_stock AS available
+        ${brandPopularitySql(region)} AS popularity, sp.stock - sp.reserved_stock AS available
       FROM store_products sp
       JOIN products p ON p.id = sp.product_id AND p.is_active AND p.image_url IS NOT NULL
       JOIN subcategories s ON s.id = p.subcategory_id AND s.category_id = ${categoryId}

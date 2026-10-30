@@ -37,6 +37,12 @@ function regionalBoost(regions: string[], region: string | null) {
   return regions[0] === region ? HOME_REGION_BOOST : REGIONAL_BOOST;
 }
 
+/** A brand's popularity in the region (its regional score when it has one), plus the boost for brands local to it */
+function brandScore(brand: NonNullable<Candidate["brand"]>, region: string | null) {
+  const popularity = (region ? brand.regionalPopularity[region] : undefined) ?? brand.popularity;
+  return popularity + regionalBoost(brand.regions, region);
+}
+
 function eligible(c: Candidate, ctx: Context) {
   if (!c.brand) return true;
   if (ctx.rules.includedBrandIds.includes(c.brand.id)) return true;
@@ -57,7 +63,7 @@ function groupByBrand(candidates: Candidate[], ctx: Context): BrandGroup[] {
     groups.set(key, group);
   }
   for (const g of groups.values()) {
-    const base = g.id === null ? LOOSE_SCORE : g.members[0].brand!.popularity + regionalBoost(g.members[0].brand!.regions, ctx.region);
+    const base = g.id === null ? LOOSE_SCORE : brandScore(g.members[0].brand!, ctx.region);
     const sold = g.members.reduce((n, m) => n + m.sold, 0);
     const forced = g.id && ctx.rules.includedBrandIds.includes(g.id) ? FORCED : 0;
     g.score = base + Math.min(SALES_BOOST_CAP, sold / 10) + forced;

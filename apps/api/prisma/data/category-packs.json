@@ -1,0 +1,206 @@
+{
+  "rice": [
+    "d53170a5-28f9-404e-8766-d47bc19a1009",
+    "d475d5c0-aeae-4510-a0fd-b2aab118568d"
+  ],
+  "atta-flours": [
+    "6cbb2c43-2d23-42ec-b572-3d714dd68d18",
+    "7ff9e340-4c9e-41cf-b026-6c96a6d1809c"
+  ],
+  "dal-pulses": [
+    "9d8f898d-e150-4022-8ca2-94a60d0ce257",
+    "ceb653cf-12fd-4727-aaed-4de5f895803e"
+  ],
+  "edible-oils": [
+    "e2b6f9f0-d7bd-4ae5-a3e5-4b48fc1e5297",
+    "f825ad08-cd0d-4bc8-9790-3bb703510314"
+  ],
+  "spices-masala": [
+    "106c41ca-2139-4e05-819c-62a565b40a11",
+    "2842cb2e-868d-4e87-a78d-1398bc71e616"
+  ],
+  "salt-sugar": [
+    "42ddab4a-b9db-43c9-be5b-74dd7f750ca4",
+    "2c03aa6b-2fdd-4944-9b50-ca26a039bb58"
+  ],
+  "ghee": [
+    "0a11a0cf-e2c1-4fa6-92c1-46c977c6b692",
+    "cd5688c8-8ac4-4b08-9bac-671aaf59abd5"
+  ],
+  "dry-fruits-nuts": [
+    "70cf2498-a376-4497-8448-79a07fe374eb",
+    "d58a5399-254e-4e1c-8a58-eacd61cb2ac3"
+  ],
+  "biscuits-cookies": [
+    "f01d18a8-fe66-4749-8ec1-678bbe06fea2",
+    "b5d8187e-1ddd-421d-9e33-d3da7354a095"
+  ],
+  "namkeen-savoury-snacks": [
+    "bbd2f37f-7839-4674-ad86-efa56e5c03f0",
+    "cfc8375e-46b0-43f2-9599-5c5e7cab66a8"
+  ],
+  "chips-crisps": [
+    "67d3750c-2ec7-4d3f-91ab-342767843a41",
+    "61c472eb-317c-4554-a65e-2c9df4861749"
+  ],
+  "chocolates-confectionery": [
+    "7549dc0e-858e-47c6-add5-2d189c51f61c",
+    "6d35b7bc-c45e-4bdf-95f8-f718e8ed1d07"
+  ],
+  "instant-noodles-pasta": [
+    "60ac19f0-8a16-45ea-be84-00b3a5d9aa02",
+    "8c006b58-9bdc-4e06-b1b3-26682662c604"
+  ],
+  "breakfast-cereals-muesli": [
+    "9b98a645-b39a-4d30-88b0-f9d3696fa600",
+    "ee23b9e0-dfed-4db3-b93c-cb2e5d605f6b"
+  ],
+  "sweets-mithai": [
+    "8ac2a246-ae26-4bed-9ec0-6d278a01a206",
+    "4a43914a-a8be-4ddb-9358-49d1390b0905"
+  ],
+  "ready-to-eat-cook": [
+    "58e7ada4-479f-4a62-9626-0b58dbc950f8",
+    "c952a3c6-98c7-41b3-93a1-e9d17e8d50d8"
+  ],
+  "detergent": [
+    "96744100-68d6-4ad7-b405-96d8130bd9e4",
+    "35f1a3f8-a6e5-482a-974e-d9a6a1d2fe1c"
+  ],
+  "dishwash": [
+    "5facd06b-1e38-4774-969f-0d21b8ed1e77",
+    "9bc74374-9b43-4cd0-832d-1e1d780d92df"
+  ],
+  "floor-surface-cleaners": [
+    "73e49975-c087-4f50-9622-d63589e94585",
+    "6ed237ac-b866-4f75-9863-ddc9aeb9f851"
+  ],
+  "air-fresheners-repellents": [
+    "5c674357-5b4f-4740-a0e3-f9f129640902",
+    "e184d97e-f935-4802-aac9-e4dfcc7c3294"
+  ],
+  "milk": [
+    "7a1cf423-6276-41a6-bd90-0a9c23dec555",
+    "5d350138-17c6-4896-b19b-204c3c766352"
+  ],
+  "curd-yogurt": [
+    "089e9341-313d-40e9-9016-9a8fc1960a76",
+    "86829252-314f-4279-b1b1-9062b429293f"
+  ],
+  "paneer-tofu": [
+    "22353a20-b60d-477f-8fc5-524729e862ce",
+    "b9f5ddc9-0b1a-4883-a23e-ebbee0937c45"
+  ],
+  "butter": [
+    "0a655e31-7178-4360-87a5-ecf944232daf",
+    "d9318687-7734-4009-b8ef-4c9805d1f23e"
+  ],
+  "cheese": [
+    "6e5e92d2-fec6-4822-a0f2-f643ee87b79a",
+    "3517ed61-4171-4045-a370-84bc3798c4fa"
+  ],
+  "cream-dairy-whitener": [
+    "42948f9a-1558-4155-8485-9d463d067683",
+    "0cc748ba-3090-49b0-bfa4-1c0bc91488eb"
+  ],
+  "condensed-evaporated-milk": [
+    "cba292cc-1d40-465e-8045-283f4d5d5a7f",
+    "067b8d13-9ccc-4d39-b3ef-b4664e50172b"
+  ],
+  "tea": [
+    "5563b4a5-3512-4d69-9d49-a27da9110476",
+    "7684605d-9398-4f79-b4b8-184d111f0c7e"
+  ],
+  "coffee": [
+    "12caec2e-2958-4593-a9a0-f0562bfa93c3",
+    "aa4dfaa3-9f5f-4e10-bb37-324285b268da"
+  ],
+  "health-energy-drinks": [
+    "872bc303-62bb-4e9b-9973-2f87aa8c94a9",
+    "decbc2d2-ae06-495a-a2e3-a56d9c14c5b8"
+  ],
+  "soft-drinks-carbonated": [
+    "f72b4b58-f4ed-4b9a-97aa-1c2c67a5459e",
+    "4dfbb8b9-86f4-4b91-aefc-4ccf6acedb84"
+  ],
+  "juices-fruit-drinks": [
+    "83384067-e172-46f8-a739-bdaab22cbf7e",
+    "bb790455-eda2-41cb-9d83-99e59310ecb5"
+  ],
+  "water": [
+    "fc543417-5cb3-4a91-8967-10e5870c639c",
+    "a294052d-78fe-4ddb-bf73-02715072b3c3"
+  ],
+  "milk-drinks": [
+    "26152fca-8673-4440-a728-3b2eb1a6a92b",
+    "fabe8943-a85c-4319-b1ec-ac1c108c180f"
+  ],
+  "sherbet-traditional": [
+    "9d290656-9ec8-4003-a6df-365b2c8c46a9",
+    "212e6c29-368b-4d86-a525-4d40fc56c3df"
+  ],
+  "bread": [
+    "61f1c485-dd75-45b0-b0d6-ede990e0a54d",
+    "d30a3b9c-f0c1-4365-95e4-b84eec140068"
+  ],
+  "bakery-snacks": [
+    "39fac54f-4195-48d3-849a-6817ea14d639",
+    "3654ef78-537c-4bf0-bd4f-6cdfe8004f50"
+  ],
+  "rusk": [
+    "59259023-fb64-4ced-b310-f3c2df092fab",
+    "ad8aed64-81be-4dea-bed1-2fcb3a164dba"
+  ],
+  "cakes-pastries": [
+    "b8356f8b-0ddf-4bc0-9718-924a233028ce",
+    "8b1a99ec-98c6-44d2-9ea2-caab33614d40"
+  ],
+  "bath-body": [
+    "89e386a1-6208-4925-9d7d-a20e433bef65",
+    "537a422a-56ba-48cb-899b-ac9c73ccf827"
+  ],
+  "oral-care": [
+    "f187a7b4-c27b-416c-abab-ad1cb34d35c7",
+    "17ec2597-aa44-467f-bc6d-3df2dc5d9e0d"
+  ],
+  "hair-care": [
+    "5c32aa3f-8afd-4ec1-bd56-0443b2bdde3c",
+    "b7e120e8-6a5b-4661-a9e4-32347ebd1e2e"
+  ],
+  "skin-care": [
+    "1a398eef-eb7b-4ab4-89b2-f0f03f28a3cf",
+    "aba1dea7-07a1-4d66-a075-2ee854ce1221"
+  ],
+  "feminine-hygiene": [
+    "1eb3abdf-0489-4e3a-919f-9512e99fb616",
+    "9fbca695-d7b5-4fc5-8adb-16ec1f40e13d"
+  ],
+  "men-s-grooming": [
+    "a6106d1d-9033-4cac-a16f-cff50bc2cd3c",
+    "04a896a2-cebb-4f48-937f-34a7736445b4"
+  ],
+  "health-wellness": [
+    "c7efe34f-83e4-4d1e-8771-7d924c5ec6a7",
+    "aa13acd5-8417-4afa-8aca-67f590067394"
+  ],
+  "deodorants-fragrances": [
+    "ba8a2270-ed97-4d25-9371-2eba0e2075b6",
+    "8a6c9c04-1205-4ae5-8d7f-10ead3a9d397"
+  ],
+  "diapers-wipes": [
+    "adadf457-6657-420a-845b-22340654671f",
+    "13eb3ac6-8fbe-43cc-a51a-394132a38d76"
+  ],
+  "baby-food-formula": [
+    "b2c7d232-89c4-45c4-bd5c-f9a92d57b92a",
+    "bcdfd900-5c74-49b4-b38d-cc0a0d43c729"
+  ],
+  "baby-bath-skin": [
+    "91f4a78f-d9a5-42ea-a823-03d94d2df77d",
+    "196e6529-bd21-4909-bdb1-63c67c57e7fb"
+  ],
+  "baby-accessories": [
+    "5372dd5a-b3dd-4bfe-a5e5-55aff6044d50",
+    "d567efb5-bb34-4443-8a67-84fa95da73c3"
+  ]
+}

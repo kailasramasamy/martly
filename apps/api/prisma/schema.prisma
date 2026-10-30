@@ -794,15 +794,17 @@ model Department {
 }
 
 model Category {
-  id           String   @id @default(uuid())
-  name         String
-  slug         String   @unique
-  departmentId String   @map("department_id")
-  sortOrder    Int      @default(0) @map("sort_order")
-  imageUrl     String?  @map("image_url")
-  translations Json?    @map("translations")
-  createdAt    DateTime @default(now()) @map("created_at")
-  updatedAt    DateTime @updatedAt @map("updated_at")
+  id             String   @id @default(uuid())
+  name           String
+  slug           String   @unique
+  departmentId   String   @map("department_id")
+  sortOrder      Int      @default(0) @map("sort_order")
+  imageUrl       String?  @map("image_url")
+  /// Products whose packs the category tile shows, back pack first; a store shows the first two it stocks
+  packProductIds String[] @default([]) @map("pack_product_ids")
+  translations   Json?    @map("translations")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
 
   department    Department    @relation(fields: [departmentId], references: [id])
   subcategories Subcategory[]
@@ -857,15 +859,28 @@ model Brand {
   createdAt           DateTime @default(now()) @map("created_at")
   updatedAt           DateTime @updatedAt @map("updated_at")
 
-  organization Organization?   @relation(fields: [organizationId], references: [id], onDelete: Cascade)
-  products     Product[]
-  partners     User[]          @relation("BrandPartners")
-  adOrders     AdOrder[]
-  banners      Banner[]
-  campaigns    BrandCampaign[]
+  organization       Organization?           @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  products           Product[]
+  partners           User[]                  @relation("BrandPartners")
+  adOrders           AdOrder[]
+  banners            Banner[]
+  campaigns          BrandCampaign[]
+  regionalPopularity BrandRegionPopularity[]
 
   @@index([organizationId])
   @@map("brands")
+}
+
+/// A brand's popularity in one region (FESTIVAL_REGIONS code), overriding brands.popularity for stores there
+model BrandRegionPopularity {
+  brandId    String @map("brand_id")
+  region     String
+  popularity Int
+
+  brand Brand @relation(fields: [brandId], references: [id], onDelete: Cascade)
+
+  @@id([brandId, region])
+  @@map("brand_region_popularity")
 }
 
 model Product {
@@ -875,6 +890,10 @@ model Product {
   slug                String       @unique @default(dbgenerated())
   description         String?
   imageUrl            String?      @map("image_url")
+  /// The pack cut out on a transparent background, for category tiles; set by the pack-cutouts tool after review
+  packCutoutUrl       String?      @map("pack_cutout_url")
+  /// The cutout's width ÷ height, so tiles are laid out without loading it
+  packCutoutAspect    Float?       @map("pack_cutout_aspect")
   subcategoryId       String?      @map("subcategory_id")
   brandId             String?      @map("brand_id")
   isActive            Boolean      @default(true) @map("is_active")
@@ -1315,20 +1334,20 @@ model CouponRedemption {
 }
 
 model Review {
-  id         String       @id @default(uuid())
-  userId     String       @map("user_id")
-  productId  String       @map("product_id")
-  storeId    String?      @map("store_id")
-  orderId    String?      @map("order_id")
-  rating     Int
-  title      String?
-  comment    String?
-  isVerified Boolean      @default(false) @map("is_verified")
-  status     ReviewStatus @default(PENDING)
+  id                String       @id @default(uuid())
+  userId            String       @map("user_id")
+  productId         String       @map("product_id")
+  storeId           String?      @map("store_id")
+  orderId           String?      @map("order_id")
+  rating            Int
+  title             String?
+  comment           String?
+  isVerified        Boolean      @default(false) @map("is_verified")
+  status            ReviewStatus @default(PENDING)
   /// Set when its loyalty reward was paid, so approving it again doesn't pay twice
-  loyaltyRewardedAt DateTime? @map("loyalty_rewarded_at")
-  createdAt  DateTime     @default(now()) @map("created_at")
-  updatedAt  DateTime     @updatedAt @map("updated_at")
+  loyaltyRewardedAt DateTime?    @map("loyalty_rewarded_at")
+  createdAt         DateTime     @default(now()) @map("created_at")
+  updatedAt         DateTime     @updatedAt @map("updated_at")
 
   user    User          @relation(fields: [userId], references: [id])
   product Product       @relation(fields: [productId], references: [id])
@@ -3317,4 +3336,13 @@ model CreditGrant {
   @@index([orderId])
   @@index([status, expiresAt])
   @@map("credit_grants")
+}
+
+/// A category tile composed from two pack cutouts, cached by the cutouts and layout it was drawn from
+model PackTile {
+  key       String   @id
+  url       String
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("pack_tiles")
 }

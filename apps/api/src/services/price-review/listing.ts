@@ -1,6 +1,7 @@
 import { Prisma, type PrismaClient } from "../../../generated/prisma/client.js";
 import { UNBRANDED, type PriceReviewGroupsQuery, type PriceReviewItemsQuery } from "@martly/shared/schemas";
 import type { PriceReviewCounts, PriceReviewGroup, PriceReviewItem } from "@martly/shared/types";
+import { brandPopularitySql, storeRegion } from "../brand-popularity.js";
 import { IN_RANGE, LISTINGS, soldCte } from "../listing-sql.js";
 import { EFFECTIVE_MRP, listingWhere } from "./scope.js";
 
@@ -9,10 +10,10 @@ const SUSPICIOUS_SHARE = 0.5;
 
 type Counted<T> = T & { totalCount: number };
 
-const GROUP_KEYS = {
-  brand: { id: Prisma.sql`COALESCE(b.id, ${UNBRANDED})`, name: Prisma.sql`COALESCE(b.name, 'Unbranded')`, image: Prisma.sql`b.image_url`, rank: Prisma.sql`, COALESCE(MAX(b.popularity), 0) DESC`, only: Prisma.empty },
+const groupKeys = (region: string | null) => ({
+  brand: { id: Prisma.sql`COALESCE(b.id, ${UNBRANDED})`, name: Prisma.sql`COALESCE(b.name, 'Unbranded')`, image: Prisma.sql`b.image_url`, rank: Prisma.sql`, COALESCE(MAX(${brandPopularitySql(region)}), 0) DESC`, only: Prisma.empty },
   subcategory: { id: Prisma.sql`sc.id`, name: Prisma.sql`sc.name`, image: Prisma.sql`sc.image_url`, rank: Prisma.empty, only: Prisma.sql` AND sc.id IS NOT NULL` },
-} as const;
+});
 
 const HAVING = {
   pending: Prisma.sql`HAVING count(*) FILTER (WHERE sp.price_reviewed_at IS NULL) > 0`,
@@ -23,7 +24,7 @@ const HAVING = {
 
 /** Brands or aisles to settle in one go, those that sell most (then best-known brands) first */
 export async function priceReviewGroups(prisma: PrismaClient, query: PriceReviewGroupsQuery) {
-  const key = GROUP_KEYS[query.by];
+  const key = groupKeys(await storeRegion(prisma, query.storeId))[query.by];
   const status = query.status === "notCarried" ? "notCarried" : "all";
   const where = listingWhere(query.storeId, { status, departmentId: query.departmentId, q: query.q });
   const rows = await prisma.$queryRaw<Counted<PriceReviewGroup>[]>`
@@ -47,12 +48,12 @@ type ItemRow = Omit<PriceReviewItem, "mrp" | "masterMrp" | "price" | "offPct" | 
   mrp: Prisma.Decimal | null; masterMrp: Prisma.Decimal | null; price: Prisma.Decimal; reviewedAt: Date | null; totalCount: number;
 };
 
-const ITEM_ORDER = {
-  priority: Prisma.sql`COALESCE(sold.units, 0) DESC, COALESCE(b.popularity, 0) DESC, p.name, v.unit_value, sp.id`,
+const itemOrder = (region: string | null) => ({
+  priority: Prisma.sql`COALESCE(sold.units, 0) DESC, ${brandPopularitySql(region)} DESC, p.name, v.unit_value, sp.id`,
   name: Prisma.sql`p.name, v.unit_value, sp.id`,
   // Just-settled first, so a mistake is easy to find and reopen
   recent: Prisma.sql`sp.price_reviewed_at DESC, sp.id`,
-};
+});
 
 function toItem({ totalCount: _, ...r }: ItemRow): PriceReviewItem {
   const mrp = r.mrp === null ? null : Number(r.mrp);
@@ -82,7 +83,8 @@ async function queueCounts(prisma: PrismaClient, query: PriceReviewItemsQuery): 
 
 /** One page of listings to review, best sellers first; reviewed ones come newest first */
 export async function priceReviewItems(prisma: PrismaClient, query: PriceReviewItemsQuery) {
-  const order = query.status === "reviewed" && query.sort === "priority" ? ITEM_ORDER.recent : ITEM_ORDER[query.sort];
+  const orders = itemOrder(await storeRegion(prisma, query.storeId));
+  const order = query.status === "reviewed" && query.sort === "priority" ? orders.recent : orders[query.sort];
   const rowsQuery = prisma.$queryRaw<ItemRow[]>`
     WITH ${soldCte(query.storeId)}
     SELECT sp.id, sp.product_id AS "productId", p.name AS "productName", v.name AS "variantName",

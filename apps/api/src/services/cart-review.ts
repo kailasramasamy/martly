@@ -1,4 +1,5 @@
 import type { PrismaClient } from "../../generated/prisma/client.js";
+import { brandPopularitySql, storeRegion } from "./brand-popularity.js";
 import type { CartReviewInput } from "@martly/shared/schemas";
 import type { CouponOffer } from "@martly/shared/types";
 import { dueInStock } from "./reorder.js";
@@ -34,6 +35,7 @@ async function forgottenItems(prisma: PrismaClient, userId: string, storeId: str
 // In-stock items priced just over the gap: from the departments the shopper is buying in first, but never the cart's own
 // categories (a salt cart gets dal or spices, not more salt), then the store's best sellers and popular brands
 async function gapFillers(prisma: PrismaClient, storeId: string, gap: number, excludeProductIds: string[], cartCategoryIds: string[]) {
+  const region = await storeRegion(prisma, storeId);
   const ceiling = Math.max(gap * GAP_STRETCH, gap + GAP_MIN_SPREAD);
   const candidates = await prisma.$queryRaw<{ id: string }[]>`
     SELECT sp.id FROM store_products sp
@@ -50,7 +52,7 @@ async function gapFillers(prisma: PrismaClient, storeId: string, gap: number, ex
       AND sp.price >= ${gap} AND (sp.price <= ${ceiling} OR (sp.discount_type IS NOT NULL AND sp.price <= ${ceiling * 2}))
       AND sp.product_id <> ALL(${excludeProductIds}::text[])
       AND (sc.category_id IS NULL OR sc.category_id <> ALL(${cartCategoryIds}::text[]))
-    ORDER BY COALESCE(c.department_id IN (SELECT department_id FROM categories WHERE id = ANY(${cartCategoryIds}::text[])), false) DESC, COALESCE(s.units, 0) DESC, COALESCE(b.popularity, 0) DESC
+    ORDER BY COALESCE(c.department_id IN (SELECT department_id FROM categories WHERE id = ANY(${cartCategoryIds}::text[])), false) DESC, COALESCE(s.units, 0) DESC, ${brandPopularitySql(region)} DESC
     LIMIT ${GAP_CANDIDATES}`;
   const order = candidates.map((c) => c.id);
   const rows = await prisma.storeProduct.findMany({ where: { id: { in: order } }, include: storeProductInclude });

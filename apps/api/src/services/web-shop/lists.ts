@@ -2,6 +2,7 @@ import { BUY_GET_PAGE_SIZE, HOME_DEALS_PAGE_SIZE, MOST_BOUGHT_LIST } from "@mart
 import type { WebShopQuery } from "@martly/shared/schemas";
 import type { HomeTheme, PriceBandChip, WebBrandPage, WebBrandsPage, WebBrandTile, WebCollectionPage, WebListPage } from "@martly/shared/types";
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
+import { brandPopularitySql, storeRegion } from "../brand-popularity.js";
 import { storeBrandBoost } from "../brand-boost.js";
 import { rankedCollectionProductIds } from "../collection-products.js";
 import { campaignLook } from "../home/campaign-look.js";
@@ -122,9 +123,10 @@ export async function ownBrandPage(prisma: PrismaClient, ctx: ShopContext, q: We
 
 /** Every brand the store stocks: the shopper's brand directory at /brands */
 export async function brandsPage(prisma: PrismaClient, ctx: ShopContext): Promise<WebBrandsPage | null> {
+  const region = await storeRegion(prisma, ctx.store.id);
   const [rows, departments] = await Promise.all([
     prisma.$queryRaw<(WebBrandTile & { popularity: number })[]>`
-      SELECT b.name, b.slug, b.image_url AS "imageUrl", b.theme_color AS "themeColor", b.popularity,
+      SELECT b.name, b.slug, b.image_url AS "imageUrl", b.theme_color AS "themeColor", ${brandPopularitySql(region)} AS popularity,
         COUNT(DISTINCT p.id)::int AS "productCount",
         COALESCE(array_agg(DISTINCT d.slug) FILTER (WHERE d.slug IS NOT NULL), '{}') AS departments
       FROM store_products sp

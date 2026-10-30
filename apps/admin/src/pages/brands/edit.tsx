@@ -3,6 +3,7 @@ import { useGetIdentity } from "@refinedev/core";
 import { Form, Input, InputNumber, Card, Row, Col, ColorPicker } from "antd";
 import { TrademarkOutlined } from "@ant-design/icons";
 import { BrandLogoField } from "./logo-field";
+import { RegionalPopularityCard } from "./regional-popularity";
 import { sectionTitle } from "../../theme";
 import { ReadableSection } from "../../components/ReadableSection";
 
@@ -75,6 +76,11 @@ export const BrandEdit = () => {
                 </Form.Item>
               </Card>
             </Col>
+            {isPlatform && (
+              <Col xs={24} lg={12}>
+                <RegionalPopularityCard />
+              </Col>
+            )}
           </Row>
         </Form>
       </ReadableSection>

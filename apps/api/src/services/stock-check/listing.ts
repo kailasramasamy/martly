@@ -2,7 +2,8 @@ import { Prisma, type PrismaClient } from "../../../generated/prisma/client.js";
 import { UNBRANDED, type CarryState, type StockCheckBrandsQuery, type StockCheckProductsQuery, type StockCheckScope } from "@martly/shared/schemas";
 import type { StockCheckBrand, StockCheckProduct, StockCheckSize } from "@martly/shared/types";
 import { LISTINGS, likeTerm, soldCte } from "../listing-sql.js";
-import { COUNTS, SAMPLE_IMAGES, samples } from "./counts.js";
+import { brandPopularitySql, storeRegion } from "../brand-popularity.js";
+import { COUNTS, sampleImages, samples } from "./counts.js";
 
 const brandFilter = (brandId: string) => (brandId === UNBRANDED ? Prisma.sql`p.brand_id IS NULL` : Prisma.sql`p.brand_id = ${brandId}`);
 
@@ -25,16 +26,17 @@ type BrandRow = Omit<StockCheckBrand, "sampleImages"> & { sampleImages: string[]
 /** A department's brands with listings in one state (or all), those the store sells most (then best-known) first */
 export async function stockCheckBrands(prisma: PrismaClient, query: StockCheckBrandsQuery) {
   const search = query.q ? Prisma.sql` AND (b.name ILIKE ${likeTerm(query.q)} OR p.name ILIKE ${likeTerm(query.q)})` : Prisma.empty;
+  const region = await storeRegion(prisma, query.storeId);
   const having = query.status === "all" ? Prisma.empty : Prisma.sql`HAVING count(*) FILTER (WHERE ${STATE[query.status]}) > 0`;
   const rows = await prisma.$queryRaw<BrandRow[]>`
     WITH ${soldCte(query.storeId)}
     SELECT COALESCE(b.id, ${UNBRANDED}) AS "id", COALESCE(b.name, 'Unbranded') AS "name", b.image_url AS "imageUrl",
-      ${COUNTS}, ${SAMPLE_IMAGES}, count(*) OVER ()::int AS "totalCount"
+      ${COUNTS}, ${sampleImages(region)}, count(*) OVER ()::int AS "totalCount"
     FROM ${LISTINGS} LEFT JOIN sold ON sold.store_product_id = sp.id
     WHERE sp.store_id = ${query.storeId} AND c.department_id = ${query.departmentId}${search}
     GROUP BY 1, 2, 3
     ${having}
-    ORDER BY COALESCE(SUM(sold.units), 0) DESC, COALESCE(MAX(b.popularity), 0) DESC, 2
+    ORDER BY COALESCE(SUM(sold.units), 0) DESC, COALESCE(MAX(${brandPopularitySql(region)}), 0) DESC, 2
     LIMIT ${query.pageSize} OFFSET ${(query.page - 1) * query.pageSize}`;
   const items = rows.map(({ totalCount: _, ...r }) => ({ ...r, sampleImages: samples(r.sampleImages) }));
   return { items, total: rows[0]?.totalCount ?? 0 };

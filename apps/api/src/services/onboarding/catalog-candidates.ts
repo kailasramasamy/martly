@@ -7,7 +7,7 @@ export interface Candidate {
   name: string;
   imageUrl: string | null;
   subcategoryId: string;
-  brand: { id: string; name: string; regions: string[]; popularity: number } | null;
+  brand: { id: string; name: string; regions: string[]; popularity: number; regionalPopularity: Record<string, number> } | null;
   /** Units sold across Martly in the last 90 days */
   sold: number;
   variants: CandidateVariant[];
@@ -22,6 +22,7 @@ interface CandidateRow {
   brand_name: string | null;
   regions: string[] | null;
   popularity: number | null;
+  regional_popularity: Record<string, number> | null;
   sold: number;
   variants: { id: string; name: string; mrp: string | null }[];
 }
@@ -30,6 +31,7 @@ interface CandidateRow {
 export async function loadCandidates(prisma: PrismaClient): Promise<Candidate[]> {
   const rows = await prisma.$queryRaw<CandidateRow[]>`
     SELECT p.id, p.name, p.image_url, p.subcategory_id, b.id AS brand_id, b.name AS brand_name, b.regions, b.popularity,
+           (SELECT jsonb_object_agg(rp.region, rp.popularity) FROM brand_region_popularity rp WHERE rp.brand_id = b.id) AS regional_popularity,
            COALESCE(s.qty, 0)::int AS sold,
            json_agg(json_build_object('id', v.id, 'name', v.name, 'mrp', v.mrp) ORDER BY v.mrp NULLS LAST, v.name) AS variants
     FROM products p
@@ -49,7 +51,7 @@ export async function loadCandidates(prisma: PrismaClient): Promise<Candidate[]>
     name: r.name,
     imageUrl: r.image_url,
     subcategoryId: r.subcategory_id,
-    brand: r.brand_id ? { id: r.brand_id, name: r.brand_name!, regions: r.regions ?? [], popularity: r.popularity ?? 0 } : null,
+    brand: r.brand_id ? { id: r.brand_id, name: r.brand_name!, regions: r.regions ?? [], popularity: r.popularity ?? 0, regionalPopularity: r.regional_popularity ?? {} } : null,
     sold: r.sold,
     variants: r.variants.map((v) => ({ id: v.id, name: v.name, mrp: v.mrp === null ? null : Number(v.mrp) })),
   }));

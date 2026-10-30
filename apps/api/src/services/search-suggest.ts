@@ -1,4 +1,5 @@
 import { Prisma, type PrismaClient } from "../../generated/prisma/client.js";
+import { brandPopularitySql, storeRegion } from "./brand-popularity.js";
 import { brandNamesCte, nameForQuery, normalizeQuery } from "./search.js";
 import { completeQuery, correctQuery } from "./spell.js";
 import { liveSponsored, type SponsoredAd } from "./sponsored.js";
@@ -78,6 +79,7 @@ interface BrandRow { brand: string; imageUrl: string | null; subcategories: stri
 // Best-known brands with products matching every word (or in an aisle the term names), plus each brand's
 // subcategories for those products
 async function brandRows(prisma: PrismaClient, storeId: string, term: string, tokens: string[]) {
+  const region = await storeRegion(prisma, storeId);
   return prisma.$queryRaw<BrandRow[]>`
     WITH ${brandNamesCte}
     SELECT regexp_replace(b.name, ${MAKER_SUFFIX}, '', 'g') AS brand,
@@ -90,7 +92,7 @@ async function brandRows(prisma: PrismaClient, storeId: string, term: string, to
       AND (${allWords(nameForQuery(term), tokens, true)} OR ${term} = ANY(s.search_terms))
     GROUP BY b.name
     -- Popularity weighted by how much of the brand matches: a leader with one stray hit ("Cadbury chips") stays out
-    ORDER BY MAX(b.popularity) * ln(1 + COUNT(*)) DESC
+    ORDER BY MAX(${brandPopularitySql(region)}) * ln(1 + COUNT(*)) DESC
     LIMIT ${BRAND_LIMIT}`;
 }
 

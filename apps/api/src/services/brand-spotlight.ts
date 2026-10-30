@@ -1,5 +1,6 @@
 import type { BrandSpotlight } from "@martly/shared/types";
 import type { PrismaClient } from "../../generated/prisma/client.js";
+import { regionOf } from "./onboarding/create.js";
 import { storeBanners } from "./marketing/banner-feed.js";
 import { istDateKey } from "./ist-day.js";
 
@@ -15,7 +16,7 @@ const stockedAt = (storeId: string) => ({ products: { some: { isActive: true, st
  */
 export async function brandSpotlight(prisma: PrismaClient, storeId: string): Promise<BrandSpotlight | null> {
   const store = await prisma.store.findUnique({
-    where: { id: storeId }, select: { id: true, organizationId: true, organization: { select: { boostOwnBrands: true } } },
+    where: { id: storeId }, select: { id: true, state: true, organizationId: true, organization: { select: { boostOwnBrands: true } } },
   });
   if (!store) return null;
   const [paid] = await storeBanners(prisma, store, ["BRAND_TAB"]);
@@ -30,10 +31,14 @@ export async function brandSpotlight(prisma: PrismaClient, storeId: string): Pro
     });
     if (own) return { ...own, imageUrl: own.imageUrl! };
   }
-  const pool = await prisma.brand.findMany({
+  const region = regionOf(store.state) ?? "";
+  const brands = await prisma.brand.findMany({
     where: { themeColor: { not: null }, imageUrl: { not: null }, ...stockedAt(storeId) },
-    orderBy: [{ popularity: "desc" }, { name: "asc" }], take: SPOTLIGHT_POOL, select: { id: true, name: true, imageUrl: true },
+    orderBy: { name: "asc" },
+    select: { id: true, name: true, imageUrl: true, popularity: true, regionalPopularity: { where: { region }, select: { popularity: true } } },
   });
+  const score = (b: (typeof brands)[number]) => b.regionalPopularity[0]?.popularity ?? b.popularity;
+  const pool = brands.sort((a, b) => score(b) - score(a)).slice(0, SPOTLIGHT_POOL).map(({ id, name, imageUrl }) => ({ id, name, imageUrl }));
   if (!pool.length) return null;
   const day = Math.floor(new Date(istDateKey(new Date())).getTime() / 86_400_000);
   const pick = pool[day % pool.length];

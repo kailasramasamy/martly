@@ -2,6 +2,7 @@ import { Prisma, type PrismaClient } from "../../generated/prisma/index.js";
 import Anthropic from "@anthropic-ai/sdk";
 import { correctQuery } from "./spell.js";
 import { featuredPairs, hasBoost, storeBrandBoost, type BrandBoost } from "./brand-boost.js";
+import { brandPopularitySql, storeRegion } from "./brand-popularity.js";
 import { mapLimit } from "./map-limit.js";
 import { lifetimeSales, salesTable } from "./product-sales.js";
 import { withoutStoreBrand } from "./store-brand-names.js";
@@ -50,6 +51,8 @@ interface SearchScope {
   aisle?: AisleScope;
   /** What the store promotes: own brands and unbranded staples (OWN_POPULARITY), featured brands (FEATURED_POPULARITY) */
   boost?: BrandBoost;
+  /** The store's region, whose brand scores rank it */
+  region?: string | null;
 }
 
 export type AisleScope = { categoryId: string; subcategoryId?: string; brandId?: string };
@@ -124,7 +127,8 @@ export function searchProductsForAdmin(prisma: PrismaClient, scope: { storeId?: 
   return runSearch(prisma, { storeId: scope.storeId, listedOnly: false }, query, { semantic: false, limit: MAX_ADMIN_RESULTS });
 }
 
-async function runSearch(prisma: PrismaClient, scope: SearchScope, query: string, opts: SearchOptions): Promise<SearchResult> {
+async function runSearch(prisma: PrismaClient, storeScope: SearchScope, query: string, opts: SearchOptions): Promise<SearchResult> {
+  const scope = { ...storeScope, region: storeScope.storeId ? await storeRegion(prisma, storeScope.storeId) : null };
   const { minResults = 3, exact = false, semantic = false, limit = MAX_KEYWORD_RESULTS } = opts;
   const q = normalizeQuery(query);
   if (!q) return { productIds: [], meta: { strategy: "keyword" } };
@@ -201,14 +205,14 @@ export const nameForQuery = (q: string) => Prisma.sql`CASE
 END`;
 
 // Unbranded staples take their turns together, like one store brand; a featured brand is lifted only in its category
-function popularity({ boost }: SearchScope) {
-  if (!boost || !hasBoost(boost)) return Prisma.sql`COALESCE(b.popularity, 0)`;
+function popularity({ boost, region = null }: SearchScope) {
+  if (!boost || !hasBoost(boost)) return brandPopularitySql(region);
   const featured = featuredPairs(boost);
   return Prisma.sql`CASE
       WHEN p.brand_id = ANY(${boost.ownBrandIds}::text[])
         OR (p.brand_id IS NULL AND p.subcategory_id = ANY(${boost.stapleSubcategoryIds}::text[])) THEN ${OWN_POPULARITY}
       WHEN (p.brand_id, p.subcategory_id) IN (SELECT * FROM unnest(${featured.brandIds}::text[], ${featured.subcategoryIds}::text[])) THEN ${FEATURED_POPULARITY}
-      ELSE COALESCE(b.popularity, 0) END`;
+      ELSE ${brandPopularitySql(region)} END`;
 }
 
 // "rin soap": the query names the product's brand, and each of its other words starts a word of the product's

@@ -1,5 +1,6 @@
 import { parseHomeSectionConfig } from "@martly/shared/schemas";
 import type { CategoryDirectorySection } from "@martly/shared/types";
+import { packTileImages } from "../../pack-tiles/index.js";
 import { sectionBase, type ResolveContext, type SectionResolver } from "../types.js";
 
 type Names = CategoryDirectorySection["groups"][number]["translations"];
@@ -24,9 +25,13 @@ export async function directoryGroups(ctx: ResolveContext, departmentIds: string
   });
   // A picked list keeps the admin's order
   if (departmentIds.length > 0) departments.sort((a, b) => departmentIds.indexOf(a.id) - departmentIds.indexOf(b.id));
+  // Two of the store's own packs where the category has them, else the category's art
+  const packTiles = await packTileImages(ctx.prisma, ctx.store.id, departments.flatMap((d) => d.categories.map((c) => c.id)));
   return departments.filter((d) => d.categories.length > 0).map((d) => ({
     departmentId: d.id, name: d.name, translations: d.translations as Names,
-    tiles: d.categories.map((c) => ({ categoryId: c.id, name: c.name, translations: c.translations as Names, imageUrl: c.imageUrl })),
+    tiles: d.categories.map((c) => ({
+      categoryId: c.id, name: c.name, translations: c.translations as Names, imageUrl: packTiles.get(c.id) ?? c.imageUrl,
+    })),
   }));
 }
 

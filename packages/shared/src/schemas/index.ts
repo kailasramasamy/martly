@@ -222,6 +222,11 @@ export const updateBrandSchema = z.object({
   themeColor: z.string().regex(/^#[0-9a-fA-F]{6}$/).nullish(),
   themeColorSecondary: z.string().regex(/^#[0-9a-fA-F]{6}$/).nullish(),
   popularity: z.number().int().min(0).max(100).optional(),
+  /** Replaces the brand's regional scores; a region left out uses the national popularity */
+  regionalPopularity: z.array(z.object({
+    region: z.enum(Object.keys(FESTIVAL_REGIONS).filter((r) => r !== "ALL") as [Exclude<keyof typeof FESTIVAL_REGIONS, "ALL">]),
+    popularity: z.number().int().min(0).max(100),
+  })).refine((rows) => new Set(rows.map((r) => r.region)).size === rows.length, "Each region once").optional(),
 });
 export type UpdateBrandInput = z.infer<typeof updateBrandSchema>;
 

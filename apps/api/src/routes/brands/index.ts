@@ -176,6 +176,7 @@ export async function brandRoutes(app: FastifyInstance) {
     }
     const brand = await app.prisma.brand.findUnique({
       where: { id: request.params.id },
+      include: { regionalPopularity: { select: { region: true, popularity: true }, orderBy: { region: "asc" } } },
     });
     if (!brand) return reply.notFound("Brand not found");
 
@@ -235,15 +236,20 @@ export async function brandRoutes(app: FastifyInstance) {
     "/:id",
     { preHandler: [authenticate, requirePermission(Permission.CATALOG_BRANDS)] },
     async (request, reply) => {
-      const { popularity, ...body } = updateBrandSchema.parse(request.body);
+      const { popularity, regionalPopularity, ...body } = updateBrandSchema.parse(request.body);
       const existing = await app.prisma.brand.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Brand not found");
       const denied = ownershipDenial(request.user, existing);
       if (denied) return reply.forbidden(denied);
 
+      const isPlatform = request.user.role === "SUPER_ADMIN";
       const brand = await app.prisma.brand.update({
         where: { id: request.params.id },
-        data: { ...body, popularity: request.user.role === "SUPER_ADMIN" ? popularity : undefined },
+        data: {
+          ...body,
+          popularity: isPlatform ? popularity : undefined,
+          regionalPopularity: isPlatform && regionalPopularity ? { deleteMany: {}, create: regionalPopularity } : undefined,
+        },
       });
 
       const response: ApiResponse<typeof brand> = { success: true, data: brand };
