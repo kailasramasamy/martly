@@ -180,16 +180,17 @@ async function searchedIn(prisma: PrismaClient, storeId: string, { q, brandId, .
   return decorateStoreProducts(prisma, picked);
 }
 
-// The store's own brand's best first, then the aisle's best sellers by 30-day units, brand popularity and stock, each as
-// its best-stocked size. Across the whole aisle they're spread over its subcategories; within one subcategory or brand
-// they're simply its best
+// The store's own brand's best first, then the aisle's packs by brand popularity in the store's region, then 30-day units
+// and stock, each as its best-stocked size. Popularity leads because a store's few early orders would otherwise put
+// whatever sold once ahead of the brands its shoppers know. Across the whole aisle they're spread over its
+// subcategories; within one subcategory or brand they're simply its best
 async function popularIn(
   prisma: PrismaClient, storeId: string, { categoryId, subcategoryId, brandId }: AisleFilter, boost: BrandBoost, skipProductIds: string[],
 ) {
   const region = await storeRegion(prisma, storeId);
   const candidates = await prisma.$queryRaw<{ id: string; subcategoryId: string; lead: boolean }[]>`
     SELECT id, "subcategoryId", lead FROM (
-    SELECT *, own AND ROW_NUMBER() OVER (PARTITION BY own ORDER BY units DESC, popularity DESC, available DESC, id) <= ${OWN_LEAD} AS lead
+    SELECT *, own AND ROW_NUMBER() OVER (PARTITION BY own ORDER BY popularity DESC, units DESC, available DESC, id) <= ${OWN_LEAD} AS lead
     FROM (
       SELECT DISTINCT ON (p.id) sp.id, p.subcategory_id AS "subcategoryId", ${ownProductSql(boost)} AS own, COALESCE(sales.qty, 0) AS units,
         ${brandPopularitySql(region)} AS popularity, sp.stock - sp.reserved_stock AS available
@@ -205,7 +206,7 @@ async function popularIn(
       ORDER BY p.id, sp.stock - sp.reserved_stock DESC
     ) best
     ) ranked
-    ORDER BY lead DESC, units DESC, popularity DESC, available DESC, id
+    ORDER BY lead DESC, popularity DESC, units DESC, available DESC, id
     LIMIT ${POPULAR_CANDIDATES}`;
   const narrowed = !!(subcategoryId || brandId);
   const lead = candidates.filter((c) => c.lead);
@@ -248,8 +249,9 @@ async function endcapDeals(prisma: PrismaClient, storeId: string, departmentId: 
 const BRAND_LIMIT = 20;
 
 // The brands on the aisle's shelves (or one subcategory's), for the brand filter: the store's own brand first (its
-// brands and the staples it packs, under its logo), then the others best sellers first
+// brands and the staples it packs, under its logo), then the others by popularity in the store's region and sales
 async function stockedBrands(prisma: PrismaClient, storeId: string, { categoryId, subcategoryId }: AisleFilter, boost: BrandBoost) {
+  const region = await storeRegion(prisma, storeId);
   const stocked = Prisma.sql`
     SELECT DISTINCT p.id, p.brand_id, ${ownProductSql(boost)} AS own FROM store_products sp
     JOIN products p ON p.id = sp.product_id AND p.is_active
@@ -265,7 +267,7 @@ async function stockedBrands(prisma: PrismaClient, storeId: string, { categoryId
       LEFT JOIN (${recentStoreSales(storeId)}) sales ON sales.product_id = stocked.id
       WHERE NOT stocked.own
       GROUP BY b.id
-      ORDER BY COALESCE(SUM(sales.qty), 0) DESC, COUNT(*) DESC, b.name
+      ORDER BY ${brandPopularitySql(region)} DESC, COALESCE(SUM(sales.qty), 0) DESC, COUNT(*) DESC, b.name
       LIMIT ${BRAND_LIMIT}`,
     ownBrand(prisma, storeId),
   ]);

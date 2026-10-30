@@ -27,7 +27,9 @@ items, then the aisle's best sellers, and "Next aisle" moves on. It's the first 
      `own-<storeId>`), then the brands on these shelves (the picked subcategory's), best sellers first. One tap shows
      only that brand (15 best sellers), a second tap clears it; picking a subcategory clears the brand.
    - "Popular in this aisle" shows five shelves (15 products). The store's own brand leads with its best 6 (two
-     shelves at most, so the aisle's other brands still show), then the best sellers spread over the subcategories.
+     shelves at most, so the aisle's other brands still show), then the rest by brand popularity in the
+     store's region (30-day units and stock break ties, so a new store's few orders don't outrank known brands),
+     spread over the subcategories. Brand chips after the store's own follow the same popularity.
    - **Search the shelves:** the magnifier on the "Popular in this aisle" row (or the picked subcategory's name) opens
      a field in that row, "Search in ‹aisle · brand›". Typing pauses for 300 ms, then the shelves show only matches
      within what's on show: the aisle, the picked subcategory and the picked brand. Picking a subcategory keeps the
