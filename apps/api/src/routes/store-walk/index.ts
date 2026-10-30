@@ -9,7 +9,8 @@ import { walkAisle, walkRoute } from "../../services/store-walk.js";
 const storeParams = z.object({ storeId: z.string().uuid() });
 const aisleParams = storeParams.extend({ categoryId: z.string().uuid() });
 const aisleQuery = z.object({
-  subcategoryId: z.string().uuid().optional(), brandId: z.string().uuid().optional(), q: z.string().trim().max(80).optional(),
+  // A brand's id, or the store's own brand (own-<storeId>)
+  subcategoryId: z.string().uuid().optional(), brandId: z.string().regex(/^(own-)?[0-9a-f-]{36}$/i).optional(), q: z.string().trim().max(80).optional(),
 });
 
 export async function storeWalkRoutes(app: FastifyInstance) {

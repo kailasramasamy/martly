@@ -22,16 +22,19 @@ items, then the aisle's best sellers, and "Next aisle" moves on. It's the first 
    (`assets/images/store-walk/aisle-wall.webp`, generated with gpt-image-2.5-flare at medium quality and bundled in the app).
    The previous and next aisles hang grey at the edges; tap one, or swipe the wall, to move.
    - "Running low?" shows the due items as a product rail.
-   - Subcategory tiles follow ("All" first). A tile loads that subcategory's 9 best sellers in place.
-   - Brand chips follow: the brands on these shelves (the picked subcategory's), best sellers first. One tap shows only
-     that brand (9 best sellers), a second tap clears it; picking a subcategory clears the brand.
+   - Subcategory tiles follow ("All" first). A tile loads that subcategory's 15 best sellers in place.
+   - Brand chips follow: the store's own brand first (its brands and the staples it packs, under its logo, id
+     `own-<storeId>`), then the brands on these shelves (the picked subcategory's), best sellers first. One tap shows
+     only that brand (15 best sellers), a second tap clears it; picking a subcategory clears the brand.
+   - "Popular in this aisle" shows five shelves (15 products). The store's own brand leads with its best 6 (two
+     shelves at most, so the aisle's other brands still show), then the best sellers spread over the subcategories.
    - **Search the shelves:** the magnifier on the "Popular in this aisle" row (or the picked subcategory's name) opens
      a field in that row, "Search in ‹aisle · brand›". Typing pauses for 300 ms, then the shelves show only matches
      within what's on show: the aisle, the picked subcategory and the picked brand. Picking a subcategory keeps the
      words. No matches offers "Search the whole store"; ✕ clears it and the best sellers come back.
    - The products stand on wooden shelves, three to a shelf, in white shelf units (the catalog photos have white
-     backgrounds). Each pack has a round + on its corner (a − n + pill once added; several sizes open the size
-     picker). Its price, MRP, deal, name and size are on a paper sticker taped to the shelf's front edge, each a little
+     backgrounds, multiplied onto the wood; a store's pack render, cut tight, stands as it is). Each pack has a round +
+     resting on the plank under it, clear of the photo (a − n + pill once added; several sizes open the size picker). Its price, MRP, deal, name and size are on a paper sticker taped to the shelf's front edge, each a little
      askew. Tapping a pack opens its product page.
    - "See all N" opens the category, or the picked subcategory.
    - Prices on the stickers are handwritten (Kalam). The floor is a pale tiled pattern.

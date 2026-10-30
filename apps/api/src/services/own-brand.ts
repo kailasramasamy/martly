@@ -1,4 +1,4 @@
-import type { Prisma, PrismaClient } from "../../generated/prisma/client.js";
+import { Prisma, type PrismaClient } from "../../generated/prisma/client.js";
 import { ownBrandId, storeBrandName } from "@martly/shared/constants";
 import type { DirectoryDepartment } from "@martly/shared/types";
 import { brandPickOf, storeBrandBoost, type BrandBoost } from "./brand-boost.js";
@@ -10,6 +10,11 @@ const OWN_BRAND_THEME = "#0f766e";
 /** What a store sells as "Our brand": its organisation's brands plus its unbranded staples */
 export function ownProductWhere(boost: BrandBoost): Prisma.ProductWhereInput {
   return { OR: [{ brandId: { in: boost.ownBrandIds } }, { brandId: null, subcategoryId: { in: boost.stapleSubcategoryIds } }] };
+}
+
+/** The same "Our brand" test in raw SQL, over a products table aliased `p` */
+export function ownProductSql(boost: BrandBoost) {
+  return Prisma.sql`(p.brand_id = ANY(${boost.ownBrandIds}::text[]) OR (p.brand_id IS NULL AND p.subcategory_id = ANY(${boost.stapleSubcategoryIds}::text[])))`;
 }
 
 /** The store as a brand: its brand name and logo, for the brand store screen */

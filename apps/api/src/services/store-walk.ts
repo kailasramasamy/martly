@@ -1,19 +1,23 @@
 import type { StoreWalkDepartment, StoreWalkStop } from "@martly/shared/types";
+import { ownBrandId } from "@martly/shared/constants";
+import { storeBrandBoost, type BrandBoost } from "./brand-boost.js";
 import { brandPopularitySql, storeRegion } from "./brand-popularity.js";
 import type { StoreWalkRouteInput } from "@martly/shared/schemas";
 import { Prisma, type PrismaClient } from "../../generated/prisma/client.js";
 import { recentStoreSales } from "./home/most-bought.js";
+import { ownBrand, ownProductSql } from "./own-brand.js";
 import { dueInStock } from "./reorder.js";
 import { searchAisleProducts } from "./search.js";
 import { decorateStoreProducts, storeProductInclude } from "./store-product-view.js";
 
 const DUE_LIMIT = 8;
-const POPULAR_LIMIT = 8;
-// Three full rows when the shopper picks one subcategory
-const SUBCATEGORY_LIMIT = 9;
+// Five full shelves of three, across the aisle or once the shopper picks a subcategory or brand
+const POPULAR_LIMIT = 15;
 // Candidates read before the per-aisle spread, so a dal aisle isn't eight toor dals
 const POPULAR_CANDIDATES = 40;
 const POPULAR_PER_SUBCATEGORY = 2;
+// The store's own brand leads the aisle, two shelves at most so its other brands still show
+const OWN_LEAD = 6;
 // A search on the shelves: eight full rows of matches, read from the ranked list's head
 const SEARCH_LIMIT = 24;
 const SEARCH_CANDIDATES = 60;
@@ -153,9 +157,15 @@ export async function walkRoute(prisma: PrismaClient, storeId: string, userId: s
 
 type AisleFilter = { categoryId: string; subcategoryId?: string; brandId?: string; q?: string };
 
+// One brand's products, or the store's own ("Our brand": its brands and the staples it packs)
+function brandSql(storeId: string, brandId: string | undefined, boost: BrandBoost) {
+  if (!brandId) return Prisma.empty;
+  return Prisma.sql`AND ${brandId === ownBrandId(storeId) ? ownProductSql(boost) : Prisma.sql`p.brand_id = ${brandId}`}`;
+}
+
 // What a search finds on the shelves on show, in the store search's ranking, each product as its best-stocked size
-async function searchedIn(prisma: PrismaClient, storeId: string, { q, ...aisle }: AisleFilter) {
-  const ranked = (await searchAisleProducts(prisma, storeId, aisle, q!)).productIds.slice(0, SEARCH_CANDIDATES);
+async function searchedIn(prisma: PrismaClient, storeId: string, { q, brandId, ...aisle }: AisleFilter, boost: BrandBoost) {
+  const ranked = (await searchAisleProducts(prisma, storeId, { ...aisle, brand: brandSql(storeId, brandId, boost) }, q!)).productIds.slice(0, SEARCH_CANDIDATES);
   const listings = await prisma.storeProduct.findMany({
     where: { storeId, isActive: true, productId: { in: ranked }, product: { isActive: true } },
     include: storeProductInclude,
@@ -170,37 +180,44 @@ async function searchedIn(prisma: PrismaClient, storeId: string, { q, ...aisle }
   return decorateStoreProducts(prisma, picked);
 }
 
-// The aisle's best sellers by 30-day units, then brand popularity and stock, each as its best-stocked size. Across the
-// whole aisle they're spread over its subcategories; within one subcategory or brand they're simply its best
-async function popularIn(prisma: PrismaClient, storeId: string, { categoryId, subcategoryId, brandId }: AisleFilter, skipProductIds: string[]) {
+// The store's own brand's best first, then the aisle's best sellers by 30-day units, brand popularity and stock, each as
+// its best-stocked size. Across the whole aisle they're spread over its subcategories; within one subcategory or brand
+// they're simply its best
+async function popularIn(
+  prisma: PrismaClient, storeId: string, { categoryId, subcategoryId, brandId }: AisleFilter, boost: BrandBoost, skipProductIds: string[],
+) {
   const region = await storeRegion(prisma, storeId);
-  const candidates = await prisma.$queryRaw<{ id: string; subcategoryId: string }[]>`
-    SELECT id, "subcategoryId" FROM (
-      SELECT DISTINCT ON (p.id) sp.id, p.subcategory_id AS "subcategoryId", COALESCE(sales.qty, 0) AS units,
+  const candidates = await prisma.$queryRaw<{ id: string; subcategoryId: string; lead: boolean }[]>`
+    SELECT id, "subcategoryId", lead FROM (
+    SELECT *, own AND ROW_NUMBER() OVER (PARTITION BY own ORDER BY units DESC, popularity DESC, available DESC, id) <= ${OWN_LEAD} AS lead
+    FROM (
+      SELECT DISTINCT ON (p.id) sp.id, p.subcategory_id AS "subcategoryId", ${ownProductSql(boost)} AS own, COALESCE(sales.qty, 0) AS units,
         ${brandPopularitySql(region)} AS popularity, sp.stock - sp.reserved_stock AS available
       FROM store_products sp
       JOIN products p ON p.id = sp.product_id AND p.is_active AND p.image_url IS NOT NULL
       JOIN subcategories s ON s.id = p.subcategory_id AND s.category_id = ${categoryId}
         ${subcategoryId ? Prisma.sql`AND s.id = ${subcategoryId}` : Prisma.empty}
-        ${brandId ? Prisma.sql`AND p.brand_id = ${brandId}` : Prisma.empty}
+        ${brandSql(storeId, brandId, boost)}
       LEFT JOIN brands b ON b.id = p.brand_id
       LEFT JOIN (${recentStoreSales(storeId)}) sales ON sales.product_id = p.id
       WHERE sp.store_id = ${storeId} AND sp.is_active AND sp.stock - sp.reserved_stock > 0
         AND p.id <> ALL(${skipProductIds}::text[])
       ORDER BY p.id, sp.stock - sp.reserved_stock DESC
     ) best
-    ORDER BY units DESC, popularity DESC, available DESC, id
+    ) ranked
+    ORDER BY lead DESC, units DESC, popularity DESC, available DESC, id
     LIMIT ${POPULAR_CANDIDATES}`;
   const narrowed = !!(subcategoryId || brandId);
-  const limit = narrowed ? SUBCATEGORY_LIMIT : POPULAR_LIMIT;
+  const lead = candidates.filter((c) => c.lead);
+  const rest = candidates.filter((c) => !c.lead);
   const perSubcategory = new Map<string, number>();
-  const spread = narrowed ? candidates : candidates.filter((c) => {
+  const spread = narrowed ? rest : rest.filter((c) => {
     const n = perSubcategory.get(c.subcategoryId) ?? 0;
     perSubcategory.set(c.subcategoryId, n + 1);
     return n < POPULAR_PER_SUBCATEGORY;
   });
   // A small aisle with one or two subcategories still fills its shelf
-  const picked = [...spread, ...candidates.filter((c) => !spread.includes(c))].slice(0, limit).map((c) => c.id);
+  const picked = [...lead, ...spread, ...rest.filter((c) => !spread.includes(c))].slice(0, POPULAR_LIMIT).map((c) => c.id);
   const rows = await prisma.storeProduct.findMany({ where: { id: { in: picked } }, include: storeProductInclude });
   return decorateStoreProducts(prisma, rows.sort((a, b) => picked.indexOf(a.id) - picked.indexOf(b.id)));
 }
@@ -230,22 +247,29 @@ async function endcapDeals(prisma: PrismaClient, storeId: string, departmentId: 
 
 const BRAND_LIMIT = 20;
 
-// The brands on the aisle's shelves (or one subcategory's), best sellers first, for the brand filter
-function stockedBrands(prisma: PrismaClient, storeId: string, { categoryId, subcategoryId }: AisleFilter) {
-  return prisma.$queryRaw<{ id: string; name: string; imageUrl: string | null; count: number }[]>`
-    SELECT b.id, b.name, b.image_url AS "imageUrl", COUNT(*)::int AS count
-    FROM (
-      SELECT DISTINCT p.id, p.brand_id FROM store_products sp
-      JOIN products p ON p.id = sp.product_id AND p.is_active AND p.brand_id IS NOT NULL
-      JOIN subcategories s ON s.id = p.subcategory_id AND s.category_id = ${categoryId}
-        ${subcategoryId ? Prisma.sql`AND s.id = ${subcategoryId}` : Prisma.empty}
-      WHERE sp.store_id = ${storeId} AND sp.is_active AND sp.stock - sp.reserved_stock > 0
-    ) stocked
-    JOIN brands b ON b.id = stocked.brand_id
-    LEFT JOIN (${recentStoreSales(storeId)}) sales ON sales.product_id = stocked.id
-    GROUP BY b.id
-    ORDER BY COALESCE(SUM(sales.qty), 0) DESC, COUNT(*) DESC, b.name
-    LIMIT ${BRAND_LIMIT}`;
+// The brands on the aisle's shelves (or one subcategory's), for the brand filter: the store's own brand first (its
+// brands and the staples it packs, under its logo), then the others best sellers first
+async function stockedBrands(prisma: PrismaClient, storeId: string, { categoryId, subcategoryId }: AisleFilter, boost: BrandBoost) {
+  const stocked = Prisma.sql`
+    SELECT DISTINCT p.id, p.brand_id, ${ownProductSql(boost)} AS own FROM store_products sp
+    JOIN products p ON p.id = sp.product_id AND p.is_active
+    JOIN subcategories s ON s.id = p.subcategory_id AND s.category_id = ${categoryId}
+      ${subcategoryId ? Prisma.sql`AND s.id = ${subcategoryId}` : Prisma.empty}
+    WHERE sp.store_id = ${storeId} AND sp.is_active AND sp.stock - sp.reserved_stock > 0`;
+  const [[{ count: ownCount }], others, own] = await Promise.all([
+    prisma.$queryRaw<{ count: number }[]>`SELECT COUNT(*)::int AS count FROM (${stocked}) stocked WHERE own`,
+    prisma.$queryRaw<{ id: string; name: string; imageUrl: string | null; count: number }[]>`
+      SELECT b.id, b.name, b.image_url AS "imageUrl", COUNT(*)::int AS count
+      FROM (${stocked}) stocked
+      JOIN brands b ON b.id = stocked.brand_id
+      LEFT JOIN (${recentStoreSales(storeId)}) sales ON sales.product_id = stocked.id
+      WHERE NOT stocked.own
+      GROUP BY b.id
+      ORDER BY COALESCE(SUM(sales.qty), 0) DESC, COUNT(*) DESC, b.name
+      LIMIT ${BRAND_LIMIT}`,
+    ownBrand(prisma, storeId),
+  ]);
+  return ownCount && own ? [{ id: own.id, name: own.name, imageUrl: own.imageUrl, count: ownCount }, ...others] : others;
 }
 
 type SubcategoryRow = { id: string; name: string; translations: Translations; imageUrl: string | null; stocked: number };
@@ -274,11 +298,12 @@ export async function walkAisle(prisma: PrismaClient, storeId: string, userId: s
   ]);
   if (!category || subcategories.length === 0) return null;
   const dueRows = dueAll.filter((sp) => categoryOf(sp) === filter.categoryId);
+  const boost = await storeBrandBoost(prisma, storeId);
   const [due, popular, endcap, brands] = await Promise.all([
     decorateStoreProducts(prisma, dueRows),
-    filter.q ? searchedIn(prisma, storeId, filter) : popularIn(prisma, storeId, filter, dueRows.map((sp) => sp.productId)),
+    filter.q ? searchedIn(prisma, storeId, filter, boost) : popularIn(prisma, storeId, filter, boost, dueRows.map((sp) => sp.productId)),
     endcapDeals(prisma, storeId, category.departmentId, category.id),
-    stockedBrands(prisma, storeId, filter),
+    stockedBrands(prisma, storeId, filter, boost),
   ]);
   const stocked = subcategories.reduce((n, sc) => n + sc.stocked, 0);
   return {
