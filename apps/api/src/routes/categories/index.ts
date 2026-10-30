@@ -10,15 +10,19 @@ import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { formatVariantUnits } from "../../services/units.js";
+import { soldAt } from "../../services/web-shop/cards.js";
 
 export async function categoryRoutes(app: FastifyInstance) {
 
   // ── Tree ────────────────────────────────────────────
-  app.get("/tree", async () => {
+  // With a storeId, only the subcategories (and their categories and departments) the store sells something in
+  app.get("/tree", async (request) => {
+    const { storeId } = request.query as { storeId?: string };
+    const sold = storeId ? { products: { some: soldAt(storeId) } } : {};
     const [departments, categories, subcategories] = await Promise.all([
-      app.prisma.department.findMany({ orderBy: { sortOrder: "asc" } }),
-      app.prisma.category.findMany({ orderBy: { sortOrder: "asc" } }),
-      app.prisma.subcategory.findMany({ orderBy: { sortOrder: "asc" } }),
+      app.prisma.department.findMany({ where: storeId ? { categories: { some: { subcategories: { some: sold } } } } : {}, orderBy: { sortOrder: "asc" } }),
+      app.prisma.category.findMany({ where: storeId ? { subcategories: { some: sold } } : {}, orderBy: { sortOrder: "asc" } }),
+      app.prisma.subcategory.findMany({ where: sold, orderBy: { sortOrder: "asc" } }),
     ]);
 
     const subcatsByCatId = new Map<string, SubcategoryNode[]>();

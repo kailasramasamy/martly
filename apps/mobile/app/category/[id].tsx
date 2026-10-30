@@ -94,11 +94,11 @@ export default function CategoryScreen() {
   const gridRef = useRef<FlatList>(null);
   const storeId = selectedStore?.id;
 
-  // Fetch full category tree and find our category node (gives recursive children)
+  // Fetch the store's category tree and find our category node (gives recursive children)
   useEffect(() => {
-    if (!id) return;
+    if (!id || !storeId) return;
     api
-      .get<DepartmentNode[]>("/api/v1/categories/tree")
+      .get<DepartmentNode[]>(`/api/v1/categories/tree?storeId=${storeId}`)
       .then((res) => {
         const tree = toTreeNodes(res.data);
         const findNode = (nodes: TreeNode[]): TreeNode | null => {
@@ -116,7 +116,7 @@ export default function CategoryScreen() {
         }
       })
       .catch(() => {});
-  }, [id, navigation]);
+  }, [id, storeId, navigation]);
 
   // Fetch CATEGORY_TOP banners — detect level from tree to send correct param
   useEffect(() => {

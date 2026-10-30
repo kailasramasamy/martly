@@ -6,6 +6,7 @@ import { buyAgainProducts, activeDealRows, pastOrderLines } from "../feed-querie
 import { sectionBase, type ResolveContext, type ResolvedSection, type SectionResolver } from "../types.js";
 import { recipeSummaries } from "./recipes.js";
 import { departmentTileImages } from "../../pack-tiles/index.js";
+import { soldAt } from "../../web-shop/cards.js";
 import { couponOffers, HOME_OFFER_LIMIT } from "../../coupon-offers.js";
 
 function system(entry: Parameters<SectionResolver>[1], data: Record<string, unknown>): ResolvedSection {
@@ -84,7 +85,9 @@ export const timePicks: SectionResolver = async (ctx, entry) => {
 };
 
 export const departmentGrid: SectionResolver = async (ctx, entry) => {
+  // Only departments the store sells something in
   const departments = await ctx.prisma.department.findMany({
+    where: { categories: { some: { subcategories: { some: { products: { some: soldAt(ctx.store.id) } } } } } },
     orderBy: { sortOrder: "asc" },
     select: {
       id: true, name: true, slug: true, sortOrder: true, imageUrl: true, translations: true,
