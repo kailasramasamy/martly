@@ -3,7 +3,6 @@ import type { WebCategoryPage, WebDepartment, WebDepartmentTree, WebProductBrand
 import { liveWindow } from "../store-feed.js";
 import { storeBrandOf } from "../own-brand.js";
 import { storePack } from "../pack-images.js";
-import { packTileImages } from "../pack-tiles/index.js";
 import { resolveStore, webStoreWhere } from "../store-resolve.js";
 import type { WebShopQuery } from "@martly/shared/schemas";
 import { cardSelect, productCards, soldAt, toCard } from "./cards.js";
@@ -24,16 +23,11 @@ export async function departmentTrees(prisma: PrismaClient, storeId: string, slu
       categories: {
         where: { subcategories: { some: { products: { some: soldAt(storeId) } } } },
         orderBy: { sortOrder: "asc" },
-        select: { id: true, name: true, slug: true, imageUrl: true },
+        select: { name: true, slug: true, imageUrl: true },
       },
     },
   });
-  // Two of the store's own packs where the category has them, as in the app
-  const packTiles = await packTileImages(prisma, storeId, departments.flatMap((d) => d.categories.map((c) => c.id)));
-  return departments.filter((d) => d.categories.length > 0).map((d) => ({
-    ...d,
-    categories: d.categories.map(({ id, imageUrl, ...c }) => ({ ...c, imageUrl: packTiles.get(id) ?? imageUrl })),
-  }));
+  return departments.filter((d) => d.categories.length > 0);
 }
 
 /** The departments the store has something in, for the site's department bar */

@@ -1,6 +1,6 @@
 # Category pack tiles
 
-Category tiles (the Categories tab and Home's category directory, in the app and on martlyshop.in) show two real packs
+Category tiles in the app (the Categories tab and Home's category directory) show two real packs
 the store sells, Instamart-style, instead of the category's generic art. Mockup and picks were approved on 2026-10-30.
 
 ## How it works
@@ -27,7 +27,8 @@ the store sells, Instamart-style, instead of the category's generic art. Mockup 
      wide pack), both on the floor, with a little air at the top.
    - Two slim bottles: side by side at the same height.
    - Flat packs: the back one raised so the front one covers its lower part, with no gap between them.
-5. **Serving.** `directoryGroups` (app) and `departmentTrees` (web) swap a category's `imageUrl` for its tile. A tile
+5. **Serving.** `directoryGroups` swaps a category's `imageUrl` for its tile (martlyshop.in lists categories as text, so
+   it has no tiles to swap). A tile
    not drawn yet is drawn in the background on first request, and the category shows its old art until then. No app
    build is needed; current builds show the new images.
 
