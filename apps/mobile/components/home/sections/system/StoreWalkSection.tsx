@@ -32,13 +32,16 @@ function Chip({ label }: { label: string }) {
   return <View style={styles.chip}><Text style={styles.chipText}>{label}</Text></View>;
 }
 
-/** "Walk the store": go aisle by aisle like in the shop, with the shopper's due items pointed out on the way */
+/** "Walk the store": go aisle by aisle like in the shop, with the shopper's due items pointed out on the way. The whole card starts it */
 export const StoreWalkSection = memo(function StoreWalkSection({ section }: { section: SystemSection }) {
   const t = useStrings("storeWalk");
   const { aisleCount, dueCount, shelves = [] } = section.data as unknown as Teaser;
   return (
     <View style={styles.wrap}>
-      <View style={styles.card}>
+      <TouchableOpacity
+        style={styles.card} onPress={() => router.push("/store-walk")} activeOpacity={0.85}
+        accessibilityRole="button" accessibilityLabel={`${t.cardTitle}. ${t.startWalking}`}
+      >
         <View style={styles.top}>
           <View style={styles.text}>
             <View style={styles.kicker}><Text style={styles.kickerText}>{t.cardKicker.toUpperCase()}</Text></View>
@@ -52,11 +55,11 @@ export const StoreWalkSection = memo(function StoreWalkSection({ section }: { se
           <Chip label={t.aisles(aisleCount)} />
           <Chip label={t.minutes(walkMinutes(aisleCount))} />
         </View>
-        <TouchableOpacity style={styles.start} onPress={() => router.push("/store-walk")} activeOpacity={0.85} accessibilityRole="button">
+        <View style={styles.start}>
           <Text style={styles.startText}>{t.startWalking}</Text>
           <Ionicons name="arrow-forward" size={18} color={colors.primaryDark} />
-        </TouchableOpacity>
-      </View>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 });

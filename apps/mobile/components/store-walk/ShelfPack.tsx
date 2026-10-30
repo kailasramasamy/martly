@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { Image, Pressable, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -25,7 +24,7 @@ const MIN_SCALE = 0.7;
 const COUNTED_SCALE = 0.8;
 const PHOTO_OVERSIZE = 112;
 // Product photos leave a white margin under the pack; the slot sinks this far behind the plank (drawn over it) so the
-// pack itself stands on the wood
+// pack itself stands on the wood. A store's pack render is cut tight, so it stands as it is
 const SINK = 10;
 
 function packScale(variant: Variant) {
@@ -35,15 +34,22 @@ function packScale(variant: Variant) {
   return MIN_SCALE + (1 - MIN_SCALE) * t;
 }
 
-// On the pack's corner: a round + (which opens the size picker for a product in several sizes), then − n + once added
-function PlusButton({ item, variants, onAdd }: { item: StoreProduct; variants: StoreProduct[]; onAdd: () => void }) {
+const photoOf = (item: StoreProduct) => item.product.imageUrl ?? item.variant.imageUrl ?? undefined;
+
+/**
+ * On the plank under the pack: a round + (which opens the size picker for a product in several sizes), then − n + once
+ * added. Adding tosses the pack's photo into the walk's basket
+ */
+export function PlusButton({ item, variants, photo }: { item: StoreProduct; variants: StoreProduct[]; photo: () => Image | null }) {
   const t = useStrings("catalog");
   const actions = useProductActions();
+  const flyer = useFly();
   const quantity = cartQuantity(variants, actions.cartQuantityMap);
   const add = () => {
     if (variants.length > 1) return actions.showVariants(variants);
     actions.addToCart(item);
-    onAdd();
+    const uri = photoOf(item);
+    if (uri) flyer?.fly(uri, photo());
   };
   if (quantity > 0 && variants.length === 1) {
     return (
@@ -92,23 +98,24 @@ function OwnerTalker() {
   );
 }
 
-/** A pack standing on the shelf at its real size; adding it tosses its photo into the walk's basket */
-export function Pack({ item, variants, storeId }: { item: StoreProduct; variants: StoreProduct[]; storeId: string | undefined }) {
+/** A pack standing on the shelf at its real size; its photo is handed up so its + can toss it into the basket */
+export function Pack({ item, storeId, onPhoto }: { item: StoreProduct; storeId: string | undefined; onPhoto: (photo: Image | null) => void }) {
   const { getLocalizedName } = useLanguage();
-  const flyer = useFly();
-  const photo = useRef<Image>(null);
-  const uri = item.product.imageUrl ?? item.variant.imageUrl ?? undefined;
+  const uri = photoOf(item);
   const open = () => router.push({ pathname: "/product/[id]", params: storeId ? { id: item.product.id, storeId } : { id: item.product.id } });
+  const tight = !!item.product.packPhotoUrl;
   // Drawn past the slot: product photos carry wide white margins, which vanish on the shelf, so the pack itself fills it
-  const size = `${Math.round(packScale(item.variant) * PHOTO_OVERSIZE)}%` as const;
+  const size = `${Math.round(packScale(item.variant) * (tight ? 100 : PHOTO_OVERSIZE))}%` as const;
   return (
     <View style={styles.pack}>
-      <Pressable onPress={open} accessibilityRole="button" accessibilityLabel={getLocalizedName(item.product)} style={styles.slot}>
-        <Image ref={photo} source={{ uri }} style={[styles.image, { width: size, height: size }]} />
+      <Pressable
+        onPress={open} accessibilityRole="button" accessibilityLabel={getLocalizedName(item.product)}
+        style={[styles.slot, !tight && styles.sunk]}
+      >
+        <Image ref={onPhoto} source={{ uri }} style={[styles.image, { width: size, height: size }]} />
       </Pressable>
       <OfferFlag item={item} />
       {item.ownerPick && <OwnerTalker />}
-      <View style={styles.plusSpot}><PlusButton item={item} variants={variants} onAdd={() => uri && flyer?.fly(uri, photo.current)} /></View>
     </View>
   );
 }
@@ -116,7 +123,8 @@ export function Pack({ item, variants, storeId }: { item: StoreProduct; variants
 const styles = StyleSheet.create({
   pack: { flex: 1, alignItems: "center" },
   // A square slot; the packs stand at its foot, sized to scale
-  slot: { width: "100%", aspectRatio: 1.3, alignItems: "center", justifyContent: "flex-end", marginBottom: -SINK },
+  slot: { width: "100%", aspectRatio: 1, alignItems: "center", justifyContent: "flex-end" },
+  sunk: { marginBottom: -SINK },
   // Multiplied onto the white shelf, so a photo's white background drops away
   image: { resizeMode: "contain", mixBlendMode: "multiply" },
   flag: {
@@ -131,7 +139,6 @@ const styles = StyleSheet.create({
     shadowColor: "#0f172a", shadowOpacity: 0.25, shadowRadius: 3, shadowOffset: { width: 0, height: 2 }, elevation: 3,
   },
   talkerText: { fontFamily: fonts.extrabold, fontSize: 10, lineHeight: 12, color: "#ffffff", textAlign: "center" },
-  plusSpot: { position: "absolute", right: 0, bottom: 2 },
   plus: {
     width: 34, height: 34, borderRadius: 17, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center",
     shadowColor: "#0f172a", shadowOpacity: 0.25, shadowRadius: 4, shadowOffset: { width: 0, height: 2 }, elevation: 3,

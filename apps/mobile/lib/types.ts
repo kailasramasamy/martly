@@ -146,6 +146,8 @@ export interface Product {
   name: string;
   description: string | null;
   imageUrl: string | null;
+  /** Set when the image is a store's pack render: a tight cutout, no white margin */
+  packPhotoUrl?: string | null;
   images?: string[];
   brand: { id: string; name: string; imageUrl?: string | null; themeColor?: string | null; themeColorSecondary?: string | null } | null;
   foodType: string | null;

@@ -1,5 +1,5 @@
-import { useMemo } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { useMemo, useRef } from "react";
+import { StyleSheet, Text, View, type Image } from "react-native";
 import { colors, festiveFonts, fonts } from "../../constants/theme";
 import { cardDeal, useDealLabel } from "../../lib/deal";
 import { groupByProduct } from "../../lib/group-variants";
@@ -7,7 +7,7 @@ import { useLanguage } from "../../lib/language-context";
 import { useProductActions } from "../../lib/product-actions";
 import { useStrings } from "../../lib/i18n/use-strings";
 import type { StoreProduct } from "../../lib/types";
-import { LOW_STOCK, Pack } from "./ShelfPack";
+import { LOW_STOCK, Pack, PlusButton } from "./ShelfPack";
 
 export const PER_SHELF = 3;
 // Space between the shelf's sides and the packs
@@ -44,19 +44,31 @@ function Sticker({ item, variants, i }: { item: StoreProduct; variants: StorePro
 }
 
 /** One shelf: up to three packs standing on a wooden plank, each priced by a sticker stuck on the shelf's front edge */
+// The + rides with the stickers, drawn after the plank: the packs' row stays under the wood, so their photos' white
+// backgrounds multiply onto it
 export function Shelf({ items, variantsOf }: { items: StoreProduct[]; variantsOf: Map<string, StoreProduct[]> }) {
   const { storeId } = useProductActions();
+  const photos = useRef(new Map<string, Image | null>());
   const slots = [...items, ...Array(PER_SHELF - items.length).fill(null)] as (StoreProduct | null)[];
   const variants = (sp: StoreProduct) => variantsOf.get(sp.product.id) ?? [sp];
   return (
     <View style={styles.shelf}>
-      <View style={styles.row}>
-        {slots.map((sp, i) => (sp ? <Pack key={sp.id} item={sp} variants={variants(sp)} storeId={storeId} /> : <View key={i} style={styles.slot} />))}
+      <View style={[styles.row, styles.packs]}>
+        {slots.map((sp, i) => (sp
+          ? <Pack key={sp.id} item={sp} storeId={storeId} onPhoto={(photo) => photos.current.set(sp.id, photo)} />
+          : <View key={i} style={styles.slot} />))}
       </View>
       <View style={styles.plank} />
       <View style={styles.lip} />
       <View style={[styles.row, styles.stickers]}>
-        {slots.map((sp, i) => (sp ? <Sticker key={sp.id} item={sp} variants={variants(sp)} i={i} /> : <View key={i} style={styles.slot} />))}
+        {slots.map((sp, i) => (sp ? (
+          <View key={sp.id} style={styles.slot}>
+            <Sticker item={sp} variants={variants(sp)} i={i} />
+            <View style={styles.plusSpot}>
+              <PlusButton item={sp} variants={variants(sp)} photo={() => photos.current.get(sp.id) ?? null} />
+            </View>
+          </View>
+        ) : <View key={i} style={styles.slot} />))}
       </View>
     </View>
   );
@@ -76,13 +88,16 @@ const styles = StyleSheet.create({
   // A white shelf (the packs' photos have white backgrounds)
   shelf: { marginBottom: 14, paddingTop: 12, paddingBottom: 10, paddingHorizontal: INSET, borderRadius: 12, backgroundColor: "#ffffff", overflow: "hidden" },
   row: { flexDirection: "row", gap: 8, paddingHorizontal: 4 },
+  // Every pack stands on the plank, whatever its photo's height
+  packs: { alignItems: "flex-end" },
   // The plank and its front edge run right across the shelf, side to side; the stickers are stuck to the front edge
   plank: { height: 6, marginTop: 2, marginHorizontal: -INSET, backgroundColor: WOOD },
   lip: { height: 22, marginHorizontal: -INSET, backgroundColor: WOOD_FACE },
   stickers: { marginTop: -18, alignItems: "flex-start" },
   slot: { flex: 1 },
-  sticker: {
-    flex: 1, paddingHorizontal: 6, paddingTop: 7, paddingBottom: 6, gap: 1, borderRadius: 3, backgroundColor: "#fff8d6",
+  // Rests on the plank above the sticker's corner, clear of the pack's photo
+  plusSpot: { position: "absolute", right: 0, top: -8 },
+  sticker: { paddingHorizontal: 6, paddingTop: 7, paddingBottom: 6, gap: 1, borderRadius: 3, backgroundColor: "#fff8d6",
     borderWidth: 1, borderColor: "#f1e3a8",
     shadowColor: "#0f172a", shadowOpacity: 0.18, shadowRadius: 3, shadowOffset: { width: 0, height: 2 }, elevation: 2,
   },
