@@ -5,6 +5,7 @@ import type { ApiResponse, CategoryFacets, PaginatedResponse, StoreResolution } 
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requirePermission, requireRole } from "../../middleware/authorize.js";
 import { Permission, ownBrandStoreId } from "@martly/shared/constants";
+import { bySize } from "@martly/shared/listing";
 import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { storeVariant } from "../../services/units.js";
@@ -22,6 +23,7 @@ import { notifyStoreStatusChange, notifyTeamMember } from "../../services/notify
 import { categoryFacets, subcategoryIdsUnder } from "../../services/category-browse.js";
 import { storeWrite, townFields, townSelect } from "../../services/towns.js";
 import { hidesTemplateStores, nearbyStores, resolveStore, type CustomerStore } from "../../services/store-resolve.js";
+import { refreshStoreBrands } from "../../services/store-brand-names.js";
 
 /** A sponsored product's listings at the store, in the same shape as the rest of a category page */
 async function sponsoredRows(prisma: PrismaClient, storeId: string, productId: string) {
@@ -179,6 +181,7 @@ export async function storeRoutes(app: FastifyInstance) {
         where: { id: request.params.id },
         data: { ...rest, ...town, ...(translations !== undefined ? { translations: translations ?? Prisma.DbNull } : {}) },
       }));
+      if (rest.brandName !== undefined || rest.name !== undefined || translations !== undefined) await refreshStoreBrands(app.prisma);
 
       if (body.status && body.status !== existing.status) {
         void notifyStoreStatusChange(app.fcm, app.prisma, store, existing.status, store.status);
@@ -345,6 +348,8 @@ export async function storeRoutes(app: FastifyInstance) {
       ? await looseFirstPage(looseIds, listingWhere, pageOf, find, count, listingPage)
       : await listingPage(listingWhere, pageOf);
     const listed = markBrandPicks(await decorateStoreProducts(app.prisma, storeProducts), boost ?? NO_BOOST);
+    // One product's sizes, as its detail screen shows them: smallest first
+    if (productId && !productIds && !sortBy) listed.sort((a, b) => bySize(a.variant, b.variant));
     const data = ad && Number(page) === 1 ? injectAd(listed, await sponsoredRows(app.prisma, store.id, ad.productId), ad) : listed;
 
     const response: PaginatedResponse<(typeof data)[0]> = {

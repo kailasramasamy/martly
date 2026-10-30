@@ -583,6 +583,8 @@ model Store {
 
   // Branding shown to shoppers choosing a store
   logoUrl      String?  @map("logo_url")
+  /// The brand its own packs sell under ("Ranga"); null = the store name without "Store"
+  brandName    String?  @map("brand_name")
   promoImages  String[] @default([]) @map("promo_images")
   tagline      String?
   offerText    String?  @map("offer_text")

@@ -54,7 +54,7 @@ export function systemSection<P>(s: HomeSection<unknown>, links: LinkBook, cards
     }
     case "BRAND_RAIL": {
       const rail = brands.flatMap((b) => {
-        const href = links.brand(b.id);
+        const href = b.href ?? links.brand(b.id);
         return href ? [{ label: b.name, imageUrl: b.imageUrl, themeColor: b.themeColor, href }] : [];
       });
       return rail.length ? { ...base, type: s.type, brands: rail } : null;

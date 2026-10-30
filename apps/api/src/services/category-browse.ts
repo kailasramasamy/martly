@@ -1,5 +1,8 @@
 import { Prisma, type PrismaClient } from "../../generated/prisma/index.js";
 import type { CategoryFacets } from "@martly/shared/types";
+import { ownBrandId } from "@martly/shared/constants";
+import { storeBrandBoost, type BrandBoost } from "./brand-boost.js";
+import { storeBrandLabel } from "./store-brand-names.js";
 
 // A browse node is a department, category or subcategory id; products hang off subcategories only
 export async function subcategoryIdsUnder(prisma: PrismaClient, nodeId: string): Promise<string[]> {
@@ -23,8 +26,22 @@ export async function categoryFacets(prisma: PrismaClient, storeId: string, node
       ${listed} AND b.id IS NOT NULL
       GROUP BY b.id ORDER BY count DESC, b.name`,
   ]);
+  const boost = await storeBrandBoost(prisma, storeId);
+  const own = await ownBrandFacet(prisma, storeId, subIds, boost);
   return {
     subcategoryCounts: Object.fromEntries(counts.map((c) => [c.id, Number(c.count)])),
-    brands: brands.map((b) => ({ ...b, count: Number(b.count) })),
+    brands: [...(own ? [own] : []), ...brands.filter((b) => !boost.ownBrandIds.includes(b.id)).map((b) => ({ ...b, count: Number(b.count) }))],
   };
+}
+
+/** The store's own brand as the first brand under a node: its brands and the staples it packs, under its logo */
+async function ownBrandFacet(prisma: PrismaClient, storeId: string, subIds: string[], boost: BrandBoost) {
+  const staples = subIds.filter((id) => boost.stapleSubcategoryIds.includes(id));
+  if (!boost.ownBrandIds.length && !staples.length) return null;
+  const ownProduct: Prisma.ProductWhereInput = { OR: [{ brandId: { in: boost.ownBrandIds } }, { brandId: null, subcategoryId: { in: staples } }] };
+  const [count, store] = await Promise.all([
+    prisma.product.count({ where: { subcategoryId: { in: subIds }, storeProducts: { some: { storeId, isActive: true } }, ...ownProduct } }),
+    prisma.store.findUnique({ where: { id: storeId }, select: { name: true, logoUrl: true } }),
+  ]);
+  return count && store ? { id: ownBrandId(storeId), name: storeBrandLabel(storeId, store.name), imageUrl: store.logoUrl, count } : null;
 }

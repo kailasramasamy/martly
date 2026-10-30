@@ -494,12 +494,17 @@ export type CreateOrderInput = z.infer<typeof createOrderSchema>;
 // ── Store branding ───────────────────────────────────
 export const storeTranslationsSchema = z.record(
   z.enum(languageCodes),
-  z.object({ name: z.string().trim().max(80).optional(), tagline: z.string().trim().max(80).optional(), offerText: z.string().trim().max(80).optional() }),
+  z.object({
+    name: z.string().trim().max(80).optional(), tagline: z.string().trim().max(80).optional(), offerText: z.string().trim().max(80).optional(),
+    brandName: z.string().trim().max(30).optional(),
+  }),
 );
 export type StoreTranslations = z.infer<typeof storeTranslationsSchema>;
 
 export const storeBrandingSchema = z.object({
   logoUrl: z.string().url().nullish(),
+  /** The brand its own packs sell under ("Ranga"); empty means the store name without "Store" */
+  brandName: z.string().trim().max(30).nullish(),
   promoImages: z.array(z.string().url()).max(3).optional(),
   tagline: z.string().trim().max(80).nullish(),
   offerText: z.string().trim().max(80).nullish(),

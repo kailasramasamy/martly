@@ -7,12 +7,12 @@ import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requirePermission } from "../../middleware/authorize.js";
 import { Permission, ownBrandStoreId } from "@martly/shared/constants";
 import type { JwtUser } from "../../types/jwt.js";
-import { brandVisibility, storeBrands, uniqueBrandSlug } from "../../services/brands.js";
+import { brandVisibility, uniqueBrandSlug } from "../../services/brands.js";
 import { cleanLogo } from "../../services/brand-logo.js";
 import { putObject } from "../../services/media.js";
 import { brandSpotlight } from "../../services/brand-spotlight.js";
 import { storeBrandBoost } from "../../services/brand-boost.js";
-import { ownBrand, ownBrandAisles, ownBrandWithCount } from "../../services/own-brand.js";
+import { ownBrand, ownBrandAisles, ownBrandWithCount, storeBrandRail } from "../../services/own-brand.js";
 
 type Translations = DirectoryDepartment["translations"];
 type DirectoryRow = DirectoryBrand & {
@@ -120,10 +120,7 @@ export async function brandRoutes(app: FastifyInstance) {
     if (!store) return reply.notFound("Store not found");
     const limit = Math.min(Math.max(Number((request.query as { limit?: string }).limit) || 50, 1), 200);
 
-    const boost = await storeBrandBoost(app.prisma, store.id);
-    const [own, rest] = await Promise.all([ownBrandWithCount(app.prisma, store.id, boost), storeBrands(app.prisma, store.id, limit)]);
-    const brands = [...(own ? [own] : []), ...rest.filter((b) => !boost.ownBrandIds.includes(b.id))].slice(0, limit);
-
+    const brands = await storeBrandRail(app.prisma, store.id, limit);
     const response: ApiResponse<typeof brands> = { success: true, data: brands };
     return response;
   });

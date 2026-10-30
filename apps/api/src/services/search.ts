@@ -4,6 +4,7 @@ import { correctQuery } from "./spell.js";
 import { featuredPairs, hasBoost, storeBrandBoost, type BrandBoost } from "./brand-boost.js";
 import { mapLimit } from "./map-limit.js";
 import { lifetimeSales, salesTable } from "./product-sales.js";
+import { withoutStoreBrand } from "./store-brand-names.js";
 
 export type SearchStrategy = "keyword" | "fuzzy" | "fulltext" | "semantic";
 
@@ -105,7 +106,7 @@ export async function searchProducts(
   { minResults = 3, exact = false, boost }: { minResults?: number; exact?: boolean; boost?: BrandBoost } = {},
 ): Promise<SearchResult> {
   const promoted = boost ?? await storeBrandBoost(prisma, storeId);
-  return runSearch(prisma, { storeId, listedOnly: true, boost: promoted }, query, { minResults, exact, semantic: true, limit: MAX_KEYWORD_RESULTS });
+  return runSearch(prisma, { storeId, listedOnly: true, boost: promoted }, withoutStoreBrand(storeId, query), { minResults, exact, semantic: true, limit: MAX_KEYWORD_RESULTS });
 }
 
 /** Same ranking within one collection's products, for a campaign screen's search; no LLM expansion as it runs per keystroke */

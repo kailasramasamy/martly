@@ -34,7 +34,7 @@ export function ProductCard({ item, variantCount = 1, onAddToCart, onUpdateQuant
   const isLowStock = !isOutOfStock && available <= 5;
 
   const handlePress = () => {
-    const params: Record<string, string> = { id: item.product.id };
+    const params: Record<string, string> = { id: item.product.id, size: item.id };
     if (storeId) params.storeId = storeId;
     router.push({ pathname: "/product/[id]", params });
   };

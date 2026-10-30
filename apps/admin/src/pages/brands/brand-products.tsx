@@ -1,4 +1,4 @@
-import { listingLabel, listingState, type ListingState, type VariantListing } from "@martly/shared/listing";
+import { bySize, listingLabel, listingState, type ListingState, type VariantListing } from "@martly/shared/listing";
 import { Card, Tag, Space, Typography, Flex, Tooltip, Avatar } from "antd";
 import { Link } from "react-router";
 
@@ -24,15 +24,6 @@ function storeBreakdown(listings: NonNullable<BrandProduct["storeProducts"]>) {
   const stores = new Map(listings.map((l) => [l.store.id, l.store.name]));
   return [...stores].map(([id, name]) => `${name}: ${listingLabel(listingState(listings, id))}`).join("\n");
 }
-
-type Variant = NonNullable<BrandProduct["variants"]>[number];
-
-// Formatted units (kg, L) in grams / millilitres, so 500 g sorts before 1 kg
-const UNIT_FACTOR: Record<string, number> = { kg: 1000, L: 1000 };
-const packSize = (v: Variant) => Number(v.unitValue) * (UNIT_FACTOR[v.unitType] ?? 1);
-
-/** Smallest pack first; same size by MRP */
-const bySize = (a: Variant, b: Variant) => packSize(a) - packSize(b) || Number(a.mrp ?? 0) - Number(b.mrp ?? 0);
 
 export interface Pill { id: string; name: string; count: number }
 

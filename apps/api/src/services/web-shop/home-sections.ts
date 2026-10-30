@@ -141,7 +141,7 @@ function toWebSection<P>(s: HomeSection<unknown>, links: LinkBook, cards: Cards<
   return productSection(s, links, cards, base) ?? tileSection(s, links, base) ?? ("data" in s ? systemSection(s, links, cards, base, brands) : null);
 }
 
-export type BrandRail = { id: string; name: string; imageUrl: string | null; themeColor: string | null }[];
+export type BrandRail = { id: string; name: string; imageUrl: string | null; themeColor: string | null; href?: string }[];
 
 /** Every product id the sections show, in order */
 function productIdsOf(sections: HomeSection<unknown>[], links: LinkBook, store: WebShopStore) {

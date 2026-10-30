@@ -9,6 +9,7 @@ import { ImageField } from "../../../components/manage/ui/ImageField";
 import { SectionCard } from "../../../components/manage/ui/SectionCard";
 import { TextField } from "../../../components/manage/ui/TextField";
 import { fieldStyles } from "../../../components/manage/ui/fieldStyles";
+import { storeBrandName } from "@martly/shared/constants";
 import { useBranding, type BrandingForm } from "../../../components/manage/storefront/use-branding";
 
 const HEX = /^#[0-9a-fA-F]{6}$/;
@@ -27,6 +28,20 @@ function Words({ form, patch, draft, drafting }: { form: BrandingForm; patch: (p
           <TextField key={i} label={`Highlight ${i + 1}`} value={h} maxLength={24} placeholder={i === 0 ? "Fresh produce" : undefined}
             onChangeText={(t) => patch({ highlights: form.highlights.map((x, j) => (j === i ? t : x)) })} />
         ))}
+      </View>
+    </SectionCard>
+  );
+}
+
+/** The brand the store's own packs sell under: "Ranga Toor Dal", first in the brand scroller */
+function OwnBrand({ form, patch, storeName }: { form: BrandingForm; patch: (p: Partial<BrandingForm>) => void; storeName: string }) {
+  const fallback = storeBrandName({ name: storeName });
+  return (
+    <SectionCard title="Your own brand">
+      <View style={styles.fields}>
+        <Text style={styles.aiText}>Rice, dal and other staples you pack show under this name, like "{form.brandName.trim() || fallback} Toor Dal".</Text>
+        <TextField label="Brand name" value={form.brandName} onChangeText={(brandName) => patch({ brandName })} maxLength={30} placeholder={fallback} />
+        <TextField label="Brand name in Tamil" value={form.brandNameTa} onChangeText={(brandNameTa) => patch({ brandNameTa })} maxLength={30} />
       </View>
     </SectionCard>
   );
@@ -65,6 +80,7 @@ export default function BrandingScreen() {
     <ManageStackScreen title="Shop branding" loading={store.loading || !form} error={store.error} onRetry={store.reload}
       actions={<Button label="Save" icon="checkmark" onPress={save} loading={saving} disabled={invalid || drafting} />}>
       {form && <Words form={form} patch={patch} draft={draft} drafting={drafting} />}
+      {form && store.data && <OwnBrand form={form} patch={patch} storeName={store.data.name} />}
       {form && <Pictures form={form} patch={patch} />}
     </ManageStackScreen>
   );

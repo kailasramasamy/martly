@@ -6,8 +6,8 @@ export function effectivePrice(sp: StoreProduct): number {
 
 /**
  * The API returns one StoreProduct per variant (size). Product lists show one card per product:
- * `primary` holds each product's cheapest variant, `variantsByProductId` all its variants
- * (cheapest first) for the size picker.
+ * `primary` holds each product's preferred size (last bought or most bought), else its cheapest; `variantsByProductId`
+ * all its variants (cheapest first) for the size picker.
  */
 export function groupByProduct(storeProducts: StoreProduct[]) {
   const groups = new Map<string, StoreProduct[]>();
@@ -22,7 +22,7 @@ export function groupByProduct(storeProducts: StoreProduct[]) {
   const variantsByProductId = new Map<string, StoreProduct[]>();
   for (const [productId, variants] of groups) {
     const sorted = [...variants].sort((a, b) => effectivePrice(a) - effectivePrice(b));
-    primary.push(sorted[0]);
+    primary.push(sorted.find((v) => v.preferredSize) ?? sorted[0]);
     variantsByProductId.set(productId, sorted);
   }
   return { primary, variantsByProductId };

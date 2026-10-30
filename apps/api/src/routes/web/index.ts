@@ -1,7 +1,8 @@
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import { webShopQuerySchema } from "@martly/shared/schemas";
 import type { ApiResponse, WebHome, WebStorePage, WebTownPage } from "@martly/shared/types";
-import { storeBrands } from "../../services/brands.js";
+import { storeBrandRail } from "../../services/own-brand.js";
+import { ownBrandStoreId } from "@martly/shared/constants";
 import { shopStore, type ShopContext } from "../../services/web-shop/cards.js";
 import { webSearch, webSearchLanding, webSuggestions } from "../../services/web-shop/search.js";
 import { webHomeSections } from "../../services/web-shop/home-sections.js";
@@ -88,7 +89,9 @@ function shopRoutes(app: FastifyInstance) {
   app.get("/home-sections", (request, reply) => respond(request, reply, async ({ store, organizationId }, q) => ({
     store,
     profile: q.cursor ? null : await storeProfile(app.prisma, store.id),
-    ...await webHomeSections(app.prisma, store, organizationId, q.cursor, () => storeBrands(app.prisma, store.id, BRAND_RAIL)),
+    ...await webHomeSections(app.prisma, store, organizationId, q.cursor, async () => (await storeBrandRail(app.prisma, store.id, BRAND_RAIL))
+      // The store's own brand opens its brand page; the rest open their brand pages
+      .map((b) => (ownBrandStoreId(b.id) ? { ...b, href: `/${store.town.slug}/${store.slug}/brand` } : b))),
   })));
 
   app.get<{ Params: { slug: string } }>("/collections/:slug", (request, reply) =>

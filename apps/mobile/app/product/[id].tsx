@@ -44,8 +44,17 @@ interface ProductDetail extends Product {
   variants?: Variant[];
 }
 
+const hasStock = (sp: StoreProduct) => (sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0))) > 0;
+
+/** The size the page opens on: the card's, else the shopper's preferred, else the smallest in stock */
+function openingSize(sizes: StoreProduct[], cardSize: string | undefined): number {
+  const picks = [sizes.findIndex((sp) => sp.id === cardSize), sizes.findIndex((sp) => sp.preferredSize), sizes.findIndex(hasStock)];
+  return Math.max(picks.find((i) => i >= 0) ?? 0, 0);
+}
+
 export default function ProductDetailScreen() {
-  const { id, storeId: paramStoreId } = useLocalSearchParams<{ id: string; storeId?: string }>();
+  // `size`: the listing the card showed, so the page opens on the size the shopper was looking at
+  const { id, storeId: paramStoreId, size } = useLocalSearchParams<{ id: string; storeId?: string; size?: string }>();
   const { selectedStore } = useStore();
   const { storeId: cartStoreId, store: cartFrom, items: cartItems, addItem, updateQuantity } = useCart();
   const moveCart = useMoveCart();
@@ -196,6 +205,7 @@ export default function ProductDetailScreen() {
       .then(([productRes, storeProd]) => {
         setProduct(productRes.data);
         setStoreProducts(storeProd);
+        setSelectedSpIdx(openingSize(storeProd, size));
 
         // Fetch related products by category
         const catId = productRes.data.subcategory?.id;

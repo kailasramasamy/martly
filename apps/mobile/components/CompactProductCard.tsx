@@ -151,7 +151,7 @@ export function CompactProductCard(props: CompactProductCardProps) {
 
   const openProduct = () => {
     if (heartTapped.current) { heartTapped.current = false; return; }
-    const params: Record<string, string> = { id: item.product.id };
+    const params: Record<string, string> = { id: item.product.id, size: item.id };
     if (storeId) params.storeId = storeId;
     tapSponsored();
     props.onOpen?.();

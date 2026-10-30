@@ -14,6 +14,7 @@ import { liveWindow } from "../store-feed.js";
 import { cardsInOrder, soldAt, type ShopContext } from "./cards.js";
 import { filteredList } from "./category-filters.js";
 import { storeDepartments } from "./pages.js";
+import { storeBrandLabel } from "../store-brand-names.js";
 
 const PAGE_SIZE = 24;
 const POPULAR_BRANDS = 12;
@@ -115,7 +116,7 @@ export async function brandPage(prisma: PrismaClient, ctx: ShopContext, slug: st
 export async function ownBrandPage(prisma: PrismaClient, ctx: ShopContext, q: WebShopQuery): Promise<WebBrandPage | null> {
   const boost = await storeBrandBoost(prisma, ctx.store.id);
   if (!boost.ownBrandIds.length && !boost.stapleSubcategoryIds.length) return null;
-  const brand = { name: ctx.store.name, slug: ctx.store.slug, imageUrl: ctx.store.logoUrl };
+  const brand = { name: storeBrandLabel(ctx.store.id, ctx.store.name), slug: ctx.store.slug, imageUrl: ctx.store.logoUrl };
   return brandListing(prisma, ctx, brand, ownProductWhere(boost), q);
 }
 

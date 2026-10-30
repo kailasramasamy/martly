@@ -190,11 +190,11 @@ function CardDetails({ item, lowStock, sponsored, aisleLink }: { item: StoreProd
 }
 
 /** Opens the product page on a card tap, unless the tap was on the wishlist heart */
-function useOpenProduct(productId: string, storeId: string | undefined, onOpen?: () => void) {
+function useOpenProduct(productId: string, sizeId: string, storeId: string | undefined, onOpen?: () => void) {
   const heartTapped = useRef(false);
   const openProduct = () => {
     if (heartTapped.current) { heartTapped.current = false; return; }
-    const params: Record<string, string> = { id: productId };
+    const params: Record<string, string> = { id: productId, size: sizeId };
     if (storeId) params.storeId = storeId;
     onOpen?.();
     router.push({ pathname: "/product/[id]", params });
@@ -242,7 +242,7 @@ function StandardCard(props: FeaturedProductCardProps) {
   const swipeable = width != null && sizes.length > 1;
   const { available, isOutOfStock, isLowStock } = stockState(item);
   const tapSponsored = useSponsoredTracking(props.item.sponsored, storeId);
-  const { openProduct, heartTapped } = useOpenProduct(item.product.id, storeId, () => { tapSponsored(); props.onOpen?.(); });
+  const { openProduct, heartTapped } = useOpenProduct(item.product.id, item.id, storeId, () => { tapSponsored(); props.onOpen?.(); });
 
   return (
     <TouchableOpacity

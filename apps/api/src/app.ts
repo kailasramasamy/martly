@@ -103,6 +103,8 @@ import attentionSchedulerPlugin from "./plugins/attention-scheduler.js";
 import monthlyListSchedulerPlugin from "./plugins/monthly-list-scheduler.js";
 import creditSchedulerPlugin from "./plugins/credit-scheduler.js";
 import packImagesPlugin from "./plugins/pack-images.js";
+import storeBrandNamesPlugin from "./plugins/store-brand-names.js";
+import preferredSizesPlugin from "./plugins/preferred-sizes.js";
 import catalogAgentWorkerPlugin from "./plugins/catalog-agent-worker.js";
 import schedulerLockPlugin from "./plugins/scheduler-lock.js";
 import alertPruneSchedulerPlugin from "./plugins/alert-prune-scheduler.js";
@@ -163,6 +165,8 @@ export async function buildApp() {
   await app.register(creditSchedulerPlugin);
   await app.register(catalogAgentWorkerPlugin);
   await app.register(packImagesPlugin);
+  await app.register(storeBrandNamesPlugin);
+  await app.register(preferredSizesPlugin);
 
   // ── Error Handler ────────────────────────────────
   app.setErrorHandler((error, _request, reply) => {

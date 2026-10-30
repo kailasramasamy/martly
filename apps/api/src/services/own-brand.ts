@@ -1,7 +1,8 @@
 import type { Prisma, PrismaClient } from "../../generated/prisma/client.js";
-import { ownBrandId } from "@martly/shared/constants";
+import { ownBrandId, storeBrandName } from "@martly/shared/constants";
 import type { DirectoryDepartment } from "@martly/shared/types";
 import { brandPickOf, storeBrandBoost, type BrandBoost } from "./brand-boost.js";
+import { storeBrands } from "./brands.js";
 
 // Stores have no theme colour of their own yet, so their brand store wears the app's teal
 const OWN_BRAND_THEME = "#0f766e";
@@ -11,11 +12,11 @@ export function ownProductWhere(boost: BrandBoost): Prisma.ProductWhereInput {
   return { OR: [{ brandId: { in: boost.ownBrandIds } }, { brandId: null, subcategoryId: { in: boost.stapleSubcategoryIds } }] };
 }
 
-/** The store as a brand: its name and logo, for the brand store screen */
+/** The store as a brand: its brand name and logo, for the brand store screen */
 export async function ownBrand(prisma: PrismaClient, storeId: string) {
-  const store = await prisma.store.findUnique({ where: { id: storeId }, select: { name: true, logoUrl: true } });
+  const store = await prisma.store.findUnique({ where: { id: storeId }, select: { name: true, brandName: true, logoUrl: true } });
   if (!store) return null;
-  return { id: ownBrandId(storeId), name: store.name, imageUrl: store.logoUrl, themeColor: OWN_BRAND_THEME, themeColorSecondary: null };
+  return { id: ownBrandId(storeId), name: storeBrandName(store), imageUrl: store.logoUrl, themeColor: OWN_BRAND_THEME, themeColorSecondary: null };
 }
 
 /** A store's unbranded staple, seen in that store, carries the store as its brand: logo chip, banner, brand store */
@@ -33,6 +34,13 @@ export async function ownBrandWithCount(prisma: PrismaClient, storeId: string, b
     prisma.product.count({ where: { isActive: true, storeProducts: { some: { storeId, isActive: true } }, ...ownProductWhere(boost) } }),
   ]);
   return brand && productCount ? { ...brand, productCount } : null;
+}
+
+/** A store's brand scroller: its own brand first, then the brands it stocks most */
+export async function storeBrandRail(prisma: PrismaClient, storeId: string, limit: number) {
+  const boost = await storeBrandBoost(prisma, storeId);
+  const [own, rest] = await Promise.all([ownBrandWithCount(prisma, storeId, boost), storeBrands(prisma, storeId, limit)]);
+  return [...(own ? [own] : []), ...rest.filter((b) => !boost.ownBrandIds.includes(b.id))].slice(0, limit);
 }
 
 type Translations = DirectoryDepartment["translations"];

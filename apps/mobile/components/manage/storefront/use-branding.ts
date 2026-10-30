@@ -3,9 +3,11 @@ import { api } from "../../../lib/api";
 import { useAction } from "../../../lib/manage/use-action";
 import { useResource } from "../../../lib/manage/use-resource";
 
-type Translations = Record<string, { name?: string; tagline?: string; offerText?: string }>;
+type Translations = Record<string, { name?: string; tagline?: string; offerText?: string; brandName?: string }>;
 
 interface StoreBranding {
+  name: string;
+  brandName: string | null;
   logoUrl: string | null;
   imageUrl: string | null;
   promoImages: string[];
@@ -16,6 +18,8 @@ interface StoreBranding {
 }
 
 export interface BrandingForm {
+  brandName: string;
+  brandNameTa: string;
   logoUrl: string | null;
   imageUrl: string | null;
   promoImages: (string | null)[];
@@ -31,6 +35,7 @@ const pad = <T,>(list: T[], size: number, fill: T) => [...list, ...Array(Math.ma
 
 function toForm(s: StoreBranding): BrandingForm {
   return {
+    brandName: s.brandName ?? "", brandNameTa: s.translations?.ta?.brandName ?? "",
     logoUrl: s.logoUrl, imageUrl: s.imageUrl, promoImages: pad<string | null>(s.promoImages, MAX_POSTERS, null),
     tagline: s.tagline ?? "", taglineTa: s.translations?.ta?.tagline ?? "", brandColor: s.brandColor ?? "",
     highlights: pad(s.highlights, MAX_HIGHLIGHTS, ""),
@@ -38,8 +43,9 @@ function toForm(s: StoreBranding): BrandingForm {
 }
 
 function toBody(f: BrandingForm, existing: Translations | null) {
-  const ta = { ...existing?.ta, tagline: f.taglineTa.trim() || undefined };
+  const ta = { ...existing?.ta, tagline: f.taglineTa.trim() || undefined, brandName: f.brandNameTa.trim() || undefined };
   return {
+    brandName: f.brandName.trim() || null,
     logoUrl: f.logoUrl, imageUrl: f.imageUrl, promoImages: f.promoImages.filter((p): p is string => !!p),
     tagline: f.tagline.trim() || null, brandColor: f.brandColor.trim() || null,
     highlights: f.highlights.map((h) => h.trim()).filter(Boolean),

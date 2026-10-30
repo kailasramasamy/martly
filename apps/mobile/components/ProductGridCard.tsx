@@ -55,7 +55,7 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
       style={[styles.card, { width: cardWidth }]}
       onPress={() => {
         if (heartTapped.current) { heartTapped.current = false; return; }
-        const params: Record<string, string> = { id: item.product.id };
+        const params: Record<string, string> = { id: item.product.id, size: item.id };
         if (storeId) params.storeId = storeId;
         router.push({ pathname: "/product/[id]", params });
       }}

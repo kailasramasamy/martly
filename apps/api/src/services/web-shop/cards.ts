@@ -4,6 +4,7 @@ import type { WebPack, WebProductCard, WebShopStore } from "@martly/shared/types
 import { storePack } from "../pack-images.js";
 import { calculateEffectivePrice } from "../pricing.js";
 import { resolveStore, webStoreWhere } from "../store-resolve.js";
+import { storeTitle } from "../store-brand-names.js";
 
 /** The store a page prices from, and its organisation (kept off the page) */
 export interface ShopContext {
@@ -35,6 +36,8 @@ export const cardSelect = (storeId: string) => ({
   slug: true,
   name: true,
   imageUrl: true,
+  brandId: true,
+  subcategoryId: true,
   brand: { select: { name: true } },
   storeProducts: { where: { storeId, isActive: true }, include: { variant: true } },
 }) satisfies Prisma.ProductSelect;
@@ -63,7 +66,7 @@ export function toCard(row: CardRow): WebProductCard {
   const packs = listings.map(toPack);
   return {
     slug: row.slug,
-    name: row.name,
+    name: listings[0] ? storeTitle(listings[0].storeId, row) : row.name,
     brand: row.brand?.name ?? null,
     imageUrl: listings.map((sp) => storePack(sp.storeId, sp.variantId)?.front).find(Boolean) ?? row.imageUrl ?? packs.find((p) => p.imageUrl)?.imageUrl ?? null,
     packs,

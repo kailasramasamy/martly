@@ -5,6 +5,7 @@ import { brandPickOf, markBrandPicks, storeBrandBoost, type BrandBoost } from ".
 import { liveSponsored } from "./sponsored.js";
 import { namesBrand, placeSearchAds } from "./sponsored-search.js";
 import { decorateStoreProducts, storeProductInclude, type StoreProductView } from "./store-product-view.js";
+import { storeBrandLabel } from "./store-brand-names.js";
 
 const MAX_TAG_TABS = 8;
 const MAX_SUBCATEGORY_TABS = 10;
@@ -92,7 +93,7 @@ const isOwn = (row: StoreProductView, boost: BrandBoost) => brandPickOf(row, boo
 /** The store's own chip (its brands and its own staple packs, under its logo) first, then every other brand */
 function brandFacets(rows: StoreProductView[], boost: BrandBoost, store: OwnBrandStore): SearchFacets["brands"] {
   const own = countProducts(rows.filter((r) => isOwn(r, boost)), () => [ownBrandId(store.id)])
-    .map(({ key, count }) => ({ id: key, count, name: store.name, imageUrl: store.logoUrl }));
+    .map(({ key, count }) => ({ id: key, count, name: storeBrandLabel(store.id, store.name), imageUrl: store.logoUrl }));
   const others = countProducts(rows.filter((r) => !isOwn(r, boost)), (r) => (r.product.brand ? [r.product.brand.id] : []))
     .map(({ key, count }) => {
       const brand = rows.find((r) => r.product.brandId === key)!.product.brand!;

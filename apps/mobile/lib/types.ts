@@ -79,6 +79,8 @@ export interface StoreProduct {
   sponsored?: { bannerId: string };
   /** The store promotes this brand (its own, or one the owner features); labelled on the card */
   brandPick?: BrandPick;
+  /** The size this shopper should land on: the one they bought last, else the most bought one in stock */
+  preferredSize?: boolean;
   /** The store's owner vouches for it: "Owner's pick", and why in their words */
   ownerPick?: OwnerPick | null;
 }

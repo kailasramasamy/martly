@@ -35,3 +35,14 @@ export function listingLabel(state: ListingState): string {
     case "stores": return `In ${state.count} store${state.count === 1 ? "" : "s"}`;
   }
 }
+
+// Units in grams / millilitres, raw (KG) or formatted (kg), so 500 g sorts before 1 kg
+const UNIT_FACTOR: Record<string, number> = { KG: 1000, kg: 1000, LITER: 1000, L: 1000 };
+
+type Sized = { unitType: string; unitValue: unknown; mrp?: unknown };
+
+/** Smallest pack first; same size by MRP */
+export function bySize(a: Sized, b: Sized): number {
+  const size = (v: Sized) => Number(v.unitValue) * (UNIT_FACTOR[v.unitType] ?? 1);
+  return size(a) - size(b) || Number(a.mrp ?? 0) - Number(b.mrp ?? 0);
+}

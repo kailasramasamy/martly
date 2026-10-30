@@ -158,6 +158,19 @@ const OWN_BRAND_PREFIX = "own-";
 export const ownBrandId = (storeId: string) => `${OWN_BRAND_PREFIX}${storeId}`;
 export const ownBrandStoreId = (brandId: string) => (brandId.startsWith(OWN_BRAND_PREFIX) ? brandId.slice(OWN_BRAND_PREFIX.length) : null);
 
+// Store-name endings that aren't part of the brand: "Sree Ranga Store" sells as "Sree Ranga"
+const STORE_NAME_SUFFIX = /\s+(department\s+stores?|super\s*markets?|stores?|mart)\s*$/i;
+
+/** The name a store sells its own packs under: the brand name it set, else its name without "Store" */
+export function storeBrandName(store: { name: string; brandName?: string | null }): string {
+  return store.brandName?.trim() || store.name.replace(STORE_NAME_SUFFIX, "").trim() || store.name;
+}
+
+/** A product title with the store's brand in front, as branded products carry theirs; never doubled */
+export function withStoreBrand(title: string, brand: string): string {
+  return title.toLowerCase().startsWith(brand.toLowerCase()) ? title : `${brand} ${title}`;
+}
+
 /** Own-brand or local products each store plan lists free, counted once over the store's life; each one after that costs LISTING_FEE, once */
 export const OWN_LISTINGS_INCLUDED: Record<string, number> = { FREE: 10, GROWTH: 25, PRO: 50 };
 export const LISTING_FEE = 100;
