@@ -202,5 +202,26 @@
   "baby-accessories": [
     "5372dd5a-b3dd-4bfe-a5e5-55aff6044d50",
     "d567efb5-bb34-4443-8a67-84fa95da73c3"
+  ],
+  "papad-fryums": [
+    "8da71d3d-8318-4d67-8599-8700ed5f76b0",
+    "ce09d7f8-12de-4853-a3b0-932da418331f"
+  ],
+  "pickles-chutney": [
+    "71877eed-178c-4095-86c3-3f55106993c7",
+    "5289aec4-3f97-409d-b154-1226a12f32cc"
+  ],
+  "sauces-condiments": [
+    "0159ae12-3b08-4545-a3e9-5fa542850e73",
+    "a798c6cb-aa9f-44c4-8d1f-d3e350f431a0"
+  ],
+  "ice-cream-desserts": [
+    "7a54e358-58b3-48d3-bdf9-7b0b4f082c5b",
+    "1ad2f71e-08a9-4c8e-b73b-3a33add52941",
+    "28a5ef6b-4f62-4032-ae09-bd031c40471e"
+  ],
+  "frozen-snacks": [
+    "a4511447-f1c4-42ab-a75b-437c25747c44",
+    "63c84470-aff9-4a51-959e-85d89b281c91"
   ]
 }
