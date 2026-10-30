@@ -1,0 +1,128 @@
+[
+ {
+  "title": "Cuticura Original Bloom Talc",
+  "handle": "cuticura-original-bloom-talc",
+  "vendor": "Cuticura",
+  "product_type": "",
+  "body_html": "<p>A cherished classic, Cuticura Original Bloom Talc has a delicate, wholesome and unique floral fragrance. It helps absorb excess moisture, controls body odour, carries sunscreen for protection from the sun and keeps you refreshingly fresh with a fragrance that lasts up to 8 hours.</p>",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.cholayil.com/wp-content/uploads/2025/02/original-bloom-talcum-powder.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "324",
+    "compare_at_price": "324",
+    "available": true,
+    "estimated": false,
+    "featured_image": {
+     "src": "https://www.cholayil.com/wp-content/uploads/2025/02/original-bloom-talcum-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.cholayil.com/wp-content/uploads/2025/02/original-bloom-talcum-powder.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Cuticura Lavender Mist Talc",
+  "handle": "cuticura-lavender-mist-talc",
+  "vendor": "Cuticura",
+  "product_type": "",
+  "body_html": "<p>Cuticura Lavender Mist Talc has the soft, sweet aroma of lavender for a serene and soothing experience. It helps absorb excess moisture, controls body odour, carries sunscreen for protection from the sun and keeps you refreshingly fresh with a fragrance that lasts up to 8 hours.</p>",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.cholayil.com/wp-content/uploads/2025/02/Lavender-mist-talcum-powder.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "324",
+    "compare_at_price": "324",
+    "available": true,
+    "estimated": false,
+    "featured_image": {
+     "src": "https://www.cholayil.com/wp-content/uploads/2025/02/Lavender-mist-talcum-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.cholayil.com/wp-content/uploads/2025/02/Lavender-mist-talcum-powder.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Cuticura Rose Fresh Talc",
+  "handle": "cuticura-rose-fresh-talc",
+  "vendor": "Cuticura",
+  "product_type": "",
+  "body_html": "<p>Cuticura Rose Fresh Talc has a lively, captivating rose fragrance that adds invigorating freshness to every day. It helps absorb excess moisture, controls body odour, carries sunscreen for protection from the sun and keeps you refreshingly fresh with a fragrance that lasts up to 8 hours.</p>",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.cholayil.com/wp-content/uploads/2025/02/Rose-fresh-talcum-powder.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "324",
+    "compare_at_price": "324",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.cholayil.com/wp-content/uploads/2025/02/Rose-fresh-talcum-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.cholayil.com/wp-content/uploads/2025/02/Rose-fresh-talcum-powder.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Cuticura Sandal Glow Talc",
+  "handle": "cuticura-sandal-glow-talc",
+  "vendor": "Cuticura",
+  "product_type": "",
+  "body_html": "<p>Cuticura Sandal Glow Talc has a gentle sandal fragrance that cools the body and soothes the mind. It helps absorb excess moisture, controls body odour, carries sunscreen for protection from the sun and keeps you refreshingly fresh with a fragrance that lasts up to 8 hours.</p>",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.cholayil.com/wp-content/uploads/2025/02/Sandal-talcum-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.cholayil.com/wp-content/uploads/2025/02/Sandal-talcum-powder.jpg"
+   }
+  ]
+ }
+]
