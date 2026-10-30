@@ -1,0 +1,174 @@
+{
+  "brand": "Sri Krishna Sweets",
+  "manufacturer": "Sri Krishna Sweets Pvt. Ltd., Chennai",
+  "feed": "sri-krishna-sweets-feed.json",
+  "logo": "https://srikrishnasweets.com/cdn/shop/files/SriKrishnaSweets_Sri_Krishna_Sweets_SKS_Chennai__SKSSWEETS_Logo.png?v=1713275465",
+  "themeColor": "#2E3192",
+  "themeColorSecondary": "#F5C518",
+  "namePrefix": "Sri Krishna Sweets ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "Mysurpa|Soan Papdi|Kaju Katli|Cashew Bites",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Packaged Mithai"
+      ]
+    },
+    {
+      "match": "Burfi|Athirasam",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "Murukku|Thattai|Pakkoda",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "Mixture|Kara Boondhi",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "Karasev|Omapodi",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "Appalam Chips",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Papad Chips"
+      ]
+    },
+    {
+      "match": "Pappadam",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Papad"
+      ]
+    },
+    {
+      "match": "Vadam|Elaivadam|Rice Pellets|Onion Rings",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    },
+    {
+      "match": "Mango.*Pickle|Mango Thokku",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "Lime Pickle",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Lime Pickle"
+      ]
+    },
+    {
+      "match": "Pickle",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "Thokku|Idly|Podi|Dhall Powder|Nalla Karam",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "Sambar Powder|Rasam Powder",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "Paste",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "Kanjee Mavu",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Porridge & Daliya"
+      ]
+    },
+    {
+      "match": "Noodles",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "Coffee",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "Sharbat",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "Ghee",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "Candy",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    }
+  ]
+}
