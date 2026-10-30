@@ -1,0 +1,34 @@
+{
+  "dairy": [
+    "72a68f82-1ff4-4f8d-be51-d57e084ec784",
+    "e7af4e92-b384-4b7a-b4a8-bb098c364adc"
+  ],
+  "grocery-staples": [
+    "d53170a5-28f9-404e-8766-d47bc19a1009",
+    "6cbb2c43-2d23-42ec-b572-3d714dd68d18"
+  ],
+  "snacks-packaged-foods": [
+    "bbd2f37f-7839-4674-ad86-efa56e5c03f0",
+    "67d3750c-2ec7-4d3f-91ab-342767843a41"
+  ],
+  "beverages": [
+    "9d2e3e5f-bfef-4098-a343-a5c0880132a4",
+    "12caec2e-2958-4593-a9a0-f0562bfa93c3"
+  ],
+  "bakery": [
+    "61f1c485-dd75-45b0-b0d6-ede990e0a54d",
+    "39fac54f-4195-48d3-849a-6817ea14d639"
+  ],
+  "home-care": [
+    "adc2305b-029b-4227-ba92-7b34990fa26b",
+    "c8e9c60d-322c-4178-8685-67e103e0303d"
+  ],
+  "personal-care": [
+    "ec70159c-6ac0-4487-84d6-7574a91422a3",
+    "537a422a-56ba-48cb-899b-ac9c73ccf827"
+  ],
+  "baby-care": [
+    "b902de76-13d4-4ab5-a772-35f91a50e30b",
+    "def913e6-39b6-4fcc-bc5c-8a9ebb532647"
+  ]
+}

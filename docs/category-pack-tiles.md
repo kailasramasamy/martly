@@ -29,15 +29,27 @@ the store sells, Instamart-style, instead of the category's generic art. Mockup 
      wide pack), both on the floor, with a little air at the top.
    - Two slim bottles: side by side at the same height.
    - Flat packs: the back one raised so the front one covers its lower part, with no gap between them.
+   - An upright pack behind a flat one (Harpic behind a Vim bar): the upright one stands tall at the left, the flat one
+     lies across its lower right.
 5. **Serving.** `directoryGroups` swaps a category's `imageUrl` for its tile (martlyshop.in lists categories as text, so
    it has no tiles to swap). A tile
    not drawn yet is drawn in the background on first request, and the category shows its old art until then. No app
    build is needed; current builds show the new images.
 
+## Department tiles (Home "Shop by Category")
+
+- Departments have their own chosen list (`departments.pack_product_ids`, from `prisma/data/department-packs.json`).
+  A store's tile shows the first two it stocks, as given.
+- Otherwise the tile takes the lead pack of one of the department's categories and a pack lying the same way from a
+  later category, using the category pairs above.
+- `departmentGrid` swaps the department's `imageUrl`. The app fills a square with it, so department tiles are drawn
+  square (equal side margins) and cached under their own key.
+- Departments with no pair (Fruits & Vegetables, Meat, Pooja, …) keep their art.
+
 ## Changing it
 
 - Recut a pack: upload it again. The file name carries a content hash, so its tiles are redrawn.
-- Change a tile's packs: edit `category-packs.json` and run apply-picks.
+- Change a tile's packs: edit `category-packs.json` or `department-packs.json` and run apply-picks.
 - Change the layout: edit `layout.ts` and bump `LAYOUT_VERSION`.
 
 ## Tested
@@ -45,6 +57,9 @@ the store sells, Instamart-style, instead of the category's generic art. Mockup 
 - Sree Ranga (local, prod data): all 51 picked categories return tiles. They were drawn in the background within
   seconds of the first request, and match the approved mockup.
 - Fruits & vegetables and other categories without cutouts keep their art.
+
+- Sree Ranga departments (local, prod data): the 8 picked departments return square tiles matching the approved
+  mockup; the other 8 keep their art.
 
 ## Manual checks
 

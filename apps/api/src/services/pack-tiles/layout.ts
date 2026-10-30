@@ -17,12 +17,25 @@ const box = (left: number, top: number, width: number, height: number): Box =>
 /** Packs lie flat (both wider than tall) or stand up; a tile never mixes the two */
 export const isFlat = (aspect: number) => aspect > FLAT;
 
+// An upright pack behind a flat one stands tall at the left; the flat one lies across its lower right, at most half the box high
+function uprightBehindFlat(back: number, front: number) {
+  const shown = 0.55; // share of the upright pack's width left uncovered
+  let hb = MAX_H;
+  let hf = Math.min((0.8 * W) / front, 0.5 * H);
+  const scale = Math.min(1, W / (back * hb * shown + front * hf));
+  hb *= scale;
+  hf *= scale;
+  const left = (W - (back * hb * shown + front * hf)) / 2;
+  return { back: box(left, H - hb, back * hb, hb), front: box(left + back * hb * shown, H - hf, front * hf, hf) };
+}
+
 /**
  * Where the back and front packs sit, from their width ÷ height. Two slim bottles stand side by side at the same
  * height; otherwise the back pack is drawn big and the front one smaller, overlapping its lower right, both on the
  * floor. Flat packs are stacked instead: the back one raised so the front one covers its lower part.
  */
 export function packLayout(back: number, front: number): { back: Box; front: Box } {
+  if (!isFlat(back) && isFlat(front)) return uprightBehindFlat(back, front);
   if ((back + front) * H < 0.72 * W) {
     const h = MAX_H;
     const gap = (W - (back + front) * h) / 3;

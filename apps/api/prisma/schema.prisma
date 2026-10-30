@@ -776,16 +776,18 @@ model UserStore {
 }
 
 model Department {
-  id            String   @id @default(uuid())
-  name          String
-  slug          String   @unique
-  sortOrder     Int      @default(0) @map("sort_order")
-  imageUrl      String?  @map("image_url")
+  id             String   @id @default(uuid())
+  name           String
+  slug           String   @unique
+  sortOrder      Int      @default(0) @map("sort_order")
+  imageUrl       String?  @map("image_url")
   /// A photo of this department's aisle in a local shop, behind the hanging sign on Walk the store
-  aisleImageUrl String?  @map("aisle_image_url")
-  translations  Json?    @map("translations")
-  createdAt     DateTime @default(now()) @map("created_at")
-  updatedAt     DateTime @updatedAt @map("updated_at")
+  aisleImageUrl  String?  @map("aisle_image_url")
+  /// Packs for the department's Home tile, back first; a store's tile shows the first two it stocks
+  packProductIds String[] @default([]) @map("pack_product_ids")
+  translations   Json?    @map("translations")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
 
   categories Category[]
   banners    Banner[]

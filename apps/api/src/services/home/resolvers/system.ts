@@ -5,6 +5,7 @@ import { storeBanners } from "../../marketing/banner-feed.js";
 import { buyAgainProducts, activeDealRows, pastOrderLines } from "../feed-queries.js";
 import { sectionBase, type ResolveContext, type ResolvedSection, type SectionResolver } from "../types.js";
 import { recipeSummaries } from "./recipes.js";
+import { departmentTileImages } from "../../pack-tiles/index.js";
 import { couponOffers, HOME_OFFER_LIMIT } from "../../coupon-offers.js";
 
 function system(entry: Parameters<SectionResolver>[1], data: Record<string, unknown>): ResolvedSection {
@@ -85,9 +86,18 @@ export const timePicks: SectionResolver = async (ctx, entry) => {
 export const departmentGrid: SectionResolver = async (ctx, entry) => {
   const departments = await ctx.prisma.department.findMany({
     orderBy: { sortOrder: "asc" },
-    select: { id: true, name: true, slug: true, sortOrder: true, imageUrl: true, translations: true },
+    select: {
+      id: true, name: true, slug: true, sortOrder: true, imageUrl: true, translations: true,
+      categories: { select: { id: true }, orderBy: [{ sortOrder: "asc" }, { name: "asc" }] },
+    },
   });
-  return departments.length > 0 ? system(entry, { departments }) : null;
+  // Two of the store's own packs where the department has them, else its art
+  const tiles = await departmentTileImages(ctx.prisma, ctx.store.id, departments.map((d) => ({ id: d.id, categoryIds: d.categories.map((c) => c.id) })));
+  return departments.length > 0 ? system(entry, {
+    departments: departments.map((d) => ({
+      id: d.id, name: d.name, slug: d.slug, sortOrder: d.sortOrder, translations: d.translations, imageUrl: tiles.get(d.id) ?? d.imageUrl,
+    })),
+  }) : null;
 };
 
 export const recipes: SectionResolver = async (ctx, entry) => {
