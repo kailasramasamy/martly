@@ -9,7 +9,7 @@ import { DepartmentGroup } from "../../components/category-directory/DepartmentG
 import { StoreGridSection } from "../../components/home/sections/StoreGridSection";
 import { useStore } from "../../lib/store-context";
 import { useStrings } from "../../lib/i18n/use-strings";
-import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { useTabScroll } from "../../lib/tab-bar";
 
 const H_PADDING = 16;
 const GAP = 10;
@@ -20,7 +20,7 @@ type Group = CategoryDirectoryPage["groups"][number];
 
 /** Every department the store stocks, its categories as tiles four to a row, then Shop by store */
 export default function CategoriesScreen() {
-  const tabBarScroll = useTabBarAutoHide();
+  const tabBarScroll = useTabScroll();
   const { selectedStore } = useStore();
   const storeId = selectedStore?.id;
   const [directory, setDirectory] = useState<CategoryDirectoryPage | null>(null);

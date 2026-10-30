@@ -11,7 +11,7 @@ import { useMembership } from "../../lib/membership-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { TabBottomDock } from "../../components/TabIcon";
-import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { useTabScroll } from "../../lib/tab-bar";
 import { RewardsReminder } from "../../components/cart/RewardsReminder";
 import { CartLine } from "../../components/cart/CartLine";
 import { CartBill } from "../../components/cart/CartBill";
@@ -34,7 +34,7 @@ export default function CartScreen() {
   const t = useStrings("cart");
   const ml = useStrings("monthlyList");
   const { isAuthenticated } = useAuth();
-  const tabBarScroll = useTabBarAutoHide();
+  const tabBarScroll = useTabScroll();
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
   const [dockHeight, setDockHeight] = useState(0);
   const router = useRouter();

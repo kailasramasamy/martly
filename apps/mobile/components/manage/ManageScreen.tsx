@@ -3,7 +3,7 @@ import { View, ScrollView, RefreshControl, StyleSheet } from "react-native";
 import { colors } from "../../constants/theme";
 import { ManageHeader } from "./ManageHeader";
 import { manage } from "./ui/tokens";
-import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { useTabScroll } from "../../lib/tab-bar";
 
 interface ManageScreenProps {
   title: string;
@@ -19,7 +19,7 @@ interface ManageScreenProps {
 
 /** Tab-level screen: ink header band over a scrolling canvas */
 export function ManageScreen({ title, children, headerSubtitle, headerContent, headerRight, refreshing = false, onRefresh, dockHeight = 0 }: ManageScreenProps) {
-  const tabBarScroll = useTabBarAutoHide();
+  const tabBarScroll = useTabScroll();
   return (
     <View style={styles.root}>
       <ManageHeader title={title} subtitle={headerSubtitle} right={headerRight} collapsed={tabBarScroll.headerCollapsed}>{headerContent}</ManageHeader>

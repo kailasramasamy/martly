@@ -15,7 +15,7 @@ import { StoreProductTile } from "../../components/manage/inventory/StoreProduct
 import { CatalogEmpty } from "../../components/manage/inventory/CatalogEmpty";
 import { useCatalog } from "../../components/manage/inventory/use-catalog";
 import type { StoreProductItem } from "../../components/manage/inventory/types";
-import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { useTabScroll } from "../../lib/tab-bar";
 
 const COLUMNS = 3;
 // Matches the header's side padding so the grid lines up with the search box above it
@@ -32,7 +32,7 @@ function AddProductButton({ onPress }: { onPress: () => void }) {
 }
 
 export default function ManageCatalogScreen() {
-  const tabBarScroll = useTabBarAutoHide();
+  const tabBarScroll = useTabScroll();
   const router = useRouter();
   const { user } = useAuth();
   const { storeId, store, loading: scopeLoading } = useManageScope();

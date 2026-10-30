@@ -7,7 +7,7 @@ import { strings, type Strings } from "../../lib/i18n";
 import { useStrings } from "../../lib/i18n/use-strings";
 import { colors, fonts } from "../../constants/theme";
 import { OrderCardSkeleton } from "../../components/SkeletonLoader";
-import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { useTabScroll } from "../../lib/tab-bar";
 import { withSignIn } from "../../components/SignInPrompt";
 import { OrderRow } from "../../components/orders/OrderRow";
 import { OrderFilterChips } from "../../components/orders/OrderFilterChips";
@@ -82,7 +82,7 @@ function ErrorState({ onRetry }: { onRetry: () => void }) {
 }
 
 function OrdersScreen() {
-  const tabBarScroll = useTabBarAutoHide();
+  const tabBarScroll = useTabScroll();
   const router = useRouter();
   const t = useStrings("orders").tab;
   const [filter, setFilter] = useState<OrderFilter>("ALL");

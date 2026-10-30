@@ -28,7 +28,6 @@ import * as ExpoSplashScreen from "expo-splash-screen";
 import { AuthProvider, useAuth } from "../lib/auth-context";
 import { PersonaProvider, usePersona } from "../lib/persona-context";
 import { ManageScopeProvider } from "../lib/manage-scope-context";
-import { TabBarVisibilityProvider } from "../lib/tab-bar-visibility";
 import { CartProvider } from "../lib/cart-context";
 import { StoreProvider } from "../lib/store-context";
 import { WishlistProvider } from "../lib/wishlist-context";
@@ -243,7 +242,6 @@ function AppRoot({ initialLanguage }: { initialLanguage: LanguageCode | null }) 
         <AuthProvider>
           <PersonaProvider>
           <ManageScopeProvider>
-          <TabBarVisibilityProvider>
           <LanguageProvider initialLanguage={initialLanguage}>
           <StoreProvider>
             <MembershipProvider>
@@ -265,7 +263,6 @@ function AppRoot({ initialLanguage }: { initialLanguage: LanguageCode | null }) 
             </MembershipProvider>
           </StoreProvider>
           </LanguageProvider>
-          </TabBarVisibilityProvider>
           </ManageScopeProvider>
           </PersonaProvider>
         </AuthProvider>

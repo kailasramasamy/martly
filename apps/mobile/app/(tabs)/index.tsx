@@ -35,7 +35,7 @@ import { refreshBrandSpotlight } from "../../lib/use-brand-spotlight";
 import type { HomeTheme } from "@martly/shared/types";
 import { TabBottomDock } from "../../components/TabIcon";
 import { recordSectionView } from "../../lib/home-events";
-import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { useTabScroll } from "../../lib/tab-bar";
 
 const THEMED_LEADS = new Set<string>(["FESTIVE_HERO", "HERO_CARDS"]);
 // Welcome credit sits under the lead section: the lead hero lays itself out under the floating header
@@ -58,7 +58,7 @@ function useHeaderHeights(collapsed: boolean) {
 
 /** One scroll handler for both the tab bar's auto-hide and the back-to-top pill */
 function useHomeScroll() {
-  const tabBarScroll = useTabBarAutoHide();
+  const tabBarScroll = useTabScroll();
   const backToTop = useBackToTop();
   const listRef = useRef<FlatList<MobileHomeSection>>(null);
   const tabOnScroll = tabBarScroll.scrollProps.onScroll;

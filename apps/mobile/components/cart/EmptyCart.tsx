@@ -8,7 +8,7 @@ import { useAuth } from "../../lib/auth-context";
 import { useStore } from "../../lib/store-context";
 import { useStrings } from "../../lib/i18n/use-strings";
 import { ProductActionsProvider } from "../../lib/product-actions";
-import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { useTabScroll } from "../../lib/tab-bar";
 import type { CartReview, StoreProduct } from "../../lib/types";
 import { useReorder } from "../orders/use-reorder";
 import { useLastOrderId } from "../orders/use-last-order-id";
@@ -41,7 +41,7 @@ export function EmptyCart() {
   const lastOrderId = useLastOrderId();
   const reorder = useReorder();
   // Brings the tab bar back when the cart empties while it was scrolled away
-  const tabBarScroll = useTabBarAutoHide();
+  const tabBarScroll = useTabScroll();
 
   return (
     <ProductActionsProvider store={selectedStore ?? null}>

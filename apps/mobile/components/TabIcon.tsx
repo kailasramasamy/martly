@@ -1,9 +1,9 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { useIsFocused } from "@react-navigation/native";
-import { View, Text, Animated, StyleSheet, type LayoutChangeEvent } from "react-native";
+import { View, Text, StyleSheet, type LayoutChangeEvent } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
-import { useTabBarHeight, useTabBarProgress } from "../lib/tab-bar-visibility";
+import { useTabBarHeight } from "../lib/tab-bar";
 import { useToast } from "../lib/toast-context";
 
 type IconName = keyof typeof Ionicons.glyphMap;
@@ -28,15 +28,14 @@ export const tabLabelStyle = { fontFamily: fonts.bold, fontSize: 10.5, marginTop
 
 /**
  * Wraps every tab screen. The bar floats over the content and slides away on the native driver, so hiding it
- * never resizes the screen; scroll views clear it with `useTabBarAutoHide().contentStyle`.
+ * never resizes the screen; scroll views clear it with `useTabScroll().contentStyle`.
  */
 export function TabSceneLayout({ children }: { children: ReactNode }) {
   return <View style={styles.scene}>{children}</View>;
 }
 
 /**
- * A sticky footer on a tab screen (checkout bar, floating cart, bulk actions): sits just above the tab bar and
- * slides down with it when the bar hides. Report its height via `onLayout` to pad the list above it.
+ * A sticky footer on a tab screen (checkout bar, floating cart, bulk actions): sits just above the tab bar. Report its height via `onLayout` to pad the list above it.
  * While its screen is in view, toasts rise above it instead of covering it.
  */
 interface TabBottomDockProps {
@@ -48,8 +47,6 @@ interface TabBottomDockProps {
 
 export function TabBottomDock({ children, onLayout, noTabBar }: TabBottomDockProps) {
   const { height } = useTabBarHeight();
-  const { progress } = useTabBarProgress();
-  const translateY = progress.interpolate({ inputRange: [0, 1], outputRange: [0, height] });
   const focused = useIsFocused();
   const { setDockHeight } = useToast();
   const [dockHeight, setOwnHeight] = useState(0);
@@ -61,28 +58,26 @@ export function TabBottomDock({ children, onLayout, noTabBar }: TabBottomDockPro
   }, [focused, dockHeight, setDockHeight]);
 
   return (
-    <Animated.View
-      style={[styles.dock, noTabBar ? { bottom: 0 } : { bottom: height, transform: [{ translateY }] }]}
+    <View
+      style={[styles.dock, { bottom: noTabBar ? 0 : height }]}
       onLayout={(e) => {
         setOwnHeight(e.nativeEvent.layout.height);
         onLayout?.(e);
       }}
     >
       {children}
-    </Animated.View>
+    </View>
   );
 }
 
 /** Shared bottom tab bar look for the Shop and Manage personas */
 export function useTabBarOptions() {
   const { height, bottomPadding } = useTabBarHeight();
-  const { progress } = useTabBarProgress();
-  const translateY = progress.interpolate({ inputRange: [0, 1], outputRange: [0, height] });
   return {
     tabBarActiveTintColor: colors.primary,
     tabBarInactiveTintColor: TAB_INACTIVE,
     tabBarLabelStyle: tabLabelStyle,
-    tabBarStyle: { ...styles.tabBar, height, paddingBottom: bottomPadding, transform: [{ translateY }] },
+    tabBarStyle: { ...styles.tabBar, height, paddingBottom: bottomPadding },
     headerTitleStyle: styles.headerTitle,
     headerShadowVisible: false,
   };

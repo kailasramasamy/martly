@@ -10,14 +10,14 @@ import { bulkStep } from "@martly/shared/order-flow";
 import { useOrdersTab } from "../../components/manage/orders/use-orders-tab";
 import { useAdvanceStep } from "../../components/manage/orders/use-advance-step";
 import type { OrderListItem } from "../../components/manage/orders/types";
-import { useTabBarAutoHide } from "../../lib/tab-bar-visibility";
+import { useTabScroll } from "../../lib/tab-bar";
 import { TabBottomDock } from "../../components/TabIcon";
 import { useAuth } from "../../lib/auth-context";
 
 export default function ManageOrdersScreen() {
   const router = useRouter();
   const tab = useOrdersTab();
-  const tabBarScroll = useTabBarAutoHide();
+  const tabBarScroll = useTabScroll();
   // Height of the bulk bar docked above the tab bar, so the list scrolls clear of it
   const [dockHeight, setDockHeight] = useState(0);
   const { user } = useAuth();
