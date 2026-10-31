@@ -153,7 +153,13 @@ export async function searchStoreProducts(prisma: PrismaClient, store: { id: str
     storeBrandBoost(prisma, storeId),
     prisma.store.findUniqueOrThrow({ where: { id: storeId }, select: { id: true, name: true, logoUrl: true } }),
   ]);
-  const { productIds, meta } = await searchProducts(prisma, storeId, params.q, { exact: params.exact, boost });
+  // A picked tab is searched on its own as well, so the tab shows its whole shelf rather than what made the overall cut
+  const [searched, shelf] = await Promise.all([
+    searchProducts(prisma, storeId, params.q, { exact: params.exact, boost }),
+    params.subcategoryId ? searchProducts(prisma, storeId, params.q, { exact: params.exact, boost, subcategoryId: params.subcategoryId }) : null,
+  ]);
+  const { meta } = searched;
+  const productIds = [...new Set([...(shelf?.productIds ?? []), ...searched.productIds])];
   const productWhere: Prisma.ProductWhereInput = productIds.length > 0
     ? { id: { in: productIds } }
     : { name: { contains: params.q, mode: "insensitive" } };
@@ -166,10 +172,13 @@ export async function searchStoreProducts(prisma: PrismaClient, store: { id: str
 
   const rank = new Map(productIds.map((id, i) => [id, i]));
   const ranked = sortByProduct(rows, SearchSortBy.RELEVANCE, rank);
+  // The tab row comes from the overall search alone, so it stays the same whichever tab is picked
+  const overall = new Set(searched.productIds);
+  const tabRows = shelf && overall.size > 0 ? ranked.filter((r) => overall.has(r.productId)) : ranked;
   const inTag = ranked.filter((r) =>
     (!params.tag || r.product.tags.includes(params.tag)) &&
     (!params.subcategoryId || r.product.subcategoryId === params.subcategoryId));
-  const facets: SearchFacets = { tags: tagFacets(ranked), subcategories: subcategoryFacets(ranked, meta.correctedQuery ?? params.q), ...filterFacets(inTag, boost, own) };
+  const facets: SearchFacets = { tags: tagFacets(tabRows), subcategories: subcategoryFacets(tabRows, meta.correctedQuery ?? params.q), ...filterFacets(inTag, boost, own) };
   const data = markBrandPicks(sortByProduct(applyFilters(inTag, params, boost, storeId), params.sortBy, rank), boost);
   const query = meta.correctedQuery ?? params.q;
   const adFree = params.sortBy !== SearchSortBy.RELEVANCE || params.brandIds?.length || namesBrand(query, facets.brands.map((b) => b.name));

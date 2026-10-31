@@ -49,6 +49,8 @@ interface SearchScope {
   listedOnly?: boolean;
   collectionId?: string;
   aisle?: AisleScope;
+  /** One shelf: a search tab the shopper picked */
+  subcategoryId?: string;
   /** What the store promotes: own brands and unbranded staples (OWN_POPULARITY), featured brands (FEATURED_POPULARITY) */
   boost?: BrandBoost;
   /** The store's region, whose brand scores rank it */
@@ -58,8 +60,9 @@ interface SearchScope {
 /** `brand` is a ready `AND …` filter over `p`: one brand, or the store's own */
 export type AisleScope = { categoryId: string; subcategoryId?: string; brand: Prisma.Sql };
 
-const inScope = ({ storeId, listedOnly, collectionId, aisle }: SearchScope) => {
+const inScope = ({ storeId, listedOnly, collectionId, aisle, subcategoryId }: SearchScope) => {
   const store = inStoreScope({ storeId, listedOnly });
+  if (subcategoryId) return Prisma.sql`${store} AND p.subcategory_id = ${subcategoryId}`;
   if (collectionId) {
     return Prisma.sql`${store} AND EXISTS (SELECT 1 FROM collection_items ci WHERE ci.collection_id = ${collectionId} AND ci.product_id = p.id)`;
   }
@@ -107,10 +110,10 @@ export async function searchProducts(
   prisma: PrismaClient,
   storeId: string,
   query: string,
-  { minResults = 3, exact = false, boost }: { minResults?: number; exact?: boolean; boost?: BrandBoost } = {},
+  { minResults = 3, exact = false, boost, subcategoryId }: { minResults?: number; exact?: boolean; boost?: BrandBoost; subcategoryId?: string } = {},
 ): Promise<SearchResult> {
   const promoted = boost ?? await storeBrandBoost(prisma, storeId);
-  return runSearch(prisma, { storeId, listedOnly: true, boost: promoted }, withoutStoreBrand(storeId, query), { minResults, exact, semantic: true, limit: MAX_KEYWORD_RESULTS });
+  return runSearch(prisma, { storeId, listedOnly: true, boost: promoted, subcategoryId }, withoutStoreBrand(storeId, query), { minResults, exact, semantic: true, limit: MAX_KEYWORD_RESULTS });
 }
 
 /** Same ranking within one collection's products, for a campaign screen's search; no LLM expansion as it runs per keystroke */
@@ -230,11 +233,28 @@ const wordsBesideBrand = (q: string) => Prisma.sql`CROSS JOIN LATERAL (SELECT CA
     THEN array_remove(string_to_array(replace(' ' || ${q} || ' ', ' ' || b.clean || ' ', ' '), ' '), '')
   ELSE '{}'::text[] END AS words) rest`;
 
+// A department, category or subcategory name as a query sees it: lowercase words, no "&" or "and"
+const plainName = (name: Prisma.Sql) =>
+  Prisma.sql`btrim(regexp_replace(regexp_replace(lower(${name}), '\\mand\\M', ' ', 'g'), '[^a-z0-9]+', ' ', 'g'))`;
+const plainQuery = (q: string) => q.replace(/\band\b/g, " ").replace(/[^a-z0-9]+/g, " ").trim();
+
+// The query names the product's aisle: one of the subcategory's search terms, the whole name of its subcategory,
+// category or department ("frozen foods", "fries & wedges"), or one word that starts its department's ("frozen")
+function namesAisle(q: string) {
+  const plain = plainQuery(q);
+  const departmentWord = plain.length >= 3 && !plain.includes(" ")
+    ? Prisma.sql`OR starts_with(${plainName(Prisma.sql`d.name`)} || ' ', ${plain + " "})`
+    : Prisma.empty;
+  return Prisma.sql`COALESCE(${q} = ANY(s.search_terms)
+    OR ${plain} IN (${plainName(Prisma.sql`s.name`)}, ${plainName(Prisma.sql`c.name`)}, ${plainName(Prisma.sql`d.name`)})
+    ${departmentWord}, false)`;
+}
+
 // Every stocked product with its intent flag, name tier and taxonomy hit for the query
 // (needs the `term`, `sales`, `loose` and brand_names CTEs)
 const matchedProducts = (q: string, scope: SearchScope) => Prisma.sql`
   SELECT p.id, p.name, p.brand_id, ${popularity(scope)} AS popularity, COALESCE(sales.n, 0) AS sold,
-    COALESCE(${q} = ANY(s.search_terms), false) AS intent,
+    ${namesAisle(q)} AS intent,
     CASE
       WHEN own.name ~* ('\\m' || term.rx || '\\M') THEN 0
       WHEN own.name ~* ('\\m' || term.rx) THEN 1
@@ -257,13 +277,14 @@ const matchedProducts = (q: string, scope: SearchScope) => Prisma.sql`
   LEFT JOIN brand_names b ON b.id = p.brand_id
   LEFT JOIN subcategories s ON s.id = p.subcategory_id
   LEFT JOIN categories c ON c.id = s.category_id
+  LEFT JOIN departments d ON d.id = c.department_id
   LEFT JOIN sales ON sales.product_id = p.id
   CROSS JOIN LATERAL (SELECT regexp_replace(${nameForQuery(q)}, '[''\u2019]', '', 'g') AS name) own
   ${wordsBesideBrand(q)}
   WHERE ${inScope(scope)}`;
 
 async function keywordSearch(prisma: PrismaClient, q: string, scope: SearchScope, limit: number): Promise<string[]> {
-  // Intent first: products in a subcategory whose search terms include the query ("shaving" → Razor & Blades),
+  // Intent first: products in an aisle the query names (namesAisle: "shaving" → Razor & Blades, "frozen" → Frozen Foods),
   // brands taking weighted turns by popularity, each brand leading with its name matches.
   // Then name tiers: 0 whole word, 1 word-start, 2 every word starts a name word, 3 brand + its shelf ("rin soap"),
   // 4 substring, 5 translated name, 6 description only. Within a tier:
