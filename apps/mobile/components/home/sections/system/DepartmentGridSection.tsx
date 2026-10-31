@@ -12,8 +12,21 @@ import { CategoryTile } from "../../../CategoryTile";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const H_PADDING = 16;
-// 4 tiles per row inside the padded section card
-const TILE_SIZE = Math.floor((SCREEN_WIDTH - H_PADDING * 2 - 32 - 12 * 3) / 4);
+const GAP = 12;
+const INNER_WIDTH = SCREEN_WIDTH - H_PADDING * 2 - 32;
+const tileSize = (perRow: number) => Math.floor((INNER_WIDTH - GAP * (perRow - 1)) / perRow);
+
+/** Rows of 4, led by rows of 3 bigger tiles so the last row is never short */
+function gridRows<T>(items: T[]): T[][] {
+  const leadRows = items.length >= 9 ? (4 - (items.length % 4)) % 4 : 0;
+  const rows: T[][] = [];
+  for (let i = 0; i < items.length; ) {
+    const perRow = rows.length < leadRows ? 3 : 4;
+    rows.push(items.slice(i, i + perRow));
+    i += perRow;
+  }
+  return rows;
+}
 
 // The bestseller cards' neutral grey with a touch of teal, so Home's first blocks read as one set
 const TILE_TINT = "#e8f1f1";
@@ -36,16 +49,20 @@ export const DepartmentGridSection = memo(function DepartmentGridSection({ secti
         </TouchableOpacity>
       </View>
       <View style={styles.grid}>
-        {departments.map((dept) => (
-          <CategoryTile
-            key={dept.id}
-            title={getLocalizedName(dept)}
-            imageUrl={dept.imageUrl}
-            fallbackIcon={getCategoryIcon(dept.name)}
-            size={TILE_SIZE}
-            onPress={() => openDepartment(dept.id)}
-            tint={TILE_TINT}
-          />
+        {gridRows(departments).map((row) => (
+          <View key={row[0].id} style={styles.row}>
+            {row.map((dept) => (
+              <CategoryTile
+                key={dept.id}
+                title={getLocalizedName(dept)}
+                imageUrl={dept.imageUrl}
+                fallbackIcon={getCategoryIcon(dept.name)}
+                size={tileSize(departments.length >= 9 ? row.length : 4)}
+                onPress={() => openDepartment(dept.id)}
+                tint={TILE_TINT}
+              />
+            ))}
+          </View>
         ))}
       </View>
     </View>
@@ -61,5 +78,6 @@ const styles = StyleSheet.create({
   title: { flexShrink: 1, fontSize: 18, fontWeight: "700", color: colors.text },
   link: { flexDirection: "row", alignItems: "center", gap: 2 },
   linkText: { fontSize: 13, fontWeight: "600", color: colors.primary },
-  grid: { flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", rowGap: 14 },
+  grid: { rowGap: 14 },
+  row: { flexDirection: "row", columnGap: GAP },
 });

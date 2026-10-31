@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react"
 import type { WebHomeSection, WebLinkTile } from "@martly/shared/types"
 import { Art, PackCluster, Section, SectionHead, TileRail } from "./parts"
 
@@ -9,9 +10,9 @@ const PAINTS = ["#bfe3d6", "#f6c6d2", "#ffd7a3", "#c6d8f5", "#e0cdf2"]
 
 const RAIL_ITEM = "w-[23%] shrink-0 snap-start sm:w-auto"
 
-function SquareTile({ tile, className = "bg-brand-tint hover:bg-teal-100", item = RAIL_ITEM }: { tile: WebLinkTile; className?: string; item?: string }) {
+function SquareTile({ tile, className = "bg-brand-tint hover:bg-teal-100", item = RAIL_ITEM, style }: { tile: WebLinkTile; className?: string; item?: string; style?: CSSProperties }) {
   return (
-    <li className={item}>
+    <li className={item} style={style}>
       <a href={tile.href} className={`group block h-full rounded-2xl px-1.5 pb-2.5 pt-1.5 text-center ${className}`}>
         <Art src={tile.imageUrl} className="aspect-square w-full transition group-hover:scale-105" />
         <span className="mt-1 block text-[11px] font-bold leading-tight sm:text-[13px]">{tile.label}</span>
@@ -20,12 +21,36 @@ function SquareTile({ tile, className = "bg-brand-tint hover:bg-teal-100", item 
   )
 }
 
+/**
+ * Splits tiles into the fewest rows of at most `perRow`, fuller rows last, so no row is left short.
+ * Returns the grid's column count and each tile's span (a row of 7 in an 8-wide grid gets bigger tiles).
+ */
+function balancedGrid(count: number, perRow: number) {
+  if (count <= perRow) return { cols: perRow, spans: Array<number>(count).fill(1) }
+  const rows = Math.ceil(count / perRow)
+  const short = Math.floor(count / rows)
+  const fullRows = count % rows
+  const cols = fullRows ? short * (short + 1) : short
+  const spans = Array.from({ length: count }, (_, i) => (i < (rows - fullRows) * short ? cols / short : cols / (short + 1)))
+  return { cols, spans }
+}
+
 export function DepartmentGrid({ section }: { section: Of<"DEPARTMENT_GRID"> }) {
+  const sm = balancedGrid(section.tiles.length, 6)
+  const lg = balancedGrid(section.tiles.length, 8)
+  const gridVars = { "--cols-sm": `repeat(${sm.cols}, minmax(0, 1fr))`, "--cols-lg": `repeat(${lg.cols}, minmax(0, 1fr))` } as CSSProperties
   return (
     <Section id={section.id}>
       <SectionHead id={section.id} title={section.title ?? "Shop by department"} subtitle={section.subtitle} fallback="Departments" />
-      <ul className="-mx-4 grid auto-cols-[23%] grid-flow-col grid-rows-2 gap-2.5 overflow-x-auto px-4 pb-1 sm:mx-0 sm:auto-cols-auto sm:grid-flow-row sm:grid-cols-6 sm:grid-rows-none sm:gap-3 sm:px-0 lg:grid-cols-8">
-        {section.tiles.map((t) => <SquareTile key={t.href} tile={t} item="" />)}
+      <ul style={gridVars} className="-mx-4 grid auto-cols-[23%] grid-flow-col grid-rows-2 gap-2.5 overflow-x-auto px-4 pb-1 sm:mx-0 sm:auto-cols-auto sm:grid-flow-row sm:grid-cols-(--cols-sm) sm:grid-rows-none sm:gap-3 sm:px-0 lg:grid-cols-(--cols-lg)">
+        {section.tiles.map((t, i) => (
+          <SquareTile
+            key={t.href}
+            tile={t}
+            item="sm:col-span-(--span-sm) lg:col-span-(--span-lg)"
+            style={{ "--span-sm": sm.spans[i], "--span-lg": lg.spans[i] } as CSSProperties}
+          />
+        ))}
       </ul>
     </Section>
   )
