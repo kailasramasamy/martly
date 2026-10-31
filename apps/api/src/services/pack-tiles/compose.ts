@@ -5,7 +5,7 @@ import { ART, packLayout } from "./layout.js";
 import type { Pack } from "./pick.js";
 
 // Bump when the layout changes, so every tile is drawn again
-const LAYOUT_VERSION = 1;
+const LAYOUT_VERSION = 4;
 
 /** The cache key of a pair's tile: its two cutouts, the layout, and whether the tile is square */
 export const tileKey = ([back, front]: [Pack, Pack], square = false) =>

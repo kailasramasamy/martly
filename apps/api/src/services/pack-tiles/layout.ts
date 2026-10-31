@@ -8,6 +8,8 @@ const SLIM_FRONT = 0.92;
 const MAX_H = 0.92 * H;
 // Packs wider than this (width ÷ height) lie flat
 const FLAT = 1.2;
+// Upright packs at least this wide are near square
+const SQUARE = 0.8;
 
 export interface Box { left: number; top: number; width: number; height: number }
 
@@ -42,12 +44,14 @@ export function packLayout(back: number, front: number): { back: Box; front: Box
     return { back: box(gap, H - h, back * h, h), front: box(2 * gap + back * h, H - h, front * h, h) };
   }
   const flat = isFlat(back) && isFlat(front);
-  const overlap = flat ? 0.75 : 0.3;
+  // A wider pack in front of a near-square one is sized by width like flat packs, and overlaps more, so the back one stays big
+  const wide = !flat && back >= SQUARE && front > back;
+  const overlap = flat ? 0.75 : wide ? 0.4 : 0.3;
   const lift = flat ? 0.8 : 0;
   // A slim pack in front of a wide one keeps nearly full height, so it stays visible
   const frontShare = front < 0.5 * back ? SLIM_FRONT : FRONT;
-  // Flat packs scale by width, so the front one is FRONT × as wide as the back one
-  const frontHeight = (hb: number) => (flat ? (FRONT * back * hb) / front : frontShare * hb);
+  // Flat and wide packs scale by width, so the front one is FRONT × as wide as the back one
+  const frontHeight = (hb: number) => (flat || wide ? (FRONT * back * hb) / front : frontShare * hb);
   let hb = MAX_H;
   for (let i = 0; i < 2; i++) {
     const hf = frontHeight(hb);
