@@ -74,11 +74,50 @@ async function categoryMatches(prisma: PrismaClient, storeId: string, term: stri
     LIMIT ${CATEGORY_LIMIT}`;
 }
 
+interface Aisle { name: string; imageUrl: string | null; subcategoryIds: string[] }
+
+// The department or category the term starts the name of ("frozen", "frozen foods" → Frozen Foods), when the store
+// stocks something there; a department before a category
+async function aisleMatch(prisma: PrismaClient, storeId: string, tokens: string[]): Promise<Aisle | null> {
+  const rows = await prisma.$queryRaw<Aisle[]>`
+    WITH aisles AS (
+      SELECT 0 AS rank, d.name, d.image_url, ARRAY(
+        SELECT s.id FROM categories c JOIN subcategories s ON s.category_id = c.id WHERE c.department_id = d.id
+      ) AS subs FROM departments d
+      UNION ALL
+      SELECT 1, c.name, c.image_url, ARRAY(SELECT s.id FROM subcategories s WHERE s.category_id = c.id) FROM categories c
+    )
+    SELECT name, image_url AS "imageUrl", subs AS "subcategoryIds" FROM aisles a
+    WHERE lower(a.name) LIKE ${`${escapeLike(tokens[0])}%`} AND ${allWords(Prisma.sql`a.name`, tokens)}
+      AND EXISTS (SELECT 1 FROM products p WHERE p.subcategory_id = ANY(a.subs) AND p.is_active AND ${stocked(storeId)})
+    ORDER BY rank, length(a.name) LIMIT 1`;
+  return rows[0] ?? null;
+}
+
+// The aisle's lead shelves in catalog order, each category's first before any second ("dairy" → Toned Milk,
+// Fresh Curd, Fresh Paneer…), with a stocked product's photo
+async function aisleSubcategories(prisma: PrismaClient, storeId: string, aisle: Aisle) {
+  return prisma.$queryRaw<{ text: string; imageUrl: string | null }[]>`
+    SELECT text, "imageUrl" FROM (
+      SELECT s.name AS text, img.image_url AS "imageUrl", c.sort_order AS category_order, c.name AS category,
+        ROW_NUMBER() OVER (PARTITION BY c.id ORDER BY s.sort_order, s.name) AS shelf
+      FROM subcategories s
+      JOIN categories c ON c.id = s.category_id
+      CROSS JOIN LATERAL (
+        SELECT p.image_url FROM products p
+        WHERE p.subcategory_id = s.id AND p.is_active AND p.image_url IS NOT NULL AND ${stocked(storeId)} LIMIT 1
+      ) img
+      WHERE s.id = ANY(${aisle.subcategoryIds}::text[])
+    ) shelves
+    ORDER BY shelf, category_order, category
+    LIMIT ${CATEGORY_LIMIT}`;
+}
+
 interface BrandRow { brand: string; imageUrl: string | null; subcategories: string[] }
 
-// Best-known brands with products matching every word (or in an aisle the term names), plus each brand's
-// subcategories for those products
-async function brandRows(prisma: PrismaClient, storeId: string, term: string, tokens: string[]) {
+// Best-known brands with products matching every word (or on a shelf whose search terms it is), plus each brand's
+// subcategories for those products; for a term naming an aisle, the best-known brands in that aisle
+async function brandRows(prisma: PrismaClient, storeId: string, term: string, tokens: string[], aisle: Aisle | null) {
   const region = await storeRegion(prisma, storeId);
   return prisma.$queryRaw<BrandRow[]>`
     WITH ${brandNamesCte}
@@ -89,7 +128,9 @@ async function brandRows(prisma: PrismaClient, storeId: string, term: string, to
     JOIN brand_names b ON b.id = p.brand_id
     LEFT JOIN subcategories s ON s.id = p.subcategory_id
     WHERE p.is_active AND ${stocked(storeId)}
-      AND (${allWords(nameForQuery(term), tokens, true)} OR ${term} = ANY(s.search_terms))
+      AND ${aisle
+        ? Prisma.sql`p.subcategory_id = ANY(${aisle.subcategoryIds}::text[])`
+        : Prisma.sql`(${allWords(nameForQuery(term), tokens, true)} OR ${term} = ANY(s.search_terms))`}
     GROUP BY b.name
     -- Popularity weighted by how much of the brand matches: a leader with one stray hit ("Cadbury chips") stays out
     ORDER BY MAX(${brandPopularitySql(region)}) * ln(1 + COUNT(*)) DESC
@@ -132,6 +173,8 @@ async function sponsoredSuggestion(prisma: PrismaClient, ads: SponsoredAd[], ter
   return { text: product.name, kind: "query" as const, imageUrl: product.imageUrl, sponsored: { bannerId: ad.bannerId } };
 }
 
+const categoryRow = (c: { text: string; imageUrl: string | null }): Suggestion => ({ text: c.text, kind: "category", imageUrl: c.imageUrl });
+
 function dedupe(candidates: Suggestion[]) {
   const seen = new Set<string>();
   return candidates.filter((s) => {
@@ -159,11 +202,14 @@ export async function suggestSearches(prisma: PrismaClient, store: { id: string;
   const correctedQuery = termImage ? undefined : corrected;
   const term = correctedQuery ?? completed;
   const tokens = term.split(" ");
-  const image = correctedQuery ? correctedImage : termImage;
-  const [popular, categories, brands, ads] = await Promise.all([
+  const aisle = await aisleMatch(prisma, storeId, tokens);
+  // A term naming an aisle shows the aisle's art, its biggest shelves and its brands by name
+  const image = aisle?.imageUrl ?? (correctedQuery ? correctedImage : termImage);
+  const [popular, shelves, categories, brands, ads] = await Promise.all([
     popularQueries(prisma, storeId, term),
+    aisle ? aisleSubcategories(prisma, storeId, aisle) : [],
     categoryMatches(prisma, storeId, term, tokens),
-    brandRows(prisma, storeId, term, tokens),
+    brandRows(prisma, storeId, term, tokens, aisle),
     term.length >= MIN_AD_TERM ? liveSponsored(prisma, store) : [],
   ]);
   const [popularRows, ad] = await Promise.all([
@@ -177,8 +223,9 @@ export async function suggestSearches(prisma: PrismaClient, store: { id: string;
     ...(image ? [{ text: term, kind: "query" as const, imageUrl: image }] : []),
     ...(ad ? [ad] : []),
     ...popularRows,
-    ...categories.map((c) => ({ text: c.text, kind: "category" as const, imageUrl: c.imageUrl })),
-    ...brandSuggestions(brands, term, tokens),
+    ...(aisle
+      ? [...shelves.map(categoryRow), ...brands.map((b) => ({ text: b.brand, kind: "brand" as const, imageUrl: b.imageUrl })), ...categories.map(categoryRow)]
+      : [...categories.map(categoryRow), ...brandSuggestions(brands, term, tokens)]),
   ]);
   return { suggestions, correctedQuery };
 }
