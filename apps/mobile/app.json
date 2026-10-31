@@ -2,7 +2,7 @@
   "expo": {
     "name": "Martly",
     "slug": "martly",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "scheme": "martly",
     "platforms": [
       "ios",
@@ -13,7 +13,12 @@
     "icon": "./assets/icon.png",
     "plugins": [
       "expo-router",
-      "expo-secure-store",
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": false
+        }
+      ],
       [
         "expo-splash-screen",
         {
@@ -33,8 +38,8 @@
       [
         "expo-speech-recognition",
         {
-          "microphonePermission": "Allow Martly to use the microphone for voice ordering.",
-          "speechRecognitionPermission": "Allow Martly to use speech recognition for voice ordering.",
+          "microphonePermission": "Martly uses the microphone so you can order by voice. For example, say \"2 kg onions and 1 litre milk\" and Martly adds them to your cart.",
+          "speechRecognitionPermission": "Martly turns your voice into text to fill your cart. For example, saying \"1 kg sugar\" adds sugar to your cart.",
           "androidSpeechServicePackages": [
             "com.google.android.googlequicksearchbox"
           ]
@@ -43,11 +48,27 @@
       [
         "expo-audio",
         {
-          "microphonePermission": "Allow Martly to use the microphone for voice ordering."
+          "microphonePermission": "Martly uses the microphone so you can order by voice. For example, say \"2 kg onions and 1 litre milk\" and Martly adds them to your cart."
         }
       ],
       "@react-native-firebase/app",
       "@react-native-firebase/messaging",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Martly uses your location to show grocery stores that deliver to you and to set your delivery address. For example, it finds stores near your home and pins your house on the map so the rider can reach you. Delivery riders also share their location during a delivery so customers can track the order.",
+          "locationAlwaysAndWhenInUsePermission": false,
+          "locationAlwaysPermission": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Martly lets you pick photos from your library to attach to reviews and returns. For example, add a photo of a damaged item when you request a return.",
+          "cameraPermission": "Martly uses the camera to take product photos. For example, store staff photograph a product pack to add it to the store's catalog.",
+          "microphonePermission": "Martly uses the microphone so you can order by voice. For example, say \"2 kg onions and 1 litre milk\" and Martly adds them to your cart."
+        }
+      ],
       "expo-localization",
       [
         "expo-build-properties",
@@ -84,7 +105,7 @@
     ],
     "android": {
       "package": "com.quartex.martly",
-      "versionCode": 2,
+      "versionCode": 3,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0f766e"
@@ -93,7 +114,7 @@
     },
     "ios": {
       "bundleIdentifier": "com.quartex.martly",
-      "buildNumber": "13",
+      "buildNumber": "14",
       "appleTeamId": "QBLZB22TU6",
       "googleServicesFile": "./GoogleService-Info.plist",
       "config": {
