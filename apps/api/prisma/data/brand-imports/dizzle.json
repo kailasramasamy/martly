@@ -1,0 +1,53 @@
+{
+  "brand": "Dizzle",
+  "manufacturer": "Vinod Freshners Pvt. Ltd.",
+  "feed": "dizzle-feed.json",
+  "themeColor": "#1B5E20",
+  "themeColorSecondary": "#F9E04B",
+  "namePrefix": "Dizzle ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Mitha\\ Pan\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Dilbahar\\ Mix\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Navratan\\ Mix\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Satrangee\\ Mix\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Madrasi\\ Saunf$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    }
+  ]
+}
