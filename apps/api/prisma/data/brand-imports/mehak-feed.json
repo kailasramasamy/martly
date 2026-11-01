@@ -1,0 +1,88 @@
+[
+ {
+  "title": "Saunf Meethi - Shahi Mewar",
+  "handle": "saunf-meethi-shahi-mewar",
+  "vendor": "Mehak",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000704_1-mehak-saunf-meethi-shahi-mewar.jpg"
+    },
+    "barcode": "8906049051190"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000704_1-mehak-saunf-meethi-shahi-mewar.jpg"
+   }
+  ],
+  "details": {
+   "ingredients": "Saunf, Sugar, Menthol, Coconut, Artificial Flavour, Ramdana etc.",
+   "countryOfOrigin": "India",
+   "description": "Mehak Shahi Mewar is a sweet saunf mix of sugar-coated fennel, coconut and ramdana with a cool menthol finish. A classic after-meal mouth freshener that aids digestion."
+  }
+ },
+ {
+  "title": "Saunf Meethi - Gulab",
+  "handle": "saunf-meethi-gulab",
+  "vendor": "Mehak",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000703_1-mehak-saunf-meethi-gulab-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000703_1-mehak-saunf-meethi-gulab-flavour.jpg"
+   }
+  ],
+  "details": {
+   "ingredients": "Saunf, Sugar, Rose Leafes, Menthol, Coconut, Artificial Flavour, Ramdana etc.",
+   "countryOfOrigin": "India",
+   "description": "Mehak Gulab Saunf is sweet fennel mixed with rose petals, coconut and ramdana, with a light menthol cool. A fragrant after-meal mouth freshener."
+  }
+ },
+ {
+  "title": "Imli Ladoo (Seedless)",
+  "handle": "imli-ladoo-seedless",
+  "vendor": "Mehak",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000414_1-mehak-mouth-freshener-imli-ladoo-with-out-seed.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000414_1-mehak-mouth-freshener-imli-ladoo-with-out-seed.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Imli (Seedless), Sugar",
+   "countryOfOrigin": "India",
+   "description": "Mehak Imli Ladoo are sweet and tangy balls of seedless tamarind and sugar. A traditional after-meal digestive treat."
+  }
+ }
+]

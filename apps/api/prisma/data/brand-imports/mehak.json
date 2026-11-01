@@ -1,0 +1,37 @@
+{
+  "brand": "Mehak",
+  "manufacturer": "Mehak",
+  "feed": "mehak-feed.json",
+  "themeColor": "#E8731C",
+  "themeColorSecondary": "#B5162B",
+  "namePrefix": "Mehak ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Saunf\\ Meethi\\ \\-\\ Shahi\\ Mewar$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Saunf\\ Meethi\\ \\-\\ Gulab$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Imli\\ Ladoo\\ \\(Seedless\\)$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    }
+  ]
+}
