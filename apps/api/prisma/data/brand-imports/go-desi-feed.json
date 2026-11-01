@@ -1,0 +1,74 @@
+[
+ {
+  "title": "Desi Mints Meetha Paan",
+  "handle": "desi-mints-meetha-paan",
+  "vendor": "GO DESi",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40307743_2-go-desi-meetha-paan-desi-mints-mouth-freshener.jpg"
+    },
+    "barcode": "8906108891224"
+   },
+   {
+    "title": "12 pcs",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40307744_3-go-desi-meetha-paan-desi-mints-mouth-freshener.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307743_2-go-desi-meetha-paan-desi-mints-mouth-freshener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307743-2_2-go-desi-meetha-paan-desi-mints-mouth-freshener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307743-3_2-go-desi-meetha-paan-desi-mints-mouth-freshener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307743-4_2-go-desi-meetha-paan-desi-mints-mouth-freshener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307743-5_2-go-desi-meetha-paan-desi-mints-mouth-freshener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307743-6_2-go-desi-meetha-paan-desi-mints-mouth-freshener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307743-7_2-go-desi-meetha-paan-desi-mints-mouth-freshener.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307744_3-go-desi-meetha-paan-desi-mints-mouth-freshener.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the authentic taste of paan with DESi Mints - Meetha Paan. Refreshing menthol and cardamom meet sweet dates and gulkand to create a delightful after-meal treat that's as old as time. Crafted with natural ingredients, including gulkand, khajoor, fennel seeds, coriander seeds, catechu, cardamom powder, betel leaves, and menthol, this fusion of traditional paan and modern mints will refresh your breath and tantalize your taste buds.\nInspired by the iconic Meetha Paan, these desi mints are natural, with no added colours or additives, and are farm-sourced and handmade for a truly authentic experience. Satisfy your sweet cravings and enjoy a refreshing, sweet, and fresh taste with GO DESi Meetha Paan.",
+   "ingredients": "Gulkand, Khajoor, Fennel Seeds, Coriander Seeds, Catechu, Cardamom Powder, Betel Leaves, Menthol",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "232.0 Kcal",
+    "Protein": "2.24 g",
+    "Carbohydrate": "55.0 g",
+    "Total Sugar": "15.0 g",
+    "Added Refined Sugar": "0.0 g",
+    "Fat": "0.3 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "GO DESi Mandi Pvt. Ltd.",
+   "fssaiLicense": "11221332000786",
+   "countryOfOrigin": "India"
+  }
+ }
+]

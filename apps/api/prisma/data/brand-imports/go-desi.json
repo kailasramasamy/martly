@@ -1,0 +1,22 @@
+{
+  "brand": "GO DESi",
+  "manufacturer": "GO DESi Mandi Pvt. Ltd.",
+  "feed": "go-desi-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/go-desi/logo-070a634f.png",
+  "themeColor": "#F7941D",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "GO DESi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Desi\\ Mints\\ Meetha\\ Paan$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    }
+  ]
+}
