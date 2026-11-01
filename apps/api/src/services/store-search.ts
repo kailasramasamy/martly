@@ -1,6 +1,6 @@
 import type { Prisma, PrismaClient } from "../../generated/prisma/index.js";
 import { SearchSortBy, ownBrandId } from "@martly/shared/constants";
-import { searchProducts } from "./search.js";
+import { aisleShelves, searchProducts } from "./search.js";
 import { brandPickOf, markBrandPicks, storeBrandBoost, type BrandBoost } from "./brand-boost.js";
 import { liveSponsored } from "./sponsored.js";
 import { namesBrand, placeSearchAds } from "./sponsored-search.js";
@@ -154,9 +154,10 @@ export async function searchStoreProducts(prisma: PrismaClient, store: { id: str
     prisma.store.findUniqueOrThrow({ where: { id: storeId }, select: { id: true, name: true, logoUrl: true } }),
   ]);
   // A picked tab is searched on its own as well, so the tab shows its whole shelf rather than what made the overall cut
-  const [searched, shelf] = await Promise.all([
+  const [searched, shelf, aisle] = await Promise.all([
     searchProducts(prisma, storeId, params.q, { exact: params.exact, boost }),
     params.subcategoryId ? searchProducts(prisma, storeId, params.q, { exact: params.exact, boost, subcategoryId: params.subcategoryId }) : null,
+    aisleShelves(prisma, storeId, params.q),
   ]);
   const { meta } = searched;
   const productIds = [...new Set([...(shelf?.productIds ?? []), ...searched.productIds])];
@@ -178,7 +179,9 @@ export async function searchStoreProducts(prisma: PrismaClient, store: { id: str
   const inTag = ranked.filter((r) =>
     (!params.tag || r.product.tags.includes(params.tag)) &&
     (!params.subcategoryId || r.product.subcategoryId === params.subcategoryId));
-  const facets: SearchFacets = { tags: tagFacets(tabRows), subcategories: subcategoryFacets(tabRows, meta.correctedQuery ?? params.q), ...filterFacets(inTag, boost, own) };
+  // A query naming a department or category tabs every shelf in it, in catalog order, rather than the ones its top results reach
+  const subcategories = aisle.length >= 2 ? withShortLabels(aisle, params.q) : subcategoryFacets(tabRows, meta.correctedQuery ?? params.q);
+  const facets: SearchFacets = { tags: tagFacets(tabRows), subcategories, ...filterFacets(inTag, boost, own) };
   const data = markBrandPicks(sortByProduct(applyFilters(inTag, params, boost, storeId), params.sortBy, rank), boost);
   const query = meta.correctedQuery ?? params.q;
   const adFree = params.sortBy !== SearchSortBy.RELEVANCE || params.brandIds?.length || namesBrand(query, facets.brands.map((b) => b.name));

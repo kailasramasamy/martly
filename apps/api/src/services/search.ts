@@ -24,6 +24,8 @@ export interface SearchResult {
 const semanticCache = new Map<string, { terms: string[]; expiry: number }>();
 
 const MAX_KEYWORD_RESULTS = 200;
+// Tabs for a query naming a department or category
+const MAX_AISLE_SHELVES = 20;
 // Admins page through every match (a brand can have hundreds of products), so the ranked list runs deeper
 const MAX_ADMIN_RESULTS = 2000;
 // Brand turns are weighted: a brand's n-th product scores n × (BRAND_TURN_BASE − popularity), so a 100-popularity
@@ -238,16 +240,46 @@ const plainName = (name: Prisma.Sql) =>
   Prisma.sql`btrim(regexp_replace(regexp_replace(lower(${name}), '\\mand\\M', ' ', 'g'), '[^a-z0-9]+', ' ', 'g'))`;
 const plainQuery = (q: string) => q.replace(/\band\b/g, " ").replace(/[^a-z0-9]+/g, " ").trim();
 
-// The query names the product's aisle: one of the subcategory's search terms, the whole name of its subcategory,
-// category or department ("frozen foods", "fries & wedges"), or one word that starts its department's ("frozen")
-function namesAisle(q: string) {
+// The query names the product's department or category: its whole name ("frozen foods"), or one word that starts the
+// department's ("frozen"). Needs categories `c` and departments `d`.
+function namesDepartmentOrCategory(q: string) {
   const plain = plainQuery(q);
   const departmentWord = plain.length >= 3 && !plain.includes(" ")
     ? Prisma.sql`OR starts_with(${plainName(Prisma.sql`d.name`)} || ' ', ${plain + " "})`
     : Prisma.empty;
-  return Prisma.sql`COALESCE(${q} = ANY(s.search_terms)
-    OR ${plain} IN (${plainName(Prisma.sql`s.name`)}, ${plainName(Prisma.sql`c.name`)}, ${plainName(Prisma.sql`d.name`)})
-    ${departmentWord}, false)`;
+  return Prisma.sql`(${plain} IN (${plainName(Prisma.sql`c.name`)}, ${plainName(Prisma.sql`d.name`)}) ${departmentWord})`;
+}
+
+// The query names the product's aisle: its department or category, the whole name of its subcategory
+// ("fries & wedges"), or one of the subcategory's search terms
+function namesAisle(q: string) {
+  return Prisma.sql`COALESCE(${q} = ANY(s.search_terms) OR ${plainQuery(q)} = ${plainName(Prisma.sql`s.name`)}
+    OR ${namesDepartmentOrCategory(q)}, false)`;
+}
+
+export interface AisleShelf { id: string; name: string; count: number; imageUrl: string | null }
+
+/**
+ * The shelves of the department or category a query names, with what the store lists on each: every category's first
+ * shelf in catalog order, then every category's second, and so on, so a big department's first tabs span all of it
+ */
+export async function aisleShelves(prisma: PrismaClient, storeId: string, query: string): Promise<AisleShelf[]> {
+  const q = normalizeQuery(withoutStoreBrand(storeId, query));
+  if (!plainQuery(q)) return [];
+  return prisma.$queryRaw<AisleShelf[]>`
+    SELECT id, name, count, "imageUrl" FROM (
+      SELECT s.id, s.name, COUNT(*)::int AS count, c.sort_order AS category_order, c.name AS category,
+        (ARRAY_AGG(p.image_url ORDER BY length(p.name)) FILTER (WHERE p.image_url IS NOT NULL))[1] AS "imageUrl",
+        ROW_NUMBER() OVER (PARTITION BY c.id ORDER BY s.sort_order, s.name) AS shelf
+      FROM products p
+      JOIN subcategories s ON s.id = p.subcategory_id
+      JOIN categories c ON c.id = s.category_id
+      JOIN departments d ON d.id = c.department_id
+      WHERE ${inStoreScope({ storeId, listedOnly: true })} AND ${namesDepartmentOrCategory(q)}
+      GROUP BY s.id, s.name, s.sort_order, c.id, c.sort_order, c.name
+    ) shelves
+    ORDER BY shelf, category_order, category
+    LIMIT ${MAX_AISLE_SHELVES}`;
 }
 
 // Every stocked product with its intent flag, name tier and taxonomy hit for the query
