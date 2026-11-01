@@ -1,0 +1,62 @@
+{
+  "brand": "Spraymintt",
+  "manufacturer": "Midascare Pharmaceuticals Pvt. Ltd.",
+  "feed": "spraymintt-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/spraymintt/logo-f00c6e59.png",
+  "themeColor": "#0B4F9C",
+  "themeColorSecondary": "#2FB5E8",
+  "namePrefix": "Spraymintt ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Mouth\\ Freshener\\ Spray\\ \\-\\ Icymint$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Mouth\\ Freshener\\ Spray\\ \\-\\ Thanda\\ Pan$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Mouth\\ Freshener\\ Spray\\ \\-\\ Saunf\\ Shiver$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Mouth\\ Freshener\\ Spray\\ \\-\\ Breezberry$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Mouth\\ Freshener\\ Spray\\ \\-\\ Elaichi$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Mouth\\ Freshener\\ Spray\\ \\-\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    }
+  ]
+}
