@@ -3966,7 +3966,9 @@
     "pakku",
     "paan supari",
     "scented supari",
-    "meetha supari"
+    "meetha supari",
+    "sweet pakku",
+    "chew supari"
   ],
   "mouth-freshener-mukhwas": [
     "mukhwas",
@@ -3976,7 +3978,8 @@
     "mukhwas mix",
     "digestive mix",
     "meetha mukhwas",
-    "paan masala sweet"
+    "meetha paan",
+    "paan flavour"
   ],
   "mouth-freshener-saunf-fennel-seeds": [
     "saunf",
@@ -4267,29 +4270,6 @@
     "organic keerai",
     "organic sabzi",
     "pesticide free vegetables"
-  ],
-  "paan-masala-tobacco-gutkha-free-supari": [
-    "supari",
-    "sweet supari",
-    "betel nut supari",
-    "chew supari",
-    "sweet chew",
-    "meetha supari",
-    "scented supari",
-    "gutkha free",
-    "pakku",
-    "sweet pakku"
-  ],
-  "paan-masala-tobacco-paan-masala": [
-    "paan masala",
-    "pan masala",
-    "pan masala pouch",
-    "silver coated elaichi",
-    "meetha paan",
-    "mouth freshener",
-    "mukhwas",
-    "saunf mix",
-    "paan flavour"
   ],
   "paneer-tofu-fresh-paneer": [
     "paneer",
