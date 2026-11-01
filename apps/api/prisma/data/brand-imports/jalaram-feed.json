@@ -1,0 +1,508 @@
+[
+ {
+  "title": "Special Saunf Mix",
+  "handle": "special-saunf-mix",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226015_1-jalaram-sp-saunf-mix-mouth-freshener-improves-digestion-rich-in-aroma.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226015_1-jalaram-sp-saunf-mix-mouth-freshener-improves-digestion-rich-in-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226015-2_1-jalaram-sp-saunf-mix-mouth-freshener-improves-digestion-rich-in-aroma.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Saunf Mix is a mix of natural and pure ingredients. This mouth freshener can be consumed after meals. It helps to boost your immunity and keep you charged up all day long. Fennel strengthens the digestive process by activating the secretion of digestive juices and improving appetite. It has a luxurious rich aroma and delightful taste.",
+   "ingredients": "Somp Sukmuk Sugar Candy Sugar Confectionery And Flavour Used",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "393 kcal",
+    "Total Fat": "1.33 g",
+    "Sugar": "40.80 g",
+    "Saturated Fat": "0 g",
+    "Protein": "1.56 g",
+    "Cholesterol": "0 mg",
+    "Calcium": "0 mg",
+    "Sodium": "36 mg",
+    "Iron": "1.96 mg",
+    "Total Carbohydrates": "77.08 g",
+    "Dietary Fiber": "0 g"
+   },
+   "storageInstructions": "Storage as per packaging",
+   "manufacturerName": "Jalaram Agency",
+   "fssaiLicense": "13620011000459",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Medium Sweet Saunf",
+  "handle": "medium-sweet-saunf",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005780_1-jalaram-sweets-somp-medium-ja138.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005780_1-jalaram-sweets-somp-medium-ja138.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005780-2_1-jalaram-sweets-somp-medium-ja138.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sweets Saunf, in its medium-sised form, not only pleases the taste buds but also offers a myriad of health benefits. Fennel, the main ingredient, is renowned for its ability to prevent abdominal diseases, alleviate indigestion, and curb gas formation. This natural herb aids in weight loss, making it a popular choice among health-conscious individuals. Its digestive properties are well-documented, providing relief from bloating and discomfort. Besides being a flavourful addition to culinary delights, Sweets Saunf stands out as a holistic solution, promoting both taste satisfaction and overall well-being, making it a staple in traditional and modern herbal remedies.",
+   "storageInstructions": "Storage as per packaging",
+   "manufacturerName": "Jalaram Agency",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sweet Green Saunf",
+  "handle": "sweet-green-saunf",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "68",
+    "compare_at_price": "68",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005799_1-jalaram-somp-sweet-green-ja225.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005799_1-jalaram-somp-sweet-green-ja225.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Somp Saunf - Sweet Green is a flavourful blend of taste and health benefits. Fennel, the key ingredient, aids in preventing abdominal diseases, reducing gas formation, promoting weight loss, and alleviating indigestion. Indulge in this natural mouth freshener, relishing its taste while enhancing your overall well-being.",
+   "ingredients": "Somp, Sugar, Menthol, Food Flavours",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Jalaram Agency",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Barik Saunf",
+  "handle": "barik-saunf",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80g",
+    "price": "62",
+    "compare_at_price": "62",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005801_1-jalaram-somp-barik-ja229.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005801_1-jalaram-somp-barik-ja229.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Somp Saunf - Barik offers not just a refreshing taste but also numerous health benefits. Fennel, a key ingredient, helps prevent abdominal diseases, reduces gas formation, aids in weight loss, and alleviates indigestion. Indulge in the natural goodness of this saunf while promoting digestive health and overall well-being.",
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "Jalaram Agency",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "White Saunf",
+  "handle": "white-saunf",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005800_4-jalaram-somp-white-ja226.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005800_4-jalaram-somp-white-ja226.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram White Saunf is the epitome of freshness and flavour, serving as an ideal mouth freshener. Infused with the rich aroma and taste of real dry dates, it offers a delightful post-meal experience. Crafted under rigorous quality standards, these flavoured saunf ensure a premium quality treat, leaving your breath fresh and senses satisfied. The shelf life of this product is 12 months. It is recommended to keep in a cool and dry place.",
+   "ingredients": "Somp, Sugar, Menthol, & Food Flavours Used",
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "Jalaram Agency",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Brown Saunf",
+  "handle": "brown-saunf",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005802_1-jalaram-somp-brown-ja227.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005802_1-jalaram-somp-brown-ja227.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Somp Saunf - Brown is a premium mouth freshener offering a luxurious blend of real dry dates, imparting a rich aroma and delightful taste. Perfect for post-meal refreshment, these flavored saunf are meticulously processed under stringent quality standards. Indulge in the exquisite essence of Jalaram Brown Saunf, meticulously crafted for a refreshing and satisfying experience. The shelf life of this product is 12 months. It is recommended to keep in cool and dry place.",
+   "ingredients": "Somp - Brown",
+   "storageInstructions": "It keeps the mouth fresh and odourless.\nStore in clean and dry place.\nKeep away from direct sunlight.",
+   "manufacturerName": "Jalaram Agency",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Saunf Mix",
+  "handle": "saunf-mix",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "62",
+    "compare_at_price": "62",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005797_1-jalaram-somp-mix-ja222.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005797_1-jalaram-somp-mix-ja222.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Mix Saunf is the epitome of indulgence for your taste buds, serving as a delectable mouth freshener. With its opulent fragrance and the genuine essence of dry dates, it elevates the post-meal experience. Crafted meticulously under stringent quality protocols, these Flavoured Saunf are a testament to excellence. Sourced from the finest ingredients, each bite is a burst of rich flavors. Ensuring a shelf life of 12 months, it promises prolonged freshness. To preserve its delightful taste, store it in a cool, dry place. Indulge in the luxury of Jalaram Mix Saunf and let your senses relish the delightful symphony of flavours.",
+   "ingredients": "Somp,\nSukmuk\nSalk\nHaldi used",
+   "storageInstructions": "It keeps the mouth fresh and odourless.\nStore in clean and dry place.\nKeep away from direct sunlight.",
+   "manufacturerName": "Jalaram Agency",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mix Saunf Mukhwas",
+  "handle": "mix-saunf-mukhwas",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "56",
+    "compare_at_price": "56",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226012_2-jalaram-sp-saunf-mix-mouth-freshener-improves-digestion-rich-in-aroma.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226012_2-jalaram-sp-saunf-mix-mouth-freshener-improves-digestion-rich-in-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226012-2_2-jalaram-sp-saunf-mix-mouth-freshener-improves-digestion-rich-in-aroma.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Saunf Mukwas is natural and pure ingredients. This mouth freshener can be consumed after meals. It helps to boost your immunity and keep you charged up all day long. Fennel strengthens the digestive process by activating the secretion of digestive juices and improving appetite. It has a luxurious rich aroma and delightful taste.",
+   "ingredients": "Somp Sukmuk Sugar Candy Sugar Confectionery And Flavour Used.",
+   "manufacturerName": "Jalaram Agency",
+   "fssaiLicense": "13620011000459",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sukmuk Mouth Freshener",
+  "handle": "sukmuk-mouth-freshener",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "58",
+    "compare_at_price": "58",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226007_1-jalaram-sukmuk-mouth-freshener-rich-in-fibre-improves-digestion.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226007_1-jalaram-sukmuk-mouth-freshener-rich-in-fibre-improves-digestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226007-2_1-jalaram-sukmuk-mouth-freshener-rich-in-fibre-improves-digestion.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Sukmuk is Dhania Dal that is extracted from the top coriander. These coriander seeds are crushed and used as an important ingredient in Indian cooking. A pinch of salt is added to these roasted seeds. It is used as a mouth freshener. It is filled with fibres that improve digestion and is good to improve bowel movement. It is a great after-meal mint.",
+   "ingredients": "Sukmuk",
+   "storageInstructions": "Store in an airtight container after opening",
+   "manufacturerName": "Jalaram Agency",
+   "fssaiLicense": "13620011000459",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dry Amla",
+  "handle": "dry-amla",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005787_3-jalaram-amla-dry-ja230.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005787_3-jalaram-amla-dry-ja230.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005787-2_1-jalaram-amla-dry-ja230.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Amla, in its dry form, is a potent health elixir. Packed with vitamin C and antioxidants, these dried Indian gooseberries offer a myriad of health benefits. A natural immunity booster, they aid digestion, enhance skin health, and promote hair growth. Their high nutritional value makes them a popular choice in Ayurvedic medicine. Amla's tangy-sweet flavor adds a zing to culinary creations and herbal remedies. In its dried state, it's convenient to use in various dishes, teas, and chutneys. Discover the power of Amla, condensed into a dried form, and embrace a healthier, flavorful lifestyle.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Jalaram Agency"
+  }
+ },
+ {
+  "title": "Ginger Balls",
+  "handle": "ginger-balls",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40228763_1-jalaram-ginger-balls-helps-in-digestion-no-added-chemicals.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228763_1-jalaram-ginger-balls-helps-in-digestion-no-added-chemicals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228763-2_1-jalaram-ginger-balls-helps-in-digestion-no-added-chemicals.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Ginger Balls are ready to consume hard candy. It is a sweet and exotic flavour candy. It is made with high-quality ingredients. It is a good aids digestion and cures acidity. It is made with pure ingredients without any added flavours and chemicals. It is ready to consume and perfect for an on-the-go snack.",
+   "ingredients": "Sugar, Liquid Glucose, Permitted Food Colours & Flavours.",
+   "usageInstructions": "1. Perfect after-meal digestive and can be consumed any other time of the day we well.\n2. It is useful in loss of appetite, indigestion, improper digestion etc.",
+   "manufacturerName": "Jalaram Agency",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13620011000459"
+  }
+ },
+ {
+  "title": "Pan Balls",
+  "handle": "pan-balls",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40228747_1-jalaram-pan-balls-with-gulkand-menthol-provides-refreshment.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228747_1-jalaram-pan-balls-with-gulkand-menthol-provides-refreshment.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228747-2_1-jalaram-pan-balls-with-gulkand-menthol-provides-refreshment.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Paan Balls is flavourful and refreshing. It is a delicious mix of Gulkand, Menthol, Paan Leaf, Saunf, Elaichi, etc. This has a refreshing flavour in every bit. It is a great treat that adds to the taste after any meal. It is a very good source of refreshment for you.",
+   "ingredients": "Sugar, Liquid Glucose, Permitted Food Colours & Flavours.",
+   "usageInstructions": "It is a great mouth freshener after every meal.",
+   "manufacturerName": "Jalaram Agency",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13620011000459"
+  }
+ },
+ {
+  "title": "Lemon Balls Candy",
+  "handle": "lemon-balls-candy",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40228760_1-jalaram-lemon-balls-candy-good-for-digestion-no-added-chemicals.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228760_1-jalaram-lemon-balls-candy-good-for-digestion-no-added-chemicals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228760-2_1-jalaram-lemon-balls-candy-good-for-digestion-no-added-chemicals.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Lemon Balls are ready to consume hard candy. It is a sweet and tangy flavour candy. It is made with high-quality ingredients. It is a good aids digestion and cures acidity. It is made with pure ingredients without any added flavours and chemicals. It is ready to consume and perfect for an on-the-go snack.",
+   "ingredients": "Sugar, Liquid Glucose, Permitted Food Colours & Flavours.",
+   "usageInstructions": "1. Perfect after-meal digestive and can be consumed any other time of the day we well.\n2. It is useful in loss of appetite, indigestion, improper digestion etc.",
+   "manufacturerName": "Jalaram Agency",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13620011000459"
+  }
+ },
+ {
+  "title": "Orange Lemon Balls Candy",
+  "handle": "orange-lemon-balls-candy",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40228761_1-jalaram-orange-lemon-balls-candy-good-for-digestion-no-added-chemicals.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228761_1-jalaram-orange-lemon-balls-candy-good-for-digestion-no-added-chemicals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228761-2_1-jalaram-orange-lemon-balls-candy-good-for-digestion-no-added-chemicals.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Orange Lemon Balls are ready to consume hard candy. It is a sweet and tangy flavour candy. It is made with high-quality ingredients. It is a good aids digestion and cures acidity. It is made with pure ingredients without any added flavours and chemicals. It is ready to consume and perfect for on-the-go snacks.",
+   "ingredients": "Sugar, Liquid Glucose, Permitted Food Colours & Flavours.",
+   "usageInstructions": "1. Perfect after-meal digestive and can be consumed any other time of the day we well.\n2. It is useful in loss of appetite, indigestion, improper digestion etc.",
+   "manufacturerName": "Jalaram Agency",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13620011000459"
+  }
+ },
+ {
+  "title": "Orange Candy",
+  "handle": "orange-candy",
+  "vendor": "Jalaram",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005782_2-jalaram-orange-candy-ja110.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005782_2-jalaram-orange-candy-ja110.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Jalaram Orange Candy, a beloved sugar-boiled confectionery, is a citrusy delight for candy enthusiasts. Infused with the essence of real oranges, each candy embodies the vibrant taste of fresh citrus. Its expertly crafted sweetness perfectly balances the tangy orange flavor, creating a harmonious burst of taste with every bite. Ideal for satisfying sweet cravings or as a refreshing treat, Jalaram Orange Candy stands out as a testament to quality and flavor. Individually wrapped for convenience, it promises a delightful experience for anyone seeking the joy of authentic orange-flavored candy.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Jalaram Agency"
+  }
+ }
+]

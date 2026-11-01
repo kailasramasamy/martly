@@ -1,0 +1,134 @@
+{
+  "brand": "Jalaram",
+  "manufacturer": "Jalaram Agency",
+  "feed": "jalaram-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/jalaram/logo-fa86a646.png",
+  "themeColor": "#C27A1E",
+  "themeColorSecondary": "#6B3A12",
+  "namePrefix": "Jalaram ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Special\\ Saunf\\ Mix$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Medium\\ Sweet\\ Saunf$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Green\\ Saunf$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Barik\\ Saunf$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^White\\ Saunf$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Brown\\ Saunf$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Saunf\\ Mix$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Mix\\ Saunf\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Sukmuk\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Dry\\ Amla$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Balls$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Pan\\ Balls$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Balls\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Orange\\ Lemon\\ Balls\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Orange\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    }
+  ]
+}
