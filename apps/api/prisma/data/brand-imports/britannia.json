@@ -9,17 +9,12 @@
   "foodType": "VEG",
   "exclude": [],
   "aliases": {
-    "Britannia 50-50 Maska Chaska": "50-50 Maska Chaska Biscuits",
-    "Britannia Bourbon Cream Biscuits": "Bourbon Creme Biscuits",
-    "Britannia Cheese Cubes": "The Laughing Cow Cheese Cubes",
-    "Britannia Gobbles Chocolate Cake": "Gobbles Choco Chill Cake",
-    "Britannia Little Hearts": "Little Hearts Classic Crunch Biscuits",
-    "Britannia Marie Gold": "Marie Gold Biscuits",
-    "Britannia Milk Bikis": "Milk Bikis Biscuits",
-    "Britannia NutriChoice Digestive Hi-Fibre": "NutriChoice Digestive High Fibre Biscuits",
-    "Britannia Toastea Premium Rusk": "Toastea Premium Bake Rusk",
-    "Britannia Treat Croissant - Chocolate Cream": "Treat Croissant Cocoa Creme",
-    "Britannia 100% Whole Wheat Bread": "Zero Maida Whole Wheat Bread"
+    "Britannia Dilkhush Sweet Bun": "Sweet Bun",
+    "Britannia Tiger Glucose": "Tiger Glucose Biscuits",
+    "Britannia Nutri Choice Multigrain Bread": "Multigrain Bread",
+    "Britannia Sandwich Bread (Burger Bun)": "Burger Bun",
+    "Britannia Treat Jim Jam Wafer - Chocolate": "Treat Rich Creme Choco Wafers",
+    "Britannia Treat Chocolate Muffin": "Muffills Choco"
   },
   "rules": [
     {
@@ -27,7 +22,7 @@
       "path": [
         "Snacks & Packaged Foods",
         "Biscuits & Cookies",
-        "Glucose & Marie"
+        "Crackers"
       ]
     },
     {
@@ -35,7 +30,7 @@
       "path": [
         "Snacks & Packaged Foods",
         "Biscuits & Cookies",
-        "Glucose & Marie"
+        "Crackers"
       ]
     },
     {
@@ -43,11 +38,27 @@
       "path": [
         "Snacks & Packaged Foods",
         "Biscuits & Cookies",
-        "Glucose & Marie"
+        "Crackers"
       ]
     },
     {
-      "match": "^Bourbon\\ Creme\\ Biscuits$",
+      "match": "^50\\-50\\ Golmaal\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^50\\-50\\ Jeera\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^50\\-50\\ Caramel\\ Dipped\\ Sandwich\\ Biscuits$",
       "path": [
         "Snacks & Packaged Foods",
         "Biscuits & Cookies",
@@ -55,7 +66,7 @@
       ]
     },
     {
-      "match": "^Jim\\ Jam\\ Biscuits$",
+      "match": "^50\\-50\\ Cheeze\\ Dipped\\ Sandwich\\ Biscuits$",
       "path": [
         "Snacks & Packaged Foods",
         "Biscuits & Cookies",
@@ -63,71 +74,47 @@
       ]
     },
     {
-      "match": "^Milk\\ Bikis\\ Milky\\ Sandwich\\ Biscuits$",
+      "match": "^50\\-50\\ Potazos\\ Chilli\\ Americana$",
       "path": [
         "Snacks & Packaged Foods",
-        "Biscuits & Cookies",
-        "Cream Biscuits"
+        "Chips & Crisps",
+        "Potato Chips"
       ]
     },
     {
-      "match": "^Treat\\ Orange\\ Creme\\ Biscuits$",
+      "match": "^50\\-50\\ Potazos\\ Masti\\ Masala$",
       "path": [
         "Snacks & Packaged Foods",
-        "Biscuits & Cookies",
-        "Cream Biscuits"
+        "Chips & Crisps",
+        "Potato Chips"
       ]
     },
     {
-      "match": "^Good\\ Day\\ Butter\\ Cookies$",
+      "match": "^50\\-50\\ Potazos\\ Mint\\ Magic$",
       "path": [
         "Snacks & Packaged Foods",
-        "Biscuits & Cookies",
-        "Cashew & Butter Cookies"
+        "Chips & Crisps",
+        "Potato Chips"
       ]
     },
     {
-      "match": "^Good\\ Day\\ Chocochip\\ Cookies$",
+      "match": "^Biscafe\\ Coffee\\ Cracker$",
       "path": [
         "Snacks & Packaged Foods",
         "Biscuits & Cookies",
-        "Cashew & Butter Cookies"
-      ]
-    },
-    {
-      "match": "^Good\\ Day\\ Chunkies\\ Chocochip\\ Cookies$",
-      "path": [
-        "Snacks & Packaged Foods",
-        "Biscuits & Cookies",
-        "Cashew & Butter Cookies"
-      ]
-    },
-    {
-      "match": "^Good\\ Day\\ Pista\\ Badam\\ Cookies$",
-      "path": [
-        "Snacks & Packaged Foods",
-        "Biscuits & Cookies",
-        "Cashew & Butter Cookies"
-      ]
-    },
-    {
-      "match": "^Little\\ Hearts\\ Classic\\ Crunch\\ Biscuits$",
-      "path": [
-        "Snacks & Packaged Foods",
-        "Biscuits & Cookies",
-        "Cashew & Butter Cookies"
-      ]
-    },
-    {
-      "match": "^Tiger\\ Krunch\\ Chocochips\\ Biscuits$",
-      "path": [
-        "Snacks & Packaged Foods",
-        "Biscuits & Cookies",
-        "Cashew & Butter Cookies"
+        "Crackers"
       ]
     },
     {
       "match": "^Marie\\ Gold\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Glucose & Marie"
+      ]
+    },
+    {
+      "match": "^Doodh\\ Marie\\ Gold\\ Biscuits$",
       "path": [
         "Snacks & Packaged Foods",
         "Biscuits & Cookies",
@@ -159,6 +146,38 @@
       ]
     },
     {
+      "match": "^Smart\\ Milk\\ Bikis$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Glucose & Marie"
+      ]
+    },
+    {
+      "match": "^Milk\\ Bikis\\ Milky\\ Sandwich\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Milk\\ Bikis\\ Wafer\\ Roll$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Tiger\\ Glucose\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Glucose & Marie"
+      ]
+    },
+    {
       "match": "^Nice\\ Time\\ Coconut\\ Biscuits$",
       "path": [
         "Snacks & Packaged Foods",
@@ -167,7 +186,183 @@
       ]
     },
     {
+      "match": "^Bourbon\\ Creme\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^The\\ Original\\ Bourbon\\ Rolls$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Jim\\ Jam\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^JimJam\\ Pops$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Tiger\\ Kreemz\\ Elaichi\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Tiger\\ Kreemz\\ Choco\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Tiger\\ Kreemz\\ Orange\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Tiger\\ Krunch\\ Chocochips\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Little\\ Hearts\\ Classic\\ Crunch\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Good\\ Day\\ Butter\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Good\\ Day\\ Butter\\ Jeera\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Good\\ Day\\ Cashew\\ Almond\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Good\\ Day\\ Cashew\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Good\\ Day\\ Choco\\ Almond\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Good\\ Day\\ Chocochip\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Good\\ Day\\ Chunkies\\ Chocochip\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Good\\ Day\\ Chunkies\\ Tropical\\ Coconut\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Good\\ Day\\ Fruit\\ \\&\\ Nut\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Good\\ Day\\ Harmony\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Good\\ Day\\ Pista\\ Badam\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^NutriChoice\\ 5\\ Grain\\ High\\ Fibre\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
       "match": "^NutriChoice\\ Digestive\\ High\\ Fibre\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^NutriChoice\\ Digestive\\ Seeds\\ Biscuits$",
       "path": [
         "Snacks & Packaged Foods",
         "Biscuits & Cookies",
@@ -183,7 +378,7 @@
       ]
     },
     {
-      "match": "^NutriChoice\\ 5\\ Grain\\ High\\ Fibre\\ Biscuits$",
+      "match": "^NutriChoice\\ Protein\\ Milk\\ Almond\\ Biscuits$",
       "path": [
         "Snacks & Packaged Foods",
         "Biscuits & Cookies",
@@ -207,6 +402,46 @@
       ]
     },
     {
+      "match": "^NutriChoice\\ Millet\\ Cookies\\ Apple\\ Cinnamon$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^NutriChoice\\ Herbs\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^NutriChoice\\ Oats\\ \\&\\ Millets\\ Chocolate\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^NutriChoice\\ Oats\\ \\&\\ Millets\\ Milk\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^NutriChoice\\ Oats\\ \\&\\ Millets\\ Orange\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
       "match": "^NutriChoice\\ Oats\\ Cookies$",
       "path": [
         "Snacks & Packaged Foods",
@@ -223,7 +458,207 @@
       ]
     },
     {
+      "match": "^Pure\\ Magic\\ Choco\\ Stars\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Pure\\ Magic\\ Choco\\ Tarts$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Pure\\ Magic\\ Hazelnut\\ Choco\\ Tarts$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Pure\\ Magic\\ Chocolush\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Pure\\ Magic\\ Chocolush\\ Hazelnut\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Pure\\ Magic\\ Choco\\ Creme\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Pure\\ Magic\\ Deuce\\ Vanilla\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Pure\\ Magic\\ Deuce\\ Milk\\ Choco\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Pure\\ Magic\\ Harry\\ Potter\\ Choco\\ Frames\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Treat\\ Choco\\ Creme\\ Sandwich\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Treat\\ Vanilla\\ Creme\\ Sandwich\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Treat\\ Orange\\ Creme\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Treat\\ Funky\\ Choco\\ Sandwich\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Treat\\ Buzzy\\ Strawberry\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Treat\\ Crazy\\ Pineapple\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Treat\\ Stars\\ Milk\\ Choco\\ Duo\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Treat\\ Stars\\ White\\ Choco\\ Duo\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Treat\\ Burst\\ Choco\\ Fills\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Treat\\ Choco\\ Stix\\ Wafer\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Treat\\ Rich\\ Creme\\ Choco\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Treat\\ Rich\\ Creme\\ Orange\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
       "match": "^Treat\\ Rich\\ Creme\\ Strawberry\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Treat\\ Rich\\ Creme\\ Vanilla\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Treat\\ Creme\\ Coconut\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Treat\\ Creme\\ Wafers\\ Assorted\\ Pack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Treat\\ Rich\\ Creme\\ Choco\\ Rolls$",
       "path": [
         "Snacks & Packaged Foods",
         "Biscuits & Cookies",
@@ -239,6 +674,14 @@
       ]
     },
     {
+      "match": "^Toastea\\ Butter\\ Rusk$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
       "match": "^Toastea\\ Milk\\ Atta\\ Rusk$",
       "path": [
         "Snacks & Packaged Foods",
@@ -247,11 +690,91 @@
       ]
     },
     {
-      "match": "^Breakfast\\ Slice\\ Bread$",
+      "match": "^Toastea\\ Multigrain\\ Rusk$",
       "path": [
-        "Bakery",
-        "Bread",
-        "White Bread"
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Toastea\\ Cake\\ Rusk$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Rusk & Toast"
+      ]
+    },
+    {
+      "match": "^Be\\ You\\ Choco\\ Almond\\ Protein\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Be\\ You\\ Choco\\ Berries\\ Protein\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Be\\ You\\ Nutty\\ Choco\\ Fudge\\ Protein\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Be\\ You\\ Fruits\\ \\&\\ Seeds\\ Nutrition\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Be\\ You\\ Nuts\\ \\&\\ Seeds\\ Nutrition\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Be\\ You\\ Nutty\\ Almond\\ Sesame\\ Nutrition\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Better\\ Snack\\ Co\\.\\ Makhana\\ Cream\\ \\&\\ Onion$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Better\\ Snack\\ Co\\.\\ Makhana\\ Himalayan\\ Pink\\ Salt\\ \\&\\ Pepper$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Better\\ Snack\\ Co\\.\\ Makhana\\ Indian\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
       ]
     },
     {
@@ -263,7 +786,87 @@
       ]
     },
     {
+      "match": "^Breakfast\\ Slice\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Slice\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Vitarich\\ Premium\\ White\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Vitarich\\ Sandwich\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Vitarich\\ Crustless\\ White\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Slice\\ Sandwich\\ White\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Sandwich\\ White\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Daily\\ Bread\\ Sub\\ Olive\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
       "match": "^Brown\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Atta\\ Bread$",
       "path": [
         "Bakery",
         "Bread",
@@ -279,15 +882,159 @@
       ]
     },
     {
-      "match": "^English\\ Tea\\ Cake$",
+      "match": "^Zero\\ Maida\\ Atta\\ Bread$",
       "path": [
         "Bakery",
-        "Cakes & Pastries",
-        "Sliced Cake"
+        "Bread",
+        "Brown & Whole Wheat Bread"
       ]
     },
     {
-      "match": "^Nut\\ \\&\\ Raisin\\ Romance\\ Cake$",
+      "match": "^Whole\\ Wheat\\ Crustless\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Burger\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Pav$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Pav\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Pav\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Garlic\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Garlic Bread"
+      ]
+    },
+    {
+      "match": "^Atta\\ Kulcha\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Maida\\ Kulcha\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Choco\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Sweet Bakes"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Sweet Bakes"
+      ]
+    },
+    {
+      "match": "^Treat\\ Croissant\\ Cocoa\\ Creme$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Treat\\ Croissant\\ Orange$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Treat\\ Croissant\\ Strawberry$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Treat\\ Croissant\\ Pista\\ Creme\\ Dubai\\ Kunafa$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Treat\\ Triple\\ Choco\\ Croissant$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Treat\\ Madagascar\\ Choco\\ Roll$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Gobbles\\ Butter\\ Blast\\ Cake$",
       "path": [
         "Bakery",
         "Cakes & Pastries",
@@ -319,11 +1066,147 @@
       ]
     },
     {
+      "match": "^Gobbles\\ Milky\\ Masti\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
       "match": "^Gobbles\\ Pineapple\\ Plunge\\ Cake$",
       "path": [
         "Bakery",
         "Cakes & Pastries",
         "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Gobbles\\ Choco\\ Vanilla\\ Marble\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Gobbles\\ Red\\ Velvet\\ Marble\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Gobbles\\ Tiffin\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Roll\\ Yo\\ Choco\\ Vanilla\\ Swiss\\ Roll$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Roll\\ Yo\\ Triple\\ Choco\\ Swiss\\ Roll$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Roll\\ Yo\\ Choco\\ Swiss\\ Roll$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Roll\\ Yo\\ Strawberry\\ Swiss\\ Roll$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Choco\\ Chip\\ Orange\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Double\\ Choco\\ Chip\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^English\\ Tea\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Nut\\ \\&\\ Raisin\\ Romance\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Delight\\ Plum\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Season's\\ Greetings\\ Fruit\\ 'N'\\ Nut\\ Delight\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Layerz\\ Choco\\ Enrobed\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Layerz\\ Jammy\\ \\&\\ Creme\\ Layer\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Layerz\\ Strawberry\\ Cheese\\ Layer\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
       ]
     },
     {
@@ -335,6 +1218,30 @@
       ]
     },
     {
+      "match": "^Fudge\\ It\\ Veg\\ Choco\\ Brownies$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Muffills\\ Choco$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Muffills\\ Double\\ Choco$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
       "match": "^Muffills\\ Strawberry\\ Cake$",
       "path": [
         "Bakery",
@@ -343,15 +1250,15 @@
       ]
     },
     {
-      "match": "^Treat\\ Croissant\\ Cocoa\\ Creme$",
+      "match": "^Veg\\ Double\\ Choco\\ Muffills$",
       "path": [
         "Bakery",
-        "Bakery Snacks",
-        "Croissant"
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
       ]
     },
     {
-      "match": "^The\\ Laughing\\ Cow\\ Cheese\\ Block$",
+      "match": "^The\\ Laughing\\ Cow\\ Cheese\\ Slices$",
       "path": [
         "Dairy",
         "Cheese",
@@ -359,7 +1266,31 @@
       ]
     },
     {
-      "match": "^The\\ Laughing\\ Cow\\ Cheese\\ Slices$",
+      "match": "^The\\ Laughing\\ Cow\\ Daily\\ Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^The\\ Laughing\\ Cow\\ Italian\\ Herb\\ Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^The\\ Laughing\\ Cow\\ Korean\\ Chilli\\ Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^The\\ Laughing\\ Cow\\ Cheese\\ Block$",
       "path": [
         "Dairy",
         "Cheese",
@@ -391,6 +1322,78 @@
       ]
     },
     {
+      "match": "^The\\ Laughing\\ Cow\\ Roasted\\ Garlic\\ Cheese\\ Spread$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^The\\ Laughing\\ Cow\\ Cream\\ Cheese\\ Spread$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^The\\ Laughing\\ Cow\\ Asli\\ Pepper\\ Cheese\\ Spread$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^The\\ Laughing\\ Cow\\ Snack\\ Pack\\ Creamy\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^The\\ Laughing\\ Cow\\ Cheezza\\ Mozzarella\\ Block$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^The\\ Laughing\\ Cow\\ Diced\\ Mozzarella\\ \\&\\ Cheddar\\ Pizza\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^The\\ Laughing\\ Cow\\ Diced\\ Mozzarella\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^The\\ Laughing\\ Cow\\ Diced\\ Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Salted\\ Butter$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
       "match": "^Pure\\ Cow\\ Ghee$",
       "path": [
         "Grocery & Staples",
@@ -399,11 +1402,195 @@
       ]
     },
     {
-      "match": "^Sattvam\\ Cow\\ Ghee$",
+      "match": "^Gawa\\ Ghee$",
       "path": [
         "Grocery & Staples",
         "Ghee",
         "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^High\\ Aroma\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Come\\ Alive\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Comealive\\ Blueberry\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Comealive\\ Classic\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Comealive\\ Strawberry\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Creamilicious\\ Dahi$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Milk\\ Powder$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Dairy Whitener"
+      ]
+    },
+    {
+      "match": "^Mishti\\ Doi\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Classic\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Mango\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Badam\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Badam\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Almond\\ Salted\\ Caramel\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Intense\\ Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Chocolate\\ Thick\\ Shake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Strawberry\\ Thick\\ Shake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Vanilla\\ Thick\\ Shake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Bourbon\\ Shake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Winkin\\ Cow\\ Classic\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Shubh\\ Kamnayein\\ Dryfruit\\ Delight$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Shubh\\ Kamnayein\\ Creme\\ Delights$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Shubh\\ Kamnayein\\ Meetha\\ Namkeen\\ Delights$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
       ]
     }
   ]
