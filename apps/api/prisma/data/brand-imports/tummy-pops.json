@@ -1,0 +1,166 @@
+{
+  "brand": "Tummy Pops",
+  "manufacturer": "Tummy Pops",
+  "feed": "tummy-pops-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/tummy-pops/logo-b1f257a2.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#E91E63",
+  "namePrefix": "Tummy Pops ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Paan\\ Gulkand\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Calcutta\\ Meetha\\ Paan\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Bombay\\ Special\\ Paan\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Aam\\ Papad\\ Pachak$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Khajoor\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Pudina\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Khatta\\ Meetha\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Gulkand\\ Rose\\ Petal\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Anardana\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Khatta\\ Chhuhara\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Amla\\ Pipli\\ Sticks$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Pipli\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Saunf$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Green\\ Sweet\\ Saunf$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Saunf\\ Mix$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Rajasthani\\ Saunf\\ Mix$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Mini\\ Fennel\\ Seeds$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Ram\\ Ladoo$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    }
+  ]
+}
