@@ -1,0 +1,70 @@
+{
+  "brand": "Patanjali",
+  "manufacturer": "Patanjali Ayurved Limited",
+  "feed": "patanjali-mukhwas-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/patanjali/logo-2d597644.png",
+  "themeColor": "#AE2A33",
+  "themeColorSecondary": "#8DC63F",
+  "namePrefix": "Patanjali ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Pachak\\ Anardana\\ Goli$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Pachak\\ Hing\\ Goli$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Pachak\\ Hing\\ Peda$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Pachak\\ Shodhit\\ Harad$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Amla\\ Candy$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Chatpata\\ Amla\\ Candy$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Mango\\ Candy$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    }
+  ]
+}
