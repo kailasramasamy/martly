@@ -1,0 +1,166 @@
+{
+  "brand": "Mark Premium",
+  "manufacturer": "Mark Commodities",
+  "feed": "mark-premium-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/mark-premium/logo-c6e478b5.png",
+  "themeColor": "#1B3F8B",
+  "themeColorSecondary": "#D62828",
+  "namePrefix": "Mark Premium ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Saunf\\ Madrasi$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Saunf\\ Rajasthani$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Saunf\\ Tini\\ Mini$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Khus\\ Mix\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Goli$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Hing\\ Goli$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Anardana\\ Goli$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Aam\\ Goli$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Ajwain\\ Churan$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Aplam\\ Chaplam$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Amla\\ Candy$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Amla\\ Chatpata$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Aam\\ Khatti\\ Batti$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Chuhara\\ Khatta$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Jet\\ Imli$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Mango\\ Cubes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Imli\\ Laddu$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Ram\\ Laddu$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    }
+  ]
+}
