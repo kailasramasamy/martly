@@ -1,0 +1,46 @@
+{
+  "brand": "Khaas",
+  "manufacturer": "Rohit Kauntia Enterprises LLP",
+  "feed": "khaas-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/khaas/logo-f2fe183c.png",
+  "themeColor": "#6E1E33",
+  "themeColorSecondary": "#C9A24A",
+  "namePrefix": "Khaas ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Khajoor\\ Mishran\\ \\(Dates\\ \\&\\ Fennel\\ Mix\\)$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Khajoor\\ Saunf\\ Mishran\\ \\(Fennel\\ \\&\\ Dates\\ Mix\\)$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Khajoor\\ Elaichi\\ Mishran\\ \\(Dates\\ \\&\\ Cardamom\\ Mix\\)$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Khajoor\\ Crunchy\\ Mishran\\ \\(Crunchy\\ Dates\\ \\&\\ Fennel\\ Mix\\)$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    }
+  ]
+}
