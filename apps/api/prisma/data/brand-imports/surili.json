@@ -1,0 +1,54 @@
+{
+  "brand": "Surili",
+  "manufacturer": "M J Products",
+  "feed": "surili-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/surili/logo-f042741d.png",
+  "themeColor": "#4B2E8F",
+  "themeColorSecondary": "#2E9E4F",
+  "namePrefix": "Surili ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Royal\\ 5\\ in\\ 1\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Calcutta\\ Meetha\\ Pan\\ with\\ Rose\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Aam\\ Papad\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Anardana\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Tiny\\ Miny\\ Mint\\ Saunf$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    }
+  ]
+}
