@@ -1,0 +1,126 @@
+{
+  "brand": "Joyspoon",
+  "manufacturer": "Alterkitch India Pvt. Ltd.",
+  "feed": "joyspoon-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/joyspoon/logo-1bc7eee5.png",
+  "themeColor": "#9C8263",
+  "themeColorSecondary": "#3E6B4F",
+  "namePrefix": "Joyspoon ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Paan\\ Shots\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Calcutta\\ Paan\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Aam\\ Papad\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Anar\\ Dana\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Mango\\ Slice\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Almond\\ Delight\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Digestive\\ Fiesta\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Seven\\ Seeds\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Neem\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Dry\\ Fruit\\ Millet\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Relief\\ Munch\\ Mukhwas\\ with\\ Jethimadh$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Tangy\\ Imli\\ Chatpat\\ Pops$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Elaichi\\ Saunf\\ Mouth\\ Freshener\\ Sachets$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    },
+    {
+      "match": "^Elaichi\\ Saunf\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Saunf (Fennel Seeds)"
+      ]
+    }
+  ]
+}
