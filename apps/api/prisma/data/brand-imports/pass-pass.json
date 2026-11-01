@@ -1,0 +1,46 @@
+{
+  "brand": "Pass Pass",
+  "manufacturer": "DS Group",
+  "feed": "pass-pass-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/pass-pass/logo-fdd22fd0.png",
+  "themeColor": "#C2185B",
+  "themeColorSecondary": "#2E7D32",
+  "namePrefix": "Pass Pass ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Sweet\\ Magic\\ Mix\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Minty\\ Mix\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Frutti\\ Mix\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Saunf\\ Delight\\ Mix\\ Mouth\\ Freshener$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    }
+  ]
+}
