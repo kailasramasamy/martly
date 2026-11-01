@@ -1,0 +1,585 @@
+[
+ {
+  "title": "Digestive Mukhwas",
+  "handle": "digestive-mukhwas",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064635_1-mama-mukhwas-digestive.jpg"
+    },
+    "barcode": "8906079470367"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064635_1-mama-mukhwas-digestive.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064635-2_1-mama-mukhwas-digestive.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064635-3_1-mama-mukhwas-digestive.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Digestive mukhvas from house of Mama Mukhwaswala contains dal, variyali, tal, ajma and sava. It has a shelf life of 1 year and is good for digestion. Apart from being a mouth freshener, it also aids digestion. Fennel, which is a very important part of the composition, is known for several health benefits.",
+   "ingredients": "Dal, Variyali, Tal, Ajma, Sava",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy value": "395.0kcal",
+    "Protein": "3.98g",
+    "Fat": "3.98g",
+    "Carbohydrates": "88.44g",
+    "Sugar": "0.45g"
+   },
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Shahi Kalkatti Pan Mukhwas",
+  "handle": "shahi-kalkatti-pan-mukhwas",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064637_1-mama-mukhwas-kalkatti.jpg"
+    },
+    "barcode": "8906079470510"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064637_1-mama-mukhwas-kalkatti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064637-2_1-mama-mukhwas-kalkatti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064637-3_1-mama-mukhwas-kalkatti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064637-4_1-mama-mukhwas-kalkatti.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064637-5_1-mama-mukhwas-kalkatti.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Shahi special kalkatti pan mukhwas from the house of Mama Mukhwaswala contains betel leaves, fennel seeds, sweet drops, areca nuts, coriander seeds, and cardamom. It has a shelf life of 1 year and no artificial flavours. This is a very popular mouth freshener from the famous city of Kolkata. It has natural ingredients and is a hit among all age groups.",
+   "ingredients": "Betel Leaves, Sweet and Rose Petal Paste, Fennel Seeds, Coriander Pulse, Betel Nuts, Cardamon",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy value": "341.8 kcal",
+    "Protein": "2.7g",
+    "Fat": "11.0g",
+    "Carbohydrates": "78.4g",
+    "Sugar": "15.6g"
+   },
+   "storageInstructions": "Store in a clean and dry place\nKeep away from direct sunlight",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Natural Mukhwas",
+  "handle": "natural-mukhwas",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064634_1-mama-mukhwas-natural.jpg"
+    },
+    "barcode": "8906079470381"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064634_1-mama-mukhwas-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064634-2_1-mama-mukhwas-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064634-3_1-mama-mukhwas-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064634-4_1-mama-mukhwas-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064634-5_1-mama-mukhwas-natural.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Natural mukhwas from the house of Mama Mukhwaswala contains tal, variyali, topra, haripatti, jethi madh and dal. It has a shelf life of 1 year and is good for digestion. Apart from being a mouth freshener, it also aids digestion. Fennel, which is a very important part of the composition, is known for several health benefits.",
+   "ingredients": "Fennel seeds, menthol, sugar and salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy value": "488.9 kcal",
+    "Protein": "9.3g",
+    "Fat": "22.1g",
+    "Carbohydrates": "63.2g"
+   },
+   "storageInstructions": "Store in a clean and dry place\nKeep away from direct sunlight",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Jaipuri No.1 Mukhwas",
+  "handle": "jaipuri-no-1-mukhwas",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064636_1-mama-mukhwas-jaipuri-no1.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064636_1-mama-mukhwas-jaipuri-no1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064636-2_1-mama-mukhwas-jaipuri-no1.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Jaipuri No.1 is a delicious and unique mukhwas product. It is made with a blend of mango and aamchur, offering a tangy and flavourful taste. This mukhwas can be enjoyed as a mouth freshener or a snack. It is a perfect accompaniment to any meal.",
+   "ingredients": "Mango, Aamchur",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "15.00 kcal",
+    "Carbohydrates": "137.5g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Draxa Vati",
+  "handle": "draxa-vati",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064643_1-mama-mukhwas-draxa-vati.jpg"
+    },
+    "barcode": "8906079470015"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064643_1-mama-mukhwas-draxa-vati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064643-2_1-mama-mukhwas-draxa-vati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064643-3_1-mama-mukhwas-draxa-vati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064643-4_1-mama-mukhwas-draxa-vati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064643-5_1-mama-mukhwas-draxa-vati.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Grape vati also known as draksh vati (round balls) is one amazing freshener rooted in the ethos of Ayurveda which aids in digestion and treatment of many diseases. Mama Mukhwaswala combines this magical ingredient with amchur (dry mango powder), kali mirch (black pepper) and sugar to give you the amazing draksha (grape) golis which you can binge anytime!",
+   "ingredients": "Black grapes, dry mango powder, black chilli, sugar",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy value": "285.0 kcal",
+    "Protein": "1.9g",
+    "Fat": "2.4g",
+    "Carbohydrates": "64.0g",
+    "Sugar": "30g"
+   },
+   "storageInstructions": "Storage as per packaging",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dadam Vati",
+  "handle": "dadam-vati",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064645_1-mama-mukhwas-dadam-vati.jpg"
+    },
+    "barcode": "8906079470169"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064645_1-mama-mukhwas-dadam-vati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064645-2_1-mama-mukhwas-dadam-vati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064645-3_1-mama-mukhwas-dadam-vati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064645-4_1-mama-mukhwas-dadam-vati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064645-5_1-mama-mukhwas-dadam-vati.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Dadam (pomegranate) vati (pellets) is a wonderful combination of pomegranate extract and digestive powder in an unconventional and easy to consume form. This classic sweet and sour treat from Mama Mukhwaswala helps preventing cancer and has anti-ageing properties. This is something different and it tastes super healthy.",
+   "ingredients": "Dadam Churan ,\nMango powder ,\nblack chilli\nsugar",
+   "storageInstructions": "It can be used as mouth freshener after eating meal .\n It can also be used in salad to give a nutty flavour.\nReady to eat.\nStore in clean and dry place.\nKeep away from direct sunlight.",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Aam Pachak",
+  "handle": "aam-pachak",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064640_1-mama-mukhwas-aam-pachak.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064640_1-mama-mukhwas-aam-pachak.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064640-2_1-mama-mukhwas-aam-pachak.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064640-3_1-mama-mukhwas-aam-pachak.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064640-4_1-mama-mukhwas-aam-pachak.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Aampachak Supplement Pack is useful combination to easy all abdominal discomforts that people usually feel after intake of heavy things or due to sluggish digestion. A natural aid not only to digest the food but enhances appetite also.",
+   "ingredients": "Mango, Aamchur",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy value": "139.00",
+    "Fat": "2.4g",
+    "Carbohydrates": "17.00g",
+    "Sugar": "1.3g",
+    "Energy value (kcal)": "39.0kcal"
+   },
+   "storageInstructions": "*Store in a clean and dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Anar Dana Goli",
+  "handle": "anar-dana-goli",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064642_1-mama-mukhwas-anar-dana.jpg"
+    },
+    "barcode": "8906079470053"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064642_1-mama-mukhwas-anar-dana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064642-2_1-mama-mukhwas-anar-dana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064642-3_1-mama-mukhwas-anar-dana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064642-4_1-mama-mukhwas-anar-dana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064642-5_1-mama-mukhwas-anar-dana.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Rochak Anardana Goli is a fine mixture of Pomegranate seeds mixed with spices and herbs with rose petals in the right proportion that makes it delicious in flavour. The Anardana Goli is an all flavoursome digestive that helps you to regain your appetite, solve indigestion and cure many other disorders, by improving bowel movement and reducing nutrition loss.",
+   "ingredients": "Dry mango, cumin, pepper, dry ginger, black salt, Anardana",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy value": "285.0 kcal",
+    "Protein": "1.9g",
+    "Fat": "2.4g",
+    "Carbohydrates": "64.0g",
+    "Sugar": "30g"
+   },
+   "storageInstructions": "Store in a cool and dry place\nKeep away from direct sunlight",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Jeera Mango",
+  "handle": "jeera-mango",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064639_1-mama-mukhwas-jeera-mango.jpg"
+    },
+    "barcode": "8906079470282"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064639_1-mama-mukhwas-jeera-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064639-2_1-mama-mukhwas-jeera-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064639-3_1-mama-mukhwas-jeera-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064639-4_1-mama-mukhwas-jeera-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064639-5_1-mama-mukhwas-jeera-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas jeera mango from the house of Mama Mukhwaswala contains mango, jeera salt, and black pepper. It has a shelf life of 1 year and is good for digestion. Apart from being a mouth freshener, it also aids digestion. Fennel, which is a very important part of the composition, is known for several health benefits.",
+   "ingredients": "Cinnamon seeds, sugar, dry mango, black salt, pepper, south salnimbu",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy value": "350.8kcal",
+    "Protein": "37.5g",
+    "Fat": "2.69g",
+    "Carbohydrates": "5.92g",
+    "Sugar": "2.1g"
+   },
+   "storageInstructions": "Store in clean and dry place\nKeep away from direct sunlight",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tikha Mango",
+  "handle": "tikha-mango",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064638_1-mama-mukhwas-tikha-mango.jpg"
+    },
+    "barcode": "8906079470275"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064638_1-mama-mukhwas-tikha-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064638-2_1-mama-mukhwas-tikha-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064638-3_1-mama-mukhwas-tikha-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064638-4_1-mama-mukhwas-tikha-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064638-5_1-mama-mukhwas-tikha-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Tikha mango from house of Mama Mukhwaswala contains mango, jeera salf and kali mirch. It has a shelf life of 1 year and is good for digestion. Apart from being a mouth freshener, it also aids digestion. Fennel, which is a very important part of the composition, is known for several health benefits.",
+   "ingredients": "Cinnamon seeds, sugar, dry mango, black salt, pepper, south salnimbu",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "350.8 kcal",
+    "Protein": "2.8 g",
+    "Fat": "2.5 g",
+    "Carbohydrates": "79.5 g",
+    "Sugar": "25.5 g"
+   },
+   "storageInstructions": "*Store in a clean and dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Masala Kharek",
+  "handle": "masala-kharek",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064644_1-mama-mukhwas-masala-kharek.jpg"
+    },
+    "barcode": "8906079470077"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064644_1-mama-mukhwas-masala-kharek.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Masala Kharek is a delicious and crunchy snack made with a blend of spices and dried fruits. It is a perfect combination of sweet, sour, and spicy flavours that will tantalise your taste buds. This masala kharek can be enjoyed as a snack or used as a topping for various dishes to add a unique flavour.",
+   "ingredients": "Kharek, Aaamchur, Kali Mirch, Sunth & Ganthoda Powder",
+   "storageInstructions": "Store in a clean and dry place\nKeep away from direct sunlight",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sweet Amla",
+  "handle": "sweet-amla",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064633_1-mama-mukhwas-sweet-amla.jpg"
+    },
+    "barcode": "8906079470237"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064633_1-mama-mukhwas-sweet-amla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Sweet Amla is a delightful blend of amla (Indian gooseberry) and sugar. Amla is a rich source of vitamin C and antioxidants, making this product a healthy and flavourful snack. Enjoy the sweet and tangy taste of this traditional Indian mukhwas (mouth freshener).",
+   "ingredients": "Amla, Sugar",
+   "storageInstructions": "Store in a cool and dry place\nKeep away from direct sunlight",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Imli",
+  "handle": "imli",
+  "vendor": "Mama Mukhwas",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40064647_1-mama-mukhwas-imly.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40064647_1-mama-mukhwas-imly.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Mama Mukhwas Imly is a delicious and unique imli (tamarind) flavoured mukhwas (mouth freshener) made with imli and sugar. It is a perfect after-meal treat that helps cleanse the palate and freshen the breath. This mukhwas is a traditional Indian snack that can be enjoyed on its own or as a digestive aid.",
+   "ingredients": "Imly & Sugar",
+   "storageInstructions": "Storage as per packaging",
+   "manufacturerName": "Mama Mukhwas Wala",
+   "countryOfOrigin": "India"
+  }
+ }
+]

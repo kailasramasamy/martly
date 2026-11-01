@@ -1,0 +1,117 @@
+{
+  "brand": "Mama Mukhwas",
+  "manufacturer": "Mama Mukhwas Wala",
+  "feed": "mama-mukhwas-feed.json",
+  "themeColor": "#1F6B3A",
+  "themeColorSecondary": "#E3B23C",
+  "namePrefix": "Mama Mukhwas ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Digestive\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Shahi\\ Kalkatti\\ Pan\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Natural\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Jaipuri\\ No\\.1\\ Mukhwas$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Draxa\\ Vati$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Dadam\\ Vati$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Aam\\ Pachak$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Anar\\ Dana\\ Goli$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Mango$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Tikha\\ Mango$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Masala\\ Kharek$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Amla$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    },
+    {
+      "match": "^Imli$",
+      "path": [
+        "Paan Corner",
+        "Mouth Freshener",
+        "Mukhwas"
+      ]
+    }
+  ]
+}
