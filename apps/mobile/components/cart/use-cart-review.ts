@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { toCartItem, useCart, type LineTerms } from "../../lib/cart-context";
+import { toCartItem, useCart, type LineTerms, lineCutout } from "../../lib/cart-context";
 import { getBestPrice, useMembership } from "../../lib/membership-context";
 import { api } from "../../lib/api";
 import { lineTotal, type MultiBuyOffer } from "@martly/shared/offers";
@@ -75,8 +75,8 @@ function useRepricing(byId: Map<string, StoreProduct>) {
     for (const item of items) {
       const sp = byId.get(item.storeProductId);
       if (!sp) continue;
-      const terms = { price: getBestPrice(sp, isMember), offer: sp.pricing?.offer ?? null };
-      if (Math.abs(terms.price - item.price) >= 0.01 || offerKey(terms.offer) !== offerKey(item.offer)) changed.set(item.storeProductId, terms);
+      const terms = { price: getBestPrice(sp, isMember), offer: sp.pricing?.offer ?? null, cutoutUrl: lineCutout(sp) };
+      if (Math.abs(terms.price - item.price) >= 0.01 || offerKey(terms.offer) !== offerKey(item.offer) || terms.cutoutUrl !== (item.cutoutUrl ?? null)) changed.set(item.storeProductId, terms);
     }
     if (changed.size === 0) return;
     setPreviousPrices((prev) => {

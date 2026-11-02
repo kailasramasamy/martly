@@ -3,6 +3,7 @@ import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-nativ
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { AISLE } from "./aisle-theme";
 import { useStrings } from "../../lib/i18n/use-strings";
 
 // Searches once the typing pauses, not on every key
@@ -49,7 +50,7 @@ export function ShelfSearch({ title, scope, onQuery, onOpenChange }: Props) {
           setOpen(true);
           onOpenChange(true);
         }} accessibilityRole="button" accessibilityLabel={t.searchIn(scope)}>
-          <Ionicons name="search" size={18} color={colors.text} />
+          <Ionicons name="search" size={18} color={AISLE.text} />
         </TouchableOpacity>
       </View>
     );
@@ -83,12 +84,12 @@ export function NoShelfMatches({ query }: { query: string }) {
 
 const styles = StyleSheet.create({
   row: { flexDirection: "row", alignItems: "center", gap: 8, minHeight: 44 },
-  title: { flex: 1, fontFamily: fonts.extrabold, fontSize: 15, color: colors.text },
+  title: { flex: 1, fontFamily: fonts.extrabold, fontSize: 15, color: AISLE.text },
   icon: { width: 44, height: 44, borderRadius: 22, alignItems: "center", justifyContent: "center" },
   field: { paddingLeft: 12, borderRadius: 22, borderWidth: 1.5, borderColor: colors.primary, backgroundColor: "#ffffff" },
   input: { flex: 1, height: 44, fontFamily: fonts.medium, fontSize: 15, color: colors.text },
   empty: { alignItems: "center", gap: 12, paddingVertical: 24 },
-  emptyText: { fontFamily: fonts.medium, fontSize: 14, color: colors.textSecondary, textAlign: "center" },
-  whole: { height: 44, paddingHorizontal: 20, borderRadius: 22, borderWidth: 1.5, borderColor: colors.primary, justifyContent: "center" },
-  wholeText: { fontFamily: fonts.bold, fontSize: 14, color: colors.primary },
+  emptyText: { fontFamily: fonts.medium, fontSize: 14, color: AISLE.muted, textAlign: "center" },
+  whole: { height: 44, paddingHorizontal: 20, borderRadius: 22, borderWidth: 1.5, borderColor: AISLE.accent, justifyContent: "center" },
+  wholeText: { fontFamily: fonts.bold, fontSize: 14, color: AISLE.accent },
 });

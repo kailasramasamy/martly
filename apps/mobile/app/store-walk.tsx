@@ -3,6 +3,7 @@ import type { StoreWalkStop } from "@martly/shared/types";
 import { Animated, BackHandler, Dimensions, Easing, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Loader } from "../components/Loader";
 import { router, useLocalSearchParams, useNavigation } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
 import { useStore } from "../lib/store-context";
@@ -18,32 +19,38 @@ import { WalkRoute } from "../components/store-walk/WalkRoute";
 import { WalkSummary } from "../components/store-walk/WalkSummary";
 import { useReduceMotion } from "../lib/use-reduce-motion";
 import { FlyProvider } from "../components/store-walk/basket-fly";
-import { walkSession } from "../lib/walk-session";
 import { ShopFloor } from "../components/store-walk/ShopFloor";
+import { AISLE } from "../components/store-walk/aisle-theme";
 import { useStoreWalk, type StoreWalk } from "../components/store-walk/use-store-walk";
 import { ListCart } from "../components/monthly-list/ListCart";
 
 const SHIFT = Dimensions.get("window").width * 0.35;
+// Walking forward: the aisle left behind grows to this, and the next starts at this, further off
+const WALK_PAST = 1.12;
+const FAR_OFF = 0.94;
 // Back button, the gutters either side and the gap before the buttons on the right
 const HEADER_BACK_WIDTH = 104;
 
-// Moving on slides the aisle out to the left and the next one in from the right, like walking forward; going back
-// (`direction` -1) slides the other way
+// Moving on walks forward: the aisle grows past the shopper and fades, and the next comes up from further off. Going
+// back (`direction` -1) slides the aisle out to the right and the last one in from the left
 function useAisleSlide() {
   const reduce = useReduceMotion();
   const x = useRef(new Animated.Value(0)).current;
+  const scale = useRef(new Animated.Value(1)).current;
   const opacity = useRef(new Animated.Value(1)).current;
   const timing = (v: Animated.Value, toValue: number, duration: number) =>
     Animated.timing(v, { toValue, duration, easing: Easing.inOut(Easing.quad), useNativeDriver: true });
   const go = (change: () => void, direction: 1 | -1 = 1) => {
     if (reduce) return change();
-    Animated.parallel([timing(x, -SHIFT * direction, 200), timing(opacity, 0, 200)]).start(() => {
+    const out = direction === 1 ? timing(scale, WALK_PAST, 220) : timing(x, SHIFT, 200);
+    Animated.parallel([out, timing(opacity, 0, 200)]).start(() => {
       change();
-      x.setValue(SHIFT * direction);
-      Animated.parallel([timing(x, 0, 260), timing(opacity, 1, 260)]).start();
+      if (direction === 1) scale.setValue(FAR_OFF);
+      else x.setValue(-SHIFT);
+      Animated.parallel([timing(direction === 1 ? scale : x, direction === 1 ? 1 : 0, 280), timing(opacity, 1, 280)]).start();
     });
   };
-  return { style: { flex: 1, opacity, transform: [{ translateX: x }] }, go, x };
+  return { style: { flex: 1, opacity, transform: [{ translateX: x }, { scale }] }, go, x };
 }
 
 function Message({ text, onRetry }: { text: string; onRetry?: () => void }) {
@@ -66,6 +73,9 @@ function useAisleHeader(department: string, position: string, onMap: () => void)
   const nav = useStrings("nav");
   useEffect(() => {
     navigation.setOptions({
+      headerStyle: { backgroundColor: AISLE.panel },
+      headerShadowVisible: false,
+      headerTintColor: AISLE.text,
       // Left-aligned, so the aisle name gets the room between Back and the buttons (centred, a long name runs under them)
       headerTitleAlign: "left",
       headerTitle: () => (
@@ -77,15 +87,18 @@ function useAisleHeader(department: string, position: string, onMap: () => void)
       headerRight: () => (
         <View style={styles.headerActions} onLayout={(e) => setActionsWidth(e.nativeEvent.layout.width)}>
           <TouchableOpacity style={styles.mapButton} onPress={onMap} accessibilityRole="button" hitSlop={{ top: 6, bottom: 6 }}>
-            <Ionicons name="map-outline" size={16} color={colors.text} />
+            <Ionicons name="map-outline" size={16} color={AISLE.text} />
             <Text style={styles.mapText}>{t.map}</Text>
           </TouchableOpacity>
         </View>
       ),
     });
   }, [navigation, department, position, onMap, t, actionsWidth, titleWidth]);
-  // Back to the plain title once the walk leaves the aisles
-  useEffect(() => () => navigation.setOptions({ headerTitle: nav.storeWalk, headerTitleAlign: undefined, headerRight: undefined }), [navigation, nav]);
+  // Back to the plain, light header once the walk leaves the aisles
+  useEffect(() => () => navigation.setOptions({
+    headerTitle: nav.storeWalk, headerTitleAlign: undefined, headerRight: undefined,
+    headerStyle: undefined, headerShadowVisible: true, headerTintColor: undefined,
+  }), [navigation, nav]);
 }
 
 // Back in the aisles steps back to the department's route instead of leaving the walk. The native stack can't reliably
@@ -101,7 +114,7 @@ function useAisleBack(onBack: (() => void) | null) {
       headerBackVisible: false,
       headerLeft: () => (
         <TouchableOpacity style={styles.backButton} onPress={onBack} accessibilityRole="button" accessibilityLabel={c.back}>
-          <Ionicons name="chevron-back" size={24} color={colors.text} />
+          <Ionicons name="chevron-back" size={24} color={AISLE.text} />
         </TouchableOpacity>
       ),
     });
@@ -122,15 +135,7 @@ function Aisles({ walk, onBack, onFinish, forList }: { walk: StoreWalk; onBack: 
   const department = walk.route!.departments.find((d) => d.id === walk.route!.departmentId)!;
   const next = walk.stops[walk.index + 1];
   const prev = walk.index > 0 ? walk.stops[walk.index - 1] : undefined;
-  const here = walk.aisle && walk.aisle !== "error" ? new Set([...walk.aisle.due, ...walk.aisle.popular].map((sp) => sp.product.id)) : null;
-  const addedHere = here ? walk.added.filter((l) => here.has(l.item.productId)).reduce((n, l) => n + l.added, 0) : 0;
   const leave = () => slide.go(walk.leave);
-  // The cart is a tab, so going there ends the walk; it counts as walked, so the cart doesn't nudge for another
-  const goToCart = () => {
-    if (forList) return onFinish();
-    walkSession.walked = true;
-    router.navigate("/(tabs)/cart");
-  };
   const openMap = useCallback(() => setMapOpen(true), []);
   useAisleHeader(getLocalizedName(department), t.aisleOf(walk.index + 1, walk.stops.length), openMap);
   useAisleBack(onBack);
@@ -138,6 +143,7 @@ function Aisles({ walk, onBack, onFinish, forList }: { walk: StoreWalk; onBack: 
     stop ? { name: getLocalizedName(stop), label: getLocalizedName(stop), onPress } : null;
   return (
     <ShopFloor>
+      <StatusBar style="dark" />
       <View style={styles.progressRow}><WalkProgress count={walk.stops.length} index={walk.index} /></View>
       <Animated.View style={slide.style}>
         {walk.stop && (
@@ -149,8 +155,8 @@ function Aisles({ walk, onBack, onFinish, forList }: { walk: StoreWalk; onBack: 
         )}
       </Animated.View>
       <WalkDock
-        addedHere={addedHere} basket={walk.added.flatMap((l) => l.item.imageUrl ?? [])} next={next ? { name: getLocalizedName(next), imageUrl: next.imageUrl } : null}
-        onBag={onFinish} onNext={leave} onCart={goToCart} forList={forList}
+        next={next ? { name: getLocalizedName(next), imageUrl: next.imageUrl } : null}
+        onBag={onFinish} onNext={leave} forList={forList}
       />
       <AisleMapSheet
         visible={mapOpen} stops={walk.stops} index={walk.index} walked={walk.walked}
@@ -201,15 +207,15 @@ const styles = StyleSheet.create({
   spinner: { marginTop: 48 },
   headerTitle: { flexShrink: 1 },
   progressRow: { paddingVertical: 6 },
-  department: { fontFamily: fonts.extrabold, fontSize: 11, letterSpacing: 0.6, color: colors.primary },
-  position: { fontFamily: fonts.bold, fontSize: 13, color: colors.textSecondary },
+  department: { fontFamily: fonts.extrabold, fontSize: 11, letterSpacing: 0.6, color: AISLE.accent },
+  position: { fontFamily: fonts.bold, fontSize: 13, color: AISLE.muted },
   backButton: { width: 44, height: 44, alignItems: "center", justifyContent: "center" },
   headerActions: { flexDirection: "row", alignItems: "center", gap: 6 },
   mapButton: {
-    height: 36, paddingHorizontal: 12, borderRadius: 18, borderWidth: 1, borderColor: colors.border,
+    height: 36, paddingHorizontal: 12, borderRadius: 18, borderWidth: 1, borderColor: AISLE.line,
     flexDirection: "row", alignItems: "center", gap: 6,
   },
-  mapText: { fontFamily: fonts.bold, fontSize: 13, color: colors.text },
+  mapText: { fontFamily: fonts.bold, fontSize: 13, color: AISLE.text },
   message: { alignItems: "center", paddingTop: 64, paddingHorizontal: 32, gap: 16 },
   messageText: { fontFamily: fonts.medium, fontSize: 14, color: colors.textSecondary, textAlign: "center" },
   retry: { height: 44, paddingHorizontal: 20, borderRadius: 10, borderWidth: 1.5, borderColor: colors.primary, justifyContent: "center" },

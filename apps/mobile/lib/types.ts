@@ -1,6 +1,6 @@
 import type { BrandPick } from "@martly/shared/constants";
 import type { MultiBuyOffer } from "@martly/shared/offers";
-import type { CampaignTile, CouponOffer, HomeTheme, MonthlyListChange, MonthlyListItemView, MonthlyListView, OwnerPick, StorePostView, StoreWalkAisle, StoreWalkRoute } from "@martly/shared/types";
+import type { CampaignTile, CouponOffer, HomeTheme, MonthlyListChange, MonthlyListItemView, MonthlyListView, OwnerPick, ShelfItem, StorePostView, StoreWalkAisle, StoreWalkRoute } from "@martly/shared/types";
 import type { PaginatedResponse } from "@martly/shared/types";
 
 export interface Store {
@@ -31,7 +31,8 @@ export interface Store {
   offerText?: string | null;
   brandColor?: string | null;
   highlights?: string[];
-  translations?: Record<string, { name?: string; tagline?: string; offerText?: string }> | null;
+  brandName?: string | null;
+  translations?: Record<string, { name?: string; tagline?: string; offerText?: string; brandName?: string }> | null;
   /** Items on offer right now and the biggest saving among them */
   deals?: { count: number; maxPercent: number } | null;
   /** Scheduled delivery slots still open for booking, soonest first (IST date, HH:MM times) */
@@ -89,6 +90,8 @@ export interface StoreProduct {
 /** Walk the store: one department's aisles, and one aisle's products */
 export type WalkRoute = StoreWalkRoute<StoreProduct>;
 export type WalkAisle = StoreWalkAisle<StoreProduct>;
+/** A pack on the walk's shelves, with what it calls out */
+export type WalkPack = ShelfItem<StoreProduct>;
 
 /** The monthly list as it stands today, its lines and what changed */
 export type MonthlyList = MonthlyListView<StoreProduct>;
@@ -148,6 +151,8 @@ export interface Product {
   imageUrl: string | null;
   /** Set when the image is a store's pack render: a tight cutout, no white margin */
   packPhotoUrl?: string | null;
+  /** The photo with its background removed, trimmed to the pack, for Walk the store's shelves */
+  cutoutUrl?: string | null;
   images?: string[];
   brand: { id: string; name: string; imageUrl?: string | null; themeColor?: string | null; themeColorSecondary?: string | null } | null;
   foodType: string | null;

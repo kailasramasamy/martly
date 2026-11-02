@@ -33,16 +33,16 @@ export function AisleSign({ name, imageUrl }: { name: string; imageUrl: string |
 }
 
 const styles = StyleSheet.create({
-  frame: { height: 92, alignItems: "center" },
-  cord: { position: "absolute", top: 0, width: 2, height: 18, backgroundColor: "#94a3b8" },
+  frame: { height: 70, alignItems: "center" },
+  cord: { position: "absolute", top: 0, width: 2, height: 12, backgroundColor: "#94a3b8" },
   cordLeft: { left: "32%" },
   cordRight: { right: "32%" },
   board: {
-    marginTop: 16, minWidth: 150, maxWidth: "56%", height: 64, paddingLeft: 8, paddingRight: 22, borderRadius: 12, gap: 12,
+    marginTop: 10, minWidth: 150, maxWidth: "56%", height: 52, paddingLeft: 8, paddingRight: 22, borderRadius: 12, gap: 12,
     flexDirection: "row", backgroundColor: colors.primaryDark, alignItems: "center", justifyContent: "center", transformOrigin: "top",
     shadowColor: "#0f172a", shadowOpacity: 0.18, shadowRadius: 10, shadowOffset: { width: 0, height: 5 }, elevation: 5,
   },
-  name: { flexShrink: 1, fontFamily: fonts.extrabold, fontSize: 21, color: "#ffffff" },
-  badge: { width: 48, height: 48, borderRadius: 10, backgroundColor: "#ffffff", padding: 3 },
+  name: { flexShrink: 1, fontFamily: fonts.extrabold, fontSize: 19, color: "#ffffff" },
+  badge: { width: 40, height: 40, borderRadius: 10, backgroundColor: "#ffffff", padding: 3 },
   image: { flex: 1, resizeMode: "contain" },
 });

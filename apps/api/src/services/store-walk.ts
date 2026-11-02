@@ -8,6 +8,7 @@ import { recentStoreSales } from "./home/most-bought.js";
 import { ownBrand, ownProductSql } from "./own-brand.js";
 import { dueInStock } from "./reorder.js";
 import { searchAisleProducts } from "./search.js";
+import { withShelfSignals } from "./shelf-signals.js";
 import { decorateStoreProducts, storeProductInclude } from "./store-product-view.js";
 
 const DUE_LIMIT = 8;
@@ -193,7 +194,7 @@ async function popularIn(
     SELECT *, own AND ROW_NUMBER() OVER (PARTITION BY own ORDER BY popularity DESC, units DESC, available DESC, id) <= ${OWN_LEAD} AS lead
     FROM (
       SELECT DISTINCT ON (p.id) sp.id, p.subcategory_id AS "subcategoryId", ${ownProductSql(boost)} AS own, COALESCE(sales.qty, 0) AS units,
-        ${brandPopularitySql(region)} AS popularity, sp.stock - sp.reserved_stock AS available
+        ${brandPopularitySql(region, "b", Prisma.sql`p.subcategory_id`)} AS popularity, sp.stock - sp.reserved_stock AS available
       FROM store_products sp
       JOIN products p ON p.id = sp.product_id AND p.is_active AND p.image_url IS NOT NULL
       JOIN subcategories s ON s.id = p.subcategory_id AND s.category_id = ${categoryId}
@@ -249,12 +250,15 @@ async function endcapDeals(prisma: PrismaClient, storeId: string, departmentId: 
 const BRAND_LIMIT = 20;
 
 // The brands on the aisle's shelves (or one subcategory's), for the brand filter: the store's own brand first (its
-// brands and the staples it packs, under its logo), then the others by popularity in the store's region and sales
+// brands and the staples it packs, under its logo), then the others by popularity on these shelves (Martly's ranking for
+// the subcategory or category, else the brand's regional score) and sales
 async function stockedBrands(prisma: PrismaClient, storeId: string, { categoryId, subcategoryId }: AisleFilter, boost: BrandBoost) {
   const region = await storeRegion(prisma, storeId);
   const stocked = Prisma.sql`
-    SELECT DISTINCT p.id, p.brand_id, ${ownProductSql(boost)} AS own FROM store_products sp
+    SELECT DISTINCT p.id, p.brand_id, ${ownProductSql(boost)} AS own, ${brandPopularitySql(region, "pb", Prisma.sql`p.subcategory_id`)} AS popularity
+    FROM store_products sp
     JOIN products p ON p.id = sp.product_id AND p.is_active
+    LEFT JOIN brands pb ON pb.id = p.brand_id
     JOIN subcategories s ON s.id = p.subcategory_id AND s.category_id = ${categoryId}
       ${subcategoryId ? Prisma.sql`AND s.id = ${subcategoryId}` : Prisma.empty}
     WHERE sp.store_id = ${storeId} AND sp.is_active AND sp.stock - sp.reserved_stock > 0`;
@@ -267,7 +271,7 @@ async function stockedBrands(prisma: PrismaClient, storeId: string, { categoryId
       LEFT JOIN (${recentStoreSales(storeId)}) sales ON sales.product_id = stocked.id
       WHERE NOT stocked.own
       GROUP BY b.id
-      ORDER BY ${brandPopularitySql(region)} DESC, COALESCE(SUM(sales.qty), 0) DESC, COUNT(*) DESC, b.name
+      ORDER BY MAX(stocked.popularity) DESC, COALESCE(SUM(sales.qty), 0) DESC, COUNT(*) DESC, b.name
       LIMIT ${BRAND_LIMIT}`,
     ownBrand(prisma, storeId),
   ]);
@@ -301,12 +305,13 @@ export async function walkAisle(prisma: PrismaClient, storeId: string, userId: s
   if (!category || subcategories.length === 0) return null;
   const dueRows = dueAll.filter((sp) => categoryOf(sp) === filter.categoryId);
   const boost = await storeBrandBoost(prisma, storeId);
-  const [due, popular, endcap, brands] = await Promise.all([
+  const [dueShown, popularShown, endcapShown, brands] = await Promise.all([
     decorateStoreProducts(prisma, dueRows),
     filter.q ? searchedIn(prisma, storeId, filter, boost) : popularIn(prisma, storeId, filter, boost, dueRows.map((sp) => sp.productId)),
     endcapDeals(prisma, storeId, category.departmentId, category.id),
     stockedBrands(prisma, storeId, filter, boost),
   ]);
+  const [due, popular, endcap] = await withShelfSignals(prisma, storeId, filter, [dueShown, popularShown, endcapShown]);
   const stocked = subcategories.reduce((n, sc) => n + sc.stocked, 0);
   return {
     category: { ...category, translations: category.translations as Translations }, stocked, subcategories, brands, due, popular, endcap,

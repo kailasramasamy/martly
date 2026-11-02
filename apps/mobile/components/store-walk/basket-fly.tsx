@@ -5,11 +5,14 @@ import { useReduceMotion } from "../../lib/use-reduce-motion";
 type Rect = { x: number; y: number; width: number; height: number };
 /** Anything on screen that can say where it is: a view, or a pack's photo */
 type Measurable = Pick<View, "measureInWindow">;
-type Flight = { id: number; uri: string; from: Rect; to: Rect };
+// `back`: taken out of the bag, so the pack flies the same path the other way, out of the basket onto its shelf
+type Flight = { id: number; uri: string; from: Rect; to: Rect; back: boolean };
 
 interface Fly {
   /** Sends a pack's photo from where it sits on screen into the basket */
   fly: (uri: string, from: Measurable | null) => void;
+  /** Sends a pack's photo out of the basket, back to where it sits on screen */
+  flyBack: (uri: string, to: Measurable | null) => void;
   basketRef: RefObject<View | null>;
 }
 
@@ -19,12 +22,14 @@ const RISE = 40;
 
 const measure = (view: Measurable) => new Promise<Rect>((resolve) => view.measureInWindow((x, y, width, height) => resolve({ x, y, width, height })));
 
-// One photo dropping into the basket: across in a straight line, down with gravity, shrinking as it lands
+// One photo dropping into the basket: across in a straight line, down with gravity, shrinking as it lands. Flying back,
+// the same path runs in reverse: up out of the basket, growing, onto the shelf
 function FlyingPack({ flight, origin, onDone }: { flight: Flight; origin: Rect; onDone: (id: number) => void }) {
-  const t = useRef(new Animated.Value(0)).current;
+  const t = useRef(new Animated.Value(flight.back ? 1 : 0)).current;
   useEffect(() => {
-    Animated.timing(t, { toValue: 1, duration: 620, easing: Easing.linear, useNativeDriver: true }).start(() => onDone(flight.id));
-  }, [t, flight.id, onDone]);
+    Animated.timing(t, { toValue: flight.back ? 0 : 1, duration: 620, easing: Easing.linear, useNativeDriver: true })
+      .start(() => onDone(flight.id));
+  }, [t, flight.id, flight.back, onDone]);
   const { from, to } = flight;
   const dx = to.x + to.width / 2 - (from.x + from.width / 2);
   const dy = to.y + to.height / 2 - (from.y + from.height / 2);
@@ -55,15 +60,18 @@ export function FlyProvider({ children }: { children: ReactNode }) {
   const nextId = useRef(0);
   const [origin, setOrigin] = useState<Rect>({ x: 0, y: 0, width: 0, height: 0 });
   const [flights, setFlights] = useState<Flight[]>([]);
-  const fly = useCallback(async (uri: string, fromView: Measurable | null) => {
-    if (reduce || !fromView || !basketRef.current || !root.current) return;
-    const [from, to, at] = await Promise.all([measure(fromView), measure(basketRef.current), measure(root.current)]);
+  // `from` is always the pack on the shelf and `to` the basket; a flight back runs it the other way
+  const launch = useCallback(async (uri: string, packView: Measurable | null, back: boolean) => {
+    if (reduce || !packView || !basketRef.current || !root.current) return;
+    const [from, to, at] = await Promise.all([measure(packView), measure(basketRef.current), measure(root.current)]);
     setOrigin(at);
-    setFlights((f) => [...f, { id: nextId.current++, uri, from, to }]);
+    setFlights((f) => [...f, { id: nextId.current++, uri, from, to, back }]);
   }, [reduce]);
+  const fly = useCallback((uri: string, from: Measurable | null) => launch(uri, from, false), [launch]);
+  const flyBack = useCallback((uri: string, to: Measurable | null) => launch(uri, to, true), [launch]);
   const done = useCallback((id: number) => setFlights((f) => f.filter((x) => x.id !== id)), []);
   return (
-    <FlyContext.Provider value={{ fly, basketRef }}>
+    <FlyContext.Provider value={{ fly, flyBack, basketRef }}>
       <View ref={root} style={styles.root} collapsable={false}>
         {children}
         <View style={StyleSheet.absoluteFill} pointerEvents="none">

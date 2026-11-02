@@ -8,20 +8,22 @@ import { useStrings } from "../../lib/i18n/use-strings";
 import { useFly } from "./basket-fly";
 import { useCountUp } from "./motion";
 import { useReduceMotion } from "../../lib/use-reduce-motion";
+import { AISLE } from "./aisle-theme";
+import { carriesTrolley } from "./cart-look";
 
-const IN_BASKET = 3;
+const IN_CART = 3;
 
-// A wire basket with the latest packs peeking over its rim; packs added on the shelves fly into it
-function Basket({ photos, scale }: { photos: string[]; scale: Animated.AnimatedInterpolation<number> }) {
+// A basket, or a trolley once the cart outgrows it, with the latest cut-out packs peeking over its rim; packs added on the shelves fly into it
+function Carrier({ photos, scale, trolley }: { photos: string[]; scale: Animated.AnimatedInterpolation<number>; trolley: boolean }) {
   const flyer = useFly();
   return (
     <Animated.View ref={flyer?.basketRef} collapsable={false} style={[styles.basket, { transform: [{ scale }] }]}>
       <View style={styles.peek}>
-        {photos.slice(-IN_BASKET).map((uri, i) => (
+        {photos.slice(-IN_CART).map((uri, i) => (
           <Image key={`${uri}-${i}`} source={{ uri }} style={[styles.peekPack, { transform: [{ rotate: `${(i - 1) * 12}deg` }] }]} />
         ))}
       </View>
-      <Ionicons name="basket" size={26} color={colors.primary} />
+      <Ionicons name={trolley ? "cart" : "basket"} size={trolley ? 30 : 26} color={AISLE.accent} />
     </Animated.View>
   );
 }
@@ -54,78 +56,70 @@ function useBagBump(total: number) {
 }
 
 interface Props {
-  addedHere: number;
-  /** Photos of what this walk added, oldest first */
-  basket: string[];
   /** The next aisle; null on the department's last one */
   next: { name: string; imageUrl: string | null } | null;
   /** End the walk and see what it put in the bag */
   onBag: () => void;
   onNext: () => void;
-  /** Leave the walk for the cart */
-  onCart: () => void;
-  /** The walk fills the monthly list: the bar shows the list, and both bag buttons go back to it */
+  /** The walk fills the monthly list: the bar shows the list, and the bag button goes back to it */
   forList: boolean;
 }
 
-/** The walk's bottom bar: what's in the bag (tap it for the cart), then "See my bag" and the next aisle */
-export function WalkDock({ addedHere, basket, next, onBag, onNext, onCart, forList }: Props) {
+/** The walk's bottom bar, one row: the cart (its count and total; tap to see it) and the next aisle */
+export function WalkDock({ next, onBag, onNext, forList }: Props) {
   const t = useStrings("storeWalk");
   const insets = useSafeAreaInsets();
-  const { itemCount, totalAmount } = useCart();
+  const { items, itemCount, totalAmount } = useCart();
   const shownTotal = useCountUp(Math.round(totalAmount));
   const { scale, chip, gain } = useBagBump(Math.round(totalAmount));
   return (
     // Android's navigation bar scrim washes out anything inside it, so the buttons clear it there
-    <View style={[styles.dock, { paddingBottom: Platform.OS === "android" ? insets.bottom + 8 : Math.max(10, insets.bottom - 14) }]}>
-      <TouchableOpacity style={styles.bagRow} onPress={onCart} activeOpacity={0.7} accessibilityRole="button" accessibilityLabel={forList ? t.backToList : t.goToBag}>
-        <Basket photos={basket} scale={scale} />
-        <Text style={styles.bagText}>{(forList ? t.onList : t.bag)(itemCount, shownTotal.toLocaleString("en-IN"))}</Text>
-        {addedHere > 0 && <Text style={styles.addedHere}>{t.addedHere(addedHere)}</Text>}
-        <Ionicons name="chevron-forward" size={18} color={colors.textSecondary} />
+    <View style={[styles.dock, { paddingBottom: Platform.OS === "android" ? insets.bottom + 8 : Math.max(8, insets.bottom - 16) }]}>
+      <TouchableOpacity style={[styles.button, styles.bag]} onPress={onBag} activeOpacity={0.8} accessibilityRole="button">
+        <Carrier photos={items.flatMap((i) => i.cutoutUrl ?? [])} scale={scale} trolley={carriesTrolley(items)} />
+        <View style={styles.bagWords}>
+          <Text style={styles.bagButtonText} numberOfLines={1}>{forList ? t.backToList : t.seeMyBag}</Text>
+          <Text style={styles.bagText} numberOfLines={1}>{(forList ? t.onList : t.bag)(itemCount, shownTotal.toLocaleString("en-IN"))}</Text>
+        </View>
         <Animated.View pointerEvents="none" style={[styles.chip, chip]}>
-          <Text style={styles.chipText}>+{"₹"}{gain.toLocaleString("en-IN")}</Text>
+          <Text style={styles.chipText}>+{"\u20B9"}{gain.toLocaleString("en-IN")}</Text>
         </Animated.View>
       </TouchableOpacity>
-      <View style={styles.buttons}>
-        <TouchableOpacity style={[styles.button, styles.bag]} onPress={onBag} activeOpacity={0.8} accessibilityRole="button">
-          <Text style={styles.bagButtonText} numberOfLines={2}>{forList ? t.backToList : t.seeMyBag}</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.button, styles.next]} onPress={onNext} activeOpacity={0.85} accessibilityRole="button"
-          accessibilityLabel={next ? t.nextAisle(next.name) : t.lastAisle}
-        >
-          {next?.imageUrl && <View style={styles.nextPicture}><Image source={{ uri: next.imageUrl }} style={styles.nextImage} /></View>}
-          <View style={styles.nextTextWrap}>
-            {next && <Text style={styles.nextKicker}>{t.nextKicker}</Text>}
-            <Text style={styles.nextText} numberOfLines={2}>{next ? next.name : t.lastAisle}</Text>
-          </View>
-          <Ionicons name="arrow-forward" size={18} color="#ffffff" />
-        </TouchableOpacity>
-      </View>
+      <TouchableOpacity
+        style={[styles.button, styles.next]} onPress={onNext} activeOpacity={0.85} accessibilityRole="button"
+        accessibilityLabel={next ? t.nextAisle(next.name) : t.lastAisle}
+      >
+        {next?.imageUrl && <View style={styles.nextPicture}><Image source={{ uri: next.imageUrl }} style={styles.nextImage} /></View>}
+        <View style={styles.nextTextWrap}>
+          {next && <Text style={styles.nextKicker}>{t.nextKicker}</Text>}
+          <Text style={styles.nextText} numberOfLines={1}>{next ? next.name : t.lastAisle}</Text>
+        </View>
+        <Ionicons name="arrow-forward" size={18} color="#ffffff" />
+      </TouchableOpacity>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  dock: { paddingTop: 10, paddingHorizontal: 16, gap: 10, backgroundColor: colors.background, borderTopWidth: 1, borderTopColor: colors.border },
-  bagRow: { flexDirection: "row", alignItems: "center", gap: 8, minHeight: 44 },
-  basket: { width: 44, height: 40, alignItems: "center", justifyContent: "flex-end" },
+  dock: {
+    flexDirection: "row", gap: 10, paddingTop: 8, paddingHorizontal: 16, backgroundColor: AISLE.panel,
+    borderTopWidth: 1, borderTopColor: AISLE.line,
+  },
+  basket: { width: 36, height: 36, alignItems: "center", justifyContent: "flex-end" },
   // The packs sit behind the basket's front, showing over its rim
   peek: { position: "absolute", top: 0, flexDirection: "row", zIndex: -1 },
-  peekPack: { width: 18, height: 18, marginHorizontal: -3, borderRadius: 4, backgroundColor: "#ffffff", resizeMode: "contain" },
-  bagText: { flex: 1, fontFamily: fonts.bold, fontSize: 13, color: colors.text },
-  addedHere: { fontFamily: fonts.bold, fontSize: 13, color: colors.primary },
-  chip: { position: "absolute", left: 4, top: -6, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 10, backgroundColor: colors.primary },
+  peekPack: { width: 16, height: 16, marginHorizontal: -3, resizeMode: "contain" },
+  bagWords: { flex: 1 },
+  bagText: { fontFamily: fonts.semibold, fontSize: 12, color: AISLE.muted },
+  chip: { position: "absolute", left: 8, top: -10, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 10, backgroundColor: colors.primary },
   chipText: { fontFamily: fonts.extrabold, fontSize: 12, color: "#ffffff" },
-  buttons: { flexDirection: "row", gap: 10 },
-  button: { minHeight: 56, paddingVertical: 6, borderRadius: 14, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, paddingHorizontal: 12 },
-  bag: { flex: 1, borderWidth: 1.5, borderColor: "#cbd5e1", backgroundColor: colors.background },
-  bagButtonText: { fontFamily: fonts.extrabold, fontSize: 14, color: colors.text, textAlign: "center" },
-  next: { flex: 1.5, backgroundColor: colors.primary, paddingLeft: 6 },
-  nextPicture: { width: 44, height: 44, borderRadius: 10, backgroundColor: "#ffffff", padding: 3 },
+  button: { minHeight: 52, paddingVertical: 4, borderRadius: 14, flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: 10 },
+  bag: { flex: 1, borderWidth: 1.5, borderColor: AISLE.line },
+  bagButtonText: { fontFamily: fonts.extrabold, fontSize: 14, color: AISLE.text },
+  next: { flex: 1.2, backgroundColor: colors.primary, paddingLeft: 6 },
+  nextPicture: { width: 38, height: 38, borderRadius: 9, backgroundColor: "#ffffff", padding: 3 },
   nextImage: { flex: 1, resizeMode: "contain" },
   nextTextWrap: { flex: 1 },
-  nextKicker: { fontFamily: fonts.bold, fontSize: 13, color: "#99f6e4" },
-  nextText: { fontFamily: fonts.extrabold, fontSize: 15, lineHeight: 20, color: "#ffffff" },
+  nextKicker: { fontFamily: fonts.bold, fontSize: 12, color: "#99f6e4" },
+  nextText: { fontFamily: fonts.extrabold, fontSize: 14, lineHeight: 18, color: "#ffffff" },
 });

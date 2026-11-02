@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Animated, Easing, StyleSheet, View } from "react-native";
 import { colors } from "../../constants/theme";
+import { AISLE } from "./aisle-theme";
 import { useReduceMotion } from "../../lib/use-reduce-motion";
 
 function Segment({ state }: { state: "done" | "current" | "ahead" }) {
@@ -33,7 +34,7 @@ export function WalkProgress({ count, index }: { count: number; index: number })
 
 const styles = StyleSheet.create({
   row: { flexDirection: "row", gap: 3, paddingHorizontal: 16 },
-  track: { flex: 1, height: 4, borderRadius: 2, backgroundColor: colors.border, overflow: "hidden" },
+  track: { flex: 1, height: 4, borderRadius: 2, backgroundColor: AISLE.line, overflow: "hidden" },
   fill: { flex: 1, backgroundColor: colors.primary, transformOrigin: "left" },
   current: { backgroundColor: colors.primaryLight },
 });

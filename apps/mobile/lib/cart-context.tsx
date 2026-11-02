@@ -21,6 +21,8 @@ export interface CartItem {
   price: number;
   quantity: number;
   imageUrl: string | null;
+  /** The pack without its background, for coloured surfaces; lines added before this get it from the cart review */
+  cutoutUrl?: string | null;
   /** Buy X get Y on the line; absent on carts saved before offers, until the cart review brings it */
   offer?: MultiBuyOffer | null;
   /** The Home section it was first added from, credited on the order */
@@ -31,7 +33,11 @@ export interface CartItem {
 export interface LineTerms {
   price: number;
   offer: MultiBuyOffer | null;
+  cutoutUrl: string | null;
 }
+
+/** The pack without its background: its cut-out, or a store's pack render (already cut tight) */
+export const lineCutout = (sp: StoreProduct) => sp.product.cutoutUrl ?? (sp.product.packPhotoUrl ? sp.product.imageUrl : null);
 
 /** A cart line for a store listing, at the shopper's best price and with its offer */
 export function toCartItem(sp: StoreProduct, quantity: number, isMember: boolean): CartItem {
@@ -44,6 +50,7 @@ export function toCartItem(sp: StoreProduct, quantity: number, isMember: boolean
     variantName: sp.variant.name,
     price: getBestPrice(sp, isMember),
     imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl ?? null,
+    cutoutUrl: lineCutout(sp),
     offer: sp.pricing?.offer ?? null,
     quantity,
   };

@@ -10,6 +10,7 @@ import { SuggestionRail } from "../cart/SuggestionRail";
 import { useCartRemoval } from "../cart/use-cart-removal";
 import { useCartReview } from "../cart/use-cart-review";
 import { BagHero } from "./BagHero";
+import { carriesTrolley } from "./cart-look";
 import { BagLine } from "./BagLine";
 import { useCountUp } from "./motion";
 import type { StoreWalk } from "./use-store-walk";
@@ -17,9 +18,18 @@ import type { StoreWalk } from "./use-store-walk";
 type WalkLine = StoreWalk["added"][number];
 type Aisle = { key: string; title: string; data: WalkLine[] };
 
-// The added lines under the aisle each went in from, aisles in the order the walk reached them
+// What was in the cart before this walk, including anything from an earlier visit to the walk
+function useRestOfCart(walk: StoreWalk): WalkLine[] {
+  const { items } = useCart();
+  const added = new Set(walk.added.map((l) => l.item.storeProductId));
+  return items.filter((i) => !added.has(i.storeProductId)).map((item) => ({ item, added: 0, from: undefined }));
+}
+
+// The added lines under the aisle each went in from, aisles in the order the walk reached them, then the rest of the cart
 function useAisles(walk: StoreWalk): Aisle[] {
+  const t = useStrings("storeWalk");
   const { getLocalizedName } = useLanguage();
+  const rest = useRestOfCart(walk);
   const aisles = new Map<string, Aisle>();
   for (const line of walk.added) {
     const key = line.from?.categoryId ?? "";
@@ -27,7 +37,7 @@ function useAisles(walk: StoreWalk): Aisle[] {
     aisle.data.push(line);
     aisles.set(key, aisle);
   }
-  return [...aisles.values()];
+  return [...aisles.values(), ...(rest.length ? [{ key: "rest", title: t.alreadyInCart, data: rest }] : [])];
 }
 
 // A quantity of 0 takes the line out, with Undo on the toast; the list closes up around a row that leaves
@@ -55,13 +65,14 @@ function Suggestions() {
 
 function Header({ walk, minutes }: { walk: StoreWalk; minutes: number }) {
   const t = useStrings("storeWalk");
-  const { totalAmount } = useCart();
+  const { items, itemCount, totalAmount } = useCart();
+  const rest = useRestOfCart(walk);
   const total = useCountUp(Math.round(totalAmount));
   const count = walk.added.reduce((n, l) => n + l.added, 0);
   return (
     <View>
       <View style={styles.hero}>
-        <BagHero items={walk.added.map((l) => l.item)} />
+        <BagHero items={[...walk.added, ...rest].map((l) => l.item)} trolley={carriesTrolley(items)} done />
         <View style={styles.heroText}>
           <Text style={styles.title}>{t.walkDone}</Text>
           <Text style={styles.subtitle}>{t.walkDoneStats(walk.walked.size, minutes)}</Text>
@@ -69,17 +80,18 @@ function Header({ walk, minutes }: { walk: StoreWalk; minutes: number }) {
             <Text style={styles.total}>{"₹"}{total.toLocaleString("en-IN")}</Text>
             <Text style={styles.totalLabel}>{t.bagLabel}</Text>
           </View>
-          <Text style={styles.count}>{count} {t.itemsLabel}</Text>
+          <Text style={styles.count}>{t.cartCount(itemCount, count)}</Text>
         </View>
       </View>
-      <Text style={styles.section}>{walk.added.length > 0 ? t.addedOnWalk : t.nothingAdded}</Text>
+      {walk.added.length > 0 && <Text style={styles.section}>{t.addedOnWalk}</Text>}
+      {itemCount === 0 && <Text style={styles.section}>{t.nothingAdded}</Text>}
     </View>
   );
 }
 
 interface Props { walk: StoreWalk; minutes: number; onBack: () => void }
 
-/** The walk's end: the bag it filled, its lines by aisle, the cart's suggestions, then back to the walk or the cart */
+/** The walk's end: the cart, its lines by aisle and what was already in it, the cart's suggestions, then back to the walk or the cart */
 export function WalkSummary({ walk, minutes, onBack }: Props) {
   const t = useStrings("storeWalk");
   const insets = useSafeAreaInsets();
@@ -111,7 +123,7 @@ export function WalkSummary({ walk, minutes, onBack }: Props) {
           <Text style={styles.backText} numberOfLines={2}>{t.backToWalk}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.cart} onPress={() => router.replace("/(tabs)/cart")} accessibilityRole="button">
-          <Ionicons name="bag-handle" size={18} color="#ffffff" />
+          <Ionicons name="cart" size={18} color="#ffffff" />
           <Text style={styles.cartText} numberOfLines={2}>{t.goToCart(Math.round(totalAmount).toLocaleString("en-IN"))}</Text>
         </TouchableOpacity>
       </View>
@@ -122,14 +134,13 @@ export function WalkSummary({ walk, minutes, onBack }: Props) {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.background },
   content: { padding: 16, paddingBottom: 24 },
-  // Kraft-paper warm, to sit with the bag
   hero: {
     flexDirection: "row", alignItems: "flex-end", gap: 12, paddingTop: 8, paddingHorizontal: 14, paddingBottom: 14,
-    borderRadius: 20, backgroundColor: "#fbf6ee", borderWidth: 1, borderColor: "#efe3d0",
+    borderRadius: 20, backgroundColor: "#f0fdfa", borderWidth: 1, borderColor: "#ccfbf1",
   },
   heroText: { flex: 1, gap: 2, paddingBottom: 4 },
   title: { fontFamily: fonts.extrabold, fontSize: 22, lineHeight: 30, color: colors.text },
-  subtitle: { fontFamily: fonts.semibold, fontSize: 13, color: "#8a6a45" },
+  subtitle: { fontFamily: fonts.semibold, fontSize: 13, color: colors.textSecondary },
   totals: { flexDirection: "row", alignItems: "baseline", flexWrap: "wrap", columnGap: 6, marginTop: 10 },
   total: { fontFamily: fonts.extrabold, fontSize: 28, color: colors.primary },
   totalLabel: { fontFamily: fonts.bold, fontSize: 13, color: colors.textSecondary },

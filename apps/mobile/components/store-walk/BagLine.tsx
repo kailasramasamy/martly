@@ -25,8 +25,8 @@ export function BagLine({ item, first, last, onQuantity }: Props) {
   return (
     <View style={[styles.row, first && styles.first, last && styles.last, !last && styles.divider]}>
       <TouchableOpacity style={styles.opener} onPress={open} activeOpacity={0.7} accessibilityRole="link">
-        <View style={styles.thumb}>
-          {item.imageUrl ? <Image source={{ uri: item.imageUrl }} style={styles.image} /> : <Ionicons name="cube-outline" size={20} color={colors.border} />}
+        <View style={[styles.thumb, !item.cutoutUrl && styles.plate]}>
+          {item.cutoutUrl ?? item.imageUrl ? <Image source={{ uri: item.cutoutUrl ?? item.imageUrl! }} style={styles.image} /> : <Ionicons name="cube-outline" size={20} color={colors.border} />}
         </View>
         <View style={styles.text}>
           <Text style={styles.name} numberOfLines={2}>{getLocalizedName({ name: item.productName, translations: item.translations })}</Text>
@@ -55,7 +55,9 @@ const styles = StyleSheet.create({
   last: { borderBottomLeftRadius: 14, borderBottomRightRadius: 14 },
   divider: { borderBottomWidth: 1, borderBottomColor: "#f1f5f9" },
   opener: { flex: 1, flexDirection: "row", alignItems: "center", gap: 12 },
-  thumb: { width: 56, height: 56, borderRadius: 10, backgroundColor: "#ffffff", borderWidth: 1, borderColor: "#f1f5f9", alignItems: "center", justifyContent: "center" },
+  thumb: { width: 56, height: 56, alignItems: "center", justifyContent: "center" },
+  // A photo with no cut-out sits on its own white
+  plate: { borderRadius: 10, backgroundColor: "#ffffff", borderWidth: 1, borderColor: "#f1f5f9" },
   image: { width: 48, height: 48, resizeMode: "contain" },
   text: { flex: 1, gap: 3 },
   name: { fontFamily: fonts.bold, fontSize: 14, lineHeight: 19, color: colors.text },

@@ -1,20 +1,22 @@
 import { useEffect, useRef, useState, type ReactElement } from "react";
-import { Animated, FlatList, StyleSheet, Text, TouchableOpacity, useWindowDimensions, View } from "react-native";
+import { Animated, FlatList, StyleSheet, Text, TouchableOpacity, useWindowDimensions, View, type ViewToken } from "react-native";
 import { Loader } from "../Loader";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../../constants/theme";
+import { AISLE } from "./aisle-theme";
 import { api } from "../../lib/api";
 import { useLanguage } from "../../lib/language-context";
 import { useStore } from "../../lib/store-context";
 import { useStrings } from "../../lib/i18n/use-strings";
-import type { StoreProduct, WalkAisle } from "../../lib/types";
+import type { StoreProduct, WalkAisle, WalkPack } from "../../lib/types";
 import { ProductList } from "../ProductList";
 import { BrandFilterRow } from "../search/BrandFilterRow";
 import { AisleSign } from "./AisleSign";
-import { AisleWall, type NearAisle } from "./AisleWall";
+import { AisleBackdrop, AisleWall, type NearAisle } from "./AisleWall";
 import { EndCap } from "./EndCap";
 import { Shelf, useShelves } from "./ShelfProducts";
+import { PackQuickView, type Lifted } from "./PackQuickView";
 import { NoShelfMatches, ShelfSearch } from "./ShelfSearch";
 import { SubcategoryRail } from "./SubcategoryRail";
 import { useReduceMotion } from "../../lib/use-reduce-motion";
@@ -96,7 +98,7 @@ function SeeAll({ categoryId, stocked, brand }: { categoryId: string; stocked: n
       onPress={() => router.push({ pathname: "/category/[id]", params })}
     >
       <Text style={styles.seeAllText}>{brand ? t.seeAllBrand(brand.count, brand.name) : t.seeAll(stocked)}</Text>
-      <Ionicons name="chevron-forward" size={16} color={colors.primary} />
+      <Ionicons name="chevron-forward" size={16} color={AISLE.accent} />
     </TouchableOpacity>
   );
 }
@@ -119,8 +121,9 @@ export function AisleView({ stop, aisle, onRetry, prev, next, slide, wallPhoto }
   const t = useStrings("storeWalk");
   const { getLocalizedName } = useLanguage();
   const shelf = useShelf(aisle, stop.categoryId);
+  const backdrop = <AisleBackdrop slide={slide} photo={wallPhoto} />;
   const sign = (
-    <AisleWall prev={prev} next={next} slide={slide} photo={wallPhoto}>
+    <AisleWall prev={prev} next={next}>
       <AisleSign key={stop.categoryId} name={getLocalizedName(stop)} imageUrl={stop.imageUrl} />
     </AisleWall>
   );
@@ -128,7 +131,7 @@ export function AisleView({ stop, aisle, onRetry, prev, next, slide, wallPhoto }
   if (aisle === "error") {
     return (
       <View style={styles.message}>
-        {sign}
+        <View style={styles.front}>{backdrop}{sign}</View>
         <Text style={styles.messageText}>{t.aisleFailed}</Text>
         <TouchableOpacity style={styles.retry} onPress={onRetry} accessibilityRole="button">
           <Text style={styles.retryText}>{t.retry}</Text>
@@ -136,15 +139,26 @@ export function AisleView({ stop, aisle, onRetry, prev, next, slide, wallPhoto }
       </View>
     );
   }
-  if (!aisle) return <View style={styles.message}>{sign}<Loader /></View>;
-  return <AisleShelves aisle={aisle} stop={stop} sign={sign} shelf={shelf} />;
+  if (!aisle) return <View style={styles.message}><View style={styles.front}>{backdrop}{sign}</View><Loader /></View>;
+  return <AisleShelves aisle={aisle} stop={stop} backdrop={backdrop} sign={sign} shelf={shelf} />;
 }
 
-interface ShelvesProps { aisle: WalkAisle; stop: Stop; sign: ReactElement; shelf: ReturnType<typeof useShelf> }
+interface ShelvesProps { aisle: WalkAisle; stop: Stop; backdrop: ReactElement; sign: ReactElement; shelf: ReturnType<typeof useShelf> }
 
-function AisleShelves({ aisle, stop, sign, shelf }: ShelvesProps) {
+// The shelves that have come into view (by their first pack): each plays its packs' animations once
+function useSeenShelves() {
+  const [seen, setSeen] = useState<ReadonlySet<string>>(new Set());
+  const onViewableItemsChanged = useRef(({ viewableItems }: { viewableItems: ViewToken<WalkPack[]>[] }) => {
+    const keys = viewableItems.map((v) => v.key);
+    setSeen((before) => (keys.every((k) => before.has(k)) ? before : new Set([...before, ...keys])));
+  }).current;
+  const viewabilityConfig = useRef({ itemVisiblePercentThreshold: 60 }).current;
+  return { seen, onViewableItemsChanged, viewabilityConfig };
+}
+
+function AisleShelves({ aisle, stop, backdrop, sign, shelf }: ShelvesProps) {
   const t = useStrings("storeWalk");
-  const list = useRef<FlatList<StoreProduct[]>>(null);
+  const list = useRef<FlatList<WalkPack[]>>(null);
   const searchY = useRef(0);
   const [searching, setSearching] = useState(false);
   const { height } = useWindowDimensions();
@@ -154,28 +168,41 @@ function AisleShelves({ aisle, stop, sign, shelf }: ShelvesProps) {
   };
   const { getLocalizedName } = useLanguage();
   const { shelves, variantsOf } = useShelves(shelf.products ?? []);
+  const { seen, onViewableItemsChanged, viewabilityConfig } = useSeenShelves();
+  const [lifted, setLifted] = useState<Lifted | null>(null);
+  const lift = (item: WalkPack, variants: StoreProduct[]) => setLifted({ item, variants });
   const picked = aisle.subcategories.find((sc) => sc.id === shelf.subcategoryId);
   const brand = shelf.brands.find((b) => b.id === shelf.brandId);
   const scope = [picked ? getLocalizedName(picked) : getLocalizedName(stop), brand?.name].filter(Boolean).join(" · ");
   return (
+    <>
     <FlatList
-      ref={list} data={shelves} keyExtractor={(row) => row[0].product.id}
+      ref={list} data={shelves} keyExtractor={(row) => row[0].product.id} extraData={seen}
+      onViewableItemsChanged={onViewableItemsChanged} viewabilityConfig={viewabilityConfig}
       // While searching there's room below to scroll the field to the top, even when few products match
       contentContainerStyle={[styles.grid, searching && { paddingBottom: height }]}
       keyboardDismissMode="on-drag" keyboardShouldPersistTaps="handled"
-      renderItem={({ item }) => <Shelf items={item} variantsOf={variantsOf} />}
+      renderItem={({ item, index }) => (
+        <Shelf
+          items={item} variantsOf={variantsOf} play={seen.has(item[0].product.id)} onLift={lift}
+          first={index === 0} last={index === shelves.length - 1}
+        />
+      )}
       ListHeaderComponent={
         <View style={styles.header}>
-          {sign}
-          {aisle.due.length > 0 && <DueBlock products={aisle.due} />}
-          <SubcategoryRail subcategories={aisle.subcategories} allImage={stop.imageUrl} selected={shelf.subcategoryId} onSelect={shelf.pickSubcategory}
-            raised={aisle.due.length === 0}
-          />
-          <View style={styles.brands}>
-            <BrandFilterRow
-              brands={shelf.brands} selectedIds={shelf.brandId ? [shelf.brandId] : []}
-              onChange={(ids) => shelf.pickBrand(ids[0] ?? null)}
+          <View style={styles.front}>
+            {backdrop}
+            {sign}
+            {aisle.due.length > 0 && <DueBlock products={aisle.due} />}
+            <SubcategoryRail subcategories={aisle.subcategories} allImage={stop.imageUrl} selected={shelf.subcategoryId} onSelect={shelf.pickSubcategory}
+              raised={aisle.due.length === 0}
             />
+            <View style={styles.brands}>
+              <BrandFilterRow
+                brands={shelf.brands} selectedIds={shelf.brandId ? [shelf.brandId] : []}
+                onChange={(ids) => shelf.pickBrand(ids[0] ?? null)} compact
+              />
+            </View>
           </View>
           <View onLayout={(e) => { searchY.current = e.nativeEvent.layout.y; }}>
             <ShelfSearch
@@ -193,16 +220,20 @@ function AisleShelves({ aisle, stop, sign, shelf }: ShelvesProps) {
             categoryId={picked?.id ?? aisle.category.id} stocked={picked?.stocked ?? aisle.stocked}
             brand={brand}
           />
-          <EndCap deals={aisle.endcap} />
+          <EndCap deals={aisle.endcap} onLift={lift} />
         </View>
       }
     />
+    <PackQuickView lifted={lifted} aisle={getLocalizedName(stop)} onClose={() => setLifted(null)} />
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   grid: { paddingHorizontal: 16, paddingBottom: 24 },
-  header: { gap: 14, paddingBottom: 10 },
+  header: { gap: 8, paddingBottom: 4 },
+  // The front of the aisle: the photo runs behind the sign, boards and brands, edge to edge
+  front: { marginHorizontal: -16, paddingHorizontal: 16, paddingBottom: 14, gap: 8, overflow: "hidden" },
   // Edge to edge, like the tags above, so pills scroll in from the screen's sides rather than a padded edge
   brands: { marginHorizontal: -16 },
   due: { borderRadius: 12, backgroundColor: "#fffbeb", borderWidth: 1, borderColor: "#fde68a", paddingTop: 12, paddingBottom: 4, marginHorizontal: -4 },
@@ -212,12 +243,12 @@ const styles = StyleSheet.create({
   dueHint: { flex: 1, fontFamily: fonts.semibold, fontSize: 12, color: "#92400e" },
   seeAll: {
     flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 4, height: 48, marginTop: 16,
-    borderRadius: 12, borderWidth: 1, borderStyle: "dashed", borderColor: "#5eead4", backgroundColor: "#f0fdfa",
+    borderRadius: 12, borderWidth: 1, borderStyle: "dashed", borderColor: "rgba(94,234,212,0.5)",
   },
-  seeAllText: { fontFamily: fonts.bold, fontSize: 14, color: colors.primaryDark },
+  seeAllText: { fontFamily: fonts.bold, fontSize: 14, color: AISLE.accent },
   // The wall keeps the full width while the aisle loads; only the spinner, message and retry are centred
   message: { flex: 1, gap: 16, paddingHorizontal: 16 },
-  messageText: { fontFamily: fonts.medium, fontSize: 14, color: colors.textSecondary, textAlign: "center" },
-  retry: { alignSelf: "center", height: 44, paddingHorizontal: 20, borderRadius: 10, borderWidth: 1.5, borderColor: colors.primary, justifyContent: "center" },
-  retryText: { fontFamily: fonts.bold, fontSize: 14, color: colors.primary },
+  messageText: { fontFamily: fonts.medium, fontSize: 14, color: AISLE.muted, textAlign: "center" },
+  retry: { alignSelf: "center", height: 44, paddingHorizontal: 20, borderRadius: 10, borderWidth: 1.5, borderColor: AISLE.accent, justifyContent: "center" },
+  retryText: { fontFamily: fonts.bold, fontSize: 14, color: AISLE.accent },
 });

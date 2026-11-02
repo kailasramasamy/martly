@@ -8,7 +8,7 @@ import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { useCartRemoval } from "../../components/cart/use-cart-removal";
 import { useStore } from "../../lib/store-context";
 import { useMembership } from "../../lib/membership-context";
-import { colors, spacing, fontSize } from "../../constants/theme";
+import { colors, spacing } from "../../constants/theme";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { TabBottomDock } from "../../components/TabIcon";
 import { useTabScroll } from "../../lib/tab-bar";
@@ -17,6 +17,7 @@ import { CartLine } from "../../components/cart/CartLine";
 import { CartBill } from "../../components/cart/CartBill";
 import { OrderGoal } from "../../components/cart/OrderGoal";
 import { SuggestionRail } from "../../components/cart/SuggestionRail";
+import { CartHero } from "../../components/cart/CartHero";
 import { useCartReview } from "../../components/cart/use-cart-review";
 import { CouponHint, PlusHint } from "../../components/cart/CartHints";
 import { EmptyCart } from "../../components/cart/EmptyCart";
@@ -27,7 +28,6 @@ import { useAuth } from "../../lib/auth-context";
 import { SaveAsMonthlyList } from "../../components/monthly-list/SaveAsMonthlyList";
 import { CartCreditNote } from "../../components/credits/CartCreditNote";
 import { useCheckoutCredit } from "../../lib/use-checkout-credit";
-import { StoreMark } from "../../components/StoreMark";
 
 export default function CartScreen() {
   const requireSignIn = useRequireSignIn();
@@ -38,7 +38,7 @@ export default function CartScreen() {
   // Height of the footer docked above the tab bar, so the list scrolls clear of it
   const [dockHeight, setDockHeight] = useState(0);
   const router = useRouter();
-  const { store, storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem, pendingCoupon } = useCart();
+  const { store, storeId, items, totalAmount, itemCount, updateQuantity, removeItem, pendingCoupon } = useCart();
   const removal = useCartRemoval();
   const { selectedStore } = useStore();
   const { freeDelivery: memberFreeDelivery } = useMembership();
@@ -78,22 +78,6 @@ export default function CartScreen() {
   return (
     <ProductActionsProvider store={store}>
       <View style={styles.container}>
-        {/* Store Header */}
-        <View style={styles.storeHeader}>
-          <StoreMark storeId={storeId} size={36} fallback={(
-            <View style={styles.storeIconWrap}>
-              <Ionicons name="storefront" size={16} color={colors.primary} />
-            </View>
-          )} />
-          <View style={styles.storeInfo}>
-            <Text style={styles.storeName}>{storeName}</Text>
-            <Text style={styles.itemCountLabel}>{t.itemsInCart(itemCount)}</Text>
-          </View>
-          <TouchableOpacity style={styles.clearBtn} onPress={removal.askClear} hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }} accessibilityRole="button">
-            <Text style={styles.clearText}>{t.clearCart}</Text>
-          </TouchableOpacity>
-        </View>
-
         {goal && <OrderGoal kind={goal.kind} target={goal.target} total={totalAmount} />}
         <CartCreditNote itemTotal={totalAmount} />
 
@@ -101,6 +85,7 @@ export default function CartScreen() {
           data={items}
           keyExtractor={(item) => item.storeProductId}
           contentContainerStyle={tabBarScroll.contentStyle(styles.list, dockHeight)}
+          ListHeaderComponent={<CartHero onClear={removal.askClear} />}
           renderItem={({ item, index }) => (
             <CartLine
               item={item}
@@ -186,36 +171,6 @@ export default function CartScreen() {
 const styles = StyleSheet.create({
   monthly: { marginHorizontal: 16, marginTop: 12 },
   container: { flex: 1, backgroundColor: colors.surface },
-  // Store header
-  storeHeader: {
-    flexDirection: "row",
-    alignItems: "center",
-    padding: spacing.md,
-    backgroundColor: "#fff",
-    borderBottomWidth: 1,
-    borderBottomColor: colors.border,
-  },
-  storeIconWrap: {
-    width: 36,
-    height: 36,
-    borderRadius: 10,
-    backgroundColor: colors.primary + "14",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  storeInfo: { marginLeft: 12, flex: 1 },
-  clearBtn: { minHeight: 44, justifyContent: "center", paddingLeft: 12 },
-  clearText: { fontSize: fontSize.md, fontWeight: "700", color: colors.error },
-  storeName: {
-    fontSize: 15,
-    fontWeight: "700",
-    color: colors.text,
-  },
-  itemCountLabel: {
-    fontSize: 12,
-    color: colors.textSecondary,
-    marginTop: 1,
-  },
   list: { padding: spacing.md, paddingBottom: spacing.sm },
   // Footer
   footer: {

@@ -3,6 +3,7 @@
 A guided pass through the store's aisles in shelf order, like strolling the shop. Each aisle shows the shopper's due
 items, then the aisle's best sellers, and "Next aisle" moves on. It's the first feature from
 [store-experience-plan.md](store-experience-plan.md). Mockups: https://claude.ai/artifact/L7oAEtqGsnBKMinAcJcLxW
+Next: the realism plan in [store-walk-realism.md](store-walk-realism.md).
 
 ## Flow
 
@@ -24,22 +25,22 @@ items, then the aisle's best sellers, and "Next aisle" moves on. It's the first 
    - "Running low?" shows the due items as a product rail.
    - Subcategory tiles follow ("All" first). A tile loads that subcategory's 15 best sellers in place.
    - Brand chips follow: the store's own brand first (its brands and the staples it packs, under its logo, id
-     `own-<storeId>`), then the brands on these shelves (the picked subcategory's), best sellers first. One tap shows
+     `own-<storeId>`), then the brands on these shelves (the picked subcategory's) by brand ranking (see
+     [brand-ranking.md](brand-ranking.md)), then sales. One tap shows
      only that brand (15 best sellers), a second tap clears it; picking a subcategory clears the brand.
    - "Popular in this aisle" shows five shelves (15 products). The store's own brand leads with its best 6 (two
-     shelves at most, so the aisle's other brands still show), then the rest by brand popularity in the
-     store's region (30-day units and stock break ties, so a new store's few orders don't outrank known brands),
+     shelves at most, so the aisle's other brands still show), then the rest by brand score (Martly's
+     category/subcategory ranking, else the brand's popularity) in the store's region (30-day units and stock break ties, so a new store's few orders don't outrank known brands),
      spread over the subcategories. Brand chips after the store's own follow the same popularity.
    - **Search the shelves:** the magnifier on the "Popular in this aisle" row (or the picked subcategory's name) opens
      a field in that row, "Search in ‹aisle · brand›". Typing pauses for 300 ms, then the shelves show only matches
      within what's on show: the aisle, the picked subcategory and the picked brand. Picking a subcategory keeps the
      words. No matches offers "Search the whole store"; ✕ clears it and the best sellers come back.
-   - The products stand on wooden shelves, three to a shelf, in white shelf units (the catalog photos have white
-     backgrounds, multiplied onto the wood; a store's pack render, cut tight, stands as it is). Each pack has a round +
-     resting on the plank under it, clear of the photo (a − n + pill once added; several sizes open the size picker). Its price, MRP, deal, name and size are on a paper sticker taped to the shelf's front edge, each a little
+   - The products stand on wooden shelves, three to a shelf, in a wooden shelf unit with a pale back panel (packs show as cut-outs). Each pack has a round + on its foot; once added it shows the count, which opens − n + for 2.5 seconds, so the stepper doesn't cover the pack (several sizes open the size picker). Its price, MRP, deal, name and size are on a paper sticker taped to the shelf's front edge, each a little
      askew. Tapping a pack opens its product page.
    - "See all N" opens the category, or the picked subcategory.
-   - Prices on the stickers are handwritten (Kalam). The floor is a pale tiled pattern.
+   - Prices on the stickers are large and bold, the strongest thing on the label. Two or more of a brand on one shelf
+     drop the brand from their names (a store's own packs, its brand name), as the packs already show it. The floor is a pale tiled pattern.
    - **End of aisle offers:** after "See all", a red board over one shelf of up to 3 running offers from elsewhere in the
      department (buy X get Y first, then the biggest saving; store discounts or multi-buys only, never a plain MRP
      saving). It hides with fewer than 2.
@@ -50,10 +51,10 @@ items, then the aisle's best sellers, and "Next aisle" moves on. It's the first 
    here, ahead; tap an aisle to jump to it.
 4. **Department done:** a check mark, then the next department to walk (the one with most due items, else the next on
    the shelves) and up to 3 others, or "I'm done".
-5. **Summary:** a paper bag (`assets/images/store-walk/paper-bag.webp`, drawn twice so up to 4 of the walk's own packs
-   stand inside it) with the done mark, beside the aisles walked and minutes, the bag total and items added. The aisle
+5. **Summary:** a pale teal card with a basket for up to 6 products, or a trolley from 7, like the bottom bar's icon (`assets/images/store-walk/basket.webp`, `trolley.webp`, each drawn twice so the cart's packs
+   stand inside it, up to 6 in the basket and 12 in the trolley) with the done mark, beside the aisles walked and minutes, the bag total and items added. The aisle
    the shopper is in when they finish, or jump away from on the map, counts as walked. The lines this walk added follow,
-   grouped under the aisle each went in from (recorded when it went in the bag). Tapping a line opens the product; − and
+   grouped under the aisle each went in from (recorded when it went in the bag). The rest of the cart follows under "Already in your cart". Tapping a line opens the product; − and
    + change it, and the bin at 1 takes it out with Undo on the toast. Then the cart's suggestions and "Go to cart".
 
 ## How it's picked (`apps/api/src/services/store-walk.ts`)
@@ -80,7 +81,7 @@ items, then the aisle's best sellers, and "Next aisle" moves on. It's the first 
 | Endpoint | Auth | Body / reply |
 |---|---|---|
 | `POST /api/v1/store-walk/:storeId/route` | optional | `{ departmentId?, cartStoreProductIds? }` → `{ departmentId, departments[], stops[] (with dueCount, inCart), cartAisles, uncovered, uncoveredDue, due[] }` |
-| `GET /api/v1/store-walk/:storeId/aisles/:categoryId` | optional | `?subcategoryId&brandId&q` → `{ category, stocked, due[], popular[] }` |
+| `GET /api/v1/store-walk/:storeId/aisles/:categoryId` | optional | `?subcategoryId&brandId&q` → `{ category, stocked, due[], popular[], endcap[] }`, each product with `shelf` signals ([store-walk-realism.md](store-walk-realism.md)) |
 
 - The route is a POST because the cart lives on the phone.
 - Guests get no due items.
@@ -90,7 +91,7 @@ The Home section came in through two migrations: `20261025120000_store_walk_sect
 `20261025120100_store_walk_home_section` places the section after Buy again in saved layouts. Admins can move it or
 switch it off in Home layout.
 
-## Animations (React Native `Animated`; no new native library, so it ships over the air)
+## Animations (React Native `Animated`)
 
 | Where | What happens |
 |---|---|
