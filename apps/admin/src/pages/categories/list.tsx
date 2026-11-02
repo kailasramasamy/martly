@@ -128,7 +128,7 @@ function searchTree(
 
 // ── Drag Components ────────────────────────────────
 
-const DragHandle = ({ id }: { id: string }) => {
+export const DragHandle = ({ id }: { id: string }) => {
   const { listeners, setActivatorNodeRef } = useSortable({ id });
   const { token } = antTheme.useToken();
   return (
@@ -140,7 +140,7 @@ const DragHandle = ({ id }: { id: string }) => {
   );
 };
 
-const SortableRow = (
+export const SortableRow = (
   props: React.HTMLAttributes<HTMLTableRowElement> & { "data-row-key"?: string },
 ) => {
   const id = props["data-row-key"] ?? "";

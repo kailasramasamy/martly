@@ -812,7 +812,8 @@ model Category {
   subcategories Subcategory[]
   banners       Banner[]
 
-  brandCampaigns BrandCampaign[]
+  brandCampaigns  BrandCampaign[]
+  brandPopularity BrandCategoryPopularity[]
 
   @@index([departmentId])
   @@map("categories")
@@ -834,10 +835,11 @@ model Subcategory {
   createdAt    DateTime        @default(now()) @map("created_at")
   updatedAt    DateTime        @updatedAt @map("updated_at")
 
-  category    Category     @relation(fields: [categoryId], references: [id])
-  products    Product[]
-  banners     Banner[]
-  stockCounts StockCount[]
+  category        Category                     @relation(fields: [categoryId], references: [id])
+  products        Product[]
+  banners         Banner[]
+  stockCounts     StockCount[]
+  brandPopularity BrandSubcategoryPopularity[]
 
   @@index([categoryId])
   @@index([searchTerms], type: Gin)
@@ -861,13 +863,15 @@ model Brand {
   createdAt           DateTime @default(now()) @map("created_at")
   updatedAt           DateTime @updatedAt @map("updated_at")
 
-  organization       Organization?           @relation(fields: [organizationId], references: [id], onDelete: Cascade)
-  products           Product[]
-  partners           User[]                  @relation("BrandPartners")
-  adOrders           AdOrder[]
-  banners            Banner[]
-  campaigns          BrandCampaign[]
-  regionalPopularity BrandRegionPopularity[]
+  organization          Organization?                @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  products              Product[]
+  partners              User[]                       @relation("BrandPartners")
+  adOrders              AdOrder[]
+  banners               Banner[]
+  campaigns             BrandCampaign[]
+  regionalPopularity    BrandRegionPopularity[]
+  categoryPopularity    BrandCategoryPopularity[]
+  subcategoryPopularity BrandSubcategoryPopularity[]
 
   @@index([organizationId])
   @@map("brands")
@@ -883,6 +887,37 @@ model BrandRegionPopularity {
 
   @@id([brandId, region])
   @@map("brand_region_popularity")
+}
+
+/// Martly's brand ranking within one category, for one region (FESTIVAL_REGIONS code, ALL for every region); wins over
+/// the brand's regional and national popularity for products in that category
+model BrandCategoryPopularity {
+  brandId    String @map("brand_id")
+  categoryId String @map("category_id")
+  region     String
+  popularity Int
+
+  brand    Brand    @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@id([brandId, categoryId, region])
+  @@index([categoryId, region])
+  @@map("brand_category_popularity")
+}
+
+/// A subcategory's own brand ranking, overriding its category's
+model BrandSubcategoryPopularity {
+  brandId       String @map("brand_id")
+  subcategoryId String @map("subcategory_id")
+  region        String
+  popularity    Int
+
+  brand       Brand       @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  subcategory Subcategory @relation(fields: [subcategoryId], references: [id], onDelete: Cascade)
+
+  @@id([brandId, subcategoryId, region])
+  @@index([subcategoryId, region])
+  @@map("brand_subcategory_popularity")
 }
 
 model Product {
@@ -918,7 +953,9 @@ model Product {
   images              String[]     @default([])
   /// Blank clear pouch filled with this product; stores' pack designs are printed onto it (services/pack-render)
   packPhotoUrl        String?      @map("pack_photo_url")
-  productType         ProductType? @map("product_type")
+  /// The product photo with its background removed, trimmed to the pack, for Walk the store's shelves (prisma/generate-cutouts.ts)
+  cutoutUrl           String?      @map("cutout_url")
+  productType        ProductType? @map("product_type")
   regulatoryMarks     String[]     @default([]) @map("regulatory_marks")
   certifications      String[]     @default([])
   mfgLicenseNo        String?      @map("mfg_license_no")
@@ -1042,6 +1079,7 @@ model StoreProduct {
   @@unique([storeId, variantId])
   @@index([storeId, priceReviewedAt])
   @@index([storeId, carried])
+  @@index([storeId, createdAt])
   @@index([productId])
   @@map("store_products")
 }

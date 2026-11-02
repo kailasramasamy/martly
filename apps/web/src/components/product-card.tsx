@@ -17,11 +17,11 @@ export function PriceLine({ pack, large = false }: { pack: WebPack; large?: bool
 
 /**
  * The pack size the shopper picked, by name so it survives a store change (each store has its own listings);
- * it opens on the first size in stock
+ * it opens on the store's most bought size, else the smallest in stock
  */
 export function usePack(packs: WebPack[]) {
   const [name, setName] = useState<string | null>(null)
-  const pack = packs.find((p) => p.name === name) ?? packs.find((p) => p.inStock) ?? packs[0]
+  const pack = packs.find((p) => p.name === name) ?? packs.find((p) => p.preferred) ?? packs.find((p) => p.inStock) ?? packs[0]
   return [pack, (p: WebPack) => setName(p.name)] as const
 }
 

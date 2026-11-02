@@ -17,6 +17,9 @@ const LOGO_HEIGHT = 36;
 const MIN_LOGO_WIDTH = LOGO_HEIGHT;
 const MAX_LOGO_WIDTH = 110;
 const DEFAULT_LOGO_WIDTH = 88;
+// A compact pill (a row under other controls) is this much of the full size; its touch area still reaches 44pt
+const COMPACT = 0.72;
+const COMPACT_HIT = { top: 6, bottom: 6 };
 // Measured logo widths, kept across renders so pills don't jump when a list re-mounts
 const logoWidths = new Map<string, number>();
 
@@ -35,22 +38,28 @@ function useLogoWidth(uri: string | null | undefined) {
 }
 
 // outlined: on a plain white background (the search filter row) the pill needs a visible edge
-export function BrandPill({ brand, selected, onPress, outlined = false }: { brand: BrandTile; selected: boolean; onPress: () => void; outlined?: boolean }) {
+interface BrandPillProps { brand: BrandTile; selected: boolean; onPress: () => void; outlined?: boolean; compact?: boolean }
+
+export function BrandPill({ brand, selected, onPress, outlined = false, compact = false }: BrandPillProps) {
   const [background, ink] = wordmarkColors(brand.name);
-  const logoWidth = useLogoWidth(brand.imageUrl);
+  const logoWidth = useLogoWidth(brand.imageUrl) * (compact ? COMPACT : 1);
   return (
     <TouchableOpacity
-      style={[styles.pill, brand.imageUrl ? styles.logoPill : { backgroundColor: background }, outlined && styles.pillOutlined, selected && styles.pillSelected]}
+      style={[
+        styles.pill, compact && styles.pillCompact, brand.imageUrl ? styles.logoPill : { backgroundColor: background },
+        outlined && styles.pillOutlined, selected && styles.pillSelected,
+      ]}
       onPress={onPress}
+      hitSlop={compact ? COMPACT_HIT : undefined}
       activeOpacity={0.7}
       accessibilityRole="button"
       accessibilityState={{ selected }}
       accessibilityLabel={brand.name}
     >
       {brand.imageUrl ? (
-        <Image source={{ uri: brand.imageUrl }} style={[styles.logo, { width: logoWidth }]} resizeMode="contain" />
+        <Image source={{ uri: brand.imageUrl }} style={[styles.logo, compact && styles.logoCompact, { width: logoWidth }]} resizeMode="contain" />
       ) : (
-        <Text style={[styles.wordmark, { color: ink }]} numberOfLines={1}>{brandDisplayName(brand.name)}</Text>
+        <Text style={[styles.wordmark, compact && styles.wordmarkCompact, { color: ink }]} numberOfLines={1}>{brandDisplayName(brand.name)}</Text>
       )}
     </TouchableOpacity>
   );
@@ -103,5 +112,8 @@ const styles = StyleSheet.create({
   pillSelected: { borderWidth: 2, borderColor: colors.primary },
   wordmark: { fontFamily: fonts.extrabold, fontSize: 15, letterSpacing: -0.2 },
   logo: { height: LOGO_HEIGHT },
+  pillCompact: { height: 32, paddingHorizontal: 12, borderRadius: 16 },
+  logoCompact: { height: LOGO_HEIGHT * COMPACT },
+  wordmarkCompact: { fontSize: 12 },
   visitText: { fontFamily: fonts.bold, fontSize: 13, color: colors.primary },
 });

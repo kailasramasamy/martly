@@ -1692,6 +1692,7 @@ export type StorePickInput = z.infer<typeof storePickSchema>;
 export * from "./marketing.js";
 export * from "./home.js";
 export * from "./ledger.js";
+export * from "./brand-ranking.js";
 
 // ── List glossary (how shoppers say things → the word the catalog uses) ──
 const glossaryLanguageCodes = Object.keys(GLOSSARY_LANGUAGES) as [keyof typeof GLOSSARY_LANGUAGES, ...(keyof typeof GLOSSARY_LANGUAGES)[]];

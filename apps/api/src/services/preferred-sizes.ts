@@ -44,6 +44,11 @@ async function lastBought(prisma: PrismaClient, userId: string, productIds: stri
     ORDER BY oi.product_id, o.created_at DESC`);
 }
 
+/** The store's most bought size of a product, else Martly's, if it is one of these in-stock sizes */
+export function bestSize(storeId: string, productId: string, inStock: Set<string>): string | undefined {
+  return [storeBest.get(storeId)?.get(productId), martlyBest.get(productId)].find((v) => v && inStock.has(v));
+}
+
 const isPlain = (v: unknown): v is Json =>
   typeof v === "object" && v !== null && (Object.getPrototypeOf(v) === Object.prototype || Object.getPrototypeOf(v) === null);
 const isListing = (v: Json): v is Listing => typeof v.storeId === "string" && typeof v.productId === "string" && typeof v.variantId === "string";
@@ -94,6 +99,9 @@ export async function withPreferredSizes(prisma: PrismaClient, payload: unknown,
   const productIds = [...new Set([...sizes.keys()].map((k) => k.split(":")[1]))];
   const mine = userId ? await lastBought(prisma, userId, productIds) : new Map<string, string>();
   // The first of these the store has in stock; none means the app's own default (the smallest in stock)
-  return markListings(payload, (l) => [mine.get(l.productId), storeBest.get(l.storeId)?.get(l.productId), martlyBest.get(l.productId)]
-    .find((v) => v && sizes.get(keyOf(l))?.has(v)));
+  return markListings(payload, (l) => {
+    const inStock = sizes.get(keyOf(l)) ?? new Set<string>();
+    const last = mine.get(l.productId);
+    return last && inStock.has(last) ? last : bestSize(l.storeId, l.productId, inStock);
+  });
 }

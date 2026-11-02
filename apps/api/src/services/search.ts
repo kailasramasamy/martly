@@ -210,15 +210,17 @@ export const nameForQuery = (q: string) => Prisma.sql`CASE
   ELSE p.name
 END`;
 
-// Unbranded staples take their turns together, like one store brand; a featured brand is lifted only in its category
+// Unbranded staples take their turns together, like one store brand; a featured brand is lifted only in its category.
+// Otherwise a brand scores Martly's ranking where the product sits, else its regional or national popularity
 function popularity({ boost, region = null }: SearchScope) {
-  if (!boost || !hasBoost(boost)) return brandPopularitySql(region);
+  const ranked = brandPopularitySql(region, "b", Prisma.sql`p.subcategory_id`);
+  if (!boost || !hasBoost(boost)) return ranked;
   const featured = featuredPairs(boost);
   return Prisma.sql`CASE
       WHEN p.brand_id = ANY(${boost.ownBrandIds}::text[])
         OR (p.brand_id IS NULL AND p.subcategory_id = ANY(${boost.stapleSubcategoryIds}::text[])) THEN ${OWN_POPULARITY}
       WHEN (p.brand_id, p.subcategory_id) IN (SELECT * FROM unnest(${featured.brandIds}::text[], ${featured.subcategoryIds}::text[])) THEN ${FEATURED_POPULARITY}
-      ELSE ${brandPopularitySql(region)} END`;
+      ELSE ${ranked} END`;
 }
 
 // "rin soap": the query names the product's brand, and each of its other words starts a word of the product's

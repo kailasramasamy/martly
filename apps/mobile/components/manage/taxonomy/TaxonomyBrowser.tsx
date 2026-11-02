@@ -34,21 +34,24 @@ export function TaxonomyBrowser({ level, id }: TaxonomyBrowserProps) {
   const { user } = useAuth();
   const { tree, loading, error, reload } = useTaxonomy();
   const canWrite = can(user, "categories", "create");
+  const canRank = user?.role === "SUPER_ADMIN";
   const found = level && id ? findNode(tree, level, id) : null;
   const itemLevel = level ? CHILD_LEVEL[level] : "department";
   const items = level ? found?.children ?? [] : tree;
 
-  if (level === "subcategory" && id) return <SubcategoryProducts id={id} name={found?.node.name} path={found?.path} canWrite={canWrite} />;
+  if (level === "subcategory" && id) return <SubcategoryProducts id={id} name={found?.node.name} path={found?.path} canWrite={canWrite} canRank={canRank} />;
   if (!loading && level && !found && !error) {
     return <EmptyState icon="alert-circle-outline" title="Not found" message="This item no longer exists." />;
   }
 
   const open = (node: AnyNode) => itemLevel && router.push(`/manage/categories/${node.id}?level=${itemLevel}`);
-  const headerRight = canWrite
+  const rank = () => router.push(`/manage/categories/${id}/brand-ranking?level=${level}`);
+  const headerRight = canWrite || canRank
     ? () => (
         <>
-          {found && level && <HeaderAction icon="create-outline" onPress={() => router.push(`/manage/categories/${id}/edit?level=${level}`)} accessibilityLabel="Edit" />}
-          {itemLevel && <HeaderAction onPress={() => router.push(`/manage/categories/new?level=${itemLevel}${id ? `&parentId=${id}` : ""}`)} accessibilityLabel="Add" />}
+          {canRank && level === "category" && <HeaderAction icon="podium-outline" onPress={rank} accessibilityLabel="Brand ranking" />}
+          {canWrite && found && level && <HeaderAction icon="create-outline" onPress={() => router.push(`/manage/categories/${id}/edit?level=${level}`)} accessibilityLabel="Edit" />}
+          {canWrite && itemLevel && <HeaderAction onPress={() => router.push(`/manage/categories/new?level=${itemLevel}${id ? `&parentId=${id}` : ""}`)} accessibilityLabel="Add" />}
         </>
       )
     : undefined;

@@ -133,7 +133,7 @@ async function brandRows(prisma: PrismaClient, storeId: string, term: string, to
         : Prisma.sql`(${allWords(nameForQuery(term), tokens, true)} OR ${term} = ANY(s.search_terms))`}
     GROUP BY b.name
     -- Popularity weighted by how much of the brand matches: a leader with one stray hit ("Cadbury chips") stays out
-    ORDER BY MAX(${brandPopularitySql(region)}) * ln(1 + COUNT(*)) DESC
+    ORDER BY MAX(${brandPopularitySql(region, "b", Prisma.sql`p.subcategory_id`)}) * ln(1 + COUNT(*)) DESC
     LIMIT ${BRAND_LIMIT}`;
 }
 

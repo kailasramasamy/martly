@@ -61,6 +61,8 @@ export interface WebPack {
   offer: { buy: number; get: number } | null;
   /** This size's photo: the store's own printed pack when it packs the product itself, else the catalog photo of the size */
   imageUrl: string | null;
+  /** The size to open on: the store's most bought, else Martly's, when in stock */
+  preferred: boolean;
 }
 
 export interface WebProductCard {

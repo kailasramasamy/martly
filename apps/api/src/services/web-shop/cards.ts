@@ -5,6 +5,8 @@ import { storePack } from "../pack-images.js";
 import { calculateEffectivePrice } from "../pricing.js";
 import { resolveStore, webStoreWhere } from "../store-resolve.js";
 import { storeTitle } from "../store-brand-names.js";
+import { bestSize } from "../preferred-sizes.js";
+import { bySize } from "@martly/shared/listing";
 
 /** The store a page prices from, and its organisation (kept off the page) */
 export interface ShopContext {
@@ -45,7 +47,7 @@ export const cardSelect = (storeId: string) => ({
 type CardRow = Prisma.ProductGetPayload<{ select: ReturnType<typeof cardSelect> }>;
 type Listing = CardRow["storeProducts"][number];
 
-function toPack(sp: Listing): WebPack {
+function toPack(sp: Listing, preferred: string | undefined): WebPack {
   const { effectivePrice: price, originalPrice, offer } = calculateEffectivePrice(sp.price, sp.variant, sp);
   const mrp = Math.max(Number(sp.mrp ?? sp.variant.mrp ?? 0), originalPrice);
   const off = mrp > price;
@@ -58,12 +60,16 @@ function toPack(sp: Listing): WebPack {
     inStock: sp.stock - sp.reservedStock > 0,
     offer,
     imageUrl: storePack(sp.storeId, sp.variantId)?.front ?? sp.variant.imageUrl ?? null,
+    preferred: sp.variantId === preferred,
   };
 }
 
 export function toCard(row: CardRow): WebProductCard {
-  const listings = [...row.storeProducts].sort((a, b) => Number(a.price) - Number(b.price));
-  const packs = listings.map(toPack);
+  // Smallest first, opening on the store's (else Martly's) most bought size, as in the app
+  const listings = [...row.storeProducts].sort((a, b) => bySize(a.variant, b.variant));
+  const inStock = new Set(listings.filter((sp) => sp.stock - sp.reservedStock > 0).map((sp) => sp.variantId));
+  const preferred = listings[0] && bestSize(listings[0].storeId, row.id, inStock);
+  const packs = listings.map((sp) => toPack(sp, preferred));
   return {
     slug: row.slug,
     name: listings[0] ? storeTitle(listings[0].storeId, row) : row.name,

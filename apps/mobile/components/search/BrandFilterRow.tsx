@@ -11,10 +11,12 @@ interface BrandFilterRowProps {
   brands: BrandTile[];
   selectedIds: string[];
   onChange: (brandIds: string[]) => void;
+  /** Smaller pills, for a row sitting under other controls */
+  compact?: boolean;
 }
 
 // Quick single-brand jump: a tap shows only that brand, a second tap clears it. Several brands → Filters sheet.
-export function BrandFilterRow({ brands, selectedIds, onChange }: BrandFilterRowProps) {
+export function BrandFilterRow({ brands, selectedIds, onChange, compact }: BrandFilterRowProps) {
   const list = useRef<FlatList<BrandTile>>(null);
   if (brands.length < MIN_BRANDS && selectedIds.length === 0) return null;
   // The picked brand slides fully into view, so a pill tapped at the edge isn't left half hidden
@@ -34,7 +36,7 @@ export function BrandFilterRow({ brands, selectedIds, onChange }: BrandFilterRow
       showsHorizontalScrollIndicator={false}
       style={styles.list}
       contentContainerStyle={styles.row}
-      renderItem={({ item, index }) => <BrandPill brand={item} selected={selectedIds.includes(item.id)} onPress={() => toggle(item.id, index)} outlined />}
+      renderItem={({ item, index }) => <BrandPill brand={item} selected={selectedIds.includes(item.id)} onPress={() => toggle(item.id, index)} outlined compact={compact} />}
     />
   );
 }

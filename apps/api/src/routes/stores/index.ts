@@ -21,6 +21,7 @@ import { catalogCoverage, type CatalogCoverage } from "../../services/catalog-co
 import { recordOpeningStock } from "../../services/stock-ledger.js";
 import { notifyStoreStatusChange, notifyTeamMember } from "../../services/notify/team-alerts.js";
 import { categoryFacets, subcategoryIdsUnder } from "../../services/category-browse.js";
+import { rankedListingFind } from "../../services/listing-order.js";
 import { storeWrite, townFields, townSelect } from "../../services/towns.js";
 import { hidesTemplateStores, nearbyStores, resolveStore, type CustomerStore } from "../../services/store-resolve.js";
 import { refreshStoreBrands } from "../../services/store-brand-names.js";
@@ -332,8 +333,9 @@ export async function storeRoutes(app: FastifyInstance) {
     else if (sortBy === "price_desc") orderBy = { price: "desc" };
     else if (sortBy === "newest") orderBy = { createdAt: "desc" };
 
-    // id breaks ties (bulk imports share timestamps and prices) so pages never repeat or skip a listing
-    const find = (w: Prisma.StoreProductWhereInput, from: number, take: number) =>
+    // id breaks ties (bulk imports share timestamps and prices) so pages never repeat or skip a listing. Unsorted, a
+    // category lists its brands in ranking order
+    const find = categoryId && !sortBy ? await rankedListingFind(app.prisma, store.id) : (w: Prisma.StoreProductWhereInput, from: number, take: number) =>
       app.prisma.storeProduct.findMany({ where: w, skip: from, take, include: storeProductInclude, orderBy: [orderBy, { id: "asc" }] });
     const count = (w: Prisma.StoreProductWhereInput) => app.prisma.storeProduct.count({ where: w });
     const listingWhere = where as Prisma.StoreProductWhereInput;

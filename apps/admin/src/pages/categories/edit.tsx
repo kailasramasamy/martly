@@ -6,13 +6,16 @@ import { ImageUpload } from "../../components/ImageUpload";
 import { sectionTitle } from "../../theme";
 import { axiosInstance } from "../../providers/data-provider";
 import { useParams } from "react-router";
+import { useGetIdentity } from "@refinedev/core";
 import { ReadableSection } from "../../components/ReadableSection";
+import { BrandRankingCard } from "./brand-ranking";
 
 type Level = "department" | "category" | "subcategory";
 
 export const CategoryEdit = () => {
   const { id } = useParams<{ id: string }>();
   const [level, setLevel] = useState<Level | null>(null);
+  const { data: identity } = useGetIdentity<{ role: string }>();
   const [resource, setResource] = useState<string>("categories");
 
   // Detect level by trying each endpoint
@@ -113,6 +116,11 @@ export const CategoryEdit = () => {
             </Col>
           </Row>
         </Form>
+        {id && (level === "category" || level === "subcategory") && identity?.role === "SUPER_ADMIN" && (
+          <div style={{ marginTop: 16 }}>
+            <BrandRankingCard key={id} level={level} id={id} />
+          </div>
+        )}
       </ReadableSection>
     </Edit>
   );

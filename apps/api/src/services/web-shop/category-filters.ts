@@ -2,6 +2,7 @@ import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import { DISCOUNT_TIERS, FoodType, RATING_TIERS, SearchSortBy, type PriceRange } from "@martly/shared/constants";
 import type { WebShopQuery } from "@martly/shared/schemas";
 import type { WebCategoryFacets, WebCategoryFilters, WebSearchCard } from "@martly/shared/types";
+import { brandPopularityLookup, storeRegion } from "../brand-popularity.js";
 import { cardSelect, popularFirst, soldAt, toCard } from "./cards.js";
 
 // Round numbers a price band can start or end on
@@ -20,6 +21,8 @@ interface Item {
   offer: boolean;
   inStock: boolean;
   rating: number | null;
+  /** Its brand's popularity where it sits: Martly's ranking for its subcategory or category, else the brand's score */
+  popularity: number;
 }
 
 // A range takes its min and stops short of its max, so a ₹50 product sits in "₹50 – ₹75", not also in "₹30 – ₹50"
@@ -27,13 +30,17 @@ const inRange = (price: number, r: PriceRange) => (r.min === null || price >= r.
 
 type Group = "brand" | "price" | "off" | "rating" | "offers" | "food" | "stock";
 
-/** The products as filter items, popular first; with a pack name, each card keeps only that pack */
+/** The products as filter items, most stocked across stores first; with a pack name, each card keeps only that pack */
 async function loadItems(prisma: PrismaClient, storeId: string, where: Prisma.ProductWhereInput, packName?: string): Promise<Item[]> {
   const rows = await prisma.product.findMany({
     where: { AND: [soldAt(storeId), where] },
-    select: { ...cardSelect(storeId), foodType: true, brand: { select: { name: true, slug: true, imageUrl: true } } },
+    select: {
+      ...cardSelect(storeId), foodType: true, brandId: true, subcategoryId: true,
+      brand: { select: { name: true, slug: true, imageUrl: true } },
+    },
     orderBy: popularFirst,
   });
+  const popularity = await brandPopularityLookup(prisma, await storeRegion(prisma, storeId), rows);
   const ratings = rows.length
     ? await prisma.review.groupBy({ by: ["productId"], where: { status: "APPROVED", productId: { in: rows.map((r) => r.id) } }, _avg: { rating: true } })
     : [];
@@ -52,6 +59,7 @@ async function loadItems(prisma: PrismaClient, storeId: string, where: Prisma.Pr
       offer: card.packs.some((p) => p.offer),
       inStock: card.packs.some((p) => p.inStock),
       rating: ratingOf.get(row.id) ?? null,
+      popularity: popularity(row),
     }];
   });
 }
@@ -94,9 +102,12 @@ function priceBands(all: Item[], pool: Item[]): WebCategoryFacets["priceBands"] 
   });
 }
 
-// Picked brands stay listed (at 0 when other filters leave them nothing) so they can be unticked
+// Picked brands stay listed (at 0 when other filters leave them nothing) so they can be unticked; the rest follow the
+// brands' popularity here, then their counts
 function brandFacet(all: Item[], pool: Item[], selected: string[]): WebCategoryFacets["brands"] {
   const brands = new Map<string, WebCategoryFacets["brands"][number]>();
+  const popularity = new Map<string, number>();
+  for (const { brand, popularity: score } of all) if (brand) popularity.set(brand.slug, Math.max(score, popularity.get(brand.slug) ?? 0));
   for (const { brand } of all) if (brand && selected.includes(brand.slug)) brands.set(brand.slug, { ...brand, count: 0 });
   for (const { brand } of pool) {
     if (!brand) continue;
@@ -104,7 +115,8 @@ function brandFacet(all: Item[], pool: Item[], selected: string[]): WebCategoryF
     brands.set(brand.slug, { ...entry, count: entry.count + 1 });
   }
   return [...brands.values()]
-    .sort((a, b) => Number(selected.includes(b.slug)) - Number(selected.includes(a.slug)) || b.count - a.count || a.name.localeCompare(b.name));
+    .sort((a, b) => Number(selected.includes(b.slug)) - Number(selected.includes(a.slug))
+      || popularity.get(b.slug)! - popularity.get(a.slug)! || b.count - a.count || a.name.localeCompare(b.name));
 }
 
 function facetsOf(all: Item[], f: WebCategoryFilters): WebCategoryFacets {
@@ -143,9 +155,10 @@ function filterItems(all: Item[], q: WebShopQuery, pageSize: number) {
   };
 }
 
-/** A category's (or brand's) products, popular first, through the filters */
+/** A category's (or brand's) products, its brands in ranking order, through the filters */
 export async function filteredList(prisma: PrismaClient, storeId: string, where: Prisma.ProductWhereInput, q: WebShopQuery, pageSize: number) {
-  return filterItems(await loadItems(prisma, storeId, where), q, pageSize);
+  const items = await loadItems(prisma, storeId, where);
+  return filterItems(items.sort((a, b) => b.popularity - a.popularity), q, pageSize);
 }
 
 /**

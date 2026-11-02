@@ -26,6 +26,10 @@ stay per-shopper clean.
 The app (next build) opens cards on the preferred size, and the product page on the size the card showed (`size` param),
 else the preferred one, else the smallest in stock. The row of sizes stays smallest first.
 
+The website (martlyshop.in) follows the same order and opens each card and product page on the store's most bought size, else
+Martly's, else the smallest in stock (`WebPack.preferred`, set in `web-shop/cards.ts`). Website shoppers aren't signed in, so
+"last bought" doesn't apply there.
+
 Deliberately not used: putting the biggest pack first to anchor prices, or decoy sizes. Both lift spend once and cost trust.
 
 ## Tested (local, prod copy)

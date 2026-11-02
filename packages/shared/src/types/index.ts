@@ -427,6 +427,23 @@ export interface StoreWalkRoute<P = unknown> {
   due: P[];
 }
 
+/** What a pack calls out on Walk the store's shelves, and how full its shelf looks, from the store's own sales */
+export interface ShelfSignals {
+  /** The aisle's (or picked subcategory's) top seller over 30 days, at 5+ sold */
+  bestseller: boolean;
+  /** 3+ sold in 7 days, more than 1.5× its 30-day weekly pace */
+  trending: boolean;
+  /** Shoppers who bought it here in 7 days; null under 5 */
+  boughtThisWeek: number | null;
+  /** Listed in the last 21 days, once the store had been open 21 days */
+  isNew: boolean;
+  /** low at 5 or fewer left; full at a month's sales (10 at least); else half */
+  stockLevel: "full" | "half" | "low";
+}
+
+/** A pack on Walk the store's shelves */
+export type ShelfItem<P> = P & { shelf: ShelfSignals };
+
 export interface StoreWalkAisle<P = unknown> {
   category: { id: string; name: string; translations: WalkNameTranslations; departmentId: string };
   stocked: number;
@@ -435,11 +452,11 @@ export interface StoreWalkAisle<P = unknown> {
   /** The brands on these shelves (the picked subcategory's, when one is), best sellers first */
   brands: { id: string; name: string; imageUrl: string | null; count: number }[];
   /** The shopper's due items in this aisle, in the size they buy */
-  due: P[];
+  due: ShelfItem<P>[];
   /** The aisle's best sellers (or one subcategory's, when asked), due items left out */
-  popular: P[];
+  popular: ShelfItem<P>[];
   /** Running offers elsewhere in the department, for the display at the aisle's end (at most 3) */
-  endcap: P[];
+  endcap: ShelfItem<P>[];
 }
 
 /** One line of a monthly list as the store sells it today; `listing` is null when the store no longer lists that size */
@@ -548,3 +565,4 @@ export * from "./store-resolve.js";
 export * from "./storefront.js";
 export * from "./loose-staples.js";
 export * from "./credits.js";
+export * from "./brand-ranking.js";

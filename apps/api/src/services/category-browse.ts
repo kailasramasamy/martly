@@ -3,6 +3,7 @@ import type { CategoryFacets } from "@martly/shared/types";
 import { ownBrandId } from "@martly/shared/constants";
 import { storeBrandBoost, type BrandBoost } from "./brand-boost.js";
 import { storeBrandLabel } from "./store-brand-names.js";
+import { brandPopularitySql, storeRegion } from "./brand-popularity.js";
 
 // A browse node is a department, category or subcategory id; products hang off subcategories only
 export async function subcategoryIdsUnder(prisma: PrismaClient, nodeId: string): Promise<string[]> {
@@ -12,9 +13,10 @@ export async function subcategoryIdsUnder(prisma: PrismaClient, nodeId: string):
   return subs.length > 0 ? subs.map((s) => s.id) : [nodeId];
 }
 
-// How many products a store lists in each subcategory under a node, and every brand there, most products first
+// How many products a store lists in each subcategory under a node, and every brand there in ranking order (Martly's
+// ranking for the subcategory or category, else the brand's regional or national score), then most products
 export async function categoryFacets(prisma: PrismaClient, storeId: string, nodeId: string): Promise<CategoryFacets> {
-  const subIds = await subcategoryIdsUnder(prisma, nodeId);
+  const [subIds, region] = await Promise.all([subcategoryIdsUnder(prisma, nodeId), storeRegion(prisma, storeId)]);
   const listed = Prisma.sql`
     FROM store_products sp JOIN products p ON p.id = sp.product_id LEFT JOIN brands b ON b.id = p.brand_id
     WHERE sp.store_id = ${storeId} AND sp.is_active AND p.subcategory_id IN (${Prisma.join(subIds)})`;
@@ -24,7 +26,7 @@ export async function categoryFacets(prisma: PrismaClient, storeId: string, node
     prisma.$queryRaw<{ id: string; name: string; imageUrl: string | null; count: bigint }[]>`
       SELECT b.id, b.name, b.image_url AS "imageUrl", COUNT(DISTINCT p.id) AS count
       ${listed} AND b.id IS NOT NULL
-      GROUP BY b.id ORDER BY count DESC, b.name`,
+      GROUP BY b.id ORDER BY MAX(${brandPopularitySql(region, "b", Prisma.sql`p.subcategory_id`)}) DESC, count DESC, b.name`,
   ]);
   const boost = await storeBrandBoost(prisma, storeId);
   const own = await ownBrandFacet(prisma, storeId, subIds, boost);

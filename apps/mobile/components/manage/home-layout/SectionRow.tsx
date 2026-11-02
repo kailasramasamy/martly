@@ -27,7 +27,7 @@ interface StepProps {
   danger?: boolean;
 }
 
-function IconStep({ icon, label, disabled, onPress, danger }: StepProps) {
+export function IconStep({ icon, label, disabled, onPress, danger }: StepProps) {
   return (
     <TouchableOpacity style={[styles.step, disabled && styles.stepOff]} onPress={onPress} disabled={disabled} accessibilityRole="button" accessibilityLabel={label} activeOpacity={0.6}>
       <Ionicons name={icon} size={20} color={danger ? colors.error : colors.text} />
