@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     width: TILE_SIZE, height: TILE_SIZE, margin: 6, borderRadius: 10, backgroundColor: "#f8fafc",
-    padding: 4, alignItems: "center", justifyContent: "center", overflow: "hidden",
+    padding: 8, alignItems: "center", justifyContent: "center", overflow: "hidden",
   },
   image: { width: "100%", height: "100%", mixBlendMode: "multiply" },
   noImageLetter: { fontFamily: fonts.bold, fontSize: 22, color: "#cbd5e1" },

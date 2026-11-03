@@ -30,7 +30,7 @@ export const imageTileSize = (cardWidth: number) => cardWidth;
 const STEPPER_WIDTH = 84;
 const CONTROL_INSET = 6;
 // The photo's padding plus its 1px border
-const TILE_INSET = 7;
+const TILE_INSET = 11;
 const stepperWidth = (cardWidth: number) => Math.min(STEPPER_WIDTH, cardWidth - 2 * CONTROL_INSET);
 const CONTROL_HEIGHT = 36;
 const ADD_WIDTH = 66;
