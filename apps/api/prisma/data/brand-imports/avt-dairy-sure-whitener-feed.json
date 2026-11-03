@@ -1,0 +1,35 @@
+[
+ {
+  "title": "Dairy Sure Dairy Whitener",
+  "handle": "dairy-sure-dairy-whitener",
+  "vendor": "AVT",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "barcode": "8902042300839",
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/avt/avt-dairy-sure-dairy-whitener-200g-661b4ad1.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/avt/avt-dairy-sure-dairy-whitener-200g-661b4ad1.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/avt/avt-dairy-sure-dairy-whitener-200g-back-ba204ea0.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Medium fat dairy whitener made from cow milk using free-flow technology, for thick, rich and creamy tea or coffee. Also works well in homemade sweets.",
+   "ingredients": "Milk Solids, Sugar",
+   "manufacturerName": "Owned & marketed by A.V. Thomas & Co. Ltd., W-21/674, Beach Road, Alappuzha 688 012"
+  }
+ }
+]

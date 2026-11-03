@@ -1,0 +1,19 @@
+{
+  "brand": "AVT",
+  "manufacturer": "Marketed by A V Thomas & Co Ltd., Alappuzha",
+  "feed": "avt-dairy-sure-whitener-feed.json",
+  "namePrefix": "AVT ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Dairy Sure Dairy Whitener$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Dairy Whitener"
+      ]
+    }
+  ]
+}
