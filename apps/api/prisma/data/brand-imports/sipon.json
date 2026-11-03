@@ -1,0 +1,75 @@
+{
+  "brand": "Sipon",
+  "manufacturer": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+  "feed": "sipon-feed.json",
+  "namePrefix": "Sipon ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Mango Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Mango Drinks (Frooti, Maaza)"
+      ]
+    },
+    {
+      "match": "^Mango Drink Tetra Pack$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Mango Drinks (Frooti, Maaza)"
+      ]
+    },
+    {
+      "match": "^Apple Drink Tetra Pack$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Pink Guava Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Lychee Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Kokum Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Active Plus Orange$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Tender Coconut Water$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    }
+  ]
+}

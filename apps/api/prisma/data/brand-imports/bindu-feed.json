@@ -7,6 +7,42 @@
   "body_html": "",
   "variants": [
    {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-600ml-d7b6633e.webp"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "12",
+    "compare_at_price": "12",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-600ml-d7b6633e.webp"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-600ml-d7b6633e.webp"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-600ml-d7b6633e.webp"
+    }
+   },
+   {
     "title": "600ml",
     "price": "38",
     "compare_at_price": "38",
@@ -84,9 +120,36 @@
   "body_html": "",
   "variants": [
    {
+    "title": "250ml",
+    "price": "6",
+    "compare_at_price": "6",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-packaged-drinking-water-1l-3b12ba7e.webp"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-packaged-drinking-water-1l-3b12ba7e.webp"
+    }
+   },
+   {
     "title": "1L",
     "price": "20",
     "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-packaged-drinking-water-1l-3b12ba7e.webp"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "30",
+    "compare_at_price": "30",
     "available": true,
     "featured_image": {
      "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-packaged-drinking-water-1l-3b12ba7e.webp"
@@ -103,6 +166,311 @@
    "description": "Pure, fresh packaged drinking water from Bindu, with added minerals.",
    "ingredients": "Treated water, Potassium bicarbonate, Magnesium sulphate",
    "storageInstructions": "Store in cool, hygienic conditions away from direct sunlight.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Soda",
+  "handle": "soda",
+  "vendor": "Bindu",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/bindu-soda-9305e6b6.webp"
+    }
+   },
+   {
+    "title": "600ml",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/bindu-soda-9305e6b6.webp"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/bindu-soda-9305e6b6.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/bindu-soda-9305e6b6.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Quench your thirst with our bubbly soda, a refreshing companion that enhances casual dining or festive occasions with its crisp, classic taste.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Salt Soda",
+  "handle": "salt-soda",
+  "vendor": "Bindu",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "12",
+    "compare_at_price": "12",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/salt-soda-bed18c1c.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/salt-soda-bed18c1c.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the unique blend of traditional soda spiked with a dash of salt, offering a savoury twist that refreshes and intrigues the palate.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Fizzy Ginger Masala",
+  "handle": "fizzy-ginger-masala",
+  "vendor": "Bindu",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "12",
+    "compare_at_price": "12",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/bindu-ginger-3ad260b8.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/bindu-ginger-3ad260b8.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Delight your taste buds with the fiery warmth of ginger infused with aromatic masala spices for a uniquely satisfying beverage.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Nannari Soda",
+  "handle": "nannari-soda",
+  "vendor": "Bindu",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/nannari-13f38cfc.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/nannari-13f38cfc.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Introducing the latest addition to the House of Bindu — Bindu Nannari! A classic drink rooted in tradition, bringing you the perfect cool sip after every meal. Refreshing, nostalgic, and simply delicious.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "52",
+    "Protein (g)": "0",
+    "Total Fat (g)": "0",
+    "Carbohydrate (g)": "11.2",
+    "Total Sugar (g)": "11",
+    "Added Sugar (g)": "11",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "30"
+   }
+  }
+ },
+ {
+  "title": "Fiesta Fizzy Green Apple",
+  "handle": "fiesta-fizzy-green-apple",
+  "vendor": "Bindu",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/fiesta-green-apple-e96c9fe4.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/fiesta-green-apple-e96c9fe4.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing burst of tangy green apple flavour in every fizzy sip, perfect for adding a zing to your day!",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Limite Cloudy Lemon",
+  "handle": "limite-cloudy-lemon",
+  "vendor": "Bindu",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/limite-0c1454e5.webp"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/limite-0c1454e5.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/limite-0c1454e5.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the energising citrusy deliciousness of cloudy lemon, delivering a burst of freshness with every sip.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Limonast Lemon Fresh",
+  "handle": "limonast-lemon-fresh",
+  "vendor": "Bindu",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/limonast-8bfb1dce.webp"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "12",
+    "compare_at_price": "12",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/limonast-8bfb1dce.webp"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/limonast-8bfb1dce.webp"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/limonast-8bfb1dce.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/limonast-8bfb1dce.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Taste the revitalising flavour of zesty lemonade, crafted from the pure essence of freshly squeezed lemons.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "48",
+    "Protein (g)": "0",
+    "Total Fat (g)": "0",
+    "Carbohydrate (g)": "12.2",
+    "Total Sugar (g)": "12",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "7"
+   }
+  }
+ },
+ {
+  "title": "B-Hot Energy Drink Blazing Berry",
+  "handle": "b-hot-energy-drink-blazing-berry",
+  "vendor": "Bindu",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/bhot-f11624c5.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/bhot-f11624c5.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Take a sip of this vibrant and fizzy drink blended with berries, fueling your day with explosive energy!",
    "countryOfOrigin": "India",
    "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
   }

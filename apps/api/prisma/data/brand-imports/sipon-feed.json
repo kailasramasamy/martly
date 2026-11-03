@@ -1,0 +1,336 @@
+[
+ {
+  "title": "Mango Drink",
+  "handle": "mango-drink",
+  "vendor": "Sipon",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-mango-e40c8763.webp"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-mango-e40c8763.webp"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-mango-e40c8763.webp"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-mango-e40c8763.webp"
+    }
+   },
+   {
+    "title": "1.2L",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-mango-e40c8763.webp"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-mango-e40c8763.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-mango-e40c8763.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dive into the luscious taste of ripe mangoes captured in this delightful drink, perfect for sunny moments!",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Mango Drink Tetra Pack",
+  "handle": "mango-drink-tetra-pack",
+  "vendor": "Sipon",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-mango-tetra-a5f86de8.webp"
+    }
+   },
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-mango-tetra-a5f86de8.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-mango-tetra-a5f86de8.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dive into the luscious taste of ripe mangoes captured in this delightful drink, perfect for sunny moments!",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Apple Drink Tetra Pack",
+  "handle": "apple-drink-tetra-pack",
+  "vendor": "Sipon",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-apple-tetra-37efb755.webp"
+    }
+   },
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-apple-tetra-37efb755.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-apple-tetra-37efb755.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Relish in the crisp and refreshing taste of apple in every sip, a classic choice for a cool and revitalising drink.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Pink Guava Drink",
+  "handle": "pink-guava-drink",
+  "vendor": "Sipon",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-guava-1c000352.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-guava-1c000352.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the tropical sweetness of pink guava with every sip of this refreshing drink.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "66",
+    "Protein (g)": "0.1",
+    "Total Fat (g)": "0",
+    "Carbohydrate (g)": "16.4",
+    "Total Sugar (g)": "14",
+    "Cholesterol (mg)": "0",
+    "Vitamin C (mg)": "10.2"
+   }
+  }
+ },
+ {
+  "title": "Lychee Drink",
+  "handle": "lychee-drink",
+  "vendor": "Sipon",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-lychee-81fe746c.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-lychee-81fe746c.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the exotic sweetness of litchi, captured in this refreshing drink that offers a burst of tropical flavour!",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Kokum Drink",
+  "handle": "kokum-drink",
+  "vendor": "Sipon",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-kokum-7f48d193.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-kokum-7f48d193.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Delight in the zesty flavour of kokum infused with the spicy kick of jeera, creating a refreshing and revitalising drink.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "51.48",
+    "Protein (g)": "0",
+    "Total Fat (g)": "0",
+    "Carbohydrate (g)": "12.1",
+    "Total Sugar (g)": "12",
+    "Sodium (mg)": "48.9"
+   }
+  }
+ },
+ {
+  "title": "Active Plus Orange",
+  "handle": "active-plus-orange",
+  "vendor": "Sipon",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-active-plus-d72a882b.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-active-plus-d72a882b.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Meet SipOn Active Plus. Instant energy when every second counts.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "50",
+    "Protein (g)": "0",
+    "Total Fat (g)": "0",
+    "Carbohydrate (g)": "10.2",
+    "Total Sugar (g)": "9.5",
+    "Added Sugar (g)": "6",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "40"
+   }
+  }
+ },
+ {
+  "title": "Tender Coconut Water",
+  "handle": "tender-coconut-water",
+  "vendor": "Sipon",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-coconut-a2d16203.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/sipon-coconut-a2d16203.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Meet SipOn Tender Coconut Water, packed with electrolytes to keep you refreshed and recharged. Pure coconut goodness, packed into every drop. Stay refreshed, stay hydrated with SipOn Tender Coconut Water.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Energy (kcal)": "30",
+    "Protein (g)": "0",
+    "Total Fat (g)": "0",
+    "Carbohydrate (g)": "7.3",
+    "Total Sugar (g)": "7.2",
+    "Added Sugar (g)": "4.4",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "25",
+    "Potassium (mg)": "289"
+   }
+  }
+ }
+]

@@ -1,0 +1,35 @@
+{
+  "brand": "Fruzon",
+  "manufacturer": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+  "feed": "fruzon-feed.json",
+  "namePrefix": "Fruzon ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Fizzy Apple Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Fizzy Orange$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Orange & Mango"
+      ]
+    },
+    {
+      "match": "^Fizzy Strawberry$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    }
+  ]
+}

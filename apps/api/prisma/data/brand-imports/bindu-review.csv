@@ -1,3 +1,11 @@
 site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
-Fizz Jeera Masala Soda,Bindu Fizz Jeera Masala Soda,create,Beverages > Soft Drinks & Carbonated > Soda & Tonic Water,600ml ₹38 | 1L ₹60 | 2L ₹95,600ml ₹38 | 1L ₹60 | 2L ₹95,6,
-Packaged Drinking Water,Bindu Packaged Drinking Water,create,Beverages > Water > Packaged Drinking Water,1L ₹20,1L ₹20,1,
+Fizz Jeera Masala Soda,Bindu Fizz Jeera Masala Soda,update,Beverages > Soft Drinks & Carbonated > Soda & Tonic Water,160ml ₹10 | 200ml ₹12 | 250ml ₹20 | 300ml ₹20 | 600ml ₹38 | 1L ₹60 | 2L ₹95,160ml ₹10 | 200ml ₹12 | 250ml ₹20 | 300ml ₹20 | 600ml ₹38 | 1L ₹60 | 2L ₹95,6,
+Packaged Drinking Water,Bindu Packaged Drinking Water,update,Beverages > Water > Packaged Drinking Water,250ml ₹6 | 500ml ₹10 | 1L ₹20 | 2L ₹30,250ml ₹6 | 500ml ₹10 | 1L ₹20 | 2L ₹30,1,
+Soda,Bindu Soda,create,Beverages > Soft Drinks & Carbonated > Soda & Tonic Water,300ml ₹20 | 600ml ₹38 | 2L ₹95,300ml ₹20 | 600ml ₹38 | 2L ₹95,1,
+Salt Soda,Bindu Salt Soda,create,Beverages > Soft Drinks & Carbonated > Soda & Tonic Water,200ml ₹12,200ml ₹12,1,
+Fizzy Ginger Masala,Bindu Fizzy Ginger Masala,create,Beverages > Soft Drinks & Carbonated > Soda & Tonic Water,200ml ₹12,200ml ₹12,1,
+Nannari Soda,Bindu Nannari Soda,create,Beverages > Soft Drinks & Carbonated > Soda & Tonic Water,300ml ₹20,300ml ₹20,1,
+Fiesta Fizzy Green Apple,Bindu Fiesta Fizzy Green Apple,create,Beverages > Soft Drinks & Carbonated > Soda & Tonic Water,160ml ₹10,160ml ₹10,1,
+Limite Cloudy Lemon,Bindu Limite Cloudy Lemon,create,Beverages > Soft Drinks & Carbonated > Lemon & Lime,160ml ₹10 | 300ml ₹20,160ml ₹10 | 300ml ₹20,1,
+Limonast Lemon Fresh,Bindu Limonast Lemon Fresh,create,Beverages > Soft Drinks & Carbonated > Lemon & Lime,160ml ₹10 | 200ml ₹12 | 300ml ₹20 | 2L ₹95,160ml ₹10 | 200ml ₹12 | 300ml ₹20 | 2L ₹95,1,
+B-Hot Energy Drink Blazing Berry,Bindu B-Hot Energy Drink Blazing Berry,create,Beverages > Health & Energy Drinks > Glucose & Energy Drinks,150ml ₹10,150ml ₹10,1,

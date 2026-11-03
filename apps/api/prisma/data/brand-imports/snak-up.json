@@ -1,0 +1,99 @@
+{
+  "brand": "Snak Up",
+  "manufacturer": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+  "feed": "snak-up-feed.json",
+  "namePrefix": "Snak Up ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Potato Chips Classic Salted$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Potato Chips Cream \\& Onion$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Potato Chips Red Chilly Masti$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Potato Chips Tomato Ketchup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Mini Magic Noodles Biryani Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Moong Dal Crackle$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Onion Rings$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Wheels Chilli Garlic$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Twisty Flaming Chilly$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Twisty Manchurian$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Twisty South Indian Pickle$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    }
+  ]
+}

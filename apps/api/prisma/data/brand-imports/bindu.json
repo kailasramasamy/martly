@@ -25,6 +25,70 @@
         "Water",
         "Packaged Drinking Water"
       ]
+    },
+    {
+      "match": "^Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Salt Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Fizzy Ginger Masala$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Nannari Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Fiesta Fizzy Green Apple$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Limite Cloudy Lemon$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Lemon & Lime"
+      ]
+    },
+    {
+      "match": "^Limonast Lemon Fresh$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Lemon & Lime"
+      ]
+    },
+    {
+      "match": "^B\\-Hot Energy Drink Blazing Berry$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
     }
   ]
 }

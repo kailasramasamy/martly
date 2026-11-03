@@ -1,0 +1,438 @@
+[
+ {
+  "title": "Potato Chips Classic Salted",
+  "handle": "potato-chips-classic-salted",
+  "vendor": "Snak Up",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1pcs",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/chips-salted-f571c92e.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/chips-salted-f571c92e.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Crispy golden slices seasoned to perfection with just the right amount of salt, delivering the pure and authentic potato chip experience.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "550.98",
+    "Protein (g)": "5.59",
+    "Total Fat (g)": "36.15",
+    "Saturated Fat (g)": "15.09",
+    "Mono Unsaturated Fat (g)": "13.85",
+    "Poly Unsaturated Fat (g)": "3.15",
+    "Trans Fat (g)": "0",
+    "Cholesterol (g)": "<0.1",
+    "Carbohydrate (g)": "57.77",
+    "Sodium (mg)": "578",
+    "Added Sugar (g)": "0"
+   }
+  }
+ },
+ {
+  "title": "Potato Chips Cream & Onion",
+  "handle": "potato-chips-cream-onion",
+  "vendor": "Snak Up",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1pcs",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/chips-cream-8bed1128.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/chips-cream-8bed1128.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the creamy goodness of sour cream and the subtle tang of onion in these perfectly seasoned crispy chips.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "559.87",
+    "Protein (g)": "5.31",
+    "Total Fat (g)": "36.15",
+    "Saturated Fat (g)": "16.7",
+    "Mono Unsaturated Fat (g)": "15.09",
+    "Poly Unsaturated Fat (g)": "3.04",
+    "Trans Fat (g)": "0",
+    "Cholesterol (g)": "0",
+    "Carbohydrate (g)": "53.32",
+    "Sodium (mg)": "658",
+    "Added Sugar (g)": "1.5"
+   }
+  }
+ },
+ {
+  "title": "Potato Chips Red Chilly Masti",
+  "handle": "potato-chips-red-chilly-masti",
+  "vendor": "Snak Up",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1pcs",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/chips-red-5c2430a6.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/chips-red-5c2430a6.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These fiery delights blend the bold flavours of red chilli with the crispy perfection of potato chips, delivering a burst of heat in every bite.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "566.66",
+    "Protein (g)": "6.74",
+    "Total Fat (g)": "36.08",
+    "Saturated Fat (g)": "16.84",
+    "Mono Unsaturated Fat (g)": "15.73",
+    "Poly Unsaturated Fat (g)": "3.26",
+    "Trans Fat (g)": "0",
+    "Cholesterol (g)": "<0.1",
+    "Carbohydrate (g)": "51.18",
+    "Sodium (mg)": "987",
+    "Added Sugar (g)": "0.08"
+   }
+  }
+ },
+ {
+  "title": "Potato Chips Tomato Ketchup",
+  "handle": "potato-chips-tomato-ketchup",
+  "vendor": "Snak Up",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1pcs",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/chips-tomato-3cedca86.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/chips-tomato-3cedca86.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Each chip is a burst of tomato ketchup goodness paired with the classic crunch, offering a mouthwatering twist to your snacking routine.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "541.3",
+    "Protein (g)": "7.9",
+    "Total Fat (g)": "36.02",
+    "Saturated Fat (g)": "3.9",
+    "Mono Unsaturated Fat (g)": "14.03",
+    "Poly Unsaturated Fat (g)": "14.3",
+    "Trans Fat (g)": "3.9",
+    "Cholesterol (g)": "0",
+    "Carbohydrate (g)": "54",
+    "Sodium (mg)": "638",
+    "Added Sugar (g)": "1.5"
+   }
+  }
+ },
+ {
+  "title": "Mini Magic Noodles Biryani Masala",
+  "handle": "mini-magic-noodles-biryani-masala",
+  "vendor": "Snak Up",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1pcs",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/noodles-a399fb97.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/noodles-a399fb97.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a quick, fun-sized feast that's perfect for any time and will charm everyone at the table.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "548.13",
+    "Protein (g)": "7.98",
+    "Total Fat (g)": "23.5",
+    "Saturated Fat (g)": "14.79",
+    "Mono Unsaturated Fat (g)": "13.3",
+    "Poly Unsaturated Fat (g)": "2.76",
+    "Trans Fat (g)": "0",
+    "Cholesterol (g)": "0",
+    "Carbohydrate (g)": "56.05",
+    "Sodium (mg)": "1412.65",
+    "Added Sugar (g)": "1.73"
+   }
+  }
+ },
+ {
+  "title": "Moong Dal Crackle",
+  "handle": "moong-dal-crackle",
+  "vendor": "Snak Up",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1pcs",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/moong-f6394543.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/moong-f6394543.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Seasoned to perfection with a blend of spices, these crunchy bites are a delightful snack that is both flavourful and nutritious.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "493.12",
+    "Protein (g)": "22.8",
+    "Total Fat (g)": "19.5",
+    "Saturated Fat (g)": "9.8",
+    "Mono Unsaturated Fat (g)": "13.85",
+    "Poly Unsaturated Fat (g)": "3.75",
+    "Trans Fat (g)": "0",
+    "Cholesterol (g)": "<0.1",
+    "Carbohydrate (g)": "52.4",
+    "Sodium (mg)": "453",
+    "Added Sugar (g)": "0"
+   }
+  }
+ },
+ {
+  "title": "Onion Rings",
+  "handle": "onion-rings",
+  "vendor": "Snak Up",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1pcs",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/onion-rings-ee15c676.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/onion-rings-ee15c676.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Relish in the delectable taste of the classic onion rings—fried to perfection for a supremely appetising flavour and a satisfying crunch.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "485.04",
+    "Protein (g)": "7.34",
+    "Total Fat (g)": "22.52",
+    "Saturated Fat (g)": "10.51",
+    "Mono Unsaturated Fat (g)": "9.32",
+    "Poly Unsaturated Fat (g)": "1.76",
+    "Trans Fat (g)": "0",
+    "Cholesterol (g)": "<0.1",
+    "Carbohydrate (g)": "63.25",
+    "Sodium (mg)": "230",
+    "Added Sugar (g)": "1.5"
+   }
+  }
+ },
+ {
+  "title": "Wheels Chilli Garlic",
+  "handle": "wheels-chilli-garlic",
+  "vendor": "Snak Up",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1pcs",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/wheels-708c46a1.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/wheels-708c46a1.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the fiery excitement of chilli and garlic-infused wheels, sparking your taste buds with a delightful burst of spice and crunch.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Twisty Flaming Chilly",
+  "handle": "twisty-flaming-chilly",
+  "vendor": "Snak Up",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1pcs",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/twisty-flaming-1a5e1b85.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/twisty-flaming-1a5e1b85.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the fiery heat of these spicy treats, where red hot chilli flavour meets the satisfying crunch of twisted snacks.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Twisty Manchurian",
+  "handle": "twisty-manchurian",
+  "vendor": "Snak Up",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1pcs",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/twisty-manchurian-86c67dc1.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/twisty-manchurian-86c67dc1.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bring the bold, spicy taste of your favourite street food to snack time with SnakUp Gobi Manchurian Twisty! Packed with delicious Gobi Manchurian flavour and a satisfying crunch, it's the perfect snack to spice up your cravings anytime, anywhere.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "506",
+    "Protein (g)": "7.54",
+    "Total Fat (g)": "36",
+    "Saturated Fat (g)": "11.89",
+    "Mono Unsaturated Fat (g)": "9.84",
+    "Poly Unsaturated Fat (g)": "2.65",
+    "Trans Fat (g)": "0.09",
+    "Cholesterol (g)": "0",
+    "Carbohydrate (g)": "63.37",
+    "Sodium (mg)": "619",
+    "Added Sugar (g)": "1.8"
+   }
+  }
+ },
+ {
+  "title": "Twisty South Indian Pickle",
+  "handle": "twisty-south-indian-pickle",
+  "vendor": "Snak Up",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1pcs",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/twisty-pickle-fed53876.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/twisty-pickle-fed53876.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A delightful fusion of tangy spices and traditional pickle ingredients delivers a burst of authentic taste in every bite.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+   "nutritionalInfo": {
+    "Energy (kcal)": "451",
+    "Protein (g)": "9.62",
+    "Total Fat (g)": "19.9",
+    "Saturated Fat (g)": "7.37",
+    "Mono Unsaturated Fat (g)": "6.09",
+    "Poly Unsaturated Fat (g)": "1.72",
+    "Trans Fat (g)": "0.09",
+    "Cholesterol (g)": "0",
+    "Carbohydrate (g)": "68.7",
+    "Sodium (mg)": "560",
+    "Added Sugar (g)": "1.9"
+   }
+  }
+ }
+]

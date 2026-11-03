@@ -1,0 +1,89 @@
+[
+ {
+  "title": "Fizzy Apple Drink",
+  "handle": "fizzy-apple-drink",
+  "vendor": "Fruzon",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/fruzon-apple-2d327a1b.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/fruzon-apple-2d327a1b.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sip into the luscious joy of ripe apples, bubbling with crispness and invigorating freshness.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Fizzy Orange",
+  "handle": "fizzy-orange",
+  "vendor": "Fruzon",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/fruzon-orange-348d803d.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/fruzon-orange-348d803d.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Embrace the lively zest of tangy oranges, delivering a burst of refreshing citrus flavour in every sip.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Fizzy Strawberry",
+  "handle": "fizzy-strawberry",
+  "vendor": "Fruzon",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/fruzon-strawberry-162e39e2.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/house-of-bindu/fruzon-strawberry-162e39e2.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Revel in the delicious sweetness of strawberries, dancing on your taste buds with each bubbly sip.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ }
+]
