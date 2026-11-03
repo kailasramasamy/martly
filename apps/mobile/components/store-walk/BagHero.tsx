@@ -26,11 +26,13 @@ const BASKET = {
 const TROLLEY = {
   image: require("../../assets/images/store-walk/trolley.webp"), width: 120, ratio: 648 / 420, rim: 0.225, pack: 54,
   deep: false,
+  // Inside its wire walls, whatever the pack's shape: left runs 16–50 at this pack size, and the floor row's foot stops at
+  // the back of the floor mesh, as the mesh would hide anything standing further forward. Edge packs lean inward
   spots: [
-    { left: 26, sink: 84, rotate: "-3deg" }, { left: 48, sink: 84, rotate: "4deg" }, { left: 4, sink: 84, rotate: "-5deg" }, { left: 66, sink: 84, rotate: "5deg" },
-    { left: 36, sink: 56, rotate: "6deg" }, { left: 14, sink: 56, rotate: "-6deg" }, { left: 58, sink: 56, rotate: "-4deg" },
-    { left: 26, sink: 26, rotate: "4deg" }, { left: 48, sink: 26, rotate: "-5deg" }, { left: 3, sink: 26, rotate: "-8deg" }, { left: 68, sink: 26, rotate: "8deg" },
-    { left: 36, sink: 8, rotate: "3deg" },
+    { left: 33, sink: 58, rotate: "-3deg" }, { left: 16, sink: 58, rotate: "4deg" }, { left: 50, sink: 58, rotate: "-4deg" },
+    { left: 25, sink: 40, rotate: "5deg" }, { left: 42, sink: 40, rotate: "-5deg" }, { left: 16, sink: 26, rotate: "6deg" },
+    { left: 50, sink: 26, rotate: "-6deg" }, { left: 33, sink: 26, rotate: "3deg" }, { left: 24, sink: 12, rotate: "-4deg" },
+    { left: 42, sink: 12, rotate: "4deg" }, { left: 16, sink: 2, rotate: "7deg" }, { left: 50, sink: 2, rotate: "-7deg" },
   ] as Spot[],
 };
 
