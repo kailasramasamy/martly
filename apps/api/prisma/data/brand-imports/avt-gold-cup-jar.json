@@ -1,0 +1,19 @@
+{
+  "brand": "AVT",
+  "manufacturer": "Marketed by A V Thomas & Co Ltd., Alappuzha",
+  "feed": "avt-gold-cup-jar-feed.json",
+  "namePrefix": "AVT ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Gold Cup Premium Dust Tea Jar$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    }
+  ]
+}
