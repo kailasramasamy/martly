@@ -9,7 +9,7 @@ export async function storeRegion(prisma: PrismaClient, storeId: string) {
 }
 
 // A ranking for the store's region beats the All India one at the same level
-const rankingRegions = (region: string | null) => (region ? [region, NATIONAL_REGION] : [NATIONAL_REGION]);
+export const rankingRegions = (region: string | null) => (region ? [region, NATIONAL_REGION] : [NATIONAL_REGION]);
 
 /**
  * A brand's popularity (brands joined as `alias`): given the product's subcategory, Martly's ranking in that subcategory,

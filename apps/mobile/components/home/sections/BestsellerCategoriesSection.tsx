@@ -13,16 +13,20 @@ type Category = BestsellerCategories["categories"][number];
 
 const COLUMNS = 3;
 const GAP = 10;
-const CARD_PADDING = 6;
-const IMAGE_GAP = 4;
+const CARD_PADDING = 4;
 const CARD_WIDTH = Math.floor((WIDTH - GAP * (COLUMNS - 1)) / COLUMNS);
-const IMAGE_SIZE = Math.floor((CARD_WIDTH - CARD_PADDING * 2 - IMAGE_GAP) / 2);
+const TILE_SIZE = CARD_WIDTH - CARD_PADDING * 2;
+// The lead pack sits low on the left; the other stands behind it on the right, tilted
+const BACK_PACK = { width: Math.round(TILE_SIZE * 0.62), height: Math.round(TILE_SIZE * 0.8) };
+const FRONT_PACK = { width: Math.round(TILE_SIZE * 0.66), height: Math.round(TILE_SIZE * 0.66) };
+const FRONT_FLOOR = 10;
 
-/** A category pictured by its four best sellers in a 2×2 grid, with how many more it stocks and its name */
+/** A category pictured by its two best sellers on one tile, with how many more it stocks and its name */
 function CategoryCard({ category }: { category: Category }) {
   const t = useStrings("home");
   const { getLocalizedName } = useLanguage();
   const name = getLocalizedName(category);
+  const [front, back] = category.images;
   return (
     <Pressable
       onPress={() => router.push({ pathname: "/category/[id]", params: { id: category.id } })}
@@ -30,12 +34,9 @@ function CategoryCard({ category }: { category: Category }) {
       accessibilityLabel={name}
       style={({ pressed }) => [styles.card, pressed && styles.pressed]}
     >
-      <View style={styles.images}>
-        {category.images.map((uri) => (
-          <View key={uri} style={styles.imageBox}>
-            <Image source={{ uri }} style={styles.image} resizeMode="contain" />
-          </View>
-        ))}
+      <View style={styles.tile}>
+        <Image source={{ uri: back }} style={styles.backPack} resizeMode="contain" />
+        <Image source={{ uri: front }} style={styles.frontPack} resizeMode="contain" />
         {category.more > 0 && (
           <View style={styles.moreRow}>
             <View style={styles.morePill}>
@@ -73,10 +74,10 @@ const styles = StyleSheet.create({
   row: { flexDirection: "row", gap: GAP },
   card: { width: CARD_WIDTH, borderRadius: 16, backgroundColor: "#e8f1f1", padding: CARD_PADDING, paddingBottom: 10 },
   pressed: { opacity: 0.85 },
-  images: { flexDirection: "row", flexWrap: "wrap", gap: IMAGE_GAP, marginBottom: 14 },
-  imageBox: { width: IMAGE_SIZE, height: IMAGE_SIZE, borderRadius: 10, backgroundColor: colors.background, padding: 4 },
-  image: { width: "100%", height: "100%" },
-  // Sits across the bottom edge of the image grid, the way a count badge tucks under a stack
+  tile: { width: TILE_SIZE, height: TILE_SIZE, borderRadius: 12, backgroundColor: colors.background, marginBottom: 14 },
+  backPack: { position: "absolute", top: 4, right: 7, transform: [{ rotate: "10deg" }], ...BACK_PACK },
+  frontPack: { position: "absolute", left: 3, bottom: FRONT_FLOOR, ...FRONT_PACK },
+  // Sits across the bottom edge of the tile, the way a count badge tucks under a stack
   moreRow: { position: "absolute", bottom: -10, left: 0, right: 0, alignItems: "center" },
   morePill: {
     paddingHorizontal: 8, height: 20, borderRadius: 10, backgroundColor: colors.background,
