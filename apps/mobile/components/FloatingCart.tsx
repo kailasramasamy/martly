@@ -62,7 +62,7 @@ export function FloatingCart({ aboveTabBar = false }: { aboveTabBar?: boolean })
       >
         <View style={styles.left}>
           <View style={styles.badge}>
-            <Text style={styles.badgeText}>{itemCount > 9 ? "9+" : itemCount}</Text>
+            <Text style={styles.badgeText}>{itemCount > 99 ? "99+" : itemCount}</Text>
           </View>
           <View style={styles.info}>
             <View style={styles.storeRow}>

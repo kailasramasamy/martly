@@ -17,6 +17,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { toCartItem, useCart } from "../../lib/cart-context";
+import { CartFab } from "../../components/CartFab";
 import { useStore } from "../../lib/store-context";
 import { useWishlist } from "../../lib/wishlist-context";
 import { useAuth } from "../../lib/auth-context";
@@ -703,6 +704,7 @@ export default function ProductDetailScreen() {
         </View>
         <View style={{ height: 120 }} />
       </ScrollView>
+      <CartFab aboveBar={Boolean(selectedSp && storeProducts.length > 0)} />
       {/* Sticky Bottom Bar */}
       {selectedSp && storeProducts.length > 0 && (
         <View style={[styles.bottomBar, { paddingBottom: Math.max(insets.bottom, 12) }]}>

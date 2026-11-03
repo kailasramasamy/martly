@@ -17,7 +17,7 @@ export function TabIcon({ focused, icon, badge }: { focused: boolean; icon: Icon
       <Ionicons name={name} size={20} color={focused ? colors.primary : TAB_INACTIVE} />
       {badge ? (
         <View style={styles.badge}>
-          <Text style={styles.badgeText}>{badge > 9 ? "9+" : badge}</Text>
+          <Text style={styles.badgeText}>{badge > 99 ? "99+" : badge}</Text>
         </View>
       ) : null}
     </View>
