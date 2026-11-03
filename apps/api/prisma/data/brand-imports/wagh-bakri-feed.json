@@ -507,28 +507,32 @@
     "compare_at_price": "205",
     "available": true,
     "featured_image": {
-     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052460_3-wagh-bakri-leaf-tea-mili.jpg"
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/wagh-bakri/wagh-bakri-mili-premium-strong-leaf-tea-500g-bd427cf3.webp"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "430",
+    "compare_at_price": "430",
+    "available": true,
+    "barcode": "8901747000341",
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/wagh-bakri/wagh-bakri-mili-premium-strong-leaf-tea-1kg-725fc93c.webp"
     }
    }
   ],
   "images": [
    {
-    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052460_3-wagh-bakri-leaf-tea-mili.jpg"
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/wagh-bakri/wagh-bakri-mili-premium-strong-leaf-tea-1kg-725fc93c.webp"
    },
    {
-    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052460-2_3-wagh-bakri-leaf-tea-mili.jpg"
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/wagh-bakri/wagh-bakri-mili-premium-strong-leaf-tea-1kg-back-7f04ad3e.webp"
    },
    {
-    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052460-3_1-wagh-bakri-leaf-tea-mili.jpg"
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/wagh-bakri/wagh-bakri-mili-premium-strong-leaf-tea-500g-bd427cf3.webp"
    },
    {
-    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052460-4_1-wagh-bakri-leaf-tea-mili.jpg"
-   },
-   {
-    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052460-5_1-wagh-bakri-leaf-tea-mili.jpg"
-   },
-   {
-    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052460-6_1-wagh-bakri-leaf-tea-mili.jpg"
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/wagh-bakri/wagh-bakri-mili-premium-strong-leaf-tea-500g-back-fcc4712f.webp"
    }
   ],
   "food_type": "VEG",
