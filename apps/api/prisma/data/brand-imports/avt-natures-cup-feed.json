@@ -28,11 +28,15 @@
   "images": [
    {
     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/avt/avt-nature-s-cup-tea-1-1cc1763f.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/avt/avt-nature-s-cup-tea-back-ea7166c6.webp"
    }
   ],
   "food_type": "VEG",
   "details": {
-   "description": "A blend of 100% Assam tea with 7 herbs and spices: ginger, cinnamon, cardamom, cloves, ashwagandha, athimadhuram and pepper."
+   "description": "A blend of 100% Assam tea with 7 herbs and spices: ginger, cinnamon, cardamom, cloves, ashwagandha, athimadhuram and pepper.",
+   "manufacturerName": "Abhishek Tea Products Pvt. Ltd., Coimbatore (marketed by A V Thomas & Co Ltd., Alappuzha)"
   }
  }
 ]
