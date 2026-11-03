@@ -89,6 +89,94 @@
         "Health & Energy Drinks",
         "Glucose & Energy Drinks"
       ]
+    },
+    {
+      "match": "^Snak Up Potato Chips Classic Salted$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Snak Up Potato Chips Cream \\& Onion$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Snak Up Potato Chips Red Chilly Masti$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Snak Up Potato Chips Tomato Ketchup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Snak Up Mini Magic Noodles Biryani Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Snak Up Moong Dal Crackle$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Snak Up Onion Rings$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Snak Up Wheels Chilli Garlic$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Snak Up Twisty Flaming Chilly$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Snak Up Twisty Manchurian$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Snak Up Twisty South Indian Pickle$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
     }
   ]
 }
