@@ -92,6 +92,15 @@
   "body_html": "",
   "variants": [
    {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/avt/avt-premium-ctc-dust-tea-jar-100g-8032dc8b.webp"
+    }
+   },
+   {
     "title": "250g",
     "price": "110",
     "compare_at_price": "110",
@@ -128,6 +137,12 @@
    },
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000306_4-avt-tea-tea-premium.jpg"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/avt/avt-premium-ctc-dust-tea-jar-100g-8032dc8b.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/avt/avt-premium-ctc-dust-tea-jar-100g-side-4d7a26ed.webp"
    }
   ],
   "food_type": "VEG",
