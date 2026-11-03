@@ -1,0 +1,19 @@
+{
+  "brand": "AVT",
+  "manufacturer": "A.V. Thomas Leather & Allied Products Pvt. Ltd., Chennai",
+  "feed": "avt-natures-cup-feed.json",
+  "namePrefix": "AVT ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Nature's Cup Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    }
+  ]
+}

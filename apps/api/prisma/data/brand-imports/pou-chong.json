@@ -1,0 +1,22 @@
+{
+  "brand": "Pou Chong",
+  "manufacturer": "Pou Chong Food Products Pvt. Ltd.",
+  "feed": "pou-chong-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/pou-chong/logo-65dd5896.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#F2C200",
+  "namePrefix": "Pou Chong ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Dark\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Soy Sauce"
+      ]
+    }
+  ]
+}

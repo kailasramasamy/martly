@@ -1,0 +1,94 @@
+{
+  "brand": "Levista",
+  "manufacturer": "SLN Coffee Pvt. Ltd.",
+  "feed": "levista-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/levista/logo-89d80e22.png",
+  "themeColor": "#5B1A1F",
+  "themeColorSecondary": "#C9A24B",
+  "namePrefix": "Levista ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Filter\\ Coffee\\ 80:20$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Filter\\ Coffee\\ 60:40$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Premium\\ Instant\\ Coffee\\ 80:20\\ Pouch$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Premium\\ Instant\\ Coffee\\ 80:20\\ Can$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Strong\\ Instant\\ Coffee\\ 60:40\\ Pouch$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Strong\\ Instant\\ Coffee\\ 60:40\\ Can$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Classic\\ Instant\\ Coffee\\ Pouch$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Classic\\ Pure\\ Instant\\ Coffee\\ Jar$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Classic\\ Cold\\ Coffee\\ Can$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Cold\\ Coffee\\ Can$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    }
+  ]
+}

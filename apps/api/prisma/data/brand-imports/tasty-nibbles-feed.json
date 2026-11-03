@@ -1,0 +1,45 @@
+[
+ {
+  "title": "Synthetic Vinegar",
+  "handle": "synthetic-vinegar",
+  "vendor": "Tasty Nibbles",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224370_2-tasty-nibbles-synthetic-vinegar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224370_2-tasty-nibbles-synthetic-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224370-2_1-tasty-nibbles-synthetic-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224370-3_1-tasty-nibbles-synthetic-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224370-4_1-tasty-nibbles-synthetic-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224370-5_1-tasty-nibbles-synthetic-vinegar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tasty Nibbles Synthetic Vinegar is a mix of water and acetic acid. It is made from the fermentation of grain alcohol. It is a staple in many Asian dishes and is credited to enhance the flavour of dishes. It is a great alternative to regular vinegar and is great for seasoning as well as marinating. This product is free from extra preservatives.",
+   "ingredients": "Water and acetic acid.",
+   "manufacturerName": "HIC-ABF Special Foods Pvt. Ltd",
+   "fssaiLicense": "11319004000039",
+   "countryOfOrigin": "India"
+  }
+ }
+]

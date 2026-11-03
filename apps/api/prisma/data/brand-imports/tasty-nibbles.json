@@ -1,0 +1,19 @@
+{
+  "brand": "Tasty Nibbles",
+  "manufacturer": "HIC-ABF Special Foods Pvt. Ltd.",
+  "feed": "tasty-nibbles-feed.json",
+  "namePrefix": "Tasty Nibbles ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Synthetic\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    }
+  ]
+}

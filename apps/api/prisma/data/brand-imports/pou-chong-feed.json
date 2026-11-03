@@ -1,0 +1,61 @@
+[
+ {
+  "title": "Dark Sauce",
+  "handle": "dark-sauce",
+  "vendor": "Pou Chong",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "700g",
+    "price": "92",
+    "compare_at_price": "92",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076197_3-pou-chong-sauce-dark-soya-bean.jpg"
+    },
+    "barcode": "8906058461331"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076197_3-pou-chong-sauce-dark-soya-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076197-2_2-pou-chong-sauce-dark-soya-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076197-3_2-pou-chong-sauce-dark-soya-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076197-4_2-pou-chong-sauce-dark-soya-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076197-5_2-pou-chong-sauce-dark-soya-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076197-6_1-pou-chong-sauce-dark-soya-bean.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Naturally processed from soya beans, 50% chilli pulp ensures its purity. Made the traditional Chinese way, Pou Chong's dark soya bean sauce is authentically Chinese. Armed with a recipe that's perfected over generations and quality handpicked ingredients, the dark soya sauce has a deeper colour and more body than its contemporaries. A great marinade, the dark soy sauce can render a rich colour to your noodle preparations.",
+   "ingredients": "SUGAR, EDIBLE COMMON SALT, CARAMEL III (INS 260), SOYABEAN SOYABEAN III,CARAMEL IV (INS 150d), ACIDITY REGULATOR (INS 211), INS 224, , WATER, WHEAT, JAGGERY (40%)",
+   "nutritionalInfo": {
+    "Nutrition per": "10g",
+    "Serving Size": "10g",
+    "Energy (Kcal)": "128.93 kcal",
+    "Protein": "3.07g",
+    "Carbohydrates": "29.18 g",
+    "of which added sugar": "20.28 g",
+    "Fat": "4.05 g",
+    "of which Saturated Fat": "< 0.01 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium (mg)": "27698.05 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "countryOfOrigin": "India"
+  }
+ }
+]
