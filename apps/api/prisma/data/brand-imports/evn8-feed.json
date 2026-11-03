@@ -1,0 +1,60 @@
+[
+ {
+  "title": "Jeera Pop",
+  "handle": "jeera-pop",
+  "vendor": "EVN8",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/evn8/evn8-jeera-pop-250ml-97ad330e.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/evn8/evn8-jeera-pop-250ml-97ad330e.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The familiar taste of jeera in a probiotic soda with zero added sugar.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Lemon Zest",
+  "handle": "lemon-zest",
+  "vendor": "EVN8",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/evn8/evn8-lemon-zest-250ml-1fb3d270.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/evn8/evn8-lemon-zest-250ml-1fb3d270.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A zesty burst of lemon in a probiotic soda with zero added sugar.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ }
+]

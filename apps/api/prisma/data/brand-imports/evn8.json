@@ -1,0 +1,19 @@
+{
+  "brand": "EVN8",
+  "manufacturer": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+  "feed": "evn8-feed.json",
+  "namePrefix": "EVN8 ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^(Jeera Pop|Lemon Zest)$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    }
+  ]
+}

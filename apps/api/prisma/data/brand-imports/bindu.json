@@ -1,0 +1,30 @@
+{
+  "brand": "Bindu",
+  "manufacturer": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka",
+  "feed": "bindu-feed.json",
+  "namePrefix": "Bindu ",
+  "foodType": "VEG",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/bindu/logo-src-63baf5d8.png",
+  "themeColor": "#1557B0",
+  "themeColorSecondary": "#4DC3D0",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Fizz Jeera Masala Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Packaged Drinking Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Packaged Drinking Water"
+      ]
+    }
+  ]
+}

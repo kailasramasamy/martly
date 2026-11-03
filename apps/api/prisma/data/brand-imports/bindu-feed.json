@@ -1,0 +1,110 @@
+[
+ {
+  "title": "Fizz Jeera Masala Soda",
+  "handle": "fizz-jeera-masala-soda",
+  "vendor": "Bindu",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "600ml",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-600ml-d7b6633e.webp"
+    },
+    "barcode": "8908000589391"
+   },
+   {
+    "title": "1L",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-1l-8a935f15.webp"
+    },
+    "barcode": "8908000589872"
+   },
+   {
+    "title": "2L",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-2l-e6dd265b.webp"
+    },
+    "barcode": "8908000589889"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-600ml-d7b6633e.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-600ml-back-4ddd52a7.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-1l-8a935f15.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-1l-back-b0cfa312.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-2l-e6dd265b.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-fizz-jeera-masala-soda-2l-back-af2d2479.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bindu Fizz Jeera Masala is a fizzy jeera soda with a tangy, spicy kick. A refreshing drink to enjoy after a meal.",
+   "ingredients": "Purified water, Sugar, Carbon dioxide (E290), Class II Preservatives (E211), Contains permitted synthetic food colours and added flavours",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Energy (kcal)": "47 kcal",
+    "Protein": "0.11 g",
+    "Fat(All Types) (g)": "0.0 g",
+    "Carbohydrate (g)": "11.61 g",
+    "Sugar (g)": "11.6 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "160 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ },
+ {
+  "title": "Packaged Drinking Water",
+  "handle": "packaged-drinking-water",
+  "vendor": "Bindu",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-packaged-drinking-water-1l-3b12ba7e.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/catalog/brands/bindu/bindu-packaged-drinking-water-1l-3b12ba7e.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pure, fresh packaged drinking water from Bindu, with added minerals.",
+   "ingredients": "Treated water, Potassium bicarbonate, Magnesium sulphate",
+   "storageInstructions": "Store in cool, hygienic conditions away from direct sunlight.",
+   "countryOfOrigin": "India",
+   "manufacturerName": "Megha Fruit Processing Pvt Ltd, Narimogeru Village, Puttur Taluk, Dakshina Kannada, Karnataka"
+  }
+ }
+]
