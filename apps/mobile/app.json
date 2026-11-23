@@ -99,13 +99,14 @@
       ],
       "./plugins/with-default-icon-alias",
       "./plugins/with-upi-queries",
+      "./plugins/with-optional-portrait",
       "./plugins/with-release-signing",
       "./plugins/with-notification-color-override",
       "./plugins/with-notification-service-extension"
     ],
     "android": {
       "package": "com.quartex.martly",
-      "versionCode": 5,
+      "versionCode": 6,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0f766e"
