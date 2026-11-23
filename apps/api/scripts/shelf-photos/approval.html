@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Approve products</title>
+<style>
+  :root {
+    --bg: #f8fafc; --surface: #ffffff; --text: #0f172a; --muted: #64748b; --border: #e2e8f0;
+    --primary: #0f766e; --primary-soft: #ccfbf1; --warn: #b45309; --warn-soft: #fef3c7; --danger: #b91c1c; --danger-soft: #fee2e2;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 -apple-system, "Segoe UI", Roboto, "Noto Sans Tamil", sans-serif; }
+  header { position: sticky; top: 0; z-index: 2; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 10px 16px; background: var(--surface); border-bottom: 1px solid var(--border); }
+  h1 { margin: 0; font-size: 17px; }
+  h2 { margin: 0; font-size: 20px; }
+  h3 { margin: 14px 0 4px; font-size: 13px; color: var(--muted); font-weight: 600; }
+  .muted { color: var(--muted); }
+  .spacer { flex: 1; }
+  select, input, button { font: inherit; min-height: 36px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 4px 10px; }
+  button { cursor: pointer; }
+  button:hover { border-color: var(--primary); }
+  button.approve { background: var(--primary); border-color: var(--primary); color: #fff; font-weight: 600; min-width: 130px; }
+  button.reject { color: var(--danger); }
+  main { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 16px; padding: 16px; max-width: 1400px; margin: 0 auto; }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .shot { border: 1px solid var(--border); border-radius: 12px; padding: 8px; }
+  .shot.bad { border-color: var(--danger); }
+  .shot.main { box-shadow: 0 0 0 2px var(--primary); }
+  .pair { display: grid; grid-template-columns: 2fr 1fr; gap: 6px; }
+  .check { background-color: #fff; background-image: linear-gradient(45deg, #e2e8f0 25%, transparent 25%, transparent 75%, #e2e8f0 75%), linear-gradient(45deg, #e2e8f0 25%, transparent 25%, transparent 75%, #e2e8f0 75%); background-size: 16px 16px; background-position: 0 0, 8px 8px; border-radius: 8px; }
+  .pair img { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; cursor: zoom-in; border-radius: 8px; }
+  .orig { background: #f1f5f9; border-radius: 8px; }
+  .tag { display: inline-block; padding: 1px 8px; border-radius: 6px; font-size: 12px; background: var(--primary-soft); color: var(--primary); }
+  .tag.minor_only { background: var(--warn-soft); color: var(--warn); }
+  .tag.fail, .tag.error { background: var(--danger-soft); color: var(--danger); }
+  details { margin-top: 6px; font-size: 12px; }
+  details li { margin-bottom: 3px; }
+  .note { padding: 8px 10px; border-radius: 8px; background: var(--warn-soft); color: var(--warn); margin: 8px 0; }
+  .note.done { background: var(--primary-soft); color: var(--primary); }
+  .note.no { background: var(--danger-soft); color: var(--danger); }
+  .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+  .fields label { display: grid; gap: 2px; font-size: 12px; color: var(--muted); }
+  .fields input { width: 100%; color: var(--text); font-size: 14px; }
+  .fields .wide { grid-column: 1 / -1; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  td { padding: 2px 6px 2px 0; border-bottom: 1px solid var(--border); }
+  .actions { position: sticky; bottom: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px; padding: 10px 0 0; background: var(--surface); }
+  kbd { font: 11px ui-monospace, monospace; padding: 0 4px; border: 1px solid currentColor; border-radius: 4px; opacity: .7; }
+  dialog { border: 0; padding: 0; background: transparent; width: 96vw; height: 96vh; max-width: 96vw; max-height: 96vh; overflow: hidden; }
+  dialog::backdrop { background: rgba(15, 23, 42, .85); }
+  .stage { width: 100%; height: 100%; overflow: hidden; cursor: grab; touch-action: none; }
+  .stage.dragging { cursor: grabbing; }
+  dialog img { display: block; width: 100%; height: 100%; object-fit: contain; transform-origin: 0 0; user-select: none; -webkit-user-drag: none; }
+  .zoomBar { position: absolute; top: 8px; right: 8px; display: flex; gap: 6px; align-items: center; }
+  .zoomBar button { min-width: 44px; min-height: 44px; font-size: 17px; }
+  .zoomBar span { padding: 4px 8px; border-radius: 6px; background: var(--surface); color: var(--text); font-size: 13px; }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; padding: 16px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Approve products</h1>
+  <span class="muted" id="stats"></span>
+  <span class="spacer"></span>
+  <select id="filter" aria-label="Which products to show">
+    <option value="pending">Waiting for you</option>
+    <option value="flagged">Waiting, with flagged images</option>
+    <option value="held">Saved, approve later</option>
+    <option value="commented">With my image comments</option>
+    <option value="approved">Approved</option>
+    <option value="rejected">Rejected</option>
+    <option value="all">All</option>
+  </select>
+  <button id="prev" aria-label="Previous product">←</button>
+  <span id="position" class="muted"></span>
+  <button id="next" aria-label="Next product">→</button>
+</header>
+<main id="view"></main>
+<dialog id="zoom">
+  <div class="stage" id="stage"><img id="zoomImg" alt="Full size image" draggable="false"></div>
+  <div class="zoomBar">
+    <span id="zoomLevel">100%</span>
+    <button data-zoom-by="0.67" aria-label="Zoom out">−</button>
+    <button data-zoom-by="1.5" aria-label="Zoom in">+</button>
+    <button data-zoom-reset aria-label="Fit to screen">Fit</button>
+    <button data-zoom-close aria-label="Close">✕</button>
+  </div>
+</dialog>
+<script>
+let saving = false, products = [], decisions = {}, hidden = {}, crops = [], comments = {}, shown = [], current = 0;
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const preview = (file) => `/photo/${encodeURIComponent(file.replace(/\.(heic|jpe?g)$/i, ".jpg"))}`;
+const flagged = (p) => p.shots.some((s) => s.verdict === "fail" || !s.image);
+const ready = (p) => p.label && p.tamil && (p.existing || p.photos.every((f) => p.shots.some((s) => s.file === f)));
+
+function matches(p, filter) {
+  const status = decisions[p.id]?.status;
+  if (filter === "all") return true;
+  if (filter === "commented") return Boolean(comments[p.id]);
+  if (filter === "approved" || filter === "rejected" || filter === "held") return status === filter;
+  return !status && (filter === "pending" || flagged(p));
+}
+
+function refilter(keepId) {
+  shown = products.filter(ready).filter((p) => matches(p, $("filter").value));
+  const at = shown.findIndex((p) => p.id === keepId);
+  current = at >= 0 ? at : Math.min(current, Math.max(shown.length - 1, 0));
+  render();
+}
+
+function patchTag(p, shot, file) {
+  const log = hidden[shot?.image];
+  if (!log?.blocks) return "";
+  return log.busyBackground || file === p.main ? `<span class="tag minor_only">Check hidden patch</span>` : "";
+}
+
+function mrpCrops(p) {
+  const found = crops.filter((name) => name.startsWith(`${p.id}-`));
+  return found.map((name) => `<img src="/mrp-crop/${encodeURIComponent(name)}" alt="Price on the original photo" data-zoom style="display:block;max-width:100%;max-height:120px;margin-top:6px;border-radius:6px">`).join("");
+}
+
+function mrpNote(label) {
+  const check = label.mrpCheck;
+  if (!check) return "";
+  if (check.cropMrp != null) return `<div class="${check.conflict ? "note" : "muted"}">Close-up reads ₹${esc(check.cropMrp)}${check.conflict ? ", earlier readings differed" : ""}. Printed: “${esc(check.cropText)}”</div>`;
+  if (check.conflict) return `<div class="note">Two readings differ: ₹${esc(label.printedMrp)} and ₹${esc(check.mrp)}. Printed: “${esc(check.printedText)}”</div>`;
+  return check.printedText ? `<div class="muted">Printed on the pack: “${esc(check.printedText)}”</div>` : "";
+}
+
+function shotCard(p, file) {
+  const shot = p.shots.find((s) => s.file === file);
+  const verdict = p.existing ? null : shot?.image ? shot.verdict : "error";
+  const words = { pass: "Text matches", minor_only: "Minor differences", fail: "Check text", error: "No image" };
+  const list = (shot?.differences ?? []).map((d) => `<li>${esc(d)}</li>`).join("");
+  return `<div class="shot ${verdict === "fail" || verdict === "error" ? "bad" : ""} ${file === p.main ? "main" : ""}">
+    <div class="pair">
+      ${shot?.image ? `<div class="check"><img src="/rendered/${encodeURIComponent(shot.image)}" alt="Clean image" data-zoom data-check="1"></div>` : `<div class="orig"></div>`}
+      <div class="orig"><img loading="lazy" src="${preview(file)}" alt="Original photo" data-zoom data-full="/photo-full/${encodeURIComponent(file)}"></div>
+    </div>
+    <div style="margin-top:6px">${verdict ? `<span class="tag ${verdict}">${words[verdict]}</span>` : ""} ${patchTag(p, shot, file)} <span class="muted">${esc(file.replace(/^IMG_|\.heic$/gi, ""))}${file === p.main ? " · main" : ""}</span></div>
+    ${shot?.error ? `<div class="muted">${esc(shot.error)}</div>` : ""}
+    <textarea data-comment data-id="${esc(p.id)}" data-file="${esc(file)}" rows="2" placeholder="What's wrong with this image?" aria-label="Comment on this image" style="width:100%;margin-top:6px;font:inherit;${comments[p.id]?.[file] ? "border:2px solid var(--danger);" : ""}">${esc(comments[p.id]?.[file] ?? "")}</textarea>
+    ${list ? `<details><summary>${shot.differences.length} difference${shot.differences.length === 1 ? "" : "s"}</summary><ul style="margin:4px 0;padding-left:18px">${list}</ul></details>` : ""}
+  </div>`;
+}
+
+function statusNote(p) {
+  const d = decisions[p.id];
+  const notes = [];
+  if (d?.status === "approved") notes.push(`<div class="note done">Approved</div>`);
+  if (d?.status === "rejected") notes.push(`<div class="note no">Rejected</div>`);
+  if (d?.status === "held") notes.push(`<div class="note">Saved, approve later</div>`);
+  if (p.existing) notes.push(`<div class="note">Already in the master catalog as “${esc(p.existing.name)}”. Approving only lists it at both stores.</div>`);
+  if (p.barcodeTaken) notes.push(`<div class="note">This barcode is used by another store's own product.</div>`);
+  if (!p.classification?.subcategoryId) notes.push(`<div class="note">No aisle found.</div>`);
+  return notes.join("");
+}
+
+const nutritionLines = (rows) => rows.map((n) => `${n.name}: ${n.value}`).join("\n");
+
+function tamilLines(p) {
+  const t = p.tamil, d = decisions[p.id] ?? {};
+  const edited = d.ingredients !== undefined || d.nutrition !== undefined;
+  if (edited) return `<div class="muted">Tamil is redone for your edits when this is published.</div>`;
+  const names = p.label.nutrition.map((n, i) => `${t.nutrientNames[i] ?? ""}: ${n.value}`).join(" · ");
+  return `${t.ingredients ? `<div lang="ta" class="muted">${esc(t.ingredients)}</div>` : ""}${names ? `<div lang="ta" class="muted">${esc(names)}</div>` : ""}`;
+}
+
+function detailsPanel(p) {
+  const l = p.label, c = p.classification ?? {}, t = p.tamil, d = decisions[p.id] ?? {};
+  const mrp = d.mrp ?? l.printedMrp ?? "", price = d.sellingPrice ?? l.printedMrp ?? "";
+  return `<h2>${esc(d.name ?? l.name)}</h2>
+    <div lang="ta">${esc(t.name)}</div>
+    <div class="muted">${esc(c.brand?.name ?? `New brand: ${l.brand ?? "none"}`)} · ${esc(c.subcategoryPath ?? "No aisle")}${l.barcode ? ` · ${esc(l.barcode)}` : ""}</div>
+    ${statusNote(p)}
+    <div class="fields">
+      <label class="wide">Name<input id="f-name" value="${esc(d.name ?? l.name)}"></label>
+      <label>Size<input id="f-size" value="${esc(d.variantName ?? l.variantName)}"></label>
+      <label>MRP (₹)${l.printedMrp ? "" : " not readable, type it"}<input id="f-mrp" type="number" min="0" step="0.5" value="${esc(mrp)}"></label>
+      ${mrpNote(l)}
+      ${mrpCrops(p)}
+      <label>Selling price (₹)<input id="f-price" type="number" min="0" step="0.5" value="${esc(price)}"></label>
+    </div>
+    <h3>Description</h3><div>${esc(l.description)}</div><div lang="ta" class="muted">${esc(t.description)}</div>
+    <h3>Ingredients${l.ingredients ? "" : " (not read)"}</h3><textarea id="f-ingredients" rows="4" style="width:100%;font:inherit">${esc(d.ingredients ?? l.ingredients ?? "")}</textarea>
+    <h3>Nutrition${l.nutrition.length ? "" : " (not read)"}: paste it in any form, it's tidied when you save</h3><textarea id="f-nutrition" rows="8" style="width:100%;font:inherit">${esc(nutritionLines(d.nutrition ?? l.nutrition))}</textarea>
+    ${tamilLines(p)}
+    <h3>Other</h3><div class="muted">FSSAI ${esc(l.fssaiLicense ?? "not read")} · ${esc(l.foodType ?? "no veg mark")} · ${esc(l.manufacturerName ?? "maker not read")}</div>
+    <div class="actions">
+      <button class="approve" data-decide="approved">Approve <kbd>A</kbd></button>
+      <button data-decide="held">Save, approve later <kbd>H</kbd></button>
+      <button class="reject" data-decide="rejected">Reject <kbd>X</kbd></button>
+      ${d.status ? `<button data-decide="clear">Undo</button>` : ""}
+      <span class="muted" id="msg"></span>
+    </div>`;
+}
+
+function render() {
+  const total = products.filter(ready).length;
+  const approved = Object.values(decisions).filter((d) => d.status === "approved").length;
+  const rejected = Object.values(decisions).filter((d) => d.status === "rejected").length;
+  $("stats").textContent = `${total} ready${products.length > total ? ` of ${products.length}` : ""} · ${approved} approved · ${rejected} rejected`;
+  $("position").textContent = shown.length ? `${current + 1} / ${shown.length}` : "0 / 0";
+  const p = shown[current];
+  if (!p) {
+    $("view").innerHTML = `<div class="panel" style="grid-column:1/-1">Nothing here. Change the filter, or reload once more products have finished.</div>`;
+    return;
+  }
+  const photos = [p.main, ...p.photos.filter((f) => f !== p.main)];
+  $("view").innerHTML = `<section class="panel"><div class="shots">${photos.map((f) => shotCard(p, f)).join("")}</div></section><section class="panel">${detailsPanel(p)}</section>`;
+  window.scrollTo(0, 0);
+}
+
+async function decide(kind) {
+  const p = shown[current];
+  if (!p) return;
+  if (saving) return;
+  const nutritionText = kind === "clear" ? "" : $("f-nutrition").value.trim();
+  const previous = decisions[p.id]?.nutrition;
+  const unchanged = nutritionText === nutritionLines(previous ?? p.label.nutrition);
+  const ingredients = kind === "clear" ? "" : $("f-ingredients").value.trim();
+  const decision = kind === "clear" ? null : {
+    status: kind,
+    mrp: Number($("f-mrp").value) || undefined,
+    sellingPrice: Number($("f-price").value) || undefined,
+    name: $("f-name").value.trim() || undefined,
+    variantName: $("f-size").value.trim() || undefined,
+    ingredients: ingredients === (p.label.ingredients ?? "") ? undefined : ingredients,
+    nutrition: unchanged ? previous : undefined,
+    nutritionText: unchanged || nutritionText === nutritionLines(p.label.nutrition) ? undefined : nutritionText,
+  };
+  saving = true;
+  if (decision?.nutritionText !== undefined) $("msg").textContent = "Tidying the nutrition text…";
+  const res = await fetch("/api/decision", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ id: p.id, decision }) });
+  saving = false;
+  const answer = await res.json();
+  if (!res.ok) {
+    $("msg").textContent = answer.error;
+    return;
+  }
+  if (answer.decision) decisions[p.id] = answer.decision;
+  else delete decisions[p.id];
+  const stayOn = kind === "clear" ? p.id : shown[current + 1]?.id;
+  refilter(stayOn);
+}
+
+function move(by) {
+  current = Math.max(0, Math.min(shown.length - 1, current + by));
+  render();
+}
+
+async function saveComment(box) {
+  const { id, file } = box.dataset, text = box.value.trim();
+  const res = await fetch("/api/comment", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ id, file, text }) });
+  if (!res.ok) {
+    $("msg").textContent = `Comment not saved: ${(await res.json()).error}`;
+    return;
+  }
+  const forProduct = { ...comments[id], [file]: text };
+  if (!text) delete forProduct[file];
+  if (Object.keys(forProduct).length) comments[id] = forProduct;
+  else delete comments[id];
+  box.style.border = text ? "2px solid var(--danger)" : "";
+}
+
+const MAX_ZOOM = 10;
+const view = { scale: 1, x: 0, y: 0 };
+
+function applyZoom() {
+  const { clientWidth: w, clientHeight: h } = $("stage");
+  view.x = Math.min(0, Math.max(view.x, w - w * view.scale));
+  view.y = Math.min(0, Math.max(view.y, h - h * view.scale));
+  $("zoomImg").style.transform = `translate(${view.x}px, ${view.y}px) scale(${view.scale})`;
+  $("zoomLevel").textContent = `${Math.round(view.scale * 100)}%`;
+}
+
+function resetZoom() {
+  Object.assign(view, { scale: 1, x: 0, y: 0 });
+  applyZoom();
+}
+
+/** Keeps the point under (px, py) where it is, so zooming follows the cursor */
+function zoomAround(factor, px, py) {
+  const scale = Math.min(MAX_ZOOM, Math.max(1, view.scale * factor));
+  view.x = px - ((px - view.x) / view.scale) * scale;
+  view.y = py - ((py - view.y) / view.scale) * scale;
+  view.scale = scale;
+  applyZoom();
+}
+
+/** Shows the small version at once, then swaps in the full-size original when it has loaded */
+function openZoom(source) {
+  const img = $("zoomImg");
+  img.src = source.src;
+  img.className = source.dataset.check ? "check" : "";
+  $("zoom").showModal();
+  resetZoom();
+  if (!source.dataset.full) return;
+  const full = new Image();
+  full.onload = () => { if ($("zoom").open && img.src === source.src) img.src = full.src; };
+  full.src = source.dataset.full;
+}
+
+$("stage").addEventListener("wheel", (event) => {
+  event.preventDefault();
+  const box = $("stage").getBoundingClientRect();
+  zoomAround(Math.exp(-event.deltaY * (event.ctrlKey ? 0.01 : 0.002)), event.clientX - box.left, event.clientY - box.top);
+}, { passive: false });
+
+$("stage").addEventListener("dblclick", (event) => {
+  const box = $("stage").getBoundingClientRect();
+  if (view.scale > 1) resetZoom();
+  else zoomAround(3, event.clientX - box.left, event.clientY - box.top);
+});
+
+let drag = null;
+$("stage").addEventListener("pointerdown", (event) => {
+  drag = { x: event.clientX - view.x, y: event.clientY - view.y };
+  $("stage").setPointerCapture(event.pointerId);
+  $("stage").classList.add("dragging");
+});
+$("stage").addEventListener("pointermove", (event) => {
+  if (!drag) return;
+  view.x = event.clientX - drag.x;
+  view.y = event.clientY - drag.y;
+  applyZoom();
+});
+for (const name of ["pointerup", "pointercancel"]) {
+  $("stage").addEventListener(name, () => {
+    drag = null;
+    $("stage").classList.remove("dragging");
+  });
+}
+
+document.addEventListener("change", (event) => {
+  if (event.target.matches("[data-comment]")) saveComment(event.target);
+});
+
+document.addEventListener("click", (event) => {
+  const zoom = event.target.closest("[data-zoom]");
+  if (zoom) return openZoom(zoom);
+  const by = event.target.closest("[data-zoom-by]");
+  if (by) return zoomAround(Number(by.dataset.zoomBy), $("stage").clientWidth / 2, $("stage").clientHeight / 2);
+  if (event.target.closest("[data-zoom-reset]")) return resetZoom();
+  if (event.target.closest("[data-zoom-close]") || event.target === $("zoom")) return $("zoom").close();
+  const button = event.target.closest("[data-decide]");
+  if (button) decide(button.dataset.decide);
+});
+document.addEventListener("keydown", (event) => {
+  if ($("zoom").open) {
+    const mid = [$("stage").clientWidth / 2, $("stage").clientHeight / 2];
+    if (event.key === "+" || event.key === "=") zoomAround(1.5, ...mid);
+    if (event.key === "-") zoomAround(0.67, ...mid);
+    if (event.key === "0") resetZoom();
+    return;
+  }
+  if (event.target.matches("input, select, textarea")) return;
+  if (event.key === "a") decide("approved");
+  if (event.key === "x") decide("rejected");
+  if (event.key === "h") decide("held");
+  if (event.key === "ArrowRight") move(1);
+  if (event.key === "ArrowLeft") move(-1);
+});
+$("prev").addEventListener("click", () => move(-1));
+$("next").addEventListener("click", () => move(1));
+$("filter").addEventListener("change", () => { current = 0; refilter(); });
+
+fetch("/api/products").then((r) => r.json()).then((data) => {
+  products = data.products;
+  decisions = data.decisions;
+  hidden = data.hidden;
+  crops = data.crops;
+  comments = data.comments;
+  refilter();
+});
+</script>
+</body>
+</html>
