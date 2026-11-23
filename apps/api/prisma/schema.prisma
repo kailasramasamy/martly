@@ -194,6 +194,17 @@ enum PromoStatus {
   DISCARDED
 }
 
+enum CatalogDraftKind {
+  PACK
+  ITEM
+}
+
+enum ItemShape {
+  ROUND
+  BOX
+  FLAT
+}
+
 enum CatalogDraftStatus {
   QUEUED
   PROCESSING
@@ -1008,6 +1019,19 @@ model ProductVariant {
   imageUrl  String?  @map("image_url")
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
+
+  /// Size of an unpacked item such as a vessel or a mat, in mm; display text comes from @martly/shared/item-size
+  shape              ItemShape? @map("shape")
+  lengthMm           Int?       @map("length_mm")
+  widthMm            Int?       @map("width_mm")
+  heightMm           Int?       @map("height_mm")
+  topDiameterMm      Int?       @map("top_diameter_mm")
+  baseDiameterMm     Int?       @map("base_diameter_mm")
+  capacityMl         Int?       @map("capacity_ml")
+  /// True when capacity is worked out from the outer size, false when it was read off the item
+  capacityIsEstimate Boolean    @default(false) @map("capacity_is_estimate")
+  /// The size image in the gallery: sizes marked on a cleaned photo, or a line drawing if that can't be done
+  sketchUrl          String?    @map("sketch_url")
 
   discountType  DiscountType? @map("discount_type")
   discountValue Decimal?      @map("discount_value") @db.Decimal(10, 2)
@@ -2528,6 +2552,9 @@ model CatalogDraft {
   storeId         String             @map("store_id")
   createdById     String             @map("created_by_id")
   status          CatalogDraftStatus @default(QUEUED)
+  kind            CatalogDraftKind   @default(PACK)
+  // ITEM drafts: the app's reading next to the size staff confirmed, its fit and warnings, and the item's outline
+  measurement     Json?
   hintName        String?            @map("hint_name")
   mrp             Decimal            @db.Decimal(10, 2)
   sellingPrice    Decimal            @map("selling_price") @db.Decimal(10, 2)

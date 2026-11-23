@@ -11,7 +11,7 @@ import { Button } from "../ui/Button";
 import { SectionCard } from "../ui/SectionCard";
 import { TextField } from "../ui/TextField";
 import { manage } from "../ui/tokens";
-import { ListingsNotice } from "./ListingsNotice";
+import { ListingsNotice, useListingsGate } from "./ListingsNotice";
 import { PhotoStrip } from "./PhotoStrip";
 import { MAX_PHOTOS, useCapturePhotos } from "./use-capture-photos";
 import { useCaptureForm } from "./use-capture-form";
@@ -31,6 +31,7 @@ export function CaptureScreen() {
   const { storeId, picker } = useStoreScope({ required: true, placeholder: "Choose a store" });
   const photos = useCapturePhotos();
   const form = useCaptureForm();
+  const listings = useListingsGate();
   const { run, running } = useAction();
   const [sent, setSent] = useState(0);
   const full = photos.photos.length >= MAX_PHOTOS;
@@ -48,9 +49,10 @@ export function CaptureScreen() {
     photos.reset();
     form.reset();
     setSent((n) => n + 1);
+    listings.reload();
   };
 
-  const canSubmit = !!storeId && photos.ready && form.valid;
+  const canSubmit = !listings.blocked && !!storeId && photos.ready && form.valid;
 
   return (
     <ManageStackScreen
@@ -59,7 +61,8 @@ export function CaptureScreen() {
     >
       {sent > 0 && <QueueLink count={sent} onPress={() => router.push("/manage/catalog-drafts")} />}
       {picker}
-      <ListingsNotice />
+      <ListingsNotice left={listings.left} waiting={listings.waiting} />
+      {!listings.blocked && <>
       <SectionCard title={`Photos (${photos.photos.length}/${MAX_PHOTOS})`}>
         <Text style={styles.hint}>Start with the front of the pack, then the back, sides and nutrition panel. Hold the phone level with the pack, straight on, not from above.</Text>
         <PhotoStrip photos={photos.photos} onRemove={photos.remove} onRetry={photos.retry} />
@@ -74,6 +77,7 @@ export function CaptureScreen() {
         <TextField label="Selling price" required prefix={"₹"} keyboardType="decimal-pad" value={form.price} onChangeText={form.setPrice} error={form.priceError} />
         <TextField label="Stock" keyboardType="number-pad" value={form.stock} onChangeText={form.setStock} placeholder="Optional" error={form.stockError} />
       </SectionCard>
+      </>}
     </ManageStackScreen>
   );
 }

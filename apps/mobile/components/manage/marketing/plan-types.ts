@@ -5,7 +5,7 @@ export interface Entitlements {
   period: { startsAt: string; endsAt: string } | null;
   paidThrough: string | null;
   promotions: { planUsed: number; planTotal: number; planLeft: number; topUpBalance: number; resetsAt: string | null };
-  listings: { included: number; used: number; planLeft: number; extraBalance: number; unlimited: boolean };
+  listings: { included: number; used: number; planLeft: number; extraBalance: number; unlimited: boolean; queued: number };
   pushIncluded: boolean;
   onPaidPlan: boolean;
   /** The org's stores on martlyshop.in now; empty on Free */

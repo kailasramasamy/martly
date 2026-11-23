@@ -1,3 +1,5 @@
+import type { ItemSize } from "../item-size/index.js";
+
 // ── API Response Envelope ─────────────────────────────
 export interface ApiResponse<T> {
   success: boolean;
@@ -182,6 +184,7 @@ export interface PromoSummary {
 
 export interface CatalogDraftSummary {
   id: string;
+  kind: "PACK" | "ITEM";
   status: "QUEUED" | "PROCESSING" | "NEEDS_REVIEW" | "PUBLISHED" | "DUPLICATE" | "FAILED" | "DISCARDED";
   storeId: string;
   storeName: string;
@@ -250,6 +253,13 @@ export interface CatalogDraftSize {
   stock: number | null;
 }
 
+export interface CatalogDraftItem extends ItemSize {
+  capacityMl: number | null;
+  capacityIsEstimate: boolean;
+  sketchUrl: string | null;
+  material: string | null;
+}
+
 export interface CatalogDraftDetail extends CatalogDraftSummary {
   hintName: string | null;
   shots: CatalogDraftShot[];
@@ -261,6 +271,8 @@ export interface CatalogDraftDetail extends CatalogDraftSummary {
   barcodeTaken: boolean;
   /** The published product's sizes and their listing in the draft's store */
   sizes: CatalogDraftSize[];
+  /** Unpacked items: the size, capacity and sketch that go on the variant */
+  item: CatalogDraftItem | null;
   usage: { step: string; model: string; inputTokens: number; outputTokens: number; usd: number }[];
 }
 

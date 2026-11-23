@@ -31,6 +31,7 @@ import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ProductList } from "../../components/ProductList";
 import { VariantBottomSheet } from "../../components/VariantBottomSheet";
+import { ProductSize } from "../../components/ProductSize";
 import { OwnerRecommends } from "../../components/store-voice/OwnerRecommends";
 import { BrandChip, BrandStoreBanner } from "../../components/BrandPromo";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
@@ -539,6 +540,8 @@ export default function ProductDetailScreen() {
               </View>
             </View>
           )}
+
+          <ProductSize variant={selectedSp?.variant} />
 
           {/* Ingredients */}
           {ingredients && (

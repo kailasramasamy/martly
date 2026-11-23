@@ -50,6 +50,15 @@ export interface Variant {
   unitValue: string;
   mrp: number | null;
   imageUrl: string | null;
+  /** Set for unpacked items; packed products have only `name` for size */
+  shape?: "ROUND" | "BOX" | "FLAT" | null;
+  lengthMm?: number | null;
+  widthMm?: number | null;
+  heightMm?: number | null;
+  topDiameterMm?: number | null;
+  baseDiameterMm?: number | null;
+  capacityMl?: number | null;
+  capacityIsEstimate?: boolean;
 }
 
 export interface Pricing {

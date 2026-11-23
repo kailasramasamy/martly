@@ -15,7 +15,8 @@
     "pet-care": "a steel pet bowl filled with dry kibble, a rope chew toy, and a bone-shaped dog biscuit",
     "pooja-festivals": "a lit brass diya, a small heap of orange marigold flowers, a few incense sticks, and a small brass bowl of red kumkum",
     "snacks-packaged-foods": "a small bowl of golden potato chips, a heap of spicy namkeen mixture, a few round biscuits, and two pieces of a chocolate bar",
-    "stationery-general-merchandise": "a blank spiral notebook, a yellow pencil, a ballpoint pen, two plain unlabeled AA batteries, and a pair of scissors"
+    "stationery-general-merchandise": "a blank spiral notebook, a yellow pencil, a ballpoint pen, two plain unlabeled AA batteries, and a pair of scissors",
+    "kitchenware-home-needs": "a shiny stainless steel tumbler, a small steel lidded container, a bright blue plastic bucket, and a folded coir door mat"
   },
   "category": {
     "baby-accessories": "a baby feeding bottle, a pastel pacifier, a soft cotton bib, and a small colourful baby rattle",
@@ -104,7 +105,11 @@
     "sweets-mithai": "a small brass plate holding a few round yellow besan laddoos with a visibly grainy texture, a couple of kaju katli diamonds with silver leaf, and two dark brown gulab jamuns glistening with syrup in a small steel bowl",
     "batteries-electricals": "two plain unlabeled AA batteries, an LED bulb, and a small multi-plug extension socket",
     "kitchen-accessories": "a steel ladle, a wooden spatula, a small steel kadai, and a vegetable peeler",
-    "stationery": "a blank spiral notebook, a yellow pencil, a ballpoint pen, an eraser, and a ruler"
+    "stationery": "a blank spiral notebook, a yellow pencil, a ballpoint pen, an eraser, and a ruler",
+    "steel-vessels": "a stack of two shiny stainless steel cooking vessels with a lidded steel container and a steel tumbler beside them",
+    "cutlery": "a fan of plain stainless steel spoons, forks and a serving ladle",
+    "plastic-household": "a bright blue plastic bucket, a green plastic mug and a small orange plastic basket",
+    "mats": "a rolled coir door mat and a folded pastel striped cotton floor mat"
   },
   "subcategory": {
     "air-fresheners-repellents-air-freshener-gel-block": "a round plain unlabeled lavender-purple gel air freshener tub and a small teal scented block with a decorative grille lid, side by side",
@@ -562,6 +567,17 @@
     "water-mineral-water": "a clear plastic bottle of mineral water with a plain unlabeled blue wrap and cap, and a glass of water with a green mountain-leaf sprig beside it",
     "water-packaged-drinking-water": "two plain unlabeled clear bottles of drinking water with blue caps and a glass filled with water and condensation drops",
     "pooja-essentials-matches": "a few small plain unbranded cardboard matchboxes, one half open showing wooden matchsticks with red heads, and one lit matchstick with a small flame, beside a small brass diya",
-    "air-fresheners-repellents-mosquito-racquet": "a plain unbranded white and purple rechargeable electric mosquito racquet with a fine metal mesh head and a small glowing LED on the handle, lying at a slight angle"
+    "air-fresheners-repellents-mosquito-racquet": "a plain unbranded white and purple rechargeable electric mosquito racquet with a fine metal mesh head and a small glowing LED on the handle, lying at a slight angle",
+    "steel-vessels-dabbas-containers": "three plain stainless steel round dabbas with lids in different sizes, stacked",
+    "steel-vessels-cooking-vessels": "a plain stainless steel cooking pot with lid and a smaller steel patila beside it",
+    "steel-vessels-plates-bowls": "a plain stainless steel dinner plate with two small steel bowls on it",
+    "steel-vessels-tumblers-glasses": "two plain stainless steel tumblers and a South Indian steel davara tumbler set",
+    "cutlery-spoons": "four plain stainless steel spoons fanned out, tea spoons and table spoons",
+    "cutlery-ladles-serving": "a plain stainless steel ladle and a slotted steel serving spoon with long handles",
+    "plastic-household-buckets-mugs": "a bright blue plastic bucket with a handle and a matching plastic bath mug",
+    "plastic-household-tubs-baskets": "a round green plastic washing tub and an orange ventilated plastic basket",
+    "plastic-household-storage-containers": "three clear plastic kitchen storage containers with teal lids, empty, stacked",
+    "mats-door-mats": "a plain natural coir door mat with no writing, seen at a slight angle",
+    "mats-floor-bath-mats": "a folded pastel striped cotton floor mat and a soft teal bath mat"
   }
 }

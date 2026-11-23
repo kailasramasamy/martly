@@ -1,6 +1,7 @@
 import type { ApproveCatalogDraftInput, CatalogDraftSizeInput } from "@martly/shared/schemas";
 import type { Prisma, PrismaClient } from "../../../generated/prisma/client.js";
 import type { Label } from "./extract.js";
+import { itemGallery, type ItemFacts } from "./describe-item.js";
 import type { ProcessedShot } from "./images.js";
 import type { Classification } from "./match.js";
 import { uniqueBrandSlug } from "../brands.js";
@@ -13,6 +14,8 @@ export interface Proposal {
   classification: Classification;
   // EAN already used by another organisation's product: the new variant is created without it
   barcodeTaken: boolean;
+  // Unpacked items only: the size, capacity and sketch that go on the variant
+  item?: ItemFacts;
 }
 
 export interface DraftForPublish {
@@ -62,15 +65,19 @@ function nutritionMap(label: Label) {
   return Object.fromEntries(label.nutrition.map((n) => [n.name, n.value]));
 }
 
+const frontShot = (label: Proposal["label"], shots: ProcessedShot[]) =>
+  shots.find((s) => label.shots.find((r) => r.index === s.index)?.role === "front") ?? shots[0];
+
 function productData(draft: DraftForPublish, p: Proposal, shots: ProcessedShot[], edits: ApproveCatalogDraftInput, brandId: string | null) {
   const { label, classification } = p;
-  const front = shots.find((s) => label.shots.find((r) => r.index === s.index)?.role === "front") ?? shots[0];
+  const front = frontShot(label, shots);
+  const images = p.item ? itemGallery(label, shots, p.item.sketchUrl, p.item.legendUrls) : shots.map((s) => s.url);
   return {
     organizationId: draft.organizationId,
     name: edits.name ?? label.name,
     description: edits.description ?? label.description,
     imageUrl: front?.url ?? null,
-    images: shots.map((s) => s.url),
+    images,
     subcategoryId: edits.subcategoryId ?? classification.subcategoryId,
     brandId,
     tags: label.tags,
@@ -102,7 +109,7 @@ async function resolveBrandId(tx: Tx, p: Proposal, edits: ApproveCatalogDraftInp
 }
 
 /** Creates the org's product, its variants and this store's listings in one transaction, and closes the draft */
-export async function publishNew(prisma: PrismaClient, draft: DraftForPublish, p: Proposal, shots: ProcessedShot[], edits: ApproveCatalogDraftInput = {}) {
+export async function publishNew(prisma: PrismaClient, draft: DraftForPublish, p: Proposal, shots: ProcessedShot[], edits: ApproveCatalogDraftInput = {}, freeListing = false) {
   return prisma.$transaction(async (tx) => {
     const brandId = await resolveBrandId(tx, p, edits, draft.organizationId);
     const mrp = edits.mrp ?? Number(draft.mrp);
@@ -117,13 +124,14 @@ export async function publishNew(prisma: PrismaClient, draft: DraftForPublish, p
             mrp,
             sku: skuBase(draft.id),
             barcode: p.barcodeTaken ? null : p.label.barcode,
-            imageUrl: shots[0]?.url ?? null,
+            imageUrl: (p.item ? frontShot(p.label, shots) : shots[0])?.url ?? null,
+            ...p.item?.variant,
           },
         },
       },
       select: { id: true, variants: { select: { id: true } } },
     });
-    await chargeListing(tx, draft.organizationId, product.id);
+    if (!freeListing) await chargeListing(tx, draft.organizationId, product.id);
     const listing = await tx.storeProduct.create({
       data: {
         storeId: draft.storeId, productId: product.id, variantId: product.variants[0].id,

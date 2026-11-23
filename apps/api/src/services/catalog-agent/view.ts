@@ -23,7 +23,8 @@ const proposalOf = (row: DraftRow) => row.extracted as unknown as Proposal | nul
 const shotsOf = (row: DraftRow) => row.processedImages as unknown as ProcessedShot[];
 const usageOf = (row: DraftRow) => row.usage as unknown as UsageEntry[];
 
-export function toSummary(row: DraftRow): CatalogDraftSummary {
+/** Processing cost is Martly's business: anyone else gets zero, not a missing field, because older app builds format it */
+export function toSummary(row: DraftRow, showCost: boolean): CatalogDraftSummary {
   const label = proposalOf(row)?.label;
   const front = shotsOf(row).sort((a, b) => a.index - b.index)[0];
   return {
@@ -35,6 +36,7 @@ export function toSummary(row: DraftRow): CatalogDraftSummary {
     variantName: label?.variantName ?? null,
     thumbnailUrl: front?.url ?? row.photos[0],
     photoCount: row.photos.length,
+    kind: row.kind,
     mrp: Number(row.mrp),
     sellingPrice: Number(row.sellingPrice),
     stock: row.stock,
@@ -43,7 +45,7 @@ export function toSummary(row: DraftRow): CatalogDraftSummary {
     productId: row.productId,
     matchedExisting: row.matchedExisting,
     createdByName: row.createdBy.name,
-    costUsd: Math.round(usageOf(row).reduce((sum, u) => sum + u.usd, 0) * 10000) / 10000,
+    costUsd: showCost ? Math.round(usageOf(row).reduce((sum, u) => sum + u.usd, 0) * 10000) / 10000 : 0,
     createdAt: row.createdAt.toISOString(),
   };
 }
@@ -55,7 +57,7 @@ function sizesOf(row: DraftRow): CatalogDraftSize[] {
   });
 }
 
-export function toDetail(row: DraftRow): CatalogDraftDetail {
+export function toDetail(row: DraftRow, showCost: boolean): CatalogDraftDetail {
   const proposal = proposalOf(row);
   const processed = shotsOf(row);
   const c = proposal?.classification;
@@ -72,7 +74,7 @@ export function toDetail(row: DraftRow): CatalogDraftDetail {
     };
   });
   return {
-    ...toSummary(row),
+    ...toSummary(row, showCost),
     hintName: row.hintName,
     shots,
     label: proposal?.label ?? null,
@@ -82,6 +84,7 @@ export function toDetail(row: DraftRow): CatalogDraftDetail {
     subcategoryConfidence: c?.subcategoryConfidence ?? null,
     barcodeTaken: proposal?.barcodeTaken ?? false,
     sizes: sizesOf(row),
-    usage: usageOf(row),
+    item: proposal?.item ? { ...proposal.item.variant, material: proposal.item.material } : null,
+    usage: showCost ? usageOf(row) : [],
   };
 }

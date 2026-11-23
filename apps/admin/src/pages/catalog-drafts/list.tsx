@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { List } from "@refinedev/antd";
-import { useNavigation } from "@refinedev/core";
+import { useGetIdentity, useNavigation } from "@refinedev/core";
 import { Image, Select, Space, Table, Tag, Typography, theme } from "antd";
 import type { TablePaginationConfig } from "antd";
 import dayjs from "dayjs";
@@ -72,6 +72,7 @@ function DraftIssue({ draft }: { draft: CatalogDraftSummary }) {
 }
 
 function DraftTable({ rows, loading, pagination }: { rows: CatalogDraftSummary[]; loading: boolean; pagination: TablePaginationConfig }) {
+  const { data: identity } = useGetIdentity<{ role: string }>();
   const { token } = theme.useToken();
   const { show } = useNavigation();
   return (
@@ -101,7 +102,7 @@ function DraftTable({ rows, loading, pagination }: { rows: CatalogDraftSummary[]
         render={(_, r) => `₹${r.sellingPrice.toLocaleString("en-IN")} / ₹${r.mrp.toLocaleString("en-IN")}`}
       />
       <Table.Column<CatalogDraftSummary> title="Created by" dataIndex="createdByName" />
-      <Table.Column<CatalogDraftSummary> title="Processing cost" dataIndex="costUsd" render={(v: number) => `$${v.toFixed(3)}`} />
+      {identity?.role === "SUPER_ADMIN" && <Table.Column<CatalogDraftSummary> title="Processing cost" dataIndex="costUsd" render={(v: number) => `$${v.toFixed(3)}`} />}
       <Table.Column<CatalogDraftSummary> title="Created" dataIndex="createdAt" render={(v: string) => dayjs(v).format("D MMM, h:mm A")} />
     </Table>
   );

@@ -1,4 +1,5 @@
 import { can } from "@martly/shared/permissions";
+import { formatCapacity, ITEM_SIZE_LABELS, itemSizeRows, type ItemSize } from "@martly/shared/item-size";
 import { Show } from "@refinedev/antd";
 import { useShow, useGetIdentity } from "@refinedev/core";
 import { Typography, Table, Tag, Card, Descriptions, Row, Col, Space, Button, Alert, Badge } from "antd";
@@ -293,6 +294,14 @@ export const ProductShow = () => {
                 <Table.Column dataIndex="unitValue" title="Unit Value" />
                 <Table.Column dataIndex="mrp" title="MRP" render={(v: number) => v != null ? `₹${Number(v).toFixed(2)}` : "—"} />
                 <Table.Column dataIndex="packType" title="Pack Type" render={(v: string) => v ?? "—"} />
+                <Table.Column
+                  title="Size"
+                  render={(_: unknown, r: ItemSize & { capacityMl?: number | null; capacityIsEstimate?: boolean }) => {
+                    if (!r.shape) return "—";
+                    const rows = itemSizeRows(r).map((row) => `${ITEM_SIZE_LABELS[row.label]} ${row.value}`);
+                    return [...rows, ...(r.capacityMl ? [formatCapacity(r.capacityMl, !!r.capacityIsEstimate)] : [])].join(" · ");
+                  }}
+                />
                 <Table.Column
                   title="Discount"
                   render={(_: unknown, r: { discountType?: string; discountValue?: number }) =>

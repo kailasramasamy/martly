@@ -3,15 +3,15 @@ import { useRouter } from "expo-router";
 import { LISTING_FEE } from "@martly/shared/constants";
 import { colors, fonts } from "../../../constants/theme";
 import { manage, tabular } from "../ui/tokens";
-import { useEntitlements } from "../marketing/use-entitlements";
+import { useEntitlements, listingsLeft } from "../marketing/use-entitlements";
 
 /** How many of the plan's own-product listings are used, with extra ones bought, and a way to buy more */
 export function ListingsMeter() {
   const router = useRouter();
   const { data } = useEntitlements();
   if (!data) return null;
-  const { included, used, planLeft, extraBalance, unlimited } = data.listings;
-  const empty = !unlimited && planLeft + extraBalance <= 0;
+  const { included, used, extraBalance, unlimited } = data.listings;
+  const empty = listingsLeft(data) <= 0;
   const share = unlimited || included === 0 ? 1 : Math.min(1, used / included);
   const caption = unlimited
     ? "Unlimited listings, set by Martly"

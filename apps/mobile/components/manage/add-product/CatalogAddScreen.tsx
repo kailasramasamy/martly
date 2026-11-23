@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useRouter } from "expo-router";
 import { ManageStackScreen } from "../ManageStackScreen";
 import { useStoreScope } from "../StoreScope";
+import { useListingsGate } from "../catalog-drafts/ListingsNotice";
 import { EmptyState } from "../ui/EmptyState";
 import { ProductPicker } from "../inventory/ProductPicker";
 import { ListInStoreForm } from "../inventory/ListInStoreForm";
@@ -22,6 +23,7 @@ export function CatalogAddScreen() {
   const [query, setQuery] = useState("");
   const [product, setProduct] = useState<CatalogProduct | null>(null);
   const { canList, canSnap, canManual } = useAddPermissions();
+  const listings = useListingsGate();
 
   if (!canList) {
     return <EmptyState icon="lock-closed-outline" title="No access" message="Your role can't add products to a store." />;
@@ -53,7 +55,7 @@ export function CatalogAddScreen() {
           <ProductPicker storeId={storeId} onPick={pick} onQueryChange={setQuery} />
           {searched && (
             <NotInCatalog
-              onSnap={canSnap ? () => router.push(withName("/manage/catalog-drafts/new", query)) : undefined}
+              onSnap={canSnap && !listings.blocked ? () => router.push(withName("/manage/catalog-drafts/new", query)) : undefined}
               onManual={canManual ? () => router.push(withName("/manage/products/new", query)) : undefined}
             />
           )}

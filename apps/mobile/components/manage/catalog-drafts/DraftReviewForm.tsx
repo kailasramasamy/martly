@@ -41,17 +41,36 @@ function BrandFields({ draft, values, onChange }: Pick<DraftReviewFormProps, "dr
   );
 }
 
+/** A measured item is priced by the piece, so its MRP follows the price and it has no pack details to correct */
+function ItemPriceFields({ values, onChange }: Pick<DraftReviewFormProps, "values" | "onChange">) {
+  return (
+    <SectionCard title="Price">
+      <TextField label="Price each" required prefix={"₹"} keyboardType="decimal-pad" value={values.sellingPrice} onChangeText={(sellingPrice) => onChange({ sellingPrice, mrp: sellingPrice })} />
+      <TextField label="Stock" keyboardType="number-pad" value={values.stock} onChangeText={(stock) => onChange({ stock })} />
+    </SectionCard>
+  );
+}
+
 export function DraftReviewForm({ draft, values, tree, showSizeErrors, onChange }: DraftReviewFormProps) {
+  const isItem = draft.kind === "ITEM";
   return (
     <>
       <SectionCard title="Review & correct">
-        <Text style={styles.note}>Prefilled from the label. Fix anything that looks off, then approve.</Text>
+        <Text style={styles.note}>Prefilled from the {isItem ? "photos" : "label"}. Fix anything that looks off, then approve.</Text>
         <TextField label="Name" required value={values.name} onChangeText={(name) => onChange({ name })} />
-        <BrandFields draft={draft} values={values} onChange={onChange} />
+        {!isItem && <BrandFields draft={draft} values={values} onChange={onChange} />}
         <TaxonomyPicker tree={tree} value={values.selection} onChange={(selection) => onChange({ selection })} />
-        <SelectField label="Food type" value={values.foodType} options={FOOD_TYPE_OPTIONS} onChange={(foodType) => onChange({ foodType })} placeholder="Veg / Non-veg / Vegan / Egg" />
+        {!isItem && <SelectField label="Food type" value={values.foodType} options={FOOD_TYPE_OPTIONS} onChange={(foodType) => onChange({ foodType })} placeholder="Veg / Non-veg / Vegan / Egg" />}
         <TextField label="Description" multiline value={values.description} onChangeText={(description) => onChange({ description })} />
       </SectionCard>
+      {isItem ? <ItemPriceFields values={values} onChange={onChange} /> : <PackFields values={values} showSizeErrors={showSizeErrors} onChange={onChange} />}
+    </>
+  );
+}
+
+function PackFields({ values, showSizeErrors, onChange }: Pick<DraftReviewFormProps, "values" | "showSizeErrors" | "onChange">) {
+  return (
+    <>
       <SectionCard title="Size & price">
         <TextField label="Size name" required value={values.variantName} onChangeText={(variantName) => onChange({ variantName })} hint="e.g. 500g pack" />
         <SelectField label="Unit" value={values.unitType} options={UNIT_TYPE_OPTIONS} onChange={(unitType) => onChange({ unitType })} placeholder="Select unit" />

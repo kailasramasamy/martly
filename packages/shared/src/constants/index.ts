@@ -330,6 +330,19 @@ export const PromoStatus = {
 } as const;
 export type PromoStatus = (typeof PromoStatus)[keyof typeof PromoStatus];
 
+export const CatalogDraftKind = {
+  PACK: "PACK",
+  ITEM: "ITEM",
+} as const;
+export type CatalogDraftKind = (typeof CatalogDraftKind)[keyof typeof CatalogDraftKind];
+
+export const ItemShape = {
+  ROUND: "ROUND",
+  BOX: "BOX",
+  FLAT: "FLAT",
+} as const;
+export type ItemShape = (typeof ItemShape)[keyof typeof ItemShape];
+
 export const CatalogDraftStatus = {
   QUEUED: "QUEUED",
   PROCESSING: "PROCESSING",

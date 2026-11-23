@@ -25,6 +25,7 @@ import {
 } from "./product-form-options";
 import type { CascaderOption, DepartmentNode } from "./product-form-options";
 import { ReadableSection } from "../../components/ReadableSection";
+import { ItemSizeFields } from "./ItemSizeFields";
 
 // Reverse map: API returns formatted unitType (e.g. "kg"), form needs enum values (e.g. "KG")
 const UNIT_LABEL_TO_ENUM: Record<string, string> = {
@@ -242,6 +243,7 @@ export const ProductEdit = () => {
                                   <InputNumber min={0} step={0.01} style={{ width: "100%" }} placeholder="MRP" />
                                 </Form.Item>
                               </Col>
+                              <ItemSizeFields form={formProps.form} name={name} />
                               <Col xs={12} sm={6}>
                                 <Form.Item {...restField} label="Pack Type" name={[name, "packType"]}>
                                   <AutoComplete

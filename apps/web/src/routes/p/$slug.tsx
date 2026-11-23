@@ -95,6 +95,15 @@ function BuyBox({ page, pack, setPack }: { page: WebProductPage; pack: WebPack |
   )
 }
 
+function ItemSizeTable({ rows }: { rows: { label: string; value: string }[] }) {
+  return (
+    <div className="mt-8">
+      <InfoTable title="Size" rows={rows} />
+      <p className="mt-2 text-sm text-muted">Sizes are approximate.</p>
+    </div>
+  )
+}
+
 function AboutItem({ points }: { points: string[] }) {
   if (points.length === 0) return null
   return (
@@ -176,6 +185,7 @@ function ProductPage() {
             {brand && <BrandChip brand={brand} />}
             <h1 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight sm:text-[34px]">{product.name}</h1>
             <BuyBox page={page} pack={pack} setPack={setPack} />
+            {pack?.size && <ItemSizeTable rows={pack.size} />}
             <AboutItem points={product.info.highlights} />
           </div>
         </div>

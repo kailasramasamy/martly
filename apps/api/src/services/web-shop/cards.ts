@@ -7,6 +7,7 @@ import { resolveStore, webStoreWhere } from "../store-resolve.js";
 import { storeTitle } from "../store-brand-names.js";
 import { bestSize } from "../preferred-sizes.js";
 import { bySize } from "@martly/shared/listing";
+import { formatCapacity, ITEM_SIZE_LABELS, itemSizeRows } from "@martly/shared/item-size";
 
 /** The store a page prices from, and its organisation (kept off the page) */
 export interface ShopContext {
@@ -47,6 +48,12 @@ export const cardSelect = (storeId: string) => ({
 type CardRow = Prisma.ProductGetPayload<{ select: ReturnType<typeof cardSelect> }>;
 type Listing = CardRow["storeProducts"][number];
 
+function itemSizeTable({ shape, capacityMl, capacityIsEstimate, ...size }: Listing["variant"]) {
+  if (!shape) return null;
+  const rows = itemSizeRows({ ...size, shape }).map(({ label, value }) => ({ label: ITEM_SIZE_LABELS[label], value }));
+  return capacityMl ? [...rows, { label: "Capacity", value: formatCapacity(capacityMl, capacityIsEstimate) }] : rows;
+}
+
 function toPack(sp: Listing, preferred: string | undefined): WebPack {
   const { effectivePrice: price, originalPrice, offer } = calculateEffectivePrice(sp.price, sp.variant, sp);
   const mrp = Math.max(Number(sp.mrp ?? sp.variant.mrp ?? 0), originalPrice);
@@ -61,6 +68,7 @@ function toPack(sp: Listing, preferred: string | undefined): WebPack {
     offer,
     imageUrl: storePack(sp.storeId, sp.variantId)?.front ?? sp.variant.imageUrl ?? null,
     preferred: sp.variantId === preferred,
+    size: itemSizeTable(sp.variant),
   };
 }
 

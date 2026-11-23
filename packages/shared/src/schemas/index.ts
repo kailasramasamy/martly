@@ -1,8 +1,9 @@
 import { z } from "zod";
+import { NEEDED_ITEM_SIZES } from "../item-size/index.js";
 import { sectionSourceSchema } from "./storefront.js";
 import { BULK_STATUSES } from "../order-flow/index.js";
 import { storeSlugSchema } from "./towns.js";
-import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, StorePostKind, Difficulty, SearchSortBy, SearchEventType, CartBuilderSource, GLOSSARY_LANGUAGES, SUPPORTED_LANGUAGES, CatalogDraftStatus, Permission, StockCountStatus, ReturnRemedy, ReturnMethod, RefuseReason } from "../constants/index.js";
+import { CodCollectionMode, DeliveryFailureReason, UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, StorePostKind, Difficulty, SearchSortBy, SearchEventType, CartBuilderSource, GLOSSARY_LANGUAGES, SUPPORTED_LANGUAGES, CatalogDraftStatus, ItemShape, Permission, StockCountStatus, ReturnRemedy, ReturnMethod, RefuseReason } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -260,6 +261,14 @@ export const updateProductVariantSchema = z.object({
   discountValue: z.number().min(0).nullish(),
   discountStart: z.coerce.date().nullish(),
   discountEnd: z.coerce.date().nullish(),
+  shape: z.nativeEnum(ItemShape).nullish(),
+  lengthMm: z.number().int().min(1).max(10_000).nullish(),
+  widthMm: z.number().int().min(1).max(10_000).nullish(),
+  heightMm: z.number().int().min(1).max(10_000).nullish(),
+  topDiameterMm: z.number().int().min(1).max(10_000).nullish(),
+  baseDiameterMm: z.number().int().min(1).max(10_000).nullish(),
+  capacityMl: z.number().int().min(1).max(1_000_000).nullish(),
+  capacityIsEstimate: z.boolean().optional(),
 });
 export type UpdateProductVariantInput = z.infer<typeof updateProductVariantSchema>;
 
@@ -585,6 +594,11 @@ export const updateProductSchema = z.object({
     discountValue: coerceNumberNullish,
     discountStart: z.coerce.date().nullish(),
     discountEnd: z.coerce.date().nullish(),
+    lengthMm: updateProductVariantSchema.shape.lengthMm,
+    widthMm: updateProductVariantSchema.shape.widthMm,
+    heightMm: updateProductVariantSchema.shape.heightMm,
+    topDiameterMm: updateProductVariantSchema.shape.topDiameterMm,
+    baseDiameterMm: updateProductVariantSchema.shape.baseDiameterMm,
   })).optional(),
   translations: translationsSchema,
 });
@@ -1427,6 +1441,47 @@ export const promoListQuerySchema = z.object({
 });
 
 // ── Catalog agent ────────────────────────────────────
+const itemMm = z.number().int().min(1).max(10_000);
+
+const itemSizeFields = {
+  shape: z.nativeEnum(ItemShape),
+  lengthMm: itemMm.optional(),
+  widthMm: itemMm.optional(),
+  heightMm: itemMm.optional(),
+  topDiameterMm: itemMm.optional(),
+  baseDiameterMm: itemMm.optional(),
+};
+
+/** What the phone read, kept next to the size staff confirmed so readings can be calibrated from real use */
+const itemReadingSchema = z.object({
+  ...itemSizeFields,
+  /** The base's size as a share of the top, for a tapered box */
+  baseScale: z.number().min(0.1).max(1).optional(),
+  fit: z.number().min(0).max(1).optional(),
+  tableHeight: z.number().optional(),
+  topViewSlideMm: z.number().min(0).optional(),
+  warnings: z.array(z.string().max(200)).max(10).default([]),
+  /** The item's outline in the Front view: x, y from 0 to 1 within its own bounding box */
+  outline: z.array(z.tuple([z.number().min(0).max(1), z.number().min(0).max(1)])).max(300).optional(),
+});
+
+export const catalogDraftItemSchema = z
+  .object({
+    ...itemSizeFields,
+    /** Capacity marked on the item or typed by staff; without it, capacity is estimated for containers */
+    markedCapacityMl: z.number().int().min(1).max(1_000_000).optional(),
+    /** Staff's choice to print the volume on the size photo */
+    showCapacityOnPhoto: z.boolean().default(false),
+    /** Absent when staff typed the size on a phone that can't measure */
+    reading: itemReadingSchema.optional(),
+  })
+  .superRefine((item, ctx) => {
+    for (const field of NEEDED_ITEM_SIZES[item.shape]) {
+      if (!item[field]) ctx.addIssue({ code: "custom", message: "Enter this size", path: [field] });
+    }
+  });
+export type CatalogDraftItemInput = z.infer<typeof catalogDraftItemSchema>;
+
 export const createCatalogDraftSchema = z
   .object({
     storeId: z.string().uuid(),
@@ -1435,6 +1490,8 @@ export const createCatalogDraftSchema = z
     mrp: z.number().positive(),
     sellingPrice: z.number().positive(),
     stock: z.number().int().min(0).default(0),
+    /** Present for an unpacked item measured or sized by staff, rather than a labelled pack */
+    item: catalogDraftItemSchema.optional(),
   })
   .refine((d) => d.sellingPrice <= d.mrp, { message: "Selling price can't be above MRP", path: ["sellingPrice"] });
 export type CreateCatalogDraftInput = z.infer<typeof createCatalogDraftSchema>;

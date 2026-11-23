@@ -18,6 +18,13 @@ export interface VariantValues {
   discountValue: string;
   discountStart: string | null;
   discountEnd: string | null;
+  /** Unpacked items only, in cm as typed; empty shape means a packed product */
+  shape: string;
+  lengthCm: string;
+  widthCm: string;
+  heightCm: string;
+  topDiameterCm: string;
+  baseDiameterCm: string;
 }
 
 export interface ProductFormValues {
@@ -58,6 +65,7 @@ export function newVariant(): VariantValues {
   return {
     name: "", sku: "", barcode: "", unitType: "PIECE", unitValue: "1", mrp: "", packType: "",
     discountType: "", discountValue: "", discountStart: null, discountEnd: null,
+    shape: "", lengthCm: "", widthCm: "", heightCm: "", topDiameterCm: "", baseDiameterCm: "",
   };
 }
 
@@ -75,12 +83,17 @@ export function emptyProductForm(): ProductFormValues {
 const text = (v: string | number | null | undefined) => (v === null || v === undefined ? "" : String(v));
 const dateKey = (iso: unknown) => (typeof iso === "string" && iso ? toDateKey(new Date(iso)) : null);
 
+const mmToCm = (mm: unknown) => (typeof mm === "number" ? String(mm / 10) : "");
+
 function variantToValues(v: ProductVariant & Record<string, unknown>): VariantValues {
   return {
     id: v.id, name: v.name, sku: text(v.sku), barcode: text(v.barcode),
     unitType: normalizeUnitType(v.unitType), unitValue: text(v.unitValue), mrp: text(v.mrp), packType: text(v.packType),
     discountType: text(v.discountType as string | null), discountValue: text(v.discountValue as string | null),
     discountStart: dateKey(v.discountStart), discountEnd: dateKey(v.discountEnd),
+    shape: text(v.shape as string | null),
+    lengthCm: mmToCm(v.lengthMm), widthCm: mmToCm(v.widthMm), heightCm: mmToCm(v.heightMm),
+    topDiameterCm: mmToCm(v.topDiameterMm), baseDiameterCm: mmToCm(v.baseDiameterMm),
   };
 }
 

@@ -1,13 +1,14 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import OpenAI, { toFile } from "openai";
+import type { CatalogDraftKind } from "@martly/shared/constants";
 import sharp from "sharp";
 import { randomUUID } from "crypto";
 import * as z from "zod/v4";
 import { putObject } from "../media.js";
 import { MODEL } from "./extract.js";
 import { imageBlock, normalise } from "./photos.js";
-import { photoroomPackshot } from "./photoroom.js";
+import { PhotoroomError, photoroomPackshot } from "./photoroom.js";
 import { claudeUsage, imageUsage, type UsageEntry } from "./usage.js";
 
 const IMAGE_MODEL = process.env.CATALOG_IMAGE_MODEL ?? "gpt-image-2.5-flare";
@@ -34,12 +35,24 @@ Where small text is too blurry to read, keep it soft and blurry rather than gues
 Remove the background, hands, shelves and reflections. Place the product upright and front-facing, centred on a pure white
 (#FFFFFF) seamless background, filling about 80% of the frame, with soft even studio lighting and a subtle natural shadow beneath.`;
 
+const ITEM_RENDER_PROMPT = `Turn this phone photo into a professional e-commerce catalogue photo of the exact same household item.
+Keep the item itself identical: same shape, proportions, colour, material, number of parts, handles, holes and surface marks. Do not tidy, redesign or add anything.
+Keep the same camera angle and the same turn of the item, so its sides show exactly as photographed.
+Remove the background, table, cables, hands and anything else that isn't the item. Place it centred on a pure white (#FFFFFF) seamless background,
+filling about 80% of the frame, with soft even studio lighting, clean natural reflections and a soft, light contact shadow directly beneath it.`;
+
 const VERIFY_SYSTEM = `You check an AI-retouched product packshot against the original phone photo of the same pack, for a grocery catalogue.
 Read the text on the pack in BOTH images and compare word by word, number by number. Report only real differences:
 changed, added, dropped or garbled words, numbers or symbols, a different logo, pack shape, colour or fill level.
 Ignore background, lighting, shadow, straightening, and text that is unreadable in the original.
 critical = brand, product name, claims ("high in", "no added"), quantities, nutrition values, FSSAI/licence numbers,
 veg/non-veg mark, prices, ingredients, fill level or pack shape. minor = slogans, taglines, decorative or tiny text.
+verdict: pass = no differences; minor_only = only minor ones; fail = any critical one.`;
+
+const ITEM_VERIFY_SYSTEM = `You check an AI-retouched catalogue photo against the original phone photo of the same household item.
+Compare the item only, and report real differences. Ignore the background, lighting, shadow, reflections and cleaner surfaces.
+critical = it looks like a different item: another kind of shape, a different colour or material, or added or missing parts, handles, holes or lids.
+minor = small surface detail, slight changes in proportions, or a small shift in viewing angle.
 verdict: pass = no differences; minor_only = only minor ones; fail = any critical one.`;
 
 const VerifySchema = z.object({
@@ -49,11 +62,11 @@ const VerifySchema = z.object({
 
 export class ImageProviderError extends Error {}
 
-async function renderOpenAI(photo: Buffer) {
+async function renderOpenAI(photo: Buffer, prompt: string) {
   const res = await new OpenAI().images.edit({
     model: IMAGE_MODEL,
     image: await toFile(await normalise(photo, 1536), "photo.jpg", { type: "image/jpeg" }),
-    prompt: RENDER_PROMPT,
+    prompt,
     size: `${SIZE}x${SIZE}`,
     quality: "medium",
     output_format: "webp",
@@ -63,11 +76,11 @@ async function renderOpenAI(photo: Buffer) {
   return { image: Buffer.from(b64, "base64"), usage: imageUsage("render", IMAGE_MODEL, res.usage) };
 }
 
-async function verifyRender(original: Buffer, render: Buffer) {
+async function verifyRender(original: Buffer, render: Buffer, system: string) {
   const response = await new Anthropic().beta.messages.parse({
     model: MODEL,
     max_tokens: 4000,
-    system: VERIFY_SYSTEM,
+    system,
     output_config: { effort: "medium", format: betaZodOutputFormat(VerifySchema) },
     messages: [{
       role: "user",
@@ -91,15 +104,24 @@ async function upload(draftId: string, index: number, image: Buffer) {
   return url;
 }
 
-/** One attempt per shot: the provider's image if it keeps the label, otherwise the plain photo */
-export async function processShot(draftId: string, index: number, photo: Buffer): Promise<{ shot: ProcessedShot; usage: UsageEntry[] }> {
-  if (imageProvider() === "photoroom") {
+type ShotResult = { shot: ProcessedShot; usage: UsageEntry[] };
+
+/** Photoroom's image, or nothing if Photoroom can't do it right now (out of credits, down, timed out) */
+async function photoroomShot(draftId: string, index: number, photo: Buffer): Promise<ShotResult | null> {
+  try {
     const { image, usage } = await photoroomPackshot(photo);
-    const shot: ProcessedShot = { index, url: await upload(draftId, index, image), source: "photoroom", verdict: null, differences: [] };
-    return { shot, usage };
+    return { shot: { index, url: await upload(draftId, index, image), source: "photoroom", verdict: null, differences: [] }, usage };
+  } catch (err) {
+    if (!(err instanceof PhotoroomError)) throw err;
+    console.warn(`Draft ${draftId} photo ${index}: Photoroom failed, using the fallback. ${err.message}`);
+    return null;
   }
-  const render = await renderOpenAI(photo);
-  const check = await verifyRender(photo, render.image);
+}
+
+/** The OpenAI render if it keeps the pack's label or the item's shape, otherwise the plain photo */
+async function openaiShot(draftId: string, index: number, photo: Buffer, kind: CatalogDraftKind): Promise<ShotResult> {
+  const render = await renderOpenAI(photo, kind === "ITEM" ? ITEM_RENDER_PROMPT : RENDER_PROMPT);
+  const check = await verifyRender(photo, render.image, kind === "ITEM" ? ITEM_VERIFY_SYSTEM : VERIFY_SYSTEM);
   const usable = check.result.verdict !== "fail";
   const shot: ProcessedShot = {
     index,
@@ -109,4 +131,10 @@ export async function processShot(draftId: string, index: number, photo: Buffer)
     differences: check.result.differences.map((d) => `${d.severity}: "${d.original}" → "${d.retouched}"`),
   };
   return { shot, usage: [render.usage, check.usage] };
+}
+
+/** A measured item always uses OpenAI. A pack uses Photoroom when that's the provider, and OpenAI if Photoroom fails. */
+export async function processShot(draftId: string, index: number, photo: Buffer, kind: CatalogDraftKind): Promise<ShotResult> {
+  const fromPhotoroom = kind === "PACK" && imageProvider() === "photoroom" ? await photoroomShot(draftId, index, photo) : null;
+  return fromPhotoroom ?? openaiShot(draftId, index, photo, kind);
 }

@@ -69,6 +69,18 @@
     "machhar coil",
     "mosquito repellent"
   ],
+  "air-fresheners-repellents-mosquito-liquid-vaporiser": [
+    "liquid vaporiser",
+    "mosquito liquid",
+    "mosquito refill",
+    "vaporiser refill",
+    "mosquito machine",
+    "liquidator",
+    "mosquito vaporizer",
+    "refill",
+    "kosu liquid",
+    "mosquito repellent machine"
+  ],
   "air-fresheners-repellents-mosquito-racquet": [
     "mosquito racquet",
     "mosquito racket",
@@ -83,18 +95,6 @@
     "machhar bat",
     "machhar racket",
     "fly swatter"
-  ],
-  "air-fresheners-repellents-mosquito-liquid-vaporiser": [
-    "liquid vaporiser",
-    "mosquito liquid",
-    "mosquito refill",
-    "vaporiser refill",
-    "mosquito machine",
-    "liquidator",
-    "mosquito vaporizer",
-    "refill",
-    "kosu liquid",
-    "mosquito repellent machine"
   ],
   "air-fresheners-repellents-rat-killer": [
     "rat killer",
@@ -1615,6 +1615,30 @@
     "garden salad",
     "rocket salad",
     "salad greens"
+  ],
+  "cutlery-ladles-serving": [
+    "ladle",
+    "ladles",
+    "serving spoon",
+    "karandi",
+    "agappai",
+    "sambar ladle",
+    "rice spoon",
+    "dosa turner",
+    "skimmer",
+    "jhara"
+  ],
+  "cutlery-spoons": [
+    "spoon",
+    "spoons",
+    "steel spoon",
+    "steel spoons",
+    "tea spoon",
+    "teaspoon",
+    "table spoon",
+    "karandi",
+    "fork",
+    "forks"
   ],
   "dal-pulses-chana-dal": [
     "chana dal",
@@ -3744,6 +3768,28 @@
     "insulated bottle",
     "gym bottle"
   ],
+  "mats-door-mats": [
+    "door mat",
+    "door mats",
+    "doormat",
+    "entrance mat",
+    "coir mat",
+    "welcome mat",
+    "mithiyadi",
+    "mitiyadi"
+  ],
+  "mats-floor-bath-mats": [
+    "floor mat",
+    "floor mats",
+    "bath mat",
+    "bathroom mat",
+    "anti skid mat",
+    "non slip mat",
+    "kitchen mat",
+    "rubber mat",
+    "korai pai",
+    "pai"
+  ],
   "men-s-grooming-after-shave": [
     "after shave",
     "aftershave",
@@ -4271,6 +4317,36 @@
     "organic sabzi",
     "pesticide free vegetables"
   ],
+  "paan-masala-tobacco-gutkha-free-supari": [
+    "supari",
+    "betel nut",
+    "betel nuts",
+    "sweet supari",
+    "areca nut",
+    "pakku",
+    "seeval",
+    "cut supari",
+    "scented supari",
+    "mouth freshener",
+    "after meal",
+    "meetha supari",
+    "kalkatti supari"
+  ],
+  "paan-masala-tobacco-paan-masala": [
+    "paan masala",
+    "pan masala",
+    "paan",
+    "pan",
+    "tobacco free pan masala",
+    "betel",
+    "vetrilai",
+    "beeda",
+    "meetha paan",
+    "paan mix",
+    "mouth freshener",
+    "mukhwas",
+    "silver coated pan masala"
+  ],
   "paneer-tofu-fresh-paneer": [
     "paneer",
     "fresh paneer",
@@ -4495,6 +4571,50 @@
     "sweet amla",
     "gulkhand"
   ],
+  "plastic-household-buckets-mugs": [
+    "bucket",
+    "buckets",
+    "plastic bucket",
+    "vaali",
+    "mug",
+    "bath mug",
+    "plastic mug",
+    "water bucket",
+    "bathroom bucket"
+  ],
+  "plastic-household-storage-containers": [
+    "plastic container",
+    "plastic containers",
+    "storage box",
+    "storage container",
+    "kitchen container",
+    "airtight container",
+    "plastic dabba",
+    "rice container",
+    "pet jar"
+  ],
+  "plastic-household-tubs-baskets": [
+    "tub",
+    "tubs",
+    "plastic tub",
+    "washing tub",
+    "basket",
+    "baskets",
+    "plastic basket",
+    "koodai",
+    "laundry basket",
+    "vegetable basket"
+  ],
+  "pooja-essentials-abhishekam-items": [
+    "abhishekam",
+    "abishekam",
+    "panneer",
+    "rose water",
+    "thirumanjanam",
+    "abhisheka powder",
+    "thailam",
+    "sandhanathi thailam"
+  ],
   "pooja-essentials-agarbatti-incense-sticks": [
     "agarbatti",
     "agarbathi",
@@ -4519,6 +4639,22 @@
     "edible camphor",
     "aarti camphor"
   ],
+  "pooja-essentials-chandan-vibhuti": [
+    "chandan",
+    "sandal powder",
+    "santhanam",
+    "sandhanam",
+    "chandan tika",
+    "vibhuti",
+    "vibhuthi",
+    "thiruneer",
+    "namakatti",
+    "namam",
+    "srichurnam",
+    "ashtagandha",
+    "javadhu",
+    "tilak"
+  ],
   "pooja-essentials-dhoop-cones": [
     "dhoop",
     "dhoop sticks",
@@ -4541,19 +4677,22 @@
     "agal vilakku",
     "jyot batti"
   ],
-  "pooja-essentials-sacred-thread-mauli-kalava": [
-    "sacred thread",
-    "mauli",
-    "kalava",
-    "moli",
-    "janeu",
-    "poonool",
-    "poonal",
-    "manjal kayiru",
-    "yellow thread",
-    "red thread",
-    "raksha sutra",
-    "kayiru"
+  "pooja-essentials-havan-samagri": [
+    "homam",
+    "havan",
+    "havan samagri",
+    "homa dravyam",
+    "homa dravium",
+    "samithu",
+    "samidha",
+    "navadhanyam",
+    "dharbai",
+    "darbha",
+    "kusha grass",
+    "pavitram",
+    "tarpanam",
+    "amavasai",
+    "vettiver"
   ],
   "pooja-essentials-matches": [
     "matches",
@@ -4567,6 +4706,55 @@
     "safety matches",
     "machis",
     "kitchen matches"
+  ],
+  "pooja-essentials-pooja-kits": [
+    "pooja kit",
+    "thamboolam",
+    "thambulam",
+    "irumudi",
+    "irumudi kit",
+    "sabarimala",
+    "ayyappa kit",
+    "sumangali",
+    "return gift",
+    "kumkum set"
+  ],
+  "pooja-essentials-pooja-oil": [
+    "pooja oil",
+    "deepam oil",
+    "lamp oil",
+    "vilakku ennai",
+    "vilakkennai",
+    "diya oil",
+    "deepa oil",
+    "panchadeepam oil",
+    "pooja ennai"
+  ],
+  "pooja-essentials-pooja-turmeric": [
+    "pooja turmeric",
+    "manjal",
+    "virali manjal",
+    "finger turmeric",
+    "kizhangu manjal",
+    "round turmeric",
+    "kasthuri manjal",
+    "kasthuri turmeric",
+    "manjal podi",
+    "turmeric tin"
+  ],
+  "pooja-essentials-sacred-thread-mauli-kalava": [
+    "sacred thread",
+    "mauli",
+    "kalava",
+    "moli",
+    "janeu",
+    "poonool",
+    "poonal",
+    "manjal kayiru",
+    "yellow thread",
+    "red thread",
+    "raksha sutra",
+    "kayiru"
   ],
   "pooja-essentials-sindoor-kumkum": [
     "kumkum",
@@ -5459,6 +5647,55 @@
     "blade cutter",
     "cutting"
   ],
+  "steel-vessels-cooking-vessels": [
+    "vessel",
+    "vessels",
+    "steel vessel",
+    "cooking vessel",
+    "pathiram",
+    "sambar vessel",
+    "patila",
+    "pot",
+    "steel pot",
+    "kadai steel",
+    "idli pot"
+  ],
+  "steel-vessels-dabbas-containers": [
+    "steel dabba",
+    "dabba",
+    "steel container",
+    "steel containers",
+    "steel box",
+    "steel storage",
+    "masala dabba",
+    "anjarai petti",
+    "snack box",
+    "steel tin"
+  ],
+  "steel-vessels-plates-bowls": [
+    "steel plate",
+    "steel plates",
+    "thali",
+    "thattu",
+    "steel bowl",
+    "steel bowls",
+    "kinnam",
+    "katori",
+    "dinner plate",
+    "rice plate"
+  ],
+  "steel-vessels-tumblers-glasses": [
+    "tumbler",
+    "tumblers",
+    "steel tumbler",
+    "steel glass",
+    "steel glasses",
+    "dabara",
+    "davara tumbler",
+    "davara",
+    "filter coffee tumbler",
+    "water glass"
+  ],
   "sweets-mithai-dry-sweet-ladoo-barfi-peda": [
     "ladoo",
     "laddu",
@@ -5631,83 +5868,5 @@
     "thanni",
     "paani",
     "1 litre water"
-  ],
-  "pooja-essentials-pooja-oil": [
-    "pooja oil",
-    "deepam oil",
-    "lamp oil",
-    "vilakku ennai",
-    "vilakkennai",
-    "diya oil",
-    "deepa oil",
-    "panchadeepam oil",
-    "pooja ennai"
-  ],
-  "pooja-essentials-chandan-vibhuti": [
-    "chandan",
-    "sandal powder",
-    "santhanam",
-    "sandhanam",
-    "chandan tika",
-    "vibhuti",
-    "vibhuthi",
-    "thiruneer",
-    "namakatti",
-    "namam",
-    "srichurnam",
-    "ashtagandha",
-    "javadhu",
-    "tilak"
-  ],
-  "pooja-essentials-pooja-turmeric": [
-    "pooja turmeric",
-    "manjal",
-    "virali manjal",
-    "finger turmeric",
-    "kizhangu manjal",
-    "round turmeric",
-    "kasthuri manjal",
-    "kasthuri turmeric",
-    "manjal podi",
-    "turmeric tin"
-  ],
-  "pooja-essentials-abhishekam-items": [
-    "abhishekam",
-    "abishekam",
-    "panneer",
-    "rose water",
-    "thirumanjanam",
-    "abhisheka powder",
-    "thailam",
-    "sandhanathi thailam"
-  ],
-  "pooja-essentials-havan-samagri": [
-    "homam",
-    "havan",
-    "havan samagri",
-    "homa dravyam",
-    "homa dravium",
-    "samithu",
-    "samidha",
-    "navadhanyam",
-    "dharbai",
-    "darbha",
-    "kusha grass",
-    "pavitram",
-    "tarpanam",
-    "amavasai",
-    "vettiver"
-  ],
-  "pooja-essentials-pooja-kits": [
-    "pooja kit",
-    "thamboolam",
-    "thambulam",
-    "irumudi",
-    "irumudi kit",
-    "sabarimala",
-    "ayyappa kit",
-    "sumangali",
-    "return gift",
-    "kumkum set"
   ]
 }

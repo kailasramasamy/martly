@@ -62,7 +62,7 @@ At 8 shots, a product costs about $0.25. An EAN match to an existing product cos
 - `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`: required.
 - `CATALOG_IMAGE_PROVIDER`: `openai` (default) or `photoroom`.
 - `CATALOG_IMAGE_MODEL`: defaults to `gpt-image-2.5-flare`.
-- `PHOTOROOM_API_KEY`: required when the provider is `photoroom`.
+- `PHOTOROOM_API_KEY`: required when the provider is `photoroom`. If Photoroom fails on a photo (out of credits, down, timed out), a pack's photo falls back to the OpenAI render. Measured items always use OpenAI, whatever the provider, so `OPENAI_API_KEY` is always needed.
 
 ## Seed and test
 
@@ -88,3 +88,7 @@ To add a sample, create a folder of JPEGs under `prisma/data/catalog-agent-sampl
 - The admin list and show pages in a browser, including dark mode, brand search and the aisle Cascader.
 - Real-world accuracy across more packs (pouches, boxes, bottles, packs with a readable EAN). Watch how often renders fail the check and how often drafts land in review, and switch `CATALOG_IMAGE_PROVIDER` if the renders aren't good enough.
 - The prod rollout: apply migration `20261015120000_catalog_drafts`, and set `PHOTOROOM_API_KEY` on Railway if Photoroom will be used.
+
+## Listing credits
+
+A new draft needs a free listing: what the org has left, minus drafts still `QUEUED`, `PROCESSING` or `NEEDS_REVIEW`. Measured items (`kind: ITEM`) always wait for approval; packs still publish on their own when confident. SUPER_ADMIN has no cap and uses no listing. Without one, `POST /catalog-drafts` returns 402 and no AI runs, and Manage (via `GET /catalog-drafts/listings-left`, which store staff can read) locks "Add your own product" and "Measure an item" before any photos. This also stops packs that would have matched an existing barcode for free; those can still be added from the master catalog. A draft that passes the check but finds none left when it finishes still waits in review.

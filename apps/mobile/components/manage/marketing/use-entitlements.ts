@@ -12,4 +12,5 @@ export function useEntitlements() {
 
 export const promotionsLeft = (e: Entitlements) => e.promotions.planLeft + e.promotions.topUpBalance;
 
-export const listingsLeft = (e: Entitlements) => (e.listings.unlimited ? Infinity : e.listings.planLeft + e.listings.extraBalance);
+/** Listings a new product could still use, after the ones drafts in the queue will take */
+export const listingsLeft = (e: Entitlements) => (e.listings.unlimited ? Infinity : e.listings.planLeft + e.listings.extraBalance - e.listings.queued);

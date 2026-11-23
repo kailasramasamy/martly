@@ -75,5 +75,5 @@ export function useCapturePhotos() {
   const urls = photos.map((p) => p.url).filter((u): u is string => !!u);
   const ready = urls.length > 0 && !uploading && photos.every((p) => p.state === "done");
 
-  return { photos, urls, ready, uploading, takePhoto, pickFromGallery, remove, retry, reset };
+  return { photos, urls, ready, uploading, add, takePhoto, pickFromGallery, remove, retry, reset };
 }

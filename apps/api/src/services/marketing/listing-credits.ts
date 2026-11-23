@@ -5,6 +5,7 @@ import { FREE_PLAN_CODE, PaymentRequiredError } from "./entitlements.js";
 type Db = PrismaClient | Prisma.TransactionClient;
 
 export const NO_LISTINGS_LEFT = `You've used your free product listings. Buy more listings for ₹${LISTING_FEE} each in Marketing plan.`;
+export const LISTINGS_HELD = "Your remaining listings are held by products waiting in the queue. Approve or discard them, or buy more listings in Marketing plan.";
 
 /** The plan running now, or Free */
 async function planCode(db: Db, organizationId: string) {
@@ -22,21 +23,26 @@ async function planCode(db: Db, organizationId: string) {
  * left and a smaller one never takes listed products away; bought listings are a balance that never expires
  */
 export async function listingBalance(db: Db, organizationId: string, code?: string) {
-  const [plan, fromPlan, bought, org] = await Promise.all([
+  const [plan, fromPlan, bought, org, queued] = await Promise.all([
     code ?? planCode(db, organizationId),
     db.listingCreditEntry.aggregate({ where: { organizationId, fromPlan: true }, _sum: { delta: true } }),
     db.listingCreditEntry.aggregate({ where: { organizationId, fromPlan: false }, _sum: { delta: true } }),
     db.organization.findUnique({ where: { id: organizationId }, select: { unlimitedListings: true } }),
+    db.catalogDraft.count({ where: { organizationId, status: { in: ["QUEUED", "PROCESSING", "NEEDS_REVIEW"] } } }),
   ]);
   const included = OWN_LISTINGS_INCLUDED[plan] ?? 0;
   const used = Math.max(0, -(fromPlan._sum.delta ?? 0));
   const extraBalance = bought._sum.delta ?? 0;
   /** Martly lets some organisations (e.g. beta stores) list without limit; their listings still count as used */
   const unlimited = org?.unlimitedListings ?? false;
-  return { included, used, planLeft: Math.max(0, included - used), extraBalance, unlimited };
+  /** Drafts still being worked on or waiting for approval, each of which will want a listing */
+  return { included, used, planLeft: Math.max(0, included - used), extraBalance, unlimited, queued };
 }
 
 export const listingsLeft = (b: { planLeft: number; extraBalance: number; unlimited: boolean }) => (b.unlimited ? Infinity : b.planLeft + b.extraBalance);
+
+/** Whether a new draft may start: AI work is only spent on a draft that has a listing waiting for it */
+export const canStartDraft = (b: Parameters<typeof listingsLeft>[0] & { queued: number }) => listingsLeft(b) - b.queued > 0;
 
 /** Takes one listing for an own product created in this transaction: the plan's free ones first, then bought ones */
 export async function chargeListing(tx: Prisma.TransactionClient, organizationId: string, productId: string) {

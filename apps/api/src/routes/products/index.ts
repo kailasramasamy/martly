@@ -17,6 +17,13 @@ import { applyProductPacks } from "../../services/pack-images.js";
 import { storeBrandOf } from "../../services/own-brand.js";
 import { chargeListing } from "../../services/marketing/listing-credits.js";
 import { deleteProduct } from "../../services/product-delete.js";
+import { redrawVariantSketch } from "../../services/item-sketch/redraw.js";
+import { NEEDED_ITEM_SIZES } from "@martly/shared/item-size";
+
+const ITEM_SIZE_FIELDS = ["lengthMm", "widthMm", "heightMm", "topDiameterMm", "baseDiameterMm"] as const;
+
+const itemSizeChanged = (before: Record<(typeof ITEM_SIZE_FIELDS)[number], number | null>, update: Partial<Record<(typeof ITEM_SIZE_FIELDS)[number], number | null>>) =>
+  ITEM_SIZE_FIELDS.some((field) => update[field] !== undefined && update[field] !== before[field]);
 
   // Shared helper: build visibility + catalogType where clause
   function buildVisibilityFilter(user: { role: string; organizationId?: string | null }, catalogType?: string) {
@@ -389,11 +396,14 @@ export async function productRoutes(app: FastifyInstance) {
         for (const v of variants) {
           const { id: variantId, ...variantData } = v;
           if (variantId) {
+            const before = await app.prisma.productVariant.findFirst({ where: { id: variantId, productId: request.params.id } });
+            if (before?.shape && NEEDED_ITEM_SIZES[before.shape].some((field) => variantData[field] === null)) return reply.badRequest("An item's size can't be left empty");
             const { count } = await app.prisma.productVariant.updateMany({
               where: { id: variantId, productId: request.params.id },
               data: variantData as Prisma.ProductVariantUncheckedUpdateInput,
             });
             if (count === 0) return reply.notFound(`Variant ${variantId} not found on this product`);
+            if (before?.shape && itemSizeChanged(before, variantData)) await redrawVariantSketch(app.prisma, variantId, { ...before, shape: before.shape });
           } else {
             await app.prisma.productVariant.create({
               data: { ...variantData, productId: request.params.id } as Prisma.ProductVariantUncheckedCreateInput,

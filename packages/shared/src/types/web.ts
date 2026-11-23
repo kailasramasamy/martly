@@ -63,6 +63,8 @@ export interface WebPack {
   imageUrl: string | null;
   /** The size to open on: the store's most bought, else Martly's, when in stock */
   preferred: boolean;
+  /** Measurements of an unpacked item such as a vessel or mat; null for packed products */
+  size: { label: string; value: string }[] | null;
 }
 
 export interface WebProductCard {

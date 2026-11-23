@@ -13,8 +13,22 @@ function dayBoundary(key: string | null, end: boolean): string | null {
   return key ? new Date(`${key}T${end ? "23:59:59" : "00:00:00"}`).toISOString() : null;
 }
 
+const mmOrNull = (cm: string) => (cm.trim() === "" ? null : Math.round(Number(cm.replace(/,/g, ".")) * 10));
+
+function itemSizePayload(v: VariantValues) {
+  if (!v.shape) return {};
+  return {
+    lengthMm: mmOrNull(v.lengthCm),
+    widthMm: mmOrNull(v.widthCm),
+    heightMm: mmOrNull(v.heightCm),
+    topDiameterMm: mmOrNull(v.topDiameterCm),
+    baseDiameterMm: mmOrNull(v.baseDiameterCm),
+  };
+}
+
 function variantPayload(v: VariantValues) {
   return {
+    ...itemSizePayload(v),
     ...(v.id && { id: v.id }),
     name: v.name.trim(),
     sku: orNull(v.sku),

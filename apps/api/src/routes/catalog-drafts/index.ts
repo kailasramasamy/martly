@@ -10,11 +10,14 @@ import type { ProcessedShot } from "../../services/catalog-agent/images.js";
 import { addSizes, DraftSizeError, DraftStateError, publishNew, type Proposal } from "../../services/catalog-agent/publish.js";
 import { assertBrandUsable } from "../../services/brands.js";
 import { translateNewProduct } from "../../services/translate/product.js";
+import { canStartDraft, LISTINGS_HELD, listingBalance, listingsLeft, NO_LISTINGS_LEFT } from "../../services/marketing/listing-credits.js";
+import { PaymentRequiredError } from "../../services/marketing/entitlements.js";
 import { draftInclude, toDetail, toSummary } from "../../services/catalog-agent/view.js";
 
 const MANAGERS = [authenticate, requirePermission(Permission.CATALOG_PRODUCTS)];
 
 type IdRequest = FastifyRequest<{ Params: { id: string } }>;
+type ListingsLeft = { left: number | null; waiting: number };
 
 export async function catalogDraftRoutes(app: FastifyInstance) {
   // The draft, if the caller may see its store; sends the error reply and returns undefined otherwise
@@ -25,9 +28,11 @@ export async function catalogDraftRoutes(app: FastifyInstance) {
     return draft;
   }
 
-  async function detail(id: string) {
+  const showsCost = (request: FastifyRequest) => getOrgUser(request).role === "SUPER_ADMIN";
+
+  async function detail(id: string, request: FastifyRequest) {
     const row = await app.prisma.catalogDraft.findUniqueOrThrow({ where: { id }, include: draftInclude });
-    return { success: true, data: toDetail(row) } satisfies ApiResponse<CatalogDraftDetail>;
+    return { success: true, data: toDetail(row, showsCost(request)) } satisfies ApiResponse<CatalogDraftDetail>;
   }
 
   app.post("/", { preHandler: MANAGERS }, async (request, reply) => {
@@ -36,11 +41,32 @@ export async function catalogDraftRoutes(app: FastifyInstance) {
     if (!(await verifyStoreOrgAccess(request, app.prisma, body.storeId))) return reply.forbidden("Access denied");
     const store = await app.prisma.store.findUnique({ where: { id: body.storeId }, select: { organizationId: true } });
     if (!store) return reply.notFound("Store not found");
+    const uncapped = getOrgUser(request).role === "SUPER_ADMIN";
+    const balance = await listingBalance(app.prisma, store.organizationId);
+    if (!uncapped && !canStartDraft(balance)) throw new PaymentRequiredError(listingsLeft(balance) > 0 ? LISTINGS_HELD : NO_LISTINGS_LEFT);
+    const { item, ...fields } = body;
     const draft = await app.prisma.catalogDraft.create({
-      data: { ...body, hintName: body.hintName || null, organizationId: store.organizationId, createdById: getOrgUser(request).sub },
+      data: {
+        ...fields,
+        hintName: body.hintName || null,
+        organizationId: store.organizationId,
+        createdById: getOrgUser(request).sub,
+        ...(item ? { kind: "ITEM" as const, measurement: item } : {}),
+      },
       include: draftInclude,
     });
-    return reply.code(201).send({ success: true, data: toSummary(draft) } satisfies ApiResponse<CatalogDraftSummary>);
+    return reply.code(201).send({ success: true, data: toSummary(draft, showsCost(request)) } satisfies ApiResponse<CatalogDraftSummary>);
+  });
+
+  // Whoever can add a product can see if a new one would go through, before taking any photos; null means no cap
+  app.get("/listings-left", { preHandler: MANAGERS }, async (request, reply) => {
+    const user = getOrgUser(request);
+    if (user.role === "SUPER_ADMIN") return { success: true, data: { left: null, waiting: 0 } } satisfies ApiResponse<ListingsLeft>;
+    if (!user.organizationId) return reply.forbidden("Access denied");
+    const balance = await listingBalance(app.prisma, user.organizationId);
+    const left = listingsLeft(balance);
+    const open = left === Infinity ? null : Math.max(0, left - balance.queued);
+    return { success: true, data: { left: open, waiting: left > 0 ? balance.queued : 0 } } satisfies ApiResponse<ListingsLeft>;
   });
 
   app.get("/", { preHandler: MANAGERS }, async (request, reply) => {
@@ -56,14 +82,14 @@ export async function catalogDraftRoutes(app: FastifyInstance) {
       app.prisma.catalogDraft.count({ where }),
     ]);
     return {
-      success: true, data: rows.map(toSummary), meta: { total, page, pageSize, totalPages: Math.ceil(total / pageSize) },
+      success: true, data: rows.map((row) => toSummary(row, showsCost(request))), meta: { total, page, pageSize, totalPages: Math.ceil(total / pageSize) },
     } satisfies PaginatedResponse<CatalogDraftSummary>;
   });
 
   app.get<{ Params: { id: string } }>("/:id", { preHandler: MANAGERS }, async (request, reply) => {
     const draft = await ownDraft(request, reply);
     if (!draft) return;
-    return { success: true, data: toDetail(draft) } satisfies ApiResponse<CatalogDraftDetail>;
+    return { success: true, data: toDetail(draft, showsCost(request)) } satisfies ApiResponse<CatalogDraftDetail>;
   });
 
   app.post<{ Params: { id: string } }>("/:id/approve", { preHandler: MANAGERS }, async (request, reply) => {
@@ -78,14 +104,15 @@ export async function catalogDraftRoutes(app: FastifyInstance) {
     if (edits.subcategoryId && !(await app.prisma.subcategory.findUnique({ where: { id: edits.subcategoryId } }))) return reply.badRequest("Unknown aisle");
     await assertBrandUsable(app.prisma, edits.brandId, draft.organizationId);
     try {
-      const productId = await publishNew(app.prisma, draft, proposal, draft.processedImages as unknown as ProcessedShot[], edits);
+      const uncapped = getOrgUser(request).role === "SUPER_ADMIN";
+      const productId = await publishNew(app.prisma, draft, proposal, draft.processedImages as unknown as ProcessedShot[], edits, uncapped);
       void translateNewProduct(app.prisma, productId, app.log);
     } catch (err) {
       if (err instanceof DraftStateError) return reply.conflict(err.message);
       if (err instanceof DraftSizeError) return reply.badRequest(err.message);
       throw err;
     }
-    return detail(draft.id);
+    return detail(draft.id, request);
   });
 
   // More pack sizes for a product the agent created, after it went live
@@ -101,7 +128,7 @@ export async function catalogDraftRoutes(app: FastifyInstance) {
       if (err instanceof DraftSizeError) return reply.badRequest(err.message);
       throw err;
     }
-    return detail(draft.id);
+    return detail(draft.id, request);
   });
 
   app.post<{ Params: { id: string } }>("/:id/retry", { preHandler: MANAGERS }, async (request, reply) => {
@@ -112,7 +139,7 @@ export async function catalogDraftRoutes(app: FastifyInstance) {
       data: { status: "QUEUED", attempts: 0, error: null, claimedAt: null },
     });
     if (!count) return reply.conflict("Only failed drafts can be retried");
-    return detail(draft.id);
+    return detail(draft.id, request);
   });
 
   app.post<{ Params: { id: string } }>("/:id/discard", { preHandler: MANAGERS }, async (request, reply) => {
@@ -123,6 +150,6 @@ export async function catalogDraftRoutes(app: FastifyInstance) {
       data: { status: "DISCARDED" },
     });
     if (!count) return reply.conflict("This draft can no longer be discarded");
-    return detail(draft.id);
+    return detail(draft.id, request);
   });
 }

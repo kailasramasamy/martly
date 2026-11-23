@@ -1,5 +1,7 @@
-import { View, Text, StyleSheet } from "react-native";
-import type { CatalogDraftDetail } from "@martly/shared/types";
+import { View, Text, Image, StyleSheet } from "react-native";
+import { formatCapacity, ITEM_SIZE_LABELS, itemSizeRows } from "@martly/shared/item-size";
+import type { CatalogDraftDetail, CatalogDraftItem } from "@martly/shared/types";
+import { useAuth } from "../../../lib/auth-context";
 import { colors, fonts } from "../../../constants/theme";
 import { SectionCard } from "../ui/SectionCard";
 import { KeyValue } from "../ui/KeyValue";
@@ -20,9 +22,23 @@ export function DraftPicks({ draft }: { draft: CatalogDraftDetail }) {
   );
 }
 
+function ItemFacts({ draft, item }: { draft: CatalogDraftDetail; item: CatalogDraftItem }) {
+  return (
+    <SectionCard title="The listing">
+      <KeyValue label="Name" value={draft.label?.name} />
+      <KeyValue label="Material" value={item.material} />
+      {itemSizeRows(item).map((row) => <KeyValue key={row.label} label={ITEM_SIZE_LABELS[row.label]} value={row.value} />)}
+      <KeyValue label="Capacity" value={item.capacityMl ? formatCapacity(item.capacityMl, item.capacityIsEstimate) : null} />
+      <KeyValue label="Description" value={draft.label?.description} />
+      {item.sketchUrl ? <Image source={{ uri: item.sketchUrl }} style={styles.sketch} resizeMode="contain" accessibilityLabel="Size sketch" /> : null}
+    </SectionCard>
+  );
+}
+
 export function DraftFacts({ draft }: { draft: CatalogDraftDetail }) {
   const l = draft.label;
   if (!l) return null;
+  if (draft.item) return <ItemFacts draft={draft} item={draft.item} />;
   return (
     <SectionCard title="Read from the pack">
       <KeyValue label="Name" value={l.name} />
@@ -48,10 +64,13 @@ export function DraftFacts({ draft }: { draft: CatalogDraftDetail }) {
 }
 
 export function CostLine({ usd }: { usd: number }) {
+  const { user } = useAuth();
+  if (user?.role !== "SUPER_ADMIN") return null;
   return <Text style={styles.cost}>Processing cost ${usd.toFixed(2)}</Text>;
 }
 
 const styles = StyleSheet.create({
+  sketch: { marginTop: 10, width: "100%", aspectRatio: 1 },
   nutrition: { marginTop: 8, paddingTop: 8, borderTopWidth: 1, borderTopColor: manage.hairline },
   sub: { fontFamily: fonts.bold, fontSize: 12, color: colors.textSecondary, textTransform: "uppercase", letterSpacing: 0.6 },
   notes: { marginTop: 10, fontFamily: fonts.medium, fontSize: 12.5, lineHeight: 18, fontStyle: "italic", color: colors.textSecondary },

@@ -40,6 +40,20 @@ function DiscountFields({ value, onChange }: Pick<VariantEditorProps, "value" | 
   );
 }
 
+/** Sizes of a measured item; correcting one redraws its sketch */
+function ItemSizeEditor({ value, onChange }: Pick<VariantEditorProps, "value" | "onChange">) {
+  const cm = (label: string, key: "lengthCm" | "widthCm" | "heightCm" | "topDiameterCm" | "baseDiameterCm") => (
+    <TextField label={label} suffix="cm" keyboardType="decimal-pad" value={value[key]} onChangeText={(text) => onChange({ [key]: text })} />
+  );
+  return (
+    <>
+      {value.shape === "ROUND" ? cm("Diameter at the top", "topDiameterCm") : cm("Length", "lengthCm")}
+      {value.shape === "ROUND" ? cm("Diameter at the base", "baseDiameterCm") : cm("Width", "widthCm")}
+      {value.shape !== "FLAT" && cm("Height", "heightCm")}
+    </>
+  );
+}
+
 export function VariantEditor({ index, value, error, showDiscount, onChange, onRemove }: VariantEditorProps) {
   return (
     <View style={styles.box}>
@@ -57,6 +71,7 @@ export function VariantEditor({ index, value, error, showDiscount, onChange, onR
         <View style={styles.half}><TextField label="Unit value" keyboardType="decimal-pad" value={value.unitValue} onChangeText={(unitValue) => onChange({ unitValue })} /></View>
       </View>
       <TextField label="MRP" prefix={"₹"} keyboardType="decimal-pad" value={value.mrp} onChangeText={(mrp) => onChange({ mrp })} />
+      {value.shape ? <ItemSizeEditor value={value} onChange={onChange} /> : null}
       <TextField label="SKU" value={value.sku} onChangeText={(sku) => onChange({ sku })} autoCapitalize="characters" />
       <TextField label="Barcode" value={value.barcode} onChangeText={(barcode) => onChange({ barcode })} keyboardType="number-pad" />
       <SelectField label="Pack type" value={value.packType} options={[{ value: "", label: "Not set" }, ...PACK_TYPES]} onChange={(packType) => onChange({ packType })} placeholder="Select pack type" />

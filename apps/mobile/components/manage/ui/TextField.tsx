@@ -21,6 +21,7 @@ interface TextFieldProps extends FieldFrameProps {
   autoCapitalize?: "none" | "sentences" | "words" | "characters";
   secureTextEntry?: boolean;
   maxLength?: number;
+  autoFocus?: boolean;
 }
 
 export function TextField({ label, required, hint, error, prefix, suffix, leading, multiline, editable = true, ...input }: TextFieldProps) {

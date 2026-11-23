@@ -11,7 +11,7 @@ const Confidence = z.enum(["high", "medium", "low"]);
 export const LabelSchema = z.object({
   shots: z.array(z.object({
     index: z.number().int().describe("0-based position of the photo"),
-    role: z.enum(["front", "back", "side", "nutrition", "ingredients", "barcode", "other"]),
+    role: z.enum(["front", "back", "side", "angled", "top", "nutrition", "ingredients", "barcode", "other"]),
   })),
   name: z.string().describe("Brand + product + key variety, as on the pack, without the pack size. e.g. 'Heaven Gate Pumpkin Raw Seeds'"),
   brand: z.string().nullable().describe("Consumer brand on the pack (not the packer/marketer unless that is the only name)"),

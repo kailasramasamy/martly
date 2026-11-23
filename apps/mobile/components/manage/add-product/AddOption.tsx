@@ -10,12 +10,14 @@ interface AddOptionProps {
   onPress: () => void;
   /** Tinted icon tile for the suggested path */
   featured?: boolean;
+  /** Greyed out with a lock; the description says why */
+  locked?: boolean;
 }
 
 /** One tappable way to add a product: icon tile, title, one-line explanation */
-export function AddOption({ icon, title, description, onPress, featured }: AddOptionProps) {
+export function AddOption({ icon, title, description, onPress, featured, locked }: AddOptionProps) {
   return (
-    <TouchableOpacity style={styles.row} onPress={onPress} accessibilityRole="button" accessibilityLabel={title} accessibilityHint={description}>
+    <TouchableOpacity style={[styles.row, locked && styles.locked]} onPress={onPress} disabled={locked} accessibilityRole="button" accessibilityState={{ disabled: !!locked }} accessibilityLabel={title} accessibilityHint={description}>
       <View style={[styles.tile, featured && styles.tileFeatured]}>
         <Ionicons name={icon} size={22} color={featured ? "#ffffff" : colors.primary} />
       </View>
@@ -23,13 +25,14 @@ export function AddOption({ icon, title, description, onPress, featured }: AddOp
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.description}>{description}</Text>
       </View>
-      <Ionicons name="chevron-forward" size={18} color={manage.muted} />
+      <Ionicons name={locked ? "lock-closed" : "chevron-forward"} size={18} color={manage.muted} />
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
   row: { flexDirection: "row", alignItems: "center", gap: 12, minHeight: 72, paddingHorizontal: 14, paddingVertical: 12 },
+  locked: { opacity: 0.55 },
   tile: { width: 44, height: 44, borderRadius: radius.md, backgroundColor: manage.tint, alignItems: "center", justifyContent: "center" },
   tileFeatured: { backgroundColor: colors.primary },
   text: { flex: 1, gap: 2 },
