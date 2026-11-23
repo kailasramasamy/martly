@@ -2,7 +2,7 @@
   "expo": {
     "name": "Martly",
     "slug": "martly",
-    "version": "1.0.13",
+    "version": "1.0.15",
     "scheme": "martly",
     "platforms": [
       "ios",
@@ -105,7 +105,7 @@
     ],
     "android": {
       "package": "com.quartex.martly",
-      "versionCode": 3,
+      "versionCode": 5,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0f766e"
@@ -114,7 +114,7 @@
     },
     "ios": {
       "bundleIdentifier": "com.quartex.martly",
-      "buildNumber": "14",
+      "buildNumber": "16",
       "appleTeamId": "QBLZB22TU6",
       "googleServicesFile": "./GoogleService-Info.plist",
       "config": {
