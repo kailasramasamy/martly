@@ -9,8 +9,9 @@
  * --flood-only leaves the packs the model would cut for a later run, so a whole catalog gets its quick cut-outs first.
  * --remote <url> shares the model's work with another computer running `rembg s --host 0.0.0.0 --port 7100`
  *   (repeatable); each takes the next batch as it finishes one. --remote-only keeps the model off this computer.
+ * --skip N starts N packs into the queue. It's sorted by name and earlier failures stay in it, so a restart can pass them.
  * Run: npx tsx prisma/generate-cutouts.ts --category "Atta & Flours" [--category …] [--store <id>] [--limit N] [--force]
- *      [--flood-only] [--remote http://192.168.1.20:7100] [--remote-only] (point DATABASE_URL at the target DB)
+ *      [--flood-only] [--remote http://192.168.1.20:7100] [--remote-only] [--skip N] (point DATABASE_URL at the target DB)
  */
 import dotenv from "dotenv";
 import sharp from "sharp";
@@ -66,7 +67,7 @@ function args() {
   return {
     categories: values("--category"), storeId: values("--store")[0], force: argv.includes("--force"),
     floodOnly: argv.includes("--flood-only"), remoteOnly: argv.includes("--remote-only"), remotes: values("--remote"),
-    limit: Number.isFinite(limit) && limit > 0 ? limit : undefined,
+    limit: Number.isFinite(limit) && limit > 0 ? limit : undefined, skip: Number(values("--skip")[0]) || 0,
   };
 }
 
@@ -300,7 +301,11 @@ async function modelCut(leaked: Map<string, { job: Job; raw: Raw }>, work: strin
   const passed = new Set<string>();
   for (const [id, { job, raw }] of leaked) {
     const cut = await rgba(await sharp(join(output, `${id}.png`)).resize(raw.width, raw.height).toBuffer());
-    if (keptShare(raw, cut) < MIN_KEPT) continue;
+    const kept = keptShare(raw, cut);
+    if (kept < MIN_KEPT) {
+      console.error(`${job.name}: the model kept only ${Math.round(kept * 100)}% of the pack`);
+      continue;
+    }
     await save(job, cut);
     passed.add(id);
   }
@@ -327,7 +332,7 @@ async function cutBatch(jobs: Job[], work: string, tally: Record<Outcome, Job[]>
 
 async function main() {
   const options = args();
-  const jobs = await products(options);
+  const jobs = (await products(options)).slice(options.skip);
   console.log(`${jobs.length} products to cut`);
   const tally: Record<Outcome, Job[]> = { cut: [], reused: [], model: [], deferred: [], scene: [], failed: [] };
   const cutters = options.floodOnly ? [null] : [...(options.remoteOnly ? [] : [localCutter]), ...options.remotes.map(remoteCutter)];
