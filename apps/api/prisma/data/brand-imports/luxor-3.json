@@ -1,0 +1,27 @@
+{
+  "brand": "Luxor",
+  "manufacturer": "Luxor Writing Instruments",
+  "feed": "luxor-3-feed.json",
+  "namePrefix": "Luxor ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Refillable\\ Permanent\\ Marker\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Refillable\\ Permanent\\ Marker\\ Red$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    }
+  ]
+}

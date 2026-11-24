@@ -1,0 +1,64 @@
+[
+ {
+  "title": "Refillable Permanent Marker Black",
+  "handle": "refillable-permanent-marker-black",
+  "vendor": "Luxor",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "164",
+    "compare_at_price": "164",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/luxor-3/refillable-permanent-marker-black-3ebccb09.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Luxor refillable permanent marker with bold black smudge-resistant ink that writes on most surfaces. Pack of 10.",
+   "usageInstructions": "Remove the cap and write. Replace the cap tightly after use.",
+   "dangerWarnings": "Contains solvent-based ink. Use in a ventilated place. Keep away from children.",
+   "manufacturerName": "Luxor Writing Instruments",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Refillable Permanent Marker Red",
+  "handle": "refillable-permanent-marker-red",
+  "vendor": "Luxor",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "144",
+    "compare_at_price": "144",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/luxor-3/refillable-permanent-marker-red-0ff9edc1.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Luxor refillable permanent marker in vibrant red that writes on most surfaces. Pack of 10.",
+   "usageInstructions": "Remove the cap and write. Replace the cap tightly after use.",
+   "dangerWarnings": "Contains solvent-based ink. Use in a ventilated place. Keep away from children.",
+   "manufacturerName": "Luxor Writing Instruments",
+   "countryOfOrigin": "India"
+  }
+ }
+]
