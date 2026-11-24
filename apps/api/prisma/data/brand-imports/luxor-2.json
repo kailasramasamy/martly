@@ -1,0 +1,46 @@
+{
+  "brand": "Luxor",
+  "manufacturer": "Luxor Writing Instruments Pvt. Ltd.",
+  "feed": "luxor-2-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/luxor/logo-a76e2ba6.png",
+  "themeColor": "#E4202A",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Luxor ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Doodles\\ Magic\\ Colour\\ Pens\\ 6\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Yum\\ Yum\\ Colour\\ Pens$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Grippy\\ Colour\\ Pens\\ Set$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Pop\\ Squeaks\\ Washable\\ Colour\\ Pens$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    }
+  ]
+}
