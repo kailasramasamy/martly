@@ -1,0 +1,95 @@
+[
+ {
+  "title": "Glue Stick",
+  "handle": "glue-stick",
+  "vendor": "Kangaro",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "12 pcs",
+    "price": "490",
+    "compare_at_price": "490",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/kangaro/glue-stick-d178a31c.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Kangaro glue sticks for paper, cardboard, photos and craft work. Pack of 12 sticks of 25g each.",
+   "usageInstructions": "Twist up the stick, apply on the paper, press and stick. Close the cap after use.",
+   "dangerWarnings": "Non-toxic. Not for eating. Keep away from small children.",
+   "manufacturerName": "Kangaro Industries",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "HS-G10 Desk Essentials Stapler",
+  "handle": "hs-g10-desk-essentials-stapler",
+  "vendor": "Kangaro",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/kangaro/hs-g10-desk-essentials-stapler-0205db1e.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Kangaro Desk Essentials HS-G10 all-metal standard stapler with a quick loading mechanism.",
+   "usageInstructions": "Open the magazine, load staples, close and press down to staple.",
+   "dangerWarnings": "Keep fingers away from the staple exit. Not a toy.",
+   "manufacturerName": "Kangaro Industries",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "HP-45 Desk Essentials Stapler",
+  "handle": "hp-45-desk-essentials-stapler",
+  "vendor": "Kangaro",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "248",
+    "compare_at_price": "248",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/kangaro/hp-45-desk-essentials-stapler-0e3bece5.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Kangaro HP-45 all-metal plier stapler.",
+   "usageInstructions": "Load staples, hold the plier handles and press to staple.",
+   "dangerWarnings": "Keep fingers away from the staple exit. Not a toy.",
+   "manufacturerName": "Kangaro Industries",
+   "countryOfOrigin": "India"
+  }
+ }
+]

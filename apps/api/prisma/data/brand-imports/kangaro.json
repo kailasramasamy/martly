@@ -1,0 +1,35 @@
+{
+  "brand": "Kangaro",
+  "manufacturer": "Kangaro Industries",
+  "feed": "kangaro-feed.json",
+  "namePrefix": "Kangaro ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Glue\\ Stick$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^HS\\-G10\\ Desk\\ Essentials\\ Stapler$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^HP\\-45\\ Desk\\ Essentials\\ Stapler$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    }
+  ]
+}
