@@ -1,0 +1,19 @@
+{
+  "brand": "Plum",
+  "manufacturer": "Plum",
+  "feed": "plum-mist-feed.json",
+  "namePrefix": "Plum ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^1%\\ Marine\\ Spring\\ Water\\ Replenishing\\ Toning\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    }
+  ]
+}

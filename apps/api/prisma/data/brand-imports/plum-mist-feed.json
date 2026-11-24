@@ -1,0 +1,33 @@
+[
+ {
+  "title": "1% Marine Spring Water Replenishing Toning Mist",
+  "handle": "1-marine-spring-water-replenishing-toning-mist",
+  "vendor": "Plum",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/plum-mist/1-marine-spring-water-replenishing-toning-mist-05d37491.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Plum Marine Spring Water Toning Mist with amino acids and active minerals hydrates, cools and revitalises skin on the go.",
+   "usageInstructions": "Spray on a clean face from a little distance and pat gently.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Plum",
+   "countryOfOrigin": "India"
+  }
+ }
+]
