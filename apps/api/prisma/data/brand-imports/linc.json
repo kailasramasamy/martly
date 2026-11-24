@@ -1,0 +1,78 @@
+{
+  "brand": "Linc",
+  "manufacturer": "Linc Pen & Plastics Ltd",
+  "feed": "linc-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/linc/logo-75dc404a.png",
+  "themeColor": "#0B55A6",
+  "themeColorSecondary": "#E6EEF8",
+  "namePrefix": "Linc ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Executive\\ SL\\-500\\ Gel\\ Pens\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Glycer\\ Classic\\ Super\\ Smooth\\ Ball\\ Pens\\ Blue\\ 10\\ Pack$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Glycer\\ Classic\\ Super\\ Smooth\\ Ball\\ Pens\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Glycer\\ Classic\\ Super\\ Smooth\\ Ball\\ Pens\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Glycer\\ Roller\\ Ball\\ Pens\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ocean\\ Classic\\ Gel\\ Pens\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ocean\\ Classic\\ Gel\\ Pens\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ocean\\ Gel\\ Pens\\ Blue\\ 10\\ Pack$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    }
+  ]
+}
