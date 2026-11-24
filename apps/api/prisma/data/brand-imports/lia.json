@@ -1,0 +1,334 @@
+{
+  "brand": "Lia (Cycle)",
+  "manufacturer": "N. Ranga Rao & Sons Pvt. Ltd.",
+  "feed": "lia-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/lia/logo-4868fb4f.png",
+  "themeColor": "#D7141A",
+  "themeColorSecondary": "#FDE8E8",
+  "namePrefix": "Lia ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Alpine\\ Valley\\ Car\\ Gel$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Dream\\ Car\\ Gel$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Citric\\ Tango\\ Car\\ Gel$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Sea\\ Shore\\ Car\\ Gel$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Citrus\\ Sunshine\\ Car\\ Gel\\ Pod$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Marine\\ Drift\\ Car\\ Gel\\ Pod$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Silver\\ Crystal\\ Car\\ Gel\\ Pod$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Oudh\\ Car\\ Gel\\ Pod$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Citrus\\ Zing\\ Car\\ Aroma\\ Pod\\ Hanging\\ Air\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Coral\\ Blue\\ Car\\ Aroma\\ Pod\\ Hanging\\ Air\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Rose\\ Peony\\ Car\\ Aroma\\ Pod\\ Hanging\\ Air\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^French\\ Lavender\\ Car\\ Mist\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Ocean\\ Dream\\ Car\\ Mist\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Sparkling\\ Citrus\\ Car\\ Mist\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Aroma\\ Tag\\ Citrus\\ Sunrise\\ Car\\ \\&\\ Home\\ Deodoriser$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Aroma\\ Tag\\ Cool\\ Blue\\ Car\\ \\&\\ Home\\ Deodoriser$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Aroma\\ Tag\\ Lavender\\ Mist\\ Car\\ \\&\\ Home\\ Deodoriser$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Jas\\ Room\\ Freshener\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Extra\\ Value\\ Jas\\ Room\\ Freshener\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Chandanam\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Jas\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Prime\\ Rose\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Applee\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Lavenderz\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Nature\\ Gift\\ Lily\\ of\\ the\\ Valley\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Rainbow\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Samtrupti\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gulab,\\ Mogra\\ \\&\\ Chandanam\\ Agarbatti\\ Combo$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Dua\\ Agarbatti\\ Combi\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Glow\\ Car\\ Gel\\ \\-\\ Mountain\\ Spring$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Glow\\ Car\\ Gel\\ \\-\\ Red\\ Currant$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Mango\\ Caramel\\ Car\\ Gel$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Violet\\ Petals\\ Car\\ Gel$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Agarwood\\ Room\\ Freshener\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Royal\\ Orchid\\ Room\\ Freshener\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Burst\\ Room\\ Freshener\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Sea\\ Shore\\ Room\\ Freshener\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Rose\\ Room\\ Freshener\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Chandanam\\ Room\\ Freshener\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Room\\ Freshener\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    }
+  ]
+}
