@@ -1,0 +1,174 @@
+{
+  "brand": "Camlin",
+  "manufacturer": "Kokuyo Camlin Ltd.",
+  "feed": "camlin-2-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/camlin/logo-3944a3c8.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Camlin ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^3\\-In\\-1\\ Mechanical\\ Pen\\ Set$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^30\\ cm\\ Broad\\ Plastic\\ Scale$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Brush\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Champ\\ Brushes\\ \\-\\ Round\\ Series\\ 64\\ \\&\\ Flat\\ Series\\ 65$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Colour\\ Pencils\\ 24\\ Shades\\ Full\\ Size\\ With\\ Sharpener$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Exam\\ Standard\\ Scale$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Full\\ Size\\ Colour\\ Pencils\\ 12\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Half\\ Size\\ Colour\\ Pencils\\ 12\\ Shades\\ With\\ Sharpener$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^High\\-Precision\\ Metal\\ Compass$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Klick\\ Pro\\ Mechanical\\ Pencil$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Numo\\ Macaroons\\ Triangular\\ Grip\\ Wooden\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Plastic\\ Crayons\\ 15\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Plastic\\ Standard\\ Scale\\ \\-\\ 15\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Scholar\\ Draft\\ Geometry\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Scholar\\ Geometry\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Scholar\\ Plus\\ Geometry\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Scholar\\ Pro\\ Geometry\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Student\\ Poster\\ Colour\\ 14\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Synthetic\\ Gold\\ Brushes\\ \\-\\ Round\\ Series\\ 66$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Yella\\ Hexagonal\\ Grip\\ Wooden\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    }
+  ]
+}
