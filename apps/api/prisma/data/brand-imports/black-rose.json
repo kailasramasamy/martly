@@ -1,0 +1,27 @@
+{
+  "brand": "Black Rose",
+  "manufacturer": "Black Rose",
+  "feed": "black-rose-feed.json",
+  "namePrefix": "Black Rose ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Kali\\ Mehandi\\ Black\\ Henna\\ Hair\\ Colour$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Kali\\ Mehandi\\ Shampoo\\ Hair\\ Colour\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    }
+  ]
+}

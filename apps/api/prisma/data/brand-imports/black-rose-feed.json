@@ -1,0 +1,64 @@
+[
+ {
+  "title": "Kali Mehandi Black Henna Hair Colour",
+  "handle": "kali-mehandi-black-henna-hair-colour",
+  "vendor": "Black Rose",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "59",
+    "compare_at_price": "59",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/black-rose/kali-mehandi-black-henna-hair-colour-e23c5f0c.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Black Rose Kali Mehandi herbal black henna hair colour with amla and shikakai. Ammonia-free, 100% grey coverage. 5 pouches of 10g.",
+   "usageInstructions": "Mix the powder with water into a paste, apply on dry hair, leave for 30 to 60 minutes and rinse.",
+   "dangerWarnings": "For external use only. Do a patch test 48 hours before use. Avoid contact with eyes; if it happens, rinse well with water. Do not use if you have a skin allergy or scalp irritation. Keep away from children.",
+   "manufacturerName": "Black Rose",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kali Mehandi Shampoo Hair Colour Black",
+  "handle": "kali-mehandi-shampoo-hair-colour-black",
+  "vendor": "Black Rose",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400ml",
+    "price": "549",
+    "compare_at_price": "549",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/black-rose/kali-mehandi-shampoo-hair-colour-black-7d5e00bf.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Black Rose Kali Mehandi shampoo-style hair colour in natural black. Ammonia-free and paraben-free, colours hair in about 10 minutes.",
+   "usageInstructions": "Apply on dry hair, massage into a lather, leave for 10 minutes and rinse.",
+   "dangerWarnings": "For external use only. Do a patch test 48 hours before use. Avoid contact with eyes; if it happens, rinse well with water. Do not use if you have a skin allergy or scalp irritation. Keep away from children.",
+   "manufacturerName": "Black Rose",
+   "countryOfOrigin": "India"
+  }
+ }
+]
