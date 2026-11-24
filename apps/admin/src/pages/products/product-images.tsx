@@ -21,7 +21,7 @@ const Photo = ({ url, isMain, draggable }: { url: string; isMain: boolean; dragg
         cursor: draggable ? "grab" : undefined,
       }}
     >
-      <Image width={100} height={100} style={{ borderRadius: 6, objectFit: "cover" }} src={url} />
+      <Image width={100} height={100} style={{ borderRadius: 6, objectFit: "contain", background: "#f5f5f5" }} src={url} />
       {isMain && <Tag color="#0d9488" style={{ position: "absolute", top: 4, left: 4, margin: 0 }}>Main</Tag>}
     </div>
   );
