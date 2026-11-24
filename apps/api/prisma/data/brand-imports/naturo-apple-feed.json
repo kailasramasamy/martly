@@ -1,0 +1,44 @@
+[
+ {
+  "title": "Strawberry Apple Fruit Bars No Added Sugar",
+  "handle": "strawberry-apple-fruit-bars-no-added-sugar",
+  "vendor": "Naturo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "64g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/naturo-apple/strawberry-apple-fruit-bars-no-added-sugar-cd6b3f29.webp"
+    },
+    "barcode": "8904008102433"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/naturo-apple/strawberry-apple-fruit-bars-no-added-sugar-cd6b3f29.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Naturo Strawberry Apple Fruit Bars are made from real fruit ingredients, offering a fruity and convenient snack option. Crafted with apple juice concentrate, apple pulp, and strawberry puree, these bars combine the natural flavours of apple and strawberry in a soft, delicious format. Each pack contains four individually wrapped fruit bars, making them easy to carry and enjoy anytime. Made with 98% fruit-based ingredients, these bars contain no added sugar and are a convenient choice for on-the-go snacking.",
+   "ingredients": "Apple Juice Concentrate 48%, Apple Pulp 42%, Strawberry\nPuree 8%, Thickener (Pectin), Lemon Juice Concentrate, Colour (INS 163 (vi)),\nAdded Flavour (Natural Flavouring Substance - Strawberry).\nContains: Permitted Natural Colour.",
+   "nutritionalInfo": {
+    "Energy": "342 kcal",
+    "Protein": "0.46 g",
+    "Carbohydrates": "84.99 g",
+    "Total Sugars": "71.89 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "4.96 g",
+    "Total Fat": "0.1 g",
+    "Sodium": "78.46 mg"
+   },
+   "manufacturerName": "Naturo Food and Fruit Products Pvt",
+   "countryOfOrigin": "India",
+   "storageInstructions": "Store in a cool, dry place away from heat and sunlight."
+  }
+ }
+]

@@ -1,0 +1,21 @@
+{
+  "brand": "Naturo",
+  "manufacturer": "",
+  "feed": "naturo-apple-feed.json",
+  "themeColor": "#F97316",
+  "themeColorSecondary": "#FFF1E6",
+  "namePrefix": "Naturo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Strawberry\\ Apple\\ Fruit\\ Bars\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    }
+  ]
+}
