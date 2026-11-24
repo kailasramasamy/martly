@@ -1,0 +1,277 @@
+{
+  "brand": "Sapphire",
+  "manufacturer": "",
+  "feed": "sapphire-feed.json",
+  "themeColor": "#1E3A8A",
+  "themeColorSecondary": "#E8EDF9",
+  "namePrefix": "Sapphire ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Butter\\ Cookies\\ Original\\ Danish\\ Recipe$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Butter\\ Cookies\\ Gold\\ Collection$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Butter\\ Cookies\\ Silver\\ Collection$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Chip\\ Cookies\\ Original\\ Danish\\ Recipe$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Chip\\ Cookies\\ Premium\\ Collection$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Almonds\\ Covered\\ With\\ Milk\\ Chocolate\\ Tin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Fruit\\ \\&\\ Nuts\\ Chocolate\\ Tin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Covered\\ With\\ Milk\\ Chocolate\\ Tin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Coated\\ Nuts\\ Hazelnut\\ With\\ Milk\\ Chocolate\\ Tin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Coated\\ Nuts\\ Assorted\\ With\\ Almonds\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cashew\\ Caramel\\ Crunch\\ Chocolate\\ Gift\\ Box$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cranberries\\ Covered\\ With\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Gold\\ Almond\\ Covered\\ With\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Gold\\ Assorted\\ Almonds\\ Hazelnuts\\ \\&\\ Raisins\\ Covered\\ With\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Premium\\ Chocolate\\ Eclairs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Premium\\ Hazelnut\\ Eclairs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Premium\\ Milk\\ Eclairs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Excellence\\ Anjeer\\ Toffee$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Fantasy\\ Deluxe\\ Toffee\\ Assorted$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Secrets\\ Deluxe\\ Toffee\\ Assorted$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Butter\\ Toffee\\ Coconut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Magic\\ Stix\\ Wafer\\ Rolls\\ Chocolate\\ Flavoured\\ Cream$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Magic\\ Stix\\ Wafer\\ Rolls\\ Chocolate\\ Hazelnut\\ Flavoured\\ Cream$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Original\\ Creamy\\ Crackers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Original\\ Vege\\ Crackers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Fine\\ Instant\\ Coffee\\ Arabica\\ Columbian\\ Beans$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Intense\\ Instant\\ Coffee\\ Arabica\\ Columbian\\ Beans$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Poko\\ Loko\\ Grape\\ Juice\\ Drink\\ With\\ Nata\\ De\\ Coco$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Poko\\ Loko\\ Lychee\\ Juice\\ Drink\\ With\\ Nata\\ De\\ Coco$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Poko\\ Loko\\ Mango\\ Juice\\ Drink\\ With\\ Nata\\ De\\ Coco$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Poko\\ Loko\\ Orange\\ Juice\\ Drink\\ With\\ Nata\\ De\\ Coco$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Poko\\ Loko\\ Strawberry\\ Juice\\ Drink\\ With\\ Nata\\ De\\ Coco$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Poko\\ Loko\\ Watermelon\\ Juice\\ Drink\\ With\\ Nata\\ De\\ Coco$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    }
+  ]
+}
