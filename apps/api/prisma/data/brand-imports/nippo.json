@@ -1,0 +1,78 @@
+{
+  "brand": "Nippo",
+  "manufacturer": "Nippo Batteries",
+  "feed": "nippo-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/nippo/logo-078e075b.png",
+  "themeColor": "#0B4DA2",
+  "themeColorSecondary": "#E6EEF9",
+  "namePrefix": "Nippo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Thor\\ Digi\\ Alkaline\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Thor\\ Digi\\ Alkaline\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Thor\\ Max\\ Alkaline\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Thor\\ Max\\ Alkaline\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Gold\\ Zinc\\ Carbon\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Gold\\ Zinc\\ Carbon\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Hi\\-Top\\ Zinc\\ Carbon\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Hi\\-Top\\ Zinc\\ Carbon\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    }
+  ]
+}
