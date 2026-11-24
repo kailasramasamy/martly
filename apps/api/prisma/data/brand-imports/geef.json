@@ -1,0 +1,45 @@
+{
+  "brand": "Geef",
+  "manufacturer": "",
+  "feed": "geef-feed.json",
+  "themeColor": "#E91E63",
+  "themeColorSecondary": "#FDE7F0",
+  "namePrefix": "Geef ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Magic\\ Pops\\ Grape\\ Popping\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Magic\\ Pops\\ Lemon\\ Popping\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Magic\\ Pops\\ Orange\\ Popping\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Magic\\ Pops\\ Strawberry\\ Popping\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    }
+  ]
+}
