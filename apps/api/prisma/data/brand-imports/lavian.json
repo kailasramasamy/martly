@@ -1,0 +1,126 @@
+{
+  "brand": "Lavian Exotique",
+  "manufacturer": "",
+  "feed": "lavian-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/lavian/logo-18d955f2.png",
+  "themeColor": "#D81B5C",
+  "themeColorSecondary": "#FDE8EF",
+  "namePrefix": "Lavian ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Creme\\ Bakes\\ Choco\\ Brownie\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Creme\\ Cups\\ Choco\\ Flavoured\\ Cup\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Creme\\ Cups\\ Strawberry\\ Flavoured\\ Cup\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Creme\\ Cups\\ Vanilla\\ Flavoured\\ Cup\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Creme\\ Cups\\ Blueberry\\ Flavoured\\ Cup\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    },
+    {
+      "match": "^Cremelets\\ Celebration\\ Truffles\\ Assorted$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Cremelets\\ Choco\\ Pan\\ Flavoured\\ Truffles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Cremelets\\ Smooth\\ Caramel\\ Flavoured\\ Truffles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Gold\\ Bar\\ Almond\\ Brittle$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Greed\\ Box\\ Assorted\\ Biscotti$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Marvella\\ Layered\\ Choco\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Marvella\\ Layered\\ Strawberry\\ Flavoured\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Nutty\\ Brittle\\ Caramel\\ Coated\\ In\\ Dark\\ Choco\\ \\&\\ Almonds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Treats\\ Dark\\ Belgium\\ Cup\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    }
+  ]
+}
