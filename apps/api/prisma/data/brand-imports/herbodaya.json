@@ -1,0 +1,59 @@
+{
+  "brand": "Herbodaya",
+  "manufacturer": "Herbodaya",
+  "feed": "herbodaya-feed.json",
+  "namePrefix": "Herbodaya ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Aloe\\ Vera\\ Gel\\ Moisturising$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Gel\\ Neem$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Rose\\ Water$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Rose\\ Water\\ Face\\ Toner\\ with\\ Vitamin\\ C$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Shikakai\\ Hair\\ Wash\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Shikakai\\ Volumizing\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    }
+  ]
+}

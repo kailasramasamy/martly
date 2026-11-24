@@ -1,0 +1,198 @@
+[
+ {
+  "title": "Aloe Vera Gel Moisturising",
+  "handle": "aloe-vera-gel-moisturising",
+  "vendor": "Herbodaya",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "102",
+    "compare_at_price": "102",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/herbodaya/aloe-vera-gel-moisturising-8d12e1cd.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Herbodaya Aloe Vera Gel moisturises the skin and helps even out skin tone. Made with aloe vera and vitamins B3, B6, C and E.",
+   "usageInstructions": "Apply a small amount on clean skin and massage gently until absorbed. Use daily.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes. Stop use if irritation occurs.",
+   "manufacturerName": "Herbodaya",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Aloe Vera Gel Neem",
+  "handle": "aloe-vera-gel-neem",
+  "vendor": "Herbodaya",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "102",
+    "compare_at_price": "102",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/herbodaya/aloe-vera-gel-neem-6a8b0fff.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Herbodaya Aloe Vera Gel with neem for clearer, healthier-looking skin, helps with pimples and dark spots.",
+   "usageInstructions": "Apply a small amount on clean skin and massage gently until absorbed. Use daily.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes. Stop use if irritation occurs.",
+   "manufacturerName": "Herbodaya",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rose Water",
+  "handle": "rose-water",
+  "vendor": "Herbodaya",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/herbodaya/rose-water-96a11c54.webp"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/herbodaya/rose-water-87025a33.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Herbodaya Rose Water is a refreshing rose toner made from Rosa damascena. Soothes, tightens pores and hydrates the skin.",
+   "usageInstructions": "Apply with cotton on a clean face as a toner, or spray as a mist. Can be mixed into face packs.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Herbodaya",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rose Water Face Toner with Vitamin C",
+  "handle": "rose-water-face-toner-with-vitamin-c",
+  "vendor": "Herbodaya",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60ml",
+    "price": "158",
+    "compare_at_price": "158",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/herbodaya/rose-water-face-toner-with-vitamin-c-3431cc55.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Herbodaya Rose Water Face Toner in a spray bottle, with rose distillate, aloe vera and vitamins C, B and E.",
+   "usageInstructions": "Cleanse and pat dry. Spray on the face, pat lightly. Use twice daily.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Herbodaya",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Shikakai Hair Wash Powder",
+  "handle": "shikakai-hair-wash-powder",
+  "vendor": "Herbodaya",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "47",
+    "compare_at_price": "47",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/herbodaya/shikakai-hair-wash-powder-a66aa286.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Herbodaya 100% ayurvedic hair wash powder made with shikakai and herbs to cleanse the scalp and hair.",
+   "usageInstructions": "Mix the powder with water into a paste, apply on wet hair and scalp, massage and rinse well.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Herbodaya",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Shikakai Volumizing Shampoo",
+  "handle": "shikakai-volumizing-shampoo",
+  "vendor": "Herbodaya",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "176",
+    "compare_at_price": "176",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/herbodaya/shikakai-volumizing-shampoo-659f5c8c.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Herbodaya Shikakai Volumizing Shampoo cleanses and conditions hair, strengthens follicles and helps reduce hair fall and breakage.",
+   "usageInstructions": "Apply on wet hair, massage into a lather and rinse well.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Herbodaya",
+   "countryOfOrigin": "India"
+  }
+ }
+]
