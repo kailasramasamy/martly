@@ -1,0 +1,126 @@
+{
+  "brand": "Camel",
+  "manufacturer": "Kokuyo Camlin Ltd.",
+  "feed": "camel-2-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/camel/logo-2eaee505.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#1D4E9E",
+  "namePrefix": "Camel ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Oil\\ Pastels$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Wax\\ Crayons\\ 24\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Wax\\ Crayons\\ 12\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^XL\\ Wax\\ Crayons\\ 15\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Plastic\\ Crayons$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Round\\ \\&\\ Flat\\ Champ\\ Brushes\\ Set\\ of\\ 7$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Student\\ Poster\\ Colours$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Student\\ Water\\ Colour\\ Cakes\\ 12\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Water\\ Colour\\ Cakes\\ 24\\ Shades\\ With\\ Paint\\ Brush$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Acrylic\\ Colours\\ 12\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Fabrica\\ Acrylic\\ Colours\\ Ultra\\ 6\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Fabrica\\ Acrylic\\ Colours\\ Ultra\\ 10\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Water\\ Colour\\ Tubes\\ Set\\ With\\ Brush$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Water\\ Colour\\ Tubes\\ Small$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    }
+  ]
+}
