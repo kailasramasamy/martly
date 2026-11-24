@@ -1,0 +1,27 @@
+{
+  "brand": "Camlin",
+  "manufacturer": "Kokuyo Camlin Ltd.",
+  "feed": "camlin-3-feed.json",
+  "namePrefix": "Camlin ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Nova\\ Glowing\\ Triangular\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Fabrica\\ Acrylic\\ Metallic\\ Colours\\ 6\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    }
+  ]
+}

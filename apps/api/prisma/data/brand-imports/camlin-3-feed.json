@@ -1,0 +1,64 @@
+[
+ {
+  "title": "Nova Glowing Triangular Pencils",
+  "handle": "nova-glowing-triangular-pencils",
+  "vendor": "Camlin",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/camlin-3/nova-glowing-triangular-pencils-673d717a.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Camlin Nova Glowing triangular pencils, pack of 10 with a sharpener.",
+   "usageInstructions": "Sharpen and write.",
+   "dangerWarnings": "Keep away from small children. Not for eating.",
+   "manufacturerName": "Kokuyo Camlin Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fabrica Acrylic Metallic Colours 6 Shades",
+  "handle": "fabrica-acrylic-metallic-colours-6-shades",
+  "vendor": "Camlin",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "6 pcs",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/camlin-3/fabrica-acrylic-metallic-colours-6-shades-93395575.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Camlin Fabrica acrylic metallic colours, 6 shades of 10ml each.",
+   "usageInstructions": "Stir well. Apply with a brush. Add a little water to thin. Close the lid tightly after use. Wash brushes with water immediately.",
+   "dangerWarnings": "Non-toxic but not for eating. Keep away from small children. Avoid contact with eyes.",
+   "manufacturerName": "Kokuyo Camlin Ltd.",
+   "countryOfOrigin": "India"
+  }
+ }
+]
