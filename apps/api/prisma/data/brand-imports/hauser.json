@@ -1,0 +1,118 @@
+{
+  "brand": "Hauser",
+  "manufacturer": "Hauser Stationery Pvt. Ltd.",
+  "feed": "hauser-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/hauser/logo-fb98fe55.png",
+  "themeColor": "#00857C",
+  "themeColorSecondary": "#E0F2F1",
+  "namePrefix": "Hauser ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Art\\ Venture\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Nexa\\ Gold\\ Ball\\ Pens$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Sonic\\ Gel\\ Pens\\ \\-\\ Blue\\ \\&\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^XO\\ 20\\ Ball\\ Pens\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^XO\\ Ball\\ Pens\\ \\-\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^XO\\ Ball\\ Pens\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^XO\\ Fountain\\ Pen\\ With\\ Cartridges$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^XO\\ Gel\\ Pens\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^XO\\ RT\\ Ball\\ Pens\\ With\\ Click\\ Mechanism\\ \\-\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^XO\\ RT\\ Ball\\ Pens\\ With\\ Click\\ Mechanism\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^XO\\ Stationery\\ Kit\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^XO\\ Glow\\ Ball\\ Pens\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Yung\\ Artist\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    }
+  ]
+}
