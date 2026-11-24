@@ -1,0 +1,19 @@
+{
+  "brand": "Kores",
+  "manufacturer": "Kores India Ltd.",
+  "feed": "kores-3-feed.json",
+  "namePrefix": "Kores ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^White\\ Liquid\\ Glue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+[
+ {
+  "title": "White Liquid Glue",
+  "handle": "white-liquid-glue",
+  "vendor": "Kores",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/kores-3/white-liquid-glue-89063fef.webp"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/kores-3/white-liquid-glue-90ae4594.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Kores white liquid glue with extra strong hold for paper, craft and school use. Safe and non-toxic.",
+   "usageInstructions": "Apply a thin layer, press the surfaces together and let dry.",
+   "dangerWarnings": "Non-toxic. Not for eating. Keep away from small children.",
+   "manufacturerName": "Kores India Ltd.",
+   "countryOfOrigin": "India"
+  }
+ }
+]
