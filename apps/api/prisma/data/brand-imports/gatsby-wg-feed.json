@@ -1,0 +1,64 @@
+[
+ {
+  "title": "Water Gloss Soft Hair Gel",
+  "handle": "water-gloss-soft-hair-gel",
+  "vendor": "Gatsby (Mandom)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/gatsby-wg/water-gloss-soft-hair-gel-315679e3.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Gatsby Water Gloss Soft wet-look hair gel, holding level 2, with a non-sticky shine finish that washes off easily.",
+   "usageInstructions": "Take a small amount, spread on palms and style damp or dry hair.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Mandom Corporation",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Water Gloss Hyper Solid Hair Gel",
+  "handle": "water-gloss-hyper-solid-hair-gel",
+  "vendor": "Gatsby (Mandom)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "146",
+    "compare_at_price": "146",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/gatsby-wg/water-gloss-hyper-solid-hair-gel-2c8c6f29.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Gatsby Water Gloss Hyper Solid wet-look hair gel, holding level 7, for long-lasting hold, non-sticky and easy to wash off.",
+   "usageInstructions": "Take a small amount, spread on palms and style damp or dry hair.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Mandom Corporation",
+   "countryOfOrigin": "India"
+  }
+ }
+]

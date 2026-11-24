@@ -1,0 +1,27 @@
+{
+  "brand": "Gatsby (Mandom)",
+  "manufacturer": "Mandom Corporation",
+  "feed": "gatsby-wg-feed.json",
+  "namePrefix": "Gatsby ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Water\\ Gloss\\ Soft\\ Hair\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Water\\ Gloss\\ Hyper\\ Solid\\ Hair\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    }
+  ]
+}
