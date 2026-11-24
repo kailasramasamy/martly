@@ -1,0 +1,64 @@
+[
+ {
+  "title": "Q Series 30 cm Transparent Scale",
+  "handle": "q-series-30-cm-transparent-scale",
+  "vendor": "DOMS",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/doms-3/q-series-30-cm-transparent-scale-41547ace.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "DOMS Q Series 30 cm transparent plastic scale for precise marking.",
+   "usageInstructions": "Place along the line and draw with a pencil.",
+   "dangerWarnings": "Keep away from small children.",
+   "manufacturerName": "DOMS Industries Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Refilo Permanent Marker Black",
+  "handle": "refilo-permanent-marker-black",
+  "vendor": "DOMS",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/doms-3/refilo-permanent-marker-black-d30d808b.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "DOMS Refilo hi-tech refillable permanent marker with a Japanese bullet tip and black ink that marks on most surfaces. Pack of 10.",
+   "usageInstructions": "Remove the cap and write. Replace the cap tightly after use.",
+   "dangerWarnings": "Contains solvent-based ink. Use in a ventilated place. Keep away from children.",
+   "manufacturerName": "DOMS Industries Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ }
+]

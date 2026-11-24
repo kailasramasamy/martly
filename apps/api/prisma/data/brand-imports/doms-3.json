@@ -1,0 +1,27 @@
+{
+  "brand": "DOMS",
+  "manufacturer": "DOMS Industries Pvt. Ltd.",
+  "feed": "doms-3-feed.json",
+  "namePrefix": "DOMS ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Q\\ Series\\ 30\\ cm\\ Transparent\\ Scale$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Refilo\\ Permanent\\ Marker\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    }
+  ]
+}
