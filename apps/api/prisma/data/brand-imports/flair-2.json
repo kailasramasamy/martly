@@ -1,0 +1,86 @@
+{
+  "brand": "Flair",
+  "manufacturer": "Flair Writing Industries Ltd.",
+  "feed": "flair-2-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/flair/logo-2a69aa0c.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#9E1B20",
+  "namePrefix": "Flair ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Carbonix\\ Ball\\ Pens\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ezee\\ Click\\ Ball\\ Pens\\ \\-\\ Blue\\ Jar$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Marathon\\ Ball\\ Pens\\ With\\ Jumbo\\ Refill$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Studio\\ Gel\\ Pens\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Permanent\\ XL\\ Marker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Super\\ Glow\\ Hi\\-Lighter\\ Pens$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Silky\\ Twisters\\ Gel\\ Crayons$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Carbonix\\ Mathematical\\ Geometry\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^512\\ Calculator$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Calculators"
+      ]
+    }
+  ]
+}
