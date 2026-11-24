@@ -1,0 +1,105 @@
+[
+ {
+  "title": "Rosemary Water Hair Spray",
+  "handle": "rosemary-water-hair-spray",
+  "vendor": "Alps Goodness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "189",
+    "compare_at_price": "189",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/alps-goodness/rosemary-water-hair-spray-0c02cf09.webp"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "329",
+    "compare_at_price": "329",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/alps-goodness/rosemary-water-hair-spray-10830de3.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Alps Goodness Rosemary Water Spray with clinically tested hair-fall reduction and hair growth support. Non-greasy, no need to wash off.",
+   "usageInstructions": "Spray directly on the scalp and massage with fingertips. Use daily for best results.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes. Stop use if irritation occurs.",
+   "manufacturerName": "Alps Goodness",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fermented Rice Water Spray",
+  "handle": "fermented-rice-water-spray",
+  "vendor": "Alps Goodness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "209",
+    "compare_at_price": "209",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/alps-goodness/fermented-rice-water-spray-ed813306.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Alps Goodness Fermented Rice Water spray for hair and skin, for shiny hair and brighter-looking skin.",
+   "usageInstructions": "Spray on hair or skin, leave on. No need to wash off.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Alps Goodness",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ghee Moisturiser",
+  "handle": "ghee-moisturiser",
+  "vendor": "Alps Goodness",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "369",
+    "compare_at_price": "369",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/alps-goodness/ghee-moisturiser-e7e73b39.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Alps Goodness Ghee Moisturiser for dry, dull skin, made with 100 times washed ghee. Hydrates for up to 48 hours.",
+   "usageInstructions": "Apply on clean skin morning and night.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Alps Goodness",
+   "countryOfOrigin": "India"
+  }
+ }
+]

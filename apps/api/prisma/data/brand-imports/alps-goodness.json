@@ -1,0 +1,35 @@
+{
+  "brand": "Alps Goodness",
+  "manufacturer": "Alps Goodness",
+  "feed": "alps-goodness-feed.json",
+  "namePrefix": "Alps Goodness ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Rosemary\\ Water\\ Hair\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Fermented\\ Rice\\ Water\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Ghee\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    }
+  ]
+}
