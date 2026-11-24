@@ -1,0 +1,230 @@
+{
+  "brand": "Uni-ball",
+  "manufacturer": "Mitsubishi Pencil Co. Ltd.",
+  "feed": "uniball-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/uniball/logo-29933dc4.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#FBE9EC",
+  "namePrefix": "Uni-ball ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Air\\ UBA\\ 188\\ ELM\\ Roller\\ Ball\\ Pens\\ \\-\\ 0\\.5\\ mm\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Air\\ UBA\\ 188\\ L\\ Roller\\ Ball\\ Pen\\ \\-\\ 0\\.7mm\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Air\\ UBA\\-188\\-L\\ Roller\\ Ball\\ Pen\\ \\-\\ 0\\.5\\ mm\\ Tip,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Air\\ UBA188\\ M\\ Roller\\ Ball\\ Pen\\ \\-\\ 0\\.5\\ mm\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Click\\ Gel\\ Pen\\ \\-\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Click\\ Gel\\ Pen\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Click\\ Gel\\ Retractable\\ Pen\\ \\-\\ 0\\.7\\ mm,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Click\\-Gel\\ Retractable\\ Pen\\ \\-\\ 0\\.7\\ mm,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Eye\\ UB\\ 150\\ Roller\\ Pen\\ \\-\\ 0\\.5\\ mm\\ Tip,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Eye\\ UB\\ 150\\ Roller\\ Pen\\ \\-\\ 0\\.5\\ mm\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Eye\\ UB\\-157\\ Roller\\ Ball\\ Pens\\ \\-\\ 0\\.7\\ mm,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Eye\\ UB157\\ Roller\\ Ball\\ Pen\\ 0\\.7mm\\ Tip,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Gel\\ Impact\\ UM\\ 153S\\ Gel\\ Pen\\ \\-\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Gel\\ Pen\\ \\-\\ SIGNO\\-207,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jetstream\\ Pen\\ \\-\\ SX\\-101,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jetstream\\ Pen\\ \\-\\ SX\\-101,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jetstream\\ SX\\ 210\\ Ball\\ Pen\\ \\-\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Pin\\ Fineliner\\ Drawing\\ Pen\\ \\-\\ 0\\.03\\ \\-\\ 0\\.8\\ Tip,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Posca\\ Water\\ Based\\ Marker\\ \\-\\ 0\\.9mm\\-1\\.3mm\\ Tips,\\ Multicolor\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Shalaku\\ M5\\-228\\ Mechanical\\ Pencil\\ \\-\\ 0\\.5\\ mm\\ Lead,\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Shalaku\\ M7\\-228\\ Mechanical\\ Pencil\\ \\-\\ 0\\.7\\ mm\\ Lead$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Shalaku\\ M7\\-228\\ Mechanical\\ Pencil\\ \\-\\ 0\\.7\\ mm\\ Lead,\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Shalaku\\ Mechanical\\ Pencil\\ \\-\\ M5\\-228,\\ 0\\.5\\ mm\\ Lead,\\ Assorted\\ Colour$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Signo\\ UMN\\-207\\ Roller\\ Gel\\ Pen\\ \\-\\ 0\\.7\\ mm\\ Tip,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Signo\\ UMN\\-207\\ Roller\\ Gel\\ Pen\\ \\-\\ 0\\.7\\ mm\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vision\\ Elite\\ UB\\ 200\\ Roller\\ Ball\\ Pen\\ \\-\\ 0\\.8\\ mm\\ Tip,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vision\\ Elite\\ UB\\ 200\\ Roller\\ Ball\\ Pen\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    }
+  ]
+}
