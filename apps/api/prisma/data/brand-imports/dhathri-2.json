@@ -1,0 +1,35 @@
+{
+  "brand": "Dhathri",
+  "manufacturer": "Dhathri Ayurveda",
+  "feed": "dhathri-2-feed.json",
+  "namePrefix": "Dhathri ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Kasthurimanjal\\ Face\\ Pack\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Clear\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Moisturising\\ Aloe\\ Vera\\ Beauty\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    }
+  ]
+}

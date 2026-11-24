@@ -1,0 +1,95 @@
+[
+ {
+  "title": "Kasthurimanjal Face Pack Powder",
+  "handle": "kasthurimanjal-face-pack-powder",
+  "vendor": "Dhathri",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/dhathri-2/kasthurimanjal-face-pack-powder-4f74e8f8.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Dhathri Kasthurimanjal wild turmeric face pack powder helps reduce tan, acne marks and blemishes.",
+   "usageInstructions": "Mix with rose water or milk into a paste, apply on the face, leave until nearly dry and rinse.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Dhathri Ayurveda",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Aloe Vera Clear Gel",
+  "handle": "aloe-vera-clear-gel",
+  "vendor": "Dhathri",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "84",
+    "compare_at_price": "84",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/dhathri-2/aloe-vera-clear-gel-a9928b57.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Dhathri Aloe Vera Clear Gel with wheat germ oil and corn extract, a multipurpose gel for face, body and hair. Alcohol, paraben and silicone free.",
+   "usageInstructions": "Apply a small amount on face, body or hair.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Dhathri Ayurveda",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Moisturising Aloe Vera Beauty Gel",
+  "handle": "moisturising-aloe-vera-beauty-gel",
+  "vendor": "Dhathri",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "193",
+    "compare_at_price": "193",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/dhathri-2/moisturising-aloe-vera-beauty-gel-b4de27eb.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Dhathri Moisturising Aloe Vera Beauty Gel with rose and peppermint hydrates, soothes and refreshes face and body skin.",
+   "usageInstructions": "Apply on clean skin and massage gently.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Dhathri Ayurveda",
+   "countryOfOrigin": "India"
+  }
+ }
+]
