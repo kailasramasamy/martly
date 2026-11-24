@@ -1,0 +1,19 @@
+{
+  "brand": "Streax",
+  "manufacturer": "Streax",
+  "feed": "streax-rosemary-feed.json",
+  "namePrefix": "Streax ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Rosemary\\ Water\\ Hair\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    }
+  ]
+}

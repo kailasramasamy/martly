@@ -1,0 +1,43 @@
+[
+ {
+  "title": "Rosemary Water Hair Spray",
+  "handle": "rosemary-water-hair-spray",
+  "vendor": "Streax",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "149",
+    "compare_at_price": "149",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/streax-rosemary/rosemary-water-hair-spray-508705d8.webp"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "182",
+    "compare_at_price": "182",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/streax-rosemary/rosemary-water-hair-spray-2b3bad60.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Streax Rosemary Water spray with natural rosemary extracts and panthenol to reduce hair fall and support stronger, thicker hair.",
+   "usageInstructions": "Spray on the scalp and massage gently with fingertips. Leave on.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Streax",
+   "countryOfOrigin": "India"
+  }
+ }
+]
