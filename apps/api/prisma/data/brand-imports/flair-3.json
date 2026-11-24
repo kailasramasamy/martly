@@ -1,0 +1,43 @@
+{
+  "brand": "Flair",
+  "manufacturer": "Flair Writing Instruments",
+  "feed": "flair-3-feed.json",
+  "namePrefix": "Flair ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cube\\ Dust\\ Free\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Glow\\ 2\\.0\\ mm\\ Mechanical\\ Pencil$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Diva\\ 2\\.0\\ mm\\ Mechanical\\ Pencil$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Creative\\ Miniz\\ Sketch\\ Pens$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    }
+  ]
+}
