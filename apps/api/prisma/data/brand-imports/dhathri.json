@@ -1,0 +1,46 @@
+{
+  "brand": "Dhathri",
+  "manufacturer": "Dhathri Ayurveda Pvt. Ltd.",
+  "feed": "dhathri-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/dhathri/logo-71a10d6a.png",
+  "themeColor": "1E7B3A",
+  "themeColorSecondary": "E4F2E8",
+  "namePrefix": "Dhathri ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Dheedhi\\ Hair\\ Care\\ Herbal\\ Shampoo\\ Cheevakka\\ \\&\\ Thulasi$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hair\\ Care\\ Plus\\ Herbal\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Neelibhringadi\\ Keram\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Chemparathi\\ Thaali\\ Natural\\ Hair\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    }
+  ]
+}

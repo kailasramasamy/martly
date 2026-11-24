@@ -1,0 +1,62 @@
+{
+  "brand": "Godrej Expert",
+  "manufacturer": "Godrej Consumer Products Limited",
+  "feed": "godrej-expert-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/godrej-expert/logo-07c0c646.png",
+  "themeColor": "7AB929",
+  "themeColorSecondary": "EEF6E0",
+  "namePrefix": "Godrej Expert ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Rich\\ Creme\\ Hair\\ Colour\\ Natural\\ Black\\ 1\\.00$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Rich\\ Creme\\ Hair\\ Colour\\ Dark\\ Brown\\ 4\\.06$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Rich\\ Creme\\ Hair\\ Colour\\ Natural\\ Brown\\ 4\\.00$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Rich\\ Creme\\ Hair\\ Colour\\ Natural\\ Brown\\ Sachet$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Rich\\ Creme\\ Hair\\ Colour\\ Dark\\ Brown\\ 4\\.06\\ Sachet\\ Pack\\ of\\ 4$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Easy\\ 5\\ Minute\\ Shampoo\\ Based\\ Hair\\ Colour\\ Natural\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "brand": "Clear (HUL)",
+  "manufacturer": "Hindustan Unilever Limited",
+  "feed": "clear-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/clear/logo-438390da.png",
+  "themeColor": "1B6FC2",
+  "themeColorSecondary": "E3F0FB",
+  "namePrefix": "Clear ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Complete\\ Active\\ Care\\ Anti\\-Dandruff\\ Nourishing\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Active\\ Care\\ Anti\\-Dandruff\\ Nourishing\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    }
+  ]
+}

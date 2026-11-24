@@ -1,0 +1,46 @@
+{
+  "brand": "Mediker",
+  "manufacturer": "Piramal Consumer Products Pvt. Ltd.",
+  "feed": "mediker-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/mediker/logo-6c873b2c.png",
+  "themeColor": "3FA535",
+  "themeColorSecondary": "E6F4E3",
+  "namePrefix": "Mediker ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Anti\\-Lice\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Lice\\ Treatment\\ Shampoo\\ Coconut\\ \\&\\ Neem$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Anti\\-Lice\\ Treatment\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Hand\\ Sanitizer$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    }
+  ]
+}

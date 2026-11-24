@@ -1,0 +1,78 @@
+{
+  "brand": "Nisha",
+  "manufacturer": "Nisha Cosmetics",
+  "feed": "nisha-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/nisha/logo-8fe6a973.png",
+  "themeColor": "C2185B",
+  "themeColorSecondary": "FBE4EE",
+  "namePrefix": "Nisha ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Creme\\ Hair\\ Color\\ Natural\\ Black\\ 1\\.0\\ Box$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Creme\\ Hair\\ Color\\ Flame\\ Red\\ Sachet$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Creme\\ Hair\\ Color\\ Natural\\ Black\\ 1\\.00\\ Sachet$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Creme\\ Hair\\ Color\\ Dark\\ Brown\\ 3\\.0\\ Sachet$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Creme\\ Hair\\ Color\\ Natural\\ Brown\\ 4\\.0\\ Sachet$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Natural\\ Henna\\ Based\\ Hair\\ Color\\ Burgundy\\ Red$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Nature\\ Mate\\ Natural\\ Henna\\ Based\\ Hair\\ Colour\\ Original\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Quick\\ Colour\\ Henna\\ Based\\ Hair\\ Colour\\ Natural\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    }
+  ]
+}

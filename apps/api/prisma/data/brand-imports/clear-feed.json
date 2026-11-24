@@ -1,0 +1,82 @@
+[
+ {
+  "title": "Complete Active Care Anti-Dandruff Nourishing Shampoo",
+  "handle": "complete-active-care-anti-dandruff-nourishing-shampoo",
+  "vendor": "Clear (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170ml",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/clear/complete-active-care-anti-dandruff-nourishing-shampoo-b22d6d61.webp"
+    }
+   },
+   {
+    "title": "350ml",
+    "price": "289",
+    "compare_at_price": "289",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/clear/complete-active-care-anti-dandruff-nourishing-shampoo-b22d6d61.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/clear/complete-active-care-anti-dandruff-nourishing-shampoo-b22d6d61.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/clear/complete-active-care-anti-dandruff-nourishing-shampoo-c592c501.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/clear/complete-active-care-anti-dandruff-nourishing-shampoo-a0ae3dbd.webp"
+   }
+  ],
+  "details": {
+   "description": "Clear Complete Active Care Anti-Dandruff Nourishing Shampoo with zinc pyrithione and climbazole fights dandruff and nourishes the scalp for healthier-looking hair.",
+   "ingredients": "Sles,Silicone, Zinc Pyrithione+ Climbazole",
+   "usageInstructions": "1. Apply it to your wet hair and massage into the scalp. 2. Once applied, rinse thoroughly. 3. For best results repeat the process and use every day.",
+   "manufacturerName": "Hindustan Unilever Limited",
+   "countryOfOrigin": "India",
+   "dangerWarnings": "For external use only. Avoid contact with eyes; if it happens, rinse well with water. Keep out of reach of children."
+  }
+ },
+ {
+  "title": "Active Care Anti-Dandruff Nourishing Hair Oil",
+  "handle": "active-care-anti-dandruff-nourishing-hair-oil",
+  "vendor": "Clear (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/clear/active-care-anti-dandruff-nourishing-hair-oil-e9a35eb4.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/clear/active-care-anti-dandruff-nourishing-hair-oil-e9a35eb4.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/clear/active-care-anti-dandruff-nourishing-hair-oil-57d46228.webp"
+   }
+  ],
+  "details": {
+   "description": "Clear Active Care Anti-Dandruff Hair Oil with vitamin E and 2% sunflower oil is a lightweight, non-sticky oil that nourishes from root to tip, reduces dryness and dandruff irritation and restores shine.",
+   "ingredients": "Mineral Oil, Isopropyl Myristate, Helianthus Annuus (Sunflower) Seed Oil, Perfume, Mentha Arvensis (Peppermint) Oil, Piroctone Olamine, BHT, Tocopheryl Acetate.\nContains 94.4% Mineral Oil (w/w) and 2% Sunflower Oil (w/w).",
+   "manufacturerName": "Herbal Concepts Health Care (P) Ltd",
+   "countryOfOrigin": "India",
+   "dangerWarnings": "For external use only. Avoid contact with eyes; if it happens, rinse well with water. Keep out of reach of children.",
+   "usageInstructions": "Massage the oil into the hair from the roots, leave on the scalp for at least an hour, then rinse with Clear Complete Active Care shampoo."
+  }
+ }
+]

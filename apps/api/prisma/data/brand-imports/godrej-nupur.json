@@ -1,0 +1,22 @@
+{
+  "brand": "Godrej Nupur",
+  "manufacturer": "Godrej Consumer Products Limited",
+  "feed": "godrej-nupur-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/godrej-nupur/logo-915d7d5f.png",
+  "themeColor": "1B6B34",
+  "themeColorSecondary": "E3F1E7",
+  "namePrefix": "Godrej Nupur ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Pure\\ Henna\\ Mehendi$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    }
+  ]
+}

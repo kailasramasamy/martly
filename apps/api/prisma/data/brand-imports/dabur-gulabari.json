@@ -1,0 +1,46 @@
+{
+  "brand": "Dabur Gulabari",
+  "manufacturer": "Dabur India Limited",
+  "feed": "dabur-gulabari-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/dabur-gulabari/logo-997dc327.png",
+  "themeColor": "B5124C",
+  "themeColorSecondary": "FBE3EC",
+  "namePrefix": "Dabur Gulabari ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Premium\\ Rose\\ Water$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Moisturising\\ Cold\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Shower\\ Gel\\ Damask\\ Rose\\ \\&\\ Jojoba\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Shower\\ Gel\\ Himalayan\\ Rose\\ \\&\\ Oudh$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    }
+  ]
+}

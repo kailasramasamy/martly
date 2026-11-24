@@ -1,0 +1,63 @@
+[
+ {
+  "title": "Pure Henna Mehendi",
+  "handle": "pure-henna-mehendi",
+  "vendor": "Godrej Nupur",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/godrej-nupur/pure-henna-mehendi-3163273b.webp"
+    }
+   },
+   {
+    "title": "120g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/godrej-nupur/pure-henna-mehendi-3163273b.webp"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/godrej-nupur/pure-henna-mehendi-3163273b.webp"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/godrej-nupur/pure-henna-mehendi-3163273b.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/godrej-nupur/pure-henna-mehendi-3163273b.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/godrej-nupur/pure-henna-mehendi-8ff497f7.webp"
+   }
+  ],
+  "details": {
+   "description": "Godrej Nupur Henna, also known as Mehndi, is an exceptionally popular hair care solution renowned for its natural goodness and deep nourishing qualities. This 100% pure Rajasthani Henna product is a trusted companion for hair health and nourishment, blending tradition and innovation to provide a natural and nutritious alternative to hair colouring. Harnessing the potent conditioning benefits of henna, Godrej Nupur Henna Mehendi Hair Colour Powder offers a gorgeous reddish-brown tone and deep nourishment, enriched with the goodness of 6 herbs. Experience the elegance of this natural hair colourant and conditioner, which has been traditionally used for decorating hands and feet as a natural colourant. Godrej Nupur Henna is the pure, trusted solution for vibrant, healthy hair.",
+   "ingredients": "Lawsonia Inermis Leaf Powder (Mehendi)",
+   "usageInstructions": "Soak Nupur Henna powder in water for 2-3 hours.\nYou may add curd/oil for extra softness.\nApply paste from root to tip of the hair.\nLeave for 3-4 hours. Rinse thoroughly with water.",
+   "manufacturerName": "P2 - M/s. Progression Industries Pvt. Ltd. Unit-Il",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 1095
+  }
+ }
+]

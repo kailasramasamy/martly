@@ -1,0 +1,150 @@
+{
+  "brand": "Bigen",
+  "manufacturer": "Hoyu Co., Ltd. (marketed in India by Bigen India)",
+  "feed": "bigen-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/bigen/logo-d74a64d4.png",
+  "themeColor": "1F3B73",
+  "themeColorSecondary": "E8ECF5",
+  "namePrefix": "Bigen ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Men's\\ Beard\\ Color\\ Natural\\ Black\\ B101$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men's\\ Beard\\ Color\\ Brown\\ Black\\ B102$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men's\\ Beard\\ Color\\ Dark\\ Brown\\ B103$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men's\\ Beard\\ Color\\ Natural\\ Brown\\ B104$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men's\\ Beard\\ Color\\ Medium\\ Brown\\ B105$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men's\\ Speedy\\ Color\\ Natural\\ Black\\ 101$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men's\\ Speedy\\ Color\\ Brown\\ Black\\ 102$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men's\\ Speedy\\ Color\\ Dark\\ Brown\\ 103$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men's\\ Speedy\\ Color\\ Natural\\ Brown\\ 104$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Men's\\ Speedy\\ Color\\ Medium\\ Brown\\ 105$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Speedy\\ Hair\\ Color\\ Conditioner\\ Natural\\ Black\\ 881$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Speedy\\ Hair\\ Color\\ Conditioner\\ Brownish\\ Black\\ 882$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Speedy\\ Hair\\ Color\\ Conditioner\\ Dark\\ Brown\\ 883$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Speedy\\ Hair\\ Color\\ Conditioner\\ Natural\\ Brown\\ 884$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Powder\\ Hair\\ Color\\ Dark\\ Brown\\ N30$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Powder\\ Hair\\ Color\\ Rich\\ Medium\\ Brown\\ N40$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Powder\\ Hair\\ Color\\ Black\\ Brown\\ N20$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    }
+  ]
+}
