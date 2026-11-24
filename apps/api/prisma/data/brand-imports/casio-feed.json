@@ -1,0 +1,36 @@
+[
+ {
+  "title": "MJ-120D Check and Correct Desktop Calculator",
+  "handle": "mj-120d-check-and-correct-desktop-calculator",
+  "vendor": "Casio",
+  "product_type": "",
+  "body_html": "Casio MJ-120D is a 12-digit desktop calculator with 150-step check and correct, tax keys, a large display and solar plus battery power. Review and correct earlier entries before the final total; suited to shops, offices and billing counters.",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "525",
+    "compare_at_price": "525",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/casio/mj-120d-check-and-correct-desktop-calculator-4e5e7604.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/casio/mj-120d-check-and-correct-desktop-calculator-4e5e7604.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/casio/mj-120d-check-and-correct-desktop-calculator-924a2fba.webp"
+   }
+  ],
+  "details": {
+   "description": "Casio MJ-120D is a 12-digit desktop calculator with 150-step check and correct, tax keys, a large display and solar plus battery power. Review and correct earlier entries before the final total; suited to shops, offices and billing counters.",
+   "usageInstructions": "Press ON/AC to switch on, enter the numbers and operators, then press = for the result. Use the solar panel in good light or replace the battery when the display fades.",
+   "dangerWarnings": "Do not drop, wet or press hard on the keys. Keep away from small children. Replace the battery only with the same type.",
+   "manufacturerName": "Casio India Co. Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ }
+]

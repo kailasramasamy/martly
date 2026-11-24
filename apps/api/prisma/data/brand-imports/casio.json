@@ -1,0 +1,22 @@
+{
+  "brand": "Casio",
+  "manufacturer": "Casio India Co. Pvt. Ltd.",
+  "feed": "casio-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/casio/logo-af2b7dac.png",
+  "themeColor": "#003B95",
+  "themeColorSecondary": "#E6EEF9",
+  "namePrefix": "Casio ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^MJ\\-120D\\ Check\\ and\\ Correct\\ Desktop\\ Calculator$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Calculators"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+ {
+  "title": "W39231B 12 Digit GT Basic Calculator",
+  "handle": "w39231b-12-digit-gt-basic-calculator",
+  "vendor": "Deli",
+  "product_type": "",
+  "body_html": "Deli W39231B is a 12-digit desktop calculator with grand total (GT), step check and correct, solar and battery dual power and a 3-year warranty.",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "395",
+    "compare_at_price": "395",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/deli-calculator/w39231b-12-digit-gt-basic-calculator-2b69e72b.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/deli-calculator/w39231b-12-digit-gt-basic-calculator-2b69e72b.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/deli-calculator/w39231b-12-digit-gt-basic-calculator-23319f90.webp"
+   }
+  ],
+  "details": {
+   "description": "Deli W39231B is a 12-digit desktop calculator with grand total (GT), step check and correct, solar and battery dual power and a 3-year warranty.",
+   "usageInstructions": "Press ON/AC to switch on, enter the numbers and operators, then press = for the result. Use the solar panel in good light or replace the battery when the display fades.",
+   "dangerWarnings": "Do not drop, wet or press hard on the keys. Keep away from small children. Replace the battery only with the same type.",
+   "manufacturerName": "Deli Group",
+   "countryOfOrigin": "India"
+  }
+ }
+]

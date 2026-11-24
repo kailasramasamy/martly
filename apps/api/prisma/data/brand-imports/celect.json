@@ -1,0 +1,37 @@
+{
+  "brand": "Celect",
+  "manufacturer": "Celect",
+  "feed": "celect-feed.json",
+  "themeColor": "#1D4ED8",
+  "themeColorSecondary": "#E8EEFC",
+  "namePrefix": "Celect ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^CT\\-680\\ Large\\ Desktop\\ Basic\\ Calculator\\ 12\\ Digit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Calculators"
+      ]
+    },
+    {
+      "match": "^CT\\-786\\ Basic\\ Calculator\\ 12\\ Digit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Calculators"
+      ]
+    },
+    {
+      "match": "^CE\\-991MS\\ II\\-D\\ 2nd\\ Edition\\ Scientific\\ Calculator$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Calculators"
+      ]
+    }
+  ]
+}

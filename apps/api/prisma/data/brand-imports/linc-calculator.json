@@ -1,0 +1,21 @@
+{
+  "brand": "Linc",
+  "manufacturer": "Linc Pen & Plastics Ltd",
+  "feed": "linc-calculator-feed.json",
+  "themeColor": "#0B55A6",
+  "themeColorSecondary": "#E6EEF8",
+  "namePrefix": "Linc ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^LC\\-556\\ GST\\ Desktop\\ Calculator\\ 12\\ Digit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Calculators"
+      ]
+    }
+  ]
+}

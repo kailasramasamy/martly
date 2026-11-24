@@ -1,0 +1,21 @@
+{
+  "brand": "Deli",
+  "manufacturer": "Deli Group",
+  "feed": "deli-calculator-feed.json",
+  "themeColor": "#E5174F",
+  "themeColorSecondary": "#FDE8EE",
+  "namePrefix": "Deli ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^W39231B\\ 12\\ Digit\\ GT\\ Basic\\ Calculator$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Calculators"
+      ]
+    }
+  ]
+}
