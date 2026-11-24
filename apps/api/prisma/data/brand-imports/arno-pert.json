@@ -1,0 +1,77 @@
+{
+  "brand": "Arno Pert",
+  "manufacturer": "",
+  "feed": "arno-pert-feed.json",
+  "themeColor": "#7C3AED",
+  "themeColorSecondary": "#F1EAFE",
+  "namePrefix": "Arno ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Pert\\ Cool\\ Breeze\\ Air\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Pert\\ Elegance\\ Jasmine\\ Air\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Pert\\ English\\ Lavender\\ Air\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Pert\\ Imperial\\ Sandalwood\\ Air\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Pert\\ Pink\\ Rose\\ Air\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Pert\\ Scottish\\ Meadows\\ Air\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Pert\\ Tangy\\ Lemon\\ Air\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Pert\\ Woody\\ Musk\\ Air\\ Freshener$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    }
+  ]
+}
