@@ -1,0 +1,118 @@
+{
+  "brand": "Pilot",
+  "manufacturer": "Pilot Corporation",
+  "feed": "pilot-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/pilot/logo-ee6abc06.png",
+  "themeColor": "#0B3C8A",
+  "themeColorSecondary": "#E6EEF9",
+  "namePrefix": "Pilot ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ball\\ Pen\\ \\-\\ Blue,\\ Black,\\ Green,\\ Hi\\-techpoint\\ Japanese\\ Technology,\\ V7\\ System$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Pen\\ \\-\\ Blue,\\ Black,\\ Hi\\-techpoint\\ Japanese\\ Technology,\\ V5\\ System$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Pen\\ \\-\\ Blue,\\ Black,\\ Red,\\ Hi\\-techpoint\\ Japanese\\ Technology,\\ V7\\ System$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Pen\\ \\-\\ Blue,\\ Hi\\-techpoint\\ Japanese\\ Technology,\\ V5\\ System$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Pen\\ \\-\\ Blue,\\ Hi\\-techpoint\\ Japanese\\ Technology,\\ V7\\ System$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Point\\ \\-\\ Hi\\-Techpoint\\ 05,\\ Blue,\\ Black,\\ Red,\\ Writes\\ Smoothly$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Point\\ Pen\\ \\-\\ Blue,\\ V5,\\ Needle\\ Point,\\ Writes\\ Smoothly$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Frixion\\ Eraseable\\ Roller\\ Ball\\ Pen\\ \\-\\ Blue,\\ Fine\\ 0\\.7\\ mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Frixion\\ Roller\\ Ball\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Hi\\-Techpoint\\ V\\-7\\ Grip\\ Pen\\ \\-\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Hitechpoint\\ 05\\ \\(Blue\\ \\&\\ Black\\)$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Hitechpoint\\ 05\\ Super\\ Value\\ Blue\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^V5\\ Pen\\ \\-\\ Blue,\\ Black\\ \\&\\ Red$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    }
+  ]
+}
