@@ -1,0 +1,102 @@
+{
+  "brand": "Deli",
+  "manufacturer": "Deli Group",
+  "feed": "deli-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/deli/logo-195e5b93.png",
+  "themeColor": "#E5174F",
+  "themeColorSecondary": "#FDE8EE",
+  "namePrefix": "Deli ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^WM01120\\ Desktop\\ Calculator\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Calculators"
+      ]
+    },
+    {
+      "match": "^ED\\-82MS\\ 2\\.0\\ Scientific\\ Calculator$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Calculators"
+      ]
+    },
+    {
+      "match": "^Office\\ Pins\\ 24mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^E2001\\ Big\\ Cutter$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^E2050\\ Mini\\ Cutter\\ Assorted\\ Colour$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Scissors\\ W6010\\ 210mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Scissors\\ W77759\\ 210mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^EU54600\\ Neon\\ Pencils\\ With\\ Eraser\\ Top$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^W6209\\ Flexible\\ Ruler\\ 30cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^WA00353\\ Sticky\\ Notes\\ Yellow$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^W38561\\ Binder\\ Clips\\ 51mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    }
+  ]
+}
