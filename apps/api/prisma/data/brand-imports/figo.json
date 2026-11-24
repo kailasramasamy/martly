@@ -1,0 +1,59 @@
+{
+  "brand": "Figo",
+  "manufacturer": "Figo Impex",
+  "feed": "figo-feed.json",
+  "namePrefix": "Figo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Moow\\ Liquid\\ Roller\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^A9\\ Liquid\\ Roller\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^A9\\ Hitech\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Panda\\ Liquid\\ Roller\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Aeroclick\\ Retractable\\ Gel\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Longer\\ Jumbo\\ Blue\\ Ink\\ Cartridges$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Ink & Refills"
+      ]
+    }
+  ]
+}
