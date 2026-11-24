@@ -1,0 +1,27 @@
+{
+  "brand": "Faber-Castell",
+  "manufacturer": "Faber-Castell",
+  "feed": "faber-compass-feed.json",
+  "namePrefix": "Faber-Castell ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^GR8\\ Geometry\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Centroid\\ Geometry\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    }
+  ]
+}

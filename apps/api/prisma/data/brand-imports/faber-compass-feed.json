@@ -1,0 +1,64 @@
+[
+ {
+  "title": "GR8 Geometry Box",
+  "handle": "gr8-geometry-box",
+  "vendor": "Faber-Castell",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/faber-compass/gr8-geometry-box-723a83db.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Faber-Castell GR8 geometry box with compass, divider, scale, protractor, set squares, sharpener and eraser.",
+   "usageInstructions": "Use the compass and divider with the pencil lead fitted; keep the instruments in the box.",
+   "dangerWarnings": "Compass and divider points are sharp. Keep away from small children.",
+   "manufacturerName": "Faber-Castell",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Centroid Geometry Box",
+  "handle": "centroid-geometry-box",
+  "vendor": "Faber-Castell",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "164",
+    "compare_at_price": "164",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/faber-compass/centroid-geometry-box-dff228a0.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Faber-Castell Centroid mathematical drawing instrument box with compass, divider, scales, protractor and set squares in a metal tin.",
+   "usageInstructions": "Use the compass and divider with the pencil lead fitted; keep the instruments in the box.",
+   "dangerWarnings": "Compass and divider points are sharp. Keep away from small children.",
+   "manufacturerName": "Faber-Castell",
+   "countryOfOrigin": "India"
+  }
+ }
+]
