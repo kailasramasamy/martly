@@ -1,0 +1,30 @@
+{
+  "brand": "Cello",
+  "manufacturer": "Cello Household Products Pvt. Ltd.",
+  "feed": "cello-2-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cello/logo-53677dde.png",
+  "themeColor": "#ED1C24",
+  "themeColorSecondary": "#1F3A93",
+  "namePrefix": "Cello ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^ColourUp\\ Oil\\ Pastels$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^ColourUp\\ Plastic\\ Crayons$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    }
+  ]
+}

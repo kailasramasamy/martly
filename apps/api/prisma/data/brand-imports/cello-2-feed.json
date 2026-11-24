@@ -1,0 +1,85 @@
+[
+ {
+  "title": "ColourUp Oil Pastels",
+  "handle": "colourup-oil-pastels",
+  "vendor": "Cello",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15 pcs",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/cello-2/colourup-oil-pastels-b9614691.webp"
+    }
+   },
+   {
+    "title": "25 pcs",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/cello-2/colourup-oil-pastels-936d4070.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/cello-2/colourup-oil-pastels-b9614691.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/cello-2/colourup-oil-pastels-186de653.webp"
+   }
+  ],
+  "details": {
+   "description": "Cello Colour Up Oil Pastels are bright-coloured oil pastels. These colours have a smooth laydown that gives even colouring coverage. Oil pastels are perfect for beginners to learn new skills. You can use a scraper tool for enhancing your drawing with scratch and an embossed effect. These colours give good coverage, have deep and rich colours and have a soft and intensive colour stroke. It has wide coverage and a convenient grip.",
+   "usageInstructions": "Perfect for beginners to learn new skills.\nUse it for drawing or colouring.",
+   "manufacturerName": "CELLO WRITING AND STATIONERY PRIVATE LIMITED",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "ColourUp Plastic Crayons",
+  "handle": "colourup-plastic-crayons",
+  "vendor": "Cello",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15 pcs",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/cello-2/colourup-plastic-crayons-c57c8da6.webp"
+    }
+   },
+   {
+    "title": "24 pcs",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/cello-2/colourup-plastic-crayons-c931847a.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/cello-2/colourup-plastic-crayons-c57c8da6.webp"
+   },
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/cello-2/colourup-plastic-crayons-b33292f6.webp"
+   }
+  ],
+  "details": {
+   "description": "Cello Colour Up Plastic Crayons have a smooth texture. It comes in a triangular shape that is created to give you a better grip and control. These plastic crayons are erasable and non-flaky which keeps your children safe and clean hands. These smooth crayons give the easy flow of colours onto the papers. These crayons can be used from both the end, the tip can be used for fine colouring and the end for covering a larger surface area.",
+   "usageInstructions": "It can be used for art and craft purposes.\nIt can be used on surfaces like paper, cardboard, etc.",
+   "manufacturerName": "CELLO WRITING AND STATIONERY PRIVATE LIMITED",
+   "countryOfOrigin": "India",
+   "dangerWarnings": "Not suitable for children under 3 years (small parts, choking hazard)."
+  }
+ }
+]
