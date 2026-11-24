@@ -1,0 +1,206 @@
+{
+  "brand": "Milka",
+  "manufacturer": "Mondelez International",
+  "feed": "milka-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/milka/logo-57c7541c.png",
+  "themeColor": "#6F4E9E",
+  "themeColorSecondary": "#EFE8F7",
+  "namePrefix": "Milka ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Alpine\\ Milk\\ Chocolate\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Bubbly\\ Alpine\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Caramel\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Chips\\ Ahoy\\ Chocolate\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Dessert\\ Alpine\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Cowspot\\ Chocolate\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Daim\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Daim\\ Filled\\ Alpine\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Dark\\ Chocolate\\ Zartherb$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Whole\\ Hazelnut\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Happy\\ Cows\\ Chocolate\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Alpine\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Kuhflecken\\ Alpine\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Luflee\\ Alpine\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Oreo\\ Brownie\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Oreo\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Raisins\\ \\&\\ Nuts\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Raisins\\ \\&\\ Nuts\\ Milk\\ Chocolate\\ Pouch$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Riso\\ Soffiato\\ Fine\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Alpine\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Cilekli\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Triolade\\ Alpine\\ Milk\\ With\\ White\\ \\&\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^White\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Whole\\ Hazelnuts\\ Delicate\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    }
+  ]
+}

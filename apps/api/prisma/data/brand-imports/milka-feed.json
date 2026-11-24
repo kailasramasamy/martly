@@ -1,0 +1,933 @@
+[
+ {
+  "title": "Alpine Milk Chocolate Bar",
+  "handle": "alpine-milk-chocolate-bar",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "329",
+    "compare_at_price": "329",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/alpine-milk-chocolate-bar-6df3a2b8.webp"
+    },
+    "barcode": "7622202273452"
+   },
+   {
+    "title": "100g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/alpine-milk-chocolate-bar-b39a967c.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/alpine-milk-chocolate-bar-6df3a2b8.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Alpine Milk Chocolate offers a smooth and creamy chocolate experience made with rich Alpine milk. Known for its velvety texture and indulgent flavour, this classic chocolate bar is a delicious treat for any occasion. Perfect for enjoying on your own, sharing with friends and family, or satisfying your chocolate cravings with a timeless favourite.",
+   "ingredients": "Sugar, Cocoa Butter, Skimmed Milk Powder, Cocoa Mass, Whey Powder (from Milk), Milk Fat, Emulsifier (Soya Lecithins), Hazelnut Paste and Flavouring.\nMilk Chocolate Contains: Cocoa Solids 30% Minimum.\nMilk Solids: 18% Minimum.\nAllergen Advice: May Contain Other Nuts and Wheat.",
+   "nutritionalInfo": {
+    "Energy": "533 kcal",
+    "Fat": "30 g",
+    "Saturated Fat": "17 g",
+    "Carbohydrates": "58 g",
+    "Sugars": "58 g",
+    "Fibre": "1.8 g",
+    "Protein": "6.2 g",
+    "Salt": "0.35 g"
+   },
+   "storageInstructions": "Keep in a cool and dry place.",
+   "manufacturerName": "Mondelez Deutschland Snacks Production GmbH & Co. KG",
+   "fssaiLicense": "10021022000090",
+   "countryOfOrigin": "Germany"
+  }
+ },
+ {
+  "title": "Bubbly Alpine Milk Chocolate",
+  "handle": "bubbly-alpine-milk-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "279",
+    "compare_at_price": "279",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/bubbly-alpine-milk-chocolate-10e3a6ef.webp"
+    },
+    "barcode": "7622210371638"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/bubbly-alpine-milk-chocolate-10e3a6ef.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Bubbly Alpine Milk Chocolate offers a light, airy, and melt-in-your-mouth experience. This unique chocolate bar features aerated milk chocolate crafted with 100% Alpine milk, delivering an ultra-creamy texture with every bite. Its iconic purple packaging and playful bubbles make it a favourite among both children and adults, perfect for those searching for “Bubbly Milka”, “Milka airy chocolate”, or “bubbles milk chocolate bar”. Enjoy a fun and indulgent treat that delights the senses.",
+   "ingredients": "Sugar, cocoa butter, skimmed milk powder, cocoa mass, whey powder, milk fat, emulsifiers (soya lecithin, E476), hazelnuts, flavorings. Contains milk, nuts, soya.",
+   "nutritionalInfo": {
+    "(per 100 g) Energy": "553 kcal; Fat: 34 g; Saturates: 21 g; Carbohydrate: 54 g; Sugars: 54 g; Protein: 7 g; Salt: 0.43 g"
+   },
+   "manufacturerName": "Mondelez Romania S.A. Bd. Bucure?tii Noi",
+   "countryOfOrigin": "Romania",
+   "storageInstructions": "Store in a cool, dry place away from heat and sunlight."
+  }
+ },
+ {
+  "title": "Caramel Chocolate",
+  "handle": "caramel-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/caramel-chocolate-27b45dc1.webp"
+    },
+    "barcode": "7622201050757"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/caramel-chocolate-27b45dc1.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, creamy taste of Milka Caramel Chocolate, a heavenly chocolate bar featuring smooth Alpine milk chocolate wrapped around a luscious, soft caramel filling. This German quality chocolate is renowned for its indulgent treat and creamy texture, making it the perfect choice for those seeking a satisfying combination of velvety chocolate and sweet, gooey caramel. With its smooth caramel centre and creamy caramel filling, every bite is a delight for the senses.",
+   "ingredients": "Sugar, glucose syrup, cocoa butter, sweetened condensed skimmed milk, cocoa mass, whey powder, sorbitol, sweetened condensed whole milk, vegetable fats (palm, shea), invert sugar syrup, milk fat, salt, emulsifier (soya lecithin), flavourings",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy": "109 kcal",
+    "Fat": "6.7 g",
+    "Saturates": "3.8 g",
+    "Carbohydrate": "11 g",
+    "Sugars": "10 g",
+    "Protein": "0.9 g",
+    "Sodium": "20.63 mg",
+    "Cholesterol": "2.4 mg",
+    "Fibre": "0.24 g"
+   },
+   "storageInstructions": "*Store in a dry place\n*Protect from heat",
+   "manufacturerName": "Mondelez Deutschland Snacks Production GmbH & Co. KG",
+   "countryOfOrigin": "Germany"
+  }
+ },
+ {
+  "title": "Chips Ahoy Chocolate Bar",
+  "handle": "chips-ahoy-chocolate-bar",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/chips-ahoy-chocolate-bar-11a066c5.webp"
+    },
+    "barcode": "7622210442086"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/chips-ahoy-chocolate-bar-11a066c5.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka brings to you the perfect fusion of Chips Ahoy cookies and milk chocolate to satisfy your taste buds. It is made with 100% Alpine milk chocolate and is an irresistible decadent treat. Milka has been crafting chocolate indulgences like this since 1901.\nMade with 100% Alpine milk chocolate.\nInfused with pieces of Chips Ahoy.\nIt is crafted to be soft and has crushed biscuit pieces.",
+   "ingredients": "Sugar, Flour, Cocoa Butter, Milk Powder, Cocoa Mass, Whey Powder, Milk Fat, Vegetable Oil and Butter.",
+   "nutritionalInfo": {
+    "Energy": "555 kcal",
+    "Fat": "35 g",
+    "Carbohydrates": "55 g",
+    "Fibre": "1.3 g",
+    "Protein": "5.3 g",
+    "Salt": "0.49 g"
+   },
+   "storageInstructions": "Keep in a cool and dry place.",
+   "manufacturerName": "Mondelez Deutschland Snacks Production GmbH & Co. KG",
+   "fssaiLicense": "10021022000090",
+   "countryOfOrigin": "Germany"
+  }
+ },
+ {
+  "title": "Chocolate Dessert Alpine Milk Chocolate",
+  "handle": "chocolate-dessert-alpine-milk-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/chocolate-dessert-alpine-milk-chocolate-231ddadc.webp"
+    },
+    "barcode": "7622300026752"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/chocolate-dessert-alpine-milk-chocolate-231ddadc.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Chocolate Dessert combines irresistible taste sensations in a delicate alpine milk slab. A liquid chocolate-tasting filling, a wonderfully creamy and excitingly crunchy filling with chocolate pieces. Smooth and creamy, this delicious classic is for chocolate purists. These special chocolate bars make a great gift for the chocolate lover in your life. It has a milky taste blended with rich chocolate desserts that makes it very delightful. With every bite, you will get addicted to it.",
+   "ingredients": "Sugar, Cocoa Butter, Skimmed Milk Powder & Soya",
+   "storageInstructions": "You can eat it whenever you want. Add it to your breakfast or while having evening snacks. Eat it with a nice cup of tea or coffee. You can also use it to make cakes, muffins, and milkshakes. Can also be used as a topping for desserts. It is 100% vegetarian and is made with high-quality ingredients. It is available in a pack of 100 g. It has a shelf life of 270 days.\nStorage Information: Store in a cool and dry place, away from direct sunlight.",
+   "manufacturerName": "Candor Foodies",
+   "countryOfOrigin": "Slovakia"
+  }
+ },
+ {
+  "title": "Cowspot Chocolate Bar",
+  "handle": "cowspot-chocolate-bar",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/cowspot-chocolate-bar-e93ca412.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/cowspot-chocolate-bar-e93ca412.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Cow Spot Bar is a perfect combination of Alpine milk chocolate and white chocolate. White chocolate spots in between milk chocolate make it look appealing. Enjoy the true flavour of cocoa and milk in this chocolate. The chocolate bar melts in your mouth and gives a joyful experience. Alpine milk chocolate infused with classic white chocolate brings on the best of both.",
+   "ingredients": "Sugar, Cocoa Butter, Skimmed Milk Powder, Whey Powder, Butterfat, Emulsifier (Soy Lecithin), Flavouring. Contains Milk, Hazelnuts, Soy. May Contain Traces Of Nuts And Other Contain Wheat.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "100g",
+    "Enerji / Energy": "2216Kj/530kcal",
+    "Ya? / Fat": "29g",
+    "Doymu? Ya? / Of Which Saturates": "18g",
+    "Karbonhidrat / Carbohydrate": "60g",
+    "?ekerler / Of Which Sugars": "59g",
+    "Lif / Fibre": "1.6g",
+    "Protein": "6g",
+    "Tuz / Salt": "0.37g"
+   },
+   "storageInstructions": "*Store in a cool place away from direct sunlight\n*Each packet is wrapped with freshness",
+   "manufacturerName": "Mondelez Deutschland Snacks Production GmbH & Co. KG",
+   "countryOfOrigin": "Germany"
+  }
+ },
+ {
+  "title": "Daim Chocolate",
+  "handle": "daim-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/daim-chocolate-e52ed825.webp"
+    },
+    "barcode": "7622300185015"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/daim-chocolate-e52ed825.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Daim is a crispy Daim filled chocolate. This chocolate features bits of the iconic Daim in milk chocolate. The smooth chocolate contains Daim pieces that come together to create this amazingly delicious chocolate bar. Indulge in the rich combination of milk chocolate and Daim. It is an ideal treat for sharing and snacking while travelling or at home.",
+   "ingredients": "Sugar, Cocoa Butter, Skimmed Milk Powder, Cocoa Mass, Sweet Whey Powder, Vegetable Oil, Concentrated Butter, Butter (1.6%), Almonds (1.0%), Hazelnuts, Sweetened Condensed Skimmed Milk, Emulsifier (Soy Lecithin), Salt, Flavouring (Vanilla).",
+   "manufacturerName": "Mondelez",
+   "fssaiLicense": "11521999000021",
+   "countryOfOrigin": "GERMANY",
+   "storageInstructions": "Store in a cool, dry place away from heat and sunlight."
+  }
+ },
+ {
+  "title": "Daim Filled Alpine Milk Chocolate",
+  "handle": "daim-filled-alpine-milk-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/daim-filled-alpine-milk-chocolate-91463312.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/daim-filled-alpine-milk-chocolate-91463312.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich and delightful combination of smooth Alpine milk chocolate and crunchy caramel Daim pieces with the Milka Daim chocolate bar. Crafted with creamy Alpine milk, this premium chocolate experience offers a satisfying contrast in texture and taste. Savour the melt-in-your-mouth smoothness of the milk chocolate base, enhanced by the sweet and satisfying crunch of the iconic Daim pieces. This irresistible fusion of flavours and textures creates a truly addictive treat, perfect for sharing or enjoying on-the-go. With every bite, you'll be captivated by the delightful blend of creamy sweetness and rich caramel, making this Milka Daim chocolate bar an ideal indulgence for chocolate lovers.",
+   "ingredients": "Sugar, Cocoa Butter, Skimmed Milk Powder, Cocoa Mass, Whey Powder (From Milk), Palm Oil, Milk Fat, Almonds (1%), Sweetened Condensed Skimmed Milk, Emulsifier (Soya Lecithin), Hazelnut Paste, Salt, Whey Permeate (From Milk), Flavourings",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy": "2202 Kj / 527 kcal",
+    "Fat": "29g",
+    "Of Which Saturates": "17g",
+    "Carbohydrate": "59g",
+    "Of Which Sugars": "58g",
+    "Fibre": "1.6g",
+    "Protein": "5.3g",
+    "Salt": "0.55g"
+   },
+   "storageInstructions": "*Store in a cool and dry place, away from direct sunlight",
+   "manufacturerName": "Candor Foodies",
+   "countryOfOrigin": "Slovakia"
+  }
+ },
+ {
+  "title": "Dark Chocolate Zartherb",
+  "handle": "dark-chocolate-zartherb",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": false,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/dark-chocolate-zartherb-78239c02.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/dark-chocolate-zartherb-78239c02.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Dark is a dream for chocolate lovers! Milka Dark is a dream for chocolate lovers! While Milka is known across the world for its milk chocolate, its dark chocolate has a luscious and rich texture. It is made with 100% Alpine milk. With the perfect taste of dark chocolate and cocoa, these have an everlasting impression. Once you eat it, you will understand the true definition of dark chocolate.\nMade with 100% Alpine milk.\nIt has a rich texture and a classic taste.\nIts cocoa flavour is prominent.",
+   "ingredients": "Sugar, Chocolate Cocoa Butter, Skim Milk, Milk Fat, Whey, Soy Lecithin, Hazelnut Paste. Artificial Flavour.",
+   "storageInstructions": "A ready to eat dessert to instantly please your taste buds.\nCan be used as toppings on ice-creams, cakes, and other desserts.\nA classic, convenient gifting idea for all ages.",
+   "manufacturerName": "Mondelez Deutschland Snacks Production GmbH & Co. KG",
+   "countryOfOrigin": "Germany"
+  }
+ },
+ {
+  "title": "Whole Hazelnut Chocolate",
+  "handle": "whole-hazelnut-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "95g",
+    "price": "329",
+    "compare_at_price": "329",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/whole-hazelnut-chocolate-afa02936.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/whole-hazelnut-chocolate-afa02936.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Whole Hazelnut Chocolate combines smooth Alpine milk chocolate with whole roasted hazelnuts, offering a rich, creamy taste and a satisfying crunch in every bite. Popular among chocolate lovers, it is ideal for those searching for “Milka hazelnut bar”, “whole nut chocolate bar”, or “Milka Ganze Haselnüsse”. Perfect for sharing or enjoying as a treat, this chocolate bar delivers indulgence and flavour in every piece.",
+   "ingredients": "Sugar, hazelnuts, cocoa butter, skimmed milk powder, cocoa mass, whey powder, milk fat, emulsifier (soya lecithin), flavorings. Contains milk, hazelnuts, soya.",
+   "nutritionalInfo": {
+    "(per 100 g) Energy": "566 kcal; Fat: 37 g; Saturates: 14 g; Carbohydrate: 46 g; Sugars: 45 g; Protein: 8.3 g; Salt: 0.16 g"
+   },
+   "manufacturerName": "Mondelez Deutschland Snacks Production GmbH & Co. KG",
+   "countryOfOrigin": "Germany",
+   "storageInstructions": "Store in a cool, dry place away from heat and sunlight."
+  }
+ },
+ {
+  "title": "Happy Cows Chocolate Bar",
+  "handle": "happy-cows-chocolate-bar",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "329",
+    "compare_at_price": "329",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/happy-cows-chocolate-bar-d8cadedc.webp"
+    },
+    "barcode": "7622202262524"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/happy-cows-chocolate-bar-d8cadedc.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Happy Cows is a delightful chocolate bar combining smooth white chocolate with creamy Alpine milk chocolate in a fun cow-patterned design. Its playful appearance and deliciously creamy texture make it an enjoyable treat for chocolate lovers of all ages. Perfect for sharing with friends and family or enjoying as a fun and indulgent snack.",
+   "ingredients": "Sugar, Cocoa Butter, Skimmed Milk Powder, Cocoa Mass, Sweet Whey Powder (from Milk), Pure Butterfat, Emulsifier (Soya Lecithin), Hazelnuts and Flavouring.\nAllergen Advice: May Contain Other Nuts and Wheat.",
+   "nutritionalInfo": {
+    "Energy": "2246 kJ / 538 kcal",
+    "Fat": "31 g",
+    "Saturates": "18 g",
+    "Carbohydrates": "58 g",
+    "Sugars": "57 g",
+    "Fibre": "1.9 g",
+    "Protein": "6.1 g",
+    "Salt": "0.27 g"
+   },
+   "storageInstructions": "Keep in a cool and dry place.",
+   "manufacturerName": "Mondelez Deutschland Snacks Production GmbH & Co. KG",
+   "fssaiLicense": "10021022000090",
+   "countryOfOrigin": "Germany"
+  }
+ },
+ {
+  "title": "Hazelnut Alpine Milk Chocolate",
+  "handle": "hazelnut-alpine-milk-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/hazelnut-alpine-milk-chocolate-1cf3d81c.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/hazelnut-alpine-milk-chocolate-1cf3d81c.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the exquisite Milka Hazelnut Chocolate Pouch, a delectable treat that combines the rich flavours of delicate melting Milka alpine milk chocolate with whole hazelnuts. Made from alpine milk, this chocolate pouch is sure to satisfy your sweet cravings. The whole hazelnuts add a nice crunch to the smooth chocolate, creating a delightful and satisfying experience. Enjoy this chocolate as a snack, add it to your breakfast, or use it as an ingredient in baking and desserts for an extra indulgent treat. With its rich flavour and creamy texture, the Milka Hazelnut Chocolate Pouch is a must-try for all chocolate lovers.",
+   "ingredients": "Sugar, Cocoa Butter, Skimmed milk powder & Soya",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "16.7g",
+    "Energijska Vrednost": "2267 Kj",
+    "Energijska Vrednost kcal": "543 kcal",
+    "Maš?obe": "32g",
+    "Od Tega Nasicene Maš?obe": "17g",
+    "Beljakovine": "7.1g",
+    "Ogljikovi Hidrati": "54g",
+    "Od Tega Sladkorji": "53g",
+    "Prehranske Vlaknine": "2.5g",
+    "Sol": "0.34g"
+   },
+   "storageInstructions": "* Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Candor Foodies",
+   "countryOfOrigin": "Slovakia"
+  }
+ },
+ {
+  "title": "Kuhflecken Alpine Milk Chocolate",
+  "handle": "kuhflecken-alpine-milk-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/kuhflecken-alpine-milk-chocolate-3d201220.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/kuhflecken-alpine-milk-chocolate-3d201220.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Kuhflecken Chocolate are small bars wrapped in delicate Alpine milk chocolate and white spots to look like cows. The creaminess that melts in your mouth and the texture is the milk, which comes from Alpine cows that gives you the irresistible feelings and fulfilment of eating the whole bar. It is a delightfully sweet, sensational, and inseparable missing complimentary piece to your daily life. Indulge in the rich combination of milk chocolate and hazelnuts. It is an ideal treat for sharing and snacking while travelling or at home. With every bite, you will get addicted to it.",
+   "ingredients": "Sugar, Cocoa Butter, Skimmed Milk Powder & Soya",
+   "storageInstructions": "You can eat it whenever you want. Add it to your breakfast or while having evening snacks. Eat it with a nice cup of tea or coffee. You can also use it to make cakes, muffins, and milkshakes. Can also be used as a topping for desserts. It is 100% vegetarian and is made with high-quality ingredients. It is available in a pack of 100 g. It has a shelf life of 270 days.\nStorage Information: Store in a cool and dry place, away from direct sunlight.",
+   "manufacturerName": "Candor Foodies",
+   "countryOfOrigin": "Slovakia"
+  }
+ },
+ {
+  "title": "Luflee Alpine Milk Chocolate",
+  "handle": "luflee-alpine-milk-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/luflee-alpine-milk-chocolate-8615df3e.webp"
+    },
+    "barcode": "7622400883033"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/luflee-alpine-milk-chocolate-8615df3e.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Luflée is a smooth chocolate delight from delicious dairy Alpine milk chocolate made from 100% milk and Alpine milk chocolate. The chocolate melts smoothly on your tongue due to the enlarged surface and therefore creates an intensified taste experience. These special chocolate biscuits make a great gift for the chocolate lover in your life. It has a milky taste that makes it very delightful. With every bite, you will get addicted to it.",
+   "ingredients": "Sugar, Cocoa Butter, Skimmed Milk Powder & Soya",
+   "storageInstructions": "You can eat it whenever you want. Add it to your breakfast or while having evening snacks. Eat it with a nice cup of tea or coffee. You can also use it to make cakes, muffins, and milkshakes. Can also be used as a topping for desserts.\nIt is 100% vegetarian and is made with high-quality ingredients. It is available in a pack of 100 g. It has a shelf life of 270 days.\nStorage Information: Store in a cool and dry place, away from direct sunlight.",
+   "manufacturerName": "Candor Foodies",
+   "countryOfOrigin": "Slovakia"
+  }
+ },
+ {
+  "title": "Oreo Brownie Chocolate",
+  "handle": "oreo-brownie-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/oreo-brownie-chocolate-ce69f7ed.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/oreo-brownie-chocolate-ce69f7ed.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Oreo Brownie Chocolate takes indulgence to the next level, combining smooth Alpine milk chocolate with generous pieces of Oreo brownie for a rich, decadent treat. Popular among chocolate lovers, it is perfect for those searching for 'Milka Oreo Brownie', 'Oreo brownie chocolate', or 'Milka filled brownie bar'. Enjoy the irresistible combination of creamy chocolate and chewy brownie in every bite.",
+   "ingredients": "Sugar, cocoa butter, skimmed milk powder, cocoa mass, wheat flour, vegetable oils (palm, shea), whey powder, milk fat, reduced fat cocoa, raising agents, salt, emulsifier (soya lecithin), flavourings",
+   "nutritionalInfo": {
+    "Energy": "554 kcal",
+    "Fat": "35 g",
+    "Saturates": "20 g",
+    "Carbohydrate": "51 g",
+    "Sugars": "44 g",
+    "Fibre": "4.5 g",
+    "Protein": "6 g",
+    "Salt": "0.31 g"
+   },
+   "storageInstructions": "*Store in a dry place\n*Protect from heat",
+   "manufacturerName": "Mondelez Spain S.L",
+   "countryOfOrigin": "Spain"
+  }
+ },
+ {
+  "title": "Oreo Chocolate",
+  "handle": "oreo-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/oreo-chocolate-b3e7eac4.webp"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/oreo-chocolate-85856305.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/oreo-chocolate-b3e7eac4.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Oreo Chocolate combines smooth Alpine milk chocolate with crunchy pieces of original Oreo cookies, creating a delightful crunchy-and-creamy treat. Loved worldwide for its unique texture and indulgent flavour, it is ideal for those searching for Milka Oreo, Oreo chocolate bar, or Milka Oreo cream filling. Perfect as a snack or a sweet indulgence, every bite delivers a satisfying mix of chocolate and cookie goodness.",
+   "ingredients": "Milk Chocolate, Vanilla Flavoured Milk Filling, Cocoa Biscuits",
+   "nutritionalInfo": {
+    "Energy": "555 kcal",
+    "Fat": "34 g",
+    "Saturates": "19 g",
+    "Carbohydrate": "56 g",
+    "Sugars": "49 g",
+    "Fibre": "1.4 g",
+    "Protein": "5.4 g",
+    "Salt": "0.49 g"
+   },
+   "storageInstructions": "*Store in a dry place\n*Protect from heat",
+   "manufacturerName": "Mondelez Deutschland Snacks Production GmbH & Co. KG",
+   "countryOfOrigin": "Germany"
+  }
+ },
+ {
+  "title": "Raisins & Nuts Chocolate",
+  "handle": "raisins-nuts-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/raisins-nuts-chocolate-2072c26d.webp"
+    },
+    "barcode": "7622202269790"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/raisins-nuts-chocolate-2072c26d.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Raisins & Nuts Chocolate delivers a delightful combination of juicy raisins and crunchy hazelnuts, all encased in smooth Alpine milk chocolate. Loved for its rich flavour and satisfying texture, it is a top choice for those searching for “Milka raisins and nuts”, “fruit and nut milk chocolate”, or “Milka vineyard bar”. Perfect for sharing or enjoying as a wholesome treat, Milka Raisins & Nuts Chocolate brings a deliciously indulgent experience to every bite.",
+   "ingredients": "Sugar, Raisins (19%), Cocoa Butter, Cocoa Mass, Skimmed Milk Powder, Whey Powder (from Milk), Hazelnuts (5%), Milk Fat, Emulsifier from Vegetable Source (Soya Lecithin), Hazelnut Paste, Artificial Vanillin Flavour.",
+   "nutritionalInfo": {
+    "Serving size": "22.5 g",
+    "Calories": "114 kcal",
+    "Total Fat": "6.2 g",
+    "Saturated Fat": "3.3 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "3.0 mg",
+    "Sodium": "20 mg",
+    "Total Carbohydrate": "14 g",
+    "Dietary Fibre": "0.74 g",
+    "Total Sugars": "12 g",
+    "Includes Added Sugars": "7.2 g",
+    "Protein": "1.4 g"
+   },
+   "manufacturerName": "Mondelez Deutschland Snacks Production GmbH & Co. KG",
+   "countryOfOrigin": "Germany",
+   "storageInstructions": "Store in a cool, dry place away from heat and sunlight."
+  }
+ },
+ {
+  "title": "Raisins & Nuts Milk Chocolate Pouch",
+  "handle": "raisins-nuts-milk-chocolate-pouch",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/raisins-nuts-milk-chocolate-pouch-cc67eed0.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/raisins-nuts-milk-chocolate-pouch-cc67eed0.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible combination of Milka's premium milk chocolate, raisins, and hazelnuts. This delectable treat offers a perfect balance of creamy, milky flavour and satisfying crunch. Crafted with the finest Alpine milk, the soft, velvety chocolate envelops the plump raisins and crunchy nuts, creating a truly indulgent experience. Enjoy this vegetarian-friendly snack on the go or savour it at home, as the rich, moreish taste will have you coming back for more. With every bite, you'll be transported to the heart of the Alps, where the highest quality ingredients come together to deliver a truly exceptional confectionery delight.",
+   "ingredients": "Sugar, Raisin (19%), Cocoa Butter, Skimmed Milk Powder (From Cow), Cocoa Mass, Whey Powder (From Milk), Hazelnut (5%), Milk Fat, Emulsifier (Soya Lecithin), Hazelnut Paste, Artificial Flavours (Vanillin)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "16.7g",
+    "Energy": "495kcal",
+    "Fat": "26g",
+    "Of Which Saturates": "14g",
+    "Carbohydrate": "58g",
+    "Of Which Sugars": "56g",
+    "Fibre": "2.9g",
+    "Protein": "6.0g",
+    "Salt": "0.29g",
+    "Energy Per Serving": "83kcal",
+    "Fat Per Serving": "4.3g",
+    "Of Which Saturates Per Serving": "2.3g",
+    "Carbohydrate Per Serving": "9.7g",
+    "Of Which Sugars Per Serving": "9.3g",
+    "Fibre Per Serving": "0.5g",
+    "Protein Per Serving": "1g",
+    "Salt Per Serving": "0.05g"
+   },
+   "storageInstructions": "*Store in a cool and dry place, away from direct sunlight",
+   "manufacturerName": "Candor Foodies",
+   "countryOfOrigin": "Slovakia"
+  }
+ },
+ {
+  "title": "Riso Soffiato Fine Milk Chocolate",
+  "handle": "riso-soffiato-fine-milk-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/riso-soffiato-fine-milk-chocolate-44e97020.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/riso-soffiato-fine-milk-chocolate-44e97020.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Riso is a tablet with puffed rice, wrapped in fine milk chocolate, for a light but unforgettable taste. A premium quality bar with rice crisps that is very delightful and a favourite for many.",
+   "ingredients": "Sugar, Cocoa Butter, Skimmed Milk Powder & Soya",
+   "nutritionalInfo": {
+    "Energy": "507 kcal",
+    "Fat": "26 g",
+    "Carbohydrate": "58 g",
+    "Fibre": "2.9 g",
+    "Protein": "6 g"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Away from direct sunlight",
+   "manufacturerName": "Candor Foodies",
+   "countryOfOrigin": "Slovakia"
+  }
+ },
+ {
+  "title": "Strawberry Alpine Milk Chocolate",
+  "handle": "strawberry-alpine-milk-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/strawberry-alpine-milk-chocolate-5fb4e070.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/strawberry-alpine-milk-chocolate-5fb4e070.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "These are imported strawberry chocolate bars. Delightfully rich, smooth, and delicious. Milka strawberry yoghurt is a smooth chocolate delight. Milka chocolate is made from alpine milk with skimmed milk yoghurt cream filling with strawberry flavour. It has no preservatives, no artificial colours & flavours. Indulge in the rich combination of milk chocolate and hazelnuts. It is an ideal treat for sharing and snacking while travelling or at home. With every bite, you will get addicted to it.",
+   "ingredients": "Sugar, Cocoa Butter, Skimmed Milk Powder & Soya",
+   "storageInstructions": "You can eat it whenever you want. Add it to your breakfast or while having evening snacks. Eat it with a nice cup of tea or coffee. You can also use it to make cakes, muffins, and milkshakes. Can also be used as a topping for desserts. It is 100% vegetarian and is made with high-quality ingredients. It is available in a pack of 100 g. It has a shelf life of 270 days.\nStorage Information: Store in a cool and dry place, away from direct sunlight.",
+   "manufacturerName": "Candor Foodies",
+   "countryOfOrigin": "Slovakia"
+  }
+ },
+ {
+  "title": "Strawberry Cilekli Chocolate",
+  "handle": "strawberry-cilekli-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/strawberry-cilekli-chocolate-12745ba3.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/strawberry-cilekli-chocolate-12745ba3.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Strawberry Cilekli Chocolate combines luscious Alpine milk chocolate with a creamy, strawberry-flavoured filling, offering a sweet and indulgent treat. Enjoy a delightful balance of smooth chocolate and fruity flavour in every bite.",
+   "ingredients": "Sugar, cocoa butter, skimmed milk powder, cocoa mass, vegetable oils (palm, shea), lactose, milk fat, whey powder, strawberry powder, emulsifier (soya lecithin), flavourings, colour (beetroot red), citric acid",
+   "nutritionalInfo": {
+    "Energy": "560 kcal",
+    "Fat": "35 g",
+    "Saturates": "20 g",
+    "Carbohydrate": "57 g",
+    "Sugars": "56 g",
+    "Protein": "4 g",
+    "Fibre": "1.2 g",
+    "Salt": "0.23 g"
+   },
+   "storageInstructions": "* Normal room temperature (25 degrees celsius)",
+   "manufacturerName": "Mondelez Deutschland Snacks Production GmbH & Co. KG",
+   "countryOfOrigin": "Germany"
+  }
+ },
+ {
+  "title": "Triolade Alpine Milk With White & Dark Chocolate",
+  "handle": "triolade-alpine-milk-with-white-dark-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "280g",
+    "price": "549",
+    "compare_at_price": "549",
+    "available": false,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/triolade-alpine-milk-with-white-dark-chocolate-d3a40e82.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/triolade-alpine-milk-with-white-dark-chocolate-d3a40e82.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Triolade is a combination of Milka alpine milk chocolate, white chocolate, and dark chocolate. Milka triolade is a smooth chocolate indulgence and a combination of Milka alpine milk chocolate, white chocolate, and dark chocolate made from 100 percent alpine milk. These special chocolate bars make a great gift for the chocolate lover in your life. It has a milky taste blended with a rich cream that makes it very delightful. With every bite, you will get addicted to it.",
+   "ingredients": "Sugar, Cocoa Butter, Cocoa Mass, Skimmed Milk Powder, Whey Powder (From Milk), Milk Fat, Emulsifier (Soya Lecithin), Hazelnut Paste, Flavourings.",
+   "storageInstructions": "You can eat it whenever you want. Add it to your breakfast or while having evening snacks. Eat it with a nice cup of tea or coffee. You can also use it to make cakes, muffins, and milkshakes. Can also be used as a topping for desserts. It is 100% vegetarian and is made with high-quality ingredients.\nIt is available in a pack of 280 g. It has a shelf life of 365 days.\nStorage Information: Store in a cool and dry place, away from direct sunlight.",
+   "manufacturerName": "Candor Foodies",
+   "countryOfOrigin": "Slovakia"
+  }
+ },
+ {
+  "title": "White Chocolate",
+  "handle": "white-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": false,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/white-chocolate-d84f9aeb.webp"
+    },
+    "barcode": "7622210999634"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/white-chocolate-d84f9aeb.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka White Chocolate bar brings to you a delicious combination of milk chocolate with a milk-cherry aroma filling and cherry fruit filling. You can now satisfy your fruit and chocolate craving all in one. Indulge in the rich combination of milk chocolate and fruit. The delicious pleasure and velvety, smooth melting white chocolate pleasure. It is an ideal treat for sharing and snacking while travelling or at home. Store in a cool dry place.",
+   "ingredients": "Sugar, Cocoa Butter, Skim Milk, Whey, Milkfat, Soy Lecithin, Artificial Flavour.",
+   "manufacturerName": "Mondelez",
+   "fssaiLicense": "11521999000021",
+   "countryOfOrigin": "UKRAINE",
+   "storageInstructions": "Store in a cool, dry place away from heat and sunlight."
+  }
+ },
+ {
+  "title": "Whole Hazelnuts Delicate Milk Chocolate",
+  "handle": "whole-hazelnuts-delicate-milk-chocolate",
+  "vendor": "Milka",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "270g",
+    "price": "599",
+    "compare_at_price": "599",
+    "available": false,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/whole-hazelnuts-delicate-milk-chocolate-c516972a.webp"
+    },
+    "barcode": "7622210719850"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/milka/whole-hazelnuts-delicate-milk-chocolate-c516972a.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milka Whole Hazelnuts Chocolate brings to you the delicious pleasure of this delicate melting milk chocolate. It is made from 100% milk chocolate with whole hazelnuts. The whole hazelnuts add a nice crunch to the smooth chocolate. Indulge in the rich combination of milk chocolate and hazelnuts. It is an ideal treat for sharing and snacking while travelling or at home. It has a milky taste blended with a brownie which makes it very delightful. With every bite, you will get addicted to it.",
+   "ingredients": "Sugar, Hazelnuts (17%), Cocoa Butter, Skimmed Milk Powder, Cocoa Mass, Whey Powder (From Milk), Milk Fat, Emulsifier (Soya Lecithins), Hazelnut Paste Flavouring.",
+   "storageInstructions": "You can eat it whenever you want. Add it to your breakfast or while having evening snacks. Eat it with a nice cup of tea or coffee. You can also use it to make cakes, muffins, and milkshakes. Can also be used as a topping for desserts. It is 100% vegetarian and is made with high-quality ingredients. It has a shelf life of 270 days.\nStorage Information: Store in a cool and dry place, away from direct sunlight.",
+   "manufacturerName": "Candor Foodies",
+   "countryOfOrigin": "Slovakia"
+  }
+ }
+]
