@@ -1,0 +1,33 @@
+[
+ {
+  "title": "Hair Colour Shampoo Black",
+  "handle": "hair-colour-shampoo-black",
+  "vendor": "VIP",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5 pcs",
+    "price": "234",
+    "compare_at_price": "234",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/vip/hair-colour-shampoo-black-741d4532.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "VIP Hair Colour Shampoo in black for hair, moustache, beard and body hair. 100% grey coverage, ammonia-free. Pack of 5 sachets of 20ml.",
+   "usageInstructions": "Apply on wet hair, lather, leave for 5 to 10 minutes and rinse.",
+   "dangerWarnings": "For external use only. Do a patch test 48 hours before use. Avoid contact with eyes; if it happens, rinse well with water. Do not use if you have a skin allergy or scalp irritation. Keep away from children.",
+   "manufacturerName": "VIP",
+   "countryOfOrigin": "India"
+  }
+ }
+]

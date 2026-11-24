@@ -1,0 +1,19 @@
+{
+  "brand": "VIP",
+  "manufacturer": "VIP",
+  "feed": "vip-feed.json",
+  "namePrefix": "VIP ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Hair\\ Colour\\ Shampoo\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    }
+  ]
+}
