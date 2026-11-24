@@ -1,0 +1,35 @@
+{
+  "brand": "RKS",
+  "manufacturer": "RKS",
+  "feed": "rks-feed.json",
+  "namePrefix": "RKS ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Herbal\\ Black\\ Henna\\ Hair\\ Colour$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Vrs\\ Herpul\\ Black\\ Henna\\ Hair\\ Colour$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Peeroo\\ Black\\ Herbal\\ Hair\\ Colour$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    }
+  ]
+}

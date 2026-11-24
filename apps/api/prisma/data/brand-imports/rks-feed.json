@@ -1,0 +1,95 @@
+[
+ {
+  "title": "Herbal Black Henna Hair Colour",
+  "handle": "herbal-black-henna-hair-colour",
+  "vendor": "RKS",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "3 pcs",
+    "price": "377",
+    "compare_at_price": "377",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/rks/herbal-black-henna-hair-colour-b63c8da3.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "RKS Herbal Henna for natural black hair colour and grey coverage. Pack of 3 boxes of 60g.",
+   "usageInstructions": "Mix the powder with water into a paste, apply on hair, leave for 1 to 2 hours and rinse.",
+   "dangerWarnings": "For external use only. Do a patch test 48 hours before use. Avoid contact with eyes; if it happens, rinse well with water. Do not use if you have a skin allergy or scalp irritation. Keep away from children.",
+   "manufacturerName": "RKS",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vrs Herpul Black Henna Hair Colour",
+  "handle": "vrs-herpul-black-henna-hair-colour",
+  "vendor": "RKS",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "2 pcs",
+    "price": "297",
+    "compare_at_price": "297",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/rks/vrs-herpul-black-henna-hair-colour-b1cbb50a.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "RKS Vrs Herpul black henna hair colour powder, ammonia-free, for grey coverage. Pack of 2 boxes.",
+   "usageInstructions": "Mix the powder with water into a paste, apply on hair, leave for 1 to 2 hours and rinse.",
+   "dangerWarnings": "For external use only. Do a patch test 48 hours before use. Avoid contact with eyes; if it happens, rinse well with water. Do not use if you have a skin allergy or scalp irritation. Keep away from children.",
+   "manufacturerName": "RKS",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Peeroo Black Herbal Hair Colour",
+  "handle": "peeroo-black-herbal-hair-colour",
+  "vendor": "RKS",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "2 pcs",
+    "price": "347",
+    "compare_at_price": "347",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/rks/peeroo-black-herbal-hair-colour-22234294.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "RKS Natural Peeroo herbal henna hair colour in natural black, ammonia-free. Pack of 2 boxes of 60g.",
+   "usageInstructions": "Mix the powder with water into a paste, apply on hair, leave for 1 to 2 hours and rinse.",
+   "dangerWarnings": "For external use only. Do a patch test 48 hours before use. Avoid contact with eyes; if it happens, rinse well with water. Do not use if you have a skin allergy or scalp irritation. Keep away from children.",
+   "manufacturerName": "RKS",
+   "countryOfOrigin": "India"
+  }
+ }
+]
