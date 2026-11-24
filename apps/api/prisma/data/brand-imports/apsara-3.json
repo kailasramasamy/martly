@@ -1,0 +1,43 @@
+{
+  "brand": "Apsara (Faber-Castell)",
+  "manufacturer": "Hindustan Pencils Pvt. Ltd.",
+  "feed": "apsara-3-feed.json",
+  "namePrefix": "Apsara ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Deluxe\\ Scale\\ 30\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Tidy\\ Top\\ Sharpener$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Regal\\ Gold\\ Extra\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Glass\\ Marking\\ Pencils\\ White$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    }
+  ]
+}

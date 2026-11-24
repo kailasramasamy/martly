@@ -1,0 +1,126 @@
+[
+ {
+  "title": "Deluxe Scale 30 cm",
+  "handle": "deluxe-scale-30-cm",
+  "vendor": "Apsara (Faber-Castell)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/apsara-3/deluxe-scale-30-cm-2f7c6428.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Apsara Deluxe 30 cm transparent scale, thick and broad with mm markings for precision and smooth rounded edges.",
+   "usageInstructions": "Place along the line and draw with a pencil.",
+   "dangerWarnings": "Keep away from small children.",
+   "manufacturerName": "Hindustan Pencils Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tidy Top Sharpener",
+  "handle": "tidy-top-sharpener",
+  "vendor": "Apsara (Faber-Castell)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20 pcs",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/apsara-3/tidy-top-sharpener-4216a637.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Apsara Tidy Top round regular-point container sharpener with a transparent lid that collects pencil shavings. Box of 20.",
+   "usageInstructions": "Insert the pencil and turn. Empty the shavings from the lid.",
+   "dangerWarnings": "Blade is sharp. Keep away from small children.",
+   "manufacturerName": "Hindustan Pencils Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Regal Gold Extra Dark Pencils",
+  "handle": "regal-gold-extra-dark-pencils",
+  "vendor": "Apsara (Faber-Castell)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "3 pcs",
+    "price": "139",
+    "compare_at_price": "139",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/apsara-3/regal-gold-extra-dark-pencils-a292907a.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Apsara Regal Gold extra dark pencils. Each box has 10 pencils, a sharpener and an eraser. Pack of 3 boxes.",
+   "usageInstructions": "Sharpen and write.",
+   "dangerWarnings": "Keep away from small children. Not for eating.",
+   "manufacturerName": "Hindustan Pencils Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Glass Marking Pencils White",
+  "handle": "glass-marking-pencils-white",
+  "vendor": "Apsara (Faber-Castell)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/apsara-3/glass-marking-pencils-white-d084270d.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Apsara white glass marking pencils for marking on glass, plastic and other smooth surfaces. Pack of 10.",
+   "usageInstructions": "Sharpen and mark on the surface. Wipe off with a cloth.",
+   "dangerWarnings": "Keep away from small children. Not for eating.",
+   "manufacturerName": "Hindustan Pencils Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ }
+]
