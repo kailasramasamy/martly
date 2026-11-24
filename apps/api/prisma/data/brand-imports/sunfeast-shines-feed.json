@@ -1,0 +1,33 @@
+[
+ {
+  "title": "Mom's Magic Shines Butter Cookies",
+  "handle": "mom-s-magic-shines-butter-cookies",
+  "vendor": "Sunfeast (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "128g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/sunfeast-shines/mom-s-magic-shines-butter-cookies-17557a8c.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://d6n8etyvzwcog.cloudfront.net/products/sunfeast-shines/mom-s-magic-shines-butter-cookies-17557a8c.webp"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Looking for a biscuit that brings something new to the table? Meet Sunfeast Mom’s Magic Shines – a delightful take on the classic butter biscuit. Light, flaky layers come together in a crisp bite. Each one is enriched with a smooth buttery flavour and topped with a gentle sugar glaze that adds just the right hint of sweetness.\nWhether you’re taking a chai break, catching up with loved ones, or simply indulging in some me-time, Mom’s Magic Shines makes every moment feel a little more special. It’s the kind of crunch that comforts, without ever feeling too heavy.\nCrafted to charm with every bite, this biscuit brings a little magic to your everyday snacking moments.",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India",
+   "storageInstructions": "Store in a cool, dry place. Keep the pack sealed after opening."
+  }
+ }
+]

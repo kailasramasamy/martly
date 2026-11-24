@@ -1,0 +1,21 @@
+{
+  "brand": "Sunfeast (ITC)",
+  "manufacturer": "ITC Limited",
+  "feed": "sunfeast-shines-feed.json",
+  "themeColor": "#C2410C",
+  "themeColorSecondary": "#FFF1E6",
+  "namePrefix": "Sunfeast ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Mom's\\ Magic\\ Shines\\ Butter\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    }
+  ]
+}
