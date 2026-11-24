@@ -1,0 +1,214 @@
+{
+  "brand": "Parker",
+  "manufacturer": "Parker Pen Company",
+  "feed": "parker-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/parker/logo-f2e7723e.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#EEEEEE",
+  "namePrefix": "Parker ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Beta\\ Neo\\ Black\\ Body\\ Silver\\ Coated\\ Clip\\ Refillable\\ Ball\\ Pen\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Beta\\ Premium\\ Black\\ Body\\ Gold\\ Coated\\ Clip\\ Refillable\\ Fountain\\ Pen\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Beta\\ Premium\\ Roller\\ Ball\\ Pen\\ \\-\\ With\\ Gold\\ Cap\\ Coated\\ Clip$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Beta\\ Premium\\ Roller\\ Ball\\ Pen\\ \\-\\ With\\ Silver\\ Cap\\ Coated\\ Clip$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Classic\\ Gold\\ Ball\\ Pen\\ \\-\\ Refillable$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Fountain\\ Pen\\ \\-\\ Blue,\\ Chrome\\ Trim,\\ Vector\\ Standard,\\ Fine\\ Nib,\\ Writes\\ Smoothly$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Frontier\\ Stainless\\ Steel\\ Chrome\\ Trim\\ Roller\\ Ball\\ Pen\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Galaxy\\ Standard\\ GT\\ Ball\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Gift\\ Set\\ \\-\\ Vector\\ Standard\\ Ball\\ Pen\\ With\\ Black\\ Body$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jotter\\ London\\ Stainless\\ Steel\\ Ball\\ Pen\\ \\-\\ Gold\\ Trim$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jotter\\ Standard\\ Ball\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jotter\\ Standard\\ Ball\\ Pen\\ \\-\\ Refillable,\\ Black\\ Body$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jotter\\ Standard\\ Ball\\ Pen\\ \\-\\ Refillable,\\ Blue\\ Body$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Latitude\\ Matte\\ Black\\ Chrome\\ Trim\\ Refillable\\ Ball\\ Pen\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Quink\\ Ink\\ Bottle\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Ink & Refills"
+      ]
+    },
+    {
+      "match": "^Vector\\ Fountain\\ Pen\\ Refillable\\ \\-\\ Matte\\ Black,\\ Fine\\ With\\ Gold\\ Nib$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vector\\ Limited\\ Edition\\ XO\\ Writing\\ Collection\\ Ball\\ Pen\\ \\&\\ Notepad\\ Gift\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vector\\ Metallix\\ Fountain\\ Pen\\ \\-\\ With\\ Quink\\ Ink,\\ Refillable,\\ Black\\ Body$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vector\\ Special\\ Edition\\ Roller\\ Ball\\ Pen\\ With\\ Keychain\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vector\\ Standard\\ Black\\ Body\\ Gold\\ Trim\\ Refillable\\ Roller\\ Ball\\ Pen\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vector\\ Standard\\ Blue\\ Body\\ Chrome\\ Trim\\ Ball\\ Pen\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vector\\ Standard\\ CT\\ Ballpoint\\ Pen\\ With\\ A6\\ Wiro\\ Notebook\\ Set\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vector\\ Standard\\ Calligraphy\\ Chrome\\ Trim\\ Fountain\\ Pen\\ \\-\\ Blue\\ \\&\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vector\\ Standard\\ Roller\\ Ball\\ Pen\\ \\-\\ Refillable,\\ Black\\ Body,\\ Chrome\\ Trim,\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vector\\ Standard\\ Special\\ Edition\\ Ballpoint\\ Pen\\ CT\\ With\\ Printed\\ Notebook\\ \\-\\ Pink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    }
+  ]
+}
