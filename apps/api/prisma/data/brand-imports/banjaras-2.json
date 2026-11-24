@@ -1,0 +1,29 @@
+{
+  "brand": "Banjara's",
+  "manufacturer": "Vishal Personal Care Pvt. Ltd.",
+  "feed": "banjaras-2-feed.json",
+  "themeColor": "#3E7D32",
+  "themeColorSecondary": "#EAF3E4",
+  "namePrefix": "Banjara's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Black\\ Henna\\ with\\ Hibiscus\\ Hair\\ Colour$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Black\\ Henna\\ with\\ Amla\\ Hair\\ Colour$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    }
+  ]
+}
