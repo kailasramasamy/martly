@@ -1,0 +1,19 @@
+{
+  "brand": "Omega",
+  "manufacturer": "Omega",
+  "feed": "omega-feed.json",
+  "namePrefix": "Omega ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Non\\-Magnetic\\ Whiteboard\\ and\\ Blackboard\\ Duster$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    }
+  ]
+}

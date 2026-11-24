@@ -1,0 +1,33 @@
+[
+ {
+  "title": "Non-Magnetic Whiteboard and Blackboard Duster",
+  "handle": "non-magnetic-whiteboard-and-blackboard-duster",
+  "vendor": "Omega",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5 pcs",
+    "price": "363",
+    "compare_at_price": "363",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/omega/non-magnetic-whiteboard-and-blackboard-duster-56c7f552.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Omega non-magnetic duster for whiteboards and blackboards, made in India. Pack of 5 in assorted colours.",
+   "usageInstructions": "Wipe the board in even strokes.",
+   "dangerWarnings": "Keep away from the eyes. Not a toy.",
+   "manufacturerName": "Omega",
+   "countryOfOrigin": "India"
+  }
+ }
+]
