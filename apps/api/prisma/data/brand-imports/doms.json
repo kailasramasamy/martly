@@ -1,0 +1,574 @@
+{
+  "brand": "DOMS",
+  "manufacturer": "DOMS Industries Pvt. Ltd.",
+  "feed": "doms-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/doms/logo-98c269b3.png",
+  "themeColor": "#2753A4",
+  "themeColorSecondary": "#E8EEF8",
+  "namePrefix": "DOMS ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Inxtra\\ Fine\\ Ball\\ Pens\\ \\-\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Inxon\\ Ball\\ Pens\\ \\-\\ Black,\\ Blue\\ \\&\\ Red\\ Inks$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Bi\\ Colour\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Colour\\ Pencils\\ Full\\ Size\\ 24\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Colour\\ Pencils\\ With\\ 1\\ Silver\\ Shade$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Colour\\ Pencils\\ With\\ Sharpener$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^HSC\\ Colour\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Water\\ Soluble\\ Colour\\ Pencils\\ 12\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Long\\ Jumbo\\ Wax\\ Crayons$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Extra\\ Long\\ Wax\\ Crayons\\ With\\ 1\\ Silver\\ Crayon$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Super\\ Smooth\\ Wax\\ Crayons$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Plastic\\ Crayons$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Oil\\ Pastels\\ Multi\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Poster\\ Colour$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Water\\ Colour\\ Cakes$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Water\\ Colour\\ Cakes\\ 12\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Water\\ Colour\\ Pens\\ Mini$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Sketch\\ Max\\ Water\\ Colour\\ Pens$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Water\\ Colour\\ Pens\\ 24\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Fusion\\ X\\-Tra\\ Super\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^X1\\ X\\-Tra\\ Super\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^X1\\ X\\-Tra\\ Super\\ Dark\\ Pencils\\ With\\ Sharpener\\ \\&\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Zillion\\ X\\-Tra\\ Super\\ Dark\\ Graphite\\ Pencils\\ With\\ Sharpener\\ \\&\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Zoom\\ Triangle\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Zoom\\ Ultimate\\ Dark\\ Triangle\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Neon\\ Rubber\\ Tipped\\ Graphite\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Neon\\ Pencil\\ RT$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Y1\\+\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Cubo\\ Dust\\ Free\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Dust\\ Free\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Long\\ Coloured\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Fragrance\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Neon\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^M\\-Tech\\ Erasers$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Sports\\ Collectable\\ Car\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Eras\\ Ner\\ Eraser\\ \\&\\ Sharpener$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Two\\ Dooz\\ Pencil\\ Sharpeners\\ \\&\\ Dust\\ Free\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Pencil\\ Sharpeners$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Pencil\\ Sharpeners\\ Assorted\\ Colours$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Value\\ Pencil\\ Sharpeners$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Extra\\ Long\\ Pencil\\ Sharpeners$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Dust\\ Collector\\ Sharpener$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Soccer\\ Shots\\ Pencil\\ Sharpener$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Geo\\ Tron\\ Mathematical\\ Drawing\\ Instrument\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Geomiti\\ Mathematical\\ Drawing\\ Geometry\\ Instrument\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Batman\\ Series\\ A4\\ Exercise\\ Single\\ Line\\ Notebook\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Superman\\ Series\\ A4\\ Single\\ Line\\ Notebook\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Tom\\ \\&\\ Jerry\\ A4\\ Exercise\\ Single\\ Line\\ Notebook\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Artsy\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Junior\\ Art\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Art\\ Amaze\\ Drawing\\ \\&\\ Colouring\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Art\\ Apps\\ Nxt\\ Creative\\ Learning\\ Activity$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Art\\ Carnival\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Art\\ Gear\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Art\\ On\\ Wheels\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Art\\ Peps\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Painting\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^All\\ The\\ Best\\ Stationery\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Champions\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Exam\\ Essential\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Junior\\ Speedz\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Junior\\ Unicorn\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Neon\\ Gear\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Neon\\ Prime\\ Premium\\ Stationery\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Pencil\\ Smart\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Speedz\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Superman\\ Stationery\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Unicorn\\ Stationery\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Woman\\ Stationery\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Wow\\ Stationery\\ Kit$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    }
+  ]
+}
