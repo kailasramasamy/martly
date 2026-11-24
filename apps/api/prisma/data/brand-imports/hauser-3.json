@@ -1,0 +1,19 @@
+{
+  "brand": "Hauser",
+  "manufacturer": "Hauser",
+  "feed": "hauser-3-feed.json",
+  "namePrefix": "Hauser ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Artz\\ Jumbo\\ Wax\\ Crayons\\ 24\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    }
+  ]
+}

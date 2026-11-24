@@ -1,0 +1,33 @@
+[
+ {
+  "title": "Artz Jumbo Wax Crayons 24 Shades",
+  "handle": "artz-jumbo-wax-crayons-24-shades",
+  "vendor": "Hauser",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "24 pcs",
+    "price": "118",
+    "compare_at_price": "118",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/hauser-3/artz-jumbo-wax-crayons-24-shades-39ece1b4.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Hauser Artz jumbo wax crayons in 24 shades. Non-toxic, extra long.",
+   "usageInstructions": "Colour on paper. Store in the case.",
+   "dangerWarnings": "Non-toxic. Not for eating. Keep away from small children.",
+   "manufacturerName": "Hauser",
+   "countryOfOrigin": "India"
+  }
+ }
+]
