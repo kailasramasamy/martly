@@ -1,0 +1,254 @@
+{
+  "brand": "Pentel",
+  "manufacturer": "Pentel Co. Ltd.",
+  "feed": "pentel-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/pentel/logo-95d69c13.png",
+  "themeColor": "#E60012",
+  "themeColorSecondary": "#FDE8E8",
+  "namePrefix": "Pentel ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Arts\\ Pointliner\\ S40\\ Colour\\ Dye\\ Ink\\ Pens\\ \\-\\ 0\\.4\\ MM\\ Tip$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^ERTP126\\ Glue\\ Tape$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Energel\\ BL410\\ Bold\\ Roller\\ Gel\\ Pen\\-\\ 1\\.0\\ mm,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ BL410\\ Bold\\ Roller\\ Gel\\ Pen\\-\\ 1\\.0\\ mm,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ BL410\\ Bold\\ Roller\\ Gel\\ Pen\\-\\ 1\\.0\\ mm,\\ Green\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ BL410\\ Bold\\ Roller\\ Gel\\ Pen\\-\\ 1\\.0\\ mm,\\ Red\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ BL417\\ Gel\\ Pen\\-\\ 0\\.7\\ mm,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ BL417\\ Gel\\ Pen\\-\\ 0\\.7\\ mm,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ BL417\\ Gel\\ Pen\\-\\ 0\\.7\\ mm,\\ Green\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ BL417\\ Gel\\ Pen\\-\\ 0\\.7\\ mm,\\ Red\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ BL417\\ Gel\\ Roller\\ Pen\\ \\-\\ 0\\.7\\ mm,\\ Blue\\ \\&\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ BL417\\ Pastel\\ Body\\ Colours\\ Roller\\ Gel\\ Pens\\ \\-\\ 0\\.7\\ mm\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ Click\\ BL437R1\\ Retractable\\ Roller\\ Gel\\ Pen\\ \\-\\ 0\\.7\\ mm\\ Tip,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ Click\\ BL437R1\\ Retractable\\ Roller\\ Gel\\ Pen\\ \\-\\ 0\\.7\\ mm\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ Metal\\ Lite\\ BL447\\ Black\\ Body\\ Gel\\ Roller\\ Pen\\ \\-\\ 0\\.7\\ mm\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ Metal\\ Lite\\ BL447\\ Gel\\ Roller\\ Pen\\ \\-\\ 0\\.7\\ mm\\ Tip,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Energel\\ Metal\\ Lite\\ BL447\\ Gel\\ Roller\\ Pen\\ \\-\\ 0\\.7\\ mm\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^I\\ Zee\\ BXC467\\ Retractable\\ Ballpoint\\ Black\\ Barrel\\ Pen\\ \\-\\ 0\\.7\\ mm\\ Tip,\\ 4\\ In\\ 1\\ Colours$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^MW45\\ White\\ Board\\ Marker\\ \\-\\ Bullet\\ Tip,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^MW45\\ White\\ Board\\ Marker\\ \\-\\ Bullet\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^MW45\\ White\\ Board\\ Marker\\ \\-\\ Bullet\\ Tip,\\ Green\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^MW45\\ White\\ Board\\ Marker\\ \\-\\ Bullet\\ Tip,\\ Red\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^N450\\ Permanent\\ Marker\\ \\-\\ Bullet\\ Tip,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^N450\\ Permanent\\ Marker\\ \\-\\ Bullet\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^N450\\ Permanent\\ Marker\\ \\-\\ Bullet\\ Tip,\\ Green\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^N450\\ Permanent\\ Marker\\ \\-\\ Bullet\\ Tip,\\ Red\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^NF450\\ Permanent\\ Marker\\ \\-\\ 1\\.2\\ mm\\ Tip,\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^NF450\\ Permanent\\ Marker\\ \\-\\ 1\\.6\\ mm\\ Tip,\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Q\\ Erase\\ QE427\\ Mechanical\\ Pencil\\ \\-\\ 0\\.7\\ mm,\\ Black\\ Body$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^ZTP205\\ Refillable\\ Correction\\ Tape\\ \\-\\ Solid\\ Purple\\ Body$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    }
+  ]
+}
