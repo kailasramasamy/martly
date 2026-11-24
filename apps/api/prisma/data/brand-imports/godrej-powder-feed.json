@@ -1,0 +1,33 @@
+[
+ {
+  "title": "Ezee Original Powder Hair Colour Natural Black",
+  "handle": "ezee-original-powder-hair-colour-natural-black",
+  "vendor": "Godrej Expert",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "8 pcs",
+    "price": "189",
+    "compare_at_price": "189",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/godrej-powder/ezee-original-powder-hair-colour-natural-black-dbd59bfc.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Godrej Expert Original powder hair colour in natural black. 100% grey coverage, long lasting, no ammonia. Pack of 8 sachets.",
+   "usageInstructions": "Mix the powder with the liquid as directed on the pack, apply on dry hair and rinse after the time stated on the pack.",
+   "dangerWarnings": "For external use only. Do a patch test 48 hours before use. Avoid contact with eyes; if it happens, rinse well with water. Do not use if you have a skin allergy or scalp irritation. Keep away from children.",
+   "manufacturerName": "Godrej Consumer Products",
+   "countryOfOrigin": "India"
+  }
+ }
+]

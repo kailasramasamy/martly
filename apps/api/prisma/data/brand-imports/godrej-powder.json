@@ -1,0 +1,19 @@
+{
+  "brand": "Godrej Expert",
+  "manufacturer": "Godrej Consumer Products",
+  "feed": "godrej-powder-feed.json",
+  "namePrefix": "Godrej Expert ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ezee\\ Original\\ Powder\\ Hair\\ Colour\\ Natural\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    }
+  ]
+}
