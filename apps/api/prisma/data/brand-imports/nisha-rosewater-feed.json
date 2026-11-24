@@ -1,0 +1,43 @@
+[
+ {
+  "title": "Refreshing Rose Water",
+  "handle": "refreshing-rose-water",
+  "vendor": "Nisha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "133",
+    "compare_at_price": "133",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/nisha-rosewater/refreshing-rose-water-4a193b38.webp"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "223",
+    "compare_at_price": "223",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://d6n8etyvzwcog.cloudfront.net/products/nisha-rosewater/refreshing-rose-water-c2f5511d.webp"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": ""
+   }
+  ],
+  "details": {
+   "description": "Nisha Refreshing Rose Water, gulab jal and skin toner with pure rose oil. Hydrating, pore-tightening and pH balancing; also removes makeup.",
+   "usageInstructions": "Apply with cotton on a clean face or spray as a mist.",
+   "dangerWarnings": "For external use only. Avoid contact with eyes.",
+   "manufacturerName": "Nisha",
+   "countryOfOrigin": "India"
+  }
+ }
+]

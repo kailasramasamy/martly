@@ -1,0 +1,19 @@
+{
+  "brand": "Nisha",
+  "manufacturer": "Nisha",
+  "feed": "nisha-rosewater-feed.json",
+  "namePrefix": "Nisha ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Refreshing\\ Rose\\ Water$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    }
+  ]
+}
