@@ -1,0 +1,78 @@
+{
+  "brand": "Kores",
+  "manufacturer": "Kores (India) Ltd.",
+  "feed": "kores-2-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kores/logo-f63fe977.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#1F3A93",
+  "namePrefix": "Kores ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Colour\\ Pencils\\ 12\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Oil\\ Pastels$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Wax\\ Crayons$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Sketch\\ Pens\\ Regular\\ 12\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Dual\\ Tip\\ Brush\\ \\&\\ Sketch\\ Pens$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Poster\\ Colours\\ 6\\ Shades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Art & Colours"
+      ]
+    },
+    {
+      "match": "^Mat\\ Geo\\ Geometry\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    },
+    {
+      "match": "^Max\\ Geometry\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Geometry & School Supplies"
+      ]
+    }
+  ]
+}
