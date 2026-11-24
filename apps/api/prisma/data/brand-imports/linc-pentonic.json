@@ -1,0 +1,118 @@
+{
+  "brand": "Linc Pentonic",
+  "manufacturer": "Linc Pen & Plastics Ltd.",
+  "feed": "linc-pentonic-feed.json",
+  "logo": "https://d6n8etyvzwcog.cloudfront.net/brands/linc-pentonic/logo-8de65beb.png",
+  "themeColor": "#0054A6",
+  "themeColorSecondary": "#E6F0FA",
+  "namePrefix": "Linc Pentonic ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^B\\-RT\\ Retractable\\ Ball\\ Pens\\ \\-\\ 0\\.7\\ mm,\\ Multicolour\\ Rubber\\ Grip$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Pen\\ \\-\\ Assorted\\ Ink\\ Colour$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Pen\\ \\-\\ Blue,\\ Black\\ \\&\\ Red\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Pens\\ \\-\\ 0\\.7\\ mm\\ Tip,\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Pens\\ \\-\\ 0\\.7\\ mm\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Pens\\ \\-\\ Blue\\ \\&\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ball\\ Pens\\ \\-\\ Blue\\ Ink,\\ Multicolour$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Extra\\ Dark\\ Premium\\ Pencil\\ \\-\\ HB2\\ Graphite\\ Lead$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Frost\\ Gel\\ Pen\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^GeL\\ Pen\\ \\-\\ Blue,\\ Black\\ \\&\\ Red\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Gel\\ Pen\\ \\-\\ Black\\ \\&\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Gel\\ Pen\\ \\-\\ Black\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Gel\\ Pens\\ \\-\\ 0\\.6\\ mm\\ Tip,\\ Blue\\ Ink$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    }
+  ]
+}
