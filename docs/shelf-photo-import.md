@@ -3,6 +3,13 @@
 Turns phone photos of packs missing from the catalog into master-catalog products listed at chosen stores. Everything stays
 in a local run folder until a person approves it. Scripts are in `apps/api/scripts/shelf-photos/`.
 
+## Without the Claude API (default since 2026-11-24)
+
+Every script takes `--no-claude`. The reading, grouping, labelling, Tamil and render checks are then done in a Claude Code session,
+and only the OpenAI renders are paid for. `session-files.ts` writes the brand and aisle lists, splits the work and validates what
+the session wrote. The step-by-step is the `shelf-photo-import` skill (`.claude/skills/shelf-photo-import/`). Images must be
+transparent: `process.ts` rejects renders with a solid or white backdrop, and `publish.ts` holds any product with an opaque image.
+
 ## Flow
 
 1. `group.ts` reads each photo with Haiku and proposes which consecutive photos are one product.

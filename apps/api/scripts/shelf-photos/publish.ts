@@ -4,7 +4,7 @@
  * Safe to re-run: a product whose SKU already exists only gets any missing store listing. Writes run/fix-list.json for
  * the second pass. Uses DATABASE_URL unless --prod is passed. Images always go to the live bucket.
  *
- *   npx tsx scripts/shelf-photos/publish.ts --run ~/Downloads/psb-products-2026-11-02/run [--dry-run] [--prod] [--stock 30] [--decisions file]
+ *   npx tsx scripts/shelf-photos/publish.ts --run ~/Downloads/psb-products-2026-11-02/run [--dry-run] [--prod] [--stock 30] [--decisions file] [--no-claude]
  */
 import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -12,6 +12,7 @@ import { join } from "node:path";
 import dotenv from "dotenv";
 import Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
+import sharp from "sharp";
 import * as z from "zod/v4";
 import { PrismaClient, type Prisma } from "../../generated/prisma/client.js";
 
@@ -20,7 +21,8 @@ const { putObject } = await import("../../src/services/media.js");
 const { uniqueBrandSlug } = await import("../../src/services/brands.js");
 const { MODEL } = await import("../../src/services/catalog-agent/extract.js");
 
-const STORES = ["942432de-5c51-437a-b747-67a874809bd8", "8f56d5c1-7a4d-4e87-8fe1-2d0b8600c839"];
+/** Sree Ranga only: PSB (942432de-5c51-437a-b747-67a874809bd8) lists by hand on aisle walks since 2026-11-26 */
+const STORES = ["8f56d5c1-7a4d-4e87-8fe1-2d0b8600c839"];
 
 type Tx = Prisma.TransactionClient;
 interface Shot { file: string; image: string | null; verdict: string | null; differences: string[]; fixedComment?: string }
@@ -45,6 +47,9 @@ const runDir = value("--run");
 if (!runDir) throw new Error("--run is required");
 const dryRun = argv.includes("--dry-run");
 const stock = Number(value("--stock") ?? 0);
+// No Anthropic calls: Tamil for reviewer edits comes from run/tamil-edits.json, written in a Claude Code session from run/tamil-edits-todo.json
+const noClaude = argv.includes("--no-claude");
+const tamilTodo: Record<string, unknown> = {};
 const readJson = <T>(path: string) => JSON.parse(readFileSync(path, "utf8")) as T;
 const prisma = new PrismaClient(argv.includes("--prod") ? { datasourceUrl: process.env.PROD_DATABASE_URL } : {});
 
@@ -113,11 +118,29 @@ const TAMIL_SYSTEM = `Translate grocery label details into natural everyday Tami
 units as written. Keep the ingredients in the same order and don't add or drop any. Use null if there are no ingredients. Give nutrientNames in the order given. Write the product name in Tamil script as shoppers say it,
 with the brand spelt out rather than translated; use null if no name is given.`;
 
-/** The reviewer's name, ingredients and nutrition replace what was read, and are translated again */
-async function withEdits(product: Product, decision: Decision): Promise<Product> {
+/** The reviewer's name, ingredients and nutrition, in English, if they changed anything */
+function editsOf(product: Product, decision: Decision) {
   const newName = decision.name?.trim() && decision.name.trim() !== product.label.name ? decision.name.trim() : null;
-  if (!newName && decision.ingredients === undefined && decision.nutrition === undefined) return product;
+  if (!newName && decision.ingredients === undefined && decision.nutrition === undefined) return null;
   const label = { ...product.label, ingredients: decision.ingredients === undefined ? product.label.ingredients : decision.ingredients.replace(/^\s*ingredients?\s*[:-]\s*/i, "") || null, nutrition: decision.nutrition ?? product.label.nutrition };
+  return { newName, label, english: { name: newName, ingredients: label.ingredients, nutrients: label.nutrition.map((n) => n.name) } };
+}
+
+function sessionTamil(id: string) {
+  const path = join(runDir!, "tamil-edits.json");
+  const edits = existsSync(path) ? readJson<Record<string, unknown>>(path) : {};
+  return edits[id] === undefined ? null : EditsInTamil.parse(edits[id]);
+}
+
+/** The reviewer's edits replace what was read, and are translated again */
+async function withEdits(product: Product, decision: Decision): Promise<Product> {
+  const edits = editsOf(product, decision);
+  if (!edits) return product;
+  const { newName, label } = edits;
+  if (noClaude) {
+    const tamil = sessionTamil(product.id)!;
+    return { ...product, label, tamil: { ...product.tamil, ...tamil, name: tamil.name ?? product.tamil.name } };
+  }
   const response = await new Anthropic().beta.messages.create({
     model: MODEL, max_tokens: 8000, system: TAMIL_SYSTEM, output_config: { format: betaZodOutputFormat(EditsInTamil) },
     messages: [{ role: "user", content: JSON.stringify({ name: newName, ingredients: label.ingredients, nutrients: label.nutrition.map((n) => n.name) }) }],
@@ -138,13 +161,28 @@ async function findExisting(product: Product) {
   return match.product.organizationId === null ? { target: { productId: match.productId, variantId: match.id }, barcode: null } : { target: null, barcode: null };
 }
 
+/** Every catalog image must be a cut-out: an alpha channel, and the padded canvas corners see-through */
+async function isTransparent(image: string) {
+  const { data, info } = await sharp(join(runDir!, "final", image)).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const alphaAt = (x: number, y: number) => data[(y * info.width + x) * 4 + 3];
+  const [right, bottom] = [info.width - 1, info.height - 1];
+  return [alphaAt(0, 0), alphaAt(right, 0), alphaAt(0, bottom), alphaAt(right, bottom)].every((a) => a === 0);
+}
+
 async function publishOne(product: Product, decision: Decision) {
+  const { target, barcode } = await findExisting(product);
+  if (target) return dryRun ? "would list" : `listed at ${await prisma.$transaction((tx) => listAtStores(tx, target, decision.sellingPrice))} more stores`;
   const images = imagesOf(product);
   if (!images.length) return "held: no image";
+  const opaque = (await Promise.all(images.map(isTransparent))).filter((ok) => !ok).length;
+  if (opaque) return `held: ${opaque} image(s) not transparent`;
   if (!product.classification?.subcategoryId) return "held: no category";
-  const { target, barcode } = await findExisting(product);
-  if (dryRun) return target ? "would list" : "would create";
-  if (target) return `listed at ${await prisma.$transaction((tx) => listAtStores(tx, target, decision.sellingPrice))} more stores`;
+  const edits = noClaude ? editsOf(product, decision) : null;
+  if (edits && !sessionTamil(product.id)) {
+    tamilTodo[product.id] = edits.english;
+    return "held: Tamil for edits not in tamil-edits.json";
+  }
+  if (dryRun) return "would create";
   const edited = await withEdits(product, decision);
   const urls = await Promise.all(images.map(upload));
   await prisma.$transaction(async (tx) => listAtStores(tx, await createProduct(tx, edited, decision, urls, barcode), decision.sellingPrice));
@@ -179,6 +217,7 @@ async function main() {
     console.log(`${product.id} ${product.label.name}: ${outcome}`);
   }
   if (existsSync(join(runDir!, "hidden.json"))) writeFileSync(join(runDir!, "fix-list.json"), JSON.stringify(fixList(approved), null, 1));
+  if (Object.keys(tamilTodo).length) writeFileSync(join(runDir!, "tamil-edits-todo.json"), JSON.stringify(tamilTodo, null, 1));
   console.log(`${approved.length} approved: ${JSON.stringify(tally)}`);
 }
 

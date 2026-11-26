@@ -6,7 +6,10 @@
  * --fix-comments renders only the photos with a new comment from the review page again, following the comment; the old files go
  * to run/before-fix. Run hide-stamps.py afterwards.
  *
- *   npx tsx scripts/shelf-photos/process.ts --run ~/Downloads/psb-products-2026-11-02/run [--limit 3] [--max-usd 20] [--fix-comments]
+ * --no-claude makes no Anthropic calls: the label, aisle and Tamil must already be in products/<id>.json (written in a Claude Code
+ * session), renders are saved unchecked (verdict "unchecked") for the session to check, and only the barcode is looked up here.
+ *
+ *   npx tsx scripts/shelf-photos/process.ts --run ~/Downloads/psb-products-2026-11-02/run [--limit 3] [--max-usd 20] [--fix-comments] [--no-claude]
  */
 import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -23,12 +26,15 @@ const { readLabel, ExtractRefusedError, MODEL } = await import("../../src/servic
 const { brandCandidates, classify, findByBarcode } = await import("../../src/services/catalog-agent/match.js");
 const { imageBlock, normalise } = await import("../../src/services/catalog-agent/photos.js");
 const { claudeUsage, imageUsage } = await import("../../src/services/catalog-agent/usage.js");
+const { Tamil } = await import("./schemas.js");
 
 const IMAGE_MODEL = "gpt-image-2.5-flare";
 const CANVAS = 1024;
 const PACK_EDGE = 860;
 const GROUPS_AT_ONCE = 3;
 const PHOTOS_AT_ONCE = 2;
+// A render whose trimmed edge is nearly all opaque white kept a white backdrop instead of cutting the pack out
+const WHITE_EDGE_SHARE = 0.9;
 // Failed renders are flagged for the fix pass; in the pilot a second try never turned a failure into a pass
 const MAX_ATTEMPTS = 1;
 // No organisation matches this, so the brand candidates are master brands only
@@ -65,15 +71,6 @@ Write natural everyday Tamil, the way a local shopper would say it, not a litera
 don't translate their meaning. Keep pack sizes, numbers and units as written. Use null wherever the English is missing.
 Keep the ingredients list in the same order and don't add or drop any. Give nutrientNames in the same order as the English list.`;
 
-const Tamil = z.object({
-  name: z.string(),
-  description: z.string().nullable(),
-  ingredients: z.string().nullable(),
-  storageInstructions: z.string().nullable(),
-  usageInstructions: z.string().nullable(),
-  nutrientNames: z.array(z.string()),
-});
-
 interface Group { id: string; photos: string[]; main: string; skip?: boolean; checked?: boolean; confidence: string; hint?: string }
 interface Shot { file: string; image: string | null; verdict: string | null; differences: string[]; attempts: number; error: string | null; fixedComment?: string }
 type Label = Awaited<ReturnType<typeof readLabel>>["label"];
@@ -102,6 +99,7 @@ const runDir = value("--run");
 if (!runDir) throw new Error("--run is required");
 const limit = Number(value("--limit")) || Infinity;
 const maxUsd = Number(value("--max-usd")) || 20;
+const noClaude = argv.includes("--no-claude");
 
 const prisma = new PrismaClient({ datasourceUrl: process.env.PROD_DATABASE_URL });
 const anthropic = new Anthropic();
@@ -124,6 +122,18 @@ function charge(product: Product, usd: number) {
   spent += usd;
 }
 
+function whiteEdgeShare(data: Buffer, width: number, box: { left: number; top: number; right: number; bottom: number }) {
+  let [white, total] = [0, 0];
+  const count = (x: number, y: number) => {
+    const i = (y * width + x) * 4;
+    total++;
+    if (data[i + 3] === 255 && Math.min(data[i], data[i + 1], data[i + 2]) >= 240) white++;
+  };
+  for (let x = box.left; x <= box.right; x++) count(x, box.top), count(x, box.bottom);
+  for (let y = box.top; y <= box.bottom; y++) count(box.left, y), count(box.right, y);
+  return white / total;
+}
+
 /** Fully see-through or fully solid edges, trimmed to the pack and centred, so every product sits at the same size */
 async function finish(png: Buffer) {
   const { data, info } = await sharp(png).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
@@ -139,6 +149,7 @@ async function finish(png: Buffer) {
   }
   if (right < 0) throw new RenderError("The image came back empty");
   if (solid / (info.width * info.height) > 0.97) throw new RenderError("The background came back solid, not transparent");
+  if (whiteEdgeShare(data, info.width, { left, top, right, bottom }) > WHITE_EDGE_SHARE) throw new RenderError("A white backdrop was left behind the pack");
   const pack = await sharp(data, { raw: { width: info.width, height: info.height, channels: 4 } })
     .extract({ left, top, width: right - left + 1, height: bottom - top + 1 })
     .resize(PACK_EDGE, PACK_EDGE, { fit: "inside" }).png().toBuffer();
@@ -179,7 +190,7 @@ async function verify(product: Product, photo: Buffer, image: Buffer) {
   return Verify.parse(JSON.parse(text));
 }
 
-const criticals = (result: z.infer<typeof Verify>) => result.differences.filter((d) => d.severity === "critical").length;
+const criticals = (result: { differences: z.infer<typeof Verify>["differences"] }) => result.differences.filter((d) => d.severity === "critical").length;
 
 /** Keeps the attempt with the fewest critical differences, flagged for review if it still has any */
 async function renderShot(product: Product, file: string, note = ""): Promise<Shot> {
@@ -190,7 +201,7 @@ async function renderShot(product: Product, file: string, note = ""): Promise<Sh
     shot.attempts = attempt;
     if (spent >= maxUsd) throw new BudgetReached();
     const image = await render(product, photo, note);
-    const result = await verify(product, photo, image);
+    const result = noClaude ? { differences: [], verdict: "unchecked" as const } : await verify(product, photo, image);
     if (criticals(result) >= best) continue;
     best = criticals(result);
     const name = file.replace(/\.(heic|jpe?g)$/i, ".webp");
@@ -220,14 +231,18 @@ async function translate(product: Product, label: Label) {
   return Tamil.parse(JSON.parse(text));
 }
 
+async function matchBarcode(product: Product, label: Label) {
+  const match = label.barcode ? await findByBarcode(prisma, label.barcode) : null;
+  if (match?.product.organizationId === null) product.existing = { variantId: match.id, productId: match.productId, name: match.product.name };
+  product.barcodeTaken = !!match && match.product.organizationId !== null;
+}
+
 /** Label, barcode, brand and aisle; a barcode already in the master catalog means no images are needed */
 async function readDetails(product: Product, hint: string | null) {
   const { label, usage } = await readLabel(product.photos.map((file) => readFileSync(previewOf(file))), hint);
   charge(product, usage.usd);
   product.label = label;
-  const match = label.barcode ? await findByBarcode(prisma, label.barcode) : null;
-  if (match?.product.organizationId === null) product.existing = { variantId: match.id, productId: match.productId, name: match.product.name };
-  product.barcodeTaken = !!match && match.product.organizationId !== null;
+  await matchBarcode(product, label);
   const candidates = label.brand ? await brandCandidates(prisma, label.brand, MASTER_ONLY) : [];
   const picked = await classify(prisma, label, candidates);
   charge(product, picked.usage.usd);
@@ -260,8 +275,10 @@ function load(group: Group): Product {
 
 async function processGroup(group: Group) {
   const product = load(group);
+  if (noClaude && !(product.label && product.tamil)) return console.log(`${group.id} skipped: label and Tamil not written yet`);
   product.error = null;
   try {
+    if (noClaude) await matchBarcode(product, product.label!);
     if (!product.label) await readDetails(product, group.hint ?? null);
     if (product.label && !product.tamil) product.tamil = await translate(product, product.label);
     save(product);

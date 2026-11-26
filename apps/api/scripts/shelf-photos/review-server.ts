@@ -23,6 +23,8 @@ const run = promisify(execFile);
 const HERE = dirname(fileURLToPath(import.meta.url));
 const argv = process.argv.slice(2);
 const runDir = argv[argv.indexOf("--run") + 1];
+// No Anthropic calls: pasted nutrition must already be one "name: amount" per line
+const noClaude = argv.includes("--no-claude");
 if (!runDir || !existsSync(join(runDir, "groups.json"))) throw new Error("--run must be a folder with groups.json (run group.ts first)");
 const photosDir = argv.includes("--photos") ? argv[argv.indexOf("--photos") + 1] : join(runDir, "..", "105APPLE");
 
@@ -112,6 +114,7 @@ async function formatNutrition(text: string): Promise<NutritionRow[]> {
   if (lines.every((line) => /^[^:\d]+:\s*\S/.test(line))) {
     return lines.map((line) => ({ name: line.slice(0, line.indexOf(":")).trim(), value: line.slice(line.indexOf(":") + 1).trim() }));
   }
+  if (noClaude) throw new FormatError(`write one "name: amount" per line`);
   const response = await new Anthropic().beta.messages.create({
     model: MODEL, max_tokens: 2000, system: NUTRITION_SYSTEM, output_config: { format: betaZodOutputFormat(Nutrition) }, messages: [{ role: "user", content: text }],
   });

@@ -4,6 +4,10 @@
  * except the photos sent to Anthropic. See docs/shelf-photo-import.md.
  *
  *   npx tsx scripts/shelf-photos/group.ts --photos ~/Downloads/psb-products-2026-11-02/105APPLE --run ~/Downloads/psb-products-2026-11-02/run
+ *
+ * --no-claude makes no Anthropic calls; a Claude Code session does the reading. Run it again after each step and it does the next one:
+ * makes the previews, then waits for reads/<file>.json (one per photo), then writes reads.json and grouping-table.tsv,
+ * then waits for ranges.json ({ groups: [{ first, last, confidence, note }] } over table positions), then writes groups.json.
  */
 import { execFile } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -55,8 +59,12 @@ class UnreadablePhoto extends Error {}
 function args() {
   const argv = process.argv.slice(2);
   const value = (flag: string) => argv[argv.indexOf(flag) + 1];
-  return { photos: value("--photos"), runDir: value("--run") };
+  return { photos: value("--photos"), runDir: value("--run"), noClaude: argv.includes("--no-claude") };
 }
+
+const previewName = (file: string) => file.replace(/\.(heic|jpe?g)$/i, ".jpg");
+const makePreview = (source: string, preview: string) =>
+  run("sips", ["-s", "format", "jpeg", "-s", "formatOptions", "90", "-Z", String(PREVIEW_EDGE), source, "--out", preview]);
 
 async function takenAt(path: string) {
   const { stdout } = await run("sips", ["-g", "creation", path]);
@@ -64,7 +72,7 @@ async function takenAt(path: string) {
 }
 
 async function readPhoto(client: Anthropic, source: string, preview: string, file: string): Promise<ReadPhoto> {
-  await run("sips", ["-s", "format", "jpeg", "-s", "formatOptions", "90", "-Z", String(PREVIEW_EDGE), source, "--out", preview]);
+  await makePreview(source, preview);
   const response = await client.beta.messages.create({
     model: MODEL,
     max_tokens: 1500,
@@ -88,7 +96,7 @@ async function readAll(client: Anthropic, photos: string, runDir: string) {
     while (queue.length) {
       const file = queue.shift()!;
       try {
-        reads[file] = await readPhoto(client, join(photos, file), join(runDir, "previews", file.replace(/\.(heic|jpe?g)$/i, ".jpg")), file);
+        reads[file] = await readPhoto(client, join(photos, file), join(runDir, "previews", previewName(file)), file);
         writeFileSync(path, JSON.stringify(reads, null, 1));
         if (Object.keys(reads).length % 25 === 0) console.log(`${Object.keys(reads).length}/${files.length} read`);
       } catch (err) {
@@ -153,12 +161,45 @@ function toGroups(ranges: z.infer<typeof Grouping>["groups"], photos: ReadPhoto[
   return groups;
 }
 
-const { photos, runDir } = args();
+/** The session's reads/<file>.json, checked; null until every photo has one */
+async function sessionReads(photos: string, runDir: string) {
+  const files = readdirSync(photos).filter((f) => /\.(heic|jpe?g)$/i.test(f)).sort();
+  mkdirSync(join(runDir, "reads"), { recursive: true });
+  for (const file of files) if (!existsSync(join(runDir, "previews", previewName(file)))) await makePreview(join(photos, file), join(runDir, "previews", previewName(file)));
+  const missing = files.filter((f) => !existsSync(join(runDir, "reads", `${f}.json`)));
+  if (missing.length) {
+    console.log(`Previews ready. ${missing.length}/${files.length} photos still need reads/<file>.json, e.g. ${missing[0]}`);
+    return null;
+  }
+  const reads: ReadPhoto[] = [];
+  for (const file of files) reads.push({ ...PhotoRead.parse(JSON.parse(readFileSync(join(runDir, "reads", `${file}.json`), "utf8"))), file, takenAt: await takenAt(join(photos, file)) });
+  writeFileSync(join(runDir, "reads.json"), JSON.stringify(Object.fromEntries(reads.map((r) => [r.file, r])), null, 1));
+  writeFileSync(join(runDir, "grouping-table.tsv"), `position\ttime\trole\tbrand\tproduct\tsize\tbarcode\tlook\n${reads.map(line).join("\n")}\n`);
+  return reads;
+}
+
+async function proposed(photos: string, runDir: string, noClaude: boolean) {
+  if (!noClaude) {
+    const client = new Anthropic();
+    const reads = await readAll(client, photos, runDir);
+    return { reads, ranges: await propose(client, reads) };
+  }
+  const reads = await sessionReads(photos, runDir);
+  if (!reads) return null;
+  if (!existsSync(join(runDir, "ranges.json"))) {
+    console.log(`All ${reads.length} photos read; grouping-table.tsv is ready. Write ranges.json next (rules: GROUP_SYSTEM in this file).`);
+    return null;
+  }
+  return { reads, ranges: Grouping.parse(JSON.parse(readFileSync(join(runDir, "ranges.json"), "utf8"))).groups };
+}
+
+const { photos, runDir, noClaude } = args();
 if (!photos || !runDir) throw new Error("--photos and --run are required");
 mkdirSync(join(runDir, "previews"), { recursive: true });
-const client = new Anthropic();
-const reads = await readAll(client, photos, runDir);
-const groups = toGroups(await propose(client, reads), reads);
+const found = await proposed(photos, runDir, noClaude);
+if (!found) process.exit(0);
+const { reads } = found;
+const groups = toGroups(found.ranges, reads);
 const path = join(runDir, "groups.json");
 if (existsSync(path)) writeFileSync(`${path}.bak`, readFileSync(path));
 writeFileSync(path, JSON.stringify(groups, null, 1));
