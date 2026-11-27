@@ -1,0 +1,4958 @@
+{
+ "atta-flours-bajra-flour": {
+  "hsn": "1102",
+  "gst": 5,
+  "source": "Sch I Sl 52: Cereal flours other than wheat (maize, rye, bajra etc.), pre-packaged and labelled",
+  "path": "Grocery & Staples > Atta & Flours > Bajra Flour",
+  "confidence": "high",
+  "note": "bajra flour",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1102",
+    "gst": 0,
+    "source": "Exempt Sl 71: Cereal flours other than wheat (maize, rye, bajra etc.), other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "atta-flours-besan-gram-flour": {
+  "hsn": "1106",
+  "gst": 5,
+  "source": "Sch I Sl 56: Flour of dried leguminous vegetables of 0713, pre-packaged and labelled",
+  "path": "Grocery & Staples > Atta & Flours > Besan (Gram Flour)",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1106",
+    "gst": 0,
+    "source": "Exempt Sl 75: Flour of dried leguminous vegetables of 0713, other than pre-packaged and labelled"
+   },
+   {
+    "nameRegex": "bajji|bonda|batter|mix|high protein",
+    "hsn": "1901",
+    "gst": 5,
+    "source": "Sch I Sl 118: Food preparations of flour, groats, meal, not elsewhere specified"
+   }
+  ]
+ },
+ "atta-flours-corn-flour": {
+  "hsn": "1102",
+  "gst": 5,
+  "source": "Sch I Sl 52: Cereal flours other than wheat (maize, rye, bajra etc.), pre-packaged and labelled",
+  "path": "Grocery & Staples > Atta & Flours > Corn Flour",
+  "confidence": "high",
+  "note": "corn flour and makki atta",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1102",
+    "gst": 0,
+    "source": "Exempt Sl 71: Cereal flours other than wheat (maize, rye, bajra etc.), other than pre-packaged and labelled"
+   },
+   {
+    "nameRegex": "starch",
+    "hsn": "1108",
+    "gst": 5,
+    "source": "Sch I Sl 58: Starches; inulin"
+   }
+  ]
+ },
+ "atta-flours-jowar-flour": {
+  "hsn": "1102",
+  "gst": 5,
+  "source": "Sch I Sl 52: Cereal flours other than wheat (maize, rye, bajra etc.), pre-packaged and labelled",
+  "path": "Grocery & Staples > Atta & Flours > Jowar Flour",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1102",
+    "gst": 0,
+    "source": "Exempt Sl 71: Cereal flours other than wheat (maize, rye, bajra etc.), other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "atta-flours-maida-refined-flour": {
+  "hsn": "1101",
+  "gst": 5,
+  "source": "Sch I Sl 51: Wheat or meslin flour, pre-packaged and labelled",
+  "path": "Grocery & Staples > Atta & Flours > Maida (Refined Flour)",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1101",
+    "gst": 0,
+    "source": "Exempt Sl 70: Wheat or meslin flour, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "atta-flours-multigrain-atta": {
+  "hsn": "1101",
+  "gst": 5,
+  "source": "Sch I Sl 51: Wheat or meslin flour, pre-packaged and labelled",
+  "path": "Grocery & Staples > Atta & Flours > Multigrain Atta",
+  "confidence": "medium",
+  "note": "multigrain/millet blends; HSN 1101/1102 both 5% packaged/Nil loose",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1101",
+    "gst": 0,
+    "source": "Exempt Sl 70: Wheat or meslin flour, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "atta-flours-ragi-flour": {
+  "hsn": "1102",
+  "gst": 5,
+  "source": "Sch I Sl 52: Cereal flours other than wheat (maize, rye, bajra etc.), pre-packaged and labelled",
+  "path": "Grocery & Staples > Atta & Flours > Ragi Flour",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1102",
+    "gst": 0,
+    "source": "Exempt Sl 71: Cereal flours other than wheat (maize, rye, bajra etc.), other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "atta-flours-rice-flour": {
+  "hsn": "1102",
+  "gst": 5,
+  "source": "Sch I Sl 52: Cereal flours other than wheat (maize, rye, bajra etc.), pre-packaged and labelled",
+  "path": "Grocery & Staples > Atta & Flours > Rice Flour",
+  "confidence": "high",
+  "note": "rice flour; puttu/idiyappam ready powders may be 1901 but same 5% when branded",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1102",
+    "gst": 0,
+    "source": "Exempt Sl 71: Cereal flours other than wheat (maize, rye, bajra etc.), other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "atta-flours-sattu": {
+  "hsn": "1106",
+  "gst": 5,
+  "source": "Sch I Sl 56: Flour of dried leguminous vegetables of 0713 (roasted gram flour), pre-packaged and labelled",
+  "path": "Grocery & Staples > Atta & Flours > Sattu",
+  "confidence": "medium",
+  "note": "sattu may be classed 1106 or 1901; rate same",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1106",
+    "gst": 0,
+    "source": "Exempt Sl 75: Flour of dried leguminous vegetables of 0713 (roasted gram flour), other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "atta-flours-sooji-rava": {
+  "hsn": "1103",
+  "gst": 5,
+  "source": "Sch I Sl 53: Cereal groats, meal and pellets including suji and dalia, pre-packaged and labelled",
+  "path": "Grocery & Staples > Atta & Flours > Sooji & Rava",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1103",
+    "gst": 0,
+    "source": "Exempt Sl 72: Cereal groats, meal and pellets including suji and dalia, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "atta-flours-wheat-atta": {
+  "hsn": "1101",
+  "gst": 5,
+  "source": "Sch I Sl 51: Wheat or meslin flour, pre-packaged and labelled",
+  "path": "Grocery & Staples > Atta & Flours > Wheat Atta",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1101",
+    "gst": 0,
+    "source": "Exempt Sl 70: Wheat or meslin flour, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "dal-pulses-chana-dal": {
+  "hsn": "0713",
+  "gst": 5,
+  "source": "Sch I Sl 20: Dried leguminous vegetables, shelled, skinned or split, pre-packaged and labelled",
+  "path": "Grocery & Staples > Dal & Pulses > Chana Dal",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": "roast",
+    "hsn": "2008",
+    "gst": 5,
+    "source": "Sch I Sl 132: Fruit, nuts and other edible parts of plants otherwise prepared (roasted)"
+   },
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0713",
+    "gst": 0,
+    "source": "Exempt Sl 39: Dried leguminous vegetables, shelled, skinned or split, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "dal-pulses-chole-kabuli-chana": {
+  "hsn": "0713",
+  "gst": 5,
+  "source": "Sch I Sl 20: Dried leguminous vegetables, shelled, skinned or split, pre-packaged and labelled",
+  "path": "Grocery & Staples > Dal & Pulses > Chole (Kabuli Chana)",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0713",
+    "gst": 0,
+    "source": "Exempt Sl 39: Dried leguminous vegetables, shelled, skinned or split, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "dal-pulses-lobia-black-eyed-peas": {
+  "hsn": "0713",
+  "gst": 5,
+  "source": "Sch I Sl 20: Dried leguminous vegetables, shelled, skinned or split, pre-packaged and labelled",
+  "path": "Grocery & Staples > Dal & Pulses > Lobia (Black Eyed Peas)",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0713",
+    "gst": 0,
+    "source": "Exempt Sl 39: Dried leguminous vegetables, shelled, skinned or split, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "dal-pulses-masoor-dal": {
+  "hsn": "0713",
+  "gst": 5,
+  "source": "Sch I Sl 20: Dried leguminous vegetables, shelled, skinned or split, pre-packaged and labelled",
+  "path": "Grocery & Staples > Dal & Pulses > Masoor Dal",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0713",
+    "gst": 0,
+    "source": "Exempt Sl 39: Dried leguminous vegetables, shelled, skinned or split, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "dal-pulses-mixed-pulses": {
+  "hsn": "0713",
+  "gst": 5,
+  "source": "Sch I Sl 20: Dried leguminous vegetables, shelled, skinned or split, pre-packaged and labelled",
+  "path": "Grocery & Staples > Dal & Pulses > Mixed Pulses",
+  "confidence": "high",
+  "note": "includes whole green peas/moth; all 0713",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0713",
+    "gst": 0,
+    "source": "Exempt Sl 39: Dried leguminous vegetables, shelled, skinned or split, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "dal-pulses-moong-dal": {
+  "hsn": "0713",
+  "gst": 5,
+  "source": "Sch I Sl 20: Dried leguminous vegetables, shelled, skinned or split, pre-packaged and labelled",
+  "path": "Grocery & Staples > Dal & Pulses > Moong Dal",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0713",
+    "gst": 0,
+    "source": "Exempt Sl 39: Dried leguminous vegetables, shelled, skinned or split, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "dal-pulses-rajma": {
+  "hsn": "0713",
+  "gst": 5,
+  "source": "Sch I Sl 20: Dried leguminous vegetables, shelled, skinned or split, pre-packaged and labelled",
+  "path": "Grocery & Staples > Dal & Pulses > Rajma",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0713",
+    "gst": 0,
+    "source": "Exempt Sl 39: Dried leguminous vegetables, shelled, skinned or split, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "dal-pulses-toor-dal-arhar": {
+  "hsn": "0713",
+  "gst": 5,
+  "source": "Sch I Sl 20: Dried leguminous vegetables, shelled, skinned or split, pre-packaged and labelled",
+  "path": "Grocery & Staples > Dal & Pulses > Toor Dal (Arhar)",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0713",
+    "gst": 0,
+    "source": "Exempt Sl 39: Dried leguminous vegetables, shelled, skinned or split, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "dal-pulses-urad-dal": {
+  "hsn": "0713",
+  "gst": 5,
+  "source": "Sch I Sl 20: Dried leguminous vegetables, shelled, skinned or split, pre-packaged and labelled",
+  "path": "Grocery & Staples > Dal & Pulses > Urad Dal",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0713",
+    "gst": 0,
+    "source": "Exempt Sl 39: Dried leguminous vegetables, shelled, skinned or split, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "dry-fruits-nuts-almonds-badam": {
+  "hsn": "0802",
+  "gst": 5,
+  "source": "Sch I Sl 23: Other nuts, dried, such as Almonds, Pistachios, Walnuts",
+  "path": "Grocery & Staples > Dry Fruits & Nuts > Almonds (Badam)",
+  "confidence": "high"
+ },
+ "dry-fruits-nuts-cashews-kaju": {
+  "hsn": "0801",
+  "gst": 5,
+  "source": "Sch I Sl 22: Cashew nuts, whether or not shelled or peeled",
+  "path": "Grocery & Staples > Dry Fruits & Nuts > Cashews (Kaju)",
+  "confidence": "high"
+ },
+ "dry-fruits-nuts-dates-khajoor": {
+  "hsn": "0804",
+  "gst": 5,
+  "source": "Sch I Sl 26: Dates (soft or hard), figs, pineapples, avocados, guavas, mangoes and mangosteens, dried",
+  "path": "Grocery & Staples > Dry Fruits & Nuts > Dates (Khajoor)",
+  "confidence": "high",
+  "note": "fresh dates are Nil (Exempt Sl 47) but catalog items are dried/packed"
+ },
+ "dry-fruits-nuts-dried-berries-prunes": {
+  "hsn": "0813",
+  "gst": 5,
+  "source": "Sch I Sl 31: Fruit, dried, other than that of headings 0801 to 0806; mixtures of nuts or dried fruits",
+  "path": "Grocery & Staples > Dry Fruits & Nuts > Dried Berries & Prunes",
+  "confidence": "medium",
+  "note": "cranberries/blueberries/cherries/guava dried"
+ },
+ "dry-fruits-nuts-figs-anjeer": {
+  "hsn": "0804",
+  "gst": 5,
+  "source": "Sch I Sl 26: Dates, figs, ... dried",
+  "path": "Grocery & Staples > Dry Fruits & Nuts > Figs (Anjeer)",
+  "confidence": "high"
+ },
+ "dry-fruits-nuts-mixed-dry-fruits": {
+  "hsn": "0813",
+  "gst": 5,
+  "source": "Sch I Sl 31: Mixtures of nuts or dried fruits of Chapter 8",
+  "path": "Grocery & Staples > Dry Fruits & Nuts > Mixed Dry Fruits",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": "brazil",
+    "hsn": "0801",
+    "gst": 5,
+    "source": "Sch I Sl 22: Brazil nuts, dried"
+   },
+   {
+    "nameRegex": "seed mix|nut & seed",
+    "hsn": "2008",
+    "gst": 5,
+    "source": "Sch I Sl 132: Other roasted nuts and seeds"
+   }
+  ]
+ },
+ "dry-fruits-nuts-peanuts": {
+  "hsn": "1202",
+  "gst": 5,
+  "source": "Sch I Sl 62: Ground-nuts, not roasted or otherwise cooked",
+  "path": "Grocery & Staples > Dry Fruits & Nuts > Peanuts",
+  "confidence": "medium",
+  "note": "roasted/salted peanuts are 2008 also 5%",
+  "overrides": [
+   {
+    "nameRegex": "roast|salted|tasty nuts",
+    "hsn": "2008",
+    "gst": 5,
+    "source": "Sch I Sl 132: Ground-nuts roasted, salted or roasted and salted"
+   }
+  ]
+ },
+ "dry-fruits-nuts-pistachios-pista": {
+  "hsn": "0802",
+  "gst": 5,
+  "source": "Sch I Sl 23: Other nuts, dried, such as Pistachios",
+  "path": "Grocery & Staples > Dry Fruits & Nuts > Pistachios (Pista)",
+  "confidence": "high"
+ },
+ "dry-fruits-nuts-raisins-kishmish": {
+  "hsn": "0806",
+  "gst": 5,
+  "source": "Sch I Sl 28: Grapes, dried, and raisins",
+  "path": "Grocery & Staples > Dry Fruits & Nuts > Raisins (Kishmish)",
+  "confidence": "high"
+ },
+ "dry-fruits-nuts-seeds-chia-flax-pumpkin-sunflower": {
+  "hsn": "1207",
+  "gst": 5,
+  "source": "Sch I Sl 67: Other oil seeds and oleaginous fruits",
+  "path": "Grocery & Staples > Dry Fruits & Nuts > Seeds (Chia, Flax, Pumpkin, Sunflower)",
+  "confidence": "medium",
+  "note": "mixed seeds; flax 1204 Sl 64, sunflower 1206 Sl 66, all 5%",
+  "overrides": [
+   {
+    "nameRegex": "flax|linseed",
+    "hsn": "1204",
+    "gst": 5,
+    "source": "Sch I Sl 64: Linseed, whether or not broken other than of seed quality"
+   },
+   {
+    "nameRegex": "sunflower",
+    "hsn": "1206",
+    "gst": 5,
+    "source": "Sch I Sl 66: Sunflower seeds other than of seed quality"
+   },
+   {
+    "nameRegex": "makhana|fox ?nut|phool",
+    "hsn": "0802",
+    "gst": 5,
+    "source": "Sch I Sl 25: Dried makhana pre-packaged and labelled"
+   },
+   {
+    "nameRegex": "makhana|fox ?nut|phool",
+    "hsn": "0802",
+    "gst": 0,
+    "source": "Exempt Sl 42: Dried makhana other than pre-packaged and labelled",
+    "unbranded": true
+   }
+  ]
+ },
+ "dry-fruits-nuts-walnuts-akhrot": {
+  "hsn": "0802",
+  "gst": 5,
+  "source": "Sch I Sl 23: Other nuts, dried, ... Walnuts, whether or not shelled",
+  "path": "Grocery & Staples > Dry Fruits & Nuts > Walnuts (Akhrot)",
+  "confidence": "high"
+ },
+ "edible-oils-blended-oil": {
+  "hsn": "1517",
+  "gst": 5,
+  "source": "Sch I Sl 95: Edible mixtures or preparations of vegetable fats or oils",
+  "path": "Grocery & Staples > Edible Oils > Blended Oil",
+  "confidence": "high"
+ },
+ "edible-oils-coconut-oil": {
+  "hsn": "1513",
+  "gst": 5,
+  "source": "Sch I Sl 90: Coconut (copra) oil and fractions",
+  "path": "Grocery & Staples > Edible Oils > Coconut Oil",
+  "confidence": "high"
+ },
+ "edible-oils-groundnut-oil": {
+  "hsn": "1508",
+  "gst": 5,
+  "source": "Sch I Sl 85: Ground-nut oil and its fractions",
+  "path": "Grocery & Staples > Edible Oils > Groundnut Oil",
+  "confidence": "high"
+ },
+ "edible-oils-mustard-oil": {
+  "hsn": "1514",
+  "gst": 5,
+  "source": "Sch I Sl 91: Rape, colza or mustard oil",
+  "path": "Grocery & Staples > Edible Oils > Mustard Oil",
+  "confidence": "high"
+ },
+ "edible-oils-olive-oil": {
+  "hsn": "1509",
+  "gst": 5,
+  "source": "Sch I Sl 86: Olive oil and its fractions",
+  "path": "Grocery & Staples > Edible Oils > Olive Oil",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": "pomace",
+    "hsn": "1510",
+    "gst": 5,
+    "source": "Sch I Sl 87: Other oils obtained solely from olives"
+   }
+  ]
+ },
+ "edible-oils-rice-bran-oil": {
+  "hsn": "1515",
+  "gst": 5,
+  "source": "Sch I Sl 92: Other fixed vegetable fats and oils",
+  "path": "Grocery & Staples > Edible Oils > Rice Bran Oil",
+  "confidence": "high"
+ },
+ "edible-oils-sesame-oil-til": {
+  "hsn": "1515",
+  "gst": 5,
+  "source": "Sch I Sl 92: Other fixed vegetable fats and oils (sesame)",
+  "path": "Grocery & Staples > Edible Oils > Sesame Oil (Til)",
+  "confidence": "high"
+ },
+ "edible-oils-soybean-oil": {
+  "hsn": "1507",
+  "gst": 5,
+  "source": "Sch I Sl 84: Soya-bean oil and its fractions",
+  "path": "Grocery & Staples > Edible Oils > Soybean Oil",
+  "confidence": "high"
+ },
+ "edible-oils-sunflower-oil": {
+  "hsn": "1512",
+  "gst": 5,
+  "source": "Sch I Sl 89: Sunflower-seed oil and fractions",
+  "path": "Grocery & Staples > Edible Oils > Sunflower Oil",
+  "confidence": "high"
+ },
+ "edible-oils-vanaspati-dalda": {
+  "hsn": "1516",
+  "gst": 5,
+  "source": "Sch I Sl 93: Vegetable fats and oils partly or wholly hydrogenated",
+  "path": "Grocery & Staples > Edible Oils > Vanaspati & Dalda",
+  "confidence": "high"
+ },
+ "ghee-buffalo-ghee": {
+  "hsn": "0405",
+  "gst": 5,
+  "source": "Sch I Sl 7: Butter and other fats and oils derived from milk, including ghee; dairy spreads",
+  "path": "Grocery & Staples > Ghee > Buffalo Ghee",
+  "confidence": "high"
+ },
+ "ghee-cow-ghee": {
+  "hsn": "0405",
+  "gst": 5,
+  "source": "Sch I Sl 7: Butter and other fats and oils derived from milk, including ghee; dairy spreads",
+  "path": "Grocery & Staples > Ghee > Cow Ghee",
+  "confidence": "high"
+ },
+ "ghee-organic-ghee": {
+  "hsn": "0405",
+  "gst": 5,
+  "source": "Sch I Sl 7: Butter and other fats and oils derived from milk, including ghee; dairy spreads",
+  "path": "Grocery & Staples > Ghee > Organic Ghee",
+  "confidence": "high"
+ },
+ "papad-fryums-fryums-appalam": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Un-fried or un-cooked snack pellets manufactured through extrusion",
+  "path": "Grocery & Staples > Papad & Fryums > Fryums & Appalam",
+  "confidence": "medium",
+  "note": "mix of appalam/pappadam (Nil) and fryums/vadam (pellets 5%)",
+  "overrides": [
+   {
+    "nameRegex": "pappad|papad|pappadam|appalam|happala|poppad",
+    "hsn": "1905",
+    "gst": 0,
+    "source": "Exempt Sl 99: Pappad, by whatever name it is known"
+   }
+  ]
+ },
+ "papad-fryums-papad": {
+  "hsn": "1905",
+  "gst": 0,
+  "source": "Exempt Sl 99: Pappad, by whatever name it is known",
+  "path": "Grocery & Staples > Papad & Fryums > Papad",
+  "confidence": "high"
+ },
+ "pickles-chutney-chilli-pickle": {
+  "hsn": "2001",
+  "gst": 5,
+  "source": "Sch I Sl 125: Vegetables, fruit, nuts prepared or preserved by vinegar or acetic acid",
+  "path": "Grocery & Staples > Pickles & Chutney > Chilli Pickle",
+  "confidence": "medium",
+  "note": "pickles in oil/brine can fall under 2005 (Sch I Sl 129), also 5%"
+ },
+ "pickles-chutney-chutney": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments and seasonings, curry paste, mayonnaise",
+  "path": "Grocery & Staples > Pickles & Chutney > Chutney",
+  "confidence": "medium",
+  "note": "chutneys/thokku/sauces; 2103 or 2005"
+ },
+ "pickles-chutney-lime-pickle": {
+  "hsn": "2001",
+  "gst": 5,
+  "source": "Sch I Sl 125: Vegetables, fruit, nuts prepared or preserved by vinegar or acetic acid",
+  "path": "Grocery & Staples > Pickles & Chutney > Lime Pickle",
+  "confidence": "medium",
+  "note": "pickles in oil/brine can fall under 2005 (Sch I Sl 129), also 5%"
+ },
+ "pickles-chutney-mango-pickle": {
+  "hsn": "2001",
+  "gst": 5,
+  "source": "Sch I Sl 125: Vegetables, fruit, nuts prepared or preserved by vinegar or acetic acid",
+  "path": "Grocery & Staples > Pickles & Chutney > Mango Pickle",
+  "confidence": "medium",
+  "note": "pickles in oil/brine can fall under 2005 (Sch I Sl 129), also 5%"
+ },
+ "pickles-chutney-mixed-pickle": {
+  "hsn": "2001",
+  "gst": 5,
+  "source": "Sch I Sl 125: Vegetables, fruit, nuts prepared or preserved by vinegar or acetic acid",
+  "path": "Grocery & Staples > Pickles & Chutney > Mixed Pickle",
+  "confidence": "medium",
+  "note": "includes ginger/amla pickles; 2001/2005 both 5%",
+  "overrides": [
+   {
+    "nameRegex": "amla ka achaar|murabba",
+    "hsn": "2006",
+    "gst": 5,
+    "source": "Sch I Sl 130: Fruit preserved by sugar"
+   }
+  ]
+ },
+ "pickles-chutney-murabba": {
+  "hsn": "2006",
+  "gst": 5,
+  "source": "Sch I Sl 130: Vegetables, fruit, nuts, fruit-peel preserved by sugar (drained, glace or crystallised)",
+  "path": "Grocery & Staples > Pickles & Chutney > Murabba",
+  "confidence": "medium",
+  "note": "murabba/gulkand; 2007 Sl 131 also 5%"
+ },
+ "rice-basmati-rice": {
+  "hsn": "1006",
+  "gst": 5,
+  "source": "Sch I Sl 48: Rice, pre-packaged and labelled",
+  "path": "Grocery & Staples > Rice > Basmati Rice",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1006",
+    "gst": 0,
+    "source": "Exempt Sl 67: Rice, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "rice-brown-rice": {
+  "hsn": "1006",
+  "gst": 5,
+  "source": "Sch I Sl 48: Rice, pre-packaged and labelled",
+  "path": "Grocery & Staples > Rice > Brown Rice",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1006",
+    "gst": 0,
+    "source": "Exempt Sl 67: Rice, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "rice-idli-dosa-rice": {
+  "hsn": "1006",
+  "gst": 5,
+  "source": "Sch I Sl 48: Rice, pre-packaged and labelled",
+  "path": "Grocery & Staples > Rice > Idli & Dosa Rice",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1006",
+    "gst": 0,
+    "source": "Exempt Sl 67: Rice, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "rice-non-basmati-rice": {
+  "hsn": "1006",
+  "gst": 5,
+  "source": "Sch I Sl 48: Rice, pre-packaged and labelled",
+  "path": "Grocery & Staples > Rice > Non-Basmati Rice",
+  "confidence": "high",
+  "note": "includes arborio/specialty rice",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1006",
+    "gst": 0,
+    "source": "Exempt Sl 67: Rice, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "rice-parboiled-rice": {
+  "hsn": "1006",
+  "gst": 5,
+  "source": "Sch I Sl 48: Rice, pre-packaged and labelled",
+  "path": "Grocery & Staples > Rice > Parboiled Rice",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1006",
+    "gst": 0,
+    "source": "Exempt Sl 67: Rice, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "rice-poha-puffed-rice": {
+  "hsn": "1904",
+  "gst": 5,
+  "source": "Sch I Sl 121: Puffed rice (muri), flattened or beaten rice (chira/aval), parched rice, pre-packaged and labelled",
+  "path": "Grocery & Staples > Rice > Poha & Puffed Rice",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1904",
+    "gst": 0,
+    "source": "Exempt Sl 98: Puffed rice (muri), flattened or beaten rice (chira/aval), parched rice, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "salt-sugar-black-salt-kala-namak": {
+  "hsn": "2501",
+  "gst": 0,
+  "source": "Exempt Sl 109: Salt (including table salt) and pure sodium chloride; sea water",
+  "path": "Grocery & Staples > Salt & Sugar > Black Salt (Kala Namak)",
+  "confidence": "high",
+  "note": "kala namak HSN 2501"
+ },
+ "salt-sugar-brown-sugar": {
+  "hsn": "1701",
+  "gst": 5,
+  "source": "Sch I Sl 105: Cane or beet sugar and chemically pure sucrose in solid form",
+  "path": "Grocery & Staples > Salt & Sugar > Brown Sugar",
+  "confidence": "medium",
+  "note": "raw/demerara/coconut sugar; coconut sugar may be 1702 Sl 108 (5% too)"
+ },
+ "salt-sugar-iodised-salt": {
+  "hsn": "2501",
+  "gst": 0,
+  "source": "Exempt Sl 109: Salt (including table salt) and pure sodium chloride; sea water",
+  "path": "Grocery & Staples > Salt & Sugar > Iodised Salt",
+  "confidence": "high"
+ },
+ "salt-sugar-jaggery-gur": {
+  "hsn": "1701",
+  "gst": 5,
+  "source": "Sch I Sl 106: Jaggery of all types including cane jaggery (gur), Palmyra jaggery, pre-packaged and labelled",
+  "path": "Grocery & Staples > Salt & Sugar > Jaggery (Gur)",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1701",
+    "gst": 0,
+    "source": "Exempt Sl 96: Jaggery of all types including cane jaggery (gur), Palmyra jaggery, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "salt-sugar-jaggery-powder": {
+  "hsn": "1701",
+  "gst": 5,
+  "source": "Sch I Sl 106: Jaggery of all types including cane jaggery (gur), Palmyra jaggery, pre-packaged and labelled",
+  "path": "Grocery & Staples > Salt & Sugar > Jaggery Powder",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "1701",
+    "gst": 0,
+    "source": "Exempt Sl 96: Jaggery of all types including cane jaggery (gur), Palmyra jaggery, other than pre-packaged and labelled"
+   }
+  ]
+ },
+ "salt-sugar-mishri-rock-sugar": {
+  "hsn": "1702",
+  "gst": 5,
+  "source": "Sch I Sl 107: Palmyra sugar, mishri, batasha, bura, sakar",
+  "path": "Grocery & Staples > Salt & Sugar > Mishri (Rock Sugar)",
+  "confidence": "high",
+  "note": "kalkandu / panangkalkandu"
+ },
+ "salt-sugar-rock-salt-sendha-namak": {
+  "hsn": "2501",
+  "gst": 0,
+  "source": "Exempt Sl 109: Salt (including table salt) and pure sodium chloride; sea water",
+  "path": "Grocery & Staples > Salt & Sugar > Rock Salt (Sendha Namak)",
+  "confidence": "high",
+  "note": "sendha/Himalayan pink salt HSN 2501"
+ },
+ "salt-sugar-white-sugar": {
+  "hsn": "1701",
+  "gst": 5,
+  "source": "Sch I Sl 105: Cane or beet sugar ... including refined sugar, sugar cubes",
+  "path": "Grocery & Staples > Salt & Sugar > White Sugar",
+  "confidence": "high"
+ },
+ "sauces-condiments-chilli-sauce": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments and seasonings, curry paste, mayonnaise",
+  "path": "Grocery & Staples > Sauces & Condiments > Chilli Sauce",
+  "confidence": "high"
+ },
+ "sauces-condiments-chocolate-hazelnut-spread": {
+  "hsn": "1806",
+  "gst": 5,
+  "source": "Sch I Sl 116: Chocolates and other food preparations containing cocoa",
+  "path": "Grocery & Staples > Sauces & Condiments > Chocolate & Hazelnut Spread",
+  "confidence": "medium",
+  "note": "spreads; non-cocoa spreads would be 2106 Sl 145 also 5%"
+ },
+ "sauces-condiments-dessert-syrups": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified or included (other than pan masala)",
+  "path": "Grocery & Staples > Sauces & Condiments > Dessert Syrups",
+  "confidence": "low",
+  "note": "toppings/syrups/fruit crush; mix of 1806/2106/2008, all 5%",
+  "overrides": [
+   {
+    "nameRegex": "choco|cocoa|fudge|caramel",
+    "hsn": "1806",
+    "gst": 5,
+    "source": "Sch I Sl 116: Food preparations containing cocoa"
+   },
+   {
+    "nameRegex": "crush|squash",
+    "hsn": "2008",
+    "gst": 5,
+    "source": "Sch I Sl 132: squash of Mango, Lemon, Orange, Pineapple or other fruits"
+   }
+  ]
+ },
+ "sauces-condiments-honey": {
+  "hsn": "0409",
+  "gst": 5,
+  "source": "Sch I Sl 10: Natural honey, pre-packaged and labelled",
+  "path": "Grocery & Staples > Sauces & Condiments > Honey",
+  "confidence": "high",
+  "note": "infused honeys (ginger) still 0409",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "hsn": "0409",
+    "gst": 0,
+    "source": "Exempt Sl 19: Natural honey, other than pre-packaged and labelled",
+    "unbranded": true
+   }
+  ]
+ },
+ "sauces-condiments-jam-marmalade": {
+  "hsn": "2007",
+  "gst": 5,
+  "source": "Sch I Sl 131: Jams, fruit jellies, marmalades, fruit purees and pastes",
+  "path": "Grocery & Staples > Sauces & Condiments > Jam & Marmalade",
+  "confidence": "high"
+ },
+ "sauces-condiments-mayonnaise": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments and seasonings, curry paste, mayonnaise",
+  "path": "Grocery & Staples > Sauces & Condiments > Mayonnaise",
+  "confidence": "high",
+  "note": "includes sandwich spreads/dressings"
+ },
+ "sauces-condiments-mustard-sauce": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments and seasonings, curry paste, mayonnaise",
+  "path": "Grocery & Staples > Sauces & Condiments > Mustard Sauce",
+  "confidence": "high"
+ },
+ "sauces-condiments-peanut-butter": {
+  "hsn": "2008",
+  "gst": 5,
+  "source": "Sch I Sl 132: Fruit, nuts and other edible parts of plants otherwise prepared (ground-nuts)",
+  "path": "Grocery & Staples > Sauces & Condiments > Peanut Butter",
+  "confidence": "medium",
+  "note": "peanut butter 2008 11; flavoured/choco spreads 1806 also 5%",
+  "overrides": [
+   {
+    "nameRegex": "choco|cocoa|hazelnut",
+    "hsn": "1806",
+    "gst": 5,
+    "source": "Sch I Sl 116: Food preparations containing cocoa"
+   }
+  ]
+ },
+ "sauces-condiments-soy-sauce": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments and seasonings, curry paste, mayonnaise",
+  "path": "Grocery & Staples > Sauces & Condiments > Soy Sauce",
+  "confidence": "high"
+ },
+ "sauces-condiments-tomato-ketchup": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments and seasonings, curry paste, mayonnaise",
+  "path": "Grocery & Staples > Sauces & Condiments > Tomato Ketchup",
+  "confidence": "high"
+ },
+ "sauces-condiments-vinegar": {
+  "hsn": "2209",
+  "gst": 18,
+  "source": "Sch II Sl 4: Vinegar and substitutes for vinegar obtained from acetic acid",
+  "path": "Grocery & Staples > Sauces & Condiments > Vinegar",
+  "confidence": "high",
+  "note": "Sch II 18%; no Sch I entry for vinegar"
+ },
+ "spices-masala-blended-masala": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments and seasonings, curry paste, mayonnaise",
+  "path": "Grocery & Staples > Spices & Masala > Blended Masala",
+  "confidence": "medium",
+  "note": "mixed masalas 0910 91 / 2103; both 5%"
+ },
+ "spices-masala-curry-paste-wet-masala": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments and seasonings, curry paste, mayonnaise",
+  "path": "Grocery & Staples > Spices & Masala > Curry Paste & Wet Masala",
+  "confidence": "high",
+  "note": "ginger-garlic paste, curry paste"
+ },
+ "spices-masala-ground-spices": {
+  "hsn": "0904",
+  "gst": 5,
+  "source": "Sch I Sl 36: Pepper; dried or crushed or ground fruits of Capsicum or Pimenta",
+  "path": "Grocery & Staples > Spices & Masala > Ground Spices",
+  "confidence": "medium",
+  "note": "all spices 0904-0910 are 5% Sch I regardless of packing",
+  "overrides": [
+   {
+    "nameRegex": "coriander|dhania|cumin|jeera|fennel|saunf",
+    "hsn": "0909",
+    "gst": 5,
+    "source": "Sch I Sl 41: Seeds of anise, badian, fennel, coriander, cumin or caraway"
+   },
+   {
+    "nameRegex": "turmeric|haldi|ginger|sukku",
+    "hsn": "0910",
+    "gst": 5,
+    "source": "Sch I Sl 42: Ginger, saffron, turmeric, thyme, bay leaves, curry and other spices"
+   },
+   {
+    "nameRegex": "cinnamon|cassia",
+    "hsn": "0906",
+    "gst": 5,
+    "source": "Sch I Sl 38: Cinnamon"
+   },
+   {
+    "nameRegex": "cardamom|elaichi",
+    "hsn": "0908",
+    "gst": 5,
+    "source": "Sch I Sl 40: Nutmeg, mace and cardamoms"
+   }
+  ]
+ },
+ "spices-masala-herbs-seasonings": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments and seasonings, curry paste, mayonnaise",
+  "path": "Grocery & Staples > Spices & Masala > Herbs & Seasonings",
+  "confidence": "medium",
+  "note": "seasoning mixes, pasta masala, pizza mix; dried herbs 0910 Sl 42 also 5%",
+  "overrides": [
+   {
+    "nameRegex": "parsley|oregano|basil|thyme|rosemary|dried herb",
+    "hsn": "0910",
+    "gst": 5,
+    "source": "Sch I Sl 42: thyme, bay leaves, curry and other spices"
+   }
+  ]
+ },
+ "spices-masala-tamarind": {
+  "hsn": "0813",
+  "gst": 0,
+  "source": "Exempt Sl 54: Tamarind dried",
+  "path": "Grocery & Staples > Spices & Masala > Tamarind",
+  "confidence": "medium",
+  "note": "dried tamarind Nil; paste is a prepared food at 5%",
+  "overrides": [
+   {
+    "nameRegex": "paste|concentrate",
+    "hsn": "2103",
+    "gst": 5,
+    "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments"
+   }
+  ]
+ },
+ "spices-masala-whole-spices": {
+  "hsn": "0904",
+  "gst": 5,
+  "source": "Sch I Sl 36: Pepper; dried or crushed or ground fruits of Capsicum or Pimenta",
+  "path": "Grocery & Staples > Spices & Masala > Whole Spices",
+  "confidence": "medium",
+  "note": "all spices 5%; heading varies",
+  "overrides": [
+   {
+    "nameRegex": "cumin|jeera|coriander|fennel|saunf|caraway",
+    "hsn": "0909",
+    "gst": 5,
+    "source": "Sch I Sl 41: Seeds of anise, badian, fennel, coriander, cumin or caraway"
+   },
+   {
+    "nameRegex": "cinnamon|cassia|dalchini",
+    "hsn": "0906",
+    "gst": 5,
+    "source": "Sch I Sl 38: Cinnamon"
+   },
+   {
+    "nameRegex": "clove|laung",
+    "hsn": "0907",
+    "gst": 5,
+    "source": "Sch I Sl 39: Cloves"
+   },
+   {
+    "nameRegex": "cardamom|elaichi|elai",
+    "hsn": "0908",
+    "gst": 5,
+    "source": "Sch I Sl 40: Nutmeg, mace and cardamoms"
+   },
+   {
+    "nameRegex": "turmeric|ginger|saffron|bay leaf",
+    "hsn": "0910",
+    "gst": 5,
+    "source": "Sch I Sl 42: Ginger, saffron, turmeric, thyme, bay leaves"
+   }
+  ]
+ },
+ "plastic-household-tubs-baskets": {
+  "hsn": "3926",
+  "gst": 18,
+  "source": "Sch II Sl 127: Other articles of plastics (3926)",
+  "path": "Kitchenware & Home Needs > Plastic Household > Tubs & Baskets",
+  "confidence": "medium",
+  "note": "Cloth clips/pegs, plastic household"
+ },
+ "mouth-freshener-flavoured-supari": {
+  "hsn": "0802",
+  "gst": 5,
+  "source": "Sch I Sl 23: Dried areca nuts, whether or not shelled or peeled (0802)",
+  "path": "Paan Corner > Mouth Freshener > Flavoured Supari",
+  "confidence": "low",
+  "note": "Flavoured/mitha supari may be 2106 90 99 (5%) or pan masala (40%) if sold as such",
+  "overrides": [
+   {
+    "nameRegex": "pan masala|paan masala|gutka|gutkha",
+    "hsn": "2106 90 20",
+    "gst": 40,
+    "source": "Sch III Sl 14: Pan masala (2106 90 20), 40% w.e.f. 01.02.2026"
+   }
+  ]
+ },
+ "mouth-freshener-mukhwas": {
+  "hsn": "2106 90 99",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106, other than pan masala)",
+  "path": "Paan Corner > Mouth Freshener > Mukhwas",
+  "confidence": "medium",
+  "note": "Mukhwas = food preparation NES"
+ },
+ "mouth-freshener-saunf-fennel-seeds": {
+  "hsn": "2106 90 99",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106, other than pan masala)",
+  "path": "Paan Corner > Mouth Freshener > Saunf (Fennel Seeds)",
+  "confidence": "medium",
+  "note": "Flavoured/coated saunf; plain saunf 0909 also 5% (Sch I Sl 41)"
+ },
+ "biscuits-cookies-cashew-butter-cookies": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares; extruded/expanded savoury products (1905)",
+  "path": "Snacks & Packaged Foods > Biscuits & Cookies > Cashew & Butter Cookies",
+  "confidence": "high"
+ },
+ "biscuits-cookies-crackers": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares; extruded/expanded savoury products (1905)",
+  "path": "Snacks & Packaged Foods > Biscuits & Cookies > Crackers",
+  "confidence": "high"
+ },
+ "biscuits-cookies-cream-biscuits": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares; extruded/expanded savoury products (1905)",
+  "path": "Snacks & Packaged Foods > Biscuits & Cookies > Cream Biscuits",
+  "confidence": "high"
+ },
+ "biscuits-cookies-digestive-health": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares; extruded/expanded savoury products (1905)",
+  "path": "Snacks & Packaged Foods > Biscuits & Cookies > Digestive & Health",
+  "confidence": "high"
+ },
+ "biscuits-cookies-glucose-marie": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares; extruded/expanded savoury products (1905)",
+  "path": "Snacks & Packaged Foods > Biscuits & Cookies > Glucose & Marie",
+  "confidence": "high"
+ },
+ "biscuits-cookies-khari-puff": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares; extruded/expanded savoury products (1905)",
+  "path": "Snacks & Packaged Foods > Biscuits & Cookies > Khari & Puff",
+  "confidence": "high"
+ },
+ "biscuits-cookies-rusk-toast": {
+  "hsn": "1905 40 00",
+  "gst": 5,
+  "source": "Sch I Sl 124: Rusks, toasted bread and similar toasted products (1905 40 00)",
+  "path": "Snacks & Packaged Foods > Biscuits & Cookies > Rusk & Toast",
+  "confidence": "high"
+ },
+ "biscuits-cookies-wafers-waffle": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares; extruded/expanded savoury products (1905)",
+  "path": "Snacks & Packaged Foods > Biscuits & Cookies > Wafers & Waffle",
+  "confidence": "high"
+ },
+ "breakfast-cereals-muesli-chocos-kids-cereal": {
+  "hsn": "1904",
+  "gst": 5,
+  "source": "Sch I Sl 122: Corn flakes, bulgar wheat, prepared foods from cereal flakes (1904)",
+  "path": "Snacks & Packaged Foods > Breakfast Cereals & Muesli > Chocos & Kids Cereal",
+  "confidence": "high"
+ },
+ "breakfast-cereals-muesli-cornflakes": {
+  "hsn": "1904",
+  "gst": 5,
+  "source": "Sch I Sl 122: Corn flakes, bulgar wheat, prepared foods from cereal flakes (1904)",
+  "path": "Snacks & Packaged Foods > Breakfast Cereals & Muesli > Cornflakes",
+  "confidence": "high"
+ },
+ "breakfast-cereals-muesli-muesli-granola": {
+  "hsn": "1904",
+  "gst": 5,
+  "source": "Sch I Sl 122: Corn flakes, bulgar wheat, prepared foods from cereal flakes (1904)",
+  "path": "Snacks & Packaged Foods > Breakfast Cereals & Muesli > Muesli & Granola",
+  "confidence": "high"
+ },
+ "breakfast-cereals-muesli-oats": {
+  "hsn": "1104",
+  "gst": 5,
+  "source": "Sch I Sl 54: Cereal grains otherwise worked, e.g. rolled, flaked (1104)",
+  "path": "Snacks & Packaged Foods > Breakfast Cereals & Muesli > Oats",
+  "confidence": "medium",
+  "note": "Rolled oats 1104; flavoured oats mixes 1904, both 5%"
+ },
+ "breakfast-cereals-muesli-porridge-daliya": {
+  "hsn": "1103",
+  "gst": 5,
+  "source": "Sch I Sl 53: Cereal groats, meal and pellets incl. suji and dalia, pre-packaged and labelled (1103)",
+  "path": "Snacks & Packaged Foods > Breakfast Cereals & Muesli > Porridge & Daliya",
+  "confidence": "medium",
+  "note": "Broken wheat/dalia; loose is exempt",
+  "overrides": [
+   {
+    "nameRegex": ".",
+    "hsn": "1103",
+    "gst": 0,
+    "source": "Exempt Sl 72: Cereal groats, meal and pellets, other than pre-packaged and labelled (1103)",
+    "unbranded": true
+   }
+  ]
+ },
+ "canned-preserved-foods-canned-beans-legumes": {
+  "hsn": "2005",
+  "gst": 5,
+  "source": "Sch I Sl 129: Other vegetables prepared or preserved, not frozen (2005)",
+  "path": "Snacks & Packaged Foods > Canned & Preserved Foods > Canned Beans & Legumes",
+  "confidence": "high"
+ },
+ "canned-preserved-foods-canned-fish-meat": {
+  "hsn": "1604",
+  "gst": 5,
+  "source": "Sch I Sl 103: Prepared or preserved fish (1604)",
+  "path": "Snacks & Packaged Foods > Canned & Preserved Foods > Canned Fish & Meat",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": "chicken|meat|mutton|ham\\b|sausage",
+    "hsn": "1602",
+    "gst": 5,
+    "source": "Sch I Sl 101: Other prepared or preserved meat (1602)"
+   }
+  ]
+ },
+ "canned-preserved-foods-canned-fruits": {
+  "hsn": "2008",
+  "gst": 5,
+  "source": "Sch I Sl 132: Fruit, nuts otherwise prepared or preserved (2008)",
+  "path": "Snacks & Packaged Foods > Canned & Preserved Foods > Canned Fruits",
+  "confidence": "high"
+ },
+ "canned-preserved-foods-canned-vegetables": {
+  "hsn": "2005",
+  "gst": 5,
+  "source": "Sch I Sl 129: Other vegetables prepared or preserved, not frozen (2005)",
+  "path": "Snacks & Packaged Foods > Canned & Preserved Foods > Canned Vegetables",
+  "confidence": "medium",
+  "note": "Gherkins in vinegar 2001, same 5%",
+  "overrides": [
+   {
+    "nameRegex": "gherkin|pickled|in vinegar",
+    "hsn": "2001",
+    "gst": 5,
+    "source": "Sch I Sl 125: Vegetables prepared or preserved by vinegar or acetic acid (2001)"
+   }
+  ]
+ },
+ "chips-crisps-banana-chips": {
+  "hsn": "2106 90",
+  "gst": 5,
+  "source": "Sch I Sl 143: Namkeens, bhujia, mixture, chabena and similar edible preparations (2106 90)",
+  "path": "Snacks & Packaged Foods > Chips & Crisps > Banana Chips",
+  "confidence": "medium",
+  "note": "Banana chips could be 2008; also 5%"
+ },
+ "chips-crisps-kurkure-extruded-snacks": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares; extruded/expanded savoury products (1905)",
+  "path": "Snacks & Packaged Foods > Chips & Crisps > Kurkure & Extruded Snacks",
+  "confidence": "medium",
+  "note": "Extruded/expanded savoury per Sl 123; mixture-type items 2106 90 also 5%"
+ },
+ "chips-crisps-potato-chips": {
+  "hsn": "2005",
+  "gst": 5,
+  "source": "Sch I Sl 129: Other vegetables prepared or preserved, not frozen (2005)",
+  "path": "Snacks & Packaged Foods > Chips & Crisps > Potato Chips",
+  "confidence": "medium",
+  "note": "Potato chips 2005 20 (5%)"
+ },
+ "chips-crisps-puffs-rings": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares; extruded/expanded savoury products (1905)",
+  "path": "Snacks & Packaged Foods > Chips & Crisps > Puffs & Rings",
+  "confidence": "medium",
+  "note": "Puffs/rings extruded 1905; microwave popcorn 1904",
+  "overrides": [
+   {
+    "nameRegex": "popcorn|pop corn",
+    "hsn": "1904",
+    "gst": 5,
+    "source": "Sch I Sl 122: Corn flakes, bulgar wheat, prepared foods from cereal flakes (1904)"
+   }
+  ]
+ },
+ "chips-crisps-tortilla-nachos": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares; extruded/expanded savoury products (1905)",
+  "path": "Snacks & Packaged Foods > Chips & Crisps > Tortilla & Nachos",
+  "confidence": "medium",
+  "note": "Tortilla/nachos extruded/baked"
+ },
+ "chocolates-confectionery-candy": {
+  "hsn": "1704",
+  "gst": 5,
+  "source": "Sch I Sl 110: Sugar confectionary incl. white chocolate, not containing cocoa (1704)",
+  "path": "Snacks & Packaged Foods > Chocolates & Confectionery > Candy",
+  "confidence": "medium",
+  "note": "Candy; chocolate-containing items 1806",
+  "overrides": [
+   {
+    "nameRegex": "choco|chocolate|cocoa|cadbury|kitkat|snickers|nutella",
+    "hsn": "1806",
+    "gst": 5,
+    "source": "Sch I Sl 116: Chocolates and other food preparations containing cocoa (1806)"
+   }
+  ]
+ },
+ "chocolates-confectionery-chewing-gum-mints": {
+  "hsn": "1704",
+  "gst": 5,
+  "source": "Sch I Sl 110: Sugar confectionary incl. white chocolate, not containing cocoa (1704)",
+  "path": "Snacks & Packaged Foods > Chocolates & Confectionery > Chewing Gum & Mints",
+  "confidence": "medium",
+  "note": "Chewing gum 1704 90"
+ },
+ "chocolates-confectionery-chocolate-bars-countlines": {
+  "hsn": "1806",
+  "gst": 5,
+  "source": "Sch I Sl 116: Chocolates and other food preparations containing cocoa (1806)",
+  "path": "Snacks & Packaged Foods > Chocolates & Confectionery > Chocolate Bars & Countlines",
+  "confidence": "high"
+ },
+ "chocolates-confectionery-dark-chocolate": {
+  "hsn": "1806",
+  "gst": 5,
+  "source": "Sch I Sl 116: Chocolates and other food preparations containing cocoa (1806)",
+  "path": "Snacks & Packaged Foods > Chocolates & Confectionery > Dark Chocolate",
+  "confidence": "high"
+ },
+ "chocolates-confectionery-lollipops": {
+  "hsn": "1704",
+  "gst": 5,
+  "source": "Sch I Sl 110: Sugar confectionary incl. white chocolate, not containing cocoa (1704)",
+  "path": "Snacks & Packaged Foods > Chocolates & Confectionery > Lollipops",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": "choco|chocolate|cocoa|cadbury|kitkat|snickers|nutella",
+    "hsn": "1806",
+    "gst": 5,
+    "source": "Sch I Sl 116: Chocolates and other food preparations containing cocoa (1806)"
+   }
+  ]
+ },
+ "chocolates-confectionery-milk-chocolate": {
+  "hsn": "1806",
+  "gst": 5,
+  "source": "Sch I Sl 116: Chocolates and other food preparations containing cocoa (1806)",
+  "path": "Snacks & Packaged Foods > Chocolates & Confectionery > Milk Chocolate",
+  "confidence": "high"
+ },
+ "chocolates-confectionery-toffees-eclairs": {
+  "hsn": "1704",
+  "gst": 5,
+  "source": "Sch I Sl 110: Sugar confectionary incl. white chocolate, not containing cocoa (1704)",
+  "path": "Snacks & Packaged Foods > Chocolates & Confectionery > Toffees & Eclairs",
+  "confidence": "medium",
+  "note": "Toffees 1704; chocolate eclairs 1806",
+  "overrides": [
+   {
+    "nameRegex": "choco|chocolate|cocoa|cadbury|kitkat|snickers|nutella",
+    "hsn": "1806",
+    "gst": 5,
+    "source": "Sch I Sl 116: Chocolates and other food preparations containing cocoa (1806)"
+   }
+  ]
+ },
+ "chocolates-confectionery-white-chocolate": {
+  "hsn": "1704",
+  "gst": 5,
+  "source": "Sch I Sl 110: Sugar confectionary incl. white chocolate, not containing cocoa (1704)",
+  "path": "Snacks & Packaged Foods > Chocolates & Confectionery > White Chocolate",
+  "confidence": "medium",
+  "note": "White chocolate 1704 per chart; cocoa variants 1806, both 5%"
+ },
+ "instant-noodles-pasta-cup-noodles": {
+  "hsn": "1902",
+  "gst": 5,
+  "source": "Sch I Sl 119: Seviyan (vermicelli); pasta, noodles (1902)",
+  "path": "Snacks & Packaged Foods > Instant Noodles & Pasta > Cup Noodles",
+  "confidence": "high"
+ },
+ "instant-noodles-pasta-instant-noodles": {
+  "hsn": "1902",
+  "gst": 5,
+  "source": "Sch I Sl 119: Seviyan (vermicelli); pasta, noodles (1902)",
+  "path": "Snacks & Packaged Foods > Instant Noodles & Pasta > Instant Noodles",
+  "confidence": "high"
+ },
+ "instant-noodles-pasta-pasta": {
+  "hsn": "1902",
+  "gst": 5,
+  "source": "Sch I Sl 119: Seviyan (vermicelli); pasta, noodles (1902)",
+  "path": "Snacks & Packaged Foods > Instant Noodles & Pasta > Pasta",
+  "confidence": "high"
+ },
+ "instant-noodles-pasta-vermicelli-sevai": {
+  "hsn": "1902",
+  "gst": 5,
+  "source": "Sch I Sl 119: Seviyan (vermicelli); pasta, noodles (1902)",
+  "path": "Snacks & Packaged Foods > Instant Noodles & Pasta > Vermicelli (Sevai)",
+  "confidence": "high"
+ },
+ "namkeen-savoury-snacks-aloo-potato-snacks": {
+  "hsn": "2106 90",
+  "gst": 5,
+  "source": "Sch I Sl 143: Namkeens, bhujia, mixture, chabena and similar edible preparations (2106 90)",
+  "path": "Snacks & Packaged Foods > Namkeen & Savoury Snacks > Aloo & Potato Snacks",
+  "confidence": "high"
+ },
+ "namkeen-savoury-snacks-bhujia-sev": {
+  "hsn": "2106 90",
+  "gst": 5,
+  "source": "Sch I Sl 143: Namkeens, bhujia, mixture, chabena and similar edible preparations (2106 90)",
+  "path": "Snacks & Packaged Foods > Namkeen & Savoury Snacks > Bhujia & Sev",
+  "confidence": "high"
+ },
+ "namkeen-savoury-snacks-khakhra": {
+  "hsn": "1905",
+  "gst": 0,
+  "source": "Exempt Sl 100: Khakhra; bread, roti, chapathi, paratha, parotta and other Indian breads (1905 or 2106)",
+  "path": "Snacks & Packaged Foods > Namkeen & Savoury Snacks > Khakhra",
+  "confidence": "medium",
+  "note": "Khakhra Nil (Exempt Sl 100)"
+ },
+ "namkeen-savoury-snacks-mathri-shakkar-para": {
+  "hsn": "2106 90",
+  "gst": 5,
+  "source": "Sch I Sl 143: Namkeens, bhujia, mixture, chabena and similar edible preparations (2106 90)",
+  "path": "Snacks & Packaged Foods > Namkeen & Savoury Snacks > Mathri & Shakkar Para",
+  "confidence": "high"
+ },
+ "namkeen-savoury-snacks-mixture-chivda": {
+  "hsn": "2106 90",
+  "gst": 5,
+  "source": "Sch I Sl 143: Namkeens, bhujia, mixture, chabena and similar edible preparations (2106 90)",
+  "path": "Snacks & Packaged Foods > Namkeen & Savoury Snacks > Mixture & Chivda",
+  "confidence": "high"
+ },
+ "namkeen-savoury-snacks-moong-dal-chana": {
+  "hsn": "2106 90",
+  "gst": 5,
+  "source": "Sch I Sl 143: Namkeens, bhujia, mixture, chabena and similar edible preparations (2106 90)",
+  "path": "Snacks & Packaged Foods > Namkeen & Savoury Snacks > Moong Dal & Chana",
+  "confidence": "medium",
+  "note": "Roasted/flavoured chana and dal snacks"
+ },
+ "namkeen-savoury-snacks-murukku-thattai": {
+  "hsn": "2106 90",
+  "gst": 5,
+  "source": "Sch I Sl 143: Namkeens, bhujia, mixture, chabena and similar edible preparations (2106 90)",
+  "path": "Snacks & Packaged Foods > Namkeen & Savoury Snacks > Murukku & Thattai",
+  "confidence": "high"
+ },
+ "namkeen-savoury-snacks-papad-chips": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares; extruded/expanded savoury products (1905)",
+  "path": "Snacks & Packaged Foods > Namkeen & Savoury Snacks > Papad Chips",
+  "confidence": "low",
+  "note": "Papad chips: true papad Nil (Exempt Sl 99) but oats/ragi/extruded chips 5%"
+ },
+ "ready-to-eat-cook-baking-dessert-mixes": {
+  "hsn": "1901 20 00",
+  "gst": 5,
+  "source": "Sch I Sl 117: Mixes and doughs for bread, pastry and other bakers' wares (1901 20 00)",
+  "path": "Snacks & Packaged Foods > Ready to Eat & Cook > Baking & Dessert Mixes",
+  "confidence": "low",
+  "note": "Mixed aisle (marshmallows, sprinkles, cocoa, jelly, cake mix): mostly 5%; colours/essences 18%",
+  "overrides": [
+   {
+    "nameRegex": "food colou?r|colou?ring|gel colou?r",
+    "hsn": "3204",
+    "gst": 18,
+    "source": "Sch II Sl 46: Synthetic organic colouring matter (3204)"
+   },
+   {
+    "nameRegex": "(vanilla|rose|pineapple|mango) (essence|flavou?r)",
+    "hsn": "3302",
+    "gst": 18,
+    "source": "Sch II Sl 59: Mixtures of odoriferous substances (3302)"
+   }
+  ]
+ },
+ "ready-to-eat-cook-frozen-ready-meals": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106, other than pan masala)",
+  "path": "Snacks & Packaged Foods > Ready to Eat & Cook > Frozen Ready Meals",
+  "confidence": "medium",
+  "note": "Frozen biryani etc; frozen parathas Nil",
+  "overrides": [
+   {
+    "nameRegex": "paratha|roti|chapati|chapathi|parotta|naan",
+    "hsn": "1905",
+    "gst": 0,
+    "source": "Exempt Sl 100: Khakhra; bread, roti, chapathi, paratha, parotta and other Indian breads (1905 or 2106)"
+   }
+  ]
+ },
+ "ready-to-eat-cook-idli-dosa-batter": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 142: idli/dosa batter, chutney powder (2106)",
+  "path": "Snacks & Packaged Foods > Ready to Eat & Cook > Idli & Dosa Batter",
+  "confidence": "high"
+ },
+ "ready-to-eat-cook-instant-soup": {
+  "hsn": "2104",
+  "gst": 5,
+  "source": "Sch I Sl 140: Soups and broths and preparations therefor (2104)",
+  "path": "Snacks & Packaged Foods > Ready to Eat & Cook > Instant Soup",
+  "confidence": "high"
+ },
+ "ready-to-eat-cook-instant-upma-poha": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106, other than pan masala)",
+  "path": "Snacks & Packaged Foods > Ready to Eat & Cook > Instant Upma & Poha",
+  "confidence": "medium",
+  "note": "Instant mixes 5%; loose poha Nil",
+  "overrides": [
+   {
+    "nameRegex": "poha|aval|puffed rice|murmura",
+    "hsn": "1904",
+    "gst": 0,
+    "source": "Exempt Sl 98: Puffed rice, flattened rice (chira), other than pre-packaged and labelled (1904)",
+    "unbranded": true
+   }
+  ]
+ },
+ "ready-to-eat-cook-ready-to-cook-gravies": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces, mixed condiments, curry paste (2103)",
+  "path": "Snacks & Packaged Foods > Ready to Eat & Cook > Ready to Cook Gravies",
+  "confidence": "medium",
+  "note": "Gravy pastes/kits 2103 or 2106, both 5%"
+ },
+ "ready-to-eat-cook-ready-to-eat-meals": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106, other than pan masala)",
+  "path": "Snacks & Packaged Foods > Ready to Eat & Cook > Ready to Eat Meals",
+  "confidence": "high"
+ },
+ "sweets-mithai-dry-sweet-ladoo-barfi-peda": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 142: Sweetmeats (2106)",
+  "path": "Snacks & Packaged Foods > Sweets & Mithai > Dry Sweet (Ladoo, Barfi, Peda)",
+  "confidence": "medium",
+  "note": "Chikki/gajak 1704 also 5% (Sch I Sl 107)"
+ },
+ "sweets-mithai-halwa-sheera": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 142: Sweetmeats (2106)",
+  "path": "Snacks & Packaged Foods > Sweets & Mithai > Halwa & Sheera",
+  "confidence": "medium",
+  "note": "Payasam/halwa mixes 1901 also 5% (Sl 118)"
+ },
+ "sweets-mithai-packaged-mithai": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 142: Sweetmeats (2106)",
+  "path": "Snacks & Packaged Foods > Sweets & Mithai > Packaged Mithai",
+  "confidence": "high"
+ },
+ "sweets-mithai-rasgulla-gulab-jamun": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 142: Sweetmeats (2106)",
+  "path": "Snacks & Packaged Foods > Sweets & Mithai > Rasgulla & Gulab Jamun",
+  "confidence": "medium",
+  "note": "Gulab jamun mixes 1901 also 5%"
+ },
+ "baby-accessories-breast-pump-accessories": {
+  "hsn": "9018",
+  "gst": 5,
+  "source": "Sch I Sl 483: Instruments and appliances used in medical, surgical sciences",
+  "path": "Baby Care > Baby Accessories > Breast Pump & Accessories",
+  "confidence": "low",
+  "note": "Breast pump classification disputed (9018 vs 8413 pump 18%)",
+  "overrides": [
+   {
+    "nameRegex": "nursing.*pad|breast pad",
+    "hsn": "9619",
+    "gst": 5,
+    "source": "Sch I Sl 507: 9619 00 30/40/90 All goods"
+   }
+  ]
+ },
+ "baby-accessories-feeding-bottles": {
+  "hsn": "3926",
+  "gst": 5,
+  "source": "Sch I Sl 265: Feeding bottles, Plastic beads",
+  "path": "Baby Care > Baby Accessories > Feeding Bottles",
+  "confidence": "medium",
+  "note": "Glass bottles/accessories may be 18%",
+  "overrides": [
+   {
+    "nameRegex": "brush|steriliser|sterilizer|warmer",
+    "hsn": "9603",
+    "gst": 18,
+    "source": "Sch II Sl 623: Brushes (9603 other)"
+   },
+   {
+    "nameRegex": "nipple|teat",
+    "hsn": "4014",
+    "gst": 5,
+    "source": "Sch I Sl 274: Nipples of feeding bottles"
+   }
+  ]
+ },
+ "baby-accessories-pacifiers-teethers": {
+  "hsn": "4014",
+  "gst": 18,
+  "source": "Sch II Sl 140: Hygienic or pharmaceutical articles (including teats), of rubber",
+  "path": "Baby Care > Baby Accessories > Pacifiers & Teethers",
+  "confidence": "medium",
+  "note": "Silicone soothers/teethers could be 3924 (also 18%)"
+ },
+ "baby-accessories-sippers-cups": {
+  "hsn": "3924",
+  "gst": 18,
+  "source": "Sch II Sl 125: Tableware, kitchenware, other household articles of plastics",
+  "path": "Baby Care > Baby Accessories > Sippers & Cups",
+  "confidence": "medium"
+ },
+ "baby-bath-skin-baby-lotion-cream": {
+  "hsn": "3304",
+  "gst": 18,
+  "source": "Sch II Sl 61: Beauty or make-up preparations and preparations for care of skin",
+  "path": "Baby Care > Baby Bath & Skin > Baby Lotion & Cream",
+  "confidence": "high"
+ },
+ "baby-bath-skin-baby-oil": {
+  "hsn": "3305",
+  "gst": 5,
+  "source": "Sch I Sl 245: Hair oil, shampoo",
+  "path": "Baby Care > Baby Bath & Skin > Baby Oil",
+  "confidence": "medium",
+  "note": "Massage/body oils may be 3304 at 18%",
+  "overrides": [
+   {
+    "nameRegex": "massage oil",
+    "hsn": "3304",
+    "gst": 18,
+    "source": "Sch II Sl 61: Preparations for care of skin"
+   }
+  ]
+ },
+ "baby-bath-skin-baby-powder": {
+  "hsn": "3304",
+  "gst": 5,
+  "source": "Sch I Sl 244: Talcum powder, Face powder",
+  "path": "Baby Care > Baby Bath & Skin > Baby Powder",
+  "confidence": "high"
+ },
+ "baby-bath-skin-baby-shampoo": {
+  "hsn": "3305",
+  "gst": 5,
+  "source": "Sch I Sl 245: Hair oil, shampoo",
+  "path": "Baby Care > Baby Bath & Skin > Baby Shampoo",
+  "confidence": "high"
+ },
+ "baby-bath-skin-baby-soap-body-wash": {
+  "hsn": "3401",
+  "gst": 5,
+  "source": "Sch I Sl 251: Toilet soap in the form of bars, cakes, moulded pieces",
+  "path": "Baby Care > Baby Bath & Skin > Baby Soap & Body Wash",
+  "confidence": "medium",
+  "note": "Liquid washes 18%",
+  "overrides": [
+   {
+    "nameRegex": "body wash|wash|liquid|gel|foam",
+    "hsn": "3401",
+    "gst": 18,
+    "source": "Sch II Sl 66: Organic surface active products for washing skin, liquid or cream, retail"
+   }
+  ]
+ },
+ "baby-bath-skin-diaper-rash-cream": {
+  "hsn": "3304",
+  "gst": 18,
+  "source": "Sch II Sl 61: Preparations for the care of the skin (other than medicaments)",
+  "path": "Baby Care > Baby Bath & Skin > Diaper Rash Cream",
+  "confidence": "medium",
+  "note": "Medicated creams could be 3004 5%"
+ },
+ "baby-food-formula-baby-cereal": {
+  "hsn": "1901",
+  "gst": 5,
+  "source": "Sch I Sl 118: Food preparations of flour, groats, meal, malt extract, <40% cocoa",
+  "path": "Baby Care > Baby Food & Formula > Baby Cereal",
+  "confidence": "high"
+ },
+ "baby-food-formula-baby-purees-snacks": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified",
+  "path": "Baby Care > Baby Food & Formula > Baby Purees & Snacks",
+  "confidence": "medium",
+  "note": "Mixed 2007 purees/1904 snacks, all 5%",
+  "overrides": [
+   {
+    "nameRegex": "puree",
+    "hsn": "2007",
+    "gst": 5,
+    "source": "Sch I Sl 131: Jams, fruit jellies, fruit or nut puree"
+   },
+   {
+    "nameRegex": "melts|rings|sticks|puffs",
+    "hsn": "1904",
+    "gst": 5,
+    "source": "Sch I Sl 122: Prepared foods obtained by swelling or roasting of cereals"
+   }
+  ]
+ },
+ "baby-food-formula-infant-formula": {
+  "hsn": "1901",
+  "gst": 5,
+  "source": "Sch I Sl 118: Food preparations of flour, groats, meal, malt extract; infant preparations",
+  "path": "Baby Care > Baby Food & Formula > Infant Formula",
+  "confidence": "medium",
+  "note": "Infant formula 1901 10 not named in chart; falls under 1901 entry",
+  "overrides": [
+   {
+    "nameRegex": "milk drink",
+    "hsn": "2202 99 31",
+    "gst": 5,
+    "source": "01/2026 Sch I: Beverages containing milk"
+   }
+  ]
+ },
+ "baby-food-formula-teething-biscuits": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares",
+  "path": "Baby Care > Baby Food & Formula > Teething Biscuits",
+  "confidence": "high"
+ },
+ "diapers-wipes-baby-diapers": {
+  "hsn": "9619",
+  "gst": 5,
+  "source": "Sch I Sl 507: 9619 00 30/40/90 All goods",
+  "path": "Baby Care > Diapers & Wipes > Baby Diapers",
+  "confidence": "high"
+ },
+ "diapers-wipes-baby-wipes": {
+  "hsn": "3401",
+  "gst": 18,
+  "source": "Sch II Sl 66: Paper, wadding, felt and nonwovens impregnated with soap or detergent",
+  "path": "Baby Care > Diapers & Wipes > Baby Wipes",
+  "confidence": "medium"
+ },
+ "diapers-wipes-changing-mats": {
+  "hsn": "3924",
+  "gst": 18,
+  "source": "Sch II Sl 125: Tableware, kitchenware, other household articles of plastics",
+  "path": "Baby Care > Diapers & Wipes > Changing Mats",
+  "confidence": "low",
+  "note": "Disposable mats may be 9619 at 5%",
+  "overrides": [
+   {
+    "nameRegex": "disposable",
+    "hsn": "9619",
+    "gst": 5,
+    "source": "Sch I Sl 507: 9619 00 30/40/90 All goods"
+   }
+  ]
+ },
+ "diapers-wipes-diaper-pants": {
+  "hsn": "9619",
+  "gst": 5,
+  "source": "Sch I Sl 507: 9619 00 30/40/90 All goods",
+  "path": "Baby Care > Diapers & Wipes > Diaper Pants",
+  "confidence": "high"
+ },
+ "bath-body-bathing-soap-bar": {
+  "hsn": "3401",
+  "gst": 5,
+  "source": "Sch I Sl 251: Toilet soap in the form of bars, cakes, moulded pieces",
+  "path": "Personal Care > Bath & Body > Bathing Soap (Bar)",
+  "confidence": "high"
+ },
+ "bath-body-body-lotion": {
+  "hsn": "3304",
+  "gst": 18,
+  "source": "Sch II Sl 61: Preparations for the care of the skin",
+  "path": "Personal Care > Bath & Body > Body Lotion",
+  "confidence": "high"
+ },
+ "bath-body-body-wash-shower-gel": {
+  "hsn": "3401",
+  "gst": 18,
+  "source": "Sch II Sl 66: Organic surface active products for washing skin, liquid or cream, retail",
+  "path": "Personal Care > Bath & Body > Body Wash & Shower Gel",
+  "confidence": "medium",
+  "note": "Scrubs are 3304 18% too",
+  "overrides": [
+   {
+    "nameRegex": "scrub",
+    "hsn": "3304",
+    "gst": 18,
+    "source": "Sch II Sl 61: Preparations for the care of the skin"
+   }
+  ]
+ },
+ "bath-body-hand-sanitiser": {
+  "hsn": "3808",
+  "gst": 18,
+  "source": "Sch II Sl 95: Disinfectants and similar products",
+  "path": "Personal Care > Bath & Body > Hand Sanitiser",
+  "confidence": "medium",
+  "note": "Wipes 3401 also 18%"
+ },
+ "bath-body-hand-wash": {
+  "hsn": "3401",
+  "gst": 18,
+  "source": "Sch II Sl 66: Organic surface active products for washing skin, liquid or cream, retail",
+  "path": "Personal Care > Bath & Body > Hand Wash",
+  "confidence": "high"
+ },
+ "bath-body-massage-essential-oils": {
+  "hsn": "3301",
+  "gst": 18,
+  "source": "Sch II Sl 58: Essential oils",
+  "path": "Personal Care > Bath & Body > Massage & Essential Oils",
+  "confidence": "medium",
+  "note": "Ayurvedic taila would be 3004 5%",
+  "overrides": [
+   {
+    "nameRegex": "taila",
+    "hsn": "3004",
+    "gst": 5,
+    "source": "Sch I Sl 234: Medicaments incl. Ayurvedic put up for retail sale"
+   }
+  ]
+ },
+ "bath-body-talcum-powder": {
+  "hsn": "3304",
+  "gst": 5,
+  "source": "Sch I Sl 244: Talcum powder, Face powder",
+  "path": "Personal Care > Bath & Body > Talcum Powder",
+  "confidence": "high"
+ },
+ "deodorants-fragrances-attar": {
+  "hsn": "3303",
+  "gst": 18,
+  "source": "Sch II Sl 60: Perfumes and toilet waters",
+  "path": "Personal Care > Deodorants & Fragrances > Attar",
+  "confidence": "medium",
+  "note": "Roll-on perfumes 3303"
+ },
+ "deodorants-fragrances-deodorant-spray": {
+  "hsn": "3307",
+  "gst": 18,
+  "source": "Sch II Sl 64: Personal deodorants and other perfumery/toilet preparations",
+  "path": "Personal Care > Deodorants & Fragrances > Deodorant Spray",
+  "confidence": "high"
+ },
+ "deodorants-fragrances-perfume-body-mist": {
+  "hsn": "3303",
+  "gst": 18,
+  "source": "Sch II Sl 60: Perfumes and toilet waters",
+  "path": "Personal Care > Deodorants & Fragrances > Perfume & Body Mist",
+  "confidence": "high"
+ },
+ "deodorants-fragrances-roll-on": {
+  "hsn": "3307",
+  "gst": 18,
+  "source": "Sch II Sl 64: Personal deodorants",
+  "path": "Personal Care > Deodorants & Fragrances > Roll-On",
+  "confidence": "high"
+ },
+ "feminine-hygiene-intimate-wash": {
+  "hsn": "3401",
+  "gst": 18,
+  "source": "Sch II Sl 66: Organic surface active products for washing skin, liquid or cream, retail",
+  "path": "Personal Care > Feminine Hygiene > Intimate Wash",
+  "confidence": "medium",
+  "note": "Intimate cream 3304",
+  "overrides": [
+   {
+    "nameRegex": "cream",
+    "hsn": "3304",
+    "gst": 18,
+    "source": "Sch II Sl 61: Preparations for the care of the skin"
+   }
+  ]
+ },
+ "feminine-hygiene-menstrual-cups": {
+  "hsn": "4014",
+  "gst": 18,
+  "source": "Sch II Sl 140: Hygienic or pharmaceutical articles of vulcanised rubber",
+  "path": "Personal Care > Feminine Hygiene > Menstrual Cups",
+  "confidence": "low",
+  "note": "Silicone cup; chart has no specific entry (sanitary pads/tampons only Exempt Sl 165)"
+ },
+ "feminine-hygiene-panty-liners": {
+  "hsn": "9619",
+  "gst": 0,
+  "source": "Exempt Sl 165: Sanitary towels (pads) or sanitary napkins; tampons (9619 00 10/20)",
+  "path": "Personal Care > Feminine Hygiene > Panty Liners",
+  "confidence": "medium",
+  "note": "Panty liners assumed sanitary towel heading 9619 00 10; else Sch I Sl 507 5%"
+ },
+ "feminine-hygiene-sanitary-pads": {
+  "hsn": "9619",
+  "gst": 0,
+  "source": "Exempt Sl 165: Sanitary towels (pads) or sanitary napkins; tampons",
+  "path": "Personal Care > Feminine Hygiene > Sanitary Pads",
+  "confidence": "high"
+ },
+ "feminine-hygiene-tampons": {
+  "hsn": "9619",
+  "gst": 0,
+  "source": "Exempt Sl 165: Sanitary towels (pads) or sanitary napkins; tampons",
+  "path": "Personal Care > Feminine Hygiene > Tampons",
+  "confidence": "high"
+ },
+ "hair-care-anti-dandruff-treatment": {
+  "hsn": "3305",
+  "gst": 18,
+  "source": "Sch II Sl 62: Preparations for use on the hair [other than hair oil, shampoo]",
+  "path": "Personal Care > Hair Care > Anti-Dandruff Treatment",
+  "confidence": "medium",
+  "note": "Mixed shampoo/oil/cream",
+  "overrides": [
+   {
+    "nameRegex": "shampoo",
+    "hsn": "3305",
+    "gst": 5,
+    "source": "Sch I Sl 245: Hair oil, shampoo"
+   },
+   {
+    "nameRegex": "hair oil",
+    "hsn": "3305",
+    "gst": 5,
+    "source": "Sch I Sl 245: Hair oil, shampoo"
+   }
+  ]
+ },
+ "hair-care-conditioner": {
+  "hsn": "3305",
+  "gst": 18,
+  "source": "Sch II Sl 62: Preparations for use on the hair [other than hair oil, shampoo]",
+  "path": "Personal Care > Hair Care > Conditioner",
+  "confidence": "high"
+ },
+ "hair-care-hair-colour-dye": {
+  "hsn": "3305",
+  "gst": 18,
+  "source": "Sch II Sl 62: Preparations for use on the hair",
+  "path": "Personal Care > Hair Care > Hair Colour & Dye",
+  "confidence": "medium",
+  "note": "Mehendi/henna powder differs"
+ },
+ "hair-care-hair-gel-wax": {
+  "hsn": "3305",
+  "gst": 18,
+  "source": "Sch II Sl 62: Preparations for use on the hair",
+  "path": "Personal Care > Hair Care > Hair Gel & Wax",
+  "confidence": "high"
+ },
+ "hair-care-hair-mask": {
+  "hsn": "3305",
+  "gst": 18,
+  "source": "Sch II Sl 62: Preparations for use on the hair",
+  "path": "Personal Care > Hair Care > Hair Mask",
+  "confidence": "low",
+  "note": "Some items are herbal powders (amla, aloe)",
+  "overrides": [
+   {
+    "nameRegex": "\\bpowder\\b",
+    "hsn": "1211",
+    "gst": 5,
+    "source": "Sch I Sl 71: Plants and parts of plants used in perfumery, pharmacy"
+   }
+  ]
+ },
+ "hair-care-hair-oil": {
+  "hsn": "3305",
+  "gst": 5,
+  "source": "Sch I Sl 245: Hair oil, shampoo",
+  "path": "Personal Care > Hair Care > Hair Oil",
+  "confidence": "high"
+ },
+ "hair-care-hair-serum": {
+  "hsn": "3305",
+  "gst": 18,
+  "source": "Sch II Sl 62: Preparations for use on the hair",
+  "path": "Personal Care > Hair Care > Hair Serum",
+  "confidence": "high"
+ },
+ "hair-care-shampoo": {
+  "hsn": "3305",
+  "gst": 5,
+  "source": "Sch I Sl 245: Hair oil, shampoo",
+  "path": "Personal Care > Hair Care > Shampoo",
+  "confidence": "high"
+ },
+ "health-wellness-ayurvedic-medicines": {
+  "hsn": "3004",
+  "gst": 5,
+  "source": "Sch I Sl 234: Medicaments incl. Ayurvedic put up for retail sale",
+  "path": "Personal Care > Health & Wellness > Ayurvedic Medicines",
+  "confidence": "medium",
+  "note": "Proprietary/supplement items also 5% under 2106"
+ },
+ "health-wellness-condoms-lubricants": {
+  "hsn": "4014",
+  "gst": 0,
+  "source": "Exempt Sl 120: Condoms and contraceptives",
+  "path": "Personal Care > Health & Wellness > Condoms & Lubricants",
+  "confidence": "medium",
+  "note": "Lubricant gels 18%",
+  "overrides": [
+   {
+    "nameRegex": "lube|lubricant",
+    "hsn": "3403",
+    "gst": 18,
+    "source": "Sch II Sl 68: Lubricating preparations"
+   }
+  ]
+ },
+ "health-wellness-cotton-bandages": {
+  "hsn": "5601",
+  "gst": 5,
+  "source": "Sch I Sl 349: Wadding of textile materials; absorbent cotton wool",
+  "path": "Personal Care > Health & Wellness > Cotton & Bandages",
+  "confidence": "medium",
+  "note": "Bandages 3005 also 5%; masks 18%",
+  "overrides": [
+   {
+    "nameRegex": "mask",
+    "hsn": "6307",
+    "gst": 18,
+    "source": "Sch II 18% (not elsewhere specified; Sch I Sl 485 excludes protective masks without filters)"
+   }
+  ]
+ },
+ "health-wellness-cough-cold-relief": {
+  "hsn": "3004",
+  "gst": 5,
+  "source": "Sch I Sl 234: Medicaments incl. Ayurvedic put up for retail sale",
+  "path": "Personal Care > Health & Wellness > Cough & Cold Relief",
+  "confidence": "high"
+ },
+ "health-wellness-digestive-care-hajmola-eno": {
+  "hsn": "3004",
+  "gst": 5,
+  "source": "Sch I Sl 234: Medicaments incl. Ayurvedic put up for retail sale",
+  "path": "Personal Care > Health & Wellness > Digestive Care (Hajmola, ENO)",
+  "confidence": "medium",
+  "note": "Fibre/psyllium supplements may be 1211/2106, also 5%"
+ },
+ "health-wellness-immunity-supplements": {
+  "hsn": "3004",
+  "gst": 5,
+  "source": "Sch I Sl 234: Medicaments incl. Ayurvedic put up for retail sale",
+  "path": "Personal Care > Health & Wellness > Immunity & Supplements",
+  "confidence": "medium",
+  "note": "Mix of ayurvedic, juices and supplements; 2106 (Sl 145) also 5%"
+ },
+ "health-wellness-mosquito-repellent-odomos-patches": {
+  "hsn": "3808",
+  "gst": 18,
+  "source": "Sch II Sl 95: Insecticides, disinfectants and similar products",
+  "path": "Personal Care > Health & Wellness > Mosquito Repellent (Odomos, Patches)",
+  "confidence": "medium"
+ },
+ "health-wellness-pain-relief-balm-spray": {
+  "hsn": "3004",
+  "gst": 5,
+  "source": "Sch I Sl 234: Medicaments incl. Ayurvedic put up for retail sale",
+  "path": "Personal Care > Health & Wellness > Pain Relief (Balm, Spray)",
+  "confidence": "high"
+ },
+ "men-s-grooming-after-shave": {
+  "hsn": "3307",
+  "gst": 5,
+  "source": "Sch I Sl 249: Shaving cream, shaving lotion, aftershave lotion",
+  "path": "Personal Care > Men's Grooming > After Shave",
+  "confidence": "high"
+ },
+ "men-s-grooming-beard-oil-balm": {
+  "hsn": "3305",
+  "gst": 5,
+  "source": "Sch I Sl 245: Hair oil, shampoo",
+  "path": "Personal Care > Men's Grooming > Beard Oil & Balm",
+  "confidence": "low",
+  "note": "Beard oil classification uncertain",
+  "overrides": [
+   {
+    "nameRegex": "wax|serum|balm|cream|gel",
+    "hsn": "3305",
+    "gst": 18,
+    "source": "Sch II Sl 62: Preparations for use on the hair"
+   }
+  ]
+ },
+ "men-s-grooming-razor-blades": {
+  "hsn": "8212",
+  "gst": 18,
+  "source": "Sch II Sl 372: Razors and razor blades",
+  "path": "Personal Care > Men's Grooming > Razor & Blades",
+  "confidence": "high"
+ },
+ "men-s-grooming-shaving-cream-gel": {
+  "hsn": "3307",
+  "gst": 5,
+  "source": "Sch I Sl 249: Shaving cream, shaving lotion, aftershave lotion",
+  "path": "Personal Care > Men's Grooming > Shaving Cream & Gel",
+  "confidence": "medium",
+  "note": "Gel/foam may be 18%",
+  "overrides": [
+   {
+    "nameRegex": "gel|foam",
+    "hsn": "3307",
+    "gst": 18,
+    "source": "Sch II Sl 64: Pre-shave, shaving or after-shave preparations"
+   }
+  ]
+ },
+ "men-s-grooming-trimmer-accessories": {
+  "hsn": "8510",
+  "gst": 18,
+  "source": "Sch II Sl 483: Shavers, hair clippers and hair-removing appliances",
+  "path": "Personal Care > Men's Grooming > Trimmer Accessories",
+  "confidence": "high"
+ },
+ "oral-care-dental-floss": {
+  "hsn": "3306",
+  "gst": 5,
+  "source": "Sch I Sl 248: Yarn used to clean between the teeth (Dental floss)",
+  "path": "Personal Care > Oral Care > Dental Floss",
+  "confidence": "high"
+ },
+ "oral-care-mouthwash": {
+  "hsn": "3306",
+  "gst": 18,
+  "source": "Sch II Sl 63: Preparations for oral or dental hygiene [other than tooth powder, tooth paste, dental floss]",
+  "path": "Personal Care > Oral Care > Mouthwash",
+  "confidence": "high"
+ },
+ "oral-care-tongue-cleaner": {
+  "hsn": "9603",
+  "gst": 18,
+  "source": "Sch II Sl 623: Brushes (9603 other)",
+  "path": "Personal Care > Oral Care > Tongue Cleaner",
+  "confidence": "low",
+  "note": "Tongue cleaner not named in chart"
+ },
+ "oral-care-toothbrush": {
+  "hsn": "9603",
+  "gst": 5,
+  "source": "Sch I Sl 504: Tooth brushes including dental-plate brushes",
+  "path": "Personal Care > Oral Care > Toothbrush",
+  "confidence": "high"
+ },
+ "oral-care-toothpaste": {
+  "hsn": "3306",
+  "gst": 5,
+  "source": "Sch I Sl 246: Toothpaste",
+  "path": "Personal Care > Oral Care > Toothpaste",
+  "confidence": "high"
+ },
+ "skin-care-face-cream-fairness-anti-ageing": {
+  "hsn": "3304",
+  "gst": 18,
+  "source": "Sch II Sl 61: Beauty or make-up preparations and preparations for the care of the skin incl. sunscreen",
+  "path": "Personal Care > Skin Care > Face Cream (Fairness & Anti-Ageing)",
+  "confidence": "high"
+ },
+ "skin-care-face-scrub-mask": {
+  "hsn": "3304",
+  "gst": 18,
+  "source": "Sch II Sl 61: Beauty or make-up preparations and preparations for the care of the skin incl. sunscreen",
+  "path": "Personal Care > Skin Care > Face Scrub & Mask",
+  "confidence": "high"
+ },
+ "skin-care-face-serum": {
+  "hsn": "3304",
+  "gst": 18,
+  "source": "Sch II Sl 61: Beauty or make-up preparations and preparations for the care of the skin incl. sunscreen",
+  "path": "Personal Care > Skin Care > Face Serum",
+  "confidence": "high"
+ },
+ "skin-care-face-wash-cleanser": {
+  "hsn": "3401",
+  "gst": 18,
+  "source": "Sch II Sl 66: Organic surface active products for washing skin, liquid or cream, retail",
+  "path": "Personal Care > Skin Care > Face Wash & Cleanser",
+  "confidence": "medium",
+  "note": "Could also be 3304 (18%)"
+ },
+ "skin-care-lip-balm": {
+  "hsn": "3304",
+  "gst": 18,
+  "source": "Sch II Sl 61: Beauty or make-up preparations and preparations for the care of the skin incl. sunscreen",
+  "path": "Personal Care > Skin Care > Lip Balm",
+  "confidence": "high"
+ },
+ "skin-care-moisturiser-lotion": {
+  "hsn": "3304",
+  "gst": 18,
+  "source": "Sch II Sl 61: Beauty or make-up preparations and preparations for the care of the skin incl. sunscreen",
+  "path": "Personal Care > Skin Care > Moisturiser & Lotion",
+  "confidence": "high"
+ },
+ "skin-care-sunscreen": {
+  "hsn": "3304",
+  "gst": 18,
+  "source": "Sch II Sl 61: Beauty or make-up preparations and preparations for the care of the skin incl. sunscreen",
+  "path": "Personal Care > Skin Care > Sunscreen",
+  "confidence": "high"
+ },
+ "air-fresheners-repellents-air-freshener-gel-block": {
+  "hsn": "3307",
+  "gst": 18,
+  "source": "Sch II Sl 64: room deodorisers/perfumery preparations n.e.s.",
+  "path": "Home Care > Air Fresheners & Repellents > Air Freshener Gel & Block",
+  "confidence": "high"
+ },
+ "air-fresheners-repellents-car-freshener": {
+  "hsn": "3307",
+  "gst": 18,
+  "source": "Sch II Sl 64: room deodorisers/perfumery preparations n.e.s.",
+  "path": "Home Care > Air Fresheners & Repellents > Car Freshener",
+  "confidence": "high"
+ },
+ "air-fresheners-repellents-cockroach-ant-killer": {
+  "hsn": "3808",
+  "gst": 18,
+  "source": "Sch II Sl 95: insecticides, rodenticides, disinfectants and similar products",
+  "path": "Home Care > Air Fresheners & Repellents > Cockroach & Ant Killer",
+  "confidence": "high"
+ },
+ "air-fresheners-repellents-insect-killer-spray": {
+  "hsn": "3808",
+  "gst": 18,
+  "source": "Sch II Sl 95: insecticides, rodenticides, disinfectants and similar products",
+  "path": "Home Care > Air Fresheners & Repellents > Insect Killer Spray",
+  "confidence": "high"
+ },
+ "air-fresheners-repellents-mosquito-coil-mat": {
+  "hsn": "3808",
+  "gst": 18,
+  "source": "Sch II Sl 95: insecticides, rodenticides, disinfectants and similar products",
+  "path": "Home Care > Air Fresheners & Repellents > Mosquito Coil & Mat",
+  "confidence": "high"
+ },
+ "air-fresheners-repellents-mosquito-liquid-vaporiser": {
+  "hsn": "3808",
+  "gst": 18,
+  "source": "Sch II Sl 95: insecticides, rodenticides, disinfectants and similar products",
+  "path": "Home Care > Air Fresheners & Repellents > Mosquito Liquid Vaporiser",
+  "confidence": "medium",
+  "note": "Vaporiser machine/refill; machine alone could be 8543 (also 18%)"
+ },
+ "air-fresheners-repellents-mosquito-racquet": {
+  "hsn": "8543",
+  "gst": 18,
+  "source": "Sch II Sl 515: 8543 electrical machines and apparatus having individual functions",
+  "path": "Home Care > Air Fresheners & Repellents > Mosquito Racquet",
+  "confidence": "medium"
+ },
+ "air-fresheners-repellents-rat-killer": {
+  "hsn": "3808",
+  "gst": 18,
+  "source": "Sch II Sl 95: insecticides, rodenticides, disinfectants and similar products",
+  "path": "Home Care > Air Fresheners & Repellents > Rat Killer",
+  "confidence": "high"
+ },
+ "air-fresheners-repellents-room-freshener-spray": {
+  "hsn": "3307",
+  "gst": 18,
+  "source": "Sch II Sl 64: room deodorisers/perfumery preparations n.e.s.",
+  "path": "Home Care > Air Fresheners & Repellents > Room Freshener Spray",
+  "confidence": "medium",
+  "note": "Automatic dispenser devices may be 8479 (18%)"
+ },
+ "cleaning-tools-supplies-broom-mop": {
+  "hsn": "9603",
+  "gst": 18,
+  "source": "Sch II Sl 623: brushes, mops, squeegees (other than twig brooms)",
+  "path": "Home Care > Cleaning Tools & Supplies > Broom & Mop",
+  "confidence": "medium",
+  "note": "Plastic/soft brooms, mops 18%; grass/twig broom nil",
+  "overrides": [
+   {
+    "nameRegex": "grass broom|coconut (stick |leaf )?broom|palm broom|thatta|phool (jhadu|broom)",
+    "hsn": "9603",
+    "gst": 0,
+    "source": "Exempt Sl 162: brooms of twigs or other vegetable materials"
+   }
+  ]
+ },
+ "cleaning-tools-supplies-cleaning-brushes": {
+  "hsn": "9603",
+  "gst": 18,
+  "source": "Sch II Sl 623: brushes (hand operated)",
+  "path": "Home Care > Cleaning Tools & Supplies > Cleaning Brushes",
+  "confidence": "high"
+ },
+ "cleaning-tools-supplies-cleaning-cloths-wipes": {
+  "hsn": "6307",
+  "gst": 18,
+  "source": "Sch II residual (cleaning cloths 6307, wipes, duster not listed in Sch I/Exempt)",
+  "path": "Home Care > Cleaning Tools & Supplies > Cleaning Cloths & Wipes",
+  "confidence": "medium",
+  "note": "Wet wipes (3307/5603) and sponge wipes (3924) also 18%"
+ },
+ "cleaning-tools-supplies-cling-wrap-aluminium-foil": {
+  "hsn": "7607",
+  "gst": 18,
+  "source": "Sch II Sl 336: aluminium foil not exceeding 0.2 mm",
+  "path": "Home Care > Cleaning Tools & Supplies > Cling Wrap & Aluminium Foil",
+  "confidence": "high",
+  "note": "Cling film 3920 and baking/wrapping paper 4823 also 18%"
+ },
+ "cleaning-tools-supplies-dustpan-brush": {
+  "hsn": "3924",
+  "gst": 18,
+  "source": "Sch II Sl 125: tableware, kitchenware, household articles of plastics",
+  "path": "Home Care > Cleaning Tools & Supplies > Dustpan & Brush",
+  "confidence": "high"
+ },
+ "cleaning-tools-supplies-garbage-bags": {
+  "hsn": "3923",
+  "gst": 18,
+  "source": "Sch II Sl 124: articles for conveyance or packing of goods, of plastics",
+  "path": "Home Care > Cleaning Tools & Supplies > Garbage Bags",
+  "confidence": "high"
+ },
+ "cleaning-tools-supplies-rubber-gloves": {
+  "hsn": "4015",
+  "gst": 18,
+  "source": "Sch II Sl 141: gloves of vulcanised rubber (other than surgical gloves)",
+  "path": "Home Care > Cleaning Tools & Supplies > Rubber Gloves",
+  "confidence": "high"
+ },
+ "detergent-detergent-bar": {
+  "hsn": "3401",
+  "gst": 18,
+  "source": "Sch II Sl 66: soap in cakes other than toilet soap",
+  "path": "Home Care > Detergent > Detergent Bar",
+  "confidence": "high"
+ },
+ "detergent-detergent-powder": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Detergent > Detergent Powder",
+  "confidence": "high"
+ },
+ "detergent-fabric-softener": {
+  "hsn": "3809",
+  "gst": 18,
+  "source": "Sch II Sl 96: finishing agents / textile auxiliaries 3809",
+  "path": "Home Care > Detergent > Fabric Softener",
+  "confidence": "medium",
+  "note": "Fabric conditioner often 3809 or 3402, both 18%"
+ },
+ "detergent-laundry-additives": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Detergent > Laundry Additives",
+  "confidence": "low",
+  "note": "Mixed: after-wash enhancers, clothing pegs (3924/4421), cleaners; all 18% in the chart"
+ },
+ "detergent-liquid-detergent": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Detergent > Liquid Detergent",
+  "confidence": "high"
+ },
+ "detergent-stain-remover": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Detergent > Stain Remover",
+  "confidence": "high"
+ },
+ "dishwash-dishwash-bar": {
+  "hsn": "3401",
+  "gst": 18,
+  "source": "Sch II Sl 66: soap in cakes other than toilet soap",
+  "path": "Home Care > Dishwash > Dishwash Bar",
+  "confidence": "high"
+ },
+ "dishwash-dishwash-gel-liquid": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Dishwash > Dishwash Gel / Liquid",
+  "confidence": "high"
+ },
+ "dishwash-dishwash-powder": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Dishwash > Dishwash Powder",
+  "confidence": "high"
+ },
+ "dishwash-scrub-pad-sponge": {
+  "hsn": "7323",
+  "gst": 18,
+  "source": "Sch II Sl 301: pot scourers and scouring/polishing pads of iron or steel",
+  "path": "Home Care > Dishwash > Scrub Pad & Sponge",
+  "confidence": "medium",
+  "note": "Non-metal sponge/scrub pads fall to 18% residual (3924/6805/3926)"
+ },
+ "floor-surface-cleaners-bathroom-cleaner": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Floor & Surface Cleaners > Bathroom Cleaner",
+  "confidence": "high"
+ },
+ "floor-surface-cleaners-floor-cleaner-phenyl-disinfectant": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Floor & Surface Cleaners > Floor Cleaner (Phenyl & Disinfectant)",
+  "confidence": "medium",
+  "note": "Disinfectants may be 3808 (also 18%)"
+ },
+ "floor-surface-cleaners-glass-cleaner": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Floor & Surface Cleaners > Glass Cleaner",
+  "confidence": "high"
+ },
+ "floor-surface-cleaners-kitchen-cleaner": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Floor & Surface Cleaners > Kitchen Cleaner",
+  "confidence": "high"
+ },
+ "floor-surface-cleaners-multi-surface-spray": {
+  "hsn": "3808",
+  "gst": 18,
+  "source": "Sch II Sl 95: insecticides, rodenticides, disinfectants and similar products",
+  "path": "Home Care > Floor & Surface Cleaners > Multi-Surface Spray",
+  "confidence": "medium"
+ },
+ "floor-surface-cleaners-toilet-cleaner": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Floor & Surface Cleaners > Toilet Cleaner",
+  "confidence": "high"
+ },
+ "paper-disposables-disposable-plates-cups": {
+  "hsn": "4823",
+  "gst": 18,
+  "source": "Sch II Sl 189: other paper, paperboard articles (4823)",
+  "path": "Home Care > Paper & Disposables > Disposable Plates & Cups",
+  "confidence": "medium",
+  "note": "Plastic cups 3924 also 18%; wooden cutlery 5%",
+  "overrides": [
+   {
+    "nameRegex": "wood(en)? (disposable )?(fork|spoon|knife|knives|cutlery)|bamboo (fork|spoon|cutlery)",
+    "hsn": "4419",
+    "gst": 5,
+    "source": "Sch I Sl 304: tableware and kitchenware of wood"
+   }
+  ]
+ },
+ "paper-disposables-garbage-bags": {
+  "hsn": "3923",
+  "gst": 18,
+  "source": "Sch II Sl 124: articles for conveyance or packing of goods, of plastics",
+  "path": "Home Care > Paper & Disposables > Garbage Bags",
+  "confidence": "high"
+ },
+ "paper-disposables-paper-towels-kitchen-roll": {
+  "hsn": "4818",
+  "gst": 18,
+  "source": "Sch II Sl 184: toilet paper and similar paper in rolls of household use",
+  "path": "Home Care > Paper & Disposables > Paper Towels / Kitchen Roll",
+  "confidence": "high"
+ },
+ "paper-disposables-tissue-paper-napkins": {
+  "hsn": "4818",
+  "gst": 18,
+  "source": "Sch II Sl 184: tissues, napkins, handkerchiefs of paper",
+  "path": "Home Care > Paper & Disposables > Tissue Paper & Napkins",
+  "confidence": "high"
+ },
+ "paper-disposables-toilet-paper": {
+  "hsn": "4818",
+  "gst": 18,
+  "source": "Sch II Sl 184: toilet paper",
+  "path": "Home Care > Paper & Disposables > Toilet Paper",
+  "confidence": "high"
+ },
+ "shoe-care-shoe-cleaner": {
+  "hsn": "3402",
+  "gst": 18,
+  "source": "Sch II Sl 67: washing and cleaning preparations (3402)",
+  "path": "Home Care > Shoe Care > Shoe Cleaner",
+  "confidence": "medium",
+  "note": "Deodorizer spray could be 3307 (18%)"
+ },
+ "shoe-care-shoe-polish": {
+  "hsn": "3405",
+  "gst": 18,
+  "source": "Sch II Sl 70: polishes and creams for footwear",
+  "path": "Home Care > Shoe Care > Shoe Polish",
+  "confidence": "high"
+ },
+ "cat-food-treats-cat-treats": {
+  "hsn": "2309",
+  "gst": 18,
+  "source": "Sch II residual: 2309 preparations of a kind used in animal feeding (Exempt Sl 105 covers only aquatic, poultry, cattle feed)",
+  "path": "Pet Care > Cat Food & Treats > Cat Treats",
+  "confidence": "medium",
+  "note": "Pet food put up for retail sale; not exempt animal feed"
+ },
+ "cat-food-treats-dry-cat-food": {
+  "hsn": "2309",
+  "gst": 18,
+  "source": "Sch II residual: 2309 preparations of a kind used in animal feeding (Exempt Sl 105 covers only aquatic, poultry, cattle feed)",
+  "path": "Pet Care > Cat Food & Treats > Dry Cat Food",
+  "confidence": "medium",
+  "note": "Pet food put up for retail sale; not exempt animal feed"
+ },
+ "cat-food-treats-wet-cat-food": {
+  "hsn": "2309",
+  "gst": 18,
+  "source": "Sch II residual: 2309 preparations of a kind used in animal feeding (Exempt Sl 105 covers only aquatic, poultry, cattle feed)",
+  "path": "Pet Care > Cat Food & Treats > Wet Cat Food",
+  "confidence": "medium",
+  "note": "Pet food put up for retail sale; not exempt animal feed"
+ },
+ "dog-food-treats-dog-treats-biscuits": {
+  "hsn": "2309",
+  "gst": 18,
+  "source": "Sch II residual: 2309 preparations of a kind used in animal feeding (Exempt Sl 105 covers only aquatic, poultry, cattle feed)",
+  "path": "Pet Care > Dog Food & Treats > Dog Treats & Biscuits",
+  "confidence": "medium",
+  "note": "Pet food put up for retail sale; not exempt animal feed"
+ },
+ "dog-food-treats-dry-dog-food": {
+  "hsn": "2309",
+  "gst": 18,
+  "source": "Sch II residual: 2309 preparations of a kind used in animal feeding (Exempt Sl 105 covers only aquatic, poultry, cattle feed)",
+  "path": "Pet Care > Dog Food & Treats > Dry Dog Food",
+  "confidence": "medium",
+  "note": "Pet food put up for retail sale; not exempt animal feed"
+ },
+ "dog-food-treats-puppy-food": {
+  "hsn": "2309",
+  "gst": 18,
+  "source": "Sch II residual: 2309 preparations of a kind used in animal feeding (Exempt Sl 105 covers only aquatic, poultry, cattle feed)",
+  "path": "Pet Care > Dog Food & Treats > Puppy Food",
+  "confidence": "medium",
+  "note": "Pet food put up for retail sale; not exempt animal feed"
+ },
+ "dog-food-treats-wet-dog-food": {
+  "hsn": "2309",
+  "gst": 18,
+  "source": "Sch II residual: 2309 preparations of a kind used in animal feeding (Exempt Sl 105 covers only aquatic, poultry, cattle feed)",
+  "path": "Pet Care > Dog Food & Treats > Wet Dog Food",
+  "confidence": "medium",
+  "note": "Pet food put up for retail sale; not exempt animal feed"
+ },
+ "pet-accessories-bowls-feeders": {
+  "hsn": "7323",
+  "gst": 5,
+  "source": "Sch I Sl 416: table, kitchen or other household articles of iron and steel",
+  "path": "Pet Care > Pet Accessories > Bowls & Feeders",
+  "confidence": "low",
+  "note": "Pet bowls; steel assumed, plastic bowls 18%",
+  "overrides": [
+   {
+    "nameRegex": "plastic|silicone|slow feeder|melamine",
+    "hsn": "3924",
+    "gst": 18,
+    "source": "Sch II Sl 125: plastic household articles"
+   }
+  ]
+ },
+ "pet-accessories-litter-litter-tray": {
+  "hsn": "2508",
+  "gst": 5,
+  "source": "Sch I Sl 169: other clays (bentonite)",
+  "path": "Pet Care > Pet Accessories > Litter & Litter Tray",
+  "confidence": "low",
+  "note": "Bentonite clay litter assumed; silica/crystal litter (3824/2811) would be 18%",
+  "overrides": [
+   {
+    "nameRegex": "silica|crystal|tofu|pine",
+    "hsn": "3824",
+    "gst": 18,
+    "source": "Sch II residual"
+   }
+  ]
+ },
+ "pet-accessories-pet-shampoo": {
+  "hsn": "3307",
+  "gst": 18,
+  "source": "Sch II Sl 64: perfumery, cosmetic or toilet preparations n.e.s.",
+  "path": "Pet Care > Pet Accessories > Pet Shampoo",
+  "confidence": "medium",
+  "note": "Pet grooming; medicated flea/tick shampoo is 3808 (18%) too"
+ },
+ "festival-items-diyas-decorative-candles": {
+  "hsn": "6912",
+  "gst": 0,
+  "source": "Exempt Sl 151: earthen pot and clay lamps",
+  "path": "Pooja & Festivals > Festival Items > Diyas & Decorative Candles",
+  "confidence": "medium",
+  "note": "Mixed clay diyas and candles; decorative/non-clay diyas would be 18%",
+  "overrides": [
+   {
+    "nameRegex": "candle|tealight|tea light|taper",
+    "hsn": "3406",
+    "gst": 5,
+    "source": "Sch I Sl 253: candles, tapers and the like"
+   },
+   {
+    "nameRegex": "brass|metal|steel|silver|plastic|\\bled\\b|electric|decorative diya|allure",
+    "hsn": "9405",
+    "gst": 18,
+    "source": "Sch II Sl 614: luminaires and lighting fittings"
+   }
+  ]
+ },
+ "festival-items-gift-packs-hampers": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: food preparations n.e.s. (also Sch I Sl 116 chocolates, Sl 25 dried makhana/nuts)",
+  "path": "Pooja & Festivals > Festival Items > Gift Packs & Hampers",
+  "confidence": "low",
+  "note": "Mixed gift packs of sweets, dry fruits, chocolates (all 5%); puja kits and non-food hampers could be 18%",
+  "overrides": [
+   {
+    "nameRegex": "puja kit|pooja kit|durga puja|diwali kit|decor|diya|candle",
+    "hsn": "9505",
+    "gst": 18,
+    "source": "Sch II Sl 618: festive articles"
+   }
+  ]
+ },
+ "festival-items-holi-colours-gulal": {
+  "hsn": "3204",
+  "gst": 18,
+  "source": "Sch II Sl 46: synthetic organic colouring matter",
+  "path": "Pooja & Festivals > Festival Items > Holi Colours (Gulal)",
+  "confidence": "medium",
+  "note": "Gulal powders; herbal gulal could be 3203/3212, all 18%"
+ },
+ "festival-items-rangoli-colours": {
+  "hsn": "3204",
+  "gst": 18,
+  "source": "Sch II Sl 46: synthetic organic colouring matter",
+  "path": "Pooja & Festivals > Festival Items > Rangoli Colours",
+  "confidence": "medium",
+  "note": "Kolam powder may be rice flour or limestone; both ambiguous",
+  "overrides": [
+   {
+    "nameRegex": "kolam (rice )?(flour|powder)",
+    "hsn": "2521",
+    "gst": 18,
+    "source": "Sch II residual (no specific entry)"
+   }
+  ]
+ },
+ "pooja-essentials-abhishekam-items": {
+  "hsn": "3307",
+  "gst": 18,
+  "source": "Sch II Sl 64: room deodorisers/perfumery preparations n.e.s.",
+  "path": "Pooja & Festivals > Pooja Essentials > Abhishekam Items",
+  "confidence": "low",
+  "note": "Mix of thirumanjana powders, rose water (3301 Sch II Sl 58 18%), thailam oils; all 18% in chart"
+ },
+ "pooja-essentials-agarbatti-incense-sticks": {
+  "hsn": "3307",
+  "gst": 5,
+  "source": "Sch I Sl 250: agarbatti, lobhan, dhoop batti, dhoop, sambraani (3307 41 00)",
+  "path": "Pooja & Festivals > Pooja Essentials > Agarbatti (Incense Sticks)",
+  "confidence": "high"
+ },
+ "pooja-essentials-camphor-kapur": {
+  "hsn": "2914",
+  "gst": 18,
+  "source": "Sch II residual (camphor 2914 has no specific entry)",
+  "path": "Pooja & Festivals > Pooja Essentials > Camphor (Kapur)",
+  "confidence": "medium",
+  "note": "Natural and synthetic camphor not listed in Sch I or Exempt"
+ },
+ "pooja-essentials-chandan-vibhuti": {
+  "hsn": "3307",
+  "gst": 0,
+  "source": "Exempt Sl 167: Puja samagri (vibhuti, chandan tika, roli)",
+  "path": "Pooja & Festivals > Pooja Essentials > Chandan & Vibhuti",
+  "confidence": "medium",
+  "note": "Kumkum/sindur are Exempt Sl 117 (3304); chandan tika treated as perfumery preparation",
+  "overrides": [
+   {
+    "nameRegex": "chandan powder|sandalwood (powder|chips)|sandal powder",
+    "hsn": "1211",
+    "gst": 5,
+    "source": "Sch I Sl 71: plants/parts for perfumery, dried or powdered"
+   }
+  ]
+ },
+ "pooja-essentials-dhoop-cones": {
+  "hsn": "3307",
+  "gst": 5,
+  "source": "Sch I Sl 250: agarbatti, lobhan, dhoop batti, dhoop, sambraani (3307 41 00)",
+  "path": "Pooja & Festivals > Pooja Essentials > Dhoop & Cones",
+  "confidence": "medium",
+  "note": "Dhoop sticks/cones/sambrani 5%; other burning odoriferous preparations Sch II Sl 65 are 18%"
+ },
+ "pooja-essentials-diya-wicks": {
+  "hsn": "5908",
+  "gst": 0,
+  "source": "Exempt Sl 167: Puja samagri (wick for diya); earthen lamps Nil",
+  "path": "Pooja & Festivals > Pooja Essentials > Diya & Wicks",
+  "confidence": "medium",
+  "note": "Cotton wicks 5%; pooja ghee/oil bottles unclear",
+  "overrides": [
+   {
+    "nameRegex": "brass|metal|steel|silver|aluminium",
+    "hsn": "7419",
+    "gst": 18,
+    "source": "Sch II Sl 321: other articles of copper"
+   }
+  ]
+ },
+ "pooja-essentials-havan-samagri": {
+  "hsn": "1211",
+  "gst": 5,
+  "source": "Sch I Sl 71: plants and parts of plants for perfumery/pharmacy, dried/powdered",
+  "path": "Pooja & Festivals > Pooja Essentials > Havan Samagri",
+  "confidence": "low",
+  "note": "Homa dravyas are mixed herbs/woods; cloth items 18%"
+ },
+ "pooja-essentials-matches": {
+  "hsn": "3605",
+  "gst": 5,
+  "source": "Sch I Sl 256: 3605 00 10 matches, all goods",
+  "path": "Pooja & Festivals > Pooja Essentials > Matches",
+  "confidence": "high"
+ },
+ "pooja-essentials-pooja-kits": {
+  "hsn": "1211",
+  "gst": 5,
+  "source": "Sch I Sl 71: plants/parts (principal supply of herbs/leaves in kit)",
+  "path": "Pooja & Festivals > Pooja Essentials > Pooja Kits",
+  "confidence": "low",
+  "note": "Mixed kits (kumkum nil, turmeric 5%, leaves, vibhuti); composite supply, principal item assumed 5%"
+ },
+ "pooja-essentials-pooja-oil": {
+  "hsn": "2710",
+  "gst": 18,
+  "source": "Sch II Sl 29: petroleum oils (2710) lamp oil",
+  "path": "Pooja & Festivals > Pooja Essentials > Pooja Oil",
+  "confidence": "low",
+  "note": "Camphor puja oil/lamp oil mostly paraffin; vegetable oil based 5%",
+  "overrides": [
+   {
+    "nameRegex": "sesame|gingelly|nalla ennai|castor|coconut|groundnut|ghee",
+    "hsn": "1515",
+    "gst": 5,
+    "source": "Sch I Sl 92: other fixed vegetable fats and oils"
+   }
+  ]
+ },
+ "pooja-essentials-pooja-turmeric": {
+  "hsn": "0910",
+  "gst": 5,
+  "source": "Sch I Sl 42: turmeric (curcuma) other than fresh",
+  "path": "Pooja & Festivals > Pooja Essentials > Pooja Turmeric",
+  "confidence": "medium",
+  "note": "Fresh turmeric is Exempt Sl 61; whole/round turmeric dried is 0910 30 5%"
+ },
+ "pooja-essentials-sacred-thread-mauli-kalava": {
+  "hsn": "5204",
+  "gst": 0,
+  "source": "Exempt Sl 167: Puja samagri (sacred thread, kalava)",
+  "path": "Pooja & Festivals > Pooja Essentials > Sacred Thread (Mauli / Kalava)",
+  "confidence": "high",
+  "note": "Janeu/mauli thread of cotton assumed"
+ },
+ "pooja-essentials-sindoor-kumkum": {
+  "hsn": "3304",
+  "gst": 0,
+  "source": "Exempt Sl 167: Puja samagri (roli); Exempt Sl 117: kumkum, bindi, sindur (3304)",
+  "path": "Pooja & Festivals > Pooja Essentials > Sindoor & Kumkum",
+  "confidence": "medium",
+  "note": "Aisle also has turmeric and vibhuti",
+  "overrides": [
+   {
+    "nameRegex": "turmeric|manjal|haldi",
+    "hsn": "0910",
+    "gst": 5,
+    "source": "Sch I Sl 42: turmeric other than fresh"
+   }
+  ]
+ },
+ "pooja-offerings-betel-leaves-areca": {
+  "hsn": "0802",
+  "gst": 5,
+  "source": "Sch I Sl 23: dried areca nuts",
+  "path": "Pooja & Festivals > Pooja Offerings > Betel Leaves & Areca",
+  "confidence": "medium",
+  "note": "Betel leaves nil; lime paste 5%",
+  "overrides": [
+   {
+    "nameRegex": "betel leaves|vetrilai|vettrilai|betel leaf",
+    "hsn": "1404",
+    "gst": 0,
+    "source": "Exempt Sl 93: betel leaves"
+   },
+   {
+    "nameRegex": "lime paste|sunnambu|sunnampu",
+    "hsn": "2522",
+    "gst": 5,
+    "source": "Sch I Sl 187: quicklime, slaked lime (2522)"
+   }
+  ]
+ },
+ "pooja-offerings-coconut-nariyal": {
+  "hsn": "0801",
+  "gst": 0,
+  "source": "Exempt Sl 43: coconuts, fresh or dried",
+  "path": "Pooja & Festivals > Pooja Offerings > Coconut (Nariyal)",
+  "confidence": "high"
+ },
+ "pooja-offerings-flowers-garlands-if-available": {
+  "hsn": "0603",
+  "gst": 0,
+  "source": "Exempt Sl 26: cut flowers and ornamental foliage",
+  "path": "Pooja & Festivals > Pooja Offerings > Flowers & Garlands (if available)",
+  "confidence": "high"
+ },
+ "pooja-offerings-mishri-batasha": {
+  "hsn": "1702",
+  "gst": 5,
+  "source": "Sch I Sl 107: mishri, batasha and similar sugar products",
+  "path": "Pooja & Festivals > Pooja Offerings > Mishri & Batasha",
+  "confidence": "high",
+  "note": "Yellu bella (sesame jaggery) pre-packed is also 5% Sch I Sl 106"
+ },
+ "pooja-offerings-panchamrit-ingredients": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: food preparations n.e.s.",
+  "path": "Pooja & Festivals > Pooja Offerings > Panchamrit Ingredients",
+  "confidence": "medium",
+  "note": "Ganga jal in sealed bottle 2201 5% Sch I Sl 146; ghee 0405 5%; honey pre-packed 5%; all 5%",
+  "overrides": [
+   {
+    "nameRegex": "panchamrit",
+    "hsn": "2106",
+    "gst": 0,
+    "source": "Exempt Sl 167: Puja samagri (panchamrit)"
+   }
+  ]
+ },
+ "batteries-electricals-aa-aaa-batteries": {
+  "hsn": "8506",
+  "gst": 18,
+  "source": "Sch II Sl 479: primary cells and primary batteries",
+  "path": "Stationery & General Merchandise > Batteries & Electricals > AA & AAA Batteries",
+  "confidence": "high"
+ },
+ "batteries-electricals-extension-cords": {
+  "hsn": "8544",
+  "gst": 18,
+  "source": "Sch II Sl 516: insulated wire, cable (8544); 8536 sockets/plugs Sl 508",
+  "path": "Stationery & General Merchandise > Batteries & Electricals > Extension Cords",
+  "confidence": "high"
+ },
+ "batteries-electricals-led-bulbs": {
+  "hsn": "8539",
+  "gst": 18,
+  "source": "Sch II Sl 511: electrical filament or discharge lamps (LED)",
+  "path": "Stationery & General Merchandise > Batteries & Electricals > LED Bulbs",
+  "confidence": "high",
+  "note": "Emergency inverter bulbs with battery also 18%"
+ },
+ "batteries-electricals-rechargeable-batteries": {
+  "hsn": "8507",
+  "gst": 18,
+  "source": "Sch II Sl 480: electric accumulators",
+  "path": "Stationery & General Merchandise > Batteries & Electricals > Rechargeable Batteries",
+  "confidence": "high",
+  "note": "Chargers 8504 Sch II Sl 477 also 18%"
+ },
+ "kitchen-accessories-kitchen-tools-peeler-grater": {
+  "hsn": "8210",
+  "gst": 18,
+  "source": "Sch II Sl 370: hand-operated mechanical appliances weighing 10 kg or less",
+  "path": "Stationery & General Merchandise > Kitchen Accessories > Kitchen Tools (Peeler, Grater)",
+  "confidence": "medium",
+  "note": "Peeler/chopper/masher 8210 or 8205; gas lighters 9613 Sch II Sl 630 also 18%"
+ },
+ "kitchen-accessories-lunch-boxes": {
+  "hsn": "3924",
+  "gst": 18,
+  "source": "Sch II Sl 125: plastic tableware/kitchenware",
+  "path": "Stationery & General Merchandise > Kitchen Accessories > Lunch Boxes",
+  "confidence": "low",
+  "note": "Mixed plastic, glass, steel; steel lunch boxes are 7323 5%",
+  "overrides": [
+   {
+    "nameRegex": "stainless steel|steel lunch|steel tiffin|\\bsteel\\b.*(lunch|tiffin)",
+    "hsn": "7323",
+    "gst": 5,
+    "source": "Sch I Sl 416: household articles of iron and steel"
+   },
+   {
+    "nameRegex": "glass",
+    "hsn": "7013",
+    "gst": 18,
+    "source": "Sch II Sl 259: other articles of glass"
+   }
+  ]
+ },
+ "kitchen-accessories-storage-containers": {
+  "hsn": "3924",
+  "gst": 18,
+  "source": "Sch II Sl 125: plastic tableware/kitchenware",
+  "path": "Stationery & General Merchandise > Kitchen Accessories > Storage Containers",
+  "confidence": "medium",
+  "note": "Mixed plastic, glass jar (Sl 250 18%), steel",
+  "overrides": [
+   {
+    "nameRegex": "stainless steel|\\bsteel\\b",
+    "hsn": "7323",
+    "gst": 5,
+    "source": "Sch I Sl 416: household articles of iron and steel"
+   }
+  ]
+ },
+ "kitchen-accessories-water-bottles": {
+  "hsn": "9617",
+  "gst": 18,
+  "source": "Sch II Sl 632: vacuum flasks and other vacuum vessels",
+  "path": "Stationery & General Merchandise > Kitchen Accessories > Water Bottles",
+  "confidence": "low",
+  "note": "Mixed vacuum flasks (18%), steel bottles 7323 (5%), plastic bottles (18%)",
+  "overrides": [
+   {
+    "nameRegex": "stainless steel.*(bottle|fridge)",
+    "hsn": "7323",
+    "gst": 5,
+    "source": "Sch I Sl 416: household articles of iron and steel"
+   }
+  ]
+ },
+ "stationery-art-colours": {
+  "hsn": "3213",
+  "gst": 18,
+  "source": "Sch II Sl 55: artists', students' colours",
+  "path": "Stationery & General Merchandise > Stationery > Art & Colours",
+  "confidence": "medium",
+  "note": "Crayons/pastels nil; art pens 9608 18%; brushes 9603 18%",
+  "overrides": [
+   {
+    "nameRegex": "\\beraser|\\brubber\\b(?! band)",
+    "hsn": "4016",
+    "gst": 0,
+    "source": "Exempt Sl 121: Erasers"
+   },
+   {
+    "nameRegex": "crayon|pastel|chalk",
+    "hsn": "9609",
+    "gst": 0,
+    "source": "Exempt Sl 163: pencils, crayons, pastels, chalks"
+   },
+   {
+    "nameRegex": "sketch pen|marker|fineliner|pointliner|\\bpens?\\b",
+    "hsn": "9608",
+    "gst": 18,
+    "source": "Sch II Sl 626: pens and markers"
+   },
+   {
+    "nameRegex": "brush",
+    "hsn": "9603",
+    "gst": 18,
+    "source": "Sch II Sl 623: brushes"
+   }
+  ]
+ },
+ "stationery-calculators": {
+  "hsn": "8470",
+  "gst": 18,
+  "source": "Sch II Sl 455: calculating machines",
+  "path": "Stationery & General Merchandise > Stationery > Calculators",
+  "confidence": "high"
+ },
+ "stationery-geometry-school-supplies": {
+  "hsn": "9017",
+  "gst": 18,
+  "source": "Sch II Sl 570: drawing, marking-out or mathematical instruments",
+  "path": "Stationery & General Merchandise > Stationery > Geometry & School Supplies",
+  "confidence": "medium",
+  "note": "Scales/erasers/punches all 18%; sharpeners nil",
+  "overrides": [
+   {
+    "nameRegex": "\\beraser|\\brubber\\b(?! band)",
+    "hsn": "4016",
+    "gst": 0,
+    "source": "Exempt Sl 121: Erasers"
+   },
+   {
+    "nameRegex": "sharpener",
+    "hsn": "8214",
+    "gst": 0,
+    "source": "Exempt Sl 156: pencil sharpeners"
+   }
+  ]
+ },
+ "stationery-glue-tape": {
+  "hsn": "3506",
+  "gst": 18,
+  "source": "Sch II Sl 75: prepared glues and adhesives; tape 3919 Sl 120",
+  "path": "Stationery & General Merchandise > Stationery > Glue & Tape",
+  "confidence": "high"
+ },
+ "stationery-ink-refills": {
+  "hsn": "3215",
+  "gst": 18,
+  "source": "Sch II residual (printing, writing ink 3215 not listed in Sch I/Exempt)",
+  "path": "Stationery & General Merchandise > Stationery > Ink & Refills",
+  "confidence": "medium",
+  "note": "Ink cartridges refills 9608 Sl 626 also 18%"
+ },
+ "stationery-notebooks-registers": {
+  "hsn": "4820",
+  "gst": 0,
+  "source": "Exempt Sl 130: exercise book, graph book, laboratory note book and notebooks",
+  "path": "Stationery & General Merchandise > Stationery > Notebooks & Registers",
+  "confidence": "medium",
+  "note": "Drawing books/long books assumed notebooks; registers and diaries 18%",
+  "overrides": [
+   {
+    "nameRegex": "register|account book|receipt book|order book|diary|diaries|letter pad|memo",
+    "hsn": "4820",
+    "gst": 18,
+    "source": "Sch II Sl 186: registers, account books, diaries etc."
+   }
+  ]
+ },
+ "stationery-pens-pencils": {
+  "hsn": "9608",
+  "gst": 18,
+  "source": "Sch II Sl 626: ball point pens, felt-tipped pens, fountain pens",
+  "path": "Stationery & General Merchandise > Stationery > Pens & Pencils",
+  "confidence": "high",
+  "note": "Pencils and crayons nil",
+  "overrides": [
+   {
+    "nameRegex": "\\beraser|\\brubber\\b(?! band)",
+    "hsn": "4016",
+    "gst": 0,
+    "source": "Exempt Sl 121: Erasers"
+   },
+   {
+    "nameRegex": "\\bpencils?\\b(?! (case|box|pouch|sharpener|eraser))|\\bcrayons?\\b",
+    "hsn": "9609",
+    "gst": 0,
+    "source": "Exempt Sl 163: pencils, crayons"
+   }
+  ]
+ },
+ "stationery-scissors-cutters": {
+  "hsn": "8213",
+  "gst": 18,
+  "source": "Sch II Sl 373: scissors; blades 8208 Sl 368",
+  "path": "Stationery & General Merchandise > Stationery > Scissors & Cutters",
+  "confidence": "high"
+ },
+ "bakery-snacks-buns-rolls": {
+  "hsn": "1905",
+  "gst": 0,
+  "source": "Exempt Sl 100: Bread (branded or otherwise), pizza bread, roti, chapathi, paratha, parotta (1905/2106)",
+  "path": "Bakery > Bakery Snacks > Buns & Rolls",
+  "confidence": "medium",
+  "note": "Buns/rolls treated as bread (Sl 100); sweet/cream-filled rolls could be 1905 5%",
+  "overrides": [
+   {
+    "nameRegex": "cinnamon roll|cream roll|swiss roll|cream bun",
+    "hsn": "1905",
+    "gst": 5,
+    "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares (1905)"
+   }
+  ]
+ },
+ "bakery-snacks-cookies-bakery-fresh": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares (1905)",
+  "path": "Bakery > Bakery Snacks > Cookies (Bakery Fresh)",
+  "confidence": "high"
+ },
+ "bakery-snacks-croissant": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares (1905)",
+  "path": "Bakery > Bakery Snacks > Croissant",
+  "confidence": "medium",
+  "note": "Croissant treated as pastry/bakers' ware, not Indian bread"
+ },
+ "bakery-snacks-khari-puff-pastry": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares (1905)",
+  "path": "Bakery > Bakery Snacks > Khari & Puff Pastry",
+  "confidence": "medium",
+  "note": "Khari/puff pastry/samosa all 5% (1905 or 2106)",
+  "overrides": [
+   {
+    "nameRegex": "samosa",
+    "hsn": "2106",
+    "gst": 5,
+    "source": "Sch I Sl 143: Namkeens, bhujia, mixture and similar edible preparations ready for consumption (2106 90)"
+   }
+  ]
+ },
+ "bakery-snacks-sweet-bakes": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares (1905)",
+  "path": "Bakery > Bakery Snacks > Sweet Bakes",
+  "confidence": "medium",
+  "note": "Named breads (Choco Bread, Fruit Bread) are Nil under Sl 100",
+  "overrides": [
+   {
+    "nameRegex": "\\bbread\\b",
+    "hsn": "1905",
+    "gst": 0,
+    "source": "Exempt Sl 100: Bread (branded or otherwise), pizza bread, roti, chapathi, paratha, parotta (1905/2106)"
+   }
+  ]
+ },
+ "bread-brown-whole-wheat-bread": {
+  "hsn": "1905",
+  "gst": 0,
+  "source": "Exempt Sl 100: Bread (branded or otherwise), pizza bread, roti, chapathi, paratha, parotta (1905/2106)",
+  "path": "Bakery > Bread > Brown & Whole Wheat Bread",
+  "confidence": "high"
+ },
+ "bread-garlic-bread": {
+  "hsn": "1905",
+  "gst": 0,
+  "source": "Exempt Sl 100: Bread (branded or otherwise), pizza bread, roti, chapathi, paratha, parotta (1905/2106)",
+  "path": "Bakery > Bread > Garlic Bread",
+  "confidence": "medium",
+  "note": "Garlic bread = bread; Del Monte garlic bread spread is a sauce",
+  "overrides": [
+   {
+    "nameRegex": "\\bspread\\b",
+    "hsn": "2103",
+    "gst": 5,
+    "source": "Sch I Sl 139: Sauces, mixed condiments and seasonings (2103)"
+   }
+  ]
+ },
+ "bread-kulcha-roti-pizza-base": {
+  "hsn": "1905",
+  "gst": 0,
+  "source": "Exempt Sl 100: Bread (branded or otherwise), pizza bread, roti, chapathi, paratha, parotta (1905/2106)",
+  "path": "Bakery > Bread > Kulcha, Roti & Pizza Base",
+  "confidence": "medium",
+  "note": "Kulcha, roti, parotta, pizza bread all Sl 100"
+ },
+ "bread-multigrain-bread": {
+  "hsn": "1905",
+  "gst": 0,
+  "source": "Exempt Sl 100: Bread (branded or otherwise), pizza bread, roti, chapathi, paratha, parotta (1905/2106)",
+  "path": "Bakery > Bread > Multigrain Bread",
+  "confidence": "high"
+ },
+ "bread-pav-bun": {
+  "hsn": "1905",
+  "gst": 0,
+  "source": "Exempt Sl 100: Bread (branded or otherwise), pizza bread, roti, chapathi, paratha, parotta (1905/2106)",
+  "path": "Bakery > Bread > Pav & Bun",
+  "confidence": "high"
+ },
+ "bread-sandwich-bread": {
+  "hsn": "1905",
+  "gst": 0,
+  "source": "Exempt Sl 100: Bread (branded or otherwise), pizza bread, roti, chapathi, paratha, parotta (1905/2106)",
+  "path": "Bakery > Bread > Sandwich Bread",
+  "confidence": "high"
+ },
+ "bread-white-bread": {
+  "hsn": "1905",
+  "gst": 0,
+  "source": "Exempt Sl 100: Bread (branded or otherwise), pizza bread, roti, chapathi, paratha, parotta (1905/2106)",
+  "path": "Bakery > Bread > White Bread",
+  "confidence": "high"
+ },
+ "cakes-pastries-muffins-cupcakes": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares (1905)",
+  "path": "Bakery > Cakes & Pastries > Muffins & Cupcakes",
+  "confidence": "high"
+ },
+ "cakes-pastries-pastries": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares (1905)",
+  "path": "Bakery > Cakes & Pastries > Pastries",
+  "confidence": "high"
+ },
+ "cakes-pastries-sliced-cake": {
+  "hsn": "1905",
+  "gst": 5,
+  "source": "Sch I Sl 123: Pastry, cakes, biscuits and other bakers' wares (1905)",
+  "path": "Bakery > Cakes & Pastries > Sliced Cake",
+  "confidence": "high"
+ },
+ "rusk-elaichi-rusk": {
+  "hsn": "1905 40 00",
+  "gst": 5,
+  "source": "Sch I Sl 124: Rusks, toasted bread and similar toasted products (1905 40 00)",
+  "path": "Bakery > Rusk > Elaichi Rusk",
+  "confidence": "high"
+ },
+ "rusk-plain-rusk": {
+  "hsn": "1905 40 00",
+  "gst": 5,
+  "source": "Sch I Sl 124: Rusks, toasted bread and similar toasted products (1905 40 00)",
+  "path": "Bakery > Rusk > Plain Rusk",
+  "confidence": "medium",
+  "note": "Milk toast/wheat rusk toasted bread"
+ },
+ "rusk-suji-rusk": {
+  "hsn": "1905 40 00",
+  "gst": 5,
+  "source": "Sch I Sl 124: Rusks, toasted bread and similar toasted products (1905 40 00)",
+  "path": "Bakery > Rusk > Suji Rusk",
+  "confidence": "high"
+ },
+ "coffee-chicory-blend": {
+  "hsn": "2101",
+  "gst": 5,
+  "source": "Sch I Sl 135: Extracts, essences, concentrates of coffee and preparations with basis of coffee (2101 11/12)",
+  "path": "Beverages > Coffee > Chicory Blend",
+  "confidence": "medium",
+  "note": "Chicory blend instant coffee/decoction; chicory-only substitute is 2101 30 also 5%"
+ },
+ "coffee-cold-coffee-premix": {
+  "hsn": "2101",
+  "gst": 5,
+  "source": "Sch I Sl 135: Extracts, essences, concentrates of coffee and preparations with basis of coffee (2101 11/12)",
+  "path": "Beverages > Coffee > Cold Coffee Premix",
+  "confidence": "low",
+  "note": "Mix of premix powders (5%) and possible RTD bottled cold coffee (40%); RTD regex is a guess",
+  "overrides": [
+   {
+    "nameRegex": "\\b(bottle|can|rtd|ready to drink|tetra)\\b",
+    "hsn": "2202 99 91",
+    "gst": 40,
+    "source": "01/2026 Sch III Sl 3: Caffeinated beverages (2202 99 91, 2202 99 99)"
+   }
+  ]
+ },
+ "coffee-filter-coffee-powder": {
+  "hsn": "0901",
+  "gst": 5,
+  "source": "Sch I Sl 33: Coffee roasted (0901)",
+  "path": "Beverages > Coffee > Filter Coffee Powder",
+  "confidence": "medium",
+  "note": "Filter coffee powder/chicory blends 0901 or 2101; tea/coffee bag items also 5%"
+ },
+ "coffee-ground-coffee-beans": {
+  "hsn": "0901",
+  "gst": 5,
+  "source": "Sch I Sl 33: Coffee roasted (0901)",
+  "path": "Beverages > Coffee > Ground Coffee Beans",
+  "confidence": "high"
+ },
+ "coffee-instant-coffee": {
+  "hsn": "2101 11",
+  "gst": 5,
+  "source": "Sch I Sl 135: Extracts, essences, concentrates of coffee and preparations with basis of coffee (2101 11/12)",
+  "path": "Beverages > Coffee > Instant Coffee",
+  "confidence": "high"
+ },
+ "health-energy-drinks-electrolyte-ors": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106 other than pan masala)",
+  "path": "Beverages > Health & Energy Drinks > Electrolyte & ORS",
+  "confidence": "low",
+  "note": "Powders/tablets 2106 5%; RTD ORS/hydration drinks are 2202 40%; ORS sachets may be medicaments 3004 5%",
+  "overrides": [
+   {
+    "nameRegex": "hydration drink|ors drink|\\brtd\\b|ready to drink",
+    "hsn": "2202 99 99",
+    "gst": 40,
+    "source": "01/2026 Sch III Sl 2: Other non-alcoholic beverages (2202 91 00, 2202 99 91, 2202 99 99)"
+   }
+  ]
+ },
+ "health-energy-drinks-glucose-energy-drinks": {
+  "hsn": "1702",
+  "gst": 5,
+  "source": "Sch I Sl 108: Other sugars incl. glucose in solid form (1702)",
+  "path": "Beverages > Health & Energy Drinks > Glucose & Energy Drinks",
+  "confidence": "medium",
+  "note": "Glucose powder 1702; mixes 2106 also 5%; RTD energy drinks 40%",
+  "overrides": [
+   {
+    "nameRegex": "\\b(red bull|monster|sting)\\b|energy drink (can|bottle)",
+    "hsn": "2202 99 99",
+    "gst": 40,
+    "source": "01/2026 Sch III Sl 3: Caffeinated beverages (2202 99 91, 2202 99 99)"
+   }
+  ]
+ },
+ "health-energy-drinks-malted-beverages-bournvita-horlicks": {
+  "hsn": "1901",
+  "gst": 5,
+  "source": "Sch I Sl 118: Malt extract, food preparations of flour/malt extract not containing cocoa or <40% cocoa (1901)",
+  "path": "Beverages > Health & Energy Drinks > Malted Beverages (Bournvita, Horlicks)",
+  "confidence": "medium",
+  "note": "Malt/cocoa/ragi health mixes 1901 (or 1806) all 5%; PediaSure etc 2106 also 5%"
+ },
+ "health-energy-drinks-protein-drinks": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106 other than pan masala)",
+  "path": "Beverages > Health & Energy Drinks > Protein Drinks",
+  "confidence": "medium",
+  "note": "Protein powders 2106 5%; ready-to-drink milk protein drinks 2202 99 31 5%",
+  "overrides": [
+   {
+    "nameRegex": "\\bmilk\\b|thandai",
+    "hsn": "2202 99 31",
+    "gst": 5,
+    "source": "01/2026 Sch I (ex Sl 151): Beverages containing milk (2202 99 31/39)"
+   }
+  ]
+ },
+ "juices-fruit-drinks-coconut-water": {
+  "hsn": "2009 89 90",
+  "gst": 5,
+  "source": "Sch I Sl 134: Tender coconut water, pre-packaged and labelled (2009 89 90)",
+  "path": "Beverages > Juices & Fruit Drinks > Coconut Water",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "2009 89 90",
+    "gst": 0,
+    "source": "Exempt Sl 101: Tender coconut water other than pre-packaged and labelled (2009 89 90)"
+   }
+  ]
+ },
+ "juices-fruit-drinks-fruit-drinks": {
+  "hsn": "2202 99 21",
+  "gst": 5,
+  "source": "01/2026 Sch I (ex Sl 150): Fruit pulp or fruit juice based drinks (2202 99 21/29)",
+  "path": "Beverages > Juices & Fruit Drinks > Fruit Drinks",
+  "confidence": "medium",
+  "note": "Fruit drinks 5%; carbonated fruit drinks 40%; instant mixes 2106 5%",
+  "overrides": [
+   {
+    "nameRegex": "\\b(fizz|sparkling|carbonated)\\b",
+    "hsn": "2202",
+    "gst": 40,
+    "source": "Sch III Sl 4: Carbonated beverages of fruit drink or with fruit juice (2202)"
+   },
+   {
+    "nameRegex": "drink mix|instant drink|powder",
+    "hsn": "2106",
+    "gst": 5,
+    "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106 other than pan masala)"
+   },
+   {
+    "nameRegex": "\\bjuice\\b(?!.*drink)",
+    "hsn": "2009",
+    "gst": 5,
+    "source": "Sch I Sl 133: Fruit or nut juices and vegetable juices, unfermented (2009)"
+   }
+  ]
+ },
+ "juices-fruit-drinks-fruit-juice-100": {
+  "hsn": "2009",
+  "gst": 5,
+  "source": "Sch I Sl 133: Fruit or nut juices and vegetable juices, unfermented (2009)",
+  "path": "Beverages > Juices & Fruit Drinks > Fruit Juice (100%)",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": "concentrate|cordial",
+    "hsn": "2009",
+    "gst": 5,
+    "source": "Sch I Sl 133: Fruit or nut juices and vegetable juices, unfermented (2009)"
+   }
+  ]
+ },
+ "juices-fruit-drinks-fruit-nectar-drinks": {
+  "hsn": "2202 99 21",
+  "gst": 5,
+  "source": "01/2026 Sch I (ex Sl 150): Fruit pulp or fruit juice based drinks (2202 99 21/29)",
+  "path": "Beverages > Juices & Fruit Drinks > Fruit Nectar & Drinks",
+  "confidence": "medium",
+  "note": "Mix of nectars (2202 99 2x) and juices (2009), both 5%",
+  "overrides": [
+   {
+    "nameRegex": "\\bjuice\\b(?!.*drink)",
+    "hsn": "2009",
+    "gst": 5,
+    "source": "Sch I Sl 133: Fruit or nut juices and vegetable juices, unfermented (2009)"
+   },
+   {
+    "nameRegex": "\\b(fizz|sparkling|carbonated)\\b",
+    "hsn": "2202",
+    "gst": 40,
+    "source": "Sch III Sl 4: Carbonated beverages of fruit drink or with fruit juice (2202)"
+   }
+  ]
+ },
+ "juices-fruit-drinks-mango-drinks-frooti-maaza": {
+  "hsn": "2202 99 21",
+  "gst": 5,
+  "source": "01/2026 Sch I (ex Sl 150): Fruit pulp or fruit juice based drinks (2202 99 21/29)",
+  "path": "Beverages > Juices & Fruit Drinks > Mango Drinks (Frooti, Maaza)",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": "\\b(fizz|sparkling|carbonated)\\b",
+    "hsn": "2202",
+    "gst": 40,
+    "source": "Sch III Sl 4: Carbonated beverages of fruit drink or with fruit juice (2202)"
+   }
+  ]
+ },
+ "juices-fruit-drinks-sugarcane-juice": {
+  "hsn": "2009",
+  "gst": 5,
+  "source": "Sch I Sl 133: Fruit or nut juices and vegetable juices, unfermented (2009)",
+  "path": "Beverages > Juices & Fruit Drinks > Sugarcane Juice",
+  "confidence": "medium",
+  "note": "Sugarcane juice classed as vegetable/fruit juice 2009 89"
+ },
+ "milk-drinks-buttermilk-chaas": {
+  "hsn": "0403",
+  "gst": 5,
+  "source": "Sch I Sl 5: Yoghurt, fermented milk/cream; pre-packaged and labelled curd, lassi, buttermilk (0403)",
+  "path": "Beverages > Milk Drinks > Buttermilk (Chaas)",
+  "confidence": "high",
+  "note": "Pre-packaged and labelled buttermilk 5%; loose Nil",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0403",
+    "gst": 0,
+    "source": "Exempt Sl 16: Curd, lassi, butter milk other than pre-packaged and labelled (0403)"
+   }
+  ]
+ },
+ "milk-drinks-flavoured-milk": {
+  "hsn": "2202 99 31",
+  "gst": 5,
+  "source": "01/2026 Sch I (ex Sl 151): Beverages containing milk (2202 99 31/39)",
+  "path": "Beverages > Milk Drinks > Flavoured Milk",
+  "confidence": "medium",
+  "note": "Milk-containing beverages; post 01/2026 re-code"
+ },
+ "milk-drinks-lassi": {
+  "hsn": "0403",
+  "gst": 5,
+  "source": "Sch I Sl 5: Yoghurt, fermented milk/cream; pre-packaged and labelled curd, lassi, buttermilk (0403)",
+  "path": "Beverages > Milk Drinks > Lassi",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0403",
+    "gst": 0,
+    "source": "Exempt Sl 16: Curd, lassi, butter milk other than pre-packaged and labelled (0403)"
+   }
+  ]
+ },
+ "milk-drinks-milkshake": {
+  "hsn": "2202 99 31",
+  "gst": 5,
+  "source": "01/2026 Sch I (ex Sl 151): Beverages containing milk (2202 99 31/39)",
+  "path": "Beverages > Milk Drinks > Milkshake",
+  "confidence": "medium",
+  "note": "Milk-based shakes; yogurt shakes 0403 also 5%"
+ },
+ "sherbet-traditional-aam-panna": {
+  "hsn": "2202 99 21",
+  "gst": 5,
+  "source": "01/2026 Sch I (ex Sl 150): Fruit pulp or fruit juice based drinks (2202 99 21/29)",
+  "path": "Beverages > Sherbet & Traditional > Aam Panna",
+  "confidence": "medium",
+  "note": "RTD aam panna is fruit-based; squash/syrup 2008 also 5%",
+  "overrides": [
+   {
+    "nameRegex": "squash|crush|syrup|concentrate",
+    "hsn": "2008",
+    "gst": 5,
+    "source": "Sch I Sl 132: Fruit otherwise prepared/preserved incl. squash of mango, lemon, orange (2008)"
+   }
+  ]
+ },
+ "sherbet-traditional-jaljeera": {
+  "hsn": "2202 99 99",
+  "gst": 40,
+  "source": "01/2026 Sch III Sl 2: Other non-alcoholic beverages (2202 91 00, 2202 99 91, 2202 99 99)",
+  "path": "Beverages > Sherbet & Traditional > Jaljeera",
+  "confidence": "low",
+  "note": "RTD jaljeera is a spiced non-fruit beverage (40%), fizzy also 40%; masala/mix powders 5%; unsure if RTD jaljeera is classed fruit-based",
+  "overrides": [
+   {
+    "nameRegex": "masala|drink mix|powder|premix",
+    "hsn": "2106",
+    "gst": 5,
+    "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106 other than pan masala)"
+   }
+  ]
+ },
+ "sherbet-traditional-rooh-afza-sharbat": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106 other than pan masala)",
+  "path": "Beverages > Sherbet & Traditional > Rooh Afza & Sharbat",
+  "confidence": "medium",
+  "note": "Sharbat/squash/syrup/cordial all 5% (2106 or 2008)",
+  "overrides": [
+   {
+    "nameRegex": "squash|crush",
+    "hsn": "2008",
+    "gst": 5,
+    "source": "Sch I Sl 132: Fruit otherwise prepared/preserved incl. squash of mango, lemon, orange (2008)"
+   }
+  ]
+ },
+ "sherbet-traditional-thandai": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106 other than pan masala)",
+  "path": "Beverages > Sherbet & Traditional > Thandai",
+  "confidence": "low",
+  "note": "RTD thandai (milk-based 5%) vs mixes/sharbat 2106 5%; all 5%",
+  "overrides": [
+   {
+    "nameRegex": "\\bpaper boat thandai\\b",
+    "hsn": "2202 99 31",
+    "gst": 5,
+    "source": "01/2026 Sch I (ex Sl 151): Beverages containing milk (2202 99 31/39)"
+   }
+  ]
+ },
+ "soft-drinks-carbonated-cola": {
+  "hsn": "2202 10",
+  "gst": 40,
+  "source": "Sch III Sl 1: All goods (incl. aerated waters) containing added sugar/sweetening matter or flavoured (2202 10)",
+  "path": "Beverages > Soft Drinks & Carbonated > Cola",
+  "confidence": "high"
+ },
+ "soft-drinks-carbonated-diet-zero-sugar": {
+  "hsn": "2202 10",
+  "gst": 40,
+  "source": "Sch III Sl 1: All goods (incl. aerated waters) containing added sugar/sweetening matter or flavoured (2202 10)",
+  "path": "Beverages > Soft Drinks & Carbonated > Diet & Zero Sugar",
+  "confidence": "high",
+  "note": "Artificial sweeteners count as sweetening matter"
+ },
+ "soft-drinks-carbonated-lemon-lime": {
+  "hsn": "2202 10",
+  "gst": 40,
+  "source": "Sch III Sl 1: All goods (incl. aerated waters) containing added sugar/sweetening matter or flavoured (2202 10)",
+  "path": "Beverages > Soft Drinks & Carbonated > Lemon & Lime",
+  "confidence": "high"
+ },
+ "soft-drinks-carbonated-orange-mango": {
+  "hsn": "2202",
+  "gst": 40,
+  "source": "Sch III Sl 4: Carbonated beverages of fruit drink or with fruit juice (2202)",
+  "path": "Beverages > Soft Drinks & Carbonated > Orange & Mango",
+  "confidence": "high",
+  "note": "Carbonated fruit drinks"
+ },
+ "soft-drinks-carbonated-soda-tonic-water": {
+  "hsn": "2202 10",
+  "gst": 40,
+  "source": "Sch III Sl 1: All goods (incl. aerated waters) containing added sugar/sweetening matter or flavoured (2202 10)",
+  "path": "Beverages > Soft Drinks & Carbonated > Soda & Tonic Water",
+  "confidence": "medium",
+  "note": "Flavoured/sweetened sparkling and mixers 40%; plain soda unsweetened unflavoured 5%",
+  "overrides": [
+   {
+    "nameRegex": "\\b(club soda|soda water|plain soda)\\b",
+    "hsn": "2201",
+    "gst": 5,
+    "source": "Sch I Sl 146: Waters incl. natural/artificial mineral and aerated waters, no added sugar nor flavoured (2201)"
+   }
+  ]
+ },
+ "tea-green-tea": {
+  "hsn": "0902",
+  "gst": 5,
+  "source": "Sch I Sl 34: Tea, whether or not flavoured (0902)",
+  "path": "Beverages > Tea > Green Tea",
+  "confidence": "high"
+ },
+ "tea-herbal-flavoured-tea": {
+  "hsn": "0902",
+  "gst": 5,
+  "source": "Sch I Sl 34: Tea, whether or not flavoured (0902)",
+  "path": "Beverages > Tea > Herbal & Flavoured Tea",
+  "confidence": "medium",
+  "note": "Herbal infusions arguably 2106/1211 but also 5%"
+ },
+ "tea-iced-tea": {
+  "hsn": "2202 99 99",
+  "gst": 40,
+  "source": "01/2026 Sch III Sl 2: Other non-alcoholic beverages (2202 91 00, 2202 99 91, 2202 99 99)",
+  "path": "Beverages > Tea > Iced Tea",
+  "confidence": "low",
+  "note": "RTD iced tea 40%; mixes/premix 5% (2101 20)",
+  "overrides": [
+   {
+    "nameRegex": "\\bmix\\b|premix|tea bags?|powder",
+    "hsn": "2101 20",
+    "gst": 5,
+    "source": "Sch I Sl 136: Extracts/essences/concentrates of tea and preparations with basis of tea (2101 20)"
+   }
+  ]
+ },
+ "tea-instant-tea-premix": {
+  "hsn": "2101 20",
+  "gst": 5,
+  "source": "Sch I Sl 136: Extracts/essences/concentrates of tea and preparations with basis of tea (2101 20)",
+  "path": "Beverages > Tea > Instant Tea Premix",
+  "confidence": "high"
+ },
+ "tea-leaf-dust-tea-ctc": {
+  "hsn": "0902",
+  "gst": 5,
+  "source": "Sch I Sl 34: Tea, whether or not flavoured (0902)",
+  "path": "Beverages > Tea > Leaf & Dust Tea (CTC)",
+  "confidence": "high"
+ },
+ "tea-masala-tea": {
+  "hsn": "0902",
+  "gst": 5,
+  "source": "Sch I Sl 34: Tea, whether or not flavoured (0902)",
+  "path": "Beverages > Tea > Masala Tea",
+  "confidence": "high"
+ },
+ "tea-tea-bags": {
+  "hsn": "0902",
+  "gst": 5,
+  "source": "Sch I Sl 34: Tea, whether or not flavoured (0902)",
+  "path": "Beverages > Tea > Tea Bags",
+  "confidence": "high"
+ },
+ "water-flavoured-water": {
+  "hsn": "2202 10",
+  "gst": 40,
+  "source": "Sch III Sl 1: All goods (incl. aerated waters) containing added sugar/sweetening matter or flavoured (2202 10)",
+  "path": "Beverages > Water > Flavoured Water",
+  "confidence": "medium",
+  "note": "Flavoured / sweetened sparkling water 40%"
+ },
+ "water-mineral-water": {
+  "hsn": "2201",
+  "gst": 5,
+  "source": "Sch I Sl 146: Waters incl. natural/artificial mineral and aerated waters, no added sugar nor flavoured (2201)",
+  "path": "Beverages > Water > Mineral Water",
+  "confidence": "high"
+ },
+ "water-packaged-drinking-water": {
+  "hsn": "2201",
+  "gst": 5,
+  "source": "Sch I Sl 146: Waters incl. natural/artificial mineral and aerated waters, no added sugar nor flavoured (2201)",
+  "path": "Beverages > Water > Packaged Drinking Water",
+  "confidence": "medium",
+  "note": "Exempt Sl 103 excludes water in sealed unit containers; falls under Sl 146 (2201)"
+ },
+ "butter-cooking-butter": {
+  "hsn": "0405",
+  "gst": 5,
+  "source": "Sch I Sl 7: Butter and other fats and oils derived from milk, ghee; dairy spreads (0405)",
+  "path": "Dairy > Butter > Cooking Butter",
+  "confidence": "high",
+  "note": "Fat spreads/margarine 1517 also 5%"
+ },
+ "butter-salted-butter": {
+  "hsn": "0405",
+  "gst": 5,
+  "source": "Sch I Sl 7: Butter and other fats and oils derived from milk, ghee; dairy spreads (0405)",
+  "path": "Dairy > Butter > Salted Butter",
+  "confidence": "high"
+ },
+ "butter-unsalted-butter": {
+  "hsn": "0405",
+  "gst": 5,
+  "source": "Sch I Sl 7: Butter and other fats and oils derived from milk, ghee; dairy spreads (0405)",
+  "path": "Dairy > Butter > Unsalted Butter",
+  "confidence": "high"
+ },
+ "cheese-cheddar": {
+  "hsn": "0406",
+  "gst": 5,
+  "source": "Sch I Sl 8: Cheese, other than chena or paneer (0406)",
+  "path": "Dairy > Cheese > Cheddar",
+  "confidence": "high"
+ },
+ "cheese-cottage-cheese-paneer": {
+  "hsn": "0406",
+  "gst": 0,
+  "source": "Exempt Sl 17: Chena or paneer, whether or not pre-packaged and labelled (0406)",
+  "path": "Dairy > Cheese > Cottage Cheese (Paneer)",
+  "confidence": "high"
+ },
+ "cheese-cream-cheese-spread": {
+  "hsn": "0406",
+  "gst": 5,
+  "source": "Sch I Sl 8: Cheese, other than chena or paneer (0406)",
+  "path": "Dairy > Cheese > Cream Cheese & Spread",
+  "confidence": "medium",
+  "note": "Cheese sauces/dips 2103 also 5%"
+ },
+ "cheese-mozzarella": {
+  "hsn": "0406",
+  "gst": 5,
+  "source": "Sch I Sl 8: Cheese, other than chena or paneer (0406)",
+  "path": "Dairy > Cheese > Mozzarella",
+  "confidence": "high"
+ },
+ "cheese-processed-cheese-slices-blocks": {
+  "hsn": "0406",
+  "gst": 5,
+  "source": "Sch I Sl 8: Cheese, other than chena or paneer (0406)",
+  "path": "Dairy > Cheese > Processed Cheese (Slices & Blocks)",
+  "confidence": "high"
+ },
+ "cheese-specialty-cheese": {
+  "hsn": "0406",
+  "gst": 5,
+  "source": "Sch I Sl 8: Cheese, other than chena or paneer (0406)",
+  "path": "Dairy > Cheese > Specialty Cheese",
+  "confidence": "high"
+ },
+ "condensed-evaporated-milk-condensed-milk-milkmaid": {
+  "hsn": "0402",
+  "gst": 5,
+  "source": "Sch I Sl 4: Milk and cream concentrated or containing added sugar, incl. condensed milk (0402)",
+  "path": "Dairy > Condensed & Evaporated Milk > Condensed Milk (Milkmaid)",
+  "confidence": "high"
+ },
+ "condensed-evaporated-milk-evaporated-milk": {
+  "hsn": "0402",
+  "gst": 5,
+  "source": "Sch I Sl 4: Milk and cream concentrated or containing added sugar, incl. condensed milk (0402)",
+  "path": "Dairy > Condensed & Evaporated Milk > Evaporated Milk",
+  "confidence": "high"
+ },
+ "condensed-evaporated-milk-khoya-mawa": {
+  "hsn": "0404",
+  "gst": 5,
+  "source": "Sch I Sl 6: Whey; products of natural milk constituents NES (0404)",
+  "path": "Dairy > Condensed & Evaporated Milk > Khoya (Mawa)",
+  "confidence": "medium",
+  "note": "Khoya/mawa classified as milk-constituent product; some treat as 0406 or sweetmeat, all 5%"
+ },
+ "cream-dairy-whitener-dairy-whitener": {
+  "hsn": "0402",
+  "gst": 5,
+  "source": "Sch I Sl 4: Milk and cream concentrated or containing added sugar, incl. condensed milk (0402)",
+  "path": "Dairy > Cream & Dairy Whitener > Dairy Whitener",
+  "confidence": "medium",
+  "note": "Skimmed milk powder 0402; dairy whitener 1901/2106 also 5%"
+ },
+ "cream-dairy-whitener-fresh-cream": {
+  "hsn": "0401",
+  "gst": 0,
+  "source": "Exempt Sl 15: Fresh/pasteurised milk, milk and cream not concentrated nor sweetened, UHT milk (0401)",
+  "path": "Dairy > Cream & Dairy Whitener > Fresh Cream",
+  "confidence": "medium",
+  "note": "Fresh cream not concentrated/sweetened"
+ },
+ "cream-dairy-whitener-whipping-cream": {
+  "hsn": "0401",
+  "gst": 0,
+  "source": "Exempt Sl 15: Fresh/pasteurised milk, milk and cream not concentrated nor sweetened, UHT milk (0401)",
+  "path": "Dairy > Cream & Dairy Whitener > Whipping Cream",
+  "confidence": "medium",
+  "note": "Dairy whipping cream Nil; vegetable whip toppings 5%",
+  "overrides": [
+   {
+    "nameRegex": "topping",
+    "hsn": "2106",
+    "gst": 5,
+    "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106 other than pan masala)"
+   }
+  ]
+ },
+ "curd-yogurt-flavoured-yogurt": {
+  "hsn": "0403",
+  "gst": 5,
+  "source": "Sch I Sl 5: Yoghurt, fermented milk/cream; pre-packaged and labelled curd, lassi, buttermilk (0403)",
+  "path": "Dairy > Curd & Yogurt > Flavoured Yogurt",
+  "confidence": "high"
+ },
+ "curd-yogurt-fresh-curd-dahi": {
+  "hsn": "0403",
+  "gst": 5,
+  "source": "Sch I Sl 5: Yoghurt, fermented milk/cream; pre-packaged and labelled curd, lassi, buttermilk (0403)",
+  "path": "Dairy > Curd & Yogurt > Fresh Curd (Dahi)",
+  "confidence": "high",
+  "note": "Pre-packaged curd 5%; loose Nil",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0403",
+    "gst": 0,
+    "source": "Exempt Sl 16: Curd, lassi, butter milk other than pre-packaged and labelled (0403)"
+   }
+  ]
+ },
+ "curd-yogurt-greek-yogurt": {
+  "hsn": "0403",
+  "gst": 5,
+  "source": "Sch I Sl 5: Yoghurt, fermented milk/cream; pre-packaged and labelled curd, lassi, buttermilk (0403)",
+  "path": "Dairy > Curd & Yogurt > Greek Yogurt",
+  "confidence": "high"
+ },
+ "curd-yogurt-hung-curd-chakka": {
+  "hsn": "0403",
+  "gst": 5,
+  "source": "Sch I Sl 5: Yoghurt, fermented milk/cream; pre-packaged and labelled curd, lassi, buttermilk (0403)",
+  "path": "Dairy > Curd & Yogurt > Hung Curd (Chakka)",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0403",
+    "gst": 0,
+    "source": "Exempt Sl 16: Curd, lassi, butter milk other than pre-packaged and labelled (0403)"
+   }
+  ]
+ },
+ "curd-yogurt-mishti-doi": {
+  "hsn": "0403",
+  "gst": 5,
+  "source": "Sch I Sl 5: Yoghurt, fermented milk/cream; pre-packaged and labelled curd, lassi, buttermilk (0403)",
+  "path": "Dairy > Curd & Yogurt > Mishti Doi",
+  "confidence": "high"
+ },
+ "curd-yogurt-probiotic-yogurt": {
+  "hsn": "0403",
+  "gst": 5,
+  "source": "Sch I Sl 5: Yoghurt, fermented milk/cream; pre-packaged and labelled curd, lassi, buttermilk (0403)",
+  "path": "Dairy > Curd & Yogurt > Probiotic Yogurt",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0403",
+    "gst": 0,
+    "source": "Exempt Sl 16: Curd, lassi, butter milk other than pre-packaged and labelled (0403)"
+   }
+  ]
+ },
+ "curd-yogurt-shrikhand": {
+  "hsn": "0403",
+  "gst": 5,
+  "source": "Sch I Sl 5: Yoghurt, fermented milk/cream; pre-packaged and labelled curd, lassi, buttermilk (0403)",
+  "path": "Dairy > Curd & Yogurt > Shrikhand",
+  "confidence": "medium",
+  "note": "Shrikhand sweetened strained yoghurt; classed 0403 by most (could be 2106 sweetmeat, also 5%)"
+ },
+ "milk-a2-milk": {
+  "hsn": "0401",
+  "gst": 0,
+  "source": "Exempt Sl 15: Fresh/pasteurised milk, milk and cream not concentrated nor sweetened, UHT milk (0401)",
+  "path": "Dairy > Milk > A2 Milk",
+  "confidence": "high"
+ },
+ "milk-double-toned-milk": {
+  "hsn": "0401",
+  "gst": 0,
+  "source": "Exempt Sl 15: Fresh/pasteurised milk, milk and cream not concentrated nor sweetened, UHT milk (0401)",
+  "path": "Dairy > Milk > Double Toned Milk",
+  "confidence": "high"
+ },
+ "milk-full-cream-milk": {
+  "hsn": "0401",
+  "gst": 0,
+  "source": "Exempt Sl 15: Fresh/pasteurised milk, milk and cream not concentrated nor sweetened, UHT milk (0401)",
+  "path": "Dairy > Milk > Full Cream Milk",
+  "confidence": "high"
+ },
+ "milk-organic-milk": {
+  "hsn": "0401",
+  "gst": 0,
+  "source": "Exempt Sl 15: Fresh/pasteurised milk, milk and cream not concentrated nor sweetened, UHT milk (0401)",
+  "path": "Dairy > Milk > Organic Milk",
+  "confidence": "high"
+ },
+ "milk-plant-based-milk": {
+  "hsn": "2202 99",
+  "gst": 5,
+  "source": "Sch I Sl 148: Plant-based milk drinks ready for direct consumption (2202 99)",
+  "path": "Dairy > Milk > Plant-Based Milk",
+  "confidence": "high"
+ },
+ "milk-skimmed-milk": {
+  "hsn": "0401",
+  "gst": 0,
+  "source": "Exempt Sl 15: Fresh/pasteurised milk, milk and cream not concentrated nor sweetened, UHT milk (0401)",
+  "path": "Dairy > Milk > Skimmed Milk",
+  "confidence": "high"
+ },
+ "milk-toned-milk": {
+  "hsn": "0401",
+  "gst": 0,
+  "source": "Exempt Sl 15: Fresh/pasteurised milk, milk and cream not concentrated nor sweetened, UHT milk (0401)",
+  "path": "Dairy > Milk > Toned Milk",
+  "confidence": "high"
+ },
+ "milk-uht-long-life-milk": {
+  "hsn": "0401",
+  "gst": 0,
+  "source": "Exempt Sl 15: Fresh/pasteurised milk, milk and cream not concentrated nor sweetened, UHT milk (0401)",
+  "path": "Dairy > Milk > UHT / Long Life Milk",
+  "confidence": "high"
+ },
+ "paneer-tofu-fresh-paneer": {
+  "hsn": "0406",
+  "gst": 0,
+  "source": "Exempt Sl 17: Chena or paneer, whether or not pre-packaged and labelled (0406)",
+  "path": "Dairy > Paneer & Tofu > Fresh Paneer",
+  "confidence": "high"
+ },
+ "paneer-tofu-malai-paneer": {
+  "hsn": "0406",
+  "gst": 0,
+  "source": "Exempt Sl 17: Chena or paneer, whether or not pre-packaged and labelled (0406)",
+  "path": "Dairy > Paneer & Tofu > Malai Paneer",
+  "confidence": "high"
+ },
+ "paneer-tofu-tofu": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106 other than pan masala)",
+  "path": "Dairy > Paneer & Tofu > Tofu",
+  "confidence": "low",
+  "note": "Tofu classification uncertain (2106 vs 0406); chart has no tofu entry; 2106 NES 5% chosen"
+ },
+ "frozen-meat-seafood-frozen-chicken": {
+  "hsn": "1602",
+  "gst": 5,
+  "source": "Sch I Sl 101: Other prepared or preserved meat (1602)",
+  "path": "Frozen Foods > Frozen Meat & Seafood > Frozen Chicken",
+  "confidence": "medium",
+  "note": "Processed nuggets/bites 1602; raw frozen pieces 0207 pre-packaged 5%, loose Nil",
+  "overrides": [
+   {
+    "nameRegex": "drumstick|curry cut|breast|\\braw\\b|whole chicken",
+    "hsn": "0207",
+    "gst": 5,
+    "source": "Sch I Sl 2: Meat goods other than fresh or chilled, pre-packaged and labelled (0202-0210)"
+   },
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0207",
+    "gst": 0,
+    "source": "Exempt Sl 9: Meat goods other than fresh/chilled, other than pre-packaged and labelled (0202-0210)"
+   }
+  ]
+ },
+ "frozen-meat-seafood-frozen-fish-prawns": {
+  "hsn": "0304",
+  "gst": 5,
+  "source": "Sch I Sl 3: Fish/crustacean goods other than fresh or chilled, pre-packaged and labelled (0303-0309)",
+  "path": "Frozen Foods > Frozen Meat & Seafood > Frozen Fish & Prawns",
+  "confidence": "medium",
+  "note": "Frozen raw fish/prawns pre-packaged 5%; breaded/popcorn 1604/1605 5%; loose frozen Nil",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0304",
+    "gst": 0,
+    "source": "Exempt Sl 14: Fish/crustacean goods other than fresh/chilled, other than pre-packaged and labelled (0303-0309)"
+   }
+  ]
+ },
+ "frozen-meat-seafood-frozen-mutton": {
+  "hsn": "0204",
+  "gst": 5,
+  "source": "Sch I Sl 2: Meat goods other than fresh or chilled, pre-packaged and labelled (0202-0210)",
+  "path": "Frozen Foods > Frozen Meat & Seafood > Frozen Mutton",
+  "confidence": "medium",
+  "note": "Frozen mutton pre-packaged and labelled 5%; keema/curry cut also 5%",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "unbranded": true,
+    "hsn": "0204",
+    "gst": 0,
+    "source": "Exempt Sl 9: Meat goods other than fresh/chilled, other than pre-packaged and labelled (0202-0210)"
+   }
+  ]
+ },
+ "frozen-snacks-frozen-fries-wedges": {
+  "hsn": "2004",
+  "gst": 5,
+  "source": "Sch I Sl 128: Other vegetables prepared/preserved, frozen (2004)",
+  "path": "Frozen Foods > Frozen Snacks > Frozen Fries & Wedges",
+  "confidence": "high"
+ },
+ "frozen-snacks-frozen-momos-dumplings": {
+  "hsn": "1902",
+  "gst": 5,
+  "source": "Sch I Sl 119: Pasta, whether or not stuffed, noodles, ravioli (1902)",
+  "path": "Frozen Foods > Frozen Snacks > Frozen Momos & Dumplings",
+  "confidence": "medium",
+  "note": "Stuffed dumplings as stuffed pasta; also 2106 5%"
+ },
+ "frozen-snacks-frozen-paratha-roti": {
+  "hsn": "1905",
+  "gst": 0,
+  "source": "Exempt Sl 100: Bread (branded or otherwise), pizza bread, roti, chapathi, paratha, parotta (1905/2106)",
+  "path": "Frozen Foods > Frozen Snacks > Frozen Paratha & Roti",
+  "confidence": "medium",
+  "note": "Paratha/parotta Nil under Sl 100"
+ },
+ "frozen-snacks-frozen-pizza-burger-patty": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106 other than pan masala)",
+  "path": "Frozen Foods > Frozen Snacks > Frozen Pizza & Burger Patty",
+  "confidence": "low",
+  "note": "Frozen pizza topped (2106 5%) vs pizza bread Nil; burger patties 2004/1602 5%",
+  "overrides": [
+   {
+    "nameRegex": "\\bpizza base\\b|pizza bread",
+    "hsn": "1905",
+    "gst": 0,
+    "source": "Exempt Sl 100: Bread (branded or otherwise), pizza bread, roti, chapathi, paratha, parotta (1905/2106)"
+   }
+  ]
+ },
+ "frozen-snacks-frozen-samosa-spring-roll": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (2106 other than pan masala)",
+  "path": "Frozen Foods > Frozen Snacks > Frozen Samosa & Spring Roll",
+  "confidence": "medium",
+  "note": "Frozen samosa/spring rolls: 1905/2106 5%"
+ },
+ "frozen-snacks-frozen-tikki-kebab": {
+  "hsn": "1602",
+  "gst": 5,
+  "source": "Sch I Sl 101: Other prepared or preserved meat (1602)",
+  "path": "Frozen Foods > Frozen Snacks > Frozen Tikki & Kebab",
+  "confidence": "medium",
+  "note": "Nuggets/kebabs 1602 or 2004; plant-based 2106 also 5%"
+ },
+ "frozen-vegetables-frozen-mixed-vegetables": {
+  "hsn": "0710",
+  "gst": 0,
+  "source": "Exempt Sl 36: Vegetables (uncooked or steamed/boiled), frozen (0710)",
+  "path": "Frozen Foods > Frozen Vegetables > Frozen Mixed Vegetables",
+  "confidence": "medium",
+  "note": "Frozen veg Nil; frozen grated coconut/jackfruit also Nil (0710/0801/0810); no pre-packaged qualifier"
+ },
+ "frozen-vegetables-frozen-paneer": {
+  "hsn": "0406",
+  "gst": 0,
+  "source": "Exempt Sl 17: Chena or paneer, whether or not pre-packaged and labelled (0406)",
+  "path": "Frozen Foods > Frozen Vegetables > Frozen Paneer",
+  "confidence": "high",
+  "note": "Paneer Nil whether or not pre-packaged; frozen paneer same heading"
+ },
+ "frozen-vegetables-frozen-peas": {
+  "hsn": "0710",
+  "gst": 0,
+  "source": "Exempt Sl 36: Vegetables (uncooked or steamed/boiled), frozen (0710)",
+  "path": "Frozen Foods > Frozen Vegetables > Frozen Peas",
+  "confidence": "high"
+ },
+ "frozen-vegetables-frozen-sweet-corn": {
+  "hsn": "0710",
+  "gst": 0,
+  "source": "Exempt Sl 36: Vegetables (uncooked or steamed/boiled), frozen (0710)",
+  "path": "Frozen Foods > Frozen Vegetables > Frozen Sweet Corn",
+  "confidence": "high"
+ },
+ "ice-cream-desserts-frozen-desserts": {
+  "hsn": "2105 00 00",
+  "gst": 5,
+  "source": "Sch I Sl 141: Ice cream and other edible ice (2105 00 00)",
+  "path": "Frozen Foods > Ice Cream & Desserts > Frozen Desserts",
+  "confidence": "medium",
+  "note": "Frozen desserts/ice cream cakes 2105; cheesecake jars 1905/2106 also 5%"
+ },
+ "ice-cream-desserts-ice-cream-cones-bars": {
+  "hsn": "2105 00 00",
+  "gst": 5,
+  "source": "Sch I Sl 141: Ice cream and other edible ice (2105 00 00)",
+  "path": "Frozen Foods > Ice Cream & Desserts > Ice Cream Cones & Bars",
+  "confidence": "high"
+ },
+ "ice-cream-desserts-ice-cream-tubs": {
+  "hsn": "2105 00 00",
+  "gst": 5,
+  "source": "Sch I Sl 141: Ice cream and other edible ice (2105 00 00)",
+  "path": "Frozen Foods > Ice Cream & Desserts > Ice Cream Tubs",
+  "confidence": "high"
+ },
+ "ice-cream-desserts-kulfi": {
+  "hsn": "2105 00 00",
+  "gst": 5,
+  "source": "Sch I Sl 141: Ice cream and other edible ice (2105 00 00)",
+  "path": "Frozen Foods > Ice Cream & Desserts > Kulfi",
+  "confidence": "high"
+ },
+ "cut-prepared-cut-fruits": {
+  "hsn": "0810",
+  "gst": 0,
+  "source": "Exempt Sl 53: Other fruit, fresh",
+  "path": "Fruits & Vegetables > Cut & Prepared > Cut Fruits",
+  "confidence": "medium",
+  "note": "fresh cut fruit pack treated as fresh"
+ },
+ "cut-prepared-cut-vegetables": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables, fresh or chilled",
+  "path": "Fruits & Vegetables > Cut & Prepared > Cut Vegetables",
+  "confidence": "medium",
+  "note": "fresh cut veg treated as fresh"
+ },
+ "cut-prepared-salad-mixes": {
+  "hsn": "0705",
+  "gst": 0,
+  "source": "Exempt Sl 31: Lettuce and chicory, fresh or chilled",
+  "path": "Fruits & Vegetables > Cut & Prepared > Salad Mixes",
+  "confidence": "medium"
+ },
+ "fresh-fruits-apple": {
+  "hsn": "0808",
+  "gst": 0,
+  "source": "Exempt Sl 51: Apples, pears and quinces, fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Apple",
+  "confidence": "high"
+ },
+ "fresh-fruits-banana": {
+  "hsn": "0803",
+  "gst": 0,
+  "source": "Exempt Sl 46: Bananas, fresh or dried",
+  "path": "Fruits & Vegetables > Fresh Fruits > Banana",
+  "confidence": "high"
+ },
+ "fresh-fruits-chiku-sapota": {
+  "hsn": "0810",
+  "gst": 0,
+  "source": "Exempt Sl 53: Other fruit incl. Sapota (chico), fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Chiku (Sapota)",
+  "confidence": "high"
+ },
+ "fresh-fruits-grapes": {
+  "hsn": "0806",
+  "gst": 0,
+  "source": "Exempt Sl 49: Grapes, fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Grapes",
+  "confidence": "high"
+ },
+ "fresh-fruits-guava-amrood": {
+  "hsn": "0804",
+  "gst": 0,
+  "source": "Exempt Sl 47: Guavas, mangoes etc., fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Guava (Amrood)",
+  "confidence": "high"
+ },
+ "fresh-fruits-litchi": {
+  "hsn": "0810",
+  "gst": 0,
+  "source": "Exempt Sl 53: Other fruit incl. Lichi, fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Litchi",
+  "confidence": "high"
+ },
+ "fresh-fruits-mango": {
+  "hsn": "0804",
+  "gst": 0,
+  "source": "Exempt Sl 47: Mangoes, fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Mango",
+  "confidence": "high"
+ },
+ "fresh-fruits-orange-mosambi": {
+  "hsn": "0805",
+  "gst": 0,
+  "source": "Exempt Sl 48: Citrus fruit, fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Orange & Mosambi",
+  "confidence": "high"
+ },
+ "fresh-fruits-papaya": {
+  "hsn": "0807",
+  "gst": 0,
+  "source": "Exempt Sl 50: Papayas, fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Papaya",
+  "confidence": "high"
+ },
+ "fresh-fruits-pineapple": {
+  "hsn": "0804",
+  "gst": 0,
+  "source": "Exempt Sl 47: Pineapples, fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Pineapple",
+  "confidence": "high"
+ },
+ "fresh-fruits-pomegranate-anaar": {
+  "hsn": "0810",
+  "gst": 0,
+  "source": "Exempt Sl 53: Pomegranates, fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Pomegranate (Anaar)",
+  "confidence": "high"
+ },
+ "fresh-fruits-seasonal-exotic-fruits": {
+  "hsn": "0810",
+  "gst": 0,
+  "source": "Exempt Sl 53: Other fruit such as kiwi, plums etc., fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Seasonal & Exotic Fruits",
+  "confidence": "medium",
+  "note": "mixed exotic fruit; all fresh fruits Nil"
+ },
+ "fresh-fruits-watermelon-muskmelon": {
+  "hsn": "0807",
+  "gst": 0,
+  "source": "Exempt Sl 50: Melons incl. watermelons, fresh",
+  "path": "Fruits & Vegetables > Fresh Fruits > Watermelon & Muskmelon",
+  "confidence": "high"
+ },
+ "fresh-herbs-sprouts-coriander-dhaniya": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Herbs & Sprouts > Coriander (Dhaniya)",
+  "confidence": "medium",
+  "note": "fresh herb"
+ },
+ "fresh-herbs-sprouts-curry-leaves": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Herbs & Sprouts > Curry Leaves",
+  "confidence": "medium",
+  "note": "fresh curry leaves; 1211 fresh is also Nil (Exempt Sl 87)"
+ },
+ "fresh-herbs-sprouts-ginger-turmeric-fresh": {
+  "hsn": "0910",
+  "gst": 0,
+  "source": "Exempt Sl 60: Fresh ginger / Sl 61 fresh turmeric, other than processed",
+  "path": "Fruits & Vegetables > Fresh Herbs & Sprouts > Ginger & Turmeric (Fresh)",
+  "confidence": "high"
+ },
+ "fresh-herbs-sprouts-mint-pudina": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Herbs & Sprouts > Mint (Pudina)",
+  "confidence": "medium",
+  "note": "fresh herb"
+ },
+ "fresh-herbs-sprouts-sprouts-moong-mixed": {
+  "hsn": "0708",
+  "gst": 0,
+  "source": "Exempt Sl 34: Leguminous vegetables, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Herbs & Sprouts > Sprouts (Moong, Mixed)",
+  "confidence": "medium"
+ },
+ "fresh-vegetables-beans-legumes-french-beans-sem": {
+  "hsn": "0708",
+  "gst": 0,
+  "source": "Exempt Sl 34: Leguminous vegetables, shelled or unshelled, fresh",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Beans & Legumes (French Beans, Sem)",
+  "confidence": "high"
+ },
+ "fresh-vegetables-brinjal-okra-bhindi": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Brinjal & Okra (Bhindi)",
+  "confidence": "high"
+ },
+ "fresh-vegetables-capsicum-chillies": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Capsicum & Chillies",
+  "confidence": "high"
+ },
+ "fresh-vegetables-cauliflower-cabbage": {
+  "hsn": "0704",
+  "gst": 0,
+  "source": "Exempt Sl 30: Cabbages, cauliflowers, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Cauliflower & Cabbage",
+  "confidence": "high"
+ },
+ "fresh-vegetables-corn-baby-corn": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Corn & Baby Corn",
+  "confidence": "medium"
+ },
+ "fresh-vegetables-gourds-squash-lauki-tori-karela": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables (and Sl 33 cucumbers), fresh",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Gourds & Squash (Lauki, Tori, Karela)",
+  "confidence": "high"
+ },
+ "fresh-vegetables-leafy-greens-palak-methi-etc": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Leafy Greens (Palak, Methi, etc.)",
+  "confidence": "high",
+  "note": "lettuce 0705 also Nil"
+ },
+ "fresh-vegetables-mushrooms": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables incl. mushrooms, fresh",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Mushrooms",
+  "confidence": "high"
+ },
+ "fresh-vegetables-onion-garlic": {
+  "hsn": "0703",
+  "gst": 0,
+  "source": "Exempt Sl 29: Onions, shallots, garlic, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Onion & Garlic",
+  "confidence": "high"
+ },
+ "fresh-vegetables-other-vegetables": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Other Vegetables",
+  "confidence": "high"
+ },
+ "fresh-vegetables-peas": {
+  "hsn": "0708",
+  "gst": 0,
+  "source": "Exempt Sl 34: Leguminous vegetables, shelled or unshelled, fresh",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Peas",
+  "confidence": "high"
+ },
+ "fresh-vegetables-potato": {
+  "hsn": "0701",
+  "gst": 0,
+  "source": "Exempt Sl 27: Potatoes, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Potato",
+  "confidence": "high"
+ },
+ "fresh-vegetables-root-vegetables-carrot-beetroot-radish": {
+  "hsn": "0706",
+  "gst": 0,
+  "source": "Exempt Sl 32: Carrots, radishes and similar edible roots, fresh",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Root Vegetables (Carrot, Beetroot, Radish)",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": "tapioca|sweet potato|yam|colocasia|arbi",
+    "hsn": "0714",
+    "gst": 0,
+    "source": "Exempt Sl 40: Manioc, sweet potatoes, tubers, fresh"
+   }
+  ]
+ },
+ "fresh-vegetables-tomato": {
+  "hsn": "0702",
+  "gst": 0,
+  "source": "Exempt Sl 28: Tomatoes, fresh or chilled",
+  "path": "Fruits & Vegetables > Fresh Vegetables > Tomato",
+  "confidence": "high"
+ },
+ "organic-produce-organic-fruits": {
+  "hsn": "0810",
+  "gst": 0,
+  "source": "Exempt Sl 53: Other fruit, fresh (banana 0803 Sl 46, apple 0808 Sl 51 also Nil)",
+  "path": "Fruits & Vegetables > Organic Produce > Organic Fruits",
+  "confidence": "medium"
+ },
+ "organic-produce-organic-vegetables": {
+  "hsn": "0709",
+  "gst": 0,
+  "source": "Exempt Sl 35: Other vegetables, fresh or chilled",
+  "path": "Fruits & Vegetables > Organic Produce > Organic Vegetables",
+  "confidence": "medium"
+ },
+ "cooking-ingredients-balsamic-vinegar": {
+  "hsn": "2209",
+  "gst": 18,
+  "source": "Sch II Sl 4: Vinegar and substitutes for vinegar obtained from acetic acid",
+  "path": "Gourmet & World Foods > Cooking Ingredients > Balsamic Vinegar",
+  "confidence": "high"
+ },
+ "cooking-ingredients-coconut-milk-cream": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified (other than pan masala)",
+  "path": "Gourmet & World Foods > Cooking Ingredients > Coconut Milk & Cream",
+  "confidence": "medium",
+  "note": "coconut milk/cream/powder preparations; heading could also be 2008 (5%)"
+ },
+ "cooking-ingredients-noodles-rice-asian": {
+  "hsn": "1902",
+  "gst": 5,
+  "source": "Sch I Sl 119: Seviyan, pasta, noodles, couscous",
+  "path": "Gourmet & World Foods > Cooking Ingredients > Noodles & Rice (Asian)",
+  "confidence": "medium",
+  "note": "mixed noodles and Asian rice",
+  "overrides": [
+   {
+    "nameRegex": "rice(?!\\s*(stick|noodle|vermicelli))",
+    "hsn": "1006",
+    "gst": 0,
+    "source": "Exempt Sl 67: Rice, other than pre-packaged and labelled",
+    "unbranded": true
+   },
+   {
+    "nameRegex": "rice(?!\\s*(stick|noodle|vermicelli))",
+    "hsn": "1006",
+    "gst": 5,
+    "source": "Sch I Sl 48: Rice, pre-packaged and labelled"
+   }
+  ]
+ },
+ "cooking-ingredients-olive-oil-extra-virgin": {
+  "hsn": "1509",
+  "gst": 5,
+  "source": "Sch I Sl 86: Olive oil and its fractions",
+  "path": "Gourmet & World Foods > Cooking Ingredients > Olive Oil (Extra Virgin)",
+  "confidence": "high",
+  "note": "avocado oil 1515 is also 5% (Sch I Sl 92)"
+ },
+ "cooking-ingredients-olives": {
+  "hsn": "2005",
+  "gst": 5,
+  "source": "Sch I Sl 129: Other vegetables prepared or preserved otherwise than by vinegar",
+  "path": "Gourmet & World Foods > Cooking Ingredients > Olives",
+  "confidence": "medium",
+  "note": "olives in brine; vinegar-preserved would be 2001 Sl 125, also 5%"
+ },
+ "cooking-ingredients-quinoa-couscous": {
+  "hsn": "1008",
+  "gst": 5,
+  "source": "Sch I Sl 50: Buckwheat, millet and cereals, pre-packaged and labelled",
+  "path": "Gourmet & World Foods > Cooking Ingredients > Quinoa & Couscous",
+  "confidence": "medium",
+  "note": "quinoa is classed under 1008",
+  "overrides": [
+   {
+    "nameRegex": "couscous",
+    "hsn": "1902",
+    "gst": 5,
+    "source": "Sch I Sl 119: Couscous"
+   },
+   {
+    "nameRegex": ".*",
+    "hsn": "1008",
+    "gst": 0,
+    "source": "Exempt Sl 69: Cereals other than pre-packaged and labelled",
+    "unbranded": true
+   }
+  ]
+ },
+ "cooking-ingredients-tofu-tempeh": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified",
+  "path": "Gourmet & World Foods > Cooking Ingredients > Tofu & Tempeh",
+  "confidence": "low",
+  "note": "tofu/tempeh HSN not named in chart; soy paneer could argue 0406 Nil (Exempt Sl 17)"
+ },
+ "international-sauces-spreads-cooking-sauces": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments",
+  "path": "Gourmet & World Foods > International Sauces & Spreads > Cooking Sauces",
+  "confidence": "high"
+ },
+ "international-sauces-spreads-hot-sauce-sriracha": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor, mixed condiments",
+  "path": "Gourmet & World Foods > International Sauces & Spreads > Hot Sauce & Sriracha",
+  "confidence": "high"
+ },
+ "international-sauces-spreads-hummus": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified",
+  "path": "Gourmet & World Foods > International Sauces & Spreads > Hummus",
+  "confidence": "medium"
+ },
+ "international-sauces-spreads-pasta-sauce": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces and preparations therefor",
+  "path": "Gourmet & World Foods > International Sauces & Spreads > Pasta Sauce",
+  "confidence": "high"
+ },
+ "international-sauces-spreads-salad-dressings": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Salad dressings",
+  "path": "Gourmet & World Foods > International Sauces & Spreads > Salad Dressings",
+  "confidence": "high"
+ },
+ "international-sauces-spreads-salsa-dips": {
+  "hsn": "2103",
+  "gst": 5,
+  "source": "Sch I Sl 139: Sauces, mixed condiments, relish",
+  "path": "Gourmet & World Foods > International Sauces & Spreads > Salsa & Dips",
+  "confidence": "high"
+ },
+ "international-sauces-spreads-tahini": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified",
+  "path": "Gourmet & World Foods > International Sauces & Spreads > Tahini",
+  "confidence": "medium",
+  "note": "sesame paste; 2008 (Sl 132) also 5%"
+ },
+ "international-snacks-exotic-chocolates": {
+  "hsn": "1806",
+  "gst": 5,
+  "source": "Sch I Sl 116: Chocolates and other food preparations containing cocoa",
+  "path": "Gourmet & World Foods > International Snacks > Exotic Chocolates",
+  "confidence": "high",
+  "note": "chart lists 1806 at 5%"
+ },
+ "international-snacks-granola-bars-protein-bars": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified",
+  "path": "Gourmet & World Foods > International Snacks > Granola Bars & Protein Bars",
+  "confidence": "medium",
+  "note": "bars; 1904 cereal preparations also 5%"
+ },
+ "international-snacks-imported-chips-crisps": {
+  "hsn": "2005",
+  "gst": 5,
+  "source": "Sch I Sl 129: Other vegetables prepared or preserved (potato chips)",
+  "path": "Gourmet & World Foods > International Snacks > Imported Chips & Crisps",
+  "confidence": "medium",
+  "note": "all candidates 5%",
+  "overrides": [
+   {
+    "nameRegex": "popcorn",
+    "hsn": "1904",
+    "gst": 5,
+    "source": "Sch I Sl 122: Prepared foods obtained from cereal flakes / puffed cereals"
+   },
+   {
+    "nameRegex": "stax|pringles|crisp|chips",
+    "hsn": "1905",
+    "gst": 5,
+    "source": "Sch I Sl 123: Extruded or expanded products, savoury or salted"
+   }
+  ]
+ },
+ "international-snacks-trail-mix": {
+  "hsn": "2008",
+  "gst": 5,
+  "source": "Sch I Sl 132: Fruit, nuts otherwise prepared or preserved",
+  "path": "Gourmet & World Foods > International Snacks > Trail Mix",
+  "confidence": "medium"
+ },
+ "organic-health-foods-gluten-free-products": {
+  "hsn": "1102",
+  "gst": 5,
+  "source": "Sch I Sl 52: Cereal flours other than wheat, pre-packaged and labelled",
+  "path": "Gourmet & World Foods > Organic & Health Foods > Gluten-Free Products",
+  "confidence": "medium",
+  "note": "mixed flours and snacks",
+  "overrides": [
+   {
+    "nameRegex": ".*flour|.*atta",
+    "hsn": "1102",
+    "gst": 0,
+    "source": "Exempt Sl 71: Cereal flours, other than pre-packaged and labelled",
+    "unbranded": true
+   },
+   {
+    "nameRegex": "rice cake",
+    "hsn": "1904",
+    "gst": 5,
+    "source": "Sch I Sl 122: Prepared foods from cereals"
+   }
+  ]
+ },
+ "organic-health-foods-millets-ragi-jowar-bajra": {
+  "hsn": "1008",
+  "gst": 5,
+  "source": "Sch I Sl 50: Millets, pre-packaged and labelled",
+  "path": "Gourmet & World Foods > Organic & Health Foods > Millets (Ragi, Jowar, Bajra)",
+  "confidence": "high",
+  "overrides": [
+   {
+    "nameRegex": ".*",
+    "hsn": "1008",
+    "gst": 0,
+    "source": "Exempt Sl 69: Millet, other than pre-packaged and labelled",
+    "unbranded": true
+   },
+   {
+    "nameRegex": "atta|flour|mix",
+    "hsn": "1102",
+    "gst": 5,
+    "source": "Sch I Sl 52: Cereal flours, pre-packaged and labelled"
+   }
+  ]
+ },
+ "organic-health-foods-organic-staples-rice-dal-atta": {
+  "hsn": "1006",
+  "gst": 5,
+  "source": "Sch I Sl 48: Rice, pre-packaged and labelled",
+  "path": "Gourmet & World Foods > Organic & Health Foods > Organic Staples (Rice, Dal, Atta)",
+  "confidence": "medium",
+  "note": "mixed rice, dal, atta",
+  "overrides": [
+   {
+    "nameRegex": "rajma|urad|chana|dal|moong|toor|masoor|chitra|kabuli",
+    "hsn": "0713",
+    "gst": 0,
+    "source": "Exempt Sl 39: Dried leguminous vegetables, other than pre-packaged and labelled",
+    "unbranded": true
+   },
+   {
+    "nameRegex": "rajma|urad|chana|dal|moong|toor|masoor|chitra|kabuli",
+    "hsn": "0713",
+    "gst": 5,
+    "source": "Sch I Sl 20: Dried leguminous vegetables, pre-packaged and labelled"
+   },
+   {
+    "nameRegex": "wheat bran",
+    "hsn": "2302",
+    "gst": 5,
+    "source": "Sch I Sl 154: Bran, sharps and other residues"
+   },
+   {
+    "nameRegex": "atta|flour",
+    "hsn": "1101",
+    "gst": 5,
+    "source": "Sch I Sl 51: Wheat flour, pre-packaged and labelled"
+   }
+  ]
+ },
+ "organic-health-foods-sugar-free-diet-foods": {
+  "hsn": "2106",
+  "gst": 5,
+  "source": "Sch I Sl 145: Food preparations not elsewhere specified",
+  "path": "Gourmet & World Foods > Organic & Health Foods > Sugar-Free & Diet Foods",
+  "confidence": "low",
+  "note": "sweeteners, flours, powders mixed; sweetener HSN uncertain",
+  "overrides": [
+   {
+    "nameRegex": "sugar sachet",
+    "hsn": "1701",
+    "gst": 5,
+    "source": "Sch I Sl 105: Cane or beet sugar"
+   },
+   {
+    "nameRegex": "flour",
+    "hsn": "1102",
+    "gst": 5,
+    "source": "Sch I Sl 52: Cereal flours, pre-packaged and labelled"
+   },
+   {
+    "nameRegex": "erythritol",
+    "hsn": "2905",
+    "gst": 18,
+    "source": "Sch II (goods not elsewhere specified): polyhydric alcohols 2905"
+   }
+  ]
+ },
+ "organic-health-foods-superfoods-chia-flax-hemp": {
+  "hsn": "1207",
+  "gst": 5,
+  "source": "Sch I Sl 67: Other oil seeds (chia, flax, sesame)",
+  "path": "Gourmet & World Foods > Organic & Health Foods > Superfoods (Chia, Flax, Hemp)",
+  "confidence": "low",
+  "note": "mixed seeds, powders, quinoa, bran",
+  "overrides": [
+   {
+    "nameRegex": "quinoa",
+    "hsn": "1008",
+    "gst": 5,
+    "source": "Sch I Sl 50: Cereals, pre-packaged and labelled"
+   },
+   {
+    "nameRegex": "wheat bran",
+    "hsn": "2302",
+    "gst": 5,
+    "source": "Sch I Sl 154: Bran, sharps and other residues"
+   },
+   {
+    "nameRegex": "powder",
+    "hsn": "2106",
+    "gst": 5,
+    "source": "Sch I Sl 145: Food preparations not elsewhere specified"
+   }
+  ]
+ },
+ "chicken-chicken-breast": {
+  "hsn": "0207",
+  "gst": 0,
+  "source": "Exempt Sl 8: Meat of poultry, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Chicken > Chicken Breast",
+  "confidence": "high",
+  "note": "frozen prepacked would be 5% (Sch I Sl 2)"
+ },
+ "chicken-chicken-curry-cut": {
+  "hsn": "0207",
+  "gst": 0,
+  "source": "Exempt Sl 8: Meat of poultry, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Chicken > Chicken Curry Cut",
+  "confidence": "high",
+  "note": "frozen prepacked would be 5% (Sch I Sl 2)"
+ },
+ "chicken-chicken-keema": {
+  "hsn": "0207",
+  "gst": 0,
+  "source": "Exempt Sl 8: Meat of poultry, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Chicken > Chicken Keema",
+  "confidence": "high",
+  "note": "frozen prepacked would be 5% (Sch I Sl 2)"
+ },
+ "chicken-chicken-legs-thighs": {
+  "hsn": "0207",
+  "gst": 0,
+  "source": "Exempt Sl 8: Meat of poultry, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Chicken > Chicken Legs & Thighs",
+  "confidence": "high",
+  "note": "frozen prepacked would be 5% (Sch I Sl 2)"
+ },
+ "chicken-chicken-wings": {
+  "hsn": "0207",
+  "gst": 0,
+  "source": "Exempt Sl 8: Meat of poultry, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Chicken > Chicken Wings",
+  "confidence": "high",
+  "note": "frozen prepacked would be 5% (Sch I Sl 2)"
+ },
+ "chicken-marinated-chicken": {
+  "hsn": "1602",
+  "gst": 5,
+  "source": "Sch I Sl 101: Other prepared or preserved meat",
+  "path": "Meat, Fish & Eggs > Chicken > Marinated Chicken",
+  "confidence": "medium",
+  "note": "marinated/cooked products"
+ },
+ "chicken-whole-chicken": {
+  "hsn": "0207",
+  "gst": 0,
+  "source": "Exempt Sl 8: Meat of poultry, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Chicken > Whole Chicken",
+  "confidence": "high"
+ },
+ "eggs-brown-eggs": {
+  "hsn": "0407",
+  "gst": 0,
+  "source": "Exempt Sl 18: Birds' eggs, in shell, fresh",
+  "path": "Meat, Fish & Eggs > Eggs > Brown Eggs",
+  "confidence": "high"
+ },
+ "eggs-organic-eggs": {
+  "hsn": "0407",
+  "gst": 0,
+  "source": "Exempt Sl 18: Birds' eggs, in shell, fresh",
+  "path": "Meat, Fish & Eggs > Eggs > Organic Eggs",
+  "confidence": "high"
+ },
+ "eggs-quail-eggs": {
+  "hsn": "0407",
+  "gst": 0,
+  "source": "Exempt Sl 18: Birds' eggs, in shell, fresh",
+  "path": "Meat, Fish & Eggs > Eggs > Quail Eggs",
+  "confidence": "high"
+ },
+ "eggs-white-eggs": {
+  "hsn": "0407",
+  "gst": 0,
+  "source": "Exempt Sl 18: Birds' eggs, in shell, fresh",
+  "path": "Meat, Fish & Eggs > Eggs > White Eggs",
+  "confidence": "high"
+ },
+ "fish-seafood-bangda-mackerel": {
+  "hsn": "0302",
+  "gst": 0,
+  "source": "Exempt Sl 12: Fish, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Fish & Seafood > Bangda (Mackerel)",
+  "confidence": "medium",
+  "note": "frozen prepacked would be 5% (Sch I Sl 3)"
+ },
+ "fish-seafood-crab": {
+  "hsn": "0306",
+  "gst": 0,
+  "source": "Exempt Sl 13: Crustaceans, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Fish & Seafood > Crab",
+  "confidence": "medium",
+  "note": "frozen prepacked would be 5%"
+ },
+ "fish-seafood-fish-fillets": {
+  "hsn": "0304",
+  "gst": 0,
+  "source": "Exempt Sl 13: Fish fillets and fish meat, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Fish & Seafood > Fish Fillets",
+  "confidence": "medium",
+  "note": "frozen prepacked would be 5%"
+ },
+ "fish-seafood-other-fish": {
+  "hsn": "0302",
+  "gst": 0,
+  "source": "Exempt Sl 12: Fish, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Fish & Seafood > Other Fish",
+  "confidence": "medium",
+  "note": "frozen prepacked would be 5% (Sch I Sl 3)"
+ },
+ "fish-seafood-pomfret": {
+  "hsn": "0302",
+  "gst": 0,
+  "source": "Exempt Sl 12: Fish, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Fish & Seafood > Pomfret",
+  "confidence": "medium",
+  "note": "frozen prepacked would be 5% (Sch I Sl 3)"
+ },
+ "fish-seafood-prawns-shrimp": {
+  "hsn": "0306",
+  "gst": 0,
+  "source": "Exempt Sl 13: Crustaceans, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Fish & Seafood > Prawns & Shrimp",
+  "confidence": "medium",
+  "note": "frozen prepacked would be 5%"
+ },
+ "fish-seafood-rohu": {
+  "hsn": "0302",
+  "gst": 0,
+  "source": "Exempt Sl 12: Fish, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Fish & Seafood > Rohu",
+  "confidence": "medium",
+  "note": "frozen prepacked would be 5% (Sch I Sl 3)"
+ },
+ "fish-seafood-surmai-king-fish": {
+  "hsn": "0302",
+  "gst": 0,
+  "source": "Exempt Sl 12: Fish, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Fish & Seafood > Surmai (King Fish)",
+  "confidence": "medium",
+  "note": "frozen prepacked would be 5% (Sch I Sl 3)"
+ },
+ "mutton-lamb-marinated-mutton": {
+  "hsn": "1602",
+  "gst": 5,
+  "source": "Sch I Sl 101: Other prepared or preserved meat",
+  "path": "Meat, Fish & Eggs > Mutton & Lamb > Marinated Mutton",
+  "confidence": "medium"
+ },
+ "mutton-lamb-mutton-chops": {
+  "hsn": "0204",
+  "gst": 0,
+  "source": "Exempt Sl 8: Meat of sheep or goats, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Mutton & Lamb > Mutton Chops",
+  "confidence": "high",
+  "note": "frozen prepacked would be 5% (Sch I Sl 2)"
+ },
+ "mutton-lamb-mutton-curry-cut": {
+  "hsn": "0204",
+  "gst": 0,
+  "source": "Exempt Sl 8: Meat of sheep or goats, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Mutton & Lamb > Mutton Curry Cut",
+  "confidence": "high",
+  "note": "frozen prepacked would be 5% (Sch I Sl 2)"
+ },
+ "mutton-lamb-mutton-keema": {
+  "hsn": "0204",
+  "gst": 0,
+  "source": "Exempt Sl 8: Meat of sheep or goats, fresh or chilled",
+  "path": "Meat, Fish & Eggs > Mutton & Lamb > Mutton Keema",
+  "confidence": "high",
+  "note": "frozen prepacked would be 5% (Sch I Sl 2)"
+ },
+ "sausages-cold-cuts-chicken-sausage": {
+  "hsn": "1601",
+  "gst": 5,
+  "source": "Sch I Sl 100: Sausages and similar products of meat",
+  "path": "Meat, Fish & Eggs > Sausages & Cold Cuts > Chicken Sausage",
+  "confidence": "high"
+ },
+ "sausages-cold-cuts-ham-cold-cuts": {
+  "hsn": "1602",
+  "gst": 5,
+  "source": "Sch I Sl 101: Other prepared or preserved meat (ham, bacon)",
+  "path": "Meat, Fish & Eggs > Sausages & Cold Cuts > Ham & Cold Cuts",
+  "confidence": "medium",
+  "overrides": [
+   {
+    "nameRegex": "sausage|salami|wurst|bockwurst|frankfurter",
+    "hsn": "1601",
+    "gst": 5,
+    "source": "Sch I Sl 100: Sausages and similar products"
+   }
+  ]
+ },
+ "sausages-cold-cuts-pork-sausage": {
+  "hsn": "1601",
+  "gst": 5,
+  "source": "Sch I Sl 100: Sausages and similar products of meat",
+  "path": "Meat, Fish & Eggs > Sausages & Cold Cuts > Pork Sausage",
+  "confidence": "high"
+ },
+ "sausages-cold-cuts-salami": {
+  "hsn": "1601",
+  "gst": 5,
+  "source": "Sch I Sl 100: Sausages and similar products of meat",
+  "path": "Meat, Fish & Eggs > Sausages & Cold Cuts > Salami",
+  "confidence": "high"
+ }
+}
