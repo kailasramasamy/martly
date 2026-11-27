@@ -18,7 +18,7 @@ import { promisify } from "node:util";
 dotenv.config({ override: true });
 const { MODEL } = await import("../../src/services/catalog-agent/extract.js");
 
-const PORT = 7003;
+const PORT = Number(process.env.REVIEW_PORT) || 7003;
 const run = promisify(execFile);
 const HERE = dirname(fileURLToPath(import.meta.url));
 const argv = process.argv.slice(2);

@@ -11,6 +11,9 @@ Scripts: `apps/api/scripts/shelf-photos/`. Background and limits: `docs/shelf-ph
 (subagents on Sonnet for the photo reading). The only paid API is OpenAI image renders (`gpt-image-2.5-flare`). Every script runs
 with `--no-claude`. Never run a script without it.
 
+To wait for a long script (process.ts, hide-stamps), run it as the background command itself and wait for its exit notice.
+Never poll with `pgrep -f '<script>'`: it matches the polling shell's own command line and never ends (batch 9 sat idle 2.5 h).
+
 Set `PHOTOS` (the user's folder), `RUN` = `${PHOTOS}-run`, and run everything from `apps/api`.
 Ask the user once: which stores and what stock (last batches: 30). Since 2026-11-26 PSB lists by hand on aisle walks, so publish to Sree Ranga only unless told otherwise. Publish goes to **prod**.
 
@@ -47,7 +50,8 @@ Ask the user once: which stores and what stock (last batches: 30). Since 2026-11
 
 `npx tsx scripts/shelf-photos/process.ts --no-claude --run $RUN --max-usd 20` checks barcodes against prod and renders every
 photo. A barcode already in the master catalog means no render. Shots are saved with verdict `unchecked`. It runs about $0.035
-a photo. Check free disk space first.
+a photo. Check free disk space first. A multi-pack that carries the single item's barcode (a box of 10 pens) is not the
+same product: null its barcode, clear `existing` and run process.ts again (it renders only shots without an image).
 
 Then check the renders in the session. `session-files.ts --run $RUN --pairs` writes one side-by-side image per render
 (photo | render on magenta) to `RUN/pairs/`. Split the product ids across Sonnet subagents, about 50 photos each, briefed with
@@ -89,3 +93,6 @@ Restart review-server with `--no-claude`; the user approves at http://localhost:
    Products with no printed MRP stay undecided until the user types a price. Publish again once they have; already-published
    ones are skipped.
 4. Update the shelf-photo-import memory with the batch, the run folder, the SKU range and what's held.
+
+Keep `~/Downloads/shelf-photo-batches.csv` current: one row per photo folder (status, products live, stores, estimated
+prices). Add a row when the user hands over a folder and update it at each stage.
