@@ -53,7 +53,9 @@ const tamilTodo: Record<string, unknown> = {};
 const readJson = <T>(path: string) => JSON.parse(readFileSync(path, "utf8")) as T;
 const prisma = new PrismaClient(argv.includes("--prod") ? { datasourceUrl: process.env.PROD_DATABASE_URL } : {});
 
-const skuOf = (product: Product) => `SP-${product.id.replace(/^IMG_/, "")}`;
+// Photo numbers repeat across phones: give a batch whose IMG range overlaps an earlier one its own --sku-prefix (e.g. SP-K27-)
+const skuPrefix = value("--sku-prefix") ?? "SP-";
+const skuOf = (product: Product) => `${skuPrefix}${product.id.replace(/^IMG_/, "")}`;
 const stem = (file: string) => file.replace(/\.[^.]+$/, "");
 
 /** The main photo first, then the rest in the order they were taken; photos with no usable render are left out */
@@ -154,11 +156,11 @@ async function withEdits(product: Product, decision: Decision): Promise<Product>
 /** Already published, or the barcode shows the master catalog has it: only listings are needed */
 async function findExisting(product: Product) {
   const bySku = await prisma.productVariant.findUnique({ where: { sku: skuOf(product) }, select: { id: true, productId: true } });
-  if (bySku) return { target: { productId: bySku.productId, variantId: bySku.id }, barcode: null };
+  if (bySku) return { target: { productId: bySku.productId, variantId: bySku.id }, barcode: null, by: "sku" };
   const barcode = product.label.barcode;
   const match = barcode ? await prisma.productVariant.findUnique({ where: { barcode }, select: { id: true, productId: true, product: { select: { organizationId: true } } } }) : null;
-  if (!match) return { target: null, barcode };
-  return match.product.organizationId === null ? { target: { productId: match.productId, variantId: match.id }, barcode: null } : { target: null, barcode: null };
+  if (!match) return { target: null, barcode, by: null };
+  return match.product.organizationId === null ? { target: { productId: match.productId, variantId: match.id }, barcode: null, by: "barcode" } : { target: null, barcode: null, by: null };
 }
 
 /** Every catalog image must be a cut-out: an alpha channel, and the padded canvas corners see-through */
@@ -170,8 +172,8 @@ async function isTransparent(image: string) {
 }
 
 async function publishOne(product: Product, decision: Decision) {
-  const { target, barcode } = await findExisting(product);
-  if (target) return dryRun ? "would list" : `listed at ${await prisma.$transaction((tx) => listAtStores(tx, target, decision.sellingPrice))} more stores`;
+  const { target, barcode, by } = await findExisting(product);
+  if (target) return dryRun ? `would list (${by} match)` : `listed at ${await prisma.$transaction((tx) => listAtStores(tx, target, decision.sellingPrice))} more stores`;
   const images = imagesOf(product);
   if (!images.length) return "held: no image";
   const opaque = (await Promise.all(images.map(isTransparent))).filter((ok) => !ok).length;

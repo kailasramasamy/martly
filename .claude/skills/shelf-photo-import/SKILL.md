@@ -85,6 +85,8 @@ Restart review-server with `--no-claude`; the user approves at http://localhost:
 1. `npx tsx scripts/shelf-photos/publish.ts --no-claude --prod --dry-run --stock 30 --run $RUN`. publish.ts finds existing
    products by SKU or barcode only, so search prod master products by name for every "would create" with no barcode. For a
    match, set its decision to `rejected` and list the existing variant at the stores yourself (insert into `store_products`).
+   SKUs are `SP-<photo number>`, and photo numbers repeat across phones (Kailas IMG_8085 clashed with Boopathi's SP-8085). If the
+   dry run says `would list (sku match)` on a new batch, pass `--sku-prefix SP-<initial><day>-` (e.g. `SP-K27-`) to every publish run.
 2. If it writes `RUN/tamil-edits-todo.json` (reviewer edited a name/ingredients/nutrition), translate each entry in the session
    into `RUN/tamil-edits.json`: `{ "<id>": { name|null, ingredients|null, nutrientNames: [...] } }`, the same rules as the brief.
 3. Run it without `--dry-run`. New brands need a search-ranking score, but `generate-search-intents.ts` calls the Anthropic API,
